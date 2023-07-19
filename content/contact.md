@@ -1,0 +1,105 @@
+---
+
+# Front Matter (YAML)
+
+author: "Kaishi Starter Template" ## The author of the page. (max 64 characters)
+banner_alt: "A series of three images with a green and black background" ## The banner alt of the site.
+banner_height: "398" ## The banner height of the site.
+banner_width: "1440" ## The banner width of the site.
+banner: "https://kura.pro/unsplash/images/banners/vishal-bansal-SC5sXeyjloE-unsplash.jpg" ## The banner of the site.
+cdn: "https://kura.pro" ## The CDN of the site.
+charset: "utf-8" ## The charset of the site. (default: utf-8)
+cname: "sebastienrousseau.com" ## The cname value of the site. (Only required for the index page.)
+copyright: "© 2023 Kaishi Starter Template. All rights reserved." ## The copyright of the site.
+description: "You can contact us using the contact form below." ## The description of the site. (max 160 characters)
+download: "" ## The download url for the product.
+format-detection: "telephone=no" ## The format detection of the site.
+form-id: "https://formspree.io/f/meqwylbe" ## The form id of the site.
+hreflang: "en" ## The hreflang of the site. (default: en-gb)
+icon: "https://kura.pro/kaishi/images/logos/kaishi.svg" ## The icon of the site in SVG format.
+id: "https://sebastienrousseau.com" ## The id of the site.
+image_alt: "Logo of Sebastien Rousseau, Senior Digital Financial Services Consultant" ## The image alt of the site.
+image_height: "630" ## The image height of the site.
+image_width: "1200" ## The image width of the site.
+image: "https://kura.pro/kaishi/images/banners/banner-kaishi.webp" ## The main image of the site in SVG format.
+keywords: "Contact us, contact, contact us form" ## The keywords of the site. (comma separated, max 10 keywords)
+language: "en-GB" ## The language of the site. (default: en-GB)
+layout: "contact" ## The layout of the site.
+locale: "en_GB" ## The locale of the site.
+logo_alt: "Logo of Sebastien Rousseau, Senior Digital Financial Services Consultant" ## The logo alt of the site.
+logo_height: "33" ## The logo height of the site.
+logo_width: "100" ## The logo width of the site.
+logo: "https://kura.pro/kaishi/images/banners/banner-kaishi.webp" ## The logo of the site in SVG format.
+name: "Kaishi" ## The name of the website. (max 64 characters)
+permalink: "https://sebastienrousseau.com" ## The url of the site.
+rating: "general" ## The rating of the site.
+referrer: "no-referrer" ## The referrer of the site.
+revisit-after: "7 days" ## The revisit after of the site.
+robots: "index, follow" ## The robots of the site.
+short_name: "kaishi" ## The short name of the site. (max 12 characters)
+subtitle: "How can we help you today?" ## The subtitle of the page. (max 64 characters)
+theme_color: "rgb(0, 48, 96)" ## The theme color of the site.
+title: "Kaishi Starter Template - Contact Us" ## The title of the page. (max 64 characters)
+url: "https://sebastienrousseau.com" ## The url of the site.
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no" ## The viewport of the site.
+
+# RSS - The RSS feed front matter (YAML).
+atom_link: https://sebastienrousseau.com/contact/rss.xml
+category: "Technology"
+docs: https://validator.w3.org/feed/docs/rss2.html
+generator: "Shokunin 🦀 (version 0.0.15)"
+item_description: RSS feed for the contact page of the Kaishi website.
+item_guid: https://sebastienrousseau.com/contact/rss.xml
+item_link: https://sebastienrousseau.com/contact/rss.xml
+item_pub_date: "Thu, 12 Jul 2023 20:20:20 GMT"
+item_title: "Contact Us"
+last_build_date: "Thu, 12 Jul 2023 20:20:20 GMT"
+managing_editor: "contact@sebastienrousseau.com"
+pub_date: "Thu, 12 Jul 2023 20:20:20 GMT"
+ttl: "60"
+type: "website"
+webmaster: "contact@sebastienrousseau.com"
+
+# Apple - The Apple front matter (YAML).
+apple_mobile_web_app_orientations: "portrait" ## The Apple mobile web app orientations of the page.
+apple_touch_icon_sizes: "192x192" ## The Apple touch icon sizes of the page.
+apple-mobile-web-app-capable: "yes" ## The Apple mobile web app capable of the page.
+apple-mobile-web-app-status-bar-inset: "black" ## The Apple mobile web app status bar inset of the page.
+apple-mobile-web-app-status-bar-style: "black-translucent" ## The Apple mobile web app status bar style of the page.
+apple-mobile-web-app-title: "Contact Us" ## The Apple mobile web app title of the page.
+apple-touch-fullscreen: "yes" ## The Apple touch fullscreen of the page.
+
+# MS Application - The MS Application front matter (YAML).
+
+msapplication-navbutton-color: "rgb(0, 48, 96)"
+
+# Twitter Card - The Twitter Card front matter (YAML).
+
+## twitter_card - The Twitter Card type of the page.
+twitter_card: "summary"
+## twitter_creator - The Twitter Card creator of the page.
+twitter_creator: "wwdseb"
+## twitter_description - The Twitter Card description of the page.
+twitter_description: "Contact us form for Kaishi, a starter template for static sites"
+## twitter_image - The Twitter Card image of the page.
+twitter_image: "https://kura.pro/kaishi/images/logos/kaishi.svg"
+## twitter_image:alt - The Twitter Card image alt of the page.
+twitter_image_alt: "Logo of Sebastien Rousseau, Senior Digital Financial Services Consultant"
+## twitter_site - The Twitter Card site of the page.
+twitter_site: "wwdseb"
+## twitter_title - The Twitter Card title of the page.
+twitter_title: "Contact Us"
+## twitter_url - The Twitter Card url of the page.
+twitter_url: "https://sebastienrousseau.com"
+
+# Humans.txt - The Humans.txt front matter (YAML).
+author_website: "https://sebastienrousseau.com" ## The author website of the page.
+author_twitter: "@wwdseb" ## The author twitter of the page.
+author_location: "London, UK" ## The author location of the page.
+thanks: "Thanks for reading!" ## The thanks of the page.
+site_last_updated: "2023-07-05" ## The last updated of the site.
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML" ## The standards of the site.
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes" ## The components of the site.
+site_software: "Shokunin, Rust" ## The software of the site.
+
+---

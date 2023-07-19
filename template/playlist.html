@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="{{language}}">
+  <head>
+    <meta charset="{{charset}}" />
+    <title>{{title}}</title>
+
+    <!-- # Start Primary Meta Tags -->
+    {{primary}}
+    <!-- # End Primary Meta Tags -->
+
+    <!-- # Start Open Graph / Facebook Meta Tags -->
+    {{opengraph}}
+    <!-- # End Open Graph / Facebook Meta Tags -->
+
+    <!-- # Start Accessibility Meta Tags -->
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <!-- # End Accessibility Meta Tags -->
+
+    <!-- # Start Apple Meta Tags -->
+    {{apple}}
+    <!-- # End Apple Meta Tags -->
+
+    <!-- # Start Content Security Policy Meta Tags -->
+<meta http-equiv="Content-Security-Policy"
+content="default-src 'self';
+  script-src 'self' 'unsafe-inline' *.google-analytics.com https://cdn.jsdelivr.net unpkg.com www.googletagmanager.com x.clarity.ms;
+  connect-src 'self' collect;
+  img-src 'self' data: https: kura.pro;
+  style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
+  font-src 'self' https://fonts.gstatic.com;
+  media-src 'self';
+  frame-src 'self' https://open.spotify.com;" />
+<!-- # End Content Security Policy Meta Tags -->
+
+
+
+    <!-- # Start Microsoft Meta Tags -->
+    {{microsoft}}
+    <!-- # End Microsoft Meta Tags -->
+
+    <!-- # Start Twitter Meta Tags -->
+    {{twitter}}
+    <!-- # End Twitter Meta Tags -->
+
+    <!-- # Start Links -->
+    <link rel="alternate" href="{{url}}" hreflang="{{hreflang}}" />
+    <link rel="preload" as="image" href="{{banner}}">
+    <link rel="canonical" href="{{url}}" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{cdn}}/{{short_name}}/images/favicon.ico"
+      sizes="16x16 32x32"
+    />
+    <link
+      as="style"
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      onload="this.onload=null;this.rel='stylesheet'"
+      rel="preload"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="{{cdn}}/{{short_name}}/images/icons/{{apple_touch_icon_sizes}}.png"
+      sizes="{{apple_touch_icon_sizes}}"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    <!-- # End Links -->
+
+    <!-- # Start Styles -->
+    <style>
+      :root {
+  --theme-color: {{theme_color}};
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--theme-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--theme-color);
+  opacity: 0.618;
+  text-decoration: underline;
+}
+
+.fade-in, .drop-down {
+  animation-fill-mode: forwards;
+}
+
+.fade-in {
+  animation: fadeIn 3s ease;
+}
+
+.drop-down {
+  animation: dropDown 1.618s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes dropDown {
+  from {
+    transform: translateY(-0.618rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.zoom-in {
+  transition: transform 0.618s cubic-bezier(0.618, 1, 0.618, 1); 
+}
+
+.zoom-in:hover {
+  transform: scale(1.0618);
+}
+
+.card {
+  overflow: hidden;
+}
+
+    </style>
+    <!-- # End Styles -->
+  </head>
+  <body
+    id="page-top"
+    itemscope
+    itemtype="http://schema.org/WebPage"
+    class="text-center bg-white text-dark text-start"
+  >
+    <!-- # Start Responsive navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-black bg-white"
+      id="mainNav"
+      itemscope
+      itemtype="http://schema.org/SiteNavigationElement"
+    >
+      <div class="container p-3">
+        <span class="fs-4"><a href="{{url}}">{{name}}</a></span>
+        <button
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler"
+          data-bs-target="#navbarSupportedContent"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/work/index.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/expertise/index.html">Expertise</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                id="navbarDropdown"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Links</a
+              >
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="supportDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="/contact/index.html">
+                    Contact us
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="/playlists/index.html">
+                    Spotify Playlists
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://github.com/sebastienrousseau/pain001"
+                  >
+                    Source Code ⧉
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/privacy/index.html">
+                    Privacy policy
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/terms/index.html">
+                    Terms of service
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- <div
+          class="collapse navbar-collapse"
+          role="navigation"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="active nav-link p-2" href="/index.html">Home</a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle p-2" href="/work/index.html">Work</a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle p-2" href="/expertise/index.html">Expertise</a></li>
+          </ul>
+        </div> -->
+      </div>
+    </nav>
+    <!-- # End Responsive navbar -->
+
+    <!-- Header-->
+    <header class="w-100 py-5 position-relative">
+        <img src="{{banner}}" alt="{{banner_alt}}" class="fade-in position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; z-index: -1;" loading="lazy" data-show-type="fade-in" data-has-animated="true" />
+        <img class="img-fluid rounded-circle mb-4" src="https://kura.pro/stock/images/banners/sebastien-rousseau.webp" alt="Icon Image for {{name}}" " width="150" height="150" loading="lazy" />
+        <div class="text-center text-white center mx-auto rounded rounded-3 p-5"
+        style="
+          background-color: rgba(0, 0, 0, 0.618);
+          width: 61.8vw;
+          height: auto;
+          z-index: 1;">
+          <p class="display-3 fw-bold">{{name}}</p>
+          <p class="display-6 fw-normal">{{subtitle}}</p>
+        </div>
+    </header>
+
+    <!-- Main content-->
+    <main id="main" class="bd-masthead fs-5 p-5" aria-label="main">
+      <div class="text-start justify-content-between">{{content}}</div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+              <div class="card border-0">
+                <div class="card-body text-start">
+                    <h5 class="card-title">SUMMERTIME 🌞</h5>
+                    <p class="card-text small">Unwind and embrace the essence of summer with our curated selection of Jazz, Soul, R&B, and Neo Soul beats.</p>
+                    <iframe class="zoom-in rounded-3" src="https://open.spotify.com/embed/playlist/5RQ9X2WmRseY9SEU5oLwwX?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card border-0">
+              <div class="card-body text-start">
+                  <h5 class="card-title">NEO SOUL 🎶</h5>
+                  <p class="card-text small">Immerse yourself in a deep dive into our quintessential collection of Jazz, Soul, R&B, and Neo Soul beats.</p>
+                  <iframe class="zoom-in rounded-3" src="https://open.spotify.com/embed/playlist/7yvugJcCzkaWN908rXTSIL?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0">
+              <div class="card-body text-start">
+                  <h5 class="card-title">ESSENTIAL 💚</h5>
+                  <p class="card-text small">Explore some of our favourite laidback beats, house-influenced grooves and new deep house tracks.</p>
+                  <iframe class="zoom-in rounded-3" src="https://open.spotify.com/embed/playlist/1lZbauO3yCPB3YAyT5xLCW?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card border-0">
+            <div class="card-body text-start">
+                <h5 class="card-title">MORNING ☕️</h5>
+                <p class="card-text small">Soulful tracks with a fashion-forward vibe. Let the music set the tone for a productive and stylish day.</p>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3GspTYbjOA4oCSulh3YLng?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0">
+            <div class="card-body text-start">
+                <h5 class="card-title">COLOURS 🌈</h5>
+                <p class="card-text small">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms.</p>
+                <iframe class="zoom-in rounded-3" src="https://open.spotify.com/embed/playlist/2JGGk44Nopf8BX7oYJsler?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0">
+            <div class="card-body text-start">
+                <h5 class="card-title">LOTUS 🪷</h5>
+                <p class="card-text small">Take a break from your busy day and relax with some soothing nu jazz and downtempo beats.</p>
+                <iframe class="zoom-in rounded-3" src="https://open.spotify.com/embed/playlist/7hZsKoasqFogxZVqDKYJwA?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card border-0">
+          <div class="card-body text-start">
+              <h5 class="card-title">WASSULU DON 🦁</h5>
+              <p class="card-text small">Celebrate the diverse heritage of African music from the soulful rhythms of Wassoulou to the lively beats of Londonko.</p>
+              <iframe class="zoom-in rounded-3" src="https://open.spotify.com/embed/playlist/13oQhLqxlNuPrn9pOIx6Vx?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0">
+          <div class="card-body text-start">
+              <h5 class="card-title">COOL 🎧</h5>
+              <p class="card-text small">Seamlessly blending funky, disco, house, French touch, and other genres into an ultra-cool and energetic musical experience.</p>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4y3b1FXh8eVhwRRoKwrtSx?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0">
+          <div class="card-body text-start">
+              <h5 class="card-title">WORKOUT BEATS 💿</h5>
+              <p class="card-text small">Explore some of our favourite laidback beats, hiphop-influenced grooves and new indie pop tracks.</p>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5yegPuy33SiP7DIwL6MF0J?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card border-0">
+          <div class="card-body text-start">
+              <h5 class="card-title">HIP-HOP 🎤</h5>
+              <p class="card-text small">Original Hip Hop, Rap and R&B Flavor Sessions.</p>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6jFJIxFfpUx0oGkbLDImKB?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0">
+          <div class="card-body text-start">
+              <h5 class="card-title">BLAST 💥</h5>
+              <p class="card-text small">Brace yourself for hardcore rap and hip hop tracks.</p>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6830pCYVUFYHtnkE4SJfhR?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0">
+          <div class="card-body text-start">
+              <h5 class="card-title">HIP HOP MIXTAPE 📼</h5>
+              <p class="card-text small">Explore some of our favourite hip-hop gems.</p>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5yUR35ZVOOpxyPOBhAvhkR?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card border-0">
+          <div class="card-body text-start">
+              <h5 class="card-title">LOOK 💋</h5>
+              <p class="card-text small">Experience a sonic voyage featuring Nu-Disco, French House, Electro, and Disco House tunes from artists like Madeon, Fred Falke and more.</p>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0S31oWFMppEkhtHiSsldI1?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0">
+          <div class="card-body text-start">
+              <h5 class="card-title">LIFETIME ⏳</h5>
+              <p class="card-text small">With its mix of soulful beats and thoughtful lyrics, this mixtape offers a captivating look into the world of contemporary hip hop, R&B and rap music.</p>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1RnzXyrj73nyo4yK6j3xT9?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0">
+          <div class="card-body text-start">
+              <h5 class="card-title">LO-FI BEATS 🎹</h5>
+              <p class="card-text small">Step into a world of laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats.</p>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6Utj7AwHY6VkgGtm9wAneh?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+    <!-- Footer-->
+    <footer id="footer" aria-label="footer" class="footer border-top mt-auto py-3">
+        <p class="mb-1"><span class="px-2">{{copyright}}</span></p>
+        <p class="mb-0"><span class="px-2">
+          <a href="/contact/index.html">Contact</a>
+        </span>
+        <span class="px-2">
+          <a href="/privacy/index.html">Privacy & Cookie Policy</a>
+        </span>
+        <span class="px-2">
+          <a href="/terms/index.html">Terms of Use</a>
+        </span>
+      </p>
+    </footer>
+    <script
+      async
+      crossorigin="anonymous"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "{{name}}",
+        "url": "{{url}}"
+      }
+    </script>
+    <script type="module" defer>
+      // This is an Immediately Invoked Function Expression (IIFE) which helps
+      // to avoid declaring any globals.
+      (function () {
+        // Create a new script element
+        var script = document.createElement("script");
+
+        // Set the source of the script element to "/main.js".
+        // A timestamp is appended as a query string to ensure the browser
+        // always fetches the latest version of the script, bypassing the
+        // cache.
+        script.src = "/main.js";
+
+        // The script is of type "text/javascript"
+
+        // The script is set to execute asynchronously as soon as it's
+        //available
+
+        // Append the script element to the head of the document
+        document.head.appendChild(script);
+      })(); // The function is immediately invoked
+    </script>
+    <script>
+      // JavaScript code
+      var dropDownElements = document.querySelectorAll('.drop-down');
+      dropDownElements.forEach(function(element) {
+        element.classList.add('animate');
+      });
+  
+      window.addEventListener('scroll', function() {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        dropDownElements.forEach(function(element) {
+          if (scrollTop === 0) {
+            element.classList.add('animate');
+          } else {
+            element.classList.remove('animate');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
