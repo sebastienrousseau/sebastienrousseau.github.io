@@ -102,7 +102,7 @@ site_software: "Shokunin, Rust"
 
 In today's digital landscape, speed is paramount. We sought a way to generate
 static websites that are high-quality, accessible, and SEO-friendly. No existing
-solution was elegant enough to meet our needs. We created our own from the
+solution was able to meet our needs. Therefore, we created our own from the
 ground up, aiming to provide a fast and reliable alternative to existing static
 site generators.
 
@@ -112,12 +112,11 @@ site generators.
 
 
 [**Shokunin**][00] is a blazing-fast static site generator (SSG) built with
-Rust. It is designed for speed, security, and reliability. Shokunin makes it
-simple and quick to generate websites that are optimized for SEO and fully
-compliant with accessibility standards.
+Rust. Shokunin makes it simple and quick to generate websites that are
+optimized for SEO and are fully compliant with accessibility standards.
 
-We developed Shokunin to push the boundaries of what is possible. And to ensure
-a successful implementation, we also created a cohesive design system.
+We developed Shokunin to push the boundaries of what is possible. To ensure a
+successful implementation, we also created a cohesive design system.
 
 ## Impact
 
@@ -128,7 +127,7 @@ content that maximizes impact on the intended audience. The process is
 straightforward and completes in milliseconds.
 
 The resulting website, in turn, is fully responsive, compliant with the Web
-Content Accessibility Guidelines (WCAG), ADA, and optimized for SEO from the
+Content Accessibility Guidelines (WCAG), ADA, and is optimized for SEO from the
 outset.
 
 The meticulous attention to detail makes Shokunin a new standard for static
@@ -138,10 +137,9 @@ site generators and a breakthrough in the field of web development.
 
 ### Experimenting with a new paradigm requires courage and confidence
 
-Shokunin is more than a static site generator; it's a new paradigm, a new way of
-thinking about the web. Through a combination of well thought out design, it
-empowers content creators and creative professionals to enhance the
-customer-centric experience.
+Shokunin is a new paradigm, a new way of thinking about the web. Through a
+combination of well thought out design, it empowers content creators and
+creative professionals to enhance the customer-centric experience.
 
 All features exemplify the values of simplicity, adaptability, and focus only on
 the essential. The result is a fast, secure, and reliable static site generator
@@ -159,5 +157,7 @@ that is easy to use and maintain.
 * Automatic generation of sitemaps, robots.txt, CNAME records, and custom 404 pages
 * Progressive web apps (PWAs) support for offline browsing
 * Custom templates and HTML themes support
+
+[Ready to get started?][00]
 
 [00]: https://shokunin.one/ "Shokunin, a blazing-fast Static Site Generator (SSG) in Rust"
