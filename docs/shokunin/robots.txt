@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sebastienrousseau.co.uk/shokunin//sitemap.xml

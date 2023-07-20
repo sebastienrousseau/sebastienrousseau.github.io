@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://sebastienrousseau.co.uk/sitemap.xml
+Sitemap: https://sebastienrousseau.co.uk/payments//sitemap.xml

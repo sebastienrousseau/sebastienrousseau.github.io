@@ -68,27 +68,25 @@
     <!-- # End Links -->
 
     <!-- # Start Styles -->
-    <style>
+    <style type="text/css">
       :root {
   --theme-color: {{theme_color}};
 }
 
 * {
-  font-weight: 300!important;  
+  font-weight: 300;
 }
 
-strong {
-  font-weight: 500!important;
+h1, h2, h3, h4, h5, h6, strong, .active {
+  font-weight: 400;
 }
 
-a
-{
+a {
   color: var(--theme-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--theme-color);
   text-decoration: underline;
 }
 
@@ -102,6 +100,24 @@ a:hover {
 
 .drop-down {
   animation: dropDown 1.618s ease;
+}
+
+.zoom-in {
+  transition: transform 0.618s cubic-bezier(0.618, 1, 0.618, 1);
+}
+
+.zoom-in:hover {
+  transform: scale(1.0618);
+}
+
+.card {
+  overflow: hidden;
+}
+
+.blur-light {
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(255, 255, 255, 0.618);
 }
 
 @keyframes fadeIn {
@@ -122,25 +138,6 @@ a:hover {
   }
 }
 
-.zoom-in {
-  transition: transform 0.618s cubic-bezier(0.618, 1, 0.618, 1);
-}
-
-.zoom-in:hover {
-  transform: scale(1.0618);
-}
-
-
-.card {
-  overflow: hidden;
-}
-
-.blur-light {
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-  background-color: rgba(255, 255, 255, 0.618);
-}
-
     </style>
     <!-- # End Styles -->
   </head>
@@ -157,20 +154,20 @@ a:hover {
       itemscope
       itemtype="http://schema.org/SiteNavigationElement"
     >
-      <div class="container-xxl p-3">
-        <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="Bootstrap">
-          <img
-                      class="d-inline-block align-top"
-                      width="38"
-                      height="38"
-                      src="{{icon}}"
-                      alt="Logo with black mountain symbolising growth, and red vinyl record representing the nurturing sun and music."
-                      title="Logo with black mountain symbolising growth, and red vinyl record representing the nurturing sun and music."
-                      loading="lazy"
-                    />
-        </a>
-        <span class="fs-4" itemprop="name"><a href="{{url}}" itemprop="url" title="{{name}} - {{description}}" class="text-decoration-none text-dark">{{name}}</a></span>
-        <button
+    <div class="container-xxl p-3">
+      <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="logo">
+        <img
+          class="d-inline-block align-top"
+          width="{{logo_width}}"
+          height="{{logo_height}}"
+          src="{{logo}}"
+          alt="{{logo_alt}}"
+          title="{{logo_alt}}"
+          loading="lazy"
+        />
+      </a>
+      <span class="fs-4" itemprop="name"><a href="{{url}}" itemprop="url" title="{{name}} - {{description}}" class="text-decoration-none text-dark">{{name}}</a></span>
+      <button
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -185,13 +182,13 @@ a:hover {
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
-                class="text-dark nav-link nav-link active"
+                class="nav-link active"
                 aria-current="page"
                 href="/index.html">Home</a>
             </li>
             <li class="nav-item">
               <a
-                class="nav-link "
+                class="nav-link"
                 href="/work/index.html">Work</a>
             </li>
             <li class="nav-item">

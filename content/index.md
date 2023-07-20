@@ -24,10 +24,10 @@ keywords: "Sample, Rust, static site generator, ssg, dynamic websites, HTML them
 language: "en-GB"
 layout: "index"
 locale: "en_GB"
-logo_alt: "Logo of Sebastien Rousseau, Banking & Financial Software Professional"
-logo_height: "33"
-logo_width: "100"
-logo: "https://kura.pro/kaishi/images/banners/banner-kaishi.webp"
+logo_alt: "Logo for Sebastien Rousseau, Banking & Financial Software Professional"
+logo_height: "44"
+logo_width: "44"
+logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 name: "Sebastien Rousseau"
 permalink: "https://sebastienrousseau.co.uk"
 rating: "general"
@@ -119,7 +119,7 @@ site_software: "Shokunin, Rust"
                 loading="lazy"
                 /></a>
         <div class="card-body px-0">
-            <h3 class="card-text small">Shokunin, a blazing-fast Static Site Generator (SSG) built with Rust</h3>
+            <h3 class="card-text small"><a href="/shokunin/index.html">Shokunin, a blazing-fast Static Site Generator (SSG) built with Rust</a></h3>
         </div>
         </div>
     </div>
