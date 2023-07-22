@@ -98,46 +98,40 @@ site_software: "Shokunin, Rust"
 
 ## Insight
 
-### ISO 20022: The Global Benchmark for Financial Data Communication
+### The payments industry is evolving, and ISO 20022 is leading the way
 
-The payments industry continues to evolve and at the forefront of this change is
-the [**ISO 20022 ⧉**][01] standard. This groundbreaking standard is setting the
-pace for financial data communication, simplifying transactions, and enhancing
-payment systems worldwide.
+[**ISO 20022 ⧉**][01] is a groundbreaking standard that is simplifying
+transactions and enhancing payment systems worldwide. It provides a common
+language for exchanging payment data, making payments more efficient and secure.
 
-Across the globe, banks, corporations, and financial institutions have adopted
-[**ISO 20022 ⧉**][01], leveraging its power to automate and standardise payment
-transactions. This facilitates a smooth and efficient global financial
-ecosystem.
+Banks, corporations, and financial institutions around the globe have adopted
+ISO 20022, leveraging its power to automate and standardize payment transactions.
+This is facilitating a smooth and efficient global financial ecosystem.
 
 ## Idea
 
-### Streamline ISO 20022-compliant Payment File Creation with Pain001
+### Pain001 is a Python library that simplifies the creation of ISO 20022-compliant payment messages.
 
-[**Pain001 ⧉**][00] is a comprehensive toolset for creating, translating, and
-validating payment initiation and advice messages, collectively known as
-**PAIN (PAyment INitiation)**. **Pain001** is an open-source Python library that
-enables users to create payment message standards that follow the High
-Value Payments Plus (HVPS+) and Cross-Border Payments and Reporting Plus
-(CBPR+) standards.
+[**Pain001 ⧉**][00] is an open-source toolset for creating, translating, and
+validating payment initiation and advice messages. It follows the High Value
+Payments Plus (HVPS+) and Cross-Border Payments and Reporting Plus (CBPR+)
+standards.
 
-Informed by an in-depth understanding of the current landscape, **Pain001**
-simplifies the process of generating ISO 20022-compliant payment messages. Our
-solution allows for direct creation of messages from CSV or SQLite databases,
-thereby reducing processing costs, increasing efficiency, and enhancing accuracy.
+Pain001 allows for direct creation of messages from CSV or SQLite databases,
+which reduces processing costs, increases efficiency, and enhances accuracy.
 
 ## Impact
 
 ### Leverage the Power of ISO 20022 with Pain001
 
-**Pain001** is committed to simplifying and streamlining the process of generating
-payment messages, enabling easy adoption of ISO 20022 and facilitating seamless
-integration with existing systems to achieve ISO 20022 compliance.
+**Pain001** is committed to simplifying and streamlining the process of
+generating payment messages, enabling easy adoption of ISO 20022 and
+facilitating seamless integration with existing systems to achieve ISO 20022
+compliance.
 
-By generating ISO 20022-compliant payment files, **Pain001** significantly mitigates
-processing costs and complexities. The automation in creation and validation of
-these files removes the need for manual intervention, paving the way for an
-efficient and cost-effective payment process.
+Pain001 can significantly mitigate processing costs and complexities by
+eliminating the need for manual data entry and file generation. It can also help
+to reduce the risk of errors, which can further reduce costs.
 
 For organisations looking to simplify and automate their payment processing,
 **Pain001** serves as a practical and highly effective solution.
@@ -147,10 +141,10 @@ For organisations looking to simplify and automate their payment processing,
 ### Shaping the Future of Payments Automation with Pain001
 
 Experience a transformative shift in your payment automation process with
-**Pain001**. This highly innovative tool significantly reduces processing
-costs, minimises errors, and simplifies transactions. The automation of payment
-file creation and validation is just the beginning of the possibilities that
-**Pain001** offers.
+Pain001. This highly innovative tool significantly reduces processing costs,
+minimises errors, and simplifies transactions. The automation of payment file
+creation and validation is just the beginning of the possibilities that Pain001
+offers.
 
 Here's why you should consider **Pain001** for your payment automation needs:
 
@@ -192,4 +186,3 @@ reshapes the way you manage payments.
 [00]: https://pain001.com/ "Pain001"
 [01]: https://www.iso20022.org/ "ISO 20022"
 [02]: https://pain001.com/2021/07/12/delivering-faster-payments-automation.html "Embrace the future of payment automation with Pain001"
-

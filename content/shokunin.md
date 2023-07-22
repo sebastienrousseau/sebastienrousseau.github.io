@@ -111,8 +111,8 @@ site generators.
 ### A solution of infinite scalability and customisation
 
 
-[**Shokunin**][00] is a blazing-fast static site generator (SSG) built with
-Rust. Shokunin makes it simple and quick to generate websites that are
+[**Shokunin ⧉**][00] is a blazing-fast static site generator (SSG) built with
+[**Rust ⧉**][03]. Shokunin makes it simple and quick to generate websites that are
 optimized for SEO and are fully compliant with accessibility standards.
 
 We developed Shokunin to push the boundaries of what is possible. To ensure a
@@ -126,9 +126,9 @@ Generating a static website with Shokunin is effortless, allowing for a focus on
 content that maximizes impact on the intended audience. The process is
 straightforward and completes in milliseconds.
 
-The resulting website, in turn, is fully responsive, compliant with the Web
-Content Accessibility Guidelines (WCAG), ADA, and is optimized for SEO from the
-outset.
+The resulting website, in turn, is fully responsive, compliant with the
+[**Web Content Accessibility Guidelines (WCAG) ⧉**][01], [**ADA ⧉**][02], and
+is optimised for Search Engine Optimization (SEO) from the outset.
 
 The meticulous attention to detail makes Shokunin a new standard for static
 site generators and a breakthrough in the field of web development.
@@ -147,12 +147,12 @@ that is easy to use and maintain.
 
 **Key features include:**
 
-* Comprehensive GitHub Flavoured Markdown ⧉ (GFM) support
-* Google and Bing Analytics integration
+* Comprehensive [GitHub Flavoured Markdown ⧉ (GFM)][04] support
+* [Google][05] and [Bing][06] Analytics integration
 * Compatibility with diverse HTML themes and premium templates
 * Atom and RSS feeds generation for blogs
 * Source code minification for performance and SEO enhancement
-* Built-in Rust development server for local testing and development
+* Built-in [Rust][07] development server for local testing and development
 * Support for multiple content formats (Markdown, YAML, JSON, TOML, XML)
 * Automatic generation of sitemaps, robots.txt, CNAME records, and custom 404 pages
 * Progressive web apps (PWAs) support for offline browsing
@@ -161,3 +161,10 @@ that is easy to use and maintain.
 [Ready to get started?][00]
 
 [00]: https://shokunin.one/ "Shokunin, a blazing-fast Static Site Generator (SSG) in Rust"
+[01]: https://www.w3.org/WAI/standards-guidelines/wcag/ "Web Content Accessibility Guidelines (WCAG)"
+[02]: https://www.access-board.gov/ada/ "Americans with Disabilities Act (ADA)"
+[03]: https://www.rust-lang.org/ "Rust Programming Language"
+[04]: https://github.github.com/gfm/ "GitHub Flavored Markdown Spec"
+[05]: https://analytics.google.com/analytics/web/ "Google Analytics"
+[06]: https://www.bing.com/webmasters/ "Bing Webmaster Tools"
+[07]: https://www.rust-lang.org/tools/install "Rust Installation Guide"
