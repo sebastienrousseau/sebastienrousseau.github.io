@@ -16,7 +16,7 @@ format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.co.uk"
-image_alt: "Black and White Portrait of Sebastien Rousseau, Banking & Financial Software Professional"
+image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "161.8"
 image_width: "161.8"
 image: "https://kura.pro/stock/images/banners/sebastien-rousseau.webp"
@@ -24,7 +24,7 @@ keywords: "Sample, Rust, static site generator, ssg, dynamic websites, HTML them
 language: "en-GB"
 layout: "index"
 locale: "en_GB"
-logo_alt: "Logo for Sebastien Rousseau, Banking & Financial Software Professional"
+logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
 logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
@@ -35,9 +35,9 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Banking & Financial Software Professional"
+subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
 theme_color: "rgb(0, 102, 204)"
-title: "Sebastien Rousseau Banking & Financial Software Professional"
+title: "Sebastien Rousseau"
 url: "https://sebastienrousseau.co.uk"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -77,7 +77,7 @@ twitter_card: "summary"
 twitter_creator: "wwdseb"
 twitter_description: "Exploring the Future of Financial Services: Researching and Applying AI, Post-Quantum Cryptography, Blockchain, and Beyond"
 twitter_image: "https://kura.pro/kaishi/images/logos/kaishi.svg"
-twitter_image_alt: "Logo of Sebastien Rousseau, Banking & Financial Software Professional"
+twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
 twitter_title: "Sebastien Rousseau"
 twitter_url: "https://sebastienrousseau.co.uk"
@@ -119,7 +119,7 @@ site_software: "Shokunin, Rust"
                 loading="lazy"
                 /></a>
         <div class="card-body px-0">
-            <h3 class="card-text small"><a href="/shokunin/index.html">Shokunin, a blazing-fast Static Site Generator (SSG) built with Rust</a></h3>
+            <h3 class="card-text small"><a href="/shokunin/index.html">Shokunin, a lightning-fast Static Site Generator (SSG) built with Rust</a></h3>
         </div>
         </div>
     </div>
@@ -149,7 +149,7 @@ site_software: "Shokunin, Rust"
         title="Aloe vera plant inside white pot"
         width="100%" height="100%" loading="lazy" /></a>
         <div class="card-body px-0">
-            <h3 class="card-text small">The Making of Shokunin, a blazing-fast Static Site Generator (SSG) built with Rust</h3>
+            <h3 class="card-text small">The Making of Shokunin, a lightning-fast Static Site Generator (SSG) built with Rust</h3>
         </div>
         </div>
     </div>
