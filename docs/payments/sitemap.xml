@@ -10,6 +10,11 @@
 </url>
 
 <url>
+<loc>https://sebastienrousseau.co.uk/payments//password/index.html</loc>
+<changefreq>weekly</changefreq>
+</url>
+
+<url>
 <loc>https://sebastienrousseau.co.uk/payments//playlists/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
@@ -26,6 +31,11 @@
 
 <url>
 <loc>https://sebastienrousseau.co.uk/payments//hash/index.html</loc>
+<changefreq>weekly</changefreq>
+</url>
+
+<url>
+<loc>https://sebastienrousseau.co.uk/payments//constants/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 

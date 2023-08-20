@@ -10,6 +10,11 @@
 </url>
 
 <url>
+<loc>https://sebastienrousseau.co.uk/password/index.html</loc>
+<changefreq>weekly</changefreq>
+</url>
+
+<url>
 <loc>https://sebastienrousseau.co.uk/playlists/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
@@ -26,6 +31,11 @@
 
 <url>
 <loc>https://sebastienrousseau.co.uk/hash/index.html</loc>
+<changefreq>weekly</changefreq>
+</url>
+
+<url>
+<loc>https://sebastienrousseau.co.uk/constants/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 

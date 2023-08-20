@@ -139,7 +139,7 @@ site_software: "Shokunin, Rust"
         title="Giant white pillars"
         width="100%" height="100%" loading="lazy" data-show-type="fade-up" data-has-animated="true" /></a>
         <div class="card-body px-0">
-            <h3 class="card-text small"><a href="">A Rust library for accessing a collection of mathematical and cryptographic constants</a></h3>
+            <h3 class="card-text small"><a href="/constants/index.html">A Rust library for accessing a collection of mathematical and cryptographic constants</a></h3>
         </div>
         </div>
     </div>
@@ -149,7 +149,7 @@ site_software: "Shokunin, Rust"
         title="Aloe vera plant inside white pot"
         width="100%" height="100%" loading="lazy" /></a>
         <div class="card-body px-0">
-            <h3 class="card-text small">The Making of Shokunin, a lightning-fast Static Site Generator (SSG) built with Rust</h3>
+            <h3 class="card-text small"><a href="/password/index.html">Unlocking Security with Password Generator Pro: A Fast, Simple, and Secure Password Solution</a></h3>
         </div>
         </div>
     </div>
