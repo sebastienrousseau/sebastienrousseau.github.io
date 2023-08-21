@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url>
-<loc>https://sebastienrousseau.co.uk/payments//hash/index.html</loc>
+<loc>https://sebastienrousseau.com/payments/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/payments//offline/index.html</loc>
+<loc>https://sebastienrousseau.com/contact/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/payments//constants/index.html</loc>
+<loc>https://sebastienrousseau.com/password/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/payments//index.html</loc>
+<loc>https://sebastienrousseau.com/playlists/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/payments//404/index.html</loc>
+<loc>https://sebastienrousseau.com/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/payments//privacy/index.html</loc>
+<loc>https://sebastienrousseau.com/privacy/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/payments//terms/index.html</loc>
+<loc>https://sebastienrousseau.com/hash/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/payments//shokunin/index.html</loc>
+<loc>https://sebastienrousseau.com/constants/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/payments//password/index.html</loc>
+<loc>https://sebastienrousseau.com/terms/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/payments//playlists/index.html</loc>
+<loc>https://sebastienrousseau.com/work/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/payments//work/index.html</loc>
+<loc>https://sebastienrousseau.com/shokunin/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/payments//expertise/index.html</loc>
+<loc>https://sebastienrousseau.com/404/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/payments//payments/index.html</loc>
+<loc>https://sebastienrousseau.com/expertise/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/payments//contact/index.html</loc>
+<loc>https://sebastienrousseau.com/offline/index.html</loc>
 <changefreq>weekly</changefreq>
 </url></urlset>

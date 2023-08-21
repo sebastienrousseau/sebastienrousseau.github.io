@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url>
-<loc>https://sebastienrousseau.co.uk/shokunin//hash/index.html</loc>
+<loc>/about/index.html/payments/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/shokunin//offline/index.html</loc>
+<loc>/about/index.html/contact/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/shokunin//constants/index.html</loc>
+<loc>/about/index.html/password/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/shokunin//index.html</loc>
+<loc>/about/index.html/playlists/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/shokunin//404/index.html</loc>
+<loc>/about/index.html/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/shokunin//privacy/index.html</loc>
+<loc>/about/index.html/privacy/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/shokunin//terms/index.html</loc>
+<loc>/about/index.html/hash/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/shokunin//shokunin/index.html</loc>
+<loc>/about/index.html/constants/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/shokunin//password/index.html</loc>
+<loc>/about/index.html/terms/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/shokunin//playlists/index.html</loc>
+<loc>/about/index.html/work/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/shokunin//work/index.html</loc>
+<loc>/about/index.html/shokunin/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/shokunin//expertise/index.html</loc>
+<loc>/about/index.html/404/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/shokunin//payments/index.html</loc>
+<loc>/about/index.html/expertise/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>https://sebastienrousseau.co.uk/shokunin//contact/index.html</loc>
+<loc>/about/index.html/offline/index.html</loc>
 <changefreq>weekly</changefreq>
 </url></urlset>
