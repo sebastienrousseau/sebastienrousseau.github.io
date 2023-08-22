@@ -159,7 +159,7 @@ site_software: "Shokunin, Rust"
         title="White concrete building"
         width="100%" height="100%" loading="lazy" /></a>
         <div class="card-body px-0">
-            <h3 class="card-text small">The creation of a Quantum-Resistant Cryptographic Hash Library built with Rust</h3 >
+            <h3 class="card-text small"><a href="/libmake/index.html">A code generator to reduce repetitive tasks and build high-quality Rust libraries</a></h3 >
         </div>
         </div>
     </div>
