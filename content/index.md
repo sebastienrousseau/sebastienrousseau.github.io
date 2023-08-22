@@ -99,17 +99,18 @@ site_software: "Shokunin, Rust"
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
     <div class="col">
         <div class="card border-0">
-        <a href="/payments/index.html"><img src="https://kura.pro/stock/images/banners/andrea-de-santis-T3Qen8vVgRc.webp" class="zoom-in card-img-top" alt="A very tall building that has a lot of holes in it"
+        <a href="/automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"><img src="https://kura.pro/stock/images/banners/andrea-de-santis-T3Qen8vVgRc.webp" class="zoom-in card-img-top" alt="A very tall building that has a lot of holes in it"
         title="A very tall building that has a lot of holes in it"
         width="100%" height="33%" loading="lazy" data-show-type="fade-up" data-has-animated="true" /></a>
         <div class="card-body px-0">
-            <h3 class="card-text small"><a href="/payments/index.html">Automating ISO 20022-Compliant Payment File Creation</a></h3>
+            <h3 class="card-text small"><a href="/automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html">Automating ISO 20022-Compliant Payment File Creation with Pain001</a></h3>
+            <h4 class="card-text fs-6">by Sebastien Rousseau (11 Sep 2023)</h4>
         </div>
         </div>
     </div>
     <div class="col">
         <div class="card border-0">
-        <a href="">
+        <a href="/shokunin-the-fastest-rust-based-static-site-generator/index.html">
             <img 
                 src="https://kura.pro/stock/images/banners/anna-nekrashevich-8534387.webp"
                 class="zoom-in card-img-top" alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right"
@@ -119,7 +120,8 @@ site_software: "Shokunin, Rust"
                 loading="lazy"
                 /></a>
         <div class="card-body px-0">
-            <h3 class="card-text small"><a href="/shokunin/index.html">Shokunin, a lightning-fast Static Site Generator (SSG) built with Rust</a></h3>
+            <h3 class="card-text small"><a href="/shokunin-the-fastest-rust-based-static-site-generator/index.html">Shokunin, the fastest Rust-based Static Site Generator (SSG)</a></h3>
+            <h4 class="card-text fs-6">by Sebastien Rousseau (18 Sep 2023)</h4>
         </div>
         </div>
     </div>
@@ -130,6 +132,7 @@ site_software: "Shokunin, Rust"
         width="100%" height="100%" loading="lazy" /></a>
         <div class="card-body px-0">
             <h3 class="card-text small"><a href="/hash/index.html">The creation of a Quantum-Resistant Cryptographic Hash Library built with Rust</a></h3>
+            <h4 class="card-text fs-6">by Sebastien Rousseau (25 Sep 2023)</h4>
         </div>
         </div>
     </div>
@@ -140,6 +143,7 @@ site_software: "Shokunin, Rust"
         width="100%" height="100%" loading="lazy" data-show-type="fade-up" data-has-animated="true" /></a>
         <div class="card-body px-0">
             <h3 class="card-text small"><a href="/constants/index.html">A Rust library for accessing a collection of mathematical and cryptographic constants</a></h3>
+            <h4 class="card-text fs-6">by Sebastien Rousseau (02 Oct 2023)</h4>
         </div>
         </div>
     </div>
@@ -150,6 +154,7 @@ site_software: "Shokunin, Rust"
         width="100%" height="100%" loading="lazy" /></a>
         <div class="card-body px-0">
             <h3 class="card-text small"><a href="/password/index.html">Unlocking Security with Password Generator Pro: A Fast, Simple, and Secure Password Solution</a></h3>
+            <h4 class="card-text fs-6">by Sebastien Rousseau (09 Oct 2023)</h4>
         </div>
         </div>
     </div>
@@ -159,7 +164,80 @@ site_software: "Shokunin, Rust"
         title="White concrete building"
         width="100%" height="100%" loading="lazy" /></a>
         <div class="card-body px-0">
-            <h3 class="card-text small"><a href="/libmake/index.html">A code generator to reduce repetitive tasks and build high-quality Rust libraries</a></h3 >
+            <h3 class="card-text small"><a href="/libmake/index.html">A code generator to reduce repetitive tasks and build high-quality Rust libraries</a></h3>
+            <h4 class="card-text fs-6">by Sebastien Rousseau (16 Oct 2023)</h4>
+        </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card border-0">
+        <a href="/payments/index.html"><img src="https://kura.pro/stock/images/banners/adam-smigielski-K5mPtONmpHM.webp" class="zoom-in card-img-top" alt="A very tall building that has a lot of holes in it"
+        title="A very tall building that has a lot of holes in it"
+        width="100%" height="33%" loading="lazy" data-show-type="fade-up" data-has-animated="true" /></a>
+        <div class="card-body px-0">
+            <h3 class="card-text small"><a href="/the-making-of-the-express-transaction-credits-platform/index.html">The making of the Express Transaction Credits Platform</a></h3>
+            <h4 class="card-text fs-6">by Sebastien Rousseau (15 Feb 2018)</h4>
+        </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card border-0">
+        <a href="">
+            <img 
+                src="https://kura.pro/stock/images/banners/laureen-missaire-DBbuhMbAIsQ.webp"
+                class="zoom-in card-img-top" alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right"
+                title="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right"
+                width="100%"
+                height="100%"
+                loading="lazy"
+                /></a>
+        <div class="card-body px-0">
+            <h3 class="card-text small"><a href="/shokunin/index.html">Unveiling a new Cryptocurrency and offering Future Faster Payment Solution</a></h3>
+            <h4 class="card-text fs-6">by Sebastien Rousseau (04 Feb 2018)</h4>
+        </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card border-0">
+        <a href=""><img src="https://kura.pro/stock/images/banners/m-ZzOa5G8hSPI.webp" class="zoom-in card-img-top" alt="Photo of white painted building" 
+        title="Photo of white painted building"
+        width="100%" height="100%" loading="lazy" /></a>
+        <div class="card-body px-0">
+            <h3 class="card-text small"><a href="/hash/index.html">The ERC-20 Token Standard</a></h3>
+            <h4 class="card-text fs-6">by Sebastien Rousseau (24 Jan 2018)</h4>
+        </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card border-0">
+        <a href=""><img src="https://kura.pro/stock/images/banners/maxim-hopman-fiXLQXAhCfk.webp" class="zoom-in card-img-top" alt="Giant white pillars"
+        title="Giant white pillars"
+        width="100%" height="100%" loading="lazy" data-show-type="fade-up" data-has-animated="true" /></a>
+        <div class="card-body px-0">
+            <h3 class="card-text small"><a href="/constants/index.html">Understanding the Technology behind Blockchain</a></h3>
+            <h4 class="card-text fs-6">by Sebastien Rousseau (09 Jan 2018)</h4>
+        </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card border-0">
+        <a href=""><img src="https://kura.pro/stock/images/banners/sander-weeteling-KABfjuSOx74.webp" class="zoom-in card-img-top" alt="Aloe vera plant inside white pot"
+        title="Aloe vera plant inside white pot"
+        width="100%" height="100%" loading="lazy" /></a>
+        <div class="card-body px-0">
+            <h3 class="card-text small"><a href="/password/index.html">Blockchain, the technology that matters in 2018</a></h3>
+            <h4 class="card-text fs-6">by Sebastien Rousseau (02 Jan 2018)</h4>
+        </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card border-0">
+        <a href=""><img src="https://kura.pro/stock/images/banners/tyler-prahm-lmV3gJSAgbo.webp" class="zoom-in card-img-top" alt="White concrete building"
+        title="White concrete building"
+        width="100%" height="100%" loading="lazy" /></a>
+        <div class="card-body px-0">
+            <h3 class="card-text small"><a href="/libmake/index.html">Bitcoin The Year In Review</a></h3>
+            <h4 class="card-text fs-6">by Sebastien Rousseau (01 Jan 2018)</h4>
         </div>
         </div>
     </div>

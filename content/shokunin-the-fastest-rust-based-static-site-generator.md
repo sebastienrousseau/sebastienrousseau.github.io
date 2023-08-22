@@ -37,7 +37,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
 theme_color: "rgb(0, 102, 204)"
-title: "Shokunin, a lightning-fast Rust Static Site Generator (SSG)"
+title: "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
 url: "https://sebastienrousseau.co.uk/shokunin/"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -50,7 +50,7 @@ item_description: "Unleash Infinite Possibilities, Scalability, and Customisatio
 item_guid: "https://sebastienrousseau.co.uk/shokunin/rss.xml"
 item_link: "https://sebastienrousseau.co.uk/shokunin/rss.xml"
 item_pub_date: "Thu, 12 Jul 2023 20:20:20 GMT"
-item_title: "Shokunin, a lightning-fast Rust Static Site Generator (SSG)"
+item_title: "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
 last_build_date: "Thu, 12 Jul 2023 20:20:20 GMT"
 managing_editor: "contact@sebastienrousseau.co.uk"
 pub_date: "Thu, 12 Jul 2023 20:20:20 GMT"
@@ -79,7 +79,7 @@ twitter_description: "Unleash Infinite Possibilities, Scalability, and Customisa
 twitter_image: "https://kura.pro/kaishi/images/logos/kaishi.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "Shokunin, a lightning-fast Rust Static Site Generator (SSG)"
+twitter_title: "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
 twitter_url: "https://sebastienrousseau.co.uk/shokunin/"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -165,7 +165,7 @@ commitment to what truly matters.
 
 [Ready to get started?][00]
 
-[00]: https://shokunin.one/ "Shokunin, a lightning-fast Rust Static Site Generator (SSG)"
+[00]: https://shokunin.one/ "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
 [01]: https://www.w3.org/WAI/standards-guidelines/wcag/ "Web Content Accessibility Guidelines (WCAG)"
 [02]: https://www.access-board.gov/ada/ "Americans with Disabilities Act (ADA)"
 [03]: https://www.rust-lang.org/ "Rust Programming Language"
