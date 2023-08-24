@@ -11,7 +11,7 @@ cdn: "https://kura.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.co.uk"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
-description: "Elevating Efficiency and Empowering Innovation"
+description: "Building a comprehensive framework of the next generation of ERC-223 compliant tokens"
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
@@ -35,9 +35,9 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Elevating Efficiency and Empowering Innovation"
+subtitle: "Building a comprehensive framework of the next generation of ERC-223 compliant tokens"
 theme_color: "rgb(0, 102, 204)"
-title: "LibMake: Streamlining Rust Library Development with Code Generation"
+title: "The making of the Express Transaction Credits Platform - EXTC"
 url: "https://sebastienrousseau.co.uk/hash/"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -46,11 +46,11 @@ atom_link: "https://sebastienrousseau.co.uk/hash/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Shokunin 🦀 (version 0.0.15)"
-item_description: "Elevating Efficiency and Empowering Innovation"
+item_description: "Building a comprehensive framework of the next generation of ERC-223 compliant tokens"
 item_guid: "https://sebastienrousseau.co.uk/hash/rss.xml"
 item_link: "https://sebastienrousseau.co.uk/hash/rss.xml"
 item_pub_date: "Thu, 12 Jul 2023 20:20:20 GMT"
-item_title: "LibMake: Streamlining Rust Library Development with Code Generation"
+item_title: "The making of the Express Transaction Credits Platform - EXTC"
 last_build_date: "Thu, 12 Jul 2023 20:20:20 GMT"
 managing_editor: "contact@sebastienrousseau.co.uk"
 pub_date: "Thu, 12 Jul 2023 20:20:20 GMT"
@@ -75,11 +75,11 @@ msapplication-navbutton-color: "rgb(0, 102, 204)"
 
 twitter_card: "summary"
 twitter_creator: "wwdseb"
-twitter_description: "Elevating Efficiency and Empowering Innovation"
+twitter_description: "Building a comprehensive framework of the next generation of ERC-223 compliant tokens"
 twitter_image: "https://kura.pro/kaishi/images/logos/kaishi.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "LibMake: Streamlining Rust Library Development with Code Generation"
+twitter_title: "The making of the Express Transaction Credits Platform - EXTC"
 twitter_url: "https://sebastienrousseau.co.uk/hash/"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -94,38 +94,49 @@ site_software: "Shokunin, Rust"
 
 ---
 
-![Giant white pillars](https://kura.pro/stock/images/banners/tarik-haiga-3637943.webp).class=\"img-fluid clearfix\"
+![Giant white pillars](https://kura.pro/stock/images/banners/rawpixel-com-369782.webp).class=\"img-fluid clearfix\"
 
 ## Insight
 
-### Behind the Scenes of Effective Software Development: Tools and Structured Approach
+### Pioneering a New Age of Financial Services
 
-Software development is a complex and ever-evolving process. Developers need to use effective tools and follow a structured approach to be productive and deliver high-quality results.
+The origin of the Express Transaction Credits (EXTC) platform started in 2018 and is rooted in recognising the limitations of traditional financial systems. Delays in transactions, intermediaries' involvement, and lack of accessibility are among the primary challenges.
 
-One of the most time-consuming and repetitive tasks in software development is the creation of software libraries. This includes tasks such as setting up an efficient project structure, writing numerous lines of code and functionalities, creating documentation, and more.
-
-Using a Rust code generator can streamline this process and make it more efficient. By automating boilerplate code and repetitive tasks, developers can focus on the core functionality of their libraries.
+This insight started the development of a decentralised exchange platform with the aim to removes these barriers. It aims to enables users to make lightning-fast transactions with fiat currencies, cryptocurrencies, or compliant tokens.
 
 ## Idea
 
-### Streamlining Rust Libraries with LibMake: Boosting Efficiency in Development
+### Exploring the ERC223 Standard and the Express Transaction Credits Platform
 
-LibMake is a code generator tool that can help developers streamline the development of their Rust libraries. It does this by providing a command-line interface and a set of pre-defined templates that can be used to generate the necessary boilerplate code and documentation structure for a library.
+At the core of the EXTC platform lies the Ethereum Request for Comment (ERC) 223 standard, an extension of the ERC20 token standard. This choice was informed by the desire to enhance security and functionality. This platform aims to address these issues by leveraging the Ethereum Request for Comment (ERC) 223 standard and offering a comprehensive framework for the next generation of ERC-223 compliant tokens.
 
-LibMake is designed to be flexible and extensible, so it can be used to create libraries of any size or complexity. It also supports a variety of configuration options, so developers can customize it to their specific needs.
+EXTC leverages the ERC223 standard's capabilities, ensuring compatibility with various smart contracts and APIs within the Ethereum ecosystem. The Express Transaction Credits token (EXTC) was introduced as a representation of this standard, with a defined set of attributes.
+
+The idea was to establish a token with robust features:
+
+- **Name, Symbol, and Decimals**: The token's identity is defined by its name and symbol, while the decimals parameter ensures precision in value representation.
+- **Total Supply**: EXTC's total supply is a crucial metric, representing the sum of all tokens in circulation.
+- **Balance and Transfer**: Users can check their token balance and perform token transfers to other addresses.
+- **ERC223 Compliance**: The token contract adheres to the ERC223 standard, offering advanced functionalities compared to its ERC20 predecessor.
 
 ## Impact
 
-### Building a high-performance Rust library with LibMake
+### Redefining Financial Transactions
 
-LibMake can help developers build high-performance Rust libraries by reducing the amount of time and effort required to create the code and documentation. This frees up time for developers to focus on the more creative and strategic aspects of library development.
+The impact of EXTC extends far beyond its technical attributes. By facilitating instant loans, rapid payments, and swift deposits, the platform significantly enhances the efficiency of financial transactions. Gone are the days of waiting for funds to clear or loans to be approved. With EXTC, transactions occur in real-time, empowering individuals and businesses alike.
 
-In addition, LibMake can help developers ensure that their libraries are consistent and follow best practices. This can help to improve the quality and reliability of the libraries they create.
+This platform opens avenues for microloans, cross-border transactions, and more accessible financial services for the unbanked population. Moreover, the decentralized nature of EXTC eliminates intermediaries, reducing associated fees and enhancing security.
 
 ## Incentives
 
-### Enforce Best Practices and Generate Initial Code to Accelerate Rust Library Development
+### Driving Adoption and Participation
 
-LibMake can help developers enforce best practices by providing a set of pre-defined templates that follow these practices. It can also generate initial code for common library functionality, which can save developers a significant amount of time.
+The success of any financial platform hinges on user adoption and participation. EXTC is no different. To incentivize users to engage with the platform, several strategies are employed:
 
-Unlock the power of LibMake and start your journey of creating Rust libraries with efficiency and upmost quality.
+- **Speed and Efficiency**: The main incentive lies in the platform's speed and efficiency. Users seeking quick payments or loans are naturally drawn to a system that fulfils their needs promptly.
+- **Cost Savings**: Reduced fees compared to traditional financial systems make EXTC an attractive option for cost-conscious individuals and businesses.
+- **Global Accessibility**: The platform's borderless nature attracts users who require international transactions without the hassles of currency conversion.
+- **Token Utility**: EXTC tokens extend beyond transactions. They can be integrated into decentralized applications (DApps) and even serve as rewards or collateral within the ecosystem.
+- **Financial Inclusion**: By targeting the unbanked population, EXTC opens doors to financial services for those who were previously excluded.
+
+In conclusion, the Express Transaction Credits Platform (EXTC) represents a paradigm shift in the world of financial transactions. By leveraging the ERC223 standard and offering unparalleled speed, security, and accessibility, EXTC paves the way for a future where financial services are truly global and inclusive. As the platform gains momentum and adoption, its impact on the financial landscape is poised to be revolutionary, transcending borders and democratizing access to economic opportunities. Whether you're a tech enthusiast, a financial professional, or simply curious about the future of finance, EXTC is a platform that invites exploration and engagement.

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url>
-<loc>/about/index.html/contact/index.html</loc>
+<loc>/about/index.html/libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
-<loc>/about/index.html/password/index.html</loc>
+<loc>/about/index.html/contact/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
@@ -30,22 +30,12 @@
 </url>
 
 <url>
-<loc>/about/index.html/hash/index.html</loc>
-<changefreq>weekly</changefreq>
-</url>
-
-<url>
-<loc>/about/index.html/constants/index.html</loc>
+<loc>/about/index.html/unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
 <url>
 <loc>/about/index.html/terms/index.html</loc>
-<changefreq>weekly</changefreq>
-</url>
-
-<url>
-<loc>/about/index.html/libmake/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 
@@ -61,6 +51,21 @@
 
 <url>
 <loc>/about/index.html/work/index.html</loc>
+<changefreq>weekly</changefreq>
+</url>
+
+<url>
+<loc>/about/index.html/hsh-the-creation-of-a-quantum-resistant-cryptographic-hash-library-built-with-rust/index.html</loc>
+<changefreq>weekly</changefreq>
+</url>
+
+<url>
+<loc>/about/index.html/unlocking-security-with-password-generator-pro-a-fast-simple-and-secure-password-solution/index.html</loc>
+<changefreq>weekly</changefreq>
+</url>
+
+<url>
+<loc>/about/index.html/cmn-a-rust-library-for-accessing-a-collection-of-mathematical-and-cryptographic-constants/index.html</loc>
 <changefreq>weekly</changefreq>
 </url>
 

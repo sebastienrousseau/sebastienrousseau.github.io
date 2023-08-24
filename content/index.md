@@ -99,146 +99,275 @@ site_software: "Shokunin, Rust"
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
     <div class="col">
         <div class="card border-0">
-        <a href="/automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"><img src="https://kura.pro/stock/images/banners/andrea-de-santis-T3Qen8vVgRc.webp" class="zoom-in card-img-top" alt="A very tall building that has a lot of holes in it"
-        title="A very tall building that has a lot of holes in it"
-        width="100%" height="33%" loading="lazy" data-show-type="fade-up" data-has-animated="true" /></a>
-        <div class="card-body px-0">
-            <h3 class="card-text small"><a href="/automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html">Automating ISO 20022-Compliant Payment File Creation with Pain001</a></h3>
-            <h4 class="card-text fs-6">by Sebastien Rousseau (11 Sep 2023)</h4>
-        </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card border-0">
-        <a href="/shokunin-the-fastest-rust-based-static-site-generator/index.html">
-            <img 
-                src="https://kura.pro/stock/images/banners/anna-nekrashevich-8534387.webp"
-                class="zoom-in card-img-top" alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right"
-                title="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right"
-                width="100%"
-                height="100%"
-                loading="lazy"
-                /></a>
-        <div class="card-body px-0">
-            <h3 class="card-text small"><a href="/shokunin-the-fastest-rust-based-static-site-generator/index.html">Shokunin, the fastest Rust-based Static Site Generator (SSG)</a></h3>
-            <h4 class="card-text fs-6">by Sebastien Rousseau (18 Sep 2023)</h4>
-        </div>
+            <a href="/automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html">
+                <img
+                    alt="Automating ISO 20022-Compliant Payment File Creation with Pain001"
+                    class="zoom-in card-img-top"
+                    height="100%"
+                    loading="lazy"
+                    src="https://kura.pro/stock/images/banners/andrea-de-santis-T3Qen8vVgRc.webp"
+                    title="Automating ISO 20022-Compliant Payment File Creation with Pain001"
+                    width="100%"
+                />
+            </a>
+            <div class="card-body px-0">
+                <h3 class="card-text small">
+                    <a
+                        href="/automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html">
+                        Automating ISO 20022-Compliant Payment File Creation with Pain001
+                    </a>
+                </h3>
+                <h4 class="card-text fs-6">by Sebastien Rousseau (11 Sep 2023)</h4>
+            </div>
         </div>
     </div>
     <div class="col">
         <div class="card border-0">
-        <a href=""><img src="https://kura.pro/stock/images/banners/gdtography-911758.webp" class="zoom-in card-img-top" alt="Photo of white painted building" 
-        title="Photo of white painted building"
-        width="100%" height="100%" loading="lazy" /></a>
-        <div class="card-body px-0">
-            <h3 class="card-text small"><a href="/hash/index.html">The creation of a Quantum-Resistant Cryptographic Hash Library built with Rust</a></h3>
-            <h4 class="card-text fs-6">by Sebastien Rousseau (25 Sep 2023)</h4>
-        </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card border-0">
-        <a href=""><img src="https://kura.pro/stock/images/banners/chris-brignola-X2CxUXFqKcM.webp" class="zoom-in card-img-top" alt="Giant white pillars"
-        title="Giant white pillars"
-        width="100%" height="100%" loading="lazy" data-show-type="fade-up" data-has-animated="true" /></a>
-        <div class="card-body px-0">
-            <h3 class="card-text small"><a href="/constants/index.html">A Rust library for accessing a collection of mathematical and cryptographic constants</a></h3>
-            <h4 class="card-text fs-6">by Sebastien Rousseau (02 Oct 2023)</h4>
-        </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card border-0">
-        <a href=""><img src="https://kura.pro/stock/images/banners/alis-po-IdVNRv-5wJo.webp" class="zoom-in card-img-top" alt="Aloe vera plant inside white pot"
-        title="Aloe vera plant inside white pot"
-        width="100%" height="100%" loading="lazy" /></a>
-        <div class="card-body px-0">
-            <h3 class="card-text small"><a href="/password/index.html">Unlocking Security with Password Generator Pro: A Fast, Simple, and Secure Password Solution</a></h3>
-            <h4 class="card-text fs-6">by Sebastien Rousseau (09 Oct 2023)</h4>
-        </div>
+            <a href="/shokunin-the-fastest-rust-based-static-site-generator/index.html">
+                <img
+                    alt="Shokunin, the fastest Rust-based Static Site Generator (SSG)"
+                    class="zoom-in card-img-top"
+                    height="100%"
+                    loading="lazy"
+                    src="https://kura.pro/stock/images/banners/anna-nekrashevich-8534387.webp"
+                    title="Shokunin, the fastest Rust-based Static Site Generator (SSG)"
+                    width="100%"
+                />
+            </a>
+            <div class="card-body px-0">
+                <h3 class="card-text small">
+                    <a href="/shokunin-the-fastest-rust-based-static-site-generator/index.html">
+                        Shokunin, the fastest Rust-based Static Site Generator (SSG)
+                    </a>
+                </h3>
+                <h4 class="card-text fs-6">by Sebastien Rousseau (18 Sep 2023)</h4>
+            </div>
         </div>
     </div>
     <div class="col">
         <div class="card border-0">
-        <a href=""><img src="https://kura.pro/stock/images/banners/tarik-haiga-3637943.webp" class="zoom-in card-img-top" alt="White concrete building"
-        title="White concrete building"
-        width="100%" height="100%" loading="lazy" /></a>
-        <div class="card-body px-0">
-            <h3 class="card-text small"><a href="/libmake/index.html">A code generator to reduce repetitive tasks and build high-quality Rust libraries</a></h3>
-            <h4 class="card-text fs-6">by Sebastien Rousseau (16 Oct 2023)</h4>
-        </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card border-0">
-        <a href="/payments/index.html"><img src="https://kura.pro/stock/images/banners/adam-smigielski-K5mPtONmpHM.webp" class="zoom-in card-img-top" alt="A very tall building that has a lot of holes in it"
-        title="A very tall building that has a lot of holes in it"
-        width="100%" height="33%" loading="lazy" data-show-type="fade-up" data-has-animated="true" /></a>
-        <div class="card-body px-0">
-            <h3 class="card-text small"><a href="/the-making-of-the-express-transaction-credits-platform/index.html">The making of the Express Transaction Credits Platform</a></h3>
-            <h4 class="card-text fs-6">by Sebastien Rousseau (15 Feb 2018)</h4>
-        </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card border-0">
-        <a href="">
-            <img 
-                src="https://kura.pro/stock/images/banners/laureen-missaire-DBbuhMbAIsQ.webp"
-                class="zoom-in card-img-top" alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right"
-                title="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right"
-                width="100%"
-                height="100%"
-                loading="lazy"
-                /></a>
-        <div class="card-body px-0">
-            <h3 class="card-text small"><a href="/shokunin/index.html">Unveiling a new Cryptocurrency and offering Future Faster Payment Solution</a></h3>
-            <h4 class="card-text fs-6">by Sebastien Rousseau (04 Feb 2018)</h4>
-        </div>
+            <a href="/hsh-the-creation-of-a-quantum-resistant-cryptographic-hash-library-built-with-rust/index.html">
+                <img
+                    alt="The creation of a Quantum-Resistant Cryptographic Hash Library built with Rust"
+                    class="zoom-in card-img-top"
+                    height="100%"
+                    loading="lazy"
+                    src="https://kura.pro/stock/images/banners/gdtography-911758.webp"
+                    title="The creation of a Quantum-Resistant Cryptographic Hash Library built with Rust"
+                    width="100%"
+                />
+            </a>
+            <div class="card-body px-0">
+                <h3 class="card-text small">
+                    <a href="/hsh-the-creation-of-a-quantum-resistant-cryptographic-hash-library-built-with-rust/index.html">
+                        The creation of a Quantum-Resistant Cryptographic Hash Library built with Rust
+                    </a>
+                </h3>
+                <h4 class="card-text fs-6">by Sebastien Rousseau (25 Sep 2023)</h4>
+            </div>
         </div>
     </div>
     <div class="col">
         <div class="card border-0">
-        <a href=""><img src="https://kura.pro/stock/images/banners/m-ZzOa5G8hSPI.webp" class="zoom-in card-img-top" alt="Photo of white painted building" 
-        title="Photo of white painted building"
-        width="100%" height="100%" loading="lazy" /></a>
-        <div class="card-body px-0">
-            <h3 class="card-text small"><a href="/hash/index.html">The ERC-20 Token Standard</a></h3>
-            <h4 class="card-text fs-6">by Sebastien Rousseau (24 Jan 2018)</h4>
-        </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card border-0">
-        <a href=""><img src="https://kura.pro/stock/images/banners/maxim-hopman-fiXLQXAhCfk.webp" class="zoom-in card-img-top" alt="Giant white pillars"
-        title="Giant white pillars"
-        width="100%" height="100%" loading="lazy" data-show-type="fade-up" data-has-animated="true" /></a>
-        <div class="card-body px-0">
-            <h3 class="card-text small"><a href="/constants/index.html">Understanding the Technology behind Blockchain</a></h3>
-            <h4 class="card-text fs-6">by Sebastien Rousseau (09 Jan 2018)</h4>
-        </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card border-0">
-        <a href=""><img src="https://kura.pro/stock/images/banners/sander-weeteling-KABfjuSOx74.webp" class="zoom-in card-img-top" alt="Aloe vera plant inside white pot"
-        title="Aloe vera plant inside white pot"
-        width="100%" height="100%" loading="lazy" /></a>
-        <div class="card-body px-0">
-            <h3 class="card-text small"><a href="/password/index.html">Blockchain, the technology that matters in 2018</a></h3>
-            <h4 class="card-text fs-6">by Sebastien Rousseau (02 Jan 2018)</h4>
-        </div>
+            <a href="/cmn-a-rust-library-for-accessing-a-collection-of-mathematical-and-cryptographic-constants/index.html">
+                <img
+                    alt="A Rust library for accessing a collection of mathematical and cryptographic constants"
+                    class="zoom-in card-img-top"
+                    height="100%"
+                    loading="lazy"
+                    src="https://kura.pro/stock/images/banners/chris-brignola-X2CxUXFqKcM.webp"
+                    title="A Rust library for accessing a collection of mathematical and cryptographic constants"
+                    width="100%"
+                />
+            </a>
+            <div class="card-body px-0">
+                <h3 class="card-text small">
+                    <a href="/cmn-a-rust-library-for-accessing-a-collection-of-mathematical-and-cryptographic-constants/index.html">
+                        A Rust library for accessing a collection of mathematical and cryptographic constants
+                    </a>
+                </h3>
+                <h4 class="card-text fs-6">by Sebastien Rousseau (02 Oct 2023)</h4>
+            </div>
         </div>
     </div>
     <div class="col">
         <div class="card border-0">
-        <a href=""><img src="https://kura.pro/stock/images/banners/tyler-prahm-lmV3gJSAgbo.webp" class="zoom-in card-img-top" alt="White concrete building"
-        title="White concrete building"
-        width="100%" height="100%" loading="lazy" /></a>
-        <div class="card-body px-0">
-            <h3 class="card-text small"><a href="/libmake/index.html">Bitcoin The Year In Review</a></h3>
-            <h4 class="card-text fs-6">by Sebastien Rousseau (01 Jan 2018)</h4>
+            <a href="/unlocking-security-with-password-generator-pro-a-fast-simple-and-secure-password-solution/index.html">
+                <img
+                    alt="Unlocking Security with Password Generator Pro: A Fast, Simple, and Secure Password Solution"
+                    class="zoom-in card-img-top"
+                    height="100%"
+                    loading="lazy"
+                    src="https://kura.pro/stock/images/banners/alis-po-IdVNRv-5wJo.webp"
+                    title="Unlocking Security with Password Generator Pro: A Fast, Simple, and Secure Password Solution"
+                    width="100%"
+                />
+            </a>
+            <div class="card-body px-0">
+                <h3 class="card-text small">
+                    <a href="/unlocking-security-with-password-generator-pro-a-fast-simple-and-secure-password-solution/index.html">
+                        Unlocking Security with Password Generator Pro: A Fast, Simple, and Secure Password Solution
+                    </a>
+                </h3>
+                <h4 class="card-text fs-6">by Sebastien Rousseau (09 Oct 2023)</h4>
+            </div>
         </div>
+    </div>
+    <div class="col">
+        <div class="card border-0">
+            <a href="/libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html">
+                <img
+                    alt="A code generator to reduce repetitive tasks and build high-quality Rust libraries"
+                    class="zoom-in card-img-top"
+                    height="100%"
+                    loading="lazy"
+                    src="https://kura.pro/stock/images/banners/tarik-haiga-3637943.webp"
+                    title="A code generator to reduce repetitive tasks and build high-quality Rust libraries"
+                    width="100%"
+                />
+            </a>
+            <div class="card-body px-0">
+                <h3 class="card-text small">
+                    <a href="/libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html">
+                        A code generator to reduce repetitive tasks and build high-quality Rust libraries
+                    </a>
+                </h3>
+                <h4 class="card-text fs-6">by Sebastien Rousseau (16 Oct 2023)</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card border-0">
+            <a href="/the-making-of-the-express-transaction-credits-platform/index.html">
+                <img
+                    alt="The making of the Express Transaction Credits Platform (EXTC)"
+                    class="zoom-in card-img-top"
+                    height="100%"
+                    loading="lazy"
+                    src="https://kura.pro/stock/images/banners/rawpixel-com-369782.webp"
+                    title="The making of the Express Transaction Credits Platform (EXTC)"
+                    width="100%"
+                />
+            </a>
+            <div class="card-body px-0">
+                <h3 class="card-text small">
+                    <a href="/the-making-of-the-express-transaction-credits-platform/index.html">
+                        The making of the Express Transaction Credits Platform (EXTC)
+                    </a>
+                </h3>
+                <h4 class="card-text fs-6">by Sebastien Rousseau (15 Feb 2018)</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card border-0">
+            <a href="/unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html">
+                <img
+                    alt="Unveiling a new Cryptocurrency and offering Future Faster Payment Solution"
+                    class="zoom-in card-img-top"
+                    height="100%"
+                    loading="lazy"
+                    src="https://kura.pro/stock/images/banners/laureen-missaire-DBbuhMbAIsQ.webp"
+                    title="Unveiling a new Cryptocurrency and offering Future Faster Payment Solution"
+                    width="100%"
+                />
+            </a>
+            <div class="card-body px-0">
+                <h3 class="card-text small">
+                    <a href="/unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html">
+                        Unveiling a new Cryptocurrency and offering Future Faster Payment Solution
+                    </a>
+                </h3>
+                <h4 class="card-text fs-6">by Sebastien Rousseau (04 Feb 2018)</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card border-0">
+            <a href="/the-erc-20-token-standard/index.html">
+                <img
+                    alt="The ERC-20 Token Standard"
+                    class="zoom-in card-img-top"
+                    height="100%"
+                    loading="lazy"
+                    src="https://kura.pro/stock/images/banners/m-ZzOa5G8hSPI.webp"
+                    title="The ERC-20 Token Standard"
+                    width="100%"
+                />
+            </a>
+            <div class="card-body px-0">
+                <h3 class="card-text small">
+                    <a href="/the-erc-20-token-standard/index.html">
+                        The ERC-20 Token Standard
+                    </a>
+                </h3>
+                <h4 class="card-text fs-6">by Sebastien Rousseau (24 Jan 2018)</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card border-0">
+            <a href="/understanding-the-technology-behind-blockchain/index.html">
+                <img
+                    alt="Understanding the Technology behind Blockchain"
+                    class="zoom-in card-img-top"
+                    height="100%"
+                    loading="lazy"
+                    src="https://kura.pro/stock/images/banners/adam-smigielski-K5mPtONmpHM.webp"
+                    title="Understanding the Technology behind Blockchain"
+                    width="100%"
+                />
+            </a>
+            <div class="card-body px-0">
+                <h3 class="card-text small">
+                    <a href="/understanding-the-technology-behind-blockchain/index.html">
+                        Understanding the Technology behind Blockchain
+                    </a>
+                </h3>
+                <h4 class="card-text fs-6">by Sebastien Rousseau (09 Jan 2018)</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card border-0">
+            <a href="/blockchain-the-technology-that-matters-in-2018/index.html">
+                <img
+                    alt="Blockchain, the technology that matters in 2018"
+                    class="zoom-in card-img-top"
+                    height="100%"
+                    loading="lazy"
+                    src="https://kura.pro/stock/images/banners/bogdan-karlenko-cNcX6PPjEm8-unsplash.webp"
+                    title="Blockchain, the technology that matters in 2018"
+                    width="100%"
+                />
+            </a>
+            <div class="card-body px-0">
+                <h3 class="card-text small">
+                    <a href="/blockchain-the-technology-that-matters-in-2018/index.html">
+                        Blockchain, the technology that matters in 2018
+                    </a>
+                </h3>
+                <h4 class="card-text fs-6">by Sebastien Rousseau (02 Jan 2018)</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card border-0">
+            <a href="/bitcoin-the-year-in-review/index.html">
+                <img
+                    alt="Bitcoin The Year In Review"
+                    class="zoom-in card-img-top"
+                    height="100%"
+                    loading="lazy"
+                    src="https://kura.pro/stock/images/banners/traxer-AIKjbZdNOlw-unsplash.webp"
+                    title="Bitcoin The Year In Review"
+                    width="100%"
+                />
+            </a>
+            <div class="card-body px-0">
+                <h3 class="card-text small"><a href="/bitcoin-the-year-in-review/index.html">Bitcoin The Year In Review</a></h3>
+                <h4 class="card-text fs-6">by Sebastien Rousseau (01 Jan 2018)</h4>
+            </div>
         </div>
     </div>
 </div>
