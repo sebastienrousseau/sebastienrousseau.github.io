@@ -332,19 +332,19 @@ site_software: "Shokunin, Rust"
         <div class="card border-0">
             <a href="/blockchain-the-technology-that-matters-in-2018/index.html">
                 <img
-                    alt="Blockchain, the technology that matters in 2018"
+                    alt="Blockchain, the technology that matters"
                     class="zoom-in card-img-top"
                     height="100%"
                     loading="lazy"
                     src="https://kura.pro/stock/images/banners/bogdan-karlenko-cNcX6PPjEm8-unsplash.webp"
-                    title="Blockchain, the technology that matters in 2018"
+                    title="Blockchain, the technology that matters"
                     width="100%"
                 />
             </a>
             <div class="card-body px-0">
                 <h3 class="card-text small">
                     <a href="/blockchain-the-technology-that-matters-in-2018/index.html">
-                        Blockchain, the technology that matters in 2018
+                        Blockchain, the technology that matters
                     </a>
                 </h3>
                 <h4 class="card-text fs-6">by Sebastien Rousseau (02 Jan 2018)</h4>
