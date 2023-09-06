@@ -11,6 +11,7 @@ cdn: "https://kura.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.co.uk"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
+date: "July 12, 2023"
 description: "Exploring the Future of Financial Services: Researching and Applying AI, Post-Quantum Cryptography, Blockchain, and Beyond"
 format-detection: "telephone=no"
 hreflang: "en"
@@ -36,6 +37,7 @@ revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
+tags: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML"
 theme_color: "rgb(0, 102, 204)"
 title: "Sebastien Rousseau"
 url: "https://sebastienrousseau.co.uk"
@@ -99,7 +101,7 @@ site_software: "Shokunin, Rust"
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
     <div class="col">
         <div class="card border-0">
-            <a href="/automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html">
+            <a href="/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html">
                 <img
                     alt="Automating ISO 20022-Compliant Payment File Creation with Pain001"
                     class="zoom-in card-img-top"
@@ -113,15 +115,15 @@ site_software: "Shokunin, Rust"
             <div class="card-body px-0">
                 <h3 class="card-text small">
                     <a
-                        href="/automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html">
+                        href="/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html">
                         Automating ISO 20022-Compliant Payment File Creation with Pain001
                     </a>
                 </h3>
-                <h4 class="card-text fs-6">by Sebastien Rousseau (11 Sep 2023)</h4>
+                <h4 class="card-text fs-6">by Sebastien Rousseau (29 Sep 2023)</h4>
             </div>
         </div>
     </div>
-    <div class="col">
+    <!-- div class="col">
         <div class="card border-0">
             <a href="/shokunin-the-fastest-rust-based-static-site-generator/index.html">
                 <img
@@ -140,7 +142,7 @@ site_software: "Shokunin, Rust"
                         Shokunin, the fastest Rust-based Static Site Generator (SSG)
                     </a>
                 </h3>
-                <h4 class="card-text fs-6">by Sebastien Rousseau (18 Sep 2023)</h4>
+                <h4 class="card-text fs-6">by Sebastien Rousseau (28 Oct 2023)</h4>
             </div>
         </div>
     </div>
@@ -163,7 +165,7 @@ site_software: "Shokunin, Rust"
                         The creation of a Quantum-Resistant Cryptographic Hash Library built with Rust
                     </a>
                 </h3>
-                <h4 class="card-text fs-6">by Sebastien Rousseau (25 Sep 2023)</h4>
+                <h4 class="card-text fs-6">by Sebastien Rousseau (27 Nov 2023)</h4>
             </div>
         </div>
     </div>
@@ -235,10 +237,10 @@ site_software: "Shokunin, Rust"
                 <h4 class="card-text fs-6">by Sebastien Rousseau (16 Oct 2023)</h4>
             </div>
         </div>
-    </div>
+    </div  -->
     <div class="col">
         <div class="card border-0">
-            <a href="/the-making-of-the-express-transaction-credits-platform/index.html">
+            <a href="/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html">
                 <img
                     alt="The making of the Express Transaction Credits Platform (EXTC)"
                     class="zoom-in card-img-top"
@@ -251,7 +253,7 @@ site_software: "Shokunin, Rust"
             </a>
             <div class="card-body px-0">
                 <h3 class="card-text small">
-                    <a href="/the-making-of-the-express-transaction-credits-platform/index.html">
+                    <a href="/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html">
                         The making of the Express Transaction Credits Platform (EXTC)
                     </a>
                 </h3>

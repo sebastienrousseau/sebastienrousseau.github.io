@@ -11,6 +11,7 @@ cdn: "https://kura.pro" ## The CDN of the site.
 charset: "utf-8" ## The charset of the site. (default: utf-8)
 cname: "sebastienrousseau.com" ## The cname value of the site. (Only required for the index page.)
 copyright: "© 2023 Kaishi Starter Template. All rights reserved." ## The copyright of the site.
+date: "July 12, 2023"
 description: "Make beautiful websites with Kaishi, a Shokunin Static Site Generator starter template." ## The description of the site. (max 160 characters)
 download: "" ## The download url for the product.
 format-detection: "telephone=no" ## The format detection of the site.
@@ -37,6 +38,7 @@ revisit-after: "7 days" ## The revisit after of the site.
 robots: "index, follow" ## The robots of the site.
 short_name: "kaishi" ## The short name of the site. (max 12 characters)
 subtitle: "Build Amazing Websites with Minimal Effort using Kaishi Starter Template" ## The subtitle of the page. (max 64 characters)
+tags: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML" ## The tags of the site. (comma separated, max 10 tags)
 theme_color: "rgb(0, 48, 96)" ## The theme color of the site.
 title: "Kaishi, a Starter Template for the Shokunin Static Site Generator (SSG)" ## The title of the page. (max 64 characters)
 url: "https://sebastienrousseau.com" ## The url of the site.
