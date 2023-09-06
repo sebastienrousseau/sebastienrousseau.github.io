@@ -263,7 +263,7 @@ site_software: "Shokunin, Rust"
     </div>
     <div class="col">
         <div class="card border-0">
-            <a href="/unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html">
+            <a href="/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html">
                 <img
                     alt="Unveiling a new Cryptocurrency and offering Future Faster Payment Solution"
                     class="zoom-in card-img-top"
@@ -276,7 +276,7 @@ site_software: "Shokunin, Rust"
             </a>
             <div class="card-body px-0">
                 <h3 class="card-text small">
-                    <a href="/unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html">
+                    <a href="/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html">
                         Unveiling a new Cryptocurrency and offering Future Faster Payment Solution
                     </a>
                 </h3>
@@ -286,7 +286,7 @@ site_software: "Shokunin, Rust"
     </div>
     <div class="col">
         <div class="card border-0">
-            <a href="/the-erc-20-token-standard/index.html">
+            <a href="/2018-01-24-the-erc-20-token-standard/index.html">
                 <img
                     alt="The ERC-20 Token Standard"
                     class="zoom-in card-img-top"
@@ -299,7 +299,7 @@ site_software: "Shokunin, Rust"
             </a>
             <div class="card-body px-0">
                 <h3 class="card-text small">
-                    <a href="/the-erc-20-token-standard/index.html">
+                    <a href="/2018-01-24-the-erc-20-token-standard/index.html">
                         The ERC-20 Token Standard
                     </a>
                 </h3>
@@ -309,7 +309,7 @@ site_software: "Shokunin, Rust"
     </div>
     <div class="col">
         <div class="card border-0">
-            <a href="/understanding-the-technology-behind-blockchain/index.html">
+            <a href="/2018-01-09-understanding-the-technology-behind-blockchain/index.html">
                 <img
                     alt="Understanding the Technology behind Blockchain"
                     class="zoom-in card-img-top"
@@ -322,7 +322,7 @@ site_software: "Shokunin, Rust"
             </a>
             <div class="card-body px-0">
                 <h3 class="card-text small">
-                    <a href="/understanding-the-technology-behind-blockchain/index.html">
+                    <a href="/2018-01-09-understanding-the-technology-behind-blockchain/index.html">
                         Understanding the Technology behind Blockchain
                     </a>
                 </h3>
@@ -332,7 +332,7 @@ site_software: "Shokunin, Rust"
     </div>
     <div class="col">
         <div class="card border-0">
-            <a href="/blockchain-the-technology-that-matters-in-2018/index.html">
+            <a href="/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html">
                 <img
                     alt="Blockchain, the technology that matters"
                     class="zoom-in card-img-top"
@@ -345,7 +345,7 @@ site_software: "Shokunin, Rust"
             </a>
             <div class="card-body px-0">
                 <h3 class="card-text small">
-                    <a href="/blockchain-the-technology-that-matters-in-2018/index.html">
+                    <a href="/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html">
                         Blockchain, the technology that matters
                     </a>
                 </h3>
@@ -355,7 +355,7 @@ site_software: "Shokunin, Rust"
     </div>
     <div class="col">
         <div class="card border-0">
-            <a href="/bitcoin-the-year-in-review/index.html">
+            <a href="/2018-01-01-bitcoin-the-year-in-review/index.html">
                 <img
                     alt="Bitcoin The Year In Review"
                     class="zoom-in card-img-top"
@@ -367,7 +367,7 @@ site_software: "Shokunin, Rust"
                 />
             </a>
             <div class="card-body px-0">
-                <h3 class="card-text small"><a href="/bitcoin-the-year-in-review/index.html">Bitcoin The Year In Review</a></h3>
+                <h3 class="card-text small"><a href="/2018-01-01-bitcoin-the-year-in-review/index.html">Bitcoin The Year In Review</a></h3>
                 <h4 class="card-text fs-6">by Sebastien Rousseau (01 Jan 2018)</h4>
             </div>
         </div>
