@@ -39,7 +39,7 @@ short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
 tags: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML"
 theme_color: "rgb(0, 102, 204)"
-title: "Sebastien Rousseau"
+title: "Sebastien Rousseau, Banking & Financial Service Professional"
 url: "https://sebastienrousseau.co.uk"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -66,7 +66,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Sebastien Rousseau"
+apple-mobile-web-app-title: "Sebastien Rousseau, Banking & Financial Service Professional"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
@@ -81,7 +81,7 @@ twitter_description: "Exploring and Applying Artificial Intelligence (AI), Post-
 twitter_image: "https://kura.pro/kaishi/images/logos/kaishi.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "Sebastien Rousseau"
+twitter_title: "Sebastien Rousseau, Banking & Financial Service Professional"
 twitter_url: "https://sebastienrousseau.co.uk"
 
 # Humans.txt - The Humans.txt front matter (YAML).
