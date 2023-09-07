@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://kaishi.one/terms/sitemap.xml
+Sitemap: https://sebastienrousseau.co.uk/tags//sitemap.xml
