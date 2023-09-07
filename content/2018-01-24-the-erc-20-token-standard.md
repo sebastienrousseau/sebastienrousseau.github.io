@@ -6,13 +6,13 @@ author: "Sebastien Rousseau"
 banner_alt: "Turned off laptop computer on top of brown wooden table"
 banner_height: "571px"
 banner_width: "1425px"
-banner: "https://kura.pro/stock/images/banners/laureen-missaire-DBbuhMbAIsQ.webp"
+banner: "https://kura.pro/stock/images/banners/m-ZzOa5G8hSPI.webp"
 cdn: "https://kura.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.co.uk"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
-date: "July 12, 2023"
-description: "Streamlining the creation and compliance of ISO20022 Payment Messages for cross-border payments and reporting."
+date: "24 Jan 2018"
+description: "An Ethereum's Standard Interface for Tokens"
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
@@ -21,7 +21,7 @@ image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "161.8"
 image_width: "161.8"
 image: "https://kura.pro/stock/images/banners/sebastien-rousseau.webp"
-keywords: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
+keywords: "ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, solidity"
 language: "en-GB"
 layout: "page"
 locale: "en_GB"
@@ -37,9 +37,9 @@ revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
-tags: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
+tags: "ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, solidity"
 theme_color: "rgb(0, 102, 204)"
-title: "Unveiling a new Cryptocurrency and offering Future Faster Payment Solution"
+title: "The ERC-20 Token Standard"
 url: "https://sebastienrousseau.co.uk/payments/"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -48,11 +48,11 @@ atom_link: "https://sebastienrousseau.co.uk/payments/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Shokunin 🦀 (version 0.0.15)"
-item_description: "Streamlining the creation and compliance of ISO20022 Payment Messages for cross-border payments and reporting."
+item_description: "An Ethereum's Standard Interface for Tokens"
 item_guid: "https://sebastienrousseau.co.uk/payments/rss.xml"
 item_link: "https://sebastienrousseau.co.uk/payments/rss.xml"
 item_pub_date: "Thu, 12 Jul 2023 20:20:20 GMT"
-item_title: "Unveiling a new Cryptocurrency and offering Future Faster Payment Solution"
+item_title: "The ERC-20 Token Standard"
 last_build_date: "Thu, 12 Jul 2023 20:20:20 GMT"
 managing_editor: "contact@sebastienrousseau.co.uk"
 pub_date: "Thu, 12 Jul 2023 20:20:20 GMT"
@@ -77,11 +77,11 @@ msapplication-navbutton-color: "rgb(0, 102, 204)"
 
 twitter_card: "summary"
 twitter_creator: "wwdseb"
-twitter_description: "Streamlining the creation and compliance of ISO20022 Payment Messages for cross-border payments and reporting."
+twitter_description: "An Ethereum's Standard Interface for Tokens"
 twitter_image: "https://kura.pro/kaishi/images/logos/kaishi.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "Unveiling a new Cryptocurrency and offering Future Faster Payment Solution"
+twitter_title: "The ERC-20 Token Standard"
 twitter_url: "https://sebastienrousseau.co.uk"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -96,37 +96,61 @@ site_software: "Shokunin, Rust"
 
 ---
 
-![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/laureen-missaire-DBbuhMbAIsQ.webp).class=\"img-fluid clearfix\"
+![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"
 
 ## Insight
 
-### A Growing Need for Faster Payments
+### The need for a standardized token interface
 
-In today's fast-paced landscape, where time is of the essence, the demand for swifter payment solutions has never been more pronounced. The Express Transaction Credits Platform (EXTC) Network recognizes this need as a driving force behind its development. With the exponential rise of e-commerce, global trade, and cross-border transactions, traditional banking systems often stumble when it comes to expeditious fund transfers. This insight underscores the importance of a financial ecosystem that can deliver rapid and seamless transactions, transcending geographical boundaries.
+Before the advent of the ERC-20 (Ethereum Request for Comments 20) standard, the Ethereum blockchain was like the Wild West of token architectures. Each newly minted token had its own unique set of rules, functions, and interfaces. This not only presented developers with a daunting learning curve but also impeded the interoperability of tokens. Essentially, each new token was like a new language that needed to be learned, understood, and implemented. This fragmentation hindered scalability and broad adoption of tokens on the Ethereum platform.
 
-The cryptocurrency realm has already showcased the potential to revolutionize transaction speeds, but the EXTC Network takes it a step further. It envisions a comprehensive suite of financial services that leverage distributed ledgers and self-executing smart contracts. These technologies not only ensure faster payments but also enhance security and transparency, a crucial factor in building trust within the ecosystem. By tapping into the pulse of this growing need for speed and efficiency, EXTC Network positions itself at the forefront of the race to reshape global payment norms.
+The introduction of the ERC-20 standard acted like a unifying language, setting forth a common set of rules and functions that all Ethereum tokens must adhere to. Now, developers had a consistent interface to work with, regardless of the token in question. This standardization streamlined the token interaction processes, allowing for more seamless integration into various applications and services. As a result, developers could engage more meaningfully with tokens, fostering an environment conducive to innovation and growth within the Ethereum ecosystem.
+
+#### The Wild West of token architectures
+
+The Ethereum blockchain was initially designed to support a single type of token: ETH. However, as the platform grew in popularity, developers began to create their own tokens to represent a variety of assets and concepts. This led to a proliferation of different token architectures, each with its own unique set of rules and functions.
+
+This fragmentation made it difficult for developers to create applications that could interact with multiple tokens. It also made it difficult for users to manage their token assets across different platforms.
+
+#### The ERC-20 standard
+
+The ERC-20 standard was introduced in 2015 to address the challenges posed by the Wild West of token architectures. The standard defines a common set of rules and functions that all Ethereum tokens must adhere to. This standardization makes it easier for developers to create applications that can interact with any ERC-20 token, and it also makes it easier for users to manage their token assets.
+
+The ERC-20 standard has been widely adopted by the Ethereum community. Today, there are over 200,000 ERC-20 tokens in existence, and the standard is used by a wide variety of applications, including decentralized exchanges, lending platforms, and gaming dapps.
 
 ## Idea
 
-### EXTC Network's Vision
+### A common set of functions and properties for all tokens
 
-At the heart of the EXTC Network's transformative power lies its novel concept - to create a standard for faster payment solutions that cater to the evolving demands of the modern financial landscape. The network introduces the EXTC token (Express Transaction Credits), a digital asset designed to facilitate instant loans, lightning-fast payments, and deposits between participants. Unlike traditional payment methods that often entail delays, intermediaries, and higher costs, EXTC tokens offer a streamlined alternative.
+The ERC-20 standard defines a set of six essential functions that all ERC-20 compliant tokens must implement. These functions are:
 
-The vision of the EXTC Network extends beyond the realm of cryptocurrency enthusiasts. It envisions a platform that accommodates users of all financial standings. Whether an individual, a small business owner, or a major corporation, the network promises a well-suited platform for executing transactions with utmost efficiency. This inclusivity is a cornerstone of the EXTC Network's philosophy, as it strives to bridge the gap between legacy financial systems and the innovations of the digital era.
+- `transfer(address to, uint256 amount)`: Transfers an amount of tokens from the caller's address to the specified address.
+- `approve(address spender, uint256 amount)`: Approves the specified address to spend an amount of tokens on behalf of the caller.
+- `allowance(address owner, address spender)`: Returns the amount of tokens that the specified spender is approved to spend on behalf of the specified owner.
+- `totalSupply()`: Returns the total number of tokens in circulation.
+- `balanceOf(address owner)`: Returns the number of tokens owned by the specified address.
+- `name()`: Returns the name of the token.
+- `symbol()`: Returns the symbol of the token.
+
+The ERC-20 standard also defines two events that must be emitted upon the successful execution of corresponding functions. These events are:
+
+- `Transfer(address from, address to, uint256 amount)`: Emitted when an amount of tokens is transferred from one address to another.
+- `Approval(address owner, address spender, uint256 amount)`: Emitted when the specified address is approved to spend an amount of tokens on behalf of the specified owner.
 
 ## Impact
 
-### Redefining Payment Paradigms
+### The growth of DeFi and Ethereum adoption
 
-The impact of the EXTC Network's vision transcends the boundaries of the financial sector. As the network introduces a suite of financial services, including instant loans and real-time standing orders, it sets in motion a paradigm shift in how transactions are perceived and executed. The ability to conduct single atomic payments, time-based payments, and corporate mass payments on a blockchain or distributed ledger ensures that users experience unparalleled convenience and security.
+The ERC-20 standard has had a significant impact on the Ethereum ecosystem. It has been a key enabler of the DeFi (Decentralized Finance) movement, and it has also helped to increase the adoption of Ethereum.
 
-Furthermore, the EXTC Network's emphasis on compliance and regulation adds an additional layer of credibility to its offerings. In a landscape where trust is paramount, the network's commitment to adhering to regulatory practices and ensuring the legitimacy of each peer-to-peer node fosters an environment of trustworthiness and reliability. This is a crucial factor in driving mainstream adoption of cryptocurrency-based payment solutions.
+DeFi platforms, which offer a range of financial services from lending to asset management, heavily rely on tokens to facilitate transactions. With ERC-20 acting as a universal adapter, it has been far easier for DeFi applications to incorporate a wide array of tokens without having to tailor their code for each one.
 
-## Incentives
+The ERC-20 standard has also made it easier for users to manage their token assets. With tokens adhering to the same basic rules, users find it easier to transfer, spend, and manage their token assets across multiple platforms. This heightened user experience has been a driving factor in Ethereum's increased adoption rates.
 
-### Paving the Path Forward
-The EXTC Network recognizes that widespread adoption requires a robust incentive structure. As such, the network's architecture is designed to accommodate traditional fiat currencies, cryptocurrencies, and compliant tokens. This forward-thinking approach not only simplifies the transition for users accustomed to conventional financial systems but also opens doors for collaboration with established financial institutions.
+## Incentive
 
-By building on the Ethereum blockchain and adhering to EIP20 standards, the EXTC token guarantees stability and security. This assurance serves as a powerful incentive for both individual users and businesses to embrace the new payment paradigm offered by the EXTC Network. As the network fosters a financial ecosystem that prioritizes speed, security, and accessibility, it entices stakeholders to participate and contribute to the burgeoning landscape of faster payment solutions.
+### Reduced development costs and improved security
 
-In conclusion, the EXTC Network's unveiling marks a significant chapter in the ongoing evolution of the global financial landscape. With a visionary approach to faster payment solutions, underpinned by the potential of cryptocurrencies and distributed ledgers, the network aims to redefine how transactions are conducted across the world. Its impact resonates not only within the realm of digital assets but also in reshaping traditional financial systems, ultimately propelling us towards a future where speed, security, and inclusivity define the way we exchange value.
+The standardization brought about by the ERC-20 protocol has had a direct economic impact as well. By providing a tested and community-approved blueprint for token creation, it has significantly reduced the barriers to entry for developers. They can now create a new token with reduced developmental costs and a faster time-to-market, as they no longer have to reinvent the wheel. The standard also indirectly encourages the creation of DApps (Decentralized Applications) and services that can universally interact with any ERC-20 token, thereby fostering a more vibrant ecosystem.
+
+Another notable benefit is that of enhanced security. The ERC-20 standard has undergone rigorous scrutiny by the Ethereum community, making it a robust and secure model for token implementation. Adherence to this standard implies that the fundamental aspects of the token's smart contract adhere to community-accepted best practices. This minimizes the risk of security vulnerabilities that could otherwise result from an improperly designed token model. While it is not a guarantee against all types of vulnerabilities, it is a significant step toward ensuring the overall security of tokens and by extension, the projects that utilize them.
