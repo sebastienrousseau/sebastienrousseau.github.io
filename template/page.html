@@ -302,9 +302,35 @@ a:hover {
     <script type="application/ld+json">
       {
         "@context": "https://schema.org/",
-        "@type": "WebSite",
+        "@type": "WebPage",
+        "author": {
+          "@type": "Person",
+          "@id": "{{author}}"
+        },
+        "copyrightHolder": {
+          "@type": "Person",
+          "@id": "{{author}}"
+        },
+        "copyrightYear": "{{copyright}}",
+        "creator": {
+          "@type": "Person",
+          "@id": "{{author}}"
+        },
+        "dateModified": "{{last_build_date}}",
+        "datePublished": "{{item_pub_date}}",
+        "description": "{{description}}",
+        "headline": "{{subtitle}}",
+        "image": {
+          "@type": "ImageObject",
+          "url": "{{image}}"
+        },
+        "inLanguage": "{{language}}",
+        "mainEntityOfPage": "{{permalink}}",
         "name": "{{name}}",
-        "url": "{{url}}"
+        "publisher": {
+          "@type": "Person",
+          "@id": "{{author}}"
+        }
       }
     </script>
     <script type="module" defer>
