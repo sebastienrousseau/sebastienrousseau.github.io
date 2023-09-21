@@ -1,6 +1,6 @@
 /* TEAM */
 	Name: Sebastien Rousseau
-	Website: https://sebastienrousseau.co.uk
+	Website: https://sebastienrousseau.com
 	Twitter: @wwdseb
 	Location: London, UK
 
