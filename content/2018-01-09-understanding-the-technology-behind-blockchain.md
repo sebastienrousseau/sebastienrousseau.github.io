@@ -6,7 +6,7 @@ author: "Sebastien Rousseau"
 banner_alt: "Turned off laptop computer on top of brown wooden table"
 banner_height: "571px"
 banner_width: "1425px"
-banner: "https://kura.pro/stock/images/banners/laureen-missaire-DBbuhMbAIsQ.webp"
+banner: "https://kura.pro/stock/images/banners/adam-smigielski-K5mPtONmpHM.webp"
 cdn: "https://kura.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -39,7 +39,7 @@ short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
 tags: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
 theme_color: "rgb(0, 102, 204)"
-title: "Unveiling a new Cryptocurrency and offering Future Faster Payment Solution"
+title: "Building a Cryptocurrency on Ethereum: A Comprehensive Guide to Blockchain Development"
 url: "https://sebastienrousseau.com/payments/"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -52,7 +52,7 @@ item_description: "Streamlining the creation and compliance of ISO20022 Payment 
 item_guid: "https://sebastienrousseau.com/payments/rss.xml"
 item_link: "https://sebastienrousseau.com/payments/rss.xml"
 item_pub_date: "Thu, 12 Jul 2023 20:20:20 GMT"
-item_title: "Unveiling a new Cryptocurrency and offering Future Faster Payment Solution"
+item_title: "Building a Cryptocurrency on Ethereum: A Comprehensive Guide to Blockchain Development"
 last_build_date: "Thu, 12 Jul 2023 20:20:20 GMT"
 managing_editor: "contact@sebastienrousseau.com"
 pub_date: "Thu, 12 Jul 2023 20:20:20 GMT"
@@ -81,7 +81,7 @@ twitter_description: "Streamlining the creation and compliance of ISO20022 Payme
 twitter_image: "https://kura.pro/kaishi/images/logos/kaishi.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "Unveiling a new Cryptocurrency and offering Future Faster Payment Solution"
+twitter_title: "Building a Cryptocurrency on Ethereum: A Comprehensive Guide to Blockchain Development"
 twitter_url: "https://sebastienrousseau.com"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -96,37 +96,169 @@ site_software: "Shokunin, Rust"
 
 ---
 
-![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/laureen-missaire-DBbuhMbAIsQ.webp).class=\"img-fluid clearfix\"
+![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/adam-smigielski-K5mPtONmpHM.webp).class=\"img-fluid clearfix\"
 
 ## Insight
 
-### A Growing Need for Faster Payments
+Blockchain technology has opened the door to a new era of decentralized
+applications (dApps) that operate independently without centralized control.
+Ethereum provides a powerful platform for creating complex dApps and smart
+contracts.
 
-In today's fast-paced landscape, where time is of the essence, the demand for swifter payment solutions has never been more pronounced. The Express Transaction Credits Platform (EXTC) Network recognizes this need as a driving force behind its development. With the exponential rise of e-commerce, global trade, and cross-border transactions, traditional banking systems often stumble when it comes to expeditious fund transfers. This insight underscores the importance of a financial ecosystem that can deliver rapid and seamless transactions, transcending geographical boundaries.
-
-The cryptocurrency realm has already showcased the potential to revolutionize transaction speeds, but the EXTC Network takes it a step further. It envisions a comprehensive suite of financial services that leverage distributed ledgers and self-executing smart contracts. These technologies not only ensure faster payments but also enhance security and transparency, a crucial factor in building trust within the ecosystem. By tapping into the pulse of this growing need for speed and efficiency, EXTC Network positions itself at the forefront of the race to reshape global payment norms.
+One of the most promising uses of Ethereum is launching custom cryptocurrencies
+and digital tokens. In this comprehensive guide, we'll walk through how to
+create your own crypto token on Ethereum step-by-step.
 
 ## Idea
 
-### EXTC Network's Vision
+Our goal is to build a simple cryptocurrency on Ethereum, giving you hands-on
+experience with blockchain development. Here are the key steps we'll cover:
 
-At the heart of the EXTC Network's transformative power lies its novel concept - to create a standard for faster payment solutions that cater to the evolving demands of the modern financial landscape. The network introduces the EXTC token (Express Transaction Credits), a digital asset designed to facilitate instant loans, lightning-fast payments, and deposits between participants. Unlike traditional payment methods that often entail delays, intermediaries, and higher costs, EXTC tokens offer a streamlined alternative.
+### Designing the Cryptocurrency
 
-The vision of the EXTC Network extends beyond the realm of cryptocurrency enthusiasts. It envisions a platform that accommodates users of all financial standings. Whether an individual, a small business owner, or a major corporation, the network promises a well-suited platform for executing transactions with utmost efficiency. This inclusivity is a cornerstone of the EXTC Network's philosophy, as it strives to bridge the gap between legacy financial systems and the innovations of the digital era.
+The first crucial task is to design your cryptocurrency. This encompasses
+defining key attributes:
+
+- **Name**: Choose a unique name that represents the token's identity and
+  purpose.
+- **Symbol**: Pick a short symbol like BTC for Bitcoin. This is used on
+  exchanges.
+- **Total Supply**: Determine the max number of tokens in circulation.
+- **Decimals**: Set how divisible your token can be, like 2 for cents.
+- **Additional Features**: Optionally add extras like minting, burning,
+  freezing, etc.
+
+### Writing Smart Contracts
+
+To bring your cryptocurrency to life, you'll need to code smart contracts that
+define the token's functionality and rules. Smart contracts are programmatic
+scripts stored on the blockchain that execute automatically when certain
+conditions are met.
+
+Some key capabilities that make smart contracts ideal for cryptocurrencies
+include:
+
+- **Self-executing** - They run automatically when triggered without third
+  party involvement.
+- **Immutability** - Once deployed, the code cannot be changed. This provides
+  security.
+- **Autonomy** - No centralized authority is needed to manage smart contracts.
+- **Transparency** - Anyone can inspect the logic in a smart contract.
+- **Automation** - Actions like transferring funds can be automated via the
+  contract code.
+- **Safety** - Funds held in a contract are secure until release conditions
+  are met.
+- **Efficiency** - Smart contracts cut out intermediaries, making processes
+  faster and cheaper.
+
+Example contract code in Solidity.
+
+```solidity
+pragma solidity ^0.8.0;
+
+contract MyToken {
+
+  string public name;
+  string public symbol;
+  uint256 public decimals;
+  uint256 public totalSupply;
+
+  constructor(string memory _name, string memory _symbol, uint8 _decimals, uint256 _totalSupply) {
+    name = _name;
+    symbol = _symbol;
+    decimals = _decimals;
+    totalSupply = _totalSupply;
+  }
+
+}
+```
+
+This basic contract allows creating a token with properties like name, symbol,
+decimals, and total supply.
+
+The constructor function initializes these parameters when deploying the
+contract.
+
+This example only sets up some basic token properties. You would expand the
+contract to add more functionality like:
+
+- Token transfers between addresses
+- Managing balances
+- Allowances for spending tokens
+- Minting and burning tokens
+- Freezing or locking token transfers
+- Implementing token standards like ERC-20
+- Describe deploying and interacting with the contract:
+
+### Local Development & Testing
+
+Before deploying your cryptocurrency on the Ethereum blockchain, it’s prudent to
+conduct thorough local testing. This ensures that your cryptocurrency operates
+as intended, without unforeseen glitches or vulnerabilities.
+
+To get started, follow these steps:
+
+#### Download Go-Ethereum (Geth)
+
+Begin by downloading [Go-Ethereum][00], also known as Geth, which is an Ethereum
+client built in Go. Geth serves as the command-line interface (CLI) Ethereum
+client that can run on Windows, Mac, and Linux platforms. It is a versatile tool
+that enables you to mine, create, and interact with smart contracts on the
+Ethereum network. You can download Geth here.
+
+#### Install Ethereum
+
+Once you have downloaded Geth, proceed to install Ethereum. For detailed
+prerequisites and comprehensive build instructions, please refer to the
+[Installation Instructions][01] available on their official wiki.
+
+#### Setting Up a Development Environment
+
+To facilitate the development of your cryptocurrency, you'll need a development
+environment, testing framework, and asset pipeline for Ethereum. Detailed
+instructions for setting up these essential tools can be found on the Ethereum
+wiki here.
+
+#### Deploying to a Testnet
+
+Once your cryptocurrency passes local testing, you can deploy it to a testnet.
+A testnet is a secure and controlled environment that mimics the Ethereum
+mainnet, allowing you to evaluate your cryptocurrency’s performance in a
+real-world setting without real financial risks.
 
 ## Impact
 
-### Redefining Payment Paradigms
+By building an Ethereum-based cryptocurrency from the ground up, you'll obtain:
 
-The impact of the EXTC Network's vision transcends the boundaries of the financial sector. As the network introduces a suite of financial services, including instant loans and real-time standing orders, it sets in motion a paradigm shift in how transactions are perceived and executed. The ability to conduct single atomic payments, time-based payments, and corporate mass payments on a blockchain or distributed ledger ensures that users experience unparalleled convenience and security.
+- Deep knowledge of Decentralized Apps (dApps) and sSmart Contract Programming
+- Hands-on Solidity programming experience
+- Understanding of Ethereum Consensus Protocols
+- Familiarity with Token Standards like ERC-20
 
-Furthermore, the EXTC Network's emphasis on compliance and regulation adds an additional layer of credibility to its offerings. In a landscape where trust is paramount, the network's commitment to adhering to regulatory practices and ensuring the legitimacy of each peer-to-peer node fosters an environment of trustworthiness and reliability. This is a crucial factor in driving mainstream adoption of cryptocurrency-based payment solutions.
+This learning will empower you to leverage blockchain technology for
+innovative solutions.
 
 ## Incentives
 
-### Paving the Path Forward
-The EXTC Network recognizes that widespread adoption requires a robust incentive structure. As such, the network's architecture is designed to accommodate traditional fiat currencies, cryptocurrencies, and compliant tokens. This forward-thinking approach not only simplifies the transition for users accustomed to conventional financial systems but also opens doors for collaboration with established financial institutions.
+Completing an end-to-end token build unlocks practical first-hand experience
+with:
 
-By building on the Ethereum blockchain and adhering to EIP20 standards, the EXTC token guarantees stability and security. This assurance serves as a powerful incentive for both individual users and businesses to embrace the new payment paradigm offered by the EXTC Network. As the network fosters a financial ecosystem that prioritizes speed, security, and accessibility, it entices stakeholders to participate and contribute to the burgeoning landscape of faster payment solutions.
+- Blockchain architecture
+- Cryptocurrency mechanics
+- Smart contract development
+- Ethereum capabilities and limitations
 
-In conclusion, the EXTC Network's unveiling marks a significant chapter in the ongoing evolution of the global financial landscape. With a visionary approach to faster payment solutions, underpinned by the potential of cryptocurrencies and distributed ledgers, the network aims to redefine how transactions are conducted across the world. Its impact resonates not only within the realm of digital assets but also in reshaping traditional financial systems, ultimately propelling us towards a future where speed, security, and inclusivity define the way we exchange value.
+You'll gain valuable skills to advance your blockchain programming career.
+
+## Conclusion
+
+In the realm of blockchain technology, comprehension is best achieved through
+practical implementation. Constructing a cryptocurrency on the Ethereum platform
+offers a unique opportunity to gain first-hand experience with the technology’s
+capabilities and limitations. This guide equips you with the knowledge and
+skills to embark on this exciting journey, fostering innovation and discovery
+in the ever-evolving world of blockchain and cryptocurrency development.
+
+[00]: https://geth.ethereum.org/downloads/
+[01]: https://geth.ethereum.org/docs/getting-started/installing-geth
+[02]: https://trufflesuite.com/docs

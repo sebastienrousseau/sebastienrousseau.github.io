@@ -38,7 +38,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
 tags: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML"
-theme_color: "rgb(0, 102, 204)"
+theme_color: "rgb(255, 39, 34)"
 title: "Sebastien Rousseau, Banking & Financial Service Professional"
 url: "https://sebastienrousseau.com"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -71,7 +71,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(0, 102, 204)"
+msapplication-navbutton-color: "rgb(255, 39, 34)"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
@@ -119,7 +119,7 @@ site_software: "Shokunin, Rust"
                         Automating ISO 20022-Compliant Payment File Creation with Pain001
                     </a>
                 </h3>
-                <h4 class="card-text fs-6">by Sebastien Rousseau (29 Sep 2023)</h4>
+                <h4 class="card-text fs-6 article-info">by Sebastien Rousseau (29 Sep 2023)</h4>
             </div>
         </div>
     </div>
@@ -257,7 +257,7 @@ site_software: "Shokunin, Rust"
                         The making of the Express Transaction Credits Platform (EXTC)
                     </a>
                 </h3>
-                <h4 class="card-text fs-6">by Sebastien Rousseau (15 Feb 2018)</h4>
+                <h4 class="card-text fs-6 article-info">by Sebastien Rousseau (15 Feb 2018)</h4>
             </div>
         </div>
     </div>
@@ -280,7 +280,7 @@ site_software: "Shokunin, Rust"
                         Unveiling a new Cryptocurrency and offering Future Faster Payment Solution
                     </a>
                 </h3>
-                <h4 class="card-text fs-6">by Sebastien Rousseau (04 Feb 2018)</h4>
+                <h4 class="card-text fs-6 article-info">by Sebastien Rousseau (04 Feb 2018)</h4>
             </div>
         </div>
     </div>
@@ -303,7 +303,7 @@ site_software: "Shokunin, Rust"
                         The ERC-20 Token Standard
                     </a>
                 </h3>
-                <h4 class="card-text fs-6">by Sebastien Rousseau (24 Jan 2018)</h4>
+                <h4 class="card-text fs-6 article-info">by Sebastien Rousseau (24 Jan 2018)</h4>
             </div>
         </div>
     </div>
@@ -326,7 +326,7 @@ site_software: "Shokunin, Rust"
                         Understanding the Technology behind Blockchain
                     </a>
                 </h3>
-                <h4 class="card-text fs-6">by Sebastien Rousseau (09 Jan 2018)</h4>
+                <h4 class="card-text fs-6 article-info">by Sebastien Rousseau (09 Jan 2018)</h4>
             </div>
         </div>
     </div>
@@ -349,7 +349,7 @@ site_software: "Shokunin, Rust"
                         Blockchain, the technology that matters
                     </a>
                 </h3>
-                <h4 class="card-text fs-6">by Sebastien Rousseau (02 Jan 2018)</h4>
+                <h4 class="card-text fs-6 article-info">by Sebastien Rousseau (02 Jan 2018)</h4>
             </div>
         </div>
     </div>
@@ -368,7 +368,7 @@ site_software: "Shokunin, Rust"
             </a>
             <div class="card-body px-0">
                 <h3 class="card-text small"><a href="/2018-01-01-bitcoin-the-year-in-review/index.html">Bitcoin The Year In Review</a></h3>
-                <h4 class="card-text fs-6">by Sebastien Rousseau (01 Jan 2018)</h4>
+                <h4 class="card-text fs-6 article-info">by Sebastien Rousseau (01 Jan 2018)</h4>
             </div>
         </div>
     </div>

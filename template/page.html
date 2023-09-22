@@ -70,76 +70,8 @@
     <!-- # End Links -->
 
     <!-- # Start Styles -->
-    <style type="text/css">
-      :root {
-  --theme-color: {{theme_color}};
-}
-
-* {
-  font-weight: 300;
-}
-
-h1, h2, h3, h4, h5, h6, strong, .active {
-  font-weight: 400;
-}
-
-a {
-  color: var(--theme-color);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.fade-in, .drop-down {
-  animation-fill-mode: forwards;
-}
-
-.fade-in {
-  animation: fadeIn 3s ease;
-}
-
-.drop-down {
-  animation: dropDown 1.618s ease;
-}
-
-.zoom-in {
-  transition: transform 0.618s cubic-bezier(0.618, 1, 0.618, 1);
-}
-
-.zoom-in:hover {
-  transform: scale(1.0618);
-}
-
-.card {
-  overflow: hidden;
-}
-
-.blur-light {
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-  background-color: rgba(255, 255, 255, 0.618);
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes dropDown {
-  from {
-    transform: translateY(-0.618rem);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
+    <style>
+      @keyframes dropDown{from{transform:translateY(-.618rem)}to{transform:translateY(0)}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.active,h1,h2,h3,h4,h5,h6,strong{font-weight:400}.article-info{color:var(--theme-color);font-weight:400}.blur-light{backdrop-filter:saturate(180%) blur(20px);background-color:rgba(255,255,255,.618)}.card{overflow:hidden}.drop-down,.fade-in{animation-fill-mode:forwards}.drop-down{animation:dropDown 1.618s ease}.fade-in{animation:fadeIn 3s ease}h1,h2,h3,h4,h5,h6{color:var(--theme-color)}:root{--theme-color:rgba(0,0,0,.618033988749894)}*{font-weight:300}a{color:#2897ff;text-decoration:none}a:hover{text-decoration:underline}pre{background:#f9f9f9;border:1px solid #ddd;border-left:3px solid var(--theme-color);color:#666;display:block;font-family:monospace;font-size:15px;line-height:1.618;margin-bottom:1.618em;max-width:100%;overflow:auto;padding:1em 1.618em;page-break-inside:avoid;word-wrap:break-word}.zoom-in{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-in:hover{transform:scale(1.0618)}
     </style>
     <!-- # End Styles -->
   </head>
