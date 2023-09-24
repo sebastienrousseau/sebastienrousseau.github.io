@@ -29,6 +29,7 @@ logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
 logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
+menu: ""
 name: "Sebastien Rousseau"
 permalink: "https://sebastienrousseau.com"
 rating: "general"
@@ -119,7 +120,7 @@ site_software: "Shokunin, Rust"
                         Automating ISO 20022-Compliant Payment File Creation with Pain001
                     </a>
                 </h3>
-                <h4 class="card-text fs-6 article-info">by Sebastien Rousseau (29 Sep 2023)</h4>
+                <h4 class="card-text fs-6 article-info">by  Rousseau (29 Sep 2023)</h4>
             </div>
         </div>
     </div>

@@ -35,6 +35,11 @@
 </url>
 
 <url>
+<loc>https://sebastienrousseau.com/hash//projects/index.html</loc>
+<changefreq></changefreq>
+</url>
+
+<url>
 <loc>https://sebastienrousseau.com/hash//2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html</loc>
 <changefreq></changefreq>
 </url>
@@ -45,17 +50,17 @@
 </url>
 
 <url>
+<loc>https://sebastienrousseau.com/hash//about/index.html</loc>
+<changefreq></changefreq>
+</url>
+
+<url>
 <loc>https://sebastienrousseau.com/hash//tags/index.html</loc>
 <changefreq></changefreq>
 </url>
 
 <url>
 <loc>https://sebastienrousseau.com/hash//2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html</loc>
-<changefreq></changefreq>
-</url>
-
-<url>
-<loc>https://sebastienrousseau.com/hash//work/index.html</loc>
 <changefreq></changefreq>
 </url>
 

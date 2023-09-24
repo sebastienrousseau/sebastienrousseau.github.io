@@ -31,6 +31,7 @@ logo_alt: "Logo of Sebastien Rousseau, Senior Digital Financial Services Consult
 logo_height: "33" ## The logo height of the site.
 logo_width: "100" ## The logo width of the site.
 logo: "https://kura.pro/kaishi/images/banners/banner-kaishi.webp" ## The logo of the site in SVG format.
+menu: ""
 name: "Kaishi" ## The name of the website. (max 64 characters)
 permalink: "https://sebastienrousseau.com" ## The url of the site.
 rating: "general" ## The rating of the site.
