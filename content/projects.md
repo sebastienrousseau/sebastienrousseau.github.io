@@ -106,7 +106,7 @@ site_software: "Shokunin, Rust"
 
 #### Pain001
 
-![Pain001](https://kura.pro/stock/images/banners/ian-dooley-DuBNA1QMpPA.webp).class=\"img-fluid clearfix\"
+[![Pain001](https://kura.pro/stock/images/banners/ian-dooley-DuBNA1QMpPA.webp).class=\"img-fluid clearfix zoom-in card-img-top\"][00]
 
 A Powerful Python Library for ISO 20022 Compliant Payment File Creation from CSV
 or SQLite Data Files, simplifying Payment Automation and Processing Payment
@@ -119,7 +119,7 @@ Files.
 
 #### Shokunin Static Site Generator (SSG)
 
-![Shokunin, the fastest Rust-based Static Site Generator (SSG)](https://kura.pro/stock/images/banners/lan-pham-4qG2qqXi3tY.webp).class=\"img-fluid clearfix\"
+![Shokunin, the fastest Rust-based Static Site Generator (SSG)](https://kura.pro/stock/images/banners/lan-pham-4qG2qqXi3tY.webp).class=\"img-fluid clearfix zoom-in card-img-top\"
 
 A blazing-fast Static Site Generator (SSG) built with Rust. Intended to make it
 simple and quick to generate websites optimised for SEO and compliant with
@@ -133,7 +133,7 @@ Accessibility Standards.
 
 #### Password Generator Pro
 
-![Pain001](https://kura.pro/password-generator-pro/images/banners/banner-password-generator-pro.webp).class=\"img-fluid clearfix\"
+![Pain001](https://kura.pro/password-generator-pro/images/banners/banner-password-generator-pro.webp).class=\"img-fluid clearfix zoom-in card-img-top\"
 
 A fast, simple and powerful open-source cross platform utility tool for
 generating strong, unique and random passwords.
@@ -143,3 +143,4 @@ generating strong, unique and random passwords.
 </div>
 <!-- markdownlint-restore -->
 
+[00]: https://pain001.com "Pain001"

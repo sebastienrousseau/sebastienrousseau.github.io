@@ -6,7 +6,7 @@ author: "Sebastien Rousseau"
 banner_alt: "Turned off laptop computer on top of brown wooden table"
 banner_height: "571px"
 banner_width: "1425px"
-banner: "https://kura.pro/stock/images/banners/laureen-missaire-DBbuhMbAIsQ.webp"
+banner: "https://kura.pro/stock/images/banners/traxer-AIKjbZdNOlw.webp"
 cdn: "https://kura.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -97,7 +97,7 @@ site_software: "Shokunin, Rust"
 
 ---
 
-![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/laureen-missaire-DBbuhMbAIsQ.webp).class=\"img-fluid clearfix\"
+![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/traxer-AIKjbZdNOlw.webp).class=\"img-fluid clearfix\"
 
 ## Insight
 

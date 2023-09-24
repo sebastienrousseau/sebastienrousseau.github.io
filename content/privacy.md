@@ -6,7 +6,7 @@ author: "Kaishi Starter Template" ## The author of the page. (max 64 characters)
 banner_alt: "MacBook Pro on white surface" ## The banner alt of the site.
 banner_height: "398" ## The banner height of the site.
 banner_width: "1440" ## The banner width of the site.
-banner: "https://kura.pro/unsplash/images/banners/johannes-plenio-6XUA5KQ9-1k-unsplash.jpg" ## The banner of the site.
+banner: "https://kura.pro/unsplash/images/banners/johannes-plenio-6XUA5KQ9-1k.jpg" ## The banner of the site.
 cdn: "https://kura.pro" ## The CDN of the site.
 charset: "utf-8" ## The charset of the site. (default: utf-8)
 cname: "sebastienrousseau.com" ## The cname value of the site. (Only required for the index page.)
