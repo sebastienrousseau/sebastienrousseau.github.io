@@ -6,8 +6,9 @@ author: "Sebastien Rousseau"
 banner_alt: "Turned off laptop computer on top of brown wooden table"
 banner_height: "571px"
 banner_width: "1425px"
-banner: "https://kura.pro/stock/images/banners/traxer-AIKjbZdNOlw.webp"
+banner: "https://kura.pro/stock/images/banners/laureen-missaire-DBbuhMbAIsQ.webp"
 cdn: "https://kura.pro"
+changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
@@ -39,7 +40,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
 tags: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
-theme_color: "rgb(0, 102, 204)"
+theme-color: "rgb(0, 102, 204)"
 title: "Unveiling a new Cryptocurrency and offering Future Faster Payment Solution"
 url: "https://sebastienrousseau.com/payments/"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -97,7 +98,7 @@ site_software: "Shokunin, Rust"
 
 ---
 
-![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/traxer-AIKjbZdNOlw.webp).class=\"img-fluid clearfix\"
+![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/laureen-missaire-DBbuhMbAIsQ.webp).class=\"img-fluid clearfix\"
 
 ## Insight
 

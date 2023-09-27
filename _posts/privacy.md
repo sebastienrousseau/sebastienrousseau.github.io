@@ -6,7 +6,7 @@ author: "Kaishi Starter Template" ## The author of the page. (max 64 characters)
 banner_alt: "MacBook Pro on white surface" ## The banner alt of the site.
 banner_height: "398" ## The banner height of the site.
 banner_width: "1440" ## The banner width of the site.
-banner: "https://kura.pro/unsplash/images/banners/sean-stratton-ObpCE_X3j6U.jpg" ## The banner of the site.
+banner: "https://kura.pro/unsplash/images/banners/johannes-plenio-6XUA5KQ9-1k.jpg" ## The banner of the site.
 cdn: "https://kura.pro" ## The CDN of the site.
 charset: "utf-8" ## The charset of the site. (default: utf-8)
 cname: "sebastienrousseau.com" ## The cname value of the site. (Only required for the index page.)
@@ -40,7 +40,7 @@ robots: "index, follow" ## The robots of the site.
 short_name: "kaishi" ## The short name of the site. (max 12 characters)
 subtitle: "Build Amazing Websites with Minimal Effort using Kaishi Starter Template" ## The subtitle of the page. (max 64 characters)
 tags: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML" ## The tags of the site. (comma separated, max 10 tags)
-theme_color: "rgb(0, 48, 96)" ## The theme color of the site.
+theme-color: "rgb(0, 48, 96)" ## The theme color of the site.
 title: "Kaishi, a Starter Template for the Shokunin Static Site Generator (SSG)" ## The title of the page. (max 64 characters)
 url: "https://sebastienrousseau.com" ## The url of the site.
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no" ## The viewport of the site.
@@ -106,71 +106,32 @@ site_software: "Shokunin, Rust" ## The software of the site.
 
 ---
 
-## Agreement to Terms of Use
+## Information Collection and Use
 
-These Terms and Conditions of Use (the "Terms of Use") apply to the Shokunin
-(職人) website located at <https://sebastienrousseau.com/> (the "Website").
+We do not directly collect any personal data from you while you navigate our website. We do not use cookies for logic or save any personal information from a user.
 
-BY USING THE SITE, YOU AGREE TO THESE TERMS OF USE; IF YOU DO NOT AGREE, DO NOT
-USE THE SITE.
+## Use of Tracking Tools
 
-### Intellectual Property
+We use two third-party services to monitor and analyze web traffic: Google Analytics and Microsoft Clarity.
 
-The Website and its original content, features, and functionality are and will
-remain the exclusive property of Kaishi. This Website is protected by
-United States and international copyright, trademark, and other laws.
+### Google Analytics
 
-### Links to Other Sites and to the Kaishi Site
+Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our Website. This data is shared with other Google services. For more information on the privacy practices of Google, please visit the Google Privacy & Terms web page: [Google Privacy & Terms ⧉](https://policies.google.com/privacy)
 
-Our Website may contain links to third-party Web sites ("Linked Sites") or
-services that are not owned or controlled by Kaishi. These Linked
-Sites are provided solely as a convenience to our visitors.
+### Microsoft Clarity
 
-Kaishi has no control over and assumes no responsibility for the
-content, privacy policies, or practises of any Linked Sites or services. We do
-not warrant the offerings of any of these entities/individuals, their
-websites or services.
+Microsoft Clarity is a user behavior analytics tool that helps us understand how users interact with our website. The data collected includes information such as mouse movements, clicks, and scrolls. For more information on the privacy practices of Microsoft, please visit the Microsoft Privacy Statement web page: [Microsoft Privacy Statement ⧉](https://privacy.microsoft.com/en-us/privacystatement)
 
-### Limitation of Liability
+## Your Rights
 
-SHOKUNIN (職人) DOES NOT PROMISE THAT THE SITE OR ANY CONTENT, SERVICE OR
-FEATURE OF THE SITE WILL BE ERROR-FREE OR UNINTERRUPTED, OR THAT ANY DEFECTS
-WILL BE CORRECTED, OR THAT YOUR USE OF THE SITE WILL PROVIDE SPECIFIC RESULTS.
-THE SITE AND ITS CONTENT ARE DELIVERED ON AN "AS-IS" AND "AS-AVAILABLE" BASIS.
-ALL INFORMATION PROVIDED ON THE SITE IS SUBJECT TO CHANGE WITHOUT NOTICE.
-SHOKUNIN (職人) CANNOT ENSURE THAT ANY FILES OR OTHER DATA YOU DOWNLOAD FROM
-THE SITE WILL BE FREE OF VIRUSES OR CONTAMINATION OR DESTRUCTIVE FEATURES.
-SHOKUNIN (職人) ANY AND ALL LIABILITY FOR THE ACTS, OMISSIONS AND CONDUCT OF
-ANY THIRD PARTIES IN CONNECTION WITH OR RELATED TO YOUR USE OF THE SITE AND/OR
-ANY SHOKUNIN (職人) SERVICES. IN NO EVENT SHALL SHOKUNIN (職人), NOR ITS
-DIRECTORS, EMPLOYEES, PARTNERS, AGENTS, SUPPLIERS, OR AFFILIATES, BE LIABLE FOR
-ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES,
-INCLUDING WITHOUT LIMITATION, LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER
-INTANGIBLE LOSSES, RESULTING FROM YOUR ACCESS TO OR USE OF OR INABILITY TO
-ACCESS OR USE THE WEBSITE.
+Depending on where you reside, you may have certain rights with respect to your personal data, such as the right to request access, correction, or deletion of your data, or to object to our use of your data.
 
-## Privacy
+## Changes to This Privacy Policy
 
-Kaishi’s [Privacy Policy](/privacy/index.html) applies to use of
-this Site, and its terms are made a part of these Terms of Use by this
-reference. Additionally, by using the Site, you acknowledge and agree that
-Internet transmissions are never completely private or secure. You understand
-that any message or information you send to the Site may be read or intercepted
-by others.
+We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
 
-## Governing Law
-
-These Terms shall be interpreted and enacted in accordance with the laws of the
-United States, disregarding any conflict of law stipulations.
-
-## Changes
-
-We reserve the right, at our sole discretion, to change, modify, add, or remove
-parts of these Terms of Use, at any time. It is your responsibility to check
-these Terms of Use periodically for changes. By continuing to access or use
-our Website after any revisions become effective, you agree to be bound by the
-revised terms.
+We advise you to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
 
 ## Contact Us
 
-If you have any questions about these Terms, please [contact us](/contact/index.html)
+If you have any questions about this Privacy Policy, please contact us.

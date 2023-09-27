@@ -3,16 +3,16 @@
 # Front Matter (YAML)
 
 author: "Kaishi Starter Template" ## The author of the page. (max 64 characters)
-banner_alt: "Green And Black Tiled Wall" ## The banner alt of the site.
+banner_alt: "MacBook Pro on white surface" ## The banner alt of the site.
 banner_height: "398" ## The banner height of the site.
 banner_width: "1440" ## The banner width of the site.
-banner: "https://kura.pro/unsplash/images/banners/ryunosuke-kikuno-G5hYMUoJQf8.jpg" ## The banner of the site.
+banner: "https://kura.pro/unsplash/images/banners/sean-stratton-ObpCE_X3j6U.jpg" ## The banner of the site.
 cdn: "https://kura.pro" ## The CDN of the site.
 charset: "utf-8" ## The charset of the site. (default: utf-8)
 cname: "sebastienrousseau.com" ## The cname value of the site. (Only required for the index page.)
 copyright: "© 2023 Kaishi Starter Template. All rights reserved." ## The copyright of the site.
 date: "July 12, 2023"
-description: "Everything You Need to Build a Stunning Website." ## The description of the site. (max 160 characters)
+description: "Make beautiful websites with Kaishi, a Shokunin Static Site Generator starter template." ## The description of the site. (max 160 characters)
 download: "" ## The download url for the product.
 format-detection: "telephone=no" ## The format detection of the site.
 hreflang: "en" ## The hreflang of the site. (default: en-gb)
@@ -40,8 +40,8 @@ robots: "index, follow" ## The robots of the site.
 short_name: "kaishi" ## The short name of the site. (max 12 characters)
 subtitle: "Build Amazing Websites with Minimal Effort using Kaishi Starter Template" ## The subtitle of the page. (max 64 characters)
 tags: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML" ## The tags of the site. (comma separated, max 10 tags)
-theme_color: "rgb(0, 48, 96)" ## The theme color of the site.
-title: "Kaishi Starter Template - Features" ## The title of the page. (max 64 characters)
+theme-color: "rgb(0, 48, 96)" ## The theme color of the site.
+title: "Kaishi, a Starter Template for the Shokunin Static Site Generator (SSG)" ## The title of the page. (max 64 characters)
 url: "https://sebastienrousseau.com" ## The url of the site.
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no" ## The viewport of the site.
 
@@ -82,7 +82,7 @@ twitter_card: "summary"
 ## twitter_creator - The Twitter Card creator of the page.
 twitter_creator: "wwdseb"
 ## twitter_description - The Twitter Card description of the page.
-twitter_description: "Everything You Need to Build a Stunning Website."
+twitter_description: "Make beautiful websites with Kaishi, a Shokunin Static Site Generator Starter Template."
 ## twitter_image - The Twitter Card image of the page.
 twitter_image: "https://kura.pro/kaishi/images/logos/kaishi.svg"
 ## twitter_image:alt - The Twitter Card image alt of the page.
@@ -106,39 +106,71 @@ site_software: "Shokunin, Rust" ## The software of the site.
 
 ---
 
-## Starter Templates
+## Agreement to Terms of Use
 
-<div class="row no-gutters">
-    <div class="col-6">
-        <div class="d-flex flex-row flex-wrap">
-            <a href="#alerts" class="list-group-item list-group-item-action">
-                Alerts
-                </a>
-            <a href="#alerts" class="list-group-item list-group-item-action">
-                Badges
-                </a>
-                <a href="#alerts" class="list-group-item list-group-item-action">
-                Breadcrumbs
-                </a>
-            <a href="#alerts" class="list-group-item list-group-item-action">
-                Buttons
-                </a>
-        </div>
-    </div>
-    <div class="col-6">
-        <div class="d-flex flex-row flex-wrap">
-            <a href="#alerts" class="list-group-item list-group-item-action">
-                Cards
-                </a>
-            <a href="#alerts" class="list-group-item list-group-item-action">
-                Modals
-                </a>
-            <a href="#alerts" class="list-group-item list-group-item-action">
-                Lists
-                </a>
-            <a href="#alerts" class="list-group-item list-group-item-action">
-                Tabs
-                </a>
-        </div>
-    </div>
-</div>
+These Terms and Conditions of Use (the "Terms of Use") apply to the Shokunin
+(職人) website located at <https://sebastienrousseau.com/> (the "Website").
+
+BY USING THE SITE, YOU AGREE TO THESE TERMS OF USE; IF YOU DO NOT AGREE, DO NOT
+USE THE SITE.
+
+### Intellectual Property
+
+The Website and its original content, features, and functionality are and will
+remain the exclusive property of Kaishi. This Website is protected by
+United States and international copyright, trademark, and other laws.
+
+### Links to Other Sites and to the Kaishi Site
+
+Our Website may contain links to third-party Web sites ("Linked Sites") or
+services that are not owned or controlled by Kaishi. These Linked
+Sites are provided solely as a convenience to our visitors.
+
+Kaishi has no control over and assumes no responsibility for the
+content, privacy policies, or practises of any Linked Sites or services. We do
+not warrant the offerings of any of these entities/individuals, their
+websites or services.
+
+### Limitation of Liability
+
+SHOKUNIN (職人) DOES NOT PROMISE THAT THE SITE OR ANY CONTENT, SERVICE OR
+FEATURE OF THE SITE WILL BE ERROR-FREE OR UNINTERRUPTED, OR THAT ANY DEFECTS
+WILL BE CORRECTED, OR THAT YOUR USE OF THE SITE WILL PROVIDE SPECIFIC RESULTS.
+THE SITE AND ITS CONTENT ARE DELIVERED ON AN "AS-IS" AND "AS-AVAILABLE" BASIS.
+ALL INFORMATION PROVIDED ON THE SITE IS SUBJECT TO CHANGE WITHOUT NOTICE.
+SHOKUNIN (職人) CANNOT ENSURE THAT ANY FILES OR OTHER DATA YOU DOWNLOAD FROM
+THE SITE WILL BE FREE OF VIRUSES OR CONTAMINATION OR DESTRUCTIVE FEATURES.
+SHOKUNIN (職人) ANY AND ALL LIABILITY FOR THE ACTS, OMISSIONS AND CONDUCT OF
+ANY THIRD PARTIES IN CONNECTION WITH OR RELATED TO YOUR USE OF THE SITE AND/OR
+ANY SHOKUNIN (職人) SERVICES. IN NO EVENT SHALL SHOKUNIN (職人), NOR ITS
+DIRECTORS, EMPLOYEES, PARTNERS, AGENTS, SUPPLIERS, OR AFFILIATES, BE LIABLE FOR
+ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES,
+INCLUDING WITHOUT LIMITATION, LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER
+INTANGIBLE LOSSES, RESULTING FROM YOUR ACCESS TO OR USE OF OR INABILITY TO
+ACCESS OR USE THE WEBSITE.
+
+## Privacy
+
+Kaishi’s [Privacy Policy](/privacy/index.html) applies to use of
+this Site, and its terms are made a part of these Terms of Use by this
+reference. Additionally, by using the Site, you acknowledge and agree that
+Internet transmissions are never completely private or secure. You understand
+that any message or information you send to the Site may be read or intercepted
+by others.
+
+## Governing Law
+
+These Terms shall be interpreted and enacted in accordance with the laws of the
+United States, disregarding any conflict of law stipulations.
+
+## Changes
+
+We reserve the right, at our sole discretion, to change, modify, add, or remove
+parts of these Terms of Use, at any time. It is your responsibility to check
+these Terms of Use periodically for changes. By continuing to access or use
+our Website after any revisions become effective, you agree to be bound by the
+revised terms.
+
+## Contact Us
+
+If you have any questions about these Terms, please [contact us](/contact/index.html)
