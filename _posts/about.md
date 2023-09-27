@@ -98,23 +98,20 @@ site_software: "Shokunin, Rust"
 
 ---
 
+![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/tim-mossholder-z8y36JocqkU.webp).class=\"img-fluid clearfix\"
+
 ## Bio
 
-Sebastien Rousseau is a Blockchain, Banking & Financial Services development consultant based in London, UK.
+Sebastien Rousseau is a senior leader with over 20 years of experience in payments technology and building the future of finance. He is a passionate advocate for the strategic integration of artificial intelligence, post-quantum cryptography, and blockchain technology to increase efficiency and accessibility in the financial industry.
 
-He is a commercially driven solution architect and engineer lead, specialised in growing digital businesses as a consultant with a focus on blockchain, cryptocurrency and digital payment transformation programmes.
+As a Senior Product Manager at HSBC, Sebastien Rousseau focuses on implementing the Wholesale Digital Channels Bank’s API and embedded finance strategy. 
 
-He has been developing financial and digital payment products for numerous years working with banks, financial services, online payment service providers, communication and media sectors. Based on this experience he has highly developed strategic leadership, cross-platform product design and solution architecture skills.
+This includes leading the development of the Treasury payments APIs, the launch of the HSBC Banking-as-a-Service (BaaS) offering, and the management of the HSBC API Developer Portal, providing customers with access to tools to integrate the bank’s API solutions into their products.
 
 Across his consulting career, Sebastien has designed, delivered and championed operational improvements of a number of complex mobile projects within Barclays Bank PLC; led the mobile software teams at Shazam Entertainment Limited and championed a range of online and contactless payment propositions for strategic partners at PayPal Inc.
 
-Sebastien Rousseau is a senior leader with over 20 years of experience in payments technology and building the future of finance. I am a passionate advocate for the strategic integration of artificial intelligence, post-quantum cryptography, and blockchain technology to increase efficiency and accessibility in the financial industry.
-
-As a Senior Product Manager at HSBC, Sebastien Rousseau focuses on implementing the Wholesale Digital Channels Bank's API and embedded finance strategy. This includes leading the development of the Treasury payments APIs, the launch of a Banking-as-a-Service (BaaS) offering, and API Developer Portal, providing customers with access to tools to integrate the bank's API solutions into their products.
-
-Previously, Sebastien Rousseau led complex mobile projects as Digital Payments Senior Product Manager at Barclays, oversaw mobile software teams at Shazam Entertainment, and drove strategic payment propositions with partners at PayPal. As Senior Digital Product Manager at HSBC, he built the wholesale treasury payment API proposition. His in-depth experience with ISO 20022 payments migration has given him unique expertise.
+Based on this experience he has highly developed strategic leadership, cross-platform product design and solution architecture skills.
 
 His cross-functional experience across banking, financial services, communications and media has provided him with a comprehensive understanding of technological convergence in the industry.
 
 An active contributor to the open source community, Sebastien Rousseau has consistently been at the forefront of financial innovation throughout his career. He is passionate about crafting the next generation of banking through the strategic integration of artificial intelligence, post-quantum cryptography to enable security, and blockchain technology to increase efficiency and accessibility.
-
