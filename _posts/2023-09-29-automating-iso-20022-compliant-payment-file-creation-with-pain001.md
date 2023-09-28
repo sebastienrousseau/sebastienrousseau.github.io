@@ -189,4 +189,4 @@ reshapes the way you manage payments.
 
 [00]: https://pain001.com/ "Pain001"
 [01]: https://www.iso20022.org/ "ISO 20022"
-[02]: https://pain001.com/2021/07/12/delivering-faster-payments-automation.html "Embrace the future of payment automation with Pain001"
+[02]: https://pain001.com/index.html "Embrace the future of payment automation with Pain001"
