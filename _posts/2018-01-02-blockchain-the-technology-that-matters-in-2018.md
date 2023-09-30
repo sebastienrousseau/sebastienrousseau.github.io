@@ -24,13 +24,13 @@ image_width: "161.8"
 image: "https://kura.pro/stock/images/banners/sebastien-rousseau.webp"
 keywords: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
 language: "en-GB"
-layout: "page"
+layout: "articles"
 locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
 logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
-menu: ""
+menu: "active"
 name: "Sebastien Rousseau"
 permalink: "https://sebastienrousseau.com/payments/"
 rating: "general"
@@ -181,3 +181,7 @@ Blockchain's introduction marks a pivotal moment that expanded possibilities for
 By eliminating trusted third parties, blockchain offers the potential to restructure flows of value across finance, commerce, governance, and society. Despite limitations, its trajectory points to an exciting decentralized future across sectors.
 
 Like the internet before it, blockchain is a foundational technology poised to unlock new models powered by peer-to-peer transparency and trust. This revolutionary innovation promises to reshape our digital economies and connected lives in the years ahead.
+
+[❬ **Back To Articles**][00]
+
+[00]: /articles/index.html

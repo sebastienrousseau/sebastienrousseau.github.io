@@ -24,13 +24,13 @@ image_width: "161.8"
 image: "https://kura.pro/stock/images/banners/sebastien-rousseau.webp"
 keywords: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
 language: "en-GB"
-layout: "page"
+layout: "articles"
 locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
 logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
-menu: ""
+menu: "active"
 name: "Sebastien Rousseau"
 permalink: "https://sebastienrousseau.com/payments/"
 rating: "general"
@@ -132,3 +132,7 @@ The EXTC Network recognizes that widespread adoption requires a robust incentive
 By building on the Ethereum blockchain and adhering to EIP20 standards, the EXTC token guarantees stability and security. This assurance serves as a powerful incentive for both individual users and businesses to embrace the new payment paradigm offered by the EXTC Network. As the network fosters a financial ecosystem that prioritizes speed, security, and accessibility, it entices stakeholders to participate and contribute to the burgeoning landscape of faster payment solutions.
 
 In conclusion, the EXTC Network's unveiling marks a significant chapter in the ongoing evolution of the global financial landscape. With a visionary approach to faster payment solutions, underpinned by the potential of cryptocurrencies and distributed ledgers, the network aims to redefine how transactions are conducted across the world. Its impact resonates not only within the realm of digital assets but also in reshaping traditional financial systems, ultimately propelling us towards a future where speed, security, and inclusivity define the way we exchange value.
+
+[❬ **Back To Articles**][00]
+
+[00]: /articles/index.html

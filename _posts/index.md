@@ -244,12 +244,12 @@ site_software: "Shokunin, Rust"
         <div class="card border-0">
             <a href="/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html">
                 <img
-                    alt="The making of the Express Transaction Credits Platform (EXTC)"
+                    alt="The making of the Express Transaction Credits Platform"
                     class="zoom-in card-img-top"
                     height="100%"
                     loading="lazy"
                     src="https://kura.pro/stock/images/banners/rawpixel-com-369782.webp"
-                    title="The making of the Express Transaction Credits Platform (EXTC)"
+                    title="The making of the Express Transaction Credits Platform"
                     width="100%"
                 />
             </a>

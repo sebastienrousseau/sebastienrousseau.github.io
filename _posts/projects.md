@@ -124,6 +124,8 @@ Here are some of my latest personal projects:
 creation from CSV or SQLite data files, simplifying payment automation and
 processing.
 
+[**Learn more**  ⧉][00]
+
 <!-- markdownlint-disable MD033 -->
 </div></div>
 <div class="col">
@@ -138,7 +140,8 @@ processing.
 (SSG) built with Rust. Intended to make it simple and quick to generate websites
 optimised for SEO and compliant with Accessibility Standards.
 
-["Test".class=\"btn btn-primary\"][00]
+[**Learn more**  ⧉][01]
+
 
 <!-- markdownlint-disable MD033 -->
 </div></div>
@@ -154,6 +157,7 @@ optimised for SEO and compliant with Accessibility Standards.
 **Password Generator Pro**: A fast, simple and powerful open-source cross
 platform utility tool for generating strong, unique and random passwords.
 
+[**Learn more**  ⧉][02]
 <!-- markdownlint-disable MD033 -->
 </div>
 </div>
@@ -174,6 +178,8 @@ platform utility tool for generating strong, unique and random passwords.
 for implementing secure hash and digest algorithms, specifically designed for
 password encryption and verification.
 
+[**Learn more**  ⧉][03]
+
 <!-- markdownlint-disable MD033 -->
 </div></div>
 <div class="col">
@@ -187,6 +193,8 @@ password encryption and verification.
 **LibMake Rust library**: LibMake is a tool designed to quickly help creating
 high-quality Rust libraries by generating a set of pre-filled and pre-defined
 templated files.
+
+[**Learn more**  ⧉][04]
 
 <!-- markdownlint-disable MD033 -->
 </div></div>
@@ -204,6 +212,8 @@ cryptographic suite of security tools that solves common application crypto
 problems, including integration, data encryption, tokenization, transaction
 authorization, code-signing and key life-cycle management and other security
 services.
+
+[**Learn more**  ⧉][05]
 
 <!-- markdownlint-disable MD033 -->
 </div>
@@ -227,6 +237,8 @@ functions and data structures that allow you to perform various date and time
 operations with ease, such as determining the day of the month, hour of the day,
 working with ISO 8601 date and time formats, and many others.
 
+[**Learn more**  ⧉][06]
+
 <!-- markdownlint-disable MD033 -->
 </div></div>
 <div class="col">
@@ -235,12 +247,14 @@ working with ISO 8601 date and time formats, and many others.
 
 ### Random (VRD) Rust library
 
-[![Random (VRD) Rust library, A Rust library for generating high-quality random numbers based on the Mersenne Twister algorithm](https://kura.pro/stock/images/banners/thomas-tastet-0eqgB57xMeA.webp).class=\"fade-in zoom-in card-img-top\"][07]
+[![Random (VRD) Rust library, A Rust library for generating high-quality random numbers based on the Mersenne Twister algorithm](https://kura.pro/stock/images/banners/timon-studler-ABGaVhJxwDQ.webp).class=\"fade-in zoom-in card-img-top\"][07]
 
 **Random (VRD) Rust library**: Random (VRD) is a Rust library for generating
 high-quality random numbers based on the Mersenne Twister algorithm. The
 Mersenne Twister is a pseudorandom number generator (PRNG) that is often used in
 computer simulations and games. It is a fast and reliable PRNG.
+
+[**Learn more**  ⧉][07]
 
 <!-- markdownlint-disable MD033 -->
 </div></div>
@@ -256,6 +270,58 @@ computer simulations and games. It is a fast and reliable PRNG.
 **Common (CMN) Rust library**: Common (CMN) is a modern, fast, and user-friendly
 library that makes it easy to access a wide range of mathematical and
 cryptographic constants.
+
+[**Learn more**  ⧉][08]
+
+<!-- markdownlint-disable MD033 -->
+</div>
+</div>
+</div>
+<!-- markdownlint-restore -->
+
+<!-- markdownlint-disable MD033 -->
+<div class="row">
+  <div class="col">
+    <div class="card border-0">
+<!-- markdownlint-restore -->
+
+
+### MacConfig (maccfg)
+
+[![MacConfig (maccfg)](https://kura.pro/stock/images/banners/ibrahim-abazid-MgQnQZA4ByM.webp).class=\"fade-in zoom-in card-img-top\"][10]
+
+**MacBook Pro M1 Software Development Setup (macOS Config)**: A guide to getting your MacBook Pro M1 ready for Software Development. You can set up and start using your new Mac in no time at all with these free resources and user guides.
+
+[**Learn more**  ⧉][10]
+
+<!-- markdownlint-disable MD033 -->
+</div></div>
+<div class="col">
+  <div class="card border-0">
+<!-- markdownlint-restore -->
+
+### Mini Functions Rust library
+
+[![Mini Functions Rust library, A Rust library of highly performant utility and wrapper functions](https://kura.pro/stock/images/banners/chuttersnap-mf-o1E7omzk.webp).class=\"fade-in zoom-in card-img-top\"][11]
+
+**Mini Functions**: Mini Functions is a highly performant utility and wrapper functions library for Rust that has been carefully designed with optimization and efficiency in mind.
+
+[**Learn more**  ⧉][11]
+
+<!-- markdownlint-disable MD033 -->
+</div></div>
+<div class="col">
+  <div class="card border-0">
+<!-- markdownlint-restore -->
+
+
+### Dotfiles
+
+[![Dotfiles](https://kura.pro/dotfiles/v2/images/banners/dotfiles.webp).class=\"fade-in zoom-in card-img-top\"][12]
+
+**Dotfiles**: are a powerful set of configuration files for macOS, Linux, and Windows providing scripts and customized settings to streamline your workflow. These files are an essential tool for developers and users who want to modify their environment and applications to their exact needs.
+
+[**Learn more**  ⧉][12]
 
 <!-- markdownlint-disable MD033 -->
 </div>
@@ -274,3 +340,6 @@ cryptographic constants.
 [07]: http://doc.vrdlib.one/ "A Rust library for generating high-quality random numbers based on the Mersenne Twister algorithm ⧉"
 [08]: http://doc.cmnlib.one/ "A Rust library for accessing a collection of mathematical and cryptographic constants ⧉"
 [09]: /contact/index.html "Contact Sebastien Rousseau"
+[10]: https://maccfg.com/ "MacBook Pro M1 Software Development Setup (macOS Config)"
+[11]: http://minifunctions.com/ "Highly performant utility and wrapper functions library for Rust"
+[12]: https://dotfiles.io/ "The next generation of Bash configuration files for macOS, Linux and Windows"

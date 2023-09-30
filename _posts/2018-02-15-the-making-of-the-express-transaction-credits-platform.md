@@ -24,13 +24,13 @@ image_width: "161.8"
 image: "https://kura.pro/stock/images/banners/sebastien-rousseau.webp"
 keywords: "mathematical constants, cryptographic constants, rust, cmn library, secure, reliable, accurate, portability, performance, documentation, versatility"
 language: "en-GB"
-layout: "page"
+layout: "articles"
 locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
 logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
-menu: ""
+menu: "active"
 name: "Sebastien Rousseau"
 permalink: "https://sebastienrousseau.com/hash/"
 rating: "general"
@@ -41,7 +41,7 @@ short_name: "sebastienrousseau"
 subtitle: "Building a comprehensive framework of the next generation of ERC-223 compliant tokens"
 tags: "mathematical constants, cryptographic constants, rust, cmn library, secure, reliable, accurate, portability, performance, documentation, versatility"
 theme-color: "rgb(0, 102, 204)"
-title: "The making of the Express Transaction Credits Platform - EXTC"
+title: "The making of the Express Transaction Credits Platform"
 url: "https://sebastienrousseau.com/hash/"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -54,7 +54,7 @@ item_description: "Building a comprehensive framework of the next generation of 
 item_guid: "https://sebastienrousseau.com/hash/rss.xml"
 item_link: "https://sebastienrousseau.com/hash/rss.xml"
 item_pub_date: "Thu, 12 Jul 2023 20:20:20 GMT"
-item_title: "The making of the Express Transaction Credits Platform - EXTC"
+item_title: "The making of the Express Transaction Credits Platform"
 last_build_date: "Thu, 12 Jul 2023 20:20:20 GMT"
 managing_editor: "contact@sebastienrousseau.com"
 pub_date: "Thu, 12 Jul 2023 20:20:20 GMT"
@@ -83,7 +83,7 @@ twitter_description: "Building a comprehensive framework of the next generation 
 twitter_image: "https://kura.pro/kaishi/images/logos/kaishi.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "The making of the Express Transaction Credits Platform - EXTC"
+twitter_title: "The making of the Express Transaction Credits Platform"
 twitter_url: "https://sebastienrousseau.com/hash/"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -144,3 +144,7 @@ The success of any financial platform hinges on user adoption and participation.
 - **Financial Inclusion**: By targeting the unbanked population, EXTC opens doors to financial services for those who were previously excluded.
 
 In conclusion, the Express Transaction Credits Platform (EXTC) represents a paradigm shift in the world of financial transactions. By leveraging the ERC223 standard and offering unparalleled speed, security, and accessibility, EXTC paves the way for a future where financial services are truly global and inclusive. As the platform gains momentum and adoption, its impact on the financial landscape is poised to be revolutionary, transcending borders and democratizing access to economic opportunities. Whether you're a tech enthusiast, a financial professional, or simply curious about the future of finance, EXTC is a platform that invites exploration and engagement.
+
+[❬ **Back To Articles**][00]
+
+[00]: /articles/index.html

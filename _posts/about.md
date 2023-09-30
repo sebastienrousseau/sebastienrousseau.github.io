@@ -22,9 +22,9 @@ image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "161.8"
 image_width: "161.8"
 image: "https://kura.pro/stock/images/banners/sebastien-rousseau.webp"
-keywords: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML"
+keywords: "payments technology, fintech, artificial intelligence, post-quantum cryptography, blockchain, API, product management, innovation, leadership"
 language: "en-GB"
-layout: "page"
+layout: "about"
 locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
@@ -39,7 +39,7 @@ revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
-tags: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML"
+tags: "payments technology, fintech, artificial intelligence, post-quantum cryptography, blockchain, API, product management, innovation, leadership"
 theme-color: "rgb(255, 39, 34)"
 title: "Sebastien Rousseau, Banking & Financial Service Professional"
 url: "https://sebastienrousseau.com"
@@ -103,6 +103,20 @@ site_software: "Shokunin, Rust"
 
 ![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/sebastien-rousseau.webp).class=\"image-wrapper float-start pe-4 rounded-circle w-25 float-start\"
 
+Sebastien Rousseau is a Senior Technical Leader with over 20 years of experience in payments technology and building the future of finance. He is passionate about crafting the next generation of banking through the strategic integration of artificial intelligence, post-quantum cryptography, and blockchain technology.
+
+As a Senior Product Manager at HSBC, Sebastien has successfully led the development and launch of several innovative products and services, including the Treasury payments APIs, the HSBC Banking-as-a-Service (BaaS) offering, and the HSBC API Developer Portal. He has also played a key role in designing and delivering operational improvements of a number of complex mobile projects at Barclays Bank PLC, Shazam Entertainment Limited, and PayPal Inc.
+
+Sebastien's cross-functional experience across banking, financial services, communications, and media has given him a deep understanding of technological convergence in the industry. He is an active contributor to the open source community and is consistently at the forefront of financial innovation.
+
+
+
+
+
+
+
+
+
 Sebastien Rousseau is a senior leader with over 20 years of experience in payments technology and building the future of finance. He is a passionate advocate for the strategic integration of artificial intelligence, post-quantum cryptography, and blockchain technology to increase efficiency and accessibility in the financial industry.
 
 As a Senior Product Manager at HSBC, Sebastien Rousseau focuses on implementing the Wholesale Digital Channels Bank’s API and embedded finance strategy.
@@ -121,6 +135,23 @@ An active contributor to the open source community, Sebastien Rousseau has consi
     <div class="start-roller"></div>
     <div class="wrapper">
         <div class="items-container roll-LL">
+            <!-- First Set of Items -->
+            <div class="item">
+                <a href="https://www.akqa.com/"><img src="https://kura.pro/logos/akqa.webp" alt="" height="258" class="company"></a>
+            </div>
+            <div class="item">
+                <a href="https://www.barclayscorporate.com/"><img src="https://kura.pro/logos/barclays.webp" alt="" height="258" class="company"></a>
+            </div>
+            <div class="item">
+                <a href="https://www.hsbc.com/"><img src="https://kura.pro/logos/hsbc.webp" alt="" height="258" class="company"></a>
+            </div>
+            <div class="item">
+                <a href="https://paypal.com/"><img src="https://kura.pro/logos/paypal.webp" alt="" height="258" class="company"></a>
+            </div>
+            <div class="item">
+                <a href="https://www.virgin.com/"><img src="https://kura.pro/logos/virgin.webp" alt="" height="258" class="company"></a>
+            </div>
+            <!-- Second Set of Items (Duplicate) -->
             <div class="item">
                 <a href="https://www.akqa.com/"><img src="https://kura.pro/logos/akqa.webp" alt="" height="258" class="company"></a>
             </div>
@@ -139,5 +170,4 @@ An active contributor to the open source community, Sebastien Rousseau has consi
         </div>
     </div>
     <div class="end-roller"></div>
-    </div>
 </div>

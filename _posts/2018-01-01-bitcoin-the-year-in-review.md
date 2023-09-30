@@ -11,7 +11,7 @@ cdn: "https://kura.pro"
 changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
-copyright: "© Copyright 2023 - Sebastien Rousseau.All rights reserved."
+copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
 date: "July 12, 2023"
 description: "The Peer-to-Peer Electronic Cash System that everyone is talking about."
 format-detection: "telephone=no"
@@ -24,13 +24,13 @@ image_width: "161.8"
 image: "https://kura.pro/stock/images/banners/sebastien-rousseau.webp"
 keywords: "bitcoin, cryptocurrency, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, programmable money, future of money, financial revolution"
 language: "en-GB"
-layout: "page"
+layout: "articles"
 locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
 logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
-menu: ""
+menu: "active"
 name: "Sebastien Rousseau"
 permalink: "https://sebastienrousseau.com/payments/"
 rating: "general"
@@ -207,3 +207,7 @@ Bitcoin's remarkable journey since its introduction in 2008 by Satoshi Nakamoto 
 As a digitally native asset outside the control of institutions, Bitcoin promises to redefine money in an increasingly digital world. With its sustained utility and growing financial and technological impact, the future holds exciting possibilities.
 
 Bitcoin's influence on the digitization of finance is undeniable. It has opened a Pandora's box of possibilities that continue to unfold, making it the nucleus of finance's digital evolution.
+
+[❬ **Back To Articles**][00]
+
+[00]: /articles/index.html

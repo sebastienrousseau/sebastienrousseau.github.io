@@ -24,13 +24,13 @@ image_width: "161.8"
 image: "https://kura.pro/stock/images/banners/sebastien-rousseau.webp"
 keywords: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
 language: "en-GB"
-layout: "page"
+layout: "articles"
 locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
 logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
-menu: ""
+menu: "active"
 name: "Sebastien Rousseau"
 permalink: "https://sebastienrousseau.com/payments/"
 rating: "general"
@@ -264,3 +264,6 @@ in the ever-evolving world of blockchain and cryptocurrency development.
 [00]: https://geth.ethereum.org/downloads/
 [01]: https://geth.ethereum.org/docs/getting-started/installing-geth
 [02]: https://trufflesuite.com/docs
+[03]: /articles/index.html
+
+[❬ **Back To Articles**][03]
