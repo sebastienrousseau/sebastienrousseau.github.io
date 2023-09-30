@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
-date: "Jan 01, 2018"
+date: "Feb 15, 2018"
 description: "Building a comprehensive framework of the next generation of ERC-223 compliant tokens"
 format-detection: "telephone=no"
 hreflang: "en"
@@ -53,11 +53,11 @@ generator: "Shokunin 🦀 (version 0.0.15)"
 item_description: "Building a comprehensive framework of the next generation of ERC-223 compliant tokens"
 item_guid: "https://sebastienrousseau.com/hash/rss.xml"
 item_link: "https://sebastienrousseau.com/hash/rss.xml"
-item_pub_date: "Thu, 12 Jul 2023 20:20:20 GMT"
+item_pub_date: "Thu, 15 Feb 2018 18:18:18 GMT"
 item_title: "The making of the Express Transaction Credits Platform"
-last_build_date: "Thu, 12 Jul 2023 20:20:20 GMT"
+last_build_date: "Thu, 15 Feb 2018 18:18:18 GMT"
 managing_editor: "contact@sebastienrousseau.com"
-pub_date: "Thu, 12 Jul 2023 20:20:20 GMT"
+pub_date: "Thu, 15 Feb 2018 18:18:18 GMT"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -152,6 +152,6 @@ As the platform gains momentum and adoption, its impact on the financial landsca
 
 Whether you’re a tech enthusiast, a financial professional, or simply curious about the future of finance, EXTC is a platform that invites exploration and engagement.
 
-[❬ **Back To Articles**][00]
+[**❬ Back to Articles**][00]
 
 [00]: /articles/index.html

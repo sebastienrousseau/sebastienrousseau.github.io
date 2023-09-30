@@ -54,11 +54,11 @@ generator: "Shokunin 🦀 (version 0.0.15)"
 item_description: RSS feed for the contact page of the Kaishi website.
 item_guid: https://sebastienrousseau.com/contact/rss.xml
 item_link: https://sebastienrousseau.com/contact/rss.xml
-item_pub_date: "Thu, 12 Jul 2023 20:20:20 GMT"
+item_pub_date: "Thu, 12 Jul 2023 20:20:20 BST"
 item_title: "Contact Us"
-last_build_date: "Thu, 12 Jul 2023 20:20:20 GMT"
+last_build_date: "Thu, 12 Jul 2023 20:20:20 BST"
 managing_editor: "contact@sebastienrousseau.com"
-pub_date: "Thu, 12 Jul 2023 20:20:20 GMT"
+pub_date: "Thu, 12 Jul 2023 20:20:20 BST"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"

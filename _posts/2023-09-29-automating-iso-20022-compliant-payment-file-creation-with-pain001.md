@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
-date: "Jan 01, 2018"
+date: "Sep 29, 2023"
 description: "Streamlining the creation and compliance of ISO20022 Payment Messages for cross-border payments and reporting."
 format-detection: "telephone=no"
 hreflang: "en"
@@ -53,11 +53,11 @@ generator: "Shokunin 🦀 (version 0.0.15)"
 item_description: "Streamlining the creation and compliance of ISO20022 Payment Messages for cross-border payments and reporting."
 item_guid: "https://sebastienrousseau.com/payments/rss.xml"
 item_link: "https://sebastienrousseau.com/payments/rss.xml"
-item_pub_date: "Thu, 29 Sep 2023 09:57:00 GMT"
+item_pub_date: "Fri, 29 Sep 2023 09:57:00 BST"
 item_title: "Automating ISO 20022-Compliant Payment File Creation with Pain001"
-last_build_date: "Thu, 29 Sep 2023 09:57:00 GMT"
+last_build_date: "Fri, 29 Sep 2023 09:57:00 BST"
 managing_editor: "contact@sebastienrousseau.com"
-pub_date: "Thu, 29 Sep 2023 09:57:00 GMT"
+pub_date: "Fri, 29 Sep 2023 09:57:00 BST"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -114,9 +114,10 @@ This is facilitating a smooth and efficient global financial ecosystem.
 
 ## Idea
 
-### Pain001 is a Python library that simplifies the creation of ISO 20022-compliant payment messages.
+### Pain001 is a Python library that simplifies the creation of ISO 20022-compliant payment messages
 
-[**Pain001 ⧉**][00] is an open-source toolset for creating, translating, and
+Recognising the complexity of ISO 20022, I developed and launched
+[**Pain001 ⧉**][00], an open-source toolset for creating, translating, and
 validating payment initiation and advice messages. It follows the High Value
 Payments Plus (HVPS+) and Cross-Border Payments and Reporting Plus (CBPR+)
 standards.
@@ -187,9 +188,12 @@ Here's why you should consider **Pain001** for your payment automation needs:
 [Embrace the future of payment automation ⧉][02] with Pain001, a tool that
 reshapes the way you manage payments.
 
-[00]: https://pain001.com/ "Pain001"
-[01]: https://www.iso20022.org/ "ISO 20022"
-[02]: https://pain001.com/index.html "Embrace the future of payment automation with Pain001"
-[03]: /articles/index.html
+*This article also available on [Medium ⧉][03]*
 
-[❬ **Back To Articles**][03]
+[**❬ Back to Articles**][04]
+
+[00]: https://pain001.com/ "Pain001: Automate ISO 20022-Compliant Payment File Creation"
+[01]: https://www.iso20022.org/ "ISO 20022: A single standardisation approach (methodology, process, repository) to be used by all financial standards initiatives"
+[02]: https://pain001.com/index.html "Embrace the future of payment automation with Pain001"
+[03]: https://medium.com/@wwdseb/automating-iso-20022-compliant-payment-file-creation-with-pain001-5e32f789155a "Embrace the future of payment automation with Pain001"
+[04]: /articles/index.html "Back to Articles"
