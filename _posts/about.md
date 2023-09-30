@@ -99,7 +99,7 @@ site_software: "Shokunin, Rust"
 ---
 
 
-## Bio
+## Let's find solutions together
 
 ![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/sebastien-rousseau.webp).class=\"image-wrapper float-start pe-4 rounded-circle w-25 float-start\"
 
@@ -131,41 +131,45 @@ His cross-functional experience across banking, financial services, communicatio
 
 An active contributor to the open source community, Sebastien Rousseau has consistently been at the forefront of financial innovation throughout his career. He is passionate about crafting the next generation of banking through the strategic integration of artificial intelligence, post-quantum cryptography to enable security, and blockchain technology to increase efficiency and accessibility.
 
+## Experience
+
+Brands I've worked with along the way.
+
  <div class="rollers position-relative overflow-hidden">
     <div class="start-roller"></div>
     <div class="wrapper">
         <div class="items-container roll-LL">
             <!-- First Set of Items -->
             <div class="item">
-                <a href="https://www.akqa.com/"><img src="https://kura.pro/logos/akqa.webp" alt="" height="258" class="company"></a>
+                <img src="https://kura.pro/logos/akqa.webp" alt="" height="258" class="company">
             </div>
             <div class="item">
-                <a href="https://www.barclayscorporate.com/"><img src="https://kura.pro/logos/barclays.webp" alt="" height="258" class="company"></a>
+                <img src="https://kura.pro/logos/barclays.webp" alt="" height="258" class="company">
             </div>
             <div class="item">
-                <a href="https://www.hsbc.com/"><img src="https://kura.pro/logos/hsbc.webp" alt="" height="258" class="company"></a>
+                <img src="https://kura.pro/logos/hsbc.webp" alt="" height="258" class="company">
             </div>
             <div class="item">
-                <a href="https://paypal.com/"><img src="https://kura.pro/logos/paypal.webp" alt="" height="258" class="company"></a>
+                <img src="https://kura.pro/logos/paypal.webp" alt="" height="258" class="company">
             </div>
             <div class="item">
-                <a href="https://www.virgin.com/"><img src="https://kura.pro/logos/virgin.webp" alt="" height="258" class="company"></a>
+                <img src="https://kura.pro/logos/virgin.webp" alt="" height="258" class="company">
             </div>
             <!-- Second Set of Items (Duplicate) -->
             <div class="item">
-                <a href="https://www.akqa.com/"><img src="https://kura.pro/logos/akqa.webp" alt="" height="258" class="company"></a>
+                <img src="https://kura.pro/logos/akqa.webp" alt="" height="258" class="company">
             </div>
             <div class="item">
-                <a href="https://www.barclayscorporate.com/"><img src="https://kura.pro/logos/barclays.webp" alt="" height="258" class="company"></a>
+                <img src="https://kura.pro/logos/barclays.webp" alt="" height="258" class="company">
             </div>
             <div class="item">
-                <a href="https://www.hsbc.com/"><img src="https://kura.pro/logos/hsbc.webp" alt="" height="258" class="company"></a>
+                <img src="https://kura.pro/logos/hsbc.webp" alt="" height="258" class="company">
             </div>
             <div class="item">
-                <a href="https://paypal.com/"><img src="https://kura.pro/logos/paypal.webp" alt="" height="258" class="company"></a>
+                <img src="https://kura.pro/logos/paypal.webp" alt="" height="258" class="company">
             </div>
             <div class="item">
-                <a href="https://www.virgin.com/"><img src="https://kura.pro/logos/virgin.webp" alt="" height="258" class="company"></a>
+                <img src="https://kura.pro/logos/virgin.webp" alt="" height="258" class="company">
             </div>
         </div>
     </div>
