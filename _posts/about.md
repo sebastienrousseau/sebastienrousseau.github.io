@@ -3,17 +3,17 @@
 # Front Matter (YAML)
 
 author: "Sebastien Rousseau"
-banner_alt: "Turned off laptop computer on top of brown wooden table"
-banner_height: "571"
-banner_width: "1425"
-banner: "https://kura.pro/stock/images/banners/alesia-kazantceva-VWcPlbHglYc.webp"
+banner_alt: ""
+banner_height: ""
+banner_width: ""
+banner: ""
 cdn: "https://kura.pro"
 changefreq: "weekly"
 charset: "UTF-8"
-cname: "sebastienrousseau.com"
+cname: ""
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
-date: "July 12, 2023"
-description: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
+date: "Oct 01, 2023"
+description: "Shaping the Future of Banking & Financial Services through Strategic Integration of Artificial Intelligence, Post-Quantum Cryptography and Blockchain Technology"
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
@@ -22,7 +22,7 @@ image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "161.8"
 image_width: "161.8"
 image: "https://kura.pro/stock/images/banners/sebastien-rousseau.webp"
-keywords: "payments technology, fintech, artificial intelligence, post-quantum cryptography, blockchain, API, product management, innovation, leadership"
+keywords: "payments technology, digital finance, artificial intelligence, post-quantum cryptography, blockchain technology, strategic leadership, operational leadership, cross-platform product design, engineering, solution architecture"
 language: "en-GB"
 layout: "about"
 locale: "en_GB"
@@ -38,8 +38,8 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
-tags: "payments technology, fintech, artificial intelligence, post-quantum cryptography, blockchain, API, product management, innovation, leadership"
+subtitle: "Shaping the Future of Banking & Financial Services through Strategic Integration of Artificial Intelligence, Post-Quantum Cryptography and Blockchain Technology"
+tags: "payments technology, digital finance, artificial intelligence, post-quantum cryptography, blockchain technology, strategic leadership, operational leadership, cross-platform product design, engineering, solution architecture"
 theme-color: "rgb(255, 39, 34)"
 title: "Sebastien Rousseau, Banking & Financial Service Professional"
 url: "https://sebastienrousseau.com"
@@ -79,7 +79,7 @@ msapplication-navbutton-color: "rgb(255, 39, 34)"
 
 twitter_card: "summary"
 twitter_creator: "wwdseb"
-twitter_description: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
+twitter_description: "Shaping the Future of Banking & Financial Services through Strategic Integration of Artificial Intelligence, Post-Quantum Cryptography and Blockchain Technology"
 twitter_image: "https://kura.pro/kaishi/images/logos/kaishi.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
@@ -98,38 +98,17 @@ site_software: "Shokunin, Rust"
 
 ---
 
+![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/sebastien-rousseau.webp).class=\"image-wrapper float-start pe-4 rounded-circle w-25 float-end\"
 
-## Let's find solutions together
+## Biography
 
-![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/sebastien-rousseau.webp).class=\"image-wrapper float-start pe-4 rounded-circle w-25 float-start\"
+Sebastien Rousseau is a Senior Technical and Business Leader with over 20 years of experience in payments technology and building the future of digital finance. He is passionate about crafting the next generation of banking and digital payment products through the strategic integration of Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), and Blockchain Technology.
 
-Sebastien Rousseau is a Senior Technical Leader with over 20 years of experience in payments technology and building the future of finance. He is passionate about crafting the next generation of banking through the strategic integration of artificial intelligence, post-quantum cryptography, and blockchain technology.
+As a Senior Product Manager at HSBC, Sebastien has successfully led the development and launch of several innovative products and services, including HSBC Treasury APIs, HSBC Banking-as-a-Service (BaaS) offering, and other corporate global solutions that aim to provide a seamless digital experience to HSBC's customers.
 
-As a Senior Product Manager at HSBC, Sebastien has successfully led the development and launch of several innovative products and services, including the Treasury payments APIs, the HSBC Banking-as-a-Service (BaaS) offering, and the HSBC API Developer Portal. He has also played a key role in designing and delivering operational improvements of a number of complex mobile projects at Barclays Bank PLC, Shazam Entertainment Limited, and PayPal Inc.
+Prior to HSBC, he has also played a key role in designing and delivering operational improvements on a number of complex mobile projects at Barclays Bank PLC, Shazam Entertainment Limited, and PayPal Inc. He started his career at AKQA, London, where he led the mobile technology division and supported key global client accounts including Nike, RBS, MTV, GAP, Nokia, and Target, successfully driving innovative mobile projects and digital experiences.
 
-Sebastien's cross-functional experience across banking, financial services, communications, and media has given him a deep understanding of technological convergence in the industry. He is an active contributor to the open source community and is consistently at the forefront of financial innovation.
-
-
-
-
-
-
-
-
-
-Sebastien Rousseau is a senior leader with over 20 years of experience in payments technology and building the future of finance. He is a passionate advocate for the strategic integration of artificial intelligence, post-quantum cryptography, and blockchain technology to increase efficiency and accessibility in the financial industry.
-
-As a Senior Product Manager at HSBC, Sebastien Rousseau focuses on implementing the Wholesale Digital Channels Bank’s API and embedded finance strategy.
-
-This includes leading the development of the Treasury payments APIs, the launch of the HSBC Banking-as-a-Service (BaaS) offering, and the management of the HSBC API Developer Portal, providing customers with access to tools to integrate the bank’s API solutions into their products.
-
-Across his consulting career, Sebastien has designed, delivered and championed operational improvements of a number of complex mobile projects within Barclays Bank PLC; led the mobile software teams at Shazam Entertainment Limited and championed a range of online and contactless payment propositions for strategic partners at PayPal Inc.
-
-Based on this experience he has highly developed strategic leadership, cross-platform product design and solution architecture skills.
-
-His cross-functional experience across banking, financial services, communications and media has provided him with a comprehensive understanding of technological convergence in the industry.
-
-An active contributor to the open source community, Sebastien Rousseau has consistently been at the forefront of financial innovation throughout his career. He is passionate about crafting the next generation of banking through the strategic integration of artificial intelligence, post-quantum cryptography to enable security, and blockchain technology to increase efficiency and accessibility.
+Sebastien's diverse experience in banking, financial services, communications, creative, and media has given him a profound understanding of how Information Technology (IT) can be a force multiplier for business and customer benefits. He is an experienced strategic and operational leader with cross-platform product design, engineering, and solution architecture skills. He is an active contributor to the open source community and is consistently at the forefront of financial innovation.
 
 ## Experience
 

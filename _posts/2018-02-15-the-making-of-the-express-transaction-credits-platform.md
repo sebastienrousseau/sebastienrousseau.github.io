@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
-date: "July 12, 2023"
+date: "Jan 01, 2018"
 description: "Building a comprehensive framework of the next generation of ERC-223 compliant tokens"
 format-detection: "telephone=no"
 hreflang: "en"
@@ -104,9 +104,9 @@ site_software: "Shokunin, Rust"
 
 ### Pioneering a New Age of Financial Services
 
-The origin of the Express Transaction Credits (EXTC) platform started in 2018 and is rooted in recognising the limitations of traditional financial systems. Delays in transactions, intermediaries' involvement, and lack of accessibility are among the primary challenges.
+The origin of the Express Transaction Credits (EXTC) platform started in 2018 and is rooted in recognising the limitations of traditional financial systems. Delays in transactions, intermediaries’ involvement, and lack of accessibility are among the primary challenges.
 
-This insight started the development of a decentralised exchange platform with the aim to removes these barriers. It aims to enables users to make lightning-fast transactions with fiat currencies, cryptocurrencies, or compliant tokens.
+This insight started the development of a decentralised exchange platform with the aim to remove these barriers. It aims to enable users to make lightning-fast transactions with fiat currencies, cryptocurrencies, or compliant tokens.
 
 ## Idea
 
@@ -114,7 +114,7 @@ This insight started the development of a decentralised exchange platform with t
 
 At the core of the EXTC platform lies the Ethereum Request for Comment (ERC) 223 standard, an extension of the ERC20 token standard. This choice was informed by the desire to enhance security and functionality. This platform aims to address these issues by leveraging the Ethereum Request for Comment (ERC) 223 standard and offering a comprehensive framework for the next generation of ERC-223 compliant tokens.
 
-EXTC leverages the ERC223 standard's capabilities, ensuring compatibility with various smart contracts and APIs within the Ethereum ecosystem. The Express Transaction Credits token (EXTC) was introduced as a representation of this standard, with a defined set of attributes.
+EXTC leverages the ERC223 standard’s capabilities, ensuring compatibility with various smart contracts and APIs within the Ethereum ecosystem. The Express Transaction Credits token (EXTC) was introduced as a representation of this standard, with a defined set of attributes.
 
 The idea was to establish a token with robust features:
 
@@ -129,7 +129,7 @@ The idea was to establish a token with robust features:
 
 The impact of EXTC extends far beyond its technical attributes. By facilitating instant loans, rapid payments, and swift deposits, the platform significantly enhances the efficiency of financial transactions. Gone are the days of waiting for funds to clear or loans to be approved. With EXTC, transactions occur in real-time, empowering individuals and businesses alike.
 
-This platform opens avenues for microloans, cross-border transactions, and more accessible financial services for the unbanked population. Moreover, the decentralized nature of EXTC eliminates intermediaries, reducing associated fees and enhancing security.
+This platform opens avenues for microloans, cross-border transactions, and more accessible financial services for the unbanked population. Moreover, the decentralised nature of EXTC eliminates intermediaries, reducing associated fees and enhancing security.
 
 ## Incentives
 
@@ -143,7 +143,14 @@ The success of any financial platform hinges on user adoption and participation.
 - **Token Utility**: EXTC tokens extend beyond transactions. They can be integrated into decentralized applications (DApps) and even serve as rewards or collateral within the ecosystem.
 - **Financial Inclusion**: By targeting the unbanked population, EXTC opens doors to financial services for those who were previously excluded.
 
-In conclusion, the Express Transaction Credits Platform (EXTC) represents a paradigm shift in the world of financial transactions. By leveraging the ERC223 standard and offering unparalleled speed, security, and accessibility, EXTC paves the way for a future where financial services are truly global and inclusive. As the platform gains momentum and adoption, its impact on the financial landscape is poised to be revolutionary, transcending borders and democratizing access to economic opportunities. Whether you're a tech enthusiast, a financial professional, or simply curious about the future of finance, EXTC is a platform that invites exploration and engagement.
+In conclusion, the Express Transaction Credits Platform (EXTC) represents a paradigm shift
+in the world of financial transactions.
+
+By leveraging the ERC223 standard and offering unparalleled speed, security, and accessibility, EXTC paves the way for a future where financial services are truly global and inclusive.
+
+As the platform gains momentum and adoption, its impact on the financial landscape is poised to be revolutionary, transcending borders and democratising access to economic opportunities.
+
+Whether you’re a tech enthusiast, a financial professional, or simply curious about the future of finance, EXTC is a platform that invites exploration and engagement.
 
 [❬ **Back To Articles**][00]
 

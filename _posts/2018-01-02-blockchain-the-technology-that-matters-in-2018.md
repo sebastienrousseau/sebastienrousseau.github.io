@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
-date: "July 12, 2023"
+date: "Jan 01, 2018"
 description: "A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks."
 format-detection: "telephone=no"
 hreflang: "en"
@@ -102,25 +102,25 @@ site_software: "Shokunin, Rust"
 
 Blockchain, the underlying technology driving the meteoric rise of cryptocurrencies, is disrupting businesses, financial services, and capital markets. This transformative technology is changing how we conduct transactions and operations by making data more readily available, transparent, and secure.
 
-## Insight 
+## Insight
 
 ### The Genesis of Decentralized Consensus
 
-Blockchain emerged as the foundational innovation that enabled the development of cryptocurrencies like Bitcoin. At its core, blockchain serves as an open, distributed ledger that records transactions in a verifiable and permanent manner. 
+Blockchain emerged as the foundational innovation that enabled the development of cryptocurrencies like Bitcoin. At its core, blockchain serves as an open, distributed ledger that records transactions in a verifiable and permanent manner.
 
-By allowing digital information to be distributed without being copied, blockchain pioneered a groundbreaking peer-to-peer system for establishing consensus and trust. For the first time, transactions could be approved decentralised without centralized intermediaries.
+By allowing digital information to be distributed without being copied, blockchain pioneered a groundbreaking peer-to-peer system for establishing consensus and trust. For the first time, transactions could be approved decentralised without centralised intermediaries.
 
-Blockchain's capacity to facilitate secure online interactions between strangers laid the backbone for cryptocurrencies. Beyond finance, it holds revolutionary potential to transform flows of data and transactions across industries.
+Blockchain’s capacity to facilitate secure online interactions between strangers laid the backbone for cryptocurrencies. Beyond finance, it holds revolutionary potential to transform flows of data and transactions across industries.
 
 ## Idea
 
 ### Eliminating Trusted Third Parties Through Distributed Ledgers
 
-A blockchain organizes data into blocks, which are chained together chronologically. New blocks are added by a decentralized network of computers rather than a central party. This distributed ledger is simultaneously stored and synchronized across multiple nodes in the network.
+A blockchain organises data into blocks, which are chained together chronologically. New blocks are added by a decentralised network of computers rather than a central party. This distributed ledger is simultaneously stored and synchronised across multiple nodes in the network.
 
 Blocks contain timestamped batches of transactions, which are immutable once recorded. Cryptography ensures security and accuracy as transactions are approved by network participants. Smart contracts enable complex accountabilities to be encoded and automatically executed.
 
-By enabling peer-to-peer transactions without centralized intermediaries, blockchains eliminate single points of failure and create transparency. Individual users retain control over their data and transactions. The decentralized approach builds trust and accountability at scale.
+By enabling peer-to-peer transactions without centralised intermediaries, blockchains eliminate single points of failure and create transparency. Individual users retain control over their data and transactions. The decentralised approach builds trust and accountability at scale.
 
 ## Impact
 
@@ -128,7 +128,7 @@ By enabling peer-to-peer transactions without centralized intermediaries, blockc
 
 Blockchain is enabling profound changes in finance, banking, supply chains, healthcare, real estate, and other sectors. By removing information asymmetry and mitigating counterparty risks, blockchain promotes transparency and integrity across transactions.
 
-Cryptocurrencies introduced new models of programmable money, decentralized finance, and global peer-to-peer transfers. In banking, blockchains improve payment speeds and efficiency. Tokenization also enables new funding methods.
+Cryptocurrencies introduced new models of programmable money, decentralised finance, and global peer-to-peer transfers. In banking, blockchains improve payment speeds and efficiency. Tokenization also enables new funding methods.
 
 Blockchain further assures product origins and ethical sourcing in supply chains. Health records management leverages its security and accuracy. Blockchain is even beginning to disrupt voting, music royalty tracking, and digital identity systems.
 
@@ -176,9 +176,9 @@ With enablers like supportive policies, interoperability solutions and user-cent
 
 ### Laying the Foundation for Decentralized Future
 
-Blockchain's introduction marks a pivotal moment that expanded possibilities for securely exchanging digital assets and data through decentralized consensus. Underpinning cryptocurrencies is only its starting point.
+Blockchain’s introduction marks a pivotal moment that expanded possibilities for securely exchanging digital assets and data through decentralised consensus. Underpinning cryptocurrencies is only its starting point.
 
-By eliminating trusted third parties, blockchain offers the potential to restructure flows of value across finance, commerce, governance, and society. Despite limitations, its trajectory points to an exciting decentralized future across sectors.
+By eliminating trusted third parties, blockchain offers the potential to restructure flows of value across finance, commerce, governance, and society. Despite limitations, its trajectory points to an exciting decentralised future across sectors.
 
 Like the internet before it, blockchain is a foundational technology poised to unlock new models powered by peer-to-peer transparency and trust. This revolutionary innovation promises to reshape our digital economies and connected lives in the years ahead.
 

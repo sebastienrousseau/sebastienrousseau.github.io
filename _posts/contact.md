@@ -11,7 +11,7 @@ cdn: "https://kura.pro" ## The CDN of the site.
 charset: "utf-8" ## The charset of the site. (default: utf-8)
 cname: "sebastienrousseau.com" ## The cname value of the site. (Only required for the index page.)
 copyright: "© 2023 Kaishi Starter Template. All rights reserved." ## The copyright of the site.
-date: "July 12, 2023"
+date: "Oct 01, 2023"
 description: "You can contact us using the contact form below." ## The description of the site. (max 160 characters)
 download: "" ## The download url for the product.
 format-detection: "telephone=no" ## The format detection of the site.

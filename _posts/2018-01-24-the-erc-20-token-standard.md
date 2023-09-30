@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
-date: "24 Jan 2018"
+date: "Jan 01, 2018"
 description: "An Ethereum's Standard Interface for Tokens"
 format-detection: "telephone=no"
 hreflang: "en"
@@ -106,7 +106,7 @@ site_software: "Shokunin, Rust"
 
 Before the advent of the ERC-20 (Ethereum Request for Comments 20) standard, the Ethereum blockchain was like the Wild West of token architectures. Each newly minted token had its own unique set of rules, functions, and interfaces. This not only presented developers with a daunting learning curve but also impeded the interoperability of tokens. Essentially, each new token was like a new language that needed to be learned, understood, and implemented. This fragmentation hindered scalability and broad adoption of tokens on the Ethereum platform.
 
-The introduction of the ERC-20 standard acted like a unifying language, setting forth a common set of rules and functions that all Ethereum tokens must adhere to. Now, developers had a consistent interface to work with, regardless of the token in question. This standardization streamlined the token interaction processes, allowing for more seamless integration into various applications and services. As a result, developers could engage more meaningfully with tokens, fostering an environment conducive to innovation and growth within the Ethereum ecosystem.
+The introduction of the ERC-20 standard acted like a unifying language, setting forth a common set of rules and functions that all Ethereum tokens must adhere to. Now, developers have a consistent interface to work with, regardless of the token in question. This standardisation streamlined the token interaction processes, allowing for more seamless integration into various applications and services. As a result, developers can engage more meaningfully with tokens, fostering an environment conducive to innovation and growth within the Ethereum ecosystem.
 
 #### The Wild West of token architectures
 
@@ -116,9 +116,9 @@ This fragmentation made it difficult for developers to create applications that 
 
 #### The ERC-20 standard
 
-The ERC-20 standard was introduced in 2015 to address the challenges posed by the Wild West of token architectures. The standard defines a common set of rules and functions that all Ethereum tokens must adhere to. This standardization makes it easier for developers to create applications that can interact with any ERC-20 token, and it also makes it easier for users to manage their token assets.
+The ERC-20 standard was introduced in 2015 to address the challenges posed by the Wild West of token architectures. The standard defines a common set of rules and functions that all Ethereum tokens must adhere to. This standardisation makes it easier for developers to create applications that can interact with any ERC-20 token, and it also makes it easier for users to manage their token assets.
 
-The ERC-20 standard has been widely adopted by the Ethereum community. Today, there are over 200,000 ERC-20 tokens in existence, and the standard is used by a wide variety of applications, including decentralized exchanges, lending platforms, and gaming dapps.
+The ERC-20 standard has been widely adopted by the Ethereum community. Today, there are over 200,000 ERC-20 tokens in existence, and the standard is used by a wide variety of applications, including decentralised exchanges, lending platforms, and gaming dapps.
 
 ## Idea
 
@@ -153,9 +153,9 @@ The ERC-20 standard has also made it easier for users to manage their token asse
 
 ### Reduced development costs and improved security
 
-The standardization brought about by the ERC-20 protocol has had a direct economic impact as well. By providing a tested and community-approved blueprint for token creation, it has significantly reduced the barriers to entry for developers. They can now create a new token with reduced developmental costs and a faster time-to-market, as they no longer have to reinvent the wheel. The standard also indirectly encourages the creation of DApps (Decentralized Applications) and services that can universally interact with any ERC-20 token, thereby fostering a more vibrant ecosystem.
+The standardisation brought about by the ERC-20 protocol has had a direct economic impact as well. By providing a tested and community-approved blueprint for token creation, it has significantly reduced the barriers to entry for developers. They can now create a new token with reduced developmental costs and a faster time-to-market, as they no longer have to reinvent the wheel. The standard also indirectly encourages the creation of DApps (Decentralised Applications) and services that can universally interact with any ERC-20 token, thereby fostering a more vibrant ecosystem.
 
-Another notable benefit is that of enhanced security. The ERC-20 standard has undergone rigorous scrutiny by the Ethereum community, making it a robust and secure model for token implementation. Adherence to this standard implies that the fundamental aspects of the token's smart contract adhere to community-accepted best practices. This minimizes the risk of security vulnerabilities that could otherwise result from an improperly designed token model. While it is not a guarantee against all types of vulnerabilities, it is a significant step toward ensuring the overall security of tokens and by extension, the projects that utilize them.
+Another notable benefit is that of enhanced security. The ERC-20 standard has undergone rigorous scrutiny by the Ethereum community, making it a robust and secure model for token implementation. Adherence to this standard implies that the fundamental aspects of the token’s smart contract adhere to community-accepted best practices. This minimises the risk of security vulnerabilities that could otherwise result from an improperly designed token model. While it is not a guarantee against all types of vulnerabilities, it is a significant step toward ensuring the overall security of tokens and by extension, the projects that utilise them.
 
 [❬ **Back To Articles**][00]
 
