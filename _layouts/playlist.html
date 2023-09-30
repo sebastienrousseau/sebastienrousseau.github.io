@@ -73,7 +73,19 @@ content="default-src 'self';
 
     <!-- # Start Styles -->
     <style>
-      @keyframes dropDown{from{transform:translateY(-.618rem)}to{transform:translateY(0)}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.active,h1,h2,h3,h4,h5,h6,strong{font-weight:400}.article-info{color:var(--theme-color);font-weight:400}.blur-light{backdrop-filter:saturate(180%) blur(20px);background-color:rgba(255,255,255,.618)}.card{overflow:hidden}.drop-down,.fade-in{animation-fill-mode:forwards}.drop-down{animation:dropDown 1.618s ease}.fade-in{animation:fadeIn 3s ease}h1,h2,h3,h4,h5,h6{color:var(--theme-color)}:root{--theme-color:rgba(0,0,0,.618033988749894)}*{font-weight:300}a{color:#2897ff;text-decoration:none}a:hover{text-decoration:underline}pre{background:#f9f9f9;border:1px solid #ddd;border-left:3px solid var(--theme-color);color:#666;display:block;font-family:monospace;font-size:15px;line-height:1.618;margin-bottom:1.618em;max-width:100%;overflow:auto;padding:1em 1.618em;page-break-inside:avoid;word-wrap:break-word}.zoom-in{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-in:hover{transform:scale(1.0618)}
+      @keyframes dropDown{from{transform:translateY(-.618rem)}to{transform:translateY(0)}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.active,h1,h2,h3,h4,h3,h6,strong{font-weight:400}.article-info{color:var(--theme-color);font-weight:400}.blur-light{backdrop-filter:saturate(180%) blur(20px);background-color:rgba(255,255,255,.618)}.card{overflow:hidden}.drop-down,.fade-in{animation-fill-mode:forwards}.drop-down{animation:dropDown 1.618s ease}.fade-in{animation:fadeIn 3s ease}h1,h2,h3,h4,h3,h6{color:var(--theme-color)}:root{--theme-color:rgba(0,0,0,.618033988749894)}*{font-weight:300}a{color:#2897ff;text-decoration:none}a:hover{text-decoration:underline}pre{background:#f9f9f9;border:1px solid #ddd;border-left:3px solid var(--theme-color);color:#666;display:block;font-family:monospace;font-size:15px;line-height:1.618;margin-bottom:1.618em;max-width:100%;overflow:auto;padding:1em 1.618em;page-break-inside:avoid;word-wrap:break-word}.zoom-in{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-in:hover{transform:scale(1.0618)}@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate360 5s linear infinite;
+}
+
     </style>
     <!-- # End Styles -->
   </head>
@@ -81,18 +93,29 @@ content="default-src 'self';
     id="page-top"
     itemscope
     itemtype="http://schema.org/WebPage"
-    class="text-center bg-white text-dark text-start"
+    class="fw-light text-center bg-white text-start fs-6"
   >
     <!-- # Start Responsive navbar -->
     <nav
-      class="navbar navbar-expand-lg navbar-black bg-white"
+      class="navbar navbar-expand-lg bd-navbar sticky-top shadow-small border-bottom blur-light"
       id="mainNav"
       itemscope
       itemtype="http://schema.org/SiteNavigationElement"
     >
-      <div class="container p-3">
-        <span class="fs-4"><a href="{{url}}">{{name}}</a></span>
-        <button
+    <div class="container-xxl p-3">
+      <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="logo">
+        <img
+          class="d-inline-block align-top"
+          width="{{logo_width}}"
+          height="{{logo_height}}"
+          src="{{logo}}"
+          alt="{{logo_alt}}"
+          title="{{logo_alt}}"
+          loading="lazy"
+        />
+      </a>
+      <span class="fs-4" itemprop="name"><a href="/" itemprop="url" title="{{name}} - {{description}}" class="text-decoration-none text-dark">{{name}}</a></span>
+      <button
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -107,28 +130,28 @@ content="default-src 'self';
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
-                class="nav-link"
+                class="nav-link active"
                 aria-current="page"
                 href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-  <a
-    class="nav-link"
-    href="/about/index.html">About</a>
-</li>
-<li class="nav-item">
-  <a
-    class="nav-link"
-    href="/articles/index.html">Articles</a>
-</li>
+              <a
+                class="nav-link"
+                href="/about/index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/articles/index.html">Articles</a>
+            </li>
             <li class="nav-item">
               <a
                 class="nav-link"
                 href="/projects/index.html">Projects</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown {{menu}}">
               <a
-                class="nav-link dropdown-toggle active"
+                class="nav-link dropdown-toggle"
                 id="navbarDropdown"
                 href="#"
                 role="button"
@@ -165,30 +188,27 @@ content="default-src 'self';
                   </a>
                 </li>
                 <li>
-  <a class="dropdown-item" href="/tags/index.html">
-    Tags
-  </a>
-</li>
-<li>
-  <a class="dropdown-item" href="/terms/index.html">
-    Terms of service
-  </a>
-</li>
+                  <a class="dropdown-item" href="/tags/index.html">
+                    Tags
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/terms/index.html">
+                    Terms of service
+                  </a>
+                </li>
               </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                aria-pressed="false"
+                class="btn btn-dark rounded-pill px-3"
+                href="/contact/index.html"
+                >Get in touch
+              </a>
             </li>
           </ul>
         </div>
-        <!-- <div
-          class="collapse navbar-collapse"
-          role="navigation"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="active nav-link p-2" href="/index.html">Home</a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle p-2" href="/projects/index.html">Projects</a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle p-2" href="/expertise/index.html">Expertise</a></li>
-          </ul>
-        </div> -->
       </div>
     </nav>
     <!-- # End Responsive navbar -->
@@ -196,7 +216,7 @@ content="default-src 'self';
     <!-- Header-->
     <header class="w-100 py-5 position-relative">
         <img src="{{banner}}" alt="{{banner_alt}}" class="fade-in position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; z-index: -1;" loading="lazy" data-show-type="fade-in" data-has-animated="true" />
-        <img class="img-fluid rounded-circle mb-4" src="https://kura.pro/stock/images/banners/sebastien-rousseau.webp" alt="Icon Image for {{name}}" " width="150" height="150" loading="lazy" />
+        <img class="img-fluid rotate rounded-circle mb-4" src="https://kura.pro/stock/images/banners/sebastien-rousseau.webp" alt="Icon Image for {{name}}" " width="150" height="150" loading="lazy" />
         <div class="text-center text-white center mx-auto rounded rounded-3 p-5"
         style="
           background-color: rgba(0, 0, 0, 0.618);
@@ -215,7 +235,7 @@ content="default-src 'self';
           <div class="col">
               <div class="card border-0">
                 <div class="card-body text-start">
-                    <h5 class="card-title">SUMMERTIME 🌞</h5>
+                    <h3 class="card-title">SUMMERTIME 🌞</h3>
                     <p class="card-text small">Unwind and embrace the essence of summer with our curated selection of Jazz, Soul, R&B, and Neo Soul beats.</p>
                     <iframe class="zoom-in rounded-3" src="https://open.spotify.com/embed/playlist/5RQ9X2WmRseY9SEU5oLwwX?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
@@ -224,7 +244,7 @@ content="default-src 'self';
           <div class="col">
             <div class="card border-0">
               <div class="card-body text-start">
-                  <h5 class="card-title">NEO SOUL 🎶</h5>
+                  <h3 class="card-title">NEO SOUL 🎶</h3>
                   <p class="card-text small">Immerse yourself in a deep dive into our quintessential collection of Jazz, Soul, R&B, and Neo Soul beats.</p>
                   <iframe class="zoom-in rounded-3" src="https://open.spotify.com/embed/playlist/7yvugJcCzkaWN908rXTSIL?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
               </div>
@@ -233,7 +253,7 @@ content="default-src 'self';
           <div class="col">
             <div class="card border-0">
               <div class="card-body text-start">
-                  <h5 class="card-title">ESSENTIAL 💚</h5>
+                  <h3 class="card-title">ESSENTIAL 💚</h3>
                   <p class="card-text small">Explore some of our favourite laidback beats, house-influenced grooves and new deep house tracks.</p>
                   <iframe class="zoom-in rounded-3" src="https://open.spotify.com/embed/playlist/1lZbauO3yCPB3YAyT5xLCW?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
               </div>
@@ -245,7 +265,7 @@ content="default-src 'self';
         <div class="col">
           <div class="card border-0">
             <div class="card-body text-start">
-                <h5 class="card-title">MORNING ☕️</h5>
+                <h3 class="card-title">MORNING ☕️</h3>
                 <p class="card-text small">Soulful tracks with a fashion-forward vibe. Let the music set the tone for a productive and stylish day.</p>
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3GspTYbjOA4oCSulh3YLng?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
@@ -254,7 +274,7 @@ content="default-src 'self';
         <div class="col">
           <div class="card border-0">
             <div class="card-body text-start">
-                <h5 class="card-title">COLOURS 🌈</h5>
+                <h3 class="card-title">COLOURS 🌈</h3>
                 <p class="card-text small">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms.</p>
                 <iframe class="zoom-in rounded-3" src="https://open.spotify.com/embed/playlist/2JGGk44Nopf8BX7oYJsler?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
@@ -263,7 +283,7 @@ content="default-src 'self';
         <div class="col">
           <div class="card border-0">
             <div class="card-body text-start">
-                <h5 class="card-title">LOTUS 🪷</h5>
+                <h3 class="card-title">LOTUS 🪷</h3>
                 <p class="card-text small">Take a break from your busy day and relax with some soothing nu jazz and downtempo beats.</p>
                 <iframe class="zoom-in rounded-3" src="https://open.spotify.com/embed/playlist/7hZsKoasqFogxZVqDKYJwA?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
@@ -275,7 +295,7 @@ content="default-src 'self';
       <div class="col">
         <div class="card border-0">
           <div class="card-body text-start">
-              <h5 class="card-title">WASSULU DON 🦁</h5>
+              <h3 class="card-title">WASSULU DON 🦁</h3>
               <p class="card-text small">Celebrate the diverse heritage of African music from the soulful rhythms of Wassoulou to the lively beats of Londonko.</p>
               <iframe class="zoom-in rounded-3" src="https://open.spotify.com/embed/playlist/13oQhLqxlNuPrn9pOIx6Vx?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
@@ -284,7 +304,7 @@ content="default-src 'self';
       <div class="col">
         <div class="card border-0">
           <div class="card-body text-start">
-              <h5 class="card-title">COOL 🎧</h5>
+              <h3 class="card-title">COOL 🎧</h3>
               <p class="card-text small">Seamlessly blending funky, disco, house, French touch, and other genres into an ultra-cool and energetic musical experience.</p>
               <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4y3b1FXh8eVhwRRoKwrtSx?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
@@ -293,7 +313,7 @@ content="default-src 'self';
       <div class="col">
         <div class="card border-0">
           <div class="card-body text-start">
-              <h5 class="card-title">WORKOUT BEATS 💿</h5>
+              <h3 class="card-title">WORKOUT BEATS 💿</h3>
               <p class="card-text small">Explore some of our favourite laidback beats, hiphop-influenced grooves and new indie pop tracks.</p>
               <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5yegPuy33SiP7DIwL6MF0J?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
@@ -305,7 +325,7 @@ content="default-src 'self';
       <div class="col">
         <div class="card border-0">
           <div class="card-body text-start">
-              <h5 class="card-title">HIP-HOP 🎤</h5>
+              <h3 class="card-title">HIP-HOP 🎤</h3>
               <p class="card-text small">Original Hip Hop, Rap and R&B Flavor Sessions.</p>
               <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6jFJIxFfpUx0oGkbLDImKB?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
@@ -314,7 +334,7 @@ content="default-src 'self';
       <div class="col">
         <div class="card border-0">
           <div class="card-body text-start">
-              <h5 class="card-title">BLAST 💥</h5>
+              <h3 class="card-title">BLAST 💥</h3>
               <p class="card-text small">Brace yourself for hardcore rap and hip hop tracks.</p>
               <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6830pCYVUFYHtnkE4SJfhR?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
@@ -323,7 +343,7 @@ content="default-src 'self';
       <div class="col">
         <div class="card border-0">
           <div class="card-body text-start">
-              <h5 class="card-title">HIP HOP MIXTAPE 📼</h5>
+              <h3 class="card-title">HIP HOP MIXTAPE 📼</h3>
               <p class="card-text small">Explore some of our favourite hip-hop gems.</p>
               <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5yUR35ZVOOpxyPOBhAvhkR?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
@@ -335,7 +355,7 @@ content="default-src 'self';
       <div class="col">
         <div class="card border-0">
           <div class="card-body text-start">
-              <h5 class="card-title">LOOK 💋</h5>
+              <h3 class="card-title">LOOK 💋</h3>
               <p class="card-text small">Experience a sonic voyage featuring Nu-Disco, French House, Electro, and Disco House tunes from artists like Madeon, Fred Falke and more.</p>
               <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0S31oWFMppEkhtHiSsldI1?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
@@ -344,7 +364,7 @@ content="default-src 'self';
       <div class="col">
         <div class="card border-0">
           <div class="card-body text-start">
-              <h5 class="card-title">LIFETIME ⏳</h5>
+              <h3 class="card-title">LIFETIME ⏳</h3>
               <p class="card-text small">With its mix of soulful beats and thoughtful lyrics, this mixtape offers a captivating look into the world of contemporary hip hop, R&B and rap music.</p>
               <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1RnzXyrj73nyo4yK6j3xT9?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
@@ -353,7 +373,7 @@ content="default-src 'self';
       <div class="col">
         <div class="card border-0">
           <div class="card-body text-start">
-              <h5 class="card-title">LO-FI BEATS 🎹</h5>
+              <h3 class="card-title">LO-FI BEATS 🎹</h3>
               <p class="card-text small">Step into a world of laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats.</p>
               <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6Utj7AwHY6VkgGtm9wAneh?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
