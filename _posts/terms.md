@@ -2,114 +2,107 @@
 
 # Front Matter (YAML)
 
-author: "Kaishi Starter Template" ## The author of the page. (max 64 characters)
-banner_alt: "MacBook Pro on white surface" ## The banner alt of the site.
-banner_height: "398" ## The banner height of the site.
-banner_width: "1440" ## The banner width of the site.
-banner: "https://kura.pro/unsplash/images/banners/sean-stratton-ObpCE_X3j6U.jpg" ## The banner of the site.
-cdn: "https://kura.pro" ## The CDN of the site.
-charset: "utf-8" ## The charset of the site. (default: utf-8)
-cname: "sebastienrousseau.com" ## The cname value of the site. (Only required for the index page.)
-copyright: "© 2023 Kaishi Starter Template. All rights reserved." ## The copyright of the site.
+author: "Sebastien Rousseau"
+banner_alt: "Canary wharf passage"
+banner_height: "398"
+banner_width: "1440"
+banner: "https://kura.pro/stock/images/banners/jez-timms-4xLteCXh6X0.webp"
+cdn: "https://kura.pro"
+changefreq: "weekly"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
 date: "Oct 01, 2023"
-description: "Make beautiful websites with Kaishi, a Shokunin Static Site Generator starter template." ## The description of the site. (max 160 characters)
-download: "" ## The download url for the product.
-format-detection: "telephone=no" ## The format detection of the site.
-hreflang: "en" ## The hreflang of the site. (default: en-gb)
-icon: "https://kura.pro/kaishi/images/logos/kaishi.svg" ## The icon of the site in SVG format.
-id: "https://sebastienrousseau.com" ## The id of the site.
-image_alt: "Logo of Sebastien Rousseau, Senior Digital Financial Services Consultant" ## The image alt of the site.
-image_height: "630" ## The image height of the site.
-image_width: "1200" ## The image width of the site.
-image: "https://kura.pro/kaishi/images/banners/banner-kaishi.webp" ## The main image of the site in SVG format.
-keywords: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML" ## The keywords of the site. (comma separated, max 10 keywords)
-language: "en-GB" ## The language of the site. (default: en-GB)
-layout: "page" ## The layout of the site.
-locale: "en_GB" ## The locale of the site.
-logo_alt: "Logo of Sebastien Rousseau, Senior Digital Financial Services Consultant" ## The logo alt of the site.
-logo_height: "33" ## The logo height of the site.
-logo_width: "100" ## The logo width of the site.
-logo: "https://kura.pro/kaishi/images/banners/banner-kaishi.webp" ## The logo of the site in SVG format.
-menu: ""
-name: "Kaishi" ## The name of the website. (max 64 characters)
-permalink: "https://sebastienrousseau.com" ## The url of the site.
-rating: "general" ## The rating of the site.
-referrer: "no-referrer" ## The referrer of the site.
-revisit-after: "7 days" ## The revisit after of the site.
-robots: "index, follow" ## The robots of the site.
-short_name: "kaishi" ## The short name of the site. (max 12 characters)
-subtitle: "Build Amazing Websites with Minimal Effort using Kaishi Starter Template" ## The subtitle of the page. (max 64 characters)
-tags: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML" ## The tags of the site. (comma separated, max 10 tags)
-theme-color: "rgb(0, 48, 96)" ## The theme color of the site.
-title: "Kaishi, a Starter Template for the Shokunin Static Site Generator (SSG)" ## The title of the page. (max 64 characters)
-url: "https://sebastienrousseau.com" ## The url of the site.
-viewport: "width=device-width, initial-scale=1, shrink-to-fit=no" ## The viewport of the site.
+description: "This Terms of Use page provides the rules for using https://sebastienrousseau.com."
+format-detection: "telephone=no"
+form-id: ""
+hreflang: "en"
+icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/terms/index.html"
+image_alt: "Black and White Portrait of Sebastien Rousseau"
+image_height: "161.8"
+image_width: "161.8"
+image: "https://kura.pro/stock/images/banners/sebastien-rousseau.webp"
+keywords: "Terms of Use,Website Rules, Intellectual Property Rights, Third-party Links, User Responsibilities, Limitation of Liability, Website Use Agreement, Governing Laws for Online Use, Website Terms Changes, Contact"
+language: "en-GB"
+layout: "link"
+locale: "en_GB"
+logo_alt: "Logo for Sebastien Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
+menu: "active"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/terms/index.html"
+rating: "general"
+referrer: "no-referrer"
+revisit-after: "7 days"
+robots: "index, follow"
+short_name: "sebastienrousseau"
+subtitle: "Your privacy is important to us."
+tags: "agreement, copyright, intellectual property, liability, limitation, links, privacy, terms, trademark, use, website"
+theme-color: "rgb(255, 39, 34)"
+title: "Terms of Use"
+url: "https://sebastienrousseau.com/terms/index.html"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
-atom_link: https://sebastienrousseau.com/rss.xml
+atom_link: "https://sebastienrousseau.com/terms/rss.xml"
 category: "Technology"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Shokunin 🦀 (version 0.0.18)"
 item_description: RSS feed for the site
-item_guid: https://sebastienrousseau.com/rss.xml
-item_link: https://sebastienrousseau.com/rss.xml
-item_pub_date: "Thu, 12 Jul 2023 20:20:20 BST"
+item_guid: "https://sebastienrousseau.com/terms/rss.xml"
+item_link: "https://sebastienrousseau.com/terms/rss.xml"
+item_pub_date: "Sun, 01 Oct 2023 01:01:01 BST"
 item_title: "RSS"
-last_build_date: "Thu, 12 Jul 2023 20:20:20 BST"
+last_build_date: "Sun, 01 Oct 2023 01:01:01 BST"
 managing_editor: "contact@sebastienrousseau.com"
-pub_date: "Thu, 12 Jul 2023 20:20:20 BST"
+pub_date: "Sun, 01 Oct 2023 01:01:01 BST"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
 
 # Apple - The Apple front matter (YAML).
-apple_mobile_web_app_orientations: "portrait" ## The Apple mobile web app orientations of the page.
-apple_touch_icon_sizes: "192x192" ## The Apple touch icon sizes of the page.
-apple-mobile-web-app-capable: "yes" ## The Apple mobile web app capable of the page.
-apple-mobile-web-app-status-bar-inset: "black" ## The Apple mobile web app status bar inset of the page.
-apple-mobile-web-app-status-bar-style: "black-translucent" ## The Apple mobile web app status bar style of the page.
-apple-mobile-web-app-title: "Kaishi" ## The Apple mobile web app title of the page.
-apple-touch-fullscreen: "yes" ## The Apple touch fullscreen of the page.
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "Terms of Use"
+apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(0, 48, 96)"
+msapplication-navbutton-color: "rgb(255, 39, 34)"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
-## twitter_card - The Twitter Card type of the page.
 twitter_card: "summary"
-## twitter_creator - The Twitter Card creator of the page.
 twitter_creator: "wwdseb"
-## twitter_description - The Twitter Card description of the page.
-twitter_description: "Make beautiful websites with Kaishi, a Shokunin Static Site Generator Starter Template."
-## twitter_image - The Twitter Card image of the page.
-twitter_image: "https://kura.pro/kaishi/images/logos/kaishi.svg"
-## twitter_image:alt - The Twitter Card image alt of the page.
-twitter_image_alt: "Logo of Sebastien Rousseau, Senior Digital Financial Services Consultant"
-## twitter_site - The Twitter Card site of the page.
+twitter_description: "This Terms of Use page provides the rules for using https://sebastienrousseau.com."
+twitter_image: "https://kura.pro/Sebastien Rousseau/images/logos/Sebastien Rousseau.svg"
+twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-## twitter_title - The Twitter Card title of the page.
-twitter_title: "Kaishi, a Starter Template for the Shokunin Static Site Generator (SSG)"
-## twitter_url - The Twitter Card url of the page.
-twitter_url: "https://sebastienrousseau.com"
+twitter_title: "Terms of Use"
+twitter_url: "https://sebastienrousseau.com/terms/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).
-author_website: "https://sebastienrousseau.com" ## The author website of the page.
-author_twitter: "@wwdseb" ## The author twitter of the page.
-author_location: "London, UK" ## The author location of the page.
-thanks: "Thanks for reading!" ## The thanks of the page.
-site_last_updated: "2023-07-05" ## The last updated of the site.
-site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML" ## The standards of the site.
-site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes" ## The components of the site.
-site_software: "Shokunin, Rust" ## The software of the site.
+author_website: "https://sebastienrousseau.com/terms/index.html"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "Thanks for reading!"
+site_last_updated: "2023-07-05"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Sebastien Rousseau, Sebastien Rousseau Builder, Sebastien Rousseau CLI, Sebastien Rousseau Templates, Sebastien Rousseau Themes"
+site_software: "Shokunin, Rust"
 
 ---
 
 ## Agreement to Terms of Use
 
-These Terms and Conditions of Use (the "Terms of Use") apply to the Shokunin
-(職人) website located at <https://sebastienrousseau.com/> (the "Website").
+These Terms and Conditions of Use (the "Terms of Use") apply to the website
+located at <https://sebastienrousseau.com/> (the "Website").
 
 BY USING THE SITE, YOU AGREE TO THESE TERMS OF USE; IF YOU DO NOT AGREE, DO NOT
 USE THE SITE.
@@ -117,32 +110,32 @@ USE THE SITE.
 ### Intellectual Property
 
 The Website and its original content, features, and functionality are and will
-remain the exclusive property of Kaishi. This Website is protected by
-United States and international copyright, trademark, and other laws.
+remain the exclusive property of Sebastien Rousseau. This Website is protected
+by United States and international copyright, trademark, and other laws.
 
-### Links to Other Sites and to the Kaishi Site
+### Links to Other Sites and to the Sebastien Rousseau Site
 
 Our Website may contain links to third-party Web sites ("Linked Sites") or
-services that are not owned or controlled by Kaishi. These Linked
+services that are not owned or controlled by Sebastien Rousseau. These Linked
 Sites are provided solely as a convenience to our visitors.
 
-Kaishi has no control over and assumes no responsibility for the
+Sebastien Rousseau has no control over and assumes no responsibility for the
 content, privacy policies, or practises of any Linked Sites or services. We do
 not warrant the offerings of any of these entities/individuals, their
 websites or services.
 
 ### Limitation of Liability
 
-SHOKUNIN (職人) DOES NOT PROMISE THAT THE SITE OR ANY CONTENT, SERVICE OR
+SEBASTIEN ROUSSEAU DOES NOT PROMISE THAT THE SITE OR ANY CONTENT, SERVICE OR
 FEATURE OF THE SITE WILL BE ERROR-FREE OR UNINTERRUPTED, OR THAT ANY DEFECTS
 WILL BE CORRECTED, OR THAT YOUR USE OF THE SITE WILL PROVIDE SPECIFIC RESULTS.
 THE SITE AND ITS CONTENT ARE DELIVERED ON AN "AS-IS" AND "AS-AVAILABLE" BASIS.
 ALL INFORMATION PROVIDED ON THE SITE IS SUBJECT TO CHANGE WITHOUT NOTICE.
-SHOKUNIN (職人) CANNOT ENSURE THAT ANY FILES OR OTHER DATA YOU DOWNLOAD FROM
+SEBASTIEN ROUSSEAU CANNOT ENSURE THAT ANY FILES OR OTHER DATA YOU DOWNLOAD FROM
 THE SITE WILL BE FREE OF VIRUSES OR CONTAMINATION OR DESTRUCTIVE FEATURES.
-SHOKUNIN (職人) ANY AND ALL LIABILITY FOR THE ACTS, OMISSIONS AND CONDUCT OF
+SEBASTIEN ROUSSEAU ANY AND ALL LIABILITY FOR THE ACTS, OMISSIONS AND CONDUCT OF
 ANY THIRD PARTIES IN CONNECTION WITH OR RELATED TO YOUR USE OF THE SITE AND/OR
-ANY SHOKUNIN (職人) SERVICES. IN NO EVENT SHALL SHOKUNIN (職人), NOR ITS
+ANY SEBASTIEN ROUSSEAU SERVICES. IN NO EVENT SHALL SEBASTIEN ROUSSEAU, NOR ITS
 DIRECTORS, EMPLOYEES, PARTNERS, AGENTS, SUPPLIERS, OR AFFILIATES, BE LIABLE FOR
 ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES,
 INCLUDING WITHOUT LIMITATION, LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER
@@ -151,7 +144,7 @@ ACCESS OR USE THE WEBSITE.
 
 ## Privacy
 
-Kaishi’s [Privacy Policy](/privacy/index.html) applies to use of
+Sebastien Rousseau’s [Privacy Policy](/privacy/index.html) applies to use of
 this Site, and its terms are made a part of these Terms of Use by this
 reference. Additionally, by using the Site, you acknowledge and agree that
 Internet transmissions are never completely private or secure. You understand
@@ -173,4 +166,5 @@ revised terms.
 
 ## Contact Us
 
-If you have any questions about these Terms, please [contact us](/contact/index.html)
+If you have any questions about these Terms, please
+[contact us](/contact/index.html)

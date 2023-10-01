@@ -2,107 +2,100 @@
 
 # Front Matter (YAML)
 
-author: "Kaishi Starter Template" ## The author of the page. (max 64 characters)
-banner_alt: "MacBook Pro on white surface" ## The banner alt of the site.
-banner_height: "398" ## The banner height of the site.
-banner_width: "1440" ## The banner width of the site.
-banner: "https://kura.pro/unsplash/images/banners/johannes-plenio-6XUA5KQ9-1k.jpg" ## The banner of the site.
-cdn: "https://kura.pro" ## The CDN of the site.
-charset: "utf-8" ## The charset of the site. (default: utf-8)
-cname: "sebastienrousseau.com" ## The cname value of the site. (Only required for the index page.)
-copyright: "© 2023 Kaishi Starter Template. All rights reserved." ## The copyright of the site.
+author: "Sebastien Rousseau"
+banner_alt: "Canary wharf passage"
+banner_height: "398"
+banner_width: "1440"
+banner: "https://kura.pro/stock/images/banners/jez-timms-4xLteCXh6X0.webp"
+cdn: "https://kura.pro"
+changefreq: "weekly"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
 date: "Oct 01, 2023"
-description: "Make beautiful websites with Kaishi, a Shokunin Static Site Generator starter template." ## The description of the site. (max 160 characters)
-download: "" ## The download url for the product.
-format-detection: "telephone=no" ## The format detection of the site.
-hreflang: "en" ## The hreflang of the site. (default: en-gb)
-icon: "https://kura.pro/kaishi/images/logos/kaishi.svg" ## The icon of the site in SVG format.
-id: "https://sebastienrousseau.com" ## The id of the site.
-image_alt: "Logo of Sebastien Rousseau, Senior Digital Financial Services Consultant" ## The image alt of the site.
-image_height: "630" ## The image height of the site.
-image_width: "1200" ## The image width of the site.
-image: "https://kura.pro/kaishi/images/banners/banner-kaishi.webp" ## The main image of the site in SVG format.
-keywords: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML" ## The keywords of the site. (comma separated, max 10 keywords)
-language: "en-GB" ## The language of the site. (default: en-GB)
-layout: "page" ## The layout of the site.
-locale: "en_GB" ## The locale of the site.
-logo_alt: "Logo of Sebastien Rousseau, Senior Digital Financial Services Consultant" ## The logo alt of the site.
-logo_height: "33" ## The logo height of the site.
-logo_width: "100" ## The logo width of the site.
-logo: "https://kura.pro/kaishi/images/banners/banner-kaishi.webp" ## The logo of the site in SVG format.
-menu: ""
-name: "Kaishi" ## The name of the website. (max 64 characters)
-permalink: "https://sebastienrousseau.com" ## The url of the site.
-rating: "general" ## The rating of the site.
-referrer: "no-referrer" ## The referrer of the site.
-revisit-after: "7 days" ## The revisit after of the site.
-robots: "index, follow" ## The robots of the site.
-short_name: "kaishi" ## The short name of the site. (max 12 characters)
-subtitle: "Build Amazing Websites with Minimal Effort using Kaishi Starter Template" ## The subtitle of the page. (max 64 characters)
-tags: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML" ## The tags of the site. (comma separated, max 10 tags)
-theme-color: "rgb(0, 48, 96)" ## The theme color of the site.
-title: "Kaishi, a Starter Template for the Shokunin Static Site Generator (SSG)" ## The title of the page. (max 64 characters)
-url: "https://sebastienrousseau.com" ## The url of the site.
-viewport: "width=device-width, initial-scale=1, shrink-to-fit=no" ## The viewport of the site.
+description: "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website"
+format-detection: "telephone=no"
+form-id: ""
+hreflang: "en"
+icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/privacy/index.html"
+image_alt: "Black and White Portrait of Sebastien Rousseau"
+image_height: "161.8"
+image_width: "161.8"
+image: "https://kura.pro/stock/images/banners/sebastien-rousseau.webp"
+keywords: "Privacy Statement, personal data protection, no cookies policy, no personal information collection, use of Google Analytics, use of Microsoft Clarity, user behaviour analytics, website traffic monitoring, user data rights, privacy policy updates."
+language: "en-GB"
+layout: "link"
+locale: "en_GB"
+logo_alt: "Logo for Sebastien Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
+menu: "active"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/privacy/index.html"
+rating: "general"
+referrer: "no-referrer"
+revisit-after: "7 days"
+robots: "index, follow"
+short_name: "sebastienrousseau"
+subtitle: "Your privacy is important to us."
+tags: "privacy, personal data, tracking tools, Google Analytics, Microsoft Clarity, user behaviour analytics, mouse movements, clicks, scrolls, rights, contact"
+theme-color: "rgb(255, 39, 34)"
+title: "Privacy Statement"
+url: "https://sebastienrousseau.com/privacy/index.html"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
-atom_link: https://sebastienrousseau.com/rss.xml
+atom_link: "https://sebastienrousseau.com/privacy/rss.xml"
 category: "Technology"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Shokunin 🦀 (version 0.0.18)"
 item_description: RSS feed for the site
-item_guid: https://sebastienrousseau.com/rss.xml
-item_link: https://sebastienrousseau.com/rss.xml
-item_pub_date: "Thu, 12 Jul 2023 20:20:20 BST"
+item_guid: "https://sebastienrousseau.com/privacy/rss.xml"
+item_link: "https://sebastienrousseau.com/privacy/rss.xml"
+item_pub_date: "Sun, 01 Oct 2023 01:01:01 BST"
 item_title: "RSS"
-last_build_date: "Thu, 12 Jul 2023 20:20:20 BST"
+last_build_date: "Sun, 01 Oct 2023 01:01:01 BST"
 managing_editor: "contact@sebastienrousseau.com"
-pub_date: "Thu, 12 Jul 2023 20:20:20 BST"
+pub_date: "Sun, 01 Oct 2023 01:01:01 BST"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
 
 # Apple - The Apple front matter (YAML).
-apple_mobile_web_app_orientations: "portrait" ## The Apple mobile web app orientations of the page.
-apple_touch_icon_sizes: "192x192" ## The Apple touch icon sizes of the page.
-apple-mobile-web-app-capable: "yes" ## The Apple mobile web app capable of the page.
-apple-mobile-web-app-status-bar-inset: "black" ## The Apple mobile web app status bar inset of the page.
-apple-mobile-web-app-status-bar-style: "black-translucent" ## The Apple mobile web app status bar style of the page.
-apple-mobile-web-app-title: "Kaishi" ## The Apple mobile web app title of the page.
-apple-touch-fullscreen: "yes" ## The Apple touch fullscreen of the page.
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "Privacy Statement"
+apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(0, 48, 96)"
+msapplication-navbutton-color: "rgb(255, 39, 34)"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
-## twitter_card - The Twitter Card type of the page.
 twitter_card: "summary"
-## twitter_creator - The Twitter Card creator of the page.
 twitter_creator: "wwdseb"
-## twitter_description - The Twitter Card description of the page.
-twitter_description: "Make beautiful websites with Kaishi, a Shokunin Static Site Generator Starter Template."
-## twitter_image - The Twitter Card image of the page.
-twitter_image: "https://kura.pro/kaishi/images/logos/kaishi.svg"
-## twitter_image:alt - The Twitter Card image alt of the page.
-twitter_image_alt: "Logo of Sebastien Rousseau, Senior Digital Financial Services Consultant"
-## twitter_site - The Twitter Card site of the page.
+twitter_description: "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website"
+twitter_image: "https://kura.pro/Sebastien Rousseau/images/logos/Sebastien Rousseau.svg"
+twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-## twitter_title - The Twitter Card title of the page.
-twitter_title: "Kaishi, a Starter Template for the Shokunin Static Site Generator (SSG)"
-## twitter_url - The Twitter Card url of the page.
-twitter_url: "https://sebastienrousseau.com"
+twitter_title: "Privacy Statement"
+twitter_url: "https://sebastienrousseau.com/privacy/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).
-author_website: "https://sebastienrousseau.com" ## The author website of the page.
-author_twitter: "@wwdseb" ## The author twitter of the page.
-author_location: "London, UK" ## The author location of the page.
-thanks: "Thanks for reading!" ## The thanks of the page.
-site_last_updated: "2023-07-05" ## The last updated of the site.
-site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML" ## The standards of the site.
-site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes" ## The components of the site.
-site_software: "Shokunin, Rust" ## The software of the site.
+author_website: "https://sebastienrousseau.com/privacy/index.html"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "Thanks for reading!"
+site_last_updated: "2023-07-05"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Sebastien Rousseau, Sebastien Rousseau Builder, Sebastien Rousseau CLI, Sebastien Rousseau Templates, Sebastien Rousseau Themes"
+site_software: "Shokunin, Rust"
 
 ---
 
@@ -134,4 +127,5 @@ We advise you to review this Privacy Policy periodically for any changes. Change
 
 ## Contact Us
 
-If you have any questions about this Privacy Policy, please contact us.
+If you have any questions about this Privacy Policy, please
+[contact us](/contact/index.html).

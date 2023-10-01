@@ -291,29 +291,13 @@
                 aria-labelledby="supportDropdown"
               >
                 <li>
-                  <a class="dropdown-item" href="/contact/index.html">
-                    Contact us
-                  </a>
-                </li>
-
-                <li>
                   <a class="dropdown-item" href="/playlists/index.html">
                     Spotify Playlists
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="/privacy/index.html">
-                    Privacy policy
-                  </a>
-                </li>
-                <li>
                   <a class="dropdown-item" href="/tags/index.html">
                     Tags
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/terms/index.html">
-                    Terms of service
                   </a>
                 </li>
               </ul>
@@ -328,7 +312,6 @@
             </li>
           </ul>
         </div>
-        
       </div>
     </nav>
     <!-- # End Responsive navbar -->
@@ -349,16 +332,17 @@
 
     <!-- Footer-->
     <footer id="footer" aria-label="footer" class="footer border-top mt-auto py-3">
-        <p class="mb-1"><span class="px-2">{{copyright}}</span></p>
-        <p class="mb-0"><span class="px-2">
-          <a href="/contact/index.html">Contact</a>
-        </span>
-        <span class="px-2">
-          <a href="/privacy/index.html">Privacy & Cookie Policy</a>
-        </span>
-        <span class="px-2">
-          <a href="/terms/index.html">Terms of Use</a>
-        </span>
+      <img
+        alt="{{subtitle}}"
+        height="32"
+        src="{{cdn}}/{{short_name}}/images/logos/{{short_name}}.webp"
+        width="32"
+      />
+      <span class="px-2">{{copyright}}</span>
+      <p class="mb-0">
+        <span class="px-2"><a href="/contact/index.html">Contact</a></span>
+        <span class="px-2"><a href="/privacy/index.html">Privacy & Cookie Policy</a></span>
+        <span class="px-2"><a href="/terms/index.html">Terms of Use</a></span>
       </p>
     </footer>
     <script
