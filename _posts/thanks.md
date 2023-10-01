@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
 date: "Oct 01, 2023"
-description: "You can contact me using the contact form below"
+description: "Thank you for your time! I appreciate you taking the time to learn more about my work."
 format-detection: "telephone=no"
 form-id: "mjvqpwyo"
 hreflang: "en"
@@ -25,7 +25,7 @@ image_width: "161.8"
 image: "https://kura.pro/stock/images/banners/sebastien-rousseau.webp"
 keywords: "contact us, contact details, contact form, get in touch, help center, reach out, technical support"
 language: "en-GB"
-layout: "contact"
+layout: "thank-you"
 locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
@@ -39,10 +39,10 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Need service or support? Get in touch!"
+subtitle: "Thank you for getting in touch!"
 tags: "contact,help,support"
 theme-color: "rgb(255, 39, 34)"
-title: "Let's Start a Conversation"
+title: "Sebastien Rousseau, Banking & Financial Service Professional"
 url: "https://sebastienrousseau.com/contact/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -69,7 +69,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Let's Start a Conversation"
+apple-mobile-web-app-title: "Sebastien Rousseau, Banking & Financial Service Professional"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
@@ -80,11 +80,11 @@ msapplication-navbutton-color: "rgb(255, 39, 34)"
 
 twitter_card: "summary"
 twitter_creator: "wwdseb"
-twitter_description: "You can contact me using the contact form below"
+twitter_description: "Thank you for your time! I appreciate you taking the time to learn more about my work."
 twitter_image: "https://kura.pro/kaishi/images/logos/kaishi.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "Let's Start a Conversation"
+twitter_title: "Sebastien Rousseau, Banking & Financial Service Professional"
 twitter_url: "https://sebastienrousseau.com/contact/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -99,5 +99,19 @@ site_software: "Shokunin, Rust"
 
 ---
 
-We will only use your personal information to protect your privacy. The data
-collected in the form below is solely for the purpose of answering your enquiry.
+I appreciate you taking the time to fill out my form. I will review your
+submission and get back to you as soon as possible.
+
+In the meantime, here are a few things you can do:
+
+- [Explore my website](/). Learn more about my services, how I can help you, and what
+  makes me different from other professionals in my field.
+- [Read my articles](/articles/index.html). I write about a variety of topics,
+  including Artificial Intelligence (AI), Post-Quantum Cryptography (PQC),
+  Blockchain Technology and Cryptocurrencies, and more.
+
+Thank you again for your interest. I look forward to hearing from you soon!
+
+Sincerely,
+
+Sebastien Rousseau
