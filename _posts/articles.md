@@ -49,7 +49,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/rss.xml"
 category: "Technology"
 docs: https://validator.w3.org/feed/docs/rss2.html
-generator: "Shokunin 🦀 (version 0.0.18)"
+generator: "Shokunin 🦀 (version 0.0.19)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
@@ -98,86 +98,111 @@ site_software: "Shokunin, Rust"
 
 ---
 
-The financial industry is undergoing a rapid transformation, driven by cutting-edge technologies such as artificial intelligence (AI), quantum cryptography, blockchain, Rust, and Python. These technologies are having a profound impact on the way financial institutions operate and deliver services to their customers.
+## The Impact of Technology
 
-<div class="list-group container p-1">
-  <a href="/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html" class="list-group-item list-group-item-action align-items-start">
-    <img
-    class="rounded zoom-in fade-in img-fluid img-thumbnail w-25 float-start me-3"
-    src="https://kura.pro/stock/images/banners/andrea-de-santis-T3Qen8vVgRc.webp"
-    alt="Automating ISO 20022-Compliant Payment File Creation with Pain001"
-    title="Automating ISO 20022-Compliant Payment File Creation with Pain001"
-    />
-    <div class="flex">
-        <h2>Automating ISO 20022-Compliant Payment File Creation with Pain001</h2>
-        <small class="text-muted">29 Sep 2023</small>
-        <p>Streamlining the creation and compliance of ISO20022 Payment Messages for cross-border payments and reporting.</p>
-    </div>
-  </a>
-</div>
+The world is undergoing a rapid transformation, driven by cutting-edge
+technologies such as Artificial Intelligence (AI), Post-Quantum Cryptography
+(PQC), Blockchain Technology, Rust, and Python.
 
-<div class="list-group container p-1">
-  <a href="/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html" class="list-group-item list-group-item-action align-items-start">
-    <img class="rounded zoom-in fade-in img-fluid img-thumbnail w-25 float-start me-3" src="https://kura.pro/stock/images/banners/rawpixel-com-369782.webp" alt="The making of the Express Transaction Credits Platform" />
-    <div class="flex">
-        <h2>The making of the Express Transaction Credits Platform</h2>
-        <small class="text-muted">15 Feb 2018</small>
-        <p>Building a comprehensive framework of the next generation of ERC-223 compliant tokens</p>
-    </div>
-  </a>
-</div>
+These technologies are having a profound impact on the way we operate and
+deliver services to our customers. They are also changing the way we work and
+interact with each other.
 
-<div class="list-group container p-1">
-  <a href="/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html" class="list-group-item list-group-item-action align-items-start">
-    <img class="rounded zoom-in fade-in img-fluid img-thumbnail w-25 float-start me-3" src="https://kura.pro/stock/images/banners/laureen-missaire-DBbuhMbAIsQ.webp" alt="Image description" />
-    <div class="flex">
-        <h2>Unveiling a new Cryptocurrency and offering Future Faster Payment Solution</h2>
-        <small class="text-muted">04 Feb 2018</small>
-        <p>A significant chapter in the ongoing evolution of the global financial landscape</p>
-    </div>
-  </a>
-</div>
+You can find below a selection of articles that I have written over the years
+on these topics.
 
-<div class="list-group container p-1">
-  <a href="/2018-01-24-the-erc-20-token-standard/index.html" class="list-group-item list-group-item-action align-items-start">
-    <img class="rounded zoom-in fade-in img-fluid img-thumbnail w-25 float-start me-3" src="https://kura.pro/stock/images/banners/m-ZzOa5G8hSPI.webp" alt="Image description" />
-    <div class="flex">
-        <h2>The ERC-20 Token Standard</h2>
-        <small class="text-muted">24 Jan 2018</small>
-        <p>An Ethereum's Standard Interface for Tokens</p>
-    </div>
-  </a>
-</div>
+## Our Stories
 
-<div class="list-group container p-1">
-  <a href="/2018-01-09-understanding-the-technology-behind-blockchain/index.html" class="list-group-item list-group-item-action align-items-start">
-    <img class="rounded zoom-in fade-in img-fluid img-thumbnail w-25 float-start me-3" src="https://kura.pro/stock/images/banners/adam-smigielski-K5mPtONmpHM.webp" alt="Image description" />
-    <div class="flex">
-        <h2>Understanding the Technology behind Blockchain</h2>
-        <small class="text-muted">09 Jan 2018</small>
-        <p>Building a Cryptocurrency on Ethereum: A Comprehensive Guide to Blockchain Development</p>
-    </div>
-  </a>
-</div>
+### Shokunin, the fastest Rust-based Static Site Generator (SSG)
 
-<div class="list-group container p-1">
-  <a href="/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html" class="list-group-item list-group-item-action align-items-start">
-    <img class="rounded zoom-in fade-in img-fluid img-thumbnail w-25 float-start me-3" src="https://kura.pro/stock/images/banners/bogdan-karlenko-cNcX6PPjEm8.webp" alt="Image description" />
-    <div class="flex">
-        <h2>Blockchain, the technology that matters</h2>
-        <small class="text-muted">02 Jan 2018</small>
-        <p>A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks</p>
-    </div>
-  </a>
-</div>
+[![Banner](https://kura.pro/stock/images/banners/anna-nekrashevich-8534387.webp).class=\"zoom-in w-25 p-3 float-start\"][01]
 
-<div class="list-group container p-1">
-  <a href="/2018-01-01-bitcoin-the-year-in-review/index.html" class="list-group-item list-group-item-action align-items-start">
-    <img class="rounded zoom-in fade-in img-fluid img-thumbnail w-25 float-start me-3" src="https://kura.pro/stock/images/banners/traxer-AIKjbZdNOlw.webp" alt="Image description" />
-    <div class="flex">
-        <h2>Bitcoin The Year In Review</h2>
-        <small class="text-muted">01 Jan 2018</small>
-        <p>The Peer-to-Peer Electronic Cash System that everyone is talking about</p>
-    </div>
-  </a>
-</div>
+*by [Sebastien Rousseau][00] (9 Oct 2023)*
+
+Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.
+
+[**Read full story ❯**][01]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+### Automating ISO 20022-Compliant Payment File Creation with Pain001
+
+[![Banner](https://kura.pro/stock/images/banners/andrea-de-santis-T3Qen8vVgRc.webp).class=\"zoom-in w-25 p-3 float-start\"][02]
+
+*by [Sebastien Rousseau][00] (29 Sep 2023)*
+
+Streamlining the creation and compliance of ISO20022 Payment Messages for cross-border payments and reporting.
+
+[**Read full story ❯**][02]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+### The making of the Express Transaction Credits Platform
+
+
+[![Banner](https://kura.pro/stock/images/banners/rawpixel-com-369782.webp).class=\"zoom-in w-25 p-3 float-start\"][03]
+
+*by [Sebastien Rousseau][00] (15 Feb 2018)*
+
+Building a comprehensive framework of the next generation of ERC-223 compliant tokens and decentralized applications (DApps) for the financial industry.
+
+[**Read full story ❯**][03]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+### Unveiling a new Cryptocurrency and offering Future Faster Payment Solution
+
+[![Banner](https://kura.pro/stock/images/banners/laureen-missaire-DBbuhMbAIsQ.webp).class=\"zoom-in w-25 p-3 float-start\"][04]
+
+*by [Sebastien Rousseau][00] (04 Feb 2018)*
+
+A significant chapter in the ongoing evolution of the global financial landscape and the future of money.
+
+[**Read full story ❯**][04]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+### The ERC-20 Token Standard
+
+[![Banner](https://kura.pro/stock/images/banners/m-ZzOa5G8hSPI.webp).class=\"zoom-in w-25 p-3 float-start\"][05]
+
+*by [Sebastien Rousseau][00] (24 Jan 2018)*
+
+An Ethereum's Standard Interface for Tokens, which allows for the implementation of a standard API for tokens within smart contracts.
+
+[**Read full story ❯**][05]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+### Understanding the Technology behind Blockchain
+
+[![Banner](https://kura.pro/stock/images/banners/adam-smigielski-K5mPtONmpHM.webp).class=\"zoom-in w-25 p-3 float-start\"][06]
+
+*by [Sebastien Rousseau][00] (02 Jan 2018)*
+
+Building a Cryptocurrency on Ethereum: A Comprehensive Guide to Blockchain Development.
+
+[**Read full story ❯**][06]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+### Bitcoin The Year In Review
+
+[![Banner](https://kura.pro/stock/images/banners/traxer-AIKjbZdNOlw.webp).class=\"zoom-in w-25 p-3 float-start\"][07]
+
+*by [Sebastien Rousseau][00] (01 Jan 2018)*
+
+The Peer-to-Peer Electronic Cash System that everyone is talking about.
+
+[**Read full story ❯**][07]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+[00]: /about/index.html "About Sebastien Rousseau, Banking & Financial Service Professional"
+[01]: /2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
+[02]: /2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html "Automating ISO 20022-Compliant Payment File Creation with Pain001"
+[03]: /2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html "The making of the Express Transaction Credits Platform"
+[04]: /2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html "Unveiling a new Cryptocurrency and offering Future Faster Payment Solution"
+[05]: /2018-01-24-the-erc-20-token-standard/index.html "The ERC-20 Token Standard"
+[06]: /2018-01-09-understanding-the-technology-behind-blockchain/index.html "Understanding the Technology behind Blockchain"
+[07]: /2018-01-01-bitcoin-the-year-in-review/index.html "Bitcoin The Year In Review"
