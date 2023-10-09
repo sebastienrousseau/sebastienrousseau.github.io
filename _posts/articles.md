@@ -198,7 +198,7 @@ The Peer-to-Peer Electronic Cash System that everyone is talking about.
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-[00]: /about/index.html "About Sebastien Rousseau, Banking & Financial Service Professional"
+[00]: /about/index.html "About Sebastien Rousseau, Banking and Financial Service Professional"
 [01]: /2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
 [02]: /2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html "Automating ISO 20022-Compliant Payment File Creation with Pain001"
 [03]: /2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html "The making of the Express Transaction Credits Platform"

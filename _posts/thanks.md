@@ -42,7 +42,7 @@ short_name: "sebastienrousseau"
 subtitle: "Thank you for getting in touch!"
 tags: "contact,help,support"
 theme-color: "rgb(255, 39, 34)"
-title: "Sebastien Rousseau, Banking & Financial Service Professional"
+title: "Sebastien Rousseau, Banking and Financial Service Professional"
 url: "https://sebastienrousseau.com/contact/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -69,7 +69,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Sebastien Rousseau, Banking & Financial Service Professional"
+apple-mobile-web-app-title: "Sebastien Rousseau, Banking and Financial Service Professional"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
@@ -84,7 +84,7 @@ twitter_description: "Thank you for your time! I appreciate you taking the time 
 twitter_image: "https://kura.pro/kaishi/images/logos/kaishi.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "Sebastien Rousseau, Banking & Financial Service Professional"
+twitter_title: "Sebastien Rousseau, Banking and Financial Service Professional"
 twitter_url: "https://sebastienrousseau.com/contact/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).

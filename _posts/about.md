@@ -41,7 +41,7 @@ short_name: "sebastienrousseau"
 subtitle: "Shaping the Future of Banking and Financial Services through Strategic Integration of Artificial Intelligence, Post-Quantum Cryptography and Blockchain Technology"
 tags: "payments technology, digital finance, artificial intelligence, post-quantum cryptography, blockchain technology, strategic leadership, operational leadership, cross-platform product design, engineering, solution architecture"
 theme-color: "rgb(255, 39, 34)"
-title: "Sebastien Rousseau, Banking & Financial Service Professional"
+title: "Sebastien Rousseau, Banking and Financial Service Professional"
 url: "https://sebastienrousseau.com"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -68,7 +68,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Sebastien Rousseau, Banking & Financial Service Professional"
+apple-mobile-web-app-title: "Sebastien Rousseau, Banking and Financial Service Professional"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
@@ -83,7 +83,7 @@ twitter_description: "Shaping the Future of Banking and Financial Services throu
 twitter_image: "https://kura.pro/kaishi/images/logos/kaishi.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "Sebastien Rousseau, Banking & Financial Service Professional"
+twitter_title: "Sebastien Rousseau, Banking and Financial Service Professional"
 twitter_url: "https://sebastienrousseau.com"
 
 # Humans.txt - The Humans.txt front matter (YAML).
