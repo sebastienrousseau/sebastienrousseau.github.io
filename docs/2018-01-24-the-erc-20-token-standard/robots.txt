@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://sebastienrousseau.com/payments//sitemap.xml
+Sitemap: https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html/sitemap.xml

@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://sebastienrousseau.com/payments//sitemap.xml
+Sitemap: https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html/sitemap.xml

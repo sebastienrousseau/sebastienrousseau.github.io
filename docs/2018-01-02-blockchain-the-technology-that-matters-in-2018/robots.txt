@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://sebastienrousseau.com/payments//sitemap.xml
+Sitemap: https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html/sitemap.xml

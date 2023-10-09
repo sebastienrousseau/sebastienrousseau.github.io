@@ -114,7 +114,7 @@ Read the latest articles below, and [**see all articles, news and product announ
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/stock/images/banners/anna-nekrashevich-8534387.webp).class=\"w-25 card me-3 float-start\"][01]
+[![Banner](https://kura.pro/stock/images/banners/anna-nekrashevich-8534387.webp).class=\"zoom-out w-25 p-3 float-start\"][01]
 
 ### Shokunin, the fastest Rust-based Static Site Generator (SSG)
 
@@ -126,7 +126,7 @@ Empowering you to create high-impact static websites with infinite possibilities
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/stock/images/banners/andrea-de-santis-T3Qen8vVgRc.webp).class=\"w-25 card me-3 float-start\"][02]
+[![Banner](https://kura.pro/stock/images/banners/andrea-de-santis-T3Qen8vVgRc.webp).class=\"zoom-out w-25 p-3 float-start\"][02]
 
 ### Automating ISO 20022-Compliant Payment File Creation with Pain001
 

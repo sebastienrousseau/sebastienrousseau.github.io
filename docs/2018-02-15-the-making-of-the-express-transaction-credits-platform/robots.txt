@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://sebastienrousseau.com/hash//sitemap.xml
+Sitemap: https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html/sitemap.xml

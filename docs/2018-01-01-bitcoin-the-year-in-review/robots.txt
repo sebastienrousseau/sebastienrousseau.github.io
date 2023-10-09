@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://sebastienrousseau.com/payments//sitemap.xml
+Sitemap: https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/index.html/sitemap.xml

@@ -17,7 +17,7 @@ description: "Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com"
+id: "https://sebastienrousseau.com/articles/index.html"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "161.8"
 image_width: "161.8"
@@ -32,7 +32,7 @@ logo_width: "44"
 logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 menu: "active"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com"
+permalink: "https://sebastienrousseau.com/articles/index.html"
 rating: "general"
 referrer: "no-referrer"
 revisit-after: "7 days"
@@ -42,7 +42,7 @@ subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Pro
 tags: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML"
 theme-color: "rgb(255, 39, 34)"
 title: "Articles"
-url: "https://sebastienrousseau.com"
+url: "https://sebastienrousseau.com/articles/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
@@ -84,10 +84,10 @@ twitter_image: "https://kura.pro/kaishi/images/logos/kaishi.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
 twitter_title: "Articles"
-twitter_url: "https://sebastienrousseau.com"
+twitter_url: "https://sebastienrousseau.com/articles/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).
-author_website: "https://sebastienrousseau.com"
+author_website: "https://sebastienrousseau.com/articles/index.html"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
@@ -98,7 +98,7 @@ site_software: "Shokunin, Rust"
 
 ---
 
-## The Impact of Technology
+## Latest News: Technology and Digital Trends
 
 The world is undergoing a rapid transformation, driven by cutting-edge
 technologies such as Artificial Intelligence (AI), Post-Quantum Cryptography

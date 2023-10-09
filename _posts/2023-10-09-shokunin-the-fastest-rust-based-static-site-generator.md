@@ -17,7 +17,7 @@ description: "Empowering you to create high-impact static websites with infinite
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/shokunin/"
+id: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "161.8"
 image_width: "161.8"
@@ -32,7 +32,7 @@ logo_width: "44"
 logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 menu: "active"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/shokunin/"
+permalink: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html"
 rating: "general"
 referrer: "no-referrer"
 revisit-after: "7 days"
@@ -42,17 +42,17 @@ subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Pro
 tags: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
 theme-color: "rgb(255, 39, 34)"
 title: "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
-url: "https://sebastienrousseau.com/shokunin/"
+url: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
-atom_link: "https://sebastienrousseau.com/shokunin/rss.xml"
+atom_link: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Shokunin 🦀 (version 0.0.19)"
 item_description: "Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control."
-item_guid: "https://sebastienrousseau.com/shokunin/rss.xml"
-item_link: "https://sebastienrousseau.com/shokunin/rss.xml"
+item_guid: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/rss.xml"
+item_link: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/rss.xml"
 item_pub_date: "2023-10-09T06:13+01:00"
 item_title: "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
 last_build_date: "2023-10-09T06:13+01:00"
@@ -84,10 +84,10 @@ twitter_image: "https://kura.pro/kaishi/images/logos/kaishi.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
 twitter_title: "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
-twitter_url: "https://sebastienrousseau.com/shokunin/"
+twitter_url: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).
-author_website: "https://sebastienrousseau.com/shokunin/"
+author_website: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
@@ -168,6 +168,8 @@ Ready to create a high-performance static website in minutes that will boost you
 
 [**Try Shokunin ⧉**][00] for free today and see the difference!
 
+[**❬ Back to Articles**][09]
+
 [00]: https://shokunin.one/ "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
 [01]: https://www.w3.org/WAI/standards-guidelines/wcag/ "Web Content Accessibility Guidelines (WCAG)"
 [02]: https://www.access-board.gov/ada/ "Americans with Disabilities Act (ADA)"
@@ -177,3 +179,5 @@ Ready to create a high-performance static website in minutes that will boost you
 [06]: https://www.bing.com/webmasters/ "Bing Webmaster Tools"
 [07]: https://www.rust-lang.org/tools/install "Rust Installation Guide"
 [08]: https://www.markdownguide.org/ "The Markdown Guide"
+[09]: /articles/index.html "Back to Articles"
+
