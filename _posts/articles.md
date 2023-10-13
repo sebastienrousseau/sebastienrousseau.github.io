@@ -113,6 +113,18 @@ on these topics.
 
 ## Our Stories
 
+### HSH: The Quantum-Resistant Hash Library for the Quantum Era
+
+[![Banner](https://kura.pro/stock/images/banners/inside-1499607.webp).class=\"zoom-in w-25 p-3 float-start\"][08]
+
+*by [Sebastien Rousseau][00] (16 Oct 2023)*
+
+The Hash Library (HSH) is a quantum-resistant cryptographic hash library that offers a lightweight, efficient, and easy-to-use solution for keeping your data secure.
+
+[**Read full story ❯**][08]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
 ### Shokunin, the fastest Rust-based Static Site Generator (SSG)
 
 [![Banner](https://kura.pro/stock/images/banners/anna-nekrashevich-8534387.webp).class=\"zoom-in w-25 p-3 float-start\"][01]
@@ -206,3 +218,4 @@ The Peer-to-Peer Electronic Cash System that everyone is talking about.
 [05]: /2018-01-24-the-erc-20-token-standard/index.html "The ERC-20 Token Standard"
 [06]: /2018-01-09-understanding-the-technology-behind-blockchain/index.html "Understanding the Technology behind Blockchain"
 [07]: /2018-01-01-bitcoin-the-year-in-review/index.html "Bitcoin The Year In Review"
+[08]: /2023-10-16-hsh-the-creation-of-a-quantum-resistant-cryptographic-hash-library-built-with-rust/index.html "How HSH Uses Quantum-Resistant Cryptography to Protect Your Data"
