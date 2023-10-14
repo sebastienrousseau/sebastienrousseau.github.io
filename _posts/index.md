@@ -80,7 +80,7 @@ msapplication-navbutton-color: "rgb(255, 39, 34)"
 twitter_card: "summary"
 twitter_creator: "wwdseb"
 twitter_description: "Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking and Financial Services"
-twitter_image: "https://kura.pro/kaishi/images/logos/kaishi.svg"
+twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
 twitter_title: "Sebastien Rousseau, Banking and Financial Service Professional"
@@ -114,6 +114,18 @@ Read the latest articles below, and [**see all articles, news and product announ
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
+[![Banner](https://kura.pro/stock/images/banners/galina-nelyubova-7ej8VWfwFsg.webp).class=\"zoom-out w-25 p-3 float-start\"][03]
+
+### Protecting Data in the Quantum Age: The Hash Library (HSH)
+
+*by [Sebastien Rousseau][00] (16 Oct 2023)*
+
+The Hash Library (HSH) provides a lightweight, efficient, and user-friendly solution for protecting data with quantum-resistant cryptography.
+
+[**Learn more ❯**][03]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
 [![Banner](https://kura.pro/stock/images/banners/anna-nekrashevich-8534387.webp).class=\"zoom-out w-25 p-3 float-start\"][01]
 
 ### Shokunin, the fastest Rust-based Static Site Generator (SSG)
@@ -138,9 +150,10 @@ Streamlining the creation and compliance of ISO20022 Payment Messages for cross-
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-[**See all articles** ❯][03]
+[**See all articles** ❯][10]
 
 [00]: /about/index.html "About Sebastien Rousseau, Banking and Financial Service Professional"
 [01]: /2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
 [02]: /2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html "Automating ISO 20022-Compliant Payment File Creation with Pain001"
-[03]: /articles/index.html "See all articles"
+[03]: /2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html "Protecting Data in the Quantum Age: The Hash Library (HSH)"
+[10]: /articles/index.html "See all articles"

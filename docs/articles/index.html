@@ -29,16 +29,17 @@
     <meta content="portrait" name="apple_mobile_web_app_orientations"><meta content="192x192" name="apple_touch_icon_sizes"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-inset"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="Articles" name="apple-mobile-web-app-title"><meta content="yes" name="apple-touch-fullscreen">
     <!-- # End Apple Meta Tags -->
 
-    <!-- # Start Content Security Policy Meta Tags -->
-    <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self';
-      script-src 'self' 'unsafe-inline' *.google-analytics.com https://cdn.jsdelivr.net unpkg.com www.googletagmanager.com x.clarity.ms;
-      connect-src 'self' collect;
-      img-src 'self' data: https: kura.pro;
-      style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
-      font-src 'self' https://fonts.gstatic.com;
-      media-src 'self';" />
-    <!-- # End Content Security Policy Meta Tags -->
+<!-- # Start Content Security Policy Meta Tags -->
+<meta http-equiv="Content-Security-Policy"
+content="default-src 'self';
+  script-src 'self' 'unsafe-inline' *.google-analytics.com https://cdn.jsdelivr.net unpkg.com www.googletagmanager.com x.clarity.ms https://www.googletagmanager.com;
+  connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com;
+  img-src 'self' data: https: kura.pro www.googletagmanager.com;
+  style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
+  font-src 'self' https://fonts.gstatic.com;
+  media-src 'self';" />
+<!-- # End Content Security Policy Meta Tags -->
+
 
 
     <!-- # Start Microsoft Meta Tags -->
@@ -345,6 +346,12 @@ interact with each other.</p>
 <p>You can find below a selection of articles that I have written over the years
 on these topics.</p>
 <h2 id="h2-our" tabindex="0" itemprop="subheadline" class="our">Our Stories</h2>
+<h3 id="h3-hsh" tabindex="0" itemprop="subheadline" class="hsh">HSH: The Quantum-Resistant Hash Library for the Quantum Era</h3>
+<p><a href="/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html" title="Protecting Data in the Quantum Age: The Hash Library (HSH)"><img src="https://kura.pro/stock/images/banners/galina-nelyubova-7ej8VWfwFsg.webp" alt="Banner"  class="zoom-in w-25 p-3 float-start"/></a></p>
+<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking and Financial Service Professional">Sebastien Rousseau</a> (16 Oct 2023)</em></p>
+<p>The Hash Library (HSH) is a quantum-resistant cryptographic hash library that offers a lightweight, efficient, and easy-to-use solution for keeping your data secure.</p>
+<p><a href="/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html" title="Protecting Data in the Quantum Age: The Hash Library (HSH)"><strong>Read full story ❯</strong></a></p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider"  class="m-10 w-100"/></p>
 <h3 id="h3-shokunin" tabindex="0" itemprop="subheadline" class="shokunin">Shokunin, the fastest Rust-based Static Site Generator (SSG)</h3>
 <p><a href="/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" title="Shokunin, the fastest Rust-based Static Site Generator (SSG)"><img src="https://kura.pro/stock/images/banners/anna-nekrashevich-8534387.webp" alt="Banner"  class="zoom-in w-25 p-3 float-start"/></a></p>
 <p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking and Financial Service Professional">Sebastien Rousseau</a> (9 Oct 2023)</em></p>
@@ -486,6 +493,15 @@ on these topics.</p>
           }
         });
       });
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-169G4ET5HQ');
     </script>
   </body>
 </html>

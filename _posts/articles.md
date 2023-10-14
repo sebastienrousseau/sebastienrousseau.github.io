@@ -80,7 +80,7 @@ msapplication-navbutton-color: "rgb(255, 39, 34)"
 twitter_card: "summary"
 twitter_creator: "wwdseb"
 twitter_description: "Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry"
-twitter_image: "https://kura.pro/kaishi/images/logos/kaishi.svg"
+twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
 twitter_title: "Articles"
@@ -115,7 +115,7 @@ on these topics.
 
 ### HSH: The Quantum-Resistant Hash Library for the Quantum Era
 
-[![Banner](https://kura.pro/stock/images/banners/inside-1499607.webp).class=\"zoom-in w-25 p-3 float-start\"][08]
+[![Banner](https://kura.pro/stock/images/banners/galina-nelyubova-7ej8VWfwFsg.webp).class=\"zoom-in w-25 p-3 float-start\"][08]
 
 *by [Sebastien Rousseau][00] (16 Oct 2023)*
 
@@ -218,4 +218,4 @@ The Peer-to-Peer Electronic Cash System that everyone is talking about.
 [05]: /2018-01-24-the-erc-20-token-standard/index.html "The ERC-20 Token Standard"
 [06]: /2018-01-09-understanding-the-technology-behind-blockchain/index.html "Understanding the Technology behind Blockchain"
 [07]: /2018-01-01-bitcoin-the-year-in-review/index.html "Bitcoin The Year In Review"
-[08]: /2023-10-16-hsh-the-creation-of-a-quantum-resistant-cryptographic-hash-library-built-with-rust/index.html "How HSH Uses Quantum-Resistant Cryptography to Protect Your Data"
+[08]: /2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html "Protecting Data in the Quantum Age: The Hash Library (HSH)"
