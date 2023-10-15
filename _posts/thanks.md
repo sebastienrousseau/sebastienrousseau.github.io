@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
 date: "Oct 01, 2023"
-description: "Thank you for your interest in my work today. I am grateful for the time you took to learn more and look forward to hearing from you soon."
+description: "I just received your message. Thank you very much for your interest and query. I am working on your request and will get in touch as soon as possible."
 format-detection: "telephone=no"
 form-id: "mjvqpwyo"
 hreflang: "en"
@@ -42,7 +42,7 @@ short_name: "sebastienrousseau"
 subtitle: "Thank you for getting in touch!"
 tags: "contact,help,support"
 theme-color: "rgb(255, 39, 34)"
-title: "Sebastien Rousseau, Banking & Financial Service Professional"
+title: "Thank you for contacting me. I will be in touch shortly."
 url: "https://sebastienrousseau.com/thanks/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -55,7 +55,7 @@ item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/contact/rss.xml"
 item_link: "https://sebastienrousseau.com/contact/rss.xml"
 item_pub_date: "2023-10-01T01:01:01+01:00"
-item_title: "RSS"
+item_title: "Thank you for contacting me. I will be in touch shortly."
 last_build_date: "2023-10-01T01:01:01+01:00"
 managing_editor: "contact@sebastienrousseau.com"
 pub_date: "2023-10-01T01:01:01+01:00"
@@ -69,7 +69,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Sebastien Rousseau, Banking & Financial Service Professional"
+apple-mobile-web-app-title: "Thank you for contacting me. I will be in touch shortly."
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
@@ -80,11 +80,11 @@ msapplication-navbutton-color: "rgb(255, 39, 34)"
 
 twitter_card: "summary"
 twitter_creator: "wwdseb"
-twitter_description: "Thank you for your interest in my work today. I am grateful for the time you took to learn more and look forward to hearing from you soon."
+twitter_description: "I just received your message. Thank you very much for your interest and query. I am working on your request and will get in touch as soon as possible."
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "Sebastien Rousseau, Banking & Financial Service Professional"
+twitter_title: "Thank you for contacting me. I will be in touch shortly."
 twitter_url: "https://sebastienrousseau.com/thanks/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -99,19 +99,17 @@ site_software: "Shokunin, Rust"
 
 ---
 
-I appreciate you taking the time to fill out my form. I will review your
-submission and get back to you as soon as possible.
-
 In the meantime, here are a few things you can do:
 
-- [Explore my website](/). Learn more about my services, how I can help you, and what
+- [**Explore my website**](/): Learn more about my services, how I can help you, and what
   makes me different from other professionals in my field.
-- [Read my articles](/articles/index.html). I write about a variety of topics,
+- [**Read my articles**](/articles/index.html): I write about a variety of topics,
   including Artificial Intelligence (AI), Post-Quantum Cryptography (PQC),
   Blockchain Technology and Cryptocurrencies, and more.
+- [**Listen to my playlists**](/playlists/index.html): I am passionate about music
+  and have created playlists featuring a variety of genres. I hope you will
+  enjoy them as much as I do.
 
-Thank you again for your interest. I look forward to hearing from you soon!
-
-Sincerely,
+Best regards,
 
 Sebastien Rousseau
