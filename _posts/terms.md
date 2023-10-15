@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
 date: "Oct 01, 2023"
-description: "This Terms of Use page provides the rules for using https://sebastienrousseau.com."
+description: "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations."
 format-detection: "telephone=no"
 form-id: ""
 hreflang: "en"
@@ -42,7 +42,7 @@ short_name: "sebastienrousseau"
 subtitle: "Your privacy is important to us."
 tags: "agreement, copyright, intellectual property, liability, limitation, links, privacy, terms, trademark, use, website"
 theme-color: "rgb(255, 39, 34)"
-title: "Terms of Use"
+title: "Terms and Conditions of Use"
 url: "https://sebastienrousseau.com/terms/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -69,7 +69,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Terms of Use"
+apple-mobile-web-app-title: "Terms and Conditions of Use"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
@@ -80,11 +80,11 @@ msapplication-navbutton-color: "rgb(255, 39, 34)"
 
 twitter_card: "summary"
 twitter_creator: "wwdseb"
-twitter_description: "This Terms of Use page provides the rules for using https://sebastienrousseau.com."
+twitter_description: "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations."
 twitter_image: "https://kura.pro/Sebastien Rousseau/images/logos/Sebastien Rousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "Terms of Use"
+twitter_title: "Terms and Conditions of Use"
 twitter_url: "https://sebastienrousseau.com/terms/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -101,7 +101,7 @@ site_software: "Shokunin, Rust"
 
 ## Agreement to Terms of Use
 
-These Terms and Conditions of Use (the "Terms of Use") apply to the website
+These Terms and Conditions of Use (the "Terms and Conditions of Use") apply to the website
 located at <https://sebastienrousseau.com/> (the "Website").
 
 BY USING THE SITE, YOU AGREE TO THESE TERMS OF USE; IF YOU DO NOT AGREE, DO NOT

@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
 date: "Jan 24, 2018"
-description: "An Ethereum's Standard Interface for Tokens"
+description: "ERC-20: The Ethereum Token ERC-20 is the most common type of token used on the Ethereum blockchain and is often referred to as a smart contract digital contract"
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
@@ -41,7 +41,7 @@ short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
 tags: "ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, solidity"
 theme-color: "rgb(255, 39, 34)"
-title: "The ERC-20 Token Standard"
+title: "ERC-20: The Ethereum Token Interface That Changed the World"
 url: "https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -50,11 +50,11 @@ atom_link: "https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/r
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Shokunin 🦀 (version 0.0.19)"
-item_description: "An Ethereum's Standard Interface for Tokens"
+item_description: "ERC-20: The Ethereum Token ERC-20 is the most common type of token used on the Ethereum blockchain and is often referred to as a smart contract digital contract"
 item_guid: "https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/rss.xml"
 item_link: "https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/rss.xml"
 item_pub_date: "2018-01-24T09:00:00+00:00"
-item_title: "The ERC-20 Token Standard"
+item_title: "ERC-20: The Ethereum Token Interface That Changed the World"
 last_build_date: "2018-01-24T09:00:00+00:00"
 managing_editor: "contact@sebastienrousseau.com"
 pub_date: "2018-01-24T09:00:00+00:00"
@@ -79,11 +79,11 @@ msapplication-navbutton-color: "rgb(0, 102, 204)"
 
 twitter_card: "summary"
 twitter_creator: "wwdseb"
-twitter_description: "An Ethereum's Standard Interface for Tokens"
+twitter_description: "ERC-20: The Ethereum Token ERC-20 is the most common type of token used on the Ethereum blockchain and is often referred to as a smart contract digital contract"
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "The ERC-20 Token Standard"
+twitter_title: "ERC-20: The Ethereum Token Interface That Changed the World"
 twitter_url: "https://sebastienrousseau.com"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -157,6 +157,14 @@ The standardisation brought about by the ERC-20 protocol has had a direct econom
 
 Another notable benefit is that of enhanced security. The ERC-20 standard has undergone rigorous scrutiny by the Ethereum community, making it a robust and secure model for token implementation. Adherence to this standard implies that the fundamental aspects of the token’s smart contract adhere to community-accepted best practices. This minimises the risk of security vulnerabilities that could otherwise result from an improperly designed token model. While it is not a guarantee against all types of vulnerabilities, it is a significant step toward ensuring the overall security of tokens and by extension, the projects that utilise them.
 
-[❬ **Back To Articles**][00]
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-[00]: /articles/index.html
+**That concludes our time together. Thank you for your time!**
+
+If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉][11] or via the [Contact page][10]. Thank you again for your time and I look forward to hearing from you.
+
+[**❬ Back to Articles**][09]
+
+[09]: /articles/index.html "Back to Articles"
+[10]: /contact/index.html "Contact Sebastien Rousseau"
+[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"

@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
 date: "Jan 01, 2018"
-description: "The Peer-to-Peer Electronic Cash System that everyone is talking about."
+description: "Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
@@ -41,7 +41,7 @@ short_name: "sebastienrousseau"
 subtitle: "Bitcoin and Cryptocurrencies: Unlocking the Future of Finance"
 tags: "bitcoin, cryptocurrency, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, programmable money, future of money, financial revolution"
 theme-color: "rgb(255, 39, 34)"
-title: "Bitcoin The Year In Review"
+title: "Bitcoin: A Year In Review of the First Cryptocurrency"
 url: "https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -50,11 +50,11 @@ atom_link: "https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Shokunin 🦀 (version 0.0.19)"
-item_description: "The Peer-to-Peer Electronic Cash System that everyone is talking about."
+item_description: "Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online."
 item_guid: "https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/rss.xml"
 item_link: "https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/rss.xml"
 item_pub_date: "2018-01-01T20:20:20+00:00"
-item_title: "Bitcoin The Year In Review"
+item_title: "Bitcoin: A Year In Review of the First Cryptocurrency"
 last_build_date: "2018-01-01T20:20:20+00:00"
 managing_editor: "contact@sebastienrousseau.com"
 pub_date: "2018-01-01T20:20:20+00:00"
@@ -79,11 +79,11 @@ msapplication-navbutton-color: "rgb(0, 102, 204)"
 
 twitter_card: "summary"
 twitter_creator: "wwdseb"
-twitter_description: "The Peer-to-Peer Electronic Cash System that everyone is talking about."
+twitter_description: "Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online."
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "Bitcoin The Year In Review"
+twitter_title: "Bitcoin: A Year In Review of the First Cryptocurrency"
 twitter_url: "https://sebastienrousseau.com"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -208,6 +208,15 @@ As a digitally native asset outside the control of institutions, Bitcoin promise
 
 Bitcoin's influence on the digitization of finance is undeniable. It has opened a Pandora's box of possibilities that continue to unfold, making it the nucleus of finance's digital evolution.
 
-[❬ **Back To Articles**][00]
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-[00]: /articles/index.html
+**That concludes our time together. Thank you for your time!**
+
+If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉][11] or via the [Contact page][10]. Thank you again for your time and I look forward to hearing from you.
+
+[**❬ Back to Articles**][09]
+
+[09]: /articles/index.html "Back to Articles"
+[10]: /contact/index.html "Contact Sebastien Rousseau"
+[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
+

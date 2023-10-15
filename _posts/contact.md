@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
 date: "Oct 01, 2023"
-description: "You can contact me using the contact form below"
+description: "Have a question or comment? Please contact me using the form below. I am always happy to hear from you and will respond as soon as possible."
 format-detection: "telephone=no"
 form-id: "mjvqpwyo"
 hreflang: "en"
@@ -42,7 +42,7 @@ short_name: "sebastienrousseau"
 subtitle: "Need service or support? Get in touch!"
 tags: "contact,help,support"
 theme-color: "rgb(255, 39, 34)"
-title: "Let's Start a Conversation"
+title: "Let's Start a Conversation That Will Make a Real Difference"
 url: "https://sebastienrousseau.com/contact/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -69,7 +69,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Let's Start a Conversation"
+apple-mobile-web-app-title: "Let's Start a Conversation That Will Make a Real Difference"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
@@ -80,11 +80,11 @@ msapplication-navbutton-color: "rgb(255, 39, 34)"
 
 twitter_card: "summary"
 twitter_creator: "wwdseb"
-twitter_description: "You can contact me using the contact form below"
+twitter_description: "Have a question or comment? Please contact me using the form below. I am always happy to hear from you and will respond as soon as possible."
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "Let's Start a Conversation"
+twitter_title: "Let's Start a Conversation That Will Make a Real Difference"
 twitter_url: "https://sebastienrousseau.com/contact/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -99,5 +99,5 @@ site_software: "Shokunin, Rust"
 
 ---
 
-We will only use your personal information to protect your privacy. The data
+I will only use your personal information to protect your privacy. The data
 collected in the form below is solely for the purpose of answering your enquiry.

@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
 date: "Jan 09, 2018"
-description: "Building a Cryptocurrency on Ethereum: A Comprehensive Guide to Blockchain Development"
+description: "Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation"
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
@@ -50,7 +50,7 @@ atom_link: "https://sebastienrousseau.com/2018-01-09-understanding-the-technolog
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Shokunin 🦀 (version 0.0.19)"
-item_description: "Building a Cryptocurrency on Ethereum: A Comprehensive Guide to Blockchain Development"
+item_description: "Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation"
 item_guid: "https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/rss.xml"
 item_link: "https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/rss.xml"
 item_pub_date: "2023-01-09T09:09:00+00:00"
@@ -79,7 +79,7 @@ msapplication-navbutton-color: "rgb(0, 102, 204)"
 
 twitter_card: "summary"
 twitter_creator: "wwdseb"
-twitter_description: "Building a Cryptocurrency on Ethereum: A Comprehensive Guide to Blockchain Development"
+twitter_description: "Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation"
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
@@ -261,9 +261,18 @@ capabilities and limitations. This guide equips you with the knowledge and
 skills to embark on this exciting journey, fostering innovation and discovery
 in the ever-evolving world of blockchain and cryptocurrency development.
 
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+**That concludes our time together. Thank you for your time!**
+
+If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉][11] or via the [Contact page][10]. Thank you again for your time and I look forward to hearing from you.
+
+[**❬ Back to Articles**][09]
+
 [00]: https://geth.ethereum.org/downloads/
 [01]: https://geth.ethereum.org/docs/getting-started/installing-geth
-[02]: https://trufflesuite.com/docs
-[03]: /articles/index.html
+[09]: /articles/index.html "Back to Articles"
+[10]: /contact/index.html "Contact Sebastien Rousseau"
+[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
 
-[❬ **Back To Articles**][03]
+

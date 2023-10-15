@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
 date: "Feb 04, 2018"
-description: "A significant chapter in the ongoing evolution of the global financial landscape"
+description: "A significant chapter in the evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
@@ -41,7 +41,7 @@ short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
 tags: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
 theme-color: "rgb(255, 39, 34)"
-title: "Unveiling a new Cryptocurrency and offering Future Faster Payment Solution"
+title: "Unveiling a new Cryptocurrency and Faster Payment Solution"
 url: "https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -50,11 +50,11 @@ atom_link: "https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurre
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Shokunin 🦀 (version 0.0.19)"
-item_description: "A significant chapter in the ongoing evolution of the global financial landscape"
+item_description: "A significant chapter in the evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance."
 item_guid: "https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/rss.xml"
 item_link: "https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/rss.xml"
 item_pub_date: "2018-02-04T06:06:06+00:00"
-item_title: "Unveiling a new Cryptocurrency and offering Future Faster Payment Solution"
+item_title: "Unveiling a new Cryptocurrency and Faster Payment Solution"
 last_build_date: "2018-02-04T06:06:06+00:00"
 managing_editor: "contact@sebastienrousseau.com"
 pub_date: "2018-02-04T06:06:06+00:00"
@@ -79,11 +79,11 @@ msapplication-navbutton-color: "rgb(0, 102, 204)"
 
 twitter_card: "summary"
 twitter_creator: "wwdseb"
-twitter_description: "A significant chapter in the ongoing evolution of the global financial landscape"
+twitter_description: "A significant chapter in the evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance."
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "Unveiling a new Cryptocurrency and offering Future Faster Payment Solution"
+twitter_title: "Unveiling a new Cryptocurrency and Faster Payment Solution"
 twitter_url: "https://sebastienrousseau.com"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -135,8 +135,16 @@ The EXTC Network acknowledges that widespread adoption requires a recognisable a
 
 By building on the Ethereum blockchain and adhering to EIP20 standards, the EXTC token guarantees stability and security. This assurance serves as a powerful incentive for both individual users and businesses to embrace the new payment paradigm offered by the EXTC Network. As the network fosters a financial ecosystem that prioritises speed, security, and accessibility, it entices stakeholders to participate and contribute to the burgeoning landscape of faster payment solutions.
 
-In conclusion, the EXTC Network’s unveiling marks a significant chapter in the ongoing evolution of the global financial landscape. With a visionary approach to faster payment solutions, underpinned by the potential of cryptocurrencies and distributed ledgers, the network aims to redefine how transactions are conducted across the world. Its impact resonates not only within the realm of digital assets but also in reshaping traditional financial systems, ultimately propelling us towards a future where speed, security, and inclusivity define the way we exchange value.
+In conclusion, the EXTC Network’s unveiling marks A significant chapter in the ongoing evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance.. With a visionary approach to faster payment solutions, underpinned by the potential of cryptocurrencies and distributed ledgers, the network aims to redefine how transactions are conducted across the world. Its impact resonates not only within the realm of digital assets but also in reshaping traditional financial systems, ultimately propelling us towards a future where speed, security, and inclusivity define the way we exchange value.
 
-[❬ **Back To Articles**][00]
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-[00]: /articles/index.html
+**That concludes our time together. Thank you for your time!**
+
+If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉][11] or via the [Contact page][10]. Thank you again for your time and I look forward to hearing from you.
+
+[**❬ Back to Articles**][09]
+
+[09]: /articles/index.html "Back to Articles"
+[10]: /contact/index.html "Contact Sebastien Rousseau"
+[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"

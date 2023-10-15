@@ -41,7 +41,7 @@ short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
 tags: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
 theme-color: "rgb(255, 39, 34)"
-title: "Blockchain, the technology that matters"
+title: "Blockchain explained, the technology that matters the most"
 url: "https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -54,7 +54,7 @@ item_description: "A story of the extraordinary journey of securing digital tran
 item_guid: "https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/rss.xml"
 item_link: "https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/rss.xml"
 item_pub_date: "2018-01-02T02:20:02+00:00"
-item_title: "Blockchain, the technology that matters"
+item_title: "Blockchain explained, the technology that matters the most"
 last_build_date: "2018-01-02T02:20:02+00:00"
 managing_editor: "contact@sebastienrousseau.com"
 pub_date: "2018-01-02T02:20:02+00:00"
@@ -83,7 +83,7 @@ twitter_description: "A story of the extraordinary journey of securing digital t
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "Blockchain, the technology that matters"
+twitter_title: "Blockchain explained, the technology that matters the most"
 twitter_url: "https://sebastienrousseau.com"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -106,7 +106,7 @@ Blockchain, the underlying technology driving the meteoric rise of cryptocurrenc
 
 ### The Genesis of Decentralized Consensus
 
-Blockchain emerged as the foundational innovation that enabled the development of cryptocurrencies like Bitcoin. At its core, blockchain serves as an open, distributed ledger that records transactions in a verifiable and permanent manner.
+Blockchain emerged as the foundational innovation that enabled the development of cryptocurrencies like [Bitcoin][08]. At its core, blockchain serves as an open, distributed ledger that records transactions in a verifiable and permanent manner.
 
 By allowing digital information to be distributed without being copied, blockchain pioneered a groundbreaking peer-to-peer system for establishing consensus and trust. For the first time, transactions could be approved decentralised without centralised intermediaries.
 
@@ -182,6 +182,15 @@ By eliminating trusted third parties, blockchain offers the potential to restruc
 
 Like the internet before it, blockchain is a foundational technology poised to unlock new models powered by peer-to-peer transparency and trust. This revolutionary innovation promises to reshape our digital economies and connected lives in the years ahead.
 
-[❬ **Back To Articles**][00]
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-[00]: /articles/index.html
+**That concludes our time together. Thank you for your time!**
+
+If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉][11] or via the [Contact page][10]. Thank you again for your time and I look forward to hearing from you.
+
+[**❬ Back to Articles**][09]
+
+[08]: /2018-01-01-bitcoin-the-year-in-review/index.html
+[09]: /articles/index.html "Back to Articles"
+[10]: /contact/index.html "Contact Sebastien Rousseau"
+[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"

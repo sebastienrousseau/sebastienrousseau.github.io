@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
 date: "Oct 01, 2023"
-description: "It looks like you’re offline. Check your connection and try again."
+description: "I apologise for the inconvenience. To continue, please connect to a Wi-Fi network or enable cellular data, you can also:"
 format-detection: "telephone=no"
 form-id: ""
 hreflang: "en"
@@ -42,7 +42,7 @@ short_name: "sebastienrousseau"
 subtitle: "Check your connection and try again."
 tags: ""
 theme-color: "rgb(255, 39, 34)"
-title: "No Internet Connection"
+title: "No Internet Connection detected. Please try again later."
 url: "https://sebastienrousseau.com/offline/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -69,7 +69,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "No Internet Connection"
+apple-mobile-web-app-title: "No Internet Connection detected. Please try again later."
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
@@ -80,11 +80,11 @@ msapplication-navbutton-color: "rgb(255, 39, 34)"
 
 twitter_card: "summary"
 twitter_creator: "wwdseb"
-twitter_description: "It looks like you’re offline. Check your connection and try again."
+twitter_description: "I apologise for the inconvenience. To continue, please connect to a Wi-Fi network or enable cellular data, you can also:"
 twitter_image: "https://kura.pro/Sebastien Rousseau/images/logos/Sebastien Rousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "No Internet Connection"
+twitter_title: "No Internet Connection detected. Please try again later."
 twitter_url: "https://sebastienrousseau.com/offline/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -101,8 +101,10 @@ site_software: "Shokunin, Rust"
 
 Try:
 
-- Turning off airplane mode.
-- Turning on Wi-Fi, mobile data, or cellular data.
-- Checking the signal in your area.
+- Checking for any security settings that could be blocking the connection.
 - Checking the cables and connections.
+- Checking the signal in your area.
+- Clearing your browser's cache and cookies.
+- Resetting your modem or router.
 - Restarting your router.
+- Turning off airplane mode.

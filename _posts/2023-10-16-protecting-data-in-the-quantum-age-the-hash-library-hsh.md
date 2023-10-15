@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
 date: "Oct 16, 2023"
-description: "How HSH Uses Quantum-Resistant Cryptographic Primitives to Protect Your Data"
+description: "HSH uses quantum-resistant cryptographic primitives to protect your data, ensuring its security even in the face of future quantum computing advances."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
@@ -100,6 +100,8 @@ site_software: "Shokunin, Rust"
 
 ![A creative illustration on Quantum computing theme](https://kura.pro/stock/images/banners/galina-nelyubova-7ej8VWfwFsg.webp).class=\"img-fluid clearfix\"
 
+In this article, I will examine the uses of quantum-resistant cryptography, specifically addressing the Rust Hash Library (HSH) that I developed. This library is fully optimised for cryptographic hashing and verification functions.
+
 ## Insight
 
 ### The Emerging Threat of Quantum Computing
@@ -155,8 +157,6 @@ Organisations must take the necessary precautions to protect their data from the
 
 * **Quantum entanglement** can be used to create quantum key distribution (QKD) systems, which can generate and distribute secure cryptographic keys over long distances. QKD systems are immune to attacks by quantum computers, making them ideal for protecting sensitive financial data.
 
-In this article, I will examine the uses of quantum-resistant cryptography, specifically addressing the Rust Hash Library (HSH) that I developed. This library is fully optimised for cryptographic hashing and verification functions.
-
 ## Idea
 
 ### The Hash Library (HSH): Pioneering Interoperability in Quantum-Resistant Cryptography
@@ -179,11 +179,11 @@ Additionally, the library guarantees that not only are the results secure and ef
 
 ### Navigating the Quantum Computing Landscape Securely
 
-* **Security Assurance**: Using the [Hash Library (HSH) ⧉][00], provides an assurance to organizations that their data remains secure.
+* **Security Assurance**: Using the Hash Library (HSH), provides an assurance to organizations that their data remains secure.
 
 * **Future-Proofing**: Adopting quantum-resistant algorithms now will safeguard organizations from potential future vulnerabilities.
 
-* **Cost Efficiency**: The [Hash Library (HSH) ⧉][00] is open source and can be used without the need for expensive licenses or subscription fees. This makes it an attractive option to organizations that are looking to keep their costs low while still having access to secure quantum computing.
+* **Cost Efficiency**: The Hash Library (HSH) is open source and can be used without the need for expensive licenses or subscription fees. This makes it an attractive option to organizations that are looking to keep their costs low while still having access to secure quantum computing.
 
 ### Maintaining Consumer Trust
 
@@ -194,9 +194,9 @@ Additionally, the library guarantees that not only are the results secure and ef
 ### HSH: The Ultimate Quantum-Resistant Hash Library
 
 * **Elevated Performance**: Leveraging the Rust-based [Hash Library (HSH) ⧉][00] provides security, efficiency, and performance.
-Cross-Platform Consistency: The [Hash Library (HSH) ⧉][00] protects data across platforms and applications.
+Cross-Platform Consistency: The Hash Library (HSH) protects data across platforms and applications.
 
-* **Ease of Implementation**: The [Hash Library (HSH) ⧉][00] provides developers with a tool that is easy to implement, reducing the barrier to adopting quantum-resistant algorithms.
+* **Ease of Implementation**: The Hash Library (HSH) provides developers with a tool that is easy to implement, reducing the barrier to adopting quantum-resistant algorithms.
 
 ## Conclusion
 
@@ -204,15 +204,22 @@ The [Hash Library (HSH) ⧉][00] provides a lightweight, efficient, and user-fri
 
 Quantum-resistant cryptography is a rapidly evolving field, and the HSH library is committed to staying ahead of the curve. The library is regularly updated with new algorithms and features to protect against emerging threats.
 
-[The National Institute of Standards and Technology (NIST) ⧉][03] is currently defining a set of post-quantum cryptographic algorithms standards, through its [Post-Quantum Cryptography (PQC) project ⧉][04].
+[The National Institute of Standards and Technology (NIST) ⧉][02] is currently defining a set of post-quantum cryptographic algorithms standards, through its [Post-Quantum Cryptography (PQC) project ⧉][03].
 
 Protecting your data from quantum computing attacks is essential for any organisation that handles sensitive data. The [Hash Library (HSH) ⧉][00] is a powerful tool that can help you protect your data from this emerging threat.
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+**That concludes our time together. Thank you for your time!**
+
+If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉][11] or via the [Contact page][10]. Thank you again for your time and I look forward to hearing from you.
 
 [**❬ Back to Articles**][09]
 
 [00]: https://crates.io/crates/hsh "The Hash Library (HSH) - Quantum-Resistant Cryptographic Hash Library for Password Hashing and Verification"
 [01]: https://kura.pro/stock/diagrams/alice-bob-eve-encryption.svg "Secure Yet Vulnerable: Navigating Cryptographic Challenges in the Quantum Era"
-[02]: https://hshlib.one "Protecting Data in the Quantum Age: The Hash Library (HSH)"
-[03]: https://www.nist.gov/ "National Institute of Standards and Technology"
-[04]: https://csrc.nist.gov/projects/post-quantum-cryptography "Post-Quantum Cryptography PQC"
+[02]: https://www.nist.gov/ "National Institute of Standards and Technology"
+[03]: https://csrc.nist.gov/projects/post-quantum-cryptography "Post-Quantum Cryptography PQC"
 [09]: /articles/index.html "Back to Articles"
+[10]: /contact/index.html "Contact Sebastien Rousseau"
+[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"

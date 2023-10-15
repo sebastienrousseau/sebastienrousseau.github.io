@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
 date: "Feb 15, 2018"
-description: "Building a comprehensive framework of the next generation of ERC-223 compliant tokens"
+description: "Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
@@ -38,7 +38,7 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Building a comprehensive framework of the next generation of ERC-223 compliant tokens"
+subtitle: "Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard."
 tags: "mathematical constants, cryptographic constants, rust, cmn library, secure, reliable, accurate, portability, performance, documentation, versatility"
 theme-color: "rgb(255, 39, 34)"
 title: "The making of the Express Transaction Credits Platform"
@@ -50,7 +50,7 @@ atom_link: "https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-t
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Shokunin 🦀 (version 0.0.19)"
-item_description: "Building a comprehensive framework of the next generation of ERC-223 compliant tokens"
+item_description: "Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard."
 item_guid: "https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/rss.xml"
 item_link: "https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/rss.xml"
 item_pub_date: "2018-02-15T18:18:18+00:00"
@@ -79,7 +79,7 @@ msapplication-navbutton-color: "rgb(0, 102, 204)"
 
 twitter_card: "summary"
 twitter_creator: "wwdseb"
-twitter_description: "Building a comprehensive framework of the next generation of ERC-223 compliant tokens"
+twitter_description: "Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard."
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
@@ -152,6 +152,14 @@ As the platform gains momentum and adoption, its impact on the financial landsca
 
 Whether you’re a tech enthusiast, a financial professional, or simply curious about the future of finance, EXTC is a platform that invites exploration and engagement.
 
-[**❬ Back to Articles**][00]
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-[00]: /articles/index.html
+**That concludes our time together. Thank you for your time!**
+
+If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉][11] or via the [Contact page][10]. Thank you again for your time and I look forward to hearing from you.
+
+[**❬ Back to Articles**][09]
+
+[09]: /articles/index.html "Back to Articles"
+[10]: /contact/index.html "Contact Sebastien Rousseau"
+[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"

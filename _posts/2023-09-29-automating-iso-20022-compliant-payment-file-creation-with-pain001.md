@@ -41,7 +41,7 @@ short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
 tags: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
 theme-color: "rgb(255, 39, 34)"
-title: "Automating ISO 20022-Compliant Payment File Creation with Pain001"
+title: "Automating ISO 20022 Payment Files Creation with Pain001"
 url: "https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -54,7 +54,7 @@ item_description: "Streamlining the creation and compliance of ISO20022 Payment 
 item_guid: "https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/rss.xml"
 item_link: "https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/rss.xml"
 item_pub_date: "2023-09-29T09:57:00+01:00"
-item_title: "Automating ISO 20022-Compliant Payment File Creation with Pain001"
+item_title: "Automating ISO 20022 Payment Files Creation with Pain001"
 last_build_date: "2023-09-29T09:57:00+01:00"
 managing_editor: "contact@sebastienrousseau.com"
 pub_date: "2023-09-29T09:57:00+01:00"
@@ -83,7 +83,7 @@ twitter_description: "Streamlining the creation and compliance of ISO20022 Payme
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "Automating ISO 20022-Compliant Payment File Creation with Pain001"
+twitter_title: "Automating ISO 20022 Payment Files Creation with Pain001"
 twitter_url: "https://sebastienrousseau.com"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -190,10 +190,19 @@ reshapes the way you manage payments.
 
 *This article also available on [Medium ⧉][03]*
 
-[**❬ Back to Articles**][04]
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+**That concludes our time together. Thank you for your time!**
+
+If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉][11] or via the [Contact page][10]. Thank you again for your time and I look forward to hearing from you.
+
+[**❬ Back to Articles**][09]
 
 [00]: https://pain001.com/ "Pain001: Automate ISO 20022-Compliant Payment File Creation"
 [01]: https://www.iso20022.org/ "ISO 20022: A single standardisation approach (methodology, process, repository) to be used by all financial standards initiatives"
 [02]: https://pain001.com/index.html "Embrace the future of payment automation with Pain001"
 [03]: https://medium.com/@wwdseb/automating-iso-20022-compliant-payment-file-creation-with-pain001-5e32f789155a "Embrace the future of payment automation with Pain001"
-[04]: /articles/index.html "Back to Articles"
+[09]: /articles/index.html "Back to Articles"
+[10]: /contact/index.html "Contact Sebastien Rousseau"
+[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
+

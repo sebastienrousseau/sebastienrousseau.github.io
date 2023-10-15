@@ -13,7 +13,7 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
 date: "Oct 8, 2023"
-description: "Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking and Financial Services"
+description: "Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking & Financial Services"
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
@@ -41,7 +41,7 @@ short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
 tags: "banking, financial services, artificial intelligence, post-quantum cryptography, blockchain technology, transformation, innovation, technology, future, Sebastien Rousseau"
 theme-color: "rgb(255, 39, 34)"
-title: "Sebastien Rousseau, Banking and Financial Service Professional"
+title: "Sebastien Rousseau, Banking & Financial Service Professional"
 url: "https://sebastienrousseau.com"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -68,7 +68,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Sebastien Rousseau, Banking and Financial Service Professional"
+apple-mobile-web-app-title: "Sebastien Rousseau, Banking & Financial Service Professional"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
@@ -79,11 +79,11 @@ msapplication-navbutton-color: "rgb(255, 39, 34)"
 
 twitter_card: "summary"
 twitter_creator: "wwdseb"
-twitter_description: "Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking and Financial Services"
+twitter_description: "Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking & Financial Services"
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "Sebastien Rousseau, Banking and Financial Service Professional"
+twitter_title: "Sebastien Rousseau, Banking & Financial Service Professional"
 twitter_url: "https://sebastienrousseau.com"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -116,7 +116,7 @@ Read the latest articles below, and [**see all articles, news and product announ
 
 [![Banner](https://kura.pro/stock/images/banners/galina-nelyubova-7ej8VWfwFsg.webp).class=\"zoom-out w-25 p-3 float-start\"][03]
 
-### Protecting Data in the Quantum Age: The Hash Library (HSH)
+### [Protecting Data in the Quantum Age: The Hash Library (HSH)][03]
 
 *by [Sebastien Rousseau][00] (16 Oct 2023)*
 
@@ -128,7 +128,7 @@ The Hash Library (HSH) provides a lightweight, efficient, and user-friendly solu
 
 [![Banner](https://kura.pro/stock/images/banners/anna-nekrashevich-8534387.webp).class=\"zoom-out w-25 p-3 float-start\"][01]
 
-### Shokunin, the fastest Rust-based Static Site Generator (SSG)
+### [Shokunin, the fastest Rust-based Static Site Generator (SSG)][01]
 
 *by [Sebastien Rousseau][00] (9 Oct 2023)*
 
@@ -140,7 +140,7 @@ Empowering you to create high-impact static websites with infinite possibilities
 
 [![Banner](https://kura.pro/stock/images/banners/andrea-de-santis-T3Qen8vVgRc.webp).class=\"zoom-out w-25 p-3 float-start\"][02]
 
-### Automating ISO 20022-Compliant Payment File Creation with Pain001
+### [Automating ISO 20022 Payment Files Creation with Pain001][02]
 
 *by [Sebastien Rousseau][00] (29 Sep 2023)*
 
@@ -152,8 +152,8 @@ Streamlining the creation and compliance of ISO20022 Payment Messages for cross-
 
 [**See all articles** ❯][10]
 
-[00]: /about/index.html "About Sebastien Rousseau, Banking and Financial Service Professional"
+[00]: /about/index.html "About Sebastien Rousseau, Banking & Financial Service Professional"
 [01]: /2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
-[02]: /2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html "Automating ISO 20022-Compliant Payment File Creation with Pain001"
+[02]: /2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html "Automating ISO 20022 Payment Files Creation with Pain001"
 [03]: /2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html "Protecting Data in the Quantum Age: The Hash Library (HSH)"
 [10]: /articles/index.html "See all articles"

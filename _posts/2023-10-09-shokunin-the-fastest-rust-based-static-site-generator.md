@@ -168,6 +168,12 @@ Ready to create a high-performance static website in minutes that will boost you
 
 [**Try Shokunin ⧉**][00] for free today and see the difference!
 
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+**That concludes our time together. Thank you for your time!**
+
+If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉][11] or via the [Contact page][10]. Thank you again for your time and I look forward to hearing from you.
+
 [**❬ Back to Articles**][09]
 
 [00]: https://shokunin.one/ "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
@@ -180,4 +186,6 @@ Ready to create a high-performance static website in minutes that will boost you
 [07]: https://www.rust-lang.org/tools/install "Rust Installation Guide"
 [08]: https://www.markdownguide.org/ "The Markdown Guide"
 [09]: /articles/index.html "Back to Articles"
+[10]: /contact/index.html "Contact Sebastien Rousseau"
+[11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
 
