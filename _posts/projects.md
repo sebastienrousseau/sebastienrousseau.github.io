@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
-date: "Oct 01, 2023"
+date: "Oct 26, 2023"
 description: "Open Source Innovation: Collaboration and Experimentation"
 format-detection: "telephone=no"
 hreflang: "en"
@@ -53,11 +53,11 @@ generator: "Shokunin 🦀 (version 0.0.19)"
 item_description: "Open Source Innovation: Collaboration and Experimentation"
 item_guid: "https://sebastienrousseau.com/projects/rss.xml"
 item_link: "https://sebastienrousseau.com/projects/rss.xml"
-item_pub_date: "2023-10-01T01:01:01+01:00"
+item_pub_date: "2023-10-26T00:48:11+01:00"
 item_title: "Projects"
-last_build_date: "2023-10-01T01:01:01+01:00"
+last_build_date: "2023-10-26T00:48:11+01:00"
 managing_editor: "contact@sebastienrousseau.com"
-pub_date: "2023-10-01T01:01:01+01:00"
+pub_date: "2023-10-26T00:48:11+01:00"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -91,7 +91,7 @@ author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2023-07-05"
+site_last_updated: "2023-10-26"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Shokunin, Rust"
@@ -134,7 +134,7 @@ processing.
 
 ### Shokunin Static Site Generator
 
-[![Shokunin, the fastest Rust-based Static Site Generator (SSG)](https://kura.pro/stock/images/banners/lan-pham-4qG2qqXi3tY.webp).class=\"fade-in zoom-in card-img-top\"][01]
+[![Shokunin, the fastest Rust-based Static Site Generator (SSG)](https://kura.pro/stock/images/banners/fuji.webp).class=\"fade-in zoom-in card-img-top\"][01]
 
 **Shokunin Static Site Generator (SSG)**: A blazing-fast Static Site Generator
 (SSG) built with Rust. Intended to make it simple and quick to generate websites
@@ -314,7 +314,6 @@ cryptographic constants.
   <div class="card border-0">
 <!-- markdownlint-restore -->
 
-
 ### Dotfiles
 
 [![Dotfiles](https://kura.pro/dotfiles/v2/images/banners/dotfiles.webp).class=\"fade-in zoom-in card-img-top\"][12]
@@ -329,6 +328,59 @@ cryptographic constants.
 </div>
 <!-- markdownlint-restore -->
 
+<!-- markdownlint-disable MD033 -->
+</div>
+</div>
+</div>
+<!-- markdownlint-restore -->
+
+<!-- markdownlint-disable MD033 -->
+<div class="row">
+  <div class="col">
+    <div class="card border-0">
+<!-- markdownlint-restore -->
+
+### Kaishi, a Starter Template
+
+[![Kaishi, a Starter Template for Shokunin)](https://kura.pro/stock/images/banners/bee-on-a-yellow-flower.webp).class=\"fade-in zoom-in card-img-top\"][13]
+
+**Kaishi, a Starter Template for Shokunin**: Make beautiful websites with Kaishi, a Shokunin Static Site Generator starter template.
+
+[**Learn more**  ⧉][13]
+
+<!-- markdownlint-disable MD033 -->
+</div></div>
+<div class="col">
+  <div class="card border-0">
+<!-- markdownlint-restore -->
+
+### AudioTextPro
+
+[![AudioTextPro](https://kura.pro/stock/images/banners/pramod-tiwari-Br0F5xMArxI.webp).class=\"fade-in zoom-in card-img-top\"][14]
+
+**AudioTextPro**: Convert audio to text accurately in real-time using our advanced AI speech recognition technology.
+
+[**Learn more**  ⧉][14]
+
+<!-- markdownlint-disable MD033 -->
+</div></div>
+<div class="col">
+  <div class="card border-0">
+<!-- markdownlint-restore -->
+
+### Skeletonic Stylus Library
+
+[![Skeletonic Stylus Library](https://kura.pro/skeletonic/images/banner/skeletonic.webp).class=\"fade-in zoom-in card-img-top\"][15]
+
+**Skeletonic Stylus Library**: a lightweight and modular Stylus Library. It contains a suite of components and mixins optimised for mobile and web application design and development.
+
+[**Learn more**  ⧉][15]
+
+<!-- markdownlint-disable MD033 -->
+</div>
+</div>
+</div>
+<!-- markdownlint-restore -->
 
 [00]: https://pain001.com "Pain001: Automate ISO 20022-Compliant Payment File Creation ⧉"
 [01]: https://shokunin.one "Shokunin: The fastest Rust-based Static Site Generator (SSG) ⧉"
@@ -343,3 +395,6 @@ cryptographic constants.
 [10]: https://maccfg.com/ "MacBook Pro M1 Software Development Setup (macOS Config)"
 [11]: http://minifunctions.com/ "Highly performant utility and wrapper functions library for Rust"
 [12]: https://dotfiles.io/ "The next generation of Bash configuration files for macOS, Linux and Windows"
+[13]: https://kaishi.one/ "Kaishi, a Starter Template for Shokunin"
+[14]: https://audiotextpro.com/ "Convert audio to text accurately in real-time using our advanced AI speech recognition technology"
+[15]: https://skeletonic.io/ "Skeletonic Stylus Library: a lightweight and modular Stylus Library"
