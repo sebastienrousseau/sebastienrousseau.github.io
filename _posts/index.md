@@ -114,6 +114,18 @@ Read the latest articles below, and [**see all articles, news and product announ
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
+[![Banner](https://kura.pro/stock/images/banners/tarik-haiga-3637943.webp).class=\"zoom-out w-25 p-3 float-start\"][04]
+
+### [Streamlining Rust Library Development with Code Generation][04]
+
+*by [Sebastien Rousseau][00] (26 Oct 2023)*
+
+Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.
+
+[**Learn more ❯**][04]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
 [![Banner](https://kura.pro/stock/images/banners/galina-nelyubova-7ej8VWfwFsg.webp).class=\"zoom-out w-25 p-3 float-start\"][03]
 
 ### [Protecting Data in the Quantum Age: The Hash Library (HSH)][03]
@@ -156,4 +168,5 @@ Streamlining the creation and compliance of ISO20022 Payment Messages for cross-
 [01]: /2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
 [02]: /2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html "Automating ISO 20022 Payment Files Creation with Pain001"
 [03]: /2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html "Protecting Data in the Quantum Age: The Hash Library (HSH)"
+[04]: /2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html "Streamlining Rust Library Development with Code Generation"
 [10]: /articles/index.html "See all articles"

@@ -4,8 +4,8 @@
 
 author: "Sebastien Rousseau"
 banner_alt: "Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right"
-banner_height: "571px"
-banner_width: "1425px"
+banner_height: "100vh"
+banner_width: "100vw"
 banner: "https://kura.pro/stock/images/banners/anna-nekrashevich-8534387.webp"
 cdn: "https://kura.pro"
 changefreq: "weekly"

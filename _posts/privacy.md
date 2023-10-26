@@ -42,7 +42,7 @@ short_name: "sebastienrousseau"
 subtitle: "Your privacy is important to us."
 tags: "privacy, personal data, tracking tools, Google Analytics, Microsoft Clarity, user behaviour analytics, mouse movements, clicks, scrolls, rights, contact"
 theme-color: "rgb(255, 39, 34)"
-title: "Privacy Statement"
+title: "Privacy Statement: How We Use Your Data"
 url: "https://sebastienrousseau.com/privacy/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -69,7 +69,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Privacy Statement"
+apple-mobile-web-app-title: "Privacy Statement: How We Use Your Data"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
@@ -84,7 +84,7 @@ twitter_description: "This page informs you of our policies regarding the collec
 twitter_image: "https://kura.pro/Sebastien Rousseau/images/logos/Sebastien Rousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "Privacy Statement"
+twitter_title: "Privacy Statement: How We Use Your Data"
 twitter_url: "https://sebastienrousseau.com/privacy/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).

@@ -4,8 +4,8 @@
 
 author: "Sebastien Rousseau"
 banner_alt: "Giant white pillars"
-banner_height: "571px"
-banner_width: "1425px"
+banner_height: "100vh"
+banner_width: "100vw"
 banner: "https://kura.pro/stock/images/banners/alis-po-IdVNRv-5wJo.webp"
 cdn: "https://kura.pro"
 changefreq: "weekly"

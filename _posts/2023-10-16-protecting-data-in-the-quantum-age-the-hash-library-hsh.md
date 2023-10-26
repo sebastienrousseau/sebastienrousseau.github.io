@@ -4,8 +4,8 @@
 
 author: "Sebastien Rousseau"
 banner_alt: "A creative illustration on Quantum computing theme"
-banner_height: "571px"
-banner_width: "1425px"
+banner_height: "100vh"
+banner_width: "100vw"
 banner: "https://kura.pro/stock/images/banners/galina-nelyubova-7ej8VWfwFsg.webp"
 cdn: "https://kura.pro"
 changefreq: "weekly"

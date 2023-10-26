@@ -4,8 +4,8 @@
 
 author: "Sebastien Rousseau"
 banner_alt: "A pile of gold and silver coins sitting on top of a table"
-banner_height: "571px"
-banner_width: "1425px"
+banner_height: "100vh"
+banner_width: "100vw"
 banner: "https://kura.pro/stock/images/banners/traxer-AIKjbZdNOlw.webp"
 cdn: "https://kura.pro"
 changefreq: "weekly"

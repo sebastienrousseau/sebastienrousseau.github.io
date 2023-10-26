@@ -41,7 +41,7 @@ short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
 tags: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML"
 theme-color: "rgb(255, 39, 34)"
-title: "Articles"
+title: "Discover How Technology Is Changing Banking and Finance"
 url: "https://sebastienrousseau.com/articles/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -68,7 +68,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Articles"
+apple-mobile-web-app-title: "Discover How Technology Is Changing Banking and Finance"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
@@ -83,7 +83,7 @@ twitter_description: "Insights on AI, Quantum Cryptography, Blockchain, Rust, an
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "wwdseb"
-twitter_title: "Articles"
+twitter_title: "Discover How Technology Is Changing Banking and Finance"
 twitter_url: "https://sebastienrousseau.com/articles/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -112,6 +112,18 @@ You can find below a selection of articles that I have written over the years
 on these topics.
 
 ## Our Stories
+
+### [Streamlining Rust Library Development with Code Generation][10]
+
+[![Banner](https://kura.pro/stock/images/banners/tarik-haiga-3637943.webp).class=\"zoom-in w-25 p-3 float-start\"][10]
+
+*by [Sebastien Rousseau][00] (26 Oct 2023)*
+
+Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.
+
+[**Read full story ❯**][10]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
 ### [Protecting Data in the Quantum Age: The Hash Library (HSH)][08]
 
@@ -231,4 +243,5 @@ Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential 
 [06]: /2018-01-09-understanding-the-technology-behind-blockchain/index.html "Understanding the Technology behind Blockchain"
 [07]: /2018-01-01-bitcoin-the-year-in-review/index.html "Bitcoin: A Year In Review of the First Cryptocurrency"
 [08]: /2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html "Protecting Data in the Quantum Age: The Hash Library (HSH)"
-[09]: /2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html
+[09]: /2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html "Blockchain explained, the technology that matters the most"
+[10]: /2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html "Streamlining Rust Library Development with Code Generation"

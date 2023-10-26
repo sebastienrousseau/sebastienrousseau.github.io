@@ -4,8 +4,8 @@
 
 author: "Sebastien Rousseau"
 banner_alt: "Turned off laptop computer on top of brown wooden table"
-banner_height: "571px"
-banner_width: "1425px"
+banner_height: "100vh"
+banner_width: "100vw"
 banner: "https://kura.pro/stock/images/banners/m-ZzOa5G8hSPI.webp"
 cdn: "https://kura.pro"
 changefreq: "weekly"

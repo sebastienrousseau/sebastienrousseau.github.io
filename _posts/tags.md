@@ -4,8 +4,8 @@
 
 author: "Sebastien Rousseau"
 banner_alt: "A white and blue building with blue windows"
-banner_height: "571px"
-banner_width: "1425px"
+banner_height: "100vh"
+banner_width: "100vw"
 banner: "https://kura.pro/unsplash/images/banners/marek-piwnicki-11829333.webp" ## The banner of the site.
 cdn: "https://kura.pro"
 changefreq: "weekly"
