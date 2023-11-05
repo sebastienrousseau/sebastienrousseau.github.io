@@ -110,7 +110,19 @@ technologies, including Artificial Intelligence (AI), Post-Quantum Cryptography
 I will discuss their potential to impact various industries and aspects of our
 lives and how they can be applied to solve real-world problems.
 
-Read the latest articles below, and [**see all articles, news and product announcements**][03].
+Read the latest articles below, and [**see all articles, news and product announcements**][10].
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+[![Banner](https://kura.pro/stock/images/banners/antoine-dautry-05A-kdOH6Hw.webp).class=\"zoom-out w-25 p-3 float-start\"][05]
+
+### [Mathematical and Cryptographic Constants for Rust Security][05]
+
+*by [Sebastien Rousseau][00] (05 Nov 2023)*
+
+Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security.
+
+[**Learn more ❯**][05]
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
@@ -169,4 +181,5 @@ Streamlining the creation and compliance of ISO20022 Payment Messages for cross-
 [02]: /2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html "Automating ISO 20022 Payment Files Creation with Pain001"
 [03]: /2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html "Protecting Data in the Quantum Age: The Hash Library (HSH)"
 [04]: /2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html "Streamlining Rust Library Development with Code Generation"
+[05]: /2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html "Mathematical and Cryptographic Constants for Rust Security"
 [10]: /articles/index.html "See all articles"
