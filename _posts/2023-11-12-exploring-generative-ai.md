@@ -248,6 +248,6 @@ In closing, I hope this article has sparked your interest in the exciting world 
 
 Thank you again for your time and I look forward to hearing from you.
 
-[contact]: https://sebastienrousseau.com/contact/index.html "Contact"
+[contact]: /contact/index.html "Contact"
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
 [linkedin]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
