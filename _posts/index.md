@@ -114,6 +114,18 @@ Read the latest articles below, and [**see all articles, news and product announ
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
+[![Banner](https://kura.pro/stock/images/banners/getty-images-aTWKwJllPOA.webp).class=\"zoom-out w-25 p-3 float-start\"][06]
+
+### [Exploring Generative AI: Shaping the Future of Technology][06]
+
+*by [Sebastien Rousseau][00] (12 Nov 2023)*
+
+Embark on a Journey to Explore Generative AI: Investigating Its Impact, Ethical Implications, and Future Synergies.
+
+[**Learn more ❯**][06]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
 [![Banner](https://kura.pro/stock/images/banners/antoine-dautry-05A-kdOH6Hw.webp).class=\"zoom-out w-25 p-3 float-start\"][05]
 
 ### [Mathematical and Cryptographic Constants for Rust Security][05]
@@ -182,4 +194,5 @@ Streamlining the creation and compliance of ISO20022 Payment Messages for cross-
 [03]: /2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html "Protecting Data in the Quantum Age: The Hash Library (HSH)"
 [04]: /2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html "Streamlining Rust Library Development with Code Generation"
 [05]: /2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html "Mathematical and Cryptographic Constants for Rust Security"
+[06]: /2023-11-12-exploring-generative-ai/index.html "Exploring Generative AI: Shaping the Future of Technology"
 [10]: /articles/index.html "See all articles"

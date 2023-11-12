@@ -113,6 +113,18 @@ on these topics.
 
 ## Our Stories
 
+### [Exploring Generative AI: Shaping the Future of Technology][12]
+
+[![Banner](https://kura.pro/stock/images/banners/getty-images-aTWKwJllPOA.webp).class=\"zoom-in w-25 p-3 float-start\"][12]
+
+*by [Sebastien Rousseau][00] (12 Nov 2023)*
+
+Embark on a Journey to Explore Generative AI: Investigating Its Impact, Ethical Implications, and Future Synergies.
+
+[**Read full story ❯**][12]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
 ### [Mathematical and Cryptographic Constants for Rust Security][11]
 
 [![Banner](https://kura.pro/stock/images/banners/antoine-dautry-05A-kdOH6Hw.webp).class=\"zoom-in w-25 p-3 float-start\"][11]
@@ -258,3 +270,4 @@ Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential 
 [09]: /2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html "Blockchain explained, the technology that matters the most"
 [10]: /2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html "Streamlining Rust Library Development with Code Generation"
 [11]: /2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html "Mathematical and Cryptographic Constants for Rust Security"
+[12]: /2023-11-12-exploring-generative-ai/index.html "Exploring Generative AI: Shaping the Future of Technology"

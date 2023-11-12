@@ -118,7 +118,7 @@ Here are some of my latest personal projects:
 
 ### Pain001
 
-[![Pain001](https://kura.pro/stock/images/banners/ian-dooley-DuBNA1QMpPA.webp).class=\"fade-in zoom-in card-img-top\"][00]
+[![Pain001](https://kura.pro/stock/images/banners/ian-dooley-DuBNA1QMpPA.webp).class=\"fade-in card-img-top\"][00]
 
 **Pain001**: A powerful Python library for ISO 20022 compliant payment file
 creation from CSV or SQLite data files, simplifying payment automation and
@@ -134,14 +134,13 @@ processing.
 
 ### Shokunin Static Site Generator
 
-[![Shokunin, the fastest Rust-based Static Site Generator (SSG)](https://kura.pro/stock/images/banners/fuji.webp).class=\"fade-in zoom-in card-img-top\"][01]
+[![Shokunin, the fastest Rust-based Static Site Generator (SSG)](https://kura.pro/stock/images/banners/fuji.webp).class=\"fade-in card-img-top\"][01]
 
 **Shokunin Static Site Generator (SSG)**: A blazing-fast Static Site Generator
 (SSG) built with Rust. Intended to make it simple and quick to generate websites
 optimised for SEO and compliant with Accessibility Standards.
 
 [**Learn more**  ⧉][01]
-
 
 <!-- markdownlint-disable MD033 -->
 </div></div>
@@ -152,7 +151,7 @@ optimised for SEO and compliant with Accessibility Standards.
 
 ### Password Generator Pro
 
-[![Pain001](https://kura.pro/password-generator-pro/images/banners/banner-password-generator-pro.webp).class=\"fade-in zoom-in card-img-top\"][02]
+[![Pain001](https://kura.pro/password-generator-pro/images/banners/banner-password-generator-pro.webp).class=\"fade-in card-img-top\"][02]
 
 **Password Generator Pro**: A fast, simple and powerful open-source cross
 platform utility tool for generating strong, unique and random passwords.
@@ -172,7 +171,7 @@ platform utility tool for generating strong, unique and random passwords.
 
 ### Hash (HSH) Rust library
 
-[![Hash (HSH) Rust library](https://kura.pro/stock/images/banners/mika-baumeister-Wpnoqo2plFA.webp).class=\"fade-in zoom-in card-img-top\"][03]
+[![Hash (HSH) Rust library](https://kura.pro/stock/images/banners/mika-baumeister-Wpnoqo2plFA.webp).class=\"fade-in card-img-top\"][03]
 
 **Hash (HSH) Rust library**: The Hash (HSH) Rust library provides an interface
 for implementing secure hash and digest algorithms, specifically designed for
@@ -188,7 +187,7 @@ password encryption and verification.
 
 ### LibMake Rust library
 
-[![LibMake, A code generator to reduce repetitive tasks and build high-quality Rust libraries](https://kura.pro/stock/images/banners/thomas-tastet-0eqgB57xMeA.webp).class=\"fade-in zoom-in card-img-top\"][04]
+[![LibMake, A code generator to reduce repetitive tasks and build high-quality Rust libraries](https://kura.pro/stock/images/banners/thomas-tastet-0eqgB57xMeA.webp).class=\"fade-in card-img-top\"][04]
 
 **LibMake Rust library**: LibMake is a tool designed to quickly help creating
 high-quality Rust libraries by generating a set of pre-filled and pre-defined
@@ -202,10 +201,9 @@ templated files.
   <div class="card border-0">
 <!-- markdownlint-restore -->
 
-
 ### Crypto Service Suite
 
-[![The Crypto Service Suite](https://kura.pro/stock/images/banners/steven-wei-Z7NMhw8hcfg.webp).class=\"fade-in zoom-in card-img-top\"][05]
+[![The Crypto Service Suite](https://kura.pro/stock/images/banners/steven-wei-Z7NMhw8hcfg.webp).class=\"fade-in card-img-top\"][05]
 
 **Crypto Service Suite**: The Crypto Service Suite is a powerful and centralized
 cryptographic suite of security tools that solves common application crypto
@@ -230,7 +228,7 @@ services.
 
 ### DateTime (DTT) Rust library
 
-[![DateTime (DTT) Rust library](https://kura.pro/stock/images/banners/ethan-wu-1597623.webp).class=\"fade-in zoom-in card-img-top\"][06]
+[![DateTime (DTT) Rust library](https://kura.pro/stock/images/banners/ethan-wu-1597623.webp).class=\"fade-in card-img-top\"][06]
 
 **DateTime (DTT) Rust library**: The DateTime (DTT) library offers a range of
 functions and data structures that allow you to perform various date and time
@@ -247,7 +245,7 @@ working with ISO 8601 date and time formats, and many others.
 
 ### Random (VRD) Rust library
 
-[![Random (VRD) Rust library, A Rust library for generating high-quality random numbers based on the Mersenne Twister algorithm](https://kura.pro/stock/images/banners/timon-studler-ABGaVhJxwDQ.webp).class=\"fade-in zoom-in card-img-top\"][07]
+[![Random (VRD) Rust library, A Rust library for generating high-quality random numbers based on the Mersenne Twister algorithm](https://kura.pro/stock/images/banners/timon-studler-ABGaVhJxwDQ.webp).class=\"fade-in card-img-top\"][07]
 
 **Random (VRD) Rust library**: Random (VRD) is a Rust library for generating
 high-quality random numbers based on the Mersenne Twister algorithm. The
@@ -265,7 +263,7 @@ computer simulations and games. It is a fast and reliable PRNG.
 
 ### Common (CMN) Rust library
 
-[![Common (CMN)](https://kura.pro/stock/images/banners/fabio-oyXis2kALVg.webp).class=\"fade-in zoom-in card-img-top\"][08]
+[![Common (CMN)](https://kura.pro/stock/images/banners/fabio-oyXis2kALVg.webp).class=\"fade-in card-img-top\"][08]
 
 **Common (CMN) Rust library**: Common (CMN) is a modern, fast, and user-friendly
 library that makes it easy to access a wide range of mathematical and
@@ -288,7 +286,7 @@ cryptographic constants.
 
 ### MacConfig (maccfg)
 
-[![MacConfig (maccfg)](https://kura.pro/stock/images/banners/ibrahim-abazid-MgQnQZA4ByM.webp).class=\"fade-in zoom-in card-img-top\"][10]
+[![MacConfig (maccfg)](https://kura.pro/stock/images/banners/ibrahim-abazid-MgQnQZA4ByM.webp).class=\"fade-in card-img-top\"][10]
 
 **MacBook Pro M1 Software Development Setup (macOS Config)**: A guide to getting your MacBook Pro M1 ready for Software Development. You can set up and start using your new Mac in no time at all with these free resources and user guides.
 
@@ -302,7 +300,7 @@ cryptographic constants.
 
 ### Mini Functions Rust library
 
-[![Mini Functions Rust library, A Rust library of highly performant utility and wrapper functions](https://kura.pro/stock/images/banners/chuttersnap-mf-o1E7omzk.webp).class=\"fade-in zoom-in card-img-top\"][11]
+[![Mini Functions Rust library, A Rust library of highly performant utility and wrapper functions](https://kura.pro/stock/images/banners/chuttersnap-mf-o1E7omzk.webp).class=\"fade-in card-img-top\"][11]
 
 **Mini Functions**: Mini Functions is a highly performant utility and wrapper functions library for Rust that has been carefully designed with optimization and efficiency in mind.
 
@@ -316,7 +314,7 @@ cryptographic constants.
 
 ### Dotfiles
 
-[![Dotfiles](https://kura.pro/dotfiles/v2/images/banners/dotfiles.webp).class=\"fade-in zoom-in card-img-top\"][12]
+[![Dotfiles](https://kura.pro/dotfiles/v2/images/banners/dotfiles.webp).class=\"fade-in card-img-top\"][12]
 
 **Dotfiles**: are a powerful set of configuration files for macOS, Linux, and Windows providing scripts and customized settings to streamline your workflow. These files are an essential tool for developers and users who want to modify their environment and applications to their exact needs.
 
@@ -342,7 +340,7 @@ cryptographic constants.
 
 ### Kaishi, a Starter Template
 
-[![Kaishi, a Starter Template for Shokunin)](https://kura.pro/stock/images/banners/bee-on-a-yellow-flower.webp).class=\"fade-in zoom-in card-img-top\"][13]
+[![Kaishi, a Starter Template for Shokunin)](https://kura.pro/stock/images/banners/bee-on-a-yellow-flower.webp).class=\"fade-in card-img-top\"][13]
 
 **Kaishi, a Starter Template for Shokunin**: Make beautiful websites with Kaishi, a Shokunin Static Site Generator starter template.
 
@@ -356,7 +354,7 @@ cryptographic constants.
 
 ### AudioTextPro
 
-[![AudioTextPro](https://kura.pro/stock/images/banners/pramod-tiwari-Br0F5xMArxI.webp).class=\"fade-in zoom-in card-img-top\"][14]
+[![AudioTextPro](https://kura.pro/stock/images/banners/pramod-tiwari-Br0F5xMArxI.webp).class=\"fade-in card-img-top\"][14]
 
 **AudioTextPro**: Convert audio to text accurately in real-time using our advanced AI speech recognition technology.
 
@@ -370,7 +368,7 @@ cryptographic constants.
 
 ### Skeletonic Stylus Library
 
-[![Skeletonic Stylus Library](https://kura.pro/skeletonic/images/banner/skeletonic.webp).class=\"fade-in zoom-in card-img-top\"][15]
+[![Skeletonic Stylus Library](https://kura.pro/skeletonic/images/banner/skeletonic.webp).class=\"fade-in card-img-top\"][15]
 
 **Skeletonic Stylus Library**: a lightweight and modular Stylus Library. It contains a suite of components and mixins optimised for mobile and web application design and development.
 
@@ -378,6 +376,25 @@ cryptographic constants.
 
 <!-- markdownlint-disable MD033 -->
 </div>
+</div>
+</div>
+<!-- markdownlint-restore -->
+
+<!-- markdownlint-disable MD033 -->
+<div class="col col-4">
+  <div class="card border-0">
+<!-- markdownlint-restore -->
+
+### Bank Statement Parser
+
+[![Bank Statement Parser](https://kura.pro/stock/images/banners/christian-ladewig-T0iFfJw-rB0.webp).class=\"fade-in card-img-top\"][16]
+
+**Bank Statement Parser**, a specialized Python library crafted specifically for
+finance professionals, simplifies the intricate process of parsing bank
+statements.
+
+[**Learn more**  ⧉][16]
+<!-- markdownlint-disable MD033 -->
 </div>
 </div>
 <!-- markdownlint-restore -->
@@ -398,3 +415,4 @@ cryptographic constants.
 [13]: https://kaishi.one/ "Kaishi, a Starter Template for Shokunin"
 [14]: https://audiotextpro.com/ "Convert audio to text accurately in real-time using our advanced AI speech recognition technology"
 [15]: https://skeletonic.io/ "Skeletonic Stylus Library: a lightweight and modular Stylus Library"
+[16]: https://bankstatementparser.com/ "Simplify Financial Data Analysis with Bank Statement Parser"
