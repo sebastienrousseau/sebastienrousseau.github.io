@@ -114,6 +114,18 @@ Read the latest articles below, and [**see all articles, news and product announ
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
+[![Banner](https://kura.pro/stock/images/banners/galina-nelyubova-V70-ng4FuiA.webp).class=\"zoom-out w-25 p-3 float-start\"][07]
+
+### [CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age][07]
+
+*by [Sebastien Rousseau][00] (19 Nov 2023)*
+
+Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.
+
+[**Learn more ❯**][07]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
 [![Banner](https://kura.pro/stock/images/banners/getty-images-aTWKwJllPOA.webp).class=\"zoom-out w-25 p-3 float-start\"][06]
 
 ### [Exploring Generative AI: Shaping the Future of Technology][06]
@@ -195,4 +207,5 @@ Streamlining the creation and compliance of ISO20022 Payment Messages for cross-
 [04]: /2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html "Streamlining Rust Library Development with Code Generation"
 [05]: /2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html "Mathematical and Cryptographic Constants for Rust Security"
 [06]: /2023-11-12-exploring-generative-ai/index.html "Exploring Generative AI: Shaping the Future of Technology"
+[07]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
 [10]: /articles/index.html "See all articles"
