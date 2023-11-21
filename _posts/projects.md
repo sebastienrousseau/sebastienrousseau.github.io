@@ -381,7 +381,8 @@ cryptographic constants.
 <!-- markdownlint-restore -->
 
 <!-- markdownlint-disable MD033 -->
-<div class="col col-4">
+<div class="row">
+<div class="col">
   <div class="card border-0">
 <!-- markdownlint-restore -->
 
@@ -395,6 +396,24 @@ statements.
 
 [**Learn more**  ⧉][16]
 <!-- markdownlint-disable MD033 -->
+</div>
+</div>
+<!-- markdownlint-restore -->
+
+<!-- markdownlint-disable MD033 -->
+<div class="col">
+  <div class="card border-0">
+<!-- markdownlint-restore -->
+
+### KyberLib
+
+[![KyberLib](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"fade-in card-img-top\"][17]
+
+**KyberLib**, a Robust Rust Library for CRYSTALS-Kyber Post-Quantum Cryptography.
+
+[**Learn more**  ⧉][17]
+<!-- markdownlint-disable MD033 -->
+</div>
 </div>
 </div>
 <!-- markdownlint-restore -->
@@ -416,3 +435,4 @@ statements.
 [14]: https://audiotextpro.com/ "Convert audio to text accurately in real-time using our advanced AI speech recognition technology"
 [15]: https://skeletonic.io/ "Skeletonic Stylus Library: a lightweight and modular Stylus Library"
 [16]: https://bankstatementparser.com/ "Simplify Financial Data Analysis with Bank Statement Parser"
+[17]: https://kyberlib.com/ "KyberLib, a Robust Rust Library for CRYSTALS-Kyber Post-Quantum Cryptography"
