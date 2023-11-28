@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
-date: "Oct 01, 2023"
+date: "Nov 28, 2023"
 description: "Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry"
 format-detection: "telephone=no"
 hreflang: "en"
@@ -53,11 +53,11 @@ generator: "Shokunin 🦀 (version 0.0.20)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
-item_pub_date: "2023-10-01T01:01:01+01:00"
+item_pub_date: "2023-11-19T10:59+01:00"
 item_title: "RSS"
-last_build_date: "2023-10-01T01:01:01+01:00"
+last_build_date: "2023-11-19T10:59+01:00"
 managing_editor: "contact@sebastienrousseau.com"
-pub_date: "2023-10-01T01:01:01+01:00"
+pub_date: "2023-11-19T10:59+01:00"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -112,6 +112,18 @@ You can find below a selection of articles that I have written over the years
 on these topics.
 
 ## Our Stories
+
+### [KyberLib: A Rust-Powered Shield Against Quantum Threats][14]
+
+[![Banner](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"zoom-in w-25 p-3 float-start\"][14]
+
+*by [Sebastien Rousseau][00] (28 Nov 2023)*
+
+A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks.
+
+[**Read full story ❯**][14]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
 ### [CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age][13]
 
@@ -284,3 +296,4 @@ Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential 
 [11]: /2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html "Mathematical and Cryptographic Constants for Rust Security"
 [12]: /2023-11-12-exploring-generative-ai/index.html "Exploring Generative AI: Shaping the Future of Technology"
 [13]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
+[14]: /2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html "KyberLib: A Rust-Powered Shield Against Quantum Threats"

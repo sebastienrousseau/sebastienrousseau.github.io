@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
-date: "Oct 8, 2023"
+date: "Nov 28, 2023"
 description: "Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking & Financial Services"
 format-detection: "telephone=no"
 hreflang: "en"
@@ -53,11 +53,11 @@ generator: "Shokunin 🦀 (version 0.0.20)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
-item_pub_date: "2023-10-09T06:13+01:00"
+item_pub_date: "2023-11-19T10:59+01:00"
 item_title: "RSS"
-last_build_date: "2023-10-09T06:13+01:00"
+last_build_date: "2023-11-19T10:59+01:00"
 managing_editor: "contact@sebastienrousseau.com"
-pub_date: "2023-10-09T06:13+01:00"
+pub_date: "2023-11-19T10:59+01:00"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -114,6 +114,18 @@ Read the latest articles below, and [**see all articles, news and product announ
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
+[![Banner](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"zoom-out w-25 p-3 float-start\"][08]
+
+### [KyberLib: A Rust-Powered Shield Against Quantum Threats][08]
+
+*by [Sebastien Rousseau][00] (28 Nov 2023)*
+
+A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks.
+
+[**Learn more ❯**][08]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
 [![Banner](https://kura.pro/stock/images/banners/galina-nelyubova-V70-ng4FuiA.webp).class=\"zoom-out w-25 p-3 float-start\"][07]
 
 ### [CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age][07]
@@ -162,42 +174,6 @@ Boost Rust library development with LibMake: A code generator tool that enforces
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/stock/images/banners/galina-nelyubova-7ej8VWfwFsg.webp).class=\"zoom-out w-25 p-3 float-start\"][03]
-
-### [Protecting Data in the Quantum Age: The Hash Library (HSH)][03]
-
-*by [Sebastien Rousseau][00] (16 Oct 2023)*
-
-The Hash Library (HSH) provides a lightweight, efficient, and user-friendly solution for protecting data with quantum-resistant cryptography.
-
-[**Learn more ❯**][03]
-
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
-
-[![Banner](https://kura.pro/stock/images/banners/anna-nekrashevich-8534387.webp).class=\"zoom-out w-25 p-3 float-start\"][01]
-
-### [Shokunin, the fastest Rust-based Static Site Generator (SSG)][01]
-
-*by [Sebastien Rousseau][00] (9 Oct 2023)*
-
-Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.
-
-[**Learn more ❯**][01]
-
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
-
-[![Banner](https://kura.pro/stock/images/banners/andrea-de-santis-T3Qen8vVgRc.webp).class=\"zoom-out w-25 p-3 float-start\"][02]
-
-### [Automating ISO 20022 Payment Files Creation with Pain001][02]
-
-*by [Sebastien Rousseau][00] (29 Sep 2023)*
-
-Streamlining the creation and compliance of ISO20022 Payment Messages for cross-border payments and reporting.
-
-[**Learn more ❯**][02]
-
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
-
 [**See all articles** ❯][10]
 
 [00]: /about/index.html "About Sebastien Rousseau, Banking & Financial Service Professional"
@@ -208,4 +184,5 @@ Streamlining the creation and compliance of ISO20022 Payment Messages for cross-
 [05]: /2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html "Mathematical and Cryptographic Constants for Rust Security"
 [06]: /2023-11-12-exploring-generative-ai/index.html "Exploring Generative AI: Shaping the Future of Technology"
 [07]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
+[08]: /2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html "KyberLib: A Rust-Powered Shield Against Quantum Threats"
 [10]: /articles/index.html "See all articles"
