@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
-date: "Nov 28, 2023"
+date: "Dec 04, 2023"
 description: "Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking & Financial Services"
 format-detection: "telephone=no"
 hreflang: "en"
@@ -53,11 +53,11 @@ generator: "Shokunin 🦀 (version 0.0.20)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
-item_pub_date: "2023-11-19T10:59+01:00"
-item_title: "RSS"
-last_build_date: "2023-11-19T10:59+01:00"
+item_pub_date: "2023-12-04T10:00+01:00"
+item_title: "Sebastien Rousseau, Banking & Financial Service Professional"
+last_build_date: "2023-12-04T10:00+01:00"
 managing_editor: "contact@sebastienrousseau.com"
-pub_date: "2023-11-19T10:59+01:00"
+pub_date: "2023-12-04T10:00+01:00"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -111,6 +111,18 @@ I will discuss their potential to impact various industries and aspects of our
 lives and how they can be applied to solve real-world problems.
 
 Read the latest articles below, and [**see all articles, news and product announcements**][10].
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+[![Banner](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"zoom-out w-25 p-3 float-start\"][09]
+
+### [Efficient Date and Time Management with DateTime (DTT)][09]
+
+*by [Sebastien Rousseau][00] (04 Dec 2023)*
+
+DateTime (DTT) is a comprehensive Rust library for parsing, validating, manipulating, and formatting dates and times. It offers a high level of precision and a wide range of functionalities.
+
+[**Learn more ❯**][09]
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
@@ -185,4 +197,5 @@ Boost Rust library development with LibMake: A code generator tool that enforces
 [06]: /2023-11-12-exploring-generative-ai/index.html "Exploring Generative AI: Shaping the Future of Technology"
 [07]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
 [08]: /2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html "KyberLib: A Rust-Powered Shield Against Quantum Threats"
+[09]: /2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html "Efficient Date and Time Management with DateTime (DTT)"
 [10]: /articles/index.html "See all articles"

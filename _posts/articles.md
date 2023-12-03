@@ -113,6 +113,18 @@ on these topics.
 
 ## Our Stories
 
+### [Efficient Date and Time Management with DateTime (DTT)][15]
+
+[![Banner](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"zoom-in w-25 p-3 float-start\"][15]
+
+*by [Sebastien Rousseau][00] (04 Dec 2023)*
+
+DateTime (DTT) is a comprehensive Rust library for parsing, validating, manipulating, and formatting dates and times. It offers a high level of precision and a wide range of functionalities.
+
+[**Read full story ❯**][15]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
 ### [KyberLib: A Rust-Powered Shield Against Quantum Threats][14]
 
 [![Banner](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"zoom-in w-25 p-3 float-start\"][14]
@@ -297,3 +309,4 @@ Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential 
 [12]: /2023-11-12-exploring-generative-ai/index.html "Exploring Generative AI: Shaping the Future of Technology"
 [13]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
 [14]: /2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html "KyberLib: A Rust-Powered Shield Against Quantum Threats"
+[15]: /2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html "Efficient Date and Time Management with DateTime (DTT)"
