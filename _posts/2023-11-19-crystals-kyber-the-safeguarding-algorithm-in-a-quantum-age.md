@@ -78,11 +78,11 @@ msapplication-navbutton-color: "rgb(0, 102, 204)"
 # Twitter Card - The Twitter Card front matter (YAML).
 
 twitter_card: "summary"
-twitter_creator: "wwdseb"
+twitter_creator: "@wwdseb"
 twitter_description: "Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era."
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
-twitter_site: "wwdseb"
+twitter_site: "@wwdseb"
 twitter_title: "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
 twitter_url: "https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html"
 

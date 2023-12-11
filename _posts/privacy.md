@@ -79,11 +79,11 @@ msapplication-navbutton-color: "rgb(255, 39, 34)"
 # Twitter Card - The Twitter Card front matter (YAML).
 
 twitter_card: "summary"
-twitter_creator: "wwdseb"
+twitter_creator: "@wwdseb"
 twitter_description: "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website"
 twitter_image: "https://kura.pro/Sebastien Rousseau/images/logos/Sebastien Rousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
-twitter_site: "wwdseb"
+twitter_site: "@wwdseb"
 twitter_title: "Privacy Statement: How We Use Your Data"
 twitter_url: "https://sebastienrousseau.com/privacy/index.html"
 

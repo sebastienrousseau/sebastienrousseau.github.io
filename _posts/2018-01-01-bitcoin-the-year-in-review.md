@@ -78,11 +78,11 @@ msapplication-navbutton-color: "rgb(0, 102, 204)"
 # Twitter Card - The Twitter Card front matter (YAML).
 
 twitter_card: "summary"
-twitter_creator: "wwdseb"
+twitter_creator: "@wwdseb"
 twitter_description: "Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online."
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
-twitter_site: "wwdseb"
+twitter_site: "@wwdseb"
 twitter_title: "Bitcoin: A Year In Review of the First Cryptocurrency"
 twitter_url: "https://sebastienrousseau.com"
 

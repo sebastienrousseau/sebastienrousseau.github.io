@@ -78,11 +78,11 @@ msapplication-navbutton-color: "rgb(0, 102, 204)"
 # Twitter Card - The Twitter Card front matter (YAML).
 
 twitter_card: "summary"
-twitter_creator: "wwdseb"
+twitter_creator: "@wwdseb"
 twitter_description: "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security."
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
-twitter_site: "wwdseb"
+twitter_site: "@wwdseb"
 twitter_title: "Quantum Key Distribution Revolutionising Security in Banking"
 twitter_url: "https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html"
 
@@ -91,54 +91,78 @@ author_website: "https://sebastienrousseau.com/2023-12-11-quantum-key-distributi
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2023-11-28"
+site_last_updated: "2023-12-11"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Shokunin, Rust"
 
 ---
 
-[![DateTime (DTT), Your Essential Toolkit for Date and Time Operations](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"img-fluid clearfix\"][01]
+![HSBC From the Docks][00].class=\"img-fluid clearfix fade-in\"
 
-The banking and financial industry is experiencing a revolutionary transformation in data security, enabled by the emergence of Quantum Key Distribution (QKD). 
+The banking and financial industry is undergoing a revolutionary transformation in data security, driven by the emergence of Quantum Key Distribution (QKD). This groundbreaking innovation, based on the principles of quantum mechanics, offers unparalleled security for data transmission, making it a game-changer for the industry.
 
-QKD, a cutting-edge technology based on the principles of quantum mechanics, offers unparalleled security for data transmission, making it a game-changer for the industry. 
+As digital solutions become increasingly prevalent in the financial sector, robust security measures are essential to protect sensitive data from unauthorised access and manipulation. Traditional encryption methods are no longer enough, as the advent of quantum computers threatens to render them obsolete.
 
-As the sector increasingly relies on digital solutions, the need for robust security measures has become paramount. Quantum Key Distribution's ability to make secure communication channels via its use of quantum mechanics allows it to be unaffected by quantum computing. This makes it a critical technology for the upcoming digital financial landscape.
+Enter QKD, a transformative technology that creates secure communication channels that even quantum computers cannot penetrate. This makes it a critical component of the digital financial future.
 
 ![divider][divider].class=\"m-10 w-100\"
 
 ## Understanding Quantum Key Distribution (QKD)
 
-QKD is a method of securely sharing encryption keys using the principles of quantum mechanics. QKD offers an unprecedented level of security, as it is immune to the computing power of quantum computers, unlike regular encryption methods. This allows for a reliable and secure method of key exchange between the two parties. This is achieved by leveraging the quantum properties of particles to create a secure key that can be used to encrypt and decrypt data. As a result, eavesdropping on the communication would disrupt the quantum state, alerting the parties to the security breach.
+QKD is a method of creating a secure communication channel using the principles of quantum mechanics. QKD offers an unprecedented level of security, as it is immune to the computing power of quantum computers, unlike regular encryption methods. This enables secure and confidential communication of key exchange between the two parties. This is achieved by leveraging the quantum properties of particles to create a secure key that can be used to encrypt and decrypt data. As a result, eavesdropping on the communication would disrupt the quantum state, alerting the parties to the security breach.
+
+![divider][divider].class=\"m-10 w-100\"
+
+![Entangled Photons][01].class=\"w-50 p-3 me-3 img-thumbnail float-end\"
+
+## The Secret Sauce of QKD: Entanglement
+
+At the core of QKD is entanglement, a quantum phenomenon in which two particles are inextricably linked, forming an unbreakable bond regardless of distance. This entanglement enables Alice and Bob, the two parties involved in a secure communication, to establish a secure channel that is immune to interception and eavesdropping.
+
+Theoretically, any attempt to measure or tamper with an entangled particle instantaneously affects its entangled counterpart, regardless of how far apart they are. This inherent sensitivity of quantum states serves as a foolproof detector of eavesdropping. As soon as Alice and Bob detect any disturbance in their entangled photons, they immediately abort the communication session, ensuring the confidentiality of their shared secret key.
+
+![divider][divider].class=\"m-10 w-100\"
+
+## The Unpredictability of Quantum States: Further Security Reinforcement
+
+The unpredictability of quantum states further reinforces the security of QKD. Any attempt to measure a quantum particle's position or momentum will result in two equally likely outcomes. This suggests that eavesdroppers are unable to accurately anticipate the results of their observations.
+
+The combination of entanglement and the inherent randomness of quantum states makes QKD an impenetrable fortress against eavesdropping, even for powerful quantum computers. As quantum computing technology advances, QKD will become increasingly crucial for safeguarding sensitive data in the digital age.
 
 ![divider][divider].class=\"m-10 w-100\"
 
 ## The Significance of QKD for the Banking and Financial Industry
 
-The application of QKD in the banking and financial industry is multifaceted. It can revolutionise security for intra- and interbank trades, with the potential for the stable implementation of quantum money based on QKD protocols. Additionally, it can enhance the security of wealth management and investment banking, ultimately transforming the banking ecosystem. Furthermore, quantum computing, including QKD, presents significant opportunities for targeting and prediction, trading optimisation, and risk profiling in the financial sector.
+The application of QKD in the banking and financial industry is far-reaching. It can revolutionise security for intra and interbank trades, with the potential to transform financial transactions through the use of quantum money. Additionally, it can enhance the security of wealth management and investment banking, ushering in a new era of financial security and efficiency.
 
 ![divider][divider].class=\"m-10 w-100\"
 
 ## HSBC's Quantum Protection Trial: A Landmark Achievement
 
-HSBC's success in applying QKD to FX trading demonstrates the practical application of QKD. The bank's use of QKD to safeguard a €30 million trading scenario from Euros to US dollars is a significant leap. This achievement, with BT, Toshiba, and AWS, shows QKD's potential to revolutionise trading data security.
+HSBC is pioneering the use of quantum key distribution (QKD) to protect AI-powered foreign exchange trading against cyber threats, including quantum attacks. This marks the first time a bank has employed QKD to secure sensitive trading data.
+
+By employing QKD, HSBC securely executed a €30 million trading scenario involving the exchange of euros for US dollars. This achievement, in collaboration with BT, Toshiba, and AWS, showcases the transformative potential of QKD in revolutionising trading data security.
 
 ![divider][divider].class=\"m-10 w-100\"
+
+![QKD and Quantum Computing Market Value][02].class=\"w-50 p-3 ms-3 img-thumbnail float-end\"
 
 ## The Future of QKD in Financial Cybersecurity
 
 Experts predict that QKD will protect financial transactions, client data, and proprietary information across the sector. With quantum computers threatening data security, HSBC's integration of QKD into trading tools sets a new standard. This proactive approach to investing and experimenting in quantum technologies underscores the industry's commitment to staying ahead of the curve in terms of cybersecurity.
 
+![divider][divider].class=\"m-10 w-100\"
+
+## Quantum Key Distribution: The Future of Financial Cybersecurity
+
 The integration of QKD into the banking and financial industry represents a monumental advancement in the field of financial cybersecurity. HSBC's successful quantum protection trial has established a new benchmark for quantum-secure communication strategies, guaranteeing the resilience of financial systems against changing cyber threats. This proactive research and development in quantum technologies is crucial for the continued security and trustworthiness of financial systems.
 
 In summary, Quantum Key Distribution (QKD) offers a groundbreaking solution to the security and trustworthiness challenges facing the banking and financial sectors. As such, it is a pivotal technology for the advancement of digital finance.
 
-HSBC's successful integration of QKD into financial trading tools sets a new standard in security.
+By embracing QKD, HSBC has set a new benchmark in financial cybersecurity, paving the way for a future where quantum-secure trading is the standard.
 
-[00]: https://dttlib.one/getting-started/index.html "Getting Started"
-[01]: https://dttlib.one "DateTime (DTT), Your Essential Toolkit for Date and Time Operations"
-[02]: https://docs.rs/dtt/latest/dtt/ "DateTime (DTT) Documentation"
-[03]: https://github.com/sebastienrousseau/dtt "DateTime (DTT) GitHub Repository"
-
+[00]: https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp "HSBC From the West India Quay Promenade"
+[01]: https://kura.pro/stock/images/banners/entangled-photons.webp "Entangled Photons"
+[02]: https://kura.pro/stock/diagrams/qkd-qc-market-value.webp "QKD and Quantum Computing Market Value"
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"

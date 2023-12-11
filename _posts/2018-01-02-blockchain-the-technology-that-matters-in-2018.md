@@ -78,11 +78,11 @@ msapplication-navbutton-color: "rgb(0, 102, 204)"
 # Twitter Card - The Twitter Card front matter (YAML).
 
 twitter_card: "summary"
-twitter_creator: "wwdseb"
+twitter_creator: "@wwdseb"
 twitter_description: "A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks."
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
-twitter_site: "wwdseb"
+twitter_site: "@wwdseb"
 twitter_title: "Blockchain explained, the technology that matters the most"
 twitter_url: "https://sebastienrousseau.com"
 

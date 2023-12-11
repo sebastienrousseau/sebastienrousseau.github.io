@@ -79,11 +79,11 @@ msapplication-navbutton-color: "rgb(255, 39, 34)"
 # Twitter Card - The Twitter Card front matter (YAML).
 
 twitter_card: "summary"
-twitter_creator: "wwdseb"
+twitter_creator: "@wwdseb"
 twitter_description: "I apologise for the inconvenience. To continue, please connect to a Wi-Fi network or enable cellular data, you can also:"
 twitter_image: "https://kura.pro/Sebastien Rousseau/images/logos/Sebastien Rousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
-twitter_site: "wwdseb"
+twitter_site: "@wwdseb"
 twitter_title: "No Internet Connection detected. Please try again later."
 twitter_url: "https://sebastienrousseau.com/offline/index.html"
 

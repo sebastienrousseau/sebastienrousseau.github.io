@@ -78,11 +78,11 @@ msapplication-navbutton-color: "rgb(0, 102, 204)"
 # Twitter Card - The Twitter Card front matter (YAML).
 
 twitter_card: "summary"
-twitter_creator: "wwdseb"
+twitter_creator: "@wwdseb"
 twitter_description: "Embark on a Journey to Explore Generative AI: Investigating Its Impact, Ethical Implications, and Future Synergies"
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
-twitter_site: "wwdseb"
+twitter_site: "@wwdseb"
 twitter_title: "Exploring Generative AI: Shaping the Future of Technology"
 twitter_url: "https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"
 

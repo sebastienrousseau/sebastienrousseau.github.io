@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
-date: "Dec 04, 2023"
+date: "Dec 11, 2023"
 description: "Browse through my open-source projects and learn how I use open source software to create innovative solutions for all."
 format-detection: "telephone=no"
 hreflang: "en"
@@ -53,11 +53,11 @@ generator: "Shokunin 🦀 (version 0.0.20)"
 item_description: "Browse through my open-source projects and learn how I use open source software to create innovative solutions for all."
 item_guid: "https://sebastienrousseau.com/projects/rss.xml"
 item_link: "https://sebastienrousseau.com/projects/rss.xml"
-item_pub_date: "2023-12-04T10:00:00+01:00"
+item_pub_date: "2023-12-11T10:00+01:00"
 item_title: "Innovative And Creative Solutions built with Open Source"
-last_build_date: "2023-12-04T10:00:00+01:00"
+last_build_date: "2023-12-11T10:00+01:00"
 managing_editor: "contact@sebastienrousseau.com"
-pub_date: "2023-12-04T10:00:00+01:00"
+pub_date: "2023-12-11T10:00+01:00"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -78,11 +78,11 @@ msapplication-navbutton-color: "rgb(0, 102, 204)"
 # Twitter Card - The Twitter Card front matter (YAML).
 
 twitter_card: "summary"
-twitter_creator: "wwdseb"
+twitter_creator: "@wwdseb"
 twitter_description: "Browse through my open-source projects and learn how I use open source software to create innovative solutions for all."
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
-twitter_site: "wwdseb"
+twitter_site: "@wwdseb"
 twitter_title: "Innovative And Creative Solutions built with Open Source"
 twitter_url: "https://sebastienrousseau.com"
 
@@ -91,7 +91,7 @@ author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2023-10-26"
+site_last_updated: "2023-12-11"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Shokunin, Rust"
@@ -415,6 +415,23 @@ statements.
 <!-- markdownlint-disable MD033 -->
 </div>
 </div>
+<!-- markdownlint-restore -->
+
+<!-- markdownlint-disable MD033 -->
+<div class="col">
+  <div class="card border-0">
+<!-- markdownlint-restore -->
+
+### L90S Fractional CFO Services
+
+[![L90S](https://kura.pro/l90s/images/banners/banner-office.webp).class=\"fade-in card-img-top\"][18]
+
+**L90S**, A trusted finance leader with 20+ years of experience in the tech industry, guiding companies to sustainable growth, funding, and optimized financial operations.
+
+[**Learn more**  ⧉][18]
+<!-- markdownlint-disable MD033 -->
+</div>
+</div>
 </div>
 <!-- markdownlint-restore -->
 
@@ -436,3 +453,4 @@ statements.
 [15]: https://skeletonic.io/ "Skeletonic Stylus Library: a lightweight and modular Stylus Library ⧉"
 [16]: https://bankstatementparser.com/ "Simplify Financial Data Analysis with Bank Statement Parser ⧉"
 [17]: https://kyberlib.com/ "KyberLib, a Robust Rust Library for CRYSTALS-Kyber Post-Quantum Cryptography ⧉"
+[18]: https://l90s.com/ "Unlock Financial Growth with Fractional CFOs ⧉"

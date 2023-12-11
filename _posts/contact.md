@@ -79,11 +79,11 @@ msapplication-navbutton-color: "rgb(255, 39, 34)"
 # Twitter Card - The Twitter Card front matter (YAML).
 
 twitter_card: "summary"
-twitter_creator: "wwdseb"
+twitter_creator: "@wwdseb"
 twitter_description: "Have a question or comment? Please contact me using the form below. I am always happy to hear from you and will respond as soon as possible."
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
-twitter_site: "wwdseb"
+twitter_site: "@wwdseb"
 twitter_title: "Let's Start a Conversation That Will Make a Real Difference"
 twitter_url: "https://sebastienrousseau.com/contact/index.html"
 

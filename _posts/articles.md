@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
-date: "Nov 28, 2023"
+date: "Dec 11, 2023"
 description: "Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry"
 format-detection: "telephone=no"
 hreflang: "en"
@@ -53,11 +53,11 @@ generator: "Shokunin 🦀 (version 0.0.20)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
-item_pub_date: "2023-11-19T10:59+01:00"
+item_pub_date: "2023-12-11T10:00+01:00"
 item_title: "RSS"
-last_build_date: "2023-11-19T10:59+01:00"
+last_build_date: "2023-12-11T10:00+01:00"
 managing_editor: "contact@sebastienrousseau.com"
-pub_date: "2023-11-19T10:59+01:00"
+pub_date: "2023-12-11T10:00+01:00"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -78,11 +78,11 @@ msapplication-navbutton-color: "rgb(255, 39, 34)"
 # Twitter Card - The Twitter Card front matter (YAML).
 
 twitter_card: "summary"
-twitter_creator: "wwdseb"
+twitter_creator: "@wwdseb"
 twitter_description: "Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry"
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 twitter_image_alt: "Logo of Sebastien Rousseau"
-twitter_site: "wwdseb"
+twitter_site: "@wwdseb"
 twitter_title: "Discover How Technology Is Changing Banking and Finance"
 twitter_url: "https://sebastienrousseau.com/articles/index.html"
 
@@ -91,7 +91,7 @@ author_website: "https://sebastienrousseau.com/articles/index.html"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2023-07-05"
+site_last_updated: "2023-12-11"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Shokunin, Rust"
@@ -112,6 +112,18 @@ You can find below a selection of articles that I have written over the years
 on these topics.
 
 ## Our Stories
+
+### [Quantum Key Distribution Revolutionising Security in Banking][16]
+
+[![Banner](https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp).class=\"zoom-in w-25 p-3 float-start\"][16]
+
+*by [Sebastien Rousseau][00] (11 Dec 2023)*
+
+As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.
+
+[**Read full story ❯**][16]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
 ### [Efficient Date and Time Management with DateTime (DTT)][15]
 
@@ -310,3 +322,4 @@ Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential 
 [13]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
 [14]: /2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html "KyberLib: A Rust-Powered Shield Against Quantum Threats"
 [15]: /2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html "Efficient Date and Time Management with DateTime (DTT)"
+[16]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution Revolutionising Security in Banking"
