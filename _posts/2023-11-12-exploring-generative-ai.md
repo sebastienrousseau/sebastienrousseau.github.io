@@ -40,7 +40,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: ""
 tags: "AI, Generative, Technology, Future, Impact, Ethics, Synergies, Innovation, Creativity, Transformation"
-theme-color: "rgb(255, 39, 34)"
+theme-color: "0,102,204"
 title: "Exploring Generative AI: Shaping the Future of Technology"
 url: "https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -98,7 +98,7 @@ site_software: "Shokunin, Rust"
 
 ---
 
-![AI, Artificial Intelligence concept,3d rendering,conceptual image](https://kura.pro/stock/images/banners/getty-images-aTWKwJllPOA.webp).class=\"img-fluid clearfix\"
+![AI, Artificial Intelligence concept,3d rendering,conceptual image](https://kura.pro/stock/images/banners/fabio-oyXis2kALVg.webp).class=\"img-fluid clearfix\"
 
 ## Insight
 

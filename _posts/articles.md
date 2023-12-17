@@ -40,7 +40,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
 tags: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML"
-theme-color: "rgb(255, 39, 34)"
+theme-color: "0,102,204"
 title: "Discover How Technology Is Changing Banking and Finance"
 url: "https://sebastienrousseau.com/articles/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -113,6 +113,18 @@ on these topics.
 
 ## Our Stories
 
+### [State of AI and Quantum Computing in Banking: A 2023 Review][17]
+
+[![Banner](https://kura.pro/stock/images/banners/getty-images-aTWKwJllPOA.webp).class=\"zoom-in w-25 p-3 float-start\"][17]
+
+*by [Sebastien Rousseau][00] (18 Dec 2023)*
+
+Exploring 2023's Technological Landscape: AI & Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations & Governance.
+
+[**Read full story ❯**][17]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
 ### [Quantum Key Distribution Revolutionising Security in Banking][16]
 
 [![Banner](https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp).class=\"zoom-in w-25 p-3 float-start\"][16]
@@ -163,7 +175,7 @@ Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revo
 
 ### [Exploring Generative AI: Shaping the Future of Technology][12]
 
-[![Banner](https://kura.pro/stock/images/banners/getty-images-aTWKwJllPOA.webp).class=\"zoom-in w-25 p-3 float-start\"][12]
+[![Banner](https://kura.pro/stock/images/banners/fabio-oyXis2kALVg.webp).class=\"zoom-in w-25 p-3 float-start\"][12]
 
 *by [Sebastien Rousseau][00] (12 Nov 2023)*
 
@@ -323,3 +335,4 @@ Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential 
 [14]: /2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html "KyberLib: A Rust-Powered Shield Against Quantum Threats"
 [15]: /2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html "Efficient Date and Time Management with DateTime (DTT)"
 [16]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution Revolutionising Security in Banking"
+[17]: /2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html "State of AI and Quantum Computing in Banking: A 2023 Review"

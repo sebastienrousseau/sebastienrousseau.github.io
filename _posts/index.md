@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023 - Sebastien Rousseau. All rights reserved."
-date: "Dec 11, 2023"
+date: "Dec 18, 2023"
 description: "Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking & Financial Services"
 format-detection: "telephone=no"
 hreflang: "en"
@@ -40,7 +40,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
 tags: "banking, financial services, artificial intelligence, post-quantum cryptography, blockchain technology, transformation, innovation, technology, future, Sebastien Rousseau"
-theme-color: "rgb(255, 39, 34)"
+theme-color: "0,102,204"
 title: "Sebastien Rousseau, Banking & Financial Service Professional"
 url: "https://sebastienrousseau.com"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -53,11 +53,11 @@ generator: "Shokunin 🦀 (version 0.0.20)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
-item_pub_date: "2023-12-11T10:00+01:00"
+item_pub_date: "2023-12-18T06:06:06+01:00"
 item_title: "Sebastien Rousseau, Banking & Financial Service Professional"
-last_build_date: "2023-12-11T10:00+01:00"
+last_build_date: "2023-12-18T06:06:06+01:00"
 managing_editor: "contact@sebastienrousseau.com"
-pub_date: "2023-12-11T10:00+01:00"
+pub_date: "2023-12-18T06:06:06+01:00"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -91,7 +91,7 @@ author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2023-12-11"
+site_last_updated: "2023-12-18"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Shokunin, Rust"
@@ -113,6 +113,19 @@ lives and how they can be applied to solve real-world problems.
 Read the latest articles below, and [**see all articles, news and product announcements**][100].
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
+[![Banner](https://kura.pro/stock/images/banners/getty-images-aTWKwJllPOA.webp).class=\"zoom-out w-25 p-3 float-start\"][11]
+
+### [State of AI and Quantum Computing in Banking: A 2023 Review][11]
+
+*by [Sebastien Rousseau][00] (18 Dec 2023)*
+
+Exploring 2023's Technological Landscape: AI & Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations & Governance.
+
+[**Learn more ❯**][11]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
 
 [![Banner](https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp).class=\"zoom-out w-25 p-3 float-start\"][10]
 
@@ -162,18 +175,6 @@ Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revo
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/stock/images/banners/getty-images-aTWKwJllPOA.webp).class=\"zoom-out w-25 p-3 float-start\"][06]
-
-### [Exploring Generative AI: Shaping the Future of Technology][06]
-
-*by [Sebastien Rousseau][00] (12 Nov 2023)*
-
-Embark on a Journey to Explore Generative AI: Investigating Its Impact, Ethical Implications, and Future Synergies.
-
-[**Learn more ❯**][06]
-
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
-
 [**See all articles** ❯][100]
 
 [00]: /about/index.html "About Sebastien Rousseau, Banking & Financial Service Professional"
@@ -187,4 +188,5 @@ Embark on a Journey to Explore Generative AI: Investigating Its Impact, Ethical 
 [08]: /2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html "KyberLib: A Rust-Powered Shield Against Quantum Threats"
 [09]: /2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html "Efficient Date and Time Management with DateTime (DTT)"
 [10]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution Revolutionising Security in Banking"
+[11]: /2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html "State of AI and Quantum Computing in Banking: A 2023 Review"
 [100]: /articles/index.html "See all articles"
