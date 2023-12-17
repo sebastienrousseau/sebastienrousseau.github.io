@@ -206,22 +206,25 @@ These initiatives and developments show the growing need for coordinated nationa
 
 The year 2023 has seen significant advancements in the fields of AI and QC, particularly in the banking industry. HSBC's pioneering use of quantum protection for AI-powered trading represents a significant milestone in the application of these technologies in the banking sector. Open-source models have accelerated AI maturity, while MIT's white papers on AI governance provide a roadmap for regulation. These developments will shape the future of AI and QC, with profound implications for banking and finance.
 
-## Want to learn more about the impact of AI and Quantum Computing on the banking industry?
+![divider][divider].class=\"m-10 w-100\"
 
-Join me on my new YouTube channel, [**Banking on Quantum** ⧉][24], where I'll explore the latest developments in these transformative technologies and their implications for the future of finance.
+**Want to learn more about the impact of AI and Quantum Computing on the banking industry?**
 
-In each episode, I'll discuss topics such as:
+*In closing, I hope this article has sparked your interest in the transformative power of AI and Quantum Computing in the banking industry.*
 
-- How AI is being used to automate tasks, improve customer service, and make more informed lending decisions
-- How quantum computing is poised to revolutionize financial modelling, risk assessment, and transaction processing
-- The challenges and opportunities associated with these technologies
-- The ethical implications of AI and quantum computing in banking
+*If you're eager to learn more about the intersection of AI and Quantum Computing in the banking industry, don't hesitate to reach out to me on [**LinkedIn** ⧉][02] or via the [**Contact page** ⧉][03].*
 
-[**Subscribe to Banking on Quantum today and stay ahead of the curve in this rapidly evolving field!** ⧉][25]
+*You can also join me on my new YouTube channel, [**Banking on Quantum** ⧉][24], where I'll explore the latest developments in these transformative technologies and their implications for the future of finance.*
+
+*[**Subscribe to Banking on Quantum today and stay ahead of the curve in this rapidly evolving field!** ⧉][25]*
+
+Thank you again for your time and I look forward to hearing from you!
 
 ![divider][divider].class=\"m-10 w-100\"
 
 [01]: https://www.hsbc.com/news-and-views/news/media-releases/2023/hsbc-pioneers-quantum-protection-for-ai-powered-fx-trading "HSBC's Integration of Quantum Computing in Banking Operations"
+[02]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
+[03]: https://sebastienrousseau.com/contact/index.html "Contact Sebastien Rousseau"
 [05]: http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm "Interim Measures for Generative Artificial Intelligence Service Management"
 [06]: https://www.fmprc.gov.cn/mfa_eng/wjdt_665385/2649_665393/202310/t20231020_11164834.html "Global AI Governance Initiative"
 [07]: https://wizardlm.github.io/ "WizardLM"
