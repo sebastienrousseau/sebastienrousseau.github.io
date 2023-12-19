@@ -114,7 +114,7 @@ Read the latest articles below, and [**see all articles, news and product announ
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/stock/images/banners/getty-images-aTWKwJllPOA.webp).class=\"fade-in w-50 p-3 me-3 img-thumbnail float-start \"][11]
+[![Banner](https://kura.pro/stock/images/banners/getty-images-aTWKwJllPOA.webp).class=\"fade-in w-50 p-3 me-3 img-thumbnail float-end \"][11]
 
 ### [State of AI and Quantum Computing in Banking: A 2023 Review][11]
 
@@ -128,7 +128,7 @@ Exploring 2023's Technological Landscape: AI & Quantum Computing Revolutionising
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp).class=\"w-25 p-3 float-start\"][10]
+[![Banner](https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-start \"][10]
 
 ### [Quantum Key Distribution Revolutionising Security in Banking][10]
 
@@ -140,7 +140,7 @@ As quantum computers pose a threat to traditional encryption methods, Quantum Ke
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"w-25 p-3 float-start\"][09]
+[![Banner](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-end \"][09]
 
 ### [Efficient Date and Time Management with DateTime (DTT)][09]
 
@@ -152,7 +152,7 @@ DateTime (DTT) is a comprehensive Rust library for parsing, validating, manipula
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"w-25 p-3 float-start\"][08]
+[![Banner](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-start \"][08]
 
 ### [KyberLib: A Rust-Powered Shield Against Quantum Threats][08]
 
@@ -164,7 +164,7 @@ A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algo
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/stock/images/banners/galina-nelyubova-V70-ng4FuiA.webp).class=\"w-25 p-3 float-start\"][07]
+[![Banner](https://kura.pro/stock/images/banners/galina-nelyubova-V70-ng4FuiA.webp).class=\"zoom-in w-25 m-3 rounded float-end \"][07]
 
 ### [CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age][07]
 
