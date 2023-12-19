@@ -170,6 +170,8 @@ Several open-source LLMs have garnered significant attention for their groundbre
 
 - [**LLMa 2** ⧉][14]: With 1.6 billion parameters, [LLMa 2 ⧉][14] showcases versatility, catering to a wide range of tasks, including question-answering, summarisation, and translation. Trained on the Pile dataset and using the Transformer architecture, [LLMa 2 ⧉][14] proves its adaptability across various applications.
 
+- [**Google Gemini LLM** ⧉][26]: Unveiled in 2023, [Google Gemini LLM ⧉][26] represents a significant step forward in the realm of large language models. Touted as a successor to [PaLM 2 ⧉][27], [Gemini LLM ⧉][26] is designed to excel in various domains, including natural language understanding, generating different creative text formats, and applying knowledge to solve problems. With its ability to process multimodal data, [Google Gemini LLM ⧉][26] holds great potential for applications in areas like computer vision, scientific research, and healthcare. The model is currently available in three sizes: **Ultra**, **Pro**, and **Nano**, catering to different computational requirements.
+
 ### The Open-Source AI Revolution: Shaping the Future of AI
 
 The open-source AI revolution is fundamentally transforming the landscape of AI development, deployment, and utilisation. By making AI more accessible, affordable, and versatile, open-source technology is democratising AI's capabilities and paving the way for groundbreaking innovations and applications. As the open-source movement gains momentum, we can confidently anticipate even more transformative advancements that will shape the future of AI and its profound impact on our world.
@@ -246,5 +248,7 @@ Thank you again for your time and I look forward to hearing from you!
 [23]: https://www.whitehouse.gov/ostp/ "Office of Science and Technology Policy"
 [24]: https://www.youtube.com/@BankingOnQuantum "Banking on Quantum YouTube Channel"
 [25]: https://www.youtube.com/@BankingOnQuantum?sub_confirmation=1 "Subscribe to @BankingOnQuantum YouTube Channel"
+[26]: https://deepmind.google/technologies/gemini/#introduction "Google Gemini LLM"
+[27]: https://ai.google/discover/palm2/ "PaLM 2"
 
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
