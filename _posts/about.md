@@ -102,17 +102,17 @@ site_software: "Shokunin, Rust"
 
 ## Biography
 
-Sebastien Rousseau is a Senior Technical and Business Leader with over 20 years of experience in payments technology and building the future of digital finance. He is passionate about crafting the next generation of banking and digital payment products through the strategic integration of Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), and Blockchain Technology.
+Sebastien Rousseau is a Senior Technical and Business Leader with over 20 years of experience in payments technology and the future of digital finance. He is passionate about crafting the next generation of banking and digital payment products through the strategic integration of Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), and Blockchain Technology.
 
-As a Senior Product Manager at HSBC, Sebastien has successfully led the development and launch of several innovative products and services, including HSBC Treasury APIs, HSBC Banking-as-a-Service (BaaS) offering, and other corporate global solutions that aim to provide a seamless digital experience to HSBC's customers.
+As a Senior Product Manager at HSBC, Sebastien has successfully led the development and launch of several innovative products and services. These include the HSBC Treasury APIs and the HSBC Banking-as-a-Service (BaaS) offering. These corporate global solutions aim to provide a seamless digital experience to HSBC’s customers.
 
-Prior to HSBC, he has also played a key role in designing and delivering operational improvements on a number of complex mobile projects at Barclays Bank PLC, Shazam Entertainment Limited, and PayPal Inc. He started his career at AKQA, London, where he led the mobile technology division and supported key global client accounts including Nike, RBS, MTV, GAP, Nokia, and Target, successfully driving innovative mobile projects and digital experiences.
+Before joining HSBC, Sebastien played a key role in designing and delivering operational improvements on a number of complex mobile projects. He worked with Barclays Bank PLC, Shazam Entertainment Limited, and PayPal Inc. He started his career at AKQA, London, where he led the mobile technology division. He supported key global client accounts including Nike, RBS, MTV, GAP, Nokia, and Target, successfully driving innovative mobile projects and digital experiences.
 
-Sebastien's diverse experience in banking, financial services, communications, creative, and media has given him a profound understanding of how Information Technology (IT) can be a force multiplier for business and customer benefits. He is an experienced strategic and operational leader with cross-platform product design, engineering, and solution architecture skills. He is an active contributor to the open source community and is consistently at the forefront of financial innovation.
+Sebastien’s diverse experience in banking, financial services, communications, creative, and media has given him a profound understanding of how Information Technology (IT) can be a force multiplier for business and customer benefits. He is an experienced strategic and operational leader with cross-platform product design, engineering, and solution architecture skills. He is an active contributor to the open source community and is consistently at the forefront of financial innovation.
 
 ## Experience
 
-Brands I've worked with along the way.
+Brands Sebastien has worked with along the way.
 
  <div class="rollers position-relative overflow-hidden">
     <div class="start-roller"></div>
