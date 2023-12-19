@@ -112,22 +112,23 @@ lives and how they can be applied to solve real-world problems.
 
 Read the latest articles below, and [**see all articles, news and product announcements**][100].
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/stock/images/banners/getty-images-aTWKwJllPOA.webp).class=\"zoom-out w-25 p-3 float-start\"][11]
+[![Banner](https://kura.pro/stock/images/banners/getty-images-aTWKwJllPOA.webp).class=\"fade-in w-50 p-3 me-3 img-thumbnail float-start \"][11]
 
 ### [State of AI and Quantum Computing in Banking: A 2023 Review][11]
 
 *by [Sebastien Rousseau][00] (18 Dec 2023)*
 
-Exploring 2023's Technological Landscape: AI & Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations & Governance.
+#### Shaping the Future of Banking: AI, Quantum Computing, Open Source Models, and Regulatory Landscape
+
+Exploring 2023's Technological Landscape: AI & Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations & Governance. This article discusses the impact of **open-source AI models**, **QC in transactional security**, and **regulations and governance on banking and finance**.
 
 [**Learn more ❯**][11]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
-
-[![Banner](https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp).class=\"zoom-out w-25 p-3 float-start\"][10]
+[![Banner](https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp).class=\"w-25 p-3 float-start\"][10]
 
 ### [Quantum Key Distribution Revolutionising Security in Banking][10]
 
@@ -137,9 +138,9 @@ As quantum computers pose a threat to traditional encryption methods, Quantum Ke
 
 [**Learn more ❯**][10]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"zoom-out w-25 p-3 float-start\"][09]
+[![Banner](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"w-25 p-3 float-start\"][09]
 
 ### [Efficient Date and Time Management with DateTime (DTT)][09]
 
@@ -149,9 +150,9 @@ DateTime (DTT) is a comprehensive Rust library for parsing, validating, manipula
 
 [**Learn more ❯**][09]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"zoom-out w-25 p-3 float-start\"][08]
+[![Banner](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"w-25 p-3 float-start\"][08]
 
 ### [KyberLib: A Rust-Powered Shield Against Quantum Threats][08]
 
@@ -161,9 +162,9 @@ A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algo
 
 [**Learn more ❯**][08]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/stock/images/banners/galina-nelyubova-V70-ng4FuiA.webp).class=\"zoom-out w-25 p-3 float-start\"][07]
+[![Banner](https://kura.pro/stock/images/banners/galina-nelyubova-V70-ng4FuiA.webp).class=\"w-25 p-3 float-start\"][07]
 
 ### [CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age][07]
 
@@ -173,7 +174,7 @@ Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revo
 
 [**Learn more ❯**][07]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 [**See all articles** ❯][100]
 
@@ -190,3 +191,5 @@ Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revo
 [10]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution Revolutionising Security in Banking"
 [11]: /2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html "State of AI and Quantum Computing in Banking: A 2023 Review"
 [100]: /articles/index.html "See all articles"
+
+[divider]: https://kura.pro/common/images/elements/divider.svg "Divider"

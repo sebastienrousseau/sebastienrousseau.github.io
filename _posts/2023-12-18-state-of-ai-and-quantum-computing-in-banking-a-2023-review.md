@@ -188,6 +188,8 @@ Addressing these challenges will require a multi-stakeholder approach that invol
 
 ## The State of AI Governance
 
+![The State of AI Governance][28].class=\"fade-in w-100 p-3 me-3 img-thumbnail \"
+
 In 2023, **significant global initiatives and developments have shaped the landscape of AI governance and regulation**. These activities reflect the growing recognition of the [**need for robust frameworks to oversee the development and deployment of AI technologies** ⧉][19].
 
 In the United States, President Joe Biden issued an [**executive order to manage the risks associated with AI and support international efforts to govern AI** ⧉][15]. The White House [**Office of Science and Technology Policy (OSTP)** ⧉][23] has been engaged in extensive discussions with researchers, companies, and civil society to inform AI governance. The U.S. is working with its allies and partners on AI governance, including participation in the G7 Hiroshima AI Process and the United Kingdom's [**AI Safety Summit** ⧉][16].
@@ -250,5 +252,6 @@ Thank you again for your time and I look forward to hearing from you!
 [25]: https://www.youtube.com/@BankingOnQuantum?sub_confirmation=1 "Subscribe to @BankingOnQuantum YouTube Channel"
 [26]: https://deepmind.google/technologies/gemini/#introduction "Google Gemini LLM"
 [27]: https://ai.google/discover/palm2/ "PaLM 2"
+[28]: https://kura.pro/stock/images/banners/ai-regulation-gavel-chip.webp "AI Regulations"
 
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
