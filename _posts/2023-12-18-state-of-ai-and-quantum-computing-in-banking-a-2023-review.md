@@ -46,13 +46,13 @@ url: "https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
-atom_link: "https://sebastienrousseau.com/state-of-ai-and-quantum-computing-in-banking-a-2023-review/rss.xml"
+atom_link: "https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Shokunin 🦀 (version 0.0.20)"
 item_description: "Exploring 2023's Technological Landscape: AI & Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations & Governance"
-item_guid: "https://sebastienrousseau.com/state-of-ai-and-quantum-computing-in-banking-a-2023-review/rss.xml"
-item_link: "https://sebastienrousseau.com/state-of-ai-and-quantum-computing-in-banking-a-2023-review/rss.xml"
+item_guid: "https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/rss.xml"
+item_link: "https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/rss.xml"
 item_pub_date: "2023-12-18T06:06:06+01:00"
 item_title: "State of AI and Quantum Computing in Banking: A 2023 Review"
 last_build_date: "2023-12-18T06:06:06+01:00"
