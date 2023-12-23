@@ -140,7 +140,7 @@ Explore the transformative role of AI in quantum algorithms for finance, with a 
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-start \"][10]
+[![Banner](https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-end \"][10]
 
 ### [Quantum Key Distribution Revolutionising Security in Banking][10]
 
@@ -152,7 +152,7 @@ As quantum computers pose a threat to traditional encryption methods, Quantum Ke
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-end \"][09]
+[![Banner](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-start \"][09]
 
 ### [Efficient Date and Time Management with DateTime (DTT)][09]
 
@@ -164,7 +164,7 @@ DateTime (DTT) is a comprehensive Rust library for parsing, validating, manipula
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-start \"][08]
+[![Banner](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-end \"][08]
 
 ### [KyberLib: A Rust-Powered Shield Against Quantum Threats][08]
 
@@ -176,28 +176,9 @@ A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algo
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/stock/images/banners/galina-nelyubova-V70-ng4FuiA.webp).class=\"zoom-in w-25 m-3 rounded float-end \"][07]
-
-### [CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age][07]
-
-*by [Sebastien Rousseau][00] (19 Nov 2023)*
-
-Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.
-
-[**Learn more ❯**][07]
-
-![divider][divider].class=\"m-10 w-100\"
-
 [**See all articles** ❯][100]
 
 [00]: /about/index.html "About Sebastien Rousseau, Banking & Financial Service Professional"
-[01]: /2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
-[02]: /2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html "Automating ISO 20022 Payment Files Creation with Pain001"
-[03]: /2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html "Protecting Data in the Quantum Age: The Hash Library (HSH)"
-[04]: /2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html "Streamlining Rust Library Development with Code Generation"
-[05]: /2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html "Mathematical and Cryptographic Constants for Rust Security"
-[06]: /2023-11-12-exploring-generative-ai/index.html "Exploring Generative AI: Shaping the Future of Technology"
-[07]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
 [08]: /2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html "KyberLib: A Rust-Powered Shield Against Quantum Threats"
 [09]: /2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html "Efficient Date and Time Management with DateTime (DTT)"
 [10]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution Revolutionising Security in Banking"
