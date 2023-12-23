@@ -128,6 +128,18 @@ Exploring 2023's Technological Landscape: AI & Quantum Computing Revolutionising
 
 ![divider][divider].class=\"m-10 w-100\"
 
+[![Banner](https://kura.pro/stock/images/banners/circuit_board_cityscape.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-start \"][12]
+
+### [Revolutionising Finance with AI-Enhanced Quantum Algorithms][12]
+
+*by [Sebastien Rousseau][00] (25 Dec 2023)*
+
+Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications.
+
+[**Learn more ❯**][12]
+
+![divider][divider].class=\"m-10 w-100\"
+
 [![Banner](https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-start \"][10]
 
 ### [Quantum Key Distribution Revolutionising Security in Banking][10]
@@ -190,6 +202,7 @@ Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revo
 [09]: /2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html "Efficient Date and Time Management with DateTime (DTT)"
 [10]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution Revolutionising Security in Banking"
 [11]: /2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html "State of AI and Quantum Computing in Banking: A 2023 Review"
+[12]: /2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
 [100]: /articles/index.html "See all articles"
 
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"

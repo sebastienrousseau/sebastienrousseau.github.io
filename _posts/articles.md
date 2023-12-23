@@ -113,6 +113,18 @@ on these topics.
 
 ## Our Stories
 
+### [Revolutionising Finance with AI-Enhanced Quantum Algorithms][18]
+
+[![Banner](https://kura.pro/stock/images/banners/circuit_board_cityscape.webp).class=\"zoom-in w-25 p-3 float-start\"][18]
+
+*by [Sebastien Rousseau][00] (25 Dec 2023)*
+
+Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications.
+
+[**Read full story ❯**][18]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
 ### [State of AI and Quantum Computing in Banking: A 2023 Review][17]
 
 [![Banner](https://kura.pro/stock/images/banners/getty-images-aTWKwJllPOA.webp).class=\"zoom-in w-25 p-3 float-start\"][17]
@@ -336,3 +348,4 @@ Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential 
 [15]: /2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html "Efficient Date and Time Management with DateTime (DTT)"
 [16]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution Revolutionising Security in Banking"
 [17]: /2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html "State of AI and Quantum Computing in Banking: A 2023 Review"
+[18]: /2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
