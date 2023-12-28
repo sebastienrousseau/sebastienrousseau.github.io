@@ -114,7 +114,7 @@ Read the latest articles below, and [**see all articles, news and product announ
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/stock/images/banners/getty-images-aTWKwJllPOA.webp).class=\"fade-in w-50 p-3 me-3 img-thumbnail float-end \"][11]
+[![State of AI and Quantum Computing in Banking: A 2023 Review](https://kura.pro/stock/images/banners/getty-images-aTWKwJllPOA.webp).class=\"fade-in w-50 p-3 me-3 img-thumbnail float-end \"][11]
 
 ### [State of AI and Quantum Computing in Banking: A 2023 Review][11]
 
@@ -128,19 +128,31 @@ Exploring 2023's Technological Landscape: AI & Quantum Computing Revolutionising
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/stock/images/banners/quantum-computer-room.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-start \"][13]
+<!-- [![Qiskit & Quantum Fourier Transform for Credit Ratio Analysis](https://kura.pro/stock/images/banners/quantum-computer-room.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-start \"][14] -->
 
-### [Qiskit & Quantum Fourier Transform for Credit Ratio Analysis][13]
+<!-- ### [Qiskit & Quantum Fourier Transform for Credit Ratio Analysis][14] -->
+
+<!-- *by [Sebastien Rousseau][00] (08 Jan 2024)* -->
+
+<!-- Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed. -->
+
+<!-- [**Learn more ❯**][14] -->
+
+![divider][divider].class=\"m-10 w-100\"
+
+[![AI Trends 2024: Insights and Predictions for the Future](https://kura.pro/stock/images/banners/drone-view-of-london.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-end \"][13]
+
+### [AI Trends 2024: Insights and Predictions for the Future][13]
 
 *by [Sebastien Rousseau][00] (01 Jan 2024)*
 
-Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed.
+Explore the transformative AI trends of 2024, from generative AI to AI in retail, and how they'll shape our future.
 
 [**Learn more ❯**][13]
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/stock/images/banners/circuit_board_cityscape.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-end \"][12]
+[![Revolutionising Finance with AI-Enhanced Quantum Algorithms](https://kura.pro/stock/images/banners/circuit_board_cityscape.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-start \"][12]
 
 ### [Revolutionising Finance with AI-Enhanced Quantum Algorithms][12]
 
@@ -152,7 +164,7 @@ Explore the transformative role of AI in quantum algorithms for finance, with a 
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-start \"][10]
+[![Quantum Key Distribution Revolutionising Security in Banking](https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-end \"][10]
 
 ### [Quantum Key Distribution Revolutionising Security in Banking][10]
 
@@ -164,7 +176,7 @@ As quantum computers pose a threat to traditional encryption methods, Quantum Ke
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-end \"][09]
+[![Efficient Date and Time Management with DateTime (DTT)](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-start \"][09]
 
 ### [Efficient Date and Time Management with DateTime (DTT)][09]
 
@@ -176,7 +188,7 @@ DateTime (DTT) is a comprehensive Rust library for parsing, validating, manipula
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Banner](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-start \"][08]
+[![KyberLib: A Rust-Powered Shield Against Quantum Threats](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-end \"][08]
 
 ### [KyberLib: A Rust-Powered Shield Against Quantum Threats][08]
 
@@ -196,7 +208,8 @@ A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algo
 [10]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution Revolutionising Security in Banking"
 [11]: /2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html "State of AI and Quantum Computing in Banking: A 2023 Review"
 [12]: /2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
-[13]: /2024-01-01-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html "Optimising Credit Ratio Analysis with IBM Qiskit and Quantum Fourier Transform"
+[13]: /2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html "AI Trends 2024: Insights and Predictions for the Future"
+<!-- [14]: /2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html "Optimising Credit Ratio Analysis with IBM Qiskit and Quantum Fourier Transform" -->
 [100]: /articles/index.html "See all articles"
 
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"

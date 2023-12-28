@@ -113,13 +113,25 @@ on these topics.
 
 ## Our Stories
 
-### [Qiskit & Quantum Fourier Transform for Credit Ratio Analysis][19]
+<!-- ### [Qiskit & Quantum Fourier Transform for Credit Ratio Analysis][20] -->
 
-[![Banner](https://kura.pro/stock/images/banners/quantum-computer-room.webp).class=\"zoom-in w-25 p-3 float-start\"][19]
+<!-- [![Banner](https://kura.pro/stock/images/banners/quantum-computer-room.webp).class=\"zoom-in w-25 p-3 float-start\"][20] -->
+
+<!-- *by [Sebastien Rousseau][00] (09 Jan 2024)* -->
+
+<!-- Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed. -->
+
+<!-- [**Read full story ❯**][20] -->
+
+<!-- ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\" -->
+
+### [AI Trends 2024: Insights and Predictions for the Future][19]
+
+[![Banner](https://kura.pro/stock/images/banners/drone-view-of-london.webp).class=\"zoom-in w-25 p-3 float-start\"][19]
 
 *by [Sebastien Rousseau][00] (01 Jan 2024)*
 
-Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed.
+Explore the transformative AI trends of 2024, from generative AI to AI in retail, and how they'll shape our future.
 
 [**Read full story ❯**][19]
 
@@ -361,5 +373,6 @@ Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential 
 [16]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution Revolutionising Security in Banking"
 [17]: /2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html "State of AI and Quantum Computing in Banking: A 2023 Review"
 [18]: /2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
-[19]: /2024-01-01-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html "Optimising Credit Ratio Analysis with IBM Qiskit and Quantum Fourier Transform"
+[19]: /2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html "AI Trends 2024: Insights and Predictions for the Future"
+[20]: /2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html "Optimising Credit Ratio Analysis with IBM Qiskit and Quantum Fourier Transform"
 
