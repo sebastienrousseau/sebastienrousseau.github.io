@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023-2024 - Sebastien Rousseau. All rights reserved."
-date: "Jan 01, 2024"
+date: "Jan 08, 2024"
 description: "Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking & Financial Services"
 format-detection: "telephone=no"
 hreflang: "en"
@@ -53,11 +53,11 @@ generator: "Shokunin 🦀 (version 0.0.21)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
-item_pub_date: "2024-01-01T01:00:00+01:00"
+item_pub_date: "2024-01-08T06:06:06+01:00"
 item_title: "Sebastien Rousseau, Banking & Financial Service Professional"
-last_build_date: "2024-01-01T01:00:00+01:00"
+last_build_date: "2024-01-08T06:06:06+01:00"
 managing_editor: "contact@sebastienrousseau.com"
-pub_date: "2024-01-01T01:00:00+01:00"
+pub_date: "2024-01-08T06:06:06+01:00"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -114,33 +114,21 @@ Read the latest articles below, and [**see all articles, news and product announ
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![State of AI and Quantum Computing in Banking: A 2023 Review](https://kura.pro/stock/images/banners/getty-images-aTWKwJllPOA.webp).class=\"fade-in w-50 p-3 me-3 img-thumbnail float-end \"][11]
+[![Qiskit & Quantum Fourier Transform for Credit Ratio Analysis](https://kura.pro/stock/images/banners/quantum-computer-room.webp).class=\"fade-in w-50 p-3 me-3 img-thumbnail float-end \"][14]
 
-### [State of AI and Quantum Computing in Banking: A 2023 Review][11]
+### [Qiskit & Quantum Fourier Transform for Credit Ratio Analysis][14]
 
-*by [Sebastien Rousseau][00] (18 Dec 2023)*
+*by [Sebastien Rousseau][00] (08 Jan 2024)*
 
-#### Shaping the Future of Banking: AI, Quantum Computing, Open Source Models, and Regulatory Landscape
+#### Optimising Credit Ratio Analysis with IBM Qiskit and Quantum Fourier Transform
 
-Exploring 2023's Technological Landscape: AI & Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations & Governance. This article discusses the impact of **open-source AI models**, **QC in transactional security**, and **regulations and governance on banking and finance**.
+Explore how **IBM Qiskit** and **Quantum Fourier Transform** revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed.
 
-[**Learn more ❯**][11]
-
-![divider][divider].class=\"m-10 w-100\"
-
-<!-- [![Qiskit & Quantum Fourier Transform for Credit Ratio Analysis](https://kura.pro/stock/images/banners/quantum-computer-room.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-start \"][14] -->
-
-<!-- ### [Qiskit & Quantum Fourier Transform for Credit Ratio Analysis][14] -->
-
-<!-- *by [Sebastien Rousseau][00] (08 Jan 2024)* -->
-
-<!-- Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed. -->
-
-<!-- [**Learn more ❯**][14] -->
+[**Learn more ❯**][14]
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![AI Trends 2024: Insights and Predictions for the Future](https://kura.pro/stock/images/banners/drone-view-of-london.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-end \"][13]
+[![AI Trends 2024: Insights and Predictions for the Future](https://kura.pro/stock/images/banners/drone-view-of-london.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-start \"][13]
 
 ### [AI Trends 2024: Insights and Predictions for the Future][13]
 
@@ -152,7 +140,7 @@ Explore the transformative AI trends of 2024, from generative AI to AI in retail
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Revolutionising Finance with AI-Enhanced Quantum Algorithms](https://kura.pro/stock/images/banners/circuit_board_cityscape.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-start \"][12]
+[![Revolutionising Finance with AI-Enhanced Quantum Algorithms](https://kura.pro/stock/images/banners/circuit_board_cityscape.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-end \"][12]
 
 ### [Revolutionising Finance with AI-Enhanced Quantum Algorithms][12]
 
@@ -164,7 +152,7 @@ Explore the transformative role of AI in quantum algorithms for finance, with a 
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Quantum Key Distribution Revolutionising Security in Banking](https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-end \"][10]
+[![Quantum Key Distribution Revolutionising Security in Banking](https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-start \"][10]
 
 ### [Quantum Key Distribution Revolutionising Security in Banking][10]
 
@@ -176,7 +164,7 @@ As quantum computers pose a threat to traditional encryption methods, Quantum Ke
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Efficient Date and Time Management with DateTime (DTT)](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-start \"][09]
+[![Efficient Date and Time Management with DateTime (DTT)](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-end \"][09]
 
 ### [Efficient Date and Time Management with DateTime (DTT)][09]
 
@@ -188,7 +176,7 @@ DateTime (DTT) is a comprehensive Rust library for parsing, validating, manipula
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![KyberLib: A Rust-Powered Shield Against Quantum Threats](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-end \"][08]
+[![KyberLib: A Rust-Powered Shield Against Quantum Threats](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"zoom-in w-25 m-3 img-thumbnail float-start \"][08]
 
 ### [KyberLib: A Rust-Powered Shield Against Quantum Threats][08]
 
@@ -206,10 +194,9 @@ A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algo
 [08]: /2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html "KyberLib: A Rust-Powered Shield Against Quantum Threats"
 [09]: /2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html "Efficient Date and Time Management with DateTime (DTT)"
 [10]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution Revolutionising Security in Banking"
-[11]: /2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html "State of AI and Quantum Computing in Banking: A 2023 Review"
 [12]: /2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
 [13]: /2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html "AI Trends 2024: Insights and Predictions for the Future"
-<!-- [14]: /2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html "Optimising Credit Ratio Analysis with IBM Qiskit and Quantum Fourier Transform" -->
+[14]: /2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html "Optimising Credit Ratio Analysis with IBM Qiskit and Quantum Fourier Transform"
 [100]: /articles/index.html "See all articles"
 
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"

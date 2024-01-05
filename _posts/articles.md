@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2023-2024 - Sebastien Rousseau. All rights reserved."
-date: "Jan 01, 2024"
+date: "Jan 08, 2024"
 description: "Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry"
 format-detection: "telephone=no"
 hreflang: "en"
@@ -53,11 +53,11 @@ generator: "Shokunin 🦀 (version 0.0.21)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
-item_pub_date: "2024-01-01T01:00:00+01:00"
+item_pub_date: "2024-01-08T06:06:06+01:00"
 item_title: "RSS"
-last_build_date: "2024-01-01T01:00:00+01:00"
+last_build_date: "2024-01-08T06:06:06+01:00"
 managing_editor: "contact@sebastienrousseau.com"
-pub_date: "2024-01-01T01:00:00+01:00"
+pub_date: "2024-01-08T06:06:06+01:00"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -113,17 +113,17 @@ on these topics.
 
 ## Our Stories
 
-<!-- ### [Qiskit & Quantum Fourier Transform for Credit Ratio Analysis][20] -->
+### [Qiskit & Quantum Fourier Transform for Credit Ratio Analysis][20]
 
-<!-- [![Banner](https://kura.pro/stock/images/banners/quantum-computer-room.webp).class=\"zoom-in w-25 p-3 float-start\"][20] -->
+[![Banner](https://kura.pro/stock/images/banners/quantum-computer-room.webp).class=\"zoom-in w-25 p-3 float-start\"][20]
 
-<!-- *by [Sebastien Rousseau][00] (09 Jan 2024)* -->
+*by [Sebastien Rousseau][00] (08 Jan 2024)*
 
-<!-- Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed. -->
+Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed.
 
-<!-- [**Read full story ❯**][20] -->
+[**Read full story ❯**][20]
 
-<!-- ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\" -->
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
 ### [AI Trends 2024: Insights and Predictions for the Future][19]
 
