@@ -101,7 +101,7 @@ site_software: "Shokunin, Rust"
 
 ## Unleashing Artistic Innovation through Cutting-Edge Technology
 
-2023 was a year of profound transformation and realisation. Motivated by curiosity and a drive to innovate, I delved into cutting-edge technology, including Rust, AI, and Quantum Computing. My aim wasn't just to understand these complex fields, but to explore their potential to shape innovative strategies.
+2023 was a year of profound transformation and realisation. Motivated by curiosity and a drive to innovate, I delved into cutting-edge technology, including [**Rust ⧉**][06], [**AI ⧉**][07], and [**Quantum Computing ⧉**][08]. My aim wasn't just to understand these complex fields, but to explore their potential to shape innovative strategies.
 
 As I explored into the intricate workings of code, algorithms, and quantum theories, my professional horizon expanded exponentially. Rust, AI, and Quantum Computing all brought new ideas and expanded my creativity.
 
@@ -111,15 +111,15 @@ As I explored into the intricate workings of code, algorithms, and quantum theor
 
 ### Rust: The Foundations of a New Era
 
-My journey started with Rust, a language known for its safety and performance. I was drawn to its simplicity and elegance, and I was intrigued by its potential to transform the way we build software. I was also fascinated by its potential to transform the way we think about software development.
+My journey started with [**Rust ⧉**][06], a language known for its safety and performance. I was drawn to its simplicity and elegance, and I was intrigued by its potential to transform the way we build software. I was also fascinated by its potential to transform the way we think about software development.
 
 ### AI: The New Frontier
 
-Next came AI, a field teeming with possibilities. From understanding machine learning models to experimenting with neural networks, AI has opened up a world of innovative potential.
+Next came [**AI ⧉**][07], a field teeming with possibilities. From understanding machine learning models to experimenting with neural networks, AI has opened up a world of innovative potential.
 
 ### Quantum Computing: The Enigma
 
-Quantum Computing was the pinnacle of my technical journey. Its perplexing concepts and mind-bending theories pushed my cognitive boundaries, offering a glimpse into the future of computing.
+[**Quantum Computing ⧉**][08] was the pinnacle of my technical journey. Its perplexing concepts and mind-bending theories pushed my cognitive boundaries, offering a glimpse into the future of computing.
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -131,7 +131,7 @@ I neglected my passion for art and photography while consumed by work and techno
 
 ### The Humble Beginnings of Alien Studio: Blending Tech with Art
 
-The advent of MidJourney v6 presented an unassuming yet inspiring opportunity. Its efficiency in content creation sparked a modest idea in me: could I combine my growing understanding of technology with my love for art? This thought led me to ponder a future where these two worlds could gently merge, creating something uniquely meaningful. In this quiet contemplation, the concept of Alien Studio took its first, tentative steps towards reality.
+The advent of [**MidJourney v6 ⧉**][09] presented an unassuming yet inspiring opportunity. Its efficiency in content creation sparked a modest idea in me: could I combine my growing understanding of technology with my love for art? This thought led me to ponder a future where these two worlds could gently merge, creating something uniquely meaningful. In this quiet contemplation, the concept of Alien Studio took its first, tentative steps towards reality.
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -145,7 +145,7 @@ The idea for Alien Studio sprang from this unique confluence of technology and a
 
 ### Alien Studio: A Digital Renaissance
 
-At Alien Studio, every photograph is not just an image but a story, told through the lens of technology and art. It's where the precision of Rust, the intelligence of AI, and the complexities of Quantum Computing merge with the fluidity and emotion of photography.
+At Alien Studio, every photograph is not just an image but a story, told through the lens of technology and art. It's where the precision of Rust, the intelligence of [**AI ⧉**][07], and the complexities of Quantum Computing merge with the fluidity and emotion of photography.
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -185,7 +185,7 @@ This journey has been about more than just learning and applying technology. It'
 
 ### Experience the Convergence of Technology and Art
 
-I invite you to visit [Alien Studio ⧉][00], to see through the photographs how technology can not just complement but elevate art. Each piece is a chapter of my journey, a fusion of tech and art, waiting to be explored.
+I invite you to visit [**Alien Studio ⧉**][00], to see through the photographs how technology can not just complement but elevate art. Each piece is a chapter of my journey, a fusion of tech and art, waiting to be explored.
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -196,3 +196,7 @@ I invite you to visit [Alien Studio ⧉][00], to see through the photographs how
 [03]: https://kura.pro/alienstudio/images/collections/ethereal/ethereal-01.webp "A lone silhouette against a fiery cosmic backdrop"
 [04]: https://kura.pro/alienstudio/images/collections/metropolis/metropolis-08.webp "Youthful beauty, lit by day’s end, amidst the urban flow, a silent story"
 [05]: https://kura.pro/alienstudio/images/collections/serenity/serenity-01.webp "Glistening dawn serenity"
+[06]: https://www.rust-lang.org/ "Rust Programming Language"
+[07]: https://en.wikipedia.org/wiki/Artificial_intelligence "Artificial intelligence"
+[08]: https://en.wikipedia.org/wiki/Quantum_computing "Quantum computing"
+[09]: https://www.midjourney.com/explore "Midjourney"
