@@ -126,7 +126,7 @@ Read the latest articles below, and [**see all articles, news and product announ
 
 My journey to Alien Studio has been a transformative adventure, traversing the realms of Rust, AI, and Quantum Computing, and culminating in a newfound artistic passion. This personal odyssey reflects a harmonious blend of technological expertise and artistic rediscovery, exemplified in the unique creations of Alien Studio.
 
-[**Learn more ❯**][05]
+[**Learn more ❯**][06]
 
 ![divider][divider].class=\"m-10 w-100\"
 
