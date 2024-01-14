@@ -156,6 +156,16 @@ content="default-src 'self';
                   </a>
                 </li>
                 <li>
+                  <a class="dropdown-item" href="/made-with-shokunin/index.html">
+                    Made with Shokunin
+                  </a>
+                </li> 
+                <li>
+                  <a class="dropdown-item" href="/made-with-shokunin/index.html">
+                    Made with Shokunin
+                  </a>
+                </li> 
+                <li>
                   <a class="dropdown-item" href="/tags/index.html">
                     Tags
                   </a>
@@ -217,31 +227,33 @@ content="default-src 'self';
       <div class="text-start justify-content-between">{{content}}</div>
     </main>
 
-    <!-- Footer-->
-    <footer id="footer" aria-label="footer" class="footer border-top mt-auto py-3">
-      <img
-        alt="{{subtitle}}"
-        class="d-inline-block align-items-center"
-        height="32"
-        loading="lazy"
-        src="{{cdn}}/{{short_name}}/images/logos/{{short_name}}.webp"
-        title="{{subtitle}}"
-        width="32"
-      />
-      <span class="px-2">{{copyright}}</span>
-      <p class="mb-0">
-        <span class="px-2"><a href="/contact/index.html">Contact</a></span>
-        <span class="px-2"><a href="/privacy/index.html">Privacy & Cookie Policy</a></span>
-        <span class="px-2"><a href="/terms/index.html">Terms of Use</a></span>
+    <!-- Top Anchor -->
+    <top id="top-anchor">
+      <p class="mb-0 text-center p-4">
+        <a href="#page-top" class="btn btn-outline-dark btn-floating btn-lg">
+          Back to the top
+        </a>
       </p>
+    </top>
+    <!-- # End Top Anchor -->
+
+    <!-- Footer-->
+    <footer id="footer" aria-label="footer" class="footer bg-light mt-auto fs-6 py-5 border-top">
       <p class="mb-0">
         <a class="btn btn-floating btn m-1" target="_blank" href="https://twitter.com/wwdseb"><img src="{{cdn}}/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter" title="Sebastien Rousseau on Twitter" width="32" height="32" /></a>
         <a class="btn btn-floating btn m-1" target="_blank" href="https://www.linkedin.com/in/sebastienrousseau/"><img src="{{cdn}}/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" title="Sebastien Rousseau on LinkedIn" width="32" height="32" /></a>
         <a class="btn btn-floating btn m-1" target="_blank" href="https://medium.com/@BankingOnQuantum"><img src="{{cdn}}/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" title="Sebastien Rousseau on Medium" width="32" height="32" /></a>
         <a class="btn btn-floating btn m-1" target="_blank" href="https://www.youtube.com/@BankingOnQuantum"><img src="{{cdn}}/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" title="Sebastien Rousseau on YouTube" width="32" height="32" /></a>
       </p>
+      <p class="mb-0">
+        <span class="px-2"><a href="/accessibility/index.html">Accessibility</a></span>
+        <span class="px-2"><a href="/contact/index.html">Contact</a></span>
+        <span class="px-2"><a href="/privacy/index.html">Privacy & Cookie Policy</a></span>
+        <span class="px-2"><a href="/terms/index.html">Terms of Use</a></span>
+      </p>
+      <span class="px-2">{{copyright}}</span>
     </footer>
-    
+    <!-- # End Footer -->
     <script
       async
       crossorigin="anonymous"
@@ -249,40 +261,7 @@ content="default-src 'self';
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       defer
     ></script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org/",
-        "@type": "WebPage",
-        "author": {
-          "@type": "Person",
-          "@id": "{{author}}"
-        },
-        "copyrightHolder": {
-          "@type": "Person",
-          "@id": "{{author}}"
-        },
-        "copyrightYear": "{{copyright}}",
-        "creator": {
-          "@type": "Person",
-          "@id": "{{author}}"
-        },
-        "dateModified": "{{last_build_date}}",
-        "datePublished": "{{item_pub_date}}",
-        "description": "{{description}}",
-        "headline": "{{subtitle}}",
-        "image": {
-          "@type": "ImageObject",
-          "url": "{{image}}"
-        },
-        "inLanguage": "{{language}}",
-        "mainEntityOfPage": "{{permalink}}",
-        "name": "{{name}}",
-        "publisher": {
-          "@type": "Person",
-          "@id": "{{author}}"
-        }
-      }
-    </script>
+    <script type="application/ld+json">{"@context":"http://schema.org/","@type":"BlogPosting","headline":"{{title}}","datePublished":"{{last_build_date}}","dateModified":"{{item_pub_date}}","description":"{{description}}","image":{"@type":"ImageObject","height":"2048","width":"2048","url":"{{image}}"},"mainEntityOfPage":{"@type":"WebPage","@id":"{{id}}","name":"{{subtitle}}"},"author":"{{author}}","copyrightHolder":{"@type":"Person","@id":"{{author}}"},"copyrightYear":"{{copyright}}","creator":{"@type":"Person","@id":"{{author}}"},"inLanguage":"{{language}}","name":"{{name}}","publisher":{"@type":"Person","@id":"{{author}}"}}</script>
     <script type="module" defer>
       // This is an Immediately Invoked Function Expression (IIFE) which helps
       // to avoid declaring any globals.
@@ -311,7 +290,7 @@ content="default-src 'self';
       dropDownElements.forEach(function(element) {
         element.classList.add('animate');
       });
-  
+
       window.addEventListener('scroll', function() {
         var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         dropDownElements.forEach(function(element) {
@@ -324,13 +303,13 @@ content="default-src 'self';
       });
     </script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{measurementID}}"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-169G4ET5HQ');
+      gtag('config', '{{measurementID}}');
     </script>
   </body>
 </html>
