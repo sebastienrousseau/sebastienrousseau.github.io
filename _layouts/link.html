@@ -91,14 +91,14 @@
       itemtype="http://schema.org/SiteNavigationElement"
     >
     <div class="container-xxl p-3">
-      <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="logo">
+      <a class="navbar-brand p-0 me-0 me-lg-2" href="/index.html" aria-label="logo">
         <img
           class="d-inline-block align-top"
           width="{{logo_width}}"
           height="{{logo_height}}"
           src="{{logo}}"
           alt="{{logo_alt}}"
-          title="{{logo_alt}}"
+          title="Image of the {{logo_alt}}"
           loading="lazy"
         />
       </a>
@@ -149,7 +149,7 @@
               >
               <ul
                 class="dropdown-menu dropdown-menu-end"
-                aria-labelledby="supportDropdown"
+                aria-labelledby="navbarDropdown"
               >
                 <li>
                   <a class="dropdown-item" href="/playlists/index.html">
@@ -194,9 +194,10 @@
         loading="lazy"
         src="{{banner}}"
         style="object-fit: cover; z-index: -1;"
-        title="{{banner_alt}}"
+        title="Image of {{banner_alt}}"
         width="{{banner_width}}"
       />
+      <span id="imageTitle" class="visually-hidden">Image of {{image_alt}}</span>
       <img
         alt="{{image_alt}}"
         aria-labelledby="imageTitle"
@@ -204,19 +205,20 @@
         height="{{image_height}}"
         loading="lazy"
         src="{{image}}"
-        title="{{image_alt}}"
+        title="Image of {{image_alt}}"
         width="{{image_width}}"
       />
-        <div class="text-center text-white center mx-auto rounded rounded-3 p-5"
-        style="
-          background-color: rgba(0, 0, 0, 0.618);
-          width: 94vw;
-          height: auto;
-          z-index: 1;">
-          <p class="display-3">{{name}}</p>
-          <p class="fs-3">{{subtitle}}</p>
-        </div>
-    </header>
+      <div class="text-center text-white center mx-auto rounded rounded-3 p-5"
+      style="
+        background-color: rgba(0, 0, 0, 0.618);
+        width: 94vw;
+        height: auto;
+        z-index: 1;">
+        <h1 class="mb-3 fw-semibold display-1 lh-1 text-white">{{name}}</h1>
+        <p class="fs-5">{{subtitle}}</p>
+      </div>
+  </header>
+  <!-- # End Header -->
 
     <!-- Main content-->
     <main id="main" class="bd-masthead fs-5 p-5" aria-label="main">
@@ -236,10 +238,10 @@
     <!-- Footer-->
     <footer id="footer" aria-label="footer" class="footer bg-light mt-auto fs-6 py-5 border-top">
       <p class="mb-0">
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://twitter.com/wwdseb"><img src="{{cdn}}/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter" title="Sebastien Rousseau on Twitter" width="32" height="32" /></a>
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.linkedin.com/in/sebastienrousseau/"><img src="{{cdn}}/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" title="Sebastien Rousseau on LinkedIn" width="32" height="32" /></a>
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://medium.com/@BankingOnQuantum"><img src="{{cdn}}/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" title="Sebastien Rousseau on Medium" width="32" height="32" /></a>
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.youtube.com/@BankingOnQuantum"><img src="{{cdn}}/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" title="Sebastien Rousseau on YouTube" width="32" height="32" /></a>
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://twitter.com/wwdseb"><img src="{{cdn}}/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter" title="Image for Sebastien Rousseau on Twitter" width="32" height="32" /></a>
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.linkedin.com/in/sebastienrousseau/"><img src="{{cdn}}/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" title="Image for Sebastien Rousseau on LinkedIn" width="32" height="32" /></a>
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://medium.com/@BankingOnQuantum"><img src="{{cdn}}/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" title="Image for Sebastien Rousseau on Medium" width="32" height="32" /></a>
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.youtube.com/@BankingOnQuantum"><img src="{{cdn}}/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" title="Image for Sebastien Rousseau on YouTube" width="32" height="32" /></a>
       </p>
       <p class="mb-0">
         <span class="px-2"><a href="/accessibility/index.html">Accessibility</a></span>

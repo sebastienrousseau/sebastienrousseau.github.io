@@ -114,9 +114,9 @@ on these topics.
 
 ## Our Stories
 
-### [Alien Studio: My Tech-to Art Journey in Photography][21]
+### Alien Studio: My Tech-to Art Journey in Photography
 
-[![Sunset’s muse, a serene glance; beauty in stillness](https://kura.pro/alienstudio/images/collections/radiance/radiance-08.webp).class=\"zoom-in w-25 p-3 float-start\"][21]
+![A Sunset's muse, a serene glance; beauty in stillness](https://kura.pro/alienstudio/images/collections/radiance/radiance-08.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (15 Jan 2024)*
 
@@ -126,9 +126,9 @@ Join me on my personal journey from Rust, AI, and Quantum Computing to redefinin
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-### [Qiskit & Quantum Fourier Transform for Credit Ratio Analysis][20]
+### Qiskit & Quantum Fourier Transform for Credit Ratio Analysis
 
-[![Quantum Computer Room](https://kura.pro/stock/images/banners/quantum-computer-room.webp).class=\"zoom-in w-25 p-3 float-start\"][20]
+![A Quantum Computer Room](https://kura.pro/stock/images/banners/quantum-computer-room.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (08 Jan 2024)*
 
@@ -138,9 +138,9 @@ Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio 
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-### [AI Trends 2024: Insights and Predictions for the Future][19]
+### AI Trends 2024: Insights and Predictions for the Future
 
-[![Drone View of London](https://kura.pro/stock/images/banners/drone-view-of-london.webp).class=\"zoom-in w-25 p-3 float-start\"][19]
+![A Drone View of London](https://kura.pro/stock/images/banners/drone-view-of-london.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (01 Jan 2024)*
 
@@ -150,9 +150,9 @@ Explore the transformative AI trends of 2024, from generative AI to AI in retail
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-### [Revolutionising Finance with AI-Enhanced Quantum Algorithms][18]
+### Revolutionising Finance with AI-Enhanced Quantum Algorithms
 
-[![Circuit Board Cityscape](https://kura.pro/stock/images/banners/circuit_board_cityscape.webp).class=\"zoom-in w-25 p-3 float-start\"][18]
+![A Circuit Board Cityscape](https://kura.pro/stock/images/banners/circuit_board_cityscape.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (25 Dec 2023)*
 
@@ -162,9 +162,9 @@ Explore the transformative role of AI in quantum algorithms for finance, with a 
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-### [State of AI and Quantum Computing in Banking: A 2023 Review][17]
+### State of AI and Quantum Computing in Banking: A 2023 Review
 
-[![Circuit Board with an AI GPU](https://kura.pro/stock/images/banners/getty-images-aTWKwJllPOA.webp).class=\"zoom-in w-25 p-3 float-start\"][17]
+![A Circuit Board with an AI GPU](https://kura.pro/stock/images/banners/getty-images-aTWKwJllPOA.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (18 Dec 2023)*
 
@@ -174,9 +174,9 @@ Exploring 2023's Technological Landscape: AI & Quantum Computing Revolutionising
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-### [Quantum Key Distribution Revolutionising Security in Banking][16]
+### Quantum Key Distribution Revolutionising Security in Banking
 
-[![HSBC Headquarter in London Canary Wharf Docks](https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp).class=\"zoom-in w-25 p-3 float-start\"][16]
+![An HSBC Headquarter in London Canary Wharf Docks](https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (11 Dec 2023)*
 
@@ -186,9 +186,9 @@ As quantum computers pose a threat to traditional encryption methods, Quantum Ke
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-### [Efficient Date and Time Management with DateTime (DTT)][15]
+### Efficient Date and Time Management with DateTime (DTT)
 
-[![DTT Logo](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"zoom-in w-25 p-3 float-start\"][15]
+![A DTT Logo](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (04 Dec 2023)*
 
@@ -198,9 +198,9 @@ DateTime (DTT) is a comprehensive Rust library for parsing, validating, manipula
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-### [KyberLib: A Rust-Powered Shield Against Quantum Threats][14]
+### KyberLib: A Rust-Powered Shield Against Quantum Threats
 
-[![KyberLib Logo](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"zoom-in w-25 p-3 float-start\"][14]
+![A KyberLib Logo](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (28 Nov 2023)*
 
@@ -210,9 +210,9 @@ A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algo
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-### [CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age][13]
+### CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age
 
-[![AI, Artificial Intelligence concept,3d rendering,conceptual image](https://kura.pro/stock/images/banners/galina-nelyubova-V70-ng4FuiA.webp).class=\"zoom-in w-25 p-3 float-start\"][13]
+![A complex quantum computer architecture](https://kura.pro/stock/images/banners/galina-nelyubova-V70-ng4FuiA.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (19 Nov 2023)*
 
@@ -222,9 +222,9 @@ Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revo
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-### [Exploring Generative AI: Shaping the Future of Technology][12]
+### Exploring Generative AI: Shaping the Future of Technology
 
-[![AI, Artificial Intelligence concept,3d rendering,conceptual image](https://kura.pro/stock/images/banners/fabio-oyXis2kALVg.webp).class=\"zoom-in w-25 p-3 float-start\"][12]
+![Holographic cubes at a concert.](https://kura.pro/stock/images/banners/fabio-oyXis2kALVg.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (12 Nov 2023)*
 
@@ -234,9 +234,9 @@ Embark on a Journey to Explore Generative AI: Investigating Its Impact, Ethical 
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-### [Mathematical and Cryptographic Constants for Rust Security][11]
+### Mathematical and Cryptographic Constants for Rust Security
 
-[![Mathematical and Cryptographic Constants](https://kura.pro/stock/images/banners/antoine-dautry-05A-kdOH6Hw.webp).class=\"zoom-in w-25 p-3 float-start\"][11]
+![A Mathematical and Cryptographic Constants](https://kura.pro/stock/images/banners/antoine-dautry-05A-kdOH6Hw.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (05 Nov 2023)*
 
@@ -246,9 +246,9 @@ Safeguard code integrity with meticulously vetted mathematical and cryptographic
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-### [Streamlining Rust Library Development with Code Generation][10]
+### Streamlining Rust Library Development with Code Generation
 
-[![White Building](https://kura.pro/stock/images/banners/tarik-haiga-3637943.webp).class=\"zoom-in w-25 p-3 float-start\"][10]
+![A White Building](https://kura.pro/stock/images/banners/tarik-haiga-3637943.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (26 Oct 2023)*
 
@@ -258,9 +258,9 @@ Boost Rust library development with LibMake: A code generator tool that enforces
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-### [Protecting Data in the Quantum Age: The Hash Library (HSH)][08]
+### Protecting Data in the Quantum Age: The Hash Library (HSH)
 
-[![A creative illustration on Quantum computing theme](https://kura.pro/stock/images/banners/galina-nelyubova-7ej8VWfwFsg.webp).class=\"zoom-in w-25 p-3 float-start\"][08]
+![A creative illustration on Quantum computing theme](https://kura.pro/stock/images/banners/galina-nelyubova-7ej8VWfwFsg.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (16 Oct 2023)*
 
@@ -270,9 +270,9 @@ The Hash Library (HSH) is a quantum-resistant cryptographic hash library that of
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-### [Shokunin, the fastest Rust-based Static Site Generator (SSG)][01]
+### Shokunin, the fastest Rust-based Static Site Generator (SSG)
 
-[![Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right](https://kura.pro/stock/images/banners/anna-nekrashevich-8534387.webp).class=\"zoom-in w-25 p-3 float-start\"][01]
+![A Turned off laptop computer on top of a white table](https://kura.pro/stock/images/banners/anna-nekrashevich-8534387.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (9 Oct 2023)*
 
@@ -282,9 +282,9 @@ Empowering you to create high-impact static websites with infinite possibilities
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-### [Automating ISO 20022 Payment Files Creation with Pain001][02]
+### Automating ISO 20022 Payment Files Creation with Pain001
 
-[![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/andrea-de-santis-T3Qen8vVgRc.webp).class=\"zoom-in w-25 p-3 float-start\"][02]
+![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/andrea-de-santis-T3Qen8vVgRc.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (29 Sep 2023)*
 
@@ -294,10 +294,9 @@ Streamlining the creation and compliance of ISO20022 Payment Messages for cross-
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-### [The making of the Express Transaction Credits Platform][03]
+### The making of the Express Transaction Credits Platform
 
-
-[![Man typing on a laptop keyboard](https://kura.pro/stock/images/banners/rawpixel-com-369782.webp).class=\"zoom-in w-25 p-3 float-start\"][03]
+![Man typing on a laptop keyboard](https://kura.pro/stock/images/banners/rawpixel-com-369782.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (15 Feb 2018)*
 
@@ -307,9 +306,9 @@ Developing a comprehensive framework for the next generation of Ethereum Request
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-### [Unveiling a new Cryptocurrency and Faster Payment Solution][04]
+### Unveiling a new Cryptocurrency and Faster Payment Solution
 
-[![Canary Wharf clocks](https://kura.pro/stock/images/banners/laureen-missaire-DBbuhMbAIsQ.webp).class=\"zoom-in w-25 p-3 float-start\"][04]
+![Canary Wharf clocks](https://kura.pro/stock/images/banners/laureen-missaire-DBbuhMbAIsQ.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (04 Feb 2018)*
 
@@ -319,9 +318,9 @@ A significant chapter in the ongoing evolution of the global financial landscape
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-### [ERC-20: The Ethereum Token Interface That Changed the World][05]
+### ERC-20: The Ethereum Token Interface That Changed the World
 
-[![Computer screen with trades](https://kura.pro/stock/images/banners/m-ZzOa5G8hSPI.webp).class=\"zoom-in w-25 p-3 float-start\"][05]
+![Computer screen with trades](https://kura.pro/stock/images/banners/m-ZzOa5G8hSPI.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (24 Jan 2018)*
 
@@ -331,9 +330,9 @@ Ethereum Token Interface: Understanding ERC-20, which allows for the implementat
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-### [Understanding the Technology behind Blockchain][06]
+### Understanding the Technology behind Blockchain
 
-[![Computer and Mobile screens with trades](https://kura.pro/stock/images/banners/adam-smigielski-K5mPtONmpHM.webp).class=\"zoom-in w-25 p-3 float-start\"][06]
+![Computer and Mobile screens with trades](https://kura.pro/stock/images/banners/adam-smigielski-K5mPtONmpHM.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (09 Jan 2018)*
 
@@ -343,9 +342,9 @@ Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to B
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-### [Blockchain explained, the technology that matters the most][09]
+### Blockchain explained, the technology that matters the most
 
-[![Horizontal view of a tall building](https://kura.pro/stock/images/banners/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"zoom-in w-25 p-3 float-start\"][06]
+![Horizontal view of a tall building](https://kura.pro/stock/images/banners/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (02 Jan 2018)*
 
@@ -355,9 +354,9 @@ A story of the extraordinary journey of securing digital transactions through Pr
 
 ![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
-### [Bitcoin: A Year In Review of the First Cryptocurrency][07]
+### Bitcoin: A Year In Review of the First Cryptocurrency
 
-[![Physical Bitcoins](https://kura.pro/stock/images/banners/traxer-AIKjbZdNOlw.webp).class=\"zoom-in w-25 p-3 float-start\"][07]
+![Physical Bitcoins](https://kura.pro/stock/images/banners/traxer-AIKjbZdNOlw.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (01 Jan 2018)*
 

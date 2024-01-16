@@ -3,7 +3,7 @@
 # Front Matter (YAML)
 
 author: "Sebastien Rousseau"
-banner_alt: "Macro shot of black pendant lamps"
+banner_alt: "A Macro shot of black pendant lamps"
 banner_height: "398"
 banner_width: "1440"
 banner: "https://kura.pro/stock/images/banners/robert-haverly-_kmr5wKVW7E.webp"

@@ -108,14 +108,14 @@
       itemtype="http://schema.org/SiteNavigationElement"
     >
       <div class="container-xxl p-3">
-        <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="logo">
+        <a class="navbar-brand p-0 me-0 me-lg-2" href="/index.html" aria-label="logo">
           <img
             class="d-inline-block align-top"
             width="44"
             height="44"
             src="https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
             alt="Logo for Sebastien Rousseau"
-            title="Logo for Sebastien Rousseau"
+            title="Image of the Logo for Sebastien Rousseau"
             loading="lazy"
           />
         </a>
@@ -166,7 +166,7 @@
               >
               <ul
                 class="dropdown-menu dropdown-menu-end"
-                aria-labelledby="supportDropdown"
+                aria-labelledby="navbarDropdown"
               >
                 <li>
                   <a class="dropdown-item" href="/playlists/index.html">
@@ -202,17 +202,17 @@
     <!-- Main content-->
     <main id="main" class="bd-masthead container fs-5 p-5" aria-label="main">
       <div class="text-start justify-content-between">
-        <h1 id="h1-protecting" tabindex="0" itemprop="headline" id="" tabindex="0" itemprop="headline" class="protecting">Protecting Data in the Quantum Age: The Hash Library (HSH)</h1><p>HSH uses quantum-resistant cryptographic primitives to protect your data, ensuring its security even in the face of future quantum computing advances.</p><p></p><p><img src="https://kura.pro/stock/images/banners/galina-nelyubova-7ej8VWfwFsg.webp" alt="A creative illustration on Quantum computing theme"  class="img-fluid clearfix" title="A creative illustration on Quantum computing theme"/></p>
+        <h1 id="h1-protecting" tabindex="0" itemprop="headline" id="" class="protecting">Protecting Data in the Quantum Age: The Hash Library (HSH)</h1><p>HSH uses quantum-resistant cryptographic primitives to protect your data, ensuring its security even in the face of future quantum computing advances.</p><p></p><p><img src="https://kura.pro/stock/images/banners/galina-nelyubova-7ej8VWfwFsg.webp" alt="A creative illustration on Quantum computing theme"  class="img-fluid clearfix" title="Image of a creative illustration on quantum computing theme"/></p>
 <p>In this article, I will examine the uses of quantum-resistant cryptography, specifically addressing the Rust Hash Library (HSH) that I developed. This library is fully optimised for cryptographic hashing and verification functions.</p>
-<h2 id="h2-insight" tabindex="0" itemprop="subheadline" class="insight">Insight</h2>
-<h3 id="h3-the" tabindex="0" itemprop="subheadline" class="the">The Emerging Threat of Quantum Computing</h3>
+<h2 id="h2-insight" tabindex="0" itemprop="name" class="insight">Insight</h2>
+<h3 id="h3-the" tabindex="0" itemprop="name" class="the">The Emerging Threat of Quantum Computing</h3>
 <p>As the digital landscape evolves, financial services organisations must embrace new technologies to remain competitive. Failure to do so could result in being left behind, as digital transformation is impacting every industry.</p>
 <p>Quantum computing heralds a groundbreaking shift, offering the power to catalyse significant advancements across diverse sectors, including Banking and Financial Services. Yet, it is accompanied by a formidable risk to digital security, given its ability to decrypt even the most complex codes.</p>
 <p>Quantum computing makes some traditional encryption techniques obsolete, as they can solve mathematical problems classical computers can’t.</p>
 <p>In today’s context, Alice and Bob can communicate securely using cryptographic keys, preventing Eve from decoding the messages. But, the absolute security of key distribution and storage can never be entirely guaranteed. As a result, quantum computers pose a significant threat to encryption and digital security.</p>
-<h4 id="h4-secure" tabindex="0" itemprop="subheadline" class="secure">Secure Yet Vulnerable: Navigating Cryptographic Challenges in the Quantum Era</h4>
-<p><img src="https://kura.pro/stock/diagrams/alice-bob-eve-encryption.svg" alt="Sequence Diagram" title="Sequence Diagram"  class="img-fluid clearfix"/></p>
-<h5 id="h5-legend" tabindex="0" itemprop="subheadline" class="legend">Legend</h5>
+<h4 id="h4-secure" tabindex="0" itemprop="name" class="secure">Secure Yet Vulnerable: Navigating Cryptographic Challenges in the Quantum Era</h4>
+<p><img src="https://kura.pro/stock/diagrams/alice-bob-eve-encryption.svg" alt="Sequence Diagram" title="Image of sequence diagram"  class="img-fluid clearfix"/></p>
+<h5 id="h5-legend" tabindex="0" itemprop="name" class="legend">Legend</h5>
 <ul>
 <li><em>Alice to Eve - Alice sends encrypted message</em></li>
 <li><em>Eve intercepts - Eve intercepts Alice’s message</em></li>
@@ -223,16 +223,16 @@
 <li><em>Eve attempts decryption - Eve fails again to decrypt</em></li>
 <li><em>Eve to Alice - Eve sends encrypted message to Alice</em></li>
 </ul>
-<h5 id="h5-explanation" tabindex="0" itemprop="subheadline" class="explanation">Explanation</h5>
-<h6 id="h6-current" tabindex="0" itemprop="subheadline" class="current">Current encryption</h6>
+<h5 id="h5-explanation" tabindex="0" itemprop="name" class="explanation">Explanation</h5>
+<h6 id="h6-current" tabindex="0" itemprop="name" class="current">Current encryption</h6>
 <p>The current encryption algorithms used by Alice and Bob are effective at preventing Eve from decrypting their messages. However, quantum computing poses a potential threat to the security of these algorithms.</p>
-<h6 id="h6-potential" tabindex="0" itemprop="subheadline" class="potential">Potential quantum risk</h6>
+<h6 id="h6-potential" tabindex="0" itemprop="name" class="potential">Potential quantum risk</h6>
 <p>Quantum computers are much faster than traditional computers at performing certain types of calculations, including the calculations used to break some encryption algorithms. If Eve had access to a quantum computer, she could potentially break the encryption and read Alice and Bob’s messages.</p>
-<h6 id="h6-key" tabindex="0" itemprop="subheadline" class="key">Key distribution and storage risks</h6>
+<h6 id="h6-key" tabindex="0" itemprop="name" class="key">Key distribution and storage risks</h6>
 <p>Even if Alice and Bob are using strong encryption, their messages could still be compromised if the keys used to encrypt and decrypt the messages are compromised. Keys can be compromised in a number of ways, such as through theft, hacking, or social engineering attacks.</p>
-<h6 id="h6-need" tabindex="0" itemprop="subheadline" class="need">Need for post-quantum cryptography</h6>
+<h6 id="h6-need" tabindex="0" itemprop="name" class="need">Need for post-quantum cryptography</h6>
 <p>Post-quantum cryptography is a new field of cryptography that is designed to be resistant to quantum attacks. Post-quantum encryption algorithms are still under development, but they have the potential to protect data from quantum attacks.</p>
-<h3 id="h3-introducing" tabindex="0" itemprop="subheadline" class="introducing">Introducing Quantum-Resistant Cryptography</h3>
+<h3 id="h3-introducing" tabindex="0" itemprop="name" class="introducing">Introducing Quantum-Resistant Cryptography</h3>
 <p>Quantum-resistant cryptography, also known as post-quantum cryptography (PQC) or quantum-safe cryptography, refers to cryptographic algorithms believed to be secure against quantum computer attacks.</p>
 <p>Organisations must take the necessary precautions to protect their data from the dangers of quantum computing. Implementing quantum-resistant encryption and quantum entanglement strategies can provide financial services companies with an added layer of security.</p>
 <ul>
@@ -243,17 +243,17 @@
 <p><strong>Quantum entanglement</strong> can be used to create quantum key distribution (QKD) systems, which can generate and distribute secure cryptographic keys over long distances. QKD systems are immune to attacks by quantum computers, making them ideal for protecting sensitive financial data.</p>
 </li>
 </ul>
-<h2 id="h2-idea" tabindex="0" itemprop="subheadline" class="idea">Idea</h2>
-<h3 id="h3-the" tabindex="0" itemprop="subheadline" class="the">The Hash Library (HSH): Pioneering Interoperability in Quantum-Resistant Cryptography</h3>
+<h2 id="h2-idea" tabindex="0" itemprop="name" class="idea">Idea</h2>
+<h3 id="h3-the" tabindex="0" itemprop="name" class="the">The Hash Library (HSH): Pioneering Interoperability in Quantum-Resistant Cryptography</h3>
 <p>The Hash Library (HSH) provides a lightweight, efficient, and user-friendly solution for protecting data with quantum-resistant cryptography. It enables developers to use quantum-resistant algorithms in their applications without the need for a detailed understanding of the underlying cryptographic algorithms.</p>
 <p>The library is built on the Rust programming language, renowned for its speed and efficiency, and ideally suited for cryptography, and long-term reliability.</p>
-<h2 id="h2-impact" tabindex="0" itemprop="subheadline" class="impact">Impact</h2>
-<h3 id="h3-the" tabindex="0" itemprop="subheadline" class="the">The Benefits of the Quantum-Resistant Cryptographic Hash Library</h3>
+<h2 id="h2-impact" tabindex="0" itemprop="name" class="impact">Impact</h2>
+<h3 id="h3-the" tabindex="0" itemprop="name" class="the">The Benefits of the Quantum-Resistant Cryptographic Hash Library</h3>
 <p>The <a href="https://crates.io/crates/hsh" title="The Hash Library (HSH) - Quantum-Resistant Cryptographic Hash Library for Password Hashing and Verification">Hash Library (HSH) ⧉</a> provides a wealth of modern cryptographic primitives, creating a strong barrier against the complexities of the quantum age. Its importance lies in protecting sensitive data in an age where quantum computing poses a significant risk to digital security.</p>
 <p>The library offers organisations and financial institutions the highest level of protection available online with a selection of algorithms, including Argon2i, BScrypt, and Scrypt. These are password-based key derivation secure functions (PBKDFs). PBKDFs are used to convert passwords into cryptographic keys. They are designed to be slow and memory-intensive, making them difficult to crack using brute-force attacks.</p>
 <p>Additionally, the library guarantees that not only are the results secure and efficient, but they are also perfectly suited for enterprise-level applications, extensible, and easy to use.</p>
-<h2 id="h2-incentives" tabindex="0" itemprop="subheadline" class="incentives">Incentives</h2>
-<h3 id="h3-navigating" tabindex="0" itemprop="subheadline" class="navigating">Navigating the Quantum Computing Landscape Securely</h3>
+<h2 id="h2-incentives" tabindex="0" itemprop="name" class="incentives">Incentives</h2>
+<h3 id="h3-navigating" tabindex="0" itemprop="name" class="navigating">Navigating the Quantum Computing Landscape Securely</h3>
 <ul>
 <li>
 <p><strong>Security Assurance</strong>: Using the Hash Library (HSH), provides an assurance to organizations that their data remains secure.</p>
@@ -265,7 +265,7 @@
 <p><strong>Cost Efficiency</strong>: The Hash Library (HSH) is open source and can be used without the need for expensive licenses or subscription fees. This makes it an attractive option to organizations that are looking to keep their costs low while still having access to secure quantum computing.</p>
 </li>
 </ul>
-<h3 id="h3-maintaining" tabindex="0" itemprop="subheadline" class="maintaining">Maintaining Consumer Trust</h3>
+<h3 id="h3-maintaining" tabindex="0" itemprop="name" class="maintaining">Maintaining Consumer Trust</h3>
 <ul>
 <li>
 <p><strong>Protecting Customer Data</strong>: Securing customer data from quantum computer attacks enhances trust in organizations’ capabilities to safeguard information.</p>
@@ -274,7 +274,7 @@
 <p><strong>Compliance and Regulation Adherence</strong>: Applying advanced cryptographic methods helps in adhering to stringent data protection laws and regulations, thereby avoiding legal consequences and fines.</p>
 </li>
 </ul>
-<h3 id="h3-hsh" tabindex="0" itemprop="subheadline" class="hsh">HSH: The Ultimate Quantum-Resistant Hash Library</h3>
+<h3 id="h3-hsh" tabindex="0" itemprop="name" class="hsh">HSH: The Ultimate Quantum-Resistant Hash Library</h3>
 <ul>
 <li>
 <p><strong>Elevated Performance</strong>: Leveraging the Rust-based <a href="https://crates.io/crates/hsh" title="The Hash Library (HSH) - Quantum-Resistant Cryptographic Hash Library for Password Hashing and Verification">Hash Library (HSH) ⧉</a> provides security, efficiency, and performance.
@@ -284,12 +284,12 @@ Cross-Platform Consistency: The Hash Library (HSH) protects data across platform
 <p><strong>Ease of Implementation</strong>: The Hash Library (HSH) provides developers with a tool that is easy to implement, reducing the barrier to adopting quantum-resistant algorithms.</p>
 </li>
 </ul>
-<h2 id="h2-conclusion" tabindex="0" itemprop="subheadline" class="conclusion">Conclusion</h2>
+<h2 id="h2-conclusion" tabindex="0" itemprop="name" class="conclusion">Conclusion</h2>
 <p>The <a href="https://crates.io/crates/hsh" title="The Hash Library (HSH) - Quantum-Resistant Cryptographic Hash Library for Password Hashing and Verification">Hash Library (HSH) ⧉</a> provides a lightweight, efficient, and user-friendly solution for protecting data with quantum-resistant cryptography. It makes it easy for developers to upgrade their cryptographic protocols to be quantum-resistant without a deep understanding of the algorithms.</p>
 <p>Quantum-resistant cryptography is a rapidly evolving field, and the HSH library is committed to staying ahead of the curve. The library is regularly updated with new algorithms and features to protect against emerging threats.</p>
 <p><a href="https://www.nist.gov/" title="National Institute of Standards and Technology">The National Institute of Standards and Technology (NIST) ⧉</a> is currently defining a set of post-quantum cryptographic algorithms standards, through its <a href="https://csrc.nist.gov/projects/post-quantum-cryptography" title="Post-Quantum Cryptography PQC">Post-Quantum Cryptography (PQC) project ⧉</a>.</p>
 <p>Protecting your data from quantum computing attacks is essential for any organisation that handles sensitive data. The <a href="https://crates.io/crates/hsh" title="The Hash Library (HSH) - Quantum-Resistant Cryptographic Hash Library for Password Hashing and Verification">Hash Library (HSH) ⧉</a> is a powerful tool that can help you protect your data from this emerging threat.</p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider"  class="m-10 w-100" title="divider"/></p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider"  class="m-10 w-100" title="Image of divider"/></p>
 <p><strong>That concludes our time together. Thank you for your time!</strong></p>
 <p>If you have any questions, please don’t hesitate to contact me via <a href="https://www.linkedin.com/in/sebastienrousseau/" title="Sebastien Rousseau on LinkedIn">LinkedIn ⧉</a> or via the <a href="/contact/index.html" title="Contact Sebastien Rousseau">Contact page</a>. Thank you again for your time and I look forward to hearing from you.</p>
 <p><a href="/articles/index.html" title="Back to Articles"><strong>❬ Back to Articles</strong></a></p>
@@ -310,10 +310,10 @@ Cross-Platform Consistency: The Hash Library (HSH) protects data across platform
     <!-- Footer-->
     <footer id="footer" aria-label="footer" class="footer bg-light mt-auto fs-6 py-5 border-top">
       <p class="mb-0">
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://twitter.com/wwdseb"><img src="https://kura.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter" title="Sebastien Rousseau on Twitter" width="32" height="32" /></a>
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.linkedin.com/in/sebastienrousseau/"><img src="https://kura.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" title="Sebastien Rousseau on LinkedIn" width="32" height="32" /></a>
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://medium.com/@BankingOnQuantum"><img src="https://kura.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" title="Sebastien Rousseau on Medium" width="32" height="32" /></a>
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.youtube.com/@BankingOnQuantum"><img src="https://kura.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" title="Sebastien Rousseau on YouTube" width="32" height="32" /></a>
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://twitter.com/wwdseb"><img src="https://kura.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter" title="Image for Sebastien Rousseau on Twitter" width="32" height="32" /></a>
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.linkedin.com/in/sebastienrousseau/"><img src="https://kura.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" title="Image for Sebastien Rousseau on LinkedIn" width="32" height="32" /></a>
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://medium.com/@BankingOnQuantum"><img src="https://kura.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" title="Image for Sebastien Rousseau on Medium" width="32" height="32" /></a>
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.youtube.com/@BankingOnQuantum"><img src="https://kura.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" title="Image for Sebastien Rousseau on YouTube" width="32" height="32" /></a>
       </p>
       <p class="mb-0">
         <span class="px-2"><a href="/accessibility/index.html">Accessibility</a></span>

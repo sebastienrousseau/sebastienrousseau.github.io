@@ -3,7 +3,7 @@
 # Front Matter (YAML)
 
 author: "Sebastian Rousseau"
-banner_alt: "Made with Shokunin, the fastest Rust-based Static Site Generator (SSG)"
+banner_alt: "a black and white photo of a building"
 banner_height: "100vh"
 banner_width: "100vw"
 banner_url: "https://sebastienrousseau.com/"
@@ -107,7 +107,7 @@ site_software: "Shokunin, Rust"
 
 ---
 
-[![Banner][01].class=\"w-50 p-3 me-3 float-end\"][00]
+![The Shokunin Banner][01].class=\"w-50 p-3 me-3 float-end\"
 
 ## Embrace Shokunin for Effortless Website Creation
 

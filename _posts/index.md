@@ -116,9 +116,9 @@ Read the latest articles below, and [**see all articles, news and product announ
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Alien Studio: My Tech-to Art Journey in Photography](https://kura.pro/alienstudio/images/collections/radiance/radiance-08.webp).class=\"fade-in w-50 m-3 p-3 float-end align-self-center img-thumbnail\"][06]
+![A Sunset’s muse, a serene glance](https://kura.pro/alienstudio/images/collections/radiance/radiance-08.webp).class=\"fade-in w-50 m-3 p-3 float-end align-self-center img-thumbnail\"
 
-### [Alien Studio: My Tech-to Art Journey in Photography][06]
+### Alien Studio: My Tech-to Art Journey in Photography
 
 *by [Sebastien Rousseau][00] (15 Jan 2024)*
 
@@ -130,9 +130,9 @@ My journey to Alien Studio has been a transformative adventure, traversing the r
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Qiskit & Quantum Fourier Transform for Credit Ratio Analysis](https://kura.pro/stock/images/banners/quantum-computer-room.webp).class=\"zoom-in w-25 m-3 rounded-circle float-start \"][05]
+![A Quantum Computer Room](https://kura.pro/stock/images/banners/quantum-computer-room.webp).class=\"fade-in w-25 m-3 rounded-circle float-start \"
 
-### [Qiskit & Quantum Fourier Transform for Credit Ratio Analysis][05]
+### Qiskit & Quantum Fourier Transform for Credit Ratio Analysis
 
 *by [Sebastien Rousseau][00] (08 Jan 2024)*
 
@@ -142,9 +142,9 @@ Explore how **IBM Qiskit** and **Quantum Fourier Transform** revolutionise credi
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![AI Trends 2024: Insights and Predictions for the Future](https://kura.pro/stock/images/banners/drone-view-of-london.webp).class=\"zoom-in w-25 m-3 rounded-circle float-end \"][04]
+![A Drone View of London](https://kura.pro/stock/images/banners/drone-view-of-london.webp).class=\"fade-in w-25 m-3 rounded-circle float-end \"
 
-### [AI Trends 2024: Insights and Predictions for the Future][04]
+### AI Trends 2024: Insights and Predictions for the Future
 
 *by [Sebastien Rousseau][00] (01 Jan 2024)*
 
@@ -154,9 +154,9 @@ Explore the transformative AI trends of 2024, from generative AI to AI in retail
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Revolutionising Finance with AI-Enhanced Quantum Algorithms](https://kura.pro/stock/images/banners/circuit_board_cityscape.webp).class=\"zoom-in w-25 m-3 rounded-circle float-start \"][03]
+![A Circuit board City Scape](https://kura.pro/stock/images/banners/circuit_board_cityscape.webp).class=\"fade-in w-25 m-3 rounded-circle float-start \"
 
-### [Revolutionising Finance with AI-Enhanced Quantum Algorithms][03]
+### Revolutionising Finance with AI-Enhanced Quantum Algorithms
 
 *by [Sebastien Rousseau][00] (25 Dec 2023)*
 
@@ -166,9 +166,9 @@ Explore the transformative role of AI in quantum algorithms for finance, with a 
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Quantum Key Distribution Revolutionising Security in Banking](https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp).class=\"zoom-in w-25 m-3 rounded-circle float-end \"][02]
+![A view of HSBC from the Docks](https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp).class=\"fade-in w-25 m-3 rounded-circle float-end \"
 
-### [Quantum Key Distribution Revolutionising Security in Banking][02]
+### Quantum Key Distribution Revolutionising Security in Banking
 
 *by [Sebastien Rousseau][00] (11 Dec 2023)*
 
@@ -178,9 +178,9 @@ As quantum computers pose a threat to traditional encryption methods, Quantum Ke
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[![Efficient Date and Time Management with DateTime (DTT)](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"zoom-in w-25 m-3 rounded-circle float-start \"][01]
+![A logo of the DateTime (DTT) Rust library](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"fade-in w-25 m-3 rounded-circle float-start \"
 
-### [Efficient Date and Time Management with DateTime (DTT)][01]
+### Efficient Date and Time Management with DateTime (DTT)
 
 *by [Sebastien Rousseau][00] (04 Dec 2023)*
 

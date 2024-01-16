@@ -99,15 +99,15 @@ site_software: "Shokunin, Rust"
 
 ---
 
-![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/declan-sun-pYLuh6fRdhw.webp).class=\"fade-in img-fluid clearfix\"
-
 I am passionate about using open source software and experimentation to innovate
 and solve real-world problems.
 
 I am always looking for new opportunities to collaborate with others on open
 source projects. If you are interested in working with me on any of my current
-projects, or if you have an idea for a new project, please feel free to
-[contact me][09].
+projects, or if you have an idea for a new project, please feel free to get in
+touch.
+
+## Projects
 
 Here are some of my latest personal projects:
 
@@ -119,13 +119,13 @@ Here are some of my latest personal projects:
 
 ### Pain001
 
-[![Pain001](https://kura.pro/stock/images/banners/ian-dooley-DuBNA1QMpPA.webp).class=\"fade-in card-img-top\"][00]
+![assorted-color hot air balloons during daytime](https://kura.pro/stock/images/banners/ian-dooley-DuBNA1QMpPA.webp).class=\"fade-in card-img-top\"
 
 **Pain001**: A powerful Python library for ISO 20022 compliant payment file
 creation from CSV or SQLite data files, simplifying payment automation and
 processing.
 
-[**Learn more**  ⧉][00]
+[**Learn more** ⧉][00]
 
 <!-- markdownlint-disable MD033 -->
 </div></div>
@@ -135,13 +135,13 @@ processing.
 
 ### Shokunin Static Site Generator
 
-[![Shokunin, the fastest Rust-based Static Site Generator (SSG)](https://kura.pro/stock/images/banners/fuji.webp).class=\"fade-in card-img-top\"][01]
+![A View of Mount Fuji](https://kura.pro/stock/images/banners/fuji.webp).class=\"fade-in card-img-top\"
 
 **Shokunin Static Site Generator (SSG)**: A blazing-fast Static Site Generator
 (SSG) built with Rust. Intended to make it simple and quick to generate websites
 optimised for SEO and compliant with Accessibility Standards.
 
-[**Learn more**  ⧉][01]
+[**Learn more** ⧉][01]
 
 <!-- markdownlint-disable MD033 -->
 </div></div>
@@ -152,12 +152,12 @@ optimised for SEO and compliant with Accessibility Standards.
 
 ### Password Generator Pro
 
-[![Pain001](https://kura.pro/password-generator-pro/images/banners/banner-password-generator-pro.webp).class=\"fade-in card-img-top\"][02]
+![the logo of Password Generator Pro](https://kura.pro/password-generator-pro/images/banners/banner-password-generator-pro.webp).class=\"fade-in card-img-top\"
 
 **Password Generator Pro**: A fast, simple and powerful open-source cross
 platform utility tool for generating strong, unique and random passwords.
 
-[**Learn more**  ⧉][02]
+[**Learn more** ⧉][02]
 <!-- markdownlint-disable MD033 -->
 </div>
 </div>
@@ -172,13 +172,13 @@ platform utility tool for generating strong, unique and random passwords.
 
 ### Hash (HSH) Rust library
 
-[![Hash (HSH) Rust library](https://kura.pro/stock/images/banners/mika-baumeister-Wpnoqo2plFA.webp).class=\"fade-in card-img-top\"][03]
+![the Hash (HSH) Rust library](https://kura.pro/stock/images/banners/mika-baumeister-Wpnoqo2plFA.webp).class=\"fade-in card-img-top\"
 
 **Hash (HSH) Rust library**: The Hash (HSH) Rust library provides an interface
 for implementing secure hash and digest algorithms, specifically designed for
 password encryption and verification.
 
-[**Learn more**  ⧉][03]
+[**Learn more** ⧉][03]
 
 <!-- markdownlint-disable MD033 -->
 </div></div>
@@ -188,13 +188,13 @@ password encryption and verification.
 
 ### LibMake Rust library
 
-[![LibMake, A code generator to reduce repetitive tasks and build high-quality Rust libraries](https://kura.pro/stock/images/banners/thomas-tastet-0eqgB57xMeA.webp).class=\"fade-in card-img-top\"][04]
+![LibMake, A code generator to reduce repetitive tasks and build high-quality Rust libraries](https://kura.pro/stock/images/banners/thomas-tastet-0eqgB57xMeA.webp).class=\"fade-in card-img-top\"
 
 **LibMake Rust library**: LibMake is a tool designed to quickly help creating
 high-quality Rust libraries by generating a set of pre-filled and pre-defined
 templated files.
 
-[**Learn more**  ⧉][04]
+[**Learn more** ⧉][04]
 
 <!-- markdownlint-disable MD033 -->
 </div></div>
@@ -204,7 +204,7 @@ templated files.
 
 ### Crypto Service Suite
 
-[![The Crypto Service Suite](https://kura.pro/stock/images/banners/steven-wei-Z7NMhw8hcfg.webp).class=\"fade-in card-img-top\"][05]
+![a white concrete pathway in grayscale photography](https://kura.pro/stock/images/banners/steven-wei-Z7NMhw8hcfg.webp).class=\"fade-in card-img-top\"
 
 **Crypto Service Suite**: The Crypto Service Suite is a powerful and centralized
 cryptographic suite of security tools that solves common application crypto
@@ -212,7 +212,7 @@ problems, including integration, data encryption, tokenization, transaction
 authorization, code-signing and key life-cycle management and other security
 services.
 
-[**Learn more**  ⧉][05]
+[**Learn more** ⧉][05]
 
 <!-- markdownlint-disable MD033 -->
 </div>
@@ -229,14 +229,14 @@ services.
 
 ### DateTime (DTT) Rust library
 
-[![DateTime (DTT) Rust library](https://kura.pro/stock/images/banners/ethan-wu-1597623.webp).class=\"fade-in card-img-top\"][06]
+![Spiral staircase in minimalist style](https://kura.pro/stock/images/banners/ethan-wu-1597623.webp).class=\"fade-in card-img-top\"
 
 **DateTime (DTT) Rust library**: The DateTime (DTT) library offers a range of
 functions and data structures that allow you to perform various date and time
 operations with ease, such as determining the day of the month, hour of the day,
 working with ISO 8601 date and time formats, and many others.
 
-[**Learn more**  ⧉][06]
+[**Learn more** ⧉][06]
 
 <!-- markdownlint-disable MD033 -->
 </div></div>
@@ -246,14 +246,14 @@ working with ISO 8601 date and time formats, and many others.
 
 ### Random (VRD) Rust library
 
-[![Random (VRD) Rust library, A Rust library for generating high-quality random numbers based on the Mersenne Twister algorithm](https://kura.pro/stock/images/banners/timon-studler-ABGaVhJxwDQ.webp).class=\"fade-in card-img-top\"][07]
+![people walking on gray concrete floor](https://kura.pro/stock/images/banners/timon-studler-ABGaVhJxwDQ.webp).class=\"fade-in card-img-top\"
 
 **Random (VRD) Rust library**: Random (VRD) is a Rust library for generating
 high-quality random numbers based on the Mersenne Twister algorithm. The
 Mersenne Twister is a pseudorandom number generator (PRNG) that is often used in
 computer simulations and games. It is a fast and reliable PRNG.
 
-[**Learn more**  ⧉][07]
+[**Learn more** ⧉][07]
 
 <!-- markdownlint-disable MD033 -->
 </div></div>
@@ -264,13 +264,13 @@ computer simulations and games. It is a fast and reliable PRNG.
 
 ### Common (CMN) Rust library
 
-[![Common (CMN)](https://kura.pro/stock/images/banners/fabio-oyXis2kALVg.webp).class=\"fade-in card-img-top\"][08]
+![Holographic cubes at a concert](https://kura.pro/stock/images/banners/fabio-oyXis2kALVg.webp).class=\"fade-in card-img-top\"
 
 **Common (CMN) Rust library**: Common (CMN) is a modern, fast, and user-friendly
 library that makes it easy to access a wide range of mathematical and
 cryptographic constants.
 
-[**Learn more**  ⧉][08]
+[**Learn more** ⧉][08]
 
 <!-- markdownlint-disable MD033 -->
 </div>
@@ -284,14 +284,13 @@ cryptographic constants.
     <div class="card border-0">
 <!-- markdownlint-restore -->
 
-
 ### MacConfig (maccfg)
 
-[![MacConfig (maccfg)](https://kura.pro/stock/images/banners/ibrahim-abazid-MgQnQZA4ByM.webp).class=\"fade-in card-img-top\"][10]
+![MacBook White open on white surface](https://kura.pro/stock/images/banners/ibrahim-abazid-MgQnQZA4ByM.webp).class=\"fade-in card-img-top\"
 
 **MacBook Pro M1 Software Development Setup (macOS Config)**: A guide to getting your MacBook Pro M1 ready for Software Development. You can set up and start using your new Mac in no time at all with these free resources and user guides.
 
-[**Learn more**  ⧉][10]
+[**Learn more** ⧉][10]
 
 <!-- markdownlint-disable MD033 -->
 </div></div>
@@ -301,11 +300,11 @@ cryptographic constants.
 
 ### Mini Functions Rust library
 
-[![Mini Functions Rust library, A Rust library of highly performant utility and wrapper functions](https://kura.pro/stock/images/banners/chuttersnap-mf-o1E7omzk.webp).class=\"fade-in card-img-top\"][11]
+![white and brown concrete building](https://kura.pro/stock/images/banners/chuttersnap-mf-o1E7omzk.webp).class=\"fade-in card-img-top\"
 
 **Mini Functions**: Mini Functions is a highly performant utility and wrapper functions library for Rust that has been carefully designed with optimization and efficiency in mind.
 
-[**Learn more**  ⧉][11]
+[**Learn more** ⧉][11]
 
 <!-- markdownlint-disable MD033 -->
 </div></div>
@@ -315,11 +314,11 @@ cryptographic constants.
 
 ### Dotfiles
 
-[![Dotfiles](https://kura.pro/dotfiles/v2/images/banners/dotfiles.webp).class=\"fade-in card-img-top\"][12]
+![the Dotfiles Logo](https://kura.pro/dotfiles/v2/images/banners/dotfiles.webp).class=\"fade-in card-img-top\"
 
 **Dotfiles**: are a powerful set of configuration files for macOS, Linux, and Windows providing scripts and customized settings to streamline your workflow. These files are an essential tool for developers and users who want to modify their environment and applications to their exact needs.
 
-[**Learn more**  ⧉][12]
+[**Learn more** ⧉][12]
 
 <!-- markdownlint-disable MD033 -->
 </div>
@@ -341,11 +340,11 @@ cryptographic constants.
 
 ### Kaishi, a Starter Template
 
-[![Kaishi, a Starter Template for Shokunin)](https://kura.pro/stock/images/banners/bee-on-a-yellow-flower.webp).class=\"fade-in card-img-top\"][13]
+![A Bee on a Yellow Flower](https://kura.pro/stock/images/banners/bee-on-a-yellow-flower.webp).class=\"fade-in card-img-top\"
 
 **Kaishi, a Starter Template for Shokunin**: Make beautiful websites with Kaishi, a Shokunin Static Site Generator starter template.
 
-[**Learn more**  ⧉][13]
+[**Learn more** ⧉][13]
 
 <!-- markdownlint-disable MD033 -->
 </div></div>
@@ -355,11 +354,11 @@ cryptographic constants.
 
 ### AudioTextPro
 
-[![AudioTextPro](https://kura.pro/stock/images/banners/pramod-tiwari-Br0F5xMArxI.webp).class=\"fade-in card-img-top\"][14]
+![a black and white photo of a light at the end of a tunnel](https://kura.pro/stock/images/banners/pramod-tiwari-Br0F5xMArxI.webp).class=\"fade-in card-img-top\"
 
 **AudioTextPro**: Convert audio to text accurately in real-time using our advanced AI speech recognition technology.
 
-[**Learn more**  ⧉][14]
+[**Learn more** ⧉][14]
 
 <!-- markdownlint-disable MD033 -->
 </div></div>
@@ -369,11 +368,11 @@ cryptographic constants.
 
 ### Skeletonic Stylus Library
 
-[![Skeletonic Stylus Library](https://kura.pro/skeletonic/images/banner/skeletonic.webp).class=\"fade-in card-img-top\"][15]
+![the Logo of the Skeletonic Stylus Library](https://kura.pro/skeletonic/images/banner/skeletonic.webp).class=\"fade-in card-img-top\"
 
 **Skeletonic Stylus Library**: a lightweight and modular Stylus Library. It contains a suite of components and mixins optimised for mobile and web application design and development.
 
-[**Learn more**  ⧉][15]
+[**Learn more** ⧉][15]
 
 <!-- markdownlint-disable MD033 -->
 </div>
@@ -389,13 +388,13 @@ cryptographic constants.
 
 ### Bank Statement Parser
 
-[![Bank Statement Parser](https://kura.pro/stock/images/banners/christian-ladewig-T0iFfJw-rB0.webp).class=\"fade-in card-img-top\"][16]
+![an architectural photography of glass building](https://kura.pro/stock/images/banners/christian-ladewig-T0iFfJw-rB0.webp).class=\"fade-in card-img-top\"
 
 **Bank Statement Parser**, a specialized Python library crafted specifically for
 finance professionals, simplifies the intricate process of parsing bank
 statements.
 
-[**Learn more**  ⧉][16]
+[**Learn more** ⧉][16]
 <!-- markdownlint-disable MD033 -->
 </div>
 </div>
@@ -408,11 +407,11 @@ statements.
 
 ### KyberLib
 
-[![KyberLib](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"fade-in card-img-top\"][17]
+![KyberLib Logo](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"fade-in card-img-top\"
 
 **KyberLib**, a Robust Rust Library for CRYSTALS-Kyber Post-Quantum Cryptography.
 
-[**Learn more**  ⧉][17]
+[**Learn more** ⧉][17]
 <!-- markdownlint-disable MD033 -->
 </div>
 </div>
@@ -425,11 +424,11 @@ statements.
 
 ### L90S Fractional CFO Services
 
-[![L90S](https://kura.pro/l90s/images/banners/banner-office.webp).class=\"fade-in card-img-top\"][18]
+![L90S Logo](https://kura.pro/l90s/images/banners/banner-office.webp).class=\"fade-in card-img-top\"
 
 **L90S**, A trusted finance leader with 20+ years of experience in the tech industry, guiding companies to sustainable growth, funding, and optimized financial operations.
 
-[**Learn more**  ⧉][18]
+[**Learn more** ⧉][18]
 <!-- markdownlint-disable MD033 -->
 </div>
 </div>
