@@ -50,7 +50,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/playlists/rss.xml"
 category: "Technology"
 docs: https://validator.w3.org/feed/docs/rss2.html
-generator: "Shokunin 🦀 (version 0.0.21)"
+generator: "Shokunin 🦀 (version 0.0.23)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/playlists/rss.xml"
 item_link: "https://sebastienrousseau.com/playlists/rss.xml"
