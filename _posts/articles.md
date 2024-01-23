@@ -114,6 +114,18 @@ on these topics.
 
 ## Our Stories
 
+### AI Prompt Engineering 2024: Insights & Advanced Techniques
+
+![AI Prompt Engineering 2024: Insights & Advanced Techniques](https://kura.pro/stock/images/banners/ai-prompt-engineering-modern-office.webp).class=\"fade-in w-25 p-3 float-start\"
+
+*by [Sebastien Rousseau][00] (23 Jan 2024)*
+
+Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors.
+
+[**Read full story ❯**][22]
+
+![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+
 ### Alien Studio: My Tech-to Art Journey in Photography
 
 ![A Sunset's muse, a serene glance; beauty in stillness](https://kura.pro/alienstudio/images/collections/radiance/radiance-08.webp).class=\"fade-in w-25 p-3 float-start\"
@@ -388,4 +400,4 @@ Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential 
 [19]: /2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html "AI Trends 2024: Insights and Predictions for the Future"
 [20]: /2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html "Optimising Credit Ratio Analysis with IBM Qiskit and Quantum Fourier Transform"
 [21]: /2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html "Alien Studio: My Tech-to Art Journey in Photography"
-
+[22]: /2024-01-23-advancements-in-ai-prompt-engineering/index.html#page-top "AI Prompt Engineering 2024: Insights & Advanced Techniques"

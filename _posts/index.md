@@ -116,7 +116,21 @@ Read the latest articles below, and [**see all articles, news and product announ
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![A Sunset’s muse, a serene glance](https://kura.pro/alienstudio/images/collections/radiance/radiance-08.webp).class=\"fade-in w-50 m-3 p-3 float-end align-self-center img-thumbnail\"
+![AI Prompt Engineering 2024: Insights & Advanced Techniques](https://kura.pro/stock/images/banners/ai-prompt-engineering-modern-office.webp).class=\"fade-in w-50 m-3 p-3 float-start align-self-center img-thumbnail\"
+
+### AI Prompt Engineering 2024: Insights & Advanced Techniques
+
+*by [Sebastien Rousseau][00] (23 Jan 2024)*
+
+#### Reshaping human-computer interaction with significant advancements in custom instructions
+
+Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors.
+
+[**Learn more ❯**][07]
+
+![divider][divider].class=\"m-10 w-100\"
+
+![A Sunset’s muse, a serene glance](https://kura.pro/alienstudio/images/collections/radiance/radiance-08.webp).class=\"fade-in w-25 m-3 rounded-circle float-end \"
 
 ### Alien Studio: My Tech-to Art Journey in Photography
 
@@ -199,6 +213,7 @@ DateTime (DTT) is a comprehensive Rust library for parsing, validating, manipula
 [04]: /2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html "AI Trends 2024: Insights and Predictions for the Future"
 [05]: /2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html "Optimising Credit Ratio Analysis with IBM Qiskit and Quantum Fourier Transform"
 [06]: /2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html "Alien Studio: My Tech-to Art Journey in Photography"
+[07]: /2024-01-23-advancements-in-ai-prompt-engineering/index.html "AI Prompt Engineering 2024: Insights & Advanced Techniques"
 [100]: /articles/index.html "See all articles"
 
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
