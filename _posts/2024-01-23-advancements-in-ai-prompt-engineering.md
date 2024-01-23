@@ -3,7 +3,7 @@
 # Front Matter (YAML)
 
 author: "Sebastien Rousseau"
-banner_alt: "blue light on blue background"
+banner_alt: "A man analysing data on screens"
 banner_height: "100vh"
 banner_width: "100vw"
 banner: "https://kura.pro/stock/images/banners/ai-prompt-engineering-modern-office.webp"

@@ -116,7 +116,7 @@ Read the latest articles below, and [**see all articles, news and product announ
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![AI Prompt Engineering 2024: Insights & Advanced Techniques](https://kura.pro/stock/images/banners/ai-prompt-engineering-modern-office.webp).class=\"fade-in w-50 m-3 p-3 float-start align-self-center img-thumbnail\"
+![Man analysing data on screens](https://kura.pro/stock/images/banners/ai-prompt-engineering-modern-office.webp).class=\"fade-in w-50 m-3 p-3 float-start align-self-center img-thumbnail\"
 
 ### AI Prompt Engineering 2024: Insights & Advanced Techniques
 
@@ -192,22 +192,9 @@ As quantum computers pose a threat to traditional encryption methods, Quantum Ke
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![A logo of the DateTime (DTT) Rust library](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"fade-in w-25 m-3 rounded-circle float-start \"
-
-### Efficient Date and Time Management with DateTime (DTT)
-
-*by [Sebastien Rousseau][00] (04 Dec 2023)*
-
-DateTime (DTT) is a comprehensive Rust library for parsing, validating, manipulating, and formatting dates and times. It offers a high level of precision and a wide range of functionalities.
-
-[**Learn more ❯**][01]
-
-![divider][divider].class=\"m-10 w-100\"
-
 [**See all articles** ❯][100]
 
 [00]: /about/index.html "About Sebastien Rousseau, Banking & Financial Service Professional"
-[01]: /2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html "Efficient Date and Time Management with DateTime (DTT)"
 [02]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution Revolutionising Security in Banking"
 [03]: /2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
 [04]: /2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html "AI Trends 2024: Insights and Predictions for the Future"

@@ -43,7 +43,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Learn how to use the Next-Level Static Site Generator"
 tags: "website, builder, SEO, accessibility, Shokunin, easy, fast, secure, reliable, free"
-theme-color: "255, 42, 0"
+theme-color: "180, 0, 0"
 title: "Website created with Shokunin Static Site Generator (SSG)"
 url: "https://sebastienrousseau.com/made-with-shokunin/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -80,7 +80,7 @@ apple-touch-fullscreen: "yes"
 
 msapplication-config: "https://sebastienrousseau.com/browserconfig.xml"
 msapplication-tap-highlight: "no"
-msapplication-TileColor: "255, 42, 0"
+msapplication-TileColor: "180, 0, 0"
 msapplication_tile_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 
 # Twitter Card - The Twitter Card front matter (YAML).

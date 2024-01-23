@@ -116,7 +116,7 @@ on these topics.
 
 ### AI Prompt Engineering 2024: Insights & Advanced Techniques
 
-![AI Prompt Engineering 2024: Insights & Advanced Techniques](https://kura.pro/stock/images/banners/ai-prompt-engineering-modern-office.webp).class=\"fade-in w-25 p-3 float-start\"
+![Man analysing data on screens](https://kura.pro/stock/images/banners/ai-prompt-engineering-modern-office.webp).class=\"fade-in w-25 p-3 float-start\"
 
 *by [Sebastien Rousseau][00] (23 Jan 2024)*
 
