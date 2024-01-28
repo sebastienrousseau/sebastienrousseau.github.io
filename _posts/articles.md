@@ -114,6 +114,18 @@ on these topics.
 
 ## Our Stories
 
+![A minimalist, modern corporate office](https://kura.pro/stock/images/banners/modern-corporate-office-with-technological-displays.webp).class=\"fade-in w-25 p-3 float-start\"
+
+### AI-Powered Speech Analysis, Translation, & Insight Tool
+
+*by [Sebastien Rousseau][00] (29 Jan 2024)*
+
+Explore how Audio Analyser, transforms speech-to-text conversion, text analysis, and translations for actionable insights.
+
+[**Read full story ❯**][23]
+
+![divider][divider].class=\"m-10 w-100\"
+
 ### AI Prompt Engineering 2024: Insights & Advanced Techniques
 
 ![Man analysing data on screens](https://kura.pro/stock/images/banners/ai-prompt-engineering-modern-office.webp).class=\"fade-in w-25 p-3 float-start\"
@@ -124,7 +136,7 @@ Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative tr
 
 [**Read full story ❯**][22]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### Alien Studio: My Tech-to Art Journey in Photography
 
@@ -136,7 +148,7 @@ Join me on my personal journey from Rust, AI, and Quantum Computing to redefinin
 
 [**Read full story ❯**][21]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### Qiskit & Quantum Fourier Transform for Credit Ratio Analysis
 
@@ -148,7 +160,7 @@ Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio 
 
 [**Read full story ❯**][20]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### AI Trends 2024: Insights and Predictions for the Future
 
@@ -160,7 +172,7 @@ Explore the transformative AI trends of 2024, from generative AI to AI in retail
 
 [**Read full story ❯**][19]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### Revolutionising Finance with AI-Enhanced Quantum Algorithms
 
@@ -172,7 +184,7 @@ Explore the transformative role of AI in quantum algorithms for finance, with a 
 
 [**Read full story ❯**][18]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### State of AI and Quantum Computing in Banking: A 2023 Review
 
@@ -184,7 +196,7 @@ Exploring 2023's Technological Landscape: AI & Quantum Computing Revolutionising
 
 [**Read full story ❯**][17]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### Quantum Key Distribution Revolutionising Security in Banking
 
@@ -196,7 +208,7 @@ As quantum computers pose a threat to traditional encryption methods, Quantum Ke
 
 [**Read full story ❯**][16]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### Efficient Date and Time Management with DateTime (DTT)
 
@@ -208,7 +220,7 @@ DateTime (DTT) is a comprehensive Rust library for parsing, validating, manipula
 
 [**Read full story ❯**][15]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### KyberLib: A Rust-Powered Shield Against Quantum Threats
 
@@ -220,7 +232,7 @@ A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algo
 
 [**Read full story ❯**][14]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age
 
@@ -232,7 +244,7 @@ Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revo
 
 [**Read full story ❯**][13]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### Exploring Generative AI: Shaping the Future of Technology
 
@@ -244,7 +256,7 @@ Embark on a Journey to Explore Generative AI: Investigating Its Impact, Ethical 
 
 [**Read full story ❯**][12]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### Mathematical and Cryptographic Constants for Rust Security
 
@@ -256,7 +268,7 @@ Safeguard code integrity with meticulously vetted mathematical and cryptographic
 
 [**Read full story ❯**][11]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### Streamlining Rust Library Development with Code Generation
 
@@ -268,7 +280,7 @@ Boost Rust library development with LibMake: A code generator tool that enforces
 
 [**Read full story ❯**][10]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### Protecting Data in the Quantum Age: The Hash Library (HSH)
 
@@ -280,7 +292,7 @@ The Hash Library (HSH) is a quantum-resistant cryptographic hash library that of
 
 [**Read full story ❯**][08]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### Shokunin, the fastest Rust-based Static Site Generator (SSG)
 
@@ -292,7 +304,7 @@ Empowering you to create high-impact static websites with infinite possibilities
 
 [**Read full story ❯**][01]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### Automating ISO 20022 Payment Files Creation with Pain001
 
@@ -304,7 +316,7 @@ Streamlining the creation and compliance of ISO20022 Payment Messages for cross-
 
 [**Read full story ❯**][02]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### The making of the Express Transaction Credits Platform
 
@@ -316,7 +328,7 @@ Developing a comprehensive framework for the next generation of Ethereum Request
 
 [**Read full story ❯**][03]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### Unveiling a new Cryptocurrency and Faster Payment Solution
 
@@ -328,7 +340,7 @@ A significant chapter in the ongoing evolution of the global financial landscape
 
 [**Read full story ❯**][04]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### ERC-20: The Ethereum Token Interface That Changed the World
 
@@ -340,7 +352,7 @@ Ethereum Token Interface: Understanding ERC-20, which allows for the implementat
 
 [**Read full story ❯**][05]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### Understanding the Technology behind Blockchain
 
@@ -352,7 +364,7 @@ Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to B
 
 [**Read full story ❯**][06]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### Blockchain explained, the technology that matters the most
 
@@ -364,7 +376,7 @@ A story of the extraordinary journey of securing digital transactions through Pr
 
 [**Read full story ❯**][09]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### Bitcoin: A Year In Review of the First Cryptocurrency
 
@@ -376,7 +388,7 @@ Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential 
 
 [**Read full story ❯**][07]
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 [00]: /about/index.html "About Sebastien Rousseau, Banking & Financial Service Professional"
 [01]: /2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
@@ -401,3 +413,6 @@ Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential 
 [20]: /2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html "Optimising Credit Ratio Analysis with IBM Qiskit and Quantum Fourier Transform"
 [21]: /2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html "Alien Studio: My Tech-to Art Journey in Photography"
 [22]: /2024-01-23-advancements-in-ai-prompt-engineering/index.html#page-top "AI Prompt Engineering 2024: Insights & Advanced Techniques"
+[23]: /2024-01-29-ai-powered-audio-insights-analysis-translations/index.html "AI-Powered Audio Insights, Analysis & Translations"
+
+[divider]: https://kura.pro/common/images/elements/divider.svg "Divider"

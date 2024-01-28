@@ -116,13 +116,25 @@ Read the latest articles below, and [**see all articles, news and product announ
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![Man analysing data on screens](https://kura.pro/stock/images/banners/ai-prompt-engineering-modern-office.webp).class=\"fade-in w-50 m-3 p-3 float-start align-self-center img-thumbnail\"
+![A minimalist, modern corporate office](https://kura.pro/stock/images/banners/modern-corporate-office-with-technological-displays.webp).class=\"fade-in w-50 m-3 p-3 float-start align-self-center img-thumbnail\"
+
+### AI-Powered Speech Analysis, Translation, & Insight Tool
+
+*by [Sebastien Rousseau][00] (29 Jan 2024)*
+
+#### Revolutionising audio data processing with Azure AI Platform
+
+Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights.
+
+[**Learn more ❯**][08]
+
+![divider][divider].class=\"m-10 w-100\"
+
+![Man analysing data on screens](https://kura.pro/stock/images/banners/ai-prompt-engineering-modern-office.webp).class=\"fade-in w-25 m-3 rounded-circle float-end \"
 
 ### AI Prompt Engineering 2024: Insights & Advanced Techniques
 
 *by [Sebastien Rousseau][00] (23 Jan 2024)*
-
-#### Reshaping human-computer interaction with significant advancements in custom instructions
 
 Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors.
 
@@ -130,7 +142,7 @@ Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative tr
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![A Sunset’s muse, a serene glance](https://kura.pro/alienstudio/images/collections/radiance/radiance-08.webp).class=\"fade-in w-25 m-3 rounded-circle float-end \"
+![A Sunset’s muse, a serene glance](https://kura.pro/alienstudio/images/collections/radiance/radiance-08.webp).class=\"fade-in w-25 m-3 rounded-circle float-start \"
 
 ### Alien Studio: My Tech-to Art Journey in Photography
 
@@ -144,7 +156,7 @@ My journey to Alien Studio has been a transformative adventure, traversing the r
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![A Quantum Computer Room](https://kura.pro/stock/images/banners/quantum-computer-room.webp).class=\"fade-in w-25 m-3 rounded-circle float-start \"
+![A Quantum Computer Room](https://kura.pro/stock/images/banners/quantum-computer-room.webp).class=\"fade-in w-25 m-3 rounded-circle float-end \"
 
 ### Qiskit & Quantum Fourier Transform for Credit Ratio Analysis
 
@@ -156,7 +168,7 @@ Explore how **IBM Qiskit** and **Quantum Fourier Transform** revolutionise credi
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![A Drone View of London](https://kura.pro/stock/images/banners/drone-view-of-london.webp).class=\"fade-in w-25 m-3 rounded-circle float-end \"
+![A Drone View of London](https://kura.pro/stock/images/banners/drone-view-of-london.webp).class=\"fade-in w-25 m-3 rounded-circle float-start \"
 
 ### AI Trends 2024: Insights and Predictions for the Future
 
@@ -168,7 +180,7 @@ Explore the transformative AI trends of 2024, from generative AI to AI in retail
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![A Circuit board City Scape](https://kura.pro/stock/images/banners/circuit_board_cityscape.webp).class=\"fade-in w-25 m-3 rounded-circle float-start \"
+![A Circuit board City Scape](https://kura.pro/stock/images/banners/circuit_board_cityscape.webp).class=\"fade-in w-25 m-3 rounded-circle float-end \"
 
 ### Revolutionising Finance with AI-Enhanced Quantum Algorithms
 
@@ -180,27 +192,15 @@ Explore the transformative role of AI in quantum algorithms for finance, with a 
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![A view of HSBC from the Docks](https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp).class=\"fade-in w-25 m-3 rounded-circle float-end \"
-
-### Quantum Key Distribution Revolutionising Security in Banking
-
-*by [Sebastien Rousseau][00] (11 Dec 2023)*
-
-As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.
-
-[**Learn more ❯**][02]
-
-![divider][divider].class=\"m-10 w-100\"
-
 [**See all articles** ❯][100]
 
 [00]: /about/index.html "About Sebastien Rousseau, Banking & Financial Service Professional"
-[02]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution Revolutionising Security in Banking"
 [03]: /2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
 [04]: /2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html "AI Trends 2024: Insights and Predictions for the Future"
 [05]: /2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html "Optimising Credit Ratio Analysis with IBM Qiskit and Quantum Fourier Transform"
 [06]: /2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html "Alien Studio: My Tech-to Art Journey in Photography"
 [07]: /2024-01-23-advancements-in-ai-prompt-engineering/index.html "AI Prompt Engineering 2024: Insights & Advanced Techniques"
+[08]: /2024-01-29-ai-powered-audio-insights-analysis-translations/index.html "AI-Powered Audio Insights, Analysis & Translations"
 [100]: /articles/index.html "See all articles"
 
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
