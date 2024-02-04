@@ -119,7 +119,7 @@ Capabilities in speech recognition, speech analytics, voice biometrics and other
 
 #### Audio Analyser: A Pioneering Tool
 
-![A Powerful Audio Analytics Dashboard](https://kura.pro/audioanalyser/images/screenshots/dashboard.webp).class=\"fade-in w-100\"
+<!-- ![A Powerful Audio Analytics Dashboard](https://kura.pro/audioanalyser/images/screenshots/dashboard.webp).class=\"fade-in w-100\" -->
 
 What elevates **Audio Analyser** beyond standard speech transcription software? The integration of Microsoft Azure's leading-edge AI unlocks far more nuanced analysis capabilities. Harnessing the latest machine learning algorithms, **Audio Analyser** delves deeply into speech patterns - not just converting words, but exploring subtleties like tone, emotion and underlying meanings.
 
@@ -127,7 +127,7 @@ Its advanced natural language processing allows Audio Analyser to recognize ling
 
 #### Key Features of Audio Analyser
 
-![A Pioneering Suite of Tool](https://kura.pro/audioanalyser/images/screenshots/tools.webp).class=\"fade-in w-100\"
+<!-- ![A Pioneering Suite of Tool](https://kura.pro/audioanalyser/images/screenshots/tools.webp).class=\"fade-in w-100\" -->
 
 - **Audio Recording**: Easily record audio files and conversations.
 - **Instant Transcription**: Swiftly convert spoken language to text using Azure's speech-to-text service.
