@@ -99,7 +99,7 @@ site_software: "Shokunin, Rust"
 
 ---
 
-**Audio Analyser**, leveraging Microsoft Azure AI Platform, is redefining the landscape of audio data analysis. This tool offers advanced speech-to-text conversion, comprehensive text analysis, actionable insights and seamless translations, providing critical detailed analytics from audio data efficiently. It's an essential asset for sectors like market research, contact centers, customer service, healthcare, banking and finance, transforming the way we interpret and utilise audio information.
+[**Audio Analyser ⧉**][00], leveraging Microsoft Azure AI Platform, is redefining the landscape of audio data analysis. This tool offers advanced speech-to-text conversion, comprehensive text analysis, actionable insights and seamless translations, providing critical detailed analytics from audio data efficiently. It's an essential asset for sectors like market research, contact centers, customer service, healthcare, banking and finance, transforming the way we interpret and utilise audio information.
 
 In today's experience-driven market, the ability to quickly analyze customer audio data from calls, chats, voice mails and more has become essential for delivering exceptional support. With rising expectations, native speech analytics like **Audio Analyser** make the difference for companies aiming to retain customers and nurture lasting relationships.
 
@@ -227,10 +227,12 @@ On top of Azure's capabilities, **Audio Analyser** builds further logic around a
 
 ![divider][divider].class=\"m-10 w-100\"
 
-**Audio Analyser** unlocks an integrated approach to tapping value within audio data. Backed by industrial-strength Microsoft Azure AI Platform for security and precision, it makes speech-based insights more accessible through automation and simplified delivery.
+[**Audio Analyser ⧉**][00] unlocks an integrated approach to tapping value within audio data. Backed by industrial-strength Microsoft Azure AI Platform for security and precision, it makes speech-based insights more accessible through automation and simplified delivery.
 
 Whether generating meeting minutes, reviewing calls, searching podcast archives or otherwise harnessing audio content, this pioneering tool opens new possibilities. The depth of analysis and intuitiveness it offers are helping leading organizations optimize audio utility to an unprecedented degree.
 
 ![divider][divider].class=\"m-10 w-100\"
 
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
+[00]: https://audioanalyser.co/ "Unlock Actionable Insights from Audio Data to Enhance CX/EX"
+
