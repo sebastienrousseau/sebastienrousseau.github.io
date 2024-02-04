@@ -235,4 +235,3 @@ Whether generating meeting minutes, reviewing calls, searching podcast archives 
 
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
 [00]: https://audioanalyser.co/ "Unlock Actionable Insights from Audio Data to Enhance CX/EX"
-

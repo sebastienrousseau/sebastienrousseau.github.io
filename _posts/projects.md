@@ -352,11 +352,11 @@ cryptographic constants.
   <div class="card border-0">
 <!-- markdownlint-restore -->
 
-### AudioTextPro
+### Audio Analyser
 
 ![a black and white photo of a light at the end of a tunnel](https://kura.pro/stock/images/banners/pramod-tiwari-Br0F5xMArxI.webp).class=\"fade-in card-img-top\"
 
-**AudioTextPro**: Convert audio to text accurately in real-time using our advanced AI speech recognition technology.
+**Audio Analyser**: Convert audio to text accurately in real-time using our advanced AI speech recognition technology.
 
 [**Learn more** ⧉][14]
 
@@ -449,7 +449,7 @@ statements.
 [11]: http://minifunctions.com/ "Highly performant utility and wrapper functions library for Rust ⧉"
 [12]: https://dotfiles.io/ "The next generation of Bash configuration files for macOS, Linux and Windows ⧉"
 [13]: https://kaishi.one/ "Kaishi, a Starter Template for Shokunin ⧉"
-[14]: https://audiotextpro.com/ "Convert audio to text accurately in real-time using our advanced AI speech recognition technology ⧉"
+[14]: https://audioanalyser.co/ "Unlock Actionable Insights from Audio Data to Enhance CX/EX ⧉"
 [15]: https://skeletonic.io/ "Skeletonic Stylus Library: a lightweight and modular Stylus Library ⧉"
 [16]: https://bankstatementparser.com/ "Simplify Financial Data Analysis with Bank Statement Parser ⧉"
 [17]: https://kyberlib.com/ "KyberLib, a Robust Rust Library for CRYSTALS-Kyber Post-Quantum Cryptography ⧉"
