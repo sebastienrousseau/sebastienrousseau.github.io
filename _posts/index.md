@@ -13,7 +13,7 @@ charset: "UTF-8"
 cdn: "https://kura.pro/"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2024 - Sebastien Rousseau. All rights reserved."
-date: "Feb 08, 2024"
+date: "Feb 12, 2024"
 description: "Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking & Financial Services"
 format-detection: "telephone=no"
 hreflang: "en"
@@ -55,11 +55,11 @@ generator: "Shokunin 🦀 (version 0.0.23)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
-item_pub_date: "2024-02-08T08:08:08+01:00"
+item_pub_date: "2024-02-12T12:12:12+01:00"
 item_title: "Sebastien Rousseau, Banking & Financial Service Professional"
-last_build_date: "2024-02-08T08:08:08+01:00"
+last_build_date: "2024-02-12T12:12:12+01:00"
 managing_editor: "contact@sebastienrousseau.com"
-pub_date: "2024-02-08T08:08:08+01:00"
+pub_date: "2024-02-12T12:12:12+01:00"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -93,7 +93,7 @@ author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2024-02-08"
+site_last_updated: "2024-02-12"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Shokunin, Rust"
@@ -116,13 +116,25 @@ Read the latest articles below, and [**see all articles, news and product announ
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![A robotic woman with butterflies and flowers](https://kura.pro/stock/images/banners/advertising-ai.webp).class=\"fade-in w-50 m-3 p-3 float-start align-self-center img-thumbnail\"
+![A white, spherical modern device](https://kura.pro/stock/images/banners/akande-voice-assistant.webp).class=\"fade-in w-50 m-3 p-3 float-start align-self-center img-thumbnail\"
+
+### Àkàndé Voice Assistant, A Personal and Executive Assistance
+
+*by [Sebastien Rousseau][00] (12 Feb 2024)*
+
+#### Empowering Seamless Interactions with Cutting-Edge AI Technology
+
+Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.
+
+[**Learn more ❯**][10]
+
+![divider][divider].class=\"m-10 w-100\"
+
+![A robotic woman with butterflies and flowers](https://kura.pro/stock/images/banners/advertising-ai.webp).class=\"fade-in w-25 m-3 rounded-circle float-end\"
 
 ### Revolutionising Advertising: How AI Shapes the Future
 
 *by [Sebastien Rousseau][00] (08 Feb 2024)*
-
-#### How AI Transforms Consumer Interactions and Advertising Dynamics
 
 Explore how AI transforms advertising with insights on Amazon's Rufus and Meta's latest developments. Discover the impact on consumer engagement
 
@@ -130,7 +142,7 @@ Explore how AI transforms advertising with insights on Amazon's Rufus and Meta's
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![A minimalist, modern corporate office](https://kura.pro/stock/images/banners/modern-corporate-office-with-technological-displays.webp).class=\"fade-in w-25 m-3 rounded-circle float-end \"
+![A minimalist, modern corporate office](https://kura.pro/stock/images/banners/modern-corporate-office-with-technological-displays.webp).class=\"fade-in w-25 m-3 rounded-circle float-start \"
 
 ### AI-Powered Speech Analysis, Translation, & Insight Tool
 
@@ -142,7 +154,7 @@ Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conve
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![Man analysing data on screens](https://kura.pro/stock/images/banners/ai-prompt-engineering-modern-office.webp).class=\"fade-in w-25 m-3 rounded-circle float-start \"
+![Man analysing data on screens](https://kura.pro/stock/images/banners/ai-prompt-engineering-modern-office.webp).class=\"fade-in w-25 m-3 rounded-circle float-end \"
 
 ### AI Prompt Engineering 2024: Insights & Advanced Techniques
 
@@ -154,7 +166,7 @@ Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative tr
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![A Sunset’s muse, a serene glance](https://kura.pro/alienstudio/images/collections/radiance/radiance-08.webp).class=\"fade-in w-25 m-3 rounded-circle float-end \"
+![A Sunset’s muse, a serene glance](https://kura.pro/alienstudio/images/collections/radiance/radiance-08.webp).class=\"fade-in w-25 m-3 rounded-circle float-start \"
 
 ### Alien Studio: My Tech-to Art Journey in Photography
 
@@ -168,7 +180,7 @@ My journey to Alien Studio has been a transformative adventure, traversing the r
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![A Quantum Computer Room](https://kura.pro/stock/images/banners/quantum-computer-room.webp).class=\"fade-in w-25 m-3 rounded-circle float-start \"
+![A Quantum Computer Room](https://kura.pro/stock/images/banners/quantum-computer-room.webp).class=\"fade-in w-25 m-3 rounded-circle float-end \"
 
 ### Qiskit & Quantum Fourier Transform for Credit Ratio Analysis
 
@@ -180,27 +192,15 @@ Explore how **IBM Qiskit** and **Quantum Fourier Transform** revolutionise credi
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![A Drone View of London](https://kura.pro/stock/images/banners/drone-view-of-london.webp).class=\"fade-in w-25 m-3 rounded-circle float-end \"
-
-### AI Trends 2024: Insights and Predictions for the Future
-
-*by [Sebastien Rousseau][00] (01 Jan 2024)*
-
-Explore the transformative AI trends of 2024, from generative AI to AI in retail, and how they'll shape our future.
-
-[**Learn more ❯**][04]
-
-![divider][divider].class=\"m-10 w-100\"
-
 [**See all articles** ❯][100]
 
 [00]: /about/index.html "About Sebastien Rousseau, Banking & Financial Service Professional"
-[04]: /2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html "AI Trends 2024: Insights and Predictions for the Future"
 [05]: /2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html "Optimising Credit Ratio Analysis with IBM Qiskit and Quantum Fourier Transform"
 [06]: /2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html "Alien Studio: My Tech-to Art Journey in Photography"
 [07]: /2024-01-23-advancements-in-ai-prompt-engineering/index.html "AI Prompt Engineering 2024: Insights & Advanced Techniques"
 [08]: /2024-01-29-ai-powered-audio-insights-analysis-translations/index.html "AI-Powered Audio Insights, Analysis & Translations"
 [09]: /2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html "Revolutionising Advertising: How AI Shapes the Future"
+[10]: /2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html "Àkàndé Voice Assistant, A Personal and Executive Assistance"
 
 [100]: /articles/index.html "See all articles"
 
