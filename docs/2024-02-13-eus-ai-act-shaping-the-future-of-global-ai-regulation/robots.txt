@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html/sitemap.xml
