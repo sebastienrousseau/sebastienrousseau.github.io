@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2024 - Sebastien Rousseau. All rights reserved."
-date: "Feb 13, 2024"
+date: "Feb 19, 2024"
 description: "Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry"
 format-detection: "telephone=no"
 hreflang: "en"
@@ -54,11 +54,11 @@ generator: "Shokunin 🦀 (version 0.0.23)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
-item_pub_date: "2024-02-13T15:15:15+01:00"
+item_pub_date: "2024-02-19T15:15:15+01:00"
 item_title: "RSS"
-last_build_date: "2024-02-13T15:15:15+01:00"
+last_build_date: "2024-02-19T15:15:15+01:00"
 managing_editor: "contact@sebastienrousseau.com"
-pub_date: "2024-02-13T15:15:15+01:00"
+pub_date: "2024-02-19T15:15:15+01:00"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -92,7 +92,7 @@ author_website: "https://sebastienrousseau.com/articles/index.html"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2024-02-13"
+site_last_updated: "2024-02-19"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Shokunin, Rust"
@@ -113,6 +113,16 @@ You can find below a selection of articles that I have written over the years
 on these topics.
 
 ## Our Stories
+
+![Abstract visualisation of AI networks, representing Gemini 1.5's capabilities](https://kura.pro/stock/images/banners/abstract-visualization-of-gemini.webp).class=\"fade-in w-25 p-3 float-start\"
+
+### Unlocking Gemini 1.5: Google's AI Revolution Explained
+
+Explore Gemini 1.5, Google's AI breakthrough, enhancing efficiency, quality, and context understanding in the AI landscape.
+
+[**Read full story ❯**][27]
+
+![divider][divider].class=\"m-10 w-100\"
 
 ![A person sitting on black bench reading newspaper](https://kura.pro/stock/images/banners/ryoji-iwata-a-qsFZimp1M.webp).class=\"fade-in w-25 p-3 float-start\"
 
@@ -453,5 +463,6 @@ Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential 
 [24]: /2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html "Revolutionising Advertising: How AI Shapes the Future"
 [25]: /2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html "Àkàndé Voice Assistant, A Personal and Executive Assistance"
 [26]: /2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html "EU's AI Act: Pioneering Ethical AI Regulation Worldwide"
+[27]: /2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html "Unlocking Gemini 1.5: Google's AI Revolution Explained"
 
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
