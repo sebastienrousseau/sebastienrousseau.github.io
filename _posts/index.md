@@ -2,7 +2,7 @@
 
 # Front Matter (YAML)
 
-author: "Sebastien Rousseau"
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Turned off laptop computer on top of brown wooden table"
 banner_height: "571"
 banner_width: "1425"
@@ -51,14 +51,14 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/rss.xml"
 category: "Technology"
 docs: https://validator.w3.org/feed/docs/rss2.html
-generator: "Shokunin 🦀 (version 0.0.23)"
+generator: "Shokunin SSG (version 0.0.24)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
 item_pub_date: "2024-02-19T15:15:15+01:00"
 item_title: "Sebastien Rousseau, Banking & Financial Service Professional"
 last_build_date: "2024-02-19T15:15:15+01:00"
-managing_editor: "contact@sebastienrousseau.com"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "2024-02-19T15:15:15+01:00"
 ttl: "60"
 type: "website"

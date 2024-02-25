@@ -2,7 +2,7 @@
 
 # Front Matter (YAML)
 
-author: "Sebastien Rousseau"
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Canary wharf passage"
 banner_height: "398"
 banner_width: "1440"
@@ -51,14 +51,14 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/terms/rss.xml"
 category: "Technology"
 docs: https://validator.w3.org/feed/docs/rss2.html
-generator: "Shokunin 🦀 (version 0.0.23)"
+generator: "Shokunin SSG (version 0.0.24)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/terms/rss.xml"
 item_link: "https://sebastienrousseau.com/terms/rss.xml"
 item_pub_date: "2023-10-01T01:01:01+01:00"
 item_title: "RSS"
 last_build_date: "2023-10-01T01:01:01+01:00"
-managing_editor: "contact@sebastienrousseau.com"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "2023-10-01T01:01:01+01:00"
 ttl: "60"
 type: "website"
