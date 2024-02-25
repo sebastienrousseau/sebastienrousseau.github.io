@@ -19,9 +19,9 @@ hreflang: "en"
 icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/articles/index.html"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
-image_height: "161.8"
-image_width: "161.8"
-image: "https://kura.pro/stock/images/banners/sebastien-rousseau.webp"
+image_height: "162"
+image_width: "162"
+image: "https://kura.pro/stock/images/banners/sebastien-rousseau.png"
 keywords: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML"
 language: "en-GB"
 layout: "articles"
@@ -54,11 +54,11 @@ generator: "Shokunin SSG (version 0.0.24)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
-item_pub_date: "2024-02-19T15:15:15+01:00"
+item_pub_date: "Mon, 26 Feb 2024 06:06:06 +0100"
 item_title: "RSS"
-last_build_date: "2024-02-19T15:15:15+01:00"
+last_build_date: "Mon, 26 Feb 2024 06:06:06 +0100"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-pub_date: "2024-02-19T15:15:15+01:00"
+pub_date: "Mon, 26 Feb 2024 06:06:06 +0100"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -81,7 +81,7 @@ msapplication-navbutton-color: "rgb(255, 39, 34)"
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
 twitter_description: "Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry"
-twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
+twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Discover How Technology Is Changing Banking and Finance"
@@ -113,6 +113,16 @@ You can find below a selection of articles that I have written over the years
 on these topics.
 
 ## Our Stories
+
+![Futuristic blue spaceship with neon lights](https://kura.pro/stock/images/banners/ai-ship.webp).class=\"fade-in w-25 p-3 float-start\"
+
+### Google Gemma AI: Transforming Open-Source AI Development
+
+Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use.
+
+[**Read full story ❯**][28]
+
+![divider][divider].class=\"m-10 w-100\"
 
 ![Abstract visualisation of AI networks, representing Gemini 1.5's capabilities](https://kura.pro/stock/images/banners/abstract-visualization-of-gemini.webp).class=\"fade-in w-25 p-3 float-start\"
 
@@ -464,5 +474,6 @@ Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential 
 [25]: /2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html "Àkàndé Voice Assistant, A Personal and Executive Assistance"
 [26]: /2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html "EU's AI Act: Pioneering Ethical AI Regulation Worldwide"
 [27]: /2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html "Unlocking Gemini 1.5: Google's AI Revolution Explained"
+[28]: /2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html "Google Gemma AI: Transforming Open-Source AI Development"
 
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
