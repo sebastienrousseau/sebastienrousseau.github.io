@@ -12,8 +12,8 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2024 - Sebastien Rousseau. All rights reserved."
-date: "Dec 11, 2023"
-description: "Browse through my open-source projects and learn how I use open source software to create innovative solutions for all."
+date: "Feb 26, 2024"
+description: "Explore my open-source projects and discover how I leverage open-source software to deliver groundbreaking solutions."
 format-detection: "telephone=no"
 hreflang: "en"
 icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
@@ -42,7 +42,7 @@ short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
 tags: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
 theme-color: "0,102,204"
-title: "Innovative And Creative Solutions built with Open Source"
+title: "Innovative and Creative Solutions Built with Open Source"
 url: "https://sebastienrousseau.com/projects/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -51,14 +51,14 @@ atom_link: "https://sebastienrousseau.com/projects/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Shokunin SSG (version 0.0.24)"
-item_description: "Browse through my open-source projects and learn how I use open source software to create innovative solutions for all."
+item_description: "Explore my open-source projects and discover how I leverage open-source software to deliver groundbreaking solutions."
 item_guid: "https://sebastienrousseau.com/projects/rss.xml"
 item_link: "https://sebastienrousseau.com/projects/rss.xml"
-item_pub_date: "Mon, 11 Dec 2023 09:00:00 +0000"
-item_title: "Innovative And Creative Solutions built with Open Source"
-last_build_date: "Mon, 11 Dec 2023 09:00:00 +0000"
+item_pub_date: "Mon, 26 Feb 2024 06:06:06 +0100"
+item_title: "Innovative and Creative Solutions Built with Open Source"
+last_build_date: "Mon, 26 Feb 2024 06:06:06 +0100"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-pub_date: "Mon, 11 Dec 2023 09:00:00 +0000"
+pub_date: "Mon, 26 Feb 2024 06:06:06 +0100"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -80,11 +80,11 @@ msapplication-navbutton-color: "rgb(0, 102, 204)"
 
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
-twitter_description: "Browse through my open-source projects and learn how I use open source software to create innovative solutions for all."
+twitter_description: "Explore my open-source projects and discover how I leverage open-source software to deliver groundbreaking solutions."
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "Innovative And Creative Solutions built with Open Source"
+twitter_title: "Innovative and Creative Solutions Built with Open Source"
 twitter_url: "https://sebastienrousseau.com"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -92,365 +92,287 @@ author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2023-12-11"
+site_last_updated: "2024-02-26"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Shokunin, Rust"
 
 ---
 
-I am passionate about using open source software and experimentation to innovate
-and solve real-world problems.
+My passion lies in harnessing open-source software and experimentation to push boundaries and tackle real-world challenges.  I'm eager to team up with like-minded individuals on open-source initiatives. If you'd like to collaborate, or have a brilliant project concept, don't hesitate to reach out.
 
-I am always looking for new opportunities to collaborate with others on open
-source projects. If you are interested in working with me on any of my current
-projects, or if you have an idea for a new project, please feel free to get in
-touch.
+## Project Categories
 
-## Projects
+<!-- markdownlint-disable MD051 -->
+- [Artificial Intelligence (AI) Projects](#h2-artificial)
+- [Quantum Computing and Quantum Cryptography Projects](#h2-quantum)
+- [Python Projects](#h2-python)
+- [Rust Projects](#h2-rust)
+- [JavaScript Projects](#h2-javascript)
+- [General Projects](#h2-general)
+- [CSS Projects](#h2-css)
+- [Web Based Projects](#h2-web)
+<!-- markdownlint-enable MD051 -->
 
-Here are some of my latest personal projects:
+![divider][divider].class=\"m-10 w-100\"
 
-<!-- markdownlint-disable MD033 -->
-<div class="row">
-  <div class="col">
-    <div class="card border-0">
-<!-- markdownlint-restore -->
+## Artificial Intelligence (AI) Projects
 
-### Pain001
+This collection of AI projects applies machine learning and other latest techniques to solve real-world problems in areas like voice assistants, audio analysis and more.
 
-![assorted-color hot air balloons during daytime](https://kura.pro/stock/images/banners/ian-dooley-DuBNA1QMpPA.webp).class=\"fade-in card-img-top\"
+### Àkàndé: Advanced AI Voice Assistant for All
 
-**Pain001**: A powerful Python library for ISO 20022 compliant payment file
-creation from CSV or SQLite data files, simplifying payment automation and
-processing.
+![a banner for Àkàndé: Advanced AI Voice Assistant for All](https://kura.pro/akande/images/github/github-akande.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
+
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Àkàndé**: Discover Àkàndé, an advanced voice assistant using OpenAI's GPT for
+natural interactions, PDF summaries, & efficient caching for both personal and
+executive tasks.
 
 [**Learn more** ⧉][00]
 
-<!-- markdownlint-disable MD033 -->
-</div></div>
-<div class="col">
-  <div class="card border-0">
-<!-- markdownlint-restore -->
+![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
 
-### Shokunin Static Site Generator
+### Audio Analyser
 
-![A View of Mount Fuji](https://kura.pro/stock/images/banners/fuji.webp).class=\"fade-in card-img-top\"
+![a banner for Audio Analyser](https://kura.pro/audioanalyser/images/github/github-audioanalyser.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
 
-**Shokunin Static Site Generator (SSG)**: A blazing-fast Static Site Generator
-(SSG) built with Rust. Intended to make it simple and quick to generate websites
-optimised for SEO and compliant with Accessibility Standards.
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Audio Analyser**: Convert audio to text accurately in real-time using our advanced AI speech recognition technology.
 
 [**Learn more** ⧉][01]
 
-<!-- markdownlint-disable MD033 -->
-</div></div>
-<div class="col">
-  <div class="card border-0">
-<!-- markdownlint-restore -->
+![divider][divider].class=\"m-10 w-100\"
 
+## Quantum Computing and Quantum Cryptography Projects
 
-### Password Generator Pro
+This collection showcases a variety of open-source Quantum Computing and Quantum Cryptography projects. Covering a range of areas from cryptography to web development, each project is designed to provide innovative solutions to real-world problems and is built using the latest Rust technologies.
 
-![the logo of Password Generator Pro](https://kura.pro/password-generator-pro/images/banners/banner-password-generator-pro.webp).class=\"fade-in card-img-top\"
+![a banner for KyberLib](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
 
-**Password Generator Pro**: A fast, simple and powerful open-source cross
-platform utility tool for generating strong, unique and random passwords.
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**KyberLib**, a Robust Rust Library for CRYSTALS-Kyber Post-Quantum Cryptography.
 
 [**Learn more** ⧉][02]
-<!-- markdownlint-disable MD033 -->
-</div>
-</div>
-</div>
-<!-- markdownlint-restore -->
 
-<!-- markdownlint-disable MD033 -->
-<div class="row">
-  <div class="col">
-    <div class="card border-0">
-<!-- markdownlint-restore -->
+![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
 
 ### Hash (HSH) Rust library
 
-![the Hash (HSH) Rust library](https://kura.pro/stock/images/banners/mika-baumeister-Wpnoqo2plFA.webp).class=\"fade-in card-img-top\"
+![a banner for the Hash (HSH) Rust library](https://kura.pro/hsh/images/github/github-hsh.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
 
-**Hash (HSH) Rust library**: The Hash (HSH) Rust library provides an interface
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Hash (HSH) Rust library**: The Hash (HSH) Rust library provides an interface
 for implementing secure hash and digest algorithms, specifically designed for
 password encryption and verification.
 
+[**Learn more** ⧉][07]
+
+![divider][divider].class=\"m-10 w-100\"
+
+## Python Projects
+
+This collection showcases a variety of open-source Python projects that demonstrate practical applications of coding in Python. Covering a range of areas from finance to cryptography, each project is designed to provide innovative solutions to real-world problems and is built using the latest Python technologies
+
+### Pain001
+
+![a banner for Pain001](https://kura.pro/pain001/images/github/github-pain001.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
+
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Pain001**: A powerful Python library for ISO 20022 compliant payment file
+creation from CSV or SQLite data files, simplifying payment automation and
+processing.
+
 [**Learn more** ⧉][03]
 
-<!-- markdownlint-disable MD033 -->
-</div></div>
-<div class="col">
-  <div class="card border-0">
-<!-- markdownlint-restore -->
+![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
 
-### LibMake Rust library
+### Bank Statement Parser
 
-![LibMake, A code generator to reduce repetitive tasks and build high-quality Rust libraries](https://kura.pro/stock/images/banners/thomas-tastet-0eqgB57xMeA.webp).class=\"fade-in card-img-top\"
+![a banner for Bank Statement Parser](https://kura.pro/bankstatementparser/images/github/github-bankstatementparser.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
 
-**LibMake Rust library**: LibMake is a tool designed to quickly help creating
-high-quality Rust libraries by generating a set of pre-filled and pre-defined
-templated files.
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Bank Statement Parser**, a specialized Python library crafted specifically for
+finance professionals, simplifies the intricate process of parsing bank
+statements.
 
 [**Learn more** ⧉][04]
 
-<!-- markdownlint-disable MD033 -->
-</div></div>
-<div class="col">
-  <div class="card border-0">
-<!-- markdownlint-restore -->
+![divider][divider].class=\"m-10 w-100\"
+
+## Rust Projects
+
+This collection showcases a variety of open-source Rust projects that demonstrate practical applications of coding in Rust. Covering a range of areas from cryptography to web development, each project is designed to provide innovative solutions to real-world problems and is built using the latest Rust technologies.
+
+### Shokunin Static Site Generator
+
+![a banner for the Shokunin Static Site Generator](https://kura.pro/shokunin/images/github/github-shokunin.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
+
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Shokunin Static Site Generator (SSG)**: A blazing-fast Static Site Generator
+(SSG) built with Rust. Intended to make it simple and quick to generate websites
+optimised for SEO and compliant with Accessibility Standards.
+
+[**Learn more** ⧉][05]
+
+![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
+
+### Password Generator Pro
+
+![a banner for the Password Generator Pro](https://kura.pro/password-generator-pro/images/github/github-password-generator-pro.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
+
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Password Generator Pro**: A fast, simple and powerful open-source cross
+platform utility tool for generating strong, unique and random passwords.
+
+[**Learn more** ⧉][06]
+
+![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
+
+### LibMake Rust library
+
+![a banner for LibMake](https://kura.pro/libmake/images/github/github-libmake.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
+
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**LibMake Rust library**: LibMake is a tool designed to quickly help creating
+high-quality Rust libraries by generating a set of pre-filled and pre-defined
+templated files.
+
+[**Learn more** ⧉][08]
+
+![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
+
+### DateTime (DTT) Rust library
+
+![a banner for the DateTime (DTT) Rust library](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
+
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**DateTime (DTT) Rust library**: The DateTime (DTT) library offers a range of
+functions and data structures that allow you to perform various date and time
+operations with ease, such as determining the day of the month, hour of the day,
+working with ISO 8601 date and time formats, and many others.
+
+[**Learn more** ⧉][09]
+
+![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
+
+### Random (VRD) Rust library
+
+![a banner for the Random (VRD) Rust library](https://kura.pro/vrd/images/github/github-vrd.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
+
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Random (VRD) Rust library**: Random (VRD) is a Rust library for generating
+high-quality random numbers based on the Mersenne Twister algorithm. The
+Mersenne Twister is a pseudorandom number generator (PRNG) that is often used in
+computer simulations and games. It is a fast and reliable PRNG.
+
+[**Learn more** ⧉][10]
+
+![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
+
+### Common (CMN) Rust library
+
+![a banner for the Common (CMN) Rust library](https://kura.pro/cmn/images/github/github-cmn.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
+
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Common (CMN) Rust library**: Common (CMN) is a modern, fast, and user-friendly
+library that makes it easy to access a wide range of mathematical and
+cryptographic constants.
+
+[**Learn more** ⧉][11]
+
+![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
+
+### Mini Functions Rust library
+
+![a banner for the Mini Functions Rust library](https://kura.pro/mini-functions/images/v2/github/github-mini-functions.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
+
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Mini Functions**: Mini Functions is a highly performant utility and wrapper functions library for Rust that has been carefully designed with optimization and efficiency in mind.
+
+[**Learn more** ⧉][12]
+
+![divider][divider].class=\"m-10 w-100\"
+
+## JavaScript Projects
+
+This collection showcases a variety of open-source JavaScript projects that demonstrate practical applications of coding in JavaScript. Covering a range of areas from cryptography to web development, each project is designed to provide innovative solutions to real-world problems and is built using the latest JavaScript technologies.
 
 ### Crypto Service Suite
 
-![a white concrete pathway in grayscale photography](https://kura.pro/stock/images/banners/steven-wei-Z7NMhw8hcfg.webp).class=\"fade-in card-img-top\"
+![a banner for the Crypto Service Suite](https://kura.pro/stock/images/banners/steven-wei-Z7NMhw8hcfg.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
 
-**Crypto Service Suite**: The Crypto Service Suite is a powerful and centralized
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Crypto Service Suite**: The Crypto Service Suite is a powerful and centralized
 cryptographic suite of security tools that solves common application crypto
 problems, including integration, data encryption, tokenization, transaction
 authorization, code-signing and key life-cycle management and other security
 services.
 
-[**Learn more** ⧉][05]
+[**Learn more** ⧉][13]
 
-<!-- markdownlint-disable MD033 -->
-</div>
-</div>
-</div>
-<!-- markdownlint-restore -->
+![divider][divider].class=\"m-10 w-100\"
 
-<!-- markdownlint-disable MD033 -->
-<div class="row">
-  <div class="col">
-    <div class="card border-0">
-<!-- markdownlint-restore -->
-
-
-### DateTime (DTT) Rust library
-
-![Spiral staircase in minimalist style](https://kura.pro/stock/images/banners/ethan-wu-1597623.webp).class=\"fade-in card-img-top\"
-
-**DateTime (DTT) Rust library**: The DateTime (DTT) library offers a range of
-functions and data structures that allow you to perform various date and time
-operations with ease, such as determining the day of the month, hour of the day,
-working with ISO 8601 date and time formats, and many others.
-
-[**Learn more** ⧉][06]
-
-<!-- markdownlint-disable MD033 -->
-</div></div>
-<div class="col">
-  <div class="card border-0">
-<!-- markdownlint-restore -->
-
-### Random (VRD) Rust library
-
-![people walking on gray concrete floor](https://kura.pro/stock/images/banners/timon-studler-ABGaVhJxwDQ.webp).class=\"fade-in card-img-top\"
-
-**Random (VRD) Rust library**: Random (VRD) is a Rust library for generating
-high-quality random numbers based on the Mersenne Twister algorithm. The
-Mersenne Twister is a pseudorandom number generator (PRNG) that is often used in
-computer simulations and games. It is a fast and reliable PRNG.
-
-[**Learn more** ⧉][07]
-
-<!-- markdownlint-disable MD033 -->
-</div></div>
-<div class="col">
-  <div class="card border-0">
-<!-- markdownlint-restore -->
-
-
-### Common (CMN) Rust library
-
-![Holographic cubes at a concert](https://kura.pro/stock/images/banners/fabio-oyXis2kALVg.webp).class=\"fade-in card-img-top\"
-
-**Common (CMN) Rust library**: Common (CMN) is a modern, fast, and user-friendly
-library that makes it easy to access a wide range of mathematical and
-cryptographic constants.
-
-[**Learn more** ⧉][08]
-
-<!-- markdownlint-disable MD033 -->
-</div>
-</div>
-</div>
-<!-- markdownlint-restore -->
-
-<!-- markdownlint-disable MD033 -->
-<div class="row">
-  <div class="col">
-    <div class="card border-0">
-<!-- markdownlint-restore -->
-
-### MacConfig (maccfg)
-
-![MacBook White open on white surface](https://kura.pro/stock/images/banners/ibrahim-abazid-MgQnQZA4ByM.webp).class=\"fade-in card-img-top\"
-
-**MacBook Pro M1 Software Development Setup (macOS Config)**: A guide to getting your MacBook Pro M1 ready for Software Development. You can set up and start using your new Mac in no time at all with these free resources and user guides.
-
-[**Learn more** ⧉][10]
-
-<!-- markdownlint-disable MD033 -->
-</div></div>
-<div class="col">
-  <div class="card border-0">
-<!-- markdownlint-restore -->
-
-### Mini Functions Rust library
-
-![white and brown concrete building](https://kura.pro/stock/images/banners/chuttersnap-mf-o1E7omzk.webp).class=\"fade-in card-img-top\"
-
-**Mini Functions**: Mini Functions is a highly performant utility and wrapper functions library for Rust that has been carefully designed with optimization and efficiency in mind.
-
-[**Learn more** ⧉][11]
-
-<!-- markdownlint-disable MD033 -->
-</div></div>
-<div class="col">
-  <div class="card border-0">
-<!-- markdownlint-restore -->
+## General Projects
 
 ### Dotfiles
 
-![the Dotfiles Logo](https://kura.pro/dotfiles/v2/images/banners/dotfiles.webp).class=\"fade-in card-img-top\"
+![a banner for the Dotfiles](https://kura.pro/dotfiles/v2/images/banners/dotfiles.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
 
-**Dotfiles**: are a powerful set of configuration files for macOS, Linux, and Windows providing scripts and customized settings to streamline your workflow. These files are an essential tool for developers and users who want to modify their environment and applications to their exact needs.
-
-[**Learn more** ⧉][12]
-
-<!-- markdownlint-disable MD033 -->
-</div>
-</div>
-</div>
-<!-- markdownlint-restore -->
-
-<!-- markdownlint-disable MD033 -->
-</div>
-</div>
-</div>
-<!-- markdownlint-restore -->
-
-<!-- markdownlint-disable MD033 -->
-<div class="row">
-  <div class="col">
-    <div class="card border-0">
-<!-- markdownlint-restore -->
-
-### Kaishi, a Starter Template
-
-![A Bee on a Yellow Flower](https://kura.pro/stock/images/banners/bee-on-a-yellow-flower.webp).class=\"fade-in card-img-top\"
-
-**Kaishi, a Starter Template for Shokunin**: Make beautiful websites with Kaishi, a Shokunin Static Site Generator starter template.
-
-[**Learn more** ⧉][13]
-
-<!-- markdownlint-disable MD033 -->
-</div></div>
-<div class="col">
-  <div class="card border-0">
-<!-- markdownlint-restore -->
-
-### Audio Analyser
-
-![a black and white photo of a light at the end of a tunnel](https://kura.pro/stock/images/banners/pramod-tiwari-Br0F5xMArxI.webp).class=\"fade-in card-img-top\"
-
-**Audio Analyser**: Convert audio to text accurately in real-time using our advanced AI speech recognition technology.
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Dotfiles**: are a powerful set of configuration files for macOS, Linux, and Windows providing scripts and customized settings to streamline your workflow. These files are an essential tool for developers and users who want to modify their environment and applications to their exact needs.
 
 [**Learn more** ⧉][14]
 
-<!-- markdownlint-disable MD033 -->
-</div></div>
-<div class="col">
-  <div class="card border-0">
-<!-- markdownlint-restore -->
+![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
 
-### Skeletonic Stylus Library
+### MacConfig (maccfg)
 
-![the Logo of the Skeletonic Stylus Library](https://kura.pro/skeletonic/images/banner/skeletonic.webp).class=\"fade-in card-img-top\"
+![a banner for the MacConfig (maccfg)](https://kura.pro/stock/images/banners/ibrahim-abazid-MgQnQZA4ByM.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
 
-**Skeletonic Stylus Library**: a lightweight and modular Stylus Library. It contains a suite of components and mixins optimised for mobile and web application design and development.
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**MacBook Pro M1 Software Development Setup (macOS Config)**: A guide to getting your MacBook Pro M1 ready for Software Development. You can set up and start using your new Mac in no time at all with these free resources and user guides.
 
 [**Learn more** ⧉][15]
 
-<!-- markdownlint-disable MD033 -->
-</div>
-</div>
-</div>
-<!-- markdownlint-restore -->
+![divider][divider].class=\"m-10 w-100\"
 
-<!-- markdownlint-disable MD033 -->
-<div class="row">
-<div class="col">
-  <div class="card border-0">
-<!-- markdownlint-restore -->
+## CSS Projects
 
-### Bank Statement Parser
+### Skeletonic Stylus Library
 
-![an architectural photography of glass building](https://kura.pro/stock/images/banners/christian-ladewig-T0iFfJw-rB0.webp).class=\"fade-in card-img-top\"
+![a banner for the Skeletonic Stylus Library](https://kura.pro/skeletonic/images/banner/skeletonic.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
 
-**Bank Statement Parser**, a specialized Python library crafted specifically for
-finance professionals, simplifies the intricate process of parsing bank
-statements.
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Skeletonic Stylus Library**: a lightweight and modular Stylus Library. It contains a suite of components and mixins optimised for mobile and web application design and development.
 
 [**Learn more** ⧉][16]
-<!-- markdownlint-disable MD033 -->
-</div>
-</div>
-<!-- markdownlint-restore -->
 
-<!-- markdownlint-disable MD033 -->
-<div class="col">
-  <div class="card border-0">
-<!-- markdownlint-restore -->
+![divider][divider].class=\"m-10 w-100\"
 
-### KyberLib
+## Web Based Projects
 
-![KyberLib Logo](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"fade-in card-img-top\"
+### Kaishi, a Starter Template
 
-**KyberLib**, a Robust Rust Library for CRYSTALS-Kyber Post-Quantum Cryptography.
+![a banner for the Kaishi, a Starter Template](https://kura.pro/stock/images/banners/bee-on-a-yellow-flower.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
+
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Kaishi, a Starter Template for Shokunin**: Make beautiful websites with Kaishi, a Shokunin Static Site Generator starter template.
 
 [**Learn more** ⧉][17]
-<!-- markdownlint-disable MD033 -->
-</div>
-</div>
-<!-- markdownlint-restore -->
 
-<!-- markdownlint-disable MD033 -->
-<div class="col">
-  <div class="card border-0">
-<!-- markdownlint-restore -->
+![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
 
-### L90S Fractional CFO Services
+### L90S
 
-![L90S Logo](https://kura.pro/l90s/images/banners/banner-office.webp).class=\"fade-in card-img-top\"
+![A banner for the L90S website](https://kura.pro/l90s/images/banners/banner-office.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
 
-**L90S**, A trusted finance leader with 20+ years of experience in the tech industry, guiding companies to sustainable growth, funding, and optimized financial operations.
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**L90S**, A trusted finance leader with 20+ years of experience in the tech industry, guiding companies to sustainable growth, funding, and optimized financial operations.
 
 [**Learn more** ⧉][18]
-<!-- markdownlint-disable MD033 -->
-</div>
-</div>
-</div>
-<!-- markdownlint-restore -->
 
-[00]: https://pain001.com "Pain001: Automate ISO 20022-Compliant Payment File Creation ⧉"
-[01]: https://shokunin.one "Shokunin: The fastest Rust-based Static Site Generator (SSG) ⧉"
-[02]: https://password-generator.pro "Password Generator Pro: A fast, simple and powerful open-source cross platform utility tool for generating strong, unique and random passwords ⧉"
-[03]: https://hshlib.one/ "Hash (HSH), a Quantum-Resistant Cryptographic Hash Library ⧉"
-[04]: http://docs.libmake.com/ "A code generator to reduce repetitive tasks and build high-quality Rust libraries ⧉"
-[05]: https://crypto-service.co/ "The Crypto Service Suite is a set of products that delivers common crypto functions ⧉"
-[06]: https://dttlib.one/ "DateTime (DTT) Rust Library: Parse & Format Dates with Ease ⧉"
-[07]: http://doc.vrdlib.one/ "A Rust library for generating high-quality random numbers based on the Mersenne Twister algorithm ⧉"
-[08]: http://doc.cmnlib.one/ "A Rust library for accessing a collection of mathematical and cryptographic constants ⧉"
-[09]: /contact/index.html "Contact Sebastien Rousseau"
-[10]: https://maccfg.com/ "MacBook Pro M1 Software Development Setup (macOS Config) ⧉"
-[11]: http://minifunctions.com/ "Highly performant utility and wrapper functions library for Rust ⧉"
-[12]: https://dotfiles.io/ "The next generation of Bash configuration files for macOS, Linux and Windows ⧉"
-[13]: https://kaishi.one/ "Kaishi, a Starter Template for Shokunin ⧉"
-[14]: https://audioanalyser.co/ "Unlock Actionable Insights from Audio Data to Enhance CX/EX ⧉"
-[15]: https://skeletonic.io/ "Skeletonic Stylus Library: a lightweight and modular Stylus Library ⧉"
-[16]: https://bankstatementparser.com/ "Simplify Financial Data Analysis with Bank Statement Parser ⧉"
-[17]: https://kyberlib.com/ "KyberLib, a Robust Rust Library for CRYSTALS-Kyber Post-Quantum Cryptography ⧉"
-[18]: https://l90s.com/ "Unlock Financial Growth with Fractional CFOs ⧉"
+![divider][divider].class=\"m-10 w-100\"
+
+[00]: https://akande.co/ "Àkàndé: Advanced AI Voice Assistant for All"
+[01]: https://audioanalyser.co/ "Unlock Actionable Insights from Audio Data to Enhance CX/EX"
+[02]: https://kyberlib.com/ "KyberLib, a Robust Rust Library for CRYSTALS-Kyber Post-Quantum Cryptography"
+[03]: https://pain001.com "Pain001: Automate ISO 20022-Compliant Payment File Creation"
+[04]: https://bankstatementparser.com/ "Simplify Financial Data Analysis with Bank Statement Parser"
+[05]: https://shokunin.one "Shokunin: The fastest Rust-based Static Site Generator (SSG)"
+[06]: https://password-generator.pro "Password Generator Pro: A fast, simple and powerful open-source cross platform utility tool for generating strong, unique and random passwords"
+[07]: https://hshlib.one/ "Hash (HSH), a Quantum-Resistant Cryptographic Hash Library"
+[08]: http://docs.libmake.com/ "A code generator to reduce repetitive tasks and build high-quality Rust libraries"
+[09]: https://dttlib.one/ "DateTime (DTT) Rust Library: Parse & Format Dates with Ease"
+[10]: http://doc.vrdlib.one/ "A Rust library for generating high-quality random numbers based on the Mersenne Twister algorithm"
+[11]: https://doc.cmnlib.one/cmn/ "Common (CMN) Rust Library: A modern, fast, and user-friendly library that makes it easy to access a wide range of mathematical and cryptographic constants"
+[12]: http://minifunctions.com/ "Highly performant utility and wrapper functions library for Rust"
+[13]: https://github.com/sebastienrousseau/crypto-service "The Crypto Service Suite is a set of products that delivers common crypto functions"
+[14]: https://dotfiles.io/ "The next generation of Bash configuration files for macOS, Linux and Windows"
+[15]: https://maccfg.com/ "A guide to getting your MacBook Pro M1 ready for Software Development"
+[16]: https://skeletonic.io/ "Skeletonic Stylus Library: a lightweight and modular Stylus Library"
+[17]: https://kaishi.one/ "Kaishi, a Starter Template for Shokunin"
+[18]: https://l90s.com/ "Unlock Financial Growth with Fractional CFOs"
+
+[divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
