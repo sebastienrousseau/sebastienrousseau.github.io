@@ -233,15 +233,11 @@ For troubleshooting help or more details on setup, refer to the [Ollama Document
 
 Since its launch, Gemma has rapidly accelerated innovation thanks to its accessible and collaborative open-source approach.
 
-Examples: Using Gemma 2B models to enhance app conversations, and leveraging Gemma 7B for database query analysis.
-
 The permissive licensing also enables examining Gemma's own architecture for research purposes and making modifications at a very granular level. Developers have been sharing tweaks, customisations, and brand new capabilities on code collaboration platforms.
 
 This communal effort keeps improving Gemma's capabilities to build ethical and accountable AI systems aligned with emerging best practices.
 
 Over time, an ecosystem of tools, integrations, and even entirely new applications for Gemma could emerge thanks to its nature as an open-source platform.
-
-Here is a new section on Gemma's open-source AI model use cases for enterprise solutions:
 
 ![divider][divider].class=\"m-10 w-100\"
 
