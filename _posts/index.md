@@ -190,8 +190,6 @@ Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conve
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![divider][divider].class=\"m-10 w-100\"
-
 [**See all articles** ❯][100]
 
 [00]: /about/index.html "About Sebastien Rousseau, Banking & Financial Service Professional"
