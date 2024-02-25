@@ -178,22 +178,9 @@ Explore how AI transforms advertising with insights on Amazon's Rufus and Meta's
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![A minimalist, modern corporate office](https://kura.pro/stock/images/banners/modern-corporate-office-with-technological-displays.webp).class=\"fade-in w-25 m-3 rounded-circle float-end \"
-
-### AI-Powered Speech Analysis, Translation, & Insight Tool
-
-*by [Sebastien Rousseau][00] (29 Jan 2024)*
-
-Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights.
-
-[**Learn more ❯**][08]
-
-![divider][divider].class=\"m-10 w-100\"
-
 [**See all articles** ❯][100]
 
 [00]: /about/index.html "About Sebastien Rousseau, Banking & Financial Service Professional"
-[08]: /2024-01-29-ai-powered-audio-insights-analysis-translations/index.html "AI-Powered Audio Insights, Analysis & Translations"
 [09]: /2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html "Revolutionising Advertising: How AI Shapes the Future"
 [10]: /2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html "Àkàndé Voice Assistant, A Personal and Executive Assistance"
 [11]: /2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html "EU's AI Act: Pioneering Ethical AI Regulation Worldwide"
