@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sebastienrousseau.com/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html/sitemap.xml

@@ -42,7 +42,7 @@ short_name: "sebastienrousseau"
 subtitle: "Shaping the Future of Banking and Financial Services through Strategic Integration of Artificial Intelligence, Post-Quantum Cryptography & Blockchain Technology"
 tags: "payments technology, digital finance, artificial intelligence, post-quantum cryptography, blockchain technology, strategic leadership, operational leadership, cross-platform product design, engineering, solution architecture"
 theme-color: "0,102,204"
-title: "Sebastien Rousseau: AI, Banking and Financial Services Expert"
+title: "Sebastien Rousseau: AI, Banking & Financial Services Expert"
 url: "https://sebastienrousseau.com/about/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -50,7 +50,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/about/rss.xml"
 category: "Technology"
 docs: https://validator.w3.org/feed/docs/rss2.html
-generator: "Shokunin SSG (version 0.0.24)"
+generator: "Shokunin SSG (version 0.0.26)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/about/rss.xml"
 item_link: "https://sebastienrousseau.com/about/rss.xml"
@@ -69,7 +69,7 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Sebastien Rousseau: AI, Banking and Financial Services Expert"
+apple-mobile-web-app-title: "Sebastien Rousseau: AI, Banking & Financial Services Expert"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
@@ -84,7 +84,7 @@ twitter_description: "Shaping the Future of Banking and Financial Services throu
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "Sebastien Rousseau: AI, Banking and Financial Services Expert"
+twitter_title: "Sebastien Rousseau: AI, Banking & Financial Services Expert"
 twitter_url: "https://sebastienrousseau.com/about/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -99,7 +99,7 @@ site_software: "Shokunin, Rust"
 
 ---
 
-![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/sebastien-rousseau.webp).class=\"image-wrapper float-start pe-4 rounded-circle w-25 float-end\"
+![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/sebastien-rousseau.webp).class=\"image-wrapper float-sm-start rounded-circle w-25 float-end\"
 
 ## Biography
 
@@ -115,43 +115,13 @@ Sebastien’s diverse experience in banking, financial services, communications,
 
 Brands Sebastien has worked with along the way.
 
- <div class="rollers position-relative overflow-hidden">
-    <div class="start-roller"></div>
-    <div class="wrapper">
-        <div class="items-container roll-LL">
-            <!-- First Set of Items -->
-            <div class="item">
-                <img src="https://kura.pro/logos/akqa.webp" alt="" height="258" class="company">
-            </div>
-            <div class="item">
-                <img src="https://kura.pro/logos/barclays.webp" alt="" height="258" class="company">
-            </div>
-            <div class="item">
-                <img src="https://kura.pro/logos/hsbc.webp" alt="" height="258" class="company">
-            </div>
-            <div class="item">
-                <img src="https://kura.pro/logos/paypal.webp" alt="" height="258" class="company">
-            </div>
-            <div class="item">
-                <img src="https://kura.pro/logos/virgin.webp" alt="" height="258" class="company">
-            </div>
-            <!-- Second Set of Items (Duplicate) -->
-            <div class="item">
-                <img src="https://kura.pro/logos/akqa.webp" alt="" height="258" class="company">
-            </div>
-            <div class="item">
-                <img src="https://kura.pro/logos/barclays.webp" alt="" height="258" class="company">
-            </div>
-            <div class="item">
-                <img src="https://kura.pro/logos/hsbc.webp" alt="" height="258" class="company">
-            </div>
-            <div class="item">
-                <img src="https://kura.pro/logos/paypal.webp" alt="" height="258" class="company">
-            </div>
-            <div class="item">
-                <img src="https://kura.pro/logos/virgin.webp" alt="" height="258" class="company">
-            </div>
-        </div>
-    </div>
-    <div class="end-roller"></div>
-</div>
+![HSBC](https://kura.pro/logos/hsbc.webp).class=\"w-25 company\"
+![PayPal](https://kura.pro/logos/paypal.webp).class=\"w-25 company\"
+![Barclays](https://kura.pro/logos/barclays.webp).class=\"w-25 company\"
+![Shazam](https://kura.pro/logos/shazam.webp).class=\"w-25 company\"
+![AKQA](https://kura.pro/logos/akqa.webp).class=\"w-25 company\"
+![Virgin](https://kura.pro/logos/virgin.webp).class=\"w-25 company\"
+
+![divider][divider].class=\"m-10 w-100\"
+
+[divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
