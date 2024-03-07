@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2024 - Sebastien Rousseau. All rights reserved."
-date: "Feb 26, 2024"
+date: "Mar 08, 2024"
 description: "Explore my open-source projects and discover how I leverage open-source software to deliver groundbreaking solutions."
 format-detection: "telephone=no"
 hreflang: "en"
@@ -54,11 +54,11 @@ generator: "Shokunin SSG (version 0.0.26)"
 item_description: "Explore my open-source projects and discover how I leverage open-source software to deliver groundbreaking solutions."
 item_guid: "https://sebastienrousseau.com/projects/rss.xml"
 item_link: "https://sebastienrousseau.com/projects/rss.xml"
-item_pub_date: "Mon, 26 Feb 2024 06:06:06 +0100"
+item_pub_date: "Fri, 08 Mar 2024 08:08:08 +0100"
 item_title: "Innovative and Creative Solutions Built with Open Source"
-last_build_date: "Mon, 26 Feb 2024 06:06:06 +0100"
+last_build_date: "Fri, 08 Mar 2024 08:08:08 +0100"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-pub_date: "Mon, 26 Feb 2024 06:06:06 +0100"
+pub_date: "Fri, 08 Mar 2024 08:08:08 +0100"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -92,7 +92,7 @@ author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2024-02-26"
+site_last_updated: "2024-03-08"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Shokunin, Rust"
@@ -210,6 +210,16 @@ optimised for SEO and compliant with Accessibility Standards.
 
 ![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
 
+### RustLogs (RLG)
+
+![a banner for the RustLogs (RLG) Library](https://kura.pro/rlg/images/github/github-rlg.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
+
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**RustLogs (RLG): Advanced Logging Library for Rust**: Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customization options.
+
+[**Learn more** ⧉][19]
+
+![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
+
 ### Password Generator Pro
 
 ![a banner for the Password Generator Pro](https://kura.pro/password-generator-pro/images/github/github-password-generator-pro.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
@@ -253,7 +263,7 @@ working with ISO 8601 date and time formats, and many others.
 .class=\"p-5 m-5 text-light bg-dark text-wrap\"**Random (VRD) Rust library**: Random (VRD) is a Rust library for generating
 high-quality random numbers based on the Mersenne Twister algorithm. The
 Mersenne Twister is a pseudorandom number generator (PRNG) that is often used in
-computer simulations and games. It is a fast and reliable PRNG.
+computer simulations and games.
 
 [**Learn more** ⧉][10]
 
@@ -374,5 +384,6 @@ services.
 [16]: https://skeletonic.io/ "Skeletonic Stylus Library: a lightweight and modular Stylus Library"
 [17]: https://kaishi.one/ "Kaishi, a Starter Template for Shokunin"
 [18]: https://l90s.com/ "Unlock Financial Growth with Fractional CFOs"
+[19]: https://rustlogs.com/ "RustLogs (RLG): Advanced Logging Library for Rust"
 
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"

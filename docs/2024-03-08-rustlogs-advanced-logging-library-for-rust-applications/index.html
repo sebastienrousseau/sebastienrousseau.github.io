@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta itemprop="datePublished" content="Fri, 08 Mar 2024 06:06:06 +0100" id="date">
+    <meta itemprop="dateModified" content="Fri, 08 Mar 2024 06:06:06 +0100" id="last-modified">
+    <title>Unleashing the Power of Logging in Rust with RustLogs (RLG)</title>
+
+    <!-- # Start Primary Meta Tags -->
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options.">
+<meta name="generator" content="Shokunin SSG (version 0.0.26)">
+<meta name="keywords" content="Rust logging library, asynchronous Rust logging, structured log formats, Rust application debugging, customisable logging Rust, Rust development tools, RustLogs RLG features, efficient Rust logging, RustLogs integration, RustLogs documentation">
+<meta name="language" content="en-GB">
+<meta name="permalink" content="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">
+<meta name="rating" content="general">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="index, follow">
+<meta name="title" content="Unleashing the Power of Logging in Rust with RustLogs (RLG)">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- # End Primary Meta Tags -->
+
+    <!-- # Start Open Graph / Facebook Meta Tags -->
+    <meta name="og:description" content="Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options.">
+<meta name="og:image" content="https://kura.pro/stock/images/banners/rustlogs.webp">
+<meta name="og:image:alt" content="Colourful, abstract digital art of a cat">
+<meta name="og:image:height" content="100vh">
+<meta name="og:image:width" content="100vw">
+<meta name="og:locale" content="en_GB">
+<meta name="og:title" content="Unleashing the Power of Logging in Rust with RustLogs (RLG)">
+<meta name="og:type" content="website">
+<meta name="og:url" content="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">
+    <!-- # End Open Graph / Facebook Meta Tags -->
+
+    <!-- # Start Accessibility Meta Tags -->
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <!-- # End Accessibility Meta Tags -->
+
+    <!-- # Start Apple Meta Tags -->
+    <meta name="apple_mobile_web_app_orientations" content="portrait">
+<meta name="apple_touch_icon_sizes" content="192x192">
+    <!-- # End Apple Meta Tags -->
+
+<!-- # Start Content Security Policy Meta Tags -->
+<meta http-equiv="Content-Security-Policy"
+content="default-src 'self';
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com https://cdn.jsdelivr.net unpkg.com www.googletagmanager.com x.clarity.ms https://www.googletagmanager.com;
+  connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com;
+  img-src 'self' data: https: kura.pro www.googletagmanager.com;
+  style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
+  font-src 'self' https://fonts.gstatic.com;
+  media-src 'self' https://kura.pro;" />
+<!-- # End Content Security Policy Meta Tags -->
+
+
+
+    <!-- # Start Microsoft Meta Tags -->
+    
+    <!-- # End Microsoft Meta Tags -->
+
+    <!-- # Start Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@wwdseb">
+<meta name="twitter:description" content="Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options.">
+<meta name="twitter:image" content="https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png">
+<meta name="twitter:image:alt" content="Logo of Sebastien Rousseau">
+<meta name="twitter:site" content="@wwdseb">
+<meta name="twitter:title" content="Unleashing the Power of Logging in Rust with RustLogs (RLG)">
+<meta name="twitter:url" content="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">
+    <!-- # End Twitter Meta Tags -->
+
+    <!-- # Start Links -->
+    <link rel="alternate" href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" hreflang="en" />
+    <link rel="preload" as="image" href="https://kura.pro/stock/images/banners/rustlogs.webp">
+    <link rel="canonical" href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://kura.pro/sebastienrousseau/images/favicon.ico"
+      sizes="16x16 32x32"
+    />
+    <link
+      as="style"
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      onload="this.onload=null;this.rel='stylesheet'"
+      rel="preload"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://kura.pro/sebastienrousseau/images/icons/192x192.png"
+      sizes="192x192"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    <!-- # End Links -->
+
+    <!-- # Start Styles -->
+    <style>
+      @keyframes dropDown{from{transform:translateY(-.618rem)}to{transform:translateY(0)}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.active,h1,h2,h3,h4,h5,h6,strong{font-weight:400}.article-info{color:var(--theme-color);font-weight:400}.blur-light{backdrop-filter:saturate(180%) blur(20px);background-color:rgba(255,255,255,.618)}.card{overflow:hidden}.drop-down,.fade-in{animation-fill-mode:forwards}.drop-down{animation:dropDown 1.618s ease}.fade-in{animation:fadeIn 3s ease}h1,h2,h3,h4,h5,h6{color:var(--theme-color)}:root{--theme-color:rgba(0,0,0,.618033988749894)}*{font-weight:300}a{color:#2897ff;text-decoration:none}a:hover{text-decoration:underline}pre{background:#f9f9f9;border:1px solid #ddd;border-left:3px solid var(--theme-color);color:#666;display:block;font-family:monospace;font-size:15px;line-height:1.618;margin-bottom:1.618em;max-width:100%;overflow:auto;padding:1em 1.618em;page-break-inside:avoid;word-wrap:break-word}.zoom-in{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-in:hover{transform:scale(1.0618)}
+      :root{--theme-color:rgb(56, 61, 87)}
+      a{color:var(--theme-color);text-decoration:none}a:hover{text-decoration:underline}
+      strong{color:var(--theme-color);font-weight:700}
+      .content .container{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    box-shadow: 2px 15px 20px #1f1f1f10,-2px -8px 20px #1f1f1f1a;
+}
+
+
+.container .rollers{
+    flex: 0 0 230px;
+}
+
+.container .start-roller{
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(to right, white 30%, #ffffff00);
+}
+
+.container .start-roller,
+.container .end-roller{
+    height: 100%;
+    width: 40px;
+    position: absolute;
+    z-index: 1;
+}
+
+.container .end-roller{
+    right: 0;
+    top: 0;
+    background-image: linear-gradient(to left, white 30%, rgba(255, 255, 255, 0));
+}
+
+.container .rollers .wrapper{
+    position: relative;
+    width: 1400px;
+    height: 100px;
+    margin: 0 0 20px 0;
+    flex: 0 0 auto;
+}
+
+.container .rollers .wrapper .items-container{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.container .rollers .wrapper .items-container.roll-LL{
+    animation-name: roll;
+}
+.container .rollers .wrapper .items-container.roll-RL{
+    animation-name: roll-reverse;
+    left: 100%;
+}
+.container .rollers .wrapper .items-container.reverse-roll-LL{
+    animation-name: roll-clockwise;
+    left: -100%;
+}
+.container .rollers .wrapper .items-container.reverse-roll-RL{
+    animation-name: roll-reverse-clockwise;
+    left: 100%;
+}
+
+@keyframes roll {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: -100%;
+    }
+}
+@keyframes roll-reverse {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+@keyframes roll-clockwise {
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+@keyframes roll-reverse-clockwise {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+
+.container .rollers .wrapper .items-container .item{
+    flex: 1 1 200px;
+    min-width: 0;
+    margin: 20px;
+}
+
+.container .rollers .wrapper .items-container .item .company{
+    filter: grayscale(100%);
+    opacity: 0.2;
+    width: 100%;
+    object-fit: contain;
+}
+
+.container .rollers .wrapper .items-container .item .company:hover{
+    filter: grayscale(0%);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.container img{
+    vertical-align: middle;
+}
+
+@media (max-width: 575.5px) {
+    .content{
+        padding: 20px;
+    }
+    .content .container{
+        padding: 20px;
+    }
+    .h3{
+        font-size: calc(1.1rem + .6vw);
+    }
+    .fs-5 {
+        font-size: 0.9rem!important;
+    }
+    .container .rollers .wrapper .items-container .item .company{
+        opacity: 0.4;
+    }
+}
+    </style>
+    <!-- # End Styles -->
+  </head>
+  <body
+    id="page-top"
+    itemscope
+    itemtype="http://schema.org/WebPage"
+    class="fw-light text-center bg-white text-start fs-6"
+  >
+    <!-- # Start Responsive navbar -->
+    <nav
+      class="navbar navbar-expand-lg bd-navbar sticky-top shadow-small border-bottom blur-light"
+      id="mainNav"
+      itemscope
+      itemtype="http://schema.org/SiteNavigationElement"
+    >
+      <div class="container-xxl p-3">
+        <a class="navbar-brand p-0 me-0 me-lg-2" href="/index.html" aria-label="logo">
+          <img
+            class="d-inline-block align-top"
+            width="44"
+            height="44"
+            src="https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
+            alt="Logo for Sebastien Rousseau"
+            title="Image of the Logo for Sebastien Rousseau"
+            loading="lazy"
+          />
+        </a>
+        <span class="fs-4" itemprop="name"><a href="/" itemprop="url" title="Sebastien Rousseau - Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. " class="text-decoration-none text-dark">Sebastien Rousseau</a></span>
+        <button
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler"
+          data-bs-target="#navbarSupportedContent"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/about/index.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="/articles/index.html">Articles</a>
+              </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/projects/index.html">Projects</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Links</a
+              >
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="/playlists/index.html">
+                    Spotify Playlists
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/made-with-shokunin/index.html">
+                    Made with Shokunin
+                  </a>
+                </li> 
+                <li>
+                  <a class="dropdown-item" href="/tags/index.html">
+                    Tags
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                aria-pressed="false"
+                class="btn btn-dark rounded-pill px-3"
+                href="/contact/index.html"
+                >Get in touch
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- # End Responsive navbar -->
+
+    <!-- Header-->
+<header class="bg-dark text-white text-center text-shadow position-relative mb-5 mb-md-0">
+  <img class="fade-in img-fluid" src="https://kura.pro/stock/images/banners/rustlogs.webp" alt="Banner for RustLogs (RLG)" title="Image of Banner for RustLogs (RLG)" />
+  <section class="p-3 p-md-5 container position-absolute top-50 start-50 translate-middle rounded" style="background: rgba(56, 61, 87, 0.618); z-index: 1;">
+    <div class="row justify-content-center">
+      <div class="col-10 col-md-8 col-lg-6">
+        <p class="fs-1">Unleashing the Power of Logging in Rust with RustLogs (RLG)</p>
+        <p class="fs-5">Streamline Your Rust Logging Workflow</p>
+      </div>
+    </div>
+  </section>
+</header>
+<!-- # End Header -->
+
+
+
+    <!-- Main content-->
+    <main id="main" class="bd-masthead container fs-5 p-5" aria-label="main">
+      <div class="text-start justify-content-between">
+        <h1 id="h1-unleashing" tabindex="0" aria-label="Unleashing Heading" itemprop="headline" class="unleashing">Unleashing the Power of Logging in Rust with RustLogs (RLG)</h1><p>Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. </p><p></p><h2 id="h2-introduction" tabindex="0" aria-label="Introduction Heading" itemprop="name" class="introduction">Introduction</h2>
+<p>In the world of software development, logging plays a crucial role in understanding the behaviour of an application, diagnosing issues, and ensuring smooth operation. Rust, a systems programming language known for its performance and safety, offers developers a wide range of logging solutions. Among these libraries, RustLogs (RLG) was born. It's a powerful and flexible logging library that makes it easy to add robust logging capabilities to Rust applications.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
+<h3 id="h3-1" tabindex="0" aria-label="1 Heading" itemprop="name" class="1">1. Understanding the Need for Effective Logging</h3>
+<p>Before delving into the specifics of RustLogs (RLG), let's take a moment to understand why effective logging is essential in software development. Logging is a crucial technique for capturing runtime information about an application's behaviour, data flow, and potential issues. By strategically placing log statements throughout the codebase, developers can gain valuable insights into the application's inner workings and identify any anomalies or errors. Developers can effectively gather crucial data, such as function executions, variable contents, and error notifications, by strategically inserting log statements in the code. This information becomes invaluable when troubleshooting bugs, optimising performance, or investigating unexpected behaviour.</p>
+<p>However, implementing logging functionality from scratch can be a time-consuming and error-prone task. It requires careful consideration of log levels, formatting, output destinations, and performance overhead. This is where RustLogs (RLG) comes into play, offering a comprehensive and user-friendly logging solution specifically tailored for Rust developers.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
+<h3 id="h3-2" tabindex="0" aria-label="2 Heading" itemprop="name" class="2">2. RustLogs (RLG): A Comprehensive Logging Library</h3>
+<p>RustLogs (RLG) is a feature-rich logging library that aims to simplify and streamline the process of adding logging capabilities to Rust applications. It provides a clean and intuitive API, along with a set of powerful macros, making it easy to integrate logging into your codebase. RustLogs (RLG) offers a wide range of log levels. This lets you control how detailed your logs are based on the severity and importance of the information.</p>
+<p>One of the key strengths of RustLogs (RLG) is its flexibility in terms of log formatting and output destinations. Structured logging is supported, allowing you to capture log data in a structured format like JSON. This makes parsing and analysis easier. Additionally, RustLogs (RLG) provides compatibility with various output formats, including popular logging frameworks like syslog, Apache Access Log, and Log4j XML. This versatility ensures that RustLogs (RLG) can seamlessly integrate with existing logging infrastructures and tools.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
+<h3 id="h3-3" tabindex="0" aria-label="3 Heading" itemprop="name" class="3">3. Getting Started with RustLogs (RLG)</h3>
+<p>To start using RustLogs (RLG) in your Rust project, you need to add it as a dependency in your <code>Cargo.toml</code> file. Specify the desired version of RustLogs (RLG) and let Cargo handle the rest:</p>
+<pre><code class="language-toml">[dependencies]
+rlg = &quot;0.0.3&quot;
+</code></pre>
+<p>Once the dependency is added, you can start using RustLogs (RLG) in your Rust code. The library provides a simple and intuitive API for creating log entries. Here's a basic example:</p>
+<pre><code class="language-rust">use rlg::log::Log;
+use rlg::log_format::LogFormat;
+use rlg::log_level::LogLevel;
+
+let log_entry = Log::new(
+    &quot;session_id&quot;,
+    &quot;timestamp&quot;,
+    &amp;LogLevel::INFO,
+    &quot;component&quot;,
+    &quot;This is a log message&quot;,
+    &amp;LogFormat::JSON,
+);
+</code></pre>
+<p>To create a new log entry, use the <code>Log::new()</code> function.
+Specify the session ID, timestamp, log level, component, log message, and log format (JSON in this example). RustLogs (RLG) offers predefined log levels and formats. Choose from log levels like <code>ALL</code>, <code>DEBUG</code>, <code>DISABLED</code>, <code>ERROR</code>, <code>FATAL</code>, <code>INFO</code>, <code>NONE</code>, <code>TRACE</code>, <code>VERBOSE</code>, and <code>WARNING</code>. For log formats, select from <code>CLF</code>, <code>JSON</code>, <code>CEF</code>, <code>ELF</code>, <code>W3C</code>, <code>GELF</code>, <code>ApacheAccessLog</code>, <code>Logstash</code>, <code>Log4jXML</code>, and <code>NDJSON</code>. This gives you precise control over your logging setup.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
+<h3 id="h3-4" tabindex="0" aria-label="4 Heading" itemprop="name" class="4">4. Asynchronous Logging with RustLogs (RLG)</h3>
+<p>One of the standout features of RustLogs (RLG) is its support for asynchronous logging. In modern software development, performance is paramount, and blocking the main execution thread for logging purposes can introduce unnecessary latency. RustLogs (RLG) addresses this issue by providing asynchronous logging capabilities out of the box.</p>
+<p>With RustLogs (RLG), you can log messages asynchronously using the <code>log()</code> method on a log entry. This method returns a <code>Future</code> that runs during your application's main logic.
+This lets your app continue without waiting for logging to finish. Here's an example of asynchronous logging with RustLogs (RLG):</p>
+<pre><code class="language-rust">use rlg::log::Log;
+use rlg::log_format::LogFormat;
+use rlg::log_level::LogLevel;
+
+async fn log_async() {
+    let log_entry = Log::new(
+        &quot;session_id&quot;,
+        &quot;timestamp&quot;,
+        &amp;LogLevel::INFO,
+        &quot;component&quot;,
+        &quot;This is an async log message&quot;,
+        &amp;LogFormat::JSON,
+    );
+
+    match log_entry.log().await {
+        Ok(_) =&gt; println!(&quot;Log message written successfully&quot;),
+        Err(e) =&gt; eprintln!(&quot;Error writing log message: {}&quot;, e),
+    }
+}
+</code></pre>
+<p>By leveraging asynchronous logging, RustLogs (RLG) ensures that your application's performance is not compromised by logging operations. This is particularly beneficial in high-throughput scenarios or when dealing with large volumes of log data.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
+<h3 id="h3-5" tabindex="0" aria-label="5 Heading" itemprop="name" class="5">5. Flexible Configuration and Customisation</h3>
+<p>RustLogs (RLG) provides a high level of flexibility and customisation options to cater to diverse logging requirements. You can configure different logging options, like the log file location, log levels, and output formats. This lets you set up logging based on your application's needs.</p>
+<p>By default, RustLogs (RLG) logs messages to a file named <code>RLG.log</code> in the current directory. However, you can easily customise the log file path by setting the <code>LOG_FILE_PATH</code> environment variable:</p>
+<pre><code class="language-rust">std::env::set_var(&quot;LOG_FILE_PATH&quot;, &quot;/path/to/custom/log/file.log&quot;);
+</code></pre>
+<p>This flexibility enables you to direct log output to different files based on your deployment environment or logging infrastructure.</p>
+<p>Moreover, RustLogs (RLG) provides a <code>Config</code> struct that allows you to load configuration settings from environment variables or fallback to default values. This enables you to centralise your logging configuration and easily modify it without changing your code:</p>
+<pre><code class="language-rust">use rlg::config::Config;
+
+let config = Config::load();
+</code></pre>
+<p>With the <code>Config</code> struct, you can access and use the loaded configuration settings throughout your application. This ensures consistent logging behaviour across different runs or deployments.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
+<h3 id="h3-6" tabindex="0" aria-label="6 Heading" itemprop="name" class="6">6. Powerful Macros for Simplified Logging</h3>
+<p>RustLogs (RLG) offers a set of powerful macros that simplify common logging tasks and reduce boilerplate code. These macros provide a convenient way to log messages with minimal setup and configuration. Here are a few examples of the macros available in RustLogs (RLG):</p>
+<ul>
+<li><code>macro_log!</code>: Creates a new log entry with specified parameters.</li>
+</ul>
+<pre><code class="language-rust">let log = macro_log!(session_id, time, level, component, description, format);
+</code></pre>
+<ul>
+<li><code>macro_info_log!</code>: Creates an info log with default session ID and format.</li>
+</ul>
+<pre><code class="language-rust">let log = macro_info_log!(time, component, description);
+</code></pre>
+<ul>
+<li><code>macro_warn_log!</code>: Creates a warning log.</li>
+</ul>
+<pre><code class="language-rust">let log = macro_warn_log!(time, component, description);
+</code></pre>
+<ul>
+<li><code>macro_error_log!</code>: Creates an error log with default format.</li>
+</ul>
+<pre><code class="language-rust">let log = macro_error_log!(time, component, description);
+</code></pre>
+<p>These macros abstract away the complexities of creating log entries, allowing you to focus on the essential information you want to log. They provide sensible defaults for session IDs, formats, and other parameters, reducing the amount of code you need to write and maintain.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
+<h3 id="h3-7" tabindex="0" aria-label="7 Heading" itemprop="name" class="7">7. Integration with Existing Logging Infrastructures</h3>
+<p>One of the key benefits of RustLogs (RLG) is its compatibility with various logging infrastructures and tools. The library supports a wide range of output formats, making it easy to integrate with existing logging pipelines and analysis platforms.</p>
+<p>For example, if you are using a centralised logging system like syslog, RustLogs (RLG) can seamlessly write log messages in the syslog format. If you're using log aggregation tools like Logstash or Graylog, RustLogs can output logs in formats compatible with these systems. For example, JSON or GELF.</p>
+<p>This integration capability ensures that you can leverage the power of RustLogs (RLG) without disrupting your existing logging setup. You can continue using your preferred logging infrastructure while benefiting from the ease of use and flexibility provided by RustLogs (RLG).</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
+<h3 id="h3-8" tabindex="0" aria-label="8 Heading" itemprop="name" class="8">8. Error Handling and Robustness</h3>
+<p>Logging operations are not immune to errors, and RustLogs (RLG) provides robust error handling mechanisms to ensure the reliability and integrity of your logs. The library returns a <code>Result</code> type from the <code>log()</code> method, allowing you to handle potential errors gracefully.</p>
+<p>Common errors that can occur during logging include file I/O errors, formatting issues, or network-related errors when sending logs to remote destinations. RustLogs (RLG) captures these errors and provides informative error messages, enabling you to diagnose and handle them appropriately.</p>
+<p>Here's an example of error handling with RustLogs (RLG):</p>
+<pre><code class="language-rust">use rlg::log::Log;
+use rlg::log_format::LogFormat;
+use rlg::log_level::LogLevel;
+
+async fn log_with_error_handling() {
+    let log_entry = Log::new(
+        &quot;session_id&quot;,
+        &quot;timestamp&quot;,
+        &amp;LogLevel::INFO,
+        &quot;component&quot;,
+        &quot;This is a log message&quot;,
+        &amp;LogFormat::JSON,
+    );
+
+    match log_entry.log().await {
+        Ok(_) =&gt; println!(&quot;Log message written successfully&quot;),
+        Err(e) =&gt; eprintln!(&quot;Error writing log message: {}&quot;, e),
+    }
+}
+</code></pre>
+<p>RustLogs (RLG) ensures that logging failures don't go unnoticed. It gives you the information you need to take corrective actions by effectively handling errors.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
+<h3 id="h3-9" tabindex="0" aria-label="9 Heading" itemprop="name" class="9">9. Performance Considerations</h3>
+<p>When it comes to logging, performance is a critical factor to consider. Excessive logging or inefficient logging mechanisms can introduce significant overhead and impact the overall performance of your application. RustLogs (RLG) is designed with performance in mind, offering several optimisations to minimise the impact of logging on your system.</p>
+<p>Firstly, RustLogs (RLG) supports asynchronous logging, as mentioned earlier. RustLogs (RLG) uses asynchronous I/O operations, so logging does not block the main thread. This allows your application to keep processing while logging happens in the background. This non-blocking approach minimises the performance penalty incurred by logging operations.</p>
+<p>Additionally, RustLogs (RLG) employs efficient formatting and output mechanisms. The library uses pre-allocated buffers and avoids unnecessary memory allocations whenever possible. This optimisation reduces the memory footprint and improves the overall efficiency of logging.</p>
+<p>RustLogs (RLG) lets you control the level of detail in your logs. You can choose to log only the most important information or include more details for debugging purposes. By configuring appropriate log levels for different components or modules of your application, you can optimise performance by removing unnecessary logging in production environments.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
+<h2 id="h2-conclusion" tabindex="0" aria-label="Conclusion Heading" itemprop="name" class="conclusion">Conclusion</h2>
+<p>RustLogs (RLG) is a powerful, flexible, and user-friendly logging library that simplifies the process of incorporating logging into Rust applications. Its extensive feature set, including structured logging, asynchronous operations, and compatibility with popular logging infrastructures, makes it a versatile choice for various logging needs.</p>
+<p>The library's intuitive API, powerful macros, and robust error handling mechanisms enable developers to capture valuable runtime information efficiently and reliably. RustLogs' performance optimisations and flexible configuration options further enhance its usability and adaptability to different project requirements.</p>
+<p>With a comprehensive documentation, and seamless integration with the Rust ecosystem, RustLogs stands as a reliable and effective logging solution for Rust developers. By leveraging the capabilities of RustLogs, developers can gain deeper insights into their applications' behaviour, streamline debugging processes, and ensure the long-term maintainability of their codebase.</p>
+<p>As the Rust community continues to grow and evolve, RustLogs aims to become a vital tool in the developer's arsenal, empowering them to build robust, well-logged, and maintainable applications with ease.</p>
+<p><a href="https://rustlogs.com/" title="An Advanced Logging Library for Rust Applications"><strong>Get Started Now →</strong></a></p>
+
+      </div>
+    </main>
+
+    <!-- Top Anchor -->
+    <top id="top-anchor">
+      <p class="mb-0 text-center p-4">
+        <a href="#page-top" class="btn btn-outline-dark btn-floating btn-lg">
+          Back to the top
+        </a>
+      </p>
+    </top>
+    <!-- # End Top Anchor -->
+
+    <!-- Footer-->
+    <footer id="footer" aria-label="footer" class="footer bg-light mt-auto fs-6 py-5 border-top">
+      <p class="mb-0">
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://twitter.com/wwdseb"><img src="https://kura.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter" title="Image for Sebastien Rousseau on Twitter" width="32" height="32" /></a>
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.linkedin.com/in/sebastienrousseau/"><img src="https://kura.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" title="Image for Sebastien Rousseau on LinkedIn" width="32" height="32" /></a>
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://medium.com/@BankingOnQuantum"><img src="https://kura.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" title="Image for Sebastien Rousseau on Medium" width="32" height="32" /></a>
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.youtube.com/@BankingOnQuantum"><img src="https://kura.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" title="Image for Sebastien Rousseau on YouTube" width="32" height="32" /></a>
+      </p>
+      <p class="mb-0">
+        <span class="px-2"><a href="/accessibility/index.html">Accessibility</a></span>
+        <span class="px-2"><a href="/contact/index.html">Contact</a></span>
+        <span class="px-2"><a href="/privacy/index.html">Privacy & Cookie Policy</a></span>
+        <span class="px-2"><a href="/terms/index.html">Terms of Use</a></span>
+      </p>
+      <span class="px-2">© Copyright 2024 - Sebastien Rousseau. All rights reserved.</span>
+    </footer>
+    <!-- # End Footer -->
+    <script
+      async
+      crossorigin="anonymous"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script type="application/ld+json">{"@context":"http://schema.org/","@type":"BlogPosting","headline":"Unleashing the Power of Logging in Rust with RustLogs (RLG)","datePublished":"Fri, 08 Mar 2024 06:06:06 +0100","dateModified":"Fri, 08 Mar 2024 06:06:06 +0100","description":"Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. ","image":{"@type":"ImageObject","height":"2048","width":"2048","url":"https://kura.pro/stock/images/banners/rustlogs.webp"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html","name":"Streamline Your Rust Logging Workflow"},"author":"contact@sebastienrousseau.com (Sebastien Rousseau)","copyrightHolder":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"},"copyrightYear":"© Copyright 2024 - Sebastien Rousseau. All rights reserved.","creator":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"},"inLanguage":"en-GB","name":"Sebastien Rousseau","publisher":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"}}</script>
+    <script type="module" defer>
+      // This is an Immediately Invoked Function Expression (IIFE) which helps
+      // to avoid declaring any globals.
+      (function () {
+        // Create a new script element
+        var script = document.createElement("script");
+
+        // Set the source of the script element to "/main.js".
+        // A timestamp is appended as a query string to ensure the browser
+        // always fetches the latest version of the script, bypassing the
+        // cache.
+        script.src = "/main.js";
+
+        // The script is of type "text/javascript"
+
+        // The script is set to execute asynchronously as soon as it's
+        //available
+
+        // Append the script element to the head of the document
+        document.head.appendChild(script);
+      })(); // The function is immediately invoked
+    </script>
+    <script>
+      // JavaScript code
+      var dropDownElements = document.querySelectorAll('.drop-down');
+      dropDownElements.forEach(function(element) {
+        element.classList.add('animate');
+      });
+
+      window.addEventListener('scroll', function() {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        dropDownElements.forEach(function(element) {
+          if (scrollTop === 0) {
+            element.classList.add('animate');
+          } else {
+            element.classList.remove('animate');
+          }
+        });
+      });
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-169G4ET5HQ');
+    </script>
+  </body>
+</html>

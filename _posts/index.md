@@ -13,7 +13,7 @@ charset: "UTF-8"
 cdn: "https://kura.pro/"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2024 - Sebastien Rousseau. All rights reserved."
-date: "Mar 04, 2024"
+date: "Mar 08, 2024"
 description: "Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking & Financial Services"
 format-detection: "telephone=no"
 hreflang: "en"
@@ -55,11 +55,11 @@ generator: "Shokunin SSG (version 0.0.26)"
 item_description: "Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking & Financial Services"
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
-item_pub_date: "Mon, 04 Mar 2024 06:06:06 +0100"
+item_pub_date: "Fri, 08 Mar 2024 06:06:06 +0100"
 item_title: "Sebastien Rousseau: AI, Banking & Financial Services Expert"
-last_build_date: "Mon, 04 Mar 2024 06:06:06 +0100"
+last_build_date: "Fri, 08 Mar 2024 06:06:06 +0100"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-pub_date: "Mon, 04 Mar 2024 06:06:06 +0100"
+pub_date: "Fri, 08 Mar 2024 06:06:06 +0100"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -93,7 +93,7 @@ author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2024-03-04"
+site_last_updated: "2024-03-08"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Shokunin, Rust"
@@ -102,21 +102,31 @@ site_software: "Shokunin, Rust"
 
 ## Enabling Transformation Through Innovative Technologies
 
-As a passionate technologist, I am excited to share my insights on innovative
-technologies that are shaping the future.
+As a passionate technologist, I am excited to share my insights on innovative technologies that are shaping the future.
 
-In this series of articles, I will explore a wide range of cutting-edge
-technologies, including Artificial Intelligence (AI), Post-Quantum Cryptography
-(PQC), Blockchain Technology and more.
+In this series of articles, I will explore a wide range of cutting-edge technologies, including Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology and more.
 
-I will discuss their potential to impact various industries and aspects of our
-lives and how they can be applied to solve real-world problems.
+I will discuss their potential to impact various industries and aspects of our lives and how they can be applied to solve real-world problems.
 
 Read the latest articles below, and [**see all articles, news and product announcements**][100].
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![Colourful, abstract digital art of a cat](https://kura.pro/stock/images/banners/abstract-digital-art-of-a-cat.webp).class=\"fade-in w-50 m-3 p-3 float-start align-self-center img-thumbnail\"
+![Banner for RustLogs (RLG)](https://kura.pro/stock/images/banners/rustlogs.webp).class=\"fade-in w-50 m-3 p-3 float-start align-self-center img-thumbnail\"
+
+### Unleashing the Power of Logging in Rust with RustLogs (RLG)
+
+*by [Sebastien Rousseau][00] (08 Mar 2024)*
+
+#### Streamline Your Rust Logging Workflow
+
+Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options.
+
+[**Learn more ❯**][15]
+
+![divider][divider].class=\"m-10 w-100\"
+
+![Colourful, abstract digital art of a cat](https://kura.pro/stock/images/banners/abstract-digital-art-of-a-cat.webp).class=\"fade-in w-25 m-3 rounded-circle float-end\"
 
 ### Le Chat by Mistral AI: A New Era in Conversational AI
 
@@ -166,26 +176,14 @@ Delve into the EU's Artificial Intelligence Act, a revolutionary framework setti
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![A white, spherical modern device](https://kura.pro/stock/images/banners/akande-voice-assistant.webp).class=\"fade-in w-25 m-3 rounded-circle float-end\"
-
-### Àkàndé Voice Assistant, A Personal and Executive Assistance
-
-*by [Sebastien Rousseau][00] (12 Feb 2024)*
-
-Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.
-
-[**Learn more ❯**][10]
-
-![divider][divider].class=\"m-10 w-100\"
-
 [**See all articles** ❯][100]
 
 [00]: /about/index.html "About Sebastien Rousseau, Banking & Financial Service Professional"
-[10]: /2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html "Àkàndé Voice Assistant, A Personal and Executive Assistance"
 [11]: /2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html "EU's AI Act: Pioneering Ethical AI Regulation Worldwide"
 [12]: /2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html "Unlocking Gemini 1.5: Google's AI Revolution Explained"
 [13]: /2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html "Google Gemma AI: Transforming Open-Source AI Development"
 [14]: /2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html "Le Chat by Mistral AI: A New Era in Conversational AI"
+[15]: /2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html "Unleashing the Power of Logging in Rust with RustLogs (RLG)"
 
 [100]: /articles/index.html "See all articles"
 
