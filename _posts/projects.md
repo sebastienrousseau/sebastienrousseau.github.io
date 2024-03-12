@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2024 - Sebastien Rousseau. All rights reserved."
-date: "Mar 08, 2024"
+date: "Mar 12, 2024"
 description: "Explore my open-source projects and discover how I leverage open-source software to deliver groundbreaking solutions."
 format-detection: "telephone=no"
 hreflang: "en"
@@ -54,11 +54,11 @@ generator: "Shokunin SSG (version 0.0.26)"
 item_description: "Explore my open-source projects and discover how I leverage open-source software to deliver groundbreaking solutions."
 item_guid: "https://sebastienrousseau.com/projects/rss.xml"
 item_link: "https://sebastienrousseau.com/projects/rss.xml"
-item_pub_date: "Fri, 08 Mar 2024 08:08:08 +0100"
+item_pub_date: "Tue, 12 Mar 2024 21:21:21 +0000"
 item_title: "Innovative and Creative Solutions Built with Open Source"
-last_build_date: "Fri, 08 Mar 2024 08:08:08 +0100"
+last_build_date: "Tue, 12 Mar 2024 21:21:21 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-pub_date: "Fri, 08 Mar 2024 08:08:08 +0100"
+pub_date: "Tue, 12 Mar 2024 21:21:21 +0000"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -92,7 +92,7 @@ author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2024-03-08"
+site_last_updated: "2024-03-12"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Shokunin, Rust"
@@ -365,6 +365,27 @@ services.
 
 ![divider][divider].class=\"m-10 w-100\"
 
+### Banking On AI
+
+![A banner for the Banking On AI website](https://kura.pro/bankingonai/images/github/github-bankingonai.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
+
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Banking On AI**,  Discover how AI is transforming the banking sector with improved customer service, fraud detection, and streamlined operations for a digital age.
+
+[**Learn more** ⧉][20]
+
+![divider][divider].class=\"m-10 w-100\"
+
+### Banking On Quantum
+
+![A banner for the Banking On Quantum website](https://kura.pro/bankingonquantum/images/github/github-bankingonquantum.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
+
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Banking On Quantum**, Explore how quantum computing is set to revolutionise the banking and finance industry, from risk analysis to quantum cryptography and beyond.
+
+[**Learn more** ⧉][21]
+
+
+![divider][divider].class=\"m-10 w-100\"
+
 [00]: https://akande.co/ "Àkàndé: Advanced AI Voice Assistant for All"
 [01]: https://audioanalyser.co/ "Unlock Actionable Insights from Audio Data to Enhance CX/EX"
 [02]: https://kyberlib.com/ "KyberLib, a Robust Rust Library for CRYSTALS-Kyber Post-Quantum Cryptography"
@@ -375,7 +396,7 @@ services.
 [07]: https://hshlib.one/ "Hash (HSH), a Quantum-Resistant Cryptographic Hash Library"
 [08]: http://docs.libmake.com/ "A code generator to reduce repetitive tasks and build high-quality Rust libraries"
 [09]: https://dttlib.one/ "DateTime (DTT) Rust Library: Parse & Format Dates with Ease"
-[10]: http://doc.vrdlib.one/ "A Rust library for generating high-quality random numbers based on the Mersenne Twister algorithm"
+[10]: https://vrdlib.com/ "Random (VRD) Rust library: A Rust library for generating high-quality random numbers based on the Mersenne Twister algorithm"
 [11]: https://doc.cmnlib.one/cmn/ "Common (CMN) Rust Library: A modern, fast, and user-friendly library that makes it easy to access a wide range of mathematical and cryptographic constants"
 [12]: http://minifunctions.com/ "Highly performant utility and wrapper functions library for Rust"
 [13]: https://github.com/sebastienrousseau/crypto-service "The Crypto Service Suite is a set of products that delivers common crypto functions"
@@ -385,5 +406,7 @@ services.
 [17]: https://kaishi.one/ "Kaishi, a Starter Template for Shokunin"
 [18]: https://l90s.com/ "Unlock Financial Growth with Fractional CFOs"
 [19]: https://rustlogs.com/ "RustLogs (RLG): Advanced Logging Library for Rust"
+[20]: https://bankingonai.co/ "The Future of Banking and Finance | Banking On AI"
+[21]: https://bankingonquantum.com/ "The Future of Banking and Finance | Banking On Quantum"
 
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"

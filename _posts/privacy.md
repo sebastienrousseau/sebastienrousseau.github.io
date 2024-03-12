@@ -110,7 +110,7 @@ We use two third-party services to monitor and analyze web traffic: Google Analy
 
 ### Google Analytics
 
-Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our Website. This data is shared with other Google services. For more information on the privacy practices of Google, please visit the Google Privacy & Terms web page: [Google Privacy & Terms ⧉](https://policies.google.com/privacy)
+Google Analytics is a web analytics service offered by Google that tracks and Papers website traffic. Google uses the data collected to track and monitor the use of our Website. This data is shared with other Google services. For more information on the privacy practices of Google, please visit the Google Privacy & Terms web page: [Google Privacy & Terms ⧉](https://policies.google.com/privacy)
 
 ### Microsoft Clarity
 

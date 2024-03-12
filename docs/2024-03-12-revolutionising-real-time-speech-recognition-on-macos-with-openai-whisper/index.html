@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta itemprop="datePublished" content="Tue, 12 Mar 2024 21:21:21 +0000" id="date">
+    <meta itemprop="dateModified" content="Tue, 12 Mar 2024 21:21:21 +0000" id="last-modified">
+    <title>Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</title>
+
+    <!-- # Start Primary Meta Tags -->
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.">
+<meta name="generator" content="Shokunin SSG (version 0.0.26)">
+<meta name="keywords" content="OpenAI Whisper, Metal Performance Shaders, macOS speech recognition, real-time transcription, voice activity detection, GPU acceleration, Python integration, speech-to-text macOS, energy-efficient speech detection, Apple silicon">
+<meta name="language" content="en-GB">
+<meta name="permalink" content="https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html">
+<meta name="rating" content="general">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="index, follow">
+<meta name="title" content="Fast Real-Time Speech Recognition on macOS: OpenAI Whisper">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- # End Primary Meta Tags -->
+
+    <!-- # Start Open Graph / Facebook Meta Tags -->
+    <meta name="og:description" content="Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.">
+<meta name="og:image" content="https://kura.pro/stock/images/banners/research-paper.webp">
+<meta name="og:image:alt" content="abstract digital art for Real-time automatic speech recognition (ASR)">
+<meta name="og:image:height" content="100vh">
+<meta name="og:image:width" content="100vw">
+<meta name="og:locale" content="en_GB">
+<meta name="og:title" content="Fast Real-Time Speech Recognition on macOS: OpenAI Whisper">
+<meta name="og:type" content="website">
+<meta name="og:url" content="https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html">
+    <!-- # End Open Graph / Facebook Meta Tags -->
+
+    <!-- # Start Accessibility Meta Tags -->
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <!-- # End Accessibility Meta Tags -->
+
+    <!-- # Start Apple Meta Tags -->
+    <meta name="apple_mobile_web_app_orientations" content="portrait">
+<meta name="apple_touch_icon_sizes" content="192x192">
+    <!-- # End Apple Meta Tags -->
+
+<!-- # Start Content Security Policy Meta Tags -->
+<meta http-equiv="Content-Security-Policy"
+content="default-src 'self';
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com https://cdn.jsdelivr.net unpkg.com www.googletagmanager.com x.clarity.ms https://www.googletagmanager.com;
+  connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com;
+  img-src 'self' data: https: kura.pro www.googletagmanager.com;
+  style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
+  font-src 'self' https://fonts.gstatic.com;
+  media-src 'self' https://kura.pro;" />
+<!-- # End Content Security Policy Meta Tags -->
+
+
+
+    <!-- # Start Microsoft Meta Tags -->
+    
+    <!-- # End Microsoft Meta Tags -->
+
+    <!-- # Start Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@wwdseb">
+<meta name="twitter:description" content="Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.">
+<meta name="twitter:image" content="https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png">
+<meta name="twitter:image:alt" content="Logo of Sebastien Rousseau">
+<meta name="twitter:site" content="@wwdseb">
+<meta name="twitter:title" content="Fast Real-Time Speech Recognition on macOS: OpenAI Whisper">
+<meta name="twitter:url" content="https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html">
+    <!-- # End Twitter Meta Tags -->
+
+    <!-- # Start Links -->
+    <link rel="alternate" href="https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html" hreflang="en" />
+    <link rel="preload" as="image" href="https://kura.pro/stock/images/banners/research-paper.webp">
+    <link rel="canonical" href="https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://kura.pro/sebastienrousseau/images/favicon.ico"
+      sizes="16x16 32x32"
+    />
+    <link
+      as="style"
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      onload="this.onload=null;this.rel='stylesheet'"
+      rel="preload"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://kura.pro/sebastienrousseau/images/icons/192x192.png"
+      sizes="192x192"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    <!-- # End Links -->
+
+    <!-- # Start Styles -->
+    <style>
+      @keyframes dropDown{from{transform:translateY(-.618rem)}to{transform:translateY(0)}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.active,h1,h2,h3,h4,h5,h6,strong{font-weight:400}.article-info{color:var(--theme-color);font-weight:400}.blur-light{backdrop-filter:saturate(180%) blur(20px);background-color:rgba(255,255,255,.618)}.card{overflow:hidden}.drop-down,.fade-in{animation-fill-mode:forwards}.drop-down{animation:dropDown 1.618s ease}.fade-in{animation:fadeIn 3s ease}h1,h2,h3,h4,h5,h6{color:var(--theme-color)}:root{--theme-color:rgba(0,0,0,.618033988749894)}*{font-weight:300}a{color:#2897ff;text-decoration:none}a:hover{text-decoration:underline}pre{background:#f9f9f9;border:1px solid #ddd;border-left:3px solid var(--theme-color);color:#666;display:block;font-family:monospace;font-size:15px;line-height:1.618;margin-bottom:1.618em;max-width:100%;overflow:auto;padding:1em 1.618em;page-break-inside:avoid;word-wrap:break-word}.zoom-in{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-in:hover{transform:scale(1.0618)}
+      :root{--theme-color:rgb(41, 30, 112)}
+      a{color:var(--theme-color);text-decoration:none}a:hover{text-decoration:underline}
+      strong{color:var(--theme-color);font-weight:700}
+      .content .container{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    box-shadow: 2px 15px 20px #1f1f1f10,-2px -8px 20px #1f1f1f1a;
+}
+
+
+.container .rollers{
+    flex: 0 0 230px;
+}
+
+.container .start-roller{
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(to right, white 30%, #ffffff00);
+}
+
+.container .start-roller,
+.container .end-roller{
+    height: 100%;
+    width: 40px;
+    position: absolute;
+    z-index: 1;
+}
+
+.container .end-roller{
+    right: 0;
+    top: 0;
+    background-image: linear-gradient(to left, white 30%, rgba(255, 255, 255, 0));
+}
+
+.container .rollers .wrapper{
+    position: relative;
+    width: 1400px;
+    height: 100px;
+    margin: 0 0 20px 0;
+    flex: 0 0 auto;
+}
+
+.container .rollers .wrapper .items-container{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.container .rollers .wrapper .items-container.roll-LL{
+    animation-name: roll;
+}
+.container .rollers .wrapper .items-container.roll-RL{
+    animation-name: roll-reverse;
+    left: 100%;
+}
+.container .rollers .wrapper .items-container.reverse-roll-LL{
+    animation-name: roll-clockwise;
+    left: -100%;
+}
+.container .rollers .wrapper .items-container.reverse-roll-RL{
+    animation-name: roll-reverse-clockwise;
+    left: 100%;
+}
+
+@keyframes roll {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: -100%;
+    }
+}
+@keyframes roll-reverse {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+@keyframes roll-clockwise {
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+@keyframes roll-reverse-clockwise {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+
+.container .rollers .wrapper .items-container .item{
+    flex: 1 1 200px;
+    min-width: 0;
+    margin: 20px;
+}
+
+.container .rollers .wrapper .items-container .item .company{
+    filter: grayscale(100%);
+    opacity: 0.2;
+    width: 100%;
+    object-fit: contain;
+}
+
+.container .rollers .wrapper .items-container .item .company:hover{
+    filter: grayscale(0%);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.container img{
+    vertical-align: middle;
+}
+
+@media (max-width: 575.5px) {
+    .content{
+        padding: 20px;
+    }
+    .content .container{
+        padding: 20px;
+    }
+    .h3{
+        font-size: calc(1.1rem + .6vw);
+    }
+    .fs-5 {
+        font-size: 0.9rem!important;
+    }
+    .container .rollers .wrapper .items-container .item .company{
+        opacity: 0.4;
+    }
+}
+    </style>
+    <!-- # End Styles -->
+  </head>
+  <body
+    id="page-top"
+    itemscope
+    itemtype="http://schema.org/WebPage"
+    class="fw-light text-center bg-white text-start fs-6"
+  >
+    <!-- # Start Responsive navbar -->
+    <nav
+      class="navbar navbar-expand-lg bd-navbar sticky-top shadow-small border-bottom blur-light"
+      id="mainNav"
+      itemscope
+      itemtype="http://schema.org/SiteNavigationElement"
+    >
+      <div class="container-xxl p-3">
+        <a class="navbar-brand p-0 me-0 me-lg-2" href="/index.html" aria-label="logo">
+          <img
+            class="d-inline-block align-top"
+            width="44"
+            height="44"
+            src="https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
+            alt="Logo for Sebastien Rousseau"
+            title="Image of the Logo for Sebastien Rousseau"
+            loading="lazy"
+          />
+        </a>
+        <span class="fs-4" itemprop="name"><a href="/" itemprop="url" title="Sebastien Rousseau - Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy." class="text-decoration-none text-dark">Sebastien Rousseau</a></span>
+        <button
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler"
+          data-bs-target="#navbarSupportedContent"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/about/index.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="/articles/index.html">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="/papers/index.html">Papers</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/projects/index.html">Projects</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Links</a
+              >
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="/playlists/index.html">
+                    Spotify Playlists
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/made-with-shokunin/index.html">
+                    Made with Shokunin
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/tags/index.html">
+                    Tags
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                aria-pressed="false"
+                class="btn btn-dark rounded-pill px-3"
+                href="/contact/index.html"
+                >Get in touch
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- # End Responsive navbar -->
+
+    <!-- Header-->
+<header class="bg-dark text-white text-center text-shadow position-relative mb-5 mb-md-0">
+  <img class="fade-in img-fluid" src="https://kura.pro/stock/images/banners/research-paper.webp" alt="Banner for Real-time automatic speech recognition (ASR)" title="Image of Banner for Real-time automatic speech recognition (ASR)" />
+  <section class="p-3 p-md-5 container position-absolute top-50 start-50 translate-middle rounded" style="background: rgba(41, 30, 112, 0.618); z-index: 1;">
+    <div class="row justify-content-center">
+      <div class="col-10 col-md-8 col-lg-6">
+        <p class="fs-1">Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</p>
+        <p class="fs-5">Unleash the Power of AI-Driven, GPU-Accelerated Speech-to-Text on Your Mac</p>
+      </div>
+    </div>
+  </section>
+</header>
+<!-- # End Header -->
+
+
+
+    <!-- Main content-->
+    <main id="main" class="bd-masthead container fs-5 p-5" aria-label="main">
+      <div class="text-start justify-content-between">
+        <h1 id="h1-fast" tabindex="0" aria-label="Fast Heading" itemprop="headline" class="fast">Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</h1><p>Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.</p><p></p><p><img src="https://kura.pro/common/images/elements/publication.webp" alt="Publication Cover" <p class="float-end w-25 me-10" title="publication cover"></p>
+<p>This article presents an overview of a <a href="/papers/index.html" title="Research Publications &amp; White Papers from Sebastien Rousseau"><strong>research paper</strong></a> that explores the integration of OpenAI Whisper with Metal Performance Shaders (MPS) on macOS, offering a new approach to real-time speech recognition. OpenAI Whisper is a state-of-the-art automatic speech recognition (ASR) model that has been trained on a large dataset of diverse audio and is capable of transcribing speech in multiple languages. The combination of Whisper's advanced neural network architecture and MPS's GPU acceleration enables improved speed and accuracy for on-device speech processing, enhancing user privacy and convenience while opening new possibilities for application developers to incorporate real-time speech-to-text capabilities directly into macOS applications.</p>
+<h2 id="h2-introduction" tabindex="0" aria-label="Introduction Heading" itemprop="name" class="introduction">Introduction</h2>
+<p>Speech recognition technology plays a crucial role in facilitating a wide range of applications, from enhancing accessibility to streamlining user interactions. The pursuit of high-fidelity, low-latency ASR has primarily been the domain of powerful cloud servers, presenting challenges in terms of accessibility, privacy, and latency. However, recent research has introduced a transformative solution: the integration of OpenAI Whisper with the GPU acceleration offered by Metal Performance Shaders (MPS) on macOS. This synergy represents a significant advancement in on-device speech recognition capabilities and aligns with the growing emphasis on user privacy and data security.</p>
+<p><a href="https://developer.apple.com/documentation/metalperformanceshaders" title="Metal Performance Shaders - Apple Developer Documentation"><strong>Metal Performance Shaders (MPS)</strong></a> is a technology developed by Apple that enables high-performance GPU computation on macOS devices. It allows developers to harness the power of the GPU for parallel processing, leading to significant speed improvements in various computational tasks, including machine learning and computer vision.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" .alt=&quot;Divider&quot; <p class="m-10 w-100"></p>
+<h3 id="h3-1" tabindex="0" aria-label="1 Heading" itemprop="name" class="1">1. The Evolution of Speech Recognition on macOS</h3>
+<p>The evolution of speech recognition technology on macOS devices has been driven by advancements in neural network models and hardware acceleration technologies. Traditional speech recognition systems often faced challenges in accuracy, latency, and computational efficiency, particularly when dealing with diverse accents, background noises, and varying recording conditions. The introduction of OpenAI Whisper has set a new benchmark for robust and precise speech recognition across a wide array of languages and dialects, offering a suitable solution for real-time applications.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" .alt=&quot;Divider&quot; <p class="m-10 w-100"></p>
+<h3 id="h3-2" tabindex="0" aria-label="2 Heading" itemprop="name" class="2">2. Harnessing OpenAI Whisper and Metal Performance Shaders</h3>
+<p>The research paper unveils an innovative approach by combining the advanced capabilities of OpenAI Whisper with the high-performance computation of MPS on macOS. This integration is achieved by optimizing the Whisper model to run on the GPU using the MPS framework, which enables efficient parallel processing. The researchers have implemented techniques such as model quantization and pruning to reduce the model's size and computational requirements while maintaining high accuracy. By leveraging the GPU's parallel processing capabilities, the system achieves notable speed improvements, with transcription speeds that are 8-12 times faster than real-time for typical utterances. This enhances the user experience by reducing wait times and enables a broader range of real-time applications, from live captioning to interactive voice-controlled systems.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" .alt=&quot;Divider&quot; <p class="m-10 w-100"></p>
+<h3 id="h3-3" tabindex="0" aria-label="3 Heading" itemprop="name" class="3">3. Implications for Users and Developers</h3>
+<p>The integration of Whisper and MPS on macOS has significant implications for both end-users and application developers. For users, it offers an improved experience in real-time speech recognition, providing near-instantaneous transcription with high accuracy while maintaining the privacy and security of on-device processing. This technology can be applied in various real-world scenarios, such as voice-controlled applications for home automation, real-time transcription services for meetings and lectures, and accessibility features for users with hearing impairments. Developers gain access to a toolkit for integrating speech-to-text functionality into their applications, with the added benefits of energy efficiency and seamless Python integration.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" .alt=&quot;Divider&quot; <p class="m-10 w-100"></p>
+<h3 id="h3-4" tabindex="0" aria-label="4 Heading" itemprop="name" class="4">4. Driving Adoption and Innovation</h3>
+<p>The modular architecture and Python implementation of this system facilitate integration into existing applications and lower the barrier to entry for developers looking to incorporate speech recognition capabilities. However, developers may face challenges in terms of model customization and adaptation to specific use cases, as well as optimizing performance for different hardware configurations. The research paper provides guidance on addressing these challenges, such as fine-tuning the model on domain-specific data and implementing dynamic resource allocation strategies. Additionally, the energy-efficient voice activity detection system, which achieves 94% precision and 96% recall, ensures that applications remain responsive and accurate without draining device resources. This combination of features has the potential to drive adoption among developers and catalyse further innovation in the field of real-time speech recognition.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" .alt=&quot;Divider&quot; <p class="m-10 w-100"></p>
+<h2 id="h2-conclusion" tabindex="0" aria-label="Conclusion Heading" itemprop="name" class="conclusion">Conclusion</h2>
+<p>The integration of OpenAI Whisper and Metal Performance Shaders on macOS represents a significant advancement in real-time speech recognition technology. By offering improved speed, accuracy, and efficiency, this innovation enhances the user experience and opens new possibilities for application development. This research contributes to the ongoing advancement of AI technologies and has the potential to inspire further developments in on-device speech processing across various platforms. As this technology continues to evolve, it has the potential to revolutionise how users interact with their devices, making digital communication more seamless and accessible.</p>
+<h3 id="h3-access" tabindex="0" aria-label="Access Heading" itemprop="name" class="access">Access the Research Paper</h3>
+<p><p class="card bg-light p-3 me-3 w-100">
+To learn more about the integration of OpenAI Whisper and Metal Performance Shaders on macOS for real-time speech recognition, readers are encouraged to access the full research paper. The paper provides in-depth technical details, experimental results, and further insights into the potential applications and future directions of this technology. By accessing the complete research paper, readers will gain a comprehensive understanding of the methodology, implementation, and implications of this innovative approach to real-time speech recognition on macOS devices. <a href="/papers/index.html" title="Research Publications &amp; White Papers from Sebastien Rousseau"><strong>Read the Full Paper Today! ❯</strong></a></p>
+
+      </div>
+    </main>
+
+    <!-- Top Anchor -->
+    <top id="top-anchor">
+      <p class="mb-0 text-center p-4">
+        <a href="#page-top" class="btn btn-outline-dark btn-floating btn-lg">
+          Back to the top
+        </a>
+      </p>
+    </top>
+    <!-- # End Top Anchor -->
+
+    <!-- Footer-->
+    <footer id="footer" aria-label="footer" class="footer bg-light mt-auto fs-6 py-5 border-top">
+      <p class="mb-0">
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://twitter.com/wwdseb"><img src="https://kura.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter" title="Image for Sebastien Rousseau on Twitter" width="32" height="32" /></a>
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.linkedin.com/in/sebastienrousseau/"><img src="https://kura.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" title="Image for Sebastien Rousseau on LinkedIn" width="32" height="32" /></a>
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://medium.com/@BankingOnQuantum"><img src="https://kura.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" title="Image for Sebastien Rousseau on Medium" width="32" height="32" /></a>
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.youtube.com/@BankingOnQuantum"><img src="https://kura.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" title="Image for Sebastien Rousseau on YouTube" width="32" height="32" /></a>
+      </p>
+      <p class="mb-0">
+        <span class="px-2"><a href="/accessibility/index.html">Accessibility</a></span>
+        <span class="px-2"><a href="/contact/index.html">Contact</a></span>
+        <span class="px-2"><a href="/privacy/index.html">Privacy & Cookie Policy</a></span>
+        <span class="px-2"><a href="/terms/index.html">Terms of Use</a></span>
+      </p>
+      <span class="px-2">© Copyright 2024 - Sebastien Rousseau. All rights reserved.</span>
+    </footer>
+    <!-- # End Footer -->
+    <script
+      async
+      crossorigin="anonymous"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script type="application/ld+json">{"@context":"http://schema.org/","@type":"BlogPosting","headline":"Fast Real-Time Speech Recognition on macOS: OpenAI Whisper","datePublished":"Tue, 12 Mar 2024 21:21:21 +0000","dateModified":"Tue, 12 Mar 2024 21:21:21 +0000","description":"Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.","image":{"@type":"ImageObject","height":"2048","width":"2048","url":"https://kura.pro/stock/images/banners/research-paper.webp"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html","name":"Unleash the Power of AI-Driven, GPU-Accelerated Speech-to-Text on Your Mac"},"author":"contact@sebastienrousseau.com (Sebastien Rousseau)","copyrightHolder":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"},"copyrightYear":"© Copyright 2024 - Sebastien Rousseau. All rights reserved.","creator":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"},"inLanguage":"en-GB","name":"Sebastien Rousseau","publisher":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"}}</script>
+    <script type="module" defer>
+      // This is an Immediately Invoked Function Expression (IIFE) which helps
+      // to avoid declaring any globals.
+      (function () {
+        // Create a new script element
+        var script = document.createElement("script");
+
+        // Set the source of the script element to "/main.js".
+        // A timestamp is appended as a query string to ensure the browser
+        // always fetches the latest version of the script, bypassing the
+        // cache.
+        script.src = "/main.js";
+
+        // The script is of type "text/javascript"
+
+        // The script is set to execute asynchronously as soon as it's
+        //available
+
+        // Append the script element to the head of the document
+        document.head.appendChild(script);
+      })(); // The function is immediately invoked
+    </script>
+    <script>
+      // JavaScript code
+      var dropDownElements = document.querySelectorAll('.drop-down');
+      dropDownElements.forEach(function(element) {
+        element.classList.add('animate');
+      });
+
+      window.addEventListener('scroll', function() {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        dropDownElements.forEach(function(element) {
+          if (scrollTop === 0) {
+            element.classList.add('animate');
+          } else {
+            element.classList.remove('animate');
+          }
+        });
+      });
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-169G4ET5HQ');
+    </script>
+  </body>
+</html>
