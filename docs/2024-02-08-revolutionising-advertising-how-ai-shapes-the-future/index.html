@@ -243,6 +243,38 @@ content="default-src 'self';
         opacity: 0.4;
     }
 }
+
+blockquote {
+  background: rgba(0, 99, 99, 0.0618);
+  border-left: 10px solid var(--theme-color);
+  margin: 1.618em 10px;
+  padding: 0.618em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: var(--theme-color);
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.1618em;
+  vertical-align: -0.4em;
+}
+blockquote:after {
+  color: var(--theme-color);
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.1618em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+  font-size: 1.2em;
+  font-style: italic;
+  line-height: 1.5em;
+  margin: 0 0 0.5em;
+  color: var(--theme-color) !important;
+}
     </style>
     <!-- # End Styles -->
   </head>

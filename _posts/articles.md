@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2024 - Sebastien Rousseau. All rights reserved."
-date: "Mar 12, 2024"
+date: "Mar 18, 2024"
 description: "Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry"
 format-detection: "telephone=no"
 hreflang: "en"
@@ -54,11 +54,11 @@ generator: "Shokunin SSG (version 0.0.26)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
-item_pub_date: "Tue, 12 Mar 2024 21:21:21 +0000"
+item_pub_date: "Mon, 18 Mar 2024 06:06:06 +0000"
 item_title: "Discover How Technology Is Changing Banking and Finance"
-last_build_date: "Tue, 12 Mar 2024 21:21:21 +0000"
+last_build_date: "Mon, 18 Mar 2024 06:06:06 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-pub_date: "Tue, 12 Mar 2024 21:21:21 +0000"
+pub_date: "Mon, 18 Mar 2024 06:06:06 +0000"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -92,7 +92,7 @@ author_website: "https://sebastienrousseau.com/articles/index.html"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2024-03-12"
+site_last_updated: "2024-03-18"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Shokunin, Rust"
@@ -113,6 +113,16 @@ You can find below a selection of articles that I have written over the years
 on these topics.
 
 ## Our Stories
+
+![Banner for the Apple MM1](https://kura.pro/stock/images/banners/mm1-visual.webp).class=\"fade-in w-25 p-3 float-start\"
+
+### Advancing AI with Multimodal LLMs: Insights from MM1
+
+Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials.
+
+[**Read full story ❯**][32]
+
+![divider][divider].class=\"m-10 w-100\"
 
 ![Banner for Real-time automatic speech recognition (ASR)](https://kura.pro/stock/images/banners/research-paper.webp).class=\"fade-in w-25 p-3 float-start\"
 
@@ -508,5 +518,6 @@ Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential 
 [29]: /2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html "Le Chat by Mistral AI: A New Era in Conversational AI"
 [30]: /2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html "Unleashing the Power of Logging in Rust with RustLogs (RLG)"
 [31]: /2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html "Revolutionising Real-Time Speech Recognition on macOS with OpenAI Whisper and Metal Performance Shaders"
+[32]: /2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html "Advancing AI with Multimodal LLMs: Insights from MM1"
 
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
