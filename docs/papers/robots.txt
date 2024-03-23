@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://sebastienrousseau.com/papers/index.html/sitemap.xml
+Sitemap: https://sebastienrousseau.com/papers/sitemap.xml
