@@ -33,7 +33,7 @@ logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
 menu: "active"
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/articles/index.html"
+permalink: "https://sebastienrousseau.com/articles"
 rating: "general"
 referrer: "no-referrer"
 revisit-after: "7 days"
@@ -41,9 +41,9 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
 tags: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML"
-theme-color: "0,102,204"
+theme-color: "0, 83, 191"
 title: "Discover How Technology Is Changing Banking and Finance"
-url: "https://sebastienrousseau.com/articles/index.html"
+url: "https://sebastienrousseau.com/articles"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
 # RSS - The RSS feed front matter (YAML).
@@ -54,11 +54,11 @@ generator: "Shokunin SSG (version 0.0.26)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
-item_pub_date: "Mon, 18 Mar 2024 06:06:06 +0000"
+item_pub_date: "Mon, 25 Mar 2024 06:06:06 +0000"
 item_title: "Discover How Technology Is Changing Banking and Finance"
-last_build_date: "Mon, 18 Mar 2024 06:06:06 +0000"
+last_build_date: "Mon, 25 Mar 2024 06:06:06 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-pub_date: "Mon, 18 Mar 2024 06:06:06 +0000"
+pub_date: "Mon, 25 Mar 2024 06:06:06 +0000"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -74,7 +74,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(255, 39, 34)"
+msapplication-navbutton-color: "0, 83, 191"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
@@ -92,35 +92,28 @@ author_website: "https://sebastienrousseau.com/articles/index.html"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2024-03-18"
+site_last_updated: "2024-03-25"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Shokunin, Rust"
 
 ---
 
-## Latest News: Technology and Digital Trends
+## All News Stories and Articles
 
-The world is undergoing a rapid transformation, driven by cutting-edge
-technologies such as Artificial Intelligence (AI), Post-Quantum Cryptography
-(PQC), Blockchain Technology, Rust, and Python.
+![Banner for the Fully Homomorphic Encryption](https://kura.pro/stock/images/banners/fully-homomorphic-encryption.webp).class=\"fade-in w-25 p-3 float-start\"
 
-These technologies are having a profound impact on the way we operate and
-deliver services to our customers. They are also changing the way we work and
-interact with each other.
+### Fully Homomorphic Encryption (FHE) in a Banking Quantum Era
 
-You can find below a selection of articles that I have written over the years
-on these topics.
+Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats. [**Read full story ❯**][33]
 
-## Our Stories
+![divider][divider].class=\"m-10 w-100\"
 
 ![Banner for the Apple MM1](https://kura.pro/stock/images/banners/mm1-visual.webp).class=\"fade-in w-25 p-3 float-start\"
 
 ### Advancing AI with Multimodal LLMs: Insights from MM1
 
-Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials.
-
-[**Read full story ❯**][32]
+Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials. [**Read full story ❯**][32]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -128,9 +121,7 @@ Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn abo
 
 ### Accelerating Real-Time Speech Recognition on macOS with OpenAI Whisper
 
-Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.
-
-[**Read full story ❯**][31]
+Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy. [**Read full story ❯**][31]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -138,9 +129,7 @@ Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-t
 
 ### Unleashing the Power of Logging in Rust with RustLogs (RLG)
 
-Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options.
-
-[**Read full story ❯**][30]
+Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. [**Read full story ❯**][30]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -148,9 +137,7 @@ Discover RustLogs (RLG), the flexible logging library for Rust with structured l
 
 ### Le Chat by Mistral AI: A New Era in Conversational AI
 
-Meet Mistral AI's new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real-time.
-
-[**Read full story ❯**][29]
+Meet Mistral AI's new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real-time. [**Read full story ❯**][29]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -158,9 +145,7 @@ Meet Mistral AI's new multilingual Assistant. An advanced AI that can understand
 
 ### Google Gemma AI: Transforming Open-Source AI Development
 
-Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use.
-
-[**Read full story ❯**][28]
+Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use. [**Read full story ❯**][28]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -168,9 +153,7 @@ Explore Google's Gemma AI Model: An open-source project offering ethical AI solu
 
 ### Unlocking Gemini 1.5: Google's AI Revolution Explained
 
-Explore Gemini 1.5, Google's AI breakthrough, enhancing efficiency, quality, and context understanding in the AI landscape.
-
-[**Read full story ❯**][27]
+Explore Gemini 1.5, Google's AI breakthrough, enhancing efficiency, quality, and context understanding in the AI landscape. [**Read full story ❯**][27]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -180,9 +163,7 @@ Explore Gemini 1.5, Google's AI breakthrough, enhancing efficiency, quality, and
 
 *by [Sebastien Rousseau][00] (13 Feb 2024)*
 
-Delve into the EU's Artificial Intelligence Act, a revolutionary framework setting global standards for ethical AI development and usage.
-
-[**Read full story ❯**][26]
+Delve into the EU's Artificial Intelligence Act, a revolutionary framework setting global standards for ethical AI development and usage. [**Read full story ❯**][26]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -192,9 +173,7 @@ Delve into the EU's Artificial Intelligence Act, a revolutionary framework setti
 
 *by [Sebastien Rousseau][00] (12 Feb 2024)*
 
-Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.
-
-[**Read full story ❯**][25]
+Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance. [**Read full story ❯**][25]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -204,9 +183,7 @@ Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PD
 
 *by [Sebastien Rousseau][00] (08 Feb 2024)*
 
-Explore how AI transforms advertising with insights on Amazon's Rufus and Meta's latest developments. Discover the impact on consumer engagement.
-
-[**Read full story ❯**][24]
+Explore how AI transforms advertising with insights on Amazon's Rufus and Meta's latest developments. Discover the impact on consumer engagement. [**Read full story ❯**][24]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -216,9 +193,7 @@ Explore how AI transforms advertising with insights on Amazon's Rufus and Meta's
 
 *by [Sebastien Rousseau][00] (29 Jan 2024)*
 
-Explore how Audio Analyser, transforms speech-to-text conversion, text analysis, and translations for actionable insights.
-
-[**Read full story ❯**][23]
+Explore how Audio Analyser, transforms speech-to-text conversion, text analysis, and translations for actionable insights. [**Read full story ❯**][23]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -228,9 +203,7 @@ Explore how Audio Analyser, transforms speech-to-text conversion, text analysis,
 
 *by [Sebastien Rousseau][00] (23 Jan 2024)*
 
-Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors.
-
-[**Read full story ❯**][22]
+Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors. [**Read full story ❯**][22]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -240,9 +213,7 @@ Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative tr
 
 *by [Sebastien Rousseau][00] (15 Jan 2024)*
 
-Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.
-
-[**Read full story ❯**][21]
+Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio. [**Read full story ❯**][21]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -252,9 +223,7 @@ Join me on my personal journey from Rust, AI, and Quantum Computing to redefinin
 
 *by [Sebastien Rousseau][00] (08 Jan 2024)*
 
-Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed.
-
-[**Read full story ❯**][20]
+Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed. [**Read full story ❯**][20]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -264,9 +233,7 @@ Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio 
 
 *by [Sebastien Rousseau][00] (01 Jan 2024)*
 
-Explore the transformative AI trends of 2024, from generative AI to AI in retail, and how they'll shape our future.
-
-[**Read full story ❯**][19]
+Explore the transformative AI trends of 2024, from generative AI to AI in retail, and how they'll shape our future. [**Read full story ❯**][19]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -276,9 +243,7 @@ Explore the transformative AI trends of 2024, from generative AI to AI in retail
 
 *by [Sebastien Rousseau][00] (25 Dec 2023)*
 
-Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications.
-
-[**Read full story ❯**][18]
+Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications. [**Read full story ❯**][18]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -288,9 +253,7 @@ Explore the transformative role of AI in quantum algorithms for finance, with a 
 
 *by [Sebastien Rousseau][00] (18 Dec 2023)*
 
-Exploring 2023's Technological Landscape: AI & Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations & Governance.
-
-[**Read full story ❯**][17]
+Exploring 2023's Technological Landscape: AI & Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations & Governance. [**Read full story ❯**][17]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -300,9 +263,7 @@ Exploring 2023's Technological Landscape: AI & Quantum Computing Revolutionising
 
 *by [Sebastien Rousseau][00] (11 Dec 2023)*
 
-As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.
-
-[**Read full story ❯**][16]
+As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security. [**Read full story ❯**][16]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -312,9 +273,7 @@ As quantum computers pose a threat to traditional encryption methods, Quantum Ke
 
 *by [Sebastien Rousseau][00] (04 Dec 2023)*
 
-DateTime (DTT) is a comprehensive Rust library for parsing, validating, manipulating, and formatting dates and times. It offers a high level of precision and a wide range of functionalities.
-
-[**Read full story ❯**][15]
+DateTime (DTT) is a comprehensive Rust library for parsing, validating, manipulating, and formatting dates and times. It offers a high level of precision and a wide range of functionalities. [**Read full story ❯**][15]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -324,9 +283,7 @@ DateTime (DTT) is a comprehensive Rust library for parsing, validating, manipula
 
 *by [Sebastien Rousseau][00] (28 Nov 2023)*
 
-A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks.
-
-[**Read full story ❯**][14]
+A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks. [**Read full story ❯**][14]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -336,9 +293,7 @@ A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algo
 
 *by [Sebastien Rousseau][00] (19 Nov 2023)*
 
-Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.
-
-[**Read full story ❯**][13]
+Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era. [**Read full story ❯**][13]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -348,9 +303,7 @@ Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revo
 
 *by [Sebastien Rousseau][00] (12 Nov 2023)*
 
-Embark on a Journey to Explore Generative AI: Investigating Its Impact, Ethical Implications, and Future Synergies.
-
-[**Read full story ❯**][12]
+Embark on a Journey to Explore Generative AI: Investigating Its Impact, Ethical Implications, and Future Synergies. [**Read full story ❯**][12]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -360,9 +313,7 @@ Embark on a Journey to Explore Generative AI: Investigating Its Impact, Ethical 
 
 *by [Sebastien Rousseau][00] (05 Nov 2023)*
 
-Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security.
-
-[**Read full story ❯**][11]
+Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security. [**Read full story ❯**][11]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -372,9 +323,7 @@ Safeguard code integrity with meticulously vetted mathematical and cryptographic
 
 *by [Sebastien Rousseau][00] (26 Oct 2023)*
 
-Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.
-
-[**Read full story ❯**][10]
+Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort. [**Read full story ❯**][10]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -384,9 +333,7 @@ Boost Rust library development with LibMake: A code generator tool that enforces
 
 *by [Sebastien Rousseau][00] (16 Oct 2023)*
 
-The Hash Library (HSH) is a quantum-resistant cryptographic hash library that offers a lightweight, efficient, and easy-to-use solution for keeping your data secure.
-
-[**Read full story ❯**][08]
+The Hash Library (HSH) is a quantum-resistant cryptographic hash library that offers a lightweight, efficient, and easy-to-use solution for keeping your data secure. [**Read full story ❯**][08]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -396,9 +343,7 @@ The Hash Library (HSH) is a quantum-resistant cryptographic hash library that of
 
 *by [Sebastien Rousseau][00] (9 Oct 2023)*
 
-Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.
-
-[**Read full story ❯**][01]
+Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control. [**Read full story ❯**][01]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -408,9 +353,7 @@ Empowering you to create high-impact static websites with infinite possibilities
 
 *by [Sebastien Rousseau][00] (29 Sep 2023)*
 
-Streamlining the creation and compliance of ISO20022 Payment Messages for cross-border payments and reporting.
-
-[**Read full story ❯**][02]
+Streamlining the creation and compliance of ISO20022 Payment Messages for cross-border payments and reporting. [**Read full story ❯**][02]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -420,9 +363,7 @@ Streamlining the creation and compliance of ISO20022 Payment Messages for cross-
 
 *by [Sebastien Rousseau][00] (15 Feb 2018)*
 
-Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard.
-
-[**Read full story ❯**][03]
+Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard. [**Read full story ❯**][03]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -432,9 +373,7 @@ Developing a comprehensive framework for the next generation of Ethereum Request
 
 *by [Sebastien Rousseau][00] (04 Feb 2018)*
 
-A significant chapter in the ongoing evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, sustainable finance and the future of money.
-
-[**Read full story ❯**][04]
+A significant chapter in the ongoing evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, sustainable finance and the future of money. [**Read full story ❯**][04]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -444,9 +383,7 @@ A significant chapter in the ongoing evolution of the global financial landscape
 
 *by [Sebastien Rousseau][00] (24 Jan 2018)*
 
-Ethereum Token Interface: Understanding ERC-20, which allows for the implementation of a standard API for tokens within smart contracts.
-
-[**Read full story ❯**][05]
+Ethereum Token Interface: Understanding ERC-20, which allows for the implementation of a standard API for tokens within smart contracts. [**Read full story ❯**][05]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -456,9 +393,7 @@ Ethereum Token Interface: Understanding ERC-20, which allows for the implementat
 
 *by [Sebastien Rousseau][00] (09 Jan 2018)*
 
-Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation.
-
-[**Read full story ❯**][06]
+Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation. [**Read full story ❯**][06]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -468,9 +403,7 @@ Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to B
 
 *by [Sebastien Rousseau][00] (02 Jan 2018)*
 
-A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks.
-
-[**Read full story ❯**][09]
+A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks. [**Read full story ❯**][09]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -480,9 +413,7 @@ A story of the extraordinary journey of securing digital transactions through Pr
 
 *by [Sebastien Rousseau][00] (01 Jan 2018)*
 
-Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online.
-
-[**Read full story ❯**][07]
+Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online. [**Read full story ❯**][07]
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -519,5 +450,6 @@ Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential 
 [30]: /2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html "Unleashing the Power of Logging in Rust with RustLogs (RLG)"
 [31]: /2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html "Revolutionising Real-Time Speech Recognition on macOS with OpenAI Whisper and Metal Performance Shaders"
 [32]: /2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html "Advancing AI with Multimodal LLMs: Insights from MM1"
+[33]: /2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"
 
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"

@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
 tags: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
-theme-color: "0,102,204"
+theme-color: "0, 83, 191"
 title: "Innovative and Creative Solutions Built with Open Source"
 url: "https://sebastienrousseau.com/projects/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -104,19 +104,19 @@ My passion lies in harnessing open-source software and experimentation to push b
 ## Project Categories
 
 <!-- markdownlint-disable MD051 -->
-- [Artificial Intelligence (AI) Projects](#h2-artificial)
-- [Quantum Computing and Quantum Cryptography Projects](#h2-quantum)
-- [Python Projects](#h2-python)
-- [Rust Projects](#h2-rust)
-- [JavaScript Projects](#h2-javascript)
-- [General Projects](#h2-general)
-- [CSS Projects](#h2-css)
-- [Web Based Projects](#h2-web)
+1. [Artificial Intelligence (AI) Projects](#h2-1)
+2. [Quantum Computing and Quantum Cryptography Projects](#h2-2)
+3. [Python Projects](#h2-3)
+4. [Rust Projects](#h2-4)
+5. [JavaScript Projects](#h2-5)
+6. [General Projects](#h2-6)
+7. [CSS Projects](#h2-7)
+8. [Web Based Projects](#h2-8)
 <!-- markdownlint-enable MD051 -->
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Artificial Intelligence (AI) Projects
+## 1. Artificial Intelligence (AI) Projects
 
 This collection of AI projects applies machine learning and other latest techniques to solve real-world problems in areas like voice assistants, audio analysis and more.
 
@@ -142,7 +142,7 @@ executive tasks.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Quantum Computing and Quantum Cryptography Projects
+## 2. Quantum Computing and Quantum Cryptography Projects
 
 This collection showcases a variety of open-source Quantum Computing and Quantum Cryptography projects. Covering a range of areas from cryptography to web development, each project is designed to provide innovative solutions to real-world problems and is built using the latest Rust technologies.
 
@@ -166,7 +166,7 @@ password encryption and verification.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Python Projects
+## 3. Python Projects
 
 This collection showcases a variety of open-source Python projects that demonstrate practical applications of coding in Python. Covering a range of areas from finance to cryptography, each project is designed to provide innovative solutions to real-world problems and is built using the latest Python technologies
 
@@ -194,7 +194,7 @@ statements.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Rust Projects
+## 4. Rust Projects
 
 This collection showcases a variety of open-source Rust projects that demonstrate practical applications of coding in Rust. Covering a range of areas from cryptography to web development, each project is designed to provide innovative solutions to real-world problems and is built using the latest Rust technologies.
 
@@ -291,7 +291,7 @@ cryptographic constants.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## JavaScript Projects
+## 5. JavaScript Projects
 
 This collection showcases a variety of open-source JavaScript projects that demonstrate practical applications of coding in JavaScript. Covering a range of areas from cryptography to web development, each project is designed to provide innovative solutions to real-world problems and is built using the latest JavaScript technologies.
 
@@ -309,7 +309,7 @@ services.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## General Projects
+## 6. General Projects
 
 ### Dotfiles
 
@@ -331,7 +331,7 @@ services.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## CSS Projects
+## 7. CSS Projects
 
 ### Skeletonic Stylus Library
 
@@ -343,7 +343,7 @@ services.
 
 ![divider][divider].class=\"m-10 w-100\"
 
-## Web Based Projects
+## 8. Web Based Projects
 
 ### Kaishi, a Starter Template
 

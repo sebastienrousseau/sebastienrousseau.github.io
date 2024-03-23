@@ -13,7 +13,7 @@ charset: "UTF-8"
 cdn: "https://kura.pro/"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2024 - Sebastien Rousseau. All rights reserved."
-date: "Mar 18, 2024"
+date: "Mar 25, 2024"
 description: "Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking & Financial Services"
 format-detection: "telephone=no"
 hreflang: "en"
@@ -35,6 +35,12 @@ menu: "active"
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
 permalink: "https://sebastienrousseau.com"
+promo_banner_alt: "Turned off laptop computer on top of brown wooden table"
+promo_banner_height: "571"
+promo_banner_width: "1425"
+promo_banner: "https://kura.pro/stock/images/banners/modern-corporate-office-with-technological-displays.webp"
+promo_banner_title: "Unlocking the Future of Banking and Financial Services.<br>Discover the latest news from"
+promo_banner_url: "https://sebastienrousseau.com"
 rating: "general"
 referrer: "no-referrer"
 revisit-after: "7 days"
@@ -42,8 +48,8 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
 tags: "banking, financial services, artificial intelligence, post-quantum cryptography, blockchain technology, transformation, innovation, technology, future, Sebastien Rousseau"
-theme-color: "0,102,204"
-title: "Sebastien Rousseau: AI, Banking & Financial Services Expert"
+theme-color: "0, 83, 191"
+title: "Sebastien Rousseau: AI, Banking &amp; Financial Services Expert"
 url: "https://sebastienrousseau.com"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -55,11 +61,11 @@ generator: "Shokunin SSG (version 0.0.26)"
 item_description: "Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking & Financial Services"
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
-item_pub_date: "Mon, 18 Mar 2024 06:06:06 +0000"
-item_title: "Sebastien Rousseau: AI, Banking & Financial Services Expert"
-last_build_date: "Mon, 18 Mar 2024 06:06:06 +0000"
+item_pub_date: "Mon, 25 Mar 2024 06:06:06 +0000"
+item_title: "Sebastien Rousseau: AI, Banking &amp; Financial Services Expert"
+last_build_date: "Mon, 25 Mar 2024 06:06:06 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-pub_date: "Mon, 18 Mar 2024 06:06:06 +0000"
+pub_date: "Mon, 25 Mar 2024 06:06:06 +0000"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -70,12 +76,12 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Sebastien Rousseau: AI, Banking & Financial Services Expert"
+apple-mobile-web-app-title: "Sebastien Rousseau: AI, Banking &amp; Financial Services Expert"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(255, 39, 34)"
+msapplication-navbutton-color: "0, 83, 191"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
@@ -85,7 +91,7 @@ twitter_description: "Exploring and Applying Artificial Intelligence (AI), Post-
 twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "Sebastien Rousseau: AI, Banking & Financial Services Expert"
+twitter_title: "Sebastien Rousseau: AI, Banking &amp; Financial Services Expert"
 twitter_url: "https://sebastienrousseau.com"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -93,7 +99,7 @@ author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2024-03-18"
+site_last_updated: "2024-03-25"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Shokunin, Rust"
@@ -112,13 +118,25 @@ Read the latest articles below, and [**see all articles, news and product announ
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![Banner for the Apple MM1](https://kura.pro/stock/images/banners/mm1-visual.webp).class=\"fade-in w-50 m-3 p-3 float-start align-self-center img-thumbnail\"
+## Latest News
+
+![Banner for the Fully Homomorphic Encryption](https://kura.pro/stock/images/banners/fully-homomorphic-encryption.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-start\"
+
+### Fully Homomorphic Encryption (FHE) in a Banking Quantum Era
+
+*by [Sebastien Rousseau][00] (25 Mar 2024)*
+
+Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats.
+
+[**Learn more ❯**][18]
+
+![divider][divider].class=\"m-10 w-100\"
+
+![Banner for the Apple MM1](https://kura.pro/stock/images/banners/mm1-visual.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-end\"
 
 ### Advancing AI with Multimodal LLMs: Insights from MM1
 
 *by [Sebastien Rousseau][00] (18 Mar 2024)*
-
-#### Unveiling the Future of AI: How Apple's Groundbreaking MM1 Study Revolutionises Multimodal Learning
 
 Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials.
 
@@ -126,13 +144,11 @@ Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn abo
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![Banner for Real-time automatic speech recognition (ASR)](https://kura.pro/stock/images/banners/research-paper.webp).class=\"fade-in w-25 m-3 rounded-circle float-end\"
+![Banner for Real-time automatic speech recognition (ASR)](https://kura.pro/stock/images/banners/research-paper.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-start\"
 
 ### Accelerating Real-Time Speech Recognition on macOS with OpenAI Whisper
 
 *by [Sebastien Rousseau][00] (12 Mar 2024)*
-
-#### Unleash the Power of AI-Driven, GPU-Accelerated Speech-to-Text on Your Mac
 
 Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.
 
@@ -140,13 +156,11 @@ Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-t
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![Banner for RustLogs (RLG)](https://kura.pro/stock/images/banners/rustlogs.webp).class=\"fade-in w-25 m-3 rounded-circle float-start\"
+![Banner for RustLogs (RLG)](https://kura.pro/stock/images/banners/rustlogs.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-end\"
 
 ### Unleashing the Power of Logging in Rust with RustLogs (RLG)
 
 *by [Sebastien Rousseau][00] (08 Mar 2024)*
-
-#### Streamline Your Rust Logging Workflow
 
 Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options.
 
@@ -154,13 +168,11 @@ Discover RustLogs (RLG), the flexible logging library for Rust with structured l
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![Colourful, abstract digital art of a cat](https://kura.pro/stock/images/banners/abstract-digital-art-of-a-cat.webp).class=\"fade-in w-25 m-3 rounded-circle float-end\"
+![Colourful, abstract digital art of a cat](https://kura.pro/stock/images/banners/abstract-digital-art-of-a-cat.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-start\"
 
 ### Le Chat by Mistral AI: A New Era in Conversational AI
 
 *by [Sebastien Rousseau][00] (04 Mar 2024)*
-
-#### Redefining User Interaction Across Languages
 
 Meet Mistral AI's new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real-time.
 
@@ -168,26 +180,14 @@ Meet Mistral AI's new multilingual Assistant. An advanced AI that can understand
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![Futuristic blue spaceship with neon lights](https://kura.pro/stock/images/banners/ai-ship.webp).class=\"fade-in w-25 m-3 rounded-circle float-start\"
-
-### Google Gemma AI: Transforming Open-Source AI Development
-
-*by [Sebastien Rousseau][00] (26 Feb 2024)*
-
-Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use.
-
-[**Learn more ❯**][13]
-
-![divider][divider].class=\"m-10 w-100\"
-
-[**See all articles** ❯][100]
+[**See all articles ❯**][100]
 
 [00]: /about/index.html "About Sebastien Rousseau, Banking & Financial Service Professional"
-[13]: /2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html "Google Gemma AI: Transforming Open-Source AI Development"
 [14]: /2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html "Le Chat by Mistral AI: A New Era in Conversational AI"
 [15]: /2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html "Unleashing the Power of Logging in Rust with RustLogs (RLG)"
 [16]: /2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html "Revolutionising Real-Time Speech Recognition on macOS with OpenAI Whisper and Metal Performance Shaders"
 [17]: /2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html "Advancing AI with Multimodal LLMs: Insights from MM1"
+[18]: /2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"
 
 [100]: /articles/index.html "See all articles"
 

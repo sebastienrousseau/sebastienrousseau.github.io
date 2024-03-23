@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta itemprop="datePublished" content="Mon, 25 Mar 2024 06:06:06 +0000" id="date">
+    <meta itemprop="dateModified" content="Mon, 25 Mar 2024 06:06:06 +0000" id="last-modified">
+    <title>Fully Homomorphic Encryption (FHE) in a Banking Quantum Era</title>
+
+    <!-- # Start Primary Meta Tags -->
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats.">
+<meta name="generator" content="Shokunin SSG (version 0.0.26)">
+<meta name="keywords" content="Fully Homomorphic Encryption, banking security, quantum computing, financial data encryption, FHE case studies, regulatory frameworks FHE, computational overhead FHE, FHE research, FHE hardware, data privacy laws">
+<meta name="language" content="en-GB">
+<meta name="permalink" content="https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html">
+<meta name="rating" content="general">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="index, follow">
+<meta name="title" content="Fully Homomorphic Encryption (FHE) in a Banking Quantum Era">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- # End Primary Meta Tags -->
+
+    <!-- # Start Open Graph / Facebook Meta Tags -->
+    <meta name="og:description" content="Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats.">
+<meta name="og:image" content="https://kura.pro/stock/images/banners/fully-homomorphic-encryption.webp">
+<meta name="og:image:alt" content="abstract digital art for Real-time automatic speech recognition (ASR)">
+<meta name="og:image:height" content="100vh">
+<meta name="og:image:width" content="100vw">
+<meta name="og:locale" content="en_GB">
+<meta name="og:title" content="Fully Homomorphic Encryption (FHE) in a Banking Quantum Era">
+<meta name="og:type" content="website">
+<meta name="og:url" content="https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html">
+    <!-- # End Open Graph / Facebook Meta Tags -->
+
+    <!-- # Start Accessibility Meta Tags -->
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <!-- # End Accessibility Meta Tags -->
+
+    <!-- # Start Apple Meta Tags -->
+    <meta name="apple_mobile_web_app_orientations" content="portrait">
+<meta name="apple_touch_icon_sizes" content="192x192">
+    <!-- # End Apple Meta Tags -->
+
+<!-- # Start Content Security Policy Meta Tags -->
+<meta http-equiv="Content-Security-Policy"
+content="default-src 'self';
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com https://cdn.jsdelivr.net unpkg.com www.googletagmanager.com x.clarity.ms https://www.googletagmanager.com;
+  connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com;
+  img-src 'self' data: https: kura.pro www.googletagmanager.com;
+  style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
+  font-src 'self' https://fonts.gstatic.com;
+  media-src 'self' https://kura.pro;" />
+<!-- # End Content Security Policy Meta Tags -->
+
+
+
+    <!-- # Start Microsoft Meta Tags -->
+    
+    <!-- # End Microsoft Meta Tags -->
+
+    <!-- # Start Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@wwdseb">
+<meta name="twitter:description" content="Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats.">
+<meta name="twitter:image" content="https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png">
+<meta name="twitter:image:alt" content="Logo of Sebastien Rousseau">
+<meta name="twitter:site" content="@wwdseb">
+<meta name="twitter:title" content="Fully Homomorphic Encryption (FHE) in a Banking Quantum Era">
+<meta name="twitter:url" content="https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html">
+    <!-- # End Twitter Meta Tags -->
+
+    <!-- # Start Links -->
+    <link rel="alternate" href="https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html" hreflang="en" />
+    <link rel="preload" as="image" href="https://kura.pro/stock/images/banners/fully-homomorphic-encryption.webp">
+    <link rel="canonical" href="https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://kura.pro/sebastienrousseau/images/favicon.ico"
+      sizes="16x16 32x32"
+    />
+    <link
+      as="style"
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      onload="this.onload=null;this.rel='stylesheet'"
+      rel="preload"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://kura.pro/sebastienrousseau/images/icons/192x192.png"
+      sizes="192x192"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    <!-- # End Links -->
+
+    <!-- # Start Styles -->
+    <style>.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.bounce{animation:g 1s infinite}.drop-down{animation:a 1.618s ease}.drop-down,.fade-in{animation-fill-mode:forwards}.fade-in{animation:b 3s ease}.flip{animation:i 1s infinite}.jello{animation:k 1s infinite}.pulse{animation:f 1s infinite}.roll{animation:c 5s linear infinite}.roll-clockwise{animation:d 5s linear infinite}.roll-reverse{animation:h 5s linear infinite}.roll-reverse-clockwise{animation:e 5s linear infinite}.rotate{animation:d 5s linear infinite}.shake{animation:j 1s infinite}.slide-in{animation:h 1s ease}.zoom-in,.zoom-in-out{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-in-out:hover,.zoom-in:hover{transform:scale(1.0618)}.zoom-out{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-out:hover{transform:scale(.618)}*{box-sizing:border-box;font-weight:400;margin:0;padding:0}html{font-family:SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:clamp(var(--base-font-size),1vw,20px);line-height:var(--base-line-height);scroll-behavior:smooth;text-rendering:optimizeLegibility}.article-info{color:var(--theme-color)}.blur-light{backdrop-filter:saturate(180%) blur(20px);background-color:hsla(0,0%,100%,.618)}.card,pre{margin-bottom:calc(var(--base-font-size)*var(--golden-ratio)/2);overflow:hidden}blockquote{background:rgba(0, 98, 115,.062);border-left:10px solid var(--theme-color);margin:1.618em 10px;padding:.618em 10px;quotes:"\201C""\201D""\2018""\2019"}blockquote:after,blockquote:before{color:var(--theme-color);font-size:4em;line-height:.1em;vertical-align:-.4em}blockquote:before{content:open-quote;margin-right:.1618em}blockquote:after{content:close-quote;margin-left:.1618em}blockquote p{color:var(--theme-color)!important;display:inline;font-size:1.2em;font-style:italic;line-height:1.5em;margin:0 0 .5em}.company,.container .rollers .wrapper .items-container .item .company,.content{filter:grayscale(100%);opacity:.2}.company:hover,.container .rollers .wrapper .items-container .item .company:hover{cursor:pointer;filter:grayscale(0);opacity:1}.company{float:left;padding:1.618rem;width:33%!important}.content{padding:calc(var(--base-font-size)*1.236)}.container .rollers,.content .container{box-shadow:2px 15px 20px #1f1f1f10,-2px -8px 20px #1f1f1f1a;padding:calc(var(--base-font-size)*1.854) calc(var(--base-font-size)*1.236)}.container .rollers .wrapper{flex:0 0 auto;height:100px;margin:0 0 calc(var(--base-font-size)*1.236) 0;position:relative;width:1400px}.container .rollers .wrapper .items-container{align-items:center;animation-duration:30s;animation-iteration-count:infinite;animation-timing-function:linear;display:flex;height:100%;position:absolute;width:100%}:root{--base-font-size:17px;--base-line-height:1.47059;--box-shadow:0 2px 4px rgb(0, 98, 115);--golden-ratio:1.618;--theme-color:rgb(0, 98, 115);--transition-duration:0.3s;--z-index-menu:1}h1,h2,h3,h4,h5,h6{color:var(--theme-color);font-weight:400;line-height:var(--golden-ratio);margin-bottom:calc(var(--base-font-size)*var(--golden-ratio)/2)}a{color:var(--theme-color);text-decoration:none}strong{font-weight:600}a:hover{text-decoration:underline}@keyframes a{0%{transform:translateY(calc(var(--base-font-size)*-.618))}to{transform:translateY(0)}}@keyframes b{0%{opacity:0}to{opacity:1}}@keyframes c{0%{transform:translateX(0)}to{transform:translateX(-100%)}}@keyframes d{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes e{0%{transform:rotate(1turn)}to{transform:rotate(0deg)}}@keyframes f{0%{transform:scale(1)}50%{transform:scale(1.1)}to{transform:scale(1)}}@keyframes g{0%,20%,50%,80%,to{transform:translateY(0)}40%{transform:translateY(-30px)}60%{transform:translateY(-15px)}}@keyframes h{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes i{0%{transform:perspective(400px) rotateY(0)}to{transform:perspective(400px) rotateY(1turn)}}@keyframes j{0%,to{transform:translateX(0)}10%,30%,50%,70%,90%{transform:translateX(-10px)}20%,40%,60%,80%{transform:translateX(10px)}}@keyframes k{0%,to{transform:scaleX(1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}}@media only screen and (max-width:800px){.container .rollers .wrapper .items-container .item .company{opacity:.4}.content,.content .container{padding:calc(var(--base-font-size)*1.236)}.company{width:50%!important}.fs-5{font-size:calc(var(--base-font-size)*.9)!important}h3{font-size:calc(var(--base-font-size)*1.618)}}</style>
+    <!-- # End Styles -->
+  </head>
+  <body
+    id="page-top"
+    itemscope
+    itemtype="http://schema.org/WebPage"
+    class="fw-light text-center bg-white text-start fs-6"
+  >
+    <!-- # Start Responsive navbar -->
+    <nav
+      class="navbar navbar-expand-lg bd-navbar sticky-top shadow-small border-bottom blur-light"
+      id="mainNav"
+      itemscope
+      itemtype="http://schema.org/SiteNavigationElement"
+    >
+      <div class="container-xxl p-3">
+        <a class="navbar-brand p-0 me-0 me-lg-2 zoom-in" href="/index.html" aria-label="logo">
+          <img
+            class="d-inline-block align-top"
+            width="44"
+            height="44"
+            src="https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
+            alt="Logo for Sebastien Rousseau"
+            title="Image of the Logo for Sebastien Rousseau"
+            loading="lazy"
+          />
+        </a>
+        <span class="fs-4" itemprop="name"><a href="/" itemprop="url" title="Sebastien Rousseau - Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats." class="text-decoration-none text-dark">Sebastien Rousseau</a></span>
+        <button
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler"
+          data-bs-target="#navbarSupportedContent"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/about/index.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="/articles/index.html">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="/papers/index.html">Papers</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/projects/index.html">Projects</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Links</a
+              >
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="/playlists/index.html">
+                    Spotify Playlists
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/made-with-shokunin/index.html">
+                    Made with Shokunin
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/tags/index.html">
+                    Tags
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                aria-pressed="false"
+                class="btn btn-dark rounded-pill px-3"
+                href="/contact/index.html"
+                >Get in touch
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- # End Responsive navbar -->
+
+    <!-- Header-->
+<header class="bg-dark text-white text-center text-shadow position-relative mb-5 mb-md-0">
+  <img class="fade-in img-fluid" src="https://kura.pro/stock/images/banners/fully-homomorphic-encryption.webp" alt="Banner for the Fully Homomorphic Encryption" title="Image of Banner for the Fully Homomorphic Encryption" />
+  <section class="p-3 p-md-5 container position-absolute top-50 start-50 translate-middle rounded" style="background: rgba(0, 98, 115, 0.618); z-index: 1;">
+    <div class="row justify-content-center">
+      <div class="col-10 col-md-8 col-lg-6">
+        <p class="fs-1">Fully Homomorphic Encryption (FHE) in a Banking Quantum Era</p>
+        <p class="fs-5">Strengthen Data Security, Enhance AI Privacy, and Build Customer Trust in the Quantum Computing Era with FHE</p>
+      </div>
+    </div>
+  </section>
+</header>
+<!-- # End Header -->
+
+
+
+    <!-- Main content-->
+    <main id="main" class="bd-masthead container fs-5 p-5" aria-label="main">
+      <div class="text-start justify-content-between">
+        <h1 id="h1-fully" tabindex="0" aria-label="Fully Heading" itemprop="headline" class="fully">Fully Homomorphic Encryption (FHE) in a Banking Quantum Era</h1><p>Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats.</p><p></p><p><strong>Fully Homomorphic Encryption (FHE)</strong> promises to redefine data security in Banking and the Financial Industry. By enabling computations on encrypted data, FHE safeguards privacy against both conventional and quantum computing threats.</p>
+<h2 id="h2-introduction" tabindex="0" aria-label="Introduction Heading" itemprop="name" class="introduction">Introduction</h2>
+<p>The implementation of FHE in the financial sector is not just theoretical; it's becoming a practical reality, transforming data security and privacy standards. This article explores the practical uses, regulatory concerns, possible downsides, and research advancements of fully homomorphic encryption (FHE) in Finance and also Artificial Intelligence (AI) applications.</p>
+<h2 id="h2-understanding" tabindex="0" aria-label="Understanding Heading" itemprop="name" class="understanding">Understanding Fully Homomorphic Encryption</h2>
+<h3 id="h3-the" tabindex="0" aria-label="The Heading" itemprop="name" class="the">The Basics of Encryption</h3>
+<p>Encryption is a method of transforming readable data (plaintext) into an unreadable format (ciphertext) using an algorithm and an encryption key. The primary goal is to ensure that only authorised parties can access the original data by decrypting the ciphertext using a decryption key.</p>
+<h3 id="h3-traditional" tabindex="0" aria-label="Traditional Heading" itemprop="name" class="traditional">Traditional Encryption Methods</h3>
+<p>Traditional encryption methods can be broadly categorised into two types: symmetric and asymmetric encryption. Symmetric encryption employs a single key for both encryption and decryption. This efficiency comes at the cost of security, especially when key distribution poses challenges. Asymmetric encryption, also called public-key cryptography, uses two keys, one for encryption and another for decryption. This method is more secure but slower than symmetric encryption.</p>
+<h3 id="h3-the" tabindex="0" aria-label="The Heading" itemprop="name" class="the">The Limitations of Conventional Encryption for Computation</h3>
+<p>While traditional encryption methods effectively secure data at rest or in transit, they fall short when it comes to performing computations on encrypted data. Typically, to process or analyse encrypted data, one must first decrypt it, perform the necessary operations, and then re-encrypt it. This decryption step poses a significant risk to data privacy, especially in untrusted or cloud computing environments.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" .alt=&quot;Divider&quot; <p class="m-10 w-100"></p>
+<h2 id="h2-the" tabindex="0" aria-label="The Heading" itemprop="name" class="the">The Breakthrough of Homomorphic Encryption</h2>
+<p><strong>Homomorphic encryption</strong> (HE) solves the limitations of conventional encryption. It allows certain computations to be done directly on encrypted data (ciphertexts). The decrypted result is the same as the original data (plaintext) after the same operations are performed. HE comes in three main flavours: Partially Homomorphic Encryption (PHE), Somewhat Homomorphic Encryption (SHE), and Fully Homomorphic Encryption (FHE).</p>
+<ul>
+<li><strong>Partially Homomorphic Encryption (PHE):</strong> Supports unlimited operations of a single type (e.g., either addition or multiplication) on ciphertexts.</li>
+<li><strong>Somewhat Homomorphic Encryption (SHE):</strong> Supports a limited number of operations, combining both addition and multiplication, but only to a certain depth.</li>
+<li><strong>Fully Homomorphic Encryption (FHE):</strong> The most advanced form, allowing for unlimited operations of both addition and multiplication on ciphertexts.</li>
+</ul>
+<h3 id="h3-the" tabindex="0" aria-label="The Heading" itemprop="name" class="the">The Technical Ingenuity of FHE</h3>
+<p>FHE is based on complex mathematical structures, such as lattice-based cryptography. Lattice-based cryptography is a type of encryption that uses mathematical structures called lattices.</p>
+<p>A lattice is a regular arrangement of points in space, and lattice-based cryptography relies on the difficulty of solving certain mathematical problems related to these structures. This makes lattice-based cryptography secure and resistant to attacks, including those from quantum computers.</p>
+<p>In 2009, Craig Gentry developed a method, described in his paper <a href="https://crypto.stanford.edu/craig/" title="The original paper by Craig Gentry on Fully Homomorphic Encryption"><strong>A Fully Homomorphic Encryption Scheme ⧉</strong></a>, for creating a system that could perform homomorphic evaluation of its own decryption circuit. This self-referential design allows FHE schemes to perform arbitrary computations on encrypted data.</p>
+<h3 id="h3-the" tabindex="0" aria-label="The Heading" itemprop="name" class="the">The FHE Algorithm Process</h3>
+<p><img src="https://kura.pro/stock/diagrams/fhe_algorithm_diagram.webp" alt="FHE Operational Flow" title="FHE Architecture" <p class="m-10 w-100"></p>
+<p>The diagram above illustrates the operational flow of a Fully Homomorphic Encryption (FHE) algorithm.</p>
+<ul>
+<li>
+<p>The encryption process commences with the plaintext data, which is encrypted using an encryption key to generate ciphertext.</p>
+</li>
+<li>
+<p>This encrypted data can then undergo various computations directly on the ciphertext through a process known as bootstrapping.</p>
+</li>
+<li>
+<p>This unique capability of FHE allows data to remain encrypted throughout the entire process. Once the necessary operations have been performed, the decryption process can convert the modified ciphertext back into plaintext using the FHE scheme.</p>
+</li>
+</ul>
+<p>The primary advantage of FHE lies in its ability to perform computations on ciphertext without the need for decryption, thereby ensuring data privacy and security are maintained throughout the computation process.</p>
+<h3 id="h3-the" tabindex="0" aria-label="The Heading" itemprop="name" class="the">The Quantum Resistance of FHE</h3>
+<p>Traditional encryption methods are often vulnerable to quantum algorithms. These algorithms can rapidly solve problems such as integer factorisation and discrete logarithms, which form the foundation of these encryption methods. In contrast, Fully Homomorphic Encryption (FHE) employs lattice-based problems that are believed to be challenging for quantum computers to solve. This quantum resistance makes FHE a promising encryption method for the post-quantum era.</p>
+<p>Lattice-based FHE is resistant to quantum attacks because the underlying mathematical problems, such as the Shortest Vector Problem (SVP) and the Closest Vector Problem (CVP), are considered to be difficult to solve even for quantum computers. While quantum algorithms like Shor's algorithm can break traditional encryption methods that rely on factoring large numbers or computing discrete logarithms, they are not known to provide significant advantages in solving lattice-based problems. This characteristic makes lattice-based FHE a promising candidate for post-quantum cryptography.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" .alt=&quot;Divider&quot; <p class="m-10 w-100"></p>
+<h2 id="h2-the" tabindex="0" aria-label="The Heading" itemprop="name" class="the">The Impact of FHE on Banking and Finance</h2>
+<h3 id="h3-enhanced" tabindex="0" aria-label="Enhanced Heading" itemprop="name" class="enhanced">Enhanced Data Privacy and Security</h3>
+<p>The application of FHE in the financial sector promises a significant enhancement in data privacy. Banks can now undertake risk assessments, fraud detection, and comprehensive data analytics while ensuring the absolute confidentiality of customer information. This technological advancement mitigates the risk of data breaches, reinforcing the integrity of digital banking platforms and financial transactions.</p>
+<h3 id="h3-cloud" tabindex="0" aria-label="Cloud Heading" itemprop="name" class="cloud">Cloud Computing and Outsourcing</h3>
+<p>One major application area for homomorphic encryption is secure data processing in the cloud. Banks can leverage cloud computing services to process encrypted data without compromising data privacy. This enables financial institutions to harness the scalability and cost-efficiency of cloud computing while maintaining the confidentiality of sensitive financial information.</p>
+<p>The shift towards cloud computing and outsourcing of computational tasks by banks underscores the relevance of FHE. With secure cloud computing, financial institutions can tap into external resources while protecting sensitive encrypted data through Fully Homomorphic Encryption (FHE). FHE enables banks to securely leverage cloud computing services while ensuring that sensitive encrypted data remains protected at all times.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" .alt=&quot;Divider&quot; <p class="m-10 w-100"></p>
+<h2 id="h2-preparing" tabindex="0" aria-label="Preparing Heading" itemprop="name" class="preparing">Preparing for the Quantum Future</h2>
+<p>The imminent advent of quantum computing heralds a potential crisis for traditional encryption methodologies. Lattice-based FHE is inherently resistant to quantum attacks, offering a robust defence against the threat quantum computing poses to data security.</p>
+<h3 id="h3-quantum" tabindex="0" aria-label="Quantum Heading" itemprop="name" class="quantum">Quantum-Resistant Encryption</h3>
+<p>FHE provides a formidable layer of protection against quantum computing threats. By employing lattice-based cryptographic techniques, FHE ensures that financial data and assets remain secure even in the face of quantum adversaries.</p>
+<p>FHE's quantum resistance is due to complex underlying math problems like the Shortest Vector Problem (SVP) and the Closest Vector Problem (CVP).These problems are believed to be intractable even for quantum computers, making lattice-based FHE an ideal candidate for post-quantum cryptography.</p>
+<p>Using quantum-resistant encryption, like FHE, is crucial not only for protecting financial assets but also for maintaining customer trust in the digital era. As quantum computing progresses, financial institutions that prioritise robust encryption will be better positioned to navigate future challenges and opportunities.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" .alt=&quot;Divider&quot; <p class="m-10 w-100"></p>
+<h2 id="h2-the" tabindex="0" aria-label="The Heading" itemprop="name" class="the">The Future of FHE in Banking and Finance</h2>
+<p>The trajectory of FHE within the financial sector is promising, but it still faces challenges. The banking industry can tap into FHE's full potential by enhancing technology, incorporating it into daily financial operations, and cooperating with regulators.</p>
+<p>FHE can be used in various banking and finance applications, such as:</p>
+<ul>
+<li>
+<p><strong>Secure Financial Data Analysis</strong>: FHE enables banks to analyse encrypted financial data, such as transactions, credit scores, and investment portfolios, without compromising customer privacy, ensuring secure processing of sensitive information.</p>
+</li>
+<li>
+<p><strong>Privacy-Preserving Machine Learning</strong>: FHE allows banks to train and deploy machine learning models on encrypted data, enabling them to leverage AI for fraud detection, risk assessment, and customer segmentation while maintaining data confidentiality.</p>
+</li>
+<li>
+<p><strong>Secure Multi-Party Computation</strong>: FHE enables secure collaboration between multiple financial institutions, allowing them to perform joint computations on encrypted data without sharing sensitive information, facilitating secure interbank transactions and compliance.</p>
+</li>
+<li>
+<p><strong>API Security</strong>: FHE can secure APIs by encrypting sensitive data before transmission, ensuring that customer information remains confidential during data exchange between banks and third-party services.</p>
+</li>
+<li>
+<p><strong>Secure Cloud Computing</strong>: FHE enables banks to securely outsource computations and data storage to cloud platforms without compromising data privacy, as the data remains encrypted throughout the process, expanding the use of cost-effective and scalable cloud services.</p>
+</li>
+<li>
+<p><strong>Privacy-Preserving Regulatory Compliance</strong>: FHE allows banks to securely share encrypted data with regulatory authorities, enabling compliance with reporting requirements without exposing sensitive customer information, streamlining the compliance process while maintaining privacy.</p>
+</li>
+</ul>
+<p>These applications reveal the transformative power of FHE in the Banking and Financial industry and underscore its potential to revolutionise data security and privacy standards.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" .alt=&quot;Divider&quot; <p class="m-10 w-100"></p>
+<h2 id="h2-overcoming" tabindex="0" aria-label="Overcoming Heading" itemprop="name" class="overcoming">Overcoming Challenges in FHE Adoption</h2>
+<h3 id="h3-performance" tabindex="0" aria-label="Performance Heading" itemprop="name" class="performance">Performance Challenges and Optimisation</h3>
+<p>Addressing the computational overhead intrinsic to FHE remains a pivotal challenge. Recent progress in optimising algorithms and developing specialised hardware accelerators is narrowing the performance gap between traditional computing and fully homomorphic encryption (FHE).</p>
+<h3 id="h3-standardisation" tabindex="0" aria-label="Standardisation Heading" itemprop="name" class="standardisation">Standardisation and Collaboration</h3>
+<p>The path to widespread adoption of FHE hinges on the standardisation of protocols and enhanced collaboration among stakeholders in the financial ecosystem. A unified approach towards embracing FHE can significantly accelerate its integration into mainstream financial services.</p>
+<h3 id="h3-regulation" tabindex="0" aria-label="Regulation Heading" itemprop="name" class="regulation">Regulation and Compliance</h3>
+<p>Regulatory bodies play a critical role in the adoption of FHE, with evolving data privacy laws mandating its use. A regulatory push could serve as a catalyst for the comprehensive adoption of FHE across the Banking and the Financial Industry industry while ensuring compliance with data protection regulations.</p>
+<p>The regulatory landscape surrounding data privacy and security plays a significant role in the adoption of FHE within the banking industry.  Strict regulations such as the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA) mandate robust data protection measures and emphasize the individual's right to privacy. FHE, with its ability to process encrypted data without decryption, aligns well with the privacy-centric focus of these regulations. As data privacy laws become increasingly stringent, FHE offers a compelling solution that enables banks to perform necessary computations and analytics while adhering to compliance requirements.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" .alt=&quot;Divider&quot; <p class="m-10 w-100"></p>
+<h2 id="h2-securing" tabindex="0" aria-label="Securing Heading" itemprop="name" class="securing">Securing Large Language Models with Fully Homomorphic Encryption (FHE)</h2>
+<p>Large Language Models (LLMs) are powerful AI tools. But their use brings up privacy concerns, especially when dealing with sensitive user data. Fully Homomorphic Encryption (FHE) provides a solution that protects user privacy and preserves model owners' intellectual property by enabling computations on encrypted data.</p>
+<h3 id="h3-privacy" tabindex="0" aria-label="Privacy Heading" itemprop="name" class="privacy">Privacy Challenges with LLMs</h3>
+<p>Deploying an on-premise LLM to maintain data privacy poses challenges such as high costs and potential exposure of valuable intellectual property. FHE addresses these challenges by allowing LLMs to operate on encrypted user data, ensuring privacy and model security simultaneously.</p>
+<h3 id="h3-zama" tabindex="0" aria-label="Zama Heading" itemprop="name" class="zama">Zama's Encrypted LLM Approach</h3>
+<p><a href="https://zama.ai/" title="Zama - Fully Homomorphic Encryption"><strong>Zama ⧉</strong></a>, a privacy tech company, has demonstrated the feasibility of building an encrypted LLM using FHE. Their approach, which combines FHE with other privacy-enhancing technologies, achieves comparable performance to unencrypted models with only a modest increase in computational overhead.</p>
+<h3 id="h3-improving" tabindex="0" aria-label="Improving Heading" itemprop="name" class="improving">Improving User Privacy with Encrypted LLMs</h3>
+<p>The integration of FHE into LLMs has the potential to transform user privacy, especially in applications dealing with sensitive personal or business information. As AI becomes more focused on privacy, it's important for developers, users, and regulators to work together. This collaboration is key to building an AI ecosystem that puts security and privacy first.</p>
+<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" .alt=&quot;Divider&quot; <p class="m-10 w-100"></p>
+<h2 id="h2-conclusion" tabindex="0" aria-label="Conclusion Heading" itemprop="name" class="conclusion">Conclusion</h2>
+<p><strong>Fully Homomorphic Encryption (FHE)</strong> is a revolutionary data security technology that offers exceptional privacy and security for Banking and the Financial Industry.</p>
+<p>As quantum computing advances, FHE becomes even more crucial. Its adoption will reshape cybersecurity in financial services, making digital banking more trustworthy and secure in our increasingly connected world.</p>
+<p>The advent of FHE has also opened up new possibilities for secure and private use of Large Language Models. By enabling encrypted LLMs, FHE ensures that user data remains confidential while benefiting from the advanced capabilities of these models.</p>
+<p>The Quantum Computing era is approaching. Banks must proactively assess their encryption infrastructure, identify potential vulnerabilities, and develop a clear roadmap for adopting FHE to safeguard data and maintain customer trust.</p>
+
+      </div>
+    </main>
+
+    <!-- Top Anchor -->
+    <top id="top-anchor">
+      <p class="mb-0 text-center p-4">
+        <a href="#page-top" class="btn btn-outline-dark btn-floating btn-lg">
+          Back to the top
+        </a>
+      </p>
+    </top>
+    <!-- # End Top Anchor -->
+
+    <!-- Footer-->
+    <footer id="footer" aria-label="footer" class="footer bg-light mt-auto fs-6 py-5 border-top">
+      <p class="mb-0">
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://twitter.com/wwdseb"><img src="https://kura.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter" title="Image for Sebastien Rousseau on Twitter" width="32" height="32" /></a>
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.linkedin.com/in/sebastienrousseau/"><img src="https://kura.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" title="Image for Sebastien Rousseau on LinkedIn" width="32" height="32" /></a>
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://medium.com/@BankingOnQuantum"><img src="https://kura.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" title="Image for Sebastien Rousseau on Medium" width="32" height="32" /></a>
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.youtube.com/@BankingOnQuantum"><img src="https://kura.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" title="Image for Sebastien Rousseau on YouTube" width="32" height="32" /></a>
+      </p>
+      <p class="mb-0">
+        <span class="px-2"><a href="/accessibility/index.html">Accessibility</a></span>
+        <span class="px-2"><a href="/contact/index.html">Contact</a></span>
+        <span class="px-2"><a href="/privacy/index.html">Privacy & Cookie Policy</a></span>
+        <span class="px-2"><a href="/terms/index.html">Terms of Use</a></span>
+      </p>
+      <span class="px-2">© Copyright 2024 - Sebastien Rousseau. All rights reserved.</span>
+    </footer>
+    <!-- # End Footer -->
+    <script
+      async
+      crossorigin="anonymous"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script type="application/ld+json">{"@context":"http://schema.org/","@type":"BlogPosting","headline":"Fully Homomorphic Encryption (FHE) in a Banking Quantum Era","datePublished":"Mon, 25 Mar 2024 06:06:06 +0000","dateModified":"Mon, 25 Mar 2024 06:06:06 +0000","description":"Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats.","image":{"@type":"ImageObject","height":"2048","width":"2048","url":"https://kura.pro/stock/images/banners/fully-homomorphic-encryption.webp"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html","name":"Strengthen Data Security, Enhance AI Privacy, and Build Customer Trust in the Quantum Computing Era with FHE"},"author":"contact@sebastienrousseau.com (Sebastien Rousseau)","copyrightHolder":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"},"copyrightYear":"© Copyright 2024 - Sebastien Rousseau. All rights reserved.","creator":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"},"inLanguage":"en-GB","name":"Sebastien Rousseau","publisher":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"}}</script>
+    <script type="module" defer>
+      // This is an Immediately Invoked Function Expression (IIFE) which helps
+      // to avoid declaring any globals.
+      (function () {
+        // Create a new script element
+        var script = document.createElement("script");
+
+        // Set the source of the script element to "/main.js".
+        // A timestamp is appended as a query string to ensure the browser
+        // always fetches the latest version of the script, bypassing the
+        // cache.
+        script.src = "/main.js";
+
+        // The script is of type "text/javascript"
+
+        // The script is set to execute asynchronously as soon as it's
+        //available
+
+        // Append the script element to the head of the document
+        document.head.appendChild(script);
+      })(); // The function is immediately invoked
+    </script>
+    <script>
+      // JavaScript code
+      var dropDownElements = document.querySelectorAll('.drop-down');
+      dropDownElements.forEach(function(element) {
+        element.classList.add('animate');
+      });
+
+      window.addEventListener('scroll', function() {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        dropDownElements.forEach(function(element) {
+          if (scrollTop === 0) {
+            element.classList.add('animate');
+          } else {
+            element.classList.remove('animate');
+          }
+        });
+      });
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-169G4ET5HQ');
+    </script>
+  </body>
+</html>
