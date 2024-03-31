@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2024 - Sebastien Rousseau. All rights reserved."
-date: "Mar 18, 2024"
+date: "Apr 01, 2024"
 description: "Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry"
 format-detection: "telephone=no"
 hreflang: "en"
@@ -54,11 +54,11 @@ generator: "Shokunin SSG (version 0.0.26)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
-item_pub_date: "Mon, 25 Mar 2024 06:06:06 +0000"
+item_pub_date: "Mon, 01 Apr 2024 06:06:06 +0000"
 item_title: "Discover How Technology Is Changing Banking and Finance"
-last_build_date: "Mon, 25 Mar 2024 06:06:06 +0000"
+last_build_date: "Mon, 01 Apr 2024 06:06:06 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-pub_date: "Mon, 25 Mar 2024 06:06:06 +0000"
+pub_date: "Mon, 01 Apr 2024 06:06:06 +0000"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -92,7 +92,7 @@ author_website: "https://sebastienrousseau.com/articles/index.html"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2024-03-25"
+site_last_updated: "2024-04-01"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Shokunin, Rust"
@@ -100,6 +100,14 @@ site_software: "Shokunin, Rust"
 ---
 
 ## All News Stories and Articles
+
+![Banner of Vibrant gradient overlay on repeated profiles](https://kura.pro/stock/images/banners/open-voice.webp).class=\"fade-in w-25 p-3 float-start\"
+
+### OpenVoice: Leading Innovation in Voice Cloning Technology
+
+Explore OpenVoice's groundbreaking voice cloning tech, offering unmatched speed, accuracy, and control in synthetic speech generation. [**Read full story ❯**][34]
+
+![divider][divider].class=\"m-10 w-100\"
 
 ![Banner for the Fully Homomorphic Encryption](https://kura.pro/stock/images/banners/fully-homomorphic-encryption.webp).class=\"fade-in w-25 p-3 float-start\"
 
@@ -451,5 +459,6 @@ Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential 
 [31]: /2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html "Revolutionising Real-Time Speech Recognition on macOS with OpenAI Whisper and Metal Performance Shaders"
 [32]: /2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html "Advancing AI with Multimodal LLMs: Insights from MM1"
 [33]: /2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"
+[34]: /2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html "OpenVoice: Leading Innovation in Voice Cloning Technology"
 
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"

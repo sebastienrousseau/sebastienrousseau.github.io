@@ -13,7 +13,7 @@ charset: "UTF-8"
 cdn: "https://kura.pro/"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2024 - Sebastien Rousseau. All rights reserved."
-date: "Mar 25, 2024"
+date: "Apr 01, 2024"
 description: "Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking & Financial Services"
 format-detection: "telephone=no"
 hreflang: "en"
@@ -61,11 +61,11 @@ generator: "Shokunin SSG (version 0.0.26)"
 item_description: "Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking & Financial Services"
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
-item_pub_date: "Mon, 25 Mar 2024 06:06:06 +0000"
+item_pub_date: "Mon, 01 Apr 2024 06:06:06 +0000"
 item_title: "Sebastien Rousseau: AI, Banking &amp; Financial Services Expert"
-last_build_date: "Mon, 25 Mar 2024 06:06:06 +0000"
+last_build_date: "Mon, 01 Apr 2024 06:06:06 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-pub_date: "Mon, 25 Mar 2024 06:06:06 +0000"
+pub_date: "Mon, 01 Apr 2024 06:06:06 +0000"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -99,7 +99,7 @@ author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2024-03-25"
+site_last_updated: "2024-04-01"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Shokunin, Rust"
@@ -120,7 +120,19 @@ Read the latest articles below, and [**see all articles, news and product announ
 
 ## Latest News
 
-![Banner for the Fully Homomorphic Encryption](https://kura.pro/stock/images/banners/fully-homomorphic-encryption.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-start\"
+![Banner for the Fully Homomorphic Encryption](https://kura.pro/stock/images/banners/open-voice.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-start\"
+
+### OpenVoice: Leading Innovation in Voice Cloning Technology
+
+*by [Sebastien Rousseau][00] (01 Apr 2024)*
+
+Explore OpenVoice's groundbreaking voice cloning tech, offering unmatched speed, accuracy, and control in synthetic speech generation.
+
+[**Learn more ❯**][19]
+
+![divider][divider].class=\"m-10 w-100\"
+
+![Banner for the Fully Homomorphic Encryption](https://kura.pro/stock/images/banners/fully-homomorphic-encryption.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-end\"
 
 ### Fully Homomorphic Encryption (FHE) in a Banking Quantum Era
 
@@ -132,7 +144,7 @@ Explore how Fully Homomorphic Encryption revolutionises data security in Banking
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![Banner for the Apple MM1](https://kura.pro/stock/images/banners/mm1-visual.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-end\"
+![Banner for the Apple MM1](https://kura.pro/stock/images/banners/mm1-visual.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-start\"
 
 ### Advancing AI with Multimodal LLMs: Insights from MM1
 
@@ -144,7 +156,7 @@ Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn abo
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![Banner for Real-time automatic speech recognition (ASR)](https://kura.pro/stock/images/banners/research-paper.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-start\"
+![Banner for Real-time automatic speech recognition (ASR)](https://kura.pro/stock/images/banners/research-paper.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-end\"
 
 ### Accelerating Real-Time Speech Recognition on macOS with OpenAI Whisper
 
@@ -156,7 +168,7 @@ Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-t
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![Banner for RustLogs (RLG)](https://kura.pro/stock/images/banners/rustlogs.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-end\"
+![Banner for RustLogs (RLG)](https://kura.pro/stock/images/banners/rustlogs.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-start\"
 
 ### Unleashing the Power of Logging in Rust with RustLogs (RLG)
 
@@ -168,26 +180,14 @@ Discover RustLogs (RLG), the flexible logging library for Rust with structured l
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![Colourful, abstract digital art of a cat](https://kura.pro/stock/images/banners/abstract-digital-art-of-a-cat.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-start\"
-
-### Le Chat by Mistral AI: A New Era in Conversational AI
-
-*by [Sebastien Rousseau][00] (04 Mar 2024)*
-
-Meet Mistral AI's new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real-time.
-
-[**Learn more ❯**][14]
-
-![divider][divider].class=\"m-10 w-100\"
-
 [**See all articles ❯**][100]
 
 [00]: /about/index.html "About Sebastien Rousseau, Banking & Financial Service Professional"
-[14]: /2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html "Le Chat by Mistral AI: A New Era in Conversational AI"
 [15]: /2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html "Unleashing the Power of Logging in Rust with RustLogs (RLG)"
 [16]: /2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html "Revolutionising Real-Time Speech Recognition on macOS with OpenAI Whisper and Metal Performance Shaders"
 [17]: /2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html "Advancing AI with Multimodal LLMs: Insights from MM1"
 [18]: /2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"
+[19]: /2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html "OpenVoice: Leading Innovation in Voice Cloning Technology"
 
 [100]: /articles/index.html "See all articles"
 
