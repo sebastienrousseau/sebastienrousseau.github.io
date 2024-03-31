@@ -12,7 +12,7 @@ changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2024 - Sebastien Rousseau. All rights reserved."
-date: "Mar 12, 2024"
+date: "Apr 01, 2024"
 description: "Explore my open-source projects and discover how I leverage open-source software to deliver groundbreaking solutions."
 format-detection: "telephone=no"
 hreflang: "en"
@@ -22,7 +22,7 @@ image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
 image: "https://kura.pro/stock/images/banners/sebastien-rousseau.png"
-keywords: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
+keywords: "AI voice assistant, Audio analysis, Quantum cryptography, Post-quantum cryptography, ISO 20022 payment, Bank statement parser, Static site generator, Password generator, Rust library, Rust logging library"
 language: "en-GB"
 layout: "project"
 locale: "en_GB"
@@ -40,7 +40,7 @@ revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
-tags: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
+tags: "Artificial Intelligence, Voice Assistant, Audio Analysis, Quantum Computing, Quantum Cryptography, CRYSTALS-Kyber, ISO 20022, Payment Automation, Bank Statement Parsing, Finance, Rust, Static Site Generator, Web Development, Password Generation, Cryptography, Rust Library, Logging, Serialization, YAML, Mersenne Twister"
 theme-color: "0, 83, 191"
 title: "Innovative and Creative Solutions Built with Open Source"
 url: "https://sebastienrousseau.com/projects"
@@ -54,11 +54,11 @@ generator: "Shokunin SSG (version 0.0.26)"
 item_description: "Explore my open-source projects and discover how I leverage open-source software to deliver groundbreaking solutions."
 item_guid: "https://sebastienrousseau.com/projects/rss.xml"
 item_link: "https://sebastienrousseau.com/projects/rss.xml"
-item_pub_date: "Tue, 12 Mar 2024 21:21:21 +0000"
+item_pub_date: "Mon, 01 Apr 2024 06:06:06 +0000"
 item_title: "Innovative and Creative Solutions Built with Open Source"
-last_build_date: "Tue, 12 Mar 2024 21:21:21 +0000"
+last_build_date: "Mon, 01 Apr 2024 06:06:06 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-pub_date: "Tue, 12 Mar 2024 21:21:21 +0000"
+pub_date: "Mon, 01 Apr 2024 06:06:06 +0000"
 ttl: "60"
 type: "website"
 webmaster: "contact@sebastienrousseau.com"
@@ -92,7 +92,7 @@ author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
 thanks: "Thanks for reading!"
-site_last_updated: "2024-03-12"
+site_last_updated: "2024-04-01"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Shokunin, Rust"
@@ -197,6 +197,16 @@ statements.
 ## 4. Rust Projects
 
 This collection showcases a variety of open-source Rust projects that demonstrate practical applications of coding in Rust. Covering a range of areas from cryptography to web development, each project is designed to provide innovative solutions to real-world problems and is built using the latest Rust technologies.
+
+### Serde YML: Effortless YAML Serialization in Rust
+
+![a banner for Serde YML](https://kura.pro/serde_yml/images/github/github-serde_yml.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
+
+.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Serde YML**: A robust Rust library that simplifies the serialization and deserialization of Rust data structures to and from YAML format using the widely-used Serde framework. With Serde YML, you can effortlessly convert your Rust types into YAML strings and vice versa, streamlining the process of storing, transmitting, and manipulating structured data.providing style guides for your library.
+
+[**Learn more** ⧉][22]
+
+![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
 
 ### Shokunin Static Site Generator
 
@@ -408,5 +418,6 @@ services.
 [19]: https://rustlogs.com/ "RustLogs (RLG): Advanced Logging Library for Rust"
 [20]: https://bankingonai.co/ "The Future of Banking and Finance | Banking On AI"
 [21]: https://bankingonquantum.com/ "The Future of Banking and Finance | Banking On Quantum"
+[22]: https://serdeyml.com/ "Serde YML: Effortless YAML Serialization in Rust"
 
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
