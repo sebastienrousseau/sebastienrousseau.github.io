@@ -101,6 +101,14 @@ site_software: "Shokunin, Rust"
 
 ## All News Stories and Articles
 
+![Banner Image of Network nodes in a digital blue space](https://kura.pro/stock/images/banners/digital-constellation.webp).class=\"fade-in w-25 p-3 float-start\"
+
+### Quantum Algorithm Challenges Lattice-Based Cryptography
+
+New quantum algorithm solves key crypto problem, urges research into quantum-safe security. [**Read full story ❯**][35]
+
+![divider][divider].class=\"m-10 w-100\"
+
 ![Banner of Vibrant gradient overlay on repeated profiles](https://kura.pro/stock/images/banners/open-voice.webp).class=\"fade-in w-25 p-3 float-start\"
 
 ### OpenVoice: Leading Innovation in Voice Cloning Technology
@@ -460,5 +468,6 @@ Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential 
 [32]: /2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html "Advancing AI with Multimodal LLMs: Insights from MM1"
 [33]: /2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"
 [34]: /2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html "OpenVoice: Leading Innovation in Voice Cloning Technology"
+[35]: /2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html "Quantum Algorithm Challenges Lattice-Based Cryptography"
 
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"

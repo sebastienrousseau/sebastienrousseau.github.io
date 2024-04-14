@@ -120,6 +120,18 @@ Read the latest articles below, and [**see all articles, news and product announ
 
 ## Latest News
 
+![Banner Image of Network nodes in a digital blue space](https://kura.pro/stock/images/banners/digital-constellation.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-end\"
+
+### Quantum Algorithm Challenges Lattice-Based Cryptography
+
+*by [Sebastien Rousseau][00] (15 Apr 2024)*
+
+New quantum algorithm solves key crypto problem, urges research into quantum-safe security.
+
+[**Learn more ❯**][20]
+
+![divider][divider].class=\"m-10 w-100\"
+
 ![Banner for the Fully Homomorphic Encryption](https://kura.pro/stock/images/banners/open-voice.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-start\"
 
 ### OpenVoice: Leading Innovation in Voice Cloning Technology
@@ -188,6 +200,7 @@ Discover RustLogs (RLG), the flexible logging library for Rust with structured l
 [17]: /2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html "Advancing AI with Multimodal LLMs: Insights from MM1"
 [18]: /2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"
 [19]: /2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html "OpenVoice: Leading Innovation in Voice Cloning Technology"
+[20]: /2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html "Quantum Algorithm Challenges in Lattice-Based Cryptography"
 
 [100]: /articles/index.html "See all articles"
 
