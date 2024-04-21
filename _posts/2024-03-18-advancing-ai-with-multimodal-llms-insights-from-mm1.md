@@ -46,6 +46,16 @@ title: "Advancing AI with Multimodal LLMs: Insights from MM1"
 url: "https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
+# News - The News SiteMap front matter (YAML).
+news_genres: "Blog"
+news_keywords: "Multimodal LLMs, MM1 study, AI advancements, pre-training strategies, image recognition, natural language processing, AI applications, future of AI, multimodal learning, AI research"
+news_language: "en"
+news_image_loc: "https://kura.pro/stock/images/banners/mm1-visual.webp"
+news_loc: "https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html"
+news_publication_date: "Mon, 18 Mar 2024 06:06:06 +0000"
+news_publication_name: "sebastienrousseau.com"
+news_title: "Advancing AI with Multimodal LLMs: Insights from MM1"
+
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/rss.xml"
 category: "Technology"

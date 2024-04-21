@@ -46,6 +46,16 @@ title: "Alien Studio: My Tech-to Art Journey in Photography"
 url: "https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
+# News - The News SiteMap front matter (YAML).
+news_genres: "Blog"
+news_keywords: "personal tech journey, Rust discovery, AI exploration, Quantum Computing, art and photography fusion, Alien Studio, digital art creation, technology in art, innovative photography, artistic rediscovery"
+news_language: "en"
+news_image_loc: "https://kura.pro/alienstudio/images/collections/radiance/radiance-08.webp"
+news_loc: "https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html"
+news_publication_date: "Mon, 08 Jan 2024 05:06:06 +0000"
+news_publication_name: "sebastienrousseau.com"
+news_title: "Alien Studio: My Tech-to Art Journey in Photography"
+
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/rss.xml"
 category: "Technology"

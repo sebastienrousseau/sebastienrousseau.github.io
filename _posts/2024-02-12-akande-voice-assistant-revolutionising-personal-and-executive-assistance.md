@@ -46,6 +46,16 @@ title: "Àkàndé Voice Assistant, A Personal and Executive Assistance"
 url: "https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
+# News - The News SiteMap front matter (YAML).
+news_genres: "Blog"
+news_keywords: "Àkàndé, Voice Assistant, Natural Language Understanding, PDF Summaries, Efficient Caching, OpenAI GPT, Executive Assistance, Personal Assistance, Digital Assistants, Technology Innovation"
+news_language: "en"
+news_image_loc: "https://kura.pro/stock/images/banners/akande-voice-assistant.webp"
+news_loc: "https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html"
+news_publication_date: "Mon, 12 Feb 2024 11:12:12 +0000"
+news_publication_name: "sebastienrousseau.com"
+news_title: "Àkàndé Voice Assistant, A Personal and Executive Assistance"
+
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/rss.xml"
 category: "Technology"

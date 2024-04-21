@@ -46,6 +46,16 @@ title: "AI Prompt Engineering 2024: Insights & Advanced Techniques"
 url: "https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
+# News - The News SiteMap front matter (YAML).
+news_genres: "Blog"
+news_keywords: "AI Prompt Engineering, Custom Instructions, Multi-Persona AI, Chain of Thought, Quantum Computing, Ethical AI, Adaptive Prompting, Zero Shot Prompting, Few Shot Prompting, AI Technology Trends"
+news_language: "en"
+news_image_loc: "https://kura.pro/stock/images/banners/ai-prompt-engineering-modern-office.webp"
+news_loc: "https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html"
+news_publication_date: "Tue, 23 Jan 2024 05:06:06 +0000"
+news_publication_name: "sebastienrousseau.com"
+news_title: "AI Prompt Engineering 2024: Insights & Advanced Techniques"
+
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/rss.xml"
 category: "Technology"

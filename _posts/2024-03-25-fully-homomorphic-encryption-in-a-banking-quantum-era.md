@@ -46,6 +46,16 @@ title: "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"
 url: "https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
+# News - The News SiteMap front matter (YAML).
+news_genres: "Blog"
+news_keywords: "Fully Homomorphic Encryption, banking security, quantum computing, financial data encryption, FHE case studies, regulatory frameworks FHE, computational overhead FHE, FHE research, FHE hardware, data privacy laws"
+news_language: "en"
+news_image_loc: "https://kura.pro/stock/images/banners/fully-homomorphic-encryption.webp"
+news_loc: "https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html"
+news_publication_date: "Mon, 25 Mar 2024 06:06:06 +0000"
+news_publication_name: "sebastienrousseau.com"
+news_title: "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"
+
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/rss.xml"
 category: "Technology"

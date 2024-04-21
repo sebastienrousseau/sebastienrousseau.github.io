@@ -46,6 +46,16 @@ title: "Le Chat by Mistral AI: A New Era in Conversational AI"
 url: "https://sebastienrousseau.com/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
+# News - The News SiteMap front matter (YAML).
+news_genres: "Blog"
+news_keywords: "Le Chat AI, Mistral AI chatbot, Le Chat virtual assistant, Mistral AI language understanding, Le Chat AI customer service, Mistral AI enterprise solutions, Le Chat AI customisation, Mistral AI multilingual support, Le Chat AI-powered communication, Mistral AI AI-driven business solutions"
+news_language: "en"
+news_image_loc: "https://kura.pro/stock/images/banners/abstract-digital-art-of-a-cat.webp"
+news_loc: "https://sebastienrousseau.com/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html"
+news_publication_date: "Mon, 04 Mar 2024 06:06:06 +0100"
+news_publication_name: "sebastienrousseau.com"
+news_title: "Le Chat by Mistral AI: A New Era in Conversational AI"
+
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/rss.xml"
 category: "Technology"

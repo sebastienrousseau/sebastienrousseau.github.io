@@ -46,6 +46,16 @@ title: "EU's AI Act: Pioneering Ethical AI Regulation Worldwide"
 url: "https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
+# News - The News SiteMap front matter (YAML).
+news_genres: "Blog"
+news_keywords: "EU AI Act, Artificial Intelligence regulation, Ethical AI framework, AI risk management, AI innovation, AI transparency, AI consumer rights, AI governance, AI standards, AI ethics"
+news_language: "en"
+news_image_loc: "https://kura.pro/stock/images/banners/ryoji-iwata-a-qsFZimp1M.webp"
+news_loc: "https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html"
+news_publication_date: "Tue, 13 Feb 2024 14:15:15 +0000"
+news_publication_name: "sebastienrousseau.com"
+news_title: "EU's AI Act: Pioneering Ethical AI Regulation Worldwide"
+
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/rss.xml"
 category: "Technology"

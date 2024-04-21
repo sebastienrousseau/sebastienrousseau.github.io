@@ -46,6 +46,16 @@ title: "AI-Powered Speech Analysis, Translation, & Insight Tool"
 url: "https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
+# News - The News SiteMap front matter (YAML).
+news_genres: "Blog"
+news_keywords: "audio analyser, azure ai, speech-to-text, audio data analysis, text analysis, ai translations, audio insights, automated transcription, audio data processing, machine learning"
+news_language: "en"
+news_image_loc: "https://kura.pro/stock/images/banners/modern-corporate-office-with-technological-displays.webp"
+news_loc: "https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html"
+news_publication_date: "Mon, 29 Jan 2024 05:06:06 +0000"
+news_publication_name: "sebastienrousseau.com"
+news_title: "AI-Powered Speech Analysis, Translation, & Insight Tool"
+
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/rss.xml"
 category: "Technology"

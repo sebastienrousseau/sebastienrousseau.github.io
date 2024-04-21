@@ -46,6 +46,16 @@ title: "OpenVoice: Leading Innovation in Voice Cloning Technology"
 url: "https://sebastienrousseau.com/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
+# News - The News SiteMap front matter (YAML).
+news_genres: "Blog"
+news_keywords: "OpenVoice, Voice Cloning Technology, AI Synthetic Speech, Open-Source Voice Cloning, Cross-Lingual Voice Synthesis, Instant Voice Cloning, Voice Style Control, Accessibility Voice Tech, Entertainment Industry Voices, Customer Service Voice AI"
+news_language: "en"
+news_image_loc: "https://kura.pro/stock/images/banners/open-voice.webp"
+news_loc: "https://sebastienrousseau.com/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html"
+news_publication_date: "Mon, 01 Apr 2024 06:06:06 +0000"
+news_publication_name: "sebastienrousseau.com"
+news_title: "OpenVoice: Leading Innovation in Voice Cloning Technology"
+
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/rss.xml"
 category: "Technology"

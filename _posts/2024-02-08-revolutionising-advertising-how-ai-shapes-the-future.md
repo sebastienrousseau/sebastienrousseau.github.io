@@ -46,6 +46,16 @@ title: "Revolutionising Advertising: How AI Shapes the Future"
 url: "https://sebastienrousseau.com/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
+# News - The News SiteMap front matter (YAML).
+news_genres: "Blog"
+news_keywords: "AI in advertising, Amazon Rufus, Meta AI tools, consumer targeting, advertising technology, AI chatbots, digital marketing trends, AI analytics, creative AI, ad campaign optimization"
+news_language: "en"
+news_image_loc: "https://kura.pro/stock/images/banners/advertising-ai.webp"
+news_loc: "https://sebastienrousseau.com/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html"
+news_publication_date: "Thu, 08 Feb 2024 07:08:08 +0000"
+news_publication_name: "sebastienrousseau.com"
+news_title: "Revolutionising Advertising: How AI Shapes the Future"
+
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/rss.xml"
 category: "Technology"

@@ -46,6 +46,16 @@ title: "Fast Real-Time Speech Recognition on macOS: OpenAI Whisper"
 url: "https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
+# News - The News SiteMap front matter (YAML).
+news_genres: "Blog"
+news_keywords: "OpenAI Whisper, Metal Performance Shaders, macOS speech recognition, real-time transcription, voice activity detection, GPU acceleration, Python integration, speech-to-text macOS, energy-efficient speech detection, Apple silicon"
+news_language: "en"
+news_image_loc: "https://kura.pro/stock/images/banners/research-paper.webp"
+news_loc: "https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html"
+news_publication_date: "Tue, 12 Mar 2024 21:21:21 +0000"
+news_publication_name: "sebastienrousseau.com"
+news_title: "Fast Real-Time Speech Recognition on macOS: OpenAI Whisper"
+
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/rss.xml"
 category: "Technology"

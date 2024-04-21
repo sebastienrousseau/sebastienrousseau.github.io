@@ -46,6 +46,16 @@ title: "Google Gemma AI: Transforming Open-Source AI Development"
 url: "https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
+# News - The News SiteMap front matter (YAML).
+news_genres: "Blog"
+news_keywords: "Google Gemma AI, open-source AI model, Gemma technical architecture, Gemma 2B 7B, ethical AI, AI integration macOS, AI enterprise solutions, conversational AI, data analysis AI, AI for edge devices"
+news_language: "en"
+news_image_loc: "https://kura.pro/stock/images/banners/ai-ship.webp"
+news_loc: "https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html"
+news_publication_date: "Mon, 26 Feb 2024 06:06:06 +0100"
+news_publication_name: "sebastienrousseau.com"
+news_title: "Google Gemma AI: Transforming Open-Source AI Development"
+
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/rss.xml"
 category: "Technology"

@@ -46,6 +46,16 @@ title: "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
 url: "https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
+# News - The News SiteMap front matter (YAML).
+news_genres: "Blog"
+news_keywords: "Quantum Computing, AI Algorithms, Financial Mathematics, Banking Technology, Risk Management, Algorithm Design, Data Analysis, Investment Strategies, Quantum Finance, Machine Learning"
+news_language: "en"
+news_image_loc: "https://kura.pro/stock/images/banners/circuit_board_cityscape.webp"
+news_loc: "https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html"
+news_publication_date: "Mon, 25 Dec 2023 06:07:07 +0000"
+news_publication_name: "sebastienrousseau.com"
+news_title: "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
+
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/state-of-ai-and-quantum-computing-in-banking-a-2023-review/rss.xml"
 category: "Technology"

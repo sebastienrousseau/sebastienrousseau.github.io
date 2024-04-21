@@ -120,6 +120,18 @@ Read the latest articles below, and [**see all articles, news and product announ
 
 ## Latest News
 
+![Image generated using MidJourney - A Network of digital nodes in red and blue hues](https://kura.pro/stock/images/banners/digital-nodes.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-start\"
+
+### Bug Discovered in Quantum Algorithm for Lattice-Based Crypto
+
+*by [Sebastien Rousseau][00] (22 Apr 2024)*
+
+A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research.
+
+[**Learn more ❯**][21]
+
+![divider][divider].class=\"m-10 w-100\"
+
 ![Banner Image of Network nodes in a digital blue space](https://kura.pro/stock/images/banners/digital-constellation.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-end\"
 
 ### Quantum Algorithm Challenges Lattice-Based Cryptography
@@ -201,6 +213,7 @@ Discover RustLogs (RLG), the flexible logging library for Rust with structured l
 [18]: /2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"
 [19]: /2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html "OpenVoice: Leading Innovation in Voice Cloning Technology"
 [20]: /2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html "Quantum Algorithm Challenges in Lattice-Based Cryptography"
+[21]: /2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html "Bug Discovered in Quantum Algorithm for Lattice-Based Crypto"
 
 [100]: /articles/index.html "See all articles"
 

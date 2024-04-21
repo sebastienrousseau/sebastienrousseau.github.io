@@ -101,6 +101,14 @@ site_software: "Shokunin, Rust"
 
 ## All News Stories and Articles
 
+![Image generated using MidJourney - A Network of digital nodes in red and blue hues](https://kura.pro/stock/images/banners/digital-nodes.webp).class=\"fade-in w-25 p-3 float-start\"
+
+### Bug Discovered in Quantum Algorithm for Lattice-Based Crypto
+
+A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research.  [**Read full story ❯**][36]
+
+![divider][divider].class=\"m-10 w-100\"
+
 ![Banner Image of Network nodes in a digital blue space](https://kura.pro/stock/images/banners/digital-constellation.webp).class=\"fade-in w-25 p-3 float-start\"
 
 ### Quantum Algorithm Challenges Lattice-Based Cryptography
@@ -469,5 +477,6 @@ Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential 
 [33]: /2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"
 [34]: /2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html "OpenVoice: Leading Innovation in Voice Cloning Technology"
 [35]: /2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html "Quantum Algorithm Challenges Lattice-Based Cryptography"
+[36]: /2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html "Bug Discovered in Quantum Algorithm for Lattice-Based Crypto"
 
 [divider]: https://kura.pro/common/images/elements/divider.svg "Divider"

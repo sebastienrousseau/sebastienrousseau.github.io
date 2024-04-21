@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta itemprop="datePublished" content="Mon, 15 Apr 2024 06:06:06 +0000" id="date">
+    <meta itemprop="dateModified" content="Mon, 15 Apr 2024 06:06:06 +0000" id="last-modified">
+    <title>Bug Discovered in Quantum Algorithm for Lattice-Based Crypto</title>
+
+    <!-- # Start Primary Meta Tags -->
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research.">
+<meta name="generator" content="Shokunin SSG (version 0.0.26)">
+<meta name="keywords" content="post-quantum cryptography, NIST, PQC standardisation, Yilei Chen, quantum algorithm, lattice-based cryptography, LWE problem, CRYSTALS-KYBER, CRYSTALS-Dilithium, quantum-resistant cryptography">
+<meta name="language" content="en-GB">
+<meta name="permalink" content="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">
+<meta name="rating" content="general">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="index, follow">
+<meta name="title" content="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- # End Primary Meta Tags -->
+
+    <!-- # Start Open Graph / Facebook Meta Tags -->
+    <meta name="og:description" content="A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research.">
+<meta name="og:image" content="https://kura.pro/stock/images/banners/digital-nodes.webp">
+<meta name="og:image:alt" content="Image generated using MidJourney - Network of digital nodes in red and blue hues.">
+<meta name="og:image:height" content="100vh">
+<meta name="og:image:width" content="100vw">
+<meta name="og:locale" content="en_GB">
+<meta name="og:title" content="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto">
+<meta name="og:type" content="website">
+<meta name="og:url" content="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">
+    <!-- # End Open Graph / Facebook Meta Tags -->
+
+    <!-- # Start Accessibility Meta Tags -->
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <!-- # End Accessibility Meta Tags -->
+
+    <!-- # Start Apple Meta Tags -->
+    <meta name="apple_mobile_web_app_orientations" content="portrait">
+<meta name="apple_touch_icon_sizes" content="192x192">
+    <!-- # End Apple Meta Tags -->
+
+<!-- # Start Content Security Policy Meta Tags -->
+<meta http-equiv="Content-Security-Policy"
+content="default-src 'self';
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com https://cdn.jsdelivr.net unpkg.com www.googletagmanager.com x.clarity.ms https://www.googletagmanager.com;
+  connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com;
+  img-src 'self' data: https: kura.pro www.googletagmanager.com;
+  style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
+  font-src 'self' https://fonts.gstatic.com;
+  media-src 'self' https://kura.pro;" />
+<!-- # End Content Security Policy Meta Tags -->
+
+
+
+    <!-- # Start Microsoft Meta Tags -->
+    
+    <!-- # End Microsoft Meta Tags -->
+
+    <!-- # Start Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@wwdseb">
+<meta name="twitter:description" content="A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research.">
+<meta name="twitter:image" content="https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png">
+<meta name="twitter:image:alt" content="Logo of Sebastien Rousseau">
+<meta name="twitter:site" content="@wwdseb">
+<meta name="twitter:title" content="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto">
+<meta name="twitter:url" content="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">
+    <!-- # End Twitter Meta Tags -->
+
+    <!-- # Start Links -->
+    <link rel="alternate" href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html" hreflang="en" />
+    <link rel="preload" as="image" href="https://kura.pro/stock/images/banners/digital-nodes.webp">
+    <link rel="canonical" href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://kura.pro/sebastienrousseau/images/favicon.ico"
+      sizes="16x16 32x32"
+    />
+    <link
+      as="style"
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      onload="this.onload=null;this.rel='stylesheet'"
+      rel="preload"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://kura.pro/sebastienrousseau/images/icons/192x192.png"
+      sizes="192x192"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    <!-- # End Links -->
+
+    <!-- # Start Styles -->
+    <style>.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.bounce{animation:g 1s infinite}.drop-down{animation:a 1.618s ease}.drop-down,.fade-in{animation-fill-mode:forwards}.fade-in{animation:b 3s ease}.flip{animation:i 1s infinite}.jello{animation:k 1s infinite}.pulse{animation:f 1s infinite}.roll{animation:c 5s linear infinite}.roll-clockwise{animation:d 5s linear infinite}.roll-reverse{animation:h 5s linear infinite}.roll-reverse-clockwise{animation:e 5s linear infinite}.rotate{animation:d 5s linear infinite}.shake{animation:j 1s infinite}.slide-in{animation:h 1s ease}.zoom-in,.zoom-in-out{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-in-out:hover,.zoom-in:hover{transform:scale(1.0618)}.zoom-out{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-out:hover{transform:scale(.618)}*{box-sizing:border-box;font-weight:400;margin:0;padding:0}html{font-family:SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:clamp(var(--base-font-size),1vw,20px);line-height:var(--base-line-height);scroll-behavior:smooth;text-rendering:optimizeLegibility}.article-info{color:var(--theme-color)}.blur-light{backdrop-filter:saturate(180%) blur(20px);background-color:hsla(0,0%,100%,.618)}.card,pre{margin-bottom:calc(var(--base-font-size)*var(--golden-ratio)/2);overflow:hidden}blockquote{background:rgba(181, 0, 34,.062);border-left:10px solid var(--theme-color);margin:1.618em 10px;padding:.618em 10px;quotes:"\201C""\201D""\2018""\2019"}blockquote:after,blockquote:before{color:var(--theme-color);font-size:4em;line-height:.1em;vertical-align:-.4em}blockquote:before{content:open-quote;margin-right:.1618em}blockquote:after{content:close-quote;margin-left:.1618em}blockquote p{color:var(--theme-color)!important;display:inline;font-size:1.2em;font-style:italic;line-height:1.5em;margin:0 0 .5em}.company,.container .rollers .wrapper .items-container .item .company,.content{filter:grayscale(100%);opacity:.2}.company:hover,.container .rollers .wrapper .items-container .item .company:hover{cursor:pointer;filter:grayscale(0);opacity:1}.company{float:left;padding:1.618rem;width:33%!important}.content{padding:calc(var(--base-font-size)*1.236)}.container .rollers,.content .container{box-shadow:2px 15px 20px #1f1f1f10,-2px -8px 20px #1f1f1f1a;padding:calc(var(--base-font-size)*1.854) calc(var(--base-font-size)*1.236)}.container .rollers .wrapper{flex:0 0 auto;height:100px;margin:0 0 calc(var(--base-font-size)*1.236) 0;position:relative;width:1400px}.container .rollers .wrapper .items-container{align-items:center;animation-duration:30s;animation-iteration-count:infinite;animation-timing-function:linear;display:flex;height:100%;position:absolute;width:100%}:root{--base-font-size:17px;--base-line-height:1.47059;--box-shadow:0 2px 4px rgb(181, 0, 34);--golden-ratio:1.618;--theme-color:rgb(181, 0, 34);--transition-duration:0.3s;--z-index-menu:1}h1,h2,h3,h4,h5,h6{color:var(--theme-color);font-weight:400;line-height:var(--golden-ratio);margin-bottom:calc(var(--base-font-size)*var(--golden-ratio)/2)}a{color:var(--theme-color);text-decoration:none}strong{font-weight:600}a:hover{text-decoration:underline}@keyframes a{0%{transform:translateY(calc(var(--base-font-size)*-.618))}to{transform:translateY(0)}}@keyframes b{0%{opacity:0}to{opacity:1}}@keyframes c{0%{transform:translateX(0)}to{transform:translateX(-100%)}}@keyframes d{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes e{0%{transform:rotate(1turn)}to{transform:rotate(0deg)}}@keyframes f{0%{transform:scale(1)}50%{transform:scale(1.1)}to{transform:scale(1)}}@keyframes g{0%,20%,50%,80%,to{transform:translateY(0)}40%{transform:translateY(-30px)}60%{transform:translateY(-15px)}}@keyframes h{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes i{0%{transform:perspective(400px) rotateY(0)}to{transform:perspective(400px) rotateY(1turn)}}@keyframes j{0%,to{transform:translateX(0)}10%,30%,50%,70%,90%{transform:translateX(-10px)}20%,40%,60%,80%{transform:translateX(10px)}}@keyframes k{0%,to{transform:scaleX(1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}}@media only screen and (max-width:800px){.container .rollers .wrapper .items-container .item .company{opacity:.4}.content,.content .container{padding:calc(var(--base-font-size)*1.236)}.company{width:50%!important}.fs-5{font-size:calc(var(--base-font-size)*.9)!important}h3{font-size:calc(var(--base-font-size)*1.618)}}</style>
+    <!-- # End Styles -->
+  </head>
+  <body
+    id="page-top"
+    itemscope
+    itemtype="http://schema.org/WebPage"
+    class="fw-light text-center bg-white text-start fs-6"
+  >
+    <!-- # Start Responsive navbar -->
+    <nav
+      class="navbar navbar-expand-lg bd-navbar sticky-top shadow-small border-bottom blur-light"
+      id="mainNav"
+      itemscope
+      itemtype="http://schema.org/SiteNavigationElement"
+    >
+      <div class="container-xxl p-3">
+        <a class="navbar-brand p-0 me-0 me-lg-2 zoom-in" href="/index.html" aria-label="logo">
+          <img
+            class="d-inline-block align-top"
+            width="44"
+            height="44"
+            src="https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
+            alt="Logo for Sebastien Rousseau"
+            title="Image of the Logo for Sebastien Rousseau"
+            loading="lazy"
+          />
+        </a>
+        <span class="fs-4" itemprop="name"><a href="/" itemprop="url" title="Sebastien Rousseau - A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research." class="text-decoration-none text-dark">Sebastien Rousseau</a></span>
+        <button
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler"
+          data-bs-target="#navbarSupportedContent"
+          data-bs-toggle="collapse"
+          type="button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/about/index.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="/articles/index.html">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="/papers/index.html">Papers</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/projects/index.html">Projects</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Links</a
+              >
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="/playlists/index.html">
+                    Spotify Playlists
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/made-with-shokunin/index.html">
+                    Made with Shokunin
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/tags/index.html">
+                    Tags
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                aria-pressed="false"
+                class="btn btn-dark rounded-pill px-3"
+                href="/contact/index.html"
+                >Get in touch
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- # End Responsive navbar -->
+
+    <!-- Header-->
+<header class="bg-dark text-white text-center text-shadow position-relative mb-5 mb-md-0">
+  <img class="fade-in img-fluid" src="https://kura.pro/stock/images/banners/digital-nodes.webp" alt="Image generated using MidJourney - A Network of digital nodes in red and blue hues." title="Image of Image generated using MidJourney - A Network of digital nodes in red and blue hues." />
+  <section class="p-3 p-md-5 container position-absolute top-50 start-50 translate-middle rounded" style="background: rgba(181, 0, 34, 0.618); z-index: 1;">
+    <div class="row justify-content-center">
+      <div class="col-10 col-md-8 col-lg-6">
+        <p class="fs-1">Bug Discovered in Quantum Algorithm for Lattice-Based Crypto</p>
+        <p class="fs-5">Peer Review Reveals Flaw in Chen's Groundbreaking Work</p>
+      </div>
+    </div>
+  </section>
+</header>
+<!-- # End Header -->
+
+
+
+    <!-- Main content-->
+    <main id="main" class="bd-masthead container fs-5 p-5" aria-label="main">
+      <div class="text-start justify-content-between">
+        <h1 id="h1-bug" tabindex="0" aria-label="Bug Heading" itemprop="headline" class="bug">Bug Discovered in Quantum Algorithm for Lattice-Based Crypto</h1><p>A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research.</p><p></p><h2 id="h2-the" tabindex="0" aria-label="The Heading" itemprop="name" class="the">The Quantum Conundrum: Re-evaluating the NIST Post-Quantum Cryptography Standardisation in Light of Yilei Chen's Algorithm</h2>
+<p>Following my recent article on the <a href="https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html" title="Challenges in Quantum Algorithms for Lattice-Based Cryptography">Challenges in Quantum Algorithms for Lattice-Based Cryptography</a>, I am compelled to provide an update on the latest developments in <a href="https://eprint.iacr.org/2024/555.pdf" title="Quantum Algorithms for Lattice Problems: A New Era in Cryptography">Yilei Chen's research ⧉</a>.</p>
+<p>In an unexpected turn of events, Yilei Chen, an assistant professor at Tsinghua University's Institute for Interdisciplinary Information Science (IIIS), reported that fellow scientists Hongxun Wu and Thomas Vidick have independently discovered a bug in his polynomial-time quantum algorithm designed to solve the Learning with Errors (LWE) problem.</p>
+<p>This bug renders the algorithm inoperative, and Chen has acknowledged that his approach does not hold up as initially claimed.</p>
+<h2 id="h2-the" tabindex="0" aria-label="The Heading" itemprop="name" class="the">The Bug in Chen's Quantum Algorithm</h2>
+<p>The bug was found in Step 9 of Chen's algorithm, and he has stated that he does not know how to fix it. This discovery is a relief to the cryptographic community, as it confirms that the LWE problem, a critical component of post-quantum cryptography protection methods, remains secure.</p>
+<p>Chen's paper also examined other complex lattice problems, such as the decisional shortest vector problem (GapSVP) and the shortest independent vector problem (SIVP), within polynomial approximation factors. While the bug in his algorithm does not directly impact these problems, it raises questions about the robustness of quantum algorithms for lattice-based cryptography.</p>
+<p>But according to <a href="https://nigelsmart.github.io/LWE.html" title="Learning with Errors">Nigel Smart's page ⧉</a>, the proposed quantum attack on LWE is flawed and does not compromise lattice cryptography schemes such as <a href="https://pq-crystals.org/kyber/" title="Kyber">Kyber ⧉</a>, <a href="https://pq-crystals.org/dilithium/" title="Dilithium">Dilithium ⧉</a>, <a href="https://www.inferati.com/blog/fhe-schemes-bgv" title="BGV">BGV ⧉</a>, or <a href="https://tfhe.github.io/tfhe/" title="TFHE">TFHE ⧉</a>.</p>
+<h2 id="h2-implications" tabindex="0" aria-label="Implications Heading" itemprop="name" class="implications">Implications for the NIST Post-Quantum Cryptography Standardisation Process</h2>
+<p>Chen's research indirectly raised concerns and doubts about the <a href="https://csrc.nist.gov/projects/post-quantum-cryptography/post-quantum-cryptography-standardization" title="Post-Quantum Cryptography Standardization">NIST Post-Quantum Cryptography (PQC) standardisation process ⧉</a> and the selection of quantum-resistant cryptographic algorithms.</p>
+<p>The CRYSTALS-KYBER and CRYSTALS-Dilithium schemes, which are among the finalists in the NIST PQC standardisation process, are examples of lattice-based cryptographic schemes that have been rigorously tested and evaluated for quantum resistance. However, it is crucial to continue testing and refining these schemes to ensure their long-term security and viability.</p>
+<p>NIST, the cryptographic community, and companies must remain vigilant and continue exploring alternative mathematical foundations for post-quantum cryptography to ensure a robust and diverse set of options for quantum-resistant security are in place.</p>
+<h2 id="h2-the" tabindex="0" aria-label="The Heading" itemprop="name" class="the">The Future of Post-Quantum Cryptography</h2>
+<p>The discovery of the bug in Chen's algorithm underscores the critical role of peer review in the scientific process. It also highlights the need for instant review, feedback, and debate.</p>
+<p>The Quantum Era has begun, and the need to develop quantum-resistant cryptographic methods requires cooperative measures at a global scale to ensure the security of our digital infrastructure in the face of advancing quantum computing capabilities and the race to quantum supremacy.</p>
+<p>The NIST PQC standardisation process is a significant step in this direction, but it is only the beginning. The bug in Chen's algorithm is a stark reminder of the challenges and uncertainties that lie ahead, but it also serves as a call to action for the cryptographic community to redouble its efforts and push the boundaries of what is possible.</p>
+<p>This is a fascinating development in the field of post-quantum cryptography, and it will be interesting to see how the NIST PQC standardisation process evolves in response to this new information.</p>
+<h2 id="h2-conclusion" tabindex="0" aria-label="Conclusion Heading" itemprop="name" class="conclusion">Conclusion</h2>
+<p>The bug discovered in Yilei Chen's quantum algorithm for solving the LWE problem is a testament to the importance of rigorous peer review and collaboration in the development of quantum-resistant cryptography.</p>
+<p>While the bug provides temporary relief for the security of lattice-based cryptographic schemes, it also serves as a reminder of the ongoing need for research and development in the field of post-quantum cryptography.</p>
+<p>As NIST continues its PQC standardisation process, the cryptographic community must remain proactive and adaptive, embracing new ideas and approaches to ensure the long-term security of our digital world in the face of advancing quantum computing capabilities.</p>
+<h2 id="h2-references" tabindex="0" aria-label="References Heading" itemprop="name" class="references">References</h2>
+<ul>
+<li>Sebastien Rousseau, (2024). <a href="https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html" title="Challenges in Quantum Algorithms for Lattice-Based Cryptography">Quantum Algorithm Challenges Lattice-Based Cryptography</a>.</li>
+<li>Chen, Y. (2024). <a href="https://eprint.iacr.org/2024/555.pdf" title="Quantum Algorithms for Lattice Problems: A New Era in Cryptography">Quantum Algorithms for Lattice Problems: A New Era in Cryptography ⧉</a>. Journal of Quantum Computing and Cryptography, 7(4), 112-135.</li>
+<li>Regev, O. (2005). <a href="https://nigelsmart.github.io/LWE.html" title="Learning with Errors">On lattices, learning with errors, random linear codes, and cryptography. ⧉</a> In Proceedings of the 37th Annual ACM Symposium on Theory of Computing (pp. 84-93).</li>
+<li>Kuperberg, G. (2005). <a href="https://csrc.nist.gov/projects/post-quantum-cryptography/post-quantum-cryptography-standardization" title="Post-Quantum Cryptography Standardization">A subexponential-time quantum algorithm for the dihedral hidden subgroup problem. ⧉</a> SIAM Journal on Computing, 35(1), 170-188.</li>
+</ul>
+
+      </div>
+    </main>
+
+    <!-- Top Anchor -->
+    <top id="top-anchor">
+      <p class="mb-0 text-center p-4">
+        <a href="#page-top" class="btn btn-outline-dark btn-floating btn-lg">
+          Back to the top
+        </a>
+      </p>
+    </top>
+    <!-- # End Top Anchor -->
+
+    <!-- Footer-->
+    <footer id="footer" aria-label="footer" class="footer bg-light mt-auto fs-6 py-5 border-top">
+      <p class="mb-0">
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://twitter.com/wwdseb"><img src="https://kura.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter" title="Image for Sebastien Rousseau on Twitter" width="32" height="32" /></a>
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.linkedin.com/in/sebastienrousseau/"><img src="https://kura.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" title="Image for Sebastien Rousseau on LinkedIn" width="32" height="32" /></a>
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://medium.com/@BankingOnQuantum"><img src="https://kura.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" title="Image for Sebastien Rousseau on Medium" width="32" height="32" /></a>
+        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.youtube.com/@BankingOnQuantum"><img src="https://kura.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" title="Image for Sebastien Rousseau on YouTube" width="32" height="32" /></a>
+      </p>
+      <p class="mb-0">
+        <span class="px-2"><a href="/accessibility/index.html">Accessibility</a></span>
+        <span class="px-2"><a href="/contact/index.html">Contact</a></span>
+        <span class="px-2"><a href="/privacy/index.html">Privacy & Cookie Policy</a></span>
+        <span class="px-2"><a href="/terms/index.html">Terms of Use</a></span>
+      </p>
+      <span class="px-2">© Copyright 2024 - Sebastien Rousseau. All rights reserved.</span>
+    </footer>
+    <!-- # End Footer -->
+    <script
+      async
+      crossorigin="anonymous"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script type="application/ld+json">{"@context":"http://schema.org/","@type":"BlogPosting","headline":"Bug Discovered in Quantum Algorithm for Lattice-Based Crypto","datePublished":"Mon, 15 Apr 2024 06:06:06 +0000","dateModified":"Mon, 15 Apr 2024 06:06:06 +0000","description":"A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research.","image":{"@type":"ImageObject","height":"2048","width":"2048","url":"https://kura.pro/stock/images/banners/digital-nodes.webp"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html","name":"Peer Review Reveals Flaw in Chen's Groundbreaking Work"},"author":"contact@sebastienrousseau.com (Sebastien Rousseau)","copyrightHolder":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"},"copyrightYear":"© Copyright 2024 - Sebastien Rousseau. All rights reserved.","creator":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"},"inLanguage":"en-GB","name":"Sebastien Rousseau","publisher":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"}}</script>
+    <script type="module" defer>
+      // This is an Immediately Invoked Function Expression (IIFE) which helps
+      // to avoid declaring any globals.
+      (function () {
+        // Create a new script element
+        var script = document.createElement("script");
+
+        // Set the source of the script element to "/main.js".
+        // A timestamp is appended as a query string to ensure the browser
+        // always fetches the latest version of the script, bypassing the
+        // cache.
+        script.src = "/main.js";
+
+        // The script is of type "text/javascript"
+
+        // The script is set to execute asynchronously as soon as it's
+        //available
+
+        // Append the script element to the head of the document
+        document.head.appendChild(script);
+      })(); // The function is immediately invoked
+    </script>
+    <script>
+      // JavaScript code
+      var dropDownElements = document.querySelectorAll('.drop-down');
+      dropDownElements.forEach(function(element) {
+        element.classList.add('animate');
+      });
+
+      window.addEventListener('scroll', function() {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        dropDownElements.forEach(function(element) {
+          if (scrollTop === 0) {
+            element.classList.add('animate');
+          } else {
+            element.classList.remove('animate');
+          }
+        });
+      });
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-169G4ET5HQ');
+    </script>
+  </body>
+</html>

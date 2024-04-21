@@ -46,6 +46,16 @@ title: "Unlocking Gemini 1.5: Google's AI Revolution Explained"
 url: "https://sebastienrousseau.com/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
+# News - The News SiteMap front matter (YAML).
+news_genres: "Blog"
+news_keywords: "Gemini 1.5, Google AI, Mixture-of-Experts architecture, computational efficiency, context window expansion, AI innovation, data analysis transformation, in-context learning, AI use cases, technology revolution"
+news_language: "en"
+news_image_loc: "https://kura.pro/stock/images/ai-gemini1.5.webp"
+news_loc: "https://sebastienrousseau.com/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html"
+news_publication_date: "Mon, 19 Feb 2024 14:15:15 +0000"
+news_publication_name: "sebastienrousseau.com"
+news_title: "Unlocking Gemini 1.5: Google's AI Revolution Explained"
+
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-02-19-unlocking-gemini-google-ai-revolution-explained/rss.xml"
 category: "Technology"

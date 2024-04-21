@@ -46,6 +46,16 @@ title: "Unleashing the Power of Logging in Rust with RustLogs (RLG)"
 url: "https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
+# News - The News SiteMap front matter (YAML).
+news_genres: "Blog"
+news_keywords: "Rust logging library, asynchronous Rust logging, structured log formats, Rust application debugging, customisable logging Rust, Rust development tools, RustLogs RLG features, efficient Rust logging, RustLogs integration, RustLogs documentation"
+news_language: "en"
+news_image_loc: "https://kura.pro/stock/images/banners/rustlogs.webp"
+news_loc: "https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html"
+news_publication_date: "Fri, 08 Mar 2024 06:06:06 +0100"
+news_publication_name: "sebastienrousseau.com"
+news_title: "Unleashing the Power of Logging in Rust with RustLogs (RLG)"
+
 # RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/rss.xml"
 category: "Technology"
