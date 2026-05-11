@@ -47,7 +47,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "AI, Banking & Financial Services Expert · Senior Product Manager – Wholesale Payments & API at HSBC Commercial & Investment Bank · Applied AI · ISO 20022 · Post-Quantum Cryptography"
 tags: "banking, financial services, artificial intelligence, post-quantum cryptography, blockchain technology, transformation, innovation, technology, future, Sebastien Rousseau"
-theme-color: "0, 83, 191"
+theme-color: "0, 75, 176"
 title: "Sebastien Rousseau: AI, Payments & Quantum Cryptography"
 url: "https://sebastienrousseau.com"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -80,7 +80,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "0, 83, 191"
+msapplication-navbutton-color: "0, 75, 176"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

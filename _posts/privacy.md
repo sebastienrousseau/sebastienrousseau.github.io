@@ -42,7 +42,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Your privacy is important to us."
 tags: "privacy, personal data, tracking tools, Google Analytics, Microsoft Clarity, user behaviour analytics, mouse movements, clicks, scrolls, rights, contact"
-theme-color: "0, 83, 191"
+theme-color: "0, 75, 176"
 title: "Privacy Statement — How Your Data Is Collected & Used"
 url: "https://sebastienrousseau.com/privacy"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -75,7 +75,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "0, 83, 191"
+msapplication-navbutton-color: "0, 75, 176"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

@@ -42,7 +42,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Check your connection and try again."
 tags: ""
-theme-color: "0, 83, 191"
+theme-color: "0, 75, 176"
 title: "No Internet Connection detected. Please try again later."
 url: "https://sebastienrousseau.com/offline"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -75,7 +75,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "0, 83, 191"
+msapplication-navbutton-color: "0, 75, 176"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

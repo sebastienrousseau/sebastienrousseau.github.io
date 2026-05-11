@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Industry white papers and applied research for senior payments and security leaders."
 tags: "White Papers, Research, Technology, ASR, OpenAI, macOS, Speech Recognition, GPU, Acceleration, Publications"
-theme-color: "0, 83, 191"
+theme-color: "0, 75, 176"
 title: "Research Publications & White Papers from Sebastien Rousseau"
 url: "https://sebastienrousseau.com/papers"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -74,7 +74,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "0, 83, 191"
+msapplication-navbutton-color: "0, 75, 176"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
