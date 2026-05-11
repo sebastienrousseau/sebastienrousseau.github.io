@@ -6,8 +6,8 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Turned off laptop computer on top of brown wooden table"
 banner_height: "100vh"
 banner_width: "100vw"
-banner: "https://kura.pro/stock/images/banners/bogdan-karlenko-cNcX6PPjEm8.webp"
-cdn: "https://kura.pro"
+banner: "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp"
+cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -16,12 +16,12 @@ date: "Jan 02, 2018"
 description: "A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks."
 format-detection: "telephone=no"
 hreflang: "en"
-icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://kura.pro/stock/images/banners/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
 language: "en-GB"
 layout: "articles"
@@ -29,7 +29,7 @@ locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
-logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: "active"
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
@@ -81,7 +81,7 @@ msapplication-navbutton-color: "rgb(0, 102, 204)"
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
 twitter_description: "A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks."
-twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Blockchain explained, the technology that matters the most"
@@ -99,7 +99,7 @@ site_software: "Shokunin, Rust"
 
 ---
 
-![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"
+![A very tall building that has a lot of holes in it](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"
 
 Blockchain, the underlying technology driving the meteoric rise of cryptocurrencies, is disrupting businesses, financial services, and capital markets. This transformative technology is changing how we conduct transactions and operations by making data more readily available, transparent, and secure.
 
@@ -183,7 +183,7 @@ By eliminating trusted third parties, blockchain offers the potential to restruc
 
 Like the internet before it, blockchain is a foundational technology poised to unlock new models powered by peer-to-peer transparency and trust. This revolutionary innovation promises to reshape our digital economies and connected lives in the years ahead.
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
 **That concludes our time together. Thank you for your time!**
 

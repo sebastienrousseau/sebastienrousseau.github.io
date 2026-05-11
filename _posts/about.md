@@ -7,7 +7,7 @@ banner_alt: ""
 banner_height: ""
 banner_width: ""
 banner: ""
-cdn: "https://kura.pro"
+cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
 charset: "UTF-8"
 cname: ""
@@ -16,12 +16,12 @@ date: "Oct 01, 2023"
 description: "Shaping the Future of Banking and Financial Services through Strategic Integration of Artificial Intelligence, Post-Quantum Cryptography & Blockchain Technology"
 format-detection: "telephone=no"
 hreflang: "en"
-icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/about"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://kura.pro/stock/images/banners/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "payments technology, digital finance, artificial intelligence, post-quantum cryptography, blockchain technology, strategic leadership, operational leadership, cross-platform product design, engineering, solution architecture"
 language: "en-GB"
 layout: "about"
@@ -29,7 +29,7 @@ locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
-logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 name: "Sebastien Rousseau"
 menu: "active"
 measurementID: "G-169G4ET5HQ"
@@ -81,7 +81,7 @@ msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
 twitter_description: "Shaping the Future of Banking and Financial Services through Strategic Integration of Artificial Intelligence, Post-Quantum Cryptography & Blockchain Technology"
-twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Sebastien Rousseau: AI, Banking & Financial Services Expert"
@@ -99,7 +99,7 @@ site_software: "Shokunin, Rust"
 
 ---
 
-![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/sebastien-rousseau.webp).class=\"image-wrapper float-sm-start rounded-circle w-25 float-end\"
+![A very tall building that has a lot of holes in it](https://cloudcdn.pro/stocks/images/sebastien-rousseau.png).class=\"image-wrapper float-sm-start rounded-circle w-25 float-end\"
 
 ## Biography
 
@@ -115,13 +115,15 @@ Sebastien’s diverse experience in banking, financial services, communications,
 
 Brands Sebastien has worked with along the way.
 
-![HSBC](https://kura.pro/logos/hsbc.webp).class=\"w-25 company\"
-![PayPal](https://kura.pro/logos/paypal.webp).class=\"w-25 company\"
-![Barclays](https://kura.pro/logos/barclays.webp).class=\"w-25 company\"
-![Shazam](https://kura.pro/logos/shazam.webp).class=\"w-25 company\"
-![AKQA](https://kura.pro/logos/akqa.webp).class=\"w-25 company\"
-![Virgin](https://kura.pro/logos/virgin.webp).class=\"w-25 company\"
+<div class="brands">
+<img alt="HSBC logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/hsbc.svg" width="120" />
+<img alt="PayPal logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/paypal.svg" width="120" />
+<img alt="Barclays logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/barclays.svg" width="120" />
+<img alt="Shazam logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/shazam.svg" width="120" />
+<img alt="AKQA logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/akqa.svg" width="120" />
+<img alt="Virgin logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/virgin.svg" width="120" />
+</div>
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
+[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"

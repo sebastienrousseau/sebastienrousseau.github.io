@@ -6,8 +6,8 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "A creative illustration on Quantum computing theme"
 banner_height: "100vh"
 banner_width: "100vw"
-banner: "https://kura.pro/stock/images/banners/galina-nelyubova-7ej8VWfwFsg.webp"
-cdn: "https://kura.pro"
+banner: "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp"
+cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -16,12 +16,12 @@ date: "Oct 16, 2023"
 description: "HSH uses quantum-resistant cryptographic primitives to protect your data, ensuring its security even in the face of future quantum computing advances."
 format-detection: "telephone=no"
 hreflang: "en"
-icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://kura.pro/stock/images/banners/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "quantum-resistant cryptography, post-quantum cryptography, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, quantum computing"
 language: "en-GB"
 layout: "articles"
@@ -29,7 +29,7 @@ locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
-logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: "active"
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
@@ -81,7 +81,7 @@ msapplication-navbutton-color: "rgb(0, 102, 204)"
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
 twitter_description: "Protecting Data in the Quantum Age: The Hash Library (HSH)"
-twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Protecting Data in the Quantum Age: The Hash Library (HSH)"
@@ -99,7 +99,7 @@ site_software: "Shokunin, Rust"
 
 ---
 
-![A creative illustration on Quantum computing theme](https://kura.pro/stock/images/banners/galina-nelyubova-7ej8VWfwFsg.webp).class=\"img-fluid clearfix\"
+![A creative illustration on Quantum computing theme](https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp).class=\"img-fluid clearfix\"
 
 In this article, I will examine the uses of quantum-resistant cryptography, specifically addressing the Rust Hash Library (HSH) that I developed. This library is fully optimised for cryptographic hashing and verification functions.
 
@@ -209,7 +209,7 @@ Quantum-resistant cryptography is a rapidly evolving field, and the HSH library 
 
 Protecting your data from quantum computing attacks is essential for any organisation that handles sensitive data. The [Hash Library (HSH) ⧉][00] is a powerful tool that can help you protect your data from this emerging threat.
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
 **That concludes our time together. Thank you for your time!**
 
@@ -218,7 +218,7 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [**❬ Back to Articles**][09]
 
 [00]: https://crates.io/crates/hsh "The Hash Library (HSH) - Quantum-Resistant Cryptographic Hash Library for Password Hashing and Verification"
-[01]: https://kura.pro/stock/diagrams/alice-bob-eve-encryption.svg "Secure Yet Vulnerable: Navigating Cryptographic Challenges in the Quantum Era"
+[01]: https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-encryption.svg "Secure Yet Vulnerable: Navigating Cryptographic Challenges in the Quantum Era"
 [02]: https://www.nist.gov/ "National Institute of Standards and Technology"
 [03]: https://csrc.nist.gov/projects/post-quantum-cryptography "Post-Quantum Cryptography PQC"
 [09]: /articles/index.html "Back to Articles"

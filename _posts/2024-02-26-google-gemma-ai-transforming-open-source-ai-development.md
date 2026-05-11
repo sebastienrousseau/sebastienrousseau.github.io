@@ -6,8 +6,8 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Futuristic blue spaceship with neon lights"
 banner_height: "100vh"
 banner_width: "100vw"
-banner: "https://kura.pro/stock/images/banners/ai-ship.webp"
-cdn: "https://kura.pro"
+banner: "https://cloudcdn.pro/stocks/images/ai-ship.webp"
+cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
 charset: "UTF-8"
 cname: ""
@@ -16,12 +16,12 @@ date: "Feb 26, 2024"
 description: "Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use."
 format-detection: "telephone=no"
 hreflang: "en"
-icon: "https://kura.pro/akonde/images/logos/akonde.svg"
+icon: "https://cloudcdn.pro/clients/akande/v1/logos/akande.svg"
 id: "https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html"
 image_alt: "A digital representation of Gemini 1.5's advanced AI capabilities"
 image_height: "161"
 image_width: "161"
-image: "https://kura.pro/stock/images/banners/ai-gemini1.5.webp"
+image: "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp"
 keywords: "Google Gemma AI, open-source AI model, Gemma technical architecture, Gemma 2B 7B, ethical AI, AI integration macOS, AI enterprise solutions, conversational AI, data analysis AI, AI for edge devices"
 language: "en-GB"
 layout: "report"
@@ -29,7 +29,7 @@ locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
-logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: "active"
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
@@ -50,7 +50,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 news_genres: "Blog"
 news_keywords: "Google Gemma AI, open-source AI model, Gemma technical architecture, Gemma 2B 7B, ethical AI, AI integration macOS, AI enterprise solutions, conversational AI, data analysis AI, AI for edge devices"
 news_language: "en"
-news_image_loc: "https://kura.pro/stock/images/banners/ai-ship.webp"
+news_image_loc: "https://cloudcdn.pro/stocks/images/ai-ship.webp"
 news_loc: "https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html"
 news_publication_date: "Mon, 26 Feb 2024 06:06:06 +0100"
 news_publication_name: "sebastienrousseau.com"
@@ -89,7 +89,7 @@ msapplication-navbutton-color: "15, 23, 36"
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
 twitter_description: "Explore the transformative potential of Google's Gemini 1.5, enhancing efficiency, expanding context, and revolutionising data analysis."
-twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Google Gemma AI: Transforming Open-Source AI Development"
@@ -115,7 +115,7 @@ With configurations like `Gemma 2B` and `7B`, it caters to a wide range of appli
 
 This article explores Gemma's architecture, its integration with macOS, and its potential to transform enterprise solutions and the broader AI landscape.
 
-![Google Gemma Logo - Source: Google](https://kura.pro/sebastienrousseau/images/logos/gemma.webp).class=\"fade-in w-25 p-5 float-end\"
+![Google Gemma Logo - Source: Google](https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/gemma.svg).class=\"fade-in w-25 p-5 float-end\"
 
 ## Understanding Gemma
 
@@ -139,7 +139,7 @@ As an open-source release under [**permissible licences ⧉**][03], Gemma also r
 
 ![divider][divider].class=\"m-10 w-100\"
 
-![Ollama Logo - Source: Ollama](https://kura.pro/sebastienrousseau/images/logos/ollama.webp).class=\"fade-in w-25 p-5 float-start\"
+![Ollama Logo - Source: Ollama](https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/ollama.svg).class=\"fade-in w-25 p-5 float-start\"
 
 ## Integrating Google Gemma with Ollama on macOS
 
@@ -306,4 +306,4 @@ Gemma's launch is a watershed moment in the field of AI, highlighting a shift to
 [04]: https://www.python.org/downloads/release/python-380/ "Python 3.8"
 [05]: https://ollama.com/download "Ollama Download"
 
-[divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
+[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"

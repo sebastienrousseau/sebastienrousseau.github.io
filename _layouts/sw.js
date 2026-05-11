@@ -1,149 +1,104 @@
 "use strict";
 
 /**
- * Class to handle service worker caching and request serving.
- * @param {string} offlinePage - The URL of the page to show when offline.
- * @param {boolean} debugMode - If true, debug information will be logged to the console.
+ * Service worker for sebastienrousseau.com
+ *
+ * Caching strategy:
+ *   - HTML (navigation requests):  network-first, fall back to cache, then offline page.
+ *   - Static assets (/_csp/*, /main.*.js, /sw.*.js, /highlight.*.css, /theme-init.*.js
+ *     and same-origin SVG / WebP / WOFF2): stale-while-revalidate.
+ *   - Third-party origins: pass-through (no caching) to honour CSP and analytics opt-outs.
  */
-class ServiceWorkerManager {
-    /**
-     * Constructor for the ServiceWorkerManager class.
-     * @param {string} offlinePage - The URL of the page to show when offline.
-     * @param {boolean} debugMode - If true, debug information will be logged to the console.
-     */
-    constructor(offlinePage, debugMode) {
-        /**
-         * Version of the cache used for cache management.
-         */
-        this.CACHE_VERSION = 'v1';
 
-        /**
-         * Array of cache keys that the service worker should care about, used to keep track and delete old caches.
-         */
-        this.CACHE_KEYS = [this.CACHE_VERSION];
+const CACHE = "ap-v3";
+const OFFLINE_URL = "/offline/index.html";
+const PRECACHE = [
+  "/",
+  "/index.html",
+  "/main.js",
+  "/theme-init.js",
+  "/highlight.css",
+  OFFLINE_URL,
+];
 
-        /**
-         * The URL of the page to show when offline.
-         */
-        this.offlinePage = offlinePage;
+self.addEventListener("install", (event) => {
+  event.waitUntil(
+    caches.open(CACHE).then((c) => c.addAll(PRECACHE).catch(() => null))
+  );
+  self.skipWaiting();
+});
 
-        /**
-         * A boolean indicating if debug information should be logged to the console.
-         */
-        this.debugMode = debugMode;
+self.addEventListener("activate", (event) => {
+  event.waitUntil(
+    caches.keys().then((keys) =>
+      Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))
+    )
+  );
+  self.clients.claim();
+});
 
-        /**
-         * Initialize the service worker by setting up the event listeners.
-         */
-        this.init();
-    }
+self.addEventListener("message", (event) => {
+  if (event.data && event.data.action === "skipWaiting") {
+    self.skipWaiting();
+  }
+});
 
-    /**
-     * Initialize the service worker by setting up event listeners for install, activate, fetch and message events.
-     */
-    init() {
-        self.addEventListener("install", this.onInstall.bind(this));
-        self.addEventListener("activate", this.onActivate.bind(this));
-        self.addEventListener("fetch", this.onFetch.bind(this));
-        self.addEventListener('message', this.onMessage.bind(this));
-    }
-
-    /**
-     * Logs a message to the console if debug mode is enabled.
-     * @param {any} message - The message to log.
-     */
-    debug(message) {
-        if (this.debugMode) {
-            console.log(message);
-        }
-    }
-
-    /**
-     * Event handler for the install event.
-     * Caches the offline page and forces the waiting service worker to become the active service worker.
-     * @param {InstallEvent} event - The install event.
-     */
-    onInstall(event) {
-        this.debug("Installing Service Worker");
-        event.waitUntil(
-            this.cacheOfflinePage()
-                .then(() => self.skipWaiting())
-                .catch((error) => {
-                    this.debug(`Install event error: ${error}`);
-                })
-        );
-    }
-
-    /**
-     * Event handler for the activate event.
-     * Clears old caches and takes control of all clients.
-     * @param {ExtendableEvent} event - The activate event.
-     */
-    onActivate(event) {
-        this.debug("Activating Service Worker");
-        event.waitUntil(
-            this.clearOldCaches()
-                .then(() => self.clients.claim())
-                .catch((error) => {
-                    this.debug(`Activate event error: ${error}`);
-                })
-        );
-    }
-
-    /**
-     * Event handler for the fetch event.
-     * Serves requests from the cache if possible, otherwise fetches from the network.
-     * Caches successful network responses.
-     * @param {FetchEvent} event - The fetch event.
-     */
-    onFetch(event) {
-        // The rest of the fetch event handling code...
-    }
-
-    /**
-     * Event handler for the message event.
-     * Listens for a 'skipWaiting' message to call self.skipWaiting().
-     * @param {MessageEvent} event - The message event.
-     */
-    onMessage(event) {
-        if (event.data.action === 'skipWaiting') {
-            self.skipWaiting();
-        }
-    }
-
-    /**
-     * Handle fetch errors, such as failing to retrieve a resource from the cache or network.
-     * For navigation requests, an offline page is shown.
-     * For image requests, an offline image is shown.
-     * @param {Request} request - The failed request.
-     * @param {Error} error - The error that caused the fetch to fail.
-     */
-    handleFetchError(request, error) {
-        // The rest of the fetch error handling code...
-    }
-
-    /**
-     * Caches the offline page.
-     * @returns {Promise} - A promise that resolves once the offline page is cached.
-     */
-    cacheOfflinePage() {
-        this.debug("Cache offline page");
-        return caches.open(this.CACHE_VERSION).then(cache =>
-            cache.addAll([this.offlinePage])
-        );
-    }
-
-    /**
-     * Deletes all caches that do not match the current cache version.
-     * @returns {Promise} - A promise that resolves once old caches are deleted.
-     */
-    clearOldCaches() {
-        this.debug("Clean old caches");
-        return caches.keys().then(keys =>
-            Promise.all(keys.filter(key => !this.CACHE_KEYS.includes(key)).map(key => caches.delete(key)))
-        );
-    }
+function isStaticAsset(url) {
+  if (url.origin !== self.location.origin) return false;
+  return (
+    url.pathname.startsWith("/_csp/") ||
+    /\/main\.[a-z0-9]+\.js$/.test(url.pathname) ||
+    /\/sw\.[a-z0-9]+\.js$/.test(url.pathname) ||
+    /\/highlight\.[a-z0-9]+\.css$/.test(url.pathname) ||
+    /\/theme-init\.[a-z0-9]+\.js$/.test(url.pathname) ||
+    /\.(svg|webp|png|jpg|jpeg|gif|woff2)$/.test(url.pathname)
+  );
 }
 
-// Create an instance of the ServiceWorkerManager class.
-new ServiceWorkerManager("/offline/index.html", false);
+function staleWhileRevalidate(request) {
+  return caches.open(CACHE).then((cache) =>
+    cache.match(request).then((cached) => {
+      const network = fetch(request)
+        .then((response) => {
+          if (response.ok || response.type === "opaque") {
+            cache.put(request, response.clone()).catch(() => {});
+          }
+          return response;
+        })
+        .catch(() => cached);
+      return cached || network;
+    })
+  );
+}
+
+function networkFirst(request) {
+  return fetch(request)
+    .then((response) => {
+      if (response.ok) {
+        const clone = response.clone();
+        caches.open(CACHE).then((c) => c.put(request, clone)).catch(() => {});
+      }
+      return response;
+    })
+    .catch(() =>
+      caches.match(request).then((cached) => cached || caches.match(OFFLINE_URL))
+    );
+}
+
+self.addEventListener("fetch", (event) => {
+  const { request } = event;
+  if (request.method !== "GET") return;
+
+  const url = new URL(request.url);
+
+  // Cross-origin: don't intervene.
+  if (url.origin !== self.location.origin) return;
+
+  if (request.mode === "navigate" || request.headers.get("accept")?.includes("text/html")) {
+    event.respondWith(networkFirst(request));
+    return;
+  }
+  if (isStaticAsset(url)) {
+    event.respondWith(staleWhileRevalidate(request));
+  }
+});

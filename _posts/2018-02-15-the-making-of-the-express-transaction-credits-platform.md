@@ -6,8 +6,8 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Giant white pillars"
 banner_height: "100vh"
 banner_width: "100vw"
-banner: "https://kura.pro/stock/images/banners/tarik-haiga-3637943.webp"
-cdn: "https://kura.pro"
+banner: "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp"
+cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -16,12 +16,12 @@ date: "Feb 15, 2018"
 description: "Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard."
 format-detection: "telephone=no"
 hreflang: "en"
-icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://kura.pro/stock/images/banners/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "mathematical constants, cryptographic constants, rust, cmn library, secure, reliable, accurate, portability, performance, documentation, versatility"
 language: "en-GB"
 layout: "articles"
@@ -29,7 +29,7 @@ locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
-logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: "active"
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
@@ -81,7 +81,7 @@ msapplication-navbutton-color: "rgb(0, 102, 204)"
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
 twitter_description: "Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard."
-twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "The making of the Express Transaction Credits Platform"
@@ -99,7 +99,7 @@ site_software: "Shokunin, Rust"
 
 ---
 
-![Giant white pillars](https://kura.pro/stock/images/banners/rawpixel-com-369782.webp).class=\"img-fluid clearfix\"
+![Giant white pillars](https://cloudcdn.pro/stocks/images/rawpixel-com-369782.webp).class=\"img-fluid clearfix\"
 
 ## Insight
 
@@ -153,7 +153,7 @@ As the platform gains momentum and adoption, its impact on the financial landsca
 
 Whether you’re a tech enthusiast, a financial professional, or simply curious about the future of finance, EXTC is a platform that invites exploration and engagement.
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
 **That concludes our time together. Thank you for your time!**
 

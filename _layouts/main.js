@@ -94,3 +94,151 @@ class ServiceWorkerSetup {
 // Create an instance of the ServiceWorkerSetup class and attach it to the global window object.
 // This makes the instance accessible from anywhere in your code that has access to the global scope.
 window.serviceWorkerSetup = new ServiceWorkerSetup();
+
+/**
+ * Forward clicks on the in-nav .ap-search button to the hidden Shokunin search
+ * widget (#ssg-search-btn). The widget injects asynchronously, so we keep
+ * trying on click rather than caching the reference.
+ */
+document.addEventListener("click", function (event) {
+    var trigger = event.target.closest(".ap-search");
+    if (!trigger) return;
+    event.preventDefault();
+    var ssg = document.getElementById("ssg-search-btn");
+    if (ssg) {
+        ssg.click();
+    }
+});
+
+/**
+ * Back-to-top floating button. Reveals after the user scrolls past one viewport
+ * height and scrolls smoothly to the top on click.
+ */
+(function () {
+    "use strict";
+    var btn = document.querySelector(".ap-totop");
+    if (!btn) return;
+    btn.removeAttribute("hidden");
+    var threshold = function () { return window.innerHeight; };
+    var onScroll = function () {
+        btn.classList.toggle("is-visible", window.scrollY > threshold());
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    btn.addEventListener("click", function () {
+        var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        window.scrollTo({ top: 0, behavior: reduced ? "auto" : "smooth" });
+    });
+})();
+
+/**
+ * IntersectionObserver-driven fade-up on first scroll-in for any element with
+ * the .reveal class. Respects prefers-reduced-motion (the CSS handles that;
+ * we still set is-in so the element is visible).
+ */
+(function () {
+    "use strict";
+    var targets = document.querySelectorAll(".reveal");
+    if (!targets.length) return;
+    if (typeof IntersectionObserver !== "function") {
+        targets.forEach(function (el) { el.classList.add("is-in"); });
+        return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-in");
+                io.unobserve(entry.target);
+            }
+        });
+    }, { rootMargin: "0px 0px -10% 0px", threshold: 0.05 });
+    targets.forEach(function (el) { io.observe(el); });
+})();
+
+/**
+ * Light / dark theme toggle.
+ * The initial theme is set in <head> by theme-init.js before paint. This handler
+ * flips the data-theme attribute and persists the choice in localStorage. We
+ * also sync the meta[name="theme-color"] tag so iOS/macOS Safari recolours the
+ * status bar.
+ */
+(function () {
+    "use strict";
+
+    function announce(message) {
+        var live = document.getElementById("ap-live");
+        if (!live) {
+            live = document.createElement("div");
+            live.id = "ap-live";
+            live.setAttribute("role", "status");
+            live.setAttribute("aria-live", "polite");
+            live.setAttribute("aria-atomic", "true");
+            live.style.cssText =
+                "position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;" +
+                "overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap";
+            document.body.appendChild(live);
+        }
+        // Clear then set, so the same message is re-announced on repeat toggles.
+        live.textContent = "";
+        setTimeout(function () {
+            live.textContent = message;
+        }, 16);
+    }
+
+    function applyTheme(theme) {
+        var previous = document.documentElement.getAttribute("data-theme");
+        document.documentElement.setAttribute("data-theme", theme);
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) {
+            meta.setAttribute("content", theme === "dark" ? "#000000" : "#fbfbfd");
+        }
+        document.querySelectorAll(".theme-toggle").forEach(function (btn) {
+            btn.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+            btn.setAttribute(
+                "aria-label",
+                theme === "dark" ? "Switch to light theme" : "Switch to dark theme"
+            );
+        });
+        if (previous && previous !== theme) {
+            announce(theme === "dark" ? "Dark theme on." : "Light theme on.");
+        }
+    }
+
+    function currentTheme() {
+        return document.documentElement.getAttribute("data-theme") || "light";
+    }
+
+    document.addEventListener("click", function (event) {
+        var btn = event.target.closest(".theme-toggle");
+        if (!btn) return;
+        event.preventDefault();
+        var next = currentTheme() === "dark" ? "light" : "dark";
+        try {
+            localStorage.setItem("theme", next);
+        } catch (e) {
+            /* ignore quota / disabled */
+        }
+        applyTheme(next);
+    });
+
+    // Sync once at boot so the toggle reflects whatever theme-init.js set.
+    applyTheme(currentTheme());
+
+    // Track OS-level changes when the user hasn't expressed a preference.
+    if (window.matchMedia) {
+        var media = window.matchMedia("(prefers-color-scheme: dark)");
+        var handler = function (e) {
+            try {
+                if (localStorage.getItem("theme")) return;
+            } catch (err) {
+                /* ignore */
+            }
+            applyTheme(e.matches ? "dark" : "light");
+        };
+        if (media.addEventListener) {
+            media.addEventListener("change", handler);
+        } else if (media.addListener) {
+            media.addListener(handler);
+        }
+    }
+})();

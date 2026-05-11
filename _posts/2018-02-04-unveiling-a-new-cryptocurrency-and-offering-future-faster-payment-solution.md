@@ -6,8 +6,8 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Turned off laptop computer on top of brown wooden table"
 banner_height: "100vh"
 banner_width: "100vw"
-banner: "https://kura.pro/stock/images/banners/laureen-missaire-DBbuhMbAIsQ.webp"
-cdn: "https://kura.pro"
+banner: "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp"
+cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -16,12 +16,12 @@ date: "Feb 04, 2018"
 description: "A significant chapter in the evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance."
 format-detection: "telephone=no"
 hreflang: "en"
-icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://kura.pro/stock/images/banners/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
 language: "en-GB"
 layout: "articles"
@@ -29,7 +29,7 @@ locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
-logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: "active"
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
@@ -81,7 +81,7 @@ msapplication-navbutton-color: "rgb(0, 102, 204)"
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
 twitter_description: "A significant chapter in the evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance."
-twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Unveiling a new Cryptocurrency and Faster Payment Solution"
@@ -99,7 +99,7 @@ site_software: "Shokunin, Rust"
 
 ---
 
-![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/laureen-missaire-DBbuhMbAIsQ.webp).class=\"img-fluid clearfix\"
+![A very tall building that has a lot of holes in it](https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp).class=\"img-fluid clearfix\"
 
 ## Insight
 
@@ -138,7 +138,7 @@ By building on the Ethereum blockchain and adhering to EIP20 standards, the EXTC
 
 In conclusion, the EXTC Network’s unveiling marks A significant chapter in the ongoing evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance.. With a visionary approach to faster payment solutions, underpinned by the potential of cryptocurrencies and distributed ledgers, the network aims to redefine how transactions are conducted across the world. Its impact resonates not only within the realm of digital assets but also in reshaping traditional financial systems, ultimately propelling us towards a future where speed, security, and inclusivity define the way we exchange value.
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
 **That concludes our time together. Thank you for your time!**
 

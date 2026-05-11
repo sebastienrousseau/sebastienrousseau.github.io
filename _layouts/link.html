@@ -2,314 +2,702 @@
 <html lang="{{language}}">
   <head>
     <meta charset="{{charset}}" />
-    <meta itemprop="datePublished" content="{{item_pub_date}}" id="date">
-    <meta itemprop="dateModified" content="{{last_build_date}}" id="last-modified">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="{{item_pub_date}}" id="date" />
+    <meta itemprop="dateModified" content="{{last_build_date}}" id="last-modified" />
     <title>{{title}}</title>
 
-    <!-- # Start Primary Meta Tags -->
     {{primary}}
-    <!-- # End Primary Meta Tags -->
-
-    <!-- # Start Open Graph / Facebook Meta Tags -->
     {{opengraph}}
-    <!-- # End Open Graph / Facebook Meta Tags -->
-
-    <!-- # Start Accessibility Meta Tags -->
     <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
-    <!-- # End Accessibility Meta Tags -->
-
-    <!-- # Start Apple Meta Tags -->
     {{apple}}
-    <!-- # End Apple Meta Tags -->
 
-<!-- # Start Content Security Policy Meta Tags -->
+    <meta http-equiv="Permissions-Policy" content="browsing-topics=(), interest-cohort=(), join-ad-interest-group=(), run-ad-auction=(), attribution-reporting=()" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else. -->
     <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self';
-      script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com https://cdn.jsdelivr.net unpkg.com www.googletagmanager.com x.clarity.ms https://www.googletagmanager.com https://www.google.com https://www.gstatic.com;
-      frame-src 'self' https://www.google.com;
-      connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com;
-      img-src 'self' data: https: kura.pro www.googletagmanager.com;
-      style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
-      font-src 'self' https://fonts.gstatic.com;
-      media-src 'self';" />
-    <!-- # End Content Security Policy Meta Tags -->
+      content="default-src 'self';
+        script-src 'self' https://www.google-analytics.com https://cdn.jsdelivr.net https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://cdn.jsdelivr.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
 
-
-
-    <!-- # Start Microsoft Meta Tags -->
     {{microsoft}}
-    <!-- # End Microsoft Meta Tags -->
-
-    <!-- # Start Twitter Meta Tags -->
     {{twitter}}
-    <!-- # End Twitter Meta Tags -->
 
-    <!-- # Start Links -->
     <link rel="alternate" href="{{url}}" hreflang="{{hreflang}}" />
-    <link rel="preload" as="image" href="{{banner}}">
+    <link rel="preload" as="image" href="{{banner}}" />
     <link rel="canonical" href="{{url}}" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="{{cdn}}/{{short_name}}/images/favicon.ico"
-      sizes="16x16 32x32"
-    />
-    <link
-      as="style"
-      crossorigin="anonymous"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      onload="this.onload=null;this.rel='stylesheet'"
-      rel="preload"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="{{cdn}}/{{short_name}}/images/icons/{{apple_touch_icon_sizes}}.png"
-      sizes="{{apple_touch_icon_sizes}}"
-    />
+    <link rel="icon" type="image/x-icon" href="{{cdn}}/{{short_name}}/favicon.ico" sizes="16x16 32x32" />
+    <link rel="stylesheet" crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/@sebastienrousseau/skeletonic-stylus@2.0.0/css/core/skeletonic.min.css" />
+    <link rel="apple-touch-icon" href="{{cdn}}/{{short_name}}/v1/icons/{{apple_touch_icon_sizes}}.png" sizes="{{apple_touch_icon_sizes}}" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
-    <!-- # End Links -->
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
 
-    <!-- # Start Styles -->
-    <style>.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.bounce{animation:g 1s infinite}.drop-down{animation:a 1.618s ease}.drop-down,.fade-in{animation-fill-mode:forwards}.fade-in{animation:b 3s ease}.flip{animation:i 1s infinite}.jello{animation:k 1s infinite}.pulse{animation:f 1s infinite}.roll{animation:c 5s linear infinite}.roll-clockwise{animation:d 5s linear infinite}.roll-reverse{animation:h 5s linear infinite}.roll-reverse-clockwise{animation:e 5s linear infinite}.rotate{animation:d 5s linear infinite}.shake{animation:j 1s infinite}.slide-in{animation:h 1s ease}.zoom-in,.zoom-in-out{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-in-out:hover,.zoom-in:hover{transform:scale(1.0618)}.zoom-out{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-out:hover{transform:scale(.618)}*{box-sizing:border-box;font-weight:400;margin:0;padding:0}html{font-family:SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:clamp(var(--base-font-size),1vw,20px);line-height:var(--base-line-height);scroll-behavior:smooth;text-rendering:optimizeLegibility}.article-info{color:var(--theme-color)}.blur-light{backdrop-filter:saturate(180%) blur(20px);background-color:hsla(0,0%,100%,.618)}.card,pre{margin-bottom:calc(var(--base-font-size)*var(--golden-ratio)/2);overflow:hidden}blockquote{background:rgba({{theme-color}},.062);border-left:10px solid var(--theme-color);margin:1.618em 10px;padding:.618em 10px;quotes:"\201C""\201D""\2018""\2019"}blockquote:after,blockquote:before{color:var(--theme-color);font-size:4em;line-height:.1em;vertical-align:-.4em}blockquote:before{content:open-quote;margin-right:.1618em}blockquote:after{content:close-quote;margin-left:.1618em}blockquote p{color:var(--theme-color)!important;display:inline;font-size:1.2em;font-style:italic;line-height:1.5em;margin:0 0 .5em}.company,.container .rollers .wrapper .items-container .item .company,.content{filter:grayscale(100%);opacity:.2}.company:hover,.container .rollers .wrapper .items-container .item .company:hover{cursor:pointer;filter:grayscale(0);opacity:1}.company{float:left;padding:1.618rem;width:33%!important}.content{padding:calc(var(--base-font-size)*1.236)}.container .rollers,.content .container{box-shadow:2px 15px 20px #1f1f1f10,-2px -8px 20px #1f1f1f1a;padding:calc(var(--base-font-size)*1.854) calc(var(--base-font-size)*1.236)}.container .rollers .wrapper{flex:0 0 auto;height:100px;margin:0 0 calc(var(--base-font-size)*1.236) 0;position:relative;width:1400px}.container .rollers .wrapper .items-container{align-items:center;animation-duration:30s;animation-iteration-count:infinite;animation-timing-function:linear;display:flex;height:100%;position:absolute;width:100%}:root{--base-font-size:17px;--base-line-height:1.47059;--box-shadow:0 2px 4px rgb({{theme-color}});--golden-ratio:1.618;--theme-color:rgb({{theme-color}});--transition-duration:0.3s;--z-index-menu:1}h1,h2,h3,h4,h5,h6{color:var(--theme-color);font-weight:400;line-height:var(--golden-ratio);margin-bottom:calc(var(--base-font-size)*var(--golden-ratio)/2)}a{color:var(--theme-color);text-decoration:none}strong{font-weight:600}a:hover{text-decoration:underline}@keyframes a{0%{transform:translateY(calc(var(--base-font-size)*-.618))}to{transform:translateY(0)}}@keyframes b{0%{opacity:0}to{opacity:1}}@keyframes c{0%{transform:translateX(0)}to{transform:translateX(-100%)}}@keyframes d{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes e{0%{transform:rotate(1turn)}to{transform:rotate(0deg)}}@keyframes f{0%{transform:scale(1)}50%{transform:scale(1.1)}to{transform:scale(1)}}@keyframes g{0%,20%,50%,80%,to{transform:translateY(0)}40%{transform:translateY(-30px)}60%{transform:translateY(-15px)}}@keyframes h{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes i{0%{transform:perspective(400px) rotateY(0)}to{transform:perspective(400px) rotateY(1turn)}}@keyframes j{0%,to{transform:translateX(0)}10%,30%,50%,70%,90%{transform:translateX(-10px)}20%,40%,60%,80%{transform:translateX(10px)}}@keyframes k{0%,to{transform:scaleX(1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}}@media only screen and (max-width:800px){.container .rollers .wrapper .items-container .item .company{opacity:.4}.content,.content .container{padding:calc(var(--base-font-size)*1.236)}.company{width:50%!important}.fs-5{font-size:calc(var(--base-font-size)*.9)!important}h3{font-size:calc(var(--base-font-size)*1.618)}}</style>
-    <!-- # End Styles -->
+    <style>
+      :root{
+        --accent: rgb({{theme-color}});
+        --accent-rgb: {{theme-color}};
+        --ink:#1d1d1f;            /* 16.5:1 vs bg. AAA */
+        --ink-soft:#3a3a3c;        /* 11.3:1 vs bg. AAA */
+        --ink-mute:#52525a;        /* 7.4:1 vs bg. AAA normal text */
+        --ink-faint:#6e6e73;       /* 4.6:1 vs bg. AAA large text only */
+        --bg:#fbfbfd;
+        --bg-alt:#f1f1f3;
+        --card:#ffffff;
+        --border:#d2d2d7;
+        --shadow:0 1px 0 rgba(0,0,0,.06);
+        --shadow-lift:0 18px 40px -18px rgba(0,0,0,.18);
+        --nav-h:48px;
+        --pad-x:22px;
+        --max:980px;
+        --max-wide:1440px;
+        --radius:18px;
+        color-scheme: light dark;
+      }
+      [data-theme="dark"]{
+        --ink:#f5f5f7;
+        --ink-soft:#d4d4d9;        /* 14.2:1 vs bg. AAA */
+        --ink-mute:#b0b0b8;        /* 9.1:1 vs bg. AAA */
+        --ink-faint:#86868b;       /* 5.0:1 vs bg. AAA large text */
+        --bg:#000000;
+        --bg-alt:#1d1d1f;
+        --card:#161617;
+        --border:#3a3a3c;
+        --shadow:0 1px 0 rgba(255,255,255,.05);
+        --shadow-lift:0 18px 40px -10px rgba(0,0,0,.7);
+      }
+      *{box-sizing:border-box}
+      html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+      body{
+        margin:0;background:var(--bg);color:var(--ink);
+        font-family:"SF Pro Text","SF Pro Display",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size:17px;line-height:1.47059;letter-spacing:-.022em;
+        -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+      }
+      img{max-width:100%;height:auto;display:block}
+      a{color:var(--accent);text-decoration:none;transition:opacity .2s ease}
+      a:hover{opacity:.72}
+
+      h1,h2,h3,h4,h5,h6{font-family:"SF Pro Display",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:600;letter-spacing:-.015em;margin:0;color:inherit}
+
+      .skip{position:absolute;left:-9999px;top:-9999px}
+      .skip:focus{left:12px;top:12px;background:var(--ink);color:#fff;padding:10px 16px;z-index:300;border-radius:8px}
+
+      /* ---------- Nav (compact, sticky, frosted, Apple-style 3-column) ---------- */
+      /* color-mix() requires Chrome 111 / Safari 16.2 / Firefox 113. The
+         RGBA values are pre-computed fallbacks for older engines. */
+      .ap-nav{position:sticky;top:0;z-index:100;height:var(--nav-h);background:rgba(251,251,253,.8);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.08)}
+      [data-theme="dark"] .ap-nav{background:rgba(0,0,0,.8);border-bottom-color:rgba(255,255,255,.08)}
+      @supports (background: color-mix(in srgb, red, blue)){
+        .ap-nav{background:color-mix(in srgb,var(--bg) 80%,transparent);border-bottom-color:color-mix(in srgb,var(--ink) 8%,transparent)}
+      }
+      /* Grid: brand on the left, menu perfectly centred, utilities on the right.
+         The outer cols are 1fr each so the menu always sits in the viewport centre
+         regardless of how wide the brand or the right group becomes. */
+      .ap-nav .wrap{max-width:var(--max-wide);margin:0 auto;height:100%;padding:0 var(--pad-x);display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px}
+      .ap-brand{justify-self:start;font-size:14px;font-weight:500;color:var(--ink);display:inline-flex;align-items:center;gap:8px}
+      .ap-brand img{width:22px;height:22px;border-radius:50%}
+      .ap-menu{justify-self:center;display:flex;list-style:none;margin:0;padding:0;gap:28px}
+      .ap-menu a{font-size:12px;color:var(--ink);opacity:.88;white-space:nowrap}
+      .ap-menu a:hover{opacity:1}
+      .ap-nav-right{justify-self:end;display:inline-flex;align-items:center;gap:6px}
+      .ap-cta-mini{font-size:12px;font-weight:500;color:#fff;background:var(--accent);padding:7px 14px;border-radius:980px;line-height:1;display:inline-flex;align-items:center;gap:4px;white-space:nowrap;transition:opacity .15s ease}
+      .ap-cta-mini:hover{opacity:.88;color:#fff}
+
+      /* In-nav search button. Triggers Shokunin's search modal via main.js. */
+      .ap-search{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;background:transparent;border:1px solid transparent;border-radius:50%;color:var(--ink);cursor:pointer;transition:background .15s,border-color .15s}
+      .ap-search:hover{background:color-mix(in srgb,var(--ink) 7%,transparent)}
+      .ap-search svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+      /* Theme toggle (sun/moon). Sits inline in the nav */
+      .theme-toggle{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;background:transparent;border:1px solid transparent;border-radius:50%;color:var(--ink);cursor:pointer;transition:background .15s,border-color .15s}
+      .theme-toggle:hover{background:color-mix(in srgb,var(--ink) 7%,transparent)}
+      .theme-toggle svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+      .theme-toggle .icon-sun{display:none}
+      .theme-toggle .icon-moon{display:inline}
+      [data-theme="dark"] .theme-toggle .icon-sun{display:inline}
+      [data-theme="dark"] .theme-toggle .icon-moon{display:none}
+      .ap-toggle,.ap-burger{display:none}
+      @media (max-width:833px){
+        .ap-nav .wrap{grid-template-columns:auto 1fr auto}
+        .ap-menu{display:none}
+        .ap-burger{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;color:var(--ink);width:44px;height:44px;user-select:none}
+        .ap-nav:has(.ap-toggle:checked) .ap-menu{display:flex;flex-direction:column;position:absolute;top:var(--nav-h);left:0;right:0;background:var(--bg);padding:18px 22px;gap:14px;border-bottom:1px solid var(--border);justify-content:flex-start;text-align:center;z-index:99}
+      }
+
+      /* ---------- Hero ---------- */
+      .ap-hero{padding:84px var(--pad-x) 64px;text-align:center;background:var(--card);position:relative;overflow:hidden}
+      .ap-hero h1{font-size:clamp(40px,5.5vw,64px);line-height:1.07;margin:0 auto 12px;max-width:900px}
+      .ap-hero .sub{font-size:clamp(20px,2.3vw,28px);font-weight:400;color:var(--ink-mute);margin:0 auto 28px;max-width:760px;line-height:1.25}
+      .ap-hero .cta{display:inline-flex;gap:20px;flex-wrap:wrap;justify-content:center}
+      .ap-hero .portrait{width:120px;height:120px;border-radius:50%;margin:0 auto 24px;object-fit:cover;box-shadow:0 10px 30px -10px rgba(0,0,0,.25)}
+      .ap-hero figure.hero-figure{margin:48px auto 0;max-width:var(--max-wide);border-radius:var(--radius);overflow:hidden}
+      .ap-hero figure.hero-figure img{width:100%;height:auto;border-radius:var(--radius);box-shadow:0 30px 60px -20px rgba(0,0,0,.18)}
+      .ap-hero figure.hero-figure[data-empty=""]{display:none}
+
+      /* ---------- Pill button (Apple-style) ---------- */
+      .pill,a.pill,button.pill{display:inline-block;background:var(--accent);color:#fff;font-size:17px;font-weight:400;line-height:1;padding:13px 22px;border-radius:980px;border:1px solid transparent;text-decoration:none;cursor:pointer;transition:opacity .15s ease,background .15s ease,transform .15s ease;font-family:inherit}
+      .pill:hover{opacity:.92}
+      /* Explicit .pill.primary so authors can opt-in to the solid accent style
+         even in contexts where a more specific colour rule might otherwise win. */
+      .pill.primary,a.pill.primary,button.pill.primary{background:var(--accent) !important;color:#fff !important;border-color:transparent}
+      .pill.primary:hover{background:var(--accent);color:#fff;opacity:.92}
+      .pill.ghost{background:transparent;color:var(--accent);border-color:currentColor}
+      .pill.ghost:hover{background:rgba(var(--accent-rgb),.08);opacity:1}
+      .pill.dark{background:#1d1d1f;color:#fff}
+      .pill.dark:hover{background:#000}
+      .pill.light{background:#fff;color:#1d1d1f}
+      .pill.lg{padding:15px 28px;font-size:18px}
+      .pill::after{content:"\00A0\203A"}
+      .pill.no-chev::after{content:""}
+
+      /* ---------- Sections ---------- */
+      .ap-section{padding:96px var(--pad-x)}
+      .ap-section.tight{padding:64px var(--pad-x)}
+      .ap-section.alt{background:var(--bg-alt)}
+      .ap-section.dark{background:#000;color:#f5f5f7}
+      .ap-section.dark h2,.ap-section.dark h3,.ap-section.dark h4{color:#f5f5f7}
+      .ap-section.dark p,.ap-section.dark li{color:#a1a1a6}
+      .ap-section .wrap{max-width:var(--max);margin:0 auto}
+      .ap-section.wide .wrap{max-width:var(--max-wide)}
+      .ap-section .eyebrow{display:inline-block;font-size:14px;font-weight:600;color:var(--accent);letter-spacing:.02em;text-transform:uppercase;margin-bottom:12px}
+      .ap-section h2{font-size:clamp(32px,4vw,48px);line-height:1.08;margin:0 0 16px}
+      .ap-section .lede{font-size:clamp(19px,2vw,24px);color:var(--ink-mute);max-width:760px;margin:0 0 24px;line-height:1.4}
+      .ap-section .body{font-size:17px;line-height:1.6}
+      .ap-section .body p{margin:0 0 16px}
+      .ap-section .body strong{font-weight:600}
+
+      /* ---------- Story tiles (alternating media+text grid) ---------- */
+      .ap-tiles{display:grid;gap:24px;grid-template-columns:repeat(2,1fr)}
+      @media (max-width:833px){.ap-tiles{grid-template-columns:1fr}}
+      .ap-tile{background:var(--card);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 0 rgba(0,0,0,.06);transition:transform .25s ease,box-shadow .25s ease}
+      .ap-tile:hover{transform:translateY(-3px);box-shadow:0 16px 38px -16px rgba(0,0,0,.16)}
+      .ap-tile.dark{background:#000;color:#f5f5f7}
+      .ap-tile.tinted{background:var(--bg-alt)}
+      .ap-tile figure{margin:0;aspect-ratio:16/9;overflow:hidden;background:var(--bg-alt)}
+      .ap-tile figure img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+      .ap-tile:hover figure img{transform:scale(1.04)}
+      .ap-tile .body{padding:28px 30px 32px}
+      .ap-tile h3{font-size:clamp(22px,2.3vw,28px);line-height:1.14;margin:0 0 8px;color:inherit}
+      .ap-tile p{font-size:15px;line-height:1.5;color:var(--ink-mute);margin:0 0 16px}
+      .ap-tile.dark p{color:#a1a1a6}
+      .ap-tile a.more{font-size:14px;color:var(--accent);font-weight:500;display:inline-flex;align-items:center;gap:4px}
+      .ap-tile a.more::after{content:"\00A0\203A"}
+
+      /* ---------- CTA banner block ---------- */
+      .ap-cta-block{position:relative;overflow:hidden;padding:96px var(--pad-x);text-align:center;color:#fff;background:var(--ink);isolation:isolate}
+      .ap-cta-block .ap-cta-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;opacity:.85}
+      .ap-cta-block::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.7));z-index:-1}
+      .ap-cta-block .wrap{position:relative;z-index:1;max-width:var(--max);margin:0 auto}
+      .ap-cta-block h2{font-size:clamp(32px,4vw,48px);line-height:1.1;margin:0 0 28px;color:#fff}
+      .ap-cta-block .cta{display:inline-flex;gap:18px;flex-wrap:wrap;justify-content:center}
+
+      /* ---------- Article / Markdown content readability ---------- */
+      main.content > .wrap{max-width:760px}
+      main.content h2{margin-top:48px;font-size:clamp(28px,3vw,36px)}
+      main.content h3{margin-top:36px;font-size:clamp(22px,2.4vw,28px)}
+      main.content p{font-size:18px;line-height:1.6;margin:0 0 1em;color:var(--ink-soft)}
+      main.content a{color:var(--accent)}
+      main.content img{border-radius:14px;margin:32px auto}
+      main.content figure{margin:32px 0}
+      main.content blockquote{border-left:4px solid var(--accent);margin:32px 0;padding:8px 0 8px 20px;color:var(--ink-mute);font-style:italic}
+      main.content pre{background:var(--bg-alt);border-radius:12px;padding:18px 22px;overflow:auto;font-size:14px;line-height:1.5;margin:24px 0}
+      main.content code{background:var(--bg-alt);padding:1px 6px;border-radius:6px;font-size:.92em}
+      main.content pre code{background:transparent;padding:0}
+      main.content ul,main.content ol{padding-left:20px;margin:0 0 1em}
+      main.content li{margin-bottom:6px;font-size:18px;line-height:1.5;color:var(--ink-soft)}
+
+      /* ---------- Footer ---------- */
+      .ap-foot{background:var(--bg-alt);color:var(--ink-mute);padding:32px var(--pad-x) 24px;font-size:12px;line-height:1.4}
+      .ap-foot .wrap{max-width:var(--max-wide);margin:0 auto}
+      .ap-foot .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;padding:18px 0;border-bottom:1px solid var(--border)}
+      @media (max-width:833px){.ap-foot .cols{grid-template-columns:repeat(2,1fr)}}
+      .ap-foot-title{font-size:12px;font-weight:600;color:var(--ink);margin:0 0 10px;letter-spacing:.01em}.ap-foot h4{font-size:12px;font-weight:600;color:var(--ink);margin:0 0 10px}
+      .ap-foot ul{list-style:none;margin:0;padding:0}
+      .ap-foot li{margin-bottom:6px}
+      .ap-foot a{color:var(--ink-mute)}
+      .ap-foot a:hover{color:var(--ink);text-decoration:underline}
+      .ap-foot .legal{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center;padding:18px 0 0}
+      .ap-foot .legal p{margin:0}
+      .ap-foot .legal a{margin:0 4px}
+      .ap-foot .social{display:inline-flex;gap:12px;align-items:center}
+      .ap-foot .social a{display:inline-flex}
+      .ap-foot .social img{width:18px;height:18px;opacity:.65;transition:opacity .15s}
+      .ap-foot .social a:hover img{opacity:1}
+
+      :focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px;box-shadow:0 0 0 6px color-mix(in srgb,var(--accent) 18%,transparent)}
+      .feat.dark :focus-visible,.feat-quote-section :focus-visible,.ap-cta-block :focus-visible{outline-color:#fff;box-shadow:0 0 0 6px rgba(255,255,255,.18)}
+      @media (prefers-reduced-motion: reduce){
+        *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+      }
+      .visually-hidden{clip:rect(0 0 0 0);clip-path:inset(50%);height:1px;width:1px;overflow:hidden;position:absolute;white-space:nowrap}
+
+      /* Aspect-ratio fallback for browsers older than Safari 15 / Chromium 88.
+         Uses the padding-top hack to reserve a 1:1 box before the image loads. */
+      @supports not (aspect-ratio: 1 / 1){
+        .newsroom-card-media,.newsroom-featured-media,.feat-card-media,.proj-card-media,.related-media{position:relative;height:0;padding-bottom:100%}
+        .newsroom-card-media > *,.newsroom-featured-media > *,.feat-card-media > *,.proj-card-media > *,.related-media > *{position:absolute;inset:0;width:100%;height:100%}
+        .related-media{padding-bottom:66.67%}
+      }
+      /* :has() fallback for browsers without selector support. The mobile menu
+         then just stays collapsed (no expand); the burger still ships as a
+         visual hint but is harmless. */
+      @supports not selector(:has(*)){
+        @media (max-width:833px){.ap-burger{opacity:.4;cursor:default}}
+      }
+
+      /* legacy hooks kept for animations referenced from posts */
+      .drop-down{animation:apFadeUp 1s ease forwards}
+      .fade-in{animation:apFade 1.2s ease forwards}
+      @keyframes apFadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+      @keyframes apFade{from{opacity:0}to{opacity:1}}
+
+      /* Reading progress bar — CSS-only via scroll-timeline. Falls back to
+         a static thin bar on browsers that don't support scroll-timeline. */
+      .ap-progress{position:fixed;top:0;left:0;right:0;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0);z-index:200;pointer-events:none}
+      @supports (animation-timeline: scroll()){
+        .ap-progress{animation:apProgress linear;animation-timeline:scroll(root)}
+        @keyframes apProgress{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+      }
+
+      /* Back-to-top floating button on long pages */
+      .ap-totop{position:fixed;right:24px;bottom:24px;width:44px;height:44px;border-radius:50%;background:var(--card);border:1px solid var(--border);color:var(--ink);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 8px 24px -8px rgba(0,0,0,.25);opacity:0;transform:translateY(8px);transition:opacity .25s,transform .25s;z-index:90}
+      .ap-totop.is-visible{opacity:1;transform:translateY(0)}
+      .ap-totop svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+      @media (prefers-reduced-motion: reduce){.ap-totop{transition:none}}
+
+      /* IntersectionObserver fade-up — main.js toggles .is-in on enter. */
+      .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease;will-change:opacity,transform}
+      .reveal.is-in{opacity:1;transform:translateY(0)}
+      @media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+      /* Per-article enrichment (last-reviewed badge + related-posts grid) */
+      .post-reviewed{display:inline-block;font-size:13px;font-weight:500;color:var(--ink-mute);background:var(--bg-alt);padding:8px 14px;border-radius:980px;margin:48px 0 0}
+      .related-posts{margin:64px 0 0;padding:48px 0 0;border-top:1px solid var(--border)}
+      .related-heading{font-size:clamp(22px,2.4vw,28px);font-weight:600;letter-spacing:-.01em;margin:0 0 24px;color:var(--ink)}
+      .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+      @media (max-width:833px){.related-grid{grid-template-columns:1fr}}
+      .related-card{background:var(--card);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:transform .25s ease,box-shadow .25s ease}
+      .related-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px -16px rgba(0,0,0,.16)}
+      .related-media{display:block;aspect-ratio:3/2;overflow:hidden;background:var(--bg-alt)}
+      .related-media img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+      .related-card:hover .related-media img{transform:scale(1.04)}
+      .related-body{padding:18px 20px}
+      .related-body h3{font-size:16px;line-height:1.25;font-weight:600;margin:0 0 6px}
+      .related-body h3 a{color:var(--ink)}
+      .related-body p{font-size:13px;color:var(--ink-mute);margin:0}
+
+      /* 404 page */
+      .error-page{max-width:680px;margin:0 auto;text-align:center;padding:40px 0}
+      .error-eyebrow{font-size:96px;font-weight:700;letter-spacing:-.03em;color:var(--accent);line-height:1;margin:0 0 16px;font-family:"SF Pro Display",-apple-system,sans-serif}
+      .error-title{font-size:clamp(28px,3.6vw,40px);font-weight:600;letter-spacing:-.015em;margin:0 0 12px;color:var(--ink)}
+      .error-sub{font-size:18px;line-height:1.45;color:var(--ink-mute);margin:0 0 32px}
+      .error-cta{display:inline-flex;flex-wrap:wrap;gap:14px;justify-content:center}
+
+      /* Newsroom-style listing (used on Papers, Articles) */
+      .newsroom{max-width:var(--max-wide);margin:0 auto;padding:8px 0}
+      .newsroom-section-head{margin:48px 0 24px;padding-bottom:14px;border-bottom:1px solid var(--border)}
+      .newsroom-section-head:first-child{margin-top:0}
+      .newsroom-kicker{margin:0 0 4px;font-size:12px;font-weight:600;letter-spacing:.08em;color:var(--accent);text-transform:uppercase}
+      .newsroom-section-head h2{font-size:clamp(28px,3vw,36px);font-weight:600;letter-spacing:-.015em;line-height:1.1;color:var(--ink);margin:0}
+      .newsroom-section-head .newsroom-lede{margin:10px 0 0;font-size:16px;line-height:1.5;color:var(--ink-mute);max-width:760px}
+      .newsroom-intro{max-width:760px;margin:8px auto 40px;font-size:clamp(18px,2vw,22px);line-height:1.4;color:var(--ink-mute);text-align:center}
+      .newsroom-eyebrow{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.06em;color:var(--ink-mute);text-transform:uppercase;margin-bottom:8px}
+      .newsroom-meta{margin:0 0 14px;font-size:13px;color:var(--ink-mute);font-weight:500}
+      .newsroom-meta time{font-variant-numeric:tabular-nums}
+      .newsroom-byline{font-size:14px;color:var(--ink-soft);margin:0 0 18px}
+
+      .newsroom-featured{display:grid;grid-template-columns:1.15fr 1fr;gap:0;background:var(--card);border-radius:22px;overflow:hidden;box-shadow:0 1px 0 rgba(0,0,0,.06);transition:transform .25s ease,box-shadow .25s ease;margin-bottom:32px}
+      .newsroom-featured:hover{transform:translateY(-2px);box-shadow:0 18px 40px -18px rgba(0,0,0,.16)}
+      .newsroom-featured-media{display:block;background:var(--bg-alt);overflow:hidden;aspect-ratio:1/1}
+      .newsroom-featured-media img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;border-radius:0}
+      .newsroom-featured:hover .newsroom-featured-media img{transform:scale(1.04)}
+      .newsroom-featured-media.logo{background:#fff;display:flex;align-items:center;justify-content:center;padding:10%}
+      .newsroom-featured-media.logo img{width:100%;height:100%;object-fit:contain}
+      .newsroom-featured:hover .newsroom-featured-media.logo img{transform:scale(1.04)}
+      .newsroom-featured-body{padding:40px 44px;display:flex;flex-direction:column;justify-content:center}
+      .newsroom-featured-body h3{font-size:clamp(24px,2.6vw,34px);line-height:1.14;font-weight:600;letter-spacing:-.015em;margin:0 0 12px;color:var(--ink)}
+      .newsroom-featured-body h3 a{color:inherit}
+      .newsroom-featured-body p{font-size:15px;line-height:1.55;color:var(--ink-soft);margin:0 0 16px}
+      @media (max-width:833px){.newsroom-featured{grid-template-columns:1fr}.newsroom-featured-media{aspect-ratio:16/9}.newsroom-featured-body{padding:28px 26px}}
+
+      .newsroom-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:32px}
+      @media (max-width:980px){.newsroom-grid{grid-template-columns:repeat(2,1fr)}}
+      @media (max-width:600px){.newsroom-grid{grid-template-columns:1fr}}
+      /* Papers — Apple Books style. No card wrappers. Each book sits on the
+         page background with a soft drop shadow; title, meta and actions flow
+         beneath in clean Apple typography. */
+      .books-shelf{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 40px;margin:0 0 64px;padding:8px 0}
+      @media (max-width:960px){.books-shelf{grid-template-columns:1fr;gap:48px}}
+      /* Horizontal item: small book cover on the left, content on the right. */
+      .book{display:grid;grid-template-columns:140px 1fr;align-items:start;gap:24px;min-width:0}
+      @media (max-width:480px){.book{grid-template-columns:110px 1fr;gap:18px}}
+      .book-cover{display:block;width:140px;aspect-ratio:2/3;background:transparent;border-radius:6px;transition:transform .4s ease;align-self:start}
+      @media (max-width:480px){.book-cover{width:110px}}
+      .book-cover img{width:100%;height:100%;object-fit:cover;border-radius:6px;box-shadow:
+        0 1px 2px rgba(0,0,0,.10),
+        0 8px 16px -6px rgba(0,0,0,.18),
+        0 22px 36px -16px rgba(0,0,0,.28)}
+      [data-theme="dark"] .book-cover img{box-shadow:
+        0 1px 2px rgba(0,0,0,.5),
+        0 8px 16px -6px rgba(0,0,0,.6),
+        0 22px 36px -16px rgba(0,0,0,.75)}
+      .book:hover .book-cover{transform:translateY(-3px)}
+      .book-body{min-width:0;display:flex;flex-direction:column}
+      .book-eyebrow{margin:0 0 6px;font-size:10.5px;font-weight:600;letter-spacing:.08em;color:var(--accent);text-transform:uppercase}
+      .book-title{font-size:clamp(17px,1.4vw,20px);line-height:1.22;font-weight:600;letter-spacing:-.012em;margin:0 0 10px;color:var(--ink)}
+      .book-title a{color:inherit}
+      .book-meta{margin:0 0 2px;font-size:12.5px;color:var(--ink-mute);font-weight:500;line-height:1.4}
+      .book-meta time{font-variant-numeric:tabular-nums}
+      .book-meta-faint{color:var(--ink-faint);margin-bottom:12px}
+      .book-excerpt{margin:0 0 16px;font-size:14px;line-height:1.5;color:var(--ink-soft);display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+      .book-actions{display:flex;gap:8px;flex-wrap:wrap;margin:0}
+      .book-actions .pill{font-size:13px;padding:9px 16px}
+      /* Research-notes carousel — tighter than the default newsroom grid.
+         16:9 image (vs. 1:1), smaller body padding, smaller typography. Used
+         on /papers/ so the research notes feel like an Apple-style strip
+         beneath the featured publications, not a heavyweight grid. */
+      .newsroom-grid-tight{gap:20px}
+      .newsroom-grid-tight .newsroom-card-media{aspect-ratio:16/9}
+      .newsroom-grid-tight .newsroom-card-body{padding:16px 18px 20px}
+      .newsroom-grid-tight .newsroom-card-body h3{font-size:16px;line-height:1.3;margin:0 0 6px;-webkit-line-clamp:2}
+      .newsroom-grid-tight .newsroom-card-body .newsroom-eyebrow{font-size:10px;margin-bottom:6px}
+      .newsroom-grid-tight .newsroom-card-body .newsroom-meta{font-size:12px;margin-bottom:8px}
+      .newsroom-grid-tight .newsroom-card-body .newsroom-excerpt{font-size:13px;line-height:1.45;-webkit-line-clamp:3;display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}
+      /* Questions? Answers. accordion */
+      .qa{margin:80px 0 16px;border-top:1px solid var(--border);padding-top:64px}
+      .qa-head{margin:0 0 32px}
+      .qa-headline{margin:0;font-size:clamp(30px,3.6vw,44px);line-height:1.1;font-weight:600;letter-spacing:-.018em;color:var(--ink)}
+      .qa-headline-soft{color:var(--ink-mute)}
+      .qa-list{border-top:1px solid var(--border)}
+      .qa-item{border-bottom:1px solid var(--border)}
+      .qa-item > summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 4px;font-size:clamp(16px,1.4vw,19px);font-weight:500;line-height:1.35;color:var(--ink);cursor:pointer;transition:color .15s ease}
+      .qa-item > summary::-webkit-details-marker{display:none}
+      .qa-item > summary::after{content:"+";flex:none;width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;font-size:22px;font-weight:300;line-height:1;color:var(--ink-mute);border:1px solid var(--border);border-radius:50%;transition:transform .25s ease,background .15s ease,color .15s ease;background:transparent}
+      .qa-item[open] > summary::after{content:"\2212";transform:rotate(0)}
+      .qa-item > summary:hover{color:var(--accent)}
+      .qa-item > summary:hover::after{color:var(--accent);border-color:var(--accent)}
+      .qa-item > summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:6px}
+      .qa-a{padding:0 4px 24px;max-width:none;width:100%}
+      /* Skeletonic ships a global `p{max-width:65ch}` which would clamp the
+         answer text to half the container. Force it back to full width. */
+      .qa-a p{margin:0;font-size:15.5px;line-height:1.6;color:var(--ink-soft);max-width:none}
+      .qa-a p + p{margin-top:12px}
+      .newsroom-card{background:var(--card);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 0 rgba(0,0,0,.06);transition:transform .25s ease,box-shadow .25s ease}
+      .newsroom-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px -16px rgba(0,0,0,.16)}
+      .newsroom-card-media{display:block;background:var(--bg-alt);overflow:hidden;aspect-ratio:1/1;position:relative}
+      .newsroom-card-media img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;border-radius:0;margin:0}
+      .newsroom-card:hover .newsroom-card-media img{transform:scale(1.04)}
+      /* Logo variant. Wide banner SVGs should fit inside, not crop, with breathing room. */
+      .newsroom-card-media.logo{background:#fff;display:flex;align-items:center;justify-content:center;padding:14%}
+      .newsroom-card-media.logo img{width:100%;height:100%;object-fit:contain}
+      .newsroom-card:hover .newsroom-card-media.logo img{transform:scale(1.05)}
+      .newsroom-card-body{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1}
+      .newsroom-card-body h3{font-size:18px;line-height:1.25;font-weight:600;letter-spacing:-.005em;margin:0 0 8px;color:var(--ink);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+      .newsroom-card-body h3 a{color:inherit}
+      .newsroom-card-body .newsroom-excerpt{font-size:14px;line-height:1.5;color:var(--ink-mute);margin:0 0 18px;flex:1}
+      .newsroom-card-body .newsroom-cta{margin:0}
+      .newsroom-card-body .pill{font-size:14px;padding:10px 18px}
+
+      /* Newsroom pages need the wide container, not the 760px reading column */
+      main.content > .wrap:has(.newsroom){max-width:var(--max-wide)}
+      main.content > .wrap > .newsroom:first-child{margin-top:-16px}
+
+      /* ---------- Apple-Card-style feature sections (home page) ---------- */
+      .feat{padding:120px var(--pad-x);text-align:center;position:relative;overflow:hidden;isolation:isolate}
+      .feat-with-bg .feat-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;opacity:.55}
+      .feat.dark.feat-with-bg::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.85));z-index:-1}
+      .feat-hero .hero-portrait{display:block;width:96px;height:96px;margin:0 auto 24px;border-radius:50%;object-fit:cover;box-shadow:0 12px 32px -12px rgba(0,0,0,.25)}
+      .feat-hero .feat-eyebrow a{color:inherit;text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s}
+      .feat-hero .feat-eyebrow a:hover{border-bottom-color:currentColor;opacity:1}
+      .feat .wrap{max-width:980px;margin:0 auto}
+      .feat.wide .wrap{max-width:var(--max-wide)}
+      .feat.alt{background:var(--bg-alt)}
+      .feat.dark{background:var(--bg-dark,#000);color:#f5f5f7}
+      .feat.dark .feat-headline,.feat.dark .feat-sub,.feat.dark .feat-card h3{color:#f5f5f7}
+      .feat.dark .feat-sub{color:#a1a1a6}
+      .feat-eyebrow{display:inline-block;font-size:14px;font-weight:600;letter-spacing:.08em;color:var(--accent);text-transform:uppercase;margin:0 0 16px}
+      .feat.dark .feat-eyebrow{color:#5ac8fa}
+      .feat-headline{font-size:clamp(36px,5vw,64px);font-weight:700;letter-spacing:-.022em;line-height:1.05;margin:0 0 24px;color:var(--ink);max-width:22ch}
+      .feat-hero .feat-headline{max-width:none}
+      .feat-headline.center{margin-left:auto;margin-right:auto}
+      .feat-sub{font-size:clamp(18px,1.6vw,22px);font-weight:400;line-height:1.4;color:var(--ink-soft);max-width:680px;margin:0 0 32px}
+      .feat-sub.center{margin-left:auto;margin-right:auto}
+      .feat-sub strong,.feat-headline strong{display:inline;font-weight:600}
+      .feat-cta{display:inline-flex;gap:18px;flex-wrap:wrap;justify-content:center;margin-top:8px}
+      /* 3-column feature grid */
+      .feat-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:64px;margin-top:64px;text-align:left}
+      @media (max-width:833px){.feat-cols{grid-template-columns:1fr;gap:40px;margin-top:48px}}
+      .feat-col h3{font-size:clamp(22px,2.3vw,28px);font-weight:600;letter-spacing:-.01em;line-height:1.15;margin:0 0 12px;color:var(--ink)}
+      .feat-col p{font-size:16px;line-height:1.55;color:var(--ink-mute);margin:0}
+      .feat-col-icon{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:14px;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent);margin-bottom:18px;font-size:22px}
+      /* Big pull quote section. Distinctive deep-blue gradient so it differs visually from the dark finale CTA */
+      .feat-quote-section{background:linear-gradient(135deg,#0a1b3d 0%,#13284e 50%,#082450 100%);color:#f5f5f7;position:relative;overflow:hidden}
+      .feat-quote-section::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 20%,rgba(90,200,250,.15) 0%,transparent 45%),radial-gradient(circle at 80% 80%,rgba(120,90,255,.18) 0%,transparent 50%);z-index:0;pointer-events:none}
+      .feat-quote-section .wrap{position:relative;z-index:1}
+      .feat-quote{font-family:"SF Pro Display",-apple-system,sans-serif;font-size:clamp(28px,3.6vw,44px);line-height:1.18;font-weight:500;letter-spacing:-.015em;color:inherit;max-width:1100px;margin:0 auto;text-align:left}
+      .feat-quote-section .feat-quote{text-align:center}
+      .feat-quote p{margin:0}
+      .feat-quote-attrib{margin-top:36px;display:inline-flex;flex-direction:column;gap:6px;align-items:center;padding:18px 28px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;backdrop-filter:saturate(180%) blur(8px)}
+      .feat-quote-attrib strong{font-size:15px;font-weight:600;letter-spacing:.02em;color:#fff}
+      .feat-quote-attrib span{font-size:13px;color:#a1a1a6;letter-spacing:.01em}
+      .feat-quote-attrib a{color:#5ac8fa;text-decoration:none}
+      .feat-quote-attrib a:hover{text-decoration:underline}
+      /* Stat / fact block */
+      .feat-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:48px;text-align:left}
+      @media (max-width:833px){.feat-stats{grid-template-columns:1fr;gap:32px}}
+      .feat-stat{display:block;padding:36px 32px;background:var(--card);border-radius:22px;box-shadow:var(--shadow);text-align:left}
+      .feat-stat strong{display:block;font-size:clamp(56px,7vw,88px);font-weight:600;letter-spacing:-.03em;line-height:.95;margin:0 0 14px;color:var(--ink);font-family:"SF Pro Display",-apple-system,sans-serif}
+      .feat.dark .feat-stat strong{color:#fff}
+      .feat-stat span{font-size:15px;line-height:1.45;color:var(--ink-mute);display:block}
+      .feat.dark .feat-stat span{color:#a1a1a6}
+      /* Latest-card feature (single big card with image) */
+      .feat-card{display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--card);border-radius:24px;overflow:hidden;max-width:var(--max-wide);margin:48px auto 0;box-shadow:var(--shadow-lift);text-align:left}
+      @media (max-width:833px){.feat-card{grid-template-columns:1fr}}
+      .feat-card-media{aspect-ratio:1/1;overflow:hidden;background:var(--bg-alt)}
+      .feat-card-media img{width:100%;height:100%;object-fit:cover}
+      .feat-card-body{padding:48px 52px;display:flex;flex-direction:column;justify-content:center}
+      @media (max-width:833px){.feat-card-body{padding:36px 28px}}
+      .feat-card h3{font-size:clamp(28px,3vw,40px);line-height:1.1;font-weight:600;letter-spacing:-.015em;margin:0 0 16px;color:var(--ink)}
+      .feat-card p{font-size:17px;line-height:1.55;color:var(--ink-soft);margin:0 0 24px}
+      /* Final CTA block */
+      .feat-finale{padding:140px var(--pad-x);text-align:center}
+      .feat-finale .feat-headline{margin-left:auto;margin-right:auto}
+      .feat-latest-grid{margin-top:48px}
+      .feat-cta-row{text-align:center;margin-top:40px}
+
+      /* Apple-Mac-lineup-style project cards (home page open-source showcase) */
+      .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;text-align:left}
+      @media (max-width:980px){.proj-grid{grid-template-columns:repeat(2,1fr)}}
+      @media (max-width:600px){.proj-grid{grid-template-columns:1fr}}
+      .proj-card{background:var(--card);border-radius:22px;display:flex;flex-direction:column;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease;box-shadow:var(--shadow)}
+      .proj-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -16px rgba(0,0,0,.18)}
+      .proj-card-media{aspect-ratio:5/3;background:#fff;display:flex;align-items:center;justify-content:center;padding:24px;overflow:hidden;border-bottom:1px solid var(--border)}
+      /* Force every logo into the same 200×56 bounding box. object-fit:contain preserves
+         aspect ratio inside that box, so a square mark and a wide wordmark visually agree. */
+      .proj-card-media img{width:200px;height:56px;max-width:70%;max-height:60%;object-fit:contain;object-position:center;transition:transform .4s ease}
+      .proj-card:hover .proj-card-media img{transform:scale(1.05)}
+      .proj-card.photo .proj-card-media{padding:0;background:var(--bg-alt);border-bottom:0}
+      .proj-card.photo .proj-card-media img{width:100%;height:100%;object-fit:cover;max-width:none;max-height:none}
+      .proj-card-body{padding:24px 28px 28px;display:flex;flex-direction:column;flex:1}
+      .proj-card-tag{display:inline-block;font-size:11px;font-weight:600;color:var(--accent);letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}
+      .proj-card h3{font-size:22px;line-height:1.15;font-weight:600;letter-spacing:-.01em;margin:0 0 8px;color:var(--ink)}
+      .proj-card p{font-size:14px;line-height:1.5;color:var(--ink-mute);margin:0 0 18px;flex:1}
+      .proj-card .pill{align-self:flex-start;font-size:13px;padding:9px 16px}
+
+      /* About-page portrait. Markdown-author image, shown above the bio */
+      .about-portrait{display:block;width:220px;height:220px;margin:0 auto 32px;border-radius:50%;object-fit:cover;box-shadow:0 14px 40px -16px rgba(0,0,0,.25)}
+
+      /* Brand logos row (used on About + home) */
+      .brands{display:flex;flex-wrap:nowrap;align-items:center;justify-content:space-between;gap:clamp(16px,3vw,40px);margin:48px 0 16px;padding:48px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+      .brand-logo{height:28px;width:auto;max-width:100%;flex:0 1 auto;min-width:0;filter:grayscale(100%);opacity:.5;transition:opacity .25s ease,filter .25s ease;object-fit:contain}
+      .brand-logo:hover{filter:grayscale(0);opacity:1}
+      @media (max-width:600px){.brands{gap:14px;padding:32px 0}.brand-logo{height:20px}}
+
+      /* Shokunin auto-injected search widget. Apple-clean override:
+         keep just the magnifier glyph as a discreet circular icon top-right. */
+      /* Hide the floating Shokunin search button. Our nav has its own .ap-search
+         which forwards clicks to this button via main.js. */
+      #ssg-search-btn{position:absolute!important;left:-9999px!important;top:-9999px!important;width:1px!important;height:1px!important;clip:rect(0 0 0 0)!important;clip-path:inset(50%)!important;overflow:hidden!important;pointer-events:none}
+    </style>
   </head>
-  <body
-    id="page-top"
-    itemscope
-    itemtype="http://schema.org/WebPage"
-    class="fw-light text-center bg-white text-start fs-6"
-  >
-    <!-- # Start Responsive navbar -->
-    <nav
-      class="navbar navbar-expand-lg bd-navbar sticky-top shadow-small border-bottom blur-light"
-      id="mainNav"
-      itemscope
-      itemtype="http://schema.org/SiteNavigationElement"
-    >
-    <div class="container-xxl p-3">
-      <a class="navbar-brand p-0 me-0 me-lg-2 zoom-in" href="/index.html" aria-label="logo">
-        <img
-          class="d-inline-block align-top"
-          width="{{logo_width}}"
-          height="{{logo_height}}"
-          src="{{logo}}"
-          alt="Visual {{logo_alt}}"
-          title="Image of the {{logo_alt}}"
-          loading="lazy"
-        />
-      </a>
-      <span class="fs-4" itemprop="name"><a href="/" itemprop="url" title="{{name}} - {{description}}" class="text-decoration-none text-dark">{{name}}</a></span>
-      <button
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          class="navbar-toggler"
-          data-bs-target="#navbarSupportedContent"
-          data-bs-toggle="collapse"
-          type="button"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                aria-current="page"
-                href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="/about/index.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="/articles/index.html">Articles</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="/papers/index.html">Papers</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="/projects/index.html">Projects</a>
-            </li>
-            <li class="nav-item dropdown {{menu}}">
-              <a
-                class="nav-link dropdown-toggle"
-                id="navbarDropdown"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Links</a
-              >
-              <ul
-                class="dropdown-menu dropdown-menu-end"
-                aria-labelledby="navbarDropdown"
-              >
-                <li>
-                  <a class="dropdown-item" href="/playlists/index.html">
-                    Spotify Playlists
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/made-with-shokunin/index.html">
-                    Made with Shokunin
-                  </a>
-                </li> 
-                <li>
-                  <a class="dropdown-item" href="/tags/index.html">
-                    Tags
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a
-                aria-pressed="false"
-                class="btn btn-dark rounded-pill px-3"
-                href="/contact/index.html"
-                >Get in touch
-              </a>
-            </li>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Skip to main content</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Toggle navigation" />
+      <div class="wrap">
+        <a class="ap-brand" href="/index.html" aria-label="{{name}} home">
+          <span itemprop="name">{{name}}</span>
+        </a>
+        <nav aria-label="Primary">
+          <ul class="ap-menu">
+            <li><a href="/about/index.html">About</a></li>
+            <li><a href="/articles/index.html">Articles</a></li>
+            <li><a href="/papers/index.html">Papers</a></li>
+            <li><a href="/projects/index.html">Projects</a></li>
+            <li><a href="/playlists/index.html">Playlists</a></li>
+            <li><a href="/tags/index.html">Tags</a></li>
           </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Search" title="Search (K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+          <a class="ap-cta-mini" href="/contact/index.html" aria-label="Get in touch">Get in touch ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Toggle navigation">☰</label>
         </div>
       </div>
-    </nav>
-    <!-- # End Responsive navbar -->
+    </header>
 
-    <!-- Header-->
-    <header class="w-100 py-5 position-relative">
-      <img
-        alt="{{banner_alt}}"
-        aria-hidden="false"
-        class="fade-in position-absolute top-0 start-0 w-100 h-100"
-        data-has-animated="true"
-        data-show-type="fade-in"
-        height="{{banner_height}}"
-        loading="lazy"
-        src="{{banner}}"
-        style="object-fit: cover; z-index: -1;"
-        title="Image of {{banner_alt}}"
-        width="{{banner_width}}"
-      />
-      <span id="imageTitle" class="visually-hidden">{{image_alt}}</span>
-      <img
-        alt="{{image_alt}}"
-        aria-labelledby="imageTitle"
-        class="img-fluid rounded-circle mb-4"
-        height="{{image_height}}"
-        loading="lazy"
-        src="{{image}}"
-        title="Image of {{image_alt}}"
-        width="{{image_width}}"
-      />
-      <div class="text-center text-white center mx-auto rounded rounded-3 p-5"
-      style="
-        background-color: rgba(0, 0, 0, 0.618);
-        width: 94vw;
-        height: auto;
-        z-index: 1;">
-        <p class="fs-1">{{name}}</p>
-        <p class="fs-5">{{subtitle}}</p>
-      </div>
-  </header>
-  <!-- # End Header -->
+        <section class="ap-hero">
+      <h1>{{name}}</h1>
+      <p class="sub">{{subtitle}}</p>
+    </section>
 
-    <!-- Main content-->
-    <main id="main" class="bd-masthead fs-5 p-5" aria-label="main">
-      <div class="text-start justify-content-between">{{content}}</div>
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap">{{content}}</div>
     </main>
 
-    <!-- Top Anchor -->
-    <top id="top-anchor">
-      <p class="mb-0 text-center p-4">
-        <a href="#page-top" class="btn btn-outline-dark btn-floating btn-lg">
-          Back to the top
-        </a>
-      </p>
-    </top>
-    <!-- # End Top Anchor -->
-
-    <!-- Footer-->
-    <footer id="footer" aria-label="footer" class="footer bg-light mt-auto fs-6 py-5 border-top">
-      <p class="mb-0">
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://twitter.com/wwdseb"><img src="{{cdn}}/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter" title="Image for Sebastien Rousseau on Twitter" width="32" height="32" /></a>
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.linkedin.com/in/sebastienrousseau/"><img src="{{cdn}}/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" title="Image for Sebastien Rousseau on LinkedIn" width="32" height="32" /></a>
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://medium.com/@BankingOnQuantum"><img src="{{cdn}}/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" title="Image for Sebastien Rousseau on Medium" width="32" height="32" /></a>
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.youtube.com/@BankingOnQuantum"><img src="{{cdn}}/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" title="Image for Sebastien Rousseau on YouTube" width="32" height="32" /></a>
-      </p>
-      <p class="mb-0">
-        <span class="px-2"><a href="/accessibility/index.html">Accessibility</a></span>
-        <span class="px-2"><a href="/contact/index.html">Contact</a></span>
-        <span class="px-2"><a href="/privacy/index.html">Privacy & Cookie Policy</a></span>
-        <span class="px-2"><a href="/terms/index.html">Terms of Use</a></span>
-      </p>
-      <span class="px-2">{{copyright}}</span>
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/about/index.html">About</a></li>
+              <li><a href="/contact/index.html">Contact</a></li>
+              <li><a href="/made-with-static-site-generator/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Writing</h2>
+            <ul>
+              <li><a href="/articles/index.html">Articles</a></li>
+              <li><a href="/papers/index.html">Papers</a></li>
+              <li><a href="/tags/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Work</h2>
+            <ul>
+              <li><a href="/projects/index.html">Projects</a></li>
+              <li><a href="/playlists/index.html">Playlists</a></li>
+              <li><a href="/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Reach</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="legal">
+          <span>{{copyright}}</span>
+          <div class="social" aria-label="Social links">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="{{cdn}}/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="{{cdn}}/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="{{cdn}}/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="{{cdn}}/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
+          </div>
+          <p>
+            <a href="/accessibility/index.html">Accessibility</a> ·
+            <a href="/privacy/index.html">Privacy</a> ·
+            <a href="/terms/index.html">Terms</a>
+          </p>
+        </div>
+      </div>
     </footer>
-    <!-- # End Footer -->
-    <script
-      async
-      crossorigin="anonymous"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      defer
-    ></script>
-    <script type="application/ld+json">{"@context":"http://schema.org/","@type":"BlogPosting","headline":"{{title}}","datePublished":"{{last_build_date}}","dateModified":"{{item_pub_date}}","description":"{{description}}","image":{"@type":"ImageObject","height":"2048","width":"2048","url":"{{image}}"},"mainEntityOfPage":{"@type":"WebPage","@id":"{{id}}","name":"{{subtitle}}"},"author":"{{author}}","copyrightHolder":{"@type":"Person","@id":"{{author}}"},"copyrightYear":"{{copyright}}","creator":{"@type":"Person","@id":"{{author}}"},"inLanguage":"{{language}}","name":"{{name}}","publisher":{"@type":"Person","@id":"{{author}}"}}</script>
-    <script type="module" defer>
-      // This is an Immediately Invoked Function Expression (IIFE) which helps
-      // to avoid declaring any globals.
-      (function () {
-        // Create a new script element
-        var script = document.createElement("script");
 
-        // Set the source of the script element to "/main.js".
-        // A timestamp is appended as a query string to ensure the browser
-        // always fetches the latest version of the script, bypassing the
-        // cache.
-        script.src = "/main.js";
-
-        // The script is of type "text/javascript"
-
-        // The script is set to execute asynchronously as soon as it's
-        //available
-
-        // Append the script element to the head of the document
-        document.head.appendChild(script);
-      })(); // The function is immediately invoked
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://sebastienrousseau.com/#person",
+      "name": "Sebastien Rousseau",
+      "givenName": "Sebastien",
+      "familyName": "Rousseau",
+      "url": "https://sebastienrousseau.com/",
+      "image": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+      "jobTitle": "Senior Product Manager",
+      "description": "AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "HSBC Commercial & Investment Bank",
+        "url": "https://www.hsbc.com/"
+      },
+      "alumniOf": [
+        {"@type": "Organization", "name": "PayPal"},
+        {"@type": "Organization", "name": "Barclays"},
+        {"@type": "Organization", "name": "Shazam Entertainment"},
+        {"@type": "Organization", "name": "AKQA"},
+        {"@type": "Organization", "name": "Virgin Group"}
+      ],
+      "knowsAbout": [
+        "Applied artificial intelligence in banking",
+        "Generative AI for financial services",
+        "Wholesale payments",
+        "ISO 20022 migration",
+        "SWIFT gpi",
+        "SEPA Instant Payments",
+        "Cross-border payments",
+        "Post-quantum cryptography",
+        "CRYSTALS-Kyber",
+        "CRYSTALS-Dilithium",
+        "Quantum-safe payment authentication"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressCountry": "United Kingdom"
+      },
+      "sameAs": [
+        "https://twitter.com/wwdseb",
+        "https://www.linkedin.com/in/sebastienrousseau/",
+        "https://medium.com/@BankingOnQuantum",
+        "https://www.youtube.com/@BankingOnQuantum",
+        "https://github.com/sebastienrousseau"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sebastienrousseau.com/#website",
+      "url": "https://sebastienrousseau.com/",
+      "name": "Sebastien Rousseau",
+      "description": "AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.",
+      "publisher": {"@id": "https://sebastienrousseau.com/#person"},
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://sebastienrousseau.com/#profile",
+      "mainEntity": {"@id": "https://sebastienrousseau.com/#person"},
+      "name": "Sebastien Rousseau: AI, Banking & Financial Services Expert",
+      "url": "https://sebastienrousseau.com/",
+      "inLanguage": "en-GB"
+    }
+  ]
+}
     </script>
-    <script>
-      // JavaScript code
-      var dropDownElements = document.querySelectorAll('.drop-down');
-      dropDownElements.forEach(function(element) {
-        element.classList.add('animate');
-      });
-  
-      window.addEventListener('scroll', function() {
-        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        dropDownElements.forEach(function(element) {
-          if (scrollTop === 0) {
-            element.classList.add('animate');
-          } else {
-            element.classList.remove('animate');
-          }
-        });
-      });
+
+        <script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","image":{"@type":"ImageObject","url":"{{image}}","width":"{{image_width}}","height":"{{image_height}}"},"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"isPartOf":{"@id":"https://sebastienrousseau.com/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"{{title}}","item":"{{url}}"}]}]}
     </script>
-    <!-- Google tag (gtag.js) -->
+<script src="/main.js" defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id={{measurementID}}"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', '{{measurementID}}');
     </script>
   </body>

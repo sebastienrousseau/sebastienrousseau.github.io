@@ -6,8 +6,8 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Turned off laptop computer on top of brown wooden table"
 banner_height: "100vh"
 banner_width: "100vw"
-banner: "https://kura.pro/stock/images/banners/declan-sun-pYLuh6fRdhw.webp"
-cdn: "https://kura.pro"
+banner: "https://cloudcdn.pro/stocks/images/declan-sun-pYLuh6fRdhw.webp"
+cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -16,12 +16,12 @@ date: "Apr 01, 2024"
 description: "Explore my open-source projects and discover how I leverage open-source software to deliver groundbreaking solutions."
 format-detection: "telephone=no"
 hreflang: "en"
-icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/projects"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://kura.pro/stock/images/banners/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "AI voice assistant, Audio analysis, Quantum cryptography, Post-quantum cryptography, ISO 20022 payment, Bank statement parser, Static site generator, Password generator, Rust library, Rust logging library"
 language: "en-GB"
 layout: "project"
@@ -29,7 +29,7 @@ locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
-logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
@@ -81,7 +81,7 @@ msapplication-navbutton-color: "rgb(0, 102, 204)"
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
 twitter_description: "Explore my open-source projects and discover how I leverage open-source software to deliver groundbreaking solutions."
-twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Innovative and Creative Solutions Built with Open Source"
@@ -99,325 +99,334 @@ site_software: "Shokunin, Rust"
 
 ---
 
-My passion lies in harnessing open-source software and experimentation to push boundaries and tackle real-world challenges.  I'm eager to team up with like-minded individuals on open-source initiatives. If you'd like to collaborate, or have a brilliant project concept, don't hesitate to reach out.
-
-## Project Categories
-
-<!-- markdownlint-disable MD051 -->
-1. [Artificial Intelligence (AI) Projects](#h2-1)
-2. [Quantum Computing and Quantum Cryptography Projects](#h2-2)
-3. [Python Projects](#h2-3)
-4. [Rust Projects](#h2-4)
-5. [JavaScript Projects](#h2-5)
-6. [General Projects](#h2-6)
-7. [CSS Projects](#h2-7)
-8. [Web Based Projects](#h2-8)
-<!-- markdownlint-enable MD051 -->
-
-![divider][divider].class=\"m-10 w-100\"
-
-## 1. Artificial Intelligence (AI) Projects
-
-This collection of AI projects applies machine learning and other latest techniques to solve real-world problems in areas like voice assistants, audio analysis and more.
-
-### Àkàndé: Advanced AI Voice Assistant for All
-
-![a banner for Àkàndé: Advanced AI Voice Assistant for All](https://kura.pro/akande/images/github/github-akande.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Àkàndé**: Discover Àkàndé, an advanced voice assistant using OpenAI's GPT for
-natural interactions, PDF summaries, & efficient caching for both personal and
-executive tasks.
-
-[**Learn more** ⧉][00]
-
-![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
-
-### Audio Analyser
-
-![a banner for Audio Analyser](https://kura.pro/audioanalyser/images/github/github-audioanalyser.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Audio Analyser**: Convert audio to text accurately in real-time using our advanced AI speech recognition technology.
-
-[**Learn more** ⧉][01]
-
-![divider][divider].class=\"m-10 w-100\"
-
-## 2. Quantum Computing and Quantum Cryptography Projects
-
-This collection showcases a variety of open-source Quantum Computing and Quantum Cryptography projects. Covering a range of areas from cryptography to web development, each project is designed to provide innovative solutions to real-world problems and is built using the latest Rust technologies.
-
-![a banner for KyberLib](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**KyberLib**, a Robust Rust Library for CRYSTALS-Kyber Post-Quantum Cryptography.
-
-[**Learn more** ⧉][02]
-
-![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
-
-### Hash (HSH) Rust library
-
-![a banner for the Hash (HSH) Rust library](https://kura.pro/hsh/images/github/github-hsh.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Hash (HSH) Rust library**: The Hash (HSH) Rust library provides an interface
-for implementing secure hash and digest algorithms, specifically designed for
-password encryption and verification.
-
-[**Learn more** ⧉][07]
-
-![divider][divider].class=\"m-10 w-100\"
-
-## 3. Python Projects
-
-This collection showcases a variety of open-source Python projects that demonstrate practical applications of coding in Python. Covering a range of areas from finance to cryptography, each project is designed to provide innovative solutions to real-world problems and is built using the latest Python technologies
-
-### Pain001
-
-![a banner for Pain001](https://kura.pro/pain001/images/github/github-pain001.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Pain001**: A powerful Python library for ISO 20022 compliant payment file
-creation from CSV or SQLite data files, simplifying payment automation and
-processing.
-
-[**Learn more** ⧉][03]
-
-![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
-
-### Bank Statement Parser
-
-![a banner for Bank Statement Parser](https://kura.pro/bankstatementparser/images/github/github-bankstatementparser.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Bank Statement Parser**, a specialized Python library crafted specifically for
-finance professionals, simplifies the intricate process of parsing bank
-statements.
-
-[**Learn more** ⧉][04]
-
-![divider][divider].class=\"m-10 w-100\"
-
-## 4. Rust Projects
-
-This collection showcases a variety of open-source Rust projects that demonstrate practical applications of coding in Rust. Covering a range of areas from cryptography to web development, each project is designed to provide innovative solutions to real-world problems and is built using the latest Rust technologies.
-
-### Serde YML: Effortless YAML Serialization in Rust
-
-![a banner for Serde YML](https://kura.pro/serde_yml/images/github/github-serde_yml.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Serde YML**: A robust Rust library that simplifies the serialization and deserialization of Rust data structures to and from YAML format using the widely-used Serde framework. With Serde YML, you can effortlessly convert your Rust types into YAML strings and vice versa, streamlining the process of storing, transmitting, and manipulating structured data.providing style guides for your library.
-
-[**Learn more** ⧉][22]
-
-![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
-
-### Shokunin Static Site Generator
-
-![a banner for the Shokunin Static Site Generator](https://kura.pro/shokunin/images/github/github-shokunin.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Shokunin Static Site Generator (SSG)**: A blazing-fast Static Site Generator
-(SSG) built with Rust. Intended to make it simple and quick to generate websites
-optimised for SEO and compliant with Accessibility Standards.
-
-[**Learn more** ⧉][05]
-
-![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
-
-### RustLogs (RLG)
-
-![a banner for the RustLogs (RLG) Library](https://kura.pro/rlg/images/github/github-rlg.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**RustLogs (RLG): Advanced Logging Library for Rust**: Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customization options.
-
-[**Learn more** ⧉][19]
-
-![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
-
-### Password Generator Pro
-
-![a banner for the Password Generator Pro](https://kura.pro/password-generator-pro/images/github/github-password-generator-pro.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Password Generator Pro**: A fast, simple and powerful open-source cross
-platform utility tool for generating strong, unique and random passwords.
-
-[**Learn more** ⧉][06]
-
-![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
-
-### LibMake Rust library
-
-![a banner for LibMake](https://kura.pro/libmake/images/github/github-libmake.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**LibMake Rust library**: LibMake is a tool designed to quickly help creating
-high-quality Rust libraries by generating a set of pre-filled and pre-defined
-templated files.
-
-[**Learn more** ⧉][08]
-
-![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
-
-### DateTime (DTT) Rust library
-
-![a banner for the DateTime (DTT) Rust library](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**DateTime (DTT) Rust library**: The DateTime (DTT) library offers a range of
-functions and data structures that allow you to perform various date and time
-operations with ease, such as determining the day of the month, hour of the day,
-working with ISO 8601 date and time formats, and many others.
-
-[**Learn more** ⧉][09]
-
-![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
-
-### Random (VRD) Rust library
-
-![a banner for the Random (VRD) Rust library](https://kura.pro/vrd/images/github/github-vrd.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Random (VRD) Rust library**: Random (VRD) is a Rust library for generating
-high-quality random numbers based on the Mersenne Twister algorithm. The
-Mersenne Twister is a pseudorandom number generator (PRNG) that is often used in
-computer simulations and games.
-
-[**Learn more** ⧉][10]
-
-![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
-
-### Common (CMN) Rust library
-
-![a banner for the Common (CMN) Rust library](https://kura.pro/cmn/images/github/github-cmn.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Common (CMN) Rust library**: Common (CMN) is a modern, fast, and user-friendly
-library that makes it easy to access a wide range of mathematical and
-cryptographic constants.
-
-[**Learn more** ⧉][11]
-
-![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
-
-### Mini Functions Rust library
-
-![a banner for the Mini Functions Rust library](https://kura.pro/mini-functions/images/v2/github/github-mini-functions.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Mini Functions**: Mini Functions is a highly performant utility and wrapper functions library for Rust that has been carefully designed with optimization and efficiency in mind.
-
-[**Learn more** ⧉][12]
-
-![divider][divider].class=\"m-10 w-100\"
-
-## 5. JavaScript Projects
-
-This collection showcases a variety of open-source JavaScript projects that demonstrate practical applications of coding in JavaScript. Covering a range of areas from cryptography to web development, each project is designed to provide innovative solutions to real-world problems and is built using the latest JavaScript technologies.
-
-### Crypto Service Suite
-
-![a banner for the Crypto Service Suite](https://kura.pro/stock/images/banners/steven-wei-Z7NMhw8hcfg.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Crypto Service Suite**: The Crypto Service Suite is a powerful and centralized
-cryptographic suite of security tools that solves common application crypto
-problems, including integration, data encryption, tokenization, transaction
-authorization, code-signing and key life-cycle management and other security
-services.
-
-[**Learn more** ⧉][13]
-
-![divider][divider].class=\"m-10 w-100\"
-
-## 6. General Projects
-
-### Dotfiles
-
-![a banner for the Dotfiles](https://kura.pro/dotfiles/v2/images/banners/dotfiles.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Dotfiles**: are a powerful set of configuration files for macOS, Linux, and Windows providing scripts and customized settings to streamline your workflow. These files are an essential tool for developers and users who want to modify their environment and applications to their exact needs.
-
-[**Learn more** ⧉][14]
-
-![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
-
-### MacConfig (maccfg)
-
-![a banner for the MacConfig (maccfg)](https://kura.pro/stock/images/banners/ibrahim-abazid-MgQnQZA4ByM.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**MacBook Pro M1 Software Development Setup (macOS Config)**: A guide to getting your MacBook Pro M1 ready for Software Development. You can set up and start using your new Mac in no time at all with these free resources and user guides.
-
-[**Learn more** ⧉][15]
-
-![divider][divider].class=\"m-10 w-100\"
-
-## 7. CSS Projects
-
-### Skeletonic Stylus Library
-
-![a banner for the Skeletonic Stylus Library](https://kura.pro/skeletonic/images/banner/skeletonic.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Skeletonic Stylus Library**: a lightweight and modular Stylus Library. It contains a suite of components and mixins optimised for mobile and web application design and development.
-
-[**Learn more** ⧉][16]
-
-![divider][divider].class=\"m-10 w-100\"
-
-## 8. Web Based Projects
-
-### Kaishi, a Starter Template
-
-![a banner for the Kaishi, a Starter Template](https://kura.pro/stock/images/banners/bee-on-a-yellow-flower.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Kaishi, a Starter Template for Shokunin**: Make beautiful websites with Kaishi, a Shokunin Static Site Generator starter template.
-
-[**Learn more** ⧉][17]
-
-![divider][divider].class=\"m-10 w-50 d-flex mx-auto p-5\"
-
-### L90S
-
-![A banner for the L90S website](https://kura.pro/l90s/images/banners/banner-office.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**L90S**, A trusted finance leader with 20+ years of experience in the tech industry, guiding companies to sustainable growth, funding, and optimized financial operations.
-
-[**Learn more** ⧉][18]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### Banking On AI
-
-![A banner for the Banking On AI website](https://kura.pro/bankingonai/images/github/github-bankingonai.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Banking On AI**,  Discover how AI is transforming the banking sector with improved customer service, fraud detection, and streamlined operations for a digital age.
-
-[**Learn more** ⧉][20]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### Banking On Quantum
-
-![A banner for the Banking On Quantum website](https://kura.pro/bankingonquantum/images/github/github-bankingonquantum.webp).class=\"w-50 float-start me-5 p-0 img-fluid img-thumbnail border border-black-subtle\"
-
-.class=\"p-5 m-5 text-light bg-dark text-wrap\"**Banking On Quantum**, Explore how quantum computing is set to revolutionise the banking and finance industry, from risk analysis to quantum cryptography and beyond.
-
-[**Learn more** ⧉][21]
-
-
-![divider][divider].class=\"m-10 w-100\"
-
-[00]: https://akande.co/ "Àkàndé: Advanced AI Voice Assistant for All"
-[01]: https://audioanalyser.co/ "Unlock Actionable Insights from Audio Data to Enhance CX/EX"
-[02]: https://kyberlib.com/ "KyberLib, a Robust Rust Library for CRYSTALS-Kyber Post-Quantum Cryptography"
-[03]: https://pain001.com "Pain001: Automate ISO 20022-Compliant Payment File Creation"
-[04]: https://bankstatementparser.com/ "Simplify Financial Data Analysis with Bank Statement Parser"
-[05]: https://shokunin.one "Shokunin: The fastest Rust-based Static Site Generator (SSG)"
-[06]: https://password-generator.pro "Password Generator Pro: A fast, simple and powerful open-source cross platform utility tool for generating strong, unique and random passwords"
-[07]: https://hshlib.one/ "Hash (HSH), a Quantum-Resistant Cryptographic Hash Library"
-[08]: http://docs.libmake.com/ "A code generator to reduce repetitive tasks and build high-quality Rust libraries"
-[09]: https://dttlib.one/ "DateTime (DTT) Rust Library: Parse & Format Dates with Ease"
-[10]: https://vrdlib.com/ "Random (VRD) Rust library: A Rust library for generating high-quality random numbers based on the Mersenne Twister algorithm"
-[11]: https://doc.cmnlib.one/cmn/ "Common (CMN) Rust Library: A modern, fast, and user-friendly library that makes it easy to access a wide range of mathematical and cryptographic constants"
-[12]: http://minifunctions.com/ "Highly performant utility and wrapper functions library for Rust"
-[13]: https://github.com/sebastienrousseau/crypto-service "The Crypto Service Suite is a set of products that delivers common crypto functions"
-[14]: https://dotfiles.io/ "The next generation of Bash configuration files for macOS, Linux and Windows"
-[15]: https://maccfg.com/ "A guide to getting your MacBook Pro M1 ready for Software Development"
-[16]: https://skeletonic.io/ "Skeletonic Stylus Library: a lightweight and modular Stylus Library"
-[17]: https://kaishi.one/ "Kaishi, a Starter Template for Shokunin"
-[18]: https://l90s.com/ "Unlock Financial Growth with Fractional CFOs"
-[19]: https://rustlogs.com/ "RustLogs (RLG): Advanced Logging Library for Rust"
-[20]: https://bankingonai.co/ "The Future of Banking and Finance | Banking On AI"
-[21]: https://bankingonquantum.com/ "The Future of Banking and Finance | Banking On Quantum"
-[22]: https://serdeyml.com/ "Serde YML: Effortless YAML Serialization in Rust"
-
-[divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
+<p class="newsroom-intro">My passion lies in harnessing open-source software and experimentation to push boundaries and tackle real-world challenges. I'm eager to team up with like-minded individuals on open-source initiatives. If you have a project concept or want to collaborate, [get in touch](/contact/index.html).</p>
+
+<section class="newsroom">
+
+<header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>pain001. ISO 20022 payments, automated</h2></header>
+
+<article class="newsroom-featured">
+<a class="newsroom-featured-media logo" href="https://pain001.com" title="pain001. Automate ISO 20022-compliant payment file creation">
+<img alt="Banner for the pain001 open-source payments library" src="https://cloudcdn.pro/clients/pain001/v1/github/github-pain001.svg" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+</a>
+<div class="newsroom-featured-body">
+<span class="newsroom-eyebrow">Open source · Python · Payments</span>
+<h3><a href="https://pain001.com" title="pain001. Automate ISO 20022-compliant payment file creation">pain001. Automate ISO 20022-compliant payment file creation</a></h3>
+<p>A powerful Python library for ISO 20022-compliant payment file creation from CSV or SQLite sources. pain001 directly supports the global payments industry's migration to ISO 20022. The universal financial messaging standard now mandated across SWIFT, SEPA, and major payment schemes worldwide.</p>
+<p><a class="pill ghost" href="https://pain001.com" title="pain001. Automate ISO 20022-compliant payment file creation">Learn more</a></p>
+</div>
+</article>
+
+<header class="newsroom-section-head"><p class="newsroom-kicker">AI</p><h2>Artificial intelligence</h2><p class="newsroom-lede">Open-source AI projects applying machine learning and modern techniques to real-world problems. Voice assistants, audio analysis and more.</p></header>
+
+<div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://akande.co/" title="Àkàndé. Advanced AI Voice Assistant">
+<img alt="Banner for Àkàndé, an advanced AI voice assistant" src="https://cloudcdn.pro/clients/akande/v1/github/github-akande.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI · Voice</span>
+<h3><a href="https://akande.co/" title="Àkàndé. Advanced AI Voice Assistant">Àkàndé. Advanced AI Voice Assistant</a></h3>
+<p class="newsroom-excerpt">Àkàndé is an advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching. Built for both personal and executive tasks.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://audioanalyser.co/" title="Audio Analyser">
+<img alt="Banner for Audio Analyser" src="https://cloudcdn.pro/clients/audioanalyser/v1/github/github-audioanalyser.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI · Speech</span>
+<h3><a href="https://audioanalyser.co/" title="Audio Analyser">Audio Analyser</a></h3>
+<p class="newsroom-excerpt">Convert audio to text accurately in real-time using advanced AI speech recognition technology. Designed to unlock actionable insights from audio data to enhance customer and employee experience.</p>
+</div>
+</article>
+
+</div>
+
+<header class="newsroom-section-head"><p class="newsroom-kicker">QUANTUM</p><h2>Quantum computing & cryptography</h2><p class="newsroom-lede">Open-source Rust libraries spanning post-quantum cryptography and quantum-resistant primitives, designed to keep data safe in the quantum era.</p></header>
+
+<div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://kyberlib.com/" title="KyberLib. CRYSTALS-Kyber for Rust">
+<img alt="Banner for KyberLib" src="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum · Rust</span>
+<h3><a href="https://kyberlib.com/" title="KyberLib. CRYSTALS-Kyber for Rust">KyberLib. CRYSTALS-Kyber for Rust</a></h3>
+<p class="newsroom-excerpt">A robust Rust library for CRYSTALS-Kyber post-quantum cryptography, the algorithm selected by NIST for general-purpose encryption in the post-quantum era.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/hsh" title="Hash (HSH). Secure hash library for Rust">
+<img alt="Banner for the Hash (HSH) Rust library" src="https://cloudcdn.pro/clients/hsh/v1/github/github-hsh.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum · Rust</span>
+<h3><a href="https://github.com/sebastienrousseau/hsh" title="Hash (HSH). Secure hash library for Rust">Hash (HSH). Secure hash library for Rust</a></h3>
+<p class="newsroom-excerpt">An interface for implementing secure hash and digest algorithms in Rust, designed for password encryption and verification with a quantum-resistant posture.</p>
+</div>
+</article>
+
+</div>
+
+<header class="newsroom-section-head"><p class="newsroom-kicker">RUST</p><h2>Rust libraries & tools</h2><p class="newsroom-lede">A collection of open-source Rust projects covering serialisation, logging, code generation, and developer tooling. Built on the latest Rust technologies.</p></header>
+
+<div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/noyalib" title="noyalib. Pure-Rust YAML 1.2 ecosystem">
+<img alt="Banner for the noyalib Rust YAML 1.2 ecosystem" src="https://cloudcdn.pro/clients/noyalib/v1/github/github-noyalib.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · YAML</span>
+<h3><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib. Pure-Rust YAML 1.2 ecosystem">noyalib. Pure-Rust YAML 1.2 ecosystem</a></h3>
+<p class="newsroom-excerpt">Zero unsafe, 100% spec compliance (406 / 406 official suite), streaming-first serde, lossless CST, JSON-Schema validation. Library + CLI (noyafmt, noyavalidate) + LSP + MCP + WASM bindings.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://serdeyml.com/" title="Serde YML. Effortless YAML serialisation in Rust">
+<img alt="Banner for Serde YML" src="https://cloudcdn.pro/clients/serde_yml/v1/github/github-serde_yml.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Serialisation</span>
+<h3><a href="https://serdeyml.com/" title="Serde YML. Effortless YAML serialisation in Rust">Serde YML. Effortless YAML serialisation in Rust</a></h3>
+<p class="newsroom-excerpt">A robust Rust library that simplifies serialisation and deserialisation of Rust data structures to and from YAML, built on the widely used Serde framework.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/static-site-generator" title="Static Site Generator">
+<img alt="Banner for the Shokunin Static Site Generator" src="https://cloudcdn.pro/clients/shokunin/v1/github/github-shokunin.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · SSG</span>
+<h3><a href="https://github.com/sebastienrousseau/static-site-generator" title="Static Site Generator">Static Site Generator</a></h3>
+<p class="newsroom-excerpt">A secure-by-default static site generator built in Rust. WCAG 2.1 AA validation, CSP/SRI hardening, local LLM content pipeline, WebAssembly target, interactive islands, streaming compilation for 100K+ pages, 28-locale i18n, and one-command deployment.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://rustlogs.com/" title="RustLogs (RLG)">
+<img alt="Banner for the RustLogs (RLG) library" src="https://cloudcdn.pro/clients/rlg/v1/github/github-rlg.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Logging</span>
+<h3><a href="https://rustlogs.com/" title="RustLogs (RLG)">RustLogs (RLG)</a></h3>
+<p class="newsroom-excerpt">A flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://password-generator.pro" title="Password Generator Pro">
+<img alt="Banner for Password Generator Pro" src="https://cloudcdn.pro/clients/password-generator-pro/v1/github/github-password-generator-pro.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Security</span>
+<h3><a href="https://password-generator.pro" title="Password Generator Pro">Password Generator Pro</a></h3>
+<p class="newsroom-excerpt">A fast, simple, and powerful open-source cross-platform utility for generating strong, unique, and random passwords.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/libmake" title="LibMake. Rust library scaffold generator">
+<img alt="Banner for LibMake" src="https://cloudcdn.pro/clients/libmake/v1/github/github-libmake.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Tooling</span>
+<h3><a href="https://github.com/sebastienrousseau/libmake" title="LibMake. Rust library scaffold generator">LibMake. Rust library scaffold generator</a></h3>
+<p class="newsroom-excerpt">A tool designed to quickly help create high-quality Rust libraries by generating a set of pre-filled and pre-defined templated files.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/dtt" title="DateTime (DTT). Rust date/time library">
+<img alt="Banner for the DateTime (DTT) Rust library" src="https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Time</span>
+<h3><a href="https://github.com/sebastienrousseau/dtt" title="DateTime (DTT). Rust date/time library">DateTime (DTT). Rust date/time library</a></h3>
+<p class="newsroom-excerpt">A range of functions and data structures for date and time operations: day of the month, hour of the day, ISO 8601 formatting, and much more.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://vrdlib.com/" title="Random (VRD). Mersenne Twister for Rust">
+<img alt="Banner for the Random (VRD) Rust library" src="https://cloudcdn.pro/clients/vrd/v1/github/github-vrd.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Math</span>
+<h3><a href="https://vrdlib.com/" title="Random (VRD). Mersenne Twister for Rust">Random (VRD). Mersenne Twister for Rust</a></h3>
+<p class="newsroom-excerpt">A Rust library for generating high-quality random numbers based on the Mersenne Twister algorithm, widely used in simulations and games.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/cmn" title="Common (CMN). Math & crypto constants">
+<img alt="Banner for the Common (CMN) Rust library" src="https://cloudcdn.pro/clients/cmn/v1/github/github-cmn.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Math</span>
+<h3><a href="https://github.com/sebastienrousseau/cmn" title="Common (CMN). Math & crypto constants">Common (CMN). Math & crypto constants</a></h3>
+<p class="newsroom-excerpt">A modern, fast, user-friendly library that makes it easy to access a wide range of mathematical and cryptographic constants.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="http://minifunctions.com/" title="Mini Functions. Rust utility wrappers">
+<img alt="Banner for the Mini Functions Rust library" src="https://cloudcdn.pro/clients/mini-functions/v1/github/github-mini-functions.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Utility</span>
+<h3><a href="http://minifunctions.com/" title="Mini Functions. Rust utility wrappers">Mini Functions. Rust utility wrappers</a></h3>
+<p class="newsroom-excerpt">A highly performant utility and wrapper functions library for Rust, designed with optimisation and efficiency in mind.</p>
+</div>
+</article>
+
+</div>
+
+<header class="newsroom-section-head"><p class="newsroom-kicker">PAYMENTS</p><h2>Payments toolkits</h2><p class="newsroom-lede">ISO 20022 tooling for the global payments migration. Pacs.008 cross-border credit transfers and Pain.001 message generation, plus bank-statement parsing.</p></header>
+
+<div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://pacs008.com/" title="pacs008. Cross-border credit transfer toolkit">
+<img alt="Banner for the pacs008 ISO 20022 toolkit" src="https://pacs008.com/logo.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Python · ISO 20022</span>
+<h3><a href="https://pacs008.com/" title="pacs008. Cross-border credit transfer toolkit">pacs008. Cross-border credit transfer toolkit</a></h3>
+<p class="newsroom-excerpt">Generate, validate, and deliver ISO 20022 pacs.008 payment messages for FI-to-FI customer credit transfers. JSON Schema checks, IBAN verification across 75 countries, XSD validation against official ISO 20022 schemas, and GDPR/PCI DSS-compliant PII masking.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://bankstatementparser.com/" title="Bank Statement Parser">
+<img alt="Banner for Bank Statement Parser" src="https://cloudcdn.pro/clients/bankstatementparser/v1/github/github-bankstatementparser.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Python · Finance</span>
+<h3><a href="https://bankstatementparser.com/" title="Bank Statement Parser">Bank Statement Parser</a></h3>
+<p class="newsroom-excerpt">A specialised Python library crafted for finance professionals, simplifying the intricate process of parsing bank statements into structured data.</p>
+</div>
+</article>
+
+</div>
+
+<header class="newsroom-section-head"><p class="newsroom-kicker">JAVASCRIPT</p><h2>JavaScript projects</h2><p class="newsroom-lede">Centralised cryptographic services bringing together encryption, tokenisation, transaction authorisation, code signing, and key lifecycle management.</p></header>
+
+<div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="https://github.com/sebastienrousseau/crypto-service" title="Crypto Service Suite">
+<img alt="Banner for the Crypto Service Suite" src="https://cloudcdn.pro/stocks/images/steven-wei-Z7NMhw8hcfg.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">JavaScript · Security</span>
+<h3><a href="https://github.com/sebastienrousseau/crypto-service" title="Crypto Service Suite">Crypto Service Suite</a></h3>
+<p class="newsroom-excerpt">A powerful, centralised cryptographic suite that solves common application crypto problems. Integration, data encryption, tokenisation, transaction authorisation, code-signing, and key lifecycle management.</p>
+</div>
+</article>
+
+</div>
+
+<header class="newsroom-section-head"><p class="newsroom-kicker">CSS</p><h2>CSS framework</h2></header>
+
+<div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/skeletonic-stylus" title="Skeletonic Stylus Library">
+<img alt="Banner for the Skeletonic Stylus Library" src="https://cloudcdn.pro/clients/skeletonic/v1/logos/logo-skeletonic-stylus.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">CSS · Stylus</span>
+<h3><a href="https://github.com/sebastienrousseau/skeletonic-stylus" title="Skeletonic Stylus Library">Skeletonic Stylus Library</a></h3>
+<p class="newsroom-excerpt">A lightweight, modular Stylus library. A suite of components and mixins optimised for mobile and web application design and development. This site is built with it.</p>
+</div>
+</article>
+
+</div>
+
+<header class="newsroom-section-head"><p class="newsroom-kicker">WEB</p><h2>Web-based projects</h2><p class="newsroom-lede">Starter templates and content destinations. From a Shokunin starter kit to two industry-focused publications on the future of banking.</p></header>
+
+<div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/kaishi.github.io" title="Kaishi. A Shokunin starter template">
+<img alt="Banner for Kaishi, a starter template" src="https://cloudcdn.pro/clients/kaishi/v1/titles/title-kaishi.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Web · Template</span>
+<h3><a href="https://github.com/sebastienrousseau/kaishi.github.io" title="Kaishi. A Shokunin starter template">Kaishi. A Shokunin starter template</a></h3>
+<p class="newsroom-excerpt">Make beautiful websites with Kaishi, a Shokunin Static Site Generator starter template designed for clean, accessible, performant sites.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://l90s.com/" title="L90S. Fractional CFO advisory">
+<img alt="Banner for the L90S website" src="https://cloudcdn.pro/clients/l90s/v1/github/github-l90s.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Web · Finance</span>
+<h3><a href="https://l90s.com/" title="L90S. Fractional CFO advisory">L90S. Fractional CFO advisory</a></h3>
+<p class="newsroom-excerpt">A trusted finance leader with 20+ years of experience in the tech industry, guiding companies to sustainable growth, funding, and optimised financial operations.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://bankingonai.co/" title="Banking On AI">
+<img alt="Banner for the Banking On AI publication" src="https://cloudcdn.pro/clients/bankingonai/v1/github/github-bankingonai.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Web · Publication</span>
+<h3><a href="https://bankingonai.co/" title="Banking On AI">Banking On AI</a></h3>
+<p class="newsroom-excerpt">How AI is transforming the banking sector. Improved customer service, fraud detection, and streamlined operations for a digital age.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://bankingonquantum.com/" title="Banking On Quantum">
+<img alt="Banner for the Banking On Quantum publication" src="https://cloudcdn.pro/clients/bankingonquantum/v1/github/github-bankingonquantum.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Web · Publication</span>
+<h3><a href="https://bankingonquantum.com/" title="Banking On Quantum">Banking On Quantum</a></h3>
+<p class="newsroom-excerpt">How quantum computing is set to revolutionise the banking and finance industry. From risk analysis to quantum cryptography and beyond.</p>
+</div>
+</article>
+
+</div>
+
+<header class="newsroom-section-head"><p class="newsroom-kicker">GENERAL</p><h2>Developer environment</h2></header>
+
+<div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="https://dotfiles.io/" title="Dotfiles">
+<img alt="Banner for the Dotfiles project" src="https://cloudcdn.pro/clients/dotfiles/v2/images/banners/dotfiles.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Config · Cross-platform</span>
+<h3><a href="https://dotfiles.io/" title="Dotfiles">Dotfiles</a></h3>
+<p class="newsroom-excerpt">A powerful set of configuration files for macOS, Linux, and Windows. Scripts and customised settings to streamline your workflow.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="https://maccfg.com/" title="MacConfig. MacBook Pro M1 dev setup">
+<img alt="Banner for MacConfig (maccfg)" src="https://cloudcdn.pro/stocks/images/ibrahim-abazid-MgQnQZA4ByM.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Config · macOS</span>
+<h3><a href="https://maccfg.com/" title="MacConfig. MacBook Pro M1 dev setup">MacConfig. MacBook Pro M1 dev setup</a></h3>
+<p class="newsroom-excerpt">A guide to getting your MacBook Pro M1 ready for software development. Set up and start using your new Mac with free resources and user guides.</p>
+</div>
+</article>
+
+</div>
+
+</section>

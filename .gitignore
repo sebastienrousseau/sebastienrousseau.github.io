@@ -81,3 +81,6 @@ typings/
 yarn-debug.log*
 yarn-error.log*
 yarn.lock
+
+# Shokunin build output (served via build pipeline)
+public/

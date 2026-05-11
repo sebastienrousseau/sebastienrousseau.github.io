@@ -6,8 +6,8 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right"
 banner_height: "100vh"
 banner_width: "100vw"
-banner: "https://kura.pro/stock/images/banners/anna-nekrashevich-8534387.webp"
-cdn: "https://kura.pro"
+banner: "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
+cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -16,12 +16,12 @@ date: "Oct 9, 2023"
 description: "Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control."
 format-detection: "telephone=no"
 hreflang: "en"
-icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://kura.pro/stock/images/banners/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
 language: "en-GB"
 layout: "articles"
@@ -29,7 +29,7 @@ locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
-logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: "active"
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
@@ -81,7 +81,7 @@ msapplication-navbutton-color: "rgb(0, 102, 204)"
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
 twitter_description: "Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control."
-twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
@@ -99,7 +99,7 @@ site_software: "Shokunin, Rust"
 
 ---
 
-![Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right](https://kura.pro/stock/images/banners/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"
+![Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"
 
 ## Insight
 
@@ -169,7 +169,7 @@ Ready to create a high-performance static website in minutes that will boost you
 
 [**Try Shokunin ⧉**][00] for free today and see the difference!
 
-![divider](https://kura.pro/common/images/elements/divider.svg).class=\"m-10 w-100\"
+![divider](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
 **That concludes our time together. Thank you for your time!**
 

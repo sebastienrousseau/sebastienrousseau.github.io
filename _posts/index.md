@@ -6,22 +6,22 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Turned off laptop computer on top of brown wooden table"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://kura.pro/stock/images/banners/alesia-kazantceva-VWcPlbHglYc.webp"
+banner: "https://cloudcdn.pro/stocks/images/alesia-kazantceva-VWcPlbHglYc.webp"
 changefreq: "weekly"
 charset: "UTF-8"
-cdn: "https://kura.pro/"
+cdn: "https://cloudcdn.pro/clients"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2024 - Sebastien Rousseau. All rights reserved."
 date: "Apr 01, 2024"
-description: "Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking & Financial Services"
+description: "AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services."
 format-detection: "telephone=no"
 hreflang: "en"
-icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://kura.pro/stock/images/banners/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "banking, financial services, artificial intelligence, post-quantum cryptography, blockchain technology, transformation, innovation, technology, future, Sebastien Rousseau"
 language: "en-GB"
 layout: "index"
@@ -29,7 +29,7 @@ locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
-logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: "active"
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
@@ -37,7 +37,7 @@ permalink: "https://sebastienrousseau.com"
 promo_banner_alt: "Turned off laptop computer on top of brown wooden table"
 promo_banner_height: "571"
 promo_banner_width: "1425"
-promo_banner: "https://kura.pro/stock/images/banners/modern-corporate-office-with-technological-displays.webp"
+promo_banner: "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp"
 promo_banner_title: "Unlocking the Future of Banking and Financial Services.<br>Discover the latest news from"
 promo_banner_url: "https://sebastienrousseau.com"
 rating: "general"
@@ -45,7 +45,7 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
+subtitle: "AI, Banking & Financial Services Expert · Senior Product Manager – Wholesale Payments & API at HSBC Commercial & Investment Bank · Applied AI · ISO 20022 · Post-Quantum Cryptography"
 tags: "banking, financial services, artificial intelligence, post-quantum cryptography, blockchain technology, transformation, innovation, technology, future, Sebastien Rousseau"
 theme-color: "0, 83, 191"
 title: "Sebastien Rousseau: AI, Banking &amp; Financial Services Expert"
@@ -57,7 +57,7 @@ atom_link: "https://sebastienrousseau.com/rss.xml"
 category: "Technology"
 docs: https://validator.w3.org/feed/docs/rss2.html
 generator: "Shokunin SSG (version 0.0.26)"
-item_description: "Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking & Financial Services"
+item_description: "AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services."
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
 item_pub_date: "Mon, 15 Apr 2024 06:06:06 +0000"
@@ -86,8 +86,8 @@ msapplication-navbutton-color: "0, 83, 191"
 
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
-twitter_description: "Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking & Financial Services"
-twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png"
+twitter_description: "AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services."
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Sebastien Rousseau: AI, Banking &amp; Financial Services Expert"
@@ -105,115 +105,191 @@ site_software: "Shokunin, Rust"
 
 ---
 
-## Enabling Transformation Through Innovative Technologies
+<section class="feat alt reveal" aria-labelledby="practice">
+<div class="wrap">
+<p class="feat-eyebrow">Authored &amp; maintained</p>
+<h2 id="practice" class="feat-headline center">Open source for the<br />future of finance.</h2>
+<p class="feat-sub center">A portfolio of Python, Rust and JavaScript libraries I created and maintain. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography.</p>
 
-As a passionate technologist, I am excited to share my insights on innovative technologies that are shaping the future.
+<div class="proj-grid">
 
-In this series of articles, I will explore a wide range of cutting-edge technologies, including Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology and more.
+<article class="proj-card">
+<a class="proj-card-media" href="https://pain001.com" aria-label="pain001. Learn more">
+<img alt="pain001 logo. Open-source ISO 20022 payment file automation by Sebastien Rousseau" src="https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg" loading="lazy" decoding="async" width="400" height="240" />
+</a>
+<div class="proj-card-body">
+<span class="proj-card-tag">Python · Payments</span>
+<h3>pain001</h3>
+<p>A Python library that automates <strong>ISO 20022 pain.001</strong> payment file creation from CSV or SQLite. Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes.</p>
+<a class="pill ghost" href="https://pain001.com">Learn more</a>
+</div>
+</article>
 
-I will discuss their potential to impact various industries and aspects of our lives and how they can be applied to solve real-world problems.
+<article class="proj-card">
+<a class="proj-card-media" href="https://pacs008.com/" aria-label="pacs008. Learn more">
+<img alt="pacs008 logo. Open-source ISO 20022 pacs.008 toolkit by Sebastien Rousseau" src="https://pacs008.com/logo.webp" loading="lazy" decoding="async" width="400" height="240" />
+</a>
+<div class="proj-card-body">
+<span class="proj-card-tag">Python · Cross-border</span>
+<h3>pacs008</h3>
+<p>Generate, validate and deliver <strong>ISO 20022 pacs.008</strong> FI-to-FI customer credit transfer messages. JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking.</p>
+<a class="pill ghost" href="https://pacs008.com/">Learn more</a>
+</div>
+</article>
 
-Read the latest articles below, and [**see all articles, news and product announcements**][100].
+<article class="proj-card">
+<a class="proj-card-media" href="https://bankstatementparser.com/" aria-label="Bank Statement Parser. Learn more">
+<img alt="Bank Statement Parser logo. Open-source finance toolkit by Sebastien Rousseau" src="https://cloudcdn.pro/clients/bankstatementparser/v1/logos/bankstatementparser.svg" loading="lazy" decoding="async" width="400" height="240" />
+</a>
+<div class="proj-card-body">
+<span class="proj-card-tag">Python · Finance</span>
+<h3>Bank Statement Parser</h3>
+<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data. Designed for the realities of real-world statement files and the audit demands of regulated environments.</p>
+<a class="pill ghost" href="https://bankstatementparser.com/">Learn more</a>
+</div>
+</article>
 
-![divider][divider].class=\"m-10 w-100\"
+<article class="proj-card">
+<a class="proj-card-media" href="https://github.com/sebastienrousseau/hsh" aria-label="Hash HSH. Learn more">
+<img alt="Hash HSH logo. Open-source Rust hash library by Sebastien Rousseau" src="https://cloudcdn.pro/clients/hsh/v1/logos/hsh.svg" loading="lazy" decoding="async" width="400" height="240" />
+</a>
+<div class="proj-card-body">
+<span class="proj-card-tag">Rust · Security</span>
+<h3>Hash (HSH)</h3>
+<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification. Designed with a quantum-resistant posture for the post-PQC era of authentication.</p>
+<a class="pill ghost" href="https://github.com/sebastienrousseau/hsh">Learn more</a>
+</div>
+</article>
 
-## Latest News
+<article class="proj-card">
+<a class="proj-card-media" href="https://kyberlib.com/" aria-label="KyberLib. Learn more">
+<img alt="KyberLib logo. Open-source Rust CRYSTALS-Kyber library by Sebastien Rousseau" src="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" loading="lazy" decoding="async" width="400" height="240" />
+</a>
+<div class="proj-card-body">
+<span class="proj-card-tag">Rust · Quantum</span>
+<h3>KyberLib</h3>
+<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption. The foundation for quantum-resistant payment authentication.</p>
+<a class="pill ghost" href="https://kyberlib.com/">Learn more</a>
+</div>
+</article>
 
-![Image generated using MidJourney - A Network of digital nodes in red and blue hues](https://kura.pro/stock/images/banners/digital-nodes.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-start\"
+<article class="proj-card">
+<a class="proj-card-media" href="https://github.com/sebastienrousseau/noyalib" aria-label="noyalib. Learn more">
+<img alt="noyalib logo. Open-source pure-Rust YAML 1.2 ecosystem by Sebastien Rousseau" src="https://cloudcdn.pro/clients/noyalib/v1/logos/noyalib.svg" loading="lazy" decoding="async" width="400" height="240" />
+</a>
+<div class="proj-card-body">
+<span class="proj-card-tag">Rust · YAML</span>
+<h3>noyalib</h3>
+<p>A <strong>pure-Rust YAML 1.2 ecosystem</strong>. Zero unsafe, 100% spec compliance (406 / 406 official suite), streaming-first serde, lossless CST and JSON-Schema validation. Library + CLI (noyafmt, noyavalidate) + LSP + MCP + WASM bindings.</p>
+<a class="pill ghost" href="https://github.com/sebastienrousseau/noyalib">Learn more</a>
+</div>
+</article>
 
-### Bug Discovered in Quantum Algorithm for Lattice-Based Crypto
+</div>
 
-*by [Sebastien Rousseau][00] (22 Apr 2024)*
+<div class="feat-cta-row">
+<a class="pill ghost" href="/projects/index.html">Browse all projects</a>
+</div>
+</div>
+</section>
 
-A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research.
+<section class="feat feat-quote-section reveal" aria-labelledby="quote">
+<div class="wrap">
+<blockquote class="feat-quote">
+<p>“Quantum computing threatens the cryptographic foundations of financial services. Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete.”</p>
+<footer class="feat-quote-attrib">
+<strong><a href="https://emergingpaymentsasia.org/">Emerging Payments Association Asia</a> (EPAA)</strong>
+<span>Quantum-Safe Payments white paper · September 2025 · <a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf">Read the paper</a></span>
+</footer>
+</blockquote>
+</div>
+</section>
 
-[**Learn more ❯**][21]
+<section class="feat reveal" aria-labelledby="paper">
+<div class="wrap">
+<p class="feat-eyebrow"><a href="https://emergingpaymentsasia.org/">Emerging Payments Association Asia</a> (EPAA) · September 2025</p>
+<h2 id="paper" class="feat-headline center">Quantum-Safe Payments.</h2>
+<p class="feat-sub center">Industry white paper for the Emerging Payments Association Asia. The structural threat quantum computing poses to payment infrastructure, and the case for coordinated action now.</p>
+</div>
 
-![divider][divider].class=\"m-10 w-100\"
+<article class="feat-card">
+<div class="feat-card-media">
+<img alt="Banner illustration for the EPAA Quantum-Safe Payments white paper" src="https://cloudcdn.pro/stocks/images/a-chosen-soul-IQi4jAlVeOI-unsplash.webp" loading="lazy" decoding="async" width="800" height="800" />
+</div>
+<div class="feat-card-body">
+<p class="feat-eyebrow">EPAA · September 2025</p>
+<h3>Why the payments industry must act now.</h3>
+<p>Regulators are treating harvest-now-decrypt-later as a credible present risk. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails.</p>
+<p><a class="pill" href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" title="EPAA Quantum-Safe Payments White Paper">Read the white paper</a></p>
+</div>
+</article>
+</section>
 
-![Banner Image of Network nodes in a digital blue space](https://kura.pro/stock/images/banners/digital-constellation.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-end\"
+<section class="feat alt reveal" aria-labelledby="latest">
+<div class="wrap">
+<p class="feat-eyebrow">Latest</p>
+<h2 id="latest" class="feat-headline center">From the desk.</h2>
+<p class="feat-sub center">Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments.</p>
 
-### Quantum Algorithm Challenges Lattice-Based Cryptography
+<div class="newsroom-grid feat-latest-grid">
 
-*by [Sebastien Rousseau][00] (15 Apr 2024)*
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" title="Lucy's Flash Drive, Revisited">
+<img alt="Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles" src="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI · Quantum · Philosophy</span>
+<h3><a href="/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-11">May 11, 2026</time></p>
+<p class="newsroom-excerpt">Twelve years after Lucy, Besson's metaphor of knowledge migrating from flesh to machine is being quietly validated by LLMs, neutral atom qubits, and whole-brain emulation.</p>
+</div>
+</article>
 
-New quantum algorithm solves key crypto problem, urges research into quantum-safe security.
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-04-11-quantum-thresholds-are-moving-again/index.html" title="Quantum Thresholds Are Moving Again">
+<img alt="Quantum computing circuit board with blue light patterns" src="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum</span>
+<h3><a href="/2026-04-11-quantum-thresholds-are-moving-again/index.html">Quantum Thresholds Are Moving Again</a></h3>
+<p class="newsroom-meta"><time datetime="2026-04-11">April 11, 2026</time></p>
+<p class="newsroom-excerpt">A new paper suggests Shor's algorithm could run on as few as 10,000 qubits. The threshold for cryptographically relevant quantum computing is dropping fast.</p>
+</div>
+</article>
 
-[**Learn more ❯**][20]
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html" title="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto">
+<img alt="A network of digital nodes in red and blue hues" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum</span>
+<h3><a href="/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">Bug Discovered in Quantum Algorithm for Lattice-Based Crypto</a></h3>
+<p class="newsroom-meta"><time datetime="2024-04-22">April 22, 2024</time></p>
+<p class="newsroom-excerpt">A bug in Yilei Chen's quantum algorithm for solving LWE temporarily secures lattice-based cryptography and highlights the need for ongoing research.</p>
+</div>
+</article>
 
-![divider][divider].class=\"m-10 w-100\"
+</div>
 
-![Banner for the Fully Homomorphic Encryption](https://kura.pro/stock/images/banners/open-voice.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-start\"
+<div class="feat-cta-row">
+<a class="pill ghost" href="/articles/index.html">See all articles</a>
+</div>
+</div>
+</section>
 
-### OpenVoice: Leading Innovation in Voice Cloning Technology
+<section class="feat alt reveal" aria-labelledby="trusted">
+<div class="wrap">
+<p class="feat-eyebrow">Experience</p>
+<h2 id="trusted" class="feat-headline center">Brands along the way.</h2>
+<p class="feat-sub center">From global Tier-1 banks to consumer technology. Payments and digital product leadership across HSBC, PayPal, Barclays, Shazam, AKQA and Virgin Group.</p>
 
-*by [Sebastien Rousseau][00] (01 Apr 2024)*
-
-Explore OpenVoice's groundbreaking voice cloning tech, offering unmatched speed, accuracy, and control in synthetic speech generation.
-
-[**Learn more ❯**][19]
-
-![divider][divider].class=\"m-10 w-100\"
-
-![Banner for the Fully Homomorphic Encryption](https://kura.pro/stock/images/banners/fully-homomorphic-encryption.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-end\"
-
-### Fully Homomorphic Encryption (FHE) in a Banking Quantum Era
-
-*by [Sebastien Rousseau][00] (25 Mar 2024)*
-
-Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats.
-
-[**Learn more ❯**][18]
-
-![divider][divider].class=\"m-10 w-100\"
-
-![Banner for the Apple MM1](https://kura.pro/stock/images/banners/mm1-visual.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-start\"
-
-### Advancing AI with Multimodal LLMs: Insights from MM1
-
-*by [Sebastien Rousseau][00] (18 Mar 2024)*
-
-Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials.
-
-[**Learn more ❯**][17]
-
-![divider][divider].class=\"m-10 w-100\"
-
-![Banner for Real-time automatic speech recognition (ASR)](https://kura.pro/stock/images/banners/research-paper.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-end\"
-
-### Accelerating Real-Time Speech Recognition on macOS with OpenAI Whisper
-
-*by [Sebastien Rousseau][00] (12 Mar 2024)*
-
-Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.
-
-[**Learn more ❯**][16]
-
-![divider][divider].class=\"m-10 w-100\"
-
-![Banner for RustLogs (RLG)](https://kura.pro/stock/images/banners/rustlogs.webp).class=\"fade-in zoom-in w-25 m-3 p-3 float-start\"
-
-### Unleashing the Power of Logging in Rust with RustLogs (RLG)
-
-*by [Sebastien Rousseau][00] (08 Mar 2024)*
-
-Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options.
-
-[**Learn more ❯**][15]
-
-![divider][divider].class=\"m-10 w-100\"
-
-[**See all articles ❯**][100]
-
-[00]: /about/index.html "About Sebastien Rousseau, Banking & Financial Service Professional"
-[15]: /2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html "Unleashing the Power of Logging in Rust with RustLogs (RLG)"
-[16]: /2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html "Revolutionising Real-Time Speech Recognition on macOS with OpenAI Whisper and Metal Performance Shaders"
-[17]: /2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html "Advancing AI with Multimodal LLMs: Insights from MM1"
-[18]: /2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"
-[19]: /2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html "OpenVoice: Leading Innovation in Voice Cloning Technology"
-[20]: /2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html "Quantum Algorithm Challenges in Lattice-Based Cryptography"
-[21]: /2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html "Bug Discovered in Quantum Algorithm for Lattice-Based Crypto"
-
-[100]: /articles/index.html "See all articles"
-
-[divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
+<div class="brands">
+<img alt="HSBC logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/hsbc.svg" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="PayPal logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/paypal.svg" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="Barclays logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/barclays.svg" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="Shazam logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/shazam.svg" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="AKQA logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/akqa.svg" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="Virgin logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/virgin.svg" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+</div>
+</div>
+</section>

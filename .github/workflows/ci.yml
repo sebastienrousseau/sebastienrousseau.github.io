@@ -1,0 +1,108 @@
+name: build-audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust toolchain (cached)
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache cargo registry + git
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            ~/.cargo/bin
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg
+
+      - name: Install Shokunin
+        run: |
+          if ! command -v ssg >/dev/null 2>&1; then
+            cargo install ssg --locked
+          fi
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build site
+        run: ./build.sh
+
+      - name: Internal-link audit
+        run: python3 scripts/audit_links.py --base-dir public --strict-internal
+
+      - name: Upload built artefact
+        uses: actions/upload-artifact@v4
+        with:
+          name: public
+          path: public/
+
+  accessibility:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: public
+          path: public
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install pa11y-ci
+        run: npm install -g pa11y-ci@^3
+
+      - name: Serve public/
+        run: |
+          npx http-server public -p 8000 --silent &
+          sleep 2
+
+      - name: Run pa11y-ci against the live URL set
+        run: |
+          # Collect every built page into pa11y's config.
+          python3 - <<'PY'
+          import json, pathlib
+          urls = sorted(
+              "http://127.0.0.1:8000/" + str(p.relative_to("public")).replace("\\", "/")
+              for p in pathlib.Path("public").rglob("index.html")
+          )
+          json.dump({"defaults":{"standard":"WCAG2AAA","timeout":20000},
+                    "urls": urls}, open(".pa11yci","w"), indent=2)
+          PY
+          pa11y-ci -c .pa11yci || (echo "pa11y violations above"; exit 1)
+
+  lighthouse:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: public
+          path: public
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Lighthouse CI
+        run: npm install -g @lhci/cli@^0.13
+
+      - name: Run Lighthouse CI
+        run: lhci autorun
+        env:
+          LHCI_BUILD_CONTEXT__CURRENT_HASH: ${{ github.sha }}

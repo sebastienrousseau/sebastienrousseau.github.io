@@ -6,8 +6,8 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "A minimalist, modern corporate office"
 banner_height: "100vh"
 banner_width: "100vw"
-banner: "https://kura.pro/stock/images/banners/modern-corporate-office-with-technological-displays.webp"
-cdn: "https://kura.pro"
+banner: "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp"
+cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
 charset: "UTF-8"
 cname: ""
@@ -16,12 +16,12 @@ date: "Jan 29, 2024"
 description: "Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights."
 format-detection: "telephone=no"
 hreflang: "en"
-icon: "https://kura.pro/libmake/images/logos/libmake.svg"
+icon: "https://cloudcdn.pro/clients/libmake/v1/logos/libmake.svg"
 id: "https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html"
 image_alt: "A black and white photo of Sebastien Rousseau"
 image_height: "161"
 image_width: "161"
-image: "https://kura.pro/stock/images/banners/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "audio analyser, azure ai, speech-to-text, audio data analysis, text analysis, ai translations, audio insights, automated transcription, audio data processing, machine learning"
 language: "en-GB"
 layout: "report"
@@ -29,7 +29,7 @@ locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
-logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: "active"
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
@@ -50,7 +50,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 news_genres: "Blog"
 news_keywords: "audio analyser, azure ai, speech-to-text, audio data analysis, text analysis, ai translations, audio insights, automated transcription, audio data processing, machine learning"
 news_language: "en"
-news_image_loc: "https://kura.pro/stock/images/banners/modern-corporate-office-with-technological-displays.webp"
+news_image_loc: "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp"
 news_loc: "https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html"
 news_publication_date: "Mon, 29 Jan 2024 05:06:06 +0000"
 news_publication_name: "sebastienrousseau.com"
@@ -91,7 +91,7 @@ msapplication-navbutton-color: "162, 48, 0"
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
 twitter_description: "Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights."
-twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "AI-Powered Speech Analysis, Translation, & Insight Tool"
@@ -115,7 +115,7 @@ In today's experience-driven market, the ability to quickly analyze customer aud
 
 Powered by Microsoft Azure AI, **Audio Analyser** goes beyond basic transcription to uncover actionable insights from every service interaction. Its cutting-edge natural language capabilities instantly process over 100 languages, analyze text for sentiments and intents, and generate impactful metrics on critical touchpoints customers mention most.
 
-Industry leaders are already using these kinds of proactive speech analytics to drive tangible improvements — shorter handle times, increased issue resolution rates, and most crucially, higher customer satisfaction scores. **Audio Analyser** enables businesses not just to keep pace, but to set new standards for customer engagement. By detecting needs faster, resolving problems smarter, and elevating interactions, it helps forge brand advocates that will stay for the long term.
+Industry leaders are already using these kinds of proactive speech analytics to drive tangible improvements. Shorter handle times, increased issue resolution rates, and most crucially, higher customer satisfaction scores. **Audio Analyser** enables businesses not just to keep pace, but to set new standards for customer engagement. By detecting needs faster, resolving problems smarter, and elevating interactions, it helps forge brand advocates that will stay for the long term.
 
 ## Insight
 
@@ -129,7 +129,7 @@ Capabilities in speech recognition, speech analytics, voice biometrics and other
 
 #### Audio Analyser: A Pioneering Tool
 
-<!-- ![A Powerful Audio Analytics Dashboard](https://kura.pro/audioanalyser/images/screenshots/dashboard.webp).class=\"fade-in w-100\" -->
+<!-- ![A Powerful Audio Analytics Dashboard](https://cloudcdn.pro/clients/audioanalyser/v1/screenshots/dashboard.png).class=\"fade-in w-100\" -->
 
 What elevates **Audio Analyser** beyond standard speech transcription software? The integration of Microsoft Azure's leading-edge AI unlocks far more nuanced analysis capabilities. Harnessing the latest machine learning algorithms, **Audio Analyser** delves deeply into speech patterns - not just converting words, but exploring subtleties like tone, emotion and underlying meanings.
 
@@ -137,7 +137,7 @@ Its advanced natural language processing allows Audio Analyser to recognize ling
 
 #### Key Features of Audio Analyser
 
-<!-- ![A Pioneering Suite of Tool](https://kura.pro/audioanalyser/images/screenshots/tools.webp).class=\"fade-in w-100\" -->
+<!-- ![A Pioneering Suite of Tool](https://cloudcdn.pro/clients/audioanalyser/v1/screenshots/tools.png).class=\"fade-in w-100\" -->
 
 - **Audio Recording**: Easily record audio files and conversations.
 - **Instant Transcription**: Swiftly convert spoken language to text using Azure's speech-to-text service.
@@ -221,7 +221,7 @@ In effect, **Audio Analyser** is reinventing what's possible for audio data util
 
 The advanced artificial intelligence within Microsoft Azure is the driving force behind **Audio Analyser**'s capabilities. Azure's speech services and natural language processing integrate machine learning models trained on thousands of hours of data.
 
-![The Audio Analyser Architecture](https://kura.pro/stock/diagrams/audio-analyser-architecture-topaz.webp).class=\"m-10 w-100\"
+![The Audio Analyser Architecture](https://cloudcdn.pro/stocks/diagrams/audio-analyser-architecture-topaz.webp).class=\"m-10 w-100\"
 
 This industrial-strength technology ensures the highest levels of accuracy in transcription and analysis. Backed by strong data privacy standards, Azure provides a secure, enterprise-ready foundation.
 
@@ -243,5 +243,5 @@ Whether generating meeting minutes, reviewing calls, searching podcast archives 
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
+[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 [00]: https://audioanalyser.co/ "Unlock Actionable Insights from Audio Data to Enhance CX/EX"

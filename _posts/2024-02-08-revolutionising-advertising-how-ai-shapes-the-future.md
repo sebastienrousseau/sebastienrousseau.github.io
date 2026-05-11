@@ -6,8 +6,8 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "A robotic woman with butterflies and flowers"
 banner_height: "100vh"
 banner_width: "100vw"
-banner: "https://kura.pro/stock/images/banners/advertising-ai.webp"
-cdn: "https://kura.pro"
+banner: "https://cloudcdn.pro/stocks/images/advertising-ai.webp"
+cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
 charset: "UTF-8"
 cname: ""
@@ -16,12 +16,12 @@ date: "Feb 08, 2024"
 description: "Explore how AI transforms advertising with insights on Amazon's Rufus and Meta's latest developments. Discover the impact on consumer engagement"
 format-detection: "telephone=no"
 hreflang: "en"
-icon: "https://kura.pro/libmake/images/logos/libmake.svg"
+icon: "https://cloudcdn.pro/clients/libmake/v1/logos/libmake.svg"
 id: "https://sebastienrousseau.com/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html"
 image_alt: "A black and white photo of Sebastien Rousseau"
 image_height: "161"
 image_width: "161"
-image: "https://kura.pro/stock/images/banners/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "AI in advertising, Amazon Rufus, Meta AI tools, consumer targeting, advertising technology, AI chatbots, digital marketing trends, AI analytics, creative AI, ad campaign optimization"
 language: "en-GB"
 layout: "report"
@@ -29,7 +29,7 @@ locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
-logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: "active"
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
@@ -50,7 +50,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 news_genres: "Blog"
 news_keywords: "AI in advertising, Amazon Rufus, Meta AI tools, consumer targeting, advertising technology, AI chatbots, digital marketing trends, AI analytics, creative AI, ad campaign optimization"
 news_language: "en"
-news_image_loc: "https://kura.pro/stock/images/banners/advertising-ai.webp"
+news_image_loc: "https://cloudcdn.pro/stocks/images/advertising-ai.webp"
 news_loc: "https://sebastienrousseau.com/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html"
 news_publication_date: "Thu, 08 Feb 2024 07:08:08 +0000"
 news_publication_name: "sebastienrousseau.com"
@@ -91,7 +91,7 @@ msapplication-navbutton-color: "0, 99, 99"
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
 twitter_description: "Explore how AI transforms advertising with insights on Amazon's Rufus and Meta's latest developments. Discover the impact on consumer engagement"
-twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Revolutionising Advertising: How AI Shapes the Future"
@@ -121,11 +121,11 @@ In the digital age, Artificial Intelligence (AI) has emerged as a game-changer f
 
 ### The AI Advantage
 
-The infusion of AI into advertising signals a new era of efficiency and effectiveness. According to recent industry surveys, over 65% of advertisers have reported at least 20% higher ROI from AI-optimized campaigns compared to previous years. AI algorithms excel at identifying insights from large data sets that would require teams of analysts to manually uncover. One marketing analytics platform noted that its AI tools could process over 100 million data points to optimize campaigns, a scale of analysis human capacity could never achieve. This capability extends to creative generation as well, where Meta's AI algorithms can test over 10,000 ad variations and identify high-performing creative within hours. The scope and speed of such AI applications—including A/B testing hundreds of ads, analysing competitor strategies, and personalizing content for diverse audiences—is beyond human capacity. This not only saves valuable time and resources but also enhances the accuracy and relevance of ad campaigns on an unprecedented level.
+The infusion of AI into advertising signals a new era of efficiency and effectiveness. According to recent industry surveys, over 65% of advertisers have reported at least 20% higher ROI from AI-optimized campaigns compared to previous years. AI algorithms excel at identifying insights from large data sets that would require teams of analysts to manually uncover. One marketing analytics platform noted that its AI tools could process over 100 million data points to optimize campaigns, a scale of analysis human capacity could never achieve. This capability extends to creative generation as well, where Meta's AI algorithms can test over 10,000 ad variations and identify high-performing creative within hours. The scope and speed of such AI applications, including A/B testing hundreds of ads, analysing competitor strategies, and personalizing content for diverse audiences, is beyond human capacity. This not only saves valuable time and resources but also enhances the accuracy and relevance of ad campaigns on an unprecedented level.
 
 ### Beyond Human Capacity
 
-The scope and speed of AI in advertising tasks—such as A/B testing hundreds of ads, analysing competitor strategies, and personalizing content for diverse audiences—are beyond human capacity. This not only saves valuable time and resources but also enhances the accuracy and relevance of ad campaigns.
+The scope and speed of AI in advertising tasks, such as A/B testing hundreds of ads, analysing competitor strategies, and personalizing content for diverse audiences, are beyond human capacity. This not only saves valuable time and resources but also enhances the accuracy and relevance of ad campaigns.
 
 ### Elevated Consumer Experiences
 
@@ -185,7 +185,7 @@ Additionally, striking the right partnerships will be pivotal - whether with ad 
 
 ![divider][divider].class=\"m-10 w-100\"
 
-[divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
+[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 
 [00]: https://www.aboutamazon.com/news/retail/amazon-rufus "Amazon Rufus - AI experience comes to the Amazon Shopping app"
 [01]: https://www.facebook.com/business/news/generative-ai-features-for-ads-coming-to-all-advertisers "Generative AI features for ads coming to all advertisers"

@@ -7,7 +7,7 @@ banner_alt: ""
 banner_height: ""
 banner_width: ""
 banner: ""
-cdn: "https://kura.pro"
+cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -16,12 +16,12 @@ date: "Apr 01, 2024"
 description: "Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry"
 format-detection: "telephone=no"
 hreflang: "en"
-icon: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/articles/index.html"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://kura.pro/stock/images/banners/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML"
 language: "en-GB"
 layout: "articles"
@@ -29,7 +29,7 @@ locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
-logo: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: "active"
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
@@ -81,7 +81,7 @@ msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary"
 twitter_creator: "@wwdseb"
 twitter_description: "Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry"
-twitter_image: "https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Discover How Technology Is Changing Banking and Finance"
@@ -99,384 +99,471 @@ site_software: "Shokunin, Rust"
 
 ---
 
-## All News Stories and Articles
-
-![Image generated using MidJourney - A Network of digital nodes in red and blue hues](https://kura.pro/stock/images/banners/digital-nodes.webp).class=\"fade-in w-25 p-3 float-start\"
-
-### Bug Discovered in Quantum Algorithm for Lattice-Based Crypto
-
-A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research.  [**Read full story ❯**][36]
-
-![divider][divider].class=\"m-10 w-100\"
-
-![Banner Image of Network nodes in a digital blue space](https://kura.pro/stock/images/banners/digital-constellation.webp).class=\"fade-in w-25 p-3 float-start\"
-
-### Quantum Algorithm Challenges Lattice-Based Cryptography
-
-New quantum algorithm solves key crypto problem, urges research into quantum-safe security. [**Read full story ❯**][35]
-
-![divider][divider].class=\"m-10 w-100\"
-
-![Banner of Vibrant gradient overlay on repeated profiles](https://kura.pro/stock/images/banners/open-voice.webp).class=\"fade-in w-25 p-3 float-start\"
-
-### OpenVoice: Leading Innovation in Voice Cloning Technology
-
-Explore OpenVoice's groundbreaking voice cloning tech, offering unmatched speed, accuracy, and control in synthetic speech generation. [**Read full story ❯**][34]
-
-![divider][divider].class=\"m-10 w-100\"
-
-![Banner for the Fully Homomorphic Encryption](https://kura.pro/stock/images/banners/fully-homomorphic-encryption.webp).class=\"fade-in w-25 p-3 float-start\"
-
-### Fully Homomorphic Encryption (FHE) in a Banking Quantum Era
-
-Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats. [**Read full story ❯**][33]
-
-![divider][divider].class=\"m-10 w-100\"
-
-![Banner for the Apple MM1](https://kura.pro/stock/images/banners/mm1-visual.webp).class=\"fade-in w-25 p-3 float-start\"
-
-### Advancing AI with Multimodal LLMs: Insights from MM1
-
-Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials. [**Read full story ❯**][32]
-
-![divider][divider].class=\"m-10 w-100\"
-
-![Banner for Real-time automatic speech recognition (ASR)](https://kura.pro/stock/images/banners/research-paper.webp).class=\"fade-in w-25 p-3 float-start\"
-
-### Accelerating Real-Time Speech Recognition on macOS with OpenAI Whisper
-
-Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy. [**Read full story ❯**][31]
-
-![divider][divider].class=\"m-10 w-100\"
-
-![Banner for RustLogs (RLG)](https://kura.pro/stock/images/banners/rustlogs.webp).class=\"fade-in w-25 p-3 float-start\"
-
-### Unleashing the Power of Logging in Rust with RustLogs (RLG)
-
-Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. [**Read full story ❯**][30]
-
-![divider][divider].class=\"m-10 w-100\"
-
-![Image of Colourful, abstract digital art of a cat](https://kura.pro/stock/images/banners/abstract-digital-art-of-a-cat.webp).class=\"fade-in w-25 p-3 float-start\"
-
-### Le Chat by Mistral AI: A New Era in Conversational AI
-
-Meet Mistral AI's new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real-time. [**Read full story ❯**][29]
-
-![divider][divider].class=\"m-10 w-100\"
-
-![Futuristic blue spaceship with neon lights](https://kura.pro/stock/images/banners/ai-ship.webp).class=\"fade-in w-25 p-3 float-start\"
-
-### Google Gemma AI: Transforming Open-Source AI Development
-
-Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use. [**Read full story ❯**][28]
-
-![divider][divider].class=\"m-10 w-100\"
-
-![Abstract visualisation of AI networks, representing Gemini 1.5's capabilities](https://kura.pro/stock/images/banners/abstract-visualization-of-gemini.webp).class=\"fade-in w-25 p-3 float-start\"
-
-### Unlocking Gemini 1.5: Google's AI Revolution Explained
-
-Explore Gemini 1.5, Google's AI breakthrough, enhancing efficiency, quality, and context understanding in the AI landscape. [**Read full story ❯**][27]
-
-![divider][divider].class=\"m-10 w-100\"
-
-![A person sitting on black bench reading newspaper](https://kura.pro/stock/images/banners/ryoji-iwata-a-qsFZimp1M.webp).class=\"fade-in w-25 p-3 float-start\"
-
-### EU’s AI Act: Pioneering Ethical AI Regulation Worldwide
-
-*by [Sebastien Rousseau][00] (13 Feb 2024)*
-
-Delve into the EU's Artificial Intelligence Act, a revolutionary framework setting global standards for ethical AI development and usage. [**Read full story ❯**][26]
-
-![divider][divider].class=\"m-10 w-100\"
-
-![A white, spherical modern device](https://kura.pro/stock/images/banners/akande-voice-assistant.webp).class=\"fade-in w-25 p-3 float-start\"
-
-### Àkàndé Voice Assistant, A Personal and Executive Assistance
-
-*by [Sebastien Rousseau][00] (12 Feb 2024)*
-
-Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance. [**Read full story ❯**][25]
-
-![divider][divider].class=\"m-10 w-100\"
-
-![A robotic woman with butterflies and flowers](https://kura.pro/stock/images/banners/advertising-ai.webp).class=\"fade-in w-25 p-3 float-start\"
-
-### Revolutionising Advertising: How AI Shapes the Future
-
-*by [Sebastien Rousseau][00] (08 Feb 2024)*
-
-Explore how AI transforms advertising with insights on Amazon's Rufus and Meta's latest developments. Discover the impact on consumer engagement. [**Read full story ❯**][24]
-
-![divider][divider].class=\"m-10 w-100\"
-
-![A minimalist, modern corporate office](https://kura.pro/stock/images/banners/modern-corporate-office-with-technological-displays.webp).class=\"fade-in w-25 p-3 float-start\"
-
-### AI-Powered Speech Analysis, Translation, & Insight Tool
-
-*by [Sebastien Rousseau][00] (29 Jan 2024)*
-
-Explore how Audio Analyser, transforms speech-to-text conversion, text analysis, and translations for actionable insights. [**Read full story ❯**][23]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### AI Prompt Engineering 2024: Insights & Advanced Techniques
-
-![Man analysing data on screens](https://kura.pro/stock/images/banners/ai-prompt-engineering-modern-office.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (23 Jan 2024)*
-
-Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors. [**Read full story ❯**][22]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### Alien Studio: My Tech-to Art Journey in Photography
-
-![A Sunset's muse, a serene glance; beauty in stillness](https://kura.pro/alienstudio/images/collections/radiance/radiance-08.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (15 Jan 2024)*
-
-Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio. [**Read full story ❯**][21]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### Qiskit & Quantum Fourier Transform for Credit Ratio Analysis
-
-![A Quantum Computer Room](https://kura.pro/stock/images/banners/quantum-computer-room.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (08 Jan 2024)*
-
-Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed. [**Read full story ❯**][20]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### AI Trends 2024: Insights and Predictions for the Future
-
-![A Drone View of London](https://kura.pro/stock/images/banners/drone-view-of-london.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (01 Jan 2024)*
-
-Explore the transformative AI trends of 2024, from generative AI to AI in retail, and how they'll shape our future. [**Read full story ❯**][19]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### Revolutionising Finance with AI-Enhanced Quantum Algorithms
-
-![A Circuit Board Cityscape](https://kura.pro/stock/images/banners/circuit_board_cityscape.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (25 Dec 2023)*
-
-Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications. [**Read full story ❯**][18]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### State of AI and Quantum Computing in Banking: A 2023 Review
-
-![A Circuit Board with an AI GPU](https://kura.pro/stock/images/banners/getty-images-aTWKwJllPOA.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (18 Dec 2023)*
-
-Exploring 2023's Technological Landscape: AI & Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations & Governance. [**Read full story ❯**][17]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### Quantum Key Distribution Revolutionising Security in Banking
-
-![An HSBC Headquarter in London Canary Wharf Docks](https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (11 Dec 2023)*
-
-As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security. [**Read full story ❯**][16]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### Efficient Date and Time Management with DateTime (DTT)
-
-![A DTT Logo](https://kura.pro/dtt/images/github/github-dtt.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (04 Dec 2023)*
-
-DateTime (DTT) is a comprehensive Rust library for parsing, validating, manipulating, and formatting dates and times. It offers a high level of precision and a wide range of functionalities. [**Read full story ❯**][15]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### KyberLib: A Rust-Powered Shield Against Quantum Threats
-
-![A KyberLib Logo](https://kura.pro/kyberlib/images/github/github-kyberlib.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (28 Nov 2023)*
-
-A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks. [**Read full story ❯**][14]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age
-
-![A complex quantum computer architecture](https://kura.pro/stock/images/banners/galina-nelyubova-V70-ng4FuiA.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (19 Nov 2023)*
-
-Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era. [**Read full story ❯**][13]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### Exploring Generative AI: Shaping the Future of Technology
-
-![Holographic cubes at a concert.](https://kura.pro/stock/images/banners/fabio-oyXis2kALVg.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (12 Nov 2023)*
-
-Embark on a Journey to Explore Generative AI: Investigating Its Impact, Ethical Implications, and Future Synergies. [**Read full story ❯**][12]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### Mathematical and Cryptographic Constants for Rust Security
-
-![A Mathematical and Cryptographic Constants](https://kura.pro/stock/images/banners/antoine-dautry-05A-kdOH6Hw.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (05 Nov 2023)*
-
-Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security. [**Read full story ❯**][11]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### Streamlining Rust Library Development with Code Generation
-
-![A White Building](https://kura.pro/stock/images/banners/tarik-haiga-3637943.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (26 Oct 2023)*
-
-Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort. [**Read full story ❯**][10]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### Protecting Data in the Quantum Age: The Hash Library (HSH)
-
-![A creative illustration on Quantum computing theme](https://kura.pro/stock/images/banners/galina-nelyubova-7ej8VWfwFsg.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (16 Oct 2023)*
-
-The Hash Library (HSH) is a quantum-resistant cryptographic hash library that offers a lightweight, efficient, and easy-to-use solution for keeping your data secure. [**Read full story ❯**][08]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### Shokunin, the fastest Rust-based Static Site Generator (SSG)
-
-![A Turned off laptop computer on top of a white table](https://kura.pro/stock/images/banners/anna-nekrashevich-8534387.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (9 Oct 2023)*
-
-Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control. [**Read full story ❯**][01]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### Automating ISO 20022 Payment Files Creation with Pain001
-
-![A very tall building that has a lot of holes in it](https://kura.pro/stock/images/banners/andrea-de-santis-T3Qen8vVgRc.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (29 Sep 2023)*
-
-Streamlining the creation and compliance of ISO20022 Payment Messages for cross-border payments and reporting. [**Read full story ❯**][02]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### The making of the Express Transaction Credits Platform
-
-![Man typing on a laptop keyboard](https://kura.pro/stock/images/banners/rawpixel-com-369782.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (15 Feb 2018)*
-
-Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard. [**Read full story ❯**][03]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### Unveiling a new Cryptocurrency and Faster Payment Solution
-
-![Canary Wharf clocks](https://kura.pro/stock/images/banners/laureen-missaire-DBbuhMbAIsQ.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (04 Feb 2018)*
-
-A significant chapter in the ongoing evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, sustainable finance and the future of money. [**Read full story ❯**][04]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### ERC-20: The Ethereum Token Interface That Changed the World
-
-![Computer screen with trades](https://kura.pro/stock/images/banners/m-ZzOa5G8hSPI.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (24 Jan 2018)*
-
-Ethereum Token Interface: Understanding ERC-20, which allows for the implementation of a standard API for tokens within smart contracts. [**Read full story ❯**][05]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### Understanding the Technology behind Blockchain
-
-![Computer and Mobile screens with trades](https://kura.pro/stock/images/banners/adam-smigielski-K5mPtONmpHM.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (09 Jan 2018)*
-
-Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation. [**Read full story ❯**][06]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### Blockchain explained, the technology that matters the most
-
-![Horizontal view of a tall building](https://kura.pro/stock/images/banners/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (02 Jan 2018)*
-
-A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks. [**Read full story ❯**][09]
-
-![divider][divider].class=\"m-10 w-100\"
-
-### Bitcoin: A Year In Review of the First Cryptocurrency
-
-![Physical Bitcoins](https://kura.pro/stock/images/banners/traxer-AIKjbZdNOlw.webp).class=\"fade-in w-25 p-3 float-start\"
-
-*by [Sebastien Rousseau][00] (01 Jan 2018)*
-
-Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online. [**Read full story ❯**][07]
-
-![divider][divider].class=\"m-10 w-100\"
-
-[00]: /about/index.html "About Sebastien Rousseau, Banking & Financial Service Professional"
-[01]: /2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
-[02]: /2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html "Automating ISO 20022 Payment Files Creation with Pain001"
-[03]: /2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html "The making of the Express Transaction Credits Platform"
-[04]: /2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html "Unveiling a new Cryptocurrency and Faster Payment Solution"
-[05]: /2018-01-24-the-erc-20-token-standard/index.html "ERC-20: The Ethereum Token Interface That Changed the World"
-[06]: /2018-01-09-understanding-the-technology-behind-blockchain/index.html "Understanding the Technology behind Blockchain"
-[07]: /2018-01-01-bitcoin-the-year-in-review/index.html "Bitcoin: A Year In Review of the First Cryptocurrency"
-[08]: /2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html "Protecting Data in the Quantum Age: The Hash Library (HSH)"
-[09]: /2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html "Blockchain explained, the technology that matters the most"
-[10]: /2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html "Streamlining Rust Library Development with Code Generation"
-[11]: /2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html "Mathematical and Cryptographic Constants for Rust Security"
-[12]: /2023-11-12-exploring-generative-ai/index.html "Exploring Generative AI: Shaping the Future of Technology"
-[13]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
-[14]: /2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html "KyberLib: A Rust-Powered Shield Against Quantum Threats"
-[15]: /2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html "Efficient Date and Time Management with DateTime (DTT)"
-[16]: /2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html "Quantum Key Distribution Revolutionising Security in Banking"
-[17]: /2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html "State of AI and Quantum Computing in Banking: A 2023 Review"
-[18]: /2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
-[19]: /2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html "AI Trends 2024: Insights and Predictions for the Future"
-[20]: /2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html "Optimising Credit Ratio Analysis with IBM Qiskit and Quantum Fourier Transform"
-[21]: /2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html "Alien Studio: My Tech-to Art Journey in Photography"
-[22]: /2024-01-23-advancements-in-ai-prompt-engineering/index.html#page-top "AI Prompt Engineering 2024: Insights & Advanced Techniques"
-[23]: /2024-01-29-ai-powered-audio-insights-analysis-translations/index.html "AI-Powered Audio Insights, Analysis & Translations"
-[24]: /2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html "Revolutionising Advertising: How AI Shapes the Future"
-[25]: /2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html "Àkàndé Voice Assistant, A Personal and Executive Assistance"
-[26]: /2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html "EU's AI Act: Pioneering Ethical AI Regulation Worldwide"
-[27]: /2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html "Unlocking Gemini 1.5: Google's AI Revolution Explained"
-[28]: /2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html "Google Gemma AI: Transforming Open-Source AI Development"
-[29]: /2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html "Le Chat by Mistral AI: A New Era in Conversational AI"
-[30]: /2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html "Unleashing the Power of Logging in Rust with RustLogs (RLG)"
-[31]: /2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html "Revolutionising Real-Time Speech Recognition on macOS with OpenAI Whisper and Metal Performance Shaders"
-[32]: /2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html "Advancing AI with Multimodal LLMs: Insights from MM1"
-[33]: /2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"
-[34]: /2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html "OpenVoice: Leading Innovation in Voice Cloning Technology"
-[35]: /2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html "Quantum Algorithm Challenges Lattice-Based Cryptography"
-[36]: /2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html "Bug Discovered in Quantum Algorithm for Lattice-Based Crypto"
-
-[divider]: https://kura.pro/common/images/elements/divider.svg "Divider"
+<section class="newsroom">
+
+<header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
+
+<article class="newsroom-featured">
+<a class="newsroom-featured-media" href="/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" title="Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines">
+<img alt="Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles" src="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+</a>
+<div class="newsroom-featured-body">
+<span class="newsroom-eyebrow">AI · Quantum · Philosophy</span>
+<h3><a href="/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" title="Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines">Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-11">May 11, 2026</time> · Sebastien Rousseau</p>
+<p>Twelve years after its release, Luc Besson's Lucy reads less like pseudo-science and more like a thought experiment about what happens when human knowledge migrates from biological to non-biological substrates.</p>
+<p><a class="pill ghost" href="/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" title="Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines">Read the full story</a></p>
+</div>
+</article>
+
+<header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
+
+<div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-04-11-quantum-thresholds-are-moving-again/index.html" title="Quantum Thresholds Are Moving Again">
+<img alt="Quantum computing circuit board with blue light patterns" src="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum</span>
+<h3><a href="/2026-04-11-quantum-thresholds-are-moving-again/index.html" title="Quantum Thresholds Are Moving Again">Quantum Thresholds Are Moving Again</a></h3>
+<p class="newsroom-meta"><time datetime="2026-04-11">April 11, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">A new paper suggests Shor's algorithm could run on as few as 10,000 qubits. The threshold for cryptographically relevant quantum computing is dropping fast.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html" title="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto">
+<img alt="Image generated using MidJourney. A network of digital nodes in red and blue hues" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum</span>
+<h3><a href="/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html" title="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto">Bug Discovered in Quantum Algorithm for Lattice-Based Crypto</a></h3>
+<p class="newsroom-meta"><time datetime="2024-04-22">April 22, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html" title="Quantum Algorithm Challenges Lattice-Based Cryptography">
+<img alt="Banner Image of Network nodes in a digital blue space" src="https://cloudcdn.pro/stocks/images/digital-constellation.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum</span>
+<h3><a href="/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html" title="Quantum Algorithm Challenges Lattice-Based Cryptography">Quantum Algorithm Challenges Lattice-Based Cryptography</a></h3>
+<p class="newsroom-meta"><time datetime="2024-04-15">April 15, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">New quantum algorithm solves key crypto problem, urges research into quantum-safe security.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html" title="OpenVoice: Leading Innovation in Voice Cloning Technology">
+<img alt="Banner of vibrant gradient overlay on repeated profiles" src="https://cloudcdn.pro/stocks/images/open-voice.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI</span>
+<h3><a href="/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html" title="OpenVoice: Leading Innovation in Voice Cloning Technology">OpenVoice: Leading Innovation in Voice Cloning Technology</a></h3>
+<p class="newsroom-meta"><time datetime="2024-04-01">April 1, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore OpenVoice's groundbreaking voice cloning tech, offering unmatched speed, accuracy, and control in synthetic speech generation.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html" title="Fully Homomorphic Encryption (FHE) in a Banking Quantum Era">
+<img alt="Banner for Fully Homomorphic Encryption" src="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum</span>
+<h3><a href="/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html" title="Fully Homomorphic Encryption (FHE) in a Banking Quantum Era">Fully Homomorphic Encryption (FHE) in a Banking Quantum Era</a></h3>
+<p class="newsroom-meta"><time datetime="2024-03-25">March 25, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html" title="Advancing AI with Multimodal LLMs: Insights from MM1">
+<img alt="Banner for the Apple MM1 multimodal LLM research" src="https://cloudcdn.pro/stocks/images/mm1-visual.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI</span>
+<h3><a href="/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html" title="Advancing AI with Multimodal LLMs: Insights from MM1">Advancing AI with Multimodal LLMs: Insights from MM1</a></h3>
+<p class="newsroom-meta"><time datetime="2024-03-18">March 18, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore Apple's MM1 paper on Multimodal Large Language Models. Learn about their architecture, pre-training strategies, and AI potentials.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html" title="Accelerating Real-Time Speech Recognition on macOS with OpenAI Whisper">
+<img alt="Banner for Real-time automatic speech recognition research" src="https://cloudcdn.pro/stocks/images/research-paper.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI · macOS</span>
+<h3><a href="/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html" title="Accelerating Real-Time Speech Recognition on macOS with OpenAI Whisper">Accelerating Real-Time Speech Recognition on macOS with OpenAI Whisper</a></h3>
+<p class="newsroom-meta"><time datetime="2024-03-12">March 12, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" title="Unleashing the Power of Logging in Rust with RustLogs (RLG)">
+<img alt="Banner for RustLogs (RLG) library" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Open source · Rust</span>
+<h3><a href="/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" title="Unleashing the Power of Logging in Rust with RustLogs (RLG)">Unleashing the Power of Logging in Rust with RustLogs (RLG)</a></h3>
+<p class="newsroom-meta"><time datetime="2024-03-08">March 8, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html" title="Le Chat by Mistral AI: A New Era in Conversational AI">
+<img alt="Colourful, abstract digital art of a cat" src="https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI</span>
+<h3><a href="/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html" title="Le Chat by Mistral AI: A New Era in Conversational AI">Le Chat by Mistral AI: A New Era in Conversational AI</a></h3>
+<p class="newsroom-meta"><time datetime="2024-03-04">March 4, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Meet Mistral AI's new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real time.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html" title="Google Gemma AI: Transforming Open-Source AI Development">
+<img alt="Futuristic blue spaceship with neon lights" src="https://cloudcdn.pro/stocks/images/ai-ship.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI</span>
+<h3><a href="/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html" title="Google Gemma AI: Transforming Open-Source AI Development">Google Gemma AI: Transforming Open-Source AI Development</a></h3>
+<p class="newsroom-meta"><time datetime="2024-02-26">February 26, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html" title="Unlocking Gemini 1.5: Google's AI Revolution Explained">
+<img alt="Abstract visualisation of AI networks, representing Gemini 1.5" src="https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI</span>
+<h3><a href="/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html" title="Unlocking Gemini 1.5: Google's AI Revolution Explained">Unlocking Gemini 1.5: Google's AI Revolution Explained</a></h3>
+<p class="newsroom-meta"><time datetime="2024-02-19">February 19, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore Gemini 1.5, Google's AI breakthrough, enhancing efficiency, quality, and context understanding in the AI landscape.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html" title="EU's AI Act: Pioneering Ethical AI Regulation Worldwide">
+<img alt="A person sitting on a black bench reading a newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Policy</span>
+<h3><a href="/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html" title="EU's AI Act: Pioneering Ethical AI Regulation Worldwide">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a></h3>
+<p class="newsroom-meta"><time datetime="2024-02-13">February 13, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Delve into the EU's Artificial Intelligence Act, a revolutionary framework setting global standards for ethical AI development and usage.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html" title="Àkàndé Voice Assistant, A Personal and Executive Assistance">
+<img alt="A white, spherical modern AI device" src="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI</span>
+<h3><a href="/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html" title="Àkàndé Voice Assistant, A Personal and Executive Assistance">Àkàndé Voice Assistant, A Personal and Executive Assistance</a></h3>
+<p class="newsroom-meta"><time datetime="2024-02-12">February 12, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html" title="Revolutionising Advertising: How AI Shapes the Future">
+<img alt="A robotic woman with butterflies and flowers" src="https://cloudcdn.pro/stocks/images/advertising-ai.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI · Advertising</span>
+<h3><a href="/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html" title="Revolutionising Advertising: How AI Shapes the Future">Revolutionising Advertising: How AI Shapes the Future</a></h3>
+<p class="newsroom-meta"><time datetime="2024-02-08">February 8, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore how AI transforms advertising with insights on Amazon's Rufus and Meta's latest developments. Discover the impact on consumer engagement.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html" title="AI-Powered Speech Analysis, Translation & Insight Tool">
+<img alt="A minimalist, modern corporate office with technological displays" src="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI</span>
+<h3><a href="/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html" title="AI-Powered Speech Analysis, Translation & Insight Tool">AI-Powered Speech Analysis, Translation & Insight Tool</a></h3>
+<p class="newsroom-meta"><time datetime="2024-01-29">January 29, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore how Audio Analyser transforms speech-to-text conversion, text analysis, and translations for actionable insights.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-01-23-advancements-in-ai-prompt-engineering/index.html" title="AI Prompt Engineering 2024: Insights & Advanced Techniques">
+<img alt="Man analysing data on screens in a modern office" src="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI</span>
+<h3><a href="/2024-01-23-advancements-in-ai-prompt-engineering/index.html" title="AI Prompt Engineering 2024: Insights & Advanced Techniques">AI Prompt Engineering 2024: Insights & Advanced Techniques</a></h3>
+<p class="newsroom-meta"><time datetime="2024-01-23">January 23, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html" title="Alien Studio: My Tech-to-Art Journey in Photography">
+<img alt="A sunset's muse. Beauty in stillness from Alien Studio's Radiance collection" src="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Art</span>
+<h3><a href="/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html" title="Alien Studio: My Tech-to-Art Journey in Photography">Alien Studio: My Tech-to-Art Journey in Photography</a></h3>
+<p class="newsroom-meta"><time datetime="2024-01-15">January 15, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html" title="Qiskit & Quantum Fourier Transform for Credit Ratio Analysis">
+<img alt="A Quantum Computer Room" src="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum · Finance</span>
+<h3><a href="/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html" title="Qiskit & Quantum Fourier Transform for Credit Ratio Analysis">Qiskit & Quantum Fourier Transform for Credit Ratio Analysis</a></h3>
+<p class="newsroom-meta"><time datetime="2024-01-08">January 8, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html" title="AI Trends 2024: Insights and Predictions for the Future">
+<img alt="A Drone View of London" src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI</span>
+<h3><a href="/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html" title="AI Trends 2024: Insights and Predictions for the Future">AI Trends 2024: Insights and Predictions for the Future</a></h3>
+<p class="newsroom-meta"><time datetime="2024-01-01">January 1, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore the transformative AI trends of 2024, from generative AI to AI in retail, and how they'll shape our future.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html" title="Revolutionising Finance with AI-Enhanced Quantum Algorithms">
+<img alt="A circuit board cityscape" src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum · Finance</span>
+<h3><a href="/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html" title="Revolutionising Finance with AI-Enhanced Quantum Algorithms">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a></h3>
+<p class="newsroom-meta"><time datetime="2023-12-25">December 25, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" title="State of AI and Quantum Computing in Banking: A 2023 Review">
+<img alt="A circuit board with an AI GPU" src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI · Quantum</span>
+<h3><a href="/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" title="State of AI and Quantum Computing in Banking: A 2023 Review">State of AI and Quantum Computing in Banking: A 2023 Review</a></h3>
+<p class="newsroom-meta"><time datetime="2023-12-18">December 18, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Exploring 2023's technological landscape: AI and quantum computing revolutionising banking, rising open-source models, and evolving regulations.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" title="Quantum Key Distribution Revolutionising Security in Banking">
+<img alt="HSBC Headquarter in London Canary Wharf Docks" src="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum · Banking</span>
+<h3><a href="/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" title="Quantum Key Distribution Revolutionising Security in Banking">Quantum Key Distribution Revolutionising Security in Banking</a></h3>
+<p class="newsroom-meta"><time datetime="2023-12-11">December 11, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer for security.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html" title="Efficient Date and Time Management with DateTime (DTT)">
+<img alt="The DTT (DateTime) Rust library logo" src="https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Open source · Rust</span>
+<h3><a href="/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html" title="Efficient Date and Time Management with DateTime (DTT)">Efficient Date and Time Management with DateTime (DTT)</a></h3>
+<p class="newsroom-meta"><time datetime="2023-12-04">December 4, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">DateTime (DTT) is a comprehensive Rust library for parsing, validating, manipulating, and formatting dates and times. With high precision and broad functionality.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html" title="KyberLib: A Rust-Powered Shield Against Quantum Threats">
+<img alt="The KyberLib Rust library logo" src="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum · Rust</span>
+<h3><a href="/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html" title="KyberLib: A Rust-Powered Shield Against Quantum Threats">KyberLib: A Rust-Powered Shield Against Quantum Threats</a></h3>
+<p class="newsroom-meta"><time datetime="2023-11-28">November 28, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">A robust and quantum-safe cryptography implementation of the CRYSTALS-Kyber algorithm, to protect data from quantum threats and cryptanalytic attacks.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" title="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age">
+<img alt="A complex quantum computer architecture" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum</span>
+<h3><a href="/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" title="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a></h3>
+<p class="newsroom-meta"><time datetime="2023-11-19">November 19, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-11-12-exploring-generative-ai/index.html" title="Exploring Generative AI: Shaping the Future of Technology">
+<img alt="Holographic cubes at a concert" src="https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI</span>
+<h3><a href="/2023-11-12-exploring-generative-ai/index.html" title="Exploring Generative AI: Shaping the Future of Technology">Exploring Generative AI: Shaping the Future of Technology</a></h3>
+<p class="newsroom-meta"><time datetime="2023-11-12">November 12, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Embark on a journey to explore Generative AI: investigating its impact, ethical implications, and future synergies.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html" title="Mathematical and Cryptographic Constants for Rust Security">
+<img alt="Mathematical and cryptographic constants" src="https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Open source · Rust</span>
+<h3><a href="/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html" title="Mathematical and Cryptographic Constants for Rust Security">Mathematical and Cryptographic Constants for Rust Security</a></h3>
+<p class="newsroom-meta"><time datetime="2023-11-05">November 5, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced security.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html" title="Streamlining Rust Library Development with Code Generation">
+<img alt="A white modern building" src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Open source · Rust</span>
+<h3><a href="/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html" title="Streamlining Rust Library Development with Code Generation">Streamlining Rust Library Development with Code Generation</a></h3>
+<p class="newsroom-meta"><time datetime="2023-10-26">October 26, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Boost Rust library development with LibMake. A code generator tool that enforces best practices and generates initial code, saving developers time and effort.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html" title="Protecting Data in the Quantum Age: The Hash Library (HSH)">
+<img alt="A creative illustration on the quantum computing theme" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum · Rust</span>
+<h3><a href="/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html" title="Protecting Data in the Quantum Age: The Hash Library (HSH)">Protecting Data in the Quantum Age: The Hash Library (HSH)</a></h3>
+<p class="newsroom-meta"><time datetime="2023-10-16">October 16, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">The Hash Library (HSH) is a quantum-resistant cryptographic hash library that offers a lightweight, efficient, and easy-to-use solution for keeping data secure.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" title="Shokunin, the fastest Rust-based Static Site Generator (SSG)">
+<img alt="Turned-off laptop computer on top of a white table" src="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Open source · Rust</span>
+<h3><a href="/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" title="Shokunin, the fastest Rust-based Static Site Generator (SSG)">Shokunin, the fastest Rust-based Static Site Generator (SSG)</a></h3>
+<p class="newsroom-meta"><time datetime="2023-10-09">October 9, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html" title="Automating ISO 20022 Payment Files Creation with pain001">
+<img alt="A very tall building with intricate hollow façade detailing" src="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Payments</span>
+<h3><a href="/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html" title="Automating ISO 20022 Payment Files Creation with pain001">Automating ISO 20022 Payment Files Creation with pain001</a></h3>
+<p class="newsroom-meta"><time datetime="2023-09-29">September 29, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Streamlining the creation and compliance of ISO 20022 payment messages for cross-border payments and reporting.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html" title="The Making of the Express Transaction Credits Platform">
+<img alt="Man typing on a laptop keyboard" src="https://cloudcdn.pro/stocks/images/rawpixel-com-369782.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Blockchain</span>
+<h3><a href="/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html" title="The Making of the Express Transaction Credits Platform">The Making of the Express Transaction Credits Platform</a></h3>
+<p class="newsroom-meta"><time datetime="2018-02-15">February 15, 2018</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html" title="Unveiling a New Cryptocurrency and Faster Payment Solution">
+<img alt="Canary Wharf clocks" src="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Blockchain · Payments</span>
+<h3><a href="/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html" title="Unveiling a New Cryptocurrency and Faster Payment Solution">Unveiling a New Cryptocurrency and Faster Payment Solution</a></h3>
+<p class="newsroom-meta"><time datetime="2018-02-04">February 4, 2018</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">A significant chapter in the ongoing evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and the future of money.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2018-01-24-the-erc-20-token-standard/index.html" title="ERC-20: The Ethereum Token Interface That Changed the World">
+<img alt="Computer screen with trades" src="https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Blockchain</span>
+<h3><a href="/2018-01-24-the-erc-20-token-standard/index.html" title="ERC-20: The Ethereum Token Interface That Changed the World">ERC-20: The Ethereum Token Interface That Changed the World</a></h3>
+<p class="newsroom-meta"><time datetime="2018-01-24">January 24, 2018</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Ethereum Token Interface. Understanding ERC-20, which allows for the implementation of a standard API for tokens within smart contracts.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2018-01-09-understanding-the-technology-behind-blockchain/index.html" title="Understanding the Technology behind Blockchain">
+<img alt="Computer and mobile screens with trades" src="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Blockchain</span>
+<h3><a href="/2018-01-09-understanding-the-technology-behind-blockchain/index.html" title="Understanding the Technology behind Blockchain">Understanding the Technology behind Blockchain</a></h3>
+<p class="newsroom-meta"><time datetime="2018-01-09">January 9, 2018</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Building a cryptocurrency on the Ethereum Blockchain: a comprehensive guide to blockchain development, tokenisation and cryptocurrency implementation.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html" title="Blockchain Explained. The Technology That Matters the Most">
+<img alt="Horizontal view of a tall building" src="https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Blockchain</span>
+<h3><a href="/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html" title="Blockchain Explained. The Technology That Matters the Most">Blockchain Explained. The Technology That Matters the Most</a></h3>
+<p class="newsroom-meta"><time datetime="2018-01-02">January 2, 2018</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">A story of the extraordinary journey of securing digital transactions through private-key cryptography and peer-to-peer (P2P) networks.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2018-01-01-bitcoin-the-year-in-review/index.html" title="Bitcoin: A Year in Review of the First Cryptocurrency">
+<img alt="Physical bitcoins on a flat surface" src="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Blockchain</span>
+<h3><a href="/2018-01-01-bitcoin-the-year-in-review/index.html" title="Bitcoin: A Year in Review of the First Cryptocurrency">Bitcoin: A Year in Review of the First Cryptocurrency</a></h3>
+<p class="newsroom-meta"><time datetime="2018-01-01">January 1, 2018</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Bitcoin. A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online.</p>
+</div>
+</article>
+
+</div>
+
+</section>
