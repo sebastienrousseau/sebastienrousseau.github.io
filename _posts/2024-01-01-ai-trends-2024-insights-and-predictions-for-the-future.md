@@ -60,7 +60,7 @@ news_title: "AI Trends 2024: Insights and Predictions for the Future"
 atom_link: "https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin SSG (version 0.0.26)"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Explore the transformative AI trends of 2024, from generative AI to AI in retail, and how they'll shape our future."
 item_guid: "https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/rss.xml"
 item_link: "https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/rss.xml"
@@ -105,7 +105,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2024-01-08"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 
 ---
 

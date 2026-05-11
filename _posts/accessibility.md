@@ -51,7 +51,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/accessibility/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin SSG (version 0.0.26)"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/accessibility/rss.xml"
 item_link: "https://sebastienrousseau.com/accessibility/rss.xml"
@@ -95,8 +95,8 @@ author_location: "London, UK"
 thanks: "Thanks for reading!"
 site_last_updated: "2024-01-15"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
-site_components: "Shokunin SSG, Shokunin CLI, Shokunin Templates, Shokunin Themes, Kaishi SSG, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_components: "Static Site Generator (SSG), Static Site Generator CLI, Static Site Generator Templates, Static Site Generator Themes, Kaishi SSG, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
 
 ---
 

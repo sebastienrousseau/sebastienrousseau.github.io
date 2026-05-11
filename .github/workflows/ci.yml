@@ -28,7 +28,7 @@ jobs:
             ~/.cargo/bin
           key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg
 
-      - name: Install Shokunin
+      - name: Install Static Site Generator (ssg)
         run: |
           if ! command -v ssg >/dev/null 2>&1; then
             cargo install ssg --locked
@@ -81,8 +81,20 @@ jobs:
               "http://127.0.0.1:8000/" + str(p.relative_to("public")).replace("\\", "/")
               for p in pathlib.Path("public").rglob("index.html")
           )
-          json.dump({"defaults":{"standard":"WCAG2AAA","timeout":20000},
-                    "urls": urls}, open(".pa11yci","w"), indent=2)
+          # GitHub-hosted Ubuntu runners ship Chromium without a usable SUID
+          # sandbox, so the zygote process aborts at launch ("No usable
+          # sandbox!"). --no-sandbox is the accepted workaround inside CI
+          # containers where we're loading our own built artefact only.
+          json.dump({
+              "defaults": {
+                  "standard": "WCAG2AAA",
+                  "timeout": 20000,
+                  "chromeLaunchConfig": {
+                      "args": ["--no-sandbox", "--disable-setuid-sandbox"]
+                  }
+              },
+              "urls": urls,
+          }, open(".pa11yci","w"), indent=2)
           PY
           pa11y-ci -c .pa11yci || (echo "pa11y violations above"; exit 1)
 

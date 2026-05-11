@@ -60,7 +60,7 @@ news_title: "Unleashing the Power of Logging in Rust with RustLogs (RLG)"
 atom_link: "https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin SSG (version 0.0.26)"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. "
 item_guid: "https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/rss.xml"
 item_link: "https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/rss.xml"
@@ -103,7 +103,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2024-03-08"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 
 ---
 

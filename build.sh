@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Build sebastienrousseau.com with Shokunin SSG, then post-process the output:
-#   1. Replace Shokunin's placeholder integrity="sha256-<short-hex>" with real
+# Build sebastienrousseau.com with Static Site Generator (SSG), then post-process the output:
+#   1. Replace Static Site Generator's placeholder integrity="sha256-<short-hex>" with real
 #      base64 SHA-256 hashes computed from the actual file content. Browsers
 #      will then enforce SRI on every /_csp/* asset, which is what the attribute
 #      is supposed to do.
@@ -21,7 +21,7 @@ SERVE=0
 
 ssg -n=docs -c=_posts -t=_layouts -o=public
 
-# Shokunin doesn't pick up theme-init.js as a managed asset; we ship it as-is.
+# Static Site Generator doesn't pick up theme-init.js as a managed asset; we ship it as-is.
 cp -f _layouts/theme-init.js public/theme-init.js
 
 # Copy fingerprinted assets to their unfingerprinted aliases so the layouts'

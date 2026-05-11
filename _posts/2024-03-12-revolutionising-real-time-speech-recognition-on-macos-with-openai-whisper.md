@@ -60,7 +60,7 @@ news_title: "Fast Real-Time Speech Recognition on macOS: OpenAI Whisper"
 atom_link: "https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin SSG (version 0.0.26)"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy."
 item_guid: "https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/rss.xml"
 item_link: "https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/rss.xml"
@@ -103,7 +103,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2024-03-12"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 
 ---
 

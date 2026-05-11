@@ -43,7 +43,7 @@ short_name: "sebastienrousseau"
 subtitle: "Your privacy is important to us."
 tags: "agreement, copyright, intellectual property, liability, limitation, links, privacy, terms, trademark, use, website"
 theme-color: "0, 83, 191"
-title: "Terms and Conditions of Use"
+title: "Website Terms & Conditions of Use — Sebastien Rousseau"
 url: "https://sebastienrousseau.com/terms"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -51,7 +51,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/terms/rss.xml"
 category: "Technology"
 docs: https://validator.w3.org/feed/docs/rss2.html
-generator: "Shokunin SSG (version 0.0.26)"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/terms/rss.xml"
 item_link: "https://sebastienrousseau.com/terms/rss.xml"
@@ -96,7 +96,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2023-07-05"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Sebastien Rousseau, Sebastien Rousseau Builder, Sebastien Rousseau CLI, Sebastien Rousseau Templates, Sebastien Rousseau Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 
 ---
 

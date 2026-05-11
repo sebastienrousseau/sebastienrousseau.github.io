@@ -193,7 +193,7 @@ ARTICLES = [
      "The Hash Library (HSH) is a quantum-resistant cryptographic hash library that offers a lightweight, efficient, and easy-to-use solution for keeping data secure.",
      "/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html"),
     ("2023-10-09", "October 9, 2023", "Open source · Rust",
-     "Shokunin, the fastest Rust-based Static Site Generator (SSG)",
+     "Static Site Generator: the fastest Rust-based SSG",
      "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
      "Turned-off laptop computer on top of a white table",
      "Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.",

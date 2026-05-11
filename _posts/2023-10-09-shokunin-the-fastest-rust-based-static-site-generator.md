@@ -39,10 +39,10 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
+subtitle: "Static Site Generator, the fastest Rust-based static site generator for high-impact websites."
 tags: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
 theme-color: "0, 83, 191"
-title: "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
+title: "Static Site Generator, the fastest Rust-based Static Site Generator (SSG)"
 url: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -50,12 +50,12 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin SSG (version 0.0.26)"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control."
 item_guid: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/rss.xml"
 item_link: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/rss.xml"
 item_pub_date: "Mon, 09 Oct 2023 05:13:00 +0000"
-item_title: "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
+item_title: "Static Site Generator, the fastest Rust-based Static Site Generator (SSG)"
 last_build_date: "Mon, 09 Oct 2023 05:13:00 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "Mon, 09 Oct 2023 05:13:00 +0000"
@@ -84,7 +84,7 @@ twitter_description: "Empowering you to create high-impact static websites with 
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
+twitter_title: "Static Site Generator, the fastest Rust-based Static Site Generator (SSG)"
 twitter_url: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html"
 
 # Humans.txt - The Humans.txt front matter (YAML).
@@ -95,7 +95,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2023-10-28"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 
 ---
 
@@ -115,17 +115,17 @@ Unfortunately, no existing products met my requirements out of the box. Therefor
 
 ### A Solution of Infinite Scalability and Customisation
 
-I developed [**Shokunin ⧉**][00] with the aim of providing a lightning-fast static site generator (SSG) built with [**Rust ⧉**][03] that streamlines the process of creating static websites optimised for SEO and fully aligned with accessibility standards.
+I developed [**Static Site Generator ⧉**][00] with the aim of providing a lightning-fast static site generator (SSG) built with [**Rust ⧉**][03] that streamlines the process of creating static websites optimised for SEO and fully aligned with accessibility standards.
 
-Speed and reliability were my top priorities when developing Shokunin. Rust is a systems programming language that is known for its speed and reliability, making it ideal for developing high-performance static site generators.
+Speed and reliability were my top priorities when developing Static Site Generator. Rust is a systems programming language that is known for its speed and reliability, making it ideal for developing high-performance static site generators.
 
-I was eager to explore the boundaries of what I could do with Markdown. My goal was to make sure that Shokunin could generate static websites that are speedy, secure, and dependable. I wanted them to be accessible to everyone, user-friendly and easy to update, and score well on search engines.
+I was eager to explore the boundaries of what I could do with Markdown. My goal was to make sure that Static Site Generator could generate static websites that are speedy, secure, and dependable. I wanted them to be accessible to everyone, user-friendly and easy to update, and score well on search engines.
 
 ## Impact
 
 ### A New Standard for Static Site Generators
 
-Generating a static website with Shokunin is effortless, allowing for a focus on content that maximises impact on the intended audience. The process is straightforward and completes in milliseconds.
+Generating a static website with Static Site Generator is effortless, allowing for a focus on content that maximises impact on the intended audience. The process is straightforward and completes in milliseconds.
 
 As a result, the website is fully responsive, compliant with the
 [**Web Content Accessibility Guidelines (WCAG) ⧉**][01], [**ADA ⧉**][02], and
@@ -135,7 +135,7 @@ is optimised for Search Engine Optimisation (SEO) from the outset.
 
 ### Embracing a New Paradigm Requires Courage and Confidence
 
-[**Shokunin ⧉**][00] introduces a fresh perspective – an innovative approach to understanding the web. With its meticulously crafted design, it empowers content creators and creative professionals to enhance the customer-centric experience.
+[**Static Site Generator ⧉**][00] introduces a fresh perspective – an innovative approach to understanding the web. With its meticulously crafted design, it empowers content creators and creative professionals to enhance the customer-centric experience.
 
 **Key features include:**
 
@@ -150,11 +150,11 @@ is optimised for Search Engine Optimisation (SEO) from the outset.
 * Progressive web apps (PWAs) support for offline browsing
 * Custom templates and HTML themes support
 
-Each feature reflects values like simplicity, reliability, and scalability. [**Shokunin ⧉**][00] is designed to help create and maintain high-quality static websites that meet the needs of modern users.
+Each feature reflects values like simplicity, reliability, and scalability. [**Static Site Generator ⧉**][00] is designed to help create and maintain high-quality static websites that meet the needs of modern users.
 
 ### SEO Optimisation
 
-[**Shokunin ⧉**][00] is designed to help users create static websites that are optimised for search engines. Some of the key SEO features include:
+[**Static Site Generator ⧉**][00] is designed to help users create static websites that are optimised for search engines. Some of the key SEO features include:
 
 * Automatic generation of sitemaps and robots.txt files
 * Support for custom 404 pages
@@ -163,11 +163,11 @@ Each feature reflects values like simplicity, reliability, and scalability. [**S
 * Responsive design
 * Accessibility compliance
 
-[**Shokunin ⧉**][00] is a powerful and versatile static site generator that offers a wide range of features and benefits. It is designed to help users create and maintain high-quality static websites that are optimised for SEO and deliver a superior user experience.
+[**Static Site Generator ⧉**][00] is a powerful and versatile static site generator that offers a wide range of features and benefits. It is designed to help users create and maintain high-quality static websites that are optimised for SEO and deliver a superior user experience.
 
 Ready to create a high-performance static website in minutes that will boost your traffic and conversions?
 
-[**Try Shokunin ⧉**][00] for free today and see the difference!
+[**Try Static Site Generator ⧉**][00] for free today and see the difference!
 
 ![divider](https://cloudcdn.pro/clients/common/images/elements/divider.svg).class=\"m-10 w-100\"
 
@@ -177,7 +177,7 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 
 [**❬ Back to Articles**][09]
 
-[00]: https://shokunin.one/ "Shokunin, the fastest Rust-based Static Site Generator (SSG)"
+[00]: https://shokunin.com/ "Static Site Generator, the fastest Rust-based Static Site Generator (SSG)"
 [01]: https://www.w3.org/WAI/standards-guidelines/wcag/ "Web Content Accessibility Guidelines (WCAG)"
 [02]: https://www.access-board.gov/ada/ "Americans with Disabilities Act (ADA)"
 [03]: https://www.rust-lang.org/ "Rust Programming Language"

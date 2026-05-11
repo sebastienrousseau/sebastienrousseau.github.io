@@ -39,7 +39,7 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Inspiration from the Best in Music"
+subtitle: "Curated Spotify playlists for deep work, creativity and the engineering mind."
 tags: "best spotify playlists, jazz playlists, soul playlists, hip hop playlists, rap playlists, r&b playlists, neo soul playlists, house music playlists, indie rock playlists, pop music playlists"
 theme-color: "0, 83, 191"
 title: "Embark on a Personal Journey with the Best Spotify Playlists"
@@ -50,7 +50,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/playlists/rss.xml"
 category: "Technology"
 docs: https://validator.w3.org/feed/docs/rss2.html
-generator: "Shokunin SSG (version 0.0.26)"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/playlists/rss.xml"
 item_link: "https://sebastienrousseau.com/playlists/rss.xml"
@@ -95,7 +95,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2023-07-05"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 
 ---
 

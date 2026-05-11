@@ -39,16 +39,35 @@ BREADCRUMB = (
 IMAGE_OBJ = (
     '{"@type":"ImageObject","url":"{{image}}","width":"{{image_width}}","height":"{{image_height}}"}'
 )
+# FAQ block for /papers/. Mirrors the on-page `<details class="qa-item">` accordion
+# so AI crawlers (Google AI Overviews, Perplexity, ChatGPT) can cite the answers
+# directly. Kept as a separate node so we don't pollute the CollectionPage entity.
+PAPERS_FAQ = (
+    ',{"@type":"FAQPage","@id":"{{url}}#faq","mainEntity":['
+    '{"@type":"Question","name":"What kind of research and papers do you publish?",'
+    '"acceptedAnswer":{"@type":"Answer","text":"Two strands sit side-by-side. Industry white papers, produced for organisations such as the Emerging Payments Association Asia (EPAA), examine structural shifts to payment infrastructure — most recently the impact of cryptographically-relevant quantum computing on wholesale and real-time settlement rails. Applied research papers, published independently, share reproducible engineering work — for example, real-time speech recognition on macOS using OpenAI Whisper and Metal Performance Shaders."}},'
+    '{"@type":"Question","name":"Who is the intended audience?",'
+    '"acceptedAnswer":{"@type":"Answer","text":"Heads of payments, CISOs and senior architects in Tier-1 banks, central banks, payment system operators and scheme owners. The applied research is written for engineers and product leaders building on top of large language models, on-device AI, and quantum-resistant cryptography."}},'
+    '{"@type":"Question","name":"Are the white papers free to read?",'
+    '"acceptedAnswer":{"@type":"Answer","text":"The EPAA Quantum-Safe Payments paper is a free 18.9 MB PDF download from emergingpaymentsasia.org. The independent research paper on real-time speech recognition with OpenAI Whisper and Metal Performance Shaders is licensed and available for individual purchase at $49.00 (English, PDF, ~95 KB). One copy per buyer; downloads are personal-use only."}},'
+    '{"@type":"Question","name":"May I cite or quote from these papers?",'
+    '"acceptedAnswer":{"@type":"Answer","text":"Yes. Short quotations with attribution are welcome under fair-dealing or fair-use norms. For EPAA papers, cite the EPAA as publisher with the working group, year and PDF URL. For independent research papers, cite as Rousseau, S. (year). Title. Self-published. with the canonical URL."}},'
+    '{"@type":"Question","name":"Can I commission a paper or speak at an event?",'
+    '"acceptedAnswer":{"@type":"Answer","text":"Yes — limited, by selection. Commissioned work focuses on wholesale payments, ISO 20022 migration, post-quantum cryptography for financial services, and applied AI in banking. Speaking engagements at industry conferences, central-bank fora, and regulator round-tables are considered case-by-case."}},'
+    '{"@type":"Question","name":"How do I follow new publications?",'
+    '"acceptedAnswer":{"@type":"Answer","text":"New papers and research notes are announced first through the site RSS feed at /rss.xml and the Banking On Quantum newsletter at news.bankingonquantum.com, which covers post-quantum cryptography, central-bank policy, and the migration roadmap across major payment schemes."}}'
+    ']}'
+)
 # Each schema is wrapped in an @graph array so we can attach the BreadcrumbList
 # as a second top-level node without breaking the JSON envelope.
-WRAP = lambda body: '"@graph":[{' + body + '}' + BREADCRUMB + ']'
+WRAP = lambda body, extra="": '"@graph":[{' + body + '}' + BREADCRUMB + extra + ']'
 
 SCHEMA_TEMPLATES = {
     "default":  WRAP('"@type":"WebPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","image":' + IMAGE_OBJ + ',"author":' + PERSON_REF + ',"publisher":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
     "about":    WRAP('"@type":"AboutPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","mainEntity":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
     "contact":  WRAP('"@type":"ContactPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","mainEntity":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
     "articles": WRAP('"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Banking, payments, AI and post-quantum cryptography","author":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
-    "papers":   WRAP('"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Research papers and white papers on wholesale payments and post-quantum cryptography","author":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
+    "papers":   WRAP('"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Research papers and white papers on wholesale payments and post-quantum cryptography","author":' + PERSON_REF + ',"isPartOf":' + SITE_REF, PAPERS_FAQ),
     "projects": WRAP('"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Open-source projects applied to finance and banking","author":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
     "playlist": WRAP('"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Curated Spotify playlists","author":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
     "report":   WRAP('"@type":"BlogPosting","headline":"{{title}}","description":"{{description}}","image":' + IMAGE_OBJ + ',"url":"{{url}}","datePublished":"{{item_pub_date}}","dateModified":"{{last_build_date}}","inLanguage":"{{hreflang}}","keywords":"{{keywords}}","articleSection":"{{category}}","author":' + PERSON_REF + ',"publisher":' + PERSON_REF + ',"mainEntityOfPage":{"@type":"WebPage","@id":"{{url}}"}'),

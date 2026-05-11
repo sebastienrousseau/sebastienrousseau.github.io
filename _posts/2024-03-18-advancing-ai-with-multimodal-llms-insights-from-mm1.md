@@ -60,7 +60,7 @@ news_title: "Advancing AI with Multimodal LLMs: Insights from MM1"
 atom_link: "https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin SSG (version 0.0.26)"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials."
 item_guid: "https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/rss.xml"
 item_link: "https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/rss.xml"
@@ -103,7 +103,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2024-03-18"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 
 ---
 

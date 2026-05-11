@@ -120,7 +120,7 @@
       .ap-cta-mini{font-size:12px;font-weight:500;color:#fff;background:var(--accent);padding:7px 14px;border-radius:980px;line-height:1;display:inline-flex;align-items:center;gap:4px;white-space:nowrap;transition:opacity .15s ease}
       .ap-cta-mini:hover{opacity:.88;color:#fff}
 
-      /* In-nav search button. Triggers Shokunin's search modal via main.js. */
+      /* In-nav search button. Triggers Static Site Generator's search modal via main.js. */
       .ap-search{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;background:transparent;border:1px solid transparent;border-radius:50%;color:var(--ink);cursor:pointer;transition:background .15s,border-color .15s}
       .ap-search:hover{background:color-mix(in srgb,var(--ink) 7%,transparent)}
       .ap-search svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
@@ -510,9 +510,9 @@
       .brand-logo:hover{filter:grayscale(0);opacity:1}
       @media (max-width:600px){.brands{gap:14px;padding:32px 0}.brand-logo{height:20px}}
 
-      /* Shokunin auto-injected search widget. Apple-clean override:
+      /* Static Site Generator auto-injected search widget. Apple-clean override:
          keep just the magnifier glyph as a discreet circular icon top-right. */
-      /* Hide the floating Shokunin search button. Our nav has its own .ap-search
+      /* Hide the floating Static Site Generator search button. Our nav has its own .ap-search
          which forwards clicks to this button via main.js. */
       #ssg-search-btn{position:absolute!important;left:-9999px!important;top:-9999px!important;width:1px!important;height:1px!important;clip:rect(0 0 0 0)!important;clip-path:inset(50%)!important;overflow:hidden!important;pointer-events:none}
     </style>
@@ -690,7 +690,7 @@
     </script>
 
         <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Research papers and white papers on wholesale payments and post-quantum cryptography","author":{"@id":"https://sebastienrousseau.com/#person"},"isPartOf":{"@id":"https://sebastienrousseau.com/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"{{title}}","item":"{{url}}"}]}]}
+{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Research papers and white papers on wholesale payments and post-quantum cryptography","author":{"@id":"https://sebastienrousseau.com/#person"},"isPartOf":{"@id":"https://sebastienrousseau.com/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"{{title}}","item":"{{url}}"}]},{"@type":"FAQPage","@id":"{{url}}#faq","mainEntity":[{"@type":"Question","name":"What kind of research and papers do you publish?","acceptedAnswer":{"@type":"Answer","text":"Two strands sit side-by-side. Industry white papers, produced for organisations such as the Emerging Payments Association Asia (EPAA), examine structural shifts to payment infrastructure — most recently the impact of cryptographically-relevant quantum computing on wholesale and real-time settlement rails. Applied research papers, published independently, share reproducible engineering work — for example, real-time speech recognition on macOS using OpenAI Whisper and Metal Performance Shaders."}},{"@type":"Question","name":"Who is the intended audience?","acceptedAnswer":{"@type":"Answer","text":"Heads of payments, CISOs and senior architects in Tier-1 banks, central banks, payment system operators and scheme owners. The applied research is written for engineers and product leaders building on top of large language models, on-device AI, and quantum-resistant cryptography."}},{"@type":"Question","name":"Are the white papers free to read?","acceptedAnswer":{"@type":"Answer","text":"The EPAA Quantum-Safe Payments paper is a free 18.9 MB PDF download from emergingpaymentsasia.org. The independent research paper on real-time speech recognition with OpenAI Whisper and Metal Performance Shaders is licensed and available for individual purchase at $49.00 (English, PDF, ~95 KB). One copy per buyer; downloads are personal-use only."}},{"@type":"Question","name":"May I cite or quote from these papers?","acceptedAnswer":{"@type":"Answer","text":"Yes. Short quotations with attribution are welcome under fair-dealing or fair-use norms. For EPAA papers, cite the EPAA as publisher with the working group, year and PDF URL. For independent research papers, cite as Rousseau, S. (year). Title. Self-published. with the canonical URL."}},{"@type":"Question","name":"Can I commission a paper or speak at an event?","acceptedAnswer":{"@type":"Answer","text":"Yes — limited, by selection. Commissioned work focuses on wholesale payments, ISO 20022 migration, post-quantum cryptography for financial services, and applied AI in banking. Speaking engagements at industry conferences, central-bank fora, and regulator round-tables are considered case-by-case."}},{"@type":"Question","name":"How do I follow new publications?","acceptedAnswer":{"@type":"Answer","text":"New papers and research notes are announced first through the site RSS feed at /rss.xml and the Banking On Quantum newsletter at news.bankingonquantum.com, which covers post-quantum cryptography, central-bank policy, and the migration roadmap across major payment schemes."}}]}]}
     </script>
 <script src="/main.js" defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id={{measurementID}}"></script>

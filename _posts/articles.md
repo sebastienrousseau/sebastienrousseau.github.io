@@ -39,7 +39,7 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
+subtitle: "Articles on AI, post-quantum cryptography, ISO 20022 and the future of payments."
 tags: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML"
 theme-color: "0, 83, 191"
 title: "Discover How Technology Is Changing Banking and Finance"
@@ -50,7 +50,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/rss.xml"
 category: "Technology"
 docs: https://validator.w3.org/feed/docs/rss2.html
-generator: "Shokunin SSG (version 0.0.26)"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
@@ -95,7 +95,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2024-04-15"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 
 ---
 
@@ -469,12 +469,12 @@ site_software: "Shokunin, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" title="Shokunin, the fastest Rust-based Static Site Generator (SSG)">
+<a class="newsroom-card-media" href="/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" title="Static Site Generator: the fastest Rust-based SSG">
 <img alt="Turned-off laptop computer on top of a white table" src="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Open source · Rust</span>
-<h3><a href="/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" title="Shokunin, the fastest Rust-based Static Site Generator (SSG)">Shokunin, the fastest Rust-based Static Site Generator (SSG)</a></h3>
+<h3><a href="/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" title="Static Site Generator: the fastest Rust-based SSG">Static Site Generator: the fastest Rust-based SSG</a></h3>
 <p class="newsroom-meta"><time datetime="2023-10-09">October 9, 2023</time> · Sebastien Rousseau</p>
 <p class="newsroom-excerpt">Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.</p>
 </div>

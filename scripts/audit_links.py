@@ -21,13 +21,21 @@ HEAD_BLOCKED = {
     "twitter.com",
     "x.com",
     "linkedin.com",
+    "www.linkedin.com",
     "medium.com",
     "crates.io",
     "midjourney.com",
+    "www.midjourney.com",
     "spglobal.com",
+    "www.spglobal.com",
     "news.bankingonquantum.com",
     "www.bmo.com",
     "chat.mistral.ai",
+    "www.iso20022.org",
+    "iso20022.org",
+    "huggingface.co",
+    "ai.google.dev",
+    "www.hsbc.com",
 }
 
 

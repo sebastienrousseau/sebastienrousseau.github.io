@@ -60,7 +60,7 @@ news_title: "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
 atom_link: "https://sebastienrousseau.com/state-of-ai-and-quantum-computing-in-banking-a-2023-review/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin SSG (version 0.0.26)"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications."
 item_guid: "https://sebastienrousseau.com/state-of-ai-and-quantum-computing-in-banking-a-2023-review/rss.xml"
 item_link: "https://sebastienrousseau.com/state-of-ai-and-quantum-computing-in-banking-a-2023-review/rss.xml"
@@ -105,7 +105,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2023-12-25"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 
 ---
 

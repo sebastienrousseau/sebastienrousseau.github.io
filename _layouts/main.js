@@ -96,7 +96,7 @@ class ServiceWorkerSetup {
 window.serviceWorkerSetup = new ServiceWorkerSetup();
 
 /**
- * Forward clicks on the in-nav .ap-search button to the hidden Shokunin search
+ * Forward clicks on the in-nav .ap-search button to the hidden Static Site Generator search
  * widget (#ssg-search-btn). The widget injects asynchronously, so we keep
  * trying on click rather than caching the reference.
  */

@@ -39,7 +39,7 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: ""
+subtitle: "Vetted mathematical and cryptographic constants for memory-safe Rust security."
 tags: "math, security, cryptography, Rust, programming, encryption, communication, constants, constants in Rust, Common library"
 theme-color: "0, 83, 191"
 title: "Mathematical and Cryptographic Constants for Rust Security"
@@ -50,7 +50,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin SSG (version 0.0.26)"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security."
 item_guid: "https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/rss.xml"
 item_link: "https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/rss.xml"
@@ -95,7 +95,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2023-11-05"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 
 ---
 
@@ -165,6 +165,6 @@ As the field of cryptography evolves, so does the Common (CMN) library, staying 
 
 Developers requiring mathematical or cryptographic constants in Rust should look to the Common (CMN) library as a primary resource. The Common (CMN) library is a free and an open-source tool, and it is available for download from the [GitHub repository ⧉][02].
 
-[00]: https://cmnlib.one "The Common (CMN) library website"
+[00]: https://github.com/sebastienrousseau/cmn "The Common (CMN) library website"
 [01]: https://docs.rs/cmn/latest/cmn/ "The Common (CMN) library documentation"
 [02]: https://github.com/sebastienrousseau/cmn "The Common (CMN) library GitHub repository"

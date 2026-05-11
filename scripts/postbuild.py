@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Post-build pass on Shokunin's ``public/`` output.
+"""Post-build pass on Static Site Generator's ``public/`` output.
 
 Tasks performed:
 1. **Real SRI** — replace every ``integrity="sha256-<short-hex>"`` placeholder
-   that Shokunin emits on its ``/_csp/*`` assets with a real base64-encoded
+   that Static Site Generator emits on its ``/_csp/*`` assets with a real base64-encoded
    SHA-256 of the asset's actual byte content. Browsers will now enforce SRI.
 
 2. **CSP for inline JSON-LD** — compute the SHA-256 of every
@@ -70,14 +70,14 @@ def fix_sri(html: str) -> str:
 # ---------------------------------------------------------------------------
 
 # Capture the literal inline body of every <script type="application/ld+json"> tag.
-# (Shokunin may emit either single- or double-quoted type attribute and may have
+# (Static Site Generator may emit either single- or double-quoted type attribute and may have
 # attribute order vary, so the regex is intentionally loose.)
 jsonld_re = re.compile(
     r'<script[^>]*type=["\']?application/ld\+json["\']?[^>]*>([\s\S]*?)</script>',
     re.IGNORECASE,
 )
 # Match the CSP meta tag whether attributes are quoted or not, in either order
-# (Shokunin's minifier emits `<meta content="..." http-equiv=Content-Security-Policy>`).
+# (Static Site Generator's minifier emits `<meta content="..." http-equiv=Content-Security-Policy>`).
 csp_tag_re = re.compile(
     r'<meta\b[^>]*?http-equiv=["\']?Content-Security-Policy["\']?[^>]*?>',
     re.IGNORECASE,

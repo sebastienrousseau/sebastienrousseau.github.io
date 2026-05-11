@@ -60,7 +60,7 @@ news_title: "Google Gemma AI: Transforming Open-Source AI Development"
 atom_link: "https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin SSG (version 0.0.26)"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use."
 item_guid: "https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/rss.xml"
 item_link: "https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/rss.xml"
@@ -103,7 +103,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2024-02-26"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 
 ---
 
@@ -235,7 +235,7 @@ deactivate
 
 This will revert to your system's default Python environment.
 
-For troubleshooting help or more details on setup, refer to the [Ollama Documentation ⧉](https://ollama.com/docs) and [Gemma Documentation ⧉](https://github.com/google/gemma).
+For troubleshooting help or more details on setup, refer to the [Ollama Documentation ⧉](https://ollama.com/docs) and [Gemma Documentation ⧉](https://github.com/google-deepmind/gemma).
 
 ![divider][divider].class=\"m-10 w-100\"
 

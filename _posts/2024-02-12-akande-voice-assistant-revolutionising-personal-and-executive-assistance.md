@@ -60,7 +60,7 @@ news_title: "Àkàndé Voice Assistant, A Personal and Executive Assistance"
 atom_link: "https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin SSG (version 0.0.26)"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance."
 item_guid: "https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/rss.xml"
 item_link: "https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/rss.xml"
@@ -105,7 +105,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2024-02-12"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 
 ---
 

@@ -60,7 +60,7 @@ news_title: "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"
 atom_link: "https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin SSG (version 0.0.26)"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats."
 item_guid: "https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/rss.xml"
 item_link: "https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/rss.xml"
@@ -103,7 +103,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2024-03-25"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 
 ---
 

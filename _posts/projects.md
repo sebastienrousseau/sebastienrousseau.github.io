@@ -39,7 +39,7 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Open Source Software (OSS) Developer, Banking & Financial Service Professional"
+subtitle: "Open-source projects in Python, Rust and JavaScript for the future of finance."
 tags: "Artificial Intelligence, Voice Assistant, Audio Analysis, Quantum Computing, Quantum Cryptography, CRYSTALS-Kyber, ISO 20022, Payment Automation, Bank Statement Parsing, Finance, Rust, Static Site Generator, Web Development, Password Generation, Cryptography, Rust Library, Logging, Serialization, YAML, Mersenne Twister"
 theme-color: "0, 83, 191"
 title: "Innovative and Creative Solutions Built with Open Source"
@@ -50,7 +50,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/projects/rss.xml"
 category: "Technology"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
-generator: "Shokunin SSG (version 0.0.26)"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "Explore my open-source projects and discover how I leverage open-source software to deliver groundbreaking solutions."
 item_guid: "https://sebastienrousseau.com/projects/rss.xml"
 item_link: "https://sebastienrousseau.com/projects/rss.xml"
@@ -95,7 +95,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2024-04-01"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 
 ---
 
@@ -201,7 +201,7 @@ site_software: "Shokunin, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/static-site-generator" title="Static Site Generator">
-<img alt="Banner for the Shokunin Static Site Generator" src="https://cloudcdn.pro/clients/shokunin/v1/github/github-shokunin.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the Static Site Generator" src="https://cloudcdn.pro/clients/shokunin/v1/github/github-shokunin.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Rust · SSG</span>
@@ -351,18 +351,18 @@ site_software: "Shokunin, Rust"
 
 </div>
 
-<header class="newsroom-section-head"><p class="newsroom-kicker">WEB</p><h2>Web-based projects</h2><p class="newsroom-lede">Starter templates and content destinations. From a Shokunin starter kit to two industry-focused publications on the future of banking.</p></header>
+<header class="newsroom-section-head"><p class="newsroom-kicker">WEB</p><h2>Web-based projects</h2><p class="newsroom-lede">Starter templates and content destinations. From a Static Site Generator starter kit to two industry-focused publications on the future of banking.</p></header>
 
 <div class="newsroom-grid">
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/kaishi.github.io" title="Kaishi. A Shokunin starter template">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/kaishi.github.io" title="Kaishi. A Static Site Generator starter template">
 <img alt="Banner for Kaishi, a starter template" src="https://cloudcdn.pro/clients/kaishi/v1/titles/title-kaishi.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Web · Template</span>
-<h3><a href="https://github.com/sebastienrousseau/kaishi.github.io" title="Kaishi. A Shokunin starter template">Kaishi. A Shokunin starter template</a></h3>
-<p class="newsroom-excerpt">Make beautiful websites with Kaishi, a Shokunin Static Site Generator starter template designed for clean, accessible, performant sites.</p>
+<h3><a href="https://github.com/sebastienrousseau/kaishi.github.io" title="Kaishi. A Static Site Generator starter template">Kaishi. A Static Site Generator starter template</a></h3>
+<p class="newsroom-excerpt">Make beautiful websites with Kaishi, a Static Site Generator starter template designed for clean, accessible, performant sites.</p>
 </div>
 </article>
 

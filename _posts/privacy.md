@@ -43,7 +43,7 @@ short_name: "sebastienrousseau"
 subtitle: "Your privacy is important to us."
 tags: "privacy, personal data, tracking tools, Google Analytics, Microsoft Clarity, user behaviour analytics, mouse movements, clicks, scrolls, rights, contact"
 theme-color: "0, 83, 191"
-title: "Privacy Statement: How We Use Your Data"
+title: "Privacy Statement — How Your Data Is Collected & Used"
 url: "https://sebastienrousseau.com/privacy"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
@@ -51,7 +51,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/privacy/rss.xml"
 category: "Technology"
 docs: https://validator.w3.org/feed/docs/rss2.html
-generator: "Shokunin SSG (version 0.0.26)"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/privacy/rss.xml"
 item_link: "https://sebastienrousseau.com/privacy/rss.xml"
@@ -96,7 +96,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2023-07-05"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Sebastien Rousseau, Sebastien Rousseau Builder, Sebastien Rousseau CLI, Sebastien Rousseau Templates, Sebastien Rousseau Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 
 ---
 

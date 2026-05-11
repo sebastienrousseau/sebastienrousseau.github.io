@@ -39,7 +39,7 @@ referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Industry white papers and applied research on quantum-safe payments, ISO 20022, AI in financial services, and post-quantum cryptography — written for senior payments and security leaders."
+subtitle: "Industry white papers and applied research for senior payments and security leaders."
 tags: "White Papers, Research, Technology, ASR, OpenAI, macOS, Speech Recognition, GPU, Acceleration, Publications"
 theme-color: "0, 83, 191"
 title: "Research Publications & White Papers from Sebastien Rousseau"
@@ -50,7 +50,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/rss.xml"
 category: "Technology"
 docs: https://validator.w3.org/feed/docs/rss2.html
-generator: "Shokunin SSG (version 0.0.26)"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: RSS feed for the site
 item_guid: "https://sebastienrousseau.com/rss.xml"
 item_link: "https://sebastienrousseau.com/rss.xml"
@@ -95,7 +95,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2024-03-08"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 
 ---
 
