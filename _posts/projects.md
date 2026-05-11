@@ -99,9 +99,36 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
-<p class="newsroom-intro">My passion lies in harnessing open-source software and experimentation to push boundaries and tackle real-world challenges. I'm eager to team up with like-minded individuals on open-source initiatives. If you have a project concept or want to collaborate, [get in touch](/contact/index.html).</p>
+<header class="setup-hero">
+<p class="setup-hero-eyebrow">OPEN SOURCE FOR FINANCIAL SERVICES</p>
+<h1 class="setup-hero-headline">Open source for the<br />future of finance.</h1>
+<p class="setup-hero-lede">A portfolio of 25+ open-source libraries in <strong>Python</strong>, <strong>Rust</strong> and <strong>JavaScript</strong>. Designed for wholesale payments, ISO&nbsp;20022 migration, post-quantum cryptography, and the AI tooling that supports them. Free to use, free to extend, with commercial support available.</p>
+<p class="setup-hero-cta">
+<a class="pill" href="#catalog">Browse all projects</a>
+<a class="pill ghost" href="/contact/index.html">Get in touch</a>
+</p>
+</header>
 
-<section class="newsroom">
+<section class="setup-three" aria-labelledby="setup-three-heading"><header class="setup-three-head"><p class="setup-three-kicker">WHAT IS INSIDE</p><h2 id="setup-three-heading" class="setup-three-headline">Three areas of practice. <span class="setup-three-headline-soft">One philosophy.</span></h2></header><div class="setup-three-grid"><article class="setup-card">
+<div class="setup-card-icon"><img alt="pain001 logo" src="https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg" loading="lazy" decoding="async" width="80" height="80" /></div>
+<h3 class="setup-card-title">Payments and settlement.</h3>
+<p class="setup-card-body">ISO 20022 <strong>pain.001</strong> and <strong>pacs.008</strong> toolkits, bank-statement parsing, and Rust libraries for the migration to structured cross-border messages. Built for SWIFT, SEPA, and the real-time payment schemes that come next.</p>
+<p class="setup-card-cta"><a href="#cat-payments" class="setup-card-link">Explore payments tools <span aria-hidden="true">›</span></a></p>
+</article>
+<article class="setup-card">
+<div class="setup-card-icon"><img alt="KyberLib logo" src="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" loading="lazy" decoding="async" width="80" height="80" /></div>
+<h3 class="setup-card-title">Post-quantum cryptography.</h3>
+<p class="setup-card-body">Rust implementations of <strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203), hash and digest primitives, and quantum-resistant building blocks. Protection beyond the RSA and elliptic-curve era of financial-grade authentication.</p>
+<p class="setup-card-cta"><a href="#cat-quantum" class="setup-card-link">Explore quantum-safe libraries <span aria-hidden="true">›</span></a></p>
+</article>
+<article class="setup-card">
+<div class="setup-card-icon"><img alt="HSH logo" src="https://cloudcdn.pro/clients/hsh/v1/logos/hsh.svg" loading="lazy" decoding="async" width="80" height="80" /></div>
+<h3 class="setup-card-title">Tooling and infrastructure.</h3>
+<p class="setup-card-body">Open-source Rust libraries for serialisation, logging, code generation, date and time. Plus the <strong>Static Site Generator</strong> (SSG) that builds this very site, and the developer environment that makes it shippable.</p>
+<p class="setup-card-cta"><a href="#cat-rust" class="setup-card-link">Explore developer tools <span aria-hidden="true">›</span></a></p>
+</article></div></section>
+
+<section class="newsroom" id="catalog">
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>pain001. ISO 20022 payments, automated</h2></header>
 
@@ -145,7 +172,7 @@ site_software: "Static Site Generator, Rust"
 
 </div>
 
-<header class="newsroom-section-head"><p class="newsroom-kicker">QUANTUM</p><h2>Quantum computing & cryptography</h2><p class="newsroom-lede">Open-source Rust libraries spanning post-quantum cryptography and quantum-resistant primitives, designed to keep data safe in the quantum era.</p></header>
+<header class="newsroom-section-head" id="cat-quantum"><p class="newsroom-kicker">QUANTUM</p><h2>Quantum computing & cryptography</h2><p class="newsroom-lede">Open-source Rust libraries spanning post-quantum cryptography and quantum-resistant primitives, designed to keep data safe in the quantum era.</p></header>
 
 <div class="newsroom-grid">
 
@@ -173,7 +200,7 @@ site_software: "Static Site Generator, Rust"
 
 </div>
 
-<header class="newsroom-section-head"><p class="newsroom-kicker">RUST</p><h2>Rust libraries & tools</h2><p class="newsroom-lede">A collection of open-source Rust projects covering serialisation, logging, code generation, and developer tooling. Built on the latest Rust technologies.</p></header>
+<header class="newsroom-section-head" id="cat-rust"><p class="newsroom-kicker">RUST</p><h2>Rust libraries & tools</h2><p class="newsroom-lede">A collection of open-source Rust projects covering serialisation, logging, code generation, and developer tooling. Built on the latest Rust technologies.</p></header>
 
 <div class="newsroom-grid">
 
@@ -289,7 +316,7 @@ site_software: "Static Site Generator, Rust"
 
 </div>
 
-<header class="newsroom-section-head"><p class="newsroom-kicker">PAYMENTS</p><h2>Payments toolkits</h2><p class="newsroom-lede">ISO 20022 tooling for the global payments migration. Pacs.008 cross-border credit transfers and Pain.001 message generation, plus bank-statement parsing.</p></header>
+<header class="newsroom-section-head" id="cat-payments"><p class="newsroom-kicker">PAYMENTS</p><h2>Payments toolkits</h2><p class="newsroom-lede">ISO 20022 tooling for the global payments migration. Pacs.008 cross-border credit transfers and Pain.001 message generation, plus bank-statement parsing.</p></header>
 
 <div class="newsroom-grid">
 
@@ -430,3 +457,35 @@ site_software: "Static Site Generator, Rust"
 </div>
 
 </section>
+
+<section class="qa" aria-labelledby="projects-qa-heading"><header class="qa-head"><h2 id="projects-qa-heading" class="qa-headline">Questions? <span class="qa-headline-soft">Answers.</span></h2></header><section class="qa-list"><details class="qa-item">
+<summary class="qa-q">What licence are these projects released under?</summary>
+<section class="qa-a"><p>Most projects are dual-licensed under MIT and Apache-2.0 — the standard for the Rust ecosystem — which gives commercial users explicit patent rights as well as permissive redistribution. A small number of clients' tools are released under Apache-2.0 only. The licence file at the root of each repository is the authoritative source.</p></section>
+</details>
+<details class="qa-item">
+<summary class="qa-q">Are these projects production-ready?</summary>
+<section class="qa-a"><p>Many are. <a href="https://pain001.com">pain001</a> is used by banks and payment-service providers to automate ISO&nbsp;20022 file creation. <a href="https://kyberlib.com">KyberLib</a> tracks the NIST FIPS&nbsp;203 specification and ships test vectors. Each repository's README and CI badges will tell you the current status; if you need a specific guarantee for production use, get in touch.</p></section>
+</details>
+<details class="qa-item">
+<summary class="qa-q">How can I contribute or report an issue?</summary>
+<section class="qa-a"><p>Every project has a public GitHub repository under <a href="https://github.com/sebastienrousseau" rel="external noopener">github.com/sebastienrousseau</a>. Open an issue describing the problem (a minimal reproducer helps) or a pull request linked to an issue. Contributions are governed by the Developer Certificate of Origin and require signed commits.</p></section>
+</details>
+<details class="qa-item">
+<summary class="qa-q">Can I use these libraries in a regulated banking environment?</summary>
+<section class="qa-a"><p>Yes, with the usual caveats. The libraries are independent open-source work, not a regulated product. Run your normal supply-chain, security, and dependency-review processes — vendoring through your internal mirror, scanning with SBOM tools, and pinning by Git SHA or cryptographic hash — before deploying to production payment infrastructure.</p></section>
+</details>
+<details class="qa-item">
+<summary class="qa-q">Do you offer commercial support or consulting?</summary>
+<section class="qa-a"><p>Yes, on a selective basis. Engagements focus on ISO&nbsp;20022 migration, post-quantum cryptography migration roadmaps, and applied AI in financial services. <a href="/contact/index.html">Get in touch</a> with a short brief, your timeline and any constraints.</p></section>
+</details>
+<details class="qa-item">
+<summary class="qa-q">How do I follow new releases?</summary>
+<section class="qa-a"><p>Every dated post on this site is announced through the <a href="/rss.xml">RSS feed</a> and the <a href="https://news.bankingonquantum.com" rel="external noopener">Banking On Quantum</a> newsletter. Individual repositories also publish releases on GitHub, which you can watch directly.</p></section>
+</details></section></section>
+
+<aside class="setup-finale" aria-labelledby="projects-finale-heading">
+<p class="setup-finale-eyebrow">GET IN TOUCH</p>
+<h2 id="projects-finale-heading" class="setup-finale-headline">Have an idea? Let's build it.</h2>
+<p class="setup-finale-lede">Open-source collaboration, commissioned engineering, or a conversation about the future of payments. Whichever fits.</p>
+<p class="setup-finale-cta"><a class="pill" href="/contact/index.html">Start a conversation</a></p>
+</aside>

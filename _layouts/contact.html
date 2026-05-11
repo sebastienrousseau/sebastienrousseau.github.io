@@ -386,6 +386,38 @@
          16:9 image (vs. 1:1), smaller body padding, smaller typography. Used
          on /papers/ so the research notes feel like an Apple-style strip
          beneath the featured publications, not a heavyweight grid. */
+      /* Personal-Setup-style hero + theme cards used on /projects/.
+         Centred hero with primary + ghost CTAs, then a three-card "what is
+         inside" feature block, each card icon-led and quietly elevated. */
+      .setup-hero{text-align:center;padding:64px 0 56px;border-bottom:1px solid var(--border);margin-bottom:56px}
+      .setup-hero-eyebrow{margin:0 0 14px;font-size:12px;font-weight:600;letter-spacing:.12em;color:var(--accent);text-transform:uppercase}
+      .setup-hero-headline{font-size:clamp(36px,5.4vw,64px);line-height:1.05;font-weight:600;letter-spacing:-.022em;color:var(--ink);margin:0 auto 18px;max-width:18ch}
+      .setup-hero-lede{margin:0 auto 28px;max-width:760px;font-size:clamp(17px,1.5vw,21px);line-height:1.45;color:var(--ink-mute)}
+      .setup-hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:0}
+      .setup-three{margin:0 0 72px}
+      .setup-three-head{text-align:center;margin:0 0 40px}
+      .setup-three-kicker{margin:0 0 10px;font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--accent);text-transform:uppercase}
+      .setup-three-headline{margin:0;font-size:clamp(28px,3.4vw,42px);line-height:1.1;font-weight:600;letter-spacing:-.018em;color:var(--ink)}
+      .setup-three-headline-soft{color:var(--ink-mute)}
+      .setup-three-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+      @media (max-width:900px){.setup-three-grid{grid-template-columns:1fr}}
+      .setup-card{background:var(--card);border-radius:22px;padding:32px 28px;text-align:left;box-shadow:0 1px 0 rgba(0,0,0,.06);transition:transform .25s ease,box-shadow .25s ease;display:flex;flex-direction:column;gap:14px}
+      .setup-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px -16px rgba(0,0,0,.16)}
+      .setup-card-icon{width:64px;height:64px;background:linear-gradient(180deg,#f5f5f7 0%,#e8e8ed 100%);border-radius:16px;display:flex;align-items:center;justify-content:center;padding:12px}
+      [data-theme="dark"] .setup-card-icon{background:linear-gradient(180deg,#1d1d1f 0%,#000 100%)}
+      .setup-card-icon img{width:100%;height:100%;object-fit:contain}
+      .setup-card-title{margin:6px 0 4px;font-size:21px;line-height:1.18;font-weight:600;letter-spacing:-.012em;color:var(--ink)}
+      .setup-card-body{margin:0;font-size:15px;line-height:1.55;color:var(--ink-soft);flex:1}
+      .setup-card-cta{margin:0}
+      .setup-card-link{color:var(--accent);font-weight:500;font-size:14.5px}
+      .setup-card-link:hover{opacity:1;text-decoration:underline;text-underline-offset:3px}
+      /* Bottom finale CTA on /projects/. Bigger margin so it breathes after
+         the FAQ accordion. */
+      .setup-finale{margin:64px 0 24px;padding:64px 28px;text-align:center;background:var(--bg-alt);border-radius:24px}
+      .setup-finale-eyebrow{margin:0 0 12px;font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--accent);text-transform:uppercase}
+      .setup-finale-headline{margin:0 0 14px;font-size:clamp(28px,3.4vw,42px);line-height:1.1;font-weight:600;letter-spacing:-.018em;color:var(--ink)}
+      .setup-finale-lede{margin:0 auto 24px;max-width:640px;font-size:clamp(16px,1.4vw,19px);line-height:1.45;color:var(--ink-mute)}
+      .setup-finale-cta{margin:0}
       .newsroom-grid-tight{gap:20px}
       .newsroom-grid-tight .newsroom-card-media{aspect-ratio:16/9}
       .newsroom-grid-tight .newsroom-card-body{padding:16px 18px 20px}

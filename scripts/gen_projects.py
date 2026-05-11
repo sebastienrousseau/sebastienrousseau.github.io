@@ -279,29 +279,199 @@ def section_block(cat: dict) -> str:
     return head + '\n\n<div class="newsroom-grid">\n\n' + cards + "\n\n</div>"
 
 
+THREE_THEMES = [
+    {
+        "icon": "https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg",
+        "icon_alt": "pain001 logo",
+        "title": "Payments and settlement.",
+        "body": (
+            "ISO 20022 <strong>pain.001</strong> and <strong>pacs.008</strong> "
+            "toolkits, bank-statement parsing, and Rust libraries for the "
+            "migration to structured cross-border messages. Built for SWIFT, "
+            "SEPA, and the real-time payment schemes that come next."
+        ),
+        "cta_label": "Explore payments tools",
+        "cta_href": "#cat-payments",
+    },
+    {
+        "icon": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
+        "icon_alt": "KyberLib logo",
+        "title": "Post-quantum cryptography.",
+        "body": (
+            "Rust implementations of <strong>CRYSTALS-Kyber</strong> "
+            "(NIST FIPS&nbsp;203), hash and digest primitives, and "
+            "quantum-resistant building blocks. Protection beyond the RSA "
+            "and elliptic-curve era of financial-grade authentication."
+        ),
+        "cta_label": "Explore quantum-safe libraries",
+        "cta_href": "#cat-quantum",
+    },
+    {
+        "icon": "https://cloudcdn.pro/clients/hsh/v1/logos/hsh.svg",
+        "icon_alt": "HSH logo",
+        "title": "Tooling and infrastructure.",
+        "body": (
+            "Open-source Rust libraries for serialisation, logging, code "
+            "generation, date and time. Plus the <strong>Static Site "
+            "Generator</strong> (SSG) that builds this very site, and the "
+            "developer environment that makes it shippable."
+        ),
+        "cta_label": "Explore developer tools",
+        "cta_href": "#cat-rust",
+    },
+]
+
+
+FAQ_ITEMS = [
+    ("What licence are these projects released under?",
+     "Most projects are dual-licensed under MIT and Apache-2.0 — the standard "
+     "for the Rust ecosystem — which gives commercial users explicit patent "
+     "rights as well as permissive redistribution. A small number of clients' "
+     "tools are released under Apache-2.0 only. The licence file at the root "
+     "of each repository is the authoritative source."),
+    ("Are these projects production-ready?",
+     "Many are. <a href=\"https://pain001.com\">pain001</a> is used by banks "
+     "and payment-service providers to automate ISO&nbsp;20022 file creation. "
+     "<a href=\"https://kyberlib.com\">KyberLib</a> tracks the NIST FIPS&nbsp;203 "
+     "specification and ships test vectors. Each repository's README and CI "
+     "badges will tell you the current status; if you need a specific guarantee "
+     "for production use, get in touch."),
+    ("How can I contribute or report an issue?",
+     "Every project has a public GitHub repository under "
+     "<a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. "
+     "Open an issue describing the problem (a minimal reproducer helps) or a "
+     "pull request linked to an issue. Contributions are governed by the "
+     "Developer Certificate of Origin and require signed commits."),
+    ("Can I use these libraries in a regulated banking environment?",
+     "Yes, with the usual caveats. The libraries are independent open-source "
+     "work, not a regulated product. Run your normal supply-chain, security, "
+     "and dependency-review processes — vendoring through your internal mirror, "
+     "scanning with SBOM tools, and pinning by Git SHA or cryptographic hash — "
+     "before deploying to production payment infrastructure."),
+    ("Do you offer commercial support or consulting?",
+     "Yes, on a selective basis. Engagements focus on ISO&nbsp;20022 migration, "
+     "post-quantum cryptography migration roadmaps, and applied AI in "
+     "financial services. <a href=\"/contact/index.html\">Get in touch</a> with "
+     "a short brief, your timeline and any constraints."),
+    ("How do I follow new releases?",
+     "Every dated post on this site is announced through the "
+     "<a href=\"/rss.xml\">RSS feed</a> and the "
+     "<a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> "
+     "newsletter. Individual repositories also publish releases on GitHub, "
+     "which you can watch directly."),
+]
+
+
+def setup_hero_block() -> str:
+    return """<header class="setup-hero">
+<p class="setup-hero-eyebrow">OPEN SOURCE FOR FINANCIAL SERVICES</p>
+<h1 class="setup-hero-headline">Open source for the<br />future of finance.</h1>
+<p class="setup-hero-lede">A portfolio of 25+ open-source libraries in <strong>Python</strong>, <strong>Rust</strong> and <strong>JavaScript</strong>. Designed for wholesale payments, ISO&nbsp;20022 migration, post-quantum cryptography, and the AI tooling that supports them. Free to use, free to extend, with commercial support available.</p>
+<p class="setup-hero-cta">
+<a class="pill" href="#catalog">Browse all projects</a>
+<a class="pill ghost" href="/contact/index.html">Get in touch</a>
+</p>
+</header>"""
+
+
+def setup_three_block() -> str:
+    cards = []
+    for t in THREE_THEMES:
+        cards.append(
+            f"""<article class="setup-card">
+<div class="setup-card-icon"><img alt="{t['icon_alt']}" src="{t['icon']}" loading="lazy" decoding="async" width="80" height="80" /></div>
+<h3 class="setup-card-title">{t['title']}</h3>
+<p class="setup-card-body">{t['body']}</p>
+<p class="setup-card-cta"><a href="{t['cta_href']}" class="setup-card-link">{t['cta_label']} <span aria-hidden="true">›</span></a></p>
+</article>"""
+        )
+    return (
+        '<section class="setup-three" aria-labelledby="setup-three-heading">'
+        '<header class="setup-three-head">'
+        '<p class="setup-three-kicker">WHAT IS INSIDE</p>'
+        '<h2 id="setup-three-heading" class="setup-three-headline">Three areas of practice. <span class="setup-three-headline-soft">One philosophy.</span></h2>'
+        '</header>'
+        '<div class="setup-three-grid">' + "\n".join(cards) + '</div>'
+        '</section>'
+    )
+
+
+def faq_block() -> str:
+    items = []
+    for q, a in FAQ_ITEMS:
+        items.append(
+            f"""<details class="qa-item">
+<summary class="qa-q">{q}</summary>
+<section class="qa-a"><p>{a}</p></section>
+</details>"""
+        )
+    return (
+        '<section class="qa" aria-labelledby="projects-qa-heading">'
+        '<header class="qa-head">'
+        '<h2 id="projects-qa-heading" class="qa-headline">Questions? <span class="qa-headline-soft">Answers.</span></h2>'
+        '</header>'
+        '<section class="qa-list">' + "\n".join(items) + '</section>'
+        '</section>'
+    )
+
+
+def bottom_cta_block() -> str:
+    return """<aside class="setup-finale" aria-labelledby="projects-finale-heading">
+<p class="setup-finale-eyebrow">GET IN TOUCH</p>
+<h2 id="projects-finale-heading" class="setup-finale-headline">Have an idea? Let's build it.</h2>
+<p class="setup-finale-lede">Open-source collaboration, commissioned engineering, or a conversation about the future of payments. Whichever fits.</p>
+<p class="setup-finale-cta"><a class="pill" href="/contact/index.html">Start a conversation</a></p>
+</aside>"""
+
+
+# Map kicker → anchor id used by the three theme cards above to deep-link
+# into the relevant slice of the catalogue further down the page.
+ANCHOR_MAP = {
+    "PAYMENTS": "cat-payments",
+    "QUANTUM": "cat-quantum",
+    "RUST": "cat-rust",
+}
+
+
+def section_block_anchored(cat: dict) -> str:
+    """Same as section_block, but emits an id on the header for deep linking."""
+    anchor = ANCHOR_MAP.get(cat["kicker"])
+    id_attr = f' id="{anchor}"' if anchor else ""
+    head = (
+        f'<header class="newsroom-section-head"{id_attr}>'
+        f'<p class="newsroom-kicker">{cat["kicker"]}</p>'
+        f'<h2>{cat["title"]}</h2>'
+        + (f'<p class="newsroom-lede">{cat["lede"]}</p>' if cat.get("lede") else "")
+        + '</header>'
+    )
+    if cat.get("is_featured"):
+        return head + "\n\n" + featured_block(cat["items"][0])
+    cards = "\n\n".join(card_block(i) for i in cat["items"])
+    return head + '\n\n<div class="newsroom-grid">\n\n' + cards + "\n\n</div>"
+
+
 def main() -> None:
     text = SRC.read_text()
-    # Frontmatter is bounded by lines containing exactly "---". Keep everything up to
-    # the *second* such line, drop the body and rewrite.
     lines = text.splitlines(keepends=True)
     delim_idx = [i for i, ln in enumerate(lines) if ln.strip() == "---"]
     if len(delim_idx) < 2:
         raise SystemExit("could not locate frontmatter delimiters in projects.md")
     head = "".join(lines[: delim_idx[1] + 1])
 
-    intro_para = ("My passion lies in harnessing open-source software and experimentation to push "
-                  "boundaries and tackle real-world challenges. I'm eager to team up with like-minded "
-                  "individuals on open-source initiatives. If you have a project concept or want to "
-                  "collaborate, [get in touch](/contact/index.html).")
-
-    body_parts = [f'<p class="newsroom-intro">{intro_para}</p>', '<section class="newsroom">']
-    body_parts.extend(section_block(c) for c in CATEGORIES)
+    body_parts = [
+        setup_hero_block(),
+        setup_three_block(),
+        '<section class="newsroom" id="catalog">',
+    ]
+    body_parts.extend(section_block_anchored(c) for c in CATEGORIES)
     body_parts.append("</section>")
+    body_parts.append(faq_block())
+    body_parts.append(bottom_cta_block())
     body = "\n\n".join(body_parts) + "\n"
 
     SRC.write_text(head + "\n" + body)
     total_items = sum(len(c["items"]) for c in CATEGORIES)
-    print(f"wrote {SRC}. {len(CATEGORIES)} sections, {total_items} items")
+    print(f"wrote {SRC}. hero + 3 themes + {len(CATEGORIES)} catalogue sections, {total_items} items, FAQ + bottom CTA")
 
 
 if __name__ == "__main__":
