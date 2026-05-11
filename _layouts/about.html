@@ -411,6 +411,19 @@
       .setup-card-cta{margin:0}
       .setup-card-link{color:var(--accent);font-weight:500;font-size:14.5px}
       .setup-card-link:hover{opacity:1;text-decoration:underline;text-underline-offset:3px}
+      /* Catalogue section headers on /projects/ — centred Apple style.
+         Larger headline, more breathing room, no left-aligned underline.
+         Cards inside the grid are forced to a uniform 3-up minmax so single
+         and double-item sections don't collapse into one wide card. */
+      .cat-section-head{text-align:center;margin:64px auto 32px;max-width:780px}
+      .cat-section-head:first-of-type{margin-top:16px}
+      .cat-kicker{margin:0 0 12px;font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--accent);text-transform:uppercase}
+      .cat-headline{margin:0 0 14px;font-size:clamp(28px,3.4vw,42px);line-height:1.1;font-weight:600;letter-spacing:-.018em;color:var(--ink)}
+      .cat-lede{margin:0 auto;max-width:640px;font-size:clamp(16px,1.3vw,18px);line-height:1.5;color:var(--ink-mute)}
+      .cat-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+      @media (max-width:980px){.cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+      @media (max-width:600px){.cat-grid{grid-template-columns:1fr}}
+
       /* Bottom finale CTA on /projects/. Bigger margin so it breathes after
          the FAQ accordion. */
       .setup-finale{margin:64px 0 24px;padding:64px 28px;text-align:center;background:var(--bg-alt);border-radius:24px}
