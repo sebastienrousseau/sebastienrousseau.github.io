@@ -39,6 +39,15 @@ done
 
 python3 scripts/postbuild.py
 
+# GitHub Pages serves from main/docs, so mirror the postbuild output into
+# docs/ on every build. CNAME and .nojekyll are preserved.
+rsync -a --delete --exclude CNAME --exclude .nojekyll public/ docs/
+cat > docs/CNAME <<'CNAME'
+sebastienrousseau.com
+www.sebastienrousseau.com
+CNAME
+touch docs/.nojekyll
+
 if (( SERVE )); then
   exec python3 -m http.server 8000 --directory public --bind 127.0.0.1
 fi

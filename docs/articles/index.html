@@ -2,505 +2,702 @@
 <html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
-    <meta itemprop="datePublished" content="Mon, 15 Apr 2024 06:06:06 +0000" id="date">
-    <meta itemprop="dateModified" content="Mon, 15 Apr 2024 06:06:06 +0000" id="last-modified">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 15 Apr 2024 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 15 Apr 2024 06:06:06 +0000" id="last-modified" />
     <title>Discover How Technology Is Changing Banking and Finance</title>
 
-    <!-- # Start Primary Meta Tags -->
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
 <meta name="description" content="Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry">
-<meta name="generator" content="Shokunin SSG (version 0.0.26)">
 <meta name="keywords" content="Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML">
-<meta name="language" content="en-GB">
-<meta name="permalink" content="https://sebastienrousseau.com/articles">
-<meta name="rating" content="general">
-<meta name="referrer" content="no-referrer">
-<meta name="robots" content="index, follow">
-<meta name="title" content="Discover How Technology Is Changing Banking and Finance">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- # End Primary Meta Tags -->
-
-    <!-- # Start Open Graph / Facebook Meta Tags -->
-    <meta name="og:description" content="Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry">
-<meta name="og:image" content="https://kura.pro/stock/images/banners/sebastien-rousseau.png">
-<meta name="og:image:alt" content="Black and White Portrait of Sebastien Rousseau">
-<meta name="og:image:height" content="162">
-<meta name="og:image:width" content="162">
-<meta name="og:locale" content="en_GB">
-<meta name="og:title" content="Discover How Technology Is Changing Banking and Finance">
-<meta name="og:type" content="website">
-<meta name="og:url" content="https://sebastienrousseau.com/articles">
-    <!-- # End Open Graph / Facebook Meta Tags -->
-
-    <!-- # Start Accessibility Meta Tags -->
-    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
-    <!-- # End Accessibility Meta Tags -->
-
-    <!-- # Start Apple Meta Tags -->
-    <meta name="apple_mobile_web_app_orientations" content="portrait">
-<meta name="apple_touch_icon_sizes" content="192x192">
-    <!-- # End Apple Meta Tags -->
-
-<!-- # Start Content Security Policy Meta Tags -->
-    <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self';
-      script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com https://cdn.jsdelivr.net unpkg.com www.googletagmanager.com x.clarity.ms https://www.googletagmanager.com https://www.google.com https://www.gstatic.com;
-      frame-src 'self' https://www.google.com;
-      connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com;
-      img-src 'self' data: https: kura.pro www.googletagmanager.com;
-      style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
-      font-src 'self' https://fonts.gstatic.com;
-      media-src 'self';" />
-    <!-- # End Content Security Policy Meta Tags -->
-
-
-
-    <!-- # Start Microsoft Meta Tags -->
     
-    <!-- # End Microsoft Meta Tags -->
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Discover How Technology Is Changing Banking and Finance">
 
-    <!-- # Start Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary">
-<meta name="twitter:creator" content="@wwdseb">
-<meta name="twitter:description" content="Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry">
-<meta name="twitter:image" content="https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png">
-<meta name="twitter:image:alt" content="Logo of Sebastien Rousseau">
-<meta name="twitter:site" content="@wwdseb">
-<meta name="twitter:title" content="Discover How Technology Is Changing Banking and Finance">
-<meta name="twitter:url" content="https://sebastienrousseau.com/articles/index.html">
-    <!-- # End Twitter Meta Tags -->
+    <meta http-equiv="Permissions-Policy" content="browsing-topics=(), interest-cohort=(), join-ad-interest-group=(), run-ad-auction=(), attribution-reporting=()" />
 
-    <!-- # Start Links -->
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else. -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        script-src 'sha256-ec/p4YIhFATVeL+HA+1K8mCUqq+91LpXs/jF+RpZYi4=' 'sha256-eqH7bdsX8T/MSlzIHiePcEyvoDE7D+9XqBIaxMgc3D0=' 'sha256-xoQWMLqT7ROsuR4jJEW4x7dABFCKi5GFubiSLsBJKHQ=' 'self' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
     <link rel="alternate" href="https://sebastienrousseau.com/articles" hreflang="en" />
-    <link rel="preload" as="image" href="">
-    <link rel="canonical" href="https://sebastienrousseau.com/articles" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://kura.pro/sebastienrousseau/images/favicon.ico"
-      sizes="16x16 32x32"
-    />
-    <link
-      as="style"
-      crossorigin="anonymous"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      onload="this.onload=null;this.rel='stylesheet'"
-      rel="preload"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="https://kura.pro/sebastienrousseau/images/icons/192x192.png"
-      sizes="192x192"
-    />
+    
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <!-- Skeletonic is self-hosted to eliminate the render-blocking
+         cross-origin stylesheet request. Build pipeline copies
+         _layouts/_skeletonic.min.css to public/skeletonic.min.css. -->
+    <link rel="stylesheet" href="/skeletonic.min.css" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
-    <!-- # End Links -->
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
 
-    <!-- # Start Styles -->
-    <style>
-    .sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.bounce{animation:g 1s infinite}.drop-down{animation:a 1.618s ease}.drop-down,.fade-in{animation-fill-mode:forwards}.fade-in{animation:b 3s ease}.flip{animation:i 1s infinite}.jello{animation:k 1s infinite}.pulse{animation:f 1s infinite}.roll{animation:c 5s linear infinite}.roll-clockwise{animation:d 5s linear infinite}.roll-reverse{animation:h 5s linear infinite}.roll-reverse-clockwise{animation:e 5s linear infinite}.rotate{animation:d 5s linear infinite}.shake{animation:j 1s infinite}.slide-in{animation:h 1s ease}.zoom-in,.zoom-in-out{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-in-out:hover,.zoom-in:hover{transform:scale(1.0618)}.zoom-out{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-out:hover{transform:scale(.618)}*{box-sizing:border-box;font-weight:300;margin:0;padding:0}html{font-family:SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:clamp(var(--base-font-size),1vw,20px);line-height:var(--base-line-height);scroll-behavior:smooth;text-rendering:optimizeLegibility}.article-info{color:var(--theme-color)}.blur-light{backdrop-filter:saturate(180%) blur(20px);background-color:hsla(0,0%,100%,.618)}.card,pre{margin-bottom:calc(var(--base-font-size)*var(--golden-ratio)/2);overflow:hidden}blockquote{background:rgba(0, 83, 191,.062);border-left:10px solid var(--theme-color);margin:1.618em 10px;padding:.618em 10px;quotes:"\201C""\201D""\2018""\2019"}blockquote:after,blockquote:before{color:var(--theme-color);font-size:4em;line-height:.1em;vertical-align:-.4em}blockquote:before{content:open-quote;margin-right:.1618em}blockquote:after{content:close-quote;margin-left:.1618em}blockquote p{color:var(--theme-color)!important;display:inline;font-size:1.2em;font-style:italic;line-height:1.5em;margin:0 0 .5em}.company,.container .rollers .wrapper .items-container .item .company,.content{filter:grayscale(100%);opacity:.2}.company:hover,.container .rollers .wrapper .items-container .item .company:hover{cursor:pointer;filter:grayscale(0);opacity:1}.company{float:left;padding:1.618rem;width:33%!important}.content{padding:calc(var(--base-font-size)*1.236)}.container .rollers,.content .container{box-shadow:2px 15px 20px #1f1f1f10,-2px -8px 20px #1f1f1f1a;padding:calc(var(--base-font-size)*1.854) calc(var(--base-font-size)*1.236)}.container .rollers .wrapper{flex:0 0 auto;height:100px;margin:0 0 calc(var(--base-font-size)*1.236) 0;position:relative;width:1400px}.container .rollers .wrapper .items-container{align-items:center;animation-duration:30s;animation-iteration-count:infinite;animation-timing-function:linear;display:flex;height:100%;position:absolute;width:100%}:root{--base-font-size:17px;--base-line-height:1.47059;--box-shadow:0 2px 4px rgb(0, 83, 191);--golden-ratio:1.618;--theme-color:rgb(0, 83, 191);--transition-duration:0.3s;--z-index-menu:1}h1,h2,h3,h4,h5,h6{color:var(--theme-color);font-weight:400;line-height:var(--golden-ratio);margin-bottom:calc(var(--base-font-size)*var(--golden-ratio)/2)}a{color:var(--theme-color);text-decoration:none}strong{font-weight:600}a:hover{text-decoration:underline}@keyframes a{0%{transform:translateY(calc(var(--base-font-size)*-.618))}to{transform:translateY(0)}}@keyframes b{0%{opacity:0}to{opacity:1}}@keyframes c{0%{transform:translateX(0)}to{transform:translateX(-100%)}}@keyframes d{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes e{0%{transform:rotate(1turn)}to{transform:rotate(0deg)}}@keyframes f{0%{transform:scale(1)}50%{transform:scale(1.1)}to{transform:scale(1)}}@keyframes g{0%,20%,50%,80%,to{transform:translateY(0)}40%{transform:translateY(-30px)}60%{transform:translateY(-15px)}}@keyframes h{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes i{0%{transform:perspective(400px) rotateY(0)}to{transform:perspective(400px) rotateY(1turn)}}@keyframes j{0%,to{transform:translateX(0)}10%,30%,50%,70%,90%{transform:translateX(-10px)}20%,40%,60%,80%{transform:translateX(10px)}}@keyframes k{0%,to{transform:scaleX(1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}}@media only screen and (max-width:800px){.container .rollers .wrapper .items-container .item .company{opacity:.4}.content,.content .container{padding:calc(var(--base-font-size)*1.236)}.company{width:50%!important}.fs-5{font-size:calc(var(--base-font-size)*.9)!important}h3{font-size:calc(var(--base-font-size)*1.618)}}
-    #hero-element {
-      margin: 0;
-      padding: 0;
-      position: fixed;
-      width: auto;
-      height: 19vh;
-      overflow: hidden;
-    }
-    #hero-element::before, #hero-element::after {
-        content: "";
-        position: absolute;
-        width: 200vw;
-        height: 33vh;
-        z-index: -1;
-        border-radius: 33px;
-        transform-origin: top left;
-    }
-    #hero-element::after {
-        top: -33vh;
-        left: -1.618vw;
-        background: rgb(0, 83, 191);
-        transform: rotate(6.18deg);
-    }
-    </style>
-    <!-- # End Styles -->
-  </head>
-  <body
-    id="page-top"
-    itemscope
-    itemtype="http://schema.org/WebPage"
-    class="fw-light text-center bg-white text-start fs-6"
-  >
-    <!-- # Start Responsive navbar -->
-    <nav
-      class="navbar navbar-expand-lg bd-navbar sticky-top shadow-small border-bottom blur-light"
-      id="mainNav"
-      itemscope
-      itemtype="http://schema.org/SiteNavigationElement"
-    >
-      <div class="container-xxl p-3">
-        <a class="navbar-brand p-0 me-0 me-lg-2 zoom-in" href="/index.html" aria-label="logo">
-          <img
-            class="d-inline-block align-top"
-            width="44"
-            height="44"
-            src="https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
-            alt="Logo for Sebastien Rousseau"
-            title="Image of the Logo for Sebastien Rousseau"
-            loading="lazy"
-          />
+    <link rel="stylesheet" href="/_csp/be15b169f6904d49.css" crossorigin="anonymous" integrity="sha256-mnMpp44a6haC2rzwBPpwFZo7f21IdanffsP33VQHPgU=" crossorigin="anonymous"">
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="http://127.0.0.1:8000/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Discover How Technology Is Changing Banking and Finance">
+<meta property="og:description" content="FEATURED Latest story AI · Quantum · Philosophy Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines May 11, 2026 ·">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/articles">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Discover How Technology Is Changing Banking and Finance">
+<meta name="twitter:description" content="FEATURED Latest story AI · Quantum · Philosophy Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines May 11, 2026 ·">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp">
+<link rel="canonical" href="http://127.0.0.1:8000/articles/index.html">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+</head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Skip to main content</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Toggle navigation" />
+      <div class="wrap">
+        <a class="ap-brand" href="/index.html" aria-label="Sebastien Rousseau home">
+          <span itemprop="name">Sebastien Rousseau</span>
         </a>
-        <span class="fs-4" itemprop="name"><a href="/" itemprop="url" title="Sebastien Rousseau - Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry" class="text-decoration-none text-dark">Sebastien Rousseau</a></span>
-        <button
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          class="navbar-toggler"
-          data-bs-target="#navbarSupportedContent"
-          data-bs-toggle="collapse"
-          type="button"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                aria-current="page"
-                href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="/about/index.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  href="/articles/index.html">Articles</a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="/papers/index.html">Papers</a>
-              </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="/projects/index.html">Projects</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                id="navbarDropdown"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Links</a
-              >
-              <ul
-                class="dropdown-menu dropdown-menu-end"
-                aria-labelledby="navbarDropdown"
-              >
-                <li>
-                  <a class="dropdown-item" href="/playlists/index.html">
-                    Spotify Playlists
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/made-with-shokunin/index.html">
-                    Made with Shokunin
-                  </a>
-                </li> 
-                <li>
-                  <a class="dropdown-item" href="/tags/index.html">
-                    Tags
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a
-                aria-pressed="false"
-                class="btn btn-dark rounded-pill px-3"
-                href="/contact/index.html"
-                >Get in touch
-              </a>
-            </li>
+        <nav aria-label="Primary">
+          <ul class="ap-menu">
+            <li><a href="/about/index.html">About</a></li>
+            <li><a href="/articles/index.html">Articles</a></li>
+            <li><a href="/papers/index.html">Papers</a></li>
+            <li><a href="/projects/index.html">Projects</a></li>
+            <li><a href="/playlists/index.html">Playlists</a></li>
+            <li><a href="/tags/index.html">Tags</a></li>
           </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Search" title="Search (K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+          <a class="ap-cta-mini" href="/contact/index.html" aria-label="Get in touch">Get in touch ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Toggle navigation">☰</label>
         </div>
       </div>
-    </nav>
-    <!-- # End Responsive navbar -->
+    </header>
 
-    <!-- Header -->
-    <header class="w-100 position-relative" id="hero-element"></header>
-    <!-- # End Header -->
+        <section class="ap-hero">
+      <h1>Sebastien Rousseau</h1>
+      <p class="sub">Articles on AI, post-quantum cryptography, ISO 20022 and the future of payments.</p>
+    </section>
 
-    <!-- Main content-->
-    <main id="main" class="bd-masthead container fs-5 p-5" aria-label="main">
-      <div class="text-start justify-content-between">
-        <h1 id="h1-discover" tabindex="0" aria-label="Discover Heading" itemprop="headline" class="discover">Discover How Technology Is Changing Banking and Finance</h1><p>Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry</p><p></p><h2 id="h2-all" tabindex="0" aria-label="All Heading" itemprop="name" class="all">All News Stories and Articles</h2>
-<p><img src="https://kura.pro/stock/images/banners/digital-nodes.webp" alt="Image generated using MidJourney - A Network of digital nodes in red and blue hues" <p class="fade-in w-25 p-3 float-start" title="image generated using midjourney - a network of digital n"></p>
-<h3 id="h3-bug" tabindex="0" aria-label="Bug Heading" itemprop="name" class="bug">Bug Discovered in Quantum Algorithm for Lattice-Based Crypto</h3>
-<p>A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research.  <a href="/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html" title="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<p><img src="https://kura.pro/stock/images/banners/digital-constellation.webp" alt="Banner Image of Network nodes in a digital blue space" <p class="fade-in w-25 p-3 float-start" title="banner image of network nodes in a digital blue space"></p>
-<h3 id="h3-quantum" tabindex="0" aria-label="Quantum Heading" itemprop="name" class="quantum">Quantum Algorithm Challenges Lattice-Based Cryptography</h3>
-<p>New quantum algorithm solves key crypto problem, urges research into quantum-safe security. <a href="/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html" title="Quantum Algorithm Challenges Lattice-Based Cryptography"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<p><img src="https://kura.pro/stock/images/banners/open-voice.webp" alt="Banner of Vibrant gradient overlay on repeated profiles" <p class="fade-in w-25 p-3 float-start" title="banner of vibrant gradient overlay on repeated profiles"></p>
-<h3 id="h3-openvoice" tabindex="0" aria-label="Openvoice Heading" itemprop="name" class="openvoice">OpenVoice: Leading Innovation in Voice Cloning Technology</h3>
-<p>Explore OpenVoice's groundbreaking voice cloning tech, offering unmatched speed, accuracy, and control in synthetic speech generation. <a href="/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html" title="OpenVoice: Leading Innovation in Voice Cloning Technology"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<p><img src="https://kura.pro/stock/images/banners/fully-homomorphic-encryption.webp" alt="Banner for the Fully Homomorphic Encryption" <p class="fade-in w-25 p-3 float-start" title="banner for the fully homomorphic encryption"></p>
-<h3 id="h3-fully" tabindex="0" aria-label="Fully Heading" itemprop="name" class="fully">Fully Homomorphic Encryption (FHE) in a Banking Quantum Era</h3>
-<p>Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats. <a href="/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html" title="Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<p><img src="https://kura.pro/stock/images/banners/mm1-visual.webp" alt="Banner for the Apple MM1" <p class="fade-in w-25 p-3 float-start" title="banner for the apple mm1"></p>
-<h3 id="h3-advancing" tabindex="0" aria-label="Advancing Heading" itemprop="name" class="advancing">Advancing AI with Multimodal LLMs: Insights from MM1</h3>
-<p>Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials. <a href="/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html" title="Advancing AI with Multimodal LLMs: Insights from MM1"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<p><img src="https://kura.pro/stock/images/banners/research-paper.webp" alt="Banner for Real-time automatic speech recognition (ASR)" <p class="fade-in w-25 p-3 float-start" title="banner for real-time automatic speech recognition (asr)"></p>
-<h3 id="h3-accelerating" tabindex="0" aria-label="Accelerating Heading" itemprop="name" class="accelerating">Accelerating Real-Time Speech Recognition on macOS with OpenAI Whisper</h3>
-<p>Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy. <a href="/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html" title="Revolutionising Real-Time Speech Recognition on macOS with OpenAI Whisper and Metal Performance Shaders"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<p><img src="https://kura.pro/stock/images/banners/rustlogs.webp" alt="Banner for RustLogs (RLG)" <p class="fade-in w-25 p-3 float-start" title="banner for rustlogs (rlg)"></p>
-<h3 id="h3-unleashing" tabindex="0" aria-label="Unleashing Heading" itemprop="name" class="unleashing">Unleashing the Power of Logging in Rust with RustLogs (RLG)</h3>
-<p>Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. <a href="/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" title="Unleashing the Power of Logging in Rust with RustLogs (RLG)"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<p><img src="https://kura.pro/stock/images/banners/abstract-digital-art-of-a-cat.webp" alt="Image of Colourful, abstract digital art of a cat" <p class="fade-in w-25 p-3 float-start" title="image of colourful, abstract digital art of a cat"></p>
-<h3 id="h3-le" tabindex="0" aria-label="Le Heading" itemprop="name" class="le">Le Chat by Mistral AI: A New Era in Conversational AI</h3>
-<p>Meet Mistral AI's new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real-time. <a href="/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html" title="Le Chat by Mistral AI: A New Era in Conversational AI"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<p><img src="https://kura.pro/stock/images/banners/ai-ship.webp" alt="Futuristic blue spaceship with neon lights" <p class="fade-in w-25 p-3 float-start" title="futuristic blue spaceship with neon lights"></p>
-<h3 id="h3-google" tabindex="0" aria-label="Google Heading" itemprop="name" class="google">Google Gemma AI: Transforming Open-Source AI Development</h3>
-<p>Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use. <a href="/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html" title="Google Gemma AI: Transforming Open-Source AI Development"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<p><img src="https://kura.pro/stock/images/banners/abstract-visualization-of-gemini.webp" alt="Abstract visualisation of AI networks, representing Gemini 1.5's capabilities" <p class="fade-in w-25 p-3 float-start" title="abstract visualisation of ai networks, representing gemin"></p>
-<h3 id="h3-unlocking" tabindex="0" aria-label="Unlocking Heading" itemprop="name" class="unlocking">Unlocking Gemini 1.5: Google's AI Revolution Explained</h3>
-<p>Explore Gemini 1.5, Google's AI breakthrough, enhancing efficiency, quality, and context understanding in the AI landscape. <a href="/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html" title="Unlocking Gemini 1.5: Google's AI Revolution Explained"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<p><img src="https://kura.pro/stock/images/banners/ryoji-iwata-a-qsFZimp1M.webp" alt="A person sitting on black bench reading newspaper" <p class="fade-in w-25 p-3 float-start" title="a person sitting on black bench reading newspaper"></p>
-<h3 id="h3-eu" tabindex="0" aria-label="Eu Heading" itemprop="name" class="eu">EU’s AI Act: Pioneering Ethical AI Regulation Worldwide</h3>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (13 Feb 2024)</em></p>
-<p>Delve into the EU's Artificial Intelligence Act, a revolutionary framework setting global standards for ethical AI development and usage. <a href="/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html" title="EU's AI Act: Pioneering Ethical AI Regulation Worldwide"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<p><img src="https://kura.pro/stock/images/banners/akande-voice-assistant.webp" alt="A white, spherical modern device" <p class="fade-in w-25 p-3 float-start" title="a white, spherical modern device"></p>
-<h3 id="h3-àkàndé" tabindex="0" aria-label="Àkàndé Heading" itemprop="name" class="àkàndé">Àkàndé Voice Assistant, A Personal and Executive Assistance</h3>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (12 Feb 2024)</em></p>
-<p>Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance. <a href="/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html" title="Àkàndé Voice Assistant, A Personal and Executive Assistance"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<p><img src="https://kura.pro/stock/images/banners/advertising-ai.webp" alt="A robotic woman with butterflies and flowers" <p class="fade-in w-25 p-3 float-start" title="a robotic woman with butterflies and flowers"></p>
-<h3 id="h3-revolutionising" tabindex="0" aria-label="Revolutionising Heading" itemprop="name" class="revolutionising">Revolutionising Advertising: How AI Shapes the Future</h3>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (08 Feb 2024)</em></p>
-<p>Explore how AI transforms advertising with insights on Amazon's Rufus and Meta's latest developments. Discover the impact on consumer engagement. <a href="/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html" title="Revolutionising Advertising: How AI Shapes the Future"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<p><img src="https://kura.pro/stock/images/banners/modern-corporate-office-with-technological-displays.webp" alt="A minimalist, modern corporate office" <p class="fade-in w-25 p-3 float-start" title="a minimalist, modern corporate office"></p>
-<h3 id="h3-ai" tabindex="0" aria-label="Ai Heading" itemprop="name" class="ai">AI-Powered Speech Analysis, Translation, &amp; Insight Tool</h3>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (29 Jan 2024)</em></p>
-<p>Explore how Audio Analyser, transforms speech-to-text conversion, text analysis, and translations for actionable insights. <a href="/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html" title="AI-Powered Audio Insights, Analysis &amp; Translations"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-ai" tabindex="0" aria-label="Ai Heading" itemprop="name" class="ai">AI Prompt Engineering 2024: Insights &amp; Advanced Techniques</h3>
-<p><img src="https://kura.pro/stock/images/banners/ai-prompt-engineering-modern-office.webp" alt="Man analysing data on screens" <p class="fade-in w-25 p-3 float-start" title="man analysing data on screens"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (23 Jan 2024)</em></p>
-<p>Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors. <a href="/2024-01-23-advancements-in-ai-prompt-engineering/index.html#page-top" title="AI Prompt Engineering 2024: Insights &amp; Advanced Techniques"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-alien" tabindex="0" aria-label="Alien Heading" itemprop="name" class="alien">Alien Studio: My Tech-to Art Journey in Photography</h3>
-<p><img src="https://kura.pro/alienstudio/images/collections/radiance/radiance-08.webp" alt="A Sunset's muse, a serene glance; beauty in stillness" <p class="fade-in w-25 p-3 float-start" title="a sunset's muse, a serene glance; beauty in stillness"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (15 Jan 2024)</em></p>
-<p>Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio. <a href="/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html" title="Alien Studio: My Tech-to Art Journey in Photography"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-qiskit" tabindex="0" aria-label="Qiskit Heading" itemprop="name" class="qiskit">Qiskit &amp; Quantum Fourier Transform for Credit Ratio Analysis</h3>
-<p><img src="https://kura.pro/stock/images/banners/quantum-computer-room.webp" alt="A Quantum Computer Room" <p class="fade-in w-25 p-3 float-start" title="a quantum computer room"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (08 Jan 2024)</em></p>
-<p>Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed. <a href="/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html" title="Optimising Credit Ratio Analysis with IBM Qiskit and Quantum Fourier Transform"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-ai" tabindex="0" aria-label="Ai Heading" itemprop="name" class="ai">AI Trends 2024: Insights and Predictions for the Future</h3>
-<p><img src="https://kura.pro/stock/images/banners/drone-view-of-london.webp" alt="A Drone View of London" <p class="fade-in w-25 p-3 float-start" title="a drone view of london"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (01 Jan 2024)</em></p>
-<p>Explore the transformative AI trends of 2024, from generative AI to AI in retail, and how they'll shape our future. <a href="/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html" title="AI Trends 2024: Insights and Predictions for the Future"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-revolutionising" tabindex="0" aria-label="Revolutionising Heading" itemprop="name" class="revolutionising">Revolutionising Finance with AI-Enhanced Quantum Algorithms</h3>
-<p><img src="https://kura.pro/stock/images/banners/circuit_board_cityscape.webp" alt="A Circuit Board Cityscape" <p class="fade-in w-25 p-3 float-start" title="a circuit board cityscape"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (25 Dec 2023)</em></p>
-<p>Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications. <a href="/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html" title="Revolutionising Finance with AI-Enhanced Quantum Algorithms"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-state" tabindex="0" aria-label="State Heading" itemprop="name" class="state">State of AI and Quantum Computing in Banking: A 2023 Review</h3>
-<p><img src="https://kura.pro/stock/images/banners/getty-images-aTWKwJllPOA.webp" alt="A Circuit Board with an AI GPU" <p class="fade-in w-25 p-3 float-start" title="a circuit board with an ai gpu"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (18 Dec 2023)</em></p>
-<p>Exploring 2023's Technological Landscape: AI &amp; Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations &amp; Governance. <a href="/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" title="State of AI and Quantum Computing in Banking: A 2023 Review"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-quantum" tabindex="0" aria-label="Quantum Heading" itemprop="name" class="quantum">Quantum Key Distribution Revolutionising Security in Banking</h3>
-<p><img src="https://kura.pro/stock/images/banners/hsbc-from-the-docks.webp" alt="An HSBC Headquarter in London Canary Wharf Docks" <p class="fade-in w-25 p-3 float-start" title="an hsbc headquarter in london canary wharf docks"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (11 Dec 2023)</em></p>
-<p>As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security. <a href="/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" title="Quantum Key Distribution Revolutionising Security in Banking"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-efficient" tabindex="0" aria-label="Efficient Heading" itemprop="name" class="efficient">Efficient Date and Time Management with DateTime (DTT)</h3>
-<p><img src="https://kura.pro/dtt/images/github/github-dtt.webp" alt="A DTT Logo" <p class="fade-in w-25 p-3 float-start" title="a dtt logo"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (04 Dec 2023)</em></p>
-<p>DateTime (DTT) is a comprehensive Rust library for parsing, validating, manipulating, and formatting dates and times. It offers a high level of precision and a wide range of functionalities. <a href="/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html" title="Efficient Date and Time Management with DateTime (DTT)"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-kyberlib" tabindex="0" aria-label="Kyberlib Heading" itemprop="name" class="kyberlib">KyberLib: A Rust-Powered Shield Against Quantum Threats</h3>
-<p><img src="https://kura.pro/kyberlib/images/github/github-kyberlib.webp" alt="A KyberLib Logo" <p class="fade-in w-25 p-3 float-start" title="a kyberlib logo"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (28 Nov 2023)</em></p>
-<p>A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks. <a href="/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html" title="KyberLib: A Rust-Powered Shield Against Quantum Threats"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-crystals" tabindex="0" aria-label="Crystals Heading" itemprop="name" class="crystals">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</h3>
-<p><img src="https://kura.pro/stock/images/banners/galina-nelyubova-V70-ng4FuiA.webp" alt="A complex quantum computer architecture" <p class="fade-in w-25 p-3 float-start" title="a complex quantum computer architecture"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (19 Nov 2023)</em></p>
-<p>Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era. <a href="/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" title="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-exploring" tabindex="0" aria-label="Exploring Heading" itemprop="name" class="exploring">Exploring Generative AI: Shaping the Future of Technology</h3>
-<p><img src="https://kura.pro/stock/images/banners/fabio-oyXis2kALVg.webp" alt="Holographic cubes at a concert." <p class="fade-in w-25 p-3 float-start" title="holographic cubes at a concert."></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (12 Nov 2023)</em></p>
-<p>Embark on a Journey to Explore Generative AI: Investigating Its Impact, Ethical Implications, and Future Synergies. <a href="/2023-11-12-exploring-generative-ai/index.html" title="Exploring Generative AI: Shaping the Future of Technology"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-mathematical" tabindex="0" aria-label="Mathematical Heading" itemprop="name" class="mathematical">Mathematical and Cryptographic Constants for Rust Security</h3>
-<p><img src="https://kura.pro/stock/images/banners/antoine-dautry-05A-kdOH6Hw.webp" alt="A Mathematical and Cryptographic Constants" <p class="fade-in w-25 p-3 float-start" title="a mathematical and cryptographic constants"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (05 Nov 2023)</em></p>
-<p>Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security. <a href="/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html" title="Mathematical and Cryptographic Constants for Rust Security"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-streamlining" tabindex="0" aria-label="Streamlining Heading" itemprop="name" class="streamlining">Streamlining Rust Library Development with Code Generation</h3>
-<p><img src="https://kura.pro/stock/images/banners/tarik-haiga-3637943.webp" alt="A White Building" <p class="fade-in w-25 p-3 float-start" title="a white building"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (26 Oct 2023)</em></p>
-<p>Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort. <a href="/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html" title="Streamlining Rust Library Development with Code Generation"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-protecting" tabindex="0" aria-label="Protecting Heading" itemprop="name" class="protecting">Protecting Data in the Quantum Age: The Hash Library (HSH)</h3>
-<p><img src="https://kura.pro/stock/images/banners/galina-nelyubova-7ej8VWfwFsg.webp" alt="A creative illustration on Quantum computing theme" <p class="fade-in w-25 p-3 float-start" title="a creative illustration on quantum computing theme"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (16 Oct 2023)</em></p>
-<p>The Hash Library (HSH) is a quantum-resistant cryptographic hash library that offers a lightweight, efficient, and easy-to-use solution for keeping your data secure. <a href="/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html" title="Protecting Data in the Quantum Age: The Hash Library (HSH)"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-shokunin" tabindex="0" aria-label="Shokunin Heading" itemprop="name" class="shokunin">Shokunin, the fastest Rust-based Static Site Generator (SSG)</h3>
-<p><img src="https://kura.pro/stock/images/banners/anna-nekrashevich-8534387.webp" alt="A Turned off laptop computer on top of a white table" <p class="fade-in w-25 p-3 float-start" title="a turned off laptop computer on top of a white table"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (9 Oct 2023)</em></p>
-<p>Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control. <a href="/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" title="Shokunin, the fastest Rust-based Static Site Generator (SSG)"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-automating" tabindex="0" aria-label="Automating Heading" itemprop="name" class="automating">Automating ISO 20022 Payment Files Creation with Pain001</h3>
-<p><img src="https://kura.pro/stock/images/banners/andrea-de-santis-T3Qen8vVgRc.webp" alt="A very tall building that has a lot of holes in it" <p class="fade-in w-25 p-3 float-start" title="a very tall building that has a lot of holes in it"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (29 Sep 2023)</em></p>
-<p>Streamlining the creation and compliance of ISO20022 Payment Messages for cross-border payments and reporting. <a href="/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html" title="Automating ISO 20022 Payment Files Creation with Pain001"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-the" tabindex="0" aria-label="The Heading" itemprop="name" class="the">The making of the Express Transaction Credits Platform</h3>
-<p><img src="https://kura.pro/stock/images/banners/rawpixel-com-369782.webp" alt="Man typing on a laptop keyboard" <p class="fade-in w-25 p-3 float-start" title="man typing on a laptop keyboard"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (15 Feb 2018)</em></p>
-<p>Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard. <a href="/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html" title="The making of the Express Transaction Credits Platform"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-unveiling" tabindex="0" aria-label="Unveiling Heading" itemprop="name" class="unveiling">Unveiling a new Cryptocurrency and Faster Payment Solution</h3>
-<p><img src="https://kura.pro/stock/images/banners/laureen-missaire-DBbuhMbAIsQ.webp" alt="Canary Wharf clocks" <p class="fade-in w-25 p-3 float-start" title="canary wharf clocks"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (04 Feb 2018)</em></p>
-<p>A significant chapter in the ongoing evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, sustainable finance and the future of money. <a href="/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html" title="Unveiling a new Cryptocurrency and Faster Payment Solution"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-erc" tabindex="0" aria-label="Erc Heading" itemprop="name" class="erc">ERC-20: The Ethereum Token Interface That Changed the World</h3>
-<p><img src="https://kura.pro/stock/images/banners/m-ZzOa5G8hSPI.webp" alt="Computer screen with trades" <p class="fade-in w-25 p-3 float-start" title="computer screen with trades"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (24 Jan 2018)</em></p>
-<p>Ethereum Token Interface: Understanding ERC-20, which allows for the implementation of a standard API for tokens within smart contracts. <a href="/2018-01-24-the-erc-20-token-standard/index.html" title="ERC-20: The Ethereum Token Interface That Changed the World"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-understanding" tabindex="0" aria-label="Understanding Heading" itemprop="name" class="understanding">Understanding the Technology behind Blockchain</h3>
-<p><img src="https://kura.pro/stock/images/banners/adam-smigielski-K5mPtONmpHM.webp" alt="Computer and Mobile screens with trades" <p class="fade-in w-25 p-3 float-start" title="computer and mobile screens with trades"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (09 Jan 2018)</em></p>
-<p>Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation. <a href="/2018-01-09-understanding-the-technology-behind-blockchain/index.html" title="Understanding the Technology behind Blockchain"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-blockchain" tabindex="0" aria-label="Blockchain Heading" itemprop="name" class="blockchain">Blockchain explained, the technology that matters the most</h3>
-<p><img src="https://kura.pro/stock/images/banners/bogdan-karlenko-cNcX6PPjEm8.webp" alt="Horizontal view of a tall building" <p class="fade-in w-25 p-3 float-start" title="horizontal view of a tall building"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (02 Jan 2018)</em></p>
-<p>A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks. <a href="/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html" title="Blockchain explained, the technology that matters the most"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-<h3 id="h3-bitcoin" tabindex="0" aria-label="Bitcoin Heading" itemprop="name" class="bitcoin">Bitcoin: A Year In Review of the First Cryptocurrency</h3>
-<p><img src="https://kura.pro/stock/images/banners/traxer-AIKjbZdNOlw.webp" alt="Physical Bitcoins" <p class="fade-in w-25 p-3 float-start" title="physical bitcoins"></p>
-<p><em>by <a href="/about/index.html" title="About Sebastien Rousseau, Banking &amp; Financial Service Professional">Sebastien Rousseau</a> (01 Jan 2018)</em></p>
-<p>Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online. <a href="/2018-01-01-bitcoin-the-year-in-review/index.html" title="Bitcoin: A Year In Review of the First Cryptocurrency"><strong>Read full story ❯</strong></a></p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="divider" title="Divider" <p class="m-10 w-100"></p>
-
-      </div>
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap"><section class="newsroom">
+<header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
+<article class="newsroom-featured">
+<a class="newsroom-featured-media" href="/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" title="Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines">
+<img alt="Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles" src="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+</a>
+<div class="newsroom-featured-body">
+<span class="newsroom-eyebrow">AI · Quantum · Philosophy</span>
+<h3><a href="/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" title="Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines">Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-11">May 11, 2026</time> · Sebastien Rousseau</p>
+<p>Twelve years after its release, Luc Besson's Lucy reads less like pseudo-science and more like a thought experiment about what happens when human knowledge migrates from biological to non-biological substrates.</p>
+<p><a class="pill ghost" href="/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" title="Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines">Read the full story</a></p>
+</div>
+</article>
+<header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
+<div class="newsroom-grid">
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-04-11-quantum-thresholds-are-moving-again/index.html" title="Quantum Thresholds Are Moving Again">
+<img alt="Quantum computing circuit board with blue light patterns" src="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum</span>
+<h3><a href="/2026-04-11-quantum-thresholds-are-moving-again/index.html" title="Quantum Thresholds Are Moving Again">Quantum Thresholds Are Moving Again</a></h3>
+<p class="newsroom-meta"><time datetime="2026-04-11">April 11, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">A new paper suggests Shor's algorithm could run on as few as 10,000 qubits. The threshold for cryptographically relevant quantum computing is dropping fast.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html" title="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto">
+<img alt="Image generated using MidJourney. A network of digital nodes in red and blue hues" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum</span>
+<h3><a href="/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html" title="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto">Bug Discovered in Quantum Algorithm for Lattice-Based Crypto</a></h3>
+<p class="newsroom-meta"><time datetime="2024-04-22">April 22, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html" title="Quantum Algorithm Challenges Lattice-Based Cryptography">
+<img alt="Banner Image of Network nodes in a digital blue space" src="https://cloudcdn.pro/stocks/images/digital-constellation.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum</span>
+<h3><a href="/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html" title="Quantum Algorithm Challenges Lattice-Based Cryptography">Quantum Algorithm Challenges Lattice-Based Cryptography</a></h3>
+<p class="newsroom-meta"><time datetime="2024-04-15">April 15, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">New quantum algorithm solves key crypto problem, urges research into quantum-safe security.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html" title="OpenVoice: Leading Innovation in Voice Cloning Technology">
+<img alt="Banner of vibrant gradient overlay on repeated profiles" src="https://cloudcdn.pro/stocks/images/open-voice.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI</span>
+<h3><a href="/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html" title="OpenVoice: Leading Innovation in Voice Cloning Technology">OpenVoice: Leading Innovation in Voice Cloning Technology</a></h3>
+<p class="newsroom-meta"><time datetime="2024-04-01">April 1, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore OpenVoice's groundbreaking voice cloning tech, offering unmatched speed, accuracy, and control in synthetic speech generation.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html" title="Fully Homomorphic Encryption (FHE) in a Banking Quantum Era">
+<img alt="Banner for Fully Homomorphic Encryption" src="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum</span>
+<h3><a href="/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html" title="Fully Homomorphic Encryption (FHE) in a Banking Quantum Era">Fully Homomorphic Encryption (FHE) in a Banking Quantum Era</a></h3>
+<p class="newsroom-meta"><time datetime="2024-03-25">March 25, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html" title="Advancing AI with Multimodal LLMs: Insights from MM1">
+<img alt="Banner for the Apple MM1 multimodal LLM research" src="https://cloudcdn.pro/stocks/images/mm1-visual.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI</span>
+<h3><a href="/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html" title="Advancing AI with Multimodal LLMs: Insights from MM1">Advancing AI with Multimodal LLMs: Insights from MM1</a></h3>
+<p class="newsroom-meta"><time datetime="2024-03-18">March 18, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore Apple's MM1 paper on Multimodal Large Language Models. Learn about their architecture, pre-training strategies, and AI potentials.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html" title="Accelerating Real-Time Speech Recognition on macOS with OpenAI Whisper">
+<img alt="Banner for Real-time automatic speech recognition research" src="https://cloudcdn.pro/stocks/images/research-paper.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI · macOS</span>
+<h3><a href="/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html" title="Accelerating Real-Time Speech Recognition on macOS with OpenAI Whisper">Accelerating Real-Time Speech Recognition on macOS with OpenAI Whisper</a></h3>
+<p class="newsroom-meta"><time datetime="2024-03-12">March 12, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" title="Unleashing the Power of Logging in Rust with RustLogs (RLG)">
+<img alt="Banner for RustLogs (RLG) library" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Open source · Rust</span>
+<h3><a href="/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" title="Unleashing the Power of Logging in Rust with RustLogs (RLG)">Unleashing the Power of Logging in Rust with RustLogs (RLG)</a></h3>
+<p class="newsroom-meta"><time datetime="2024-03-08">March 8, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html" title="Le Chat by Mistral AI: A New Era in Conversational AI">
+<img alt="Colourful, abstract digital art of a cat" src="https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI</span>
+<h3><a href="/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html" title="Le Chat by Mistral AI: A New Era in Conversational AI">Le Chat by Mistral AI: A New Era in Conversational AI</a></h3>
+<p class="newsroom-meta"><time datetime="2024-03-04">March 4, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Meet Mistral AI's new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real time.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html" title="Google Gemma AI: Transforming Open-Source AI Development">
+<img alt="Futuristic blue spaceship with neon lights" src="https://cloudcdn.pro/stocks/images/ai-ship.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI</span>
+<h3><a href="/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html" title="Google Gemma AI: Transforming Open-Source AI Development">Google Gemma AI: Transforming Open-Source AI Development</a></h3>
+<p class="newsroom-meta"><time datetime="2024-02-26">February 26, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html" title="Unlocking Gemini 1.5: Google's AI Revolution Explained">
+<img alt="Abstract visualisation of AI networks, representing Gemini 1.5" src="https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI</span>
+<h3><a href="/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html" title="Unlocking Gemini 1.5: Google's AI Revolution Explained">Unlocking Gemini 1.5: Google's AI Revolution Explained</a></h3>
+<p class="newsroom-meta"><time datetime="2024-02-19">February 19, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore Gemini 1.5, Google's AI breakthrough, enhancing efficiency, quality, and context understanding in the AI landscape.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html" title="EU's AI Act: Pioneering Ethical AI Regulation Worldwide">
+<img alt="A person sitting on a black bench reading a newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Policy</span>
+<h3><a href="/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html" title="EU's AI Act: Pioneering Ethical AI Regulation Worldwide">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a></h3>
+<p class="newsroom-meta"><time datetime="2024-02-13">February 13, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Delve into the EU's Artificial Intelligence Act, a revolutionary framework setting global standards for ethical AI development and usage.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html" title="Àkàndé Voice Assistant, A Personal and Executive Assistance">
+<img alt="A white, spherical modern AI device" src="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI</span>
+<h3><a href="/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html" title="Àkàndé Voice Assistant, A Personal and Executive Assistance">Àkàndé Voice Assistant, A Personal and Executive Assistance</a></h3>
+<p class="newsroom-meta"><time datetime="2024-02-12">February 12, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html" title="Revolutionising Advertising: How AI Shapes the Future">
+<img alt="A robotic woman with butterflies and flowers" src="https://cloudcdn.pro/stocks/images/advertising-ai.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI · Advertising</span>
+<h3><a href="/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html" title="Revolutionising Advertising: How AI Shapes the Future">Revolutionising Advertising: How AI Shapes the Future</a></h3>
+<p class="newsroom-meta"><time datetime="2024-02-08">February 8, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore how AI transforms advertising with insights on Amazon's Rufus and Meta's latest developments. Discover the impact on consumer engagement.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html" title="AI-Powered Speech Analysis, Translation & Insight Tool">
+<img alt="A minimalist, modern corporate office with technological displays" src="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI</span>
+<h3><a href="/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html" title="AI-Powered Speech Analysis, Translation & Insight Tool">AI-Powered Speech Analysis, Translation & Insight Tool</a></h3>
+<p class="newsroom-meta"><time datetime="2024-01-29">January 29, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore how Audio Analyser transforms speech-to-text conversion, text analysis, and translations for actionable insights.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-01-23-advancements-in-ai-prompt-engineering/index.html" title="AI Prompt Engineering 2024: Insights & Advanced Techniques">
+<img alt="Man analysing data on screens in a modern office" src="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI</span>
+<h3><a href="/2024-01-23-advancements-in-ai-prompt-engineering/index.html" title="AI Prompt Engineering 2024: Insights & Advanced Techniques">AI Prompt Engineering 2024: Insights & Advanced Techniques</a></h3>
+<p class="newsroom-meta"><time datetime="2024-01-23">January 23, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html" title="Alien Studio: My Tech-to-Art Journey in Photography">
+<img alt="A sunset's muse. Beauty in stillness from Alien Studio's Radiance collection" src="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Art</span>
+<h3><a href="/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html" title="Alien Studio: My Tech-to-Art Journey in Photography">Alien Studio: My Tech-to-Art Journey in Photography</a></h3>
+<p class="newsroom-meta"><time datetime="2024-01-15">January 15, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html" title="Qiskit & Quantum Fourier Transform for Credit Ratio Analysis">
+<img alt="A Quantum Computer Room" src="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum · Finance</span>
+<h3><a href="/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html" title="Qiskit & Quantum Fourier Transform for Credit Ratio Analysis">Qiskit & Quantum Fourier Transform for Credit Ratio Analysis</a></h3>
+<p class="newsroom-meta"><time datetime="2024-01-08">January 8, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html" title="AI Trends 2024: Insights and Predictions for the Future">
+<img alt="A Drone View of London" src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI</span>
+<h3><a href="/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html" title="AI Trends 2024: Insights and Predictions for the Future">AI Trends 2024: Insights and Predictions for the Future</a></h3>
+<p class="newsroom-meta"><time datetime="2024-01-01">January 1, 2024</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore the transformative AI trends of 2024, from generative AI to AI in retail, and how they'll shape our future.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html" title="Revolutionising Finance with AI-Enhanced Quantum Algorithms">
+<img alt="A circuit board cityscape" src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum · Finance</span>
+<h3><a href="/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html" title="Revolutionising Finance with AI-Enhanced Quantum Algorithms">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a></h3>
+<p class="newsroom-meta"><time datetime="2023-12-25">December 25, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" title="State of AI and Quantum Computing in Banking: A 2023 Review">
+<img alt="A circuit board with an AI GPU" src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI · Quantum</span>
+<h3><a href="/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" title="State of AI and Quantum Computing in Banking: A 2023 Review">State of AI and Quantum Computing in Banking: A 2023 Review</a></h3>
+<p class="newsroom-meta"><time datetime="2023-12-18">December 18, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Exploring 2023's technological landscape: AI and quantum computing revolutionising banking, rising open-source models, and evolving regulations.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" title="Quantum Key Distribution Revolutionising Security in Banking">
+<img alt="HSBC Headquarter in London Canary Wharf Docks" src="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum · Banking</span>
+<h3><a href="/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" title="Quantum Key Distribution Revolutionising Security in Banking">Quantum Key Distribution Revolutionising Security in Banking</a></h3>
+<p class="newsroom-meta"><time datetime="2023-12-11">December 11, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer for security.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html" title="Efficient Date and Time Management with DateTime (DTT)">
+<img alt="The DTT (DateTime) Rust library logo" src="https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Open source · Rust</span>
+<h3><a href="/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html" title="Efficient Date and Time Management with DateTime (DTT)">Efficient Date and Time Management with DateTime (DTT)</a></h3>
+<p class="newsroom-meta"><time datetime="2023-12-04">December 4, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">DateTime (DTT) is a comprehensive Rust library for parsing, validating, manipulating, and formatting dates and times. With high precision and broad functionality.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html" title="KyberLib: A Rust-Powered Shield Against Quantum Threats">
+<img alt="The KyberLib Rust library logo" src="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum · Rust</span>
+<h3><a href="/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html" title="KyberLib: A Rust-Powered Shield Against Quantum Threats">KyberLib: A Rust-Powered Shield Against Quantum Threats</a></h3>
+<p class="newsroom-meta"><time datetime="2023-11-28">November 28, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">A robust and quantum-safe cryptography implementation of the CRYSTALS-Kyber algorithm, to protect data from quantum threats and cryptanalytic attacks.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" title="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age">
+<img alt="A complex quantum computer architecture" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum</span>
+<h3><a href="/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" title="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a></h3>
+<p class="newsroom-meta"><time datetime="2023-11-19">November 19, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-11-12-exploring-generative-ai/index.html" title="Exploring Generative AI: Shaping the Future of Technology">
+<img alt="Holographic cubes at a concert" src="https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI</span>
+<h3><a href="/2023-11-12-exploring-generative-ai/index.html" title="Exploring Generative AI: Shaping the Future of Technology">Exploring Generative AI: Shaping the Future of Technology</a></h3>
+<p class="newsroom-meta"><time datetime="2023-11-12">November 12, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Embark on a journey to explore Generative AI: investigating its impact, ethical implications, and future synergies.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html" title="Mathematical and Cryptographic Constants for Rust Security">
+<img alt="Mathematical and cryptographic constants" src="https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Open source · Rust</span>
+<h3><a href="/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html" title="Mathematical and Cryptographic Constants for Rust Security">Mathematical and Cryptographic Constants for Rust Security</a></h3>
+<p class="newsroom-meta"><time datetime="2023-11-05">November 5, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced security.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html" title="Streamlining Rust Library Development with Code Generation">
+<img alt="A white modern building" src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Open source · Rust</span>
+<h3><a href="/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html" title="Streamlining Rust Library Development with Code Generation">Streamlining Rust Library Development with Code Generation</a></h3>
+<p class="newsroom-meta"><time datetime="2023-10-26">October 26, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Boost Rust library development with LibMake. A code generator tool that enforces best practices and generates initial code, saving developers time and effort.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html" title="Protecting Data in the Quantum Age: The Hash Library (HSH)">
+<img alt="A creative illustration on the quantum computing theme" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Quantum · Rust</span>
+<h3><a href="/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html" title="Protecting Data in the Quantum Age: The Hash Library (HSH)">Protecting Data in the Quantum Age: The Hash Library (HSH)</a></h3>
+<p class="newsroom-meta"><time datetime="2023-10-16">October 16, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">The Hash Library (HSH) is a quantum-resistant cryptographic hash library that offers a lightweight, efficient, and easy-to-use solution for keeping data secure.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" title="Static Site Generator: the fastest Rust-based SSG">
+<img alt="Turned-off laptop computer on top of a white table" src="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Open source · Rust</span>
+<h3><a href="/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" title="Static Site Generator: the fastest Rust-based SSG">Static Site Generator: the fastest Rust-based SSG</a></h3>
+<p class="newsroom-meta"><time datetime="2023-10-09">October 9, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html" title="Automating ISO 20022 Payment Files Creation with pain001">
+<img alt="A very tall building with intricate hollow façade detailing" src="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Payments</span>
+<h3><a href="/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html" title="Automating ISO 20022 Payment Files Creation with pain001">Automating ISO 20022 Payment Files Creation with pain001</a></h3>
+<p class="newsroom-meta"><time datetime="2023-09-29">September 29, 2023</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Streamlining the creation and compliance of ISO 20022 payment messages for cross-border payments and reporting.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html" title="The Making of the Express Transaction Credits Platform">
+<img alt="Man typing on a laptop keyboard" src="https://cloudcdn.pro/stocks/images/rawpixel-com-369782.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Blockchain</span>
+<h3><a href="/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html" title="The Making of the Express Transaction Credits Platform">The Making of the Express Transaction Credits Platform</a></h3>
+<p class="newsroom-meta"><time datetime="2018-02-15">February 15, 2018</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html" title="Unveiling a New Cryptocurrency and Faster Payment Solution">
+<img alt="Canary Wharf clocks" src="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Blockchain · Payments</span>
+<h3><a href="/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html" title="Unveiling a New Cryptocurrency and Faster Payment Solution">Unveiling a New Cryptocurrency and Faster Payment Solution</a></h3>
+<p class="newsroom-meta"><time datetime="2018-02-04">February 4, 2018</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">A significant chapter in the ongoing evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and the future of money.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2018-01-24-the-erc-20-token-standard/index.html" title="ERC-20: The Ethereum Token Interface That Changed the World">
+<img alt="Computer screen with trades" src="https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Blockchain</span>
+<h3><a href="/2018-01-24-the-erc-20-token-standard/index.html" title="ERC-20: The Ethereum Token Interface That Changed the World">ERC-20: The Ethereum Token Interface That Changed the World</a></h3>
+<p class="newsroom-meta"><time datetime="2018-01-24">January 24, 2018</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Ethereum Token Interface. Understanding ERC-20, which allows for the implementation of a standard API for tokens within smart contracts.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2018-01-09-understanding-the-technology-behind-blockchain/index.html" title="Understanding the Technology behind Blockchain">
+<img alt="Computer and mobile screens with trades" src="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Blockchain</span>
+<h3><a href="/2018-01-09-understanding-the-technology-behind-blockchain/index.html" title="Understanding the Technology behind Blockchain">Understanding the Technology behind Blockchain</a></h3>
+<p class="newsroom-meta"><time datetime="2018-01-09">January 9, 2018</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Building a cryptocurrency on the Ethereum Blockchain: a comprehensive guide to blockchain development, tokenisation and cryptocurrency implementation.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html" title="Blockchain Explained. The Technology That Matters the Most">
+<img alt="Horizontal view of a tall building" src="https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Blockchain</span>
+<h3><a href="/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html" title="Blockchain Explained. The Technology That Matters the Most">Blockchain Explained. The Technology That Matters the Most</a></h3>
+<p class="newsroom-meta"><time datetime="2018-01-02">January 2, 2018</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">A story of the extraordinary journey of securing digital transactions through private-key cryptography and peer-to-peer (P2P) networks.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2018-01-01-bitcoin-the-year-in-review/index.html" title="Bitcoin: A Year in Review of the First Cryptocurrency">
+<img alt="Physical bitcoins on a flat surface" src="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Blockchain</span>
+<h3><a href="/2018-01-01-bitcoin-the-year-in-review/index.html" title="Bitcoin: A Year in Review of the First Cryptocurrency">Bitcoin: A Year in Review of the First Cryptocurrency</a></h3>
+<p class="newsroom-meta"><time datetime="2018-01-01">January 1, 2018</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Bitcoin. A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online.</p>
+</div>
+</article>
+</div>
+</section>
+</div>
     </main>
 
-    <!-- Top Anchor -->
-    <top id="top-anchor">
-      <p class="mb-0 text-center p-4">
-        <a href="#page-top" class="btn btn-outline-dark btn-floating btn-lg">
-          Back to the top
-        </a>
-      </p>
-    </top>
-    <!-- # End Top Anchor -->
-
-    <!-- Footer-->
-    <footer id="footer" aria-label="footer" class="footer bg-light mt-auto fs-6 py-5 border-top">
-      <p class="mb-0">
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://twitter.com/wwdseb"><img src="https://kura.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter" title="Image for Sebastien Rousseau on Twitter" width="32" height="32" /></a>
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.linkedin.com/in/sebastienrousseau/"><img src="https://kura.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" title="Image for Sebastien Rousseau on LinkedIn" width="32" height="32" /></a>
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://medium.com/@BankingOnQuantum"><img src="https://kura.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" title="Image for Sebastien Rousseau on Medium" width="32" height="32" /></a>
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.youtube.com/@BankingOnQuantum"><img src="https://kura.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" title="Image for Sebastien Rousseau on YouTube" width="32" height="32" /></a>
-      </p>
-      <p class="mb-0">
-        <span class="px-2"><a href="/accessibility/index.html">Accessibility</a></span>
-        <span class="px-2"><a href="/contact/index.html">Contact</a></span>
-        <span class="px-2"><a href="/privacy/index.html">Privacy & Cookie Policy</a></span>
-        <span class="px-2"><a href="/terms/index.html">Terms of Use</a></span>
-      </p>
-      <span class="px-2">© Copyright 2024 - Sebastien Rousseau. All rights reserved.</span>
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/about/index.html">About</a></li>
+              <li><a href="/contact/index.html">Contact</a></li>
+              <li><a href="/made-with-static-site-generator/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Writing</h2>
+            <ul>
+              <li><a href="/articles/index.html">Articles</a></li>
+              <li><a href="/papers/index.html">Papers</a></li>
+              <li><a href="/tags/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Work</h2>
+            <ul>
+              <li><a href="/projects/index.html">Projects</a></li>
+              <li><a href="/playlists/index.html">Playlists</a></li>
+              <li><a href="/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Reach</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="legal">
+          <span>© Copyright 2024 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Social links">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
+          </div>
+          <p>
+            <a href="/accessibility/index.html">Accessibility</a> ·
+            <a href="/privacy/index.html">Privacy</a> ·
+            <a href="/terms/index.html">Terms</a>
+          </p>
+        </div>
+      </div>
     </footer>
-    <!-- # End Footer -->
-    <script
-      async
-      crossorigin="anonymous"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      defer
-    ></script>
-    <script type="application/ld+json">{"@context":"http://schema.org/","@type":"BlogPosting","headline":"Discover How Technology Is Changing Banking and Finance","datePublished":"Mon, 15 Apr 2024 06:06:06 +0000","dateModified":"Mon, 15 Apr 2024 06:06:06 +0000","description":"Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry","image":{"@type":"ImageObject","height":"2048","width":"2048","url":"https://kura.pro/stock/images/banners/sebastien-rousseau.png"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/articles/index.html","name":"Open Source Software (OSS) Developer, Banking & Financial Service Professional"},"author":"contact@sebastienrousseau.com (Sebastien Rousseau)","copyrightHolder":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"},"copyrightYear":"© Copyright 2024 - Sebastien Rousseau. All rights reserved.","creator":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"},"inLanguage":"en-GB","name":"Sebastien Rousseau","publisher":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"}}</script>
-    <script type="module" defer>
-      // This is an Immediately Invoked Function Expression (IIFE) which helps
-      // to avoid declaring any globals.
-      (function () {
-        // Create a new script element
-        var script = document.createElement("script");
 
-        // Set the source of the script element to "/main.js".
-        // A timestamp is appended as a query string to ensure the browser
-        // always fetches the latest version of the script, bypassing the
-        // cache.
-        script.src = "/main.js";
-
-        // The script is of type "text/javascript"
-
-        // The script is set to execute asynchronously as soon as it's
-        //available
-
-        // Append the script element to the head of the document
-        document.head.appendChild(script);
-      })(); // The function is immediately invoked
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://sebastienrousseau.com/#person",
+      "name": "Sebastien Rousseau",
+      "givenName": "Sebastien",
+      "familyName": "Rousseau",
+      "url": "https://sebastienrousseau.com/",
+      "image": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+      "jobTitle": "Senior Product Manager",
+      "description": "AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "HSBC Commercial & Investment Bank",
+        "url": "https://www.hsbc.com/"
+      },
+      "alumniOf": [
+        {"@type": "Organization", "name": "PayPal"},
+        {"@type": "Organization", "name": "Barclays"},
+        {"@type": "Organization", "name": "Shazam Entertainment"},
+        {"@type": "Organization", "name": "AKQA"},
+        {"@type": "Organization", "name": "Virgin Group"}
+      ],
+      "knowsAbout": [
+        "Applied artificial intelligence in banking",
+        "Generative AI for financial services",
+        "Wholesale payments",
+        "ISO 20022 migration",
+        "SWIFT gpi",
+        "SEPA Instant Payments",
+        "Cross-border payments",
+        "Post-quantum cryptography",
+        "CRYSTALS-Kyber",
+        "CRYSTALS-Dilithium",
+        "Quantum-safe payment authentication"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressCountry": "United Kingdom"
+      },
+      "sameAs": [
+        "https://twitter.com/wwdseb",
+        "https://www.linkedin.com/in/sebastienrousseau/",
+        "https://medium.com/@BankingOnQuantum",
+        "https://www.youtube.com/@BankingOnQuantum",
+        "https://github.com/sebastienrousseau"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sebastienrousseau.com/#website",
+      "url": "https://sebastienrousseau.com/",
+      "name": "Sebastien Rousseau",
+      "description": "AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.",
+      "publisher": {"@id": "https://sebastienrousseau.com/#person"},
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://sebastienrousseau.com/#profile",
+      "mainEntity": {"@id": "https://sebastienrousseau.com/#person"},
+      "name": "Sebastien Rousseau: AI, Banking & Financial Services Expert",
+      "url": "https://sebastienrousseau.com/",
+      "inLanguage": "en-GB"
+    }
+  ]
+}
     </script>
-    <script>
-      // JavaScript code
-      var dropDownElements = document.querySelectorAll('.drop-down');
-      dropDownElements.forEach(function(element) {
-        element.classList.add('animate');
-      });
 
-      window.addEventListener('scroll', function() {
-        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        dropDownElements.forEach(function(element) {
-          if (scrollTop === 0) {
-            element.classList.add('animate');
-          } else {
-            element.classList.remove('animate');
-          }
-        });
-      });
+        <script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":"Discover How Technology Is Changing Banking and Finance","description":"Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry","url":"https://sebastienrousseau.com/articles","inLanguage":"en","about":"Banking, payments, AI and post-quantum cryptography","author":{"@id":"https://sebastienrousseau.com/#person"},"isPartOf":{"@id":"https://sebastienrousseau.com/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Discover How Technology Is Changing Banking and Finance","item":"https://sebastienrousseau.com/articles"}]}]}
     </script>
-    <!-- Google tag (gtag.js) -->
+<script src="/main.4eebb974.js" integrity="sha256-Tuu5dA22pMJ0xc9iPI7QHLL0eTWtY+8WuLnAp4hsecs=" crossorigin="anonymous" defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-169G4ET5HQ');
-    </script>
-  </body>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+<link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"">
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Search">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Search</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Search">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Search documentation..." autocomplete="off" aria-label="Search"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> close</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigate</span><span><kbd>Enter</kbd> open</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
 </html>

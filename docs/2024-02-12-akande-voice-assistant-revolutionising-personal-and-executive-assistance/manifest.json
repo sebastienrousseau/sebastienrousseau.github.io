@@ -1,1 +1,19 @@
-{"background_color":"#ffffff","description":"Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.","display":"standalone","icons":[{"purpose":"any maskable","sizes":"512x512","src":"https://kura.pro/akonde/images/logos/akonde.svg","icon_type":"image/svg+xml"}],"name":"Sebastien Rousseau","orientation":"portrait-primary","scope":"/","short_name":"sebastienrousseau","start_url":".","theme_color":"rgb(0, 96, 113)"}
+{
+  "background_color": "#ffffff",
+  "description": "Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PDF summaries, and efficient caching to redef",
+  "display": "standalone",
+  "icons": [
+    {
+      "purpose": "any maskable",
+      "sizes": "512x512",
+      "src": "https://cloudcdn.pro/clients/akande/v1/logos/akande.svg",
+      "type": "image/svg+xml"
+    }
+  ],
+  "name": "Sebastien Rousseau",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": "sebastienrou",
+  "start_url": ".",
+  "theme_color": "#ffffff"
+}

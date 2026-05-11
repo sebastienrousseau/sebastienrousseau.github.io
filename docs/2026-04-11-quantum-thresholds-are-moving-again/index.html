@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 11 Apr 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 11 Apr 2026 06:06:06 +0000" id="last-modified" />
+    <title>Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</title>
+
+    <meta name="description" content="Shor's algorithm may now run on as few as 10,000 qubits. RSA, ECC and the timeline for post-quantum migration are all moving up. Here's why.">
+<meta name="keywords" content="quantum computing, Shor's algorithm, 10000 qubits, post-quantum cryptography, RSA-2048, elliptic curve cryptography, neutral atom qubits, quantum error correction, cryptographic agility, quantum threat timeline, Sebastien Rousseau">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Quantum Thresholds Are Moving Again">
+
+    <meta http-equiv="Permissions-Policy" content="browsing-topics=(), interest-cohort=(), join-ad-interest-group=(), run-ad-auction=(), attribution-reporting=()" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else. -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        script-src 'sha256-bIukMBxDo818Rq9QmyNAYAmfqJ5vbxOEc0PJCmza8vo=' 'sha256-spCghFDSKjnpTiRGuuNBz6zTiZsU7ePj+HMQrW2N6WE=' 'sha256-xoQWMLqT7ROsuR4jJEW4x7dABFCKi5GFubiSLsBJKHQ=' 'self' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    <link rel="alternate" href=" https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again" hreflang="en" />
+    <link rel="preload" as="image" href="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" />
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <!-- Skeletonic is self-hosted to eliminate the render-blocking
+         cross-origin stylesheet request. Build pipeline copies
+         _layouts/_skeletonic.min.css to public/skeletonic.min.css. -->
+    <link rel="stylesheet" href="/skeletonic.min.css" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/be15b169f6904d49.css" crossorigin="anonymous" integrity="sha256-mnMpp44a6haC2rzwBPpwFZo7f21IdanffsP33VQHPgU=" crossorigin="anonymous"">
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="http://127.0.0.1:8000/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk">
+<meta property="og:description" content="Quantum Thresholds Are Moving Again A new paper suggests Shor's algorithm could run on as few as 10,000 qubits. The threshold for cryptographically relevant">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp">
+<meta property="og:image" content="
+https://cloudcdn.pro/stocks/images/sebastien-rousseau.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk">
+<meta name="twitter:description" content="Quantum Thresholds Are Moving Again A new paper suggests Shor's algorithm could run on as few as 10,000 qubits. The threshold for cryptographically relevant">
+<meta name="twitter:image" content="
+https://cloudcdn.pro/stocks/images/sebastien-rousseau.png">
+<link rel="canonical" href="http://127.0.0.1:8000/2026-04-11-quantum-thresholds-are-moving-again/index.html">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+</head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Skip to main content</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Toggle navigation" />
+      <div class="wrap">
+        <a class="ap-brand" href="/index.html" aria-label="Sebastien Rousseau home">
+          <span itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Primary">
+          <ul class="ap-menu">
+            <li><a href="/about/index.html">About</a></li>
+            <li><a href="/articles/index.html">Articles</a></li>
+            <li><a href="/papers/index.html">Papers</a></li>
+            <li><a href="/projects/index.html">Projects</a></li>
+            <li><a href="/playlists/index.html">Playlists</a></li>
+            <li><a href="/tags/index.html">Tags</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Search" title="Search (K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+          <a class="ap-cta-mini" href="/contact/index.html" aria-label="Get in touch">Get in touch ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Toggle navigation">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</h1>
+      <p class="sub">A new paper suggests Shor's algorithm could run on as few as 10,000 qubits. The implications for cryptography are hard to ignore.</p>
+    </section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><h1>Quantum Thresholds Are Moving Again</h1>
+<p>A new paper suggests Shor's algorithm could run on as few as 10,000 qubits. The threshold for cryptographically relevant quantum computing is dropping faster than most had assumed.</p>
+<blockquote>
+<p><strong>Key Takeaways</strong></p>
+<ul>
+<li>A new paper proposes Shor's algorithm could execute on as few as <strong>10,000 physical qubits</strong>. Roughly one hundred times fewer than previous consensus estimates.</li>
+<li>The reduction is driven by three converging advances: high-rate quantum error-correcting codes, reconfigurable neutral atom arrays, and increased parallelism.</li>
+<li>The threat is not uniform. <strong>Elliptic Curve Cryptography (ECC)</strong> is more vulnerable at lower qubit counts; RSA-2048 requires significantly longer runtimes at comparable scales.</li>
+<li>This is a <strong>theoretical projection</strong>, not a working demonstration. A substantial engineering gap remains between current hardware and fault-tolerant operation at this scale.</li>
+<li>Post-quantum cryptographic standards are already finalised. The priority now is <strong>accelerating migration</strong>. Not waiting for a quantum system to appear.</li>
+</ul>
+</blockquote>
+<h2>A Familiar Assumption, Now Under Pressure</h2>
+<p>Over the past decade, discussions around quantum computing and cryptography have followed a familiar arc. Quantum machines were acknowledged as theoretically powerful, yet considered impractical at scale. Breaking modern cryptographic systems would require millions of physical qubits, and the timeline remained comfortably distant. That assumption is now under serious pressure.</p>
+<p>A recent paper, <a href="https://arxiv.org/pdf/2603.28627" title="Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits (PDF)">Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits ⧉</a>, proposes something more consequential than a single breakthrough. It suggests that the threshold for cryptographically relevant quantum computation may be an order of magnitude lower than previously believed. Not millions of qubits, but tens of thousands. The distinction matters, and the direction it implies is difficult to ignore.</p>
+<h2>The Convergence Driving the Shift: Error Correction, Architecture, and Parallelism</h2>
+<p>The result does not emerge from a single discovery. It reflects a convergence of improvements across several layers of the quantum computing stack that, taken together, shift the boundary of what appears feasible.</p>
+<p>The first improvement concerns error correction. Traditional approaches required large overheads, often hundreds of physical qubits to represent a single logical qubit. The paper instead relies on high-rate quantum error-correcting codes, which significantly reduce that overhead. (<a href="https://www.emergentmind.com/papers/2603.28627" title="Shor's Algorithm with 10000 Atomic Qubits">Emergent Mind ⧉</a>) The second concerns architecture. The system is built on reconfigurable arrays of neutral atoms, which can be rearranged during computation to allow for more flexible connectivity and more efficient execution. (<a href="https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/" title="Oratomic Launches to Build Utility-scale Quantum Computers">The Quantum Insider ⧉</a>) The third is parallelism: increasing the number of qubits allows more operations to run simultaneously, reducing overall execution time.</p>
+<p>None of these ideas are new in isolation. Combined, however, they reframe what was previously treated as a hard limit.</p>
+<h2>From Millions to Tens of Thousands: What the Numbers Actually Mean</h2>
+<p>For years, the consensus estimate for running Shor's algorithm at cryptographic scales required millions of physical qubits. The new analysis suggests that, under certain assumptions, this number could fall to approximately 10,000. (<a href="https://arxiv.org/abs/2603.28627" title="Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits">arXiv ⧉</a>) That figure, however, is not the complete picture.</p>
+<p>At the lower end of that range, runtimes remain long. Factoring RSA-2048 at minimal qubit counts could still take years of continuous operation. Faster execution requires more qubits, potentially in the tens of thousands. The relationship between qubit count and runtime is not linear, and the paper is careful to present this as a spectrum rather than a fixed threshold. What changes is the direction: the barrier is no longer purely theoretical. It is now a question of engineering.</p>
+<h3>Old Assumptions vs. New Realities</h3>
+<div class="table-responsive"><table class="table">
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Old Assumption</th>
+<th>New Reality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-left">Physical qubits required (Shor's algorithm)</td>
+<td class="text-left">~1,000,000+</td>
+<td class="text-left">~10,000–26,000</td>
+</tr>
+<tr>
+<td class="text-left">Time to break RSA-2048 (at minimum qubits)</td>
+<td class="text-left">Not feasible this decade</td>
+<td class="text-left">Years (at 10K qubits); faster with more</td>
+</tr>
+<tr>
+<td class="text-left">Time to break ECC-256</td>
+<td class="text-left">Not feasible this decade</td>
+<td class="text-left">Days (estimated at ~26K qubits)</td>
+</tr>
+<tr>
+<td class="text-left">Dominant hardware paradigm</td>
+<td class="text-left">Superconducting qubits</td>
+<td class="text-left">Reconfigurable neutral atom arrays</td>
+</tr>
+<tr>
+<td class="text-left">Error correction overhead</td>
+<td class="text-left">Hundreds of physical qubits per logical qubit</td>
+<td class="text-left">Significantly reduced via high-rate codes</td>
+</tr>
+<tr>
+<td class="text-left">Nature of the barrier</td>
+<td class="text-left">Theoretical</td>
+<td class="text-left">Engineering</td>
+</tr>
+<tr>
+<td class="text-left">Migration urgency</td>
+<td class="text-left">Long-term planning</td>
+<td class="text-left">Active deployment required now</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Source: Analysis based on <a href="https://arxiv.org/abs/2603.28627">arXiv:2603.28627 ⧉</a> and prior literature.</em></p>
+<h2>Time, Scale, and the Uneven Vulnerability of Cryptographic Systems</h2>
+<p>One of the more significant contributions of the paper is the nuance it introduces around time. Quantum advantage does not arrive all at once. It exists along a spectrum determined by the scale of the system and the nature of the cryptographic target.</p>
+<p>With approximately 26,000 qubits, the authors estimate that breaking elliptic curve cryptography could take days under favourable conditions. (<a href="https://arxiv.org/abs/2603.28627" title="Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits">arXiv ⧉</a>) For RSA-2048, the timelines are considerably longer. This asymmetry is important. It suggests that different cryptographic systems may become vulnerable at different points in time, rather than simultaneously, and that the transition to post-quantum standards is unlikely to be a single event with a single deadline.</p>
+<p>This pattern is consistent with broader reporting. Analyses from recent months suggest that quantum systems capable of challenging widely used encryption could emerge before the end of the decade. (<a href="https://www.nature.com/articles/d41586-026-01054-1" title="Quantum-computing breakthroughs pose risks to encryption">Nature ⧉</a>) Governments and standards bodies are already planning transitions to post-quantum cryptography, with implementation timelines extending into the 2030s. (<a href="https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/" title="Oratomic Launches to Build Utility-scale Quantum Computers">The Quantum Insider ⧉</a>) The discussion has moved from whether to when.</p>
+<h2>The Engineering Gap That Remains</h2>
+<p>It is important to be precise about what this paper represents. It is a projection, not a demonstration. The proposed systems depend on assumptions about error rates, hardware stability, and scaling behaviour that have not yet been validated at the required scale. Current experiments operate at the level of hundreds to low thousands of qubits, not tens of thousands operating fault-tolerantly over extended periods. (<a href="https://phys.org/news/2026-04-quantum-built-qubits-team.html" title="Useful quantum computers could be built with as few as 10,000 qubits">Phys.org ⧉</a>)</p>
+<p>A substantial engineering gap remains. The path from a compelling theoretical model to a functioning system capable of sustained, fault-tolerant operation at this scale involves challenges that are not yet fully understood, let alone solved. What has changed is not the proximity of a working machine, but the credibility of the target. The gap is narrowing, and the direction of progress is consistent.</p>
+<h2>Why the Compressing Timeline Demands Attention Now</h2>
+<p>The significance of this work is not that cryptography will be broken in the near term. It is that the timeline is compressing in ways that affect decisions being made today. Security systems are designed with long lifecycles in mind. Data encrypted now may need to remain confidential for decades. Infrastructure decisions made this year will be difficult to reverse within a five-year window. If quantum capabilities arrive sooner than expected, those assumptions become fragile.</p>
+<p>This is why post-quantum cryptography is already being deployed across critical sectors. Not because the threat is immediate, but because the transition takes time and the cost of being late is asymmetric. There is a recurring pattern in the history of computing: progress appears slow until it is suddenly not. What begins as a theoretical improvement becomes a practical constraint, and what was once dismissed as distant becomes something that must be planned for. Quantum computing may be following exactly that trajectory, not through a single dramatic breakthrough, but through steady reductions in cost, complexity, and scale.</p>
+<h2>What This Means by Industry: A Practical Guide</h2>
+<p>The implications of this research are not uniform across sectors. The appropriate response depends on the type of cryptographic assets at risk, the sensitivity and longevity of the data involved, and the pace at which regulatory expectations are moving.</p>
+<h3>Financial Services and FinTech</h3>
+<p>Financial institutions face a compounded risk: they hold long-lived sensitive data, operate on infrastructure with slow replacement cycles, and are subject to increasing regulatory scrutiny around cryptographic resilience. ECC is widely used in TLS connections, mobile authentication, and digital signatures across payment rails. The cryptographic category the paper identifies as most vulnerable at lower qubit counts. Institutions that have not yet begun a cryptographic inventory or initiated a post-quantum migration roadmap should treat this paper as a prompt to accelerate, not a reason to panic. CRYSTALS-Kyber and CRYSTALS-Dilithium, both now standardised by NIST, are the appropriate migration targets for key encapsulation and digital signatures respectively.</p>
+<h3>Government and Defence</h3>
+<p>State-level actors have the strongest motivation. And in many cases the resources. To accelerate quantum hardware development beyond what is publicly known. Governments holding sensitive communications, intelligence data, or critical infrastructure keys must assume that adversaries are already harvesting encrypted data for future decryption, a strategy commonly known as &quot;harvest now, decrypt later.&quot; For public sector organisations, compliance with national quantum-readiness mandates is increasingly unavoidable, and the window for proactive migration is narrowing.</p>
+<h3>Healthcare and Critical Infrastructure</h3>
+<p>Healthcare records, utility control systems, and industrial networks share a common vulnerability: data and systems with very long operational lifespans, protected by cryptographic standards that were designed for a pre-quantum threat model. A medical record encrypted today may need to remain private for fifty years. A control system certified this year may remain in service for two decades. For these sectors, the compressing timeline is not an abstract concern. It is a direct challenge to the foundational assumptions behind current security architectures.</p>
+<h2>Conclusion</h2>
+<p>The most important aspect of this paper is not the specific qubit count it presents. It is the direction that count implies. The question is no longer whether quantum computers can challenge modern cryptography. It is how quickly the required systems can be built, and whether the organisations that depend on current standards are moving fast enough in response.</p>
+<p>For now, the answers remain uncertain. But the margin for deferring the question is narrowing, and the cost of waiting grows with each credible reduction in the theoretical threshold. The cryptographic community, security planners, and the industries that rely on them would do well to treat this paper not as cause for alarm, but as a serious prompt to accelerate transitions that are already underway.</p>
+<h2>Frequently Asked Questions</h2>
+<p><strong>Can 10,000 qubits really break RSA encryption?</strong></p>
+<p>Theoretically, yes. But with important caveats. While previous estimates suggested millions of physical qubits were required, new research into high-rate error correction codes and reconfigurable neutral atom arrays suggests the threshold is significantly lower. However, at 10,000 qubits, the estimated runtime for factoring RSA-2048 remains extremely long. Potentially years of continuous operation. Faster attacks require more qubits, likely in the range of tens of thousands. The paper represents a projection based on modelled assumptions, not a demonstration on a working system.</p>
+<p><strong>Which encryption is most at risk from quantum computing?</strong></p>
+<p>Elliptic Curve Cryptography (ECC) is generally more vulnerable to lower qubit counts than RSA-2048. The paper estimates that breaking ECC could take days using approximately 26,000 reconfigurable qubits under favourable conditions. RSA-2048 requires a significantly longer runtime at comparable qubit counts. This asymmetry means ECC-dependent systems. Common in TLS, mobile authentication, and blockchain. May face risk on a shorter timeline than RSA-based infrastructure.</p>
+<p><strong>What is a reconfigurable neutral atom qubit?</strong></p>
+<p>Neutral atom qubits are individual atoms. Typically rubidium or caesium. Trapped and manipulated using laser light in a vacuum chamber. &quot;Reconfigurable&quot; means the arrangement of atoms can be changed dynamically during computation, allowing more efficient execution of complex quantum circuits. This flexibility reduces the number of physical qubits needed to implement fault-tolerant logical operations, and is a key reason the new paper achieves lower qubit estimates than earlier work based on superconducting qubit architectures.</p>
+<p><strong>What is post-quantum cryptography and why is it being deployed now?</strong></p>
+<p>Post-quantum cryptography (PQC) refers to cryptographic algorithms believed to be secure against both classical and quantum computers. NIST finalised its first set of PQC standards in 2024, including CRYSTALS-Kyber for key encapsulation and CRYSTALS-Dilithium for digital signatures. Deployment is beginning now. Well before quantum computers pose an immediate threat. Because cryptographic transitions are slow. Replacing embedded standards across global infrastructure typically takes a decade or more, and data encrypted today may need to remain confidential long after quantum capabilities mature.</p>
+<p><strong>How many qubits does the most powerful quantum computer have today?</strong></p>
+<p>As of early 2026, leading quantum systems operate in the range of hundreds to low thousands of physical qubits. Crucially, most are not yet fault-tolerant. They operate below the error-correction thresholds required for sustained, reliable logical computation. The gap between today's hardware and the tens of thousands of high-fidelity, fault-tolerant logical qubits described in the new paper remains significant, though the pace of progress across superconducting, neutral atom, and trapped-ion platforms is accelerating.</p>
+<h2>References</h2>
+<ul>
+<li>Sebastien Rousseau, (2025). <a href="https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa/index.html" title="Quantum-Safe Payments: Why the Payments Industry Must Act Now">Quantum-Safe Payments: Why the Payments Industry Must Act Now</a>.</li>
+<li>Sebastien Rousseau, (2023). <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" title="Quantum Key Distribution: Revolutionising Security in Banking">Quantum Key Distribution: Revolutionising Security in Banking</a>.</li>
+<li>Sebastien Rousseau, (2023). <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" title="
+CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>.</li>
+<li>Anonymous, (2026). <a href="https://arxiv.org/abs/2603.28627" title="Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits">Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits ⧉</a>. arXiv preprint arXiv:2603.28627.</li>
+<li>Castelvecchi, D. (2026). <a href="https://www.nature.com/articles/d41586-026-01054-1" title="Quantum-computing breakthroughs pose risks to encryption">Quantum-computing breakthroughs pose risks to encryption ⧉</a>. Nature.</li>
+<li>Phys.org, (2026). <a href="https://phys.org/news/2026-04-quantum-built-qubits-team.html" title="Useful quantum computers could be built with as few as 10,000 qubits">Useful quantum computers could be built with as few as 10,000 qubits ⧉</a>. Phys.org.</li>
+</ul>
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="
+https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" class="related-media" aria-label="Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines" tabindex="-1"><img alt="Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines" src="
+https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="
+https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines</a></h3><p><time datetime="2026-05-11">2026-05-11</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->
+</div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/about/index.html">About</a></li>
+              <li><a href="/contact/index.html">Contact</a></li>
+              <li><a href="/made-with-static-site-generator/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Writing</h2>
+            <ul>
+              <li><a href="/articles/index.html">Articles</a></li>
+              <li><a href="/papers/index.html">Papers</a></li>
+              <li><a href="/tags/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Work</h2>
+            <ul>
+              <li><a href="/projects/index.html">Projects</a></li>
+              <li><a href="/playlists/index.html">Playlists</a></li>
+              <li><a href="/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Reach</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Social links">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
+          </div>
+          <p>
+            <a href="/accessibility/index.html">Accessibility</a> ·
+            <a href="/privacy/index.html">Privacy</a> ·
+            <a href="/terms/index.html">Terms</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://sebastienrousseau.com/#person",
+      "name": "Sebastien Rousseau",
+      "givenName": "Sebastien",
+      "familyName": "Rousseau",
+      "url": "https://sebastienrousseau.com/",
+      "image": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+      "jobTitle": "Senior Product Manager",
+      "description": "AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "HSBC Commercial & Investment Bank",
+        "url": "https://www.hsbc.com/"
+      },
+      "alumniOf": [
+        {"@type": "Organization", "name": "PayPal"},
+        {"@type": "Organization", "name": "Barclays"},
+        {"@type": "Organization", "name": "Shazam Entertainment"},
+        {"@type": "Organization", "name": "AKQA"},
+        {"@type": "Organization", "name": "Virgin Group"}
+      ],
+      "knowsAbout": [
+        "Applied artificial intelligence in banking",
+        "Generative AI for financial services",
+        "Wholesale payments",
+        "ISO 20022 migration",
+        "SWIFT gpi",
+        "SEPA Instant Payments",
+        "Cross-border payments",
+        "Post-quantum cryptography",
+        "CRYSTALS-Kyber",
+        "CRYSTALS-Dilithium",
+        "Quantum-safe payment authentication"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressCountry": "United Kingdom"
+      },
+      "sameAs": [
+        "https://twitter.com/wwdseb",
+        "https://www.linkedin.com/in/sebastienrousseau/",
+        "https://medium.com/@BankingOnQuantum",
+        "https://www.youtube.com/@BankingOnQuantum",
+        "https://github.com/sebastienrousseau"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sebastienrousseau.com/#website",
+      "url": "https://sebastienrousseau.com/",
+      "name": "Sebastien Rousseau",
+      "description": "AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.",
+      "publisher": {"@id": "https://sebastienrousseau.com/#person"},
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://sebastienrousseau.com/#profile",
+      "mainEntity": {"@id": "https://sebastienrousseau.com/#person"},
+      "name": "Sebastien Rousseau: AI, Banking & Financial Services Expert",
+      "url": "https://sebastienrousseau.com/",
+      "inLanguage": "en-GB"
+    }
+  ]
+}
+    </script>
+
+        <script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","headline":"Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk","description":"Shor's algorithm may now run on as few as 10,000 qubits. RSA, ECC and the timeline for post-quantum migration are all moving up. Here's why.","image":{"@type":"ImageObject","url":" https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","width":"162","height":"162"},"url":" https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again","datePublished":"2026-04-11T06:06:06+00:00","dateModified":"2026-04-11T06:06:06+00:00","inLanguage":"en","keywords":"quantum computing, Shor's algorithm, 10000 qubits, post-quantum cryptography, RSA-2048, elliptic curve cryptography, neutral atom qubits, quantum error correction, cryptographic agility, quantum threat timeline, Sebastien Rousseau","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":" https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk","item":" https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again"}]}]}
+    </script>
+<script src="/main.4eebb974.js" integrity="sha256-Tuu5dA22pMJ0xc9iPI7QHLL0eTWtY+8WuLnAp4hsecs=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+<link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"">
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Search">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Search</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Search">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Search documentation..." autocomplete="off" aria-label="Search"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> close</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigate</span><span><kbd>Enter</kbd> open</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

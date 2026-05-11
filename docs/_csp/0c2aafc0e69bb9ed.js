@@ -1,0 +1,1 @@
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag(`js`,/* @__PURE__ */ new Date),gtag(`config`,`G-169G4ET5HQ`);

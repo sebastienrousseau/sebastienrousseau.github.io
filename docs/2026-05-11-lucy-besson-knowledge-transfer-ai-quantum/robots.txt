@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html/sitemap.xml

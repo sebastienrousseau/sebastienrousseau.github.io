@@ -1,1 +1,19 @@
-{"background_color":"#ffffff","description":"Meet Mistral AI's new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real-time.","display":"standalone","icons":[{"purpose":"any maskable","sizes":"512x512","src":"https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.svg","icon_type":"image/svg+xml"}],"name":"Sebastien Rousseau","orientation":"portrait-primary","scope":"/","short_name":"sebastienrousseau","start_url":".","theme_color":"rgb(255,112,0)"}
+{
+  "background_color": "#ffffff",
+  "description": "Meet Mistral AI's new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all ",
+  "display": "standalone",
+  "icons": [
+    {
+      "purpose": "any maskable",
+      "sizes": "512x512",
+      "src": "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg",
+      "type": "image/svg+xml"
+    }
+  ],
+  "name": "Sebastien Rousseau",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": "sebastienrou",
+  "start_url": ".",
+  "theme_color": "#ffffff"
+}

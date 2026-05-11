@@ -2,335 +2,292 @@
 <html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
-    <meta itemprop="datePublished" content="Mon, 19 Feb 2024 14:15:15 +0000" id="date">
-    <meta itemprop="dateModified" content="Mon, 19 Feb 2024 14:15:15 +0000" id="last-modified">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 19 Feb 2024 14:15:15 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 19 Feb 2024 14:15:15 +0000" id="last-modified" />
     <title>Unlocking Gemini 1.5: Google's AI Revolution Explained</title>
 
-    <!-- # Start Primary Meta Tags -->
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
-<meta name="description" content="Explore Gemini 1.5, Google's AI breakthrough, enhancing efficiency, quality, and context understanding in the AI landscape">
-<meta name="generator" content="Shokunin SSG (version 0.0.26)">
+<meta name="description" content="Gemini 1.5 from Google scales context windows past 1M tokens. What that unlocks for retrieval-augmented finance and the trade-offs worth knowing.">
 <meta name="keywords" content="Gemini 1.5, Google AI, Mixture-of-Experts architecture, computational efficiency, context window expansion, AI innovation, data analysis transformation, in-context learning, AI use cases, technology revolution">
-<meta name="language" content="en-GB">
-<meta name="permalink" content="https://sebastienrousseau.com/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html">
-<meta name="rating" content="general">
-<meta name="referrer" content="no-referrer">
-<meta name="robots" content="index, follow">
-<meta name="title" content="Unlocking Gemini 1.5: Google's AI Revolution Explained">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- # End Primary Meta Tags -->
-
-    <!-- # Start Open Graph / Facebook Meta Tags -->
-    <meta name="og:description" content="Explore Gemini 1.5, Google's AI breakthrough, enhancing efficiency, quality, and context understanding in the AI landscape">
-<meta name="og:image" content="https://kura.pro/stock/images/banners/ai-gemini1.5.webp">
-<meta name="og:image:alt" content="A digital representation of Gemini 1.5's advanced AI capabilities">
-<meta name="og:image:height" content="161">
-<meta name="og:image:width" content="161">
-<meta name="og:locale" content="en_GB">
-<meta name="og:title" content="Unlocking Gemini 1.5: Google's AI Revolution Explained">
-<meta name="og:type" content="website">
-<meta name="og:url" content="https://sebastienrousseau.com/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html">
-    <!-- # End Open Graph / Facebook Meta Tags -->
-
-    <!-- # Start Accessibility Meta Tags -->
-    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
-    <!-- # End Accessibility Meta Tags -->
-
-    <!-- # Start Apple Meta Tags -->
-    <meta name="apple_mobile_web_app_orientations" content="portrait">
-<meta name="apple_touch_icon_sizes" content="192x192">
-    <!-- # End Apple Meta Tags -->
-
-<!-- # Start Content Security Policy Meta Tags -->
-<meta http-equiv="Content-Security-Policy"
-content="default-src 'self';
-  script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com https://cdn.jsdelivr.net unpkg.com www.googletagmanager.com x.clarity.ms https://www.googletagmanager.com;
-  connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com;
-  img-src 'self' data: https: kura.pro www.googletagmanager.com;
-  style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
-  font-src 'self' https://fonts.gstatic.com;
-  media-src 'self' https://kura.pro;" />
-<!-- # End Content Security Policy Meta Tags -->
-
-
-
-    <!-- # Start Microsoft Meta Tags -->
     
-    <!-- # End Microsoft Meta Tags -->
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
 
-    <!-- # Start Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary">
-<meta name="twitter:creator" content="@wwdseb">
-<meta name="twitter:description" content="Explore the transformative potential of Google's Gemini 1.5, enhancing efficiency, expanding context, and revolutionising data analysis.">
-<meta name="twitter:image" content="https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png">
-<meta name="twitter:image:alt" content="Logo of Sebastien Rousseau">
-<meta name="twitter:site" content="@wwdseb">
-<meta name="twitter:title" content="Unlocking Gemini 1.5: Google's AI Revolution Explained">
-<meta name="twitter:url" content="https://sebastienrousseau.com/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html">
-    <!-- # End Twitter Meta Tags -->
+    <meta http-equiv="Permissions-Policy" content="browsing-topics=(), interest-cohort=(), join-ad-interest-group=(), run-ad-auction=(), attribution-reporting=()" />
 
-    <!-- # Start Links -->
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else. -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        script-src 'sha256-DCZS/7tpsn6MDdrM6qv+zQQ6IvdLHuKG36Ag697t6/c=' 'sha256-cZVAIeLfhWsoEn16AwGBh5htGxlhqyz1Y0DImpQx/jE=' 'sha256-xoQWMLqT7ROsuR4jJEW4x7dABFCKi5GFubiSLsBJKHQ=' 'self' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
     <link rel="alternate" href="https://sebastienrousseau.com/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html" hreflang="en" />
-    <link rel="preload" as="image" href="https://kura.pro/stock/images/banners/abstract-visualization-of-gemini.webp">
-    <link rel="canonical" href="https://sebastienrousseau.com/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://kura.pro/sebastienrousseau/images/favicon.ico"
-      sizes="16x16 32x32"
-    />
-    <link
-      as="style"
-      crossorigin="anonymous"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      onload="this.onload=null;this.rel='stylesheet'"
-      rel="preload"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="https://kura.pro/sebastienrousseau/images/icons/192x192.png"
-      sizes="192x192"
-    />
+    <link rel="preload" as="image" href="https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp" />
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <!-- Skeletonic is self-hosted to eliminate the render-blocking
+         cross-origin stylesheet request. Build pipeline copies
+         _layouts/_skeletonic.min.css to public/skeletonic.min.css. -->
+    <link rel="stylesheet" href="/skeletonic.min.css" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
-    <!-- # End Links -->
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
 
-    <!-- # Start Styles -->
-    <style>.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.bounce{animation:g 1s infinite}.drop-down{animation:a 1.618s ease}.drop-down,.fade-in{animation-fill-mode:forwards}.fade-in{animation:b 3s ease}.flip{animation:i 1s infinite}.jello{animation:k 1s infinite}.pulse{animation:f 1s infinite}.roll{animation:c 5s linear infinite}.roll-clockwise{animation:d 5s linear infinite}.roll-reverse{animation:h 5s linear infinite}.roll-reverse-clockwise{animation:e 5s linear infinite}.rotate{animation:d 5s linear infinite}.shake{animation:j 1s infinite}.slide-in{animation:h 1s ease}.zoom-in,.zoom-in-out{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-in-out:hover,.zoom-in:hover{transform:scale(1.0618)}.zoom-out{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-out:hover{transform:scale(.618)}*{box-sizing:border-box;font-weight:400;margin:0;padding:0}html{font-family:SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:clamp(var(--base-font-size),1vw,20px);line-height:var(--base-line-height);scroll-behavior:smooth;text-rendering:optimizeLegibility}.article-info{color:var(--theme-color)}.blur-light{backdrop-filter:saturate(180%) blur(20px);background-color:hsla(0,0%,100%,.618)}.card,pre{margin-bottom:calc(var(--base-font-size)*var(--golden-ratio)/2);overflow:hidden}blockquote{background:rgba(15, 23, 36,.062);border-left:10px solid var(--theme-color);margin:1.618em 10px;padding:.618em 10px;quotes:"\201C""\201D""\2018""\2019"}blockquote:after,blockquote:before{color:var(--theme-color);font-size:4em;line-height:.1em;vertical-align:-.4em}blockquote:before{content:open-quote;margin-right:.1618em}blockquote:after{content:close-quote;margin-left:.1618em}blockquote p{color:var(--theme-color)!important;display:inline;font-size:1.2em;font-style:italic;line-height:1.5em;margin:0 0 .5em}.company,.container .rollers .wrapper .items-container .item .company,.content{filter:grayscale(100%);opacity:.2}.company:hover,.container .rollers .wrapper .items-container .item .company:hover{cursor:pointer;filter:grayscale(0);opacity:1}.company{float:left;padding:1.618rem;width:33%!important}.content{padding:calc(var(--base-font-size)*1.236)}.container .rollers,.content .container{box-shadow:2px 15px 20px #1f1f1f10,-2px -8px 20px #1f1f1f1a;padding:calc(var(--base-font-size)*1.854) calc(var(--base-font-size)*1.236)}.container .rollers .wrapper{flex:0 0 auto;height:100px;margin:0 0 calc(var(--base-font-size)*1.236) 0;position:relative;width:1400px}.container .rollers .wrapper .items-container{align-items:center;animation-duration:30s;animation-iteration-count:infinite;animation-timing-function:linear;display:flex;height:100%;position:absolute;width:100%}:root{--base-font-size:17px;--base-line-height:1.47059;--box-shadow:0 2px 4px rgb(15, 23, 36);--golden-ratio:1.618;--theme-color:rgb(15, 23, 36);--transition-duration:0.3s;--z-index-menu:1}h1,h2,h3,h4,h5,h6{color:var(--theme-color);font-weight:400;line-height:var(--golden-ratio);margin-bottom:calc(var(--base-font-size)*var(--golden-ratio)/2)}a{color:var(--theme-color);text-decoration:none}strong{font-weight:600}a:hover{text-decoration:underline}@keyframes a{0%{transform:translateY(calc(var(--base-font-size)*-.618))}to{transform:translateY(0)}}@keyframes b{0%{opacity:0}to{opacity:1}}@keyframes c{0%{transform:translateX(0)}to{transform:translateX(-100%)}}@keyframes d{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes e{0%{transform:rotate(1turn)}to{transform:rotate(0deg)}}@keyframes f{0%{transform:scale(1)}50%{transform:scale(1.1)}to{transform:scale(1)}}@keyframes g{0%,20%,50%,80%,to{transform:translateY(0)}40%{transform:translateY(-30px)}60%{transform:translateY(-15px)}}@keyframes h{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes i{0%{transform:perspective(400px) rotateY(0)}to{transform:perspective(400px) rotateY(1turn)}}@keyframes j{0%,to{transform:translateX(0)}10%,30%,50%,70%,90%{transform:translateX(-10px)}20%,40%,60%,80%{transform:translateX(10px)}}@keyframes k{0%,to{transform:scaleX(1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}}@media only screen and (max-width:800px){.container .rollers .wrapper .items-container .item .company{opacity:.4}.content,.content .container{padding:calc(var(--base-font-size)*1.236)}.company{width:50%!important}.fs-5{font-size:calc(var(--base-font-size)*.9)!important}h3{font-size:calc(var(--base-font-size)*1.618)}}</style>
-    <!-- # End Styles -->
-  </head>
-  <body
-    id="page-top"
-    itemscope
-    itemtype="http://schema.org/WebPage"
-    class="fw-light text-center bg-white text-start fs-6"
-  >
-    <!-- # Start Responsive navbar -->
-    <nav
-      class="navbar navbar-expand-lg bd-navbar sticky-top shadow-small border-bottom blur-light"
-      id="mainNav"
-      itemscope
-      itemtype="http://schema.org/SiteNavigationElement"
-    >
-      <div class="container-xxl p-3">
-        <a class="navbar-brand p-0 me-0 me-lg-2 zoom-in" href="/index.html" aria-label="logo">
-          <img
-            class="d-inline-block align-top"
-            width="44"
-            height="44"
-            src="https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
-            alt="Logo for Sebastien Rousseau"
-            title="Image of the Logo for Sebastien Rousseau"
-            loading="lazy"
-          />
+    <link rel="stylesheet" href="/_csp/be15b169f6904d49.css" crossorigin="anonymous" integrity="sha256-mnMpp44a6haC2rzwBPpwFZo7f21IdanffsP33VQHPgU=" crossorigin="anonymous"">
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="http://127.0.0.1:8000/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Unlocking Gemini 1.5: Google's AI Revolution Explained">
+<meta property="og:description" content="Google's Gemini 1.5 ⧉ marks a significant advancement in AI, improving efficiency and the ability to process large amounts of information. This language">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp">
+<meta property="og:image" content="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Unlocking Gemini 1.5: Google's AI Revolution Explained">
+<meta name="twitter:description" content="Google's Gemini 1.5 ⧉ marks a significant advancement in AI, improving efficiency and the ability to process large amounts of information. This language">
+<meta name="twitter:image" content="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg">
+<link rel="canonical" href="http://127.0.0.1:8000/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+</head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Skip to main content</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Toggle navigation" />
+      <div class="wrap">
+        <a class="ap-brand" href="/index.html" aria-label="Sebastien Rousseau home">
+          <span itemprop="name">Sebastien Rousseau</span>
         </a>
-        <span class="fs-4" itemprop="name"><a href="/" itemprop="url" title="Sebastien Rousseau - Explore Gemini 1.5, Google's AI breakthrough, enhancing efficiency, quality, and context understanding in the AI landscape" class="text-decoration-none text-dark">Sebastien Rousseau</a></span>
-        <button
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          class="navbar-toggler"
-          data-bs-target="#navbarSupportedContent"
-          data-bs-toggle="collapse"
-          type="button"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                aria-current="page"
-                href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="/about/index.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  href="/articles/index.html">Articles</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                href="/papers/index.html">Papers</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="/projects/index.html">Projects</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                id="navbarDropdown"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Links</a
-              >
-              <ul
-                class="dropdown-menu dropdown-menu-end"
-                aria-labelledby="navbarDropdown"
-              >
-                <li>
-                  <a class="dropdown-item" href="/playlists/index.html">
-                    Spotify Playlists
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/made-with-shokunin/index.html">
-                    Made with Shokunin
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/tags/index.html">
-                    Tags
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a
-                aria-pressed="false"
-                class="btn btn-dark rounded-pill px-3"
-                href="/contact/index.html"
-                >Get in touch
-              </a>
-            </li>
+        <nav aria-label="Primary">
+          <ul class="ap-menu">
+            <li><a href="/about/index.html">About</a></li>
+            <li><a href="/articles/index.html">Articles</a></li>
+            <li><a href="/papers/index.html">Papers</a></li>
+            <li><a href="/projects/index.html">Projects</a></li>
+            <li><a href="/playlists/index.html">Playlists</a></li>
+            <li><a href="/tags/index.html">Tags</a></li>
           </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Search" title="Search (K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+          <a class="ap-cta-mini" href="/contact/index.html" aria-label="Get in touch">Get in touch ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Toggle navigation">☰</label>
         </div>
       </div>
-    </nav>
-    <!-- # End Responsive navbar -->
+    </header>
 
-    <!-- Header-->
-<header class="bg-dark text-white text-center text-shadow position-relative mb-5 mb-md-0">
-  <img class="fade-in img-fluid" src="https://kura.pro/stock/images/banners/abstract-visualization-of-gemini.webp" alt="Abstract visualisation of AI networks, representing Gemini 1.5's capabilities" title="Image of Abstract visualisation of AI networks, representing Gemini 1.5's capabilities" />
-  <section class="p-3 p-md-5 container position-absolute top-50 start-50 translate-middle rounded" style="background: rgba(15, 23, 36, 0.618); z-index: 1;">
-    <div class="row justify-content-center">
-      <div class="col-10 col-md-8 col-lg-6">
-        <p class="fs-1">Unlocking Gemini 1.5: Google's AI Revolution Explained</p>
-        <p class="fs-5">A Deep Dive into Google's Latest AI Breakthrough</p>
-      </div>
-    </div>
-  </section>
-</header>
-<!-- # End Header -->
+        <section class="ap-hero">
+      <h1>Unlocking Gemini 1.5: Google's AI Revolution Explained</h1>
+      <p class="sub">A Deep Dive into Google's Latest AI Breakthrough</p>
+    </section>
 
-
-
-    <!-- Main content-->
-    <main id="main" class="bd-masthead container fs-5 p-5" aria-label="main">
-      <div class="text-start justify-content-between">
-        <h1 id="h1-unlocking" tabindex="0" aria-label="Unlocking Heading" itemprop="headline" class="unlocking">Unlocking Gemini 1.5: Google's AI Revolution Explained</h1><p>Explore Gemini 1.5, Google's AI breakthrough, enhancing efficiency, quality, and context understanding in the AI landscape</p><p></p><p><a href="https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/" title="Google's Gemini 1.5: The Next Generation of AI Models"><strong>Google's Gemini 1.5 ⧉</strong></a> marks a significant advancement in AI, improving efficiency and the ability to process large amounts of information. This language model outperforms its predecessor, Gemini 1.0, and brings a new era of computational power and AI model usage. Let's explore the transformative potential of Gemini 1.5 and its implications for the future of AI innovation.</p>
-<h2 id="h2-the" tabindex="0" aria-label="The Heading" itemprop="name" class="the">The Evolution of Gemini: From 1.0 to 1.5</h2>
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><p><a href="https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/" title="Google's Gemini 1.5: The Next Generation of AI Models"><strong>Google's Gemini 1.5 ⧉</strong></a> marks a significant advancement in AI, improving efficiency and the ability to process large amounts of information. This language model outperforms its predecessor, Gemini 1.0, and brings a new era of computational power and AI model usage. Let's explore the transformative potential of Gemini 1.5 and its implications for the future of AI innovation.</p>
+<h2>The Evolution of Gemini: From 1.0 to 1.5</h2>
 <p>Gemini 1.5 is built on a new version of the Mixture of Experts (MoE) architecture, enhancing its ability to selectively activate the most relevant pathways in its neural network. This advancement significantly increases efficiency and performance, allowing Gemini 1.5 to process up to one million tokens. This feature allows the model to process large datasets, including videos, audios, and complex codebases, surpassing Gemini 1.0.</p>
-<h3 id="h3-breakthrough" tabindex="0" aria-label="Breakthrough Heading" itemprop="name" class="breakthrough">Breakthrough in Efficiency and Quality</h3>
+<h3>Breakthrough in Efficiency and Quality</h3>
 <p>Gemini 1.5 achieves comparable quality to the previous Ultra version while significantly reducing the computational resources required. This efficiency democratises access to advanced AI capabilities, allowing for broader application and experimentation across industries.</p>
-<h3 id="h3-expanding" tabindex="0" aria-label="Expanding Heading" itemprop="name" class="expanding">Expanding the Context Window</h3>
+<h3>Expanding the Context Window</h3>
 <p>One of the most groundbreaking features of Gemini 1.5 is its expanded context window, capable of processing inputs of up to 10 million tokens. This capability is a game-changer for applications requiring the synthesis of large volumes of information, enabling a deeper and more nuanced understanding of data.</p>
-<h3 id="h3-benchmarking" tabindex="0" aria-label="Benchmarking Heading" itemprop="name" class="benchmarking">Benchmarking Success</h3>
+<h3>Benchmarking Success</h3>
 <p>Gemini 1.5's performance on various benchmarks, outshining Gemini 1.0 in 87% of test scenarios, underscores its superiority. The AI set a record for processing and retrieving information from large datasets in the &quot;Needle In A Haystack&quot; evaluation.</p>
-<h2 id="h2-revolutionary" tabindex="0" aria-label="Revolutionary Heading" itemprop="name" class="revolutionary">Revolutionary Use Cases and Future Implications</h2>
+<h2>Revolutionary Use Cases and Future Implications</h2>
 <p>The advancements in Gemini 1.5 unlock a plethora of applications across sectors such as technology, education, and the creative arts. Its versatility and transformative potential are bound to revolutionise industries, offering tools for data analysis, multimodal understanding, programming assistance, and creative content generation.</p>
-<h2 id="h2-ethical" tabindex="0" aria-label="Ethical Heading" itemprop="name" class="ethical">Ethical Considerations and Responsible Development</h2>
+<h2>Ethical Considerations and Responsible Development</h2>
 <p>The rapid advancement of language models like Gemini 1.5 raises important questions around ethical implications. The AI community broadly recognises the importance of prioritising privacy, avoiding bias, and developing safe systems as models become more capable. <a href="https://deepmind.google/technologies/gemini/#introduction" title="Gemini - Google DeepMind"><strong>Google ⧉</strong></a> states it has emphasised properties like safety, security, and fairness during Gemini 1.5's development. Additionally, the company claims to have incorporated algorithmic techniques to detect harmful content generation along with bias monitoring systems. Continuous external audits and oversight from non-profits and academic studies are crucial for validating ethical priorities and technical safeguards. To improve Gemini 1.5 and other top models while protecting privacy and promoting fairness, researchers, policymakers, and companies must remain vigilant.</p>
-<h2 id="h2-conclusion" tabindex="0" aria-label="Conclusion Heading" itemprop="name" class="conclusion">Conclusion</h2>
+<h2>Conclusion</h2>
 <p>Gemini 1.5 marks a significant advancement in AI technology. It improves efficiency, broadens context, and introduces innovative uses, setting new standards for technology. It will revolutionise our interactions with technology and shape the future of AI innovation.</p>
-
-      </div>
+</div>
     </main>
 
-    <!-- Top Anchor -->
-    <top id="top-anchor">
-      <p class="mb-0 text-center p-4">
-        <a href="#page-top" class="btn btn-outline-dark btn-floating btn-lg">
-          Back to the top
-        </a>
-      </p>
-    </top>
-    <!-- # End Top Anchor -->
-
-    <!-- Footer-->
-    <footer id="footer" aria-label="footer" class="footer bg-light mt-auto fs-6 py-5 border-top">
-      <p class="mb-0">
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://twitter.com/wwdseb"><img src="https://kura.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter" title="Image for Sebastien Rousseau on Twitter" width="32" height="32" /></a>
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.linkedin.com/in/sebastienrousseau/"><img src="https://kura.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" title="Image for Sebastien Rousseau on LinkedIn" width="32" height="32" /></a>
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://medium.com/@BankingOnQuantum"><img src="https://kura.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" title="Image for Sebastien Rousseau on Medium" width="32" height="32" /></a>
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.youtube.com/@BankingOnQuantum"><img src="https://kura.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" title="Image for Sebastien Rousseau on YouTube" width="32" height="32" /></a>
-      </p>
-      <p class="mb-0">
-        <span class="px-2"><a href="/accessibility/index.html">Accessibility</a></span>
-        <span class="px-2"><a href="/contact/index.html">Contact</a></span>
-        <span class="px-2"><a href="/privacy/index.html">Privacy & Cookie Policy</a></span>
-        <span class="px-2"><a href="/terms/index.html">Terms of Use</a></span>
-      </p>
-      <span class="px-2">© Copyright 2024 - Sebastien Rousseau. All rights reserved.</span>
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/about/index.html">About</a></li>
+              <li><a href="/contact/index.html">Contact</a></li>
+              <li><a href="/made-with-static-site-generator/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Writing</h2>
+            <ul>
+              <li><a href="/articles/index.html">Articles</a></li>
+              <li><a href="/papers/index.html">Papers</a></li>
+              <li><a href="/tags/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Work</h2>
+            <ul>
+              <li><a href="/projects/index.html">Projects</a></li>
+              <li><a href="/playlists/index.html">Playlists</a></li>
+              <li><a href="/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Reach</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="legal">
+          <span>© Copyright 2024 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Social links">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
+          </div>
+          <p>
+            <a href="/accessibility/index.html">Accessibility</a> ·
+            <a href="/privacy/index.html">Privacy</a> ·
+            <a href="/terms/index.html">Terms</a>
+          </p>
+        </div>
+      </div>
     </footer>
-    <!-- # End Footer -->
-    <script
-      async
-      crossorigin="anonymous"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      defer
-    ></script>
-    <script type="application/ld+json">{"@context":"http://schema.org/","@type":"BlogPosting","headline":"Unlocking Gemini 1.5: Google's AI Revolution Explained","datePublished":"Mon, 19 Feb 2024 14:15:15 +0000","dateModified":"Mon, 19 Feb 2024 14:15:15 +0000","description":"Explore Gemini 1.5, Google's AI breakthrough, enhancing efficiency, quality, and context understanding in the AI landscape","image":{"@type":"ImageObject","height":"2048","width":"2048","url":"https://kura.pro/stock/images/banners/ai-gemini1.5.webp"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html","name":"A Deep Dive into Google's Latest AI Breakthrough"},"author":"contact@sebastienrousseau.com (Sebastien Rousseau)","copyrightHolder":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"},"copyrightYear":"© Copyright 2024 - Sebastien Rousseau. All rights reserved.","creator":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"},"inLanguage":"en-GB","name":"Sebastien Rousseau","publisher":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"}}</script>
-    <script type="module" defer>
-      // This is an Immediately Invoked Function Expression (IIFE) which helps
-      // to avoid declaring any globals.
-      (function () {
-        // Create a new script element
-        var script = document.createElement("script");
 
-        // Set the source of the script element to "/main.js".
-        // A timestamp is appended as a query string to ensure the browser
-        // always fetches the latest version of the script, bypassing the
-        // cache.
-        script.src = "/main.js";
-
-        // The script is of type "text/javascript"
-
-        // The script is set to execute asynchronously as soon as it's
-        //available
-
-        // Append the script element to the head of the document
-        document.head.appendChild(script);
-      })(); // The function is immediately invoked
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://sebastienrousseau.com/#person",
+      "name": "Sebastien Rousseau",
+      "givenName": "Sebastien",
+      "familyName": "Rousseau",
+      "url": "https://sebastienrousseau.com/",
+      "image": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+      "jobTitle": "Senior Product Manager",
+      "description": "AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "HSBC Commercial & Investment Bank",
+        "url": "https://www.hsbc.com/"
+      },
+      "alumniOf": [
+        {"@type": "Organization", "name": "PayPal"},
+        {"@type": "Organization", "name": "Barclays"},
+        {"@type": "Organization", "name": "Shazam Entertainment"},
+        {"@type": "Organization", "name": "AKQA"},
+        {"@type": "Organization", "name": "Virgin Group"}
+      ],
+      "knowsAbout": [
+        "Applied artificial intelligence in banking",
+        "Generative AI for financial services",
+        "Wholesale payments",
+        "ISO 20022 migration",
+        "SWIFT gpi",
+        "SEPA Instant Payments",
+        "Cross-border payments",
+        "Post-quantum cryptography",
+        "CRYSTALS-Kyber",
+        "CRYSTALS-Dilithium",
+        "Quantum-safe payment authentication"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressCountry": "United Kingdom"
+      },
+      "sameAs": [
+        "https://twitter.com/wwdseb",
+        "https://www.linkedin.com/in/sebastienrousseau/",
+        "https://medium.com/@BankingOnQuantum",
+        "https://www.youtube.com/@BankingOnQuantum",
+        "https://github.com/sebastienrousseau"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sebastienrousseau.com/#website",
+      "url": "https://sebastienrousseau.com/",
+      "name": "Sebastien Rousseau",
+      "description": "AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.",
+      "publisher": {"@id": "https://sebastienrousseau.com/#person"},
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://sebastienrousseau.com/#profile",
+      "mainEntity": {"@id": "https://sebastienrousseau.com/#person"},
+      "name": "Sebastien Rousseau: AI, Banking & Financial Services Expert",
+      "url": "https://sebastienrousseau.com/",
+      "inLanguage": "en-GB"
+    }
+  ]
+}
     </script>
-    <script>
-      // JavaScript code
-      var dropDownElements = document.querySelectorAll('.drop-down');
-      dropDownElements.forEach(function(element) {
-        element.classList.add('animate');
-      });
 
-      window.addEventListener('scroll', function() {
-        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        dropDownElements.forEach(function(element) {
-          if (scrollTop === 0) {
-            element.classList.add('animate');
-          } else {
-            element.classList.remove('animate');
-          }
-        });
-      });
+        <script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","headline":"Unlocking Gemini 1.5: Google's AI Revolution Explained","description":"Gemini 1.5 from Google scales context windows past 1M tokens. What that unlocks for retrieval-augmented finance and the trade-offs worth knowing.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp","width":"161","height":"161"},"url":"https://sebastienrousseau.com/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html","datePublished":"2024-02-19T14:15:15+00:00","dateModified":"2024-02-19T14:15:15+00:00","inLanguage":"en","keywords":"Gemini 1.5, Google AI, Mixture-of-Experts architecture, computational efficiency, context window expansion, AI innovation, data analysis transformation, in-context learning, AI use cases, technology revolution","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Unlocking Gemini 1.5: Google's AI Revolution Explained","item":"https://sebastienrousseau.com/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html"}]}]}
     </script>
-    <!-- Google tag (gtag.js) -->
+<script src="/main.4eebb974.js" integrity="sha256-Tuu5dA22pMJ0xc9iPI7QHLL0eTWtY+8WuLnAp4hsecs=" crossorigin="anonymous" defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-169G4ET5HQ');
-    </script>
-  </body>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+<link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"">
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Search">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Search</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Search">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Search documentation..." autocomplete="off" aria-label="Search"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> close</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigate</span><span><kbd>Enter</kbd> open</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
 </html>

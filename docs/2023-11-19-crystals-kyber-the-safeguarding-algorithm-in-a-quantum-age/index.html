@@ -2,282 +2,151 @@
 <html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
-    <meta itemprop="datePublished" content="Sun, 19 Nov 2023 09:59:00 +0000" id="date">
-    <meta itemprop="dateModified" content="Sun, 19 Nov 2023 09:59:00 +0000" id="last-modified">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sun, 19 Nov 2023 09:59:00 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sun, 19 Nov 2023 09:59:00 +0000" id="last-modified" />
     <title>CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</title>
 
-    <!-- # Start Primary Meta Tags -->
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
 <meta name="description" content="Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.">
-<meta name="generator" content="Shokunin SSG (version 0.0.26)">
 <meta name="keywords" content="quantum computing, quantum-resistant cryptography, CRYSTALS-Kyber, cryptography, security, banking, financial, encryption, data protection, future-proof">
-<meta name="language" content="en-GB">
-<meta name="permalink" content="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">
-<meta name="rating" content="general">
-<meta name="referrer" content="no-referrer">
-<meta name="robots" content="index, follow">
-<meta name="title" content="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- # End Primary Meta Tags -->
-
-    <!-- # Start Open Graph / Facebook Meta Tags -->
-    <meta name="og:description" content="Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.">
-<meta name="og:image" content="https://kura.pro/stock/images/banners/sebastien-rousseau.png">
-<meta name="og:image:alt" content="Black and White Portrait of Sebastien Rousseau">
-<meta name="og:image:height" content="161">
-<meta name="og:image:width" content="161">
-<meta name="og:locale" content="en_GB">
-<meta name="og:title" content="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age">
-<meta name="og:type" content="website">
-<meta name="og:url" content="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">
-    <!-- # End Open Graph / Facebook Meta Tags -->
-
-    <!-- # Start Accessibility Meta Tags -->
-    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
-    <!-- # End Accessibility Meta Tags -->
-
-    <!-- # Start Apple Meta Tags -->
-    <meta name="apple_mobile_web_app_orientations" content="portrait">
-<meta name="apple_touch_icon_sizes" content="192x192">
-    <!-- # End Apple Meta Tags -->
-
-<!-- # Start Content Security Policy Meta Tags -->
-    <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self';
-      script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google-analytics.com https://cdn.jsdelivr.net unpkg.com www.googletagmanager.com x.clarity.ms https://www.googletagmanager.com https://www.google.com https://www.gstatic.com;
-      frame-src 'self' https://www.google.com;
-      connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com;
-      img-src 'self' data: https: kura.pro www.googletagmanager.com;
-      style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
-      font-src 'self' https://fonts.gstatic.com;
-      media-src 'self';" />
-    <!-- # End Content Security Policy Meta Tags -->
-
-
-
-    <!-- # Start Microsoft Meta Tags -->
     
-    <!-- # End Microsoft Meta Tags -->
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
 
-    <!-- # Start Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary">
-<meta name="twitter:creator" content="@wwdseb">
-<meta name="twitter:description" content="Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.">
-<meta name="twitter:image" content="https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.png">
-<meta name="twitter:image:alt" content="Logo of Sebastien Rousseau">
-<meta name="twitter:site" content="@wwdseb">
-<meta name="twitter:title" content="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age">
-<meta name="twitter:url" content="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">
-    <!-- # End Twitter Meta Tags -->
+    <meta http-equiv="Permissions-Policy" content="browsing-topics=(), interest-cohort=(), join-ad-interest-group=(), run-ad-auction=(), attribution-reporting=()" />
 
-    <!-- # Start Links -->
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else. -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        script-src 'sha256-CNeAgTyCRvbhLEf+bA4NTRzbFtmXNk1ryYx/cjqYpCs=' 'sha256-SufxJCALu15dIhrlGKPsAyJY/PuX1id0WQMzjlb+iDo=' 'sha256-xoQWMLqT7ROsuR4jJEW4x7dABFCKi5GFubiSLsBJKHQ=' 'self' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
     <link rel="alternate" href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" hreflang="en" />
-    <link rel="preload" as="image" href="https://kura.pro/stock/images/banners/galina-nelyubova-V70-ng4FuiA.webp">
-    <link rel="canonical" href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://kura.pro/sebastienrousseau/images/favicon.ico"
-      sizes="16x16 32x32"
-    />
-    <link
-      as="style"
-      crossorigin="anonymous"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      onload="this.onload=null;this.rel='stylesheet'"
-      rel="preload"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="https://kura.pro/sebastienrousseau/images/icons/192x192.png"
-      sizes="192x192"
-    />
+    <link rel="preload" as="image" href="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" />
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <!-- Skeletonic is self-hosted to eliminate the render-blocking
+         cross-origin stylesheet request. Build pipeline copies
+         _layouts/_skeletonic.min.css to public/skeletonic.min.css. -->
+    <link rel="stylesheet" href="/skeletonic.min.css" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
-    <!-- # End Links -->
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
 
-    <!-- # Start Styles -->
-    <style>
-    .sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.bounce{animation:g 1s infinite}.drop-down{animation:a 1.618s ease}.drop-down,.fade-in{animation-fill-mode:forwards}.fade-in{animation:b 3s ease}.flip{animation:i 1s infinite}.jello{animation:k 1s infinite}.pulse{animation:f 1s infinite}.roll{animation:c 5s linear infinite}.roll-clockwise{animation:d 5s linear infinite}.roll-reverse{animation:h 5s linear infinite}.roll-reverse-clockwise{animation:e 5s linear infinite}.rotate{animation:d 5s linear infinite}.shake{animation:j 1s infinite}.slide-in{animation:h 1s ease}.zoom-in,.zoom-in-out{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-in-out:hover,.zoom-in:hover{transform:scale(1.0618)}.zoom-out{transition:transform .618s cubic-bezier(.618,1,.618,1)}.zoom-out:hover{transform:scale(.618)}*{box-sizing:border-box;font-weight:300;margin:0;padding:0}html{font-family:SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:clamp(var(--base-font-size),1vw,20px);line-height:var(--base-line-height);scroll-behavior:smooth;text-rendering:optimizeLegibility}.article-info{color:var(--theme-color)}.blur-light{backdrop-filter:saturate(180%) blur(20px);background-color:hsla(0,0%,100%,.618)}.card,pre{margin-bottom:calc(var(--base-font-size)*var(--golden-ratio)/2);overflow:hidden}blockquote{background:rgba(0, 83, 191,.062);border-left:10px solid var(--theme-color);margin:1.618em 10px;padding:.618em 10px;quotes:"\201C""\201D""\2018""\2019"}blockquote:after,blockquote:before{color:var(--theme-color);font-size:4em;line-height:.1em;vertical-align:-.4em}blockquote:before{content:open-quote;margin-right:.1618em}blockquote:after{content:close-quote;margin-left:.1618em}blockquote p{color:var(--theme-color)!important;display:inline;font-size:1.2em;font-style:italic;line-height:1.5em;margin:0 0 .5em}.company,.container .rollers .wrapper .items-container .item .company,.content{filter:grayscale(100%);opacity:.2}.company:hover,.container .rollers .wrapper .items-container .item .company:hover{cursor:pointer;filter:grayscale(0);opacity:1}.company{float:left;padding:1.618rem;width:33%!important}.content{padding:calc(var(--base-font-size)*1.236)}.container .rollers,.content .container{box-shadow:2px 15px 20px #1f1f1f10,-2px -8px 20px #1f1f1f1a;padding:calc(var(--base-font-size)*1.854) calc(var(--base-font-size)*1.236)}.container .rollers .wrapper{flex:0 0 auto;height:100px;margin:0 0 calc(var(--base-font-size)*1.236) 0;position:relative;width:1400px}.container .rollers .wrapper .items-container{align-items:center;animation-duration:30s;animation-iteration-count:infinite;animation-timing-function:linear;display:flex;height:100%;position:absolute;width:100%}:root{--base-font-size:17px;--base-line-height:1.47059;--box-shadow:0 2px 4px rgb(0, 83, 191);--golden-ratio:1.618;--theme-color:rgb(0, 83, 191);--transition-duration:0.3s;--z-index-menu:1}h1,h2,h3,h4,h5,h6{color:var(--theme-color);font-weight:400;line-height:var(--golden-ratio);margin-bottom:calc(var(--base-font-size)*var(--golden-ratio)/2)}a{color:var(--theme-color);text-decoration:none}strong{font-weight:600}a:hover{text-decoration:underline}@keyframes a{0%{transform:translateY(calc(var(--base-font-size)*-.618))}to{transform:translateY(0)}}@keyframes b{0%{opacity:0}to{opacity:1}}@keyframes c{0%{transform:translateX(0)}to{transform:translateX(-100%)}}@keyframes d{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes e{0%{transform:rotate(1turn)}to{transform:rotate(0deg)}}@keyframes f{0%{transform:scale(1)}50%{transform:scale(1.1)}to{transform:scale(1)}}@keyframes g{0%,20%,50%,80%,to{transform:translateY(0)}40%{transform:translateY(-30px)}60%{transform:translateY(-15px)}}@keyframes h{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes i{0%{transform:perspective(400px) rotateY(0)}to{transform:perspective(400px) rotateY(1turn)}}@keyframes j{0%,to{transform:translateX(0)}10%,30%,50%,70%,90%{transform:translateX(-10px)}20%,40%,60%,80%{transform:translateX(10px)}}@keyframes k{0%,to{transform:scaleX(1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}}@media only screen and (max-width:800px){.container .rollers .wrapper .items-container .item .company{opacity:.4}.content,.content .container{padding:calc(var(--base-font-size)*1.236)}.company{width:50%!important}.fs-5{font-size:calc(var(--base-font-size)*.9)!important}h3{font-size:calc(var(--base-font-size)*1.618)}}
-    #hero-element {
-      margin: 0;
-      padding: 0;
-      position: fixed;
-      width: auto;
-      height: 19vh;
-      overflow: hidden;
-    }
-    #hero-element::before, #hero-element::after {
-        content: "";
-        position: absolute;
-        width: 200vw;
-        height: 33vh;
-        z-index: -1;
-        border-radius: 33px;
-        transform-origin: top left;
-    }
-    #hero-element::after {
-        top: -33vh;
-        left: -1.618vw;
-        background: rgb(0, 83, 191);
-        transform: rotate(6.18deg);
-    }
-    </style>
-    <!-- # End Styles -->
-  </head>
-  <body
-    id="page-top"
-    itemscope
-    itemtype="http://schema.org/WebPage"
-    class="fw-light text-center bg-white text-start fs-6"
-  >
-    <!-- # Start Responsive navbar -->
-    <nav
-      class="navbar navbar-expand-lg bd-navbar sticky-top shadow-small border-bottom blur-light"
-      id="mainNav"
-      itemscope
-      itemtype="http://schema.org/SiteNavigationElement"
-    >
-      <div class="container-xxl p-3">
-        <a class="navbar-brand p-0 me-0 me-lg-2 zoom-in" href="/index.html" aria-label="logo">
-          <img
-            class="d-inline-block align-top"
-            width="44"
-            height="44"
-            src="https://kura.pro/sebastienrousseau/images/logos/sebastienrousseau.webp"
-            alt="Logo for Sebastien Rousseau"
-            title="Image of the Logo for Sebastien Rousseau"
-            loading="lazy"
-          />
+    <link rel="stylesheet" href="/_csp/be15b169f6904d49.css" crossorigin="anonymous" integrity="sha256-mnMpp44a6haC2rzwBPpwFZo7f21IdanffsP33VQHPgU=" crossorigin="anonymous"">
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="http://127.0.0.1:8000/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age">
+<meta property="og:description" content="Insight Navigating the Quantum Threat: The Genesis of CRYSTALS-Kyber In my previous article, Protecting Data in the Quantum Age ⧉ , I delved into the">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age">
+<meta name="twitter:description" content="Insight Navigating the Quantum Threat: The Genesis of CRYSTALS-Kyber In my previous article, Protecting Data in the Quantum Age ⧉ , I delved into the">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp">
+<link rel="canonical" href="http://127.0.0.1:8000/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+</head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Skip to main content</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Toggle navigation" />
+      <div class="wrap">
+        <a class="ap-brand" href="/index.html" aria-label="Sebastien Rousseau home">
+          <span itemprop="name">Sebastien Rousseau</span>
         </a>
-        <span class="fs-4" itemprop="name"><a href="/" itemprop="url" title="Sebastien Rousseau - Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era." class="text-decoration-none text-dark">Sebastien Rousseau</a></span>
-        <button
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          class="navbar-toggler"
-          data-bs-target="#navbarSupportedContent"
-          data-bs-toggle="collapse"
-          type="button"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                aria-current="page"
-                href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="/about/index.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  href="/articles/index.html">Articles</a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="/papers/index.html">Papers</a>
-              </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="/projects/index.html">Projects</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                id="navbarDropdown"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Links</a
-              >
-              <ul
-                class="dropdown-menu dropdown-menu-end"
-                aria-labelledby="navbarDropdown"
-              >
-                <li>
-                  <a class="dropdown-item" href="/playlists/index.html">
-                    Spotify Playlists
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/made-with-shokunin/index.html">
-                    Made with Shokunin
-                  </a>
-                </li> 
-                <li>
-                  <a class="dropdown-item" href="/tags/index.html">
-                    Tags
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a
-                aria-pressed="false"
-                class="btn btn-dark rounded-pill px-3"
-                href="/contact/index.html"
-                >Get in touch
-              </a>
-            </li>
+        <nav aria-label="Primary">
+          <ul class="ap-menu">
+            <li><a href="/about/index.html">About</a></li>
+            <li><a href="/articles/index.html">Articles</a></li>
+            <li><a href="/papers/index.html">Papers</a></li>
+            <li><a href="/projects/index.html">Projects</a></li>
+            <li><a href="/playlists/index.html">Playlists</a></li>
+            <li><a href="/tags/index.html">Tags</a></li>
           </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Search" title="Search (K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+          <a class="ap-cta-mini" href="/contact/index.html" aria-label="Get in touch">Get in touch ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Toggle navigation">☰</label>
         </div>
       </div>
-    </nav>
-    <!-- # End Responsive navbar -->
+    </header>
 
-    <!-- Header -->
-    <header class="w-100 position-relative" id="hero-element"></header>
-    <!-- # End Header -->
+        <section class="ap-hero">
+      <h1>Sebastien Rousseau</h1>
+      <p class="sub">CRYSTALS-Kyber, the NIST FIPS 203 standard for post-quantum key encapsulation.</p>
+    </section>
 
-    <!-- Main content-->
-    <main id="main" class="bd-masthead container fs-5 p-5" aria-label="main">
-      <div class="text-start justify-content-between">
-        <h1 id="h1-crystals" tabindex="0" aria-label="Crystals Heading" itemprop="headline" class="crystals">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</h1><p>Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.</p><p></p><p><img src="https://kura.pro/stock/images/banners/galina-nelyubova-V70-ng4FuiA.webp" alt="AI, Artificial Intelligence concept,3d rendering,conceptual image" <p class="img-fluid clearfix" title="ai, artificial intelligence concept,3d rendering,conceptu"></p>
-<h2 id="h2-insight" tabindex="0" aria-label="Insight Heading" itemprop="name" class="insight">Insight</h2>
-<h3 id="h3-navigating" tabindex="0" aria-label="Navigating Heading" itemprop="name" class="navigating">Navigating the Quantum Threat: The Genesis of CRYSTALS-Kyber</h3>
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap"><p><img src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" alt="AI, Artificial Intelligence concept,3d rendering,conceptual image" / class="img-fluid clearfix"></p>
+<h2>Insight</h2>
+<h3>Navigating the Quantum Threat: The Genesis of CRYSTALS-Kyber</h3>
 <p>In my previous article, <a href="/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html" title="Protecting Data in the Quantum Age: The Hash Library (HSH)">Protecting Data in the Quantum Age ⧉</a>, I delved into the impending threat of quantum computing to digital security and looked at how quantum-resistant cryptography (QRC) can address it. I will explore now <code>CRYSTALS-Kyber</code>, a groundbreaking QRC algorithm that is transforming the security landscape.</p>
 <p>Quantum computers, with their ability to perform certain calculations far faster than classical computers, pose a significant risk to current encryption algorithms. This raises concerns about the safety of sensitive information, including financial transactions, medical records, and personal communications.</p>
 <p>To mitigate this threat, cryptographers have developed QRC algorithms, such as <code>CRYSTALS-Kyber</code>. This algorithm is a key encapsulation mechanism (KEM) designed to securely exchange secret keys between parties.</p>
 <p>Today, <code>CRYSTALS-Kyber</code> stands as a frontrunner in the <a href="https://www.nist.gov/" title="The National Institute of Standards and Technology (NIST)">National Institute of Standards and Technology (NIST) ⧉</a> post-quantum cryptography standardisation process, demonstrating its potential as a robust security solution for the digital era.</p>
-<h3 id="h3-crystals" tabindex="0" aria-label="Crystals Heading" itemprop="name" class="crystals">CRYSTALS-Kyber: Unyielding Security in the Face of Quantum Computing</h3>
+<h3>CRYSTALS-Kyber: Unyielding Security in the Face of Quantum Computing</h3>
 <p>The security of <code>CRYSTALS-Kyber</code> hinges on the inherent difficulty of solving the <code>Learning With Errors (LWE)</code> problem over module lattices. This intricate mathematical challenge, considered computationally intractable even for quantum computers, serves as the bedrock of <code>CRYSTALS-Kyber</code>'s resilience against quantum attacks.</p>
-<h3 id="h3-crystals" tabindex="0" aria-label="Crystals Heading" itemprop="name" class="crystals">CRYSTALS-Kyber: A Paradigm Shift in Digital Security</h3>
+<h3>CRYSTALS-Kyber: A Paradigm Shift in Digital Security</h3>
 <p><code>CRYSTALS-Kyber</code> belongs to the CRYSTALS (Cryptographic Suite for Algebraic Lattices) suite of algorithms and proudly bears the distinction of being a quantum-safe algorithm (QSA).</p>
 <p>While the concept of utilising lattice problems for cryptographic purposes is not entirely new, <code>CRYSTALS-Kyber</code> elevates this concept to unparalleled levels of efficiency. Its ability to generate cryptographic keys with smaller key sizes and faster encryption and decryption speeds makes it an ideal choice for real-world applications, particularly in the demanding world of finance.</p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="Divider" title="Divider" <p class="m-10 w-100"></p>
-<h2 id="h2-idea" tabindex="0" aria-label="Idea Heading" itemprop="name" class="idea">Idea</h2>
-<h3 id="h3-understanding" tabindex="0" aria-label="Understanding Heading" itemprop="name" class="understanding">Understanding CRYSTALS-Kyber's Mechanics: Key Encapsulation at Its Core</h3>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="Divider" title="Divider" / class="m-10 w-100"></p>
+<h2>Idea</h2>
+<h3>Understanding CRYSTALS-Kyber's Mechanics: Key Encapsulation at Its Core</h3>
 <p>At the core of <code>CRYSTALS-Kyber</code>'s groundbreaking design lies its innovative approach to key encapsulation, a critical component of secure communication. It harnesses the power of lattice cryptography, a method renowned for its resilience against quantum-based attacks. This sophisticated technique leverages geometric structures in multidimensional space to establish cryptographic keys.</p>
 <p><code>CRYSTALS-Kyber</code> employs a specific type of lattice problem, known for its efficiency and security properties, to generate cryptographic keys. This ensures the protection of sensitive data even in the face of quantum computing advancements.</p>
-<h4 id="h4-secure" tabindex="0" aria-label="Secure Heading" itemprop="name" class="secure">Secure Key Encapsulation: The Essence of CRYSTALS-Kyber</h4>
+<h4>Secure Key Encapsulation: The Essence of CRYSTALS-Kyber</h4>
 <p>Key encapsulation is akin to securely locking a message in a box, where only the intended recipient has the key to open it. In the world of cryptography, this process involves creating a pair of keys: a public key, which can be shared openly, and a private key, which must be kept secret. The brilliance of <code>CRYSTALS-Kyber</code> lies in its ability to generate and use these keys in a way that ensures unparalleled security.</p>
 <p>Let's see how <code>CRYSTALS-Kyber</code> uses key encapsulation to establish secure communication between two parties, Alice and Bob. The sequence diagram below illustrates the steps involved in establishing secure communication between Alice and Bob using <code>CRYSTALS-Kyber</code>, a key encapsulation mechanism (KEM) designed to provide secure key exchange for cryptographic protocols. The KyberServer plays here a pivotal role in this process, generating and distributing the cryptographic keys required for secure communication using <code>CRYSTALS-Kyber</code>.</p>
-<p><img src="https://kura.pro/stock/diagrams/alice-bob-eve-kyber.svg" alt="CRYSTALS-Kyber Key Encapsulation Mechanism (KEM)" title="CRYSTALS-Kyber Key Encapsulation Mechanism (KEM)" <p class="img-fluid clearfix"></p>
-<h5 id="h5-legend" tabindex="0" aria-label="Legend Heading" itemprop="name" class="legend">Legend</h5>
+<p><img src="https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-kyber.svg" alt="CRYSTALS-Kyber Key Encapsulation Mechanism (KEM)" title="CRYSTALS-Kyber Key Encapsulation Mechanism (KEM)" / class="img-fluid clearfix"></p>
+<h5>Legend</h5>
 <ul>
 <li>Alice: The sender of the message.</li>
 <li>Bob: The receiver of the message.</li>
 <li>KyberServer: The server that generates and distributes the cryptographic keys.</li>
 </ul>
-<h5 id="h5-explanation" tabindex="0" aria-label="Explanation Heading" itemprop="name" class="explanation">Explanation</h5>
-<h6 id="h6-public" tabindex="0" aria-label="Public Heading" itemprop="name" class="public">Public Key Exchange</h6>
+<h5>Explanation</h5>
+<h6>Public Key Exchange</h6>
 <ul>
 <li>Alice initiates the process by requesting her public key from the KyberServer.</li>
 <li>The KyberServer responds by sending Alice's public key, a mathematical value that can be publicly shared without compromising the security of Alice's private key.</li>
 <li>Alice then shares her public key with Bob, allowing him to encrypt messages that only Alice can decrypt.</li>
 </ul>
-<h6 id="h6-encapsulation" tabindex="0" aria-label="Encapsulation Heading" itemprop="name" class="encapsulation">Encapsulation and Decapsulation</h6>
+<h6>Encapsulation and Decapsulation</h6>
 <ul>
 <li>Bob requests an encapsulation key from the KyberServer. This temporary key will be used to encrypt the shared secret key before sending it to Alice.</li>
 <li>The KyberServer sends the encapsulation key to Bob.</li>
@@ -286,16 +155,16 @@
 <li>Alice requests a decryption key from the KyberServer. This temporary key will be used to decrypt the encrypted capsule and reveal the shared secret key.</li>
 <li>The KyberServer sends the decryption key to Alice.</li>
 </ul>
-<h6 id="h6-shared" tabindex="0" aria-label="Shared Heading" itemprop="name" class="shared">Shared Secret Key Exchange</h6>
+<h6>Shared Secret Key Exchange</h6>
 <ul>
 <li>Alice uses her private key and the decryption key to decrypt the capsule, revealing the shared secret key.</li>
 <li>Alice shares the shared secret key with Bob, allowing him to decrypt messages encrypted using the shared secret key.</li>
 </ul>
-<h6 id="h6-secure" tabindex="0" aria-label="Secure Heading" itemprop="name" class="secure">Secure Communication</h6>
+<h6>Secure Communication</h6>
 <p>The sequence diagram effectively illustrates the intricate steps involved in establishing a secure communication channel, highlighting the crucial role of the KyberServer in generating and distributing the cryptographic keys. By employing the <code>CRYSTALS-Kyber</code> KEM, Alice and Bob can safeguard their sensitive information and maintain secure communication even in the face of potential adversaries.</p>
-<h3 id="h3-lattice" tabindex="0" aria-label="Lattice Heading" itemprop="name" class="lattice">Lattice-Based Cryptography: A Robust Foundation for Quantum Resistance</h3>
+<h3>Lattice-Based Cryptography: A Robust Foundation for Quantum Resistance</h3>
 <p><code>CRYSTALS-Kyber</code> employs a lattice-based approach, a method known for its potential resistance to quantum attacks. The underlying principle of lattice cryptography involves geometric structures in multidimensional space. While the concept of navigating these complex structures might seem daunting, <code>CRYSTALS-Kyber</code> simplifies it. It uses a specific type of lattice problem, known for its efficiency and security properties, to create cryptographic keys.</p>
-<h4 id="h4-efficient" tabindex="0" aria-label="Efficient Heading" itemprop="name" class="efficient">Efficient Key Sizes: A Balancing Act Between Security and Performance</h4>
+<h4>Efficient Key Sizes: A Balancing Act Between Security and Performance</h4>
 <p>One of <code>CRYSTALS-Kyber</code>'s standout features is the size of its keys. Compared to other post-quantum cryptographic (PQC) algorithms, <code>CRYSTALS-Kyber</code> offers significantly smaller key sizes, making it more practical for real-world applications. <code>CRYSTALS-Kyber</code> provides three different security levels, each with its own key size:</p>
 <ul>
 <li><strong>Kyber512</strong>: This security level provides 128 bits of security and uses key sizes of 1,632 bytes for secret keys, 800 bytes for public keys, and 768 bytes for ciphertexts.</li>
@@ -303,13 +172,13 @@
 <li><strong>Kyber1024</strong>: This security level provides 256 bits of security and uses key sizes of 3,168 bytes for secret keys, 1,568 bytes for public keys, and 1,568 bytes for ciphertexts.</li>
 </ul>
 <p>These relatively small key sizes make <code>CRYSTALS-Kyber</code> an attractive option for resource-constrained devices, such as smartphones and IoT devices. They also reduce the bandwidth required to transmit cryptographic keys, which can be beneficial for applications with limited network connectivity.</p>
-<h4 id="h4-unwavering" tabindex="0" aria-label="Unwavering Heading" itemprop="name" class="unwavering">Unwavering Speed: A Beacon in the Fast-Paced Financial Landscape</h4>
+<h4>Unwavering Speed: A Beacon in the Fast-Paced Financial Landscape</h4>
 <p>Another aspect of <code>CRYSTALS-Kyber</code>'s appeal is its speed. In the fast-paced banking and financial services sector, speed is as important as security. The algorithm's design ensures that it operates swiftly, facilitating quick encryption and decryption processes. This efficiency does not come at the expense of security; instead, it is a direct result of the sophisticated mathematical foundations of the algorithm.</p>
-<h3 id="h3-crystals" tabindex="0" aria-label="Crystals Heading" itemprop="name" class="crystals">CRYSTALS-Kyber: A Symbiosis of Security, Efficiency, and Speed</h3>
+<h3>CRYSTALS-Kyber: A Symbiosis of Security, Efficiency, and Speed</h3>
 <p><code>CRYSTALS-Kyber</code> has emerged as a frontrunner in the quest for quantum-resistant cryptography, offering a unique combination of security, efficiency, and speed. Its innovative lattice-based approach, smaller key sizes, and optimised design make it an ideal choice for protecting sensitive information in the banking and financial services industry. As the world continues to embrace digital technologies, <code>CRYSTALS-Kyber</code> stands poised to play a pivotal role in safeguarding our data for years to come.</p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="Divider" title="Divider" <p class="m-10 w-100"></p>
-<h2 id="h2-impact" tabindex="0" aria-label="Impact Heading" itemprop="name" class="impact">Impact</h2>
-<h3 id="h3-crystals" tabindex="0" aria-label="Crystals Heading" itemprop="name" class="crystals">CRYSTALS-Kyber: Advantages for Banking and Financial Services</h3>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="Divider" title="Divider" / class="m-10 w-100"></p>
+<h2>Impact</h2>
+<h3>CRYSTALS-Kyber: Advantages for Banking and Financial Services</h3>
 <p>The banking and financial services industry is in a constant race to stay ahead of increasingly sophisticated cyber threats. In this context, <code>CRYSTALS-Kyber</code> stands out not only for its quantum-resistant (QR) properties but also for the tangible benefits it offers to this industry. This section delves into the practical advantages of <code>CRYSTALS-Kyber</code>, emphasising why it is particularly well-suited for the unique needs of financial institutions.</p>
 <ul>
 <li>
@@ -325,9 +194,9 @@
 <p><strong>Regulatory Compliance and Competitive Advantage</strong>: As regulators worldwide begin to acknowledge the quantum threat, they are likely to mandate the adoption of quantum-resistant algorithms. Early adoption of <code>CRYSTALS-Kyber</code> positions financial institutions as leaders in compliance and security. Additionally, it offers a competitive edge, reassuring clients and partners of the institution's dedication to cutting-edge security practices.</p>
 </li>
 </ul>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="Divider" title="Divider" <p class="m-10 w-100"></p>
-<h2 id="h2-incentives" tabindex="0" aria-label="Incentives Heading" itemprop="name" class="incentives">Incentives</h2>
-<h3 id="h3-the" tabindex="0" aria-label="The Heading" itemprop="name" class="the">The Case for Adopting CRYSTALS-Kyber</h3>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="Divider" title="Divider" / class="m-10 w-100"></p>
+<h2>Incentives</h2>
+<h3>The Case for Adopting CRYSTALS-Kyber</h3>
 <p>In a landscape where cybersecurity is not just a necessity but a competitive differentiator, the banking and financial services industry stands at a critical juncture. The adoption of <code>CRYSTALS-Kyber</code> represents a strategic move, aligning with both current security needs and future technological shifts. This final section outlines the compelling incentives for integrating <code>CRYSTALS-Kyber</code> into the cryptographic infrastructure of financial services.</p>
 <ul>
 <li>
@@ -343,102 +212,176 @@
 <p><strong>Enhancing Client Trust and Institutional Reputation</strong>: Leading financial institutions like Barclays and Deutsche Bank have adopted <code>CRYSTALS-Kyber</code> to safeguard their client data and secure their critical financial transactions. This commitment to advanced security has not only protected these institutions from potential cyberattacks but has also enhanced their reputation as trusted custodians of sensitive information.</p>
 </li>
 </ul>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="Divider" title="Divider" <p class="m-10 w-100"></p>
-<h2 id="h2-conclusion" tabindex="0" aria-label="Conclusion Heading" itemprop="name" class="conclusion">Conclusion</h2>
-<h3 id="h3-securing" tabindex="0" aria-label="Securing Heading" itemprop="name" class="securing">Securing the Financial Future with CRYSTALS-Kyber</h3>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="Divider" title="Divider" / class="m-10 w-100"></p>
+<h2>Conclusion</h2>
+<h3>Securing the Financial Future with CRYSTALS-Kyber</h3>
 <p>In the face of evolving cybersecurity threats, the banking and financial services industry faces a critical choice. Traditional encryption algorithms, once considered secure, are now vulnerable to the emerging power of quantum computing. <code>CRYSTALS-Kyber</code> emerges as a beacon of security, offering a robust, efficient, and future-proof solution to protect the financial sector's digital assets.</p>
 <p>With its unique combination of QR features, operational efficiency, and smaller key sizes, <code>CRYSTALS-Kyber</code> is a game-changer for financial security. By adopting <code>CRYSTALS-Kyber</code>, institutions not only secure their current operations but also prepare for a future where quantum computing redefines cybersecurity. This proactive approach demonstrates a commitment to the highest standards of security, enhancing client trust and reinforcing the industry's resilience against evolving threats.</p>
 <p>In an increasingly interconnected and digital world, <code>CRYSTALS-Kyber</code> stands as a testament to the power of innovative, forward-thinking solutions. Its adoption by leading financial institutions like Barclays and Deutsche Bank is a powerful endorsement of its capabilities and a clear signal to the industry to embrace this quantum-resistant cryptographic solution.</p>
-<p><img src="https://kura.pro/common/images/elements/divider.svg" alt="Divider" title="Divider" <p class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="Divider" title="Divider" / class="m-10 w-100"></p>
 <p>In closing, I trust this exploration of <code>CRYSTALS-Kyber</code> has illuminated the profound impact of quantum-resistant cryptography in the financial sector. If you're keen to delve further into this groundbreaking technology or have any queries, I invite you to connect with me on <a href="https://www.linkedin.com/in/sebastienrousseau/" title="Sebastien Rousseau on LinkedIn">LinkedIn ⧉</a> or via the <a href="/contact/index.html" title="Contact">contact page</a>.</p>
 <p>Thank you again for your time and I look forward to hearing from you.</p>
-
-      </div>
+</div>
     </main>
 
-    <!-- Top Anchor -->
-    <top id="top-anchor">
-      <p class="mb-0 text-center p-4">
-        <a href="#page-top" class="btn btn-outline-dark btn-floating btn-lg">
-          Back to the top
-        </a>
-      </p>
-    </top>
-    <!-- # End Top Anchor -->
-
-    <!-- Footer-->
-    <footer id="footer" aria-label="footer" class="footer bg-light mt-auto fs-6 py-5 border-top">
-      <p class="mb-0">
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://twitter.com/wwdseb"><img src="https://kura.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter" title="Image for Sebastien Rousseau on Twitter" width="32" height="32" /></a>
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.linkedin.com/in/sebastienrousseau/"><img src="https://kura.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" title="Image for Sebastien Rousseau on LinkedIn" width="32" height="32" /></a>
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://medium.com/@BankingOnQuantum"><img src="https://kura.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" title="Image for Sebastien Rousseau on Medium" width="32" height="32" /></a>
-        <a class="btn btn-floating btn m-1" target="_blank" href="https://www.youtube.com/@BankingOnQuantum"><img src="https://kura.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" title="Image for Sebastien Rousseau on YouTube" width="32" height="32" /></a>
-      </p>
-      <p class="mb-0">
-        <span class="px-2"><a href="/accessibility/index.html">Accessibility</a></span>
-        <span class="px-2"><a href="/contact/index.html">Contact</a></span>
-        <span class="px-2"><a href="/privacy/index.html">Privacy & Cookie Policy</a></span>
-        <span class="px-2"><a href="/terms/index.html">Terms of Use</a></span>
-      </p>
-      <span class="px-2">© Copyright 2024 - Sebastien Rousseau. All rights reserved.</span>
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/about/index.html">About</a></li>
+              <li><a href="/contact/index.html">Contact</a></li>
+              <li><a href="/made-with-static-site-generator/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Writing</h2>
+            <ul>
+              <li><a href="/articles/index.html">Articles</a></li>
+              <li><a href="/papers/index.html">Papers</a></li>
+              <li><a href="/tags/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Work</h2>
+            <ul>
+              <li><a href="/projects/index.html">Projects</a></li>
+              <li><a href="/playlists/index.html">Playlists</a></li>
+              <li><a href="/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Reach</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="legal">
+          <span>© Copyright 2024 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Social links">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
+          </div>
+          <p>
+            <a href="/accessibility/index.html">Accessibility</a> ·
+            <a href="/privacy/index.html">Privacy</a> ·
+            <a href="/terms/index.html">Terms</a>
+          </p>
+        </div>
+      </div>
     </footer>
-    <!-- # End Footer -->
-    <script
-      async
-      crossorigin="anonymous"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      defer
-    ></script>
-    <script type="application/ld+json">{"@context":"http://schema.org/","@type":"BlogPosting","headline":"CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age","datePublished":"Sun, 19 Nov 2023 09:59:00 +0000","dateModified":"Sun, 19 Nov 2023 09:59:00 +0000","description":"Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.","image":{"@type":"ImageObject","height":"2048","width":"2048","url":"https://kura.pro/stock/images/banners/sebastien-rousseau.png"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html","name":""},"author":"contact@sebastienrousseau.com (Sebastien Rousseau)","copyrightHolder":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"},"copyrightYear":"© Copyright 2024 - Sebastien Rousseau. All rights reserved.","creator":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"},"inLanguage":"en-GB","name":"Sebastien Rousseau","publisher":{"@type":"Person","@id":"contact@sebastienrousseau.com (Sebastien Rousseau)"}}</script>
-    <script type="module" defer>
-      // This is an Immediately Invoked Function Expression (IIFE) which helps
-      // to avoid declaring any globals.
-      (function () {
-        // Create a new script element
-        var script = document.createElement("script");
 
-        // Set the source of the script element to "/main.js".
-        // A timestamp is appended as a query string to ensure the browser
-        // always fetches the latest version of the script, bypassing the
-        // cache.
-        script.src = "/main.js";
-
-        // The script is of type "text/javascript"
-
-        // The script is set to execute asynchronously as soon as it's
-        //available
-
-        // Append the script element to the head of the document
-        document.head.appendChild(script);
-      })(); // The function is immediately invoked
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://sebastienrousseau.com/#person",
+      "name": "Sebastien Rousseau",
+      "givenName": "Sebastien",
+      "familyName": "Rousseau",
+      "url": "https://sebastienrousseau.com/",
+      "image": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+      "jobTitle": "Senior Product Manager",
+      "description": "AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "HSBC Commercial & Investment Bank",
+        "url": "https://www.hsbc.com/"
+      },
+      "alumniOf": [
+        {"@type": "Organization", "name": "PayPal"},
+        {"@type": "Organization", "name": "Barclays"},
+        {"@type": "Organization", "name": "Shazam Entertainment"},
+        {"@type": "Organization", "name": "AKQA"},
+        {"@type": "Organization", "name": "Virgin Group"}
+      ],
+      "knowsAbout": [
+        "Applied artificial intelligence in banking",
+        "Generative AI for financial services",
+        "Wholesale payments",
+        "ISO 20022 migration",
+        "SWIFT gpi",
+        "SEPA Instant Payments",
+        "Cross-border payments",
+        "Post-quantum cryptography",
+        "CRYSTALS-Kyber",
+        "CRYSTALS-Dilithium",
+        "Quantum-safe payment authentication"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressCountry": "United Kingdom"
+      },
+      "sameAs": [
+        "https://twitter.com/wwdseb",
+        "https://www.linkedin.com/in/sebastienrousseau/",
+        "https://medium.com/@BankingOnQuantum",
+        "https://www.youtube.com/@BankingOnQuantum",
+        "https://github.com/sebastienrousseau"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sebastienrousseau.com/#website",
+      "url": "https://sebastienrousseau.com/",
+      "name": "Sebastien Rousseau",
+      "description": "AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.",
+      "publisher": {"@id": "https://sebastienrousseau.com/#person"},
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://sebastienrousseau.com/#profile",
+      "mainEntity": {"@id": "https://sebastienrousseau.com/#person"},
+      "name": "Sebastien Rousseau: AI, Banking & Financial Services Expert",
+      "url": "https://sebastienrousseau.com/",
+      "inLanguage": "en-GB"
+    }
+  ]
+}
     </script>
-    <script>
-      // JavaScript code
-      var dropDownElements = document.querySelectorAll('.drop-down');
-      dropDownElements.forEach(function(element) {
-        element.classList.add('animate');
-      });
 
-      window.addEventListener('scroll', function() {
-        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        dropDownElements.forEach(function(element) {
-          if (scrollTop === 0) {
-            element.classList.add('animate');
-          } else {
-            element.classList.remove('animate');
-          }
-        });
-      });
+        <script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":"CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age","description":"Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.","url":"https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html","inLanguage":"en","about":"Banking, payments, AI and post-quantum cryptography","author":{"@id":"https://sebastienrousseau.com/#person"},"isPartOf":{"@id":"https://sebastienrousseau.com/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age","item":"https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html"}]}]}
     </script>
-    <!-- Google tag (gtag.js) -->
+<script src="/main.4eebb974.js" integrity="sha256-Tuu5dA22pMJ0xc9iPI7QHLL0eTWtY+8WuLnAp4hsecs=" crossorigin="anonymous" defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-169G4ET5HQ');
-    </script>
-  </body>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+<link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"">
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Search">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Search</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Search">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Search documentation..." autocomplete="off" aria-label="Search"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> close</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigate</span><span><kbd>Enter</kbd> open</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
 </html>

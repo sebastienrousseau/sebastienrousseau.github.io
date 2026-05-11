@@ -1,1 +1,1119 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sebastien Rousseau: AI, Banking &amp;amp; Financial Services Expert</title><link>https://sebastienrousseau.com</link><description>Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking &amp; Financial Services</description><language>en-GB</language><pubDate>Mon, 15 Apr 2024 06:06:06 +0000</pubDate><lastBuildDate>Mon, 15 Apr 2024 06:06:06 +0000</lastBuildDate><docs>https://validator.w3.org/feed/docs/rss2.html</docs><generator>Shokunin SSG (version 0.0.26)</generator><managingEditor>contact@sebastienrousseau.com (Sebastien Rousseau)</managingEditor><category>Technology</category><ttl>60</ttl><image><url>https://kura.pro/stock/images/banners/sebastien-rousseau.png</url><title>Sebastien Rousseau: AI, Banking &amp; Financial Services Expert</title><link>https://sebastienrousseau.com</link></image><atom:link href="https://sebastienrousseau.com/rss.xml" rel="self" type="application/rss+xml"/><item><author>contact@sebastienrousseau.com (Sebastien Rousseau)</author><description>Exploring and Applying Artificial Intelligence (AI), Post-Quantum Cryptography (PQC), Blockchain Technology to Shape the Future of Banking &amp; Financial Services</description><guid>https://sebastienrousseau.com/rss.xml</guid><link>https://sebastienrousseau.com/rss.xml</link><pubDate>Mon, 15 Apr 2024 06:06:06 +0000</pubDate><title>Sebastien Rousseau: AI, Banking &amp;amp; Financial Services Expert</title></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sebastien Rousseau: AI, Payments &amp;amp; Quantum Cryptography</title>
+    <link>https://sebastienrousseau.com</link>
+    <description>AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography.</description>
+    <atom:link href="http://127.0.0.1:8000/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>en</language>
+    <lastBuildDate>Mon, 11 May 2026 06:06:06 +0000</lastBuildDate>
+    <copyright>© Copyright 2024 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Twelve years on, Besson&apos;s Lucy reads like a thought experiment about knowledge migrating from flesh to machine — quietly validated by LLMs and qubits.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 11 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Lucy</category>
+      <category>Luc Besson</category>
+      <category>Scarlett Johansson</category>
+      <category>artificial intelligence</category>
+      <category>quantum computing</category>
+      <category>neutral atoms</category>
+      <category>LLMs</category>
+      <category>transhumanism</category>
+      <category>mind uploading</category>
+      <category>brain-computer interfaces</category>
+      <category>posthumanism</category>
+      <category>film philosophy</category>
+    </item>
+    <item>
+      <title>Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Shor&apos;s algorithm may now run on as few as 10,000 qubits. RSA, ECC and the timeline for post-quantum migration are all moving up. Here&apos;s why.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Thu, 11 Apr 2026 06:06:06 +0000</pubDate>
+      <author></author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>quantum computing</category>
+      <category>Shor&apos;s algorithm</category>
+      <category>post-quantum cryptography</category>
+      <category>RSA</category>
+      <category>elliptic curve</category>
+      <category>neutral atoms</category>
+      <category>error correction</category>
+      <category>cryptographic agility</category>
+      <category>quantum threat</category>
+      <category>payments security</category>
+    </item>
+    <item>
+      <title>Quantum-Safe Payments: Why the Industry Must Act Now</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Quantum computing threatens payment system cryptography. The EPAA white paper outlines the structural risk and the urgent case for PQC migration.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 01 Sep 2025 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/digital-nodes.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>quantum-safe payments</category>
+      <category>post-quantum cryptography</category>
+      <category>payments security</category>
+      <category>EPAA</category>
+      <category>ISO 20022</category>
+      <category>SWIFT</category>
+      <category>SEPA</category>
+    </item>
+    <item>
+      <title>Sebastien Rousseau: AI, Payments & Quantum Cryptography</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 15 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alesia-kazantceva-VWcPlbHglYc.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>banking</category>
+      <category>financial services</category>
+      <category>artificial intelligence</category>
+      <category>post-quantum cryptography</category>
+      <category>blockchain technology</category>
+      <category>transformation</category>
+      <category>innovation</category>
+      <category>technology</category>
+      <category>future</category>
+      <category>Sebastien Rousseau</category>
+    </item>
+    <item>
+      <title>Discover How Technology Is Changing Banking and Finance</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 15 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="http://127.0.0.1:8000/" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>Sample</category>
+      <category>Rust</category>
+      <category>static site generator</category>
+      <category>ssg</category>
+      <category>dynamic websites</category>
+      <category>HTML themes</category>
+      <category>templates</category>
+      <category>Markdown</category>
+      <category>YAML</category>
+      <category>JSON</category>
+      <category>TOML</category>
+    </item>
+    <item>
+      <title>Bug Discovered in Quantum Algorithm for Lattice-Based Crypto</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>A bug in Yilei Chen&apos;s quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 15 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/digital-nodes.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Post-Quantum Cryptography</category>
+      <category>NIST</category>
+      <category>PQC Standardisation</category>
+      <category>Quantum Algorithm</category>
+      <category>Lattice-Based Cryptography</category>
+      <category>LWE Problem</category>
+      <category>Quantum Computing</category>
+      <category>Cryptographic Security</category>
+      <category>Quantum Resistance</category>
+      <category>Cryptography Research</category>
+    </item>
+    <item>
+      <title>Quantum Algorithm Challenges Lattice-Based Cryptography</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>A new polynomial-time quantum algorithm by Yilei Chen targets lattice-based cryptography. Implications for post-quantum standards including CRYSTALS-Kyber.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 15 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/digital-constellation.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>quantum algorithms</category>
+      <category>cryptography</category>
+      <category>lattice problems</category>
+      <category>LWE</category>
+      <category>post-quantum</category>
+      <category>security</category>
+      <category>research</category>
+      <category>innovation</category>
+      <category>cybersecurity</category>
+      <category>future-proofing</category>
+    </item>
+    <item>
+      <title>Innovative and Creative Solutions Built with Open Source</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Explore my open-source projects and discover how I leverage open-source software to deliver groundbreaking solutions.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 01 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/declan-sun-pYLuh6fRdhw.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Artificial Intelligence</category>
+      <category>Voice Assistant</category>
+      <category>Audio Analysis</category>
+      <category>Quantum Computing</category>
+      <category>Quantum Cryptography</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>ISO 20022</category>
+      <category>Payment Automation</category>
+      <category>Bank Statement Parsing</category>
+      <category>Finance</category>
+      <category>Rust</category>
+      <category>Static Site Generator</category>
+      <category>Web Development</category>
+      <category>Password Generation</category>
+      <category>Cryptography</category>
+      <category>Rust Library</category>
+      <category>Logging</category>
+      <category>Serialization</category>
+      <category>YAML</category>
+      <category>Mersenne Twister</category>
+    </item>
+    <item>
+      <title>OpenVoice: Leading Innovation in Voice Cloning Technology</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Explore OpenVoice&apos;s groundbreaking voice cloning tech, offering unmatched speed, accuracy, and control in synthetic speech generation.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 01 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/open-voice.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>OpenVoice</category>
+      <category>Voice Cloning</category>
+      <category>Synthetic Speech</category>
+      <category>Open-Source</category>
+      <category>Cross-Lingual</category>
+      <category>Instant Cloning</category>
+      <category>Voice Control</category>
+      <category>Accessibility</category>
+      <category>Entertainment</category>
+      <category>Customer Service</category>
+    </item>
+    <item>
+      <title>Fully Homomorphic Encryption (FHE) in a Banking Quantum Era</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 25 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>FHE</category>
+      <category>Banking</category>
+      <category>Quantum Computing</category>
+      <category>Data Security</category>
+      <category>Encryption</category>
+      <category>Financial Technology</category>
+      <category>Regulatory Compliance</category>
+      <category>Computational Overhead</category>
+      <category>Research</category>
+      <category>Data Privacy</category>
+    </item>
+    <item>
+      <title>Advancing AI with Multimodal LLMs: Insights from MM1</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Explore Apple&apos;s MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 18 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/mm1-visual.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Multimodal</category>
+      <category>LLMs</category>
+      <category>AI</category>
+      <category>MM1</category>
+      <category>Pre-training</category>
+      <category>Image Recognition</category>
+      <category>NLP</category>
+      <category>Future</category>
+      <category>Learning</category>
+      <category>Research</category>
+    </item>
+    <item>
+      <title>Research Publications & White Papers from Sebastien Rousseau</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Buy and Download copies of my collection of White Papers and Research Publications on Artificial Intelligence (AI), Quantum Cryptography, and more.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Tue, 12 Mar 2024 21:21:21 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="http://127.0.0.1:8000/" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>White Papers</category>
+      <category>Research</category>
+      <category>Technology</category>
+      <category>ASR</category>
+      <category>OpenAI</category>
+      <category>macOS</category>
+      <category>Speech Recognition</category>
+      <category>GPU</category>
+      <category>Acceleration</category>
+      <category>Publications</category>
+    </item>
+    <item>
+      <title>Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Tue, 12 Mar 2024 21:21:21 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/research-paper.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>OpenAI</category>
+      <category>Whisper</category>
+      <category>Metal</category>
+      <category>macOS</category>
+      <category>Speech</category>
+      <category>Real-Time</category>
+      <category>Transcription</category>
+      <category>GPU</category>
+      <category>Python</category>
+      <category>Silicon</category>
+    </item>
+    <item>
+      <title>Unleashing the Power of Logging in Rust with RustLogs (RLG)</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. </description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Fri, 08 Mar 2024 06:06:06 +0100</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/rustlogs.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Rust</category>
+      <category>Logging</category>
+      <category>Asynchronous</category>
+      <category>Structured</category>
+      <category>Customisable</category>
+      <category>Debugging</category>
+      <category>Development</category>
+      <category>RustLogs</category>
+      <category>Integration</category>
+      <category>Documentation</category>
+    </item>
+    <item>
+      <title>Le Chat by Mistral AI: A New Era in Conversational AI</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Meet Mistral AI&apos;s new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real-time.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 04 Mar 2024 06:06:06 +0100</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Le Chat</category>
+      <category>Mistral AI</category>
+      <category>Conversational AI</category>
+      <category>Multilingual</category>
+      <category>Customisation</category>
+      <category>Business AI</category>
+      <category>Chatbot</category>
+      <category>AI Models</category>
+      <category>Enterprise Solutions</category>
+      <category>Technology</category>
+    </item>
+    <item>
+      <title>Google Gemma AI: Transforming Open-Source AI Development</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Explore Google&apos;s Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 26 Feb 2024 06:06:06 +0100</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-ship.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Gemma</category>
+      <category>Google</category>
+      <category>AI</category>
+      <category>Open-Source</category>
+      <category>Technical</category>
+      <category>Enterprise</category>
+      <category>Integration</category>
+      <category>macOS</category>
+      <category>Data</category>
+      <category>Ethics</category>
+    </item>
+    <item>
+      <title>Unlocking Gemini 1.5: Google's AI Revolution Explained</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Gemini 1.5 from Google scales context windows past 1M tokens. What that unlocks for retrieval-augmented finance and the trade-offs worth knowing.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 19 Feb 2024 14:15:15 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Gemini 1.5</category>
+      <category>Google AI</category>
+      <category>AI Efficiency</category>
+      <category>AI Quality</category>
+      <category>Context Window</category>
+      <category>In-Context Learning</category>
+      <category>AI Use Cases</category>
+      <category>AI Revolution</category>
+      <category>Technology Transformation</category>
+      <category>Data Analysis</category>
+    </item>
+    <item>
+      <title>EU's AI Act: Pioneering Ethical AI Regulation Worldwide</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Delve into the EU&apos;s Artificial Intelligence Act, a revolutionary framework setting global standards for ethical AI development and usage.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Tue, 13 Feb 2024 14:15:15 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>EU</category>
+      <category>AI</category>
+      <category>Regulation</category>
+      <category>Ethics</category>
+      <category>Innovation</category>
+      <category>Transparency</category>
+      <category>Governance</category>
+      <category>Standards</category>
+      <category>Consumer Rights</category>
+      <category>Technology</category>
+    </item>
+    <item>
+      <title>Àkàndé Voice Assistant, A Personal and Executive Assistance</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Discover how Àkàndé leverages OpenAI GPT&apos;s natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 12 Feb 2024 11:12:12 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Àkàndé</category>
+      <category>Voice Assistant</category>
+      <category>NLU</category>
+      <category>PDF</category>
+      <category>Caching</category>
+      <category>OpenAI</category>
+      <category>Executive</category>
+      <category>Personal</category>
+      <category>Digital</category>
+      <category>Innovation</category>
+      <category>Python</category>
+      <category>SQLite</category>
+      <category>Privacy</category>
+    </item>
+    <item>
+      <title>Revolutionising Advertising: How AI Shapes the Future</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Explore how AI transforms advertising with insights on Amazon&apos;s Rufus and Meta&apos;s latest developments. Discover the impact on consumer engagement</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Thu, 08 Feb 2024 07:08:08 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/advertising-ai.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>AI</category>
+      <category>Advertising</category>
+      <category>Amazon</category>
+      <category>Meta</category>
+      <category>Chatbots</category>
+      <category>Marketing</category>
+      <category>Technology</category>
+      <category>Analytics</category>
+      <category>Digital</category>
+      <category>Optimization</category>
+    </item>
+    <item>
+      <title>AI-Powered Speech Analysis, Translation, & Insight Tool</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 29 Jan 2024 05:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Azure</category>
+      <category>AI</category>
+      <category>Analytics</category>
+      <category>Transcription</category>
+      <category>Translation</category>
+      <category>Insights</category>
+      <category>Speech Recognition</category>
+      <category>Data Processing</category>
+      <category>Machine Learning</category>
+      <category>Technology</category>
+    </item>
+    <item>
+      <title>AI Prompt Engineering 2024: Insights & Advanced Techniques</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Tue, 23 Jan 2024 05:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>AI</category>
+      <category>Engineering</category>
+      <category>Quantum</category>
+      <category>Ethics</category>
+      <category>Technology</category>
+      <category>Innovation</category>
+      <category>Trends</category>
+      <category>Computing</category>
+      <category>Finance</category>
+      <category>Education</category>
+    </item>
+    <item>
+      <title>Accessibility Statement</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 15 Jan 2024 05:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/jaanus-jagomagi-Dymu1WiZVko.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>accessibility</category>
+      <category>wcag</category>
+      <category>inclusivity</category>
+      <category>screen-reader</category>
+      <category>usability</category>
+      <category>web-design</category>
+      <category>ada</category>
+      <category>compliance</category>
+      <category>ux</category>
+      <category>design</category>
+      <category>color-blindness</category>
+      <category>assistive-tech</category>
+    </item>
+    <item>
+      <title>Website created with Static Site Generator (SSG)</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>The Static Site Generator (SSG) is a lightning-fast tool for Search Engine Optimisation (SEO) and compliance to Accessibility Standards.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 15 Jan 2024 05:06:06 +0000</pubDate>
+      <author>Sebastian Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" type="image/webp" length="0"/>
+      <category>Software, Static Site Generator, Rust</category>
+      <category>website</category>
+      <category>builder</category>
+      <category>SEO</category>
+      <category>accessibility</category>
+      <category>Static Site Generator</category>
+      <category>easy</category>
+      <category>fast</category>
+      <category>secure</category>
+      <category>reliable</category>
+      <category>free</category>
+    </item>
+    <item>
+      <title>Made with Static Site Generator: Rust-Powered SSG</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Static Site Generator is a Rust-based static site generator built for performance, accessibility and SEO. Lightning-fast builds with first-class JSON-LD.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 15 Jan 2024 05:06:06 +0000</pubDate>
+      <author>Sebastian Rousseau</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" type="image/webp" length="0"/>
+      <category>Software, Static Site Generator, Rust</category>
+      <category>website</category>
+      <category>builder</category>
+      <category>SEO</category>
+      <category>accessibility</category>
+      <category>Static Site Generator</category>
+      <category>easy</category>
+      <category>fast</category>
+      <category>secure</category>
+      <category>reliable</category>
+      <category>free</category>
+    </item>
+    <item>
+      <title>Alien Studio: My Tech-to Art Journey in Photography</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 08 Jan 2024 05:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Technology</category>
+      <category>Art</category>
+      <category>Photography</category>
+      <category>Rust</category>
+      <category>AI</category>
+      <category>Quantum Computing</category>
+      <category>Personal Journey</category>
+      <category>Alien Studio</category>
+      <category>Digital Art</category>
+      <category>Innovation</category>
+    </item>
+    <item>
+      <title>Qiskit & Quantum Fourier Transform for Credit Ratio Analysis</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 08 Jan 2024 05:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Qiskit</category>
+      <category>Quantum Computing</category>
+      <category>Credit Analysis</category>
+      <category>FinTech</category>
+      <category>QFT</category>
+      <category>Risk Management</category>
+      <category>Finance</category>
+      <category>Data Science</category>
+      <category>Algorithm</category>
+      <category>Quantum Technology</category>
+    </item>
+    <item>
+      <title>AI Trends 2024: Insights and Predictions for the Future</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Explore the transformative AI trends of 2024, from generative AI to AI in retail, and how they&apos;ll shape our future.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 01 Jan 2024 05:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>AI</category>
+      <category>2024</category>
+      <category>Trends</category>
+      <category>Generative</category>
+      <category>Cybersecurity</category>
+      <category>Education</category>
+      <category>Retail</category>
+      <category>Ethics</category>
+      <category>Analytics</category>
+      <category>Innovation</category>
+    </item>
+    <item>
+      <title>Revolutionising Finance with AI-Enhanced Quantum Algorithms</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 25 Dec 2023 06:07:07 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>Quantum</category>
+      <category>AI</category>
+      <category>Finance</category>
+      <category>Algorithms</category>
+      <category>Mathematics</category>
+      <category>Banking</category>
+      <category>Technology</category>
+      <category>Innovation</category>
+      <category>Data</category>
+      <category>Efficiency</category>
+    </item>
+    <item>
+      <title>State of AI and Quantum Computing in Banking: A 2023 Review</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Exploring 2023&apos;s Technological Landscape: AI &amp; Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations &amp; Governance</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 18 Dec 2023 05:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>2023</category>
+      <category>AI</category>
+      <category>Quantum</category>
+      <category>Computing</category>
+      <category>Banking</category>
+      <category>Open-Source</category>
+      <category>Models</category>
+      <category>Regulations</category>
+      <category>Governance</category>
+      <category>Finance</category>
+      <category>Payments</category>
+      <category>Risk</category>
+      <category>Management</category>
+      <category>Cybersecurity</category>
+      <category>Transformation</category>
+      <category>Efficiency</category>
+      <category>Cost</category>
+      <category>Savings</category>
+      <category>Customer</category>
+      <category>Experiences</category>
+      <category>Revenue</category>
+      <category>Growth</category>
+      <category>Algorithms</category>
+      <category>Data</category>
+      <category>Analysis</category>
+      <category>Patterns</category>
+      <category>Decisions</category>
+      <category>Creditworthiness</category>
+      <category>Fraud</category>
+      <category>Mitigation</category>
+      <category>Loans</category>
+      <category>Approval</category>
+      <category>Investment</category>
+      <category>Portfolio</category>
+      <category>Optimisation</category>
+      <category>Market</category>
+      <category>Trends</category>
+      <category>Detection</category>
+      <category>Service</category>
+      <category>Proactive</category>
+      <category>Support</category>
+      <category>HSBC</category>
+      <category>Collaboration</category>
+      <category>Technology</category>
+      <category>Providers</category>
+      <category>Research</category>
+      <category>Laboratories</category>
+      <category>Real-World</category>
+      <category>Problems</category>
+      <category>Trading</category>
+      <category>Protection</category>
+      <category>Euros</category>
+      <category>Dollars</category>
+      <category>Adoption</category>
+      <category>Language</category>
+      <category>Models</category>
+      <category>LLMs</category>
+      <category>Developers</category>
+      <category>Researchers</category>
+      <category>Stakeholders</category>
+      <category>Democratisation</category>
+      <category>Innovation</category>
+      <category>Decision-Making</category>
+      <category>Transparency</category>
+      <category>Customisability</category>
+      <category>Interpretability</category>
+      <category>Contributions</category>
+      <category>Projects</category>
+      <category>Capabilities</category>
+      <category>Mixtral</category>
+      <category>GPT-NeoX</category>
+      <category>GPT-J</category>
+      <category>OPT-175</category>
+      <category>LLMa</category>
+      <category>Ethical</category>
+      <category>Guidelines</category>
+      <category>Human</category>
+      <category>Rights</category>
+      <category>Exploitation</category>
+      <category>Privacy</category>
+      <category>Multi-Stakeholder</category>
+      <category>Approach</category>
+      <category>Governments</category>
+      <category>Businesses</category>
+      <category>Civil</category>
+      <category>Society</category>
+      <category>National</category>
+      <category>International</category>
+      <category>Efforts</category>
+      <category>Development</category>
+      <category>Deployment</category>
+      <category>Challenges</category>
+      <category>YouTube</category>
+      <category>Channel</category>
+      <category>Automation</category>
+      <category>Modelling</category>
+      <category>Processing</category>
+      <category>Opportunities</category>
+      <category>Implications</category>
+    </item>
+    <item>
+      <title>Quantum Key Distribution Revolutionising Security in Banking</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 11 Dec 2023 09:00:00 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>quantum</category>
+      <category>key</category>
+      <category>distribution</category>
+      <category>cryptography</category>
+      <category>security</category>
+      <category>finance</category>
+      <category>banking</category>
+      <category>digital</category>
+      <category>innovation</category>
+      <category>blockchain</category>
+      <category>quantum computing</category>
+      <category>hsbc</category>
+      <category>trading</category>
+      <category>data</category>
+      <category>protection</category>
+      <category>future</category>
+    </item>
+    <item>
+      <title>Efficient Date and Time Management with DateTime (DTT)</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>DateTime (DTT) is a Rust library for parsing, validating, manipulating and formatting dates and times — high precision, broad functionality.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 04 Dec 2023 09:00:00 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>quantum-safe</category>
+      <category>cryptography</category>
+      <category>KyberLib</category>
+      <category>Rust</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>lattice-based</category>
+      <category>NIST</category>
+      <category>standardization</category>
+      <category>KEM</category>
+      <category>digital signatures</category>
+      <category>lightweight</category>
+      <category>hash-based</category>
+      <category>Kyber512</category>
+      <category>Kyber768</category>
+      <category>Kyber1024</category>
+      <category>security</category>
+      <category>efficiency</category>
+      <category>versatility</category>
+      <category>no-std</category>
+      <category>memory safety</category>
+      <category>system-level</category>
+      <category>embedded</category>
+      <category>WebAssembly</category>
+      <category>web</category>
+    </item>
+    <item>
+      <title>CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Sun, 19 Nov 2023 09:59:00 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>quantum</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>encryption</category>
+      <category>security</category>
+      <category>banking</category>
+      <category>finance</category>
+      <category>data</category>
+      <category>future</category>
+      <category>quantum-resistant</category>
+      <category>cryptography</category>
+    </item>
+    <item>
+      <title>KyberLib: A Rust-Powered Shield Against Quantum Threats</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Sun, 19 Nov 2023 09:59:00 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>quantum-safe</category>
+      <category>cryptography</category>
+      <category>KyberLib</category>
+      <category>Rust</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>lattice-based</category>
+      <category>NIST</category>
+      <category>standardization</category>
+      <category>KEM</category>
+      <category>digital signatures</category>
+      <category>lightweight</category>
+      <category>hash-based</category>
+      <category>Kyber512</category>
+      <category>Kyber768</category>
+      <category>Kyber1024</category>
+      <category>security</category>
+      <category>efficiency</category>
+      <category>versatility</category>
+      <category>no-std</category>
+      <category>memory safety</category>
+      <category>system-level</category>
+      <category>embedded</category>
+      <category>WebAssembly</category>
+      <category>web</category>
+    </item>
+    <item>
+      <title>Exploring Generative AI: Shaping the Future of Technology</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Sun, 12 Nov 2023 20:30:00 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>AI</category>
+      <category>Generative</category>
+      <category>Technology</category>
+      <category>Future</category>
+      <category>Impact</category>
+      <category>Ethics</category>
+      <category>Synergies</category>
+      <category>Innovation</category>
+      <category>Creativity</category>
+      <category>Transformation</category>
+    </item>
+    <item>
+      <title>Mathematical and Cryptographic Constants for Rust Security</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Sun, 05 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>math</category>
+      <category>security</category>
+      <category>cryptography</category>
+      <category>Rust</category>
+      <category>programming</category>
+      <category>encryption</category>
+      <category>communication</category>
+      <category>constants</category>
+      <category>constants in Rust</category>
+      <category>Common library</category>
+    </item>
+    <item>
+      <title>Protecting Data in the Quantum Age: The Hash Library (HSH)</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>HSH uses quantum-resistant cryptographic primitives to protect your data, ensuring its security even in the face of future quantum computing advances.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Fri, 27 Oct 2023 05:13:00 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>quantum-resistant cryptography</category>
+      <category>post-quantum cryptography</category>
+      <category>hash library</category>
+      <category>HSH</category>
+      <category>password hashing</category>
+      <category>key derivation</category>
+      <category>Argon2i</category>
+      <category>Bcrypt</category>
+      <category>Scrypt</category>
+      <category>quantum computing</category>
+    </item>
+    <item>
+      <title>Streamlining Rust Library Development with Code Generation</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Thu, 26 Oct 2023 11:21:00 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>rust</category>
+      <category>library</category>
+      <category>development</category>
+      <category>code</category>
+      <category>generator</category>
+      <category>boilerplate</category>
+      <category>best</category>
+      <category>practices</category>
+      <category>quality</category>
+      <category>reliable</category>
+    </item>
+    <item>
+      <title>Static Site Generator, the fastest Rust-based Static Site Generator (SSG)</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 09 Oct 2023 05:13:00 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>pain001</category>
+      <category>iso 20022</category>
+      <category>payment automation</category>
+      <category>cost reduction</category>
+      <category>payment processing</category>
+      <category>payment files</category>
+      <category>payment initiation</category>
+      <category>pain message</category>
+      <category>pain message standards</category>
+      <category>pain message validation</category>
+    </item>
+    <item>
+      <title>404 Not Found: I couldn't find the page you were looking for</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>It seems the page you are visiting has been removed, renamed, or is otherwise unavailable. For more information, please visit the homepage.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Sun, 01 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alexandr-podvalny-n_Jb_d8O43Q.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+    </item>
+    <item>
+      <title>Topics & Tags Index: AI, Payments, Quantum, Rust OSS</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Browse Sebastien Rousseau&apos;s site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Sun, 01 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-11829333.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>explore by tag</category>
+      <category>explore topics</category>
+      <category>delve deeper</category>
+      <category>get to the subjects</category>
+      <category>matter most</category>
+      <category>website</category>
+      <category>website content</category>
+      <category>website topics</category>
+      <category>website tags</category>
+      <category>website search</category>
+      <category>website navigation</category>
+    </item>
+    <item>
+      <title>Thank you for contacting me. I will be in touch shortly.</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>I just received your message. Thank you very much for your interest and query. I am working on your request and will get in touch as soon as possible.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Sun, 01 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/robert-haverly-_kmr5wKVW7E.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>contact</category>
+      <category>help</category>
+      <category>support</category>
+    </item>
+    <item>
+      <title>Embark on a Personal Journey with the Best Spotify Playlists</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Looking for the best Spotify playlists for Jazz, Soul, Hip Hop, Rap, R&amp;B, Neo Soul, House Music, Indie Rock, and Pop Music? Look no further!</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Sun, 01 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tiachen-aier-d4ab9H_2WNA.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>best spotify playlists</category>
+      <category>jazz playlists</category>
+      <category>soul playlists</category>
+      <category>hip hop playlists</category>
+      <category>rap playlists</category>
+      <category>r&amp;b playlists</category>
+      <category>neo soul playlists</category>
+      <category>house music playlists</category>
+      <category>indie rock playlists</category>
+      <category>pop music playlists</category>
+    </item>
+    <item>
+      <title>Sebastien Rousseau: AI, Banking & Financial Services Expert</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Shaping the Future of Banking and Financial Services through Strategic Integration of Artificial Intelligence, Post-Quantum Cryptography &amp; Blockchain Technology</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Sun, 01 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="http://127.0.0.1:8000/" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>payments technology</category>
+      <category>digital finance</category>
+      <category>artificial intelligence</category>
+      <category>post-quantum cryptography</category>
+      <category>blockchain technology</category>
+      <category>strategic leadership</category>
+      <category>operational leadership</category>
+      <category>cross-platform product design</category>
+      <category>engineering</category>
+      <category>solution architecture</category>
+    </item>
+    <item>
+      <title>Privacy Statement — How Your Data Is Collected & Used</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Sun, 01 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/jez-timms-4xLteCXh6X0.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>privacy</category>
+      <category>personal data</category>
+      <category>tracking tools</category>
+      <category>Google Analytics</category>
+      <category>Microsoft Clarity</category>
+      <category>user behaviour analytics</category>
+      <category>mouse movements</category>
+      <category>clicks</category>
+      <category>scrolls</category>
+      <category>rights</category>
+      <category>contact</category>
+    </item>
+    <item>
+      <title>No Internet Connection detected. Please try again later.</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>I apologise for the inconvenience. To continue, please connect to a Wi-Fi network or enable cellular data, you can also:</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Sun, 01 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alexandr-podvalny-n_Jb_d8O43Q.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+    </item>
+    <item>
+      <title>Let's Start a Conversation That Will Make a Real Difference</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Have a question or comment? Please contact me using the form below. I am always happy to hear from you and will respond as soon as possible.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Sun, 01 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/robert-haverly-_kmr5wKVW7E.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>contact</category>
+      <category>help</category>
+      <category>support</category>
+    </item>
+    <item>
+      <title>Website Terms & Conditions of Use — Sebastien Rousseau</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Sun, 01 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/jez-timms-4xLteCXh6X0.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>agreement</category>
+      <category>copyright</category>
+      <category>intellectual property</category>
+      <category>liability</category>
+      <category>limitation</category>
+      <category>links</category>
+      <category>privacy</category>
+      <category>terms</category>
+      <category>trademark</category>
+      <category>use</category>
+      <category>website</category>
+    </item>
+    <item>
+      <title>Automating ISO 20022 Payment Files Creation with Pain001</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Automate the creation of ISO 20022 pain.001 payment files from CSV or SQLite. pain001 is the open-source Python library that streamlines compliance.</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Fri, 29 Sep 2023 08:57:00 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>pain001</category>
+      <category>iso 20022</category>
+      <category>payment automation</category>
+      <category>cost reduction</category>
+      <category>payment processing</category>
+      <category>payment files</category>
+      <category>payment initiation</category>
+      <category>pain message</category>
+      <category>pain message standards</category>
+      <category>pain message validation</category>
+    </item>
+    <item>
+      <title>Understanding the Technology behind Blockchain</title>
+      <link>http://127.0.0.1:8000/.meta/</link>
+      <description>Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation</description>
+      <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
+      <pubDate>Mon, 09 Jan 2023 09:09:00 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>pain001</category>
+      <category>iso 20022</category>
+      <category>payment automation</category>
+      <category>cost reduction</category>
+      <category>payment processing</category>
+      <category>payment files</category>
+      <category>payment initiation</category>
+      <category>pain message</category>
+      <category>pain message standards</category>
+      <category>pain message validation</category>
+    </item>
+  </channel>
+</rss>
