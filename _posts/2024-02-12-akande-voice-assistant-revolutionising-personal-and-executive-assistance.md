@@ -42,7 +42,7 @@ short_name: "sebastienrousseau"
 subtitle: "Empowering Seamless Interactions with Cutting-Edge AI Technology"
 tags: "Àkàndé, Voice Assistant, NLU, PDF, Caching, OpenAI, Executive, Personal, Digital, Innovation, Python, SQLite, Privacy"
 theme-color: "0, 67, 165"
-title: "Àkàndé Voice Assistant, A Personal and Executive Assistance"
+title: "Àkàndé: GPT-Powered Voice Assistant for Executives"
 url: "https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 

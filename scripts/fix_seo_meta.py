@@ -46,6 +46,34 @@ TITLES: dict[str, str] = {
     "_drafts/unlocking-security-with-password-generator-pro-a-fast-simple-and-secure-password-solution.md": (
         "Password Generator Pro: Fast, Secure CLI Tool in Rust"
     ),
+    # Round 2 — surfaced after redesign + brand rename audit.
+    "_posts/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator.md": (
+        "Static Site Generator: Fastest Rust-Based SSG"
+    ),
+    "_posts/2023-11-12-exploring-generative-ai.md": (
+        "Generative AI in 2023: How It Works, Where It Lands"
+    ),
+    "_posts/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats.md": (
+        "KyberLib: Rust CRYSTALS-Kyber for Post-Quantum"
+    ),
+    "_posts/2024-01-23-advancements-in-ai-prompt-engineering.md": (
+        "AI Prompt Engineering 2024: Techniques That Work"
+    ),
+    "_posts/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future.md": (
+        "Generative AI in Advertising: Amazon Rufus & Meta"
+    ),
+    "_posts/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance.md": (
+        "Àkàndé: GPT-Powered Voice Assistant for Executives"
+    ),
+    "_posts/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai.md": (
+        "Le Chat by Mistral AI: Multilingual Conversational AI"
+    ),
+    "_posts/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications.md": (
+        "RustLogs (RLG): Structured Logging Library for Rust"
+    ),
+    "_posts/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto.md": (
+        "Quantum Lattice Crypto: Bug in Chen's LWE Attack"
+    ),
 }
 
 DESCS: dict[str, str] = {
@@ -98,6 +126,23 @@ DESCS: dict[str, str] = {
     "_posts/made-with-static-site-generator.md": (
         "Static Site Generator is a Rust-based static site generator built for performance, "
         "accessibility and SEO. Lightning-fast builds with first-class JSON-LD."
+    ),
+    # Round 2 — descriptions still outside the 120–160 char band.
+    "_posts/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future.md": (
+        "AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the "
+        "shifts that will reshape banking and product engineering."
+    ),
+    "_posts/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation.md": (
+        "The EU AI Act sets the first comprehensive framework for ethical, risk-tiered AI "
+        "regulation worldwide. What changes for banks, vendors and high-risk systems."
+    ),
+    "_posts/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology.md": (
+        "OpenVoice from MIT, Tsinghua and MyShell delivers production-grade voice cloning with "
+        "fine-grained tone, accent and emotion control — and the trade-offs worth knowing."
+    ),
+    "_posts/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto.md": (
+        "A bug in Yilei Chen's quantum LWE algorithm temporarily reprieves lattice-based "
+        "cryptography. What it means for CRYSTALS-Kyber, Dilithium and the PQC roadmap."
     ),
 }
 

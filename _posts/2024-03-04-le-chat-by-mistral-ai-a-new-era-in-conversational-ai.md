@@ -42,7 +42,7 @@ short_name: "sebastienrousseau"
 subtitle: "Redefining User Interaction Across Languages"
 tags: "Le Chat, Mistral AI, Conversational AI, Multilingual, Customisation, Business AI, Chatbot, AI Models, Enterprise Solutions, Technology"
 theme-color: "0, 67, 165"
-title: "Le Chat by Mistral AI: A New Era in Conversational AI"
+title: "Le Chat by Mistral AI: Multilingual Conversational AI"
 url: "https://sebastienrousseau.com/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 

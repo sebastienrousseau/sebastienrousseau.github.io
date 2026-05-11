@@ -58,6 +58,25 @@ PAPERS_FAQ = (
     '"acceptedAnswer":{"@type":"Answer","text":"New papers and research notes are announced first through the site RSS feed at /rss.xml and the Banking On Quantum newsletter at news.bankingonquantum.com, which covers post-quantum cryptography, central-bank policy, and the migration roadmap across major payment schemes."}}'
     ']}'
 )
+# FAQ block for /projects/. Mirrors the on-page accordion so AI engines can
+# cite licence, production-readiness, contribution and commercial-support
+# answers directly.
+PROJECTS_FAQ = (
+    ',{"@type":"FAQPage","@id":"{{url}}#faq","mainEntity":['
+    '{"@type":"Question","name":"What licence are these projects released under?",'
+    '"acceptedAnswer":{"@type":"Answer","text":"Most projects are dual-licensed under MIT and Apache-2.0 — the standard for the Rust ecosystem — which gives commercial users explicit patent rights as well as permissive redistribution. A small number of clients\' tools are released under Apache-2.0 only. The licence file at the root of each repository is the authoritative source."}},'
+    '{"@type":"Question","name":"Are these projects production-ready?",'
+    '"acceptedAnswer":{"@type":"Answer","text":"Many are. pain001 is used by banks and payment-service providers to automate ISO 20022 file creation. KyberLib tracks the NIST FIPS 203 specification and ships test vectors. Each repository\'s README and CI badges will tell you the current status; if you need a specific guarantee for production use, get in touch."}},'
+    '{"@type":"Question","name":"How can I contribute or report an issue?",'
+    '"acceptedAnswer":{"@type":"Answer","text":"Every project has a public GitHub repository under github.com/sebastienrousseau. Open an issue describing the problem (a minimal reproducer helps) or a pull request linked to an issue. Contributions are governed by the Developer Certificate of Origin and require signed commits."}},'
+    '{"@type":"Question","name":"Can I use these libraries in a regulated banking environment?",'
+    '"acceptedAnswer":{"@type":"Answer","text":"Yes, with the usual caveats. The libraries are independent open-source work, not a regulated product. Run your normal supply-chain, security, and dependency-review processes — vendoring through your internal mirror, scanning with SBOM tools, and pinning by Git SHA or cryptographic hash — before deploying to production payment infrastructure."}},'
+    '{"@type":"Question","name":"Do you offer commercial support or consulting?",'
+    '"acceptedAnswer":{"@type":"Answer","text":"Yes, on a selective basis. Engagements focus on ISO 20022 migration, post-quantum cryptography migration roadmaps, and applied AI in financial services. Get in touch with a short brief, your timeline and any constraints."}},'
+    '{"@type":"Question","name":"How do I follow new releases?",'
+    '"acceptedAnswer":{"@type":"Answer","text":"New papers and research notes are announced first through the site RSS feed and the Banking On Quantum newsletter, which covers post-quantum cryptography, central-bank policy, and the migration roadmap across major payment schemes. Individual repositories also publish releases on GitHub, which you can watch directly."}}'
+    ']}'
+)
 # Each schema is wrapped in an @graph array so we can attach the BreadcrumbList
 # as a second top-level node without breaking the JSON envelope.
 WRAP = lambda body, extra="": '"@graph":[{' + body + '}' + BREADCRUMB + extra + ']'
@@ -68,7 +87,7 @@ SCHEMA_TEMPLATES = {
     "contact":  WRAP('"@type":"ContactPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","mainEntity":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
     "articles": WRAP('"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Banking, payments, AI and post-quantum cryptography","author":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
     "papers":   WRAP('"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Research papers and white papers on wholesale payments and post-quantum cryptography","author":' + PERSON_REF + ',"isPartOf":' + SITE_REF, PAPERS_FAQ),
-    "projects": WRAP('"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Open-source projects applied to finance and banking","author":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
+    "projects": WRAP('"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Open-source projects applied to finance and banking","author":' + PERSON_REF + ',"isPartOf":' + SITE_REF, PROJECTS_FAQ),
     "playlist": WRAP('"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Curated Spotify playlists","author":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
     "report":   WRAP('"@type":"BlogPosting","headline":"{{title}}","description":"{{description}}","image":' + IMAGE_OBJ + ',"url":"{{url}}","datePublished":"{{item_pub_date}}","dateModified":"{{last_build_date}}","inLanguage":"{{hreflang}}","keywords":"{{keywords}}","articleSection":"{{category}}","author":' + PERSON_REF + ',"publisher":' + PERSON_REF + ',"mainEntityOfPage":{"@type":"WebPage","@id":"{{url}}"}'),
 }

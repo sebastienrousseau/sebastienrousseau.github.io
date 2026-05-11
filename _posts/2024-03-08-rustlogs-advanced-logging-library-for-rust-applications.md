@@ -42,7 +42,7 @@ short_name: "sebastienrousseau"
 subtitle: "Streamline Your Rust Logging Workflow"
 tags: "Rust, Logging, Asynchronous, Structured, Customisable, Debugging, Development, RustLogs, Integration, Documentation"
 theme-color: "0, 67, 165"
-title: "Unleashing the Power of Logging in Rust with RustLogs (RLG)"
+title: "RustLogs (RLG): Structured Logging Library for Rust"
 url: "https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 

@@ -42,7 +42,7 @@ short_name: "sebastienrousseau"
 subtitle: "Reshaping human-computer interaction with significant advancements in custom instructions"
 tags: "AI, Engineering, Quantum, Ethics, Technology, Innovation, Trends, Computing, Finance, Education"
 theme-color: "0, 67, 165"
-title: "AI Prompt Engineering 2024: Insights & Advanced Techniques"
+title: "AI Prompt Engineering 2024: Techniques That Work"
 url: "https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 

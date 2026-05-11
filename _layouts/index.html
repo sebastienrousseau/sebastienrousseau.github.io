@@ -160,7 +160,11 @@
       .ap-hero figure.hero-figure[data-empty=""]{display:none}
 
       /* ---------- Pill button (Apple-style) ---------- */
-      .pill,a.pill,button.pill{display:inline-block;background:var(--accent);color:#fff !important;font-size:17px;font-weight:400;line-height:1;padding:13px 22px;border-radius:980px;border:1px solid transparent;text-decoration:none !important;cursor:pointer;transition:opacity .15s ease,background .15s ease,transform .15s ease;font-family:inherit}
+      /* Pill button. Vertical padding bumped to clear the WCAG 2.5.5 / Apple
+         44×44 px hit-area minimum for mobile touch (17px text + 14px×2 padding
+         + 1px×2 border = ~46px). Horizontal kept at 22px for Apple-typical
+         proportions. */
+      .pill,a.pill,button.pill{display:inline-block;min-height:44px;background:var(--accent);color:#fff !important;font-size:17px;font-weight:400;line-height:1;padding:14px 22px;border-radius:980px;border:1px solid transparent;text-decoration:none !important;cursor:pointer;transition:opacity .15s ease,background .15s ease,transform .15s ease;font-family:inherit;box-sizing:border-box}
       .pill:hover{opacity:.92}
       /* Explicit .pill.primary so authors can opt-in to the solid accent style
          even in contexts where a more specific colour rule might otherwise win. */

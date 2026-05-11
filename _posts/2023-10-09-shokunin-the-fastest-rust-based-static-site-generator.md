@@ -42,7 +42,7 @@ short_name: "sebastienrousseau"
 subtitle: "Static Site Generator, the fastest Rust-based static site generator for high-impact websites."
 tags: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
 theme-color: "0, 67, 165"
-title: "Static Site Generator, the fastest Rust-based Static Site Generator (SSG)"
+title: "Static Site Generator: Fastest Rust-Based SSG"
 url: "https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 

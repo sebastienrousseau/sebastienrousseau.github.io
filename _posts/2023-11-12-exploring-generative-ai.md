@@ -42,7 +42,7 @@ short_name: "sebastienrousseau"
 subtitle: "Applied artificial intelligence in banking and financial services."
 tags: "AI, Generative, Technology, Future, Impact, Ethics, Synergies, Innovation, Creativity, Transformation"
 theme-color: "0, 67, 165"
-title: "Exploring Generative AI: Shaping the Future of Technology"
+title: "Generative AI in 2023: How It Works, Where It Lands"
 url: "https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 
