@@ -160,18 +160,18 @@
       .ap-hero figure.hero-figure[data-empty=""]{display:none}
 
       /* ---------- Pill button (Apple-style) ---------- */
-      .pill,a.pill,button.pill{display:inline-block;background:var(--accent);color:#fff;font-size:17px;font-weight:400;line-height:1;padding:13px 22px;border-radius:980px;border:1px solid transparent;text-decoration:none;cursor:pointer;transition:opacity .15s ease,background .15s ease,transform .15s ease;font-family:inherit}
+      .pill,a.pill,button.pill{display:inline-block;background:var(--accent);color:#fff !important;font-size:17px;font-weight:400;line-height:1;padding:13px 22px;border-radius:980px;border:1px solid transparent;text-decoration:none !important;cursor:pointer;transition:opacity .15s ease,background .15s ease,transform .15s ease;font-family:inherit}
       .pill:hover{opacity:.92}
       /* Explicit .pill.primary so authors can opt-in to the solid accent style
          even in contexts where a more specific colour rule might otherwise win. */
       .pill.primary,a.pill.primary,button.pill.primary{background:var(--accent) !important;color:#fff !important;border-color:transparent}
       .pill.primary:hover{background:var(--accent);color:#fff;opacity:.92}
-      .pill.ghost{background:transparent;color:var(--accent);border-color:currentColor}
+      .pill.ghost{background:transparent;color:var(--accent) !important;border-color:currentColor}
       .pill.ghost:hover{background:rgba(var(--accent-rgb),.08);opacity:1}
       /* On dark hero sections, the ghost pill text needs to be white for
          AAA contrast against the black background — the accent blue is only
          ~2.6:1 on black. */
-      .feat.dark .pill.ghost,.feat-finale .pill.ghost{color:#fff;border-color:#fff}
+      .feat.dark .pill.ghost,.feat-finale .pill.ghost{color:#fff !important;border-color:#fff}
       .feat.dark .pill.ghost:hover,.feat-finale .pill.ghost:hover{background:rgba(255,255,255,.1)}
       .pill.dark{background:#1d1d1f;color:#fff}
       .pill.dark:hover{background:#000}
@@ -390,11 +390,12 @@
          Centred hero with primary + ghost CTAs, then a three-card "what is
          inside" feature block, each card icon-led and quietly elevated. */
       /* /projects/ eyebrow + CTA strip — sits centred directly under the
-         layout's ap-hero (which carries the page H1 and subtitle). No
-         duplicate headline, no own bottom border (the next section ships its
-         own separation). */
-      .setup-hero-eyebrow{text-align:center;margin:0 0 18px;font-size:12px;font-weight:600;letter-spacing:.12em;color:var(--accent);text-transform:uppercase}
-      .setup-hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:0 0 56px}
+         layout's ap-hero (which carries the page H1 and subtitle). Skeletonic
+         ships a global `p{max-width:65ch}` which would constrain these
+         paragraphs to a 65-char-wide block left-aligned in the wrap, so the
+         text appears off-centre. Force full width here. */
+      .setup-hero-eyebrow{max-width:none !important;width:100%;text-align:center;margin:0 0 18px;font-size:12px;font-weight:600;letter-spacing:.12em;color:var(--accent);text-transform:uppercase}
+      .setup-hero-cta{max-width:none !important;width:100%;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:0 0 56px}
       .setup-three{margin:0 0 72px}
       .setup-three-head{text-align:center;margin:0 0 40px}
       .setup-three-kicker{margin:0 0 10px;font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--accent);text-transform:uppercase}
