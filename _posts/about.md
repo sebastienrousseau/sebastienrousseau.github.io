@@ -111,6 +111,35 @@ Before joining HSBC, Sebastien played a key role in designing and delivering ope
 
 Sebastien’s diverse experience in banking, financial services, communications, creative, and media has given him a profound understanding of how Information Technology (IT) can be a force multiplier for business and customer benefits. He is an experienced strategic and operational leader with cross-platform product design, engineering, and solution architecture skills. He is an active contributor to the open source community and is consistently at the forefront of financial innovation.
 
+## Identifiers and credentials
+
+<dl class="author-ids">
+<!--
+TODO(seb): register an ORCID iD at https://orcid.org/register, replace the
+href + visible text below, then remove this comment. ORCID is the
+researcher-identifier equivalent of a Knowledge-Graph anchor — Google /
+Crossref / EUR ePub / IEEE cross-walk a profile back to publications.
+-->
+<dt>ORCID iD</dt>
+<dd><a href="https://orcid.org/" rel="external me noopener">Pending registration</a></dd>
+<dt>GitHub</dt>
+<dd><a href="https://github.com/sebastienrousseau" rel="external me noopener">github.com/sebastienrousseau</a></dd>
+<dt>LinkedIn</dt>
+<dd><a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external me noopener">linkedin.com/in/sebastienrousseau</a></dd>
+<dt>Working group</dt>
+<dd><a href="https://emergingpaymentsasia.org/" rel="external noopener">Emerging Payments Association Asia · Quantum-Safe Cryptography Working Group</a></dd>
+</dl>
+
+## Featured in
+
+<ul class="featured-in">
+<li><a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" rel="external noopener"><strong>EPAA</strong> · Quantum-Safe Payments white paper · Sept 2025</a></li>
+<li><a href="https://news.bankingonquantum.com" rel="external noopener"><strong>Banking On Quantum</strong> · weekly post-quantum cryptography newsletter</a></li>
+<li><a href="https://bankingonai.co/" rel="external noopener"><strong>Banking On AI</strong> · publisher and editor on applied AI in banking</a></li>
+<li><a href="https://pain001.com" rel="external noopener"><strong>pain001</strong> · maintainer · ISO 20022 payment automation library</a></li>
+<li><a href="https://kyberlib.com" rel="external noopener"><strong>KyberLib</strong> · author · Rust implementation of NIST FIPS 203</a></li>
+</ul>
+
 ## Experience
 
 Brands Sebastien has worked with along the way.

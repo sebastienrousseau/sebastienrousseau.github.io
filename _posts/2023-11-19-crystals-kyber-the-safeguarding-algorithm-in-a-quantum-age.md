@@ -97,8 +97,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "In my previous article, [Protecting Data in the Quantum Age ⧉][03], I delved into the impending threat of quantum computing to digital security and looked at how quantum-resistant cryptography…"
+last_reviewed: "2026-05-11"
 ---
 
+
+<!-- lead-start -->
+
+> **TL;DR.** Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.
+>
+> **Key takeaways:**
+>
+> - **Idea.** At the core of CRYSTALS-Kyber's groundbreaking design lies its innovative approach to key encapsulation, a critical component of secure communication.
+> - **Impact.** The banking and financial services industry is in a constant race to stay ahead of increasingly sophisticated cyber threats.
+> - **Incentives.** In a landscape where cybersecurity is not just a necessity but a competitive differentiator, the banking and financial services industry stands at a critical juncture.
+> - **Navigating the Quantum Threat: The Genesis of CRYSTALS-Kyber.** In my previous article, [Protecting Data in the Quantum Age ⧉][03], I delved into the impending threat of quantum computing to digital security and looked at how quantum-resistant cryptography (QRC) can address it.
+>
+> **Related reading:** [Quantum Key Distribution Revolutionising Security in Banking](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html), [Revolutionising Finance with AI-Enhanced Quantum Algorithms](https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html), [State of AI and Quantum Computing in Banking: A 2023 Review](https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html).
+
+<!-- lead-end -->
 ![AI, Artificial Intelligence concept,3d rendering,conceptual image](https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp).class=\"img-fluid clearfix\"
 
 ## Insight
@@ -251,3 +268,15 @@ Thank you again for your time and I look forward to hearing from you.
 [03]: /2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html "Protecting Data in the Quantum Age: The Hash Library (HSH)"
 [04]: https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-kyber.svg "CRYSTALS-Kyber Key Encapsulation Mechanism (KEM)"
 [05]: https://www.nist.gov/ "The National Institute of Standards and Technology (NIST)"
+
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" class="related-media" aria-label="Quantum Key Distribution Revolutionising Security in Banking" tabindex="-1"><img alt="Quantum Key Distribution Revolutionising Security in Banking" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html" class="related-media" aria-label="Revolutionising Finance with AI-Enhanced Quantum Algorithms" tabindex="-1"><img alt="Revolutionising Finance with AI-Enhanced Quantum Algorithms" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a></h3><p><time datetime="2023-12-25">2023-12-25</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" class="related-media" aria-label="State of AI and Quantum Computing in Banking: A 2023 Review" tabindex="-1"><img alt="State of AI and Quantum Computing in Banking: A 2023 Review" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a></h3><p><time datetime="2023-12-18">2023-12-18</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

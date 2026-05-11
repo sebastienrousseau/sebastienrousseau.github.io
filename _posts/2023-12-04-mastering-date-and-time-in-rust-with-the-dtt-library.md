@@ -97,8 +97,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "In the realm of software development, effectively managing dates and times is a common challenge. DateTime (DTT) emerges as a Rust library meticulously crafted to streamline this process,…"
+last_reviewed: "2026-05-11"
 ---
 
+
+<!-- lead-start -->
+
+> **TL;DR.** DateTime (DTT) is a Rust library for parsing, validating, manipulating and formatting dates and times — high precision, broad functionality.
+>
+> **Key takeaways:**
+>
+> - **Efficient Date and Time Management with DateTime (DTT).** In the realm of software development, effectively managing dates and times is a common challenge.
+> - **What is DTT?.** DateTime (DTT) stands as an open-source Rust library, meticulously designed to simplify the way you interact with dates and times.
+> - **Features.** DTT boasts an array of features that empower developers to effortlessly manage dates and times:.
+> - **Getting Started with DTT.** To begin using DTT in your Rust projects, follow these simple steps:.
+>
+> **Related reading:** [KyberLib: Rust CRYSTALS-Kyber for Post-Quantum](https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html), [CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age](https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html), [Mathematical and Cryptographic Constants for Rust Security](https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html).
+
+<!-- lead-end -->
 [![DateTime (DTT), Your Essential Toolkit for Date and Time Operations](https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg).class=\"img-fluid clearfix\"][01]
 
 ## Efficient Date and Time Management with DateTime (DTT)
@@ -197,3 +214,15 @@ Employing DateTime (DTT) for managing dates and times in your Rust projects offe
 [03]: https://github.com/sebastienrousseau/dtt "DateTime (DTT) GitHub Repository"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
+
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html" class="related-media" aria-label="KyberLib: Rust CRYSTALS-Kyber for Post-Quantum" tabindex="-1"><img alt="KyberLib: Rust CRYSTALS-Kyber for Post-Quantum" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html">KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</a></h3><p><time datetime="2023-11-28">2023-11-28</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" class="related-media" aria-label="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age" tabindex="-1"><img alt="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a></h3><p><time datetime="2023-11-19">2023-11-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html" class="related-media" aria-label="Mathematical and Cryptographic Constants for Rust Security" tabindex="-1"><img alt="Mathematical and Cryptographic Constants for Rust Security" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html">Mathematical and Cryptographic Constants for Rust Security</a></h3><p><time datetime="2023-11-05">2023-11-05</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

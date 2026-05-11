@@ -105,8 +105,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "Google recently launched [Gemma ⧉][00], an open-source artificial intelligence model designed to provide an accessible and ethical foundation for AI development. As an open-source model, Gemma…"
+last_reviewed: "2026-05-11"
 ---
 
+
+<!-- lead-start -->
+
+> **TL;DR.** Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use.
+>
+> **Key takeaways:**
+>
+> - **Google's Revolutionary Open-Source AI Model for Accessible and Ethical ML Development.** Google recently launched [Gemma ⧉][00], an open-source artificial intelligence model designed to provide an accessible and ethical foundation for AI development.
+> - **Understanding Gemma.** Google's Gemini architecture inspires Gemma and is available in two main configurations:.
+> - **Integrating Google Gemma with Ollama on macOS.** [Ollama ⧉][02] is an interface that enables exploring AI assistants locally on a macOS system.
+> - **Initialising Local Gemma Instance.** Choose the Gemma model you wish to run:.
+>
+> **Related reading:** [State of AI and Quantum Computing in Banking: A 2023 Review](https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html), [EU's AI Act: Pioneering Ethical AI Regulation Worldwide](https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html), [AI Prompt Engineering 2024: Techniques That Work](https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html).
+
+<!-- lead-end -->
 ## Google's Revolutionary Open-Source AI Model for Accessible and Ethical ML Development
 
 Google recently launched [**Gemma ⧉**][00], an open-source artificial intelligence model designed to provide an accessible and ethical foundation for AI development. As an open-source model, Gemma offers its full architecture, training methodology, model weights and parameters under permissible licenses for external researchers and developers to freely access, learn from, build upon and even customise for their unique needs. This transparent approach also allows scrutiny of Gemma's development practices to uphold accountability.
@@ -307,3 +324,15 @@ Gemma's launch is a watershed moment in the field of AI, highlighting a shift to
 [05]: https://ollama.com/download "Ollama Download"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
+
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" class="related-media" aria-label="State of AI and Quantum Computing in Banking: A 2023 Review" tabindex="-1"><img alt="State of AI and Quantum Computing in Banking: A 2023 Review" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a></h3><p><time datetime="2023-12-18">2023-12-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html" class="related-media" aria-label="EU's AI Act: Pioneering Ethical AI Regulation Worldwide" tabindex="-1"><img alt="EU's AI Act: Pioneering Ethical AI Regulation Worldwide" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="AI Prompt Engineering 2024: Techniques That Work" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

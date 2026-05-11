@@ -97,8 +97,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "Developing Rust libraries can be a challenging task, especially for beginners. One of the biggest challenges is setting up an efficient project structure and writing all of the necessary…"
+last_reviewed: "2026-05-11"
 ---
 
+
+<!-- lead-start -->
+
+> **TL;DR.** Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.
+>
+> **Key takeaways:**
+>
+> - **Idea.** [LibMake ⧉][00] is a code generator tool designed to quickly help creating high-quality Rust libraries by generating a set of pre-filled and pre-defined templated files.
+> - **Impact.** LibMake reduces the time and effort required to develop Rust libraries by automating code generation and other tasks.
+> - **Incentives.** LibMake can help developers enforce best practises by providing a set of pre-defined templates that follow these practises.
+> - **Challenges of Rust Library Development.** Developing Rust libraries can be a challenging task, especially for beginners.
+>
+> **Related reading:** [RustLogs (RLG): Structured Logging Library for Rust](https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html), [The making of the Express Transaction Credits Platform](https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html), [Alien Studio: My Tech-to Art Journey in Photography](https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html).
+
+<!-- lead-end -->
 ![Giant white pillars](https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp).class=\"img-fluid clearfix\"
 
 ## Insight
@@ -177,3 +194,15 @@ With LibMake, you can easily generate a new Rust library code base structure wit
 If you are a developer, I encourage you to try [LibMake ⧉][00] to see how it can help you streamline your library development process. LibMake is a free and an open-source tool, and it is available for download from the [GitHub repository ⧉][00].
 
 [00]: https://github.com/sebastienrousseau/libmake "LibMake: A code generator to reduce repetitive tasks and build high-quality Rust libraries"
+
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" class="related-media" aria-label="RustLogs (RLG): Structured Logging Library for Rust" tabindex="-1"><img alt="RustLogs (RLG): Structured Logging Library for Rust" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): Structured Logging Library for Rust</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html" class="related-media" aria-label="The making of the Express Transaction Credits Platform" tabindex="-1"><img alt="The making of the Express Transaction Credits Platform" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html">The making of the Express Transaction Credits Platform</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html" class="related-media" aria-label="Alien Studio: My Tech-to Art Journey in Photography" tabindex="-1"><img alt="Alien Studio: My Tech-to Art Journey in Photography" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html">Alien Studio: My Tech-to Art Journey in Photography</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

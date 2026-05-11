@@ -105,8 +105,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "In the world of software development, logging plays a crucial role in understanding the behaviour of an application, diagnosing issues, and ensuring smooth operation. Rust, a systems programming…"
+last_reviewed: "2026-05-11"
 ---
 
+
+<!-- lead-start -->
+
+> **TL;DR.** Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. 
+>
+> **Key takeaways:**
+>
+> - **1. Understanding the Need for Effective Logging.** Before delving into the specifics of RustLogs (RLG), let's take a moment to understand why effective logging is essential in software development.
+> - **2. RustLogs (RLG): A Comprehensive Logging Library.** RustLogs (RLG) is a feature-rich logging library that aims to simplify and streamline the process of adding logging capabilities to Rust applications.
+> - **3. Getting Started with RustLogs (RLG).** To start using RustLogs (RLG) in your Rust project, you need to add it as a dependency in your Cargo.toml file.
+> - **4. Asynchronous Logging with RustLogs (RLG).** One of the standout features of RustLogs (RLG) is its support for asynchronous logging.
+>
+> **Related reading:** [Streamlining Rust Library Development with Code Generation](https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html), [The making of the Express Transaction Credits Platform](https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html), [Google Gemma AI: Transforming Open-Source AI Development](https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html).
+
+<!-- lead-end -->
 ## Introduction
 
 In the world of software development, logging plays a crucial role in understanding the behaviour of an application, diagnosing issues, and ensuring smooth operation. Rust, a systems programming language known for its performance and safety, offers developers a wide range of logging solutions. Among these libraries, RustLogs (RLG) was born. It's a powerful and flexible logging library that makes it easy to add robust logging capabilities to Rust applications.
@@ -320,3 +337,15 @@ As the Rust community continues to grow and evolve, RustLogs aims to become a vi
 [00]: https://rustlogs.com/ "An Advanced Logging Library for Rust Applications"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
+
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html" class="related-media" aria-label="Streamlining Rust Library Development with Code Generation" tabindex="-1"><img alt="Streamlining Rust Library Development with Code Generation" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html">Streamlining Rust Library Development with Code Generation</a></h3><p><time datetime="2023-10-26">2023-10-26</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html" class="related-media" aria-label="The making of the Express Transaction Credits Platform" tabindex="-1"><img alt="The making of the Express Transaction Credits Platform" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html">The making of the Express Transaction Credits Platform</a></h3><p><time datetime="2018-02-15">2018-02-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html" class="related-media" aria-label="Google Gemma AI: Transforming Open-Source AI Development" tabindex="-1"><img alt="Google Gemma AI: Transforming Open-Source AI Development" src="https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html">Google Gemma AI: Transforming Open-Source AI Development</a></h3><p><time datetime="2024-02-26">2024-02-26</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

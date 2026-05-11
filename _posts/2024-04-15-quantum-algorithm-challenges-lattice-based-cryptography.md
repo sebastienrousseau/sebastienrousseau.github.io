@@ -105,8 +105,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "This article delves into the work of [Yilei Chen ⧉][00], who has developed a polynomial-time quantum algorithm that could significantly impact the hardness of the Learning With Errors (LWE)…"
+last_reviewed: "2026-05-11"
 ---
 
+
+<!-- lead-start -->
+
+> **TL;DR.** A new polynomial-time quantum algorithm by Yilei Chen targets lattice-based cryptography. Implications for post-quantum standards including CRYSTALS-Kyber.
+>
+> **Key takeaways:**
+>
+> - **Executive Summary.** This article delves into the work of [Yilei Chen ⧉][00], who has developed a polynomial-time quantum algorithm that could significantly impact the hardness of the Learning With Errors (LWE) mathematical problem, a…
+> - **Chen's Polynomial-Time Quantum Algorithm.** Chen's algorithm offers a solution to the decisional shortest vector problem (GapSVP) and shortest independent vector problem (SIVP) for lattices of any dimension.
+> - **Introduction to Lattice Problems and Their Significance in Cryptography.** Lattice problems involve the study of mathematical structures called lattices, which are discrete subgroups of n-dimensional Euclidean space.
+> - **Classical Algorithms for Lattice Problems and Their Limitations.** Classical algorithms for solving lattice problems, such as the Lenstra-Lenstra-Lovász (LLL) algorithm and its variants, have been extensively studied in the field of cryptography.
+>
+> **Related reading:** [State of AI and Quantum Computing in Banking: A 2023 Review](https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html), [Quantum Key Distribution Revolutionising Security in Banking](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html), [AI Trends 2024: Insights and Predictions for the Future](https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html).
+
+<!-- lead-end -->
 ## Executive Summary
 
 This article delves into the work of [**Yilei Chen ⧉**][00], who has developed a `polynomial-time quantum algorithm` that could significantly impact the hardness of the **Learning With Errors (LWE)** mathematical problem, a fundamental challenge in lattice-based cryptography.
@@ -198,3 +215,15 @@ Kuperberg, G. (2005). [**A subexponential-time quantum algorithm for the dihedra
 [00]: https://eprint.iacr.org/2024/555.pdf "Quantum Algorithms for Lattice Problems: A New Era in Cryptography"
 [01]: https://arxiv.org/abs/2401.03703 "On Lattices, Learning with Errors, Random Linear Codes, and Cryptography"
 [02]: https://arxiv.org/abs/quant-ph/0302112 "A subexponential-time quantum algorithm for the dihedral hidden subgroup problem"
+
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" class="related-media" aria-label="State of AI and Quantum Computing in Banking: A 2023 Review" tabindex="-1"><img alt="State of AI and Quantum Computing in Banking: A 2023 Review" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a></h3><p><time datetime="2023-12-18">2023-12-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" class="related-media" aria-label="Quantum Key Distribution Revolutionising Security in Banking" tabindex="-1"><img alt="Quantum Key Distribution Revolutionising Security in Banking" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html" class="related-media" aria-label="AI Trends 2024: Insights and Predictions for the Future" tabindex="-1"><img alt="AI Trends 2024: Insights and Predictions for the Future" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">AI Trends 2024: Insights and Predictions for the Future</a></h3><p><time datetime="2024-01-01">2024-01-01</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

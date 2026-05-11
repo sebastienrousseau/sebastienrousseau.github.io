@@ -586,6 +586,28 @@
       .about-portrait{display:block;width:220px;height:220px;margin:0 auto 32px;border-radius:50%;object-fit:cover;box-shadow:0 14px 40px -16px rgba(0,0,0,.25)}
 
       /* Brand logos row (used on About + home) */
+      /* About page: identifiers and "Featured in" blocks. These build the
+         author entity on the open web — ORCID, working-group memberships and
+         third-party citations that lift the chances of a Knowledge Panel. */
+      .author-ids{display:grid;grid-template-columns:max-content 1fr;gap:6px 24px;margin:8px 0 24px;font-size:15px}
+      .author-ids dt{color:var(--ink-mute);font-weight:500}
+      .author-ids dd{margin:0;color:var(--ink)}
+      .author-ids dd a{color:var(--accent)}
+      .featured-in{list-style:none;padding:0;margin:0 0 32px;display:grid;grid-template-columns:1fr;gap:8px}
+      .featured-in li{padding:14px 18px;background:var(--bg-alt);border-radius:12px}
+      .featured-in li a{color:var(--ink)}
+      .featured-in li a strong{color:var(--accent)}
+
+      /* Dated-article lead block — TL;DR + Key takeaways + Related reading,
+         emitted by post_enrich.py as a Markdown blockquote. Visual hierarchy:
+         block stands out at the top of every post for scanning and AI Overview
+         citation. */
+      main.content blockquote{background:var(--bg-alt);border-left:4px solid var(--accent);border-radius:0 12px 12px 0;padding:20px 24px;margin:24px 0 32px;color:var(--ink)}
+      main.content blockquote p{margin:0 0 10px}
+      main.content blockquote ul{margin:8px 0 0;padding-left:20px}
+      main.content blockquote li{margin:6px 0;color:var(--ink-soft)}
+      main.content blockquote li strong{color:var(--ink)}
+
       .brands{display:flex;flex-wrap:nowrap;align-items:center;justify-content:space-between;gap:clamp(16px,3vw,40px);margin:48px 0 16px;padding:48px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
       .brand-logo{height:28px;width:auto;max-width:100%;flex:0 1 auto;min-width:0;filter:grayscale(100%);opacity:.5;transition:opacity .25s ease,filter .25s ease;object-fit:contain}
       .brand-logo:hover{filter:grayscale(0);opacity:1}

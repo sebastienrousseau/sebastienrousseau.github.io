@@ -105,8 +105,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "Following my recent article on the [Challenges in Quantum Algorithms for Lattice-Based Cryptography][00], I am compelled to provide an update on the latest developments in [Yilei Chen's research…"
+last_reviewed: "2026-05-11"
 ---
 
+
+<!-- lead-start -->
+
+> **TL;DR.** A bug in Yilei Chen's quantum LWE algorithm temporarily reprieves lattice-based cryptography. What it means for CRYSTALS-Kyber, Dilithium and the PQC roadmap.
+>
+> **Key takeaways:**
+>
+> - **The Quantum Conundrum: Re-evaluating the NIST Post-Quantum Cryptography Standardisation in Light of Yilei Chen's Algorithm.** Following my recent article on the [Challenges in Quantum Algorithms for Lattice-Based Cryptography][00], I am compelled to provide an update on the latest developments in [Yilei Chen's research ⧉][01].
+> - **The Bug in Chen's Quantum Algorithm.** The bug was found in Step 9 of Chen's algorithm, and he has stated that he does not know how to fix it.
+> - **Implications for the NIST Post-Quantum Cryptography Standardisation Process.** Chen's research indirectly raised concerns and doubts about the [NIST Post-Quantum Cryptography (PQC) standardisation process ⧉][03] and the selection of quantum-resistant cryptographic algorithms.
+> - **The Future of Post-Quantum Cryptography.** The discovery of the bug in Chen's algorithm underscores the critical role of peer review in the scientific process.
+>
+> **Related reading:** [Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk]("), [Protecting Data in the Quantum Age: The Hash Library (HSH)](https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html), [Lucy's Flash Drive Revisited: AI, Quantum & Knowledge](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html).
+
+<!-- lead-end -->
 ## The Quantum Conundrum: Re-evaluating the NIST Post-Quantum Cryptography Standardisation in Light of Yilei Chen's Algorithm
 
 Following my recent article on the [Challenges in Quantum Algorithms for Lattice-Based Cryptography][00], I am compelled to provide an update on the latest developments in [Yilei Chen's research ⧉][01].
@@ -164,3 +181,15 @@ As NIST continues its PQC standardisation process, the cryptographic community m
 [05]: https://pq-crystals.org/dilithium/ "Dilithium"
 [06]: https://www.inferati.com/blog/fhe-schemes-bgv "BGV"
 [07]: https://tfhe.github.io/tfhe/ "TFHE"
+
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href=""" class="related-media" aria-label="Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk" tabindex="-1"><img alt="Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk" src=""" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href=""">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</a></h3><p><time datetime="2026-04-11">2026-04-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html" class="related-media" aria-label="Protecting Data in the Quantum Age: The Hash Library (HSH)" tabindex="-1"><img alt="Protecting Data in the Quantum Age: The Hash Library (HSH)" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html">Protecting Data in the Quantum Age: The Hash Library (HSH)</a></h3><p><time datetime="2023-10-16">2023-10-16</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" class="related-media" aria-label="Lucy's Flash Drive Revisited: AI, Quantum & Knowledge" tabindex="-1"><img alt="Lucy's Flash Drive Revisited: AI, Quantum & Knowledge" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</a></h3><p><time datetime="2026-05-11">2026-05-11</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

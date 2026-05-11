@@ -97,8 +97,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "In the ever-evolving digital landscape, speed and quality are of paramount importance. I was determined to find a way to quickly generate static websites that showcase high quality, accessibility,…"
+last_reviewed: "2026-05-11"
 ---
 
+
+<!-- lead-start -->
+
+> **TL;DR.** Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.
+>
+> **Key takeaways:**
+>
+> - **Idea.** I developed [Static Site Generator ⧉][00] with the aim of providing a lightning-fast static site generator (SSG) built with [Rust ⧉][03] that streamlines the process of creating static websites optimised for SEO and…
+> - **Impact.** Generating a static website with Static Site Generator is effortless, allowing for a focus on content that maximises impact on the intended audience.
+> - **Incentives.** [Static Site Generator ⧉][00] introduces a fresh perspective – an innovative approach to understanding the web.
+> - **A High-Quality Static Site Generator for the Modern Web.** In the ever-evolving digital landscape, speed and quality are of paramount importance.
+>
+> **Related reading:** [Automating ISO 20022 Payment Files Creation with Pain001](https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html), [Unveiling a new Cryptocurrency and Faster Payment Solution](https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html), [Understanding the Technology behind Blockchain](https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html).
+
+<!-- lead-end -->
 ![Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"
 
 ## Insight
@@ -190,3 +207,14 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [10]: /contact/index.html "Contact Sebastien Rousseau"
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
 
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html" class="related-media" aria-label="Automating ISO 20022 Payment Files Creation with Pain001" tabindex="-1"><img alt="Automating ISO 20022 Payment Files Creation with Pain001" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html">Automating ISO 20022 Payment Files Creation with Pain001</a></h3><p><time datetime="2023-09-29">2023-09-29</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html" class="related-media" aria-label="Unveiling a new Cryptocurrency and Faster Payment Solution" tabindex="-1"><img alt="Unveiling a new Cryptocurrency and Faster Payment Solution" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html">Unveiling a new Cryptocurrency and Faster Payment Solution</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html" class="related-media" aria-label="Understanding the Technology behind Blockchain" tabindex="-1"><img alt="Understanding the Technology behind Blockchain" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html">Understanding the Technology behind Blockchain</a></h3><p><time datetime="2018-01-09">2018-01-09</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

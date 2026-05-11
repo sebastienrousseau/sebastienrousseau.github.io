@@ -107,8 +107,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "In 2024, AI Prompt Engineering enables solutions like chatbots to hold empathetic conversations that understand cultural cues - a major breakthrough in human-like AI interactions. AI Prompt…"
+last_reviewed: "2026-05-11"
 ---
 
+
+<!-- lead-start -->
+
+> **TL;DR.** Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors.
+>
+> **Key takeaways:**
+>
+> - **Custom Instructions and Their Impact.** Custom instructions have revolutionised AI interactions by enabling user-specific model control.
+> - **Multi-Person Leveraging.** Multi-persona leveraging in AI models has transformed user experiences by providing flexibility in responses.
+> - **Chain of Thought Approaches.** Chain-of-thought approaches have revolutionised AI problem-solving by mimicking human cognitive processes.
+> - **In-Model Learning and Vector Databases.** In-model learning and vector databases represent significant advancements in AI's capability to evolve and access vast data sets.
+>
+> **Related reading:** [State of AI and Quantum Computing in Banking: A 2023 Review](https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html), [AI Trends 2024: Insights and Predictions for the Future](https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html), [Revolutionising Finance with AI-Enhanced Quantum Algorithms](https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html).
+
+<!-- lead-end -->
 In 2024, AI Prompt Engineering enables solutions like chatbots to hold empathetic conversations that understand cultural cues - a major breakthrough in human-like AI interactions. **AI Prompt Engineering** is transforming human-computer interaction with advancements in custom instructions, multi-persona leveraging, and chain-of-thought approaches. This article explores these developments and their impact on technology, finance, and education while integrating insights into areas like quantum computing and AI ethics.
 
 To start, Prompt Engineering has seen major shifts in recent years as a critical AI component dictating content quality, relevance, and safety. In this piece, we examine the impact of Prompt Engineering advances across sectors like technology, finance, and education specifically in 2024.
@@ -256,3 +273,15 @@ AI Prompt Engineering is evolving rapidly, with significant implications for tec
 ![divider][divider].class=\"m-10 w-100\"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
+
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" class="related-media" aria-label="State of AI and Quantum Computing in Banking: A 2023 Review" tabindex="-1"><img alt="State of AI and Quantum Computing in Banking: A 2023 Review" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a></h3><p><time datetime="2023-12-18">2023-12-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html" class="related-media" aria-label="AI Trends 2024: Insights and Predictions for the Future" tabindex="-1"><img alt="AI Trends 2024: Insights and Predictions for the Future" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">AI Trends 2024: Insights and Predictions for the Future</a></h3><p><time datetime="2024-01-01">2024-01-01</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html" class="related-media" aria-label="Revolutionising Finance with AI-Enhanced Quantum Algorithms" tabindex="-1"><img alt="Revolutionising Finance with AI-Enhanced Quantum Algorithms" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a></h3><p><time datetime="2023-12-25">2023-12-25</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

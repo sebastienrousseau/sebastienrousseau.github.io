@@ -97,8 +97,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "In 2023, the intersection of Artificial Intelligence (AI) and Quantum Computing (QC) has profoundly impacted the banking and financial industry. These technologies have revolutionised the way…"
+last_reviewed: "2026-05-11"
 ---
 
+
+<!-- lead-start -->
+
+> **TL;DR.** Exploring 2023's Technological Landscape: AI & Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations & Governance
+>
+> **Key takeaways:**
+>
+> - **The Importance of AI and Quantum Computing in the Banking Industry.** The banking industry is undergoing a profound transformation, driven by the convergence of Artificial Intelligence (AI) and Quantum Computing (QC).
+> - **The Rise of Open-Source AI: A Paradigm Shift in Artificial Intelligence.** The year 2023 has witnessed a remarkable surge in the adoption of open-source AI technology, particularly in the realm of Large Language Models (LLMs).
+> - **The challenges of regulating AI.** Another challenge is making sure that AI systems are fair and unbiased.
+> - **The State of AI Governance.** In 2023, significant global initiatives and developments have shaped the landscape of AI governance and regulation.
+>
+> **Related reading:** [Revolutionising Finance with AI-Enhanced Quantum Algorithms](https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html), [Quantum Key Distribution Revolutionising Security in Banking](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html), [AI Prompt Engineering 2024: Techniques That Work](https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html).
+
+<!-- lead-end -->
 ## Insight
 
 In 2023, the intersection of **Artificial Intelligence (AI)** and **Quantum Computing (QC)** has profoundly impacted the **banking and financial industry**. These technologies have revolutionised the way financial institutions operate, significantly impacting payments, risk management, and cybersecurity.
@@ -256,3 +273,15 @@ Thank you again for your time and I look forward to hearing from you!
 [28]: https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp "AI Regulations"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
+
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html" class="related-media" aria-label="Revolutionising Finance with AI-Enhanced Quantum Algorithms" tabindex="-1"><img alt="Revolutionising Finance with AI-Enhanced Quantum Algorithms" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a></h3><p><time datetime="2023-12-25">2023-12-25</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" class="related-media" aria-label="Quantum Key Distribution Revolutionising Security in Banking" tabindex="-1"><img alt="Quantum Key Distribution Revolutionising Security in Banking" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="AI Prompt Engineering 2024: Techniques That Work" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

@@ -97,8 +97,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "In today’s fast-paced landscape, where time is of the essence, the demand for swiffer payment solutions has never been more pronounced. The Express Transaction Credits Platform (EXTC) Network…"
+last_reviewed: "2026-05-11"
 ---
 
+
+<!-- lead-start -->
+
+> **TL;DR.** A significant chapter in the evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance.
+>
+> **Key takeaways:**
+>
+> - **Idea.** At the heart of the EXTC Network’s transformative power lies its novel concept - to create a standard for faster payment solutions that cater to the evolving demands of the modern financial landscape.
+> - **Impact.** The impact of the EXTC Network’s vision transcends the boundaries of the financial sector.
+> - **Incentives.** The EXTC Network acknowledges that widespread adoption requires a recognisable and attainable set of incremental benefits.
+> - **A Growing Need for Faster Payments.** In today’s fast-paced landscape, where time is of the essence, the demand for swiffer payment solutions has never been more pronounced.
+>
+> **Related reading:** [Static Site Generator: Fastest Rust-Based SSG](https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html), [Automating ISO 20022 Payment Files Creation with Pain001](https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html), [Understanding the Technology behind Blockchain](https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html).
+
+<!-- lead-end -->
 ![A very tall building that has a lot of holes in it](https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp).class=\"img-fluid clearfix\"
 
 ## Insight
@@ -149,3 +166,15 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [09]: /articles/index.html "Back to Articles"
 [10]: /contact/index.html "Contact Sebastien Rousseau"
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
+
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" class="related-media" aria-label="Static Site Generator: Fastest Rust-Based SSG" tabindex="-1"><img alt="Static Site Generator: Fastest Rust-Based SSG" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: Fastest Rust-Based SSG</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html" class="related-media" aria-label="Automating ISO 20022 Payment Files Creation with Pain001" tabindex="-1"><img alt="Automating ISO 20022 Payment Files Creation with Pain001" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html">Automating ISO 20022 Payment Files Creation with Pain001</a></h3><p><time datetime="2023-09-29">2023-09-29</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html" class="related-media" aria-label="Understanding the Technology behind Blockchain" tabindex="-1"><img alt="Understanding the Technology behind Blockchain" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html">Understanding the Technology behind Blockchain</a></h3><p><time datetime="2018-01-09">2018-01-09</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

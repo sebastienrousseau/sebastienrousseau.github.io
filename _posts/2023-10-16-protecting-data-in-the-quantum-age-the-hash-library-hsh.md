@@ -97,8 +97,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "In this article, I will examine the uses of quantum-resistant cryptography, specifically addressing the Rust Hash Library (HSH) that I developed. This library is fully optimised for cryptographic…"
+last_reviewed: "2026-05-11"
 ---
 
+
+<!-- lead-start -->
+
+> **TL;DR.** HSH uses quantum-resistant cryptographic primitives to protect your data, ensuring its security even in the face of future quantum computing advances.
+>
+> **Key takeaways:**
+>
+> - **Idea.** The Hash Library (HSH) provides a lightweight, efficient, and user-friendly solution for protecting data with quantum-resistant cryptography.
+> - **Impact.** The [Hash Library (HSH) ⧉][00] provides a wealth of modern cryptographic primitives, creating a strong barrier against the complexities of the quantum age.
+> - **Incentives.** Cross-Platform Consistency: The Hash Library (HSH) protects data across platforms and applications.
+> - **The Emerging Threat of Quantum Computing.** As the digital landscape evolves, financial services organisations must embrace new technologies to remain competitive.
+>
+> **Related reading:** [Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk]("), [Quantum Lattice Crypto: Bug in Chen's LWE Attack](https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html), [Lucy's Flash Drive Revisited: AI, Quantum & Knowledge](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html).
+
+<!-- lead-end -->
 ![A creative illustration on Quantum computing theme](https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp).class=\"img-fluid clearfix\"
 
 In this article, I will examine the uses of quantum-resistant cryptography, specifically addressing the Rust Hash Library (HSH) that I developed. This library is fully optimised for cryptographic hashing and verification functions.
@@ -224,3 +241,15 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [09]: /articles/index.html "Back to Articles"
 [10]: /contact/index.html "Contact Sebastien Rousseau"
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
+
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href=""" class="related-media" aria-label="Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk" tabindex="-1"><img alt="Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk" src=""" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href=""">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</a></h3><p><time datetime="2026-04-11">2026-04-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html" class="related-media" aria-label="Quantum Lattice Crypto: Bug in Chen's LWE Attack" tabindex="-1"><img alt="Quantum Lattice Crypto: Bug in Chen's LWE Attack" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">Quantum Lattice Crypto: Bug in Chen's LWE Attack</a></h3><p><time datetime="2024-04-22">2024-04-22</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" class="related-media" aria-label="Lucy's Flash Drive Revisited: AI, Quantum & Knowledge" tabindex="-1"><img alt="Lucy's Flash Drive Revisited: AI, Quantum & Knowledge" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</a></h3><p><time datetime="2026-05-11">2026-05-11</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

@@ -97,8 +97,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "Bitcoin, often hailed as digital gold, initiated a financial revolution by introducing decentralized electronic cash and blockchain technology. It enabled online payments between individuals…"
+last_reviewed: "2026-05-11"
 ---
 
+
+<!-- lead-start -->
+
+> **TL;DR.** Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online.
+>
+> **Key takeaways:**
+>
+> - **Idea.** Bitcoin facilitates peer-to-peer transactions through a distributed ledger, incentivizing participants through cryptographic rewards.
+> - **Impact.** Bitcoin's solution to the double spending problem has paved the way for innovation in decentralized finance, digital assets, and trust systems.
+> - **Incentives.** Bitcoin's unique incentives drive network participation while aligning stakeholders for collective growth.
+> - **Issues.** Despite its growth, Bitcoin faces several challenges, including volatility, scalability issues leading to transaction delays, security concerns, regulatory complexities, and environmental criticisms related to…
+>
+> **Related reading:** [Quantum Key Distribution Revolutionising Security in Banking](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html), [ERC-20: The Ethereum Token Interface That Changed the World](https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html).
+
+<!-- lead-end -->
 ![A very tall building that has a lot of holes in it](https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp).class=\"img-fluid clearfix\"
 
 ## Insight
@@ -221,3 +238,13 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [10]: /contact/index.html "Contact Sebastien Rousseau"
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
 
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" class="related-media" aria-label="Quantum Key Distribution Revolutionising Security in Banking" tabindex="-1"><img alt="Quantum Key Distribution Revolutionising Security in Banking" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html" class="related-media" aria-label="ERC-20: The Ethereum Token Interface That Changed the World" tabindex="-1"><img alt="ERC-20: The Ethereum Token Interface That Changed the World" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html">ERC-20: The Ethereum Token Interface That Changed the World</a></h3><p><time datetime="2018-01-24">2018-01-24</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

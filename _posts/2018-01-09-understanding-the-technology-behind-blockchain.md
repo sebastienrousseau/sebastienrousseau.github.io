@@ -97,8 +97,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "Blockchain technology has opened the door to a new era of decentralized"
+last_reviewed: "2026-05-11"
 ---
 
+
+<!-- lead-start -->
+
+> **TL;DR.** Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation
+>
+> **Key takeaways:**
+>
+> - **Idea.** Our goal is to build a simple cryptocurrency on Ethereum, giving you hands-on experience with blockchain development.
+> - **Impact.** By building an Ethereum-based cryptocurrency from the ground up, you'll obtain:.
+> - **Incentives.** Completing an end-to-end token build unlocks practical first-hand experience with:.
+> - **Designing the Cryptocurrency.** The first crucial task is to design your cryptocurrency.
+>
+> **Related reading:** [Static Site Generator: Fastest Rust-Based SSG](https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html), [Automating ISO 20022 Payment Files Creation with Pain001](https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html), [Unveiling a new Cryptocurrency and Faster Payment Solution](https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html).
+
+<!-- lead-end -->
 ![A very tall building that has a lot of holes in it](https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp).class=\"img-fluid clearfix\"
 
 ## Insight
@@ -276,4 +293,14 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [10]: /contact/index.html "Contact Sebastien Rousseau"
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
 
-
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" class="related-media" aria-label="Static Site Generator: Fastest Rust-Based SSG" tabindex="-1"><img alt="Static Site Generator: Fastest Rust-Based SSG" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: Fastest Rust-Based SSG</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html" class="related-media" aria-label="Automating ISO 20022 Payment Files Creation with Pain001" tabindex="-1"><img alt="Automating ISO 20022 Payment Files Creation with Pain001" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html">Automating ISO 20022 Payment Files Creation with Pain001</a></h3><p><time datetime="2023-09-29">2023-09-29</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html" class="related-media" aria-label="Unveiling a new Cryptocurrency and Faster Payment Solution" tabindex="-1"><img alt="Unveiling a new Cryptocurrency and Faster Payment Solution" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html">Unveiling a new Cryptocurrency and Faster Payment Solution</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

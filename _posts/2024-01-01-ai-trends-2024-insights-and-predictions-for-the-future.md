@@ -107,8 +107,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "As we enter the year 2024, AI redefines technology, society, and daily life. This era is not merely about technological evolution; it's a transformational journey where AI is emerging as a…"
+last_reviewed: "2026-05-11"
 ---
 
+
+<!-- lead-start -->
+
+> **TL;DR.** AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering.
+>
+> **Key takeaways:**
+>
+> - **Idea.** The idea for 2024 is centred around harnessing the transformative power of AI to address some of the most pressing challenges and seize new opportunities across various industries.
+> - **Impact.** The impact of AI in 2024 is expected to be profound and multifaceted, affecting every aspect of business, society, and daily life.
+> - **Incentive.** The incentives for embracing AI in 2024 are both compelling and diverse, cutting across various industries and sectors.
+> - **Exploring AI's Revolutionary Role in 2024: From Business Strategies to Ethical Considerations.** As 2024 approaches, artificial intelligence (AI) is revolutionising technology and its applications in everyday life.
+>
+> **Related reading:** [AI Prompt Engineering 2024: Techniques That Work](https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html), [State of AI and Quantum Computing in Banking: A 2023 Review](https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html), [Generative AI in 2023: How It Works, Where It Lands](https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html).
+
+<!-- lead-end -->
 As we enter the year 2024, AI redefines technology, society, and daily life. This era is not merely about technological evolution; it's a transformational journey where AI is emerging as a critical driver of strategic decision-making, societal reform, and scientific innovation.
 
 AI's journey to this pivotal point is marked by the convergence of big data, increased computing power, and breakthroughs in algorithms. This unique synergy has empowered AI to process and analyse data on an unprecedented scale, unlocking insights and possibilities that once seemed unattainable. From personalised medicine in healthcare, where AI analyses vast patient data for custom treatment plans, to environmental science, where AI models complex climate scenarios, the applications are as diverse as they are impactful.
@@ -259,3 +276,15 @@ However, as we embrace AI, we must also be mindful of the ethical implications a
 In conclusion, 2024 is poised to be a year where AI not only continues to evolve but also profoundly impacts our lives and work. The potential of AI is boundless, and its responsible integration across sectors promises a future that is more efficient, creative, and sustainable. As we navigate this AI-driven era, it is incumbent upon us to harness its power wisely, ensuring that it serves the greater good and propels humanity towards a brighter, more innovative future.
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
+
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="AI Prompt Engineering 2024: Techniques That Work" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" class="related-media" aria-label="State of AI and Quantum Computing in Banking: A 2023 Review" tabindex="-1"><img alt="State of AI and Quantum Computing in Banking: A 2023 Review" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a></h3><p><time datetime="2023-12-18">2023-12-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html" class="related-media" aria-label="Generative AI in 2023: How It Works, Where It Lands" tabindex="-1"><img alt="Generative AI in 2023: How It Works, Where It Lands" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html">Generative AI in 2023: How It Works, Where It Lands</a></h3><p><time datetime="2023-11-12">2023-11-12</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

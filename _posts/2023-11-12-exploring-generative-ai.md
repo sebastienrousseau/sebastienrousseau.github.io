@@ -97,8 +97,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "Generative Artificial Intelligence is a cutting-edge field of machine learning that enables computers to produce content indistinguishable from that created by humans. This technology is a subset…"
+last_reviewed: "2026-05-11"
 ---
 
+
+<!-- lead-start -->
+
+> **TL;DR.** Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.
+>
+> **Key takeaways:**
+>
+> - **Idea.** The journey of generative AI began with simple models that could barely string together coherent sentences.
+> - **Impact.** Generative AI is not just an academic curiosity; it's a transformative force across multiple industries.
+> - **Incentives.** The development of generative AI is largely driven by economic incentives.
+> - **Understanding the Mechanics of Generative AI.** Generative Artificial Intelligence is a cutting-edge field of machine learning that enables computers to produce content indistinguishable from that created by humans.
+>
+> **Related reading:** [EU's AI Act: Pioneering Ethical AI Regulation Worldwide](https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html), [AI Prompt Engineering 2024: Techniques That Work](https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html), [AI Trends 2024: Insights and Predictions for the Future](https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html).
+
+<!-- lead-end -->
 ![AI, Artificial Intelligence concept,3d rendering,conceptual image](https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp).class=\"img-fluid clearfix\"
 
 ## Insight
@@ -252,3 +269,15 @@ Thank you again for your time and I look forward to hearing from you.
 [contact]: /contact/index.html "Contact"
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 [linkedin]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
+
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html" class="related-media" aria-label="EU's AI Act: Pioneering Ethical AI Regulation Worldwide" tabindex="-1"><img alt="EU's AI Act: Pioneering Ethical AI Regulation Worldwide" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="AI Prompt Engineering 2024: Techniques That Work" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html" class="related-media" aria-label="AI Trends 2024: Insights and Predictions for the Future" tabindex="-1"><img alt="AI Trends 2024: Insights and Predictions for the Future" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">AI Trends 2024: Insights and Predictions for the Future</a></h3><p><time datetime="2024-01-01">2024-01-01</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

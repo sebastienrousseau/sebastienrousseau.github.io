@@ -107,8 +107,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "The European Union's Artificial Intelligence Act marks a significant step in the global discourse on AI regulation. As digital technologies increasingly permeate every aspect of our lives, the…"
+last_reviewed: "2026-05-11"
 ---
 
+
+<!-- lead-start -->
+
+> **TL;DR.** The EU AI Act sets the first comprehensive framework for ethical, risk-tiered AI regulation worldwide. What changes for banks, vendors and high-risk systems.
+>
+> **Key takeaways:**
+>
+> - **EU's AI Act: Shaping the Future of Global AI Regulation.** [The European Union's Artificial Intelligence Act (AI Act) ⧉][00] is a comprehensive regulatory framework designed to ensure ethical, transparent, and safe AI development and usage across the European Union.
+> - **Key Aspects of the AI Act.** At its core, the AI Act is designed to safeguard EU citizens from the potential harms of AI, banning practices deemed unacceptable, such as manipulative AI that exploits vulnerabilities or systems that allow 'social…
+> - **Prohibited Practices and High-risk Applications.** At its core, the AI Act is designed to safeguard EU citizens from the potential harms of AI, banning practices deemed unacceptable, such as manipulative AI that exploits vulnerabilities or systems that allow 'social…
+> - **Fostering Innovation and AI Literacy.** While regulating high-risk applications, the Act also promotes innovation, especially among SMEs and startups, by supporting the development of secure, trustworthy AI.
+>
+> **Related reading:** [State of AI and Quantum Computing in Banking: A 2023 Review](https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html), [AI Prompt Engineering 2024: Techniques That Work](https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html), [Generative AI in 2023: How It Works, Where It Lands](https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html).
+
+<!-- lead-end -->
 ## EU's AI Act: Shaping the Future of Global AI Regulation
 
 [**The European Union's Artificial Intelligence Act (AI Act) ⧉**][00] is a comprehensive regulatory framework designed to ensure ethical, transparent, and safe AI development and usage across the European Union. It introduces a risk-based approach to AI regulation, categorizing AI systems based on their potential impact on society and imposing strict requirements on high-risk applications. This legislation aims to protect fundamental rights and promote innovation, setting a precedent for global AI governance.
@@ -151,3 +168,15 @@ The EU's Artificial Intelligence Act represents a critical step in navigating th
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 [00]: https://www.europarl.europa.eu/news/en/press-room/20240212IPR17618/artificial-intelligence-act-committees-confirm-landmark-agreement "AI Act: committees confirm landmark agreement"
+
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" class="related-media" aria-label="State of AI and Quantum Computing in Banking: A 2023 Review" tabindex="-1"><img alt="State of AI and Quantum Computing in Banking: A 2023 Review" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a></h3><p><time datetime="2023-12-18">2023-12-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="AI Prompt Engineering 2024: Techniques That Work" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html" class="related-media" aria-label="Generative AI in 2023: How It Works, Where It Lands" tabindex="-1"><img alt="Generative AI in 2023: How It Works, Where It Lands" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html">Generative AI in 2023: How It Works, Where It Lands</a></h3><p><time datetime="2023-11-12">2023-11-12</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

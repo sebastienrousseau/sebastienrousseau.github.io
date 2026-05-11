@@ -97,8 +97,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "The origin of the Express Transaction Credits (EXTC) platform started in 2018 and is rooted in recognising the limitations of traditional financial systems. Delays in transactions, intermediaries’…"
+last_reviewed: "2026-05-11"
 ---
 
+
+<!-- lead-start -->
+
+> **TL;DR.** Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard.
+>
+> **Key takeaways:**
+>
+> - **Idea.** At the core of the EXTC platform lies the Ethereum Request for Comment (ERC) 223 standard, an extension of the ERC20 token standard.
+> - **Impact.** The impact of EXTC extends far beyond its technical attributes.
+> - **Incentives.** The success of any financial platform hinges on user adoption and participation.
+> - **Pioneering a New Age of Financial Services.** The origin of the Express Transaction Credits (EXTC) platform started in 2018 and is rooted in recognising the limitations of traditional financial systems.
+>
+> **Related reading:** [RustLogs (RLG): Structured Logging Library for Rust](https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html), [Efficient Date and Time Management with DateTime (DTT)](https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html), [KyberLib: Rust CRYSTALS-Kyber for Post-Quantum](https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html).
+
+<!-- lead-end -->
 ![Giant white pillars](https://cloudcdn.pro/stocks/images/rawpixel-com-369782.webp).class=\"img-fluid clearfix\"
 
 ## Insight
@@ -164,3 +181,15 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [09]: /articles/index.html "Back to Articles"
 [10]: /contact/index.html "Contact Sebastien Rousseau"
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
+
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" class="related-media" aria-label="RustLogs (RLG): Structured Logging Library for Rust" tabindex="-1"><img alt="RustLogs (RLG): Structured Logging Library for Rust" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): Structured Logging Library for Rust</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html" class="related-media" aria-label="Efficient Date and Time Management with DateTime (DTT)" tabindex="-1"><img alt="Efficient Date and Time Management with DateTime (DTT)" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html">Efficient Date and Time Management with DateTime (DTT)</a></h3><p><time datetime="2023-12-04">2023-12-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html" class="related-media" aria-label="KyberLib: Rust CRYSTALS-Kyber for Post-Quantum" tabindex="-1"><img alt="KyberLib: Rust CRYSTALS-Kyber for Post-Quantum" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html">KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</a></h3><p><time datetime="2023-11-28">2023-11-28</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

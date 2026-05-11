@@ -107,8 +107,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "2023 was a year of profound transformation and realisation. Motivated by curiosity and a drive to innovate, I delved into cutting-edge technology, including [Rust ⧉][06], [AI ⧉][07], and [Quantum…"
+last_reviewed: "2026-05-11"
 ---
 
+
+<!-- lead-start -->
+
+> **TL;DR.** Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.
+>
+> **Key takeaways:**
+>
+> - **Unleashing Artistic Innovation through Cutting-Edge Technology.** 2023 was a year of profound transformation and realisation.
+> - **The Tech Trio - Rust, AI, and Quantum Computing.** My journey started with [Rust ⧉][06], a language known for its safety and performance.
+> - **Artistic Awakening.** I neglected my passion for art and photography while consumed by work and technology.
+> - **The Birth of Alien Studio.** The idea for Alien Studio sprang from this unique confluence of technology and art.
+>
+> **Related reading:** [EU's AI Act: Pioneering Ethical AI Regulation Worldwide](https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html), [AI Prompt Engineering 2024: Techniques That Work](https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html), [Revolutionising Finance with AI-Enhanced Quantum Algorithms](https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html).
+
+<!-- lead-end -->
 ## Unleashing Artistic Innovation through Cutting-Edge Technology
 
 2023 was a year of profound transformation and realisation. Motivated by curiosity and a drive to innovate, I delved into cutting-edge technology, including [**Rust ⧉**][06], [**AI ⧉**][07], and [**Quantum Computing ⧉**][08]. My aim wasn't just to understand these complex fields, but to explore their potential to shape innovative strategies.
@@ -210,3 +227,15 @@ I invite you to visit [**Alien Studio ⧉**][00], to see through the photographs
 [07]: https://en.wikipedia.org/wiki/Artificial_intelligence "Artificial intelligence"
 [08]: https://en.wikipedia.org/wiki/Quantum_computing "Quantum computing"
 [09]: https://www.midjourney.com/explore "Midjourney"
+
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html" class="related-media" aria-label="EU's AI Act: Pioneering Ethical AI Regulation Worldwide" tabindex="-1"><img alt="EU's AI Act: Pioneering Ethical AI Regulation Worldwide" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="AI Prompt Engineering 2024: Techniques That Work" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html" class="related-media" aria-label="Revolutionising Finance with AI-Enhanced Quantum Algorithms" tabindex="-1"><img alt="Revolutionising Finance with AI-Enhanced Quantum Algorithms" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a></h3><p><time datetime="2023-12-25">2023-12-25</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

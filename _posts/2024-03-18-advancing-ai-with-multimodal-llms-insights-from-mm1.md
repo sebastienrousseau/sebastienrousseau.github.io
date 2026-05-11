@@ -105,8 +105,25 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "The integration of natural language processing and image recognition has resulted in the development of Multimodal Large Language Models (MLLMs). In their paper, Apple introduces the MM1, a…"
+last_reviewed: "2026-05-11"
 ---
 
+
+<!-- lead-start -->
+
+> **TL;DR.** Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials.
+>
+> **Key takeaways:**
+>
+> - **The Emergence of Multimodal AI.** The field of AI has witnessed remarkable advancements in recent years, particularly in the domains of natural language processing (NLP) and computer vision.
+> - **The MM1 Study: A Landmark in Multimodal AI Research.** The [MM1: Methods Analysis & Insights from Multimodal LLM Pre-training ⧉][00] study stands as a pivotal moment in the evolution of MLLMs.
+> - **Key Findings and Insights.** The MM1 study yielded several groundbreaking insights that have shaped our understanding of MLLMs and their potential.
+> - **MM1 Model Architecture and Multimodal Learning Process.** The diagram illustrates the architecture and learning process of the MM1 model.
+>
+> **Related reading:** [State of AI and Quantum Computing in Banking: A 2023 Review](https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html), [Generative AI in 2023: How It Works, Where It Lands](https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html), [Lucy's Flash Drive Revisited: AI, Quantum & Knowledge](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html).
+
+<!-- lead-end -->
 ## Introduction
 
 The integration of natural language processing and image recognition has resulted in the development of Multimodal Large Language Models (MLLMs). In their paper, Apple introduces the MM1, a collection of multimodal AI models that combine vision and language comprehension. Through thorough experiments, the researchers examined the factors that contribute to the performance of these models, exploring various architectural choices and pre-training data combinations. The MM1 paper provides essential information about how MLLMs are structured and trained. It discusses the study's approach and crucial findings, showcasing their possible impact on the future of AI.
@@ -189,3 +206,15 @@ To learn more about the groundbreaking MM1 study and explore the fascinating wor
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 [architecture]: https://cloudcdn.pro/stocks/diagrams/mm1_model_architecture.svg "MM1 Model Architecture"
+
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" class="related-media" aria-label="State of AI and Quantum Computing in Banking: A 2023 Review" tabindex="-1"><img alt="State of AI and Quantum Computing in Banking: A 2023 Review" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a></h3><p><time datetime="2023-12-18">2023-12-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html" class="related-media" aria-label="Generative AI in 2023: How It Works, Where It Lands" tabindex="-1"><img alt="Generative AI in 2023: How It Works, Where It Lands" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html">Generative AI in 2023: How It Works, Where It Lands</a></h3><p><time datetime="2023-11-12">2023-11-12</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" class="related-media" aria-label="Lucy's Flash Drive Revisited: AI, Quantum & Knowledge" tabindex="-1"><img alt="Lucy's Flash Drive Revisited: AI, Quantum & Knowledge" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</a></h3><p><time datetime="2026-05-11">2026-05-11</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

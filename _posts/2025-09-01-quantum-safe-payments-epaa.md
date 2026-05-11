@@ -100,6 +100,22 @@ site_software: "Static Site Generator, Rust"
 excerpt: "Modern payment infrastructure relies on public-key cryptography. RSA, ECC, and Diffie-Hellman. To authenticate transactions, protect cardholder data, and secure messaging between financial…"
 last_reviewed: "2026-05-11"
 ---
+
+
+<!-- lead-start -->
+
+> **TL;DR.** Quantum computing threatens payment system cryptography. The EPAA white paper outlines the structural risk and the urgent case for PQC migration.
+>
+> **Key takeaways:**
+>
+> - **The Quantum Threat to Payment Systems.** Modern payment infrastructure relies on public-key cryptography.
+> - **The Harvest-Now Decrypt-Later Risk.** The threat is not confined to a future date when quantum computers reach sufficient capability.
+> - **Impact Across Payment Rails.** The implications span the full breadth of payment infrastructure:.
+> - **What Organisations Must Do Now.** The transition to quantum-safe cryptography is not a single upgrade but a multi-year programme requiring structured preparation:.
+>
+> **Related reading:** [Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk]("), [Quantum Lattice Crypto: Bug in Chen's LWE Attack](https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html), [Protecting Data in the Quantum Age: The Hash Library (HSH)](https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html).
+
+<!-- lead-end -->
 ## The Quantum Threat to Payment Systems
 
 Modern payment infrastructure relies on public-key cryptography. RSA, ECC, and Diffie-Hellman. To authenticate transactions, protect cardholder data, and secure messaging between financial institutions. These algorithms underpin SWIFT, SEPA, real-time gross settlement systems, and virtually every card scheme in operation today.
@@ -165,9 +181,9 @@ Sebastien Rousseau is a Senior Digital Product Manager at HSBC Bank plc, leading
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again" class="related-media" aria-label="Quantum Thresholds Are Moving Again" tabindex="-1"><img alt="Quantum Thresholds Are Moving Again" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><div class="related-body"><h3><a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again">Quantum Thresholds Are Moving Again</a></h3><p><time datetime="2026-04-11">2026-04-11</time></p></div></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html" class="related-media" aria-label="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto" tabindex="-1"><img alt="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="400" /></a><div class="related-body"><h3><a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">Bug Discovered in Quantum Algorithm for Lattice-Based Crypto</a></h3><p><time datetime="2024-04-22">2024-04-22</time></p></div></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html" class="related-media" aria-label="Protecting Data in the Quantum Age: The Hash Library (HSH)" tabindex="-1"><img alt="Protecting Data in the Quantum Age: The Hash Library (HSH)" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><div class="related-body"><h3><a href="https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html">Protecting Data in the Quantum Age: The Hash Library (HSH)</a></h3><p><time datetime="2023-10-16">2023-10-16</time></p></div></article>
+<article class="related-card"><a href=""" class="related-media" aria-label="Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk" tabindex="-1"><img alt="Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk" src=""" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href=""">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</a></h3><p><time datetime="2026-04-11">2026-04-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html" class="related-media" aria-label="Quantum Lattice Crypto: Bug in Chen's LWE Attack" tabindex="-1"><img alt="Quantum Lattice Crypto: Bug in Chen's LWE Attack" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">Quantum Lattice Crypto: Bug in Chen's LWE Attack</a></h3><p><time datetime="2024-04-22">2024-04-22</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html" class="related-media" aria-label="Protecting Data in the Quantum Age: The Hash Library (HSH)" tabindex="-1"><img alt="Protecting Data in the Quantum Age: The Hash Library (HSH)" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html">Protecting Data in the Quantum Age: The Hash Library (HSH)</a></h3><p><time datetime="2023-10-16">2023-10-16</time></p></footer></article>
 </div>
 </aside>
 <!-- enrich-end -->
