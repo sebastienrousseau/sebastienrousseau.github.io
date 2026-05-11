@@ -398,7 +398,10 @@
       .setup-hero-cta{max-width:none !important;width:100%;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:0 0 56px}
       .setup-three{margin:0 0 72px}
       .setup-three-head{text-align:center;margin:0 0 40px}
-      .setup-three-kicker{margin:0 0 10px;font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--accent);text-transform:uppercase}
+      /* Skeletonic ships p{max-width:65ch} which left-aligns these kickers
+         and ledes to a narrow box. Force full width so the parent's
+         text-align:center can actually centre them across the page. */
+      .setup-three-kicker{max-width:none !important;width:100%;margin:0 0 10px;font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--accent);text-transform:uppercase}
       .setup-three-headline{margin:0;font-size:clamp(28px,3.4vw,42px);line-height:1.1;font-weight:600;letter-spacing:-.018em;color:var(--ink)}
       .setup-three-headline-soft{color:var(--ink-mute)}
       .setup-three-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
@@ -419,9 +422,9 @@
          and double-item sections don't collapse into one wide card. */
       .cat-section-head{text-align:center;margin:64px auto 32px;max-width:780px}
       .cat-section-head:first-of-type{margin-top:16px}
-      .cat-kicker{margin:0 0 12px;font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--accent);text-transform:uppercase}
+      .cat-kicker{max-width:none !important;width:100%;margin:0 0 12px;font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--accent);text-transform:uppercase}
       .cat-headline{margin:0 0 14px;font-size:clamp(28px,3.4vw,42px);line-height:1.1;font-weight:600;letter-spacing:-.018em;color:var(--ink)}
-      .cat-lede{margin:0 auto;max-width:640px;font-size:clamp(16px,1.3vw,18px);line-height:1.5;color:var(--ink-mute)}
+      .cat-lede{margin:0 auto;max-width:640px !important;font-size:clamp(16px,1.3vw,18px);line-height:1.5;color:var(--ink-mute)}
       .cat-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
       @media (max-width:980px){.cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
       @media (max-width:600px){.cat-grid{grid-template-columns:1fr}}
@@ -438,10 +441,10 @@
       /* Bottom finale CTA on /projects/. Bigger margin so it breathes after
          the FAQ accordion. */
       .setup-finale{margin:64px 0 24px;padding:64px 28px;text-align:center;background:var(--bg-alt);border-radius:24px}
-      .setup-finale-eyebrow{margin:0 0 12px;font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--accent);text-transform:uppercase}
+      .setup-finale-eyebrow{max-width:none !important;width:100%;margin:0 0 12px;font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--accent);text-transform:uppercase}
       .setup-finale-headline{margin:0 0 14px;font-size:clamp(28px,3.4vw,42px);line-height:1.1;font-weight:600;letter-spacing:-.018em;color:var(--ink)}
-      .setup-finale-lede{margin:0 auto 24px;max-width:640px;font-size:clamp(16px,1.4vw,19px);line-height:1.45;color:var(--ink-mute)}
-      .setup-finale-cta{margin:0}
+      .setup-finale-lede{margin:0 auto 24px;max-width:640px !important;font-size:clamp(16px,1.4vw,19px);line-height:1.45;color:var(--ink-mute)}
+      .setup-finale-cta{max-width:none !important;width:100%;margin:0}
       .newsroom-grid-tight{gap:20px}
       .newsroom-grid-tight .newsroom-card-media{aspect-ratio:16/9}
       .newsroom-grid-tight .newsroom-card-body{padding:16px 18px 20px}
