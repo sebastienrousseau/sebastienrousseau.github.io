@@ -251,7 +251,7 @@ def featured_block(item: tuple) -> str:
 <span class="newsroom-eyebrow">{eyebrow}</span>
 <h3><a href="{href}" title="{title}">{title}</a></h3>
 <p>{summary}</p>
-<p><a class="pill ghost" href="{href}" title="{title}">Learn more</a></p>
+<p><a class="pill ghost" href="{href}" title="{title}" aria-label="Learn more about {title}">Learn more</a></p>
 </div>
 </article>"""
 

@@ -113,7 +113,7 @@ site_software: "Static Site Generator, Rust"
 <span class="newsroom-eyebrow">Open source · Python · Payments</span>
 <h3><a href="https://pain001.com" title="pain001. Automate ISO 20022-compliant payment file creation">pain001. Automate ISO 20022-compliant payment file creation</a></h3>
 <p>A powerful Python library for ISO 20022-compliant payment file creation from CSV or SQLite sources. pain001 directly supports the global payments industry's migration to ISO 20022. The universal financial messaging standard now mandated across SWIFT, SEPA, and major payment schemes worldwide.</p>
-<p><a class="pill ghost" href="https://pain001.com" title="pain001. Automate ISO 20022-compliant payment file creation">Learn more</a></p>
+<p><a class="pill ghost" href="https://pain001.com" title="pain001. Automate ISO 20022-compliant payment file creation" aria-label="Learn more about pain001. Automate ISO 20022-compliant payment file creation">Learn more</a></p>
 </div>
 </article>
 

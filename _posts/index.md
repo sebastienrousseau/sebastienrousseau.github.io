@@ -121,7 +121,7 @@ site_software: "Static Site Generator, Rust"
 <span class="proj-card-tag">Python · Payments</span>
 <h3>pain001</h3>
 <p>A Python library that automates <strong>ISO 20022 pain.001</strong> payment file creation from CSV or SQLite. Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes.</p>
-<a class="pill ghost" href="https://pain001.com">Learn more</a>
+<a class="pill ghost" href="https://pain001.com" aria-label="Learn more about pain001">Learn more</a>
 </div>
 </article>
 
@@ -133,7 +133,7 @@ site_software: "Static Site Generator, Rust"
 <span class="proj-card-tag">Python · Cross-border</span>
 <h3>pacs008</h3>
 <p>Generate, validate and deliver <strong>ISO 20022 pacs.008</strong> FI-to-FI customer credit transfer messages. JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking.</p>
-<a class="pill ghost" href="https://pacs008.com/">Learn more</a>
+<a class="pill ghost" href="https://pacs008.com/" aria-label="Learn more about pacs008">Learn more</a>
 </div>
 </article>
 
@@ -145,7 +145,7 @@ site_software: "Static Site Generator, Rust"
 <span class="proj-card-tag">Python · Finance</span>
 <h3>Bank Statement Parser</h3>
 <p>A finance-grade Python toolkit that turns multi-format bank statements into structured data. Designed for the realities of real-world statement files and the audit demands of regulated environments.</p>
-<a class="pill ghost" href="https://bankstatementparser.com/">Learn more</a>
+<a class="pill ghost" href="https://bankstatementparser.com/" aria-label="Learn more about Bank Statement Parser">Learn more</a>
 </div>
 </article>
 
@@ -157,7 +157,7 @@ site_software: "Static Site Generator, Rust"
 <span class="proj-card-tag">Rust · Security</span>
 <h3>Hash (HSH)</h3>
 <p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification. Designed with a quantum-resistant posture for the post-PQC era of authentication.</p>
-<a class="pill ghost" href="https://github.com/sebastienrousseau/hsh">Learn more</a>
+<a class="pill ghost" href="https://github.com/sebastienrousseau/hsh" aria-label="Learn more about the HSH hash library">Learn more</a>
 </div>
 </article>
 
@@ -169,7 +169,7 @@ site_software: "Static Site Generator, Rust"
 <span class="proj-card-tag">Rust · Quantum</span>
 <h3>KyberLib</h3>
 <p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption. The foundation for quantum-resistant payment authentication.</p>
-<a class="pill ghost" href="https://kyberlib.com/">Learn more</a>
+<a class="pill ghost" href="https://kyberlib.com/" aria-label="Learn more about KyberLib">Learn more</a>
 </div>
 </article>
 
@@ -181,7 +181,7 @@ site_software: "Static Site Generator, Rust"
 <span class="proj-card-tag">Rust · YAML</span>
 <h3>noyalib</h3>
 <p>A <strong>pure-Rust YAML 1.2 ecosystem</strong>. Zero unsafe, 100% spec compliance (406 / 406 official suite), streaming-first serde, lossless CST and JSON-Schema validation. Library + CLI (noyafmt, noyavalidate) + LSP + MCP + WASM bindings.</p>
-<a class="pill ghost" href="https://github.com/sebastienrousseau/noyalib">Learn more</a>
+<a class="pill ghost" href="https://github.com/sebastienrousseau/noyalib" aria-label="Learn more about noyalib">Learn more</a>
 </div>
 </article>
 
