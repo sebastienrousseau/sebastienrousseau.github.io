@@ -350,7 +350,7 @@ def setup_three_block() -> str:
     for t in THREE_THEMES:
         cards.append(
             f"""<article class="setup-card">
-<div class="setup-card-icon"><img alt="{t['icon_alt']}" src="{t['icon']}" loading="lazy" decoding="async" width="80" height="80" /></div>
+<span class="setup-card-icon"><img alt="{t['icon_alt']}" src="{t['icon']}" loading="lazy" decoding="async" width="80" height="80" /></span>
 <h3 class="setup-card-title">{t['title']}</h3>
 <p class="setup-card-body">{t['body']}</p>
 <p class="setup-card-cta"><a href="{t['cta_href']}" class="setup-card-link">{t['cta_label']} <span aria-hidden="true">›</span></a></p>

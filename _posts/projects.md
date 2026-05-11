@@ -110,19 +110,19 @@ site_software: "Static Site Generator, Rust"
 </header>
 
 <section class="setup-three" aria-labelledby="setup-three-heading"><header class="setup-three-head"><p class="setup-three-kicker">WHAT IS INSIDE</p><h2 id="setup-three-heading" class="setup-three-headline">Three areas of practice. <span class="setup-three-headline-soft">One philosophy.</span></h2></header><div class="setup-three-grid"><article class="setup-card">
-<div class="setup-card-icon"><img alt="pain001 logo" src="https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg" loading="lazy" decoding="async" width="80" height="80" /></div>
+<span class="setup-card-icon"><img alt="pain001 logo" src="https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg" loading="lazy" decoding="async" width="80" height="80" /></span>
 <h3 class="setup-card-title">Payments and settlement.</h3>
 <p class="setup-card-body">ISO 20022 <strong>pain.001</strong> and <strong>pacs.008</strong> toolkits, bank-statement parsing, and Rust libraries for the migration to structured cross-border messages. Built for SWIFT, SEPA, and the real-time payment schemes that come next.</p>
 <p class="setup-card-cta"><a href="#cat-payments" class="setup-card-link">Explore payments tools <span aria-hidden="true">›</span></a></p>
 </article>
 <article class="setup-card">
-<div class="setup-card-icon"><img alt="KyberLib logo" src="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" loading="lazy" decoding="async" width="80" height="80" /></div>
+<span class="setup-card-icon"><img alt="KyberLib logo" src="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" loading="lazy" decoding="async" width="80" height="80" /></span>
 <h3 class="setup-card-title">Post-quantum cryptography.</h3>
 <p class="setup-card-body">Rust implementations of <strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203), hash and digest primitives, and quantum-resistant building blocks. Protection beyond the RSA and elliptic-curve era of financial-grade authentication.</p>
 <p class="setup-card-cta"><a href="#cat-quantum" class="setup-card-link">Explore quantum-safe libraries <span aria-hidden="true">›</span></a></p>
 </article>
 <article class="setup-card">
-<div class="setup-card-icon"><img alt="HSH logo" src="https://cloudcdn.pro/clients/hsh/v1/logos/hsh.svg" loading="lazy" decoding="async" width="80" height="80" /></div>
+<span class="setup-card-icon"><img alt="HSH logo" src="https://cloudcdn.pro/clients/hsh/v1/logos/hsh.svg" loading="lazy" decoding="async" width="80" height="80" /></span>
 <h3 class="setup-card-title">Tooling and infrastructure.</h3>
 <p class="setup-card-body">Open-source Rust libraries for serialisation, logging, code generation, date and time. Plus the <strong>Static Site Generator</strong> (SSG) that builds this very site, and the developer environment that makes it shippable.</p>
 <p class="setup-card-cta"><a href="#cat-rust" class="setup-card-link">Explore developer tools <span aria-hidden="true">›</span></a></p>
