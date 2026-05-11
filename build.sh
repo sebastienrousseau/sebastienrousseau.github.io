@@ -23,6 +23,9 @@ ssg -n=docs -c=_posts -t=_layouts -o=public
 
 # Static Site Generator doesn't pick up theme-init.js as a managed asset; we ship it as-is.
 cp -f _layouts/theme-init.js public/theme-init.js
+# Self-host skeletonic CSS so the page has no render-blocking cross-origin
+# stylesheet request. Source is vendored under _layouts/.
+cp -f _layouts/_skeletonic.min.css public/skeletonic.min.css
 
 # Copy fingerprinted assets to their unfingerprinted aliases so the layouts'
 # /main.js, /sw.js, /highlight.css references resolve.
