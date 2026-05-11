@@ -144,7 +144,7 @@ Traditional encryption methods can be broadly categorised into two types: symmet
 
 While traditional encryption methods effectively secure data at rest or in transit, they fall short when it comes to performing computations on encrypted data. Typically, to process or analyse encrypted data, one must first decrypt it, perform the necessary operations, and then re-encrypt it. This decryption step poses a significant risk to data privacy, especially in untrusted or cloud computing environments.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## The Breakthrough of Homomorphic Encryption
 
@@ -182,7 +182,7 @@ Traditional encryption methods are often vulnerable to quantum algorithms. These
 
 Lattice-based FHE is resistant to quantum attacks because the underlying mathematical problems, such as the Shortest Vector Problem (SVP) and the Closest Vector Problem (CVP), are considered to be difficult to solve even for quantum computers. While quantum algorithms like Shor's algorithm can break traditional encryption methods that rely on factoring large numbers or computing discrete logarithms, they are not known to provide significant advantages in solving lattice-based problems. This characteristic makes lattice-based FHE a promising candidate for post-quantum cryptography.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## The Impact of FHE on Banking and Finance
 
@@ -196,7 +196,7 @@ One major application area for homomorphic encryption is secure data processing 
 
 The shift towards cloud computing and outsourcing of computational tasks by banks underscores the relevance of FHE. With secure cloud computing, financial institutions can tap into external resources while protecting sensitive encrypted data through Fully Homomorphic Encryption (FHE). FHE enables banks to securely leverage cloud computing services while ensuring that sensitive encrypted data remains protected at all times.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## Preparing for the Quantum Future
 
@@ -210,7 +210,7 @@ FHE's quantum resistance is due to complex underlying math problems like the Sho
 
 Using quantum-resistant encryption, like FHE, is crucial not only for protecting financial assets but also for maintaining customer trust in the digital era. As quantum computing progresses, financial institutions that prioritise robust encryption will be better positioned to navigate future challenges and opportunities.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## The Future of FHE in Banking and Finance
 
@@ -232,7 +232,7 @@ FHE can be used in various banking and finance applications, such as:
 
 These applications reveal the transformative power of FHE in the Banking and Financial industry and underscore its potential to revolutionise data security and privacy standards.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## Overcoming Challenges in FHE Adoption
 
@@ -250,7 +250,7 @@ Regulatory bodies play a critical role in the adoption of FHE, with evolving dat
 
 The regulatory landscape surrounding data privacy and security plays a significant role in the adoption of FHE within the banking industry.  Strict regulations such as the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA) mandate robust data protection measures and emphasize the individual's right to privacy. FHE, with its ability to process encrypted data without decryption, aligns well with the privacy-centric focus of these regulations. As data privacy laws become increasingly stringent, FHE offers a compelling solution that enables banks to perform necessary computations and analytics while adhering to compliance requirements.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## Securing Large Language Models with Fully Homomorphic Encryption (FHE)
 
@@ -268,7 +268,7 @@ Deploying an on-premise LLM to maintain data privacy poses challenges such as hi
 
 The integration of FHE into LLMs has the potential to transform user privacy, especially in applications dealing with sensitive personal or business information. As AI becomes more focused on privacy, it's important for developers, users, and regulators to work together. This collaboration is key to building an AI ecosystem that puts security and privacy first.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## Conclusion
 

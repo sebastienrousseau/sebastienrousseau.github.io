@@ -132,13 +132,13 @@ OpenVoice offers significant advantages over existing tools. It allows for flexi
 
 As [**OpenAI ⧉**][02] decides to limit access to its own voice cloning tool due to potential misuse, OpenVoice offers a responsible alternative. With advanced controls and fine-tuning options, OpenVoice enables users to generate realistic, customisable voice output while prioritising ethical considerations. This article delves into the pioneering features of OpenVoice, its real-world applications, and the future of voice cloning technology.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## The Pioneering Edge of OpenVoice
 
 OpenVoice differentiates itself through its immediacy in voice cloning, requiring only a brief audio snippet to accurately replicate a speaker's voice across multiple languages. The architecture has two parts: a base speaker model and a tone colour converter. This allows for precise control over voice styles, including emotional tone, accentuation, rhythm, and intonation. It also keeps the speaker's unique vocal characteristics. This versatility empowers creators and technologists to generate voices that resonate with authenticity and emotional depth.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## Speed and Accuracy: A Dual Triumph
 
@@ -146,43 +146,43 @@ OpenVoice's architecture enables it to outpace competitors in both speed and pre
 
 OpenVoice excels at capturing the unique tonal qualities and linguistic nuances of the reference voice. This makes it a leading solution in voice cloning technology.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## Zero-Shot Cross-Lingual Voice Cloning
 
 One of OpenVoice's standout features is its ability to achieve zero-shot cross-lingual voice cloning without extensive data for each language. OpenVoice uses a universal phoneme system and a language-neutral representation in its tone colour converter. It can replicate voices in new languages that were not included in its training information. This is a big advantage over previous methods.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## Granular Control: Crafting Voices with Precision
 
 The ability to fine-tune voice parameters sets OpenVoice apart, offering users unprecedented control over the speech generation process. Voice personalisation and expressiveness are essential in fields like entertainment, education, and customer service. These fields require nuanced speech delivery to improve user engagement and comprehension.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## Robust Real-World Application
 
 OpenVoice has already demonstrated its real-world applicability, having been used tens of millions of times as the voice-cloning backend for MyShell.ai between May and October 2023. This extensive usage showcases OpenVoice's robustness and readiness for deployment in large-scale commercial production environments.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## Innovation Through Open-Source Collaboration
 
 OpenVoice's open-source model not only democratises access to cutting-edge voice cloning technology but also fosters a collaborative environment for continuous improvement. By inviting contributions from the global tech community, OpenVoice ensures a dynamic evolution of its capabilities, addressing emerging needs and expanding its application spectrum. The source code and model weights have been made publicly available to facilitate further research and development.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## A Comparative Analysis with OpenAI's Voice Cloning Tool
 
 While OpenAI's Voice Cloning Tool represents a significant advancement in voice synthesis, OpenVoice eclipses it by offering greater versatility and control. Direct comparisons between voice cloning solutions can be challenging. This is because different solutions use different datasets, evaluation metrics, and focus areas. OpenVoice stands out in voice cloning for its unique abilities. It can do zero-shot cross-lingual voice cloning and has great flexibility in controlling voice styles. This combination of features makes OpenVoice highly adaptable and powerful, making it an exceptional tool for voice replication. 
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## Versatile Applications Across Industries
 
 OpenVoice applications extend across various sectors. It promises to revolutionise accessibility by providing the visually impaired with naturalistic voice navigation. In entertainment, it enables the creation of diverse voice personas for digital content. Customer service can leverage OpenVoice to enhance interactive voice response systems, offering users more personalised and engaging experiences.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## Responsible AI Considerations
 
@@ -195,7 +195,7 @@ OpenVoice developers are committed to responsible AI practises:
 - Educating users on proper technology use.
 - Ongoing research and collaboration with ethicists and policymakers will be essential to address the evolving challenges in this domain.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## The Horizon of Future Developments
 
@@ -207,7 +207,7 @@ As OpenVoice progresses, its roadmap focuses on:
 
 Open-source development ensures OpenVoice stays innovative. Community contributions and technological advancements will keep it at the forefront of voice cloning.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## Conclusion
 

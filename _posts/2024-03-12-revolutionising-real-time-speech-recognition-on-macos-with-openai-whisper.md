@@ -134,31 +134,31 @@ Speech recognition technology plays a crucial role in facilitating a wide range 
 
 [**Metal Performance Shaders (MPS)**][01] is a technology developed by Apple that enables high-performance GPU computation on macOS devices. It allows developers to harness the power of the GPU for parallel processing, leading to significant speed improvements in various computational tasks, including machine learning and computer vision.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### 1. The Evolution of Speech Recognition on macOS
 
 The evolution of speech recognition technology on macOS devices has been driven by advancements in neural network models and hardware acceleration technologies. Traditional speech recognition systems often faced challenges in accuracy, latency, and computational efficiency, particularly when dealing with diverse accents, background noises, and varying recording conditions. The introduction of OpenAI Whisper has set a new benchmark for robust and precise speech recognition across a wide array of languages and dialects, offering a suitable solution for real-time applications.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### 2. Harnessing OpenAI Whisper and Metal Performance Shaders
 
 The research paper unveils an innovative approach by combining the advanced capabilities of OpenAI Whisper with the high-performance computation of MPS on macOS. This integration is achieved by optimizing the Whisper model to run on the GPU using the MPS framework, which enables efficient parallel processing. The researchers have implemented techniques such as model quantization and pruning to reduce the model's size and computational requirements while maintaining high accuracy. By leveraging the GPU's parallel processing capabilities, the system achieves notable speed improvements, with transcription speeds that are 8-12 times faster than real-time for typical utterances. This enhances the user experience by reducing wait times and enables a broader range of real-time applications, from live captioning to interactive voice-controlled systems.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### 3. Implications for Users and Developers
 
 The integration of Whisper and MPS on macOS has significant implications for both end-users and application developers. For users, it offers an improved experience in real-time speech recognition, providing near-instantaneous transcription with high accuracy while maintaining the privacy and security of on-device processing. This technology can be applied in various real-world scenarios, such as voice-controlled applications for home automation, real-time transcription services for meetings and lectures, and accessibility features for users with hearing impairments. Developers gain access to a toolkit for integrating speech-to-text functionality into their applications, with the added benefits of energy efficiency and seamless Python integration.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ### 4. Driving Adoption and Innovation
 
 The modular architecture and Python implementation of this system facilitate integration into existing applications and lower the barrier to entry for developers looking to incorporate speech recognition capabilities. However, developers may face challenges in terms of model customization and adaptation to specific use cases, as well as optimizing performance for different hardware configurations. The research paper provides guidance on addressing these challenges, such as fine-tuning the model on domain-specific data and implementing dynamic resource allocation strategies. Additionally, the energy-efficient voice activity detection system, which achieves 94% precision and 96% recall, ensures that applications remain responsive and accurate without draining device resources. This combination of features has the potential to drive adoption among developers and catalyse further innovation in the field of real-time speech recognition.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## Conclusion
 

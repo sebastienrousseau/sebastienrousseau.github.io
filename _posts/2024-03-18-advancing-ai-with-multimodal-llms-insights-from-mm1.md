@@ -128,7 +128,7 @@ last_reviewed: "2026-05-11"
 
 The integration of natural language processing and image recognition has resulted in the development of Multimodal Large Language Models (MLLMs). In their paper, Apple introduces the MM1, a collection of multimodal AI models that combine vision and language comprehension. Through thorough experiments, the researchers examined the factors that contribute to the performance of these models, exploring various architectural choices and pre-training data combinations. The MM1 paper provides essential information about how MLLMs are structured and trained. It discusses the study's approach and crucial findings, showcasing their possible impact on the future of AI.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## The Emergence of Multimodal AI
 
@@ -136,7 +136,7 @@ The field of AI has witnessed remarkable advancements in recent years, particula
 
 MLLMs represent the next frontier in AI, combining the strengths of both NLP and computer vision to create models that can seamlessly process and generate information across text and images. This fusion of modalities opens up a world of possibilities, from more engaging virtual assistants to intelligent content creation tools that can generate captivating multimedia experiences.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## The MM1 Study: A Landmark in Multimodal AI Research
 
@@ -148,7 +148,7 @@ The MM1 publication employed a rigorous experimental approach to investigate the
 
 One of the primary objectives of the research was to determine the optimal mix of pre-training data for achieving superior few-shot learning capabilities. Few-shot learning refers to the ability of a model to adapt and learn from a limited number of examples, a crucial aspect of AI systems that need to be flexible and efficient in real-world applications.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## Key Findings and Insights
 
@@ -160,17 +160,17 @@ The choice of image encoder architecture, such as ResNet or ViT, significantly i
 
 The MM1 study also sheds light on the importance of the vision-language connector in enabling seamless interaction between the visual and textual modalities. The researchers experimented with various approaches to fusing the information from the image encoder and the language model, identifying cross-attention mechanisms and multi-head attention as effective strategies for achieving rich and contextually relevant interactions.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## MM1 Model Architecture and Multimodal Learning Process
 
-![MM1 Model Architecture][architecture].alt=\"MM1 Model Architecture\" .class=\"m-10 w-100\"
+![MM1 Model Architecture][architecture].class=\"m-10 w-100\"
 
 The diagram illustrates the architecture and learning process of the MM1 model. The pre-training data consists of image input and text input, with the image input being processed by the Image Encoder and the text input directly feeding into the pre-trained LLM transformer. The Image Encoder extracts visual features from the input images, which are then passed to the VL Connector (Vision-Language Connector). The VL Connector integrates the visual features with the textual information from the pre-trained LLM transformer. This multimodal fusion enables the model to generate VQA (Visual Question Answering) captioning output through supervised fine-tuning.
 
 The pre-training data composition includes 45% interleaved data, 45% captions, and 10% text-only data, highlighting the importance of diverse data types in training the MM1 model.
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## MM1: A Benchmark for Multimodal AI
 
@@ -190,7 +190,7 @@ Another promising direction is the application of MLLMs to real-world scenarios,
 
 > The next big step in AI will be machines that understand the world around them much better, by being able to understand and reason about the data that they haven't seen before. - **Yann LeCun**
 
-![divider][divider].alt=\"Divider\" .class=\"m-10 w-100\"
+![divider][divider].class=\"m-10 w-100\"
 
 ## Conclusion
 
