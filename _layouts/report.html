@@ -102,11 +102,13 @@
       /* ---------- Nav (compact, sticky, frosted, Apple-style 3-column) ---------- */
       /* color-mix() requires Chrome 111 / Safari 16.2 / Firefox 113. The
          RGBA values are pre-computed fallbacks for older engines. */
-      .ap-nav{position:sticky;top:0;z-index:100;height:var(--nav-h);background:rgba(251,251,253,.8);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.08)}
-      [data-theme="dark"] .ap-nav{background:rgba(0,0,0,.8);border-bottom-color:rgba(255,255,255,.08)}
-      @supports (background: color-mix(in srgb, red, blue)){
-        .ap-nav{background:color-mix(in srgb,var(--bg) 80%,transparent);border-bottom-color:color-mix(in srgb,var(--ink) 8%,transparent)}
-      }
+      /* Nav uses an OPAQUE background. Earlier iterations used a translucent
+         rgba + backdrop-filter for a frosted-glass effect, but HTMLCS cannot
+         compute contrast through a translucent layer and falls back to NaN,
+         which fails WCAG AAA in automated audits. Solid bg also performs
+         marginally better (no compositor layer). */
+      .ap-nav{position:sticky;top:0;z-index:100;height:var(--nav-h);background:var(--bg);border-bottom:1px solid var(--border)}
+      [data-theme="dark"] .ap-nav{background:var(--bg);border-bottom-color:var(--border)}
       /* Grid: brand on the left, menu perfectly centred, utilities on the right.
          The outer cols are 1fr each so the menu always sits in the viewport centre
          regardless of how wide the brand or the right group becomes. */
