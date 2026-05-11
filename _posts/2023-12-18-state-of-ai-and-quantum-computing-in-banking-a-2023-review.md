@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Shaping the Future of Banking: AI, Quantum Computing, Open Source Models, and Regulatory Landscape"
 tags: "2023, AI, Quantum, Computing, Banking, Open-Source, Models, Regulations, Governance, Finance, Payments, Risk, Management, Cybersecurity, Transformation, Efficiency, Cost, Savings, Customer, Experiences, Revenue, Growth, Algorithms, Data, Analysis, Patterns, Decisions, Creditworthiness, Fraud, Mitigation, Loans, Approval, Investment, Portfolio, Optimisation, Market, Trends, Detection, Service, Proactive, Support, HSBC, Collaboration, Technology, Providers, Research, Laboratories, Real-World, Problems, Trading, Protection, Euros, Dollars, Adoption, Language, Models, LLMs, Developers, Researchers, Stakeholders, Democratisation, Innovation, Decision-Making, Transparency, Customisability, Interpretability, Contributions, Projects, Capabilities, Mixtral, GPT-NeoX, GPT-J, OPT-175, LLMa, Ethical, Guidelines, Human, Rights, Exploitation, Privacy, Multi-Stakeholder, Approach, Governments, Businesses, Civil, Society, National, International, Efforts, Development, Deployment, Challenges, YouTube, Channel, Automation, Modelling, Processing, Opportunities, Implications"
-theme-color: "0, 0, 96"
+theme-color: "0, 67, 165"
 title: "State of AI and Quantum Computing in Banking: A 2023 Review"
 url: "https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -74,7 +74,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(0, 102, 204)"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

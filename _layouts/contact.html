@@ -162,6 +162,11 @@
       .pill.primary:hover{background:var(--accent);color:#fff;opacity:.92}
       .pill.ghost{background:transparent;color:var(--accent);border-color:currentColor}
       .pill.ghost:hover{background:rgba(var(--accent-rgb),.08);opacity:1}
+      /* On dark hero sections, the ghost pill text needs to be white for
+         AAA contrast against the black background — the accent blue is only
+         ~2.6:1 on black. */
+      .feat.dark .pill.ghost,.feat-finale .pill.ghost{color:#fff;border-color:#fff}
+      .feat.dark .pill.ghost:hover,.feat-finale .pill.ghost:hover{background:rgba(255,255,255,.1)}
       .pill.dark{background:#1d1d1f;color:#fff}
       .pill.dark:hover{background:#000}
       .pill.light{background:#fff;color:#1d1d1f}
@@ -456,7 +461,12 @@
       .feat-quote{font-family:"SF Pro Display",-apple-system,sans-serif;font-size:clamp(28px,3.6vw,44px);line-height:1.18;font-weight:500;letter-spacing:-.015em;color:inherit;max-width:1100px;margin:0 auto;text-align:left}
       .feat-quote-section .feat-quote{text-align:center}
       .feat-quote p{margin:0}
-      .feat-quote-attrib{margin-top:36px;display:inline-flex;flex-direction:column;gap:6px;align-items:center;padding:18px 28px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;backdrop-filter:saturate(180%) blur(8px)}
+      /* Opaque background so HTMLCS can compute contrast (a translucent bg
+         over the gradient hero returned NaN:1 in pa11y). The colour is
+         deliberately matched to the darkest stop of the section gradient. */
+      .feat-quote-attrib{margin-top:36px;display:inline-flex;flex-direction:column;gap:6px;align-items:center;padding:18px 28px;background:#0a1b3d;border:1px solid rgba(255,255,255,.18);border-radius:16px;color:#fff}
+      .feat-quote-attrib a{color:#fff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.5);text-underline-offset:3px}
+      .feat-quote-attrib a:hover{text-decoration-color:#fff;opacity:1}
       .feat-quote-attrib strong{font-size:15px;font-weight:600;letter-spacing:.02em;color:#fff}
       .feat-quote-attrib span{font-size:13px;color:#a1a1a6;letter-spacing:.01em}
       .feat-quote-attrib a{color:#5ac8fa;text-decoration:none}

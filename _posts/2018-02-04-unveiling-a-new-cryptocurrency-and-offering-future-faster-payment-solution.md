@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "A new cryptocurrency and faster-payments solution for the next-generation of finance."
 tags: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
-theme-color: "0, 75, 176"
+theme-color: "0, 67, 165"
 title: "Unveiling a new Cryptocurrency and Faster Payment Solution"
 url: "https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -74,7 +74,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(0, 102, 204)"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

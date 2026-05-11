@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Strengthen Data Security, Enhance AI Privacy, and Build Customer Trust in the Quantum Computing Era with FHE"
 tags: "FHE, Banking, Quantum Computing, Data Security, Encryption, Financial Technology, Regulatory Compliance, Computational Overhead, Research, Data Privacy"
-theme-color: "0, 98, 115"
+theme-color: "0, 67, 165"
 title: "Fully Homomorphic Encryption (FHE) in a Banking Quantum Era"
 url: "https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -83,7 +83,7 @@ apple-mobile-web-app-title: "Sebastien Rousseau"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
-msapplication-navbutton-color: "0, 98, 115"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 twitter_card: "summary"

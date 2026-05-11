@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Navigating the Future of AI with the EU's Groundbreaking Legal Framework"
 tags: "EU, AI, Regulation, Ethics, Innovation, Transparency, Governance, Standards, Consumer Rights, Technology"
-theme-color: "3, 23, 42"
+theme-color: "0, 67, 165"
 title: "EU's AI Act: Pioneering Ethical AI Regulation Worldwide"
 url: "https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -84,7 +84,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "3, 23, 42"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

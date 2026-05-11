@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Shaping the Future of Banking and Financial Services through Strategic Integration of Artificial Intelligence, Post-Quantum Cryptography & Blockchain Technology"
 tags: "payments technology, digital finance, artificial intelligence, post-quantum cryptography, blockchain technology, strategic leadership, operational leadership, cross-platform product design, engineering, solution architecture"
-theme-color: "0, 75, 176"
+theme-color: "0, 67, 165"
 title: "Sebastien Rousseau: AI, Banking & Financial Services Expert"
 url: "https://sebastienrousseau.com/about"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -74,7 +74,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "0, 75, 176"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

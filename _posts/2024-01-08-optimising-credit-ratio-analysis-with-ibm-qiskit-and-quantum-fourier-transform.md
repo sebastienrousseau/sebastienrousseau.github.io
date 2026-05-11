@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Optimising Credit Ratio Analysis with IBM Qiskit and Quantum Fourier Transform"
 tags: "Qiskit, Quantum Computing, Credit Analysis, FinTech, QFT, Risk Management, Finance, Data Science, Algorithm, Quantum Technology"
-theme-color: "99, 56, 16"
+theme-color: "0, 67, 165"
 title: "Qiskit & Quantum Fourier Transform for Credit Ratio Analysis"
 url: "https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -84,7 +84,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(0, 102, 204)"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

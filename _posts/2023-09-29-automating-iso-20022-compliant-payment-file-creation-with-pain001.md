@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "ISO 20022 payment automation and wholesale-payments engineering with pain001."
 tags: "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation"
-theme-color: "0, 75, 176"
+theme-color: "0, 67, 165"
 title: "Automating ISO 20022 Payment Files Creation with Pain001"
 url: "https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -74,7 +74,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(0, 102, 204)"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

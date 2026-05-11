@@ -42,7 +42,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Your privacy is important to us."
 tags: "agreement, copyright, intellectual property, liability, limitation, links, privacy, terms, trademark, use, website"
-theme-color: "0, 75, 176"
+theme-color: "0, 67, 165"
 title: "Website Terms & Conditions of Use — Sebastien Rousseau"
 url: "https://sebastienrousseau.com/terms"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -75,7 +75,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "0, 75, 176"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

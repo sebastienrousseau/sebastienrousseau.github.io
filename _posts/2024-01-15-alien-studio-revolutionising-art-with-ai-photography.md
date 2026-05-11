@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "The Beginnings of a Technological Odyssey"
 tags: "Technology, Art, Photography, Rust, AI, Quantum Computing, Personal Journey, Alien Studio, Digital Art, Innovation"
-theme-color: "253, 106, 19"
+theme-color: "0, 67, 165"
 title: "Alien Studio: My Tech-to Art Journey in Photography"
 url: "https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -84,7 +84,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "0, 102, 204"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

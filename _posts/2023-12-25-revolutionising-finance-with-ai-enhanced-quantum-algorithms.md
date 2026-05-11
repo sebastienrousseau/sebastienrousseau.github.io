@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Unleashing the Power of Quantum for Financial Innovation: AI at the Heart of Next-Gen Algorithms"
 tags: "Quantum, AI, Finance, Algorithms, Mathematics, Banking, Technology, Innovation, Data, Efficiency"
-theme-color: "62, 104, 118"
+theme-color: "0, 67, 165"
 title: "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
 url: "https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -84,7 +84,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(0, 102, 204)"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

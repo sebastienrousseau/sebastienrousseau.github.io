@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "The Next polynomial-time quantum algorithm for lattice-based cryptography"
 tags: "quantum algorithms, cryptography, lattice problems, LWE, post-quantum, security, research, innovation, cybersecurity, future-proofing"
-theme-color: "7, 35, 87"
+theme-color: "0, 67, 165"
 title: "Quantum Algorithm Challenges Lattice-Based Cryptography"
 url: "https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -83,7 +83,7 @@ apple-mobile-web-app-title: "Quantum Algorithm Challenges Lattice-Based Cryptogr
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
-msapplication-navbutton-color: "7, 35, 87"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 twitter_card: "summary"

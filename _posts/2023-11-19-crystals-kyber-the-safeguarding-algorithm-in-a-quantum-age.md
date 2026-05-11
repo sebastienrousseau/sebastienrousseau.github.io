@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "CRYSTALS-Kyber, the NIST FIPS 203 standard for post-quantum key encapsulation."
 tags: "quantum, CRYSTALS-Kyber, encryption, security, banking, finance, data, future, quantum-resistant, cryptography"
-theme-color: "0, 75, 176"
+theme-color: "0, 67, 165"
 title: "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
 url: "https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -74,7 +74,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(0, 102, 204)"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

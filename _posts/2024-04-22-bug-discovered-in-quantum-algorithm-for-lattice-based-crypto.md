@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Peer Review Reveals Flaw in Chen's Groundbreaking Work"
 tags: "Post-Quantum Cryptography, NIST, PQC Standardisation, Quantum Algorithm, Lattice-Based Cryptography, LWE Problem, Quantum Computing, Cryptographic Security, Quantum Resistance, Cryptography Research"
-theme-color: "181, 0, 34"
+theme-color: "0, 67, 165"
 title: "Bug Discovered in Quantum Algorithm for Lattice-Based Crypto"
 url: "https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -83,7 +83,7 @@ apple-mobile-web-app-title: "Bug Discovered in Quantum Algorithm for Lattice-Bas
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
-msapplication-navbutton-color: "181, 0, 34"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 twitter_card: "summary"

@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Industry white papers and applied research for senior payments and security leaders."
 tags: "White Papers, Research, Technology, ASR, OpenAI, macOS, Speech Recognition, GPU, Acceleration, Publications"
-theme-color: "0, 75, 176"
+theme-color: "0, 67, 165"
 title: "Research Publications & White Papers from Sebastien Rousseau"
 url: "https://sebastienrousseau.com/papers"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -74,7 +74,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "0, 75, 176"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
@@ -109,7 +109,7 @@ site_software: "Static Site Generator, Rust"
 </a>
 <div class="book-body">
 <p class="book-eyebrow">INDUSTRY WHITE PAPER · EPAA</p>
-<h3 class="book-title"><a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" rel="external noopener" title="Quantum-Safe Payments: Why the Payments Industry Must Act Now">Quantum-Safe Payments: Why the Payments Industry Must Act Now</a></h3>
+<h2 class="book-title"><a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" rel="external noopener" title="Quantum-Safe Payments: Why the Payments Industry Must Act Now">Quantum-Safe Payments: Why the Payments Industry Must Act Now</a></h2>
 <p class="book-meta"><time datetime="2025-09-01">September 2025</time> &middot; <a href="https://emergingpaymentsasia.org/" rel="external noopener">Emerging Payments Association Asia (EPAA)</a></p>
 <p class="book-meta book-meta-faint">English · PDF · 18.9 MB · Free download</p>
 <p class="book-excerpt">Quantum computing threatens the cryptographic foundations of financial services. Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete, and regulators are already treating harvest-now-decrypt-later as a credible present risk. This paper, produced for the Emerging Payments Association Asia, outlines the structural threat post-quantum cryptography poses to payment infrastructure across SWIFT, real-time gross settlement (RTGS) rails and instant payment schemes, and argues for coordinated industry action — starting with cryptographic-asset inventories, PQC migration roadmaps aligned to the NIST FIPS 203/204/205 standards, and crypto-agility built into wholesale payment authentication.</p>
@@ -123,7 +123,7 @@ site_software: "Static Site Generator, Rust"
 </a>
 <div class="book-body">
 <p class="book-eyebrow">PUBLICATION · WHITE PAPER</p>
-<h3 class="book-title"><a href="/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html" title="Accelerating Real-Time Speech Recognition with OpenAI Whisper and Metal Performance Shaders on macOS">Accelerating Real-Time Speech Recognition with OpenAI Whisper and Metal Performance Shaders on macOS</a></h3>
+<h2 class="book-title"><a href="/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html" title="Accelerating Real-Time Speech Recognition with OpenAI Whisper and Metal Performance Shaders on macOS">Accelerating Real-Time Speech Recognition with OpenAI Whisper and Metal Performance Shaders on macOS</a></h2>
 <p class="book-meta"><time datetime="2024-03-12">March 12, 2024</time> &middot; Sebastien Rousseau</p>
 <p class="book-meta book-meta-faint">English · PDF · 95 KB</p>
 <p class="book-excerpt">A system for real-time speech-to-text transcription that leverages OpenAI Whisper and Metal Performance Shaders GPU acceleration on macOS to achieve sub-second latency at 8-12x real-time on M1 Max.</p>

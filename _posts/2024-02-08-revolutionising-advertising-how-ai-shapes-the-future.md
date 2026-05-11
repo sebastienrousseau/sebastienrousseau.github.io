@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "How AI Transforms Consumer Interactions and Advertising Dynamics"
 tags: "AI, Advertising, Amazon, Meta, Chatbots, Marketing, Technology, Analytics, Digital, Optimization"
-theme-color: "0, 99, 99"
+theme-color: "0, 67, 165"
 title: "Revolutionising Advertising: How AI Shapes the Future"
 url: "https://sebastienrousseau.com/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -84,7 +84,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "0, 99, 99"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "An Inside Look at Capabilities, Open Source Contributions, and What's Ahead"
 tags: "Gemma, Google, AI, Open-Source, Technical, Enterprise, Integration, macOS, Data, Ethics"
-theme-color: "15, 23, 36"
+theme-color: "0, 67, 165"
 title: "Google Gemma AI: Transforming Open-Source AI Development"
 url: "https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -83,7 +83,7 @@ apple-mobile-web-app-title: "Sebastien Rousseau"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
-msapplication-navbutton-color: "15, 23, 36"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 twitter_card: "summary"

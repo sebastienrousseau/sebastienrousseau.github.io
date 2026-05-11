@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Unveiling the Future of AI: How Apple's Groundbreaking MM1 Study Revolutionises Multimodal Learning"
 tags: "Multimodal, LLMs, AI, MM1, Pre-training, Image Recognition, NLP, Future, Learning, Research"
-theme-color: "174, 0, 87"
+theme-color: "0, 67, 165"
 title: "Advancing AI with Multimodal LLMs: Insights from MM1"
 url: "https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -83,7 +83,7 @@ apple-mobile-web-app-title: "Sebastien Rousseau"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
-msapplication-navbutton-color: "174, 0, 87"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 twitter_card: "summary"

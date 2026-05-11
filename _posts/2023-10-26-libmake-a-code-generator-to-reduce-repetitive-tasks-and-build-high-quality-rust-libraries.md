@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "LibMake: a Rust code generator that enforces best practices from day one."
 tags: "rust, library, development, code, generator, boilerplate, best, practices, quality, reliable"
-theme-color: "0, 75, 176"
+theme-color: "0, 67, 165"
 title: "Streamlining Rust Library Development with Code Generation"
 url: "https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -74,7 +74,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(0, 102, 204)"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Empowering Seamless Interactions with Cutting-Edge AI Technology"
 tags: "Àkàndé, Voice Assistant, NLU, PDF, Caching, OpenAI, Executive, Personal, Digital, Innovation, Python, SQLite, Privacy"
-theme-color: "0, 96, 113"
+theme-color: "0, 67, 165"
 title: "Àkàndé Voice Assistant, A Personal and Executive Assistance"
 url: "https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -84,7 +84,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "0, 96, 113"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

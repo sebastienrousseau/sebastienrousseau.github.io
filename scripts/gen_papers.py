@@ -144,7 +144,7 @@ def epaa_card_block() -> str:
 </a>
 <div class="book-body">
 <p class="book-eyebrow">{f['eyebrow']}</p>
-<h3 class="book-title"><a href="{f['read_url']}" rel="external noopener" title="{f['title']}">{f['title']}</a></h3>
+<h2 class="book-title"><a href="{f['read_url']}" rel="external noopener" title="{f['title']}">{f['title']}</a></h2>
 <p class="book-meta"><time datetime="{f['date_iso']}">{f['date_display']}</time> &middot; <a href="{f['publisher_url']}" rel="external noopener">{f['publisher']}</a></p>
 <p class="book-meta book-meta-faint">{f['format']}</p>
 <p class="book-excerpt">{f['abstract']}</p>
@@ -161,7 +161,7 @@ def whisper_card_block() -> str:
 </a>
 <div class="book-body">
 <p class="book-eyebrow">{p['eyebrow']}</p>
-<h3 class="book-title"><a href="{p['href']}" title="{p['title']}">{p['title']}</a></h3>
+<h2 class="book-title"><a href="{p['href']}" title="{p['title']}">{p['title']}</a></h2>
 <p class="book-meta"><time datetime="{p['date_iso']}">{p['date_display']}</time> &middot; Sebastien Rousseau</p>
 <p class="book-meta book-meta-faint">{p['format']}</p>
 <p class="book-excerpt">{p['excerpt']}</p>

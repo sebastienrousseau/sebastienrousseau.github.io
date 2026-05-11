@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Vetted mathematical and cryptographic constants for memory-safe Rust security."
 tags: "math, security, cryptography, Rust, programming, encryption, communication, constants, constants in Rust, Common library"
-theme-color: "0, 75, 176"
+theme-color: "0, 67, 165"
 title: "Mathematical and Cryptographic Constants for Rust Security"
 url: "https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -74,7 +74,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(0, 102, 204)"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

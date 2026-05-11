@@ -42,7 +42,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Dedicated to ensuring digital accessibility for people with disabilities"
 tags: "accessibility, wcag, inclusivity, screen-reader, usability, web-design, ada, compliance, ux, design, color-blindness, assistive-tech"
-theme-color: "0, 75, 176"
+theme-color: "0, 67, 165"
 title: "Accessibility Statement"
 url: "https://sebastienrousseau.com/accessibility"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -75,7 +75,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "255,255,255"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

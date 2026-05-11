@@ -92,11 +92,14 @@ jobs:
                   "chromeLaunchConfig": {
                       "args": ["--no-sandbox", "--disable-setuid-sandbox"]
                   },
-                  # The SSG search widget injects a <link> stylesheet into the
-                  # body at runtime, which fails HTMLCS "link elements must be
-                  # in <head>". The widget is third-party markup we don't
-                  # control, so hide it before the audit runs.
-                  "hideElements": "#ssg-search-widget, #ssg-search-btn"
+                  # Hide third-party widgets we don't control before pa11y
+                  # evaluates the page:
+                  #   - SSG search widget injects a <link> stylesheet into
+                  #     the body, which fails "link elements must be in <head>".
+                  #   - Google reCAPTCHA on /contact/ injects a hidden iframe
+                  #     with no title attribute, which fails "iframe needs
+                  #     a non-empty title". Both are upstream markup.
+                  "hideElements": "#ssg-search-widget, #ssg-search-btn, iframe[src*='recaptcha'], iframe[src*='google.com/recaptcha'], form iframe"
               },
               "urls": urls,
           }, open(".pa11yci","w"), indent=2)

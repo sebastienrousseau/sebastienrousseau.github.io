@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Quantum Key Distribution (QKD) for financial-grade security in banking."
 tags: "quantum, key, distribution, cryptography, security, finance, banking, digital, innovation, blockchain, quantum computing, hsbc, trading, data, protection, future"
-theme-color: "0, 75, 176"
+theme-color: "0, 67, 165"
 title: "Quantum Key Distribution Revolutionising Security in Banking"
 url: "https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -74,7 +74,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(0, 102, 204)"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

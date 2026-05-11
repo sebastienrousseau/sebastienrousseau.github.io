@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Revolutionising audio data processing with Azure AI Platform"
 tags: "Azure, AI, Analytics, Transcription, Translation, Insights, Speech Recognition, Data Processing, Machine Learning, Technology"
-theme-color: "162, 48, 0"
+theme-color: "0, 67, 165"
 title: "AI-Powered Speech Analysis, Translation, & Insight Tool"
 url: "https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -84,7 +84,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "162, 48, 0"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

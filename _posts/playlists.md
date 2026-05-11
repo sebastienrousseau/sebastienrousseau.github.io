@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Curated Spotify playlists for deep work, creativity and the engineering mind."
 tags: "best spotify playlists, jazz playlists, soul playlists, hip hop playlists, rap playlists, r&b playlists, neo soul playlists, house music playlists, indie rock playlists, pop music playlists"
-theme-color: "0, 75, 176"
+theme-color: "0, 67, 165"
 title: "Embark on a Personal Journey with the Best Spotify Playlists"
 url: "https://sebastienrousseau.com/playlists"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -74,7 +74,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(0, 102, 204)"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

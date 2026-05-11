@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "ERC-20 tokens, Ethereum smart contracts and the standardisation of digital assets."
 tags: "ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, solidity"
-theme-color: "0, 75, 176"
+theme-color: "0, 67, 165"
 title: "ERC-20: The Ethereum Token Interface That Changed the World"
 url: "https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -74,7 +74,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(0, 102, 204)"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

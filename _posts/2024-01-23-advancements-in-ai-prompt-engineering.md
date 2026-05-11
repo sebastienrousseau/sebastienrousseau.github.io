@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Reshaping human-computer interaction with significant advancements in custom instructions"
 tags: "AI, Engineering, Quantum, Ethics, Technology, Innovation, Trends, Computing, Finance, Education"
-theme-color: "4, 17, 43"
+theme-color: "0, 67, 165"
 title: "AI Prompt Engineering 2024: Insights & Advanced Techniques"
 url: "https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -84,7 +84,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "4, 17, 43"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

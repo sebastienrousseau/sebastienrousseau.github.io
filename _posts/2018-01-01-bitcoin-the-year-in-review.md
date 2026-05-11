@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Bitcoin, cryptocurrency, and the technology reshaping financial markets."
 tags: "bitcoin, cryptocurrency, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, programmable money, future of money, financial revolution"
-theme-color: "0, 75, 176"
+theme-color: "0, 67, 165"
 title: "Bitcoin: A Year In Review of the First Cryptocurrency"
 url: "https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -74,7 +74,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(0, 102, 204)"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

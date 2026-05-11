@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "KyberLib, a robust Rust implementation of CRYSTALS-Kyber for the quantum era."
 tags: "quantum-safe, cryptography, KyberLib, Rust, CRYSTALS-Kyber, lattice-based, NIST, standardization, KEM, digital signatures, lightweight, hash-based, Kyber512, Kyber768, Kyber1024, security, efficiency, versatility, no-std, memory safety, system-level, embedded, WebAssembly, web"
-theme-color: "0, 75, 176"
+theme-color: "0, 67, 165"
 title: "KyberLib: A Rust-Powered Shield Against Quantum Threats"
 url: "https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -74,7 +74,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(0, 102, 204)"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

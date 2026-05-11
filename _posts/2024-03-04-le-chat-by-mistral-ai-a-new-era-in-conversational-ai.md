@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Redefining User Interaction Across Languages"
 tags: "Le Chat, Mistral AI, Conversational AI, Multilingual, Customisation, Business AI, Chatbot, AI Models, Enterprise Solutions, Technology"
-theme-color: "255,112,0"
+theme-color: "0, 67, 165"
 title: "Le Chat by Mistral AI: A New Era in Conversational AI"
 url: "https://sebastienrousseau.com/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -83,7 +83,7 @@ apple-mobile-web-app-title: "Sebastien Rousseau"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
-msapplication-navbutton-color: "255,112,0"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 twitter_card: "summary"

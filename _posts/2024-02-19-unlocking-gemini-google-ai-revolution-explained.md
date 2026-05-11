@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "A Deep Dive into Google's Latest AI Breakthrough"
 tags: "Gemini 1.5, Google AI, AI Efficiency, AI Quality, Context Window, In-Context Learning, AI Use Cases, AI Revolution, Technology Transformation, Data Analysis"
-theme-color: "15, 23, 36"
+theme-color: "0, 67, 165"
 title: "Unlocking Gemini 1.5: Google's AI Revolution Explained"
 url: "https://sebastienrousseau.com/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -83,7 +83,7 @@ apple-mobile-web-app-title: "Sebastien Rousseau"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
-msapplication-navbutton-color: "15, 23, 36"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 twitter_card: "summary"

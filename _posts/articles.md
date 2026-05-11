@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Articles on AI, post-quantum cryptography, ISO 20022 and the future of payments."
 tags: "Sample, Rust, static site generator, ssg, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML"
-theme-color: "0, 75, 176"
+theme-color: "0, 67, 165"
 title: "Discover How Technology Is Changing Banking and Finance"
 url: "https://sebastienrousseau.com/articles"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -74,7 +74,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "0, 75, 176"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

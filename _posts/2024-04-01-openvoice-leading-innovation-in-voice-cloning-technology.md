@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "The Next-Gen Open-Source Voice Cloning Tool"
 tags: "OpenVoice, Voice Cloning, Synthetic Speech, Open-Source, Cross-Lingual, Instant Cloning, Voice Control, Accessibility, Entertainment, Customer Service"
-theme-color: "175, 0, 94"
+theme-color: "0, 67, 165"
 title: "OpenVoice: Leading Innovation in Voice Cloning Technology"
 url: "https://sebastienrousseau.com/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -83,7 +83,7 @@ apple-mobile-web-app-title: "Sebastien Rousseau"
 apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
-msapplication-navbutton-color: "175, 0, 94"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 twitter_card: "summary"

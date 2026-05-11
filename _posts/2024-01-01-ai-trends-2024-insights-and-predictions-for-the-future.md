@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "A Pivotal Year for Tech, Society, and Ethical Evolution"
 tags: "AI, 2024, Trends, Generative, Cybersecurity, Education, Retail, Ethics, Analytics, Innovation"
-theme-color: "255, 99, 72"
+theme-color: "0, 67, 165"
 title: "AI Trends 2024: Insights and Predictions for the Future"
 url: "https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -84,7 +84,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(0, 102, 204)"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

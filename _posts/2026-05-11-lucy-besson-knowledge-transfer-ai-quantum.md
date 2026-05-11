@@ -42,7 +42,7 @@ schema: "FAQPage, Article"
 short_name: "sebastienrousseau"
 subtitle: "Twelve years after Luc Besson's Lucy, the film's central metaphor of knowledge migrating from flesh to machine is being unexpectedly validated by LLMs, neutral atom qubits, and whole-brain emulation."
 tags: "Lucy, Luc Besson, Scarlett Johansson, artificial intelligence, quantum computing, neutral atoms, LLMs, transhumanism, mind uploading, brain-computer interfaces, posthumanism, film philosophy"
-theme-color: "0, 75, 176"
+theme-color: "0, 67, 165"
 title: "Lucy's Flash Drive Revisited: AI, Quantum & Knowledge"
 url: "https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -75,7 +75,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "0, 75, 176"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

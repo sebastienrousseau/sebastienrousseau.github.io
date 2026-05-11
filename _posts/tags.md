@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Browse the site by topic: AI, payments, post-quantum cryptography, open source."
 tags: "explore by tag, explore topics, delve deeper, get to the subjects, matter most, website, website content, website topics, website tags, website search, website navigation"
-theme-color: "0, 75, 176"
+theme-color: "0, 67, 165"
 title: "Topics & Tags Index: AI, Payments, Quantum, Rust OSS"
 url: "https://sebastienrousseau.com/tags"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -74,7 +74,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(0, 102, 204)"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 

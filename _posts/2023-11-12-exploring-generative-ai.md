@@ -41,7 +41,7 @@ robots: "index, follow"
 short_name: "sebastienrousseau"
 subtitle: "Applied artificial intelligence in banking and financial services."
 tags: "AI, Generative, Technology, Future, Impact, Ethics, Synergies, Innovation, Creativity, Transformation"
-theme-color: "0, 75, 176"
+theme-color: "0, 67, 165"
 title: "Exploring Generative AI: Shaping the Future of Technology"
 url: "https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -74,7 +74,7 @@ apple-touch-fullscreen: "yes"
 
 # MS Application - The MS Application front matter (YAML).
 
-msapplication-navbutton-color: "rgb(0, 102, 204)"
+msapplication-navbutton-color: "0, 67, 165"
 
 # Twitter Card - The Twitter Card front matter (YAML).
 
