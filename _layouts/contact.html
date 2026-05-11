@@ -389,11 +389,12 @@
       /* Personal-Setup-style hero + theme cards used on /projects/.
          Centred hero with primary + ghost CTAs, then a three-card "what is
          inside" feature block, each card icon-led and quietly elevated. */
-      .setup-hero{text-align:center;padding:64px 0 56px;border-bottom:1px solid var(--border);margin-bottom:56px}
-      .setup-hero-eyebrow{margin:0 0 14px;font-size:12px;font-weight:600;letter-spacing:.12em;color:var(--accent);text-transform:uppercase}
-      .setup-hero-headline{font-size:clamp(36px,5.4vw,64px);line-height:1.05;font-weight:600;letter-spacing:-.022em;color:var(--ink);margin:0 auto 18px;max-width:18ch}
-      .setup-hero-lede{margin:0 auto 28px;max-width:760px;font-size:clamp(17px,1.5vw,21px);line-height:1.45;color:var(--ink-mute)}
-      .setup-hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:0}
+      /* /projects/ eyebrow + CTA strip — sits centred directly under the
+         layout's ap-hero (which carries the page H1 and subtitle). No
+         duplicate headline, no own bottom border (the next section ships its
+         own separation). */
+      .setup-hero-eyebrow{text-align:center;margin:0 0 18px;font-size:12px;font-weight:600;letter-spacing:.12em;color:var(--accent);text-transform:uppercase}
+      .setup-hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:0 0 56px}
       .setup-three{margin:0 0 72px}
       .setup-three-head{text-align:center;margin:0 0 40px}
       .setup-three-kicker{margin:0 0 10px;font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--accent);text-transform:uppercase}

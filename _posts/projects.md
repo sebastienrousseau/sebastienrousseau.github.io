@@ -32,14 +32,14 @@ logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 measurementID: "G-169G4ET5HQ"
-name: "Sebastien Rousseau"
+name: "Open source for the future of finance."
 permalink: "https://sebastienrousseau.com/projects"
 rating: "general"
 referrer: "no-referrer"
 revisit-after: "7 days"
 robots: "index, follow"
 short_name: "sebastienrousseau"
-subtitle: "Open-source projects in Python, Rust and JavaScript for the future of finance."
+subtitle: "A portfolio of 25+ open-source libraries in Python, Rust and JavaScript — for wholesale payments, ISO 20022 migration, post-quantum cryptography and the AI tooling that supports them."
 tags: "Artificial Intelligence, Voice Assistant, Audio Analysis, Quantum Computing, Quantum Cryptography, CRYSTALS-Kyber, ISO 20022, Payment Automation, Bank Statement Parsing, Finance, Rust, Static Site Generator, Web Development, Password Generation, Cryptography, Rust Library, Logging, Serialization, YAML, Mersenne Twister"
 theme-color: "0, 67, 165"
 title: "Innovative and Creative Solutions Built with Open Source"
@@ -99,15 +99,11 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
-<header class="setup-hero">
 <p class="setup-hero-eyebrow">OPEN SOURCE FOR FINANCIAL SERVICES</p>
-<h1 class="setup-hero-headline">Open source for the<br />future of finance.</h1>
-<p class="setup-hero-lede">A portfolio of 25+ open-source libraries in <strong>Python</strong>, <strong>Rust</strong> and <strong>JavaScript</strong>. Designed for wholesale payments, ISO&nbsp;20022 migration, post-quantum cryptography, and the AI tooling that supports them. Free to use, free to extend, with commercial support available.</p>
 <p class="setup-hero-cta">
 <a class="pill" href="#catalog">Browse all projects</a>
 <a class="pill ghost" href="/contact/index.html">Get in touch</a>
 </p>
-</header>
 
 <section class="setup-three" aria-labelledby="setup-three-heading"><header class="setup-three-head"><p class="setup-three-kicker">WHAT IS INSIDE</p><h2 id="setup-three-heading" class="setup-three-headline">Three areas of practice. <span class="setup-three-headline-soft">One philosophy.</span></h2></header><div class="setup-three-grid"><article class="setup-card">
 <span class="setup-card-icon"><img alt="pain001 logo" src="https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg" loading="lazy" decoding="async" width="80" height="80" /></span>

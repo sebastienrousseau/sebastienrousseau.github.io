@@ -334,15 +334,14 @@ FAQ_ITEMS = [
 
 
 def setup_hero_block() -> str:
-    return """<header class="setup-hero">
-<p class="setup-hero-eyebrow">OPEN SOURCE FOR FINANCIAL SERVICES</p>
-<h1 class="setup-hero-headline">Open source for the<br />future of finance.</h1>
-<p class="setup-hero-lede">A portfolio of 25+ open-source libraries in <strong>Python</strong>, <strong>Rust</strong> and <strong>JavaScript</strong>. Designed for wholesale payments, ISO&nbsp;20022 migration, post-quantum cryptography, and the AI tooling that supports them. Free to use, free to extend, with commercial support available.</p>
+    """Single eyebrow + CTA strip that sits directly below the layout's
+    ap-hero (which already carries the page H1 + subtitle via frontmatter).
+    Centered, no duplicate headline."""
+    return """<p class="setup-hero-eyebrow">OPEN SOURCE FOR FINANCIAL SERVICES</p>
 <p class="setup-hero-cta">
 <a class="pill" href="#catalog">Browse all projects</a>
 <a class="pill ghost" href="/contact/index.html">Get in touch</a>
-</p>
-</header>"""
+</p>"""
 
 
 def setup_three_block() -> str:
