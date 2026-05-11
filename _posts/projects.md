@@ -163,6 +163,28 @@ site_software: "Static Site Generator, Rust"
 </div>
 </article>
 
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/nalufx" title="NaluFX">
+<img alt="Logo for NaluFX, AI-driven cash allocation in Rust" src="https://cloudcdn.pro/clients/nalufx/v1/logos/nalufx.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Treasury · AI</span>
+<h3><a href="https://github.com/sebastienrousseau/nalufx" title="NaluFX">NaluFX</a></h3>
+<p class="newsroom-excerpt">A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/qrc" title="QRC">
+<img alt="Logo for QRC, a Rust QR-code library" src="https://cloudcdn.pro/clients/qrc/v1/logos/qrc.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Payments QR</span>
+<h3><a href="https://github.com/sebastienrousseau/qrc" title="QRC">QRC</a></h3>
+<p class="newsroom-excerpt">A Rust library for generating and manipulating QR-code images in multiple formats. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows.</p>
+</div>
+</article>
+
 </div>
 
 <header class="cat-section-head" id="cat-quantum"><p class="cat-kicker">POST-QUANTUM CRYPTOGRAPHY</p><h2 class="cat-headline">Post-quantum cryptography.</h2><p class="cat-lede">Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication.</p></header>
