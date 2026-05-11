@@ -191,12 +191,6 @@ CATEGORIES = [
               "Banner for the Dotfiles project",
               "A powerful set of configuration files for macOS, Linux, and Windows — scripts and customised settings to streamline a development workflow.",
               "https://dotfiles.io/"),
-            P("Config · macOS",
-              "MacConfig",
-              "https://cloudcdn.pro/stocks/images/ibrahim-abazid-MgQnQZA4ByM.webp",
-              "Banner for MacConfig (maccfg)",
-              "A guide to getting a MacBook Pro M1 ready for software development. Set up and start using a new Mac with free resources and user guides.",
-              "https://maccfg.com/"),
         ],
     },
 ]

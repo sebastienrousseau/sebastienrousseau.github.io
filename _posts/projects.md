@@ -418,17 +418,6 @@ site_software: "Static Site Generator, Rust"
 </div>
 </article>
 
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="https://maccfg.com/" title="MacConfig">
-<img alt="Banner for MacConfig (maccfg)" src="https://cloudcdn.pro/stocks/images/ibrahim-abazid-MgQnQZA4ByM.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Config · macOS</span>
-<h3><a href="https://maccfg.com/" title="MacConfig">MacConfig</a></h3>
-<p class="newsroom-excerpt">A guide to getting a MacBook Pro M1 ready for software development. Set up and start using a new Mac with free resources and user guides.</p>
-</div>
-</article>
-
 </div>
 
 </section>
