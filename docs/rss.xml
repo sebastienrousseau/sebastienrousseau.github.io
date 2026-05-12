@@ -109,9 +109,9 @@
       <category>TOML</category>
     </item>
     <item>
-      <title>Bug Discovered in Quantum Algorithm for Lattice-Based Crypto</title>
+      <title>Quantum Lattice Crypto: Bug in Chen's LWE Attack</title>
       <link>http://127.0.0.1:8000/.meta/</link>
-      <description>A bug in Yilei Chen&apos;s quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research.</description>
+      <description>A bug in Yilei Chen&apos;s quantum LWE algorithm temporarily reprieves lattice-based cryptography. What it means for CRYSTALS-Kyber, Dilithium and the PQC roadmap.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
       <pubDate>Mon, 15 Apr 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -181,7 +181,7 @@
     <item>
       <title>OpenVoice: Leading Innovation in Voice Cloning Technology</title>
       <link>http://127.0.0.1:8000/.meta/</link>
-      <description>Explore OpenVoice&apos;s groundbreaking voice cloning tech, offering unmatched speed, accuracy, and control in synthetic speech generation.</description>
+      <description>OpenVoice from MIT, Tsinghua and MyShell delivers production-grade voice cloning with fine-grained tone, accent and emotion control — and the trade-offs worth knowing.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
       <pubDate>Mon, 01 Apr 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -279,7 +279,7 @@
       <category>Silicon</category>
     </item>
     <item>
-      <title>Unleashing the Power of Logging in Rust with RustLogs (RLG)</title>
+      <title>RustLogs (RLG): Structured Logging Library for Rust</title>
       <link>http://127.0.0.1:8000/.meta/</link>
       <description>Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. </description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
@@ -299,7 +299,7 @@
       <category>Documentation</category>
     </item>
     <item>
-      <title>Le Chat by Mistral AI: A New Era in Conversational AI</title>
+      <title>Le Chat by Mistral AI: Multilingual Conversational AI</title>
       <link>http://127.0.0.1:8000/.meta/</link>
       <description>Meet Mistral AI&apos;s new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real-time.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
@@ -361,7 +361,7 @@
     <item>
       <title>EU's AI Act: Pioneering Ethical AI Regulation Worldwide</title>
       <link>http://127.0.0.1:8000/.meta/</link>
-      <description>Delve into the EU&apos;s Artificial Intelligence Act, a revolutionary framework setting global standards for ethical AI development and usage.</description>
+      <description>The EU AI Act sets the first comprehensive framework for ethical, risk-tiered AI regulation worldwide. What changes for banks, vendors and high-risk systems.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
       <pubDate>Tue, 13 Feb 2024 14:15:15 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -379,7 +379,7 @@
       <category>Technology</category>
     </item>
     <item>
-      <title>Àkàndé Voice Assistant, A Personal and Executive Assistance</title>
+      <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
       <link>http://127.0.0.1:8000/.meta/</link>
       <description>Discover how Àkàndé leverages OpenAI GPT&apos;s natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
@@ -402,7 +402,7 @@
       <category>Privacy</category>
     </item>
     <item>
-      <title>Revolutionising Advertising: How AI Shapes the Future</title>
+      <title>Generative AI in Advertising: Amazon Rufus & Meta</title>
       <link>http://127.0.0.1:8000/.meta/</link>
       <description>Explore how AI transforms advertising with insights on Amazon&apos;s Rufus and Meta&apos;s latest developments. Discover the impact on consumer engagement</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
@@ -442,7 +442,7 @@
       <category>Technology</category>
     </item>
     <item>
-      <title>AI Prompt Engineering 2024: Insights & Advanced Techniques</title>
+      <title>AI Prompt Engineering 2024: Techniques That Work</title>
       <link>http://127.0.0.1:8000/.meta/</link>
       <description>Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
@@ -566,7 +566,7 @@
     <item>
       <title>AI Trends 2024: Insights and Predictions for the Future</title>
       <link>http://127.0.0.1:8000/.meta/</link>
-      <description>Explore the transformative AI trends of 2024, from generative AI to AI in retail, and how they&apos;ll shape our future.</description>
+      <description>AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
       <pubDate>Mon, 01 Jan 2024 05:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -793,7 +793,7 @@
       <category>cryptography</category>
     </item>
     <item>
-      <title>KyberLib: A Rust-Powered Shield Against Quantum Threats</title>
+      <title>KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</title>
       <link>http://127.0.0.1:8000/.meta/</link>
       <description>A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
@@ -827,7 +827,7 @@
       <category>web</category>
     </item>
     <item>
-      <title>Exploring Generative AI: Shaping the Future of Technology</title>
+      <title>Generative AI in 2023: How It Works, Where It Lands</title>
       <link>http://127.0.0.1:8000/.meta/</link>
       <description>Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
@@ -907,7 +907,7 @@
       <category>reliable</category>
     </item>
     <item>
-      <title>Static Site Generator, the fastest Rust-based Static Site Generator (SSG)</title>
+      <title>Static Site Generator: Fastest Rust-Based SSG</title>
       <link>http://127.0.0.1:8000/.meta/</link>
       <description>Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>

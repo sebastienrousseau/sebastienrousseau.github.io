@@ -45,7 +45,7 @@
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date>2024-03-04T06:06:06+01:00</news:publication_date>
-    <news:title>Le Chat by Mistral AI: A New Era in Conversational AI</news:title>
+    <news:title>Le Chat by Mistral AI: Multilingual Conversational AI</news:title>
     <news:keywords>Le Chat AI, Mistral AI chatbot, Le Chat virtual assistant, Mistral AI language understanding, Le Chat AI customer service, Mistral AI enterprise solutions, Le Chat AI customisation, Mistral AI multilingual support, Le Chat AI-powered communication, Mistral AI AI-driven business solutions</news:keywords>
   </news:news>
 </url>
@@ -117,7 +117,7 @@
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date>2024-01-23T05:06:06+00:00</news:publication_date>
-    <news:title>AI Prompt Engineering 2024: Insights & Advanced Techniques</news:title>
+    <news:title>AI Prompt Engineering 2024: Techniques That Work</news:title>
     <news:keywords>AI Prompt Engineering, Custom Instructions, Multi-Persona AI, Chain of Thought, Quantum Computing, Ethical AI, Adaptive Prompting, Zero Shot Prompting, Few Shot Prompting, AI Technology Trends</news:keywords>
   </news:news>
 </url>
@@ -141,7 +141,7 @@
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date>2023-11-12T20:30:00+00:00</news:publication_date>
-    <news:title>Exploring Generative AI: Shaping the Future of Technology</news:title>
+    <news:title>Generative AI in 2023: How It Works, Where It Lands</news:title>
     <news:keywords>Generative AI, technology, future, impact, ethics, synergies, innovation, creativity, transformation, evolution</news:keywords>
   </news:news>
 </url>
@@ -153,7 +153,7 @@
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date>2024-03-08T06:06:06+01:00</news:publication_date>
-    <news:title>Unleashing the Power of Logging in Rust with RustLogs (RLG)</news:title>
+    <news:title>RustLogs (RLG): Structured Logging Library for Rust</news:title>
     <news:keywords>Rust logging library, asynchronous Rust logging, structured log formats, Rust application debugging, customisable logging Rust, Rust development tools, RustLogs RLG features, efficient Rust logging, RustLogs integration, RustLogs documentation</news:keywords>
   </news:news>
 </url>
@@ -237,7 +237,7 @@
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date>2024-02-12T11:12:12+00:00</news:publication_date>
-    <news:title>Àkàndé Voice Assistant, A Personal and Executive Assistance</news:title>
+    <news:title>Àkàndé: GPT-Powered Voice Assistant for Executives</news:title>
     <news:keywords>Àkàndé, Voice Assistant, Natural Language Understanding, PDF Summaries, Efficient Caching, OpenAI GPT, Executive Assistance, Personal Assistance, Digital Assistants, Technology Innovation</news:keywords>
   </news:news>
 </url>
@@ -381,7 +381,7 @@
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date>2023-11-19T09:59:00+00:00</news:publication_date>
-    <news:title>KyberLib: A Rust-Powered Shield Against Quantum Threats</news:title>
+    <news:title>KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</news:title>
     <news:keywords>Quantum-safe cryptography, KyberLib, Rust, CRYSTALS-Kyber, lattice-based cryptography, NIST, standardization, key encapsulation mechanism, digital signatures, lightweight digital signatures, hash-based digital signatures, Kyber512, Kyber768, Kyber1024, security, efficiency, versatility, no-std compliance, memory safety, system-level security, embedded systems, WebAssembly, web applications</news:keywords>
   </news:news>
 </url>
@@ -441,7 +441,7 @@
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date>2023-10-09T05:13:00+00:00</news:publication_date>
-    <news:title>Static Site Generator, the fastest Rust-based Static Site Generator (SSG)</news:title>
+    <news:title>Static Site Generator: Fastest Rust-Based SSG</news:title>
     <news:keywords>pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation</news:keywords>
   </news:news>
 </url>
@@ -525,7 +525,7 @@
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date>2024-04-15T06:06:06+00:00</news:publication_date>
-    <news:title>Bug Discovered in Quantum Algorithm for Lattice-Based Crypto</news:title>
+    <news:title>Quantum Lattice Crypto: Bug in Chen's LWE Attack</news:title>
     <news:keywords>post-quantum cryptography, NIST, PQC standardisation, Yilei Chen, quantum algorithm, lattice-based cryptography, LWE problem, CRYSTALS-KYBER, CRYSTALS-Dilithium, quantum-resistant cryptography</news:keywords>
   </news:news>
 </url>
@@ -585,7 +585,7 @@
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date>2024-02-08T07:08:08+00:00</news:publication_date>
-    <news:title>Revolutionising Advertising: How AI Shapes the Future</news:title>
+    <news:title>Generative AI in Advertising: Amazon Rufus & Meta</news:title>
     <news:keywords>AI in advertising, Amazon Rufus, Meta AI tools, consumer targeting, advertising technology, AI chatbots, digital marketing trends, AI analytics, creative AI, ad campaign optimization</news:keywords>
   </news:news>
 </url>

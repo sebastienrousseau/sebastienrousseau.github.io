@@ -10,7 +10,7 @@
  *   - Third-party origins: pass-through (no caching) to honour CSP and analytics opt-outs.
  */
 
-const CACHE = "ap-v4";
+const CACHE = "ap-v3";
 const OFFLINE_URL = "/offline/index.html";
 const PRECACHE = [
   "/",
@@ -55,14 +55,6 @@ function isStaticAsset(url) {
   );
 }
 
-// Always resolve to a Response — never undefined — so respondWith never throws
-// "Failed to convert value to 'Response'". When everything fails (cache miss
-// AND network/SRI failure), fall through to a 504 so the browser can show its
-// own native error rather than tripping the SW.
-function networkErrorResponse() {
-  return new Response("", { status: 504, statusText: "Gateway Timeout" });
-}
-
 function staleWhileRevalidate(request) {
   return caches.open(CACHE).then((cache) =>
     cache.match(request).then((cached) => {
@@ -73,7 +65,7 @@ function staleWhileRevalidate(request) {
           }
           return response;
         })
-        .catch(() => cached || networkErrorResponse());
+        .catch(() => cached);
       return cached || network;
     })
   );
@@ -89,9 +81,7 @@ function networkFirst(request) {
       return response;
     })
     .catch(() =>
-      caches.match(request).then(
-        (cached) => cached || caches.match(OFFLINE_URL).then((off) => off || networkErrorResponse())
-      )
+      caches.match(request).then((cached) => cached || caches.match(OFFLINE_URL))
     );
 }
 

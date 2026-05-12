@@ -217,7 +217,7 @@ Kuperberg, G. (2005). [**A subexponential-time quantum algorithm for the dihedra
 [02]: https://arxiv.org/abs/quant-ph/0302112 "A subexponential-time quantum algorithm for the dihedral hidden subgroup problem"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

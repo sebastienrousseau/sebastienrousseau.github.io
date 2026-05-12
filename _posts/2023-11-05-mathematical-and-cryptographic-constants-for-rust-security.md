@@ -187,7 +187,7 @@ Developers requiring mathematical or cryptographic constants in Rust should look
 [02]: https://github.com/sebastienrousseau/cmn "The Common (CMN) library GitHub repository"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

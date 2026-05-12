@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: /sitemap.xml
+Sitemap: https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/sitemap.xml

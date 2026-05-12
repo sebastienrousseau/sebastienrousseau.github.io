@@ -156,5 +156,5 @@ Gemini 1.5 marks a significant advancement in AI technology. It improves efficie
 [01]: https://deepmind.google/technologies/gemini/#introduction "Gemini - Google DeepMind"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
 <!-- enrich-end -->

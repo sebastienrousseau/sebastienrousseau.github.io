@@ -51,12 +51,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Bug Discovered in Quantum Algorithm for Lattice-Based Crypto</title>
+    <title>Quantum Lattice Crypto: Bug in Chen&apos;s LWE Attack</title>
     <link href="http://127.0.0.1:8000/.meta/"/>
     <id>http://127.0.0.1:8000/.meta/</id>
     <updated>2024-04-15T06:06:06+00:00</updated>
     <published>2024-04-15T06:06:06+00:00</published>
-    <summary>A bug in Yilei Chen&apos;s quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research.</summary>
+    <summary>A bug in Yilei Chen&apos;s quantum LWE algorithm temporarily reprieves lattice-based cryptography. What it means for CRYSTALS-Kyber, Dilithium and the PQC roadmap.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -83,7 +83,7 @@
     <id>http://127.0.0.1:8000/.meta/</id>
     <updated>2024-04-01T06:06:06+00:00</updated>
     <published>2024-04-01T06:06:06+00:00</published>
-    <summary>Explore OpenVoice&apos;s groundbreaking voice cloning tech, offering unmatched speed, accuracy, and control in synthetic speech generation.</summary>
+    <summary>OpenVoice from MIT, Tsinghua and MyShell delivers production-grade voice cloning with fine-grained tone, accent and emotion control — and the trade-offs worth knowing.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -123,7 +123,7 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Unleashing the Power of Logging in Rust with RustLogs (RLG)</title>
+    <title>RustLogs (RLG): Structured Logging Library for Rust</title>
     <link href="http://127.0.0.1:8000/.meta/"/>
     <id>http://127.0.0.1:8000/.meta/</id>
     <updated>2024-03-08T06:06:06+01:00</updated>
@@ -132,7 +132,7 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Le Chat by Mistral AI: A New Era in Conversational AI</title>
+    <title>Le Chat by Mistral AI: Multilingual Conversational AI</title>
     <link href="http://127.0.0.1:8000/.meta/"/>
     <id>http://127.0.0.1:8000/.meta/</id>
     <updated>2024-03-04T06:06:06+01:00</updated>
@@ -164,11 +164,11 @@
     <id>http://127.0.0.1:8000/.meta/</id>
     <updated>2024-02-13T14:15:15+00:00</updated>
     <published>2024-02-13T14:15:15+00:00</published>
-    <summary>Delve into the EU&apos;s Artificial Intelligence Act, a revolutionary framework setting global standards for ethical AI development and usage.</summary>
+    <summary>The EU AI Act sets the first comprehensive framework for ethical, risk-tiered AI regulation worldwide. What changes for banks, vendors and high-risk systems.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Àkàndé Voice Assistant, A Personal and Executive Assistance</title>
+    <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
     <link href="http://127.0.0.1:8000/.meta/"/>
     <id>http://127.0.0.1:8000/.meta/</id>
     <updated>2024-02-12T11:12:12+00:00</updated>
@@ -177,7 +177,7 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Revolutionising Advertising: How AI Shapes the Future</title>
+    <title>Generative AI in Advertising: Amazon Rufus &amp; Meta</title>
     <link href="http://127.0.0.1:8000/.meta/"/>
     <id>http://127.0.0.1:8000/.meta/</id>
     <updated>2024-02-08T07:08:08+00:00</updated>
@@ -195,7 +195,7 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>AI Prompt Engineering 2024: Insights &amp; Advanced Techniques</title>
+    <title>AI Prompt Engineering 2024: Techniques That Work</title>
     <link href="http://127.0.0.1:8000/.meta/"/>
     <id>http://127.0.0.1:8000/.meta/</id>
     <updated>2024-01-23T05:06:06+00:00</updated>
@@ -254,7 +254,7 @@
     <id>http://127.0.0.1:8000/.meta/</id>
     <updated>2024-01-01T05:06:06+00:00</updated>
     <published>2024-01-01T05:06:06+00:00</published>
-    <summary>Explore the transformative AI trends of 2024, from generative AI to AI in retail, and how they&apos;ll shape our future.</summary>
+    <summary>AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -303,7 +303,7 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>KyberLib: A Rust-Powered Shield Against Quantum Threats</title>
+    <title>KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</title>
     <link href="http://127.0.0.1:8000/.meta/"/>
     <id>http://127.0.0.1:8000/.meta/</id>
     <updated>2023-11-19T09:59:00+00:00</updated>
@@ -312,7 +312,7 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Exploring Generative AI: Shaping the Future of Technology</title>
+    <title>Generative AI in 2023: How It Works, Where It Lands</title>
     <link href="http://127.0.0.1:8000/.meta/"/>
     <id>http://127.0.0.1:8000/.meta/</id>
     <updated>2023-11-12T20:30:00+00:00</updated>
@@ -348,7 +348,7 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Static Site Generator, the fastest Rust-based Static Site Generator (SSG)</title>
+    <title>Static Site Generator: Fastest Rust-Based SSG</title>
     <link href="http://127.0.0.1:8000/.meta/"/>
     <id>http://127.0.0.1:8000/.meta/</id>
     <updated>2023-10-09T05:13:00+00:00</updated>

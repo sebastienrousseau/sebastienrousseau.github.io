@@ -26,11 +26,11 @@
          allow that exact byte-for-byte content and nothing else. -->
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
-        script-src 'sha256-oxmGaKUhaIqQwaWTKDKlzU+hKx7kVg7j7UCIzA2knoI=' 'sha256-qy9jl/PEuFA5cdpiWNQu2xpi+9CXjCEaqFjt9XxzPM8=' 'sha256-xoQWMLqT7ROsuR4jJEW4x7dABFCKi5GFubiSLsBJKHQ=' 'self' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com;
+        script-src 'sha256-qy9jl/PEuFA5cdpiWNQu2xpi+9CXjCEaqFjt9XxzPM8=' 'sha256-xoQWMLqT7ROsuR4jJEW4x7dABFCKi5GFubiSLsBJKHQ=' 'sha256-yF1FXOCA4y6RbzcQktJXH/SLQ6HAjJ47CRB/X8h29tk=' 'self' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
         img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
-        style-src 'self' https://fonts.googleapis.com;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
         media-src 'self' https://p.scdn.co https://*.scdn.co;" />
 
@@ -38,12 +38,11 @@
     
 
     <link rel="alternate" href="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html" hreflang="en" />
-    <link rel="preload" as="image" href="https://cloudcdn.pro/stocks/images/ai-ship.webp" />
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
         <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
-    <!-- Skeletonic is self-hosted to eliminate the render-blocking
-         cross-origin stylesheet request. Build pipeline copies
-         _layouts/_skeletonic.min.css to public/skeletonic.min.css. -->
-    <link rel="stylesheet" href="/skeletonic.min.css" />
     <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
@@ -54,21 +53,21 @@
     <meta name="color-scheme" content="light dark" />
     <script src="/theme-init.js"></script>
 
-    <link rel="stylesheet" href="/_csp/be15b169f6904d49.css" crossorigin="anonymous" integrity="sha256-mnMpp44a6haC2rzwBPpwFZo7f21IdanffsP33VQHPgU=" crossorigin="anonymous"">
+    <link rel="stylesheet" href="/_csp/6a6ec055c0dfef1e.css" crossorigin="anonymous" integrity="sha256-RzhlABv8Gep3b9RXIE8fhm6UXwbcyVgZtaUDAOBsQck=" crossorigin="anonymous"">
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="http://127.0.0.1:8000/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="stylesheet" href="/highlight.css">
 <meta property="og:title" content="Google Gemma AI: Transforming Open-Source AI Development">
-<meta property="og:description" content="Google's Revolutionary Open-Source AI Model for Accessible and Ethical ML Development Google recently launched Gemma ⧉ , an open-source artificial">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://cloudcdn.pro/stocks/images/ai-ship.webp">
+<meta property="og:description" content="TL;DR. Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use. Key takeaways: Google's">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html">
 <meta property="og:image" content="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/gemma.svg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_GB">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Google Gemma AI: Transforming Open-Source AI Development">
-<meta name="twitter:description" content="Google's Revolutionary Open-Source AI Model for Accessible and Ethical ML Development Google recently launched Gemma ⧉ , an open-source artificial">
+<meta name="twitter:description" content="TL;DR. Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use. Key takeaways: Google's">
 <meta name="twitter:image" content="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/gemma.svg">
 <link rel="canonical" href="http://127.0.0.1:8000/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
@@ -113,7 +112,20 @@
     </section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><h2>Google's Revolutionary Open-Source AI Model for Accessible and Ethical ML Development</h2>
+      <div class="wrap report-wrap"><!-- lead-start -->
+<blockquote>
+<p><strong>TL;DR.</strong> Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use.</p>
+<p><strong>Key takeaways:</strong></p>
+<ul>
+<li><strong>Google's Revolutionary Open-Source AI Model for Accessible and Ethical ML Development.</strong> Google recently launched <a href="https://ai.google.dev/gemma" title="Google Gemma AI">Gemma ⧉</a>, an open-source artificial intelligence model designed to provide an accessible and ethical foundation for AI development.</li>
+<li><strong>Understanding Gemma.</strong> Google's Gemini architecture inspires Gemma and is available in two main configurations:.</li>
+<li><strong>Integrating Google Gemma with Ollama on macOS.</strong> <a href="https://ollama.com" title="Ollama">Ollama ⧉</a> is an interface that enables exploring AI assistants locally on a macOS system.</li>
+<li><strong>Initialising Local Gemma Instance.</strong> Choose the Gemma model you wish to run:.</li>
+</ul>
+<p><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a>, <a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a>, <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>.</p>
+</blockquote>
+<!-- lead-end -->
+<h2>Google's Revolutionary Open-Source AI Model for Accessible and Ethical ML Development</h2>
 <p>Google recently launched <a href="https://ai.google.dev/gemma" title="Google Gemma AI"><strong>Gemma ⧉</strong></a>, an open-source artificial intelligence model designed to provide an accessible and ethical foundation for AI development. As an open-source model, Gemma offers its full architecture, training methodology, model weights and parameters under permissible licenses for external researchers and developers to freely access, learn from, build upon and even customise for their unique needs. This transparent approach also allows scrutiny of Gemma's development practices to uphold accountability.</p>
 <p>With configurations like <code>Gemma 2B</code> and <code>7B</code>, it caters to a wide range of applications from mobile devices to cloud infrastructures. Gemma's introduction into the open-source community signifies Google's strong commitment to ethical AI, fostering innovation and collaboration with developers worldwide.</p>
 <p>This article explores Gemma's architecture, its integration with macOS, and its potential to transform enterprise solutions and the broader AI landscape.</p>
@@ -237,6 +249,17 @@
 <p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
 <h2>Conclusion</h2>
 <p>Gemma's launch is a watershed moment in the field of AI, highlighting a shift towards more accessible, ethical, and collaborative development practices. As it continues to evolve, Gemma is set to play a pivotal role in shaping the future of AI, offering a blueprint for how open-source projects can drive innovation while adhering to ethical standards.</p>
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" class="related-media" aria-label="State of AI and Quantum Computing in Banking: A 2023 Review" tabindex="-1"><img alt="State of AI and Quantum Computing in Banking: A 2023 Review" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a></h3><p><time datetime="2023-12-18">2023-12-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html" class="related-media" aria-label="EU's AI Act: Pioneering Ethical AI Regulation Worldwide" tabindex="-1"><img alt="EU's AI Act: Pioneering Ethical AI Regulation Worldwide" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="AI Prompt Engineering 2024: Techniques That Work" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->
 </div>
     </main>
 

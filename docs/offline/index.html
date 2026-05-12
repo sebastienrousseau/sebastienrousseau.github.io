@@ -26,11 +26,11 @@
          allow that exact byte-for-byte content and nothing else. -->
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
-        script-src 'sha256-0no39HoiXzwEMw58J8/CSG8+n2ZITltn/NNUYvkshno=' 'sha256-NyiYvzk7ovE+EMlsBBqzT8M+62ONXNDdyKpip5sYb8s=' 'sha256-xoQWMLqT7ROsuR4jJEW4x7dABFCKi5GFubiSLsBJKHQ=' 'self' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com;
+        script-src 'sha256-0no39HoiXzwEMw58J8/CSG8+n2ZITltn/NNUYvkshno=' 'sha256-kB7ZHnGELK3MWOmJiMs4K8LmMvzInAcJbt3mvpPQkaM=' 'sha256-xoQWMLqT7ROsuR4jJEW4x7dABFCKi5GFubiSLsBJKHQ=' 'self' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
         img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
-        style-src 'self' https://fonts.googleapis.com;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
         media-src 'self' https://p.scdn.co https://*.scdn.co;" />
 
@@ -38,12 +38,11 @@
     
 
     <link rel="alternate" href="https://sebastienrousseau.com/offline" hreflang="en" />
-    <link rel="preload" as="image" href="https://cloudcdn.pro/stocks/images/alexandr-podvalny-n_Jb_d8O43Q.webp" />
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
         <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
-    <!-- Skeletonic is self-hosted to eliminate the render-blocking
-         cross-origin stylesheet request. Build pipeline copies
-         _layouts/_skeletonic.min.css to public/skeletonic.min.css. -->
-    <link rel="stylesheet" href="/skeletonic.min.css" />
     <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
@@ -54,7 +53,7 @@
     <meta name="color-scheme" content="light dark" />
     <script src="/theme-init.js"></script>
 
-    <link rel="stylesheet" href="/_csp/be15b169f6904d49.css" crossorigin="anonymous" integrity="sha256-mnMpp44a6haC2rzwBPpwFZo7f21IdanffsP33VQHPgU=" crossorigin="anonymous"">
+    <link rel="stylesheet" href="/_csp/6a6ec055c0dfef1e.css" crossorigin="anonymous" integrity="sha256-RzhlABv8Gep3b9RXIE8fhm6UXwbcyVgZtaUDAOBsQck=" crossorigin="anonymous"">
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="http://127.0.0.1:8000/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta property="og:title" content="No Internet Connection detected. Please try again later.">

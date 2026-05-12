@@ -113,7 +113,7 @@ last_reviewed: "2026-05-11"
 > - **Impact Across Payment Rails.** The implications span the full breadth of payment infrastructure:.
 > - **What Organisations Must Do Now.** The transition to quantum-safe cryptography is not a single upgrade but a multi-year programme requiring structured preparation:.
 >
-> **Related reading:** [Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk]("), [Quantum Lattice Crypto: Bug in Chen's LWE Attack](https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html), [Protecting Data in the Quantum Age: The Hash Library (HSH)](https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html).
+> **Related reading:** [Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk](https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again), [Quantum Lattice Crypto: Bug in Chen's LWE Attack](https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html), [Protecting Data in the Quantum Age: The Hash Library (HSH)](https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html).
 
 <!-- lead-end -->
 ## The Quantum Threat to Payment Systems
@@ -177,11 +177,11 @@ Sebastien Rousseau is a Senior Digital Product Manager at HSBC Bank plc, leading
 [rel2]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
-<article class="related-card"><a href=""" class="related-media" aria-label="Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk" tabindex="-1"><img alt="Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk" src=""" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href=""">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</a></h3><p><time datetime="2026-04-11">2026-04-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again" class="related-media" aria-label="Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk" tabindex="-1"><img alt="Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</a></h3><p><time datetime="2026-04-11">2026-04-11</time></p></footer></article>
 <article class="related-card"><a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html" class="related-media" aria-label="Quantum Lattice Crypto: Bug in Chen's LWE Attack" tabindex="-1"><img alt="Quantum Lattice Crypto: Bug in Chen's LWE Attack" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">Quantum Lattice Crypto: Bug in Chen's LWE Attack</a></h3><p><time datetime="2024-04-22">2024-04-22</time></p></footer></article>
 <article class="related-card"><a href="https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html" class="related-media" aria-label="Protecting Data in the Quantum Age: The Hash Library (HSH)" tabindex="-1"><img alt="Protecting Data in the Quantum Age: The Hash Library (HSH)" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html">Protecting Data in the Quantum Age: The Hash Library (HSH)</a></h3><p><time datetime="2023-10-16">2023-10-16</time></p></footer></article>
 </div>

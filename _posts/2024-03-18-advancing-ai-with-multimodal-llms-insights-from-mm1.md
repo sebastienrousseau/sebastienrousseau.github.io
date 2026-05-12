@@ -208,7 +208,7 @@ To learn more about the groundbreaking MM1 study and explore the fascinating wor
 [architecture]: https://cloudcdn.pro/stocks/diagrams/mm1_model_architecture.svg "MM1 Model Architecture"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

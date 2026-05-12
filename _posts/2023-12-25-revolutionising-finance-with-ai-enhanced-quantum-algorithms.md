@@ -230,7 +230,7 @@ The integration of AI with quantum algorithm design represents a pivotal moment 
 [07]: https://www.goldmansachs.com/intelligence/pages/gs-research/euv-3.0/report.pdf "Europe Technology Hardware EUV 3.0 High NA a prime Digital Enabler for the next decade with deep competitive moat"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-11">2026-05-11</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

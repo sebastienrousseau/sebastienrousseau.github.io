@@ -26,11 +26,11 @@
          allow that exact byte-for-byte content and nothing else. -->
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
-        script-src 'sha256-3NJw/LuaZGwpi+t1Ve/7llJXZ9k5a5njEEJoqbf0dK0=' 'sha256-sL6i22JpMMaQUlogGqUbp/0NoHF4iLnuDMgcztq0HAE=' 'sha256-xoQWMLqT7ROsuR4jJEW4x7dABFCKi5GFubiSLsBJKHQ=' 'self' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com;
+        script-src 'sha256-3NJw/LuaZGwpi+t1Ve/7llJXZ9k5a5njEEJoqbf0dK0=' 'sha256-Kfc0qRu0YMvO0/sudYjxNF4mA20jDHOINDqz8oHxcNI=' 'sha256-xoQWMLqT7ROsuR4jJEW4x7dABFCKi5GFubiSLsBJKHQ=' 'self' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
         img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
-        style-src 'self' https://fonts.googleapis.com;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
         media-src 'self' https://p.scdn.co https://*.scdn.co;" />
 
@@ -38,12 +38,11 @@
     
 
     <link rel="alternate" href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" hreflang="en" />
-    <link rel="preload" as="image" href="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" />
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
         <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
-    <!-- Skeletonic is self-hosted to eliminate the render-blocking
-         cross-origin stylesheet request. Build pipeline copies
-         _layouts/_skeletonic.min.css to public/skeletonic.min.css. -->
-    <link rel="stylesheet" href="/skeletonic.min.css" />
     <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
@@ -54,20 +53,20 @@
     <meta name="color-scheme" content="light dark" />
     <script src="/theme-init.js"></script>
 
-    <link rel="stylesheet" href="/_csp/be15b169f6904d49.css" crossorigin="anonymous" integrity="sha256-mnMpp44a6haC2rzwBPpwFZo7f21IdanffsP33VQHPgU=" crossorigin="anonymous"">
+    <link rel="stylesheet" href="/_csp/6a6ec055c0dfef1e.css" crossorigin="anonymous" integrity="sha256-RzhlABv8Gep3b9RXIE8fhm6UXwbcyVgZtaUDAOBsQck=" crossorigin="anonymous"">
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="http://127.0.0.1:8000/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta property="og:title" content="State of AI and Quantum Computing in Banking: A 2023 Review">
-<meta property="og:description" content="Insight In 2023, the intersection of Artificial Intelligence (AI) and Quantum Computing (QC) has profoundly impacted the banking and financial industry . These">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp">
+<meta property="og:description" content="TL;DR. Exploring 2023's Technological Landscape: AI &amp;amp; Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations &amp;amp;">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">
 <meta property="og:image" content="https://cloudcdn.pro/clients/common/images/elements/divider.svg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_GB">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="State of AI and Quantum Computing in Banking: A 2023 Review">
-<meta name="twitter:description" content="Insight In 2023, the intersection of Artificial Intelligence (AI) and Quantum Computing (QC) has profoundly impacted the banking and financial industry . These">
+<meta name="twitter:description" content="TL;DR. Exploring 2023's Technological Landscape: AI &amp;amp; Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations &amp;amp;">
 <meta name="twitter:image" content="https://cloudcdn.pro/clients/common/images/elements/divider.svg">
 <link rel="canonical" href="http://127.0.0.1:8000/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
@@ -112,7 +111,20 @@
     </section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><h2>Insight</h2>
+      <div class="wrap report-wrap"><!-- lead-start -->
+<blockquote>
+<p><strong>TL;DR.</strong> Exploring 2023's Technological Landscape: AI &amp; Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations &amp; Governance</p>
+<p><strong>Key takeaways:</strong></p>
+<ul>
+<li><strong>The Importance of AI and Quantum Computing in the Banking Industry.</strong> The banking industry is undergoing a profound transformation, driven by the convergence of Artificial Intelligence (AI) and Quantum Computing (QC).</li>
+<li><strong>The Rise of Open-Source AI: A Paradigm Shift in Artificial Intelligence.</strong> The year 2023 has witnessed a remarkable surge in the adoption of open-source AI technology, particularly in the realm of Large Language Models (LLMs).</li>
+<li><strong>The challenges of regulating AI.</strong> Another challenge is making sure that AI systems are fair and unbiased.</li>
+<li><strong>The State of AI Governance.</strong> In 2023, significant global initiatives and developments have shaped the landscape of AI governance and regulation.</li>
+</ul>
+<p><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a>, <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>, <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>.</p>
+</blockquote>
+<!-- lead-end -->
+<h2>Insight</h2>
 <p>In 2023, the intersection of <strong>Artificial Intelligence (AI)</strong> and <strong>Quantum Computing (QC)</strong> has profoundly impacted the <strong>banking and financial industry</strong>. These technologies have revolutionised the way financial institutions operate, significantly impacting payments, risk management, and cybersecurity.</p>
 <p>This article discusses the impact of <strong>open-source AI models</strong>, <strong>QC in transactional security</strong>, and <strong>regulations and governance on banking and finance</strong>.</p>
 <p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
@@ -202,6 +214,17 @@
 <p><em><a href="https://www.youtube.com/@BankingOnQuantum?sub_confirmation=1" title="Subscribe to @BankingOnQuantum YouTube Channel"><strong>Subscribe to Banking on Quantum today and stay ahead of the curve in this rapidly evolving field!</strong> ⧉</a></em></p>
 <p>Thank you again for your time and I look forward to hearing from you!</p>
 <p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html" class="related-media" aria-label="Revolutionising Finance with AI-Enhanced Quantum Algorithms" tabindex="-1"><img alt="Revolutionising Finance with AI-Enhanced Quantum Algorithms" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a></h3><p><time datetime="2023-12-25">2023-12-25</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" class="related-media" aria-label="Quantum Key Distribution Revolutionising Security in Banking" tabindex="-1"><img alt="Quantum Key Distribution Revolutionising Security in Banking" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="AI Prompt Engineering 2024: Techniques That Work" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->
 </div>
     </main>
 

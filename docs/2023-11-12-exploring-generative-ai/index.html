@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta itemprop="datePublished" content="Sun, 12 Nov 2023 20:30:00 +0000" id="date" />
     <meta itemprop="dateModified" content="Sun, 12 Nov 2023 20:30:00 +0000" id="last-modified" />
-    <title>Exploring Generative AI: Shaping the Future of Technology</title>
+    <title>Generative AI in 2023: How It Works, Where It Lands</title>
 
     <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
 <meta name="description" content="Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.">
@@ -26,11 +26,11 @@
          allow that exact byte-for-byte content and nothing else. -->
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
-        script-src 'sha256-cXrEu6owp7DskwRjqdWiDS5AqFDpR7qgwdB27qZPFzU=' 'sha256-jZDdWKBJZvwIlPiXaA2KJc2udx+JJ5yDH6eb4AmnG8Q=' 'sha256-xoQWMLqT7ROsuR4jJEW4x7dABFCKi5GFubiSLsBJKHQ=' 'self' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com;
+        script-src 'sha256-JbbpVDDXhydVJCrZp7lgE/TvVnEO68Oq9pfhuybZa2E=' 'sha256-gB5b9jMIJg8rt5jy2OFDyIxaZfF5ggksWtnzJQWTzm4=' 'sha256-xoQWMLqT7ROsuR4jJEW4x7dABFCKi5GFubiSLsBJKHQ=' 'self' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
         img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
-        style-src 'self' https://fonts.googleapis.com;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
         media-src 'self' https://p.scdn.co https://*.scdn.co;" />
 
@@ -38,12 +38,11 @@
     
 
     <link rel="alternate" href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html" hreflang="en" />
-    <link rel="preload" as="image" href="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" />
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
         <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
-    <!-- Skeletonic is self-hosted to eliminate the render-blocking
-         cross-origin stylesheet request. Build pipeline copies
-         _layouts/_skeletonic.min.css to public/skeletonic.min.css. -->
-    <link rel="stylesheet" href="/skeletonic.min.css" />
     <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
@@ -54,20 +53,20 @@
     <meta name="color-scheme" content="light dark" />
     <script src="/theme-init.js"></script>
 
-    <link rel="stylesheet" href="/_csp/be15b169f6904d49.css" crossorigin="anonymous" integrity="sha256-mnMpp44a6haC2rzwBPpwFZo7f21IdanffsP33VQHPgU=" crossorigin="anonymous"">
+    <link rel="stylesheet" href="/_csp/6a6ec055c0dfef1e.css" crossorigin="anonymous" integrity="sha256-RzhlABv8Gep3b9RXIE8fhm6UXwbcyVgZtaUDAOBsQck=" crossorigin="anonymous"">
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="http://127.0.0.1:8000/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<meta property="og:title" content="Exploring Generative AI: Shaping the Future of Technology">
-<meta property="og:description" content="Insight Understanding the Mechanics of Generative AI Introduction to Generative AI Generative Artificial Intelligence is a cutting-edge field of machine">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp">
+<meta property="og:title" content="Generative AI in 2023: How It Works, Where It Lands">
+<meta property="og:description" content="TL;DR. Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking. Key">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html">
 <meta property="og:image" content="https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_GB">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Exploring Generative AI: Shaping the Future of Technology">
-<meta name="twitter:description" content="Insight Understanding the Mechanics of Generative AI Introduction to Generative AI Generative Artificial Intelligence is a cutting-edge field of machine">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Generative AI in 2023: How It Works, Where It Lands">
+<meta name="twitter:description" content="TL;DR. Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking. Key">
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp">
 <link rel="canonical" href="http://127.0.0.1:8000/2023-11-12-exploring-generative-ai/index.html">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
@@ -112,7 +111,20 @@
     </section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap"><p><img src="https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp" alt="AI, Artificial Intelligence concept,3d rendering,conceptual image" / class="img-fluid clearfix"></p>
+      <div class="wrap"><!-- lead-start -->
+<blockquote>
+<p><strong>TL;DR.</strong> Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.</p>
+<p><strong>Key takeaways:</strong></p>
+<ul>
+<li><strong>Idea.</strong> The journey of generative AI began with simple models that could barely string together coherent sentences.</li>
+<li><strong>Impact.</strong> Generative AI is not just an academic curiosity; it's a transformative force across multiple industries.</li>
+<li><strong>Incentives.</strong> The development of generative AI is largely driven by economic incentives.</li>
+<li><strong>Understanding the Mechanics of Generative AI.</strong> Generative Artificial Intelligence is a cutting-edge field of machine learning that enables computers to produce content indistinguishable from that created by humans.</li>
+</ul>
+<p><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a>, <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>, <a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">AI Trends 2024: Insights and Predictions for the Future</a>.</p>
+</blockquote>
+<!-- lead-end -->
+<p><img src="https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp" alt="AI, Artificial Intelligence concept,3d rendering,conceptual image" / class="img-fluid clearfix"></p>
 <h2>Insight</h2>
 <h3>Understanding the Mechanics of Generative AI</h3>
 <h4>Introduction to Generative AI</h4>
@@ -187,6 +199,17 @@
 <p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
 <p>In closing, I hope this article has sparked your interest in the exciting world of generative AI. If you're eager to dive deeper into this transformative technology or have any questions, please don't hesitate to reach out to me on <a href="https://www.linkedin.com/in/sebastienrousseau/" title="Sebastien Rousseau on LinkedIn">LinkedIn ⧉</a> or via the <a href="/contact/index.html" title="Contact">contact page</a>.</p>
 <p>Thank you again for your time and I look forward to hearing from you.</p>
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html" class="related-media" aria-label="EU's AI Act: Pioneering Ethical AI Regulation Worldwide" tabindex="-1"><img alt="EU's AI Act: Pioneering Ethical AI Regulation Worldwide" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="AI Prompt Engineering 2024: Techniques That Work" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html" class="related-media" aria-label="AI Trends 2024: Insights and Predictions for the Future" tabindex="-1"><img alt="AI Trends 2024: Insights and Predictions for the Future" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">AI Trends 2024: Insights and Predictions for the Future</a></h3><p><time datetime="2024-01-01">2024-01-01</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->
 </div>
     </main>
 
@@ -320,7 +343,7 @@
     </script>
 
         <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":"Exploring Generative AI: Shaping the Future of Technology","description":"Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.","url":"https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html","inLanguage":"en","about":"Banking, payments, AI and post-quantum cryptography","author":{"@id":"https://sebastienrousseau.com/#person"},"isPartOf":{"@id":"https://sebastienrousseau.com/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Exploring Generative AI: Shaping the Future of Technology","item":"https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"}]}]}
+{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":"Generative AI in 2023: How It Works, Where It Lands","description":"Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.","url":"https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html","inLanguage":"en","about":"Banking, payments, AI and post-quantum cryptography","author":{"@id":"https://sebastienrousseau.com/#person"},"isPartOf":{"@id":"https://sebastienrousseau.com/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Generative AI in 2023: How It Works, Where It Lands","item":"https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"}]}]}
     </script>
 <script src="/main.4eebb974.js" integrity="sha256-Tuu5dA22pMJ0xc9iPI7QHLL0eTWtY+8WuLnAp4hsecs=" crossorigin="anonymous" defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>

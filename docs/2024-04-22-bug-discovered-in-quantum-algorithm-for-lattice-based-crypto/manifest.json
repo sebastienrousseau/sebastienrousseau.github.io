@@ -1,6 +1,6 @@
 {
   "background_color": "#ffffff",
-  "description": "A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography ",
+  "description": "A bug in Yilei Chen's quantum LWE algorithm temporarily reprieves lattice-based cryptography. What it means for CRYSTALS",
   "display": "standalone",
   "icons": [
     {

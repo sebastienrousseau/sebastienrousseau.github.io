@@ -26,11 +26,11 @@
          allow that exact byte-for-byte content and nothing else. -->
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
-        script-src 'sha256-VCC5Yne2iqXgyfMddqy7+CLxlO/XufVzo7bomw2Bttk=' 'sha256-wqb3REch38AlVFRcBeXXqyQq3MmY7UDanSGxifdJ8DU=' 'sha256-xoQWMLqT7ROsuR4jJEW4x7dABFCKi5GFubiSLsBJKHQ=' 'self' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com;
+        script-src 'sha256-QNKZJfy1AHDCt0XHY8um3pVEYldrZrGsg3Z7FNkEVdg=' 'sha256-VCC5Yne2iqXgyfMddqy7+CLxlO/XufVzo7bomw2Bttk=' 'sha256-xoQWMLqT7ROsuR4jJEW4x7dABFCKi5GFubiSLsBJKHQ=' 'self' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
         img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
-        style-src 'self' https://fonts.googleapis.com;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
         media-src 'self' https://p.scdn.co https://*.scdn.co;" />
 
@@ -38,12 +38,11 @@
     
 
     <link rel="alternate" href="https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html" hreflang="en" />
-    <link rel="preload" as="image" href="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp" />
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
         <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
-    <!-- Skeletonic is self-hosted to eliminate the render-blocking
-         cross-origin stylesheet request. Build pipeline copies
-         _layouts/_skeletonic.min.css to public/skeletonic.min.css. -->
-    <link rel="stylesheet" href="/skeletonic.min.css" />
     <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
@@ -54,20 +53,20 @@
     <meta name="color-scheme" content="light dark" />
     <script src="/theme-init.js"></script>
 
-    <link rel="stylesheet" href="/_csp/be15b169f6904d49.css" crossorigin="anonymous" integrity="sha256-mnMpp44a6haC2rzwBPpwFZo7f21IdanffsP33VQHPgU=" crossorigin="anonymous"">
+    <link rel="stylesheet" href="/_csp/6a6ec055c0dfef1e.css" crossorigin="anonymous" integrity="sha256-RzhlABv8Gep3b9RXIE8fhm6UXwbcyVgZtaUDAOBsQck=" crossorigin="anonymous"">
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="http://127.0.0.1:8000/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta property="og:title" content="Fully Homomorphic Encryption (FHE) in a Banking Quantum Era">
-<meta property="og:description" content="Fully Homomorphic Encryption (FHE) promises to redefine data security in Banking and the Financial Industry. By enabling computations on encrypted data, FHE">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp">
+<meta property="og:description" content="TL;DR. Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html">
 <meta property="og:image" content="https://cloudcdn.pro/clients/common/images/elements/divider.svg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_GB">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Fully Homomorphic Encryption (FHE) in a Banking Quantum Era">
-<meta name="twitter:description" content="Fully Homomorphic Encryption (FHE) promises to redefine data security in Banking and the Financial Industry. By enabling computations on encrypted data, FHE">
+<meta name="twitter:description" content="TL;DR. Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing">
 <meta name="twitter:image" content="https://cloudcdn.pro/clients/common/images/elements/divider.svg">
 <link rel="canonical" href="http://127.0.0.1:8000/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
@@ -112,7 +111,20 @@
     </section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><p><strong>Fully Homomorphic Encryption (FHE)</strong> promises to redefine data security in Banking and the Financial Industry. By enabling computations on encrypted data, FHE safeguards privacy against both conventional and quantum computing threats.</p>
+      <div class="wrap report-wrap"><!-- lead-start -->
+<blockquote>
+<p><strong>TL;DR.</strong> Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats.</p>
+<p><strong>Key takeaways:</strong></p>
+<ul>
+<li><strong>Understanding Fully Homomorphic Encryption.</strong> Encryption is a method of transforming readable data (plaintext) into an unreadable format (ciphertext) using an algorithm and an encryption key.</li>
+<li><strong>The Breakthrough of Homomorphic Encryption.</strong> Homomorphic encryption (HE) solves the limitations of conventional encryption.</li>
+<li><strong>The Impact of FHE on Banking and Finance.</strong> The application of FHE in the financial sector promises a significant enhancement in data privacy.</li>
+<li><strong>Preparing for the Quantum Future.</strong> The imminent advent of quantum computing heralds a potential crisis for traditional encryption methodologies.</li>
+</ul>
+<p><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a>, <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>.</p>
+</blockquote>
+<!-- lead-end -->
+<p><strong>Fully Homomorphic Encryption (FHE)</strong> promises to redefine data security in Banking and the Financial Industry. By enabling computations on encrypted data, FHE safeguards privacy against both conventional and quantum computing threats.</p>
 <h2>Introduction</h2>
 <p>The implementation of FHE in the financial sector is not just theoretical; it's becoming a practical reality, transforming data security and privacy standards. This article explores the practical uses, regulatory concerns, possible downsides, and research advancements of fully homomorphic encryption (FHE) in Finance and also Artificial Intelligence (AI) applications.</p>
 <h2>Understanding Fully Homomorphic Encryption</h2>
@@ -122,7 +134,7 @@
 <p>Traditional encryption methods can be broadly categorised into two types: symmetric and asymmetric encryption. Symmetric encryption employs a single key for both encryption and decryption. This efficiency comes at the cost of security, especially when key distribution poses challenges. Asymmetric encryption, also called public-key cryptography, uses two keys, one for encryption and another for decryption. This method is more secure but slower than symmetric encryption.</p>
 <h3>The Limitations of Conventional Encryption for Computation</h3>
 <p>While traditional encryption methods effectively secure data at rest or in transit, they fall short when it comes to performing computations on encrypted data. Typically, to process or analyse encrypted data, one must first decrypt it, perform the necessary operations, and then re-encrypt it. This decryption step poses a significant risk to data privacy, especially in untrusted or cloud computing environments.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100">.alt=&quot;Divider&quot; </p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
 <h2>The Breakthrough of Homomorphic Encryption</h2>
 <p><strong>Homomorphic encryption</strong> (HE) solves the limitations of conventional encryption. It allows certain computations to be done directly on encrypted data (ciphertexts). The decrypted result is the same as the original data (plaintext) after the same operations are performed. HE comes in three main flavours: Partially Homomorphic Encryption (PHE), Somewhat Homomorphic Encryption (SHE), and Fully Homomorphic Encryption (FHE).</p>
 <ul>
@@ -152,21 +164,21 @@
 <h3>The Quantum Resistance of FHE</h3>
 <p>Traditional encryption methods are often vulnerable to quantum algorithms. These algorithms can rapidly solve problems such as integer factorisation and discrete logarithms, which form the foundation of these encryption methods. In contrast, Fully Homomorphic Encryption (FHE) employs lattice-based problems that are believed to be challenging for quantum computers to solve. This quantum resistance makes FHE a promising encryption method for the post-quantum era.</p>
 <p>Lattice-based FHE is resistant to quantum attacks because the underlying mathematical problems, such as the Shortest Vector Problem (SVP) and the Closest Vector Problem (CVP), are considered to be difficult to solve even for quantum computers. While quantum algorithms like Shor's algorithm can break traditional encryption methods that rely on factoring large numbers or computing discrete logarithms, they are not known to provide significant advantages in solving lattice-based problems. This characteristic makes lattice-based FHE a promising candidate for post-quantum cryptography.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100">.alt=&quot;Divider&quot; </p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
 <h2>The Impact of FHE on Banking and Finance</h2>
 <h3>Enhanced Data Privacy and Security</h3>
 <p>The application of FHE in the financial sector promises a significant enhancement in data privacy. Banks can now undertake risk assessments, fraud detection, and comprehensive data analytics while ensuring the absolute confidentiality of customer information. This technological advancement mitigates the risk of data breaches, reinforcing the integrity of digital banking platforms and financial transactions.</p>
 <h3>Cloud Computing and Outsourcing</h3>
 <p>One major application area for homomorphic encryption is secure data processing in the cloud. Banks can leverage cloud computing services to process encrypted data without compromising data privacy. This enables financial institutions to harness the scalability and cost-efficiency of cloud computing while maintaining the confidentiality of sensitive financial information.</p>
 <p>The shift towards cloud computing and outsourcing of computational tasks by banks underscores the relevance of FHE. With secure cloud computing, financial institutions can tap into external resources while protecting sensitive encrypted data through Fully Homomorphic Encryption (FHE). FHE enables banks to securely leverage cloud computing services while ensuring that sensitive encrypted data remains protected at all times.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100">.alt=&quot;Divider&quot; </p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
 <h2>Preparing for the Quantum Future</h2>
 <p>The imminent advent of quantum computing heralds a potential crisis for traditional encryption methodologies. Lattice-based FHE is inherently resistant to quantum attacks, offering a robust defence against the threat quantum computing poses to data security.</p>
 <h3>Quantum-Resistant Encryption</h3>
 <p>FHE provides a formidable layer of protection against quantum computing threats. By employing lattice-based cryptographic techniques, FHE ensures that financial data and assets remain secure even in the face of quantum adversaries.</p>
 <p>FHE's quantum resistance is due to complex underlying math problems like the Shortest Vector Problem (SVP) and the Closest Vector Problem (CVP).These problems are believed to be intractable even for quantum computers, making lattice-based FHE an ideal candidate for post-quantum cryptography.</p>
 <p>Using quantum-resistant encryption, like FHE, is crucial not only for protecting financial assets but also for maintaining customer trust in the digital era. As quantum computing progresses, financial institutions that prioritise robust encryption will be better positioned to navigate future challenges and opportunities.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100">.alt=&quot;Divider&quot; </p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
 <h2>The Future of FHE in Banking and Finance</h2>
 <p>The trajectory of FHE within the financial sector is promising, but it still faces challenges. The banking industry can tap into FHE's full potential by enhancing technology, incorporating it into daily financial operations, and cooperating with regulators.</p>
 <p>FHE can be used in various banking and finance applications, such as:</p>
@@ -191,7 +203,7 @@
 </li>
 </ul>
 <p>These applications reveal the transformative power of FHE in the Banking and Financial industry and underscore its potential to revolutionise data security and privacy standards.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100">.alt=&quot;Divider&quot; </p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
 <h2>Overcoming Challenges in FHE Adoption</h2>
 <h3>Performance Challenges and Optimisation</h3>
 <p>Addressing the computational overhead intrinsic to FHE remains a pivotal challenge. Recent progress in optimising algorithms and developing specialised hardware accelerators is narrowing the performance gap between traditional computing and fully homomorphic encryption (FHE).</p>
@@ -200,7 +212,7 @@
 <h3>Regulation and Compliance</h3>
 <p>Regulatory bodies play a critical role in the adoption of FHE, with evolving data privacy laws mandating its use. A regulatory push could serve as a catalyst for the comprehensive adoption of FHE across the Banking and the Financial Industry industry while ensuring compliance with data protection regulations.</p>
 <p>The regulatory landscape surrounding data privacy and security plays a significant role in the adoption of FHE within the banking industry.  Strict regulations such as the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA) mandate robust data protection measures and emphasize the individual's right to privacy. FHE, with its ability to process encrypted data without decryption, aligns well with the privacy-centric focus of these regulations. As data privacy laws become increasingly stringent, FHE offers a compelling solution that enables banks to perform necessary computations and analytics while adhering to compliance requirements.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100">.alt=&quot;Divider&quot; </p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
 <h2>Securing Large Language Models with Fully Homomorphic Encryption (FHE)</h2>
 <p>Large Language Models (LLMs) are powerful AI tools. But their use brings up privacy concerns, especially when dealing with sensitive user data. Fully Homomorphic Encryption (FHE) provides a solution that protects user privacy and preserves model owners' intellectual property by enabling computations on encrypted data.</p>
 <h3>Privacy Challenges with LLMs</h3>
@@ -209,12 +221,23 @@
 <p><a href="https://zama.ai/" title="Zama - Fully Homomorphic Encryption"><strong>Zama ⧉</strong></a>, a privacy tech company, has demonstrated the feasibility of building an encrypted LLM using FHE. Their approach, which combines FHE with other privacy-enhancing technologies, achieves comparable performance to unencrypted models with only a modest increase in computational overhead.</p>
 <h3>Improving User Privacy with Encrypted LLMs</h3>
 <p>The integration of FHE into LLMs has the potential to transform user privacy, especially in applications dealing with sensitive personal or business information. As AI becomes more focused on privacy, it's important for developers, users, and regulators to work together. This collaboration is key to building an AI ecosystem that puts security and privacy first.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100">.alt=&quot;Divider&quot; </p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
 <h2>Conclusion</h2>
 <p><strong>Fully Homomorphic Encryption (FHE)</strong> is a revolutionary data security technology that offers exceptional privacy and security for Banking and the Financial Industry.</p>
 <p>As quantum computing advances, FHE becomes even more crucial. Its adoption will reshape cybersecurity in financial services, making digital banking more trustworthy and secure in our increasingly connected world.</p>
 <p>The advent of FHE has also opened up new possibilities for secure and private use of Large Language Models. By enabling encrypted LLMs, FHE ensures that user data remains confidential while benefiting from the advanced capabilities of these models.</p>
 <p>The Quantum Computing era is approaching. Banks must proactively assess their encryption infrastructure, identify potential vulnerabilities, and develop a clear roadmap for adopting FHE to safeguard data and maintain customer trust.</p>
+<!-- enrich-start -->
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" class="related-media" aria-label="State of AI and Quantum Computing in Banking: A 2023 Review" tabindex="-1"><img alt="State of AI and Quantum Computing in Banking: A 2023 Review" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a></h3><p><time datetime="2023-12-18">2023-12-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" class="related-media" aria-label="Quantum Key Distribution Revolutionising Security in Banking" tabindex="-1"><img alt="Quantum Key Distribution Revolutionising Security in Banking" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" class="related-media" aria-label="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age" tabindex="-1"><img alt="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a></h3><p><time datetime="2023-11-19">2023-11-19</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->
 </div>
     </main>
 
