@@ -217,7 +217,7 @@ I invite you to visit [**Alien Studio ⧉**][00], to see through the photographs
 ![divider][divider].class=\"m-10 w-100\"
 
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
-[00]: https://alienstudio.com/ "Alien Studio, pioneering the future of photography"
+[00]: https://web.archive.org/web/2*/https://alienstudio.com/ "Alien Studio, pioneering the future of photography (archived)"
 [01]: https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-13.webp "Soulful explorer, sunset adventures await; freedom calls"
 [02]: https://cloudcdn.pro/clients/alienstudio/v1/collections/odyssey/odyssey-01.webp "Marigold merchant’s gaze"
 [03]: https://cloudcdn.pro/clients/alienstudio/v1/collections/ethereal/ethereal-01.webp "A lone silhouette against a fiery cosmic backdrop"

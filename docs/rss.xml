@@ -90,7 +90,7 @@
     <item>
       <title>Discover How Technology Is Changing Banking and Finance</title>
       <link>http://127.0.0.1:8000/.meta/</link>
-      <description>Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry</description>
+      <description>Insights on applied AI, post-quantum cryptography, ISO 20022 payments, Rust and Python from a senior banking technologist. Read research now.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
       <pubDate>Mon, 15 Apr 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -151,7 +151,7 @@
     <item>
       <title>Innovative and Creative Solutions Built with Open Source</title>
       <link>http://127.0.0.1:8000/.meta/</link>
-      <description>Explore my open-source projects and discover how I leverage open-source software to deliver groundbreaking solutions.</description>
+      <description>Open-source Python and Rust libraries for ISO 20022 payments, post-quantum cryptography and financial data. Apache-2.0 / MIT, free to use.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
       <pubDate>Mon, 01 Apr 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -181,7 +181,7 @@
     <item>
       <title>OpenVoice: Leading Innovation in Voice Cloning Technology</title>
       <link>http://127.0.0.1:8000/.meta/</link>
-      <description>OpenVoice from MIT, Tsinghua and MyShell delivers production-grade voice cloning with fine-grained tone, accent and emotion control — and the trade-offs worth knowing.</description>
+      <description>OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
       <pubDate>Mon, 01 Apr 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -462,7 +462,7 @@
       <category>Education</category>
     </item>
     <item>
-      <title>Accessibility Statement</title>
+      <title>Website Accessibility Statement — Standards & Contact</title>
       <link>http://127.0.0.1:8000/.meta/</link>
       <description>This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>

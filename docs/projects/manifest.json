@@ -1,6 +1,6 @@
 {
   "background_color": "#ffffff",
-  "description": "Explore my open-source projects and discover how I leverage open-source software to deliver groundbreaking solutions.",
+  "description": "Open-source Python and Rust libraries for ISO 20022 payments, post-quantum cryptography and financial data. Apache-2.0 /",
   "display": "standalone",
   "icons": [
     {

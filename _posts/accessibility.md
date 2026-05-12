@@ -43,7 +43,7 @@ short_name: "sebastienrousseau"
 subtitle: "Dedicated to ensuring digital accessibility for people with disabilities"
 tags: "accessibility, wcag, inclusivity, screen-reader, usability, web-design, ada, compliance, ux, design, color-blindness, assistive-tech"
 theme-color: "0, 67, 165"
-title: "Accessibility Statement"
+title: "Website Accessibility Statement — Standards & Contact"
 url: "https://sebastienrousseau.com/accessibility"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 

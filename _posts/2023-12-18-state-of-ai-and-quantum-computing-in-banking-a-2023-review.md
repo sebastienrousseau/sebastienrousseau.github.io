@@ -249,7 +249,7 @@ Thank you again for your time and I look forward to hearing from you!
 [03]: https://sebastienrousseau.com/contact/index.html "Contact Sebastien Rousseau"
 [05]: http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm "Interim Measures for Generative Artificial Intelligence Service Management"
 [06]: https://www.fmprc.gov.cn/mfa_eng/wjdt_665385/2649_665393/202310/t20231020_11164834.html "Global AI Governance Initiative"
-[07]: https://wizardlm.github.io/ "WizardLM"
+[07]: https://github.com/nlpxucan/WizardLM "WizardLM"
 [08]: https://ai.meta.com/llama/ "LLaMA 2"
 [09]: https://lmsys.org/blog/2023-03-30-vicuna/ "Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality"
 [10]: https://mistral.ai/news/mixtral-of-experts/ "Mixtral 8x7B: An Open-Source Language Model Matching GPT-3.5 and Outperforming LLaMA 2-70B"

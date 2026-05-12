@@ -47,7 +47,7 @@
     <id>http://127.0.0.1:8000/.meta/</id>
     <updated>2024-04-15T06:06:06+00:00</updated>
     <published>2024-04-15T06:06:06+00:00</published>
-    <summary>Insights on AI, Quantum Cryptography, Blockchain, Rust, and Python in the Technology Space of the Financial Industry</summary>
+    <summary>Insights on applied AI, post-quantum cryptography, ISO 20022 payments, Rust and Python from a senior banking technologist. Read research now.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -74,7 +74,7 @@
     <id>http://127.0.0.1:8000/.meta/</id>
     <updated>2024-04-01T06:06:06+00:00</updated>
     <published>2024-04-01T06:06:06+00:00</published>
-    <summary>Explore my open-source projects and discover how I leverage open-source software to deliver groundbreaking solutions.</summary>
+    <summary>Open-source Python and Rust libraries for ISO 20022 payments, post-quantum cryptography and financial data. Apache-2.0 / MIT, free to use.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -83,7 +83,7 @@
     <id>http://127.0.0.1:8000/.meta/</id>
     <updated>2024-04-01T06:06:06+00:00</updated>
     <published>2024-04-01T06:06:06+00:00</published>
-    <summary>OpenVoice from MIT, Tsinghua and MyShell delivers production-grade voice cloning with fine-grained tone, accent and emotion control — and the trade-offs worth knowing.</summary>
+    <summary>OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
@@ -204,7 +204,7 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Accessibility Statement</title>
+    <title>Website Accessibility Statement — Standards &amp; Contact</title>
     <link href="http://127.0.0.1:8000/.meta/"/>
     <id>http://127.0.0.1:8000/.meta/</id>
     <updated>2024-01-15T05:06:06+00:00</updated>
