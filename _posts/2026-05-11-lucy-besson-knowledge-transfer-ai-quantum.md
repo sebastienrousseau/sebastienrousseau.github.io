@@ -103,7 +103,7 @@ excerpt: "Twelve years after its release, Luc Besson's *Lucy* reads less like ps
 last_reviewed: "2026-05-11"
 ---
 
-# Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines
+## Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines
 
 Twelve years after its release, Luc Besson's *Lucy* reads less like pseudo-science and more like a thought experiment about what happens when human knowledge migrates from biological to non-biological substrates. In the era of large language models, neutral atom qubits, and whole-brain emulation, the film's central metaphor is aging remarkably well.
 
@@ -213,7 +213,7 @@ At human scale, no, and probably not for some time. As of early 2026, the state 
 - Wikipedia contributors, (2026). [Mind uploading ⧉](https://en.wikipedia.org/wiki/Mind_uploading "Mind uploading"). Wikipedia.
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

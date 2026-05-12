@@ -103,18 +103,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online.
->
-> **Key takeaways:**
->
-> - **Idea.** Bitcoin facilitates peer-to-peer transactions through a distributed ledger, incentivizing participants through cryptographic rewards.
-> - **Impact.** Bitcoin's solution to the double spending problem has paved the way for innovation in decentralized finance, digital assets, and trust systems.
-> - **Incentives.** Bitcoin's unique incentives drive network participation while aligning stakeholders for collective growth.
-> - **Issues.** Despite its growth, Bitcoin faces several challenges, including volatility, scalability issues leading to transaction delays, security concerns, regulatory complexities, and environmental criticisms related to…
->
-> **Related reading:** [Quantum Key Distribution Revolutionising Security in Banking](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html), [ERC-20: The Ethereum Token Interface That Changed the World](https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Idea.</strong> Bitcoin facilitates peer-to-peer transactions through a distributed ledger, incentivizing participants through cryptographic rewards.</li>
+  <li><strong>Impact.</strong> Bitcoin's solution to the double spending problem has paved the way for innovation in decentralized finance, digital assets, and trust systems.</li>
+  <li><strong>Incentives.</strong> Bitcoin's unique incentives drive network participation while aligning stakeholders for collective growth.</li>
+  <li><strong>Issues.</strong> Despite its growth, Bitcoin faces several challenges, including volatility, scalability issues leading to transaction delays, security concerns, regulatory complexities, and environmental criticisms related to…</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>, <a href="https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html">ERC-20: The Ethereum Token Interface That Changed the World</a>.</p>
+</aside>
 <!-- lead-end -->
 ![A very tall building that has a lot of holes in it](https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp).class=\"img-fluid clearfix\"
 
@@ -239,7 +238,7 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

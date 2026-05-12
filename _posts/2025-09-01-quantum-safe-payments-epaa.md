@@ -103,18 +103,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Quantum computing threatens payment system cryptography. The EPAA white paper outlines the structural risk and the urgent case for PQC migration.
->
-> **Key takeaways:**
->
-> - **The Quantum Threat to Payment Systems.** Modern payment infrastructure relies on public-key cryptography.
-> - **The Harvest-Now Decrypt-Later Risk.** The threat is not confined to a future date when quantum computers reach sufficient capability.
-> - **Impact Across Payment Rails.** The implications span the full breadth of payment infrastructure:.
-> - **What Organisations Must Do Now.** The transition to quantum-safe cryptography is not a single upgrade but a multi-year programme requiring structured preparation:.
->
-> **Related reading:** [Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk](https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again), [Quantum Lattice Crypto: Bug in Chen's LWE Attack](https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html), [Protecting Data in the Quantum Age: The Hash Library (HSH)](https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Quantum computing threatens payment system cryptography. The EPAA white paper outlines the structural risk and the urgent case for PQC migration.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>The Quantum Threat to Payment Systems.</strong> Modern payment infrastructure relies on public-key cryptography.</li>
+  <li><strong>The Harvest-Now Decrypt-Later Risk.</strong> The threat is not confined to a future date when quantum computers reach sufficient capability.</li>
+  <li><strong>Impact Across Payment Rails.</strong> The implications span the full breadth of payment infrastructure:.</li>
+  <li><strong>What Organisations Must Do Now.</strong> The transition to quantum-safe cryptography is not a single upgrade but a multi-year programme requiring structured preparation:.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</a>, <a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">Quantum Lattice Crypto: Bug in Chen's LWE Attack</a>, <a href="https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html">Protecting Data in the Quantum Age: The Hash Library (HSH)</a>.</p>
+</aside>
 <!-- lead-end -->
 ## The Quantum Threat to Payment Systems
 
@@ -138,7 +137,7 @@ The implications span the full breadth of payment infrastructure:
 
 **Real-time payment systems:** Faster Payments (UK), FedNow (US), and NPP (Australia) all share the same dependency on classical cryptographic primitives for message authentication and participant verification.
 
-**Compliance and long-life data:** Payment records retained for regulatory purposes. Often mandated for five to ten years or longer. Will outlive the security guarantees of the cryptography that protected them at the time of creation. ISO 20022 migration programmes must consider the cryptographic shelf life of the data they produce.
+**Compliance and long-life data:** Payment records retained for regulatory purposes. Often mandated for five to ten years or longer. Will outlive the security guarantees of the cryptography that protected them at the time of creation. [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) migration programmes must consider the cryptographic shelf life of the data they produce.
 
 **Blockchain and distributed ledger technology:** Digital asset platforms and tokenised payment instruments that depend on elliptic curve cryptography face a direct and well-understood threat from quantum algorithms.
 
@@ -168,8 +167,8 @@ Sebastien Rousseau is a Senior Digital Product Manager at HSBC Bank plc, leading
 
 ## Related Articles
 
-- [Quantum Key Distribution: Revolutionising Security in Banking][rel1]
-- [CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age][rel2]
+- [[Quantum Key Distribution](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html): Revolutionising Security in Banking][rel1]
+- [[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html): The Safeguarding Algorithm in a Quantum Age][rel2]
 
 [00]: /about/index.html "About Sebastien Rousseau"
 [epaa]: https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf "EPAA Quantum-Safe Payments White Paper"
@@ -177,7 +176,7 @@ Sebastien Rousseau is a Senior Digital Product Manager at HSBC Bank plc, leading
 [rel2]: /2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html "CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

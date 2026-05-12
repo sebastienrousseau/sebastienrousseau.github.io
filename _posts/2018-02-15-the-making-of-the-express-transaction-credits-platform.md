@@ -103,18 +103,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard.
->
-> **Key takeaways:**
->
-> - **Idea.** At the core of the EXTC platform lies the Ethereum Request for Comment (ERC) 223 standard, an extension of the ERC20 token standard.
-> - **Impact.** The impact of EXTC extends far beyond its technical attributes.
-> - **Incentives.** The success of any financial platform hinges on user adoption and participation.
-> - **Pioneering a New Age of Financial Services.** The origin of the Express Transaction Credits (EXTC) platform started in 2018 and is rooted in recognising the limitations of traditional financial systems.
->
-> **Related reading:** [RustLogs (RLG): Structured Logging Library for Rust](https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html), [Efficient Date and Time Management with DateTime (DTT)](https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html), [KyberLib: Rust CRYSTALS-Kyber for Post-Quantum](https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Idea.</strong> At the core of the EXTC platform lies the Ethereum Request for Comment (ERC) 223 standard, an extension of the ERC20 token standard.</li>
+  <li><strong>Impact.</strong> The impact of EXTC extends far beyond its technical attributes.</li>
+  <li><strong>Incentives.</strong> The success of any financial platform hinges on user adoption and participation.</li>
+  <li><strong>Pioneering a New Age of Financial Services.</strong> The origin of the Express Transaction Credits (EXTC) platform started in 2018 and is rooted in recognising the limitations of traditional financial systems.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): Structured Logging Library for Rust</a>, <a href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html">Efficient Date and Time Management with DateTime (DTT)</a>, <a href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html">KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</a>.</p>
+</aside>
 <!-- lead-end -->
 ![Giant white pillars](https://cloudcdn.pro/stocks/images/rawpixel-com-369782.webp).class=\"img-fluid clearfix\"
 
@@ -183,7 +182,7 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

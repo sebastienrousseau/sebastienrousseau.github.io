@@ -113,18 +113,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.
->
-> **Key takeaways:**
->
-> - **Unleashing Artistic Innovation through Cutting-Edge Technology.** 2023 was a year of profound transformation and realisation.
-> - **The Tech Trio - Rust, AI, and Quantum Computing.** My journey started with [Rust ⧉][06], a language known for its safety and performance.
-> - **Artistic Awakening.** I neglected my passion for art and photography while consumed by work and technology.
-> - **The Birth of Alien Studio.** The idea for Alien Studio sprang from this unique confluence of technology and art.
->
-> **Related reading:** [EU's AI Act: Pioneering Ethical AI Regulation Worldwide](https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html), [AI Prompt Engineering 2024: Techniques That Work](https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html), [Revolutionising Finance with AI-Enhanced Quantum Algorithms](https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Unleashing Artistic Innovation through Cutting-Edge Technology.</strong> 2023 was a year of profound transformation and realisation.</li>
+  <li><strong>The Tech Trio - Rust, AI, and Quantum Computing.</strong> My journey started with Rust ⧉, a language known for its safety and performance.</li>
+  <li><strong>Artistic Awakening.</strong> I neglected my passion for art and photography while consumed by work and technology.</li>
+  <li><strong>The Birth of Alien Studio.</strong> The idea for Alien Studio sprang from this unique confluence of technology and art.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a>, <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>, <a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a>.</p>
+</aside>
 <!-- lead-end -->
 ## Unleashing Artistic Innovation through Cutting-Edge Technology
 
@@ -229,7 +228,7 @@ I invite you to visit [**Alien Studio ⧉**][00], to see through the photographs
 [09]: https://www.midjourney.com/explore "Midjourney"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

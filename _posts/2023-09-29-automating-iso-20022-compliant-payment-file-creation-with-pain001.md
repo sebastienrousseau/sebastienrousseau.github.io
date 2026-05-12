@@ -103,18 +103,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Automate the creation of ISO 20022 pain.001 payment files from CSV or SQLite. pain001 is the open-source Python library that streamlines compliance.
->
-> **Key takeaways:**
->
-> - **Idea.** Recognising the complexity of ISO 20022, I developed and launched [Pain001 ⧉][00], an open-source toolset for creating, translating, and validating payment initiation and advice messages.
-> - **Impact.** Pain001 is committed to simplifying and streamlining the process of generating payment messages, enabling easy adoption of ISO 20022 and facilitating seamless integration with existing systems to achieve ISO 20022…
-> - **Incentives.** Experience a transformative shift in your payment automation process with Pain001.
-> - **The payments industry is evolving, and ISO 20022 is leading the way.** [ISO 20022 ⧉][01] is a groundbreaking standard that is simplifying transactions and enhancing payment systems worldwide.
->
-> **Related reading:** [Static Site Generator: Fastest Rust-Based SSG](https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html), [Unveiling a new Cryptocurrency and Faster Payment Solution](https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html), [Understanding the Technology behind Blockchain](https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Automate the creation of ISO 20022 pain.001 payment files from CSV or SQLite. pain001 is the open-source Python library that streamlines compliance.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Idea.</strong> Recognising the complexity of ISO 20022, I developed and launched Pain001 ⧉, an open-source toolset for creating, translating, and validating payment initiation and advice messages.</li>
+  <li><strong>Impact.</strong> Pain001 is committed to simplifying and streamlining the process of generating payment messages, enabling easy adoption of ISO 20022 and facilitating seamless integration with existing systems to achieve ISO 20022…</li>
+  <li><strong>Incentives.</strong> Experience a transformative shift in your payment automation process with Pain001.</li>
+  <li><strong>The payments industry is evolving, and ISO 20022 is leading the way.</strong> ISO 20022 ⧉ is a groundbreaking standard that is simplifying transactions and enhancing payment systems worldwide.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: Fastest Rust-Based SSG</a>, <a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html">Unveiling a new Cryptocurrency and Faster Payment Solution</a>, <a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html">Understanding the Technology behind Blockchain</a>.</p>
+</aside>
 <!-- lead-end -->
 ![A very tall building that has a lot of holes in it](https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp).class=\"img-fluid clearfix\"
 
@@ -225,7 +224,7 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

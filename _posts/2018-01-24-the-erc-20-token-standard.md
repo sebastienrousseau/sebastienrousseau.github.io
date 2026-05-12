@@ -103,18 +103,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** ERC-20: The Ethereum Token ERC-20 is the most common type of token used on the Ethereum blockchain and is often referred to as a smart contract digital contract
->
-> **Key takeaways:**
->
-> - **Idea.** The ERC-20 standard defines a set of six essential functions that all ERC-20 compliant tokens must implement.
-> - **Impact.** The ERC-20 standard has had a significant impact on the Ethereum ecosystem.
-> - **Incentive.** The standardisation brought about by the ERC-20 protocol has had a direct economic impact as well.
-> - **The need for a standardized token interface.** Before the advent of the ERC-20 (Ethereum Request for Comments 20) standard, the Ethereum blockchain was like the Wild West of token architectures.
->
-> **Related reading:** [Quantum Key Distribution Revolutionising Security in Banking](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html), [Bitcoin: A Year In Review of the First Cryptocurrency](https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> ERC-20: The Ethereum Token ERC-20 is the most common type of token used on the Ethereum blockchain and is often referred to as a smart contract digital contract</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Idea.</strong> The ERC-20 standard defines a set of six essential functions that all ERC-20 compliant tokens must implement.</li>
+  <li><strong>Impact.</strong> The ERC-20 standard has had a significant impact on the Ethereum ecosystem.</li>
+  <li><strong>Incentive.</strong> The standardisation brought about by the ERC-20 protocol has had a direct economic impact as well.</li>
+  <li><strong>The need for a standardized token interface.</strong> Before the advent of the ERC-20 (Ethereum Request for Comments 20) standard, the Ethereum blockchain was like the Wild West of token architectures.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>, <a href="https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/index.html">Bitcoin: A Year In Review of the First Cryptocurrency</a>.</p>
+</aside>
 <!-- lead-end -->
 ![A very tall building that has a lot of holes in it](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"
 
@@ -188,7 +187,7 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

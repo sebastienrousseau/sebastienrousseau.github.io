@@ -103,18 +103,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.
->
-> **Key takeaways:**
->
-> - **Idea.** The journey of generative AI began with simple models that could barely string together coherent sentences.
-> - **Impact.** Generative AI is not just an academic curiosity; it's a transformative force across multiple industries.
-> - **Incentives.** The development of generative AI is largely driven by economic incentives.
-> - **Understanding the Mechanics of Generative AI.** Generative Artificial Intelligence is a cutting-edge field of machine learning that enables computers to produce content indistinguishable from that created by humans.
->
-> **Related reading:** [EU's AI Act: Pioneering Ethical AI Regulation Worldwide](https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html), [AI Prompt Engineering 2024: Techniques That Work](https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html), [AI Trends 2024: Insights and Predictions for the Future](https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Idea.</strong> The journey of generative AI began with simple models that could barely string together coherent sentences.</li>
+  <li><strong>Impact.</strong> Generative AI is not just an academic curiosity; it's a transformative force across multiple industries.</li>
+  <li><strong>Incentives.</strong> The development of generative AI is largely driven by economic incentives.</li>
+  <li><strong>Understanding the Mechanics of Generative AI.</strong> Generative Artificial Intelligence is a cutting-edge field of machine learning that enables computers to produce content indistinguishable from that created by humans.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a>, <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>, <a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">AI Trends 2024: Insights and Predictions for the Future</a>.</p>
+</aside>
 <!-- lead-end -->
 ![AI, Artificial Intelligence concept,3d rendering,conceptual image](https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp).class=\"img-fluid clearfix\"
 
@@ -271,7 +270,7 @@ Thank you again for your time and I look forward to hearing from you.
 [linkedin]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

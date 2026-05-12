@@ -103,18 +103,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks.
->
-> **Key takeaways:**
->
-> - **Idea.** A blockchain organises data into blocks, which are chained together chronologically.
-> - **Impact.** Blockchain is enabling profound changes in finance, banking, supply chains, healthcare, real estate, and other sectors.
-> - **Use Cases.** The versatility of blockchain has sparked innovative applications across sectors:.
-> - **Limitations.** While blockchain is transformative, limitations around regulation, interoperability, complexity, and scalability remain barriers to mainstream adoption.
->
-> **Related reading:** [Static Site Generator: Fastest Rust-Based SSG](https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html), [Automating ISO 20022 Payment Files Creation with Pain001](https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html), [Unveiling a new Cryptocurrency and Faster Payment Solution](https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Idea.</strong> A blockchain organises data into blocks, which are chained together chronologically.</li>
+  <li><strong>Impact.</strong> Blockchain is enabling profound changes in finance, banking, supply chains, healthcare, real estate, and other sectors.</li>
+  <li><strong>Use Cases.</strong> The versatility of blockchain has sparked innovative applications across sectors:.</li>
+  <li><strong>Limitations.</strong> While blockchain is transformative, limitations around regulation, interoperability, complexity, and scalability remain barriers to mainstream adoption.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: Fastest Rust-Based SSG</a>, <a href="https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html">Automating ISO 20022 Payment Files Creation with Pain001</a>, <a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html">Unveiling a new Cryptocurrency and Faster Payment Solution</a>.</p>
+</aside>
 <!-- lead-end -->
 ![A very tall building that has a lot of holes in it](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"
 
@@ -214,7 +213,7 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

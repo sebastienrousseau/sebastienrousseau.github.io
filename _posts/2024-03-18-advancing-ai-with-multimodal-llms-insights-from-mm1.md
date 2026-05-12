@@ -111,18 +111,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials.
->
-> **Key takeaways:**
->
-> - **The Emergence of Multimodal AI.** The field of AI has witnessed remarkable advancements in recent years, particularly in the domains of natural language processing (NLP) and computer vision.
-> - **The MM1 Study: A Landmark in Multimodal AI Research.** The [MM1: Methods Analysis & Insights from Multimodal LLM Pre-training ⧉][00] study stands as a pivotal moment in the evolution of MLLMs.
-> - **Key Findings and Insights.** The MM1 study yielded several groundbreaking insights that have shaped our understanding of MLLMs and their potential.
-> - **MM1 Model Architecture and Multimodal Learning Process.** The diagram illustrates the architecture and learning process of the MM1 model.
->
-> **Related reading:** [State of AI and Quantum Computing in Banking: A 2023 Review](https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html), [Generative AI in 2023: How It Works, Where It Lands](https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html), [Lucy's Flash Drive Revisited: AI, Quantum & Knowledge](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>The Emergence of Multimodal AI.</strong> The field of AI has witnessed remarkable advancements in recent years, particularly in the domains of natural language processing (NLP) and computer vision.</li>
+  <li><strong>The MM1 Study: A Landmark in Multimodal AI Research.</strong> The MM1: Methods Analysis & Insights from Multimodal LLM Pre-training ⧉ study stands as a pivotal moment in the evolution of MLLMs.</li>
+  <li><strong>Key Findings and Insights.</strong> The MM1 study yielded several groundbreaking insights that have shaped our understanding of MLLMs and their potential.</li>
+  <li><strong>MM1 Model Architecture and Multimodal Learning Process.</strong> The diagram illustrates the architecture and learning process of the MM1 model.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a>, <a href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html">Generative AI in 2023: How It Works, Where It Lands</a>, <a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</a>.</p>
+</aside>
 <!-- lead-end -->
 ## Introduction
 
@@ -208,7 +207,7 @@ To learn more about the groundbreaking MM1 study and explore the fascinating wor
 [architecture]: https://cloudcdn.pro/stocks/diagrams/mm1_model_architecture.svg "MM1 Model Architecture"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

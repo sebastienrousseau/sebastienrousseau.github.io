@@ -113,18 +113,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors.
->
-> **Key takeaways:**
->
-> - **Custom Instructions and Their Impact.** Custom instructions have revolutionised AI interactions by enabling user-specific model control.
-> - **Multi-Person Leveraging.** Multi-persona leveraging in AI models has transformed user experiences by providing flexibility in responses.
-> - **Chain of Thought Approaches.** Chain-of-thought approaches have revolutionised AI problem-solving by mimicking human cognitive processes.
-> - **In-Model Learning and Vector Databases.** In-model learning and vector databases represent significant advancements in AI's capability to evolve and access vast data sets.
->
-> **Related reading:** [State of AI and Quantum Computing in Banking: A 2023 Review](https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html), [AI Trends 2024: Insights and Predictions for the Future](https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html), [Revolutionising Finance with AI-Enhanced Quantum Algorithms](https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Custom Instructions and Their Impact.</strong> Custom instructions have revolutionised AI interactions by enabling user-specific model control.</li>
+  <li><strong>Multi-Person Leveraging.</strong> Multi-persona leveraging in AI models has transformed user experiences by providing flexibility in responses.</li>
+  <li><strong>Chain of Thought Approaches.</strong> Chain-of-thought approaches have revolutionised AI problem-solving by mimicking human cognitive processes.</li>
+  <li><strong>In-Model Learning and Vector Databases.</strong> In-model learning and vector databases represent significant advancements in AI's capability to evolve and access vast data sets.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a>, <a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">AI Trends 2024: Insights and Predictions for the Future</a>, <a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a>.</p>
+</aside>
 <!-- lead-end -->
 In 2024, AI Prompt Engineering enables solutions like chatbots to hold empathetic conversations that understand cultural cues - a major breakthrough in human-like AI interactions. **AI Prompt Engineering** is transforming human-computer interaction with advancements in custom instructions, multi-persona leveraging, and chain-of-thought approaches. This article explores these developments and their impact on technology, finance, and education while integrating insights into areas like quantum computing and AI ethics.
 
@@ -275,7 +274,7 @@ AI Prompt Engineering is evolving rapidly, with significant implications for tec
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

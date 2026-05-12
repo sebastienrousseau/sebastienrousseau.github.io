@@ -111,18 +111,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use.
->
-> **Key takeaways:**
->
-> - **Google's Revolutionary Open-Source AI Model for Accessible and Ethical ML Development.** Google recently launched [Gemma ⧉][00], an open-source artificial intelligence model designed to provide an accessible and ethical foundation for AI development.
-> - **Understanding Gemma.** Google's Gemini architecture inspires Gemma and is available in two main configurations:.
-> - **Integrating Google Gemma with Ollama on macOS.** [Ollama ⧉][02] is an interface that enables exploring AI assistants locally on a macOS system.
-> - **Initialising Local Gemma Instance.** Choose the Gemma model you wish to run:.
->
-> **Related reading:** [State of AI and Quantum Computing in Banking: A 2023 Review](https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html), [EU's AI Act: Pioneering Ethical AI Regulation Worldwide](https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html), [AI Prompt Engineering 2024: Techniques That Work](https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Explore Google's Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Google's Revolutionary Open-Source AI Model for Accessible and Ethical ML Development.</strong> Google recently launched Gemma ⧉, an open-source artificial intelligence model designed to provide an accessible and ethical foundation for AI development.</li>
+  <li><strong>Understanding Gemma.</strong> Google's Gemini architecture inspires Gemma and is available in two main configurations:.</li>
+  <li><strong>Integrating Google Gemma with Ollama on macOS.</strong> Ollama ⧉ is an interface that enables exploring AI assistants locally on a macOS system.</li>
+  <li><strong>Initialising Local Gemma Instance.</strong> Choose the Gemma model you wish to run:.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a>, <a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a>, <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>.</p>
+</aside>
 <!-- lead-end -->
 ## Google's Revolutionary Open-Source AI Model for Accessible and Ethical ML Development
 
@@ -326,7 +325,7 @@ Gemma's launch is a watershed moment in the field of AI, highlighting a shift to
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

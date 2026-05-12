@@ -113,18 +113,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** The EU AI Act sets the first comprehensive framework for ethical, risk-tiered AI regulation worldwide. What changes for banks, vendors and high-risk systems.
->
-> **Key takeaways:**
->
-> - **EU's AI Act: Shaping the Future of Global AI Regulation.** [The European Union's Artificial Intelligence Act (AI Act) ⧉][00] is a comprehensive regulatory framework designed to ensure ethical, transparent, and safe AI development and usage across the European Union.
-> - **Key Aspects of the AI Act.** At its core, the AI Act is designed to safeguard EU citizens from the potential harms of AI, banning practices deemed unacceptable, such as manipulative AI that exploits vulnerabilities or systems that allow 'social…
-> - **Prohibited Practices and High-risk Applications.** At its core, the AI Act is designed to safeguard EU citizens from the potential harms of AI, banning practices deemed unacceptable, such as manipulative AI that exploits vulnerabilities or systems that allow 'social…
-> - **Fostering Innovation and AI Literacy.** While regulating high-risk applications, the Act also promotes innovation, especially among SMEs and startups, by supporting the development of secure, trustworthy AI.
->
-> **Related reading:** [State of AI and Quantum Computing in Banking: A 2023 Review](https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html), [AI Prompt Engineering 2024: Techniques That Work](https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html), [Generative AI in 2023: How It Works, Where It Lands](https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> The EU AI Act sets the first comprehensive framework for ethical, risk-tiered AI regulation worldwide. What changes for banks, vendors and high-risk systems.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>EU's AI Act: Shaping the Future of Global AI Regulation.</strong> The European Union's Artificial Intelligence Act (AI Act) ⧉ is a comprehensive regulatory framework designed to ensure ethical, transparent, and safe AI development and usage across the European Union.</li>
+  <li><strong>Key Aspects of the AI Act.</strong> At its core, the AI Act is designed to safeguard EU citizens from the potential harms of AI, banning practices deemed unacceptable, such as manipulative AI that exploits vulnerabilities or systems that allow 'social…</li>
+  <li><strong>Prohibited Practices and High-risk Applications.</strong> At its core, the AI Act is designed to safeguard EU citizens from the potential harms of AI, banning practices deemed unacceptable, such as manipulative AI that exploits vulnerabilities or systems that allow 'social…</li>
+  <li><strong>Fostering Innovation and AI Literacy.</strong> While regulating high-risk applications, the Act also promotes innovation, especially among SMEs and startups, by supporting the development of secure, trustworthy AI.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a>, <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>, <a href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html">Generative AI in 2023: How It Works, Where It Lands</a>.</p>
+</aside>
 <!-- lead-end -->
 ## EU's AI Act: Shaping the Future of Global AI Regulation
 
@@ -170,7 +169,7 @@ The EU's Artificial Intelligence Act represents a critical step in navigating th
 [00]: https://www.europarl.europa.eu/news/en/press-room/20240212IPR17618/artificial-intelligence-act-committees-confirm-landmark-agreement "AI Act: committees confirm landmark agreement"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

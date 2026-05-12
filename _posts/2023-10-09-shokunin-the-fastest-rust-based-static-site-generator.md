@@ -103,18 +103,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.
->
-> **Key takeaways:**
->
-> - **Idea.** I developed [Static Site Generator ⧉][00] with the aim of providing a lightning-fast static site generator (SSG) built with [Rust ⧉][03] that streamlines the process of creating static websites optimised for SEO and…
-> - **Impact.** Generating a static website with Static Site Generator is effortless, allowing for a focus on content that maximises impact on the intended audience.
-> - **Incentives.** [Static Site Generator ⧉][00] introduces a fresh perspective – an innovative approach to understanding the web.
-> - **A High-Quality Static Site Generator for the Modern Web.** In the ever-evolving digital landscape, speed and quality are of paramount importance.
->
-> **Related reading:** [Automating ISO 20022 Payment Files Creation with Pain001](https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html), [Unveiling a new Cryptocurrency and Faster Payment Solution](https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html), [Understanding the Technology behind Blockchain](https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Idea.</strong> I developed Static Site Generator ⧉ with the aim of providing a lightning-fast static site generator (SSG) built with Rust ⧉ that streamlines the process of creating static websites optimised for SEO and fully…</li>
+  <li><strong>Impact.</strong> Generating a static website with Static Site Generator is effortless, allowing for a focus on content that maximises impact on the intended audience.</li>
+  <li><strong>Incentives.</strong> Static Site Generator ⧉ introduces a fresh perspective – an innovative approach to understanding the web.</li>
+  <li><strong>A High-Quality Static Site Generator for the Modern Web.</strong> In the ever-evolving digital landscape, speed and quality are of paramount importance.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html">Automating ISO 20022 Payment Files Creation with Pain001</a>, <a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html">Unveiling a new Cryptocurrency and Faster Payment Solution</a>, <a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html">Understanding the Technology behind Blockchain</a>.</p>
+</aside>
 <!-- lead-end -->
 ![Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"
 
@@ -208,7 +207,7 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

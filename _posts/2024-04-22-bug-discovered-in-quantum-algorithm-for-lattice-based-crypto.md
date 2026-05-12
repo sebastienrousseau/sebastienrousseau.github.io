@@ -111,18 +111,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** A bug in Yilei Chen's quantum LWE algorithm temporarily reprieves lattice-based cryptography. What it means for CRYSTALS-Kyber, Dilithium and the PQC roadmap.
->
-> **Key takeaways:**
->
-> - **The Quantum Conundrum: Re-evaluating the NIST Post-Quantum Cryptography Standardisation in Light of Yilei Chen's Algorithm.** Following my recent article on the [Challenges in Quantum Algorithms for Lattice-Based Cryptography][00], I am compelled to provide an update on the latest developments in [Yilei Chen's research ⧉][01].
-> - **The Bug in Chen's Quantum Algorithm.** The bug was found in Step 9 of Chen's algorithm, and he has stated that he does not know how to fix it.
-> - **Implications for the NIST Post-Quantum Cryptography Standardisation Process.** Chen's research indirectly raised concerns and doubts about the [NIST Post-Quantum Cryptography (PQC) standardisation process ⧉][03] and the selection of quantum-resistant cryptographic algorithms.
-> - **The Future of Post-Quantum Cryptography.** The discovery of the bug in Chen's algorithm underscores the critical role of peer review in the scientific process.
->
-> **Related reading:** [Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk](https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again), [Protecting Data in the Quantum Age: The Hash Library (HSH)](https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html), [Lucy's Flash Drive Revisited: AI, Quantum & Knowledge](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> A bug in Yilei Chen's quantum LWE algorithm temporarily reprieves lattice-based cryptography. What it means for CRYSTALS-Kyber, Dilithium and the PQC roadmap.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>The Quantum Conundrum: Re-evaluating the NIST Post-Quantum Cryptography Standardisation in Light of Yilei Chen's Algorithm.</strong> Following my recent article on the Challenges in Quantum Algorithms for Lattice-Based Cryptography, I am compelled to provide an update on the latest developments in Yilei Chen's research ⧉.</li>
+  <li><strong>The Bug in Chen's Quantum Algorithm.</strong> The bug was found in Step 9 of Chen's algorithm, and he has stated that he does not know how to fix it.</li>
+  <li><strong>Implications for the NIST Post-Quantum Cryptography Standardisation Process.</strong> Chen's research indirectly raised concerns and doubts about the NIST Post-Quantum Cryptography (PQC) standardisation process ⧉ and the selection of quantum-resistant cryptographic algorithms.</li>
+  <li><strong>The Future of Post-Quantum Cryptography.</strong> The discovery of the bug in Chen's algorithm underscores the critical role of peer review in the scientific process.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</a>, <a href="https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html">Protecting Data in the Quantum Age: The Hash Library (HSH)</a>, <a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</a>.</p>
+</aside>
 <!-- lead-end -->
 ## The Quantum Conundrum: Re-evaluating the NIST Post-Quantum Cryptography Standardisation in Light of Yilei Chen's Algorithm
 
@@ -144,7 +143,7 @@ But according to [Nigel Smart's page ⧉][02], the proposed quantum attack on LW
 
 Chen's research indirectly raised concerns and doubts about the [NIST Post-Quantum Cryptography (PQC) standardisation process ⧉][03] and the selection of quantum-resistant cryptographic algorithms.
 
-The CRYSTALS-KYBER and CRYSTALS-Dilithium schemes, which are among the finalists in the NIST PQC standardisation process, are examples of lattice-based cryptographic schemes that have been rigorously tested and evaluated for quantum resistance. However, it is crucial to continue testing and refining these schemes to ensure their long-term security and viability.
+The [CRYSTALS-KYBER](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) and CRYSTALS-Dilithium schemes, which are among the finalists in the NIST PQC standardisation process, are examples of lattice-based cryptographic schemes that have been rigorously tested and evaluated for quantum resistance. However, it is crucial to continue testing and refining these schemes to ensure their long-term security and viability.
 
 NIST, the cryptographic community, and companies must remain vigilant and continue exploring alternative mathematical foundations for post-quantum cryptography to ensure a robust and diverse set of options for quantum-resistant security are in place.
 
@@ -183,7 +182,7 @@ As NIST continues its PQC standardisation process, the cryptographic community m
 [07]: https://tfhe.github.io/tfhe/ "TFHE"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

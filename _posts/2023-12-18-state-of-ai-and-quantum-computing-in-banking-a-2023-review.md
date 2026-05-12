@@ -103,18 +103,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Exploring 2023's Technological Landscape: AI & Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations & Governance
->
-> **Key takeaways:**
->
-> - **The Importance of AI and Quantum Computing in the Banking Industry.** The banking industry is undergoing a profound transformation, driven by the convergence of Artificial Intelligence (AI) and Quantum Computing (QC).
-> - **The Rise of Open-Source AI: A Paradigm Shift in Artificial Intelligence.** The year 2023 has witnessed a remarkable surge in the adoption of open-source AI technology, particularly in the realm of Large Language Models (LLMs).
-> - **The challenges of regulating AI.** Another challenge is making sure that AI systems are fair and unbiased.
-> - **The State of AI Governance.** In 2023, significant global initiatives and developments have shaped the landscape of AI governance and regulation.
->
-> **Related reading:** [Revolutionising Finance with AI-Enhanced Quantum Algorithms](https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html), [Quantum Key Distribution Revolutionising Security in Banking](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html), [AI Prompt Engineering 2024: Techniques That Work](https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Exploring 2023's Technological Landscape: AI & Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations & Governance</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>The Importance of AI and Quantum Computing in the Banking Industry.</strong> The banking industry is undergoing a profound transformation, driven by the convergence of Artificial Intelligence (AI) and Quantum Computing (QC).</li>
+  <li><strong>The Rise of Open-Source AI: A Paradigm Shift in Artificial Intelligence.</strong> The year 2023 has witnessed a remarkable surge in the adoption of open-source AI technology, particularly in the realm of Large Language Models (LLMs).</li>
+  <li><strong>The challenges of regulating AI.</strong> Another challenge is making sure that AI systems are fair and unbiased.</li>
+  <li><strong>The State of AI Governance.</strong> In 2023, significant global initiatives and developments have shaped the landscape of AI governance and regulation.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a>, <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>, <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>.</p>
+</aside>
 <!-- lead-end -->
 ## Insight
 
@@ -156,7 +155,7 @@ This visualisation showcases the market's impressive growth from 2018 to 2025, h
 
 [**HSBC** ⧉][01] has been at the forefront of integrating quantum computing into the financial sector. The Bank has collaborated with technology providers and research laboratories to explore the application of quantum technologies to real-world problems.
 
-HSBC was the first bank to [**protect AI-powered foreign exchange trading with quantum in 2023** ⧉][01]. In a world-first trial, HSBC used **Quantum Key Distribution** to safeguard a €30 million trading scenario from Euros to US dollars. This trial showed that quantum technology will protect trades of any value when it becomes commercially accessible and scalable.
+HSBC was the first bank to [**protect AI-powered foreign exchange trading with quantum in 2023** ⧉][01]. In a world-first trial, HSBC used **[Quantum Key Distribution](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)** to safeguard a €30 million trading scenario from Euros to US dollars. This trial showed that quantum technology will protect trades of any value when it becomes commercially accessible and scalable.
 
 ![divider][divider].class=\"m-10 w-100\"
 
@@ -275,7 +274,7 @@ Thank you again for your time and I look forward to hearing from you!
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

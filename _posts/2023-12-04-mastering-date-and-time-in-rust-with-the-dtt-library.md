@@ -103,18 +103,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** DateTime (DTT) is a Rust library for parsing, validating, manipulating and formatting dates and times — high precision, broad functionality.
->
-> **Key takeaways:**
->
-> - **Efficient Date and Time Management with DateTime (DTT).** In the realm of software development, effectively managing dates and times is a common challenge.
-> - **What is DTT?.** DateTime (DTT) stands as an open-source Rust library, meticulously designed to simplify the way you interact with dates and times.
-> - **Features.** DTT boasts an array of features that empower developers to effortlessly manage dates and times:.
-> - **Getting Started with DTT.** To begin using DTT in your Rust projects, follow these simple steps:.
->
-> **Related reading:** [KyberLib: Rust CRYSTALS-Kyber for Post-Quantum](https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html), [CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age](https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html), [Mathematical and Cryptographic Constants for Rust Security](https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> DateTime (DTT) is a Rust library for parsing, validating, manipulating and formatting dates and times — high precision, broad functionality.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Efficient Date and Time Management with DateTime (DTT).</strong> In the realm of software development, effectively managing dates and times is a common challenge.</li>
+  <li><strong>What is DTT?.</strong> DateTime (DTT) stands as an open-source Rust library, meticulously designed to simplify the way you interact with dates and times.</li>
+  <li><strong>Features.</strong> DTT boasts an array of features that empower developers to effortlessly manage dates and times:.</li>
+  <li><strong>Getting Started with DTT.</strong> To begin using DTT in your Rust projects, follow these simple steps:.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html">KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>, <a href="https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html">Mathematical and Cryptographic Constants for Rust Security</a>.</p>
+</aside>
 <!-- lead-end -->
 [![DateTime (DTT), Your Essential Toolkit for Date and Time Operations](https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg).class=\"img-fluid clearfix\"][01]
 
@@ -216,7 +215,7 @@ Employing DateTime (DTT) for managing dates and times in your Rust projects offe
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

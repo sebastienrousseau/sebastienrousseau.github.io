@@ -103,18 +103,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** HSH uses quantum-resistant cryptographic primitives to protect your data, ensuring its security even in the face of future quantum computing advances.
->
-> **Key takeaways:**
->
-> - **Idea.** The Hash Library (HSH) provides a lightweight, efficient, and user-friendly solution for protecting data with quantum-resistant cryptography.
-> - **Impact.** The [Hash Library (HSH) ⧉][00] provides a wealth of modern cryptographic primitives, creating a strong barrier against the complexities of the quantum age.
-> - **Incentives.** Cross-Platform Consistency: The Hash Library (HSH) protects data across platforms and applications.
-> - **The Emerging Threat of Quantum Computing.** As the digital landscape evolves, financial services organisations must embrace new technologies to remain competitive.
->
-> **Related reading:** [Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk](https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again), [Quantum Lattice Crypto: Bug in Chen's LWE Attack](https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html), [Lucy's Flash Drive Revisited: AI, Quantum & Knowledge](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> HSH uses quantum-resistant cryptographic primitives to protect your data, ensuring its security even in the face of future quantum computing advances.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Idea.</strong> The Hash Library (HSH) provides a lightweight, efficient, and user-friendly solution for protecting data with quantum-resistant cryptography.</li>
+  <li><strong>Impact.</strong> The Hash Library (HSH) ⧉ provides a wealth of modern cryptographic primitives, creating a strong barrier against the complexities of the quantum age.</li>
+  <li><strong>Incentives.</strong> Cross-Platform Consistency: The Hash Library (HSH) protects data across platforms and applications.</li>
+  <li><strong>The Emerging Threat of Quantum Computing.</strong> As the digital landscape evolves, financial services organisations must embrace new technologies to remain competitive.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</a>, <a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">Quantum Lattice Crypto: Bug in Chen's LWE Attack</a>, <a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</a>.</p>
+</aside>
 <!-- lead-end -->
 ![A creative illustration on Quantum computing theme](https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp).class=\"img-fluid clearfix\"
 
@@ -173,7 +172,7 @@ Organisations must take the necessary precautions to protect their data from the
 
 * **Quantum-resistant cryptography** is a new type of encryption that can withstand attacks from quantum computers. Quantum-resistant encryption algorithms can speed up data processing and accuracy, making them a more efficient option.
 
-* **Quantum entanglement** can be used to create quantum key distribution (QKD) systems, which can generate and distribute secure cryptographic keys over long distances. QKD systems are immune to attacks by quantum computers, making them ideal for protecting sensitive financial data.
+* **Quantum entanglement** can be used to create [quantum key distribution](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) (QKD) systems, which can generate and distribute secure cryptographic keys over long distances. QKD systems are immune to attacks by quantum computers, making them ideal for protecting sensitive financial data.
 
 ## Idea
 
@@ -243,7 +242,7 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

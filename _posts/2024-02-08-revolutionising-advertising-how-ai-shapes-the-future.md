@@ -113,18 +113,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Explore how AI transforms advertising with insights on Amazon's Rufus and Meta's latest developments. Discover the impact on consumer engagement
->
-> **Key takeaways:**
->
-> - **The Dawn of AI in Advertising.** In the digital age, Artificial Intelligence (AI) has emerged as a game-changer for the advertising industry, redefining the paradigms of creativity, analysis, and consumer engagement.
-> - **The AI Revolution in Advertising.** The infusion of AI into advertising signals a new era of efficiency and effectiveness.
-> - **Spotlight on Amazon's Rufus.** Amazon's introduction of Rufus, a personal shopping assistant chatbot, marks a significant advancement in AI-driven consumer engagement.
-> - **Meta's AI Innovations.** Meta has been actively integrating generative AI into its advertising tools, providing advertisers with innovative features to enhance their ad campaigns.
->
-> **Related reading:** [AI-Powered Speech Analysis, Translation, & Insight Tool](https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html), [EU's AI Act: Pioneering Ethical AI Regulation Worldwide](https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html), [AI Prompt Engineering 2024: Techniques That Work](https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Explore how AI transforms advertising with insights on Amazon's Rufus and Meta's latest developments. Discover the impact on consumer engagement</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>The Dawn of AI in Advertising.</strong> In the digital age, Artificial Intelligence (AI) has emerged as a game-changer for the advertising industry, redefining the paradigms of creativity, analysis, and consumer engagement.</li>
+  <li><strong>The AI Revolution in Advertising.</strong> The infusion of AI into advertising signals a new era of efficiency and effectiveness.</li>
+  <li><strong>Spotlight on Amazon's Rufus.</strong> Amazon's introduction of Rufus, a personal shopping assistant chatbot, marks a significant advancement in AI-driven consumer engagement.</li>
+  <li><strong>Meta's AI Innovations.</strong> Meta has been actively integrating generative AI into its advertising tools, providing advertisers with innovative features to enhance their ad campaigns.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI-Powered Speech Analysis, Translation, & Insight Tool</a>, <a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a>, <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>.</p>
+</aside>
 <!-- lead-end -->
 Artificial Intelligence (AI) is drastically transforming the advertising landscape, offering unprecedented efficiency and effectiveness in ad campaigns. Amazon's introduction of [**Rufus ⧉**][00], a personal shopping assistant chatbot, alongside Meta's integration of AI across its platforms with conversational assistants and creative tools, exemplifies the forefront of this revolution. These advancements not only enhance the consumer experience but also offer new avenues for precise targeting and engagement, highlighting the pivotal role of AI in advertising's future.
 
@@ -208,7 +207,7 @@ Additionally, striking the right partnerships will be pivotal - whether with ad 
 [01]: https://www.facebook.com/business/news/generative-ai-features-for-ads-coming-to-all-advertisers "Generative AI features for ads coming to all advertisers"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

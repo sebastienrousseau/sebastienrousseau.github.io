@@ -103,18 +103,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** A significant chapter in the evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance.
->
-> **Key takeaways:**
->
-> - **Idea.** At the heart of the EXTC Network’s transformative power lies its novel concept - to create a standard for faster payment solutions that cater to the evolving demands of the modern financial landscape.
-> - **Impact.** The impact of the EXTC Network’s vision transcends the boundaries of the financial sector.
-> - **Incentives.** The EXTC Network acknowledges that widespread adoption requires a recognisable and attainable set of incremental benefits.
-> - **A Growing Need for Faster Payments.** In today’s fast-paced landscape, where time is of the essence, the demand for swiffer payment solutions has never been more pronounced.
->
-> **Related reading:** [Static Site Generator: Fastest Rust-Based SSG](https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html), [Automating ISO 20022 Payment Files Creation with Pain001](https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html), [Understanding the Technology behind Blockchain](https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> A significant chapter in the evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Idea.</strong> At the heart of the EXTC Network’s transformative power lies its novel concept - to create a standard for faster payment solutions that cater to the evolving demands of the modern financial landscape.</li>
+  <li><strong>Impact.</strong> The impact of the EXTC Network’s vision transcends the boundaries of the financial sector.</li>
+  <li><strong>Incentives.</strong> The EXTC Network acknowledges that widespread adoption requires a recognisable and attainable set of incremental benefits.</li>
+  <li><strong>A Growing Need for Faster Payments.</strong> In today’s fast-paced landscape, where time is of the essence, the demand for swiffer payment solutions has never been more pronounced.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: Fastest Rust-Based SSG</a>, <a href="https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html">Automating ISO 20022 Payment Files Creation with Pain001</a>, <a href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html">Understanding the Technology behind Blockchain</a>.</p>
+</aside>
 <!-- lead-end -->
 ![A very tall building that has a lot of holes in it](https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp).class=\"img-fluid clearfix\"
 
@@ -168,7 +167,7 @@ If you have any questions, please don't hesitate to contact me via [LinkedIn ⧉
 [11]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

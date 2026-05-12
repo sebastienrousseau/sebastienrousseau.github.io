@@ -113,18 +113,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications.
->
-> **Key takeaways:**
->
-> - **Idea.** The integration of AI into quantum computing, especially in the realm of finance, is not merely a combination of two technologies but a synergistic relationship that amplifies the strengths of each.
-> - **Impact.** The practical implications of AI-enhanced quantum algorithms in finance are vast and transformative.
-> - **Incentives.** Adopting these advanced quantum algorithms offers significant competitive advantages for financial institutions.
-> - **Quantum Computing for Finance: Unveiling the Engines of Innovation.** Central to this financial revolution are two quantum algorithms, each addressing specific challenges in finance: the Quantum Fourier Transform (QFT) and Grover's Algorithm.
->
-> **Related reading:** [State of AI and Quantum Computing in Banking: A 2023 Review](https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html), [AI Prompt Engineering 2024: Techniques That Work](https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html), [Quantum Key Distribution Revolutionising Security in Banking](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Idea.</strong> The integration of AI into quantum computing, especially in the realm of finance, is not merely a combination of two technologies but a synergistic relationship that amplifies the strengths of each.</li>
+  <li><strong>Impact.</strong> The practical implications of AI-enhanced quantum algorithms in finance are vast and transformative.</li>
+  <li><strong>Incentives.</strong> Adopting these advanced quantum algorithms offers significant competitive advantages for financial institutions.</li>
+  <li><strong>Quantum Computing for Finance: Unveiling the Engines of Innovation.</strong> Central to this financial revolution are two quantum algorithms, each addressing specific challenges in finance: the Quantum Fourier Transform (QFT) and Grover's Algorithm.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a>, <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>, <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>.</p>
+</aside>
 <!-- lead-end -->
 The financial landscape is poised for a groundbreaking transformation driven by the convergence of artificial intelligence (AI) and quantum algorithm design.This revolution in finance isn't raw quantum power, but elegant algorithms that optimise it.
 
@@ -230,7 +229,7 @@ The integration of AI with quantum algorithm design represents a pivotal moment 
 [07]: https://www.goldmansachs.com/intelligence/pages/gs-research/euv-3.0/report.pdf "Europe Technology Hardware EUV 3.0 High NA a prime Digital Enabler for the next decade with deep competitive moat"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

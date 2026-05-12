@@ -111,18 +111,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats.
->
-> **Key takeaways:**
->
-> - **Understanding Fully Homomorphic Encryption.** Encryption is a method of transforming readable data (plaintext) into an unreadable format (ciphertext) using an algorithm and an encryption key.
-> - **The Breakthrough of Homomorphic Encryption.** Homomorphic encryption (HE) solves the limitations of conventional encryption.
-> - **The Impact of FHE on Banking and Finance.** The application of FHE in the financial sector promises a significant enhancement in data privacy.
-> - **Preparing for the Quantum Future.** The imminent advent of quantum computing heralds a potential crisis for traditional encryption methodologies.
->
-> **Related reading:** [State of AI and Quantum Computing in Banking: A 2023 Review](https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html), [Quantum Key Distribution Revolutionising Security in Banking](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html), [CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age](https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Understanding Fully Homomorphic Encryption.</strong> Encryption is a method of transforming readable data (plaintext) into an unreadable format (ciphertext) using an algorithm and an encryption key.</li>
+  <li><strong>The Breakthrough of Homomorphic Encryption.</strong> Homomorphic encryption (HE) solves the limitations of conventional encryption.</li>
+  <li><strong>The Impact of FHE on Banking and Finance.</strong> The application of FHE in the financial sector promises a significant enhancement in data privacy.</li>
+  <li><strong>Preparing for the Quantum Future.</strong> The imminent advent of quantum computing heralds a potential crisis for traditional encryption methodologies.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a>, <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>.</p>
+</aside>
 <!-- lead-end -->
 **Fully Homomorphic Encryption (FHE)** promises to redefine data security in Banking and the Financial Industry. By enabling computations on encrypted data, FHE safeguards privacy against both conventional and quantum computing threats.
 
@@ -287,7 +286,7 @@ The Quantum Computing era is approaching. Banks must proactively assess their en
 [fhe]: https://cloudcdn.pro/stocks/diagrams/fhe_algorithm_diagram.webp "FHE Architecture"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

@@ -87,7 +87,7 @@ excerpt: "A new paper suggests Shor's algorithm could run on as few as 10,000 qu
 last_reviewed: "2026-05-11"
 ---
 
-# Quantum Thresholds Are Moving Again
+## Quantum Thresholds Are Moving Again
 
 A new paper suggests Shor's algorithm could run on as few as 10,000 qubits. The threshold for cryptographically relevant quantum computing is dropping faster than most had assumed.
 
@@ -159,7 +159,7 @@ The implications of this research are not uniform across sectors. The appropriat
 
 ### Financial Services and FinTech
 
-Financial institutions face a compounded risk: they hold long-lived sensitive data, operate on infrastructure with slow replacement cycles, and are subject to increasing regulatory scrutiny around cryptographic resilience. ECC is widely used in TLS connections, mobile authentication, and digital signatures across payment rails. The cryptographic category the paper identifies as most vulnerable at lower qubit counts. Institutions that have not yet begun a cryptographic inventory or initiated a post-quantum migration roadmap should treat this paper as a prompt to accelerate, not a reason to panic. CRYSTALS-Kyber and CRYSTALS-Dilithium, both now standardised by NIST, are the appropriate migration targets for key encapsulation and digital signatures respectively.
+Financial institutions face a compounded risk: they hold long-lived sensitive data, operate on infrastructure with slow replacement cycles, and are subject to increasing regulatory scrutiny around cryptographic resilience. ECC is widely used in TLS connections, mobile authentication, and digital signatures across payment rails. The cryptographic category the paper identifies as most vulnerable at lower qubit counts. Institutions that have not yet begun a cryptographic inventory or initiated a post-quantum migration roadmap should treat this paper as a prompt to accelerate, not a reason to panic. [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) and CRYSTALS-Dilithium, both now standardised by NIST, are the appropriate migration targets for key encapsulation and digital signatures respectively.
 
 ### Government and Defence
 
@@ -208,7 +208,7 @@ CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age").
 - Phys.org, (2026). [Useful quantum computers could be built with as few as 10,000 qubits ⧉](https://phys.org/news/2026-04-quantum-built-qubits-team.html "Useful quantum computers could be built with as few as 10,000 qubits"). Phys.org.
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

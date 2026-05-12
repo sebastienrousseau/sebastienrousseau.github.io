@@ -113,18 +113,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering.
->
-> **Key takeaways:**
->
-> - **Idea.** The idea for 2024 is centred around harnessing the transformative power of AI to address some of the most pressing challenges and seize new opportunities across various industries.
-> - **Impact.** The impact of AI in 2024 is expected to be profound and multifaceted, affecting every aspect of business, society, and daily life.
-> - **Incentive.** The incentives for embracing AI in 2024 are both compelling and diverse, cutting across various industries and sectors.
-> - **Exploring AI's Revolutionary Role in 2024: From Business Strategies to Ethical Considerations.** As 2024 approaches, artificial intelligence (AI) is revolutionising technology and its applications in everyday life.
->
-> **Related reading:** [AI Prompt Engineering 2024: Techniques That Work](https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html), [State of AI and Quantum Computing in Banking: A 2023 Review](https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html), [Generative AI in 2023: How It Works, Where It Lands](https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Idea.</strong> The idea for 2024 is centred around harnessing the transformative power of AI to address some of the most pressing challenges and seize new opportunities across various industries.</li>
+  <li><strong>Impact.</strong> The impact of AI in 2024 is expected to be profound and multifaceted, affecting every aspect of business, society, and daily life.</li>
+  <li><strong>Incentive.</strong> The incentives for embracing AI in 2024 are both compelling and diverse, cutting across various industries and sectors.</li>
+  <li><strong>Exploring AI's Revolutionary Role in 2024: From Business Strategies to Ethical Considerations.</strong> As 2024 approaches, artificial intelligence (AI) is revolutionising technology and its applications in everyday life.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>, <a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a>, <a href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html">Generative AI in 2023: How It Works, Where It Lands</a>.</p>
+</aside>
 <!-- lead-end -->
 As we enter the year 2024, AI redefines technology, society, and daily life. This era is not merely about technological evolution; it's a transformational journey where AI is emerging as a critical driver of strategic decision-making, societal reform, and scientific innovation.
 
@@ -278,7 +277,7 @@ In conclusion, 2024 is poised to be a year where AI not only continues to evolve
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

@@ -111,16 +111,16 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Gemini 1.5 from Google scales context windows past 1M tokens. What that unlocks for retrieval-augmented finance and the trade-offs worth knowing.
->
-> **Key takeaways:**
->
-> - **The Evolution of Gemini: From 1.0 to 1.5.** Gemini 1.5 is built on a new version of the Mixture of Experts (MoE) architecture, enhancing its ability to selectively activate the most relevant pathways in its neural network.
-> - **Revolutionary Use Cases and Future Implications.** The advancements in Gemini 1.5 unlock a plethora of applications across sectors such as technology, education, and the creative arts.
-> - **Ethical Considerations and Responsible Development.** The rapid advancement of language models like Gemini 1.5 raises important questions around ethical implications.
-> - **Breakthrough in Efficiency and Quality.** Gemini 1.5 achieves comparable quality to the previous Ultra version while significantly reducing the computational resources required.
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Gemini 1.5 from Google scales context windows past 1M tokens. What that unlocks for retrieval-augmented finance and the trade-offs worth knowing.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>The Evolution of Gemini: From 1.0 to 1.5.</strong> Gemini 1.5 is built on a new version of the Mixture of Experts (MoE) architecture, enhancing its ability to selectively activate the most relevant pathways in its neural network.</li>
+  <li><strong>Revolutionary Use Cases and Future Implications.</strong> The advancements in Gemini 1.5 unlock a plethora of applications across sectors such as technology, education, and the creative arts.</li>
+  <li><strong>Ethical Considerations and Responsible Development.</strong> The rapid advancement of language models like Gemini 1.5 raises important questions around ethical implications.</li>
+  <li><strong>Breakthrough in Efficiency and Quality.</strong> Gemini 1.5 achieves comparable quality to the previous Ultra version while significantly reducing the computational resources required.</li>
+</ul>
+</aside>
 <!-- lead-end -->
 [**Google's Gemini 1.5 ⧉**][00] marks a significant advancement in AI, improving efficiency and the ability to process large amounts of information. This language model outperforms its predecessor, Gemini 1.0, and brings a new era of computational power and AI model usage. Let's explore the transformative potential of Gemini 1.5 and its implications for the future of AI innovation.
 
@@ -156,5 +156,5 @@ Gemini 1.5 marks a significant advancement in AI technology. It improves efficie
 [01]: https://deepmind.google/technologies/gemini/#introduction "Gemini - Google DeepMind"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <!-- enrich-end -->

@@ -103,18 +103,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security.
->
-> **Key takeaways:**
->
-> - **Idea.** The [Common (CMN) library][00] is designed to give developers precise, straightforward access to the constants they need, packaged in a Rust-compatible format, ensuring easy integration and understanding.
-> - **Impact.** The Common (CMN) library provides Rust developers with a wide range of accurate mathematical and cryptographic constants.
-> - **Incentives.** For Rust applications that depend on mathematical or cryptographic constants, the Common (CMN) library is an invaluable resource.
-> - **The Foundation of Secure Communication.** Mathematics provides constants that are the cornerstones of technology and secure communication.
->
-> **Related reading:** [Efficient Date and Time Management with DateTime (DTT)](https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html), [KyberLib: Rust CRYSTALS-Kyber for Post-Quantum](https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html), [CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age](https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Idea.</strong> The Common (CMN) library is designed to give developers precise, straightforward access to the constants they need, packaged in a Rust-compatible format, ensuring easy integration and understanding.</li>
+  <li><strong>Impact.</strong> The Common (CMN) library provides Rust developers with a wide range of accurate mathematical and cryptographic constants.</li>
+  <li><strong>Incentives.</strong> For Rust applications that depend on mathematical or cryptographic constants, the Common (CMN) library is an invaluable resource.</li>
+  <li><strong>The Foundation of Secure Communication.</strong> Mathematics provides constants that are the cornerstones of technology and secure communication.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html">Efficient Date and Time Management with DateTime (DTT)</a>, <a href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html">KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>.</p>
+</aside>
 <!-- lead-end -->
 ![Giant white pillars](https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp).class=\"img-fluid clearfix\"
 
@@ -187,7 +186,7 @@ Developers requiring mathematical or cryptographic constants in Rust should look
 [02]: https://github.com/sebastienrousseau/cmn "The Common (CMN) library GitHub repository"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

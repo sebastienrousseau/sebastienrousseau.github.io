@@ -103,18 +103,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.
->
-> **Key takeaways:**
->
-> - **Idea.** [LibMake ⧉][00] is a code generator tool designed to quickly help creating high-quality Rust libraries by generating a set of pre-filled and pre-defined templated files.
-> - **Impact.** LibMake reduces the time and effort required to develop Rust libraries by automating code generation and other tasks.
-> - **Incentives.** LibMake can help developers enforce best practises by providing a set of pre-defined templates that follow these practises.
-> - **Challenges of Rust Library Development.** Developing Rust libraries can be a challenging task, especially for beginners.
->
-> **Related reading:** [RustLogs (RLG): Structured Logging Library for Rust](https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html), [The making of the Express Transaction Credits Platform](https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html), [Alien Studio: My Tech-to Art Journey in Photography](https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Idea.</strong> LibMake ⧉ is a code generator tool designed to quickly help creating high-quality Rust libraries by generating a set of pre-filled and pre-defined templated files.</li>
+  <li><strong>Impact.</strong> LibMake reduces the time and effort required to develop Rust libraries by automating code generation and other tasks.</li>
+  <li><strong>Incentives.</strong> LibMake can help developers enforce best practises by providing a set of pre-defined templates that follow these practises.</li>
+  <li><strong>Challenges of Rust Library Development.</strong> Developing Rust libraries can be a challenging task, especially for beginners.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): Structured Logging Library for Rust</a>, <a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html">The making of the Express Transaction Credits Platform</a>, <a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html">Alien Studio: My Tech-to Art Journey in Photography</a>.</p>
+</aside>
 <!-- lead-end -->
 ![Giant white pillars](https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp).class=\"img-fluid clearfix\"
 
@@ -196,7 +195,7 @@ If you are a developer, I encourage you to try [LibMake ⧉][00] to see how it c
 [00]: https://github.com/sebastienrousseau/libmake "LibMake: A code generator to reduce repetitive tasks and build high-quality Rust libraries"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

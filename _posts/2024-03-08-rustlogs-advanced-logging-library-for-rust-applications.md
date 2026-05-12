@@ -111,18 +111,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. 
->
-> **Key takeaways:**
->
-> - **1. Understanding the Need for Effective Logging.** Before delving into the specifics of RustLogs (RLG), let's take a moment to understand why effective logging is essential in software development.
-> - **2. RustLogs (RLG): A Comprehensive Logging Library.** RustLogs (RLG) is a feature-rich logging library that aims to simplify and streamline the process of adding logging capabilities to Rust applications.
-> - **3. Getting Started with RustLogs (RLG).** To start using RustLogs (RLG) in your Rust project, you need to add it as a dependency in your Cargo.toml file.
-> - **4. Asynchronous Logging with RustLogs (RLG).** One of the standout features of RustLogs (RLG) is its support for asynchronous logging.
->
-> **Related reading:** [Streamlining Rust Library Development with Code Generation](https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html), [The making of the Express Transaction Credits Platform](https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html), [Google Gemma AI: Transforming Open-Source AI Development](https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. </p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>1. Understanding the Need for Effective Logging.</strong> Before delving into the specifics of RustLogs (RLG), let's take a moment to understand why effective logging is essential in software development.</li>
+  <li><strong>2. RustLogs (RLG): A Comprehensive Logging Library.</strong> RustLogs (RLG) is a feature-rich logging library that aims to simplify and streamline the process of adding logging capabilities to Rust applications.</li>
+  <li><strong>3. Getting Started with RustLogs (RLG).</strong> To start using RustLogs (RLG) in your Rust project, you need to add it as a dependency in your Cargo.toml file.</li>
+  <li><strong>4. Asynchronous Logging with RustLogs (RLG).</strong> One of the standout features of RustLogs (RLG) is its support for asynchronous logging.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html">Streamlining Rust Library Development with Code Generation</a>, <a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html">The making of the Express Transaction Credits Platform</a>, <a href="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html">Google Gemma AI: Transforming Open-Source AI Development</a>.</p>
+</aside>
 <!-- lead-end -->
 ## Introduction
 
@@ -339,7 +338,7 @@ As the Rust community continues to grow and evolve, RustLogs aims to become a vi
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

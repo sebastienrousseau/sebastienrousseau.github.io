@@ -103,18 +103,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.
->
-> **Key takeaways:**
->
-> - **Understanding Quantum Key Distribution (QKD).** QKD is a method of creating a secure communication channel using the principles of quantum mechanics.
-> - **The Secret Sauce of QKD: Entanglement.** At the core of QKD is entanglement, a quantum phenomenon in which two particles are inextricably linked, forming an unbreakable bond regardless of distance.
-> - **The Unpredictability of Quantum States: Further Security Reinforcement.** The unpredictability of quantum states further reinforces the security of QKD.
-> - **The Significance of QKD for the Banking and Financial Industry.** The application of QKD in the banking and financial industry is far-reaching.
->
-> **Related reading:** [State of AI and Quantum Computing in Banking: A 2023 Review](https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html), [CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age](https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html), [Revolutionising Finance with AI-Enhanced Quantum Algorithms](https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Understanding Quantum Key Distribution (QKD).</strong> QKD is a method of creating a secure communication channel using the principles of quantum mechanics.</li>
+  <li><strong>The Secret Sauce of QKD: Entanglement.</strong> At the core of QKD is entanglement, a quantum phenomenon in which two particles are inextricably linked, forming an unbreakable bond regardless of distance.</li>
+  <li><strong>The Unpredictability of Quantum States: Further Security Reinforcement.</strong> The unpredictability of quantum states further reinforces the security of QKD.</li>
+  <li><strong>The Significance of QKD for the Banking and Financial Industry.</strong> The application of QKD in the banking and financial industry is far-reaching.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>, <a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a>.</p>
+</aside>
 <!-- lead-end -->
 ![HSBC From the Docks][00].class=\"img-fluid clearfix fade-in\"
 
@@ -186,7 +185,7 @@ By embracing QKD, HSBC has set a new benchmark in financial cybersecurity, pavin
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

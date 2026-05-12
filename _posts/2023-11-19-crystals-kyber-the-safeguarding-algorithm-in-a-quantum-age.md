@@ -103,18 +103,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.
->
-> **Key takeaways:**
->
-> - **Idea.** At the core of CRYSTALS-Kyber's groundbreaking design lies its innovative approach to key encapsulation, a critical component of secure communication.
-> - **Impact.** The banking and financial services industry is in a constant race to stay ahead of increasingly sophisticated cyber threats.
-> - **Incentives.** In a landscape where cybersecurity is not just a necessity but a competitive differentiator, the banking and financial services industry stands at a critical juncture.
-> - **Navigating the Quantum Threat: The Genesis of CRYSTALS-Kyber.** In my previous article, [Protecting Data in the Quantum Age ⧉][03], I delved into the impending threat of quantum computing to digital security and looked at how quantum-resistant cryptography (QRC) can address it.
->
-> **Related reading:** [Quantum Key Distribution Revolutionising Security in Banking](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html), [Revolutionising Finance with AI-Enhanced Quantum Algorithms](https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html), [State of AI and Quantum Computing in Banking: A 2023 Review](https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Idea.</strong> At the core of CRYSTALS-Kyber's groundbreaking design lies its innovative approach to key encapsulation, a critical component of secure communication.</li>
+  <li><strong>Impact.</strong> The banking and financial services industry is in a constant race to stay ahead of increasingly sophisticated cyber threats.</li>
+  <li><strong>Incentives.</strong> In a landscape where cybersecurity is not just a necessity but a competitive differentiator, the banking and financial services industry stands at a critical juncture.</li>
+  <li><strong>Navigating the Quantum Threat: The Genesis of CRYSTALS-Kyber.</strong> In my previous article, Protecting Data in the Quantum Age ⧉, I delved into the impending threat of quantum computing to digital security and looked at how quantum-resistant cryptography (QRC) can address it.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>, <a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a>, <a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a>.</p>
+</aside>
 <!-- lead-end -->
 ![AI, Artificial Intelligence concept,3d rendering,conceptual image](https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp).class=\"img-fluid clearfix\"
 
@@ -270,7 +269,7 @@ Thank you again for your time and I look forward to hearing from you.
 [05]: https://www.nist.gov/ "The National Institute of Standards and Technology (NIST)"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

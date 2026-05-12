@@ -96,7 +96,12 @@ def fm_set(fm_lines: list[str], key: str, value: str) -> list[str]:
 def strip_md(s: str) -> str:
     s = re.sub(r"\*\*(.+?)\*\*", r"\1", s)
     s = re.sub(r"\*(.+?)\*", r"\1", s)
+    # Inline links: [text](url) -> text
     s = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", s)
+    # Reference-style links: [text][ref] -> text. Without this, the new HTML
+    # lead block ends up with literal "[Rust ⧉][06]" text because the markdown
+    # processor doesn't see inside the raw <aside>.
+    s = re.sub(r"\[([^\]]+)\]\[[^\]]+\]", r"\1", s)
     s = re.sub(r"`([^`]+)`", r"\1", s)
     return s
 
@@ -220,24 +225,45 @@ def post_url(post: dict) -> str:
 
 
 def build_lead(excerpt: str, takeaways: list[str], related: list[dict]) -> str:
-    parts: list[str] = ["", LEAD_START, ""]
-    parts.append(f"> **TL;DR.** {excerpt}")
+    # Render the lead as an HTML <aside class="post-lead"> rather than a
+    # markdown blockquote. The unique CSS class is the anchor for Schema.org
+    # SpeakableSpecification (so voice assistants + AI Overviews know the
+    # canonical block to quote) and gives us a stable styling hook.
+    parts: list[str] = ["", LEAD_START, '<aside class="post-lead" aria-label="Article summary">']
+    parts.append(f'<p class="post-lead-tldr"><strong>TL;DR.</strong> {md_inline_to_html(excerpt)}</p>')
     if takeaways:
-        parts.append(">")
-        parts.append("> **Key takeaways:**")
-        parts.append(">")
+        parts.append('<p class="post-lead-heading"><strong>Key takeaways</strong></p>')
+        parts.append('<ul class="post-lead-takeaways">')
         for t in takeaways:
-            parts.append(f"> - {t}")
+            parts.append(f"  <li>{md_inline_to_html(t)}</li>")
+        parts.append('</ul>')
     if related:
-        parts.append(">")
         links = ", ".join(
-            f"[{strip_md(r['title'])}]({post_url(r)})" for r in related
+            f'<a href="{post_url(r)}">{md_inline_to_html(strip_md(r["title"]))}</a>'
+            for r in related
         )
-        parts.append(f"> **Related reading:** {links}.")
-    parts.append("")
+        parts.append(f'<p class="post-lead-related"><strong>Related reading:</strong> {links}.</p>')
+    parts.append('</aside>')
     parts.append(LEAD_END)
     parts.append("")
     return "\n".join(parts)
+
+
+def md_inline_to_html(text: str) -> str:
+    """Convert the inline-markdown subset we use in lead content (bold, italic,
+    inline-code, links) to HTML. Lead is rendered as raw HTML now, so the
+    markdown processor won't see it.
+    """
+    # Links: [text](url) — do this first so the URL contents don't trip the
+    # other patterns.
+    text = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', text)
+    # Bold: **text**
+    text = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', text)
+    # Italic: *text*  (avoid eating bold by requiring the prior ** to be gone)
+    text = re.sub(r'(?<!\*)\*([^*\n]+)\*(?!\*)', r'<em>\1</em>', text)
+    # Inline code: `text`
+    text = re.sub(r'`([^`]+)`', r'<code>\1</code>', text)
+    return text
 
 
 # ---------------------------------------------------------------------------

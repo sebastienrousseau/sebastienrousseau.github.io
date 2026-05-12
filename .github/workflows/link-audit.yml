@@ -1,0 +1,78 @@
+name: Monthly external link audit
+
+# Catches link rot. Runs the in-repo audit on the deployed `docs/` tree and
+# files a tracking issue if any external links break. The audit script
+# already filters bot-blocked false positives.
+
+on:
+  schedule:
+    # First day of every month at 06:00 UTC.
+    - cron: "0 6 1 * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  audit:
+    name: Audit external links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run external link audit
+        id: audit
+        run: |
+          set -o pipefail
+          python3 scripts/audit_links.py --base-dir docs --check-external \
+            | tee audit-report.txt
+          broken=$(grep -c '^  \[' audit-report.txt || true)
+          echo "broken=${broken}" >> "$GITHUB_OUTPUT"
+
+      - name: File / update tracking issue
+        if: steps.audit.outputs.broken != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          DATE=$(date -u +%Y-%m-%d)
+          TITLE="External link audit — ${DATE} — ${{ steps.audit.outputs.broken }} broken"
+          BODY=$(cat <<'EOF'
+          Automated monthly run of `scripts/audit_links.py --check-external`.
+
+          Triage rules:
+          - **404 / 526 / `URLError`** — almost always real link rot. Replace with a Wayback wildcard URL, an alternative source, or remove the link.
+          - **403** — bot-block on the target (OpenAI, some news sites). Usually the link is alive to humans. Verify in a real browser before changing.
+          - **bare `https://www.googletagmanager.com`** matches inside CSP directives, never as a clickable link → false positive, ignore.
+
+          ---
+
+          Audit output:
+
+          ```
+          EOF
+          )
+          # Append the captured audit-report.txt then close the fence.
+          {
+            printf '%s\n' "${BODY}"
+            cat audit-report.txt
+            printf '```\n'
+          } > issue-body.md
+
+          gh issue create \
+            --title "${TITLE}" \
+            --body-file issue-body.md \
+            --label "link-rot,automation"
+
+      - name: Upload audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-audit-${{ github.run_id }}
+          path: audit-report.txt
+          retention-days: 90

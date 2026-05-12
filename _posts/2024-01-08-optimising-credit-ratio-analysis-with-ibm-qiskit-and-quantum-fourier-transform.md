@@ -113,18 +113,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed.
->
-> **Key takeaways:**
->
-> - **Idea.** [IBM Qiskit ⧉][01], an integral tool in the quantum computing landscape, is an open-source software development framework designed for quantum computing.
-> - **Impact.** Credit ratio analysis is a fundamental tool in the banking and financial industry for assessing the financial stability and creditworthiness of entities.
-> - **Incentive.** The practical implementation of [Quantum Fourier Transform (QFT)][02] in credit ratio analysis begins with setting up [IBM Qiskit ⧉][01].
-> - **Quantum Computing in Finance.** Imagine a computational revolution, where information dances at speeds and complexities beyond the grasp of classical computers.
->
-> **Related reading:** [Quantum Key Distribution Revolutionising Security in Banking](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html), [Lucy's Flash Drive Revisited: AI, Quantum & Knowledge](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html), [Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk](https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Idea.</strong> IBM Qiskit ⧉, an integral tool in the quantum computing landscape, is an open-source software development framework designed for quantum computing.</li>
+  <li><strong>Impact.</strong> Credit ratio analysis is a fundamental tool in the banking and financial industry for assessing the financial stability and creditworthiness of entities.</li>
+  <li><strong>Incentive.</strong> The practical implementation of Quantum Fourier Transform (QFT) in credit ratio analysis begins with setting up IBM Qiskit ⧉.</li>
+  <li><strong>Quantum Computing in Finance.</strong> Imagine a computational revolution, where information dances at speeds and complexities beyond the grasp of classical computers.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>, <a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</a>, <a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</a>.</p>
+</aside>
 <!-- lead-end -->
 Imagine a missed loan that could have been predicted. A seemingly low-risk borrower defaults, leaving a bank reeling from unexpected losses. This scenario, once a common pitfall in the world of credit analysis, could soon become a relic of the past thanks to the revolutionary power of quantum computing. By harnessing the principles of the quantum realm, tools like [**IBM Qiskit** ⧉][01] and algorithms like the [**Quantum Fourier Transform (QFT)**][02] are poised to transform credit ratio analysis, bringing unprecedented accuracy and speed to this critical financial practice.
 
@@ -200,7 +199,7 @@ The future of credit analysis is quantum, and the time to explore its possibilit
 [02]: https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html#h4-quantum "Quantum Fourier Transform (QFT)"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

@@ -111,18 +111,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** A new polynomial-time quantum algorithm by Yilei Chen targets lattice-based cryptography. Implications for post-quantum standards including CRYSTALS-Kyber.
->
-> **Key takeaways:**
->
-> - **Executive Summary.** This article delves into the work of [Yilei Chen ⧉][00], who has developed a polynomial-time quantum algorithm that could significantly impact the hardness of the Learning With Errors (LWE) mathematical problem, a…
-> - **Chen's Polynomial-Time Quantum Algorithm.** Chen's algorithm offers a solution to the decisional shortest vector problem (GapSVP) and shortest independent vector problem (SIVP) for lattices of any dimension.
-> - **Introduction to Lattice Problems and Their Significance in Cryptography.** Lattice problems involve the study of mathematical structures called lattices, which are discrete subgroups of n-dimensional Euclidean space.
-> - **Classical Algorithms for Lattice Problems and Their Limitations.** Classical algorithms for solving lattice problems, such as the Lenstra-Lenstra-Lovász (LLL) algorithm and its variants, have been extensively studied in the field of cryptography.
->
-> **Related reading:** [State of AI and Quantum Computing in Banking: A 2023 Review](https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html), [Quantum Key Distribution Revolutionising Security in Banking](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html), [AI Trends 2024: Insights and Predictions for the Future](https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> A new polynomial-time quantum algorithm by Yilei Chen targets lattice-based cryptography. Implications for post-quantum standards including CRYSTALS-Kyber.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Executive Summary.</strong> This article delves into the work of Yilei Chen ⧉, who has developed a polynomial-time quantum algorithm that could significantly impact the hardness of the Learning With Errors (LWE) mathematical problem, a…</li>
+  <li><strong>Chen's Polynomial-Time Quantum Algorithm.</strong> Chen's algorithm offers a solution to the decisional shortest vector problem (GapSVP) and shortest independent vector problem (SIVP) for lattices of any dimension.</li>
+  <li><strong>Introduction to Lattice Problems and Their Significance in Cryptography.</strong> Lattice problems involve the study of mathematical structures called lattices, which are discrete subgroups of n-dimensional Euclidean space.</li>
+  <li><strong>Classical Algorithms for Lattice Problems and Their Limitations.</strong> Classical algorithms for solving lattice problems, such as the Lenstra-Lenstra-Lovász (LLL) algorithm and its variants, have been extensively studied in the field of cryptography.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a>, <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>, <a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">AI Trends 2024: Insights and Predictions for the Future</a>.</p>
+</aside>
 <!-- lead-end -->
 ## Executive Summary
 
@@ -217,7 +216,7 @@ Kuperberg, G. (2005). [**A subexponential-time quantum algorithm for the dihedra
 [02]: https://arxiv.org/abs/quant-ph/0302112 "A subexponential-time quantum algorithm for the dihedral hidden subgroup problem"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">

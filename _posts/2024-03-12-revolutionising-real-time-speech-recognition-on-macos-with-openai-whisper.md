@@ -111,18 +111,17 @@ last_reviewed: "2026-05-11"
 
 
 <!-- lead-start -->
-
-> **TL;DR.** Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.
->
-> **Key takeaways:**
->
-> - **1. The Evolution of Speech Recognition on macOS.** The evolution of speech recognition technology on macOS devices has been driven by advancements in neural network models and hardware acceleration technologies.
-> - **2. Harnessing OpenAI Whisper and Metal Performance Shaders.** The research paper unveils an innovative approach by combining the advanced capabilities of OpenAI Whisper with the high-performance computation of MPS on macOS.
-> - **3. Implications for Users and Developers.** The integration of Whisper and MPS on macOS has significant implications for both end-users and application developers.
-> - **4. Driving Adoption and Innovation.** The modular architecture and Python implementation of this system facilitate integration into existing applications and lower the barrier to entry for developers looking to incorporate speech recognition capabilities.
->
-> **Related reading:** [Àkàndé: GPT-Powered Voice Assistant for Executives](https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html), [Google Gemma AI: Transforming Open-Source AI Development](https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html), [AI-Powered Speech Analysis, Translation, & Insight Tool](https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html).
-
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>1. The Evolution of Speech Recognition on macOS.</strong> The evolution of speech recognition technology on macOS devices has been driven by advancements in neural network models and hardware acceleration technologies.</li>
+  <li><strong>2. Harnessing OpenAI Whisper and Metal Performance Shaders.</strong> The research paper unveils an innovative approach by combining the advanced capabilities of OpenAI Whisper with the high-performance computation of MPS on macOS.</li>
+  <li><strong>3. Implications for Users and Developers.</strong> The integration of Whisper and MPS on macOS has significant implications for both end-users and application developers.</li>
+  <li><strong>4. Driving Adoption and Innovation.</strong> The modular architecture and Python implementation of this system facilitate integration into existing applications and lower the barrier to entry for developers looking to incorporate speech recognition capabilities.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html">Àkàndé: GPT-Powered Voice Assistant for Executives</a>, <a href="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html">Google Gemma AI: Transforming Open-Source AI Development</a>, <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI-Powered Speech Analysis, Translation, & Insight Tool</a>.</p>
+</aside>
 <!-- lead-end -->
 ![Publication Cover](https://cloudcdn.pro/clients/common/images/elements/publication.webp).class=\"float-end w-25 me-10\"
 
@@ -175,7 +174,7 @@ To learn more about the integration of OpenAI Whisper and Metal Performance Shad
 [divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
 
 <!-- enrich-start -->
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-12">2026-05-12</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-13">2026-05-13</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
