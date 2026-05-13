@@ -233,7 +233,7 @@
       main.content h3{margin-top:36px;font-size:clamp(22px,2.4vw,28px)}
       main.content p{font-size:18px;line-height:1.6;margin:0 0 1em;color:var(--ink-soft)}
       main.content a{color:var(--accent)}
-      main.content img{border-radius:14px;margin:32px auto}
+      main.content :is(p,figure) > img{border-radius:14px;margin:32px auto}
       main.content figure{margin:32px 0}
       main.content blockquote{border-left:4px solid var(--accent);margin:32px 0;padding:8px 0 8px 20px;color:var(--ink-mute);font-style:italic}
       main.content pre{background:var(--bg-alt);border-radius:12px;padding:18px 22px;overflow:auto;font-size:14px;line-height:1.5;margin:24px 0}
