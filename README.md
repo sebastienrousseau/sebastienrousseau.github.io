@@ -1,43 +1,54 @@
-# SebastienRousseau.com - Official Website 🌏
+# SebastienRousseau.com — Official Website 🌏
 
-Welcome to the repository for
-[sebastienrousseau.com](https://sebastienrousseau.com), the digital presence of
-[**Sebastien Rousseau**](https://github.com/sebastienrousseau).
+Source for [sebastienrousseau.com](https://sebastienrousseau.com), the
+digital home of
+[**Sebastien Rousseau**](https://github.com/sebastienrousseau) —
+applied AI, ISO 20022 migration, post-quantum cryptography, and the
+structural transformation of wholesale payments.
 
-Dive deep into explorations and applications of Artificial Intelligence (AI),
-Post-Quantum Cryptography (PQC), and Blockchain technology, all tailored to
-craft the future of banking and financial services.
+Built with [Shokunin SSG][00] (Rust) and a Python postbuild pipeline.
 
-## Quick Start Guide
+## Quick start
 
-Setting up and running the website locally is easy and quick with the
-[Shokunin Static Site Generator (SSG)][00].
-
-### Prerequisites
-
-Ensure you have the **Rust toolchain** installed. If not, follow the guide on
-the [Rust website][01] to set it up.
-
-### Installation & Usage
-
-1. Install Shokunin SSG:
+Prerequisites: **Rust toolchain** (for `ssg`) and **Python 3.11+**
+(for the postbuild scripts and `markdown-it-py`).
 
 ```shell
 cargo install ssg
-```
-
-2. Clone the repository
-
-```shell
 git clone https://github.com/sebastienrousseau/sebastienrousseau.github.io.git
+cd sebastienrousseau.github.io
+./build.sh           # build the site into public/ and mirror to docs/
+./build.sh --serve   # build + serve on http://127.0.0.1:8000
 ```
 
-3. Generate the static site for sebastienrousseau.com
+## Pipeline
+
+`build.sh` chains:
+
+1. `ssg` — render English Markdown in `_posts/` → `public/`.
+2. `scripts/build_topics.py` — five thematic hubs + `/topics/` index.
+3. `scripts/build_translations.py` — manual French translations from
+   `_posts/fr/*.md` → `public/fr/<fr-slug>/`. Slugs come from
+   `scripts/_fr_slugs.py`, the canonical EN ↔ FR slug map.
+4. `scripts/build_fr_feeds.py` — `/fr/rss.xml`, `/fr/atom.xml`,
+   `/fr/news-sitemap.xml` for the French edition.
+5. `scripts/build_agent_api.py` — JSON endpoints for AI agents at
+   `/api/v1/`.
+6. `scripts/postbuild.py` — real SRI hashes, CSP JSON-LD hashes,
+   tag badges, prev/next nav, reciprocal hreflang, sitemap splice,
+   `robots.txt`, `llms.txt`.
+
+## Quality gates
 
 ```shell
-ssg -n=docs -c=_posts -t=_layouts -o=output -s=public
+ruff check scripts/                    # Python lint
+python3 scripts/validate_jsonld.py     # JSON-LD + XML feed validity
+python3 scripts/audit_links.py         # internal-link 404 audit
 ```
 
+## French translations
+
+See [`_posts/fr/README.md`](_posts/fr/README.md) for the manual French
+translation workflow and the slug-map convention.
 
 [00]: https://shokunin.one "Shokunin Static Site Generator"
-[01]: https://www.rust-lang.org/learn/get-started "Rust"

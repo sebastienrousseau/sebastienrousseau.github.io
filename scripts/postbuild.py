@@ -20,7 +20,9 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _fr_slugs import EN_TO_FR, FR_TO_EN, en_slug as _en_slug, fr_slug as _fr_slug  # noqa: E402
+from _fr_slugs import EN_TO_FR, FR_TO_EN
+from _fr_slugs import en_slug as _en_slug
+from _fr_slugs import fr_slug as _fr_slug
 
 PUBLIC = Path("public")
 
@@ -894,25 +896,50 @@ def refresh_sitemap_lastmod(sitemap_path: Path, index: dict[str, str]) -> int:
 
 
 def _splice_fr_urls(xml: str, lastmod_index: dict[str, str]) -> str:
-    """Add <url> blocks for every FR translation + the FR hub if missing."""
+    """Ensure the sitemap contains every EN + FR article + the static
+    landing pages. Shokunin's sitemap.xml ships empty (regression) so we
+    repopulate it from authoritative sources here:
+
+    * EN dated posts → ``_posts/*.md`` stems
+    * FR dated posts → :data:`EN_TO_FR` values
+    * Static pages   → known top-level dirs in ``public/``
+    """
     base = "https://sebastienrousseau.com"
     new_blocks: list[str] = []
     seen = set(_loc_re.findall(xml))
-    # FR hub
-    hub_url = f"{base}/fr/"
-    if hub_url not in seen and f"{base}/fr" not in seen and f"{base}/fr/index.html" not in seen:
-        new_blocks.append(
-            f"<url>\n  <loc>{hub_url}</loc>\n  <changefreq>weekly</changefreq>\n  <priority>0.8</priority>\n</url>"
-        )
-    for en, fr in EN_TO_FR.items():
-        url = f"{base}/fr/{fr}/"
+
+    def _add(url: str, priority: str, changefreq: str, lastmod: str = "") -> None:
         if url in seen:
-            continue
-        lastmod = lastmod_index.get(en, "")
+            return
+        seen.add(url)
         lm_line = f"\n  <lastmod>{lastmod}</lastmod>" if lastmod else ""
         new_blocks.append(
-            f"<url>\n  <loc>{url}</loc>{lm_line}\n  <changefreq>monthly</changefreq>\n  <priority>0.7</priority>\n</url>"
+            f"<url>\n  <loc>{url}</loc>{lm_line}\n"
+            f"  <changefreq>{changefreq}</changefreq>\n"
+            f"  <priority>{priority}</priority>\n</url>"
         )
+
+    # Landing + static pages
+    _add(f"{base}/", "1.0", "daily")
+    for slug in (
+        "about", "articles", "papers", "projects", "topics", "tags",
+        "playlists", "contact", "accessibility", "privacy", "terms",
+        "made-with-shokunin", "made-with-static-site-generator",
+    ):
+        _add(f"{base}/{slug}/", "0.6", "monthly")
+
+    # EN dated posts
+    if POSTS_DIR.is_dir():
+        for md in sorted(POSTS_DIR.glob("2*.md")):
+            stem = md.stem
+            lastmod = lastmod_index.get(stem, "")
+            _add(f"{base}/{stem}/", "0.8", "weekly", lastmod)
+
+    # FR hub + FR dated posts
+    _add(f"{base}/fr/", "0.8", "weekly")
+    for en, fr in EN_TO_FR.items():
+        _add(f"{base}/fr/{fr}/", "0.7", "monthly", lastmod_index.get(en, ""))
+
     if not new_blocks:
         return xml
     insertion = "\n" + "\n".join(new_blocks) + "\n"

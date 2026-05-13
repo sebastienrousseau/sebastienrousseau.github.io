@@ -34,7 +34,7 @@ from pathlib import Path
 from markdown_it import MarkdownIt
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _fr_slugs import EN_TO_FR, FR_TO_EN, en_slug as _en_slug, fr_slug  # noqa: E402
+from _fr_slugs import EN_TO_FR, FR_TO_EN, fr_slug
 
 PUBLIC = Path("public")
 SRC = Path("_posts/fr")

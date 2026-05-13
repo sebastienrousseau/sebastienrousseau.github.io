@@ -21,14 +21,13 @@ hash treatment if needed, and so robots.txt picks them up).
 """
 from __future__ import annotations
 
-import html as _html
 import re
 import sys
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _fr_slugs import EN_TO_FR, FR_TO_EN  # noqa: E402
+from _fr_slugs import EN_TO_FR, FR_TO_EN
 
 PUBLIC = Path("public")
 SRC = Path("_posts/fr")
@@ -70,7 +69,7 @@ def parse_date(s: str) -> datetime:
     to a tz-aware UTC datetime at 06:06:06 (mirrors Shokunin's RSS time)."""
     s = (s or "").strip()
     if not s:
-        return datetime.now(tz=timezone.utc)
+        return datetime.now(tz=UTC)
     # Try ISO first
     try:
         d = datetime.strptime(s, "%Y-%m-%d")
@@ -93,8 +92,8 @@ def parse_date(s: str) -> datetime:
             if month:
                 d = datetime(int(m.group(3)), month, int(m.group(2)))
     if d is None:
-        return datetime.now(tz=timezone.utc)
-    return d.replace(hour=6, minute=6, second=6, tzinfo=timezone.utc)
+        return datetime.now(tz=UTC)
+    return d.replace(hour=6, minute=6, second=6, tzinfo=UTC)
 
 
 def collect_entries() -> list[dict[str, object]]:
@@ -147,7 +146,7 @@ def iso8601(d: datetime) -> str:
 
 
 def render_rss(entries: list[dict[str, object]]) -> str:
-    today = datetime.now(tz=timezone.utc)
+    today = datetime.now(tz=UTC)
     parts: list[str] = []
     parts.append('<?xml version="1.0" encoding="UTF-8"?>')
     parts.append('<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">')
@@ -181,7 +180,7 @@ def render_rss(entries: list[dict[str, object]]) -> str:
 
 
 def render_atom(entries: list[dict[str, object]]) -> str:
-    today = datetime.now(tz=timezone.utc)
+    today = datetime.now(tz=UTC)
     parts: list[str] = []
     parts.append('<?xml version="1.0" encoding="UTF-8"?>')
     parts.append('<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fr-FR">')

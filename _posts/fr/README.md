@@ -5,63 +5,83 @@
 
 # French translations
 
-This folder holds manual French translations of dated posts from
-`_posts/`.
+Manual French translations of dated posts from `_posts/`. Published
+at `https://sebastienrousseau.com/fr/<fr-slug>/`.
 
-## Convention
+## Slug map — single source of truth
 
-Mirror the English slug exactly:
+`scripts/_fr_slugs.py` holds the canonical EN ↔ FR slug map. Every
+entry follows the contract:
+
+* **Key** — markdown stem in `_posts/fr/` AND `_posts/`.
+* **Value** — published FR URL slug under `/fr/`.
+
+```python
+EN_TO_FR = {
+    "2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf":
+        "2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act",
+    ...
+}
+```
+
+The build pipeline accepts either form for the markdown filename — EN
+slug (legacy) or FR slug (current convention) — and resolves the
+counterpart via the map.
+
+## File convention
 
 ```
 _posts/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf.md
-_posts/fr/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf.md
+_posts/fr/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act.md
 ```
 
-The build script `scripts/build_translations.py` walks this folder, parses
-each markdown file, and emits `public/fr/{slug}/index.html`. The published
-URL becomes:
+Published URL:
 
 ```
-https://sebastienrousseau.com/fr/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/
+https://sebastienrousseau.com/fr/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/
 ```
 
 ## Frontmatter
 
-Required:
-
 ```yaml
 ---
-title: "Rendement caché : décodage des dépôts BRSRV et BSTBL de BlackRock"
-description: "Sous le GENIUS Act, les stablecoins ne peuvent pas verser de rendement..."
-date: "May 15, 2026"   # keep the English date string — it parses cross-locale
+title: "Rendement caché : décryptage des dépôts BRSRV et BSTBL de BlackRock"
+subtitle: "..."
+description: "..."
+date: "May 15, 2026"   # keep an English month string — parses cross-locale
 language: "fr"
 locale: "fr_FR"
-banner: "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp"
-banner_alt: "Pièces de dollars empilées sous une lumière chaude"
+banner: "https://cloudcdn.pro/stocks/images/..."
+banner_alt: "..."
+keywords: "..., ..."
 ---
 ```
 
-Then the markdown body in French. Same heading hierarchy as the English
-source — the build script doesn't enforce structural parity but readers
-expect it.
+## Build flow
 
-## What the build script does
+1. `scripts/build_translations.py` walks `_posts/fr/*.md`, resolves
+   the EN counterpart via `_fr_slugs.py`, forks the rendered English
+   shell, swaps the body in French, rewrites every internal EN URL to
+   its FR counterpart, localises chrome strings, breadcrumb JSON-LD,
+   feed `<link>` tags, then writes `public/fr/<fr-slug>/index.html`.
+2. `scripts/build_fr_feeds.py` emits `/fr/rss.xml`, `/fr/atom.xml`,
+   `/fr/news-sitemap.xml`.
+3. `scripts/postbuild.py` injects reciprocal hreflang on every paired
+   page, splices the FR URLs into `sitemap.xml`, advertises the FR
+   news-sitemap in `robots.txt`.
 
-1. Reads `_posts/fr/*.md` (skips this README, skips anything not
-   matching `YYYY-MM-DD-slug.md`).
-2. For each translation, locates the rendered English page at
-   `public/{slug}/index.html` and uses it as the shell template.
-3. Replaces the English `<main>` body with the French rendered body.
-4. Patches `<html lang>`, meta tags, og:* tags, JSON-LD `inLanguage`
-   and `headline`, canonical URL.
-5. Writes `public/fr/{slug}/index.html`.
-6. The postbuild pipeline then adds reciprocal hreflang links to BOTH
-   the English original and the French translation, and emits a
-   `/fr/index.html` hub page listing every translated article.
+## Adding a new translation
+
+1. Add the EN → FR slug pair to `scripts/_fr_slugs.py`.
+2. Create `_posts/fr/<fr-slug>.md` with French frontmatter + body.
+3. Run `./build.sh`.
+4. Verify with `python3 scripts/validate_jsonld.py` and
+   `python3 scripts/audit_links.py`.
 
 ## French UI strings
 
-The build script ships a small i18n map (`I18N_FR`) covering the
-furniture labels: Published / Updated / min read / Previous / Next /
-Sources & references / About the author / Topics. Edit
-`scripts/build_translations.py` if you need new ones.
+`scripts/build_translations.py` ships `CHROME_PATCHES` (regex pairs
+that localise nav / footer / search / breadcrumb / aria labels) and
+`I18N_FR` (Published / Updated / Previous / Next / etc.). Postbuild's
+furniture renderers detect `<html lang="fr">` and pick the French
+labels automatically.
