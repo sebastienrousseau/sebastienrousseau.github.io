@@ -237,6 +237,44 @@ _blogposting_image_re = re.compile(
 )
 
 
+# ---------------------------------------------------------------------------
+# 5. wordCount injection into BlogPosting
+# ---------------------------------------------------------------------------
+
+_main_re = re.compile(r'<main\b[^>]*>([\s\S]*?)</main>', re.IGNORECASE)
+_aside_re = re.compile(r'<aside\b[^>]*>([\s\S]*?)</aside>', re.IGNORECASE)
+_html_tag_re = re.compile(r'<[^>]+>')
+_whitespace_re = re.compile(r'\s+')
+
+
+def compute_word_count(html: str) -> int | None:
+    main_m = _main_re.search(html)
+    if not main_m:
+        return None
+    content = main_m.group(1)
+    # Drop asides (lead block, related-cards, etc.) — they're already
+    # represented by speakable + isPartOf and aren't the article body.
+    content = _aside_re.sub('', content)
+    text = _html_tag_re.sub(' ', content)
+    text = _whitespace_re.sub(' ', text).strip()
+    if not text:
+        return None
+    return len(text.split())
+
+
+def inject_word_count(html: str) -> str:
+    n = compute_word_count(html)
+    if not n:
+        return html
+    # Insert "wordCount":N into the BlogPosting object if not already present.
+    return re.sub(
+        r'("@type":"BlogPosting"[^{]*?)("headline":)',
+        rf'\1"wordCount":{n},\2',
+        html,
+        count=1,
+    )
+
+
 def fix_social_image(html: str) -> str:
     m = _blogposting_image_re.search(html)
     if not m:
@@ -270,12 +308,264 @@ def fix_social_image(html: str) -> str:
 # main
 # ---------------------------------------------------------------------------
 
+# ---------------------------------------------------------------------------
+# 6a. robots.txt — explicit AI crawler rules
+# ---------------------------------------------------------------------------
+
+# Default robots.txt that SSG emits is just "User-agent: *" + Sitemap. The
+# spec for major AI crawlers is to keep separate User-agent blocks rather
+# than rely on the wildcard, so each ML team can be addressed independently
+# in future without rewriting the whole file. We allow all AI crawlers
+# because the goal is broad LLM citation; flip any line to `Disallow: /`
+# to opt out of that specific bot.
+ROBOTS_BODY = """User-agent: *
+Allow: /
+
+# Web search + general-purpose crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# AI training + retrieval crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+Sitemap: https://sebastienrousseau.com/sitemap.xml
+Sitemap: https://sebastienrousseau.com/news-sitemap.xml
+"""
+
+
+def write_robots(public: Path) -> bool:
+    target = public / "robots.txt"
+    cur = target.read_text(encoding="utf-8") if target.is_file() else ""
+    if cur.strip() == ROBOTS_BODY.strip():
+        return False
+    target.write_text(ROBOTS_BODY, encoding="utf-8")
+    return True
+
+
+# ---------------------------------------------------------------------------
+# 6b. llms.txt — structured directory for AI crawlers
+# ---------------------------------------------------------------------------
+
+_FM_RE = re.compile(r"^---\s*\n(.*?)\n---", re.DOTALL)
+_FM_FIELD_RE = re.compile(r'^([a-zA-Z_-]+):\s*"?([^"\n]*)"?', re.MULTILINE)
+
+
+def _read_fm(path: Path) -> dict[str, str]:
+    src = path.read_text(encoding="utf-8", errors="ignore")
+    m = _FM_RE.match(src)
+    if not m:
+        return {}
+    fm_text = m.group(1)
+    out: dict[str, str] = {}
+    for fm in _FM_FIELD_RE.finditer(fm_text):
+        out.setdefault(fm.group(1), fm.group(2).strip())
+    return out
+
+
+def build_llms_txt() -> str:
+    site = "https://sebastienrousseau.com"
+    posts: list[dict[str, str]] = []
+    if POSTS_DIR.is_dir():
+        for md in sorted(POSTS_DIR.glob("2*.md"), reverse=True):
+            fm = _read_fm(md)
+            posts.append({
+                "stem": md.stem,
+                "title": fm.get("title", md.stem),
+                "description": fm.get("description", ""),
+                "date": md.name[:10],
+            })
+
+    lines = [
+        "# Sebastien Rousseau",
+        "",
+        "> AI, payments and quantum-safe cryptography for financial services. "
+        "Senior banking technologist writing on applied AI, ISO 20022 migration, "
+        "post-quantum cryptography, and the structural transformation of wholesale payments.",
+        "",
+        "Language: en-GB",
+        "Author: Sebastien Rousseau",
+        "Canonical: https://sebastienrousseau.com/",
+        "",
+        "## About",
+        "",
+        f"- [About the author]({site}/about/index.html): biography, experience, and entity links.",
+        f"- [Contact]({site}/contact/index.html): how to get in touch.",
+        "",
+        "## Topic clusters",
+        "",
+        "- **Payments & ISO 20022.** Migration from MT/MX to structured messages, "
+        "pain.001 + pacs.008 toolkits, cross-border settlement.",
+        "- **Post-quantum cryptography.** CRYSTALS-Kyber, lattice-based schemes, "
+        "Quantum Key Distribution, Shor's algorithm threshold tracking, payment-rail readiness.",
+        "- **Applied AI.** Generative AI for finance, LLM tooling, prompt engineering, "
+        "voice cloning, multimodal model evaluation.",
+        "- **Open source.** Python (pain001, pacs008, Bank Statement Parser), "
+        "Rust (KyberLib, HSH, DTT, libmake, Shokunin SSG, NaluFX, QRC).",
+        "",
+        "## Listings",
+        "",
+        f"- [Articles]({site}/articles/index.html): all dated posts.",
+        f"- [Papers]({site}/papers/index.html): research publications + white papers.",
+        f"- [Projects]({site}/projects/index.html): open-source libraries and tools.",
+        f"- [Playlists]({site}/playlists/index.html): curated Spotify playlists.",
+        f"- [Tags]({site}/tags/index.html): topic index across all posts.",
+        "",
+        "## Recent posts",
+        "",
+    ]
+    for p in posts[:10]:
+        url = f"{site}/{p['stem']}/index.html"
+        desc = p["description"][:200]
+        if desc and not desc.endswith("."):
+            desc += "."
+        lines.append(f"- [{p['title']}]({url}): {desc}")
+    lines.append("")
+    lines.append(f"## All posts ({len(posts)})")
+    lines.append("")
+    for p in posts:
+        url = f"{site}/{p['stem']}/index.html"
+        lines.append(f"- [{p['title']}]({url}) — {p['date']}")
+    lines.append("")
+    return "\n".join(lines)
+
+
+def write_llms_txt(public: Path) -> bool:
+    target = public / "llms.txt"
+    new = build_llms_txt()
+    cur = target.read_text(encoding="utf-8") if target.is_file() else ""
+    if cur.strip() == new.strip():
+        return False
+    target.write_text(new, encoding="utf-8")
+    return True
+
+
+# ---------------------------------------------------------------------------
+# 6. sitemap.xml lastmod refresh
+# ---------------------------------------------------------------------------
+
+POSTS_DIR = Path("_posts")
+_lastmod_block_re = re.compile(
+    r'<url>([\s\S]*?)</url>',
+    re.IGNORECASE,
+)
+_loc_re = re.compile(r'<loc>\s*(https?://[^<]+?)\s*</loc>', re.IGNORECASE)
+_lastmod_re = re.compile(r'<lastmod>\s*([0-9-]+)\s*</lastmod>', re.IGNORECASE)
+_fm_last_reviewed_re = re.compile(r'^last_reviewed:\s*"?([0-9-]+)"?', re.MULTILINE)
+_fm_date_re = re.compile(r'^date:\s*"([^"]+)"', re.MULTILINE)
+_post_stem_from_url_re = re.compile(r'/(\d{4}-\d{2}-\d{2}-[a-z0-9-]+)(?:/(?:index\.html)?)?$')
+
+
+def build_lastmod_index() -> dict[str, str]:
+    """For every dated post in _posts/, build a stem -> last_reviewed map."""
+    out: dict[str, str] = {}
+    if not POSTS_DIR.is_dir():
+        return out
+    for md in POSTS_DIR.glob("2*.md"):
+        stem = md.stem
+        text = md.read_text(encoding="utf-8", errors="ignore")
+        m = _fm_last_reviewed_re.search(text)
+        if m:
+            out[stem] = m.group(1)
+            continue
+        # Fallback: parse `date:` (e.g. "Apr 11, 2026") → ISO.
+        dm = _fm_date_re.search(text)
+        if dm:
+            try:
+                from datetime import datetime as _dt
+                d = _dt.strptime(dm.group(1), "%b %d, %Y")
+                out[stem] = d.strftime("%Y-%m-%d")
+            except ValueError:
+                pass
+    return out
+
+
+def refresh_sitemap_lastmod(sitemap_path: Path, index: dict[str, str]) -> int:
+    if not sitemap_path.is_file():
+        return 0
+    xml = sitemap_path.read_text(encoding="utf-8")
+    patched = 0
+
+    def patch_url(block_match: re.Match[str]) -> str:
+        nonlocal patched
+        block = block_match.group(1)
+        loc_m = _loc_re.search(block)
+        if not loc_m:
+            return block_match.group(0)
+        url = loc_m.group(1)
+        stem_m = _post_stem_from_url_re.search(url)
+        if not stem_m:
+            return block_match.group(0)
+        stem = stem_m.group(1)
+        new_date = index.get(stem)
+        if not new_date:
+            return block_match.group(0)
+        new_block = _lastmod_re.sub(f'<lastmod>{new_date}</lastmod>', block, count=1)
+        if new_block != block:
+            patched += 1
+        return f'<url>{new_block}</url>'
+
+    new_xml = _lastmod_block_re.sub(patch_url, xml)
+    if new_xml != xml:
+        sitemap_path.write_text(new_xml, encoding="utf-8")
+    return patched
+
+
 def main() -> None:
     pages = list(PUBLIC.rglob("*.html"))
     sri_patched = 0
     csp_patched = 0
     itemlist_patched = 0
     social_patched = 0
+    wc_patched = 0
     for page in pages:
         original = page.read_text(encoding="utf-8", errors="ignore")
         patched = fix_sri(original)
@@ -289,17 +579,33 @@ def main() -> None:
         patched_si = fix_social_image(patched_il)
         if patched_si != patched_il:
             social_patched += 1
-        patched2 = inject_jsonld_hashes(patched_si)
-        if patched2 != patched_si:
+        patched_wc = inject_word_count(patched_si)
+        if patched_wc != patched_si:
+            wc_patched += 1
+        patched2 = inject_jsonld_hashes(patched_wc)
+        if patched2 != patched_wc:
             csp_patched += 1
         if patched2 != original:
             page.write_text(patched2, encoding="utf-8")
+
+    # Refresh sitemap lastmod from each post's frontmatter last_reviewed.
+    lastmod_index = build_lastmod_index()
+    sitemap_patched = refresh_sitemap_lastmod(PUBLIC / "sitemap.xml", lastmod_index)
+
+    # Overwrite robots.txt + llms.txt with the curated versions.
+    robots_written = write_robots(PUBLIC)
+    llms_written = write_llms_txt(PUBLIC)
+
     print(
         f"postbuild: {len(pages)} HTML pages, "
         f"{sri_patched} got real SRI, "
         f"{itemlist_patched} got ItemList JSON-LD, "
         f"{social_patched} got og:image fixed, "
-        f"{csp_patched} got CSP JSON-LD hashes"
+        f"{wc_patched} got wordCount, "
+        f"{csp_patched} got CSP JSON-LD hashes, "
+        f"{sitemap_patched} sitemap entries refreshed, "
+        f"robots.txt {'updated' if robots_written else 'unchanged'}, "
+        f"llms.txt {'updated' if llms_written else 'unchanged'}"
     )
 
 

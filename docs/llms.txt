@@ -1,5 +1,82 @@
-# docs
+# Sebastien Rousseau
 
-> A site built with SSG
+> AI, payments and quantum-safe cryptography for financial services. Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography, and the structural transformation of wholesale payments.
 
 Language: en-GB
+Author: Sebastien Rousseau
+Canonical: https://sebastienrousseau.com/
+
+## About
+
+- [About the author](https://sebastienrousseau.com/about/index.html): biography, experience, and entity links.
+- [Contact](https://sebastienrousseau.com/contact/index.html): how to get in touch.
+
+## Topic clusters
+
+- **Payments & ISO 20022.** Migration from MT/MX to structured messages, pain.001 + pacs.008 toolkits, cross-border settlement.
+- **Post-quantum cryptography.** CRYSTALS-Kyber, lattice-based schemes, Quantum Key Distribution, Shor's algorithm threshold tracking, payment-rail readiness.
+- **Applied AI.** Generative AI for finance, LLM tooling, prompt engineering, voice cloning, multimodal model evaluation.
+- **Open source.** Python (pain001, pacs008, Bank Statement Parser), Rust (KyberLib, HSH, DTT, libmake, Shokunin SSG, NaluFX, QRC).
+
+## Listings
+
+- [Articles](https://sebastienrousseau.com/articles/index.html): all dated posts.
+- [Papers](https://sebastienrousseau.com/papers/index.html): research publications + white papers.
+- [Projects](https://sebastienrousseau.com/projects/index.html): open-source libraries and tools.
+- [Playlists](https://sebastienrousseau.com/playlists/index.html): curated Spotify playlists.
+- [Tags](https://sebastienrousseau.com/tags/index.html): topic index across all posts.
+
+## Recent posts
+
+- [Lucy's Flash Drive Revisited: AI, Quantum & Knowledge](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html): Twelve years on, Besson's Lucy reads like a thought experiment about knowledge migrating from flesh to machine — quietly validated by LLMs and qubits.
+- [Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk](https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/index.html): Shor's algorithm may now run on as few as 10,000 qubits. RSA, ECC and the timeline for post-quantum migration are all moving up. Here's why.
+- [Quantum-Safe Payments: Why the Industry Must Act Now](https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa/index.html): Quantum computing threatens payment system cryptography. The EPAA white paper outlines the structural risk and the urgent case for PQC migration.
+- [Quantum Lattice Crypto: Bug in Chen's LWE Attack](https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html): A bug in Yilei Chen's quantum LWE algorithm temporarily reprieves lattice-based cryptography. What it means for CRYSTALS-Kyber, Dilithium and the PQC roadmap.
+- [Quantum Algorithm Challenges Lattice-Based Cryptography](https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html): A new polynomial-time quantum algorithm by Yilei Chen targets lattice-based cryptography. Implications for post-quantum standards including CRYSTALS-Kyber.
+- [OpenVoice: Leading Innovation in Voice Cloning Technology](https://sebastienrousseau.com/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html): OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.
+- [Fully Homomorphic Encryption (FHE) in a Banking Quantum Era](https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html): Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats.
+- [Advancing AI with Multimodal LLMs: Insights from MM1](https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html): Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials.
+- [Fast Real-Time Speech Recognition on macOS: OpenAI Whisper](https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html): Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.
+- [RustLogs (RLG): Structured Logging Library for Rust](https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html): Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options.
+
+## All posts (39)
+
+- [Lucy's Flash Drive Revisited: AI, Quantum & Knowledge](https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html) — 2026-05-11
+- [Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk](https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/index.html) — 2026-04-11
+- [Quantum-Safe Payments: Why the Industry Must Act Now](https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa/index.html) — 2025-09-01
+- [Quantum Lattice Crypto: Bug in Chen's LWE Attack](https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html) — 2024-04-22
+- [Quantum Algorithm Challenges Lattice-Based Cryptography](https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html) — 2024-04-15
+- [OpenVoice: Leading Innovation in Voice Cloning Technology](https://sebastienrousseau.com/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html) — 2024-04-01
+- [Fully Homomorphic Encryption (FHE) in a Banking Quantum Era](https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html) — 2024-03-25
+- [Advancing AI with Multimodal LLMs: Insights from MM1](https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html) — 2024-03-18
+- [Fast Real-Time Speech Recognition on macOS: OpenAI Whisper](https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html) — 2024-03-12
+- [RustLogs (RLG): Structured Logging Library for Rust](https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html) — 2024-03-08
+- [Le Chat by Mistral AI: Multilingual Conversational AI](https://sebastienrousseau.com/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html) — 2024-03-04
+- [Google Gemma AI: Transforming Open-Source AI Development](https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html) — 2024-02-26
+- [Unlocking Gemini 1.5: Google's AI Revolution Explained](https://sebastienrousseau.com/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html) — 2024-02-19
+- [EU's AI Act: Pioneering Ethical AI Regulation Worldwide](https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html) — 2024-02-13
+- [Àkàndé: GPT-Powered Voice Assistant for Executives](https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html) — 2024-02-12
+- [Generative AI in Advertising: Amazon Rufus & Meta](https://sebastienrousseau.com/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html) — 2024-02-08
+- [AI-Powered Speech Analysis, Translation, & Insight Tool](https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html) — 2024-01-29
+- [AI Prompt Engineering 2024: Techniques That Work](https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html) — 2024-01-23
+- [Alien Studio: My Tech-to Art Journey in Photography](https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html) — 2024-01-15
+- [Qiskit & Quantum Fourier Transform for Credit Ratio Analysis](https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html) — 2024-01-08
+- [AI Trends 2024: Insights and Predictions for the Future](https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html) — 2024-01-01
+- [Revolutionising Finance with AI-Enhanced Quantum Algorithms](https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html) — 2023-12-25
+- [State of AI and Quantum Computing in Banking: A 2023 Review](https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html) — 2023-12-18
+- [Quantum Key Distribution Revolutionising Security in Banking](https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) — 2023-12-11
+- [Efficient Date and Time Management with DateTime (DTT)](https://sebastienrousseau.com/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html) — 2023-12-04
+- [KyberLib: Rust CRYSTALS-Kyber for Post-Quantum](https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html) — 2023-11-28
+- [CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age](https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) — 2023-11-19
+- [Generative AI in 2023: How It Works, Where It Lands](https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html) — 2023-11-12
+- [Mathematical and Cryptographic Constants for Rust Security](https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html) — 2023-11-05
+- [Streamlining Rust Library Development with Code Generation](https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html) — 2023-10-26
+- [Protecting Data in the Quantum Age: The Hash Library (HSH)](https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html) — 2023-10-16
+- [Static Site Generator: Fastest Rust-Based SSG](https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html) — 2023-10-09
+- [Automating ISO 20022 Payment Files Creation with Pain001](https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) — 2023-09-29
+- [The making of the Express Transaction Credits Platform](https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html) — 2018-02-15
+- [Unveiling a new Cryptocurrency and Faster Payment Solution](https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html) — 2018-02-04
+- [ERC-20: The Ethereum Token Interface That Changed the World](https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html) — 2018-01-24
+- [Understanding the Technology behind Blockchain](https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html) — 2018-01-09
+- [Blockchain explained, the technology that matters the most](https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html) — 2018-01-02
+- [Bitcoin: A Year In Review of the First Cryptocurrency](https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/index.html) — 2018-01-01
