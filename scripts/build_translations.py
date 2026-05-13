@@ -420,8 +420,34 @@ def render_hub(entries: list[dict[str, str]]) -> str | None:
         if '"ItemList"' in block or '"itemListElement"' in block:
             shell = shell.replace(block, '', 1)
 
+    # Mirror /articles/ structure exactly: FEATURED block (newest)
+    # + ARCHIVE grid (the rest). Same markup classes so the CSS
+    # styling carries across both languages identically.
+    if not entries:
+        return None
+
+    featured = entries[0]
+    archive = entries[1:]
+    feat_url = f"/fr/{featured['slug']}/index.html"
+    feat_block = (
+        '<header class="newsroom-section-head"><p class="newsroom-kicker">À LA UNE</p>'
+        '<h2>Article récent</h2></header>'
+        '<article class="newsroom-featured">'
+        f'<a class="newsroom-featured-media" href="{feat_url}" title="{_html.escape(featured["title"], quote=True)}">'
+        f'<img alt="{_html.escape(featured["banner_alt"], quote=True)}" '
+        f'src="{featured["banner"]}" loading="eager" fetchpriority="high" '
+        'decoding="async" width="800" height="800" />'
+        '</a>'
+        '<div class="newsroom-featured-body">'
+        f'<h3><a href="{feat_url}" title="{_html.escape(featured["title"], quote=True)}">{_html.escape(featured["title"])}</a></h3>'
+        f'<p>{_html.escape(featured["description"])}</p>'
+        f'<p><a class="pill ghost" href="{feat_url}" title="{_html.escape(featured["title"], quote=True)}">Lire l\'article complet</a></p>'
+        '</div>'
+        '</article>'
+    )
+
     cards: list[str] = []
-    for e in entries:
+    for e in archive:
         url = f"/fr/{e['slug']}/index.html"
         cards.append(
             '<article class="newsroom-card">'
@@ -429,23 +455,24 @@ def render_hub(entries: list[dict[str, str]]) -> str | None:
             f'<img alt="{_html.escape(e["banner_alt"], quote=True)}" src="{e["banner"]}" loading="lazy" decoding="async" width="600" height="600" />'
             '</a>'
             '<div class="newsroom-card-body">'
-            f'<h3><a href="{url}">{_html.escape(e["title"])}</a></h3>'
+            f'<h3><a href="{url}" title="{_html.escape(e["title"], quote=True)}">{_html.escape(e["title"])}</a></h3>'
+            f'<p class="newsroom-meta"><time datetime="{e["slug"][:10]}">{e["slug"][:10]}</time> · Sebastien Rousseau</p>'
             f'<p class="newsroom-excerpt">{_html.escape(e["description"])}</p>'
             '</div>'
             '</article>'
         )
+
+    archive_block = (
+        '<header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVES</p>'
+        '<h2>Tous les articles</h2></header>'
+        '<div class="newsroom-grid">' + "".join(cards) + '</div>'
+    ) if cards else ""
+
     body = (
         '<section class="newsroom">'
-        '<nav aria-label="Fil d\'Ariane" class="topic-breadcrumb">'
-        '<a href="/">Accueil</a> &middot; <span>Articles (FR)</span></nav>'
-        '<header class="newsroom-section-head">'
-        '<p class="newsroom-kicker">VERSION FRANÇAISE</p>'
-        '<h1>Articles en français</h1>'
-        '<p class="topic-lede">Traductions manuelles d\'une sélection d\'articles. '
-        f'{len(entries)} article(s) disponible(s).</p>'
-        '</header>'
-        '<div class="newsroom-grid">' + "".join(cards) + '</div>'
-        '</section>'
+        + feat_block
+        + archive_block
+        + '</section>'
     )
     shell = _NEWSROOM_RE.sub(body, shell, count=1)
     shell = _HTML_LANG_RE.sub(r'\1fr-FR\2', shell, count=1)
