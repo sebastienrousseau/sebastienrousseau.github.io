@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 15 Feb 2018 18:18:18 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 15 Feb 2018 18:18:18 +0000" id="last-modified" />
+    <title>La création de la plateforme Express Transaction Credits — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Développer un cadre complet pour la prochaine génération de tokens conformes Ethereum Request for Comment via la norme ERC-223.">
+<meta name="keywords" content="Ethereum, ERC-223, ERC-20, EXTC, Express Transaction Credits, blockchain, paiements, tokens, prêts, finance décentralisée">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <meta http-equiv="Permissions-Policy" content="browsing-topics=(), interest-cohort=(), join-ad-interest-group=(), run-ad-auction=(), attribution-reporting=()" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else. -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        script-src 'sha256-rso0w/NFfYjYPSgp7zZMyXw6b9PJo9MLZC5rzL7SS04=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'sha256-yMTxia7epf8xZdO5s91stl8W6yNOqaXo07S013lg02k=' 'self' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    <link rel="alternate" href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html" hreflang="en" />
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/d9e47e737343a1fa.css" crossorigin="anonymous" integrity="sha256-ks1BNiRZ9+j9kKLYGtnHNEDMjMT+6T//ChEM4DqxZ2Q=" crossorigin="anonymous"">
+    <link rel="alternate" type="application/atom+xml" title="Flux Atom" href="http://127.0.0.1:8000/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="La création de la plateforme Express Transaction Credits — Sebastien Rousseau">
+<meta property="og:description" content="Développer un cadre complet pour la prochaine génération de tokens conformes Ethereum Request for Comment via la norme ERC-223.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/fr/2018-02-15-the-making-of-the-express-transaction-credits-platform/">
+<meta property="og:image" content="https://sebastienrousseau.com/fr/2018-02-15-the-making-of-the-express-transaction-credits-platform/">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The making of the Express Transaction Credits Platform">
+<meta name="twitter:description" content="TL;DR. Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard. Key takeaways">
+<meta name="twitter:image" content="https://sebastienrousseau.com/fr/2018-02-15-the-making-of-the-express-transaction-credits-platform/">
+<link rel="canonical" href="https://sebastienrousseau.com/fr/2018-02-15-the-making-of-the-express-transaction-credits-platform/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2018-02-15-the-making-of-the-express-transaction-credits-platform/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/" /></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Aller au contenu principal</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Basculer la navigation" />
+      <div class="wrap">
+        <a class="ap-brand" href="/index.html" aria-label="Accueil de Sebastien Rousseau">
+          <span itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Navigation principale">
+          <ul class="ap-menu">
+            <li><a href="/about/index.html">À propos</a></li>
+            <li><a href="/articles/index.html">Articles</a></li>
+            <li><a href="/papers/index.html">Publications</a></li>
+            <li><a href="/topics/index.html">Sujets</a></li>
+            <li><a href="/projects/index.html">Projets</a></li>
+            <li><a href="/playlists/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Activer le thème sombre" aria-pressed="false" title="Changer de thème">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Rechercher (Cmd ou Ctrl + K)" title="Rechercher (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Langue">
+            <button type="button" class="ap-lang-toggle" aria-label="FR, Changer de langue" aria-expanded="false" aria-haspopup="menu" title="Changer de langue">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">FR</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <span class="ap-lang-item" data-lang="ar" aria-disabled="true" title="Prochainement">🇸🇦 العربية</span>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="Prochainement">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="Prochainement">🇨🇿 Čeština</span>
+                <span class="ap-lang-item" data-lang="de" aria-disabled="true" title="Prochainement">🇩🇪 Deutsch</span>
+                <span class="ap-lang-item" data-lang="es" aria-disabled="true" title="Prochainement">🇪🇸 Español</span>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="Prochainement">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="Prochainement">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="Prochainement">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="Prochainement">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="Prochainement">🇮🇩 Indonesia</span>
+                <span class="ap-lang-item" data-lang="it" aria-disabled="true" title="Prochainement">🇮🇹 Italiano</span>
+                <span class="ap-lang-item" data-lang="ja" aria-disabled="true" title="Prochainement">🇯🇵 日本語</span>
+                <span class="ap-lang-item" data-lang="ko" aria-disabled="true" title="Prochainement">🇰🇷 한국어</span>
+                <span class="ap-lang-item" data-lang="nl" aria-disabled="true" title="Prochainement">🇳🇱 Nederlands</span>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="Prochainement">🇵🇱 Polski</span>
+                <span class="ap-lang-item" data-lang="pt-br" aria-disabled="true" title="Prochainement">🇧🇷 Português</span>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="Prochainement">🇷🇴 Română</span>
+                <span class="ap-lang-item" data-lang="ru" aria-disabled="true" title="Prochainement">🇷🇺 Русский</span>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="Prochainement">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="Prochainement">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="Prochainement">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Prochainement">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="Prochainement">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="Prochainement">🇳🇬 Yorùbá</span>
+                <span class="ap-lang-item" data-lang="zh-hans" aria-disabled="true" title="Prochainement">🇨🇳 简体中文</span>
+                <span class="ap-lang-item" data-lang="zh-hant" aria-disabled="true" title="Prochainement">🇹🇼 繁體中文</span>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/contact/index.html" aria-label="Me contacter">Me contacter ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Basculer la navigation">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>La création de la plateforme Express Transaction Credits</h1>
+      <p class="sub">Un cadre complet pour la prochaine génération de tokens ERC-223</p>
+    <nav class="article-tags" aria-label="Sujets"><a href="/tags/index.html#h3-mathematical-constants" class="article-tag" rel="tag">mathematical constants</a><a href="/tags/index.html#h3-cryptographic-constants" class="article-tag" rel="tag">cryptographic constants</a><a href="/tags/index.html#h3-rust" class="article-tag" rel="tag">rust</a><a href="/tags/index.html#h3-cmn-library" class="article-tag" rel="tag">cmn library</a><a href="/tags/index.html#h3-secure" class="article-tag" rel="tag">secure</a><a href="/tags/index.html#h3-reliable" class="article-tag" rel="tag">reliable</a><a href="/tags/index.html#h3-accurate" class="article-tag" rel="tag">accurate</a><a href="/tags/index.html#h3-portability" class="article-tag" rel="tag">portability</a><a href="/tags/index.html#h3-performance" class="article-tag" rel="tag">performance</a><a href="/tags/index.html#h3-documentation" class="article-tag" rel="tag">documentation</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-02-15T18:18:18+00:00" class="meta-pub">Publié le 15 févr. 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Mis à jour le 11 mai 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Temps de lecture estimé">3 min de lecture</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="post-lead" aria-label="Résumé de l'article">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard.</p>
+<p class="post-lead-heading"><strong>Points clés</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Idea.</strong> At the core of the EXTC platform lies the Ethereum Request for Comment (ERC) 223 standard, an extension of the ERC20 token standard.</li>
+  <li><strong>Impact.</strong> The impact of EXTC extends far beyond its technical attributes.</li>
+  <li><strong>Incentives.</strong> The success of any financial platform hinges on user adoption and participation.</li>
+  <li><strong>Pioneering a New Age of Financial Services.</strong> The origin of the Express Transaction Credits (EXTC) platform started in 2018 and is rooted in recognising the limitations of traditional financial systems.</li>
+</ul>
+<p class="post-lead-related"><strong>Articles connexes :</strong> <a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): Structured Logging Library for Rust</a>, <a href="https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html">Streamlining Rust Library Development with Code Generation</a>, <a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html">Alien Studio: My Tech-to Art Journey in Photography</a>.</p>
+</aside><p><img src="https://cloudcdn.pro/stocks/images/rawpixel-com-369782.webp" alt="Grandes colonnes blanches" />.class=&quot;img-fluid clearfix&quot;</p>
+<h2 id="apercu">Aperçu <a class="heading-anchor" href="#apercu" aria-label="Lien vers Aperçu">#</a></h2>
+<h3 id="pionniers-d-une-nouvelle-ere-des-services-financiers">Pionniers d'une nouvelle ère des services financiers <a class="heading-anchor" href="#pionniers-d-une-nouvelle-ere-des-services-financiers" aria-label="Lien vers Pionniers d'une nouvelle ère des services financiers">#</a></h3>
+<p>L'origine de la plateforme Express Transaction Credits (EXTC) remonte à 2018 et s'enracine dans la prise en compte des limites des systèmes financiers traditionnels. Délais de transaction, intervention d'intermédiaires et défaut d'accessibilité figurent parmi les défis majeurs.</p>
+<p>Cette prise de conscience a lancé le développement d'une plateforme d'échange décentralisée visant à lever ces barrières. Elle a pour objectif de permettre aux utilisateurs de réaliser des transactions ultra-rapides avec des monnaies fiat, des cryptomonnaies ou des tokens conformes.</p>
+<h2 id="idee">Idée <a class="heading-anchor" href="#idee" aria-label="Lien vers Idée">#</a></h2>
+<h3 id="explorer-la-norme-erc223-et-la-plateforme-express-transaction-credits">Explorer la norme ERC223 et la plateforme Express Transaction Credits <a class="heading-anchor" href="#explorer-la-norme-erc223-et-la-plateforme-express-transaction-credits" aria-label="Lien vers Explorer la norme ERC223 et la plateforme Express Transaction Credits">#</a></h3>
+<p>Au cœur de la plateforme EXTC se trouve la norme Ethereum Request for Comment (ERC) 223, une extension de la norme de token ERC20. Ce choix a été dicté par la volonté de renforcer la sécurité et la fonctionnalité. La plateforme vise à adresser ces enjeux en s'appuyant sur la norme ERC-223 et en proposant un cadre complet pour la prochaine génération de tokens conformes ERC-223.</p>
+<p>EXTC tire parti des capacités de la norme ERC223, garantissant la compatibilité avec divers smart contracts et API au sein de l'écosystème Ethereum. Le token Express Transaction Credits (EXTC) a été introduit comme représentation de cette norme, avec un ensemble défini d'attributs.</p>
+<p>L'idée était d'établir un token doté de fonctionnalités robustes :</p>
+<ul>
+<li><strong>Nom, symbole et décimales</strong> : l'identité du token est définie par son nom et son symbole, tandis que le paramètre de décimales garantit la précision de la représentation de la valeur.</li>
+<li><strong>Offre totale</strong> : l'offre totale d'EXTC est une métrique cruciale, représentant la somme de tous les tokens en circulation.</li>
+<li><strong>Solde et transfert</strong> : les utilisateurs peuvent vérifier leur solde de tokens et effectuer des transferts vers d'autres adresses.</li>
+<li><strong>Conformité ERC223</strong> : le contrat du token respecte la norme ERC223, offrant des fonctionnalités avancées par rapport à son prédécesseur ERC20.</li>
+</ul>
+<h2 id="impact">Impact <a class="heading-anchor" href="#impact" aria-label="Lien vers Impact">#</a></h2>
+<h3 id="redefinir-les-transactions-financieres">Redéfinir les transactions financières <a class="heading-anchor" href="#redefinir-les-transactions-financieres" aria-label="Lien vers Redéfinir les transactions financières">#</a></h3>
+<p>L'impact d'EXTC s'étend bien au-delà de ses attributs techniques. En facilitant des prêts instantanés, des paiements rapides et des dépôts express, la plateforme améliore considérablement l'efficacité des transactions financières. Fini le temps d'attente pour que des fonds soient compensés ou que des prêts soient approuvés. Avec EXTC, les transactions se font en temps réel, autonomisant les particuliers comme les entreprises.</p>
+<p>Cette plateforme ouvre la voie aux microcrédits, aux transactions transfrontalières et à des services financiers plus accessibles pour la population non bancarisée. De plus, la nature décentralisée d'EXTC élimine les intermédiaires, réduisant les frais associés et renforçant la sécurité.</p>
+<h2 id="incitations">Incitations <a class="heading-anchor" href="#incitations" aria-label="Lien vers Incitations">#</a></h2>
+<h3 id="stimuler-l-adoption-et-la-participation">Stimuler l'adoption et la participation <a class="heading-anchor" href="#stimuler-l-adoption-et-la-participation" aria-label="Lien vers Stimuler l'adoption et la participation">#</a></h3>
+<p>Le succès de toute plateforme financière dépend de l'adoption et de la participation des utilisateurs. EXTC ne fait pas exception. Pour inciter les utilisateurs à s'engager sur la plateforme, plusieurs stratégies sont déployées :</p>
+<ul>
+<li><strong>Vitesse et efficacité</strong> : l'incitation principale réside dans la rapidité et l'efficacité de la plateforme. Les utilisateurs en quête de paiements ou de prêts rapides sont naturellement attirés par un système qui répond promptement à leurs besoins.</li>
+<li><strong>Économies de coûts</strong> : des frais réduits par rapport aux systèmes financiers traditionnels font d'EXTC une option attrayante pour les particuliers et les entreprises soucieux des coûts.</li>
+<li><strong>Accessibilité mondiale</strong> : la nature sans frontières de la plateforme attire les utilisateurs qui ont besoin de transactions internationales sans les tracas du change.</li>
+<li><strong>Utilité du token</strong> : les tokens EXTC dépassent le cadre des transactions. Ils peuvent être intégrés dans des applications décentralisées (DApps) et même servir de récompenses ou de garanties au sein de l'écosystème.</li>
+<li><strong>Inclusion financière</strong> : en ciblant la population non bancarisée, EXTC ouvre l'accès à des services financiers à ceux qui en étaient auparavant exclus.</li>
+</ul>
+<p>En conclusion, la plateforme Express Transaction Credits (EXTC) représente un changement de paradigme dans le monde des transactions financières.</p>
+<p>En s'appuyant sur la norme ERC223 et en offrant une vitesse, une sécurité et une accessibilité sans équivalent, EXTC ouvre la voie à un futur où les services financiers seront véritablement globaux et inclusifs.</p>
+<p>À mesure que la plateforme gagnera en élan et en adoption, son impact sur le paysage financier promet d'être révolutionnaire, transcendant les frontières et démocratisant l'accès aux opportunités économiques.</p>
+<p>Que vous soyez passionné de technologie, professionnel de la finance ou simplement curieux du futur de la finance, EXTC est une plateforme qui invite à l'exploration et à l'engagement.</p>
+<aside class="author-card" aria-label="À propos de l'auteur"><img alt="Portrait de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Technologue senior dans la banque, j'écris sur l'IA appliquée, la migration ISO 20022, la cryptographie post-quantique pour les services financiers, et la transformation structurelle des paiements wholesale.</span><span class="author-credentials">Plus de 20 ans d'expérience chez HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Dernière révision <time datetime="2026-05-14">2026-05-14</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Articles connexes</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" class="related-media" aria-label="RustLogs (RLG): Structured Logging Library for Rust" tabindex="-1"><img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="rustlogs-rlg-structured-logging-library-for-rust"><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): Structured Logging Library for Rust</a> <a class="heading-anchor" href="#rustlogs-rlg-structured-logging-library-for-rust" aria-label="Lien vers RustLogs (RLG): Structured Logging Library for Rust">#</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html" class="related-media" aria-label="Streamlining Rust Library Development with Code Generation" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="streamlining-rust-library-development-with-code-generation"><a href="https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html">Streamlining Rust Library Development with Code Generation</a> <a class="heading-anchor" href="#streamlining-rust-library-development-with-code-generation" aria-label="Lien vers Streamlining Rust Library Development with Code Generation">#</a></h3><p><time datetime="2023-10-26">2023-10-26</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html" class="related-media" aria-label="Alien Studio: My Tech-to Art Journey in Photography" tabindex="-1"><img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="alien-studio-my-tech-to-art-journey-in-photography"><a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html">Alien Studio: My Tech-to Art Journey in Photography</a> <a class="heading-anchor" href="#alien-studio-my-tech-to-art-journey-in-photography" aria-label="Lien vers Alien Studio: My Tech-to Art Journey in Photography">#</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Pagination des articles"><a class="post-pagination-prev" href="/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/"><span class="post-pagination-label">Précédent</span><span class="post-pagination-title">Unveiling a new Cryptocurrency and Faster Payment Solution</span></a><a class="post-pagination-next" href="/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/"><span class="post-pagination-label">Suivant</span><span class="post-pagination-title">Automating ISO 20022 Payment Files Creation with Pain001</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/about/index.html">À propos</a></li>
+              <li><a href="/contact/index.html">Contact</a></li>
+              <li><a href="/made-with-static-site-generator/index.html">Conçu avec Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Écrits</h2>
+            <ul>
+              <li><a href="/articles/index.html">Articles</a></li>
+              <li><a href="/papers/index.html">Publications</a></li>
+              <li><a href="/tags/index.html">Étiquettes</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Activité</h2>
+            <ul>
+              <li><a href="/projects/index.html">Projets</a></li>
+              <li><a href="/playlists/index.html">Playlists</a></li>
+              <li><a href="/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Réseaux</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="legal">
+          <span>© Copyright 2024 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Liens sociaux">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
+          </div>
+          <p>
+            <a href="/accessibility/index.html">Accessibilité</a> ·
+            <a href="/privacy/index.html">Confidentialité</a> ·
+            <a href="/terms/index.html">Conditions</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://sebastienrousseau.com/#person",
+      "name": "Sebastien Rousseau",
+      "givenName": "Sebastien",
+      "familyName": "Rousseau",
+      "url": "https://sebastienrousseau.com/",
+      "image": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+      "jobTitle": "Senior Product Manager",
+      "description": "AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "HSBC Commercial & Investment Bank",
+        "url": "https://www.hsbc.com/"
+      },
+      "alumniOf": [
+        {"@type": "Organization", "name": "PayPal"},
+        {"@type": "Organization", "name": "Barclays"},
+        {"@type": "Organization", "name": "Shazam Entertainment"},
+        {"@type": "Organization", "name": "AKQA"},
+        {"@type": "Organization", "name": "Virgin Group"}
+      ],
+      "memberOf": {
+        "@type": "ProgramMembership",
+        "programName": "Quantum-Safe Cryptography Working Group",
+        "hostingOrganization": {
+          "@type": "Organization",
+          "name": "Emerging Payments Association Asia",
+          "url": "https://emergingpaymentsasia.org/"
+        }
+      },
+      "knowsAbout": [
+        "Applied artificial intelligence in banking",
+        "Generative AI for financial services",
+        "Wholesale payments",
+        "ISO 20022 migration",
+        "SWIFT gpi",
+        "SEPA Instant Payments",
+        "Cross-border payments",
+        "Post-quantum cryptography",
+        "CRYSTALS-Kyber",
+        "CRYSTALS-Dilithium",
+        "Quantum-safe payment authentication"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressCountry": "United Kingdom"
+      },
+      "sameAs": [
+        "https://twitter.com/wwdseb",
+        "https://www.linkedin.com/in/sebastienrousseau/",
+        "https://medium.com/@BankingOnQuantum",
+        "https://www.youtube.com/@BankingOnQuantum",
+        "https://github.com/sebastienrousseau"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sebastienrousseau.com/#website",
+      "url": "https://sebastienrousseau.com/",
+      "name": "Sebastien Rousseau",
+      "description": "AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.",
+      "publisher": {"@id": "https://sebastienrousseau.com/#person"},
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://sebastienrousseau.com/#profile",
+      "mainEntity": {"@id": "https://sebastienrousseau.com/#person"},
+      "name": "Sebastien Rousseau: AI, Banking & Financial Services Expert",
+      "url": "https://sebastienrousseau.com/",
+      "inLanguage": "en-GB"
+    }
+  ]
+}
+    </script>
+
+        <script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":709,"about":{"@type":"Thing","name":"Rust","sameAs":["https://en.wikipedia.org/wiki/Rust_(programming_language)","https://www.wikidata.org/wiki/Q575650"]},"headline":"La création de la plateforme Express Transaction Credits","description":"Développer un cadre complet pour la prochaine génération de tokens conformes Ethereum Request for Comment via la norme ERC-223.","image":{"@type":"ImageObject","url":"https://sebastienrousseau.com/fr/2018-02-15-the-making-of-the-express-transaction-credits-platform/","width":"100vw","height":"100vh","caption":"Giant white pillars"},"url":"https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html","datePublished":"2018-02-15T18:18:18+00:00","dateModified":"2026-05-11","inLanguage":"en","keywords":"mathematical constants, cryptographic constants, rust, cmn library, secure, reliable, accurate, portability, performance, documentation","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/articles/#blog","name":"Sebastien Rousseau — Articles","url":"https://sebastienrousseau.com/articles/"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/articles/"},{"@type":"ListItem","position":3,"name":"The making of the Express Transaction Credits Platform","item":"https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html"}]}]}
+    </script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+<link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"">
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Rechercher">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Rechercher</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Rechercher">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Rechercher dans la documentation..." autocomplete="off" aria-label="Rechercher"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> fermer</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> naviguer</span><span><kbd>Entrée</kbd> ouvrir</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>
