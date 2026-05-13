@@ -201,6 +201,24 @@ CHROME_PATCHES: list[tuple[str, str]] = [
     (r'title="Atom Feed"', 'title="Flux Atom"'),
     (r'title="RSS Feed"', 'title="Flux RSS"'),
 
+    # Lead aside (TL;DR + Key takeaways + Related reading) — extracted
+    # from the English shell so structure matches; localise the labels.
+    (r'aria-label="Article summary"', 'aria-label="Résumé de l\'article"'),
+    (r'<strong>Key takeaways</strong>', '<strong>Points clés</strong>'),
+    (r'<strong>Related reading:</strong>', '<strong>Articles connexes :</strong>'),
+
+    # Related-posts grid at the end of the body
+    (r'<h2 id="related-heading" class="related-heading">Related reading</h2>',
+     '<h2 id="related-heading" class="related-heading">Articles connexes</h2>'),
+
+    # Post-reviewed label (in case the English block leaks through)
+    (r'>Last reviewed <', '>Dernière révision <'),
+
+    # Author card aria
+    (r'aria-label="About the author"', 'aria-label="À propos de l\'auteur"'),
+    (r'>Full profile</a>', '>Profil complet</a>'),
+    (r'alt="Portrait of Sebastien Rousseau"', 'alt="Portrait de Sebastien Rousseau"'),
+
     # Bottom finale CTA aside (homepage only — defensive)
     (r'<p class="feat-eyebrow">Get in touch</p>', '<p class="feat-eyebrow">Me contacter</p>'),
     (r'>Start a conversation</a>', '>Démarrer une conversation</a>'),
@@ -252,7 +270,29 @@ def _french_author_card() -> str:
     )
 
 
-def _french_lead(description: str) -> str:
+_LEAD_ASIDE_RE = re.compile(
+    r'<aside\s+class="post-lead"[\s\S]*?</aside>',
+    re.IGNORECASE,
+)
+_RELATED_POSTS_ASIDE_RE = re.compile(
+    r'<aside\s+class="related-posts"[\s\S]*?</aside>',
+    re.IGNORECASE,
+)
+
+
+def _extract_shell_blocks(shell_html: str) -> tuple[str, str]:
+    """Pull the post-lead aside (TL;DR + Key takeaways + Related reading)
+    and the related-posts aside (3-card grid) out of the rendered English
+    shell so we can reuse them on the French page for UX parity. Labels
+    inside get translated later by translate_chrome()."""
+    lead_m = _LEAD_ASIDE_RE.search(shell_html)
+    related_m = _RELATED_POSTS_ASIDE_RE.search(shell_html)
+    return (lead_m.group(0) if lead_m else "", related_m.group(0) if related_m else "")
+
+
+def _french_lead_fallback(description: str) -> str:
+    """Minimal lead aside used when the English shell doesn't ship one
+    (very short posts) — keeps the TL;DR row visually consistent."""
     if not description:
         return ""
     return (
@@ -262,14 +302,14 @@ def _french_lead(description: str) -> str:
     )
 
 
-def _french_body(body_html: str, description: str) -> str:
+def _french_body(body_html: str, description: str, lead_aside: str, related_aside: str) -> str:
     today = _date_today()
-    lead = _french_lead(description)
+    lead = lead_aside or _french_lead_fallback(description)
     review = (
         f'<p class="post-reviewed">Dernière révision '
         f'<time datetime="{today}">{today}</time>.</p>'
     )
-    return lead + body_html + _french_author_card() + review
+    return lead + body_html + _french_author_card() + review + related_aside
 
 
 def _swap_breadcrumb(html: str, slug: str, title: str) -> str:
@@ -333,8 +373,11 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
         count=1,
     )
 
-    # main body — built fresh in French (TL;DR + body + author-card + reviewed)
-    fr_body = _french_body(body_html, description)
+    # Extract reusable structural blocks from the English shell so the
+    # French page mirrors the same layout (lead aside + related-posts grid).
+    lead_aside, related_aside = _extract_shell_blocks(shell)
+    # main body — built fresh in French (lead + body + author-card + reviewed + related)
+    fr_body = _french_body(body_html, description, lead_aside, related_aside)
 
     def replace_main(m: re.Match[str]) -> str:
         return m.group(1) + fr_body + m.group(3)
