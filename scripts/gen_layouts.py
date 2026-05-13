@@ -62,7 +62,8 @@ BANNER_OBJ = (
 )
 SPEAKABLE = (
     ',"speakable":{"@type":"SpeakableSpecification",'
-    '"cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways"]}'
+    '"cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",'
+    '".article-toc",".author-card"]}'
 )
 # FAQ block for /papers/. Mirrors the on-page `<details class="qa-item">` accordion
 # so AI crawlers (Google AI Overviews, Perplexity, ChatGPT) can cite the answers

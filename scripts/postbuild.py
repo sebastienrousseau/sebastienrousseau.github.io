@@ -243,54 +243,48 @@ _blogposting_image_re = re.compile(
 # ---------------------------------------------------------------------------
 
 # Entity name (matched case-insensitively against keywords) -> tuple of
-#   (authoritative_external_url, optional_own_canonical_post_stem)
-# We use Wikipedia or the issuing body's canonical page rather than Wikidata
-# Q-numbers — same grounding power for AI overviews, no memorised-ID
-# hallucination risk, and easy to verify. When the entity has a canonical
-# post in *this* repo, the post URL is added as a second sameAs anchor so
-# search + AI engines learn that this site is an authority on the topic.
-# A page never self-anchors: if the current post IS the canonical for an
-# entity, the canonical URL is suppressed.
-ENTITY_AUTHORITY: dict[str, tuple[str, str | None]] = {
-    # Cryptography
-    "CRYSTALS-Kyber":               ("https://en.wikipedia.org/wiki/Kyber",
+#   (authoritative_external_url, optional_wikidata_qid, optional_canonical_post_stem)
+# Wikipedia URL grounds AI overviews. Wikidata Q-number is added as a second
+# sameAs entry so engines that reconcile on the Wikidata knowledge graph
+# (Google KG, SPARQL, AI agents) can pin the entity precisely. Canonical
+# post stem points at the post on this site that is the authoritative
+# write-up — also added to sameAs so the site is treated as a co-authority.
+# A page never self-anchors.
+ENTITY_AUTHORITY: dict[str, tuple[str, str | None, str | None]] = {
+    "CRYSTALS-Kyber":               ("https://en.wikipedia.org/wiki/Kyber", "Q116727584",
                                      "2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age"),
-    "post-quantum cryptography":    ("https://en.wikipedia.org/wiki/Post-quantum_cryptography",
+    "post-quantum cryptography":    ("https://en.wikipedia.org/wiki/Post-quantum_cryptography", "Q1364608",
                                      "2025-09-01-quantum-safe-payments-epaa"),
-    "lattice-based cryptography":   ("https://en.wikipedia.org/wiki/Lattice-based_cryptography",
+    "lattice-based cryptography":   ("https://en.wikipedia.org/wiki/Lattice-based_cryptography", "Q6499614",
                                      "2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography"),
-    "Quantum key distribution":     ("https://en.wikipedia.org/wiki/Quantum_key_distribution",
+    "Quantum key distribution":     ("https://en.wikipedia.org/wiki/Quantum_key_distribution", "Q768051",
                                      "2023-12-11-quantum-key-distribution-revolutionising-security-in-banking"),
-    "Shor's algorithm":             ("https://en.wikipedia.org/wiki/Shor%27s_algorithm",
+    "Shor's algorithm":             ("https://en.wikipedia.org/wiki/Shor%27s_algorithm", "Q717409",
                                      "2026-04-11-quantum-thresholds-are-moving-again"),
-    "homomorphic encryption":       ("https://en.wikipedia.org/wiki/Homomorphic_encryption",
+    "homomorphic encryption":       ("https://en.wikipedia.org/wiki/Homomorphic_encryption", "Q2154943",
                                      "2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era"),
-    "Quantum computing":            ("https://en.wikipedia.org/wiki/Quantum_computing", None),
-    "NIST PQC":                     ("https://csrc.nist.gov/projects/post-quantum-cryptography", None),
-    # Payments
-    "ISO 20022":                    ("https://www.iso20022.org/",
+    "Quantum computing":            ("https://en.wikipedia.org/wiki/Quantum_computing", "Q484641", None),
+    "NIST PQC":                     ("https://csrc.nist.gov/projects/post-quantum-cryptography", None, None),
+    "ISO 20022":                    ("https://www.iso20022.org/", "Q15727611",
                                      "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001"),
-    "SWIFT gpi":                    ("https://www.swift.com/our-solutions/swift-gpi", None),
-    "SEPA":                         ("https://en.wikipedia.org/wiki/Single_Euro_Payments_Area", None),
-    # AI
-    "Large language model":         ("https://en.wikipedia.org/wiki/Large_language_model",
+    "SWIFT gpi":                    ("https://www.swift.com/our-solutions/swift-gpi", None, None),
+    "SEPA":                         ("https://en.wikipedia.org/wiki/Single_Euro_Payments_Area", "Q286094", None),
+    "Large language model":         ("https://en.wikipedia.org/wiki/Large_language_model", "Q115305900",
                                      "2026-05-11-lucy-besson-knowledge-transfer-ai-quantum"),
-    "Generative AI":                ("https://en.wikipedia.org/wiki/Generative_artificial_intelligence",
+    "Generative AI":                ("https://en.wikipedia.org/wiki/Generative_artificial_intelligence", "Q108766533",
                                      "2023-11-12-exploring-generative-ai"),
-    "Artificial intelligence":      ("https://en.wikipedia.org/wiki/Artificial_intelligence", None),
-    "Multimodal learning":          ("https://en.wikipedia.org/wiki/Multimodal_learning",
+    "Artificial intelligence":      ("https://en.wikipedia.org/wiki/Artificial_intelligence", "Q11660", None),
+    "Multimodal learning":          ("https://en.wikipedia.org/wiki/Multimodal_learning", "Q117259025",
                                      "2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1"),
-    # Programming
-    "Rust":                         ("https://en.wikipedia.org/wiki/Rust_(programming_language)", None),
-    "Python":                       ("https://en.wikipedia.org/wiki/Python_(programming_language)", None),
-    # Crypto / Web3
-    "Blockchain":                   ("https://en.wikipedia.org/wiki/Blockchain",
+    "Rust":                         ("https://en.wikipedia.org/wiki/Rust_(programming_language)", "Q575650", None),
+    "Python":                       ("https://en.wikipedia.org/wiki/Python_(programming_language)", "Q28865", None),
+    "Blockchain":                   ("https://en.wikipedia.org/wiki/Blockchain", "Q20514253",
                                      "2018-01-02-blockchain-the-technology-that-matters-in-2018"),
-    "Bitcoin":                      ("https://en.wikipedia.org/wiki/Bitcoin",
+    "Bitcoin":                      ("https://en.wikipedia.org/wiki/Bitcoin", "Q131723",
                                      "2018-01-01-bitcoin-the-year-in-review"),
-    "Ethereum":                     ("https://en.wikipedia.org/wiki/Ethereum",
+    "Ethereum":                     ("https://en.wikipedia.org/wiki/Ethereum", "Q21825854",
                                      "2018-01-24-the-erc-20-token-standard"),
-    "ERC-20":                       ("https://en.wikipedia.org/wiki/Ethereum#Tokens",
+    "ERC-20":                       ("https://en.wikipedia.org/wiki/Ethereum#Tokens", None,
                                      "2018-01-24-the-erc-20-token-standard"),
 }
 
@@ -332,14 +326,18 @@ def build_about_graph(html: str) -> str | None:
     matches: list[dict[str, object]] = []
     for kw in keywords:
         kwl = kw.lower()
-        for entity, (ext_url, canonical_stem) in ENTITY_AUTHORITY.items():
+        for entity, (ext_url, qid, canonical_stem) in ENTITY_AUTHORITY.items():
             ent_l = entity.lower()
             if (kwl == ent_l or ent_l in kwl or kwl in ent_l) and entity not in seen:
                 seen.add(entity)
                 same_as: list[str] = [ext_url]
-                # Add the user's own canonical post as a second sameAs anchor —
-                # tells crawlers this site is also an authority on the entity.
-                # Skip when the current page IS the canonical post (no self-link).
+                # Wikidata Q-number as a second sameAs anchor — gives engines
+                # that reconcile on the Wikidata knowledge graph a precise pin.
+                if qid:
+                    same_as.append(f"https://www.wikidata.org/wiki/{qid}")
+                # The user's own canonical post as a third sameAs anchor —
+                # tells crawlers this site is also an authority. Skipped when
+                # the current page IS the canonical post (no self-link).
                 if canonical_stem and canonical_stem != own_stem:
                     same_as.append(f"{SITE_ROOT}/{canonical_stem}/index.html")
                 node: dict[str, object] = {
@@ -873,6 +871,223 @@ def refresh_sitemap_lastmod(sitemap_path: Path, index: dict[str, str]) -> int:
     return patched
 
 
+# ---------------------------------------------------------------------------
+# 7. Article UI furniture
+#    - tag badges + meta bar (author / dates / read time) after the H1
+#    - anchor links on every H2/H3 inside <main>
+#    - table-of-contents sidebar for posts with ≥5 H2 sections
+#    - citation graph in BlogPosting JSON-LD for outbound links to known
+#      authoritative domains
+# ---------------------------------------------------------------------------
+
+# Domains we accept as primary-source citations for AI grounding.
+CITATION_AUTHORITIES = (
+    "iso20022.org", "swift.com", "iso.org", "ietf.org", "w3.org",
+    "nist.gov", "csrc.nist.gov", "bis.org", "ecb.europa.eu", "imf.org",
+    "wikipedia.org", "wikidata.org",
+    "arxiv.org", "ieee.org", "acm.org", "doi.org",
+    "blackrock.com", "sec.gov", "treasury.gov", "ofac.treasury.gov",
+    "hsbc.com", "jpmorgan.com", "santander.com", "bmo.com",
+    "google.com", "openai.com", "anthropic.com", "deepmind.com",
+    "github.com",
+    "emergingpaymentsasia.org",
+)
+
+# Author meta shared across every dated post. Single source of truth.
+AUTHOR_NAME = "Sebastien Rousseau"
+AUTHOR_AVATAR = "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+AUTHOR_URL = "/about/index.html"
+
+_HERO_RE = re.compile(
+    r'(<section class="ap-hero">\s*<h1>[^<]*</h1>\s*(?:<p class="sub">[^<]*</p>\s*)?)(</section>)',
+    re.IGNORECASE,
+)
+_MAIN_RE = re.compile(
+    r'(<main\b[^>]*>\s*<div class="wrap[^"]*">)([\s\S]*?)(</div>\s*</main>)',
+    re.IGNORECASE,
+)
+_BLOGPOSTING_DATES_RE = re.compile(
+    r'"datePublished":"([^"]+)"[^"]*"dateModified":"([^"]+)"',
+)
+_WORDCOUNT_RE = re.compile(r'"wordCount":(\d+)')
+_HEADING_RE = re.compile(r'<(h[23])(?:\s+id="[^"]*")?>([\s\S]*?)</\1>', re.IGNORECASE)
+_OUTBOUND_LINK_RE = re.compile(r'<a\b[^>]*\bhref="(https?://[^"]+)"', re.IGNORECASE)
+
+
+def slugify(s: str) -> str:
+    s = re.sub(r"<[^>]+>", "", s).strip().lower()
+    s = re.sub(r"&[a-z0-9#]+;", " ", s)
+    s = re.sub(r"[^a-z0-9]+", "-", s)
+    return s.strip("-")[:80]
+
+
+def _fmt_date(iso_or_rfc: str) -> str:
+    """Render a date string as 'D Mon YYYY'. Accepts ISO 8601 ('2026-05-11'
+    or '2026-05-11T06:06:06+00:00') or RFC 822 ('Mon, 11 May 2026 …').
+    Returns the input unchanged if neither format matches."""
+    iso_or_rfc = iso_or_rfc.strip()
+    from datetime import datetime as _dt
+    for fmt in (
+        "%Y-%m-%dT%H:%M:%S%z",
+        "%Y-%m-%dT%H:%M:%S.%f%z",
+        "%Y-%m-%d",
+        "%a, %d %b %Y %H:%M:%S %z",
+        "%a, %d %b %Y %H:%M:%S %Z",
+    ):
+        try:
+            return _dt.strptime(iso_or_rfc, fmt).strftime("%-d %b %Y")
+        except ValueError:
+            continue
+    return iso_or_rfc
+
+
+def _render_tag_badges(keywords: list[str]) -> str:
+    if not keywords:
+        return ""
+    badges = "".join(
+        f'<a href="/tags/index.html#{slugify(k)}" class="article-tag" rel="tag">{k}</a>'
+        for k in keywords
+    )
+    return f'<nav class="article-tags" aria-label="Topics">{badges}</nav>'
+
+
+def _render_meta_bar(date_pub: str, date_mod: str, word_count: int | None) -> str:
+    parts: list[str] = []
+    parts.append(
+        f'<a href="{AUTHOR_URL}" class="article-author" rel="author">'
+        f'<img alt="Portrait of {AUTHOR_NAME}" src="{AUTHOR_AVATAR}" '
+        f'width="36" height="36" loading="lazy" decoding="async" />'
+        f'<span>{AUTHOR_NAME}</span></a>'
+    )
+    if date_pub:
+        parts.append(
+            f'<time datetime="{date_pub}" class="meta-pub">'
+            f'Published {_fmt_date(date_pub)}</time>'
+        )
+    if date_mod and date_mod[:10] != date_pub[:10]:
+        parts.append(
+            f'<time datetime="{date_mod}" class="meta-rev">'
+            f'Updated {_fmt_date(date_mod)}</time>'
+        )
+    if word_count:
+        read_min = max(1, round(word_count / 220))
+        parts.append(
+            f'<span class="meta-read" aria-label="Estimated read time">'
+            f'{read_min} min read</span>'
+        )
+    return '<div class="article-meta">' + ' <span aria-hidden="true">·</span> '.join(parts) + '</div>'
+
+
+def inject_article_furniture(html: str) -> str:
+    """Insert tag badges + meta bar between the H1 hero and the main body.
+
+    Only fires when the page carries a BlogPosting JSON-LD graph — listing /
+    static pages are left alone.
+    """
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    # Don't double-inject if a previous postbuild run already added them.
+    if 'class="article-tags"' in html:
+        return html
+    keywords = []
+    m = _keywords_re.search(html)
+    if m and m.group(1):
+        keywords = [k.strip() for k in m.group(1).split(",") if k.strip()]
+    dm = _BLOGPOSTING_DATES_RE.search(html)
+    date_pub, date_mod = (dm.group(1), dm.group(2)) if dm else ("", "")
+    wm = _WORDCOUNT_RE.search(html)
+    word_count = int(wm.group(1)) if wm else None
+    badges = _render_tag_badges(keywords)
+    meta = _render_meta_bar(date_pub, date_mod, word_count)
+    fragment = badges + meta
+    if not fragment:
+        return html
+    return _HERO_RE.sub(rf'\1{fragment}\2', html, count=1)
+
+
+def inject_anchor_links_and_toc(html: str) -> str:
+    """Add id="…" + a click-to-copy anchor link icon to every H2/H3 inside
+    <main>. If the post has ≥5 H2 headings, build a table-of-contents card
+    and insert it at the top of <main>."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    m = _MAIN_RE.search(html)
+    if not m:
+        return html
+    pre, body, post = m.group(1), m.group(2), m.group(3)
+    h2_titles: list[tuple[str, str]] = []
+
+    def patch_heading(hm: re.Match[str]) -> str:
+        level = hm.group(1).lower()
+        inner = hm.group(2)
+        text = re.sub(r'<[^>]+>', '', inner).strip()
+        if not text:
+            return hm.group(0)
+        slug = slugify(text)
+        if level == "h2":
+            h2_titles.append((slug, text))
+        return (
+            f'<{level} id="{slug}">{inner} '
+            f'<a class="heading-anchor" href="#{slug}" aria-label="Link to {text}">#</a>'
+            f'</{level}>'
+        )
+
+    new_body = _HEADING_RE.sub(patch_heading, body)
+    toc_html = ""
+    if len(h2_titles) >= 5:
+        items = "".join(
+            f'<li><a href="#{slug}">{text}</a></li>' for slug, text in h2_titles
+        )
+        toc_html = (
+            '<aside class="article-toc" aria-label="Table of contents">'
+            '<h2>Contents</h2>'
+            f'<ol>{items}</ol></aside>'
+        )
+    return html[: m.start()] + pre + toc_html + new_body + post + html[m.end():]
+
+
+def _extract_citations(html: str) -> list[dict[str, str]]:
+    """Return at most 12 distinct authoritative outbound links from <main>."""
+    main_m = _MAIN_RE.search(html)
+    if not main_m:
+        return []
+    body = main_m.group(2)
+    seen: set[str] = set()
+    out: list[dict[str, str]] = []
+    for lm in _OUTBOUND_LINK_RE.finditer(body):
+        url = lm.group(1)
+        if url in seen:
+            continue
+        seen.add(url)
+        host = url.split("/", 3)[2].lower() if url.count("/") >= 2 else ""
+        if not any(host == d or host.endswith("." + d) for d in CITATION_AUTHORITIES):
+            continue
+        out.append({"@type": "CreativeWork", "url": url})
+        if len(out) >= 12:
+            break
+    return out
+
+
+def inject_citations(html: str) -> str:
+    """Append a "citation" array to the BlogPosting JSON-LD listing the
+    authoritative outbound URLs the post references. AI engines extract
+    citation graphs from this property to build provenance chains."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    cites = _extract_citations(html)
+    if not cites:
+        return html
+    import json as _json
+    fragment = ',"citation":' + _json.dumps(cites, separators=(",", ":"))
+    # Insert just before the "speakable" key in the BlogPosting object.
+    return re.sub(
+        r'(,"speakable":)',
+        fragment + r'\1',
+        html,
+        count=1,
+    )
+
+
 def main() -> None:
     pages = list(PUBLIC.rglob("*.html"))
     sri_patched = 0
@@ -881,6 +1096,9 @@ def main() -> None:
     social_patched = 0
     wc_patched = 0
     about_patched = 0
+    furniture_patched = 0
+    anchor_patched = 0
+    citation_patched = 0
     for page in pages:
         original = page.read_text(encoding="utf-8", errors="ignore")
         patched = fix_sri(original)
@@ -900,8 +1118,21 @@ def main() -> None:
         patched_about = inject_about(patched_wc)
         if patched_about != patched_wc:
             about_patched += 1
-        patched2 = inject_jsonld_hashes(patched_about)
-        if patched2 != patched_about:
+        # Article furniture (tag badges + meta bar + ToC + anchor links +
+        # citation graph) MUST run after wordCount + about have populated
+        # the BlogPosting JSON-LD, but BEFORE the JSON-LD CSP-hash pass so
+        # the citation array is included in the hash.
+        patched_fu = inject_article_furniture(patched_about)
+        if patched_fu != patched_about:
+            furniture_patched += 1
+        patched_an = inject_anchor_links_and_toc(patched_fu)
+        if patched_an != patched_fu:
+            anchor_patched += 1
+        patched_ci = inject_citations(patched_an)
+        if patched_ci != patched_an:
+            citation_patched += 1
+        patched2 = inject_jsonld_hashes(patched_ci)
+        if patched2 != patched_ci:
             csp_patched += 1
         if patched2 != original:
             page.write_text(patched2, encoding="utf-8")
@@ -929,6 +1160,9 @@ def main() -> None:
         f"{social_patched} got og:image fixed, "
         f"{wc_patched} got wordCount, "
         f"{about_patched} got about/mentions entities, "
+        f"{furniture_patched} got tag badges + meta bar, "
+        f"{anchor_patched} got anchor links + ToC, "
+        f"{citation_patched} got citation graphs, "
         f"{csp_patched} got CSP JSON-LD hashes, "
         f"{sitemap_patched} sitemap entries refreshed, "
         f"{feed_urls_patched} feed(s) URL-repaired, "

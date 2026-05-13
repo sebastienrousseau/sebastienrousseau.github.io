@@ -21,6 +21,11 @@ GOOD_HTML = """<!doctype html>
 {"@context":"https://schema.org","@type":"BlogPosting","headline":"x","author":{"@type":"Person","name":"a"},"datePublished":"2026-01-01"}
     </script>
   </head>
+  <body>
+    <nav class="article-tags"></nav>
+    <div class="article-meta"></div>
+    <aside class="author-card"></aside>
+  </body>
 </html>
 """
 
@@ -76,7 +81,10 @@ def test_jsonld_id_only_reference_not_flagged(tmp_path):
     html = """<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA='">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BlogPosting","headline":"x","author":{"@type":"Person","name":"a"},"datePublished":"2026-01-01","mainEntityOfPage":{"@type":"WebPage","@id":"https://example.com/"}}
-</script>"""
+</script>
+<nav class="article-tags"></nav>
+<div class="article-meta"></div>
+<aside class="author-card"></aside>"""
     p = write(tmp_path, "ref.html", html)
     errors, _ = v.validate_page(p)
     assert errors == []
@@ -307,6 +315,10 @@ def test_validate_page_passes_when_csp_and_jsonld_both_correct(tmp_path):
         """<script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BlogPosting","headline":"x","author":{"@type":"Person","name":"a"},"datePublished":"2026-01-01"}
 </script></head>""",
+    ) + (
+        '<nav class="article-tags"></nav>'
+        '<div class="article-meta"></div>'
+        '<aside class="author-card"></aside>'
     )
     p.write_text(html, encoding="utf-8")
     errors, _ = v.validate_page(p)

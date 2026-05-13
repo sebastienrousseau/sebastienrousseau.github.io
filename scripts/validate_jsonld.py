@@ -93,6 +93,27 @@ def validate_meta_csp(html: str) -> list[str]:
         errors.append("meta CSP script-src has no sha256-* hash tokens — inline JSON-LD would fail to load")
     return errors
 
+
+def validate_article_furniture(html: str) -> list[str]:
+    """For every page that ships BlogPosting JSON-LD, assert the reader-
+    facing GEO furniture is present:
+      - tag badges (.article-tags) nav after the H1
+      - author + dates + reading-time meta bar (.article-meta)
+      - author bio card at end of body (.author-card)
+    These were added in Phase A of the 2026 article-template overhaul and
+    are the AI-citation surface AI engines look for on a modern news page.
+    """
+    errors: list[str] = []
+    if '"@type":"BlogPosting"' not in html:
+        return errors
+    if 'class="article-tags"' not in html:
+        errors.append('missing .article-tags — tag badges not rendered after H1')
+    if 'class="article-meta"' not in html:
+        errors.append('missing .article-meta — author/date/read-time bar not rendered')
+    if 'class="author-card"' not in html:
+        errors.append('missing .author-card — author E-E-A-T bio not rendered at post end')
+    return errors
+
 # Required-property table per @type. Keep narrow — false positives are
 # more expensive than missing a real issue, and the Rich Results Test
 # covers the wider spec.
@@ -220,6 +241,7 @@ def validate_page(path: Path) -> tuple[list[str], list[str]]:
     # Meta-CSP defence check runs against the RAW html — comments shouldn't
     # affect attribute extraction, and the meta tag isn't inside one anyway.
     errors.extend(validate_meta_csp(raw_html))
+    errors.extend(validate_article_furniture(raw_html))
     # Strip HTML comments first — they can contain literal
     # <script type="application/ld+json"> text (documentation) that we
     # don't want the regex to match as a real script block.

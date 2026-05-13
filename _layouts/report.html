@@ -162,6 +162,39 @@
       .ap-hero figure.hero-figure img{width:100%;height:auto;border-radius:var(--radius);box-shadow:0 30px 60px -20px rgba(0,0,0,.18)}
       .ap-hero figure.hero-figure[data-empty=""]{display:none}
 
+      /* ---------- Article furniture: tag badges, meta bar, ToC, anchor
+         links, author bio. Injected by scripts/postbuild.py on every
+         BlogPosting page after the H1 hero. ---------- */
+      .article-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;max-width:var(--max-wide);margin:8px auto 18px;padding:0 var(--pad-x)}
+      .article-tag{display:inline-flex;align-items:center;padding:5px 12px;background:var(--cl-grey-100, #f1f3f7);color:var(--ink, #111);border-radius:980px;font-size:12.5px;font-weight:500;letter-spacing:.01em;text-decoration:none;transition:background .15s ease, transform .15s ease}
+      .article-tag:hover{background:var(--cl-grey-200, #e3e6ed);transform:translateY(-1px)}
+      .article-meta{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;justify-content:center;font-size:14px;color:var(--ink-mute, #6e6e73);margin:0 auto 24px;padding:0 var(--pad-x);max-width:var(--max-wide)}
+      .article-meta time, .article-meta span:not(.article-author span){white-space:nowrap}
+      .article-author{display:inline-flex;align-items:center;gap:8px;color:var(--ink, #111) !important;font-weight:500;text-decoration:none}
+      .article-author img{border-radius:50%;width:32px;height:32px;object-fit:cover}
+      .article-author:hover{opacity:.85}
+      .article-toc{max-width:760px;margin:0 auto 32px;padding:18px 22px;background:var(--cl-grey-100, #f5f5f7);border-radius:14px;font-size:15px}
+      .article-toc h2{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin:0 0 10px;color:var(--ink-mute, #6e6e73)}
+      .article-toc ol{list-style:decimal-leading-zero inside;margin:0;padding:0}
+      .article-toc ol li{padding:3px 0;line-height:1.4}
+      .article-toc ol li a{color:var(--link-color);text-decoration:none}
+      .article-toc ol li a:hover{text-decoration:underline}
+      .heading-anchor{display:inline-block;margin-left:.4em;color:var(--ink-mute, #6e6e73);opacity:0;font-weight:400;text-decoration:none;transition:opacity .15s ease}
+      .heading-anchor:hover{opacity:1;color:var(--link-color, #0056b3) !important}
+      h2:hover .heading-anchor, h3:hover .heading-anchor{opacity:.55}
+      h2:hover .heading-anchor:hover, h3:hover .heading-anchor:hover{opacity:1}
+      .author-card{display:flex;gap:18px;align-items:flex-start;max-width:760px;margin:48px auto;padding:24px 26px;background:var(--card, #fafafc);border-radius:16px;border:1px solid var(--cl-grey-200, #e3e6ed)}
+      .author-card img{width:64px;height:64px;border-radius:50%;flex-shrink:0;object-fit:cover}
+      .author-card-body{display:flex;flex-direction:column;gap:6px;font-size:15px;line-height:1.5;color:var(--ink, #111)}
+      .author-card-name{font-size:17px;font-weight:600}
+      .author-card-name a{color:inherit;text-decoration:none}
+      .author-card-bio{margin:0}
+      .author-card-body .author-credentials{font-size:13px;color:var(--ink-mute, #6e6e73)}
+      @media (max-width:640px){
+        .article-toc{margin-left:var(--pad-x);margin-right:var(--pad-x)}
+        .author-card{margin-left:var(--pad-x);margin-right:var(--pad-x);flex-direction:column;align-items:center;text-align:center}
+      }
+
       /* ---------- Pill button (Apple-style) ---------- */
       /* Pill button. Vertical padding bumped to clear the WCAG 2.5.5 / Apple
          44×44 px hit-area minimum for mobile touch (17px text + 14px×2 padding
@@ -800,7 +833,7 @@
     </script>
 
         <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","headline":"{{title}}","description":"{{description}}","image":{"@type":"ImageObject","url":"{{banner}}","width":"{{banner_width}}","height":"{{banner_height}}","caption":"{{banner_alt}}"},"url":"{{url}}","datePublished":"{{item_pub_date}}","dateModified":"{{last_reviewed}}","inLanguage":"{{hreflang}}","keywords":"{{keywords}}","articleSection":"{{category}}","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"{{url}}"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/articles/#blog","name":"Sebastien Rousseau — Articles","url":"https://sebastienrousseau.com/articles/"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/articles/"},{"@type":"ListItem","position":3,"name":"{{title}}","item":"{{url}}"}]}]}
+{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","headline":"{{title}}","description":"{{description}}","image":{"@type":"ImageObject","url":"{{banner}}","width":"{{banner_width}}","height":"{{banner_height}}","caption":"{{banner_alt}}"},"url":"{{url}}","datePublished":"{{item_pub_date}}","dateModified":"{{last_reviewed}}","inLanguage":"{{hreflang}}","keywords":"{{keywords}}","articleSection":"{{category}}","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"{{url}}"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/articles/#blog","name":"Sebastien Rousseau — Articles","url":"https://sebastienrousseau.com/articles/"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/articles/"},{"@type":"ListItem","position":3,"name":"{{title}}","item":"{{url}}"}]}]}
     </script>
 <script src="/main.js" defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id={{measurementID}}"></script>
