@@ -1158,6 +1158,52 @@ def inject_citations(html: str) -> str:
     )
 
 
+_MERMAID_BLOCK_RE = re.compile(
+    r'<pre[^>]*>\s*<code\s+class="language-mermaid"[^>]*>([\s\S]*?)</code>\s*</pre>',
+    re.IGNORECASE,
+)
+
+
+def inject_mermaid(html: str) -> str:
+    """Convert ```mermaid fenced blocks into <pre class="mermaid"> containers
+    so main.js can lazy-load the Mermaid library and render them. Also
+    widens the meta-CSP script-src to allow the cdn.jsdelivr.net import,
+    but only on pages that actually contain a Mermaid block."""
+    if 'language-mermaid' not in html:
+        return html
+    import html as _h
+
+    def replace(m: re.Match[str]) -> str:
+        # Strip <span> wrappers a syntax highlighter may have added,
+        # then unescape entities — Mermaid wants the raw source.
+        inner = re.sub(r'<[^>]+>', '', m.group(1))
+        return f'<pre class="mermaid">{_h.escape(_h.unescape(inner))}</pre>'
+
+    new_html = _MERMAID_BLOCK_RE.sub(replace, html)
+    if new_html == html:
+        return html
+
+    # Widen the meta-CSP for this page so the dynamic import resolves.
+    def patch_csp(tag_match: re.Match[str]) -> str:
+        tag = tag_match.group(0)
+
+        def patch_content(c: re.Match[str]) -> str:
+            policy = c.group(3)
+            if "cdn.jsdelivr.net" in policy:
+                return c.group(0)
+            new_policy = re.sub(
+                r"(script-src)(\s+)",
+                r"\1 https://cdn.jsdelivr.net\2",
+                policy,
+                count=1,
+            )
+            return c.group(1) + c.group(2) + new_policy + c.group(4)
+
+        return content_attr_re.sub(patch_content, tag, count=1)
+
+    return csp_tag_re.sub(patch_csp, new_html, count=1)
+
+
 def inject_sources_list(html: str) -> str:
     """Mirror the JSON-LD citation array as a human-visible <aside> so the
     primary-source references are visible to readers, not just AI crawlers.
@@ -1212,6 +1258,7 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
     anchor_patched = 0
     citation_patched = 0
     sources_patched = 0
+    mermaid_patched = 0
     nav_patched = 0
     for page in pages:
         original = page.read_text(encoding="utf-8", errors="ignore")
@@ -1248,6 +1295,10 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
         patched_src = inject_sources_list(patched_ci)
         if patched_src != patched_ci:
             sources_patched += 1
+        patched_mermaid = inject_mermaid(patched_src)
+        if patched_mermaid != patched_src:
+            mermaid_patched += 1
+            patched_src = patched_mermaid
         # Prev/next nav must run AFTER inject_sources_list because the
         # sources injector anchors against either the nav or the </main>;
         # placing nav first would push sources above the nav cleanly.
@@ -1287,6 +1338,7 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
         f"{anchor_patched} got anchor links + ToC, "
         f"{citation_patched} got citation graphs, "
         f"{sources_patched} got visible sources list, "
+        f"{mermaid_patched} got mermaid blocks, "
         f"{nav_patched} got prev/next nav, "
         f"{csp_patched} got CSP JSON-LD hashes, "
         f"{sitemap_patched} sitemap entries refreshed, "

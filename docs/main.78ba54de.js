@@ -355,3 +355,23 @@ document.addEventListener("click", function (event) {
         });
     }, { capture: true });
 })();
+
+/**
+ * Mermaid renderer — lazy-loads the Mermaid library from jsdelivr only
+ * when the page actually contains <pre class="mermaid"> blocks. Pages
+ * without Mermaid pay no JS / no network cost; pages with Mermaid widen
+ * their meta-CSP to allow the import via the postbuild patch.
+ */
+(async function mermaidInit() {
+    "use strict";
+    if (!document.querySelector("pre.mermaid")) return;
+    var theme = document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "default";
+    try {
+        var mod = await import(
+            "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"
+        );
+        mod.default.initialize({ startOnLoad: true, securityLevel: "strict", theme: theme });
+    } catch (err) {
+        console.warn("mermaid load failed", err);
+    }
+})();
