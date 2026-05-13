@@ -90,3 +90,4 @@ public/
 
 # Local audit artefacts (Lighthouse + pa11y dumps under audits/lh/)
 audits/lh/
+.coverage

@@ -191,7 +191,7 @@ Neutral atom qubits are individual atoms. Typically rubidium or caesium. Trapped
 
 **What is post-quantum cryptography and why is it being deployed now?**
 
-Post-quantum cryptography (PQC) refers to cryptographic algorithms believed to be secure against both classical and quantum computers. NIST finalised its first set of PQC standards in 2024, including CRYSTALS-Kyber for key encapsulation and CRYSTALS-Dilithium for digital signatures. Deployment is beginning now. Well before quantum computers pose an immediate threat. Because cryptographic transitions are slow. Replacing embedded standards across global infrastructure typically takes a decade or more, and data encrypted today may need to remain confidential long after quantum capabilities mature.
+Post-quantum cryptography (PQC) refers to cryptographic algorithms believed to be secure against both classical and quantum computers. NIST finalised its first set of PQC standards in 2024, including [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) for key encapsulation and CRYSTALS-Dilithium for digital signatures. Deployment is beginning now. Well before quantum computers pose an immediate threat. Because cryptographic transitions are slow. Replacing embedded standards across global infrastructure typically takes a decade or more, and data encrypted today may need to remain confidential long after quantum capabilities mature.
 
 **How many qubits does the most powerful quantum computer have today?**
 

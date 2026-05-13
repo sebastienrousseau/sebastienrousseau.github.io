@@ -112,7 +112,7 @@ last_reviewed: "2026-05-11"
   <li><strong>KyberLib: A Rust Library for Quantum-Resistant Cryptography.</strong> KyberLib harnesses the power of CRYSTALS-Kyber to deliver enhanced memory safety and robust system-level security.</li>
   <li><strong>Protecting Web Applications With Quantum-Resistant Cryptography.</strong> Designed for a minimal memory footprint, KyberLib is ideal for embedded and resource-limited systems without compromising security.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">Quantum Lattice Crypto: Bug in Chen's LWE Attack</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>, <a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</a>.</p>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">Quantum Lattice Crypto: Bug in Chen's LWE Attack</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>, <a href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a>.</p>
 </aside>
 <!-- lead-end -->
 
@@ -130,7 +130,7 @@ At the forefront of this transformative movement is the National Institute of St
 
 In 2023, NIST shortlisted four innovative algorithms:
 
-- [**CRYSTALS-Kyber** ⧉][01] (key encapsulation mechanism)
+- [**[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)** ⧉][01] (key encapsulation mechanism)
 - [**CRYSTALS-Dilithium** ⧉][02] (digital signatures)
 - [**FALCON** ⧉][03] (lightweight digital signatures)
 - [**SPHINCS+** ⧉][04] (hash-based digital signatures)
@@ -209,7 +209,7 @@ Additionally, KyberLib's WebAssembly compatibility enhances its utility in web a
 <div class="related-grid">
 <article class="related-card"><a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html" class="related-media" aria-label="Quantum Lattice Crypto: Bug in Chen's LWE Attack" tabindex="-1"><img alt="Quantum Lattice Crypto: Bug in Chen's LWE Attack" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">Quantum Lattice Crypto: Bug in Chen's LWE Attack</a></h3><p><time datetime="2024-04-22">2024-04-22</time></p></footer></article>
 <article class="related-card"><a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" class="related-media" aria-label="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age" tabindex="-1"><img alt="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a></h3><p><time datetime="2023-11-19">2023-11-19</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again" class="related-media" aria-label="Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk" tabindex="-1"><img alt="Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</a></h3><p><time datetime="2026-04-11">2026-04-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance" class="related-media" aria-label="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance" tabindex="-1"><img alt="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
 </div>
 </aside>
 <!-- enrich-end -->

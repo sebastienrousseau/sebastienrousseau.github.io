@@ -4,7 +4,34 @@
   <link href="https://sebastienrousseau.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com"/>
   <id>https://sebastienrousseau.com</id>
-  <updated>2026-05-11T06:06:06+00:00</updated>
+  <updated>2026-05-15T06:06:06+00:00</updated>
+  <entry>
+    <title>Stablecoin Yield by Another Name: BlackRock&apos;s BRSRV and BSTBL Filings Decoded</title>
+    <link href="https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf"/>
+    <id>https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf</id>
+    <updated>2026-05-15T06:06:06+00:00</updated>
+    <published>2026-05-15T06:06:06+00:00</published>
+    <summary>Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two SEC registrations for products that solve this constraint by being regulated as money market funds rather than stablecoins — while behaving, in the wallet, like yield-bearing dollars. A close reading of BRSRV, BSTBL, and the OCC rulemaking they respond to.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</title>
+    <link href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance"/>
+    <id>https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance</id>
+    <updated>2026-05-14T06:06:06+00:00</updated>
+    <published>2026-05-14T06:06:06+00:00</published>
+    <summary>Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today&apos;s data expires.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</title>
+    <link href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline"/>
+    <id>https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline</id>
+    <updated>2026-05-12T06:06:06+00:00</updated>
+    <published>2026-05-12T06:06:06+00:00</published>
+    <summary>From November 2026, SWIFT CBPR+ requires structured postal addresses in cross-border payment messages. Unstructured address lines (AdrLine alone) will no longer be accepted for key party fields in pacs.008. At minimum, TwnNm and Ctry are required, with StrtNm and BldgNb or PstBx recommended. With six months to go, 65% of payment messages still contain unstructured addresses and 44% of banks remain behind schedule.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Lucy&apos;s Flash Drive Revisited: AI, Quantum &amp; Knowledge</title>
     <link href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html"/>
@@ -426,33 +453,6 @@
     <updated>2023-10-01T06:06:06+00:00</updated>
     <published>2023-10-01T06:06:06+00:00</published>
     <summary>Have a question or comment? Please contact me using the form below. I am always happy to hear from you and will respond as soon as possible.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Website Terms &amp; Conditions of Use — Sebastien Rousseau</title>
-    <link href="https://sebastienrousseau.com/terms"/>
-    <id>https://sebastienrousseau.com/terms</id>
-    <updated>2023-10-01T06:06:06+00:00</updated>
-    <published>2023-10-01T06:06:06+00:00</published>
-    <summary>By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Automating ISO 20022 Payment Files Creation with Pain001</title>
-    <link href="https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"/>
-    <id>https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html</id>
-    <updated>2023-09-29T08:57:00+00:00</updated>
-    <published>2023-09-29T08:57:00+00:00</published>
-    <summary>Automate the creation of ISO 20022 pain.001 payment files from CSV or SQLite. pain001 is the open-source Python library that streamlines compliance.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Understanding the Technology behind Blockchain</title>
-    <link href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html"/>
-    <id>https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html</id>
-    <updated>2023-01-09T09:09:00+00:00</updated>
-    <published>2023-01-09T09:09:00+00:00</published>
-    <summary>Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
 </feed>

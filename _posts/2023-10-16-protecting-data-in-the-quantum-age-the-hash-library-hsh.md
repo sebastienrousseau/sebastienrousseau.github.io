@@ -173,7 +173,7 @@ Organisations must take the necessary precautions to protect their data from the
 
 * **Quantum-resistant cryptography** is a new type of encryption that can withstand attacks from quantum computers. Quantum-resistant encryption algorithms can speed up data processing and accuracy, making them a more efficient option.
 
-* **Quantum entanglement** can be used to create [quantum key distribution](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) (QKD) systems, which can generate and distribute secure cryptographic keys over long distances. QKD systems are immune to attacks by quantum computers, making them ideal for protecting sensitive financial data.
+* **Quantum entanglement** can be used to create [quantum key distribution](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) ([QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html)) systems, which can generate and distribute secure cryptographic keys over long distances. QKD systems are immune to attacks by quantum computers, making them ideal for protecting sensitive financial data.
 
 ## Idea
 

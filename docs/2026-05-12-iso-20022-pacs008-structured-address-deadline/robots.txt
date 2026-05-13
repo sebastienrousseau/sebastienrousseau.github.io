@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline/sitemap.xml

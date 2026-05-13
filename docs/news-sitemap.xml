@@ -266,6 +266,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-15T06:06:06+00:00</news:publication_date>
+    <news:title>Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded</news:title>
+    <news:keywords>BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, tokenised money market fund, OnChain Shares, Securitize</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/thanks</loc>
   <news:news>
     <news:publication>
@@ -359,6 +371,18 @@
     <news:publication_date>2024-01-15T05:06:06+00:00</news:publication_date>
     <news:title>Website created with Static Site Generator (SSG)</news:title>
     <news:keywords>static site generator, website builder, SEO optimisation, accessibility, Static Site Generator, easy to use, fast, secure, reliable, free</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-12T06:06:06+00:00</news:publication_date>
+    <news:title>The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</news:title>
+    <news:keywords>ISO 20022, pacs.008, SWIFT CBPR+, structured address, November 2026, postal address, TwnNm, Ctry, StrtNm, BldgNb</news:keywords>
   </news:news>
 </url>
 <url>
@@ -647,6 +671,18 @@
     <news:publication_date>2024-01-08T05:06:06+00:00</news:publication_date>
     <news:title>Qiskit &amp; Quantum Fourier Transform for Credit Ratio Analysis</news:title>
     <news:keywords>quantum computing, finance, credit ratio analysis, Qiskit, Quantum Fourier Transform, IBM, machine learning, artificial intelligence, financial risk assessment, creditworthiness</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-14T06:06:06+00:00</news:publication_date>
+    <news:title>Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</news:title>
+    <news:keywords>post-quantum cryptography, PQC migration, corporate banking, financial services, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204</news:keywords>
   </news:news>
 </url>
 <url>

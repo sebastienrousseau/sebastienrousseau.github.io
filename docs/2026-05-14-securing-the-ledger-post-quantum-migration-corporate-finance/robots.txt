@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/sitemap.xml
