@@ -242,3 +242,116 @@ document.addEventListener("click", function (event) {
         }
     }
 })();
+
+/**
+ * Reading progress bar — sticky 2px line at the top of the viewport that
+ * fills as the user scrolls through the article body. Renders only on
+ * pages with substantive <main.content>; nav/listing pages opt out.
+ */
+(function readingProgress() {
+    "use strict";
+    var main = document.querySelector("main.content");
+    if (!main) return;
+    var minHeight = window.innerHeight * 1.5;
+    if (main.offsetHeight < minHeight) return;
+
+    var bar = document.createElement("div");
+    bar.className = "reading-progress";
+    bar.setAttribute("role", "progressbar");
+    bar.setAttribute("aria-label", "Reading progress");
+    bar.setAttribute("aria-valuemin", "0");
+    bar.setAttribute("aria-valuemax", "100");
+    bar.setAttribute("aria-valuenow", "0");
+    document.body.appendChild(bar);
+
+    var ticking = false;
+    function update() {
+        var rect = main.getBoundingClientRect();
+        var totalScroll = rect.height - window.innerHeight;
+        var current = Math.min(Math.max(-rect.top, 0), totalScroll);
+        var pct = totalScroll > 0 ? (current / totalScroll) * 100 : 0;
+        bar.style.transform = "scaleX(" + (pct / 100) + ")";
+        bar.setAttribute("aria-valuenow", Math.round(pct));
+        ticking = false;
+    }
+    function schedule() {
+        if (!ticking) {
+            window.requestAnimationFrame(update);
+            ticking = true;
+        }
+    }
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule, { passive: true });
+    update();
+})();
+
+/**
+ * GA4 engagement instrumentation — three event families on top of the
+ * default page_view:
+ *   - scroll_depth at 25 / 50 / 75 / 100 % (once per threshold per page)
+ *   - reading_time at 15 / 30 / 60 / 120 / 300 s (once per milestone)
+ *   - click_outbound on any <a> whose host !== current host
+ * Defers silently if gtag isn't loaded (preview / blocked-tracker case).
+ */
+(function ga4Engagement() {
+    "use strict";
+    if (typeof window === "undefined") return;
+
+    function send(name, params) {
+        if (typeof window.gtag !== "function") return;
+        window.gtag("event", name, params || {});
+    }
+
+    var thresholds = [25, 50, 75, 100];
+    var hit = {};
+    function checkScroll() {
+        var de = document.documentElement;
+        var max = de.scrollHeight - window.innerHeight;
+        if (max <= 0) return;
+        var pct = (window.scrollY / max) * 100;
+        for (var i = 0; i < thresholds.length; i++) {
+            var t = thresholds[i];
+            if (pct >= t && !hit[t]) {
+                hit[t] = true;
+                send("scroll_depth", { percent: t });
+            }
+        }
+    }
+    var scrollTicking = false;
+    window.addEventListener("scroll", function () {
+        if (!scrollTicking) {
+            window.requestAnimationFrame(function () {
+                checkScroll();
+                scrollTicking = false;
+            });
+            scrollTicking = true;
+        }
+    }, { passive: true });
+
+    [15, 30, 60, 120, 300].forEach(function (s) {
+        window.setTimeout(function () {
+            if (document.visibilityState !== "hidden") {
+                send("reading_time", { seconds: s });
+            }
+        }, s * 1000);
+    });
+
+    document.addEventListener("click", function (e) {
+        var a = e.target.closest("a[href]");
+        if (!a) return;
+        var href = a.getAttribute("href");
+        if (!href || href.charAt(0) === "#" || href.charAt(0) === "/") return;
+        var url;
+        try {
+            url = new URL(href, window.location.href);
+        } catch (err) {
+            return;
+        }
+        if (url.host === window.location.host) return;
+        send("click_outbound", {
+            link_url: url.href,
+            link_domain: url.host,
+            link_text: (a.textContent || "").trim().slice(0, 120)
+        });
+    }, { capture: true });
+})();

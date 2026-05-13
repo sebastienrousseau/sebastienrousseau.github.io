@@ -34,6 +34,8 @@ for f in public/main.*.js public/sw.*.js public/theme-init.*.js public/highlight
   cp -f "$f" "public/$short"
 done
 
+python3 scripts/build_topics.py
+python3 scripts/build_agent_api.py
 python3 scripts/postbuild.py
 
 # GitHub Pages serves from main/docs, so mirror the postbuild output into

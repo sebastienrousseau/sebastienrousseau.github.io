@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://sebastienrousseau.com/#person",
+  "name": "Sebastien Rousseau",
+  "givenName": "Sebastien",
+  "familyName": "Rousseau",
+  "url": "https://sebastienrousseau.com",
+  "jobTitle": "Senior Product Manager",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "HSBC Commercial & Investment Bank",
+    "url": "https://www.hsbc.com/"
+  },
+  "knowsAbout": [
+    "Post-quantum cryptography",
+    "ISO 20022",
+    "Wholesale payments",
+    "Applied artificial intelligence in banking",
+    "Generative AI for financial services",
+    "CRYSTALS-Kyber",
+    "SEPA Instant Payments",
+    "SWIFT gpi"
+  ],
+  "memberOf": {
+    "@type": "ProgramMembership",
+    "programName": "Quantum-Safe Cryptography Working Group",
+    "hostingOrganization": {
+      "@type": "Organization",
+      "name": "Emerging Payments Association Asia",
+      "url": "https://emergingpaymentsasia.org/"
+    }
+  },
+  "sameAs": [
+    "https://twitter.com/wwdseb",
+    "https://www.linkedin.com/in/sebastienrousseau/",
+    "https://medium.com/@BankingOnQuantum",
+    "https://www.youtube.com/@BankingOnQuantum",
+    "https://github.com/sebastienrousseau"
+  ]
+}

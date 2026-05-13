@@ -21,6 +21,42 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2023-10-01</lastmod>
+  <loc>https://sebastienrousseau.com/terms/topics/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-10-01</lastmod>
+  <loc>https://sebastienrousseau.com/terms/topics/iso-20022-payments/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-10-01</lastmod>
+  <loc>https://sebastienrousseau.com/terms/topics/post-quantum-cryptography/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-10-01</lastmod>
+  <loc>https://sebastienrousseau.com/terms/topics/blockchain-digital-assets/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-10-01</lastmod>
+  <loc>https://sebastienrousseau.com/terms/topics/applied-ai-banking/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-10-01</lastmod>
+  <loc>https://sebastienrousseau.com/terms/topics/rust-open-source/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2023-10-01</lastmod>
   <loc>https://sebastienrousseau.com/terms/offline/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
