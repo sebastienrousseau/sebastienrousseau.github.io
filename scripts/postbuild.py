@@ -970,8 +970,14 @@ def _labels(html: str) -> dict[str, str]:
 
 
 def slugify(s: str) -> str:
+    import unicodedata as _ud
     s = re.sub(r"<[^>]+>", "", s).strip().lower()
     s = re.sub(r"&[a-z0-9#]+;", " ", s)
+    # Fold accented letters to ASCII so "Références" -> "references", not
+    # "r-f-rences". NFKD normalization decomposes é -> e + combining
+    # acute; the combining mark is dropped by the [^a-z0-9]+ pass below.
+    s = _ud.normalize("NFKD", s)
+    s = s.encode("ascii", "ignore").decode("ascii")
     s = re.sub(r"[^a-z0-9]+", "-", s)
     return s.strip("-")[:80]
 

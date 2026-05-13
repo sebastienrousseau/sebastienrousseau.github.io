@@ -357,6 +357,49 @@ document.addEventListener("click", function (event) {
 })();
 
 /**
+ * Language selector — wires up the <details class="ap-lang"> in the nav.
+ *   - Marks the current language item with aria-current="true"
+ *   - Overrides each item's href with the per-page hreflang alternate
+ *     (set by postbuild on translated posts), falling back to the
+ *     language hub (/ for en, /fr/ for fr) on pages without a
+ *     translation pair.
+ *   - Closes the menu when the user clicks outside or presses Escape.
+ */
+(function langSelector() {
+    "use strict";
+    var box = document.querySelector(".ap-lang");
+    if (!box) return;
+    var current = (document.documentElement.getAttribute("lang") || "en").slice(0, 2).toLowerCase();
+    var items = box.querySelectorAll(".ap-lang-item");
+    items.forEach(function (a) {
+        var lang = a.getAttribute("data-lang");
+        if (lang === current) {
+            a.setAttribute("aria-current", "true");
+        }
+        // If a per-page alternate exists for this language, point the
+        // menu item at it. Otherwise leave the default hub link.
+        var alt = document.querySelector(
+            'link[rel="alternate"][hreflang="' + lang + '"]'
+        );
+        if (alt) {
+            a.setAttribute("href", alt.getAttribute("href"));
+        }
+    });
+    // Reflect current language in the toggle button.
+    var label = box.querySelector(".ap-lang-current");
+    if (label) label.textContent = current.toUpperCase();
+
+    // Close on outside-click + Escape.
+    document.addEventListener("click", function (e) {
+        if (!box.open) return;
+        if (!box.contains(e.target)) box.open = false;
+    });
+    document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && box.open) box.open = false;
+    });
+})();
+
+/**
  * Mermaid renderer — lazy-loads the Mermaid library from jsdelivr only
  * when the page actually contains <pre class="mermaid"> blocks. Pages
  * without Mermaid pay no JS / no network cost; pages with Mermaid widen

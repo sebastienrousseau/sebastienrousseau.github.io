@@ -93,6 +93,20 @@
       .ap-search-kbd{display:inline-flex;align-items:center;padding:2px 6px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;color:var(--ink-mute, #6e6e73);background:color-mix(in srgb,var(--ink) 6%,transparent);border:1px solid color-mix(in srgb,var(--ink) 10%,transparent);border-radius:6px;line-height:1}
       @media (max-width:1100px){.ap-search-kbd{display:none}.ap-search{width:44px;padding:0;border-radius:50%}}
 
+      /* Language selector — <details>-based, expands to a menu below */
+      .ap-lang{position:relative}
+      .ap-lang summary{list-style:none}
+      .ap-lang summary::-webkit-details-marker{display:none}
+      .ap-lang-toggle{display:inline-flex;align-items:center;justify-content:center;gap:4px;min-height:44px;padding:0 10px;background:transparent;border:1px solid transparent;border-radius:22px;color:var(--ink);cursor:pointer;font-size:12.5px;font-weight:500;letter-spacing:.02em;transition:background .15s,border-color .15s}
+      .ap-lang-toggle:hover{background:color-mix(in srgb,var(--ink) 7%,transparent)}
+      .ap-lang-chev{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .15s}
+      .ap-lang[open] .ap-lang-chev{transform:rotate(180deg)}
+      .ap-lang-menu{position:absolute;top:calc(100% + 6px);right:0;min-width:160px;display:flex;flex-direction:column;gap:2px;padding:6px;background:var(--bg);border:1px solid var(--border);border-radius:12px;box-shadow:0 18px 40px -18px rgba(0,0,0,.18);z-index:200}
+      .ap-lang-item{display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;font-size:14px;color:var(--ink);text-decoration:none;white-space:nowrap;transition:background .15s}
+      .ap-lang-item:hover{background:color-mix(in srgb,var(--ink) 7%,transparent);opacity:1}
+      .ap-lang-item[aria-current="true"]{background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent);font-weight:500}
+      @media (max-width:600px){.ap-lang-toggle{padding:0;width:44px;border-radius:50%}.ap-lang-toggle .ap-lang-chev{display:none}}
+
       /* Theme toggle (sun/moon). Sits inline in the nav */
       .theme-toggle{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;background:transparent;border:1px solid transparent;border-radius:50%;color:var(--ink);cursor:pointer;transition:background .15s,border-color .15s}
       .theme-toggle:hover{background:color-mix(in srgb,var(--ink) 7%,transparent)}
@@ -634,12 +648,4 @@
       /* Hide the floating Static Site Generator search button. Our nav has its own .ap-search
          which forwards clicks to this button via main.js. */
       #ssg-search-btn{position:absolute!important;left:-9999px!important;top:-9999px!important;width:1px!important;height:1px!important;clip:rect(0 0 0 0)!important;clip-path:inset(50%)!important;overflow:hidden!important;pointer-events:none}
-      .playlist-intro{max-width:760px;margin:0 auto 40px;text-align:center;font-size:clamp(18px,2vw,22px);line-height:1.45;color:var(--ink-mute)}
-      .playlist-intro p{margin:0}
-      .spotify-frame{border-radius:12px;border:0;display:block;width:100%}
-      .playlist-card .newsroom-card-body{padding:22px 24px 22px}
-      .playlist-card .newsroom-excerpt{margin-bottom:16px}
-      .playlist-featured .newsroom-featured-media.spotify-media{background:#1f1f1f;aspect-ratio:1/1;padding:0;display:block}
-      .playlist-featured .spotify-frame{width:100%;height:100%;border-radius:0}
-      @media (max-width:833px){.playlist-featured .newsroom-featured-media.spotify-media{aspect-ratio:16/9}}
     

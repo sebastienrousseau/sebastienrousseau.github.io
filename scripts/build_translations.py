@@ -190,6 +190,11 @@ CHROME_PATCHES: list[tuple[str, str]] = [
     # Visible "Search" label inside the in-nav button
     (r'<span>Search</span>', '<span>Rechercher</span>'),
 
+    # Language selector
+    (r'aria-label="Language"', 'aria-label="Langue"'),
+    (r'aria-label="Change language"', 'aria-label="Changer de langue"'),
+    (r'title="Change language"', 'title="Changer de langue"'),
+
     # Feed link titles in <head>
     (r'title="Atom Feed"', 'title="Flux Atom"'),
     (r'title="RSS Feed"', 'title="Flux RSS"'),
