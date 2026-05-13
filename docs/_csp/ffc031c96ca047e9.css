@@ -317,6 +317,10 @@
       /* Horizontal item: small book cover on the left, content on the right. */
       .book{display:grid;grid-template-columns:140px 1fr;align-items:start;gap:24px;min-width:0}
       @media (max-width:480px){.book{grid-template-columns:110px 1fr;gap:18px}}
+      /* Cover-less books collapse to a single column so the body takes the
+         full width instead of squeezing into the remaining 1fr after the
+         140px cover slot. */
+      .book.book-no-cover{grid-template-columns:1fr;gap:0}
       .book-cover{display:block;width:140px;aspect-ratio:2/3;background:transparent;border-radius:6px;transition:transform .4s ease;align-self:start}
       @media (max-width:480px){.book-cover{width:110px}}
       .book-cover img{width:100%;height:100%;object-fit:cover;border-radius:6px;box-shadow:
