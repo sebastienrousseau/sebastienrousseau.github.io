@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Tue, 12 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Tue, 12 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>La deadline pacs.008 « adresse structurée » de novembre 2026 : vue à six mois — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="À mi-novembre 2026, SWIFT CBPR+ rejettera les adresses postales non structurées dans les messages pacs.008 et messages associés. Avec environ 65 % des messages encore non conformes et 44 % des banques en retard, la fenêtre de remédiation se referme plus vite que la plupart des programmes de préparation ne sont conçus pour le gérer.">
+<meta name="keywords" content="ISO 20022, pacs.008, pacs.009, pacs.004, pacs.003, pain.001, CBPR+, SWIFT, SR2026, adresse structurée, SEPA, EPC, paiements transfrontaliers, criblage de sanctions, pacs008">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="pacs.008 Structured-Address Deadline">
+
+    <meta http-equiv="Permissions-Policy" content="browsing-topics=(), interest-cohort=(), join-ad-interest-group=(), run-ad-auction=(), attribution-reporting=()" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else. -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        script-src 'sha256-4eL1+93wl4v1dWCB6EwhzWOIrFeBWHvxD6fL6VscJiQ=' 'sha256-6dR8QXLTbHzlA+PvCPcYkeR1mLLY2x9kAXYOku4iFdY=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    <link rel="alternate" href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline" hreflang="en" />
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/fr/rss.xml" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/0ac8181ae2e9fe40.css" crossorigin="anonymous" integrity="sha256-DsWsfIrEGQhWiL3nr23CPqqZ6aN7HzCQVxMynVsB8ws=" crossorigin="anonymous"">
+    <link rel="alternate" type="application/atom+xml" title="Flux Atom" href="/fr/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="La deadline pacs.008 « adresse structurée » de novembre 2026 : vue à six mois — Sebastien Rousseau">
+<meta property="og:description" content="À mi-novembre 2026, SWIFT CBPR+ rejettera les adresses postales non structurées dans les messages pacs.008 et messages associés. Avec environ 65 % des messages encore non conformes et 44 % des banques en retard, la fenêtre de remédiation se referme plus vite que la plupart des programmes de préparation ne sont conçus pour le gérer.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/fr/2026-05-12-iso-20022-pacs008-adresse-structuree-echeance/">
+<meta property="og:image" content="https://sebastienrousseau.com/fr/2026-05-12-iso-20022-pacs008-adresse-structuree-echeance/">
+<meta property="og:image:width" content="1425">
+<meta property="og:image:height" content="571">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View">
+<meta name="twitter:description" content="From mid-November 2026, SWIFT CBPR+ will reject unstructured postal addresses in pacs.008 and related cross-border payment messages. With approximately 65% of">
+<meta name="twitter:image" content="https://sebastienrousseau.com/fr/2026-05-12-iso-20022-pacs008-adresse-structuree-echeance/">
+<link rel="canonical" href="https://sebastienrousseau.com/fr/2026-05-12-iso-20022-pacs008-adresse-structuree-echeance/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-12-iso-20022-pacs008-adresse-structuree-echeance/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline/" /></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Aller au contenu principal</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Basculer la navigation" />
+      <div class="wrap">
+        <a class="ap-brand" href="/index.html" aria-label="Accueil de Sebastien Rousseau">
+          <span itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Navigation principale">
+          <ul class="ap-menu">
+            <li><a href="/about/index.html">À propos</a></li>
+            <li><a href="/fr/index.html">Articles</a></li>
+            <li><a href="/papers/index.html">Publications</a></li>
+            <li><a href="/topics/index.html">Sujets</a></li>
+            <li><a href="/projects/index.html">Projets</a></li>
+            <li><a href="/playlists/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Activer le thème sombre" aria-pressed="false" title="Changer de thème">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Rechercher (Cmd ou Ctrl + K)" title="Rechercher (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Langue">
+            <button type="button" class="ap-lang-toggle" aria-label="FR, Changer de langue" aria-expanded="false" aria-haspopup="menu" title="Changer de langue">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">FR</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <span class="ap-lang-item" data-lang="ar" aria-disabled="true" title="Prochainement">🇸🇦 العربية</span>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="Prochainement">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="Prochainement">🇨🇿 Čeština</span>
+                <span class="ap-lang-item" data-lang="de" aria-disabled="true" title="Prochainement">🇩🇪 Deutsch</span>
+                <span class="ap-lang-item" data-lang="es" aria-disabled="true" title="Prochainement">🇪🇸 Español</span>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="Prochainement">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="Prochainement">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="Prochainement">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="Prochainement">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="Prochainement">🇮🇩 Indonesia</span>
+                <span class="ap-lang-item" data-lang="it" aria-disabled="true" title="Prochainement">🇮🇹 Italiano</span>
+                <span class="ap-lang-item" data-lang="ja" aria-disabled="true" title="Prochainement">🇯🇵 日本語</span>
+                <span class="ap-lang-item" data-lang="ko" aria-disabled="true" title="Prochainement">🇰🇷 한국어</span>
+                <span class="ap-lang-item" data-lang="nl" aria-disabled="true" title="Prochainement">🇳🇱 Nederlands</span>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="Prochainement">🇵🇱 Polski</span>
+                <span class="ap-lang-item" data-lang="pt-br" aria-disabled="true" title="Prochainement">🇧🇷 Português</span>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="Prochainement">🇷🇴 Română</span>
+                <span class="ap-lang-item" data-lang="ru" aria-disabled="true" title="Prochainement">🇷🇺 Русский</span>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="Prochainement">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="Prochainement">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="Prochainement">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Prochainement">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="Prochainement">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="Prochainement">🇳🇬 Yorùbá</span>
+                <span class="ap-lang-item" data-lang="zh-hans" aria-disabled="true" title="Prochainement">🇨🇳 简体中文</span>
+                <span class="ap-lang-item" data-lang="zh-hant" aria-disabled="true" title="Prochainement">🇹🇼 繁體中文</span>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/contact/index.html" aria-label="Me contacter">Me contacter ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Basculer la navigation">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>La deadline pacs.008 « adresse structurée » de novembre 2026 : vue à six mois</h1>
+      <p class="sub">À mi-novembre 2026, SWIFT CBPR+ rejettera les adresses postales non structurées dans les messages pacs.008 et messages de paiement transfrontaliers associés.</p>
+    <nav class="article-tags" aria-label="Sujets"><a href="/tags/index.html#h3-iso-20022" class="article-tag" rel="tag">ISO 20022</a><a href="/tags/index.html#h3-pacs-008" class="article-tag" rel="tag">pacs.008</a><a href="/tags/index.html#h3-swift-cbpr" class="article-tag" rel="tag">SWIFT CBPR+</a><a href="/tags/index.html#h3-structured-address" class="article-tag" rel="tag">structured address</a><a href="/tags/index.html#h3-november-2026" class="article-tag" rel="tag">November 2026</a><a href="/tags/index.html#h3-postal-address" class="article-tag" rel="tag">postal address</a><a href="/tags/index.html#h3-twnnm" class="article-tag" rel="tag">TwnNm</a><a href="/tags/index.html#h3-ctry" class="article-tag" rel="tag">Ctry</a><a href="/tags/index.html#h3-strtnm" class="article-tag" rel="tag">StrtNm</a><a href="/tags/index.html#h3-bldgnb" class="article-tag" rel="tag">BldgNb</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-12T06:06:06+00:00" class="meta-pub">Publié le 12 mai 2026</time> <span aria-hidden="true">·</span> <time datetime="2026-05-13" class="meta-rev">Mis à jour le 13 mai 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Temps de lecture estimé">19 min de lecture</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table des matières"><h2>Sommaire</h2><ol><li><a href="#une-deadline-qui-etait-toujours-en-route">Une deadline qui était toujours en route</a></li><li><a href="#ce-que-la-regle-exige-reellement">Ce que la règle exige réellement</a></li><li><a href="#pourquoi-l-industrie-en-a-fait-une-priorite">Pourquoi l'industrie en a fait une priorité</a></li><li><a href="#la-vue-par-champ-ce-qui-change-dans-le-message">La vue par champ : ce qui change dans le message</a></li><li><a href="#comment-pacs008-com-aide-a-comprimer-le-calendrier">Comment pacs008.com aide à comprimer le calendrier</a></li><li><a href="#le-paysage-de-l-outillage">Le paysage de l'outillage</a></li><li><a href="#ce-que-cela-signifie-par-secteur">Ce que cela signifie par secteur</a></li><li><a href="#conclusion">Conclusion</a></li><li><a href="#foire-aux-questions">Foire aux questions</a></li><li><a href="#references">Références</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> À mi-novembre 2026, SWIFT CBPR+ rejettera les adresses postales non structurées dans les messages pacs.008 et messages associés. Avec environ 65 % des messages encore non conformes et 44 % des banques en retard, la fenêtre de remédiation se referme plus vite que la plupart des programmes de préparation ne sont conçus pour le gérer.</p></aside><p>À partir de mi-novembre 2026, SWIFT CBPR+ rejettera les adresses postales non structurées dans les messages pacs.008 et messages de paiement transfrontaliers associés. Avec environ 65 % des messages encore non conformes et 44 % des banques en retard, la fenêtre de remédiation se referme plus vite que la plupart des programmes de préparation ne sont conçus pour le gérer.</p>
+<hr />
+<blockquote>
+<p><strong>Points clés</strong></p>
+<ul>
+<li>À partir de <strong>novembre 2026</strong>, SWIFT CBPR+ n'acceptera plus les adresses postales non structurées dans les messages de paiement transfrontaliers. Le changement s'applique à <strong>pacs.008</strong> (virement client), <strong>pacs.009</strong> (virement interbancaire), <strong>pacs.004</strong> (retours) et <strong>pacs.003</strong> (prélèvements), ainsi qu'aux flux <strong>pain.001</strong> en amont qui les alimentent.</li>
+<li>Au minimum, le <strong>nom de la ville (TwnNm)</strong> et le <strong>pays (Ctry)</strong> doivent être présents dans des champs structurés dédiés. Le <strong>nom de rue (StrtNm)</strong> et soit le <strong>numéro de bâtiment (BldgNb)</strong>, soit la <strong>boîte postale (PstBx)</strong> sont fortement recommandés. Les lignes d'adresse en texte libre (AdrLine) seules ne satisferont plus l'exigence pour les champs de parties clés.</li>
+<li>Le changement améliore la précision du criblage de sanctions, réduit les taux de réparation manuelle et protège le straight-through processing — mais uniquement pour les institutions qui ont remédié à leurs données client en amont, pas seulement à leurs moteurs de messages.</li>
+<li>La préparation industrielle est inégale. En mars 2026, environ <strong>65 % des messages CBPR+ portent encore des adresses non structurées</strong>, <strong>44 % des banques</strong> ne sont pas en bonne voie pour la deadline, et <strong>32 % des enregistrements d'adresse client</strong> demeurent non structurés en moyenne.</li>
+<li>Un outillage open source — incluant <strong><a href="https://pacs008.com/" title="pacs008 — ISO 20022 pacs.008 Toolkit and API">pacs008</a></strong>, une bibliothèque Python et un service FastAPI pour générer, valider et orchestrer les flux de messages pacs.008 — peut comprimer les délais de remédiation en automatisant la validation de schéma, les contrôles de qualité d'adresse et l'application au niveau CI avant que les messages n'atteignent le réseau SWIFT.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="une-deadline-qui-etait-toujours-en-route">Une deadline qui était toujours en route <a class="heading-anchor" href="#une-deadline-qui-etait-toujours-en-route" aria-label="Lien vers Une deadline qui était toujours en route">#</a></h2>
+<p>L'exigence d'adresse structurée de novembre 2026 n'est pas un coup de butoir réglementaire soudain. Elle figure sur la feuille de route SWIFT CBPR+ depuis l'annonce initiale de la migration <a href="/fr/2023-09-29-automatiser-fichiers-de-paiement-iso-20022-avec-pain001/index.html">ISO 20022</a>, et elle suit la fin de la cohabitation MT/MX en novembre 2025. Ce qui a changé en 2026, c'est la proximité. Avec environ six mois restants, l'industrie opère désormais à l'intérieur de la fenêtre où les problèmes de qualité de données non résolus deviennent un risque opérationnel.</p>
+<p>Les chiffres racontent l'histoire clairement. La mise à jour communautaire SWIFT de mars 2026 note que <a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="ISO 20022 milestone for November 2026: Unstructured addresses to be removed">environ 65 % des messages de paiement contiennent encore des adresses non structurées ⧉</a>, et que l'adoption reste inégale selon les géographies et les types d'institutions. Une <a href="https://financialit.net/news/banking/nearly-half-banks-are-behind-iso-20022" title="Nearly Half of Banks Are Behind on ISO 20022">enquête RedCompass Labs de mars 2026 auprès de 308 professionnels seniors des paiements ⧉</a> a constaté que 44 % des banques ne sont pas actuellement en bonne voie pour respecter la deadline d'adresse structurée, en dépit d'avoir dépensé en moyenne 20 millions de dollars — et dans les plus grandes institutions plus de 30 millions — sur la préparation 2026, avec une moyenne de 13 collaborateurs supplémentaires affectés aux programmes ISO 20022. La même enquête a constaté que 32 % des enregistrements d'adresse client restent non structurés en moyenne, et que 60 % des banques signalent des lacunes dans les systèmes core banking lorsqu'il s'agit de supporter les champs d'adresse structurés.</p>
+<p>Ce n'est donc pas un problème qui peut être résolu par un mois de plus de travail sur le moteur de messages. C'est un problème de qualité de données qui remonte du couche message vers les systèmes d'onboarding, les processus KYC, les canaux corporate et des décennies de données maîtres client en texte libre accumulées.</p>
+<h2 id="ce-que-la-regle-exige-reellement">Ce que la règle exige réellement <a class="heading-anchor" href="#ce-que-la-regle-exige-reellement" aria-label="Lien vers Ce que la règle exige réellement">#</a></h2>
+<p>Sous la SWIFT CBPR+ Standards Release 2026 (SR2026), l'exigence clé est simple en principe et impardonnable dans le détail. À partir de mi-novembre 2026, <a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="ISO 20022 milestone for November 2026: Unstructured addresses to be removed">le nom de la ville et le pays doivent être fournis dans leurs champs structurés dédiés ⧉</a> pour tous les agents et parties dans les messages de paiement CBPR+, avec des exceptions très limitées (relevés et notifications dans camt.052, camt.053, camt.054, plus quelques messages administratifs restent hors de l'exigence stricte). Pour les agents, l'usage continu du BIC seul reste une alternative valable à name-and-address.</p>
+<p>Deux formats d'adresse sont autorisés après la bascule :</p>
+<ul>
+<li><strong>Entièrement structuré</strong> — chaque composant de l'adresse postale est mappé à son élément ISO 20022 dédié : StrtNm (nom de rue), BldgNb (numéro de bâtiment) ou BldgNm (nom de bâtiment), PstCd (code postal), TwnNm (nom de ville), CtrySubDvsn (subdivision pays), Ctry (pays, en code ISO 3166-1 alpha-2). C'est le format que SWIFT identifie explicitement comme l'option la plus souhaitable lorsque c'est possible.</li>
+<li><strong>Hybride</strong> — Nom de ville et pays sont renseignés dans leurs champs structurés, tandis que le reste de l'adresse peut utiliser jusqu'à deux éléments AdrLine non structurés. Important : <a href="https://www.statestreet.com/web/insights/articles/documents/state-street-client-guide-to-iso-20022-2025.pdf" title="State Street Client Guide to ISO 20022 2025">les éléments structurés ne doivent pas être répétés à l'intérieur des lignes non structurées ⧉</a> ; pour un composant donné, l'adresse est l'un ou l'autre.</li>
+</ul>
+<p>Les adresses entièrement non structurées — où l'adresse complète se trouve dans des éléments AdrLine sans TwnNm ni Ctry — ne seront acceptées pour aucun des champs de partie concernés. L'European Payments Council a aligné son rulebook SEPA sur la même bascule, donc <a href="https://clearingpost.com/insights/iso-20022-structured-address-deadline-november-2026/" title="The November 2026 Structured Address Deadline: What Every PSP Needs to Do Now">à partir du 15 novembre 2026, le format non structuré est également banni dans SCT, SDD et SCT Inst ⧉</a>. L'alignement est délibéré : SWIFT et l'EPC ont conçu un week-end de bascule industriel unique.</p>
+<p>Pour lever toute ambiguïté, la <a href="https://pacs008.com/structured-address/" title="November 2026 structured-address deadline — pacs008">documentation pacs008 liste directement les messages concernés ⧉</a> : pacs.008 (débiteur et créancier dans les virements clients), pacs.009 (adresses d'institution dans les virements FI et les paiements de couverture), pacs.004 (adresses de partie dans les retours), et pacs.003 (prélèvements). L'exigence remonte également en amont : les fichiers pain.001 corporate portant des adresses non structurées bloqueront la génération conforme de pacs.008 chez la banque réceptrice.</p>
+<h2 id="pourquoi-l-industrie-en-a-fait-une-priorite">Pourquoi l'industrie en a fait une priorité <a class="heading-anchor" href="#pourquoi-l-industrie-en-a-fait-une-priorite" aria-label="Lien vers Pourquoi l'industrie en a fait une priorité">#</a></h2>
+<p>L'argument en faveur des adresses structurées n'est pas esthétique. Il est opérationnel, et il se manifeste à trois endroits.</p>
+<p><strong>Criblage des sanctions.</strong> Le bénéfice pratique le plus important est que les adresses structurées permettent aux systèmes de criblage de séparer le nom de partie des données de localisation. Les blocs d'adresse en texte libre causent régulièrement de faux positifs lorsqu'un nom de ville chevauche un token de nom de personne sanctionnée, ou lorsqu'un pays noyé dans le texte libre est totalement manqué. Les champs structurés permettent aux moteurs de criblage d'appliquer des règles de risque pays-spécifiques de manière déterministe, et ils rendent possible l'application du matching de liste de sanctions contre le code pays plutôt que de deviner sur une chaîne parsée. L'analyse CGI UK publiée en mars 2026 souligne ce point explicitement : <a href="https://www.cgi.com/uk/en-gb/blog/banking-and-financial-markets/2026-defining-year-iso-20022-and-structured-data-enforcement" title="2026: A defining year for ISO 20022 and structured data enforcement">les données d'adresse structurées deviennent centrales pour la résilience opérationnelle, et non simplement une obligation de conformité ⧉</a>.</p>
+<p><strong>Taux de réparation manuelle.</strong> Les paiements transfrontaliers d'aujourd'hui portent un coût opérationnel significatif sous forme d'enquêtes manuelles, de gestion d'exceptions et de files de réparation — en grande partie motivés par des adresses que les systèmes de criblage ou de routage ne peuvent pas parser avec confiance. Les banques qui sont déjà passées aux adresses structurées rapportent des réductions matérielles d'exceptions STP, en particulier dans les flux de mi-corridor où les agents intermédiaires devaient auparavant interpréter des données en texte libre qu'ils n'avaient pas générées.</p>
+<p><strong>Application au niveau réseau.</strong> SR2026 durcit la validation au niveau du réseau SWIFT. Certains des nouveaux contrôles opéreront initialement en mode non bloquant — signalant des problèmes de qualité de données sans arrêter les paiements — mais la trajectoire est claire, et après la bascule, <a href="https://www.redcompasslabs.com/insights/iso-20022-is-arriving-all-at-once-for-us-banks/" title="ISO 20022 is arriving all at once for US banks">les messages non conformes seront rejetés purement et simplement ⧉</a>. Plusieurs rails de paiement américains (Fedwire, CHIPS) et SWIFT CBPR+ convergent essentiellement sur le même calendrier, ce qui supprime l'option d'une bascule échelonnée que certaines institutions avaient supposée dans les plans antérieurs.</p>
+<h2 id="la-vue-par-champ-ce-qui-change-dans-le-message">La vue par champ : ce qui change dans le message <a class="heading-anchor" href="#la-vue-par-champ-ce-qui-change-dans-le-message" aria-label="Lien vers La vue par champ : ce qui change dans le message">#</a></h2>
+<p>Le message pacs.008 supporte les adresses structurées depuis que les premières directives d'usage CBPR+ sont entrées en vigueur en mars 2023. Ce qui change en novembre 2026 n'est pas le schéma — c'est la validation. Jusqu'à maintenant, les banques ont été autorisées à peupler les éléments AdrLine avec du texte libre et à le faire passer sur le réseau. À partir de la deadline, les contenus des blocs de partie doivent satisfaire les exigences minimales de champs structurés.</p>
+<h3 id="requis-recommande-et-retire">Requis, recommandé et retiré <a class="heading-anchor" href="#requis-recommande-et-retire" aria-label="Lien vers Requis, recommandé et retiré">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Élément</th>
+<th>XPath (sous <code>PstlAdr</code>)</th>
+<th>Statut après nov. 2026</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nom de ville</td>
+<td><code>&lt;TwnNm&gt;</code></td>
+<td><strong>Obligatoire</strong></td>
+<td>Au moins un nom de ville structuré par partie concernée</td>
+</tr>
+<tr>
+<td>Pays</td>
+<td><code>&lt;Ctry&gt;</code></td>
+<td><strong>Obligatoire</strong></td>
+<td>Code ISO 3166-1 alpha-2</td>
+</tr>
+<tr>
+<td>Nom de rue</td>
+<td><code>&lt;StrtNm&gt;</code></td>
+<td>Fortement recommandé</td>
+<td>Requis pour le format entièrement structuré</td>
+</tr>
+<tr>
+<td>Numéro de bâtiment</td>
+<td><code>&lt;BldgNb&gt;</code></td>
+<td>Recommandé</td>
+<td>Soit BldgNb, soit PstBx, pas les deux</td>
+</tr>
+<tr>
+<td>Boîte postale</td>
+<td><code>&lt;PstBx&gt;</code></td>
+<td>Recommandé</td>
+<td>Alternative à BldgNb</td>
+</tr>
+<tr>
+<td>Code postal</td>
+<td><code>&lt;PstCd&gt;</code></td>
+<td>Recommandé</td>
+<td>Requis par certains schemes locaux</td>
+</tr>
+<tr>
+<td>Subdivision pays</td>
+<td><code>&lt;CtrySubDvsn&gt;</code></td>
+<td>Optionnel</td>
+<td>État, région, province</td>
+</tr>
+<tr>
+<td>Ligne d'adresse (texte libre)</td>
+<td><code>&lt;AdrLine&gt;</code></td>
+<td><strong>Restreint</strong></td>
+<td>Max 2 lignes en hybride ; jamais aux côtés du même composant dans les champs structurés</td>
+</tr>
+<tr>
+<td>Type d'adresse</td>
+<td><code>&lt;AdrTp&gt;</code></td>
+<td>Optionnel</td>
+<td>Usage de <code>ADDR</code> recommandé pour les adresses postales</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source : synthèse des directives d'usage SWIFT CBPR+ pour SR2026 et de la <a href="https://pacs008.com/structured-address/" title="November 2026 structured-address deadline — pacs008">documentation adresse structurée pacs008.com ⧉</a>.</em></p>
+<p>L'implication pratique est que toute institution qui s'appuie encore sur AdrLine seule — que ce soit dans sa propre génération de message, dans les fichiers pain.001 reçus de clients corporate, ou dans les enregistrements de données maîtres utilisés pour enrichir les paiements en flux — doit migrer ces données vers les champs structurés avant la bascule. Le service de traduction en vol de SWIFT peut aider en transit, mais <a href="https://www.pcbb.com/products/international-banking/international-payments/iso20022-faq" title="ISO 20022 FAQ — PCBB">il subit des surtaxes à partir de janvier 2026 ⧉</a> et ne peut pas parser de manière fiable tous les formats d'adresse. SWIFT a également publié <a href="https://www.swift.com/standards/iso-20022/iso-20022-faqs/swift-ai-address-structuring-model" title="ISO 20022: The Swift AI address structuring model">un modèle d'IA open source de structuration d'adresse ⧉</a> entraîné sur des données de plus de 200 pays pour inférer ville et pays à partir de données héritées non structurées avec des scores de confiance, mais c'est explicitement une aide à la remédiation, pas un substitut à long terme aux données propres en amont.</p>
+<h2 id="comment-pacs008-com-aide-a-comprimer-le-calendrier">Comment pacs008.com aide à comprimer le calendrier <a class="heading-anchor" href="#comment-pacs008-com-aide-a-comprimer-le-calendrier" aria-label="Lien vers Comment pacs008.com aide à comprimer le calendrier">#</a></h2>
+<p>Pour les institutions qui ont besoin d'industrialiser leurs pipelines de qualité d'adresse et de validation de messages rapidement, <a href="https://pacs008.com/" title="pacs008 — ISO 20022 pacs.008 Toolkit and API">pacs008 ⧉</a> fournit une boîte à outils open source sous licence MIT et un service FastAPI conçus spécifiquement pour le workflow de virement client FI-à-FI. Il adresse les trois couches où les programmes de remédiation calent le plus souvent : validation de données, génération XML et application par pipeline.</p>
+<p>Les capacités d'adresse structurée de la boîte à outils sont alignées aux exigences SR2026 :</p>
+<ul>
+<li><strong>Validation pré-génération</strong> des champs d'adresse postale structurés et hybrides, pour que les données non conformes soient interceptées avant qu'aucun XML ne soit produit ou envoyé.</li>
+<li><strong>Marquage des données d'adresse non structurées</strong> qui échoueraient après la deadline de novembre 2026, avec une distinction claire entre cas acceptables en hybride et cas entièrement non structurés.</li>
+<li><strong>Support double format</strong> pour les formats hybrides pré-deadline et les configurations entièrement structurées post-deadline, permettant aux institutions de migrer progressivement sans casser l'interopérabilité avec les contreparties qui n'ont pas encore achevé leurs propres transitions.</li>
+<li><strong>Intégration en pipeline CI</strong> afin que les contrôles de qualité d'adresse fassent partie du processus de build, et non un afterthought en fin de flux — la réponse pratique à l'observation CGI selon laquelle <a href="https://www.cgi.com/uk/en-gb/blog/banking-and-financial-markets/2026-defining-year-iso-20022-and-structured-data-enforcement" title="2026: A defining year for ISO 20022 and structured data enforcement">la gouvernance des données doit être un principe de conception fondamental ⧉</a> plutôt qu'une surcouche de conformité.</li>
+</ul>
+<p>Au-delà des adresses, la boîte à outils couvre la surface plus large de validation que la version SR2026 durcit : validation JSON Schema contre 20 schémas spécifiques aux messages, vérification de format IBAN et checksum à travers 75 pays, validation XSD du XML généré contre les schémas officiels ISO 20022, et génération version-aware à travers l'ensemble des 13 révisions pacs.008 supportées (pacs.008.001.01 à pacs.008.001.13). Pour les équipes opérationnelles et conformité, elle inclut également la prévention XXE via defusedxml, la protection stricte contre le path traversal, et le masquage PII dans les journaux JSON structurés pour supporter les exigences RGPD et PCI DSS — le type de contrôles non négociables dans les flux de paiement en production mais souvent rajoutés tardivement dans les migrations menées par fournisseur.</p>
+<p>La bibliothèque est disponible <a href="https://pypi.org/project/pacs008/" title="pacs008 on PyPI">sur PyPI ⧉</a> sous forme de package <code>pip install pacs008</code> et sur <a href="https://github.com/sebastienrousseau/pacs008" title="pacs008 on GitHub">GitHub ⧉</a> avec une transparence totale du code source. Pour les institutions qui évaluent leurs options, cela importe : l'outillage open source permet aux équipes internes d'auditer la logique de validation, de l'intégrer dans des socles Python ou FastAPI existants sans négociations de licence, et de contribuer des correctifs à mesure que leurs propres cas-limites apparaissent.</p>
+<p>Il vaut la peine d'être précis sur le périmètre. pacs008 est une boîte à outils couche message ; elle ne remplace pas un moteur de paiements, un système de criblage, ou la remédiation des données maîtres client qu'une institution doit encore faire à la source. Ce qu'elle fait, c'est prendre ce travail de remédiation et le rendre exécutoire — transformer la conformité d'adresse structurée d'une revue manuelle en fin de longue chaîne en une porte automatisée au point de génération. Pour les programmes en manque de temps, cette porte fait la différence entre une bascule propre et une vague de rejets post-bascule.</p>
+<h2 id="le-paysage-de-l-outillage">Le paysage de l'outillage <a class="heading-anchor" href="#le-paysage-de-l-outillage" aria-label="Lien vers Le paysage de l'outillage">#</a></h2>
+<p>pacs008 s'inscrit dans un écosystème plus large d'outillage de messages ISO 20022, et le choix de l'approche dépend de la stack, de l'échelle et de la philosophie de migration de l'institution. Le paysage open source et commercial inclut <a href="https://github.com/phoughton/pyiso20022" title="pyiso20022 — an ISO 20022 message generator and parser">pyiso20022 ⧉</a> (large bibliothèque Python multi-catégories avec validation en bêta), la bibliothèque <a href="https://pain001.com/" title="Pain001 — Automate ISO 20022-compliant payment file creation">pain001 ⧉</a> associée pour l'initiation de paiement en amont, <a href="https://www.prowidesoftware.com/development-tools/iso20022" title="Prowide ISO 20022 — open source MX message parser for Java">Prowide ISO 20022 ⧉</a> (une bibliothèque Java exhaustive Apache 2.0 avec une couche commerciale pour la validation et les traductions CBPR+), et un certain nombre de plateformes commerciales — Mambu, Kyriba, PaymentComponents et d'autres — qui empaquètent la capacité ISO 20022 dans des offres plus larges de trésorerie ou de plateforme de paiements.</p>
+<p>Le compromis est familier. Les plateformes commerciales réduisent la charge d'ingénierie interne mais lient l'institution à une feuille de route fournisseur qui peut ne pas correspondre à la sienne. Les bibliothèques multi-catégories exhaustives couvrent une surface plus large mais demandent plus de travail d'intégration pour un type de message donné. Les bibliothèques open source focalisées — pacs008 pour le virement client FI-à-FI, <a href="/fr/2023-09-29-automatiser-fichiers-de-paiement-iso-20022-avec-pain001/index.html">pain001</a> pour l'initiation de paiement — minimisent le temps d'intégration pour les institutions qui ont besoin d'adresser rapidement des goulots d'étranglement spécifiques, et elles laissent l'institution maîtresse de ses propres règles de validation. Pour le problème d'adresse structurée en particulier, une approche focalisée a l'avantage que les règles appliquées sont étroites, bien définies et peu susceptibles de changer avant la bascule.</p>
+<h2 id="ce-que-cela-signifie-par-secteur">Ce que cela signifie par secteur <a class="heading-anchor" href="#ce-que-cela-signifie-par-secteur" aria-label="Lien vers Ce que cela signifie par secteur">#</a></h2>
+<p>La deadline de novembre 2026 n'affecte pas toutes les institutions de manière égale. La bonne réponse dépend du volume de trafic transfrontalier, de la maturité du domaine de données existant et du rôle joué par l'institution dans la chaîne de paiement.</p>
+<h3 id="grandes-banques-correspondantes-et-transfrontalieres">Grandes banques correspondantes et transfrontalières <a class="heading-anchor" href="#grandes-banques-correspondantes-et-transfrontalieres" aria-label="Lien vers Grandes banques correspondantes et transfrontalières">#</a></h3>
+<p>Pour les banques de premier rang opérant un trafic CBPR+ significatif, l'exigence d'adresse structurée est un chantier au sein d'un programme de préparation SR2026 bien plus large qui couvre également exceptions et investigations, durcissement BAH, et (aux États-Unis) la migration simultanée de Fedwire et CHIPS. Les données RedCompass Labs suggèrent que la plupart de ces institutions dépensent 20–30 millions de dollars sur la préparation 2026, avec des équipes de livraison de 10 à 20 spécialistes. Le risque pour ce groupe n'est pas la capacité technique — c'est la capacité de livraison. Avec plusieurs chantiers parallèles se disputant les mêmes fenêtres de release, la remédiation de qualité d'adresse peut silencieusement glisser derrière des chantiers plus visibles jusqu'à ce qu'elle devienne un problème de semaine de bascule. Le palliatif pratique est de remonter la validation d'adresse plus haut dans le pipeline, pour que les défaillances émergent en environnements de développement et de test des mois avant d'avoir atteint la production.</p>
+<h3 id="banques-de-moyenne-taille-et-institutions-de-paiement">Banques de moyenne taille et institutions de paiement <a class="heading-anchor" href="#banques-de-moyenne-taille-et-institutions-de-paiement" aria-label="Lien vers Banques de moyenne taille et institutions de paiement">#</a></h3>
+<p>Pour les banques de moyenne taille et les institutions EMI/PI, l'exigence d'adresse structurée est souvent l'obligation 2026 la plus matérielle qu'elles affrontent, parce qu'elles ne portent pas la même charge de chantiers concomitants que les banques de premier rang. Le défi ici est habituellement la qualité de données en amont. Les processus d'onboarding client qui ont capturé les adresses en texte libre pendant des décennies produisent des domaines de données maîtres qui ne sont pas immédiatement parsables. La remédiation automatisée — utilisant le modèle de structuration d'adresse open source de SWIFT, des services commerciaux de nettoyage d'adresse, ou une combinaison — peut adresser une part substantielle des enregistrements, mais une longue traîne résiduelle d'adresses internationales complexes nécessitera une revue manuelle. Plus tôt ce travail commence, plus petite cette traîne devient.</p>
+<h3 id="corporates-et-prestataires-de-services-de-paiement">Corporates et prestataires de services de paiement <a class="heading-anchor" href="#corporates-et-prestataires-de-services-de-paiement" aria-label="Lien vers Corporates et prestataires de services de paiement">#</a></h3>
+<p>Les corporates initiant des paiements via pain.001 sont en amont de la génération pacs.008 par la banque mais ne sont pas exemptés de l'exigence d'adresse structurée. Les banques ne peupleront pas rétroactivement les adresses bénéficiaires au nom des clients corporate ; les données structurées doivent provenir des systèmes propres au corporate. Pour les trésoriers d'entreprise, cela signifie s'assurer que les systèmes ERP et trésorerie capturent les adresses bénéficiaires sous forme structurée, que les informations de signataire et de débiteur ultime sont également structurées, et que les templates d'initiation de paiement n'abandonnent pas silencieusement des champs lors de la génération de fichier. La validation pré-vol des fichiers pain.001 — en utilisant soit l'outillage propre au corporate, soit des services exposés par la banque — devient le point de contrôle pratique.</p>
+<h3 id="fournisseurs-fintechs-et-integrateurs">Fournisseurs, fintechs et intégrateurs <a class="heading-anchor" href="#fournisseurs-fintechs-et-integrateurs" aria-label="Lien vers Fournisseurs, fintechs et intégrateurs">#</a></h3>
+<p>Pour les fournisseurs construisant sur les rails de paiement, la deadline est une fonction de forçage pour la capacité ISO 20022 qui aurait pu être repoussée à des phases ultérieures. Les fintechs qui routent ou initient des paiements transfrontaliers via des partenaires bancaires doivent faire remonter la capture d'adresse structurée dans leurs propres UI et API, ou accepter que les fichiers pain.001 conformes ne puissent pas être produits à partir de leurs données. L'opportunité, pour les fournisseurs capables de bouger vite, est d'absorber la charge de remédiation au nom des clients corporate — transformer un problème de conformité en service.</p>
+<h2 id="conclusion">Conclusion <a class="heading-anchor" href="#conclusion" aria-label="Lien vers Conclusion">#</a></h2>
+<p>La deadline d'adresse structurée de novembre 2026 est, en un sens, un changement étroit : deux champs obligatoires, quelques recommandés, et le retrait d'une option en texte libre qui n'aurait jamais dû être utilisée pour des données pertinentes au criblage des sanctions au premier chef. En un autre sens, c'est le jalon ISO 20022 le plus significatif opérationnellement depuis la migration CBPR+ originelle, parce qu'elle force la donnée structurée non seulement dans la couche message mais dans les systèmes en amont qui l'alimentent.</p>
+<p>Le tableau de préparation au niveau industrie, à six mois de l'échéance, n'est pas encourageant. Deux tiers des messages CBPR+ portent encore des adresses non structurées. Près de la moitié des banques ne sont pas en bonne voie. Près d'un tiers des enregistrements d'adresse client restent non parsables. Le financement est en place — les enquêtes montrent constamment des investissements à huit et neuf chiffres — mais le travail ne l'est pas, et la dimension qualité de données du problème ne peut pas être résolue par les seules dépenses dans les derniers mois.</p>
+<p>Ce qui aide maintenant, c'est l'automatisation au point de validation : pousser les règles dans des pipelines qui interceptent les problèmes avant qu'ils n'atteignent le réseau, plutôt qu'après. Pour les institutions opérant des socles Python ou FastAPI, l'outillage open source comme <a href="https://pacs008.com/" title="pacs008 — ISO 20022 pacs.008 Toolkit and API">pacs008 ⧉</a> fournit une manière pratique d'opérer ce basculement sans cycle de sélection de fournisseur. Pour tout le monde, indépendamment de la stack, le point stratégique est le même : les institutions qui industrialisent le changement maintenant seront dans une position bien plus forte que celles qui s'appuient sur une conformité de dernière minute — pour emprunter le phrasé des recherches RedCompass Labs qui ont cadré une grande partie de la conversation 2026.</p>
+<p>Le week-end de bascule en novembre fermera un chapitre. Les institutions qui y arriveront avec des données propres, une validation automatisée et une compréhension opérationnelle de ce que les adresses structurées font réellement pour le criblage des sanctions passeront ce week-end à surveiller le trafic. Celles qui y arriveront sans ces choses le passeront au téléphone.</p>
+<h2 id="foire-aux-questions">Foire aux questions <a class="heading-anchor" href="#foire-aux-questions" aria-label="Lien vers Foire aux questions">#</a></h2>
+<p><strong>Que change exactement la deadline de novembre 2026 ?</strong></p>
+<p>À partir de mi-novembre 2026, SWIFT CBPR+ rejettera les messages pacs.008, pacs.009, pacs.004 et pacs.003 dont les champs de partie contiennent uniquement des adresses postales non structurées. L'exigence structurée minimale est le nom de ville dans l'élément TwnNm et le pays dans l'élément Ctry (en utilisant le code ISO 3166-1 alpha-2). Les adresses hybrides restent permises — ville et pays en champs structurés, plus jusqu'à deux éléments AdrLine en texte libre pour les composants restants — mais le même composant ne peut pas figurer à la fois dans les champs structurés et non structurés. Les adresses entièrement structurées sont le format préféré. L'European Payments Council a aligné les schémas SEPA (SCT, SDD, SCT Inst) sur la même date de bascule.</p>
+<p><strong>Quels messages et quels champs de partie sont concernés ?</strong></p>
+<p>Pour pacs.008, l'exigence s'applique aux adresses postales du débiteur et du créancier. Pour pacs.009, elle s'applique aux adresses d'institution dans les virements FI et les paiements de couverture. Pour pacs.004, elle s'applique aux adresses de partie dans les retours de paiement. Pour pacs.003, elle s'applique aux adresses créancier et débiteur dans les prélèvements clients. Les messages de relevé et de notification (camt.052, camt.053, camt.054) et certains messages administratifs restent en dehors de l'exigence stricte. Les messages pain.001 en amont des clients corporate ne sont pas directement régis par CBPR+, mais les adresses non structurées dans les fichiers pain.001 bloqueront la génération conforme de pacs.008 en aval et sont donc effectivement dans le périmètre.</p>
+<p><strong>Quelle est la différence entre adresse structurée, hybride et non structurée ?</strong></p>
+<p>Une adresse entièrement structurée mappe chaque composant à son élément ISO 20022 dédié : StrtNm, BldgNb ou PstBx, PstCd, TwnNm, CtrySubDvsn, Ctry. Une adresse hybride a le nom de ville et le pays en champs structurés, le reste de l'adresse dans jusqu'à deux éléments AdrLine en texte libre ; le même composant ne doit pas figurer dans les deux. Une adresse non structurée a l'adresse postale entière dans des éléments AdrLine sans TwnNm ni Ctry structurés — c'est le format retiré en novembre 2026 pour les champs de partie concernés.</p>
+<p><strong>Comment pacs008.com aide-t-il à cette transition ?</strong></p>
+<p>La bibliothèque <a href="https://pacs008.com/" title="pacs008 — ISO 20022 pacs.008 Toolkit and API">pacs008 ⧉</a> valide les champs d'adresse postale structurés et hybrides avant la génération XML, marque les données non structurées qui échoueraient après la deadline, supporte les formats hybrides pré-deadline et entièrement structurés post-deadline, et s'intègre dans les pipelines CI et workflows de validation par lot. Elle génère du XML pour les 13 versions pacs.008 supportées, valide contre les schémas XSD officiels ISO 20022, et expose un service FastAPI pour l'orchestration automatisée. Elle est open source sous licence de type MIT, disponible sur PyPI et conçue spécifiquement pour les workflows de virement client FI-à-FI — les règles de validation sont donc calibrées sur les directives d'usage SWIFT CBPR+ SR2026 plutôt qu'abstraites sur de nombreux types de messages.</p>
+<p><strong>Que se passe-t-il si mon institution n'est pas prête en novembre 2026 ?</strong></p>
+<p>Les messages avec adresses non structurées dans les champs de partie concernés seront rejetés au niveau réseau après la bascule. En pratique, cela se traduit par des échecs de paiement, des volumes d'exceptions accrus, des poussées de réparation manuelle et un impact client probable. Le service de traduction en vol de SWIFT est disponible pour certains cas transitoires mais subit des surtaxes à partir de janvier 2026 et ne peut pas parser de manière fiable tous les formats d'adresse. SWIFT a également publié un modèle d'IA open source de structuration d'adresse qui infère ville et pays à partir de données héritées non structurées, mais il est conçu pour la remédiation et le pré-traitement, non comme substitut permanent aux données propres en amont. Les institutions qui arrivent à la deadline sans un domaine de données maîtres remédié et un pipeline de validation automatisé devraient s'attendre à une semaine de bascule difficile et à une hausse opérationnelle significative dans les mois qui suivent.</p>
+<h2 id="references">Références <a class="heading-anchor" href="#references" aria-label="Lien vers Références">#</a></h2>
+<ul>
+<li>Sebastien Rousseau, (2023). <a href="https://sebastienrousseau.com/fr/2023-09-29-automatiser-fichiers-de-paiement-iso-20022-avec-pain001/index.html" title="Automating ISO 20022-Compliant Payment File Creation with Pain001">Automating ISO 20022-Compliant Payment File Creation with Pain001</a>.</li>
+<li>pacs008, (2026). <a href="https://pacs008.com/structured-address/" title="November 2026 structured-address deadline — pacs008">November 2026 structured-address deadline ⧉</a>. pacs008.com.</li>
+<li>pacs008, (2026). <a href="https://pacs008.com/" title="pacs008 — ISO 20022 pacs.008 Toolkit and API">pacs008 — ISO 20022 pacs.008 Toolkit and API ⧉</a>. pacs008.com.</li>
+<li>SWIFT, (2026). <a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" title="ISO 20022 milestone for November 2026: Unstructured addresses to be removed">ISO 20022 milestone for November 2026: Unstructured addresses to be removed ⧉</a>. SWIFT.</li>
+<li>SWIFT, (2026). <a href="https://www.swift.com/standards/iso-20022/iso-20022-financial-institutions-focus-payments-instructions" title="ISO 20022 for Financial Institutions">ISO 20022 for Financial Institutions ⧉</a>. SWIFT.</li>
+<li>SWIFT, (2026). <a href="https://www.swift.com/standards/iso-20022/iso-20022-faqs/swift-ai-address-structuring-model" title="ISO 20022: The Swift AI address structuring model">The Swift AI address structuring model ⧉</a>. SWIFT.</li>
+<li>RedCompass Labs, (2026). <a href="https://financialit.net/news/banking/nearly-half-banks-are-behind-iso-20022" title="Nearly Half of Banks Are Behind on ISO 20022">Nearly Half of Banks Are Behind on ISO 20022 ⧉</a>. Financial IT.</li>
+<li>RedCompass Labs, (2026). <a href="https://www.redcompasslabs.com/insights/iso-20022-is-arriving-all-at-once-for-us-banks/" title="ISO 20022 is arriving all at once for US banks">ISO 20022 is arriving all at once for US banks ⧉</a>. RedCompass Labs.</li>
+<li>ClearingPost, (2026). <a href="https://clearingpost.com/insights/iso-20022-structured-address-deadline-november-2026/" title="The November 2026 Structured Address Deadline">The November 2026 Structured Address Deadline: What Every PSP Needs to Do Now ⧉</a>. ClearingPost.</li>
+<li>CGI UK, (2026). <a href="https://www.cgi.com/uk/en-gb/blog/banking-and-financial-markets/2026-defining-year-iso-20022-and-structured-data-enforcement" title="2026: A defining year for ISO 20022 and structured data enforcement">2026: A defining year for ISO 20022 and structured data enforcement ⧉</a>. CGI UK.</li>
+<li>J.P. Morgan, (2026). <a href="https://www.jpmorgan.com/insights/payments/fx-cross-border/iso-20022-migration" title="ISO 20022 Migration: Guidance, Messaging &amp; More">ISO 20022 Migration: Guidance, Messaging &amp; More ⧉</a>. J.P. Morgan.</li>
+<li>ING, (2026). <a href="https://www.ingwb.com/en/service/payments-and-collections/swift-iso20022/faq-swift-iso-20022" title="FAQ Swift ISO 20022 — ING">FAQ Swift ISO 20022 ⧉</a>. ING Wholesale Banking.</li>
+<li>Mambu, (2026). <a href="https://mambu.com/en/insights/articles/cbpr-is-live-what-iso-20022-means-in-practice" title="CBPR+ is live: what ISO 20022 means in practice">CBPR+ is live: what ISO 20022 means in practice ⧉</a>. Mambu.</li>
+<li>Kyriba, (2026). <a href="https://www.kyriba.com/blog/iso-20022-corporate-treasury-2026/" title="ISO 20022 migration: what every treasury team needs to know about what's next">ISO 20022 migration: what every treasury team needs to know about what's next ⧉</a>. Kyriba.</li>
+<li>Standard Chartered, (2025). <a href="https://www.sc.com/en/uploads/sites/66/content/docs/sc-cib-tb-ISO-20022%E2%80%93CBPR-Address-guidelines-H2H-and-API-sept-2025.pdf" title="Standard Chartered ISO 20022 Address Guidelines">ISO 20022 – Standard Chartered Address Guidelines (H2H and API) ⧉</a>. Standard Chartered.</li>
+<li>State Street, (2025). <a href="https://www.statestreet.com/web/insights/articles/documents/state-street-client-guide-to-iso-20022-2025.pdf" title="State Street Client Guide to ISO 20022 2025">Client Guide to ISO 20022 ⧉</a>. State Street.</li>
+<li>ISO 20022, (2026). <a href="https://www.iso20022.org/iso-20022-message-definitions" title="ISO 20022 Message Definitions">Message Definitions Catalogue ⧉</a>. ISO 20022.</li>
+</ul>
+<aside class="author-card" aria-label="À propos de l'auteur"><img alt="Portrait de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Technologue senior dans la banque, j'écris sur l'IA appliquée, la migration ISO 20022, la cryptographie post-quantique pour les services financiers, et la transformation structurelle des paiements wholesale.</span><span class="author-credentials">Plus de 20 ans d'expérience chez HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Dernière révision <time datetime="2026-05-14">2026-05-14</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Articles connexes</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/fr/2025-09-01-paiements-quantum-safe-epaa" class="related-media" aria-label="Quantum-Safe Payments: Why the Industry Must Act Now" tabindex="-1"><img alt="Quantum computing circuit board in blue light" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="quantum-safe-payments-why-the-industry-must-act-now"><a href="https://sebastienrousseau.com/fr/2025-09-01-paiements-quantum-safe-epaa">Quantum-Safe Payments: Why the Industry Must Act Now</a> <a class="heading-anchor" href="#quantum-safe-payments-why-the-industry-must-act-now" aria-label="Lien vers Quantum-Safe Payments: Why the Industry Must Act Now">#</a></h3><p><time datetime="2025-09-01">2025-09-01</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fr/2023-10-09-shokunin-generateur-de-sites-statiques-rust-le-plus-rapide/index.html" class="related-media" aria-label="Static Site Generator: Fastest Rust-Based SSG" tabindex="-1"><img alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right" src="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="static-site-generator-fastest-rust-based-ssg"><a href="https://sebastienrousseau.com/fr/2023-10-09-shokunin-generateur-de-sites-statiques-rust-le-plus-rapide/index.html">Static Site Generator: Fastest Rust-Based SSG</a> <a class="heading-anchor" href="#static-site-generator-fastest-rust-based-ssg" aria-label="Lien vers Static Site Generator: Fastest Rust-Based SSG">#</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fr/2023-09-29-automatiser-fichiers-de-paiement-iso-20022-avec-pain001/index.html" class="related-media" aria-label="Automating ISO 20022 Payment Files Creation with Pain001" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="automating-iso-20022-payment-files-creation-with-pain001"><a href="https://sebastienrousseau.com/fr/2023-09-29-automatiser-fichiers-de-paiement-iso-20022-avec-pain001/index.html">Automating ISO 20022 Payment Files Creation with Pain001</a> <a class="heading-anchor" href="#automating-iso-20022-payment-files-creation-with-pain001" aria-label="Lien vers Automating ISO 20022 Payment Files Creation with Pain001">#</a></h3><p><time datetime="2023-09-29">2023-09-29</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Sources et références</h2><ol class="article-sources-list"><li><a href="https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed" rel="external noopener nofollow"><span class="source-host">www.swift.com</span><span class="source-path">/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be…</span></a></li><li><a href="https://www.swift.com/standards/iso-20022/iso-20022-faqs/swift-ai-address-structuring-model" rel="external noopener nofollow"><span class="source-host">www.swift.com</span><span class="source-path">/standards/iso-20022/iso-20022-faqs/swift-ai-address-structuring-model</span></a></li><li><a href="https://github.com/sebastienrousseau/pacs008" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/pacs008</span></a></li><li><a href="https://github.com/phoughton/pyiso20022" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/phoughton/pyiso20022</span></a></li><li><a href="https://www.swift.com/standards/iso-20022/iso-20022-financial-institutions-focus-payments-instructions" rel="external noopener nofollow"><span class="source-host">www.swift.com</span><span class="source-path">/standards/iso-20022/iso-20022-financial-institutions-focus-payments-instruct…</span></a></li><li><a href="https://www.jpmorgan.com/insights/payments/fx-cross-border/iso-20022-migration" rel="external noopener nofollow"><span class="source-host">www.jpmorgan.com</span><span class="source-path">/insights/payments/fx-cross-border/iso-20022-migration</span></a></li><li><a href="https://www.iso20022.org/iso-20022-message-definitions" rel="external noopener nofollow"><span class="source-host">www.iso20022.org</span><span class="source-path">/iso-20022-message-definitions</span></a></li></ol></aside><nav class="post-pagination" aria-label="Pagination des articles"><a class="post-pagination-prev" href="/fr/2026-05-11-lucy-besson-transfert-de-connaissances-ia-et-quantique/"><span class="post-pagination-label">Précédent</span><span class="post-pagination-title">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</span></a><a class="post-pagination-next" href="/fr/2026-05-14-securiser-le-livre-comptable-migration-post-quantique-finance-entreprise/"><span class="post-pagination-label">Suivant</span><span class="post-pagination-title">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/about/index.html">À propos</a></li>
+              <li><a href="/contact/index.html">Contact</a></li>
+              <li><a href="/made-with-static-site-generator/index.html">Conçu avec Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Écrits</h2>
+            <ul>
+              <li><a href="/fr/index.html">Articles</a></li>
+              <li><a href="/papers/index.html">Publications</a></li>
+              <li><a href="/tags/index.html">Étiquettes</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Activité</h2>
+            <ul>
+              <li><a href="/projects/index.html">Projets</a></li>
+              <li><a href="/playlists/index.html">Playlists</a></li>
+              <li><a href="/fr/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Réseaux</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Liens sociaux">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
+          </div>
+          <p>
+            <a href="/accessibility/index.html">Accessibilité</a> ·
+            <a href="/privacy/index.html">Confidentialité</a> ·
+            <a href="/terms/index.html">Conditions</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://sebastienrousseau.com/#person",
+      "name": "Sebastien Rousseau",
+      "givenName": "Sebastien",
+      "familyName": "Rousseau",
+      "url": "https://sebastienrousseau.com/",
+      "image": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+      "jobTitle": "Senior Product Manager",
+      "description": "AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "HSBC Commercial & Investment Bank",
+        "url": "https://www.hsbc.com/"
+      },
+      "alumniOf": [
+        {"@type": "Organization", "name": "PayPal"},
+        {"@type": "Organization", "name": "Barclays"},
+        {"@type": "Organization", "name": "Shazam Entertainment"},
+        {"@type": "Organization", "name": "AKQA"},
+        {"@type": "Organization", "name": "Virgin Group"}
+      ],
+      "memberOf": {
+        "@type": "ProgramMembership",
+        "programName": "Quantum-Safe Cryptography Working Group",
+        "hostingOrganization": {
+          "@type": "Organization",
+          "name": "Emerging Payments Association Asia",
+          "url": "https://emergingpaymentsasia.org/"
+        }
+      },
+      "knowsAbout": [
+        "Applied artificial intelligence in banking",
+        "Generative AI for financial services",
+        "Wholesale payments",
+        "ISO 20022 migration",
+        "SWIFT gpi",
+        "SEPA Instant Payments",
+        "Cross-border payments",
+        "Post-quantum cryptography",
+        "CRYSTALS-Kyber",
+        "CRYSTALS-Dilithium",
+        "Quantum-safe payment authentication"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressCountry": "United Kingdom"
+      },
+      "sameAs": [
+        "https://twitter.com/wwdseb",
+        "https://www.linkedin.com/in/sebastienrousseau/",
+        "https://medium.com/@BankingOnQuantum",
+        "https://www.youtube.com/@BankingOnQuantum",
+        "https://github.com/sebastienrousseau"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sebastienrousseau.com/#website",
+      "url": "https://sebastienrousseau.com/",
+      "name": "Sebastien Rousseau",
+      "description": "AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.",
+      "publisher": {"@id": "https://sebastienrousseau.com/#person"},
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://sebastienrousseau.com/#profile",
+      "mainEntity": {"@id": "https://sebastienrousseau.com/#person"},
+      "name": "Sebastien Rousseau: AI, Banking & Financial Services Expert",
+      "url": "https://sebastienrousseau.com/",
+      "inLanguage": "en-GB"
+    }
+  ]
+}
+    </script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":4278,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"headline":"La deadline pacs.008 « adresse structurée » de novembre 2026 : vue à six mois","description":"À mi-novembre 2026, SWIFT CBPR+ rejettera les adresses postales non structurées dans les messages pacs.008 et messages associés. Avec environ 65 % des messages encore non conformes et 44 % des banques en retard, la fenêtre de remédiation se referme plus vite que la plupart des programmes de préparation ne sont conçus pour le gérer.","image":{"@type":"ImageObject","url":"https://sebastienrousseau.com/fr/2026-05-12-iso-20022-pacs008-adresse-structuree-echeance/","width":"1425","height":"571","caption":"ISO 20022 pacs.008 structured address diagram — cross-border payment message fields with TwnNm and Ctry highlighted"},"url":"https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline","datePublished":"2026-05-12T06:06:06+00:00","dateModified":"2026-05-13","inLanguage":"en","keywords":"ISO 20022, pacs.008, SWIFT CBPR+, structured address, November 2026, postal address, TwnNm, Ctry, StrtNm, BldgNb","articleSection":"Payments","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/articles/#blog","name":"Sebastien Rousseau — Articles","url":"https://sebastienrousseau.com/articles/"},"citation":[{"@type":"CreativeWork","url":"https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed"},{"@type":"CreativeWork","url":"https://www.swift.com/standards/iso-20022/iso-20022-faqs/swift-ai-address-structuring-model"},{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/pacs008"},{"@type":"CreativeWork","url":"https://github.com/phoughton/pyiso20022"},{"@type":"CreativeWork","url":"https://www.swift.com/standards/iso-20022/iso-20022-financial-institutions-focus-payments-instructions"},{"@type":"CreativeWork","url":"https://www.jpmorgan.com/insights/payments/fx-cross-border/iso-20022-migration"},{"@type":"CreativeWork","url":"https://www.iso20022.org/iso-20022-message-definitions"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/fr/"},{"@type":"ListItem","position":3,"name":"La deadline pacs.008 « adresse structurée » de novembre 2026 : vue à six mois","item":"https://sebastienrousseau.com/fr/2026-05-12-iso-20022-pacs008-adresse-structuree-echeance/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+<link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"">
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Rechercher">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Rechercher</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Rechercher">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Rechercher dans la documentation..." autocomplete="off" aria-label="Rechercher"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> fermer</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> naviguer</span><span><kbd>Entrée</kbd> ouvrir</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

@@ -59,3 +59,4 @@ Allow: /
 
 Sitemap: https://sebastienrousseau.com/sitemap.xml
 Sitemap: https://sebastienrousseau.com/news-sitemap.xml
+Sitemap: https://sebastienrousseau.com/fr/news-sitemap.xml

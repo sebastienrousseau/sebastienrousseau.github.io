@@ -16,7 +16,11 @@ from __future__ import annotations
 import base64
 import hashlib
 import re
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+from _fr_slugs import EN_TO_FR, FR_TO_EN, en_slug as _en_slug, fr_slug as _fr_slug  # noqa: E402
 
 PUBLIC = Path("public")
 
@@ -515,6 +519,7 @@ Allow: /
 
 Sitemap: https://sebastienrousseau.com/sitemap.xml
 Sitemap: https://sebastienrousseau.com/news-sitemap.xml
+Sitemap: https://sebastienrousseau.com/fr/news-sitemap.xml
 """
 
 
@@ -876,9 +881,42 @@ def refresh_sitemap_lastmod(sitemap_path: Path, index: dict[str, str]) -> int:
         return f'<url>{new_block}</url>'
 
     new_xml = _lastmod_block_re.sub(patch_url, xml)
+
+    # Append the French URL set if not already present. Shokunin's sitemap
+    # only enumerates _posts/ (English); FR pages are added by
+    # build_translations.py after ssg has run, so they never make it into
+    # the sitemap unless we splice them in here.
+    new_xml = _splice_fr_urls(new_xml, index)
+
     if new_xml != xml:
         sitemap_path.write_text(new_xml, encoding="utf-8")
     return patched
+
+
+def _splice_fr_urls(xml: str, lastmod_index: dict[str, str]) -> str:
+    """Add <url> blocks for every FR translation + the FR hub if missing."""
+    base = "https://sebastienrousseau.com"
+    new_blocks: list[str] = []
+    seen = set(_loc_re.findall(xml))
+    # FR hub
+    hub_url = f"{base}/fr/"
+    if hub_url not in seen and f"{base}/fr" not in seen and f"{base}/fr/index.html" not in seen:
+        new_blocks.append(
+            f"<url>\n  <loc>{hub_url}</loc>\n  <changefreq>weekly</changefreq>\n  <priority>0.8</priority>\n</url>"
+        )
+    for en, fr in EN_TO_FR.items():
+        url = f"{base}/fr/{fr}/"
+        if url in seen:
+            continue
+        lastmod = lastmod_index.get(en, "")
+        lm_line = f"\n  <lastmod>{lastmod}</lastmod>" if lastmod else ""
+        new_blocks.append(
+            f"<url>\n  <loc>{url}</loc>{lm_line}\n  <changefreq>monthly</changefreq>\n  <priority>0.7</priority>\n</url>"
+        )
+    if not new_blocks:
+        return xml
+    insertion = "\n" + "\n".join(new_blocks) + "\n"
+    return xml.replace("</urlset>", insertion + "</urlset>", 1)
 
 
 # ---------------------------------------------------------------------------
@@ -1186,17 +1224,25 @@ def build_post_nav_index(pages: list[Path]) -> dict[str, tuple[tuple[str, str] |
     return out
 
 
-def inject_prev_next_nav(html: str, slug: str, nav_index: dict[str, tuple[tuple[str, str] | None, tuple[str, str] | None]]) -> str:
+def inject_prev_next_nav(
+    html: str,
+    slug: str,
+    nav_index: dict[str, tuple[tuple[str, str] | None, tuple[str, str] | None]],
+    is_fr: bool = False,
+) -> str:
     """Inject a <nav class="post-pagination"> with prev/next links just
     before the closing ``</div></main>`` of any dated BlogPosting page.
-    Localized via _labels(html); French pages get French labels."""
+    Localized via _labels(html); French pages get French labels and links
+    pointing to the matching FR slug under ``/fr/``."""
     if '"@type":"BlogPosting"' not in html:
         return html
-    if slug not in nav_index:
+    # For FR pages the page's slug is the FR slug — look up by EN counterpart.
+    lookup_slug = _en_slug(slug) if is_fr else slug
+    if lookup_slug not in nav_index:
         return html
     if 'class="post-pagination"' in html:
         return html
-    prev_e, next_e = nav_index[slug]
+    prev_e, next_e = nav_index[lookup_slug]
     if not prev_e and not next_e:
         return html
     labels = _labels(html)
@@ -1205,8 +1251,16 @@ def inject_prev_next_nav(html: str, slug: str, nav_index: dict[str, tuple[tuple[
         if not entry:
             return '<span class="post-pagination-stub" aria-hidden="true"></span>'
         s, t = entry
+        # On FR pages, point at the FR sibling under /fr/<fr-slug>/. The
+        # localized title is unavailable here (nav_index only carries the
+        # English H1); the FR page itself will render in French, and the
+        # link label is translated via labels[] above.
+        if is_fr and s in EN_TO_FR:
+            href = f"/fr/{EN_TO_FR[s]}/"
+        else:
+            href = f"/{s}/"
         return (
-            f'<a class="post-pagination-{direction}" href="/{s}/">'
+            f'<a class="post-pagination-{direction}" href="{href}">'
             f'<span class="post-pagination-label">{label}</span>'
             f'<span class="post-pagination-title">{t}</span>'
             f'</a>'
@@ -1326,23 +1380,41 @@ _HEAD_END_RE = re.compile(r'</head>', re.IGNORECASE)
 _HREFLANG_RE = re.compile(r'<link\s+rel="alternate"\s+hreflang="[^"]+"[^/]*/>', re.IGNORECASE)
 
 
-def _translated_slugs() -> set[str]:
-    """Walk public/fr/ for slugs that have a French translation."""
+def _translated_slugs() -> tuple[set[str], set[str]]:
+    """Discover which EN and FR slugs have rendered counterparts under
+    ``public/``. Returns ``(en_slugs_with_fr, fr_slugs_with_en)``.
+    """
     fr_dir = PUBLIC / "fr"
     if not fr_dir.is_dir():
-        return set()
-    return {p.parent.name for p in fr_dir.glob("*/index.html")}
+        return set(), set()
+    rendered_fr = {p.parent.name for p in fr_dir.glob("*/index.html")}
+    en_with_fr = {en for en, fr in EN_TO_FR.items() if fr in rendered_fr}
+    fr_with_en = rendered_fr & set(FR_TO_EN.keys())
+    return en_with_fr, fr_with_en
 
 
-def inject_hreflang(html: str, slug: str, lang: str, translated: set[str]) -> str:
+def inject_hreflang(
+    html: str,
+    slug: str,
+    lang: str,
+    en_with_fr: set[str],
+    fr_with_en: set[str],
+) -> str:
     """Inject reciprocal hreflang links so Google + crawlers pair the two
-    language versions. Only applies to slugs that actually have a French
-    translation; English-only posts are untouched.
+    language versions. Translates EN ↔ FR slug via :mod:`_fr_slugs`.
     """
-    if slug not in translated:
-        return html
-    en_url = f"https://sebastienrousseau.com/{slug}/"
-    fr_url = f"https://sebastienrousseau.com/fr/{slug}/"
+    if lang == "fr":
+        if slug not in fr_with_en:
+            return html
+        en = _en_slug(slug)
+        fr = slug
+    else:
+        if slug not in en_with_fr:
+            return html
+        en = slug
+        fr = _fr_slug(slug)
+    en_url = f"https://sebastienrousseau.com/{en}/"
+    fr_url = f"https://sebastienrousseau.com/fr/{fr}/"
     # Strip any existing hreflang link tags so we don't duplicate.
     html = _HREFLANG_RE.sub('', html)
     links = (
@@ -1358,7 +1430,7 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
     # Pre-pass: build the chronological prev/next index over every dated
     # BlogPosting page. Indexed once per build, then read per page.
     nav_index = build_post_nav_index(pages)
-    translated = _translated_slugs()
+    en_with_fr, fr_with_en = _translated_slugs()
     sri_patched = 0
     csp_patched = 0
     itemlist_patched = 0
@@ -1414,7 +1486,10 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
         # Prev/next nav must run AFTER inject_sources_list because the
         # sources injector anchors against either the nav or the </main>;
         # placing nav first would push sources above the nav cleanly.
-        patched_nav = inject_prev_next_nav(patched_src, page.parent.name, nav_index)
+        page_is_fr = page.parent.parent.name == "fr"
+        patched_nav = inject_prev_next_nav(
+            patched_src, page.parent.name, nav_index, is_fr=page_is_fr
+        )
         if patched_nav != patched_src:
             nav_patched += 1
         # Reciprocal hreflang for paired English/French pages. Slug is the
@@ -1422,7 +1497,13 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
         # (/fr/foo/) — strip the "fr/" prefix when matching.
         rel_slug = page.parent.name
         is_fr = page.parent.parent.name == "fr"
-        patched_hl = inject_hreflang(patched_nav, rel_slug, "fr" if is_fr else "en", translated)
+        patched_hl = inject_hreflang(
+            patched_nav,
+            rel_slug,
+            "fr" if is_fr else "en",
+            en_with_fr,
+            fr_with_en,
+        )
         if patched_hl != patched_nav:
             hreflang_patched += 1
         patched2 = inject_jsonld_hashes(patched_hl)

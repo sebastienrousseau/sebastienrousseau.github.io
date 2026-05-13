@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fr-FR">
+  <title>Sebastien Rousseau — Édition française</title>
+  <link href="https://sebastienrousseau.com/fr/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://sebastienrousseau.com/fr/"/>
+  <id>https://sebastienrousseau.com/fr/</id>
+  <updated>2026-05-13T23:23:23+00:00</updated>
+  <entry>
+    <title>Le rendement caché : décryptage des dépôts BRSRV et BSTBL de BlackRock</title>
+    <link href="https://sebastienrousseau.com/fr/2026-05-15-blackrock-brsrv-bstbl-genius-act-fonds-monetaire-tokenise/"/>
+    <id>https://sebastienrousseau.com/fr/2026-05-15-blackrock-brsrv-bstbl-genius-act-fonds-monetaire-tokenise/</id>
+    <updated>2026-05-15T06:06:06+00:00</updated>
+    <published>2026-05-15T06:06:06+00:00</published>
+    <summary>Sous le GENIUS Act, les stablecoins ne peuvent pas verser de rendement. Les dépôts BRSRV et BSTBL de BlackRock illustrent le contournement : un fonds monétaire tokenisé en parallèle d&apos;un stablecoin réglementé, pour acheminer le rendement via un rail conforme adjacent.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Sécuriser le registre : guide à l&apos;usage des conseils d&apos;administration sur la migration post-quantique en banque de financement</title>
+    <link href="https://sebastienrousseau.com/fr/2026-05-14-securiser-le-livre-comptable-migration-post-quantique-finance-entreprise/"/>
+    <id>https://sebastienrousseau.com/fr/2026-05-14-securiser-le-livre-comptable-migration-post-quantique-finance-entreprise/</id>
+    <updated>2026-05-14T06:06:06+00:00</updated>
+    <published>2026-05-14T06:06:06+00:00</published>
+    <summary>Le risque quantique est passé de la curiosité académique au mandat réglementaire. Avec la feuille de route du G7 de janvier 2026, des calendriers UE, UK et australien désormais clarifiés, et BIS Project Leap qui a fait la démonstration de la faisabilité en système de paiement réel, la question pour les conseils d&apos;administration n&apos;est plus celle de la migration, mais celle des délais.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>La deadline pacs.008 « adresse structurée » de novembre 2026 : vue à six mois</title>
+    <link href="https://sebastienrousseau.com/fr/2026-05-12-iso-20022-pacs008-adresse-structuree-echeance/"/>
+    <id>https://sebastienrousseau.com/fr/2026-05-12-iso-20022-pacs008-adresse-structuree-echeance/</id>
+    <updated>2026-05-12T06:06:06+00:00</updated>
+    <published>2026-05-12T06:06:06+00:00</published>
+    <summary>À mi-novembre 2026, SWIFT CBPR+ rejettera les adresses postales non structurées dans les messages pacs.008 et messages associés. Avec environ 65 % des messages encore non conformes et 44 % des banques en retard, la fenêtre de remédiation se referme plus vite que la plupart des programmes de préparation ne sont conçus pour le gérer.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>La clé USB de Lucy, revisitée : ce que Besson voyait de la migration du savoir vers les machines</title>
+    <link href="https://sebastienrousseau.com/fr/2026-05-11-lucy-besson-transfert-de-connaissances-ia-et-quantique/"/>
+    <id>https://sebastienrousseau.com/fr/2026-05-11-lucy-besson-transfert-de-connaissances-ia-et-quantique/</id>
+    <updated>2026-05-11T06:06:06+00:00</updated>
+    <published>2026-05-11T06:06:06+00:00</published>
+    <summary>Douze ans après sa sortie, Lucy de Luc Besson se lit moins comme de la pseudo-science que comme une expérience de pensée sur ce qui se produit lorsque le savoir humain migre vers des supports non biologiques. À l&apos;ère des grands modèles de langage, des qubits à atomes neutres et de l&apos;émulation cérébrale complète, la métaphore centrale du film vieillit remarquablement bien.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Les seuils quantiques bougent à nouveau</title>
+    <link href="https://sebastienrousseau.com/fr/2026-04-11-les-seuils-quantiques-bougent-a-nouveau/"/>
+    <id>https://sebastienrousseau.com/fr/2026-04-11-les-seuils-quantiques-bougent-a-nouveau/</id>
+    <updated>2026-04-11T06:06:06+00:00</updated>
+    <published>2026-04-11T06:06:06+00:00</published>
+    <summary>Un nouvel article suggère que l&apos;algorithme de Shor pourrait s&apos;exécuter sur seulement 10 000 qubits. Le seuil du calcul quantique cryptographiquement pertinent chute plus vite que la plupart ne le supposaient.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Paiements quantique-résistants : pourquoi l&apos;industrie doit agir maintenant</title>
+    <link href="https://sebastienrousseau.com/fr/2025-09-01-paiements-quantum-safe-epaa/"/>
+    <id>https://sebastienrousseau.com/fr/2025-09-01-paiements-quantum-safe-epaa/</id>
+    <updated>2025-09-01T06:06:06+00:00</updated>
+    <published>2025-09-01T06:06:06+00:00</published>
+    <summary>Le calcul quantique menace la cryptographie des systèmes de paiement. Le livre blanc EPAA expose le risque structurel et plaide pour une migration urgente vers la cryptographie post-quantique.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Cryptographie sur réseaux : un bug dans l&apos;attaque LWE de Chen</title>
+    <link href="https://sebastienrousseau.com/fr/2024-04-22-bug-dans-l-algorithme-quantique-pour-la-cryptographie-fondee-sur-les-reseaux/"/>
+    <id>https://sebastienrousseau.com/fr/2024-04-22-bug-dans-l-algorithme-quantique-pour-la-cryptographie-fondee-sur-les-reseaux/</id>
+    <updated>2024-04-22T06:06:06+00:00</updated>
+    <published>2024-04-22T06:06:06+00:00</published>
+    <summary>Un bug dans l&apos;algorithme quantique LWE de Yilei Chen offre un sursis temporaire à la cryptographie sur réseaux. Ce que cela signifie pour CRYSTALS-Kyber, Dilithium et la feuille de route PQC.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Un algorithme quantique met au défi la cryptographie sur réseaux</title>
+    <link href="https://sebastienrousseau.com/fr/2024-04-15-l-algorithme-quantique-defie-la-cryptographie-fondee-sur-les-reseaux/"/>
+    <id>https://sebastienrousseau.com/fr/2024-04-15-l-algorithme-quantique-defie-la-cryptographie-fondee-sur-les-reseaux/</id>
+    <updated>2024-04-15T06:06:06+00:00</updated>
+    <published>2024-04-15T06:06:06+00:00</published>
+    <summary>Un nouvel algorithme quantique en temps polynomial de Yilei Chen cible la cryptographie sur réseaux. Implications pour les standards post-quantiques, dont CRYSTALS-Kyber.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>OpenVoice : à la pointe de l&apos;innovation en clonage vocal</title>
+    <link href="https://sebastienrousseau.com/fr/2024-04-01-openvoice-innovation-de-pointe-dans-le-clonage-vocal/"/>
+    <id>https://sebastienrousseau.com/fr/2024-04-01-openvoice-innovation-de-pointe-dans-le-clonage-vocal/</id>
+    <updated>2024-04-01T06:06:06+00:00</updated>
+    <published>2024-04-01T06:06:06+00:00</published>
+    <summary>OpenVoice, du MIT, Tsinghua et MyShell : un clonage vocal de qualité production avec contrôle du ton, de l&apos;accent et de l&apos;émotion — et les compromis à connaître.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Le chiffrement entièrement homomorphe (FHE) à l&apos;ère bancaire quantique</title>
+    <link href="https://sebastienrousseau.com/fr/2024-03-25-chiffrement-completement-homomorphique-a-l-ere-quantique-bancaire/"/>
+    <id>https://sebastienrousseau.com/fr/2024-03-25-chiffrement-completement-homomorphique-a-l-ere-quantique-bancaire/</id>
+    <updated>2024-03-25T06:06:06+00:00</updated>
+    <published>2024-03-25T06:06:06+00:00</published>
+    <summary>Comment le chiffrement entièrement homomorphe révolutionne la sécurité des données dans la banque et la finance, en garantissant la confidentialité face aux menaces du calcul quantique.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Faire progresser l&apos;IA avec les LLM multimodaux : enseignements de MM1</title>
+    <link href="https://sebastienrousseau.com/fr/2024-03-18-faire-avancer-l-ia-avec-les-llm-multimodaux-enseignements-de-mm1/"/>
+    <id>https://sebastienrousseau.com/fr/2024-03-18-faire-avancer-l-ia-avec-les-llm-multimodaux-enseignements-de-mm1/</id>
+    <updated>2024-03-18T06:06:06+00:00</updated>
+    <published>2024-03-18T06:06:06+00:00</published>
+    <summary>Découvrez l&apos;article MM1 d&apos;Apple sur les grands modèles de langage multimodaux (MLLM). Architecture, stratégies de pré-entraînement et potentiels de l&apos;IA.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Reconnaissance vocale en temps réel rapide sur macOS : OpenAI Whisper</title>
+    <link href="https://sebastienrousseau.com/fr/2024-03-12-revolutionner-la-reconnaissance-vocale-en-temps-reel-sur-macos-avec-whisper/"/>
+    <id>https://sebastienrousseau.com/fr/2024-03-12-revolutionner-la-reconnaissance-vocale-en-temps-reel-sur-macos-avec-whisper/</id>
+    <updated>2024-03-12T06:06:06+00:00</updated>
+    <published>2024-03-12T06:06:06+00:00</published>
+    <summary>Comment OpenAI Whisper et Metal Performance Shaders transforment la reconnaissance vocale en temps réel sur macOS, avec vitesse et précision inégalées.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>RustLogs (RLG) : bibliothèque de journalisation structurée pour Rust</title>
+    <link href="https://sebastienrousseau.com/fr/2024-03-08-rustlogs-bibliotheque-de-journalisation-avancee-pour-rust/"/>
+    <id>https://sebastienrousseau.com/fr/2024-03-08-rustlogs-bibliotheque-de-journalisation-avancee-pour-rust/</id>
+    <updated>2024-03-08T06:06:06+00:00</updated>
+    <published>2024-03-08T06:06:06+00:00</published>
+    <summary>Découvrez RustLogs (RLG), la bibliothèque flexible de journalisation pour Rust avec formats de logs structurés, journalisation asynchrone et options de personnalisation étendues.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Le Chat de Mistral AI : IA conversationnelle multilingue</title>
+    <link href="https://sebastienrousseau.com/fr/2024-03-04-le-chat-de-mistral-ai-une-nouvelle-ere-de-l-ia-conversationnelle/"/>
+    <id>https://sebastienrousseau.com/fr/2024-03-04-le-chat-de-mistral-ai-une-nouvelle-ere-de-l-ia-conversationnelle/</id>
+    <updated>2024-03-04T06:06:06+00:00</updated>
+    <published>2024-03-04T06:06:06+00:00</published>
+    <summary>Rencontre avec le nouvel assistant multilingue de Mistral AI — une IA avancée capable de comprendre et répondre dans plusieurs langues, dans une même conversation et en temps réel.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Google Gemma : transformer le développement de l&apos;IA open source</title>
+    <link href="https://sebastienrousseau.com/fr/2024-02-26-google-gemma-transformer-le-developpement-ia-open-source/"/>
+    <id>https://sebastienrousseau.com/fr/2024-02-26-google-gemma-transformer-le-developpement-ia-open-source/</id>
+    <updated>2024-02-26T06:06:06+00:00</updated>
+    <published>2024-02-26T06:06:06+00:00</published>
+    <summary>Découvrez le modèle Gemma de Google : un projet open source proposant des solutions d&apos;IA éthique pour un usage personnel comme entreprise.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Décrypter Gemini 1.5 : la révolution IA de Google expliquée</title>
+    <link href="https://sebastienrousseau.com/fr/2024-02-19-decouvrir-gemini-la-revolution-ia-de-google-expliquee/"/>
+    <id>https://sebastienrousseau.com/fr/2024-02-19-decouvrir-gemini-la-revolution-ia-de-google-expliquee/</id>
+    <updated>2024-02-19T06:06:06+00:00</updated>
+    <published>2024-02-19T06:06:06+00:00</published>
+    <summary>Gemini 1.5 de Google fait passer la fenêtre de contexte au-delà du million de tokens. Ce que cela débloque pour la finance augmentée par récupération et les compromis à connaître.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>L&apos;AI Act de l&apos;UE : pionnier de la régulation éthique de l&apos;IA dans le monde</title>
+    <link href="https://sebastienrousseau.com/fr/2024-02-13-ai-act-europeen-faconner-l-avenir-de-la-regulation-mondiale-de-l-ia/"/>
+    <id>https://sebastienrousseau.com/fr/2024-02-13-ai-act-europeen-faconner-l-avenir-de-la-regulation-mondiale-de-l-ia/</id>
+    <updated>2024-02-13T06:06:06+00:00</updated>
+    <published>2024-02-13T06:06:06+00:00</published>
+    <summary>L&apos;AI Act de l&apos;UE établit le premier cadre complet de régulation éthique et risquée de l&apos;IA dans le monde. Ce qui change pour les banques, les fournisseurs et les systèmes à haut risque.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Àkàndé : assistant vocal propulsé par GPT pour dirigeants</title>
+    <link href="https://sebastienrousseau.com/fr/2024-02-12-akande-assistant-vocal-revolution-assistance-personnelle-et-executive/"/>
+    <id>https://sebastienrousseau.com/fr/2024-02-12-akande-assistant-vocal-revolution-assistance-personnelle-et-executive/</id>
+    <updated>2024-02-12T06:06:06+00:00</updated>
+    <published>2024-02-12T06:06:06+00:00</published>
+    <summary>Comment Àkàndé tire parti de la compréhension du langage naturel d&apos;OpenAI GPT, des résumés PDF et d&apos;un cache efficace pour redéfinir l&apos;assistance personnelle et exécutive.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>IA générative dans la publicité : Amazon Rufus &amp; Meta</title>
+    <link href="https://sebastienrousseau.com/fr/2024-02-08-revolutionner-la-publicite-comment-l-ia-faconne-l-avenir/"/>
+    <id>https://sebastienrousseau.com/fr/2024-02-08-revolutionner-la-publicite-comment-l-ia-faconne-l-avenir/</id>
+    <updated>2024-02-08T06:06:06+00:00</updated>
+    <published>2024-02-08T06:06:06+00:00</published>
+    <summary>Comment l&apos;IA transforme la publicité — aperçus sur Rufus d&apos;Amazon et les derniers développements de Meta. Découvrez l&apos;impact sur l&apos;engagement consommateur.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Analyse, traduction et insights audio propulsés par l&apos;IA</title>
+    <link href="https://sebastienrousseau.com/fr/2024-01-29-analyse-audio-traductions-et-insights-ia/"/>
+    <id>https://sebastienrousseau.com/fr/2024-01-29-analyse-audio-traductions-et-insights-ia/</id>
+    <updated>2024-01-29T06:06:06+00:00</updated>
+    <published>2024-01-29T06:06:06+00:00</published>
+    <summary>Comment Audio Analyser, propulsé par Azure AI, transforme la conversion speech-to-text, l&apos;analyse de texte et les traductions pour des insights exploitables.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>AI Prompt Engineering 2024 : techniques qui marchent</title>
+    <link href="https://sebastienrousseau.com/fr/2024-01-23-avancees-en-prompt-engineering-ia/"/>
+    <id>https://sebastienrousseau.com/fr/2024-01-23-avancees-en-prompt-engineering-ia/</id>
+    <updated>2024-01-23T06:06:06+00:00</updated>
+    <published>2024-01-23T06:06:06+00:00</published>
+    <summary>Explorez les avancées 2024 du Prompt Engineering — tendances et techniques innovantes qui révolutionnent la tech et la finance.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Alien Studio : mon voyage de la tech à l&apos;art photographique</title>
+    <link href="https://sebastienrousseau.com/fr/2024-01-15-alien-studio-revolution-de-l-art-par-la-photographie-ia/"/>
+    <id>https://sebastienrousseau.com/fr/2024-01-15-alien-studio-revolution-de-l-art-par-la-photographie-ia/</id>
+    <updated>2024-01-15T06:06:06+00:00</updated>
+    <published>2024-01-15T06:06:06+00:00</published>
+    <summary>Rejoignez-moi sur mon parcours personnel — de Rust, l&apos;IA et le calcul quantique vers la redéfinition de l&apos;art et de la photographie via Alien Studio.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Qiskit &amp; transformée de Fourier quantique pour l&apos;analyse de ratios de crédit</title>
+    <link href="https://sebastienrousseau.com/fr/2024-01-08-optimiser-le-ratio-de-credit-avec-ibm-qiskit-et-fourier-quantique/"/>
+    <id>https://sebastienrousseau.com/fr/2024-01-08-optimiser-le-ratio-de-credit-avec-ibm-qiskit-et-fourier-quantique/</id>
+    <updated>2024-01-08T06:06:06+00:00</updated>
+    <published>2024-01-08T06:06:06+00:00</published>
+    <summary>Comment IBM Qiskit et la transformée de Fourier quantique révolutionnent l&apos;analyse de ratios de crédit en finance, offrant précision et rapidité inédites.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Tendances IA 2024 : aperçus et prédictions pour le futur</title>
+    <link href="https://sebastienrousseau.com/fr/2024-01-01-tendances-ia-2024-perspectives-et-predictions/"/>
+    <id>https://sebastienrousseau.com/fr/2024-01-01-tendances-ia-2024-perspectives-et-predictions/</id>
+    <updated>2024-01-01T06:06:06+00:00</updated>
+    <published>2024-01-01T06:06:06+00:00</published>
+    <summary>Tendances IA pour 2024 : IA générative en finance, modèles multimodaux, LLM on-device et les basculements qui remodèleront la banque et l&apos;ingénierie produit.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Révolutionner la finance par les algorithmes quantiques augmentés par l&apos;IA</title>
+    <link href="https://sebastienrousseau.com/fr/2023-12-25-revolutionner-la-finance-avec-des-algorithmes-quantiques-ia/"/>
+    <id>https://sebastienrousseau.com/fr/2023-12-25-revolutionner-la-finance-avec-des-algorithmes-quantiques-ia/</id>
+    <updated>2023-12-25T06:06:06+00:00</updated>
+    <published>2023-12-25T06:06:06+00:00</published>
+    <summary>Le rôle transformateur de l&apos;IA dans les algorithmes quantiques pour la finance, avec un focus sur leurs subtilités mathématiques et leurs applications bancaires.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>État de l&apos;IA et du calcul quantique dans la banque : revue 2023</title>
+    <link href="https://sebastienrousseau.com/fr/2023-12-18-etat-ia-et-informatique-quantique-banque-revue-2023/"/>
+    <id>https://sebastienrousseau.com/fr/2023-12-18-etat-ia-et-informatique-quantique-banque-revue-2023/</id>
+    <updated>2023-12-18T06:06:06+00:00</updated>
+    <published>2023-12-18T06:06:06+00:00</published>
+    <summary>Explorer le paysage technologique 2023 : IA et calcul quantique révolutionnant la banque, montée des modèles open source, régulations et gouvernance en évolution.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>La distribution de clés quantique révolutionne la sécurité bancaire</title>
+    <link href="https://sebastienrousseau.com/fr/2023-12-11-distribution-quantique-de-cles-revolution-securite-bancaire/"/>
+    <id>https://sebastienrousseau.com/fr/2023-12-11-distribution-quantique-de-cles-revolution-securite-bancaire/</id>
+    <updated>2023-12-11T06:06:06+00:00</updated>
+    <published>2023-12-11T06:06:06+00:00</published>
+    <summary>Alors que les ordinateurs quantiques menacent les méthodes de chiffrement classiques, la distribution de clés quantique (QKD) émerge comme un game-changer, offrant une sécurité sans pareil.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Gestion efficace des dates et heures avec DateTime (DTT)</title>
+    <link href="https://sebastienrousseau.com/fr/2023-12-04-maitriser-date-et-heure-en-rust-avec-la-bibliotheque-dtt/"/>
+    <id>https://sebastienrousseau.com/fr/2023-12-04-maitriser-date-et-heure-en-rust-avec-la-bibliotheque-dtt/</id>
+    <updated>2023-12-04T06:06:06+00:00</updated>
+    <published>2023-12-04T06:06:06+00:00</published>
+    <summary>DateTime (DTT) est une bibliothèque Rust pour parser, valider, manipuler et formater dates et heures — haute précision, large fonctionnalité.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>KyberLib : CRYSTALS-Kyber en Rust pour le post-quantique</title>
+    <link href="https://sebastienrousseau.com/fr/2023-11-28-kyberlib-bouclier-rust-contre-les-menaces-quantiques/"/>
+    <id>https://sebastienrousseau.com/fr/2023-11-28-kyberlib-bouclier-rust-contre-les-menaces-quantiques/</id>
+    <updated>2023-11-28T06:06:06+00:00</updated>
+    <published>2023-11-28T06:06:06+00:00</published>
+    <summary>Implémentation cryptographique robuste et quantique-résistante de l&apos;algorithme CRYSTALS-Kyber, pour protéger vos données des menaces quantiques et attaques cryptanalytiques.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>CRYSTALS-Kyber : l&apos;algorithme de protection à l&apos;ère quantique</title>
+    <link href="https://sebastienrousseau.com/fr/2023-11-19-crystals-kyber-algorithme-de-protection-a-l-ere-quantique/"/>
+    <id>https://sebastienrousseau.com/fr/2023-11-19-crystals-kyber-algorithme-de-protection-a-l-ere-quantique/</id>
+    <updated>2023-11-19T06:06:06+00:00</updated>
+    <published>2023-11-19T06:06:06+00:00</published>
+    <summary>Comment CRYSTALS-Kyber, algorithme de cryptographie quantique-résistant, révolutionne le monde de la cryptographie et nous prépare à l&apos;ère quantique.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>IA générative en 2023 : comment ça marche, où ça atterrit</title>
+    <link href="https://sebastienrousseau.com/fr/2023-11-12-explorer-l-ia-generative/"/>
+    <id>https://sebastienrousseau.com/fr/2023-11-12-explorer-l-ia-generative/</id>
+    <updated>2023-11-12T06:06:06+00:00</updated>
+    <published>2023-11-12T06:06:06+00:00</published>
+    <summary>Explorez l&apos;IA générative en 2023 : comment elle fonctionne, où elle s&apos;implante d&apos;abord dans les services financiers, et les questions éthiques et architecturales à se poser.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Constantes mathématiques et cryptographiques pour la sécurité Rust</title>
+    <link href="https://sebastienrousseau.com/fr/2023-11-05-constantes-mathematiques-et-cryptographiques-pour-rust/"/>
+    <id>https://sebastienrousseau.com/fr/2023-11-05-constantes-mathematiques-et-cryptographiques-pour-rust/</id>
+    <updated>2023-11-05T06:06:06+00:00</updated>
+    <published>2023-11-05T06:06:06+00:00</published>
+    <summary>Protégez l&apos;intégrité du code avec des constantes mathématiques et cryptographiques rigoureusement vérifiées, renforçant sûreté mémoire et concurrence.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Rationaliser le développement de bibliothèques Rust par la génération de code</title>
+    <link href="https://sebastienrousseau.com/fr/2023-10-26-libmake-generateur-de-code-pour-bibliotheques-rust/"/>
+    <id>https://sebastienrousseau.com/fr/2023-10-26-libmake-generateur-de-code-pour-bibliotheques-rust/</id>
+    <updated>2023-10-26T06:06:06+00:00</updated>
+    <published>2023-10-26T06:06:06+00:00</published>
+    <summary>Boostez le développement de bibliothèques Rust avec LibMake : un outil de génération de code qui impose les bonnes pratiques et produit le code initial, économisant temps et effort.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Protéger les données à l&apos;ère quantique : la bibliothèque Hash (HSH)</title>
+    <link href="https://sebastienrousseau.com/fr/2023-10-16-proteger-les-donnees-a-l-ere-quantique-bibliotheque-hash-hsh/"/>
+    <id>https://sebastienrousseau.com/fr/2023-10-16-proteger-les-donnees-a-l-ere-quantique-bibliotheque-hash-hsh/</id>
+    <updated>2023-10-16T06:06:06+00:00</updated>
+    <published>2023-10-16T06:06:06+00:00</published>
+    <summary>HSH s&apos;appuie sur des primitives cryptographiques résistantes au quantique pour protéger vos données face aux avancées futures du calcul quantique.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Shokunin : le générateur de sites statiques le plus rapide basé sur Rust</title>
+    <link href="https://sebastienrousseau.com/fr/2023-10-09-shokunin-generateur-de-sites-statiques-rust-le-plus-rapide/"/>
+    <id>https://sebastienrousseau.com/fr/2023-10-09-shokunin-generateur-de-sites-statiques-rust-le-plus-rapide/</id>
+    <updated>2023-10-09T06:06:06+00:00</updated>
+    <published>2023-10-09T06:06:06+00:00</published>
+    <summary>Créez des sites statiques à fort impact, scalables à l&apos;infini et entièrement sous votre contrôle, grâce à Shokunin — un SSG ultra-rapide écrit en Rust.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Automatiser la création de fichiers de paiement conformes ISO 20022 avec Pain001</title>
+    <link href="https://sebastienrousseau.com/fr/2023-09-29-automatiser-fichiers-de-paiement-iso-20022-avec-pain001/"/>
+    <id>https://sebastienrousseau.com/fr/2023-09-29-automatiser-fichiers-de-paiement-iso-20022-avec-pain001/</id>
+    <updated>2023-09-29T06:06:06+00:00</updated>
+    <published>2023-09-29T06:06:06+00:00</published>
+    <summary>Automatisez la création de fichiers de paiement pain.001 conformes ISO 20022 à partir de CSV ou SQLite avec Pain001, la bibliothèque Python open source.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>La création de la plateforme Express Transaction Credits</title>
+    <link href="https://sebastienrousseau.com/fr/2018-02-15-creation-de-la-plateforme-express-transaction-credits/"/>
+    <id>https://sebastienrousseau.com/fr/2018-02-15-creation-de-la-plateforme-express-transaction-credits/</id>
+    <updated>2018-02-15T06:06:06+00:00</updated>
+    <published>2018-02-15T06:06:06+00:00</published>
+    <summary>Développer un cadre complet pour la prochaine génération de tokens conformes Ethereum Request for Comment via la norme ERC-223.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Dévoiler une nouvelle cryptomonnaie et une solution de paiement plus rapide</title>
+    <link href="https://sebastienrousseau.com/fr/2018-02-04-nouvelle-cryptomonnaie-solution-de-paiement-plus-rapide/"/>
+    <id>https://sebastienrousseau.com/fr/2018-02-04-nouvelle-cryptomonnaie-solution-de-paiement-plus-rapide/</id>
+    <updated>2018-02-04T06:06:06+00:00</updated>
+    <published>2018-02-04T06:06:06+00:00</published>
+    <summary>Un chapitre significatif dans l&apos;évolution du paysage financier mondial, façonné par l&apos;innovation technologique, les bascules géopolitiques et la finance durable.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>La norme de token ERC-20</title>
+    <link href="https://sebastienrousseau.com/fr/2018-01-24-la-norme-de-token-erc-20/"/>
+    <id>https://sebastienrousseau.com/fr/2018-01-24-la-norme-de-token-erc-20/</id>
+    <updated>2018-01-24T06:06:06+00:00</updated>
+    <published>2018-01-24T06:06:06+00:00</published>
+    <summary>ERC-20 : le type de token le plus répandu sur la blockchain Ethereum, souvent décrit comme un contrat numérique intelligent (smart contract).</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Comprendre la technologie derrière la blockchain</title>
+    <link href="https://sebastienrousseau.com/fr/2018-01-09-comprendre-la-technologie-derriere-la-blockchain/"/>
+    <id>https://sebastienrousseau.com/fr/2018-01-09-comprendre-la-technologie-derriere-la-blockchain/</id>
+    <updated>2018-01-09T06:06:06+00:00</updated>
+    <published>2018-01-09T06:06:06+00:00</published>
+    <summary>Construire une cryptomonnaie sur la blockchain Ethereum : un guide complet du développement blockchain, de la tokenisation et de l&apos;implémentation.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Blockchain : la technologie qui compte en 2018</title>
+    <link href="https://sebastienrousseau.com/fr/2018-01-02-blockchain-la-technologie-qui-compte-en-2018/"/>
+    <id>https://sebastienrousseau.com/fr/2018-01-02-blockchain-la-technologie-qui-compte-en-2018/</id>
+    <updated>2018-01-02T06:06:06+00:00</updated>
+    <published>2018-01-02T06:06:06+00:00</published>
+    <summary>Le récit du voyage extraordinaire de la sécurisation des transactions numériques par la cryptographie à clé privée et les réseaux pair-à-pair (P2P).</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Bitcoin : l&apos;année en revue de la première cryptomonnaie</title>
+    <link href="https://sebastienrousseau.com/fr/2018-01-01-bitcoin-l-annee-en-revue/"/>
+    <id>https://sebastienrousseau.com/fr/2018-01-01-bitcoin-l-annee-en-revue/</id>
+    <updated>2018-01-01T06:06:06+00:00</updated>
+    <published>2018-01-01T06:06:06+00:00</published>
+    <summary>Bitcoin : un système de paiement électronique pair-à-pair (P2P ECS) qui peut révolutionner la manière dont les gens transactent en ligne.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+</feed>

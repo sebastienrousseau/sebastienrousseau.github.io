@@ -93,191 +93,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
-  <loc>https://sebastienrousseau.com/fr/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2026-04-11-quantum-thresholds-are-moving-again/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-15</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-13</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2026-05-12-iso-20022-pacs008-structured-address-deadline/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2024-01-23-advancements-in-ai-prompt-engineering/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-14</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2023-11-12-exploring-generative-ai/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2025-09-01-quantum-safe-payments-epaa/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2026-05-11</lastmod>
-  <loc>https://sebastienrousseau.com/fr/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html</loc>
-</url>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/thanks/index.html</loc>
 </url>
 <url>
@@ -509,4 +324,262 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/made-with-static-site-generator/index.html</loc>
-</url></urlset>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2018-01-01-bitcoin-l-annee-en-revue/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2018-01-02-blockchain-la-technologie-qui-compte-en-2018/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2018-01-09-comprendre-la-technologie-derriere-la-blockchain/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2018-01-24-la-norme-de-token-erc-20/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2018-02-04-nouvelle-cryptomonnaie-solution-de-paiement-plus-rapide/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2018-02-15-creation-de-la-plateforme-express-transaction-credits/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2023-09-29-automatiser-fichiers-de-paiement-iso-20022-avec-pain001/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2023-10-09-shokunin-generateur-de-sites-statiques-rust-le-plus-rapide/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2023-10-16-proteger-les-donnees-a-l-ere-quantique-bibliotheque-hash-hsh/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2023-10-26-libmake-generateur-de-code-pour-bibliotheques-rust/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2023-11-05-constantes-mathematiques-et-cryptographiques-pour-rust/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2023-11-12-explorer-l-ia-generative/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2023-11-19-crystals-kyber-algorithme-de-protection-a-l-ere-quantique/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2023-11-28-kyberlib-bouclier-rust-contre-les-menaces-quantiques/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2023-12-04-maitriser-date-et-heure-en-rust-avec-la-bibliotheque-dtt/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2023-12-11-distribution-quantique-de-cles-revolution-securite-bancaire/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2023-12-18-etat-ia-et-informatique-quantique-banque-revue-2023/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2023-12-25-revolutionner-la-finance-avec-des-algorithmes-quantiques-ia/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2024-01-01-tendances-ia-2024-perspectives-et-predictions/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2024-01-08-optimiser-le-ratio-de-credit-avec-ibm-qiskit-et-fourier-quantique/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2024-01-15-alien-studio-revolution-de-l-art-par-la-photographie-ia/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2024-01-23-avancees-en-prompt-engineering-ia/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2024-01-29-analyse-audio-traductions-et-insights-ia/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2024-02-08-revolutionner-la-publicite-comment-l-ia-faconne-l-avenir/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2024-02-12-akande-assistant-vocal-revolution-assistance-personnelle-et-executive/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2024-02-13-ai-act-europeen-faconner-l-avenir-de-la-regulation-mondiale-de-l-ia/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2024-02-19-decouvrir-gemini-la-revolution-ia-de-google-expliquee/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2024-02-26-google-gemma-transformer-le-developpement-ia-open-source/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2024-03-04-le-chat-de-mistral-ai-une-nouvelle-ere-de-l-ia-conversationnelle/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2024-03-08-rustlogs-bibliotheque-de-journalisation-avancee-pour-rust/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2024-03-12-revolutionner-la-reconnaissance-vocale-en-temps-reel-sur-macos-avec-whisper/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2024-03-18-faire-avancer-l-ia-avec-les-llm-multimodaux-enseignements-de-mm1/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2024-03-25-chiffrement-completement-homomorphique-a-l-ere-quantique-bancaire/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2024-04-01-openvoice-innovation-de-pointe-dans-le-clonage-vocal/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2024-04-15-l-algorithme-quantique-defie-la-cryptographie-fondee-sur-les-reseaux/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2024-04-22-bug-dans-l-algorithme-quantique-pour-la-cryptographie-fondee-sur-les-reseaux/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2025-09-01-paiements-quantum-safe-epaa/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2026-04-11-les-seuils-quantiques-bougent-a-nouveau/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2026-05-11-lucy-besson-transfert-de-connaissances-ia-et-quantique/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2026-05-12-iso-20022-pacs008-adresse-structuree-echeance/</loc>
+  <lastmod>2026-05-13</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2026-05-14-securiser-le-livre-comptable-migration-post-quantique-finance-entreprise/</loc>
+  <lastmod>2026-05-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2026-05-15-blackrock-brsrv-bstbl-genius-act-fonds-monetaire-tokenise/</loc>
+  <lastmod>2026-05-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+</urlset>

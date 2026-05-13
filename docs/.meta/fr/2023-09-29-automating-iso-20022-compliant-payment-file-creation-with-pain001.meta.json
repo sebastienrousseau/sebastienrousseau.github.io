@@ -1,11 +1,11 @@
 {
-  "language": "fr",
+  "date": "September 29, 2023",
   "title": "Automatiser la création de fichiers de paiement conformes ISO 20022 avec Pain001",
-  "locale": "fr_FR",
-  "subtitle": "Pain001 : la bibliothèque Python open source qui simplifie la conformité ISO 20022",
-  "keywords": "ISO 20022, pain.001, Pain001, Python, paiements, automatisation, CBPR+, HVPS+, SEPA, conformité, virements",
-  "banner": "https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp",
+  "language": "fr",
   "banner_alt": "Un très haut bâtiment percé de nombreuses ouvertures",
+  "banner": "https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp",
+  "keywords": "ISO 20022, pain.001, Pain001, Python, paiements, automatisation, CBPR+, HVPS+, SEPA, conformité, virements",
+  "locale": "fr_FR",
   "description": "Automatisez la création de fichiers de paiement pain.001 conformes ISO 20022 à partir de CSV ou SQLite avec Pain001, la bibliothèque Python open source.",
-  "date": "September 29, 2023"
+  "subtitle": "Pain001 : la bibliothèque Python open source qui simplifie la conformité ISO 20022"
 }

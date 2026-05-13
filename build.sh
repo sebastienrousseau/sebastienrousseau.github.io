@@ -36,6 +36,7 @@ done
 
 python3 scripts/build_topics.py
 python3 scripts/build_translations.py
+python3 scripts/build_fr_feeds.py
 python3 scripts/build_agent_api.py
 python3 scripts/postbuild.py
 

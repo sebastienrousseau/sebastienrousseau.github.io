@@ -28,9 +28,13 @@ from __future__ import annotations
 import html as _html
 import json as _json
 import re
+import sys
 from pathlib import Path
 
 from markdown_it import MarkdownIt
+
+sys.path.insert(0, str(Path(__file__).parent))
+from _fr_slugs import EN_TO_FR, fr_slug  # noqa: E402
 
 PUBLIC = Path("public")
 SRC = Path("_posts/fr")
@@ -152,6 +156,10 @@ CHROME_PATCHES: list[tuple[str, str]] = [
      '<li><a href="/topics/index.html">Sujets</a></li>'),
     (r'<li><a href="/projects/index\.html">Projects</a></li>',
      '<li><a href="/projects/index.html">Projets</a></li>'),
+    (r'<li><a href="/articles/index\.html">Articles</a></li>',
+     '<li><a href="/fr/index.html">Articles</a></li>'),
+    (r'<li><a href="/contact/index\.html">Contact</a></li>',
+     '<li><a href="/contact/index.html">Contact</a></li>'),
 
     # Back-to-top
     (r'aria-label="Back to top"', 'aria-label="Retour en haut"'),
@@ -313,25 +321,97 @@ def _french_body(body_html: str, description: str, lead_aside: str, related_asid
 
 
 def _swap_breadcrumb(html: str, slug: str, title: str) -> str:
-    """Patch the BreadcrumbList JSON-LD on the page to point at /fr/{slug}/."""
+    """Patch the BreadcrumbList JSON-LD on the page to point at /fr/{slug}/
+    and localize the labels (Home → Accueil, Articles → Articles).
+
+    Walks every ``<script type="application/ld+json">`` block, parses the
+    JSON content, and rewrites the one whose ``@type`` is ``BreadcrumbList``.
+    Avoids brittle non-greedy regex over nested ``}`` characters.
+    """
+    def patch_breadcrumb(node: dict[str, object]) -> bool:
+        items = node.get("itemListElement")
+        if not isinstance(items, list):
+            return False
+        for item in items:
+            if not isinstance(item, dict):
+                continue
+            pos = item.get("position")
+            if pos == 1:
+                item["name"] = "Accueil"
+                item["item"] = f"{BASE}/"
+            elif pos == 2:
+                item["name"] = "Articles"
+                item["item"] = f"{BASE}/fr/"
+            elif pos == 3:
+                item["name"] = title
+                item["item"] = f"{BASE}/fr/{slug}/"
+        return True
+
     def fix(m: re.Match[str]) -> str:
+        raw = m.group(1)
+        if '"BreadcrumbList"' not in raw:
+            return m.group(0)
         try:
-            data = _json.loads(m.group(1))
+            data = _json.loads(raw)
         except _json.JSONDecodeError:
             return m.group(0)
-        if isinstance(data, dict) and data.get("@type") == "BreadcrumbList":
-            for item in data.get("itemListElement", []):
-                if isinstance(item, dict) and item.get("position") == 3:
-                    item["name"] = title
-                    item["item"] = f"{BASE}/fr/{slug}/"
-            return '<script type="application/ld+json">' + _json.dumps(data, separators=(",", ":"), ensure_ascii=False) + '</script>'
-        return m.group(0)
+        # Top-level may be a BreadcrumbList directly or an @graph wrapper.
+        changed = False
+        if isinstance(data, dict):
+            if data.get("@type") == "BreadcrumbList":
+                changed = patch_breadcrumb(data)
+            graph = data.get("@graph")
+            if isinstance(graph, list):
+                for node in graph:
+                    if isinstance(node, dict) and node.get("@type") == "BreadcrumbList":
+                        if patch_breadcrumb(node):
+                            changed = True
+        if not changed:
+            return m.group(0)
+        return (
+            '<script type="application/ld+json">'
+            + _json.dumps(data, separators=(",", ":"), ensure_ascii=False)
+            + '</script>'
+        )
+
     return re.sub(
-        r'<script type="application/ld\+json">(\{[\s\S]*?"BreadcrumbList"[\s\S]*?\})</script>',
+        r'<script type="application/ld\+json">([\s\S]+?)</script>',
         fix,
         html,
-        count=1,
     )
+
+
+_EN_URL_PATTERN_TMPL = (
+    r'(https?://sebastienrousseau\.com)?/(?P<slug>{slugs})(/(?:index\.html)?)?'
+)
+
+
+def _build_en_url_rewriter() -> re.Pattern[str]:
+    """Build a single anchored regex matching any internal EN slug
+    that has a recorded FR counterpart. Used to rewrite EN URLs to
+    /fr/<fr-slug>/ inside French page bodies."""
+    slugs = "|".join(re.escape(s) for s in sorted(EN_TO_FR.keys(), key=len, reverse=True))
+    if not slugs:
+        return re.compile(r"$^")
+    return re.compile(_EN_URL_PATTERN_TMPL.format(slugs=slugs))
+
+
+_EN_URL_RE = _build_en_url_rewriter()
+
+
+def rewrite_en_urls(html_fragment: str) -> str:
+    """Rewrite every reference to an EN article URL to its FR
+    counterpart, keeping the same origin (absolute → absolute,
+    root-relative → root-relative)."""
+
+    def repl(m: re.Match[str]) -> str:
+        origin = m.group(1) or ""
+        en = m.group("slug")
+        fr = fr_slug(en)
+        tail = m.group(3) or ""
+        return f"{origin}/fr/{fr}{tail}"
+
+    return _EN_URL_RE.sub(repl, html_fragment)
 
 
 def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | None:
@@ -351,7 +431,8 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
     keywords = fm.get("keywords", "")
     subtitle = fm.get("subtitle", description)
     page_title = f"{title} — Sebastien Rousseau"
-    url_fr = f"{BASE}/fr/{slug}/"
+    slug_fr = fr_slug(slug)
+    url_fr = f"{BASE}/fr/{slug_fr}/"
 
     # html lang
     shell = _HTML_LANG_RE.sub(r'\1fr-FR\2', shell, count=1)
@@ -375,7 +456,12 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
 
     # Extract reusable structural blocks from the English shell so the
     # French page mirrors the same layout (lead aside + related-posts grid).
+    # Rewrite any EN cross-links to their FR counterparts so the page stays
+    # inside /fr/ when readers click related-reading links.
     lead_aside, related_aside = _extract_shell_blocks(shell)
+    lead_aside = rewrite_en_urls(lead_aside)
+    related_aside = rewrite_en_urls(related_aside)
+    body_html = rewrite_en_urls(body_html)
     # main body — built fresh in French (lead + body + author-card + reviewed + related)
     fr_body = _french_body(body_html, description, lead_aside, related_aside)
 
@@ -394,7 +480,21 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
     shell = _BLOGPOSTING_URL_RE.sub(rf'\1{url_fr}\2', shell, count=1)
 
     # Breadcrumb final segment
-    shell = _swap_breadcrumb(shell, slug, title)
+    shell = _swap_breadcrumb(shell, slug_fr, title)
+
+    # Localised feed links — point French pages at the FR feed shadows.
+    # Covers absolute, root-relative, and any prod/preview host variants
+    # Shokunin may have emitted into the shell.
+    shell = re.sub(
+        r'href="(?:https?://[^/"]+)?/atom\.xml"',
+        'href="/fr/atom.xml"',
+        shell,
+    )
+    shell = re.sub(
+        r'href="(?:https?://[^/"]+)?/rss\.xml"',
+        'href="/fr/rss.xml"',
+        shell,
+    )
 
     return shell
 
@@ -506,13 +606,17 @@ def main() -> None:
         page = render_translation(md.stem, fm, body)
         if page is None:
             continue
-        dst = OUT / md.stem / "index.html"
+        slug_fr = fr_slug(md.stem)
+        dst = OUT / slug_fr / "index.html"
         dst.parent.mkdir(parents=True, exist_ok=True)
         dst.write_text(page, encoding="utf-8")
         entries.append({
-            "slug": md.stem,
+            "slug": slug_fr,
+            "en_slug": md.stem,
             "title": fm.get("title", ""),
             "description": fm.get("description", ""),
+            "date": fm.get("date", ""),
+            "keywords": fm.get("keywords", ""),
             "banner": fm.get("banner", "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"),
             "banner_alt": fm.get("banner_alt", fm.get("title", "")),
         })
