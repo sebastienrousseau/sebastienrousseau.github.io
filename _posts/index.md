@@ -234,38 +234,38 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" title="Lucy's Flash Drive, Revisited">
-<img alt="Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles" src="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" loading="lazy" decoding="async" width="600" height="600" />
+<a class="newsroom-card-media" href="/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html" title="Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded">
+<img alt="Stacked US dollar coins under warm light, representing tokenised money-market fund yield" src="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">AI · Quantum · Philosophy</span>
-<h3><a href="/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-11">May 11, 2026</time></p>
-<p class="newsroom-excerpt">Twelve years after Lucy, Besson's metaphor of knowledge migrating from flesh to machine is being quietly validated by LLMs, neutral atom qubits, and whole-brain emulation.</p>
+<span class="newsroom-eyebrow">Payments · Stablecoins · Regulation</span>
+<h3><a href="/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html">Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-15">May 15, 2026</time></p>
+<p class="newsroom-excerpt">Stablecoins cannot pay yield under the GENIUS Act. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail.</p>
 </div>
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-04-11-quantum-thresholds-are-moving-again/index.html" title="Quantum Thresholds Are Moving Again">
-<img alt="Quantum computing circuit board with blue light patterns" src="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+<a class="newsroom-card-media" href="/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html" title="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance">
+<img alt="Open vault door framed by gold light — visual metaphor for cryptographic protection of financial records" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Quantum</span>
-<h3><a href="/2026-04-11-quantum-thresholds-are-moving-again/index.html">Quantum Thresholds Are Moving Again</a></h3>
-<p class="newsroom-meta"><time datetime="2026-04-11">April 11, 2026</time></p>
-<p class="newsroom-excerpt">A new paper suggests Shor's algorithm could run on as few as 10,000 qubits. The threshold for cryptographically relevant quantum computing is dropping fast.</p>
+<span class="newsroom-eyebrow">Post-Quantum · Treasury · Governance</span>
+<h3><a href="/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-14">May 14, 2026</time></p>
+<p class="newsroom-excerpt">Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate.</p>
 </div>
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html" title="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto">
-<img alt="A network of digital nodes in red and blue hues" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="600" />
+<a class="newsroom-card-media" href="/2026-05-12-iso-20022-pacs008-structured-address-deadline/index.html" title="The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View">
+<img alt="Cross-border payment message structured-address diagram with TwnNm and Ctry highlighted" src="https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Quantum</span>
-<h3><a href="/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">Bug Discovered in Quantum Algorithm for Lattice-Based Crypto</a></h3>
-<p class="newsroom-meta"><time datetime="2024-04-22">April 22, 2024</time></p>
-<p class="newsroom-excerpt">A bug in Yilei Chen's quantum algorithm for solving LWE temporarily secures lattice-based cryptography and highlights the need for ongoing research.</p>
+<span class="newsroom-eyebrow">ISO 20022 · Payments · CBPR+</span>
+<h3><a href="/2026-05-12-iso-20022-pacs008-structured-address-deadline/index.html">The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-12">May 12, 2026</time></p>
+<p class="newsroom-excerpt">From November 2026, SWIFT CBPR+ rejects unstructured postal addresses in cross-border payment messages. Six months out, 65% of pacs.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme.</p>
 </div>
 </article>
 

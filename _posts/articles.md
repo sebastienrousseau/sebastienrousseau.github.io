@@ -104,21 +104,57 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" title="Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines">
-<img alt="Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles" src="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html" title="Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded">
+<img alt="Stacked US dollar coins under warm light, representing tokenised money-market fund yield" src="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">AI · Quantum · Philosophy</span>
-<h3><a href="/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" title="Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines">Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-11">May 11, 2026</time> · Sebastien Rousseau</p>
-<p>Twelve years after its release, Luc Besson's Lucy reads less like pseudo-science and more like a thought experiment about what happens when human knowledge migrates from biological to non-biological substrates.</p>
-<p><a class="pill ghost" href="/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" title="Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines">Read the full story</a></p>
+<span class="newsroom-eyebrow">Payments · Stablecoins · Regulation</span>
+<h3><a href="/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html" title="Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded">Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-15">May 15, 2026</time> · Sebastien Rousseau</p>
+<p>Stablecoins cannot pay yield under the GENIUS Act. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail.</p>
+<p><a class="pill ghost" href="/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html" title="Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html" title="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance">
+<img alt="Open vault door framed by gold light — visual metaphor for cryptographic protection of financial records" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Post-Quantum · Treasury · Governance</span>
+<h3><a href="/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html" title="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-14">May 14, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-12-iso-20022-pacs008-structured-address-deadline/index.html" title="The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View">
+<img alt="Cross-border payment message structured-address diagram with TwnNm and Ctry highlighted" src="https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">ISO 20022 · Payments · CBPR+</span>
+<h3><a href="/2026-05-12-iso-20022-pacs008-structured-address-deadline/index.html" title="The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View">The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-12">May 12, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">From November 2026, SWIFT CBPR+ rejects unstructured postal addresses in cross-border payment messages. Six months out, 65% of pacs.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" title="Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines">
+<img alt="Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles" src="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI · Quantum · Philosophy</span>
+<h3><a href="/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html" title="Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines">Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-11">May 11, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Twelve years after its release, Luc Besson's Lucy reads less like pseudo-science and more like a thought experiment about what happens when human knowledge migrates from biological to non-biological substrates.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-04-11-quantum-thresholds-are-moving-again/index.html" title="Quantum Thresholds Are Moving Again">
