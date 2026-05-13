@@ -1,22 +1,34 @@
 #!/usr/bin/env python3
-"""Lightweight Schema.org JSON-LD validator for built HTML.
+"""Lightweight structured-data + feed validator for the built tree.
 
-This is not a full Schema.org spec validator — Google's Rich Results
-Test does that, and there's no offline equivalent that's worth pulling
-in as a dependency. Instead, this catches the specific failure modes
-we've actually hit on this site:
+Two passes, both surfacing the exact failure modes we've already hit on
+this site (so the next regression fails CI instead of shipping).
 
-- malformed JSON inside <script type="application/ld+json">
-- missing required fields on the @types we use
-- broken URLs (empty href="" / src="" leaking back in)
-- duplicate @id collisions across the graph
-- unresolved {{template}} placeholders that escaped the SSG pass
+Pass 1 — Schema.org JSON-LD inside *.html
+  - malformed JSON inside <script type="application/ld+json">
+  - missing required fields on the @types we use
+  - broken URLs (empty href="" / src="" leaking back in)
+  - duplicate @id collisions across the graph
+  - unresolved {{template}} placeholders that escaped the SSG pass
+
+Pass 2 — XML feeds (*.xml)
+  - XML well-formedness via xml.etree (catches bare `&` regressions, the
+    Shokunin RSS double-escape, malformed nesting, etc.)
+  - RSS feeds: every channel has title + link + description, every item
+    has title + link
+  - Atom feeds: feed-level id + title + updated; every entry has id +
+    title + updated
+  - Sitemap: every <url> has a <loc>; every <loc> is a parseable URL
+  - News sitemap: every <url> has a <news:news> child
+
+This is not a full spec validator — for that, Google's Rich Results
+Test and the W3C Feed Validation Service exist as web tools.
 
 Run:
     python3 scripts/validate_jsonld.py [--base-dir public|docs]
 
-Exits non-zero if any page has a hard error; warnings are reported but
-don't fail the build.
+Exits non-zero if any page or feed has a hard error; warnings are
+reported but don't fail the build.
 """
 from __future__ import annotations
 
@@ -24,6 +36,7 @@ import argparse
 import json
 import re
 import sys
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 JSONLD_RE = re.compile(
@@ -128,6 +141,90 @@ def validate_page(path: Path) -> tuple[list[str], list[str]]:
     return errors, warnings
 
 
+# ---------------------------------------------------------------------------
+# Pass 2 — XML feed validation
+# ---------------------------------------------------------------------------
+
+# Atom namespace. RSS doesn't use a namespace; news-sitemap uses several.
+_ATOM_NS = "http://www.w3.org/2005/Atom"
+_SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
+_NEWS_NS = "http://www.google.com/schemas/sitemap-news/0.9"
+
+
+def _localname(tag: str) -> str:
+    return tag.rsplit("}", 1)[-1]
+
+
+def validate_feed(path: Path) -> tuple[list[str], list[str]]:
+    errors: list[str] = []
+    warnings: list[str] = []
+    try:
+        tree = ET.parse(path)
+    except ET.ParseError as e:
+        errors.append(f"XML parse failed: {e}")
+        return errors, warnings
+
+    root = tree.getroot()
+    root_local = _localname(root.tag)
+    name = path.name
+
+    if root_local == "rss":
+        # RSS 2.0 layout: <rss><channel>...<item>*</channel></rss>
+        channel = root.find("channel")
+        if channel is None:
+            errors.append("rss: missing <channel>")
+            return errors, warnings
+        for required in ("title", "link", "description"):
+            if channel.find(required) is None:
+                errors.append(f"rss: channel missing <{required}>")
+        for i, item in enumerate(channel.findall("item")):
+            for required in ("title", "link"):
+                if item.find(required) is None:
+                    errors.append(f"rss: item[{i}] missing <{required}>")
+
+    elif root_local == "feed":
+        # Atom layout (namespaced).
+        for required in ("id", "title", "updated"):
+            if root.find(f"{{{_ATOM_NS}}}{required}") is None:
+                errors.append(f"atom: feed missing <{required}>")
+        for i, entry in enumerate(root.findall(f"{{{_ATOM_NS}}}entry")):
+            for required in ("id", "title", "updated"):
+                if entry.find(f"{{{_ATOM_NS}}}{required}") is None:
+                    errors.append(f"atom: entry[{i}] missing <{required}>")
+
+    elif root_local == "urlset":
+        # sitemap.xml or news-sitemap.xml
+        is_news = root.find(f"{{{_SITEMAP_NS}}}url/{{{_NEWS_NS}}}news") is not None
+        for i, url in enumerate(root.findall(f"{{{_SITEMAP_NS}}}url")):
+            loc = url.find(f"{{{_SITEMAP_NS}}}loc")
+            if loc is None or not (loc.text and loc.text.strip()):
+                errors.append(f"sitemap: url[{i}] missing <loc>")
+                continue
+            if not loc.text.strip().startswith(("http://", "https://")):
+                errors.append(f"sitemap: url[{i}] <loc> is not an absolute URL: {loc.text!r}")
+            lastmod = url.find(f"{{{_SITEMAP_NS}}}lastmod")
+            if lastmod is not None and lastmod.text:
+                # Basic ISO-ish shape check.
+                if not re.match(r"^\d{4}-\d{2}-\d{2}", lastmod.text.strip()):
+                    warnings.append(
+                        f"sitemap: url[{i}] <lastmod> not ISO 8601: {lastmod.text!r}"
+                    )
+            if is_news:
+                news = url.find(f"{{{_NEWS_NS}}}news")
+                if news is None:
+                    errors.append(f"news-sitemap: url[{i}] missing <news:news>")
+
+    else:
+        warnings.append(f"unknown root element <{root_local}>; skipped feed-specific checks")
+
+    return errors, warnings
+
+
+# ---------------------------------------------------------------------------
+# main
+# ---------------------------------------------------------------------------
+
+
 def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--base-dir", default="public",
@@ -155,13 +252,33 @@ def main() -> int:
             if errs:
                 failed_pages += 1
 
+    feeds = sorted(base.glob("*.xml"))
+    failed_feeds = 0
+    feed_errors = 0
+    feed_warnings = 0
+    for feed in feeds:
+        errs, warns = validate_feed(feed)
+        if errs or warns:
+            rel = feed.relative_to(base).as_posix()
+            for e in errs:
+                print(f"ERROR  {rel}: {e}")
+            for w in warns:
+                print(f"WARN   {rel}: {w}")
+            feed_errors += len(errs)
+            feed_warnings += len(warns)
+            if errs:
+                failed_feeds += 1
+
     print()
     print(
-        f"validate_jsonld: {len(pages)} HTML pages scanned, "
-        f"{failed_pages} with errors, "
-        f"{total_errors} error(s), {total_warnings} warning(s)"
+        f"validate: {len(pages)} HTML pages, "
+        f"{failed_pages} with structured-data errors "
+        f"({total_errors} err, {total_warnings} warn). "
+        f"{len(feeds)} XML feeds, "
+        f"{failed_feeds} with errors "
+        f"({feed_errors} err, {feed_warnings} warn)."
     )
-    return 1 if total_errors else 0
+    return 1 if (total_errors or feed_errors) else 0
 
 
 if __name__ == "__main__":
