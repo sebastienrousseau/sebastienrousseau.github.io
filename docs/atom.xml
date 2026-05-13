@@ -187,8 +187,8 @@
   </entry>
   <entry>
     <title>AI-Powered Speech Analysis, Translation, &amp; Insight Tool</title>
-    <link href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html"/>
-    <id>https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html</id>
+    <link href="https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html"/>
+    <id>https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html</id>
     <updated>2024-01-29T05:06:06+00:00</updated>
     <published>2024-01-29T05:06:06+00:00</published>
     <summary>Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights.</summary>
@@ -286,8 +286,8 @@
   </entry>
   <entry>
     <title>Efficient Date and Time Management with DateTime (DTT)</title>
-    <link href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html"/>
-    <id>https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html</id>
+    <link href="https://sebastienrousseau.com/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html"/>
+    <id>https://sebastienrousseau.com/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html</id>
     <updated>2023-12-04T09:00:00+00:00</updated>
     <published>2023-12-04T09:00:00+00:00</published>
     <summary>DateTime (DTT) is a Rust library for parsing, validating, manipulating and formatting dates and times — high precision, broad functionality.</summary>

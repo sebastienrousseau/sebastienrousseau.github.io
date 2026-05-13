@@ -423,9 +423,9 @@
     </item>
     <item>
       <title>AI-Powered Speech Analysis, Translation, &amp; Insight Tool</title>
-      <link>https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html</link>
+      <link>https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html</link>
       <description>Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html</guid>
       <pubDate>Mon, 29 Jan 2024 05:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" type="image/webp" length="0"/>
@@ -651,9 +651,9 @@
     </item>
     <item>
       <title>Efficient Date and Time Management with DateTime (DTT)</title>
-      <link>https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html</link>
+      <link>https://sebastienrousseau.com/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html</link>
       <description>DateTime (DTT) is a Rust library for parsing, validating, manipulating and formatting dates and times — high precision, broad functionality.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html</guid>
       <pubDate>Mon, 04 Dec 2023 09:00:00 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg" type="image/jpeg" length="0"/>
