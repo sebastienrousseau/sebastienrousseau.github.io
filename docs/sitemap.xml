@@ -212,6 +212,11 @@
 </url>
 <url>
   <changefreq>weekly</changefreq>
+  <lastmod>2026-05-11</lastmod>
+  <loc>https://sebastienrousseau.com/fr/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
   <lastmod>2026-05-14</lastmod>
   <loc>https://sebastienrousseau.com/fr/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html</loc>
 </url>
