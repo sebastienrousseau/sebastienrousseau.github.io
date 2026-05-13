@@ -242,43 +242,81 @@ _blogposting_image_re = re.compile(
 #     can ground the article inside their knowledge graphs.
 # ---------------------------------------------------------------------------
 
-# Entity name (matched case-insensitively against keywords) -> authoritative
-# sameAs URL. We use Wikipedia or the issuing body's canonical page rather
-# than Wikidata Q-numbers — same grounding power for AI overviews, but no
-# memorised-ID hallucination risk and easier to verify.
-ENTITY_AUTHORITY: dict[str, str] = {
+# Entity name (matched case-insensitively against keywords) -> tuple of
+#   (authoritative_external_url, optional_own_canonical_post_stem)
+# We use Wikipedia or the issuing body's canonical page rather than Wikidata
+# Q-numbers — same grounding power for AI overviews, no memorised-ID
+# hallucination risk, and easy to verify. When the entity has a canonical
+# post in *this* repo, the post URL is added as a second sameAs anchor so
+# search + AI engines learn that this site is an authority on the topic.
+# A page never self-anchors: if the current post IS the canonical for an
+# entity, the canonical URL is suppressed.
+ENTITY_AUTHORITY: dict[str, tuple[str, str | None]] = {
     # Cryptography
-    "CRYSTALS-Kyber":                "https://en.wikipedia.org/wiki/Kyber",
-    "post-quantum cryptography":     "https://en.wikipedia.org/wiki/Post-quantum_cryptography",
-    "lattice-based cryptography":    "https://en.wikipedia.org/wiki/Lattice-based_cryptography",
-    "Quantum key distribution":      "https://en.wikipedia.org/wiki/Quantum_key_distribution",
-    "Shor's algorithm":              "https://en.wikipedia.org/wiki/Shor%27s_algorithm",
-    "homomorphic encryption":        "https://en.wikipedia.org/wiki/Homomorphic_encryption",
-    "Quantum computing":             "https://en.wikipedia.org/wiki/Quantum_computing",
-    "NIST PQC":                      "https://csrc.nist.gov/projects/post-quantum-cryptography",
+    "CRYSTALS-Kyber":               ("https://en.wikipedia.org/wiki/Kyber",
+                                     "2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age"),
+    "post-quantum cryptography":    ("https://en.wikipedia.org/wiki/Post-quantum_cryptography",
+                                     "2025-09-01-quantum-safe-payments-epaa"),
+    "lattice-based cryptography":   ("https://en.wikipedia.org/wiki/Lattice-based_cryptography",
+                                     "2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography"),
+    "Quantum key distribution":     ("https://en.wikipedia.org/wiki/Quantum_key_distribution",
+                                     "2023-12-11-quantum-key-distribution-revolutionising-security-in-banking"),
+    "Shor's algorithm":             ("https://en.wikipedia.org/wiki/Shor%27s_algorithm",
+                                     "2026-04-11-quantum-thresholds-are-moving-again"),
+    "homomorphic encryption":       ("https://en.wikipedia.org/wiki/Homomorphic_encryption",
+                                     "2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era"),
+    "Quantum computing":            ("https://en.wikipedia.org/wiki/Quantum_computing", None),
+    "NIST PQC":                     ("https://csrc.nist.gov/projects/post-quantum-cryptography", None),
     # Payments
-    "ISO 20022":                     "https://www.iso20022.org/",
-    "SWIFT gpi":                     "https://www.swift.com/our-solutions/swift-gpi",
-    "SEPA":                          "https://en.wikipedia.org/wiki/Single_Euro_Payments_Area",
+    "ISO 20022":                    ("https://www.iso20022.org/",
+                                     "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001"),
+    "SWIFT gpi":                    ("https://www.swift.com/our-solutions/swift-gpi", None),
+    "SEPA":                         ("https://en.wikipedia.org/wiki/Single_Euro_Payments_Area", None),
     # AI
-    "Large language model":          "https://en.wikipedia.org/wiki/Large_language_model",
-    "Generative AI":                 "https://en.wikipedia.org/wiki/Generative_artificial_intelligence",
-    "Artificial intelligence":       "https://en.wikipedia.org/wiki/Artificial_intelligence",
-    "Multimodal learning":           "https://en.wikipedia.org/wiki/Multimodal_learning",
+    "Large language model":         ("https://en.wikipedia.org/wiki/Large_language_model",
+                                     "2026-05-11-lucy-besson-knowledge-transfer-ai-quantum"),
+    "Generative AI":                ("https://en.wikipedia.org/wiki/Generative_artificial_intelligence",
+                                     "2023-11-12-exploring-generative-ai"),
+    "Artificial intelligence":      ("https://en.wikipedia.org/wiki/Artificial_intelligence", None),
+    "Multimodal learning":          ("https://en.wikipedia.org/wiki/Multimodal_learning",
+                                     "2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1"),
     # Programming
-    "Rust":                          "https://en.wikipedia.org/wiki/Rust_(programming_language)",
-    "Python":                        "https://en.wikipedia.org/wiki/Python_(programming_language)",
+    "Rust":                         ("https://en.wikipedia.org/wiki/Rust_(programming_language)", None),
+    "Python":                       ("https://en.wikipedia.org/wiki/Python_(programming_language)", None),
     # Crypto / Web3
-    "Blockchain":                    "https://en.wikipedia.org/wiki/Blockchain",
-    "Bitcoin":                       "https://en.wikipedia.org/wiki/Bitcoin",
-    "Ethereum":                      "https://en.wikipedia.org/wiki/Ethereum",
-    "ERC-20":                        "https://en.wikipedia.org/wiki/Ethereum#Tokens",
+    "Blockchain":                   ("https://en.wikipedia.org/wiki/Blockchain",
+                                     "2018-01-02-blockchain-the-technology-that-matters-in-2018"),
+    "Bitcoin":                      ("https://en.wikipedia.org/wiki/Bitcoin",
+                                     "2018-01-01-bitcoin-the-year-in-review"),
+    "Ethereum":                     ("https://en.wikipedia.org/wiki/Ethereum",
+                                     "2018-01-24-the-erc-20-token-standard"),
+    "ERC-20":                       ("https://en.wikipedia.org/wiki/Ethereum#Tokens",
+                                     "2018-01-24-the-erc-20-token-standard"),
 }
+
+SITE_ROOT = "https://sebastienrousseau.com"
 
 
 _keywords_re = re.compile(
     r'"@type":"BlogPosting"[\s\S]*?"keywords":"([^"]*)"',
 )
+_blogposting_url_re = re.compile(
+    # The BlogPosting-level url is followed by ",datePublished":,
+    # which lets us distinguish it from the image-object's nested url.
+    r'"url":"([^"]+)","datePublished":',
+)
+
+
+def _current_stem(html: str) -> str | None:
+    m = _blogposting_url_re.search(html)
+    if not m:
+        return None
+    url = m.group(1)
+    # Strip trailing /index.html or trailing slash to reach the bare path.
+    for suffix in ("/index.html", "/"):
+        if url.endswith(suffix):
+            url = url[: -len(suffix)]
+    return url.rsplit("/", 1)[-1] if "/" in url else None
 
 
 def build_about_graph(html: str) -> str | None:
@@ -289,19 +327,27 @@ def build_about_graph(html: str) -> str | None:
     if not keywords_raw:
         return None
     keywords = [k.strip() for k in keywords_raw.split(",") if k.strip()]
+    own_stem = _current_stem(html)
     seen: set[str] = set()
-    matches: list[dict[str, str]] = []
+    matches: list[dict[str, object]] = []
     for kw in keywords:
         kwl = kw.lower()
-        for entity, url in ENTITY_AUTHORITY.items():
+        for entity, (ext_url, canonical_stem) in ENTITY_AUTHORITY.items():
             ent_l = entity.lower()
             if (kwl == ent_l or ent_l in kwl or kwl in ent_l) and entity not in seen:
                 seen.add(entity)
-                matches.append({
+                same_as: list[str] = [ext_url]
+                # Add the user's own canonical post as a second sameAs anchor —
+                # tells crawlers this site is also an authority on the entity.
+                # Skip when the current page IS the canonical post (no self-link).
+                if canonical_stem and canonical_stem != own_stem:
+                    same_as.append(f"{SITE_ROOT}/{canonical_stem}/index.html")
+                node: dict[str, object] = {
                     "@type": "Thing",
                     "name": entity,
-                    "sameAs": url,
-                })
+                    "sameAs": same_as if len(same_as) > 1 else same_as[0],
+                }
+                matches.append(node)
                 break
     if not matches:
         return None
