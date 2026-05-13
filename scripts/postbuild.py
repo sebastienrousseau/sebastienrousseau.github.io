@@ -947,7 +947,7 @@ def _render_tag_badges(keywords: list[str]) -> str:
     if not keywords:
         return ""
     badges = "".join(
-        f'<a href="/tags/index.html#{slugify(k)}" class="article-tag" rel="tag">{k}</a>'
+        f'<a href="/tags/index.html#h3-{slugify(k)}" class="article-tag" rel="tag">{k}</a>'
         for k in keywords
     )
     return f'<nav class="article-tags" aria-label="Topics">{badges}</nav>'
