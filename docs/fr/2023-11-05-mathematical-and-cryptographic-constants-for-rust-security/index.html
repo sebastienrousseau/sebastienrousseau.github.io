@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sun, 05 Nov 2023 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sun, 05 Nov 2023 06:06:06 +0000" id="last-modified" />
+    <title>Constantes mathématiques et cryptographiques pour la sécurité Rust — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Protégez l&#x27;intégrité du code avec des constantes mathématiques et cryptographiques rigoureusement vérifiées, renforçant sûreté mémoire et concurrence.">
+<meta name="keywords" content="constantes mathématiques, constantes cryptographiques, sécurité Rust, communication sécurisée, chiffrement, RSA, cryptographie sur courbe elliptique, bibliothèque Common (CMN), applications Rust, calculs mathématiques">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <meta http-equiv="Permissions-Policy" content="browsing-topics=(), interest-cohort=(), join-ad-interest-group=(), run-ad-auction=(), attribution-reporting=()" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else. -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        script-src 'sha256-3xiJgwVsCENTxCgeciHcv3w2mo2QnQKeMoyrJ5+ZJq0=' 'sha256-9F9IhRg1kPmUQzvRb/EeVPskCmhudWPHZch3b+I4kZE=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    <link rel="alternate" href="https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html" hreflang="en" />
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/d9e47e737343a1fa.css" crossorigin="anonymous" integrity="sha256-ks1BNiRZ9+j9kKLYGtnHNEDMjMT+6T//ChEM4DqxZ2Q=" crossorigin="anonymous"">
+    <link rel="alternate" type="application/atom+xml" title="Flux Atom" href="http://127.0.0.1:8000/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Constantes mathématiques et cryptographiques pour la sécurité Rust — Sebastien Rousseau">
+<meta property="og:description" content="Protégez l&#x27;intégrité du code avec des constantes mathématiques et cryptographiques rigoureusement vérifiées, renforçant sûreté mémoire et concurrence.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/fr/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/">
+<meta property="og:image" content="https://sebastienrousseau.com/fr/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mathematical and Cryptographic Constants for Rust Security">
+<meta name="twitter:description" content="TL;DR. Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code">
+<meta name="twitter:image" content="https://sebastienrousseau.com/fr/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/">
+<link rel="canonical" href="https://sebastienrousseau.com/fr/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/" /></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Aller au contenu principal</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Basculer la navigation" />
+      <div class="wrap">
+        <a class="ap-brand" href="/index.html" aria-label="Accueil de Sebastien Rousseau">
+          <span itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Navigation principale">
+          <ul class="ap-menu">
+            <li><a href="/about/index.html">À propos</a></li>
+            <li><a href="/articles/index.html">Articles</a></li>
+            <li><a href="/papers/index.html">Publications</a></li>
+            <li><a href="/topics/index.html">Sujets</a></li>
+            <li><a href="/projects/index.html">Projets</a></li>
+            <li><a href="/playlists/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Activer le thème sombre" aria-pressed="false" title="Changer de thème">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Rechercher (Cmd ou Ctrl + K)" title="Rechercher (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Langue">
+            <button type="button" class="ap-lang-toggle" aria-label="FR, Changer de langue" aria-expanded="false" aria-haspopup="menu" title="Changer de langue">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">FR</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <span class="ap-lang-item" data-lang="ar" aria-disabled="true" title="Prochainement">🇸🇦 العربية</span>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="Prochainement">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="Prochainement">🇨🇿 Čeština</span>
+                <span class="ap-lang-item" data-lang="de" aria-disabled="true" title="Prochainement">🇩🇪 Deutsch</span>
+                <span class="ap-lang-item" data-lang="es" aria-disabled="true" title="Prochainement">🇪🇸 Español</span>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="Prochainement">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="Prochainement">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="Prochainement">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="Prochainement">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="Prochainement">🇮🇩 Indonesia</span>
+                <span class="ap-lang-item" data-lang="it" aria-disabled="true" title="Prochainement">🇮🇹 Italiano</span>
+                <span class="ap-lang-item" data-lang="ja" aria-disabled="true" title="Prochainement">🇯🇵 日本語</span>
+                <span class="ap-lang-item" data-lang="ko" aria-disabled="true" title="Prochainement">🇰🇷 한국어</span>
+                <span class="ap-lang-item" data-lang="nl" aria-disabled="true" title="Prochainement">🇳🇱 Nederlands</span>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="Prochainement">🇵🇱 Polski</span>
+                <span class="ap-lang-item" data-lang="pt-br" aria-disabled="true" title="Prochainement">🇧🇷 Português</span>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="Prochainement">🇷🇴 Română</span>
+                <span class="ap-lang-item" data-lang="ru" aria-disabled="true" title="Prochainement">🇷🇺 Русский</span>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="Prochainement">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="Prochainement">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="Prochainement">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Prochainement">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="Prochainement">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="Prochainement">🇳🇬 Yorùbá</span>
+                <span class="ap-lang-item" data-lang="zh-hans" aria-disabled="true" title="Prochainement">🇨🇳 简体中文</span>
+                <span class="ap-lang-item" data-lang="zh-hant" aria-disabled="true" title="Prochainement">🇹🇼 繁體中文</span>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/contact/index.html" aria-label="Me contacter">Me contacter ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Basculer la navigation">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Constantes mathématiques et cryptographiques pour la sécurité Rust</h1>
+      <p class="sub">Constantes mathématiques et cryptographiques éprouvées pour une sécurité Rust à sûreté mémoire</p>
+    <nav class="article-tags" aria-label="Sujets"><a href="/tags/index.html#h3-mathematical-constants" class="article-tag" rel="tag">mathematical constants</a><a href="/tags/index.html#h3-cryptographic-constants" class="article-tag" rel="tag">cryptographic constants</a><a href="/tags/index.html#h3-rust-security" class="article-tag" rel="tag">Rust security</a><a href="/tags/index.html#h3-secure-communication" class="article-tag" rel="tag">secure communication</a><a href="/tags/index.html#h3-encryption" class="article-tag" rel="tag">encryption</a><a href="/tags/index.html#h3-rsa" class="article-tag" rel="tag">RSA</a><a href="/tags/index.html#h3-elliptic-curve-cryptography" class="article-tag" rel="tag">elliptic curve cryptography</a><a href="/tags/index.html#h3-common-cmn-library" class="article-tag" rel="tag">Common (CMN) library</a><a href="/tags/index.html#h3-rust-applications" class="article-tag" rel="tag">Rust applications</a><a href="/tags/index.html#h3-mathematical-computations" class="article-tag" rel="tag">mathematical computations</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2023-11-05T06:06:06+00:00" class="meta-pub">Publié le 5 nov. 2023</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Mis à jour le 11 mai 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Temps de lecture estimé">3 min de lecture</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="post-lead" aria-label="Résumé de l'article">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security.</p>
+<p class="post-lead-heading"><strong>Points clés</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Idea.</strong> The Common (CMN) library is designed to give developers precise, straightforward access to the constants they need, packaged in a Rust-compatible format, ensuring easy integration and understanding.</li>
+  <li><strong>Impact.</strong> The Common (CMN) library provides Rust developers with a wide range of accurate mathematical and cryptographic constants.</li>
+  <li><strong>Incentives.</strong> For Rust applications that depend on mathematical or cryptographic constants, the Common (CMN) library is an invaluable resource.</li>
+  <li><strong>The Foundation of Secure Communication.</strong> Mathematics provides constants that are the cornerstones of technology and secure communication.</li>
+</ul>
+<p class="post-lead-related"><strong>Articles connexes :</strong> <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>, <a href="https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html">Quantum Algorithm Challenges Lattice-Based Cryptography</a>, <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>.</p>
+</aside><p><img src="https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp" alt="Giant white pillars" />.class=&quot;img-fluid clearfix&quot;</p>
+<h2 id="apercu">Aperçu <a class="heading-anchor" href="#apercu" aria-label="Lien vers Aperçu">#</a></h2>
+<h3 id="le-fondement-de-la-communication-securisee">Le fondement de la communication sécurisée <a class="heading-anchor" href="#le-fondement-de-la-communication-securisee" aria-label="Lien vers Le fondement de la communication sécurisée">#</a></h3>
+<p>Les mathématiques fournissent des constantes qui sont les pierres angulaires de la technologie et de la communication sécurisée. Des constantes comme pi (π) et le nombre d'Euler (e) sont cruciales dans tout — de la géométrie à la cryptographie — garantissant notre sécurité numérique.</p>
+<p>En cryptographie, les constantes ont un objectif unique. Elles sont méticuleusement choisies, non arbitraires, formant le fondement de méthodes de chiffrement sécurisées telles que RSA et la cryptographie sur courbe elliptique. Ces constantes sont des clés au sens le plus littéral, protégeant nos communications, identités numériques et transactions électroniques.</p>
+<h2 id="idee">Idée <a class="heading-anchor" href="#idee" aria-label="Lien vers Idée">#</a></h2>
+<h3 id="redefinir-l-acces-aux-constantes-avec-precision-et-facilite">Redéfinir l'accès aux constantes avec précision et facilité <a class="heading-anchor" href="#redefinir-l-acces-aux-constantes-avec-precision-et-facilite" aria-label="Lien vers Redéfinir l'accès aux constantes avec précision et facilité">#</a></h3>
+<p>La <a href="https://github.com/sebastienrousseau/cmn" title="The Common (CMN) library website">bibliothèque Common (CMN)</a> est conçue pour donner aux développeurs un accès précis et direct aux constantes dont ils ont besoin, empaquetées dans un format compatible Rust, garantissant intégration et compréhension faciles.</p>
+<p>En encapsulant ces constantes dans une architecture Rust-friendly, la bibliothèque Common (CMN) offre une expérience robuste, rapide et intuitive. Elle s'engage à la précision via la sûreté de typage, complétée par une documentation exhaustive, simplifiant l'intégration et renforçant la compréhension.</p>
+<h2 id="impact">Impact <a class="heading-anchor" href="#impact" aria-label="Lien vers Impact">#</a></h2>
+<h3 id="affiner-les-applications-rust-avec-des-constantes-fiables">Affiner les applications Rust avec des constantes fiables <a class="heading-anchor" href="#affiner-les-applications-rust-avec-des-constantes-fiables" aria-label="Lien vers Affiner les applications Rust avec des constantes fiables">#</a></h3>
+<p>La bibliothèque Common (CMN) fournit aux développeurs Rust une large gamme de constantes mathématiques et cryptographiques précises. Cette précision aide à prévenir les erreurs et renforce la sécurité. Avec sa conception multi-plateforme et sa documentation détaillée, CMN rend le développement et le déploiement d'applications Rust plus simples et fiables.</p>
+<p>Conçue avec la portabilité à l'esprit, la bibliothèque Common (CMN) garantit que les applications Rust peuvent être développées une fois et déployées partout, sans soucis de compatibilité. La documentation exhaustive de la bibliothèque signifie aussi que les développeurs peuvent l'intégrer facilement à leurs projets et monter rapidement en compétence.</p>
+<h2 id="incitations">Incitations <a class="heading-anchor" href="#incitations" aria-label="Lien vers Incitations">#</a></h2>
+<h3 id="renforcez-vos-applications-rust-avec-la-bibliotheque-common-cmn">Renforcez vos applications Rust avec la bibliothèque Common (CMN) <a class="heading-anchor" href="#renforcez-vos-applications-rust-avec-la-bibliotheque-common-cmn" aria-label="Lien vers Renforcez vos applications Rust avec la bibliothèque Common (CMN)">#</a></h3>
+<p>Pour les applications Rust qui dépendent de constantes mathématiques ou cryptographiques, la bibliothèque Common (CMN) est une ressource inestimable. Elle propose :</p>
+<ul>
+<li><strong>Nombre d'Avogadro</strong> : nombre d'atomes dans une mole de substance.</li>
+<li><strong>Constante de Boltzmann</strong> : constante reliant énergie et température.</li>
+<li><strong>Nombre d'Euler</strong> : base du logarithme naturel.</li>
+<li><strong>Fonction Gamma</strong> : fonction spéciale apparaissant dans de nombreux domaines mathématiques et physiques.</li>
+<li><strong>Nombre d'or</strong> : nombre qui apparaît dans de nombreux objets naturels et mathématiques.</li>
+<li><strong>Pi</strong> : proportion entre la circonférence et le diamètre d'un cercle.</li>
+<li><strong>Constante de Planck</strong> : quantum d'action.</li>
+<li><strong>Nombre d'argent</strong> : nombre similaire au nombre d'or.</li>
+<li><strong>Tau</strong> : double de la constante mathématique pi.</li>
+<li><strong>Racine carrée de 3</strong> : solution positive de l'équation x² = 3.</li>
+<li><strong>Racine carrée de 5</strong> : solution positive de l'équation x² = 5.</li>
+</ul>
+<p>Ce ne sont là que quelques-unes des nombreuses constantes mathématiques et cryptographiques disponibles dans la bibliothèque Common (CMN). Pour plus d'informations, consultez la documentation : <a href="https://docs.rs/cmn/latest/cmn/" title="The Common (CMN) library documentation">https://lib.rs/crates/cmn</a>.</p>
+<p>Les bénéfices d'utiliser la bibliothèque Common (CMN) incluent :</p>
+<ul>
+<li><strong>Précision</strong> : garantit des calculs mathématiques précis.</li>
+<li><strong>Fiabilité</strong> : une bibliothèque rigoureusement testée.</li>
+<li><strong>Sécurité</strong> : la sûreté de typage aide à prévenir les vulnérabilités.</li>
+<li><strong>Portabilité</strong> : utilisez-la sur diverses plateformes avec aisance.</li>
+<li><strong>Documentation</strong> : apprenez rapidement avec des guides exhaustifs.</li>
+<li><strong>Polyvalence</strong> : idéale pour une large gamme de tâches computationnelles.</li>
+</ul>
+<p>Les cas d'usage de la bibliothèque Common (CMN) sont divers :</p>
+<ul>
+<li>Génération de clés de chiffrement et création sûre de nombres.</li>
+<li>Calculs mathématiques avancés.</li>
+<li>Développement d'applications en science, finance et cryptographie.</li>
+<li>Innovations en apprentissage automatique, IA et blockchain.</li>
+</ul>
+<p>À mesure que le domaine de la cryptographie évolue, la bibliothèque Common (CMN) suit, restant en avance sur les tendances comme le calcul quantique et le chiffrement homomorphe pour garantir que vos applications restent sécurisées et pérennes.</p>
+<p>Les développeurs ayant besoin de constantes mathématiques ou cryptographiques en Rust devraient considérer la bibliothèque Common (CMN) comme ressource principale. Common (CMN) est un outil gratuit et open source, disponible au téléchargement depuis le <a href="https://github.com/sebastienrousseau/cmn" title="The Common (CMN) library GitHub repository">dépôt GitHub ⧉</a>.</p>
+<aside class="author-card" aria-label="À propos de l'auteur"><img alt="Portrait de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Technologue senior dans la banque, j'écris sur l'IA appliquée, la migration ISO 20022, la cryptographie post-quantique pour les services financiers, et la transformation structurelle des paiements wholesale.</span><span class="author-credentials">Plus de 20 ans d'expérience chez HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Dernière révision <time datetime="2026-05-13">2026-05-13</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Articles connexes</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" class="related-media" aria-label="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age" tabindex="-1"><img alt="A modern, sleek quantum computer" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age"><a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a> <a class="heading-anchor" href="#crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age" aria-label="Lien vers CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age">#</a></h3><p><time datetime="2023-11-19">2023-11-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html" class="related-media" aria-label="Quantum Algorithm Challenges Lattice-Based Cryptography" tabindex="-1"><img alt="Banner of Network nodes in a digital blue space" src="https://cloudcdn.pro/stocks/images/digital-constellation.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="quantum-algorithm-challenges-lattice-based-cryptography"><a href="https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html">Quantum Algorithm Challenges Lattice-Based Cryptography</a> <a class="heading-anchor" href="#quantum-algorithm-challenges-lattice-based-cryptography" aria-label="Lien vers Quantum Algorithm Challenges Lattice-Based Cryptography">#</a></h3><p><time datetime="2024-04-15">2024-04-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" class="related-media" aria-label="Quantum Key Distribution Revolutionising Security in Banking" tabindex="-1"><img alt="HSBC From the Docks" src="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="quantum-key-distribution-revolutionising-security-in-banking"><a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a> <a class="heading-anchor" href="#quantum-key-distribution-revolutionising-security-in-banking" aria-label="Lien vers Quantum Key Distribution Revolutionising Security in Banking">#</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Sources et références</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/cmn" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/cmn</span></a></li></ol></aside><nav class="post-pagination" aria-label="Pagination des articles"><a class="post-pagination-prev" href="/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/"><span class="post-pagination-label">Précédent</span><span class="post-pagination-title">Streamlining Rust Library Development with Code Generation</span></a><a class="post-pagination-next" href="/2023-11-12-exploring-generative-ai/"><span class="post-pagination-label">Suivant</span><span class="post-pagination-title">Generative AI in 2023: How It Works, Where It Lands</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/about/index.html">À propos</a></li>
+              <li><a href="/contact/index.html">Contact</a></li>
+              <li><a href="/made-with-static-site-generator/index.html">Conçu avec Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Écrits</h2>
+            <ul>
+              <li><a href="/articles/index.html">Articles</a></li>
+              <li><a href="/papers/index.html">Publications</a></li>
+              <li><a href="/tags/index.html">Étiquettes</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Activité</h2>
+            <ul>
+              <li><a href="/projects/index.html">Projets</a></li>
+              <li><a href="/playlists/index.html">Playlists</a></li>
+              <li><a href="/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Réseaux</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="legal">
+          <span>© Copyright 2024 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Liens sociaux">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
+          </div>
+          <p>
+            <a href="/accessibility/index.html">Accessibilité</a> ·
+            <a href="/privacy/index.html">Confidentialité</a> ·
+            <a href="/terms/index.html">Conditions</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://sebastienrousseau.com/#person",
+      "name": "Sebastien Rousseau",
+      "givenName": "Sebastien",
+      "familyName": "Rousseau",
+      "url": "https://sebastienrousseau.com/",
+      "image": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+      "jobTitle": "Senior Product Manager",
+      "description": "AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "HSBC Commercial & Investment Bank",
+        "url": "https://www.hsbc.com/"
+      },
+      "alumniOf": [
+        {"@type": "Organization", "name": "PayPal"},
+        {"@type": "Organization", "name": "Barclays"},
+        {"@type": "Organization", "name": "Shazam Entertainment"},
+        {"@type": "Organization", "name": "AKQA"},
+        {"@type": "Organization", "name": "Virgin Group"}
+      ],
+      "memberOf": {
+        "@type": "ProgramMembership",
+        "programName": "Quantum-Safe Cryptography Working Group",
+        "hostingOrganization": {
+          "@type": "Organization",
+          "name": "Emerging Payments Association Asia",
+          "url": "https://emergingpaymentsasia.org/"
+        }
+      },
+      "knowsAbout": [
+        "Applied artificial intelligence in banking",
+        "Generative AI for financial services",
+        "Wholesale payments",
+        "ISO 20022 migration",
+        "SWIFT gpi",
+        "SEPA Instant Payments",
+        "Cross-border payments",
+        "Post-quantum cryptography",
+        "CRYSTALS-Kyber",
+        "CRYSTALS-Dilithium",
+        "Quantum-safe payment authentication"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "London",
+        "addressCountry": "United Kingdom"
+      },
+      "sameAs": [
+        "https://twitter.com/wwdseb",
+        "https://www.linkedin.com/in/sebastienrousseau/",
+        "https://medium.com/@BankingOnQuantum",
+        "https://www.youtube.com/@BankingOnQuantum",
+        "https://github.com/sebastienrousseau"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sebastienrousseau.com/#website",
+      "url": "https://sebastienrousseau.com/",
+      "name": "Sebastien Rousseau",
+      "description": "AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.",
+      "publisher": {"@id": "https://sebastienrousseau.com/#person"},
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://sebastienrousseau.com/#profile",
+      "mainEntity": {"@id": "https://sebastienrousseau.com/#person"},
+      "name": "Sebastien Rousseau: AI, Banking & Financial Services Expert",
+      "url": "https://sebastienrousseau.com/",
+      "inLanguage": "en-GB"
+    }
+  ]
+}
+    </script>
+
+        <script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":634,"about":{"@type":"Thing","name":"Rust","sameAs":["https://en.wikipedia.org/wiki/Rust_(programming_language)","https://www.wikidata.org/wiki/Q575650"]},"mentions":[{"@type":"Thing","name":"homomorphic encryption","sameAs":["https://en.wikipedia.org/wiki/Homomorphic_encryption","https://www.wikidata.org/wiki/Q2154943","https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html"]}],"headline":"Constantes mathématiques et cryptographiques pour la sécurité Rust","description":"Protégez l&#x27;intégrité du code avec des constantes mathématiques et cryptographiques rigoureusement vérifiées, renforçant sûreté mémoire et concurrence.","image":{"@type":"ImageObject","url":"https://sebastienrousseau.com/fr/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/","width":"100vw","height":"100vh","caption":"Mathematics computation"},"url":"https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html","datePublished":"2023-11-05T06:06:06+00:00","dateModified":"2026-05-11","inLanguage":"en","keywords":"mathematical constants, cryptographic constants, Rust security, secure communication, encryption, RSA, elliptic curve cryptography, Common (CMN) library, Rust applications, mathematical computations","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/articles/#blog","name":"Sebastien Rousseau — Articles","url":"https://sebastienrousseau.com/articles/"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/cmn"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/articles/"},{"@type":"ListItem","position":3,"name":"Mathematical and Cryptographic Constants for Rust Security","item":"https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html"}]}]}
+    </script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+<link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"">
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Rechercher">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Rechercher</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Rechercher">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Rechercher dans la documentation..." autocomplete="off" aria-label="Rechercher"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> fermer</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> naviguer</span><span><kbd>Entrée</kbd> ouvrir</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>
