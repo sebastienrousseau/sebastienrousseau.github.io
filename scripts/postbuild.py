@@ -217,6 +217,56 @@ def inject_itemlist(page: Path, html: str) -> str:
 
 
 # ---------------------------------------------------------------------------
+# 4. og:image / twitter:image rewrite
+# ---------------------------------------------------------------------------
+
+# Shokunin's auto-generated og:image scans the body and picks up the first
+# <img> tag, which is often a decorative divider.svg or a body inline image
+# rather than the article banner. The result: link previews on Twitter,
+# LinkedIn, Slack, etc. show a one-pixel line instead of the article's
+# headline image. Rebuild og:image + twitter:image from the BlogPosting
+# graph's ImageObject (which we control: it reads from {{banner}} in the
+# layout).
+
+_blogposting_image_re = re.compile(
+    r'"@type":"BlogPosting"[^{}]*'
+    r'"image":\{[^{}]*?"url":"([^"]+)"'
+    r'(?:[^{}]*?"width":"([^"]*)")?'
+    r'(?:[^{}]*?"height":"([^"]*)")?',
+    re.DOTALL,
+)
+
+
+def fix_social_image(html: str) -> str:
+    m = _blogposting_image_re.search(html)
+    if not m:
+        return html
+    banner = m.group(1)
+    width = m.group(2) or ""
+    height = m.group(3) or ""
+    if not banner or "divider" in banner:
+        return html  # Don't propagate a placeholder/divider value
+
+    def sub_attr(pattern: str, value: str, text: str) -> str:
+        return re.sub(pattern, lambda m: m.group(1) + f'"{value}"', text)
+
+    html = sub_attr(r'(<meta\s+property="og:image"\s+content=)"[^"]*"', banner, html)
+    html = sub_attr(r'(<meta\s+name="twitter:image"\s+content=)"[^"]*"', banner, html)
+    if width:
+        html = sub_attr(r'(<meta\s+property="og:image:width"\s+content=)"[^"]*"', width, html)
+    if height:
+        html = sub_attr(r'(<meta\s+property="og:image:height"\s+content=)"[^"]*"', height, html)
+    # Force summary_large_image on real BlogPosting pages. Shokunin emits
+    # `summary` for some posts despite the frontmatter saying otherwise,
+    # losing the large banner preview on every share.
+    html = sub_attr(
+        r'(<meta\s+name="twitter:card"\s+content=)"summary"',
+        "summary_large_image", html,
+    )
+    return html
+
+
+# ---------------------------------------------------------------------------
 # main
 # ---------------------------------------------------------------------------
 
@@ -225,6 +275,7 @@ def main() -> None:
     sri_patched = 0
     csp_patched = 0
     itemlist_patched = 0
+    social_patched = 0
     for page in pages:
         original = page.read_text(encoding="utf-8", errors="ignore")
         patched = fix_sri(original)
@@ -235,8 +286,11 @@ def main() -> None:
         patched_il = inject_itemlist(page, patched)
         if patched_il != patched:
             itemlist_patched += 1
-        patched2 = inject_jsonld_hashes(patched_il)
-        if patched2 != patched_il:
+        patched_si = fix_social_image(patched_il)
+        if patched_si != patched_il:
+            social_patched += 1
+        patched2 = inject_jsonld_hashes(patched_si)
+        if patched2 != patched_si:
             csp_patched += 1
         if patched2 != original:
             page.write_text(patched2, encoding="utf-8")
@@ -244,6 +298,7 @@ def main() -> None:
         f"postbuild: {len(pages)} HTML pages, "
         f"{sri_patched} got real SRI, "
         f"{itemlist_patched} got ItemList JSON-LD, "
+        f"{social_patched} got og:image fixed, "
         f"{csp_patched} got CSP JSON-LD hashes"
     )
 

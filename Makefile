@@ -14,6 +14,7 @@ regenerate:
 	@perl -i -pe 's|<h4>Sebastien Rousseau</h4>|<h2 class="ap-foot-title">Sebastien Rousseau</h2>|g; s|<h4>Writing</h4>|<h2 class="ap-foot-title">Writing</h2>|g; s|<h4>Work</h4>|<h2 class="ap-foot-title">Work</h2>|g; s|<h4>Reach</h4>|<h2 class="ap-foot-title">Reach</h2>|g' _layouts/*.html
 	@python3 scripts/gen_articles.py
 	@python3 scripts/gen_projects.py
+	@python3 scripts/topic_link.py
 	@python3 scripts/post_enrich.py
 	@./build.sh
 
