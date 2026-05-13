@@ -134,6 +134,85 @@ def iter_typed_nodes(obj, parent_key=None):
             yield from iter_typed_nodes(item, parent_key=parent_key)
 
 
+_EMPTYABLE_URL_FIELDS = ("url", "href", "image", "sameAs")
+
+
+def _check_template_leak(body: str, i: int, errors: list[str]) -> None:
+    """Flag unresolved {{template}} tokens that escaped the SSG pass."""
+    if "{{" in body:
+        errors.append(f"block#{i}: unresolved template token ('{{{{' found)")
+    elif "}}" in body and body.count("}") != body.count("{"):
+        errors.append(f"block#{i}: unresolved template token ('}}}}' found)")
+
+
+def _check_node_required(type_str: str, node: dict, errors: list[str]) -> None:
+    """Assert any required Schema.org properties for this @type are present."""
+    required = REQUIRED.get(type_str)
+    if not required:
+        return
+    keys_no_at = {k.lstrip("@") for k in node}
+    present = set(node.keys()) | keys_no_at
+    missing = required - present
+    if missing:
+        errors.append(f"{type_str}: missing required {sorted(missing)}")
+
+
+def _check_node_id_unique(
+    type_str: str,
+    node: dict,
+    ids_seen: set[str],
+    warnings: list[str],
+) -> None:
+    """Track @id values within a page and warn on collisions."""
+    nid = node.get("@id")
+    if not isinstance(nid, str):
+        return
+    if nid in ids_seen:
+        warnings.append(f"{type_str}: duplicate @id {nid!r}")
+    ids_seen.add(nid)
+
+
+def _check_node_empty_urls(type_str: str, node: dict, errors: list[str]) -> None:
+    """Catch the empty-href / empty-src regression that bit us on the Lucy
+    post — Schema.org url-shaped fields must never be the literal empty
+    string."""
+    for key in _EMPTYABLE_URL_FIELDS:
+        val = node.get(key)
+        if isinstance(val, str) and val.strip() == "":
+            errors.append(f"{type_str}.{key} is empty string")
+        elif isinstance(val, list) and any(
+            isinstance(x, str) and x.strip() == "" for x in val
+        ):
+            errors.append(f"{type_str}.{key}[] contains empty string")
+
+
+def _validate_jsonld_block(
+    body: str,
+    i: int,
+    ids_seen: set[str],
+    errors: list[str],
+    warnings: list[str],
+) -> None:
+    """Validate a single inline <script type="application/ld+json"> body."""
+    _check_template_leak(body, i, errors)
+    try:
+        data = json.loads(body)
+    except json.JSONDecodeError as e:
+        errors.append(
+            f"block#{i}: invalid JSON ({e.msg} at line {e.lineno} col {e.colno})"
+        )
+        return
+    for type_str, node in iter_typed_nodes(data):
+        # Skip pure @id references — pointers to nodes defined elsewhere,
+        # not full node definitions.
+        keys_no_at = {k.lstrip("@") for k in node}
+        if keys_no_at <= {"type", "id"}:
+            continue
+        _check_node_required(type_str, node, errors)
+        _check_node_id_unique(type_str, node, ids_seen, warnings)
+        _check_node_empty_urls(type_str, node, errors)
+
+
 def validate_page(path: Path) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     warnings: list[str] = []
@@ -148,47 +227,9 @@ def validate_page(path: Path) -> tuple[list[str], list[str]]:
     blocks = JSONLD_RE.findall(html)
     if not blocks:
         return errors, warnings
-
     ids_seen: set[str] = set()
     for i, raw in enumerate(blocks):
-        body = raw.strip()
-        # Unresolved templating leaking through.
-        if "{{" in body or ("}}" in body and not body.count("}") == body.count("{")):
-            errors.append(f"block#{i}: unresolved template token ({'{{' if '{{' in body else '}}'} found)")
-        try:
-            data = json.loads(body)
-        except json.JSONDecodeError as e:
-            errors.append(f"block#{i}: invalid JSON ({e.msg} at line {e.lineno} col {e.colno})")
-            continue
-
-        for type_str, node in iter_typed_nodes(data):
-            # Skip pure @id references — these are pointers to a node
-            # defined elsewhere (in the same graph or another page), not
-            # full node definitions.
-            keys_no_at = {k.lstrip("@") for k in node.keys()}
-            if keys_no_at <= {"type", "id"}:
-                continue
-            required = REQUIRED.get(type_str)
-            if required:
-                present = set(node.keys()) | keys_no_at
-                missing = required - present
-                if missing:
-                    errors.append(f"{type_str}: missing required {sorted(missing)}")
-            # @id uniqueness within the page.
-            nid = node.get("@id")
-            if isinstance(nid, str):
-                if nid in ids_seen:
-                    warnings.append(f"{type_str}: duplicate @id {nid!r}")
-                ids_seen.add(nid)
-            # Empty url/href detection.
-            for key in ("url", "href", "image", "sameAs"):
-                val = node.get(key)
-                if isinstance(val, str) and val.strip() == "":
-                    errors.append(f"{type_str}.{key} is empty string")
-                elif isinstance(val, list):
-                    if any(isinstance(x, str) and x.strip() == "" for x in val):
-                        errors.append(f"{type_str}.{key}[] contains empty string")
-
+        _validate_jsonld_block(raw.strip(), i, ids_seen, errors, warnings)
     return errors, warnings
 
 
