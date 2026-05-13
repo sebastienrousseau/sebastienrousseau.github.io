@@ -627,6 +627,122 @@ def write_llms_txt(public: Path) -> bool:
 
 
 # ---------------------------------------------------------------------------
+# 6d. XML feed URL rewrite
+# ---------------------------------------------------------------------------
+
+# Shokunin's RSS, Atom and news-sitemap output writes every per-entry link /
+# guid / id as `http://127.0.0.1:8000/.meta/` instead of the post's
+# canonical URL. sitemap.xml is unaffected — it derives URLs from a
+# different code path. The rewrite below repairs the three broken feeds:
+#
+#   1. Build a (post_title -> post_url) map from _posts/<stem>.md
+#      frontmatter (title + url fields).
+#   2. For each <item> (RSS) / <entry> (Atom) / <url> (news-sitemap) block,
+#      pull the title and look up the canonical URL.
+#   3. Rewrite every localhost-or-.meta URL inside that block to the
+#      canonical URL — covers <link>, <guid>, <id>, news:loc, etc.
+#
+# The site root URL is also rewritten generically (any
+# http://127.0.0.1:8000 → https://sebastienrousseau.com) so per-feed
+# top-level <link> / channel-level URLs come along for the ride.
+
+_TITLE_INSIDE_RE = re.compile(
+    r'<(?:title|news:title)[^>]*>([\s\S]*?)</(?:title|news:title)>',
+    re.IGNORECASE,
+)
+_RSS_ITEM_RE   = re.compile(r'<item>[\s\S]*?</item>', re.IGNORECASE)
+_ATOM_ENTRY_RE = re.compile(r'<entry>[\s\S]*?</entry>', re.IGNORECASE)
+_NEWS_URL_RE   = re.compile(r'<url>[\s\S]*?</url>', re.IGNORECASE)
+
+
+def _build_title_index() -> dict[str, str]:
+    """title -> canonical https://… URL, derived from _posts frontmatter."""
+    idx: dict[str, str] = {}
+    if not POSTS_DIR.is_dir():
+        return idx
+    for md in POSTS_DIR.glob("*.md"):
+        fm = _read_fm(md)
+        title = fm.get("title")
+        url = fm.get("url")
+        if title and url:
+            idx[title.strip()] = url.strip()
+            # Some feeds emit XML-escaped titles. Pre-compute both forms so
+            # the lookup hits either way.
+            idx[title.replace("&", "&amp;").strip()] = url.strip()
+    return idx
+
+
+def _decode_entities(s: str) -> str:
+    return (s.replace("&amp;", "&")
+             .replace("&lt;", "<")
+             .replace("&gt;", ">")
+             .replace("&quot;", '"')
+             .replace("&apos;", "'")
+             .strip())
+
+
+def _patch_block(block: str, title_index: dict[str, str]) -> str:
+    tm = _TITLE_INSIDE_RE.search(block)
+    if not tm:
+        return block
+    title_raw = tm.group(1)
+    title_clean = _decode_entities(title_raw)
+    url = title_index.get(title_clean) or title_index.get(title_raw.strip())
+    if not url:
+        return block
+
+    # Replace any URL inside this block that either has a localhost host or
+    # has /.meta/ anywhere in its path — that's the Shokunin bug signature.
+    bad_url = (
+        r'https?://'
+        r'(?:'
+        # localhost host (any path)
+        r'(?:127\.0\.0\.1|localhost)(?::\d+)?[^<\s"]*'
+        # OR any host with a /.meta/ path segment
+        r'|[^<\s"]*?/\.meta(?:/[^<\s"]*)?'
+        r')'
+    )
+
+    def rewrite_url(m: re.Match[str]) -> str:
+        return m.group(1) + url + m.group(3)
+
+    block = re.sub(rf'(>\s*)({bad_url})(\s*<)', rewrite_url, block)
+    block = re.sub(rf'(="\s*)({bad_url})(\s*")', rewrite_url, block)
+    return block
+
+
+def fix_xml_feed_urls(public: Path) -> int:
+    title_index = _build_title_index()
+    if not title_index:
+        return 0
+    patched = 0
+    for xml in public.glob("*.xml"):
+        original = xml.read_text(encoding="utf-8", errors="ignore")
+        text = original
+
+        # Per-item / per-entry / per-url URL rewrites.
+        if "<item>" in text.lower():
+            text = _RSS_ITEM_RE.sub(lambda m: _patch_block(m.group(0), title_index), text)
+        if "<entry>" in text.lower():
+            text = _ATOM_ENTRY_RE.sub(lambda m: _patch_block(m.group(0), title_index), text)
+        if "<news:" in text.lower():
+            text = _NEWS_URL_RE.sub(lambda m: _patch_block(m.group(0), title_index), text)
+
+        # Top-of-feed cleanup: any residual localhost reference becomes the
+        # production root. Done last so it doesn't shadow per-block matches.
+        text = re.sub(
+            r'https?://(?:127\.0\.0\.1|localhost)(?::\d+)?',
+            "https://sebastienrousseau.com",
+            text,
+        )
+
+        if text != original:
+            xml.write_text(text, encoding="utf-8")
+            patched += 1
+    return patched
+
+
+# ---------------------------------------------------------------------------
 # 6c. XML feed entity-escape pass
 # ---------------------------------------------------------------------------
 
@@ -808,6 +924,11 @@ def main() -> None:
     robots_written = write_robots(PUBLIC)
     llms_written = write_llms_txt(PUBLIC)
 
+    # Repair Shokunin's RSS / Atom / news-sitemap URLs (.meta/ + localhost).
+    # Must run BEFORE the ampersand-escape pass so the URL rewrite operates
+    # on the original string and doesn't get derailed by escaped ampersands
+    # in titles.
+    feed_urls_patched = fix_xml_feed_urls(PUBLIC)
     # Repair Shokunin's RSS / news-sitemap output (bare & in titles).
     xml_patched = fix_xml_feeds(PUBLIC)
 
@@ -820,6 +941,7 @@ def main() -> None:
         f"{about_patched} got about/mentions entities, "
         f"{csp_patched} got CSP JSON-LD hashes, "
         f"{sitemap_patched} sitemap entries refreshed, "
+        f"{feed_urls_patched} feed(s) URL-repaired, "
         f"{xml_patched} XML feed(s) scrubbed, "
         f"robots.txt {'updated' if robots_written else 'unchanged'}, "
         f"llms.txt {'updated' if llms_written else 'unchanged'}"

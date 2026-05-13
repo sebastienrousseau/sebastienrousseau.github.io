@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -14,7 +14,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/accessibility</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -26,7 +26,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -38,7 +38,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -50,7 +50,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -62,7 +62,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -74,7 +74,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/projects</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -86,7 +86,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -98,7 +98,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/404/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -110,7 +110,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -122,7 +122,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -134,7 +134,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -146,7 +146,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -158,7 +158,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -170,7 +170,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -182,7 +182,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -194,7 +194,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -206,7 +206,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again</loc>
   <news:news>
     <news:publication>
       <news:name>Sebastien Rousseau</news:name>
@@ -218,7 +218,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -230,7 +230,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -242,7 +242,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -254,7 +254,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/tags</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -266,7 +266,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/thanks</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -278,7 +278,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -290,7 +290,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -302,7 +302,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/papers</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -314,7 +314,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -326,7 +326,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/playlists</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -338,7 +338,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -350,7 +350,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/made-with-shokunin</loc>
   <news:news>
     <news:publication>
       <news:name>Sebastian Rousseau</news:name>
@@ -362,7 +362,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -374,7 +374,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -386,7 +386,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -398,7 +398,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -410,7 +410,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/about</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -422,7 +422,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -434,7 +434,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -446,7 +446,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/articles</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -458,7 +458,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -470,7 +470,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -482,7 +482,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -494,7 +494,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -506,7 +506,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -518,7 +518,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -530,7 +530,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/privacy</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -542,7 +542,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/offline</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -554,7 +554,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -566,7 +566,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -578,7 +578,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -590,7 +590,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/contact</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -602,7 +602,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/made-with-static-site-generator/</loc>
   <news:news>
     <news:publication>
       <news:name>Sebastian Rousseau</news:name>
@@ -614,7 +614,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -626,7 +626,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/terms</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -638,7 +638,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
@@ -650,7 +650,7 @@
   </news:news>
 </url>
 <url>
-  <loc>http://127.0.0.1:8000/.meta/index.html</loc>
+  <loc>https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
