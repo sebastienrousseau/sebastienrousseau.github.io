@@ -20,6 +20,8 @@ import validate_jsonld as v
 GOOD_HTML = """<!doctype html>
 <html>
   <head>
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self'; script-src 'self' 'sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA='">
     <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BlogPosting","headline":"x","author":{"@type":"Person","name":"a"},"datePublished":"2026-01-01"}
     </script>
@@ -76,7 +78,8 @@ def test_jsonld_unresolved_template_caught(tmp_path):
 def test_jsonld_id_only_reference_not_flagged(tmp_path):
     # {"@type":"WebPage","@id":"…"} is a pointer, not a node definition,
     # so the required-field check must not fire.
-    html = """<script type="application/ld+json">
+    html = """<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA='">
+<script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BlogPosting","headline":"x","author":{"@type":"Person","name":"a"},"datePublished":"2026-01-01","mainEntityOfPage":{"@type":"WebPage","@id":"https://example.com/"}}
 </script>"""
     p = write(tmp_path, "ref.html", html)
@@ -218,3 +221,98 @@ def test_url_taint_helper_passes_clean_url():
     errs: list[str] = []
     v._check_url_taint("label", "https://sebastienrousseau.com/clean/", errs)
     assert errs == []
+
+
+# ---------------------------------------------------------------------------
+# Meta-CSP defence-in-depth (catches the "meta CSP accidentally removed"
+# failure mode that would otherwise silently allow inline scripts via the
+# HTTP-header 'unsafe-inline' carve-out).
+# ---------------------------------------------------------------------------
+
+
+_GOOD_META_CSP_HTML = """<!doctype html>
+<html><head>
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=' https://www.googletagmanager.com; style-src 'self'">
+</head><body></body></html>"""
+
+
+def test_meta_csp_present_with_hash_passes():
+    errs = v.validate_meta_csp(_GOOD_META_CSP_HTML)
+    assert errs == []
+
+
+def test_meta_csp_missing_fails(tmp_path):
+    html = """<!doctype html>
+<html><head><title>x</title></head><body></body></html>"""
+    errs = v.validate_meta_csp(html)
+    assert any("meta CSP missing" in e for e in errs)
+
+
+def test_meta_csp_unsafe_inline_in_script_src_fails():
+    html = _GOOD_META_CSP_HTML.replace(
+        "'sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA='",
+        "'unsafe-inline'",
+    )
+    errs = v.validate_meta_csp(html)
+    assert any("'unsafe-inline'" in e for e in errs)
+
+
+def test_meta_csp_without_sha256_hash_fails():
+    html = _GOOD_META_CSP_HTML.replace(
+        " 'sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA='",
+        "",
+    )
+    errs = v.validate_meta_csp(html)
+    assert any("sha256-" in e for e in errs)
+
+
+def test_meta_csp_no_script_src_directive_fails():
+    html = """<!doctype html>
+<html><head>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+</head><body></body></html>"""
+    errs = v.validate_meta_csp(html)
+    assert any("no script-src" in e for e in errs)
+
+
+def test_meta_csp_attribute_order_does_not_matter():
+    # Shokunin's minifier sometimes emits `content=` before `http-equiv=`.
+    # Both orderings must be recognised.
+    html = """<!doctype html>
+<html><head>
+<meta content="default-src 'self'; script-src 'self' 'sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA='"
+      http-equiv="Content-Security-Policy">
+</head><body></body></html>"""
+    errs = v.validate_meta_csp(html)
+    assert errs == []
+
+
+def test_validate_page_propagates_meta_csp_failure(tmp_path):
+    # A page with JSON-LD but NO meta CSP must fail validate_page (so the
+    # build breaks on accidental meta-CSP removal even when JSON-LD looks
+    # otherwise correct).
+    html = """<!doctype html>
+<html><head><title>x</title>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"x","author":{"@type":"Person","name":"a"},"datePublished":"2026-01-01"}
+</script>
+</head></html>"""
+    p = tmp_path / "no-csp.html"
+    p.write_text(html, encoding="utf-8")
+    errors, _ = v.validate_page(p)
+    assert any("meta CSP missing" in e for e in errors)
+
+
+def test_validate_page_passes_when_csp_and_jsonld_both_correct(tmp_path):
+    p = tmp_path / "ok.html"
+    # GOOD_META_CSP_HTML + add a valid BlogPosting JSON-LD block.
+    html = _GOOD_META_CSP_HTML.replace(
+        "</head>",
+        """<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"x","author":{"@type":"Person","name":"a"},"datePublished":"2026-01-01"}
+</script></head>""",
+    )
+    p.write_text(html, encoding="utf-8")
+    errors, _ = v.validate_page(p)
+    assert errors == []

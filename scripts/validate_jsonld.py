@@ -45,6 +45,54 @@ JSONLD_RE = re.compile(
 )
 COMMENT_RE = re.compile(r'<!--[\s\S]*?-->')
 
+# CSP delivery is a defence-in-depth contract: the HTTP response carries a
+# permissive header (with 'unsafe-inline') for the securityheaders.com
+# grader, and EVERY page additionally carries a strict per-page meta CSP
+# with hash-pinned inline script tokens. Browsers enforce the intersection,
+# so the strict meta is what actually matters. If the meta CSP is ever
+# accidentally removed from the build, the HTTP header alone would silently
+# permit inline scripts site-wide. This pass turns that into a build error.
+META_CSP_RE = re.compile(
+    r'<meta\b[^>]*?http-equiv\s*=\s*["\']?Content-Security-Policy["\']?'
+    r'[^>]*?\bcontent\s*=\s*"([^"]+)"',
+    re.IGNORECASE,
+)
+META_CSP_RE_ALT = re.compile(
+    r'<meta\b[^>]*?\bcontent\s*=\s*"([^"]+)"'
+    r'[^>]*?http-equiv\s*=\s*["\']?Content-Security-Policy["\']?',
+    re.IGNORECASE,
+)
+SCRIPT_SRC_RE = re.compile(r'script-src\s+([^;]+)', re.IGNORECASE)
+
+
+def _extract_meta_csp(html: str) -> str | None:
+    """Return the meta CSP value if present, else None. Tolerates attribute
+    order (http-equiv before/after content) and minifier variations."""
+    m = META_CSP_RE.search(html) or META_CSP_RE_ALT.search(html)
+    return m.group(1) if m else None
+
+
+def validate_meta_csp(html: str) -> list[str]:
+    """Assert the per-page meta CSP exists, has a script-src directive,
+    that directive has at least one sha256-* token (hash-pinned inline),
+    and does NOT contain 'unsafe-inline' (which would defeat the
+    hash-pinning point). Returns a list of error strings — empty if OK."""
+    errors: list[str] = []
+    csp = _extract_meta_csp(html)
+    if csp is None:
+        errors.append("meta CSP missing — site relies on it for hash-pinned inline-script enforcement")
+        return errors
+    m = SCRIPT_SRC_RE.search(csp)
+    if m is None:
+        errors.append("meta CSP has no script-src directive")
+        return errors
+    script_src = m.group(1)
+    if "'unsafe-inline'" in script_src:
+        errors.append("meta CSP script-src contains 'unsafe-inline' — defeats hash-only enforcement")
+    if "sha256-" not in script_src:
+        errors.append("meta CSP script-src has no sha256-* hash tokens — inline JSON-LD would fail to load")
+    return errors
+
 # Required-property table per @type. Keep narrow — false positives are
 # more expensive than missing a real issue, and the Rich Results Test
 # covers the wider spec.
@@ -89,11 +137,14 @@ def iter_typed_nodes(obj, parent_key=None):
 def validate_page(path: Path) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     warnings: list[str] = []
-    html = path.read_text(encoding="utf-8", errors="ignore")
+    raw_html = path.read_text(encoding="utf-8", errors="ignore")
+    # Meta-CSP defence check runs against the RAW html — comments shouldn't
+    # affect attribute extraction, and the meta tag isn't inside one anyway.
+    errors.extend(validate_meta_csp(raw_html))
     # Strip HTML comments first — they can contain literal
     # <script type="application/ld+json"> text (documentation) that we
     # don't want the regex to match as a real script block.
-    html = COMMENT_RE.sub('', html)
+    html = COMMENT_RE.sub('', raw_html)
     blocks = JSONLD_RE.findall(html)
     if not blocks:
         return errors, warnings
