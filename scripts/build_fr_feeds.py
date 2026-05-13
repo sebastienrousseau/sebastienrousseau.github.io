@@ -28,7 +28,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _fr_slugs import EN_TO_FR  # noqa: E402
+from _fr_slugs import EN_TO_FR, FR_TO_EN  # noqa: E402
 
 PUBLIC = Path("public")
 SRC = Path("_posts/fr")
@@ -104,12 +104,15 @@ def collect_entries() -> list[dict[str, object]]:
     for md in sorted(SRC.glob("*.md")):
         if not _DATED_RE.match(md.stem):
             continue
-        if md.stem not in EN_TO_FR:
+        if md.stem in FR_TO_EN:
+            slug_fr = md.stem
+        elif md.stem in EN_TO_FR:
+            slug_fr = EN_TO_FR[md.stem]
+        else:
             continue
         fm = parse_frontmatter(md.read_text(encoding="utf-8"))
         if not fm.get("title"):
             continue
-        slug_fr = EN_TO_FR[md.stem]
         d = parse_date(fm.get("date", ""))
         entries.append({
             "slug": slug_fr,

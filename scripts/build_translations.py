@@ -34,7 +34,7 @@ from pathlib import Path
 from markdown_it import MarkdownIt
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _fr_slugs import EN_TO_FR, fr_slug  # noqa: E402
+from _fr_slugs import EN_TO_FR, FR_TO_EN, en_slug as _en_slug, fr_slug  # noqa: E402
 
 PUBLIC = Path("public")
 SRC = Path("_posts/fr")
@@ -603,16 +603,23 @@ def main() -> None:
         if not fm.get("title"):
             print(f"build_translations: skip {md.stem} — no title in frontmatter")
             continue
-        page = render_translation(md.stem, fm, body)
+        # File stem may be either the EN slug (legacy) or the FR slug.
+        # Resolve both directions so we can find the matching English shell.
+        if md.stem in FR_TO_EN:
+            en = FR_TO_EN[md.stem]
+            slug_fr = md.stem
+        else:
+            en = md.stem
+            slug_fr = fr_slug(md.stem)
+        page = render_translation(en, fm, body)
         if page is None:
             continue
-        slug_fr = fr_slug(md.stem)
         dst = OUT / slug_fr / "index.html"
         dst.parent.mkdir(parents=True, exist_ok=True)
         dst.write_text(page, encoding="utf-8")
         entries.append({
             "slug": slug_fr,
-            "en_slug": md.stem,
+            "en_slug": en,
             "title": fm.get("title", ""),
             "description": fm.get("description", ""),
             "date": fm.get("date", ""),
