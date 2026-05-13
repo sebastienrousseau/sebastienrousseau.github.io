@@ -536,7 +536,7 @@ def write_robots(public: Path) -> bool:
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _frontmatter import read_fm as _read_fm  # noqa: E402
+from _frontmatter import read_fm as _read_fm
 
 
 def build_llms_txt() -> str:

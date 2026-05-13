@@ -12,7 +12,8 @@ ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "_posts" / "projects.md"
 
 # (eyebrow, title, image, image_alt, summary, href)
-P = lambda *a: a
+def P(*a):
+    return a
 
 CATEGORIES = [
     {
@@ -352,16 +353,15 @@ def setup_hero_block() -> str:
 
 
 def setup_three_block() -> str:
-    cards = []
-    for t in THREE_THEMES:
-        cards.append(
-            f"""<article class="setup-card">
+    cards = [
+        f"""<article class="setup-card">
 <span class="setup-card-icon"><img alt="{t['icon_alt']}" src="{t['icon']}" loading="lazy" decoding="async" width="80" height="80" /></span>
 <h3 class="setup-card-title">{t['title']}</h3>
 <p class="setup-card-body">{t['body']}</p>
 <p class="setup-card-cta"><a href="{t['cta_href']}" class="setup-card-link">{t['cta_label']} <span aria-hidden="true">›</span></a></p>
 </article>"""
-        )
+        for t in THREE_THEMES
+    ]
     return (
         '<section class="setup-three" aria-labelledby="setup-three-heading">'
         '<header class="setup-three-head">'

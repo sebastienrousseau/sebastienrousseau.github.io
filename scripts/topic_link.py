@@ -94,7 +94,7 @@ LEAD_BLOCK_RE = re.compile(r"<!-- lead-start -->[\s\S]*?<!-- lead-end -->")
 ENRICH_BLOCK_RE = re.compile(r"<!-- enrich-start -->[\s\S]*?<!-- enrich-end -->")
 
 
-def process_post(path: Path) -> int:
+def process_post(path: Path) -> int:  # noqa: C901 — Markdown-region walker; branches map to protect/skip cases
     """Return number of new internal links added to this post."""
     src = path.read_text()
     m = FRONTMATTER_RE.match(src)

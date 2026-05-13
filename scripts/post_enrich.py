@@ -66,7 +66,7 @@ HAS_HAND_LEAD = re.compile(r"^\s*>\s*\*\*Key Takeaways", re.MULTILINE)
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _frontmatter import fm_get, fm_set, split_frontmatter  # noqa: E402
+from _frontmatter import fm_get, fm_set, split_frontmatter
 
 
 def strip_md(s: str) -> str:
@@ -98,7 +98,7 @@ def derive_excerpt(body: str) -> str:
     return ""
 
 
-def derive_key_takeaways(body: str, max_items: int = 4) -> list[str]:
+def derive_key_takeaways(body: str, max_items: int = 4) -> list[str]:  # noqa: C901 — Markdown body walker; the branching IS the spec
     """Auto-derive Key Takeaway bullets from the body.
 
     Walks the document looking for substantive headings — H2 first, then
@@ -110,7 +110,7 @@ def derive_key_takeaways(body: str, max_items: int = 4) -> list[str]:
     lines = body.splitlines()
     n = len(lines)
 
-    def emit_for_heading(heading: str, start_idx: int) -> bool:
+    def emit_for_heading(heading: str, start_idx: int) -> bool:  # noqa: C901 — nested paragraph-finder; structural complexity
         if heading.lower() in GENERIC_H2:
             return False
         # Walk forward to the first paragraph (a run of one or more
@@ -210,8 +210,7 @@ def build_lead(excerpt: str, takeaways: list[str], related: list[dict]) -> str:
     if takeaways:
         parts.append('<p class="post-lead-heading"><strong>Key takeaways</strong></p>')
         parts.append('<ul class="post-lead-takeaways">')
-        for t in takeaways:
-            parts.append(f"  <li>{md_inline_to_html(t)}</li>")
+        parts.extend(f"  <li>{md_inline_to_html(t)}</li>" for t in takeaways)
         parts.append('</ul>')
     if related:
         links = ", ".join(
@@ -244,7 +243,7 @@ def md_inline_to_html(text: str) -> str:
 
 # ---------------------------------------------------------------------------
 
-def main() -> None:
+def main() -> None:  # noqa: C901 — multi-stage enrich pipeline; sequential by design
     posts: list[dict[str, object]] = []
     for md in sorted(POSTS.glob("*.md")):
         if not DATED.match(md.name):

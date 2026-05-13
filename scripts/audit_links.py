@@ -60,9 +60,7 @@ def check_internal(href: str, public: Path) -> bool:
     # Common static-site convention: /foo/ → /foo/index.html
     if target.is_dir() and (target / "index.html").is_file():
         return True
-    if target.with_suffix(".html").is_file():
-        return True
-    return False
+    return bool(target.with_suffix(".html").is_file())
 
 
 def check_external(url: str) -> tuple[str, int | str]:

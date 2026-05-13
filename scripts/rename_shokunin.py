@@ -67,9 +67,10 @@ def file_targets() -> list[Path]:
         base = REPO / d
         if not base.is_dir():
             continue
-        for p in base.rglob("*"):
-            if p.is_file() and p.suffix in EXTENSIONS:
-                out.append(p)
+        out.extend(
+            p for p in base.rglob("*")
+            if p.is_file() and p.suffix in EXTENSIONS
+        )
     for rel in EXTRA_FILES:
         p = REPO / rel
         if p.is_file():

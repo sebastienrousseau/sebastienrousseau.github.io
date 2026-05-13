@@ -127,7 +127,7 @@ def resolve(url: str) -> str | None:
     return None
 
 
-def main() -> int:
+def main() -> int:  # noqa: C901 — one-shot CLI; sequential pipeline by design
     files: list[Path] = []
     for pattern in SOURCE_GLOBS:
         files.extend(REPO.glob(pattern))

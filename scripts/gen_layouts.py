@@ -323,7 +323,8 @@ def _playlist_section(kicker: str, title: str, lede, items) -> str:
 
 def playlist_layout() -> str:
     sections_html = "\n\n".join(
-        _playlist_section(k, t, l, items) for k, t, l, items in PLAYLISTS_SECTIONS
+        _playlist_section(key, title, link, items)
+        for key, title, link, items in PLAYLISTS_SECTIONS
     )
     body = f"""    <section class="ap-hero">
       <h1>{{{{name}}}}</h1>

@@ -299,9 +299,11 @@ def _validate_rss_item(
     errors: list[str],
     warnings: list[str],
 ) -> None:
-    for required in ("title", "link"):
-        if item.find(required) is None:
-            errors.append(f"rss: item[{i}] missing <{required}>")
+    errors.extend(
+        f"rss: item[{i}] missing <{required}>"
+        for required in ("title", "link")
+        if item.find(required) is None
+    )
     link = (item.findtext("link") or "").strip()
     _check_url_taint(f"rss: item[{i}] <link>", link, errors)
     _check_url_seo(f"rss: item[{i}] <link>", link, warnings)
@@ -336,9 +338,11 @@ def _validate_rss(root: ET.Element, errors: list[str], warnings: list[str]) -> N
     if channel is None:
         errors.append("rss: missing <channel>")
         return
-    for required in ("title", "link", "description"):
-        if channel.find(required) is None:
-            errors.append(f"rss: channel missing <{required}>")
+    errors.extend(
+        f"rss: channel missing <{required}>"
+        for required in ("title", "link", "description")
+        if channel.find(required) is None
+    )
     desc = channel.findtext("description", "")
     if desc and len(desc.strip()) < 30:
         warnings.append(f"rss: channel description is very short ({len(desc.strip())}c, ideal ≥30)")
@@ -355,9 +359,11 @@ def _validate_atom_entry(
     errors: list[str],
     warnings: list[str],
 ) -> None:
-    for required in ("id", "title", "updated"):
-        if entry.find(f"{{{_ATOM_NS}}}{required}") is None:
-            errors.append(f"atom: entry[{i}] missing <{required}>")
+    errors.extend(
+        f"atom: entry[{i}] missing <{required}>"
+        for required in ("id", "title", "updated")
+        if entry.find(f"{{{_ATOM_NS}}}{required}") is None
+    )
     eid = (entry.findtext(f"{{{_ATOM_NS}}}id") or "").strip()
     _check_url_taint(f"atom: entry[{i}] <id>", eid, errors)
     if eid:
@@ -376,9 +382,11 @@ def _validate_atom_entry(
 
 
 def _validate_atom(root: ET.Element, errors: list[str], warnings: list[str]) -> None:
-    for required in ("id", "title", "updated"):
-        if root.find(f"{{{_ATOM_NS}}}{required}") is None:
-            errors.append(f"atom: feed missing <{required}>")
+    errors.extend(
+        f"atom: feed missing <{required}>"
+        for required in ("id", "title", "updated")
+        if root.find(f"{{{_ATOM_NS}}}{required}") is None
+    )
     feed_updated = (root.findtext(f"{{{_ATOM_NS}}}updated") or "").strip()
     if feed_updated and not RFC3339_RE.match(feed_updated):
         warnings.append(f"atom: feed <updated> not RFC 3339: {feed_updated!r}")

@@ -41,6 +41,11 @@ ignore = [
     "S310",   # urllib.urlopen for the link-audit tool is the point
     "RET504", # unnecessary assignment before return — sometimes clearer
     "RUF013", # implicit Optional — handled by mypy where it matters
+    "E402",   # `import sys` is intentionally placed below `sys.path.insert()`
+              # in scripts that import shared modules from scripts/_frontmatter.py
+    "RUF001", # `›`, `–` etc. in user-facing strings is intentional typography
+    "RUF002", # same in docstrings
+    "RUF003", # same in comments
 ]
 
 [tool.ruff.lint.per-file-ignores]

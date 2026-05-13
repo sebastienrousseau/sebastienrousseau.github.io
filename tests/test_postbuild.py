@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import postbuild as pb
 
-
 # ---------------------------------------------------------------------------
 # XML feed ampersand escape pass (`escape_xml_ampersands`)
 # ---------------------------------------------------------------------------

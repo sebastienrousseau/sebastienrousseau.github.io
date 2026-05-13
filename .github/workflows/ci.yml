@@ -40,7 +40,9 @@ jobs:
           python-version: "3.12"
 
       - name: Install Python dev tooling
-        run: pip install --quiet ruff pytest
+        # Pin ruff so CI uses the same rule set + complexity bookkeeping
+        # as local. Bump deliberately rather than drift with `latest`.
+        run: pip install --quiet 'ruff==0.15.*' pytest
 
       - name: Lint (ruff)
         run: ruff check scripts/ tests/

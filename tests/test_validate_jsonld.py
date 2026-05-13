@@ -5,12 +5,7 @@ catch, so any future change that loosens the gate breaks a test.
 """
 from __future__ import annotations
 
-from pathlib import Path
-
-import pytest
-
 import validate_jsonld as v
-
 
 # ---------------------------------------------------------------------------
 # Structured-data pass (HTML JSON-LD)
