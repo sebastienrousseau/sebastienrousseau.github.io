@@ -357,27 +357,34 @@ document.addEventListener("click", function (event) {
 })();
 
 /**
- * Language selector — wires up the <details class="ap-lang"> in the nav.
- *   - Marks the current language item with aria-current="true"
- *   - Overrides each item's href with the per-page hreflang alternate
- *     (set by postbuild on translated posts), falling back to the
- *     language hub (/ for en, /fr/ for fr) on pages without a
- *     translation pair.
- *   - Closes the menu when the user clicks outside or presses Escape.
+ * Language selector — wires up the .ap-lang button + flag-grid menu in
+ * the nav.
+ *   - Reflects the current language on the toggle (globe + code).
+ *   - Marks the current language item with aria-current="true".
+ *   - Active live languages (those with real /{lang}/ routes) get their
+ *     hrefs rewired to the per-page hreflang alternate when one exists.
+ *   - Disabled placeholder languages stay non-clickable.
+ *   - Toggle: button click + outside-click close + Escape close.
  */
 (function langSelector() {
     "use strict";
     var box = document.querySelector(".ap-lang");
     if (!box) return;
+    var toggle = box.querySelector(".ap-lang-toggle");
+    var menu = box.querySelector(".ap-lang-menu");
+    if (!toggle || !menu) return;
+
     var current = (document.documentElement.getAttribute("lang") || "en").slice(0, 2).toLowerCase();
     var items = box.querySelectorAll(".ap-lang-item");
     items.forEach(function (a) {
         var lang = a.getAttribute("data-lang");
-        if (lang === current) {
+        if (lang === current || lang.indexOf(current + "-") === 0) {
             a.setAttribute("aria-current", "true");
+            a.classList.add("active");
         }
-        // If a per-page alternate exists for this language, point the
-        // menu item at it. Otherwise leave the default hub link.
+        // Per-page hreflang override (live links only — placeholders
+        // are <span> with no href and aria-disabled, skipped here).
+        if (a.tagName !== "A") return;
         var alt = document.querySelector(
             'link[rel="alternate"][hreflang="' + lang + '"]'
         );
@@ -385,17 +392,32 @@ document.addEventListener("click", function (event) {
             a.setAttribute("href", alt.getAttribute("href"));
         }
     });
-    // Reflect current language in the toggle button.
-    var label = box.querySelector(".ap-lang-current");
-    if (label) label.textContent = current.toUpperCase();
+    // Visible label + aria-label come from the SSR + chrome patches —
+    // JS leaves them alone.
 
-    // Close on outside-click + Escape.
+    function setOpen(open) {
+        if (open) {
+            menu.removeAttribute("hidden");
+            toggle.setAttribute("aria-expanded", "true");
+        } else {
+            menu.setAttribute("hidden", "");
+            toggle.setAttribute("aria-expanded", "false");
+        }
+    }
+
+    toggle.addEventListener("click", function (e) {
+        e.stopPropagation();
+        setOpen(toggle.getAttribute("aria-expanded") !== "true");
+    });
     document.addEventListener("click", function (e) {
-        if (!box.open) return;
-        if (!box.contains(e.target)) box.open = false;
+        if (toggle.getAttribute("aria-expanded") !== "true") return;
+        if (!box.contains(e.target)) setOpen(false);
     });
     document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape" && box.open) box.open = false;
+        if (e.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+            setOpen(false);
+            toggle.focus();
+        }
     });
 })();
 

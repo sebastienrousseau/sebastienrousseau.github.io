@@ -192,8 +192,10 @@ CHROME_PATCHES: list[tuple[str, str]] = [
 
     # Language selector
     (r'aria-label="Language"', 'aria-label="Langue"'),
-    (r'aria-label="Change language"', 'aria-label="Changer de langue"'),
+    (r'aria-label="EN, Change language"', 'aria-label="FR, Changer de langue"'),
     (r'title="Change language"', 'title="Changer de langue"'),
+    (r'title="Coming soon"', 'title="Prochainement"'),
+    (r'<span class="ap-lang-current">EN</span>', '<span class="ap-lang-current">FR</span>'),
 
     # Feed link titles in <head>
     (r'title="Atom Feed"', 'title="Flux Atom"'),
