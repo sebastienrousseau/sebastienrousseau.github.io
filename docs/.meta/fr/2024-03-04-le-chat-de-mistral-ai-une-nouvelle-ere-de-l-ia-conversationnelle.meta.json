@@ -1,11 +1,11 @@
 {
   "description": "Rencontre avec le nouvel assistant multilingue de Mistral AI — une IA avancée capable de comprendre et répondre dans plusieurs langues, dans une même conversation et en temps réel.",
-  "title": "Le Chat de Mistral AI : IA conversationnelle multilingue",
   "keywords": "Le Chat, Mistral AI, chatbot Mistral, assistant virtuel, compréhension multilingue, service client IA, solutions entreprise Mistral, personnalisation Le Chat, support multilingue, communication IA, IA pour entreprise",
-  "banner": "https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp",
-  "banner_alt": "Art numérique abstrait coloré d'un chat",
-  "date": "March 04, 2024",
-  "language": "fr",
   "subtitle": "Redéfinir l'interaction utilisateur à travers les langues",
-  "locale": "fr_FR"
+  "language": "fr",
+  "date": "March 04, 2024",
+  "title": "Le Chat de Mistral AI : IA conversationnelle multilingue",
+  "locale": "fr_FR",
+  "banner_alt": "Art numérique abstrait coloré d'un chat",
+  "banner": "https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp"
 }

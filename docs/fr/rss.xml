@@ -6,13 +6,13 @@
     <description>Articles en français : IA appliquée, paiements ISO 20022, cryptographie post-quantique et transformation des paiements wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/fr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fr-FR</language>
-    <lastBuildDate>Wed, 13 May 2026 23:25:21 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2026 23:41:32 +0000</lastBuildDate>
     <copyright>© Copyright 2024 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
     <item>
       <title>Le rendement caché : décryptage des dépôts BRSRV et BSTBL de BlackRock</title>
-      <link>https://sebastienrousseau.com/fr/2026-05-15-blackrock-brsrv-bstbl-genius-act-fonds-monetaire-tokenise/</link>
+      <link>https://sebastienrousseau.com/fr/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/</link>
       <description>Sous le GENIUS Act, les stablecoins ne peuvent pas verser de rendement. Les dépôts BRSRV et BSTBL de BlackRock illustrent le contournement : un fonds monétaire tokenisé en parallèle d&apos;un stablecoin réglementé, pour acheminer le rendement via un rail conforme adjacent.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-15-blackrock-brsrv-bstbl-genius-act-fonds-monetaire-tokenise/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/</guid>
       <pubDate>Fri, 15 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp" type="image/webp" length="0"/>
@@ -120,9 +120,9 @@
     </item>
     <item>
       <title>Paiements quantique-résistants : pourquoi l&apos;industrie doit agir maintenant</title>
-      <link>https://sebastienrousseau.com/fr/2025-09-01-paiements-quantum-safe-epaa/</link>
+      <link>https://sebastienrousseau.com/fr/2025-09-01-paiements-resistants-au-quantique-epaa/</link>
       <description>Le calcul quantique menace la cryptographie des systèmes de paiement. Le livre blanc EPAA expose le risque structurel et plaide pour une migration urgente vers la cryptographie post-quantique.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2025-09-01-paiements-quantum-safe-epaa/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2025-09-01-paiements-resistants-au-quantique-epaa/</guid>
       <pubDate>Mon, 01 Sep 2025 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/digital-nodes.webp" type="image/webp" length="0"/>
@@ -139,9 +139,9 @@
     </item>
     <item>
       <title>Cryptographie sur réseaux : un bug dans l&apos;attaque LWE de Chen</title>
-      <link>https://sebastienrousseau.com/fr/2024-04-22-bug-dans-l-algorithme-quantique-pour-la-cryptographie-fondee-sur-les-reseaux/</link>
+      <link>https://sebastienrousseau.com/fr/2024-04-22-anomalie-dans-l-algorithme-quantique-pour-la-cryptographie-fondee-sur-les-reseaux/</link>
       <description>Un bug dans l&apos;algorithme quantique LWE de Yilei Chen offre un sursis temporaire à la cryptographie sur réseaux. Ce que cela signifie pour CRYSTALS-Kyber, Dilithium et la feuille de route PQC.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2024-04-22-bug-dans-l-algorithme-quantique-pour-la-cryptographie-fondee-sur-les-reseaux/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2024-04-22-anomalie-dans-l-algorithme-quantique-pour-la-cryptographie-fondee-sur-les-reseaux/</guid>
       <pubDate>Mon, 22 Apr 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/digital-nodes.webp" type="image/webp" length="0"/>
@@ -295,9 +295,9 @@
     </item>
     <item>
       <title>Google Gemma : transformer le développement de l&apos;IA open source</title>
-      <link>https://sebastienrousseau.com/fr/2024-02-26-google-gemma-transformer-le-developpement-ia-open-source/</link>
+      <link>https://sebastienrousseau.com/fr/2024-02-26-google-gemma-transformer-le-developpement-ia-en-source-ouverte/</link>
       <description>Découvrez le modèle Gemma de Google : un projet open source proposant des solutions d&apos;IA éthique pour un usage personnel comme entreprise.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2024-02-26-google-gemma-transformer-le-developpement-ia-open-source/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2024-02-26-google-gemma-transformer-le-developpement-ia-en-source-ouverte/</guid>
       <pubDate>Mon, 26 Feb 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/ai-ship.webp" type="image/webp" length="0"/>
@@ -333,9 +333,9 @@
     </item>
     <item>
       <title>L&apos;AI Act de l&apos;UE : pionnier de la régulation éthique de l&apos;IA dans le monde</title>
-      <link>https://sebastienrousseau.com/fr/2024-02-13-ai-act-europeen-faconner-l-avenir-de-la-regulation-mondiale-de-l-ia/</link>
+      <link>https://sebastienrousseau.com/fr/2024-02-13-reglement-europeen-sur-l-ia-faconner-l-avenir-de-la-regulation-mondiale/</link>
       <description>L&apos;AI Act de l&apos;UE établit le premier cadre complet de régulation éthique et risquée de l&apos;IA dans le monde. Ce qui change pour les banques, les fournisseurs et les systèmes à haut risque.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2024-02-13-ai-act-europeen-faconner-l-avenir-de-la-regulation-mondiale-de-l-ia/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2024-02-13-reglement-europeen-sur-l-ia-faconner-l-avenir-de-la-regulation-mondiale/</guid>
       <pubDate>Tue, 13 Feb 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" type="image/webp" length="0"/>
@@ -390,9 +390,9 @@
     </item>
     <item>
       <title>Analyse, traduction et insights audio propulsés par l&apos;IA</title>
-      <link>https://sebastienrousseau.com/fr/2024-01-29-analyse-audio-traductions-et-insights-ia/</link>
+      <link>https://sebastienrousseau.com/fr/2024-01-29-analyse-audio-traductions-et-perspectives-par-l-ia/</link>
       <description>Comment Audio Analyser, propulsé par Azure AI, transforme la conversion speech-to-text, l&apos;analyse de texte et les traductions pour des insights exploitables.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2024-01-29-analyse-audio-traductions-et-insights-ia/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2024-01-29-analyse-audio-traductions-et-perspectives-par-l-ia/</guid>
       <pubDate>Mon, 29 Jan 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" type="image/webp" length="0"/>
@@ -409,9 +409,9 @@
     </item>
     <item>
       <title>AI Prompt Engineering 2024 : techniques qui marchent</title>
-      <link>https://sebastienrousseau.com/fr/2024-01-23-avancees-en-prompt-engineering-ia/</link>
+      <link>https://sebastienrousseau.com/fr/2024-01-23-avancees-en-ingenierie-de-prompts-ia/</link>
       <description>Explorez les avancées 2024 du Prompt Engineering — tendances et techniques innovantes qui révolutionnent la tech et la finance.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2024-01-23-avancees-en-prompt-engineering-ia/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2024-01-23-avancees-en-ingenierie-de-prompts-ia/</guid>
       <pubDate>Tue, 23 Jan 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" type="image/webp" length="0"/>
@@ -428,9 +428,9 @@
     </item>
     <item>
       <title>Alien Studio : mon voyage de la tech à l&apos;art photographique</title>
-      <link>https://sebastienrousseau.com/fr/2024-01-15-alien-studio-revolution-de-l-art-par-la-photographie-ia/</link>
+      <link>https://sebastienrousseau.com/fr/2024-01-15-revolution-de-l-art-par-la-photographie-ia-alien-studio/</link>
       <description>Rejoignez-moi sur mon parcours personnel — de Rust, l&apos;IA et le calcul quantique vers la redéfinition de l&apos;art et de la photographie via Alien Studio.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2024-01-15-alien-studio-revolution-de-l-art-par-la-photographie-ia/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2024-01-15-revolution-de-l-art-par-la-photographie-ia-alien-studio/</guid>
       <pubDate>Mon, 15 Jan 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" type="image/webp" length="0"/>
@@ -580,9 +580,9 @@
     </item>
     <item>
       <title>CRYSTALS-Kyber : l&apos;algorithme de protection à l&apos;ère quantique</title>
-      <link>https://sebastienrousseau.com/fr/2023-11-19-crystals-kyber-algorithme-de-protection-a-l-ere-quantique/</link>
+      <link>https://sebastienrousseau.com/fr/2023-11-19-algorithme-de-protection-a-l-ere-quantique-crystals-kyber/</link>
       <description>Comment CRYSTALS-Kyber, algorithme de cryptographie quantique-résistant, révolutionne le monde de la cryptographie et nous prépare à l&apos;ère quantique.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2023-11-19-crystals-kyber-algorithme-de-protection-a-l-ere-quantique/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2023-11-19-algorithme-de-protection-a-l-ere-quantique-crystals-kyber/</guid>
       <pubDate>Sun, 19 Nov 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" type="image/webp" length="0"/>
@@ -655,9 +655,9 @@
     </item>
     <item>
       <title>Protéger les données à l&apos;ère quantique : la bibliothèque Hash (HSH)</title>
-      <link>https://sebastienrousseau.com/fr/2023-10-16-proteger-les-donnees-a-l-ere-quantique-bibliotheque-hash-hsh/</link>
+      <link>https://sebastienrousseau.com/fr/2023-10-16-proteger-les-donnees-a-l-ere-quantique-bibliotheque-de-hachage-hsh/</link>
       <description>HSH s&apos;appuie sur des primitives cryptographiques résistantes au quantique pour protéger vos données face aux avancées futures du calcul quantique.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2023-10-16-proteger-les-donnees-a-l-ere-quantique-bibliotheque-hash-hsh/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2023-10-16-proteger-les-donnees-a-l-ere-quantique-bibliotheque-de-hachage-hsh/</guid>
       <pubDate>Mon, 16 Oct 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp" type="image/webp" length="0"/>
@@ -757,9 +757,9 @@
     </item>
     <item>
       <title>La norme de token ERC-20</title>
-      <link>https://sebastienrousseau.com/fr/2018-01-24-la-norme-de-token-erc-20/</link>
+      <link>https://sebastienrousseau.com/fr/2018-01-24-la-norme-de-jeton-erc-20/</link>
       <description>ERC-20 : le type de token le plus répandu sur la blockchain Ethereum, souvent décrit comme un contrat numérique intelligent (smart contract).</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2018-01-24-la-norme-de-token-erc-20/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2018-01-24-la-norme-de-jeton-erc-20/</guid>
       <pubDate>Wed, 24 Jan 2018 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp" type="image/webp" length="0"/>
