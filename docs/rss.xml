@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sebastien Rousseau: AI, Payments &amp;amp; Quantum Cryptography</title>
+    <title>Sebastien Rousseau: AI, Payments &amp; Quantum Cryptography</title>
     <link>https://sebastienrousseau.com</link>
     <description>AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography.</description>
     <atom:link href="http://127.0.0.1:8000/rss.xml" rel="self" type="application/rss+xml"/>
@@ -9,7 +9,7 @@
     <lastBuildDate>Mon, 11 May 2026 06:06:06 +0000</lastBuildDate>
     <copyright>© Copyright 2024 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
     <item>
-      <title>Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</title>
+      <title>Lucy's Flash Drive Revisited: AI, Quantum &amp; Knowledge</title>
       <link>http://127.0.0.1:8000/.meta/</link>
       <description>Twelve years on, Besson&apos;s Lucy reads like a thought experiment about knowledge migrating from flesh to machine — quietly validated by LLMs and qubits.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
@@ -68,7 +68,7 @@
       <category>SEPA</category>
     </item>
     <item>
-      <title>Sebastien Rousseau: AI, Payments & Quantum Cryptography</title>
+      <title>Sebastien Rousseau: AI, Payments &amp; Quantum Cryptography</title>
       <link>http://127.0.0.1:8000/.meta/</link>
       <description>AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
@@ -239,7 +239,7 @@
       <category>Research</category>
     </item>
     <item>
-      <title>Research Publications & White Papers from Sebastien Rousseau</title>
+      <title>Research Publications &amp; White Papers from Sebastien Rousseau</title>
       <link>http://127.0.0.1:8000/.meta/</link>
       <description>Buy and Download copies of my collection of White Papers and Research Publications on Artificial Intelligence (AI), Quantum Cryptography, and more.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
@@ -402,7 +402,7 @@
       <category>Privacy</category>
     </item>
     <item>
-      <title>Generative AI in Advertising: Amazon Rufus & Meta</title>
+      <title>Generative AI in Advertising: Amazon Rufus &amp; Meta</title>
       <link>http://127.0.0.1:8000/.meta/</link>
       <description>Explore how AI transforms advertising with insights on Amazon&apos;s Rufus and Meta&apos;s latest developments. Discover the impact on consumer engagement</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
@@ -422,7 +422,7 @@
       <category>Optimization</category>
     </item>
     <item>
-      <title>AI-Powered Speech Analysis, Translation, & Insight Tool</title>
+      <title>AI-Powered Speech Analysis, Translation, &amp; Insight Tool</title>
       <link>http://127.0.0.1:8000/.meta/</link>
       <description>Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
@@ -462,7 +462,7 @@
       <category>Education</category>
     </item>
     <item>
-      <title>Website Accessibility Statement — Standards & Contact</title>
+      <title>Website Accessibility Statement — Standards &amp; Contact</title>
       <link>http://127.0.0.1:8000/.meta/</link>
       <description>This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
@@ -544,7 +544,7 @@
       <category>Innovation</category>
     </item>
     <item>
-      <title>Qiskit & Quantum Fourier Transform for Credit Ratio Analysis</title>
+      <title>Qiskit &amp; Quantum Fourier Transform for Credit Ratio Analysis</title>
       <link>http://127.0.0.1:8000/.meta/</link>
       <description>Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
@@ -820,7 +820,7 @@
       <category>Technology</category>
     </item>
     <item>
-      <title>Topics & Tags Index: AI, Payments, Quantum, Rust OSS</title>
+      <title>Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS</title>
       <link>http://127.0.0.1:8000/.meta/</link>
       <description>Browse Sebastien Rousseau&apos;s site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
@@ -874,7 +874,7 @@
       <category>pop music playlists</category>
     </item>
     <item>
-      <title>Sebastien Rousseau: AI, Banking & Financial Services Expert</title>
+      <title>Sebastien Rousseau: AI, Banking &amp; Financial Services Expert</title>
       <link>http://127.0.0.1:8000/.meta/</link>
       <description>Shaping the Future of Banking and Financial Services through Strategic Integration of Artificial Intelligence, Post-Quantum Cryptography &amp; Blockchain Technology</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
@@ -894,7 +894,7 @@
       <category>solution architecture</category>
     </item>
     <item>
-      <title>Privacy Statement — How Your Data Is Collected & Used</title>
+      <title>Privacy Statement — How Your Data Is Collected &amp; Used</title>
       <link>http://127.0.0.1:8000/.meta/</link>
       <description>This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>
@@ -938,7 +938,7 @@
       <category>support</category>
     </item>
     <item>
-      <title>Website Terms & Conditions of Use — Sebastien Rousseau</title>
+      <title>Website Terms &amp; Conditions of Use — Sebastien Rousseau</title>
       <link>http://127.0.0.1:8000/.meta/</link>
       <description>By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations.</description>
       <guid isPermaLink="true">http://127.0.0.1:8000/.meta/</guid>

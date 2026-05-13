@@ -627,6 +627,76 @@ def write_llms_txt(public: Path) -> bool:
 
 
 # ---------------------------------------------------------------------------
+# 6c. XML feed entity-escape pass
+# ---------------------------------------------------------------------------
+
+# Shokunin's RSS + news-sitemap output forgets to escape bare `&` characters
+# inside <title> / <description> / <news:title> elements (e.g. "AI, Quantum
+# & Knowledge"), which produces invalid XML and breaks any feed reader doing
+# strict parsing. Atom is clean; sitemap is clean. We scrub all XML feeds
+# defensively: every `&` that isn't already part of a valid XML entity
+# reference is rewritten to `&amp;`.
+
+# Pre-existing valid entities. Anything else after `&` (including `& ` or
+# `&Q` etc.) becomes `&amp;`.
+_VALID_ENTITY_RE = re.compile(r'&(amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);')
+
+
+# Shokunin over-escapes the RSS channel <title> when the source frontmatter
+# uses `&`. The signature is &amp;<entity-name>; — un-escape one layer.
+_DOUBLE_ESCAPE_RE = re.compile(r'&amp;(amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);')
+
+
+def escape_xml_ampersands(text: str) -> str:
+    """Repair XML feed ampersands two ways:
+
+    1. Un-double-escape `&amp;<entity>;` back to `&<entity>;` (Shokunin's bug
+       on the RSS channel-level <title>).
+    2. Replace bare `&` with `&amp;`, leaving valid entity references alone.
+
+    Walks the string in one pass after the double-escape repair.
+    """
+    text = _DOUBLE_ESCAPE_RE.sub(r'&\1;', text)
+    out: list[str] = []
+    i = 0
+    n = len(text)
+    while i < n:
+        ch = text[i]
+        if ch == '&':
+            m = _VALID_ENTITY_RE.match(text, i)
+            if m:
+                out.append(m.group(0))
+                i = m.end()
+                continue
+            out.append('&amp;')
+            i += 1
+        else:
+            out.append(ch)
+            i += 1
+    return "".join(out)
+
+
+def fix_xml_feeds(public: Path) -> int:
+    patched = 0
+    for xml in public.glob("*.xml"):
+        original = xml.read_text(encoding="utf-8", errors="ignore")
+        # XML declaration must stay first. Don't touch it.
+        if original.startswith("<?xml"):
+            decl_end = original.find("?>") + 2
+            head = original[:decl_end]
+            body = original[decl_end:]
+        else:
+            head = ""
+            body = original
+        body_fixed = escape_xml_ampersands(body)
+        new = head + body_fixed
+        if new != original:
+            xml.write_text(new, encoding="utf-8")
+            patched += 1
+    return patched
+
+
+# ---------------------------------------------------------------------------
 # 6. sitemap.xml lastmod refresh
 # ---------------------------------------------------------------------------
 
@@ -738,6 +808,9 @@ def main() -> None:
     robots_written = write_robots(PUBLIC)
     llms_written = write_llms_txt(PUBLIC)
 
+    # Repair Shokunin's RSS / news-sitemap output (bare & in titles).
+    xml_patched = fix_xml_feeds(PUBLIC)
+
     print(
         f"postbuild: {len(pages)} HTML pages, "
         f"{sri_patched} got real SRI, "
@@ -747,6 +820,7 @@ def main() -> None:
         f"{about_patched} got about/mentions entities, "
         f"{csp_patched} got CSP JSON-LD hashes, "
         f"{sitemap_patched} sitemap entries refreshed, "
+        f"{xml_patched} XML feed(s) scrubbed, "
         f"robots.txt {'updated' if robots_written else 'unchanged'}, "
         f"llms.txt {'updated' if llms_written else 'unchanged'}"
     )
