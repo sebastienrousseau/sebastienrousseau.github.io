@@ -103,10 +103,7 @@ site_software: "Static Site Generator, Rust"
 
 <div class="books-shelf">
 
-<article class="book">
-<a class="book-cover" href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" title="Read the white paper (PDF)" rel="external noopener">
-<img alt="Cover of the EPAA Quantum-Safe Payments white paper" src="https://cloudcdn.pro/clients/common/images/elements/publication.webp" loading="eager" fetchpriority="high" decoding="async" width="320" height="480" />
-</a>
+<article class="book book-no-cover">
 <div class="book-body">
 <p class="book-eyebrow">INDUSTRY WHITE PAPER · EPAA</p>
 <h2 class="book-title"><a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" rel="external noopener" title="Quantum-Safe Payments: Why the Payments Industry Must Act Now">Quantum-Safe Payments: Why the Payments Industry Must Act Now</a></h2>
@@ -117,10 +114,7 @@ site_software: "Static Site Generator, Rust"
 </div>
 </article>
 
-<article class="book">
-<a class="book-cover" href="https://www.paypal.com/ncp/payment/5T6L9WBXHNZUU" title="Buy Accelerating Real-Time Speech Recognition with OpenAI Whisper and Metal Performance Shaders on macOS on PayPal" rel="external noopener">
-<img alt="Cover of the white paper on real-time speech recognition with OpenAI Whisper and Metal Performance Shaders on macOS" src="https://cloudcdn.pro/clients/common/images/elements/publication.webp" loading="lazy" decoding="async" width="320" height="480" />
-</a>
+<article class="book book-no-cover">
 <div class="book-body">
 <p class="book-eyebrow">PUBLICATION · WHITE PAPER</p>
 <h2 class="book-title"><a href="/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html" title="Accelerating Real-Time Speech Recognition with OpenAI Whisper and Metal Performance Shaders on macOS">Accelerating Real-Time Speech Recognition with OpenAI Whisper and Metal Performance Shaders on macOS</a></h2>

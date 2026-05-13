@@ -123,7 +123,6 @@ last_reviewed: "2026-05-11"
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html">Àkàndé: GPT-Powered Voice Assistant for Executives</a>, <a href="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html">Google Gemma AI: Transforming Open-Source AI Development</a>, <a href="https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html">AI-Powered Speech Analysis, Translation, & Insight Tool</a>.</p>
 </aside>
 <!-- lead-end -->
-![Publication Cover](https://cloudcdn.pro/clients/common/images/elements/publication.webp).class=\"float-end w-25 me-10\"
 
 This article presents an overview of a [**research paper**][00] that explores the integration of OpenAI Whisper with Metal Performance Shaders (MPS) on macOS, offering a new approach to real-time speech recognition. OpenAI Whisper is a state-of-the-art automatic speech recognition (ASR) model that has been trained on a large dataset of diverse audio and is capable of transcribing speech in multiple languages. The combination of Whisper's advanced neural network architecture and MPS's GPU acceleration enables improved speed and accuracy for on-device speech processing, enhancing user privacy and convenience while opening new possibilities for application developers to incorporate real-time speech-to-text capabilities directly into macOS applications.
 

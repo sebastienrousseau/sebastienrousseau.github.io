@@ -26,10 +26,6 @@ FEATURED = {
     ),
     "date_iso": "2025-09-01",
     "date_display": "September 2025",
-    "image": "https://cloudcdn.pro/clients/common/images/elements/publication.webp",
-    "image_alt": (
-        "Cover of the EPAA Quantum-Safe Payments white paper"
-    ),
     "format": "English · PDF · 18.9 MB · Free download",
     "publisher": "Emerging Payments Association Asia (EPAA)",
     "publisher_url": "https://emergingpaymentsasia.org/",
@@ -60,11 +56,6 @@ PREVIOUS_PUBLICATION = {
     "title": (
         "Accelerating Real-Time Speech Recognition with OpenAI Whisper and "
         "Metal Performance Shaders on macOS"
-    ),
-    "image": "https://cloudcdn.pro/clients/common/images/elements/publication.webp",
-    "image_alt": (
-        "Cover of the white paper on real-time speech recognition with "
-        "OpenAI Whisper and Metal Performance Shaders on macOS"
     ),
     "excerpt": (
         "A system for real-time speech-to-text transcription that leverages "
@@ -139,10 +130,7 @@ RELATED = [
 
 def epaa_card_block() -> str:
     f = FEATURED
-    return f"""<article class="book">
-<a class="book-cover" href="{f['buy_url']}" title="{f['buy_label']} (PDF)" rel="external noopener">
-<img alt="{f['image_alt']}" src="{f['image']}" loading="eager" fetchpriority="high" decoding="async" width="320" height="480" />
-</a>
+    return f"""<article class="book book-no-cover">
 <div class="book-body">
 <p class="book-eyebrow">{f['eyebrow']}</p>
 <h2 class="book-title"><a href="{f['read_url']}" rel="external noopener" title="{f['title']}">{f['title']}</a></h2>
@@ -156,10 +144,7 @@ def epaa_card_block() -> str:
 
 def whisper_card_block() -> str:
     p = PREVIOUS_PUBLICATION
-    return f"""<article class="book">
-<a class="book-cover" href="{p['buy_url']}" title="Buy {p['title']} on PayPal" rel="external noopener">
-<img alt="{p['image_alt']}" src="{p['image']}" loading="lazy" decoding="async" width="320" height="480" />
-</a>
+    return f"""<article class="book book-no-cover">
 <div class="book-body">
 <p class="book-eyebrow">{p['eyebrow']}</p>
 <h2 class="book-title"><a href="{p['href']}" title="{p['title']}">{p['title']}</a></h2>
