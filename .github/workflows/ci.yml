@@ -45,6 +45,9 @@ jobs:
       - name: Internal-link audit
         run: python3 scripts/audit_links.py --base-dir public --strict-internal
 
+      - name: JSON-LD validation
+        run: python3 scripts/validate_jsonld.py --base-dir public
+
       - name: Upload built artefact
         uses: actions/upload-artifact@v4
         with:

@@ -25,6 +25,10 @@ audit:
 audit-external:
 	@python3 scripts/audit_links.py --base-dir public --check-external
 
+# Schema.org JSON-LD validation across the built tree.
+validate:
+	@python3 scripts/validate_jsonld.py --base-dir public
+
 # Wipe build output.
 clean:
 	@rm -rf public output output.build-tmp
