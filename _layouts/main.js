@@ -384,11 +384,17 @@ document.addEventListener("click", function (event) {
         }
         // Per-page hreflang override (live links only — placeholders
         // are <span> with no href and aria-disabled, skipped here).
+        // Extract just the pathname so the link is origin-relative —
+        // a localhost click shouldn't navigate to prod.
         if (a.tagName !== "A") return;
         var alt = document.querySelector(
             'link[rel="alternate"][hreflang="' + lang + '"]'
         );
-        if (alt) {
+        if (!alt) return;
+        try {
+            var url = new URL(alt.getAttribute("href"), window.location.href);
+            a.setAttribute("href", url.pathname + url.search + url.hash);
+        } catch (err) {
             a.setAttribute("href", alt.getAttribute("href"));
         }
     });
