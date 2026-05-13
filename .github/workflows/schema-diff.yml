@@ -1,0 +1,95 @@
+name: schema-diff
+
+# Build the site at the PR base commit and at HEAD, then post a comment
+# summarising structured-data drift. Read-only signal — never fails the PR;
+# reviewers see at a glance which pages had their JSON-LD added, removed,
+# or changed.
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: schema-diff-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  diff:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout HEAD
+        uses: actions/checkout@v4
+        with:
+          path: head
+          fetch-depth: 0
+
+      - name: Checkout base
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: base
+          fetch-depth: 1
+
+      - name: Install Rust toolchain (cached)
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache cargo registry + git
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            ~/.cargo/bin
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-ssg
+
+      - name: Install Static Site Generator (ssg)
+        run: |
+          if ! command -v ssg >/dev/null 2>&1; then
+            cargo install ssg --locked
+          fi
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build BASE
+        working-directory: base
+        run: ./build.sh
+
+      - name: Build HEAD
+        working-directory: head
+        run: ./build.sh
+
+      - name: Run JSON-LD diff
+        run: |
+          python3 head/scripts/jsonld_diff.py base/docs head/docs > diff.md
+          cat diff.md
+
+      - name: Post diff comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('diff.md', 'utf8');
+            const marker = '<!-- schema-diff-bot -->';
+            const fullBody = `${marker}\n\n${body}`;
+            const { owner, repo } = context.repo;
+            const issue_number = context.issue.number;
+            const { data: comments } = await github.rest.issues.listComments({
+              owner, repo, issue_number, per_page: 100,
+            });
+            const existing = comments.find(c => c.body && c.body.startsWith(marker));
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner, repo, comment_id: existing.id, body: fullBody,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number, body: fullBody,
+              });
+            }

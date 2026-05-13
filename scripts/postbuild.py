@@ -1051,12 +1051,21 @@ def inject_anchor_links_and_toc(html: str) -> str:
     return html[: m.start()] + pre + toc_html + new_body + post + html[m.end():]
 
 
+_NON_BODY_ASIDE_RE = re.compile(
+    r'<aside\s+class="(?:author-card|related-posts|post-lead|article-sources|article-toc)\b[^"]*"[\s\S]*?</aside>',
+    re.IGNORECASE,
+)
+
+
 def _extract_citations(html: str) -> list[dict[str, str]]:
-    """Return at most 12 distinct authoritative outbound links from <main>."""
+    """Return at most 12 distinct authoritative outbound links from the
+    article body. Strips author-card / related-posts / post-lead / ToC /
+    article-sources asides first so the author's own profile links and
+    nav chrome don't pollute the citation graph."""
     main_m = _MAIN_RE.search(html)
     if not main_m:
         return []
-    body = main_m.group(2)
+    body = _NON_BODY_ASIDE_RE.sub('', main_m.group(2))
     seen: set[str] = set()
     out: list[dict[str, str]] = []
     for lm in _OUTBOUND_LINK_RE.finditer(body):
@@ -1149,6 +1158,45 @@ def inject_citations(html: str) -> str:
     )
 
 
+def inject_sources_list(html: str) -> str:
+    """Mirror the JSON-LD citation array as a human-visible <aside> so the
+    primary-source references are visible to readers, not just AI crawlers.
+    Inserted just before the prev/next nav so it sits at the foot of every
+    dated post. Idempotent."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if 'class="article-sources"' in html:
+        return html
+    cites = _extract_citations(html)
+    if not cites:
+        return html
+    items: list[str] = []
+    for c in cites:
+        url = c["url"]
+        parts = url.split("/", 3)
+        host = parts[2] if len(parts) > 2 else url
+        path = "/" + parts[3] if len(parts) > 3 else ""
+        display = path if len(path) <= 80 else path[:77] + "…"
+        items.append(
+            f'<li><a href="{url}" rel="external noopener nofollow">'
+            f'<span class="source-host">{host}</span>'
+            f'<span class="source-path">{display}</span>'
+            f'</a></li>'
+        )
+    fragment = (
+        '<aside class="article-sources" aria-labelledby="sources-heading">'
+        '<h2 id="sources-heading" class="article-sources-heading">'
+        'Sources &amp; references</h2>'
+        f'<ol class="article-sources-list">{"".join(items)}</ol>'
+        '</aside>'
+    )
+    # Insert before the prev/next nav if it's already there, else before
+    # the closing </div></main>.
+    if 'class="post-pagination"' in html:
+        return re.sub(r'(<nav class="post-pagination")', fragment + r'\1', html, count=1)
+    return re.sub(r'(</div>\s*</main>)', fragment + r'\1', html, count=1)
+
+
 def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters are sequential by design
     pages = list(PUBLIC.rglob("*.html"))
     # Pre-pass: build the chronological prev/next index over every dated
@@ -1163,6 +1211,7 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
     furniture_patched = 0
     anchor_patched = 0
     citation_patched = 0
+    sources_patched = 0
     nav_patched = 0
     for page in pages:
         original = page.read_text(encoding="utf-8", errors="ignore")
@@ -1196,10 +1245,14 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
         patched_ci = inject_citations(patched_an)
         if patched_ci != patched_an:
             citation_patched += 1
-        # Prev/next nav doesn't add JSON-LD, so order vs CSP-hash is free —
-        # placed here for legibility next to the other furniture passes.
-        patched_nav = inject_prev_next_nav(patched_ci, page.parent.name, nav_index)
-        if patched_nav != patched_ci:
+        patched_src = inject_sources_list(patched_ci)
+        if patched_src != patched_ci:
+            sources_patched += 1
+        # Prev/next nav must run AFTER inject_sources_list because the
+        # sources injector anchors against either the nav or the </main>;
+        # placing nav first would push sources above the nav cleanly.
+        patched_nav = inject_prev_next_nav(patched_src, page.parent.name, nav_index)
+        if patched_nav != patched_src:
             nav_patched += 1
         patched2 = inject_jsonld_hashes(patched_nav)
         if patched2 != patched_nav:
@@ -1233,6 +1286,7 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
         f"{furniture_patched} got tag badges + meta bar, "
         f"{anchor_patched} got anchor links + ToC, "
         f"{citation_patched} got citation graphs, "
+        f"{sources_patched} got visible sources list, "
         f"{nav_patched} got prev/next nav, "
         f"{csp_patched} got CSP JSON-LD hashes, "
         f"{sitemap_patched} sitemap entries refreshed, "
