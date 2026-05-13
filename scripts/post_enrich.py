@@ -276,11 +276,17 @@ def main() -> None:  # noqa: C901 — multi-stage enrich pipeline; sequential by
     for post in posts:
         fm = list(post["fm"])
 
-        # 1. Ensure excerpt + last_reviewed in frontmatter.
+        # 1. Ensure excerpt + last_reviewed in frontmatter. Clamp reviewed
+        # date to max(TODAY, pub_date) — a future-dated post must not show
+        # a dateModified that predates datePublished. Overwrite an existing
+        # stale value too, otherwise a post scheduled into the future keeps
+        # the bad timestamp from its first enrich.
         if not fm_get(fm, "excerpt"):
             fm = fm_set(fm, "excerpt", derive_excerpt(post["body"]).replace('"', "'"))
-        if not fm_get(fm, "last_reviewed"):
-            fm = fm_set(fm, "last_reviewed", TODAY)
+        reviewed = max(TODAY, post["date_iso"])
+        existing_reviewed = fm_get(fm, "last_reviewed") or ""
+        if not existing_reviewed or existing_reviewed < post["date_iso"]:
+            fm = fm_set(fm, "last_reviewed", reviewed)
 
         # TL;DR sentence prefers the hand-written `description` (curated for
         # SEO and AI Overviews) and falls back to the auto-derived excerpt
@@ -361,7 +367,7 @@ def main() -> None:  # noqa: C901 — multi-stage enrich pipeline; sequential by
         )
         block.append(
             f'<p class="post-reviewed">Last reviewed '
-            f'<time datetime="{TODAY}">{TODAY}</time>.</p>'
+            f'<time datetime="{reviewed}">{reviewed}</time>.</p>'
         )
         if related:
             block.append('<aside class="related-posts" aria-labelledby="related-heading">')

@@ -964,7 +964,10 @@ def _render_meta_bar(date_pub: str, date_mod: str, word_count: int | None) -> st
             f'<time datetime="{date_pub}" class="meta-pub">'
             f'Published {_fmt_date(date_pub)}</time>'
         )
-    if date_mod and date_mod[:10] != date_pub[:10]:
+    # Suppress "Updated" when the modification date is the same as or
+    # earlier than the publication date — otherwise a post scheduled into
+    # the future shows a nonsensical "Updated before Published" stamp.
+    if date_mod and date_mod[:10] > date_pub[:10]:
         parts.append(
             f'<time datetime="{date_mod}" class="meta-rev">'
             f'Updated {_fmt_date(date_mod)}</time>'
