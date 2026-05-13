@@ -449,6 +449,8 @@ def main() -> None:
         written += 1
 
     if entries:
+        # Sort newest first to mirror the English /articles/ ordering.
+        entries.sort(key=lambda e: e["slug"], reverse=True)
         hub = render_hub(entries)
         if hub:
             (OUT / "index.html").write_text(hub, encoding="utf-8")
