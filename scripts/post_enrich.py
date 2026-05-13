@@ -265,7 +265,8 @@ def main() -> None:  # noqa: C901 — multi-stage enrich pipeline; sequential by
             "body": body_text,
             "title": fm_get(fm, "title") or md.stem,
             "url": fm_get(fm, "url") or "",
-            "image": fm_get(fm, "image") or "",
+            "image": fm_get(fm, "banner") or fm_get(fm, "image") or "",
+            "image_alt": fm_get(fm, "banner_alt") or fm_get(fm, "title") or "",
             "date_iso": md.name[:10],
             "tags": [t.strip() for t in (fm_get(fm, "tags") or "").split(",") if t.strip()],
         }
@@ -377,8 +378,9 @@ def main() -> None:  # noqa: C901 — multi-stage enrich pipeline; sequential by
                 title = r["title"].replace('"', "&quot;")
                 url = post_url(r)
                 img = r["image"] or ""
+                alt = (r.get("image_alt") or r["title"]).replace('"', "&quot;")
                 img_html = (
-                    f'<img alt="{title}" src="{img}" loading="lazy" decoding="async" width="600" height="400" />'
+                    f'<img alt="{alt}" src="{img}" loading="lazy" decoding="async" width="600" height="400" />'
                     if img else ""
                 )
                 block.append(

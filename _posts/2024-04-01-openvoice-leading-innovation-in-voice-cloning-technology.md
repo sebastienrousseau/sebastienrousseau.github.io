@@ -231,7 +231,7 @@ OpenVoice marks a seminal point in the evolution of voice cloning technology. Op
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html" class="related-media" aria-label="Google Gemma AI: Transforming Open-Source AI Development" tabindex="-1"><img alt="Google Gemma AI: Transforming Open-Source AI Development" src="https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html">Google Gemma AI: Transforming Open-Source AI Development</a></h3><p><time datetime="2024-02-26">2024-02-26</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html" class="related-media" aria-label="Google Gemma AI: Transforming Open-Source AI Development" tabindex="-1"><img alt="Futuristic blue spaceship with neon lights" src="https://cloudcdn.pro/stocks/images/ai-ship.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html">Google Gemma AI: Transforming Open-Source AI Development</a></h3><p><time datetime="2024-02-26">2024-02-26</time></p></footer></article>
 </div>
 </aside>
 <!-- enrich-end -->

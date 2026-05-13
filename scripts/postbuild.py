@@ -914,6 +914,47 @@ _HEADING_RE = re.compile(r'<(h[23])(?:\s+id="[^"]*")?>([\s\S]*?)</\1>', re.IGNOR
 _OUTBOUND_LINK_RE = re.compile(r'<a\b[^>]*\bhref="(https?://[^"]+)"', re.IGNORECASE)
 _DATED_SLUG_RE = re.compile(r'^(\d{4}-\d{2}-\d{2})-')
 _H1_RE = re.compile(r'<section class="ap-hero">\s*<h1>([^<]+)</h1>', re.IGNORECASE)
+_HTML_LANG_DETECT_RE = re.compile(r'<html\b[^>]*\blang="([^"]+)"', re.IGNORECASE)
+
+
+def _is_french(html: str) -> bool:
+    m = _HTML_LANG_DETECT_RE.search(html)
+    return bool(m and m.group(1).lower().startswith("fr"))
+
+
+# Furniture string tables — labels emitted in <main>'s reader-facing chrome.
+# English defaults stay verbatim; the French dict mirrors I18N_FR in
+# build_translations.py.
+LABELS_EN: dict[str, str] = {
+    "Published": "Published",
+    "Updated": "Updated",
+    "min read": "min read",
+    "Previous": "Previous",
+    "Next": "Next",
+    "Sources & references": "Sources & references",
+    "Contents": "Contents",
+    "Article pagination": "Article pagination",
+    "Estimated read time": "Estimated read time",
+    "Link to": "Link to",
+    "Table of contents": "Table of contents",
+}
+LABELS_FR: dict[str, str] = {
+    "Published": "Publié le",
+    "Updated": "Mis à jour le",
+    "min read": "min de lecture",
+    "Previous": "Précédent",
+    "Next": "Suivant",
+    "Sources & references": "Sources et références",
+    "Contents": "Sommaire",
+    "Article pagination": "Pagination des articles",
+    "Estimated read time": "Temps de lecture estimé",
+    "Link to": "Lien vers",
+    "Table of contents": "Table des matières",
+}
+
+
+def _labels(html: str) -> dict[str, str]:
+    return LABELS_FR if _is_french(html) else LABELS_EN
 
 
 def slugify(s: str) -> str:
@@ -953,7 +994,7 @@ def _render_tag_badges(keywords: list[str]) -> str:
     return f'<nav class="article-tags" aria-label="Topics">{badges}</nav>'
 
 
-def _render_meta_bar(date_pub: str, date_mod: str, word_count: int | None) -> str:
+def _render_meta_bar(date_pub: str, date_mod: str, word_count: int | None, labels: dict[str, str]) -> str:
     parts: list[str] = []
     parts.append(
         f'<a href="{AUTHOR_URL}" class="article-author" rel="author">'
@@ -964,7 +1005,7 @@ def _render_meta_bar(date_pub: str, date_mod: str, word_count: int | None) -> st
     if date_pub:
         parts.append(
             f'<time datetime="{date_pub}" class="meta-pub">'
-            f'Published {_fmt_date(date_pub)}</time>'
+            f'{labels["Published"]} {_fmt_date(date_pub)}</time>'
         )
     # Suppress "Updated" when the modification date is the same as or
     # earlier than the publication date — otherwise a post scheduled into
@@ -972,13 +1013,13 @@ def _render_meta_bar(date_pub: str, date_mod: str, word_count: int | None) -> st
     if date_mod and date_mod[:10] > date_pub[:10]:
         parts.append(
             f'<time datetime="{date_mod}" class="meta-rev">'
-            f'Updated {_fmt_date(date_mod)}</time>'
+            f'{labels["Updated"]} {_fmt_date(date_mod)}</time>'
         )
     if word_count:
         read_min = max(1, round(word_count / 220))
         parts.append(
-            f'<span class="meta-read" aria-label="Estimated read time">'
-            f'{read_min} min read</span>'
+            f'<span class="meta-read" aria-label="{labels["Estimated read time"]}">'
+            f'{read_min} {labels["min read"]}</span>'
         )
     return '<div class="article-meta">' + ' <span aria-hidden="true">·</span> '.join(parts) + '</div>'
 
@@ -1003,7 +1044,7 @@ def inject_article_furniture(html: str) -> str:
     wm = _WORDCOUNT_RE.search(html)
     word_count = int(wm.group(1)) if wm else None
     badges = _render_tag_badges(keywords)
-    meta = _render_meta_bar(date_pub, date_mod, word_count)
+    meta = _render_meta_bar(date_pub, date_mod, word_count, _labels(html))
     fragment = badges + meta
     if not fragment:
         return html
@@ -1021,6 +1062,7 @@ def inject_anchor_links_and_toc(html: str) -> str:
         return html
     pre, body, post = m.group(1), m.group(2), m.group(3)
     h2_titles: list[tuple[str, str]] = []
+    labels = _labels(html)
 
     def patch_heading(hm: re.Match[str]) -> str:
         level = hm.group(1).lower()
@@ -1033,7 +1075,7 @@ def inject_anchor_links_and_toc(html: str) -> str:
             h2_titles.append((slug, text))
         return (
             f'<{level} id="{slug}">{inner} '
-            f'<a class="heading-anchor" href="#{slug}" aria-label="Link to {text}">#</a>'
+            f'<a class="heading-anchor" href="#{slug}" aria-label="{labels["Link to"]} {text}">#</a>'
             f'</{level}>'
         )
 
@@ -1044,8 +1086,8 @@ def inject_anchor_links_and_toc(html: str) -> str:
             f'<li><a href="#{slug}">{text}</a></li>' for slug, text in h2_titles
         )
         toc_html = (
-            '<aside class="article-toc" aria-label="Table of contents">'
-            '<h2>Contents</h2>'
+            f'<aside class="article-toc" aria-label="{labels["Table of contents"]}">'
+            f'<h2>{labels["Contents"]}</h2>'
             f'<ol>{items}</ol></aside>'
         )
     return html[: m.start()] + pre + toc_html + new_body + post + html[m.end():]
@@ -1082,18 +1124,22 @@ def _extract_citations(html: str) -> list[dict[str, str]]:
     return out
 
 
-def build_post_nav_index(pages: list[Path]) -> dict[str, tuple[str | None, str | None]]:
+def build_post_nav_index(pages: list[Path]) -> dict[str, tuple[tuple[str, str] | None, tuple[str, str] | None]]:
     """Build a slug -> (prev, next) lookup over every dated post in pages.
 
     A dated post is one whose parent directory name matches ``YYYY-MM-DD-…``.
     Order is chronological (oldest first); 'prev' is older, 'next' is newer.
-    Returns dicts keyed by slug, mapping to (prev_entry, next_entry) where
-    each entry is the rendered ``<a>`` HTML or None when missing.
+    Each entry is (slug, title) so the renderer can localize labels per
+    target page.
     """
     dated: list[tuple[str, str, str]] = []
     for p in pages:
         slug = p.parent.name
         if not _DATED_SLUG_RE.match(slug):
+            continue
+        # Skip French translations — they share the slug with the English
+        # original. Including both would double-count and yield wrong nav.
+        if p.parent.parent.name == "fr":
             continue
         html = p.read_text(encoding="utf-8", errors="ignore")
         if '"@type":"BlogPosting"' not in html:
@@ -1101,40 +1147,43 @@ def build_post_nav_index(pages: list[Path]) -> dict[str, tuple[str | None, str |
         m = _H1_RE.search(html)
         title = m.group(1).strip() if m else slug
         dated.append((slug[:10], slug, title))
-    dated.sort(key=lambda t: t[0])  # chronological, oldest first
-    out: dict[str, tuple[str | None, str | None]] = {}
-
-    def link(entry: tuple[str, str, str], direction: str, label: str) -> str:
-        _date, slug, title = entry
-        return (
-            f'<a class="post-pagination-{direction}" href="/{slug}/">'
-            f'<span class="post-pagination-label">{label}</span>'
-            f'<span class="post-pagination-title">{title}</span>'
-            f'</a>'
-        )
-
+    dated.sort(key=lambda t: t[0])
+    out: dict[str, tuple[tuple[str, str] | None, tuple[str, str] | None]] = {}
     for i, entry in enumerate(dated):
-        prev_html = link(dated[i - 1], "prev", "Previous") if i > 0 else None
-        next_html = link(dated[i + 1], "next", "Next") if i < len(dated) - 1 else None
-        out[entry[1]] = (prev_html, next_html)
+        prev_e = (dated[i - 1][1], dated[i - 1][2]) if i > 0 else None
+        next_e = (dated[i + 1][1], dated[i + 1][2]) if i < len(dated) - 1 else None
+        out[entry[1]] = (prev_e, next_e)
     return out
 
 
-def inject_prev_next_nav(html: str, slug: str, nav_index: dict[str, tuple[str | None, str | None]]) -> str:
+def inject_prev_next_nav(html: str, slug: str, nav_index: dict[str, tuple[tuple[str, str] | None, tuple[str, str] | None]]) -> str:
     """Inject a <nav class="post-pagination"> with prev/next links just
-    before the closing ``</div></main>`` of any dated BlogPosting page."""
+    before the closing ``</div></main>`` of any dated BlogPosting page.
+    Localized via _labels(html); French pages get French labels."""
     if '"@type":"BlogPosting"' not in html:
         return html
     if slug not in nav_index:
         return html
-    if 'class="post-pagination"' in html:  # idempotent
+    if 'class="post-pagination"' in html:
         return html
-    prev_html, next_html = nav_index[slug]
-    if not prev_html and not next_html:
+    prev_e, next_e = nav_index[slug]
+    if not prev_e and not next_e:
         return html
-    inner = (prev_html or '<span class="post-pagination-stub" aria-hidden="true"></span>') + \
-            (next_html or '<span class="post-pagination-stub" aria-hidden="true"></span>')
-    nav = f'<nav class="post-pagination" aria-label="Article pagination">{inner}</nav>'
+    labels = _labels(html)
+
+    def render(entry: tuple[str, str] | None, direction: str, label: str) -> str:
+        if not entry:
+            return '<span class="post-pagination-stub" aria-hidden="true"></span>'
+        s, t = entry
+        return (
+            f'<a class="post-pagination-{direction}" href="/{s}/">'
+            f'<span class="post-pagination-label">{label}</span>'
+            f'<span class="post-pagination-title">{t}</span>'
+            f'</a>'
+        )
+
+    inner = render(prev_e, "prev", labels["Previous"]) + render(next_e, "next", labels["Next"])
+    nav = f'<nav class="post-pagination" aria-label="{labels["Article pagination"]}">{inner}</nav>'
     return re.sub(r'(</div>\s*</main>)', nav + r'\1', html, count=1)
 
 
@@ -1229,10 +1278,10 @@ def inject_sources_list(html: str) -> str:
             f'<span class="source-path">{display}</span>'
             f'</a></li>'
         )
+    heading = _labels(html)["Sources & references"]
     fragment = (
         '<aside class="article-sources" aria-labelledby="sources-heading">'
-        '<h2 id="sources-heading" class="article-sources-heading">'
-        'Sources &amp; references</h2>'
+        f'<h2 id="sources-heading" class="article-sources-heading">{heading}</h2>'
         f'<ol class="article-sources-list">{"".join(items)}</ol>'
         '</aside>'
     )
@@ -1243,11 +1292,43 @@ def inject_sources_list(html: str) -> str:
     return re.sub(r'(</div>\s*</main>)', fragment + r'\1', html, count=1)
 
 
+_HEAD_END_RE = re.compile(r'</head>', re.IGNORECASE)
+_HREFLANG_RE = re.compile(r'<link\s+rel="alternate"\s+hreflang="[^"]+"[^/]*/>', re.IGNORECASE)
+
+
+def _translated_slugs() -> set[str]:
+    """Walk public/fr/ for slugs that have a French translation."""
+    fr_dir = PUBLIC / "fr"
+    if not fr_dir.is_dir():
+        return set()
+    return {p.parent.name for p in fr_dir.glob("*/index.html")}
+
+
+def inject_hreflang(html: str, slug: str, lang: str, translated: set[str]) -> str:
+    """Inject reciprocal hreflang links so Google + crawlers pair the two
+    language versions. Only applies to slugs that actually have a French
+    translation; English-only posts are untouched.
+    """
+    if slug not in translated:
+        return html
+    en_url = f"https://sebastienrousseau.com/{slug}/"
+    fr_url = f"https://sebastienrousseau.com/fr/{slug}/"
+    # Strip any existing hreflang link tags so we don't duplicate.
+    html = _HREFLANG_RE.sub('', html)
+    links = (
+        f'<link rel="alternate" hreflang="en" href="{en_url}" />'
+        f'<link rel="alternate" hreflang="fr" href="{fr_url}" />'
+        f'<link rel="alternate" hreflang="x-default" href="{en_url}" />'
+    )
+    return _HEAD_END_RE.sub(links + '</head>', html, count=1)
+
+
 def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters are sequential by design
     pages = list(PUBLIC.rglob("*.html"))
     # Pre-pass: build the chronological prev/next index over every dated
     # BlogPosting page. Indexed once per build, then read per page.
     nav_index = build_post_nav_index(pages)
+    translated = _translated_slugs()
     sri_patched = 0
     csp_patched = 0
     itemlist_patched = 0
@@ -1260,6 +1341,7 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
     sources_patched = 0
     mermaid_patched = 0
     nav_patched = 0
+    hreflang_patched = 0
     for page in pages:
         original = page.read_text(encoding="utf-8", errors="ignore")
         patched = fix_sri(original)
@@ -1305,7 +1387,15 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
         patched_nav = inject_prev_next_nav(patched_src, page.parent.name, nav_index)
         if patched_nav != patched_src:
             nav_patched += 1
-        patched2 = inject_jsonld_hashes(patched_nav)
+        # Reciprocal hreflang for paired English/French pages. Slug is the
+        # parent dir name for English (/foo/) and grandparent for French
+        # (/fr/foo/) — strip the "fr/" prefix when matching.
+        rel_slug = page.parent.name
+        is_fr = page.parent.parent.name == "fr"
+        patched_hl = inject_hreflang(patched_nav, rel_slug, "fr" if is_fr else "en", translated)
+        if patched_hl != patched_nav:
+            hreflang_patched += 1
+        patched2 = inject_jsonld_hashes(patched_hl)
         if patched2 != patched_nav:
             csp_patched += 1
         if patched2 != original:
@@ -1340,6 +1430,7 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
         f"{sources_patched} got visible sources list, "
         f"{mermaid_patched} got mermaid blocks, "
         f"{nav_patched} got prev/next nav, "
+        f"{hreflang_patched} got hreflang pairs, "
         f"{csp_patched} got CSP JSON-LD hashes, "
         f"{sitemap_patched} sitemap entries refreshed, "
         f"{feed_urls_patched} feed(s) URL-repaired, "

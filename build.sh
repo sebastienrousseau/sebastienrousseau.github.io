@@ -35,6 +35,7 @@ for f in public/main.*.js public/sw.*.js public/theme-init.*.js public/highlight
 done
 
 python3 scripts/build_topics.py
+python3 scripts/build_translations.py
 python3 scripts/build_agent_api.py
 python3 scripts/postbuild.py
 
