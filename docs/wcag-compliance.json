@@ -70,7 +70,7 @@
       "level": "AAA",
       "title": "Focus Appearance",
       "status": "automated",
-      "all_pages_pass": true
+      "all_pages_pass": false
     },
     {
       "criterion": "2.5.7",
