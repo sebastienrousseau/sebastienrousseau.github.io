@@ -25,6 +25,7 @@ GOOD_HTML = """<!doctype html>
     <nav class="article-tags"></nav>
     <div class="article-meta"></div>
     <aside class="author-card"></aside>
+    <nav class="post-pagination"></nav>
   </body>
 </html>
 """
@@ -84,7 +85,8 @@ def test_jsonld_id_only_reference_not_flagged(tmp_path):
 </script>
 <nav class="article-tags"></nav>
 <div class="article-meta"></div>
-<aside class="author-card"></aside>"""
+<aside class="author-card"></aside>
+<nav class="post-pagination"></nav>"""
     p = write(tmp_path, "ref.html", html)
     errors, _ = v.validate_page(p)
     assert errors == []
@@ -319,6 +321,7 @@ def test_validate_page_passes_when_csp_and_jsonld_both_correct(tmp_path):
         '<nav class="article-tags"></nav>'
         '<div class="article-meta"></div>'
         '<aside class="author-card"></aside>'
+        '<nav class="post-pagination"></nav>'
     )
     p.write_text(html, encoding="utf-8")
     errors, _ = v.validate_page(p)

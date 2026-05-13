@@ -912,6 +912,8 @@ _BLOGPOSTING_DATES_RE = re.compile(
 _WORDCOUNT_RE = re.compile(r'"wordCount":(\d+)')
 _HEADING_RE = re.compile(r'<(h[23])(?:\s+id="[^"]*")?>([\s\S]*?)</\1>', re.IGNORECASE)
 _OUTBOUND_LINK_RE = re.compile(r'<a\b[^>]*\bhref="(https?://[^"]+)"', re.IGNORECASE)
+_DATED_SLUG_RE = re.compile(r'^(\d{4}-\d{2}-\d{2})-')
+_H1_RE = re.compile(r'<section class="ap-hero">\s*<h1>([^<]+)</h1>', re.IGNORECASE)
 
 
 def slugify(s: str) -> str:
@@ -1071,6 +1073,62 @@ def _extract_citations(html: str) -> list[dict[str, str]]:
     return out
 
 
+def build_post_nav_index(pages: list[Path]) -> dict[str, tuple[str | None, str | None]]:
+    """Build a slug -> (prev, next) lookup over every dated post in pages.
+
+    A dated post is one whose parent directory name matches ``YYYY-MM-DD-…``.
+    Order is chronological (oldest first); 'prev' is older, 'next' is newer.
+    Returns dicts keyed by slug, mapping to (prev_entry, next_entry) where
+    each entry is the rendered ``<a>`` HTML or None when missing.
+    """
+    dated: list[tuple[str, str, str]] = []
+    for p in pages:
+        slug = p.parent.name
+        if not _DATED_SLUG_RE.match(slug):
+            continue
+        html = p.read_text(encoding="utf-8", errors="ignore")
+        if '"@type":"BlogPosting"' not in html:
+            continue
+        m = _H1_RE.search(html)
+        title = m.group(1).strip() if m else slug
+        dated.append((slug[:10], slug, title))
+    dated.sort(key=lambda t: t[0])  # chronological, oldest first
+    out: dict[str, tuple[str | None, str | None]] = {}
+
+    def link(entry: tuple[str, str, str], direction: str, label: str) -> str:
+        _date, slug, title = entry
+        return (
+            f'<a class="post-pagination-{direction}" href="/{slug}/">'
+            f'<span class="post-pagination-label">{label}</span>'
+            f'<span class="post-pagination-title">{title}</span>'
+            f'</a>'
+        )
+
+    for i, entry in enumerate(dated):
+        prev_html = link(dated[i - 1], "prev", "Previous") if i > 0 else None
+        next_html = link(dated[i + 1], "next", "Next") if i < len(dated) - 1 else None
+        out[entry[1]] = (prev_html, next_html)
+    return out
+
+
+def inject_prev_next_nav(html: str, slug: str, nav_index: dict[str, tuple[str | None, str | None]]) -> str:
+    """Inject a <nav class="post-pagination"> with prev/next links just
+    before the closing ``</div></main>`` of any dated BlogPosting page."""
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    if slug not in nav_index:
+        return html
+    if 'class="post-pagination"' in html:  # idempotent
+        return html
+    prev_html, next_html = nav_index[slug]
+    if not prev_html and not next_html:
+        return html
+    inner = (prev_html or '<span class="post-pagination-stub" aria-hidden="true"></span>') + \
+            (next_html or '<span class="post-pagination-stub" aria-hidden="true"></span>')
+    nav = f'<nav class="post-pagination" aria-label="Article pagination">{inner}</nav>'
+    return re.sub(r'(</div>\s*</main>)', nav + r'\1', html, count=1)
+
+
 def inject_citations(html: str) -> str:
     """Append a "citation" array to the BlogPosting JSON-LD listing the
     authoritative outbound URLs the post references. AI engines extract
@@ -1091,8 +1149,11 @@ def inject_citations(html: str) -> str:
     )
 
 
-def main() -> None:
+def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters are sequential by design
     pages = list(PUBLIC.rglob("*.html"))
+    # Pre-pass: build the chronological prev/next index over every dated
+    # BlogPosting page. Indexed once per build, then read per page.
+    nav_index = build_post_nav_index(pages)
     sri_patched = 0
     csp_patched = 0
     itemlist_patched = 0
@@ -1102,6 +1163,7 @@ def main() -> None:
     furniture_patched = 0
     anchor_patched = 0
     citation_patched = 0
+    nav_patched = 0
     for page in pages:
         original = page.read_text(encoding="utf-8", errors="ignore")
         patched = fix_sri(original)
@@ -1134,8 +1196,13 @@ def main() -> None:
         patched_ci = inject_citations(patched_an)
         if patched_ci != patched_an:
             citation_patched += 1
-        patched2 = inject_jsonld_hashes(patched_ci)
-        if patched2 != patched_ci:
+        # Prev/next nav doesn't add JSON-LD, so order vs CSP-hash is free —
+        # placed here for legibility next to the other furniture passes.
+        patched_nav = inject_prev_next_nav(patched_ci, page.parent.name, nav_index)
+        if patched_nav != patched_ci:
+            nav_patched += 1
+        patched2 = inject_jsonld_hashes(patched_nav)
+        if patched2 != patched_nav:
             csp_patched += 1
         if patched2 != original:
             page.write_text(patched2, encoding="utf-8")
@@ -1166,6 +1233,7 @@ def main() -> None:
         f"{furniture_patched} got tag badges + meta bar, "
         f"{anchor_patched} got anchor links + ToC, "
         f"{citation_patched} got citation graphs, "
+        f"{nav_patched} got prev/next nav, "
         f"{csp_patched} got CSP JSON-LD hashes, "
         f"{sitemap_patched} sitemap entries refreshed, "
         f"{feed_urls_patched} feed(s) URL-repaired, "

@@ -112,6 +112,8 @@ def validate_article_furniture(html: str) -> list[str]:
         errors.append('missing .article-meta — author/date/read-time bar not rendered')
     if 'class="author-card"' not in html:
         errors.append('missing .author-card — author E-E-A-T bio not rendered at post end')
+    if 'class="post-pagination"' not in html:
+        errors.append('missing .post-pagination — prev/next article nav not rendered')
     return errors
 
 # Required-property table per @type. Keep narrow — false positives are
