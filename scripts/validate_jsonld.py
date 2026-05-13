@@ -102,7 +102,7 @@ def validate_page(path: Path) -> tuple[list[str], list[str]]:
     for i, raw in enumerate(blocks):
         body = raw.strip()
         # Unresolved templating leaking through.
-        if "{{" in body or "}}" in body and not body.count("}") == body.count("{"):
+        if "{{" in body or ("}}" in body and not body.count("}") == body.count("{")):
             errors.append(f"block#{i}: unresolved template token ({'{{' if '{{' in body else '}}'} found)")
         try:
             data = json.loads(body)
@@ -199,6 +199,208 @@ def _check_url_seo(label: str, url: str | None, warnings: list[str]) -> None:
         warnings.append(f"{label} exceeds Google's 2048-char URL limit ({len(url)}c)")
 
 
+def _validate_rss_item(
+    item: ET.Element,
+    i: int,
+    seen_guids: dict[str, int],
+    seen_links: dict[str, int],
+    errors: list[str],
+    warnings: list[str],
+) -> None:
+    for required in ("title", "link"):
+        if item.find(required) is None:
+            errors.append(f"rss: item[{i}] missing <{required}>")
+    link = (item.findtext("link") or "").strip()
+    _check_url_taint(f"rss: item[{i}] <link>", link, errors)
+    _check_url_seo(f"rss: item[{i}] <link>", link, warnings)
+    guid_el = item.find("guid")
+    guid = (guid_el.text or "").strip() if guid_el is not None else ""
+    if guid_el is not None:
+        _check_url_taint(f"rss: item[{i}] <guid>", guid, errors)
+        if guid_el.attrib.get("isPermaLink", "true").lower() != "false":
+            _check_url_seo(f"rss: item[{i}] <guid>", guid, warnings)
+    # Uniqueness — duplicate guid breaks subscriber-state machinery.
+    if guid:
+        if guid in seen_guids:
+            errors.append(f"rss: item[{i}] duplicate <guid> (also at item[{seen_guids[guid]}])")
+        seen_guids[guid] = i
+    if link:
+        if link in seen_links:
+            warnings.append(f"rss: item[{i}] duplicate <link> (also at item[{seen_links[link]}])")
+        seen_links[link] = i
+    d = (item.findtext("description") or "").strip()
+    if d and len(d) < 10:
+        warnings.append(f"rss: item[{i}] <description> too short ({len(d)}c, ideal ≥10)")
+    pd = (item.findtext("pubDate") or "").strip()
+    if pd and not RFC822_RE.match(pd):
+        warnings.append(f"rss: item[{i}] <pubDate> not RFC 822: {pd!r}")
+    t = (item.findtext("title") or "").strip()
+    if len(t) > 200:
+        warnings.append(f"rss: item[{i}] <title> very long ({len(t)}c, ideal ≤200)")
+
+
+def _validate_rss(root: ET.Element, errors: list[str], warnings: list[str]) -> None:
+    channel = root.find("channel")
+    if channel is None:
+        errors.append("rss: missing <channel>")
+        return
+    for required in ("title", "link", "description"):
+        if channel.find(required) is None:
+            errors.append(f"rss: channel missing <{required}>")
+    desc = channel.findtext("description", "")
+    if desc and len(desc.strip()) < 30:
+        warnings.append(f"rss: channel description is very short ({len(desc.strip())}c, ideal ≥30)")
+    seen_guids: dict[str, int] = {}
+    seen_links: dict[str, int] = {}
+    for i, item in enumerate(channel.findall("item")):
+        _validate_rss_item(item, i, seen_guids, seen_links, errors, warnings)
+
+
+def _validate_atom_entry(
+    entry: ET.Element,
+    i: int,
+    seen_ids: dict[str, int],
+    errors: list[str],
+    warnings: list[str],
+) -> None:
+    for required in ("id", "title", "updated"):
+        if entry.find(f"{{{_ATOM_NS}}}{required}") is None:
+            errors.append(f"atom: entry[{i}] missing <{required}>")
+    eid = (entry.findtext(f"{{{_ATOM_NS}}}id") or "").strip()
+    _check_url_taint(f"atom: entry[{i}] <id>", eid, errors)
+    if eid:
+        if eid in seen_ids:
+            errors.append(f"atom: entry[{i}] duplicate <id> (also at entry[{seen_ids[eid]}])")
+        seen_ids[eid] = i
+    for j, ln in enumerate(entry.findall(f"{{{_ATOM_NS}}}link")):
+        href = ln.attrib.get("href", "")
+        _check_url_taint(f"atom: entry[{i}] <link>[{j}] href", href, errors)
+        _check_url_seo(f"atom: entry[{i}] <link>[{j}] href", href, warnings)
+    upd = (entry.findtext(f"{{{_ATOM_NS}}}updated") or "").strip()
+    if upd and not RFC3339_RE.match(upd):
+        warnings.append(f"atom: entry[{i}] <updated> not RFC 3339: {upd!r}")
+    if entry.find(f"{{{_ATOM_NS}}}summary") is None:
+        warnings.append(f"atom: entry[{i}] missing <summary> (recommended)")
+
+
+def _validate_atom(root: ET.Element, errors: list[str], warnings: list[str]) -> None:
+    for required in ("id", "title", "updated"):
+        if root.find(f"{{{_ATOM_NS}}}{required}") is None:
+            errors.append(f"atom: feed missing <{required}>")
+    feed_updated = (root.findtext(f"{{{_ATOM_NS}}}updated") or "").strip()
+    if feed_updated and not RFC3339_RE.match(feed_updated):
+        warnings.append(f"atom: feed <updated> not RFC 3339: {feed_updated!r}")
+    seen_ids: dict[str, int] = {}
+    for i, entry in enumerate(root.findall(f"{{{_ATOM_NS}}}entry")):
+        _validate_atom_entry(entry, i, seen_ids, errors, warnings)
+
+
+def _validate_news_extension(
+    news: ET.Element | None,
+    i: int,
+    errors: list[str],
+    warnings: list[str],
+) -> None:
+    if news is None:
+        errors.append(f"news-sitemap: url[{i}] missing <news:news>")
+        return
+    title_el = news.find(f"{{{_NEWS_NS}}}title")
+    pub = news.find(f"{{{_NEWS_NS}}}publication")
+    pubdate = news.find(f"{{{_NEWS_NS}}}publication_date")
+    if title_el is None:
+        errors.append(f"news-sitemap: url[{i}] news:news missing <news:title>")
+    elif title_el.text and len(title_el.text) > 80:
+        warnings.append(
+            f"news-sitemap: url[{i}] <news:title> exceeds Google's 80-char "
+            f"recommendation ({len(title_el.text)}c)"
+        )
+    if pub is None:
+        errors.append(f"news-sitemap: url[{i}] missing <news:publication>")
+    else:
+        if pub.find(f"{{{_NEWS_NS}}}name") is None:
+            errors.append(f"news-sitemap: url[{i}] publication missing <news:name>")
+        if pub.find(f"{{{_NEWS_NS}}}language") is None:
+            errors.append(f"news-sitemap: url[{i}] publication missing <news:language>")
+    if pubdate is None:
+        errors.append(f"news-sitemap: url[{i}] missing <news:publication_date>")
+    elif pubdate.text and not RFC3339_RE.match(pubdate.text.strip()):
+        warnings.append(
+            f"news-sitemap: url[{i}] <news:publication_date> not ISO 8601: "
+            f"{pubdate.text!r}"
+        )
+    kw_el = news.find(f"{{{_NEWS_NS}}}keywords")
+    if kw_el is not None and kw_el.text:
+        kws = [k.strip() for k in kw_el.text.split(",") if k.strip()]
+        if len(kws) > 10:
+            warnings.append(
+                f"news-sitemap: url[{i}] <news:keywords> has {len(kws)} items "
+                f"(Google recommends ≤10)"
+            )
+
+
+def _validate_sitemap_url(
+    url: ET.Element,
+    i: int,
+    is_news: bool,
+    seen_locs: dict[str, int],
+    errors: list[str],
+    warnings: list[str],
+) -> None:
+    loc = url.find(f"{{{_SITEMAP_NS}}}loc")
+    loc_text = (loc.text or "").strip() if (loc is not None and loc.text) else ""
+    if not loc_text:
+        errors.append(f"sitemap: url[{i}] missing <loc>")
+        return
+    if not loc_text.startswith(("http://", "https://")):
+        errors.append(f"sitemap: url[{i}] <loc> is not an absolute URL: {loc_text!r}")
+    _check_url_taint(f"sitemap: url[{i}] <loc>", loc_text, errors)
+    _check_url_seo(f"sitemap: url[{i}] <loc>", loc_text, warnings)
+    if loc_text in seen_locs:
+        warnings.append(f"sitemap: url[{i}] duplicate <loc> (also at url[{seen_locs[loc_text]}])")
+    seen_locs[loc_text] = i
+
+    lastmod = url.find(f"{{{_SITEMAP_NS}}}lastmod")
+    if lastmod is not None and lastmod.text and not RFC3339_RE.match(lastmod.text.strip()):
+        warnings.append(f"sitemap: url[{i}] <lastmod> not ISO 8601: {lastmod.text!r}")
+    cf = url.findtext(f"{{{_SITEMAP_NS}}}changefreq", "").strip()
+    if cf and cf not in {"always", "hourly", "daily", "weekly", "monthly", "yearly", "never"}:
+        warnings.append(f"sitemap: url[{i}] <changefreq> not in spec: {cf!r}")
+    pr = url.findtext(f"{{{_SITEMAP_NS}}}priority", "").strip()
+    if pr:
+        try:
+            pf = float(pr)
+            if not (0.0 <= pf <= 1.0):
+                warnings.append(f"sitemap: url[{i}] <priority> outside 0.0–1.0: {pr!r}")
+        except ValueError:
+            warnings.append(f"sitemap: url[{i}] <priority> not numeric: {pr!r}")
+    if is_news:
+        _validate_news_extension(url.find(f"{{{_NEWS_NS}}}news"), i, errors, warnings)
+
+
+def _validate_sitemap(
+    root: ET.Element,
+    path: Path,
+    errors: list[str],
+    warnings: list[str],
+) -> None:
+    is_news = root.find(f"{{{_SITEMAP_NS}}}url/{{{_NEWS_NS}}}news") is not None
+    urls = root.findall(f"{{{_SITEMAP_NS}}}url")
+    if len(urls) > 50000:
+        errors.append(f"sitemap: {len(urls)} URLs exceeds Google's 50,000 limit")
+    if path.stat().st_size > 50 * 1024 * 1024:
+        errors.append("sitemap: file size exceeds 50MB limit")
+    seen_locs: dict[str, int] = {}
+    for i, url in enumerate(urls):
+        _validate_sitemap_url(url, i, is_news, seen_locs, errors, warnings)
+
+
+_FEED_HANDLERS = {
+    "rss": lambda root, path, errs, warns: _validate_rss(root, errs, warns),
+    "feed": lambda root, path, errs, warns: _validate_atom(root, errs, warns),
+    "urlset": _validate_sitemap,
+}
+
+
 def validate_feed(path: Path) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     warnings: list[str] = []
@@ -207,178 +409,12 @@ def validate_feed(path: Path) -> tuple[list[str], list[str]]:
     except ET.ParseError as e:
         errors.append(f"XML parse failed: {e}")
         return errors, warnings
-
     root = tree.getroot()
-    root_local = _localname(root.tag)
-
-    if root_local == "rss":
-        # RSS 2.0 layout: <rss><channel>...<item>*</channel></rss>
-        channel = root.find("channel")
-        if channel is None:
-            errors.append("rss: missing <channel>")
-            return errors, warnings
-        for required in ("title", "link", "description"):
-            if channel.find(required) is None:
-                errors.append(f"rss: channel missing <{required}>")
-        # SEO: channel description should be substantial.
-        desc = channel.findtext("description", "")
-        if desc and len(desc.strip()) < 30:
-            warnings.append(f"rss: channel description is very short ({len(desc.strip())}c, ideal ≥30)")
-
-        seen_guids: dict[str, int] = {}
-        seen_links: dict[str, int] = {}
-        items = channel.findall("item")
-        for i, item in enumerate(items):
-            for required in ("title", "link"):
-                if item.find(required) is None:
-                    errors.append(f"rss: item[{i}] missing <{required}>")
-            link = (item.findtext("link") or "").strip()
-            _check_url_taint(f"rss: item[{i}] <link>", link, errors)
-            _check_url_seo(f"rss: item[{i}] <link>", link, warnings)
-            guid_el = item.find("guid")
-            guid = (guid_el.text or "").strip() if guid_el is not None else ""
-            if guid_el is not None:
-                _check_url_taint(f"rss: item[{i}] <guid>", guid, errors)
-                if guid_el.attrib.get("isPermaLink", "true").lower() != "false":
-                    _check_url_seo(f"rss: item[{i}] <guid>", guid, warnings)
-            # Uniqueness — duplicate guid breaks subscriber-state machinery.
-            if guid:
-                if guid in seen_guids:
-                    errors.append(f"rss: item[{i}] duplicate <guid> (also at item[{seen_guids[guid]}])")
-                seen_guids[guid] = i
-            if link:
-                if link in seen_links:
-                    warnings.append(f"rss: item[{i}] duplicate <link> (also at item[{seen_links[link]}])")
-                seen_links[link] = i
-            # Description quality.
-            d = (item.findtext("description") or "").strip()
-            if d and len(d) < 10:
-                warnings.append(f"rss: item[{i}] <description> too short ({len(d)}c, ideal ≥10)")
-            # pubDate format.
-            pd = (item.findtext("pubDate") or "").strip()
-            if pd and not RFC822_RE.match(pd):
-                warnings.append(f"rss: item[{i}] <pubDate> not RFC 822: {pd!r}")
-            # Title length — long titles get truncated in readers and SERP.
-            t = (item.findtext("title") or "").strip()
-            if len(t) > 200:
-                warnings.append(f"rss: item[{i}] <title> very long ({len(t)}c, ideal ≤200)")
-
-    elif root_local == "feed":
-        # Atom layout (namespaced).
-        for required in ("id", "title", "updated"):
-            if root.find(f"{{{_ATOM_NS}}}{required}") is None:
-                errors.append(f"atom: feed missing <{required}>")
-        feed_updated = (root.findtext(f"{{{_ATOM_NS}}}updated") or "").strip()
-        if feed_updated and not RFC3339_RE.match(feed_updated):
-            warnings.append(f"atom: feed <updated> not RFC 3339: {feed_updated!r}")
-        seen_ids: dict[str, int] = {}
-        for i, entry in enumerate(root.findall(f"{{{_ATOM_NS}}}entry")):
-            for required in ("id", "title", "updated"):
-                if entry.find(f"{{{_ATOM_NS}}}{required}") is None:
-                    errors.append(f"atom: entry[{i}] missing <{required}>")
-            eid = (entry.findtext(f"{{{_ATOM_NS}}}id") or "").strip()
-            _check_url_taint(f"atom: entry[{i}] <id>", eid, errors)
-            if eid:
-                if eid in seen_ids:
-                    errors.append(f"atom: entry[{i}] duplicate <id> (also at entry[{seen_ids[eid]}])")
-                seen_ids[eid] = i
-            # All <link href="…"> URLs inside the entry.
-            for j, ln in enumerate(entry.findall(f"{{{_ATOM_NS}}}link")):
-                href = ln.attrib.get("href", "")
-                _check_url_taint(f"atom: entry[{i}] <link>[{j}] href", href, errors)
-                _check_url_seo(f"atom: entry[{i}] <link>[{j}] href", href, warnings)
-            # Updated date format.
-            upd = (entry.findtext(f"{{{_ATOM_NS}}}updated") or "").strip()
-            if upd and not RFC3339_RE.match(upd):
-                warnings.append(f"atom: entry[{i}] <updated> not RFC 3339: {upd!r}")
-            # Summary recommended for entries.
-            if entry.find(f"{{{_ATOM_NS}}}summary") is None:
-                warnings.append(f"atom: entry[{i}] missing <summary> (recommended)")
-
-    elif root_local == "urlset":
-        # sitemap.xml or news-sitemap.xml
-        is_news = root.find(f"{{{_SITEMAP_NS}}}url/{{{_NEWS_NS}}}news") is not None
-        urls = root.findall(f"{{{_SITEMAP_NS}}}url")
-        # Hard sitemap size limits (Google).
-        if len(urls) > 50000:
-            errors.append(f"sitemap: {len(urls)} URLs exceeds Google's 50,000 limit")
-        if path.stat().st_size > 50 * 1024 * 1024:
-            errors.append(f"sitemap: file size exceeds 50MB limit")
-        seen_locs: dict[str, int] = {}
-        for i, url in enumerate(urls):
-            loc = url.find(f"{{{_SITEMAP_NS}}}loc")
-            loc_text = (loc.text or "").strip() if (loc is not None and loc.text) else ""
-            if not loc_text:
-                errors.append(f"sitemap: url[{i}] missing <loc>")
-                continue
-            if not loc_text.startswith(("http://", "https://")):
-                errors.append(f"sitemap: url[{i}] <loc> is not an absolute URL: {loc_text!r}")
-            _check_url_taint(f"sitemap: url[{i}] <loc>", loc_text, errors)
-            _check_url_seo(f"sitemap: url[{i}] <loc>", loc_text, warnings)
-            if loc_text in seen_locs:
-                warnings.append(f"sitemap: url[{i}] duplicate <loc> (also at url[{seen_locs[loc_text]}])")
-            seen_locs[loc_text] = i
-
-            lastmod = url.find(f"{{{_SITEMAP_NS}}}lastmod")
-            if lastmod is not None and lastmod.text:
-                if not RFC3339_RE.match(lastmod.text.strip()):
-                    warnings.append(
-                        f"sitemap: url[{i}] <lastmod> not ISO 8601: {lastmod.text!r}"
-                    )
-            cf = url.findtext(f"{{{_SITEMAP_NS}}}changefreq", "").strip()
-            if cf and cf not in {"always", "hourly", "daily", "weekly", "monthly", "yearly", "never"}:
-                warnings.append(f"sitemap: url[{i}] <changefreq> not in spec: {cf!r}")
-            pr = url.findtext(f"{{{_SITEMAP_NS}}}priority", "").strip()
-            if pr:
-                try:
-                    pf = float(pr)
-                    if not (0.0 <= pf <= 1.0):
-                        warnings.append(f"sitemap: url[{i}] <priority> outside 0.0–1.0: {pr!r}")
-                except ValueError:
-                    warnings.append(f"sitemap: url[{i}] <priority> not numeric: {pr!r}")
-
-            if is_news:
-                news = url.find(f"{{{_NEWS_NS}}}news")
-                if news is None:
-                    errors.append(f"news-sitemap: url[{i}] missing <news:news>")
-                    continue
-                # Required news fields per Google News spec.
-                title_el = news.find(f"{{{_NEWS_NS}}}title")
-                pub = news.find(f"{{{_NEWS_NS}}}publication")
-                pubdate = news.find(f"{{{_NEWS_NS}}}publication_date")
-                if title_el is None:
-                    errors.append(f"news-sitemap: url[{i}] news:news missing <news:title>")
-                elif title_el.text and len(title_el.text) > 80:
-                    warnings.append(
-                        f"news-sitemap: url[{i}] <news:title> exceeds Google's 80-char "
-                        f"recommendation ({len(title_el.text)}c)"
-                    )
-                if pub is None:
-                    errors.append(f"news-sitemap: url[{i}] missing <news:publication>")
-                else:
-                    if pub.find(f"{{{_NEWS_NS}}}name") is None:
-                        errors.append(f"news-sitemap: url[{i}] publication missing <news:name>")
-                    if pub.find(f"{{{_NEWS_NS}}}language") is None:
-                        errors.append(f"news-sitemap: url[{i}] publication missing <news:language>")
-                if pubdate is None:
-                    errors.append(f"news-sitemap: url[{i}] missing <news:publication_date>")
-                elif pubdate.text and not RFC3339_RE.match(pubdate.text.strip()):
-                    warnings.append(
-                        f"news-sitemap: url[{i}] <news:publication_date> not ISO 8601: "
-                        f"{pubdate.text!r}"
-                    )
-                kw_el = news.find(f"{{{_NEWS_NS}}}keywords")
-                if kw_el is not None and kw_el.text:
-                    keywords = [k.strip() for k in kw_el.text.split(",") if k.strip()]
-                    if len(keywords) > 10:
-                        warnings.append(
-                            f"news-sitemap: url[{i}] <news:keywords> has {len(keywords)} items "
-                            f"(Google recommends ≤10)"
-                        )
-
-    else:
-        warnings.append(f"unknown root element <{root_local}>; skipped feed-specific checks")
-
+    handler = _FEED_HANDLERS.get(_localname(root.tag))
+    if handler is None:
+        warnings.append(f"unknown root element <{_localname(root.tag)}>; skipped feed-specific checks")
+        return errors, warnings
+    handler(root, path, errors, warnings)
     return errors, warnings
 
 

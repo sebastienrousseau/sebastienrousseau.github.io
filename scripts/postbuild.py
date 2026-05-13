@@ -533,20 +533,10 @@ def write_robots(public: Path) -> bool:
 # 6b. llms.txt — structured directory for AI crawlers
 # ---------------------------------------------------------------------------
 
-_FM_RE = re.compile(r"^---\s*\n(.*?)\n---", re.DOTALL)
-_FM_FIELD_RE = re.compile(r'^([a-zA-Z_-]+):\s*"?([^"\n]*)"?', re.MULTILINE)
+import sys
 
-
-def _read_fm(path: Path) -> dict[str, str]:
-    src = path.read_text(encoding="utf-8", errors="ignore")
-    m = _FM_RE.match(src)
-    if not m:
-        return {}
-    fm_text = m.group(1)
-    out: dict[str, str] = {}
-    for fm in _FM_FIELD_RE.finditer(fm_text):
-        out.setdefault(fm.group(1), fm.group(2).strip())
-    return out
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _frontmatter import read_fm as _read_fm  # noqa: E402
 
 
 def build_llms_txt() -> str:

@@ -29,6 +29,14 @@ audit-external:
 validate:
 	@python3 scripts/validate_jsonld.py --base-dir public
 
+# Python test suite (scripts/ utilities).
+test:
+	@python3 -m pytest tests/ -ra
+
+# Static analysis (ruff, configured in pyproject.toml).
+lint:
+	@ruff check scripts/ tests/
+
 # Wipe build output.
 clean:
 	@rm -rf public output output.build-tmp

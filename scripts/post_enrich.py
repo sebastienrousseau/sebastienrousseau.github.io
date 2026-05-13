@@ -63,34 +63,10 @@ HAS_HAND_LEAD = re.compile(r"^\s*>\s*\*\*Key Takeaways", re.MULTILINE)
 
 # ---------------------------------------------------------------------------
 
-def split_frontmatter(text: str) -> tuple[list[str], list[str]] | None:
-    lines = text.splitlines(keepends=True)
-    bounds = [i for i, ln in enumerate(lines) if ln.strip() == "---"]
-    if len(bounds) < 2:
-        return None
-    return lines[: bounds[1] + 1], lines[bounds[1] + 1 :]
+import sys
 
-
-def fm_get(fm_lines: list[str], key: str) -> str | None:
-    pat = re.compile(rf'^{re.escape(key)}:\s*"?(.+?)"?\s*$')
-    for ln in fm_lines:
-        m = pat.match(ln)
-        if m:
-            return m.group(1)
-    return None
-
-
-def fm_set(fm_lines: list[str], key: str, value: str) -> list[str]:
-    pat = re.compile(rf'^{re.escape(key)}:')
-    formatted = f'{key}: "{value}"\n'
-    for i, ln in enumerate(fm_lines):
-        if pat.match(ln):
-            fm_lines[i] = formatted
-            return fm_lines
-    out = list(fm_lines)
-    closing = next(i for i in range(len(out) - 1, -1, -1) if out[i].strip() == "---")
-    out.insert(closing, formatted)
-    return out
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _frontmatter import fm_get, fm_set, split_frontmatter  # noqa: E402
 
 
 def strip_md(s: str) -> str:

@@ -5,6 +5,7 @@ Featured project at the top, then category sections (AI, Quantum, Rust, …) eac
 its own Newsroom grid of cards.
 """
 from __future__ import annotations
+
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent

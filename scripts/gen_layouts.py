@@ -6,8 +6,8 @@ The shared shell is everything except the body's `<section class="ap-hero">…</
 main body. Aside is dropped (it lives on the homepage only).
 """
 from __future__ import annotations
+
 from pathlib import Path
-import re
 
 ROOT = Path(__file__).resolve().parent.parent
 LAYOUTS = ROOT / "_layouts"
@@ -30,14 +30,39 @@ TOP, BOTTOM = slice_shell(INDEX)
 # merge them into one knowledge graph.
 PERSON_REF = '{"@id":"https://sebastienrousseau.com/#person"}'
 SITE_REF = '{"@id":"https://sebastienrousseau.com/#website"}'
+BLOG_REF = (
+    '{"@type":"Blog","@id":"https://sebastienrousseau.com/articles/#blog",'
+    '"name":"Sebastien Rousseau — Articles",'
+    '"url":"https://sebastienrousseau.com/articles/"}'
+)
 BREADCRUMB = (
     ',{"@type":"BreadcrumbList","itemListElement":['
     '{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},'
     '{"@type":"ListItem","position":2,"name":"{{title}}","item":"{{url}}"}'
     ']}'
 )
+# Dated posts (the "report" layout) live inside the /articles/ Blog graph,
+# so their breadcrumb is three levels deep: Home > Articles > <post title>.
+REPORT_BREADCRUMB = (
+    ',{"@type":"BreadcrumbList","itemListElement":['
+    '{"@type":"ListItem","position":1,"name":"Home","item":"https://sebastienrousseau.com/"},'
+    '{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/articles/"},'
+    '{"@type":"ListItem","position":3,"name":"{{title}}","item":"{{url}}"}'
+    ']}'
+)
 IMAGE_OBJ = (
     '{"@type":"ImageObject","url":"{{image}}","width":"{{image_width}}","height":"{{image_height}}"}'
+)
+# The article banner is the visual lead, and the right artwork for
+# Article.image per Google's structured-data guidance. ``{{image}}`` was
+# the small 162×162 author headshot — wrong shape for a social preview.
+BANNER_OBJ = (
+    '{"@type":"ImageObject","url":"{{banner}}","width":"{{banner_width}}",'
+    '"height":"{{banner_height}}","caption":"{{banner_alt}}"}'
+)
+SPEAKABLE = (
+    ',"speakable":{"@type":"SpeakableSpecification",'
+    '"cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways"]}'
 )
 # FAQ block for /papers/. Mirrors the on-page `<details class="qa-item">` accordion
 # so AI crawlers (Google AI Overviews, Perplexity, ChatGPT) can cite the answers
@@ -78,8 +103,11 @@ PROJECTS_FAQ = (
     ']}'
 )
 # Each schema is wrapped in an @graph array so we can attach the BreadcrumbList
-# as a second top-level node without breaking the JSON envelope.
-WRAP = lambda body, extra="": '"@graph":[{' + body + '}' + BREADCRUMB + extra + ']'
+# as a second top-level node without breaking the JSON envelope. ``breadcrumb``
+# defaults to the two-level form (Home > <page>); the "report" layout uses
+# REPORT_BREADCRUMB to slot Articles as the parent collection.
+def WRAP(body: str, extra: str = "", breadcrumb: str = BREADCRUMB) -> str:
+    return '"@graph":[{' + body + '}' + breadcrumb + extra + ']'
 
 SCHEMA_TEMPLATES = {
     "default":  WRAP('"@type":"WebPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","image":' + IMAGE_OBJ + ',"author":' + PERSON_REF + ',"publisher":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
@@ -89,7 +117,16 @@ SCHEMA_TEMPLATES = {
     "papers":   WRAP('"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Research papers and white papers on wholesale payments and post-quantum cryptography","author":' + PERSON_REF + ',"isPartOf":' + SITE_REF, PAPERS_FAQ),
     "projects": WRAP('"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Open-source projects applied to finance and banking","author":' + PERSON_REF + ',"isPartOf":' + SITE_REF, PROJECTS_FAQ),
     "playlist": WRAP('"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Curated Spotify playlists","author":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
-    "report":   WRAP('"@type":"BlogPosting","headline":"{{title}}","description":"{{description}}","image":' + IMAGE_OBJ + ',"url":"{{url}}","datePublished":"{{item_pub_date}}","dateModified":"{{last_build_date}}","inLanguage":"{{hreflang}}","keywords":"{{keywords}}","articleSection":"{{category}}","author":' + PERSON_REF + ',"publisher":' + PERSON_REF + ',"mainEntityOfPage":{"@type":"WebPage","@id":"{{url}}"}'),
+    "report":   WRAP(
+        '"@type":"BlogPosting","headline":"{{title}}","description":"{{description}}","image":'
+        + BANNER_OBJ
+        + ',"url":"{{url}}","datePublished":"{{item_pub_date}}","dateModified":"{{last_reviewed}}",'
+        '"inLanguage":"{{hreflang}}","keywords":"{{keywords}}","articleSection":"{{category}}",'
+        '"author":' + PERSON_REF + ',"publisher":' + PERSON_REF + ','
+        '"mainEntityOfPage":{"@type":"WebPage","@id":"{{url}}"},'
+        '"isPartOf":' + BLOG_REF + SPEAKABLE,
+        breadcrumb=REPORT_BREADCRUMB,
+    ),
 }
 
 

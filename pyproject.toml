@@ -1,0 +1,57 @@
+[project]
+# This repo isn't a published Python package — it's a static site build
+# pipeline whose scripts/ directory happens to be Python. pyproject.toml
+# exists so ruff + pytest + uv pick up the same configuration in CI and
+# locally, not for distribution metadata.
+name = "sebastienrousseau-com-build"
+version = "0.0.0"
+description = "Build + validate pipeline for sebastienrousseau.com"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [
+    "docs",
+    "public",
+    "audits",
+]
+
+[tool.ruff.lint]
+# Keep the rule set tight enough that ruff is useful as a CI gate but
+# doesn't flood with style nits on a build-script codebase. Notable
+# omissions explained inline.
+select = [
+    "E",      # pycodestyle errors
+    "F",      # pyflakes (unused imports, undefined names — real bugs)
+    "I",      # isort (import ordering)
+    "B",      # flake8-bugbear (likely-bugs)
+    "UP",     # pyupgrade (modern syntax)
+    "SIM",    # flake8-simplify (collapsible logic)
+    "C901",   # mccabe complexity > 10
+    "S",      # bandit subset (security)
+    "RUF",    # ruff-specific rules
+    "PERF",   # perflint
+    "RET",    # flake8-return
+]
+ignore = [
+    "E501",   # line-length — keep loose; long URL/SQL lines are normal
+    "S101",   # assert allowed in tests
+    "S314",   # ET.parse on our own controlled XML is fine
+    "S310",   # urllib.urlopen for the link-audit tool is the point
+    "RET504", # unnecessary assignment before return — sometimes clearer
+    "RUF013", # implicit Optional — handled by mypy where it matters
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Build scripts use top-level expressions extensively. Tests use asserts.
+"scripts/*"      = ["S603", "S607"]
+"tests/*"        = ["S101", "S603", "S607", "PLR2004"]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 12
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --tb=short"
+pythonpath = ["scripts"]

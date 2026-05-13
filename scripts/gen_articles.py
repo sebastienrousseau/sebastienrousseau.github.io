@@ -5,6 +5,7 @@ Featured (most recent) story sits in a 1:1 split-card; the rest fill a 3-col gri
 Image, title, eyebrow tag, date and excerpt come from the existing markdown.
 """
 from __future__ import annotations
+
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
