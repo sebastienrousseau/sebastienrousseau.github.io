@@ -1,0 +1,69 @@
+name: Lighthouse CI
+
+# Performance regression guardrails. Runs Lighthouse against the freshly
+# built `public/` tree on every push and on a weekly schedule, asserting
+# the thresholds declared in lighthouserc.json. Reports are uploaded to
+# Lighthouse's temporary public storage so the URLs end up in the run log.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "_posts/**"
+      - "_layouts/**"
+      - "scripts/**"
+      - "build.sh"
+      - "lighthouserc.json"
+      - ".github/workflows/lighthouse.yml"
+  schedule:
+    # Sundays at 03:00 UTC.
+    - cron: "0 3 * * 0"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Lighthouse CI
+        run: npm install -g @lhci/cli@0.14.x
+
+      - name: Install Shokunin SSG
+        run: |
+          curl -sSL https://github.com/sebastienrousseau/shokunin/releases/latest/download/ssg-linux-x86_64.tar.gz \
+            | tar -xz -C /usr/local/bin/ || true
+          # Fallback to cargo if the binary tarball isn't available.
+          if ! command -v ssg >/dev/null; then
+            curl -sSL https://sh.rustup.rs | sh -s -- -y --default-toolchain stable
+            export PATH="$HOME/.cargo/bin:$PATH"
+            cargo install ssg --locked
+          fi
+          ssg --version
+
+      - name: Build site
+        run: ./build.sh
+
+      - name: Run Lighthouse CI
+        run: lhci autorun
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+
+      - name: Upload Lighthouse reports as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-${{ github.run_id }}
+          path: .lighthouseci/
+          retention-days: 30

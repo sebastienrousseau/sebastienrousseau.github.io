@@ -226,7 +226,7 @@
     </news:publication>
     <news:publication_date>2026-05-11T06:06:06+00:00</news:publication_date>
     <news:title>Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</news:title>
-    <news:keywords>Lucy 2014, Luc Besson, Scarlett Johansson, knowledge transfer, artificial intelligence, quantum computing, neutral atom qubits, large language models, whole brain emulation, transhumanism, posthumanism, mind uploading, Professor Norman monologue, CPH4, digital immortality, Neuralink, AGI, Sebastien Rousseau</news:keywords>
+    <news:keywords>Lucy 2014 film, Luc Besson, knowledge transfer, large language models, neutral atom qubits, whole-brain emulation, substrate independence, AI philosophy, quantum computing, knowledge persistence</news:keywords>
   </news:news>
 </url>
 <url>
@@ -382,7 +382,7 @@
     </news:publication>
     <news:publication_date>2023-11-19T09:59:00+00:00</news:publication_date>
     <news:title>KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</news:title>
-    <news:keywords>Quantum-safe cryptography, KyberLib, Rust, CRYSTALS-Kyber, lattice-based cryptography, NIST, standardization, key encapsulation mechanism, digital signatures, lightweight digital signatures, hash-based digital signatures, Kyber512, Kyber768, Kyber1024, security, efficiency, versatility, no-std compliance, memory safety, system-level security, embedded systems, WebAssembly, web applications</news:keywords>
+    <news:keywords>KyberLib, Rust CRYSTALS-Kyber, post-quantum cryptography, lattice-based cryptography, quantum-resistant key exchange, NIST FIPS 203, Sebastien Rousseau, KEM, payment authentication, PQC library</news:keywords>
   </news:news>
 </url>
 <url>

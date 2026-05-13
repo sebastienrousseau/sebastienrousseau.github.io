@@ -238,6 +238,98 @@ _blogposting_image_re = re.compile(
 
 
 # ---------------------------------------------------------------------------
+# 4b. about / mentions — link the post to canonical entities so AI engines
+#     can ground the article inside their knowledge graphs.
+# ---------------------------------------------------------------------------
+
+# Entity name (matched case-insensitively against keywords) -> authoritative
+# sameAs URL. We use Wikipedia or the issuing body's canonical page rather
+# than Wikidata Q-numbers — same grounding power for AI overviews, but no
+# memorised-ID hallucination risk and easier to verify.
+ENTITY_AUTHORITY: dict[str, str] = {
+    # Cryptography
+    "CRYSTALS-Kyber":                "https://en.wikipedia.org/wiki/Kyber",
+    "post-quantum cryptography":     "https://en.wikipedia.org/wiki/Post-quantum_cryptography",
+    "lattice-based cryptography":    "https://en.wikipedia.org/wiki/Lattice-based_cryptography",
+    "Quantum key distribution":      "https://en.wikipedia.org/wiki/Quantum_key_distribution",
+    "Shor's algorithm":              "https://en.wikipedia.org/wiki/Shor%27s_algorithm",
+    "homomorphic encryption":        "https://en.wikipedia.org/wiki/Homomorphic_encryption",
+    "Quantum computing":             "https://en.wikipedia.org/wiki/Quantum_computing",
+    "NIST PQC":                      "https://csrc.nist.gov/projects/post-quantum-cryptography",
+    # Payments
+    "ISO 20022":                     "https://www.iso20022.org/",
+    "SWIFT gpi":                     "https://www.swift.com/our-solutions/swift-gpi",
+    "SEPA":                          "https://en.wikipedia.org/wiki/Single_Euro_Payments_Area",
+    # AI
+    "Large language model":          "https://en.wikipedia.org/wiki/Large_language_model",
+    "Generative AI":                 "https://en.wikipedia.org/wiki/Generative_artificial_intelligence",
+    "Artificial intelligence":       "https://en.wikipedia.org/wiki/Artificial_intelligence",
+    "Multimodal learning":           "https://en.wikipedia.org/wiki/Multimodal_learning",
+    # Programming
+    "Rust":                          "https://en.wikipedia.org/wiki/Rust_(programming_language)",
+    "Python":                        "https://en.wikipedia.org/wiki/Python_(programming_language)",
+    # Crypto / Web3
+    "Blockchain":                    "https://en.wikipedia.org/wiki/Blockchain",
+    "Bitcoin":                       "https://en.wikipedia.org/wiki/Bitcoin",
+    "Ethereum":                      "https://en.wikipedia.org/wiki/Ethereum",
+    "ERC-20":                        "https://en.wikipedia.org/wiki/Ethereum#Tokens",
+}
+
+
+_keywords_re = re.compile(
+    r'"@type":"BlogPosting"[\s\S]*?"keywords":"([^"]*)"',
+)
+
+
+def build_about_graph(html: str) -> str | None:
+    m = _keywords_re.search(html)
+    if not m:
+        return None
+    keywords_raw = m.group(1)
+    if not keywords_raw:
+        return None
+    keywords = [k.strip() for k in keywords_raw.split(",") if k.strip()]
+    seen: set[str] = set()
+    matches: list[dict[str, str]] = []
+    for kw in keywords:
+        kwl = kw.lower()
+        for entity, url in ENTITY_AUTHORITY.items():
+            ent_l = entity.lower()
+            if (kwl == ent_l or ent_l in kwl or kwl in ent_l) and entity not in seen:
+                seen.add(entity)
+                matches.append({
+                    "@type": "Thing",
+                    "name": entity,
+                    "sameAs": url,
+                })
+                break
+    if not matches:
+        return None
+    # First match is the primary "about" subject; the rest land in "mentions".
+    import json as _json
+    primary = matches[0]
+    rest = matches[1:6]  # cap secondary entities at 5 to keep schema lean
+    fragment_parts = [f'"about":{_json.dumps(primary, separators=(",", ":"))}']
+    if rest:
+        fragment_parts.append(f'"mentions":{_json.dumps(rest, separators=(",", ":"))}')
+    return ",".join(fragment_parts)
+
+
+def inject_about(html: str) -> str:
+    fragment = build_about_graph(html)
+    if not fragment:
+        return html
+    # Insert after "wordCount" (or after "headline" if wordCount was skipped),
+    # so the entity graph sits at a stable position in the BlogPosting.
+    return re.sub(
+        r'("@type":"BlogPosting"[^{]*?)("headline":)',
+        rf'\1{fragment},\2',
+        html,
+        count=1,
+    )
+
+
+# ---------------------------------------------------------------------------
 # 5. wordCount injection into BlogPosting
 # ---------------------------------------------------------------------------
 
@@ -566,6 +658,7 @@ def main() -> None:
     itemlist_patched = 0
     social_patched = 0
     wc_patched = 0
+    about_patched = 0
     for page in pages:
         original = page.read_text(encoding="utf-8", errors="ignore")
         patched = fix_sri(original)
@@ -582,8 +675,11 @@ def main() -> None:
         patched_wc = inject_word_count(patched_si)
         if patched_wc != patched_si:
             wc_patched += 1
-        patched2 = inject_jsonld_hashes(patched_wc)
-        if patched2 != patched_wc:
+        patched_about = inject_about(patched_wc)
+        if patched_about != patched_wc:
+            about_patched += 1
+        patched2 = inject_jsonld_hashes(patched_about)
+        if patched2 != patched_about:
             csp_patched += 1
         if patched2 != original:
             page.write_text(patched2, encoding="utf-8")
@@ -602,6 +698,7 @@ def main() -> None:
         f"{itemlist_patched} got ItemList JSON-LD, "
         f"{social_patched} got og:image fixed, "
         f"{wc_patched} got wordCount, "
+        f"{about_patched} got about/mentions entities, "
         f"{csp_patched} got CSP JSON-LD hashes, "
         f"{sitemap_patched} sitemap entries refreshed, "
         f"robots.txt {'updated' if robots_written else 'unchanged'}, "

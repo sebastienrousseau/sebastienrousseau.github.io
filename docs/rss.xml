@@ -612,105 +612,16 @@
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-      <category>2023</category>
-      <category>AI</category>
-      <category>Quantum</category>
-      <category>Computing</category>
-      <category>Banking</category>
-      <category>Open-Source</category>
-      <category>Models</category>
-      <category>Regulations</category>
-      <category>Governance</category>
-      <category>Finance</category>
-      <category>Payments</category>
-      <category>Risk</category>
-      <category>Management</category>
-      <category>Cybersecurity</category>
-      <category>Transformation</category>
-      <category>Efficiency</category>
-      <category>Cost</category>
-      <category>Savings</category>
-      <category>Customer</category>
-      <category>Experiences</category>
-      <category>Revenue</category>
-      <category>Growth</category>
-      <category>Algorithms</category>
-      <category>Data</category>
-      <category>Analysis</category>
-      <category>Patterns</category>
-      <category>Decisions</category>
-      <category>Creditworthiness</category>
-      <category>Fraud</category>
-      <category>Mitigation</category>
-      <category>Loans</category>
-      <category>Approval</category>
-      <category>Investment</category>
-      <category>Portfolio</category>
-      <category>Optimisation</category>
-      <category>Market</category>
-      <category>Trends</category>
-      <category>Detection</category>
-      <category>Service</category>
-      <category>Proactive</category>
-      <category>Support</category>
-      <category>HSBC</category>
-      <category>Collaboration</category>
-      <category>Technology</category>
-      <category>Providers</category>
-      <category>Research</category>
-      <category>Laboratories</category>
-      <category>Real-World</category>
-      <category>Problems</category>
-      <category>Trading</category>
-      <category>Protection</category>
-      <category>Euros</category>
-      <category>Dollars</category>
-      <category>Adoption</category>
-      <category>Language</category>
-      <category>Models</category>
-      <category>LLMs</category>
-      <category>Developers</category>
-      <category>Researchers</category>
-      <category>Stakeholders</category>
-      <category>Democratisation</category>
-      <category>Innovation</category>
-      <category>Decision-Making</category>
-      <category>Transparency</category>
-      <category>Customisability</category>
-      <category>Interpretability</category>
-      <category>Contributions</category>
-      <category>Projects</category>
-      <category>Capabilities</category>
-      <category>Mixtral</category>
-      <category>GPT-NeoX</category>
-      <category>GPT-J</category>
-      <category>OPT-175</category>
-      <category>LLMa</category>
-      <category>Ethical</category>
-      <category>Guidelines</category>
-      <category>Human</category>
-      <category>Rights</category>
-      <category>Exploitation</category>
-      <category>Privacy</category>
-      <category>Multi-Stakeholder</category>
-      <category>Approach</category>
-      <category>Governments</category>
-      <category>Businesses</category>
-      <category>Civil</category>
-      <category>Society</category>
-      <category>National</category>
-      <category>International</category>
-      <category>Efforts</category>
-      <category>Development</category>
-      <category>Deployment</category>
-      <category>Challenges</category>
-      <category>YouTube</category>
-      <category>Channel</category>
-      <category>Automation</category>
-      <category>Modelling</category>
-      <category>Processing</category>
-      <category>Opportunities</category>
-      <category>Implications</category>
+      <category>AI in banking</category>
+      <category>quantum computing</category>
+      <category>open-source LLMs</category>
+      <category>AI regulation</category>
+      <category>AI governance</category>
+      <category>post-quantum cryptography</category>
+      <category>risk management</category>
+      <category>2023 review</category>
+      <category>banking innovation</category>
+      <category>financial services</category>
     </item>
     <item>
       <title>Quantum Key Distribution Revolutionising Security in Banking</title>
@@ -747,30 +658,16 @@
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg" type="image/jpeg" length="0"/>
       <category>Technology</category>
-      <category>quantum-safe</category>
-      <category>cryptography</category>
-      <category>KyberLib</category>
+      <category>DateTime</category>
+      <category>DTT</category>
       <category>Rust</category>
-      <category>CRYSTALS-Kyber</category>
-      <category>lattice-based</category>
-      <category>NIST</category>
-      <category>standardization</category>
-      <category>KEM</category>
-      <category>digital signatures</category>
-      <category>lightweight</category>
-      <category>hash-based</category>
-      <category>Kyber512</category>
-      <category>Kyber768</category>
-      <category>Kyber1024</category>
-      <category>security</category>
-      <category>efficiency</category>
-      <category>versatility</category>
-      <category>no-std</category>
-      <category>memory safety</category>
-      <category>system-level</category>
-      <category>embedded</category>
-      <category>WebAssembly</category>
-      <category>web</category>
+      <category>date library</category>
+      <category>time library</category>
+      <category>timezone handling</category>
+      <category>chrono alternative</category>
+      <category>ISO 8601</category>
+      <category>time formatting</category>
+      <category>Sebastien Rousseau</category>
     </item>
     <item>
       <title>CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</title>
@@ -801,30 +698,16 @@
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" type="image/jpeg" length="0"/>
       <category>Technology</category>
-      <category>quantum-safe</category>
-      <category>cryptography</category>
       <category>KyberLib</category>
       <category>Rust</category>
       <category>CRYSTALS-Kyber</category>
-      <category>lattice-based</category>
-      <category>NIST</category>
-      <category>standardization</category>
-      <category>KEM</category>
-      <category>digital signatures</category>
-      <category>lightweight</category>
-      <category>hash-based</category>
-      <category>Kyber512</category>
-      <category>Kyber768</category>
-      <category>Kyber1024</category>
-      <category>security</category>
-      <category>efficiency</category>
-      <category>versatility</category>
-      <category>no-std</category>
-      <category>memory safety</category>
-      <category>system-level</category>
-      <category>embedded</category>
-      <category>WebAssembly</category>
-      <category>web</category>
+      <category>post-quantum cryptography</category>
+      <category>lattice-based cryptography</category>
+      <category>key encapsulation mechanism</category>
+      <category>quantum-resistant</category>
+      <category>NIST PQC</category>
+      <category>libsignal</category>
+      <category>cryptographic library</category>
     </item>
     <item>
       <title>Generative AI in 2023: How It Works, Where It Lands</title>
