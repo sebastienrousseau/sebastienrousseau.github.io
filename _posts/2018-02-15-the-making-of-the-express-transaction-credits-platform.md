@@ -115,6 +115,7 @@ last_reviewed: "2026-05-11"
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): Structured Logging Library for Rust</a>, <a href="https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html">Streamlining Rust Library Development with Code Generation</a>, <a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html">Alien Studio: My Tech-to Art Journey in Photography</a>.</p>
 </aside>
 <!-- lead-end -->
+
 ![Giant white pillars](https://cloudcdn.pro/stocks/images/rawpixel-com-369782.webp).class=\"img-fluid clearfix\"
 
 ## Insight

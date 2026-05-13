@@ -115,6 +115,7 @@ last_reviewed: "2026-05-11"
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>, <a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a>, <a href="https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html">Quantum Algorithm Challenges Lattice-Based Cryptography</a>.</p>
 </aside>
 <!-- lead-end -->
+
 ![HSBC From the Docks][00].class=\"img-fluid clearfix fade-in\"
 
 The banking and financial industry is undergoing a revolutionary transformation in data security, driven by the emergence of Quantum Key Distribution (QKD). This groundbreaking innovation, based on the principles of quantum mechanics, offers unparalleled security for data transmission, making it a game-changer for the industry.

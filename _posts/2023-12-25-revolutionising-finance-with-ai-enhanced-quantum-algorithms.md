@@ -125,6 +125,7 @@ last_reviewed: "2026-05-11"
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>, <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>.</p>
 </aside>
 <!-- lead-end -->
+
 The financial landscape is poised for a groundbreaking transformation driven by the convergence of artificial intelligence (AI) and quantum algorithm design.This revolution in finance isn't raw quantum power, but elegant algorithms that optimise it.
 
 ## Insight

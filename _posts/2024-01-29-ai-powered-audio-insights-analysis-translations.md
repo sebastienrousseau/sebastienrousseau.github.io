@@ -125,6 +125,7 @@ last_reviewed: "2026-05-11"
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html">Generative AI in Advertising: Amazon Rufus & Meta</a>, <a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a>, <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>.</p>
 </aside>
 <!-- lead-end -->
+
 [**Audio Analyser ⧉**][00], leveraging Microsoft Azure AI Platform, is redefining the landscape of audio data analysis. This tool offers advanced speech-to-text conversion, comprehensive text analysis, actionable insights and seamless translations, providing critical detailed analytics from audio data efficiently. It's an essential asset for sectors like market research, contact centers, customer service, healthcare, banking and finance, transforming the way we interpret and utilise audio information.
 
 In today's experience-driven market, the ability to quickly analyze customer audio data from calls, chats, voice mails and more has become essential for delivering exceptional support. With rising expectations, native speech analytics like **Audio Analyser** make the difference for companies aiming to retain customers and nurture lasting relationships.

@@ -115,6 +115,7 @@ last_reviewed: "2026-05-11"
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>, <a href="https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/index.html">Bitcoin: A Year In Review of the First Cryptocurrency</a>.</p>
 </aside>
 <!-- lead-end -->
+
 ![A very tall building that has a lot of holes in it](https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp).class=\"img-fluid clearfix\"
 
 ## Insight

@@ -123,6 +123,7 @@ last_reviewed: "2026-05-11"
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a>, <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>, <a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">AI Trends 2024: Insights and Predictions for the Future</a>.</p>
 </aside>
 <!-- lead-end -->
+
 ## Google's Revolutionary Open-Source AI Model for Accessible and Ethical ML Development
 
 Google recently launched [**Gemma ⧉**][00], an open-source artificial intelligence model designed to provide an accessible and ethical foundation for AI development. As an open-source model, Gemma offers its full architecture, training methodology, model weights and parameters under permissible licenses for external researchers and developers to freely access, learn from, build upon and even customise for their unique needs. This transparent approach also allows scrutiny of Gemma's development practices to uphold accountability.

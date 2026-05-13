@@ -115,6 +115,7 @@ last_reviewed: "2026-05-11"
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</a>, <a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">Quantum Lattice Crypto: Bug in Chen's LWE Attack</a>, <a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a>.</p>
 </aside>
 <!-- lead-end -->
+
 ## The Quantum Threat to Payment Systems
 
 Modern payment infrastructure relies on public-key cryptography. RSA, ECC, and Diffie-Hellman. To authenticate transactions, protect cardholder data, and secure messaging between financial institutions. These algorithms underpin SWIFT, SEPA, real-time gross settlement systems, and virtually every card scheme in operation today.

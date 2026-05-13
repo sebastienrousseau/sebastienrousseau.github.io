@@ -123,6 +123,7 @@ last_reviewed: "2026-05-11"
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html">Streamlining Rust Library Development with Code Generation</a>, <a href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html">The making of the Express Transaction Credits Platform</a>, <a href="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html">Google Gemma AI: Transforming Open-Source AI Development</a>.</p>
 </aside>
 <!-- lead-end -->
+
 ## Introduction
 
 In the world of software development, logging plays a crucial role in understanding the behaviour of an application, diagnosing issues, and ensuring smooth operation. Rust, a systems programming language known for its performance and safety, offers developers a wide range of logging solutions. Among these libraries, RustLogs (RLG) was born. It's a powerful and flexible logging library that makes it easy to add robust logging capabilities to Rust applications.

@@ -123,6 +123,7 @@ last_reviewed: "2026-05-11"
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</a>, <a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a>, <a href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html">KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</a>.</p>
 </aside>
 <!-- lead-end -->
+
 ## The Quantum Conundrum: Re-evaluating the NIST Post-Quantum Cryptography Standardisation in Light of Yilei Chen's Algorithm
 
 Following my recent article on the [Challenges in Quantum Algorithms for Lattice-Based Cryptography][00], I am compelled to provide an update on the latest developments in [Yilei Chen's research ⧉][01].

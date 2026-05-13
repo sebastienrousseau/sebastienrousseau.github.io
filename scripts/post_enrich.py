@@ -220,6 +220,12 @@ def build_lead(excerpt: str, takeaways: list[str], related: list[dict]) -> str:
         parts.append(f'<p class="post-lead-related"><strong>Related reading:</strong> {links}.</p>')
     parts.append('</aside>')
     parts.append(LEAD_END)
+    # Emit two trailing newlines so the lead block ends with a blank line.
+    # CommonMark requires a blank line between a raw HTML block and the next
+    # markdown block — without it, a heading sitting right after the lead
+    # (e.g. `## Introduction` on the very next line) gets parsed as literal
+    # text instead of <h2>, which breaks heading-order accessibility.
+    parts.append("")
     parts.append("")
     return "\n".join(parts)
 

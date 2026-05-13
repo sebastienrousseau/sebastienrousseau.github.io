@@ -115,6 +115,7 @@ last_reviewed: "2026-05-11"
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: Fastest Rust-Based SSG</a>, <a href="https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html">Automating ISO 20022 Payment Files Creation with Pain001</a>, <a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html">Unveiling a new Cryptocurrency and Faster Payment Solution</a>.</p>
 </aside>
 <!-- lead-end -->
+
 ![A very tall building that has a lot of holes in it](https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp).class=\"img-fluid clearfix\"
 
 Blockchain, the underlying technology driving the meteoric rise of cryptocurrencies, is disrupting businesses, financial services, and capital markets. This transformative technology is changing how we conduct transactions and operations by making data more readily available, transparent, and secure.

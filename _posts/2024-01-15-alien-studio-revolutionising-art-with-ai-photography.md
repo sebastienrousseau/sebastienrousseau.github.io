@@ -125,6 +125,7 @@ last_reviewed: "2026-05-11"
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a>, <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>, <a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a>.</p>
 </aside>
 <!-- lead-end -->
+
 ## Unleashing Artistic Innovation through Cutting-Edge Technology
 
 2023 was a year of profound transformation and realisation. Motivated by curiosity and a drive to innovate, I delved into cutting-edge technology, including [**Rust ⧉**][06], [**AI ⧉**][07], and [**Quantum Computing ⧉**][08]. My aim wasn't just to understand these complex fields, but to explore their potential to shape innovative strategies.

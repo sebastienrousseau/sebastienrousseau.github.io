@@ -125,6 +125,7 @@ last_reviewed: "2026-05-11"
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html">AI-Powered Speech Analysis, Translation, & Insight Tool</a>, <a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a>, <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>.</p>
 </aside>
 <!-- lead-end -->
+
 Artificial Intelligence (AI) is drastically transforming the advertising landscape, offering unprecedented efficiency and effectiveness in ad campaigns. Amazon's introduction of [**Rufus ⧉**][00], a personal shopping assistant chatbot, alongside Meta's integration of AI across its platforms with conversational assistants and creative tools, exemplifies the forefront of this revolution. These advancements not only enhance the consumer experience but also offer new avenues for precise targeting and engagement, highlighting the pivotal role of AI in advertising's future.
 
 ## The Dawn of AI in Advertising

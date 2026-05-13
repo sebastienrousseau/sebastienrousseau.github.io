@@ -115,6 +115,7 @@ last_reviewed: "2026-05-11"
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>, <a href="https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html">ERC-20: The Ethereum Token Interface That Changed the World</a>.</p>
 </aside>
 <!-- lead-end -->
+
 ![A very tall building that has a lot of holes in it](https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp).class=\"img-fluid clearfix\"
 
 ## Insight

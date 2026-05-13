@@ -115,6 +115,7 @@ last_reviewed: "2026-05-11"
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</a>, <a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">Quantum Lattice Crypto: Bug in Chen's LWE Attack</a>, <a href="https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html">Qiskit & Quantum Fourier Transform for Credit Ratio Analysis</a>.</p>
 </aside>
 <!-- lead-end -->
+
 ## Insight
 
 In 2023, the intersection of **Artificial Intelligence (AI)** and **Quantum Computing (QC)** has profoundly impacted the **banking and financial industry**. These technologies have revolutionised the way financial institutions operate, significantly impacting payments, risk management, and cybersecurity.

@@ -123,6 +123,7 @@ last_reviewed: "2026-05-11"
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html">Generative AI in 2023: How It Works, Where It Lands</a>, <a href="https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</a>, <a href="https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html">Quantum Algorithm Challenges Lattice-Based Cryptography</a>.</p>
 </aside>
 <!-- lead-end -->
+
 ## Introduction
 
 The integration of natural language processing and image recognition has resulted in the development of Multimodal Large Language Models (MLLMs). In their paper, Apple introduces the MM1, a collection of multimodal AI models that combine vision and language comprehension. Through thorough experiments, the researchers examined the factors that contribute to the performance of these models, exploring various architectural choices and pre-training data combinations. The MM1 paper provides essential information about how MLLMs are structured and trained. It discusses the study's approach and crucial findings, showcasing their possible impact on the future of AI.

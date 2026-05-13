@@ -123,6 +123,7 @@ last_reviewed: "2026-05-11"
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>, <a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">AI Trends 2024: Insights and Predictions for the Future</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>.</p>
 </aside>
 <!-- lead-end -->
+
 ## Executive Summary
 
 This article delves into the work of [**Yilei Chen ⧉**][00], who has developed a `polynomial-time quantum algorithm` that could significantly impact the hardness of the **Learning With Errors (LWE)** mathematical problem, a fundamental challenge in lattice-based cryptography.

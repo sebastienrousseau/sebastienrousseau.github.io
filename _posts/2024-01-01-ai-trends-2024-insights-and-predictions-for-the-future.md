@@ -125,6 +125,7 @@ last_reviewed: "2026-05-11"
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>, <a href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html">Generative AI in 2023: How It Works, Where It Lands</a>, <a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a>.</p>
 </aside>
 <!-- lead-end -->
+
 As we enter the year 2024, AI redefines technology, society, and daily life. This era is not merely about technological evolution; it's a transformational journey where AI is emerging as a critical driver of strategic decision-making, societal reform, and scientific innovation.
 
 AI's journey to this pivotal point is marked by the convergence of big data, increased computing power, and breakthroughs in algorithms. This unique synergy has empowered AI to process and analyse data on an unprecedented scale, unlocking insights and possibilities that once seemed unattainable. From personalised medicine in healthcare, where AI analyses vast patient data for custom treatment plans, to environmental science, where AI models complex climate scenarios, the applications are as diverse as they are impactful.

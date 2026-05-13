@@ -123,6 +123,7 @@ last_reviewed: "2026-05-11"
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html">Google Gemma AI: Transforming Open-Source AI Development</a>.</p>
 </aside>
 <!-- lead-end -->
+
 [**OpenVoice ⧉**][00] is an innovative voice cloning technology developed by [**MIT ⧉**][03], [**Tsinghua University ⧉**][04], and [**MyShell ⧉**][01], a Canadian AI startup. It enables fast and precise voice synthesis with detailed control over voice characteristics. MyShell played a pivotal role in developing OpenVoice, which has been used millions of times as the voice-cloning backend for their platform. It stands out for its speed, precision, and adaptability.
 
 OpenVoice offers significant advantages over existing tools. It allows for flexible voice style control beyond tone and timbre. It also has zero-shot cross-lingual capabilities without extensive data for each language. OpenVoice's open-source nature makes it valuable in various sectors, including accessibility, entertainment, and customer service. It promises continuous improvements, solidifying its position as a leader in synthetic voice generation.

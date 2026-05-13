@@ -125,6 +125,7 @@ last_reviewed: "2026-05-11"
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>, <a href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html">Generative AI in 2023: How It Works, Where It Lands</a>, <a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html">Alien Studio: My Tech-to Art Journey in Photography</a>.</p>
 </aside>
 <!-- lead-end -->
+
 ## EU's AI Act: Shaping the Future of Global AI Regulation
 
 [**The European Union's Artificial Intelligence Act (AI Act) ⧉**][00] is a comprehensive regulatory framework designed to ensure ethical, transparent, and safe AI development and usage across the European Union. It introduces a risk-based approach to AI regulation, categorizing AI systems based on their potential impact on society and imposing strict requirements on high-risk applications. This legislation aims to protect fundamental rights and promote innovation, setting a precedent for global AI governance.
