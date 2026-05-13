@@ -716,6 +716,16 @@ def fix_xml_feed_urls(public: Path) -> int:
         if "<news:" in text.lower():
             text = _NEWS_URL_RE.sub(lambda m: _patch_block(m.group(0), title_index), text)
 
+        # Strip any residual <url>…</url> block whose <loc> still has the
+        # dev-artefact /.meta/ path — those entries come from Shokunin
+        # processing the nested _posts/fr/ directory and don't belong in
+        # the news-sitemap.
+        text = re.sub(
+            r'<url>\s*<loc>[^<]*\/\.meta\/[^<]*</loc>[\s\S]*?</url>\s*',
+            '',
+            text,
+        )
+
         # Top-of-feed cleanup: any residual localhost reference becomes the
         # production root. Done last so it doesn't shadow per-block matches.
         text = re.sub(
@@ -937,6 +947,7 @@ LABELS_EN: dict[str, str] = {
     "Estimated read time": "Estimated read time",
     "Link to": "Link to",
     "Table of contents": "Table of contents",
+    "Topics": "Topics",
 }
 LABELS_FR: dict[str, str] = {
     "Published": "Publié le",
@@ -950,6 +961,7 @@ LABELS_FR: dict[str, str] = {
     "Estimated read time": "Temps de lecture estimé",
     "Link to": "Lien vers",
     "Table of contents": "Table des matières",
+    "Topics": "Sujets",
 }
 
 
@@ -964,10 +976,16 @@ def slugify(s: str) -> str:
     return s.strip("-")[:80]
 
 
-def _fmt_date(iso_or_rfc: str) -> str:
-    """Render a date string as 'D Mon YYYY'. Accepts ISO 8601 ('2026-05-11'
-    or '2026-05-11T06:06:06+00:00') or RFC 822 ('Mon, 11 May 2026 …').
-    Returns the input unchanged if neither format matches."""
+_FR_MONTHS = {
+    1: "janv.", 2: "févr.", 3: "mars", 4: "avr.", 5: "mai", 6: "juin",
+    7: "juil.", 8: "août", 9: "sept.", 10: "oct.", 11: "nov.", 12: "déc.",
+}
+
+
+def _fmt_date(iso_or_rfc: str, french: bool = False) -> str:
+    """Render a date string as 'D Mon YYYY' (English) or 'D mois YYYY'
+    (French). Accepts ISO 8601 or RFC 822. Returns input unchanged on
+    parse failure."""
     iso_or_rfc = iso_or_rfc.strip()
     from datetime import datetime as _dt
     for fmt in (
@@ -978,24 +996,29 @@ def _fmt_date(iso_or_rfc: str) -> str:
         "%a, %d %b %Y %H:%M:%S %Z",
     ):
         try:
-            return _dt.strptime(iso_or_rfc, fmt).strftime("%-d %b %Y")
+            dt = _dt.strptime(iso_or_rfc, fmt)
         except ValueError:
             continue
+        if french:
+            return f"{dt.day} {_FR_MONTHS[dt.month]} {dt.year}"
+        return dt.strftime("%-d %b %Y")
     return iso_or_rfc
 
 
-def _render_tag_badges(keywords: list[str]) -> str:
+def _render_tag_badges(keywords: list[str], labels: dict[str, str]) -> str:
     if not keywords:
         return ""
     badges = "".join(
         f'<a href="/tags/index.html#h3-{slugify(k)}" class="article-tag" rel="tag">{k}</a>'
         for k in keywords
     )
-    return f'<nav class="article-tags" aria-label="Topics">{badges}</nav>'
+    aria = labels.get("Topics", "Topics")
+    return f'<nav class="article-tags" aria-label="{aria}">{badges}</nav>'
 
 
 def _render_meta_bar(date_pub: str, date_mod: str, word_count: int | None, labels: dict[str, str]) -> str:
     parts: list[str] = []
+    french = labels is LABELS_FR
     parts.append(
         f'<a href="{AUTHOR_URL}" class="article-author" rel="author">'
         f'<img alt="Portrait of {AUTHOR_NAME}" src="{AUTHOR_AVATAR}" '
@@ -1005,7 +1028,7 @@ def _render_meta_bar(date_pub: str, date_mod: str, word_count: int | None, label
     if date_pub:
         parts.append(
             f'<time datetime="{date_pub}" class="meta-pub">'
-            f'{labels["Published"]} {_fmt_date(date_pub)}</time>'
+            f'{labels["Published"]} {_fmt_date(date_pub, french)}</time>'
         )
     # Suppress "Updated" when the modification date is the same as or
     # earlier than the publication date — otherwise a post scheduled into
@@ -1013,7 +1036,7 @@ def _render_meta_bar(date_pub: str, date_mod: str, word_count: int | None, label
     if date_mod and date_mod[:10] > date_pub[:10]:
         parts.append(
             f'<time datetime="{date_mod}" class="meta-rev">'
-            f'{labels["Updated"]} {_fmt_date(date_mod)}</time>'
+            f'{labels["Updated"]} {_fmt_date(date_mod, french)}</time>'
         )
     if word_count:
         read_min = max(1, round(word_count / 220))
@@ -1043,8 +1066,9 @@ def inject_article_furniture(html: str) -> str:
     date_pub, date_mod = (dm.group(1), dm.group(2)) if dm else ("", "")
     wm = _WORDCOUNT_RE.search(html)
     word_count = int(wm.group(1)) if wm else None
-    badges = _render_tag_badges(keywords)
-    meta = _render_meta_bar(date_pub, date_mod, word_count, _labels(html))
+    labels = _labels(html)
+    badges = _render_tag_badges(keywords, labels)
+    meta = _render_meta_bar(date_pub, date_mod, word_count, labels)
     fragment = badges + meta
     if not fragment:
         return html

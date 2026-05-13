@@ -117,6 +117,154 @@ _BLOGPOSTING_LANG_RE = re.compile(r'("@type":"BlogPosting"[^}]*?"inLanguage":")[
 _BLOGPOSTING_URL_RE = re.compile(r'("@type":"BlogPosting"[^}]*?"url":")[^"]*(")')
 
 
+def _date_today() -> str:
+    from datetime import datetime as _dt
+    return _dt.now().strftime("%Y-%m-%d")
+
+
+# Comprehensive chrome-string translations. Applied to every French page
+# after the rendered English shell is forked. Each entry is a (regex,
+# replacement) pair — anchored to its HTML context so it can't match
+# the same English word inside article body content.
+CHROME_PATCHES: list[tuple[str, str]] = [
+    # Skip link
+    (r'>Skip to main content</a>', '>Aller au contenu principal</a>'),
+
+    # Top nav — toggle, theme, search, CTA, brand
+    (r'aria-label="Toggle navigation"', 'aria-label="Basculer la navigation"'),
+    (r'title="Toggle navigation"', 'title="Basculer la navigation"'),
+    (r'aria-label="Primary"', 'aria-label="Navigation principale"'),
+    (r'aria-label="Switch to dark theme"', 'aria-label="Activer le thème sombre"'),
+    (r'aria-label="Switch to light theme"', 'aria-label="Activer le thème clair"'),
+    (r'title="Switch theme"', 'title="Changer de thème"'),
+    (r'aria-label="Search \(Cmd or Ctrl \+ K\)"', 'aria-label="Rechercher (Cmd ou Ctrl + K)"'),
+    (r'title="Search \(⌘K\)"', 'title="Rechercher (⌘K)"'),
+    (r'aria-label="Get in touch"', 'aria-label="Me contacter"'),
+    (r'>Get in touch ›</a>', '>Me contacter ›</a>'),
+    (r'aria-label="Sebastien Rousseau home"', 'aria-label="Accueil de Sebastien Rousseau"'),
+
+    # Nav menu items
+    (r'<li><a href="/about/index\.html">About</a></li>',
+     '<li><a href="/about/index.html">À propos</a></li>'),
+    (r'<li><a href="/papers/index\.html">Papers</a></li>',
+     '<li><a href="/papers/index.html">Publications</a></li>'),
+    (r'<li><a href="/topics/index\.html">Topics</a></li>',
+     '<li><a href="/topics/index.html">Sujets</a></li>'),
+    (r'<li><a href="/projects/index\.html">Projects</a></li>',
+     '<li><a href="/projects/index.html">Projets</a></li>'),
+
+    # Back-to-top
+    (r'aria-label="Back to top"', 'aria-label="Retour en haut"'),
+
+    # Footer column titles
+    (r'<h2 class="ap-foot-title">Writing</h2>', '<h2 class="ap-foot-title">Écrits</h2>'),
+    (r'<h2 class="ap-foot-title">Work</h2>', '<h2 class="ap-foot-title">Activité</h2>'),
+    (r'<h2 class="ap-foot-title">Reach</h2>', '<h2 class="ap-foot-title">Réseaux</h2>'),
+
+    # Footer links — surgical, scoped by href
+    (r'<a href="/about/index\.html">About</a>', '<a href="/about/index.html">À propos</a>'),
+    (r'<a href="/made-with-static-site-generator/index\.html">Made with Static Site Generator</a>',
+     '<a href="/made-with-static-site-generator/index.html">Conçu avec Static Site Generator</a>'),
+    (r'<a href="/papers/index\.html">Papers</a>', '<a href="/papers/index.html">Publications</a>'),
+    (r'<a href="/tags/index\.html">Tags</a>', '<a href="/tags/index.html">Étiquettes</a>'),
+    (r'<a href="/projects/index\.html">Projects</a>', '<a href="/projects/index.html">Projets</a>'),
+
+    # Social section
+    (r'aria-label="Social links"', 'aria-label="Liens sociaux"'),
+    (r'aria-label="Sebastien Rousseau on ', 'aria-label="Sebastien Rousseau sur '),
+
+    # Footer legal links
+    (r'<a href="/accessibility/index\.html">Accessibility</a>',
+     '<a href="/accessibility/index.html">Accessibilité</a>'),
+    (r'<a href="/privacy/index\.html">Privacy</a>',
+     '<a href="/privacy/index.html">Confidentialité</a>'),
+    (r'<a href="/terms/index\.html">Terms</a>',
+     '<a href="/terms/index.html">Conditions</a>'),
+
+    # Search palette (Shokunin widget — rendered HTML)
+    (r'placeholder="Search documentation\.\.\."', 'placeholder="Rechercher dans la documentation..."'),
+    (r'aria-label="Search"(?!\s*\()', 'aria-label="Rechercher"'),
+    (r'<kbd>Esc</kbd>\s*close', '<kbd>Esc</kbd> fermer'),
+    (r'navigate</span>', 'naviguer</span>'),
+    (r'<kbd>Enter</kbd>\s*open', '<kbd>Entrée</kbd> ouvrir'),
+    # Visible "Search" label inside the in-nav button
+    (r'<span>Search</span>', '<span>Rechercher</span>'),
+
+    # Feed link titles in <head>
+    (r'title="Atom Feed"', 'title="Flux Atom"'),
+    (r'title="RSS Feed"', 'title="Flux RSS"'),
+
+    # Bottom finale CTA aside (homepage only — defensive)
+    (r'<p class="feat-eyebrow">Get in touch</p>', '<p class="feat-eyebrow">Me contacter</p>'),
+    (r'>Start a conversation</a>', '>Démarrer une conversation</a>'),
+
+    # Footer 2nd-block aside on listing pages
+    (r'<a href="/articles/index\.html">Read latest research</a>',
+     '<a href="/articles/index.html">Lire les recherches récentes</a>'),
+    (r'<a href="/contact/index\.html">Get in touch</a>',
+     '<a href="/contact/index.html">Me contacter</a>'),
+]
+
+_CHROME_PATCHES_COMPILED: list[tuple[re.Pattern[str], str]] = [
+    (re.compile(p), r) for p, r in CHROME_PATCHES
+]
+
+
+def translate_chrome(html: str) -> str:
+    """Apply all CHROME_PATCHES to localize nav / footer / search / social
+    strings on a French page. Anchored regexes — no false positives in
+    article body."""
+    for pat, repl in _CHROME_PATCHES_COMPILED:
+        html = pat.sub(repl, html)
+    return html
+
+
+# French author-card content (static — replaces the English author-card
+# that post_enrich.py baked into the rendered shell). Synced with the
+# English version in scripts/post_enrich.py.
+def _french_author_card() -> str:
+    return (
+        '<aside class="author-card" aria-label="À propos de l\'auteur">'
+        '<img alt="Portrait de Sebastien Rousseau" '
+        'src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" '
+        'width="64" height="64" loading="lazy" decoding="async" />'
+        '<span class="author-card-body">'
+        '<strong class="author-card-name">'
+        '<a href="/about/index.html">Sebastien Rousseau</a></strong>'
+        '<span class="author-card-bio">Technologue senior dans la banque, '
+        'j\'écris sur l\'IA appliquée, la migration ISO 20022, la cryptographie '
+        'post-quantique pour les services financiers, et la transformation '
+        'structurelle des paiements wholesale.</span>'
+        '<span class="author-credentials">'
+        'Plus de 20 ans d\'expérience chez HSBC Commercial &amp; Investment Bank, '
+        'PayPal, Barclays, Shazam, AKQA, Virgin Group. '
+        '<a href="/about/index.html">Profil complet</a> &middot; '
+        '<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; '
+        '<a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a>'
+        '</span></span></aside>'
+    )
+
+
+def _french_lead(description: str) -> str:
+    if not description:
+        return ""
+    return (
+        '<aside class="post-lead" aria-label="Résumé de l\'article">'
+        f'<p class="post-lead-tldr"><strong>TL;DR.</strong> {_html.escape(description)}</p>'
+        '</aside>'
+    )
+
+
+def _french_body(body_html: str, description: str) -> str:
+    today = _date_today()
+    lead = _french_lead(description)
+    review = (
+        f'<p class="post-reviewed">Dernière révision '
+        f'<time datetime="{today}">{today}</time>.</p>'
+    )
+    return lead + body_html + _french_author_card() + review
+
+
 def _swap_breadcrumb(html: str, slug: str, title: str) -> str:
     """Patch the BreadcrumbList JSON-LD on the page to point at /fr/{slug}/."""
     def fix(m: re.Match[str]) -> str:
@@ -178,11 +326,16 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
         count=1,
     )
 
-    # main body
+    # main body — built fresh in French (TL;DR + body + author-card + reviewed)
+    fr_body = _french_body(body_html, description)
+
     def replace_main(m: re.Match[str]) -> str:
-        return m.group(1) + body_html + m.group(3)
+        return m.group(1) + fr_body + m.group(3)
 
     shell = _MAIN_BODY_RE.sub(replace_main, shell, count=1)
+
+    # Chrome translation — nav, footer, search palette, social labels, etc.
+    shell = translate_chrome(shell)
 
     # JSON-LD BlogPosting tweaks
     shell = _BLOGPOSTING_HEADLINE_RE.sub(rf'\1{_html.escape(title, quote=True)}\2', shell, count=1)
@@ -255,6 +408,7 @@ def render_hub(entries: list[dict[str, str]]) -> str | None:
     shell = _OG_URL_RE.sub(r'\1https://sebastienrousseau.com/fr/\2', shell, count=1)
     shell = _OG_LOCALE_RE.sub(r'\1fr_FR\2', shell, count=1)
     shell = _CANONICAL_RE.sub(r'\1https://sebastienrousseau.com/fr/\2', shell, count=1)
+    shell = translate_chrome(shell)
     return shell
 
 
