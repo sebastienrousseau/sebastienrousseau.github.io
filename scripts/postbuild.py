@@ -1526,6 +1526,29 @@ def _translated_slugs() -> tuple[set[str], set[str]]:
     return en_with_fr, fr_with_en
 
 
+# Top-level EN static pages with FR mirrors. Synced with
+# scripts/build_translations.py::STATIC_SLUG_FR — kept here as a flat
+# dict for postbuild's hreflang injector.
+_STATIC_EN_TO_FR: dict[str, str] = {
+    "about": "a-propos",
+    "papers": "publications",
+    "projects": "projets",
+    "topics": "sujets",
+    "tags": "etiquettes",
+    "contact": "contact",
+    "accessibility": "accessibilite",
+    "privacy": "confidentialite",
+    "terms": "conditions",
+    "playlists": "playlists",
+    "made-with-static-site-generator": "concu-avec-static-site-generator",
+    "made-with-shokunin": "concu-avec-shokunin",
+    "404": "404",
+    "offline": "hors-ligne",
+    "thanks": "merci",
+    "articles": "articles",
+}
+
+
 def inject_hreflang(
     html: str,
     slug: str,
@@ -1533,21 +1556,32 @@ def inject_hreflang(
     en_with_fr: set[str],
     fr_with_en: set[str],
 ) -> str:
-    """Inject reciprocal hreflang links so Google + crawlers pair the two
-    language versions. Translates EN ↔ FR slug via :mod:`_fr_slugs`.
+    """Inject reciprocal hreflang links so Google + crawlers (and the
+    language-selector JS) pair the two language versions. Translates
+    EN ↔ FR slug via :mod:`_fr_slugs` for articles, and via
+    :data:`_STATIC_EN_TO_FR` for top-level static pages.
     """
     if lang == "fr":
-        if slug not in fr_with_en:
+        if slug in fr_with_en:
+            en = _en_slug(slug)
+            fr = slug
+            en_url = f"https://sebastienrousseau.com/{en}/"
+            fr_url = f"https://sebastienrousseau.com/fr/{fr}/"
+        else:
+            # Static page under /fr/<fr-slug>/ — already wired by the
+            # FR renderer in build_translations.py.
             return html
-        en = _en_slug(slug)
-        fr = slug
     else:
-        if slug not in en_with_fr:
+        if slug in en_with_fr:
+            en = slug
+            fr = _fr_slug(slug)
+            en_url = f"https://sebastienrousseau.com/{en}/"
+            fr_url = f"https://sebastienrousseau.com/fr/{fr}/"
+        elif slug in _STATIC_EN_TO_FR:
+            en_url = f"https://sebastienrousseau.com/{slug}/"
+            fr_url = f"https://sebastienrousseau.com/fr/{_STATIC_EN_TO_FR[slug]}/"
+        else:
             return html
-        en = slug
-        fr = _fr_slug(slug)
-    en_url = f"https://sebastienrousseau.com/{en}/"
-    fr_url = f"https://sebastienrousseau.com/fr/{fr}/"
     # Strip any existing hreflang link tags so we don't duplicate.
     html = _HREFLANG_RE.sub('', html)
     links = (
@@ -1631,18 +1665,29 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
         )
         if patched_nav != patched_src:
             nav_patched += 1
-        # Reciprocal hreflang for paired English/French pages. Slug is the
-        # parent dir name for English (/foo/) and grandparent for French
-        # (/fr/foo/) — strip the "fr/" prefix when matching.
+        # Reciprocal hreflang for paired English/French pages.
         rel_slug = page.parent.name
         is_fr = page.parent.parent.name == "fr"
-        patched_hl = inject_hreflang(
-            patched_nav,
-            rel_slug,
-            "fr" if is_fr else "en",
-            en_with_fr,
-            fr_with_en,
-        )
+        # Special case: the site root /index.html. Its parent dir is
+        # "public" — we treat it as the home and emit hreflang to /fr/.
+        if page.parent.name == "public" or page.name == "index.html" and page.parent == PUBLIC:
+            _head_re = re.compile(r'</head>', re.IGNORECASE)
+            _hf_re = re.compile(r'<link rel="alternate"[^>]+hreflang="[^"]+"[^/]*/>', re.IGNORECASE)
+            cleaned = _hf_re.sub('', patched_nav)
+            home_links = (
+                '<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/" />'
+                '<link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/" />'
+                '<link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/" />'
+            )
+            patched_hl = _head_re.sub(home_links + '</head>', cleaned, count=1)
+        else:
+            patched_hl = inject_hreflang(
+                patched_nav,
+                rel_slug,
+                "fr" if is_fr else "en",
+                en_with_fr,
+                fr_with_en,
+            )
         if patched_hl != patched_nav:
             hreflang_patched += 1
         patched2 = inject_jsonld_hashes(patched_hl)

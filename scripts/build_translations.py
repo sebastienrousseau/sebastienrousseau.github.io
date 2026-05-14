@@ -1351,6 +1351,18 @@ def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
     shell = _OG_LOCALE_RE.sub(r'\1fr_FR\2', shell, count=1)
     shell = _CANONICAL_RE.sub(r'\1https://sebastienrousseau.com/fr/articles/\2', shell, count=1)
     shell = translate_chrome(shell)
+    # Reciprocal hreflang for the language selector.
+    shell = re.sub(
+        r'<link rel="alternate"[^>]+hreflang="[^"]+"[^>]*/>',
+        '',
+        shell,
+    )
+    hreflang_block = (
+        f'<link rel="alternate" hreflang="en" href="{BASE}/articles/" />'
+        f'<link rel="alternate" hreflang="fr" href="{BASE}/fr/articles/" />'
+        f'<link rel="alternate" hreflang="x-default" href="{BASE}/articles/" />'
+    )
+    shell = shell.replace('</head>', hreflang_block + '</head>', 1)
     return shell
 
 
@@ -1420,8 +1432,8 @@ HOME_FR_PATCHES: list[tuple[str, str]] = [
      ">Livre blanc industriel pour l'Emerging Payments Association Asia. La menace structurelle que l'informatique quantique fait peser sur l'infrastructure de paiement, et la nécessité d'une action coordonnée dès maintenant.<"),
     (r'>Why the payments industry must act now\.<',
      ">Pourquoi le secteur des paiements doit agir maintenant.<"),
-    (r'>Regulators are treating harvest-now-decrypt-later as a credible present risk\.[\s\S]{0,400}',
-     ">Les régulateurs traitent désormais « récolter maintenant, déchiffrer plus tard » comme un risque présent crédible. Ce livre blanc expose le déficit cryptographique, les voies de migration et les implications pour les rails de paiement temps réel et transfrontaliers.</p>"),
+    (r'>Regulators are treating harvest-now-decrypt-later as a credible present risk\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\.</p>',
+     ">Les régulateurs traitent désormais « récolter maintenant, déchiffrer plus tard » comme un risque présent crédible. Ce livre blanc expose la menace structurelle et la nécessité d'une action coordonnée sur les rails de paiement wholesale.</p>"),
     # "Latest From the desk" section
     (r'>Latest<', '>Récent<'),
     (r'>From the desk\.<', '>Depuis le bureau.<'),
@@ -1631,6 +1643,19 @@ def render_home() -> str | None:
         shell,
     )
 
+    # Reciprocal hreflang so the language selector finds the EN home.
+    shell = re.sub(
+        r'<link rel="alternate"[^>]+hreflang="[^"]+"[^>]*/>',
+        '',
+        shell,
+    )
+    hreflang_block = (
+        f'<link rel="alternate" hreflang="en" href="{BASE}/" />'
+        f'<link rel="alternate" hreflang="fr" href="{url_fr}" />'
+        f'<link rel="alternate" hreflang="x-default" href="{BASE}/" />'
+    )
+    shell = shell.replace('</head>', hreflang_block + '</head>', 1)
+
     return shell
 
 
@@ -1647,76 +1672,91 @@ def render_home() -> str | None:
 STATIC_PAGES_FR: dict[str, dict[str, str]] = {
     "about": {
         "title": "À propos — Sebastien Rousseau",
+        "subtitle": "Façonner l'avenir de la banque et des services financiers par l'intégration stratégique de l'intelligence artificielle, de la cryptographie post-quantique et de la technologie blockchain.",
         "description": "Sebastien Rousseau, technologue senior dans la banque : IA appliquée, migration ISO 20022, cryptographie post-quantique, transformation structurelle des paiements wholesale.",
         "keywords": "Sebastien Rousseau, biographie, banque, paiements, IA, ISO 20022, cryptographie post-quantique, HSBC, PayPal, Barclays",
     },
     "papers": {
         "title": "Publications — Sebastien Rousseau",
+        "subtitle": "Livres blancs industriels et recherche appliquée pour les dirigeants seniors en paiements et sécurité.",
         "description": "Articles, rapports et publications de Sebastien Rousseau sur l'IA, les paiements ISO 20022 et la cryptographie post-quantique.",
         "keywords": "publications, articles, rapports, recherche, ISO 20022, IA, cryptographie post-quantique",
     },
     "projects": {
         "title": "Projets — Sebastien Rousseau",
+        "subtitle": "Projets open source en Python, Rust et JavaScript pour l'avenir de la finance.",
         "description": "Portfolio de bibliothèques open source maintenues par Sebastien Rousseau pour les paiements, le règlement transfrontalier et la cryptographie résistante au quantique.",
         "keywords": "projets open source, Python, Rust, paiements, ISO 20022, cryptographie post-quantique",
     },
     "topics": {
         "title": "Sujets — Sebastien Rousseau",
+        "subtitle": "Articles sur l'IA, la cryptographie post-quantique, ISO 20022 et l'avenir des paiements.",
         "description": "Explorez les analyses par thématique : IA appliquée, paiements ISO 20022, cryptographie post-quantique, et transformation des paiements wholesale.",
         "keywords": "sujets, thématiques, IA, paiements, ISO 20022, cryptographie post-quantique",
     },
     "tags": {
         "title": "Étiquettes — Sebastien Rousseau",
+        "subtitle": "Parcourez le site par thème : IA, paiements, cryptographie post-quantique, open source.",
         "description": "Parcourez les articles par étiquette : IA, ISO 20022, blockchain, cryptographie post-quantique et bien plus.",
         "keywords": "étiquettes, tags, navigation par sujet",
     },
     "contact": {
         "title": "Me contacter — Sebastien Rousseau",
+        "subtitle": "Une question ou un besoin de conseil ? Écrivez-moi.",
         "description": "Entrez en contact avec Sebastien Rousseau pour les conseils en transformation des paiements, la migration ISO 20022 ou la stratégie post-quantique.",
         "keywords": "contact, conseil, paiements, ISO 20022, cryptographie post-quantique",
     },
     "accessibility": {
         "title": "Accessibilité — Sebastien Rousseau",
+        "subtitle": "Engagé pour l'accessibilité numérique des personnes en situation de handicap.",
         "description": "Déclaration d'accessibilité : conformité WCAG 2.2 AA, principes inclusifs, retour d'expérience et coordonnées de signalement.",
         "keywords": "accessibilité, WCAG, conformité, inclusion numérique, audit",
     },
     "privacy": {
         "title": "Politique de confidentialité — Sebastien Rousseau",
+        "subtitle": "Votre vie privée nous importe.",
         "description": "Comment ce site collecte, utilise et protège vos données. Mesure d'audience anonyme, cookies, hébergement et droits RGPD.",
         "keywords": "vie privée, RGPD, cookies, données personnelles, analytics",
     },
     "terms": {
         "title": "Conditions d'utilisation — Sebastien Rousseau",
+        "subtitle": "Conditions générales d'utilisation du site.",
         "description": "Conditions générales d'utilisation du site sebastienrousseau.com : licence du contenu, restrictions, marques et juridiction.",
         "keywords": "conditions, mentions légales, licence, copyright",
     },
     "made-with-static-site-generator": {
         "title": "Conçu avec Static Site Generator — Sebastien Rousseau",
+        "subtitle": "Découvrez comment utiliser le générateur de sites statiques de nouvelle génération.",
         "description": "Ce site est généré avec Shokunin, un générateur de sites statiques rapide écrit en Rust.",
         "keywords": "Shokunin, générateur de sites statiques, Rust, performance",
     },
     "made-with-shokunin": {
         "title": "Conçu avec Shokunin — Sebastien Rousseau",
+        "subtitle": "Découvrez comment utiliser le générateur de sites statiques de nouvelle génération.",
         "description": "Ce site est conçu avec Shokunin, un générateur de sites statiques en Rust optimisé pour la performance et le SEO.",
         "keywords": "Shokunin, SSG, Rust, performance, SEO",
     },
     "playlists": {
         "title": "Playlists — Sebastien Rousseau",
+        "subtitle": "Playlists Spotify sélectionnées pour le deep work, la créativité et l'esprit d'ingénieur.",
         "description": "Sélection musicale et auditive de Sebastien Rousseau.",
         "keywords": "playlists, musique",
     },
     "404": {
         "title": "Page introuvable — Sebastien Rousseau",
+        "subtitle": "Désolé, cette page est introuvable.",
         "description": "La page demandée est introuvable. Retournez à l'accueil ou utilisez la recherche.",
         "keywords": "404, page introuvable",
     },
     "offline": {
         "title": "Hors ligne — Sebastien Rousseau",
+        "subtitle": "Vérifiez votre connexion et réessayez.",
         "description": "Vous êtes hors ligne. Reconnectez-vous pour accéder au contenu.",
         "keywords": "hors ligne, PWA",
     },
     "thanks": {
         "title": "Merci — Sebastien Rousseau",
+        "subtitle": "Merci de m'avoir contacté !",
         "description": "Merci de votre message. Je reviendrai vers vous très bientôt.",
         "keywords": "merci",
     },
@@ -2490,6 +2530,7 @@ def render_static_translation(slug: str) -> str | None:
 
     title = cfg["title"]
     description = cfg["description"]
+    subtitle = cfg.get("subtitle", description)
     keywords = cfg.get("keywords", "")
     fr_slug_str = STATIC_SLUG_FR.get(slug, slug)
     url_fr = f"{BASE}/fr/{fr_slug_str}/"
@@ -2506,6 +2547,13 @@ def render_static_translation(slug: str) -> str | None:
     shell = _TW_TITLE_RE.sub(rf'\1{_html.escape(title, quote=True)}\2', shell, count=1)
     shell = _TW_DESC_RE.sub(rf'\1{_html.escape(description, quote=True)}\2', shell, count=1)
     shell = _CANONICAL_RE.sub(rf'\1{url_fr}\2', shell, count=1)
+    # Hero subtitle (<p class="sub">…</p>) is per-page — replace it.
+    shell = re.sub(
+        r'<p class="sub">[^<]*</p>',
+        f'<p class="sub">{_html.escape(subtitle)}</p>',
+        shell,
+        count=1,
+    )
 
     # Rewrite EN article URLs inside the body to FR counterparts.
     shell = rewrite_en_urls(shell)
@@ -2607,6 +2655,23 @@ def render_static_translation(slug: str) -> str | None:
         patch_jsonld,
         shell,
     )
+
+    # Reciprocal hreflang — strip stale links and emit fresh ones so the
+    # language selector's JS resolves 🇬🇧 English to the EN counterpart.
+    # Must run AFTER translate_chrome (which calls rewrite_static_links
+    # and would rewrite an EN absolute URL → /fr/<slug>/).
+    shell = re.sub(
+        r'<link rel="alternate"[^>]+hreflang="[^"]+"[^>]*/>',
+        '',
+        shell,
+    )
+    en_url = f"{BASE}/{slug}/"
+    hreflang_block = (
+        f'<link rel="alternate" hreflang="en" href="{en_url}" />'
+        f'<link rel="alternate" hreflang="fr" href="{url_fr}" />'
+        f'<link rel="alternate" hreflang="x-default" href="{en_url}" />'
+    )
+    shell = shell.replace('</head>', hreflang_block + '</head>', 1)
 
     return shell
 
@@ -2814,6 +2879,19 @@ def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:
     shell = translate_chrome(shell)
     shell = rewrite_fr_link_titles(shell)
     shell = rewrite_newsroom_card_titles(shell)
+    # Reciprocal hreflang
+    shell = re.sub(
+        r'<link rel="alternate"[^>]+hreflang="[^"]+"[^>]*/>',
+        '',
+        shell,
+    )
+    en_url = f"{BASE}/topics/{topic_slug}/"
+    hreflang_block = (
+        f'<link rel="alternate" hreflang="en" href="{en_url}" />'
+        f'<link rel="alternate" hreflang="fr" href="{url_fr}" />'
+        f'<link rel="alternate" hreflang="x-default" href="{en_url}" />'
+    )
+    shell = shell.replace('</head>', hreflang_block + '</head>', 1)
     # Feed links
     shell = re.sub(
         r'href="(?:https?://[^/"]+)?/atom\.xml"',
