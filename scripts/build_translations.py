@@ -202,6 +202,10 @@ CHROME_PATCHES: list[tuple[str, str]] = [
     (r'aria-label="Social links"', 'aria-label="Liens sociaux"'),
     (r'aria-label="Sebastien Rousseau on ', 'aria-label="Sebastien Rousseau sur '),
 
+    # Footer copyright — full French translation
+    (r'© Copyright 2007 - 2026 - Sebastien Rousseau\. All rights reserved\.',
+     '© Copyright 2007 - 2026 - Sebastien Rousseau. Tous droits réservés.'),
+
     # Footer legal links — route to /fr/ siblings
     (r'<a href="/accessibility/index\.html">Accessibility</a>',
      '<a href="/fr/accessibility/index.html">Accessibilité</a>'),

@@ -10,7 +10,7 @@ banner: "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
-copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
+copyright: "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "May 18, 2026"
 description: "Agentic AI has crossed from pilot into production across global banking. 70% of institutions are using it to some degree; only one in five has a mature governance model. Meanwhile, autonomous adversaries are operating at machine speed, the legacy COBOL estate the new systems must interoperate with was written for the batch-processing assumptions of the 1960s, and the EU AI Act's August 2026 high-risk deadline is twelve weeks away. This is the engineering and governance position a bank needs to hold."
 format-detection: "telephone=no"

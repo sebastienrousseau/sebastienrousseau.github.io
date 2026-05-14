@@ -157,7 +157,7 @@ def render_rss(entries: list[dict[str, object]]) -> str:
     parts.append(f'    <atom:link href="{BASE}/fr/rss.xml" rel="self" type="application/rss+xml"/>')
     parts.append("    <language>fr-FR</language>")
     parts.append(f"    <lastBuildDate>{rfc822(today)}</lastBuildDate>")
-    parts.append("    <copyright>© Copyright 2024 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>")
+    parts.append("    <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tous droits réservés.</copyright>")
     for e in entries:
         parts.append("    <item>")
         parts.append(f"      <title>{xml_escape(e['title'])}</title>")  # type: ignore[arg-type]
