@@ -58,10 +58,15 @@ jobs:
           git add _data/gh-stats.json
           git commit -m "chore(stats): refresh gh-stats.json [skip ci]"
           git push -f --set-upstream origin "$BR"
-          # If a PR already exists on this branch, leave it; otherwise create one.
+          # Try to open a PR. This requires Settings → Actions → General →
+          # "Allow GitHub Actions to create and approve pull requests" to
+          # be enabled. If it's off, the branch is still pushed and the
+          # repo owner can open the PR manually — we don't want to fail
+          # the whole workflow over that.
           if ! gh pr view "$BR" >/dev/null 2>&1; then
             gh pr create \
               --base main --head "$BR" \
               --title "chore(stats): nightly gh-stats refresh" \
-              --body "Automated refresh of \`_data/gh-stats.json\` from GitHub API. Safe to auto-merge."
+              --body "Automated refresh of \`_data/gh-stats.json\` from GitHub API. Safe to auto-merge." \
+              || echo "::warning::PR creation blocked; branch ${BR} pushed for manual PR"
           fi
