@@ -1874,6 +1874,36 @@ SPECULATION_RULES_BLOCK = (
 )
 
 
+_BODY_LINK_STYLESHEET_RE = re.compile(
+    r'<link\b[^>]*\brel=(?:"stylesheet"|stylesheet)[^>]*>',
+    re.IGNORECASE,
+)
+_BODY_END_RE = re.compile(r'</head>', re.IGNORECASE)
+
+
+def hoist_body_link_stylesheets(html: str) -> tuple[str, int]:
+    """SSG's inline search widget renders ``<link rel=stylesheet>`` *inside*
+    ``<body>`` next to ``#ssg-search-widget``. That's an HTML5 spec violation
+    (link in body) and pa11y AAA flags it on every page that ships the widget.
+    Hoist any in-body stylesheet ``<link>`` up into ``<head>`` so the document
+    parses cleanly."""
+    head_end_m = _BODY_END_RE.search(html)
+    if not head_end_m:
+        return html, 0
+    head_end = head_end_m.start()
+    head, body = html[:head_end], html[head_end:]
+    matches = list(_BODY_LINK_STYLESHEET_RE.finditer(body))
+    if not matches:
+        return html, 0
+    # Strip from body in reverse so offsets stay valid; collect for hoisting.
+    extracted: list[str] = []
+    new_body = body
+    for m in reversed(matches):
+        extracted.insert(0, m.group(0))
+        new_body = new_body[:m.start()] + new_body[m.end():]
+    return head + "".join(extracted) + new_body, len(extracted)
+
+
 def inject_speculation_rules(html: str) -> str:
     """Inject the Speculation Rules API block before </head>. Idempotent."""
     if 'type="speculationrules"' in html:
@@ -2177,6 +2207,7 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
     og_patched = 0
     img_dims_patched = 0
     howto_patched = 0
+    link_hoisted = 0
     wc_patched = 0
     about_patched = 0
     furniture_patched = 0
@@ -2276,6 +2307,10 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
         patched_hl = inject_speculation_rules(patched_hl)
         # Live GitHub stats on project / home cards.
         patched_hl = inject_github_stats(patched_hl, gh_stats)
+        # Hoist any <link rel=stylesheet> SSG injected inside <body> back
+        # into <head> so pa11y AAA stops flagging "link in body".
+        patched_hl, n_hoisted = hoist_body_link_stylesheets(patched_hl)
+        link_hoisted += n_hoisted
         patched2 = inject_jsonld_hashes(patched_hl)
         if patched2 != patched_nav:
             csp_patched += 1

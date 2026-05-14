@@ -248,6 +248,7 @@ def _build_topic_body(title: str, lede: str, cards: list[str], slug: str) -> str
         f'<h1>{html.escape(title)}</h1>'
         f'<p class="topic-lede">{html.escape(lede)}</p>'
         '</header>'
+        '<h2 class="visually-hidden">Articles in this topic</h2>'
         '<div class="newsroom-grid">' + "".join(cards) + '</div>'
         '</section>'
     )
@@ -378,6 +379,7 @@ def render_hub(shell: str) -> tuple[str, str]:
         '<h1>Topics</h1>'
         '<p class="topic-lede">Curated topic clusters — pick a thread and follow it through the archive.</p>'
         '</header>'
+        '<h2 class="visually-hidden">All topics</h2>'
         '<div class="newsroom-grid">' + "".join(cards) + '</div>'
         '</section>'
     )
