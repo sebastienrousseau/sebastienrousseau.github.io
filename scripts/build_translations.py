@@ -150,50 +150,52 @@ CHROME_PATCHES: list[tuple[str, str]] = [
     (r'aria-label="Sebastien Rousseau home"', 'aria-label="Accueil de Sebastien Rousseau"'),
 
     # Nav menu items — keep visitors inside /fr/ by pointing every
-    # nav link to the localised page under /fr/.
-    (r'<li><a href="/about/index\.html">About</a></li>',
+    # nav link to the localised page under /fr/. The minifier strips
+    # quotes from href attributes on the home shell, so the regex
+    # accepts both quoted and unquoted forms via `"?`.
+    (r'<li><a href="?/about/index\.html"?>About</a></li>',
      '<li><a href="/fr/about/index.html">À propos</a></li>'),
-    (r'<li><a href="/papers/index\.html">Papers</a></li>',
+    (r'<li><a href="?/papers/index\.html"?>Papers</a></li>',
      '<li><a href="/fr/papers/index.html">Publications</a></li>'),
-    (r'<li><a href="/topics/index\.html">Topics</a></li>',
+    (r'<li><a href="?/topics/index\.html"?>Topics</a></li>',
      '<li><a href="/fr/topics/index.html">Sujets</a></li>'),
-    (r'<li><a href="/projects/index\.html">Projects</a></li>',
+    (r'<li><a href="?/projects/index\.html"?>Projects</a></li>',
      '<li><a href="/fr/projects/index.html">Projets</a></li>'),
-    (r'<li><a href="/articles/index\.html">Articles</a></li>',
+    (r'<li><a href="?/articles/index\.html"?>Articles</a></li>',
      '<li><a href="/fr/articles/index.html">Articles</a></li>'),
-    (r'<li><a href="/contact/index\.html">Contact</a></li>',
+    (r'<li><a href="?/contact/index\.html"?>Contact</a></li>',
      '<li><a href="/fr/contact/index.html">Contact</a></li>'),
     # Brand / home link in the top nav — point FR pages at /fr/, not /.
-    (r'<a class="ap-brand" href="/index\.html"',
+    (r'<a class="?ap-brand"? href="?/index\.html"?',
      '<a class="ap-brand" href="/fr/index.html"'),
-    (r'<li><a href="/playlists/index\.html">Playlists</a></li>',
+    (r'<li><a href="?/playlists/index\.html"?>Playlists</a></li>',
      '<li><a href="/fr/playlists/index.html">Playlists</a></li>'),
 
     # Back-to-top
     (r'aria-label="Back to top"', 'aria-label="Retour en haut"'),
 
-    # Footer column titles
-    (r'<h2 class="ap-foot-title">Writing</h2>', '<h2 class="ap-foot-title">Écrits</h2>'),
-    (r'<h2 class="ap-foot-title">Work</h2>', '<h2 class="ap-foot-title">Activité</h2>'),
-    (r'<h2 class="ap-foot-title">Reach</h2>', '<h2 class="ap-foot-title">Réseaux</h2>'),
+    # Footer column titles (class attribute may be quoted or not)
+    (r'<h2 class="?ap-foot-title"?>Writing</h2>', '<h2 class="ap-foot-title">Écrits</h2>'),
+    (r'<h2 class="?ap-foot-title"?>Work</h2>', '<h2 class="ap-foot-title">Activité</h2>'),
+    (r'<h2 class="?ap-foot-title"?>Reach</h2>', '<h2 class="ap-foot-title">Réseaux</h2>'),
 
     # Footer links — surgical, scoped by href. Point at /fr/ siblings so
-    # visitors stay in the French edition.
-    (r'<a href="/about/index\.html">About</a>',
+    # visitors stay in the French edition. Quote-tolerant.
+    (r'<a href="?/about/index\.html"?>About</a>',
      '<a href="/fr/about/index.html">À propos</a>'),
-    (r'<a href="/made-with-static-site-generator/index\.html">Made with Static Site Generator</a>',
+    (r'<a href="?/made-with-static-site-generator/index\.html"?>Made with Static Site Generator</a>',
      '<a href="/fr/made-with-static-site-generator/index.html">Conçu avec Static Site Generator</a>'),
-    (r'<a href="/papers/index\.html">Papers</a>',
+    (r'<a href="?/papers/index\.html"?>Papers</a>',
      '<a href="/fr/papers/index.html">Publications</a>'),
-    (r'<a href="/tags/index\.html">Tags</a>',
+    (r'<a href="?/tags/index\.html"?>Tags</a>',
      '<a href="/fr/tags/index.html">Étiquettes</a>'),
-    (r'<a href="/projects/index\.html">Projects</a>',
+    (r'<a href="?/projects/index\.html"?>Projects</a>',
      '<a href="/fr/projects/index.html">Projets</a>'),
-    (r'<a href="/playlists/index\.html">Playlists</a>',
+    (r'<a href="?/playlists/index\.html"?>Playlists</a>',
      '<a href="/fr/playlists/index.html">Playlists</a>'),
-    (r'<a href="/contact/index\.html">Contact</a>',
+    (r'<a href="?/contact/index\.html"?>Contact</a>',
      '<a href="/fr/contact/index.html">Contact</a>'),
-    (r'<a href="/articles/index\.html">Articles</a>',
+    (r'<a href="?/articles/index\.html"?>Articles</a>',
      '<a href="/fr/articles/index.html">Articles</a>'),
 
     # Social section
@@ -335,25 +337,26 @@ _STATIC_FR_PAGES = (
     "404", "offline", "thanks",
 )
 _STATIC_LINK_RE = re.compile(
-    r'(href=")(?:https?://sebastienrousseau\.com)?/('
+    r'(href=)(["\']?)(?:https?://sebastienrousseau\.com)?/('
     + "|".join(_STATIC_FR_PAGES)
-    + r')(/(?:index\.html)?)?(")',
+    + r')(/(?:index\.html)?)?\2(?=[\s>])',
 )
 _TOPIC_SUBPAGE_RE = re.compile(
-    r'(href=")(?:https?://sebastienrousseau\.com)?/topics/([a-z0-9-]+)(/(?:index\.html)?)(")',
+    r'(href=)(["\']?)(?:https?://sebastienrousseau\.com)?/topics/([a-z0-9-]+)(/(?:index\.html)?)\2(?=[\s>])',
 )
 _ARTICLES_LINK_RE = re.compile(
-    r'(href=")(?:https?://sebastienrousseau\.com)?/articles(/(?:index\.html)?)?(")',
+    r'(href=)(["\']?)(?:https?://sebastienrousseau\.com)?/articles(/(?:index\.html)?)?\2(?=[\s>])',
 )
 
 
 def rewrite_static_links(html: str) -> str:
     """Rewrite every internal anchor on a FR page that still points at a
     top-level EN static page (/about/, /papers/, …) so it lands on the
-    FR mirror under /fr/. ``/articles/`` redirects to ``/fr/articles/``."""
-    html = _STATIC_LINK_RE.sub(r'\1/fr/\2/\4', html)
-    html = _TOPIC_SUBPAGE_RE.sub(r'\1/fr/topics/\2\3\4', html)
-    html = _ARTICLES_LINK_RE.sub(r'\1/fr/articles/\3', html)
+    FR mirror under /fr/. ``/articles/`` redirects to ``/fr/articles/``.
+    Handles both quoted and unquoted href attributes."""
+    html = _STATIC_LINK_RE.sub(r'\1"/fr/\3/"', html)
+    html = _TOPIC_SUBPAGE_RE.sub(r'\1"/fr/topics/\3\4"', html)
+    html = _ARTICLES_LINK_RE.sub(r'\1"/fr/articles/"', html)
     return html
 
 
@@ -1388,11 +1391,63 @@ HOME_FR_PATCHES: list[tuple[str, str]] = [
      "<p class=newsroom-excerpt>À partir de novembre 2026, SWIFT CBPR+ rejette les adresses postales non structurées dans les messages de paiement transfrontaliers. À six mois, 65 % des messages pacs.008 livrent encore des adresses non conformes et 44 % des banques sont en retard sur le programme de remédiation.</p>"),
     # "See all articles" CTA
     (r'>See all articles\b', '>Voir tous les articles'),
+    # Finale CTA section (bottom of home)
+    (r'<p class=feat-eyebrow>Get in touch</p>',
+     '<p class=feat-eyebrow>Me contacter</p>'),
+    (r'>Unlocking the Future of Banking and Financial Services\.<br>Discover the latest news from</h2>',
+     ">Libérer l'avenir de la banque et des services financiers.<br>Découvrez les dernières analyses</h2>"),
+    (r"<p class=\"feat-sub center\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\. Happy to talk\.</p>",
+     "<p class=\"feat-sub center\">Stratégie paiements wholesale, migration ISO 20022 ou cryptographie résistante au quantique pour les services financiers — ravi d'en discuter.</p>"),
+    (r'>Start a conversation</a>', '>Démarrer une conversation</a>'),
+    # Hero CTA buttons (unquoted href on home)
+    (r'<a class=pill href="?/articles/index\.html"?>Read latest research</a>',
+     '<a class=pill href="/fr/articles/index.html">Lire les recherches récentes</a>'),
+    (r'<a class="pill ghost" href="?/contact/index\.html"?>Get in touch</a>',
+     '<a class="pill ghost" href="/fr/contact/index.html">Me contacter</a>'),
+    # Read the paper / Read the article CTAs anywhere on the home
+    (r'href="?/papers/index\.html"?>Read the paper</a>',
+     'href="/fr/papers/index.html">Lire le livre blanc</a>'),
+    (r'href="?/2026-05-15[^"]*"?>Read the article</a>',
+     'href="/fr/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/index.html">Lire l\'article</a>'),
+    # Footer column titles also accept unquoted class
+    (r'<h2 class=ap-foot-title>Writing</h2>', '<h2 class=ap-foot-title>Écrits</h2>'),
+    (r'<h2 class=ap-foot-title>Work</h2>', '<h2 class=ap-foot-title>Activité</h2>'),
+    (r'<h2 class=ap-foot-title>Reach</h2>', '<h2 class=ap-foot-title>Réseaux</h2>'),
+    # Footer items (unquoted href forms)
+    (r'<a href=/about/index\.html>About</a>',
+     '<a href=/fr/about/index.html>À propos</a>'),
+    (r'<a href=/papers/index\.html>Papers</a>',
+     '<a href=/fr/papers/index.html>Publications</a>'),
+    (r'<a href=/projects/index\.html>Projects</a>',
+     '<a href=/fr/projects/index.html>Projets</a>'),
+    (r'<a href=/playlists/index\.html>Playlists</a>',
+     '<a href=/fr/playlists/index.html>Playlists</a>'),
+    (r'<a href=/contact/index\.html>Contact</a>',
+     '<a href=/fr/contact/index.html>Contact</a>'),
+    (r'<a href=/tags/index\.html>Tags</a>',
+     '<a href=/fr/tags/index.html>Étiquettes</a>'),
+    (r'<a href=/articles/index\.html>Articles</a>',
+     '<a href=/fr/articles/index.html>Articles</a>'),
+    (r'<a href=/made-with-static-site-generator/index\.html>Made with Static Site Generator</a>',
+     '<a href=/fr/made-with-static-site-generator/index.html>Conçu avec Static Site Generator</a>'),
+    (r'<a href=/accessibility/index\.html>Accessibility</a>',
+     '<a href=/fr/accessibility/index.html>Accessibilité</a>'),
+    (r'<a href=/privacy/index\.html>Privacy</a>',
+     '<a href=/fr/privacy/index.html>Confidentialité</a>'),
+    (r'<a href=/terms/index\.html>Terms</a>',
+     '<a href=/fr/terms/index.html>Conditions</a>'),
     # Experience section
     (r'>Experience<', '>Expérience<'),
     (r'>Brands along the way\.<', '>Marques traversées.<'),
-    (r'>From global Tier-1 banks to consumer technology\. Payments and digital product leadership across HSBC, PayPal, Barclays, Shazam,[\s\S]{0,300}',
+    (r'>From global Tier-1 banks to consumer technology\. Payments and digital product leadership across HSBC, PayPal, Barclays, Shazam, AKQA and Virgin Group\.</p>',
      ">Des banques de premier rang mondiales aux technologies grand public. Leadership produit en paiements et digital chez HSBC, PayPal, Barclays, Shazam, AKQA et Virgin Group.</p>"),
+    # Brand-logo alt text
+    (r'alt="PayPal logo"', 'alt="Logo PayPal"'),
+    (r'alt="Barclays logo"', 'alt="Logo Barclays"'),
+    (r'alt="Shazam logo"', 'alt="Logo Shazam"'),
+    (r'alt="AKQA logo"', 'alt="Logo AKQA"'),
+    (r'alt="Virgin logo"', 'alt="Logo Virgin"'),
+    (r'alt="HSBC logo"', 'alt="Logo HSBC"'),
     # Generic CTAs
     (r'>Read more<', '>Lire la suite<'),
     (r'>Read the article<', "<>Lire l'article<"),
