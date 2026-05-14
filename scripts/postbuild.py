@@ -1881,25 +1881,44 @@ _BODY_LINK_STYLESHEET_RE = re.compile(
 _BODY_END_RE = re.compile(r'</head>', re.IGNORECASE)
 
 
+def _sanitize_link_tag(tag: str) -> str:
+    """Strip the stray trailing double-quote SSG emits on the search-widget
+    stylesheet (``crossorigin="anonymous""``). Browsers treat that as an
+    attribute-value error and bail out of ``<head>`` parsing, which then
+    cascades into pa11y flagging the legitimate ``<link rel=icon>`` etc.
+    as "link in body"."""
+    # Collapse any duplicate `crossorigin="anonymous"` runs into one.
+    tag = re.sub(
+        r'(crossorigin="anonymous")(\s+crossorigin="anonymous")+',
+        r'\1', tag,
+    )
+    # Remove a trailing `"` immediately before the closing `>`.
+    tag = re.sub(r'""(\s*/?>)', r'"\1', tag)
+    return tag
+
+
 def hoist_body_link_stylesheets(html: str) -> tuple[str, int]:
-    """SSG's inline search widget renders ``<link rel=stylesheet>`` *inside*
-    ``<body>`` next to ``#ssg-search-widget``. That's an HTML5 spec violation
-    (link in body) and pa11y AAA flags it on every page that ships the widget.
-    Hoist any in-body stylesheet ``<link>`` up into ``<head>`` so the document
-    parses cleanly."""
+    """Hoist every in-body ``<link rel=stylesheet>`` into ``<head>`` and
+    sanitize the tag (SSG ships one with a malformed double-quote attribute
+    that breaks Chrome's head-parser). HTML5 forbids ``<link>`` in body, so
+    pa11y AAA flags this on every page shipping the SSG search widget."""
     head_end_m = _BODY_END_RE.search(html)
     if not head_end_m:
         return html, 0
     head_end = head_end_m.start()
     head, body = html[:head_end], html[head_end:]
+
+    # Also sanitize any in-head stylesheet tags that already have the malformed
+    # attribute — a previous hoist pass may have moved them up without fixing.
+    head = _BODY_LINK_STYLESHEET_RE.sub(lambda m: _sanitize_link_tag(m.group(0)), head)
+
     matches = list(_BODY_LINK_STYLESHEET_RE.finditer(body))
     if not matches:
-        return html, 0
-    # Strip from body in reverse so offsets stay valid; collect for hoisting.
+        return head + body, 0
     extracted: list[str] = []
     new_body = body
     for m in reversed(matches):
-        extracted.insert(0, m.group(0))
+        extracted.insert(0, _sanitize_link_tag(m.group(0)))
         new_body = new_body[:m.start()] + new_body[m.end():]
     return head + "".join(extracted) + new_body, len(extracted)
 

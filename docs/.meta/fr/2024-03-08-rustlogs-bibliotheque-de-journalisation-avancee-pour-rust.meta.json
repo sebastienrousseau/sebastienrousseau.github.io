@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
-  "title": "RustLogs (RLG) : bibliothèque de journalisation structurée pour Rust",
   "language": "fr",
-  "subtitle": "Simplifier votre workflow de journalisation Rust",
-  "keywords": "bibliothèque de journalisation Rust, journalisation Rust asynchrone, formats de logs structurés, débogage Rust, journalisation personnalisable, outils de développement Rust, fonctionnalités RustLogs RLG, journalisation efficace, intégration RustLogs, documentation RustLogs",
-  "description": "Découvrez RustLogs (RLG), la bibliothèque flexible de journalisation pour Rust avec formats de logs structurés, journalisation asynchrone et options de personnalisation étendues.",
-  "date": "March 08, 2024",
   "locale": "fr_FR",
-  "banner_alt": "Bannière pour RustLogs (RLG)"
+  "subtitle": "Simplifier votre workflow de journalisation Rust",
+  "banner_alt": "Bannière pour RustLogs (RLG)",
+  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
+  "description": "Découvrez RustLogs (RLG), la bibliothèque flexible de journalisation pour Rust avec formats de logs structurés, journalisation asynchrone et options de personnalisation étendues.",
+  "keywords": "bibliothèque de journalisation Rust, journalisation Rust asynchrone, formats de logs structurés, débogage Rust, journalisation personnalisable, outils de développement Rust, fonctionnalités RustLogs RLG, journalisation efficace, intégration RustLogs, documentation RustLogs",
+  "date": "March 08, 2024",
+  "title": "RustLogs (RLG) : bibliothèque de journalisation structurée pour Rust"
 }

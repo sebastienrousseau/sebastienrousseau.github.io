@@ -351,7 +351,8 @@ def render_hub(shell: str) -> tuple[str, str]:
         if banner:
             media = (
                 f'<a class="newsroom-card-media" href="{url}" aria-label="{title}">'
-                f'<img src="{banner}" alt="" loading="lazy" decoding="async" '
+                f'<img src="{banner}" alt="{title} — topic banner" '
+                f'loading="lazy" decoding="async" '
                 f'width="800" height="800"></a>'
             )
         else:
