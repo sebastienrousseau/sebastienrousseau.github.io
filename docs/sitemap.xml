@@ -334,6 +334,91 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/fr/about/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/papers/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/projects/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/topics/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/tags/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/contact/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/accessibility/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/privacy/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/terms/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/playlists/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/made-with-shokunin/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/made-with-static-site-generator/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/topics/post-quantum-cryptography/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/topics/iso-20022-payments/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/topics/applied-ai-banking/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/topics/rust-open-source/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/topics/blockchain-digital-assets/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fr/2018-01-01-bitcoin-l-annee-en-revue/</loc>
   <lastmod>2026-05-11</lastmod>
   <changefreq>monthly</changefreq>

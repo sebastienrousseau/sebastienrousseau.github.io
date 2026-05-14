@@ -935,8 +935,19 @@ def _splice_fr_urls(xml: str, lastmod_index: dict[str, str]) -> str:
             lastmod = lastmod_index.get(stem, "")
             _add(f"{base}/{stem}/", "0.8", "weekly", lastmod)
 
-    # FR hub + FR dated posts
+    # FR hub + FR dated posts + FR static pages + FR topic sub-pages
     _add(f"{base}/fr/", "0.8", "weekly")
+    for slug in (
+        "about", "papers", "projects", "topics", "tags",
+        "contact", "accessibility", "privacy", "terms", "playlists",
+        "made-with-shokunin", "made-with-static-site-generator",
+    ):
+        _add(f"{base}/fr/{slug}/", "0.5", "monthly")
+    for topic in (
+        "post-quantum-cryptography", "iso-20022-payments",
+        "applied-ai-banking", "rust-open-source", "blockchain-digital-assets",
+    ):
+        _add(f"{base}/fr/topics/{topic}/", "0.6", "monthly")
     for en, fr in EN_TO_FR.items():
         _add(f"{base}/fr/{fr}/", "0.7", "monthly", lastmod_index.get(en, ""))
 
@@ -1076,22 +1087,24 @@ def _fmt_date(iso_or_rfc: str, french: bool = False) -> str:
     return iso_or_rfc
 
 
-def _render_tag_badges(keywords: list[str], labels: dict[str, str]) -> str:
+def _render_tag_badges(keywords: list[str], labels: dict[str, str], lang: str = "en") -> str:
     if not keywords:
         return ""
+    prefix = "/fr/tags/index.html" if lang == "fr" else "/tags/index.html"
     badges = "".join(
-        f'<a href="/tags/index.html#h3-{slugify(k)}" class="article-tag" rel="tag">{k}</a>'
+        f'<a href="{prefix}#h3-{slugify(k)}" class="article-tag" rel="tag">{k}</a>'
         for k in keywords
     )
     aria = labels.get("Topics", "Topics")
     return f'<nav class="article-tags" aria-label="{aria}">{badges}</nav>'
 
 
-def _render_meta_bar(date_pub: str, date_mod: str, word_count: int | None, labels: dict[str, str]) -> str:
+def _render_meta_bar(date_pub: str, date_mod: str, word_count: int | None, labels: dict[str, str], lang: str = "en") -> str:
     parts: list[str] = []
     french = labels is LABELS_FR
+    author_url = "/fr/about/index.html" if lang == "fr" else AUTHOR_URL
     parts.append(
-        f'<a href="{AUTHOR_URL}" class="article-author" rel="author">'
+        f'<a href="{author_url}" class="article-author" rel="author">'
         f'<img alt="Portrait of {AUTHOR_NAME}" src="{AUTHOR_AVATAR}" '
         f'width="36" height="36" loading="lazy" decoding="async" />'
         f'<span>{AUTHOR_NAME}</span></a>'
@@ -1138,8 +1151,9 @@ def inject_article_furniture(html: str) -> str:
     wm = _WORDCOUNT_RE.search(html)
     word_count = int(wm.group(1)) if wm else None
     labels = _labels(html)
-    badges = _render_tag_badges(keywords, labels)
-    meta = _render_meta_bar(date_pub, date_mod, word_count, labels)
+    lang = "fr" if _is_french(html) else "en"
+    badges = _render_tag_badges(keywords, labels, lang)
+    meta = _render_meta_bar(date_pub, date_mod, word_count, labels, lang)
     fragment = badges + meta
     if not fragment:
         return html

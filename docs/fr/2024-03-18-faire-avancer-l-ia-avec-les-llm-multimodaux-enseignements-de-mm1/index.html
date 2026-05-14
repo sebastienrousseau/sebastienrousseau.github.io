@@ -26,7 +26,7 @@
          allow that exact byte-for-byte content and nothing else. -->
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
-        script-src 'sha256-jlvP4foyMNH9mup8dnecBOoK/AgP/tWsB93aOBIZw4E=' 'sha256-oIDiELW3IKNF8WVXdp7Z/Id1ogZKvHX9se2ycPZeVqw=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-WkCXh4nK07PH3Q1fnwmTyYVbd/7ngkglNAHgLZBHAC8=' 'sha256-oIDiELW3IKNF8WVXdp7Z/Id1ogZKvHX9se2ycPZeVqw=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
         img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
@@ -60,14 +60,14 @@
 <meta property="og:description" content="Découvrez l&#x27;article MM1 d&#x27;Apple sur les grands modèles de langage multimodaux (MLLM). Architecture, stratégies de pré-entraînement et potentiels de l&#x27;IA.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/fr/2024-03-18-faire-avancer-l-ia-avec-les-llm-multimodaux-enseignements-de-mm1/">
-<meta property="og:image" content="https://sebastienrousseau.com/fr/2024-03-18-faire-avancer-l-ia-avec-les-llm-multimodaux-enseignements-de-mm1/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/mm1-visual.webp">
 <meta property="og:image:width" content="100vw">
 <meta property="og:image:height" content="100vh">
 <meta property="og:locale" content="fr_FR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Advancing AI with Multimodal LLMs: Insights from MM1">
 <meta name="twitter:description" content="TL;DR. Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials. Key">
-<meta name="twitter:image" content="https://sebastienrousseau.com/fr/2024-03-18-faire-avancer-l-ia-avec-les-llm-multimodaux-enseignements-de-mm1/">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/mm1-visual.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/fr/2024-03-18-faire-avancer-l-ia-avec-les-llm-multimodaux-enseignements-de-mm1/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
 <link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-03-18-faire-avancer-l-ia-avec-les-llm-multimodaux-enseignements-de-mm1/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/" /></head>
@@ -83,12 +83,12 @@
         </a>
         <nav aria-label="Navigation principale">
           <ul class="ap-menu">
-            <li><a href="/about/index.html">À propos</a></li>
+            <li><a href="/fr/about/index.html">À propos</a></li>
             <li><a href="/fr/index.html">Articles</a></li>
-            <li><a href="/papers/index.html">Publications</a></li>
-            <li><a href="/topics/index.html">Sujets</a></li>
-            <li><a href="/projects/index.html">Projets</a></li>
-            <li><a href="/playlists/index.html">Playlists</a></li>
+            <li><a href="/fr/papers/index.html">Publications</a></li>
+            <li><a href="/fr/topics/index.html">Sujets</a></li>
+            <li><a href="/fr/projects/index.html">Projets</a></li>
+            <li><a href="/fr/playlists/index.html">Playlists</a></li>
           </ul>
         </nav>
         <div class="ap-nav-right">
@@ -138,7 +138,7 @@
               </div>
             </div>
           </div>
-          <a class="ap-cta-mini" href="/contact/index.html" aria-label="Me contacter">Me contacter ›</a>
+          <a class="ap-cta-mini" href="/fr/contact/" aria-label="Me contacter">Me contacter ›</a>
           <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Basculer la navigation">☰</label>
         </div>
       </div>
@@ -147,11 +147,11 @@
         <section class="ap-hero">
       <h1>Faire progresser l&#x27;IA avec les LLM multimodaux : enseignements de MM1</h1>
       <p class="sub">Dévoiler le futur de l&#x27;IA : comment l&#x27;étude révolutionnaire MM1 d&#x27;Apple transforme l&#x27;apprentissage multimodal</p>
-    <nav class="article-tags" aria-label="Sujets"><a href="/tags/index.html#h3-multimodal-llms" class="article-tag" rel="tag">Multimodal LLMs</a><a href="/tags/index.html#h3-mm1-study" class="article-tag" rel="tag">MM1 study</a><a href="/tags/index.html#h3-ai-advancements" class="article-tag" rel="tag">AI advancements</a><a href="/tags/index.html#h3-pre-training-strategies" class="article-tag" rel="tag">pre-training strategies</a><a href="/tags/index.html#h3-image-recognition" class="article-tag" rel="tag">image recognition</a><a href="/tags/index.html#h3-natural-language-processing" class="article-tag" rel="tag">natural language processing</a><a href="/tags/index.html#h3-ai-applications" class="article-tag" rel="tag">AI applications</a><a href="/tags/index.html#h3-future-of-ai" class="article-tag" rel="tag">future of AI</a><a href="/tags/index.html#h3-multimodal-learning" class="article-tag" rel="tag">multimodal learning</a><a href="/tags/index.html#h3-ai-research" class="article-tag" rel="tag">AI research</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-03-18T06:06:06+00:00" class="meta-pub">Publié le 18 mars 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Mis à jour le 11 mai 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Temps de lecture estimé">7 min de lecture</span></div></section>
+    <nav class="article-tags" aria-label="Sujets"><a href="/fr/tags/index.html#h3-llm-multimodaux" class="article-tag" rel="tag">LLM multimodaux</a><a href="/fr/tags/index.html#h3-etude-mm1" class="article-tag" rel="tag">étude MM1</a><a href="/fr/tags/index.html#h3-avancees-ia" class="article-tag" rel="tag">avancées IA</a><a href="/fr/tags/index.html#h3-strategies-de-pre-entrainement" class="article-tag" rel="tag">stratégies de pré-entraînement</a><a href="/fr/tags/index.html#h3-reconnaissance-d-images" class="article-tag" rel="tag">reconnaissance d'images</a><a href="/fr/tags/index.html#h3-traitement-du-langage-naturel" class="article-tag" rel="tag">traitement du langage naturel</a><a href="/fr/tags/index.html#h3-applications-ia" class="article-tag" rel="tag">applications IA</a><a href="/fr/tags/index.html#h3-futur-de-l-ia" class="article-tag" rel="tag">futur de l'IA</a><a href="/fr/tags/index.html#h3-apprentissage-multimodal" class="article-tag" rel="tag">apprentissage multimodal</a><a href="/fr/tags/index.html#h3-recherche-ia" class="article-tag" rel="tag">recherche IA</a></nav><div class="article-meta"><a href="/fr/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-03-18T06:06:06+00:00" class="meta-pub">Publié le 18 mars 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Mis à jour le 11 mai 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Temps de lecture estimé">7 min de lecture</span></div></section>
 
     <main id="main" class="content ap-section" aria-label="main">
       <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table des matières"><h2>Sommaire</h2><ol><li><a href="#introduction">Introduction</a></li><li><a href="#l-emergence-de-l-ia-multimodale">L'émergence de l'IA multimodale</a></li><li><a href="#l-etude-mm1-un-jalon-de-la-recherche-ia-multimodale">L'étude MM1 : un jalon de la recherche IA multimodale</a></li><li><a href="#constatations-et-enseignements-cles">Constatations et enseignements clés</a></li><li><a href="#architecture-du-modele-mm1-et-processus-d-apprentissage-multimodal">Architecture du modèle MM1 et processus d'apprentissage multimodal</a></li><li><a href="#mm1-une-reference-pour-l-ia-multimodale">MM1 : une référence pour l'IA multimodale</a></li><li><a href="#conclusion">Conclusion</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Explore Apple's MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials.</p>
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Découvrez l&#x27;article MM1 d&#x27;Apple sur les grands modèles de langage multimodaux (MLLM). Architecture, stratégies de pré-entraînement et potentiels de l&#x27;IA.</p>
 <p class="post-lead-heading"><strong>Points clés</strong></p>
 <ul class="post-lead-takeaways">
   <li><strong>The Emergence of Multimodal AI.</strong> The field of AI has witnessed remarkable advancements in recent years, particularly in the domains of natural language processing (NLP) and computer vision.</li>
@@ -159,7 +159,7 @@
   <li><strong>Key Findings and Insights.</strong> The MM1 study yielded several groundbreaking insights that have shaped our understanding of MLLMs and their potential.</li>
   <li><strong>MM1 Model Architecture and Multimodal Learning Process.</strong> The diagram illustrates the architecture and learning process of the MM1 model.</li>
 </ul>
-<p class="post-lead-related"><strong>Articles connexes :</strong> <a href="https://sebastienrousseau.com/fr/2023-11-12-explorer-l-ia-generative/index.html">Generative AI in 2023: How It Works, Where It Lands</a>, <a href="https://sebastienrousseau.com/fr/2026-05-11-lucy-besson-transfert-de-connaissances-ia-et-quantique/index.html">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</a>, <a href="https://sebastienrousseau.com/fr/2024-04-15-l-algorithme-quantique-defie-la-cryptographie-fondee-sur-les-reseaux/index.html">Quantum Algorithm Challenges Lattice-Based Cryptography</a>.</p>
+
 </aside><h2 id="introduction">Introduction <a class="heading-anchor" href="#introduction" aria-label="Lien vers Introduction">#</a></h2>
 <p>L'intégration du traitement du langage naturel et de la reconnaissance d'images a conduit au développement des grands modèles de langage multimodaux (MLLM). Dans leur article, Apple présente MM1, une collection de modèles d'IA multimodaux qui combinent compréhension visuelle et langagière. Au terme d'expériences approfondies, les chercheurs ont examiné les facteurs qui contribuent à la performance de ces modèles, en explorant divers choix architecturaux et combinaisons de données de pré-entraînement. L'article MM1 fournit des informations essentielles sur la manière dont les MLLM sont structurés et entraînés. Il décrit l'approche de l'étude et ses constatations cruciales, en mettant en lumière leur impact possible sur le futur de l'IA.</p>
 <p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" />.class=&quot;m-10 w-100&quot;</p>
@@ -203,7 +203,7 @@
 <p>Les leçons tirées de l'étude MM1 façonneront sans doute le développement de MLLM plus sophistiqués et capables. Ces modèles ont le potentiel de révolutionner la manière dont nous interagissons avec les machines, permettant une communication plus naturelle, intuitive et consciente du contexte à travers les modalités textuelle et visuelle.</p>
 <p>Le modèle MM1 lui-même témoigne du potentiel incroyable des MLLM, démontrant une performance exceptionnelle sur une gamme de tâches et établissant une nouvelle référence pour l'IA multimodale. À mesure que les chercheurs continueront à bâtir sur les enseignements tirés de cette étude, nous pouvons anticiper un futur où les systèmes d'IA navigueront et interpréteront de manière fluide le monde complexe et multimodal que nous habitons, nous rapprochant de la vision de machines véritablement intelligentes.</p>
 <p>Pour en savoir plus sur l'étude MM1 et explorer le monde fascinant des grands modèles de langage multimodaux, je vous invite à lire l'article original : <a href="https://arxiv.org/abs/2403.09611" title="MM1: Methods Analysis &amp; Insights from Multimodal LLM Pre-training"><strong>MM1: Methods Analysis &amp; Insights from Multimodal LLM Pre-training ⧉</strong></a></p>
-<aside class="author-card" aria-label="À propos de l'auteur"><img alt="Portrait de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Technologue senior dans la banque, j'écris sur l'IA appliquée, la migration ISO 20022, la cryptographie post-quantique pour les services financiers, et la transformation structurelle des paiements wholesale.</span><span class="author-credentials">Plus de 20 ans d'expérience chez HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Dernière révision <time datetime="2026-05-14">2026-05-14</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<aside class="author-card" aria-label="À propos de l'auteur"><img alt="Portrait de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/fr/about/">Sebastien Rousseau</a></strong><span class="author-card-bio">Technologue senior dans la banque, j'écris sur l'IA appliquée, la migration ISO 20022, la cryptographie post-quantique pour les services financiers, et la transformation structurelle des paiements wholesale.</span><span class="author-credentials">Plus de 20 ans d'expérience chez HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/fr/about/">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Dernière révision <time datetime="2026-05-14">2026-05-14</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Articles connexes</h2>
 <div class="related-grid">
 <article class="related-card"><a href="https://sebastienrousseau.com/fr/2023-11-12-explorer-l-ia-generative/index.html" class="related-media" aria-label="Generative AI in 2023: How It Works, Where It Lands" tabindex="-1"><img alt="AI, Artificial Intelligence concept,3d rendering,conceptual image" src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="generative-ai-in-2023-how-it-works-where-it-lands"><a href="https://sebastienrousseau.com/fr/2023-11-12-explorer-l-ia-generative/index.html">Generative AI in 2023: How It Works, Where It Lands</a> <a class="heading-anchor" href="#generative-ai-in-2023-how-it-works-where-it-lands" aria-label="Lien vers Generative AI in 2023: How It Works, Where It Lands">#</a></h3><p><time datetime="2023-11-12">2023-11-12</time></p></footer></article>
@@ -220,24 +220,24 @@
           <div>
             <h2 class="ap-foot-title">Sebastien Rousseau</h2>
             <ul>
-              <li><a href="/about/index.html">À propos</a></li>
-              <li><a href="/contact/index.html">Contact</a></li>
-              <li><a href="/made-with-static-site-generator/index.html">Conçu avec Static Site Generator</a></li>
+              <li><a href="/fr/about/index.html">À propos</a></li>
+              <li><a href="/fr/contact/index.html">Contact</a></li>
+              <li><a href="/fr/made-with-static-site-generator/index.html">Conçu avec Static Site Generator</a></li>
             </ul>
           </div>
           <div>
             <h2 class="ap-foot-title">Écrits</h2>
             <ul>
               <li><a href="/fr/index.html">Articles</a></li>
-              <li><a href="/papers/index.html">Publications</a></li>
-              <li><a href="/tags/index.html">Étiquettes</a></li>
+              <li><a href="/fr/papers/index.html">Publications</a></li>
+              <li><a href="/fr/tags/index.html">Étiquettes</a></li>
             </ul>
           </div>
           <div>
             <h2 class="ap-foot-title">Activité</h2>
             <ul>
-              <li><a href="/projects/index.html">Projets</a></li>
-              <li><a href="/playlists/index.html">Playlists</a></li>
+              <li><a href="/fr/projects/index.html">Projets</a></li>
+              <li><a href="/fr/playlists/index.html">Playlists</a></li>
               <li><a href="/fr/rss.xml">RSS</a></li>
             </ul>
           </div>
@@ -260,9 +260,9 @@
             <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
           </div>
           <p>
-            <a href="/accessibility/index.html">Accessibilité</a> ·
-            <a href="/privacy/index.html">Confidentialité</a> ·
-            <a href="/terms/index.html">Conditions</a>
+            <a href="/fr/accessibility/index.html">Accessibilité</a> ·
+            <a href="/fr/privacy/index.html">Confidentialité</a> ·
+            <a href="/fr/terms/index.html">Conditions</a>
           </p>
         </div>
       </div>
@@ -351,7 +351,7 @@
 }
     </script>
 
-        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1476,"about":{"@type":"Thing","name":"Multimodal learning","sameAs":["https://en.wikipedia.org/wiki/Multimodal_learning","https://www.wikidata.org/wiki/Q117259025"]},"headline":"Faire progresser l&#x27;IA avec les LLM multimodaux : enseignements de MM1","description":"Découvrez l&#x27;article MM1 d&#x27;Apple sur les grands modèles de langage multimodaux (MLLM). Architecture, stratégies de pré-entraînement et potentiels de l&#x27;IA.","image":{"@type":"ImageObject","url":"https://sebastienrousseau.com/fr/2024-03-18-faire-avancer-l-ia-avec-les-llm-multimodaux-enseignements-de-mm1/","width":"100vw","height":"100vh","caption":"Banner for the Apple MM1"},"url":"https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html","datePublished":"2024-03-18T06:06:06+00:00","dateModified":"2026-05-11","inLanguage":"en","keywords":"Multimodal LLMs, MM1 study, AI advancements, pre-training strategies, image recognition, natural language processing, AI applications, future of AI, multimodal learning, AI research","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/articles/#blog","name":"Sebastien Rousseau — Articles","url":"https://sebastienrousseau.com/articles/"},"citation":[{"@type":"CreativeWork","url":"https://arxiv.org/abs/2403.09611"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/fr/"},{"@type":"ListItem","position":3,"name":"Faire progresser l'IA avec les LLM multimodaux : enseignements de MM1","item":"https://sebastienrousseau.com/fr/2024-03-18-faire-avancer-l-ia-avec-les-llm-multimodaux-enseignements-de-mm1/"}]}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1476,"headline":"Faire progresser l'IA avec les LLM multimodaux : enseignements de MM1","description":"Découvrez l'article MM1 d'Apple sur les grands modèles de langage multimodaux (MLLM). Architecture, stratégies de pré-entraînement et potentiels de l'IA.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/mm1-visual.webp","width":"100vw","height":"100vh","caption":"Bannière pour MM1 d'Apple"},"url":"https://sebastienrousseau.com/fr/2024-03-18-faire-avancer-l-ia-avec-les-llm-multimodaux-enseignements-de-mm1/","datePublished":"2024-03-18T06:06:06+00:00","dateModified":"2026-05-11","inLanguage":"fr","keywords":"LLM multimodaux, étude MM1, avancées IA, stratégies de pré-entraînement, reconnaissance d'images, traitement du langage naturel, applications IA, futur de l'IA, apprentissage multimodal, recherche IA","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/fr/2024-03-18-faire-avancer-l-ia-avec-les-llm-multimodaux-enseignements-de-mm1/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"fr"},"citation":[{"@type":"CreativeWork","url":"https://arxiv.org/abs/2403.09611"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/fr/"},{"@type":"ListItem","position":3,"name":"Faire progresser l'IA avec les LLM multimodaux : enseignements de MM1","item":"https://sebastienrousseau.com/fr/2024-03-18-faire-avancer-l-ia-avec-les-llm-multimodaux-enseignements-de-mm1/"}]}]}</script>
 <script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
     <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>

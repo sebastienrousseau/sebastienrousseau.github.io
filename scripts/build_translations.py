@@ -147,19 +147,22 @@ CHROME_PATCHES: list[tuple[str, str]] = [
     (r'>Get in touch ›</a>', '>Me contacter ›</a>'),
     (r'aria-label="Sebastien Rousseau home"', 'aria-label="Accueil de Sebastien Rousseau"'),
 
-    # Nav menu items
+    # Nav menu items — keep visitors inside /fr/ by pointing every
+    # nav link to the localised page under /fr/.
     (r'<li><a href="/about/index\.html">About</a></li>',
-     '<li><a href="/about/index.html">À propos</a></li>'),
+     '<li><a href="/fr/about/index.html">À propos</a></li>'),
     (r'<li><a href="/papers/index\.html">Papers</a></li>',
-     '<li><a href="/papers/index.html">Publications</a></li>'),
+     '<li><a href="/fr/papers/index.html">Publications</a></li>'),
     (r'<li><a href="/topics/index\.html">Topics</a></li>',
-     '<li><a href="/topics/index.html">Sujets</a></li>'),
+     '<li><a href="/fr/topics/index.html">Sujets</a></li>'),
     (r'<li><a href="/projects/index\.html">Projects</a></li>',
-     '<li><a href="/projects/index.html">Projets</a></li>'),
+     '<li><a href="/fr/projects/index.html">Projets</a></li>'),
     (r'<li><a href="/articles/index\.html">Articles</a></li>',
      '<li><a href="/fr/index.html">Articles</a></li>'),
     (r'<li><a href="/contact/index\.html">Contact</a></li>',
-     '<li><a href="/contact/index.html">Contact</a></li>'),
+     '<li><a href="/fr/contact/index.html">Contact</a></li>'),
+    (r'<li><a href="/playlists/index\.html">Playlists</a></li>',
+     '<li><a href="/fr/playlists/index.html">Playlists</a></li>'),
 
     # Back-to-top
     (r'aria-label="Back to top"', 'aria-label="Retour en haut"'),
@@ -169,25 +172,36 @@ CHROME_PATCHES: list[tuple[str, str]] = [
     (r'<h2 class="ap-foot-title">Work</h2>', '<h2 class="ap-foot-title">Activité</h2>'),
     (r'<h2 class="ap-foot-title">Reach</h2>', '<h2 class="ap-foot-title">Réseaux</h2>'),
 
-    # Footer links — surgical, scoped by href
-    (r'<a href="/about/index\.html">About</a>', '<a href="/about/index.html">À propos</a>'),
+    # Footer links — surgical, scoped by href. Point at /fr/ siblings so
+    # visitors stay in the French edition.
+    (r'<a href="/about/index\.html">About</a>',
+     '<a href="/fr/about/index.html">À propos</a>'),
     (r'<a href="/made-with-static-site-generator/index\.html">Made with Static Site Generator</a>',
-     '<a href="/made-with-static-site-generator/index.html">Conçu avec Static Site Generator</a>'),
-    (r'<a href="/papers/index\.html">Papers</a>', '<a href="/papers/index.html">Publications</a>'),
-    (r'<a href="/tags/index\.html">Tags</a>', '<a href="/tags/index.html">Étiquettes</a>'),
-    (r'<a href="/projects/index\.html">Projects</a>', '<a href="/projects/index.html">Projets</a>'),
+     '<a href="/fr/made-with-static-site-generator/index.html">Conçu avec Static Site Generator</a>'),
+    (r'<a href="/papers/index\.html">Papers</a>',
+     '<a href="/fr/papers/index.html">Publications</a>'),
+    (r'<a href="/tags/index\.html">Tags</a>',
+     '<a href="/fr/tags/index.html">Étiquettes</a>'),
+    (r'<a href="/projects/index\.html">Projects</a>',
+     '<a href="/fr/projects/index.html">Projets</a>'),
+    (r'<a href="/playlists/index\.html">Playlists</a>',
+     '<a href="/fr/playlists/index.html">Playlists</a>'),
+    (r'<a href="/contact/index\.html">Contact</a>',
+     '<a href="/fr/contact/index.html">Contact</a>'),
+    (r'<a href="/articles/index\.html">Articles</a>',
+     '<a href="/fr/index.html">Articles</a>'),
 
     # Social section
     (r'aria-label="Social links"', 'aria-label="Liens sociaux"'),
     (r'aria-label="Sebastien Rousseau on ', 'aria-label="Sebastien Rousseau sur '),
 
-    # Footer legal links
+    # Footer legal links — route to /fr/ siblings
     (r'<a href="/accessibility/index\.html">Accessibility</a>',
-     '<a href="/accessibility/index.html">Accessibilité</a>'),
+     '<a href="/fr/accessibility/index.html">Accessibilité</a>'),
     (r'<a href="/privacy/index\.html">Privacy</a>',
-     '<a href="/privacy/index.html">Confidentialité</a>'),
+     '<a href="/fr/privacy/index.html">Confidentialité</a>'),
     (r'<a href="/terms/index\.html">Terms</a>',
-     '<a href="/terms/index.html">Conditions</a>'),
+     '<a href="/fr/terms/index.html">Conditions</a>'),
 
     # Search palette (Shokunin widget — rendered HTML)
     (r'placeholder="Search documentation\.\.\."', 'placeholder="Rechercher dans la documentation..."'),
@@ -249,6 +263,39 @@ def translate_chrome(html: str) -> str:
     article body."""
     for pat, repl in _CHROME_PATCHES_COMPILED:
         html = pat.sub(repl, html)
+    html = rewrite_static_links(html)
+    return html
+
+
+# Internal static pages that have a FR mirror at /fr/<page>/. Any
+# remaining anchor on a FR page pointing at the bare EN URL gets
+# rewritten to the FR sibling here. Idempotent.
+_STATIC_FR_PAGES = (
+    "about", "papers", "projects", "topics", "tags", "contact",
+    "accessibility", "privacy", "terms", "playlists",
+    "made-with-static-site-generator", "made-with-shokunin",
+    "404", "offline", "thanks",
+)
+_STATIC_LINK_RE = re.compile(
+    r'(href=")(?:https?://sebastienrousseau\.com)?/('
+    + "|".join(_STATIC_FR_PAGES)
+    + r')(/(?:index\.html)?)?(")',
+)
+_TOPIC_SUBPAGE_RE = re.compile(
+    r'(href=")(?:https?://sebastienrousseau\.com)?/topics/([a-z0-9-]+)(/(?:index\.html)?)(")',
+)
+_ARTICLES_LINK_RE = re.compile(
+    r'(href=")(?:https?://sebastienrousseau\.com)?/articles(/(?:index\.html)?)?(")',
+)
+
+
+def rewrite_static_links(html: str) -> str:
+    """Rewrite every internal anchor on a FR page that still points at a
+    top-level EN static page (/about/, /papers/, …) so it lands on the
+    FR mirror under /fr/. ``/articles/`` collapses to ``/fr/`` (the hub)."""
+    html = _STATIC_LINK_RE.sub(r'\1/fr/\2/\4', html)
+    html = _TOPIC_SUBPAGE_RE.sub(r'\1/fr/topics/\2\3\4', html)
+    html = _ARTICLES_LINK_RE.sub(r'\1/fr/\3', html)
     return html
 
 
@@ -286,6 +333,88 @@ _RELATED_POSTS_ASIDE_RE = re.compile(
     r'<aside\s+class="related-posts"[\s\S]*?</aside>',
     re.IGNORECASE,
 )
+
+# English takeaway-section labels that appear inside <li><strong>…</strong>
+# in the post-lead aside. These come from the EN article's H2s and need
+# translating on every FR page.
+TAKEAWAY_LABELS_EN_TO_FR: dict[str, str] = {
+    "Idea": "Idée",
+    "Impact": "Impact",
+    "Incentives": "Incitations",
+    "Incentive": "Incitation",
+    "Insight": "Aperçu",
+    "Issues": "Enjeux",
+    "Issue": "Enjeu",
+    "Innovations": "Innovations",
+    "Innovation": "Innovation",
+    "Use Cases": "Cas d'usage",
+    "Use Case": "Cas d'usage",
+    "Limitations": "Limites",
+    "Outlook": "Perspectives",
+    "Conclusion": "Conclusion",
+    "Regulation": "Réglementation",
+    "Fraud Risks": "Risques de fraude",
+    "Sustainability": "Soutenabilité",
+    "Privacy and Security": "Vie privée et sécurité",
+    "Privacy": "Vie privée",
+    "Security": "Sécurité",
+    "Recommendations": "Recommandations",
+    "Approach": "Approche",
+    "Background": "Contexte",
+    "Methodology": "Méthodologie",
+    "Findings": "Résultats",
+    "Challenges": "Défis",
+    "Opportunities": "Opportunités",
+    "Risks": "Risques",
+    "Mitigations": "Mesures d'atténuation",
+}
+
+# Compile to a single regex matched against the inner text of
+# ``<li><strong>LABEL.</strong>``. The trailing dot is preserved.
+_TAKEAWAY_LABEL_RE = re.compile(
+    r'(<li><strong>)('
+    + "|".join(re.escape(k) for k in sorted(TAKEAWAY_LABELS_EN_TO_FR, key=len, reverse=True))
+    + r')(\.</strong>)'
+)
+
+
+def _localise_takeaway_labels(html_fragment: str) -> str:
+    """Translate the English takeaway labels in the FR lead aside."""
+    def repl(m: re.Match[str]) -> str:
+        return m.group(1) + TAKEAWAY_LABELS_EN_TO_FR[m.group(2)] + m.group(3)
+    return _TAKEAWAY_LABEL_RE.sub(repl, html_fragment)
+
+
+_POST_LEAD_TLDR_RE = re.compile(
+    r'(<p class="post-lead-tldr"><strong>TL;DR\.</strong>\s*)([^<]+)(</p>)',
+)
+
+
+def _localise_post_lead(lead_html: str, description: str) -> str:
+    """Patch the lead aside extracted from the EN shell:
+    1. Replace the EN TL;DR with the FR description.
+    2. Translate takeaway section labels (Idea / Impact / …).
+    3. Drop the EN ``Related reading:`` paragraph — the page has its own
+       at the bottom in French already.
+    """
+    if not lead_html:
+        return lead_html
+    if description:
+        lead_html = _POST_LEAD_TLDR_RE.sub(
+            lambda m: m.group(1) + _html.escape(description) + m.group(3),
+            lead_html,
+            count=1,
+        )
+    lead_html = _localise_takeaway_labels(lead_html)
+    # Strip the EN "Related reading:" line — it's English titles, and the
+    # related-posts grid at the bottom already covers it in French.
+    lead_html = re.sub(
+        r'<p class="post-lead-related">[\s\S]*?</p>',
+        '',
+        lead_html,
+        count=1,
+    )
+    return lead_html
 
 
 def _extract_shell_blocks(shell_html: str) -> tuple[str, str]:
@@ -414,6 +543,85 @@ def rewrite_en_urls(html_fragment: str) -> str:
     return _EN_URL_RE.sub(repl, html_fragment)
 
 
+def _patch_blogposting_jsonld(
+    html: str,
+    *,
+    title: str,
+    description: str,
+    keywords: str,
+    url_fr: str,
+    banner: str,
+    banner_alt: str,
+) -> str:
+    """Walk every JSON-LD script block; for each BlogPosting node,
+    rewrite headline / description / inLanguage / url / mainEntityOfPage /
+    image / keywords / isPartOf so the FR page advertises itself as a
+    French resource."""
+
+    def patch_node(node: dict) -> bool:
+        t = node.get("@type")
+        if t != "BlogPosting":
+            return False
+        node["headline"] = title
+        node["description"] = description
+        node["inLanguage"] = "fr"
+        node["url"] = url_fr
+        if keywords:
+            node["keywords"] = keywords
+        if banner:
+            node["image"] = {
+                "@type": "ImageObject",
+                "url": banner,
+                "width": "100vw",
+                "height": "100vh",
+                "caption": banner_alt or title,
+            }
+        mep = node.get("mainEntityOfPage")
+        if isinstance(mep, dict):
+            mep["@id"] = url_fr
+        elif isinstance(mep, str):
+            node["mainEntityOfPage"] = url_fr
+        # isPartOf — point at the FR articles hub.
+        ipo = node.get("isPartOf")
+        if isinstance(ipo, dict):
+            ipo["@id"] = "https://sebastienrousseau.com/fr/#blog"
+            ipo["name"] = "Sebastien Rousseau — Articles (français)"
+            ipo["url"] = "https://sebastienrousseau.com/fr/"
+            ipo["inLanguage"] = "fr"
+        return True
+
+    def fix(m: re.Match[str]) -> str:
+        raw = m.group(1)
+        if '"BlogPosting"' not in raw:
+            return m.group(0)
+        try:
+            data = _json.loads(raw)
+        except _json.JSONDecodeError:
+            return m.group(0)
+        changed = False
+        if isinstance(data, dict):
+            if patch_node(data):
+                changed = True
+            graph = data.get("@graph")
+            if isinstance(graph, list):
+                for node in graph:
+                    if isinstance(node, dict) and patch_node(node):
+                        changed = True
+        if not changed:
+            return m.group(0)
+        return (
+            '<script type="application/ld+json">'
+            + _json.dumps(data, separators=(",", ":"), ensure_ascii=False)
+            + '</script>'
+        )
+
+    return re.sub(
+        r'<script type="application/ld\+json">([\s\S]+?)</script>',
+        fix,
+        html,
+    )
+
+
 def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | None:
     """Render one French page from English shell + French frontmatter + body.
 
@@ -459,6 +667,7 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
     # Rewrite any EN cross-links to their FR counterparts so the page stays
     # inside /fr/ when readers click related-reading links.
     lead_aside, related_aside = _extract_shell_blocks(shell)
+    lead_aside = _localise_post_lead(lead_aside, description)
     lead_aside = rewrite_en_urls(lead_aside)
     related_aside = rewrite_en_urls(related_aside)
     body_html = rewrite_en_urls(body_html)
@@ -473,11 +682,19 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
     # Chrome translation — nav, footer, search palette, social labels, etc.
     shell = translate_chrome(shell)
 
-    # JSON-LD BlogPosting tweaks
-    shell = _BLOGPOSTING_HEADLINE_RE.sub(rf'\1{_html.escape(title, quote=True)}\2', shell, count=1)
-    shell = _BLOGPOSTING_DESC_RE.sub(rf'\1{_html.escape(description, quote=True)}\2', shell, count=1)
-    shell = _BLOGPOSTING_LANG_RE.sub(r'\1fr\2', shell, count=1)
-    shell = _BLOGPOSTING_URL_RE.sub(rf'\1{url_fr}\2', shell, count=1)
+    # JSON-LD BlogPosting tweaks — parse + mutate + serialise so we can
+    # cross nested objects (regex can't see past `}` inside the graph).
+    banner = fm.get("banner", "")
+    banner_alt = fm.get("banner_alt", "")
+    shell = _patch_blogposting_jsonld(
+        shell,
+        title=title,
+        description=description,
+        keywords=keywords,
+        url_fr=url_fr,
+        banner=banner,
+        banner_alt=banner_alt,
+    )
 
     # Breadcrumb final segment
     shell = _swap_breadcrumb(shell, slug_fr, title)
@@ -589,6 +806,464 @@ def render_hub(entries: list[dict[str, str]]) -> str | None:
     return shell
 
 
+# ---------------------------------------------------------------------------
+# Static-page translations (about, papers, projects, topics, tags, …)
+# ---------------------------------------------------------------------------
+
+# Static pages we mirror under /fr/. Each EN slug maps to its FR title +
+# meta-description override. The body of these pages is mostly chrome
+# (cards, lists generated by SSG from frontmatter); CHROME_PATCHES carries
+# every nav / footer / aria-label translation. For pages with prose
+# content (about, contact, privacy, terms, …) we additionally swap
+# specific English strings via STATIC_BODY_PATCHES below.
+STATIC_PAGES_FR: dict[str, dict[str, str]] = {
+    "about": {
+        "title": "À propos — Sebastien Rousseau",
+        "description": "Sebastien Rousseau, technologue senior dans la banque : IA appliquée, migration ISO 20022, cryptographie post-quantique, transformation structurelle des paiements wholesale.",
+        "keywords": "Sebastien Rousseau, biographie, banque, paiements, IA, ISO 20022, cryptographie post-quantique, HSBC, PayPal, Barclays",
+    },
+    "papers": {
+        "title": "Publications — Sebastien Rousseau",
+        "description": "Articles, rapports et publications de Sebastien Rousseau sur l'IA, les paiements ISO 20022 et la cryptographie post-quantique.",
+        "keywords": "publications, articles, rapports, recherche, ISO 20022, IA, cryptographie post-quantique",
+    },
+    "projects": {
+        "title": "Projets — Sebastien Rousseau",
+        "description": "Portfolio de bibliothèques open source maintenues par Sebastien Rousseau pour les paiements, le règlement transfrontalier et la cryptographie résistante au quantique.",
+        "keywords": "projets open source, Python, Rust, paiements, ISO 20022, cryptographie post-quantique",
+    },
+    "topics": {
+        "title": "Sujets — Sebastien Rousseau",
+        "description": "Explorez les analyses par thématique : IA appliquée, paiements ISO 20022, cryptographie post-quantique, et transformation des paiements wholesale.",
+        "keywords": "sujets, thématiques, IA, paiements, ISO 20022, cryptographie post-quantique",
+    },
+    "tags": {
+        "title": "Étiquettes — Sebastien Rousseau",
+        "description": "Parcourez les articles par étiquette : IA, ISO 20022, blockchain, cryptographie post-quantique et bien plus.",
+        "keywords": "étiquettes, tags, navigation par sujet",
+    },
+    "contact": {
+        "title": "Me contacter — Sebastien Rousseau",
+        "description": "Entrez en contact avec Sebastien Rousseau pour les conseils en transformation des paiements, la migration ISO 20022 ou la stratégie post-quantique.",
+        "keywords": "contact, conseil, paiements, ISO 20022, cryptographie post-quantique",
+    },
+    "accessibility": {
+        "title": "Accessibilité — Sebastien Rousseau",
+        "description": "Déclaration d'accessibilité : conformité WCAG 2.2 AA, principes inclusifs, retour d'expérience et coordonnées de signalement.",
+        "keywords": "accessibilité, WCAG, conformité, inclusion numérique, audit",
+    },
+    "privacy": {
+        "title": "Politique de confidentialité — Sebastien Rousseau",
+        "description": "Comment ce site collecte, utilise et protège vos données. Mesure d'audience anonyme, cookies, hébergement et droits RGPD.",
+        "keywords": "vie privée, RGPD, cookies, données personnelles, analytics",
+    },
+    "terms": {
+        "title": "Conditions d'utilisation — Sebastien Rousseau",
+        "description": "Conditions générales d'utilisation du site sebastienrousseau.com : licence du contenu, restrictions, marques et juridiction.",
+        "keywords": "conditions, mentions légales, licence, copyright",
+    },
+    "made-with-static-site-generator": {
+        "title": "Conçu avec Static Site Generator — Sebastien Rousseau",
+        "description": "Ce site est généré avec Shokunin, un générateur de sites statiques rapide écrit en Rust.",
+        "keywords": "Shokunin, générateur de sites statiques, Rust, performance",
+    },
+    "made-with-shokunin": {
+        "title": "Conçu avec Shokunin — Sebastien Rousseau",
+        "description": "Ce site est conçu avec Shokunin, un générateur de sites statiques en Rust optimisé pour la performance et le SEO.",
+        "keywords": "Shokunin, SSG, Rust, performance, SEO",
+    },
+    "playlists": {
+        "title": "Playlists — Sebastien Rousseau",
+        "description": "Sélection musicale et auditive de Sebastien Rousseau.",
+        "keywords": "playlists, musique",
+    },
+    "404": {
+        "title": "Page introuvable — Sebastien Rousseau",
+        "description": "La page demandée est introuvable. Retournez à l'accueil ou utilisez la recherche.",
+        "keywords": "404, page introuvable",
+    },
+    "offline": {
+        "title": "Hors ligne — Sebastien Rousseau",
+        "description": "Vous êtes hors ligne. Reconnectez-vous pour accéder au contenu.",
+        "keywords": "hors ligne, PWA",
+    },
+    "thanks": {
+        "title": "Merci — Sebastien Rousseau",
+        "description": "Merci de votre message. Je reviendrai vers vous très bientôt.",
+        "keywords": "merci",
+    },
+}
+
+# Body-string patches applied to every FR static page. These are
+# additional English phrases that appear in rendered page bodies and
+# need localising. They're idempotent (no-op if the string is absent).
+STATIC_BODY_PATCHES: list[tuple[str, str]] = [
+    # Topic hub breadcrumb + headings
+    (r'<a href="/">Home</a> &middot; <span>Topics</span>',
+     '<a href="/fr/">Accueil</a> &middot; <span>Sujets</span>'),
+    (r'>Home<', '>Accueil<'),
+    (r'>Topics</h1>', '>Sujets</h1>'),
+    (r'>PILLARS</p>', '>PILIERS</p>'),
+    (r'PILLAR · TOPIC', 'PILIER · SUJET'),
+    (r'Curated topic clusters[^<]+',
+     "Clusters de sujets — choisissez un fil et suivez-le à travers l'archive."),
+    # Hero / shared section labels
+    (r'>Latest research<', '>Recherches récentes<'),
+    (r'>Read latest research<', '>Lire les recherches récentes<'),
+    (r'>Featured articles<', '>Articles à la une<'),
+    (r'>All articles<', '>Tous les articles<'),
+    (r'>Read more<', '>Lire la suite<'),
+    (r'>Read full article<', '>Lire l\'article complet<'),
+    (r'>Newest first<', '>Plus récent d\'abord<'),
+    (r'>Oldest first<', '>Plus ancien d\'abord<'),
+    (r'>By topic<', '>Par sujet<'),
+    (r'>All topics<', '>Tous les sujets<'),
+    (r'>By tag<', '>Par étiquette<'),
+    (r'>All tags<', '>Toutes les étiquettes<'),
+    (r'>Published<', '>Publié<'),
+    (r'>Updated<', '>Mis à jour<'),
+    # /papers/ + /projects/ chrome
+    (r'>Open source<', '>Open source<'),
+    (r'>Authored & maintained<', '>Écrits et maintenus<'),
+    (r'>Open source for the future of finance\.<', '>Open source pour l\'avenir de la finance.<'),
+    (r'>A portfolio of', '>Un portfolio de'),
+    # /contact/
+    (r'>Start a conversation<', '>Démarrer une conversation<'),
+    (r'>Drop me a line<', '>Écrivez-moi<'),
+    # Generic CTAs that may appear on multiple pages
+    (r'>Learn more<', '>En savoir plus<'),
+    (r'>Subscribe<', '>S\'abonner<'),
+    (r'>Follow<', '>Suivre<'),
+    (r'>Latest<', '>Récent<'),
+]
+
+_STATIC_BODY_COMPILED: list[tuple[re.Pattern[str], str]] = [
+    (re.compile(p), r) for p, r in STATIC_BODY_PATCHES
+]
+
+
+def render_static_translation(slug: str) -> str | None:
+    """Fork the rendered EN page at ``public/{slug}/index.html``,
+    translate chrome + body text, patch meta tags, swap canonical/og to
+    point at ``/fr/{slug}/``, then return the HTML.
+    """
+    cfg = STATIC_PAGES_FR.get(slug)
+    if cfg is None:
+        return None
+    shell_src = PUBLIC / slug / "index.html"
+    if not shell_src.is_file():
+        return None
+    shell = shell_src.read_text(encoding="utf-8")
+
+    title = cfg["title"]
+    description = cfg["description"]
+    keywords = cfg.get("keywords", "")
+    url_fr = f"{BASE}/fr/{slug}/"
+
+    shell = _HTML_LANG_RE.sub(r'\1fr-FR\2', shell, count=1)
+    shell = _TITLE_RE.sub(f'<title>{_html.escape(title)}</title>', shell, count=1)
+    shell = _DESC_META_RE.sub(rf'\1{_html.escape(description, quote=True)}\2', shell, count=1)
+    if keywords:
+        shell = _KW_META_RE.sub(rf'\1{_html.escape(keywords, quote=True)}\2', shell, count=1)
+    shell = _OG_TITLE_RE.sub(rf'\1{_html.escape(title, quote=True)}\2', shell, count=1)
+    shell = _OG_DESC_RE.sub(rf'\1{_html.escape(description, quote=True)}\2', shell, count=1)
+    shell = _OG_URL_RE.sub(rf'\1{url_fr}\2', shell, count=1)
+    shell = _OG_LOCALE_RE.sub(r'\1fr_FR\2', shell, count=1)
+    shell = _CANONICAL_RE.sub(rf'\1{url_fr}\2', shell, count=1)
+
+    # Rewrite EN article URLs inside the body to FR counterparts.
+    shell = rewrite_en_urls(shell)
+
+    # Localise chrome (nav / footer / search / aria) + body text.
+    shell = translate_chrome(shell)
+    for pat, repl in _STATIC_BODY_COMPILED:
+        shell = pat.sub(repl, shell)
+
+    # Localise feed links.
+    shell = re.sub(
+        r'href="(?:https?://[^/"]+)?/atom\.xml"',
+        'href="/fr/atom.xml"',
+        shell,
+    )
+    shell = re.sub(
+        r'href="(?:https?://[^/"]+)?/rss\.xml"',
+        'href="/fr/rss.xml"',
+        shell,
+    )
+
+    # Patch the WebPage / WebSite JSON-LD's @id, url, name, description.
+    def patch_jsonld(m: re.Match[str]) -> str:
+        raw = m.group(1)
+        try:
+            data = _json.loads(raw)
+        except _json.JSONDecodeError:
+            return m.group(0)
+        changed = False
+
+        def patch_node(node: dict) -> bool:
+            local = False
+            t = node.get("@type")
+            if t in ("WebPage", "AboutPage", "ContactPage", "CollectionPage"):
+                if "name" in node:
+                    node["name"] = title
+                    local = True
+                if "description" in node:
+                    node["description"] = description
+                    local = True
+                if "url" in node:
+                    node["url"] = url_fr
+                    local = True
+                if "inLanguage" in node:
+                    node["inLanguage"] = "fr"
+                    local = True
+            if t == "BreadcrumbList":
+                items = node.get("itemListElement", [])
+                for item in items:
+                    if not isinstance(item, dict):
+                        continue
+                    pos = item.get("position")
+                    if pos == 1:
+                        item["name"] = "Accueil"
+                        item["item"] = f"{BASE}/"
+                        local = True
+                    elif pos == 2:
+                        item["name"] = title.split(" — ")[0]
+                        item["item"] = url_fr
+                        local = True
+            return local
+
+        if isinstance(data, dict):
+            if patch_node(data):
+                changed = True
+            graph = data.get("@graph")
+            if isinstance(graph, list):
+                for node in graph:
+                    if isinstance(node, dict) and patch_node(node):
+                        changed = True
+        if not changed:
+            return m.group(0)
+        return (
+            '<script type="application/ld+json">'
+            + _json.dumps(data, separators=(",", ":"), ensure_ascii=False)
+            + '</script>'
+        )
+
+    shell = re.sub(
+        r'<script type="application/ld\+json">([\s\S]+?)</script>',
+        patch_jsonld,
+        shell,
+    )
+
+    return shell
+
+
+def write_static_translations() -> int:
+    """Render and write every FR static page. Returns count written."""
+    n = 0
+    for slug in STATIC_PAGES_FR:
+        page = render_static_translation(slug)
+        if page is None:
+            print(f"build_translations: skip static '{slug}' — EN shell missing")
+            continue
+        dst = OUT / slug / "index.html"
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        dst.write_text(page, encoding="utf-8")
+        n += 1
+
+    # Topic sub-pages — clone each /topics/<topic>/ as /fr/topics/<topic>/.
+    # build_topics.py emits the EN versions before us; we fork + translate.
+    topics_dir = PUBLIC / "topics"
+    if topics_dir.is_dir():
+        for topic_dir in sorted(topics_dir.iterdir()):
+            if not topic_dir.is_dir():
+                continue
+            src = topic_dir / "index.html"
+            if not src.is_file():
+                continue
+            page = _render_topic_subpage_fr(topic_dir.name, src.read_text(encoding="utf-8"))
+            dst = OUT / "topics" / topic_dir.name / "index.html"
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            dst.write_text(page, encoding="utf-8")
+            n += 1
+
+    return n
+
+
+# Per-topic French title + lede. Mirrors scripts/build_topics.py:TOPICS.
+TOPIC_FR_LABELS: dict[str, dict[str, str]] = {
+    "post-quantum-cryptography": {
+        "title": "Cryptographie post-quantique",
+        "lede": "Cryptographie sur réseaux euclidiens, normes NIST PQC, paiements résistants au quantique et menace « récolter maintenant, déchiffrer plus tard ». Notes de recherche, bibliothèques open source et playbooks de migration pour les équipes sécurité des services financiers.",
+    },
+    "iso-20022-payments": {
+        "title": "ISO 20022 & Paiements",
+        "lede": "Migration des messages transfrontaliers, conformité d'adresse structurée, SEPA Instant, SWIFT gpi et les rails de paiement wholesale qui portent l'ensemble. Outils, playbooks et calendrier réglementaire.",
+    },
+    "applied-ai-banking": {
+        "title": "IA appliquée à la banque",
+        "lede": "IA générative, LLM multimodaux, voix et modèles de parole — et comment ils redessinent les opérations bancaires, le service client et l'ingénierie produit dans les institutions de premier rang.",
+    },
+    "rust-open-source": {
+        "title": "Rust & Open Source",
+        "lede": "Bibliothèques Rust open source que j'écris et maintiens : journalisation, génération de code, date-heure, primitives cryptographiques, KEM basé sur Kyber, et un générateur de sites statiques Rust.",
+    },
+    "blockchain-digital-assets": {
+        "title": "Blockchain & Actifs numériques",
+        "lede": "Blockchain et actifs numériques : tokenisation, ERC-20, stablecoins, infrastructure cryptomonnaies, et le cadre réglementaire qui les façonne.",
+    },
+}
+
+
+def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:
+    """Fork an EN /topics/<slug>/ page into /fr/topics/<slug>/."""
+    cfg = TOPIC_FR_LABELS.get(topic_slug, {
+        "title": topic_slug.replace("-", " ").title(),
+        "lede": "",
+    })
+    title = cfg["title"]
+    lede = cfg["lede"]
+    page_title = f"{title} — Sebastien Rousseau"
+    url_fr = f"{BASE}/fr/topics/{topic_slug}/"
+
+    shell = _HTML_LANG_RE.sub(r'\1fr-FR\2', shell, count=1)
+    shell = _TITLE_RE.sub(f'<title>{_html.escape(page_title)}</title>', shell, count=1)
+    if lede:
+        shell = _DESC_META_RE.sub(rf'\1{_html.escape(lede, quote=True)}\2', shell, count=1)
+        shell = _OG_DESC_RE.sub(rf'\1{_html.escape(lede, quote=True)}\2', shell, count=1)
+    shell = _OG_TITLE_RE.sub(rf'\1{_html.escape(page_title, quote=True)}\2', shell, count=1)
+    shell = _OG_URL_RE.sub(rf'\1{url_fr}\2', shell, count=1)
+    shell = _OG_LOCALE_RE.sub(r'\1fr_FR\2', shell, count=1)
+    shell = _CANONICAL_RE.sub(rf'\1{url_fr}\2', shell, count=1)
+
+    # Rewrite article cards (EN slugs → FR slugs).
+    shell = rewrite_en_urls(shell)
+
+    # Translate the topic H1 + lede in the body if present.
+    # Pattern from build_topics.py: <h1>{TITLE}</h1>...<p class="topic-lede">{LEDE}</p>
+    shell = re.sub(
+        r'<h1>[^<]+</h1>',
+        f'<h1>{_html.escape(title)}</h1>',
+        shell,
+        count=1,
+    )
+    if lede:
+        shell = re.sub(
+            r'(<p class="topic-lede">)[^<]+(</p>)',
+            rf'\1{_html.escape(lede)}\2',
+            shell,
+            count=1,
+        )
+    # Breadcrumb in body: "Home · Topics · Title" → "Accueil · Sujets · Titre"
+    shell = re.sub(
+        r'<nav aria-label="Breadcrumb" class="topic-breadcrumb">[\s\S]*?</nav>',
+        f'<nav aria-label="Fil d\'Ariane" class="topic-breadcrumb">'
+        f'<a href="/fr/">Accueil</a> &middot; '
+        f'<a href="/fr/topics/index.html">Sujets</a> &middot; '
+        f'<span>{_html.escape(title)}</span></nav>',
+        shell,
+        count=1,
+    )
+    # Topics-page lede on the hub
+    shell = re.sub(
+        r'Curated topic clusters[^<]+',
+        "Clusters de sujets curated — choisissez un fil et suivez-le à travers l'archive.",
+        shell,
+    )
+    shell = re.sub(
+        r'PILLARS', 'PILIERS', shell,
+    )
+    shell = re.sub(
+        r'>Topics</h1>', '>Sujets</h1>', shell,
+    )
+    shell = re.sub(
+        r'PILLAR · TOPIC', 'PILIER · SUJET', shell,
+    )
+    shell = re.sub(
+        r'(\d+) article\(s\)', r'\1 article(s)', shell,
+    )
+
+    # Patch JSON-LD breadcrumb + URLs to point to /fr/topics/.
+    def patch_jsonld(m: re.Match[str]) -> str:
+        raw = m.group(1)
+        try:
+            data = _json.loads(raw)
+        except _json.JSONDecodeError:
+            return m.group(0)
+        changed = False
+
+        def patch_node(node: dict) -> bool:
+            local = False
+            t = node.get("@type")
+            if t == "CollectionPage":
+                if "name" in node:
+                    node["name"] = title
+                    local = True
+                if "description" in node and lede:
+                    node["description"] = lede
+                    local = True
+                if "url" in node:
+                    node["url"] = url_fr
+                    local = True
+                if "inLanguage" in node:
+                    node["inLanguage"] = "fr"
+                    local = True
+            if t == "BreadcrumbList":
+                for item in node.get("itemListElement", []):
+                    if not isinstance(item, dict):
+                        continue
+                    pos = item.get("position")
+                    if pos == 1:
+                        item["name"] = "Accueil"
+                        item["item"] = f"{BASE}/"
+                        local = True
+                    elif pos == 2:
+                        item["name"] = "Sujets"
+                        item["item"] = f"{BASE}/fr/topics/"
+                        local = True
+                    elif pos == 3:
+                        item["name"] = title
+                        item["item"] = url_fr
+                        local = True
+            return local
+
+        if isinstance(data, dict):
+            if patch_node(data):
+                changed = True
+            graph = data.get("@graph")
+            if isinstance(graph, list):
+                for node in graph:
+                    if isinstance(node, dict) and patch_node(node):
+                        changed = True
+        if not changed:
+            return m.group(0)
+        return (
+            '<script type="application/ld+json">'
+            + _json.dumps(data, separators=(",", ":"), ensure_ascii=False)
+            + '</script>'
+        )
+
+    shell = re.sub(
+        r'<script type="application/ld\+json">([\s\S]+?)</script>',
+        patch_jsonld,
+        shell,
+    )
+
+    # Chrome localisation
+    shell = translate_chrome(shell)
+    # Feed links
+    shell = re.sub(
+        r'href="(?:https?://[^/"]+)?/atom\.xml"',
+        'href="/fr/atom.xml"',
+        shell,
+    )
+    shell = re.sub(
+        r'href="(?:https?://[^/"]+)?/rss\.xml"',
+        'href="/fr/rss.xml"',
+        shell,
+    )
+    return shell
+
+
 def main() -> None:
     if not SRC.is_dir():
         print("build_translations: _posts/fr not found — nothing to do")
@@ -636,7 +1311,69 @@ def main() -> None:
         if hub:
             (OUT / "index.html").write_text(hub, encoding="utf-8")
             written += 1
-    print(f"build_translations: wrote {written} page(s) ({len(entries)} translation(s) + hub if any)")
+
+    # Static-page mirrors (about, papers, projects, topics, tags,
+    # contact, accessibility, privacy, terms, …) — keep FR visitors
+    # inside /fr/ when they click any nav or footer link.
+    static_written = write_static_translations()
+    written += static_written
+
+    # FR search index — visible text of every FR page, loaded by the
+    # Shokunin search palette when the visitor is in /fr/.
+    search_entries = _build_fr_search_index()
+    (OUT / "search-index.json").write_text(
+        _json.dumps({"entries": search_entries}, ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8",
+    )
+
+    print(
+        f"build_translations: wrote {written} page(s) "
+        f"({len(entries)} translation(s) + hub + {static_written} static page(s)) "
+        f"+ FR search index ({len(search_entries)} entries)"
+    )
+
+
+# ---------------------------------------------------------------------------
+# FR search index
+# ---------------------------------------------------------------------------
+
+_TAG_RE = re.compile(r'<[^>]+>')
+_WHITESPACE_RE = re.compile(r'\s+')
+_TITLE_TAG_RE = re.compile(r'<title>([^<]+)</title>', re.IGNORECASE)
+_MAIN_TAG_RE = re.compile(r'<main\b[\s\S]*?</main>', re.IGNORECASE)
+
+
+def _extract_visible_text(html: str) -> str:
+    """Strip every tag inside <main>, collapse whitespace, return plain text."""
+    m = _MAIN_TAG_RE.search(html)
+    body = m.group(0) if m else html
+    # Drop <script> and <style> blocks first.
+    body = re.sub(r'<script[\s\S]*?</script>', ' ', body, flags=re.IGNORECASE)
+    body = re.sub(r'<style[\s\S]*?</style>', ' ', body, flags=re.IGNORECASE)
+    # Drop HTML comments.
+    body = re.sub(r'<!--[\s\S]*?-->', ' ', body)
+    text = _TAG_RE.sub(' ', body)
+    text = _html.unescape(text)
+    return _WHITESPACE_RE.sub(' ', text).strip()
+
+
+def _build_fr_search_index() -> list[dict[str, str]]:
+    """Walk public/fr/ for rendered HTML and build search entries."""
+    entries: list[dict[str, str]] = []
+    if not OUT.is_dir():
+        return entries
+    for path in sorted(OUT.rglob("index.html")):
+        rel = path.relative_to(PUBLIC).as_posix()  # e.g. "fr/about/index.html"
+        url = "/" + rel
+        html = path.read_text(encoding="utf-8")
+        title_m = _TITLE_TAG_RE.search(html)
+        title = _html.unescape(title_m.group(1).strip()) if title_m else url
+        text = _extract_visible_text(html)
+        # Trim — the EN index keeps ~2KB per entry. Match that.
+        if len(text) > 2200:
+            text = text[:2200]
+        entries.append({"title": title, "url": url, "content": text})
+    return entries
 
 
 if __name__ == "__main__":
