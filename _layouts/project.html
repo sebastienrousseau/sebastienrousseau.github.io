@@ -539,6 +539,15 @@
       .cat-grid .newsroom-card-body h3{font-size:18px;-webkit-line-clamp:2}
       .cat-grid .newsroom-card-body .newsroom-eyebrow{font-size:10.5px}
       .cat-grid .newsroom-card-body .newsroom-excerpt{font-size:13.5px;line-height:1.5;-webkit-line-clamp:4;display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}
+      /* Live GitHub repo stats — injected at build time by
+         scripts/postbuild.py:inject_github_stats() from
+         public/_data/gh-stats.json. Refreshed nightly by the
+         refresh-gh-stats workflow. */
+      .gh-stats-row{display:flex;flex-wrap:wrap;gap:6px 10px;margin:10px 0 0;padding:0;list-style:none;font-size:11px;line-height:1.4;color:var(--ink-mute)}
+      .gh-stats-row .gh-stat{display:inline-flex;align-items:center;gap:3px;padding:2px 7px;border:1px solid var(--border);border-radius:999px;background:var(--card);white-space:nowrap}
+      .gh-stats-row .gh-stars{color:#d4a017}
+      [data-theme=dark] .gh-stats-row .gh-stars,html:not([data-theme=light]) .gh-stats-row .gh-stars{color:#e3b341}
+      .gh-stats-row .gh-pushed{color:var(--ink-faint)}
 
       /* Bottom finale CTA on /projects/. Bigger margin so it breathes after
          the FAQ accordion. */

@@ -1,11 +1,11 @@
 {
-  "description": "Comment IBM Qiskit et la transformée de Fourier quantique révolutionnent l'analyse de ratios de crédit en finance, offrant précision et rapidité inédites.",
+  "locale": "fr_FR",
+  "language": "fr",
+  "subtitle": "Optimiser l'analyse de ratios de crédit avec IBM Qiskit et la transformée de Fourier quantique",
   "title": "Qiskit & transformée de Fourier quantique pour l'analyse de ratios de crédit",
   "date": "January 08, 2024",
-  "language": "fr",
   "keywords": "calcul quantique, finance, analyse de ratios de crédit, Qiskit, transformée de Fourier quantique, IBM, apprentissage automatique, intelligence artificielle, évaluation du risque financier, solvabilité",
-  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
-  "subtitle": "Optimiser l'analyse de ratios de crédit avec IBM Qiskit et la transformée de Fourier quantique",
-  "locale": "fr_FR",
-  "banner_alt": "Salle d'ordinateur quantique"
+  "description": "Comment IBM Qiskit et la transformée de Fourier quantique révolutionnent l'analyse de ratios de crédit en finance, offrant précision et rapidité inédites.",
+  "banner_alt": "Salle d'ordinateur quantique",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp"
 }

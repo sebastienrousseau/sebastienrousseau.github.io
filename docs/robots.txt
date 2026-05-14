@@ -60,3 +60,8 @@ Allow: /
 Sitemap: https://sebastienrousseau.com/sitemap.xml
 Sitemap: https://sebastienrousseau.com/news-sitemap.xml
 Sitemap: https://sebastienrousseau.com/fr/news-sitemap.xml
+
+# AI-crawler directory (proposed convention, RFC pending).
+# See https://llmstxt.org/ — both files are CC BY 4.0 with attribution.
+LLMs: https://sebastienrousseau.com/llms.txt
+LLMs-Full: https://sebastienrousseau.com/llms-full.txt

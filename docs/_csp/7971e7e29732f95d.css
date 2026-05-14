@@ -475,6 +475,15 @@
       .cat-grid .newsroom-card-body h3{font-size:18px;-webkit-line-clamp:2}
       .cat-grid .newsroom-card-body .newsroom-eyebrow{font-size:10.5px}
       .cat-grid .newsroom-card-body .newsroom-excerpt{font-size:13.5px;line-height:1.5;-webkit-line-clamp:4;display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}
+      /* Live GitHub repo stats — injected at build time by
+         scripts/postbuild.py:inject_github_stats() from
+         public/_data/gh-stats.json. Refreshed nightly by the
+         refresh-gh-stats workflow. */
+      .gh-stats-row{display:flex;flex-wrap:wrap;gap:6px 10px;margin:10px 0 0;padding:0;list-style:none;font-size:11px;line-height:1.4;color:var(--ink-mute)}
+      .gh-stats-row .gh-stat{display:inline-flex;align-items:center;gap:3px;padding:2px 7px;border:1px solid var(--border);border-radius:999px;background:var(--card);white-space:nowrap}
+      .gh-stats-row .gh-stars{color:#d4a017}
+      [data-theme=dark] .gh-stats-row .gh-stars,html:not([data-theme=light]) .gh-stats-row .gh-stars{color:#e3b341}
+      .gh-stats-row .gh-pushed{color:var(--ink-faint)}
 
       /* Bottom finale CTA on /projects/. Bigger margin so it breathes after
          the FAQ accordion. */
@@ -652,12 +661,4 @@
       /* Hide the floating Static Site Generator search button. Our nav has its own .ap-search
          which forwards clicks to this button via main.js. */
       #ssg-search-btn{position:absolute!important;left:-9999px!important;top:-9999px!important;width:1px!important;height:1px!important;clip:rect(0 0 0 0)!important;clip-path:inset(50%)!important;overflow:hidden!important;pointer-events:none}
-      .playlist-intro{max-width:760px;margin:0 auto 40px;text-align:center;font-size:clamp(18px,2vw,22px);line-height:1.45;color:var(--ink-mute)}
-      .playlist-intro p{margin:0}
-      .spotify-frame{border-radius:12px;border:0;display:block;width:100%}
-      .playlist-card .newsroom-card-body{padding:22px 24px 22px}
-      .playlist-card .newsroom-excerpt{margin-bottom:16px}
-      .playlist-featured .newsroom-featured-media.spotify-media{background:#1f1f1f;aspect-ratio:1/1;padding:0;display:block}
-      .playlist-featured .spotify-frame{width:100%;height:100%;border-radius:0}
-      @media (max-width:833px){.playlist-featured .newsroom-featured-media.spotify-media{aspect-ratio:16/9}}
     

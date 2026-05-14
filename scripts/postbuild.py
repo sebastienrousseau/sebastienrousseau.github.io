@@ -522,6 +522,11 @@ Allow: /
 Sitemap: https://sebastienrousseau.com/sitemap.xml
 Sitemap: https://sebastienrousseau.com/news-sitemap.xml
 Sitemap: https://sebastienrousseau.com/fr/news-sitemap.xml
+
+# AI-crawler directory (proposed convention, RFC pending).
+# See https://llmstxt.org/ — both files are CC BY 4.0 with attribution.
+LLMs: https://sebastienrousseau.com/llms.txt
+LLMs-Full: https://sebastienrousseau.com/llms-full.txt
 """
 
 
@@ -616,6 +621,77 @@ def write_llms_txt(public: Path) -> bool:
     new = build_llms_txt()
     cur = target.read_text(encoding="utf-8") if target.is_file() else ""
     if cur.strip() == new.strip():
+        return False
+    target.write_text(new, encoding="utf-8")
+    return True
+
+
+def build_llms_full_txt(public: Path) -> str:
+    """Emit a single plain-text dump of every published article — the
+    AI-crawler equivalent of an article archive. Perplexity, ChatGPT
+    Search and Anthropic's web fetcher use this to ground citations
+    without needing to crawl the HTML.
+    """
+    posts_dir = Path("_posts")
+    if not posts_dir.is_dir():
+        return ""
+
+    lines: list[str] = []
+    lines.append("# Sebastien Rousseau — Full article corpus (EN)")
+    lines.append("")
+    lines.append(
+        "> Plain-text dump of every dated article on https://sebastienrousseau.com/, "
+        "ordered most-recent first. Each article is delimited by a header line."
+    )
+    lines.append("")
+    lines.append("Author: Sebastien Rousseau")
+    lines.append("Site: https://sebastienrousseau.com/")
+    lines.append("License: CC BY 4.0 with attribution — please cite the canonical URL.")
+    lines.append("")
+
+    # Date prefix sort, most-recent first.
+    md_files = sorted(posts_dir.glob("2*.md"), reverse=True)
+    for md in md_files:
+        text = md.read_text(encoding="utf-8")
+        # Split frontmatter / body.
+        parts = text.split("---", 2)
+        if len(parts) < 3:
+            continue
+        body = parts[2].strip()
+        # Extract frontmatter title + url.
+        fm = parts[1]
+        m_title = re.search(r'^title:\s*"((?:[^"\\]|\\.)*)"', fm, re.MULTILINE)
+        m_date = re.search(r'^date:\s*"((?:[^"\\]|\\.)*)"', fm, re.MULTILINE)
+        title = m_title.group(1) if m_title else md.stem
+        date = m_date.group(1) if m_date else ""
+        url = f"https://sebastienrousseau.com/{md.stem}/"
+        # Strip Shokunin's `.class="…"` image-suffix syntax + reference-link
+        # definitions so the dump reads as clean prose.
+        body = re.sub(r'\.class=\\?"[^"\n]*"', "", body)
+        body = re.sub(r'^\[\d+\]:\s+\S+(?:\s+"[^"]*")?\s*$', "", body, flags=re.MULTILINE)
+        # Collapse 3+ blank lines.
+        body = re.sub(r"\n{3,}", "\n\n", body).strip()
+
+        lines.append("=" * 72)
+        lines.append(f"## {title}")
+        lines.append("")
+        lines.append(f"Date: {date}")
+        lines.append(f"URL: {url}")
+        lines.append("")
+        lines.append(body)
+        lines.append("")
+
+    lines.append("")
+    return "\n".join(lines)
+
+
+def write_llms_full_txt(public: Path) -> bool:
+    target = public / "llms-full.txt"
+    new = build_llms_full_txt(public)
+    if not new:
+        return False
+    cur = target.read_text(encoding="utf-8") if target.is_file() else ""
+    if cur == new:
         return False
     target.write_text(new, encoding="utf-8")
     return True
@@ -1544,6 +1620,207 @@ def inject_speculation_rules(html: str) -> str:
     return _HEAD_END_RE.sub(SPECULATION_RULES_BLOCK + '</head>', html, count=1)
 
 
+# ---------------------------------------------------------------------------
+# Live GitHub repo stats — injected into project cards on /projects/ and
+# the home page. Source data: public/_data/gh-stats.json (refreshed
+# nightly by .github/workflows/refresh-gh-stats.yml). Build-time
+# injection beats a runtime fetch: zero JS, zero CLS, zero rate-limit
+# risk.
+# ---------------------------------------------------------------------------
+
+import json as _gh_json
+from datetime import datetime as _gh_dt, timezone as _gh_tz
+
+_GH_STATS_PATH = Path("_data/gh-stats.json")
+_GH_CARD_RE = re.compile(
+    r'(<article class=(?:"(?:newsroom-card|proj-card)[^"]*"|(?:newsroom-card|proj-card))[^>]*>)'
+    r'([\s\S]+?)(</article>)',
+)
+_GH_REPO_HREF_RE = re.compile(
+    r'href=["\']?https?://github\.com/(sebastienrousseau/[a-zA-Z0-9._-]+)/?["\']?',
+)
+_GH_HREF_RE = re.compile(r'href=(?:"([^"]+)"|([^\s>]+))')
+
+
+def _gh_stats_index() -> dict[str, dict]:
+    if not _GH_STATS_PATH.is_file():
+        return {}
+    try:
+        data = _gh_json.loads(_GH_STATS_PATH.read_text(encoding="utf-8"))
+    except _gh_json.JSONDecodeError:
+        return {}
+    return {entry["slug"]: entry for entry in data.get("repos", []) if "slug" in entry}
+
+
+_GH_RELATIVE_LIMITS = (
+    (60, "il y a {n} s", "{n}s ago"),
+    (3600, "il y a {n} min", "{n}m ago"),
+    (86400, "il y a {n} h", "{n}h ago"),
+    (604800, "il y a {n} j", "{n}d ago"),
+    (2629800, "il y a {n} sem.", "{n}w ago"),
+    (31557600, "il y a {n} mois", "{n}mo ago"),
+)
+
+
+def _relative_time(iso_ts: str, fr: bool = False) -> str:
+    """Render an ISO-8601 timestamp as a 'N units ago' label."""
+    if not iso_ts:
+        return ""
+    try:
+        # GH returns "2026-05-15T16:34:21Z"
+        ts = _gh_dt.fromisoformat(iso_ts.replace("Z", "+00:00"))
+    except ValueError:
+        return ""
+    delta = (_gh_dt.now(tz=_gh_tz.utc) - ts).total_seconds()
+    if delta < 0:
+        delta = 0
+    for cutoff, fmt_fr, fmt_en in _GH_RELATIVE_LIMITS:
+        if delta < cutoff:
+            unit = max(1, int(delta * (cutoff // (cutoff // (cutoff // 60 if cutoff >= 3600 else 1))) // cutoff)) if False else 1
+            # Simpler: use the right divisor.
+            break
+    if delta < 60:
+        n = int(delta)
+        return f"il y a {n} s" if fr else f"{n}s ago"
+    if delta < 3600:
+        n = int(delta // 60)
+        return f"il y a {n} min" if fr else f"{n}m ago"
+    if delta < 86400:
+        n = int(delta // 3600)
+        return f"il y a {n} h" if fr else f"{n}h ago"
+    if delta < 604800:
+        n = int(delta // 86400)
+        return f"il y a {n} j" if fr else f"{n}d ago"
+    if delta < 2629800:
+        n = int(delta // 604800)
+        return f"il y a {n} sem." if fr else f"{n}w ago"
+    if delta < 31557600:
+        n = int(delta // 2629800)
+        return f"il y a {n} mois" if fr else f"{n}mo ago"
+    n = int(delta // 31557600)
+    return f"il y a {n} an{'s' if n > 1 else ''}" if fr else f"{n}y ago"
+
+
+def _format_count(n: int) -> str:
+    """1234 -> 1.2k, 1234567 -> 1.2M."""
+    if n >= 1000000:
+        return f"{n / 1000000:.1f}M".replace(".0M", "M")
+    if n >= 1000:
+        return f"{n / 1000:.1f}k".replace(".0k", "k")
+    return str(n)
+
+
+def _render_gh_badges(info: dict, fr: bool) -> str:
+    stars = info.get("stars", 0)
+    forks = info.get("forks", 0)
+    license_id = info.get("license", "")
+    pushed = info.get("pushed_at", "")
+    pushed_rel = _relative_time(pushed, fr=fr)
+    label_last = "dernier commit" if fr else "last commit"
+    aria_stars = (f"{stars} étoiles" if fr else f"{stars} stars") if stars else ""
+    aria_forks = (f"{forks} forks" if fr else f"{forks} forks") if forks else ""
+    parts: list[str] = []
+    if stars:
+        parts.append(
+            f'<span class="gh-stat gh-stars" aria-label="{aria_stars}">'
+            f'★ {_format_count(stars)}</span>'
+        )
+    if forks:
+        parts.append(
+            f'<span class="gh-stat gh-forks" aria-label="{aria_forks}">'
+            f'⑂ {_format_count(forks)}</span>'
+        )
+    if license_id and license_id not in ("NOASSERTION", "", "OTHER"):
+        parts.append(f'<span class="gh-stat gh-license">{license_id}</span>')
+    if pushed_rel:
+        parts.append(
+            f'<span class="gh-stat gh-pushed" title="{pushed[:10]}">'
+            f'{label_last} {pushed_rel}</span>'
+        )
+    if not parts:
+        return ""
+    aria = "Statistiques du dépôt" if fr else "Repository stats"
+    return f'<p class="gh-stats-row" aria-label="{aria}">{"".join(parts)}</p>'
+
+
+def _normalise_url(u: str) -> str:
+    """Normalise a URL for equality: drop scheme, www., trailing slash, lower-case."""
+    u = u.strip().lower()
+    u = re.sub(r'^https?://', '', u)
+    u = re.sub(r'^www\.', '', u)
+    return u.rstrip('/')
+
+
+def _gh_lookup(inner: str, stats_index: dict[str, dict]) -> dict | None:
+    """Resolve a card to its repo entry using, in order:
+       1) any github.com/sebastienrousseau/<slug> href
+       2) the homepage URL recorded in the stats payload
+          (scheme / www / trailing-slash insensitive)
+       3) the card's <h3> text matching the repo name (case-insensitive).
+    """
+    if not stats_index:
+        return None
+    # 1) direct GH link
+    m = _GH_REPO_HREF_RE.search(inner)
+    if m and m.group(1) in stats_index:
+        return stats_index[m.group(1)]
+    # 2 + 3) build small lookup helpers
+    homepage_idx = {
+        _normalise_url(e.get("homepage") or ""): e
+        for e in stats_index.values()
+        if e.get("homepage")
+    }
+    name_idx = {(e.get("name") or "").lower(): e for e in stats_index.values()}
+    # 2) homepage match (handle quoted + unquoted href on the home shell)
+    for hm in _GH_HREF_RE.finditer(inner):
+        href = (hm.group(1) or hm.group(2) or "").strip()
+        if not href.startswith(("http://", "https://")):
+            continue
+        key = _normalise_url(href)
+        if key in homepage_idx:
+            return homepage_idx[key]
+    # 3) h3 text match
+    h3 = re.search(r'<h3[^>]*>\s*<a[^>]*>([^<]+)</a>', inner)
+    if h3:
+        title = h3.group(1).strip().lower()
+        if title in name_idx:
+            return name_idx[title]
+    return None
+
+
+def inject_github_stats(html: str, stats_index: dict[str, dict]) -> str:
+    """Inject star / fork / last-commit badges into every newsroom-card
+    on the page whose first GitHub anchor or project homepage URL
+    matches a tracked repo."""
+    if not stats_index or 'newsroom-card' not in html:
+        return html
+    is_fr = _is_french(html)
+
+    def patch(m: re.Match[str]) -> str:
+        open_tag, inner, close_tag = m.group(1), m.group(2), m.group(3)
+        # Skip if badges already injected.
+        if 'class="gh-stats-row"' in inner:
+            return m.group(0)
+        info = _gh_lookup(inner, stats_index)
+        if not info:
+            return m.group(0)
+        badges = _render_gh_badges(info, fr=is_fr)
+        if not badges:
+            return m.group(0)
+        # Insert before </div></article> (after the body, inside the card).
+        inner_new = re.sub(
+            r'(</div>\s*)$',
+            badges + r'\1',
+            inner,
+            count=1,
+        )
+        if inner_new == inner:
+            inner_new = inner + badges
+        return open_tag + inner_new + close_tag
+
+    return _GH_CARD_RE.sub(patch, html)
+
+
 def _translated_slugs() -> tuple[set[str], set[str]]:
     """Discover which EN and FR slugs have rendered counterparts under
     ``public/``. Returns ``(en_slugs_with_fr, fr_slugs_with_en)``.
@@ -1630,6 +1907,7 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
     nav_index = build_post_nav_index(pages)
     fr_titles = build_fr_title_index(pages)
     en_with_fr, fr_with_en = _translated_slugs()
+    gh_stats = _gh_stats_index()
     sri_patched = 0
     csp_patched = 0
     itemlist_patched = 0
@@ -1723,6 +2001,8 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
             hreflang_patched += 1
         # Speculation Rules — hover-prerender every internal link.
         patched_hl = inject_speculation_rules(patched_hl)
+        # Live GitHub stats on project / home cards.
+        patched_hl = inject_github_stats(patched_hl, gh_stats)
         patched2 = inject_jsonld_hashes(patched_hl)
         if patched2 != patched_nav:
             csp_patched += 1
@@ -1736,6 +2016,7 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
     # Overwrite robots.txt + llms.txt with the curated versions.
     robots_written = write_robots(PUBLIC)
     llms_written = write_llms_txt(PUBLIC)
+    llms_full_written = write_llms_full_txt(PUBLIC)
 
     # Repair Shokunin's RSS / Atom / news-sitemap URLs (.meta/ + localhost).
     # Must run BEFORE the ampersand-escape pass so the URL rewrite operates
@@ -1764,7 +2045,8 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
         f"{feed_urls_patched} feed(s) URL-repaired, "
         f"{xml_patched} XML feed(s) scrubbed, "
         f"robots.txt {'updated' if robots_written else 'unchanged'}, "
-        f"llms.txt {'updated' if llms_written else 'unchanged'}"
+        f"llms.txt {'updated' if llms_written else 'unchanged'}, "
+        f"llms-full.txt {'updated' if llms_full_written else 'unchanged'}"
     )
 
 
