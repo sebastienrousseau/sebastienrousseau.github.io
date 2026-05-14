@@ -1625,7 +1625,7 @@ def build_fr_title_index(pages: list[Path]) -> dict[str, str]:
 
 
 _FAQ_H2_RE = re.compile(
-    r'<h2 id="(?:frequently-asked-questions|foire-aux-questions)"[^>]*>'
+    r'<h2 id="(frequently-asked-questions|foire-aux-questions)"[^>]*>'
     r'([\s\S]+?)</h2>'
     r'([\s\S]+?)'
     r'(?=<h2|<aside|</main>|<hr|<footer)',
@@ -1642,7 +1642,8 @@ def _convert_faq_to_qa(html: str) -> str:
     soft = "Réponses." if is_fr else "Answers."
 
     def patch(m: re.Match[str]) -> str:
-        body = m.group(2)
+        faq_id = m.group(1)  # preserve original anchor so TOC links stay valid
+        body = m.group(3)
         # Strip the trailing "<a class='heading-anchor'>#</a>" inside H2.
         # Walk for Q/A pairs: <p><strong>Q?</strong></p><p>A</p>
         qa_pairs: list[tuple[str, str]] = []
@@ -1677,10 +1678,10 @@ def _convert_faq_to_qa(html: str) -> str:
             return m.group(0)
 
         new_h2 = (
-            f'<h2 id="faq-heading" class="qa-headline">{headline} '
+            f'<h2 id="{faq_id}" class="qa-headline">{headline} '
             f'<span class="qa-headline-soft">{soft}</span></h2>'
         )
-        out_parts: list[str] = [new_h2, '<section class="qa-list" aria-labelledby="faq-heading">']
+        out_parts: list[str] = [new_h2, f'<section class="qa-list" aria-labelledby="{faq_id}">']
         for q, a in qa_pairs:
             out_parts.append(
                 f'<details class="qa-item"><summary class="qa-q">{q}</summary>'
