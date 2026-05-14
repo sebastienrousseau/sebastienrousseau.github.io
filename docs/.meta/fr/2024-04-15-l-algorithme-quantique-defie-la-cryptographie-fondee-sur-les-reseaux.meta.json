@@ -1,11 +1,11 @@
 {
-  "keywords": "calcul quantique, algorithme quantique, cryptographie sur réseaux, LWE, chiffrement, cryptographie post-quantique, cybersécurité, Yilei Chen, recherche cryptographique, menaces de sécurité",
-  "date": "April 15, 2024",
-  "locale": "fr_FR",
-  "language": "fr",
   "title": "Un algorithme quantique met au défi la cryptographie sur réseaux",
   "subtitle": "Le prochain algorithme quantique en temps polynomial contre la cryptographie sur réseaux",
-  "description": "Un nouvel algorithme quantique en temps polynomial de Yilei Chen cible la cryptographie sur réseaux. Implications pour les standards post-quantiques, dont CRYSTALS-Kyber.",
+  "locale": "fr_FR",
+  "banner_alt": "Bannière représentant des nœuds réseau dans un espace numérique bleu",
+  "keywords": "calcul quantique, algorithme quantique, cryptographie sur réseaux, LWE, chiffrement, cryptographie post-quantique, cybersécurité, Yilei Chen, recherche cryptographique, menaces de sécurité",
+  "language": "fr",
   "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
-  "banner_alt": "Bannière représentant des nœuds réseau dans un espace numérique bleu"
+  "description": "Un nouvel algorithme quantique en temps polynomial de Yilei Chen cible la cryptographie sur réseaux. Implications pour les standards post-quantiques, dont CRYSTALS-Kyber.",
+  "date": "April 15, 2024"
 }

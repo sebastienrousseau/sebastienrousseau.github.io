@@ -160,9 +160,12 @@ CHROME_PATCHES: list[tuple[str, str]] = [
     (r'<li><a href="/projects/index\.html">Projects</a></li>',
      '<li><a href="/fr/projects/index.html">Projets</a></li>'),
     (r'<li><a href="/articles/index\.html">Articles</a></li>',
-     '<li><a href="/fr/index.html">Articles</a></li>'),
+     '<li><a href="/fr/articles/index.html">Articles</a></li>'),
     (r'<li><a href="/contact/index\.html">Contact</a></li>',
      '<li><a href="/fr/contact/index.html">Contact</a></li>'),
+    # Brand / home link in the top nav — point FR pages at /fr/, not /.
+    (r'<a class="ap-brand" href="/index\.html"',
+     '<a class="ap-brand" href="/fr/index.html"'),
     (r'<li><a href="/playlists/index\.html">Playlists</a></li>',
      '<li><a href="/fr/playlists/index.html">Playlists</a></li>'),
 
@@ -191,7 +194,7 @@ CHROME_PATCHES: list[tuple[str, str]] = [
     (r'<a href="/contact/index\.html">Contact</a>',
      '<a href="/fr/contact/index.html">Contact</a>'),
     (r'<a href="/articles/index\.html">Articles</a>',
-     '<a href="/fr/index.html">Articles</a>'),
+     '<a href="/fr/articles/index.html">Articles</a>'),
 
     # Social section
     (r'aria-label="Social links"', 'aria-label="Liens sociaux"'),
@@ -347,10 +350,10 @@ _ARTICLES_LINK_RE = re.compile(
 def rewrite_static_links(html: str) -> str:
     """Rewrite every internal anchor on a FR page that still points at a
     top-level EN static page (/about/, /papers/, …) so it lands on the
-    FR mirror under /fr/. ``/articles/`` collapses to ``/fr/`` (the hub)."""
+    FR mirror under /fr/. ``/articles/`` redirects to ``/fr/articles/``."""
     html = _STATIC_LINK_RE.sub(r'\1/fr/\2/\4', html)
     html = _TOPIC_SUBPAGE_RE.sub(r'\1/fr/topics/\2\3\4', html)
-    html = _ARTICLES_LINK_RE.sub(r'\1/fr/\3', html)
+    html = _ARTICLES_LINK_RE.sub(r'\1/fr/articles/\3', html)
     return html
 
 
@@ -1221,9 +1224,9 @@ _NEWSROOM_RE = re.compile(r'<section class="newsroom">[\s\S]*?</section>', re.IG
 _LDJSON_RE = re.compile(r'<script type="application/ld\+json">[\s\S]*?</script>', re.IGNORECASE)
 
 
-def render_hub(entries: list[dict[str, str]]) -> str | None:
-    """Hub page listing every French translation. Forks the rendered
-    /articles/ page as shell."""
+def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
+    """Articles listing — French equivalent of /articles/. Forks the
+    rendered /articles/ page as shell and writes to /fr/articles/."""
     shell_src = PUBLIC / "articles" / "index.html"
     if not shell_src.is_file():
         return None
@@ -1296,10 +1299,238 @@ def render_hub(entries: list[dict[str, str]]) -> str | None:
     shell = _DESC_META_RE.sub(rf'\1{_html.escape(desc, quote=True)}\2', shell, count=1)
     shell = _OG_TITLE_RE.sub(rf'\1{_html.escape(title, quote=True)}\2', shell, count=1)
     shell = _OG_DESC_RE.sub(rf'\1{_html.escape(desc, quote=True)}\2', shell, count=1)
-    shell = _OG_URL_RE.sub(r'\1https://sebastienrousseau.com/fr/\2', shell, count=1)
+    shell = _OG_URL_RE.sub(r'\1https://sebastienrousseau.com/fr/articles/\2', shell, count=1)
     shell = _OG_LOCALE_RE.sub(r'\1fr_FR\2', shell, count=1)
-    shell = _CANONICAL_RE.sub(r'\1https://sebastienrousseau.com/fr/\2', shell, count=1)
+    shell = _CANONICAL_RE.sub(r'\1https://sebastienrousseau.com/fr/articles/\2', shell, count=1)
     shell = translate_chrome(shell)
+    return shell
+
+
+# ---------------------------------------------------------------------------
+# Home: /fr/index.html — forks the EN /index.html shell so the FR home
+# carries the same hero / projects / quote / latest / experience sections.
+# ---------------------------------------------------------------------------
+
+# Per-section EN→FR substitutions for the home page body. Anchored to
+# unique strings so they only fire on /fr/index.html. The regex pairs
+# are applied AFTER chrome translation, so chrome strings + nav are
+# already French by the time these run.
+HOME_FR_PATCHES: list[tuple[str, str]] = [
+    # Section labels / kickers
+    (r'>Authored &amp; maintained<', '>Écrits et maintenus<'),
+    (r'>Authored & maintained<', '>Écrits et maintenus<'),
+    # Hero H1 — multi-line with <br>
+    (r'>Shaping the future of banking<br>through AI, payments,<br>and quantum-safe security\.</h1>',
+     ">Façonner l'avenir de la banque<br>par l'IA, les paiements,<br>et la sécurité résistante au quantique.</h1>"),
+    (r'>Applying AI and quantum-safe security to the future of payments\.</p>',
+     ">Appliquer l'IA et la sécurité résistante au quantique à l'avenir des paiements.</p>"),
+    # Section headlines (with <br> inserts)
+    (r'id=practice>Open source for the<br>future of finance\.</h2>',
+     "id=practice>Open source pour<br>l'avenir de la finance.</h2>"),
+    (r'>Open source for the future of finance\.<',
+     ">Open source pour l'avenir de la finance.<"),
+    (r'>A portfolio of Python, Rust and JavaScript libraries I created and maintain\. '
+     r'Open source, free to use, and applied to wholesale payments, cross-border '
+     r'settlement, financial data and quantum-resistant cryptography\.<',
+     ">Un portfolio de bibliothèques Python, Rust et JavaScript que j'écris et "
+     "maintiens. Open source, libres d'usage, appliquées aux paiements wholesale, "
+     "au règlement transfrontalier, aux données financières et à la cryptographie "
+     "résistante au quantique.<"),
+    (r'>Browse all projects<', '>Parcourir tous les projets<'),
+    # Project pill labels (left-side category tags)
+    (r'>Python · Payments<', '>Python · Paiements<'),
+    (r'>Python · Cross-border<', '>Python · Transfrontalier<'),
+    (r'>Python · Finance<', '>Python · Finance<'),
+    (r'>Rust · Security<', '>Rust · Sécurité<'),
+    (r'>Rust · Quantum<', '>Rust · Quantique<'),
+    (r'>Rust · YAML<', '>Rust · YAML<'),
+    # Project CTAs
+    (r'>Learn about ([A-Za-z0-9 ()_-]+)</a>', r'>En savoir plus sur \1</a>'),
+    # Project descriptions (handle <strong> tags within)
+    (r'<p>A Python library that automates <strong>ISO 20022 pain\.001</strong> payment file creation from CSV or SQLite\.\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\.</p>',
+     "<p>Une bibliothèque Python qui automatise la création de fichiers de paiement <strong>ISO 20022 pain.001</strong> depuis CSV ou SQLite. Conçue pour la migration mondiale MT/MX vers les messages structurés sur SWIFT, SEPA et les principaux schémas.</p>"),
+    (r'<p>Generate, validate and deliver <strong>ISO 20022 pacs\.008</strong> FI-to-FI customer credit transfer messages\.\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\.</p>',
+     "<p>Génère, valide et livre des messages <strong>ISO 20022 pacs.008</strong> de virement client FI-à-FI. JSON Schema, validation XSD, IBAN dans 75 pays, masquage des données personnelles conforme RGPD/PCI-DSS.</p>"),
+    (r'<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\.\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\.</p>',
+     "<p>Une boîte à outils Python de qualité finance qui transforme les relevés bancaires multi-format en données structurées. Pensée pour les fichiers de relevés du réel et les exigences d'audit des environnements régulés.</p>"),
+    (r'<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\.\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\.</p>',
+     "<p>Une bibliothèque Rust implémentant des <strong>algorithmes de hachage et de digest sécurisés</strong> pour le chiffrement et la vérification de mots de passe. Conçue avec une posture résistante au quantique pour l'ère post-PQC de l'authentification.</p>"),
+    (r'<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\.\s*The foundation for quantum-resistant payment authentication\.</p>',
+     "<p>Une implémentation Rust robuste de <strong>CRYSTALS-Kyber</strong>, le standard NIST FIPS 203 pour le chiffrement post-quantique généraliste. La fondation de l'authentification de paiement résistante au quantique.</p>"),
+    (r'<p>A <strong>pure-Rust YAML 1\.2 ecosystem</strong>\. Zero unsafe, 100% spec compliance \(406 / 406 official suite\), streaming-first serde, lossless CST and JSON-Schema validation\.\s*Library \+ CLI \(noyafmt, noyavalidate\) \+ LSP \+ MCP \+ WASM bindings\.</p>',
+     "<p>Un <strong>écosystème YAML 1.2 100 % Rust</strong>. Zéro unsafe, 100 % de conformité (406 / 406 de la suite officielle), serde streaming-first, CST sans perte et validation JSON-Schema. Bibliothèque + CLI (noyafmt, noyavalidate) + LSP + MCP + bindings WASM.</p>"),
+    # Quote section — includes leading/trailing curly quotes
+    (r'Quantum computing threatens the cryptographic foundations of financial services\.\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\.',
+     "L'informatique quantique menace les fondations cryptographiques des services financiers. Les paiements — du temps réel au règlement transfrontalier — reposent sur des protections que le quantique finira par rendre obsolètes."),
+    (r'>Quantum-Safe Payments white paper · September 2025 · Read the paper<',
+     ">Livre blanc Quantum-Safe Payments · Septembre 2025 · Lire le livre blanc<"),
+    (r'>Read the paper<', '>Lire le livre blanc<'),
+    # White paper feature section
+    (r'>Quantum-Safe Payments\.</h2>', '>Paiements résistants au quantique.</h2>'),
+    (r'>Quantum-Safe Payments\.<', '>Paiements résistants au quantique.<'),
+    (r'>Industry white paper for the Emerging Payments Association Asia\.\s*The structural threat quantum computing poses to payment infrastructure, and the case for coordinated action now\.<',
+     ">Livre blanc industriel pour l'Emerging Payments Association Asia. La menace structurelle que l'informatique quantique fait peser sur l'infrastructure de paiement, et la nécessité d'une action coordonnée dès maintenant.<"),
+    (r'>Why the payments industry must act now\.<',
+     ">Pourquoi le secteur des paiements doit agir maintenant.<"),
+    (r'>Regulators are treating harvest-now-decrypt-later as a credible present risk\.[\s\S]{0,400}',
+     ">Les régulateurs traitent désormais « récolter maintenant, déchiffrer plus tard » comme un risque présent crédible. Ce livre blanc expose le déficit cryptographique, les voies de migration et les implications pour les rails de paiement temps réel et transfrontaliers.</p>"),
+    # "Latest From the desk" section
+    (r'>Latest<', '>Récent<'),
+    (r'>From the desk\.<', '>Depuis le bureau.<'),
+    (r'>Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments\.<',
+     ">Recherches et écrits récents sur la cryptographie résistante au quantique, la migration ISO 20022 et l'avenir des paiements wholesale.<"),
+    # Home card excerpts (curated, distinct from frontmatter description)
+    (r"<p class=newsroom-excerpt>Stablecoins cannot pay yield under the GENIUS Act\. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail\.</p>",
+     "<p class=newsroom-excerpt>Les stablecoins ne peuvent pas verser de rendement sous le GENIUS Act. Les dépôts BRSRV et BSTBL de BlackRock dévoilent le contournement : un fonds monétaire tokenisé qui roule en parallèle d'un stablecoin régulé pour livrer du rendement via un rail conforme adjacent.</p>"),
+    (r"<p class=newsroom-excerpt>Quantum risk has moved from research curiosity to active regulatory mandate\. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate\.</p>",
+     "<p class=newsroom-excerpt>Le risque quantique est passé de curiosité de recherche à mandat réglementaire actif. Avec la roadmap G7 publiée en janvier 2026 et BIS Project Leap démontrant la faisabilité sur des systèmes de paiement en production, la question au niveau du conseil n'est plus de savoir s'il faut migrer.</p>"),
+    (r'<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\+ rejects unstructured postal addresses in cross-border payment messages\. Six months out, 65% of pacs\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\.</p>',
+     "<p class=newsroom-excerpt>À partir de novembre 2026, SWIFT CBPR+ rejette les adresses postales non structurées dans les messages de paiement transfrontaliers. À six mois, 65 % des messages pacs.008 livrent encore des adresses non conformes et 44 % des banques sont en retard sur le programme de remédiation.</p>"),
+    # "See all articles" CTA
+    (r'>See all articles\b', '>Voir tous les articles'),
+    # Experience section
+    (r'>Experience<', '>Expérience<'),
+    (r'>Brands along the way\.<', '>Marques traversées.<'),
+    (r'>From global Tier-1 banks to consumer technology\. Payments and digital product leadership across HSBC, PayPal, Barclays, Shazam,[\s\S]{0,300}',
+     ">Des banques de premier rang mondiales aux technologies grand public. Leadership produit en paiements et digital chez HSBC, PayPal, Barclays, Shazam, AKQA et Virgin Group.</p>"),
+    # Generic CTAs
+    (r'>Read more<', '>Lire la suite<'),
+    (r'>Read the article<', "<>Lire l'article<"),
+    (r'>Read latest research<', '>Lire les recherches récentes<'),
+    (r'>Read full article<', "<>Lire l'article complet<"),
+    (r'>Get in touch ›</a>', '>Me contacter ›</a>'),
+    # Eyebrows
+    (r'>Payments · Stablecoins<', '>Paiements · Stablecoins<'),
+    (r'>Payments · ISO 20022<', '>Paiements · ISO 20022<'),
+    (r'>Quantum<', '>Quantique<'),
+    (r'>Quantum · Banking<', '>Quantique · Banque<'),
+    (r'>Quantum · Cryptography<', '>Quantique · Cryptographie<'),
+]
+
+_HOME_FR_COMPILED: list[tuple[re.Pattern[str], str]] = [
+    (re.compile(p), r) for p, r in HOME_FR_PATCHES
+]
+
+
+def render_home() -> str | None:
+    """Fork ``public/index.html`` (the EN home) to produce
+    ``public/fr/index.html`` so the FR landing page mirrors the EN
+    structure (hero + projects + quote + paper + latest + experience).
+    """
+    shell_src = PUBLIC / "index.html"
+    if not shell_src.is_file():
+        return None
+    shell = shell_src.read_text(encoding="utf-8")
+
+    title = "Sebastien Rousseau — IA, paiements et cryptographie quantique"
+    desc = (
+        "L'avenir de la banque par l'IA appliquée, les paiements et la sécurité "
+        "résistante au quantique. Recherche, bibliothèques open source et "
+        "conseil produit pour les services financiers."
+    )
+    url_fr = f"{BASE}/fr/"
+
+    shell = _HTML_LANG_RE.sub(r'\1fr-FR\2', shell, count=1)
+    shell = _TITLE_RE.sub(f'<title>{_html.escape(title)}</title>', shell, count=1)
+    shell = _DESC_META_RE.sub(rf'\1{_html.escape(desc, quote=True)}\2', shell, count=1)
+    shell = _OG_TITLE_RE.sub(rf'\1{_html.escape(title, quote=True)}\2', shell, count=1)
+    shell = _OG_DESC_RE.sub(rf'\1{_html.escape(desc, quote=True)}\2', shell, count=1)
+    shell = _OG_URL_RE.sub(rf'\1{url_fr}\2', shell, count=1)
+    shell = _OG_LOCALE_RE.sub(r'\1fr_FR\2', shell, count=1)
+    shell = _TW_TITLE_RE.sub(rf'\1{_html.escape(title, quote=True)}\2', shell, count=1)
+    shell = _TW_DESC_RE.sub(rf'\1{_html.escape(desc, quote=True)}\2', shell, count=1)
+    shell = _CANONICAL_RE.sub(rf'\1{url_fr}\2', shell, count=1)
+
+    # Rewrite article URLs (EN → FR) + ensure all internal links keep visitor in /fr/.
+    shell = rewrite_en_urls(shell)
+    shell = rewrite_en_titles_in_text(shell)
+    shell = rewrite_en_descs_in_text(shell)
+
+    # Apply chrome (nav, footer, search, aria, language selector, dates).
+    shell = translate_chrome(shell)
+
+    # Per-section body patches.
+    for pat, repl in _HOME_FR_COMPILED:
+        shell = pat.sub(repl, shell)
+
+    # Card titles + tooltips for any article link.
+    shell = rewrite_fr_link_titles(shell)
+    shell = rewrite_newsroom_card_titles(shell)
+
+    # Localise feed links.
+    shell = re.sub(
+        r'href="(?:https?://[^/"]+)?/atom\.xml"',
+        'href="/fr/atom.xml"',
+        shell,
+    )
+    shell = re.sub(
+        r'href="(?:https?://[^/"]+)?/rss\.xml"',
+        'href="/fr/rss.xml"',
+        shell,
+    )
+
+    # Patch JSON-LD WebSite / Person / breadcrumb on the home page.
+    def patch_jsonld(m: re.Match[str]) -> str:
+        raw = m.group(1)
+        try:
+            data = _json.loads(raw)
+        except _json.JSONDecodeError:
+            return m.group(0)
+        changed = False
+
+        def patch_node(node: dict) -> bool:
+            t = node.get("@type")
+            local = False
+            if t == "WebSite":
+                if "url" in node:
+                    node["url"] = url_fr
+                    local = True
+                if "name" in node:
+                    node["name"] = title
+                    local = True
+                if "description" in node:
+                    node["description"] = desc
+                    local = True
+                if "inLanguage" in node:
+                    node["inLanguage"] = "fr"
+                    local = True
+            if t == "WebPage":
+                if "url" in node:
+                    node["url"] = url_fr
+                    local = True
+                if "name" in node:
+                    node["name"] = title
+                    local = True
+                if "description" in node:
+                    node["description"] = desc
+                    local = True
+                if "inLanguage" in node:
+                    node["inLanguage"] = "fr"
+                    local = True
+            return local
+
+        if isinstance(data, dict):
+            if patch_node(data):
+                changed = True
+            graph = data.get("@graph")
+            if isinstance(graph, list):
+                for node in graph:
+                    if isinstance(node, dict) and patch_node(node):
+                        changed = True
+        if not changed:
+            return m.group(0)
+        return (
+            '<script type="application/ld+json">'
+            + _json.dumps(data, separators=(",", ":"), ensure_ascii=False)
+            + '</script>'
+        )
+
+    shell = re.sub(
+        r'<script type="application/ld\+json">([\s\S]+?)</script>',
+        patch_jsonld,
+        shell,
+    )
+
     return shell
 
 
@@ -2538,10 +2769,21 @@ def main() -> None:
     if entries:
         # Sort newest first to mirror the English /articles/ ordering.
         entries.sort(key=lambda e: e["slug"], reverse=True)
-        hub = render_hub(entries)
-        if hub:
-            (OUT / "index.html").write_text(hub, encoding="utf-8")
+        # /fr/articles/ — the French articles listing (was /fr/index.html).
+        articles_hub = render_articles_hub(entries)
+        if articles_hub:
+            articles_path = OUT / "articles" / "index.html"
+            articles_path.parent.mkdir(parents=True, exist_ok=True)
+            articles_path.write_text(articles_hub, encoding="utf-8")
             written += 1
+
+    # /fr/index.html — the French home page, forked from the EN /index.html
+    # so the structure (hero + projects + quote + paper + latest + experience)
+    # is identical to / for visual parity.
+    home = render_home()
+    if home:
+        (OUT / "index.html").write_text(home, encoding="utf-8")
+        written += 1
 
     # Static-page mirrors (about, papers, projects, topics, tags,
     # contact, accessibility, privacy, terms, …) — keep FR visitors
