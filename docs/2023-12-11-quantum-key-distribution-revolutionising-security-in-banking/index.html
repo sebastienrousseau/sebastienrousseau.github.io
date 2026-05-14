@@ -30,16 +30,17 @@
          of each block at build time and injects the 'sha256-<base64>' tokens
          into script-src below before the file is served. Browsers will then
          allow that exact byte-for-byte content and nothing else.
-         'inline-speculationrules' permits the Speculation Rules API hover
-         prerender script in postbuild.py. -->
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
         base-uri 'self';
         form-action 'self' https://formspree.io;
-        frame-ancestors 'none';
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-7qJCFDfExFC2TtNSsHUo94CKSDae2qe9N0g61i/d0zE=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'sha256-wg85HVkhtpeyiBIhQIdouRGPA/F3l++HoB3bTx3sPps=' 'self' 'inline-speculationrules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-qLYhZJXVFNVVBDmCjsMnAwC5hFpDOsK9IPpiOmj1Soo=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'sha256-wg85HVkhtpeyiBIhQIdouRGPA/F3l++HoB3bTx3sPps=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
         img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
@@ -66,7 +67,7 @@
     <meta name="color-scheme" content="light dark" />
     <script src="/theme-init.js"></script>
 
-    <link rel="stylesheet" href="/_csp/7971e7e29732f95d.css" crossorigin="anonymous" integrity="sha256-qrJSYjZeRiPzFCdjyWJjpu0NZT9HEcp8/o+Z3sr0a8Y=" crossorigin="anonymous"">
+    <link rel="stylesheet" href="/_csp/9e981656308fcdcf.css" crossorigin="anonymous" integrity="sha256-ANSnnDKlgg3cTbd4xAtfRuoiWGM91W/EShcUKm3crr0=" crossorigin="anonymous"">
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="http://127.0.0.1:8000/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta property="og:title" content="Quantum Key Distribution Revolutionising Security in Banking">
@@ -83,6 +84,7 @@
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp">
 <link rel="canonical" href="http://127.0.0.1:8000/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
 <link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2023-12-11-distribution-quantique-de-cles-revolution-securite-bancaire/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script></head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <a class="skip" href="#main">Skip to main content</a>
@@ -176,34 +178,34 @@
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>, <a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a>, <a href="https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html">Quantum Algorithm Challenges Lattice-Based Cryptography</a>.</p>
 </aside>
 <!-- lead-end -->
-<p><img src="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" alt="HSBC From the Docks" title="HSBC From the West India Quay Promenade" / class="img-fluid clearfix fade-in"></p>
+<p><img src="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" alt="HSBC From the Docks" title="HSBC From the West India Quay Promenade" / class="img-fluid clearfix fade-in" width="1200" height="675" decoding="async" fetchpriority="high"></p>
 <p>The banking and financial industry is undergoing a revolutionary transformation in data security, driven by the emergence of Quantum Key Distribution (QKD). This groundbreaking innovation, based on the principles of quantum mechanics, offers unparalleled security for data transmission, making it a game-changer for the industry.</p>
 <p>As digital solutions become increasingly prevalent in the financial sector, robust security measures are essential to protect sensitive data from unauthorised access and manipulation. Traditional encryption methods are no longer enough, as the advent of quantum computers threatens to render them obsolete.</p>
 <p>Enter QKD, a transformative technology that creates secure communication channels that even quantum computers cannot penetrate. This makes it a critical component of the digital financial future.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="understanding-quantum-key-distribution-qkd">Understanding Quantum Key Distribution (QKD) <a class="heading-anchor" href="#understanding-quantum-key-distribution-qkd" aria-label="Link to Understanding Quantum Key Distribution (QKD)">#</a></h2>
 <p>QKD is a method of creating a secure communication channel using the principles of quantum mechanics. QKD offers an unprecedented level of security, as it is immune to the computing power of quantum computers, unlike regular encryption methods. This enables secure and confidential communication of key exchange between the two parties. This is achieved by leveraging the quantum properties of particles to create a secure key that can be used to encrypt and decrypt data. As a result, eavesdropping on the communication would disrupt the quantum state, alerting the parties to the security breach.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
-<p><img src="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" alt="Entangled Photons" title="Entangled Photons" / class="w-50 p-3 me-3 img-thumbnail float-end"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
+<p><img src="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" alt="Entangled Photons" title="Entangled Photons" / class="w-50 p-3 me-3 img-thumbnail float-end" width="1200" height="675" decoding="async" loading="lazy"></p>
 <h2 id="the-secret-sauce-of-qkd-entanglement">The Secret Sauce of QKD: Entanglement <a class="heading-anchor" href="#the-secret-sauce-of-qkd-entanglement" aria-label="Link to The Secret Sauce of QKD: Entanglement">#</a></h2>
 <p>At the core of QKD is entanglement, a quantum phenomenon in which two particles are inextricably linked, forming an unbreakable bond regardless of distance. This entanglement enables Alice and Bob, the two parties involved in a secure communication, to establish a secure channel that is immune to interception and eavesdropping.</p>
 <p>Theoretically, any attempt to measure or tamper with an entangled particle instantaneously affects its entangled counterpart, regardless of how far apart they are. This inherent sensitivity of quantum states serves as a foolproof detector of eavesdropping. As soon as Alice and Bob detect any disturbance in their entangled photons, they immediately abort the communication session, ensuring the confidentiality of their shared secret key.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="the-unpredictability-of-quantum-states-further-security-reinforcement">The Unpredictability of Quantum States: Further Security Reinforcement <a class="heading-anchor" href="#the-unpredictability-of-quantum-states-further-security-reinforcement" aria-label="Link to The Unpredictability of Quantum States: Further Security Reinforcement">#</a></h2>
 <p>The unpredictability of quantum states further reinforces the security of QKD. Any attempt to measure a quantum particle's position or momentum will result in two equally likely outcomes. This suggests that eavesdroppers are unable to accurately anticipate the results of their observations.</p>
 <p>The combination of entanglement and the inherent randomness of quantum states makes QKD an impenetrable fortress against eavesdropping, even for powerful quantum computers. As quantum computing technology advances, QKD will become increasingly crucial for safeguarding sensitive data in the digital age.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="the-significance-of-qkd-for-the-banking-and-financial-industry">The Significance of QKD for the Banking and Financial Industry <a class="heading-anchor" href="#the-significance-of-qkd-for-the-banking-and-financial-industry" aria-label="Link to The Significance of QKD for the Banking and Financial Industry">#</a></h2>
 <p>The application of QKD in the banking and financial industry is far-reaching. It can revolutionise security for intra and interbank trades, with the potential to transform financial transactions through the use of quantum money. Additionally, it can enhance the security of wealth management and investment banking, ushering in a new era of financial security and efficiency.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="hsbc-s-quantum-protection-trial-a-landmark-achievement">HSBC's Quantum Protection Trial: A Landmark Achievement <a class="heading-anchor" href="#hsbc-s-quantum-protection-trial-a-landmark-achievement" aria-label="Link to HSBC's Quantum Protection Trial: A Landmark Achievement">#</a></h2>
 <p>HSBC is pioneering the use of quantum key distribution (QKD) to protect AI-powered foreign exchange trading against cyber threats, including quantum attacks. This marks the first time a bank has employed QKD to secure sensitive trading data.</p>
 <p>By employing QKD, HSBC securely executed a €30 million trading scenario involving the exchange of euros for US dollars. This achievement, in collaboration with BT, Toshiba, and AWS, showcases the transformative potential of QKD in revolutionising trading data security.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
-<p><img src="https://cloudcdn.pro/stocks/diagrams/qkd-qc-market-value.svg" alt="QKD and Quantum Computing Market Value" title="QKD and Quantum Computing Market Value" / class="w-50 p-3 ms-3 img-thumbnail float-end"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
+<p><img src="https://cloudcdn.pro/stocks/diagrams/qkd-qc-market-value.svg" alt="QKD and Quantum Computing Market Value" title="QKD and Quantum Computing Market Value" / class="w-50 p-3 ms-3 img-thumbnail float-end" width="1200" height="800" decoding="async" loading="lazy"></p>
 <h2 id="the-future-of-qkd-in-financial-cybersecurity">The Future of QKD in Financial Cybersecurity <a class="heading-anchor" href="#the-future-of-qkd-in-financial-cybersecurity" aria-label="Link to The Future of QKD in Financial Cybersecurity">#</a></h2>
 <p>Experts predict that QKD will protect financial transactions, client data, and proprietary information across the sector. With quantum computers threatening data security, HSBC's integration of QKD into trading tools sets a new standard. This proactive approach to investing and experimenting in quantum technologies underscores the industry's commitment to staying ahead of the curve in terms of cybersecurity.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="quantum-key-distribution-the-future-of-financial-cybersecurity">Quantum Key Distribution: The Future of Financial Cybersecurity <a class="heading-anchor" href="#quantum-key-distribution-the-future-of-financial-cybersecurity" aria-label="Link to Quantum Key Distribution: The Future of Financial Cybersecurity">#</a></h2>
 <p>The integration of QKD into the banking and financial industry represents a monumental advancement in the field of financial cybersecurity. HSBC's successful quantum protection trial has established a new benchmark for quantum-secure communication strategies, guaranteeing the resilience of financial systems against changing cyber threats. This proactive research and development in quantum technologies is crucial for the continued security and trustworthiness of financial systems.</p>
 <p>In summary, Quantum Key Distribution (QKD) offers a groundbreaking solution to the security and trustworthiness challenges facing the banking and financial sectors. As such, it is a pivotal technology for the advancement of digital finance.</p>
@@ -261,13 +263,21 @@
             </ul>
           </div>
         </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Newsletter signup">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — research notes on payments, AI &amp; post-quantum crypto. No spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="you@bank.com" />
+            <input type="hidden" name="_subject" value="Newsletter signup — sebastienrousseau.com" />
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
         <div class="legal">
           <span>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</span>
           <div class="social" aria-label="Social links">
-            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
-            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
-            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
-            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
           </div>
           <p>
             <a href="/accessibility/index.html">Accessibility</a> ·

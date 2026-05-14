@@ -30,16 +30,17 @@
          of each block at build time and injects the 'sha256-<base64>' tokens
          into script-src below before the file is served. Browsers will then
          allow that exact byte-for-byte content and nothing else.
-         'inline-speculationrules' permits the Speculation Rules API hover
-         prerender script in postbuild.py. -->
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
         base-uri 'self';
         form-action 'self' https://formspree.io;
-        frame-ancestors 'none';
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-bezw/ApA9PRhKRRU+FNiF7Ul/8H2t9XV46FkJIkXhnY=' 'sha256-g3u24+2E0wwqcOsOMJPRUn5egKeIfljHpXhzzAPx3rk=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' 'inline-speculationrules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-622wrUa1laqkAnwvQi+5iwRdn2rEj7JxeCvQr1cBXrQ=' 'sha256-g3u24+2E0wwqcOsOMJPRUn5egKeIfljHpXhzzAPx3rk=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
         img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
@@ -66,7 +67,7 @@
     <meta name="color-scheme" content="light dark" />
     <script src="/theme-init.js"></script>
 
-    <link rel="stylesheet" href="/_csp/7971e7e29732f95d.css" crossorigin="anonymous" integrity="sha256-qrJSYjZeRiPzFCdjyWJjpu0NZT9HEcp8/o+Z3sr0a8Y=" crossorigin="anonymous"">
+    <link rel="stylesheet" href="/_csp/9e981656308fcdcf.css" crossorigin="anonymous" integrity="sha256-ANSnnDKlgg3cTbd4xAtfRuoiWGM91W/EShcUKm3crr0=" crossorigin="anonymous"">
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="http://127.0.0.1:8000/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta property="og:title" content="Fast Real-Time Speech Recognition on macOS: OpenAI Whisper">
@@ -83,6 +84,7 @@
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/research-paper.webp">
 <link rel="canonical" href="http://127.0.0.1:8000/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
 <link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-03-12-revolutionner-la-reconnaissance-vocale-en-temps-reel-sur-macos-avec-whisper/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script></head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <a class="skip" href="#main">Skip to main content</a>
@@ -180,19 +182,19 @@
 <h2 id="introduction">Introduction <a class="heading-anchor" href="#introduction" aria-label="Link to Introduction">#</a></h2>
 <p>Speech recognition technology plays a crucial role in facilitating a wide range of applications, from enhancing accessibility to streamlining user interactions. The pursuit of high-fidelity, low-latency ASR has primarily been the domain of powerful cloud servers, presenting challenges in terms of accessibility, privacy, and latency. However, recent research has introduced a transformative solution: the integration of OpenAI Whisper with the GPU acceleration offered by Metal Performance Shaders (MPS) on macOS. This synergy represents a significant advancement in on-device speech recognition capabilities and aligns with the growing emphasis on user privacy and data security.</p>
 <p><a href="https://developer.apple.com/documentation/metalperformanceshaders" title="Metal Performance Shaders - Apple Developer Documentation"><strong>Metal Performance Shaders (MPS)</strong></a> is a technology developed by Apple that enables high-performance GPU computation on macOS devices. It allows developers to harness the power of the GPU for parallel processing, leading to significant speed improvements in various computational tasks, including machine learning and computer vision.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" fetchpriority="high"></p>
 <h3 id="1-the-evolution-of-speech-recognition-on-macos">1. The Evolution of Speech Recognition on macOS <a class="heading-anchor" href="#1-the-evolution-of-speech-recognition-on-macos" aria-label="Link to 1. The Evolution of Speech Recognition on macOS">#</a></h3>
 <p>The evolution of speech recognition technology on macOS devices has been driven by advancements in neural network models and hardware acceleration technologies. Traditional speech recognition systems often faced challenges in accuracy, latency, and computational efficiency, particularly when dealing with diverse accents, background noises, and varying recording conditions. The introduction of OpenAI Whisper has set a new benchmark for robust and precise speech recognition across a wide array of languages and dialects, offering a suitable solution for real-time applications.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h3 id="2-harnessing-openai-whisper-and-metal-performance-shaders">2. Harnessing OpenAI Whisper and Metal Performance Shaders <a class="heading-anchor" href="#2-harnessing-openai-whisper-and-metal-performance-shaders" aria-label="Link to 2. Harnessing OpenAI Whisper and Metal Performance Shaders">#</a></h3>
 <p>The research paper unveils an innovative approach by combining the advanced capabilities of OpenAI Whisper with the high-performance computation of MPS on macOS. This integration is achieved by optimizing the Whisper model to run on the GPU using the MPS framework, which enables efficient parallel processing. The researchers have implemented techniques such as model quantization and pruning to reduce the model's size and computational requirements while maintaining high accuracy. By leveraging the GPU's parallel processing capabilities, the system achieves notable speed improvements, with transcription speeds that are 8-12 times faster than real-time for typical utterances. This enhances the user experience by reducing wait times and enables a broader range of real-time applications, from live captioning to interactive voice-controlled systems.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h3 id="3-implications-for-users-and-developers">3. Implications for Users and Developers <a class="heading-anchor" href="#3-implications-for-users-and-developers" aria-label="Link to 3. Implications for Users and Developers">#</a></h3>
 <p>The integration of Whisper and MPS on macOS has significant implications for both end-users and application developers. For users, it offers an improved experience in real-time speech recognition, providing near-instantaneous transcription with high accuracy while maintaining the privacy and security of on-device processing. This technology can be applied in various real-world scenarios, such as voice-controlled applications for home automation, real-time transcription services for meetings and lectures, and accessibility features for users with hearing impairments. Developers gain access to a toolkit for integrating speech-to-text functionality into their applications, with the added benefits of energy efficiency and seamless Python integration.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h3 id="4-driving-adoption-and-innovation">4. Driving Adoption and Innovation <a class="heading-anchor" href="#4-driving-adoption-and-innovation" aria-label="Link to 4. Driving Adoption and Innovation">#</a></h3>
 <p>The modular architecture and Python implementation of this system facilitate integration into existing applications and lower the barrier to entry for developers looking to incorporate speech recognition capabilities. However, developers may face challenges in terms of model customization and adaptation to specific use cases, as well as optimizing performance for different hardware configurations. The research paper provides guidance on addressing these challenges, such as fine-tuning the model on domain-specific data and implementing dynamic resource allocation strategies. Additionally, the energy-efficient voice activity detection system, which achieves 94% precision and 96% recall, ensures that applications remain responsive and accurate without draining device resources. This combination of features has the potential to drive adoption among developers and catalyse further innovation in the field of real-time speech recognition.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="conclusion">Conclusion <a class="heading-anchor" href="#conclusion" aria-label="Link to Conclusion">#</a></h2>
 <p>The integration of OpenAI Whisper and Metal Performance Shaders on macOS represents a significant advancement in real-time speech recognition technology. By offering improved speed, accuracy, and efficiency, this innovation enhances the user experience and opens new possibilities for application development. This research contributes to the ongoing advancement of AI technologies and has the potential to inspire further developments in on-device speech processing across various platforms. As this technology continues to evolve, it has the potential to revolutionise how users interact with their devices, making digital communication more seamless and accessible.</p>
 <h3 id="access-the-research-paper">Access the Research Paper <a class="heading-anchor" href="#access-the-research-paper" aria-label="Link to Access the Research Paper">#</a></h3>
@@ -251,13 +253,21 @@ To learn more about the integration of OpenAI Whisper and Metal Performance Shad
             </ul>
           </div>
         </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Newsletter signup">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — research notes on payments, AI &amp; post-quantum crypto. No spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="you@bank.com" />
+            <input type="hidden" name="_subject" value="Newsletter signup — sebastienrousseau.com" />
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
         <div class="legal">
           <span>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</span>
           <div class="social" aria-label="Social links">
-            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
-            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
-            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
-            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
           </div>
           <p>
             <a href="/accessibility/index.html">Accessibility</a> ·

@@ -30,16 +30,17 @@
          of each block at build time and injects the 'sha256-<base64>' tokens
          into script-src below before the file is served. Browsers will then
          allow that exact byte-for-byte content and nothing else.
-         'inline-speculationrules' permits the Speculation Rules API hover
-         prerender script in postbuild.py. -->
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
         base-uri 'self';
         form-action 'self' https://formspree.io;
-        frame-ancestors 'none';
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-I9c9TCc8ssCm0Xkk1ZYbleYxQ6EYHZy2yRoP+4uczOo=' 'sha256-WuSos4KdgaaaFSe9zxyNiJ+fqm67H9FO2tNHZPPzPcw=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' 'inline-speculationrules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-T4MQkSJVJEkSu4TOWrozQReFTkYOpfyxGLFMb0WGrqI=' 'sha256-WuSos4KdgaaaFSe9zxyNiJ+fqm67H9FO2tNHZPPzPcw=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
         img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
@@ -66,7 +67,7 @@
     <meta name="color-scheme" content="light dark" />
     <script src="/theme-init.js"></script>
 
-    <link rel="stylesheet" href="/_csp/7971e7e29732f95d.css" crossorigin="anonymous" integrity="sha256-qrJSYjZeRiPzFCdjyWJjpu0NZT9HEcp8/o+Z3sr0a8Y=" crossorigin="anonymous"">
+    <link rel="stylesheet" href="/_csp/9e981656308fcdcf.css" crossorigin="anonymous" integrity="sha256-ANSnnDKlgg3cTbd4xAtfRuoiWGM91W/EShcUKm3crr0=" crossorigin="anonymous"">
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="http://127.0.0.1:8000/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta property="og:title" content="KyberLib: Rust CRYSTALS-Kyber for Post-Quantum">
@@ -83,6 +84,7 @@
 <meta name="twitter:image" content="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg">
 <link rel="canonical" href="http://127.0.0.1:8000/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
 <link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2023-11-28-kyberlib-bouclier-rust-contre-les-menaces-quantiques/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script></head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <a class="skip" href="#main">Skip to main content</a>
@@ -176,9 +178,9 @@
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">Quantum Lattice Crypto: Bug in Chen's LWE Attack</a>, <a href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>, <a href="https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a>.</p>
 </aside>
 <!-- lead-end -->
-<p><a href="https://kyberlib.com/" title="Privacy and Security in a Quantum World"><img src="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" alt="Empowering Secure Communications in the Quantum Era with KyberLib" / class="img-fluid clearfix"></a></p>
+<p><a href="https://kyberlib.com/" title="Privacy and Security in a Quantum World"><img src="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" alt="Empowering Secure Communications in the Quantum Era with KyberLib" / class="img-fluid clearfix" width="1200" height="675" decoding="async" fetchpriority="high"></a></p>
 <p><code>KyberLib</code> is a Rust-based library that protects your data from the potential threat of quantum computing. Built upon the <strong><a href="/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber</a> algorithm</strong>, <code>KyberLib</code> delivers exceptional security, efficiency, and versatility, easily integrating into various platforms, including <code>no-std</code> environments.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="securing-your-data-in-the-quantum-age">Securing Your Data in the Quantum Age <a class="heading-anchor" href="#securing-your-data-in-the-quantum-age" aria-label="Link to Securing Your Data in the Quantum Age">#</a></h2>
 <p>The advent of quantum computing has introduced a significant threat to conventional cryptographic security measures. To address this challenge, the field of Quantum-Safe Cryptography (QSC) is swiftly evolving.</p>
 <p>At the forefront of this transformative movement is the National Institute of Standards and Technology (NIST), which is spearheading the standardisation of QSC algorithms.</p>
@@ -201,7 +203,7 @@
 <li><code>b3 = [0, 0, 1]</code> in blue.</li>
 </ul>
 <p>Each point on the lattice is formed by combining these basis vectors in various integer proportions, creating a grid-like pattern that extends in all three spatial dimensions. The visualisation captures the essence of a 3D lattice, a concept widely used in physics and mathematics to represent the regular, repeating arrangement of points in space.</p>
-<p><img src="https://cloudcdn.pro/stocks/diagrams/3D-lattice-graph.svg" alt="3D Lattice Representation with Basis Vectors" title="3D Lattice Representation with Basis Vectors" / class="img-fluid mx-auto d-block"></p>
+<p><img src="https://cloudcdn.pro/stocks/diagrams/3D-lattice-graph.svg" alt="3D Lattice Representation with Basis Vectors" title="3D Lattice Representation with Basis Vectors" / class="img-fluid mx-auto d-block" width="1200" height="800" decoding="async" loading="lazy"></p>
 <p>In cryptography, lattices are employed as the basis for certain cryptographic algorithms. Lattice-Based Cryptography (LBC) exploits the mathematical properties of lattices to create secure cryptographic schemes that are resistant to attacks from quantum computers. Quantum computers pose a significant threat to conventional cryptography, as they can efficiently break algorithms that rely on factoring large numbers or solving discrete logarithm problems.</p>
 <p>CRYSTALS-Kyber exemplifies the strengths of LBC, providing robust resistance against quantum attacks coupled with exceptional efficiency and key size. Its multiple platforms and compatibility with cryptography make it a reliable quantum-era data security option.</p>
 <p>The CRYSTALS-Kyber current specifications are as follows:</p>
@@ -214,11 +216,11 @@
 <p>This bar chart illustrates the relative security levels of classical cryptographic algorithms like RSA-2048 and Elliptic Curve Digital Signature Algorithm (ECDSA) compared to the specifications of quantum-resistant CRYSTALS-Kyber Algorithm variants (Kyber512, Kyber768, and Kyber1024).</p>
 <p>While the chart provides a visual comparison, it's crucial to note that the security levels aren't directly comparable due to their foundation on different mathematical principles.</p>
 <p>However, the chart does provide a useful reference point for understanding the security levels of quantum-resistant algorithms.</p>
-<p><img src="https://cloudcdn.pro/stocks/diagrams/kyber-vs-classical.svg" alt="Lattice-Based Cryptography" title="Comparison of Security Levels between Classical and Quantum-Resistant Algorithms" / class="img-fluid mx-auto d-block"></p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/stocks/diagrams/kyber-vs-classical.svg" alt="Lattice-Based Cryptography" title="Comparison of Security Levels between Classical and Quantum-Resistant Algorithms" / class="img-fluid mx-auto d-block" width="1200" height="800" decoding="async" loading="lazy"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="kyberlib-a-rust-library-for-quantum-resistant-cryptography">KyberLib: A Rust Library for Quantum-Resistant Cryptography <a class="heading-anchor" href="#kyberlib-a-rust-library-for-quantum-resistant-cryptography" aria-label="Link to KyberLib: A Rust Library for Quantum-Resistant Cryptography">#</a></h2>
 <p>KyberLib harnesses the power of CRYSTALS-Kyber to deliver enhanced memory safety and robust system-level security. It supports multiple CRYSTALS-Kyber specifications (Kyber512, Kyber768, Kyber1024), offering a range of security levels to suit your specific needs. Its <code>no_std</code> compliance makes it an ideal choice for embedded systems, while its WebAssembly (WASM) compatibility facilitates seamless integration into web applications.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="protecting-web-applications-with-quantum-resistant-cryptography">Protecting Web Applications With Quantum-Resistant Cryptography <a class="heading-anchor" href="#protecting-web-applications-with-quantum-resistant-cryptography" aria-label="Link to Protecting Web Applications With Quantum-Resistant Cryptography">#</a></h2>
 <p>Designed for a minimal memory footprint, KyberLib is ideal for embedded and resource-limited systems without compromising security. Its Rust-based implementation capitalises on the language's safety features, fortifying the security offered by the CRYSTALS-Kyber algorithm.</p>
 <p>Additionally, KyberLib's WebAssembly compatibility enhances its utility in web applications, guaranteeing that it remains a vital tool in the dynamic realm of cryptography.</p>
@@ -276,13 +278,21 @@
             </ul>
           </div>
         </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Newsletter signup">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — research notes on payments, AI &amp; post-quantum crypto. No spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="you@bank.com" />
+            <input type="hidden" name="_subject" value="Newsletter signup — sebastienrousseau.com" />
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
         <div class="legal">
           <span>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</span>
           <div class="social" aria-label="Social links">
-            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
-            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
-            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
-            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
           </div>
           <p>
             <a href="/accessibility/index.html">Accessibility</a> ·

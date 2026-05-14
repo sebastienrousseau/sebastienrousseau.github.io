@@ -30,16 +30,17 @@
          of each block at build time and injects the 'sha256-<base64>' tokens
          into script-src below before the file is served. Browsers will then
          allow that exact byte-for-byte content and nothing else.
-         'inline-speculationrules' permits the Speculation Rules API hover
-         prerender script in postbuild.py. -->
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
         base-uri 'self';
         form-action 'self' https://formspree.io;
-        frame-ancestors 'none';
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-FHgHtem6Ci8CbkJZWjtVaUXCD/tRwTKzUV/uiKWYheU=' 'sha256-fDM6Qu913H/818XJNFxInMkuCXw6KjmVU6TTqppaOYM=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' 'inline-speculationrules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-QuSBHmhwPPzkqvbWXEXcqTdmOz1OtqawckETAhRY8hk=' 'sha256-fDM6Qu913H/818XJNFxInMkuCXw6KjmVU6TTqppaOYM=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
         img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
@@ -66,7 +67,7 @@
     <meta name="color-scheme" content="light dark" />
     <script src="/theme-init.js"></script>
 
-    <link rel="stylesheet" href="/_csp/7971e7e29732f95d.css" crossorigin="anonymous" integrity="sha256-qrJSYjZeRiPzFCdjyWJjpu0NZT9HEcp8/o+Z3sr0a8Y=" crossorigin="anonymous"">
+    <link rel="stylesheet" href="/_csp/9e981656308fcdcf.css" crossorigin="anonymous" integrity="sha256-ANSnnDKlgg3cTbd4xAtfRuoiWGM91W/EShcUKm3crr0=" crossorigin="anonymous"">
     <link rel="alternate" type="application/atom+xml" title="Flux Atom" href="/fr/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="stylesheet" href="/highlight.css">
@@ -84,6 +85,7 @@
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/fr/2018-01-09-comprendre-la-technologie-derriere-la-blockchain/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
 <link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2018-01-09-comprendre-la-technologie-derriere-la-blockchain/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script></head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <a class="skip" href="#main">Aller au contenu principal</a>
@@ -164,7 +166,7 @@
     <nav class="article-tags" aria-label="Sujets"><a href="/fr/etiquettes/index.html#h3-blockchain" class="article-tag" rel="tag">blockchain</a><a href="/fr/etiquettes/index.html#h3-ethereum" class="article-tag" rel="tag">Ethereum</a><a href="/fr/etiquettes/index.html#h3-smart-contract" class="article-tag" rel="tag">smart contract</a><a href="/fr/etiquettes/index.html#h3-cryptomonnaie" class="article-tag" rel="tag">cryptomonnaie</a><a href="/fr/etiquettes/index.html#h3-solidity" class="article-tag" rel="tag">Solidity</a><a href="/fr/etiquettes/index.html#h3-geth" class="article-tag" rel="tag">Geth</a><a href="/fr/etiquettes/index.html#h3-dapps" class="article-tag" rel="tag">dApps</a><a href="/fr/etiquettes/index.html#h3-erc-20" class="article-tag" rel="tag">ERC-20</a><a href="/fr/etiquettes/index.html#h3-tokenisation" class="article-tag" rel="tag">tokenisation</a><a href="/fr/etiquettes/index.html#h3-testnet" class="article-tag" rel="tag">testnet</a></nav><div class="article-meta"><a href="/fr/a-propos/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2023-01-09T09:09:00+00:00" class="meta-pub">Publié le 9 janv. 2023</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Mis à jour le 11 mai 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Temps de lecture estimé">4 min de lecture</span></div></section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table des matières"><h2>Sommaire</h2><ol><li><a href="#apercu">Aperçu</a></li><li><a href="#idee">Idée</a></li><li><a href="#impact">Impact</a></li><li><a href="#incitations">Incitations</a></li><li><a href="#conclusion">Conclusion</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Construire une cryptomonnaie sur la blockchain Ethereum : un guide complet du développement blockchain, de la tokenisation et de l&#x27;implémentation.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Idée.</strong> Notre objectif est de construire une cryptomonnaie simple sur Ethereum, en vous offrant une expérience pratique du développement blockchain.</li>  <li><strong>Impact.</strong> En construisant une cryptomonnaie basée sur Ethereum de zéro, vous obtiendrez :.</li>  <li><strong>Incitations.</strong> Compléter un build de token de bout en bout débloque une expérience pratique de première main avec :.</li>  <li><strong>Concevoir la cryptomonnaie.</strong> La première tâche cruciale est de concevoir votre cryptomonnaie.</li></ul></aside><p><img src="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" alt="Ordinateur portable éteint sur une table en bois marron" />.class=&quot;img-fluid clearfix&quot;</p>
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table des matières"><h2>Sommaire</h2><ol><li><a href="#apercu">Aperçu</a></li><li><a href="#idee">Idée</a></li><li><a href="#impact">Impact</a></li><li><a href="#incitations">Incitations</a></li><li><a href="#conclusion">Conclusion</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Construire une cryptomonnaie sur la blockchain Ethereum : un guide complet du développement blockchain, de la tokenisation et de l&#x27;implémentation.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Idée.</strong> Notre objectif est de construire une cryptomonnaie simple sur Ethereum, en vous offrant une expérience pratique du développement blockchain.</li>  <li><strong>Impact.</strong> En construisant une cryptomonnaie basée sur Ethereum de zéro, vous obtiendrez :.</li>  <li><strong>Incitations.</strong> Compléter un build de token de bout en bout débloque une expérience pratique de première main avec :.</li>  <li><strong>Concevoir la cryptomonnaie.</strong> La première tâche cruciale est de concevoir votre cryptomonnaie.</li></ul></aside><p><img src="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" alt="Ordinateur portable éteint sur une table en bois marron"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
 <h2 id="apercu">Aperçu <a class="heading-anchor" href="#apercu" aria-label="Lien vers Aperçu">#</a></h2>
 <p>La technologie blockchain a ouvert la porte à une nouvelle ère d'applications décentralisées (dApps) qui fonctionnent indépendamment, sans contrôle centralisé. Ethereum fournit une plateforme puissante pour créer des dApps complexes et des smart contracts.</p>
 <p>L'une des utilisations les plus prometteuses d'Ethereum est le lancement de cryptomonnaies et de tokens numériques personnalisés. Dans ce guide complet, nous allons examiner étape par étape comment créer votre propre token cryptographique sur Ethereum.</p>
@@ -301,13 +303,21 @@ contract MyToken {
             </ul>
           </div>
         </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Inscription à la newsletter">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — notes de recherche sur les paiements, l'IA et la cryptographie post-quantique. Pas de spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="vous@banque.com" />
+            <input type="hidden" name="_subject" value="Inscription newsletter — sebastienrousseau.com" />
+            <button type="submit">S'inscrire</button>
+          </div>
+        </form>
         <div class="legal">
           <span>© Copyright 2007 - 2026 - Sebastien Rousseau. Tous droits réservés.</span>
           <div class="social" aria-label="Liens sociaux">
-            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
-            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
-            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
-            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
           </div>
           <p>
             <a href="/fr/accessibilite/index.html">Accessibilité</a> ·

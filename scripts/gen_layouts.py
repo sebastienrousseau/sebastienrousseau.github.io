@@ -112,7 +112,7 @@ def WRAP(body: str, extra: str = "", breadcrumb: str = BREADCRUMB) -> str:
 
 SCHEMA_TEMPLATES = {
     "default":  WRAP('"@type":"WebPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","image":' + IMAGE_OBJ + ',"author":' + PERSON_REF + ',"publisher":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
-    "about":    WRAP('"@type":"AboutPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","mainEntity":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
+    "about":    WRAP('"@type":"ProfilePage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","mainEntity":' + PERSON_REF + ',"isPartOf":' + SITE_REF + ',"dateCreated":"2007-01-01","dateModified":"{{last_reviewed}}"'),
     "contact":  WRAP('"@type":"ContactPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","mainEntity":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
     "articles": WRAP('"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Banking, payments, AI and post-quantum cryptography","author":' + PERSON_REF + ',"isPartOf":' + SITE_REF),
     "papers":   WRAP('"@type":"CollectionPage","name":"{{title}}","description":"{{description}}","url":"{{url}}","inLanguage":"{{hreflang}}","about":"Research papers and white papers on wholesale payments and post-quantum cryptography","author":' + PERSON_REF + ',"isPartOf":' + SITE_REF, PAPERS_FAQ),

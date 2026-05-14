@@ -25,7 +25,7 @@ import os
 import sys
 import urllib.error
 import urllib.request
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 # Canonical list of repos to track. Order matters only for the report
@@ -79,7 +79,7 @@ def fetch_repo(slug: str, token: str | None) -> dict | None:
     except urllib.error.URLError as e:
         print(f"  ✗ {slug}: {e.reason}", file=sys.stderr)
         return None
-    except Exception as e:  # noqa: BLE001 — best-effort, broad catch is the point
+    except Exception as e:
         print(f"  ✗ {slug}: {e}", file=sys.stderr)
         return None
 
@@ -135,7 +135,7 @@ def main() -> int:
             failed.append(slug)
 
     payload = {
-        "generated_at": datetime.now(tz=timezone.utc).isoformat(),
+        "generated_at": datetime.now(tz=UTC).isoformat(),
         "repos": [fresh[slug] for slug in REPOS if slug in fresh],
     }
     OUTPUT.write_text(

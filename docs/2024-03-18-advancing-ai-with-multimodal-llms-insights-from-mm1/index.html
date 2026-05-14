@@ -30,16 +30,17 @@
          of each block at build time and injects the 'sha256-<base64>' tokens
          into script-src below before the file is served. Browsers will then
          allow that exact byte-for-byte content and nothing else.
-         'inline-speculationrules' permits the Speculation Rules API hover
-         prerender script in postbuild.py. -->
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
         base-uri 'self';
         form-action 'self' https://formspree.io;
-        frame-ancestors 'none';
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-ZGpZRv6I2l/PL50cjFODshxUEyskvaBHaet60wv0x3c=' 'sha256-eN+JrYetAHKuWaL/V+ELK+KEzd2toYb899/vJO8PfGs=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' 'inline-speculationrules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-eN+JrYetAHKuWaL/V+ELK+KEzd2toYb899/vJO8PfGs=' 'sha256-kO2hfMwiXgdTcVNZiFVUDRsGwvU5WzJF2Zk4rHo1aAA=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
         img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
@@ -66,7 +67,7 @@
     <meta name="color-scheme" content="light dark" />
     <script src="/theme-init.js"></script>
 
-    <link rel="stylesheet" href="/_csp/7971e7e29732f95d.css" crossorigin="anonymous" integrity="sha256-qrJSYjZeRiPzFCdjyWJjpu0NZT9HEcp8/o+Z3sr0a8Y=" crossorigin="anonymous"">
+    <link rel="stylesheet" href="/_csp/9e981656308fcdcf.css" crossorigin="anonymous" integrity="sha256-ANSnnDKlgg3cTbd4xAtfRuoiWGM91W/EShcUKm3crr0=" crossorigin="anonymous"">
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="http://127.0.0.1:8000/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta property="og:title" content="Advancing AI with Multimodal LLMs: Insights from MM1">
@@ -83,6 +84,7 @@
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/mm1-visual.webp">
 <link rel="canonical" href="http://127.0.0.1:8000/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
 <link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-03-18-faire-avancer-l-ia-avec-les-llm-multimodaux-enseignements-de-mm1/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script></head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <a class="skip" href="#main">Skip to main content</a>
@@ -178,28 +180,28 @@
 <!-- lead-end -->
 <h2 id="introduction">Introduction <a class="heading-anchor" href="#introduction" aria-label="Link to Introduction">#</a></h2>
 <p>The integration of natural language processing and image recognition has resulted in the development of Multimodal Large Language Models (MLLMs). In their paper, Apple introduces the MM1, a collection of multimodal AI models that combine vision and language comprehension. Through thorough experiments, the researchers examined the factors that contribute to the performance of these models, exploring various architectural choices and pre-training data combinations. The MM1 paper provides essential information about how MLLMs are structured and trained. It discusses the study's approach and crucial findings, showcasing their possible impact on the future of AI.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" fetchpriority="high"></p>
 <h2 id="the-emergence-of-multimodal-ai">The Emergence of Multimodal AI <a class="heading-anchor" href="#the-emergence-of-multimodal-ai" aria-label="Link to The Emergence of Multimodal AI">#</a></h2>
 <p>The field of AI has witnessed remarkable advancements in recent years, particularly in the domains of natural language processing (NLP) and computer vision. Large Language Models (LLMs) have transformed the way machines understand and generate human language, enabling them to perform complex tasks such as language translation, text summarisation, and even creative writing. Similarly, convolutional neural networks (CNNs) have revolutionised image recognition, allowing machines to perceive and interpret visual data with unprecedented accuracy.</p>
 <p>MLLMs represent the next frontier in AI, combining the strengths of both NLP and computer vision to create models that can seamlessly process and generate information across text and images. This fusion of modalities opens up a world of possibilities, from more engaging virtual assistants to intelligent content creation tools that can generate captivating multimedia experiences.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="the-mm1-study-a-landmark-in-multimodal-ai-research">The MM1 Study: A Landmark in Multimodal AI Research <a class="heading-anchor" href="#the-mm1-study-a-landmark-in-multimodal-ai-research" aria-label="Link to The MM1 Study: A Landmark in Multimodal AI Research">#</a></h2>
 <p>The <a href="https://arxiv.org/abs/2403.09611" title="MM1: Methods Analysis &amp; Insights from Multimodal LLM Pre-training"><strong>MM1: Methods Analysis &amp; Insights from Multimodal LLM Pre-training ⧉</strong></a> study stands as a pivotal moment in the evolution of MLLMs. Led by a team of renowned researchers, this study aimed to uncover the key components and strategies essential for effective MLLM pre-training, focusing on the MM1 model as a benchmark for multimodal AI.</p>
 <h3 id="methodology-and-objectives">Methodology and Objectives <a class="heading-anchor" href="#methodology-and-objectives" aria-label="Link to Methodology and Objectives">#</a></h3>
 <p>The MM1 publication employed a rigorous experimental approach to investigate the intricacies of multimodal architecture and pre-training strategies. The researchers explored various aspects of the model, including the image encoder, vision-language connector, and the selection of diverse pre-training data sets. By systematically analysing these components, the study sought to identify the critical factors that contribute to enhanced MLLM performance.</p>
 <p>One of the primary objectives of the research was to determine the optimal mix of pre-training data for achieving superior few-shot learning capabilities. Few-shot learning refers to the ability of a model to adapt and learn from a limited number of examples, a crucial aspect of AI systems that need to be flexible and efficient in real-world applications.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="key-findings-and-insights">Key Findings and Insights <a class="heading-anchor" href="#key-findings-and-insights" aria-label="Link to Key Findings and Insights">#</a></h2>
 <p>The MM1 study yielded several groundbreaking insights that have shaped our understanding of MLLMs and their potential. One of the most significant findings was the importance of a well-curated mix of pre-training data. The researchers discovered that combining image-caption data, interleaved image-text data, and text-only data was essential for achieving optimal few-shot learning performance. This insight highlights the need for diverse and comprehensive pre-training data sets that can capture the nuances of multimodal communication.</p>
 <p>Another notable aspect of the MM1 study is the inclusion of both dense models with up to 30B parameters and mixture-of-experts (MoE) variants, demonstrating the scalability and flexibility of the architecture. The study revealed that image resolution has the most significant impact on model performance, even more so than model size, highlighting the importance of high-quality visual input in multimodal learning.</p>
 <p>The choice of image encoder architecture, such as ResNet or ViT, significantly influenced the model's ability to extract meaningful features from visual data and integrate them with textual information. Additionally, the resolution of the input images played a vital role in determining the quality and granularity of the visual features captured by the model.</p>
 <p>The MM1 study also sheds light on the importance of the vision-language connector in enabling seamless interaction between the visual and textual modalities. The researchers experimented with various approaches to fusing the information from the image encoder and the language model, identifying cross-attention mechanisms and multi-head attention as effective strategies for achieving rich and contextually relevant interactions.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="mm1-model-architecture-and-multimodal-learning-process">MM1 Model Architecture and Multimodal Learning Process <a class="heading-anchor" href="#mm1-model-architecture-and-multimodal-learning-process" aria-label="Link to MM1 Model Architecture and Multimodal Learning Process">#</a></h2>
-<p><img src="https://cloudcdn.pro/stocks/diagrams/mm1_model_architecture.svg" alt="MM1 Model Architecture" title="MM1 Model Architecture" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/stocks/diagrams/mm1_model_architecture.svg" alt="MM1 Model Architecture" title="MM1 Model Architecture" / class="m-10 w-100" width="1200" height="800" decoding="async" loading="lazy"></p>
 <p>The diagram illustrates the architecture and learning process of the MM1 model. The pre-training data consists of image input and text input, with the image input being processed by the Image Encoder and the text input directly feeding into the pre-trained LLM transformer. The Image Encoder extracts visual features from the input images, which are then passed to the VL Connector (Vision-Language Connector). The VL Connector integrates the visual features with the textual information from the pre-trained LLM transformer. This multimodal fusion enables the model to generate VQA (Visual Question Answering) captioning output through supervised fine-tuning.</p>
 <p>The pre-training data composition includes 45% interleaved data, 45% captions, and 10% text-only data, highlighting the importance of diverse data types in training the MM1 model.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="mm1-a-benchmark-for-multimodal-ai">MM1: A Benchmark for Multimodal AI <a class="heading-anchor" href="#mm1-a-benchmark-for-multimodal-ai" aria-label="Link to MM1: A Benchmark for Multimodal AI">#</a></h2>
 <p>The MM1 model, developed as part of the study, serves as a benchmark for multimodal AI, showcasing the potential of MLLMs in various applications. With its carefully designed architecture and pre-training regimen, MM1 demonstrates exceptional performance across a range of tasks, from visual question-answering to image captioning.</p>
 <p>One of the key strengths of MM1 lies in its ability to generate coherent and contextually relevant text based on visual input. For example, when presented with an image of a bustling city street, MM1 can generate a detailed and accurate description, capturing the essence of the scene and highlighting key elements such as the architecture, people, and activities.</p>
@@ -213,7 +215,7 @@
 <blockquote>
 <p>The next big step in AI will be machines that understand the world around them much better, by being able to understand and reason about the data that they haven't seen before. - <strong>Yann LeCun</strong></p>
 </blockquote>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="conclusion">Conclusion <a class="heading-anchor" href="#conclusion" aria-label="Link to Conclusion">#</a></h2>
 <p>The MM1 study represents a significant milestone in the evolution of Multimodal Large Language Models, offering invaluable insights into the architecture, pre-training strategies, and potential of these powerful AI systems. By meticulously analysing the key components and methodologies essential for effective MLLM pre-training, the study has laid the groundwork for future innovations in multimodal AI.</p>
 <p>The lessons learned from the MM1 study will undoubtedly shape the development of more sophisticated and capable MLLMs. These models have the potential to revolutionise the way we interact with machines, enabling more natural, intuitive, and contextually aware communication across textual and visual modalities.</p>
@@ -272,13 +274,21 @@
             </ul>
           </div>
         </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Newsletter signup">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — research notes on payments, AI &amp; post-quantum crypto. No spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="you@bank.com" />
+            <input type="hidden" name="_subject" value="Newsletter signup — sebastienrousseau.com" />
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
         <div class="legal">
           <span>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</span>
           <div class="social" aria-label="Social links">
-            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
-            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
-            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
-            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
           </div>
           <p>
             <a href="/accessibility/index.html">Accessibility</a> ·

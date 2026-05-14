@@ -58,7 +58,9 @@
          opt out via their own class-bearing selectors. */
       main.content :is(p,li,blockquote,dd,dt) a:not([class]){text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
 
-      h1,h2,h3,h4,h5,h6{font-family:"SF Pro Display",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:600;letter-spacing:-.015em;margin:0;color:inherit}
+      h1,h2,h3,h4,h5,h6{font-family:"SF Pro Display",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:600;letter-spacing:-.015em;margin:0;color:inherit;text-wrap:balance}
+      p,li{text-wrap:pretty}
+      @media print{nav,header,footer,.ap-search,.ap-lang,.skip,.gh-stats-row,.setup-finale,.share-block,.related-section,.speculation-rules{display:none!important}main{max-width:none!important;padding:0!important}body{background:#fff!important;color:#000!important;font-size:11pt;line-height:1.45}a{color:#000;text-decoration:underline}a[href^="http"]:after{content:" (" attr(href) ")";font-size:9pt;color:#444}img{max-width:100%!important;page-break-inside:avoid}h1,h2,h3{page-break-after:avoid}pre,blockquote{page-break-inside:avoid;border-left:2px solid #000}}
 
       .skip{position:absolute;left:-9999px;top:-9999px}
       .skip:focus{left:12px;top:12px;background:var(--ink);color:#fff;padding:10px 16px;z-index:300;border-radius:8px}
@@ -106,7 +108,8 @@
       .ap-lang-menu[hidden]{display:none}
       .ap-lang-menu-grid{display:grid;grid-template-columns:repeat(4,minmax(120px,1fr));gap:0;min-width:500px}
       .ap-lang-item{display:block;padding:.375rem .625rem;border-radius:.25rem;font-size:12px;color:var(--ink-mute, #6e6e73);text-decoration:none;white-space:nowrap;transition:background .2s ease,color .2s ease}
-      .ap-lang-item:hover,.ap-lang-item:focus-visible{background:color-mix(in srgb,var(--ink) 6%,transparent);color:var(--ink);opacity:1;outline:0}
+      .ap-lang-item:hover{background:color-mix(in srgb,var(--ink) 6%,transparent);color:var(--ink);opacity:1}
+      .ap-lang-item:focus-visible{background:color-mix(in srgb,var(--ink) 6%,transparent);color:var(--ink);opacity:1;outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
       .ap-lang-item.active,.ap-lang-item[aria-current="true"]{color:var(--ink);font-weight:600}
       .ap-lang-item[aria-disabled="true"]{opacity:.42;cursor:not-allowed;pointer-events:none}
       @media (max-width:600px){.ap-lang-toggle{padding:.4rem .7rem;font-size:.8rem}.ap-lang-menu-grid{grid-template-columns:repeat(2,1fr);min-width:0}}
@@ -280,6 +283,14 @@
       .ap-foot li{margin-bottom:6px}
       .ap-foot a{color:var(--ink-mute)}
       .ap-foot a:hover{color:var(--ink);text-decoration:underline}
+      .ap-newsletter{padding:20px 0;border-bottom:1px solid var(--border);max-width:520px}
+      .ap-newsletter-label{display:block;font-size:12px;color:var(--ink-mute);margin-bottom:10px}
+      .ap-newsletter-row{display:flex;gap:8px;flex-wrap:wrap}
+      .ap-newsletter input[type=email]{flex:1;min-width:200px;padding:9px 14px;border:1px solid var(--border);border-radius:999px;background:var(--card);color:var(--ink);font-size:13px}
+      .ap-newsletter input[type=email]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+      .ap-newsletter button{padding:9px 18px;border:0;border-radius:999px;background:var(--ink);color:var(--card);font-size:13px;font-weight:600;cursor:pointer;transition:opacity .2s}
+      .ap-newsletter button:hover{opacity:.85}
+      .ap-newsletter button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
       .ap-foot .legal{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center;padding:18px 0 0}
       .ap-foot .legal p{margin:0}
       .ap-foot .legal a{margin:0 4px}
@@ -479,9 +490,11 @@
          scripts/postbuild.py:inject_github_stats() from
          public/_data/gh-stats.json. Refreshed nightly by the
          refresh-gh-stats workflow. */
-      .gh-stats-row{display:flex;flex-wrap:wrap;gap:6px 10px;margin:10px 0 0;padding:0;list-style:none;font-size:11px;line-height:1.4;color:var(--ink-mute)}
-      .gh-stats-row .gh-stat{display:inline-flex;align-items:center;gap:3px;padding:2px 7px;border:1px solid var(--border);border-radius:999px;background:var(--card);white-space:nowrap}
-      .gh-stats-row .gh-stars{color:#d4a017}
+      .gh-stats-row{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 0;padding:0;list-style:none;font-size:14px;line-height:1.5;color:var(--ink-mute);font-variant-numeric:tabular-nums;font-weight:400}
+      .gh-stats-row .gh-stat{display:inline-flex;align-items:center;gap:6px;padding:2px 12px;border:1px solid var(--border);border-radius:999px;background:var(--card);white-space:nowrap}
+      .gh-stats-row .gh-ico{display:inline-flex;align-items:center;justify-content:center;font-size:1em;line-height:1}
+      .gh-stats-row .gh-num,.gh-stats-row .gh-txt{display:inline-block;line-height:1.5}
+      .gh-stats-row .gh-stars{color:#a07a10}
       [data-theme=dark] .gh-stats-row .gh-stars,html:not([data-theme=light]) .gh-stats-row .gh-stars{color:#e3b341}
       .gh-stats-row .gh-pushed{color:var(--ink-faint)}
 
@@ -543,6 +556,8 @@
       .feat-with-bg .feat-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;opacity:.55}
       .feat.dark.feat-with-bg::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.85));z-index:-1}
       .feat-hero .hero-portrait{display:block;width:96px;height:96px;margin:0 auto 24px;border-radius:50%;object-fit:cover;box-shadow:0 12px 32px -12px rgba(0,0,0,.25)}
+      .about-portrait{display:block;width:160px;height:160px;margin:0 auto 24px;border-radius:50%;object-fit:cover;box-shadow:0 12px 32px -12px rgba(0,0,0,.25);image-rendering:auto}
+      @media (min-width:48em){.about-portrait{float:right;margin:0 0 16px 24px}}
       .feat-hero .feat-eyebrow a{color:inherit;text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s}
       .feat-hero .feat-eyebrow a:hover{border-bottom-color:currentColor;opacity:1}
       .feat .wrap{max-width:980px;margin:0 auto}
@@ -661,18 +676,4 @@
       /* Hide the floating Static Site Generator search button. Our nav has its own .ap-search
          which forwards clicks to this button via main.js. */
       #ssg-search-btn{position:absolute!important;left:-9999px!important;top:-9999px!important;width:1px!important;height:1px!important;clip:rect(0 0 0 0)!important;clip-path:inset(50%)!important;overflow:hidden!important;pointer-events:none}
-      .contact-wrap{max-width:680px}
-      .contact-wrap .lede{font-size:18px;color:var(--ink-mute);margin:0 0 36px;line-height:1.5}
-      .ap-form{display:flex;flex-direction:column;gap:20px}
-      .ap-form-row{display:flex;flex-direction:column;gap:6px}
-      .ap-form-row label{font-size:13px;font-weight:600;color:var(--ink);letter-spacing:-.005em}
-      .ap-form input[type=text],.ap-form input[type=email],.ap-form select,.ap-form textarea{
-        font-family:inherit;font-size:16px;line-height:1.4;color:var(--ink);
-        background:#fff;border:1px solid var(--border);border-radius:12px;
-        padding:12px 14px;width:100%;transition:border-color .15s,box-shadow .15s;
-      }
-      .ap-form textarea{min-height:140px;resize:vertical}
-      .ap-form input:focus,.ap-form select:focus,.ap-form textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px rgba(var(--accent-rgb),.15)}
-      .ap-form-actions{align-items:flex-start;margin-top:8px}
-      .ap-form button.pill{font-size:16px;padding:14px 28px;border:none;cursor:pointer}
     

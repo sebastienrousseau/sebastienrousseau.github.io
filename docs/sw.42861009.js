@@ -10,7 +10,7 @@
  *   - Third-party origins: pass-through (no caching) to honour CSP and analytics opt-outs.
  */
 
-const CACHE = "ap-v5";
+const CACHE = "ap-v7";
 const OFFLINE_URL = "/offline/index.html";
 const PRECACHE = [
   "/",

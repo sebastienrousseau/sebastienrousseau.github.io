@@ -18,6 +18,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: refresh-gh-stats
@@ -42,7 +43,9 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/fetch_github_stats.py
 
-      - name: Commit + push if changed
+      - name: Open PR if changed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if git diff --quiet _data/gh-stats.json; then
             echo "no changes — skipping commit"
@@ -50,6 +53,15 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          BR="stats/refresh-$(date -u +%Y%m%d)"
+          git checkout -b "$BR"
           git add _data/gh-stats.json
           git commit -m "chore(stats): refresh gh-stats.json [skip ci]"
-          git push
+          git push -f --set-upstream origin "$BR"
+          # If a PR already exists on this branch, leave it; otherwise create one.
+          if ! gh pr view "$BR" >/dev/null 2>&1; then
+            gh pr create \
+              --base main --head "$BR" \
+              --title "chore(stats): nightly gh-stats refresh" \
+              --body "Automated refresh of \`_data/gh-stats.json\` from GitHub API. Safe to auto-merge."
+          fi
