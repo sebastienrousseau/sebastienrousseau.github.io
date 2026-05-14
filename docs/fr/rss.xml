@@ -6,8 +6,49 @@
     <description>Articles en français : IA appliquée, paiements ISO 20022, cryptographie post-quantique et transformation des paiements wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/fr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fr-FR</language>
-    <lastBuildDate>Thu, 14 May 2026 18:05:28 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2026 18:18:01 +0000</lastBuildDate>
     <copyright>© Copyright 2024 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>Ingénierie agentique pour les banques : un blueprint 2026 pour le COMEX et les ingénieurs qui le bâtiront</title>
+      <link>https://sebastienrousseau.com/fr/2026-05-18-ingenierie-agentique-banques-blueprint-2026/</link>
+      <description>L&apos;IA agentique est passée du pilote à la production dans la banque mondiale. 70 % des institutions l&apos;utilisent à un degré ou un autre ; seule une sur cinq a un modèle de gouvernance mature. Les adversaires autonomes opèrent à vitesse machine, l&apos;estate hérité COBOL avec lequel les nouveaux systèmes doivent interopérer a été écrit pour les hypothèses batch des années 1960, et l&apos;échéance « haut risque » du Règlement européen sur l&apos;IA est à douze semaines. Voici la position d&apos;ingénierie et de gouvernance qu&apos;une banque doit tenir.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-18-ingenierie-agentique-banques-blueprint-2026/</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/agentic-engineering-banks-2026-banner.webp" type="image/webp" length="0"/>
+      <category>ingénierie agentique</category>
+      <category>développement piloté par spécification</category>
+      <category>banques</category>
+      <category>services financiers</category>
+      <category>gouvernance IA</category>
+      <category>Règlement européen sur l&apos;IA</category>
+      <category>DORA</category>
+      <category>SR 11-7</category>
+      <category>NIST AI RMF</category>
+      <category>ISO 42001</category>
+      <category>modernisation COBOL</category>
+      <category>mainframe</category>
+      <category>vibe coding</category>
+      <category>vibe hacking</category>
+      <category>agents autonomes</category>
+      <category>Claude Code</category>
+      <category>GitHub Spec Kit</category>
+      <category>AI Bill of Materials</category>
+      <category>AIBOM</category>
+      <category>human in the loop</category>
+      <category>HITL</category>
+      <category>human on the loop</category>
+      <category>HOTL</category>
+      <category>gestion des risques tiers</category>
+      <category>TPRM</category>
+      <category>risque fournisseur</category>
+      <category>cryptographie post-quantique</category>
+      <category>plan de contrôle des agents</category>
+      <category>FCA</category>
+      <category>SM&amp;CR</category>
+      <category>plan d&apos;action 12 semaines</category>
+      <category>Sebastien Rousseau</category>
+    </item>
     <item>
       <title>Le rendement caché : décryptage des dépôts BRSRV et BSTBL de BlackRock</title>
       <link>https://sebastienrousseau.com/fr/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/</link>

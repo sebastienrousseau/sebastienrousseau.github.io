@@ -98,6 +98,8 @@ EN_TO_FR: dict[str, str] = {
         "2026-05-14-securiser-le-livre-comptable-migration-post-quantique-finance-entreprise",
     "2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf":
         "2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act",
+    "2026-05-18-agentic-engineering-banks-blueprint-2026":
+        "2026-05-18-ingenierie-agentique-banques-blueprint-2026",
 }
 
 FR_TO_EN: dict[str, str] = {fr: en for en, fr in EN_TO_FR.items()}

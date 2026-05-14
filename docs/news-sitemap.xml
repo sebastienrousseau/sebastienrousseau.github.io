@@ -554,6 +554,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
+    <news:title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</news:title>
+    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, COBOL modernisation, mainframe, vibe coding, vibe hacking, autonomous agents, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, third-party risk management, TPRM, vendor risk, post-quantum cryptography, agent control plane, FCA, SM&amp;CR, 12-week action plan, Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/privacy</loc>
   <news:news>
     <news:publication>

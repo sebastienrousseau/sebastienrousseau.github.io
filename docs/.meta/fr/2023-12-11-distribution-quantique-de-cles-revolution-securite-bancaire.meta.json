@@ -1,11 +1,11 @@
 {
-  "title": "La distribution de clés quantique révolutionne la sécurité bancaire",
+  "subtitle": "Distribution de clés quantique (QKD) pour une sécurité de niveau financier",
+  "date": "December 11, 2023",
+  "keywords": "distribution de clés quantique, QKD, sécurité quantique, banque, industrie financière, finance numérique, cybersécurité, calcul quantique, HSBC, essai de protection quantique, transactions financières",
   "language": "fr",
   "locale": "fr_FR",
-  "description": "Alors que les ordinateurs quantiques menacent les méthodes de chiffrement classiques, la distribution de clés quantique (QKD) émerge comme un game-changer, offrant une sécurité sans pareil.",
-  "date": "December 11, 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
-  "keywords": "distribution de clés quantique, QKD, sécurité quantique, banque, industrie financière, finance numérique, cybersécurité, calcul quantique, HSBC, essai de protection quantique, transactions financières",
   "banner_alt": "HSBC depuis les docks",
-  "subtitle": "Distribution de clés quantique (QKD) pour une sécurité de niveau financier"
+  "title": "La distribution de clés quantique révolutionne la sécurité bancaire",
+  "description": "Alors que les ordinateurs quantiques menacent les méthodes de chiffrement classiques, la distribution de clés quantique (QKD) émerge comme un game-changer, offrant une sécurité sans pareil.",
+  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp"
 }

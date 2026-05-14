@@ -329,6 +329,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/</loc>
+  <lastmod>2026-05-18</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fr/</loc>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
@@ -667,6 +673,12 @@
 <url>
   <loc>https://sebastienrousseau.com/fr/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/</loc>
   <lastmod>2026-05-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fr/2026-05-18-ingenierie-agentique-banques-blueprint-2026/</loc>
+  <lastmod>2026-05-18</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
 </url>

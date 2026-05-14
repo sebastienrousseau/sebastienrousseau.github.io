@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/fr/2026-05-18-ingenierie-agentique-banques-blueprint-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fr-FR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
+    <news:title>Ingénierie agentique pour les banques : un blueprint 2026 pour le COMEX et les ingénieurs qui le bâtiront</news:title>
+    <news:keywords>ingénierie agentique, développement piloté par spécification, banques, services financiers, gouvernance IA, Règlement européen sur l&apos;IA, DORA, SR 11-7, NIST AI RMF, ISO 42001, modernisation COBOL, mainframe, vibe coding, vibe hacking, agents autonomes, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, gestion des risques tiers, TPRM, risque fournisseur, cryptographie post-quantique, plan de contrôle des agents, FCA, SM&amp;CR, plan d&apos;action 12 semaines, Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fr/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/</loc>
   <news:news>
     <news:publication>

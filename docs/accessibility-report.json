@@ -1,6 +1,6 @@
 {
-  "pages_scanned": 58,
-  "total_issues": 58,
+  "pages_scanned": 59,
+  "total_issues": 59,
   "wcag_version": "2.2",
   "pages": [
     {
@@ -415,6 +415,16 @@
     },
     {
       "path": "2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html",
+      "issues": [
+        {
+          "criterion": "2.4.13",
+          "severity": "warning",
+          "message": "`:focus { outline: none }` without a compensating outline-style/box-shadow/border (WCAG 2.2 AAA — Focus Appearance)"
+        }
+      ]
+    },
+    {
+      "path": "2026-05-18-agentic-engineering-banks-blueprint-2026/index.html",
       "issues": [
         {
           "criterion": "2.4.13",

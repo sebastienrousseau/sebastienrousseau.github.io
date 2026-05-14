@@ -1,11 +1,11 @@
 {
-  "title": "Google Gemma : transformer le développement de l'IA open source",
-  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
-  "subtitle": "Un regard de l'intérieur sur les capacités, les contributions open source et la suite",
-  "language": "fr",
+  "date": "February 26, 2024",
   "description": "Découvrez le modèle Gemma de Google : un projet open source proposant des solutions d'IA éthique pour un usage personnel comme entreprise.",
+  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
+  "language": "fr",
   "banner_alt": "Vaisseau futuriste bleu aux néons",
+  "title": "Google Gemma : transformer le développement de l'IA open source",
   "locale": "fr_FR",
-  "keywords": "Google Gemma, modèle d'IA open source, architecture technique Gemma, Gemma 2B 7B, IA éthique, intégration IA macOS, solutions IA pour entreprise, IA conversationnelle, analyse de données IA, IA pour appareils edge",
-  "date": "February 26, 2024"
+  "subtitle": "Un regard de l'intérieur sur les capacités, les contributions open source et la suite",
+  "keywords": "Google Gemma, modèle d'IA open source, architecture technique Gemma, Gemma 2B 7B, IA éthique, intégration IA macOS, solutions IA pour entreprise, IA conversationnelle, analyse de données IA, IA pour appareils edge"
 }

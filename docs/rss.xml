@@ -6,8 +6,32 @@
     <description>AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography.</description>
     <atom:link href="https://sebastienrousseau.com/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Fri, 15 May 2026 06:06:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 06:06:06 +0000</lastBuildDate>
     <copyright>© Copyright 2024 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
+      <link>https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026</link>
+      <description>Agentic AI has crossed from pilot into production across global banking. 70% of institutions are using it to some degree; only one in five has a mature governance model. Meanwhile, autonomous adversaries are operating at machine speed, the legacy COBOL estate the new systems must interoperate with was written for the batch-processing assumptions of the 1960s, and the EU AI Act&apos;s August 2026 high-risk deadline is twelve weeks away. This is the engineering and governance position a bank needs to hold.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/agentic-engineering-banks-2026-banner.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>agentic engineering</category>
+      <category>spec-driven development</category>
+      <category>banks</category>
+      <category>AI governance</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+      <category>COBOL modernisation</category>
+      <category>autonomous agents</category>
+      <category>HITL</category>
+      <category>HOTL</category>
+      <category>TPRM</category>
+      <category>AIBOM</category>
+      <category>Claude Code</category>
+      <category>post-quantum cryptography</category>
+    </item>
     <item>
       <title>Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded</title>
       <link>https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf</link>
@@ -991,19 +1015,6 @@
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/alexandr-podvalny-n_Jb_d8O43Q.webp" type="image/webp" length="0"/>
       <category>Technology</category>
-    </item>
-    <item>
-      <title>Let's Start a Conversation That Will Make a Real Difference</title>
-      <link>https://sebastienrousseau.com/contact</link>
-      <description>Have a question or comment? Please contact me using the form below. I am always happy to hear from you and will respond as soon as possible.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/contact</guid>
-      <pubDate>Sun, 01 Oct 2023 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/robert-haverly-_kmr5wKVW7E.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>contact</category>
-      <category>help</category>
-      <category>support</category>
     </item>
   </channel>
 </rss>
