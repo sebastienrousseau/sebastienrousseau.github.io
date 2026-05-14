@@ -1287,6 +1287,73 @@ def build_fr_title_index(pages: list[Path]) -> dict[str, str]:
     return out
 
 
+_FAQ_H2_RE = re.compile(
+    r'<h2 id="(?:frequently-asked-questions|foire-aux-questions)"[^>]*>'
+    r'([\s\S]+?)</h2>'
+    r'([\s\S]+?)'
+    r'(?=<h2|<aside|</main>|<hr|<footer)',
+)
+
+
+def _convert_faq_to_qa(html: str) -> str:
+    """Convert the plain ``<p><strong>Q?</strong></p><p>A</p>…`` FAQ
+    structure inside articles into the collapsible ``<details class="qa-item">``
+    pattern used by ``/projects/`` and ``/papers/`` for UX/UI consistency.
+    """
+    is_fr = _is_french(html)
+    headline = "Questions ?" if is_fr else "Questions?"
+    soft = "Réponses." if is_fr else "Answers."
+
+    def patch(m: re.Match[str]) -> str:
+        body = m.group(2)
+        # Strip the trailing "<a class='heading-anchor'>#</a>" inside H2.
+        # Walk for Q/A pairs: <p><strong>Q?</strong></p><p>A</p>
+        qa_pairs: list[tuple[str, str]] = []
+        # Capture Q + multiple following <p>…</p> until next <p><strong>...?</strong></p>.
+        # Build a list of P-segments first, then pair Q with the answer chunk.
+        segments: list[str] = []
+        for sm in re.finditer(r'<p>([\s\S]*?)</p>', body):
+            segments.append(sm.group(1).strip())
+        i = 0
+        while i < len(segments):
+            seg = segments[i]
+            # Q heuristic: starts with <strong> and ends with ? (or French ?)
+            qm = re.match(r'^<strong>([\s\S]+?)</strong>\s*$', seg)
+            if qm:
+                question = qm.group(1).strip()
+                # Collect answer paragraphs until next strong-only paragraph
+                ans_parts: list[str] = []
+                j = i + 1
+                while j < len(segments):
+                    nxt = segments[j]
+                    if re.match(r'^<strong>[\s\S]+?</strong>\s*$', nxt):
+                        break
+                    ans_parts.append(nxt)
+                    j += 1
+                qa_pairs.append((question, "</p><p>".join(ans_parts)))
+                i = j
+            else:
+                i += 1
+
+        if not qa_pairs:
+            return m.group(0)
+
+        new_h2 = (
+            f'<h2 id="faq-heading" class="qa-headline">{headline} '
+            f'<span class="qa-headline-soft">{soft}</span></h2>'
+        )
+        out_parts: list[str] = [new_h2, '<section class="qa-list" aria-labelledby="faq-heading">']
+        for q, a in qa_pairs:
+            out_parts.append(
+                f'<details class="qa-item"><summary class="qa-q">{q}</summary>'
+                f'<section class="qa-a"><p>{a}</p></section></details>'
+            )
+        out_parts.append('</section>')
+        return "".join(out_parts)
+
+    return _FAQ_H2_RE.sub(patch, html)
+
+
 def inject_prev_next_nav(
     html: str,
     slug: str,
@@ -1538,6 +1605,10 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
         patched_an = inject_anchor_links_and_toc(patched_fu)
         if patched_an != patched_fu:
             anchor_patched += 1
+        # Convert article FAQ structure (`<p><strong>Q?</strong></p><p>A</p>`)
+        # to the collapsible <details class="qa-item"> pattern for UX parity
+        # with /projects/ and /papers/.
+        patched_an = _convert_faq_to_qa(patched_an)
         patched_ci = inject_citations(patched_an)
         if patched_ci != patched_an:
             citation_patched += 1

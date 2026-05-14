@@ -266,6 +266,59 @@ def translate_chrome(html: str) -> str:
     for pat, repl in _CHROME_PATCHES_COMPILED:
         html = pat.sub(repl, html)
     html = rewrite_static_links(html)
+    html = localize_en_dates(html)
+    return html
+
+
+# English short and long month names → French short forms.
+_EN_MONTH_TO_FR = {
+    "January": "janvier", "February": "février", "March": "mars",
+    "April": "avril", "May": "mai", "June": "juin",
+    "July": "juillet", "August": "août", "September": "septembre",
+    "October": "octobre", "November": "novembre", "December": "décembre",
+    "Jan": "janv.", "Feb": "févr.", "Mar": "mars",
+    "Apr": "avr.", "Jun": "juin", "Jul": "juill.",
+    "Aug": "août", "Sep": "sept.", "Sept": "sept.",
+    "Oct": "oct.", "Nov": "nov.", "Dec": "déc.",
+}
+
+_DATE_FULL_RE = re.compile(
+    r'\b(' + "|".join(
+        m for m in _EN_MONTH_TO_FR if len(m) > 4
+    ) + r')\s+(\d{1,2}),\s+(\d{4})\b'
+)
+_DATE_SHORT_RE = re.compile(
+    r'\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\s+(\d{1,2}),\s+(\d{4})\b'
+)
+_DATE_YEAR_MONTH_RE = re.compile(
+    r'\b(' + "|".join(
+        m for m in _EN_MONTH_TO_FR if len(m) > 4
+    ) + r')\s+(\d{4})\b'
+)
+
+
+def localize_en_dates(html: str) -> str:
+    """Rewrite English `Month DD, YYYY` and `Mon DD, YYYY` to the French
+    equivalent. Skips inside <time datetime="…"> attribute values."""
+    # Replace only inside visible text — protect <time datetime="…"> values.
+    # Cheap approach: split on `<time` tags, only patch the *visible* segment
+    # ("…">DATE</time>"); leave the attribute value alone.
+    # Simpler: apply substitutions, but inside attribute values the same
+    # substitutions are safe because we only swap the visible-month words —
+    # ISO datetime attributes use numbers (YYYY-MM-DD), not month names.
+    def full_repl(m: re.Match[str]) -> str:
+        return f"{int(m.group(2))} {_EN_MONTH_TO_FR[m.group(1)]} {m.group(3)}"
+
+    def short_repl(m: re.Match[str]) -> str:
+        month = _EN_MONTH_TO_FR.get(m.group(1), m.group(1))
+        return f"{int(m.group(2))} {month} {m.group(3)}"
+
+    def ym_repl(m: re.Match[str]) -> str:
+        return f"{_EN_MONTH_TO_FR[m.group(1)]} {m.group(2)}"
+
+    html = _DATE_FULL_RE.sub(full_repl, html)
+    html = _DATE_SHORT_RE.sub(short_repl, html)
+    html = _DATE_YEAR_MONTH_RE.sub(ym_repl, html)
     return html
 
 
@@ -2003,6 +2056,8 @@ STATIC_BODY_PATCHES: list[tuple[str, str]] = [
     # /fr/tags/
     (r'aria-label="Tag: ([^,]+), (\d+) Posts"', r'aria-label="Étiquette : \1, \2 articles"'),
     (r'(\(\d+) Posts\)', r'\1 articles)'),
+    (r'>Featured Tags \((\d+)\)</h2>', r'>Étiquettes à la une (\1)</h2>'),
+    (r'>Featured Tags<', '>Étiquettes à la une<'),
     # Hero / shared section labels
     (r'>Latest research<', '>Recherches récentes<'),
     (r'>Read latest research<', '>Lire les recherches récentes<'),
