@@ -150,17 +150,17 @@ CHROME_PATCHES: list[tuple[str, str]] = [
     (r'aria-label="Sebastien Rousseau home"', 'aria-label="Accueil de Sebastien Rousseau"'),
 
     # Nav menu items — keep visitors inside /fr/ by pointing every
-    # nav link to the localised page under /fr/. The minifier strips
-    # quotes from href attributes on the home shell, so the regex
+    # nav link to the localised FR-slug page under /fr/. The minifier
+    # strips quotes from href attributes on some shells, so the regex
     # accepts both quoted and unquoted forms via `"?`.
     (r'<li><a href="?/about/index\.html"?>About</a></li>',
-     '<li><a href="/fr/about/index.html">À propos</a></li>'),
+     '<li><a href="/fr/a-propos/index.html">À propos</a></li>'),
     (r'<li><a href="?/papers/index\.html"?>Papers</a></li>',
-     '<li><a href="/fr/papers/index.html">Publications</a></li>'),
+     '<li><a href="/fr/publications/index.html">Publications</a></li>'),
     (r'<li><a href="?/topics/index\.html"?>Topics</a></li>',
-     '<li><a href="/fr/topics/index.html">Sujets</a></li>'),
+     '<li><a href="/fr/sujets/index.html">Sujets</a></li>'),
     (r'<li><a href="?/projects/index\.html"?>Projects</a></li>',
-     '<li><a href="/fr/projects/index.html">Projets</a></li>'),
+     '<li><a href="/fr/projets/index.html">Projets</a></li>'),
     (r'<li><a href="?/articles/index\.html"?>Articles</a></li>',
      '<li><a href="/fr/articles/index.html">Articles</a></li>'),
     (r'<li><a href="?/contact/index\.html"?>Contact</a></li>',
@@ -182,15 +182,15 @@ CHROME_PATCHES: list[tuple[str, str]] = [
     # Footer links — surgical, scoped by href. Point at /fr/ siblings so
     # visitors stay in the French edition. Quote-tolerant.
     (r'<a href="?/about/index\.html"?>About</a>',
-     '<a href="/fr/about/index.html">À propos</a>'),
+     '<a href="/fr/a-propos/index.html">À propos</a>'),
     (r'<a href="?/made-with-static-site-generator/index\.html"?>Made with Static Site Generator</a>',
-     '<a href="/fr/made-with-static-site-generator/index.html">Conçu avec Static Site Generator</a>'),
+     '<a href="/fr/concu-avec-static-site-generator/index.html">Conçu avec Static Site Generator</a>'),
     (r'<a href="?/papers/index\.html"?>Papers</a>',
-     '<a href="/fr/papers/index.html">Publications</a>'),
+     '<a href="/fr/publications/index.html">Publications</a>'),
     (r'<a href="?/tags/index\.html"?>Tags</a>',
-     '<a href="/fr/tags/index.html">Étiquettes</a>'),
+     '<a href="/fr/etiquettes/index.html">Étiquettes</a>'),
     (r'<a href="?/projects/index\.html"?>Projects</a>',
-     '<a href="/fr/projects/index.html">Projets</a>'),
+     '<a href="/fr/projets/index.html">Projets</a>'),
     (r'<a href="?/playlists/index\.html"?>Playlists</a>',
      '<a href="/fr/playlists/index.html">Playlists</a>'),
     (r'<a href="?/contact/index\.html"?>Contact</a>',
@@ -206,13 +206,13 @@ CHROME_PATCHES: list[tuple[str, str]] = [
     (r'© Copyright 2007 - 2026 - Sebastien Rousseau\. All rights reserved\.',
      '© Copyright 2007 - 2026 - Sebastien Rousseau. Tous droits réservés.'),
 
-    # Footer legal links — route to /fr/ siblings
-    (r'<a href="/accessibility/index\.html">Accessibility</a>',
-     '<a href="/fr/accessibility/index.html">Accessibilité</a>'),
-    (r'<a href="/privacy/index\.html">Privacy</a>',
-     '<a href="/fr/privacy/index.html">Confidentialité</a>'),
-    (r'<a href="/terms/index\.html">Terms</a>',
-     '<a href="/fr/terms/index.html">Conditions</a>'),
+    # Footer legal links — route to /fr/ siblings (FR slugs)
+    (r'<a href="?/accessibility/index\.html"?>Accessibility</a>',
+     '<a href="/fr/accessibilite/index.html">Accessibilité</a>'),
+    (r'<a href="?/privacy/index\.html"?>Privacy</a>',
+     '<a href="/fr/confidentialite/index.html">Confidentialité</a>'),
+    (r'<a href="?/terms/index\.html"?>Terms</a>',
+     '<a href="/fr/conditions/index.html">Conditions</a>'),
 
     # Search palette (Shokunin widget — rendered HTML)
     (r'placeholder="Search documentation\.\.\."', 'placeholder="Rechercher dans la documentation..."'),
@@ -331,36 +331,77 @@ def localize_en_dates(html: str) -> str:
     return html
 
 
-# Internal static pages that have a FR mirror at /fr/<page>/. Any
-# remaining anchor on a FR page pointing at the bare EN URL gets
-# rewritten to the FR sibling here. Idempotent.
-_STATIC_FR_PAGES = (
-    "about", "papers", "projects", "topics", "tags", "contact",
-    "accessibility", "privacy", "terms", "playlists",
-    "made-with-static-site-generator", "made-with-shokunin",
-    "404", "offline", "thanks",
-)
+# Canonical EN → FR slug map for the static pages mirrored under /fr/.
+# Visible URLs are localised (e.g. /fr/privacy/ → /fr/confidentialite/).
+# Slugs without a translation (contact, playlists, 404, articles) keep
+# their English form because the word is identical or universal.
+STATIC_SLUG_FR: dict[str, str] = {
+    "about": "a-propos",
+    "papers": "publications",
+    "projects": "projets",
+    "topics": "sujets",
+    "tags": "etiquettes",
+    "contact": "contact",
+    "accessibility": "accessibilite",
+    "privacy": "confidentialite",
+    "terms": "conditions",
+    "playlists": "playlists",
+    "made-with-static-site-generator": "concu-avec-static-site-generator",
+    "made-with-shokunin": "concu-avec-shokunin",
+    "404": "404",
+    "offline": "hors-ligne",
+    "thanks": "merci",
+    "articles": "articles",
+}
+STATIC_SLUG_EN: dict[str, str] = {v: k for k, v in STATIC_SLUG_FR.items()}
+
+# Static pages we mirror under /fr/. Keys are the EN slugs.
+_STATIC_FR_PAGES = tuple(STATIC_SLUG_FR.keys())
 _STATIC_LINK_RE = re.compile(
     r'(href=)(["\']?)(?:https?://sebastienrousseau\.com)?/('
-    + "|".join(_STATIC_FR_PAGES)
+    + "|".join(re.escape(s) for s in _STATIC_FR_PAGES)
+    + r')(/(?:index\.html)?)?\2(?=[\s>])',
+)
+# Also catch links to ALREADY-FR slugs like /fr/privacy/ that should be /fr/confidentialite/
+_LEGACY_FR_LINK_RE = re.compile(
+    r'(href=)(["\']?)(?:https?://sebastienrousseau\.com)?/fr/('
+    + "|".join(re.escape(s) for s in _STATIC_FR_PAGES)
     + r')(/(?:index\.html)?)?\2(?=[\s>])',
 )
 _TOPIC_SUBPAGE_RE = re.compile(
-    r'(href=)(["\']?)(?:https?://sebastienrousseau\.com)?/topics/([a-z0-9-]+)(/(?:index\.html)?)\2(?=[\s>])',
-)
-_ARTICLES_LINK_RE = re.compile(
-    r'(href=)(["\']?)(?:https?://sebastienrousseau\.com)?/articles(/(?:index\.html)?)?\2(?=[\s>])',
+    r'(href=)(["\']?)(?:https?://sebastienrousseau\.com)?/(?:fr/)?topics/([a-z0-9-]+)(/(?:index\.html)?)\2(?=[\s>])',
 )
 
 
 def rewrite_static_links(html: str) -> str:
     """Rewrite every internal anchor on a FR page that still points at a
-    top-level EN static page (/about/, /papers/, …) so it lands on the
-    FR mirror under /fr/. ``/articles/`` redirects to ``/fr/articles/``.
-    Handles both quoted and unquoted href attributes."""
-    html = _STATIC_LINK_RE.sub(r'\1"/fr/\3/"', html)
-    html = _TOPIC_SUBPAGE_RE.sub(r'\1"/fr/topics/\3\4"', html)
-    html = _ARTICLES_LINK_RE.sub(r'\1"/fr/articles/"', html)
+    top-level EN (or EN-slug FR) static page so it lands on the
+    correctly-localised FR slug under /fr/. Handles both quoted and
+    unquoted href attributes."""
+    def repl_top_level(m: re.Match[str]) -> str:
+        en_slug = m.group(3)
+        fr_slug_str = STATIC_SLUG_FR.get(en_slug, en_slug)
+        tail = m.group(4) or "/"
+        if not tail.startswith("/"):
+            tail = "/" + tail
+        return f'{m.group(1)}"/fr/{fr_slug_str}{tail}"'
+
+    def repl_legacy_fr(m: re.Match[str]) -> str:
+        en_slug = m.group(3)
+        fr_slug_str = STATIC_SLUG_FR.get(en_slug, en_slug)
+        if fr_slug_str == en_slug:
+            return m.group(0)  # nothing to change
+        tail = m.group(4) or "/"
+        if not tail.startswith("/"):
+            tail = "/" + tail
+        return f'{m.group(1)}"/fr/{fr_slug_str}{tail}"'
+
+    def repl_topic_sub(m: re.Match[str]) -> str:
+        return f'{m.group(1)}"/fr/sujets/{m.group(3)}{m.group(4)}"'
+
+    html = _STATIC_LINK_RE.sub(repl_top_level, html)
+    html = _LEGACY_FR_LINK_RE.sub(repl_legacy_fr, html)
+    html = _TOPIC_SUBPAGE_RE.sub(repl_topic_sub, html)
     return html
 
 
@@ -375,7 +416,7 @@ def _french_author_card() -> str:
         'width="64" height="64" loading="lazy" decoding="async" />'
         '<span class="author-card-body">'
         '<strong class="author-card-name">'
-        '<a href="/about/index.html">Sebastien Rousseau</a></strong>'
+        '<a href="/fr/a-propos/index.html">Sebastien Rousseau</a></strong>'
         '<span class="author-card-bio">Technologue senior dans la banque, '
         'j\'écris sur l\'IA appliquée, la migration ISO 20022, la cryptographie '
         'post-quantique pour les services financiers, et la transformation '
@@ -383,7 +424,7 @@ def _french_author_card() -> str:
         '<span class="author-credentials">'
         'Plus de 20 ans d\'expérience chez HSBC Commercial &amp; Investment Bank, '
         'PayPal, Barclays, Shazam, AKQA, Virgin Group. '
-        '<a href="/about/index.html">Profil complet</a> &middot; '
+        '<a href="/fr/a-propos/index.html">Profil complet</a> &middot; '
         '<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; '
         '<a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a>'
         '</span></span></aside>'
@@ -1410,36 +1451,36 @@ HOME_FR_PATCHES: list[tuple[str, str]] = [
      '<a class="pill ghost" href="/fr/contact/index.html">Me contacter</a>'),
     # Read the paper / Read the article CTAs anywhere on the home
     (r'href="?/papers/index\.html"?>Read the paper</a>',
-     'href="/fr/papers/index.html">Lire le livre blanc</a>'),
+     'href="/fr/publications/index.html">Lire le livre blanc</a>'),
     (r'href="?/2026-05-15[^"]*"?>Read the article</a>',
      'href="/fr/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/index.html">Lire l\'article</a>'),
     # Footer column titles also accept unquoted class
     (r'<h2 class=ap-foot-title>Writing</h2>', '<h2 class=ap-foot-title>Écrits</h2>'),
     (r'<h2 class=ap-foot-title>Work</h2>', '<h2 class=ap-foot-title>Activité</h2>'),
     (r'<h2 class=ap-foot-title>Reach</h2>', '<h2 class=ap-foot-title>Réseaux</h2>'),
-    # Footer items (unquoted href forms)
+    # Footer items (unquoted href forms) — point at localised FR slugs
     (r'<a href=/about/index\.html>About</a>',
-     '<a href=/fr/about/index.html>À propos</a>'),
+     '<a href=/fr/a-propos/index.html>À propos</a>'),
     (r'<a href=/papers/index\.html>Papers</a>',
-     '<a href=/fr/papers/index.html>Publications</a>'),
+     '<a href=/fr/publications/index.html>Publications</a>'),
     (r'<a href=/projects/index\.html>Projects</a>',
-     '<a href=/fr/projects/index.html>Projets</a>'),
+     '<a href=/fr/projets/index.html>Projets</a>'),
     (r'<a href=/playlists/index\.html>Playlists</a>',
      '<a href=/fr/playlists/index.html>Playlists</a>'),
     (r'<a href=/contact/index\.html>Contact</a>',
      '<a href=/fr/contact/index.html>Contact</a>'),
     (r'<a href=/tags/index\.html>Tags</a>',
-     '<a href=/fr/tags/index.html>Étiquettes</a>'),
+     '<a href=/fr/etiquettes/index.html>Étiquettes</a>'),
     (r'<a href=/articles/index\.html>Articles</a>',
      '<a href=/fr/articles/index.html>Articles</a>'),
     (r'<a href=/made-with-static-site-generator/index\.html>Made with Static Site Generator</a>',
-     '<a href=/fr/made-with-static-site-generator/index.html>Conçu avec Static Site Generator</a>'),
+     '<a href=/fr/concu-avec-static-site-generator/index.html>Conçu avec Static Site Generator</a>'),
     (r'<a href=/accessibility/index\.html>Accessibility</a>',
-     '<a href=/fr/accessibility/index.html>Accessibilité</a>'),
+     '<a href=/fr/accessibilite/index.html>Accessibilité</a>'),
     (r'<a href=/privacy/index\.html>Privacy</a>',
-     '<a href=/fr/privacy/index.html>Confidentialité</a>'),
+     '<a href=/fr/confidentialite/index.html>Confidentialité</a>'),
     (r'<a href=/terms/index\.html>Terms</a>',
-     '<a href=/fr/terms/index.html>Conditions</a>'),
+     '<a href=/fr/conditions/index.html>Conditions</a>'),
     # Experience section
     (r'>Experience<', '>Expérience<'),
     (r'>Brands along the way\.<', '>Marques traversées.<'),
@@ -2450,7 +2491,8 @@ def render_static_translation(slug: str) -> str | None:
     title = cfg["title"]
     description = cfg["description"]
     keywords = cfg.get("keywords", "")
-    url_fr = f"{BASE}/fr/{slug}/"
+    fr_slug_str = STATIC_SLUG_FR.get(slug, slug)
+    url_fr = f"{BASE}/fr/{fr_slug_str}/"
 
     shell = _HTML_LANG_RE.sub(r'\1fr-FR\2', shell, count=1)
     shell = _TITLE_RE.sub(f'<title>{_html.escape(title)}</title>', shell, count=1)
@@ -2577,12 +2619,13 @@ def write_static_translations() -> int:
         if page is None:
             print(f"build_translations: skip static '{slug}' — EN shell missing")
             continue
-        dst = OUT / slug / "index.html"
+        fr_slug_str = STATIC_SLUG_FR.get(slug, slug)
+        dst = OUT / fr_slug_str / "index.html"
         dst.parent.mkdir(parents=True, exist_ok=True)
         dst.write_text(page, encoding="utf-8")
         n += 1
 
-    # Topic sub-pages — clone each /topics/<topic>/ as /fr/topics/<topic>/.
+    # Topic sub-pages — clone each /topics/<topic>/ as /fr/sujets/<topic>/.
     # build_topics.py emits the EN versions before us; we fork + translate.
     topics_dir = PUBLIC / "topics"
     if topics_dir.is_dir():
@@ -2593,7 +2636,7 @@ def write_static_translations() -> int:
             if not src.is_file():
                 continue
             page = _render_topic_subpage_fr(topic_dir.name, src.read_text(encoding="utf-8"))
-            dst = OUT / "topics" / topic_dir.name / "index.html"
+            dst = OUT / "sujets" / topic_dir.name / "index.html"
             dst.parent.mkdir(parents=True, exist_ok=True)
             dst.write_text(page, encoding="utf-8")
             n += 1
@@ -2627,7 +2670,7 @@ TOPIC_FR_LABELS: dict[str, dict[str, str]] = {
 
 
 def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:
-    """Fork an EN /topics/<slug>/ page into /fr/topics/<slug>/."""
+    """Fork an EN /topics/<slug>/ page into /fr/sujets/<slug>/."""
     cfg = TOPIC_FR_LABELS.get(topic_slug, {
         "title": topic_slug.replace("-", " ").title(),
         "lede": "",
@@ -2635,7 +2678,7 @@ def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:
     title = cfg["title"]
     lede = cfg["lede"]
     page_title = f"{title} — Sebastien Rousseau"
-    url_fr = f"{BASE}/fr/topics/{topic_slug}/"
+    url_fr = f"{BASE}/fr/sujets/{topic_slug}/"
 
     shell = _HTML_LANG_RE.sub(r'\1fr-FR\2', shell, count=1)
     shell = _TITLE_RE.sub(f'<title>{_html.escape(page_title)}</title>', shell, count=1)
@@ -2673,7 +2716,7 @@ def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:
         r'<nav aria-label="Breadcrumb" class="topic-breadcrumb">[\s\S]*?</nav>',
         f'<nav aria-label="Fil d\'Ariane" class="topic-breadcrumb">'
         f'<a href="/fr/">Accueil</a> &middot; '
-        f'<a href="/fr/topics/index.html">Sujets</a> &middot; '
+        f'<a href="/fr/sujets/index.html">Sujets</a> &middot; '
         f'<span>{_html.escape(title)}</span></nav>',
         shell,
         count=1,
@@ -2733,7 +2776,7 @@ def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:
                         local = True
                     elif pos == 2:
                         item["name"] = "Sujets"
-                        item["item"] = f"{BASE}/fr/topics/"
+                        item["item"] = f"{BASE}/fr/sujets/"
                         local = True
                     elif pos == 3:
                         item["name"] = title

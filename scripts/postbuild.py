@@ -935,19 +935,21 @@ def _splice_fr_urls(xml: str, lastmod_index: dict[str, str]) -> str:
             lastmod = lastmod_index.get(stem, "")
             _add(f"{base}/{stem}/", "0.8", "weekly", lastmod)
 
-    # FR hub + FR dated posts + FR static pages + FR topic sub-pages
+    # FR hub + FR dated posts + FR static pages + FR topic sub-pages.
+    # Static slugs are localised (privacy → confidentialite, etc.).
     _add(f"{base}/fr/", "0.8", "weekly")
+    _add(f"{base}/fr/articles/", "0.7", "weekly")
     for slug in (
-        "about", "papers", "projects", "topics", "tags",
-        "contact", "accessibility", "privacy", "terms", "playlists",
-        "made-with-shokunin", "made-with-static-site-generator",
+        "a-propos", "publications", "projets", "sujets", "etiquettes",
+        "contact", "accessibilite", "confidentialite", "conditions", "playlists",
+        "concu-avec-shokunin", "concu-avec-static-site-generator",
     ):
         _add(f"{base}/fr/{slug}/", "0.5", "monthly")
     for topic in (
         "post-quantum-cryptography", "iso-20022-payments",
         "applied-ai-banking", "rust-open-source", "blockchain-digital-assets",
     ):
-        _add(f"{base}/fr/topics/{topic}/", "0.6", "monthly")
+        _add(f"{base}/fr/sujets/{topic}/", "0.6", "monthly")
     for en, fr in EN_TO_FR.items():
         _add(f"{base}/fr/{fr}/", "0.7", "monthly", lastmod_index.get(en, ""))
 
@@ -1090,7 +1092,7 @@ def _fmt_date(iso_or_rfc: str, french: bool = False) -> str:
 def _render_tag_badges(keywords: list[str], labels: dict[str, str], lang: str = "en") -> str:
     if not keywords:
         return ""
-    prefix = "/fr/tags/index.html" if lang == "fr" else "/tags/index.html"
+    prefix = "/fr/etiquettes/index.html" if lang == "fr" else "/tags/index.html"
     badges = "".join(
         f'<a href="{prefix}#h3-{slugify(k)}" class="article-tag" rel="tag">{k}</a>'
         for k in keywords
@@ -1102,7 +1104,7 @@ def _render_tag_badges(keywords: list[str], labels: dict[str, str], lang: str = 
 def _render_meta_bar(date_pub: str, date_mod: str, word_count: int | None, labels: dict[str, str], lang: str = "en") -> str:
     parts: list[str] = []
     french = labels is LABELS_FR
-    author_url = "/fr/about/index.html" if lang == "fr" else AUTHOR_URL
+    author_url = "/fr/a-propos/index.html" if lang == "fr" else AUTHOR_URL
     parts.append(
         f'<a href="{author_url}" class="article-author" rel="author">'
         f'<img alt="Portrait of {AUTHOR_NAME}" src="{AUTHOR_AVATAR}" '
