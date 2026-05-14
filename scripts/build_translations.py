@@ -1165,6 +1165,11 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
 
     shell = _MAIN_BODY_RE.sub(replace_main, shell, count=1)
 
+    # EN title/description substitutions FIRST — before chrome runs
+    # localize_en_dates() which would otherwise break verbatim matches.
+    shell = rewrite_en_titles_in_text(shell)
+    shell = rewrite_en_descs_in_text(shell)
+
     # Chrome translation — nav, footer, search palette, social labels, etc.
     shell = translate_chrome(shell)
 
@@ -1173,8 +1178,6 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
     # French title (visible link text is left alone — author choice).
     shell = rewrite_fr_link_titles(shell)
     shell = rewrite_newsroom_card_titles(shell)
-    shell = rewrite_en_titles_in_text(shell)
-    shell = rewrite_en_descs_in_text(shell)
 
     # JSON-LD BlogPosting tweaks — parse + mutate + serialise so we can
     # cross nested objects (regex can't see past `}` inside the graph).
@@ -2058,6 +2061,39 @@ STATIC_BODY_PATCHES: list[tuple[str, str]] = [
     (r'(\(\d+) Posts\)', r'\1 articles)'),
     (r'>Featured Tags \((\d+)\)</h2>', r'>Étiquettes à la une (\1)</h2>'),
     (r'>Featured Tags<', '>Étiquettes à la une<'),
+    # Stray CTAs that occasionally slip through with class="pill ghost"
+    (r'<a class="pill ghost" href="/fr/contact/">Get in touch</a>',
+     '<a class="pill ghost" href="/fr/contact/">Me contacter</a>'),
+    (r'>Get in touch</a>', '>Me contacter</a>'),
+    # Static-page titles + descriptions that appear in /fr/tags/ listings
+    (r'Made with Static Site Generator: Rust-Powered SSG',
+     'Conçu avec Static Site Generator : SSG propulsé par Rust'),
+    (r'Static Site Generator is a Rust-based static site generator built for performance, accessibility and SEO\. Lightning-fast builds with first-class JSON-LD\.',
+     "Static Site Generator est un générateur de sites statiques en Rust pensé pour la performance, l'accessibilité et le SEO. Des builds ultra-rapides avec un support JSON-LD natif."),
+    (r'Website created with Static Site Generator \(SSG\)',
+     'Site créé avec Static Site Generator (SSG)'),
+    (r'The Static Site Generator \(SSG\) is a lightning-fast tool for Search Engine Optimisation \(SEO\) and compliance to Accessibility Standards\.',
+     "Le Static Site Generator (SSG) est un outil ultra-rapide pour le SEO et la conformité aux standards d'accessibilité."),
+    (r'Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS',
+     'Index des sujets et étiquettes : IA, paiements, quantique, Rust OSS'),
+    (r"Browse Sebastien Rousseau's site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more\.",
+     "Parcourez le site de Sebastien Rousseau par sujet et étiquette : IA, paiements, ISO 20022, cryptographie post-quantique, Rust open source, etc."),
+    (r'Website Accessibility Statement — Standards &amp; Contact',
+     "Déclaration d'accessibilité — standards et contact"),
+    (r'This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility\.',
+     "Cette déclaration explique l'accessibilité de notre site, ce que nous faisons pour l'améliorer, et comment nous contacter à ce sujet."),
+    (r'Privacy Statement — How Your Data Is Collected &amp; Used',
+     'Politique de confidentialité — collecte et usage de vos données'),
+    (r'This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website',
+     "Cette page vous informe de nos politiques concernant la collecte, l'utilisation et la divulgation de vos données personnelles lors de votre navigation"),
+    (r"Let's Start a Conversation That Will Make a Real Difference",
+     "Démarrons une conversation qui fera une vraie différence"),
+    (r'Have a question or comment\? Please contact me using the form below\. I am always happy to hear from you and will respond as soon as possible\.',
+     "Une question ou un commentaire ? Contactez-moi via le formulaire ci-dessous. Je suis toujours ravi de vous lire et vous répondrai dans les meilleurs délais."),
+    (r'Website Terms &amp; Conditions of Use — Sebastien Rousseau',
+     "Conditions générales d'utilisation — Sebastien Rousseau"),
+    (r'By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations\.',
+     "En accédant à ce site, vous reconnaissez et acceptez d'être lié par les présentes Conditions d'utilisation et toutes les lois et réglementations applicables."),
     # Hero / shared section labels
     (r'>Latest research<', '>Recherches récentes<'),
     (r'>Read latest research<', '>Lire les recherches récentes<'),
@@ -2149,6 +2185,12 @@ def render_static_translation(slug: str) -> str | None:
     if fr_body:
         shell = _replace_static_main_body(shell, fr_body)
 
+    # EN title + description substitutions FIRST — before chrome runs
+    # localize_en_dates() (which would otherwise rewrite "August 2026" →
+    # "août 2026" inside an EN description and break the verbatim match).
+    shell = rewrite_en_titles_in_text(shell)
+    shell = rewrite_en_descs_in_text(shell)
+
     # Localise chrome (nav / footer / search / aria) + body text.
     shell = translate_chrome(shell)
     for pat, repl in _STATIC_BODY_COMPILED:
@@ -2158,8 +2200,6 @@ def render_static_translation(slug: str) -> str | None:
     # (papers, projects, tags, topic hub, …) to the FR title.
     shell = rewrite_fr_link_titles(shell)
     shell = rewrite_newsroom_card_titles(shell)
-    shell = rewrite_en_titles_in_text(shell)
-    shell = rewrite_en_descs_in_text(shell)
 
     # Localise feed links.
     shell = re.sub(
@@ -2433,12 +2473,14 @@ def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:
         shell,
     )
 
-    # Chrome localisation
+    # EN title/description substitutions FIRST — before chrome runs
+    # localize_en_dates() which would otherwise break verbatim matches.
+    shell = rewrite_en_titles_in_text(shell)
+    shell = rewrite_en_descs_in_text(shell)
+    # Chrome localisation (includes localize_en_dates)
     shell = translate_chrome(shell)
     shell = rewrite_fr_link_titles(shell)
     shell = rewrite_newsroom_card_titles(shell)
-    shell = rewrite_en_titles_in_text(shell)
-    shell = rewrite_en_descs_in_text(shell)
     # Feed links
     shell = re.sub(
         r'href="(?:https?://[^/"]+)?/atom\.xml"',

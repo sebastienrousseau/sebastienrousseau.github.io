@@ -5,12 +5,12 @@ description: "L'IA agentique est passée du pilote à la production dans la banq
 date: "May 18, 2026"
 language: "fr"
 locale: "fr_FR"
-banner: "https://cloudcdn.pro/stock/images/agentic-engineering-banks-2026-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp"
 banner_alt: "Diagramme d'architecture pour l'ingénierie agentique dans la banque — agents IA pilotés par spécification, plan de contrôle de gouvernance, substrat résistant au quantique et flux de modernisation des mainframes hérités"
 keywords: "ingénierie agentique, développement piloté par spécification, banques, services financiers, gouvernance IA, Règlement européen sur l'IA, DORA, SR 11-7, NIST AI RMF, ISO 42001, modernisation COBOL, mainframe, vibe coding, vibe hacking, agents autonomes, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, gestion des risques tiers, TPRM, risque fournisseur, cryptographie post-quantique, plan de contrôle des agents, FCA, SM&CR, plan d'action 12 semaines, Sebastien Rousseau"
 ---
 
-![Diagramme d'architecture pour l'ingénierie agentique dans la banque](https://cloudcdn.pro/stock/images/agentic-engineering-banks-2026-banner.webp).class=\"img-fluid clearfix\"
+![Diagramme d'architecture pour l'ingénierie agentique dans la banque](https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp).class=\"img-fluid clearfix\"
 
 L'IA agentique est passée du pilote à la production dans la banque mondiale. Soixante-dix pour cent des institutions l'utilisent à un degré ou un autre ; seule une sur cinq dispose d'un modèle de gouvernance mature. En parallèle, des adversaires autonomes opèrent à vitesse machine, l'estate hérité COBOL avec lequel les nouveaux systèmes doivent interopérer a été écrit pour les hypothèses batch des années 1960, et l'échéance « haut risque » du Règlement européen sur l'IA est à douze semaines. Voici la position d'ingénierie et de gouvernance qu'une banque doit tenir.
 
