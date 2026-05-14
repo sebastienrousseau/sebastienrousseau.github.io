@@ -1,5 +1,5 @@
 ---
-title: "La norme de token ERC-20"
+title: "La norme de jeton ERC-20"
 subtitle: "L'interface unifiée qui a permis à l'écosystème Ethereum de prospérer"
 description: "ERC-20 : le type de token le plus répandu sur la blockchain Ethereum, souvent décrit comme un contrat numérique intelligent (smart contract)."
 date: "January 24, 2018"

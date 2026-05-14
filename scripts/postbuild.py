@@ -1265,11 +1265,34 @@ def build_post_nav_index(pages: list[Path]) -> dict[str, tuple[tuple[str, str] |
     return out
 
 
+def build_fr_title_index(pages: list[Path]) -> dict[str, str]:
+    """Walk rendered FR pages, return ``en_slug -> FR H1 title`` so the
+    prev/next nav on a FR page can advertise the FR title for the
+    neighbouring article instead of the English H1.
+    """
+    out: dict[str, str] = {}
+    for p in pages:
+        if p.parent.parent.name != "fr":
+            continue
+        slug = p.parent.name  # FR slug
+        if not _DATED_SLUG_RE.match(slug):
+            continue
+        en = _en_slug(slug)
+        if en == slug:  # not in slug map
+            continue
+        html = p.read_text(encoding="utf-8", errors="ignore")
+        m = _H1_RE.search(html)
+        if m:
+            out[en] = m.group(1).strip()
+    return out
+
+
 def inject_prev_next_nav(
     html: str,
     slug: str,
     nav_index: dict[str, tuple[tuple[str, str] | None, tuple[str, str] | None]],
     is_fr: bool = False,
+    fr_titles: dict[str, str] | None = None,
 ) -> str:
     """Inject a <nav class="post-pagination"> with prev/next links just
     before the closing ``</div></main>`` of any dated BlogPosting page.
@@ -1287,17 +1310,17 @@ def inject_prev_next_nav(
     if not prev_e and not next_e:
         return html
     labels = _labels(html)
+    fr_titles = fr_titles or {}
 
     def render(entry: tuple[str, str] | None, direction: str, label: str) -> str:
         if not entry:
             return '<span class="post-pagination-stub" aria-hidden="true"></span>'
         s, t = entry
-        # On FR pages, point at the FR sibling under /fr/<fr-slug>/. The
-        # localized title is unavailable here (nav_index only carries the
-        # English H1); the FR page itself will render in French, and the
-        # link label is translated via labels[] above.
+        # On FR pages, point at the FR sibling under /fr/<fr-slug>/.
+        # Look up the FR title from fr_titles so prev/next advertises in French.
         if is_fr and s in EN_TO_FR:
             href = f"/fr/{EN_TO_FR[s]}/"
+            t = fr_titles.get(s, t)
         else:
             href = f"/{s}/"
         return (
@@ -1471,6 +1494,7 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
     # Pre-pass: build the chronological prev/next index over every dated
     # BlogPosting page. Indexed once per build, then read per page.
     nav_index = build_post_nav_index(pages)
+    fr_titles = build_fr_title_index(pages)
     en_with_fr, fr_with_en = _translated_slugs()
     sri_patched = 0
     csp_patched = 0
@@ -1529,7 +1553,8 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
         # placing nav first would push sources above the nav cleanly.
         page_is_fr = page.parent.parent.name == "fr"
         patched_nav = inject_prev_next_nav(
-            patched_src, page.parent.name, nav_index, is_fr=page_is_fr
+            patched_src, page.parent.name, nav_index, is_fr=page_is_fr,
+            fr_titles=fr_titles,
         )
         if patched_nav != patched_src:
             nav_patched += 1

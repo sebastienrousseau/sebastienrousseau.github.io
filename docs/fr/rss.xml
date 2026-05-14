@@ -6,7 +6,7 @@
     <description>Articles en français : IA appliquée, paiements ISO 20022, cryptographie post-quantique et transformation des paiements wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/fr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fr-FR</language>
-    <lastBuildDate>Thu, 14 May 2026 17:25:51 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2026 17:52:33 +0000</lastBuildDate>
     <copyright>© Copyright 2024 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
     <item>
       <title>Le rendement caché : décryptage des dépôts BRSRV et BSTBL de BlackRock</title>
@@ -756,7 +756,7 @@
       <category>inclusion financière</category>
     </item>
     <item>
-      <title>La norme de token ERC-20</title>
+      <title>La norme de jeton ERC-20</title>
       <link>https://sebastienrousseau.com/fr/2018-01-24-la-norme-de-jeton-erc-20/</link>
       <description>ERC-20 : le type de token le plus répandu sur la blockchain Ethereum, souvent décrit comme un contrat numérique intelligent (smart contract).</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/fr/2018-01-24-la-norme-de-jeton-erc-20/</guid>

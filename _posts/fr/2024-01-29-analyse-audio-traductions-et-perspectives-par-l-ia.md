@@ -18,7 +18,7 @@ Propulsé par Microsoft Azure AI, **Audio Analyser** va au-delà de la transcrip
 
 Les leaders de l'industrie utilisent déjà ce type d'analytique vocale proactive pour générer des améliorations tangibles. Temps de traitement plus courts, taux de résolution accrus, et surtout — scores de satisfaction client plus élevés. **Audio Analyser** permet aux entreprises non seulement de suivre le rythme, mais de fixer de nouveaux standards d'engagement client. En détectant les besoins plus vite, en résolvant les problèmes plus intelligemment et en élevant les interactions, il aide à forger des ambassadeurs de marque qui resteront sur le long terme.
 
-## Insight
+## Aperçu
 
 ### Le potentiel inexploité des données audio
 

@@ -441,9 +441,117 @@ def _french_lead_fallback(description: str) -> str:
     )
 
 
-def _french_body(body_html: str, description: str, lead_aside: str, related_aside: str) -> str:
+_FR_GENERIC_H2 = frozenset({
+    "aperçu", "introduction", "vue d'ensemble", "sommaire",
+    "table des matières", "lectures complémentaires",
+    "points clés", "références", "sources et références",
+    "résumé", "à propos", "conclusion",
+})
+
+
+def _derive_fr_takeaways(body_md: str, max_items: int = 4) -> list[tuple[str, str]]:
+    """Walk the FR markdown body; for each H2 (then H3) that isn't a
+    generic heading, return (heading_text, first_sentence).
+    """
+    bullets: list[tuple[str, str]] = []
+    lines = body_md.splitlines()
+    n = len(lines)
+
+    def first_sentence(start_idx: int) -> str:
+        paragraph_lines: list[str] = []
+        for j in range(start_idx, min(start_idx + 20, n)):
+            stripped = lines[j].strip()
+            if not stripped:
+                if paragraph_lines:
+                    break
+                continue
+            if stripped.startswith(("#", "<", "!", "*[", "```", "|", ">")):
+                if paragraph_lines:
+                    break
+                continue
+            if stripped.startswith(("- ", "* ")):
+                if paragraph_lines:
+                    break
+                continue
+            if re.match(r"^\[\d+\]:\s", stripped):
+                if paragraph_lines:
+                    break
+                continue
+            paragraph_lines.append(stripped)
+        if not paragraph_lines:
+            return ""
+        paragraph = " ".join(paragraph_lines)
+        # Strip markdown emphasis + links.
+        paragraph = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", paragraph)
+        paragraph = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", paragraph)
+        paragraph = re.sub(r"\*\*([^*]+)\*\*", r"\1", paragraph)
+        paragraph = re.sub(r"\*([^*]+)\*", r"\1", paragraph)
+        paragraph = re.sub(r"`([^`]+)`", r"\1", paragraph)
+        paragraph = re.sub(r"\s*\.class=\\.+$", "", paragraph)
+        # First sentence.
+        m = re.search(r"[.!?](?=\s|$)", paragraph)
+        sentence = paragraph[: m.end()] if m else paragraph
+        if not sentence.endswith((".", "!", "?")):
+            sentence += "."
+        if len(sentence) > 220:
+            sentence = sentence[:217].rsplit(" ", 1)[0] + "…"
+        return sentence
+
+    def add_for_level(prefix: str) -> None:
+        for i, ln in enumerate(lines):
+            if not ln.startswith(prefix):
+                continue
+            heading = ln[len(prefix):].strip().rstrip(".").rstrip(":")
+            heading_clean = re.sub(r"[*_`]", "", heading)
+            if heading_clean.lower() in _FR_GENERIC_H2:
+                continue
+            sent = first_sentence(i + 1)
+            if sent:
+                bullets.append((heading_clean, sent))
+                if len(bullets) >= max_items:
+                    return
+
+    add_for_level("## ")
+    if len(bullets) < max_items:
+        add_for_level("### ")
+    return bullets
+
+
+def _build_fr_lead(description: str, takeaways: list[tuple[str, str]]) -> str:
+    """Build the post-lead aside fresh, in French, from the FR body."""
+    parts: list[str] = [
+        '<aside class="post-lead" aria-label="Résumé de l\'article">',
+        f'<p class="post-lead-tldr"><strong>TL;DR.</strong> {_html.escape(description)}</p>',
+    ]
+    if takeaways:
+        parts.append('<p class="post-lead-heading"><strong>Points clés</strong></p>')
+        parts.append('<ul class="post-lead-takeaways">')
+        for heading, sentence in takeaways:
+            parts.append(
+                f'  <li><strong>{_html.escape(heading)}.</strong> '
+                f'{_html.escape(sentence)}</li>'
+            )
+        parts.append('</ul>')
+    parts.append('</aside>')
+    return "".join(parts)
+
+
+def _french_body(
+    body_html: str,
+    description: str,
+    lead_aside: str,
+    related_aside: str,
+    body_md: str = "",
+) -> str:
     today = _date_today()
-    lead = lead_aside or _french_lead_fallback(description)
+    # Prefer a freshly-derived FR lead (using the FR body's H2 sentences)
+    # over the extracted-from-EN-shell lead aside, since the EN takeaways
+    # are still English even after label localisation.
+    fr_takeaways = _derive_fr_takeaways(body_md) if body_md else []
+    if fr_takeaways:
+        lead = _build_fr_lead(description, fr_takeaways)
+    else:
+        lead = lead_aside or _french_lead_fallback(description)
     review = (
         f'<p class="post-reviewed">Dernière révision '
         f'<time datetime="{today}">{today}</time>.</p>'
@@ -543,6 +651,325 @@ def rewrite_en_urls(html_fragment: str) -> str:
         return f"{origin}/fr/{fr}{tail}"
 
     return _EN_URL_RE.sub(repl, html_fragment)
+
+
+def _build_fr_title_map() -> dict[str, str]:
+    """Walk every ``_posts/fr/*.md`` and return ``en_slug -> FR title``."""
+    out: dict[str, str] = {}
+    if not SRC.is_dir():
+        return out
+    for md in SRC.glob("*.md"):
+        if not _DATED_RE.match(md.stem):
+            continue
+        en = FR_TO_EN.get(md.stem, md.stem)
+        fm, _ = parse_frontmatter(md.read_text(encoding="utf-8"))
+        title = fm.get("title")
+        if title:
+            out[en] = title
+    return out
+
+
+_FR_TITLE_MAP: dict[str, str] = {}
+
+
+def _ensure_fr_title_map() -> dict[str, str]:
+    """Lazy-init the EN→FR title map."""
+    if not _FR_TITLE_MAP:
+        _FR_TITLE_MAP.update(_build_fr_title_map())
+    return _FR_TITLE_MAP
+
+
+def _build_fr_description_map() -> dict[str, str]:
+    """Walk every ``_posts/fr/*.md`` and return ``en_slug -> FR description``."""
+    out: dict[str, str] = {}
+    if not SRC.is_dir():
+        return out
+    for md in SRC.glob("*.md"):
+        if not _DATED_RE.match(md.stem):
+            continue
+        en = FR_TO_EN.get(md.stem, md.stem)
+        fm, _ = parse_frontmatter(md.read_text(encoding="utf-8"))
+        desc = fm.get("description")
+        if desc:
+            out[en] = desc
+    return out
+
+
+_FR_DESCRIPTION_MAP: dict[str, str] = {}
+
+
+def _ensure_fr_description_map() -> dict[str, str]:
+    if not _FR_DESCRIPTION_MAP:
+        _FR_DESCRIPTION_MAP.update(_build_fr_description_map())
+    return _FR_DESCRIPTION_MAP
+
+
+_EN_DESC_TO_FR_RE_CACHE: re.Pattern[str] | None = None
+_EN_DESC_TO_FR_MAP_CACHE: dict[str, str] | None = None
+
+
+def _en_descs_to_fr() -> tuple[re.Pattern[str], dict[str, str]]:
+    """Build a regex + map matching every EN article description verbatim
+    (and HTML-escaped variants) so we can substitute the FR description
+    on listing pages (tags, topics, papers, project pages, …)."""
+    global _EN_DESC_TO_FR_RE_CACHE, _EN_DESC_TO_FR_MAP_CACHE
+    if _EN_DESC_TO_FR_RE_CACHE is not None and _EN_DESC_TO_FR_MAP_CACHE is not None:
+        return _EN_DESC_TO_FR_RE_CACHE, _EN_DESC_TO_FR_MAP_CACHE
+    fr_descs = _ensure_fr_description_map()
+    mapping: dict[str, str] = {}
+    posts_dir = Path("_posts")
+    for md in posts_dir.glob("2*.md"):
+        text = md.read_text(encoding="utf-8")
+        m = re.search(r'^description:\s*"((?:[^"\\]|\\.)*)"', text, re.MULTILINE)
+        if not m:
+            continue
+        en_desc = m.group(1)
+        en_slug = md.stem
+        fr_desc = fr_descs.get(en_slug)
+        if not fr_desc:
+            continue
+        mapping[en_desc] = fr_desc
+        mapping[_html.escape(en_desc, quote=True)] = _html.escape(fr_desc, quote=True)
+        mapping[_html.escape(en_desc, quote=False)] = _html.escape(fr_desc, quote=False)
+    if not mapping:
+        _EN_DESC_TO_FR_RE_CACHE = re.compile(r"$^")
+        _EN_DESC_TO_FR_MAP_CACHE = {}
+        return _EN_DESC_TO_FR_RE_CACHE, _EN_DESC_TO_FR_MAP_CACHE
+    sorted_keys = sorted(mapping.keys(), key=len, reverse=True)
+    _EN_DESC_TO_FR_RE_CACHE = re.compile("|".join(re.escape(k) for k in sorted_keys if k))
+    _EN_DESC_TO_FR_MAP_CACHE = mapping
+    return _EN_DESC_TO_FR_RE_CACHE, _EN_DESC_TO_FR_MAP_CACHE
+
+
+def rewrite_en_descs_in_text(html: str) -> str:
+    """Replace every verbatim EN article description with its FR
+    counterpart. Affects card excerpts on /fr/tags/, /fr/topics/<sub>/,
+    /fr/papers/ etc."""
+    desc_re, desc_map = _en_descs_to_fr()
+    if not desc_map:
+        return html
+
+    def repl(m: re.Match[str]) -> str:
+        return desc_map.get(m.group(0), m.group(0))
+
+    return desc_re.sub(repl, html)
+
+
+_RELATED_CARD_RE = re.compile(
+    r'(<article class="related-card">)([\s\S]*?)(</article>)',
+)
+_HREF_FR_SLUG_RE = re.compile(
+    r'href="(?:https?://sebastienrousseau\.com)?/fr/([a-z0-9-]+)/(?:index\.html)?"'
+)
+
+
+_FR_LINK_RE = re.compile(
+    r'<a(\s[^>]*)href="(?:https?://sebastienrousseau\.com)?/fr/([a-z0-9-]+)/(?:index\.html)?"([^>]*)>',
+    re.IGNORECASE,
+)
+
+
+_EN_TITLES_TO_FR_RE_CACHE: re.Pattern[str] | None = None
+
+
+def _en_titles_to_fr_re() -> re.Pattern[str]:
+    """Compile a regex matching any known EN article title verbatim,
+    capturing the matched EN title so we can substitute the FR one.
+    Also matches HTML-entity-escaped variants so we catch titles inside
+    rendered HTML attributes (& → &amp;, ' → &#x27;, " → &quot;)."""
+    global _EN_TITLES_TO_FR_RE_CACHE
+    if _EN_TITLES_TO_FR_RE_CACHE is not None:
+        return _EN_TITLES_TO_FR_RE_CACHE
+    raw_titles: list[str] = []
+    posts_dir = Path("_posts")
+    for md in posts_dir.glob("2*.md"):
+        text = md.read_text(encoding="utf-8")
+        m = re.search(r'^title:\s*"((?:[^"\\]|\\.)*)"', text, re.MULTILINE)
+        if m:
+            raw_titles.append(m.group(1))
+    if not raw_titles:
+        _EN_TITLES_TO_FR_RE_CACHE = re.compile(r"$^")
+        return _EN_TITLES_TO_FR_RE_CACHE
+    variants: set[str] = set()
+    for t in raw_titles:
+        variants.add(t)
+        variants.add(_html.escape(t, quote=True))
+        variants.add(_html.escape(t, quote=False))
+    sorted_variants = sorted(variants, key=len, reverse=True)
+    pattern = "|".join(re.escape(v) for v in sorted_variants if v)
+    _EN_TITLES_TO_FR_RE_CACHE = re.compile(pattern)
+    return _EN_TITLES_TO_FR_RE_CACHE
+
+
+_EN_TITLE_TO_FR_MAP_CACHE: dict[str, str] | None = None
+
+
+def _en_title_to_fr_map() -> dict[str, str]:
+    """Map every EN title variant (raw + HTML-entity escaped) to the
+    FR title (and the same FR title encoded the same way)."""
+    global _EN_TITLE_TO_FR_MAP_CACHE
+    if _EN_TITLE_TO_FR_MAP_CACHE is not None:
+        return _EN_TITLE_TO_FR_MAP_CACHE
+    out: dict[str, str] = {}
+    fr_titles = _ensure_fr_title_map()
+    posts_dir = Path("_posts")
+    for md in posts_dir.glob("2*.md"):
+        text = md.read_text(encoding="utf-8")
+        m = re.search(r'^title:\s*"((?:[^"\\]|\\.)*)"', text, re.MULTILINE)
+        if not m:
+            continue
+        en_title = m.group(1)
+        en_slug = md.stem
+        fr_title = fr_titles.get(en_slug)
+        if not fr_title:
+            continue
+        out[en_title] = fr_title
+        out[_html.escape(en_title, quote=True)] = _html.escape(fr_title, quote=True)
+        out[_html.escape(en_title, quote=False)] = _html.escape(fr_title, quote=False)
+    _EN_TITLE_TO_FR_MAP_CACHE = out
+    return _EN_TITLE_TO_FR_MAP_CACHE
+
+
+def rewrite_en_titles_in_text(html: str) -> str:
+    """Wherever a known EN article title appears verbatim in plain text
+    (citation lists, headings inside cards, etc.), replace it with the
+    matching FR title."""
+    title_re = _en_titles_to_fr_re()
+    title_map = _en_title_to_fr_map()
+    if not title_map:
+        return html
+
+    def repl(m: re.Match[str]) -> str:
+        return title_map.get(m.group(0), m.group(0))
+
+    return title_re.sub(repl, html)
+
+
+def rewrite_fr_link_titles(html: str) -> str:
+    """Walk every ``<a href="/fr/<slug>/…">`` and overwrite the
+    ``title="…"`` and ``aria-label="…"`` attributes with the matching
+    FR title from the slug map. Inner anchor text is left untouched
+    (the author may have chosen it deliberately as a citation or
+    contextual label)."""
+    fr_titles = _ensure_fr_title_map()
+
+    def repl(m: re.Match[str]) -> str:
+        before, slug, after = m.group(1), m.group(2), m.group(3)
+        en = FR_TO_EN.get(slug)
+        if not en:
+            return m.group(0)
+        fr_title = fr_titles.get(en)
+        if not fr_title:
+            return m.group(0)
+        esc = _html.escape(fr_title, quote=True)
+        attrs = (before or "") + (after or "")
+        # Replace title= and aria-label= if present, else inject title=.
+        if re.search(r'\btitle="', attrs):
+            attrs = re.sub(r'(\btitle=")[^"]*(")', rf'\g<1>{esc}\g<2>', attrs, count=1)
+        else:
+            attrs = attrs.rstrip() + f' title="{esc}"'
+        if re.search(r'\baria-label="', attrs):
+            attrs = re.sub(r'(\baria-label=")[^"]*(")', rf'\g<1>{esc}\g<2>', attrs, count=1)
+        return f'<a{attrs} href="/fr/{slug}/index.html">'
+
+    return _FR_LINK_RE.sub(repl, html)
+
+
+_NEWSROOM_CARD_RE = re.compile(
+    r'(<article class="newsroom-card[^"]*">)([\s\S]*?)(</article>)',
+)
+
+
+def rewrite_newsroom_card_titles(html: str) -> str:
+    """On FR listing pages (papers, projects, tags, topics, …) the
+    ``newsroom-card`` markup carries EN titles inside ``<h3><a>…</a></h3>``.
+    Look up the FR title from the slug and overwrite."""
+    fr_titles = _ensure_fr_title_map()
+
+    def patch(m: re.Match[str]) -> str:
+        open_tag, inner, close_tag = m.group(1), m.group(2), m.group(3)
+        slug_m = re.search(
+            r'href="(?:https?://sebastienrousseau\.com)?/fr/([a-z0-9-]+)/(?:index\.html)?"',
+            inner,
+        )
+        if not slug_m:
+            return m.group(0)
+        en = FR_TO_EN.get(slug_m.group(1))
+        if not en:
+            return m.group(0)
+        fr_title = fr_titles.get(en)
+        if not fr_title:
+            return m.group(0)
+        esc = _html.escape(fr_title, quote=True)
+        # <h3>…<a>TITLE</a>… inner text.
+        inner = re.sub(
+            r'(<h3[^>]*>\s*<a [^>]+>)[^<]+(</a>)',
+            rf'\1{_html.escape(fr_title)}\2',
+            inner,
+            count=1,
+        )
+        # aria-label on media link.
+        inner = re.sub(
+            r'(<a [^>]*class="newsroom-card-media"[^>]*aria-label=")[^"]+(")',
+            rf'\1{esc}\2',
+            inner,
+            count=1,
+        )
+        # title= on the same link.
+        inner = re.sub(
+            r'(<a [^>]*class="newsroom-card-media"[^>]*title=")[^"]+(")',
+            rf'\1{esc}\2',
+            inner,
+            count=1,
+        )
+        return open_tag + inner + close_tag
+
+    return _NEWSROOM_CARD_RE.sub(patch, html)
+
+
+def rewrite_related_card_titles(html_fragment: str) -> str:
+    """Walk the related-posts grid; replace EN titles inside each card
+    with the matching FR title looked up from the slug map."""
+    fr_titles = _ensure_fr_title_map()
+
+    def patch_card(m: re.Match[str]) -> str:
+        open_tag, inner, close_tag = m.group(1), m.group(2), m.group(3)
+        # Pull the FR slug from the first link in the card.
+        slug_m = _HREF_FR_SLUG_RE.search(inner)
+        if not slug_m:
+            return m.group(0)
+        fr_slug_str = slug_m.group(1)
+        en = FR_TO_EN.get(fr_slug_str)
+        if not en:
+            return m.group(0)
+        fr_title = fr_titles.get(en)
+        if not fr_title:
+            return m.group(0)
+        esc = _html.escape(fr_title, quote=True)
+        # Rewrite aria-label on media link.
+        inner = re.sub(
+            r'(<a [^>]*class="related-media"[^>]*aria-label=")[^"]+(")',
+            rf'\1{esc}\2',
+            inner,
+            count=1,
+        )
+        # Rewrite the visible <h3>...<a>TITLE</a>... block.
+        inner = re.sub(
+            r'(<h3[^>]*>\s*<a [^>]+>)[^<]+(</a>)',
+            rf'\1{_html.escape(fr_title)}\2',
+            inner,
+            count=1,
+        )
+        # Rewrite anchor-link aria-label "Link to TITLE".
+        inner = re.sub(
+            r'(<a class="heading-anchor"[^>]*aria-label="(?:Lien vers|Link to) )[^"]+(")',
+            rf'\1{esc}\2',
+            inner,
+            count=1,
+        )
+        return open_tag + inner + close_tag
+
+    return _RELATED_CARD_RE.sub(patch_card, html_fragment)
 
 
 def _patch_blogposting_jsonld(
@@ -674,9 +1101,11 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
     lead_aside = _localise_post_lead(lead_aside, description)
     lead_aside = rewrite_en_urls(lead_aside)
     related_aside = rewrite_en_urls(related_aside)
+    related_aside = rewrite_related_card_titles(related_aside)
     body_html = rewrite_en_urls(body_html)
-    # main body — built fresh in French (lead + body + author-card + reviewed + related)
-    fr_body = _french_body(body_html, description, lead_aside, related_aside)
+    # main body — built fresh in French (lead + body + author-card + reviewed + related).
+    # body_md is passed so we can re-derive the takeaways from the FR H2s.
+    fr_body = _french_body(body_html, description, lead_aside, related_aside, body_md=body_md)
 
     def replace_main(m: re.Match[str]) -> str:
         return m.group(1) + fr_body + m.group(3)
@@ -685,6 +1114,14 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
 
     # Chrome translation — nav, footer, search palette, social labels, etc.
     shell = translate_chrome(shell)
+
+    # Rewrite inline-link title="…" and aria-label="…" attributes on every
+    # <a> pointing to a /fr/<slug>/ URL so hover-tooltips advertise the
+    # French title (visible link text is left alone — author choice).
+    shell = rewrite_fr_link_titles(shell)
+    shell = rewrite_newsroom_card_titles(shell)
+    shell = rewrite_en_titles_in_text(shell)
+    shell = rewrite_en_descs_in_text(shell)
 
     # JSON-LD BlogPosting tweaks — parse + mutate + serialise so we can
     # cross nested objects (regex can't see past `}` inside the graph).
@@ -1191,8 +1628,148 @@ STATIC_BODY_PATCHES: list[tuple[str, str]] = [
     (r'>Topics</h1>', '>Sujets</h1>'),
     (r'>PILLARS</p>', '>PILIERS</p>'),
     (r'PILLAR · TOPIC', 'PILIER · SUJET'),
+    (r'PILLAR · PROJECT', 'PILIER · PROJET'),
     (r'Curated topic clusters[^<]+',
      "Clusters de sujets — choisissez un fil et suivez-le à travers l'archive."),
+    # /fr/papers/
+    (r'INDUSTRY WHITE PAPER · EPAA', 'LIVRE BLANC INDUSTRIE · EPAA'),
+    (r'INDUSTRY WHITE PAPER', 'LIVRE BLANC INDUSTRIE'),
+    (r'WHITE PAPER', 'LIVRE BLANC'),
+    (r' · Free download', " · Téléchargement gratuit"),
+    (r'Free download<', 'Téléchargement gratuit<'),
+    (r'>Download<', '>Télécharger<'),
+    (r'>Request access<', "<>Demander l'accès<"),
+    (r'>English · PDF', '>Français · PDF'),
+    # /fr/papers/ paper titles and abstracts
+    (r'>Quantum-Safe Payments: Why the Payments Industry Must Act Now<',
+     ">Paiements résistants au quantique : pourquoi le secteur doit agir maintenant<"),
+    (r'>Accelerating Real-Time Speech Recognition with OpenAI Whisper and Metal Performance Shaders on macOS<',
+     ">Accélérer la reconnaissance vocale en temps réel avec OpenAI Whisper et Metal Performance Shaders sur macOS<"),
+    (r'>Recent research and analysis<',
+     ">Recherches et analyses récentes<"),
+    # /fr/papers/ section heads + ledes
+    (r'September 2025 &middot; Emerging Payments Association Asia \(EPAA\)',
+     "Septembre 2025 &middot; Emerging Payments Association Asia (EPAA)"),
+    (r'>Quantum computing threatens the cryptographic foundations[^<]+',
+     ">L'informatique quantique menace les fondations cryptographiques des services financiers. Les paiements — du temps réel au règlement transfrontalier — reposent sur des protections que l'informatique quantique finira par rendre obsolètes. Ce livre blanc EPAA expose pourquoi le secteur doit agir dès maintenant."),
+    (r'2024 &middot; Independent Research &middot;',
+     "2024 &middot; Recherche indépendante &middot;"),
+    (r'>This independent research paper presents[^<]+',
+     ">Ce rapport de recherche indépendant présente une optimisation de la reconnaissance vocale en temps réel sur macOS à l'aide d'OpenAI Whisper et des Metal Performance Shaders, démontrant des gains de latence et d'efficacité énergétique mesurables."),
+    (r'>License &amp; pricing<', '>Licence et tarification<'),
+    (r'>One copy per buyer<', ">Un exemplaire par acheteur<"),
+    # FAQ section
+    (r'>Questions\? Answers\.<', '>Questions ? Réponses.<'),
+    (r'>Are the white papers free to read\?<',
+     ">Les livres blancs sont-ils en libre lecture ?<"),
+    # FAQ Q1 answer (wrapped <p> contains <em>, so use full-block replace)
+    (r'(<summary[^>]*>Les livres blancs sont-ils en libre lecture \?</summary>)\s*<section class="qa-a">[\s\S]*?</section>',
+     r'\1<section class="qa-a"><p>Le livre blanc EPAA <em>Quantum-Safe Payments</em> est en téléchargement public gratuit sur '
+     r'<a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" rel="external noopener">emergingpaymentsasia.org</a>. '
+     r'Le rapport de recherche indépendant sur la reconnaissance vocale en temps réel avec OpenAI Whisper et Metal Performance Shaders est sous licence et disponible à l\'achat individuel à 49,00 $ '
+     r'(anglais, PDF, ~95 Ko). Un exemplaire par acheteur ; téléchargements à usage personnel uniquement, non redistribuables.</p></section>'),
+    # FAQ Q2 answer
+    (r'(<summary[^>]*>Puis-je citer ces documents \?</summary>)\s*<section class="qa-a">[\s\S]*?</section>',
+     r'\1<section class="qa-a"><p>Oui. Les courtes citations avec attribution sont bienvenues dans le cadre du fair use. '
+     r'Pour les publications EPAA, citez l\'EPAA comme éditeur avec le groupe de travail, l\'année et l\'URL du PDF. '
+     r'Pour les rapports de recherche indépendants, citez sous la forme : <em>Rousseau, S. (année). Titre. Auto-publié.</em> avec l\'URL canonique. '
+     r'Pour reproduire une figure ou un passage étendu, merci de me contacter.</p></section>'),
+    # FAQ Q3 answer
+    (r'(<summary[^>]*>Où puis-je suivre les nouvelles publications \?</summary>)\s*<section class="qa-a">[\s\S]*?</section>',
+     r'\1<section class="qa-a"><p>Abonnez-vous au flux <a href="/fr/rss.xml">RSS</a> ou suivez-moi sur '
+     r'<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> pour être informé des nouvelles publications, livres blancs et analyses.</p></section>'),
+    (r'>May I cite or quote from these papers\?<',
+     ">Puis-je citer ces documents ?<"),
+    (r'>Yes\. Short quotations with attribution[^<]+',
+     ">Oui. Les courtes citations avec attribution sont bienvenues dans le cadre du fair use. Pour les publications EPAA, citez l'EPAA comme éditeur avec le groupe de travail, l'année et l'URL du PDF. Pour les rapports de recherche indépendants, citez sous la forme : Rousseau, S. (année). Titre. Auto-publié. avec l'URL canonique. Pour reproduire une figure ou un passage étendu, merci de me contacter."),
+    (r'>Where can I follow new releases\?<',
+     ">Où puis-je suivre les nouvelles publications ?<"),
+    (r'>Subscribe to the RSS feed or follow me on LinkedIn[^<]+',
+     ">Abonnez-vous au flux RSS ou suivez-moi sur LinkedIn pour être informé des nouvelles publications, livres blancs et analyses."),
+    # /fr/projects/
+    (r'>Browse all projects<', '>Parcourir tous les projets<'),
+    (r'>Three areas of practice\.\s*<span',
+     '>Trois domaines de pratique. <span'),
+    (r'>One philosophy\.</span>',
+     '>Une philosophie.</span>'),
+    (r'>WHAT IS INSIDE<', '>CONTENU<'),
+    (r'>OPEN SOURCE FOR FINANCIAL SERVICES<',
+     '>OPEN SOURCE POUR LES SERVICES FINANCIERS<'),
+    (r'>Payments and settlement\.<', '>Paiements et règlement.<'),
+    (r'>Post-quantum cryptography\.<', '>Cryptographie post-quantique.<'),
+    (r'>Applied AI\.<', '>IA appliquée.<'),
+    (r'>Explore payments tools<', '>Explorer les outils de paiement<'),
+    (r'>Explore PQC tools<', '>Explorer les outils PQC<'),
+    (r'>Explore AI tools<', '>Explorer les outils IA<'),
+    (r'>Authored & maintained<', '>Écrits et maintenus<'),
+    (r'>Authored &amp; maintained<', '>Écrits et maintenus<'),
+    (r'>Open source for the future of finance\.<',
+     ">Open source pour l'avenir de la finance.<"),
+    # /fr/playlists/
+    (r'<p class="newsroom-kicker">FEATURED</p>',
+     '<p class="newsroom-kicker">À LA UNE</p>'),
+    (r'>Latest Music</h2>', '>Musique récente</h2>'),
+    (r'>Latest playlist</h2>', '>Playlist récente</h2>'),
+    (r'>Soulful, jazz and downtempo</h2>',
+     '>Soulful, jazz et downtempo</h2>'),
+    (r'<p class="newsroom-kicker">MORNING & MOOD</p>',
+     '<p class="newsroom-kicker">MATIN & AMBIANCE</p>'),
+    (r'>Morning, mood and chill</h2>',
+     '>Matin, ambiance et chill</h2>'),
+    (r'<p class="newsroom-kicker">ELECTRONIC</p>',
+     '<p class="newsroom-kicker">ÉLECTRONIQUE</p>'),
+    (r'>Electronic, house and techno</h2>',
+     '>Électro, house et techno</h2>'),
+    (r'>Pop, rock and alternative</h2>',
+     '>Pop, rock et alternatif</h2>'),
+    (r'<p class="newsroom-kicker">FOCUS</p>',
+     '<p class="newsroom-kicker">CONCENTRATION</p>'),
+    (r'>Focus and productivity</h2>',
+     '>Concentration et productivité</h2>'),
+    # Section ledes
+    (r'>Smooth Jazz, Neo Soul, and laid-back grooves[^<]+',
+     '>Smooth Jazz, Neo Soul et grooves nonchalants. Des playlists pour quand la journée demande de ralentir.'),
+    (r'>This page has a comprehensive list[^<]+',
+     ">Cette page présente une sélection des playlists Spotify les plus "
+     "populaires et acclamées par la critique, couvrant un large éventail "
+     "de genres. Que vous soyez fan de jazz, de soul, de hip-hop ou de "
+     "musique électronique, vous trouverez une playlist à votre goût."),
+    # Playlist excerpts
+    (r'>Step into the harmonious realm of TETRA\.[^<]+',
+     ">Entrez dans le royaume harmonieux de TETRA. Une playlist euphorique conçue pour élever votre esprit et remplir votre âme de joie."),
+    (r'>Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\.',
+     ">Détendez-vous et embrassez l'essence de l'été avec cette sélection de Jazz, Soul, R&amp;B et Neo Soul."),
+    (r'>A deep dive into the quintessential collection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\.',
+     ">Une plongée en profondeur dans la collection quintessentielle de Jazz, Soul, R&amp;B et Neo Soul."),
+    (r'>Take a break from a busy day and relax with soothing nu jazz and downtempo beats\.',
+     ">Faites une pause dans une journée chargée et détendez-vous avec du nu jazz et du downtempo apaisants."),
+    (r'>Soulful tracks with a fashion-forward vibe\. Music to set the tone for a productive and stylish day\.',
+     ">Des morceaux soul à la vibe avant-gardiste. La musique idéale pour donner le ton d'une journée productive et stylée."),
+    (r'>Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms\.',
+     ">Célébrez la joie de vivre et plongez dans un monde d'émotions vives, de couleurs vibrantes et de rythmes soul."),
+    (r'>Laid-back beats, house-influenced grooves and new deep house tracks\.',
+     ">Beats nonchalants, grooves d'inspiration house et nouvelles pépites deep house."),
+    (r'>Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience\.',
+     ">Un mélange fluide de disco funky, house, French touch et autres genres pour une expérience musicale ultra-cool et énergique."),
+    (r'>A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke\.',
+     ">Un voyage sonore mêlant Nu-Disco, French House, Electro et Disco House d'artistes comme Madeon et Fred Falke."),
+    (r'>Laid-back beats, hip-hop-influenced grooves and new indie pop tracks\.',
+     ">Beats nonchalants, grooves d'inspiration hip-hop et nouveaux titres indie pop."),
+    (r'>Original Hip Hop, Rap and R(?:&amp;|&)B Flavor Sessions\.',
+     ">Sessions originales aux saveurs Hip Hop, Rap et R&amp;B."),
+    (r'>Brace yourself for hardcore rap and hip hop tracks\.',
+     ">Préparez-vous à du rap et du hip hop hardcore."),
+    (r'>A few of the favourite hip-hop gems\.',
+     ">Quelques-unes des pépites hip-hop favorites."),
+    (r'>Soulful beats and thoughtful lyrics\. A captivating look into the world of contemporary hip hop, R(?:&amp;|&)B and rap\.',
+     ">Beats soul et paroles réfléchies. Un regard captivant sur le hip hop, le R&amp;B et le rap contemporains."),
+    (r'>Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats\.',
+     ">Ambiances nonchalantes et rythmes doux dans cette superbe playlist Lo-Fi Hip Hop."),
+    (r'>Celebrate the diverse heritage of African music\. From the soulful rhythms of Wassoulou to the lively beats of Londonko\.',
+     ">Célébrez la riche diversité de la musique africaine. Des rythmes soul du Wassoulou aux beats vifs du Londonko."),
+    # /fr/tags/
+    (r'aria-label="Tag: ([^,]+), (\d+) Posts"', r'aria-label="Étiquette : \1, \2 articles"'),
+    (r'(\(\d+) Posts\)', r'\1 articles)'),
     # Hero / shared section labels
     (r'>Latest research<', '>Recherches récentes<'),
     (r'>Read latest research<', '>Lire les recherches récentes<'),
@@ -1288,6 +1865,13 @@ def render_static_translation(slug: str) -> str | None:
     shell = translate_chrome(shell)
     for pat, repl in _STATIC_BODY_COMPILED:
         shell = pat.sub(repl, shell)
+
+    # Rewrite article-card titles + tooltips on listing pages
+    # (papers, projects, tags, topic hub, …) to the FR title.
+    shell = rewrite_fr_link_titles(shell)
+    shell = rewrite_newsroom_card_titles(shell)
+    shell = rewrite_en_titles_in_text(shell)
+    shell = rewrite_en_descs_in_text(shell)
 
     # Localise feed links.
     shell = re.sub(
@@ -1563,6 +2147,10 @@ def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:
 
     # Chrome localisation
     shell = translate_chrome(shell)
+    shell = rewrite_fr_link_titles(shell)
+    shell = rewrite_newsroom_card_titles(shell)
+    shell = rewrite_en_titles_in_text(shell)
+    shell = rewrite_en_descs_in_text(shell)
     # Feed links
     shell = re.sub(
         r'href="(?:https?://[^/"]+)?/atom\.xml"',
