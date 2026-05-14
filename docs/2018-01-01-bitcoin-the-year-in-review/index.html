@@ -17,16 +17,29 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
 
-    <meta http-equiv="Permissions-Policy" content="browsing-topics=(), interest-cohort=(), join-ad-interest-group=(), run-ad-auction=(), attribution-reporting=()" />
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
 
     <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
          are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
          of each block at build time and injects the 'sha256-<base64>' tokens
          into script-src below before the file is served. Browsers will then
-         allow that exact byte-for-byte content and nothing else. -->
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculationrules' permits the Speculation Rules API hover
+         prerender script in postbuild.py. -->
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
-        script-src 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'sha256-yFCn/mBny7AQ+PT/UyLHMG1B74cNhhapNftKcK3FwFA=' 'sha256-ybtHZCW76TPpE17FRgxunLTtCQ0be0ypIAx29HIrGNs=' 'self' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        frame-ancestors 'none';
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'sha256-tCmdSBxz29YCBXvBZJUiNoY4BfsHGaHHEipUM7NhLhs=' 'sha256-yFCn/mBny7AQ+PT/UyLHMG1B74cNhhapNftKcK3FwFA=' 'self' 'inline-speculationrules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
         connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
         img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
@@ -70,7 +83,7 @@
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp">
 <link rel="canonical" href="http://127.0.0.1:8000/2018-01-01-bitcoin-the-year-in-review/index.html">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
-<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2018-01-01-bitcoin-l-annee-en-revue/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/" /></head>
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2018-01-01-bitcoin-l-annee-en-revue/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script></head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <a class="skip" href="#main">Skip to main content</a>
     <div class="ap-progress" aria-hidden="true"></div>

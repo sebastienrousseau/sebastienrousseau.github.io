@@ -1513,6 +1513,37 @@ _HEAD_END_RE = re.compile(r'</head>', re.IGNORECASE)
 _HREFLANG_RE = re.compile(r'<link\s+rel="alternate"\s+hreflang="[^"]+"[^/]*/>', re.IGNORECASE)
 
 
+# Speculation Rules API — prerender same-origin pages on hover so any
+# navigation feels instant. The CSP allows it via 'inline-speculationrules'
+# in script-src; no per-page hash needed.
+SPECULATION_RULES_BLOCK = (
+    '<script type="speculationrules">'
+    '{"prerender":[{'
+    '"where":{"and":['
+    '{"href_matches":"/*"},'
+    '{"not":{"href_matches":"/_csp/*"}},'
+    '{"not":{"href_matches":"/*.xml"}},'
+    '{"not":{"href_matches":"/*.json"}},'
+    '{"not":{"href_matches":"/*.txt"}},'
+    '{"not":{"href_matches":"/*.pdf"}},'
+    '{"not":{"href_matches":"/manifest.json"}},'
+    '{"not":{"href_matches":"/sw.js"}},'
+    '{"not":{"href_matches":"/contact/*"}},'
+    '{"not":{"href_matches":"/fr/contact/*"}}'
+    ']},'
+    '"eagerness":"moderate"'
+    '}]}'
+    '</script>'
+)
+
+
+def inject_speculation_rules(html: str) -> str:
+    """Inject the Speculation Rules API block before </head>. Idempotent."""
+    if 'type="speculationrules"' in html:
+        return html
+    return _HEAD_END_RE.sub(SPECULATION_RULES_BLOCK + '</head>', html, count=1)
+
+
 def _translated_slugs() -> tuple[set[str], set[str]]:
     """Discover which EN and FR slugs have rendered counterparts under
     ``public/``. Returns ``(en_slugs_with_fr, fr_slugs_with_en)``.
@@ -1690,6 +1721,8 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
             )
         if patched_hl != patched_nav:
             hreflang_patched += 1
+        # Speculation Rules — hover-prerender every internal link.
+        patched_hl = inject_speculation_rules(patched_hl)
         patched2 = inject_jsonld_hashes(patched_hl)
         if patched2 != patched_nav:
             csp_patched += 1
