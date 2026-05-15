@@ -28,10 +28,28 @@ OUT = Path("public/resources")
 
 def have_tooling() -> tuple[bool, str]:
     if not shutil.which("pandoc"):
-        return False, "pandoc not on PATH — skipping lead-magnet PDF build"
+        return False, "pandoc not on PATH — falling back to committed PDFs"
     if not (shutil.which("xelatex") or shutil.which("pdflatex")):
-        return False, "no LaTeX engine on PATH — skipping lead-magnet PDF build"
+        return False, "no LaTeX engine on PATH — falling back to committed PDFs"
     return True, ""
+
+
+def fallback_copy_from_docs(out: Path) -> int:
+    """When pandoc/LaTeX isn't installed (CI runners, contributors without
+    a TeX install), we still need the deployed PDF reachable from
+    ``public/resources/`` so the internal-link audit passes. We canonicalise
+    each PDF as a committed artefact under ``docs/resources/`` (deployed
+    via GitHub Pages from main/docs anyway); the fallback just mirrors
+    that into ``public/`` for the current build."""
+    docs_dir = Path("docs/resources")
+    if not docs_dir.is_dir():
+        return 0
+    out.mkdir(parents=True, exist_ok=True)
+    n = 0
+    for pdf in sorted(docs_dir.glob("*.pdf")):
+        shutil.copy2(pdf, out / pdf.name)
+        n += 1
+    return n
 
 
 def render(md: Path, out: Path) -> None:
@@ -56,7 +74,9 @@ def render(md: Path, out: Path) -> None:
 def main() -> int:
     ok, msg = have_tooling()
     if not ok:
-        print(f"build_lead_magnets: {msg}")
+        n = fallback_copy_from_docs(OUT)
+        suffix = f" ({n} pre-built PDF(s) copied)" if n else " (no committed PDFs found)"
+        print(f"build_lead_magnets: {msg}{suffix}")
         return 0
     if not SRC.is_dir():
         print("build_lead_magnets: _data/lead-magnets/ missing — nothing to do")
