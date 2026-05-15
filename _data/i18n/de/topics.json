@@ -1,0 +1,23 @@
+{
+  "_comment": "Topic-cluster titles + ledes for the German edition. DRAFT — pending native-speaker review (see _data/i18n/de/MANIFEST.md). Five topic clusters, identical slugs to EN (topic slugs are language-independent).",
+  "post-quantum-cryptography": {
+    "title": "Post-Quanten-Kryptographie",
+    "lede": "Gitterbasierte Kryptografie, NIST-PQC-Standards, quantensichere Zahlungen und die „Jetzt sammeln, später entschlüsseln“-Bedrohung. Forschungsnotizen, Open-Source-Bibliotheken und Migrations-Playbooks für Sicherheitsteams im Finanzdienstleistungssektor."
+  },
+  "iso-20022-payments": {
+    "title": "ISO 20022 & Zahlungen",
+    "lede": "Migration grenzüberschreitender Nachrichten, Konformität strukturierter Adressen, SEPA Instant, SWIFT gpi und die Wholesale-Payment-Schienen, die das Ganze tragen. Werkzeuge, Playbooks und der regulatorische Zeitplan."
+  },
+  "applied-ai-banking": {
+    "title": "Angewandte KI im Banking",
+    "lede": "Generative KI, multimodale LLMs, Sprach- und Stimmmodelle — und wie sie Bankoperationen, Kundenservice und Produkt-Engineering bei Tier-1-Instituten neu gestalten."
+  },
+  "rust-open-source": {
+    "title": "Rust & Open Source",
+    "lede": "Open-Source-Rust-Bibliotheken, die ich pflege: Logging, Code-Generierung, Datum/Zeit, kryptografische Primitive, Kyber-basierter KEM und ein Rust-Static-Site-Generator."
+  },
+  "blockchain-digital-assets": {
+    "title": "Blockchain & Digital Assets",
+    "lede": "Blockchain und digitale Vermögenswerte: Tokenisierung, ERC-20, Stablecoins, Kryptowährungs-Infrastruktur und der regulatorische Rahmen, der sie prägt."
+  }
+}
