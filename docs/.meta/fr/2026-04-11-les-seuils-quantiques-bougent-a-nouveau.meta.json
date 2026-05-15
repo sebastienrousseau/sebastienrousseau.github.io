@@ -1,11 +1,11 @@
 {
-  "subtitle": "Un nouvel article suggère que l'algorithme de Shor pourrait s'exécuter sur seulement 10 000 qubits. Le seuil du calcul quantique cryptographiquement pertinent chute plus vite que la plupart ne le supposaient.",
-  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
+  "date": "April 11, 2026",
   "banner_alt": "Schéma du seuil de qubits pour l'algorithme de Shor. Circuit imprimé de calcul quantique aux reflets bleus",
-  "description": "Un nouvel article suggère que l'algorithme de Shor pourrait s'exécuter sur seulement 10 000 qubits. Le seuil du calcul quantique cryptographiquement pertinent chute plus vite que la plupart ne le supposaient.",
-  "locale": "fr_FR",
+  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
   "title": "Les seuils quantiques bougent à nouveau",
   "language": "fr",
-  "date": "April 11, 2026",
-  "keywords": "algorithme de Shor, qubits, calcul quantique, ECC, RSA-2048, atomes neutres reconfigurables, codes de correction d'erreurs, CRYSTALS-Kyber, CRYSTALS-Dilithium, PQC, cryptographie post-quantique"
+  "keywords": "algorithme de Shor, qubits, calcul quantique, ECC, RSA-2048, atomes neutres reconfigurables, codes de correction d'erreurs, CRYSTALS-Kyber, CRYSTALS-Dilithium, PQC, cryptographie post-quantique",
+  "description": "Un nouvel article suggère que l'algorithme de Shor pourrait s'exécuter sur seulement 10 000 qubits. Le seuil du calcul quantique cryptographiquement pertinent chute plus vite que la plupart ne le supposaient.",
+  "locale": "fr_FR",
+  "subtitle": "Un nouvel article suggère que l'algorithme de Shor pourrait s'exécuter sur seulement 10 000 qubits. Le seuil du calcul quantique cryptographiquement pertinent chute plus vite que la plupart ne le supposaient."
 }
