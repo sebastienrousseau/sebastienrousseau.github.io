@@ -186,6 +186,28 @@ def load_strings(code: str) -> dict[str, str]:
     return {k: v for k, v in data.items() if not k.startswith("_")}
 
 
+def load_labels(code: str) -> dict[str, str]:
+    """Load body-text labels for ``code``.
+
+    Distinct from :func:`load_strings`: ``strings.json`` is global UI
+    chrome (nav, footer, search), while ``labels.json`` is the smaller
+    set of inline body-text strings that ``build_translations.py``
+    substitutes when forking the EN page shell into another language
+    (Published / Updated / min read / Sources & references / etc.).
+
+    Keys starting with ``_`` are documentation-only and stripped. The
+    English file is the canonical reference; CI gate
+    :mod:`scripts.test_i18n_labels` enforces key-set parity.
+    """
+    path = I18N_DIR / code / "labels.json"
+    if not path.is_file():
+        raise LanguageError(f"missing body-labels glossary: {path}")
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise LanguageError(f"{path}: must be a JSON object")
+    return {k: v for k, v in data.items() if not k.startswith("_")}
+
+
 def fr_slug(en_slug: str) -> str:
     """Convenience: EN slug → FR slug. Returns input unchanged if no
     translation is recorded — matches the legacy ``_fr_slugs.fr_slug``

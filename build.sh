@@ -45,6 +45,7 @@ python3 scripts/sigstore_sign.py
 python3 scripts/test_search_indexes.py
 python3 scripts/test_i18n_parity.py
 python3 scripts/test_i18n_strings.py
+python3 scripts/test_i18n_labels.py
 python3 scripts/test_hreflang_reciprocity.py
 python3 scripts/test_jsonld_localized.py
 python3 scripts/test_sitemap_completeness.py

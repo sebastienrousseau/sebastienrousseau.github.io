@@ -1,0 +1,15 @@
+{
+  "_comment": "French body-text labels — mirrors I18N_FR (build_translations.py) prior to the labels-registry extraction. Key set MUST stay in sync with _data/i18n/en/labels.json; CI gate test_i18n_labels.py enforces parity.",
+  "Published": "Publié le",
+  "Updated": "Mis à jour le",
+  "min read": "min de lecture",
+  "Previous": "Précédent",
+  "Next": "Suivant",
+  "Sources & references": "Sources et références",
+  "About the author": "À propos de l'auteur",
+  "Topics": "Sujets",
+  "Contents": "Sommaire",
+  "Estimated read time": "Temps de lecture estimé",
+  "Article pagination": "Pagination des articles",
+  "Link to": "Lien vers"
+}

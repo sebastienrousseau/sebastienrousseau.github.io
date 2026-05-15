@@ -46,20 +46,12 @@ _DATED_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-")
 
 # French UI strings — used by the meta-bar swap pass below and by
 # postbuild's furniture renderers when they detect <html lang="fr">.
-I18N_FR: dict[str, str] = {
-    "Published": "Publié le",
-    "Updated": "Mis à jour le",
-    "min read": "min de lecture",
-    "Previous": "Précédent",
-    "Next": "Suivant",
-    "Sources & references": "Sources et références",
-    "About the author": "À propos de l'auteur",
-    "Topics": "Sujets",
-    "Contents": "Sommaire",
-    "Estimated read time": "Temps de lecture estimé",
-    "Article pagination": "Pagination des articles",
-    "Link to": "Lien vers",
-}
+# Body-text labels for inline article chrome — now sourced from
+# _data/i18n/<lang>/labels.json via _lang_registry.load_labels(). The
+# old inline dict is kept as a frozen alias so any external code that
+# imported I18N_FR keeps working through Phase 6a; Phase 6b will move
+# the consumers to read by lang_code directly.
+I18N_FR: dict[str, str] = _lang_registry.load_labels("fr")
 
 _FM_KEY_RE = re.compile(r'^([a-zA-Z_]+):\s*"((?:[^"\\]|\\.)*)"\s*$')
 
