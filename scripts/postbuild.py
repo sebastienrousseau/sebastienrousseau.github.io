@@ -1275,6 +1275,14 @@ def _splice_fr_urls(xml: str, lastmod_index: dict[str, str]) -> str:
     ):
         _add(f"{base}/{slug}/", "0.6", "monthly")
 
+    # EN topic sub-pages (sitemap had FR topics but not EN — a real bug
+    # surfaced by Phase 2 sitemap-completeness gate).
+    for topic in (
+        "post-quantum-cryptography", "iso-20022-payments",
+        "applied-ai-banking", "rust-open-source", "blockchain-digital-assets",
+    ):
+        _add(f"{base}/topics/{topic}/", "0.6", "monthly")
+
     # EN dated posts
     if POSTS_DIR.is_dir():
         for md in sorted(POSTS_DIR.glob("2*.md")):
