@@ -61,7 +61,10 @@ Sitemap: https://sebastienrousseau.com/sitemap.xml
 Sitemap: https://sebastienrousseau.com/news-sitemap.xml
 Sitemap: https://sebastienrousseau.com/fr/news-sitemap.xml
 
-# AI-crawler directory (proposed convention, RFC pending).
-# See https://llmstxt.org/ — both files are CC BY 4.0 with attribution.
-LLMs: https://sebastienrousseau.com/llms.txt
-LLMs-Full: https://sebastienrousseau.com/llms-full.txt
+# AI-crawler directory (proposed convention, RFC pending). Per
+# https://llmstxt.org/ the canonical placement is just the file at the
+# site root — robots.txt has no standard directive for it, so we keep
+# the pointers as comments to avoid Lighthouse "Unknown directive"
+# flags. Both files are CC BY 4.0 with attribution.
+# llms:      https://sebastienrousseau.com/llms.txt
+# llms-full: https://sebastienrousseau.com/llms-full.txt

@@ -165,7 +165,7 @@ def page_layout() -> str:
 
 def contact_layout() -> str:
     body = """    <section class="ap-hero">
-      <span class="eyebrow" style="display:inline-block;font-size:13px;font-weight:600;color:var(--accent);letter-spacing:.04em;text-transform:uppercase;margin-bottom:10px">Contact</span>
+      <span class="eyebrow">Contact</span>
       <h1>{{title}}</h1>
       <p class="sub">{{subtitle}}</p>
     </section>

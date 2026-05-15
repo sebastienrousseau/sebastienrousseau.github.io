@@ -82,6 +82,14 @@ jsonld_re = re.compile(
     r'<script[^>]*type=["\']?application/ld\+json["\']?[^>]*>([\s\S]*?)</script>',
     re.IGNORECASE,
 )
+# Speculation Rules also need a CSP allowance. Chrome 124+ accepts the
+# `'inline-speculation-rules'` keyword in script-src, but adding the
+# block's actual sha256 hash gives belt-and-braces coverage for older
+# browsers / unusual configs.
+speculation_re = re.compile(
+    r'<script[^>]*type=["\']?speculationrules["\']?[^>]*>([\s\S]*?)</script>',
+    re.IGNORECASE,
+)
 # Match the CSP meta tag whether attributes are quoted or not, in either order
 # (Static Site Generator's minifier emits `<meta content="..." http-equiv=Content-Security-Policy>`).
 csp_tag_re = re.compile(
@@ -96,6 +104,7 @@ content_attr_re = re.compile(
 
 def inject_jsonld_hashes(html: str) -> str:
     bodies = [m.group(1) for m in jsonld_re.finditer(html)]
+    bodies.extend(m.group(1) for m in speculation_re.finditer(html))
     if not bodies:
         return html
     hashes = sorted({b64_sha256(b.encode("utf-8")) for b in bodies})
@@ -782,10 +791,13 @@ Sitemap: https://sebastienrousseau.com/sitemap.xml
 Sitemap: https://sebastienrousseau.com/news-sitemap.xml
 Sitemap: https://sebastienrousseau.com/fr/news-sitemap.xml
 
-# AI-crawler directory (proposed convention, RFC pending).
-# See https://llmstxt.org/ — both files are CC BY 4.0 with attribution.
-LLMs: https://sebastienrousseau.com/llms.txt
-LLMs-Full: https://sebastienrousseau.com/llms-full.txt
+# AI-crawler directory (proposed convention, RFC pending). Per
+# https://llmstxt.org/ the canonical placement is just the file at the
+# site root — robots.txt has no standard directive for it, so we keep
+# the pointers as comments to avoid Lighthouse "Unknown directive"
+# flags. Both files are CC BY 4.0 with attribution.
+# llms:      https://sebastienrousseau.com/llms.txt
+# llms-full: https://sebastienrousseau.com/llms-full.txt
 """
 
 
