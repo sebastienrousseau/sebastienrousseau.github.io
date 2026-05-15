@@ -24,7 +24,6 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 from _fr_slugs import EN_TO_FR, FR_TO_EN
 from _fr_slugs import en_slug as _en_slug
-from _fr_slugs import fr_slug as _fr_slug
 
 PUBLIC = Path("public")
 
@@ -1325,7 +1324,7 @@ def refresh_sitemap_lastmod(sitemap_path: Path, index: dict[str, str]) -> int:
     return patched
 
 
-def _splice_fr_urls(xml: str, lastmod_index: dict[str, str]) -> str:
+def _splice_fr_urls(xml: str, lastmod_index: dict[str, str]) -> str:  # noqa: C901 — multi-lang sitemap splicer touches every static + article slug per active lang
     """Ensure the sitemap contains every EN + FR article + the static
     landing pages. Shokunin's sitemap.xml ships empty (regression) so we
     repopulate it from authoritative sources here:
@@ -1399,8 +1398,8 @@ def _splice_fr_urls(xml: str, lastmod_index: dict[str, str]) -> str:
             "applied-ai-banking", "rust-open-source", "blockchain-digital-assets",
         ):
             _add(f"{base}/{_code}/{_topics_slug}/{topic}/", "0.6", "monthly")
-        for _en_slug, _lang_slug in _articles.items():
-            _add(f"{base}/{_code}/{_lang_slug}/", "0.7", "monthly", lastmod_index.get(_en_slug, ""))
+        for _en_art_slug, _lang_slug in _articles.items():
+            _add(f"{base}/{_code}/{_lang_slug}/", "0.7", "monthly", lastmod_index.get(_en_art_slug, ""))
 
     if not new_blocks:
         return xml
@@ -2445,7 +2444,7 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
     # BlogPosting page. Indexed once per build, then read per page.
     nav_index = build_post_nav_index(pages)
     fr_titles = build_fr_title_index(pages)
-    en_with_fr, fr_with_en = _translated_slugs()
+    _en_with_fr, _fr_with_en = _translated_slugs()  # kept for legacy probes; new logic uses translated_per_lang
     translated_per_lang = _translated_slugs_per_lang()
     gh_stats = _gh_stats_index()
     sri_patched = 0
@@ -2531,7 +2530,6 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
             nav_patched += 1
         # Reciprocal hreflang for paired English/French pages.
         rel_slug = page.parent.name
-        is_fr = page.parent.parent.name == "fr"
         # Topic sub-pages: same slug on both sides
         # (e.g. /topics/post-quantum-cryptography/ ↔
         # /fr/sujets/post-quantum-cryptography/). Inject directly —
@@ -2609,8 +2607,10 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
             home_alts: list[tuple[str, str]] = [
                 ("en", "https://sebastienrousseau.com/"),
             ]
-            for _code in _all_active_non_en_langs():
-                home_alts.append((_code, f"https://sebastienrousseau.com/{_code}/"))
+            home_alts.extend(
+                (_code, f"https://sebastienrousseau.com/{_code}/")
+                for _code in _all_active_non_en_langs()
+            )
             home_links = ''.join(
                 f'<link rel="alternate" hreflang="{lc}" href="{u}" />'
                 for lc, u in home_alts

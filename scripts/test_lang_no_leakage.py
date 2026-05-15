@@ -128,7 +128,8 @@ def check_page(path: Path, en_strings: list[str]) -> list[str]:
     rel = path.relative_to(PUBLIC).as_posix()
     defects: list[str] = []
     for s in en_strings:
-        pat = r"(?<![A-Za-z]){0}(?![A-Za-z])".format(re.escape(s))
+        escaped = re.escape(s)
+        pat = rf"(?<![A-Za-z]){escaped}(?![A-Za-z])"
         if re.search(pat, chrome):
             defects.append(f"{rel}: EN string leaked into chrome: {s!r}")
     return defects
