@@ -1,0 +1,93 @@
+{
+  "_comment": "Per-static-page metadata for the German mirror. DRAFT — pending native-speaker review. Keys are EN slugs; entries replace EN values in <title>, <meta name=description>, <meta name=keywords>, og:*, twitter:*, and the hero subtitle. German text expansion vs EN is typically +30% — verify nothing wraps awkwardly in the rendered nav/CTAs before flipping active=True.",
+  "about": {
+    "title": "Über mich — Sebastien Rousseau",
+    "subtitle": "Die Zukunft von Bank- und Finanzdienstleistungen gestalten durch die strategische Integration von Künstlicher Intelligenz, Post-Quanten-Kryptografie und Blockchain-Technologie.",
+    "description": "Sebastien Rousseau, Senior-Technologe im Banking: angewandte KI, ISO-20022-Migration, Post-Quanten-Kryptografie, strukturelle Transformation des Wholesale-Payments-Sektors.",
+    "keywords": "Sebastien Rousseau, Biografie, Banking, Zahlungen, KI, ISO 20022, Post-Quanten-Kryptografie, HSBC, PayPal, Barclays"
+  },
+  "papers": {
+    "title": "Publikationen — Sebastien Rousseau",
+    "subtitle": "Industrie-Whitepaper und angewandte Forschung für leitende Entscheider in Zahlungsverkehr und Sicherheit.",
+    "description": "Artikel, Berichte und Publikationen von Sebastien Rousseau über KI, ISO-20022-Zahlungen und Post-Quanten-Kryptografie.",
+    "keywords": "Publikationen, Artikel, Berichte, Forschung, ISO 20022, KI, Post-Quanten-Kryptografie"
+  },
+  "projects": {
+    "title": "Projekte — Sebastien Rousseau",
+    "subtitle": "Open-Source-Projekte in Python, Rust und JavaScript für die Zukunft der Finanzbranche.",
+    "description": "Portfolio von Open-Source-Bibliotheken, gepflegt von Sebastien Rousseau für Zahlungsverkehr, grenzüberschreitendes Settlement und quantensichere Kryptografie.",
+    "keywords": "Open-Source-Projekte, Python, Rust, Zahlungen, ISO 20022, Post-Quanten-Kryptografie"
+  },
+  "topics": {
+    "title": "Themen — Sebastien Rousseau",
+    "subtitle": "Artikel zu KI, Post-Quanten-Kryptografie, ISO 20022 und der Zukunft des Zahlungsverkehrs.",
+    "description": "Analysen nach Themengebieten: angewandte KI, ISO-20022-Zahlungen, Post-Quanten-Kryptografie und die Transformation des Wholesale-Zahlungsverkehrs.",
+    "keywords": "Themen, Themengebiete, KI, Zahlungen, ISO 20022, Post-Quanten-Kryptografie"
+  },
+  "tags": {
+    "title": "Etiketten — Sebastien Rousseau",
+    "subtitle": "Durchsuchen Sie die Website nach Thema: KI, Zahlungen, Post-Quanten-Kryptografie, Open Source.",
+    "description": "Artikel nach Etikett durchsuchen: KI, ISO 20022, Blockchain, Post-Quanten-Kryptografie und mehr.",
+    "keywords": "Etiketten, Tags, Themen-Navigation"
+  },
+  "contact": {
+    "title": "Kontakt — Sebastien Rousseau",
+    "subtitle": "Eine Frage oder ein Beratungsbedarf? Schreiben Sie mir.",
+    "description": "Kontaktieren Sie Sebastien Rousseau für Beratung zur Zahlungsverkehrstransformation, ISO-20022-Migration oder Post-Quanten-Strategie.",
+    "keywords": "Kontakt, Beratung, Zahlungen, ISO 20022, Post-Quanten-Kryptografie"
+  },
+  "accessibility": {
+    "title": "Barrierefreiheit — Sebastien Rousseau",
+    "subtitle": "Verpflichtet zur digitalen Barrierefreiheit für Menschen mit Behinderung.",
+    "description": "Erklärung zur Barrierefreiheit: WCAG-2.2-AA-Konformität, inklusive Prinzipien, Erfahrungsberichte und Kontaktdaten für Meldungen.",
+    "keywords": "Barrierefreiheit, WCAG, Konformität, digitale Inklusion, Audit"
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung — Sebastien Rousseau",
+    "subtitle": "Ihre Privatsphäre ist uns wichtig.",
+    "description": "Wie diese Website Daten erhebt, verwendet und schützt. Anonyme Reichweitenmessung, Cookies, Hosting und DSGVO-Rechte.",
+    "keywords": "Datenschutz, DSGVO, Cookies, personenbezogene Daten, Analytics"
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen — Sebastien Rousseau",
+    "subtitle": "Allgemeine Nutzungsbedingungen der Website.",
+    "description": "Allgemeine Nutzungsbedingungen der Website sebastienrousseau.com: Inhaltslizenz, Beschränkungen, Marken und Gerichtsstand.",
+    "keywords": "Nutzungsbedingungen, Impressum, Lizenz, Copyright"
+  },
+  "made-with-static-site-generator": {
+    "title": "Erstellt mit Static Site Generator — Sebastien Rousseau",
+    "subtitle": "Entdecken Sie den Static-Site-Generator der nächsten Generation.",
+    "description": "Diese Website wird mit Shokunin generiert, einem schnellen, in Rust geschriebenen Static-Site-Generator.",
+    "keywords": "Shokunin, Static-Site-Generator, Rust, Performance"
+  },
+  "made-with-shokunin": {
+    "title": "Erstellt mit Shokunin — Sebastien Rousseau",
+    "subtitle": "Entdecken Sie den Static-Site-Generator der nächsten Generation.",
+    "description": "Diese Website ist mit Shokunin erstellt, einem Rust-Static-Site-Generator, optimiert für Performance und SEO.",
+    "keywords": "Shokunin, SSG, Rust, Performance, SEO"
+  },
+  "playlists": {
+    "title": "Playlists — Sebastien Rousseau",
+    "subtitle": "Spotify-Playlists ausgewählt für Deep Work, Kreativität und Engineering-Geist.",
+    "description": "Musik- und Audioauswahl von Sebastien Rousseau.",
+    "keywords": "Playlists, Musik"
+  },
+  "404": {
+    "title": "Seite nicht gefunden — Sebastien Rousseau",
+    "subtitle": "Diese Seite konnte leider nicht gefunden werden.",
+    "description": "Die angeforderte Seite wurde nicht gefunden. Kehren Sie zur Startseite zurück oder verwenden Sie die Suche.",
+    "keywords": "404, Seite nicht gefunden"
+  },
+  "offline": {
+    "title": "Offline — Sebastien Rousseau",
+    "subtitle": "Bitte überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
+    "description": "Sie sind offline. Stellen Sie die Verbindung wieder her, um auf die Inhalte zuzugreifen.",
+    "keywords": "Offline, PWA"
+  },
+  "thanks": {
+    "title": "Danke — Sebastien Rousseau",
+    "subtitle": "Vielen Dank für Ihre Nachricht!",
+    "description": "Danke für Ihre Nachricht. Ich melde mich in Kürze bei Ihnen.",
+    "keywords": "Danke"
+  }
+}
