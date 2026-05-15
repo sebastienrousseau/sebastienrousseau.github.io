@@ -8,7 +8,6 @@ the smoke gates can't reach.
 """
 from __future__ import annotations
 
-import json
 import sys
 from pathlib import Path
 
@@ -41,7 +40,7 @@ class TestLanguagesTable:
 
     def test_rtl_flag_set_for_ar_and_he(self) -> None:
         for code in ("ar", "he"):
-            lg = next((l for l in lr.LANGUAGES if l.code == code), None)
+            lg = next((entry for entry in lr.LANGUAGES if entry.code == code), None)
             assert lg is not None, f"{code} missing"
             assert lg.rtl is True, f"{code} should carry rtl=True"
 

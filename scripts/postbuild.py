@@ -2583,11 +2583,23 @@ class _PostbuildCounters:
     """
 
     __slots__ = (
-        "sri_patched", "csp_patched", "itemlist_patched", "social_patched",
-        "og_patched", "img_dims_patched", "howto_patched", "link_hoisted",
-        "wc_patched", "about_patched", "furniture_patched", "anchor_patched",
-        "citation_patched", "sources_patched", "mermaid_patched",
-        "nav_patched", "hreflang_patched",
+        "about_patched",
+        "anchor_patched",
+        "citation_patched",
+        "csp_patched",
+        "furniture_patched",
+        "howto_patched",
+        "hreflang_patched",
+        "img_dims_patched",
+        "itemlist_patched",
+        "link_hoisted",
+        "mermaid_patched",
+        "nav_patched",
+        "og_patched",
+        "social_patched",
+        "sources_patched",
+        "sri_patched",
+        "wc_patched",
     )
 
     def __init__(self) -> None:
@@ -2598,7 +2610,7 @@ class _PostbuildCounters:
 class _PostbuildContext:
     """Pre-pass artefacts read once and shared across pages."""
 
-    __slots__ = ("nav_index", "fr_titles", "translated_per_lang", "gh_stats", "counters")
+    __slots__ = ("counters", "fr_titles", "gh_stats", "nav_index", "translated_per_lang")
 
     def __init__(self, pages: list[Path]) -> None:
         self.nav_index = build_post_nav_index(pages)
