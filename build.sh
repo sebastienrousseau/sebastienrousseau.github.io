@@ -46,7 +46,7 @@ python3 scripts/test_hreflang_reciprocity.py
 python3 scripts/test_jsonld_localized.py
 python3 scripts/test_sitemap_completeness.py
 python3 scripts/test_lang_no_leakage.py
-python3 scripts/test_rtl_safe.py    # baseline mode — warn only
+python3 scripts/test_rtl_safe.py --strict
 
 # GitHub Pages serves from main/docs, so mirror the postbuild output into
 # docs/ on every build. CNAME and .nojekyll are preserved.

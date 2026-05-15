@@ -43,7 +43,7 @@ test-i18n:
 	@python3 scripts/test_jsonld_localized.py
 	@python3 scripts/test_sitemap_completeness.py
 	@python3 scripts/test_lang_no_leakage.py
-	@python3 scripts/test_rtl_safe.py
+	@python3 scripts/test_rtl_safe.py --strict
 
 # Python test suite (scripts/ utilities).
 test:
