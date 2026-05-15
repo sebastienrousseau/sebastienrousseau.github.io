@@ -1506,7 +1506,7 @@ def _labels_for_lang(code: str) -> dict[str, str]:
     else:
         try:
             base = _lr.load_labels(code)
-        except Exception:  # noqa: BLE001 — missing/invalid file falls back to EN
+        except _lr.LanguageError:
             base = {}
         out = dict(LABELS_EN)
         out.update(base)
