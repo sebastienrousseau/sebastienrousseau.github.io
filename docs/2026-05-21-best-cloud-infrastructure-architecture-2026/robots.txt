@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/sitemap.xml

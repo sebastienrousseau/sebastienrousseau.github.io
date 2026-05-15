@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/de/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/de/"/>
   <id>https://sebastienrousseau.com/de/</id>
-  <updated>2026-05-15T18:28:40+00:00</updated>
+  <updated>2026-05-15T20:08:51+00:00</updated>
+  <entry>
+    <title>Die beste Cloud-Infrastruktur-Architektur 2026: ein KI-nativer, Multi-Cloud- und quantenbewusster Blueprint für Finanzdienstleister</title>
+    <link href="https://sebastienrousseau.com/de/2026-05-21-beste-cloud-infrastruktur-architektur-fuer-banken-2026/"/>
+    <id>https://sebastienrousseau.com/de/2026-05-21-beste-cloud-infrastruktur-architektur-fuer-banken-2026/</id>
+    <updated>2026-05-21T06:06:06+00:00</updated>
+    <published>2026-05-21T06:06:06+00:00</published>
+    <summary>Die Cloud-Architektur 2026 hat sich um sechs Pfeiler kristallisiert: KI-native Infrastruktur, intelligente Multi-Cloud, Serverless-First-Design mit WebAssembly am Edge, Edge Computing, automatisierte Sicherheit mit Krypto-Agilität und nachhaltige, hochdichte Operations. Für Banken stellt sich nicht mehr die Frage, welchen Pfeiler man übernimmt, sondern ob man Cloud konsumiert oder gestaltet – unter dem konvergierenden Druck von agentischem Commerce, agentischer Unit Economics, Harvest-Now-Decrypt-Later-Quantenrisiko, MCP-Sicherheit und algorithmischer Ansteckung, kryptografischer Agentenidentität, kontinuierlichem Treasury und dem EU-KI-Gesetz.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Agentische Engineering für Banken: ein Blueprint 2026 für den Vorstand und die Ingenieure, die ihn bauen werden</title>
     <link href="https://sebastienrousseau.com/de/2026-05-18-agentische-engineering-banken-blueprint-2026/"/>

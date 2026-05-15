@@ -6,8 +6,40 @@
     <description>AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography.</description>
     <atom:link href="https://sebastienrousseau.com/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Mon, 18 May 2026 06:06:06 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 06:06:06 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</title>
+      <link>https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026</link>
+      <description>Cloud architecture in 2026 has crystallised around six pillars: AI-native infrastructure, intelligent multi-cloud, serverless-first design with WebAssembly at the edge, edge computing, automated security with crypto-agility, and sustainable high-density operations. For banks, the question is whether to consume cloud or design it — under converging pressure from agentic commerce, agentic unit economics, harvest-now-decrypt-later quantum risk, MCP security and algorithmic contagion, cryptographic agent identity, continuous-treasury demands, and the EU AI Act.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026</guid>
+      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud architecture</category>
+      <category>AI-native infrastructure</category>
+      <category>multi-cloud</category>
+      <category>serverless</category>
+      <category>WebAssembly</category>
+      <category>edge computing</category>
+      <category>DevSecOps</category>
+      <category>liquid cooling</category>
+      <category>agentic commerce</category>
+      <category>agentic unit economics</category>
+      <category>cryptographic agent identity</category>
+      <category>algorithmic contagion</category>
+      <category>synthetic data</category>
+      <category>data gravity</category>
+      <category>continuous treasury</category>
+      <category>graph neural networks</category>
+      <category>HNDL</category>
+      <category>post-quantum cryptography</category>
+      <category>crypto-agility</category>
+      <category>MCP security</category>
+      <category>CloudCDN</category>
+      <category>Cloudflare</category>
+    </item>
     <item>
       <title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
       <link>https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026</link>
@@ -999,27 +1031,6 @@
       <category>cross-platform product design</category>
       <category>engineering</category>
       <category>solution architecture</category>
-    </item>
-    <item>
-      <title>Privacy Statement — How Your Data Is Collected &amp; Used</title>
-      <link>https://sebastienrousseau.com/privacy</link>
-      <description>This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/privacy</guid>
-      <pubDate>Sun, 01 Oct 2023 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/jez-timms-4xLteCXh6X0.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>privacy</category>
-      <category>personal data</category>
-      <category>tracking tools</category>
-      <category>Google Analytics</category>
-      <category>Microsoft Clarity</category>
-      <category>user behaviour analytics</category>
-      <category>mouse movements</category>
-      <category>clicks</category>
-      <category>scrolls</category>
-      <category>rights</category>
-      <category>contact</category>
     </item>
   </channel>
 </rss>
