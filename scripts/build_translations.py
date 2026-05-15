@@ -535,8 +535,10 @@ def _french_body(
         lead = _build_fr_lead(description, fr_takeaways)
     else:
         lead = lead_aside or _french_lead_fallback(description)
+    _strings = _lang_registry.load_strings(LANG_CODE)
+    review_label = _strings.get("article.lastReviewedLabel", "Last reviewed ")
     review = (
-        f'<p class="post-reviewed">Dernière révision '
+        f'<p class="post-reviewed">{review_label}'
         f'<time datetime="{today}">{today}</time>.</p>'
     )
     return lead + body_html + _french_author_card() + review + related_aside
