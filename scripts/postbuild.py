@@ -2189,11 +2189,13 @@ def _render_gh_badges(info: dict, fr: bool) -> str:
     if license_id and license_id not in ("NOASSERTION", "", "OTHER"):
         parts.append(
             f'<span class="gh-stat gh-license">'
+            f'<span class="gh-ico" aria-hidden="true">⚖</span>'
             f'<span class="gh-txt">{license_id}</span></span>'
         )
     if pushed_rel:
         parts.append(
             f'<span class="gh-stat gh-pushed" title="{pushed[:10]}">'
+            f'<span class="gh-ico" aria-hidden="true">⏱</span>'
             f'<span class="gh-txt">{label_last} {pushed_rel}</span></span>'
         )
     if not parts:
