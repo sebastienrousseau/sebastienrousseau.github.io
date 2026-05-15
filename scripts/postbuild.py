@@ -17,6 +17,8 @@ import base64
 import hashlib
 import re
 import sys
+from datetime import UTC
+from datetime import datetime as _gh_dt
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -954,6 +956,87 @@ def build_llms_full_txt(public: Path) -> str:
 
     lines.append("")
     return "\n".join(lines)
+
+
+def write_json_feed(public: Path) -> bool:
+    """Emit JSON Feed 1.1 at public/feed.json from EN dated posts.
+
+    Mirrors the data in rss.xml / atom.xml but in the modern JSON
+    Feed format (https://www.jsonfeed.org/version/1.1/). Most modern
+    feed-reader clients prefer this — same item set, smaller payload,
+    easier to parse than XML."""
+    items: list[dict] = []
+    posts_dir = Path("_posts")
+    base = "https://sebastienrousseau.com"
+    for md in sorted(posts_dir.glob("2*-*-*.md")):
+        fm = _parse_frontmatter(md)
+        if not fm.get("title"):
+            continue
+        date_str = fm.get("date", "")
+        try:
+            parsed = _gh_dt.strptime(date_str, "%b %d, %Y").replace(tzinfo=UTC)
+        except ValueError:
+            continue
+        item: dict = {
+            "id": f"{base}/{md.stem}/",
+            "url": f"{base}/{md.stem}/",
+            "title": fm.get("title", ""),
+            "summary": fm.get("description", ""),
+            "date_published": parsed.isoformat(),
+            "language": "en-GB",
+            "author": {"name": "Sebastien Rousseau"},
+        }
+        banner = fm.get("banner", "")
+        if banner:
+            item["image"] = banner
+        keywords = fm.get("keywords", "")
+        if keywords:
+            item["tags"] = [t.strip() for t in keywords.split(",") if t.strip()]
+        items.append(item)
+    # Newest first
+    items.sort(key=lambda i: i["date_published"], reverse=True)
+    feed = {
+        "version": "https://jsonfeed.org/version/1.1",
+        "title": "Sebastien Rousseau — Articles",
+        "home_page_url": f"{base}/",
+        "feed_url": f"{base}/feed.json",
+        "language": "en-GB",
+        "icon": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+        "favicon": "https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico",
+        "authors": [{"name": "Sebastien Rousseau", "url": f"{base}/about/"}],
+        "items": items,
+    }
+    target = public / "feed.json"
+    target.write_text(
+        _json.dumps(feed, separators=(",", ":"), ensure_ascii=False),
+        encoding="utf-8",
+    )
+    return True
+
+
+def _parse_frontmatter(md: Path) -> dict[str, str]:
+    """Minimal YAML-style frontmatter parser. Same shape as the FR
+    feeds helper."""
+    import re as _r
+    out: dict[str, str] = {}
+    text = md.read_text(encoding="utf-8")
+    lines = text.splitlines()
+    inside = False
+    sep = 0
+    for line in lines:
+        s = line.strip()
+        if s == "---":
+            sep += 1
+            inside = sep == 1
+            if sep == 2:
+                break
+            continue
+        if not inside:
+            continue
+        m = _r.match(r'^([a-z_-]+):\s*"((?:[^"\\]|\\.)*)"\s*$', s)
+        if m:
+            out[m.group(1)] = m.group(2)
+    return out
 
 
 def write_llms_full_txt(public: Path) -> bool:
@@ -1963,8 +2046,6 @@ def inject_speculation_rules(html: str) -> str:
 # ---------------------------------------------------------------------------
 
 import json as _gh_json
-from datetime import UTC
-from datetime import datetime as _gh_dt
 
 _GH_STATS_PATH = Path("_data/gh-stats.json")
 _GH_CARD_RE = re.compile(
@@ -2391,6 +2472,9 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
     robots_written = write_robots(PUBLIC)
     llms_written = write_llms_txt(PUBLIC)
     llms_full_written = write_llms_full_txt(PUBLIC)
+
+    # JSON Feed 1.1 (modern feed-reader format alongside RSS/Atom).
+    write_json_feed(PUBLIC)
 
     # Repair Shokunin's RSS / Atom / news-sitemap URLs (.meta/ + localhost).
     # Must run BEFORE the ampersand-escape pass so the URL rewrite operates

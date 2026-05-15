@@ -21,6 +21,7 @@ hash treatment if needed, and so robots.txt picks them up).
 """
 from __future__ import annotations
 
+import json
 import re
 import sys
 from datetime import UTC, datetime
@@ -232,6 +233,43 @@ def render_news_sitemap(entries: list[dict[str, object]]) -> str:
     return "\n".join(parts)
 
 
+def render_json_feed(entries: list[dict[str, object]]) -> str:
+    """JSON Feed 1.1 (https://www.jsonfeed.org/version/1.1/). Modern
+    feed-reader clients prefer this over RSS/Atom — same item set,
+    smaller payload, easier to parse."""
+    items = []
+    for e in entries:
+        d = e["date"]
+        item: dict[str, object] = {
+            "id": e["url"],
+            "url": e["url"],
+            "title": e["title"],
+            "summary": e["description"],
+            "date_published": iso8601(d) if isinstance(d, datetime) else "",
+            "language": "fr-FR",
+            "author": {"name": "Sebastien Rousseau"},
+        }
+        banner = e.get("banner")
+        if banner:
+            item["image"] = banner
+        tags_raw = e.get("keywords")
+        if isinstance(tags_raw, str) and tags_raw.strip():
+            item["tags"] = [t.strip() for t in tags_raw.split(",") if t.strip()]
+        items.append(item)
+    feed: dict[str, object] = {
+        "version": "https://jsonfeed.org/version/1.1",
+        "title": "Sebastien Rousseau — Articles (français)",
+        "home_page_url": f"{BASE}/fr/",
+        "feed_url": f"{BASE}/fr/feed.json",
+        "language": "fr-FR",
+        "icon": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
+        "favicon": "https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico",
+        "authors": [{"name": "Sebastien Rousseau", "url": f"{BASE}/fr/a-propos/"}],
+        "items": items,
+    }
+    return json.dumps(feed, separators=(",", ":"), ensure_ascii=False)
+
+
 def main() -> None:
     entries = collect_entries()
     if not entries:
@@ -241,7 +279,11 @@ def main() -> None:
     (OUT / "rss.xml").write_text(render_rss(entries), encoding="utf-8")
     (OUT / "atom.xml").write_text(render_atom(entries), encoding="utf-8")
     (OUT / "news-sitemap.xml").write_text(render_news_sitemap(entries), encoding="utf-8")
-    print(f"build_fr_feeds: wrote {len(entries)} entry feeds (rss.xml + atom.xml + news-sitemap.xml)")
+    (OUT / "feed.json").write_text(render_json_feed(entries), encoding="utf-8")
+    print(
+        f"build_fr_feeds: wrote {len(entries)} entry feeds "
+        f"(rss.xml + atom.xml + news-sitemap.xml + feed.json)"
+    )
 
 
 if __name__ == "__main__":
