@@ -186,6 +186,76 @@ def load_strings(code: str) -> dict[str, str]:
     return {k: v for k, v in data.items() if not k.startswith("_")}
 
 
+def load_home_patches(code: str) -> list[tuple[str, str]]:
+    """Load home-page chrome patches for ``code``.
+
+    Each entry is a (regex_pattern, replacement) pair applied to the EN
+    homepage shell to translate it into ``code``. The regex matches EN
+    content; the replacement is in the target language. Used by
+    ``build_translations.render_home`` for every active non-EN
+    language. CI gate :mod:`scripts.test_i18n_home_patches` enforces
+    entry-count parity with the FR source.
+    """
+    path = I18N_DIR / code / "home_patches.json"
+    if not path.is_file():
+        raise LanguageError(f"missing home-patches glossary: {path}")
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict) or "patches" not in data:
+        raise LanguageError(f"{path}: must be a JSON object with 'patches' key")
+    return [tuple(p) for p in data["patches"]]
+
+
+def load_static_bodies(code: str) -> dict[str, str]:
+    """Load static-page body HTML for ``code``.
+
+    Returns a dict mapping page-slug → inner-HTML body string. Used by
+    ``build_translations.render_static_translation`` to substitute the
+    body of /<code>/<slug>/ pages.
+    """
+    path = I18N_DIR / code / "static_bodies.json"
+    if not path.is_file():
+        raise LanguageError(f"missing static-bodies glossary: {path}")
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict) or "bodies" not in data:
+        raise LanguageError(f"{path}: must be a JSON object with 'bodies' key")
+    return data["bodies"]
+
+
+def load_static_patches(code: str) -> list[tuple[str, str]]:
+    """Load static-page chrome patches for ``code``.
+
+    Each entry is a (regex_pattern, replacement) pair applied to the EN
+    static-page shells (/papers/, /projects/, /topics/, /about/, etc.)
+    when forking them into ``code``.
+    """
+    path = I18N_DIR / code / "static_patches.json"
+    if not path.is_file():
+        raise LanguageError(f"missing static-patches glossary: {path}")
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict) or "patches" not in data:
+        raise LanguageError(f"{path}: must be a JSON object with 'patches' key")
+    return [tuple(p) for p in data["patches"]]
+
+
+def load_chrome_patches_inline(code: str) -> list[tuple[str, str]]:
+    """Load the *inline* chrome patches for ``code``.
+
+    The full CHROME_PATCHES list in ``build_translations.py`` is the
+    auto-generated portion (from strings.json via
+    :func:`build_chrome_patches`) prepended to this inline portion. The
+    auto-generated portion comes from key-value swaps in
+    ``strings.json``; this inline portion is the rest — page-specific
+    regex replacements that don't fit the simple key-value shape.
+    """
+    path = I18N_DIR / code / "chrome_patches.json"
+    if not path.is_file():
+        raise LanguageError(f"missing chrome-patches glossary: {path}")
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict) or "patches" not in data:
+        raise LanguageError(f"{path}: must be a JSON object with 'patches' key")
+    return [tuple(p) for p in data["patches"]]
+
+
 def load_takeaway_labels(code: str) -> dict[str, str]:
     """Load takeaway-aside labels for ``code``.
 
