@@ -1272,6 +1272,7 @@ def _splice_fr_urls(xml: str, lastmod_index: dict[str, str]) -> str:
         "about", "articles", "papers", "projects", "topics", "tags",
         "playlists", "contact", "accessibility", "privacy", "terms",
         "made-with-shokunin", "made-with-static-site-generator",
+        "resources-pacs008-checklist",
     ):
         _add(f"{base}/{slug}/", "0.6", "monthly")
 
