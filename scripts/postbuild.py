@@ -1859,15 +1859,23 @@ def inject_prev_next_nav(
     nav_index: dict[str, tuple[tuple[str, str] | None, tuple[str, str] | None]],
     is_fr: bool = False,
     fr_titles: dict[str, str] | None = None,
+    *,
+    page_lang: str = "en",
 ) -> str:
-    """Inject a <nav class="post-pagination"> with prev/next links just
-    before the closing ``</div></main>`` of any dated BlogPosting page.
-    Localized via _labels(html); French pages get French labels and links
-    pointing to the matching FR slug under ``/fr/``."""
+    """Inject a ``<nav class="post-pagination">`` with prev/next links
+    just before the closing ``</div></main>`` of any dated BlogPosting
+    page. Localised via ``_labels(html)``; non-EN pages get translated
+    labels and links pointing to the matching translation under
+    ``/<lang>/<lang-slug>/``.
+    """
     if '"@type":"BlogPosting"' not in html:
         return html
-    # For FR pages the page's slug is the FR slug — look up by EN counterpart.
-    lookup_slug = _en_slug(slug) if is_fr else slug
+    # Resolve the EN slug regardless of which lang we're patching.
+    if page_lang != "en":
+        maps = _slug_maps(page_lang)
+        lookup_slug = maps["articles_lang_to_en"].get(slug, slug)
+    else:
+        lookup_slug = slug
     if lookup_slug not in nav_index:
         return html
     if 'class="post-pagination"' in html:
@@ -1882,11 +1890,14 @@ def inject_prev_next_nav(
         if not entry:
             return '<span class="post-pagination-stub" aria-hidden="true"></span>'
         s, t = entry
-        # On FR pages, point at the FR sibling under /fr/<fr-slug>/.
-        # Look up the FR title from fr_titles so prev/next advertises in French.
-        if is_fr and s in EN_TO_FR:
-            href = f"/fr/{EN_TO_FR[s]}/"
-            t = fr_titles.get(s, t)
+        if page_lang != "en":
+            articles_map = _slug_maps(page_lang)["articles_en_to_lang"]
+            if s in articles_map:
+                href = f"/{page_lang}/{articles_map[s]}/"
+                if page_lang == "fr":
+                    t = fr_titles.get(s, t)
+            else:
+                href = f"/{s}/"
         else:
             href = f"/{s}/"
         return (
@@ -2522,10 +2533,13 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
         # Prev/next nav must run AFTER inject_sources_list because the
         # sources injector anchors against either the nav or the </main>;
         # placing nav first would push sources above the nav cleanly.
-        page_is_fr = page.parent.parent.name == "fr"
+        # Determine the page's lang from its parent directory chain.
+        parent_dir_name = page.parent.parent.name
+        page_lang_for_nav = parent_dir_name if parent_dir_name in _all_active_non_en_langs() else "en"
+        page_is_fr = page_lang_for_nav == "fr"
         patched_nav = inject_prev_next_nav(
             patched_src, page.parent.name, nav_index, is_fr=page_is_fr,
-            fr_titles=fr_titles,
+            fr_titles=fr_titles, page_lang=page_lang_for_nav,
         )
         if patched_nav != patched_src:
             nav_patched += 1
