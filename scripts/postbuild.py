@@ -1460,9 +1460,13 @@ def _render_meta_bar(date_pub: str, date_mod: str, word_count: int | None, label
     parts: list[str] = []
     french = labels is LABELS_FR
     author_url = "/fr/a-propos/index.html" if lang == "fr" else AUTHOR_URL
+    alt_text = (
+        f"Portrait de {AUTHOR_NAME}" if lang == "fr"
+        else f"Portrait of {AUTHOR_NAME}"
+    )
     parts.append(
         f'<a href="{author_url}" class="article-author" rel="author">'
-        f'<img alt="Portrait of {AUTHOR_NAME}" src="{AUTHOR_AVATAR}" '
+        f'<img alt="{alt_text}" src="{AUTHOR_AVATAR}" '
         f'width="36" height="36" loading="lazy" decoding="async" />'
         f'<span>{AUTHOR_NAME}</span></a>'
     )

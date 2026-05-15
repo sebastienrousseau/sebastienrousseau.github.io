@@ -149,7 +149,7 @@ CHROME_PATCHES: list[tuple[str, str]] = [
     # Top nav — toggle, theme, search, CTA, brand
     (r'aria-label="Toggle navigation"', 'aria-label="Basculer la navigation"'),
     (r'title="Toggle navigation"', 'title="Basculer la navigation"'),
-    (r'aria-label="Primary"', 'aria-label="Navigation principale"'),
+    (r'aria-label="?Primary"?(?=[\s>])', 'aria-label="Navigation principale"'),
     (r'aria-label="Switch to dark theme"', 'aria-label="Activer le thème sombre"'),
     (r'aria-label="Switch to light theme"', 'aria-label="Activer le thème clair"'),
     (r'title="Switch theme"', 'title="Changer de thème"'),
@@ -157,6 +157,9 @@ CHROME_PATCHES: list[tuple[str, str]] = [
     (r'title="Search \(⌘K\)"', 'title="Rechercher (⌘K)"'),
     (r'aria-label="Get in touch"', 'aria-label="Me contacter"'),
     (r'>Get in touch ›</a>', '>Me contacter ›</a>'),
+    # Plain "Get in touch" CTA body (no arrow) — fires regardless of
+    # href, so it picks up the home's already-FR-href variant too.
+    (r'>Get in touch</a>', '>Me contacter</a>'),
     (r'aria-label="Sebastien Rousseau home"', 'aria-label="Accueil de Sebastien Rousseau"'),
 
     # Nav menu items — keep visitors inside /fr/ by pointing every
@@ -208,9 +211,14 @@ CHROME_PATCHES: list[tuple[str, str]] = [
     (r'<a href="?/articles/index\.html"?>Articles</a>',
      '<a href="/fr/articles/index.html">Articles</a>'),
 
-    # Social section
+    # Social section. `alt=` patched alongside `aria-label=` because
+    # the footer social-icon <img>s carry both — leakage gate caught the
+    # alt-only variant before this fix.
     (r'aria-label="Social links"', 'aria-label="Liens sociaux"'),
     (r'aria-label="Sebastien Rousseau on ', 'aria-label="Sebastien Rousseau sur '),
+    (r'alt="Sebastien Rousseau on ', 'alt="Sebastien Rousseau sur '),
+    (r'alt="Black and White Portrait of Sebastien Rousseau"',
+     'alt="Portrait noir et blanc de Sebastien Rousseau"'),
 
     # Footer copyright — full French translation
     (r'© Copyright 2007 - 2026 - Sebastien Rousseau\. All rights reserved\.',
@@ -234,7 +242,7 @@ CHROME_PATCHES: list[tuple[str, str]] = [
     (r'<span>Search</span>', '<span>Rechercher</span>'),
 
     # Language selector
-    (r'aria-label="Language"', 'aria-label="Langue"'),
+    (r'aria-label="?Language"?(?=[\s>])', 'aria-label="Langue"'),
     (r'aria-label="EN, Change language"', 'aria-label="FR, Changer de langue"'),
     (r'title="Change language"', 'title="Changer de langue"'),
     (r'title="Coming soon"', 'title="Prochainement"'),
