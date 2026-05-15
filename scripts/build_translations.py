@@ -1903,6 +1903,17 @@ def _bind_lang(code: str) -> None:
     ]
     _CHROME_PATCHES_COMPILED = [(re.compile(p), r) for p, r in CHROME_PATCHES]
     _HOME_FR_COMPILED = [(re.compile(p), r) for p, r in HOME_FR_PATCHES]
+    # Clear every per-language lazy cache so the second pass doesn't
+    # inherit the first language's title / description / regex tables.
+    global _FR_TITLE_MAP, _FR_DESCRIPTION_MAP
+    global _EN_DESC_TO_FR_RE_CACHE, _EN_DESC_TO_FR_MAP_CACHE
+    global _EN_TITLES_TO_FR_RE_CACHE, _EN_TITLE_TO_FR_MAP_CACHE
+    _FR_TITLE_MAP.clear()
+    _FR_DESCRIPTION_MAP.clear()
+    _EN_DESC_TO_FR_RE_CACHE = None
+    _EN_DESC_TO_FR_MAP_CACHE = None
+    _EN_TITLES_TO_FR_RE_CACHE = None
+    _EN_TITLE_TO_FR_MAP_CACHE = None
 
 
 def _render_one_lang(code: str) -> int:
