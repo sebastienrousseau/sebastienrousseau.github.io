@@ -34,6 +34,7 @@ from pathlib import Path
 from markdown_it import MarkdownIt
 
 sys.path.insert(0, str(Path(__file__).parent))
+import _lang_registry  # script-mode sibling import
 from _fr_slugs import EN_TO_FR, FR_TO_EN, fr_slug
 
 PUBLIC = Path("public")
@@ -344,24 +345,7 @@ def localize_en_dates(html: str) -> str:
 # Visible URLs are localised (e.g. /fr/privacy/ → /fr/confidentialite/).
 # Slugs without a translation (contact, playlists, 404, articles) keep
 # their English form because the word is identical or universal.
-STATIC_SLUG_FR: dict[str, str] = {
-    "about": "a-propos",
-    "papers": "publications",
-    "projects": "projets",
-    "topics": "sujets",
-    "tags": "etiquettes",
-    "contact": "contact",
-    "accessibility": "accessibilite",
-    "privacy": "confidentialite",
-    "terms": "conditions",
-    "playlists": "playlists",
-    "made-with-static-site-generator": "concu-avec-static-site-generator",
-    "made-with-shokunin": "concu-avec-shokunin",
-    "404": "404",
-    "offline": "hors-ligne",
-    "thanks": "merci",
-    "articles": "articles",
-}
+STATIC_SLUG_FR: dict[str, str] = _lang_registry.load_slugs("fr")["static"]
 STATIC_SLUG_EN: dict[str, str] = {v: k for k, v in STATIC_SLUG_FR.items()}
 
 # Static pages we mirror under /fr/. Keys are the EN slugs.
@@ -1677,98 +1661,7 @@ def render_home() -> str | None:  # noqa: C901 — orchestrates the FR home fork
 # every nav / footer / aria-label translation. For pages with prose
 # content (about, contact, privacy, terms, …) we additionally swap
 # specific English strings via STATIC_BODY_PATCHES below.
-STATIC_PAGES_FR: dict[str, dict[str, str]] = {
-    "about": {
-        "title": "À propos — Sebastien Rousseau",
-        "subtitle": "Façonner l'avenir de la banque et des services financiers par l'intégration stratégique de l'intelligence artificielle, de la cryptographie post-quantique et de la technologie blockchain.",
-        "description": "Sebastien Rousseau, technologue senior dans la banque : IA appliquée, migration ISO 20022, cryptographie post-quantique, transformation structurelle des paiements wholesale.",
-        "keywords": "Sebastien Rousseau, biographie, banque, paiements, IA, ISO 20022, cryptographie post-quantique, HSBC, PayPal, Barclays",
-    },
-    "papers": {
-        "title": "Publications — Sebastien Rousseau",
-        "subtitle": "Livres blancs industriels et recherche appliquée pour les dirigeants seniors en paiements et sécurité.",
-        "description": "Articles, rapports et publications de Sebastien Rousseau sur l'IA, les paiements ISO 20022 et la cryptographie post-quantique.",
-        "keywords": "publications, articles, rapports, recherche, ISO 20022, IA, cryptographie post-quantique",
-    },
-    "projects": {
-        "title": "Projets — Sebastien Rousseau",
-        "subtitle": "Projets open source en Python, Rust et JavaScript pour l'avenir de la finance.",
-        "description": "Portfolio de bibliothèques open source maintenues par Sebastien Rousseau pour les paiements, le règlement transfrontalier et la cryptographie résistante au quantique.",
-        "keywords": "projets open source, Python, Rust, paiements, ISO 20022, cryptographie post-quantique",
-    },
-    "topics": {
-        "title": "Sujets — Sebastien Rousseau",
-        "subtitle": "Articles sur l'IA, la cryptographie post-quantique, ISO 20022 et l'avenir des paiements.",
-        "description": "Explorez les analyses par thématique : IA appliquée, paiements ISO 20022, cryptographie post-quantique, et transformation des paiements wholesale.",
-        "keywords": "sujets, thématiques, IA, paiements, ISO 20022, cryptographie post-quantique",
-    },
-    "tags": {
-        "title": "Étiquettes — Sebastien Rousseau",
-        "subtitle": "Parcourez le site par thème : IA, paiements, cryptographie post-quantique, open source.",
-        "description": "Parcourez les articles par étiquette : IA, ISO 20022, blockchain, cryptographie post-quantique et bien plus.",
-        "keywords": "étiquettes, tags, navigation par sujet",
-    },
-    "contact": {
-        "title": "Me contacter — Sebastien Rousseau",
-        "subtitle": "Une question ou un besoin de conseil ? Écrivez-moi.",
-        "description": "Entrez en contact avec Sebastien Rousseau pour les conseils en transformation des paiements, la migration ISO 20022 ou la stratégie post-quantique.",
-        "keywords": "contact, conseil, paiements, ISO 20022, cryptographie post-quantique",
-    },
-    "accessibility": {
-        "title": "Accessibilité — Sebastien Rousseau",
-        "subtitle": "Engagé pour l'accessibilité numérique des personnes en situation de handicap.",
-        "description": "Déclaration d'accessibilité : conformité WCAG 2.2 AA, principes inclusifs, retour d'expérience et coordonnées de signalement.",
-        "keywords": "accessibilité, WCAG, conformité, inclusion numérique, audit",
-    },
-    "privacy": {
-        "title": "Politique de confidentialité — Sebastien Rousseau",
-        "subtitle": "Votre vie privée nous importe.",
-        "description": "Comment ce site collecte, utilise et protège vos données. Mesure d'audience anonyme, cookies, hébergement et droits RGPD.",
-        "keywords": "vie privée, RGPD, cookies, données personnelles, analytics",
-    },
-    "terms": {
-        "title": "Conditions d'utilisation — Sebastien Rousseau",
-        "subtitle": "Conditions générales d'utilisation du site.",
-        "description": "Conditions générales d'utilisation du site sebastienrousseau.com : licence du contenu, restrictions, marques et juridiction.",
-        "keywords": "conditions, mentions légales, licence, copyright",
-    },
-    "made-with-static-site-generator": {
-        "title": "Conçu avec Static Site Generator — Sebastien Rousseau",
-        "subtitle": "Découvrez comment utiliser le générateur de sites statiques de nouvelle génération.",
-        "description": "Ce site est généré avec Shokunin, un générateur de sites statiques rapide écrit en Rust.",
-        "keywords": "Shokunin, générateur de sites statiques, Rust, performance",
-    },
-    "made-with-shokunin": {
-        "title": "Conçu avec Shokunin — Sebastien Rousseau",
-        "subtitle": "Découvrez comment utiliser le générateur de sites statiques de nouvelle génération.",
-        "description": "Ce site est conçu avec Shokunin, un générateur de sites statiques en Rust optimisé pour la performance et le SEO.",
-        "keywords": "Shokunin, SSG, Rust, performance, SEO",
-    },
-    "playlists": {
-        "title": "Playlists — Sebastien Rousseau",
-        "subtitle": "Playlists Spotify sélectionnées pour le deep work, la créativité et l'esprit d'ingénieur.",
-        "description": "Sélection musicale et auditive de Sebastien Rousseau.",
-        "keywords": "playlists, musique",
-    },
-    "404": {
-        "title": "Page introuvable — Sebastien Rousseau",
-        "subtitle": "Désolé, cette page est introuvable.",
-        "description": "La page demandée est introuvable. Retournez à l'accueil ou utilisez la recherche.",
-        "keywords": "404, page introuvable",
-    },
-    "offline": {
-        "title": "Hors ligne — Sebastien Rousseau",
-        "subtitle": "Vérifiez votre connexion et réessayez.",
-        "description": "Vous êtes hors ligne. Reconnectez-vous pour accéder au contenu.",
-        "keywords": "hors ligne, PWA",
-    },
-    "thanks": {
-        "title": "Merci — Sebastien Rousseau",
-        "subtitle": "Merci de m'avoir contacté !",
-        "description": "Merci de votre message. Je reviendrai vers vous très bientôt.",
-        "keywords": "merci",
-    },
-}
+STATIC_PAGES_FR: dict[str, dict[str, str]] = _lang_registry.load_static_pages("fr")
 
 # Body-string patches applied to every FR static page. These are
 # additional English phrases that appear in rendered page bodies and
@@ -2730,28 +2623,7 @@ def write_static_translations() -> int:
 
 
 # Per-topic French title + lede. Mirrors scripts/build_topics.py:TOPICS.
-TOPIC_FR_LABELS: dict[str, dict[str, str]] = {
-    "post-quantum-cryptography": {
-        "title": "Cryptographie post-quantique",
-        "lede": "Cryptographie sur réseaux euclidiens, normes NIST PQC, paiements résistants au quantique et menace « récolter maintenant, déchiffrer plus tard ». Notes de recherche, bibliothèques open source et playbooks de migration pour les équipes sécurité des services financiers.",
-    },
-    "iso-20022-payments": {
-        "title": "ISO 20022 & Paiements",
-        "lede": "Migration des messages transfrontaliers, conformité d'adresse structurée, SEPA Instant, SWIFT gpi et les rails de paiement wholesale qui portent l'ensemble. Outils, playbooks et calendrier réglementaire.",
-    },
-    "applied-ai-banking": {
-        "title": "IA appliquée à la banque",
-        "lede": "IA générative, LLM multimodaux, voix et modèles de parole — et comment ils redessinent les opérations bancaires, le service client et l'ingénierie produit dans les institutions de premier rang.",
-    },
-    "rust-open-source": {
-        "title": "Rust & Open Source",
-        "lede": "Bibliothèques Rust open source que j'écris et maintiens : journalisation, génération de code, date-heure, primitives cryptographiques, KEM basé sur Kyber, et un générateur de sites statiques Rust.",
-    },
-    "blockchain-digital-assets": {
-        "title": "Blockchain & Actifs numériques",
-        "lede": "Blockchain et actifs numériques : tokenisation, ERC-20, stablecoins, infrastructure cryptomonnaies, et le cadre réglementaire qui les façonne.",
-    },
-}
+TOPIC_FR_LABELS: dict[str, dict[str, str]] = _lang_registry.load_topics("fr")
 
 
 def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:  # noqa: C901 — topic-page chrome patches
