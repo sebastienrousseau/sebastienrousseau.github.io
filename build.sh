@@ -39,6 +39,8 @@ python3 scripts/build_translations.py
 python3 scripts/build_fr_feeds.py
 python3 scripts/build_agent_api.py
 python3 scripts/postbuild.py
+# Sigstore signing pass — no-op unless _data/sigstore/config.json exists.
+python3 scripts/sigstore_sign.py
 python3 scripts/test_search_indexes.py
 python3 scripts/test_i18n_parity.py
 python3 scripts/test_i18n_strings.py

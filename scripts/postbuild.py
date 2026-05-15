@@ -1355,6 +1355,7 @@ def _splice_fr_urls(xml: str, lastmod_index: dict[str, str]) -> str:
         "about", "articles", "papers", "projects", "topics", "tags",
         "playlists", "contact", "accessibility", "privacy", "terms",
         "made-with-shokunin", "made-with-static-site-generator",
+        "resources-pacs008-checklist",
     ):
         _add(f"{base}/{slug}/", "0.6", "monthly")
 
@@ -1573,6 +1574,48 @@ def _render_meta_bar(date_pub: str, date_mod: str, word_count: int | None, label
             f'{read_min} {labels["min read"]}</span>'
         )
     return '<div class="article-meta">' + ' <span aria-hidden="true">·</span> '.join(parts) + '</div>'
+
+
+# ---------------------------------------------------------------------------
+# Sigstore attestation footer (gated on _data/sigstore/config.json)
+# ---------------------------------------------------------------------------
+#
+# When ``scripts/sigstore_sign.py`` runs (which only happens if
+# ``_data/sigstore/config.json`` exists), it writes a Sigstore bundle
+# per article under ``public/sigstore/<slug>.bundle``. This injector
+# adds a small footer attestation badge to articles that have a
+# matching bundle. The badge links to the bundle + the public-key
+# verify command so any reader can confirm the page bytes match what
+# the author signed.
+
+_SIGSTORE_CONFIG_PRESENT: bool = (Path("_data/sigstore/config.json").is_file())
+
+
+def inject_sigstore_attestation(html: str, slug: str) -> str:
+    """Insert a 'Signed · cosign' badge near the article footer when a
+    Sigstore bundle exists for this slug. No-op otherwise."""
+    if not _SIGSTORE_CONFIG_PRESENT:
+        return html
+    if '"@type":"BlogPosting"' not in html:
+        return html
+    bundle = PUBLIC / "sigstore" / f"{slug}.bundle"
+    if not bundle.is_file():
+        return html
+    if 'class="article-sigstore"' in html:
+        return html  # idempotent
+    is_fr = _is_french(html)
+    label = (
+        "Signature Sigstore · vérifiable avec cosign"
+        if is_fr else "Sigstore signature · verifiable with cosign"
+    )
+    badge = (
+        f'<aside class="article-sigstore" aria-label="{label}">'
+        f'<a href="/sigstore/{slug}.bundle" rel="external" '
+        f'type="application/vnd.dev.sigstore.bundle+json">'
+        f'🔏 {label}</a></aside>'
+    )
+    # Insert just before the existing article furniture's end-of-main.
+    return re.sub(r'(</main>)', badge + r'\1', html, count=1)
 
 
 def inject_article_furniture(html: str) -> str:
@@ -2362,6 +2405,9 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
         patched_fu = inject_article_furniture(patched_about)
         if patched_fu != patched_about:
             furniture_patched += 1
+        # Sigstore attestation badge — no-op unless _data/sigstore/config.json
+        # exists AND a per-article bundle was written by sigstore_sign.py.
+        patched_fu = inject_sigstore_attestation(patched_fu, page.parent.name)
         patched_an = inject_anchor_links_and_toc(patched_fu)
         if patched_an != patched_fu:
             anchor_patched += 1

@@ -38,6 +38,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/resources-pacs008-checklist</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-15T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 pacs.008 Structured-Address Migration Checklist — Free PDF</news:title>
+    <news:keywords>ISO 20022, pacs.008, structured address, CBPR+, SWIFT, migration checklist, November 2026 deadline, wholesale payments</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html</loc>
   <news:news>
     <news:publication>
