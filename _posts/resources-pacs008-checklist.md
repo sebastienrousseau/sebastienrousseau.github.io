@@ -117,7 +117,10 @@ Use it as a project tracker through cutover.
 
 ## Get the checklist
 
-Drop your work email — I'll send the PDF link straight back. No newsletter signup, no list rental, no follow-up sales sequence. One email, one link, you're done.
+Two ways to grab it:
+
+1. **[Download the PDF directly →](/resources/pacs008-checklist.pdf)** — no email required.
+2. Or drop your work email below and I'll send the link plus follow-up notes when the November 2026 cutover signal lands. No newsletter signup, no list rental, no follow-up sales sequence. One email, one link, you're done.
 
 <form class="ap-form" action="https://formspree.io/f/mjvqpwyo" method="POST" style="max-width:480px;margin:32px 0">
   <input type="hidden" name="_subject" value="Lead magnet request — pacs.008 structured-address checklist" />

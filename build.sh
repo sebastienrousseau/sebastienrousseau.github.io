@@ -36,8 +36,9 @@ done
 
 python3 scripts/build_topics.py
 python3 scripts/build_translations.py
-python3 scripts/build_fr_feeds.py
+python3 scripts/build_lang_feeds.py
 python3 scripts/build_agent_api.py
+python3 scripts/build_lead_magnets.py
 python3 scripts/postbuild.py
 # Sigstore signing pass — no-op unless _data/sigstore/config.json exists.
 python3 scripts/sigstore_sign.py

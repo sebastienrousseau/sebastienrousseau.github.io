@@ -31,6 +31,10 @@
 
   "feeds.atomTitle": "Atom Feed",
   "feeds.rssTitle": "RSS Feed",
+  "feeds.channelTitle": "Sebastien Rousseau — English edition",
+  "feeds.channelDescription": "Articles in English: applied AI, ISO 20022 payments, post-quantum cryptography and wholesale-payments transformation.",
+  "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.",
+  "feeds.jsonFeedTitle": "Sebastien Rousseau — Articles (English)",
 
   "lang.aria.langGroup": "Language",
   "lang.aria.changeLangPrefix": "EN, Change language",

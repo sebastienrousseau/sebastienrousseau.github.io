@@ -31,6 +31,10 @@
 
   "feeds.atomTitle": "Atom-Feed",
   "feeds.rssTitle": "RSS-Feed",
+  "feeds.channelTitle": "Sebastien Rousseau — Deutsche Ausgabe",
+  "feeds.channelDescription": "Artikel auf Deutsch: angewandte KI, ISO-20022-Zahlungen, Post-Quanten-Kryptografie und Transformation des Wholesale-Zahlungsverkehrs.",
+  "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Alle Rechte vorbehalten.",
+  "feeds.jsonFeedTitle": "Sebastien Rousseau — Artikel (Deutsch)",
 
   "lang.aria.langGroup": "Sprache",
   "lang.aria.changeLangPrefix": "DE, Sprache wechseln",
