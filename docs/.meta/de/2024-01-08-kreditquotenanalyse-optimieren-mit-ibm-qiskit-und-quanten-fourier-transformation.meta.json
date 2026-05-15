@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Quantencomputer-Raum",
-  "date": "Jan 08, 2024",
-  "subtitle": "Optimierung der Kreditquotenanalyse mit IBM Qiskit und der Quanten-Fourier-Transformation",
-  "title": "Qiskit und Quanten-Fourier-Transformation für die Kreditquotenanalyse",
   "description": "Wie IBM Qiskit und die Quanten-Fourier-Transformation die Kreditquotenanalyse im Finanzwesen revolutionieren und beispiellose Präzision und Geschwindigkeit bieten.",
-  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
-  "keywords": "Quantencomputing, Finanzen, Kreditquotenanalyse, Qiskit, Quanten-Fourier-Transformation, IBM, maschinelles Lernen, Künstliche Intelligenz, Bewertung finanzieller Risiken, Bonität",
+  "language": "de",
+  "subtitle": "Optimierung der Kreditquotenanalyse mit IBM Qiskit und der Quanten-Fourier-Transformation",
+  "banner_alt": "Quantencomputer-Raum",
   "locale": "de_DE",
-  "language": "de"
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
+  "title": "Qiskit und Quanten-Fourier-Transformation für die Kreditquotenanalyse",
+  "date": "Jan 08, 2024",
+  "keywords": "Quantencomputing, Finanzen, Kreditquotenanalyse, Qiskit, Quanten-Fourier-Transformation, IBM, maschinelles Lernen, Künstliche Intelligenz, Bewertung finanzieller Risiken, Bonität"
 }

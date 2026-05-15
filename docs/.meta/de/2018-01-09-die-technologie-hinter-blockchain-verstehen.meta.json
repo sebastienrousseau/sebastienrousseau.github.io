@@ -1,11 +1,11 @@
 {
-  "subtitle": "Eine Kryptowährung auf Ethereum aufbauen — Schritt für Schritt",
-  "banner_alt": "Ausgeschalteter Laptop auf einem braunen Holztisch",
+  "language": "de",
   "date": "January 9, 2018",
   "keywords": "Blockchain, Ethereum, Smart Contract, Kryptowährung, Solidity, Geth, dApps, ERC-20, Tokenisierung, Testnet",
+  "banner_alt": "Ausgeschalteter Laptop auf einem braunen Holztisch",
   "locale": "de_DE",
-  "title": "Die Technologie hinter Blockchain verstehen",
-  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
+  "subtitle": "Eine Kryptowährung auf Ethereum aufbauen — Schritt für Schritt",
   "description": "Eine Kryptowährung auf der Ethereum-Blockchain entwickeln: ein umfassender Leitfaden zur Blockchain-Entwicklung, Tokenisierung und Implementierung einer Kryptowährung.",
-  "language": "de"
+  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
+  "title": "Die Technologie hinter Blockchain verstehen"
 }
