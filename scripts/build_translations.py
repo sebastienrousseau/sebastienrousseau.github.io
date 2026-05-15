@@ -173,17 +173,31 @@ def translate_chrome(html: str) -> str:
     return html
 
 
-# English short and long month names → French short forms.
-_EN_MONTH_TO_FR = {
-    "January": "janvier", "February": "février", "March": "mars",
-    "April": "avril", "May": "mai", "June": "juin",
-    "July": "juillet", "August": "août", "September": "septembre",
-    "October": "octobre", "November": "novembre", "December": "décembre",
-    "Jan": "janv.", "Feb": "févr.", "Mar": "mars",
-    "Apr": "avr.", "Jun": "juin", "Jul": "juill.",
-    "Aug": "août", "Sep": "sept.", "Sept": "sept.",
-    "Oct": "oct.", "Nov": "nov.", "Dec": "déc.",
+# English month names → per-language equivalents. Rebound by
+# _bind_lang() so date-localisation uses the current language's names.
+_LANG_MONTHS: dict[str, dict[str, str]] = {
+    "fr": {
+        "January": "janvier", "February": "février", "March": "mars",
+        "April": "avril", "May": "mai", "June": "juin",
+        "July": "juillet", "August": "août", "September": "septembre",
+        "October": "octobre", "November": "novembre", "December": "décembre",
+        "Jan": "janv.", "Feb": "févr.", "Mar": "mars",
+        "Apr": "avr.", "Jun": "juin", "Jul": "juill.",
+        "Aug": "août", "Sep": "sept.", "Sept": "sept.",
+        "Oct": "oct.", "Nov": "nov.", "Dec": "déc.",
+    },
+    "de": {
+        "January": "Januar", "February": "Februar", "March": "März",
+        "April": "April", "May": "Mai", "June": "Juni",
+        "July": "Juli", "August": "August", "September": "September",
+        "October": "Oktober", "November": "November", "December": "Dezember",
+        "Jan": "Jan.", "Feb": "Feb.", "Mar": "März",
+        "Apr": "Apr.", "Jun": "Juni", "Jul": "Juli",
+        "Aug": "Aug.", "Sep": "Sept.", "Sept": "Sept.",
+        "Oct": "Okt.", "Nov": "Nov.", "Dec": "Dez.",
+    },
 }
+_EN_MONTH_TO_FR: dict[str, str] = dict(_LANG_MONTHS["fr"])  # rebound per-lang
 
 _DATE_FULL_RE = re.compile(
     r'\b(' + "|".join(
@@ -1218,9 +1232,28 @@ def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
     featured = entries[0]
     archive = entries[1:]
     feat_url = f"/{LANG_CODE}/{featured['slug']}/index.html"
+    _hub_strings: dict[str, dict[str, str]] = {
+        "fr": {
+            "featuredKicker": "À LA UNE",
+            "featuredHeading": "Article récent",
+            "archiveKicker": "ARCHIVES",
+            "archiveHeading": "Tous les articles",
+            "readFull": "Lire l'article complet",
+            "desc": "Sélection d'articles traduits manuellement en français.",
+        },
+        "de": {
+            "featuredKicker": "AKTUELL",
+            "featuredHeading": "Neuester Artikel",
+            "archiveKicker": "ARCHIV",
+            "archiveHeading": "Alle Artikel",
+            "readFull": "Vollständigen Artikel lesen",
+            "desc": "Eine Auswahl manuell ins Deutsche übersetzter Artikel.",
+        },
+    }
+    _h = _hub_strings.get(LANG_CODE, _hub_strings["fr"])
     feat_block = (
-        '<header class="newsroom-section-head"><p class="newsroom-kicker">À LA UNE</p>'
-        '<h2>Article récent</h2></header>'
+        f'<header class="newsroom-section-head"><p class="newsroom-kicker">{_h["featuredKicker"]}</p>'
+        f'<h2>{_h["featuredHeading"]}</h2></header>'
         '<article class="newsroom-featured">'
         f'<a class="newsroom-featured-media" href="{feat_url}" title="{_html.escape(featured["title"], quote=True)}">'
         f'<img alt="{_html.escape(featured["banner_alt"], quote=True)}" '
@@ -1230,7 +1263,7 @@ def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
         '<div class="newsroom-featured-body">'
         f'<h3><a href="{feat_url}" title="{_html.escape(featured["title"], quote=True)}">{_html.escape(featured["title"])}</a></h3>'
         f'<p>{_html.escape(featured["description"])}</p>'
-        f'<p><a class="pill ghost" href="{feat_url}" title="{_html.escape(featured["title"], quote=True)}">Lire l\'article complet</a></p>'
+        f'<p><a class="pill ghost" href="{feat_url}" title="{_html.escape(featured["title"], quote=True)}">{_h["readFull"]}</a></p>'
         '</div>'
         '</article>'
     )
@@ -1252,8 +1285,8 @@ def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
         )
 
     archive_block = (
-        '<header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVES</p>'
-        '<h2>Tous les articles</h2></header>'
+        f'<header class="newsroom-section-head"><p class="newsroom-kicker">{_h["archiveKicker"]}</p>'
+        f'<h2>{_h["archiveHeading"]}</h2></header>'
         '<div class="newsroom-grid">' + "".join(cards) + '</div>'
     ) if cards else ""
 
@@ -1265,15 +1298,21 @@ def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
     )
     shell = _NEWSROOM_RE.sub(body, shell, count=1)
     shell = _HTML_LANG_RE.sub(rf'\g<1>"{LANG_BCP47}"', shell, count=1)
-    title = "Articles en français — Sebastien Rousseau"
-    desc = "Sélection d'articles traduits manuellement en français."
+    _articles_hub_titles = {
+        "fr": "Articles en français — Sebastien Rousseau",
+        "de": "Artikel auf Deutsch — Sebastien Rousseau",
+    }
+    title = _articles_hub_titles.get(LANG_CODE, _articles_hub_titles["fr"])
+    desc = _h["desc"]
     shell = _TITLE_RE.sub(f'<title>{_html.escape(title)}</title>', shell, count=1)
     shell = _DESC_META_RE.sub(rf'\g<1>{_html.escape(desc, quote=True)}\g<2>', shell, count=1)
     shell = _OG_TITLE_RE.sub(rf'\g<1>{_html.escape(title, quote=True)}\g<2>', shell, count=1)
     shell = _OG_DESC_RE.sub(rf'\g<1>{_html.escape(desc, quote=True)}\g<2>', shell, count=1)
-    shell = _OG_URL_RE.sub(r'\1https://sebastienrousseau.com/fr/articles/\2', shell, count=1)
+    _articles_slug_lang = STATIC_SLUG_FR.get("articles", "articles")
+    _hub_url = f"https://sebastienrousseau.com/{LANG_CODE}/{_articles_slug_lang}/"
+    shell = _OG_URL_RE.sub(rf'\g<1>{_hub_url}\g<2>', shell, count=1)
     shell = _OG_LOCALE_RE.sub(rf'\g<1>{LANG_LOCALE}\g<2>', shell, count=1)
-    shell = _CANONICAL_RE.sub(r'\1https://sebastienrousseau.com/fr/articles/\2', shell, count=1)
+    shell = _CANONICAL_RE.sub(rf'\g<1>{_hub_url}\g<2>', shell, count=1)
     shell = translate_chrome(shell)
     # Reciprocal hreflang for the language selector.
     shell = re.sub(
@@ -1283,7 +1322,7 @@ def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
     )
     hreflang_block = (
         f'<link rel="alternate" hreflang="en" href="{BASE}/articles/" />'
-        f'<link rel="alternate" hreflang="{LANG_CODE}" href="{BASE}/{LANG_CODE}/articles/" />'
+        f'<link rel="alternate" hreflang="{LANG_CODE}" href="{BASE}/{LANG_CODE}/{_articles_slug_lang}/" />'
         f'<link rel="alternate" hreflang="x-default" href="{BASE}/articles/" />'
     )
     shell = shell.replace('</head>', hreflang_block + '</head>', 1)
@@ -1317,12 +1356,24 @@ def render_home() -> str | None:  # noqa: C901 — orchestrates the FR home fork
         return None
     shell = shell_src.read_text(encoding="utf-8")
 
-    title = "Sebastien Rousseau — IA, paiements et cryptographie quantique"
-    desc = (
-        "L'avenir de la banque par l'IA appliquée, les paiements et la sécurité "
-        "résistante au quantique. Recherche, bibliothèques open source et "
-        "conseil produit pour les services financiers."
-    )
+    _home_titles = {
+        "fr": "Sebastien Rousseau — IA, paiements et cryptographie quantique",
+        "de": "Sebastien Rousseau — KI, Zahlungen und Quantenkryptografie",
+    }
+    _home_descs = {
+        "fr": (
+            "L'avenir de la banque par l'IA appliquée, les paiements et la sécurité "
+            "résistante au quantique. Recherche, bibliothèques open source et "
+            "conseil produit pour les services financiers."
+        ),
+        "de": (
+            "Die Zukunft des Bankwesens durch angewandte KI, Zahlungen und "
+            "quantensichere Sicherheit. Forschung, Open-Source-Bibliotheken und "
+            "Produktberatung für Finanzdienstleistungen."
+        ),
+    }
+    title = _home_titles.get(LANG_CODE, _home_titles["fr"])
+    desc = _home_descs.get(LANG_CODE, _home_descs["fr"])
     url_fr = f"{BASE}/{LANG_CODE}/"
 
     shell = _HTML_LANG_RE.sub(rf'\g<1>"{LANG_BCP47}"', shell, count=1)
@@ -1903,6 +1954,21 @@ def _bind_lang(code: str) -> None:
     ]
     _CHROME_PATCHES_COMPILED = [(re.compile(p), r) for p, r in CHROME_PATCHES]
     _HOME_FR_COMPILED = [(re.compile(p), r) for p, r in HOME_FR_PATCHES]
+    # Clear every per-language lazy cache so the second pass doesn't
+    # inherit the first language's title / description / regex tables.
+    global _FR_TITLE_MAP, _FR_DESCRIPTION_MAP
+    global _EN_DESC_TO_FR_RE_CACHE, _EN_DESC_TO_FR_MAP_CACHE
+    global _EN_TITLES_TO_FR_RE_CACHE, _EN_TITLE_TO_FR_MAP_CACHE
+    _FR_TITLE_MAP.clear()
+    _FR_DESCRIPTION_MAP.clear()
+    _EN_DESC_TO_FR_RE_CACHE = None
+    _EN_DESC_TO_FR_MAP_CACHE = None
+    _EN_TITLES_TO_FR_RE_CACHE = None
+    _EN_TITLE_TO_FR_MAP_CACHE = None
+    # Swap month-name map to the current language so localize_en_dates
+    # emits the right month form (FR "novembre", DE "November", …).
+    global _EN_MONTH_TO_FR
+    _EN_MONTH_TO_FR = dict(_LANG_MONTHS.get(code, _LANG_MONTHS["fr"]))
 
 
 def _render_one_lang(code: str) -> int:

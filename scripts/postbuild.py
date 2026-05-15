@@ -1491,8 +1491,38 @@ LABELS_FR: dict[str, str] = {
 }
 
 
+_LABEL_CACHE: dict[str, dict[str, str]] = {}
+
+
+def _labels_for_lang(code: str) -> dict[str, str]:
+    """Per-language label cache. Loads from ``labels.json`` and overlays
+    a handful of extra keys ``LABELS_EN`` has but the JSON glossary
+    intentionally doesn't (Table of contents, Article pagination, etc.)
+    so older call sites stay valid."""
+    if code in _LABEL_CACHE:
+        return _LABEL_CACHE[code]
+    if code == "en":
+        out = dict(LABELS_EN)
+    else:
+        try:
+            base = _lr.load_labels(code)
+        except _lr.LanguageError:
+            base = {}
+        out = dict(LABELS_EN)
+        out.update(base)
+    _LABEL_CACHE[code] = out
+    return out
+
+
+def _detect_page_lang(html: str) -> str:
+    m = _HTML_LANG_DETECT_RE.search(html)
+    if not m:
+        return "en"
+    return m.group(1).lower().split("-", 1)[0]
+
+
 def _labels(html: str) -> dict[str, str]:
-    return LABELS_FR if _is_french(html) else LABELS_EN
+    return _labels_for_lang(_detect_page_lang(html))
 
 
 def slugify(s: str) -> str:
@@ -1851,6 +1881,82 @@ def _convert_faq_to_qa(html: str) -> str:
         return "".join(out_parts)
 
     return _FAQ_H2_RE.sub(patch, html)
+
+
+_NAV_LINK_RE = re.compile(
+    r'(<nav\s+aria-label=["\']?Primary["\']?(?:[\s\S]*?</nav>)|<nav\s+aria-label=["\']?[^"\'>]+["\']?(?:[\s\S]*?</nav>))',
+    re.IGNORECASE,
+)
+
+
+def _nav_active_target(page: Path) -> str | None:
+    """Return the nav-link href that should be marked active for this
+    page, or ``None`` if there's no obvious match (e.g. dated articles
+    map to /articles/ on EN, /<lang-articles-slug>/ on translated pages).
+
+    The match is greedy by depth: /about/ → /about/index.html;
+    /2026-05-12-…/ → /articles/index.html; /<lang>/<x>/ → /<lang>/<x>/index.html.
+    """
+    rel = page.relative_to(PUBLIC).as_posix()
+    if rel == "index.html":
+        return "/index.html"  # home
+    parts = rel.split("/")
+    # /<top>/index.html → /<top>/index.html
+    if len(parts) == 2 and parts[1] == "index.html":
+        top = parts[0]
+        # Dated article → /articles/index.html
+        if _DATED_SLUG_RE.match(top):
+            return "/articles/index.html"
+        return f"/{top}/index.html"
+    # /<lang>/<top>/index.html
+    if len(parts) == 3 and parts[2] == "index.html":
+        lang, top = parts[0], parts[1]
+        if lang not in _all_active_non_en_langs():
+            return None
+        articles_slug = _slug_maps(lang)["statics_en_to_lang"].get("articles", "articles")
+        # Localised home /lang/index.html
+        if top == "index.html":
+            return f"/{lang}/index.html"
+        # Dated article under /<lang>/ → /<lang>/<articles_slug>/
+        if _DATED_SLUG_RE.match(top):
+            return f"/{lang}/{articles_slug}/index.html"
+        return f"/{lang}/{top}/index.html"
+    # /<lang>/index.html
+    if len(parts) == 2 and parts[1] == "index.html" and parts[0] in _all_active_non_en_langs():
+        return f"/{parts[0]}/index.html"
+    return None
+
+
+def inject_nav_active(html: str, page: Path) -> str:
+    """Add ``aria-current="page"`` + ``class="active"`` to the nav link
+    matching this page. For home pages (/, /<lang>/), the brand link
+    sitting outside the nav menu is the home indicator, so we mark it
+    there. Idempotent — re-running doesn't double-mark."""
+    target = _nav_active_target(page)
+    if not target:
+        return html
+
+    # Always clear any pre-existing active markers in the header first.
+    header_m = re.search(r'<header\b[^>]*>([\s\S]*?)</header>', html, re.IGNORECASE)
+    if not header_m:
+        return html
+    header_body = header_m.group(1)
+    header_clean = re.sub(r'\s+aria-current=["\']?[^"\'>]+["\']?', '', header_body)
+    header_clean = re.sub(r'(<a\b[^>]*?)\s+class=["\']?active["\']?', r'\1', header_clean)
+
+    pat = re.compile(
+        r'(<a\s+(?:[^>]*?)href=["\']?)('
+        + re.escape(target)
+        + r')(["\']?)([^>]*>)',
+        re.IGNORECASE,
+    )
+
+    def repl(m: re.Match[str]) -> str:
+        return f'{m.group(1)}{m.group(2)}{m.group(3)} aria-current="page" class="active"{m.group(4)}'
+
+    new_body = pat.sub(repl, header_clean, count=1)
+    open_tag = header_m.group(0)[: header_m.group(0).index(">") + 1]
+    return html.replace(header_m.group(0), open_tag + new_body + "</header>", 1)
 
 
 def inject_prev_next_nav(
@@ -2541,6 +2647,7 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
             patched_src, page.parent.name, nav_index, is_fr=page_is_fr,
             fr_titles=fr_titles, page_lang=page_lang_for_nav,
         )
+        patched_nav = inject_nav_active(patched_nav, page)
         if patched_nav != patched_src:
             nav_patched += 1
         # Reciprocal hreflang for paired English/French pages.

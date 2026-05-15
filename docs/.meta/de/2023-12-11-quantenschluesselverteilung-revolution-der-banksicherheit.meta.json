@@ -1,11 +1,11 @@
 {
-  "description": "Während Quantencomputer klassische Verschlüsselungsverfahren bedrohen, tritt die Quantenschlüsselverteilung (QKD) als Game Changer in Erscheinung und bietet unvergleichliche Sicherheit.",
-  "title": "Quantenschlüsselverteilung revolutioniert die Banksicherheit",
-  "keywords": "Quantenschlüsselverteilung, QKD, Quantensicherheit, Banking, Finanzindustrie, digitale Finanzen, Cybersicherheit, Quantencomputing, HSBC, Quantenschutzversuch, Finanztransaktionen",
-  "language": "de",
-  "banner_alt": "HSBC von den Docks aus",
-  "subtitle": "Quantenschlüsselverteilung (QKD) für Sicherheit auf Finanzniveau",
-  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
+  "date": "Dec 11, 2023",
   "locale": "de_DE",
-  "date": "Dec 11, 2023"
+  "subtitle": "Quantenschlüsselverteilung (QKD) für Sicherheit auf Finanzniveau",
+  "description": "Während Quantencomputer klassische Verschlüsselungsverfahren bedrohen, tritt die Quantenschlüsselverteilung (QKD) als Game Changer in Erscheinung und bietet unvergleichliche Sicherheit.",
+  "banner_alt": "HSBC von den Docks aus",
+  "keywords": "Quantenschlüsselverteilung, QKD, Quantensicherheit, Banking, Finanzindustrie, digitale Finanzen, Cybersicherheit, Quantencomputing, HSBC, Quantenschutzversuch, Finanztransaktionen",
+  "title": "Quantenschlüsselverteilung revolutioniert die Banksicherheit",
+  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
+  "language": "de"
 }
