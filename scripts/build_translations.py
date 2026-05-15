@@ -549,10 +549,10 @@ def _swap_breadcrumb(html: str, slug: str, title: str) -> str:  # noqa: C901 —
                 item["item"] = f"{BASE}/"
             elif pos == 2:
                 item["name"] = "Articles"
-                item["item"] = f"{BASE}/fr/"
+                item["item"] = f"{BASE}/{LANG_CODE}/"
             elif pos == 3:
                 item["name"] = title
-                item["item"] = f"{BASE}/fr/{slug}/"
+                item["item"] = f"{BASE}/{LANG_CODE}/{slug}/"
         return True
 
     def fix(m: re.Match[str]) -> str:
@@ -603,22 +603,32 @@ def _build_en_url_rewriter() -> re.Pattern[str]:
     return re.compile(_EN_URL_PATTERN_TMPL.format(slugs=slugs))
 
 
-_EN_URL_RE = _build_en_url_rewriter()
+_EN_URL_RE_CACHE: dict[str, re.Pattern[str]] = {}
+
+
+def _en_url_re() -> re.Pattern[str]:
+    """Lang-aware cache of the EN-URL regex. Each call returns the
+    regex built against the *current* EN_TO_FR map (rebound per lang
+    by ``_bind_lang``)."""
+    key = LANG_CODE
+    if key not in _EN_URL_RE_CACHE:
+        _EN_URL_RE_CACHE[key] = _build_en_url_rewriter()
+    return _EN_URL_RE_CACHE[key]
 
 
 def rewrite_en_urls(html_fragment: str) -> str:
-    """Rewrite every reference to an EN article URL to its FR
-    counterpart, keeping the same origin (absolute → absolute,
-    root-relative → root-relative)."""
+    """Rewrite every reference to an EN article URL to its
+    current-language counterpart, keeping the same origin (absolute →
+    absolute, root-relative → root-relative)."""
 
     def repl(m: re.Match[str]) -> str:
         origin = m.group(1) or ""
         en = m.group("slug")
-        fr = fr_slug(en)
+        lang_slug = fr_slug(en)
         tail = m.group(3) or ""
-        return f"{origin}/fr/{fr}{tail}"
+        return f"{origin}/{LANG_CODE}/{lang_slug}{tail}"
 
-    return _EN_URL_RE.sub(repl, html_fragment)
+    return _en_url_re().sub(repl, html_fragment)
 
 
 def _build_fr_title_map() -> dict[str, str]:
@@ -1082,7 +1092,7 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
     subtitle = fm.get("subtitle", description)
     page_title = f"{title} — Sebastien Rousseau"
     slug_fr = fr_slug(slug)
-    url_fr = f"{BASE}/fr/{slug_fr}/"
+    url_fr = f"{BASE}/{LANG_CODE}/{slug_fr}/"
 
     # html lang
     shell = _HTML_LANG_RE.sub(rf'\g<1>"{LANG_BCP47}"', shell, count=1)
@@ -1313,7 +1323,7 @@ def render_home() -> str | None:  # noqa: C901 — orchestrates the FR home fork
         "résistante au quantique. Recherche, bibliothèques open source et "
         "conseil produit pour les services financiers."
     )
-    url_fr = f"{BASE}/fr/"
+    url_fr = f"{BASE}/{LANG_CODE}/"
 
     shell = _HTML_LANG_RE.sub(rf'\g<1>"{LANG_BCP47}"', shell, count=1)
     shell = _TITLE_RE.sub(f'<title>{_html.escape(title)}</title>', shell, count=1)
@@ -1495,7 +1505,7 @@ def render_static_translation(slug: str) -> str | None:  # noqa: C901 — per-pa
     subtitle = cfg.get("subtitle", description)
     keywords = cfg.get("keywords", "")
     fr_slug_str = STATIC_SLUG_FR.get(slug, slug)
-    url_fr = f"{BASE}/fr/{fr_slug_str}/"
+    url_fr = f"{BASE}/{LANG_CODE}/{fr_slug_str}/"
 
     shell = _HTML_LANG_RE.sub(rf'\g<1>"{LANG_BCP47}"', shell, count=1)
     shell = _TITLE_RE.sub(f'<title>{_html.escape(title)}</title>', shell, count=1)
@@ -1785,7 +1795,7 @@ def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:  # noqa: C901 
                         local = True
                     elif pos == 2:
                         item["name"] = "Sujets"
-                        item["item"] = f"{BASE}/fr/sujets/"
+                        item["item"] = f"{BASE}/{LANG_CODE}/{STATIC_SLUG_FR.get('topics', 'topics')}/"
                         local = True
                     elif pos == 3:
                         item["name"] = title
