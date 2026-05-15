@@ -1016,21 +1016,21 @@ def rewrite_newsroom_card_titles(html: str) -> str:
         # <h3>…<a>TITLE</a>… inner text.
         inner = re.sub(
             r'(<h3[^>]*>\s*<a [^>]+>)[^<]+(</a>)',
-            rf'\1{_html.escape(fr_title)}\2',
+            rf'\g<1>{_html.escape(fr_title)}\g<2>',
             inner,
             count=1,
         )
         # aria-label on media link.
         inner = re.sub(
             r'(<a [^>]*class="newsroom-card-media"[^>]*aria-label=")[^"]+(")',
-            rf'\1{esc}\2',
+            rf'\g<1>{esc}\g<2>',
             inner,
             count=1,
         )
         # title= on the same link.
         inner = re.sub(
             r'(<a [^>]*class="newsroom-card-media"[^>]*title=")[^"]+(")',
-            rf'\1{esc}\2',
+            rf'\g<1>{esc}\g<2>',
             inner,
             count=1,
         )
@@ -1061,21 +1061,21 @@ def rewrite_related_card_titles(html_fragment: str) -> str:
         # Rewrite aria-label on media link.
         inner = re.sub(
             r'(<a [^>]*class="related-media"[^>]*aria-label=")[^"]+(")',
-            rf'\1{esc}\2',
+            rf'\g<1>{esc}\g<2>',
             inner,
             count=1,
         )
         # Rewrite the visible <h3>...<a>TITLE</a>... block.
         inner = re.sub(
             r'(<h3[^>]*>\s*<a [^>]+>)[^<]+(</a>)',
-            rf'\1{_html.escape(fr_title)}\2',
+            rf'\g<1>{_html.escape(fr_title)}\g<2>',
             inner,
             count=1,
         )
         # Rewrite anchor-link aria-label "Link to TITLE".
         inner = re.sub(
             r'(<a class="heading-anchor"[^>]*aria-label="(?:Lien vers|Link to) )[^"]+(")',
-            rf'\1{esc}\2',
+            rf'\g<1>{esc}\g<2>',
             inner,
             count=1,
         )
@@ -1187,20 +1187,20 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
     shell = _HTML_LANG_RE.sub("\\g<1>\"fr-FR\"", shell, count=1)
     # head meta
     shell = _TITLE_RE.sub(f'<title>{_html.escape(page_title)}</title>', shell, count=1)
-    shell = _DESC_META_RE.sub(rf'\1{_html.escape(description, quote=True)}\2', shell, count=1)
+    shell = _DESC_META_RE.sub(rf'\g<1>{_html.escape(description, quote=True)}\g<2>', shell, count=1)
     if keywords:
-        shell = _KW_META_RE.sub(rf'\1{_html.escape(keywords, quote=True)}\2', shell, count=1)
-    shell = _OG_TITLE_RE.sub(rf'\1{_html.escape(page_title, quote=True)}\2', shell, count=1)
-    shell = _OG_DESC_RE.sub(rf'\1{_html.escape(description, quote=True)}\2', shell, count=1)
-    shell = _OG_URL_RE.sub(rf'\1{url_fr}\2', shell, count=1)
+        shell = _KW_META_RE.sub(rf'\g<1>{_html.escape(keywords, quote=True)}\g<2>', shell, count=1)
+    shell = _OG_TITLE_RE.sub(rf'\g<1>{_html.escape(page_title, quote=True)}\g<2>', shell, count=1)
+    shell = _OG_DESC_RE.sub(rf'\g<1>{_html.escape(description, quote=True)}\g<2>', shell, count=1)
+    shell = _OG_URL_RE.sub(rf'\g<1>{url_fr}\g<2>', shell, count=1)
     shell = _OG_LOCALE_RE.sub(r'\1fr_FR\2', shell, count=1)
-    shell = _TW_TITLE_RE.sub(rf'\1{_html.escape(page_title, quote=True)}\2', shell, count=1)
-    shell = _TW_DESC_RE.sub(rf'\1{_html.escape(description, quote=True)}\2', shell, count=1)
-    shell = _CANONICAL_RE.sub(rf'\1{url_fr}\2', shell, count=1)
+    shell = _TW_TITLE_RE.sub(rf'\g<1>{_html.escape(page_title, quote=True)}\g<2>', shell, count=1)
+    shell = _TW_DESC_RE.sub(rf'\g<1>{_html.escape(description, quote=True)}\g<2>', shell, count=1)
+    shell = _CANONICAL_RE.sub(rf'\g<1>{url_fr}\g<2>', shell, count=1)
 
     # hero H1 + subtitle
     shell = _HERO_RE.sub(
-        rf'\1{_html.escape(title)}\2{_html.escape(subtitle)}\3',
+        rf'\g<1>{_html.escape(title)}\g<2>{_html.escape(subtitle)}\g<3>',
         shell,
         count=1,
     )
@@ -1352,9 +1352,9 @@ def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
     title = "Articles en français — Sebastien Rousseau"
     desc = "Sélection d'articles traduits manuellement en français."
     shell = _TITLE_RE.sub(f'<title>{_html.escape(title)}</title>', shell, count=1)
-    shell = _DESC_META_RE.sub(rf'\1{_html.escape(desc, quote=True)}\2', shell, count=1)
-    shell = _OG_TITLE_RE.sub(rf'\1{_html.escape(title, quote=True)}\2', shell, count=1)
-    shell = _OG_DESC_RE.sub(rf'\1{_html.escape(desc, quote=True)}\2', shell, count=1)
+    shell = _DESC_META_RE.sub(rf'\g<1>{_html.escape(desc, quote=True)}\g<2>', shell, count=1)
+    shell = _OG_TITLE_RE.sub(rf'\g<1>{_html.escape(title, quote=True)}\g<2>', shell, count=1)
+    shell = _OG_DESC_RE.sub(rf'\g<1>{_html.escape(desc, quote=True)}\g<2>', shell, count=1)
     shell = _OG_URL_RE.sub(r'\1https://sebastienrousseau.com/fr/articles/\2', shell, count=1)
     shell = _OG_LOCALE_RE.sub(r'\1fr_FR\2', shell, count=1)
     shell = _CANONICAL_RE.sub(r'\1https://sebastienrousseau.com/fr/articles/\2', shell, count=1)
@@ -1552,14 +1552,14 @@ def render_home() -> str | None:  # noqa: C901 — orchestrates the FR home fork
 
     shell = _HTML_LANG_RE.sub("\\g<1>\"fr-FR\"", shell, count=1)
     shell = _TITLE_RE.sub(f'<title>{_html.escape(title)}</title>', shell, count=1)
-    shell = _DESC_META_RE.sub(rf'\1{_html.escape(desc, quote=True)}\2', shell, count=1)
-    shell = _OG_TITLE_RE.sub(rf'\1{_html.escape(title, quote=True)}\2', shell, count=1)
-    shell = _OG_DESC_RE.sub(rf'\1{_html.escape(desc, quote=True)}\2', shell, count=1)
-    shell = _OG_URL_RE.sub(rf'\1{url_fr}\2', shell, count=1)
+    shell = _DESC_META_RE.sub(rf'\g<1>{_html.escape(desc, quote=True)}\g<2>', shell, count=1)
+    shell = _OG_TITLE_RE.sub(rf'\g<1>{_html.escape(title, quote=True)}\g<2>', shell, count=1)
+    shell = _OG_DESC_RE.sub(rf'\g<1>{_html.escape(desc, quote=True)}\g<2>', shell, count=1)
+    shell = _OG_URL_RE.sub(rf'\g<1>{url_fr}\g<2>', shell, count=1)
     shell = _OG_LOCALE_RE.sub(r'\1fr_FR\2', shell, count=1)
-    shell = _TW_TITLE_RE.sub(rf'\1{_html.escape(title, quote=True)}\2', shell, count=1)
-    shell = _TW_DESC_RE.sub(rf'\1{_html.escape(desc, quote=True)}\2', shell, count=1)
-    shell = _CANONICAL_RE.sub(rf'\1{url_fr}\2', shell, count=1)
+    shell = _TW_TITLE_RE.sub(rf'\g<1>{_html.escape(title, quote=True)}\g<2>', shell, count=1)
+    shell = _TW_DESC_RE.sub(rf'\g<1>{_html.escape(desc, quote=True)}\g<2>', shell, count=1)
+    shell = _CANONICAL_RE.sub(rf'\g<1>{url_fr}\g<2>', shell, count=1)
 
     # Rewrite article URLs (EN → FR) + ensure all internal links keep visitor in /fr/.
     shell = rewrite_en_urls(shell)
@@ -2557,16 +2557,16 @@ def render_static_translation(slug: str) -> str | None:  # noqa: C901 — per-pa
 
     shell = _HTML_LANG_RE.sub("\\g<1>\"fr-FR\"", shell, count=1)
     shell = _TITLE_RE.sub(f'<title>{_html.escape(title)}</title>', shell, count=1)
-    shell = _DESC_META_RE.sub(rf'\1{_html.escape(description, quote=True)}\2', shell, count=1)
+    shell = _DESC_META_RE.sub(rf'\g<1>{_html.escape(description, quote=True)}\g<2>', shell, count=1)
     if keywords:
-        shell = _KW_META_RE.sub(rf'\1{_html.escape(keywords, quote=True)}\2', shell, count=1)
-    shell = _OG_TITLE_RE.sub(rf'\1{_html.escape(title, quote=True)}\2', shell, count=1)
-    shell = _OG_DESC_RE.sub(rf'\1{_html.escape(description, quote=True)}\2', shell, count=1)
-    shell = _OG_URL_RE.sub(rf'\1{url_fr}\2', shell, count=1)
+        shell = _KW_META_RE.sub(rf'\g<1>{_html.escape(keywords, quote=True)}\g<2>', shell, count=1)
+    shell = _OG_TITLE_RE.sub(rf'\g<1>{_html.escape(title, quote=True)}\g<2>', shell, count=1)
+    shell = _OG_DESC_RE.sub(rf'\g<1>{_html.escape(description, quote=True)}\g<2>', shell, count=1)
+    shell = _OG_URL_RE.sub(rf'\g<1>{url_fr}\g<2>', shell, count=1)
     shell = _OG_LOCALE_RE.sub(r'\1fr_FR\2', shell, count=1)
-    shell = _TW_TITLE_RE.sub(rf'\1{_html.escape(title, quote=True)}\2', shell, count=1)
-    shell = _TW_DESC_RE.sub(rf'\1{_html.escape(description, quote=True)}\2', shell, count=1)
-    shell = _CANONICAL_RE.sub(rf'\1{url_fr}\2', shell, count=1)
+    shell = _TW_TITLE_RE.sub(rf'\g<1>{_html.escape(title, quote=True)}\g<2>', shell, count=1)
+    shell = _TW_DESC_RE.sub(rf'\g<1>{_html.escape(description, quote=True)}\g<2>', shell, count=1)
+    shell = _CANONICAL_RE.sub(rf'\g<1>{url_fr}\g<2>', shell, count=1)
     # Hero subtitle (<p class="sub">…</p>) is per-page — replace it.
     shell = re.sub(
         r'<p class="sub">[^<]*</p>',
@@ -2768,15 +2768,15 @@ def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:  # noqa: C901 
     shell = _HTML_LANG_RE.sub("\\g<1>\"fr-FR\"", shell, count=1)
     shell = _TITLE_RE.sub(f'<title>{_html.escape(page_title)}</title>', shell, count=1)
     if lede:
-        shell = _DESC_META_RE.sub(rf'\1{_html.escape(lede, quote=True)}\2', shell, count=1)
-        shell = _OG_DESC_RE.sub(rf'\1{_html.escape(lede, quote=True)}\2', shell, count=1)
-    shell = _OG_TITLE_RE.sub(rf'\1{_html.escape(page_title, quote=True)}\2', shell, count=1)
-    shell = _OG_URL_RE.sub(rf'\1{url_fr}\2', shell, count=1)
+        shell = _DESC_META_RE.sub(rf'\g<1>{_html.escape(lede, quote=True)}\g<2>', shell, count=1)
+        shell = _OG_DESC_RE.sub(rf'\g<1>{_html.escape(lede, quote=True)}\g<2>', shell, count=1)
+    shell = _OG_TITLE_RE.sub(rf'\g<1>{_html.escape(page_title, quote=True)}\g<2>', shell, count=1)
+    shell = _OG_URL_RE.sub(rf'\g<1>{url_fr}\g<2>', shell, count=1)
     shell = _OG_LOCALE_RE.sub(r'\1fr_FR\2', shell, count=1)
-    shell = _CANONICAL_RE.sub(rf'\1{url_fr}\2', shell, count=1)
-    shell = _TW_TITLE_RE.sub(rf'\1{_html.escape(page_title, quote=True)}\2', shell, count=1)
+    shell = _CANONICAL_RE.sub(rf'\g<1>{url_fr}\g<2>', shell, count=1)
+    shell = _TW_TITLE_RE.sub(rf'\g<1>{_html.escape(page_title, quote=True)}\g<2>', shell, count=1)
     if lede:
-        shell = _TW_DESC_RE.sub(rf'\1{_html.escape(lede, quote=True)}\2', shell, count=1)
+        shell = _TW_DESC_RE.sub(rf'\g<1>{_html.escape(lede, quote=True)}\g<2>', shell, count=1)
 
     # Rewrite article cards (EN slugs → FR slugs).
     shell = rewrite_en_urls(shell)
@@ -2792,7 +2792,7 @@ def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:  # noqa: C901 
     if lede:
         shell = re.sub(
             r'(<p class="topic-lede">)[^<]+(</p>)',
-            rf'\1{_html.escape(lede)}\2',
+            rf'\g<1>{_html.escape(lede)}\g<2>',
             shell,
             count=1,
         )
