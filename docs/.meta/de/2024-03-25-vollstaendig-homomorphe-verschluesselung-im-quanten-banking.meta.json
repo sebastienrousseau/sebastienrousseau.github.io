@@ -1,11 +1,11 @@
 {
-  "locale": "de_DE",
-  "language": "de",
-  "date": "March 25, 2024",
-  "title": "Vollständig homomorphe Verschlüsselung (FHE) im Quanten-Banking-Zeitalter",
-  "subtitle": "Datensicherheit stärken, KI-Privatsphäre verbessern und Kundenvertrauen im Zeitalter des Quantencomputings mit FHE aufbauen",
-  "description": "Wie die vollständig homomorphe Verschlüsselung die Datensicherheit in der Bank- und Finanzbranche revolutioniert und Privatsphäre gegenüber den Bedrohungen des Quantencomputings sichert.",
   "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
   "keywords": "vollständig homomorphe Verschlüsselung, Banksicherheit, Quantencomputing, Verschlüsselung von Finanzdaten, FHE, DSGVO, CCPA, Compliance, Cloud Computing, KI und Datenschutz, verschlüsseltes LLM, Zama, Gentry",
-  "banner_alt": "Banner zur vollständig homomorphen Verschlüsselung"
+  "date": "March 25, 2024",
+  "banner_alt": "Banner zur vollständig homomorphen Verschlüsselung",
+  "description": "Wie die vollständig homomorphe Verschlüsselung die Datensicherheit in der Bank- und Finanzbranche revolutioniert und Privatsphäre gegenüber den Bedrohungen des Quantencomputings sichert.",
+  "locale": "de_DE",
+  "language": "de",
+  "title": "Vollständig homomorphe Verschlüsselung (FHE) im Quanten-Banking-Zeitalter",
+  "subtitle": "Datensicherheit stärken, KI-Privatsphäre verbessern und Kundenvertrauen im Zeitalter des Quantencomputings mit FHE aufbauen"
 }

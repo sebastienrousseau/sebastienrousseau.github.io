@@ -1853,6 +1853,80 @@ def _convert_faq_to_qa(html: str) -> str:
     return _FAQ_H2_RE.sub(patch, html)
 
 
+_NAV_LINK_RE = re.compile(
+    r'(<nav\s+aria-label=["\']?Primary["\']?(?:[\s\S]*?</nav>)|<nav\s+aria-label=["\']?[^"\'>]+["\']?(?:[\s\S]*?</nav>))',
+    re.IGNORECASE,
+)
+
+
+def _nav_active_target(page: Path) -> str | None:
+    """Return the nav-link href that should be marked active for this
+    page, or ``None`` if there's no obvious match (e.g. dated articles
+    map to /articles/ on EN, /<lang-articles-slug>/ on translated pages).
+
+    The match is greedy by depth: /about/ → /about/index.html;
+    /2026-05-12-…/ → /articles/index.html; /<lang>/<x>/ → /<lang>/<x>/index.html.
+    """
+    rel = page.relative_to(PUBLIC).as_posix()
+    if rel == "index.html":
+        return "/index.html"  # home
+    parts = rel.split("/")
+    # /<top>/index.html → /<top>/index.html
+    if len(parts) == 2 and parts[1] == "index.html":
+        top = parts[0]
+        # Dated article → /articles/index.html
+        if _DATED_SLUG_RE.match(top):
+            return "/articles/index.html"
+        return f"/{top}/index.html"
+    # /<lang>/<top>/index.html
+    if len(parts) == 3 and parts[2] == "index.html":
+        lang, top = parts[0], parts[1]
+        if lang not in _all_active_non_en_langs():
+            return None
+        articles_slug = _slug_maps(lang)["statics_en_to_lang"].get("articles", "articles")
+        # Localised home /lang/index.html
+        if top == "index.html":
+            return f"/{lang}/index.html"
+        # Dated article under /<lang>/ → /<lang>/<articles_slug>/
+        if _DATED_SLUG_RE.match(top):
+            return f"/{lang}/{articles_slug}/index.html"
+        return f"/{lang}/{top}/index.html"
+    # /<lang>/index.html
+    if len(parts) == 2 and parts[1] == "index.html" and parts[0] in _all_active_non_en_langs():
+        return f"/{parts[0]}/index.html"
+    return None
+
+
+def inject_nav_active(html: str, page: Path) -> str:
+    """Add ``aria-current="page"`` + ``class="active"`` to the nav link
+    matching this page. Idempotent — re-running doesn't double-mark."""
+    target = _nav_active_target(page)
+    if not target:
+        return html
+    # The nav lives between <nav aria-label=…Primary…> and </nav>. Drop
+    # any pre-existing aria-current first so re-runs stay clean.
+    nav_m = re.search(r'<nav\s+aria-label=["\']?[^"\'>]+["\']?[^>]*>([\s\S]*?)</nav>', html, re.IGNORECASE)
+    if not nav_m:
+        return html
+    nav_body = nav_m.group(1)
+    nav_body_clean = re.sub(r'\s+aria-current=["\']?[^"\'>]+["\']?', '', nav_body)
+    nav_body_clean = re.sub(r'(<a\b[^>]*?)\s+class=["\']?active["\']?', r'\1', nav_body_clean)
+    # Find the target href and add the markers. Patterns to match the
+    # SSG-minified <a href=/about/index.html> shape AND the quoted shape.
+    pat = re.compile(
+        r'(<a\s+(?:[^>]*?)href=["\']?)('
+        + re.escape(target)
+        + r')(["\']?)([^>]*>)',
+        re.IGNORECASE,
+    )
+
+    def repl(m: re.Match[str]) -> str:
+        return f'{m.group(1)}{m.group(2)}{m.group(3)} aria-current="page" class="active"{m.group(4)}'
+
+    new_body = pat.sub(repl, nav_body_clean, count=1)
+    return html.replace(nav_m.group(0), f'<nav{nav_m.group(0)[4:nav_m.group(0).index(">")]}>{new_body}</nav>', 1)
+
+
 def inject_prev_next_nav(
     html: str,
     slug: str,
@@ -2541,6 +2615,7 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
             patched_src, page.parent.name, nav_index, is_fr=page_is_fr,
             fr_titles=fr_titles, page_lang=page_lang_for_nav,
         )
+        patched_nav = inject_nav_active(patched_nav, page)
         if patched_nav != patched_src:
             nav_patched += 1
         # Reciprocal hreflang for paired English/French pages.
