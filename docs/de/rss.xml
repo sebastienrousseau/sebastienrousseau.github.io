@@ -6,8 +6,64 @@
     <description>Artikel auf Deutsch: angewandte KI, ISO-20022-Zahlungen, Post-Quanten-Kryptografie und Transformation des Wholesale-Zahlungsverkehrs.</description>
     <atom:link href="https://sebastienrousseau.com/de/rss.xml" rel="self" type="application/rss+xml"/>
     <language>de-DE</language>
-    <lastBuildDate>Fri, 15 May 2026 18:28:40 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2026 19:54:40 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle Rechte vorbehalten.</copyright>
+    <item>
+      <title>Die beste Cloud-Infrastruktur-Architektur 2026: ein KI-nativer, Multi-Cloud- und quantenbewusster Blueprint für Finanzdienstleister</title>
+      <link>https://sebastienrousseau.com/de/2026-05-21-beste-cloud-infrastruktur-architektur-fuer-banken-2026/</link>
+      <description>Die Cloud-Architektur 2026 hat sich um sechs Pfeiler kristallisiert: KI-native Infrastruktur, intelligente Multi-Cloud, Serverless-First-Design mit WebAssembly am Edge, Edge Computing, automatisierte Sicherheit mit Krypto-Agilität und nachhaltige, hochdichte Operations. Für Banken stellt sich nicht mehr die Frage, welchen Pfeiler man übernimmt, sondern ob man Cloud konsumiert oder gestaltet – unter dem konvergierenden Druck von agentischem Commerce, agentischer Unit Economics, Harvest-Now-Decrypt-Later-Quantenrisiko, MCP-Sicherheit und algorithmischer Ansteckung, kryptografischer Agentenidentität, kontinuierlichem Treasury und dem EU-KI-Gesetz.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-21-beste-cloud-infrastruktur-architektur-fuer-banken-2026/</guid>
+      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
+      <category>Cloud-Architektur 2026</category>
+      <category>KI-native Infrastruktur</category>
+      <category>Multi-Cloud</category>
+      <category>Serverless</category>
+      <category>Edge Computing</category>
+      <category>WebAssembly</category>
+      <category>Wasm</category>
+      <category>DevSecOps</category>
+      <category>nachhaltiges Rechenzentrum</category>
+      <category>Flüssigkühlung</category>
+      <category>AWS Bedrock</category>
+      <category>Google Vertex AI</category>
+      <category>Azure OpenAI Service</category>
+      <category>agentischer Commerce</category>
+      <category>Multi-Agent-Swarms</category>
+      <category>agentische Unit Economics</category>
+      <category>Agent FinOps</category>
+      <category>kryptografische Agentenidentität</category>
+      <category>SPIFFE</category>
+      <category>SPIRE</category>
+      <category>algorithmische Ansteckung</category>
+      <category>agentisches Chaos Engineering</category>
+      <category>Data Gravity</category>
+      <category>Egress FinOps</category>
+      <category>HPC</category>
+      <category>GPU-Storage</category>
+      <category>kontinuierliches Treasury</category>
+      <category>grenzenlose Liquidität</category>
+      <category>Echtzeitzahlungen</category>
+      <category>synthetische Datengenerierung</category>
+      <category>Confidential Computing</category>
+      <category>JPMorgan Multi-Cloud</category>
+      <category>Citi-Modernisierung</category>
+      <category>Graph Neural Networks</category>
+      <category>Deepfake-Betrug</category>
+      <category>Harvest Now Decrypt Later</category>
+      <category>HNDL</category>
+      <category>Post-Quanten-Kryptografie</category>
+      <category>Krypto-Agilität</category>
+      <category>MCP-Sicherheit</category>
+      <category>Prompt Injection</category>
+      <category>Supply-Chain-Angriffe</category>
+      <category>CloudCDN</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>WCAG-AA</category>
+      <category>Sebastien Rousseau</category>
+    </item>
     <item>
       <title>Agentische Engineering für Banken: ein Blueprint 2026 für den Vorstand und die Ingenieure, die ihn bauen werden</title>
       <link>https://sebastienrousseau.com/de/2026-05-18-agentische-engineering-banken-blueprint-2026/</link>

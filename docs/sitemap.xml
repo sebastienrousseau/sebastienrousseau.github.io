@@ -258,6 +258,11 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/fr/2026-05-21-meilleure-architecture-cloud-pour-les-banques-2026/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/fr/hors-ligne/index.html</loc>
 </url>
 <url>
@@ -533,6 +538,11 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-04-15</lastmod>
+  <loc>https://sebastienrousseau.com/de/2026-05-21-beste-cloud-infrastruktur-architektur-fuer-banken-2026/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-04-15</lastmod>
   <loc>https://sebastienrousseau.com/de/2023-12-11-quantenschluesselverteilung-revolution-der-banksicherheit/index.html</loc>
 </url>
 <url>
@@ -779,6 +789,11 @@
   <changefreq>weekly</changefreq>
   <lastmod>2026-05-11</lastmod>
   <loc>https://sebastienrousseau.com/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html</loc>
+</url>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2026-05-21</lastmod>
+  <loc>https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</loc>
 </url>
 <url>
   <changefreq>weekly</changefreq>
@@ -1344,6 +1359,12 @@
   <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/</loc>
+  <lastmod>2026-05-21</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fr/</loc>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
@@ -1712,6 +1733,12 @@
   <priority>0.7</priority>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/fr/2026-05-21-meilleure-architecture-cloud-pour-les-banques-2026/</loc>
+  <lastmod>2026-05-21</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/de/</loc>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>
@@ -2076,6 +2103,12 @@
 <url>
   <loc>https://sebastienrousseau.com/de/2026-05-18-agentische-engineering-banken-blueprint-2026/</loc>
   <lastmod>2026-05-18</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/de/2026-05-21-beste-cloud-infrastruktur-architektur-fuer-banken-2026/</loc>
+  <lastmod>2026-05-21</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
 </url>

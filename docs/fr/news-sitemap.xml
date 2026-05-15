@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/fr/2026-05-21-meilleure-architecture-cloud-pour-les-banques-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fr-FR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>La meilleure architecture d&apos;infrastructure cloud en 2026 : un blueprint AI-native, multi-cloud et quantum-aware pour les services financiers</news:title>
+    <news:keywords>architecture cloud 2026, infrastructure AI-native, multi-cloud, serverless, edge computing, WebAssembly, Wasm, DevSecOps, datacentre durable, refroidissement liquide, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, agentic commerce, swarms multi-agents, unit economics agentiques, FinOps agentique, identité cryptographique des agents, SPIFFE, SPIRE, contagion algorithmique, chaos engineering agentique, gravité des données, FinOps egress, HPC, stockage GPU, continuous treasury, liquidité sans frontières, paiements temps réel, génération de données synthétiques, confidential computing, JPMorgan multi-cloud, modernisation Citi, graph neural networks, fraude deepfake, harvest now decrypt later, HNDL, cryptographie post-quantique, crypto-agilité, sécurité MCP, prompt injection, attaques chaîne d&apos;approvisionnement, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fr/2026-05-18-ingenierie-agentique-banques-blueprint-2026/</loc>
   <news:news>
     <news:publication>

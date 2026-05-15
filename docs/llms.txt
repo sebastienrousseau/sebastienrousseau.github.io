@@ -28,6 +28,7 @@ Canonical: https://sebastienrousseau.com/
 
 ## Recent posts
 
+- [The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html): Cloud architecture in 2026 has crystallised around six pillars: AI-native infrastructure, intelligent multi-cloud, serverless-first design with WebAssembly at the edge, edge computing, automated secur.
 - [Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html): Agentic AI has crossed from pilot into production across global banking. 70% of institutions are using it to some degree; only one in five has a mature governance model. Meanwhile, autonomous adversar.
 - [Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded](https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html): Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two SEC registrations for products that solve this constraint by being regulated as money market funds rather than sta.
 - [Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html): Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving fe.
@@ -37,10 +38,10 @@ Canonical: https://sebastienrousseau.com/
 - [Quantum-Safe Payments: Why the Industry Must Act Now](https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa/index.html): Quantum computing threatens payment system cryptography. The EPAA white paper outlines the structural risk and the urgent case for PQC migration.
 - [Quantum Lattice Crypto: Bug in Chen's LWE Attack](https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html): A bug in Yilei Chen's quantum LWE algorithm temporarily reprieves lattice-based cryptography. What it means for CRYSTALS-Kyber, Dilithium and the PQC roadmap.
 - [Quantum Algorithm Challenges Lattice-Based Cryptography](https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html): A new polynomial-time quantum algorithm by Yilei Chen targets lattice-based cryptography. Implications for post-quantum standards including CRYSTALS-Kyber.
-- [OpenVoice: Leading Innovation in Voice Cloning Technology](https://sebastienrousseau.com/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html): OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.
 
-## All posts (43)
+## All posts (44)
 
+- [The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services](https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html) — 2026-05-21
 - [Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It](https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html) — 2026-05-18
 - [Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded](https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html) — 2026-05-15
 - [Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance](https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html) — 2026-05-14

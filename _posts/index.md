@@ -235,6 +235,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html" title="The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services">
+<img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Cloud · AI-Native · Post-Quantum</span>
+<h3><a href="/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-21">May 21, 2026</time></p>
+<p class="newsroom-excerpt">Cloud architecture has crystallised around six pillars and one strategic question for banks: whether to consume cloud or design it — under converging pressure from agentic commerce, agentic unit economics, harvest-now-decrypt-later quantum risk, MCP security, cryptographic agent identity, and the legacy estate that still consumes 70–75% of financial-services IT spend.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html" title="Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It">
 <img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -267,18 +279,6 @@ site_software: "Static Site Generator, Rust"
 <h3><a href="/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a></h3>
 <p class="newsroom-meta"><time datetime="2026-05-14">May 14, 2026</time></p>
 <p class="newsroom-excerpt">Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-12-iso-20022-pacs008-structured-address-deadline/index.html" title="The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View">
-<img alt="Cross-border payment message structured-address diagram with TwnNm and Ctry highlighted" src="https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">ISO 20022 · Payments · CBPR+</span>
-<h3><a href="/2026-05-12-iso-20022-pacs008-structured-address-deadline/index.html">The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-12">May 12, 2026</time></p>
-<p class="newsroom-excerpt">From November 2026, SWIFT CBPR+ rejects unstructured postal addresses in cross-border payment messages. Six months out, 65% of pacs.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme.</p>
 </div>
 </article>
 

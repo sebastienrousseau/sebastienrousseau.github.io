@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com"/>
   <id>https://sebastienrousseau.com</id>
-  <updated>2026-05-18T06:06:06+00:00</updated>
+  <updated>2026-05-21T06:06:06+00:00</updated>
+  <entry>
+    <title>The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</title>
+    <link href="https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026"/>
+    <id>https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026</id>
+    <updated>2026-05-21T06:06:06+00:00</updated>
+    <published>2026-05-21T06:06:06+00:00</published>
+    <summary>Cloud architecture in 2026 has crystallised around six pillars: AI-native infrastructure, intelligent multi-cloud, serverless-first design with WebAssembly at the edge, edge computing, automated security with crypto-agility, and sustainable high-density operations. For banks, the question is whether to consume cloud or design it — under converging pressure from agentic commerce, agentic unit economics, harvest-now-decrypt-later quantum risk, MCP security and algorithmic contagion, cryptographic agent identity, continuous-treasury demands, and the EU AI Act.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
     <link href="https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026"/>
@@ -444,15 +453,6 @@
     <updated>2023-10-01T06:06:06+00:00</updated>
     <published>2023-10-01T06:06:06+00:00</published>
     <summary>Shaping the Future of Banking and Financial Services through Strategic Integration of Artificial Intelligence, Post-Quantum Cryptography &amp; Blockchain Technology</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Privacy Statement — How Your Data Is Collected &amp; Used</title>
-    <link href="https://sebastienrousseau.com/privacy"/>
-    <id>https://sebastienrousseau.com/privacy</id>
-    <updated>2023-10-01T06:06:06+00:00</updated>
-    <published>2023-10-01T06:06:06+00:00</published>
-    <summary>This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
 </feed>
