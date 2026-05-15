@@ -30,18 +30,19 @@
          of each block at build time and injects the 'sha256-<base64>' tokens
          into script-src below before the file is served. Browsers will then
          allow that exact byte-for-byte content and nothing else.
-         'inline-speculationrules' permits the Speculation Rules API hover
-         prerender script in postbuild.py. -->
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
         base-uri 'self';
         form-action 'self' https://formspree.io;
-        frame-ancestors 'none';
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-Buncmo+/gDcmNuK4g8PsJ1krIEEIiYjPlyRka4843uQ=' 'sha256-sdNvERJE8io9q6LmicJl9c2gXRphSTT6xuern0Pf7ow=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' 'inline-speculationrules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-Buncmo+/gDcmNuK4g8PsJ1krIEEIiYjPlyRka4843uQ=' 'sha256-JYpEl56wvEwo3DD4bpVHCnVlWooO71CLwr3M+ocXkhk=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
-        connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
         img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
         style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
@@ -66,7 +67,7 @@
     <meta name="color-scheme" content="light dark" />
     <script src="/theme-init.js"></script>
 
-    <link rel="stylesheet" href="/_csp/7971e7e29732f95d.css" crossorigin="anonymous" integrity="sha256-qrJSYjZeRiPzFCdjyWJjpu0NZT9HEcp8/o+Z3sr0a8Y=" crossorigin="anonymous"">
+    <link rel="stylesheet" href="/_csp/2b8c3f2dade76733.css" crossorigin="anonymous" integrity="sha256-ikZedkikJ8rg0rwDR9s5gxb470yNV+YYeqUWHFtvYqs=" crossorigin="anonymous">
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="http://127.0.0.1:8000/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta property="og:title" content="Qiskit &amp; Quantum Fourier Transform for Credit Ratio Analysis">
@@ -83,7 +84,8 @@
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp">
 <link rel="canonical" href="http://127.0.0.1:8000/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
-<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-01-08-optimiser-le-ratio-de-credit-avec-ibm-qiskit-et-fourier-quantique/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script></head>
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-01-08-optimiser-le-ratio-de-credit-avec-ibm-qiskit-et-fourier-quantique/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <a class="skip" href="#main">Skip to main content</a>
     <div class="ap-progress" aria-hidden="true"></div>
@@ -178,25 +180,25 @@
 <!-- lead-end -->
 <p>Imagine a missed loan that could have been predicted. A seemingly low-risk borrower defaults, leaving a bank reeling from unexpected losses. This scenario, once a common pitfall in the world of credit analysis, could soon become a relic of the past thanks to the revolutionary power of quantum computing. By harnessing the principles of the quantum realm, tools like <a href="https://www.ibm.com/quantum/qiskit" title="IBM Quantum Computing | Qiskit"><strong>IBM Qiskit</strong> ⧉</a> and algorithms like the <a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html#h4-quantum" title="Quantum Fourier Transform (QFT)"><strong>Quantum Fourier Transform (QFT)</strong></a> are poised to transform credit ratio analysis, bringing unprecedented accuracy and speed to this critical financial practice.</p>
 <p>In an era where data-driven decision-making is paramount, the banking and financial industry continually seeks technological advancements to refine its analysis and risk assessment methods. At the heart of this quest lies the innovative integration of quantum computing, particularly through tools like <a href="https://www.ibm.com/quantum/qiskit" title="IBM Quantum Computing | Qiskit"><strong>IBM Qiskit</strong> ⧉</a> and algorithms such as the <a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html#h4-quantum" title="Quantum Fourier Transform (QFT)"><strong>Quantum Fourier Transform (QFT)</strong></a>. This article delves into how these quantum technologies are specifically transforming credit ratio analysis, a critical component in evaluating financial stability and creditworthiness.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" fetchpriority="high"></p>
 <h2 id="insight">Insight <a class="heading-anchor" href="#insight" aria-label="Link to Insight">#</a></h2>
 <h3 id="quantum-computing-in-finance">Quantum Computing in Finance <a class="heading-anchor" href="#quantum-computing-in-finance" aria-label="Link to Quantum Computing in Finance">#</a></h3>
 <p>Imagine a computational revolution, where information dances at speeds and complexities beyond the grasp of classical computers. This is the promise of quantum computing, leveraging the bizarre physics of the quantum realm to unlock an entirely new dimension of processing power. In the heart of finance, where rapid, precise analysis of voluminous and intricate data reigns supreme, quantum computing emerges as a game-changer.</p>
 <p>Quantum computing leverages the principles of quantum mechanics to process information in ways unattainable by classical computers. In finance, this advanced computational capability can significantly enhance complex models and algorithms. Quantum algorithms, particularly, offer unprecedented speed and efficiency in solving certain types of problems.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="idea">Idea <a class="heading-anchor" href="#idea" aria-label="Link to Idea">#</a></h2>
 <h3 id="ibm-qiskit-and-quantum-fourier-transform">IBM Qiskit and Quantum Fourier Transform <a class="heading-anchor" href="#ibm-qiskit-and-quantum-fourier-transform" aria-label="Link to IBM Qiskit and Quantum Fourier Transform">#</a></h3>
 <p><a href="https://www.ibm.com/quantum/qiskit" title="IBM Quantum Computing | Qiskit"><strong>IBM Qiskit</strong> ⧉</a>, an integral tool in the quantum computing landscape, is an open-source software development framework designed for quantum computing. It enables users, ranging from novice programmers to seasoned quantum physicists, to develop, simulate, and execute quantum algorithms. One of the key components of Qiskit is its support for the <a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html#h4-quantum" title="Quantum Fourier Transform (QFT)"><strong>Quantum Fourier Transform (QFT)</strong></a>.</p>
 <p>The Quantum Fourier Transform is the quantum analogue of the classical discrete Fourier Transform. It is a cornerstone in many quantum algorithms, known for its ability to handle complex calculations efficiently. In financial applications, such as credit ratio analysis, QFT's potential lies in its capability to process financial data far more efficiently than classical methods. This efficiency stems from the QFT's ability to exploit quantum parallelism, where a quantum system can exist in multiple states simultaneously, allowing for the simultaneous processing of a large set of data.</p>
 <p>The integration of QFT into financial analysis, particularly in credit ratio analysis, is a game-changer. By leveraging QFT, financial analysts can process and analyse large datasets with greater speed and accuracy than ever before. This advancement is not just about speed; it's about the ability to uncover insights and patterns in financial data that were previously inaccessible with classical computing methods.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="impact">Impact <a class="heading-anchor" href="#impact" aria-label="Link to Impact">#</a></h2>
 <h3 id="enhancing-credit-ratio-analysis-with-qft">Enhancing Credit Ratio Analysis with QFT <a class="heading-anchor" href="#enhancing-credit-ratio-analysis-with-qft" aria-label="Link to Enhancing Credit Ratio Analysis with QFT">#</a></h3>
 <p>Credit ratio analysis is a fundamental tool in the banking and financial industry for assessing the financial stability and creditworthiness of entities. Traditionally, this analysis relies on processing large volumes of financial data, a task that can be both time-consuming and limited in accuracy with classical computing methods. The introduction of <a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html#h4-quantum" title="Quantum Fourier Transform (QFT)"><strong>Quantum Fourier Transform (QFT)</strong></a> into this process marks a significant leap forward.</p>
 <p>By applying QFT, the speed and efficiency of analysing credit ratios are exponentially increased. Quantum computing's ability to handle vast datasets rapidly enables a more thorough and nuanced analysis of credit risks. This enhanced capability is not only beneficial in terms of speed but also in terms of the depth and breadth of analysis. QFT can reveal complex patterns and correlations in financial data that are imperceptible to classical algorithms, providing a more comprehensive view of financial stability and risks.</p>
 <p>However, integrating quantum computing, and specifically QFT, into existing financial systems is not without challenges. These include technical hurdles such as the need for quantum-ready infrastructure and the complexity of quantum algorithm design. There's also a steep learning curve involved in understanding and implementing quantum computing solutions. Despite these challenges, the potential benefits of incorporating QFT in credit ratio analysis are too significant to ignore, signalling a transformative shift in financial analytics.</p>
 <p>QFT's true power lies in its ability to unveil hidden connections and patterns that elude traditional algorithms. Imagine sifting through millions of data points and discovering subtle correlations between seemingly unrelated market fluctuations, changes in consumer behavior, and even weather patterns. QFT can identify previously invisible threads weaving through the financial tapestry, painting a far richer and more accurate picture of an entity's financial health. This deeper understanding translates to more precise credit assessments, enabling banks to predict potential risks with unprecedented accuracy and make informed lending decisions that benefit both institutions and borrowers.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="incentive">Incentive <a class="heading-anchor" href="#incentive" aria-label="Link to Incentive">#</a></h2>
 <h3 id="practical-implementation">Practical Implementation <a class="heading-anchor" href="#practical-implementation" aria-label="Link to Practical Implementation">#</a></h3>
 <p>The practical implementation of <a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html#h4-quantum" title="Quantum Fourier Transform (QFT)"><strong>Quantum Fourier Transform (QFT)</strong></a> in credit ratio analysis begins with setting up <a href="https://www.ibm.com/quantum/qiskit" title="IBM Quantum Computing | Qiskit"><strong>IBM Qiskit</strong> ⧉</a>. This involves installing the Qiskit software and familiarizing oneself with its functionalities. The next step is encoding financial data into a quantum-friendly format, a process that requires a nuanced understanding of both finance and quantum computing.</p>
@@ -204,12 +206,12 @@
 <p>To illustrate these steps, real-world case studies or examples can be highly beneficial. These could include instances where financial institutions have successfully implemented quantum computing in their credit analysis processes, demonstrating the practical applications and benefits of this technology.</p>
 <p>The process of implementing QFT in financial analysis is not just a technical challenge but also an opportunity for innovation in the financial sector. It represents a significant step towards more sophisticated and efficient financial models, driven by the unparalleled capabilities of quantum computing.</p>
 <p>While integrating QFT into existing financial systems presents technical hurdles, the future is far from bleak. Rapid advancements in quantum-ready infrastructure and the development of increasingly user-friendly quantum algorithms are steadily bridging the gap between theoretical potential and practical application. With continued research and collaboration, the transformative power of QFT in credit analysis is closer than ever to becoming a reality.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="conclusion">Conclusion <a class="heading-anchor" href="#conclusion" aria-label="Link to Conclusion">#</a></h2>
 <p>The integration of <a href="https://www.ibm.com/quantum/qiskit" title="IBM Quantum Computing | Qiskit"><strong>IBM Qiskit</strong> ⧉</a> and <a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html#h4-quantum" title="Quantum Fourier Transform (QFT)">Quantum Fourier Transform</a> in credit ratio analysis is a clear indicator of the transformative potential of quantum computing in the financial sector. This technology is not merely an incremental improvement over existing methods; it represents a paradigm shift in how financial data is processed and analysed.</p>
 <p>As quantum computing continues to evolve and mature, its adoption in the financial industry could redefine the landscape of financial analytics and risk assessment. The implications of this technological revolution are vast, with the potential to enhance the accuracy, speed, and depth of financial analysis, ultimately leading to more informed and effective decision-making in the banking and financial industry.</p>
 <p>The future of credit analysis is quantum, and the time to explore its possibilities is now. Dive deeper into <a href="https://www.ibm.com/quantum/qiskit" title="IBM Quantum Computing | Qiskit"><strong>IBM Qiskit</strong> ⧉</a>, join online communities of quantum enthusiasts, and stay informed about the latest advancements in this rapidly evolving field. As quantum computing takes center stage in the financial landscape, those who embrace its potential stand to reap the rewards of a more informed, precise, and ultimately, prosperous future.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-05-14">2026-05-14</time>.</p>
@@ -263,13 +265,21 @@
             </ul>
           </div>
         </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Newsletter signup">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — research notes on payments, AI &amp; post-quantum crypto. No spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="you@bank.com" />
+            <input type="hidden" name="_subject" value="Newsletter signup — sebastienrousseau.com" />
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
         <div class="legal">
           <span>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</span>
           <div class="social" aria-label="Social links">
-            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
-            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
-            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
-            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
           </div>
           <p>
             <a href="/accessibility/index.html">Accessibility</a> ·
@@ -372,7 +382,7 @@
   
 <!-- SSG Search Widget -->
 <div id="ssg-search-widget">
-<link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"">
+
 <!-- Search trigger button -->
 <button id="ssg-search-btn" type="button" aria-label="Search">
 <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>

@@ -30,18 +30,19 @@
          of each block at build time and injects the 'sha256-<base64>' tokens
          into script-src below before the file is served. Browsers will then
          allow that exact byte-for-byte content and nothing else.
-         'inline-speculationrules' permits the Speculation Rules API hover
-         prerender script in postbuild.py. -->
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
         base-uri 'self';
         form-action 'self' https://formspree.io;
-        frame-ancestors 'none';
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-LARE8upOl9spLQeOCb/sApMHqV8PZ14cVsS0ZGI98As=' 'sha256-V1SHbkqYQFpFfm0Vp5Qmbqxrs6oxmVVeXUNnRV/zsDI=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' 'inline-speculationrules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-LARE8upOl9spLQeOCb/sApMHqV8PZ14cVsS0ZGI98As=' 'sha256-W6ZITUHVUUntoz4cxW85Y1e+Wjqg1a9jhRumGkZLUgk=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
-        connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
         img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
         style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
@@ -66,7 +67,7 @@
     <meta name="color-scheme" content="light dark" />
     <script src="/theme-init.js"></script>
 
-    <link rel="stylesheet" href="/_csp/7971e7e29732f95d.css" crossorigin="anonymous" integrity="sha256-qrJSYjZeRiPzFCdjyWJjpu0NZT9HEcp8/o+Z3sr0a8Y=" crossorigin="anonymous"">
+    <link rel="stylesheet" href="/_csp/2b8c3f2dade76733.css" crossorigin="anonymous" integrity="sha256-ikZedkikJ8rg0rwDR9s5gxb470yNV+YYeqUWHFtvYqs=" crossorigin="anonymous">
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="http://127.0.0.1:8000/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta property="og:title" content="AI Prompt Engineering 2024: Techniques That Work">
@@ -83,7 +84,8 @@
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp">
 <link rel="canonical" href="http://127.0.0.1:8000/2024-01-23-advancements-in-ai-prompt-engineering/index.html">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
-<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-01-23-avancees-en-ingenierie-de-prompts-ia/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script></head>
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-01-23-avancees-en-ingenierie-de-prompts-ia/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <a class="skip" href="#main">Skip to main content</a>
     <div class="ap-progress" aria-hidden="true"></div>
@@ -181,56 +183,56 @@
 <h2 id="custom-instructions-and-their-impact">Custom Instructions and Their Impact <a class="heading-anchor" href="#custom-instructions-and-their-impact" aria-label="Link to Custom Instructions and Their Impact">#</a></h2>
 <p><strong>Custom instructions</strong> have revolutionised AI interactions by enabling user-specific model control. Specifically, in corporate finance, custom prompts ensure regulatory compliance while enhancing precision in academia.</p>
 <p>Crucially, these prompts imbue cultural and contextual understanding into responses, which proves vital for marketing and education.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" fetchpriority="high"></p>
 <h2 id="multi-person-leveraging">Multi-Person Leveraging <a class="heading-anchor" href="#multi-person-leveraging" aria-label="Link to Multi-Person Leveraging">#</a></h2>
 <p><strong>Multi-persona leveraging</strong> in AI models has transformed user experiences by providing flexibility in responses. This approach is particularly effective in customer service and e-learning environments, where AI can switch between various personas to suit the user's needs. It also fosters inclusivity, allowing AI models to interact in culturally sensitive ways across different sectors, including healthcare.</p>
 <p>By designing AI models that can understand and respond in various dialects and cultural contexts, businesses can cater to a global audience more effectively. An AI system in healthcare can improve patient communication and care by being culturally sensitive and appropriate. This approach not only broadens the reach of AI applications but also fosters an environment of inclusivity and respect for cultural diversity.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="chain-of-thought-approaches">Chain of Thought Approaches <a class="heading-anchor" href="#chain-of-thought-approaches" aria-label="Link to Chain of Thought Approaches">#</a></h2>
 <p><strong>Chain-of-thought</strong> approaches have revolutionised AI problem-solving by mimicking human cognitive processes. This method is invaluable in fields requiring high levels of transparency and reliability, such as medical diagnostics and financial forecasting. By detailing their reasoning, AI models enhance their trustworthiness in high-stakes environments.</p>
 <p>Moreover, the chain-of-thought technique significantly enhances the reliability of AI systems. In medicine and finance, AI models can help experts in making more accurate and reliable decisions.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="in-model-learning-and-vector-databases">In-Model Learning and Vector Databases <a class="heading-anchor" href="#in-model-learning-and-vector-databases" aria-label="Link to In-Model Learning and Vector Databases">#</a></h2>
 <p><strong>In-model learning</strong> and <strong>vector databases</strong> represent significant advancements in AI's capability to evolve and access vast data sets. In-model learning is important in changing environments like the stock market. Vector databases are helpful for managing data in areas like biomedical research and language processing.</p>
 <p>Vector databases, on the other hand, have opened up new possibilities in AI's access to and interpretation of large data sets. By converting complex data into vector representations, AI models can process and retrieve information more efficiently, leading to quicker and more accurate responses. This technology has profound implications in fields like biomedical research and language processing, where handling vast amounts of data is a routine challenge. Vector databases enable AI models to sift through this data, extracting relevant insights and aiding in faster, more informed decision-making.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="adaptive-prompting">Adaptive Prompting <a class="heading-anchor" href="#adaptive-prompting" aria-label="Link to Adaptive Prompting">#</a></h2>
 <p>AI Prompt Engineering marks a shift towards empathetic and context-aware AI systems. It enables AI models to refine their communication based on user feedback, enhancing user experiences in customer service and online learning platforms. This approach is particularly significant in mental health applications, where AI can provide personalised support.</p>
 <p>Moreover, adaptive prompting embodies the shift towards more empathetic and context-aware AI systems. An AI can learn about human emotions, cultural differences, and situations by getting feedback from users and improving its methods. AI-powered chatbots can be very helpful in mental health. They can give personal support and advice. AI can change its responses depending on how a person is feeling and what they need. This is a big step towards making technology more human and adaptable to each person's unique needs.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="ethical-implications">Ethical Implications <a class="heading-anchor" href="#ethical-implications" aria-label="Link to Ethical Implications">#</a></h2>
 <p>Ethical considerations in <strong>AI Prompt Engineering</strong> are critical, especially in sectors where biased AI could lead to unfair outcomes. Ethical prompt engineering ensures respect for user privacy and consent, a necessity in healthcare and finance. It also extends to societal impacts, demanding fairness and transparency in AI's influence on public opinion and democratic processes.</p>
 <p>Furthermore, the ethical use of AI prompts extends to their societal impact. AI is being used more and more in education, the media, and politics. How prompts are made can greatly affect how people think, what they learn, and how democracy works. AI prompts must be fair, transparent, and unbiased to uphold equity and justice in our AI-driven world.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="quantum-computing-and-prompt-engineering">Quantum Computing and Prompt Engineering <a class="heading-anchor" href="#quantum-computing-and-prompt-engineering" aria-label="Link to Quantum Computing and Prompt Engineering">#</a></h2>
 <p><strong>Quantum computing</strong> enables creating optimal prompts faster for uses like customizing educational content per student strengths by rapidly analysing performance data. This technology also enhances AI's ability to solve complex problems, benefiting areas like cryptography and drug discovery. Quantum-enhanced AI models can optimise prompt structures, benefiting personalised medicine and financial investment strategies.</p>
 <p>Quantum computing is set to enhance <strong>AI Prompt Engineering</strong> by providing advanced computational power. It enables faster processing of complex prompts, crucial in cryptography and drug discovery. Quantum-enhanced AI models can optimise prompt structures, benefiting personalised medicine and financial investment strategies.</p>
 <p>Moreover, quantum computing's potential to solve optimisation problems can greatly enhance the effectiveness of prompt engineering. AI models can use quantum algorithms to optimise prompt structures, making them more effective in eliciting desired AI behaviours and responses. Using AI technology can improve personalised medicine and finance. AI can create individual treatment plans based on a person's genes. In finance, AI can use large amounts of market data to improve investment strategies.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="advanced-techniques-in-prompt-engineering">Advanced Techniques in Prompt Engineering <a class="heading-anchor" href="#advanced-techniques-in-prompt-engineering" aria-label="Link to Advanced Techniques in Prompt Engineering">#</a></h2>
 <p>Advanced techniques like Zero Shot and Few Shot prompting are broadening the AI's capabilities. Zero Shot prompting enables AI models to handle novel tasks, while Few Shot prompting facilitates rapid adaptation to new contexts. These methods are invaluable in bespoke content generation and personalised education.</p>
 <p>Few Shot prompting allows AI models to quickly adapt to new tasks and contexts using only a few examples. This method is instrumental in bespoke content generation, where AI can produce creative and contextually relevant outputs based on minimal input. AI tutors can use Few Shot prompting to customise their teaching for each student's needs, even in subjects they haven't learned before.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="zero-shot-and-few-shot-prompting">Zero Shot and Few-Shot Prompting <a class="heading-anchor" href="#zero-shot-and-few-shot-prompting" aria-label="Link to Zero Shot and Few-Shot Prompting">#</a></h2>
 <p>ZSL allows AI assistants to provide helpful answers to customers' novel questions across domains, reducing reliance on pre-trained abilities. FSL enables AI to adapt to new tasks with only a handful of examples, striking a balance between extensive training and flexibility. These techniques are invaluable in niche scientific research and customised language translation.</p>
 <p>Zero Shot and Few Shot Prompting techniques help the AI handle tasks without previous training. This shows that AI can easily adapt and learn new things. This versatility is key in fields with limited data, like niche scientific research, enabling AI to provide valuable insights across various topics.</p>
 <p>Few-Shot Prompting, on the other hand, requires the model to adapt to new tasks with only a handful of examples to guide its responses. This technique strikes a balance between the extensive training usually required for machine learning models and the flexibility of Zero Shot Prompting. With just a few examples, the AI can fine-tune its responses to better align with the specific requirements of the task. This is useful for customising language translation, creating specialised content, and solving unique problems. Few-Shot Prompting showcases AI's quick learning and adaptability, making it valuable for dynamic and diverse applications that require rapid adaptation.&quot;</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="enhancing-reliability-via-chain-of-thought-cot-processing">Enhancing Reliability Via Chain of Thought (CoT) Processing <a class="heading-anchor" href="#enhancing-reliability-via-chain-of-thought-cot-processing" aria-label="Link to Enhancing Reliability Via Chain of Thought (CoT) Processing">#</a></h2>
 <p>Equally important, chain-of-thought approaches now enable more transparent AI decision processes. This proves invaluable in areas like diagnostics and forecasting requiring reliable outcomes. Specifically, by detailing reasoning, AIs build trustworthiness for human experts to evaluate conclusions.</p>
 <p>Essentially, thoughtful transparency and collaboration between humans and AI significantly bolsters Precision Medicine and quantitative finance.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="self-consistency">Self-Consistency <a class="heading-anchor" href="#self-consistency" aria-label="Link to Self-Consistency">#</a></h2>
 <p>Self-Consistency in AI enhances reliability by prompting models to cross-verify their responses. This method is crucial in dynamic environments where up-to-date and consistent information is required, like in news reporting or market analysis.</p>
 <p>Furthermore, Self-Consistency plays a critical role in training and refining AI models. Through iterative self-evaluation and refinement, AI can improve its understanding and response accuracy, making it a valuable tool in continuous learning and development. Self-consistency is very important in things like language translation and cultural analysis. This is because small details and the situation can greatly affect how accurate and fitting the responses are.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="general-knowledge-prompting">General Knowledge Prompting <a class="heading-anchor" href="#general-knowledge-prompting" aria-label="Link to General Knowledge Prompting">#</a></h2>
 <p>General knowledge prompting allows AI to utilise its vast training across multiple disciplines, streamlining information gathering and providing a holistic understanding of various subjects. This feature is particularly useful in educational and trivia contexts.</p>
 <p>It serves as an invaluable tool for educators, students, and curious minds, offering a one-stop solution for inquiries across disciplines. This cross-domain knowledge connectivity enhances the usefulness of AI assistants.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="react">ReAct <a class="heading-anchor" href="#react" aria-label="Link to ReAct">#</a></h2>
 <p>ReAct enables AI to critically evaluate and build upon its outputs, fostering a dynamic and interactive conversation. This feature is beneficial in creative and problem-solving tasks, allowing AI to explore alternative perspectives and generate novel solutions.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="ethical-implications-in-ai-prompt-engineering">Ethical Implications in AI Prompt Engineering <a class="heading-anchor" href="#ethical-implications-in-ai-prompt-engineering" aria-label="Link to Ethical Implications in AI Prompt Engineering">#</a></h2>
 <p>As AI technologies continue to permeate various aspects of society, the ethical implications of <strong>AI Prompt Engineering</strong> become increasingly significant. This part emphasises the significance of ethics in creating and using AI. It also suggests practical rules and structures to make sure AI is designed ethically.</p>
 <h3 id="understanding-the-ethical-landscape">Understanding the Ethical Landscape <a class="heading-anchor" href="#understanding-the-ethical-landscape" aria-label="Link to Understanding the Ethical Landscape">#</a></h3>
@@ -248,11 +250,11 @@
 <p>Adopting established frameworks for <strong>Ethical AI development</strong> can guide prompt engineers in creating responsible AI models. Various frameworks, such as IEEE's Ethically Aligned Design and EU's Ethics Guidelines, address AI ethics in areas like transparency, accountability, and societal impact.. Integrating these frameworks into the AI development process ensures a well-rounded approach to ethical AI design.</p>
 <h3 id="addressing-future-ethical-challenges">Addressing Future Ethical Challenges <a class="heading-anchor" href="#addressing-future-ethical-challenges" aria-label="Link to Addressing Future Ethical Challenges">#</a></h3>
 <p>As AI continues to evolve, new <strong>ethical challenges</strong> will emerge. For example, the integration of AI in judicial systems or in autonomous vehicles raises complex ethical questions about decision-making and liability. Prompt engineers must stay informed about these developments and adapt their ethical practises accordingly. This involves ongoing education, collaboration with ethicists and domain experts, and public engagement to understand societal concerns and expectations.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="conclusion">Conclusion <a class="heading-anchor" href="#conclusion" aria-label="Link to Conclusion">#</a></h2>
 <p>In conclusion, ethical considerations in AI Prompt Engineering are not just a technical necessity but a societal responsibility. By following guidelines and ethical frameworks, prompt engineers can ensure beneficial, fair, and aligned use of AI technologies.</p>
 <p>AI Prompt Engineering is evolving rapidly, with significant implications for technology and finance. Mastery of this discipline is crucial for leveraging AI's full potential, from data analysis to language translation. The field is expected to see more sophisticated tools and technologies, enhancing Prompt Engineering's efficiency and effectiveness.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-05-14">2026-05-14</time>.</p>
@@ -306,13 +308,21 @@
             </ul>
           </div>
         </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Newsletter signup">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — research notes on payments, AI &amp; post-quantum crypto. No spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="you@bank.com" />
+            <input type="hidden" name="_subject" value="Newsletter signup — sebastienrousseau.com" />
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
         <div class="legal">
           <span>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</span>
           <div class="social" aria-label="Social links">
-            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
-            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
-            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
-            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
           </div>
           <p>
             <a href="/accessibility/index.html">Accessibility</a> ·
@@ -415,7 +425,7 @@
   
 <!-- SSG Search Widget -->
 <div id="ssg-search-widget">
-<link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"">
+
 <!-- Search trigger button -->
 <button id="ssg-search-btn" type="button" aria-label="Search">
 <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>

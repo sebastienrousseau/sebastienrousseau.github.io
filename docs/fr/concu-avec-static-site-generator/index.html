@@ -30,18 +30,19 @@
          of each block at build time and injects the 'sha256-<base64>' tokens
          into script-src below before the file is served. Browsers will then
          allow that exact byte-for-byte content and nothing else.
-         'inline-speculationrules' permits the Speculation Rules API hover
-         prerender script in postbuild.py. -->
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
         base-uri 'self';
         form-action 'self' https://formspree.io;
-        frame-ancestors 'none';
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-1tkBwmqAlgbQ9tQUXzJeXVNz0dVBKPkqwOay+6zkys4=' 'sha256-KWrAqhIlNYp/lylNpkzdj+L2r+OShI9XCWLTHeBSv4Q=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' 'inline-speculationrules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-2PG5FRklJgsUy1pbd8Y59MZZZ5TU0MxI6zeZDc5wtiI=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-KWrAqhIlNYp/lylNpkzdj+L2r+OShI9XCWLTHeBSv4Q=' 'sha256-aoPV7FsTZkKUQsxteaNu9JZOkUAGPBNpqYWH0Ba1Nz4=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
-        connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
         img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
         style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
@@ -66,7 +67,7 @@
     <meta name="color-scheme" content="light dark" />
     <script src="/theme-init.js"></script>
 
-    <link rel="stylesheet" href="/_csp/7971e7e29732f95d.css" crossorigin="anonymous" integrity="sha256-qrJSYjZeRiPzFCdjyWJjpu0NZT9HEcp8/o+Z3sr0a8Y=" crossorigin="anonymous"">
+    <link rel="stylesheet" href="/_csp/2b8c3f2dade76733.css" crossorigin="anonymous" integrity="sha256-ikZedkikJ8rg0rwDR9s5gxb470yNV+YYeqUWHFtvYqs=" crossorigin="anonymous">
     <link rel="alternate" type="application/atom+xml" title="Flux Atom" href="/fr/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta property="og:title" content="Conçu avec Static Site Generator — Sebastien Rousseau">
@@ -83,7 +84,8 @@
 <meta name="twitter:image" content="https://cloudcdn.pro/clients/shokunin/v1/banners/banner-shokunin.svg">
 <link rel="canonical" href="https://sebastienrousseau.com/fr/concu-avec-static-site-generator/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
-<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/made-with-static-site-generator/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/concu-avec-static-site-generator/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/made-with-static-site-generator/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script></head>
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/made-with-static-site-generator/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/concu-avec-static-site-generator/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/made-with-static-site-generator/" /><meta property="og:site_name" content="Sebastien Rousseau">
+<script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <a class="skip" href="#main">Aller au contenu principal</a>
     <div class="ap-progress" aria-hidden="true"></div>
@@ -163,7 +165,7 @@
     </section>
 
     <main id="main" class="content ap-section" aria-label="main">
-      <div class="wrap"><img alt="Bannière du Static Site Generator" src="https://cloudcdn.pro/clients/shokunin/v1/banners/banner-shokunin.svg" class="w-50 p-3 me-3 float-end" /><h2>Adoptez Static Site Generator pour une création de site sans effort</h2><p>Créer un site web ne doit pas être une entreprise complexe, coûteuse ou chronophage. Cela doit être rapide, sûr et fiable, adapté à vos besoins spécifiques. Static Site Generator répond à ces critères en offrant une solution gratuite et riche en fonctionnalités pour bâtir des sites statiques.</p><h2>Libérez la puissance de Static Site Generator</h2><p>L'interface intuitive de Static Site Generator donne du pouvoir aux débutants comme aux développeurs expérimentés. Avec lui, vous pouvez créer un site visuellement abouti et fonctionnellement solide en quelques minutes, sans écrire une seule ligne de code.</p><p><a href="https://github.com/sebastienrousseau/static-site-generator" title="Static Site Generator : le SSG le plus rapide écrit en Rust">Lancez-vous dès aujourd'hui et découvrez la puissance transformatrice de Static Site Generator ! ❯</a></p></div>
+      <div class="wrap"><img alt="Bannière du Static Site Generator" src="https://cloudcdn.pro/clients/shokunin/v1/banners/banner-shokunin.svg" class="w-50 p-3 me-3 float-end"  width="1200" height="675" decoding="async" fetchpriority="high"><h2>Adoptez Static Site Generator pour une création de site sans effort</h2><p>Créer un site web ne doit pas être une entreprise complexe, coûteuse ou chronophage. Cela doit être rapide, sûr et fiable, adapté à vos besoins spécifiques. Static Site Generator répond à ces critères en offrant une solution gratuite et riche en fonctionnalités pour bâtir des sites statiques.</p><h2>Libérez la puissance de Static Site Generator</h2><p>L'interface intuitive de Static Site Generator donne du pouvoir aux débutants comme aux développeurs expérimentés. Avec lui, vous pouvez créer un site visuellement abouti et fonctionnellement solide en quelques minutes, sans écrire une seule ligne de code.</p><p><a href="https://github.com/sebastienrousseau/static-site-generator" title="Static Site Generator : le SSG le plus rapide écrit en Rust">Lancez-vous dès aujourd'hui et découvrez la puissance transformatrice de Static Site Generator ! ❯</a></p></div>
     </main>
 
 <!-- gen-layouts:footer-start -->
@@ -204,13 +206,21 @@
             </ul>
           </div>
         </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Inscription à la newsletter">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — notes de recherche sur les paiements, l'IA et la cryptographie post-quantique. Pas de spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="vous@banque.com" />
+            <input type="hidden" name="_subject" value="Inscription newsletter — sebastienrousseau.com" />
+            <button type="submit">S'inscrire</button>
+          </div>
+        </form>
         <div class="legal">
           <span>© Copyright 2007 - 2026 - Sebastien Rousseau. Tous droits réservés.</span>
           <div class="social" aria-label="Liens sociaux">
-            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
-            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
-            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
-            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
           </div>
           <p>
             <a href="/fr/accessibilite/index.html">Accessibilité</a> ·
@@ -222,87 +232,7 @@
     </footer>
 
     <!-- Schema.org structured data -->
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://sebastienrousseau.com/#person",
-      "name": "Sebastien Rousseau",
-      "givenName": "Sebastien",
-      "familyName": "Rousseau",
-      "url": "https://sebastienrousseau.com/",
-      "image": "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png",
-      "jobTitle": "Senior Product Manager",
-      "description": "AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "HSBC Commercial & Investment Bank",
-        "url": "https://www.hsbc.com/"
-      },
-      "alumniOf": [
-        {"@type": "Organization", "name": "PayPal"},
-        {"@type": "Organization", "name": "Barclays"},
-        {"@type": "Organization", "name": "Shazam Entertainment"},
-        {"@type": "Organization", "name": "AKQA"},
-        {"@type": "Organization", "name": "Virgin Group"}
-      ],
-      "memberOf": {
-        "@type": "ProgramMembership",
-        "programName": "Quantum-Safe Cryptography Working Group",
-        "hostingOrganization": {
-          "@type": "Organization",
-          "name": "Emerging Payments Association Asia",
-          "url": "https://emergingpaymentsasia.org/"
-        }
-      },
-      "knowsAbout": [
-        "Applied artificial intelligence in banking",
-        "Generative AI for financial services",
-        "Wholesale payments",
-        "ISO 20022 migration",
-        "SWIFT gpi",
-        "SEPA Instant Payments",
-        "Cross-border payments",
-        "Post-quantum cryptography",
-        "CRYSTALS-Kyber",
-        "CRYSTALS-Dilithium",
-        "Quantum-safe payment authentication"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "London",
-        "addressCountry": "United Kingdom"
-      },
-      "sameAs": [
-        "https://twitter.com/wwdseb",
-        "https://www.linkedin.com/in/sebastienrousseau/",
-        "https://medium.com/@BankingOnQuantum",
-        "https://www.youtube.com/@BankingOnQuantum",
-        "https://github.com/sebastienrousseau"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://sebastienrousseau.com/#website",
-      "url": "https://sebastienrousseau.com/",
-      "name": "Sebastien Rousseau",
-      "description": "AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.",
-      "publisher": {"@id": "https://sebastienrousseau.com/#person"},
-      "inLanguage": "en-GB"
-    },
-    {
-      "@type": "ProfilePage",
-      "@id": "https://sebastienrousseau.com/#profile",
-      "mainEntity": {"@id": "https://sebastienrousseau.com/#person"},
-      "name": "Sebastien Rousseau: AI, Banking & Financial Services Expert",
-      "url": "https://sebastienrousseau.com/",
-      "inLanguage": "en-GB"
-    }
-  ]
-}
-    </script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"en-GB"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Conçu avec Static Site Generator — Sebastien Rousseau","url":"https://sebastienrousseau.com/fr/concu-avec-static-site-generator/","inLanguage":"fr"}]}</script>
 
         <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","name":"Conçu avec Static Site Generator — Sebastien Rousseau","description":"Ce site est généré avec Shokunin, un générateur de sites statiques rapide écrit en Rust.","url":"https://sebastienrousseau.com/fr/concu-avec-static-site-generator/","inLanguage":"fr","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","width":"100vw","height":"100vh"},"author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"isPartOf":{"@id":"https://sebastienrousseau.com/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Conçu avec Static Site Generator","item":"https://sebastienrousseau.com/fr/concu-avec-static-site-generator/"}]}]}</script>
 <script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
@@ -311,7 +241,7 @@
   
 <!-- SSG Search Widget -->
 <div id="ssg-search-widget">
-<link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"">
+
 <!-- Search trigger button -->
 <button id="ssg-search-btn" type="button" aria-label="Rechercher">
 <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>

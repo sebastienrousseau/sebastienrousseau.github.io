@@ -23,6 +23,7 @@ image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "Rust, static site generator, dynamic websites, HTML themes, templates, Markdown, YAML, JSON, TOML, post-quantum"
+last_reviewed: "2026-05-14"
 language: "en-GB"
 layout: "articles"
 locale: "en_GB"
@@ -104,21 +105,33 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html" title="Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded">
-<img alt="Stacked US dollar coins under warm light, representing tokenised money-market fund yield" src="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html" title="Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It">
+<img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Payments · Stablecoins · Regulation</span>
-<h3><a href="/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html" title="Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded">Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-15">May 15, 2026</time> · Sebastien Rousseau</p>
-<p>Stablecoins cannot pay yield under the GENIUS Act. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail.</p>
-<p><a class="pill ghost" href="/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html" title="Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded">Read the full story</a></p>
+<span class="newsroom-eyebrow">Applied AI · Governance · Engineering</span>
+<h3><a href="/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html" title="Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-18">May 18, 2026</time> · Sebastien Rousseau</p>
+<p>70% of banks now use agentic AI in some form; only one in five has a mature governance model. With the EU AI Act high-risk deadline twelve weeks away and autonomous adversaries operating at machine speed, this is the engineering and governance position a bank needs to hold.</p>
+<p><a class="pill ghost" href="/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html" title="Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html" title="Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded">
+<img alt="Stacked US dollar coins under warm light, representing tokenised money-market fund yield" src="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Payments · Stablecoins · Regulation</span>
+<h3><a href="/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html" title="Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded">Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-15">May 15, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Stablecoins cannot pay yield under the GENIUS Act. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html" title="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance">

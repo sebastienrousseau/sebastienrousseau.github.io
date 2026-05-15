@@ -57,6 +57,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install Python build deps
+        run: pip install --quiet -r head/requirements.txt
+
       - name: Build BASE
         working-directory: base
         run: ./build.sh

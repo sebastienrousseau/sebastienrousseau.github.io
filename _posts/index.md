@@ -23,6 +23,7 @@ image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "banking, financial services, artificial intelligence, post-quantum cryptography, blockchain technology, transformation, innovation, technology, future, Sebastien Rousseau"
+last_reviewed: "2026-05-14"
 language: "en-GB"
 layout: "index"
 locale: "en_GB"
@@ -232,6 +233,18 @@ site_software: "Static Site Generator, Rust"
 <p class="feat-sub center">Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments.</p>
 
 <div class="newsroom-grid feat-latest-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html" title="Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It">
+<img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Applied AI · Governance · Engineering</span>
+<h3><a href="/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-18">May 18, 2026</time></p>
+<p class="newsroom-excerpt">70% of banks now use agentic AI in some form; only one in five has a mature governance model. With the EU AI Act high-risk deadline twelve weeks away and autonomous adversaries operating at machine speed, this is the engineering and governance position a bank needs to hold.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html" title="Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded">

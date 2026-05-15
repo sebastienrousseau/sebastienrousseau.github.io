@@ -30,18 +30,19 @@
          of each block at build time and injects the 'sha256-<base64>' tokens
          into script-src below before the file is served. Browsers will then
          allow that exact byte-for-byte content and nothing else.
-         'inline-speculationrules' permits the Speculation Rules API hover
-         prerender script in postbuild.py. -->
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
         base-uri 'self';
         form-action 'self' https://formspree.io;
-        frame-ancestors 'none';
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-1ZGYPJs4bVrLgsAVo7LIpOQt2vi2gyU1rzgMO+8AQTI=' 'sha256-kbu4sPt/6cJLfUSqXSAhTLNVN5zoEjkE9+XgjXrzBkE=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' 'inline-speculationrules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-Na98U2uwHzJctNg0k3PsNtEgIL0W3XCNz7PUbLVhdQw=' 'sha256-kbu4sPt/6cJLfUSqXSAhTLNVN5zoEjkE9+XgjXrzBkE=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
-        connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
         img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
         style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
@@ -66,7 +67,7 @@
     <meta name="color-scheme" content="light dark" />
     <script src="/theme-init.js"></script>
 
-    <link rel="stylesheet" href="/_csp/7971e7e29732f95d.css" crossorigin="anonymous" integrity="sha256-qrJSYjZeRiPzFCdjyWJjpu0NZT9HEcp8/o+Z3sr0a8Y=" crossorigin="anonymous"">
+    <link rel="stylesheet" href="/_csp/2b8c3f2dade76733.css" crossorigin="anonymous" integrity="sha256-ikZedkikJ8rg0rwDR9s5gxb470yNV+YYeqUWHFtvYqs=" crossorigin="anonymous">
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="http://127.0.0.1:8000/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta property="og:title" content="State of AI and Quantum Computing in Banking: A 2023 Review">
@@ -83,7 +84,8 @@
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp">
 <link rel="canonical" href="http://127.0.0.1:8000/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
-<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2023-12-18-etat-ia-et-informatique-quantique-banque-revue-2023/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script></head>
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2023-12-18-etat-ia-et-informatique-quantique-banque-revue-2023/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <a class="skip" href="#main">Skip to main content</a>
     <div class="ap-progress" aria-hidden="true"></div>
@@ -179,11 +181,11 @@
 <h2 id="insight">Insight <a class="heading-anchor" href="#insight" aria-label="Link to Insight">#</a></h2>
 <p>In 2023, the intersection of <strong>Artificial Intelligence (AI)</strong> and <strong>Quantum Computing (QC)</strong> has profoundly impacted the <strong>banking and financial industry</strong>. These technologies have revolutionised the way financial institutions operate, significantly impacting payments, risk management, and cybersecurity.</p>
 <p>This article discusses the impact of <strong>open-source AI models</strong>, <strong>QC in transactional security</strong>, and <strong>regulations and governance on banking and finance</strong>.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" fetchpriority="high"></p>
 <h2 id="the-importance-of-ai-and-quantum-computing-in-the-banking-industry">The Importance of AI and Quantum Computing in the Banking Industry <a class="heading-anchor" href="#the-importance-of-ai-and-quantum-computing-in-the-banking-industry" aria-label="Link to The Importance of AI and Quantum Computing in the Banking Industry">#</a></h2>
 <p>The banking industry is undergoing a profound transformation, driven by the convergence of Artificial Intelligence (AI) and Quantum Computing (QC). These revolutionary technologies are reshaping the financial services sector, introducing unprecedented levels of efficiency, cost savings, and enhanced customer experiences.</p>
 <h3 id="ai-software-market-s-surging-revenue-a-visualization-of-growth">AI Software Market's Surging Revenue: A Visualization of Growth <a class="heading-anchor" href="#ai-software-market-s-surging-revenue-a-visualization-of-growth" aria-label="Link to AI Software Market's Surging Revenue: A Visualization of Growth">#</a></h3>
-<p><img src="https://cloudcdn.pro/stocks/diagrams/ai-software-market-revenue-2018-2025-professional.svg" alt="AI Software Market's Surging Revenue: A Visualization of Growth" title="AI Software Market's Surging Revenue: A Visualization of Growth" / class="img-fluid w-100 clearfix fade-in"></p>
+<p><img src="https://cloudcdn.pro/stocks/diagrams/ai-software-market-revenue-2018-2025-professional.svg" alt="AI Software Market's Surging Revenue: A Visualization of Growth" title="AI Software Market's Surging Revenue: A Visualization of Growth" / class="img-fluid w-100 clearfix fade-in" width="1200" height="800" decoding="async" loading="lazy"></p>
 <p>The AI software market is experiencing a remarkable growth trajectory, with annual revenue projected to reach a <strong>staggering $126 billion by 2025</strong>.</p>
 <p>This visualisation showcases the market's impressive growth from 2018 to 2025, highlighting the increasing demand for AI-powered solutions across various industries.</p>
 <h3 id="the-power-of-ai-in-banking">The Power of AI in Banking <a class="heading-anchor" href="#the-power-of-ai-in-banking" aria-label="Link to The Power of AI in Banking">#</a></h3>
@@ -205,18 +207,18 @@
 <p><strong>Customer Service</strong>: AI can augment human customer service interactions by providing proactive support, resolving queries promptly, and recommending personalised products and services. This can enhance customer satisfaction and loyalty.</p>
 </li>
 </ul>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h3 id="quantum-computing-unlocking-unparalleled-data-analysis">Quantum Computing: Unlocking Unparalleled Data Analysis <a class="heading-anchor" href="#quantum-computing-unlocking-unparalleled-data-analysis" aria-label="Link to Quantum Computing: Unlocking Unparalleled Data Analysis">#</a></h3>
 <p><a href="https://www.hsbc.com/news-and-views/news/media-releases/2023/hsbc-pioneers-quantum-protection-for-ai-powered-fx-trading" title="HSBC's Integration of Quantum Computing in Banking Operations"><strong>HSBC</strong> ⧉</a> has been at the forefront of integrating quantum computing into the financial sector. The Bank has collaborated with technology providers and research laboratories to explore the application of quantum technologies to real-world problems.</p>
 <p>HSBC was the first bank to <a href="https://www.hsbc.com/news-and-views/news/media-releases/2023/hsbc-pioneers-quantum-protection-for-ai-powered-fx-trading" title="HSBC's Integration of Quantum Computing in Banking Operations"><strong>protect AI-powered foreign exchange trading with quantum in 2023</strong> ⧉</a>. In a world-first trial, HSBC used <strong><a href="/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution</a></strong> to safeguard a €30 million trading scenario from Euros to US dollars. This trial showed that quantum technology will protect trades of any value when it becomes commercially accessible and scalable.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="the-rise-of-open-source-ai-a-paradigm-shift-in-artificial-intelligence">The Rise of Open-Source AI: A Paradigm Shift in Artificial Intelligence <a class="heading-anchor" href="#the-rise-of-open-source-ai-a-paradigm-shift-in-artificial-intelligence" aria-label="Link to The Rise of Open-Source AI: A Paradigm Shift in Artificial Intelligence">#</a></h2>
 <p>The year 2023 has witnessed a remarkable surge in the adoption of open-source AI technology, particularly in the realm of <strong>Large Language Models (LLMs)</strong>. Open-source AI refers to AI software and tools whose source code is available to developers, researchers, and other stakeholders.</p>
 <p>This democratisation of AI technology has fostered significant advancements, fuelled the proliferation of open-source models, and solidified LLMs as a frontrunner in AI innovation. These models have played a pivotal role in driving innovation, enhancing decision-making, and improving risk management across various industries.</p>
 <h3 id="open-source-llms-revolutionising-the-ai-landscape">Open-Source LLMs: Revolutionising the AI Landscape <a class="heading-anchor" href="#open-source-llms-revolutionising-the-ai-landscape" aria-label="Link to Open-Source LLMs: Revolutionising the AI Landscape">#</a></h3>
 <p>Open-source LLMs, such as <a href="https://github.com/nlpxucan/WizardLM" title="WizardLM"><strong>WizardLM</strong> ⧉</a> and <a href="https://ai.meta.com/llama/" title="LLaMA 2"><strong>LLaMA 2</strong> ⧉</a>, have emerged as formidable competitors to closed-source models. For instance, <a href="https://lmsys.org/blog/2023-03-30-vicuna/" title="Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality">Vicuna ⧉</a>, an economical LLM, achieved 90% of ChatGPT's capabilities despite the entire training process costing a mere $300. <a href="https://ai.meta.com/llama/" title="LLaMA 2">LLaMA 2 ⧉</a> has set the gold standard for ethical AI by achieving the lowest violation scores to date. Open-source LLMs are more transparent and customisable than &quot;black box&quot; closed-source LLMs, which lack interpretability.</p>
 <h4>Explosive Growth of Open-Source AI Models in 2023</h4>
-<p><img src="https://cloudcdn.pro/stocks/diagrams/rise-of-open-source-ai-models-bar-chart.svg" alt="Explosive Growth of Open-Source AI Models in 2023" title="Explosive Growth of Open-Source AI Models in 2023" / class="img-fluid w-100 clearfix fade-in"></p>
+<p><img src="https://cloudcdn.pro/stocks/diagrams/rise-of-open-source-ai-models-bar-chart.svg" alt="Explosive Growth of Open-Source AI Models in 2023" title="Explosive Growth of Open-Source AI Models in 2023" / class="img-fluid w-100 clearfix fade-in" width="1200" height="800" decoding="async" loading="lazy"></p>
 <p>This bar chart vividly illustrates the remarkable rise of open-source AI models in 2023, with a staggering surge in both the number of projects and the number of contributions. This trend highlights the growing significance of open-source AI in driving innovation and fostering collaboration within the AI community.</p>
 <p>Several open-source LLMs have garnered significant attention for their groundbreaking capabilities:</p>
 <ul>
@@ -241,13 +243,13 @@
 </ul>
 <h3 id="the-open-source-ai-revolution-shaping-the-future-of-ai">The Open-Source AI Revolution: Shaping the Future of AI <a class="heading-anchor" href="#the-open-source-ai-revolution-shaping-the-future-of-ai" aria-label="Link to The Open-Source AI Revolution: Shaping the Future of AI">#</a></h3>
 <p>The open-source AI revolution is fundamentally transforming the landscape of AI development, deployment, and utilisation. By making AI more accessible, affordable, and versatile, open-source technology is democratising AI's capabilities and paving the way for groundbreaking innovations and applications. As the open-source movement gains momentum, we can confidently anticipate even more transformative advancements that will shape the future of AI and its profound impact on our world.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="the-challenges-of-regulating-ai">The challenges of regulating AI <a class="heading-anchor" href="#the-challenges-of-regulating-ai" aria-label="Link to The challenges of regulating AI">#</a></h2>
 <p>Another challenge is <strong>making sure that AI systems are fair and unbiased</strong>. AI systems can perpetuate existing biases in the data they are trained on. It is therefore important to develop AI systems that are transparent and accountable, and that can be audited to identify and address potential biases.</p>
 <p>Finally, it is important to <strong>establish ethical guidelines for the development and deployment of AI</strong>. AI systems should be designed and used in a way that is responsible and respectful of human rights. For example, AI systems should not be used to harm or exploit individuals, and they should not be used to invade individuals' privacy.</p>
 <p>Addressing these challenges will require a multi-stakeholder approach that involves governments, businesses, researchers, and civil society. It is important to start the conversation now about how to regulate AI in a way that balances the need for privacy and security with the need for innovation.</p>
 <h2 id="the-state-of-ai-governance">The State of AI Governance <a class="heading-anchor" href="#the-state-of-ai-governance" aria-label="Link to The State of AI Governance">#</a></h2>
-<p><img src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" alt="The State of AI Governance" title="AI Regulations" / class="fade-in w-100 p-3 me-3 img-thumbnail "></p>
+<p><img src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" alt="The State of AI Governance" title="AI Regulations" / class="fade-in w-100 p-3 me-3 img-thumbnail " width="1200" height="675" decoding="async" loading="lazy"></p>
 <p>In 2023, <strong>significant global initiatives and developments have shaped the landscape of AI governance and regulation</strong>. These activities reflect the growing recognition of the <a href="https://www.spglobal.com/en/research-insights/featured/special-editorial/the-ai-governance-challenge" title="The AI Governance Challenge"><strong>need for robust frameworks to oversee the development and deployment of AI technologies</strong> ⧉</a>.</p>
 <p>In the United States, President Joe Biden issued an <a href="https://carnegieendowment.org/2023/11/14/future-of-ai-governance-conversation-with-arati-prabhakar-event-8195" title="The Future of AI Governance: A Conversation with Arati Prabhakar"><strong>executive order to manage the risks associated with AI and support international efforts to govern AI</strong> ⧉</a>. The White House <a href="https://www.whitehouse.gov/ostp/" title="Office of Science and Technology Policy"><strong>Office of Science and Technology Policy (OSTP)</strong> ⧉</a> has been engaged in extensive discussions with researchers, companies, and civil society to inform AI governance. The U.S. is working with its allies and partners on AI governance, including participation in the G7 Hiroshima AI Process and the United Kingdom's <a href="https://www.aisafetysummit.gov.uk/" title="AI Safety Summit"><strong>AI Safety Summit</strong> ⧉</a>.</p>
 <p>The UK hosted the inaugural <a href="https://www.aisafetysummit.gov.uk/" title="AI Safety Summit"><strong>AI Safety Summit</strong> ⧉</a>, bringing global government leaders together to discuss the <a href="https://www.cov.com/en/news-and-insights/insights/2023/12/international-developments-in-ai-governance-same-goal-different-paths" title="International developments in AI governance: same goal, different paths"><strong>risks of AI and internationally coordinated action</strong> ⧉</a>.</p>
@@ -255,17 +257,17 @@
 <p>MIT leaders and scholars released a set of policy briefs on AI governance to help policymakers create better oversight. <a href="https://news.mit.edu/2023/mit-group-releases-white-papers-governance-ai-1211" title="MIT group releases white papers on governance of AI"><strong>A Framework for U.S. AI Governance: Creating a Safe and Thriving AI Sector</strong> ⧉</a> proposes that existing government entities regulate AI tools.</p>
 <p>More than 60 countries in the Americas, Africa, Asia, and Europe have published national AI strategies, reflecting the global momentum towards AI governance. China has been active in launching principles and regulations, including the <a href="https://www.fmprc.gov.cn/mfa_eng/wjdt_665385/2649_665393/202310/t20231020_11164834.html" title="Global AI Governance Initiative"><strong>Global AI Governance Initiative</strong> ⧉</a> and the <a href="http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm" title="Interim Measures for Generative Artificial Intelligence Service Management"><strong>Interim Administrative Measures for the Management of Generative AI Services</strong> ⧉</a>.</p>
 <p>These initiatives and developments show the growing need for coordinated national and international efforts to provide responsible AI development and deployment. While progress has been made, AI's complex and rapidly evolving nature presents ongoing challenges that require continued attention.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="conclusion">Conclusion <a class="heading-anchor" href="#conclusion" aria-label="Link to Conclusion">#</a></h2>
 <p>The year 2023 has seen significant advancements in the fields of AI and QC, particularly in the banking industry. HSBC's pioneering use of quantum protection for AI-powered trading represents a significant milestone in the application of these technologies in the banking sector. Open-source models have accelerated AI maturity, while MIT's white papers on AI governance provide a roadmap for regulation. These developments will shape the future of AI and QC, with profound implications for banking and finance.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <p><strong>Want to learn more about the impact of AI and Quantum Computing on the banking industry?</strong></p>
 <p><em>In closing, I hope this article has sparked your interest in the transformative power of AI and Quantum Computing in the banking industry.</em></p>
 <p><em>If you're eager to learn more about the intersection of AI and Quantum Computing in the banking industry, don't hesitate to reach out to me on <a href="https://www.linkedin.com/in/sebastienrousseau/" title="Sebastien Rousseau on LinkedIn"><strong>LinkedIn</strong> ⧉</a> or via the <a href="https://sebastienrousseau.com/contact/index.html" title="Contact Sebastien Rousseau"><strong>Contact page</strong> ⧉</a>.</em></p>
 <p><em>You can also join me on my new YouTube channel, <a href="https://www.youtube.com/@BankingOnQuantum" title="Banking on Quantum YouTube Channel"><strong>Banking on Quantum</strong> ⧉</a>, where I'll explore the latest developments in these transformative technologies and their implications for the future of finance.</em></p>
 <p><em><a href="https://www.youtube.com/@BankingOnQuantum?sub_confirmation=1" title="Subscribe to @BankingOnQuantum YouTube Channel"><strong>Subscribe to Banking on Quantum today and stay ahead of the curve in this rapidly evolving field!</strong> ⧉</a></em></p>
 <p>Thank you again for your time and I look forward to hearing from you!</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-05-14">2026-05-14</time>.</p>
@@ -319,13 +321,21 @@
             </ul>
           </div>
         </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Newsletter signup">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — research notes on payments, AI &amp; post-quantum crypto. No spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="you@bank.com" />
+            <input type="hidden" name="_subject" value="Newsletter signup — sebastienrousseau.com" />
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
         <div class="legal">
           <span>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</span>
           <div class="social" aria-label="Social links">
-            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
-            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
-            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
-            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
           </div>
           <p>
             <a href="/accessibility/index.html">Accessibility</a> ·
@@ -428,7 +438,7 @@
   
 <!-- SSG Search Widget -->
 <div id="ssg-search-widget">
-<link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"">
+
 <!-- Search trigger button -->
 <button id="ssg-search-btn" type="button" aria-label="Search">
 <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>

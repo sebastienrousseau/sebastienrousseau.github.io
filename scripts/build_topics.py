@@ -34,6 +34,7 @@ OUT = PUBLIC / "topics"
 TOPICS: dict[str, dict[str, object]] = {
     "post-quantum-cryptography": {
         "title": "Post-Quantum Cryptography",
+        "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
         "lede": (
             "Lattice-based cryptography, NIST PQC standards, quantum-safe payments, "
             "and the harvest-now-decrypt-later threat. Research notes, open-source "
@@ -56,6 +57,7 @@ TOPICS: dict[str, dict[str, object]] = {
     },
     "iso-20022-payments": {
         "title": "ISO 20022 & Payments",
+        "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
         "lede": (
             "Cross-border message migration, structured-address compliance, "
             "SEPA Instant, SWIFT gpi, and the wholesale-payments rails carrying "
@@ -72,6 +74,7 @@ TOPICS: dict[str, dict[str, object]] = {
     },
     "applied-ai-banking": {
         "title": "Applied AI in Banking",
+        "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
         "lede": (
             "Generative AI, multimodal LLMs, voice, and speech models — and how they "
             "reshape banking operations, customer service, and product engineering "
@@ -98,6 +101,7 @@ TOPICS: dict[str, dict[str, object]] = {
     },
     "rust-open-source": {
         "title": "Rust & Open Source",
+        "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
         "lede": (
             "Open-source Rust libraries I author and maintain: logging, code "
             "generation, date-time, cryptographic primitives, Kyber-based KEM, "
@@ -115,6 +119,7 @@ TOPICS: dict[str, dict[str, object]] = {
     },
     "blockchain-digital-assets": {
         "title": "Blockchain & Digital Assets",
+        "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
         "lede": (
             "Bitcoin, blockchain fundamentals, ERC-20 tokens, stablecoins, and the "
             "regulatory frame around digital-asset-backed payment rails."
@@ -243,6 +248,7 @@ def _build_topic_body(title: str, lede: str, cards: list[str], slug: str) -> str
         f'<h1>{html.escape(title)}</h1>'
         f'<p class="topic-lede">{html.escape(lede)}</p>'
         '</header>'
+        '<h2 class="visually-hidden">Articles in this topic</h2>'
         '<div class="newsroom-grid">' + "".join(cards) + '</div>'
         '</section>'
     )
@@ -339,12 +345,24 @@ def render_hub(shell: str) -> tuple[str, str]:
     for slug, spec in TOPICS.items():
         title = html.escape(str(spec["title"]))
         lede = html.escape(str(spec["lede"]))
+        banner = html.escape(str(spec.get("banner") or ""))
         count = len(spec["slugs"])  # type: ignore[arg-type]
         url = f"/topics/{slug}/index.html"
+        if banner:
+            media = (
+                f'<a class="newsroom-card-media" href="{url}" aria-label="{title}">'
+                f'<img src="{banner}" alt="{title} — topic banner" '
+                f'loading="lazy" decoding="async" '
+                f'width="800" height="800"></a>'
+            )
+        else:
+            media = (
+                f'<a class="newsroom-card-media" href="{url}" aria-label="{title}" '
+                'style="background:linear-gradient(135deg,var(--cl-grey-100,#f1f3f7),var(--cl-grey-200,#e3e6ed));aspect-ratio:1/1"></a>'
+            )
         cards.append(
             '<article class="newsroom-card">'
-            f'<a class="newsroom-card-media" href="{url}" aria-label="{title}" '
-            'style="background:linear-gradient(135deg,var(--cl-grey-100,#f1f3f7),var(--cl-grey-200,#e3e6ed));aspect-ratio:1/1"></a>'
+            + media +
             '<div class="newsroom-card-body">'
             '<span class="newsroom-eyebrow">PILLAR · TOPIC</span>'
             f'<h3><a href="{url}">{title}</a></h3>'
@@ -362,6 +380,7 @@ def render_hub(shell: str) -> tuple[str, str]:
         '<h1>Topics</h1>'
         '<p class="topic-lede">Curated topic clusters — pick a thread and follow it through the archive.</p>'
         '</header>'
+        '<h2 class="visually-hidden">All topics</h2>'
         '<div class="newsroom-grid">' + "".join(cards) + '</div>'
         '</section>'
     )

@@ -29,6 +29,10 @@ audit-external:
 validate:
 	@python3 scripts/validate_jsonld.py --base-dir public
 
+# Search-index shape guard (EN + FR must have title/url/content/headings).
+test-search-index:
+	@python3 scripts/test_search_indexes.py
+
 # Python test suite (scripts/ utilities).
 test:
 	@python3 -m pytest tests/ -ra

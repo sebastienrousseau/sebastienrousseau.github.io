@@ -1,0 +1,5 @@
+# Runtime dependencies for the build pipeline (scripts/*.py).
+# Keep this list minimal — every package here runs in CI and locally on
+# every build. Dev tooling (ruff, pytest) is pinned in CI workflows
+# directly so it doesn't drift with the build deps.
+markdown-it-py>=3,<4

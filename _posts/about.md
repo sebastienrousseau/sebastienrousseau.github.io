@@ -23,6 +23,7 @@ image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "payments technology, digital finance, artificial intelligence, post-quantum cryptography, blockchain technology, strategic leadership, operational leadership, cross-platform product design, engineering, solution architecture"
+last_reviewed: "2026-05-14"
 language: "en-GB"
 layout: "about"
 locale: "en_GB"
@@ -99,7 +100,7 @@ site_software: "Static Site Generator, Rust"
 
 ---
 
-![A very tall building that has a lot of holes in it](https://cloudcdn.pro/stocks/images/sebastien-rousseau.png).class=\"image-wrapper float-sm-start rounded-circle w-25 float-end\"
+![Black and White Portrait of Sebastien Rousseau](https://cloudcdn.pro/stocks/images/sebastien-rousseau.png).class=\"about-portrait rounded-circle\"
 
 ## Biography
 

@@ -30,18 +30,19 @@
          of each block at build time and injects the 'sha256-<base64>' tokens
          into script-src below before the file is served. Browsers will then
          allow that exact byte-for-byte content and nothing else.
-         'inline-speculationrules' permits the Speculation Rules API hover
-         prerender script in postbuild.py. -->
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
         base-uri 'self';
         form-action 'self' https://formspree.io;
-        frame-ancestors 'none';
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-TzwHv06/BajqjG8Xv1gaFllGTUTOY4vW4y16HZvgP7g=' 'sha256-eemMVQllQbIWwvvJtO/EQ8zmGkANhRTe1dudSs9HClw=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' 'inline-speculationrules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-eemMVQllQbIWwvvJtO/EQ8zmGkANhRTe1dudSs9HClw=' 'sha256-jNNhJ5BthS0mqctYCLzC8T/p6h6DhHnxa54yIHS0oRw=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
-        connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
         img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
         style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
@@ -66,7 +67,7 @@
     <meta name="color-scheme" content="light dark" />
     <script src="/theme-init.js"></script>
 
-    <link rel="stylesheet" href="/_csp/7971e7e29732f95d.css" crossorigin="anonymous" integrity="sha256-qrJSYjZeRiPzFCdjyWJjpu0NZT9HEcp8/o+Z3sr0a8Y=" crossorigin="anonymous"">
+    <link rel="stylesheet" href="/_csp/2b8c3f2dade76733.css" crossorigin="anonymous" integrity="sha256-ikZedkikJ8rg0rwDR9s5gxb470yNV+YYeqUWHFtvYqs=" crossorigin="anonymous">
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="http://127.0.0.1:8000/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta property="og:title" content="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age">
@@ -83,7 +84,8 @@
 <meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp">
 <link rel="canonical" href="http://127.0.0.1:8000/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
-<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2023-11-19-algorithme-de-protection-a-l-ere-quantique-crystals-kyber/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script></head>
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2023-11-19-algorithme-de-protection-a-l-ere-quantique-crystals-kyber/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <a class="skip" href="#main">Skip to main content</a>
     <div class="ap-progress" aria-hidden="true"></div>
@@ -176,7 +178,7 @@
 <p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>, <a href="https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a>, <a href="https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html">Mathematical and Cryptographic Constants for Rust Security</a>.</p>
 </aside>
 <!-- lead-end -->
-<p><img src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" alt="AI, Artificial Intelligence concept,3d rendering,conceptual image" / class="img-fluid clearfix"></p>
+<p><img src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" alt="AI, Artificial Intelligence concept,3d rendering,conceptual image" / class="img-fluid clearfix" width="1200" height="675" decoding="async" fetchpriority="high"></p>
 <h2 id="insight">Insight <a class="heading-anchor" href="#insight" aria-label="Link to Insight">#</a></h2>
 <h3 id="navigating-the-quantum-threat-the-genesis-of-crystals-kyber">Navigating the Quantum Threat: The Genesis of CRYSTALS-Kyber <a class="heading-anchor" href="#navigating-the-quantum-threat-the-genesis-of-crystals-kyber" aria-label="Link to Navigating the Quantum Threat: The Genesis of CRYSTALS-Kyber">#</a></h3>
 <p>In my previous article, <a href="/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html" title="Protecting Data in the Quantum Age: The Hash Library (HSH)">Protecting Data in the Quantum Age ⧉</a>, I delved into the impending threat of quantum computing to digital security and looked at how quantum-resistant cryptography (QRC) can address it. I will explore now <code>CRYSTALS-Kyber</code>, a groundbreaking QRC algorithm that is transforming the security landscape.</p>
@@ -188,7 +190,7 @@
 <h3 id="crystals-kyber-a-paradigm-shift-in-digital-security">CRYSTALS-Kyber: A Paradigm Shift in Digital Security <a class="heading-anchor" href="#crystals-kyber-a-paradigm-shift-in-digital-security" aria-label="Link to CRYSTALS-Kyber: A Paradigm Shift in Digital Security">#</a></h3>
 <p><code>CRYSTALS-Kyber</code> belongs to the CRYSTALS (Cryptographic Suite for Algebraic Lattices) suite of algorithms and proudly bears the distinction of being a quantum-safe algorithm (QSA).</p>
 <p>While the concept of utilising lattice problems for cryptographic purposes is not entirely new, <code>CRYSTALS-Kyber</code> elevates this concept to unparalleled levels of efficiency. Its ability to generate cryptographic keys with smaller key sizes and faster encryption and decryption speeds makes it an ideal choice for real-world applications, particularly in the demanding world of finance.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="Divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="Divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="idea">Idea <a class="heading-anchor" href="#idea" aria-label="Link to Idea">#</a></h2>
 <h3 id="understanding-crystals-kyber-s-mechanics-key-encapsulation-at-its-core">Understanding CRYSTALS-Kyber's Mechanics: Key Encapsulation at Its Core <a class="heading-anchor" href="#understanding-crystals-kyber-s-mechanics-key-encapsulation-at-its-core" aria-label="Link to Understanding CRYSTALS-Kyber's Mechanics: Key Encapsulation at Its Core">#</a></h3>
 <p>At the core of <code>CRYSTALS-Kyber</code>'s groundbreaking design lies its innovative approach to key encapsulation, a critical component of secure communication. It harnesses the power of lattice cryptography, a method renowned for its resilience against quantum-based attacks. This sophisticated technique leverages geometric structures in multidimensional space to establish cryptographic keys.</p>
@@ -196,7 +198,7 @@
 <h4>Secure Key Encapsulation: The Essence of CRYSTALS-Kyber</h4>
 <p>Key encapsulation is akin to securely locking a message in a box, where only the intended recipient has the key to open it. In the world of cryptography, this process involves creating a pair of keys: a public key, which can be shared openly, and a private key, which must be kept secret. The brilliance of <code>CRYSTALS-Kyber</code> lies in its ability to generate and use these keys in a way that ensures unparalleled security.</p>
 <p>Let's see how <code>CRYSTALS-Kyber</code> uses key encapsulation to establish secure communication between two parties, Alice and Bob. The sequence diagram below illustrates the steps involved in establishing secure communication between Alice and Bob using <code>CRYSTALS-Kyber</code>, a key encapsulation mechanism (KEM) designed to provide secure key exchange for cryptographic protocols. The KyberServer plays here a pivotal role in this process, generating and distributing the cryptographic keys required for secure communication using <code>CRYSTALS-Kyber</code>.</p>
-<p><img src="https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-kyber.svg" alt="CRYSTALS-Kyber Key Encapsulation Mechanism (KEM)" title="CRYSTALS-Kyber Key Encapsulation Mechanism (KEM)" / class="img-fluid clearfix"></p>
+<p><img src="https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-kyber.svg" alt="CRYSTALS-Kyber Key Encapsulation Mechanism (KEM)" title="CRYSTALS-Kyber Key Encapsulation Mechanism (KEM)" / class="img-fluid clearfix" width="1200" height="800" decoding="async" loading="lazy"></p>
 <h5>Legend</h5>
 <ul>
 <li>Alice: The sender of the message.</li>
@@ -240,7 +242,7 @@
 <p>Another aspect of <code>CRYSTALS-Kyber</code>'s appeal is its speed. In the fast-paced banking and financial services sector, speed is as important as security. The algorithm's design ensures that it operates swiftly, facilitating quick encryption and decryption processes. This efficiency does not come at the expense of security; instead, it is a direct result of the sophisticated mathematical foundations of the algorithm.</p>
 <h3 id="crystals-kyber-a-symbiosis-of-security-efficiency-and-speed">CRYSTALS-Kyber: A Symbiosis of Security, Efficiency, and Speed <a class="heading-anchor" href="#crystals-kyber-a-symbiosis-of-security-efficiency-and-speed" aria-label="Link to CRYSTALS-Kyber: A Symbiosis of Security, Efficiency, and Speed">#</a></h3>
 <p><code>CRYSTALS-Kyber</code> has emerged as a frontrunner in the quest for quantum-resistant cryptography, offering a unique combination of security, efficiency, and speed. Its innovative lattice-based approach, smaller key sizes, and optimised design make it an ideal choice for protecting sensitive information in the banking and financial services industry. As the world continues to embrace digital technologies, <code>CRYSTALS-Kyber</code> stands poised to play a pivotal role in safeguarding our data for years to come.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="Divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="Divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="impact">Impact <a class="heading-anchor" href="#impact" aria-label="Link to Impact">#</a></h2>
 <h3 id="crystals-kyber-advantages-for-banking-and-financial-services">CRYSTALS-Kyber: Advantages for Banking and Financial Services <a class="heading-anchor" href="#crystals-kyber-advantages-for-banking-and-financial-services" aria-label="Link to CRYSTALS-Kyber: Advantages for Banking and Financial Services">#</a></h3>
 <p>The banking and financial services industry is in a constant race to stay ahead of increasingly sophisticated cyber threats. In this context, <code>CRYSTALS-Kyber</code> stands out not only for its quantum-resistant (QR) properties but also for the tangible benefits it offers to this industry. This section delves into the practical advantages of <code>CRYSTALS-Kyber</code>, emphasising why it is particularly well-suited for the unique needs of financial institutions.</p>
@@ -258,7 +260,7 @@
 <p><strong>Regulatory Compliance and Competitive Advantage</strong>: As regulators worldwide begin to acknowledge the quantum threat, they are likely to mandate the adoption of quantum-resistant algorithms. Early adoption of <code>CRYSTALS-Kyber</code> positions financial institutions as leaders in compliance and security. Additionally, it offers a competitive edge, reassuring clients and partners of the institution's dedication to cutting-edge security practices.</p>
 </li>
 </ul>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="Divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="Divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="incentives">Incentives <a class="heading-anchor" href="#incentives" aria-label="Link to Incentives">#</a></h2>
 <h3 id="the-case-for-adopting-crystals-kyber">The Case for Adopting CRYSTALS-Kyber <a class="heading-anchor" href="#the-case-for-adopting-crystals-kyber" aria-label="Link to The Case for Adopting CRYSTALS-Kyber">#</a></h3>
 <p>In a landscape where cybersecurity is not just a necessity but a competitive differentiator, the banking and financial services industry stands at a critical juncture. The adoption of <code>CRYSTALS-Kyber</code> represents a strategic move, aligning with both current security needs and future technological shifts. This final section outlines the compelling incentives for integrating <code>CRYSTALS-Kyber</code> into the cryptographic infrastructure of financial services.</p>
@@ -276,13 +278,13 @@
 <p><strong>Enhancing Client Trust and Institutional Reputation</strong>: Leading financial institutions like Barclays and Deutsche Bank have adopted <code>CRYSTALS-Kyber</code> to safeguard their client data and secure their critical financial transactions. This commitment to advanced security has not only protected these institutions from potential cyberattacks but has also enhanced their reputation as trusted custodians of sensitive information.</p>
 </li>
 </ul>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="Divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="Divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="conclusion">Conclusion <a class="heading-anchor" href="#conclusion" aria-label="Link to Conclusion">#</a></h2>
 <h3 id="securing-the-financial-future-with-crystals-kyber">Securing the Financial Future with CRYSTALS-Kyber <a class="heading-anchor" href="#securing-the-financial-future-with-crystals-kyber" aria-label="Link to Securing the Financial Future with CRYSTALS-Kyber">#</a></h3>
 <p>In the face of evolving cybersecurity threats, the banking and financial services industry faces a critical choice. Traditional encryption algorithms, once considered secure, are now vulnerable to the emerging power of quantum computing. <code>CRYSTALS-Kyber</code> emerges as a beacon of security, offering a robust, efficient, and future-proof solution to protect the financial sector's digital assets.</p>
 <p>With its unique combination of QR features, operational efficiency, and smaller key sizes, <code>CRYSTALS-Kyber</code> is a game-changer for financial security. By adopting <code>CRYSTALS-Kyber</code>, institutions not only secure their current operations but also prepare for a future where quantum computing redefines cybersecurity. This proactive approach demonstrates a commitment to the highest standards of security, enhancing client trust and reinforcing the industry's resilience against evolving threats.</p>
 <p>In an increasingly interconnected and digital world, <code>CRYSTALS-Kyber</code> stands as a testament to the power of innovative, forward-thinking solutions. Its adoption by leading financial institutions like Barclays and Deutsche Bank is a powerful endorsement of its capabilities and a clear signal to the industry to embrace this quantum-resistant cryptographic solution.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="Divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="Divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <p>In closing, I trust this exploration of <code>CRYSTALS-Kyber</code> has illuminated the profound impact of quantum-resistant cryptography in the financial sector. If you're keen to delve further into this groundbreaking technology or have any queries, I invite you to connect with me on <a href="https://www.linkedin.com/in/sebastienrousseau/" title="Sebastien Rousseau on LinkedIn">LinkedIn ⧉</a> or via the <a href="/contact/index.html" title="Contact">contact page</a>.</p>
 <p>Thank you again for your time and I look forward to hearing from you.</p>
 <!-- enrich-start -->
@@ -338,13 +340,21 @@
             </ul>
           </div>
         </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Newsletter signup">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — research notes on payments, AI &amp; post-quantum crypto. No spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="you@bank.com" />
+            <input type="hidden" name="_subject" value="Newsletter signup — sebastienrousseau.com" />
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
         <div class="legal">
           <span>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</span>
           <div class="social" aria-label="Social links">
-            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
-            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
-            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
-            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
           </div>
           <p>
             <a href="/accessibility/index.html">Accessibility</a> ·
@@ -447,7 +457,7 @@
   
 <!-- SSG Search Widget -->
 <div id="ssg-search-widget">
-<link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"">
+
 <!-- Search trigger button -->
 <button id="ssg-search-btn" type="button" aria-label="Search">
 <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>

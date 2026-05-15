@@ -170,8 +170,11 @@ def render_rss(entries: list[dict[str, object]]) -> str:
         if banner:
             parts.append(f'      <enclosure url="{banner}" type="image/webp" length="0"/>')
         keywords = (e.get("keywords") or "").split(",") if isinstance(e.get("keywords"), str) else []
-        for k in (kw.strip() for kw in keywords if kw.strip()):
-            parts.append(f"      <category>{xml_escape(k)}</category>")
+        parts.extend(
+            f"      <category>{xml_escape(k)}</category>"
+            for kw in keywords
+            if (k := kw.strip())
+        )
         parts.append("    </item>")
     parts.append("  </channel>")
     parts.append("</rss>")

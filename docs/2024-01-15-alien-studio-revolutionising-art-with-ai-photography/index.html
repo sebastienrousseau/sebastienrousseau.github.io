@@ -30,18 +30,19 @@
          of each block at build time and injects the 'sha256-<base64>' tokens
          into script-src below before the file is served. Browsers will then
          allow that exact byte-for-byte content and nothing else.
-         'inline-speculationrules' permits the Speculation Rules API hover
-         prerender script in postbuild.py. -->
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
         base-uri 'self';
         form-action 'self' https://formspree.io;
-        frame-ancestors 'none';
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-e3vFmVd8+DZPn5fdfBUS1b0ExhSRNTjiusuVY3/n2eg=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'sha256-yjplkHcHkiUJ5cEDA7GtPWYJAOOGcEuZOnjv1GOM2YU=' 'self' 'inline-speculationrules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-FP1XLRCS6dmydAdw13IxZlkJ0QP8/y6Y8PuJfq0k6gA=' 'sha256-t2b1gQtC854CEaK77892j4NUoxX4S6zHCgXnAp5uhkU=' 'sha256-yjplkHcHkiUJ5cEDA7GtPWYJAOOGcEuZOnjv1GOM2YU=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com x.clarity.ms https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
-        connect-src 'self' www.googletagmanager.com https://region1.google-analytics.com https://open.spotify.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
         img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
         style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
@@ -66,7 +67,7 @@
     <meta name="color-scheme" content="light dark" />
     <script src="/theme-init.js"></script>
 
-    <link rel="stylesheet" href="/_csp/7971e7e29732f95d.css" crossorigin="anonymous" integrity="sha256-qrJSYjZeRiPzFCdjyWJjpu0NZT9HEcp8/o+Z3sr0a8Y=" crossorigin="anonymous"">
+    <link rel="stylesheet" href="/_csp/2b8c3f2dade76733.css" crossorigin="anonymous" integrity="sha256-ikZedkikJ8rg0rwDR9s5gxb470yNV+YYeqUWHFtvYqs=" crossorigin="anonymous">
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="http://127.0.0.1:8000/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta property="og:title" content="Alien Studio: My Tech-to Art Journey in Photography">
@@ -83,7 +84,8 @@
 <meta name="twitter:image" content="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp">
 <link rel="canonical" href="http://127.0.0.1:8000/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
-<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-01-15-revolution-de-l-art-par-la-photographie-ia-alien-studio/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script></head>
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-01-15-revolution-de-l-art-par-la-photographie-ia-alien-studio/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <a class="skip" href="#main">Skip to main content</a>
     <div class="ap-progress" aria-hidden="true"></div>
@@ -179,7 +181,7 @@
 <h2 id="unleashing-artistic-innovation-through-cutting-edge-technology">Unleashing Artistic Innovation through Cutting-Edge Technology <a class="heading-anchor" href="#unleashing-artistic-innovation-through-cutting-edge-technology" aria-label="Link to Unleashing Artistic Innovation through Cutting-Edge Technology">#</a></h2>
 <p>2023 was a year of profound transformation and realisation. Motivated by curiosity and a drive to innovate, I delved into cutting-edge technology, including <a href="https://www.rust-lang.org/" title="Rust Programming Language"><strong>Rust ⧉</strong></a>, <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" title="Artificial intelligence"><strong>AI ⧉</strong></a>, and <a href="https://en.wikipedia.org/wiki/Quantum_computing" title="Quantum computing"><strong>Quantum Computing ⧉</strong></a>. My aim wasn't just to understand these complex fields, but to explore their potential to shape innovative strategies.</p>
 <p>As I explored into the intricate workings of code, algorithms, and quantum theories, my professional horizon expanded exponentially. Rust, AI, and Quantum Computing all brought new ideas and expanded my creativity.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" fetchpriority="high"></p>
 <h2 id="the-tech-trio-rust-ai-and-quantum-computing">The Tech Trio - Rust, AI, and Quantum Computing <a class="heading-anchor" href="#the-tech-trio-rust-ai-and-quantum-computing" aria-label="Link to The Tech Trio - Rust, AI, and Quantum Computing">#</a></h2>
 <h3 id="rust-the-foundations-of-a-new-era">Rust: The Foundations of a New Era <a class="heading-anchor" href="#rust-the-foundations-of-a-new-era" aria-label="Link to Rust: The Foundations of a New Era">#</a></h3>
 <p>My journey started with <a href="https://www.rust-lang.org/" title="Rust Programming Language"><strong>Rust ⧉</strong></a>, a language known for its safety and performance. I was drawn to its simplicity and elegance, and I was intrigued by its potential to transform the way we build software. I was also fascinated by its potential to transform the way we think about software development.</p>
@@ -187,40 +189,40 @@
 <p>Next came <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" title="Artificial intelligence"><strong>AI ⧉</strong></a>, a field teeming with possibilities. From understanding machine learning models to experimenting with neural networks, AI has opened up a world of innovative potential.</p>
 <h3 id="quantum-computing-the-enigma">Quantum Computing: The Enigma <a class="heading-anchor" href="#quantum-computing-the-enigma" aria-label="Link to Quantum Computing: The Enigma">#</a></h3>
 <p><a href="https://en.wikipedia.org/wiki/Quantum_computing" title="Quantum computing"><strong>Quantum Computing ⧉</strong></a> was the pinnacle of my technical journey. Its perplexing concepts and mind-bending theories pushed my cognitive boundaries, offering a glimpse into the future of computing.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <h2 id="artistic-awakening">Artistic Awakening <a class="heading-anchor" href="#artistic-awakening" aria-label="Link to Artistic Awakening">#</a></h2>
 <h3 id="rediscovering-photography">Rediscovering Photography <a class="heading-anchor" href="#rediscovering-photography" aria-label="Link to Rediscovering Photography">#</a></h3>
 <p>I neglected my passion for art and photography while consumed by work and technology. But over Christmas break, I rediscovered it by visiting art collections.</p>
 <h3 id="the-humble-beginnings-of-alien-studio-blending-tech-with-art">The Humble Beginnings of Alien Studio: Blending Tech with Art <a class="heading-anchor" href="#the-humble-beginnings-of-alien-studio-blending-tech-with-art" aria-label="Link to The Humble Beginnings of Alien Studio: Blending Tech with Art">#</a></h3>
 <p>The advent of <a href="https://www.midjourney.com/explore" title="Midjourney"><strong>MidJourney v6 ⧉</strong></a> presented an unassuming yet inspiring opportunity. Its efficiency in content creation sparked a modest idea in me: could I combine my growing understanding of technology with my love for art? This thought led me to ponder a future where these two worlds could gently merge, creating something uniquely meaningful. In this quiet contemplation, the concept of Alien Studio took its first, tentative steps towards reality.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
-<p><img src="https://cloudcdn.pro/clients/alienstudio/v1/collections/odyssey/odyssey-01.webp" alt="Marigold merchant’s gaze" title="Marigold merchant’s gaze" / class="fade-in w-25 m-3 img-thumbnail float-start rounded-circle"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
+<p><img src="https://cloudcdn.pro/clients/alienstudio/v1/collections/odyssey/odyssey-01.webp" alt="Marigold merchant’s gaze" title="Marigold merchant’s gaze" / class="fade-in w-25 m-3 img-thumbnail float-start rounded-circle" width="800" height="800" decoding="async" loading="lazy"></p>
 <h2 id="the-birth-of-alien-studio">The Birth of Alien Studio <a class="heading-anchor" href="#the-birth-of-alien-studio" aria-label="Link to The Birth of Alien Studio">#</a></h2>
 <h3 id="from-technology-to-art">From Technology to Art <a class="heading-anchor" href="#from-technology-to-art" aria-label="Link to From Technology to Art">#</a></h3>
 <p>The idea for Alien Studio sprang from this unique confluence of technology and art. It became a personal project, a space where I could blend my technical acumen with my artistic vision.</p>
 <h3 id="alien-studio-a-digital-renaissance">Alien Studio: A Digital Renaissance <a class="heading-anchor" href="#alien-studio-a-digital-renaissance" aria-label="Link to Alien Studio: A Digital Renaissance">#</a></h3>
 <p>At Alien Studio, every photograph is not just an image but a story, told through the lens of technology and art. It's where the precision of Rust, the intelligence of <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" title="Artificial intelligence"><strong>AI ⧉</strong></a>, and the complexities of Quantum Computing merge with the fluidity and emotion of photography.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
-<p><img src="https://cloudcdn.pro/clients/alienstudio/v1/collections/ethereal/ethereal-01.webp" alt="A lone silhouette against a fiery cosmic backdrop" title="A lone silhouette against a fiery cosmic backdrop" / class="fade-in w-25 m-3 img-thumbnail float-end rounded-circle"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
+<p><img src="https://cloudcdn.pro/clients/alienstudio/v1/collections/ethereal/ethereal-01.webp" alt="A lone silhouette against a fiery cosmic backdrop" title="A lone silhouette against a fiery cosmic backdrop" / class="fade-in w-25 m-3 img-thumbnail float-end rounded-circle" width="800" height="800" decoding="async" loading="lazy"></p>
 <h2 id="beyond-just-a-gallery">Beyond Just a Gallery <a class="heading-anchor" href="#beyond-just-a-gallery" aria-label="Link to Beyond Just a Gallery">#</a></h2>
 <h3 id="a-platform-for-exploration">A Platform for Exploration <a class="heading-anchor" href="#a-platform-for-exploration" aria-label="Link to A Platform for Exploration">#</a></h3>
 <p>Each piece here is a representation of my journey, a blend of code and canvas, algorithm and art. It's a platform for exploration, a space where I can experiment with new ideas and push the boundaries of artistic expression.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
-<p><img src="https://cloudcdn.pro/clients/alienstudio/v1/collections/metropolis/metropolis-08.webp" alt="Youthful beauty, lit by day’s end, amidst the urban flow, a silent story" title="Youthful beauty, lit by day’s end, amidst the urban flow, a silent story" / class="fade-in w-25 m-3 img-thumbnail float-start rounded-circle"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
+<p><img src="https://cloudcdn.pro/clients/alienstudio/v1/collections/metropolis/metropolis-08.webp" alt="Youthful beauty, lit by day’s end, amidst the urban flow, a silent story" title="Youthful beauty, lit by day’s end, amidst the urban flow, a silent story" / class="fade-in w-25 m-3 img-thumbnail float-start rounded-circle" width="800" height="800" decoding="async" loading="lazy"></p>
 <h2 id="impact-and-future-horizons-expanding-the-canvas-of-possibilities">Impact and Future Horizons: Expanding the Canvas of Possibilities <a class="heading-anchor" href="#impact-and-future-horizons-expanding-the-canvas-of-possibilities" aria-label="Link to Impact and Future Horizons: Expanding the Canvas of Possibilities">#</a></h2>
 <p>Alien Studio's impact lies in showcasing the immense potential of technology to elevate and transform traditional art forms. Looking ahead, the studio plans to collaborate with a diverse range of artists and technologists, pushing the boundaries of artistic expression even further. It also aims to expand its collection to include a wider range of art forms, including music, film, and literature. Ultimately, Alien Studio seeks to redefine the very concept of art, transforming it into a fluid, dynamic, and ever-evolving medium. This project aims to inspire young artists to use technology in their creations, encouraging them to create unique and extraordinary works.</p>
 <p><strong>The canvas is changing, and the possibilities are endless and exciting.</strong></p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
-<p><img src="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-13.webp" alt="Soulful explorer, sunset adventures await; freedom calls" title="Soulful explorer, sunset adventures await; freedom calls" / class="fade-in w-25 m-3 img-thumbnail float-end rounded-circle"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
+<p><img src="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-13.webp" alt="Soulful explorer, sunset adventures await; freedom calls" title="Soulful explorer, sunset adventures await; freedom calls" / class="fade-in w-25 m-3 img-thumbnail float-end rounded-circle" width="800" height="800" decoding="async" loading="lazy"></p>
 <h2 id="reflecting-on-the-journey">Reflecting on the Journey <a class="heading-anchor" href="#reflecting-on-the-journey" aria-label="Link to Reflecting on the Journey">#</a></h2>
 <h3 id="a-fusion-of-passions">A Fusion of Passions <a class="heading-anchor" href="#a-fusion-of-passions" aria-label="Link to A Fusion of Passions">#</a></h3>
 <p>This journey has been about more than just learning and applying technology. It's been about rediscovering and exploring my passions, and finding new ways to express them. Alien Studio stands as a personal milestone, a confluence of my love for technology and art, each enriching the other.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
-<p><img src="https://cloudcdn.pro/clients/alienstudio/v1/collections/serenity/serenity-01.webp" alt="Glistening dawn serenity" title="Glistening dawn serenity" / class="fade-in w-25 m-3 img-thumbnail float-start rounded-circle"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
+<p><img src="https://cloudcdn.pro/clients/alienstudio/v1/collections/serenity/serenity-01.webp" alt="Glistening dawn serenity" title="Glistening dawn serenity" / class="fade-in w-25 m-3 img-thumbnail float-start rounded-circle" width="800" height="800" decoding="async" loading="lazy"></p>
 <h2 id="visit-alien-studio">Visit Alien Studio <a class="heading-anchor" href="#visit-alien-studio" aria-label="Link to Visit Alien Studio">#</a></h2>
 <h3 id="experience-the-convergence-of-technology-and-art">Experience the Convergence of Technology and Art <a class="heading-anchor" href="#experience-the-convergence-of-technology-and-art" aria-label="Link to Experience the Convergence of Technology and Art">#</a></h3>
 <p>I invite you to visit <a href="https://web.archive.org/web/2*/https://alienstudio.com/" title="Alien Studio, pioneering the future of photography (archived)"><strong>Alien Studio ⧉</strong></a>, to see through the photographs how technology can not just complement but elevate art. Each piece is a chapter of my journey, a fusion of tech and art, waiting to be explored.</p>
-<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100"></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider" / class="m-10 w-100" width="40" height="6" decoding="async" loading="lazy"></p>
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-05-14">2026-05-14</time>.</p>
@@ -274,13 +276,21 @@
             </ul>
           </div>
         </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Newsletter signup">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — research notes on payments, AI &amp; post-quantum crypto. No spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="you@bank.com" />
+            <input type="hidden" name="_subject" value="Newsletter signup — sebastienrousseau.com" />
+            <button type="submit">Subscribe</button>
+          </div>
+        </form>
         <div class="legal">
           <span>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</span>
           <div class="social" aria-label="Social links">
-            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18" /></a>
-            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18" /></a>
-            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18" /></a>
-            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18" /></a>
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau on Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau on LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau on Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau on YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau on YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
           </div>
           <p>
             <a href="/accessibility/index.html">Accessibility</a> ·
@@ -383,7 +393,7 @@
   
 <!-- SSG Search Widget -->
 <div id="ssg-search-widget">
-<link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"">
+
 <!-- Search trigger button -->
 <button id="ssg-search-btn" type="button" aria-label="Search">
 <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>

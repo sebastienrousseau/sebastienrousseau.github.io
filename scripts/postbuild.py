@@ -82,6 +82,14 @@ jsonld_re = re.compile(
     r'<script[^>]*type=["\']?application/ld\+json["\']?[^>]*>([\s\S]*?)</script>',
     re.IGNORECASE,
 )
+# Speculation Rules also need a CSP allowance. Chrome 124+ accepts the
+# `'inline-speculation-rules'` keyword in script-src, but adding the
+# block's actual sha256 hash gives belt-and-braces coverage for older
+# browsers / unusual configs.
+speculation_re = re.compile(
+    r'<script[^>]*type=["\']?speculationrules["\']?[^>]*>([\s\S]*?)</script>',
+    re.IGNORECASE,
+)
 # Match the CSP meta tag whether attributes are quoted or not, in either order
 # (Static Site Generator's minifier emits `<meta content="..." http-equiv=Content-Security-Policy>`).
 csp_tag_re = re.compile(
@@ -96,6 +104,7 @@ content_attr_re = re.compile(
 
 def inject_jsonld_hashes(html: str) -> str:
     bodies = [m.group(1) for m in jsonld_re.finditer(html)]
+    bodies.extend(m.group(1) for m in speculation_re.finditer(html))
     if not bodies:
         return html
     hashes = sorted({b64_sha256(b.encode("utf-8")) for b in bodies})
@@ -447,6 +456,265 @@ def fix_social_image(html: str) -> str:
 
 
 # ---------------------------------------------------------------------------
+# 4d. HowTo JSON-LD for practical articles
+# ---------------------------------------------------------------------------
+#
+# Articles that walk through a procedure (CLI usage, migration steps,
+# governance checklist) get a HowTo schema so Google can render them
+# as a numbered rich result. The data is curated per-article — the
+# steps are explicit, in the right order, and decoupled from heading
+# styling so we can refactor the article without breaking the schema.
+
+HOWTO_SCHEMAS: dict[str, dict] = {
+    "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001": {
+        "name": "Generate an ISO 20022 pain.001 payment file with pain001",
+        "description": (
+            "Step-by-step procedure to install pain001, supply a CSV "
+            "instruction set and an XML template, and emit a validated "
+            "ISO 20022 pain.001.001.09 payment-initiation file."
+        ),
+        "totalTime": "PT15M",
+        "supply": ["Python 3.9+", "pain001 PyPI package", "ISO 20022 XML template",
+                   "Input CSV of payment instructions"],
+        "tool": ["pip", "Terminal", "lxml validator"],
+        "steps": [
+            ("Install pain001", "Install the package from PyPI with `pip install pain001`."),
+            ("Prepare your inputs",
+             "Place your payment-instruction CSV and your ISO 20022 XML template "
+             "in the same directory; both must follow the column layout documented "
+             "in the README."),
+            ("Run pain001",
+             "Invoke `pain001 -t template.xml -i instructions.csv -o pain001.xml`."),
+            ("Validate the output",
+             "Open the generated XML in lxml or your bank's validator; the file "
+             "should parse against the pain.001.001.09 schema with zero errors."),
+        ],
+    },
+    "2026-05-12-iso-20022-pacs008-structured-address-deadline": {
+        "name": "Migrate your pacs.008 messages to structured addresses",
+        "description": (
+            "How wholesale-payments operators bring their cross-border "
+            "messaging into compliance with the SWIFT/ISO 20022 "
+            "structured-address mandate."
+        ),
+        "totalTime": "PT3M",
+        "supply": ["pacs.008 sample messages", "Current address-quality metrics",
+                   "Mapping rules to ISO 20022 PostalAddress components"],
+        "tool": ["pacs008 parser", "ISO 20022 XML validator"],
+        "steps": [
+            ("Inventory unstructured addresses",
+             "Audit your outbound pacs.008 traffic. Any address still in a single "
+             "free-text field is in scope."),
+            ("Map fields to structured components",
+             "Decompose the address into Town, PostCode, Country, BuildingNumber, "
+             "Street and other ISO 20022 PostalAddress slots."),
+            ("Update your message generator",
+             "Patch the pacs.008 templating layer so every new message emits "
+             "structured fields by default; keep a fallback for receivers that "
+             "haven't migrated."),
+            ("Test against the deadline",
+             "Run end-to-end tests against your scheme's test harness before the "
+             "November 2026 enforcement date."),
+        ],
+    },
+}
+
+
+def _build_howto_jsonld(spec: dict) -> str:
+    steps_json = []
+    for i, (name, text) in enumerate(spec["steps"], 1):
+        steps_json.append({
+            "@type": "HowToStep",
+            "position": i,
+            "name": name,
+            "text": text,
+        })
+    payload = {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": spec["name"],
+        "description": spec["description"],
+        "totalTime": spec.get("totalTime", "PT10M"),
+        "supply": [{"@type": "HowToSupply", "name": s} for s in spec.get("supply", [])],
+        "tool": [{"@type": "HowToTool", "name": t} for t in spec.get("tool", [])],
+        "step": steps_json,
+    }
+    return f'<script type="application/ld+json">{_json.dumps(payload, separators=(",",":"))}</script>'
+
+
+def inject_howto(page: Path, html: str) -> str:
+    """Append a curated HowTo JSON-LD block to opt-in articles."""
+    slug = page.parent.name
+    spec = HOWTO_SCHEMAS.get(slug)
+    if not spec:
+        return html
+    if '"@type":"HowTo"' in html or '"@type": "HowTo"' in html:
+        return html  # Already injected — idempotent.
+    block = _build_howto_jsonld(spec)
+    return re.sub(r'</body>', block + '</body>', html, count=1)
+
+
+# ---------------------------------------------------------------------------
+# 4c. Image width/height — eliminate CLS
+# ---------------------------------------------------------------------------
+#
+# Browser allocates a placeholder of size width×height before the
+# bytes arrive; without those attrs the layout reflows once the
+# image lands → cumulative layout shift. Shokunin's Markdown
+# pipeline doesn't probe remote dimensions, so every Markdown img
+# ships unsized. Stamp them at postbuild time.
+#
+# We don't need exact dimensions — the browser uses the ratio. A
+# manifest pins the common assets to their real size; everything
+# else gets a 16:9 (1200×675) default which matches the dominant
+# banner shape used across the site.
+
+_IMG_TAG_RE = re.compile(r'<img\b([^>]*?)/?>', re.IGNORECASE)
+_IMG_SRC_RE = re.compile(r'''\bsrc=["']?([^"'\s>]+)''', re.IGNORECASE)
+
+# Known dimensions for high-frequency assets. Keep this short — the
+# default below catches everything else.
+_IMG_DIMS: dict[str, tuple[int, int]] = {
+    "https://cloudcdn.pro/clients/common/images/elements/divider.svg": (40, 6),
+    "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg": (160, 40),
+    "https://cloudcdn.pro/clients/shokunin/v1/banners/banner-shokunin.svg": (1200, 675),
+    # Personal portrait — 162×162 native, used at small sizes everywhere.
+    "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png": (162, 162),
+}
+
+# URL-prefix → (width, height). Lets us pin entire CDN folders without
+# enumerating every asset (e.g. all Alien Studio collection thumbnails
+# are 800×800; all GitHub banner SVGs are 1000×400).
+_IMG_DIMS_PREFIX: tuple[tuple[str, tuple[int, int]], ...] = (
+    ("https://cloudcdn.pro/clients/alienstudio/", (800, 800)),
+    ("https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/", (240, 60)),
+    ("https://cloudcdn.pro/clients/common/images/buttons/", (18, 18)),
+    ("https://cloudcdn.pro/stocks/diagrams/", (1200, 800)),
+)
+_IMG_DEFAULT = (1200, 675)  # 16:9 — matches the dominant banner ratio.
+
+
+def stamp_image_dimensions(html: str) -> tuple[str, int]:  # noqa: C901 — per-attr conditional ladder
+    """Add width/height + LCP/lazy hints to every <img>. Returns (html, n_patched).
+
+    First image on the page is treated as the LCP candidate and gets
+    ``fetchpriority="high"``. Everything after gets ``loading="lazy"`` +
+    ``decoding="async"`` (the divider/icon SVGs included — being decorative,
+    deferring them is harmless and saves main-thread work)."""
+    n = 0
+    seen_first = False
+
+    def patch(m: re.Match[str]) -> str:
+        nonlocal n, seen_first
+        attrs = m.group(1)
+        is_first = not seen_first
+        seen_first = True
+        has_w = bool(re.search(r'\bwidth=', attrs, re.IGNORECASE))
+        has_h = bool(re.search(r'\bheight=', attrs, re.IGNORECASE))
+        has_loading = bool(re.search(r'\bloading=', attrs, re.IGNORECASE))
+        has_decoding = bool(re.search(r'\bdecoding=', attrs, re.IGNORECASE))
+        has_fetchpri = bool(re.search(r'\bfetchpriority=', attrs, re.IGNORECASE))
+
+        if has_w and has_h and has_loading and has_decoding and (has_fetchpri or not is_first):
+            return m.group(0)
+
+        extras: list[str] = []
+        if not has_w or not has_h:
+            src_m = _IMG_SRC_RE.search(attrs)
+            src = src_m.group(1) if src_m else ""
+            if src in _IMG_DIMS:
+                w, h = _IMG_DIMS[src]
+            else:
+                w, h = _IMG_DEFAULT
+                for prefix, dims in _IMG_DIMS_PREFIX:
+                    if src.startswith(prefix):
+                        w, h = dims
+                        break
+            if not has_w:
+                extras.append(f'width="{w}"')
+            if not has_h:
+                extras.append(f'height="{h}"')
+        if not has_decoding:
+            extras.append('decoding="async"')
+        if is_first and not has_fetchpri:
+            extras.append('fetchpriority="high"')
+        elif not is_first and not has_loading:
+            extras.append('loading="lazy"')
+        if not extras:
+            return m.group(0)
+        n += 1
+        return f'<img{attrs} {" ".join(extras)}>'
+
+    return _IMG_TAG_RE.sub(patch, html), n
+
+
+# ---------------------------------------------------------------------------
+# 4b. Open Graph completeness
+# ---------------------------------------------------------------------------
+#
+# Shokunin emits `og:title`, `og:description`, `og:type` but skips
+# `og:image`, `og:url`, `og:locale`, `og:site_name` — every social
+# share renders without a preview image and without locale routing.
+# Back-fill them from data the page already carries: the BlogPosting
+# image (where present), the page's own URL, and the <html lang>.
+
+BASE_URL = "https://sebastienrousseau.com"
+SITE_NAME = "Sebastien Rousseau"
+
+_HTML_LANG_RE = re.compile(r'<html\b[^>]*\blang=["\']?([a-zA-Z-]+)', re.IGNORECASE)
+_HEAD_END_RE = re.compile(r'</head>', re.IGNORECASE)
+_OG_TAG_RE = re.compile(
+    r'<meta\s+(?:property|name)=["\']?(og:[a-z_]+|twitter:[a-z_]+)["\']?',
+    re.IGNORECASE,
+)
+
+
+def _lang_to_og_locale(lang: str) -> str:
+    """Map a BCP-47 tag to an Open Graph locale (`en_GB`, `fr_FR`)."""
+    lang = (lang or "").strip()
+    if not lang:
+        return "en_GB"
+    if "-" in lang:
+        a, b = lang.split("-", 1)
+        return f"{a.lower()}_{b.upper()}"
+    return f"{lang.lower()}_{lang.upper()}"
+
+
+def inject_og_completeness(page: Path, html: str) -> str:
+    """Ensure og:image / og:url / og:locale / og:site_name are present."""
+    rel = page.relative_to(PUBLIC).as_posix()
+    page_url = f"{BASE_URL}/{rel}" if rel != "index.html" else f"{BASE_URL}/"
+
+    lm = _HTML_LANG_RE.search(html)
+    locale = _lang_to_og_locale(lm.group(1) if lm else "en-GB")
+
+    present = {m.group(1).lower() for m in _OG_TAG_RE.finditer(html)}
+    additions: list[str] = []
+
+    if "og:url" not in present:
+        additions.append(f'<meta property="og:url" content="{page_url}">')
+    if "og:locale" not in present:
+        additions.append(f'<meta property="og:locale" content="{locale}">')
+    if "og:site_name" not in present:
+        additions.append(f'<meta property="og:site_name" content="{SITE_NAME}">')
+
+    if "og:image" not in present:
+        # Try to lift the banner from the BlogPosting graph; fall back to
+        # the site default portrait.
+        img_m = _blogposting_image_re.search(html)
+        banner = (img_m.group(1) if img_m else "") or \
+            "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+        additions.append(f'<meta property="og:image" content="{banner}">')
+        if "twitter:image" not in present:
+            additions.append(f'<meta name="twitter:image" content="{banner}">')
+
+    if not additions:
+        return html
+    block = "\n".join(additions) + "\n"
+    return _HEAD_END_RE.sub(block + "</head>", html, count=1)
+
+
+# ---------------------------------------------------------------------------
 # main
 # ---------------------------------------------------------------------------
 
@@ -523,10 +791,13 @@ Sitemap: https://sebastienrousseau.com/sitemap.xml
 Sitemap: https://sebastienrousseau.com/news-sitemap.xml
 Sitemap: https://sebastienrousseau.com/fr/news-sitemap.xml
 
-# AI-crawler directory (proposed convention, RFC pending).
-# See https://llmstxt.org/ — both files are CC BY 4.0 with attribution.
-LLMs: https://sebastienrousseau.com/llms.txt
-LLMs-Full: https://sebastienrousseau.com/llms-full.txt
+# AI-crawler directory (proposed convention, RFC pending). Per
+# https://llmstxt.org/ the canonical placement is just the file at the
+# site root — robots.txt has no standard directive for it, so we keep
+# the pointers as comments to avoid Lighthouse "Unknown directive"
+# flags. Both files are CC BY 4.0 with attribution.
+# llms:      https://sebastienrousseau.com/llms.txt
+# llms-full: https://sebastienrousseau.com/llms-full.txt
 """
 
 
@@ -1366,7 +1637,7 @@ def build_fr_title_index(pages: list[Path]) -> dict[str, str]:
 
 
 _FAQ_H2_RE = re.compile(
-    r'<h2 id="(?:frequently-asked-questions|foire-aux-questions)"[^>]*>'
+    r'<h2 id="(frequently-asked-questions|foire-aux-questions)"[^>]*>'
     r'([\s\S]+?)</h2>'
     r'([\s\S]+?)'
     r'(?=<h2|<aside|</main>|<hr|<footer)',
@@ -1383,15 +1654,17 @@ def _convert_faq_to_qa(html: str) -> str:
     soft = "Réponses." if is_fr else "Answers."
 
     def patch(m: re.Match[str]) -> str:
-        body = m.group(2)
+        faq_id = m.group(1)  # preserve original anchor so TOC links stay valid
+        body = m.group(3)
         # Strip the trailing "<a class='heading-anchor'>#</a>" inside H2.
         # Walk for Q/A pairs: <p><strong>Q?</strong></p><p>A</p>
         qa_pairs: list[tuple[str, str]] = []
         # Capture Q + multiple following <p>…</p> until next <p><strong>...?</strong></p>.
         # Build a list of P-segments first, then pair Q with the answer chunk.
-        segments: list[str] = []
-        for sm in re.finditer(r'<p>([\s\S]*?)</p>', body):
-            segments.append(sm.group(1).strip())
+        segments: list[str] = [
+            sm.group(1).strip()
+            for sm in re.finditer(r'<p>([\s\S]*?)</p>', body)
+        ]
         i = 0
         while i < len(segments):
             seg = segments[i]
@@ -1417,10 +1690,10 @@ def _convert_faq_to_qa(html: str) -> str:
             return m.group(0)
 
         new_h2 = (
-            f'<h2 id="faq-heading" class="qa-headline">{headline} '
+            f'<h2 id="{faq_id}" class="qa-headline">{headline} '
             f'<span class="qa-headline-soft">{soft}</span></h2>'
         )
-        out_parts: list[str] = [new_h2, '<section class="qa-list" aria-labelledby="faq-heading">']
+        out_parts: list[str] = [new_h2, f'<section class="qa-list" aria-labelledby="{faq_id}">']
         for q, a in qa_pairs:
             out_parts.append(
                 f'<details class="qa-item"><summary class="qa-q">{q}</summary>'
@@ -1613,6 +1886,55 @@ SPECULATION_RULES_BLOCK = (
 )
 
 
+_BODY_LINK_STYLESHEET_RE = re.compile(
+    r'<link\b[^>]*\brel=(?:"stylesheet"|stylesheet)[^>]*>',
+    re.IGNORECASE,
+)
+_BODY_END_RE = re.compile(r'</head>', re.IGNORECASE)
+
+
+def _sanitize_link_tag(tag: str) -> str:
+    """Strip the stray trailing double-quote SSG emits on the search-widget
+    stylesheet (``crossorigin="anonymous""``). Browsers treat that as an
+    attribute-value error and bail out of ``<head>`` parsing, which then
+    cascades into pa11y flagging the legitimate ``<link rel=icon>`` etc.
+    as "link in body"."""
+    # Collapse any duplicate `crossorigin="anonymous"` runs into one.
+    tag = re.sub(
+        r'(crossorigin="anonymous")(\s+crossorigin="anonymous")+',
+        r'\1', tag,
+    )
+    # Remove a trailing `"` immediately before the closing `>`.
+    tag = re.sub(r'""(\s*/?>)', r'"\1', tag)
+    return tag
+
+
+def hoist_body_link_stylesheets(html: str) -> tuple[str, int]:
+    """Hoist every in-body ``<link rel=stylesheet>`` into ``<head>`` and
+    sanitize the tag (SSG ships one with a malformed double-quote attribute
+    that breaks Chrome's head-parser). HTML5 forbids ``<link>`` in body, so
+    pa11y AAA flags this on every page shipping the SSG search widget."""
+    head_end_m = _BODY_END_RE.search(html)
+    if not head_end_m:
+        return html, 0
+    head_end = head_end_m.start()
+    head, body = html[:head_end], html[head_end:]
+
+    # Also sanitize any in-head stylesheet tags that already have the malformed
+    # attribute — a previous hoist pass may have moved them up without fixing.
+    head = _BODY_LINK_STYLESHEET_RE.sub(lambda m: _sanitize_link_tag(m.group(0)), head)
+
+    matches = list(_BODY_LINK_STYLESHEET_RE.finditer(body))
+    if not matches:
+        return head + body, 0
+    extracted: list[str] = []
+    new_body = body
+    for m in reversed(matches):
+        extracted.insert(0, _sanitize_link_tag(m.group(0)))
+        new_body = new_body[:m.start()] + new_body[m.end():]
+    return head + "".join(extracted) + new_body, len(extracted)
+
+
 def inject_speculation_rules(html: str) -> str:
     """Inject the Speculation Rules API block before </head>. Idempotent."""
     if 'type="speculationrules"' in html:
@@ -1629,7 +1951,8 @@ def inject_speculation_rules(html: str) -> str:
 # ---------------------------------------------------------------------------
 
 import json as _gh_json
-from datetime import datetime as _gh_dt, timezone as _gh_tz
+from datetime import UTC
+from datetime import datetime as _gh_dt
 
 _GH_STATS_PATH = Path("_data/gh-stats.json")
 _GH_CARD_RE = re.compile(
@@ -1671,14 +1994,9 @@ def _relative_time(iso_ts: str, fr: bool = False) -> str:
         ts = _gh_dt.fromisoformat(iso_ts.replace("Z", "+00:00"))
     except ValueError:
         return ""
-    delta = (_gh_dt.now(tz=_gh_tz.utc) - ts).total_seconds()
+    delta = (_gh_dt.now(tz=UTC) - ts).total_seconds()
     if delta < 0:
         delta = 0
-    for cutoff, fmt_fr, fmt_en in _GH_RELATIVE_LIMITS:
-        if delta < cutoff:
-            unit = max(1, int(delta * (cutoff // (cutoff // (cutoff // 60 if cutoff >= 3600 else 1))) // cutoff)) if False else 1
-            # Simpler: use the right divisor.
-            break
     if delta < 60:
         n = int(delta)
         return f"il y a {n} s" if fr else f"{n}s ago"
@@ -1718,24 +2036,29 @@ def _render_gh_badges(info: dict, fr: bool) -> str:
     pushed_rel = _relative_time(pushed, fr=fr)
     label_last = "dernier commit" if fr else "last commit"
     aria_stars = (f"{stars} étoiles" if fr else f"{stars} stars") if stars else ""
-    aria_forks = (f"{forks} forks" if fr else f"{forks} forks") if forks else ""
+    aria_forks = f"{forks} forks" if forks else ""
     parts: list[str] = []
     if stars:
         parts.append(
             f'<span class="gh-stat gh-stars" aria-label="{aria_stars}">'
-            f'★ {_format_count(stars)}</span>'
+            f'<span class="gh-ico" aria-hidden="true">★</span>'
+            f'<span class="gh-num">{_format_count(stars)}</span></span>'
         )
     if forks:
         parts.append(
             f'<span class="gh-stat gh-forks" aria-label="{aria_forks}">'
-            f'⑂ {_format_count(forks)}</span>'
+            f'<span class="gh-ico" aria-hidden="true">⑂</span>'
+            f'<span class="gh-num">{_format_count(forks)}</span></span>'
         )
     if license_id and license_id not in ("NOASSERTION", "", "OTHER"):
-        parts.append(f'<span class="gh-stat gh-license">{license_id}</span>')
+        parts.append(
+            f'<span class="gh-stat gh-license">'
+            f'<span class="gh-txt">{license_id}</span></span>'
+        )
     if pushed_rel:
         parts.append(
             f'<span class="gh-stat gh-pushed" title="{pushed[:10]}">'
-            f'{label_last} {pushed_rel}</span>'
+            f'<span class="gh-txt">{label_last} {pushed_rel}</span></span>'
         )
     if not parts:
         return ""
@@ -1912,6 +2235,10 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
     csp_patched = 0
     itemlist_patched = 0
     social_patched = 0
+    og_patched = 0
+    img_dims_patched = 0
+    howto_patched = 0
+    link_hoisted = 0
     wc_patched = 0
     about_patched = 0
     furniture_patched = 0
@@ -1934,7 +2261,15 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
         patched_si = fix_social_image(patched_il)
         if patched_si != patched_il:
             social_patched += 1
-        patched_wc = inject_word_count(patched_si)
+        patched_og = inject_og_completeness(page, patched_si)
+        if patched_og != patched_si:
+            og_patched += 1
+        patched_dim, n_dim = stamp_image_dimensions(patched_og)
+        img_dims_patched += n_dim
+        patched_howto = inject_howto(page, patched_dim)
+        if patched_howto != patched_dim:
+            howto_patched += 1
+        patched_wc = inject_word_count(patched_howto)
         if patched_wc != patched_si:
             wc_patched += 1
         patched_about = inject_about(patched_wc)
@@ -1979,7 +2314,7 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
         is_fr = page.parent.parent.name == "fr"
         # Special case: the site root /index.html. Its parent dir is
         # "public" — we treat it as the home and emit hreflang to /fr/.
-        if page.parent.name == "public" or page.name == "index.html" and page.parent == PUBLIC:
+        if page.parent.name == "public" or (page.name == "index.html" and page.parent == PUBLIC):
             _head_re = re.compile(r'</head>', re.IGNORECASE)
             _hf_re = re.compile(r'<link rel="alternate"[^>]+hreflang="[^"]+"[^/]*/>', re.IGNORECASE)
             cleaned = _hf_re.sub('', patched_nav)
@@ -2003,6 +2338,10 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
         patched_hl = inject_speculation_rules(patched_hl)
         # Live GitHub stats on project / home cards.
         patched_hl = inject_github_stats(patched_hl, gh_stats)
+        # Hoist any <link rel=stylesheet> SSG injected inside <body> back
+        # into <head> so pa11y AAA stops flagging "link in body".
+        patched_hl, n_hoisted = hoist_body_link_stylesheets(patched_hl)
+        link_hoisted += n_hoisted
         patched2 = inject_jsonld_hashes(patched_hl)
         if patched2 != patched_nav:
             csp_patched += 1
@@ -2031,6 +2370,9 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
         f"{sri_patched} got real SRI, "
         f"{itemlist_patched} got ItemList JSON-LD, "
         f"{social_patched} got og:image fixed, "
+        f"{og_patched} got og:url/locale/site_name, "
+        f"{img_dims_patched} img(s) stamped w/h, "
+        f"{howto_patched} HowTo schema(s) injected, "
         f"{wc_patched} got wordCount, "
         f"{about_patched} got about/mentions entities, "
         f"{furniture_patched} got tag badges + meta bar, "
