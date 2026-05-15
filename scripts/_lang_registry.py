@@ -186,6 +186,23 @@ def load_strings(code: str) -> dict[str, str]:
     return {k: v for k, v in data.items() if not k.startswith("_")}
 
 
+def load_author(code: str) -> dict[str, str]:
+    """Load author-card prose for ``code``.
+
+    The author-card aside at the bottom of every dated article needs
+    a localised bio + credentials-prefix string. Keys: ``bio``,
+    ``credentialsPrefix``. CI gate :mod:`scripts.test_i18n_author`
+    enforces key-set parity across languages.
+    """
+    path = I18N_DIR / code / "author.json"
+    if not path.is_file():
+        raise LanguageError(f"missing author glossary: {path}")
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise LanguageError(f"{path}: must be a JSON object")
+    return {k: v for k, v in data.items() if not k.startswith("_")}
+
+
 def load_home_patches(code: str) -> list[tuple[str, str]]:
     """Load home-page chrome patches for ``code``.
 
