@@ -984,6 +984,38 @@
     [
       "<h1>White Papers (?:&amp;|&) Research</h1>",
       "<h1>Livres blancs et recherche</h1>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/post-quantum-cryptography/[^\"]*\">Post-Quantum Cryptography</a></h3>",
+      "<h3><a href=\"/fr/sujets/post-quantum-cryptography/index.html\">Cryptographie post-quantique</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/iso-20022-payments/[^\"]*\">ISO 20022 &amp; Payments</a></h3>",
+      "<h3><a href=\"/fr/sujets/iso-20022-payments/index.html\">ISO 20022 &amp; Paiements</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/applied-ai-banking/[^\"]*\">Applied AI in Banking</a></h3>",
+      "<h3><a href=\"/fr/sujets/applied-ai-banking/index.html\">IA appliquée à la banque</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/rust-open-source/[^\"]*\">Rust &amp; Open Source</a></h3>",
+      "<h3><a href=\"/fr/sujets/rust-open-source/index.html\">Rust open source</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/blockchain-digital-assets/[^\"]*\">Blockchain &amp; Digital Assets</a></h3>",
+      "<h3><a href=\"/fr/sujets/blockchain-digital-assets/index.html\">Blockchain &amp; actifs numériques</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">Tracks to kick off the day or shift the room\\. Fashion\\-forward soul, vivid colour, and laid\\-back energy\\.</p>",
+      "<p class=\"newsroom-lede\">Des morceaux pour démarrer la journée ou changer l'ambiance. Soul élégante, couleurs vives et énergie nonchalante.</p>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">Funky disco, French touch and electro\\. Energetic listening for movement, focus or the dance floor\\.</p>",
+      "<p class=\"newsroom-lede\">Disco funky, French touch et électro. Une écoute énergique pour le mouvement, la concentration ou la piste de danse.</p>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo\\-Fi\\. The full breadth of beats\\.</p>",
+      "<p class=\"newsroom-lede\">Des sessions originales de Hip Hop au rap hardcore, en passant par le R&B contemporain et le Lo-Fi. Toute la palette des beats.</p>"
     ]
   ]
 }
