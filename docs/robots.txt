@@ -11,7 +11,35 @@ Allow: /
 User-agent: DuckDuckBot
 Allow: /
 
-# AI training + retrieval crawlers
+User-agent: Slurp
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# AI / LLM crawlers — broad citation rather than blanket block. Flip any
+# block to `Disallow: /` to opt out per-bot.
 User-agent: GPTBot
 Allow: /
 
@@ -19,12 +47,6 @@ User-agent: ChatGPT-User
 Allow: /
 
 User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Claude-Web
 Allow: /
 
 User-agent: Google-Extended
@@ -36,35 +58,54 @@ Allow: /
 User-agent: Perplexity-User
 Allow: /
 
-User-agent: Applebot
+User-agent: ClaudeBot
 Allow: /
 
-User-agent: Applebot-Extended
-Allow: /
-
-User-agent: CCBot
+User-agent: Claude-Web
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
-User-agent: Bytespider
-Allow: /
-
 User-agent: Amazonbot
 Allow: /
 
-User-agent: Meta-ExternalAgent
+User-agent: AmazonbotCommerce
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: ImagesiftBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: meta-externalfetcher
+Allow: /
+
+User-agent: facebook-externalhit-llama
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: YouBot
 Allow: /
 
 Sitemap: https://sebastienrousseau.com/sitemap.xml
 Sitemap: https://sebastienrousseau.com/news-sitemap.xml
 Sitemap: https://sebastienrousseau.com/fr/news-sitemap.xml
 
-# AI-crawler directory (proposed convention, RFC pending). Per
-# https://llmstxt.org/ the canonical placement is just the file at the
-# site root — robots.txt has no standard directive for it, so we keep
-# the pointers as comments to avoid Lighthouse "Unknown directive"
-# flags. Both files are CC BY 4.0 with attribution.
-# llms:      https://sebastienrousseau.com/llms.txt
+# llms.txt: https://sebastienrousseau.com/llms.txt
 # llms-full: https://sebastienrousseau.com/llms-full.txt

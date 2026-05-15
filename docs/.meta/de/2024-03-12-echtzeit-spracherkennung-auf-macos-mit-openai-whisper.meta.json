@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
-  "locale": "de_DE",
-  "language": "de",
-  "date": "March 12, 2024",
-  "title": "Schnelle Echtzeit-Spracherkennung auf macOS: OpenAI Whisper",
-  "banner_alt": "Banner für die automatische Spracherkennung in Echtzeit (ASR)",
   "subtitle": "Die Kraft KI-gestützter, GPU-beschleunigter Speech-to-Text-Verarbeitung auf Ihrem Mac entfesseln",
+  "title": "Schnelle Echtzeit-Spracherkennung auf macOS: OpenAI Whisper",
+  "date": "March 12, 2024",
   "description": "Wie OpenAI Whisper und Metal Performance Shaders die Echtzeit-Spracherkennung auf macOS mit unübertroffener Geschwindigkeit und Präzision transformieren.",
-  "keywords": "OpenAI Whisper, Metal Performance Shaders, Spracherkennung macOS, Echtzeit-Transkription, Sprachaktivitätserkennung, GPU-Beschleunigung, Python-Integration, Speech-to-Text macOS, energieeffiziente Sprachdetektion, Apple Silicon"
+  "banner_alt": "Banner für die automatische Spracherkennung in Echtzeit (ASR)",
+  "language": "de",
+  "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
+  "keywords": "OpenAI Whisper, Metal Performance Shaders, Spracherkennung macOS, Echtzeit-Transkription, Sprachaktivitätserkennung, GPU-Beschleunigung, Python-Integration, Speech-to-Text macOS, energieeffiziente Sprachdetektion, Apple Silicon",
+  "locale": "de_DE"
 }
