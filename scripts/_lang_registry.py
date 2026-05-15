@@ -186,6 +186,27 @@ def load_strings(code: str) -> dict[str, str]:
     return {k: v for k, v in data.items() if not k.startswith("_")}
 
 
+def load_takeaway_labels(code: str) -> dict[str, str]:
+    """Load takeaway-aside labels for ``code``.
+
+    The "Key takeaways" aside in every dated post contains rows like
+    ``<li><strong>Idea.</strong> ...</li>``; ``build_translations.py``
+    substitutes these per language. Distinct from :func:`load_strings`
+    (global UI chrome) and :func:`load_labels` (article body chrome).
+
+    Keys starting with ``_`` are documentation-only and stripped. The
+    English file is the canonical reference; CI gate
+    :mod:`scripts.test_i18n_takeaway_labels` enforces key-set parity.
+    """
+    path = I18N_DIR / code / "takeaway_labels.json"
+    if not path.is_file():
+        raise LanguageError(f"missing takeaway-labels glossary: {path}")
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise LanguageError(f"{path}: must be a JSON object")
+    return {k: v for k, v in data.items() if not k.startswith("_")}
+
+
 def load_labels(code: str) -> dict[str, str]:
     """Load body-text labels for ``code``.
 

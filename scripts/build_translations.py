@@ -446,37 +446,11 @@ _RELATED_POSTS_ASIDE_RE = re.compile(
 # English takeaway-section labels that appear inside <li><strong>…</strong>
 # in the post-lead aside. These come from the EN article's H2s and need
 # translating on every FR page.
-TAKEAWAY_LABELS_EN_TO_FR: dict[str, str] = {
-    "Idea": "Idée",
-    "Impact": "Impact",
-    "Incentives": "Incitations",
-    "Incentive": "Incitation",
-    "Insight": "Aperçu",
-    "Issues": "Enjeux",
-    "Issue": "Enjeu",
-    "Innovations": "Innovations",
-    "Innovation": "Innovation",
-    "Use Cases": "Cas d'usage",
-    "Use Case": "Cas d'usage",
-    "Limitations": "Limites",
-    "Outlook": "Perspectives",
-    "Conclusion": "Conclusion",
-    "Regulation": "Réglementation",
-    "Fraud Risks": "Risques de fraude",
-    "Sustainability": "Soutenabilité",
-    "Privacy and Security": "Vie privée et sécurité",
-    "Privacy": "Vie privée",
-    "Security": "Sécurité",
-    "Recommendations": "Recommandations",
-    "Approach": "Approche",
-    "Background": "Contexte",
-    "Methodology": "Méthodologie",
-    "Findings": "Résultats",
-    "Challenges": "Défis",
-    "Opportunities": "Opportunités",
-    "Risks": "Risques",
-    "Mitigations": "Mesures d'atténuation",
-}
+# Takeaway-aside labels — now sourced from _data/i18n/<lang>/takeaway_labels.json
+# via _lang_registry.load_takeaway_labels(). Kept as a frozen alias here so
+# legacy consumers keep working through Phase 6b; Phase 6c will move call
+# sites to read by lang_code directly.
+TAKEAWAY_LABELS_EN_TO_FR: dict[str, str] = _lang_registry.load_takeaway_labels("fr")
 
 # Compile to a single regex matched against the inner text of
 # ``<li><strong>LABEL.</strong>``. The trailing dot is preserved.
