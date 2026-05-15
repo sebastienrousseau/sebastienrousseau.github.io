@@ -15,6 +15,15 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
+    <title>ISO 20022 pacs.008 Structured-Address Migration Checklist — Free PDF</title>
+    <link href="https://sebastienrousseau.com/resources-pacs008-checklist"/>
+    <id>https://sebastienrousseau.com/resources-pacs008-checklist</id>
+    <updated>2026-05-15T06:06:06+00:00</updated>
+    <published>2026-05-15T06:06:06+00:00</published>
+    <summary>Free PDF: 23-point structured-address migration checklist for the November 2026 pacs.008 deadline. Built from EPAA, SWIFT and CBPR+ guidance. Drop your email; I&apos;ll send the link.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
     <title>Stablecoin Yield by Another Name: BlackRock&apos;s BRSRV and BSTBL Filings Decoded</title>
     <link href="https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf"/>
     <id>https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf</id>
@@ -444,15 +453,6 @@
     <updated>2023-10-01T06:06:06+00:00</updated>
     <published>2023-10-01T06:06:06+00:00</published>
     <summary>This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>No Internet Connection detected. Please try again later.</title>
-    <link href="https://sebastienrousseau.com/offline"/>
-    <id>https://sebastienrousseau.com/offline</id>
-    <updated>2023-10-01T06:06:06+00:00</updated>
-    <published>2023-10-01T06:06:06+00:00</published>
-    <summary>I apologise for the inconvenience. To continue, please connect to a Wi-Fi network or enable cellular data, you can also:</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
 </feed>
