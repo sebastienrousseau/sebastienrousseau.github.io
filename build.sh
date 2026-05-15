@@ -43,6 +43,8 @@ python3 scripts/test_search_indexes.py
 python3 scripts/test_i18n_parity.py
 python3 scripts/test_i18n_strings.py
 python3 scripts/test_hreflang_reciprocity.py
+python3 scripts/test_jsonld_localized.py
+python3 scripts/test_sitemap_completeness.py
 
 # GitHub Pages serves from main/docs, so mirror the postbuild output into
 # docs/ on every build. CNAME and .nojekyll are preserved.

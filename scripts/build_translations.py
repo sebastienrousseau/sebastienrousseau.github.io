@@ -1147,6 +1147,51 @@ def _patch_blogposting_jsonld(  # noqa: C901 — schema patch passes
     )
 
 
+def _localize_inlanguage_globally(html: str, lang: str = "fr") -> str:
+    """Walk EVERY JSON-LD block on the page and set ``inLanguage`` to
+    ``lang`` on every node that has the field.
+
+    The targeted patchers (BlogPosting, AboutPage, ContactPage, …) only
+    touch nodes they recognise — the secondary blocks that ship
+    ``WebSite`` and ``ProfilePage`` graphs from the EN layout get left
+    behind, so the FR page ends up advertising ``inLanguage="en-GB"``
+    on its WebSite node even though everything else is French. This
+    is what ``scripts/test_jsonld_localized.py`` was built to catch.
+    """
+    def walk(node: object) -> None:
+        if isinstance(node, dict):
+            if "inLanguage" in node and isinstance(node["inLanguage"], str):
+                node["inLanguage"] = lang
+            for v in node.values():
+                walk(v)
+        elif isinstance(node, list):
+            for v in node:
+                walk(v)
+
+    def fix(m: re.Match[str]) -> str:
+        raw = m.group(1)
+        if "inLanguage" not in raw:
+            return m.group(0)
+        try:
+            data = _json.loads(raw)
+        except _json.JSONDecodeError:
+            return m.group(0)
+        walk(data)
+        return (
+            '<script type="application/ld+json">'
+            + _json.dumps(data, separators=(",", ":"), ensure_ascii=False)
+            + '</script>'
+        )
+
+    # Quote-tolerant match — the minifier sometimes strips the quotes
+    # around the type attribute (`<script type=application/ld+json>`).
+    return re.sub(
+        r'<script\b[^>]*type=["\']?application/ld\+json["\']?[^>]*>([\s\S]+?)</script>',
+        fix,
+        html,
+    )
+
+
 def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | None:
     """Render one French page from English shell + French frontmatter + body.
 
@@ -1235,6 +1280,11 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
         banner=banner,
         banner_alt=banner_alt,
     )
+
+    # Localise every remaining inLanguage in JSON-LD blocks (WebSite,
+    # ProfilePage, and any other secondary graph that the targeted
+    # patchers above don't touch). Phase 2 SEO gate enforces this.
+    shell = _localize_inlanguage_globally(shell, "fr")
 
     # Breadcrumb final segment
     shell = _swap_breadcrumb(shell, slug_fr, title)
@@ -1355,6 +1405,7 @@ def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
         f'<link rel="alternate" hreflang="x-default" href="{BASE}/articles/" />'
     )
     shell = shell.replace('</head>', hreflang_block + '</head>', 1)
+    shell = _localize_inlanguage_globally(shell, "fr")
     return shell
 
 
@@ -1647,6 +1698,7 @@ def render_home() -> str | None:  # noqa: C901 — orchestrates the FR home fork
         f'<link rel="alternate" hreflang="x-default" href="{BASE}/" />'
     )
     shell = shell.replace('</head>', hreflang_block + '</head>', 1)
+    shell = _localize_inlanguage_globally(shell, "fr")
 
     return shell
 
@@ -2585,6 +2637,7 @@ def render_static_translation(slug: str) -> str | None:  # noqa: C901 — per-pa
         f'<link rel="alternate" hreflang="x-default" href="{en_url}" />'
     )
     shell = shell.replace('</head>', hreflang_block + '</head>', 1)
+    shell = _localize_inlanguage_globally(shell, "fr")
 
     return shell
 
@@ -2795,6 +2848,7 @@ def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:  # noqa: C901 
         'href="/fr/rss.xml"',
         shell,
     )
+    shell = _localize_inlanguage_globally(shell, "fr")
     return shell
 
 
