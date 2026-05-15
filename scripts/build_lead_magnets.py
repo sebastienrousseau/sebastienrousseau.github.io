@@ -50,7 +50,7 @@ def render(md: Path, out: Path) -> None:
         "--toc-depth=2",
         "--standalone",
     ]
-    subprocess.run(cmd, check=True)  # noqa: S603 — args constructed locally, no shell
+    subprocess.run(cmd, check=True)
 
 
 def main() -> int:
