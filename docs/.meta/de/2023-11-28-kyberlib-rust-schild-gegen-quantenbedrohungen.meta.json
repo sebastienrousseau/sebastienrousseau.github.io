@@ -1,11 +1,11 @@
 {
-  "description": "Robuste, quantensichere kryptografische Implementierung des CRYSTALS-Kyber-Algorithmus, um Ihre Daten vor Quantenbedrohungen und kryptanalytischen Angriffen zu schützen.",
-  "title": "KyberLib: CRYSTALS-Kyber in Rust für die Post-Quanten-Welt",
-  "banner_alt": "Sichere Kommunikation im Quantenzeitalter mit KyberLib stärken",
-  "locale": "de_DE",
-  "language": "de",
   "date": "November 28, 2023",
-  "subtitle": "KyberLib, eine robuste Rust-Implementierung von CRYSTALS-Kyber für das Quantenzeitalter",
+  "banner_alt": "Sichere Kommunikation im Quantenzeitalter mit KyberLib stärken",
+  "title": "KyberLib: CRYSTALS-Kyber in Rust für die Post-Quanten-Welt",
   "banner": "https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg",
-  "keywords": "KyberLib, Rust CRYSTALS-Kyber, Post-Quanten-Kryptografie, gitterbasierte Kryptografie, quantenresistenter Schlüsselaustausch, NIST FIPS 203, Sebastien Rousseau, KEM, Zahlungsauthentifizierung, PQC-Bibliothek"
+  "description": "Robuste, quantensichere kryptografische Implementierung des CRYSTALS-Kyber-Algorithmus, um Ihre Daten vor Quantenbedrohungen und kryptanalytischen Angriffen zu schützen.",
+  "locale": "de_DE",
+  "keywords": "KyberLib, Rust CRYSTALS-Kyber, Post-Quanten-Kryptografie, gitterbasierte Kryptografie, quantenresistenter Schlüsselaustausch, NIST FIPS 203, Sebastien Rousseau, KEM, Zahlungsauthentifizierung, PQC-Bibliothek",
+  "language": "de",
+  "subtitle": "KyberLib, eine robuste Rust-Implementierung von CRYSTALS-Kyber für das Quantenzeitalter"
 }

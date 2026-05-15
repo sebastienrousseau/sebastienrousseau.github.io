@@ -1,11 +1,11 @@
 {
-  "date": "January 1, 2018",
+  "banner_alt": "Ein Stapel Gold- und Silbermünzen auf einem Tisch",
+  "locale": "de_DE",
+  "language": "de",
   "title": "Bitcoin: Das Jahr im Rückblick der ersten Kryptowährung",
   "keywords": "Bitcoin, Kryptowährung, Blockchain, P2P, Double Spending, Mining, Proof-of-Work, ETF, Satoshi Nakamoto, dezentrale Finanzen",
-  "banner_alt": "Ein Stapel Gold- und Silbermünzen auf einem Tisch",
+  "date": "January 1, 2018",
   "description": "Bitcoin: Ein Peer-to-Peer Electronic Cash System (P2P ECS) mit dem Potenzial, die Art und Weise, wie Menschen online Geschäfte abwickeln, zu revolutionieren.",
-  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
   "subtitle": "Ein Peer-to-Peer-Zahlungssystem, das Geld neu definiert hat",
-  "language": "de",
-  "locale": "de_DE"
+  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp"
 }

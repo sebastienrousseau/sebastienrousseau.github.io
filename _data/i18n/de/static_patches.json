@@ -1,5 +1,5 @@
 {
-  "_comment": "German static-page chrome patches — DRAFT pending native-speaker review. Each entry is a [regex_pattern, replacement_string] pair. The regex matches EN content in the static-page shells (/papers/, /projects/, /topics/, etc.); the replacement is the German translation. Mirrors STATIC_BODY_PATCHES in build_translations.py.",
+  "_comment": "German static-page chrome patches — DRAFT pending native-speaker review. Each [regex, replacement] pair: regex matches EN content in the static-page shells, replacement is German. Mirrors STATIC_BODY_PATCHES in build_translations.py; entry count + ordering byte-identical to _data/i18n/fr/static_patches.json so test_i18n_render_data passes.",
   "patches": [
     [
       "<a href=\"/\">Home</a> &middot; <span>Topics</span>",
@@ -298,7 +298,7 @@
       ">Welche Art von Forschung und Publikationen veröffentlichen Sie?</summary>"
     ],
     [
-      "(<summary[^>]*>Quels types de recherches et publications publiez-vous \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "(<summary[^>]*>Welche Art von Forschung und Publikationen veröffentlichen Sie\\s*\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Zwei Schwerpunkte koexistieren. <strong>Branchen-Whitepaper</strong>, die für Organisationen wie die Emerging Payments Association Asia (EPAA) entstehen, untersuchen strukturelle Veränderungen in der Zahlungsverkehrsinfrastruktur — zuletzt die Auswirkungen kryptografisch relevanten Quantencomputings auf Wholesale- und Echtzeit-Settlement-Kanäle. <strong>Angewandte Forschungsberichte</strong> richten sich an konkrete technische Themen (etwa Echtzeit-Spracherkennung mit Whisper + Metal Performance Shaders auf Apple Silicon) und erscheinen als einzeln erwerbbare PDFs.</p></section>"
     ],
     [
@@ -306,7 +306,7 @@
       ">Wie häufig erscheinen neue Publikationen?</summary>"
     ],
     [
-      "(<summary[^>]*>À quelle fréquence publiez-vous de nouveaux articles \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "(<summary[^>]*>Wie häufig erscheinen neue Publikationen\\s*\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Unregelmäßig — Qualität geht vor Taktung. Kurze Forschungsnotizen erscheinen alle paar Wochen, sobald ein technischer Fortschritt es rechtfertigt. Whitepaper folgen Branchenzyklen (etwa regulatorischen Zeitplänen oder EPAA-Kongressen).</p></section>"
     ],
     [
@@ -390,27 +390,27 @@
       ">Wo kann ich neue Veröffentlichungen verfolgen?</summary>"
     ],
     [
-      "(<summary[^>]*>Les livres blancs sont-ils en libre lecture \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "(<summary[^>]*>Sind die Whitepaper frei lesbar\\s*\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Das EPAA-Whitepaper <em>Quantum-Safe Payments</em> steht als kostenloser öffentlicher Download auf <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> bereit. Der unabhängige Forschungsbericht zur Echtzeit-Spracherkennung mit OpenAI Whisper und Metal Performance Shaders ist lizenziert und einzeln zum Preis von 49,00 $ erhältlich (Englisch, PDF, ~95 KB). Ein Exemplar pro Käufer; Downloads ausschließlich zum persönlichen Gebrauch, keine Weitergabe.</p></section>"
     ],
     [
-      "(<summary[^>]*>Puis-je citer ces documents \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "(<summary[^>]*>Darf ich aus diesen Publikationen zitieren\\s*\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Ja. Kurze Zitate mit Quellenangabe sind im Rahmen des fair use willkommen. Für EPAA-Publikationen geben Sie bitte die EPAA als Herausgeberin zusammen mit der Arbeitsgruppe, dem Jahr und der PDF-URL an. Für unabhängige Forschungsberichte zitieren Sie in der Form: <em>Rousseau, S. (Jahr). Titel. Selbstverlag.</em> mit der kanonischen URL. Zur Reproduktion einer Abbildung oder eines längeren Auszugs <a href=\"/de/kontakt/\">kontaktieren Sie mich</a> bitte vorab.</p></section>"
     ],
     [
-      "(<summary[^>]*>À qui s’adressent ces publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "(<summary[^>]*>An welches Publikum richten sich die Publikationen\\s*\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Zahlungsverkehrs-Verantwortliche, CISOs und Senior Architects in führenden Banken, Zentralbanken, Betreibern von Zahlungsverkehrssystemen und Scheme-Eignern. Die angewandte Forschung richtet sich an Ingenieure und Produktverantwortliche, die auf Basis großer Sprachmodelle, On-Device-KI und quantenresistenter Kryptografie entwickeln. Jeder Beitrag setzt Fachkenntnis voraus und verzichtet auf Erläuterungen, die ein praktizierender Fachmann bereits beherrscht.</p></section>"
     ],
     [
-      "(<summary[^>]*>Puis-je commander une étude ou inviter à une conférence \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "(<summary[^>]*>Kann ich eine Studie in Auftrag geben oder zu einer Veranstaltung einladen\\s*\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Ja — im Einzelfall, nach Auswahl. Auftragsarbeiten beschäftigen sich mit Wholesale-Zahlungsverkehr, ISO-20022-Migration, Post-Quanten-Kryptografie für Finanzdienstleistungen und angewandter KI im Bankwesen. Vorträge auf Branchenkongressen, in Zentralbankforen und in regulatorischen Runden werden im Einzelfall geprüft. Nutzen Sie das <a href=\"/de/kontakt/\">Kontaktformular</a> und nennen Sie Thema, Publikum und Zeitplan.</p></section>"
     ],
     [
-      "(<summary[^>]*>Comment suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "(<summary[^>]*>Wie kann ich neue Publikationen verfolgen\\s*\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Neue Beiträge und Forschungsnotizen werden vorrangig über den <a href=\"/de/rss.xml\">RSS-Feed</a> der Website und den Newsletter <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> angekündigt, der Post-Quanten-Kryptografie, Zentralbankpolitik und die Migrations-Roadmap der wichtigsten Zahlungsverkehrs-Schemes abdeckt. Kein Spam — nur Neuigkeiten.</p></section>"
     ],
     [
-      "(<summary[^>]*>Où puis-je suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "(<summary[^>]*>Wo kann ich neue Veröffentlichungen verfolgen\\s*\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Abonnieren Sie den <a href=\"/de/rss.xml\">RSS-Feed</a> oder folgen Sie mir auf <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a>, um über neue Publikationen informiert zu werden.</p></section>"
     ],
     [
@@ -654,27 +654,27 @@
       ">Wie kann ich neue Veröffentlichungen verfolgen?</summary>"
     ],
     [
-      "(<summary[^>]*>Sous quelle licence ces projets sont-ils publiés \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "(<summary[^>]*>Unter welcher Lizenz werden diese Projekte veröffentlicht\\s*\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Alle Projekte werden unter der Lizenz <strong>Apache-2.0</strong> veröffentlicht. Maßgeblich ist die Datei <code>LICENSE</code> im Wurzelverzeichnis jedes Repositories.</p></section>"
     ],
     [
-      "(<summary[^>]*>Ces projets sont-ils prêts pour la production \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "(<summary[^>]*>Sind diese Projekte produktionsreif\\s*\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Das hängt vom Projekt ab. Mit <em>v1.x</em> gekennzeichnete Bibliotheken sind stabilisiert und unter Last erprobt; Pre-v1-Versionen sind solide Grundlagen, können sich aber noch weiterentwickeln. Die README jedes Repositories nennt den aktuellen Status; benötigen Sie eine spezifische Zusage für den Produktionseinsatz, <a href=\"/de/kontakt/\">kontaktieren Sie mich</a>.</p></section>"
     ],
     [
-      "(<summary[^>]*>Comment puis-je contribuer ou signaler un problème \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "(<summary[^>]*>Wie kann ich beitragen oder ein Problem melden\\s*\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Jedes Projekt verfügt über ein öffentliches GitHub-Repository unter <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Öffnen Sie ein Issue mit einer Beschreibung des Problems (ein minimales Reproduzierbeispiel ist willkommen) oder einen Pull Request, der an ein Issue gebunden ist. Beiträge unterliegen dem <em>Developer Certificate of Origin</em> und erfordern signierte Commits.</p></section>"
     ],
     [
-      "(<summary[^>]*>Puis-je utiliser ces bibliothèques dans un environnement bancaire régulé \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "(<summary[^>]*>Kann ich diese Bibliotheken in einer regulierten Bankumgebung einsetzen\\s*\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Ja, mit den üblichen Vorkehrungen. Die Bibliotheken sind unabhängige Open-Source-Arbeiten und kein reguliertes Produkt. Wenden Sie Ihre üblichen Prozesse für Supply-Chain, Sicherheit und Dependency-Review an — Vendoring über Ihren internen Mirror, SBOM-Scan, Pinning per Git-SHA oder kryptografischem Fingerabdruck — bevor Sie etwas in produktive Zahlungsverkehrsinfrastruktur ausrollen.</p></section>"
     ],
     [
-      "(<summary[^>]*>Proposez-vous du support commercial ou du conseil \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "(<summary[^>]*>Bieten Sie kommerziellen Support oder Beratung an\\s*\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Ja, nach Auswahl. Die Mandate betreffen ISO-20022-Migration, Roadmaps für die Post-Quanten-Migration und angewandte KI in Finanzdienstleistungen. <a href=\"/de/kontakt/\">Kontaktieren Sie mich</a> mit einem kurzen Briefing, Ihrem Zeitplan und etwaigen Rahmenbedingungen.</p></section>"
     ],
     [
-      "(<summary[^>]*>Comment suivre les nouvelles publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "(<summary[^>]*>Wie kann ich neue Publikationen verfolgen\\s*\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
       "\\1<section class=\"qa-a\"><p>Jeder datierte Beitrag auf der Website wird über den <a href=\"/de/rss.xml\">RSS-Feed</a> und den Newsletter <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> angekündigt. Einzelne Repositories veröffentlichen außerdem Releases auf GitHub, denen Sie direkt folgen können.</p></section>"
     ],
     [
@@ -984,6 +984,38 @@
     [
       "<h1>White Papers (?:&amp;|&) Research</h1>",
       "<h1>Whitepapers & Forschung</h1>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/post-quantum-cryptography/[^\"]*\">Post-Quantum Cryptography</a></h3>",
+      "<h3><a href=\"/de/themen/post-quantum-cryptography/index.html\">Post-Quanten-Kryptographie</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/iso-20022-payments/[^\"]*\">ISO 20022 &amp; Payments</a></h3>",
+      "<h3><a href=\"/de/themen/iso-20022-payments/index.html\">ISO 20022 &amp; Zahlungen</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/applied-ai-banking/[^\"]*\">Applied AI in Banking</a></h3>",
+      "<h3><a href=\"/de/themen/applied-ai-banking/index.html\">Angewandte KI im Banking</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/rust-open-source/[^\"]*\">Rust &amp; Open Source</a></h3>",
+      "<h3><a href=\"/de/themen/rust-open-source/index.html\">Rust Open Source</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/blockchain-digital-assets/[^\"]*\">Blockchain &amp; Digital Assets</a></h3>",
+      "<h3><a href=\"/de/themen/blockchain-digital-assets/index.html\">Blockchain &amp; Digital Assets</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">Tracks to kick off the day or shift the room\\. Fashion\\-forward soul, vivid colour, and laid\\-back energy\\.</p>",
+      "<p class=\"newsroom-lede\">Tracks für den Tagesstart oder einen Stimmungswechsel. Stilvolle Soul, lebendige Farben und entspannte Energie.</p>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">Funky disco, French touch and electro\\. Energetic listening for movement, focus or the dance floor\\.</p>",
+      "<p class=\"newsroom-lede\">Funkiger Disco, French Touch und Electro. Energiegeladene Musik für Bewegung, Konzentration oder die Tanzfläche.</p>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo\\-Fi\\. The full breadth of beats\\.</p>",
+      "<p class=\"newsroom-lede\">Von ursprünglichen Hip-Hop-Sessions über Hardcore-Rap bis hin zu zeitgenössischem R&B und Lo-Fi. Die ganze Bandbreite der Beats.</p>"
     ]
   ]
 }
