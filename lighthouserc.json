@@ -9,7 +9,10 @@
         "http://localhost/papers/index.html",
         "http://localhost/projects/index.html",
         "http://localhost/contact/index.html",
-        "http://localhost/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html"
+        "http://localhost/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html",
+        "http://localhost/fr/index.html",
+        "http://localhost/fr/a-propos/index.html",
+        "http://localhost/fr/2026-05-11-lucy-besson-transfert-de-connaissances-ia-et-quantique/index.html"
       ],
       "numberOfRuns": 3,
       "settings": {

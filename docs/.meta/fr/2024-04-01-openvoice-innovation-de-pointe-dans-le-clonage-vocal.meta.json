@@ -1,11 +1,11 @@
 {
-  "subtitle": "L'outil open-source de clonage vocal de nouvelle génération",
-  "title": "OpenVoice : à la pointe de l'innovation en clonage vocal",
-  "description": "OpenVoice, du MIT, Tsinghua et MyShell : un clonage vocal de qualité production avec contrôle du ton, de l'accent et de l'émotion — et les compromis à connaître.",
   "locale": "fr_FR",
-  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
+  "subtitle": "L'outil open-source de clonage vocal de nouvelle génération",
+  "keywords": "OpenVoice, clonage vocal, synthèse vocale IA, clonage vocal open source, synthèse vocale multilingue, clonage vocal instantané, contrôle de style vocal, accessibilité vocale, voix dans le divertissement, voix IA pour service client",
   "banner_alt": "Bannière représentant une superposition de profils en dégradé vif",
   "language": "fr",
-  "keywords": "OpenVoice, clonage vocal, synthèse vocale IA, clonage vocal open source, synthèse vocale multilingue, clonage vocal instantané, contrôle de style vocal, accessibilité vocale, voix dans le divertissement, voix IA pour service client",
-  "date": "April 01, 2024"
+  "title": "OpenVoice : à la pointe de l'innovation en clonage vocal",
+  "date": "April 01, 2024",
+  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
+  "description": "OpenVoice, du MIT, Tsinghua et MyShell : un clonage vocal de qualité production avec contrôle du ton, de l'accent et de l'émotion — et les compromis à connaître."
 }
