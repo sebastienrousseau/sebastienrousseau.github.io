@@ -85,7 +85,7 @@ def _sign_one(html_path: Path, out_dir: Path, cfg: dict) -> bool:
     if pw_env and pw_env in env:
         env["COSIGN_PASSWORD"] = env[pw_env]
     try:
-        result = subprocess.run(  # noqa: S603 — fixed argv, no shell
+        result = subprocess.run(
             cmd, check=False, capture_output=True, text=True, env=env, timeout=30,
         )
     except (OSError, subprocess.TimeoutExpired) as e:
