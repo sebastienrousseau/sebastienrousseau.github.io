@@ -2157,27 +2157,14 @@ def _translated_slugs() -> tuple[set[str], set[str]]:
     return en_with_fr, fr_with_en
 
 
-# Top-level EN static pages with FR mirrors. Synced with
-# scripts/build_translations.py::STATIC_SLUG_FR — kept here as a flat
-# dict for postbuild's hreflang injector.
-_STATIC_EN_TO_FR: dict[str, str] = {
-    "about": "a-propos",
-    "papers": "publications",
-    "projects": "projets",
-    "topics": "sujets",
-    "tags": "etiquettes",
-    "contact": "contact",
-    "accessibility": "accessibilite",
-    "privacy": "confidentialite",
-    "terms": "conditions",
-    "playlists": "playlists",
-    "made-with-static-site-generator": "concu-avec-static-site-generator",
-    "made-with-shokunin": "concu-avec-shokunin",
-    "404": "404",
-    "offline": "hors-ligne",
-    "thanks": "merci",
-    "articles": "articles",
-}
+# Top-level EN static pages with FR mirrors. Loaded from
+# _data/i18n/fr/slugs.json (single source of truth).
+import sys as _sys_lr
+
+_sys_lr.path.insert(0, str(Path(__file__).parent))
+import _lang_registry as _lr  # type: ignore[import-not-found]
+
+_STATIC_EN_TO_FR: dict[str, str] = _lr.load_slugs("fr")["static"]
 
 
 def inject_hreflang(
@@ -2312,6 +2299,42 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
         # Reciprocal hreflang for paired English/French pages.
         rel_slug = page.parent.name
         is_fr = page.parent.parent.name == "fr"
+        # Topic sub-pages: same slug on both sides
+        # (e.g. /topics/post-quantum-cryptography/ ↔
+        # /fr/sujets/post-quantum-cryptography/). Inject directly —
+        # inject_hreflang doesn't know about topics.
+        is_en_topic = (
+            page.parent.parent.name == "topics"
+            and page.parent.parent.parent == PUBLIC
+        )
+        is_fr_topic = (
+            page.parent.parent.name == "sujets"
+            and page.parent.parent.parent.name == "fr"
+        )
+        if is_en_topic or is_fr_topic:
+            en_url = f"https://sebastienrousseau.com/topics/{rel_slug}/"
+            fr_url = f"https://sebastienrousseau.com/fr/sujets/{rel_slug}/"
+            _hf_re = re.compile(r'<link rel="alternate"[^>]+hreflang="[^"]+"[^/]*/>', re.IGNORECASE)
+            cleaned = _hf_re.sub('', patched_nav)
+            topic_links = (
+                f'<link rel="alternate" hreflang="en" href="{en_url}" />'
+                f'<link rel="alternate" hreflang="fr" href="{fr_url}" />'
+                f'<link rel="alternate" hreflang="x-default" href="{en_url}" />'
+            )
+            patched_hl = re.sub(r'</head>', topic_links + '</head>', cleaned, count=1, flags=re.IGNORECASE)
+            if patched_hl != patched_nav:
+                hreflang_patched += 1
+            # Skip the rest of the hreflang block below.
+            patched_hl = inject_speculation_rules(patched_hl)
+            patched_hl = inject_github_stats(patched_hl, gh_stats)
+            patched_hl, n_hoisted = hoist_body_link_stylesheets(patched_hl)
+            link_hoisted += n_hoisted
+            patched2 = inject_jsonld_hashes(patched_hl)
+            if patched2 != patched_nav:
+                csp_patched += 1
+            if patched2 != original:
+                page.write_text(patched2, encoding="utf-8")
+            continue
         # Special case: the site root /index.html. Its parent dir is
         # "public" — we treat it as the home and emit hreflang to /fr/.
         if page.parent.name == "public" or (page.name == "index.html" and page.parent == PUBLIC):

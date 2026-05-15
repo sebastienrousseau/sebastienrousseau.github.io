@@ -40,6 +40,8 @@ python3 scripts/build_fr_feeds.py
 python3 scripts/build_agent_api.py
 python3 scripts/postbuild.py
 python3 scripts/test_search_indexes.py
+python3 scripts/test_i18n_parity.py
+python3 scripts/test_hreflang_reciprocity.py
 
 # GitHub Pages serves from main/docs, so mirror the postbuild output into
 # docs/ on every build. CNAME and .nojekyll are preserved.

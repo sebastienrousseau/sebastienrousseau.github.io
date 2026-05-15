@@ -33,6 +33,11 @@ validate:
 test-search-index:
 	@python3 scripts/test_search_indexes.py
 
+# i18n gates — language parity and hreflang reciprocity.
+test-i18n:
+	@python3 scripts/test_i18n_parity.py
+	@python3 scripts/test_hreflang_reciprocity.py
+
 # Python test suite (scripts/ utilities).
 test:
 	@python3 -m pytest tests/ -ra
