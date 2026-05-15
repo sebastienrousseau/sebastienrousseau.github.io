@@ -193,6 +193,115 @@ def fr_slug(en_slug: str) -> str:
     return _fr_article_map().get(en_slug, en_slug)
 
 
+# ---------------------------------------------------------------------------
+# Chrome-patch generator (Phase 0c: strings.json → runtime regex pairs)
+# ---------------------------------------------------------------------------
+#
+# ``build_chrome_patches(lang)`` returns a list of ``(regex, replacement)``
+# tuples derived from ``_data/i18n/<lang>/strings.json``, suitable for
+# pre-pending to the manual ``CHROME_PATCHES`` list in
+# ``scripts/build_translations.py``. Existing manual entries stay in
+# place — the auto-generated patches act as a *backup* source of truth.
+# When the auto-gen entry fires first, the manual one becomes a harmless
+# no-op (regex won't match the already-translated string).
+#
+# Each entry in ``_STRINGS_KEY_TO_PATCH`` maps a flat strings.json key to
+# a small descriptor of where that string lives in HTML. Only the
+# mechanical attribute-style cases are auto-generated; entries with
+# regex quirks (negative lookahead, dynamic prefix, ``&amp;`` vs ``&``)
+# stay manual.
+
+import re as _re
+
+# Patch-context kind. Each kind has its own regex shape and behaviour:
+#   attr:<attr>     → quote-tolerant attribute value patch, e.g.
+#                     `(aria-label=)"?Toggle…"?` → `aria-label="Basculer…"`
+#   text-button     → button body text, e.g. `>Subscribe</button>`
+#   text-a          → anchor body text, e.g. `>Skip to main content</a>`
+#   text-span       → <span> body text, e.g. `<span>Search</span>`
+#   text-h2:<class> → <h2 class="X">Body</h2>
+_STRINGS_KEY_TO_PATCH: tuple[tuple[str, str], ...] = (
+    ("nav.aria.skipToMain",       "text-a"),
+    ("nav.aria.toggleNav",        "attr:aria-label"),
+    ("nav.aria.toggleNavTitle",   "attr:title"),
+    ("nav.aria.darkTheme",        "attr:aria-label"),
+    ("nav.aria.lightTheme",       "attr:aria-label"),
+    ("nav.aria.themeToggleTitle", "attr:title"),
+    ("nav.aria.searchTitle",      "attr:title"),
+    ("nav.aria.contactCTA",       "attr:aria-label"),
+    ("nav.aria.brandHome",        "attr:aria-label"),
+    ("nav.aria.backToTop",        "attr:aria-label"),
+    ("search.placeholder",        "attr:placeholder"),
+    ("search.buttonLabel",        "text-span"),
+    ("footer.title.writing",      "text-h2:ap-foot-title"),
+    ("footer.title.work",         "text-h2:ap-foot-title"),
+    ("footer.title.reach",        "text-h2:ap-foot-title"),
+    ("footer.aria.socialLinks",   "attr:aria-label"),
+    ("feeds.atomTitle",           "attr:title"),
+    ("feeds.rssTitle",            "attr:title"),
+    ("lang.aria.langGroup",       "attr:aria-label"),
+    ("lang.title.changeLang",     "attr:title"),
+    ("lang.title.comingSoon",     "attr:title"),
+    ("article.aria.summary",      "attr:aria-label"),
+    ("newsletter.aria.signup",    "attr:aria-label"),
+    ("newsletter.placeholder",    "attr:placeholder"),
+    ("newsletter.submit",         "text-button"),
+    ("author.aria.aboutAuthor",   "attr:aria-label"),
+    ("author.alt.portrait",       "attr:alt"),
+)
+
+
+def _build_one_patch(kind: str, en_val: str, target_val: str) -> tuple[str, str] | None:
+    """Build a single (regex, replacement) pair. ``kind`` is the
+    descriptor from ``_STRINGS_KEY_TO_PATCH``."""
+    en_esc = _re.escape(en_val)
+    if kind.startswith("attr:"):
+        attr = kind.split(":", 1)[1]
+        # Quote-tolerant — the minifier strips quotes on some shells, so
+        # accept both `aria-label="X"` and `aria-label=X`. Anchor with a
+        # lookahead so the value isn't eaten past its boundary.
+        regex = rf'{attr}="?{en_esc}"?(?=[\s>])'
+        repl = f'{attr}="{target_val}"'
+        return regex, repl
+    if kind == "text-button":
+        return f'>{en_esc}</button>', f'>{target_val}</button>'
+    if kind == "text-a":
+        return f'>{en_esc}</a>', f'>{target_val}</a>'
+    if kind == "text-span":
+        return f'>{en_esc}</span>', f'>{target_val}</span>'
+    if kind.startswith("text-h2:"):
+        class_ = kind.split(":", 1)[1]
+        regex = rf'<h2 class="?{_re.escape(class_)}"?>{en_esc}</h2>'
+        repl = f'<h2 class="{class_}">{target_val}</h2>'
+        return regex, repl
+    return None
+
+
+def build_chrome_patches(lang: str) -> list[tuple[str, str]]:
+    """Return a list of ``(regex, replacement)`` patches built from
+    ``_data/i18n/<lang>/strings.json``. Skip any key where the target
+    value is missing, empty, or identical to English.
+
+    Designed to be **prepended** to the manual ``CHROME_PATCHES`` list
+    in ``build_translations.py``. The auto-gen patches act as a backup
+    source of truth from JSON; the manual list still runs after and
+    handles regex-quirky cases (entity tolerance, dynamic prefixes,
+    negative lookaheads, etc.) that can't be auto-generated cleanly.
+    """
+    en = load_strings("en")
+    target = load_strings(lang) if lang != "en" else en
+    patches: list[tuple[str, str]] = []
+    for key, kind in _STRINGS_KEY_TO_PATCH:
+        en_val = en.get(key)
+        tgt_val = target.get(key)
+        if not en_val or not tgt_val or en_val == tgt_val:
+            continue
+        patch = _build_one_patch(kind, en_val, tgt_val)
+        if patch is not None:
+            patches.append(patch)
+    return patches
+
+
 def en_slug(fr_slug_str: str) -> str:
     """Convenience: FR slug → EN slug. Returns input unchanged if not found."""
     return _fr_to_en_map().get(fr_slug_str, fr_slug_str)
