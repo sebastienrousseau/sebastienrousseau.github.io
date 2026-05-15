@@ -58,15 +58,36 @@ def _base_lang(tag: str) -> str:
     return tag.split("-", 1)[0].lower()
 
 
+_META_DESC_RE = re.compile(
+    r'<meta\s+(?:name|property)=["\']?(?:description|og:description|twitter:description)[^>]*>',
+    re.IGNORECASE,
+)
+_META_KEYWORDS_RE = re.compile(
+    r'<meta\s+name=["\']?keywords[^>]*>', re.IGNORECASE,
+)
+_TITLE_TAG_RE = re.compile(r'<title>[\s\S]*?</title>', re.IGNORECASE)
+_OG_TITLE_RE = re.compile(
+    r'<meta\s+(?:name|property)=["\']?(?:og:title|twitter:title)[^>]*>',
+    re.IGNORECASE,
+)
+
+
 def _strip_chrome_noise(html: str) -> str:
-    """Remove <main>, <script>, <style>, and the lang switcher menu
-    (which intentionally lists every language's native name in its own
-    script) so they can't false-positive."""
+    """Remove <main>, <script>, <style>, the lang switcher menu, and
+    per-page content metadata (title, description, keywords) — these
+    are content-driven and can legitimately contain EN technical
+    terms ("Large Language Models", "Post-Quantum Cryptography", …)
+    as substrings of phrases."""
     html = _MAIN_RE.sub("", html)
     html = _SCRIPT_RE.sub("", html)
     html = _STYLE_RE.sub("", html)
     html = _COMMENT_RE.sub("", html)
     html = _LINK_LANG_MENU_RE.sub("", html)
+    # Strip per-page content metadata
+    html = _META_DESC_RE.sub("", html)
+    html = _META_KEYWORDS_RE.sub("", html)
+    html = _TITLE_TAG_RE.sub("", html)
+    html = _OG_TITLE_RE.sub("", html)
     return html
 
 
@@ -92,18 +113,26 @@ def _en_chrome_strings() -> list[str]:
 
 
 def check_page(path: Path, en_strings: list[str]) -> list[str]:
-    """Return defects for one page."""
+    """Return defects for one page.
+
+    Each EN string is searched with word boundaries either side so it
+    doesn't false-positive on substring matches inside legitimate
+    technical-term content (e.g. "Language" in "Large Language Models"
+    inside a description meta is the article's topic, not chrome).
+    """
     html = path.read_text(encoding="utf-8", errors="ignore")
     lang_m = _HTML_LANG_RE.search(html)
     if not lang_m or _base_lang(lang_m.group(1)) == "en":
         return []
     chrome = _strip_chrome_noise(html)
     rel = path.relative_to(PUBLIC).as_posix()
-    return [
-        f"{rel}: EN string leaked into chrome: {s!r}"
-        for s in en_strings
-        if s in chrome
-    ]
+    defects: list[str] = []
+    for s in en_strings:
+        escaped = re.escape(s)
+        pat = rf"(?<![A-Za-z]){escaped}(?![A-Za-z])"
+        if re.search(pat, chrome):
+            defects.append(f"{rel}: EN string leaked into chrome: {s!r}")
+    return defects
 
 
 def main() -> int:

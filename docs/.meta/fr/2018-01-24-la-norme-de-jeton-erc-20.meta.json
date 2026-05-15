@@ -1,11 +1,11 @@
 {
+  "date": "January 24, 2018",
   "title": "La norme de jeton ERC-20",
-  "description": "ERC-20 : le type de token le plus répandu sur la blockchain Ethereum, souvent décrit comme un contrat numérique intelligent (smart contract).",
   "subtitle": "L'interface unifiée qui a permis à l'écosystème Ethereum de prospérer",
   "keywords": "ERC-20, Ethereum, token, smart contract, DeFi, EIP, blockchain, interoperabilité, DApps, standard",
   "language": "fr",
   "locale": "fr_FR",
-  "date": "January 24, 2018",
+  "description": "ERC-20 : le type de token le plus répandu sur la blockchain Ethereum, souvent décrit comme un contrat numérique intelligent (smart contract).",
   "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
   "banner_alt": "Ordinateur portable éteint sur une table en bois marron"
 }

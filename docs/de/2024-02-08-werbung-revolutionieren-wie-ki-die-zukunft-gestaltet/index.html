@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 08 Feb 2024 07:08:08 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 08 Feb 2024 07:08:08 +0000" id="last-modified" />
+    <title>Generative KI in der Werbung: Amazon Rufus &amp; Meta — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Wie KI die Werbung transformiert — Einblicke in Amazons Rufus und die jüngsten Entwicklungen von Meta. Entdecken Sie die Auswirkungen auf das Konsumentenengagement.">
+<meta name="keywords" content="KI in der Werbung, Amazon Rufus, Meta-KI-Tools, Konsumenten-Targeting, Werbetechnologie, KI-Chatbots, Trends im digitalen Marketing, KI-Analytik, kreative KI, Kampagnenoptimierung">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-MfeIZtA9NdJWkBZTYeUqcqjtaf1zuIdGCUQi5x6bIpQ=' 'sha256-qDdrLeVqWBf1EuWEK8E6C7z4vgjZN/W9btP8y35RjHI=' 'sha256-zGHZX9OcAqU4BnwBclFcCrv6AiirD1v1aasA5o1wj8I=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    <link rel="alternate" href="https://sebastienrousseau.com/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html" hreflang="en" />
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/de/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/9930ecfdff61f48d.css" crossorigin="anonymous" integrity="sha256-uiIfOSzvAomJoIgahbA7/d6tJPC0CX/f3fLZdJHr/No=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom-Feed" href="/de/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Generative KI in der Werbung: Amazon Rufus &amp; Meta — Sebastien Rousseau">
+<meta property="og:description" content="Wie KI die Werbung transformiert — Einblicke in Amazons Rufus und die jüngsten Entwicklungen von Meta. Entdecken Sie die Auswirkungen auf das Konsumentenengagement.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/de/2024-02-08-werbung-revolutionieren-wie-ki-die-zukunft-gestaltet/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/advertising-ai.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Generative KI in der Werbung: Amazon Rufus &amp; Meta — Sebastien Rousseau">
+<meta name="twitter:description" content="Wie KI die Werbung transformiert — Einblicke in Amazons Rufus und die jüngsten Entwicklungen von Meta. Entdecken Sie die Auswirkungen auf das Konsumentenengagement.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/advertising-ai.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/de/2024-02-08-werbung-revolutionieren-wie-ki-die-zukunft-gestaltet/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-02-08-revolutionner-la-publicite-comment-l-ia-faconne-l-avenir/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2024-02-08-werbung-revolutionieren-wie-ki-die-zukunft-gestaltet/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Zum Hauptinhalt springen</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Navigation umschalten" />
+      <div class="wrap">
+        <a class="ap-brand" href="/de/index.html" aria-label="Startseite von Sebastien Rousseau">
+          <span itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Hauptnavigation">
+          <ul class="ap-menu">
+            <li><a href="/de/uber-mich/index.html">Über mich</a></li>
+            <li><a href="/de/artikel/index.html">Artikel</a></li>
+            <li><a href="/de/publikationen/index.html">Publikationen</a></li>
+            <li><a href="/de/themen/index.html">Themen</a></li>
+            <li><a href="/de/projekte/index.html">Projekte</a></li>
+            <li><a href="/de/playlists/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Dunkles Design aktivieren" aria-pressed="false" title="Design wechseln">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Suchen (Cmd oder Strg + K)" title="Suchen (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Sprache">
+            <button type="button" class="ap-lang-toggle" aria-label="DE, Sprache ändern" aria-expanded="false" aria-haspopup="menu" title="Sprache wechseln">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">DE</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <span class="ap-lang-item" data-lang="ar" aria-disabled="true" title="Demnächst verfügbar">🇸🇦 العربية</span>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="Demnächst verfügbar">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="Demnächst verfügbar">🇨🇿 Čeština</span>
+                <span class="ap-lang-item" data-lang="de" aria-disabled="true" title="Demnächst verfügbar">🇩🇪 Deutsch</span>
+                <span class="ap-lang-item" data-lang="es" aria-disabled="true" title="Demnächst verfügbar">🇪🇸 Español</span>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="Demnächst verfügbar">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="Demnächst verfügbar">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="Demnächst verfügbar">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="Demnächst verfügbar">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="Demnächst verfügbar">🇮🇩 Indonesia</span>
+                <span class="ap-lang-item" data-lang="it" aria-disabled="true" title="Demnächst verfügbar">🇮🇹 Italiano</span>
+                <span class="ap-lang-item" data-lang="ja" aria-disabled="true" title="Demnächst verfügbar">🇯🇵 日本語</span>
+                <span class="ap-lang-item" data-lang="ko" aria-disabled="true" title="Demnächst verfügbar">🇰🇷 한국어</span>
+                <span class="ap-lang-item" data-lang="nl" aria-disabled="true" title="Demnächst verfügbar">🇳🇱 Nederlands</span>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="Demnächst verfügbar">🇵🇱 Polski</span>
+                <span class="ap-lang-item" data-lang="pt-br" aria-disabled="true" title="Demnächst verfügbar">🇧🇷 Português</span>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="Demnächst verfügbar">🇷🇴 Română</span>
+                <span class="ap-lang-item" data-lang="ru" aria-disabled="true" title="Demnächst verfügbar">🇷🇺 Русский</span>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="Demnächst verfügbar">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="Demnächst verfügbar">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="Demnächst verfügbar">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Demnächst verfügbar">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="Demnächst verfügbar">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="Demnächst verfügbar">🇳🇬 Yorùbá</span>
+                <span class="ap-lang-item" data-lang="zh-hans" aria-disabled="true" title="Demnächst verfügbar">🇨🇳 简体中文</span>
+                <span class="ap-lang-item" data-lang="zh-hant" aria-disabled="true" title="Demnächst verfügbar">🇹🇼 繁體中文</span>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/de/kontakt/index.html" aria-label="Kontakt aufnehmen">Kontakt ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Navigation umschalten">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Generative KI in der Werbung: Amazon Rufus &amp; Meta</h1>
+      <p class="sub">Wie KI die Konsumenteninteraktion und die Werbedynamik transformiert</p>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-ki-in-der-werbung" class="article-tag" rel="tag">KI in der Werbung</a><a href="/tags/index.html#h3-amazon-rufus" class="article-tag" rel="tag">Amazon Rufus</a><a href="/tags/index.html#h3-meta-ki-tools" class="article-tag" rel="tag">Meta-KI-Tools</a><a href="/tags/index.html#h3-konsumenten-targeting" class="article-tag" rel="tag">Konsumenten-Targeting</a><a href="/tags/index.html#h3-werbetechnologie" class="article-tag" rel="tag">Werbetechnologie</a><a href="/tags/index.html#h3-ki-chatbots" class="article-tag" rel="tag">KI-Chatbots</a><a href="/tags/index.html#h3-trends-im-digitalen-marketing" class="article-tag" rel="tag">Trends im digitalen Marketing</a><a href="/tags/index.html#h3-ki-analytik" class="article-tag" rel="tag">KI-Analytik</a><a href="/tags/index.html#h3-kreative-ki" class="article-tag" rel="tag">kreative KI</a><a href="/tags/index.html#h3-kampagnenoptimierung" class="article-tag" rel="tag">Kampagnenoptimierung</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-02-08T07:08:08+00:00" class="meta-pub">Published 8 Feb 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Updated 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">5 min read</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#der-anbruch-der-ki-in-der-werbung">Der Anbruch der KI in der Werbung</a></li><li><a href="#die-ki-revolution-in-der-werbung">Die KI-Revolution in der Werbung</a></li><li><a href="#fokus-auf-amazons-rufus">Fokus auf Amazons Rufus</a></li><li><a href="#metas-ki-innovationen">Metas KI-Innovationen</a></li><li><a href="#navigation-in-der-ki-getriebenen-werbelandschaft">Navigation in der KI-getriebenen Werbelandschaft</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Wie KI die Werbung transformiert — Einblicke in Amazons Rufus und die jüngsten Entwicklungen von Meta. Entdecken Sie die Auswirkungen auf das Konsumentenengagement.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Der Anbruch der KI in der Werbung.</strong> Im digitalen Zeitalter hat sich Künstliche Intelligenz (KI) als entscheidender Wendepunkt für die Werbebranche herausgebildet und die Paradigmen von Kreativität, Analyse und Konsumentenengagement neu definiert.</li>  <li><strong>Die KI-Revolution in der Werbung.</strong> Die Infusion von KI in die Werbung signalisiert eine neue Ära der Effizienz und Wirksamkeit.</li>  <li><strong>Fokus auf Amazons Rufus.</strong> Amazons Einführung von Rufus, einem persönlichen Einkaufsassistenten-Chatbot, markiert einen bedeutenden Fortschritt im KI-gesteuerten Konsumentenengagement.</li>  <li><strong>Metas KI-Innovationen.</strong> Meta hat generative KI aktiv in seine Werbewerkzeuge integriert und Werbetreibenden innovative Funktionen zur Verbesserung ihrer Kampagnen bereitgestellt.</li></ul></aside><p>Künstliche Intelligenz (KI) transformiert die Werbelandschaft radikal und bietet beispiellose Effizienz und Wirksamkeit für Werbekampagnen. Amazons Einführung von <a href="https://www.aboutamazon.com/news/retail/amazon-rufus" title="Amazon Rufus - AI experience comes to the Amazon Shopping app"><strong>Rufus ⧉</strong></a>, einem persönlichen Einkaufsassistenten-Chatbot, sowie Metas Integration von KI über seine Plattformen hinweg — mit konversationellen Assistenten und kreativen Werkzeugen — verkörpern die Speerspitze dieser Revolution. Diese Fortschritte verbessern nicht nur das Konsumentenerlebnis, sondern eröffnen auch neue Wege für präzises Targeting und Engagement und unterstreichen die Schlüsselrolle der KI in der Zukunft der Werbung.</p>
+<h2 id="der-anbruch-der-ki-in-der-werbung">Der Anbruch der KI in der Werbung <a class="heading-anchor" href="#der-anbruch-der-ki-in-der-werbung" aria-label="Link to Der Anbruch der KI in der Werbung">#</a></h2>
+<p>Im digitalen Zeitalter hat sich Künstliche Intelligenz (KI) als entscheidender Wendepunkt für die Werbebranche herausgebildet und die Paradigmen von Kreativität, Analyse und Konsumentenengagement neu definiert. Mit der Fähigkeit, gewaltige Datenmengen zu verwalten und zu analysieren, kreative Inhalte zu erzeugen und Konsumenten mit beispielloser Präzision anzusprechen, ergänzen KI-Technologien komplexe Werbeprozesse nicht nur, sondern automatisieren sie. Dieser Artikel beleuchtet den transformativen Einfluss der KI auf die Werbung und fokussiert sich auf die jüngsten Entwicklungen der Tech-Giganten Amazon und Meta sowie deren Implikationen für die Branche.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" fetchpriority="high">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="die-ki-revolution-in-der-werbung">Die KI-Revolution in der Werbung <a class="heading-anchor" href="#die-ki-revolution-in-der-werbung" aria-label="Link to Die KI-Revolution in der Werbung">#</a></h2>
+<h3 id="der-ki-vorteil">Der KI-Vorteil <a class="heading-anchor" href="#der-ki-vorteil" aria-label="Link to Der KI-Vorteil">#</a></h3>
+<p>Die Infusion von KI in die Werbung signalisiert eine neue Ära der Effizienz und Wirksamkeit. Laut jüngsten Branchenumfragen meldeten über 65 % der Werbetreibenden im Vergleich zu den Vorjahren einen mindestens 20 % höheren ROI bei KI-optimierten Kampagnen. KI-Algorithmen sind hervorragend darin, Erkenntnisse aus großen Datensätzen zu identifizieren, die Teams von Analysten manuell aufdecken müssten. Eine Marketing-Analytics-Plattform vermerkte, dass ihre KI-Werkzeuge über 100 Millionen Datenpunkte verarbeiten können, um Kampagnen zu optimieren — ein Analyseumfang, den menschliche Kapazität niemals erreichen könnte. Diese Fähigkeit erstreckt sich auch auf die kreative Generierung, wo Metas KI-Algorithmen über 10 000 Werbevarianten testen und leistungsstarke Kreationen innerhalb von Stunden identifizieren können. Reichweite und Geschwindigkeit solcher KI-Anwendungen — A/B-Tests von Hunderten von Anzeigen, Analyse der Wettbewerbsstrategien, Personalisierung von Inhalten für vielfältige Zielgruppen — übersteigen die menschliche Kapazität. Das spart nicht nur wertvolle Zeit und Ressourcen, sondern erhöht auch die Genauigkeit und Relevanz von Werbekampagnen auf beispiellosem Niveau.</p>
+<h3 id="jenseits-menschlicher-kapazitat">Jenseits menschlicher Kapazität <a class="heading-anchor" href="#jenseits-menschlicher-kapazitat" aria-label="Link to Jenseits menschlicher Kapazität">#</a></h3>
+<p>Reichweite und Geschwindigkeit der KI bei Werbeaufgaben wie A/B-Tests von Hunderten Anzeigen, Analyse der Wettbewerbsstrategien und Personalisierung von Inhalten für vielfältige Zielgruppen übersteigen die menschliche Kapazität. Das spart nicht nur wertvolle Zeit und Ressourcen, sondern verbessert auch die Genauigkeit und Relevanz der Kampagnen.</p>
+<h3 id="aufgewertete-konsumentenerlebnisse">Aufgewertete Konsumentenerlebnisse <a class="heading-anchor" href="#aufgewertete-konsumentenerlebnisse" aria-label="Link to Aufgewertete Konsumentenerlebnisse">#</a></h3>
+<p>Die Auswirkung der KI auf die Werbung ist in den aufgewerteten Konsumentenerlebnissen, die sie ermöglicht, tiefgreifend sichtbar. Durch den Einsatz von KI für zielgerichtete Werbung können Unternehmen relevantere, ansprechendere und personalisierte Inhalte an Konsumenten liefern und so Konversionsraten und Markentreue erhöhen.</p>
+<h3 id="ein-aufruf-zur-innovation">Ein Aufruf zur Innovation <a class="heading-anchor" href="#ein-aufruf-zur-innovation" aria-label="Link to Ein Aufruf zur Innovation">#</a></h3>
+<p>Für Werbetreibende und Unternehmen sind die Anreize, KI in der Werbung einzusetzen, klar: höhere Effizienz, reduzierte Kosten und besserer ROI. Die sich entwickelnde KI-Technologielandschaft bietet die Gelegenheit, im wettbewerbsintensiven Raum der digitalen Werbung zu innovieren, sich zu differenzieren und Wert zu schöpfen.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="fokus-auf-amazons-rufus">Fokus auf Amazons Rufus <a class="heading-anchor" href="#fokus-auf-amazons-rufus" aria-label="Link to Fokus auf Amazons Rufus">#</a></h2>
+<h3 id="das-einkaufserlebnis-personalisieren">Das Einkaufserlebnis personalisieren <a class="heading-anchor" href="#das-einkaufserlebnis-personalisieren" aria-label="Link to Das Einkaufserlebnis personalisieren">#</a></h3>
+<p>Amazons Einführung von Rufus, einem persönlichen Einkaufsassistenten-Chatbot, markiert einen bedeutenden Fortschritt im KI-gesteuerten Konsumentenengagement. Rufus ist darauf ausgelegt, das Online-Einkaufserlebnis durch Produktempfehlungen, Vergleiche und konversationelle Unterstützung zu verbessern.</p>
+<h3 id="die-produktentdeckung-disruptieren">Die Produktentdeckung disruptieren <a class="heading-anchor" href="#die-produktentdeckung-disruptieren" aria-label="Link to Die Produktentdeckung disruptieren">#</a></h3>
+<p>Rufus steht für einen Wandel hin zum konversationellen Handel, bei dem KI nicht nur die Produktentdeckung unterstützt, sondern auch die Entscheidungsprozesse der Konsumenten beeinflusst. Diese Entwicklung könnte neu definieren, wie Konsumenten online nach Produkten suchen und mit ihnen interagieren.</p>
+<h3 id="implikationen-fur-werbetreibende">Implikationen für Werbetreibende <a class="heading-anchor" href="#implikationen-fur-werbetreibende" aria-label="Link to Implikationen für Werbetreibende">#</a></h3>
+<p>Für Werbetreibende eröffnet Rufus neue Wege der Produktbewerbung und -platzierung innerhalb des Amazon-Ökosystems. Die Fähigkeit, Empfehlungen und Entscheidungen der Konsumenten direkt über KI zu beeinflussen, unterstreicht die wachsende Bedeutung der KI bei der Gestaltung wirksamer Werbestrategien.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="metas-ki-innovationen">Metas KI-Innovationen <a class="heading-anchor" href="#metas-ki-innovationen" aria-label="Link to Metas KI-Innovationen">#</a></h2>
+<h3 id="ki-gestutzte-kreativwerkzeuge">KI-gestützte Kreativwerkzeuge <a class="heading-anchor" href="#ki-gestutzte-kreativwerkzeuge" aria-label="Link to KI-gestützte Kreativwerkzeuge">#</a></h3>
+<p>Meta hat generative KI aktiv in seine Werbewerkzeuge integriert und Werbetreibenden innovative Funktionen zur Verbesserung ihrer Kampagnen bereitgestellt. Das Unternehmen hat seine ersten <a href="https://www.facebook.com/business/news/generative-ai-features-for-ads-coming-to-all-advertisers" title="Generative AI features for ads coming to all advertisers"><strong>generativen KI-Funktionen für Werbetreibende ⧉</strong></a> eingeführt — darunter die Möglichkeit, Hintergründe zu erstellen, Bilder zu erweitern und mehrere Versionen von Werbetexten auf Basis des Originaltextes zu generieren. Diese Werkzeuge sind darauf ausgelegt, Kreativität und Produktivität zu fördern und Werbetreibenden zu ermöglichen, frische kreative Inhalte in großem Maßstab zu produzieren — bei potenziell erheblicher Zeitersparnis im Kreativprozess.</p>
+<h3 id="verbindungen-und-ausdrucksformen-starken">Verbindungen und Ausdrucksformen stärken <a class="heading-anchor" href="#verbindungen-und-ausdrucksformen-starken" aria-label="Link to Verbindungen und Ausdrucksformen stärken">#</a></h3>
+<p>Metas Suite an KI-Werkzeugen und -Plattformen — konversationelle Assistenten und KI-gestützte Kreativwerkzeuge — zielt darauf ab, das Nutzerengagement zu vertiefen und neue Wege für Unternehmen und Kreative zu schaffen, mit ihrem Publikum zu interagieren. Das fügt sich in Metas Mission ein, soziale Verbindungen durch Technologie zu stärken.</p>
+<h3 id="eine-plattform-fur-kreativitat-und-engagement">Eine Plattform für Kreativität und Engagement <a class="heading-anchor" href="#eine-plattform-fur-kreativitat-und-engagement" aria-label="Link to Eine Plattform für Kreativität und Engagement">#</a></h3>
+<p>Metas AI-Studio-Plattform steht für das Bekenntnis, KI-Werkzeuge für die Drittentwicklung zugänglich zu machen, und fördert eine Innovationsgemeinschaft. Diese Demokratisierung von KI-Werkzeugen befähigt Kreative und Unternehmen, ansprechendere und personalisierte Inhalte zu gestalten.</p>
+<h3 id="die-zukunft-der-interaktion-gestalten">Die Zukunft der Interaktion gestalten <a class="heading-anchor" href="#die-zukunft-der-interaktion-gestalten" aria-label="Link to Die Zukunft der Interaktion gestalten">#</a></h3>
+<p>Metas KI-Fortschritte setzen neue Maßstäbe dafür, wie Unternehmen und Kreative mit ihrem Publikum interagieren. Indem Meta personalisiertere und bedeutungsvollere Interaktionen ermöglicht, verbessert es nicht nur das Nutzererlebnis, sondern eröffnet auch neue Chancen für gezielte Werbung.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<p>Wie Amazons Rufus und Metas KI-Werkzeugsuite veranschaulichen, treiben die maßgeblichen Branchenakteure bahnbrechende Innovationen voran, um die Werbung mit KI zu transformieren. Navigation in der KI-getriebenen Werbelandschaft.</p>
+<p>Die Integration von KI in Werbestrategien zeigt die bedeutenden Fortschritte, die zur Revolutionierung der Branche gemacht werden …</p>
+<h2 id="navigation-in-der-ki-getriebenen-werbelandschaft">Navigation in der KI-getriebenen Werbelandschaft <a class="heading-anchor" href="#navigation-in-der-ki-getriebenen-werbelandschaft" aria-label="Link to Navigation in der KI-getriebenen Werbelandschaft">#</a></h2>
+<p>Die Integration von KI in Werbestrategien zeigt die bedeutenden Fortschritte, die zur Revolutionierung der Branche gemacht werden. Mit dem fortschreitenden Ausbau der KI-Fähigkeiten müssen sich Werbetreibende aktiv über diese aufkommenden Werkzeuge informieren — Empfehlungs-Engines, konversationelle Anzeigen, Plattformen zur Kreativ-Verstärkung und KI-gestützte Zielgruppenanalyse. Schwerpunktbereiche umfassen die Nutzung der KI zur Aufwertung des Konsumentenerlebnisses durch Personalisierung, die Verbesserung der Kampagneneffektivität durch das Testen einer höheren Anzahl kreativer Varianten und Botschaften sowie die Förderung von Innovation durch den Einsatz von KI für neue Anwendungen wie Sprachanzeigen.</p>
+<p>Darüber hinaus wird das Eingehen der richtigen Partnerschaften entscheidend sein — sei es mit Werbeplattformen wie Meta oder mit Datenanbietern, die die Eingaben für KI-Systeme liefern. Werbetreibende sollten zudem zu offenen Ökosystemen rund um Werbedaten und Modelle beitragen, um gemeinsamen Fortschritt voranzutreiben. Indem Werbetreibende die KI-Landschaft proaktiv navigieren, können sie deren vielfältige Fähigkeiten nutzen, um vernetztere, bedeutungsvollere und wirkungsvollere Markeninteraktionen zu schaffen.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<aside class="author-card" aria-label="Über den Autor"><img alt="Porträt von Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/de/uber-mich/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Technologue senior dans la banque, j'écris sur l'IA appliquée, la migration ISO 20022, la cryptographie post-quantique pour les services financiers, et la transformation structurelle des paiements wholesale.</span><span class="author-credentials">Plus de 20 ans d'expérience chez HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/de/uber-mich/index.html">Vollständiges Profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Dernière révision <time datetime="2026-05-15">2026-05-15</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Verwandte Artikel</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/de/2024-01-29-ki-gestuetzte-audio-einblicke-analyse-uebersetzungen/index.html" class="related-media" aria-label="Analyse, traduction et insights audio propulsés par l'IA" tabindex="-1"><img alt="A minimalist, modern corporate office" src="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="analyse-traduction-et-insights-audio-propulses-par-l-ia"><a href="https://sebastienrousseau.com/de/2024-01-29-ki-gestuetzte-audio-einblicke-analyse-uebersetzungen/index.html">Analyse, traduction et insights audio propulsés par l'IA</a> <a class="heading-anchor" href="#analyse-traduction-et-insights-audio-propulses-par-l-ia" aria-label="Link to Analyse, traduction et insights audio propulsés par l'IA">#</a></h3><p><time datetime="2024-01-29">2024-01-29</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/de/2024-02-13-eu-ki-verordnung-die-zukunft-der-globalen-ki-regulierung/index.html" class="related-media" aria-label="L'AI Act de l'UE : pionnier de la régulation éthique de l'IA dans le monde" tabindex="-1"><img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="l-ai-act-de-l-ue-pionnier-de-la-regulation-ethique-de-l-ia-dans-le-monde"><a href="https://sebastienrousseau.com/de/2024-02-13-eu-ki-verordnung-die-zukunft-der-globalen-ki-regulierung/index.html">L'AI Act de l'UE : pionnier de la régulation éthique de l'IA dans le monde</a> <a class="heading-anchor" href="#l-ai-act-de-l-ue-pionnier-de-la-regulation-ethique-de-l-ia-dans-le-monde" aria-label="Link to L'AI Act de l'UE : pionnier de la régulation éthique de l'IA dans le monde">#</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/de/2024-01-23-fortschritte-im-ki-prompt-engineering/index.html" class="related-media" aria-label="AI Prompt Engineering 2024 : techniques qui marchent" tabindex="-1"><img alt="A man analysing data on screens" src="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-prompt-engineering-2024-techniques-qui-marchent"><a href="https://sebastienrousseau.com/de/2024-01-23-fortschritte-im-ki-prompt-engineering/index.html">AI Prompt Engineering 2024 : techniques qui marchent</a> <a class="heading-anchor" href="#ai-prompt-engineering-2024-techniques-qui-marchent" aria-label="Link to AI Prompt Engineering 2024 : techniques qui marchent">#</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/de/2024-01-29-ki-gestuetzte-audio-einblicke-analyse-uebersetzungen/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">AI-Powered Speech Analysis, Translation, & Insight Tool</span></a><a class="post-pagination-next" href="/de/2024-02-12-akande-sprachassistent-revolution-persoenlicher-und-fuehrungsassistenz/"><span class="post-pagination-label">Next</span><span class="post-pagination-title">Àkàndé: GPT-Powered Voice Assistant for Executives</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/de/uber-mich/index.html">Über mich</a></li>
+              <li><a href="/de/kontakt/index.html">Kontakt</a></li>
+              <li><a href="/de/erstellt-mit-static-site-generator/index.html">Erstellt mit Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Schreiben</h2>
+            <ul>
+              <li><a href="/de/artikel/index.html">Artikel</a></li>
+              <li><a href="/de/publikationen/index.html">Publikationen</a></li>
+              <li><a href="/de/etiketten/index.html">Etiketten</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Arbeit</h2>
+            <ul>
+              <li><a href="/de/projekte/index.html">Projekte</a></li>
+              <li><a href="/de/playlists/index.html">Playlists</a></li>
+              <li><a href="/de/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Reichweite</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Newsletter-Anmeldung">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — Forschungsnotizen zu Zahlungsverkehr, KI und Post-Quanten-Kryptografie. Kein Spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="sie@bank.de" />
+            <input type="hidden" name="_subject" value="Newsletter-Anmeldung — sebastienrousseau.com" />
+            <button type="submit">Abonnieren</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle Rechte vorbehalten.</span>
+          <div class="social" aria-label="Soziale Netzwerke">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau auf Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau auf Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau auf LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau auf LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau auf Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau auf Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau auf YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau auf YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/de/barrierefreiheit/index.html">Barrierefreiheit</a> ·
+            <a href="/de/datenschutz/index.html">Datenschutz</a> ·
+            <a href="/de/nutzungsbedingungen/index.html">Nutzungsbedingungen</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"de"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"de"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":991,"headline":"Generative KI in der Werbung: Amazon Rufus & Meta","description":"Wie KI die Werbung transformiert — Einblicke in Amazons Rufus und die jüngsten Entwicklungen von Meta. Entdecken Sie die Auswirkungen auf das Konsumentenengagement.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/advertising-ai.webp","width":"100vw","height":"100vh","caption":"Eine Roboterfrau mit Schmetterlingen und Blumen"},"url":"https://sebastienrousseau.com/de/2024-02-08-werbung-revolutionieren-wie-ki-die-zukunft-gestaltet/","datePublished":"2024-02-08T07:08:08+00:00","dateModified":"2026-05-11","inLanguage":"de","keywords":"KI in der Werbung, Amazon Rufus, Meta-KI-Tools, Konsumenten-Targeting, Werbetechnologie, KI-Chatbots, Trends im digitalen Marketing, KI-Analytik, kreative KI, Kampagnenoptimierung","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/de/2024-02-08-werbung-revolutionieren-wie-ki-die-zukunft-gestaltet/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"de"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/de/"},{"@type":"ListItem","position":3,"name":"Generative KI in der Werbung: Amazon Rufus & Meta","item":"https://sebastienrousseau.com/de/2024-02-08-werbung-revolutionieren-wie-ki-die-zukunft-gestaltet/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Suchen">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Suchen</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Suchen">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="In der Dokumentation suchen..." autocomplete="off" aria-label="Suchen"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> schließen</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigieren</span><span><kbd>Enter</kbd> öffnen</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

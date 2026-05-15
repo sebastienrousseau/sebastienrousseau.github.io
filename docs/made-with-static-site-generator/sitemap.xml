@@ -555,6 +555,36 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-01-15</lastmod>
+  <loc>https://sebastienrousseau.com/made-with-static-site-generator//de/themen/iso-20022-payments/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-01-15</lastmod>
+  <loc>https://sebastienrousseau.com/made-with-static-site-generator//de/themen/post-quantum-cryptography/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-01-15</lastmod>
+  <loc>https://sebastienrousseau.com/made-with-static-site-generator//de/themen/blockchain-digital-assets/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-01-15</lastmod>
+  <loc>https://sebastienrousseau.com/made-with-static-site-generator//de/themen/applied-ai-banking/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-01-15</lastmod>
+  <loc>https://sebastienrousseau.com/made-with-static-site-generator//de/themen/rust-open-source/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-01-15</lastmod>
   <loc>https://sebastienrousseau.com/made-with-static-site-generator//de/offline/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -681,36 +711,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-01-15</lastmod>
-  <loc>https://sebastienrousseau.com/made-with-static-site-generator//de/sujets/iso-20022-payments/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-01-15</lastmod>
-  <loc>https://sebastienrousseau.com/made-with-static-site-generator//de/sujets/post-quantum-cryptography/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-01-15</lastmod>
-  <loc>https://sebastienrousseau.com/made-with-static-site-generator//de/sujets/blockchain-digital-assets/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-01-15</lastmod>
-  <loc>https://sebastienrousseau.com/made-with-static-site-generator//de/sujets/applied-ai-banking/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-01-15</lastmod>
-  <loc>https://sebastienrousseau.com/made-with-static-site-generator//de/sujets/rust-open-source/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-01-15</lastmod>
   <loc>https://sebastienrousseau.com/made-with-static-site-generator//de/2024-02-13-eu-ki-verordnung-die-zukunft-der-globalen-ki-regulierung/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -765,12 +765,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-01-15</lastmod>
-  <loc>https://sebastienrousseau.com/made-with-static-site-generator//de/articles/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-01-15</lastmod>
   <loc>https://sebastienrousseau.com/made-with-static-site-generator//de/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenisierter-geldmarktfonds/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -802,6 +796,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-01-15</lastmod>
   <loc>https://sebastienrousseau.com/made-with-static-site-generator//de/danke/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-01-15</lastmod>
+  <loc>https://sebastienrousseau.com/made-with-static-site-generator//de/artikel/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>

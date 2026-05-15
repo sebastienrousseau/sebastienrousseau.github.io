@@ -261,7 +261,7 @@ def rewrite_static_links(html: str) -> str:
         tail = m.group(4) or "/"
         if not tail.startswith("/"):
             tail = "/" + tail
-        return f'{m.group(1)}"/fr/{fr_slug_str}{tail}"'
+        return f'{m.group(1)}"/{LANG_CODE}/{fr_slug_str}{tail}"'
 
     def repl_legacy_fr(m: re.Match[str]) -> str:
         en_slug = m.group(3)
@@ -271,10 +271,11 @@ def rewrite_static_links(html: str) -> str:
         tail = m.group(4) or "/"
         if not tail.startswith("/"):
             tail = "/" + tail
-        return f'{m.group(1)}"/fr/{fr_slug_str}{tail}"'
+        return f'{m.group(1)}"/{LANG_CODE}/{fr_slug_str}{tail}"'
 
     def repl_topic_sub(m: re.Match[str]) -> str:
-        return f'{m.group(1)}"/fr/sujets/{m.group(3)}{m.group(4)}"'
+        topics_slug_lang = STATIC_SLUG_FR.get("topics", "topics")
+        return f'{m.group(1)}"/{LANG_CODE}/{topics_slug_lang}/{m.group(3)}{m.group(4)}"'
 
     html = _STATIC_LINK_RE.sub(repl_top_level, html)
     html = _LEGACY_FR_LINK_RE.sub(repl_legacy_fr, html)
@@ -286,14 +287,27 @@ def rewrite_static_links(html: str) -> str:
 # that post_enrich.py baked into the rendered shell). Synced with the
 # English version in scripts/post_enrich.py.
 def _french_author_card() -> str:
+    """Author-card aside for the current language. Reads localised
+    strings from the registry (aria/portrait via labels.json, full-
+    profile link via strings.json) and resolves the about-page slug
+    via STATIC_SLUG_FR. Body + credentials text is currently still
+    French; Phase 6e will move it into a data file per lang.
+    """
+    about_slug = STATIC_SLUG_FR.get("about", "about")
+    aria = I18N_FR.get("About the author", "About the author")
+    portrait_alt = TAKEAWAY_LABELS_EN_TO_FR.get("Portrait of Sebastien Rousseau", "Portrait of Sebastien Rousseau")
+    # _lang_registry.load_strings exposes the "author.alt.portrait" + "author.fullProfile" keys
+    strings = _lang_registry.load_strings(LANG_CODE)
+    portrait_alt = strings.get("author.alt.portrait", portrait_alt)
+    full_profile = strings.get("author.fullProfile", "Full profile")
     return (
-        '<aside class="author-card" aria-label="À propos de l\'auteur">'
-        '<img alt="Portrait de Sebastien Rousseau" '
+        f'<aside class="author-card" aria-label="{aria}">'
+        f'<img alt="{portrait_alt}" '
         'src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" '
         'width="64" height="64" loading="lazy" decoding="async" />'
         '<span class="author-card-body">'
         '<strong class="author-card-name">'
-        '<a href="/fr/a-propos/index.html">Sebastien Rousseau</a></strong>'
+        f'<a href="/{LANG_CODE}/{about_slug}/index.html">Sebastien Rousseau</a></strong>'
         '<span class="author-card-bio">Technologue senior dans la banque, '
         'j\'écris sur l\'IA appliquée, la migration ISO 20022, la cryptographie '
         'post-quantique pour les services financiers, et la transformation '
@@ -301,7 +315,7 @@ def _french_author_card() -> str:
         '<span class="author-credentials">'
         'Plus de 20 ans d\'expérience chez HSBC Commercial &amp; Investment Bank, '
         'PayPal, Barclays, Shazam, AKQA, Virgin Group. '
-        '<a href="/fr/a-propos/index.html">Profil complet</a> &middot; '
+        f'<a href="/{LANG_CODE}/{about_slug}/index.html">{full_profile}</a> &middot; '
         '<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; '
         '<a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a>'
         '</span></span></aside>'
@@ -535,10 +549,10 @@ def _swap_breadcrumb(html: str, slug: str, title: str) -> str:  # noqa: C901 —
                 item["item"] = f"{BASE}/"
             elif pos == 2:
                 item["name"] = "Articles"
-                item["item"] = f"{BASE}/fr/"
+                item["item"] = f"{BASE}/{LANG_CODE}/"
             elif pos == 3:
                 item["name"] = title
-                item["item"] = f"{BASE}/fr/{slug}/"
+                item["item"] = f"{BASE}/{LANG_CODE}/{slug}/"
         return True
 
     def fix(m: re.Match[str]) -> str:
@@ -589,22 +603,32 @@ def _build_en_url_rewriter() -> re.Pattern[str]:
     return re.compile(_EN_URL_PATTERN_TMPL.format(slugs=slugs))
 
 
-_EN_URL_RE = _build_en_url_rewriter()
+_EN_URL_RE_CACHE: dict[str, re.Pattern[str]] = {}
+
+
+def _en_url_re() -> re.Pattern[str]:
+    """Lang-aware cache of the EN-URL regex. Each call returns the
+    regex built against the *current* EN_TO_FR map (rebound per lang
+    by ``_bind_lang``)."""
+    key = LANG_CODE
+    if key not in _EN_URL_RE_CACHE:
+        _EN_URL_RE_CACHE[key] = _build_en_url_rewriter()
+    return _EN_URL_RE_CACHE[key]
 
 
 def rewrite_en_urls(html_fragment: str) -> str:
-    """Rewrite every reference to an EN article URL to its FR
-    counterpart, keeping the same origin (absolute → absolute,
-    root-relative → root-relative)."""
+    """Rewrite every reference to an EN article URL to its
+    current-language counterpart, keeping the same origin (absolute →
+    absolute, root-relative → root-relative)."""
 
     def repl(m: re.Match[str]) -> str:
         origin = m.group(1) or ""
         en = m.group("slug")
-        fr = fr_slug(en)
+        lang_slug = fr_slug(en)
         tail = m.group(3) or ""
-        return f"{origin}/fr/{fr}{tail}"
+        return f"{origin}/{LANG_CODE}/{lang_slug}{tail}"
 
-    return _EN_URL_RE.sub(repl, html_fragment)
+    return _en_url_re().sub(repl, html_fragment)
 
 
 def _build_fr_title_map() -> dict[str, str]:
@@ -824,7 +848,7 @@ def rewrite_fr_link_titles(html: str) -> str:
             attrs = attrs.rstrip() + f' title="{esc}"'
         if re.search(r'\baria-label="', attrs):
             attrs = re.sub(r'(\baria-label=")[^"]*(")', rf'\g<1>{esc}\g<2>', attrs, count=1)
-        return f'<a{attrs} href="/fr/{slug}/index.html">'
+        return f'<a{attrs} href="/{LANG_CODE}/{slug}/index.html">'
 
     return _FR_LINK_RE.sub(repl, html)
 
@@ -947,7 +971,7 @@ def _patch_blogposting_jsonld(  # noqa: C901 — schema patch passes
             return False
         node["headline"] = title
         node["description"] = description
-        node["inLanguage"] = "fr"
+        node["inLanguage"] = LANG_CODE
         node["url"] = url_fr
         if keywords:
             node["keywords"] = keywords
@@ -970,7 +994,7 @@ def _patch_blogposting_jsonld(  # noqa: C901 — schema patch passes
             ipo["@id"] = "https://sebastienrousseau.com/fr/#blog"
             ipo["name"] = "Sebastien Rousseau — Articles (français)"
             ipo["url"] = "https://sebastienrousseau.com/fr/"
-            ipo["inLanguage"] = "fr"
+            ipo["inLanguage"] = LANG_CODE
         return True
 
     def fix(m: re.Match[str]) -> str:
@@ -1068,10 +1092,10 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
     subtitle = fm.get("subtitle", description)
     page_title = f"{title} — Sebastien Rousseau"
     slug_fr = fr_slug(slug)
-    url_fr = f"{BASE}/fr/{slug_fr}/"
+    url_fr = f"{BASE}/{LANG_CODE}/{slug_fr}/"
 
     # html lang
-    shell = _HTML_LANG_RE.sub("\\g<1>\"fr-FR\"", shell, count=1)
+    shell = _HTML_LANG_RE.sub(rf'\g<1>"{LANG_BCP47}"', shell, count=1)
     # head meta
     shell = _TITLE_RE.sub(f'<title>{_html.escape(page_title)}</title>', shell, count=1)
     shell = _DESC_META_RE.sub(rf'\g<1>{_html.escape(description, quote=True)}\g<2>', shell, count=1)
@@ -1080,7 +1104,7 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
     shell = _OG_TITLE_RE.sub(rf'\g<1>{_html.escape(page_title, quote=True)}\g<2>', shell, count=1)
     shell = _OG_DESC_RE.sub(rf'\g<1>{_html.escape(description, quote=True)}\g<2>', shell, count=1)
     shell = _OG_URL_RE.sub(rf'\g<1>{url_fr}\g<2>', shell, count=1)
-    shell = _OG_LOCALE_RE.sub(r'\1fr_FR\2', shell, count=1)
+    shell = _OG_LOCALE_RE.sub(rf'\g<1>{LANG_LOCALE}\g<2>', shell, count=1)
     shell = _TW_TITLE_RE.sub(rf'\g<1>{_html.escape(page_title, quote=True)}\g<2>', shell, count=1)
     shell = _TW_DESC_RE.sub(rf'\g<1>{_html.escape(description, quote=True)}\g<2>', shell, count=1)
     shell = _CANONICAL_RE.sub(rf'\g<1>{url_fr}\g<2>', shell, count=1)
@@ -1142,7 +1166,7 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
     # Localise every remaining inLanguage in JSON-LD blocks (WebSite,
     # ProfilePage, and any other secondary graph that the targeted
     # patchers above don't touch). Phase 2 SEO gate enforces this.
-    shell = _localize_inlanguage_globally(shell, "fr")
+    shell = _localize_inlanguage_globally(shell, LANG_CODE)
 
     # Breadcrumb final segment
     shell = _swap_breadcrumb(shell, slug_fr, title)
@@ -1152,12 +1176,12 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
     # Shokunin may have emitted into the shell.
     shell = re.sub(
         r'href="(?:https?://[^/"]+)?/atom\.xml"',
-        'href="/fr/atom.xml"',
+        f'href="/{LANG_CODE}/atom.xml"',
         shell,
     )
     shell = re.sub(
         r'href="(?:https?://[^/"]+)?/rss\.xml"',
-        'href="/fr/rss.xml"',
+        f'href="/{LANG_CODE}/rss.xml"',
         shell,
     )
 
@@ -1193,7 +1217,7 @@ def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
 
     featured = entries[0]
     archive = entries[1:]
-    feat_url = f"/fr/{featured['slug']}/index.html"
+    feat_url = f"/{LANG_CODE}/{featured['slug']}/index.html"
     feat_block = (
         '<header class="newsroom-section-head"><p class="newsroom-kicker">À LA UNE</p>'
         '<h2>Article récent</h2></header>'
@@ -1213,7 +1237,7 @@ def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
 
     cards: list[str] = []
     for e in archive:
-        url = f"/fr/{e['slug']}/index.html"
+        url = f"/{LANG_CODE}/{e['slug']}/index.html"
         cards.append(
             '<article class="newsroom-card">'
             f'<a class="newsroom-card-media" href="{url}" title="{_html.escape(e["title"], quote=True)}">'
@@ -1240,7 +1264,7 @@ def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
         + '</section>'
     )
     shell = _NEWSROOM_RE.sub(body, shell, count=1)
-    shell = _HTML_LANG_RE.sub("\\g<1>\"fr-FR\"", shell, count=1)
+    shell = _HTML_LANG_RE.sub(rf'\g<1>"{LANG_BCP47}"', shell, count=1)
     title = "Articles en français — Sebastien Rousseau"
     desc = "Sélection d'articles traduits manuellement en français."
     shell = _TITLE_RE.sub(f'<title>{_html.escape(title)}</title>', shell, count=1)
@@ -1248,7 +1272,7 @@ def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
     shell = _OG_TITLE_RE.sub(rf'\g<1>{_html.escape(title, quote=True)}\g<2>', shell, count=1)
     shell = _OG_DESC_RE.sub(rf'\g<1>{_html.escape(desc, quote=True)}\g<2>', shell, count=1)
     shell = _OG_URL_RE.sub(r'\1https://sebastienrousseau.com/fr/articles/\2', shell, count=1)
-    shell = _OG_LOCALE_RE.sub(r'\1fr_FR\2', shell, count=1)
+    shell = _OG_LOCALE_RE.sub(rf'\g<1>{LANG_LOCALE}\g<2>', shell, count=1)
     shell = _CANONICAL_RE.sub(r'\1https://sebastienrousseau.com/fr/articles/\2', shell, count=1)
     shell = translate_chrome(shell)
     # Reciprocal hreflang for the language selector.
@@ -1259,11 +1283,11 @@ def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
     )
     hreflang_block = (
         f'<link rel="alternate" hreflang="en" href="{BASE}/articles/" />'
-        f'<link rel="alternate" hreflang="fr" href="{BASE}/fr/articles/" />'
+        f'<link rel="alternate" hreflang="{LANG_CODE}" href="{BASE}/{LANG_CODE}/articles/" />'
         f'<link rel="alternate" hreflang="x-default" href="{BASE}/articles/" />'
     )
     shell = shell.replace('</head>', hreflang_block + '</head>', 1)
-    shell = _localize_inlanguage_globally(shell, "fr")
+    shell = _localize_inlanguage_globally(shell, LANG_CODE)
     return shell
 
 
@@ -1299,15 +1323,15 @@ def render_home() -> str | None:  # noqa: C901 — orchestrates the FR home fork
         "résistante au quantique. Recherche, bibliothèques open source et "
         "conseil produit pour les services financiers."
     )
-    url_fr = f"{BASE}/fr/"
+    url_fr = f"{BASE}/{LANG_CODE}/"
 
-    shell = _HTML_LANG_RE.sub("\\g<1>\"fr-FR\"", shell, count=1)
+    shell = _HTML_LANG_RE.sub(rf'\g<1>"{LANG_BCP47}"', shell, count=1)
     shell = _TITLE_RE.sub(f'<title>{_html.escape(title)}</title>', shell, count=1)
     shell = _DESC_META_RE.sub(rf'\g<1>{_html.escape(desc, quote=True)}\g<2>', shell, count=1)
     shell = _OG_TITLE_RE.sub(rf'\g<1>{_html.escape(title, quote=True)}\g<2>', shell, count=1)
     shell = _OG_DESC_RE.sub(rf'\g<1>{_html.escape(desc, quote=True)}\g<2>', shell, count=1)
     shell = _OG_URL_RE.sub(rf'\g<1>{url_fr}\g<2>', shell, count=1)
-    shell = _OG_LOCALE_RE.sub(r'\1fr_FR\2', shell, count=1)
+    shell = _OG_LOCALE_RE.sub(rf'\g<1>{LANG_LOCALE}\g<2>', shell, count=1)
     shell = _TW_TITLE_RE.sub(rf'\g<1>{_html.escape(title, quote=True)}\g<2>', shell, count=1)
     shell = _TW_DESC_RE.sub(rf'\g<1>{_html.escape(desc, quote=True)}\g<2>', shell, count=1)
     shell = _CANONICAL_RE.sub(rf'\g<1>{url_fr}\g<2>', shell, count=1)
@@ -1331,12 +1355,12 @@ def render_home() -> str | None:  # noqa: C901 — orchestrates the FR home fork
     # Localise feed links.
     shell = re.sub(
         r'href="(?:https?://[^/"]+)?/atom\.xml"',
-        'href="/fr/atom.xml"',
+        f'href="/{LANG_CODE}/atom.xml"',
         shell,
     )
     shell = re.sub(
         r'href="(?:https?://[^/"]+)?/rss\.xml"',
-        'href="/fr/rss.xml"',
+        f'href="/{LANG_CODE}/rss.xml"',
         shell,
     )
 
@@ -1363,7 +1387,7 @@ def render_home() -> str | None:  # noqa: C901 — orchestrates the FR home fork
                     node["description"] = desc
                     local = True
                 if "inLanguage" in node:
-                    node["inLanguage"] = "fr"
+                    node["inLanguage"] = LANG_CODE
                     local = True
             if t == "WebPage":
                 if "url" in node:
@@ -1376,7 +1400,7 @@ def render_home() -> str | None:  # noqa: C901 — orchestrates the FR home fork
                     node["description"] = desc
                     local = True
                 if "inLanguage" in node:
-                    node["inLanguage"] = "fr"
+                    node["inLanguage"] = LANG_CODE
                     local = True
             return local
 
@@ -1410,11 +1434,11 @@ def render_home() -> str | None:  # noqa: C901 — orchestrates the FR home fork
     )
     hreflang_block = (
         f'<link rel="alternate" hreflang="en" href="{BASE}/" />'
-        f'<link rel="alternate" hreflang="fr" href="{url_fr}" />'
+        f'<link rel="alternate" hreflang="{LANG_CODE}" href="{url_fr}" />'
         f'<link rel="alternate" hreflang="x-default" href="{BASE}/" />'
     )
     shell = shell.replace('</head>', hreflang_block + '</head>', 1)
-    shell = _localize_inlanguage_globally(shell, "fr")
+    shell = _localize_inlanguage_globally(shell, LANG_CODE)
 
     return shell
 
@@ -1481,9 +1505,9 @@ def render_static_translation(slug: str) -> str | None:  # noqa: C901 — per-pa
     subtitle = cfg.get("subtitle", description)
     keywords = cfg.get("keywords", "")
     fr_slug_str = STATIC_SLUG_FR.get(slug, slug)
-    url_fr = f"{BASE}/fr/{fr_slug_str}/"
+    url_fr = f"{BASE}/{LANG_CODE}/{fr_slug_str}/"
 
-    shell = _HTML_LANG_RE.sub("\\g<1>\"fr-FR\"", shell, count=1)
+    shell = _HTML_LANG_RE.sub(rf'\g<1>"{LANG_BCP47}"', shell, count=1)
     shell = _TITLE_RE.sub(f'<title>{_html.escape(title)}</title>', shell, count=1)
     shell = _DESC_META_RE.sub(rf'\g<1>{_html.escape(description, quote=True)}\g<2>', shell, count=1)
     if keywords:
@@ -1491,7 +1515,7 @@ def render_static_translation(slug: str) -> str | None:  # noqa: C901 — per-pa
     shell = _OG_TITLE_RE.sub(rf'\g<1>{_html.escape(title, quote=True)}\g<2>', shell, count=1)
     shell = _OG_DESC_RE.sub(rf'\g<1>{_html.escape(description, quote=True)}\g<2>', shell, count=1)
     shell = _OG_URL_RE.sub(rf'\g<1>{url_fr}\g<2>', shell, count=1)
-    shell = _OG_LOCALE_RE.sub(r'\1fr_FR\2', shell, count=1)
+    shell = _OG_LOCALE_RE.sub(rf'\g<1>{LANG_LOCALE}\g<2>', shell, count=1)
     shell = _TW_TITLE_RE.sub(rf'\g<1>{_html.escape(title, quote=True)}\g<2>', shell, count=1)
     shell = _TW_DESC_RE.sub(rf'\g<1>{_html.escape(description, quote=True)}\g<2>', shell, count=1)
     shell = _CANONICAL_RE.sub(rf'\g<1>{url_fr}\g<2>', shell, count=1)
@@ -1532,12 +1556,12 @@ def render_static_translation(slug: str) -> str | None:  # noqa: C901 — per-pa
     # Localise feed links.
     shell = re.sub(
         r'href="(?:https?://[^/"]+)?/atom\.xml"',
-        'href="/fr/atom.xml"',
+        f'href="/{LANG_CODE}/atom.xml"',
         shell,
     )
     shell = re.sub(
         r'href="(?:https?://[^/"]+)?/rss\.xml"',
-        'href="/fr/rss.xml"',
+        f'href="/{LANG_CODE}/rss.xml"',
         shell,
     )
 
@@ -1564,7 +1588,7 @@ def render_static_translation(slug: str) -> str | None:  # noqa: C901 — per-pa
                     node["url"] = url_fr
                     local = True
                 if "inLanguage" in node:
-                    node["inLanguage"] = "fr"
+                    node["inLanguage"] = LANG_CODE
                     local = True
             if t == "BreadcrumbList":
                 items = node.get("itemListElement", [])
@@ -1616,11 +1640,11 @@ def render_static_translation(slug: str) -> str | None:  # noqa: C901 — per-pa
     en_url = f"{BASE}/{slug}/"
     hreflang_block = (
         f'<link rel="alternate" hreflang="en" href="{en_url}" />'
-        f'<link rel="alternate" hreflang="fr" href="{url_fr}" />'
+        f'<link rel="alternate" hreflang="{LANG_CODE}" href="{url_fr}" />'
         f'<link rel="alternate" hreflang="x-default" href="{en_url}" />'
     )
     shell = shell.replace('</head>', hreflang_block + '</head>', 1)
-    shell = _localize_inlanguage_globally(shell, "fr")
+    shell = _localize_inlanguage_globally(shell, LANG_CODE)
 
     return shell
 
@@ -1639,10 +1663,11 @@ def write_static_translations() -> int:
         dst.write_text(page, encoding="utf-8")
         n += 1
 
-    # Topic sub-pages — clone each /topics/<topic>/ as /fr/sujets/<topic>/.
+    # Topic sub-pages — clone each /topics/<topic>/ as /<lang>/<topics_slug>/<topic>/.
     # build_topics.py emits the EN versions before us; we fork + translate.
     topics_dir = PUBLIC / "topics"
     if topics_dir.is_dir():
+        topics_slug_lang = STATIC_SLUG_FR.get("topics", "topics")
         for topic_dir in sorted(topics_dir.iterdir()):
             if not topic_dir.is_dir():
                 continue
@@ -1650,7 +1675,7 @@ def write_static_translations() -> int:
             if not src.is_file():
                 continue
             page = _render_topic_subpage_fr(topic_dir.name, src.read_text(encoding="utf-8"))
-            dst = OUT / "sujets" / topic_dir.name / "index.html"
+            dst = OUT / topics_slug_lang / topic_dir.name / "index.html"
             dst.parent.mkdir(parents=True, exist_ok=True)
             dst.write_text(page, encoding="utf-8")
             n += 1
@@ -1671,16 +1696,17 @@ def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:  # noqa: C901 
     title = cfg["title"]
     lede = cfg["lede"]
     page_title = f"{title} — Sebastien Rousseau"
-    url_fr = f"{BASE}/fr/sujets/{topic_slug}/"
+    topics_slug_lang = STATIC_SLUG_FR.get("topics", "topics")
+    url_fr = f"{BASE}/{LANG_CODE}/{topics_slug_lang}/{topic_slug}/"
 
-    shell = _HTML_LANG_RE.sub("\\g<1>\"fr-FR\"", shell, count=1)
+    shell = _HTML_LANG_RE.sub(rf'\g<1>"{LANG_BCP47}"', shell, count=1)
     shell = _TITLE_RE.sub(f'<title>{_html.escape(page_title)}</title>', shell, count=1)
     if lede:
         shell = _DESC_META_RE.sub(rf'\g<1>{_html.escape(lede, quote=True)}\g<2>', shell, count=1)
         shell = _OG_DESC_RE.sub(rf'\g<1>{_html.escape(lede, quote=True)}\g<2>', shell, count=1)
     shell = _OG_TITLE_RE.sub(rf'\g<1>{_html.escape(page_title, quote=True)}\g<2>', shell, count=1)
     shell = _OG_URL_RE.sub(rf'\g<1>{url_fr}\g<2>', shell, count=1)
-    shell = _OG_LOCALE_RE.sub(r'\1fr_FR\2', shell, count=1)
+    shell = _OG_LOCALE_RE.sub(rf'\g<1>{LANG_LOCALE}\g<2>', shell, count=1)
     shell = _CANONICAL_RE.sub(rf'\g<1>{url_fr}\g<2>', shell, count=1)
     shell = _TW_TITLE_RE.sub(rf'\g<1>{_html.escape(page_title, quote=True)}\g<2>', shell, count=1)
     if lede:
@@ -1708,8 +1734,8 @@ def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:  # noqa: C901 
     shell = re.sub(
         r'<nav aria-label="Breadcrumb" class="topic-breadcrumb">[\s\S]*?</nav>',
         f'<nav aria-label="Fil d\'Ariane" class="topic-breadcrumb">'
-        f'<a href="/fr/">Accueil</a> &middot; '
-        f'<a href="/fr/sujets/index.html">Sujets</a> &middot; '
+        f'<a href="/{LANG_CODE}/">Accueil</a> &middot; '
+        f'<a href="/{LANG_CODE}/{STATIC_SLUG_FR.get("topics", "topics")}/index.html">Sujets</a> &middot; '
         f'<span>{_html.escape(title)}</span></nav>',
         shell,
         count=1,
@@ -1756,7 +1782,7 @@ def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:  # noqa: C901 
                     node["url"] = url_fr
                     local = True
                 if "inLanguage" in node:
-                    node["inLanguage"] = "fr"
+                    node["inLanguage"] = LANG_CODE
                     local = True
             if t == "BreadcrumbList":
                 for item in node.get("itemListElement", []):
@@ -1769,7 +1795,7 @@ def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:  # noqa: C901 
                         local = True
                     elif pos == 2:
                         item["name"] = "Sujets"
-                        item["item"] = f"{BASE}/fr/sujets/"
+                        item["item"] = f"{BASE}/{LANG_CODE}/{STATIC_SLUG_FR.get('topics', 'topics')}/"
                         local = True
                     elif pos == 3:
                         item["name"] = title
@@ -1816,22 +1842,22 @@ def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:  # noqa: C901 
     en_url = f"{BASE}/topics/{topic_slug}/"
     hreflang_block = (
         f'<link rel="alternate" hreflang="en" href="{en_url}" />'
-        f'<link rel="alternate" hreflang="fr" href="{url_fr}" />'
+        f'<link rel="alternate" hreflang="{LANG_CODE}" href="{url_fr}" />'
         f'<link rel="alternate" hreflang="x-default" href="{en_url}" />'
     )
     shell = shell.replace('</head>', hreflang_block + '</head>', 1)
     # Feed links
     shell = re.sub(
         r'href="(?:https?://[^/"]+)?/atom\.xml"',
-        'href="/fr/atom.xml"',
+        f'href="/{LANG_CODE}/atom.xml"',
         shell,
     )
     shell = re.sub(
         r'href="(?:https?://[^/"]+)?/rss\.xml"',
-        'href="/fr/rss.xml"',
+        f'href="/{LANG_CODE}/rss.xml"',
         shell,
     )
-    shell = _localize_inlanguage_globally(shell, "fr")
+    shell = _localize_inlanguage_globally(shell, LANG_CODE)
     return shell
 
 
@@ -1927,7 +1953,7 @@ def _render_one_lang(code: str) -> int:
         # /fr/articles/ — the French articles listing (was /fr/index.html).
         articles_hub = render_articles_hub(entries)
         if articles_hub:
-            articles_path = OUT / "articles" / "index.html"
+            articles_path = OUT / STATIC_SLUG_FR.get("articles", "articles") / "index.html"
             articles_path.parent.mkdir(parents=True, exist_ok=True)
             articles_path.write_text(articles_hub, encoding="utf-8")
             written += 1

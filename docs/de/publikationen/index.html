@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Tue, 12 Mar 2024 21:21:21 +0000" id="date" />
+    <meta itemprop="dateModified" content="Tue, 12 Mar 2024 21:21:21 +0000" id="last-modified" />
+    <title>Publikationen — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Artikel, Berichte und Publikationen von Sebastien Rousseau über KI, ISO-20022-Zahlungen und Post-Quanten-Kryptografie.">
+<meta name="keywords" content="Publikationen, Artikel, Berichte, Forschung, ISO 20022, KI, Post-Quanten-Kryptografie">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Research Publications & White Papers from Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-/8rcQIVqopos8jbecCA16+Y8ecFuQsdliZLvL8Ajhvg=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-DZw/pBTKk86y1t1+VhNzUHK3yIZJu+oWHxj9XOn0Frg=' 'sha256-Kz+yoSilOT5rug3OCB+JS8rcAALKTMCMmsv0PPcf2OM=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/de/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/9930ecfdff61f48d.css" crossorigin="anonymous" integrity="sha256-uiIfOSzvAomJoIgahbA7/d6tJPC0CX/f3fLZdJHr/No=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom-Feed" href="/de/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Publikationen — Sebastien Rousseau">
+<meta property="og:description" content="Artikel, Berichte und Publikationen von Sebastien Rousseau über KI, ISO-20022-Zahlungen und Post-Quanten-Kryptografie.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/de/publikationen/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Publikationen — Sebastien Rousseau">
+<meta name="twitter:description" content="Artikel, Berichte und Publikationen von Sebastien Rousseau über KI, ISO-20022-Zahlungen und Post-Quanten-Kryptografie.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/de/publikationen/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/papers/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/publikationen/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/papers/" /><meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/papers/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/publications/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/publikationen/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/papers/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Zum Hauptinhalt springen</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Navigation umschalten" />
+      <div class="wrap">
+        <a class="ap-brand" href="/de/index.html" aria-label="White Papers & Research home">
+          <span itemprop="name">White Papers & Research</span>
+        </a>
+        <nav aria-label="Hauptnavigation">
+          <ul class="ap-menu">
+            <li><a href="/de/uber-mich/index.html">Über mich</a></li>
+            <li><a href="/de/artikel/index.html">Artikel</a></li>
+            <li><a href="/de/publikationen/index.html">Publikationen</a></li>
+            <li><a href="/de/themen/index.html">Themen</a></li>
+            <li><a href="/de/projekte/index.html">Projekte</a></li>
+            <li><a href="/de/playlists/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Dunkles Design aktivieren" aria-pressed="false" title="Design wechseln">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Suchen (Cmd oder Strg + K)" title="Suchen (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Sprache">
+            <button type="button" class="ap-lang-toggle" aria-label="DE, Sprache ändern" aria-expanded="false" aria-haspopup="menu" title="Sprache wechseln">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">DE</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <span class="ap-lang-item" data-lang="ar" aria-disabled="true" title="Demnächst verfügbar">🇸🇦 العربية</span>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="Demnächst verfügbar">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="Demnächst verfügbar">🇨🇿 Čeština</span>
+                <span class="ap-lang-item" data-lang="de" aria-disabled="true" title="Demnächst verfügbar">🇩🇪 Deutsch</span>
+                <span class="ap-lang-item" data-lang="es" aria-disabled="true" title="Demnächst verfügbar">🇪🇸 Español</span>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="Demnächst verfügbar">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="Demnächst verfügbar">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="Demnächst verfügbar">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="Demnächst verfügbar">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="Demnächst verfügbar">🇮🇩 Indonesia</span>
+                <span class="ap-lang-item" data-lang="it" aria-disabled="true" title="Demnächst verfügbar">🇮🇹 Italiano</span>
+                <span class="ap-lang-item" data-lang="ja" aria-disabled="true" title="Demnächst verfügbar">🇯🇵 日本語</span>
+                <span class="ap-lang-item" data-lang="ko" aria-disabled="true" title="Demnächst verfügbar">🇰🇷 한국어</span>
+                <span class="ap-lang-item" data-lang="nl" aria-disabled="true" title="Demnächst verfügbar">🇳🇱 Nederlands</span>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="Demnächst verfügbar">🇵🇱 Polski</span>
+                <span class="ap-lang-item" data-lang="pt-br" aria-disabled="true" title="Demnächst verfügbar">🇧🇷 Português</span>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="Demnächst verfügbar">🇷🇴 Română</span>
+                <span class="ap-lang-item" data-lang="ru" aria-disabled="true" title="Demnächst verfügbar">🇷🇺 Русский</span>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="Demnächst verfügbar">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="Demnächst verfügbar">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="Demnächst verfügbar">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Demnächst verfügbar">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="Demnächst verfügbar">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="Demnächst verfügbar">🇳🇬 Yorùbá</span>
+                <span class="ap-lang-item" data-lang="zh-hans" aria-disabled="true" title="Demnächst verfügbar">🇨🇳 简体中文</span>
+                <span class="ap-lang-item" data-lang="zh-hant" aria-disabled="true" title="Demnächst verfügbar">🇹🇼 繁體中文</span>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/de/kontakt/index.html" aria-label="Kontakt aufnehmen">Kontakt ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Navigation umschalten">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>White Papers & Research</h1>
+      <p class="sub">Industrie-Whitepaper und angewandte Forschung für leitende Entscheider in Zahlungsverkehr und Sicherheit.</p>
+    </section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap"><section class="newsroom papers">
+<div class="books-shelf">
+<article class="book book-no-cover">
+<div class="book-body">
+<p class="book-eyebrow">LIVRE BLANC INDUSTRIE · EPAA</p>
+<h2 class="book-title"><a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" rel="external noopener" title="Quantum-Safe Payments: Why the Payments Industry Must Act Now">Paiements résistants au quantique : pourquoi le secteur doit agir maintenant</a></h2>
+<p class="book-meta"><time datetime="2025-09-01">septembre 2025</time> &middot; <a href="https://emergingpaymentsasia.org/" rel="external noopener">Emerging Payments Association Asia (EPAA)</a></p>
+<p class="book-meta book-meta-faint">Français · PDF · 18.9 MB · Téléchargement gratuit</p>
+<p class="book-excerpt">L'informatique quantique menace les fondations cryptographiques des services financiers. Les paiements — du temps réel au règlement transfrontalier — reposent sur des protections que l'informatique quantique finira par rendre obsolètes. Ce livre blanc EPAA expose pourquoi le secteur doit agir dès maintenant.</p>
+<p class="book-actions"><a class="pill primary no-chev" href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" rel="external noopener" title="Lire le livre blanc (PDF)">Lire le livre blanc</a> <a class="pill ghost no-chev" href="https://emergingpaymentsasia.org/" rel="external noopener" title="Visiter l'Emerging Payments Association Asia"<>À propos de l'EPAA</a></p>
+</div>
+</article>
+<article class="book book-no-cover">
+<div class="book-body">
+<p class="book-eyebrow">PUBLICATION · LIVRE BLANC</p>
+<h2 class="book-title"><a href="/de/2024-03-12-echtzeit-spracherkennung-auf-macos-mit-openai-whisper/index.html" title="Accelerating Real-Time Speech Recognition with OpenAI Whisper and Metal Performance Shaders on macOS">Accélérer la reconnaissance vocale en temps réel avec OpenAI Whisper et Metal Performance Shaders sur macOS</a></h2>
+<p class="book-meta"><time datetime="2024-03-12">12 mars 2024</time> &middot; Sebastien Rousseau</p>
+<p class="book-meta book-meta-faint">Français · PDF · 95 KB</p>
+<p class="book-excerpt">Un système de transcription voix-texte en temps réel s'appuyant sur OpenAI Whisper et l'accélération GPU Metal Performance Shaders sur macOS pour atteindre une latence inférieure à la seconde, 8 à 12× le temps réel sur M1 Max.</p>
+<p class="book-actions"><a class="pill primary no-chev" href="https://www.paypal.com/ncp/payment/5T6L9WBXHNZUU" rel="external noopener" title="Acheter la publication sur PayPal">Acheter &middot; 49,00 $</a> <a class="pill ghost no-chev" href="/de/2024-03-12-echtzeit-spracherkennung-auf-macos-mit-openai-whisper/index.html" title="Read the companion article"<>Lire l'article</a></p>
+</div>
+</article>
+</div>
+<header class="newsroom-section-head"><p class="newsroom-kicker">NOTES DE RECHERCHE</p><h2>Recherches et analyses récentes</h2></header>
+<div class="newsroom-grid newsroom-grid-tight">
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/de/2026-04-11-quantenschwellen-verschieben-sich-erneut/index.html" title="Quantum Thresholds Are Moving Again">
+<img alt="Quantum computing circuit board with blue light patterns" src="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" loading="lazy" decoding="async" width="600" height="600"  fetchpriority="high">
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">NOTE DE RECHERCHE · QUANTIQUE</span>
+<h3><a href="/de/2026-04-11-quantenschwellen-verschieben-sich-erneut/index.html" title="Quantum Thresholds Are Moving Again">Quantum Thresholds Are Moving Again</a></h3>
+<p class="newsroom-meta"><time datetime="2026-04-11">11 avril 2026</time> &middot; Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Un nouvel article suggère que l'algorithme de Shor pourrait fonctionner avec seulement 10 000 qubits. Le seuil de l'informatique quantique cryptographiquement pertinente baisse rapidement.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/de/2024-04-22-fehler-im-quantenalgorithmus-fuer-gitterbasierte-kryptografie-entdeckt/index.html" title="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto">
+<img alt="Network of digital nodes in red and blue hues" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">NOTE DE RECHERCHE · QUANTIQUE</span>
+<h3><a href="/de/2024-04-22-fehler-im-quantenalgorithmus-fuer-gitterbasierte-kryptografie-entdeckt/index.html" title="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto">Bug Discovered in Quantum Algorithm for Lattice-Based Crypto</a></h3>
+<p class="newsroom-meta"><time datetime="2024-04-22">22 avril 2024</time> &middot; Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Un bug a été découvert dans l'algorithme quantique de Yilei Chen pour résoudre LWE, sécurisant temporairement la cryptographie sur réseaux et soulignant le besoin de recherches continues.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/de/2024-04-15-quantenalgorithmus-fordert-gitterbasierte-kryptografie-heraus/index.html" title="Un algorithme quantique met au défi la cryptographie sur réseaux">
+<img alt="Network nodes in a digital blue space" src="https://cloudcdn.pro/stocks/images/digital-constellation.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">NOTE DE RECHERCHE · QUANTIQUE</span>
+<h3><a href="/de/2024-04-15-quantenalgorithmus-fordert-gitterbasierte-kryptografie-heraus/index.html" title="Un algorithme quantique met au défi la cryptographie sur réseaux">Un algorithme quantique met au défi la cryptographie sur réseaux</a></h3>
+<p class="newsroom-meta"><time datetime="2024-04-15">15 avril 2024</time> &middot; Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Un nouvel algorithme quantique résout un problème cryptographique clé, appelant à accélérer la recherche en sécurité résistante au quantique.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/de/2024-03-25-vollstaendig-homomorphe-verschluesselung-im-quanten-banking/index.html" title="Le chiffrement entièrement homomorphe (FHE) à l'ère bancaire quantique">
+<img alt="Banner for Fully Homomorphic Encryption" src="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">RECHERCHE · CRYPTOGRAPHIE</span>
+<h3><a href="/de/2024-03-25-vollstaendig-homomorphe-verschluesselung-im-quanten-banking/index.html" title="Le chiffrement entièrement homomorphe (FHE) à l'ère bancaire quantique">Le chiffrement entièrement homomorphe (FHE) à l'ère bancaire quantique</a></h3>
+<p class="newsroom-meta"><time datetime="2024-03-25">25 mars 2024</time> &middot; Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Comment le chiffrement entièrement homomorphe révolutionne la sécurité des données dans la banque et les services financiers, préservant la vie privée face aux menaces de l'ère quantique.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/de/2024-03-18-ki-voranbringen-mit-multimodalen-llms-erkenntnisse-aus-mm1/index.html" title="Faire progresser l'IA avec les LLM multimodaux : enseignements de MM1">
+<img alt="Banner for Apple's MM1 multimodal LLM research" src="https://cloudcdn.pro/stocks/images/mm1-visual.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">RECHERCHE · IA</span>
+<h3><a href="/de/2024-03-18-ki-voranbringen-mit-multimodalen-llms-erkenntnisse-aus-mm1/index.html" title="Faire progresser l'IA avec les LLM multimodaux : enseignements de MM1">Faire progresser l'IA avec les LLM multimodaux : enseignements de MM1</a></h3>
+<p class="newsroom-meta"><time datetime="2024-03-18">18 mars 2024</time> &middot; Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Une analyse de l'article MM1 d'Apple sur les grands modèles de langage multimodaux — architecture, stratégies de pré-entraînement et capacités émergentes.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/de/2024-01-08-kreditquotenanalyse-optimieren-mit-ibm-qiskit-und-quanten-fourier-transformation/index.html" title="Qiskit and Quantum Fourier Transform for Credit Ratio Analysis">
+<img alt="A quantum computer room" src="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">RECHERCHE · FINANCE QUANTIQUE</span>
+<h3><a href="/de/2024-01-08-kreditquotenanalyse-optimieren-mit-ibm-qiskit-und-quanten-fourier-transformation/index.html" title="Qiskit and Quantum Fourier Transform for Credit Ratio Analysis">Qiskit and Quantum Fourier Transform for Credit Ratio Analysis</a></h3>
+<p class="newsroom-meta"><time datetime="2024-01-08">8 janvier 2024</time> &middot; Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Comment IBM Qiskit et la transformée de Fourier quantique redessinent l'analyse des ratios de crédit en finance, offrant une précision et une vitesse sans précédent.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/de/2023-12-25-finanzwesen-revolutionieren-mit-ki-gestuetzten-quantenalgorithmen/index.html" title="Révolutionner la finance par les algorithmes quantiques augmentés par l'IA">
+<img alt="A circuit board cityscape" src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">RECHERCHE · FINANCE QUANTIQUE</span>
+<h3><a href="/de/2023-12-25-finanzwesen-revolutionieren-mit-ki-gestuetzten-quantenalgorithmen/index.html" title="Révolutionner la finance par les algorithmes quantiques augmentés par l'IA">Révolutionner la finance par les algorithmes quantiques augmentés par l'IA</a></h3>
+<p class="newsroom-meta"><time datetime="2023-12-25">25 décembre 2023</time> &middot; Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Le rôle transformateur de l'IA au sein des algorithmes quantiques en finance, en se concentrant sur leur structure mathématique et leurs applications bancaires.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/de/2023-12-11-quantenschluesselverteilung-revolution-der-banksicherheit/index.html" title="Quantum Key Distribution: Revolutionising Security in Banking">
+<img alt="HSBC headquarter in London Canary Wharf docks" src="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">RECHERCHE · BANQUE QUANTIQUE</span>
+<h3><a href="/de/2023-12-11-quantenschluesselverteilung-revolution-der-banksicherheit/index.html" title="Quantum Key Distribution: Revolutionising Security in Banking">Quantum Key Distribution: Revolutionising Security in Banking</a></h3>
+<p class="newsroom-meta"><time datetime="2023-12-11">11 décembre 2023</time> &middot; Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Alors que les ordinateurs quantiques menacent le chiffrement traditionnel, la distribution quantique de clés (QKD) émerge comme une réponse structurelle pour la sécurité financière.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/de/2023-11-19-crystals-kyber-der-schutzalgorithmus-im-quantenzeitalter/index.html" title="CRYSTALS-Kyber : l'algorithme de protection à l'ère quantique">
+<img alt="A complex quantum computer architecture" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">RECHERCHE · CRYPTOGRAPHIE</span>
+<h3><a href="/de/2023-11-19-crystals-kyber-der-schutzalgorithmus-im-quantenzeitalter/index.html" title="CRYSTALS-Kyber : l'algorithme de protection à l'ère quantique">CRYSTALS-Kyber : l'algorithme de protection à l'ère quantique</a></h3>
+<p class="newsroom-meta"><time datetime="2023-11-19">19 novembre 2023</time> &middot; Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Comment CRYSTALS-Kyber, le mécanisme d'encapsulation de clés résistant au quantique sélectionné par le NIST, redessine la cryptographie à l'ère quantique.</p>
+</div>
+</article>
+</div>
+<section class="qa" aria-labelledby="qa-heading">
+<header class="qa-head">
+<h2 id="qa-heading" class="qa-headline">Questions ?<span class="qa-headline-soft"> Réponses.</span></h2>
+</header>
+<section class="qa-list">
+<details class="qa-item">
+<summary class="qa-q">Quels types de recherches et publications publiez-vous ?</summary><section class="qa-a"><p>Deux axes coexistent. Les <strong>livres blancs industriels</strong>, produits pour des organisations comme l\'Emerging Payments Association Asia (EPAA), examinent les transformations structurelles des infrastructures de paiement — récemment l\'impact de l\'informatique quantique cryptographiquement pertinente sur les rails de règlement wholesale et temps réel. Les <strong>rapports de recherche appliquée</strong> ciblent des sujets techniques précis (par exemple : reconnaissance vocale en temps réel avec Whisper + Metal Performance Shaders sur Apple Silicon) et sont publiés sous forme de PDF achetables individuellement.</p></section>
+</details>
+<details class="qa-item">
+<summary class="qa-q">À qui s’adressent ces publications ?</summary><section class="qa-a"><p>Directeurs des paiements, RSSI et architectes seniors dans les banques de premier rang, banques centrales, opérateurs de systèmes de paiement et propriétaires de schémas. La recherche appliquée s\'adresse aux ingénieurs et responsables produit qui bâtissent sur les grands modèles de langage, l\'IA on-device et la cryptographie résistante au quantique. Chaque article suppose une connaissance du domaine et omet les rappels qu\'un professionnel en exercice possède déjà.</p></section>
+</details>
+<details class="qa-item">
+<summary class="qa-q">Les livres blancs sont-ils en libre lecture ?</summary><section class="qa-a"><p>Le livre blanc EPAA <em>Quantum-Safe Payments</em> est en téléchargement public gratuit sur <a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" rel="external noopener">emergingpaymentsasia.org</a>. Le rapport de recherche indépendant sur la reconnaissance vocale en temps réel avec OpenAI Whisper et Metal Performance Shaders est sous licence et disponible à l\'achat individuel à 49,00 $ (anglais, PDF, ~95 Ko). Un exemplaire par acheteur ; téléchargements à usage personnel uniquement, non redistribuables.</p></section>
+</details>
+<details class="qa-item">
+<summary class="qa-q">Puis-je citer ces documents ?</summary><section class="qa-a"><p>Oui. Les courtes citations avec attribution sont bienvenues dans le cadre du fair use. Pour les publications EPAA, citez l\'EPAA comme éditeur avec le groupe de travail, l\'année et l\'URL du PDF. Pour les rapports de recherche indépendants, citez sous la forme : <em>Rousseau, S. (année). Titre. Auto-publié.</em> avec l\'URL canonique. Pour reproduire une figure ou un passage étendu, merci de <a href="/fr/contact/">me contacter</a> au préalable.</p></section>
+</details>
+<details class="qa-item">
+<summary class="qa-q">Puis-je commander une étude ou inviter à une conférence ?</summary><section class="qa-a"><p>Oui — au cas par cas, sur sélection. Les missions commandées portent sur les paiements wholesale, la migration ISO 20022, la cryptographie post-quantique pour les services financiers et l\'IA appliquée à la banque. Les interventions en conférences industrielles, forums de banques centrales et tables rondes de régulateurs sont étudiées au cas par cas. Utilisez le <a href="/fr/contact/">formulaire de contact</a> en précisant le sujet, l\'audience et le calendrier.</p></section>
+</details>
+<details class="qa-item">
+<summary class="qa-q">Comment suivre les nouvelles publications ?</summary><section class="qa-a"><p>Chaque article daté du site est annoncé via le <a href="/fr/rss.xml">flux RSS</a> et la newsletter <a href="https://news.bankingonquantum.com" rel="external noopener">Banking On Quantum</a>. Les dépôts individuels publient également des releases sur GitHub que vous pouvez suivre directement.</p></section>
+</details>
+</section>
+</section>
+</section>
+</div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/de/uber-mich/index.html">Über mich</a></li>
+              <li><a href="/de/kontakt/index.html">Kontakt</a></li>
+              <li><a href="/de/erstellt-mit-static-site-generator/index.html">Erstellt mit Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Schreiben</h2>
+            <ul>
+              <li><a href="/de/artikel/index.html">Artikel</a></li>
+              <li><a href="/de/publikationen/index.html">Publikationen</a></li>
+              <li><a href="/de/etiketten/index.html">Etiketten</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Arbeit</h2>
+            <ul>
+              <li><a href="/de/projekte/index.html">Projekte</a></li>
+              <li><a href="/de/playlists/index.html">Playlists</a></li>
+              <li><a href="/de/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Reichweite</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Newsletter-Anmeldung">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — Forschungsnotizen zu Zahlungsverkehr, KI und Post-Quanten-Kryptografie. Kein Spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="sie@bank.de" />
+            <input type="hidden" name="_subject" value="Newsletter-Anmeldung — sebastienrousseau.com" />
+            <button type="submit">Abonnieren</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle Rechte vorbehalten.</span>
+          <div class="social" aria-label="Soziale Netzwerke">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau auf Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau auf Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau auf LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau auf LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau auf Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau auf Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau auf YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau auf YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/de/barrierefreiheit/index.html">Barrierefreiheit</a> ·
+            <a href="/de/datenschutz/index.html">Datenschutz</a> ·
+            <a href="/de/nutzungsbedingungen/index.html">Nutzungsbedingungen</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"de"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Publikationen — Sebastien Rousseau","url":"https://sebastienrousseau.com/de/publikationen/","inLanguage":"de"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":"Publikationen — Sebastien Rousseau","description":"Artikel, Berichte und Publikationen von Sebastien Rousseau über KI, ISO-20022-Zahlungen und Post-Quanten-Kryptografie.","url":"https://sebastienrousseau.com/de/publikationen/","inLanguage":"de","about":"Research papers and white papers on wholesale payments and post-quantum cryptography","author":{"@id":"https://sebastienrousseau.com/#person"},"isPartOf":{"@id":"https://sebastienrousseau.com/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Publikationen","item":"https://sebastienrousseau.com/de/publikationen/"}]},{"@type":"FAQPage","@id":"https://sebastienrousseau.com/papers#faq","mainEntity":[{"@type":"Question","name":"What kind of research and papers do you publish?","acceptedAnswer":{"@type":"Answer","text":"Two strands sit side-by-side. Industry white papers, produced for organisations such as the Emerging Payments Association Asia (EPAA), examine structural shifts to payment infrastructure — most recently the impact of cryptographically-relevant quantum computing on wholesale and real-time settlement rails. Applied research papers, published independently, share reproducible engineering work — for example, real-time speech recognition on macOS using OpenAI Whisper and Metal Performance Shaders."}},{"@type":"Question","name":"Who is the intended audience?","acceptedAnswer":{"@type":"Answer","text":"Heads of payments, CISOs and senior architects in Tier-1 banks, central banks, payment system operators and scheme owners. The applied research is written for engineers and product leaders building on top of large language models, on-device AI, and quantum-resistant cryptography."}},{"@type":"Question","name":"Are the white papers free to read?","acceptedAnswer":{"@type":"Answer","text":"The EPAA Quantum-Safe Payments paper is a free 18.9 MB PDF download from emergingpaymentsasia.org. The independent research paper on real-time speech recognition with OpenAI Whisper and Metal Performance Shaders is licensed and available for individual purchase at $49.00 (English, PDF, ~95 KB). One copy per buyer; downloads are personal-use only."}},{"@type":"Question","name":"May I cite or quote from these papers?","acceptedAnswer":{"@type":"Answer","text":"Yes. Short quotations with attribution are welcome under fair-dealing or fair-use norms. For EPAA papers, cite the EPAA as publisher with the working group, year and PDF URL. For independent research papers, cite as Rousseau, S. (year). Title. Self-published. with the canonical URL."}},{"@type":"Question","name":"Can I commission a paper or speak at an event?","acceptedAnswer":{"@type":"Answer","text":"Yes — limited, by selection. Commissioned work focuses on wholesale payments, ISO 20022 migration, post-quantum cryptography for financial services, and applied AI in banking. Speaking engagements at industry conferences, central-bank fora, and regulator round-tables are considered case-by-case."}},{"@type":"Question","name":"How do I follow new publications?","acceptedAnswer":{"@type":"Answer","text":"New papers and research notes are announced first through the site RSS feed at /rss.xml and the Banking On Quantum newsletter at news.bankingonquantum.com, which covers post-quantum cryptography, central-bank policy, and the migration roadmap across major payment schemes."}}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Suchen">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Suchen</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Suchen">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="In der Dokumentation suchen..." autocomplete="off" aria-label="Suchen"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> schließen</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigieren</span><span><kbd>Enter</kbd> öffnen</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>
