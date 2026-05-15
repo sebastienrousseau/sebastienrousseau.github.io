@@ -221,33 +221,38 @@ import re as _re
 #   text-span       → <span> body text, e.g. `<span>Search</span>`
 #   text-h2:<class> → <h2 class="X">Body</h2>
 _STRINGS_KEY_TO_PATCH: tuple[tuple[str, str], ...] = (
-    ("nav.aria.skipToMain",       "text-a"),
-    ("nav.aria.toggleNav",        "attr:aria-label"),
-    ("nav.aria.toggleNavTitle",   "attr:title"),
-    ("nav.aria.darkTheme",        "attr:aria-label"),
-    ("nav.aria.lightTheme",       "attr:aria-label"),
-    ("nav.aria.themeToggleTitle", "attr:title"),
-    ("nav.aria.searchTitle",      "attr:title"),
-    ("nav.aria.contactCTA",       "attr:aria-label"),
-    ("nav.aria.brandHome",        "attr:aria-label"),
-    ("nav.aria.backToTop",        "attr:aria-label"),
-    ("search.placeholder",        "attr:placeholder"),
-    ("search.buttonLabel",        "text-span"),
-    ("footer.title.writing",      "text-h2:ap-foot-title"),
-    ("footer.title.work",         "text-h2:ap-foot-title"),
-    ("footer.title.reach",        "text-h2:ap-foot-title"),
-    ("footer.aria.socialLinks",   "attr:aria-label"),
-    ("feeds.atomTitle",           "attr:title"),
-    ("feeds.rssTitle",            "attr:title"),
-    ("lang.aria.langGroup",       "attr:aria-label"),
-    ("lang.title.changeLang",     "attr:title"),
-    ("lang.title.comingSoon",     "attr:title"),
-    ("article.aria.summary",      "attr:aria-label"),
-    ("newsletter.aria.signup",    "attr:aria-label"),
-    ("newsletter.placeholder",    "attr:placeholder"),
-    ("newsletter.submit",         "text-button"),
-    ("author.aria.aboutAuthor",   "attr:aria-label"),
-    ("author.alt.portrait",       "attr:alt"),
+    ("nav.aria.skipToMain",        "text-a"),
+    ("nav.aria.toggleNav",         "attr:aria-label"),
+    ("nav.aria.toggleNavTitle",    "attr:title"),
+    ("nav.aria.primary",           "attr:aria-label"),
+    ("nav.aria.darkTheme",         "attr:aria-label"),
+    ("nav.aria.lightTheme",        "attr:aria-label"),
+    ("nav.aria.themeToggleTitle",  "attr:title"),
+    ("nav.aria.searchTitle",       "attr:title"),
+    ("nav.aria.contactCTA",        "attr:aria-label"),
+    ("nav.contactCTA",             "text-a"),
+    ("nav.aria.brandHome",         "attr:aria-label"),
+    ("nav.aria.backToTop",         "attr:aria-label"),
+    ("search.placeholder",         "attr:placeholder"),
+    ("search.buttonLabel",         "text-span"),
+    ("footer.title.writing",       "text-h2:ap-foot-title"),
+    ("footer.title.work",          "text-h2:ap-foot-title"),
+    ("footer.title.reach",         "text-h2:ap-foot-title"),
+    ("footer.aria.socialLinks",    "attr:aria-label"),
+    ("feeds.atomTitle",            "attr:title"),
+    ("feeds.rssTitle",             "attr:title"),
+    ("lang.aria.langGroup",        "attr:aria-label"),
+    ("lang.title.changeLang",      "attr:title"),
+    ("lang.title.comingSoon",      "attr:title"),
+    ("article.aria.summary",       "attr:aria-label"),
+    ("article.keyTakeaways",       "text-strong"),
+    ("newsletter.aria.signup",     "attr:aria-label"),
+    ("newsletter.placeholder",     "attr:placeholder"),
+    ("newsletter.submit",          "text-button"),
+    ("author.aria.aboutAuthor",    "attr:aria-label"),
+    ("author.fullProfile",         "text-a"),
+    ("author.alt.portrait",        "attr:alt"),
+    ("home.cta.startConversation", "text-a"),
 )
 
 
@@ -269,6 +274,8 @@ def _build_one_patch(kind: str, en_val: str, target_val: str) -> tuple[str, str]
         return f'>{en_esc}</a>', f'>{target_val}</a>'
     if kind == "text-span":
         return f'>{en_esc}</span>', f'>{target_val}</span>'
+    if kind == "text-strong":
+        return f'<strong>{en_esc}</strong>', f'<strong>{target_val}</strong>'
     if kind.startswith("text-h2:"):
         class_ = kind.split(":", 1)[1]
         regex = rf'<h2 class="?{_re.escape(class_)}"?>{en_esc}</h2>'
