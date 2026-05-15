@@ -106,7 +106,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-featured">
 <a class="newsroom-featured-media" href="/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html" title="The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services">
-<img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
 <span class="newsroom-eyebrow">Cloud · AI-Native · Post-Quantum</span>
