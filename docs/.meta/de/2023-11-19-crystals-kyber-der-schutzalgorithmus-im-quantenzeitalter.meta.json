@@ -1,11 +1,11 @@
 {
-  "subtitle": "CRYSTALS-Kyber, der NIST-FIPS-203-Standard für die Schlüsselkapselung in der Post-Quanten-Welt",
   "banner_alt": "Ein moderner, schlanker Quantencomputer",
-  "description": "Wie CRYSTALS-Kyber, ein quantenresistenter Kryptografiealgorithmus, die Welt der Kryptografie verändert und uns auf das Quantenzeitalter vorbereitet.",
-  "locale": "de_DE",
-  "language": "de",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
   "title": "CRYSTALS-Kyber: der Schutzalgorithmus im Quantenzeitalter",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
   "date": "November 19, 2023",
-  "keywords": "Quantencomputing, quantenresistente Kryptografie, CRYSTALS-Kyber, Kryptografie, Sicherheit, Banken, Finanzen, Verschlüsselung, Datenschutz, Zukunftssicherheit"
+  "locale": "de_DE",
+  "keywords": "Quantencomputing, quantenresistente Kryptografie, CRYSTALS-Kyber, Kryptografie, Sicherheit, Banken, Finanzen, Verschlüsselung, Datenschutz, Zukunftssicherheit",
+  "description": "Wie CRYSTALS-Kyber, ein quantenresistenter Kryptografiealgorithmus, die Welt der Kryptografie verändert und uns auf das Quantenzeitalter vorbereitet.",
+  "subtitle": "CRYSTALS-Kyber, der NIST-FIPS-203-Standard für die Schlüsselkapselung in der Post-Quanten-Welt",
+  "language": "de"
 }
