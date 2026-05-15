@@ -133,7 +133,17 @@ def _date_today() -> str:
 # after the rendered English shell is forked. Each entry is a (regex,
 # replacement) pair — anchored to its HTML context so it can't match
 # the same English word inside article body content.
+#
+# Phase 0c refactor: the first chunk of CHROME_PATCHES is auto-built
+# from ``_data/i18n/fr/strings.json`` via
+# ``_lang_registry.build_chrome_patches("fr")``. Adding the same key to
+# ``_data/i18n/<lang>/strings.json`` for a new language produces the
+# right patches automatically — no Python edit required for mechanical
+# attribute/text cases. The manual list below covers regex-quirky cases
+# the auto-gen can't express cleanly (entity tolerance, dynamic
+# prefixes, negative lookaheads, multi-string composites).
 CHROME_PATCHES: list[tuple[str, str]] = [
+    *_lang_registry.build_chrome_patches("fr"),
     # Newsletter signup pill
     (r'aria-label="Newsletter signup"', 'aria-label="Inscription à la newsletter"'),
     (r'Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\. No spam\.',
