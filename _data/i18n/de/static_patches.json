@@ -980,6 +980,10 @@
     [
       ">Latest<",
       ">Aktuell<"
+    ],
+    [
+      "<h1>White Papers (?:&amp;|&) Research</h1>",
+      "<h1>Whitepapers & Forschung</h1>"
     ]
   ]
 }

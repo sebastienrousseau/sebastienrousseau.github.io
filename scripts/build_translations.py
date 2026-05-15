@@ -1938,7 +1938,7 @@ def _bind_lang(code: str) -> None:
     global I18N_FR, TAKEAWAY_LABELS_EN_TO_FR
     global STATIC_SLUG_FR, STATIC_PAGES_FR, TOPIC_FR_LABELS
     global HOME_FR_PATCHES, STATIC_BODIES_FR, STATIC_BODY_PATCHES
-    global CHROME_PATCHES, _CHROME_PATCHES_COMPILED, _HOME_FR_COMPILED
+    global CHROME_PATCHES, _CHROME_PATCHES_COMPILED, _HOME_FR_COMPILED, _STATIC_BODY_COMPILED
     lang = next(lg for lg in _lang_registry.LANGUAGES if lg.code == code)
     LANG_CODE = code
     LANG_BCP47 = lang.bcp47
@@ -1963,6 +1963,7 @@ def _bind_lang(code: str) -> None:
     ]
     _CHROME_PATCHES_COMPILED = [(re.compile(p), r) for p, r in CHROME_PATCHES]
     _HOME_FR_COMPILED = [(re.compile(p), r) for p, r in HOME_FR_PATCHES]
+    _STATIC_BODY_COMPILED = [(re.compile(p), r) for p, r in STATIC_BODY_PATCHES]
     # Clear every per-language lazy cache so the second pass doesn't
     # inherit the first language's title / description / regex tables.
     global _FR_TITLE_MAP, _FR_DESCRIPTION_MAP
