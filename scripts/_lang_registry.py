@@ -165,6 +165,27 @@ def load_static_pages(code: str) -> dict[str, dict[str, str]]:
     return data
 
 
+def load_strings(code: str) -> dict[str, str]:
+    """Load UI-string glossary for ``code``.
+
+    Returns a flat dict mapping string-key (dot-notation) to that
+    language's translated value. Keys starting with ``_`` (e.g.
+    ``_comment``) are documentation-only and stripped.
+
+    The English file at ``_data/i18n/en/strings.json`` is the canonical
+    reference — every other language must carry the same key set.
+    Enforce via :mod:`scripts.test_i18n_strings`.
+    """
+    path = I18N_DIR / code / "strings.json"
+    if not path.is_file():
+        raise LanguageError(f"missing UI-strings glossary: {path}")
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise LanguageError(f"{path}: must be a JSON object")
+    # Strip documentation-only keys (`_comment`, `_note`, ...).
+    return {k: v for k, v in data.items() if not k.startswith("_")}
+
+
 def fr_slug(en_slug: str) -> str:
     """Convenience: EN slug → FR slug. Returns input unchanged if no
     translation is recorded — matches the legacy ``_fr_slugs.fr_slug``

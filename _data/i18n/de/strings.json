@@ -1,0 +1,61 @@
+{
+  "_comment": "German UI strings — DRAFT pending native-speaker review. Key set MUST stay in sync with _data/i18n/en/strings.json — CI gate test_i18n_strings.py enforces parity. Compound nouns may exceed nav button widths at +30-40% expansion vs EN; verify with visual diff before flipping Language(\"de\", active=True).",
+
+  "nav.aria.skipToMain": "Zum Hauptinhalt springen",
+  "nav.aria.toggleNav": "Navigation umschalten",
+  "nav.aria.toggleNavTitle": "Navigation umschalten",
+  "nav.aria.primary": "Hauptnavigation",
+  "nav.aria.darkTheme": "Dunkles Design aktivieren",
+  "nav.aria.lightTheme": "Helles Design aktivieren",
+  "nav.aria.themeToggleTitle": "Design wechseln",
+  "nav.aria.searchKbd": "Suchen (Cmd oder Ctrl + K)",
+  "nav.aria.searchTitle": "Suchen (⌘K)",
+  "nav.aria.contactCTA": "Kontakt aufnehmen",
+  "nav.contactCTA": "Kontakt ›",
+  "nav.aria.brandHome": "Startseite von Sebastien Rousseau",
+  "nav.aria.backToTop": "Nach oben",
+
+  "search.label": "Suchen",
+  "search.placeholder": "In der Dokumentation suchen...",
+  "search.kbdEsc": "schließen",
+  "search.kbdNavigate": "navigieren",
+  "search.kbdEnter": "öffnen",
+  "search.buttonLabel": "Suchen",
+
+  "footer.title.writing": "Schreiben",
+  "footer.title.work": "Arbeit",
+  "footer.title.reach": "Reichweite",
+  "footer.aria.socialLinks": "Soziale Netzwerke",
+  "footer.aria.socialPrefix": "Sebastien Rousseau auf ",
+  "footer.copyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Alle Rechte vorbehalten.",
+
+  "feeds.atomTitle": "Atom-Feed",
+  "feeds.rssTitle": "RSS-Feed",
+
+  "lang.aria.langGroup": "Sprache",
+  "lang.aria.changeLangPrefix": "DE, Sprache wechseln",
+  "lang.title.changeLang": "Sprache wechseln",
+  "lang.title.comingSoon": "Demnächst verfügbar",
+  "lang.currentLabel": "DE",
+
+  "article.aria.summary": "Artikelzusammenfassung",
+  "article.keyTakeaways": "Wichtige Erkenntnisse",
+  "article.relatedReadingInline": "Verwandte Lektüre:",
+  "article.relatedHeading": "Verwandte Lektüre",
+  "article.lastReviewedLabel": "Zuletzt überprüft ",
+
+  "author.aria.aboutAuthor": "Über den Autor",
+  "author.fullProfile": "Vollständiges Profil",
+  "author.alt.portrait": "Porträt von Sebastien Rousseau",
+
+  "newsletter.aria.signup": "Newsletter-Anmeldung",
+  "newsletter.blurb": "Banking On Quantum — Forschungsnotizen zu Zahlungen, KI und Post-Quanten-Kryptografie. Kein Spam.",
+  "newsletter.placeholder": "sie@bank.de",
+  "newsletter.subject": "Newsletter-Anmeldung — sebastienrousseau.com",
+  "newsletter.submit": "Abonnieren",
+
+  "home.eyebrow.contact": "Kontakt aufnehmen",
+  "home.cta.startConversation": "Gespräch beginnen",
+
+  "listing.readLatest": "Aktuelle Forschung lesen"
+}
