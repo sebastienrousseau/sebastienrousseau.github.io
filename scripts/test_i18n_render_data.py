@@ -53,11 +53,14 @@ def check_bodies(code: str, fr_keys: set[str]) -> list[str]:
     except _lang_registry.LanguageError as e:
         return [str(e)]
     keys = set(bodies)
-    problems: list[str] = []
-    for missing in sorted(fr_keys - keys):
-        problems.append(f"[{code}/static_bodies] missing key: {missing!r}")
-    for extra in sorted(keys - fr_keys):
-        problems.append(f"[{code}/static_bodies] extra key (not in FR ref): {extra!r}")
+    problems: list[str] = [
+        f"[{code}/static_bodies] missing key: {missing!r}"
+        for missing in sorted(fr_keys - keys)
+    ]
+    problems.extend(
+        f"[{code}/static_bodies] extra key (not in FR ref): {extra!r}"
+        for extra in sorted(keys - fr_keys)
+    )
     return problems
 
 
