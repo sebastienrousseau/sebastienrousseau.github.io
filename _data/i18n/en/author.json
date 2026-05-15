@@ -1,0 +1,5 @@
+{
+  "_comment": "Canonical EN author-card prose. The author-card aside renders at the bottom of every dated article. CI gate test_i18n_author.py enforces key-set parity across languages.",
+  "bio": "Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.",
+  "credentialsPrefix": "20+ years across HSBC Commercial & Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group."
+}

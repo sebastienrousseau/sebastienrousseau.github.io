@@ -2574,252 +2574,312 @@ def inject_hreflang(
     return _HEAD_END_RE.sub(links + '</head>', html, count=1)
 
 
-def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters are sequential by design
-    pages = list(PUBLIC.rglob("*.html"))
-    # Pre-pass: build the chronological prev/next index over every dated
-    # BlogPosting page. Indexed once per build, then read per page.
-    nav_index = build_post_nav_index(pages)
-    fr_titles = build_fr_title_index(pages)
-    _en_with_fr, _fr_with_en = _translated_slugs()  # kept for legacy probes; new logic uses translated_per_lang
-    translated_per_lang = _translated_slugs_per_lang()
-    gh_stats = _gh_stats_index()
-    sri_patched = 0
-    csp_patched = 0
-    itemlist_patched = 0
-    social_patched = 0
-    og_patched = 0
-    img_dims_patched = 0
-    howto_patched = 0
-    link_hoisted = 0
-    wc_patched = 0
-    about_patched = 0
-    furniture_patched = 0
-    anchor_patched = 0
-    citation_patched = 0
-    sources_patched = 0
-    mermaid_patched = 0
-    nav_patched = 0
-    hreflang_patched = 0
-    for page in pages:
-        original = page.read_text(encoding="utf-8", errors="ignore")
-        patched = fix_sri(original)
-        if patched != original:
-            sri_patched += 1
-        # ItemList must run BEFORE the JSON-LD CSP-hash pass so the new
-        # block's hash gets included in the page's script-src.
-        patched_il = inject_itemlist(page, patched)
-        if patched_il != patched:
-            itemlist_patched += 1
-        patched_si = fix_social_image(patched_il)
-        if patched_si != patched_il:
-            social_patched += 1
-        patched_og = inject_og_completeness(page, patched_si)
-        if patched_og != patched_si:
-            og_patched += 1
-        patched_dim, n_dim = stamp_image_dimensions(patched_og)
-        img_dims_patched += n_dim
-        patched_howto = inject_howto(page, patched_dim)
-        if patched_howto != patched_dim:
-            howto_patched += 1
-        patched_wc = inject_word_count(patched_howto)
-        if patched_wc != patched_si:
-            wc_patched += 1
-        patched_about = inject_about(patched_wc)
-        if patched_about != patched_wc:
-            about_patched += 1
-        # Article furniture (tag badges + meta bar + ToC + anchor links +
-        # citation graph) MUST run after wordCount + about have populated
-        # the BlogPosting JSON-LD, but BEFORE the JSON-LD CSP-hash pass so
-        # the citation array is included in the hash.
-        patched_fu = inject_article_furniture(patched_about)
-        if patched_fu != patched_about:
-            furniture_patched += 1
-        # Sigstore attestation badge — no-op unless _data/sigstore/config.json
-        # exists AND a per-article bundle was written by sigstore_sign.py.
-        patched_fu = inject_sigstore_attestation(patched_fu, page.parent.name)
-        patched_an = inject_anchor_links_and_toc(patched_fu)
-        if patched_an != patched_fu:
-            anchor_patched += 1
-        # Convert article FAQ structure (`<p><strong>Q?</strong></p><p>A</p>`)
-        # to the collapsible <details class="qa-item"> pattern for UX parity
-        # with /projects/ and /papers/.
-        patched_an = _convert_faq_to_qa(patched_an)
-        patched_ci = inject_citations(patched_an)
-        if patched_ci != patched_an:
-            citation_patched += 1
-        patched_src = inject_sources_list(patched_ci)
-        if patched_src != patched_ci:
-            sources_patched += 1
-        patched_mermaid = inject_mermaid(patched_src)
-        if patched_mermaid != patched_src:
-            mermaid_patched += 1
-            patched_src = patched_mermaid
-        # Prev/next nav must run AFTER inject_sources_list because the
-        # sources injector anchors against either the nav or the </main>;
-        # placing nav first would push sources above the nav cleanly.
-        # Determine the page's lang from its parent directory chain.
-        parent_dir_name = page.parent.parent.name
-        page_lang_for_nav = parent_dir_name if parent_dir_name in _all_active_non_en_langs() else "en"
-        page_is_fr = page_lang_for_nav == "fr"
-        patched_nav = inject_prev_next_nav(
-            patched_src, page.parent.name, nav_index, is_fr=page_is_fr,
-            fr_titles=fr_titles, page_lang=page_lang_for_nav,
-        )
-        patched_nav = inject_nav_active(patched_nav, page)
-        if patched_nav != patched_src:
-            nav_patched += 1
-        # Reciprocal hreflang for paired English/French pages.
-        rel_slug = page.parent.name
-        # Topic sub-pages: same slug on both sides
-        # (e.g. /topics/post-quantum-cryptography/ ↔
-        # /fr/sujets/post-quantum-cryptography/). Inject directly —
-        # inject_hreflang doesn't know about topics.
-        is_en_topic = (
-            page.parent.parent.name == "topics"
-            and page.parent.parent.parent == PUBLIC
-        )
-        is_fr_topic = (
-            page.parent.parent.name == "sujets"
-            and page.parent.parent.parent.name == "fr"
-        )
-        # Detect if this is a topic page in *any* language (DE → "themen",
-        # FR → "sujets", EN → "topics"). Walk the active languages and
-        # check whether the page's parent is the localised topics-hub
-        # dir for that language.
-        is_lang_topic_codes: list[str] = []
-        for _code in _all_active_non_en_langs():
-            _topic_dir = _slug_maps(_code)["statics_en_to_lang"].get("topics", "topics")
-            if (
-                page.parent.parent.name == _topic_dir
-                and page.parent.parent.parent.name == _code
-            ):
-                is_lang_topic_codes.append(_code)
-        if is_en_topic or is_fr_topic or is_lang_topic_codes:
-            # Topic slugs are language-independent; emit hreflang
-            # alternates for every active non-EN lang that has the
-            # topic hub rendered.
-            topic_alts: list[tuple[str, str]] = [
-                ("en", f"https://sebastienrousseau.com/topics/{rel_slug}/"),
-            ]
-            for _code in _all_active_non_en_langs():
-                _topic_dir = _slug_maps(_code)["statics_en_to_lang"].get("topics", "topics")
-                topic_alts.append((_code, f"https://sebastienrousseau.com/{_code}/{_topic_dir}/{rel_slug}/"))
-            en_url = topic_alts[0][1]
-            _hf_re = re.compile(r'<link rel="alternate"[^>]+hreflang="[^"]+"[^/]*/>', re.IGNORECASE)
-            cleaned = _hf_re.sub('', patched_nav)
-            topic_links = ''.join(
-                f'<link rel="alternate" hreflang="{lc}" href="{u}" />'
-                for lc, u in topic_alts
-            )
-            topic_links += f'<link rel="alternate" hreflang="x-default" href="{en_url}" />'
-            patched_hl = re.sub(r'</head>', topic_links + '</head>', cleaned, count=1, flags=re.IGNORECASE)
-            if patched_hl != patched_nav:
-                hreflang_patched += 1
-            # Skip the rest of the hreflang block below.
-            patched_hl = inject_speculation_rules(patched_hl)
-            patched_hl = inject_github_stats(patched_hl, gh_stats)
-            patched_hl, n_hoisted = hoist_body_link_stylesheets(patched_hl)
-            link_hoisted += n_hoisted
-            patched2 = inject_jsonld_hashes(patched_hl)
-            if patched2 != patched_nav:
-                csp_patched += 1
-            if patched2 != original:
-                page.write_text(patched2, encoding="utf-8")
-            continue
-        # Special case: the site root /index.html. Its parent dir is
-        # "public" — we treat it as the home and emit hreflang to /fr/.
-        # Home page in any language: /index.html OR /<lang>/index.html.
-        # The localised home for each non-EN lang lives at /<lang>/index.html
-        # (its parent.name is the lang code, parent.parent is public).
-        is_home_page = (
-            page.parent.name == "public"
-            or (page.name == "index.html" and page.parent == PUBLIC)
-            or (
-                page.name == "index.html"
-                and page.parent.parent == PUBLIC
-                and page.parent.name in _all_active_non_en_langs()
-            )
-        )
-        if is_home_page:
-            _head_re = re.compile(r'</head>', re.IGNORECASE)
-            _hf_re = re.compile(r'<link rel="alternate"[^>]+hreflang="[^"]+"[^/]*/>', re.IGNORECASE)
-            cleaned = _hf_re.sub('', patched_nav)
-            home_alts: list[tuple[str, str]] = [
-                ("en", "https://sebastienrousseau.com/"),
-            ]
-            home_alts.extend(
-                (_code, f"https://sebastienrousseau.com/{_code}/")
-                for _code in _all_active_non_en_langs()
-            )
-            home_links = ''.join(
-                f'<link rel="alternate" hreflang="{lc}" href="{u}" />'
-                for lc, u in home_alts
-            )
-            home_links += '<link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/" />'
-            patched_hl = _head_re.sub(home_links + '</head>', cleaned, count=1)
-        else:
-            # Detect this page's language from its parent directory chain.
-            page_lang = page.parent.parent.name if page.parent.parent.name in translated_per_lang else "en"
-            patched_hl = inject_hreflang(
-                patched_nav,
-                rel_slug,
-                page_lang,
-                translated_per_lang,
-            )
-        if patched_hl != patched_nav:
-            hreflang_patched += 1
-        # Speculation Rules — hover-prerender every internal link.
-        patched_hl = inject_speculation_rules(patched_hl)
-        # Live GitHub stats on project / home cards.
-        patched_hl = inject_github_stats(patched_hl, gh_stats)
-        # Hoist any <link rel=stylesheet> SSG injected inside <body> back
-        # into <head> so pa11y AAA stops flagging "link in body".
-        patched_hl, n_hoisted = hoist_body_link_stylesheets(patched_hl)
-        link_hoisted += n_hoisted
-        patched2 = inject_jsonld_hashes(patched_hl)
-        if patched2 != patched_nav:
-            csp_patched += 1
-        if patched2 != original:
-            page.write_text(patched2, encoding="utf-8")
+class _PostbuildCounters:
+    """Per-pass counters threaded through ``_process_page``.
 
-    # Refresh sitemap lastmod from each post's frontmatter last_reviewed.
+    Using a mutable container so the per-page helper can bump counters
+    in-place without returning a 20-tuple. The orchestrator reads them
+    once at the end for the summary line.
+    """
+
+    __slots__ = (
+        "about_patched",
+        "anchor_patched",
+        "citation_patched",
+        "csp_patched",
+        "furniture_patched",
+        "howto_patched",
+        "hreflang_patched",
+        "img_dims_patched",
+        "itemlist_patched",
+        "link_hoisted",
+        "mermaid_patched",
+        "nav_patched",
+        "og_patched",
+        "social_patched",
+        "sources_patched",
+        "sri_patched",
+        "wc_patched",
+    )
+
+    def __init__(self) -> None:
+        for name in self.__slots__:
+            setattr(self, name, 0)
+
+
+class _PostbuildContext:
+    """Pre-pass artefacts read once and shared across pages."""
+
+    __slots__ = ("counters", "fr_titles", "gh_stats", "nav_index", "translated_per_lang")
+
+    def __init__(self, pages: list[Path]) -> None:
+        self.nav_index = build_post_nav_index(pages)
+        self.fr_titles = build_fr_title_index(pages)
+        # Legacy FR-only sets are kept around in case anything probes them;
+        # the new lang-keyed dict drives the modern hreflang path.
+        _translated_slugs()
+        self.translated_per_lang = _translated_slugs_per_lang()
+        self.gh_stats = _gh_stats_index()
+        self.counters = _PostbuildCounters()
+
+
+def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
+    """SEO + JSON-LD passes that don't depend on lang context.
+
+    Sequence is order-sensitive: ItemList must run before the JSON-LD
+    CSP-hash pass (so its hash gets included); furniture must run
+    after wordCount + about populate the BlogPosting JSON-LD; etc.
+    """
+    out = fix_sri(html)
+    if out != html:
+        ctr.sri_patched += 1
+    prev = out
+    out = inject_itemlist(page, out)
+    if out != prev:
+        ctr.itemlist_patched += 1
+    prev = out
+    out = fix_social_image(out)
+    if out != prev:
+        ctr.social_patched += 1
+    prev = out
+    out = inject_og_completeness(page, out)
+    if out != prev:
+        ctr.og_patched += 1
+    out, n_dim = stamp_image_dimensions(out)
+    ctr.img_dims_patched += n_dim
+    prev = out
+    out = inject_howto(page, out)
+    if out != prev:
+        ctr.howto_patched += 1
+    prev = out
+    out = inject_word_count(out)
+    if out != prev:
+        ctr.wc_patched += 1
+    prev = out
+    out = inject_about(out)
+    if out != prev:
+        ctr.about_patched += 1
+    return out
+
+
+def _apply_article_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
+    """Article-furniture + body-content injection passes."""
+    prev = html
+    out = inject_article_furniture(html)
+    if out != prev:
+        ctr.furniture_patched += 1
+    out = inject_sigstore_attestation(out, page.parent.name)
+    prev = out
+    out = inject_anchor_links_and_toc(out)
+    if out != prev:
+        ctr.anchor_patched += 1
+    out = _convert_faq_to_qa(out)
+    prev = out
+    out = inject_citations(out)
+    if out != prev:
+        ctr.citation_patched += 1
+    prev = out
+    out = inject_sources_list(out)
+    if out != prev:
+        ctr.sources_patched += 1
+    prev = out
+    out2 = inject_mermaid(out)
+    if out2 != prev:
+        ctr.mermaid_patched += 1
+        out = out2
+    return out
+
+
+def _apply_nav_passes(html: str, page: Path, ctx: _PostbuildContext) -> str:
+    """Prev/next nav + active-link marker. Must run after sources-list
+    (which anchors against either the nav or </main>)."""
+    parent_dir_name = page.parent.parent.name
+    page_lang_for_nav = (
+        parent_dir_name if parent_dir_name in _all_active_non_en_langs() else "en"
+    )
+    page_is_fr = page_lang_for_nav == "fr"
+    out = inject_prev_next_nav(
+        html, page.parent.name, ctx.nav_index, is_fr=page_is_fr,
+        fr_titles=ctx.fr_titles, page_lang=page_lang_for_nav,
+    )
+    out = inject_nav_active(out, page)
+    if out != html:
+        ctx.counters.nav_patched += 1
+    return out
+
+
+def _is_topic_page(page: Path) -> tuple[bool, bool, list[str]]:
+    """Return (is_en_topic, is_fr_topic, is_lang_topic_codes) for the
+    topic-subpage hreflang branch."""
+    is_en_topic = (
+        page.parent.parent.name == "topics"
+        and page.parent.parent.parent == PUBLIC
+    )
+    is_fr_topic = (
+        page.parent.parent.name == "sujets"
+        and page.parent.parent.parent.name == "fr"
+    )
+    is_lang_topic_codes: list[str] = []
+    for _code in _all_active_non_en_langs():
+        _topic_dir = _slug_maps(_code)["statics_en_to_lang"].get("topics", "topics")
+        if (
+            page.parent.parent.name == _topic_dir
+            and page.parent.parent.parent.name == _code
+        ):
+            is_lang_topic_codes.append(_code)
+    return is_en_topic, is_fr_topic, is_lang_topic_codes
+
+
+def _topic_hreflang(html: str, rel_slug: str) -> str:
+    """Build + inject the topic-subpage hreflang triple."""
+    topic_alts: list[tuple[str, str]] = [
+        ("en", f"https://sebastienrousseau.com/topics/{rel_slug}/"),
+    ]
+    topic_alts.extend(
+        (
+            _code,
+            f"https://sebastienrousseau.com/{_code}/"
+            f"{_slug_maps(_code)['statics_en_to_lang'].get('topics', 'topics')}/{rel_slug}/",
+        )
+        for _code in _all_active_non_en_langs()
+    )
+    en_url = topic_alts[0][1]
+    _hf_re = re.compile(r'<link rel="alternate"[^>]+hreflang="[^"]+"[^/]*/>', re.IGNORECASE)
+    cleaned = _hf_re.sub('', html)
+    topic_links = ''.join(
+        f'<link rel="alternate" hreflang="{lc}" href="{u}" />'
+        for lc, u in topic_alts
+    )
+    topic_links += f'<link rel="alternate" hreflang="x-default" href="{en_url}" />'
+    return re.sub(r'</head>', topic_links + '</head>', cleaned, count=1, flags=re.IGNORECASE)
+
+
+def _is_home_page(page: Path) -> bool:
+    return (
+        page.parent.name == "public"
+        or (page.name == "index.html" and page.parent == PUBLIC)
+        or (
+            page.name == "index.html"
+            and page.parent.parent == PUBLIC
+            and page.parent.name in _all_active_non_en_langs()
+        )
+    )
+
+
+def _home_hreflang(html: str) -> str:
+    """Build + inject the home-page hreflang triple."""
+    _head_re = re.compile(r'</head>', re.IGNORECASE)
+    _hf_re = re.compile(r'<link rel="alternate"[^>]+hreflang="[^"]+"[^/]*/>', re.IGNORECASE)
+    cleaned = _hf_re.sub('', html)
+    home_alts: list[tuple[str, str]] = [("en", "https://sebastienrousseau.com/")]
+    home_alts.extend(
+        (_code, f"https://sebastienrousseau.com/{_code}/")
+        for _code in _all_active_non_en_langs()
+    )
+    home_links = ''.join(
+        f'<link rel="alternate" hreflang="{lc}" href="{u}" />'
+        for lc, u in home_alts
+    )
+    home_links += '<link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/" />'
+    return _head_re.sub(home_links + '</head>', cleaned, count=1)
+
+
+def _apply_hreflang_pass(html: str, page: Path, ctx: _PostbuildContext) -> str:
+    """Lang-aware hreflang injection. Topic pages have a dedicated
+    triple; home pages emit alternates for every active lang; everything
+    else delegates to inject_hreflang."""
+    rel_slug = page.parent.name
+    is_en_topic, is_fr_topic, is_lang_topic_codes = _is_topic_page(page)
+    if is_en_topic or is_fr_topic or is_lang_topic_codes:
+        return _topic_hreflang(html, rel_slug)
+    if _is_home_page(page):
+        return _home_hreflang(html)
+    page_lang = (
+        page.parent.parent.name
+        if page.parent.parent.name in ctx.translated_per_lang
+        else "en"
+    )
+    return inject_hreflang(html, rel_slug, page_lang, ctx.translated_per_lang)
+
+
+def _process_page(page: Path, ctx: _PostbuildContext) -> None:
+    """Run every per-page transform pass on ``page``."""
+    original = page.read_text(encoding="utf-8", errors="ignore")
+    patched_about = _apply_seo_passes(original, page, ctx.counters)
+    patched_src = _apply_article_passes(patched_about, page, ctx.counters)
+    patched_nav = _apply_nav_passes(patched_src, page, ctx)
+    prev_hl = patched_nav
+    patched_hl = _apply_hreflang_pass(patched_nav, page, ctx)
+    if patched_hl != prev_hl:
+        ctx.counters.hreflang_patched += 1
+    # Speculation Rules — hover-prerender every internal link.
+    patched_hl = inject_speculation_rules(patched_hl)
+    # Live GitHub stats on project / home cards.
+    patched_hl = inject_github_stats(patched_hl, ctx.gh_stats)
+    # Hoist any <link rel=stylesheet> SSG injected inside <body> back
+    # into <head> so pa11y AAA stops flagging "link in body".
+    patched_hl, n_hoisted = hoist_body_link_stylesheets(patched_hl)
+    ctx.counters.link_hoisted += n_hoisted
+    patched2 = inject_jsonld_hashes(patched_hl)
+    if patched2 != prev_hl:
+        ctx.counters.csp_patched += 1
+    if patched2 != original:
+        page.write_text(patched2, encoding="utf-8")
+
+
+def _finalize_build() -> tuple[int, bool, bool, bool, int, int]:
+    """Run post-page-loop tasks: sitemap lastmod refresh, robots.txt
+    rewrite, llms.txt + llms-full.txt rewrite, JSON Feed emission,
+    XML feed URL fix + ampersand scrub. Returns the counters for the
+    summary line."""
     lastmod_index = build_lastmod_index()
     sitemap_patched = refresh_sitemap_lastmod(PUBLIC / "sitemap.xml", lastmod_index)
-
-    # Overwrite robots.txt + llms.txt with the curated versions.
     robots_written = write_robots(PUBLIC)
     llms_written = write_llms_txt(PUBLIC)
     llms_full_written = write_llms_full_txt(PUBLIC)
-
-    # JSON Feed 1.1 (modern feed-reader format alongside RSS/Atom).
     write_json_feed(PUBLIC)
-
-    # Repair Shokunin's RSS / Atom / news-sitemap URLs (.meta/ + localhost).
-    # Must run BEFORE the ampersand-escape pass so the URL rewrite operates
-    # on the original string and doesn't get derailed by escaped ampersands
-    # in titles.
     feed_urls_patched = fix_xml_feed_urls(PUBLIC)
-    # Repair Shokunin's RSS / news-sitemap output (bare & in titles).
     xml_patched = fix_xml_feeds(PUBLIC)
+    return (
+        sitemap_patched, robots_written, llms_written, llms_full_written,
+        feed_urls_patched, xml_patched,
+    )
 
+
+def main() -> None:
+    """Walk every public/*.html page and run the per-page transform
+    pipeline; then run the post-loop finalisation tasks (sitemap,
+    robots, feeds) and print the summary line.
+    """
+    pages = list(PUBLIC.rglob("*.html"))
+    ctx = _PostbuildContext(pages)
+    for page in pages:
+        _process_page(page, ctx)
+
+    (
+        sitemap_patched, robots_written, llms_written, llms_full_written,
+        feed_urls_patched, xml_patched,
+    ) = _finalize_build()
+
+    c = ctx.counters
     print(
         f"postbuild: {len(pages)} HTML pages, "
-        f"{sri_patched} got real SRI, "
-        f"{itemlist_patched} got ItemList JSON-LD, "
-        f"{social_patched} got og:image fixed, "
-        f"{og_patched} got og:url/locale/site_name, "
-        f"{img_dims_patched} img(s) stamped w/h, "
-        f"{howto_patched} HowTo schema(s) injected, "
-        f"{wc_patched} got wordCount, "
-        f"{about_patched} got about/mentions entities, "
-        f"{furniture_patched} got tag badges + meta bar, "
-        f"{anchor_patched} got anchor links + ToC, "
-        f"{citation_patched} got citation graphs, "
-        f"{sources_patched} got visible sources list, "
-        f"{mermaid_patched} got mermaid blocks, "
-        f"{nav_patched} got prev/next nav, "
-        f"{hreflang_patched} got hreflang pairs, "
-        f"{csp_patched} got CSP JSON-LD hashes, "
+        f"{c.sri_patched} got real SRI, "
+        f"{c.itemlist_patched} got ItemList JSON-LD, "
+        f"{c.social_patched} got og:image fixed, "
+        f"{c.og_patched} got og:url/locale/site_name, "
+        f"{c.img_dims_patched} img(s) stamped w/h, "
+        f"{c.howto_patched} HowTo schema(s) injected, "
+        f"{c.wc_patched} got wordCount, "
+        f"{c.about_patched} got about/mentions entities, "
+        f"{c.furniture_patched} got tag badges + meta bar, "
+        f"{c.anchor_patched} got anchor links + ToC, "
+        f"{c.citation_patched} got citation graphs, "
+        f"{c.sources_patched} got visible sources list, "
+        f"{c.mermaid_patched} got mermaid blocks, "
+        f"{c.nav_patched} got prev/next nav, "
+        f"{c.hreflang_patched} got hreflang pairs, "
+        f"{c.csp_patched} got CSP JSON-LD hashes, "
         f"{sitemap_patched} sitemap entries refreshed, "
         f"{feed_urls_patched} feed(s) URL-repaired, "
         f"{xml_patched} XML feed(s) scrubbed, "

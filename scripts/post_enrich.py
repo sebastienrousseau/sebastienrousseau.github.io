@@ -249,157 +249,181 @@ def md_inline_to_html(text: str) -> str:
 
 # ---------------------------------------------------------------------------
 
-def main() -> None:  # noqa: C901 — multi-stage enrich pipeline; sequential by design
+def _load_post(md: Path) -> dict[str, object] | None:
+    """Read one dated post into the internal ``post`` dict, or return
+    None if the file isn't a dated post / has no frontmatter."""
+    if not DATED.match(md.name):
+        return None
+    parts = split_frontmatter(md.read_text())
+    if not parts:
+        return None
+    fm, body = parts
+    body_text = "".join(body)
+    return {
+        "path": md,
+        "fm": fm,
+        "body": body_text,
+        "title": fm_get(fm, "title") or md.stem,
+        "url": fm_get(fm, "url") or "",
+        "image": fm_get(fm, "banner") or fm_get(fm, "image") or "",
+        "image_alt": fm_get(fm, "banner_alt") or fm_get(fm, "title") or "",
+        "date_iso": md.name[:10],
+        "tags": [t.strip() for t in (fm_get(fm, "tags") or "").split(",") if t.strip()],
+    }
+
+
+def _update_frontmatter(post: dict[str, object]) -> tuple[list[str], str]:
+    """Stage 1: ensure ``excerpt`` + ``last_reviewed`` in frontmatter.
+    Returns the patched frontmatter list and the resolved reviewed-date."""
+    fm = list(post["fm"])
+    if not fm_get(fm, "excerpt"):
+        fm = fm_set(fm, "excerpt", derive_excerpt(post["body"]).replace('"', "'"))
+    reviewed = max(TODAY, post["date_iso"])
+    existing_reviewed = fm_get(fm, "last_reviewed") or ""
+    if not existing_reviewed or existing_reviewed < post["date_iso"]:
+        fm = fm_set(fm, "last_reviewed", reviewed)
+    return fm, reviewed
+
+
+def _related_posts(post: dict[str, object], all_posts: list[dict[str, object]]) -> list[dict[str, object]]:
+    """Stage 2: topic-cluster related posts via tag-overlap score."""
+    own_tags = {t.lower() for t in post["tags"]}
+    scored: list[tuple[int, str, dict[str, object]]] = []
+    for other in all_posts:
+        if other["path"] == post["path"]:
+            continue
+        other_tags = {t.lower() for t in other["tags"]}
+        score = len(own_tags & other_tags)
+        if score:
+            scored.append((score, other["date_iso"], other))
+    scored.sort(key=lambda x: (-x[0], -int(x[1].replace("-", ""))))
+    return [o for _, _, o in scored[:3]]
+
+
+def _insert_lead(body_text: str, tldr: str, related: list[dict[str, object]]) -> tuple[str, bool]:
+    """Stage 3: insert the top-of-body lead block. Returns (new_body,
+    inserted_flag). Idempotent — skip if a hand-curated lead opens
+    the body already."""
+    body_text = remove_existing_lead(body_text)
+    if body_starts_with_lead(body_text):
+        return body_text, False
+    takeaways = derive_key_takeaways(body_text)
+    lead = build_lead(tldr, takeaways, related)
+    h1 = first_h1(body_text)
+    if h1:
+        _, end = h1
+        while end < len(body_text) and body_text[end] in "\r\n":
+            end += 1
+        body_text = body_text[:end] + lead + body_text[end:]
+    else:
+        body_text = "\n" + lead + body_text.lstrip("\n")
+    return body_text, True
+
+
+_AUTHOR_CARD_HTML = (
+    '<aside class="author-card" aria-label="About the author">'
+    '<img alt="Portrait of Sebastien Rousseau" '
+    'src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" '
+    'width="64" height="64" loading="lazy" decoding="async" />'
+    '<span class="author-card-body">'
+    '<strong class="author-card-name">'
+    '<a href="/about/index.html">Sebastien Rousseau</a></strong>'
+    '<span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 '
+    'migration, post-quantum cryptography for financial services, and '
+    'the structural transformation of wholesale payments.</span>'
+    '<span class="author-credentials">'
+    '20+ years across HSBC Commercial &amp; Investment Bank, PayPal, '
+    'Barclays, Shazam, AKQA, Virgin Group. '
+    '<a href="/about/index.html">Full profile</a> &middot; '
+    '<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; '
+    '<a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a>'
+    '</span></span></aside>'
+)
+
+
+def _related_grid_html(related: list[dict[str, object]], post: dict[str, object]) -> list[str]:
+    """Build the bottom Related-reading <aside> when there are matches."""
+    if not related:
+        return []
+    out = [
+        '<aside class="related-posts" aria-labelledby="related-heading">',
+        '<h2 id="related-heading" class="related-heading">Related reading</h2>',
+        '<div class="related-grid">',
+    ]
+    for r in related:
+        title = r["title"].replace('"', "&quot;")
+        url = post_url(r)
+        img = r["image"] or ""
+        alt = (r.get("image_alt") or r["title"]).replace('"', "&quot;")
+        img_html = (
+            f'<img alt="{alt}" src="{img}" loading="lazy" decoding="async" width="600" height="400" />'
+            if img else ""
+        )
+        out.append(
+            '<article class="related-card">'
+            f'<a href="{url}" class="related-media" aria-label="{title}" tabindex="-1">{img_html}</a>'
+            '<footer class="related-body">'
+            f'<h3><a href="{url}">{r["title"]}</a></h3>'
+            f'<p><time datetime="{r["date_iso"]}">{r["date_iso"]}</time></p>'
+            '</footer></article>'
+        )
+    out.append('</div>')
+    out.append('</aside>')
+    return out
+
+
+def _append_enrich_block(body_text: str, reviewed: str, related: list[dict[str, object]], post: dict[str, object]) -> str:
+    """Stage 4: append the bottom enrichment block (author card +
+    last-reviewed line + related grid). Idempotent — strips any prior
+    enrich-start/enrich-end block before re-appending."""
+    body_text = body_text.rstrip()
+    body_text = ENRICH_BLOCK_RE.sub("", body_text)
+    block: list[str] = ["", "<!-- enrich-start -->", _AUTHOR_CARD_HTML]
+    block.append(
+        f'<p class="post-reviewed">Last reviewed '
+        f'<time datetime="{reviewed}">{reviewed}</time>.</p>'
+    )
+    block.extend(_related_grid_html(related, post))
+    block.append("<!-- enrich-end -->")
+    return body_text + "\n" + "\n".join(block) + "\n"
+
+
+def _enrich_one(post: dict[str, object], all_posts: list[dict[str, object]]) -> tuple[bool, bool]:
+    """Run all four stages on one post. Returns (was_modified, lead_inserted)."""
+    fm, reviewed = _update_frontmatter(post)
+    description = fm_get(fm, "description") or ""
+    excerpt = fm_get(fm, "excerpt") or ""
+    tldr = description if len(description) >= 80 else (excerpt or description)
+    related = _related_posts(post, all_posts)
+    body_text, led = _insert_lead(post["body"], tldr, related)
+    new_body = _append_enrich_block(body_text, reviewed, related, post)
+    out_text = "".join(fm) + new_body
+    if out_text != post["path"].read_text():
+        post["path"].write_text(out_text)
+        return True, led
+    return False, led
+
+
+def main() -> None:
+    """Walk every dated post under ``_posts/`` and run the 4-stage
+    enrich pipeline on each. Stages: (1) frontmatter excerpt +
+    last_reviewed, (2) topic-cluster related lookup, (3) top-of-body
+    lead block, (4) bottom enrichment block.
+    """
     posts: list[dict[str, object]] = []
     for md in sorted(POSTS.glob("*.md")):
-        if not DATED.match(md.name):
-            continue
-        parts = split_frontmatter(md.read_text())
-        if not parts:
-            continue
-        fm, body = parts
-        body_text = "".join(body)
-        post = {
-            "path": md,
-            "fm": fm,
-            "body": body_text,
-            "title": fm_get(fm, "title") or md.stem,
-            "url": fm_get(fm, "url") or "",
-            "image": fm_get(fm, "banner") or fm_get(fm, "image") or "",
-            "image_alt": fm_get(fm, "banner_alt") or fm_get(fm, "title") or "",
-            "date_iso": md.name[:10],
-            "tags": [t.strip() for t in (fm_get(fm, "tags") or "").split(",") if t.strip()],
-        }
-        posts.append(post)
+        post = _load_post(md)
+        if post is not None:
+            posts.append(post)
 
     enriched = 0
     led = 0
     for post in posts:
-        fm = list(post["fm"])
-
-        # 1. Ensure excerpt + last_reviewed in frontmatter. Clamp reviewed
-        # date to max(TODAY, pub_date) — a future-dated post must not show
-        # a dateModified that predates datePublished. Overwrite an existing
-        # stale value too, otherwise a post scheduled into the future keeps
-        # the bad timestamp from its first enrich.
-        if not fm_get(fm, "excerpt"):
-            fm = fm_set(fm, "excerpt", derive_excerpt(post["body"]).replace('"', "'"))
-        reviewed = max(TODAY, post["date_iso"])
-        existing_reviewed = fm_get(fm, "last_reviewed") or ""
-        if not existing_reviewed or existing_reviewed < post["date_iso"]:
-            fm = fm_set(fm, "last_reviewed", reviewed)
-
-        # TL;DR sentence prefers the hand-written `description` (curated for
-        # SEO and AI Overviews) and falls back to the auto-derived excerpt
-        # only when description is missing or trivially short.
-        description = fm_get(fm, "description") or ""
-        excerpt = fm_get(fm, "excerpt") or ""
-        tldr = description if len(description) >= 80 else (excerpt or description)
-
-        # 2. Topic-cluster related posts (tag overlap, up to 3).
-        own_tags = set(t.lower() for t in post["tags"])
-        scored = []
-        for other in posts:
-            if other["path"] == post["path"]:
-                continue
-            other_tags = set(t.lower() for t in other["tags"])
-            score = len(own_tags & other_tags)
-            if score:
-                scored.append((score, other["date_iso"], other))
-        scored.sort(key=lambda x: (-x[0], -int(x[1].replace("-", ""))))
-        related = [o for _, _, o in scored[:3]]
-
-        # 3. Top-of-body lead block (idempotent + opt-out if hand-curated).
-        body_text = post["body"]
-        body_text = remove_existing_lead(body_text)
-
-        if body_starts_with_lead(body_text):
-            # The post already opens with a hand-written Key Takeaways block;
-            # leave it alone for the lead, but still update bottom enrichment.
-            pass
-        else:
-            takeaways = derive_key_takeaways(body_text)
-            lead = build_lead(tldr, takeaways, related)
-
-            # Insert the lead AFTER the body's H1 if one exists, otherwise
-            # at the very top of the body content (immediately after the
-            # trailing "---\n" of frontmatter, which the body string carries).
-            h1 = first_h1(body_text)
-            if h1:
-                _, end = h1
-                # Skip past any trailing newline characters.
-                while end < len(body_text) and body_text[end] in "\r\n":
-                    end += 1
-                body_text = body_text[:end] + lead + body_text[end:]
-            else:
-                # Find first non-blank content position; body usually starts
-                # with one or more leading newlines from the frontmatter
-                # delimiter — preserve them.
-                body_text = "\n" + lead + body_text.lstrip("\n")
-            led += 1
-
-        # 4. Bottom-of-body enrichment block (Last reviewed + Related grid).
-        body_text = body_text.rstrip()
-        body_text = ENRICH_BLOCK_RE.sub("", body_text)
-        block = ["", "<!-- enrich-start -->"]
-        # Author bio card — single source of truth for the E-E-A-T signal
-        # AI engines look for at the end of an article. Rendered as raw HTML
-        # so the markdown processor doesn't try to reflow the inline portrait.
-        block.append(
-            '<aside class="author-card" aria-label="About the author">'
-            '<img alt="Portrait of Sebastien Rousseau" '
-            'src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" '
-            'width="64" height="64" loading="lazy" decoding="async" />'
-            '<span class="author-card-body">'
-            '<strong class="author-card-name">'
-            '<a href="/about/index.html">Sebastien Rousseau</a></strong>'
-            '<span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 '
-            'migration, post-quantum cryptography for financial services, and '
-            'the structural transformation of wholesale payments.</span>'
-            '<span class="author-credentials">'
-            '20+ years across HSBC Commercial &amp; Investment Bank, PayPal, '
-            'Barclays, Shazam, AKQA, Virgin Group. '
-            '<a href="/about/index.html">Full profile</a> &middot; '
-            '<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; '
-            '<a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a>'
-            '</span>'
-            '</span>'
-            '</aside>'
-        )
-        block.append(
-            f'<p class="post-reviewed">Last reviewed '
-            f'<time datetime="{reviewed}">{reviewed}</time>.</p>'
-        )
-        if related:
-            block.append('<aside class="related-posts" aria-labelledby="related-heading">')
-            block.append('<h2 id="related-heading" class="related-heading">Related reading</h2>')
-            block.append('<div class="related-grid">')
-            for r in related:
-                title = r["title"].replace('"', "&quot;")
-                url = post_url(r)
-                img = r["image"] or ""
-                alt = (r.get("image_alt") or r["title"]).replace('"', "&quot;")
-                img_html = (
-                    f'<img alt="{alt}" src="{img}" loading="lazy" decoding="async" width="600" height="400" />'
-                    if img else ""
-                )
-                block.append(
-                    '<article class="related-card">'
-                    f'<a href="{url}" class="related-media" aria-label="{title}" tabindex="-1">{img_html}</a>'
-                    '<footer class="related-body">'
-                    f'<h3><a href="{url}">{r["title"]}</a></h3>'
-                    f'<p><time datetime="{r["date_iso"]}">{r["date_iso"]}</time></p>'
-                    '</footer></article>'
-                )
-            block.append('</div>')
-            block.append('</aside>')
-        block.append("<!-- enrich-end -->")
-        new_body = body_text + "\n" + "\n".join(block) + "\n"
-
-        out_text = "".join(fm) + new_body
-        if out_text != post["path"].read_text():
-            post["path"].write_text(out_text)
+        was_modified, was_led = _enrich_one(post, posts)
+        if was_modified:
             enriched += 1
+        if was_led:
+            led += 1
 
     print(f"enriched {enriched}/{len(posts)} dated posts ({led} got a new top-of-body lead block)")
 

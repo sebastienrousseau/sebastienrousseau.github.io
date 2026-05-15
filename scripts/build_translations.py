@@ -301,19 +301,18 @@ def rewrite_static_links(html: str) -> str:
 # that post_enrich.py baked into the rendered shell). Synced with the
 # English version in scripts/post_enrich.py.
 def _french_author_card() -> str:
-    """Author-card aside for the current language. Reads localised
-    strings from the registry (aria/portrait via labels.json, full-
-    profile link via strings.json) and resolves the about-page slug
-    via STATIC_SLUG_FR. Body + credentials text is currently still
-    French; Phase 6e will move it into a data file per lang.
+    """Author-card aside for the current language. All localised text
+    (aria-label, portrait alt, bio, credentials prefix, full-profile
+    link) reads from the registry; the URL resolves via STATIC_SLUG_FR.
     """
     about_slug = STATIC_SLUG_FR.get("about", "about")
-    aria = I18N_FR.get("About the author", "About the author")
-    portrait_alt = TAKEAWAY_LABELS_EN_TO_FR.get("Portrait of Sebastien Rousseau", "Portrait of Sebastien Rousseau")
-    # _lang_registry.load_strings exposes the "author.alt.portrait" + "author.fullProfile" keys
     strings = _lang_registry.load_strings(LANG_CODE)
-    portrait_alt = strings.get("author.alt.portrait", portrait_alt)
+    author = _lang_registry.load_author(LANG_CODE)
+    aria = strings.get("author.aria.aboutAuthor", "About the author")
+    portrait_alt = strings.get("author.alt.portrait", "Portrait of Sebastien Rousseau")
     full_profile = strings.get("author.fullProfile", "Full profile")
+    bio = author.get("bio", "")
+    credentials_prefix = author.get("credentialsPrefix", "")
     return (
         f'<aside class="author-card" aria-label="{aria}">'
         f'<img alt="{portrait_alt}" '
@@ -322,13 +321,9 @@ def _french_author_card() -> str:
         '<span class="author-card-body">'
         '<strong class="author-card-name">'
         f'<a href="/{LANG_CODE}/{about_slug}/index.html">Sebastien Rousseau</a></strong>'
-        '<span class="author-card-bio">Technologue senior dans la banque, '
-        'j\'écris sur l\'IA appliquée, la migration ISO 20022, la cryptographie '
-        'post-quantique pour les services financiers, et la transformation '
-        'structurelle des paiements wholesale.</span>'
+        f'<span class="author-card-bio">{bio}</span>'
         '<span class="author-credentials">'
-        'Plus de 20 ans d\'expérience chez HSBC Commercial &amp; Investment Bank, '
-        'PayPal, Barclays, Shazam, AKQA, Virgin Group. '
+        f'{credentials_prefix} '
         f'<a href="/{LANG_CODE}/{about_slug}/index.html">{full_profile}</a> &middot; '
         '<a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; '
         '<a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a>'

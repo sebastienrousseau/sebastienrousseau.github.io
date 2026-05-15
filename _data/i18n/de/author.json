@@ -1,0 +1,5 @@
+{
+  "_comment": "German author-card prose — DRAFT pending native-speaker review. Mirrors EN key set; CI gate test_i18n_author.py enforces parity.",
+  "bio": "Senior-Technologe im Banking, schreibe über angewandte KI, ISO-20022-Migration, Post-Quanten-Kryptografie für Finanzdienstleistungen und die strukturelle Transformation des Wholesale-Zahlungsverkehrs.",
+  "credentialsPrefix": "20+ Jahre Erfahrung bei HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group."
+}
