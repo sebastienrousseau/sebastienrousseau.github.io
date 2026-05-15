@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 26 Feb 2024 06:06:06 +0100" id="date" />
+    <meta itemprop="dateModified" content="Mon, 26 Feb 2024 06:06:06 +0100" id="last-modified" />
+    <title>Google Gemma: die Open-Source-KI-Entwicklung transformieren — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Entdecken Sie Googles Gemma-Modell: ein Open-Source-Projekt, das ethische KI-Lösungen für den persönlichen wie auch unternehmerischen Einsatz bietet.">
+<meta name="keywords" content="Google Gemma, Open-Source-KI-Modell, technische Architektur Gemma, Gemma 2B 7B, ethische KI, KI-Integration macOS, KI-Lösungen für Unternehmen, konversationelle KI, KI-Datenanalyse, KI für Edge-Geräte">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-B/4InJ6GuWUBw7dS5FCB4vebXAajNtckjIB6WGSxf2s=' 'sha256-sTfTWyY7Q/fUBvmYyyd1FpPYqYzPKL5MXoC8m/IR/L4=' 'sha256-zGHZX9OcAqU4BnwBclFcCrv6AiirD1v1aasA5o1wj8I=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    <link rel="alternate" href="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html" hreflang="en" />
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/de/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/9930ecfdff61f48d.css" crossorigin="anonymous" integrity="sha256-uiIfOSzvAomJoIgahbA7/d6tJPC0CX/f3fLZdJHr/No=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom-Feed" href="/de/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="stylesheet" href="/highlight.css">
+<meta property="og:title" content="Google Gemma: die Open-Source-KI-Entwicklung transformieren — Sebastien Rousseau">
+<meta property="og:description" content="Entdecken Sie Googles Gemma-Modell: ein Open-Source-Projekt, das ethische KI-Lösungen für den persönlichen wie auch unternehmerischen Einsatz bietet.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/fr/2024-02-26-google-gemma-transformiert-die-open-source-ki-entwicklung/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/ai-ship.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Google Gemma: die Open-Source-KI-Entwicklung transformieren — Sebastien Rousseau">
+<meta name="twitter:description" content="Entdecken Sie Googles Gemma-Modell: ein Open-Source-Projekt, das ethische KI-Lösungen für den persönlichen wie auch unternehmerischen Einsatz bietet.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/ai-ship.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/fr/2024-02-26-google-gemma-transformiert-die-open-source-ki-entwicklung/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-02-26-google-gemma-transformer-le-developpement-ia-en-source-ouverte/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2024-02-26-google-gemma-transformiert-die-open-source-ki-entwicklung/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Zum Hauptinhalt springen</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Navigation umschalten" />
+      <div class="wrap">
+        <a class="ap-brand" href="/de/index.html" aria-label="Startseite von Sebastien Rousseau">
+          <span itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Hauptnavigation">
+          <ul class="ap-menu">
+            <li><a href="/de/uber-mich/index.html">Über mich</a></li>
+            <li><a href="/de/articles/index.html">Artikel</a></li>
+            <li><a href="/de/publikationen/index.html">Publikationen</a></li>
+            <li><a href="/de/themen/index.html">Themen</a></li>
+            <li><a href="/de/projekte/index.html">Projekte</a></li>
+            <li><a href="/de/playlists/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Dunkles Design aktivieren" aria-pressed="false" title="Design wechseln">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Suchen (Cmd oder Strg + K)" title="Suchen (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Sprache">
+            <button type="button" class="ap-lang-toggle" aria-label="DE, Sprache ändern" aria-expanded="false" aria-haspopup="menu" title="Sprache wechseln">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">DE</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <span class="ap-lang-item" data-lang="ar" aria-disabled="true" title="Demnächst verfügbar">🇸🇦 العربية</span>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="Demnächst verfügbar">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="Demnächst verfügbar">🇨🇿 Čeština</span>
+                <span class="ap-lang-item" data-lang="de" aria-disabled="true" title="Demnächst verfügbar">🇩🇪 Deutsch</span>
+                <span class="ap-lang-item" data-lang="es" aria-disabled="true" title="Demnächst verfügbar">🇪🇸 Español</span>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="Demnächst verfügbar">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="Demnächst verfügbar">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="Demnächst verfügbar">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="Demnächst verfügbar">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="Demnächst verfügbar">🇮🇩 Indonesia</span>
+                <span class="ap-lang-item" data-lang="it" aria-disabled="true" title="Demnächst verfügbar">🇮🇹 Italiano</span>
+                <span class="ap-lang-item" data-lang="ja" aria-disabled="true" title="Demnächst verfügbar">🇯🇵 日本語</span>
+                <span class="ap-lang-item" data-lang="ko" aria-disabled="true" title="Demnächst verfügbar">🇰🇷 한국어</span>
+                <span class="ap-lang-item" data-lang="nl" aria-disabled="true" title="Demnächst verfügbar">🇳🇱 Nederlands</span>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="Demnächst verfügbar">🇵🇱 Polski</span>
+                <span class="ap-lang-item" data-lang="pt-br" aria-disabled="true" title="Demnächst verfügbar">🇧🇷 Português</span>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="Demnächst verfügbar">🇷🇴 Română</span>
+                <span class="ap-lang-item" data-lang="ru" aria-disabled="true" title="Demnächst verfügbar">🇷🇺 Русский</span>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="Demnächst verfügbar">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="Demnächst verfügbar">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="Demnächst verfügbar">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Demnächst verfügbar">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="Demnächst verfügbar">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="Demnächst verfügbar">🇳🇬 Yorùbá</span>
+                <span class="ap-lang-item" data-lang="zh-hans" aria-disabled="true" title="Demnächst verfügbar">🇨🇳 简体中文</span>
+                <span class="ap-lang-item" data-lang="zh-hant" aria-disabled="true" title="Demnächst verfügbar">🇹🇼 繁體中文</span>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/de/kontakt/index.html" aria-label="Kontakt aufnehmen">Kontakt ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Navigation umschalten">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Google Gemma: die Open-Source-KI-Entwicklung transformieren</h1>
+      <p class="sub">Ein Blick hinter die Kulissen: Fähigkeiten, Open-Source-Beiträge und was bevorsteht</p>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-google-gemma" class="article-tag" rel="tag">Google Gemma</a><a href="/tags/index.html#h3-open-source-ki-modell" class="article-tag" rel="tag">Open-Source-KI-Modell</a><a href="/tags/index.html#h3-technische-architektur-gemma" class="article-tag" rel="tag">technische Architektur Gemma</a><a href="/tags/index.html#h3-gemma-2b-7b" class="article-tag" rel="tag">Gemma 2B 7B</a><a href="/tags/index.html#h3-ethische-ki" class="article-tag" rel="tag">ethische KI</a><a href="/tags/index.html#h3-ki-integration-macos" class="article-tag" rel="tag">KI-Integration macOS</a><a href="/tags/index.html#h3-ki-losungen-fur-unternehmen" class="article-tag" rel="tag">KI-Lösungen für Unternehmen</a><a href="/tags/index.html#h3-konversationelle-ki" class="article-tag" rel="tag">konversationelle KI</a><a href="/tags/index.html#h3-ki-datenanalyse" class="article-tag" rel="tag">KI-Datenanalyse</a><a href="/tags/index.html#h3-ki-fur-edge-gerate" class="article-tag" rel="tag">KI für Edge-Geräte</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-02-26T06:06:06+01:00" class="meta-pub">Published 26 Feb 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Updated 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">7 min read</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#das-revolutionare-open-source-ki-modell-von-google-fur-eine-zugangliche-und-ethi">Das revolutionäre Open-Source-KI-Modell von Google für eine zugängliche und ethische ML-Entwicklung</a></li><li><a href="#gemma-verstehen">Gemma verstehen</a></li><li><a href="#google-gemma-mit-ollama-auf-macos-integrieren">Google Gemma mit Ollama auf macOS integrieren</a></li><li><a href="#eine-lokale-gemma-instanz-initialisieren">Eine lokale Gemma-Instanz initialisieren</a></li><li><a href="#die-open-source-wirkung-von-gemma">Die Open-Source-Wirkung von Gemma</a></li><li><a href="#gemma-anwendungsfalle-fur-unternehmenslosungen">Gemma-Anwendungsfälle für Unternehmenslösungen</a></li><li><a href="#was-bringt-die-zukunft">Was bringt die Zukunft?</a></li><li><a href="#fazit">Fazit</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Entdecken Sie Googles Gemma-Modell: ein Open-Source-Projekt, das ethische KI-Lösungen für den persönlichen wie auch unternehmerischen Einsatz bietet.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Das revolutionäre Open-Source-KI-Modell von Google für eine zugängliche und ethische ML-Entwicklung.</strong> Google hat kürzlich [Gemma ⧉][00] eingeführt — ein Open-Source-Modell für künstliche Intelligenz, das eine zugängliche und ethische Grundlage für die KI-Entwicklung bieten soll.</li>  <li><strong>Gemma verstehen.</strong> Die Gemini-Architektur von Google inspiriert Gemma, und Gemma ist in zwei Hauptkonfigurationen verfügbar:.</li>  <li><strong>Google Gemma mit Ollama auf macOS integrieren.</strong> [Ollama ⧉][02] ist eine Schnittstelle, die das lokale Erkunden von KI-Assistenten auf einem macOS-System ermöglicht.</li>  <li><strong>Eine lokale Gemma-Instanz initialisieren.</strong> Wählen Sie das Gemma-Modell aus, das Sie ausführen möchten:.</li></ul></aside><h2 id="das-revolutionare-open-source-ki-modell-von-google-fur-eine-zugangliche-und-ethi">Das revolutionäre Open-Source-KI-Modell von Google für eine zugängliche und ethische ML-Entwicklung <a class="heading-anchor" href="#das-revolutionare-open-source-ki-modell-von-google-fur-eine-zugangliche-und-ethi" aria-label="Link to Das revolutionäre Open-Source-KI-Modell von Google für eine zugängliche und ethische ML-Entwicklung">#</a></h2>
+<p>Google hat kürzlich <a href="https://ai.google.dev/gemma" title="Google Gemma AI"><strong>Gemma ⧉</strong></a> eingeführt — ein Open-Source-Modell für künstliche Intelligenz, das eine zugängliche und ethische Grundlage für die KI-Entwicklung bieten soll. Als Open-Source-Modell stellt Gemma seine vollständige Architektur, Trainingsmethodik, Modellgewichte und Parameter unter zulässigen Lizenzen bereit, sodass externe Forscher und Entwickler frei darauf zugreifen, davon lernen, darauf aufbauen und es sogar an ihre individuellen Bedürfnisse anpassen können. Dieser transparente Ansatz ermöglicht zudem eine Prüfung der Entwicklungspraktiken von Gemma — und stärkt so die Rechenschaftspflicht.</p>
+<p>Mit Konfigurationen wie <code>Gemma 2B</code> und <code>7B</code> deckt es eine breite Palette von Anwendungen ab — von mobilen Geräten bis hin zu Cloud-Infrastrukturen. Die Einführung von Gemma in die Open-Source-Community bekundet Googles starkes Engagement für ethische KI und fördert Innovation und Zusammenarbeit mit Entwicklern weltweit.</p>
+<p>Dieser Artikel beleuchtet die Architektur von Gemma, seine Integration in macOS und sein Potenzial, Unternehmenslösungen und die breitere KI-Landschaft zu transformieren.</p>
+<p><img src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/gemma.svg" alt="Google Gemma Logo – Quelle: Google"  width="240" height="60" decoding="async" fetchpriority="high">.class=&quot;fade-in w-25 p-5 float-end&quot;</p>
+<h2 id="gemma-verstehen">Gemma verstehen <a class="heading-anchor" href="#gemma-verstehen" aria-label="Link to Gemma verstehen">#</a></h2>
+<h3 id="technische-architektur-von-gemma">Technische Architektur von Gemma <a class="heading-anchor" href="#technische-architektur-von-gemma" aria-label="Link to Technische Architektur von Gemma">#</a></h3>
+<p>Die Gemini-Architektur von Google inspiriert Gemma, und Gemma ist in zwei Hauptkonfigurationen verfügbar:</p>
+<ul>
+<li>
+<p>Das Modell <strong>Gemma 2B</strong> ist auf Geräteeffizienz optimiert — mit geringerem Speicherbedarf und Stromverbrauch. Damit eignet es sich ideal für mobile und eingebettete Anwendungen wie konversationelle Bots auf Smartphones oder Smart-Home-Geräten.</p>
+</li>
+<li>
+<p>Das Modell <strong>Gemma 7B</strong> verfügt über deutlich höhere Kapazität und eignet sich für komplexere Aufgaben wie die Analyse großer Datensätze und Dokumente. Sein Einsatzgebiet sind Rechenzentren und Cloud-Infrastrukturen, die Inferenzen über Datenbanken hinweg ausführen.</p>
+</li>
+</ul>
+<p>Beide bieten vielseitige KI-Bausteine für Anwendungen — vom persönlichen Projekt bis zur Unternehmenslösung.</p>
+<h3 id="training-und-fahigkeiten-von-gemma">Training und Fähigkeiten von Gemma <a class="heading-anchor" href="#training-und-fahigkeiten-von-gemma" aria-label="Link to Training und Fähigkeiten von Gemma">#</a></h3>
+<p>Laut seinem <a href="https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf" title="Gemma Technical Report"><strong>Technischen Bericht ⧉</strong></a> sind die Gemma-Modelle (2B und 7B) hochentwickelt und auf massiven Datensätzen mit Fokus auf Webinhalten, Mathematik und Programmierung trainiert. Diese Modelle priorisieren — anders als ihr Vorgänger Gemini — keine multilingualen oder multimodalen Funktionen. Sie integrieren ein umfassendes Vokabular und setzen einen neuartigen Tokenisierungsansatz ein, der den Umgang mit vielfältigen Datentypen verbessert. Ihr Instruction-Tuning, das überwachtes Lernen und Reinforcement Learning aus menschlichem Feedback kombiniert, konzentriert sich ausschließlich auf Englisch und optimiert nuanciertes Textverständnis und nuancierte Texterzeugung. Diese methodische Innovation unterstreicht ihr Potenzial in spezialisierten Domänen und verdeutlicht die sich wandelnde Landschaft des Trainings von Sprachmodellen.</p>
+<h3 id="gemma-und-die-open-source-community">Gemma und die Open-Source-Community <a class="heading-anchor" href="#gemma-und-die-open-source-community" aria-label="Link to Gemma und die Open-Source-Community">#</a></h3>
+<p>Als Open-Source-Veröffentlichung unter <a href="https://ai.google.dev/gemma/terms" title="Gemma Licensing"><strong>zulässigen Lizenzen ⧉</strong></a> verkörpert Gemma auch Googles Bekenntnis zur ethischen Zusammenarbeit in der KI. Externe Entwickler können Gemma nun auf transparente Weise weiterentwickeln, prüfen und anpassen — und so den Zugang demokratisieren und die Rechenschaftspflicht stärken.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<p><img src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/ollama.svg" alt="Ollama Logo – Quelle: Ollama"  width="240" height="60" decoding="async" loading="lazy">.class=&quot;fade-in w-25 p-5 float-start&quot;</p>
+<h2 id="google-gemma-mit-ollama-auf-macos-integrieren">Google Gemma mit Ollama auf macOS integrieren <a class="heading-anchor" href="#google-gemma-mit-ollama-auf-macos-integrieren" aria-label="Link to Google Gemma mit Ollama auf macOS integrieren">#</a></h2>
+<p><a href="https://ollama.com" title="Ollama"><strong>Ollama ⧉</strong></a> ist eine Schnittstelle, die das lokale Erkunden von KI-Assistenten auf einem macOS-System ermöglicht. Wir verwenden sie, um die Modelle Gemma 2B und 7B auf Apple-M-Serie-Computern einzurichten. Diese Anleitung führt Sie durch den Prozess der Integration von Gemma in Ollama auf macOS.</p>
+<p>Sie können den Befehl <code>uname</code> verwenden, um die Prozessorarchitektur auszugeben. Öffnen Sie das Terminal und führen Sie aus:</p>
+<pre><code class="language-bash">uname -m
+</code></pre>
+<p>Wenn die Ausgabe <code>arm64</code> lautet, haben Sie einen Mac der M-Serie. Wenn sie <code>x86_64</code> lautet, haben Sie einen Intel-Mac. Diese Anleitung gilt für Macs der M-Serie.</p>
+<h3 id="umgebung-einrichten">Umgebung einrichten <a class="heading-anchor" href="#umgebung-einrichten" aria-label="Link to Umgebung einrichten">#</a></h3>
+<h4>1. Stellen Sie sicher, dass Python 3.8+, pip und venv installiert sind</h4>
+<p>Bevor Sie beginnen, vergewissern Sie sich, dass Sie <a href="https://www.python.org/downloads/release/python-380/" title="Python 3.8"><strong>Python 3.8 ⧉</strong></a> oder höher auf Ihrem Mac sowie die Werkzeuge <code>pip</code> und <code>venv</code> installiert haben. Sie können Ihre Python- und pip-Versionen prüfen und pip mit folgenden Befehlen im Terminal aktualisieren:</p>
+<pre><code class="language-bash">python3 --version
+pip3 --version
+pip3 install --upgrade pip
+</code></pre>
+<h4>2. Erstellen Sie eine virtuelle Umgebung, um Abhängigkeiten zu isolieren</h4>
+<p>Öffnen Sie das Terminal und erstellen Sie eine virtuelle Umgebung, um Konflikte mit systemweiten Paketen zu vermeiden.</p>
+<pre><code class="language-bash">python3 -m venv gemma_env
+source gemma_env/bin/activate
+</code></pre>
+<h4>3. Installieren Sie die neueste Version von Ollama für macOS</h4>
+<p>Laden Sie die <a href="https://ollama.com/download" title="Ollama Download"><strong>neueste Version von Ollama ⧉</strong></a> für macOS von der offiziellen Website herunter. Extrahieren Sie die Datei und verschieben Sie die Ollama-App in den Ordner „Programme&quot;. Öffnen Sie sie und folgen Sie den Einrichtungsanweisungen.</p>
+<h4>4. Bestätigen Sie, dass die Ollama-Installation erfolgreich war</h4>
+<p>Prüfen Sie mit folgendem Befehl, ob Ollama korrekt installiert ist:</p>
+<pre><code class="language-bash">ollama --version
+</code></pre>
+<p>Sie sollten die Version von Ollama angezeigt bekommen.</p>
+<h3 id="systemempfehlungen">Systemempfehlungen <a class="heading-anchor" href="#systemempfehlungen" aria-label="Link to Systemempfehlungen">#</a></h3>
+<p>Für optimale Leistung von Gemma 2B benötigen Sie:</p>
+<ul>
+<li><strong>Prozessor</strong>: Multi-Core Intel i5 oder höher</li>
+<li><strong>Speicher</strong>: 16 GB RAM (32 GB für Gemma 7B)</li>
+<li><strong>Speicherplatz</strong>: 50 GB freier Speicherplatz auf SSD</li>
+<li><strong>macOS</strong>: aktuell (Monterey oder neuer)</li>
+</ul>
+<p>Sobald Ollama eingerichtet ist, sind Sie bereit, Gemmas Modelle lokal zu initialisieren und mit ihnen zu interagieren.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="eine-lokale-gemma-instanz-initialisieren">Eine lokale Gemma-Instanz initialisieren <a class="heading-anchor" href="#eine-lokale-gemma-instanz-initialisieren" aria-label="Link to Eine lokale Gemma-Instanz initialisieren">#</a></h2>
+<h3 id="1-starten-sie-das-gemma-modell-uber-die-ollama-cli">1. Starten Sie das Gemma-Modell über die Ollama-CLI <a class="heading-anchor" href="#1-starten-sie-das-gemma-modell-uber-die-ollama-cli" aria-label="Link to 1. Starten Sie das Gemma-Modell über die Ollama-CLI">#</a></h3>
+<p>Wählen Sie das Gemma-Modell aus, das Sie ausführen möchten:</p>
+<ul>
+<li>Gemma 2B (kleineres Modell): <code>ollama run gemma:2b</code></li>
+<li>Gemma 7B (größeres Modell): <code>ollama run gemma:7b</code></li>
+</ul>
+<h3 id="2-beim-ersten-start-werden-modell-assets-heruntergeladen-kann-etwas-dauern">2. Beim ersten Start werden Modell-Assets heruntergeladen (kann etwas dauern) <a class="heading-anchor" href="#2-beim-ersten-start-werden-modell-assets-heruntergeladen-kann-etwas-dauern" aria-label="Link to 2. Beim ersten Start werden Modell-Assets heruntergeladen (kann etwas dauern)">#</a></h3>
+<p>Beim ersten Start wird das ausgewählte Gemma-Modell heruntergeladen — das kann etwas Zeit in Anspruch nehmen. Nach Abschluss wird Gemma für die Nutzung initialisiert.</p>
+<h4>Beispielhafte konversationelle Abfrage</h4>
+<pre><code class="language-bash">&gt;&gt;&gt; Hello Gemma. How are you today?
+</code></pre>
+<p>Gemma antwortet mit einer Antwort in natürlicher Sprache.</p>
+<pre><code class="language-bash">&gt;&gt;&gt; Hello Gemma. How are you today?
+Hello! It's a lovely day to be alive. Thank you for asking. How are you doing today? 😊
+</code></pre>
+<h3 id="virtuelle-umgebung-deaktivieren">Virtuelle Umgebung deaktivieren <a class="heading-anchor" href="#virtuelle-umgebung-deaktivieren" aria-label="Link to Virtuelle Umgebung deaktivieren">#</a></h3>
+<pre><code class="language-bash">deactivate
+</code></pre>
+<p>Damit kehren Sie zur standardmäßigen Python-Umgebung Ihres Systems zurück.</p>
+<p>Bei Problemen oder für weitere Details zur Einrichtung konsultieren Sie die <a href="https://ollama.com/docs">Ollama-Dokumentation ⧉</a> und die <a href="https://github.com/google-deepmind/gemma">Gemma-Dokumentation ⧉</a>.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="die-open-source-wirkung-von-gemma">Die Open-Source-Wirkung von Gemma <a class="heading-anchor" href="#die-open-source-wirkung-von-gemma" aria-label="Link to Die Open-Source-Wirkung von Gemma">#</a></h2>
+<p>Seit seinem Start hat Gemma dank seines zugänglichen und kollaborativen Open-Source-Ansatzes Innovation rasch beschleunigt.</p>
+<p>Die zulässige Lizenzierung erlaubt es zudem, die Architektur von Gemma zu Forschungszwecken zu untersuchen und Änderungen auf sehr granularer Ebene vorzunehmen. Entwickler haben Anpassungen, Personalisierungen und ganz neue Fähigkeiten auf Code-Kollaborationsplattformen geteilt.</p>
+<p>Diese gemeinschaftliche Anstrengung verbessert die Fähigkeiten von Gemma weiter, ethische und rechenschaftspflichtige KI-Systeme zu bauen, die mit den aufkommenden Best Practices in Einklang stehen.</p>
+<p>Mit der Zeit könnte ein Ökosystem aus Werkzeugen, Integrationen und sogar gänzlich neuen Anwendungen für Gemma entstehen — dank seiner Natur als Open-Source-Plattform.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="gemma-anwendungsfalle-fur-unternehmenslosungen">Gemma-Anwendungsfälle für Unternehmenslösungen <a class="heading-anchor" href="#gemma-anwendungsfalle-fur-unternehmenslosungen" aria-label="Link to Gemma-Anwendungsfälle für Unternehmenslösungen">#</a></h2>
+<p>Googles KI-Modell Gemma bietet mit seiner technischen Architektur und seinem Open-Source-Charakter vielfältige Unternehmenslösungen, um spezifische Geschäftsanforderungen zu erfüllen.</p>
+<h3 id="1-chatbots-und-konversationelle-agenten">1. Chatbots und konversationelle Agenten <a class="heading-anchor" href="#1-chatbots-und-konversationelle-agenten" aria-label="Link to 1. Chatbots und konversationelle Agenten">#</a></h3>
+<p>Das kleinere Modell Gemma 2B ist auf Geräteeffizienz optimiert und damit ideal für die Entwicklung von <strong>konversationellen Bots</strong> und <strong>virtuellen Assistenten</strong>. Unternehmen können diese KI-gestützten Agenten auf mobilen Geräten oder eingebetteten Systemen einsetzen, um Kundenservice, Support und Engagement zu verbessern — ohne umfangreiche Rechenressourcen.</p>
+<p>Obwohl Gemma erst gerade veröffentlicht wurde, decken sich seine Fähigkeiten gut mit bestehenden Anwendungen von KI-Chatbots und virtuellen Agenten, die Kunden unterstützen. Mit zunehmender Reife von Gemma erwarten wir direkte Integrationen, die konversationelle Schnittstellen der nächsten Generation ermöglichen.</p>
+<h3 id="2-datenanalyse-und-insights">2. Datenanalyse und Insights <a class="heading-anchor" href="#2-datenanalyse-und-insights" aria-label="Link to 2. Datenanalyse und Insights">#</a></h3>
+<p>Das größere Modell Gemma 7B mit seiner höheren Kapazität für komplexe Aufgaben eignet sich gut für die Analyse großer Datensätze und Dokumente. Unternehmen können dieses Modell nutzen, um Insights, Trends und Muster aus großen Datenmengen zu extrahieren — und so Entscheidungsfindung und strategische Planung zu unterstützen.</p>
+<h3 id="3-inhaltserstellung-und-zusammenfassung">3. Inhaltserstellung und Zusammenfassung <a class="heading-anchor" href="#3-inhaltserstellung-und-zusammenfassung" aria-label="Link to 3. Inhaltserstellung und Zusammenfassung">#</a></h3>
+<p>Die Gemma-Modelle können bei der Erstellung und Zusammenfassung von Inhalten helfen — Berichte, Artikel, Marketingunterlagen. Diese Fähigkeit kann den Zeit- und Arbeitsaufwand zur Produktion hochwertiger Inhalte erheblich verringern und Unternehmen ermöglichen, sich auf Kreativität und Strategie zu konzentrieren.</p>
+<h3 id="4-personalisiertes-e-mail-marketing-und-werbe-targeting">4. Personalisiertes E-Mail-Marketing und Werbe-Targeting <a class="heading-anchor" href="#4-personalisiertes-e-mail-marketing-und-werbe-targeting" aria-label="Link to 4. Personalisiertes E-Mail-Marketing und Werbe-Targeting">#</a></h3>
+<p>Durch das Verstehen und Erzeugen natürlicher Sprache kann Gemma Unternehmen helfen, personalisiertere und wirksamere E-Mail-Marketing-Kampagnen und Werbe-Targeting-Strategien zu erstellen. Dieser Anwendungsfall kann zu einem verbesserten Kundenengagement und höheren Konversionsraten führen.</p>
+<h3 id="5-natural-language-processing-nlp-fur-edge-gerate">5. Natural Language Processing (NLP) für Edge-Geräte <a class="heading-anchor" href="#5-natural-language-processing-nlp-fur-edge-gerate" aria-label="Link to 5. Natural Language Processing (NLP) für Edge-Geräte">#</a></h3>
+<p>Gemmas Optimierungen machen es geeignet, NLP-Aufgaben direkt auf Edge-Geräten auszuführen. Diese Fähigkeit ermöglicht Geschäftsentscheidungen in Echtzeit und reibungslosere Integrationen in der realen Welt — etwa in Einzelhandel, Fertigung und IoT-Anwendungen.</p>
+<h3 id="6-code-intelligenz-fur-entwickler">6. Code-Intelligenz für Entwickler <a class="heading-anchor" href="#6-code-intelligenz-fur-entwickler" aria-label="Link to 6. Code-Intelligenz für Entwickler">#</a></h3>
+<p>Gemma kann die Produktivität von Entwicklern steigern, indem es natürliche Sprachschnittstellen für Aufgaben der Codebearbeitung und -entwicklung bereitstellt. Beispielsweise können Entwickler konversationelle Abfragen nutzen, um Code-Empfehlungen, Funktionsbeschreibungen, Hilfe beim Debugging und Code-Reviews zu erhalten. Gemma würde Kontext und Semantik analysieren, um relevante Vorschläge zu liefern. Dieser „KI-Pair-Programmer&quot; kann helfen, Workflows zu straffen, Fehler zu reduzieren und die Entwicklung KI-gestützter Produkte zu beschleunigen.</p>
+<h3 id="7-multimodale-anwendungen">7. Multimodale Anwendungen <a class="heading-anchor" href="#7-multimodale-anwendungen" aria-label="Link to 7. Multimodale Anwendungen">#</a></h3>
+<p>Mit seiner Fähigkeit, Informationen über Text, Sprache und Bild hinweg zu verarbeiten, ist Gemma vielseitig für domänenübergreifende Anwendungsfälle. Diese Funktion ist besonders nützlich für Anwendungen, die auf eine natürlichere und intuitivere Interaktion mit Nutzern abzielen — wie VR- und AR-Erlebnisse.</p>
+<p>Der Open-Source-Charakter und die technische Vielseitigkeit von Gemma machen es zu einem wertvollen Werkzeug für Unternehmen, die KI in ihren operativen Bedürfnissen nutzen möchten. Gemma ist geschickt darin, virtuelle Assistenten und Chatbots zu erstellen, die das Kundenerlebnis verbessern, und kann umfangreiche Datenanalysen bewältigen. Sein Open-Source-Modell fördert zudem Innovation und Zusammenarbeit und ermöglicht es Unternehmen, Gemma an ihre Bedürfnisse anzupassen.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="was-bringt-die-zukunft">Was bringt die Zukunft? <a class="heading-anchor" href="#was-bringt-die-zukunft" aria-label="Link to Was bringt die Zukunft?">#</a></h2>
+<p>Mit Blick nach vorn ist Gemma für weiteres Wachstum und Weiterentwicklung gut positioniert. Es werden Anstrengungen unternommen, um die Kompatibilität mit verschiedenen Hardwareumgebungen zu verbessern, die Unterstützung zusätzlicher Sprachen zu stärken und das Anwendungsspektrum zu erweitern. Google und Gemma zielen darauf ab, Herausforderungen rund um Genauigkeit, Bias-Erkennung und sichere Datennutzung zu adressieren und Gemma als führende Kraft in der ethischen KI-Entwicklung zu positionieren.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="fazit">Fazit <a class="heading-anchor" href="#fazit" aria-label="Link to Fazit">#</a></h2>
+<p>Der Start von Gemma ist ein Meilenstein im KI-Bereich und unterstreicht einen Wandel hin zu zugänglicheren, ethischeren und kollaborativeren Entwicklungspraktiken. Während es weiter evolviert, wird Gemma eine Schlüsselrolle bei der Gestaltung der Zukunft der KI spielen und ein Modell dafür bieten, wie Open-Source-Projekte Innovation vorantreiben können, ohne ethische Standards aufzugeben.</p>
+<aside class="author-card" aria-label="Über den Autor"><img alt="Porträt von Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/de/uber-mich/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Technologue senior dans la banque, j'écris sur l'IA appliquée, la migration ISO 20022, la cryptographie post-quantique pour les services financiers, et la transformation structurelle des paiements wholesale.</span><span class="author-credentials">Plus de 20 ans d'expérience chez HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/de/uber-mich/index.html">Vollständiges Profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Dernière révision <time datetime="2026-05-15">2026-05-15</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Verwandte Artikel</h2>
+<div class="related-grid">
+<article class="related-card"><a  class="related-media" aria-label="L&#x27;AI Act de l&#x27;UE : pionnier de la régulation éthique de l&#x27;IA dans le monde" tabindex="-1" title="L&#x27;AI Act de l&#x27;UE : pionnier de la régulation éthique de l&#x27;IA dans le monde" href="/de/2024-02-13-eu-ki-verordnung-die-zukunft-der-globalen-ki-regulierung/index.html"><img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="l-ai-act-de-l-ue-pionnier-de-la-regulation-ethique-de-l-ia-dans-le-monde"><a title="L&#x27;AI Act de l&#x27;UE : pionnier de la régulation éthique de l&#x27;IA dans le monde" href="/de/2024-02-13-eu-ki-verordnung-die-zukunft-der-globalen-ki-regulierung/index.html">L&#x27;AI Act de l&#x27;UE : pionnier de la régulation éthique de l&#x27;IA dans le monde</a> <a class="heading-anchor" href="#l-ai-act-de-l-ue-pionnier-de-la-regulation-ethique-de-l-ia-dans-le-monde" aria-label="Link to L&#x27;AI Act de l&#x27;UE : pionnier de la régulation éthique de l&#x27;IA dans le monde">#</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+<article class="related-card"><a  class="related-media" aria-label="AI Prompt Engineering 2024 : techniques qui marchent" tabindex="-1" title="AI Prompt Engineering 2024 : techniques qui marchent" href="/de/2024-01-23-fortschritte-im-ki-prompt-engineering/index.html"><img alt="A man analysing data on screens" src="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-prompt-engineering-2024-techniques-qui-marchent"><a title="AI Prompt Engineering 2024 : techniques qui marchent" href="/de/2024-01-23-fortschritte-im-ki-prompt-engineering/index.html">AI Prompt Engineering 2024 : techniques qui marchent</a> <a class="heading-anchor" href="#ai-prompt-engineering-2024-techniques-qui-marchent" aria-label="Link to AI Prompt Engineering 2024 : techniques qui marchent">#</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+<article class="related-card"><a  class="related-media" aria-label="Tendances IA 2024 : aperçus et prédictions pour le futur" tabindex="-1" title="Tendances IA 2024 : aperçus et prédictions pour le futur" href="/de/2024-01-01-ki-trends-2024-einblicke-und-vorhersagen/index.html"><img alt="Drone View of London" src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="tendances-ia-2024-apercus-et-predictions-pour-le-futur"><a title="Tendances IA 2024 : aperçus et prédictions pour le futur" href="/de/2024-01-01-ki-trends-2024-einblicke-und-vorhersagen/index.html">Tendances IA 2024 : aperçus et prédictions pour le futur</a> <a class="heading-anchor" href="#tendances-ia-2024-apercus-et-predictions-pour-le-futur" aria-label="Link to Tendances IA 2024 : aperçus et prédictions pour le futur">#</a></h3><p><time datetime="2024-01-01">2024-01-01</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Sources & references</h2><ol class="article-sources-list"><li><a href="https://github.com/google-deepmind/gemma" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/google-deepmind/gemma</span></a></li></ol></aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">Google Gemma AI: Transforming Open-Source AI Development</span></a><a class="post-pagination-next" href="/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/"><span class="post-pagination-label">Next</span><span class="post-pagination-title">Le Chat by Mistral AI: Multilingual Conversational AI</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/de/uber-mich/index.html">Über mich</a></li>
+              <li><a href="/de/kontakt/index.html">Kontakt</a></li>
+              <li><a href="/de/erstellt-mit-static-site-generator/index.html">Erstellt mit Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Schreiben</h2>
+            <ul>
+              <li><a href="/de/articles/index.html">Artikel</a></li>
+              <li><a href="/de/publikationen/index.html">Publikationen</a></li>
+              <li><a href="/de/etiketten/index.html">Etiketten</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Arbeit</h2>
+            <ul>
+              <li><a href="/de/projekte/index.html">Projekte</a></li>
+              <li><a href="/de/playlists/index.html">Playlists</a></li>
+              <li><a href="/de/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Reichweite</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Newsletter-Anmeldung">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — Forschungsnotizen zu Zahlungsverkehr, KI und Post-Quanten-Kryptografie. Kein Spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="sie@bank.de" />
+            <input type="hidden" name="_subject" value="Newsletter-Anmeldung — sebastienrousseau.com" />
+            <button type="submit">Abonnieren</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle Rechte vorbehalten.</span>
+          <div class="social" aria-label="Soziale Netzwerke">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau auf Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau auf Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau auf LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau auf LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau auf Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau auf Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau auf YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau auf YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/de/barrierefreiheit/index.html">Barrierefreiheit</a> ·
+            <a href="/de/datenschutz/index.html">Datenschutz</a> ·
+            <a href="/de/nutzungsbedingungen/index.html">Nutzungsbedingungen</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"de"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"de"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1542,"headline":"Google Gemma: die Open-Source-KI-Entwicklung transformieren","description":"Entdecken Sie Googles Gemma-Modell: ein Open-Source-Projekt, das ethische KI-Lösungen für den persönlichen wie auch unternehmerischen Einsatz bietet.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/ai-ship.webp","width":"100vw","height":"100vh","caption":"Futuristisches blaues Raumschiff mit Neonlichtern"},"url":"https://sebastienrousseau.com/fr/2024-02-26-google-gemma-transformiert-die-open-source-ki-entwicklung/","datePublished":"2024-02-26T06:06:06+01:00","dateModified":"2026-05-11","inLanguage":"de","keywords":"Google Gemma, Open-Source-KI-Modell, technische Architektur Gemma, Gemma 2B 7B, ethische KI, KI-Integration macOS, KI-Lösungen für Unternehmen, konversationelle KI, KI-Datenanalyse, KI für Edge-Geräte","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/fr/2024-02-26-google-gemma-transformiert-die-open-source-ki-entwicklung/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"de"},"citation":[{"@type":"CreativeWork","url":"https://github.com/google-deepmind/gemma"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/fr/"},{"@type":"ListItem","position":3,"name":"Google Gemma: die Open-Source-KI-Entwicklung transformieren","item":"https://sebastienrousseau.com/fr/2024-02-26-google-gemma-transformiert-die-open-source-ki-entwicklung/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Suchen">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Suchen</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Suchen">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="In der Dokumentation suchen..." autocomplete="off" aria-label="Suchen"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> schließen</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigieren</span><span><kbd>Enter</kbd> öffnen</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

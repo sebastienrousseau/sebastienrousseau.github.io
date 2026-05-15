@@ -1374,23 +1374,33 @@ def _splice_fr_urls(xml: str, lastmod_index: dict[str, str]) -> str:
             lastmod = lastmod_index.get(stem, "")
             _add(f"{base}/{stem}/", "0.8", "weekly", lastmod)
 
-    # FR hub + FR dated posts + FR static pages + FR topic sub-pages.
-    # Static slugs are localised (privacy → confidentialite, etc.).
-    _add(f"{base}/fr/", "0.8", "weekly")
-    _add(f"{base}/fr/articles/", "0.7", "weekly")
-    for slug in (
-        "a-propos", "publications", "projets", "sujets", "etiquettes",
-        "contact", "accessibilite", "confidentialite", "conditions", "playlists",
-        "concu-avec-shokunin", "concu-avec-static-site-generator",
-    ):
-        _add(f"{base}/fr/{slug}/", "0.5", "monthly")
-    for topic in (
-        "post-quantum-cryptography", "iso-20022-payments",
-        "applied-ai-banking", "rust-open-source", "blockchain-digital-assets",
-    ):
-        _add(f"{base}/fr/sujets/{topic}/", "0.6", "monthly")
-    for en, fr in EN_TO_FR.items():
-        _add(f"{base}/fr/{fr}/", "0.7", "monthly", lastmod_index.get(en, ""))
+    # Per-language hub + dated posts + static pages + topic sub-pages.
+    # Drives every active non-EN language via _lang_registry; the FR
+    # block previously inlined here is now data-driven.
+    for _code in _all_active_non_en_langs():
+        _slugs = _lr.load_slugs(_code)
+        _statics = _slugs.get("static", {})
+        _articles = _slugs.get("articles", {})
+        _topics_slug = _statics.get("topics", "topics")
+        _articles_slug = _statics.get("articles", "articles")
+        _add(f"{base}/{_code}/", "0.8", "weekly")
+        _add(f"{base}/{_code}/{_articles_slug}/", "0.7", "weekly")
+        for _en_static, _lang_static in _statics.items():
+            # Skip "articles" — handled separately as a higher-priority hub
+            # above. Skip "topics" — the localised topics root is implicit
+            # in the subpage URLs added next.
+            if _en_static in ("articles", "topics"):
+                continue
+            _add(f"{base}/{_code}/{_lang_static}/", "0.5", "monthly")
+        # Also add /<code>/<topics_slug>/ as the topics hub.
+        _add(f"{base}/{_code}/{_topics_slug}/", "0.5", "monthly")
+        for topic in (
+            "post-quantum-cryptography", "iso-20022-payments",
+            "applied-ai-banking", "rust-open-source", "blockchain-digital-assets",
+        ):
+            _add(f"{base}/{_code}/{_topics_slug}/{topic}/", "0.6", "monthly")
+        for _en_slug, _lang_slug in _articles.items():
+            _add(f"{base}/{_code}/{_lang_slug}/", "0.7", "monthly", lastmod_index.get(_en_slug, ""))
 
     if not new_blocks:
         return xml
@@ -2282,10 +2292,62 @@ def inject_github_stats(html: str, stats_index: dict[str, dict]) -> str:
     return _GH_CARD_RE.sub(patch, html)
 
 
+# Top-level EN static pages with FR mirrors. Loaded from
+# _data/i18n/fr/slugs.json (single source of truth).
+import sys as _sys_lr
+
+_sys_lr.path.insert(0, str(Path(__file__).parent))
+import _lang_registry as _lr  # type: ignore[import-not-found]
+
+
+def _all_active_non_en_langs() -> list[str]:
+    """Return the code for every active non-EN language."""
+    return [lg.code for lg in _lr.LANGUAGES if lg.active and lg.code != "en"]
+
+
+def _slug_maps_for(code: str) -> dict[str, dict[str, str]]:
+    """Return the article + static slug maps (both directions) for ``code``."""
+    s = _lr.load_slugs(code)
+    articles = s.get("articles", {})
+    statics = s.get("static", {})
+    return {
+        "articles_en_to_lang": articles,
+        "articles_lang_to_en": {v: k for k, v in articles.items()},
+        "statics_en_to_lang": statics,
+        "statics_lang_to_en": {v: k for k, v in statics.items()},
+    }
+
+
+_SLUG_MAPS_CACHE: dict[str, dict[str, dict[str, str]]] = {}
+
+
+def _slug_maps(code: str) -> dict[str, dict[str, str]]:
+    if code not in _SLUG_MAPS_CACHE:
+        _SLUG_MAPS_CACHE[code] = _slug_maps_for(code)
+    return _SLUG_MAPS_CACHE[code]
+
+
+# FR-specific aliases kept for back-compat with the existing FR call
+# sites that haven't been refactored to use _slug_maps() directly.
+_STATIC_EN_TO_FR: dict[str, str] = _lr.load_slugs("fr")["static"]
+
+
+def _translated_slugs_per_lang() -> dict[str, set[str]]:
+    """Return ``{code: set_of_rendered_slugs}`` for every active non-EN
+    language whose output dir exists under ``public/``."""
+    out: dict[str, set[str]] = {}
+    for code in _all_active_non_en_langs():
+        d = PUBLIC / code
+        if not d.is_dir():
+            continue
+        out[code] = {p.parent.name for p in d.glob("*/index.html")}
+    return out
+
+
 def _translated_slugs() -> tuple[set[str], set[str]]:
-    """Discover which EN and FR slugs have rendered counterparts under
-    ``public/``. Returns ``(en_slugs_with_fr, fr_slugs_with_en)``.
-    """
+    """Legacy FR-only helper. Returns ``(en_slugs_with_fr,
+    fr_slugs_with_en)`` for the call sites that haven't yet moved to
+    the lang-keyed API."""
     fr_dir = PUBLIC / "fr"
     if not fr_dir.is_dir():
         return set(), set()
@@ -2295,56 +2357,85 @@ def _translated_slugs() -> tuple[set[str], set[str]]:
     return en_with_fr, fr_with_en
 
 
-# Top-level EN static pages with FR mirrors. Loaded from
-# _data/i18n/fr/slugs.json (single source of truth).
-import sys as _sys_lr
+def _resolve_en_slug(slug: str, lang: str) -> str | None:
+    """Reverse-map any language's slug to its EN counterpart. Returns
+    None when the slug isn't recognised in either the article or
+    static map (e.g. /topics/<x>/ topic-subpage slugs)."""
+    if lang == "en":
+        return slug
+    maps = _slug_maps(lang)
+    return (
+        maps["articles_lang_to_en"].get(slug)
+        or maps["statics_lang_to_en"].get(slug)
+    )
 
-_sys_lr.path.insert(0, str(Path(__file__).parent))
-import _lang_registry as _lr  # type: ignore[import-not-found]
 
-_STATIC_EN_TO_FR: dict[str, str] = _lr.load_slugs("fr")["static"]
+def _alternates_for_en_slug(
+    en_slug: str,
+    translated_per_lang: dict[str, set[str]],
+) -> list[tuple[str, str]]:
+    """Build the full ``[(lang_code, absolute_url), …]`` alternate list
+    for an EN slug. Always includes EN first; appends an entry per
+    active non-EN language that has a rendered translation of this
+    slug (either as an article or a static page).
+    """
+    alts: list[tuple[str, str]] = [
+        ("en", f"https://sebastienrousseau.com/{en_slug}/"),
+    ]
+    for code in _all_active_non_en_langs():
+        maps = _slug_maps(code)
+        lang_slug = (
+            maps["articles_en_to_lang"].get(en_slug)
+            or maps["statics_en_to_lang"].get(en_slug)
+        )
+        if not lang_slug:
+            continue
+        if lang_slug not in translated_per_lang.get(code, set()):
+            continue
+        alts.append((code, f"https://sebastienrousseau.com/{code}/{lang_slug}/"))
+    return alts
 
 
 def inject_hreflang(
     html: str,
     slug: str,
     lang: str,
-    en_with_fr: set[str],
-    fr_with_en: set[str],
+    translated_per_lang: dict[str, set[str]] | None = None,
+    *,
+    # Legacy FR-only positional args kept for back-compat — accepted but
+    # ignored when translated_per_lang is provided.
+    en_with_fr: set[str] | None = None,
+    fr_with_en: set[str] | None = None,
 ) -> str:
-    """Inject reciprocal hreflang links so Google + crawlers (and the
-    language-selector JS) pair the two language versions. Translates
-    EN ↔ FR slug via :mod:`_fr_slugs` for articles, and via
-    :data:`_STATIC_EN_TO_FR` for top-level static pages.
+    """Inject reciprocal hreflang links so search crawlers + the
+    language-selector JS pair every translated version of a page.
+
+    Emits one ``<link rel=alternate hreflang=<code>>`` for every active
+    non-EN language that has a rendered translation of this page's EN
+    slug, plus one for EN and one ``x-default`` pointing at EN.
     """
-    if lang == "fr":
-        if slug in fr_with_en:
-            en = _en_slug(slug)
-            fr = slug
-            en_url = f"https://sebastienrousseau.com/{en}/"
-            fr_url = f"https://sebastienrousseau.com/fr/{fr}/"
-        else:
-            # Static page under /fr/<fr-slug>/ — already wired by the
-            # FR renderer in build_translations.py.
-            return html
-    else:
-        if slug in en_with_fr:
-            en = slug
-            fr = _fr_slug(slug)
-            en_url = f"https://sebastienrousseau.com/{en}/"
-            fr_url = f"https://sebastienrousseau.com/fr/{fr}/"
-        elif slug in _STATIC_EN_TO_FR:
-            en_url = f"https://sebastienrousseau.com/{slug}/"
-            fr_url = f"https://sebastienrousseau.com/fr/{_STATIC_EN_TO_FR[slug]}/"
-        else:
-            return html
-    # Strip any existing hreflang link tags so we don't duplicate.
+    if translated_per_lang is None:
+        # Build it lazily from the legacy FR sets so old call sites still work.
+        translated_per_lang = {}
+        if fr_with_en:
+            translated_per_lang["fr"] = fr_with_en
+        if en_with_fr:
+            # Keep en_with_fr around so the FR fallback path below works.
+            pass
+    en_slug = _resolve_en_slug(slug, lang)
+    if en_slug is None:
+        return html
+    alts = _alternates_for_en_slug(en_slug, translated_per_lang)
+    if len(alts) < 2:
+        # No translations of this slug — leave alternates untouched.
+        return html
+    en_url = alts[0][1]
     html = _HREFLANG_RE.sub('', html)
-    links = (
-        f'<link rel="alternate" hreflang="en" href="{en_url}" />'
-        f'<link rel="alternate" hreflang="fr" href="{fr_url}" />'
-        f'<link rel="alternate" hreflang="x-default" href="{en_url}" />'
+    links = ''.join(
+        f'<link rel="alternate" hreflang="{code}" href="{url}" />'
+        for code, url in alts
     )
+    links += f'<link rel="alternate" hreflang="x-default" href="{en_url}" />'
     return _HEAD_END_RE.sub(links + '</head>', html, count=1)
 
 
@@ -2355,6 +2446,7 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
     nav_index = build_post_nav_index(pages)
     fr_titles = build_fr_title_index(pages)
     en_with_fr, fr_with_en = _translated_slugs()
+    translated_per_lang = _translated_slugs_per_lang()
     gh_stats = _gh_stats_index()
     sri_patched = 0
     csp_patched = 0
@@ -2452,16 +2544,36 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
             page.parent.parent.name == "sujets"
             and page.parent.parent.parent.name == "fr"
         )
-        if is_en_topic or is_fr_topic:
-            en_url = f"https://sebastienrousseau.com/topics/{rel_slug}/"
-            fr_url = f"https://sebastienrousseau.com/fr/sujets/{rel_slug}/"
+        # Detect if this is a topic page in *any* language (DE → "themen",
+        # FR → "sujets", EN → "topics"). Walk the active languages and
+        # check whether the page's parent is the localised topics-hub
+        # dir for that language.
+        is_lang_topic_codes: list[str] = []
+        for _code in _all_active_non_en_langs():
+            _topic_dir = _slug_maps(_code)["statics_en_to_lang"].get("topics", "topics")
+            if (
+                page.parent.parent.name == _topic_dir
+                and page.parent.parent.parent.name == _code
+            ):
+                is_lang_topic_codes.append(_code)
+        if is_en_topic or is_fr_topic or is_lang_topic_codes:
+            # Topic slugs are language-independent; emit hreflang
+            # alternates for every active non-EN lang that has the
+            # topic hub rendered.
+            topic_alts: list[tuple[str, str]] = [
+                ("en", f"https://sebastienrousseau.com/topics/{rel_slug}/"),
+            ]
+            for _code in _all_active_non_en_langs():
+                _topic_dir = _slug_maps(_code)["statics_en_to_lang"].get("topics", "topics")
+                topic_alts.append((_code, f"https://sebastienrousseau.com/{_code}/{_topic_dir}/{rel_slug}/"))
+            en_url = topic_alts[0][1]
             _hf_re = re.compile(r'<link rel="alternate"[^>]+hreflang="[^"]+"[^/]*/>', re.IGNORECASE)
             cleaned = _hf_re.sub('', patched_nav)
-            topic_links = (
-                f'<link rel="alternate" hreflang="en" href="{en_url}" />'
-                f'<link rel="alternate" hreflang="fr" href="{fr_url}" />'
-                f'<link rel="alternate" hreflang="x-default" href="{en_url}" />'
+            topic_links = ''.join(
+                f'<link rel="alternate" hreflang="{lc}" href="{u}" />'
+                for lc, u in topic_alts
             )
+            topic_links += f'<link rel="alternate" hreflang="x-default" href="{en_url}" />'
             patched_hl = re.sub(r'</head>', topic_links + '</head>', cleaned, count=1, flags=re.IGNORECASE)
             if patched_hl != patched_nav:
                 hreflang_patched += 1
@@ -2478,23 +2590,41 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
             continue
         # Special case: the site root /index.html. Its parent dir is
         # "public" — we treat it as the home and emit hreflang to /fr/.
-        if page.parent.name == "public" or (page.name == "index.html" and page.parent == PUBLIC):
+        # Home page in any language: /index.html OR /<lang>/index.html.
+        # The localised home for each non-EN lang lives at /<lang>/index.html
+        # (its parent.name is the lang code, parent.parent is public).
+        is_home_page = (
+            page.parent.name == "public"
+            or (page.name == "index.html" and page.parent == PUBLIC)
+            or (
+                page.name == "index.html"
+                and page.parent.parent == PUBLIC
+                and page.parent.name in _all_active_non_en_langs()
+            )
+        )
+        if is_home_page:
             _head_re = re.compile(r'</head>', re.IGNORECASE)
             _hf_re = re.compile(r'<link rel="alternate"[^>]+hreflang="[^"]+"[^/]*/>', re.IGNORECASE)
             cleaned = _hf_re.sub('', patched_nav)
-            home_links = (
-                '<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/" />'
-                '<link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/" />'
-                '<link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/" />'
+            home_alts: list[tuple[str, str]] = [
+                ("en", "https://sebastienrousseau.com/"),
+            ]
+            for _code in _all_active_non_en_langs():
+                home_alts.append((_code, f"https://sebastienrousseau.com/{_code}/"))
+            home_links = ''.join(
+                f'<link rel="alternate" hreflang="{lc}" href="{u}" />'
+                for lc, u in home_alts
             )
+            home_links += '<link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/" />'
             patched_hl = _head_re.sub(home_links + '</head>', cleaned, count=1)
         else:
+            # Detect this page's language from its parent directory chain.
+            page_lang = page.parent.parent.name if page.parent.parent.name in translated_per_lang else "en"
             patched_hl = inject_hreflang(
                 patched_nav,
                 rel_slug,
-                "fr" if is_fr else "en",
-                en_with_fr,
-                fr_with_en,
+                page_lang,
+                translated_per_lang,
             )
         if patched_hl != patched_nav:
             hreflang_patched += 1

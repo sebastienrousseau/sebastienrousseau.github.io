@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Tue, 12 Mar 2024 21:21:21 +0000" id="date" />
+    <meta itemprop="dateModified" content="Tue, 12 Mar 2024 21:21:21 +0000" id="last-modified" />
+    <title>Schnelle Echtzeit-Spracherkennung auf macOS: OpenAI Whisper — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Wie OpenAI Whisper und Metal Performance Shaders die Echtzeit-Spracherkennung auf macOS mit unübertroffener Geschwindigkeit und Präzision transformieren.">
+<meta name="keywords" content="OpenAI Whisper, Metal Performance Shaders, Spracherkennung macOS, Echtzeit-Transkription, Sprachaktivitätserkennung, GPU-Beschleunigung, Python-Integration, Speech-to-Text macOS, energieeffiziente Sprachdetektion, Apple Silicon">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-WAttL+rXUu7Hok1mOXrhYxvLZlt/Vqxt1zZEwOGQQs0=' 'sha256-faqD9JKL9xmaZs+zbpEXUh0seATRxjAhWV0tSl1HBdc=' 'sha256-zGHZX9OcAqU4BnwBclFcCrv6AiirD1v1aasA5o1wj8I=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    <link rel="alternate" href="https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html" hreflang="en" />
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/de/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/9930ecfdff61f48d.css" crossorigin="anonymous" integrity="sha256-uiIfOSzvAomJoIgahbA7/d6tJPC0CX/f3fLZdJHr/No=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom-Feed" href="/de/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Schnelle Echtzeit-Spracherkennung auf macOS: OpenAI Whisper — Sebastien Rousseau">
+<meta property="og:description" content="Wie OpenAI Whisper und Metal Performance Shaders die Echtzeit-Spracherkennung auf macOS mit unübertroffener Geschwindigkeit und Präzision transformieren.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/fr/2024-03-12-echtzeit-spracherkennung-auf-macos-mit-openai-whisper/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/research-paper.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Schnelle Echtzeit-Spracherkennung auf macOS: OpenAI Whisper — Sebastien Rousseau">
+<meta name="twitter:description" content="Wie OpenAI Whisper und Metal Performance Shaders die Echtzeit-Spracherkennung auf macOS mit unübertroffener Geschwindigkeit und Präzision transformieren.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/research-paper.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/fr/2024-03-12-echtzeit-spracherkennung-auf-macos-mit-openai-whisper/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-03-12-revolutionner-la-reconnaissance-vocale-en-temps-reel-sur-macos-avec-whisper/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2024-03-12-echtzeit-spracherkennung-auf-macos-mit-openai-whisper/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Zum Hauptinhalt springen</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Navigation umschalten" />
+      <div class="wrap">
+        <a class="ap-brand" href="/de/index.html" aria-label="Startseite von Sebastien Rousseau">
+          <span itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Hauptnavigation">
+          <ul class="ap-menu">
+            <li><a href="/de/uber-mich/index.html">Über mich</a></li>
+            <li><a href="/de/articles/index.html">Artikel</a></li>
+            <li><a href="/de/publikationen/index.html">Publikationen</a></li>
+            <li><a href="/de/themen/index.html">Themen</a></li>
+            <li><a href="/de/projekte/index.html">Projekte</a></li>
+            <li><a href="/de/playlists/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Dunkles Design aktivieren" aria-pressed="false" title="Design wechseln">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Suchen (Cmd oder Strg + K)" title="Suchen (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Sprache">
+            <button type="button" class="ap-lang-toggle" aria-label="DE, Sprache ändern" aria-expanded="false" aria-haspopup="menu" title="Sprache wechseln">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">DE</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <span class="ap-lang-item" data-lang="ar" aria-disabled="true" title="Demnächst verfügbar">🇸🇦 العربية</span>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="Demnächst verfügbar">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="Demnächst verfügbar">🇨🇿 Čeština</span>
+                <span class="ap-lang-item" data-lang="de" aria-disabled="true" title="Demnächst verfügbar">🇩🇪 Deutsch</span>
+                <span class="ap-lang-item" data-lang="es" aria-disabled="true" title="Demnächst verfügbar">🇪🇸 Español</span>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="Demnächst verfügbar">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="Demnächst verfügbar">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="Demnächst verfügbar">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="Demnächst verfügbar">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="Demnächst verfügbar">🇮🇩 Indonesia</span>
+                <span class="ap-lang-item" data-lang="it" aria-disabled="true" title="Demnächst verfügbar">🇮🇹 Italiano</span>
+                <span class="ap-lang-item" data-lang="ja" aria-disabled="true" title="Demnächst verfügbar">🇯🇵 日本語</span>
+                <span class="ap-lang-item" data-lang="ko" aria-disabled="true" title="Demnächst verfügbar">🇰🇷 한국어</span>
+                <span class="ap-lang-item" data-lang="nl" aria-disabled="true" title="Demnächst verfügbar">🇳🇱 Nederlands</span>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="Demnächst verfügbar">🇵🇱 Polski</span>
+                <span class="ap-lang-item" data-lang="pt-br" aria-disabled="true" title="Demnächst verfügbar">🇧🇷 Português</span>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="Demnächst verfügbar">🇷🇴 Română</span>
+                <span class="ap-lang-item" data-lang="ru" aria-disabled="true" title="Demnächst verfügbar">🇷🇺 Русский</span>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="Demnächst verfügbar">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="Demnächst verfügbar">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="Demnächst verfügbar">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Demnächst verfügbar">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="Demnächst verfügbar">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="Demnächst verfügbar">🇳🇬 Yorùbá</span>
+                <span class="ap-lang-item" data-lang="zh-hans" aria-disabled="true" title="Demnächst verfügbar">🇨🇳 简体中文</span>
+                <span class="ap-lang-item" data-lang="zh-hant" aria-disabled="true" title="Demnächst verfügbar">🇹🇼 繁體中文</span>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/de/kontakt/index.html" aria-label="Kontakt aufnehmen">Kontakt ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Navigation umschalten">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Schnelle Echtzeit-Spracherkennung auf macOS: OpenAI Whisper</h1>
+      <p class="sub">Die Kraft KI-gestützter, GPU-beschleunigter Speech-to-Text-Verarbeitung auf Ihrem Mac entfesseln</p>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-openai-whisper" class="article-tag" rel="tag">OpenAI Whisper</a><a href="/tags/index.html#h3-metal-performance-shaders" class="article-tag" rel="tag">Metal Performance Shaders</a><a href="/tags/index.html#h3-spracherkennung-macos" class="article-tag" rel="tag">Spracherkennung macOS</a><a href="/tags/index.html#h3-echtzeit-transkription" class="article-tag" rel="tag">Echtzeit-Transkription</a><a href="/tags/index.html#h3-sprachaktivitatserkennung" class="article-tag" rel="tag">Sprachaktivitätserkennung</a><a href="/tags/index.html#h3-gpu-beschleunigung" class="article-tag" rel="tag">GPU-Beschleunigung</a><a href="/tags/index.html#h3-python-integration" class="article-tag" rel="tag">Python-Integration</a><a href="/tags/index.html#h3-speech-to-text-macos" class="article-tag" rel="tag">Speech-to-Text macOS</a><a href="/tags/index.html#h3-energieeffiziente-sprachdetektion" class="article-tag" rel="tag">energieeffiziente Sprachdetektion</a><a href="/tags/index.html#h3-apple-silicon" class="article-tag" rel="tag">Apple Silicon</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-03-12T21:21:21+00:00" class="meta-pub">Published 12 Mar 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Updated 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">4 min read</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Wie OpenAI Whisper und Metal Performance Shaders die Echtzeit-Spracherkennung auf macOS mit unübertroffener Geschwindigkeit und Präzision transformieren.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Einleitung.</strong> Die Spracherkennungstechnologie spielt eine entscheidende Rolle in einer breiten Palette von Anwendungen — von der Verbesserung der Barrierefreiheit bis hin zur Vereinfachung von Nutzerinteraktionen.</li>  <li><strong>Fazit.</strong> Die Integration von OpenAI Whisper und Metal Performance Shaders auf macOS stellt einen bedeutenden Fortschritt in der Echtzeit-Spracherkennungstechnologie dar.</li>  <li><strong>1. Die Entwicklung der Spracherkennung auf macOS.</strong> Die Entwicklung der Spracherkennungstechnologie auf macOS-Geräten wurde durch Fortschritte bei neuronalen Netzwerkmodellen und Hardwarebeschleunigungstechnologien vorangetrieben.</li>  <li><strong>2. OpenAI Whisper und Metal Performance Shaders nutzbar machen.</strong> Die Veröffentlichung präsentiert einen innovativen Ansatz, indem sie die fortschrittlichen Fähigkeiten von OpenAI Whisper mit der leistungsstarken Rechenleistung von MPS auf macOS kombiniert.</li></ul></aside><p>Dieser Artikel gibt einen Überblick über eine <a href="/de/publikationen/index.html" title="Forschungspublikationen und Whitepapers von Sebastien Rousseau"><strong>wissenschaftliche Veröffentlichung</strong></a>, die die Integration von OpenAI Whisper mit Metal Performance Shaders (MPS) auf macOS untersucht und einen neuen Ansatz für die Echtzeit-Spracherkennung präsentiert. OpenAI Whisper ist ein hochmodernes Modell zur automatischen Spracherkennung (ASR), das auf einem umfangreichen Datensatz vielfältiger Audioaufnahmen trainiert wurde und Sprache in mehreren Sprachen transkribieren kann. Die Kombination der fortschrittlichen neuronalen Netzwerkarchitektur von Whisper mit der GPU-Beschleunigung durch MPS ermöglicht verbesserte Geschwindigkeit und Präzision bei der Sprachverarbeitung auf dem Gerät. Dies stärkt die Privatsphäre und den Komfort der Nutzer und eröffnet zugleich neue Möglichkeiten für Entwickler, Speech-to-Text-Funktionen in Echtzeit direkt in macOS-Anwendungen zu integrieren.</p>
+<h2 id="einleitung">Einleitung <a class="heading-anchor" href="#einleitung" aria-label="Link to Einleitung">#</a></h2>
+<p>Die Spracherkennungstechnologie spielt eine entscheidende Rolle in einer breiten Palette von Anwendungen — von der Verbesserung der Barrierefreiheit bis hin zur Vereinfachung von Nutzerinteraktionen. Das Streben nach hochpräziser, latenzarmer ASR war bislang weitgehend Domäne leistungsstarker Cloud-Server, was Herausforderungen in puncto Zugänglichkeit, Datenschutz und Latenz mit sich brachte. Jüngste Forschungsarbeiten haben jedoch eine transformative Lösung eingeführt: die Integration von OpenAI Whisper mit der GPU-Beschleunigung von Metal Performance Shaders (MPS) auf macOS. Diese Synergie stellt einen bedeutenden Fortschritt bei der On-Device-Spracherkennung dar und entspricht dem wachsenden Fokus auf Privatsphäre und Datensicherheit der Nutzer.</p>
+<p><a href="https://developer.apple.com/documentation/metalperformanceshaders" title="Metal Performance Shaders - Apple Developer Documentation"><strong>Metal Performance Shaders (MPS)</strong></a> ist eine von Apple entwickelte Technologie, die hochleistungsfähige GPU-Berechnungen auf macOS-Geräten ermöglicht. Sie erlaubt Entwicklern, die Leistungsfähigkeit der GPU für parallele Verarbeitung zu nutzen und so signifikante Geschwindigkeitsverbesserungen in verschiedenen Bereichen — darunter maschinelles Lernen und Computer Vision — zu erzielen.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" fetchpriority="high">.class=&quot;m-10 w-100&quot;</p>
+<h3 id="1-die-entwicklung-der-spracherkennung-auf-macos">1. Die Entwicklung der Spracherkennung auf macOS <a class="heading-anchor" href="#1-die-entwicklung-der-spracherkennung-auf-macos" aria-label="Link to 1. Die Entwicklung der Spracherkennung auf macOS">#</a></h3>
+<p>Die Entwicklung der Spracherkennungstechnologie auf macOS-Geräten wurde durch Fortschritte bei neuronalen Netzwerkmodellen und Hardwarebeschleunigungstechnologien vorangetrieben. Traditionelle Spracherkennungssysteme standen häufig vor Herausforderungen in Bezug auf Genauigkeit, Latenz und Recheneffizienz — insbesondere bei vielfältigen Akzenten, Hintergrundgeräuschen und variierenden Aufnahmebedingungen. Mit OpenAI Whisper wurde ein neuer Maßstab für robuste und präzise Spracherkennung über eine breite Palette von Sprachen und Dialekten gesetzt, der eine geeignete Lösung für Echtzeitanwendungen bietet.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h3 id="2-openai-whisper-und-metal-performance-shaders-nutzbar-machen">2. OpenAI Whisper und Metal Performance Shaders nutzbar machen <a class="heading-anchor" href="#2-openai-whisper-und-metal-performance-shaders-nutzbar-machen" aria-label="Link to 2. OpenAI Whisper und Metal Performance Shaders nutzbar machen">#</a></h3>
+<p>Die Veröffentlichung präsentiert einen innovativen Ansatz, indem sie die fortschrittlichen Fähigkeiten von OpenAI Whisper mit der leistungsstarken Rechenleistung von MPS auf macOS kombiniert. Diese Integration wird durch die Optimierung des Whisper-Modells für die GPU mithilfe des MPS-Frameworks erreicht, das eine effiziente parallele Verarbeitung ermöglicht. Die Forscher haben Techniken wie Modellquantisierung und -beschneidung implementiert, um die Modellgröße und den Rechenaufwand zu reduzieren und gleichzeitig eine hohe Genauigkeit zu erhalten. Durch die Nutzung der parallelen Rechenfähigkeiten der GPU erzielt das System bemerkenswerte Geschwindigkeitssteigerungen — mit Transkriptionsraten, die für typische Äußerungen 8- bis 12-mal schneller sind als in Echtzeit. Dies verbessert das Nutzererlebnis durch geringere Wartezeiten und ermöglicht ein breiteres Spektrum an Echtzeitanwendungen — von Live-Untertitelung bis hin zu interaktiven sprachgesteuerten Systemen.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h3 id="3-implikationen-fur-nutzer-und-entwickler">3. Implikationen für Nutzer und Entwickler <a class="heading-anchor" href="#3-implikationen-fur-nutzer-und-entwickler" aria-label="Link to 3. Implikationen für Nutzer und Entwickler">#</a></h3>
+<p>Die Integration von Whisper und MPS auf macOS hat erhebliche Implikationen sowohl für Endnutzer als auch für Anwendungsentwickler. Nutzer erhalten ein verbessertes Erlebnis bei der Echtzeit-Spracherkennung mit nahezu sofortiger Transkription bei hoher Genauigkeit, während die Privatsphäre und Sicherheit durch die Verarbeitung auf dem Gerät gewahrt bleiben. Diese Technologie lässt sich in verschiedenen realen Szenarien einsetzen — etwa in sprachgesteuerten Anwendungen für die Heimautomatisierung, in Echtzeit-Transkriptionsdiensten für Meetings und Vorlesungen oder in Barrierefreiheitsfunktionen für Hörgeschädigte. Entwickler erhalten Zugang zu einem Werkzeugkasten zur Integration von Speech-to-Text-Funktionalität in ihre Anwendungen, mit den zusätzlichen Vorteilen von Energieeffizienz und nahtloser Python-Integration.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h3 id="4-adoption-und-innovation-vorantreiben">4. Adoption und Innovation vorantreiben <a class="heading-anchor" href="#4-adoption-und-innovation-vorantreiben" aria-label="Link to 4. Adoption und Innovation vorantreiben">#</a></h3>
+<p>Die modulare Architektur und die Python-Implementierung dieses Systems erleichtern die Integration in bestehende Anwendungen und senken die Einstiegshürde für Entwickler, die Spracherkennungsfunktionen einbinden möchten. Entwickler können jedoch Herausforderungen bei der Modellanpassung an spezifische Anwendungsfälle sowie bei der Performance-Optimierung für unterschiedliche Hardwarekonfigurationen begegnen. Die Veröffentlichung gibt Hinweise zur Bewältigung dieser Herausforderungen — etwa durch Fine-Tuning des Modells auf domänenspezifischen Daten und die Implementierung dynamischer Ressourcen-Allokationsstrategien. Darüber hinaus stellt das energieeffiziente System zur Sprachaktivitätserkennung, das eine Präzision von 94 % und einen Recall von 96 % erreicht, sicher, dass Anwendungen reaktionsfähig und präzise bleiben, ohne die Geräteressourcen zu erschöpfen. Diese Kombination an Funktionen hat das Potenzial, die Adoption unter Entwicklern voranzutreiben und weitere Innovationen im Bereich der Echtzeit-Spracherkennung anzustoßen.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="fazit">Fazit <a class="heading-anchor" href="#fazit" aria-label="Link to Fazit">#</a></h2>
+<p>Die Integration von OpenAI Whisper und Metal Performance Shaders auf macOS stellt einen bedeutenden Fortschritt in der Echtzeit-Spracherkennungstechnologie dar. Durch verbesserte Geschwindigkeit, Genauigkeit und Effizienz steigert diese Innovation das Nutzererlebnis und eröffnet neue Möglichkeiten für die Anwendungsentwicklung. Diese Forschung trägt zur fortlaufenden Weiterentwicklung von KI-Technologien bei und hat das Potenzial, weitere Entwicklungen im Bereich der On-Device-Sprachverarbeitung auf verschiedenen Plattformen anzuregen. Mit der Weiterentwicklung dieser Technologie wird sich die Art und Weise, wie Nutzer mit ihren Geräten interagieren, grundlegend verändern und digitale Kommunikation reibungsloser und barrierefreier gestalten.</p>
+<h3 id="zugang-zur-wissenschaftlichen-veroffentlichung">Zugang zur wissenschaftlichen Veröffentlichung <a class="heading-anchor" href="#zugang-zur-wissenschaftlichen-veroffentlichung" aria-label="Link to Zugang zur wissenschaftlichen Veröffentlichung">#</a></h3>
+<p>.class=&quot;card bg-light p-3 me-3 w-100&quot;
+Um mehr über die Integration von OpenAI Whisper und Metal Performance Shaders auf macOS für die Echtzeit-Spracherkennung zu erfahren, werden Leser eingeladen, die vollständige wissenschaftliche Veröffentlichung zu konsultieren. Die Arbeit bietet vertiefte technische Details, experimentelle Ergebnisse und weitere Einblicke in mögliche Anwendungen sowie künftige Richtungen dieser Technologie. Durch den Zugriff auf die vollständige Publikation erhalten Leser ein umfassendes Verständnis der Methodik, Implementierung und Implikationen dieses innovativen Ansatzes zur Echtzeit-Spracherkennung auf macOS-Geräten. <a href="/de/publikationen/index.html" title="Forschungspublikationen und Whitepapers von Sebastien Rousseau"><strong>Vollständige Veröffentlichung lesen ❯</strong></a></p>
+<aside class="author-card" aria-label="Über den Autor"><img alt="Porträt von Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/de/uber-mich/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Technologue senior dans la banque, j'écris sur l'IA appliquée, la migration ISO 20022, la cryptographie post-quantique pour les services financiers, et la transformation structurelle des paiements wholesale.</span><span class="author-credentials">Plus de 20 ans d'expérience chez HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/de/uber-mich/index.html">Vollständiges Profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Dernière révision <time datetime="2026-05-15">2026-05-15</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Verwandte Artikel</h2>
+<div class="related-grid">
+<article class="related-card"><a  class="related-media" aria-label="Àkàndé : assistant vocal propulsé par GPT pour dirigeants" tabindex="-1" title="Àkàndé : assistant vocal propulsé par GPT pour dirigeants" href="/de/2024-02-12-akande-sprachassistent-revolution-persoenlicher-und-fuehrungsassistenz/index.html"><img alt="A white, spherical modern device" src="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="akande-assistant-vocal-propulse-par-gpt-pour-dirigeants"><a title="Àkàndé : assistant vocal propulsé par GPT pour dirigeants" href="/de/2024-02-12-akande-sprachassistent-revolution-persoenlicher-und-fuehrungsassistenz/index.html">Àkàndé : assistant vocal propulsé par GPT pour dirigeants</a> <a class="heading-anchor" href="#akande-assistant-vocal-propulse-par-gpt-pour-dirigeants" aria-label="Link to Àkàndé : assistant vocal propulsé par GPT pour dirigeants">#</a></h3><p><time datetime="2024-02-12">2024-02-12</time></p></footer></article>
+<article class="related-card"><a  class="related-media" aria-label="Google Gemma : transformer le développement de l&#x27;IA open source" tabindex="-1" title="Google Gemma : transformer le développement de l&#x27;IA open source" href="/de/2024-02-26-google-gemma-transformiert-die-open-source-ki-entwicklung/index.html"><img alt="Futuristic blue spaceship with neon lights" src="https://cloudcdn.pro/stocks/images/ai-ship.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="google-gemma-transformer-le-developpement-de-l-ia-open-source"><a title="Google Gemma : transformer le développement de l&#x27;IA open source" href="/de/2024-02-26-google-gemma-transformiert-die-open-source-ki-entwicklung/index.html">Google Gemma : transformer le développement de l&#x27;IA open source</a> <a class="heading-anchor" href="#google-gemma-transformer-le-developpement-de-l-ia-open-source" aria-label="Link to Google Gemma : transformer le développement de l&#x27;IA open source">#</a></h3><p><time datetime="2024-02-26">2024-02-26</time></p></footer></article>
+<article class="related-card"><a  class="related-media" aria-label="Analyse, traduction et insights audio propulsés par l&#x27;IA" tabindex="-1" title="Analyse, traduction et insights audio propulsés par l&#x27;IA" href="/de/2024-01-29-ki-gestuetzte-audio-einblicke-analyse-uebersetzungen/index.html"><img alt="A minimalist, modern corporate office" src="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="analyse-traduction-et-insights-audio-propulses-par-l-ia"><a title="Analyse, traduction et insights audio propulsés par l&#x27;IA" href="/de/2024-01-29-ki-gestuetzte-audio-einblicke-analyse-uebersetzungen/index.html">Analyse, traduction et insights audio propulsés par l&#x27;IA</a> <a class="heading-anchor" href="#analyse-traduction-et-insights-audio-propulses-par-l-ia" aria-label="Link to Analyse, traduction et insights audio propulsés par l&#x27;IA">#</a></h3><p><time datetime="2024-01-29">2024-01-29</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</span></a><a class="post-pagination-next" href="/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/"><span class="post-pagination-label">Next</span><span class="post-pagination-title">Advancing AI with Multimodal LLMs: Insights from MM1</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/de/uber-mich/index.html">Über mich</a></li>
+              <li><a href="/de/kontakt/index.html">Kontakt</a></li>
+              <li><a href="/de/erstellt-mit-static-site-generator/index.html">Erstellt mit Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Schreiben</h2>
+            <ul>
+              <li><a href="/de/articles/index.html">Artikel</a></li>
+              <li><a href="/de/publikationen/index.html">Publikationen</a></li>
+              <li><a href="/de/etiketten/index.html">Etiketten</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Arbeit</h2>
+            <ul>
+              <li><a href="/de/projekte/index.html">Projekte</a></li>
+              <li><a href="/de/playlists/index.html">Playlists</a></li>
+              <li><a href="/de/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Reichweite</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Newsletter-Anmeldung">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — Forschungsnotizen zu Zahlungsverkehr, KI und Post-Quanten-Kryptografie. Kein Spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="sie@bank.de" />
+            <input type="hidden" name="_subject" value="Newsletter-Anmeldung — sebastienrousseau.com" />
+            <button type="submit">Abonnieren</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle Rechte vorbehalten.</span>
+          <div class="social" aria-label="Soziale Netzwerke">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau auf Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau auf Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau auf LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau auf LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau auf Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau auf Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau auf YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau auf YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/de/barrierefreiheit/index.html">Barrierefreiheit</a> ·
+            <a href="/de/datenschutz/index.html">Datenschutz</a> ·
+            <a href="/de/nutzungsbedingungen/index.html">Nutzungsbedingungen</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"de"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"de"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":852,"about":{"@type":"Thing","name":"Python","sameAs":["https://en.wikipedia.org/wiki/Python_(programming_language)","https://www.wikidata.org/wiki/Q28865"]},"headline":"Schnelle Echtzeit-Spracherkennung auf macOS: OpenAI Whisper","description":"Wie OpenAI Whisper und Metal Performance Shaders die Echtzeit-Spracherkennung auf macOS mit unübertroffener Geschwindigkeit und Präzision transformieren.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/research-paper.webp","width":"100vw","height":"100vh","caption":"Banner für die automatische Spracherkennung in Echtzeit (ASR)"},"url":"https://sebastienrousseau.com/fr/2024-03-12-echtzeit-spracherkennung-auf-macos-mit-openai-whisper/","datePublished":"2024-03-12T21:21:21+00:00","dateModified":"2026-05-11","inLanguage":"de","keywords":"OpenAI Whisper, Metal Performance Shaders, Spracherkennung macOS, Echtzeit-Transkription, Sprachaktivitätserkennung, GPU-Beschleunigung, Python-Integration, Speech-to-Text macOS, energieeffiziente Sprachdetektion, Apple Silicon","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/fr/2024-03-12-echtzeit-spracherkennung-auf-macos-mit-openai-whisper/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"de"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/fr/"},{"@type":"ListItem","position":3,"name":"Schnelle Echtzeit-Spracherkennung auf macOS: OpenAI Whisper","item":"https://sebastienrousseau.com/fr/2024-03-12-echtzeit-spracherkennung-auf-macos-mit-openai-whisper/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Suchen">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Suchen</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Suchen">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="In der Dokumentation suchen..." autocomplete="off" aria-label="Suchen"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> schließen</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigieren</span><span><kbd>Enter</kbd> öffnen</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>
