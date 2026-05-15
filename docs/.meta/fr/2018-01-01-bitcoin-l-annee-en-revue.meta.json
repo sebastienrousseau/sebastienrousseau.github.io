@@ -1,11 +1,11 @@
 {
-  "description": "Bitcoin : un système de paiement électronique pair-à-pair (P2P ECS) qui peut révolutionner la manière dont les gens transactent en ligne.",
-  "locale": "fr_FR",
-  "title": "Bitcoin : l'année en revue de la première cryptomonnaie",
-  "banner_alt": "Un tas de pièces d'or et d'argent posées sur une table",
   "date": "January 1, 2018",
-  "language": "fr",
-  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
+  "subtitle": "Un système de paiement électronique pair-à-pair qui a redéfini l'argent",
   "keywords": "Bitcoin, cryptomonnaie, blockchain, P2P, double dépense, minage, proof-of-work, ETF, Satoshi Nakamoto, finance décentralisée",
-  "subtitle": "Un système de paiement électronique pair-à-pair qui a redéfini l'argent"
+  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
+  "banner_alt": "Un tas de pièces d'or et d'argent posées sur une table",
+  "locale": "fr_FR",
+  "description": "Bitcoin : un système de paiement électronique pair-à-pair (P2P ECS) qui peut révolutionner la manière dont les gens transactent en ligne.",
+  "title": "Bitcoin : l'année en revue de la première cryptomonnaie",
+  "language": "fr"
 }

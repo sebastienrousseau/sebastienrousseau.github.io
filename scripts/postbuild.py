@@ -1742,9 +1742,10 @@ def build_post_nav_index(pages: list[Path]) -> dict[str, tuple[tuple[str, str] |
         slug = p.parent.name
         if not _DATED_SLUG_RE.match(slug):
             continue
-        # Skip French translations — they share the slug with the English
-        # original. Including both would double-count and yield wrong nav.
-        if p.parent.parent.name == "fr":
+        # Skip non-EN translations — they share the (EN-)slug with the English
+        # original at the data level, but live under /<lang>/<lang-slug>/.
+        # Including them would double-count and yield wrong nav.
+        if p.parent.parent.name in _all_active_non_en_langs():
             continue
         html = p.read_text(encoding="utf-8", errors="ignore")
         if '"@type":"BlogPosting"' not in html:

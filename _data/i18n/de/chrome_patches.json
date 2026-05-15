@@ -26,7 +26,7 @@
     ["<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>", "<li><a href=\"/de/publikationen/index.html\">Publikationen</a></li>"],
     ["<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>", "<li><a href=\"/de/themen/index.html\">Themen</a></li>"],
     ["<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>", "<li><a href=\"/de/projekte/index.html\">Projekte</a></li>"],
-    ["<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>", "<li><a href=\"/de/articles/index.html\">Artikel</a></li>"],
+    ["<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>", "<li><a href=\"/de/artikel/index.html\">Artikel</a></li>"],
     ["<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>", "<li><a href=\"/de/kontakt/index.html\">Kontakt</a></li>"],
     ["<a class=\"?ap-brand\"? href=\"?/index\\.html\"?", "<a class=\"ap-brand\" href=\"/de/index.html\""],
     ["<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>", "<li><a href=\"/de/playlists/index.html\">Playlists</a></li>"],
@@ -44,7 +44,7 @@
     ["<a href=\"?/projects/index\\.html\"?>Projects</a>", "<a href=\"/de/projekte/index.html\">Projekte</a>"],
     ["<a href=\"?/playlists/index\\.html\"?>Playlists</a>", "<a href=\"/de/playlists/index.html\">Playlists</a>"],
     ["<a href=\"?/contact/index\\.html\"?>Contact</a>", "<a href=\"/de/kontakt/index.html\">Kontakt</a>"],
-    ["<a href=\"?/articles/index\\.html\"?>Articles</a>", "<a href=\"/de/articles/index.html\">Artikel</a>"],
+    ["<a href=\"?/articles/index\\.html\"?>Articles</a>", "<a href=\"/de/artikel/index.html\">Artikel</a>"],
 
     ["aria-label=\"Social links\"", "aria-label=\"Soziale Netzwerke\""],
     ["aria-label=\"Sebastien Rousseau on ", "aria-label=\"Sebastien Rousseau auf "],
