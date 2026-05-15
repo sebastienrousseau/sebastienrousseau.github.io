@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ar-SA" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 15 Feb 2018 18:18:18 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 15 Feb 2018 18:18:18 +0000" id="last-modified" />
+    <title>صناعة منصّة Express Transaction Credits — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="تطوير إطارٍ شامل للجيل المقبل من التوكنات المتوافقة مع Ethereum Request for Comment عبر معيار ERC-223.">
+<meta name="keywords" content="Ethereum, ERC-223, ERC-20, EXTC, Express Transaction Credits, blockchain, المدفوعات, التوكنات, القروض, التمويل اللامركزي">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IxnV+xTx7wVII2MlMdYZWbjG21qD2J+3jDFINbPO53o=' 'sha256-QclfxgnbDr1VymtaO7sxcAinYNsfoIGR97QFXq2CF0c=' 'sha256-YGIwp4j+7gGuhQhDXYdJhosE6VhM7wucN7XnFi3eYaU=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    <link rel="alternate" href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/index.html" hreflang="en" />
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ar/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b2a7b255e05cbd1.css" crossorigin="anonymous" integrity="sha256-VdEMoj4KuWEXE74XtoAwuq5lF2P9UK0jJE+s1mJrYfg=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="تغذية Atom" href="/ar/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="صناعة منصّة Express Transaction Credits — Sebastien Rousseau">
+<meta property="og:description" content="تطوير إطارٍ شامل للجيل المقبل من التوكنات المتوافقة مع Ethereum Request for Comment عبر معيار ERC-223.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/ar/2018-02-15-the-making-of-the-express-transaction-credits-platform/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="صناعة منصّة Express Transaction Credits — Sebastien Rousseau">
+<meta name="twitter:description" content="تطوير إطارٍ شامل للجيل المقبل من التوكنات المتوافقة مع Ethereum Request for Comment عبر معيار ERC-223.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/ar/2018-02-15-the-making-of-the-express-transaction-credits-platform/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2018-02-15-creation-de-la-plateforme-express-transaction-credits/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2018-02-15-the-making-of-the-express-transaction-credits-platform/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2018-02-15-entstehung-der-express-transaction-credits-plattform/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2018-02-15-the-making-of-the-express-transaction-credits-platform/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">تخطّى إلى المحتوى الرئيسي</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="تبديل التنقل" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ar/index.html" aria-label="الصفحة الرئيسية لسيباستيان روسو">
+          <span itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="التنقل الرئيسي">
+          <ul class="ap-menu">
+            <li><a href="/ar/hawla/index.html">حول</a></li>
+            <li><a href="/ar/maqalat/index.html" aria-current="page" class="active">المقالات</a></li>
+            <li><a href="/ar/buhuth/index.html">الأبحاث</a></li>
+            <li><a href="/ar/mawadi/index.html">المواضيع</a></li>
+            <li><a href="/ar/mashari/index.html">المشاريع</a></li>
+            <li><a href="/ar/qawaim/index.html">قوائم التشغيل</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="تفعيل الوضع الداكن" aria-pressed="false" title="تبديل المظهر">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="بحث (Cmd أو Ctrl + K)" title="بحث (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="اللغة">
+            <button type="button" class="ap-lang-toggle" aria-label="AR، تغيير اللغة" aria-expanded="false" aria-haspopup="menu" title="تغيير اللغة">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">AR</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="قريبًا">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="قريبًا">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <span class="ap-lang-item" data-lang="es" aria-disabled="true" title="قريبًا">🇪🇸 Español</span>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="قريبًا">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="قريبًا">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="قريبًا">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="قريبًا">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="قريبًا">🇮🇩 Indonesia</span>
+                <span class="ap-lang-item" data-lang="it" aria-disabled="true" title="قريبًا">🇮🇹 Italiano</span>
+                <span class="ap-lang-item" data-lang="ja" aria-disabled="true" title="قريبًا">🇯🇵 日本語</span>
+                <span class="ap-lang-item" data-lang="ko" aria-disabled="true" title="قريبًا">🇰🇷 한국어</span>
+                <span class="ap-lang-item" data-lang="nl" aria-disabled="true" title="قريبًا">🇳🇱 Nederlands</span>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="قريبًا">🇵🇱 Polski</span>
+                <span class="ap-lang-item" data-lang="pt-br" aria-disabled="true" title="قريبًا">🇧🇷 Português</span>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="قريبًا">🇷🇴 Română</span>
+                <span class="ap-lang-item" data-lang="ru" aria-disabled="true" title="قريبًا">🇷🇺 Русский</span>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="قريبًا">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="قريبًا">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="قريبًا">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="قريبًا">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="قريبًا">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="قريبًا">🇳🇬 Yorùbá</span>
+                <span class="ap-lang-item" data-lang="zh-hans" aria-disabled="true" title="قريبًا">🇨🇳 简体中文</span>
+                <span class="ap-lang-item" data-lang="zh-hant" aria-disabled="true" title="قريبًا">🇹🇼 繁體中文</span>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ar/ittisal/index.html" aria-label="تواصل معي">تواصل معي ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="تبديل التنقل">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>صناعة منصّة Express Transaction Credits</h1>
+      <p class="sub">إطارٌ شامل للجيل المقبل من توكنات ERC-223</p>
+    <nav class="article-tags" aria-label="المواضيع"><a href="/tags/index.html#h3-ethereum" class="article-tag" rel="tag">Ethereum</a><a href="/tags/index.html#h3-erc-223" class="article-tag" rel="tag">ERC-223</a><a href="/tags/index.html#h3-erc-20" class="article-tag" rel="tag">ERC-20</a><a href="/tags/index.html#h3-extc" class="article-tag" rel="tag">EXTC</a><a href="/tags/index.html#h3-express-transaction-credits" class="article-tag" rel="tag">Express Transaction Credits</a><a href="/tags/index.html#h3-blockchain" class="article-tag" rel="tag">blockchain</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">المدفوعات</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">التوكنات</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">القروض</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">التمويل اللامركزي</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-02-15T18:18:18+00:00" class="meta-pub">نُشر في 15 Feb 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">حُدّث في 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="وقت القراءة المقدّر">2 دقيقة قراءة</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> تطوير إطارٍ شامل للجيل المقبل من التوكنات المتوافقة مع Ethereum Request for Comment عبر معيار ERC-223.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>صناعة منصّة Express Transaction Credits.</strong> تعود أصول منصّة Express Transaction Credits (EXTC) إلى عام 2018، وهي متجذّرة في إدراك حدود المنظومات المالية التقليدية.</li>  <li><strong>الفكرة.</strong> يقبع في قلب منصّة EXTC معيار Ethereum Request for Comment (ERC) 223، وهو امتدادٌ لمعيار التوكن ERC20.</li>  <li><strong>الأثر.</strong> يمتدّ أثر EXTC إلى ما هو أبعد من سماتها التقنية.</li>  <li><strong>الحوافز.</strong> يتوقّف نجاح أيّ منصّة ماليّة على تبنّي المستخدمين ومشاركتهم.</li></ul></aside><p><img src="https://cloudcdn.pro/stocks/images/rawpixel-com-369782.webp" alt="أعمدة ضخمة بيضاء"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<h2 id="express-transaction-credits">صناعة منصّة Express Transaction Credits <a class="heading-anchor" href="#express-transaction-credits" aria-label="رابط إلى صناعة منصّة Express Transaction Credits">#</a></h2>
+<h3 id="">روّاد عصرٍ جديد للخدمات المالية <a class="heading-anchor" href="#" aria-label="رابط إلى روّاد عصرٍ جديد للخدمات المالية">#</a></h3>
+<p>تعود أصول منصّة Express Transaction Credits (EXTC) إلى عام 2018، وهي متجذّرة في إدراك حدود المنظومات المالية التقليدية. ومن أبرز التحدّيات التأخّر في المعاملات، وانخراط الوسطاء، وقصور سهولة الوصول.</p>
+<p>وقد انطلق من هذا الإدراك تطوير منصّةٍ لامركزية للتبادل بهدف رفع هذه الحواجز. وتسعى المنصّة إلى تمكين المستخدمين من إجراء معاملاتٍ فائقة السرعة بالعملات الورقية أو المشفّرة أو التوكنات المتوافقة.</p>
+<h2 id="">الفكرة <a class="heading-anchor" href="#" aria-label="رابط إلى الفكرة">#</a></h2>
+<h3 id="erc223-express-transaction-credits">استكشاف معيار ERC223 ومنصّة Express Transaction Credits <a class="heading-anchor" href="#erc223-express-transaction-credits" aria-label="رابط إلى استكشاف معيار ERC223 ومنصّة Express Transaction Credits">#</a></h3>
+<p>يقبع في قلب منصّة EXTC معيار Ethereum Request for Comment (ERC) 223، وهو امتدادٌ لمعيار التوكن ERC20. وقد جاء هذا الاختيار مدفوعاً بالرغبة في تعزيز الأمان والوظائف. وتهدف المنصّة إلى معالجة هذه الإشكاليات بالاستفادة من معيار ERC-223 وتقديم إطارٍ شامل للجيل المقبل من التوكنات المتوافقة معه.</p>
+<p>وتستثمر EXTC قدرات معيار ERC223، بما يضمن التوافق مع طيفٍ متنوّع من العقود الذكية وواجهات البرمجة (APIs) ضمن منظومة Ethereum. وقد طُرح توكن Express Transaction Credits (EXTC) تجسيداً لهذا المعيار، بمجموعةٍ محدّدة من السمات.</p>
+<p>كانت الفكرة إنشاء توكن بمزايا متينة:</p>
+<ul>
+<li><strong>الاسم والرمز والعدد العشري:</strong> تتحدّد هويّة التوكن باسمه ورمزه، فيما يضمن مُعامِل العدد العشري دقّة تمثيل القيمة.</li>
+<li><strong>المعروض الإجمالي:</strong> يُمثّل المعروض الإجمالي لـ EXTC مقياساً محوريّاً، إذ يعكس مجموع التوكنات المتداولة.</li>
+<li><strong>الرصيد والتحويل:</strong> يستطيع المستخدمون الاطّلاع على رصيدهم من التوكنات وإجراء تحويلاتٍ إلى عناوين أخرى.</li>
+<li><strong>التوافق مع ERC223:</strong> يلتزم عقد التوكن بمعيار ERC223، ما يُقدّم وظائف متقدّمة مقارنةً بسابقه ERC20.</li>
+</ul>
+<h2 id="">الأثر <a class="heading-anchor" href="#" aria-label="رابط إلى الأثر">#</a></h2>
+<h3 id="">إعادة تعريف المعاملات المالية <a class="heading-anchor" href="#" aria-label="رابط إلى إعادة تعريف المعاملات المالية">#</a></h3>
+<p>يمتدّ أثر EXTC إلى ما هو أبعد من سماتها التقنية. فبتيسيرها القروض الفورية والمدفوعات السريعة والإيداعات العاجلة، تُعزّز المنصّة كفاءة المعاملات المالية تعزيزاً ملحوظاً. وقد ولّى زمن انتظار مقاصّة الأموال أو الموافقة على القروض. فمع EXTC، تُنجَز المعاملات في الزمن الحقيقي، فتُمكّن الأفراد والشركات على حدٍّ سواء.</p>
+<p>وتفتح هذه المنصّة آفاقاً للقروض الصغرى والمعاملات العابرة للحدود وخدماتٍ ماليّةٍ أيسر تناولاً لشريحة غير المتعاملين مع المصارف. علاوةً على ذلك، تُلغي الطبيعة اللامركزية لـ EXTC الوسطاء، ما يخفض الرسوم المرتبطة بهم ويُعزّز الأمان.</p>
+<h2 id="">الحوافز <a class="heading-anchor" href="#" aria-label="رابط إلى الحوافز">#</a></h2>
+<h3 id="">حفز التبنّي والمشاركة <a class="heading-anchor" href="#" aria-label="رابط إلى حفز التبنّي والمشاركة">#</a></h3>
+<p>يتوقّف نجاح أيّ منصّة ماليّة على تبنّي المستخدمين ومشاركتهم. ولا تختلف EXTC في ذلك. ولحفز المستخدمين على الانخراط في المنصّة، تُوظَّف استراتيجياتٌ عدّة:</p>
+<ul>
+<li><strong>السرعة والكفاءة:</strong> يقبع الحافز الأكبر في سرعة المنصّة وكفاءتها. فالمستخدمون الباحثون عن مدفوعاتٍ أو قروضٍ سريعة ينجذبون بطبعهم إلى منظومةٍ تُلبّي احتياجاتهم بسرعة.</li>
+<li><strong>الوفر في الكلفة:</strong> تُسهم الرسوم المنخفضة مقارنةً بالمنظومات المالية التقليدية في جعل EXTC خياراً جاذباً للأفراد والشركات الحريصين على الكلفة.</li>
+<li><strong>الوصول العالمي:</strong> تجذب الطبيعة العابرة للحدود للمنصّة المستخدمين الذين يحتاجون إلى معاملاتٍ دولية دون مشقّة تحويل العملات.</li>
+<li><strong>منفعة التوكن:</strong> تتعدّى توكنات EXTC نطاق المعاملات. فيمكن دمجها في تطبيقاتٍ لامركزية (DApps)، بل وأن تخدم بوصفها مكافآت أو ضماناتٍ داخل المنظومة.</li>
+<li><strong>الشمول المالي:</strong> باستهدافها شريحة غير المتعاملين مع المصارف، تفتح EXTC أبواب الخدمات المالية أمام مَن كانوا مُستبعدين سابقاً.</li>
+</ul>
+<p>وختاماً، تُمثّل منصّة Express Transaction Credits (EXTC) تحوّلاً نموذجياً في عالم المعاملات المالية.</p>
+<p>وبالاستفادة من معيار ERC223 وتقديم سرعةٍ وأمانٍ وسهولة وصولٍ لا نظير لها، تمهّد EXTC الطريق نحو مستقبلٍ تكون فيه الخدمات المالية عالميّةً وشاملةً بحقّ.</p>
+<p>ومع اكتساب المنصّة زخماً وتبنّياً، يَعِد أثرها في المشهد المالي بأن يكون ثوريّاً، يتجاوز الحدود ويُديمقرط الوصول إلى الفرص الاقتصادية.</p>
+<p>سواءٌ كنتَ من عشّاق التقنية، أو محترفاً في المالية، أو مجرّد فضوليٍّ تجاه مستقبل التمويل، فإنّ EXTC منصّةٌ تدعو إلى الاستكشاف والانخراط.</p>
+<aside class="author-card" aria-label="نبذة عن الكاتب"><img alt="صورة سيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/ar/hawla/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي كبير يكتب عن الذكاء الاصطناعي التطبيقي، وهجرة ISO 20022، والتشفير ما بعد الكمي للخدمات المالية، والتحوّل الهيكلي للمدفوعات بالجملة.</span><span class="author-credentials">أكثر من 20 عامًا في HSBC Commercial &amp; Investment Bank وPayPal وBarclays وShazam وAKQA وVirgin Group. <a href="/ar/hawla/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">آخر مراجعة <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">قراءات ذات صلة</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/ar/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" class="related-media" aria-label="RustLogs (RLG): مكتبة تسجيل منظَّمة للغة Rust" tabindex="-1"><img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="rustlogs-rlg-rust"><a href="https://sebastienrousseau.com/ar/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): مكتبة تسجيل منظَّمة للغة Rust</a> <a class="heading-anchor" href="#rustlogs-rlg-rust" aria-label="رابط إلى RustLogs (RLG): مكتبة تسجيل منظَّمة للغة Rust">#</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ar/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html" class="related-media" aria-label="تبسيط تطوير مكتبات Rust عبر توليد الشفرة" tabindex="-1"><img alt="Giant white pillars" src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="rust"><a href="https://sebastienrousseau.com/ar/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html">تبسيط تطوير مكتبات Rust عبر توليد الشفرة</a> <a class="heading-anchor" href="#rust" aria-label="رابط إلى تبسيط تطوير مكتبات Rust عبر توليد الشفرة">#</a></h3><p><time datetime="2023-10-26">2023-10-26</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ar/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html" class="related-media" aria-label="Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري" tabindex="-1"><img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="alien-studio"><a href="https://sebastienrousseau.com/ar/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html">Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري</a> <a class="heading-anchor" href="#alien-studio" aria-label="رابط إلى Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري">#</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="ترقيم المقال"><a class="post-pagination-prev" href="/ar/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/"><span class="post-pagination-label">السابق</span><span class="post-pagination-title">Unveiling a new Cryptocurrency and Faster Payment Solution</span></a><a class="post-pagination-next" href="/ar/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/"><span class="post-pagination-label">التالي</span><span class="post-pagination-title">Automating ISO 20022 Payment Files Creation with Pain001</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ar/hawla/index.html">حول</a></li>
+              <li><a href="/ar/ittisal/index.html">اتصل</a></li>
+              <li><a href="/ar/masnu-bi-static-site-generator/index.html">مصنوع بواسطة Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">الكتابة</h2>
+            <ul>
+              <li><a href="/ar/maqalat/index.html">المقالات</a></li>
+              <li><a href="/ar/buhuth/index.html">الأبحاث</a></li>
+              <li><a href="/ar/wusum/index.html">الوسوم</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">الأعمال</h2>
+            <ul>
+              <li><a href="/ar/mashari/index.html">المشاريع</a></li>
+              <li><a href="/ar/qawaim/index.html">قوائم التشغيل</a></li>
+              <li><a href="/ar/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">تواصل</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="التسجيل في النشرة">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — ملاحظات بحثية حول المدفوعات والذكاء الاصطناعي والتشفير ما بعد الكمي. بدون رسائل مزعجة.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="antum@bank.com" />
+            <input type="hidden" name="_subject" value="الاشتراك في النشرة الإخبارية — sebastienrousseau.com" />
+            <button type="submit">اشترك</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© حقوق النشر 2007 - 2026 - سيباستيان روسو. جميع الحقوق محفوظة.</span>
+          <div class="social" aria-label="روابط التواصل الاجتماعي">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="سيباستيان روسو على Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="سيباستيان روسو على Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="سيباستيان روسو على LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="سيباستيان روسو على LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="سيباستيان روسو على Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="سيباستيان روسو على Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="سيباستيان روسو على YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="سيباستيان روسو على YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ar/wusul/index.html">إمكانية الوصول</a> ·
+            <a href="/ar/khusoosiya/index.html">الخصوصية</a> ·
+            <a href="/ar/shurut/index.html">الشروط</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ar"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ar"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":521,"about":{"@type":"Thing","name":"Ethereum","sameAs":["https://en.wikipedia.org/wiki/Ethereum","https://www.wikidata.org/wiki/Q21825854","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]},"mentions":[{"@type":"Thing","name":"ERC-20","sameAs":["https://en.wikipedia.org/wiki/Ethereum#Tokens","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]},{"@type":"Thing","name":"Blockchain","sameAs":["https://en.wikipedia.org/wiki/Blockchain","https://www.wikidata.org/wiki/Q20514253","https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"]}],"headline":"صناعة منصّة Express Transaction Credits","description":"تطوير إطارٍ شامل للجيل المقبل من التوكنات المتوافقة مع Ethereum Request for Comment عبر معيار ERC-223.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp","width":"100vw","height":"100vh","caption":"أعمدة ضخمة بيضاء"},"url":"https://sebastienrousseau.com/ar/2018-02-15-the-making-of-the-express-transaction-credits-platform/","datePublished":"2018-02-15T18:18:18+00:00","dateModified":"2026-05-11","inLanguage":"ar","keywords":"Ethereum, ERC-223, ERC-20, EXTC, Express Transaction Credits, blockchain, المدفوعات, التوكنات, القروض, التمويل اللامركزي","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ar/2018-02-15-the-making-of-the-express-transaction-credits-platform/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ar"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ar/"},{"@type":"ListItem","position":3,"name":"صناعة منصّة Express Transaction Credits","item":"https://sebastienrousseau.com/ar/2018-02-15-the-making-of-the-express-transaction-credits-platform/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="بحث">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>بحث</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="بحث">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="البحث في المحتوى..." autocomplete="off" aria-label="بحث"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> إغلاق</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> تنقل</span><span><kbd>Enter</kbd> فتح</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

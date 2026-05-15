@@ -121,6 +121,29 @@ _TITLE_RE = re.compile(r'<title>[^<]*</title>', re.IGNORECASE)
 _DESC_META_RE = re.compile(r'(<meta\s+name="description"\s+content=")[^"]*(")', re.IGNORECASE)
 _KW_META_RE = re.compile(r'(<meta\s+name="keywords"\s+content=")[^"]*(")', re.IGNORECASE)
 _HTML_LANG_RE = re.compile(r'(<html\b[^>]*\blang=)"?[^"\s>]*"?', re.IGNORECASE)
+_HTML_DIR_RE = re.compile(r'(<html\b[^>]*?)\s+dir="[^"]*"', re.IGNORECASE)
+_HTML_OPEN_RE = re.compile(r'(<html\b[^>]*?)(>)', re.IGNORECASE)
+
+
+def _is_current_rtl() -> bool:
+    """Return True if the current ``LANG_CODE`` is an RTL language
+    (per ``_lang_registry.LANGUAGES``)."""
+    return any(
+        lg.code == LANG_CODE and lg.rtl
+        for lg in _lang_registry.LANGUAGES
+    )
+
+
+def _set_html_lang(shell: str) -> str:
+    """Patch the ``<html>`` element: set the lang attribute to the
+    current BCP-47 tag, and add/strip ``dir="rtl"`` based on the
+    language's RTL flag. Drops any existing dir before re-adding the
+    right one — idempotent across re-runs."""
+    shell = _HTML_LANG_RE.sub(rf'\g<1>"{LANG_BCP47}"', shell, count=1)
+    shell = _HTML_DIR_RE.sub(r"\g<1>", shell, count=1)
+    if _is_current_rtl():
+        shell = _HTML_OPEN_RE.sub(r'\g<1> dir="rtl"\g<2>', shell, count=1)
+    return shell
 _OG_TITLE_RE = re.compile(r'(<meta\s+property="og:title"\s+content=")[^"]*(")', re.IGNORECASE)
 _OG_DESC_RE = re.compile(r'(<meta\s+property="og:description"\s+content=")[^"]*(")', re.IGNORECASE)
 _OG_URL_RE = re.compile(r'(<meta\s+property="og:url"\s+content=")[^"]*(")', re.IGNORECASE)
@@ -1106,7 +1129,7 @@ def render_translation(slug: str, fm: dict[str, str], body_md: str) -> str | Non
     url_fr = f"{BASE}/{LANG_CODE}/{slug_fr}/"
 
     # html lang
-    shell = _HTML_LANG_RE.sub(rf'\g<1>"{LANG_BCP47}"', shell, count=1)
+    shell = _set_html_lang(shell)
     # head meta
     shell = _TITLE_RE.sub(f'<title>{_html.escape(page_title)}</title>', shell, count=1)
     shell = _DESC_META_RE.sub(rf'\g<1>{_html.escape(description, quote=True)}\g<2>', shell, count=1)
@@ -1303,7 +1326,7 @@ def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
         rf'\g<1>{_html.escape(_h["heroH1"])}\g<2>{_html.escape(_h["heroSub"])}\g<3>',
         shell, count=1,
     )
-    shell = _HTML_LANG_RE.sub(rf'\g<1>"{LANG_BCP47}"', shell, count=1)
+    shell = _set_html_lang(shell)
     _articles_hub_titles = {
         "fr": "Articles en français — Sebastien Rousseau",
         "de": "Artikel auf Deutsch — Sebastien Rousseau",
@@ -1382,7 +1405,7 @@ def render_home() -> str | None:  # noqa: C901 — orchestrates the FR home fork
     desc = _home_descs.get(LANG_CODE, _home_descs["fr"])
     url_fr = f"{BASE}/{LANG_CODE}/"
 
-    shell = _HTML_LANG_RE.sub(rf'\g<1>"{LANG_BCP47}"', shell, count=1)
+    shell = _set_html_lang(shell)
     shell = _TITLE_RE.sub(f'<title>{_html.escape(title)}</title>', shell, count=1)
     shell = _DESC_META_RE.sub(rf'\g<1>{_html.escape(desc, quote=True)}\g<2>', shell, count=1)
     shell = _OG_TITLE_RE.sub(rf'\g<1>{_html.escape(title, quote=True)}\g<2>', shell, count=1)
@@ -1564,7 +1587,7 @@ def render_static_translation(slug: str) -> str | None:  # noqa: C901 — per-pa
     fr_slug_str = STATIC_SLUG_FR.get(slug, slug)
     url_fr = f"{BASE}/{LANG_CODE}/{fr_slug_str}/"
 
-    shell = _HTML_LANG_RE.sub(rf'\g<1>"{LANG_BCP47}"', shell, count=1)
+    shell = _set_html_lang(shell)
     shell = _TITLE_RE.sub(f'<title>{_html.escape(title)}</title>', shell, count=1)
     shell = _DESC_META_RE.sub(rf'\g<1>{_html.escape(description, quote=True)}\g<2>', shell, count=1)
     if keywords:
@@ -1756,7 +1779,7 @@ def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:  # noqa: C901 
     topics_slug_lang = STATIC_SLUG_FR.get("topics", "topics")
     url_fr = f"{BASE}/{LANG_CODE}/{topics_slug_lang}/{topic_slug}/"
 
-    shell = _HTML_LANG_RE.sub(rf'\g<1>"{LANG_BCP47}"', shell, count=1)
+    shell = _set_html_lang(shell)
     shell = _TITLE_RE.sub(f'<title>{_html.escape(page_title)}</title>', shell, count=1)
     if lede:
         shell = _DESC_META_RE.sub(rf'\g<1>{_html.escape(lede, quote=True)}\g<2>', shell, count=1)
