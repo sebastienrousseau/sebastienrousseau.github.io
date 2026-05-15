@@ -35,12 +35,30 @@ from markdown_it import MarkdownIt
 
 sys.path.insert(0, str(Path(__file__).parent))
 import _lang_registry  # script-mode sibling import
-from _fr_slugs import EN_TO_FR, FR_TO_EN, fr_slug
 
 PUBLIC = Path("public")
-SRC = Path("_posts/fr")
-OUT = PUBLIC / "fr"
 BASE = "https://sebastienrousseau.com"
+
+# Lang-parametric globals — rebound per-language by ``main()`` before
+# calling the render functions. Default values target FR so module-load
+# stays backward-compatible while the loop drives each active non-EN
+# language end-to-end.
+LANG_CODE = "fr"
+LANG_BCP47 = "fr-FR"
+LANG_LOCALE = "fr_FR"
+SRC = Path(f"_posts/{LANG_CODE}")
+OUT = PUBLIC / LANG_CODE
+
+# Slug maps used by the render functions and by helpers throughout.
+# EN_TO_FR / FR_TO_EN / fr_slug names preserved for diff minimality;
+# rebound per-language in ``main()``.
+_articles_map = _lang_registry.load_slugs(LANG_CODE)["articles"]
+EN_TO_FR: dict[str, str] = dict(_articles_map)
+FR_TO_EN: dict[str, str] = {v: k for k, v in _articles_map.items()}
+
+
+def fr_slug(en_slug: str) -> str:
+    return EN_TO_FR.get(en_slug, en_slug)
 
 _DATED_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-")
 
@@ -1817,10 +1835,56 @@ def _render_topic_subpage_fr(topic_slug: str, shell: str) -> str:  # noqa: C901 
     return shell
 
 
-def main() -> None:
+def _bind_lang(code: str) -> None:
+    """Rebind every per-language module-level global to ``code``'s
+    values. Called by ``main()`` before each render pass.
+
+    Globals reassigned: LANG_CODE / LANG_BCP47 / LANG_LOCALE / SRC / OUT /
+    EN_TO_FR / FR_TO_EN / I18N_FR / TAKEAWAY_LABELS_EN_TO_FR /
+    STATIC_SLUG_FR / STATIC_PAGES_FR / TOPIC_FR_LABELS / HOME_FR_PATCHES /
+    STATIC_BODIES_FR / STATIC_BODY_PATCHES / CHROME_PATCHES /
+    _CHROME_PATCHES_COMPILED / _HOME_FR_COMPILED. (Names carry the
+    legacy ``_FR`` suffix for diff minimality; semantically they hold
+    the current ``code``'s data.)
+    """
+    global LANG_CODE, LANG_BCP47, LANG_LOCALE, SRC, OUT
+    global EN_TO_FR, FR_TO_EN
+    global I18N_FR, TAKEAWAY_LABELS_EN_TO_FR
+    global STATIC_SLUG_FR, STATIC_PAGES_FR, TOPIC_FR_LABELS
+    global HOME_FR_PATCHES, STATIC_BODIES_FR, STATIC_BODY_PATCHES
+    global CHROME_PATCHES, _CHROME_PATCHES_COMPILED, _HOME_FR_COMPILED
+    lang = next(lg for lg in _lang_registry.LANGUAGES if lg.code == code)
+    LANG_CODE = code
+    LANG_BCP47 = lang.bcp47
+    LANG_LOCALE = lang.og_locale
+    SRC = Path(f"_posts/{code}")
+    OUT = PUBLIC / code
+    slugs = _lang_registry.load_slugs(code)
+    articles = slugs.get("articles", {})
+    EN_TO_FR = dict(articles)
+    FR_TO_EN = {v: k for k, v in articles.items()}
+    I18N_FR = _lang_registry.load_labels(code)
+    TAKEAWAY_LABELS_EN_TO_FR = _lang_registry.load_takeaway_labels(code)
+    STATIC_SLUG_FR = slugs.get("static", {})
+    STATIC_PAGES_FR = _lang_registry.load_static_pages(code)
+    TOPIC_FR_LABELS = _lang_registry.load_topics(code)
+    HOME_FR_PATCHES = list(_lang_registry.load_home_patches(code))
+    STATIC_BODIES_FR = dict(_lang_registry.load_static_bodies(code))
+    STATIC_BODY_PATCHES = list(_lang_registry.load_static_patches(code))
+    CHROME_PATCHES = [
+        *_lang_registry.build_chrome_patches(code),
+        *_lang_registry.load_chrome_patches_inline(code),
+    ]
+    _CHROME_PATCHES_COMPILED = [(re.compile(p), r) for p, r in CHROME_PATCHES]
+    _HOME_FR_COMPILED = [(re.compile(p), r) for p, r in HOME_FR_PATCHES]
+
+
+def _render_one_lang(code: str) -> int:
+    """Render every page for one language. Returns total page count."""
+    _bind_lang(code)
     if not SRC.is_dir():
-        print("build_translations: _posts/fr not found — nothing to do")
-        return
+        print(f"build_translations: _posts/{code} not found — nothing to do for {code}")
+        return 0
     entries: list[dict[str, str]] = []
     written = 0
     for md in sorted(SRC.glob("*.md")):
@@ -1882,8 +1946,9 @@ def main() -> None:
     static_written = write_static_translations()
     written += static_written
 
-    # FR search index — visible text of every FR page, loaded by the
-    # Shokunin search palette when the visitor is in /fr/.
+    # Per-language search index — visible text of every rendered page,
+    # loaded by the Shokunin search palette when the visitor is in
+    # /<code>/.
     search_entries = _build_fr_search_index()
     (OUT / "search-index.json").write_text(
         _json.dumps({"entries": search_entries}, ensure_ascii=False, separators=(",", ":")),
@@ -1891,14 +1956,34 @@ def main() -> None:
     )
 
     print(
-        f"build_translations: wrote {written} page(s) "
+        f"build_translations[{code}]: wrote {written} page(s) "
         f"({len(entries)} translation(s) + hub + {static_written} static page(s)) "
-        f"+ FR search index ({len(search_entries)} entries)"
+        f"+ search index ({len(search_entries)} entries)"
     )
+    return written
+
+
+def main() -> None:
+    """Render every active non-EN language. Each language is independent;
+    a failure in one shouldn't block the others, but a structural error
+    (missing data file) should still surface — we don't swallow
+    exceptions, so the build fails fast.
+    """
+    targets = [
+        lg.code for lg in _lang_registry.LANGUAGES
+        if lg.active and lg.code != "en"
+    ]
+    if not targets:
+        print("build_translations: no active non-EN languages")
+        return
+    total = 0
+    for code in targets:
+        total += _render_one_lang(code)
+    print(f"build_translations: {len(targets)} language(s) rendered, {total} page(s) total")
 
 
 # ---------------------------------------------------------------------------
-# FR search index
+# Search index (per-language)
 # ---------------------------------------------------------------------------
 
 _TAG_RE = re.compile(r'<[^>]+>')
