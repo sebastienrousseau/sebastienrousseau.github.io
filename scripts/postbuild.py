@@ -1491,8 +1491,38 @@ LABELS_FR: dict[str, str] = {
 }
 
 
+_LABEL_CACHE: dict[str, dict[str, str]] = {}
+
+
+def _labels_for_lang(code: str) -> dict[str, str]:
+    """Per-language label cache. Loads from ``labels.json`` and overlays
+    a handful of extra keys ``LABELS_EN`` has but the JSON glossary
+    intentionally doesn't (Table of contents, Article pagination, etc.)
+    so older call sites stay valid."""
+    if code in _LABEL_CACHE:
+        return _LABEL_CACHE[code]
+    if code == "en":
+        out = dict(LABELS_EN)
+    else:
+        try:
+            base = _lr.load_labels(code)
+        except Exception:  # noqa: BLE001 — missing/invalid file falls back to EN
+            base = {}
+        out = dict(LABELS_EN)
+        out.update(base)
+    _LABEL_CACHE[code] = out
+    return out
+
+
+def _detect_page_lang(html: str) -> str:
+    m = _HTML_LANG_DETECT_RE.search(html)
+    if not m:
+        return "en"
+    return m.group(1).lower().split("-", 1)[0]
+
+
 def _labels(html: str) -> dict[str, str]:
-    return LABELS_FR if _is_french(html) else LABELS_EN
+    return _labels_for_lang(_detect_page_lang(html))
 
 
 def slugify(s: str) -> str:
