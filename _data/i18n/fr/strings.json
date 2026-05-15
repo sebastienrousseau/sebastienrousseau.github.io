@@ -31,6 +31,10 @@
 
   "feeds.atomTitle": "Flux Atom",
   "feeds.rssTitle": "Flux RSS",
+  "feeds.channelTitle": "Sebastien Rousseau — Édition française",
+  "feeds.channelDescription": "Articles en français : IA appliquée, paiements ISO 20022, cryptographie post-quantique et transformation des paiements wholesale.",
+  "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Tous droits réservés.",
+  "feeds.jsonFeedTitle": "Sebastien Rousseau — Articles (français)",
 
   "lang.aria.langGroup": "Langue",
   "lang.aria.changeLangPrefix": "FR, Changer de langue",
