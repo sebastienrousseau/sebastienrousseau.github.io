@@ -1240,6 +1240,8 @@ def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
             "archiveHeading": "Tous les articles",
             "readFull": "Lire l'article complet",
             "desc": "Sélection d'articles traduits manuellement en français.",
+            "heroH1": "Articles",
+            "heroSub": "Articles sur l'IA, la cryptographie post-quantique, ISO 20022 et l'avenir des paiements.",
         },
         "de": {
             "featuredKicker": "AKTUELL",
@@ -1248,6 +1250,8 @@ def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
             "archiveHeading": "Alle Artikel",
             "readFull": "Vollständigen Artikel lesen",
             "desc": "Eine Auswahl manuell ins Deutsche übersetzter Artikel.",
+            "heroH1": "Artikel",
+            "heroSub": "Artikel über KI, Post-Quanten-Kryptografie, ISO 20022 und die Zukunft des Zahlungsverkehrs.",
         },
     }
     _h = _hub_strings.get(LANG_CODE, _hub_strings["fr"])
@@ -1297,6 +1301,11 @@ def render_articles_hub(entries: list[dict[str, str]]) -> str | None:
         + '</section>'
     )
     shell = _NEWSROOM_RE.sub(body, shell, count=1)
+    # Localise hero H1 + subtitle on the articles hub.
+    shell = _HERO_RE.sub(
+        rf'\g<1>{_html.escape(_h["heroH1"])}\g<2>{_html.escape(_h["heroSub"])}\g<3>',
+        shell, count=1,
+    )
     shell = _HTML_LANG_RE.sub(rf'\g<1>"{LANG_BCP47}"', shell, count=1)
     _articles_hub_titles = {
         "fr": "Articles en français — Sebastien Rousseau",
@@ -1929,7 +1938,7 @@ def _bind_lang(code: str) -> None:
     global I18N_FR, TAKEAWAY_LABELS_EN_TO_FR
     global STATIC_SLUG_FR, STATIC_PAGES_FR, TOPIC_FR_LABELS
     global HOME_FR_PATCHES, STATIC_BODIES_FR, STATIC_BODY_PATCHES
-    global CHROME_PATCHES, _CHROME_PATCHES_COMPILED, _HOME_FR_COMPILED
+    global CHROME_PATCHES, _CHROME_PATCHES_COMPILED, _HOME_FR_COMPILED, _STATIC_BODY_COMPILED
     lang = next(lg for lg in _lang_registry.LANGUAGES if lg.code == code)
     LANG_CODE = code
     LANG_BCP47 = lang.bcp47
@@ -1954,6 +1963,7 @@ def _bind_lang(code: str) -> None:
     ]
     _CHROME_PATCHES_COMPILED = [(re.compile(p), r) for p, r in CHROME_PATCHES]
     _HOME_FR_COMPILED = [(re.compile(p), r) for p, r in HOME_FR_PATCHES]
+    _STATIC_BODY_COMPILED = [(re.compile(p), r) for p, r in STATIC_BODY_PATCHES]
     # Clear every per-language lazy cache so the second pass doesn't
     # inherit the first language's title / description / regex tables.
     global _FR_TITLE_MAP, _FR_DESCRIPTION_MAP

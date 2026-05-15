@@ -2248,38 +2248,48 @@ _GH_RELATIVE_LIMITS = (
 )
 
 
-def _relative_time(iso_ts: str, fr: bool = False) -> str:
-    """Render an ISO-8601 timestamp as a 'N units ago' label."""
+_RELTIME: dict[str, dict[str, str]] = {
+    # Format strings keyed by lang. ``%d`` is the count; ``%s`` for the
+    # "an" plural in FR is appended manually because Python's f-strings
+    # don't allow conditional plurals inline.
+    "en": {"s": "{n}s ago", "m": "{n}m ago", "h": "{n}h ago", "d": "{n}d ago", "w": "{n}w ago", "mo": "{n}mo ago", "y": "{n}y ago"},
+    "fr": {"s": "il y a {n} s", "m": "il y a {n} min", "h": "il y a {n} h", "d": "il y a {n} j", "w": "il y a {n} sem.", "mo": "il y a {n} mois", "y": "il y a {n} an"},
+    "de": {"s": "vor {n} s", "m": "vor {n} min", "h": "vor {n} Std.", "d": "vor {n} T.", "w": "vor {n} Wo.", "mo": "vor {n} Mon.", "y": "vor {n} J."},
+}
+
+
+def _relative_time(iso_ts: str, fr: bool = False, lang: str | None = None) -> str:
+    """Render an ISO-8601 timestamp as a localised 'N units ago' label."""
     if not iso_ts:
         return ""
     try:
-        # GH returns "2026-05-15T16:34:21Z"
         ts = _gh_dt.fromisoformat(iso_ts.replace("Z", "+00:00"))
     except ValueError:
         return ""
+    code = lang if lang else ("fr" if fr else "en")
+    t = _RELTIME.get(code, _RELTIME["en"])
     delta = (_gh_dt.now(tz=UTC) - ts).total_seconds()
     if delta < 0:
         delta = 0
     if delta < 60:
-        n = int(delta)
-        return f"il y a {n} s" if fr else f"{n}s ago"
-    if delta < 3600:
-        n = int(delta // 60)
-        return f"il y a {n} min" if fr else f"{n}m ago"
-    if delta < 86400:
-        n = int(delta // 3600)
-        return f"il y a {n} h" if fr else f"{n}h ago"
-    if delta < 604800:
-        n = int(delta // 86400)
-        return f"il y a {n} j" if fr else f"{n}d ago"
-    if delta < 2629800:
-        n = int(delta // 604800)
-        return f"il y a {n} sem." if fr else f"{n}w ago"
-    if delta < 31557600:
-        n = int(delta // 2629800)
-        return f"il y a {n} mois" if fr else f"{n}mo ago"
-    n = int(delta // 31557600)
-    return f"il y a {n} an{'s' if n > 1 else ''}" if fr else f"{n}y ago"
+        n, key = int(delta), "s"
+    elif delta < 3600:
+        n, key = int(delta // 60), "m"
+    elif delta < 86400:
+        n, key = int(delta // 3600), "h"
+    elif delta < 604800:
+        n, key = int(delta // 86400), "d"
+    elif delta < 2629800:
+        n, key = int(delta // 604800), "w"
+    elif delta < 31557600:
+        n, key = int(delta // 2629800), "mo"
+    else:
+        n, key = int(delta // 31557600), "y"
+    out = t[key].format(n=n)
+    # FR year pluralisation: "an" → "ans" for n > 1.
+    if code == "fr" and key == "y" and n > 1:
+        out += "s"
+    return out
 
 
 def _format_count(n: int) -> str:
@@ -2291,15 +2301,23 @@ def _format_count(n: int) -> str:
     return str(n)
 
 
-def _render_gh_badges(info: dict, fr: bool) -> str:
+_GH_BADGE_STRINGS: dict[str, dict[str, str]] = {
+    "en": {"last": "last commit", "stars": "stars", "forks": "forks", "repoStats": "Repository stats"},
+    "fr": {"last": "dernier commit", "stars": "étoiles", "forks": "forks", "repoStats": "Statistiques du dépôt"},
+    "de": {"last": "letzter Commit", "stars": "Sterne", "forks": "Forks", "repoStats": "Repository-Statistiken"},
+}
+
+
+def _render_gh_badges(info: dict, lang: str = "en") -> str:
     stars = info.get("stars", 0)
     forks = info.get("forks", 0)
     license_id = info.get("license", "")
     pushed = info.get("pushed_at", "")
-    pushed_rel = _relative_time(pushed, fr=fr)
-    label_last = "dernier commit" if fr else "last commit"
-    aria_stars = (f"{stars} étoiles" if fr else f"{stars} stars") if stars else ""
-    aria_forks = f"{forks} forks" if forks else ""
+    pushed_rel = _relative_time(pushed, lang=lang)
+    s = _GH_BADGE_STRINGS.get(lang, _GH_BADGE_STRINGS["en"])
+    label_last = s["last"]
+    aria_stars = f"{stars} {s['stars']}" if stars else ""
+    aria_forks = f"{forks} {s['forks']}" if forks else ""
     parts: list[str] = []
     if stars:
         parts.append(
@@ -2327,7 +2345,7 @@ def _render_gh_badges(info: dict, fr: bool) -> str:
         )
     if not parts:
         return ""
-    aria = "Statistiques du dépôt" if fr else "Repository stats"
+    aria = s["repoStats"]
     return f'<p class="gh-stats-row" aria-label="{aria}">{"".join(parts)}</p>'
 
 
@@ -2382,7 +2400,7 @@ def inject_github_stats(html: str, stats_index: dict[str, dict]) -> str:
     matches a tracked repo."""
     if not stats_index or 'newsroom-card' not in html:
         return html
-    is_fr = _is_french(html)
+    page_lang = _detect_page_lang(html)
 
     def patch(m: re.Match[str]) -> str:
         open_tag, inner, close_tag = m.group(1), m.group(2), m.group(3)
@@ -2392,7 +2410,7 @@ def inject_github_stats(html: str, stats_index: dict[str, dict]) -> str:
         info = _gh_lookup(inner, stats_index)
         if not info:
             return m.group(0)
-        badges = _render_gh_badges(info, fr=is_fr)
+        badges = _render_gh_badges(info, lang=page_lang)
         if not badges:
             return m.group(0)
         # Insert before </div></article> (after the body, inside the card).
