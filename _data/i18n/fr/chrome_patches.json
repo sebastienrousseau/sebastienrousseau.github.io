@@ -98,8 +98,8 @@
       "<li><a href=\"/fr/contact/index.html\">Contact</a></li>"
     ],
     [
-      "<a class=\"?ap-brand\"? href=\"?/index\\.html\"?",
-      "<a class=\"ap-brand\" href=\"/fr/index.html\""
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/fr/index.html\""
     ],
     [
       "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
