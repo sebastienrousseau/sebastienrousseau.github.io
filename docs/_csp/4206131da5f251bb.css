@@ -24,6 +24,10 @@
         --radius:18px;
         color-scheme: light dark;
       }
+      /* View Transitions API (Chromium 126+) — native cross-fade on
+         cross-document navigation. Honours prefers-reduced-motion via
+         the global reduce rule in skeletonic.base. */
+      @view-transition{navigation:auto}
       [data-theme="dark"]{
         --ink:#f5f5f7;
         --ink-soft:#d4d4d9;        /* 14.2:1 vs bg. AAA */
