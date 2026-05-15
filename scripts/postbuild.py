@@ -2474,7 +2474,7 @@ def main() -> None:  # noqa: C901 — postbuild orchestrator; per-pass counters 
     llms_full_written = write_llms_full_txt(PUBLIC)
 
     # JSON Feed 1.1 (modern feed-reader format alongside RSS/Atom).
-    jsonfeed_written = write_json_feed(PUBLIC)
+    write_json_feed(PUBLIC)
 
     # Repair Shokunin's RSS / Atom / news-sitemap URLs (.meta/ + localhost).
     # Must run BEFORE the ampersand-escape pass so the URL rewrite operates
