@@ -1,0 +1,15 @@
+{
+  "_comment": "Canonical EN body-text labels used by build_translations.py to translate inline article chrome (Published, Updated, Sources & references, etc.) — distinct from strings.json which is global UI chrome. Every other _data/i18n/<lang>/labels.json must carry the same key set; CI gate test_i18n_labels.py enforces parity.",
+  "Published": "Published",
+  "Updated": "Updated",
+  "min read": "min read",
+  "Previous": "Previous",
+  "Next": "Next",
+  "Sources & references": "Sources & references",
+  "About the author": "About the author",
+  "Topics": "Topics",
+  "Contents": "Contents",
+  "Estimated read time": "Estimated read time",
+  "Article pagination": "Article pagination",
+  "Link to": "Link to"
+}

@@ -1,0 +1,15 @@
+{
+  "_comment": "German body-text labels — DRAFT pending native-speaker review. Key set MUST stay in sync with _data/i18n/en/labels.json; CI gate test_i18n_labels.py enforces parity.",
+  "Published": "Veröffentlicht am",
+  "Updated": "Aktualisiert am",
+  "min read": "Min. Lesezeit",
+  "Previous": "Zurück",
+  "Next": "Weiter",
+  "Sources & references": "Quellen und Referenzen",
+  "About the author": "Über den Autor",
+  "Topics": "Themen",
+  "Contents": "Inhalt",
+  "Estimated read time": "Geschätzte Lesezeit",
+  "Article pagination": "Artikel-Navigation",
+  "Link to": "Link zu"
+}
