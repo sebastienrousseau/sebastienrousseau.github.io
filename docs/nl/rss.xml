@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sebastien Rousseau — Nederlandse editie</title>
+    <link>https://sebastienrousseau.com/nl/</link>
+    <description>Artikelen in het Nederlands: toegepaste AI, ISO 20022-betalingen, post-kwantumcryptografie en transformatie van het wholesale-betalingsverkeer.</description>
+    <atom:link href="https://sebastienrousseau.com/nl/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>nl-NL</language>
+    <lastBuildDate>Sat, 16 May 2026 14:49:54 +0000</lastBuildDate>
+    <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden.</copyright>
+    <item>
+      <title>De beste cloudinfrastructuur-architectuur 2026: een AI-native, multi-cloud en kwantumbewuste blauwdruk voor financiële dienstverleners</title>
+      <link>https://sebastienrousseau.com/nl/2026-05-21-beste-cloud-infrastructuur-architectuur-voor-banken-2026/</link>
+      <description>De cloudarchitectuur 2026 is gekristalliseerd rond zes pijlers: AI-native infrastructuur, multi-cloud, serverless, edge, geautomatiseerde beveiliging met krypto-agility en duurzame, high-density-operaties.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-21-beste-cloud-infrastructuur-architectuur-voor-banken-2026/</guid>
+      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
+      <category>Cloudarchitectuur 2026</category>
+      <category>AI-native infrastructuur</category>
+      <category>multi-cloud</category>
+      <category>serverless</category>
+      <category>edge</category>
+      <category>WebAssembly</category>
+      <category>DevSecOps</category>
+      <category>duurzaamheid</category>
+      <category>HNDL</category>
+      <category>post-kwantum</category>
+    </item>
+    <item>
+      <title>Agentic engineering voor banken: blauwdruk 2026</title>
+      <link>https://sebastienrousseau.com/nl/2026-05-18-agentic-engineering-banken-blauwdruk-2026/</link>
+      <description>Een blauwdruk voor agentic engineering in banken in 2026: governance, krypto-agility, MCP-beveiliging en de operationele realiteit.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-18-agentic-engineering-banken-blauwdruk-2026/</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
+      <category>Agentic engineering</category>
+      <category>AI</category>
+      <category>banken</category>
+      <category>2026</category>
+      <category>MCP</category>
+      <category>governance</category>
+      <category>regulering</category>
+    </item>
+    <item>
+      <title>BlackRock BRSRV en BSTBL onder de GENIUS Act: een getokeniseerd geldmarktfonds</title>
+      <link>https://sebastienrousseau.com/nl/2026-05-15-blackrock-brsrv-bstbl-genius-act-getokeniseerd-geldmarktfonds/</link>
+      <description>BlackRock&apos;s BRSRV- en BSTBL-aanvragen laten zien hoe een tokenised money-market fund rendement levert binnen het kader van de GENIUS Act.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-15-blackrock-brsrv-bstbl-genius-act-getokeniseerd-geldmarktfonds/</guid>
+      <pubDate>Fri, 15 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp" type="image/webp" length="0"/>
+      <category>BlackRock</category>
+      <category>BRSRV</category>
+      <category>BSTBL</category>
+      <category>GENIUS Act</category>
+      <category>geldmarktfonds</category>
+      <category>stablecoin</category>
+      <category>tokenisatie</category>
+    </item>
+    <item>
+      <title>Het grootboek beveiligen: post-kwantummigratie in corporate finance</title>
+      <link>https://sebastienrousseau.com/nl/2026-05-14-het-grootboek-beveiligen-post-kwantum-migratie-corporate-finance/</link>
+      <description>Een blauwdruk voor de post-kwantummigratie van het corporate-finance-grootboek — krypto-agility, audit en governance.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-14-het-grootboek-beveiligen-post-kwantum-migratie-corporate-finance/</guid>
+      <pubDate>Thu, 14 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" type="image/webp" length="0"/>
+      <category>Corporate finance</category>
+      <category>post-kwantum</category>
+      <category>migratie</category>
+      <category>grootboek</category>
+      <category>cryptografie</category>
+      <category>banking</category>
+    </item>
+    <item>
+      <title>ISO 20022 pacs.008: de deadline voor gestructureerde adressen</title>
+      <link>https://sebastienrousseau.com/nl/2026-05-12-iso-20022-pacs008-gestructureerd-adres-deadline/</link>
+      <description>Vanaf november 2026 weigert SWIFT CBPR+ ongestructureerde postadressen in grensoverschrijdende betaalberichten. Wat dit betekent voor banken.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-12-iso-20022-pacs008-gestructureerd-adres-deadline/</guid>
+      <pubDate>Tue, 12 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp" type="image/webp" length="0"/>
+      <category>ISO 20022</category>
+      <category>pacs.008</category>
+      <category>SWIFT</category>
+      <category>CBPR+</category>
+      <category>gestructureerd adres</category>
+      <category>grensoverschrijdend</category>
+    </item>
+    <item>
+      <title>Lucy Besson — kennisoverdracht in AI en kwantum</title>
+      <link>https://sebastienrousseau.com/nl/2026-05-11-lucy-besson-kennisoverdracht-ai-en-kwantum/</link>
+      <description>Een reflectie op kennisoverdracht in AI en post-kwantumcryptografie via het mentor-mentee-traject met Lucy Besson.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-11-lucy-besson-kennisoverdracht-ai-en-kwantum/</guid>
+      <pubDate>Mon, 11 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" type="image/webp" length="0"/>
+      <category>Lucy Besson</category>
+      <category>kennisoverdracht</category>
+      <category>AI</category>
+      <category>kwantum</category>
+      <category>mentorschap</category>
+      <category>banking</category>
+    </item>
+    <item>
+      <title>Kwantumdrempels verschuiven opnieuw</title>
+      <link>https://sebastienrousseau.com/nl/2026-04-11-kwantumdrempels-verschuiven-opnieuw/</link>
+      <description>Een nieuw paper suggereert dat het algoritme van Shor al met slechts 10.000 qubits zou kunnen draaien. De drempel voor cryptografisch relevante kwantumcomputing daalt snel.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-04-11-kwantumdrempels-verschuiven-opnieuw/</guid>
+      <pubDate>Sat, 11 Apr 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" type="image/webp" length="0"/>
+      <category>Shor algoritme</category>
+      <category>kwantumcomputing</category>
+      <category>post-kwantumcryptografie</category>
+      <category>beveiliging</category>
+      <category>qubits</category>
+    </item>
+    <item>
+      <title>Kwantumveilige betalingen — EPAA-whitepaper</title>
+      <link>https://sebastienrousseau.com/nl/2025-09-01-kwantumveilige-betalingen-epaa/</link>
+      <description>Branche-whitepaper voor de Emerging Payments Association Asia over de structurele dreiging die kwantumcomputing vormt voor de betaalinfrastructuur.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2025-09-01-kwantumveilige-betalingen-epaa/</guid>
+      <pubDate>Mon, 01 Sep 2025 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/digital-nodes.webp" type="image/webp" length="0"/>
+      <category>EPAA</category>
+      <category>kwantumveilige betalingen</category>
+      <category>post-kwantum</category>
+      <category>whitepaper</category>
+      <category>betalingsverkeer</category>
+      <category>banking</category>
+    </item>
+    <item>
+      <title>Fout ontdekt in kwantumalgoritme voor rooster-gebaseerde cryptografie</title>
+      <link>https://sebastienrousseau.com/nl/2024-04-22-fout-ontdekt-in-kwantumalgoritme-voor-rooster-gebaseerde-cryptografie/</link>
+      <description>In Yilei Chens kwantumalgoritme voor het oplossen van LWE is een fout gevonden, die rooster-gebaseerde cryptografie tijdelijk veilig stelt.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2024-04-22-fout-ontdekt-in-kwantumalgoritme-voor-rooster-gebaseerde-cryptografie/</guid>
+      <pubDate>Mon, 22 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/digital-nodes.webp" type="image/webp" length="0"/>
+      <category>Yilei Chen</category>
+      <category>kwantumalgoritme</category>
+      <category>LWE</category>
+      <category>rooster-gebaseerde cryptografie</category>
+      <category>post-kwantum</category>
+    </item>
+    <item>
+      <title>Kwantumalgoritme daagt rooster-gebaseerde cryptografie uit</title>
+      <link>https://sebastienrousseau.com/nl/2024-04-15-kwantumalgoritme-daagt-rooster-gebaseerde-cryptografie-uit/</link>
+      <description>Een nieuw kwantumalgoritme lost een centraal cryptografisch probleem op en dringt aan op versneld onderzoek naar kwantumveilige beveiliging.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2024-04-15-kwantumalgoritme-daagt-rooster-gebaseerde-cryptografie-uit/</guid>
+      <pubDate>Mon, 15 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/digital-constellation.webp" type="image/webp" length="0"/>
+      <category>Kwantumalgoritme</category>
+      <category>rooster-gebaseerde cryptografie</category>
+      <category>post-kwantum</category>
+      <category>NIST</category>
+      <category>beveiliging</category>
+    </item>
+    <item>
+      <title>OpenVoice: toonaangevende innovatie in voice-cloning</title>
+      <link>https://sebastienrousseau.com/nl/2024-04-01-openvoice-toonaangevende-innovatie-in-voice-cloning/</link>
+      <description>OpenVoice is een open framework voor instant voice-cloning met meertalige ondersteuning, ontworpen voor onderzoek en productie.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2024-04-01-openvoice-toonaangevende-innovatie-in-voice-cloning/</guid>
+      <pubDate>Mon, 01 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/open-voice.webp" type="image/webp" length="0"/>
+      <category>OpenVoice</category>
+      <category>voice-cloning</category>
+      <category>AI</category>
+      <category>spraak</category>
+      <category>open source</category>
+      <category>meertalig</category>
+    </item>
+    <item>
+      <title>Volledig homomorfe versleuteling in het bank-kwantumtijdperk</title>
+      <link>https://sebastienrousseau.com/nl/2024-03-25-volledig-homomorfe-versleuteling-in-het-bank-kwantumtijdperk/</link>
+      <description>Hoe volledig homomorfe versleuteling de databeveiliging in banken en financiële dienstverlening revolutioneert in het kwantumtijdperk.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2024-03-25-volledig-homomorfe-versleuteling-in-het-bank-kwantumtijdperk/</guid>
+      <pubDate>Mon, 25 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp" type="image/webp" length="0"/>
+      <category>FHE</category>
+      <category>homomorfe versleuteling</category>
+      <category>kwantum</category>
+      <category>banking</category>
+      <category>beveiliging</category>
+      <category>privacy</category>
+    </item>
+    <item>
+      <title>AI versterken met multimodale LLM&apos;s: inzichten uit MM1</title>
+      <link>https://sebastienrousseau.com/nl/2024-03-18-ai-versterken-met-multimodale-llms-inzichten-uit-mm1/</link>
+      <description>Een analyse van Apple&apos;s MM1-paper over multimodale grote taalmodellen — architectuur, pretraining-strategieën en opkomende mogelijkheden.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2024-03-18-ai-versterken-met-multimodale-llms-inzichten-uit-mm1/</guid>
+      <pubDate>Mon, 18 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/mm1-visual.webp" type="image/webp" length="0"/>
+      <category>Apple MM1</category>
+      <category>multimodale LLM</category>
+      <category>AI</category>
+      <category>machine learning</category>
+      <category>pretraining</category>
+    </item>
+    <item>
+      <title>Real-time spraakherkenning op macOS met OpenAI Whisper</title>
+      <link>https://sebastienrousseau.com/nl/2024-03-12-real-time-spraakherkenning-op-macos-met-openai-whisper/</link>
+      <description>Een systeem voor real-time spraak-naar-tekst-transcriptie dat OpenAI Whisper en Metal Performance Shaders combineert om sub-seconde latentie te halen.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2024-03-12-real-time-spraakherkenning-op-macos-met-openai-whisper/</guid>
+      <pubDate>Tue, 12 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/research-paper.webp" type="image/webp" length="0"/>
+      <category>OpenAI Whisper</category>
+      <category>macOS</category>
+      <category>M1 Max</category>
+      <category>Metal Performance Shaders</category>
+      <category>spraakherkenning</category>
+      <category>real-time</category>
+    </item>
+    <item>
+      <title>RustLogs: geavanceerde logging-bibliotheek voor Rust-toepassingen</title>
+      <link>https://sebastienrousseau.com/nl/2024-03-08-rustlogs-geavanceerde-logging-bibliotheek-voor-rust-toepassingen/</link>
+      <description>RustLogs is een geavanceerde logging-bibliotheek voor Rust-toepassingen: snel, betrouwbaar en idiomatisch voor productie-grade systemen.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2024-03-08-rustlogs-geavanceerde-logging-bibliotheek-voor-rust-toepassingen/</guid>
+      <pubDate>Fri, 08 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/rustlogs.webp" type="image/webp" length="0"/>
+      <category>RustLogs</category>
+      <category>Rust</category>
+      <category>logging</category>
+      <category>observability</category>
+      <category>open source</category>
+    </item>
+    <item>
+      <title>Le Chat van Mistral AI: een nieuw tijdperk in conversatie-AI</title>
+      <link>https://sebastienrousseau.com/nl/2024-03-04-le-chat-van-mistral-ai-een-nieuw-tijdperk-in-conversatie-ai/</link>
+      <description>Le Chat van Mistral AI luidt een nieuw tijdperk in voor conversatie-AI in Europa, met sterke prestaties en transparante modellen.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2024-03-04-le-chat-van-mistral-ai-een-nieuw-tijdperk-in-conversatie-ai/</guid>
+      <pubDate>Mon, 04 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp" type="image/webp" length="0"/>
+      <category>Le Chat</category>
+      <category>Mistral AI</category>
+      <category>conversatie-AI</category>
+      <category>LLM</category>
+      <category>Europa</category>
+      <category>open source</category>
+    </item>
+    <item>
+      <title>Google Gemma transformeert open-source AI-ontwikkeling</title>
+      <link>https://sebastienrousseau.com/nl/2024-02-26-google-gemma-transformeert-open-source-ai-ontwikkeling/</link>
+      <description>Google Gemma transformeert open-source AI-ontwikkeling door een licht, performant en goed gedocumenteerd modelfamilie te bieden.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2024-02-26-google-gemma-transformeert-open-source-ai-ontwikkeling/</guid>
+      <pubDate>Mon, 26 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-ship.webp" type="image/webp" length="0"/>
+      <category>Google Gemma</category>
+      <category>open source</category>
+      <category>AI</category>
+      <category>LLM</category>
+      <category>generatieve AI</category>
+      <category>ontwikkeling</category>
+    </item>
+    <item>
+      <title>Gemini ontsluiten: de AI-revolutie van Google uitgelegd</title>
+      <link>https://sebastienrousseau.com/nl/2024-02-19-gemini-ontsluiten-de-ai-revolutie-van-google-uitgelegd/</link>
+      <description>Een blik op Gemini, het multimodale AI-systeem van Google: architectuur, mogelijkheden en plaats in het AI-ecosysteem.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2024-02-19-gemini-ontsluiten-de-ai-revolutie-van-google-uitgelegd/</guid>
+      <pubDate>Mon, 19 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp" type="image/webp" length="0"/>
+      <category>Gemini</category>
+      <category>Google</category>
+      <category>AI</category>
+      <category>multimodaal</category>
+      <category>LLM</category>
+      <category>machine learning</category>
+    </item>
+    <item>
+      <title>De EU AI-verordening: de toekomst van wereldwijde AI-regulering vormgeven</title>
+      <link>https://sebastienrousseau.com/nl/2024-02-13-eu-ai-verordening-de-toekomst-van-wereldwijde-ai-regulering/</link>
+      <description>Hoe de EU AI-verordening de wereldwijde AI-regelgeving vormgeeft en wat dit betekent voor banken, ontwikkelaars en toezichthouders.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2024-02-13-eu-ai-verordening-de-toekomst-van-wereldwijde-ai-regulering/</guid>
+      <pubDate>Tue, 13 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" type="image/webp" length="0"/>
+      <category>EU AI Act</category>
+      <category>AI-verordening</category>
+      <category>regelgeving</category>
+      <category>Europese Unie</category>
+      <category>ethiek</category>
+      <category>compliance</category>
+    </item>
+    <item>
+      <title>Akande: een spraakassistent die persoonlijke en executive assistentie revolutioneert</title>
+      <link>https://sebastienrousseau.com/nl/2024-02-12-akande-spraakassistent-revolutie-persoonlijke-en-executive-assistentie/</link>
+      <description>Akande is een geavanceerde spraakassistent die OpenAI GPT gebruikt voor natuurlijke interacties, PDF-samenvattingen en efficiënte caching.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2024-02-12-akande-spraakassistent-revolutie-persoonlijke-en-executive-assistentie/</guid>
+      <pubDate>Mon, 12 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" type="image/webp" length="0"/>
+      <category>Akande</category>
+      <category>spraakassistent</category>
+      <category>GPT</category>
+      <category>OpenAI</category>
+      <category>AI</category>
+      <category>executive assistant</category>
+    </item>
+    <item>
+      <title>Reclame revolutioneren: hoe AI de toekomst vormgeeft</title>
+      <link>https://sebastienrousseau.com/nl/2024-02-08-reclame-revolutioneren-hoe-ai-de-toekomst-vormgeeft/</link>
+      <description>Hoe AI de creatie, targeting en meting van reclame hervormt, en welke uitdagingen dit oplevert voor merken en consumenten.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2024-02-08-reclame-revolutioneren-hoe-ai-de-toekomst-vormgeeft/</guid>
+      <pubDate>Thu, 08 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/advertising-ai.webp" type="image/webp" length="0"/>
+      <category>AI</category>
+      <category>reclame</category>
+      <category>marketing</category>
+      <category>generatieve AI</category>
+      <category>personalisatie</category>
+      <category>targeting</category>
+    </item>
+    <item>
+      <title>Door AI aangestuurde audio: inzichten, analyse en vertalingen</title>
+      <link>https://sebastienrousseau.com/nl/2024-01-29-door-ai-aangestuurde-audio-inzichten-analyse-vertalingen/</link>
+      <description>AI-gestuurde audio-analyse opent bruikbare inzichten, samenvattingen en vertalingen uit audiogegevens voor banking en productiviteit.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2024-01-29-door-ai-aangestuurde-audio-inzichten-analyse-vertalingen/</guid>
+      <pubDate>Mon, 29 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" type="image/webp" length="0"/>
+      <category>AI</category>
+      <category>audio</category>
+      <category>spraakherkenning</category>
+      <category>samenvatting</category>
+      <category>vertaling</category>
+      <category>machine learning</category>
+    </item>
+    <item>
+      <title>Vooruitgang in AI-prompt-engineering</title>
+      <link>https://sebastienrousseau.com/nl/2024-01-23-vooruitgang-in-ai-prompt-engineering/</link>
+      <description>Vooruitgang in AI-prompt-engineering — een verkenning van patronen, technieken en best practices voor het sturen van LLM-uitkomsten.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2024-01-23-vooruitgang-in-ai-prompt-engineering/</guid>
+      <pubDate>Tue, 23 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" type="image/webp" length="0"/>
+      <category>Prompt engineering</category>
+      <category>AI</category>
+      <category>LLM</category>
+      <category>GPT</category>
+      <category>chain-of-thought</category>
+      <category>few-shot</category>
+      <category>best practices</category>
+    </item>
+    <item>
+      <title>Alien Studio: de kunst revolutioneren met AI-fotografie</title>
+      <link>https://sebastienrousseau.com/nl/2024-01-15-alien-studio-kunst-revolutie-met-ai-fotografie/</link>
+      <description>Alien Studio laat zien hoe generatieve AI fotografie hervormt en nieuwe vormen van visuele expressie ontsluit.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2024-01-15-alien-studio-kunst-revolutie-met-ai-fotografie/</guid>
+      <pubDate>Mon, 15 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" type="image/webp" length="0"/>
+      <category>Alien Studio</category>
+      <category>AI-fotografie</category>
+      <category>generatieve AI</category>
+      <category>kunst</category>
+      <category>beeldgeneratie</category>
+    </item>
+    <item>
+      <title>AI-trends 2024: inzichten en voorspellingen voor de toekomst</title>
+      <link>https://sebastienrousseau.com/nl/2024-01-01-ai-trends-2024-inzichten-en-voorspellingen/</link>
+      <description>Inzichten en voorspellingen voor de AI-trends die 2024 zullen vormgeven: regelgeving, multimodale modellen, on-device-AI en meer.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2024-01-01-ai-trends-2024-inzichten-en-voorspellingen/</guid>
+      <pubDate>Mon, 08 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" type="image/webp" length="0"/>
+      <category>AI-trends</category>
+      <category>2024</category>
+      <category>voorspellingen</category>
+      <category>machine learning</category>
+      <category>regelgeving</category>
+      <category>multimodaal</category>
+      <category>LLM</category>
+    </item>
+    <item>
+      <title>Kredietratio-analyse optimaliseren met IBM Qiskit en kwantum-Fourier-transformatie</title>
+      <link>https://sebastienrousseau.com/nl/2024-01-08-kredietratio-analyse-optimaliseren-met-ibm-qiskit-en-kwantum-fourier-transformatie/</link>
+      <description>Hoe IBM Qiskit en de kwantum-Fourier-transformatie de kredietratio-analyse hervormen, met ongekende nauwkeurigheid en snelheid.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2024-01-08-kredietratio-analyse-optimaliseren-met-ibm-qiskit-en-kwantum-fourier-transformatie/</guid>
+      <pubDate>Mon, 08 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" type="image/webp" length="0"/>
+      <category>IBM Qiskit</category>
+      <category>kwantum-Fourier-transformatie</category>
+      <category>kredietratio</category>
+      <category>financiën</category>
+      <category>kwantumcomputing</category>
+    </item>
+    <item>
+      <title>Financiën revolutioneren met door AI versterkte kwantumalgoritmen</title>
+      <link>https://sebastienrousseau.com/nl/2023-12-25-financien-revolutioneren-met-door-ai-versterkte-kwantumalgoritmen/</link>
+      <description>Een verkenning van de transformerende rol van AI binnen kwantumalgoritmen voor financiën, met focus op wiskundige structuur en bankzaken.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2023-12-25-financien-revolutioneren-met-door-ai-versterkte-kwantumalgoritmen/</guid>
+      <pubDate>Mon, 25 Dec 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
+      <category>AI</category>
+      <category>kwantumalgoritmen</category>
+      <category>financiën</category>
+      <category>banking</category>
+      <category>machine learning</category>
+      <category>optimalisatie</category>
+    </item>
+    <item>
+      <title>Stand van AI en kwantumcomputing in banking: terugblik 2023</title>
+      <link>https://sebastienrousseau.com/nl/2023-12-18-stand-van-ai-en-kwantumcomputing-in-banking-terugblik-2023/</link>
+      <description>Een jaaroverzicht 2023 van AI-toepassingen en kwantumontwikkelingen die de financiële sector hervormen.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2023-12-18-stand-van-ai-en-kwantumcomputing-in-banking-terugblik-2023/</guid>
+      <pubDate>Mon, 18 Dec 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
+      <category>AI</category>
+      <category>kwantumcomputing</category>
+      <category>banking</category>
+      <category>2023</category>
+      <category>terugblik</category>
+      <category>financiële dienstverlening</category>
+      <category>fintech</category>
+    </item>
+    <item>
+      <title>Kwantumsleuteldistributie: revolutie in bankbeveiliging</title>
+      <link>https://sebastienrousseau.com/nl/2023-12-11-kwantumsleuteldistributie-revolutie-bankbeveiliging/</link>
+      <description>Kwantumsleuteldistributie (QKD) komt op als structureel antwoord voor beveiliging op financieel niveau in het kwantumtijdperk.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2023-12-11-kwantumsleuteldistributie-revolutie-bankbeveiliging/</guid>
+      <pubDate>Mon, 11 Dec 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" type="image/webp" length="0"/>
+      <category>QKD</category>
+      <category>kwantumsleuteldistributie</category>
+      <category>post-kwantum</category>
+      <category>banking</category>
+      <category>beveiliging</category>
+      <category>cryptografie</category>
+    </item>
+    <item>
+      <title>Datum en tijd in Rust beheersen met de dtt-bibliotheek</title>
+      <link>https://sebastienrousseau.com/nl/2023-12-04-datum-en-tijd-in-rust-beheersen-met-de-dtt-bibliotheek/</link>
+      <description>dtt is een Rust-bibliotheek die datum- en tijdoperaties idiomatisch, snel en betrouwbaar maakt voor moderne toepassingen.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2023-12-04-datum-en-tijd-in-rust-beheersen-met-de-dtt-bibliotheek/</guid>
+      <pubDate>Mon, 04 Dec 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg" type="image/webp" length="0"/>
+      <category>dtt</category>
+      <category>Rust</category>
+      <category>datum</category>
+      <category>tijd</category>
+      <category>datetime</category>
+      <category>open source</category>
+      <category>bibliotheek</category>
+    </item>
+    <item>
+      <title>KyberLib: een Rust-schild tegen kwantumdreigingen</title>
+      <link>https://sebastienrousseau.com/nl/2023-11-28-kyberlib-rust-schild-tegen-kwantumdreigingen/</link>
+      <description>KyberLib is een Rust-implementatie van CRYSTALS-Kyber, het NIST FIPS 203-standaardalgoritme voor post-kwantum-sleutelencapsulatie.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2023-11-28-kyberlib-rust-schild-tegen-kwantumdreigingen/</guid>
+      <pubDate>Tue, 28 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" type="image/webp" length="0"/>
+      <category>KyberLib</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>Rust</category>
+      <category>post-kwantum</category>
+      <category>FIPS 203</category>
+      <category>KEM</category>
+      <category>beveiliging</category>
+    </item>
+    <item>
+      <title>CRYSTALS-Kyber: het beschermingsalgoritme in het kwantumtijdperk</title>
+      <link>https://sebastienrousseau.com/nl/2023-11-19-crystals-kyber-het-beschermingsalgoritme-in-het-kwantumtijdperk/</link>
+      <description>CRYSTALS-Kyber is het door NIST geselecteerde kwantumresistente KEM dat de cryptografische basis vormt voor het post-kwantumtijdperk.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2023-11-19-crystals-kyber-het-beschermingsalgoritme-in-het-kwantumtijdperk/</guid>
+      <pubDate>Sun, 19 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" type="image/webp" length="0"/>
+      <category>CRYSTALS-Kyber</category>
+      <category>post-kwantum</category>
+      <category>KEM</category>
+      <category>NIST</category>
+      <category>FIPS 203</category>
+      <category>cryptografie</category>
+      <category>beveiliging</category>
+    </item>
+    <item>
+      <title>Generatieve AI verkennen</title>
+      <link>https://sebastienrousseau.com/nl/2023-11-12-generatieve-ai-verkennen/</link>
+      <description>Een diepgaande verkenning van generatieve AI: architecturen, trainingsstrategieën en toepassingen in financiën, kunst en wetenschap.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2023-11-12-generatieve-ai-verkennen/</guid>
+      <pubDate>Sun, 12 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
+      <category>Generatieve AI</category>
+      <category>LLM</category>
+      <category>GAN</category>
+      <category>diffusiemodellen</category>
+      <category>GPT</category>
+      <category>machine learning</category>
+      <category>AI</category>
+    </item>
+    <item>
+      <title>Wiskundige en cryptografische constanten voor Rust-beveiliging</title>
+      <link>https://sebastienrousseau.com/nl/2023-11-05-wiskundige-en-cryptografische-constanten-voor-rust-beveiliging/</link>
+      <description>Een Rust-bibliotheek die een referentieset levert van wiskundige en cryptografische constanten voor beveiligingsapplicaties.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2023-11-05-wiskundige-en-cryptografische-constanten-voor-rust-beveiliging/</guid>
+      <pubDate>Sun, 05 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp" type="image/webp" length="0"/>
+      <category>Rust</category>
+      <category>cryptografie</category>
+      <category>wiskundige constanten</category>
+      <category>beveiliging</category>
+      <category>open source</category>
+    </item>
+    <item>
+      <title>libmake: codegenerator voor hoogwaardige Rust-bibliotheken</title>
+      <link>https://sebastienrousseau.com/nl/2023-10-26-libmake-codegenerator-voor-hoogwaardige-rust-bibliotheken/</link>
+      <description>libmake is een codegenerator die helpt om repetitieve taken te verminderen en hoogwaardige Rust-bibliotheken te bouwen.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2023-10-26-libmake-codegenerator-voor-hoogwaardige-rust-bibliotheken/</guid>
+      <pubDate>Thu, 26 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>libmake</category>
+      <category>codegenerator</category>
+      <category>Rust</category>
+      <category>bibliotheek</category>
+      <category>automatisering</category>
+      <category>open source</category>
+    </item>
+    <item>
+      <title>Data beschermen in het kwantumtijdperk: de hash-bibliotheek hsh</title>
+      <link>https://sebastienrousseau.com/nl/2023-10-16-data-beschermen-in-het-kwantumtijdperk-de-hash-bibliotheek-hsh/</link>
+      <description>hsh is een Rust-bibliotheek die veilige hash- en digest-algoritmen implementeert voor wachtwoordversleuteling, ontworpen voor het post-PQC-tijdperk.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2023-10-16-data-beschermen-in-het-kwantumtijdperk-de-hash-bibliotheek-hsh/</guid>
+      <pubDate>Mon, 16 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp" type="image/webp" length="0"/>
+      <category>Hash</category>
+      <category>digest</category>
+      <category>cryptografie</category>
+      <category>post-kwantum</category>
+      <category>Rust</category>
+      <category>beveiliging</category>
+      <category>wachtwoord</category>
+    </item>
+    <item>
+      <title>Shokunin: de snelste statische sitegenerator in Rust</title>
+      <link>https://sebastienrousseau.com/nl/2023-10-09-shokunin-de-snelste-rust-gebaseerde-statische-sitegenerator/</link>
+      <description>Shokunin is een statische sitegenerator in Rust, ontworpen voor prestaties, toegankelijkheid en SEO, met eersteklas JSON-LD.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2023-10-09-shokunin-de-snelste-rust-gebaseerde-statische-sitegenerator/</guid>
+      <pubDate>Mon, 09 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" type="image/webp" length="0"/>
+      <category>Shokunin</category>
+      <category>statische sitegenerator</category>
+      <category>Rust</category>
+      <category>SSG</category>
+      <category>prestaties</category>
+      <category>SEO</category>
+      <category>JSON-LD</category>
+      <category>toegankelijkheid</category>
+    </item>
+    <item>
+      <title>ISO 20022-conforme betaalbestanden automatiseren met pain001</title>
+      <link>https://sebastienrousseau.com/nl/2023-09-29-iso-20022-conforme-betaalbestanden-automatiseren-met-pain001/</link>
+      <description>pain001 is een Python-bibliotheek die het aanmaken van ISO 20022-conforme betaalbestanden automatiseert vanuit CSV of SQLite, klaar voor SWIFT en SEPA.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2023-09-29-iso-20022-conforme-betaalbestanden-automatiseren-met-pain001/</guid>
+      <pubDate>Fri, 29 Sep 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" type="image/webp" length="0"/>
+      <category>ISO 20022</category>
+      <category>pain.001</category>
+      <category>betalingen</category>
+      <category>SWIFT</category>
+      <category>SEPA</category>
+      <category>Python</category>
+      <category>open source</category>
+      <category>automatisering</category>
+    </item>
+    <item>
+      <title>Het ontstaan van het Express Transaction Credits-platform</title>
+      <link>https://sebastienrousseau.com/nl/2018-02-15-het-ontstaan-van-het-express-transaction-credits-platform/</link>
+      <description>Hoe het Express Transaction Credits-platform werd ontworpen om snelle, schaalbare betalingen mogelijk te maken voor consumenten en handelaren.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2018-02-15-het-ontstaan-van-het-express-transaction-credits-platform/</guid>
+      <pubDate>Thu, 15 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>Express Transaction Credits</category>
+      <category>betalingen</category>
+      <category>fintech</category>
+      <category>blockchain</category>
+      <category>schaalbaarheid</category>
+      <category>settlement</category>
+    </item>
+    <item>
+      <title>Een nieuwe cryptovaluta onthullen: snellere betaaloplossing voor de toekomst</title>
+      <link>https://sebastienrousseau.com/nl/2018-02-04-nieuwe-cryptovaluta-en-snellere-betaaloplossing-voor-de-toekomst/</link>
+      <description>Lancering van een nieuwe cryptovaluta die de hindernissen van traditionele betalingen wegneemt en snellere, goedkopere afwikkeling oplevert.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2018-02-04-nieuwe-cryptovaluta-en-snellere-betaaloplossing-voor-de-toekomst/</guid>
+      <pubDate>Sun, 04 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" type="image/webp" length="0"/>
+      <category>Cryptovaluta</category>
+      <category>betalingen</category>
+      <category>fintech</category>
+      <category>blockchain</category>
+      <category>real-time</category>
+      <category>settlement</category>
+      <category>payments</category>
+    </item>
+    <item>
+      <title>De ERC-20-tokenstandaard</title>
+      <link>https://sebastienrousseau.com/nl/2018-01-24-de-erc-20-tokenstandaard/</link>
+      <description>ERC-20 als interface-standaard die de uitwisselbare token de facto interoperabel maakt op Ethereum-gebaseerde smart contracts.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2018-01-24-de-erc-20-tokenstandaard/</guid>
+      <pubDate>Wed, 24 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp" type="image/webp" length="0"/>
+      <category>ERC-20</category>
+      <category>Ethereum</category>
+      <category>smart contracts</category>
+      <category>tokens</category>
+      <category>ICO</category>
+      <category>blockchain</category>
+      <category>interoperabiliteit</category>
+    </item>
+    <item>
+      <title>De technologie achter blockchain begrijpen</title>
+      <link>https://sebastienrousseau.com/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/</link>
+      <description>Een toegankelijke gids voor de technologie achter blockchain: cryptografische primitieven, consensusmechanismen en gedistribueerde netwerken.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/</guid>
+      <pubDate>Tue, 09 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" type="image/webp" length="0"/>
+      <category>Blockchain</category>
+      <category>cryptografie</category>
+      <category>consensus</category>
+      <category>hashing</category>
+      <category>proof-of-work</category>
+      <category>proof-of-stake</category>
+      <category>gedistribueerd grootboek</category>
+    </item>
+    <item>
+      <title>Blockchain: de technologie die er in 2018 toe doet</title>
+      <link>https://sebastienrousseau.com/nl/2018-01-02-blockchain-de-technologie-die-er-in-2018-toe-doet/</link>
+      <description>Blockchain als gedistribueerd grootboek herdefinieert vertrouwen, eigendom en de uitwisseling van waarde over financiële systemen heen.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2018-01-02-blockchain-de-technologie-die-er-in-2018-toe-doet/</guid>
+      <pubDate>Tue, 02 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp" type="image/webp" length="0"/>
+      <category>Blockchain</category>
+      <category>gedistribueerd grootboek</category>
+      <category>smart contracts</category>
+      <category>tokenisatie</category>
+      <category>Ethereum</category>
+      <category>Bitcoin</category>
+      <category>fintech</category>
+      <category>regulering</category>
+    </item>
+    <item>
+      <title>Bitcoin: het jaar in terugblik van de eerste cryptovaluta</title>
+      <link>https://sebastienrousseau.com/nl/2018-01-01-bitcoin-het-jaar-in-terugblik/</link>
+      <description>Bitcoin: een Peer-to-Peer Electronic Cash System (P2P ECS) met het potentieel om de manier waarop mensen online zaken doen te revolutioneren.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2018-01-01-bitcoin-het-jaar-in-terugblik/</guid>
+      <pubDate>Mon, 01 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp" type="image/webp" length="0"/>
+      <category>Bitcoin</category>
+      <category>cryptovaluta</category>
+      <category>blockchain</category>
+      <category>P2P</category>
+      <category>double spending</category>
+      <category>mining</category>
+      <category>proof-of-work</category>
+      <category>ETF</category>
+      <category>Satoshi Nakamoto</category>
+      <category>gedecentraliseerde financiën</category>
+    </item>
+  </channel>
+</rss>

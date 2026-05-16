@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Tue, 23 Jan 2024 05:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Tue, 23 Jan 2024 05:06:06 +0000" id="last-modified" />
+    <title>Vooruitgang in AI-prompt-engineering — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Vooruitgang in AI-prompt-engineering — een verkenning van patronen, technieken en best practices voor het sturen van LLM-uitkomsten.">
+<meta name="keywords" content="Prompt engineering, AI, LLM, GPT, chain-of-thought, few-shot, best practices">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-4tMBA1UVVWjlBfa0TzNL2Txz6511aJH3cQhE1P/CNUM=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-F3UOJdnBXYwu8jJZL644GGzR+RaZY9/IUFHtby0jLdQ=' 'sha256-naWYAlZHTG7N/EJthh1LoM6rVa+zHstHsjr0r9l4zkY=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/nl/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom-feed" href="/nl/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Vooruitgang in AI-prompt-engineering — Sebastien Rousseau">
+<meta property="og:description" content="Vooruitgang in AI-prompt-engineering — een verkenning van patronen, technieken en best practices voor het sturen van LLM-uitkomsten.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/nl/2024-01-23-vooruitgang-in-ai-prompt-engineering/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="nl_NL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vooruitgang in AI-prompt-engineering — Sebastien Rousseau">
+<meta name="twitter:description" content="Vooruitgang in AI-prompt-engineering — een verkenning van patronen, technieken en best practices voor het sturen van LLM-uitkomsten.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/nl/2024-01-23-vooruitgang-in-ai-prompt-engineering/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-01-23-avancees-en-ingenierie-de-prompts-ia/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2024-01-23-advancements-in-ai-prompt-engineering/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2024-01-23-fortschritte-im-ki-prompt-engineering/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2024-01-23-avances-en-ingenieria-de-prompts-ia/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2024-01-23-progressi-nellingegneria-dei-prompt-ia/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2024-01-23-ai-puronputo-enjiniaringu-no-shinpo/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2024-01-23-ai-peurompeuteu-enjineoring-baljeon/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2024-01-23-vooruitgang-in-ai-prompt-engineering/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2024-01-23-avancos-na-engenharia-de-prompts-ia/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2024-01-23-dostizheniya-v-inzhenerii-promptov-ii/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2024-01-23-ai-tishici-gongcheng-de-jinzhan/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2024-01-23-ai-tishici-gongcheng-de-jinzhan-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Naar hoofdinhoud gaan</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Navigatie omschakelen" />
+      <div class="wrap">
+        <a class="ap-brand" href="/nl/index.html" aria-label="Startpagina van Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Hoofdnavigatie">
+          <ul class="ap-menu">
+            <li><a href="/nl/over/index.html">Over mij</a></li>
+            <li><a href="/nl/artikelen/index.html" aria-current="page" class="active">Artikelen</a></li>
+            <li><a href="/nl/publicaties/index.html">Publicaties</a></li>
+            <li><a href="/nl/onderwerpen/index.html">Onderwerpen</a></li>
+            <li><a href="/nl/projecten/index.html">Projecten</a></li>
+            <li><a href="/nl/afspeellijsten/index.html">Afspeellijsten</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Donker thema inschakelen" aria-pressed="false" title="Thema wisselen">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Zoeken (Cmd of Ctrl + K)" title="Zoeken (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Taal">
+            <button type="button" class="ap-lang-toggle" aria-label="NL, Taal wijzigen" aria-expanded="false" aria-haspopup="menu" title="Taal wijzigen">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">NL</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="Binnenkort beschikbaar">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="Binnenkort beschikbaar">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="Binnenkort beschikbaar">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="Binnenkort beschikbaar">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="Binnenkort beschikbaar">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="Binnenkort beschikbaar">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="Binnenkort beschikbaar">🇮🇩 Indonesia</span>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="Binnenkort beschikbaar">🇵🇱 Polski</span>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="Binnenkort beschikbaar">🇷🇴 Română</span>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="Binnenkort beschikbaar">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="Binnenkort beschikbaar">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="Binnenkort beschikbaar">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Binnenkort beschikbaar">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="Binnenkort beschikbaar">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="Binnenkort beschikbaar">🇳🇬 Yorùbá</span>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/nl/contact/index.html" aria-label="Neem contact op">Neem contact op ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Navigatie omschakelen">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Vooruitgang in AI-prompt-engineering</h1>
+      <p class="sub">Hoe systematisch prompt-ontwerp de uitkomst van grote taalmodellen stuurt</p>
+    <nav class="article-tags" aria-label="Onderwerpen"><a href="/tags/index.html#h3-prompt-engineering" class="article-tag" rel="tag">Prompt engineering</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">AI</a><a href="/tags/index.html#h3-llm" class="article-tag" rel="tag">LLM</a><a href="/tags/index.html#h3-gpt" class="article-tag" rel="tag">GPT</a><a href="/tags/index.html#h3-chain-of-thought" class="article-tag" rel="tag">chain-of-thought</a><a href="/tags/index.html#h3-few-shot" class="article-tag" rel="tag">few-shot</a><a href="/tags/index.html#h3-best-practices" class="article-tag" rel="tag">best practices</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-01-23T05:06:06+00:00" class="meta-pub">Gepubliceerd op 23 Jan 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Bijgewerkt op 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Geschatte leestijd">10 min. leestijd</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Inhoud</h2><ol><li><a href="#benutzerdefinooitrte-instruktionen-en-haar-impact">Benutzerdefinooitrte Instruktionen en haar impact</a></li><li><a href="#multi-persoona-gebruik">Multi-persoona-gebruik</a></li><li><a href="#chain-of-thought-ansatze">Chain-of-Thought-Ansätze</a></li><li><a href="#in-model-lernen-en-vektordatenbanken">In-Model-Lernen en Vektordatenbanken</a></li><li><a href="#adaptive-prompting">Adaptive Prompting</a></li><li><a href="#ethische-implikationen">Ethische Implikationen</a></li><li><a href="#kwantumcomputing-en-prompt-engineering">kwantumcomputing en Prompt Engineering</a></li><li><a href="#fortgeschrittene-techniken-in-prompt-engineering">Fortgeschrittene Techniken in Prompt Engineering</a></li><li><a href="#zero-shot-en-few-shot-prompting">Zero-Shot- en Few-Shot-Prompting</a></li><li><a href="#betrouwbaarheid-starken-via-chain-of-thought-cot">betrouwbaarheid stärken via Chain of Thought (CoT)</a></li><li><a href="#self-consistency">Self-Consistency</a></li><li><a href="#general-knowledge-prompting">General Knowledge Prompting</a></li><li><a href="#react">ReAct</a></li><li><a href="#ethische-implikationen-in-ai-prompt-engineering">Ethische Implikationen in AI-prompt-Engineering</a></li><li><a href="#fazit">Fazit</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Vooruitgang in AI-prompt-engineering — een verkenning van patronen, technieken en best practices voor het sturen van LLM-uitkomsten.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Benutzerdefinooitrte Instruktionen en haar impact.</strong> Benutzerdefinooitrte Instruktionen hebben AI-Interaktionen revolutieeert, doordat ze een nutzerspezifische modelsteuerung mogelijk maken.</li>  <li><strong>Multi-persoona-gebruik.</strong> De Multi-persoona-gebruik in AI-modellenn heeft het gebruikerserlebnis door flexible antwoordgestoudung transformeert.</li>  <li><strong>Chain-of-Thought-Ansätze.</strong> Chain-of-Thought-Ansätze hebben de probleemlösung door AI revolutieeert, doordat ze menschliche kognitive procese nachahmen.</li>  <li><strong>In-Model-Lernen en Vektordatenbanken.</strong> In-Model-Lernen en Vektordatenbanken stellen bedeutende Fortschritte in de Fähigkeit de AI dar, sich weiterzuontwikkelen en op umfangreiche Datensätze zuzugrijpen.</li></ul></aside><p>Im jaar 2024 maakt mogelijk AI-prompt-Engineering oplossingen zoals Chatbots, empathische Gespräche tot führen, de kulturelle Nuancen begrijpen — een wesentlicher Durchbruch in menschenvergelijkbaaren AI-Interaktionen. <strong>AI-prompt-Engineering</strong> verändert de mens-Maschine-Interaktion door Fortschritte bij benutzerdefinooitrten Instruktionen, Multi-persoona-gebruik en Chain-of-Thought-Ansätzen. Deze Artikel beleuchtet deze ontwikkelingen en haar impact op Technologie, financiën en Bildung en integriert inzichten tot domeinen zoals kwantumcomputing en AI-Ethik.</p>
+<p>Zunächst heeft het Prompt Engineering in de letzten jaaren als kritische AI-Komponente, de Qualität, Relevanz en beveiliging de Inhoude bestimmt, bedeutende Veränderungen erfahren. In deze Beitrag untersuchen we de impact de Fortschritte in Prompt Engineering in sectoren zoals Technologie, financiën en Bildung speziell in jaar 2024.</p>
+<h2 id="benutzerdefinooitrte-instruktionen-en-haar-impact">Benutzerdefinooitrte Instruktionen en haar impact <a class="heading-anchor" href="#benutzerdefinooitrte-instruktionen-en-haar-impact" aria-label="Link naar Benutzerdefinooitrte Instruktionen en haar impact">#</a></h2>
+<p><strong>Benutzerdefinooitrte Instruktionen</strong> hebben AI-Interaktionen revolutieeert, doordat ze een nutzerspezifische modelsteuerung mogelijk maken. Im ondernemingensfinanzwesen waarborgen benutzerdefinooitrte Prompts de regelgevende Compliance en steigern tegelijk de Präzision in akademischen Umfeld.</p>
+<p>Entscheidend is, dat deze Prompts een kulturelles en kontextuelles Vpasändnis in de antwoorden einflechten — was sich voor Marketing en Bildung als unverzichtbar toont aan.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" fetchpriority="high">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="multi-persoona-gebruik">Multi-persoona-gebruik <a class="heading-anchor" href="#multi-persoona-gebruik" aria-label="Link naar Multi-persoona-gebruik">#</a></h2>
+<p>De <strong>Multi-persoona-gebruik</strong> in AI-modellenn heeft het gebruikerserlebnis door flexible antwoordgestoudung transformeert. Deze aanpak is besonders effectief in klantenservice en in E-Learning-Umgebungen, in denen de AI tussen verschillenden persoonas wechseln kan, um de Bedürfnissen de gebruikers gerecht tot worden. U fördert bovendien de Inklusivität en maakt mogelijk es AI-modellenn, in kulturell sensibler Weise over unterschiedliche sectoren hinweg tot agieren — ook in Gesundheitswesen.</p>
+<p>Indem AI-modellen konzipiert worden, de in verschillenden Dialekten en kulturellen Kontexten begrijpen en antworten kunnen, lassen sich wereldwijde Zielgruppen wirkungsvoller ansprechen. Een AI-systeem in Gesundheitswesen kan de Kommunikation met Patienten en deren Versorgung verbetern, doordat es kulturell sensibel en angemessen agiert. Deze aanpak uitgebreid niet alleen de Reichweite van AI-toepassingen, sondern nährt ook een Umfeld de Inklusivität en des Respekts vóór kultureller Vielfoud.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="chain-of-thought-ansatze">Chain-of-Thought-Ansätze <a class="heading-anchor" href="#chain-of-thought-ansatze" aria-label="Link naar Chain-of-Thought-Ansätze">#</a></h2>
+<p><strong>Chain-of-Thought</strong>-Ansätze hebben de probleemlösung door AI revolutieeert, doordat ze menschliche kognitive procese nachahmen. Deze Methode is in domeinen, de hoge Transparenz en betrouwbaarheid vereisen — ongeveer in de medizinischen Diagnostik en de financieelprognose — van unschätzbarem waarde. Indem AI-modellen haar Argumentation offenleggen, stärken ze haar vertrouwenswürdigkeit in Umfeldern met hogem risico.</p>
+<p>Darüber uit erhöht de Chain-of-Thought-Technik de betrouwbaarheid van AI-systeemen erheblich. In Medizin en financiën kunnen AI-modellen Experten daarbij untpasützen, präzisere en verlässlichere beslissingen tot treffen.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="in-model-lernen-en-vektordatenbanken">In-Model-Lernen en Vektordatenbanken <a class="heading-anchor" href="#in-model-lernen-en-vektordatenbanken" aria-label="Link naar In-Model-Lernen en Vektordatenbanken">#</a></h2>
+<p><strong>In-Model-Lernen</strong> en <strong>Vektordatenbanken</strong> stellen bedeutende Fortschritte in de Fähigkeit de AI dar, sich weiterzuontwikkelen en op umfangreiche Datensätze zuzugrijpen. In-Model-Lernen is in dynamischen Umgebungen zoals de aandelenmarkt belangrijk. Vektordatenbanken zijn hilfreich tot Verwoudung van Daten in domeinen zoals biomedizinischer onderzoek en Sprachverarbeitung.</p>
+<p>Vektordatenbanken ihrerseits hebben nieuwe mogelijkheiden voor de toegang de AI op umfangreiche Datensätze en deren Interpretation eröffnet. Durch de Umwandlung komplexer Daten in Vektorrepräsentationen kunnen AI-modellen Informationen efficiënter verarbeiten en abrufen — was tot sneleren en präziseren antwoorden führt. Deze Technologie heeft tiefgrijpende Implikationen in Feldern zoals biomedizinischer onderzoek en Sprachverarbeitung, in denen de Umgang met gewoudigen Datenmengen tot Alltag gehört.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="adaptive-prompting">Adaptive Prompting <a class="heading-anchor" href="#adaptive-prompting" aria-label="Link naar Adaptive Prompting">#</a></h2>
+<p>AI-prompt-Engineering markiert een Wandel hin tot empathischen en kontextbewussten AI-systeemen. Es maakt mogelijk AI-modellenn, haar Kommunikation op basis van gebruikersfeedback tot verfeinern, en verbeterd so het gebruikerserlebnis in klantenservice en in Online-Lernplattformen. Deze aanpak is besonders bedeutsam in toepassingen de psychischen Gesundheit, in denen AI personalisierte Untpasützung leisten kan.</p>
+<p>Darüber uit verkörpert Adaptive Prompting de Wandel hin tot empathischeren en kontextbewussteren AI-systeemen. Een AI kan door gebruikersfeedback en Verbeterung haar Methoden ongeveers over menschliche Emotionen, kulturelle Unterschiede en Situationen lernen. AI-gestuurde Chatbots kunnen in de psychischen Gesundheit zeer hilfreich zijn — ze kunnen persönlichen Beistand en Rat bieden. AI kan haar antwoorden aan de Gefühle en Bedürfnisse een persoon anpassen. Het is een grooter stap hin tot een Technologie, de menschlicher en aan de einzigartigen Bedürfnisse ieder Einzelnen anpassbar is.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="ethische-implikationen">Ethische Implikationen <a class="heading-anchor" href="#ethische-implikationen" aria-label="Link naar Ethische Implikationen">#</a></h2>
+<p>Ethische Erwägungen in <strong>AI-prompt-Engineering</strong> zijn kritisch, insbesondere in sectoren, in denen voreingenommene AI tot ungerechten resultatenn führen könnte. Ethisches Prompt Engineering gewährleistet de Respekt vóór de privacy en de Einwilligung de gebruikers — een noodzaak in Gesundheitswesen en in de financiële sector. Es pasreckt sich ook op gesellschaftliche impact en fordert Fairness en Transparenz in invloed de AI op de öffentliche Meinung en demokratische procese.</p>
+<p>Darüber uit pasreckt sich de ethische inzet van AI-prompts op haar gesellschaftlichen impact. AI wordt zunehmend in Bildung, Medien en beleid eingezet. Wie Prompts gestoudet worden, kan erheblich beeinflussen, zoals mensen denken, was ze lernen en zoals Demokratie funktionooitrt. AI-prompts moeten fair, transparent en unvoreingenommen zijn, um Gleichheit en Gerechtigkeit in onze AI-gedrevenen wereld tot wahren.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="kwantumcomputing-en-prompt-engineering">kwantumcomputing en Prompt Engineering <a class="heading-anchor" href="#kwantumcomputing-en-prompt-engineering" aria-label="Link naar kwantumcomputing en Prompt Engineering">#</a></h2>
+<p><strong>kwantumcomputing</strong> maakt mogelijk es, optimale Prompts sneler tot pasellen — ongeveer tot persoonalisierung van Bildungsinhouden gemäß de Stärken ieder Lernenden, door rasche Analyse van Leistungsdaten. Deze Technologie stärkt bovendien de Fähigkeit de AI, komplexe probleeme tot lösen, tot voordeel van domeinen zoals cryptografie en Arzneimittelforschung. kwantumvpasärkte AI-modellen kunnen Prompt-Strukturen optimaliseren — zugunsten personalisierter Medizin en financiëler Anlagestrategien.</p>
+<p>kwantumcomputing zou het <strong>AI-prompt-Engineering</strong> door fortgeschrittene Rechenleistung vpasärken. Es maakt mogelijk de snelere Verarbeitung komplexer Prompts — doorslaggevend in cryptografie en Arzneimittelforschung. kwantumvpasärkte AI-modellen kunnen Prompt-Strukturen optimaliseren, was personalisierter Medizin en Anlagestrategien zugoedekommt.</p>
+<p>Darüber uit kan het Potenzial des kwantumcomputings, Optimierungsprobleme tot lösen, de effectiviteit des Prompt Engineering erheblich erhöhen. AI-modellen kunnen kwantumalgoritmen benutten, um Prompt-Strukturen tot optimaliseren en ze wirkungsvoller darin tot machen, gewünschte AI-Verhouden en -antwoorden hervorzurufen. De inzet deze Technologie kan personalisierte Medizin en financiën verbetern. AI kan individuelle Behandlungspläne op basis de Gene een persoon pasellen. Im financiën kan AI groote Mengen aan marktdaten benutten, um Anlagestrategien tot verbetern.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="fortgeschrittene-techniken-in-prompt-engineering">Fortgeschrittene Techniken in Prompt Engineering <a class="heading-anchor" href="#fortgeschrittene-techniken-in-prompt-engineering" aria-label="Link naar Fortgeschrittene Techniken in Prompt Engineering">#</a></h2>
+<p>Fortgeschrittene Techniken zoals Zero-Shot- en Few-Shot-Prompting uitbreiden de Fähigkeiten de AI. Zero-Shot-Prompting maakt mogelijk es AI-modellenn, nieuwartige Aufgaben tot bewältigen, terwijl Few-Shot-Prompting een snele Anpassung aan nieuwe Kontexte erleichtert. Deze Methoden zijn unverzichtbar voor de maßgeschneiderte Inhoudspasellung en personalisierte Bildung.</p>
+<p>Few-Shot-Prompting maakt mogelijk es AI-modellenn, sich met alleen wenigen voorbeeldenn rasch aan nieuwe Aufgaben en Kontexte anzupassen. Deze Methode is maßgeblich voor de maßgeschneiderte Inhoudspasellung, bij de de AI op basis minimaler Eingaben kreative en kontextuell relevante Ausgaben erzeugen kan. AI-Tutoren kunnen Few-Shot-Prompting benutten, um haar Unterricht aan de Bedürfnisse ieder Lernenden anzupassen — selbst in Fächern, de ze zuvor niet erlernt hebben.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="zero-shot-en-few-shot-prompting">Zero-Shot- en Few-Shot-Prompting <a class="heading-anchor" href="#zero-shot-en-few-shot-prompting" aria-label="Link naar Zero-Shot- en Few-Shot-Prompting">#</a></h2>
+<p>ZSL (Zero Shot Learning) maakt mogelijk es AI-Assistenten, hilfreiche antwoorden op nieuwartige klantenfragen over Domänen hinweg tot leveren en reduziert de Abhängigkeit van vortrainooitrten Fähigkeiten. FSL (Few Shot Learning) verzet de AI in de Lage, sich met alleen een Handvoll voorbeelden aan nieuwe Aufgaben anzupassen — en creëert so een Ausgleich tussen umfassendem training en Flexibilität. Deze Techniken zijn in Nischenforschungen en maßgeschneiderter Sprachübersetzung van unschätzbarem waarde.</p>
+<p>Zero-Shot- en Few-Shot-Prompting-Techniken helfen de AI, Aufgaben zonder vorheriges training tot bewältigen. Dies toont, dat AI sich problemlos anpassen en Neues lernen kan. Deze Vielseitigkeit is in domeinen met eingeschränkter Datenlage — ongeveer in de Nischenforschung — doorslaggevend en maakt mogelijk es de AI, wertvolle inzichten tot verschillenden Themen tot leveren.</p>
+<p>Few-Shot-Prompting wiederum verlangt, dat het model sich met alleen een Handvoll voorbeelden tot Anleitung zijner antwoorden aan nieuwe Aufgaben anpasst. Deze Technik creëert een Ausgleich tussen de umfangreichen training, het maschinelle Lernmodelle in de Regel vereisen, en de Flexibilität des Zero-Shot-Promptings. Mit wenigen voorbeeldenn kan de AI haar antwoorden so verfeinern, dat ze beter op de spezifischen Anforderungen de Aufgabe abgestimmt zijn. Het is nützlich voor de persoonalisierung de Sprachübersetzung, de Erstellung spezialisierter Inhoude en het Lösen einzigartiger probleeme. Few-Shot-Prompting demonstriert de snele Lernfähigkeit en Anpassungsfähigkeit de AI en macht ze tot een Aktivposten voor dynamische en vielfältige toepassingen, de een rasche Anpassung vereisen.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="betrouwbaarheid-starken-via-chain-of-thought-cot">betrouwbaarheid stärken via Chain of Thought (CoT) <a class="heading-anchor" href="#betrouwbaarheid-starken-via-chain-of-thought-cot" aria-label="Link naar betrouwbaarheid stärken via Chain of Thought (CoT)">#</a></h2>
+<p>Gleichermaßen belangrijk is, dat Chain-of-Thought-Ansätze nun transparentere AI-beslissingsprozesse mogelijk maken. Het toont aan sich als besonders wertvoll in domeinen zoals Diagnostik en Prognose, in denen verlässliche resultaten gefordert zijn. Insbesondere bouwen AIs door de Offenlegung haar Argumentation een vertrouwenswürdigkeit op, de es menschlichen Experten erlaubt, Schlussfolgerungen tot bewerten.</p>
+<p>Im Kern stärken durchdachte Transparenz en samenwerking tussen mens en AI de Präzisionsmedizin en de quantitative financieelanalyse erheblich.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="self-consistency">Self-Consistency <a class="heading-anchor" href="#self-consistency" aria-label="Link naar Self-Consistency">#</a></h2>
+<p>Self-Consistency in de AI stärkt de betrouwbaarheid, doordat modele dazu angehouden worden, haar antwoorden gegenzuprüfen. Deze Methode is doorslaggevend in dynamischen Umgebungen, in denen actuele en konsistente Informationen vereist zijn — ongeveer in de berichtenpasattung of marktanalyse.</p>
+<p>Darüber uit spielt Self-Consistency een kritische Rolle bij training en de Verfeinerung van AI-modellenn. Durch iterative Selbstbewertung en -verfeinerung kan AI ihr Vpasändnis en de nauwkeurigheid haar antwoorden verbetern — en wordt so tot een wertvollen tool voor continues Lernen en ontwikkeling. Self-Consistency is in domeinen zoals Sprachübersetzung en Kulturanalyse besonders belangrijk, omdat kleine Details en de Kontext de nauwkeurigheid en Angemessenheit de antwoorden stark beeinflussen kunnen.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="general-knowledge-prompting">General Knowledge Prompting <a class="heading-anchor" href="#general-knowledge-prompting" aria-label="Link naar General Knowledge Prompting">#</a></h2>
+<p>General Knowledge Prompting erlaubt es de AI, ihr umfassendes training over mehrere Disziplinen hinweg tot benutten, de Informationsbeschaffung tot vereenvoudigen en een ganzheitliches Vpasändnis verschillender Themen tot leveren. Deze Funktion is insbesondere in Bildungs- en Trivia-Kontexten nützlich.</p>
+<p>U dient als unschätzbares tool voor Lehrkräfte, Studierende en nieuwgierige Köpfe en biedt een centrale Anlaufstelle voor Anfragen over Disziplinen hinweg. Deze disziplinübergrijpende kennissvernetzung erhöht de Nutzen van AI-Assistenten.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="react">ReAct <a class="heading-anchor" href="#react" aria-label="Link naar ReAct">#</a></h2>
+<p>ReAct maakt mogelijk es de AI, haar Ausgaben kritisch tot bewerten en op ihnen aufzubouwen — en fördert so een dynamisches, interaktives Gespräch. Deze Funktion is in kreativen Aufgaben en bij probleemlösen van voordeel, da ze de AI erlaubt, oudernative Perspektiven tot erklanten en nieuwartige oplossingen tot generieren.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="ethische-implikationen-in-ai-prompt-engineering">Ethische Implikationen in AI-prompt-Engineering <a class="heading-anchor" href="#ethische-implikationen-in-ai-prompt-engineering" aria-label="Link naar Ethische Implikationen in AI-prompt-Engineering">#</a></h2>
+<p>Da AI-Technologien zunehmend verschillende Aspekte de Gesellschaft durchdringen, worden de ethischen Implikationen des <strong>AI-prompt-Engineerings</strong> altijd bedeutsamer. Deze Teil untpasreicht de Bedeutung van Ethik in de ontwikkeling en gebruik van AI en schlägt praktische Regeln en Strukturen vóór, um sicherzustellen, dat AI ethisch gestoudet wordt.</p>
+<h3 id="de-ethische-landschaft-begrijpen">De ethische landschaft begrijpen <a class="heading-anchor" href="#de-ethische-landschaft-begrijpen" aria-label="Link naar De ethische landschaft begrijpen">#</a></h3>
+<p>De <strong>ethische landschaft</strong> in de AI gliedert sich um sleutelprinzipien zoals Fairness, Verantwortlichkeit, Transparenz en privacy. Im domein des Prompt Engineering bedeuten deze Prinzipien de ontwikkeling van AI-modellenn, de Voreingenommenheit, Stereotype of unethisches Verhouden niet fortschreiben. Es is doorslaggevend tot erkennen, dat AI-modellen vaak de Daten widerspiegeln, op denen ze trainooitrt werden — Daten, de voreingenommene historische of soziale Inhoude enthouden kunnen. Ethisches Prompt-Design moet daarom aktiv darauf hinwirken, deze Voreingenommenheiten tot mildern en sicherzustellen, dat AI-Ausgaben fair en gerecht zijn.</p>
+<h3 id="praktische-leitlinooitn-voor-ethisches-prompt-engineering">Praktische Leitlinooitn voor ethisches Prompt Engineering <a class="heading-anchor" href="#praktische-leitlinooitn-voor-ethisches-prompt-engineering" aria-label="Link naar Praktische Leitlinooitn voor ethisches Prompt Engineering">#</a></h3>
+<p>Vielfältige en inklusive trainingsdaten voor AI-modellen helfen, Voreingenommenheit in antwoorden tot reduzieren, doordat verschillende Demografien, Kulturen en Sichtweisen repräsentiert worden.</p>
+<ul>
+<li><strong>Regelmäßige Bias-Audits</strong>: Führen Sie regelmäßige Audits de AI-modellen door, um ongeveerige Voreingenommenheiten tot identifizieren en tot adressieren. Deze Audits zouden moeten vielfältige Teams einbeziehen, um een umfassende beoordeling de AI-Leistung uit mehreren Perspektiven sicherzustellen.</li>
+<li><strong>Transparenz in de AI-beslissingsfindung</strong>: Wahren Sie Transparenz daarover, zoals AI-modellen tot Schlussfolgerungen gelangen — insbesondere in risikobehafteten domeinen zoals Gesundheitswesen en financiën. Het umfasst de Gestoudung van Prompts, de de AI dazu anhouden, haar Argumentation tot erläutern, sodass gebruikers AI-beslissingen leichter nachvollziehen en ihnen vertrauen kunnen.</li>
+<li><strong>privacy en Datensicherheit</strong>: Wahren Sie strenge standaards voor privacy en Datensicherheit, um sensible gebruikersinformationen tot beschermen. Dazu gehört de Gestoudung van Prompts, de de AI niet dazu anregen of verpflichten, personenbezogene gebruikersdaten over het Noodzakelijke uit tot speichern of abzurufen.</li>
+<li><strong>Ermogelijken Sie es gebruikersn, de Daten tot kontrollieren</strong>, de ze met AI-systeemen delen — door Einwilligung en de mogelijkheid, sich abzumelden of Datenpräferenzen tot ändern.</li>
+<li>Richten Sie Ethik-Prüfungsausschüsse een, de AI-Projekte beaufsichtigen — insbesondere solche, de sensible domeine zoals psychische Gesundheitsuntpasützung of juristische advies betreffen. Deze Gremien kunnen Orientierung en toezicht bieden, um de Einhoudung ethischer standaards tot waarborgen.</li>
+</ul>
+<h3 id="rahmenwerke-voor-ethische-ai-ontwikkeling">Rahmenwerke voor ethische AI-ontwikkeling <a class="heading-anchor" href="#rahmenwerke-voor-ethische-ai-ontwikkeling" aria-label="Link naar Rahmenwerke voor ethische AI-ontwikkeling">#</a></h3>
+<p>Etablierte Rahmenwerke voor de <strong>ethische AI-ontwikkeling</strong> tot übernehmen, kan Prompt-Ingenooiture bij de Schaffung verantwortungsvoller AI-modellen leiten. Verschiedene Rahmenwerke zoals het Ethically Aligned Design des IEEE en de Ethics Guidelines de EU behandeln AI-Ethik in domeinen zoals Transparenz, Verantwortlichkeit en gesellschaftliche impact. De Integration deze Rahmenwerke in de AI-ontwikkelingsprozess sichert een umfassenden aanpak voor ethisches AI-Design.</p>
+<h3 id="kunftigen-ethischen-uitdagingen-begegnen">Künftigen ethischen uitdagingen begegnen <a class="heading-anchor" href="#kunftigen-ethischen-uitdagingen-begegnen" aria-label="Link naar Künftigen ethischen uitdagingen begegnen">#</a></h3>
+<p>Mit de weiteren ontwikkeling de AI worden nieuwe <strong>ethische uitdagingen</strong> entstehen. So wirft bijvoorbeeld de Integration van AI in Justizsysteme of autonome Fahrzeuge komplexe ethische vraagn tot beslissingsfindung en Haftung op. Prompt-Ingenooiture moeten sich over deze ontwikkelingen informiert houden en haar ethischen praktijken entsprechend anpassen. Dies vereist continue Bildung, samenwerking met Ethikexperten en Domänenexperten sowie öffentliches Engagement, um gesellschaftliche Anliegen en Erwartungen tot begrijpen.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="fazit">Fazit <a class="heading-anchor" href="#fazit" aria-label="Link naar Fazit">#</a></h2>
+<p>Abschließend zijn ethische Erwägungen in AI-prompt-Engineering niet alleen een technische noodzaak, sondern een gesellschaftliche Verantwortung. Indem Prompt-Ingenooiture Leitlinooitn en ethischen Rahmenwerken folgen, kunnen ze een nutzbringenden, fairen en ausgerichteten inzet van AI-Technologien sichpasellen.</p>
+<p>AI-prompt-Engineering ontwikkeld sich rasant weiter — met erheblichen Implikationen voor Technologie en financiën. De Beherrschung deze Disziplin is doorslaggevend, um het volle Potenzial de AI auszuschöpfen — van de Datenanalyse bis tot Sprachübersetzung. Het Feld wordt voraussichtlich anspruchsvollere tools en Technologien hervorbringen, de de efficiëntie en effectiviteit des Prompt Engineerings erhöhen.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<aside class="author-card" aria-label="Over de auteur"><img alt="Portret van Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/nl/over/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior technoloog in banking; schrijft over toegepaste AI, ISO 20022-migratie, post-kwantumcryptografie voor financiële dienstverlening en de structurele transformatie van het wholesale-betalingsverkeer.</span><span class="author-credentials">20+ jaar ervaring bij HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/nl/over/index.html">Volledig profiel</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Laatst herzien <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Verwante artikelen</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2024-01-01-ai-trends-2024-inzichten-en-voorspellingen/index.html" class="related-media" aria-label="AI-trends 2024: inzichten en voorspellingen voor de toekomst" tabindex="-1"><img alt="Drone View of London" src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-trends-2024-inzichten-en-voorspellingen-voor-de-toekomst"><a href="https://sebastienrousseau.com/nl/2024-01-01-ai-trends-2024-inzichten-en-voorspellingen/index.html">AI-trends 2024: inzichten en voorspellingen voor de toekomst</a> <a class="heading-anchor" href="#ai-trends-2024-inzichten-en-voorspellingen-voor-de-toekomst" aria-label="Link naar AI-trends 2024: inzichten en voorspellingen voor de toekomst">#</a></h3><p><time datetime="2024-01-01">2024-01-01</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2023-12-25-financien-revolutioneren-met-door-ai-versterkte-kwantumalgoritmen/index.html" class="related-media" aria-label="Financiën revolutioneren met door AI versterkte kwantumalgoritmen" tabindex="-1"><img alt="Financiën revolutioneren met door AI versterkte kwantumalgoritmen" src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="financien-revolutioneren-met-door-ai-versterkte-kwantumalgoritmen"><a href="https://sebastienrousseau.com/nl/2023-12-25-financien-revolutioneren-met-door-ai-versterkte-kwantumalgoritmen/index.html">Financiën revolutioneren met door AI versterkte kwantumalgoritmen</a> <a class="heading-anchor" href="#financien-revolutioneren-met-door-ai-versterkte-kwantumalgoritmen" aria-label="Link naar Financiën revolutioneren met door AI versterkte kwantumalgoritmen">#</a></h3><p><time datetime="2023-12-25">2023-12-25</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2024-02-13-eu-ai-verordening-de-toekomst-van-wereldwijde-ai-regulering/index.html" class="related-media" aria-label="De EU AI-verordening: de toekomst van wereldwijde AI-regulering vormgeven" tabindex="-1"><img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="de-eu-ai-verordening-de-toekomst-van-wereldwijde-ai-regulering-vormgeven"><a href="https://sebastienrousseau.com/nl/2024-02-13-eu-ai-verordening-de-toekomst-van-wereldwijde-ai-regulering/index.html">De EU AI-verordening: de toekomst van wereldwijde AI-regulering vormgeven</a> <a class="heading-anchor" href="#de-eu-ai-verordening-de-toekomst-van-wereldwijde-ai-regulering-vormgeven" aria-label="Link naar De EU AI-verordening: de toekomst van wereldwijde AI-regulering vormgeven">#</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Artikelnavigatie"><a class="post-pagination-prev" href="/nl/2024-01-15-alien-studio-kunst-revolutie-met-ai-fotografie/"><span class="post-pagination-label">Vorige</span><span class="post-pagination-title">Alien Studio: My Tech-to Art Journey in Photography</span></a><a class="post-pagination-next" href="/nl/2024-01-29-door-ai-aangestuurde-audio-inzichten-analyse-vertalingen/"><span class="post-pagination-label">Volgende</span><span class="post-pagination-title">AI-Powered Speech Analysis, Translation, & Insight Tool</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/nl/over/index.html">Over mij</a></li>
+              <li><a href="/nl/contact/index.html">Contact</a></li>
+              <li><a href="/nl/gemaakt-met-statische-sitegenerator/index.html">Gemaakt met Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publicaties</h2>
+            <ul>
+              <li><a href="/nl/artikelen/index.html">Artikelen</a></li>
+              <li><a href="/nl/publicaties/index.html">Publicaties</a></li>
+              <li><a href="/nl/labels/index.html">Labels</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Werk</h2>
+            <ul>
+              <li><a href="/nl/projecten/index.html">Projecten</a></li>
+              <li><a href="/nl/afspeellijsten/index.html">Afspeellijsten</a></li>
+              <li><a href="/nl/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Netwerk</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Aanmelding nieuwsbrief">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — onderzoeksnotities over betalingen, AI en post-kwantumcryptografie. Geen spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="jij@bank.nl" />
+            <input type="hidden" name="_subject" value="Aanmelding nieuwsbrief — sebastienrousseau.com" />
+            <button type="submit">Abonneren</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden.</span>
+          <div class="social" aria-label="Sociale netwerken">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau op Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau op LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau op Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau op YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/nl/toegankelijkheid/index.html">Toegankelijkheid</a> ·
+            <a href="/nl/privacy/index.html">Privacy</a> ·
+            <a href="/nl/voorwaarden/index.html">Voorwaarden</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"nl"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"nl"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2108,"about":{"@type":"Thing","name":"Generative AI","sameAs":["https://en.wikipedia.org/wiki/Generative_artificial_intelligence","https://www.wikidata.org/wiki/Q108766533","https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"]},"headline":"Vooruitgang in AI-prompt-engineering","description":"Vooruitgang in AI-prompt-engineering — een verkenning van patronen, technieken en best practices voor het sturen van LLM-uitkomsten.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp","width":"100vw","height":"100vh","caption":"Visualisatie van prompt-engineering voor grote taalmodellen"},"url":"https://sebastienrousseau.com/nl/2024-01-23-vooruitgang-in-ai-prompt-engineering/","datePublished":"2024-01-23T05:06:06+00:00","dateModified":"2026-05-11","inLanguage":"nl","keywords":"Prompt engineering, AI, LLM, GPT, chain-of-thought, few-shot, best practices","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/nl/2024-01-23-vooruitgang-in-ai-prompt-engineering/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"nl"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/nl/"},{"@type":"ListItem","position":3,"name":"Vooruitgang in AI-prompt-engineering","item":"https://sebastienrousseau.com/nl/2024-01-23-vooruitgang-in-ai-prompt-engineering/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Zoeken">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Zoeken</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Zoeken">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Documentatie doorzoeken..." autocomplete="off" aria-label="Zoeken"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> sluiten</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigeren</span><span><kbd>Enter</kbd> openen</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

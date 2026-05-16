@@ -1,0 +1,289 @@
+{
+  "_comment": "Dutch chrome patches — DRAFT pending native-speaker review. Each entry is a [regex_pattern, replacement_string] pair applied to every translated page after build_chrome_patches() runs. Mirrors the inline portion of CHROME_PATCHES in build_translations.py (not the auto-generated portion from strings.json).",
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"Aanmelding nieuwsbrief\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum — onderzoeksnotities over betalingen, AI en post-kwantumcryptografie. Geen spam."
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"jij@bank.nl\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"Aanmelding nieuwsbrief — sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">Abonneren</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">Naar hoofdinhoud gaan</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"Navigatie omschakelen\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"Navigatie omschakelen\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"Hoofdnavigatie\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"Donker thema inschakelen\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"Licht thema inschakelen\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"Thema wisselen\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"Zoeken (Cmd of Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"Zoeken (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"Neem contact op\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Neem contact op ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">Neem contact op</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Startpagina van Sebastien Rousseau\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/nl/over/index.html\">Over mij</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/nl/publicaties/index.html\">Publicaties</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/nl/onderwerpen/index.html\">Onderwerpen</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/nl/projecten/index.html\">Projecten</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/nl/artikelen/index.html\">Artikelen</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/nl/contact/index.html\">Contact</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/nl/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/nl/afspeellijsten/index.html\">Afspeellijsten</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"Naar boven\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">Publicaties</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">Werk</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">Netwerk</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/nl/over/index.html\">Over mij</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/nl/gemaakt-met-statische-sitegenerator/index.html\">Gemaakt met Static Site Generator</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/nl/publicaties/index.html\">Publicaties</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/nl/labels/index.html\">Labels</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/nl/projecten/index.html\">Projecten</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/nl/afspeellijsten/index.html\">Afspeellijsten</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/nl/contact/index.html\">Contact</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/nl/artikelen/index.html\">Artikelen</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"Sociale netwerken\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau op "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau op "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"Zwart-witportret van Sebastien Rousseau\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Copyright 2007 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden."
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/nl/toegankelijkheid/index.html\">Toegankelijkheid</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/nl/privacy/index.html\">Privacy</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/nl/voorwaarden/index.html\">Voorwaarden</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"Documentatie doorzoeken...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"Zoeken\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> sluiten"
+    ],
+    [
+      "navigate</span>",
+      "navigeren</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> openen"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>Zoeken</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"Taal\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"NL, Taal wijzigen\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"Taal wijzigen\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"Binnenkort beschikbaar\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">NL</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"Atom-feed\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"RSS-feed\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"Artikelsamenvatting\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>Belangrijkste punten</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>Verwante artikelen:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">Verwante artikelen</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">Laatst herzien <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"Over de auteur\""
+    ],
+    [
+      ">Full profile</a>",
+      ">Volledig profiel</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"Portret van Sebastien Rousseau\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">Neem contact op</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Start een gesprek</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/articles/index.html\">Lees het laatste onderzoek</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/contact/index.html\">Neem contact op</a>"
+    ]
+  ]
+}
