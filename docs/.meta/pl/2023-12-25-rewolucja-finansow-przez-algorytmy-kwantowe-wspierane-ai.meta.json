@@ -1,11 +1,11 @@
 {
-  "keywords": "AI, kwantowe algorytmy, finanse, IBM Qiskit, optymalizacja, machine learning",
-  "subtitle": "AI i kwantowe algorytmy razem dla finansów następnej generacji",
-  "date": "Dec 25, 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
-  "banner_alt": "Hybrydowy obwód kwantowy z elementami AI",
-  "title": "Rewolucja finansów dzięki algorytmom kwantowym wspieranym AI",
-  "language": "pl-PL",
   "locale": "pl_PL",
-  "description": "Transformacyjna rola AI w algorytmach kwantowych dla finansów: struktura matematyczna i zastosowania bankowe."
+  "title": "Rewolucja finansów dzięki algorytmom kwantowym wspieranym AI",
+  "subtitle": "AI i kwantowe algorytmy razem dla finansów następnej generacji",
+  "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
+  "keywords": "AI, kwantowe algorytmy, finanse, IBM Qiskit, optymalizacja, machine learning",
+  "banner_alt": "Hybrydowy obwód kwantowy z elementami AI",
+  "description": "Transformacyjna rola AI w algorytmach kwantowych dla finansów: struktura matematyczna i zastosowania bankowe.",
+  "language": "pl-PL",
+  "date": "Dec 25, 2023"
 }

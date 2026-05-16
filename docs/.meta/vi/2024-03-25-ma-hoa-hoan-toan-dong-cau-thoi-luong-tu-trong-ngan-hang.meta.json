@@ -1,11 +1,11 @@
 {
-  "description": "Cách mã hoá hoàn toàn đồng cấu (FHE) cách mạng hoá bảo mật dữ liệu trong ngân hàng và dịch vụ tài chính, bảo vệ quyền riêng tư trước các mối đe doạ thời lượng tử.",
-  "date": "March 25, 2024",
-  "title": "Mã hoá hoàn toàn đồng cấu trong kỷ nguyên lượng tử ngân hàng",
-  "banner": "https://cloudcdn.pro/stocks/images/fhe-banner.webp",
-  "language": "vi-VN",
   "keywords": "FHE, mã hoá đồng cấu, mật mã, ngân hàng, quyền riêng tư, lattice, mạng tinh thể, hậu lượng tử",
+  "banner": "https://cloudcdn.pro/stocks/images/fhe-banner.webp",
+  "locale": "vi_VN",
+  "date": "March 25, 2024",
   "subtitle": "Tính toán trên dữ liệu được mã hoá mà không cần giải mã",
+  "description": "Cách mã hoá hoàn toàn đồng cấu (FHE) cách mạng hoá bảo mật dữ liệu trong ngân hàng và dịch vụ tài chính, bảo vệ quyền riêng tư trước các mối đe doạ thời lượng tử.",
+  "title": "Mã hoá hoàn toàn đồng cấu trong kỷ nguyên lượng tử ngân hàng",
   "banner_alt": "Sơ đồ trừu tượng của mã hoá hoàn toàn đồng cấu",
-  "locale": "vi_VN"
+  "language": "vi-VN"
 }

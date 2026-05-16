@@ -1,12 +1,12 @@
 {
-  "description": "OpenVoice、オープンソース音声クローン技術、銀行業務における不正、認証、プライバシーへのその意味。",
-  "date": "April 1, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp",
-  "title": "OpenVoice:音声クローン技術の最先端革新",
-  "language": "ja-JP",
   "locale": "ja_JP",
-  "keywords": "OpenVoice, 音声クローン, 音声 AI, ディープフェイク, 不正, 銀行認証, ボイスバイオメトリクス",
-  "last_reviewed": "2026-05-11",
+  "subtitle": "オープンソース音声クローンと、フィンテックでのその意味",
   "banner_alt": "マイクと音声のビジュアル",
-  "subtitle": "オープンソース音声クローンと、フィンテックでのその意味"
+  "description": "OpenVoice、オープンソース音声クローン技術、銀行業務における不正、認証、プライバシーへのその意味。",
+  "banner": "https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp",
+  "date": "April 1, 2024",
+  "title": "OpenVoice:音声クローン技術の最先端革新",
+  "keywords": "OpenVoice, 音声クローン, 音声 AI, ディープフェイク, 不正, 銀行認証, ボイスバイオメトリクス",
+  "language": "ja-JP",
+  "last_reviewed": "2026-05-11"
 }
