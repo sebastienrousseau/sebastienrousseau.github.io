@@ -311,6 +311,7 @@ class _PostbuildCounters:
     __slots__ = (
         "about_patched",
         "anchor_patched",
+        "asset_fp_patched",
         "citation_patched",
         "csp_patched",
         "furniture_patched",
@@ -356,6 +357,60 @@ _LOCALHOST_HOST_RE = re.compile(
 )
 
 
+# Build the bare-name → fingerprinted-name map once, at module import time —
+# every page references the same assets, so the lookup is shared.
+_FP_ASSET_MAP: dict[str, str] = {}
+for _fp in PUBLIC.glob("main.*.js"):
+    if _fp.stem.count(".") == 1:  # e.g. "main.b5833c97" (one dot before suffix)
+        _FP_ASSET_MAP["/main.js"] = "/" + _fp.name
+for _fp in PUBLIC.glob("highlight.*.css"):
+    if _fp.stem.count(".") == 1:
+        _FP_ASSET_MAP["/highlight.css"] = "/" + _fp.name
+
+
+# Match the bare-name asset reference in `<script src=...>` / `<link href=...>`.
+# Quoted ("/main.js") and unquoted (src=/main.js) forms — SSG's minifier emits
+# the unquoted form for short attribute values.
+def _build_fp_pattern() -> re.Pattern[str] | None:
+    if not _FP_ASSET_MAP:
+        return None
+    bares = sorted(_FP_ASSET_MAP, key=len, reverse=True)
+    alternation = "|".join(re.escape(b) for b in bares)
+    return re.compile(
+        r'(<(?:script|link)\b[^>]*\b(?:src|href)=["\']?)('
+        + alternation
+        + r')(["\']?[^>]*>)',
+        re.IGNORECASE,
+    )
+
+
+_FP_PATTERN = _build_fp_pattern()
+
+
+def stamp_asset_fingerprints(html: str) -> tuple[str, int]:
+    """Rewrite bare ``/main.js`` / ``/highlight.css`` references in
+    ``<script src>`` / ``<link href>`` tags to their fingerprinted
+    counterparts (``/main.b5833c97.js``, ``/highlight.a92b9694.css``).
+
+    The bare-name aliases are kept on disk by ``build.sh`` for any
+    code path that still references them (service-worker fetches,
+    legacy bookmarks), but every HTML page should reference the
+    fingerprinted name so that an edge cache (Cloudflare/Fastly) is
+    forced to fetch fresh bytes whenever the file content changes.
+
+    Returns ``(new_html, swaps)``."""
+    if _FP_PATTERN is None:
+        return html, 0
+    n = 0
+
+    def replace(m: re.Match[str]) -> str:
+        nonlocal n
+        n += 1
+        return m.group(1) + _FP_ASSET_MAP[m.group(2)] + m.group(3)
+
+    return _FP_PATTERN.sub(replace, html), n
+
+
 def scrub_localhost_urls(html: str) -> tuple[str, int]:
     """Replace any ``http://127.0.0.1[:port]`` or ``http://localhost[:port]``
     leftover inside the page (typically <link rel="canonical"> or the
@@ -378,6 +433,8 @@ def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     """
     out, n_lh = scrub_localhost_urls(html)
     ctr.localhost_patched += n_lh
+    out, n_fp = stamp_asset_fingerprints(out)
+    ctr.asset_fp_patched += n_fp
     prev = out
     out = fix_sri(out)
     if out != prev:
@@ -615,6 +672,7 @@ def main() -> None:
     print(
         f"postbuild: {len(pages)} HTML pages, "
         f"{c.localhost_patched} got localhost→prod scrubbed, "
+        f"{c.asset_fp_patched} got asset URLs fingerprinted, "
         f"{c.sri_patched} got real SRI, "
         f"{c.itemlist_patched} got ItemList JSON-LD, "
         f"{c.social_patched} got og:image fixed, "
