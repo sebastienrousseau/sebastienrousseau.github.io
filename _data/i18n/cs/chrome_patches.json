@@ -1,0 +1,289 @@
+{
+  "_comment": "Czech chrome patches — DRAFT pending native review.",
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"Přihlášení k odběru newsletteru\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum — výzkumné poznámky o platbách, AI a postkvantové kryptografii. Žádný spam."
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"vy@banka.cz\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"Přihlášení k odběru newsletteru — sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">Přihlásit se k odběru</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">Přeskočit na hlavní obsah</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"Přepnout navigaci\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"Přepnout navigaci\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"Hlavní navigace\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"Přepnout na tmavý motiv\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"Přepnout na světlý motiv\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"Přepnout motiv\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"Hledat (Cmd nebo Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"Hledat (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"Kontaktovat\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Kontaktovat ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">Kontaktovat</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Domovská stránka Sebastien Rousseau\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/cs/o-mne/index.html\">O mně</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/cs/publikace/index.html\">Publikace</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/cs/temata/index.html\">Témata</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/cs/projekty/index.html\">Projekty</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/cs/clanky/index.html\">Články</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/cs/kontakt/index.html\">Kontakt</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/cs/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/cs/playlisty/index.html\">Playlists</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"Zpět nahoru\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">Publikace</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">Actividad</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">Kontakt</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/cs/o-mne/index.html\">O mně</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/cs/vytvoreno-statickym-generatorem/index.html\">Vytvořeno se Static Site Generator</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/cs/publikace/index.html\">Publikace</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/cs/stitky/index.html\">Štítky</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/cs/projekty/index.html\">Projekty</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/cs/playlisty/index.html\">Playlists</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/cs/kontakt/index.html\">Kontakt</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/cs/clanky/index.html\">Články</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"Sociální odkazy\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau na "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau na "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"Černobílý portrét Sebastiena Rousseaua\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Copyright 2007 - 2026 - Sebastien Rousseau. Všechna práva vyhrazena."
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/cs/pristupnost/index.html\">Přístupnost</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/cs/soukromi/index.html\">Soukromí</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/cs/podminky/index.html\">Podmínky</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"Hledat v dokumentaci...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"Hledat\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> zavřít"
+    ],
+    [
+      "navigate</span>",
+      "navigovat</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> otevřít"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>Hledat</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"Jazyk\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"CS, změnit jazyk\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"Změnit jazyk\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"Již brzy\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">CS</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"Atom feed\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"RSS feed\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"Shrnutí článku\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>Klíčové body</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>Související četba:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">Související četba</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">Naposledy revidováno <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"O autorovi\""
+    ],
+    [
+      ">Full profile</a>",
+      ">Celý profil</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"Portrét Sebastiena Rousseaua\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">Kontaktovat</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Zahájit konverzaci</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/articles/index.html\">Číst nejnovější výzkum</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/contact/index.html\">Kontaktovat</a>"
+    ]
+  ]
+}

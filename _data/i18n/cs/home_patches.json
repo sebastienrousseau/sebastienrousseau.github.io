@@ -1,0 +1,317 @@
+{
+  "_comment": "Czech home patches — DRAFT pending native review.",
+  "patches": [
+    [
+      ">Authored &amp; maintained<",
+      ">Vytvořeno a udržováno<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">Vytvořeno a udržováno<"
+    ],
+    [
+      ">Shaping the future of banking<br>through AI, payments,<br>and quantum-safe security\\.</h1>",
+      ">Utvářet budoucnost bankovnictví<br>pomocí AI, plateb<br>a kvantově odolné bezpečnosti.</h1>"
+    ],
+    [
+      ">Applying AI and quantum-safe security to the future of payments\\.</p>",
+      ">Aplikace AI a kvantově odolné bezpečnosti na budoucnost plateb.</p>"
+    ],
+    [
+      "id=practice>Open source for the<br>future of finance\\.</h2>",
+      "id=practice>Open source pro<br>budoucnost financí.</h2>"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">Open source pro budoucnost financí.<"
+    ],
+    [
+      ">A portfolio of Python, Rust and JavaScript libraries I created and maintain\\. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography\\.<",
+      ">Portfolio knihoven Python, Rust a JavaScript, které vytvářím a udržuji. Open-source, zdarma k použití, aplikované na velkoobchodní platby, přeshraniční zúčtování, finanční data a kvantově odolnou kryptografii.<"
+    ],
+    [
+      ">Browse all projects<",
+      ">Ver todos los projekty<"
+    ],
+    [
+      ">Python · Payments<",
+      ">Python · Pagos<"
+    ],
+    [
+      ">Python · Cross-border<",
+      ">Python · Transfronterizo<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · Finanzas<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · Seguridad<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · Kvantum<"
+    ],
+    [
+      ">Rust · YAML<",
+      ">Rust · YAML<"
+    ],
+    [
+      ">Learn about ([A-Za-z0-9 ()_-]+)</a>",
+      ">Více informací o \\1</a>"
+    ],
+    [
+      "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
+      "<p>Knihovna Python automatizující tvorbu platebních souborů <strong>ISO 20022 pain.001</strong> z CSV nebo SQLite. Navržena pro globální migraci z MT/MX na strukturované zprávy ve SWIFT, SEPA a hlavních schématech.</p>"
+    ],
+    [
+      "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
+      "<p>Generuje, ověřuje a doručuje zprávy <strong>ISO 20022 pacs.008</strong> pro převody mezi finančními institucemi. JSON Schema, validace XSD, IBAN v 75 zemích, maskování osobních údajů podle GDPR/PCI-DSS.</p>"
+    ],
+    [
+      "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
+      "<p>Sada nástrojů Python finanční kvality, která převádí bankovní výpisy v různých formátech na strukturovaná data. Určeno pro reálné soubory výpisů a auditní požadavky regulovaných prostředí.</p>"
+    ],
+    [
+      "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
+      "<p>Knihovna Rust implementující <strong>bezpečné hash a digest algoritmy</strong> pro šifrování a ověřování hesel. Navržena s kvantově odolnou pozicí pro post-PQC éru autentizace.</p>"
+    ],
+    [
+      "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
+      "<p>Robustní implementace <strong>CRYSTALS-Kyber</strong> v Rustu, standardu NIST FIPS 203 pro postkvantové šifrování. Základ kvantově odolné autentizace plateb.</p>"
+    ],
+    [
+      "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
+      "<p><strong>Ekosystém YAML 1.2 100% v Rustu</strong>. Nula unsafe, 100% soulad se specifikací (406 / 406 oficiální suity), streaming-first serde, bezztrátová CST a validace JSON-Schema. Knihovna + CLI (noyafmt, noyavalidate) + LSP + MCP + bindings WASM.</p>"
+    ],
+    [
+      "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
+      "Kvantové výpočty ohrožují kryptografické základy finančních služeb. Platby — od reálného času po přeshraniční zúčtování — závisí na ochranách, které kvantové výpočty nakonec znehodnotí."
+    ],
+    [
+      ">Quantum-Safe Payments white paper · September 2025 · Read the paper<",
+      ">Bílá kniha Quantum-Safe Payments · září 2025 · číst bílou knihu<"
+    ],
+    [
+      ">Read the paper<",
+      ">Číst bílou knihu<"
+    ],
+    [
+      ">Quantum-Safe Payments\\.</h2>",
+      ">Kvantově odolné platby.</h2>"
+    ],
+    [
+      ">Quantum-Safe Payments\\.<",
+      ">Kvantově odolné platby.<"
+    ],
+    [
+      ">Industry white paper for the Emerging Payments Association Asia\\.\\s*The structural threat quantum computing poses to payment infrastructure, and the case for coordinated action now\\.<",
+      ">Oborová bílá kniha pro Emerging Payments Association Asia. Strukturální hrozba, kterou kvantové výpočty představují pro platební infrastrukturu, a argumenty pro koordinovanou akci nyní.<"
+    ],
+    [
+      ">Why the payments industry must act now\\.<",
+      ">Proč musí platební odvětví jednat hned.<"
+    ],
+    [
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
+      ">Regulátoři považují „sklízej teď, dešifruj později“ za věrohodné současné riziko. Tato bílá kniha popisuje strukturální hrozbu a naléhavou potřebu koordinované akce na velkoobchodních platebních kolejích.</p>"
+    ],
+    [
+      ">Latest<",
+      ">Nedávné<"
+    ],
+    [
+      ">From the desk\\.<",
+      ">Od pracovního stolu.<"
+    ],
+    [
+      ">Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments\\.<",
+      ">Nedávný výzkum a články o kvantově odolné kryptografii, migraci na ISO 20022 a budoucnosti velkoobchodních plateb.<"
+    ],
+    [
+      "<p class=newsroom-excerpt>Stablecoins cannot pay yield under the GENIUS Act\\. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail\\.</p>",
+      "<p class=newsroom-excerpt>Stablecoiny nemohou platit výnos podle GENIUS Act. Registry BRSRV a BSTBL od BlackRock ukazují obchvat: tokenizovaný peněžní fond běžící paralelně s regulovaným stablecoinem pro doručení výnosu přes sousední, soulad zachovávající kolej.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>Quantum risk has moved from research curiosity to active regulatory mandate\\. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate\\.</p>",
+      "<p class=newsroom-excerpt>El riesgo cuántico ha pasado de curiosidad investigadora a mandato regulatorio activo. Con la hoja de ruta del G7 publicada en leden de 2026 y el BIS Project Leap demostrando viabilidad en sistemata de pago en producción, la pregunta en el consejo ya no es si migrar.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\\.</p>",
+      "<p class=newsroom-excerpt>Od listopadu 2026 SWIFT CBPR+ odmítá nestrukturované poštovní adresy v přeshraničních platebních zprávách. Šest měsíců před deadlineм 65 % zpráv pacs.008 stále posílá nesouladné adresy a 44 % bank zaostává v programu nápravy.</p>"
+    ],
+    [
+      ">See all articles\\b",
+      ">Zobrazit všechny články"
+    ],
+    [
+      "<p class=feat-eyebrow>Get in touch</p>",
+      "<p class=feat-eyebrow>Kontaktovat</p>"
+    ],
+    [
+      ">Unlocking the Future of Banking and Financial Services\\.<br>Discover the latest news from</h2>",
+      ">Odemkněte budoucnost bankovnictví a finančních služeb.<br>Objevte nejnovější analýzy od</h2>"
+    ],
+    [
+      "<p class=\\\"feat-sub center\\\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.</p>",
+      "<p class=\"feat-sub center\">Strategie velkoobchodních plateb, migrace na ISO 20022 nebo kvantově odolná kryptografie pro finanční služby — rád si promluvím.</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Zahájit konverzaci</a>"
+    ],
+    [
+      "<a class=pill href=\"?/articles/index\\.html\"?>Read latest research</a>",
+      "<a class=pill href=\"/cs/clanky/index.html\">Číst nejnovější výzkum</a>"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/cs/kontakt/index.html\">Kontaktovat</a>"
+    ],
+    [
+      "href=\"?/papers/index\\.html\"?>Read the paper</a>",
+      "href=\"/cs/publikace/index.html\">Číst bílou knihu</a>"
+    ],
+    [
+      "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
+      "href=\"/cs/2026-05-15-skryty-vynos-blackrock-brsrv-bstbl-genius-act/index.html\">Číst článek</a>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Writing</h2>",
+      "<h2 class=ap-foot-title>Publikace</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Work</h2>",
+      "<h2 class=ap-foot-title>Actividad</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Reach</h2>",
+      "<h2 class=ap-foot-title>Kontakt</h2>"
+    ],
+    [
+      "<a href=/about/index\\.html>About</a>",
+      "<a href=/cs/o-mne/index.html>O mně</a>"
+    ],
+    [
+      "<a href=/papers/index\\.html>Papers</a>",
+      "<a href=/cs/publikace/index.html>Publikace</a>"
+    ],
+    [
+      "<a href=/projects/index\\.html>Projects</a>",
+      "<a href=/cs/projekty/index.html>Projekty</a>"
+    ],
+    [
+      "<a href=/playlists/index\\.html>Playlists</a>",
+      "<a href=/cs/playlisty/index.html>Playlists</a>"
+    ],
+    [
+      "<a href=/contact/index\\.html>Contact</a>",
+      "<a href=/cs/kontakt/index.html>Kontakt</a>"
+    ],
+    [
+      "<a href=/tags/index\\.html>Tags</a>",
+      "<a href=/cs/stitky/index.html>Štítky</a>"
+    ],
+    [
+      "<a href=/articles/index\\.html>Articles</a>",
+      "<a href=/cs/clanky/index.html>Články</a>"
+    ],
+    [
+      "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
+      "<a href=/cs/vytvoreno-statickym-generatorem/index.html>Vytvořeno se Static Site Generator</a>"
+    ],
+    [
+      "<a href=/accessibility/index\\.html>Accessibility</a>",
+      "<a href=/cs/pristupnost/index.html>Přístupnost</a>"
+    ],
+    [
+      "<a href=/privacy/index\\.html>Privacy</a>",
+      "<a href=/cs/soukromi/index.html>Soukromí</a>"
+    ],
+    [
+      "<a href=/terms/index\\.html>Terms</a>",
+      "<a href=/cs/podminky/index.html>Podmínky</a>"
+    ],
+    [
+      ">Experience<",
+      ">Zkušenosti<"
+    ],
+    [
+      ">Brands along the way\\.<",
+      ">Značky po cestě.<"
+    ],
+    [
+      ">From global Tier-1 banks to consumer technology\\. Payments and digital product leadership across HSBC, PayPal, Barclays, Shazam, AKQA and Virgin Group\\.</p>",
+      ">Od globálních bank prvního stupně až po spotřebitelské technologie. Produktové vedení v platbách a digitálních službách v HSBC, PayPal, Barclays, Shazam, AKQA a Virgin Group.</p>"
+    ],
+    [
+      "alt=\"PayPal logo\"",
+      "alt=\"Logo PayPal\""
+    ],
+    [
+      "alt=\"Barclays logo\"",
+      "alt=\"Logo Barclays\""
+    ],
+    [
+      "alt=\"Shazam logo\"",
+      "alt=\"Logo Shazam\""
+    ],
+    [
+      "alt=\"AKQA logo\"",
+      "alt=\"Logo AKQA\""
+    ],
+    [
+      "alt=\"Virgin logo\"",
+      "alt=\"Logo Virgin\""
+    ],
+    [
+      "alt=\"HSBC logo\"",
+      "alt=\"Logo HSBC\""
+    ],
+    [
+      ">Read more<",
+      ">Číst více<"
+    ],
+    [
+      ">Read the article<",
+      "<>Číst článek<"
+    ],
+    [
+      ">Read latest research<",
+      ">Číst nejnovější výzkum<"
+    ],
+    [
+      ">Read full article<",
+      "<>Číst celý článek<"
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Kontaktovat ›</a>"
+    ],
+    [
+      ">Payments · Stablecoins<",
+      ">Platby · Stablecoiny<"
+    ],
+    [
+      ">Payments · ISO 20022<",
+      ">Platby · ISO 20022<"
+    ],
+    [
+      ">Quantum<",
+      ">Kvantum<"
+    ],
+    [
+      ">Quantum · Banking<",
+      ">Kvantum · Bankovnictví<"
+    ],
+    [
+      ">Quantum · Cryptography<",
+      ">Kvantum · Kryptografie<"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">Číst bílou knihu</a>"
+    ]
+  ]
+}
