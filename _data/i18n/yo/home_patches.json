@@ -1,0 +1,317 @@
+{
+  "_comment": "Yorùbá (yo) home-page chrome patches — DRAFT pending native review. Pairs of [regex, replacement] applied to the EN homepage shell.",
+  "patches": [
+    [
+      ">Skip to main content</a>",
+      ">Fò sí àkóónú àkọ́kọ́</a>"
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Kàn sí wa ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">Kàn sí wa</a>"
+    ],
+    [
+      ">Read latest research<",
+      ">Ka ìwádìí tuntun<"
+    ],
+    [
+      ">Latest<",
+      ">Ka ìwádìí tuntun<"
+    ],
+    [
+      ">Read more<",
+      ">Ka ìwádìí tuntun<"
+    ],
+    [
+      "<h2 class=ap-foot-title>Writing</h2>",
+      "<h2 class=ap-foot-title>Àkọsílẹ̀</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Work</h2>",
+      "<h2 class=ap-foot-title>Iṣẹ́</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Reach</h2>",
+      "<h2 class=ap-foot-title>Kàn sí</h2>"
+    ],
+    [
+      "<a href=/about/index\\.html>About</a>",
+      "<a href=/yo/nipa-wa/index.html>About</a>"
+    ],
+    [
+      "<a href=/papers/index\\.html>Papers</a>",
+      "<a href=/yo/awon-iwe/index.html>Papers</a>"
+    ],
+    [
+      "<a href=/projects/index\\.html>Projects</a>",
+      "<a href=/yo/awon-ise/index.html>Projects</a>"
+    ],
+    [
+      "<a href=/playlists/index\\.html>Playlists</a>",
+      "<a href=/yo/akojopo-orin/index.html>Playlists</a>"
+    ],
+    [
+      "<a href=/contact/index\\.html>Contact</a>",
+      "<a href=/yo/kan-si-wa/index.html>Contact</a>"
+    ],
+    [
+      "<a href=/tags/index\\.html>Tags</a>",
+      "<a href=/yo/awon-ami/index.html>Tags</a>"
+    ],
+    [
+      "<a href=/articles/index\\.html>Articles</a>",
+      "<a href=/yo/awon-akole/index.html>Articles</a>"
+    ],
+    [
+      "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
+      "<a href=/yo/static-site-generator-lo-ti-se/index.html>Made with Static Site Generator</a>"
+    ],
+    [
+      "<a href=/accessibility/index\\.html>Accessibility</a>",
+      "<a href=/yo/ile-wiwole/index.html>Accessibility</a>"
+    ],
+    [
+      "<a href=/privacy/index\\.html>Privacy</a>",
+      "<a href=/yo/aabo-ikoko/index.html>Privacy</a>"
+    ],
+    [
+      "<a href=/terms/index\\.html>Terms</a>",
+      "<a href=/yo/awon-ofin/index.html>Terms</a>"
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Copyright 2007 - 2026 - Sebastien Rousseau. Gbogbo ẹtọ ti wa ni ipamọ."
+    ],
+    [
+      ">Latest research<",
+      ">Ka ìwádìí tuntun<"
+    ],
+    [
+      ">Featured articles<",
+      ">Ka ìwádìí tuntun<"
+    ],
+    [
+      ">All articles<",
+      ">Ka ìwádìí tuntun<"
+    ],
+    [
+      ">Read full article<",
+      ">Ka ìwádìí tuntun<"
+    ],
+    [
+      ">Newest first<",
+      ">Newest first<"
+    ],
+    [
+      ">Oldest first<",
+      ">Oldest first<"
+    ],
+    [
+      ">By topic<",
+      ">By topic<"
+    ],
+    [
+      ">All topics<",
+      ">All topics<"
+    ],
+    [
+      ">By tag<",
+      ">By tag<"
+    ],
+    [
+      ">All tags<",
+      ">All tags<"
+    ],
+    [
+      ">Published<",
+      ">Tẹ̀ jáde<"
+    ],
+    [
+      ">Updated<",
+      ">Sọdọtun<"
+    ],
+    [
+      ">Open source<",
+      ">Open source<"
+    ],
+    [
+      ">Subscribe<",
+      ">Forúkọsílẹ̀<"
+    ],
+    [
+      ">Follow<",
+      ">Follow<"
+    ],
+    [
+      ">Start a conversation<",
+      ">Bẹ̀rẹ̀ ìjíròrò<"
+    ],
+    [
+      ">Drop me a line<",
+      ">Kàn sí wa<"
+    ],
+    [
+      ">Learn more<",
+      ">Learn more<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">Authored & maintained<"
+    ],
+    [
+      ">Authored &amp; maintained<",
+      ">Authored &amp; maintained<"
+    ],
+    [
+      "alt=\"PayPal logo\"",
+      "alt=\"PayPal logo\""
+    ],
+    [
+      "alt=\"Barclays logo\"",
+      "alt=\"Barclays logo\""
+    ],
+    [
+      "alt=\"Shazam logo\"",
+      "alt=\"Shazam logo\""
+    ],
+    [
+      "alt=\"AKQA logo\"",
+      "alt=\"AKQA logo\""
+    ],
+    [
+      "alt=\"Virgin logo\"",
+      "alt=\"Virgin logo\""
+    ],
+    [
+      "alt=\"HSBC logo\"",
+      "alt=\"HSBC logo\""
+    ],
+    [
+      ">Read the white paper</a>",
+      ">Read the white paper</a>"
+    ],
+    [
+      ">Read the article<",
+      ">Read the article<"
+    ],
+    [
+      ">Read the paper<",
+      ">Read the paper<"
+    ],
+    [
+      ">See all articles\\b",
+      ">See all articles"
+    ],
+    [
+      ">Quantum<",
+      ">Quantum<"
+    ],
+    [
+      ">Quantum · Banking<",
+      ">Quantum · Banking<"
+    ],
+    [
+      ">Quantum · Cryptography<",
+      ">Quantum · Cryptography<"
+    ],
+    [
+      ">Payments · Stablecoins<",
+      ">Payments · Stablecoins<"
+    ],
+    [
+      ">Payments · ISO 20022<",
+      ">Payments · ISO 20022<"
+    ],
+    [
+      ">Python · Payments<",
+      ">Python · Payments<"
+    ],
+    [
+      ">Python · Cross-border<",
+      ">Python · Cross-border<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · Finance<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · Security<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · Quantum<"
+    ],
+    [
+      ">Rust · YAML<",
+      ">Rust · YAML<"
+    ],
+    [
+      ">Browse all projects<",
+      ">Browse all projects<"
+    ],
+    [
+      ">Experience<",
+      ">Experience<"
+    ],
+    [
+      ">Brands along the way\\.<",
+      ">Brands along the way.<"
+    ],
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"Ìforúkọsílẹ̀ ìwé ìròyìn\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Ilé Sebastien Rousseau\""
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"Yí ìwọ̀ndì padà\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"Tan àkòrí òkùnkùn\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"Tan àkòrí ìmọ́lẹ̀\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"Wá (Cmd tàbí Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"Wá (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"Kàn sí wa\""
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"Padà sí orí\""
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"Àwọn ọ̀nà àjọṣepọ̀\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"Àkójọ àkọlé\""
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"Nípa òǹkọ̀wé\""
+    ],
+    [
+      ">Full profile</a>",
+      ">Àkọsílẹ̀ kíkún</a>"
+    ]
+  ]
+}

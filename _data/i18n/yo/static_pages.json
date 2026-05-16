@@ -1,0 +1,115 @@
+{
+  "_comment": "Yorùbá (yo) static-page metadata — DRAFT pending native review.",
+  "404": {
+    "title": "404 — Sebastien Rousseau",
+    "subtitle": "Page not found.",
+    "description": "The requested page could not be found.",
+    "keywords": "404, not found",
+    "_draft": true
+  },
+  "about": {
+    "title": "About — Sebastien Rousseau",
+    "subtitle": "Shaping the future of banking and financial services through the strategic integration of AI, post-quantum cryptography and blockchain technology.",
+    "description": "Sebastien Rousseau, senior banking technologist: applied AI, ISO 20022 migration, post-quantum cryptography, structural transformation of wholesale payments.",
+    "keywords": "Sebastien Rousseau, biography, banking, payments, AI, ISO 20022, post-quantum cryptography, HSBC, PayPal, Barclays",
+    "_draft": true
+  },
+  "accessibility": {
+    "title": "Accessibility — Sebastien Rousseau",
+    "subtitle": "Committed to digital accessibility for people with disabilities.",
+    "description": "Accessibility statement: WCAG 2.2 AA compliance, inclusive principles, feedback and contact details for reporting issues.",
+    "keywords": "accessibility, WCAG, compliance, digital inclusion, audit",
+    "_draft": true
+  },
+  "articles": {
+    "title": "Articles — Sebastien Rousseau",
+    "subtitle": "Articles on AI, post-quantum cryptography, ISO 20022 and the future of payments.",
+    "description": "Articles on applied AI, post-quantum cryptography, ISO 20022 payments and the transformation of wholesale payments.",
+    "keywords": "articles, research, AI, post-quantum cryptography, ISO 20022, wholesale payments",
+    "_draft": true
+  },
+  "contact": {
+    "title": "Contact — Sebastien Rousseau",
+    "subtitle": "Have a question or need advice? Get in touch.",
+    "description": "Contact Sebastien Rousseau for consulting on payments transformation, ISO 20022 migration or post-quantum strategy.",
+    "keywords": "contact, consulting, payments, ISO 20022, post-quantum cryptography",
+    "_draft": true
+  },
+  "made-with-shokunin": {
+    "title": "Made with Shokunin — Sebastien Rousseau",
+    "subtitle": "Discover the next-generation static site generator.",
+    "description": "This site is made with Shokunin, a Rust-based static site generator optimised for performance and SEO.",
+    "keywords": "Shokunin, SSG, Rust, performance, SEO",
+    "_draft": true
+  },
+  "made-with-static-site-generator": {
+    "title": "Made with Static Site Generator — Sebastien Rousseau",
+    "subtitle": "Discover the next-generation static site generator.",
+    "description": "This site is generated with Shokunin, a fast Rust-based static site generator.",
+    "keywords": "Shokunin, static site generator, Rust, performance",
+    "_draft": true
+  },
+  "offline": {
+    "title": "Offline — Sebastien Rousseau",
+    "subtitle": "Check your connection and try again.",
+    "description": "You are offline. Please reconnect to access the content.",
+    "keywords": "offline, PWA",
+    "_draft": true
+  },
+  "papers": {
+    "title": "Papers — Sebastien Rousseau",
+    "subtitle": "Industry white papers and applied research for senior leaders in payments and security.",
+    "description": "Articles, reports and publications by Sebastien Rousseau on AI, ISO 20022 payments and post-quantum cryptography.",
+    "keywords": "papers, publications, reports, research, ISO 20022, AI, post-quantum cryptography",
+    "_draft": true
+  },
+  "playlists": {
+    "title": "Playlists — Sebastien Rousseau",
+    "subtitle": "Curated Spotify playlists for deep work, creativity and engineering mindset.",
+    "description": "Sebastien Rousseau's music selection.",
+    "keywords": "playlists, music",
+    "_draft": true
+  },
+  "privacy": {
+    "title": "Privacy Policy — Sebastien Rousseau",
+    "subtitle": "Your privacy matters.",
+    "description": "How this site collects, uses and protects your data. Anonymous analytics, cookies, hosting and GDPR rights.",
+    "keywords": "privacy, GDPR, cookies, personal data, analytics",
+    "_draft": true
+  },
+  "projects": {
+    "title": "Projects — Sebastien Rousseau",
+    "subtitle": "Open-source projects in Python, Rust and JavaScript for the future of finance.",
+    "description": "Portfolio of open-source libraries Sebastien Rousseau maintains for payments, cross-border settlement and quantum-resistant cryptography.",
+    "keywords": "open-source projects, Python, Rust, payments, ISO 20022, post-quantum cryptography",
+    "_draft": true
+  },
+  "tags": {
+    "title": "Tags — Sebastien Rousseau",
+    "subtitle": "Browse the site by topic: AI, payments, post-quantum cryptography, open source.",
+    "description": "Browse articles by tag: AI, ISO 20022, blockchain, post-quantum cryptography and more.",
+    "keywords": "tags, browse by topic",
+    "_draft": true
+  },
+  "terms": {
+    "title": "Terms of Use — Sebastien Rousseau",
+    "subtitle": "General terms of use of the site.",
+    "description": "General terms of use for sebastienrousseau.com: content licence, restrictions, trademarks and jurisdiction.",
+    "keywords": "terms, legal notice, licence, copyright",
+    "_draft": true
+  },
+  "thanks": {
+    "title": "Thanks — Sebastien Rousseau",
+    "subtitle": "Thank you for getting in touch!",
+    "description": "Thank you for your message. I will reply very soon.",
+    "keywords": "thanks",
+    "_draft": true
+  },
+  "topics": {
+    "title": "Topics — Sebastien Rousseau",
+    "subtitle": "Articles on AI, post-quantum cryptography, ISO 20022 and the future of payments.",
+    "description": "Explore analyses by theme: applied AI, ISO 20022 payments, post-quantum cryptography and transformation of wholesale payments.",
+    "keywords": "topics, themes, AI, payments, ISO 20022, post-quantum cryptography",
+    "_draft": true
+  }
+}
