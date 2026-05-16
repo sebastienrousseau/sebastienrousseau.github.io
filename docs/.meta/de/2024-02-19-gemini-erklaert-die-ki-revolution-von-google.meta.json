@@ -1,11 +1,11 @@
 {
-  "language": "de",
-  "description": "Googles Gemini 1.5 skaliert das Kontextfenster über die 1-Million-Token-Marke hinaus. Was das für retrieval-augmentierte Finanzanwendungen freischaltet — und welche Kompromisse zu kennen sind.",
-  "subtitle": "Eingehender Blick auf den jüngsten KI-Durchbruch von Google",
-  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
-  "date": "February 19, 2024",
-  "keywords": "Gemini 1.5, Google AI, Mixture-of-Experts-Architektur, Recheneffizienz, Erweiterung des Kontextfensters, KI-Innovation, Transformation der Datenanalyse, In-Context-Learning, KI-Anwendungsfälle, Technologierevolution",
-  "title": "Gemini 1.5 entschlüsselt: die KI-Revolution von Google erklärt",
   "banner_alt": "Abstrakte Visualisierung von KI-Netzwerken — als Sinnbild der Fähigkeiten von Gemini 1.5",
-  "locale": "de_DE"
+  "locale": "de_DE",
+  "subtitle": "Eingehender Blick auf den jüngsten KI-Durchbruch von Google",
+  "title": "Gemini 1.5 entschlüsselt: die KI-Revolution von Google erklärt",
+  "date": "February 19, 2024",
+  "language": "de",
+  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
+  "keywords": "Gemini 1.5, Google AI, Mixture-of-Experts-Architektur, Recheneffizienz, Erweiterung des Kontextfensters, KI-Innovation, Transformation der Datenanalyse, In-Context-Learning, KI-Anwendungsfälle, Technologierevolution",
+  "description": "Googles Gemini 1.5 skaliert das Kontextfenster über die 1-Million-Token-Marke hinaus. Was das für retrieval-augmentierte Finanzanwendungen freischaltet — und welche Kompromisse zu kennen sind."
 }

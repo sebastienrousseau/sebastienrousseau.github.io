@@ -1,11 +1,11 @@
 {
+  "keywords": "blockchain, Ethereum, smart contract, العملة المشفّرة, Solidity, Geth, dApps, ERC-20, الترميز, testnet",
+  "locale": "he_IL",
   "date": "January 9, 2018",
-  "subtitle": "بناء عملة مشفّرة على Ethereum، خطوةً خطوة",
   "banner_alt": "حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية",
   "language": "he-IL",
-  "description": "بناء عملة مشفّرة على بلوكشين Ethereum: دليل شامل لتطوير البلوكشين والترميز وتنفيذ العملات المشفّرة.",
-  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
+  "subtitle": "بناء عملة مشفّرة على Ethereum، خطوةً خطوة",
   "title": "فهم التقنية الكامنة وراء البلوكشين",
-  "keywords": "blockchain, Ethereum, smart contract, العملة المشفّرة, Solidity, Geth, dApps, ERC-20, الترميز, testnet",
-  "locale": "he_IL"
+  "description": "بناء عملة مشفّرة على بلوكشين Ethereum: دليل شامل لتطوير البلوكشين والترميز وتنفيذ العملات المشفّرة.",
+  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp"
 }

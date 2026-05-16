@@ -1,11 +1,11 @@
 {
-  "title": "Zrozumieć technologię stojącą za blockchainem",
   "date": "Jan 09, 2018",
-  "subtitle": "Funkcje skrótu, drzewa Merkle i konsensus w jednym",
-  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
+  "locale": "pl_PL",
   "language": "pl-PL",
+  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
+  "subtitle": "Funkcje skrótu, drzewa Merkle i konsensus w jednym",
   "banner_alt": "Schemat techniczny architektury blockchain",
   "keywords": "blockchain, kryptografia, funkcja skrótu, drzewo Merkle, proof-of-work, proof-of-stake, konsensus",
   "description": "Spojrzenie na techniczne fundamenty blockchain: funkcje hashujące, struktury Merkle, mechanizmy konsensusu i kryptografia.",
-  "locale": "pl_PL"
+  "title": "Zrozumieć technologię stojącą za blockchainem"
 }
