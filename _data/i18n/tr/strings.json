@@ -1,0 +1,65 @@
+{
+  "_comment": "Turkish UI strings — DRAFT pending native review. Key set MUST stay in sync with _data/i18n/en/strings.json — CI gate test_i18n_strings.py enforces parity.",
+
+  "nav.aria.skipToMain": "Ana içeriğe geç",
+  "nav.aria.toggleNav": "Gezinmeyi aç/kapat",
+  "nav.aria.toggleNavTitle": "Gezinmeyi aç/kapat",
+  "nav.aria.primary": "Ana gezinme",
+  "nav.aria.darkTheme": "Koyu temaya geç",
+  "nav.aria.lightTheme": "Açık temaya geç",
+  "nav.aria.themeToggleTitle": "Tema değiştir",
+  "nav.aria.searchKbd": "Ara (Cmd veya Ctrl + K)",
+  "nav.aria.searchTitle": "Ara (⌘K)",
+  "nav.aria.contactCTA": "İletişime geç",
+  "nav.contactCTA": "İletişime geç ›",
+  "nav.aria.brandHome": "Sebastien Rousseau ana sayfası",
+  "nav.aria.backToTop": "Yukarı dön",
+
+  "search.label": "Ara",
+  "search.placeholder": "Belgelerde ara...",
+  "search.kbdEsc": "kapat",
+  "search.kbdNavigate": "gezin",
+  "search.kbdEnter": "aç",
+  "search.buttonLabel": "Ara",
+
+  "footer.title.writing": "Yayınlar",
+  "footer.title.work": "Çalışmalar",
+  "footer.title.reach": "İletişim",
+  "footer.aria.socialLinks": "Sosyal bağlantılar",
+  "footer.aria.socialPrefix": "Sebastien Rousseau ",
+  "footer.copyright": "© Telif Hakkı 2007 - 2026 - Sebastien Rousseau. Tüm hakları saklıdır.",
+
+  "feeds.atomTitle": "Atom Akışı",
+  "feeds.rssTitle": "RSS Akışı",
+  "feeds.channelTitle": "Sebastien Rousseau — Türkçe baskı",
+  "feeds.channelDescription": "Türkçe makaleler: uygulamalı yapay zeka, ISO 20022 ödemeleri, post-kuantum kriptografi ve toptan ödemelerin dönüşümü.",
+  "feeds.channelCopyright": "© Telif Hakkı 2007 - 2026 - Sebastien Rousseau. Tüm hakları saklıdır.",
+  "feeds.jsonFeedTitle": "Sebastien Rousseau — Makaleler (Türkçe)",
+
+  "lang.aria.langGroup": "Dil",
+  "lang.aria.changeLangPrefix": "TR, Dili değiştir",
+  "lang.title.changeLang": "Dili değiştir",
+  "lang.title.comingSoon": "Yakında",
+  "lang.currentLabel": "TR",
+
+  "article.aria.summary": "Makale özeti",
+  "article.keyTakeaways": "Önemli Çıkarımlar",
+  "article.relatedReadingInline": "İlgili okumalar:",
+  "article.relatedHeading": "İlgili okumalar",
+  "article.lastReviewedLabel": "Son inceleme ",
+
+  "author.aria.aboutAuthor": "Yazar hakkında",
+  "author.fullProfile": "Tam profil",
+  "author.alt.portrait": "Sebastien Rousseau portresi",
+
+  "newsletter.aria.signup": "Bültene abone ol",
+  "newsletter.blurb": "Banking On Quantum — ödemeler, yapay zeka ve post-kuantum kriptografi üzerine araştırma notları. Spam yok.",
+  "newsletter.placeholder": "siz@banka.com.tr",
+  "newsletter.subject": "Bültene abonelik — sebastienrousseau.com",
+  "newsletter.submit": "Abone ol",
+
+  "home.eyebrow.contact": "İletişime geç",
+  "home.cta.startConversation": "Bir görüşme başlat",
+
+  "listing.readLatest": "Güncel araştırmaları oku"
+}

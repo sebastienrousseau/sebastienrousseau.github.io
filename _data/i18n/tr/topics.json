@@ -1,0 +1,23 @@
+{
+  "_comment": "Turkish topic-cluster titles + ledes — DRAFT pending native review. Topic slugs are language-independent; only the displayed name and lede change. EN equivalents live in scripts/build_topics.py (TOPICS dict).",
+  "post-quantum-cryptography": {
+    "title": "Post-kuantum kriptografi",
+    "lede": "Kafes tabanlı kriptografi, NIST PQC standartları, kuantuma dayanıklı ödemeler ve „şimdi topla, sonra çöz\" tehdidi. Finansal hizmetlerin güvenlik ekipleri için araştırma notları, açık kaynak kütüphaneleri ve geçiş kılavuzları."
+  },
+  "iso-20022-payments": {
+    "title": "ISO 20022 ve ödemeler",
+    "lede": "Sınır ötesi mesajların geçişi, yapılandırılmış adres uyumu, SEPA Instant, SWIFT gpi ve tüm sistemin dayandığı toptan ödeme rayları. Araçlar, kılavuzlar ve düzenleyici takvim."
+  },
+  "applied-ai-banking": {
+    "title": "Bankacılıkta uygulamalı yapay zeka",
+    "lede": "Üretken yapay zeka, çok modlu büyük dil modelleri, ses ve konuşma modelleri — ve bunların birinci kademe kurumlarda bankacılık operasyonlarını, müşteri desteğini ve ürün mühendisliğini nasıl yeniden tasarladığı."
+  },
+  "rust-open-source": {
+    "title": "Rust ve açık kaynak",
+    "lede": "Yazıp sürdürdüğüm açık kaynak Rust kütüphaneleri: loglama, kod üretimi, tarih ve saat, kriptografik temel yapı taşları, Kyber tabanlı KEM ve Rust ile yazılmış bir statik site jeneratörü."
+  },
+  "blockchain-digital-assets": {
+    "title": "Blockchain ve dijital varlıklar",
+    "lede": "Blockchain ve dijital varlıklar: tokenizasyon, ERC-20, stablecoin'ler, kripto para altyapısı ve bunları şekillendiren düzenleyici çerçeve."
+  }
+}

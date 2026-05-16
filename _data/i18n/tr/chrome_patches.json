@@ -1,0 +1,289 @@
+{
+  "_comment": "Turkish inline chrome patches — DRAFT pending native review. Inline portion only — the auto-generated portion comes from strings.json via _lang_registry.build_chrome_patches.",
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"Bültene abone ol\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum — ödemeler, yapay zeka ve post-kuantum kriptografi üzerine araştırma notları. Spam yok."
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"siz@banka.com.tr\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"Bültene abonelik — sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">Abone ol</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">Ana içeriğe geç</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"Gezinmeyi aç/kapat\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"Gezinmeyi aç/kapat\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"Ana gezinme\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"Koyu temaya geç\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"Açık temaya geç\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"Tema değiştir\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"Ara (Cmd veya Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"Ara (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"İletişime geç\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">İletişime geç ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">İletişime geç</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Sebastien Rousseau ana sayfası\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/tr/hakkimda/index.html\">Hakkımda</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/tr/yayinlar/index.html\">Yayınlar</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/tr/konular/index.html\">Konular</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/tr/projeler/index.html\">Projeler</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/tr/makaleler/index.html\">Makaleler</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/tr/iletisim/index.html\">İletişim</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/tr/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/tr/calma-listeleri/index.html\">Çalma listeleri</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"Yukarı dön\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">Yayınlar</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">Çalışmalar</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">İletişim</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/tr/hakkimda/index.html\">Hakkımda</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/tr/static-site-generator-ile-yapildi/index.html\">Static Site Generator ile yapıldı</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/tr/yayinlar/index.html\">Yayınlar</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/tr/etiketler/index.html\">Etiketler</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/tr/projeler/index.html\">Projeler</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/tr/calma-listeleri/index.html\">Çalma listeleri</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/tr/iletisim/index.html\">İletişim</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/tr/makaleler/index.html\">Makaleler</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"Sosyal bağlantılar\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"Sebastien Rousseau'nun siyah beyaz portresi\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Telif Hakkı 2007 - 2026 - Sebastien Rousseau. Tüm hakları saklıdır."
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/tr/erisilebilirlik/index.html\">Erişilebilirlik</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/tr/gizlilik/index.html\">Gizlilik</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/tr/sartlar/index.html\">Şartlar</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"Belgelerde ara...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"Ara\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> kapat"
+    ],
+    [
+      "navigate</span>",
+      "gezin</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> aç"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>Ara</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"Dil\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"TR, Dili değiştir\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"Dili değiştir\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"Yakında\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">TR</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"Atom Akışı\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"RSS Akışı\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"Makale özeti\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>Önemli Çıkarımlar</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>İlgili okumalar:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">İlgili okumalar</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">Son inceleme <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"Yazar hakkında\""
+    ],
+    [
+      ">Full profile</a>",
+      ">Tam profil</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"Sebastien Rousseau portresi\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">İletişime geç</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Bir görüşme başlat</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/articles/index.html\">Güncel araştırmaları oku</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/contact/index.html\">İletişime geç</a>"
+    ]
+  ]
+}

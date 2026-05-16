@@ -1,0 +1,317 @@
+{
+  "_comment": "Turkish home-page chrome patches — DRAFT pending native review. Pairs of [regex, replacement] applied to the EN homepage shell.",
+  "patches": [
+    [
+      ">Authored &amp; maintained<",
+      ">Yazılmış ve sürdürülen<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">Yazılmış ve sürdürülen<"
+    ],
+    [
+      ">Shaping the future of banking<br>through AI, payments,<br>and quantum-safe security\\.</h1>",
+      ">Yapay zeka, ödemeler<br>ve kuantum güvenli güvenlik aracılığıyla<br>bankacılığın geleceğini şekillendirmek.</h1>"
+    ],
+    [
+      ">Applying AI and quantum-safe security to the future of payments\\.</p>",
+      ">Yapay zekayı ve kuantum güvenli güvenliği ödemelerin geleceğine uygulamak.</p>"
+    ],
+    [
+      "id=practice>Open source for the<br>future of finance\\.</h2>",
+      "id=practice>Finansın geleceği için<br>açık kaynak.</h2>"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">Finansın geleceği için açık kaynak.<"
+    ],
+    [
+      ">A portfolio of Python, Rust and JavaScript libraries I created and maintain\\. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography\\.<",
+      ">Yarattığım ve sürdürdüğüm Python, Rust ve JavaScript kütüphanelerinden oluşan bir portföy. Açık kaynak, ücretsiz kullanılabilen ve toptan ödemelere, sınır ötesi mutabakata, finansal verilere ve kuantuma dayanıklı kriptografiye uygulanan kütüphaneler.<"
+    ],
+    [
+      ">Browse all projects<",
+      ">Tüm projeleri görüntüle<"
+    ],
+    [
+      ">Python · Payments<",
+      ">Python · Ödemeler<"
+    ],
+    [
+      ">Python · Cross-border<",
+      ">Python · Sınır ötesi<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · Finans<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · Güvenlik<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · Kuantum<"
+    ],
+    [
+      ">Rust · YAML<",
+      ">Rust · YAML<"
+    ],
+    [
+      ">Learn about ([A-Za-z0-9 ()_-]+)</a>",
+      ">\\1 hakkında daha fazla bilgi</a>"
+    ],
+    [
+      "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
+      "<p>CSV veya SQLite kaynaklarından <strong>ISO 20022 pain.001</strong> ödeme dosyalarının oluşturulmasını otomatikleştiren bir Python kütüphanesi. SWIFT, SEPA ve başlıca sistemler genelinde MT/MX'ten yapılandırılmış mesajlara küresel geçiş için tasarlandı.</p>"
+    ],
+    [
+      "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
+      "<p><strong>ISO 20022 pacs.008</strong> finansal kurumlar arası müşteri kredi transfer mesajları üretin, doğrulayın ve iletin. JSON Schema, XSD doğrulama, 75 ülkede IBAN desteği, GDPR/PCI-DSS uyumlu kişisel veri maskeleme.</p>"
+    ],
+    [
+      "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
+      "<p>Çok formatlı banka ekstrelerini yapılandırılmış verilere dönüştüren finans seviyesinde bir Python araç seti. Gerçek dünyadaki ekstre dosyalarının gerçekliği ve düzenlenmiş ortamların denetim talepleri için tasarlandı.</p>"
+    ],
+    [
+      "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
+      "<p>Parola şifreleme ve doğrulama için <strong>güvenli hash ve özet algoritmaları</strong> uygulayan bir Rust kütüphanesi. Kimlik doğrulamanın post-PQC çağı için kuantuma dayanıklı bir duruşla tasarlandı.</p>"
+    ],
+    [
+      "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
+      "<p>Genel amaçlı post-kuantum şifreleme için NIST FIPS 203 standardı olan <strong>CRYSTALS-Kyber</strong>'ın sağlam bir Rust uygulaması. Kuantuma dayanıklı ödeme kimlik doğrulamasının temeli.</p>"
+    ],
+    [
+      "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
+      "<p><strong>Saf Rust YAML 1.2 ekosistemi</strong>. Sıfır unsafe, %100 spesifikasyon uyumu (406 / 406 resmi suite), önce streaming odaklı serde, kayıpsız CST ve JSON-Schema doğrulama. Kütüphane + CLI (noyafmt, noyavalidate) + LSP + MCP + WASM bağlamaları.</p>"
+    ],
+    [
+      "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
+      "Kuantum bilişim, finansal hizmetlerin kriptografik temellerini tehdit ediyor. Gerçek zamanlıdan sınır ötesi mutabakata kadar ödemeler, kuantum bilişimin er ya da geç geçersiz kılacağı korumalara dayanıyor."
+    ],
+    [
+      ">Quantum-Safe Payments white paper · September 2025 · Read the paper<",
+      ">Quantum-Safe Payments beyaz kitabı · Eylül 2025 · Beyaz kitabı oku<"
+    ],
+    [
+      ">Read the paper<",
+      ">Beyaz kitabı oku<"
+    ],
+    [
+      ">Quantum-Safe Payments\\.</h2>",
+      ">Kuantum güvenli ödemeler.</h2>"
+    ],
+    [
+      ">Quantum-Safe Payments\\.<",
+      ">Kuantum güvenli ödemeler.<"
+    ],
+    [
+      ">Industry white paper for the Emerging Payments Association Asia\\.\\s*The structural threat quantum computing poses to payment infrastructure, and the case for coordinated action now\\.<",
+      ">Emerging Payments Association Asia için sektörel beyaz kitap. Kuantum bilişimin ödeme altyapısına yönelttiği yapısal tehdit ve şimdi koordineli eylem için gerekçe.<"
+    ],
+    [
+      ">Why the payments industry must act now\\.<",
+      ">Ödeme sektörü neden şimdi harekete geçmeli.<"
+    ],
+    [
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
+      ">Düzenleyiciler „şimdi topla, sonra çöz\" yaklaşımını günümüzün gerçek bir riski olarak ele alıyor. Bu beyaz kitap, yapısal tehdidi ve toptan ödeme rayları genelinde koordineli eylem için acil gerekçeyi ortaya koyuyor.</p>"
+    ],
+    [
+      ">Latest<",
+      ">Güncel<"
+    ],
+    [
+      ">From the desk\\.<",
+      ">Masa başından.<"
+    ],
+    [
+      ">Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments\\.<",
+      ">Kuantum güvenli kriptografi, ISO 20022 geçişi ve toptan ödemelerin geleceği üzerine güncel araştırma ve yazılar.<"
+    ],
+    [
+      "<p class=newsroom-excerpt>Stablecoins cannot pay yield under the GENIUS Act\\. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail\\.</p>",
+      "<p class=newsroom-excerpt>Stablecoin'ler GENIUS Act kapsamında getiri ödeyemiyor. BlackRock'un BRSRV ve BSTBL başvuruları çıkış yolunu gösteriyor: düzenlenmiş bir stablecoin ile yan yana çalışan tokenize edilmiş bir para piyasası fonu, getirinin bitişik ve uyumlu bir ray üzerinden sunulmasını sağlıyor.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>Quantum risk has moved from research curiosity to active regulatory mandate\\. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate\\.</p>",
+      "<p class=newsroom-excerpt>Kuantum riski araştırma merakından aktif düzenleyici zorunluluğa dönüştü. Ocak 2026'da yayınlanan G7 yol haritası ve canlı ödeme sistemlerinde fizibiliteyi kanıtlayan BIS Project Leap ile birlikte yönetim kurulu düzeyinde soru artık geçişin yapılıp yapılmayacağı değil.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\\.</p>",
+      "<p class=newsroom-excerpt>Kasım 2026'dan itibaren SWIFT CBPR+, sınır ötesi ödeme mesajlarındaki yapılandırılmamış posta adreslerini reddediyor. Altı ay öncesinde pacs.008 mesajlarının %65'i hâlâ uyumsuz adresler taşıyor ve bankaların %44'ü iyileştirme programında geride kalıyor.</p>"
+    ],
+    [
+      ">See all articles\\b",
+      ">Tüm makaleleri gör"
+    ],
+    [
+      "<p class=feat-eyebrow>Get in touch</p>",
+      "<p class=feat-eyebrow>İletişime geç</p>"
+    ],
+    [
+      ">Unlocking the Future of Banking and Financial Services\\.<br>Discover the latest news from</h2>",
+      ">Bankacılık ve finansal hizmetlerin geleceğini açığa çıkarmak.<br>Güncel analizleri keşfedin</h2>"
+    ],
+    [
+      "<p class=\\\"feat-sub center\\\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.</p>",
+      "<p class=\"feat-sub center\">İster toptan ödeme stratejisi, ister ISO 20022 geçişi, ister finansal hizmetler için kuantum güvenli kriptografi: konuşmaktan memnuniyet duyarım.</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Bir görüşme başlat</a>"
+    ],
+    [
+      "<a class=pill href=\"?/articles/index\\.html\"?>Read latest research</a>",
+      "<a class=pill href=\"/tr/makaleler/index.html\">Güncel araştırmaları oku</a>"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/tr/iletisim/index.html\">İletişime geç</a>"
+    ],
+    [
+      "href=\"?/papers/index\\.html\"?>Read the paper</a>",
+      "href=\"/tr/yayinlar/index.html\">Beyaz kitabı oku</a>"
+    ],
+    [
+      "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
+      "href=\"/tr/2026-05-15-gizli-getiri-blackrock-brsrv-bstbl-genius-act-cozumlemesi/index.html\">Makaleyi oku</a>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Writing</h2>",
+      "<h2 class=ap-foot-title>Yayınlar</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Work</h2>",
+      "<h2 class=ap-foot-title>Çalışmalar</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Reach</h2>",
+      "<h2 class=ap-foot-title>İletişim</h2>"
+    ],
+    [
+      "<a href=/about/index\\.html>About</a>",
+      "<a href=/tr/hakkimda/index.html>Hakkımda</a>"
+    ],
+    [
+      "<a href=/papers/index\\.html>Papers</a>",
+      "<a href=/tr/yayinlar/index.html>Yayınlar</a>"
+    ],
+    [
+      "<a href=/projects/index\\.html>Projects</a>",
+      "<a href=/tr/projeler/index.html>Projeler</a>"
+    ],
+    [
+      "<a href=/playlists/index\\.html>Playlists</a>",
+      "<a href=/tr/calma-listeleri/index.html>Çalma listeleri</a>"
+    ],
+    [
+      "<a href=/contact/index\\.html>Contact</a>",
+      "<a href=/tr/iletisim/index.html>İletişim</a>"
+    ],
+    [
+      "<a href=/tags/index\\.html>Tags</a>",
+      "<a href=/tr/etiketler/index.html>Etiketler</a>"
+    ],
+    [
+      "<a href=/articles/index\\.html>Articles</a>",
+      "<a href=/tr/makaleler/index.html>Makaleler</a>"
+    ],
+    [
+      "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
+      "<a href=/tr/static-site-generator-ile-yapildi/index.html>Static Site Generator ile yapıldı</a>"
+    ],
+    [
+      "<a href=/accessibility/index\\.html>Accessibility</a>",
+      "<a href=/tr/erisilebilirlik/index.html>Erişilebilirlik</a>"
+    ],
+    [
+      "<a href=/privacy/index\\.html>Privacy</a>",
+      "<a href=/tr/gizlilik/index.html>Gizlilik</a>"
+    ],
+    [
+      "<a href=/terms/index\\.html>Terms</a>",
+      "<a href=/tr/sartlar/index.html>Şartlar</a>"
+    ],
+    [
+      ">Experience<",
+      ">Deneyim<"
+    ],
+    [
+      ">Brands along the way\\.<",
+      ">Yol boyunca markalar.<"
+    ],
+    [
+      ">From global Tier-1 banks to consumer technology\\. Payments and digital product leadership across HSBC, PayPal, Barclays, Shazam, AKQA and Virgin Group\\.</p>",
+      ">Küresel birinci kademe bankalardan tüketici teknolojisine. HSBC, PayPal, Barclays, Shazam, AKQA ve Virgin Group bünyesinde ödemeler ve dijital ürün liderliği.</p>"
+    ],
+    [
+      "alt=\"PayPal logo\"",
+      "alt=\"PayPal logosu\""
+    ],
+    [
+      "alt=\"Barclays logo\"",
+      "alt=\"Barclays logosu\""
+    ],
+    [
+      "alt=\"Shazam logo\"",
+      "alt=\"Shazam logosu\""
+    ],
+    [
+      "alt=\"AKQA logo\"",
+      "alt=\"AKQA logosu\""
+    ],
+    [
+      "alt=\"Virgin logo\"",
+      "alt=\"Virgin logosu\""
+    ],
+    [
+      "alt=\"HSBC logo\"",
+      "alt=\"HSBC logosu\""
+    ],
+    [
+      ">Read more<",
+      ">Daha fazlasını oku<"
+    ],
+    [
+      ">Read the article<",
+      ">Makaleyi oku<"
+    ],
+    [
+      ">Read latest research<",
+      ">Güncel araştırmaları oku<"
+    ],
+    [
+      ">Read full article<",
+      ">Tüm makaleyi oku<"
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">İletişime geç ›</a>"
+    ],
+    [
+      ">Payments · Stablecoins<",
+      ">Ödemeler · Stablecoin'ler<"
+    ],
+    [
+      ">Payments · ISO 20022<",
+      ">Ödemeler · ISO 20022<"
+    ],
+    [
+      ">Quantum<",
+      ">Kuantum<"
+    ],
+    [
+      ">Quantum · Banking<",
+      ">Kuantum · Bankacılık<"
+    ],
+    [
+      ">Quantum · Cryptography<",
+      ">Kuantum · Kriptografi<"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">Beyaz kitabı oku</a>"
+    ]
+  ]
+}

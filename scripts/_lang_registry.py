@@ -89,7 +89,7 @@ LANGUAGES: tuple[Language, ...] = (
     Language("ru", "ru-RU", "ru_RU", "RU", "Русский", "🇷🇺", active=True),
     Language("sv", "sv-SE", "sv_SE", "SV", "Svenska", "🇸🇪", active=True),
     Language("th", "th-TH", "th_TH", "TH", "ไทย", "🇹🇭", active=True),
-    Language("tr", "tr-TR", "tr_TR", "TR", "Türkçe", "🇹🇷"),
+    Language("tr", "tr-TR", "tr_TR", "TR", "Türkçe", "🇹🇷", active=True),
     Language("uk", "uk-UA", "uk_UA", "UK", "Українська", "🇺🇦"),
     Language("vi", "vi-VN", "vi_VN", "VI", "Tiếng Việt", "🇻🇳", active=True),
     Language("yo", "yo-NG", "yo_NG", "YO", "Yorùbá", "🇳🇬"),
