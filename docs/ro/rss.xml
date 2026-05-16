@@ -6,58 +6,102 @@
     <description>Articole în limba română: IA aplicată, plăți ISO 20022, criptografie post-cuantică și transformarea plăților wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/ro/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ro-RO</language>
-    <lastBuildDate>Sat, 16 May 2026 21:05:20 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 22:48:11 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Toate drepturile rezervate.</copyright>
     <item>
-      <title>The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</title>
+      <title>Cea mai bună arhitectură de infrastructură cloud în 2026: un plan AI-nativ, multi-cloud și conștient cuantic pentru serviciile financiare</title>
       <link>https://sebastienrousseau.com/ro/2026-05-21-best-cloud-infrastructure-architecture-2026/</link>
-      <description>Cloud architecture in 2026 has crystallised around six pillars: AI-native infrastructure, intelligent multi-cloud, serverless-first design with WebAssembly at the edge, edge computing, automated security with crypto-agility, and sustainable high-density operations. For banks, the question is whether to consume cloud or design it — under converging pressure from agentic commerce, agentic unit economics, harvest-now-decrypt-later quantum risk, MCP security and algorithmic contagion, cryptographic agent identity, continuous-treasury demands, and the EU AI Act.</description>
+      <description>Arhitectura cloud în 2026 s-a cristalizat în jurul a șase piloni: infrastructură AI-nativă, multi-cloud inteligent, design serverless-first cu WebAssembly la edge, edge computing, securitate automatizată cu agilitate criptografică și operațiuni sustenabile de înaltă densitate. Pentru bănci, întrebarea este dacă să consume cloud sau să îl proiecteze — sub presiunea convergentă a comerțului agentic, a economiei unitare agentice, a riscului cuantic harvest-now-decrypt-later, a securității MCP și a contagiunii algoritmice, a identității criptografice a agenților, a cerințelor de trezorerie continuă și a Legii UE privind IA.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-21-best-cloud-infrastructure-architecture-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
-      <category>cloud architecture 2026</category>
-      <category>AI-native infrastructure</category>
+      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
+      <category>arhitectură cloud 2026</category>
+      <category>infrastructură AI-nativă</category>
       <category>multi-cloud</category>
+      <category>cloud suveran</category>
+      <category>US CLOUD Act</category>
+      <category>Bleu</category>
+      <category>S3NS</category>
+      <category>AWS European Sovereign Cloud</category>
+      <category>IA suverană</category>
+      <category>modele cu greutăți deschise</category>
+      <category>Llama 4</category>
+      <category>Mistral</category>
+      <category>confidential computing</category>
       <category>serverless</category>
       <category>edge computing</category>
       <category>WebAssembly</category>
       <category>Wasm</category>
+      <category>eBPF</category>
+      <category>Cilium</category>
+      <category>Tetragon</category>
+      <category>edge satelit LEO</category>
+      <category>Starlink Enterprise</category>
       <category>DevSecOps</category>
-      <category>sustainable data centre</category>
-      <category>liquid cooling</category>
+      <category>centru de date sustenabil</category>
+      <category>calcul conștient de rețea</category>
+      <category>răcire lichidă</category>
+      <category>Small Modular Reactor</category>
+      <category>SMR</category>
+      <category>energie nucleară</category>
+      <category>Three Mile Island</category>
+      <category>Kairos Power</category>
+      <category>X-Energy</category>
+      <category>fotonică pe siliciu</category>
+      <category>optică co-împachetată</category>
+      <category>NVIDIA Spectrum-X</category>
       <category>AWS Bedrock</category>
       <category>Google Vertex AI</category>
       <category>Azure OpenAI Service</category>
-      <category>agentic commerce</category>
-      <category>multi-agent swarms</category>
-      <category>agentic unit economics</category>
-      <category>agent FinOps</category>
-      <category>cryptographic agent identity</category>
+      <category>comerț agentic</category>
+      <category>roiuri multi-agent</category>
+      <category>economia unitară agentică</category>
+      <category>FinOps agentic</category>
+      <category>identitate criptografică a agenților</category>
       <category>SPIFFE</category>
       <category>SPIRE</category>
-      <category>algorithmic contagion</category>
-      <category>agentic chaos engineering</category>
-      <category>data gravity</category>
-      <category>egress FinOps</category>
+      <category>contagiune algoritmică</category>
+      <category>otrăvirea RAG</category>
+      <category>securitatea bazelor de date vectoriale</category>
+      <category>proveniența datelor</category>
+      <category>Pinecone</category>
+      <category>Qdrant</category>
+      <category>Weaviate</category>
+      <category>Milvus</category>
+      <category>ingineria haosului agentic</category>
+      <category>gravitația datelor</category>
+      <category>FinOps egress</category>
       <category>HPC</category>
-      <category>GPU storage</category>
-      <category>continuous treasury</category>
-      <category>borderless liquidity</category>
-      <category>real-time payments</category>
-      <category>synthetic data generation</category>
-      <category>confidential computing</category>
+      <category>stocare GPU</category>
+      <category>trezorerie continuă</category>
+      <category>lichiditate fără frontiere</category>
+      <category>plăți în timp real</category>
+      <category>CBDC</category>
+      <category>eCNY</category>
+      <category>DREX</category>
+      <category>e-Rupee</category>
+      <category>BIS Project Agora</category>
+      <category>euro digital</category>
+      <category>generarea datelor sintetice</category>
       <category>JPMorgan multi-cloud</category>
-      <category>Citi modernisation</category>
-      <category>graph neural networks</category>
-      <category>deepfake fraud</category>
+      <category>modernizare Citi</category>
+      <category>rețele neuronale grafice</category>
+      <category>fraudă deepfake</category>
       <category>harvest now decrypt later</category>
       <category>HNDL</category>
-      <category>post-quantum cryptography</category>
-      <category>crypto-agility</category>
-      <category>MCP security</category>
+      <category>criptografie post-cuantică</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>agilitate criptografică</category>
+      <category>distribuția cuantică a cheilor</category>
+      <category>QKD</category>
+      <category>Basel IV</category>
+      <category>risc de concentrare cloud</category>
+      <category>RWA risc operațional</category>
+      <category>securitate MCP</category>
       <category>prompt injection</category>
-      <category>supply chain attacks</category>
+      <category>atacuri supply chain</category>
       <category>CloudCDN</category>
       <category>Cloudflare Workers</category>
       <category>Durable Objects</category>

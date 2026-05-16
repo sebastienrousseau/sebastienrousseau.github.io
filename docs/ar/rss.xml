@@ -6,17 +6,107 @@
     <description>مقالات بالعربية: الذكاء الاصطناعي التطبيقي، مدفوعات ISO 20022، التشفير ما بعد الكمي، وتحوّل المدفوعات بالجملة.</description>
     <atom:link href="https://sebastienrousseau.com/ar/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ar-SA</language>
-    <lastBuildDate>Sat, 16 May 2026 21:05:20 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 22:48:11 +0000</lastBuildDate>
     <copyright>© حقوق النشر 2007 - 2026 - سيباستيان روسو. جميع الحقوق محفوظة.</copyright>
     <item>
-      <title>أفضل معمارية بنية تحتية سحابية في 2026: مخطّط AI-native ومتعدّد السحابة وواعٍ بالكم للخدمات المالية</title>
+      <title>أفضل بنية تحتية سحابية في 2026: مخطط أصيل للذكاء الاصطناعي، متعدد السحب، وواعٍ كمياً للخدمات المالية</title>
       <link>https://sebastienrousseau.com/ar/2026-05-21-best-cloud-infrastructure-architecture-2026/</link>
-      <description>بلورت معمارية السحابة في 2026 حول ستّ ركائز: بنية تحتية AI-native، multi-cloud ذكي، تصميم serverless-first مع WebAssembly في الحافة، edge computing، DevSecOps آلي مع crypto-agility، وعمليات مستدامة عالية الكثافة. للبنوك، السؤال لم يعد استهلاك السحابة بل تصميمها — تحت ضغطٍ متقارب من agentic commerce، و agentic unit economics، ومخاطر الكم harvest-now-decrypt-later، وأمن MCP والعدوى الخوارزمية، والهوية التشفيرية للوكلاء، ومتطلّبات continuous treasury، و EU AI Act.</description>
+      <description>تبلورت بنية السحابة في عام 2026 حول ست ركائز: بنية تحتية أصيلة للذكاء الاصطناعي، وسحابة متعددة ذكية، وتصميم يعتمد على بنية بدون خوادم أولاً مع WebAssembly عند الحافة، والحوسبة الطرفية، والأمان الآلي مع المرونة التشفيرية، والعمليات المستدامة عالية الكثافة. بالنسبة للبنوك، السؤال هو ما إذا كانت ستستهلك السحابة أم تصممها — في ظل ضغوط متقاربة من التجارة الوكيلة، واقتصاديات الوحدة الوكيلة، ومخاطر الكم الناجمة عن استراتيجية الحصاد الآن والفك لاحقاً، وأمان MCP، والعدوى الخوارزمية، وهوية الوكلاء التشفيرية، ومتطلبات الخزانة المستمرة، وقانون الذكاء الاصطناعي للاتحاد الأوروبي.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-21-best-cloud-infrastructure-architecture-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
-      <category>معمارية السحابة 2026، بنية تحتية AI-native، multi-cloud، serverless، edge computing، WebAssembly، Wasm، DevSecOps، مركز بياناتٍ مستدام، التبريد السائل، AWS Bedrock، Google Vertex AI، Azure OpenAI Service، agentic commerce، أسراب متعدّدة الوكلاء، agentic unit economics، FinOps وكيلي، الهوية التشفيرية للوكلاء، SPIFFE، SPIRE، العدوى الخوارزمية، gravity البيانات، FinOps egress، HPC، تخزين GPU، continuous treasury، السيولة دون حدود، المدفوعات في الوقت الفعلي، توليد البيانات الاصطناعية، confidential computing، JPMorgan multi-cloud، تحديث Citi، graph neural networks، احتيال deepfake، harvest now decrypt later، HNDL، التشفير ما بعد الكمي، crypto-agility، أمن MCP، prompt injection، هجمات سلسلة التوريد، CloudCDN، Cloudflare Workers، Durable Objects، WCAG-AA، Sebastien Rousseau</category>
+      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
+      <category>بنية السحابة 2026</category>
+      <category>البنية التحتية الأصيلة للذكاء الاصطناعي</category>
+      <category>السحابة المتعددة</category>
+      <category>السحابة السيادية</category>
+      <category>قانون CLOUD الأمريكي</category>
+      <category>Bleu</category>
+      <category>S3NS</category>
+      <category>AWS European Sovereign Cloud</category>
+      <category>الذكاء الاصطناعي السيادي</category>
+      <category>النماذج مفتوحة الأوزان</category>
+      <category>Llama 4</category>
+      <category>Mistral</category>
+      <category>الحوسبة السرية</category>
+      <category>بدون خوادم</category>
+      <category>الحوسبة الطرفية</category>
+      <category>WebAssembly</category>
+      <category>Wasm</category>
+      <category>eBPF</category>
+      <category>Cilium</category>
+      <category>Tetragon</category>
+      <category>الحافة عبر أقمار LEO</category>
+      <category>Starlink Enterprise</category>
+      <category>DevSecOps</category>
+      <category>مركز البيانات المستدام</category>
+      <category>الحوسبة الواعية للشبكة</category>
+      <category>التبريد السائل</category>
+      <category>المفاعلات النمطية الصغيرة</category>
+      <category>SMR</category>
+      <category>الطاقة النووية</category>
+      <category>Three Mile Island</category>
+      <category>Kairos Power</category>
+      <category>X-Energy</category>
+      <category>الفوتونيات السيليكونية</category>
+      <category>البصريات المعلبة مشتركاً</category>
+      <category>NVIDIA Spectrum-X</category>
+      <category>AWS Bedrock</category>
+      <category>Google Vertex AI</category>
+      <category>Azure OpenAI Service</category>
+      <category>التجارة الوكيلة</category>
+      <category>أسراب الوكلاء المتعددين</category>
+      <category>اقتصاديات الوحدة الوكيلة</category>
+      <category>FinOps الوكيلة</category>
+      <category>هوية الوكيل التشفيرية</category>
+      <category>SPIFFE</category>
+      <category>SPIRE</category>
+      <category>العدوى الخوارزمية</category>
+      <category>تسميم RAG</category>
+      <category>أمان قواعد بيانات المتجهات</category>
+      <category>إثبات منشأ البيانات</category>
+      <category>Pinecone</category>
+      <category>Qdrant</category>
+      <category>Weaviate</category>
+      <category>Milvus</category>
+      <category>هندسة الفوضى الوكيلة</category>
+      <category>جاذبية البيانات</category>
+      <category>FinOps للتدفق الخارج</category>
+      <category>HPC</category>
+      <category>تخزين GPU</category>
+      <category>الخزانة المستمرة</category>
+      <category>السيولة بلا حدود</category>
+      <category>المدفوعات الفورية</category>
+      <category>CBDC</category>
+      <category>eCNY</category>
+      <category>DREX</category>
+      <category>e-Rupee</category>
+      <category>BIS Project Agora</category>
+      <category>اليورو الرقمي</category>
+      <category>توليد البيانات الاصطناعية</category>
+      <category>السحابة المتعددة لـ JPMorgan</category>
+      <category>تحديث Citi</category>
+      <category>الشبكات العصبية الرسومية</category>
+      <category>احتيال التزييف العميق</category>
+      <category>الحصاد الآن والفك لاحقاً</category>
+      <category>HNDL</category>
+      <category>التشفير ما بعد الكمي</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>المرونة التشفيرية</category>
+      <category>توزيع المفاتيح الكمي</category>
+      <category>QKD</category>
+      <category>Basel IV</category>
+      <category>مخاطر تركيز السحابة</category>
+      <category>RWA لمخاطر التشغيل</category>
+      <category>أمان MCP</category>
+      <category>الحقن السريع</category>
+      <category>هجمات سلسلة التوريد</category>
+      <category>CloudCDN</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>WCAG-AA</category>
+      <category>Sebastien Rousseau</category>
     </item>
     <item>
       <title>الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه</title>

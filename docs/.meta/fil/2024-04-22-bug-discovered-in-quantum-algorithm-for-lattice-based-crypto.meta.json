@@ -1,11 +1,11 @@
 {
-  "language": "fil-PH",
-  "banner_alt": "صورة مُولَّدة باستخدام MidJourney — شبكة من العُقَد الرقمية بألوان حمراء وزرقاء.",
   "date": "Apr 22, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "title": "التشفير الكمومي القائم على الشبكات: خلل في هجوم Chen على LWE",
-  "locale": "fil_PH",
-  "keywords": "التشفير ما بعد الكمومي, NIST, توحيد PQC القياسي, Yilei Chen, الخوارزمية الكمومية, التشفير القائم على الشبكات, مسألة LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, التشفير المقاوم للكمومية",
   "subtitle": "مراجعة الأقران تكشف عن خلل في عمل Chen الرائد",
-  "description": "خلل في الخوارزمية الكمومية لـLWE من Yilei Chen يمنح التشفير القائم على الشبكات مهلةً مؤقّتة. ما يعنيه ذلك لـCRYSTALS-Kyber وDilithium وخارطة طريق PQC."
+  "description": "خلل في الخوارزمية الكمومية لـLWE من Yilei Chen يمنح التشفير القائم على الشبكات مهلةً مؤقّتة. ما يعنيه ذلك لـCRYSTALS-Kyber وDilithium وخارطة طريق PQC.",
+  "keywords": "التشفير ما بعد الكمومي, NIST, توحيد PQC القياسي, Yilei Chen, الخوارزمية الكمومية, التشفير القائم على الشبكات, مسألة LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, التشفير المقاوم للكمومية",
+  "language": "fil-PH",
+  "locale": "fil_PH",
+  "title": "التشفير الكمومي القائم على الشبكات: خلل في هجوم Chen على LWE",
+  "banner_alt": "صورة مُولَّدة باستخدام MidJourney — شبكة من العُقَد الرقمية بألوان حمراء وزرقاء.",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 }

@@ -1,11 +1,11 @@
 {
-  "keywords": "blockchain, sổ cái phân tán, hợp đồng thông minh, Ethereum, DLT, mã hoá, tin cậy, tài chính, doanh nghiệp",
-  "locale": "vi_VN",
   "title": "Blockchain: công nghệ quan trọng trong năm 2018",
+  "description": "Blockchain định hình lại tin cậy số, hợp đồng thông minh và thanh toán xuyên biên giới — vì sao 2018 là năm bản lề cho hạ tầng tài chính.",
   "subtitle": "Vì sao các sổ cái phân tán định nghĩa lại tin cậy, hợp đồng và giá trị",
   "date": "January 2, 2018",
   "banner": "https://cloudcdn.pro/stocks/images/blockchain-banner.webp",
+  "banner_alt": "Một mạng lưới khối được liên kết với nhau tạo thành một sổ cái phân tán",
   "language": "vi-VN",
-  "description": "Blockchain định hình lại tin cậy số, hợp đồng thông minh và thanh toán xuyên biên giới — vì sao 2018 là năm bản lề cho hạ tầng tài chính.",
-  "banner_alt": "Một mạng lưới khối được liên kết với nhau tạo thành một sổ cái phân tán"
+  "locale": "vi_VN",
+  "keywords": "blockchain, sổ cái phân tán, hợp đồng thông minh, Ethereum, DLT, mã hoá, tin cậy, tài chính, doanh nghiệp"
 }

@@ -6,17 +6,107 @@
     <description>מאמרים בעברית: AI יישומי, תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית, וטרנספורמציה של תשלומי סיטונאות.</description>
     <atom:link href="https://sebastienrousseau.com/he/rss.xml" rel="self" type="application/rss+xml"/>
     <language>he-IL</language>
-    <lastBuildDate>Sat, 16 May 2026 21:05:20 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 22:48:11 +0000</lastBuildDate>
     <copyright>© זכויות יוצרים 2007 - 2026 - Sebastien Rousseau. כל הזכויות שמורות.</copyright>
     <item>
-      <title>أفضل معمارية بنية تحتية سحابية في 2026: مخطّط AI-native ومتعدّد السحابة وواعٍ بالكم للخدمات المالية</title>
+      <title>ארכיטקטורת תשתית הענן הטובה ביותר ב-2026: שרטוט AI-native, רב-ענני ומודע-קוונטי לשירותים פיננסיים</title>
       <link>https://sebastienrousseau.com/he/2026-05-21-best-cloud-infrastructure-architecture-2026/</link>
-      <description>بلورت معمارية السحابة في 2026 حول ستّ ركائز: بنية تحتية AI-native، multi-cloud ذكي، تصميم serverless-first مع WebAssembly في الحافة، edge computing، DevSecOps آلي مع crypto-agility، وعمليات مستدامة عالية الكثافة. للبنوك، السؤال لم يعد استهلاك السحابة بل تصميمها — تحت ضغطٍ متقارب من agentic commerce، و agentic unit economics، ومخاطر الكم harvest-now-decrypt-later، وأمن MCP والعدوى الخوارزمية، والهوية التشفيرية للوكلاء، ومتطلّبات continuous treasury، و EU AI Act.</description>
+      <description>ארכיטקטורת ענן ב-2026 התגבשה סביב שש עמודי תווך: תשתית AI-native, multi-cloud אינטליגנטי, תכנון serverless-first עם WebAssembly בקצה, edge computing, אבטחה אוטומטית עם crypto-agility, ופעולות בנות-קיימא בצפיפות גבוהה. לבנקים, השאלה היא האם לצרוך את הענן או לעצב אותו — תחת לחץ מתכנס מ-agentic commerce, agentic unit economics, סיכון קוונטי של harvest-now-decrypt-later, אבטחת MCP והדבקה אלגוריתמית, זהות הצפנתית של סוכנים, דרישות continuous treasury, ו-EU AI Act.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-21-best-cloud-infrastructure-architecture-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
-      <category>معمارية السحابة 2026، بنية تحتية AI-native، multi-cloud، serverless، edge computing، WebAssembly، Wasm، DevSecOps، مركز بياناتٍ مستدام، التبريد السائل، AWS Bedrock، Google Vertex AI، Azure OpenAI Service، agentic commerce، أسراب متعدّدة الوكلاء، agentic unit economics، FinOps وكيلي، الهوية التشفيرية للوكلاء، SPIFFE، SPIRE، العدوى الخوارزمية، gravity البيانات، FinOps egress، HPC، تخزين GPU، continuous treasury، السيولة دون حدود، المدفوعات في الوقت الفعلي، توليد البيانات الاصطناعية، confidential computing، JPMorgan multi-cloud، تحديث Citi، graph neural networks، احتيال deepfake، harvest now decrypt later، HNDL، التشفير ما بعد الكمي، crypto-agility، أمن MCP، prompt injection، هجمات سلسلة التوريد، CloudCDN، Cloudflare Workers، Durable Objects، WCAG-AA، Sebastien Rousseau</category>
+      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
+      <category>ארכיטקטורת ענן 2026</category>
+      <category>תשתית AI-native</category>
+      <category>multi-cloud</category>
+      <category>ענן ריבוני</category>
+      <category>US CLOUD Act</category>
+      <category>Bleu</category>
+      <category>S3NS</category>
+      <category>AWS European Sovereign Cloud</category>
+      <category>sovereign AI</category>
+      <category>מודלים בעלי משקלים פתוחים</category>
+      <category>Llama 4</category>
+      <category>Mistral</category>
+      <category>confidential computing</category>
+      <category>serverless</category>
+      <category>edge computing</category>
+      <category>WebAssembly</category>
+      <category>Wasm</category>
+      <category>eBPF</category>
+      <category>Cilium</category>
+      <category>Tetragon</category>
+      <category>LEO satellite edge</category>
+      <category>Starlink Enterprise</category>
+      <category>DevSecOps</category>
+      <category>מרכז נתונים בר-קיימא</category>
+      <category>מחשוב מודע-רשת</category>
+      <category>קירור נוזלי</category>
+      <category>Small Modular Reactor</category>
+      <category>SMR</category>
+      <category>אנרגיה גרעינית</category>
+      <category>Three Mile Island</category>
+      <category>Kairos Power</category>
+      <category>X-Energy</category>
+      <category>silicon photonics</category>
+      <category>co-packaged optics</category>
+      <category>NVIDIA Spectrum-X</category>
+      <category>AWS Bedrock</category>
+      <category>Google Vertex AI</category>
+      <category>Azure OpenAI Service</category>
+      <category>agentic commerce</category>
+      <category>נחילים רב-סוכניים</category>
+      <category>agentic unit economics</category>
+      <category>agent FinOps</category>
+      <category>זהות הצפנתית של סוכנים</category>
+      <category>SPIFFE</category>
+      <category>SPIRE</category>
+      <category>הדבקה אלגוריתמית</category>
+      <category>הרעלת RAG</category>
+      <category>אבטחת מסדי נתונים וקטוריים</category>
+      <category>מוצא נתונים</category>
+      <category>Pinecone</category>
+      <category>Qdrant</category>
+      <category>Weaviate</category>
+      <category>Milvus</category>
+      <category>agentic chaos engineering</category>
+      <category>data gravity</category>
+      <category>egress FinOps</category>
+      <category>HPC</category>
+      <category>אחסון GPU</category>
+      <category>continuous treasury</category>
+      <category>נזילות חוצת-גבולות</category>
+      <category>תשלומים בזמן אמת</category>
+      <category>CBDC</category>
+      <category>eCNY</category>
+      <category>DREX</category>
+      <category>e-Rupee</category>
+      <category>BIS Project Agora</category>
+      <category>יורו דיגיטלי</category>
+      <category>ייצור נתונים סינתטיים</category>
+      <category>JPMorgan multi-cloud</category>
+      <category>מודרניזציה של Citi</category>
+      <category>graph neural networks</category>
+      <category>הונאת deepfake</category>
+      <category>harvest now decrypt later</category>
+      <category>HNDL</category>
+      <category>קריפטוגרפיה פוסט-קוונטית</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>crypto-agility</category>
+      <category>חלוקת מפתחות קוונטית</category>
+      <category>QKD</category>
+      <category>Basel IV</category>
+      <category>סיכון ריכוז ענן</category>
+      <category>RWA סיכון תפעולי</category>
+      <category>אבטחת MCP</category>
+      <category>prompt injection</category>
+      <category>מתקפות שרשרת אספקה</category>
+      <category>CloudCDN</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>WCAG-AA</category>
+      <category>Sebastien Rousseau</category>
     </item>
     <item>
       <title>الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه</title>

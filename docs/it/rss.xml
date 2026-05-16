@@ -6,25 +6,107 @@
     <description>Articoli in italiano: IA applicata, pagamenti ISO 20022, crittografia post-quantistica e trasformazione dei pagamenti wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/it/rss.xml" rel="self" type="application/rss+xml"/>
     <language>it-IT</language>
-    <lastBuildDate>Sat, 16 May 2026 21:05:20 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 22:48:11 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tutti i diritti riservati.</copyright>
     <item>
-      <title>Migliore architettura cloud per le banche nel 2026</title>
+      <title>La migliore architettura di infrastruttura cloud nel 2026: un blueprint AI-native, multi-cloud e consapevole del quantum per i servizi finanziari</title>
       <link>https://sebastienrousseau.com/it/2026-05-21-miglior-architettura-cloud-per-banche-2026/</link>
-      <description>Un&apos;analisi delle migliori architetture cloud per le banche nel 2026: multi-cloud, sovranità dei dati, conformità, costi e roadmap di migrazione.</description>
+      <description>L&apos;architettura cloud nel 2026 si è cristallizzata attorno a sei pilastri: infrastruttura AI-native, multi-cloud intelligente, design serverless-first con WebAssembly al margine, edge computing, sicurezza automatizzata con crypto-agilità e operazioni sostenibili ad alta densità. Per le banche e gli istituti finanziari, la domanda è se consumare il cloud o progettarlo — sotto la pressione convergente di agentic commerce, agentic unit economics, rischio quantum harvest-now-decrypt-later, sicurezza MCP e contagio algoritmico, identità crittografica degli agenti, esigenze di continuous treasury e il EU AI Act.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-21-miglior-architettura-cloud-per-banche-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
-      <category>cloud</category>
-      <category>banche</category>
+      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
+      <category>architettura cloud 2026</category>
+      <category>infrastruttura AI-native</category>
       <category>multi-cloud</category>
-      <category>sovranità</category>
-      <category>DORA</category>
-      <category>AWS</category>
-      <category>Azure</category>
-      <category>GCP</category>
-      <category>conformità</category>
+      <category>cloud sovrano</category>
+      <category>US CLOUD Act</category>
+      <category>Bleu</category>
+      <category>S3NS</category>
+      <category>AWS European Sovereign Cloud</category>
+      <category>AI sovrana</category>
+      <category>modelli open-weight</category>
+      <category>Llama 4</category>
+      <category>Mistral</category>
+      <category>confidential computing</category>
+      <category>serverless</category>
+      <category>edge computing</category>
+      <category>WebAssembly</category>
+      <category>Wasm</category>
+      <category>eBPF</category>
+      <category>Cilium</category>
+      <category>Tetragon</category>
+      <category>edge satellitare LEO</category>
+      <category>Starlink Enterprise</category>
+      <category>DevSecOps</category>
+      <category>data centre sostenibile</category>
+      <category>grid-aware computing</category>
+      <category>raffreddamento a liquido</category>
+      <category>Small Modular Reactor</category>
+      <category>SMR</category>
+      <category>energia nucleare</category>
+      <category>Three Mile Island</category>
+      <category>Kairos Power</category>
+      <category>X-Energy</category>
+      <category>fotonica al silicio</category>
+      <category>ottica co-packaged</category>
+      <category>NVIDIA Spectrum-X</category>
+      <category>AWS Bedrock</category>
+      <category>Google Vertex AI</category>
+      <category>Azure OpenAI Service</category>
+      <category>agentic commerce</category>
+      <category>swarm multi-agente</category>
+      <category>agentic unit economics</category>
+      <category>agent FinOps</category>
+      <category>identità crittografica degli agenti</category>
+      <category>SPIFFE</category>
+      <category>SPIRE</category>
+      <category>contagio algoritmico</category>
+      <category>RAG poisoning</category>
+      <category>sicurezza database vettoriali</category>
+      <category>provenienza dei dati</category>
+      <category>Pinecone</category>
+      <category>Qdrant</category>
+      <category>Weaviate</category>
+      <category>Milvus</category>
+      <category>agentic chaos engineering</category>
+      <category>gravità dei dati</category>
+      <category>FinOps di egress</category>
+      <category>HPC</category>
+      <category>storage GPU</category>
+      <category>continuous treasury</category>
+      <category>liquidità senza frontiere</category>
+      <category>pagamenti in tempo reale</category>
+      <category>CBDC</category>
+      <category>eCNY</category>
+      <category>DREX</category>
+      <category>e-Rupee</category>
+      <category>BIS Project Agora</category>
+      <category>euro digitale</category>
+      <category>generazione di dati sintetici</category>
+      <category>multi-cloud JPMorgan</category>
+      <category>modernizzazione Citi</category>
+      <category>graph neural networks</category>
+      <category>frode deepfake</category>
+      <category>harvest now decrypt later</category>
+      <category>HNDL</category>
+      <category>crittografia post-quantum</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>crypto-agilità</category>
+      <category>distribuzione di chiavi quantistica</category>
+      <category>QKD</category>
+      <category>Basel IV</category>
+      <category>rischio di concentrazione cloud</category>
+      <category>RWA rischio operativo</category>
+      <category>sicurezza MCP</category>
+      <category>prompt injection</category>
+      <category>attacchi supply chain</category>
+      <category>CloudCDN</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>WCAG-AA</category>
+      <category>Sebastien Rousseau</category>
     </item>
     <item>
       <title>Ingegneria agentica per le banche: blueprint 2026</title>

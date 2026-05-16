@@ -6,55 +6,100 @@
     <description>日本語の記事:応用AI、ISO 20022 決済、ポスト量子暗号、ホールセール決済の構造変革。</description>
     <atom:link href="https://sebastienrousseau.com/ja/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ja-JP</language>
-    <lastBuildDate>Sat, 16 May 2026 21:05:20 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 22:48:11 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
     <item>
-      <title>2026 年最良のクラウドインフラアーキテクチャ:金融サービスのための AI ネイティブ、マルチクラウド、量子認識設計図</title>
+      <title>2026年の最良のクラウドインフラストラクチャアーキテクチャ:金融サービスのためのAIネイティブ・マルチクラウド・量子対応設計図</title>
       <link>https://sebastienrousseau.com/ja/2026-05-21-2026-saiyou-no-kuraudo-infura-aakitekucha/</link>
-      <description>2026 年のクラウドアーキテクチャは、6 つの柱を中心に結晶化しました:AI ネイティブインフラ、インテリジェントマルチクラウド、エッジでの WebAssembly を持つサーバーレス第一設計、エッジコンピューティング、暗号アグリティを持つ自動化された DevSecOps、高密度の持続可能な運用。</description>
+      <description>2026年のクラウドアーキテクチャは6本柱に結晶化しました。AIネイティブインフラ、インテリジェントマルチクラウド、エッジでのWebAssemblyを伴うサーバーレスファースト設計、エッジコンピューティング、クリプトアジリティを備えた自動化セキュリティ、そして高密度のサステナブル運用です。銀行にとっての問いは、クラウドを消費するのか、それを設計するのかです — エージェント型コマース、エージェント型ユニットエコノミクス、ハーベスト・ナウ・ディクリプト・レイターの量子リスク、MCPセキュリティとアルゴリズム的伝染、暗号学的エージェントアイデンティティ、継続的トレジャリーの要請、EU AI法という収束する圧力のもとで。</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-21-2026-saiyou-no-kuraudo-infura-aakitekucha/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>クラウドアーキテクチャ 2026</category>
-      <category>AI ネイティブインフラ</category>
+      <category>AIネイティブインフラ</category>
       <category>マルチクラウド</category>
+      <category>ソブリンクラウド</category>
+      <category>US CLOUD Act</category>
+      <category>Bleu</category>
+      <category>S3NS</category>
+      <category>AWS European Sovereign Cloud</category>
+      <category>ソブリンAI</category>
+      <category>オープンウェイトモデル</category>
+      <category>Llama 4</category>
+      <category>Mistral</category>
+      <category>コンフィデンシャルコンピューティング</category>
       <category>サーバーレス</category>
       <category>エッジコンピューティング</category>
       <category>WebAssembly</category>
       <category>Wasm</category>
+      <category>eBPF</category>
+      <category>Cilium</category>
+      <category>Tetragon</category>
+      <category>LEO衛星エッジ</category>
+      <category>Starlink Enterprise</category>
       <category>DevSecOps</category>
-      <category>持続可能なデータセンター</category>
-      <category>液体冷却</category>
+      <category>サステナブルデータセンター</category>
+      <category>グリッドアウェアコンピューティング</category>
+      <category>液冷</category>
+      <category>小型モジュール炉</category>
+      <category>SMR</category>
+      <category>原子力</category>
+      <category>スリーマイル島</category>
+      <category>Kairos Power</category>
+      <category>X-Energy</category>
+      <category>シリコンフォトニクス</category>
+      <category>共パッケージ光学</category>
+      <category>NVIDIA Spectrum-X</category>
       <category>AWS Bedrock</category>
       <category>Google Vertex AI</category>
       <category>Azure OpenAI Service</category>
-      <category>エージェンティック商業</category>
+      <category>エージェント型コマース</category>
       <category>マルチエージェントスウォーム</category>
-      <category>エージェンティックユニット経済</category>
-      <category>エージェンティック FinOps</category>
-      <category>エージェント暗号アイデンティティ</category>
+      <category>エージェント型ユニットエコノミクス</category>
+      <category>エージェントFinOps</category>
+      <category>暗号学的エージェントアイデンティティ</category>
       <category>SPIFFE</category>
       <category>SPIRE</category>
-      <category>アルゴリズム伝染</category>
-      <category>データ重力</category>
-      <category>FinOps egress</category>
+      <category>アルゴリズム的伝染</category>
+      <category>RAGポイズニング</category>
+      <category>ベクトルデータベースセキュリティ</category>
+      <category>データ来歴</category>
+      <category>Pinecone</category>
+      <category>Qdrant</category>
+      <category>Weaviate</category>
+      <category>Milvus</category>
+      <category>エージェント型カオスエンジニアリング</category>
+      <category>データグラビティ</category>
+      <category>エグレスFinOps</category>
       <category>HPC</category>
-      <category>GPU ストレージ</category>
-      <category>連続的トレジャリー</category>
+      <category>GPUストレージ</category>
+      <category>継続的トレジャリー</category>
       <category>ボーダーレス流動性</category>
       <category>リアルタイム決済</category>
+      <category>CBDC</category>
+      <category>eCNY</category>
+      <category>DREX</category>
+      <category>e-Rupee</category>
+      <category>BIS Project Agora</category>
+      <category>デジタルユーロ</category>
       <category>合成データ生成</category>
-      <category>機密計算</category>
       <category>JPMorgan マルチクラウド</category>
-      <category>Citi モダニゼーション</category>
+      <category>Citi 近代化</category>
       <category>グラフニューラルネットワーク</category>
       <category>ディープフェイク不正</category>
-      <category>harvest now decrypt later</category>
+      <category>ハーベスト・ナウ・ディクリプト・レイター</category>
       <category>HNDL</category>
-      <category>ポスト量子暗号</category>
-      <category>暗号アグリティ</category>
-      <category>MCP セキュリティ</category>
+      <category>耐量子暗号</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>クリプトアジリティ</category>
+      <category>量子鍵配送</category>
+      <category>QKD</category>
+      <category>Basel IV</category>
+      <category>クラウド集中リスク</category>
+      <category>オペレーショナルリスクRWA</category>
+      <category>MCPセキュリティ</category>
       <category>プロンプトインジェクション</category>
       <category>サプライチェーン攻撃</category>
       <category>CloudCDN</category>
