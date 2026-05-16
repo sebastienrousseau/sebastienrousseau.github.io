@@ -1,0 +1,15 @@
+{
+  "_comment": "Hebrew body-text labels — DRAFT pending native review. Mirrors _data/i18n/en/labels.json key set.",
+  "Published": "פורסם בתאריך",
+  "Updated": "עודכן בתאריך",
+  "min read": "דקות קריאה",
+  "Previous": "הקודם",
+  "Next": "הבא",
+  "Sources & references": "מקורות והפניות",
+  "About the author": "אודות הכותב",
+  "Topics": "נושאים",
+  "Contents": "תוכן עניינים",
+  "Estimated read time": "זמן קריאה משוער",
+  "Article pagination": "מיון מאמרים",
+  "Link to": "קישור אל"
+}

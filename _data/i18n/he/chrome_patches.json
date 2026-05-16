@@ -1,0 +1,289 @@
+{
+  "_comment": "DRAFT inline chrome patches — DRAFT pending native review. (auto-derived from AR template; DRAFT, needs native review)",
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"הרשמה לניוזלטר\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum — פתקי מחקר על תשלומים, AI וקריפטוגרפיה פוסט-קוונטית. ללא ספאם."
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"atah@bank.co.il\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"הרשמה לניוזלטר — sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">הרשמה</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">דלג לתוכן הראשי</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"החלף ניווט\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"החלף ניווט\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"ניווט ראשי\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"מעבר למצב כהה\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"מעבר למצב בהיר\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"החלף ערכת נושא\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"חיפוש (Cmd או Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"חיפוש (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"צרו קשר\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">צרו קשר ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">צרו קשר</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"דף הבית של Sebastien Rousseau\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/he/aleynu/index.html\">אודות</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/he/pirsumim/index.html\">פרסומים</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/he/nos-im/index.html\">נושאים</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/he/proyektim/index.html\">פרויקטים</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/he/ma-amarim/index.html\">מאמרים</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/he/tsor-kesher/index.html\">צור קשר</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/he/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/he/play-listim/index.html\">פלייליסטים</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"חזרה למעלה\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">כתיבה</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">עבודה</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">צור קשר</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/he/aleynu/index.html\">אודות</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/he/noseh-im-static-site-generator/index.html\">נוצר עם Static Site Generator</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/he/pirsumim/index.html\">פרסומים</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/he/tagim/index.html\">תגיות</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/he/proyektim/index.html\">פרויקטים</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/he/play-listim/index.html\">פלייליסטים</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/he/tsor-kesher/index.html\">צור קשר</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/he/ma-amarim/index.html\">מאמרים</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"קישורי רשתות חברתיות\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau ב-"
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau ב-"
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"דיוקן בשחור-לבן של Sebastien Rousseau\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© זכויות יוצרים 2007 - 2026 - Sebastien Rousseau. כל הזכויות שמורות."
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/he/nigishut/index.html\">נגישות</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/he/pratiyut/index.html\">פרטיות</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/he/tnaim/index.html\">תנאים</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"חיפוש בתיעוד...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"חיפוש\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> סגירה"
+    ],
+    [
+      "navigate</span>",
+      "ניווט</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> פתיחה"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>חיפוש</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"שפה\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"HE, שינוי שפה\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"שינוי שפה\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"בקרוב\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">HE</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"ערוץ Atom\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"ערוץ RSS\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"תקציר מאמר\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>עיקרי המסקנות</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>קריאה נוספת:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">קריאה נוספת</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">נסקר לאחרונה <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"אודות הכותב\""
+    ],
+    [
+      ">Full profile</a>",
+      ">פרופיל מלא</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"דיוקן של Sebastien Rousseau\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">צרו קשר</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">התחילו שיחה</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/ma-amarim/index.html\">קראו את המחקר האחרון</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/tsor-kesher/index.html\">צרו קשר</a>"
+    ]
+  ]
+}

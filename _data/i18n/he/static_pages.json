@@ -1,0 +1,99 @@
+{
+  "_comment": "Hebrew static-page metadata — DRAFT pending native review. Mirrors EN/FR/DE static_pages.json shape.",
+  "404": {
+    "title": "404 — הדף לא נמצא — Sebastien Rousseau",
+    "subtitle": "הדף שחיפשת אינו קיים.",
+    "description": "404 — הדף לא נמצא. חזרו לדף הבית או חפשו באתר.",
+    "keywords": "404, שגיאה, דף לא נמצא, Sebastien Rousseau"
+  },
+  "about": {
+    "title": "אודות — Sebastien Rousseau",
+    "subtitle": "עיצוב עתיד הבנקאות והשירותים הפיננסיים באמצעות אינטגרציה אסטרטגית של AI, קריפטוגרפיה פוסט-קוונטית וטכנולוגיית בלוקצ'יין.",
+    "description": "Sebastien Rousseau, מומחה טכנולוגיות בנקאות בכיר: AI יישומי, הגירת ISO 20022, קריפטוגרפיה פוסט-קוונטית, וטרנספורמציה מבנית של תשלומי סיטונאות.",
+    "keywords": "Sebastien Rousseau, ביוגרפיה, בנקאות, תשלומים, AI, ISO 20022, קריפטוגרפיה פוסט-קוונטית, HSBC, PayPal, Barclays"
+  },
+  "accessibility": {
+    "title": "נגישות — Sebastien Rousseau",
+    "subtitle": "המחויבות שלנו לנגישות לפי תקני WCAG.",
+    "description": "הצהרת נגישות עבור sebastienrousseau.com. WCAG 2.2 רמה AA.",
+    "keywords": "נגישות, WCAG, AA, נגיש, Sebastien Rousseau"
+  },
+  "articles": {
+    "title": "מאמרים — Sebastien Rousseau",
+    "subtitle": "מאמרים על AI, קריפטוגרפיה פוסט-קוונטית, ISO 20022 ועתיד התשלומים.",
+    "description": "מאמרים על AI, קריפטוגרפיה פוסט-קוונטית, ISO 20022 ועתיד התשלומים.",
+    "keywords": "מאמרים, מחקר, AI, קריפטוגרפיה פוסט-קוונטית, ISO 20022, תשלומי סיטונאות"
+  },
+  "contact": {
+    "title": "צור קשר — Sebastien Rousseau",
+    "subtitle": "צרו קשר בנוגע לייעוץ, שיחות או הזדמנויות שיתוף פעולה.",
+    "description": "טופס יצירת קשר מקצועי עבור Sebastien Rousseau: ייעוץ, שיחות, שיתופי פעולה.",
+    "keywords": "יצירת קשר, Sebastien Rousseau, ייעוץ, שיחות"
+  },
+  "made-with-shokunin": {
+    "title": "נוצר עם Shokunin — Sebastien Rousseau",
+    "subtitle": "אתר זה נבנה עם מחולל האתרים הסטטי Shokunin, כתוב בשפת Rust.",
+    "description": "אתר זה נבנה עם Shokunin, מחולל אתרים סטטי מהיר ומאובטח בשפת Rust.",
+    "keywords": "Shokunin, מחולל אתרים סטטי, Rust, SSG"
+  },
+  "made-with-static-site-generator": {
+    "title": "נוצר עם Static Site Generator — Sebastien Rousseau",
+    "subtitle": "אתר זה נבנה עם מחולל האתרים הסטטי Shokunin בשפת Rust.",
+    "description": "אתר זה נבנה עם Shokunin, מחולל אתרים סטטי בשפת Rust.",
+    "keywords": "מחולל אתרים סטטי, Shokunin, Rust"
+  },
+  "offline": {
+    "title": "אתם במצב לא מקוון — Sebastien Rousseau",
+    "subtitle": "אין כרגע חיבור לאינטרנט.",
+    "description": "אתם במצב לא מקוון. בדקו את החיבור ונסו שוב.",
+    "keywords": "לא מקוון, ללא חיבור, שגיאת רשת"
+  },
+  "papers": {
+    "title": "פרסומים ומחקר — Sebastien Rousseau",
+    "subtitle": "ניירות עמדה ומחקר יישומי עבור מקבלי החלטות בכירים בתחום התשלומים, AI וקריפטוגרפיה פוסט-קוונטית.",
+    "description": "ניירות לבנים, מחקר שפוט עמיתים, ופתקי תעשייה על תשלומי סיטונאות, ISO 20022, וקריפטוגרפיה פוסט-קוונטית.",
+    "keywords": "ניירות לבנים, מחקר, EPAA, תשלומי סיטונאות, ISO 20022, קריפטוגרפיה פוסט-קוונטית"
+  },
+  "playlists": {
+    "title": "פלייליסטים — Sebastien Rousseau",
+    "subtitle": "פלייליסטים אצורים של Spotify לעבודה עמוקה, יצירתיות ורוח הנדסית.",
+    "description": "פלייליסטים אצורים של Spotify לעבודה עמוקה, יצירתיות ורוח הנדסית.",
+    "keywords": "פלייליסטים, Spotify, עבודה עמוקה, מוזיקה"
+  },
+  "privacy": {
+    "title": "מדיניות פרטיות — Sebastien Rousseau",
+    "subtitle": "איך אנחנו מטפלים בנתונים שלכם.",
+    "description": "מדיניות הפרטיות של sebastienrousseau.com: מה נאסף, איך מאוחסן, וזכויותיכם תחת GDPR.",
+    "keywords": "פרטיות, GDPR, הגנת נתונים, עוגיות"
+  },
+  "projects": {
+    "title": "פרויקטים — Sebastien Rousseau",
+    "subtitle": "פרויקטים בקוד פתוח ב-Python, Rust ו-JavaScript עבור עתיד התעשייה הפיננסית.",
+    "description": "ספריות Python ו-Rust בקוד פתוח לתשלומים, קריפטוגרפיה פוסט-קוונטית, וכלי AI.",
+    "keywords": "Python, Rust, קוד פתוח, תשלומים, קריפטוגרפיה פוסט-קוונטית, AI"
+  },
+  "tags": {
+    "title": "תגיות — Sebastien Rousseau",
+    "subtitle": "עיון בתוכן לפי תגית.",
+    "description": "עיון במאמרים ובפרויקטים לפי תגית.",
+    "keywords": "תגיות, אינדקס, קלסיפיקציה"
+  },
+  "terms": {
+    "title": "תנאים — Sebastien Rousseau",
+    "subtitle": "תנאי שימוש עבור sebastienrousseau.com.",
+    "description": "תנאי שימוש עבור sebastienrousseau.com.",
+    "keywords": "תנאים, תנאי שימוש, משפטי"
+  },
+  "thanks": {
+    "title": "תודה — Sebastien Rousseau",
+    "subtitle": "תודה שיצרתם קשר.",
+    "description": "תודה. הודעתכם התקבלה.",
+    "keywords": "תודה, אישור, יצירת קשר"
+  },
+  "topics": {
+    "title": "נושאים — Sebastien Rousseau",
+    "subtitle": "אשכולות נושאים: קריפטוגרפיה פוסט-קוונטית, ISO 20022, AI יישומי, Rust, בלוקצ'יין.",
+    "description": "עיון לפי נושא: קריפטוגרפיה פוסט-קוונטית, ISO 20022 ותשלומים, AI יישומי, Rust וקוד פתוח, בלוקצ'יין ונכסים דיגיטליים.",
+    "keywords": "קריפטוגרפיה פוסט-קוונטית, ISO 20022, AI, Rust, בלוקצ'יין"
+  }
+}
