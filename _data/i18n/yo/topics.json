@@ -1,0 +1,23 @@
+{
+  "_comment": "Yorùbá (yo) topic-cluster titles + ledes — DRAFT pending native review. Topic slugs are language-independent; only the displayed name and lede change.",
+  "post-quantum-cryptography": {
+    "title": "Kírípítógíráfì lẹ́yìn-kuántọ́mù",
+    "lede": "Kírípítógíráfì tó dá lórí lattice, àwọn ìlànà NIST PQC, ìsanwó tó dáàbò bo kuántọ́mù àti ìhalẹ̀ “kó nísinsin, tú lẹ́yìn”. Àkíyèsí ìwádìí, àwọn ilé-ìkàwé orisun-ìṣí àti ìwé ìtọsọ́nà fún àwọn ẹgbẹ́ ààbò iṣẹ́ ìnáwó."
+  },
+  "iso-20022-payments": {
+    "title": "ISO 20022 àti Ìsanwó",
+    "lede": "Ìṣírò ìwé ìjíròrò àgbáyé, ìbámu àdírẹ́sì ìtòlẹ́sẹẹsẹ, SEPA Instant, SWIFT gpi àti àwọn ọ̀nà ìsanwó ńláńlá tó dáwọ́ lé wọn. Ohun-èlò, ìwé ìtọsọ́nà àti kàlẹ́ńdà àkànṣe."
+  },
+  "applied-ai-banking": {
+    "title": "AI Ìlò nínú Báńkì",
+    "lede": "AI tó ń ṣẹ̀dá, LLM olómùlọ́pọ̀, ohùn àti àwọn àpẹrẹ ọ̀rọ̀ — àti bí wọ́n ṣe ń tún àwọn ètò báńkì, ìránṣẹ́ oníbàárà àti ìmọ̀ ẹ̀rọ ọjà ṣe ní àwọn ilé-iṣẹ́ olórí."
+  },
+  "rust-open-source": {
+    "title": "Rust àti Orisun-ìṣí",
+    "lede": "Àwọn ilé-ìkàwé Rust orisun-ìṣí tí mo kọ tí mo sì ń bójú tó: gígbasilẹ̀, ìṣẹ̀dá kóòdù, ọjọ́ àti àkókò, àwọn ohun pàtàkì kírípító, KEM tó dá lórí Kyber àti àkànṣe ojú-òpó alaiṣiṣẹ́ Rust."
+  },
+  "blockchain-digital-assets": {
+    "title": "Blockchain àti Ohun-ìní oníńọ́mbà",
+    "lede": "Bitcoin, ìpilẹ̀ blockchain, àwọn àmì ERC-20, stablecoin àti àyíká ìlànà tí ó yí àwọn ọ̀nà ìsanwó tí ohun-ìní oníńọ́mbà ń ṣètìlẹ́yìn."
+  }
+}

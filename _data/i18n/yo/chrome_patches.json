@@ -1,0 +1,289 @@
+{
+  "_comment": "Yorùbá (yo) inline chrome patches — DRAFT pending native review.",
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"Ìforúkọsílẹ̀ ìwé ìròyìn\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum — àwọn àkíyèsí ìwádìí lórí ìsanwó, AI àti kírípító lẹ́yìn-kuántọ́mù. Kò sí spam."
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"iwo@banki.com.ng\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"Ìforúkọsílẹ̀ ìwé ìròyìn — sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">Forúkọsílẹ̀</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">Fò sí àkóónú àkọ́kọ́</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"Yí ìwọ̀ndì padà\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"Yí ìwọ̀ndì padà\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"Ìwọ̀ndì àkọ́kọ́\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"Tan àkòrí òkùnkùn\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"Tan àkòrí ìmọ́lẹ̀\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"Yí àkòrí padà\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"Wá (Cmd tàbí Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"Wá (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"Kàn sí wa\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Kàn sí wa ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">Kàn sí wa</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Ilé Sebastien Rousseau\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/yo/nipa-wa/index.html\">About</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/yo/awon-iwe/index.html\">Papers</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/yo/awon-koko/index.html\">Àwọn kókó</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/yo/awon-ise/index.html\">Projects</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/yo/awon-akole/index.html\">Articles</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/yo/kan-si-wa/index.html\">Contact</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/yo/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/yo/akojopo-orin/index.html\">Playlists</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"Padà sí orí\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">Àkọsílẹ̀</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">Iṣẹ́</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">Kàn sí</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/yo/nipa-wa/index.html\">About</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/yo/static-site-generator-lo-ti-se/index.html\">Made with Static Site Generator</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/yo/awon-iwe/index.html\">Papers</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/yo/awon-ami/index.html\">Tags</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/yo/awon-ise/index.html\">Projects</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/yo/akojopo-orin/index.html\">Playlists</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/yo/kan-si-wa/index.html\">Contact</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/yo/awon-akole/index.html\">Articles</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"Àwọn ọ̀nà àjọṣepọ̀\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau lórí "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau lórí "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"Àwòrán Sebastien Rousseau\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Copyright 2007 - 2026 - Sebastien Rousseau. Gbogbo ẹtọ ti wa ni ipamọ."
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/yo/ile-wiwole/index.html\">Accessibility</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/yo/aabo-ikoko/index.html\">Privacy</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/yo/awon-ofin/index.html\">Terms</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"Wá nínú àwọn ìwé...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"Wá\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> tì"
+    ],
+    [
+      "navigate</span>",
+      "ríranlọ́wọ́</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> ṣí"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>Wá</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"Èdè\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"YO, Yí èdè padà\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"Yí èdè padà\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"Yóò dé láìpẹ́\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">YO</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"Àyẹ́ Atom\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"Àyẹ́ RSS\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"Àkójọ àkọlé\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>Awọn Pataki Ojulowo</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>Ìwé tó jọmọ́:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">Ìwé tó jọmọ́</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">Àyẹ̀wò àkọ́kọ́ <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"Nípa òǹkọ̀wé\""
+    ],
+    [
+      ">Full profile</a>",
+      ">Àkọsílẹ̀ kíkún</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"Àwòrán Sebastien Rousseau\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">Kàn sí wa</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Bẹ̀rẹ̀ ìjíròrò</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/yo/awon-akole/index.html\">Ka ìwádìí tuntun</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/yo/kan-si-wa/index.html\">Kàn sí wa</a>"
+    ]
+  ]
+}

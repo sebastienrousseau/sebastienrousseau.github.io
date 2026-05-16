@@ -1,0 +1,15 @@
+{
+  "_comment": "Yorùbá (yo) static-page body HTML — DRAFT pending native review.",
+  "bodies": {
+    "404": "<p>This page returns a 404 error: you have clicked a broken link or requested a page that does not exist.</p><p>Some links that may help:</p><ul><li><a href=\"/yo/\">home</a> — the homepage of this site</li><li><a href=\"/yo/kan-si-wa/index.html\">contact</a> — get in touch</li></ul>",
+    "offline": "<p>Try the following:</p><ul><li>Check the security settings that might be blocking the connection.</li><li>Check your cables and connections.</li><li>Check signal quality in your area.</li><li>Clear your browser cache and cookies.</li><li>Restart your modem or router.</li><li>Restart the router.</li><li>Disable airplane mode.</li></ul>",
+    "thanks": "<p>In the meantime, here are some pointers:</p><ul><li><a href=\"/yo/\"><strong>Explore my site</strong></a>.</li><li><a href=\"/yo/index.html\"><strong>Read my articles</strong></a>.</li></ul><p>Kind regards,</p><p>Sebastien Rousseau</p>",
+    "accessibility": "<p>We are committed to digital accessibility for people with disabilities and are continually improving the user experience.</p><h2>Notify an issue</h2><p>If you encounter an accessibility barrier, please let us know through the <a href=\"/yo/kan-si-wa/index.html\">contact page</a>.</p>",
+    "privacy": "<h2>Collection and use of information</h2><p>We do not collect personal data directly when you browse our site. We do not use cookies for logical purposes and we do not log any personal information.</p>",
+    "terms": "<h2>Acceptance of the terms of use</h2><p>These general terms of use (the “Terms”) apply to the website at <a href=\"https://sebastienrousseau.com/\">https://sebastienrousseau.com/</a>.</p>",
+    "contact": "<p class=\"lede\">Use the form below to get in touch. Your data is only used to respond to your request.</p>",
+    "made-with-shokunin": "<h2>Adopt Static Site Generator</h2><p>Building a website should be fast, secure and reliable. Static Site Generator delivers a free, feature-rich solution for building static sites.</p>",
+    "made-with-static-site-generator": "<h2>Adopt Static Site Generator</h2><p>Building a website should be fast, secure and reliable. Static Site Generator delivers a free, feature-rich solution for building static sites.</p>",
+    "about": "<h2>Biography</h2><p>Onímọ̀ ẹ̀rọ báńkì àgbà; mò ń kọ nípa AI tó wúlò, ìṣírò ISO 20022, kírípító lẹ́yìn-kuántọ́mù fún iṣẹ́ ìnáwó àti àtúnṣe ètò ìsanwó ńláńlá.</p><h2>Contact</h2><p>Get in touch via the <a href=\"/yo/kan-si-wa/index.html\">contact page</a>.</p>"
+  }
+}
