@@ -1,0 +1,289 @@
+{
+  "_comment": "Română (ro) inline chrome patches — DRAFT pending native review.",
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"Abonare la newsletter\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum — note de cercetare despre plăți, IA și criptografia post-cuantică. Fără spam."
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"tu@banca.ro\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"Abonare la newsletter — sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">Abonează-te</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">Salt la conținutul principal</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"Comută navigarea\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"Comută navigarea\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"Navigare principală\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"Activează tema întunecată\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"Activează tema luminoasă\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"Schimbă tema\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"Caută (Cmd sau Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"Caută (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"Contact\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Contact ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">Contact</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Pagina principală Sebastien Rousseau\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/ro/despre/index.html\">About</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/ro/publicatii/index.html\">Papers</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/ro/subiecte/index.html\">Subiecte</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/ro/proiecte/index.html\">Projects</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/ro/articole/index.html\">Articles</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/ro/contact/index.html\">Contact</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/ro/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/ro/liste-de-redare/index.html\">Playlists</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"Înapoi sus\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">Publicații</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">Activitate</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">Contact</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/ro/despre/index.html\">About</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/ro/facut-cu-static-site-generator/index.html\">Made with Static Site Generator</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/ro/publicatii/index.html\">Papers</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/ro/etichete/index.html\">Tags</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/ro/proiecte/index.html\">Projects</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/ro/liste-de-redare/index.html\">Playlists</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/ro/contact/index.html\">Contact</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/ro/articole/index.html\">Articles</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"Linkuri sociale\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau pe "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau pe "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"Portretul lui Sebastien Rousseau\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Copyright 2007 - 2026 - Sebastien Rousseau. Toate drepturile rezervate."
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/ro/accesibilitate/index.html\">Accessibility</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/ro/confidentialitate/index.html\">Privacy</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/ro/termeni/index.html\">Terms</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"Caută în documentație...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"Caută\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> închide"
+    ],
+    [
+      "navigate</span>",
+      "navighează</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> deschide"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>Caută</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"Limbă\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"RO, Schimbă limba\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"Schimbă limba\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"În curând\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">RO</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"Flux Atom\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"Flux RSS\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"Rezumatul articolului\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>Concluzii cheie</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>Lecturi conexe:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">Lecturi conexe</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">Ultima revizuire <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"Despre autor\""
+    ],
+    [
+      ">Full profile</a>",
+      ">Profil complet</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"Portretul lui Sebastien Rousseau\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">Contact</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Începe o conversație</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/ro/articole/index.html\">Citește cercetările recente</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/ro/contact/index.html\">Contact</a>"
+    ]
+  ]
+}

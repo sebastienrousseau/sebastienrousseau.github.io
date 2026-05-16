@@ -1,0 +1,317 @@
+{
+  "_comment": "Română (ro) home-page chrome patches — DRAFT pending native review. Pairs of [regex, replacement] applied to the EN homepage shell.",
+  "patches": [
+    [
+      ">Skip to main content</a>",
+      ">Salt la conținutul principal</a>"
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Contact ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">Contact</a>"
+    ],
+    [
+      ">Read latest research<",
+      ">Citește cercetările recente<"
+    ],
+    [
+      ">Latest<",
+      ">Citește cercetările recente<"
+    ],
+    [
+      ">Read more<",
+      ">Citește cercetările recente<"
+    ],
+    [
+      "<h2 class=ap-foot-title>Writing</h2>",
+      "<h2 class=ap-foot-title>Publicații</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Work</h2>",
+      "<h2 class=ap-foot-title>Activitate</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Reach</h2>",
+      "<h2 class=ap-foot-title>Contact</h2>"
+    ],
+    [
+      "<a href=/about/index\\.html>About</a>",
+      "<a href=/ro/despre/index.html>About</a>"
+    ],
+    [
+      "<a href=/papers/index\\.html>Papers</a>",
+      "<a href=/ro/publicatii/index.html>Papers</a>"
+    ],
+    [
+      "<a href=/projects/index\\.html>Projects</a>",
+      "<a href=/ro/proiecte/index.html>Projects</a>"
+    ],
+    [
+      "<a href=/playlists/index\\.html>Playlists</a>",
+      "<a href=/ro/liste-de-redare/index.html>Playlists</a>"
+    ],
+    [
+      "<a href=/contact/index\\.html>Contact</a>",
+      "<a href=/ro/contact/index.html>Contact</a>"
+    ],
+    [
+      "<a href=/tags/index\\.html>Tags</a>",
+      "<a href=/ro/etichete/index.html>Tags</a>"
+    ],
+    [
+      "<a href=/articles/index\\.html>Articles</a>",
+      "<a href=/ro/articole/index.html>Articles</a>"
+    ],
+    [
+      "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
+      "<a href=/ro/facut-cu-static-site-generator/index.html>Made with Static Site Generator</a>"
+    ],
+    [
+      "<a href=/accessibility/index\\.html>Accessibility</a>",
+      "<a href=/ro/accesibilitate/index.html>Accessibility</a>"
+    ],
+    [
+      "<a href=/privacy/index\\.html>Privacy</a>",
+      "<a href=/ro/confidentialitate/index.html>Privacy</a>"
+    ],
+    [
+      "<a href=/terms/index\\.html>Terms</a>",
+      "<a href=/ro/termeni/index.html>Terms</a>"
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Copyright 2007 - 2026 - Sebastien Rousseau. Toate drepturile rezervate."
+    ],
+    [
+      ">Latest research<",
+      ">Citește cercetările recente<"
+    ],
+    [
+      ">Featured articles<",
+      ">Citește cercetările recente<"
+    ],
+    [
+      ">All articles<",
+      ">Citește cercetările recente<"
+    ],
+    [
+      ">Read full article<",
+      ">Citește cercetările recente<"
+    ],
+    [
+      ">Newest first<",
+      ">Newest first<"
+    ],
+    [
+      ">Oldest first<",
+      ">Oldest first<"
+    ],
+    [
+      ">By topic<",
+      ">By topic<"
+    ],
+    [
+      ">All topics<",
+      ">All topics<"
+    ],
+    [
+      ">By tag<",
+      ">By tag<"
+    ],
+    [
+      ">All tags<",
+      ">All tags<"
+    ],
+    [
+      ">Published<",
+      ">Publicat<"
+    ],
+    [
+      ">Updated<",
+      ">Actualizat<"
+    ],
+    [
+      ">Open source<",
+      ">Open source<"
+    ],
+    [
+      ">Subscribe<",
+      ">Abonează-te<"
+    ],
+    [
+      ">Follow<",
+      ">Follow<"
+    ],
+    [
+      ">Start a conversation<",
+      ">Începe o conversație<"
+    ],
+    [
+      ">Drop me a line<",
+      ">Contact<"
+    ],
+    [
+      ">Learn more<",
+      ">Learn more<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">Authored & maintained<"
+    ],
+    [
+      ">Authored &amp; maintained<",
+      ">Authored &amp; maintained<"
+    ],
+    [
+      "alt=\"PayPal logo\"",
+      "alt=\"PayPal logo\""
+    ],
+    [
+      "alt=\"Barclays logo\"",
+      "alt=\"Barclays logo\""
+    ],
+    [
+      "alt=\"Shazam logo\"",
+      "alt=\"Shazam logo\""
+    ],
+    [
+      "alt=\"AKQA logo\"",
+      "alt=\"AKQA logo\""
+    ],
+    [
+      "alt=\"Virgin logo\"",
+      "alt=\"Virgin logo\""
+    ],
+    [
+      "alt=\"HSBC logo\"",
+      "alt=\"HSBC logo\""
+    ],
+    [
+      ">Read the white paper</a>",
+      ">Read the white paper</a>"
+    ],
+    [
+      ">Read the article<",
+      ">Read the article<"
+    ],
+    [
+      ">Read the paper<",
+      ">Read the paper<"
+    ],
+    [
+      ">See all articles\\b",
+      ">See all articles"
+    ],
+    [
+      ">Quantum<",
+      ">Quantum<"
+    ],
+    [
+      ">Quantum · Banking<",
+      ">Quantum · Banking<"
+    ],
+    [
+      ">Quantum · Cryptography<",
+      ">Quantum · Cryptography<"
+    ],
+    [
+      ">Payments · Stablecoins<",
+      ">Payments · Stablecoins<"
+    ],
+    [
+      ">Payments · ISO 20022<",
+      ">Payments · ISO 20022<"
+    ],
+    [
+      ">Python · Payments<",
+      ">Python · Payments<"
+    ],
+    [
+      ">Python · Cross-border<",
+      ">Python · Cross-border<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · Finance<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · Security<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · Quantum<"
+    ],
+    [
+      ">Rust · YAML<",
+      ">Rust · YAML<"
+    ],
+    [
+      ">Browse all projects<",
+      ">Browse all projects<"
+    ],
+    [
+      ">Experience<",
+      ">Experience<"
+    ],
+    [
+      ">Brands along the way\\.<",
+      ">Brands along the way.<"
+    ],
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"Abonare la newsletter\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Pagina principală Sebastien Rousseau\""
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"Comută navigarea\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"Activează tema întunecată\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"Activează tema luminoasă\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"Caută (Cmd sau Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"Caută (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"Contact\""
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"Înapoi sus\""
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"Linkuri sociale\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"Rezumatul articolului\""
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"Despre autor\""
+    ],
+    [
+      ">Full profile</a>",
+      ">Profil complet</a>"
+    ]
+  ]
+}

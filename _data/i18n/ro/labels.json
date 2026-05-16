@@ -1,0 +1,15 @@
+{
+  "_comment": "Română (ro) body-text labels — DRAFT pending native review. Key set MUST stay in sync with _data/i18n/en/labels.json; CI gate test_i18n_labels.py enforces parity.",
+  "Published": "Publicat",
+  "Updated": "Actualizat",
+  "min read": "min de citit",
+  "Previous": "Anterior",
+  "Next": "Următor",
+  "Sources & references": "Surse și referințe",
+  "About the author": "Despre autor",
+  "Topics": "Subiecte",
+  "Contents": "Cuprins",
+  "Estimated read time": "Timp estimat de citire",
+  "Article pagination": "Paginare articol",
+  "Link to": "Link către"
+}
