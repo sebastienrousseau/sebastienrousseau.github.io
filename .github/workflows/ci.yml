@@ -78,6 +78,14 @@ jobs:
       - name: Unit tests (pytest)
         run: pytest tests/ -ra
 
+      - name: Coverage gate (postbuild_lib must stay at 100 %)
+        # Hard ceiling: every line in scripts/postbuild_lib/ has a unit
+        # test. The gate fails the build if anyone lands code under that
+        # tree without matching coverage.
+        run: |
+          pip install --quiet pytest-cov
+          pytest tests/ --cov=scripts/postbuild_lib --cov-fail-under=100 -q
+
       - name: Build site
         run: ./build.sh
 

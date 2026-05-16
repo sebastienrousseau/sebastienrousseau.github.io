@@ -60,14 +60,14 @@ Targets (Google "good" thresholds): LCP ≤ 2.5 s, CLS ≤ 0.1, FID/TBT ≤ 200 
 
 | Module                                       | Coverage |
 |----------------------------------------------|---------:|
-| `postbuild_lib/seo.py`                       |   95 %   |
-| `postbuild_lib/github_stats.py`              |   92 %   |
-| `postbuild_lib/output.py`                    |   83 %   |
-| `postbuild_lib/article_furniture.py`         |   83 %   |
-| `postbuild_lib/__init__.py`                  |  100 %   |
+| `postbuild_lib/seo.py`                       | **100 %** |
+| `postbuild_lib/github_stats.py`              | **100 %** |
+| `postbuild_lib/output.py`                    | **100 %** |
+| `postbuild_lib/article_furniture.py`         | **100 %** |
+| `postbuild_lib/__init__.py`                  | **100 %** |
 
-Total `postbuild_lib`: **86 %** (up from 38 % baseline). 230 pytest cases (up
-from 141). Every module is now at or above the 80 % bar.
+Total `postbuild_lib`: **100 %** (was 38 % baseline). 316 pytest cases
+(was 141). Every line of every module is now exercised by a unit test.
 
 ## Technical SEO
 
