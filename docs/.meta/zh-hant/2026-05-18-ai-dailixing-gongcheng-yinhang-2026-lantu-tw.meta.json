@@ -1,11 +1,11 @@
 {
-  "description": "代理式 AI 已在全球銀行業從試點走向生產；70% 機構在用，僅五分之一擁有成熟治理。",
-  "language": "zh-Hant",
-  "keywords": "代理式工程, 規範驅動開發, 銀行, 金融服務, AI 治理, 歐盟 AI 法案, DORA, SR 11-7, COBOL 現代化, Claude Code",
-  "title": "面向銀行的代理式工程：2026 年高管團隊與工程師藍圖",
   "banner_alt": "銀行代理式工程架構圖——規範驅動的 AI 代理、治理控制平面、量子安全基質和遺留主機現代化流",
-  "subtitle": "代理式 AI 已從試點走向生產。70% 的銀行已使用，僅五分之一擁有成熟治理模型",
+  "title": "面向銀行的代理式工程：2026 年高管團隊與工程師藍圖",
+  "language": "zh-Hant",
   "locale": "zh_TW",
+  "date": "May 18, 2026",
+  "keywords": "代理式工程, 規範驅動開發, 銀行, 金融服務, AI 治理, 歐盟 AI 法案, DORA, SR 11-7, COBOL 現代化, Claude Code",
   "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
-  "date": "May 18, 2026"
+  "subtitle": "代理式 AI 已從試點走向生產。70% 的銀行已使用，僅五分之一擁有成熟治理模型",
+  "description": "代理式 AI 已在全球銀行業從試點走向生產；70% 機構在用，僅五分之一擁有成熟治理。"
 }

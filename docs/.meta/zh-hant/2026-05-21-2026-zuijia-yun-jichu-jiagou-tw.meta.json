@@ -1,11 +1,11 @@
 {
   "date": "May 21, 2026",
-  "language": "zh-Hant",
-  "description": "2026 年雲架構圍繞六大支柱結晶：AI 原生基礎設施、智慧多雲、無伺服器優先與邊緣 WebAssembly、邊緣計算、自動化 DevSecOps 與密碼敏捷性、可持續高密度運營。",
-  "banner": "https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp",
-  "banner_alt": "2026 年六支柱雲架構圖——AI 原生、多雲、無伺服器、邊緣、DevSecOps 和可持續設計，配 CloudCDN 邊緣研究覆蓋",
   "subtitle": "雲架構已圍繞六大支柱和銀行的一個戰略問題結晶：消費雲還是設計它",
-  "keywords": "雲架構 2026, AI 原生基礎設施, 多雲, 無伺服器, 邊緣計算, WebAssembly, DevSecOps, 液體冷卻, 代理式商業, 量子安全, CloudCDN",
+  "banner_alt": "2026 年六支柱雲架構圖——AI 原生、多雲、無伺服器、邊緣、DevSecOps 和可持續設計，配 CloudCDN 邊緣研究覆蓋",
+  "title": "2026 年最佳雲基礎設施架構：金融服務的 AI 原生、多雲、量子感知藍圖",
   "locale": "zh_TW",
-  "title": "2026 年最佳雲基礎設施架構：金融服務的 AI 原生、多雲、量子感知藍圖"
+  "description": "2026 年雲架構圍繞六大支柱結晶：AI 原生基礎設施、智慧多雲、無伺服器優先與邊緣 WebAssembly、邊緣計算、自動化 DevSecOps 與密碼敏捷性、可持續高密度運營。",
+  "keywords": "雲架構 2026, AI 原生基礎設施, 多雲, 無伺服器, 邊緣計算, WebAssembly, DevSecOps, 液體冷卻, 代理式商業, 量子安全, CloudCDN",
+  "language": "zh-Hant",
+  "banner": "https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp"
 }

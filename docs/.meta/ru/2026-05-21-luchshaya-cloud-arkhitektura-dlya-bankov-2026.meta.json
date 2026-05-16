@@ -1,11 +1,11 @@
 {
-  "date": "May 21, 2026",
-  "title": "Лучшая архитектура cloud-инфраструктуры в 2026 году: AI-native, multicloud и квантово-осведомлённый план для финансовых услуг",
-  "banner_alt": "Диаграмма архитектуры cloud из шести столпов для 2026: AI-native, multicloud, serverless, edge, DevSecOps и устойчивый дизайн с edge-слоем исследований CloudCDN",
-  "banner": "https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp",
-  "language": "ru-RU",
-  "keywords": "архитектура cloud 2026, AI-native инфраструктура, multicloud, serverless, edge computing, WebAssembly, Wasm, DevSecOps, устойчивый дата-центр, жидкостное охлаждение, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, agentic commerce, multi-agent swarms, agentic unit economics, agentic FinOps, криптографическая идентичность агентов, SPIFFE, SPIRE, алгоритмическое заражение, гравитация данных, FinOps egress, HPC, GPU-хранилище, continuous treasury, безграничная ликвидность, платежи в реальном времени, генерация синтетических данных, confidential computing, JPMorgan multicloud, модернизация Citi, графовые нейронные сети, deepfake-мошенничество, harvest now decrypt later, HNDL, постквантовая криптография, crypto-agility, безопасность MCP, prompt injection, атаки на цепочку поставок, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau",
-  "description": "Cloud-архитектура в 2026 году кристаллизовалась вокруг шести столпов: AI-native инфраструктура, интеллектуальный multicloud, serverless-first с WebAssembly на edge, edge-вычисления, автоматизированный DevSecOps с crypto-agility и устойчивые операции высокой плотности. Для банков вопрос больше не в том, потреблять cloud или проектировать его.",
+  "subtitle": "Шесть конвергирующих столпов и стратегический выбор для банков",
   "locale": "ru_RU",
-  "subtitle": "Шесть конвергирующих столпов и стратегический выбор для банков"
+  "banner_alt": "Диаграмма архитектуры cloud из шести столпов для 2026: AI-native, multicloud, serverless, edge, DevSecOps и устойчивый дизайн с edge-слоем исследований CloudCDN",
+  "keywords": "архитектура cloud 2026, AI-native инфраструктура, multicloud, serverless, edge computing, WebAssembly, Wasm, DevSecOps, устойчивый дата-центр, жидкостное охлаждение, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, agentic commerce, multi-agent swarms, agentic unit economics, agentic FinOps, криптографическая идентичность агентов, SPIFFE, SPIRE, алгоритмическое заражение, гравитация данных, FinOps egress, HPC, GPU-хранилище, continuous treasury, безграничная ликвидность, платежи в реальном времени, генерация синтетических данных, confidential computing, JPMorgan multicloud, модернизация Citi, графовые нейронные сети, deepfake-мошенничество, harvest now decrypt later, HNDL, постквантовая криптография, crypto-agility, безопасность MCP, prompt injection, атаки на цепочку поставок, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau",
+  "language": "ru-RU",
+  "title": "Лучшая архитектура cloud-инфраструктуры в 2026 году: AI-native, multicloud и квантово-осведомлённый план для финансовых услуг",
+  "date": "May 21, 2026",
+  "description": "Cloud-архитектура в 2026 году кристаллизовалась вокруг шести столпов: AI-native инфраструктура, интеллектуальный multicloud, serverless-first с WebAssembly на edge, edge-вычисления, автоматизированный DevSecOps с crypto-agility и устойчивые операции высокой плотности. Для банков вопрос больше не в том, потреблять cloud или проектировать его.",
+  "banner": "https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp"
 }

@@ -1,11 +1,11 @@
 {
+  "banner": "https://cloudcdn.pro/stocks/images/kyber-banner.webp",
+  "locale": "vi_VN",
+  "banner_alt": "Sơ đồ trừu tượng của mạng tinh thể",
+  "date": "November 19, 2023",
   "title": "CRYSTALS-Kyber: thuật toán bảo vệ trong thời lượng tử",
   "keywords": "CRYSTALS-Kyber, NIST, FIPS 203, hậu lượng tử, mật mã, KEM, mạng tinh thể, ML-KEM",
   "description": "CRYSTALS-Kyber là thuật toán đóng gói khoá kháng lượng tử được NIST lựa chọn. Cách thức hoạt động, vì sao nó quan trọng, và cách nó định hình lại mật mã.",
-  "locale": "vi_VN",
-  "banner": "https://cloudcdn.pro/stocks/images/kyber-banner.webp",
-  "language": "vi-VN",
-  "date": "November 19, 2023",
   "subtitle": "Tiêu chuẩn NIST FIPS 203 cho đóng gói khoá hậu lượng tử",
-  "banner_alt": "Sơ đồ trừu tượng của mạng tinh thể"
+  "language": "vi-VN"
 }

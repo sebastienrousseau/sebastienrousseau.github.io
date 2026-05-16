@@ -1,11 +1,11 @@
 {
   "date": "October 9, 2023",
+  "description": "أنشئ مواقع ساكنة عالية الأثر، قابلة للتوسّع بلا حدود وتحت سيطرتك الكاملة، بفضل Shokunin — مولّد SSG فائق السرعة مكتوب بلغة Rust.",
+  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
+  "subtitle": "مولّدُ SSG فائق السرعة، يَسِير الوصول ومُحسَّن لمحرّكات البحث، مكتوبٌ بلغة Rust",
   "language": "fil-PH",
   "banner_alt": "حاسوب محمول مُطفأ فوق طاولة بيضاء، وإلى اليسار كأس ماء، وإلى اليمين قلم ودفتر ملاحظات ونبتة",
-  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
-  "keywords": "Shokunin, مولّد المواقع الساكنة, SSG, Rust, الأداء, SEO, الوصول الميسّر, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS",
+  "title": "Shokunin: أسرع مولّد للمواقع الساكنة قائمٌ على Rust",
   "locale": "fil_PH",
-  "subtitle": "مولّدُ SSG فائق السرعة، يَسِير الوصول ومُحسَّن لمحرّكات البحث، مكتوبٌ بلغة Rust",
-  "description": "أنشئ مواقع ساكنة عالية الأثر، قابلة للتوسّع بلا حدود وتحت سيطرتك الكاملة، بفضل Shokunin — مولّد SSG فائق السرعة مكتوب بلغة Rust.",
-  "title": "Shokunin: أسرع مولّد للمواقع الساكنة قائمٌ على Rust"
+  "keywords": "Shokunin, مولّد المواقع الساكنة, SSG, Rust, الأداء, SEO, الوصول الميسّر, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS"
 }

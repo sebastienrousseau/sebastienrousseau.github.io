@@ -1,11 +1,11 @@
 {
-  "description": "Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors.",
   "subtitle": "Reshaping human-computer interaction with significant advancements in custom instructions",
+  "title": "[UK DRAFT] AI Prompt Engineering 2024: Techniques That Work",
+  "description": "Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors.",
+  "keywords": "AI Prompt Engineering, Custom Instructions, Multi-Persona AI, Chain of Thought, Quantum Computing, Ethical AI, Adaptive Prompting, Zero Shot Prompting, Few Shot Prompting, AI Technology Trends",
   "banner_alt": "A man analysing data on screens",
   "locale": "uk_UA",
-  "title": "[UK DRAFT] AI Prompt Engineering 2024: Techniques That Work",
   "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp",
-  "date": "Jan 23, 2024",
-  "keywords": "AI Prompt Engineering, Custom Instructions, Multi-Persona AI, Chain of Thought, Quantum Computing, Ethical AI, Adaptive Prompting, Zero Shot Prompting, Few Shot Prompting, AI Technology Trends",
-  "language": "uk-UA"
+  "language": "uk-UA",
+  "date": "Jan 23, 2024"
 }

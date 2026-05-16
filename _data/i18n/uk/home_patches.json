@@ -2,11 +2,11 @@
   "_comment": "Ukrainian home_patches.json — DRAFT pending native-speaker review. Derived from FR template with translation substitution; URL slugs adjusted (/fr/ -> /uk/ + UK slug map).",
   "patches": [
     [
-      ">Authored &amp; травняntained<",
+      ">Authored &amp; maintained<",
       ">Створено та підтримуються<"
     ],
     [
-      ">Authored & травняntained<",
+      ">Authored & maintained<",
       ">Створено та підтримуються<"
     ],
     [
@@ -26,7 +26,7 @@
       ">Відкритий код для майбутнього фінансів.<"
     ],
     [
-      ">A portfolio of Python, Rust and JavaScript libraries I created and травняntain\\. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography\\.<",
+      ">A portfolio of Python, Rust and JavaScript libraries I created and maintain\\. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography\\.<",
       ">Портфоліо бібліотек Python, Rust і JavaScript, які я створюю та підтримую. Відкритий код, вільне використання, застосування до оптових платежів, транскордонних розрахунків, фінансових даних і квантово-стійкої криптографії.<"
     ],
     [
@@ -138,7 +138,7 @@
       "<p class=newsroom-excerpt>Квантовий ризик перейшов від дослідницької цікавості до активного регуляторного мандата. З дорожньою картою G7, опублікованою у січні 2026 року, та BIS Project Leap, що демонструє здійсненність у виробничих платіжних системах, питання на рівні ради директорів більше не про те, чи мігрувати.</p>"
     ],
     [
-      "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks reтравняn behind on the remediation programme\\.</p>",
+      "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\\.</p>",
       "<p class=newsroom-excerpt>З листопада 2026 року SWIFT CBPR+ відхиляє неструктуровані поштові адреси у транскордонних платіжних повідомленнях. За шість місяців 65% повідомлень pacs.008 досі надсилають неконформні адреси, а 44% банків відстають від програми ремедіації.</p>"
     ],
     [

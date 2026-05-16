@@ -1,11 +1,11 @@
 {
-  "date": "March 18, 2024",
-  "language": "ru-RU",
-  "subtitle": "Архитектура, стратегии предварительного обучения и эмерджентные способности",
-  "title": "Развитие ИИ с мультимодальными LLM: уроки из MM1",
   "locale": "ru_RU",
-  "banner": "https://cloudcdn.pro/stocks/images/mm1-multimodal-llm.webp",
-  "banner_alt": "Мультимодальные LLM: MM1 от Apple",
+  "subtitle": "Архитектура, стратегии предварительного обучения и эмерджентные способности",
+  "keywords": "MM1, Apple, мультимодальные LLM, vision-language, предобучение, in-context learning, эмерджентные способности, исследовательская статья",
   "description": "Анализ статьи Apple MM1 о мультимодальных больших языковых моделях — архитектура, стратегии предварительного обучения и новые возможности.",
-  "keywords": "MM1, Apple, мультимодальные LLM, vision-language, предобучение, in-context learning, эмерджентные способности, исследовательская статья"
+  "date": "March 18, 2024",
+  "banner_alt": "Мультимодальные LLM: MM1 от Apple",
+  "title": "Развитие ИИ с мультимодальными LLM: уроки из MM1",
+  "language": "ru-RU",
+  "banner": "https://cloudcdn.pro/stocks/images/mm1-multimodal-llm.webp"
 }

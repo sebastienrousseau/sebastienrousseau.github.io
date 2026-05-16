@@ -1,11 +1,11 @@
 {
-  "locale": "de_DE",
-  "date": "March 04, 2024",
   "language": "de",
-  "subtitle": "Die Nutzerinteraktion über Sprachen hinweg neu definieren",
+  "date": "March 04, 2024",
   "description": "Lernen Sie den neuen mehrsprachigen Assistenten von Mistral AI kennen — eine fortschrittliche KI, die mehrere Sprachen versteht und in Echtzeit innerhalb derselben Unterhaltung antwortet.",
   "banner": "https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp",
+  "locale": "de_DE",
   "banner_alt": "Farbenfrohe, abstrakte digitale Kunstdarstellung einer Katze",
-  "keywords": "Le Chat, Mistral AI, Mistral Chatbot, virtueller Assistent, mehrsprachiges Verständnis, KI-Kundenservice, Mistral Unternehmenslösungen, Le Chat Anpassung, mehrsprachige Unterstützung, KI-Kommunikation, KI für Unternehmen",
-  "title": "Le Chat von Mistral AI: Mehrsprachige Konversations-KI"
+  "subtitle": "Die Nutzerinteraktion über Sprachen hinweg neu definieren",
+  "title": "Le Chat von Mistral AI: Mehrsprachige Konversations-KI",
+  "keywords": "Le Chat, Mistral AI, Mistral Chatbot, virtueller Assistent, mehrsprachiges Verständnis, KI-Kundenservice, Mistral Unternehmenslösungen, Le Chat Anpassung, mehrsprachige Unterstützung, KI-Kommunikation, KI für Unternehmen"
 }

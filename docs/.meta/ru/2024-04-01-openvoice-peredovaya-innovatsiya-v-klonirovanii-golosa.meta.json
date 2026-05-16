@@ -1,11 +1,11 @@
 {
-  "title": "OpenVoice: передовая инновация в технологии клонирования голоса",
-  "subtitle": "Открытое решение для синтеза речи с контролем над голосом",
-  "language": "ru-RU",
   "locale": "ru_RU",
   "description": "OpenVoice — открытая модель клонирования голоса с возможностью контроля над эмоцией, акцентом и темпом речи.",
-  "banner": "https://cloudcdn.pro/stocks/images/openvoice-banner.webp",
+  "language": "ru-RU",
   "keywords": "OpenVoice, клонирование голоса, синтез речи, TTS, voice cloning, open source, deepfake, безопасность",
   "banner_alt": "OpenVoice — баннер технологии клонирования голоса",
-  "date": "April 1, 2024"
+  "title": "OpenVoice: передовая инновация в технологии клонирования голоса",
+  "date": "April 1, 2024",
+  "subtitle": "Открытое решение для синтеза речи с контролем над голосом",
+  "banner": "https://cloudcdn.pro/stocks/images/openvoice-banner.webp"
 }
