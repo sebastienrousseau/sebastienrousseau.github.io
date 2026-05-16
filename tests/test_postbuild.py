@@ -103,6 +103,73 @@ def test_patch_block_rewrites_meta_path_on_any_host():
 
 
 # ---------------------------------------------------------------------------
+# inject_word_count + fix_social_image (seo.py)
+# ---------------------------------------------------------------------------
+
+
+def test_inject_word_count_adds_field_to_blogposting():
+    html = (
+        '<script type="application/ld+json">'
+        '{"@type":"BlogPosting","headline":"X"}'
+        '</script>'
+        '<main>One two three four five six.</main>'
+    )
+    out = pb.inject_word_count(html)
+    assert '"wordCount":6' in out
+
+
+def test_inject_word_count_skips_when_no_main():
+    html = '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+    assert pb.inject_word_count(html) == html
+
+
+def test_inject_word_count_skips_when_main_is_empty():
+    html = (
+        '<script type="application/ld+json">{"@type":"BlogPosting","headline":"X"}</script>'
+        '<main></main>'
+    )
+    out = pb.inject_word_count(html)
+    assert '"wordCount"' not in out
+
+
+def test_compute_word_count_strips_aside_blocks():
+    """Asides (lead, related-cards) are not counted toward the article body."""
+    html = (
+        '<main><aside>ignore this aside content</aside>'
+        '<p>real body words here</p></main>'
+    )
+    n = pb.compute_word_count(html)
+    assert n == 4  # "real body words here"
+
+
+def test_fix_social_image_promotes_summary_to_large():
+    """Twitter card defaults to ``summary`` on some posts; we lift to
+    ``summary_large_image`` when a real banner is present."""
+    html = (
+        '<script type="application/ld+json">'
+        '{"@type":"BlogPosting","image":{"url":"https://x/banner.webp","width":1200,"height":628}}'
+        '</script>'
+        '<meta property="og:image" content="">'
+        '<meta name="twitter:image" content="">'
+        '<meta name="twitter:card" content="summary">'
+    )
+    out = pb.fix_social_image(html)
+    assert "summary_large_image" in out
+    assert 'content="https://x/banner.webp"' in out
+
+
+def test_fix_social_image_no_op_when_banner_is_placeholder():
+    html = (
+        '<script type="application/ld+json">'
+        '{"@type":"BlogPosting","image":{"url":"divider.webp"}}'
+        '</script>'
+        '<meta name="twitter:card" content="summary">'
+    )
+    out = pb.fix_social_image(html)
+    assert out == html  # untouched
+
+
+# ---------------------------------------------------------------------------
 # llms.txt + robots.txt + json-feed writers
 # ---------------------------------------------------------------------------
 
