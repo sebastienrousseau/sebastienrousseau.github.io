@@ -1,0 +1,317 @@
+{
+  "_comment": "Polish home-page chrome patches — DRAFT pending native-speaker review. Each entry is a [regex_pattern, replacement_string] pair applied to the EN home-page shell to translate it into Polish. Mirrors HOME_FR_PATCHES in build_translations.py. Formal banking register.",
+  "patches": [
+    [
+      ">Authored &amp; maintained<",
+      ">Napisane i utrzymywane<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">Napisane i utrzymywane<"
+    ],
+    [
+      ">Shaping the future of banking<br>through AI, payments,<br>and quantum-safe security\\.</h1>",
+      ">Kształtowanie przyszłości bankowości<br>poprzez AI, płatności<br>i bezpieczeństwo odporne na kwanty.</h1>"
+    ],
+    [
+      ">Applying AI and quantum-safe security to the future of payments\\.</p>",
+      ">Zastosowanie AI i bezpieczeństwa odpornego na kwanty w przyszłości płatności.</p>"
+    ],
+    [
+      "id=practice>Open source for the<br>future of finance\\.</h2>",
+      "id=practice>Open source dla<br>przyszłości finansów.</h2>"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">Open source dla przyszłości finansów.<"
+    ],
+    [
+      ">A portfolio of Python, Rust and JavaScript libraries I created and maintain\\. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography\\.<",
+      ">Portfolio bibliotek Python, Rust i JavaScript, które stworzyłem i utrzymuję. Open source, do bezpłatnego użytku, zastosowane w płatnościach hurtowych, rozliczeniach transgranicznych, danych finansowych i kryptografii odpornej na kwanty.<"
+    ],
+    [
+      ">Browse all projects<",
+      ">Przeglądaj wszystkie projekty<"
+    ],
+    [
+      ">Python · Payments<",
+      ">Python · Płatności<"
+    ],
+    [
+      ">Python · Cross-border<",
+      ">Python · Transgraniczne<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · Finanse<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · Bezpieczeństwo<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · Kwanty<"
+    ],
+    [
+      ">Rust · YAML<",
+      ">Rust · YAML<"
+    ],
+    [
+      ">Learn about ([A-Za-z0-9 ()_-]+)</a>",
+      ">Dowiedz się o \\1</a>"
+    ],
+    [
+      "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
+      "<p>Biblioteka Pythona automatyzująca tworzenie plików płatności <strong>ISO 20022 pain.001</strong> z CSV lub SQLite. Zbudowana z myślą o globalnej migracji z MT/MX do komunikatów strukturalnych w SWIFT, SEPA i głównych schematach.</p>"
+    ],
+    [
+      "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
+      "<p>Generuje, waliduje i dostarcza komunikaty przelewów klienta FI-do-FI w standardzie <strong>ISO 20022 pacs.008</strong>. JSON Schema, walidacja XSD, IBAN dla 75 krajów, maskowanie danych osobowych zgodne z RODO/PCI-DSS.</p>"
+    ],
+    [
+      "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
+      "<p>Zestaw narzędzi Pythona klasy finansowej, który przekształca wielowariantowe wyciągi bankowe w dane strukturalne. Zaprojektowany z myślą o realiach prawdziwych plików wyciągów i wymaganiach audytowych środowisk regulowanych.</p>"
+    ],
+    [
+      "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
+      "<p>Biblioteka Rust implementująca <strong>bezpieczne algorytmy hashujące i digest</strong> do szyfrowania i weryfikacji haseł. Zaprojektowana z postawą odporności na kwanty dla ery uwierzytelniania post-PQC.</p>"
+    ],
+    [
+      "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
+      "<p>Solidna implementacja Rust standardu <strong>CRYSTALS-Kyber</strong>, NIST FIPS 203 dla szyfrowania postkwantowego ogólnego zastosowania. Fundament uwierzytelniania płatności odpornego na kwanty.</p>"
+    ],
+    [
+      "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
+      "<p><strong>Ekosystem YAML 1.2 w czystym Rust</strong>. Zero unsafe, 100% zgodność ze specyfikacją (406 / 406 oficjalnego zestawu), streaming-first serde, bezstratny CST i walidacja JSON-Schema. Biblioteka + CLI (noyafmt, noyavalidate) + LSP + MCP + bindingi WASM.</p>"
+    ],
+    [
+      "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
+      "Obliczenia kwantowe zagrażają kryptograficznym fundamentom usług finansowych. Płatności — od czasu rzeczywistego po rozliczenia transgraniczne — opierają się na zabezpieczeniach, które kwanty ostatecznie uczynią przestarzałymi."
+    ],
+    [
+      ">Quantum-Safe Payments white paper · September 2025 · Read the paper<",
+      ">Biała księga Quantum-Safe Payments · Wrzesień 2025 · Przeczytaj białą księgę<"
+    ],
+    [
+      ">Read the paper<",
+      ">Przeczytaj białą księgę<"
+    ],
+    [
+      ">Quantum-Safe Payments\\.</h2>",
+      ">Płatności odporne na kwanty.</h2>"
+    ],
+    [
+      ">Quantum-Safe Payments\\.<",
+      ">Płatności odporne na kwanty.<"
+    ],
+    [
+      ">Industry white paper for the Emerging Payments Association Asia\\.\\s*The structural threat quantum computing poses to payment infrastructure, and the case for coordinated action now\\.<",
+      ">Branżowa biała księga dla Emerging Payments Association Asia. Strukturalne zagrożenie, jakie obliczenia kwantowe stanowią dla infrastruktury płatniczej, oraz uzasadnienie skoordynowanych działań już teraz.<"
+    ],
+    [
+      ">Why the payments industry must act now\\.<",
+      ">Dlaczego branża płatnicza musi działać już teraz.<"
+    ],
+    [
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
+      ">Regulatorzy traktują strategię „zbieraj teraz, odszyfruj później” jako wiarygodne aktualne ryzyko. Niniejsza biała księga przedstawia strukturalne zagrożenie i pilne uzasadnienie skoordynowanych działań w całej infrastrukturze płatności hurtowych.</p>"
+    ],
+    [
+      ">Latest<",
+      ">Najnowsze<"
+    ],
+    [
+      ">From the desk\\.<",
+      ">Z biurka.<"
+    ],
+    [
+      ">Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments\\.<",
+      ">Najnowsze badania i artykuły o kryptografii odpornej na kwanty, migracji ISO 20022 i przyszłości płatności hurtowych.<"
+    ],
+    [
+      "<p class=newsroom-excerpt>Stablecoins cannot pay yield under the GENIUS Act\\. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail\\.</p>",
+      "<p class=newsroom-excerpt>Stablecoiny nie mogą wypłacać zysków zgodnie z GENIUS Act. Złożenia BRSRV i BSTBL BlackRock pokazują rozwiązanie — tokenizowany fundusz rynku pieniężnego działający równolegle do regulowanego stablecoina, aby dostarczać zyski przez sąsiednią, zgodną szynę.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>Quantum risk has moved from research curiosity to active regulatory mandate\\. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate\\.</p>",
+      "<p class=newsroom-excerpt>Ryzyko kwantowe przeszło od ciekawostki badawczej do aktywnego mandatu regulacyjnego. Po opublikowaniu mapy drogowej G7 w styczniu 2026 r. i wykazaniu wykonalności przez BIS Project Leap w działających systemach płatniczych pytanie na poziomie zarządu nie brzmi już, czy migrować.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\\.</p>",
+      "<p class=newsroom-excerpt>Od listopada 2026 r. SWIFT CBPR+ odrzuca niestrukturalne adresy pocztowe w komunikatach płatności transgranicznych. Sześć miesięcy przed terminem 65% komunikatów pacs.008 nadal zawiera niezgodne adresy, a 44% banków pozostaje w tyle z programem naprawczym.</p>"
+    ],
+    [
+      ">See all articles\\b",
+      ">Zobacz wszystkie artykuły"
+    ],
+    [
+      "<p class=feat-eyebrow>Get in touch</p>",
+      "<p class=feat-eyebrow>Skontaktuj się</p>"
+    ],
+    [
+      ">Unlocking the Future of Banking and Financial Services\\.<br>Discover the latest news from</h2>",
+      ">Otwieranie przyszłości bankowości i usług finansowych.<br>Odkryj najnowsze analizy</h2>"
+    ],
+    [
+      "<p class=\\\"feat-sub center\\\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.</p>",
+      "<p class=\"feat-sub center\">Czy chodzi o strategię płatności hurtowych, migrację ISO 20022, czy kryptografię odporną na kwanty dla usług finansowych — chętnie porozmawiam.</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Rozpocznij rozmowę</a>"
+    ],
+    [
+      "<a class=pill href=\"?/articles/index\\.html\"?>Read latest research</a>",
+      "<a class=pill href=\"/pl/artykuly/index.html\">Przeczytaj najnowsze badania</a>"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/pl/kontakt/index.html\">Skontaktuj się</a>"
+    ],
+    [
+      "href=\"?/papers/index\\.html\"?>Read the paper</a>",
+      "href=\"/pl/publikacje/index.html\">Przeczytaj białą księgę</a>"
+    ],
+    [
+      "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
+      "href=\"/pl/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenizowany-fundusz-rynku-pienieznego/index.html\">Przeczytaj artykuł</a>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Writing</h2>",
+      "<h2 class=ap-foot-title>Publikacje</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Work</h2>",
+      "<h2 class=ap-foot-title>Praca</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Reach</h2>",
+      "<h2 class=ap-foot-title>Kontakt</h2>"
+    ],
+    [
+      "<a href=/about/index\\.html>About</a>",
+      "<a href=/pl/o-mnie/index.html>O mnie</a>"
+    ],
+    [
+      "<a href=/papers/index\\.html>Papers</a>",
+      "<a href=/pl/publikacje/index.html>Publikacje</a>"
+    ],
+    [
+      "<a href=/projects/index\\.html>Projects</a>",
+      "<a href=/pl/projekty/index.html>Projekty</a>"
+    ],
+    [
+      "<a href=/playlists/index\\.html>Playlists</a>",
+      "<a href=/pl/playlisty/index.html>Playlisty</a>"
+    ],
+    [
+      "<a href=/contact/index\\.html>Contact</a>",
+      "<a href=/pl/kontakt/index.html>Kontakt</a>"
+    ],
+    [
+      "<a href=/tags/index\\.html>Tags</a>",
+      "<a href=/pl/tagi/index.html>Tagi</a>"
+    ],
+    [
+      "<a href=/articles/index\\.html>Articles</a>",
+      "<a href=/pl/artykuly/index.html>Artykuły</a>"
+    ],
+    [
+      "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
+      "<a href=/pl/stworzone-statycznym-generatorem/index.html>Stworzone statycznym generatorem</a>"
+    ],
+    [
+      "<a href=/accessibility/index\\.html>Accessibility</a>",
+      "<a href=/pl/dostepnosc/index.html>Dostępność</a>"
+    ],
+    [
+      "<a href=/privacy/index\\.html>Privacy</a>",
+      "<a href=/pl/prywatnosc/index.html>Prywatność</a>"
+    ],
+    [
+      "<a href=/terms/index\\.html>Terms</a>",
+      "<a href=/pl/warunki/index.html>Warunki</a>"
+    ],
+    [
+      ">Experience<",
+      ">Doświadczenie<"
+    ],
+    [
+      ">Brands along the way\\.<",
+      ">Marki na drodze.<"
+    ],
+    [
+      ">From global Tier-1 banks to consumer technology\\. Payments and digital product leadership across HSBC, PayPal, Barclays, Shazam, AKQA and Virgin Group\\.</p>",
+      ">Od globalnych banków Tier-1 po technologię konsumencką. Przywództwo produktowe w płatnościach i obszarze cyfrowym w HSBC, PayPal, Barclays, Shazam, AKQA i Virgin Group.</p>"
+    ],
+    [
+      "alt=\"PayPal logo\"",
+      "alt=\"Logo PayPal\""
+    ],
+    [
+      "alt=\"Barclays logo\"",
+      "alt=\"Logo Barclays\""
+    ],
+    [
+      "alt=\"Shazam logo\"",
+      "alt=\"Logo Shazam\""
+    ],
+    [
+      "alt=\"AKQA logo\"",
+      "alt=\"Logo AKQA\""
+    ],
+    [
+      "alt=\"Virgin logo\"",
+      "alt=\"Logo Virgin\""
+    ],
+    [
+      "alt=\"HSBC logo\"",
+      "alt=\"Logo HSBC\""
+    ],
+    [
+      ">Read more<",
+      ">Czytaj więcej<"
+    ],
+    [
+      ">Read the article<",
+      ">Przeczytaj artykuł<"
+    ],
+    [
+      ">Read latest research<",
+      ">Przeczytaj najnowsze badania<"
+    ],
+    [
+      ">Read full article<",
+      ">Przeczytaj pełny artykuł<"
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Skontaktuj się ›</a>"
+    ],
+    [
+      ">Payments · Stablecoins<",
+      ">Płatności · Stablecoiny<"
+    ],
+    [
+      ">Payments · ISO 20022<",
+      ">Płatności · ISO 20022<"
+    ],
+    [
+      ">Quantum<",
+      ">Kwanty<"
+    ],
+    [
+      ">Quantum · Banking<",
+      ">Kwanty · Bankowość<"
+    ],
+    [
+      ">Quantum · Cryptography<",
+      ">Kwanty · Kryptografia<"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">Przeczytaj białą księgę</a>"
+    ]
+  ]
+}

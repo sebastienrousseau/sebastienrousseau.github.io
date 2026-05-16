@@ -1,0 +1,99 @@
+{
+  "_comment": "Polish static-page metadata — DRAFT pending native-speaker review. Mirrors EN/FR/DE/ES static_pages.json shape. Formal banking register (Pan/Pani).",
+  "404": {
+    "title": "Strona nie znaleziona — Sebastien Rousseau",
+    "subtitle": "Przepraszamy, ta strona nie istnieje.",
+    "description": "Żądana strona nie została odnaleziona. Proszę wrócić na stronę główną lub skorzystać z wyszukiwarki.",
+    "keywords": "404, strona nie znaleziona"
+  },
+  "about": {
+    "title": "O mnie — Sebastien Rousseau",
+    "subtitle": "Kształtowanie przyszłości bankowości i usług finansowych poprzez strategiczną integrację sztucznej inteligencji, kryptografii postkwantowej i technologii blockchain.",
+    "description": "Sebastien Rousseau, starszy technolog bankowy: stosowana AI, migracja na ISO 20022, kryptografia postkwantowa, strukturalna transformacja płatności hurtowych.",
+    "keywords": "Sebastien Rousseau, biografia, bankowość, płatności, AI, ISO 20022, kryptografia postkwantowa, HSBC, PayPal, Barclays"
+  },
+  "accessibility": {
+    "title": "Dostępność — Sebastien Rousseau",
+    "subtitle": "Zaangażowani w cyfrową dostępność dla osób z niepełnosprawnościami.",
+    "description": "Deklaracja dostępności: zgodność z WCAG 2.2 AA, zasady inkluzywności, informacje zwrotne i dane kontaktowe do zgłaszania problemów.",
+    "keywords": "dostępność, WCAG, zgodność, inkluzja cyfrowa, audyt"
+  },
+  "articles": {
+    "title": "Artykuły — Sebastien Rousseau",
+    "subtitle": "Artykuły o AI, kryptografii postkwantowej, ISO 20022 i przyszłości płatności.",
+    "description": "Artykuły o stosowanej AI, kryptografii postkwantowej, płatnościach ISO 20022 oraz transformacji płatności hurtowych.",
+    "keywords": "artykuły, badania, AI, kryptografia postkwantowa, ISO 20022, płatności hurtowe"
+  },
+  "contact": {
+    "title": "Kontakt — Sebastien Rousseau",
+    "subtitle": "Pytanie lub potrzeba konsultacji? Proszę napisać.",
+    "description": "Proszę skontaktować się z Sebastienem Rousseau w sprawie doradztwa w transformacji płatności, migracji na ISO 20022 lub strategii postkwantowej.",
+    "keywords": "kontakt, doradztwo, płatności, ISO 20022, kryptografia postkwantowa"
+  },
+  "made-with-shokunin": {
+    "title": "Stworzone w Shokunin — Sebastien Rousseau",
+    "subtitle": "Proszę odkryć, jak korzystać z generatora stron statycznych nowej generacji.",
+    "description": "Ta strona została stworzona w Shokunin, generatorze stron statycznych napisanym w Rust, zoptymalizowanym pod kątem wydajności i SEO.",
+    "keywords": "Shokunin, SSG, Rust, wydajność, SEO"
+  },
+  "made-with-static-site-generator": {
+    "title": "Stworzone statycznym generatorem — Sebastien Rousseau",
+    "subtitle": "Proszę odkryć, jak korzystać z generatora stron statycznych nowej generacji.",
+    "description": "Ta strona została wygenerowana w Shokunin, szybkim generatorze stron statycznych napisanym w Rust.",
+    "keywords": "Shokunin, generator stron statycznych, Rust, wydajność"
+  },
+  "offline": {
+    "title": "Offline — Sebastien Rousseau",
+    "subtitle": "Proszę sprawdzić połączenie i spróbować ponownie.",
+    "description": "Jesteś offline. Proszę ponownie się połączyć, aby uzyskać dostęp do treści.",
+    "keywords": "offline, PWA"
+  },
+  "papers": {
+    "title": "Publikacje — Sebastien Rousseau",
+    "subtitle": "Białe księgi branżowe i badania stosowane dla starszych decydentów w płatnościach i bezpieczeństwie.",
+    "description": "Artykuły, raporty i publikacje Sebastiena Rousseau o AI, płatnościach ISO 20022 i kryptografii postkwantowej.",
+    "keywords": "publikacje, artykuły, raporty, badania, ISO 20022, AI, kryptografia postkwantowa"
+  },
+  "playlists": {
+    "title": "Playlisty — Sebastien Rousseau",
+    "subtitle": "Playlisty Spotify wybrane do deep work, kreatywności i myślenia inżynierskiego.",
+    "description": "Wybór muzyki i materiałów audio Sebastiena Rousseau.",
+    "keywords": "playlisty, muzyka"
+  },
+  "privacy": {
+    "title": "Polityka prywatności — Sebastien Rousseau",
+    "subtitle": "Pana/Pani prywatność jest dla nas ważna.",
+    "description": "Jak ta strona gromadzi, używa i chroni dane. Anonimowy pomiar ruchu, pliki cookie, hosting i prawa wynikające z RODO.",
+    "keywords": "prywatność, RODO, cookies, dane osobowe, analityka"
+  },
+  "projects": {
+    "title": "Projekty — Sebastien Rousseau",
+    "subtitle": "Projekty open source w Pythonie, Rust i JavaScript dla przyszłości finansów.",
+    "description": "Portfolio bibliotek open source utrzymywanych przez Sebastiena Rousseau dla płatności, rozliczeń transgranicznych i kryptografii odpornej na kwanty.",
+    "keywords": "projekty open source, Python, Rust, płatności, ISO 20022, kryptografia postkwantowa"
+  },
+  "tags": {
+    "title": "Tagi — Sebastien Rousseau",
+    "subtitle": "Proszę przeglądać stronę według tematu: AI, płatności, kryptografia postkwantowa, open source.",
+    "description": "Proszę przeglądać artykuły według tagów: AI, ISO 20022, blockchain, kryptografia postkwantowa i wiele innych.",
+    "keywords": "tagi, etykiety, nawigacja po tematach"
+  },
+  "terms": {
+    "title": "Warunki użytkowania — Sebastien Rousseau",
+    "subtitle": "Ogólne warunki korzystania z witryny.",
+    "description": "Ogólne warunki korzystania z witryny sebastienrousseau.com: licencja treści, ograniczenia, znaki towarowe i jurysdykcja.",
+    "keywords": "warunki, informacje prawne, licencja, copyright"
+  },
+  "thanks": {
+    "title": "Dziękuję — Sebastien Rousseau",
+    "subtitle": "Dziękuję za kontakt!",
+    "description": "Dziękuję za wiadomość. Wkrótce się odezwę.",
+    "keywords": "dziękuję"
+  },
+  "topics": {
+    "title": "Tematy — Sebastien Rousseau",
+    "subtitle": "Artykuły o AI, kryptografii postkwantowej, ISO 20022 i przyszłości płatności.",
+    "description": "Proszę zapoznać się z analizami tematycznymi: stosowana AI, płatności ISO 20022, kryptografia postkwantowa i transformacja płatności hurtowych.",
+    "keywords": "tematy, tematyka, AI, płatności, ISO 20022, kryptografia postkwantowa"
+  }
+}
