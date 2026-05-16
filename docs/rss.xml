@@ -4,15 +4,15 @@
     <title>Sebastien Rousseau: AI, Payments &amp; Quantum Cryptography</title>
     <link>https://sebastienrousseau.com</link>
     <description>AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography.</description>
-    <atom:link href="https://sebastienrousseau.com/" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://sebastienrousseau.com/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
     <lastBuildDate>Thu, 21 May 2026 06:06:06 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
     <item>
       <title>The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026</link>
       <description>Cloud architecture in 2026 has crystallised around six pillars: AI-native infrastructure, intelligent multi-cloud, serverless-first design with WebAssembly at the edge, edge computing, automated security with crypto-agility, and sustainable high-density operations. For banks, the question is whether to consume cloud or design it — under converging pressure from agentic commerce, agentic unit economics, harvest-now-decrypt-later quantum risk, MCP security and algorithmic contagion, cryptographic agent identity, continuous-treasury demands, and the EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
@@ -42,9 +42,9 @@
     </item>
     <item>
       <title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026</link>
       <description>Agentic AI has crossed from pilot into production across global banking. 70% of institutions are using it to some degree; only one in five has a mature governance model. Meanwhile, autonomous adversaries are operating at machine speed, the legacy COBOL estate the new systems must interoperate with was written for the batch-processing assumptions of the 1960s, and the EU AI Act&apos;s August 2026 high-risk deadline is twelve weeks away. This is the engineering and governance position a bank needs to hold.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026</guid>
       <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
@@ -66,9 +66,9 @@
     </item>
     <item>
       <title>ISO 20022 pacs.008 Structured-Address Migration Checklist — Free PDF</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/resources-pacs008-checklist</link>
       <description>Free PDF: 23-point structured-address migration checklist for the November 2026 pacs.008 deadline. Built from EPAA, SWIFT and CBPR+ guidance. Drop your email; I&apos;ll send the link.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/resources-pacs008-checklist</guid>
       <pubDate>Fri, 15 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp" type="image/webp" length="0"/>
@@ -81,9 +81,9 @@
     </item>
     <item>
       <title>Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf</link>
       <description>Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two SEC registrations for products that solve this constraint by being regulated as money market funds rather than stablecoins — while behaving, in the wallet, like yield-bearing dollars. A close reading of BRSRV, BSTBL, and the OCC rulemaking they respond to.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf</guid>
       <pubDate>Fri, 15 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp" type="image/webp" length="0"/>
@@ -105,9 +105,9 @@
     </item>
     <item>
       <title>Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance</link>
       <description>Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today&apos;s data expires.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance</guid>
       <pubDate>Thu, 14 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" type="image/webp" length="0"/>
@@ -129,9 +129,9 @@
     </item>
     <item>
       <title>The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline</link>
       <description>From November 2026, SWIFT CBPR+ requires structured postal addresses in cross-border payment messages. Unstructured address lines (AdrLine alone) will no longer be accepted for key party fields in pacs.008. At minimum, TwnNm and Ctry are required, with StrtNm and BldgNb or PstBx recommended. With six months to go, 65% of payment messages still contain unstructured addresses and 44% of banks remain behind schedule.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline</guid>
       <pubDate>Tue, 12 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp" type="image/webp" length="0"/>
@@ -149,9 +149,9 @@
     </item>
     <item>
       <title>Lucy's Flash Drive Revisited: AI, Quantum &amp; Knowledge</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html</link>
       <description>Twelve years on, Besson&apos;s Lucy reads like a thought experiment about knowledge migrating from flesh to machine — quietly validated by LLMs and qubits.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/index.html</guid>
       <pubDate>Mon, 11 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" type="image/webp" length="0"/>
@@ -171,9 +171,9 @@
     </item>
     <item>
       <title>Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again</link>
       <description>Shor&apos;s algorithm may now run on as few as 10,000 qubits. RSA, ECC and the timeline for post-quantum migration are all moving up. Here&apos;s why.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again</guid>
       <pubDate>Thu, 11 Apr 2026 06:06:06 +0000</pubDate>
       <author></author>
       <enclosure url="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" type="image/webp" length="0"/>
@@ -191,9 +191,9 @@
     </item>
     <item>
       <title>Quantum-Safe Payments: Why the Industry Must Act Now</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa</link>
       <description>Quantum computing threatens payment system cryptography. The EPAA white paper outlines the structural risk and the urgent case for PQC migration.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa</guid>
       <pubDate>Mon, 01 Sep 2025 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/digital-nodes.webp" type="image/webp" length="0"/>
@@ -208,9 +208,9 @@
     </item>
     <item>
       <title>Sebastien Rousseau: AI, Payments &amp; Quantum Cryptography</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com</link>
       <description>AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com</guid>
       <pubDate>Mon, 15 Apr 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/alesia-kazantceva-VWcPlbHglYc.webp" type="image/webp" length="0"/>
@@ -228,12 +228,12 @@
     </item>
     <item>
       <title>Discover How Technology Is Changing Banking and Finance</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/articles</link>
       <description>Insights on applied AI, post-quantum cryptography, ISO 20022 payments, Rust and Python from a senior banking technologist. Read research now.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/articles</guid>
       <pubDate>Mon, 15 Apr 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://sebastienrousseau.com/" type="image/jpeg" length="0"/>
+      <enclosure url="https://sebastienrousseau.com/articles" type="image/jpeg" length="0"/>
       <category>Technology</category>
       <category>Sample</category>
       <category>Rust</category>
@@ -249,9 +249,9 @@
     </item>
     <item>
       <title>Quantum Lattice Crypto: Bug in Chen's LWE Attack</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html</link>
       <description>A bug in Yilei Chen&apos;s quantum LWE algorithm temporarily reprieves lattice-based cryptography. What it means for CRYSTALS-Kyber, Dilithium and the PQC roadmap.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html</guid>
       <pubDate>Mon, 15 Apr 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/digital-nodes.webp" type="image/webp" length="0"/>
@@ -269,9 +269,9 @@
     </item>
     <item>
       <title>Quantum Algorithm Challenges Lattice-Based Cryptography</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html</link>
       <description>A new polynomial-time quantum algorithm by Yilei Chen targets lattice-based cryptography. Implications for post-quantum standards including CRYSTALS-Kyber.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html</guid>
       <pubDate>Mon, 15 Apr 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/digital-constellation.webp" type="image/webp" length="0"/>
@@ -289,9 +289,9 @@
     </item>
     <item>
       <title>Innovative and Creative Solutions Built with Open Source</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/projects</link>
       <description>Open-source Python and Rust libraries for ISO 20022 payments, post-quantum cryptography and financial data. Apache-2.0 / MIT, free to use.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/projects</guid>
       <pubDate>Mon, 01 Apr 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/declan-sun-pYLuh6fRdhw.webp" type="image/webp" length="0"/>
@@ -319,9 +319,9 @@
     </item>
     <item>
       <title>OpenVoice: Leading Innovation in Voice Cloning Technology</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html</link>
       <description>OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html</guid>
       <pubDate>Mon, 01 Apr 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/open-voice.webp" type="image/webp" length="0"/>
@@ -339,9 +339,9 @@
     </item>
     <item>
       <title>Fully Homomorphic Encryption (FHE) in a Banking Quantum Era</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html</link>
       <description>Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html</guid>
       <pubDate>Mon, 25 Mar 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp" type="image/webp" length="0"/>
@@ -359,9 +359,9 @@
     </item>
     <item>
       <title>Advancing AI with Multimodal LLMs: Insights from MM1</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html</link>
       <description>Explore Apple&apos;s MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html</guid>
       <pubDate>Mon, 18 Mar 2024 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/mm1-visual.webp" type="image/webp" length="0"/>
@@ -379,12 +379,12 @@
     </item>
     <item>
       <title>Research Publications &amp; White Papers from Sebastien Rousseau</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/papers</link>
       <description>Buy and Download copies of my collection of White Papers and Research Publications on Artificial Intelligence (AI), Quantum Cryptography, and more.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/papers</guid>
       <pubDate>Tue, 12 Mar 2024 21:21:21 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://sebastienrousseau.com/" type="image/jpeg" length="0"/>
+      <enclosure url="https://sebastienrousseau.com/papers" type="image/jpeg" length="0"/>
       <category>Technology</category>
       <category>White Papers</category>
       <category>Research</category>
@@ -399,9 +399,9 @@
     </item>
     <item>
       <title>Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html</link>
       <description>Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/index.html</guid>
       <pubDate>Tue, 12 Mar 2024 21:21:21 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/research-paper.webp" type="image/webp" length="0"/>
@@ -419,9 +419,9 @@
     </item>
     <item>
       <title>RustLogs (RLG): Structured Logging Library for Rust</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html</link>
       <description>Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. </description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html</guid>
       <pubDate>Fri, 08 Mar 2024 06:06:06 +0100</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/rustlogs.webp" type="image/webp" length="0"/>
@@ -439,9 +439,9 @@
     </item>
     <item>
       <title>Le Chat by Mistral AI: Multilingual Conversational AI</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html</link>
       <description>Meet Mistral AI&apos;s new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real-time.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/index.html</guid>
       <pubDate>Mon, 04 Mar 2024 06:06:06 +0100</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp" type="image/webp" length="0"/>
@@ -459,9 +459,9 @@
     </item>
     <item>
       <title>Google Gemma AI: Transforming Open-Source AI Development</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html</link>
       <description>Explore Google&apos;s Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/index.html</guid>
       <pubDate>Mon, 26 Feb 2024 06:06:06 +0100</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/ai-ship.webp" type="image/webp" length="0"/>
@@ -479,9 +479,9 @@
     </item>
     <item>
       <title>Unlocking Gemini 1.5: Google's AI Revolution Explained</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html</link>
       <description>Gemini 1.5 from Google scales context windows past 1M tokens. What that unlocks for retrieval-augmented finance and the trade-offs worth knowing.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html</guid>
       <pubDate>Mon, 19 Feb 2024 14:15:15 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp" type="image/webp" length="0"/>
@@ -499,9 +499,9 @@
     </item>
     <item>
       <title>EU's AI Act: Pioneering Ethical AI Regulation Worldwide</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html</link>
       <description>The EU AI Act sets the first comprehensive framework for ethical, risk-tiered AI regulation worldwide. What changes for banks, vendors and high-risk systems.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html</guid>
       <pubDate>Tue, 13 Feb 2024 14:15:15 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" type="image/webp" length="0"/>
@@ -519,9 +519,9 @@
     </item>
     <item>
       <title>Àkàndé: GPT-Powered Voice Assistant for Executives</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html</link>
       <description>Discover how Àkàndé leverages OpenAI GPT&apos;s natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/index.html</guid>
       <pubDate>Mon, 12 Feb 2024 11:12:12 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" type="image/webp" length="0"/>
@@ -542,9 +542,9 @@
     </item>
     <item>
       <title>Generative AI in Advertising: Amazon Rufus &amp; Meta</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html</link>
       <description>Explore how AI transforms advertising with insights on Amazon&apos;s Rufus and Meta&apos;s latest developments. Discover the impact on consumer engagement</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html</guid>
       <pubDate>Thu, 08 Feb 2024 07:08:08 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/advertising-ai.webp" type="image/webp" length="0"/>
@@ -562,9 +562,9 @@
     </item>
     <item>
       <title>AI-Powered Speech Analysis, Translation, &amp; Insight Tool</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html</link>
       <description>Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2024-01-29-ai-powered-audio-insights-analysis-translations/index.html</guid>
       <pubDate>Mon, 29 Jan 2024 05:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" type="image/webp" length="0"/>
@@ -582,9 +582,9 @@
     </item>
     <item>
       <title>AI Prompt Engineering 2024: Techniques That Work</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html</link>
       <description>Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html</guid>
       <pubDate>Tue, 23 Jan 2024 05:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" type="image/webp" length="0"/>
@@ -602,9 +602,9 @@
     </item>
     <item>
       <title>Website Accessibility Statement — Standards &amp; Contact</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/accessibility</link>
       <description>This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/accessibility</guid>
       <pubDate>Mon, 15 Jan 2024 05:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/jaanus-jagomagi-Dymu1WiZVko.webp" type="image/webp" length="0"/>
@@ -624,9 +624,9 @@
     </item>
     <item>
       <title>Website created with Static Site Generator (SSG)</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/made-with-shokunin</link>
       <description>The Static Site Generator (SSG) is a lightning-fast tool for Search Engine Optimisation (SEO) and compliance to Accessibility Standards.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/made-with-shokunin</guid>
       <pubDate>Mon, 15 Jan 2024 05:06:06 +0000</pubDate>
       <author>Sebastian Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" type="image/webp" length="0"/>
@@ -644,9 +644,9 @@
     </item>
     <item>
       <title>Made with Static Site Generator: Rust-Powered SSG</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/made-with-static-site-generator/</link>
       <description>Static Site Generator is a Rust-based static site generator built for performance, accessibility and SEO. Lightning-fast builds with first-class JSON-LD.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/made-with-static-site-generator/</guid>
       <pubDate>Mon, 15 Jan 2024 05:06:06 +0000</pubDate>
       <author>Sebastian Rousseau</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" type="image/webp" length="0"/>
@@ -664,9 +664,9 @@
     </item>
     <item>
       <title>Alien Studio: My Tech-to Art Journey in Photography</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html</link>
       <description>Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html</guid>
       <pubDate>Mon, 08 Jan 2024 05:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" type="image/webp" length="0"/>
@@ -684,9 +684,9 @@
     </item>
     <item>
       <title>Qiskit &amp; Quantum Fourier Transform for Credit Ratio Analysis</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html</link>
       <description>Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/index.html</guid>
       <pubDate>Mon, 08 Jan 2024 05:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" type="image/webp" length="0"/>
@@ -704,9 +704,9 @@
     </item>
     <item>
       <title>AI Trends 2024: Insights and Predictions for the Future</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html</link>
       <description>AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html</guid>
       <pubDate>Mon, 01 Jan 2024 05:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" type="image/webp" length="0"/>
@@ -724,9 +724,9 @@
     </item>
     <item>
       <title>Revolutionising Finance with AI-Enhanced Quantum Algorithms</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html</link>
       <description>Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html</guid>
       <pubDate>Mon, 25 Dec 2023 06:07:07 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
@@ -744,9 +744,9 @@
     </item>
     <item>
       <title>State of AI and Quantum Computing in Banking: A 2023 Review</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html</link>
       <description>Exploring 2023&apos;s Technological Landscape: AI &amp; Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations &amp; Governance</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html</guid>
       <pubDate>Mon, 18 Dec 2023 05:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
@@ -764,9 +764,9 @@
     </item>
     <item>
       <title>Quantum Key Distribution Revolutionising Security in Banking</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html</link>
       <description>As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html</guid>
       <pubDate>Mon, 11 Dec 2023 09:00:00 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" type="image/webp" length="0"/>
@@ -790,9 +790,9 @@
     </item>
     <item>
       <title>Efficient Date and Time Management with DateTime (DTT)</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html</link>
       <description>DateTime (DTT) is a Rust library for parsing, validating, manipulating and formatting dates and times — high precision, broad functionality.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html</guid>
       <pubDate>Mon, 04 Dec 2023 09:00:00 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg" type="image/jpeg" length="0"/>
@@ -810,9 +810,9 @@
     </item>
     <item>
       <title>CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html</link>
       <description>Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html</guid>
       <pubDate>Sun, 19 Nov 2023 09:59:00 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" type="image/webp" length="0"/>
@@ -830,9 +830,9 @@
     </item>
     <item>
       <title>KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html</link>
       <description>A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html</guid>
       <pubDate>Sun, 19 Nov 2023 09:59:00 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" type="image/jpeg" length="0"/>
@@ -850,9 +850,9 @@
     </item>
     <item>
       <title>Generative AI in 2023: How It Works, Where It Lands</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html</link>
       <description>Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html</guid>
       <pubDate>Sun, 12 Nov 2023 20:30:00 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
@@ -870,9 +870,9 @@
     </item>
     <item>
       <title>Mathematical and Cryptographic Constants for Rust Security</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html</link>
       <description>Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html</guid>
       <pubDate>Sun, 05 Nov 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp" type="image/webp" length="0"/>
@@ -890,9 +890,9 @@
     </item>
     <item>
       <title>Protecting Data in the Quantum Age: The Hash Library (HSH)</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html</link>
       <description>HSH uses quantum-resistant cryptographic primitives to protect your data, ensuring its security even in the face of future quantum computing advances.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html</guid>
       <pubDate>Fri, 27 Oct 2023 05:13:00 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp" type="image/webp" length="0"/>
@@ -910,9 +910,9 @@
     </item>
     <item>
       <title>Streamlining Rust Library Development with Code Generation</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html</link>
       <description>Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/index.html</guid>
       <pubDate>Thu, 26 Oct 2023 11:21:00 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
@@ -930,9 +930,9 @@
     </item>
     <item>
       <title>Static Site Generator: Fastest Rust-Based SSG</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html</link>
       <description>Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html</guid>
       <pubDate>Mon, 09 Oct 2023 05:13:00 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" type="image/webp" length="0"/>
@@ -950,9 +950,9 @@
     </item>
     <item>
       <title>404 Not Found: I couldn't find the page you were looking for</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/404/index.html</link>
       <description>It seems the page you are visiting has been removed, renamed, or is otherwise unavailable. For more information, please visit the homepage.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/404/index.html</guid>
       <pubDate>Sun, 01 Oct 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/alexandr-podvalny-n_Jb_d8O43Q.webp" type="image/webp" length="0"/>
@@ -960,9 +960,9 @@
     </item>
     <item>
       <title>Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/tags</link>
       <description>Browse Sebastien Rousseau&apos;s site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tags</guid>
       <pubDate>Sun, 01 Oct 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/marek-piwnicki-11829333.webp" type="image/webp" length="0"/>
@@ -981,9 +981,9 @@
     </item>
     <item>
       <title>Thank you for contacting me. I will be in touch shortly.</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/thanks</link>
       <description>I just received your message. Thank you very much for your interest and query. I am working on your request and will get in touch as soon as possible.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/thanks</guid>
       <pubDate>Sun, 01 Oct 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/robert-haverly-_kmr5wKVW7E.webp" type="image/webp" length="0"/>
@@ -994,9 +994,9 @@
     </item>
     <item>
       <title>Embark on a Personal Journey with the Best Spotify Playlists</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/playlists</link>
       <description>Looking for the best Spotify playlists for Jazz, Soul, Hip Hop, Rap, R&amp;B, Neo Soul, House Music, Indie Rock, and Pop Music? Look no further!</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/playlists</guid>
       <pubDate>Sun, 01 Oct 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/tiachen-aier-d4ab9H_2WNA.webp" type="image/webp" length="0"/>
@@ -1014,12 +1014,12 @@
     </item>
     <item>
       <title>Sebastien Rousseau: AI, Banking &amp; Financial Services Expert</title>
-      <link>https://sebastienrousseau.com/</link>
+      <link>https://sebastienrousseau.com/about</link>
       <description>Shaping the Future of Banking and Financial Services through Strategic Integration of Artificial Intelligence, Post-Quantum Cryptography &amp; Blockchain Technology</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/</guid>
+      <guid isPermaLink="true">https://sebastienrousseau.com/about</guid>
       <pubDate>Sun, 01 Oct 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://sebastienrousseau.com/" type="image/jpeg" length="0"/>
+      <enclosure url="https://sebastienrousseau.com/about" type="image/jpeg" length="0"/>
       <category>Technology</category>
       <category>payments technology</category>
       <category>digital finance</category>
