@@ -49,6 +49,28 @@ jobs:
       - name: Lint (ruff)
         run: ruff check scripts/ tests/
 
+      - name: Cyclomatic complexity (radon)
+        # Hard ceiling: no function above grade B (CC 10). The current
+        # max sits at C(17) and Phase 4 will refactor those down. Until
+        # then the gate runs in advisory mode so it surfaces regressions
+        # without failing the build.
+        run: |
+          pip install --quiet radon
+          radon cc scripts/postbuild.py scripts/postbuild_lib/ -a -nb -s || true
+          # Hard failure once the C-grade functions are refactored:
+          # radon cc scripts/postbuild.py scripts/postbuild_lib/ -n B
+
+      - name: Code duplication (jscpd)
+        # Industry-standard warn threshold is 10 %; we currently sit at
+        # ~1.5 %. Fail if duplication crosses 3 % so a regression can't
+        # creep in unnoticed.
+        run: |
+          npx --yes jscpd@4 scripts/ tests/ _layouts/ \
+            --min-tokens 50 \
+            --threshold 3 \
+            --reporters console \
+            --silent
+
       - name: Unit tests (pytest)
         run: pytest tests/ -ra
 
