@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="bn-BD">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sun, 12 Nov 2023 20:30:00 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sun, 12 Nov 2023 20:30:00 +0000" id="last-modified" />
+    <title>Generative AI in 2023: How It Works, Where It Lands — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.">
+<meta name="keywords" content="Generative AI, technology, future, impact, ethics, synergies, innovation, creativity, transformation, evolution">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-8P9OznmTk0dkO1mFcKUH5G9thnw+pMpFJsxhk92ci4o=' 'sha256-NwczfO1I5SzNniUFzJ2i9XCGPKMvSKlS1g/pkJ0NPpM=' 'sha256-d1HzCPRPSZMdSWX8y39pUZ7dNehPRqABMASedtw4Xno=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/bn/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom ফিড" href="/bn/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Generative AI in 2023: How It Works, Where It Lands — Sebastien Rousseau">
+<meta property="og:description" content="Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/bn/2023-11-12-exploring-generative-ai/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="bn_BD">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Generative AI in 2023: How It Works, Where It Lands — Sebastien Rousseau">
+<meta name="twitter:description" content="Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/bn/2023-11-12-exploring-generative-ai/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2023-11-12-explorer-l-ia-generative/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2023-11-12-exploring-generative-ai/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2023-11-12-exploring-generative-ai/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2023-11-12-zkoumani-generativni-ai/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2023-11-12-generative-ki-im-detail/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2023-11-12-explorar-la-ia-generativa/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2023-11-12-exploring-generative-ai/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2023-11-12-exploring-generative-ai/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2023-11-12-exploring-generative-ai/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2023-11-12-generative-ai-ki-padtaal/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2023-11-12-menjelajahi-ai-generatif/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2023-11-12-esplorare-lia-generativa/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2023-11-12-seisei-ai-wo-tankyuu-suru/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2023-11-12-saengseonghyung-ai-tamgu/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2023-11-12-generatieve-ai-verkennen/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2023-11-12-eksploracja-generatywnej-ai/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2023-11-12-explorar-a-ia-generativa/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2023-11-12-exploring-generative-ai/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2023-11-12-izuchaem-generativnyi-ii/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2023-11-12-utforska-generativ-ai/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2023-11-12-samruat-ai-khwam-chong-charoen/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2023-11-12-uretken-yapay-zekayi-kesfetmek/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2023-11-12-kham-pha-tri-tue-nhan-tao-tao-sinh/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2023-11-12-exploring-generative-ai/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">মূল কনটেন্টে যান</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="নেভিগেশন টগল করুন" />
+      <div class="wrap">
+        <a class="ap-brand" href="/bn/index.html" aria-label="Sebastien Rousseau হোম">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="প্রধান নেভিগেশন">
+          <ul class="ap-menu">
+            <li><a href="/bn/amader-shomporke/index.html">About</a></li>
+            <li><a href="/bn/prabondho/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/bn/prokashana/index.html">Papers</a></li>
+            <li><a href="/bn/bishay/index.html">বিষয়</a></li>
+            <li><a href="/bn/prokolpo/index.html">Projects</a></li>
+            <li><a href="/bn/playlist/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="ডার্ক থিম চালু করুন" aria-pressed="false" title="থিম পরিবর্তন করুন">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="অনুসন্ধান (Cmd বা Ctrl + K)" title="অনুসন্ধান (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="ভাষা">
+            <button type="button" class="ap-lang-toggle" aria-label="BN, ভাষা পরিবর্তন" aria-expanded="false" aria-haspopup="menu" title="ভাষা পরিবর্তন">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">BN</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="শীঘ্রই আসছে">🇺🇦 Українська</span>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/bn/jogajog/index.html" aria-label="যোগাযোগ">যোগাযোগ ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="নেভিগেশন টগল করুন">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Generative AI in 2023: How It Works, Where It Lands</h1>
+      <p class="sub">Applied artificial intelligence in banking and financial services.</p>
+    <nav class="article-tags" aria-label="বিষয়"><a href="/tags/index.html#h3-generative-ai" class="article-tag" rel="tag">Generative AI</a><a href="/tags/index.html#h3-technology" class="article-tag" rel="tag">technology</a><a href="/tags/index.html#h3-future" class="article-tag" rel="tag">future</a><a href="/tags/index.html#h3-impact" class="article-tag" rel="tag">impact</a><a href="/tags/index.html#h3-ethics" class="article-tag" rel="tag">ethics</a><a href="/tags/index.html#h3-synergies" class="article-tag" rel="tag">synergies</a><a href="/tags/index.html#h3-innovation" class="article-tag" rel="tag">innovation</a><a href="/tags/index.html#h3-creativity" class="article-tag" rel="tag">creativity</a><a href="/tags/index.html#h3-transformation" class="article-tag" rel="tag">transformation</a><a href="/tags/index.html#h3-evolution" class="article-tag" rel="tag">evolution</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2023-11-12T20:30:00+00:00" class="meta-pub">প্রকাশিত 12 Nov 2023</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">আপডেট 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="আনুমানিক পঠন সময়">10 মিনিট পঠন</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>বিষয়বস্তু</h2><ol><li><a href="#insight">Insight</a></li><li><a href="#idea">Idea</a></li><li><a href="#impact">Impact</a></li><li><a href="#incentives">Incentives</a></li><li><a href="#conclusion">Conclusion</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Insight.</strong> Generative Artificial Intelligence is a cutting-edge field of machine learning that enables computers to produce content indistinguishable from that created by humans.</li>  <li><strong>Idea.</strong> The journey of generative AI began with simple models that could barely string together coherent sentences.</li>  <li><strong>Impact.</strong> Generative AI is not just an academic curiosity; it&#x27;s a transformative force across multiple industries.</li>  <li><strong>Incentives.</strong> The development of generative AI is largely driven by economic incentives.</li></ul></aside><p><img src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" alt="AI, Artificial Intelligence concept,3d rendering,conceptual image"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<hr />
+<blockquote>
+<p><strong>TL;DR.</strong> Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.</p>
+<p><strong>মূল বার্তা</strong></p>
+<ul>
+<li>DRAFT translation: this article is a বাংলা stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.</li>
+<li>Source title: <em>Generative AI in 2023: How It Works, Where It Lands</em>.</li>
+<li>Source subtitle: <em>Applied artificial intelligence in banking and financial services.</em>.</li>
+<li>Editorial note: replace this block with hand-translated copy before flipping <code>active=True</code> for bn in <code>scripts/_lang_registry.py</code>.</li>
+</ul>
+</blockquote>
+<hr />
+<!-- lead-start -->
+<aside class="post-lead" aria-label="নিবন্ধ সারাংশ">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.</p>
+<p class="post-lead-heading"><strong>মূল বার্তা</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Idea.</strong> The journey of generative AI began with simple models that could barely string together coherent sentences.</li>
+  <li><strong>Impact.</strong> Generative AI is not just an academic curiosity; it's a transformative force across multiple industries.</li>
+  <li><strong>Incentives.</strong> The development of generative AI is largely driven by economic incentives.</li>
+  <li><strong>Understanding the Mechanics of Generative AI.</strong> Generative Artificial Intelligence is a cutting-edge field of machine learning that enables computers to produce content indistinguishable from that created by humans.</li>
+</ul>
+<p class="post-lead-related"><strong>সম্পর্কিত পঠন:</strong> <a href="https://sebastienrousseau.com/bn/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a>, <a href="https://sebastienrousseau.com/bn/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>, <a href="https://sebastienrousseau.com/bn/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">AI Trends 2024: Insights and Predictions for the Future</a>.</p>
+</aside>
+<!-- lead-end -->
+<p><img src="https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp" alt="AI, Artificial Intelligence concept,3d rendering,conceptual image"  width="1200" height="675" decoding="async" loading="lazy">.class=&quot;img-fluid clearfix&quot;</p>
+<h2 id="insight">Insight <a class="heading-anchor" href="#insight" aria-label="লিঙ্ক Insight">#</a></h2>
+<h3 id="understanding-the-mechanics-of-generative-ai">Understanding the Mechanics of Generative AI <a class="heading-anchor" href="#understanding-the-mechanics-of-generative-ai" aria-label="লিঙ্ক Understanding the Mechanics of Generative AI">#</a></h3>
+<h4>Introduction to Generative AI</h4>
+<p>Generative Artificial Intelligence is a cutting-edge field of machine learning that enables computers to produce content indistinguishable from that created by humans. This technology is a subset of AI that shifts from reactive responses to proactive creation. While AI tells you the weather, generative AI could write a poem about a rainy day, using metaphors and emotions that feel human.</p>
+<p>Generative AI is about predicting the next sequence in a pattern, such as words, pixels, or notes. Generative AI's power is that it learns from data to make new creations that are different from others.</p>
+<h4>The Science Behind Generative AI</h4>
+<p>To understand how generative AI like ChatGPT works, we must first delve into the neural network architectures that power it. At the pinnacle of these architectures is the transformer model, a type of neural network that is particularly adept at handling sequential data. Unlike its predecessors, the transformer does not process data in order, allowing it to look at all parts of the data simultaneously. This is known as the attention mechanism, which lets the model weigh the importance of different parts of the input data when predicting an output.</p>
+<p>Training these models involves feeding them an enormous corpus of text. During training, the model predicts what comes next in a sentence and receives feedback on its predictions. Over time, it adjusts its internal parameters to improve its accuracy. Unsupervised learning doesn't need labelled data, allowing the model to learn from any text.</p>
+<h4>Differentiation from Other AI Systems</h4>
+<p>One might wonder how generative AI differs fundamentally from the expert systems of the past. Traditional AI systems rely on a set of rules crafted by humans. They are deterministic, predictable, and limited by the scenarios they are programmed to handle. Generative AI, however, is probabilistic and can handle uncertainty and ambiguity in a way that mimics human thought processes.</p>
+<p>While expert systems can tell if a sentence is grammatically correct, generative AI can write an article imbued with creativity and nuance. This shift from rule-based systems to models that generate new content has opened up possibilities that were previously the realm of science fiction.</p>
+<h2 id="idea">Idea <a class="heading-anchor" href="#idea" aria-label="লিঙ্ক Idea">#</a></h2>
+<h3 id="the-evolution-and-advances-in-generative-ai">The Evolution and Advances in Generative AI <a class="heading-anchor" href="#the-evolution-and-advances-in-generative-ai" aria-label="লিঙ্ক The Evolution and Advances in Generative AI">#</a></h3>
+<h4>Historical Perspective</h4>
+<p>The journey of generative AI began with simple models that could barely string together coherent sentences. Initially, these models were based on rules and decision trees, which made them rigid and limited to the knowledge explicitly coded into them. However, the advent of machine learning, and more recently deep learning, brought about a paradigm shift.</p>
+<p>The historical evolution of generative AI can be traced from early symbolic AI to today's neural networks. Each stage brought us closer to the goal of creating machines that could truly understand and generate human-like content.</p>
+<h4>Latest Models</h4>
+<p>Today, Generative Pre-trained Transformers 4 (GPT-4) and later models have raised the bar for what can be achieved with generative AI. These models can write essays like humans, make complex computer code, and more.</p>
+<p>These advancements are a result of both architectural innovations and the exponential increase in the amount of data and computing power available. Transformer models are revolutionary because they capture input context.</p>
+<h4>Comparison with Previous Technologies</h4>
+<p>The contrast between generative AI and its predecessors is stark. Where older models might struggle with ambiguity and context, modern generative AI thrives on it. The robustness of these models comes not only from their architecture but also from their training methodologies. They train on datasets with different topics and styles, so they generate content that is both accurate and varied.</p>
+<h2 id="impact">Impact <a class="heading-anchor" href="#impact" aria-label="লিঙ্ক Impact">#</a></h2>
+<h3 id="the-broad-implications-of-generative-ai">The Broad Implications of Generative AI <a class="heading-anchor" href="#the-broad-implications-of-generative-ai" aria-label="লিঙ্ক The Broad Implications of Generative AI">#</a></h3>
+<h4>Influence on Various Sectors</h4>
+<p>Generative AI is not just an academic curiosity; it's a transformative force across multiple industries. In the creative sectors, such as music and literature, AI has begun to blur the lines between human and machine creativity.</p>
+<p>AI has also improved customer service in businesses, giving human-like responses to customers' questions. In healthcare, generative models are being used to predict molecular structures.</p>
+<p>Gen AI can be used for any tasks, like content creation, translation, game development, and more.</p>
+<h4>Ethical and Societal Considerations</h4>
+<p>With the rise of generative AI, ethical considerations have come to the forefront. The potential for deepfakes, misinformation, and the displacement of jobs traditionally done by humans are real concerns that society must address. There is also the question of ownership and copyright when content is generated by AI.</p>
+<p>The societal impact of generative AI extends beyond these concerns, though. There's also potential for change, such as personalised education programmes that adapt to each student's learning style or AI that can bridge language barriers.</p>
+<h4>Long-Term Outlook</h4>
+<p>Looking ahead, the long-term impact of generative AI hinges on how we choose to integrate it into our lives and control its development. The potential for this technology to benefit humanity is enormous, but it requires careful management and regulation.</p>
+<p>Future advancements in generative AI could lead to more personalised and engaging interactions with technology, creating experiences tailored to individual preferences and needs. However, this future is contingent upon our ability to navigate the ethical challenges and to develop AI in a responsible and controlled manner.</p>
+<h2 id="incentives">Incentives <a class="heading-anchor" href="#incentives" aria-label="লিঙ্ক Incentives">#</a></h2>
+<h3 id="the-driving-forces-behind-generative-ai-development">The Driving Forces Behind Generative AI Development <a class="heading-anchor" href="#the-driving-forces-behind-generative-ai-development" aria-label="লিঙ্ক The Driving Forces Behind Generative AI Development">#</a></h3>
+<h4>Economic Incentives</h4>
+<p>The development of generative AI is largely driven by economic incentives. Businesses are always on the lookout for ways to improve efficiency and reduce costs, and AI offers both. With its ability to automate complex tasks and generate creative solutions, generative AI can provide significant cost savings and productivity boosts.</p>
+<p>AI-generated content can be tailored to different audiences in marketing, software development, and more. This can reduce the time and cost of bringing new software to market.</p>
+<h4>Innovation and Competition</h4>
+<p>The field of generative AI is also propelled by the desire to innovate and gain a competitive edge. As AI technology becomes a crucial differentiator in the market, companies are investing heavily in research and development. This competitive drive spurs continuous improvements in AI capabilities, leading to more advanced and capable systems.</p>
+<p>The race to achieve AI supremacy is not just among companies but also among nations, which view leadership in AI technology as a strategic advantage.</p>
+<h4>Societal Benefits</h4>
+<p>Beyond the economic and competitive advantages, there are powerful societal incentives driving the development of generative AI. This technology has the potential to address some of the most pressing challenges facing the world today, from climate change to healthcare.</p>
+<p>Generative AI could, for example, model climate systems to predict changes and offer solutions or help with drug discovery by predicting interactions between molecules.</p>
+<h2 id="conclusion">Conclusion <a class="heading-anchor" href="#conclusion" aria-label="লিঙ্ক Conclusion">#</a></h2>
+<h3 id="embracing-the-future-of-generative-ai">Embracing the Future of Generative AI <a class="heading-anchor" href="#embracing-the-future-of-generative-ai" aria-label="লিঙ্ক Embracing the Future of Generative AI">#</a></h3>
+<p>As we approach a new era in technology, generative AI is a beacon of innovation, mimicking the mind's ingenuity. From its humble beginnings to today's sophisticated algorithms, generative AI has transcended its role as a tool.</p>
+<p>Generative AI's changes to what machines can do and how we use them have a big impact on sectors like technology and law. The ripples of this impact extend beyond economic gains and competitive edges; they touch the very fabric of societal advancement and ethical considerations.</p>
+<p>The incentives driving the development of generative AI paint a picture of a future filled with potential. Yet, with great power comes the imperative for responsible stewardship. As we harness this technology to solve complex problems and inspire unprecedented creativity, we must also navigate the moral landscapes it unveils.</p>
+<p>Generative AI holds a mirror to our collective consciousness, challenging us to reflect on the kind of future we wish to create. It is not just about what AI can do for us, but what we aspire to achieve with AI as our partner. In this partnership lies the potential for a synergy that could elevate humanity to new heights of accomplishment.</p>
+<p>As we forge ahead, let us embrace generative AI with a balanced perspective, harnessing its capabilities with caution and foresight. By doing so, we can guarantee that this remarkable technology serves as a cornerstone for an inclusive, progressive, and enlightened tomorrow.</p>
+<h3 id="navigating-the-cutting-edge-latest-advancements-in-generative-ai">Navigating the Cutting Edge: Latest Advancements in Generative AI <a class="heading-anchor" href="#navigating-the-cutting-edge-latest-advancements-in-generative-ai" aria-label="লিঙ্ক Navigating the Cutting Edge: Latest Advancements in Generative AI">#</a></h3>
+<p>The field of generative AI is constantly evolving, with new advancements emerging at a rapid pace. Here are some of the latest breakthroughs that are shaping the future of this transformative technology:</p>
+<h4>1. GPT-4 and Beyond: Unleashing the Power of Large Language Models</h4>
+<p>The development of large language models (LLM) has been a major driver of innovation in generative AI. GPT-4, the latest iteration of OpenAI's groundbreaking LLM, has demonstrated remarkable capabilities, including generating human-quality text, translating languages, and writing different kinds of creative content. Other LLMs, such as Google AI's Meena and LaMDA, are also pushing the boundaries of what's possible with generative AI.</p>
+<h4>2. Generative Adversarial Networks (GANs): Refining Creativity and Realism</h4>
+<p>GANs have become a powerful tool for generating realistic and creative content. These models consist of two neural networks that compete against each other, resulting in the creation of increasingly sophisticated images, videos, and audio. GANs have been used to generate art, design fashion, and even create deepfakes.</p>
+<h4>3. Autoencoders and Diffusion Models: Unveiling Hidden Patterns and Structures</h4>
+<p>Autoencoders and diffusion models are two emerging techniques that are gaining traction in generative AI. Autoencoders learn to compress and reconstruct data, allowing them to identify underlying patterns and structures. Diffusion models, on the other hand, start with a noisy representation of data and gradually refine it to produce a high-quality output.</p>
+<h4>4. Multimodal Generative AI: Bridging the Gap Between Senses</h4>
+<p>Multimodal generative AI aims to bridge the gap between different senses, such as sight, sound, and text. This technology has the potential to create immersive experiences that blur the lines between the digital and physical worlds. For instance, multimodal generative models could generate music that matches a specific image or create a virtual environment that responds to natural language commands.</p>
+<h4>5. Explainable AI: Unravelling the Black Box</h4>
+<p>As generative AI models become increasingly complex, there is a growing need for explainable AI (XAI) techniques. XAI helps to explain how these models make decisions, providing transparency and accountability. This is crucial for building trust in generative AI and making sure that it is used responsibly and ethically.</p>
+<p>These advancements represent just a glimpse into the ever-evolving landscape of generative AI. As research continues and computational power increases, we can expect even more groundbreaking developments that will further shape the future of this transformative technology.</p>
+<h3 id="the-promise-of-open-source-ai-fostering-innovation-and-shaping-a-brighter-future">The Promise of Open-Source AI: Fostering Innovation and Shaping a Brighter Future <a class="heading-anchor" href="#the-promise-of-open-source-ai-fostering-innovation-and-shaping-a-brighter-future" aria-label="লিঙ্ক The Promise of Open-Source AI: Fostering Innovation and Shaping a Brighter Future">#</a></h3>
+<p>The open-source AI movement has seen tremendous growth in recent years. Numerous projects and initiatives are leveraging cutting-edge AI technologies, which were previously only available to large companies and research institutions. Now, however, anyone can access and contribute to this field.</p>
+<p>This movement has been a driving force behind the remarkable progress in generative AI, breaking down barriers to access and fostering collaboration among researchers and developers. This synergy has enabled them to undertake groundbreaking projects, creating powerful tools and frameworks that are redefining the future of generative AI technology.</p>
+<p>The development of large language models (LLMs), such as GPT-3 and LaMDA, stands as a testament to the power of open-source AI. These models have demonstrated exceptional capabilities in generating human-quality text, translating languages, and crafting diverse creative content. Their availability has ignited innovation across various domains, from creative writing and marketing to education and healthcare.</p>
+<p>Open-source AI is also playing a pivotal role in the advancement of other AI technologies, including natural language processing (NLP), computer vision, and robotics. These advancements herald a future where AI is more accessible, adaptable, and seamlessly integrated into our daily lives.</p>
+<p>The promising future of open-source AI hinges on its ability to foster collaboration, transparency, and accelerated innovation. By openly sharing knowledge and resources, researchers and developers can synergize their efforts to tackle complex challenges and propel the field of AI forward. Open-source AI provides transparency and facilitates public review and ethical considerations, ensuring the responsible use of this technology for the benefit of society.</p>
+<p>As open-source AI continues to evolve, it holds the potential to revolutionise industries and transform our world. Open-source AI is key to a future where technology helps humanity and benefits everyone. This comes from personalised education and healthcare, creative expression and scientific discovery.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<p>In closing, I hope this article has sparked your interest in the exciting world of generative AI. If you're eager to dive deeper into this transformative technology or have any questions, please don't hesitate to reach out to me on <a href="https://www.linkedin.com/in/sebastienrousseau/" title="Sebastien Rousseau on LinkedIn">LinkedIn ⧉</a> or via the <a href="/bn/jogajog/index.html" title="Contact">contact page</a>.</p>
+<p>Thank you again for your time and I look forward to hearing from you.</p>
+<!-- enrich-start -->
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="Sebastien Rousseau-এর ছবি" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/bn/amader-shomporke/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/bn/amader-shomporke/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-05-15">2026-05-15</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">সম্পর্কিত পঠন</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html" class="related-media" aria-label="EU's AI Act: Pioneering Ethical AI Regulation Worldwide" tabindex="-1"><img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="eu-s-ai-act-pioneering-ethical-ai-regulation-worldwide"><a href="https://sebastienrousseau.com/bn/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a> <a class="heading-anchor" href="#eu-s-ai-act-pioneering-ethical-ai-regulation-worldwide" aria-label="লিঙ্ক EU's AI Act: Pioneering Ethical AI Regulation Worldwide">#</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2024-01-23-advancements-in-ai-prompt-engineering/index.html" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="A man analysing data on screens" src="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-prompt-engineering-2024-techniques-that-work"><a href="https://sebastienrousseau.com/bn/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a> <a class="heading-anchor" href="#ai-prompt-engineering-2024-techniques-that-work" aria-label="লিঙ্ক AI Prompt Engineering 2024: Techniques That Work">#</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html" class="related-media" aria-label="AI Trends 2024: Insights and Predictions for the Future" tabindex="-1"><img alt="Drone View of London" src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-trends-2024-insights-and-predictions-for-the-future"><a href="https://sebastienrousseau.com/bn/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">AI Trends 2024: Insights and Predictions for the Future</a> <a class="heading-anchor" href="#ai-trends-2024-insights-and-predictions-for-the-future" aria-label="লিঙ্ক AI Trends 2024: Insights and Predictions for the Future">#</a></h3><p><time datetime="2024-01-01">2024-01-01</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="Sebastien Rousseau-এর ছবি" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/bn/amader-shomporke/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাঙ্কিং প্রযুক্তিবিদ; আমি প্রায়োগিক এআই, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লিখি।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০ বছরেরও বেশি অভিজ্ঞতা। <a href="/bn/amader-shomporke/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">সম্পর্কিত পঠন</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html" class="related-media" aria-label="EU's AI Act: Pioneering Ethical AI Regulation Worldwide" tabindex="-1"><img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="eu-s-ai-act-pioneering-ethical-ai-regulation-worldwide-2"><a href="https://sebastienrousseau.com/bn/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a> <a class="heading-anchor" href="#eu-s-ai-act-pioneering-ethical-ai-regulation-worldwide-2" aria-label="লিঙ্ক EU's AI Act: Pioneering Ethical AI Regulation Worldwide">#</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2024-01-23-advancements-in-ai-prompt-engineering/index.html" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="A man analysing data on screens" src="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-prompt-engineering-2024-techniques-that-work-2"><a href="https://sebastienrousseau.com/bn/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a> <a class="heading-anchor" href="#ai-prompt-engineering-2024-techniques-that-work-2" aria-label="লিঙ্ক AI Prompt Engineering 2024: Techniques That Work">#</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html" class="related-media" aria-label="AI Trends 2024: Insights and Predictions for the Future" tabindex="-1"><img alt="Drone View of London" src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-trends-2024-insights-and-predictions-for-the-future-2"><a href="https://sebastienrousseau.com/bn/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">AI Trends 2024: Insights and Predictions for the Future</a> <a class="heading-anchor" href="#ai-trends-2024-insights-and-predictions-for-the-future-2" aria-label="লিঙ্ক AI Trends 2024: Insights and Predictions for the Future">#</a></h3><p><time datetime="2024-01-01">2024-01-01</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="নিবন্ধ পেজিনেশন"><a class="post-pagination-prev" href="/bn/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/"><span class="post-pagination-label">পূর্ববর্তী</span><span class="post-pagination-title">Mathematical and Cryptographic Constants for Rust Security</span></a><a class="post-pagination-next" href="/bn/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/"><span class="post-pagination-label">পরবর্তী</span><span class="post-pagination-title">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/bn/amader-shomporke/index.html">About</a></li>
+              <li><a href="/bn/jogajog/index.html">Contact</a></li>
+              <li><a href="/bn/static-site-generator-die-toiri/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">লেখা</h2>
+            <ul>
+              <li><a href="/bn/prabondho/index.html">Articles</a></li>
+              <li><a href="/bn/prokashana/index.html">Papers</a></li>
+              <li><a href="/bn/tag/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">কাজ</h2>
+            <ul>
+              <li><a href="/bn/prokolpo/index.html">Projects</a></li>
+              <li><a href="/bn/playlist/index.html">Playlists</a></li>
+              <li><a href="/bn/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">যোগাযোগ</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="নিউজলেটার সাবস্ক্রিপশন">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — পেমেন্ট, এআই এবং পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি বিষয়ক গবেষণা নোট। কোনও স্প্যাম নয়।</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="apni@bank.bd" />
+            <input type="hidden" name="_subject" value="নিউজলেটার সাবস্ক্রিপশন — sebastienrousseau.com" />
+            <button type="submit">সাবস্ক্রাইব করুন</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।</span>
+          <div class="social" aria-label="সামাজিক লিঙ্ক">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau-এ Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau-এ LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau-এ Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau-এ YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/bn/prabeshjogyota/index.html">Accessibility</a> ·
+            <a href="/bn/goponiyota/index.html">Privacy</a> ·
+            <a href="/bn/shorto/index.html">Terms</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"bn"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"bn"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2204,"about":{"@type":"Thing","name":"Generative AI","sameAs":["https://en.wikipedia.org/wiki/Generative_artificial_intelligence","https://www.wikidata.org/wiki/Q108766533"]},"headline":"Generative AI in 2023: How It Works, Where It Lands","description":"Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp","width":"100vw","height":"100vh","caption":"AI, Artificial Intelligence concept,3d rendering,conceptual image"},"url":"https://sebastienrousseau.com/bn/2023-11-12-exploring-generative-ai/","datePublished":"2023-11-12T20:30:00+00:00","dateModified":"2026-05-11","inLanguage":"bn","keywords":"Generative AI, technology, future, impact, ethics, synergies, innovation, creativity, transformation, evolution","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/bn/2023-11-12-exploring-generative-ai/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"bn"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/bn/"},{"@type":"ListItem","position":3,"name":"Generative AI in 2023: How It Works, Where It Lands","item":"https://sebastienrousseau.com/bn/2023-11-12-exploring-generative-ai/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="অনুসন্ধান">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>অনুসন্ধান</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="অনুসন্ধান">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="ডকুমেন্টে অনুসন্ধান করুন..." autocomplete="off" aria-label="অনুসন্ধান"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> বন্ধ করুন</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> নেভিগেট করুন</span><span><kbd>Enter</kbd> খুলুন</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 01 Sep 2025 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 01 Sep 2025 06:06:06 +0000" id="last-modified" />
+    <title>Pagos resistentes a lo cuántico: por qué la industria debe actuar ahora — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="La computación cuántica amenaza la criptografía de los sistemas de pago. El libro blanco EPAA expone el riesgo estructural y aboga por una migración urgente hacia la criptografía postcuántica.">
+<meta name="keywords" content="pagos resistentes a lo cuántico, criptografía postcuántica, SEPA, SWIFT gpi, ISO 20022, seguridad de los servicios financieros, EPAA, harvest-now decrypt-later, agilidad criptográfica, Sebastien Rousseau">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Quantum-Safe Payments: Why the Payments Industry Must Act Now">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-K35aDA0IPBk5GJryD/AyvwcWqSmt4Wds5Sx7Jk4RvEo=' 'sha256-oS3ZJG7DxVxbGPjV1tZ6afJMuwZukWBK5sIuv/+4/pw=' 'sha256-uhg4qhvEVxdkSE/LVsfRIPgoLstxqTT8TST5QUiIF6Y=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/sv/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom-flöde" href="/sv/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Pagos resistentes a lo cuántico: por qué la industria debe actuar ahora — Sebastien Rousseau">
+<meta property="og:description" content="La computación cuántica amenaza la criptografía de los sistemas de pago. El libro blanco EPAA expone el riesgo estructural y aboga por una migración urgente hacia la criptografía postcuántica.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/sv/2025-09-01-kvantsakra-betalningar-epaa/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/digital-nodes.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="sv_SE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pagos resistentes a lo cuántico: por qué la industria debe actuar ahora — Sebastien Rousseau">
+<meta name="twitter:description" content="La computación cuántica amenaza la criptografía de los sistemas de pago. El libro blanco EPAA expone el riesgo estructural y aboga por una migración urgente hacia la criptografía postcuántica.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/digital-nodes.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/sv/2025-09-01-kvantsakra-betalningar-epaa/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2025-09-01-paiements-resistants-au-quantique-epaa/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2025-09-01-quantum-safe-payments-epaa/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2025-09-01-quantum-safe-payments-epaa/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2025-09-01-kvantove-odolne-platby-epaa/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2025-09-01-quantensichere-zahlungen-epaa/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2025-09-01-pagos-resistentes-al-cuantico-epaa/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2025-09-01-quantum-safe-payments-epaa/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2025-09-01-quantum-safe-payments-epaa/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2025-09-01-quantum-safe-payments-epaa/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2025-09-01-quantum-surakshit-bhugtaan-epaa/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2025-09-01-pembayaran-tahan-kuantum-epaa/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2025-09-01-pagamenti-resistenti-al-quantum-epaa/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2025-09-01-ryoushi-anzen-na-kessai-epaa/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2025-09-01-yangja-anjeon-gyeolje-epaa/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2025-09-01-kwantumveilige-betalingen-epaa/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2025-09-01-platnosci-odporne-na-kwantowe-epaa/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2025-09-01-pagamentos-resistentes-ao-quantico-epaa/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2025-09-01-quantum-safe-payments-epaa/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2025-09-01-kvantovo-zashchishchennye-platezhi-epaa/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2025-09-01-kvantsakra-betalningar-epaa/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2025-09-01-kanchamra-nguen-thon-quantum-epaa/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2025-09-01-kuantum-guvenli-odemeler-epaa/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2025-09-01-thanh-toan-an-toan-luong-tu-epaa/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2025-09-01-quantum-safe-payments-epaa/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2025-09-01-kang-liangzi-zhifu-epaa/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2025-09-01-kang-liangzi-zhifu-epaa-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Hoppa till huvudinnehållet</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Växla navigering" />
+      <div class="wrap">
+        <a class="ap-brand" href="/sv/index.html" aria-label="Sebastien Rousseau startsida">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Huvudnavigering">
+          <ul class="ap-menu">
+            <li><a href="/sv/om-mig/index.html">Om mig</a></li>
+            <li><a href="/sv/artiklar/index.html" aria-current="page" class="active">Artiklar</a></li>
+            <li><a href="/sv/publikationer/index.html">Publikationer</a></li>
+            <li><a href="/sv/amnen/index.html">Ämnen</a></li>
+            <li><a href="/sv/projekt/index.html">Projekt</a></li>
+            <li><a href="/sv/spellistor/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Växla till mörkt tema" aria-pressed="false" title="Byt tema">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Sök (Cmd eller Ctrl + K)" title="Sök (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Språk">
+            <button type="button" class="ap-lang-toggle" aria-label="SV, Byt språk" aria-expanded="false" aria-haspopup="menu" title="Byt språk">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">SV</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Kommer snart">🇺🇦 Українська</span>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/sv/kontakt/index.html" aria-label="Ta kontakt">Ta kontakt ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Växla navigering">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Pagos resistentes a lo cuántico: por qué la industria debe actuar ahora</h1>
+      <p class="sub">La criptografía postcuántica es ya una decisión de infraestructura actual, y no futura. El libro blanco EPAA expone el riesgo estructural y la urgente necesidad de migración.</p>
+    <nav class="article-tags" aria-label="Ämnen"><a href="/tags/index.html#h3-pagos-resistentes-a-lo-cuantico" class="article-tag" rel="tag">pagos resistentes a lo cuántico</a><a href="/tags/index.html#h3-criptografia-postcuantica" class="article-tag" rel="tag">criptografía postcuántica</a><a href="/tags/index.html#h3-sepa" class="article-tag" rel="tag">SEPA</a><a href="/tags/index.html#h3-swift-gpi" class="article-tag" rel="tag">SWIFT gpi</a><a href="/tags/index.html#h3-iso-20022" class="article-tag" rel="tag">ISO 20022</a><a href="/tags/index.html#h3-seguridad-de-los-servicios-financieros" class="article-tag" rel="tag">seguridad de los servicios financieros</a><a href="/tags/index.html#h3-epaa" class="article-tag" rel="tag">EPAA</a><a href="/tags/index.html#h3-harvest-now-decrypt-later" class="article-tag" rel="tag">harvest-now decrypt-later</a><a href="/tags/index.html#h3-agilidad-criptografica" class="article-tag" rel="tag">agilidad criptográfica</a><a href="/tags/index.html#h3-sebastien-rousseau" class="article-tag" rel="tag">Sebastien Rousseau</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2025-09-01T06:06:06+00:00" class="meta-pub">Publicerad 1 Sep 2025</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Uppdaterad 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Uppskattad lästid">4 min läsning</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Innehåll</h2><ol><li><a href="#la-amenaza-cuantica-sobre-los-sistemas-de-pago">La amenaza cuántica sobre los sistemas de pago</a></li><li><a href="#el-riesgo-cosechar-ahora-descifrar-mas-tarde">El riesgo «cosechar ahora, descifrar más tarde»</a></li><li><a href="#impacto-en-el-conjunto-de-los-rails-de-pago">Impacto en el conjunto de los rails de pago</a></li><li><a href="#lo-que-las-organizaciones-deben-hacer-ahora">Lo que las organizaciones deben hacer ahora</a></li><li><a href="#grupo-de-trabajo-epaa-y-colaboracion-industrial">Grupo de trabajo EPAA y colaboración industrial</a></li><li><a href="#sobre-el-autor">Sobre el autor</a></li><li><a href="#articulos-relacionados">Artículos relacionados</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> La computación cuántica amenaza la criptografía de los sistemas de pago. El libro blanco EPAA expone el riesgo estructural y aboga por una migración urgente hacia la criptografía postcuántica.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>La amenaza cuántica sobre los sistemas de pago.</strong> La infraestructura de pagos moderna reposa en la criptografía de clave pública —RSA, ECC y Diffie-Hellman— para autenticar las transacciones, proteger los datos de los titulares de tarjetas y asegurar la mensajería…</li>  <li><strong>El riesgo «cosechar ahora, descifrar más tarde».</strong> La amenaza no se confina a una fecha futura en la que los ordenadores cuánticos alcancen capacidad suficiente.</li>  <li><strong>Impacto en el conjunto de los rails de pago.</strong> Las implicaciones cubren todo el conjunto de la infraestructura de pagos:.</li>  <li><strong>Lo que las organizaciones deben hacer ahora.</strong> La transición hacia una criptografía resistente a lo cuántico no es una actualización única sino un programa plurianual que exige una preparación estructurada:.</li></ul></aside><h2 id="la-amenaza-cuantica-sobre-los-sistemas-de-pago">La amenaza cuántica sobre los sistemas de pago <a class="heading-anchor" href="#la-amenaza-cuantica-sobre-los-sistemas-de-pago" aria-label="Länk till La amenaza cuántica sobre los sistemas de pago">#</a></h2>
+<p>La infraestructura de pagos moderna reposa en la criptografía de clave pública —RSA, ECC y Diffie-Hellman— para autenticar las transacciones, proteger los datos de los titulares de tarjetas y asegurar la mensajería entre instituciones financieras. Estos algoritmos sustentan SWIFT, SEPA, los sistemas de liquidación bruta en tiempo real y prácticamente cada esquema de tarjetas en actividad hoy en día.</p>
+<p>Los ordenadores cuánticos que ejecuten el algoritmo de Shor serán capaces de romper estas primitivas criptográficas. Si bien las máquinas cuánticas tolerantes a fallos aún no existen a la escala requerida, la trayectoria del desarrollo de hardware —demostrada por IBM, Google y otros— convierte esto en una cuestión de calendario de ingeniería más que de teoría. El National Institute of Standards and Technology (NIST) ya ha finalizado su primer juego de estándares de criptografía postcuántica (FIPS 203, 204 y 205) en respuesta.</p>
+<h2 id="el-riesgo-cosechar-ahora-descifrar-mas-tarde">El riesgo «cosechar ahora, descifrar más tarde» <a class="heading-anchor" href="#el-riesgo-cosechar-ahora-descifrar-mas-tarde" aria-label="Länk till El riesgo «cosechar ahora, descifrar más tarde»">#</a></h2>
+<p>La amenaza no se confina a una fecha futura en la que los ordenadores cuánticos alcancen capacidad suficiente. Actores estatales y adversarios sofisticados interceptan y almacenan ya hoy datos cifrados, con la intención de descifrarlos una vez que los recursos cuánticos estén disponibles. Esta estrategia «harvest-now decrypt-later» (HNDL) significa que cualquier dato de pago con sensibilidad larga —registros normativos, archivos de cumplimiento, obligaciones contractuales— está ya en riesgo.</p>
+<p>Los reguladores financieros han comenzado a reaccionar. La Monetary Authority of Singapore (MAS) ha publicado orientaciones sobre la preparación cuántica. La Australian Prudential Regulation Authority (APRA) ha señalado el riesgo criptográfico en su marco de resiliencia tecnológica. El Digital Operational Resilience Act (DORA) de la Unión Europea impone una gestión de los riesgos ICT que debe tener en cuenta las amenazas emergentes, incluida la computación cuántica.</p>
+<h2 id="impacto-en-el-conjunto-de-los-rails-de-pago">Impacto en el conjunto de los rails de pago <a class="heading-anchor" href="#impacto-en-el-conjunto-de-los-rails-de-pago" aria-label="Länk till Impacto en el conjunto de los rails de pago">#</a></h2>
+<p>Las implicaciones cubren todo el conjunto de la infraestructura de pagos:</p>
+<p><strong>Mensajería SWIFT:</strong> Los formatos de mensajes MT y MX se apoyan en TLS y las firmas digitales para la integridad y la autenticación. Una infraestructura de claves comprometida socavaría el modelo de confianza que vincula a más de 11.000 instituciones a escala global.</p>
+<p><strong>SEPA y pagos instantáneos:</strong> El esquema SEPA Instant Credit Transfer del European Payments Council trata transacciones irrevocables en menos de diez segundos. Una vulneración criptográfica a esa velocidad no deja ninguna ventana para una intervención humana o una verificación manual.</p>
+<p><strong>Sistemas de pago en tiempo real:</strong> Faster Payments (UK), FedNow (US) y NPP (Australia) comparten todos la misma dependencia de las primitivas criptográficas clásicas para la autenticación de mensajes y la verificación de los participantes.</p>
+<p><strong>Cumplimiento y datos de larga duración de vida:</strong> Los registros de pago conservados con fines normativos —a menudo impuestos durante cinco a diez años o más— sobrevivirán a las garantías de seguridad de la criptografía que los protegía en el momento de su creación. Los programas de migración <a href="/sv/2023-09-29-automatisera-iso-20022-betalfiler-med-pain001/index.html">ISO 20022</a> deben tener en cuenta la duración de conservación criptográfica de los datos que producen.</p>
+<p><strong>Blockchain y libros mayores distribuidos:</strong> Las plataformas de activos digitales y los instrumentos de pago tokenizados que dependen de la criptografía de curva elíptica afrontan una amenaza directa y bien comprendida de los algoritmos cuánticos.</p>
+<h2 id="lo-que-las-organizaciones-deben-hacer-ahora">Lo que las organizaciones deben hacer ahora <a class="heading-anchor" href="#lo-que-las-organizaciones-deben-hacer-ahora" aria-label="Länk till Lo que las organizaciones deben hacer ahora">#</a></h2>
+<p>La transición hacia una criptografía resistente a lo cuántico no es una actualización única sino un programa plurianual que exige una preparación estructurada:</p>
+<p><strong>Inventario criptográfico:</strong> Las organizaciones deben catalogar cada sistema, protocolo y almacén de datos que dependa de la criptografía de clave pública clásica. Esto incluye los certificados TLS, la autenticación de API, las configuraciones HSM, los sistemas de gestión de claves y el cifrado de los datos en reposo.</p>
+<p><strong>Adopción de algoritmos postcuánticos:</strong> El NIST ha estandarizado ML-KEM (FIPS 203) para la encapsulación de claves y ML-DSA (FIPS 204) para las firmas digitales. Las organizaciones deberían comenzar a probar estos algoritmos en entornos fuera de producción y desarrollar hojas de ruta de migración para los sistemas críticos.</p>
+<p><strong>Agilidad criptográfica:</strong> Los sistemas deben diseñarse —o refactorizarse— de modo que los algoritmos criptográficos puedan reemplazarse sin necesidad de una refactorización aplicativa completa. Este principio se aplica tanto a las pasarelas de pago, como a la mensajería intermediaria y a las API de cliente.</p>
+<p><strong>Enfoques híbridos:</strong> Durante el periodo de transición, los esquemas criptográficos híbridos que combinan algoritmos clásicos y postcuánticos ofrecen una defensa en profundidad. Este enfoque preserva la retrocompatibilidad al tiempo que introduce la resistencia cuántica.</p>
+<h2 id="grupo-de-trabajo-epaa-y-colaboracion-industrial">Grupo de trabajo EPAA y colaboración industrial <a class="heading-anchor" href="#grupo-de-trabajo-epaa-y-colaboracion-industrial" aria-label="Länk till Grupo de trabajo EPAA y colaboración industrial">#</a></h2>
+<p>La Emerging Payments Association Asia (EPAA) ha establecido su Grupo de trabajo Quantum Safe Cryptography para abordar estos desafíos mediante una acción industrial coordinada. El grupo de trabajo reúne a participantes de todo el ecosistema de pagos, incluidos IBM, HSBC, KPMG, JPMorgan Chase y PayPal, entre otros.</p>
+<p>En talleres celebrados en Sídney, Hong Kong y Singapur, el grupo de trabajo ha desarrollado un marco compartido para evaluar el riesgo cuántico en los sistemas de pago e identificar vías de migración prácticas. El libro blanco resultante —<a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" title="Libro blanco EPAA Quantum-Safe Payments">Quantum-Safe Payments: Why the Payments Industry Must Act Now</a>— representa una posición consensuada sobre la urgencia y la amplitud del desafío.</p>
+<p>El análisis del grupo de trabajo concluye que la preparación resistente a lo cuántico es una decisión de infraestructura actual, y no futura. Las organizaciones que demoren se exponen a no poder ya satisfacer las expectativas normativas, proteger los datos de larga duración o mantener la interoperabilidad con socios ya migrados.</p>
+<h2 id="sobre-el-autor">Sobre el autor <a class="heading-anchor" href="#sobre-el-autor" aria-label="Länk till Sobre el autor">#</a></h2>
+<p>Sebastien Rousseau es Senior Digital Product Manager en HSBC Bank plc, donde dirige los productos de API de pagos corporativos en la Commercial &amp; Investment Bank de HSBC. Ha contribuido al Grupo de trabajo EPAA Quantum Safe Cryptography y estudia la aplicación de la criptografía postcuántica a los servicios financieros. <a href="/sv/om-mig/index.html" title="Sobre Sebastien Rousseau">Más información sobre Sebastien ❯</a></p>
+<h2 id="articulos-relacionados">Artículos relacionados <a class="heading-anchor" href="#articulos-relacionados" aria-label="Länk till Artículos relacionados">#</a></h2>
+<ul>
+<li>[<a href="/sv/2023-12-11-kvantnyckeldistribution-revolutionerar-banksakerhet/index.html">Distribución cuántica de claves</a>: revolucionar la seguridad bancaria]<a href="/sv/2023-12-11-kvantnyckeldistribution-revolutionerar-banksakerhet/index.html" title="Quantum Key Distribution: Revolutionising Security in Banking">rel1</a></li>
+<li>[<a href="/sv/2023-11-19-crystals-kyber-skyddsalgoritmen-i-kvantaldern/index.html">CRYSTALS-Kyber</a>: el algoritmo de protección en la era cuántica]<a href="/sv/2023-11-19-crystals-kyber-skyddsalgoritmen-i-kvantaldern/index.html" title="CRYSTALS-Kyber: el algoritmo de protección en la era cuántica">rel2</a></li>
+</ul>
+<aside class="author-card" aria-label="Om författaren"><img alt="Porträtt av Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/sv/om-mig/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banktekniker — skriver om tillämpad AI, migrering till ISO 20022, postkvantkryptografi för finansiella tjänster och den strukturella omvandlingen av grossistbetalningar.</span><span class="author-credentials">Över 20 års erfarenhet från HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA och Virgin Group. <a href="/sv/om-mig/index.html">Fullständig profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Senast granskad <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Relaterad läsning</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/sv/2026-05-12-iso-20022-pacs008-strukturerad-adress-deadline" class="related-media" aria-label="El plazo pacs.008 de «dirección estructurada» de noviembre de 2026: vista a seis meses" tabindex="-1"><img alt="ISO 20022 pacs.008 structured address diagram — cross-border payment message fields with TwnNm and Ctry highlighted" src="https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="el-plazo-pacs-008-de-direccion-estructurada-de-noviembre-de-2026-vista-a-seis-me"><a href="https://sebastienrousseau.com/sv/2026-05-12-iso-20022-pacs008-strukturerad-adress-deadline">El plazo pacs.008 de «dirección estructurada» de noviembre de 2026: vista a seis meses</a> <a class="heading-anchor" href="#el-plazo-pacs-008-de-direccion-estructurada-de-noviembre-de-2026-vista-a-seis-me" aria-label="Länk till El plazo pacs.008 de «dirección estructurada» de noviembre de 2026: vista a seis meses">#</a></h3><p><time datetime="2026-05-12">2026-05-12</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/sv/2026-04-11-kvanttrosklarna-rors-igen" class="related-media" aria-label="Los umbrales cuánticos vuelven a moverse" tabindex="-1"><img alt="Shor's algorithm qubit threshold diagram. Quantum computing circuit board with blue light patterns" src="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="los-umbrales-cuanticos-vuelven-a-moverse"><a href="https://sebastienrousseau.com/sv/2026-04-11-kvanttrosklarna-rors-igen">Los umbrales cuánticos vuelven a moverse</a> <a class="heading-anchor" href="#los-umbrales-cuanticos-vuelven-a-moverse" aria-label="Länk till Los umbrales cuánticos vuelven a moverse">#</a></h3><p><time datetime="2026-04-11">2026-04-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/sv/2026-05-21-basta-molnarkitektur-for-banker-2026" class="related-media" aria-label="La mejor arquitectura de infraestructura cloud en 2026: un blueprint AI-native, multicloud y consciente del cuántico para los servicios financieros" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="la-mejor-arquitectura-de-infraestructura-cloud-en-2026-un-blueprint-ai-native-mu"><a href="https://sebastienrousseau.com/sv/2026-05-21-basta-molnarkitektur-for-banker-2026">La mejor arquitectura de infraestructura cloud en 2026: un blueprint AI-native, multicloud y consciente del cuántico para los servicios financieros</a> <a class="heading-anchor" href="#la-mejor-arquitectura-de-infraestructura-cloud-en-2026-un-blueprint-ai-native-mu" aria-label="Länk till La mejor arquitectura de infraestructura cloud en 2026: un blueprint AI-native, multicloud y consciente del cuántico para los servicios financieros">#</a></h3><p><time datetime="2026-05-21">2026-05-21</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Källor och referenser</h2><ol class="article-sources-list"><li><a href="https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf" rel="external noopener nofollow"><span class="source-host">emergingpaymentsasia.org</span><span class="source-path">/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-M…</span></a></li></ol></aside><nav class="post-pagination" aria-label="Artikelpaginering"><a class="post-pagination-prev" href="/sv/2024-04-22-fel-upptackt-i-kvantalgoritm-for-gitterbaserad-krypto/"><span class="post-pagination-label">Föregående</span><span class="post-pagination-title">Quantum Lattice Crypto: Bug in Chen's LWE Attack</span></a><a class="post-pagination-next" href="/sv/2026-04-11-kvanttrosklarna-rors-igen/"><span class="post-pagination-label">Nästa</span><span class="post-pagination-title">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/sv/om-mig/index.html">Om mig</a></li>
+              <li><a href="/sv/kontakt/index.html">Kontakt</a></li>
+              <li><a href="/sv/gjord-med-statisk-sajtgenerator/index.html">Gjord med Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publikationer</h2>
+            <ul>
+              <li><a href="/sv/artiklar/index.html">Artiklar</a></li>
+              <li><a href="/sv/publikationer/index.html">Publikationer</a></li>
+              <li><a href="/sv/taggar/index.html">Taggar</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Verksamhet</h2>
+            <ul>
+              <li><a href="/sv/projekt/index.html">Projekt</a></li>
+              <li><a href="/sv/spellistor/index.html">Playlists</a></li>
+              <li><a href="/sv/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Kontakt</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Anmälan till nyhetsbrev">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — notas de investigación sobre pagos, IA y criptografía postcuántica. Sin spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="du@bank.se" />
+            <input type="hidden" name="_subject" value="Anmälan till nyhetsbrev — sebastienrousseau.com" />
+            <button type="submit">Prenumerera</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna.</span>
+          <div class="social" aria-label="Sociala länkar">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau en Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau en Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau en LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau en LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau en Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau en Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau en YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau en YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/sv/tillganglighet/index.html">Tillgänglighet</a> ·
+            <a href="/sv/integritet/index.html">Integritet</a> ·
+            <a href="/sv/villkor/index.html">Villkor</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"sv"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"sv"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":984,"about":{"@type":"Thing","name":"SEPA","sameAs":["https://en.wikipedia.org/wiki/Single_Euro_Payments_Area","https://www.wikidata.org/wiki/Q286094"]},"mentions":[{"@type":"Thing","name":"SWIFT gpi","sameAs":"https://www.swift.com/our-solutions/swift-gpi"},{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]}],"headline":"Pagos resistentes a lo cuántico: por qué la industria debe actuar ahora","description":"La computación cuántica amenaza la criptografía de los sistemas de pago. El libro blanco EPAA expone el riesgo estructural y aboga por una migración urgente hacia la criptografía postcuántica.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/digital-nodes.webp","width":"100vw","height":"100vh","caption":"Placa de circuito de computación cuántica bañada en luz azul"},"url":"https://sebastienrousseau.com/sv/2025-09-01-kvantsakra-betalningar-epaa/","datePublished":"2025-09-01T06:06:06+00:00","dateModified":"2026-05-11","inLanguage":"sv","keywords":"pagos resistentes a lo cuántico, criptografía postcuántica, SEPA, SWIFT gpi, ISO 20022, seguridad de los servicios financieros, EPAA, harvest-now decrypt-later, agilidad criptográfica, Sebastien Rousseau","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/sv/2025-09-01-kvantsakra-betalningar-epaa/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"sv"},"citation":[{"@type":"CreativeWork","url":"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/sv/"},{"@type":"ListItem","position":3,"name":"Pagos resistentes a lo cuántico: por qué la industria debe actuar ahora","item":"https://sebastienrousseau.com/sv/2025-09-01-kvantsakra-betalningar-epaa/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Sök">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Sök</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Sök">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Sök i dokumentationen..." autocomplete="off" aria-label="Sök"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> stäng</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigera</span><span><kbd>Enter</kbd> öppna</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="yo-NG">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 14 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 14 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in janvier 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today&#x27;s data expires.">
+<meta name="keywords" content="post-quantum cryptography, PQC migration, corporate banking, financial services, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Securing the Ledger">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-AMdAyNNr5SB2bflmJgZ79lhfbXXhWvGgtKYSXTmheT4=' 'sha256-nG4XXWaJ/pF1/tI3kT6poVUm7YWZ1cd6Z3x9xXRlfkk=' 'sha256-nY2QQ65hjiYsbiLBuLQTCUWXH8KUpW5JofpIXa5mfuw=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/yo/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Àyẹ́ Atom" href="/yo/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance — Sebastien Rousseau">
+<meta property="og:description" content="Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in janvier 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today&#x27;s data expires.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/yo/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="yo_NG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance — Sebastien Rousseau">
+<meta name="twitter:description" content="Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in janvier 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today&#x27;s data expires.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/yo/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-14-securiser-le-livre-comptable-migration-post-quantique-finance-entreprise/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-14-zabezpeceni-ucetni-knihy-postkvantova-migrace-firemni-finance/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-14-das-hauptbuch-sichern-post-quanten-migration-im-corporate-finance/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-14-asegurar-el-libro-contable-migracion-postcuantica-finanzas-corporativas/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-14-bahi-ki-suraksha-post-quantum-migration-corporate-finance/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-14-mengamankan-buku-besar-migrasi-pasca-kuantum-keuangan-korporat/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-14-mettere-in-sicurezza-il-libro-mastro-migrazione-post-quantum-finanza-aziendale/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-14-daichou-no-bouei-houjin-kinyuu-no-post-ryoushi-iko/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-14-jangbu-boho-beobinyung-pos-yangja-imun/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-14-het-grootboek-beveiligen-post-kwantum-migratie-corporate-finance/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-14-zabezpieczenie-ksiegi-migracja-postkwantowa-finansow-korporacyjnych/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-14-proteger-o-livro-razao-migracao-pos-quantica-financas-corporativas/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-14-zashchita-knigi-uchyota-postkvantovaya-migratsiya-korporativnykh-finansov/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-14-sakra-huvudboken-postkvantmigration-foretagsfinans/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-14-kan-pongkan-banchi-yai-postquantum-kanngeon-borisat/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-14-defteri-guvene-almak-post-kuantum-gecis-kurumsal-finans/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-14-bao-mat-so-cai-chuyen-doi-hau-luong-tu-tai-chinh-doanh-nghiep/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-14-baozhang-zhangbu-hou-liangzi-qianyi-qiye-jinrong/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-14-baozhang-zhangbu-hou-liangzi-qianyi-qiye-jinrong-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Fò sí àkóónú àkọ́kọ́</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Yí ìwọ̀ndì padà" />
+      <div class="wrap">
+        <a class="ap-brand" href="/yo/index.html" aria-label="Ilé Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Ìwọ̀ndì àkọ́kọ́">
+          <ul class="ap-menu">
+            <li><a href="/yo/nipa-wa/index.html">About</a></li>
+            <li><a href="/yo/awon-akole/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/yo/awon-iwe/index.html">Papers</a></li>
+            <li><a href="/yo/awon-koko/index.html">Àwọn kókó</a></li>
+            <li><a href="/yo/awon-ise/index.html">Projects</a></li>
+            <li><a href="/yo/akojopo-orin/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Tan àkòrí òkùnkùn" aria-pressed="false" title="Yí àkòrí padà">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Wá (Cmd tàbí Ctrl + K)" title="Wá (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Èdè">
+            <button type="button" class="ap-lang-toggle" aria-label="YO, Yí èdè padà" aria-expanded="false" aria-haspopup="menu" title="Yí èdè padà">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">YO</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Yóò dé láìpẹ́">🇺🇦 Українська</span>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/yo/kan-si-wa/index.html" aria-label="Kàn sí wa">Kàn sí wa ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Yí ìwọ̀ndì padà">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</h1>
+      <p class="sub">Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in janvier 2026 and the BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate — it is whether the migration can be completed before the shelf-life of today&#x27;s data expires.</p>
+    <nav class="article-tags" aria-label="Àwọn kókó"><a href="/tags/index.html#h3-post-quantum-cryptography" class="article-tag" rel="tag">post-quantum cryptography</a><a href="/tags/index.html#h3-pqc-migration" class="article-tag" rel="tag">PQC migration</a><a href="/tags/index.html#h3-corporate-banking" class="article-tag" rel="tag">corporate banking</a><a href="/tags/index.html#h3-financial-services" class="article-tag" rel="tag">financial services</a><a href="/tags/index.html#h3-g7-ceg-roadmap" class="article-tag" rel="tag">G7 CEG roadmap</a><a href="/tags/index.html#h3-bis-project-leap" class="article-tag" rel="tag">BIS Project Leap</a><a href="/tags/index.html#h3-ml-kem" class="article-tag" rel="tag">ML-KEM</a><a href="/tags/index.html#h3-ml-dsa" class="article-tag" rel="tag">ML-DSA</a><a href="/tags/index.html#h3-fips-203" class="article-tag" rel="tag">FIPS 203</a><a href="/tags/index.html#h3-fips-204" class="article-tag" rel="tag">FIPS 204</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-14T06:06:06+00:00" class="meta-pub">Tẹ̀ jáde 14 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Àkókò kíkà tó tó">23 ìṣẹ́jú kíkà</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Àkóónú</h2><ol><li><a href="#the-year-the-regulatory-posture-hardened">The Year the Regulatory Posture Hardened</a></li><li><a href="#three-threat-vectors-that-should-concern-the-board">Three Threat Vectors That Should Concern the Board</a></li><li><a href="#regulatory-tightening-a-jurisdiction-by-jurisdiction-view">Regulatory Tightening: A Jurisdiction-by-Jurisdiction View</a></li><li><a href="#bis-project-leap-what-the-industry-has-actually-proved">BIS Project Leap: What the Industry Has Actually Proved</a></li><li><a href="#the-nist-toolkit-ml-kem-and-ml-dsa-compared">The NIST Toolkit: ML-KEM and ML-DSA Compared</a></li><li><a href="#a-logical-migration-path-discovery-triage-hybrid-deployment">A Logical Migration Path: Discovery → Triage → Hybrid Deployment</a></li><li><a href="#what-this-costs-and-why-doing-nothing-costs-more">What This Costs and Why Doing Nothing Costs More</a></li><li><a href="#conclusion">Conclusion</a></li><li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li><li><a href="#references">References</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in janvier 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today&#x27;s data expires.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>The Year the Regulatory Posture Hardened.</strong> For most of the past decade, post-quantum cryptography lived in a comfortable corner of the long-term roadmap.</li>  <li><strong>Three Threat Vectors That Should Concern the Board.</strong> Before discussing migration mechanics, it is worth being precise about what specifically is at risk.</li>  <li><strong>Regulatory Tightening: A Jurisdiction-by-Jurisdiction View.</strong> The global regulatory picture in May 2026 is no longer a patchwork of suggestions.</li>  <li><strong>BIS Project Leap: What the Industry Has Actually Proved.</strong> Project Leap is worth a board&#x27;s attention not because it is a marketing milestone but because it is the most credible end-to-end demonstration of post-quantum cryptography in a live financial payment system to date.</li></ul></aside><p><img src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" alt="Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<hr />
+<blockquote>
+<p><strong>TL;DR.</strong> Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in janvier 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today's data expires.</p>
+<p><strong>Awọn Pataki Ojulowo</strong></p>
+<ul>
+<li>DRAFT translation: this article is a Yorùbá stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.</li>
+<li>Source title: <em>Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</em>.</li>
+<li>Source subtitle: <em>Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in janvier 2026 and the BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate — it is whether the migration can be completed before the shelf-life of today's data expires.</em>.</li>
+<li>Editorial note: replace this block with hand-translated copy before flipping <code>active=True</code> for yo in <code>scripts/_lang_registry.py</code>.</li>
+</ul>
+</blockquote>
+<hr />
+<p>Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in janvier 2026, the EU, UK, and Australian timelines clarified, and the BIS Project Leap proving feasibility in live payment systems, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today's data expires.</p>
+<hr />
+<blockquote>
+<p><strong>Key Takeaways</strong></p>
+<ul>
+<li><strong>2026 is the year the regulatory posture hardened.</strong> The G7 Cyber Expert Group's January roadmap, the EU NIS Cooperation Group's coordinated timeline, and the UK NCSC's three-phase plan have moved the conversation from awareness to execution. The Australian Signals Directorate has gone further still, setting a hard 2030 end-date for classical asymmetric cryptography.</li>
+<li><strong>The exposure is asymmetric.</strong> RSA, ECC, and Diffie–Hellman are the immediate problem — the asymmetric algorithms underpinning SWIFT handshakes, TLS, PKI, code signing, and clearing-network authentication. Symmetric encryption (AES-256) remains stable if key lengths are maintained. The board-level focus must be on the asymmetric surface.</li>
+<li><strong>Harvest-now-decrypt-later is not a future scenario.</strong> Adversaries are intercepting and storing encrypted financial logs, settlement records, M&amp;A material, and cross-border wire data today, with the explicit intention of decrypting once a cryptographically relevant quantum computer (CRQC) exists. For data with a 10–20 year confidentiality requirement, that risk is already realised.</li>
+<li><strong>The industry now has a working reference point.</strong> <a href="https://www.bis.org/publ/othp107.htm" title="Project Leap phase 2: quantum-proofing payment systems">BIS Project Leap Phase 2 ⧉</a>, published décembre 2025, successfully replaced traditional digital signatures with post-quantum cryptography in live liquidity transfers across TARGET2 — and surfaced the specific engineering costs (verification latency, packet size) that every migration programme will face.</li>
+<li><strong>The NIST suite is the global anchor.</strong> <a href="https://csrc.nist.gov/pubs/fips/203/final" title="FIPS 203, Module-Lattice-Based Key-Encapsulation Mechanism Standard">FIPS 203 (ML-KEM) ⧉</a> and FIPS 204 (ML-DSA) are referenced by every major jurisdiction, even where national positions diverge on parameter sets and hybrid requirements. Boards should treat ML-KEM-768/ML-DSA-65 as the floor and ML-KEM-1024/ML-DSA-87 as the conservative baseline for long-lived data.</li>
+<li><strong>Hybrid is the only credible path.</strong> Pure cut-overs are not advised by any major authority. Running classical and quantum-resistant algorithms in parallel is the deployment pattern endorsed by NCSC, ANSSI, BSI, and proven in Project Leap. It is heavier than either alternative, but it is the only one that addresses both today's compatibility and tomorrow's threat.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="the-year-the-regulatory-posture-hardened">The Year the Regulatory Posture Hardened <a class="heading-anchor" href="#the-year-the-regulatory-posture-hardened" aria-label="Ìjápọ̀ sí The Year the Regulatory Posture Hardened">#</a></h2>
+<p>For most of the past decade, post-quantum cryptography lived in a comfortable corner of the long-term roadmap. Quantum computers were impressive but distant; the cryptographic mathematics underpinning RSA and elliptic curves was treated as a stable substrate; and the migration conversation was largely confined to specialist working groups. That position is no longer tenable.</p>
+<p>In janvier 2026, the <a href="https://www.gov.uk/government/publications/advancing-a-coordinated-roadmap-for-the-transition-to-post-quantum-cryptography-in-the-financial-sector/g7-cyber-expert-group-statement-on-advancing-a-coordinated-roadmap-for-the-transition-to-post-quantum-cryptography-in-the-financial-sector-january-20" title="G7 CEG Statement on Advancing a Coordinated Roadmap for the Transition to Post-Quantum Cryptography in the Financial Sector">G7 Cyber Expert Group published its most consequential statement to date ⧉</a>, co-chaired by the US Treasury and the Bank of England. The document is not regulation, but it carries more weight than typical guidance: it represents the shared view of finance ministries, central banks, and supervisory authorities across G7 jurisdictions that cryptographic transition is now a systemic risk-management issue. The roadmap aligns its planning horizon around the mid-2030s, with critical financial systems encouraged to migrate earlier — language that, in the careful idiom of central bankers, signals expectation rather than suggestion.</p>
+<p>Two months earlier, the BIS Innovation Hub and the Eurosystem published the results of <a href="https://www.bis.org/publ/othp107.htm" title="Project Leap phase 2: quantum-proofing payment systems">Project Leap Phase 2 ⧉</a>, a technical experiment that replaced traditional digital signatures with post-quantum cryptography in live liquidity transfers between the Bank of Italy, the Banque de France, the Deutsche Bundesbank, Nexi-Colt, and Swift. The headline finding was a success — quantum-resistant signed transfers passed end-to-end through an operational payment system. The detail beneath the headline is more instructive, and it is examined later in this article.</p>
+<p>The combination of these two events — a coordinated G7 policy framework and a working proof point in a real payment system — has produced what the technical community has been waiting a decade for: a definitive answer to the question &quot;is this real?&quot; The answer, in May 2026, is yes. The remaining question is one of pace.</p>
+<h2 id="three-threat-vectors-that-should-concern-the-board">Three Threat Vectors That Should Concern the Board <a class="heading-anchor" href="#three-threat-vectors-that-should-concern-the-board" aria-label="Ìjápọ̀ sí Three Threat Vectors That Should Concern the Board">#</a></h2>
+<p>Before discussing migration mechanics, it is worth being precise about what specifically is at risk. Quantum risk in corporate banking is not uniform across the cryptographic estate, and the board's attention is best directed at the three vectors where the exposure is most acute.</p>
+<h3 id="1-harvest-now-decrypt-later-hndl">1. Harvest Now, Decrypt Later (HNDL) <a class="heading-anchor" href="#1-harvest-now-decrypt-later-hndl" aria-label="Ìjápọ̀ sí 1. Harvest Now, Decrypt Later (HNDL)">#</a></h3>
+<p>The most immediate concern is not future. It is present. State-level and sophisticated criminal adversaries are systematically intercepting and storing encrypted financial traffic — wire transfers, SWIFT message flows, M&amp;A communications, cross-border settlement logs, swap agreements, and KYC files — with no current ability to read them. Their objective is straightforward: store now, decrypt later, once a CRQC exists. As the <a href="https://www.bis.org/about/bisih/topics/cyber_security/leap.htm" title="Project Leap: quantum-proofing the financial system">Bank for International Settlements has explicitly noted ⧉</a>, this collection is already happening.</p>
+<p>For boards, the implication is uncomfortable but specific: any sensitive data transmitted under classical asymmetric encryption today, whose confidentiality requirement extends beyond the arrival of a CRQC, must already be considered exposed. There is no breach notification when HNDL occurs. There is no alarm in the SIEM. The encryption holds — for now — but the data has already left the perimeter.</p>
+<h3 id="2-long-term-sensitivity-risk">2. Long-Term Sensitivity Risk <a class="heading-anchor" href="#2-long-term-sensitivity-risk" aria-label="Ìjápọ̀ sí 2. Long-Term Sensitivity Risk">#</a></h3>
+<p>Corporate banking data has unusually long institutional shelf lives. Strategic M&amp;A documentation can remain market-sensitive for a decade. Trade-secret communications and intellectual property valuations may stay confidential for fifteen to twenty years. Cross-border settlement logs, central counterparty exposures, and counterparty credit assessments retain commercial sensitivity well beyond their immediate transactional life.</p>
+<p>The <a href="https://www.cryptomathic.com/a-bankers-guide-to-quantum-safe-cryptography-part-3-roadmap-to-pqc-migration-for-financial-institutions-cryptomathic" title="A Banker's Guide to Quantum Safe Cryptography — Part 3">Mosca equation ⧉</a>, originally articulated by Michele Mosca and now embedded in every serious migration framework, formalises the problem. If <strong>S</strong> is the shelf life of the data, <strong>M</strong> is the time required to migrate the systems that protect it, and <strong>Q</strong> is the time until a CRQC is available, then:</p>
+<pre><code>If S + M &gt; Q, the data is already exposed.
+</code></pre>
+<p>For data with a twenty-year confidentiality horizon and a migration programme realistically requiring five to seven years to complete, the implicit Q value the board is betting on is at least 25 years out. A growing body of expert assessment — <a href="https://www.forrester.com/press-newsroom/forrester-apac-2026-predictions/" title="Forrester's 2026 APAC Predictions">Forrester's 2026 APAC predictions ⧉</a>, the Global Risk Institute's annual surveys, and a février 2026 architecture paper proposing CRQC at approximately 100,000 physical qubits using QLDPC codes — suggests that bet is unsafe.</p>
+<h3 id="3-the-vulnerability-of-core-handshakes">3. The Vulnerability of Core Handshakes <a class="heading-anchor" href="#3-the-vulnerability-of-core-handshakes" aria-label="Ìjápọ̀ sí 3. The Vulnerability of Core Handshakes">#</a></h3>
+<p>The third vector is the most architecturally significant. Symmetric ciphers (AES-256) remain comparatively stable; Grover's algorithm halves the effective security level, but doubling key length restores margin. The catastrophic exposure is to asymmetric algorithms, and these are precisely the algorithms that underpin every authenticated handshake in corporate finance: RSA in SWIFT public-key infrastructure, ECDSA in TLS client/server authentication, ECDH in session key establishment, and ECC variants throughout client mobile authentication, API signatures, and code-signing pipelines.</p>
+<p>A functional CRQC running Shor's algorithm does not gradually weaken these systems. It breaks them. Once a CRQC is operational, every RSA-protected handshake, every ECDSA signature, and every elliptic-curve key exchange becomes recoverable — not over months of effort, but in hours. The transition from &quot;secure&quot; to &quot;compromised&quot; is binary, and it propagates simultaneously across every system using the affected algorithm. This is the foundation on which the regulatory urgency rests.</p>
+<h2 id="regulatory-tightening-a-jurisdiction-by-jurisdiction-view">Regulatory Tightening: A Jurisdiction-by-Jurisdiction View <a class="heading-anchor" href="#regulatory-tightening-a-jurisdiction-by-jurisdiction-view" aria-label="Ìjápọ̀ sí Regulatory Tightening: A Jurisdiction-by-Jurisdiction View">#</a></h2>
+<p>The global regulatory picture in May 2026 is no longer a patchwork of suggestions. It is a coordinated set of timelines that vary in stringency but converge on the same destination. A multinational bank operating across the major financial centres is now subject to the most stringent applicable jurisdiction, not the most lenient.</p>
+<h3 id="united-states">United States <a class="heading-anchor" href="#united-states" aria-label="Ìjápọ̀ sí United States">#</a></h3>
+<p>The US has the most prescriptive position for any institution touching federal systems. The NSA's <a href="https://informedclearly.com/en/technology/46563/quantum-encryption-race-post-quantum-security-standards-2026" title="Quantum-Encryption Race 2026">Commercial National Security Algorithm Suite 2.0 ⧉</a> mandates ML-KEM-1024 and ML-DSA-87 for national security systems, with new systems required to deploy PQC from janvier 2027 and complete infrastructure migration by 2035. OMB Memorandum M-23-02 binds federal agencies to the same trajectory. For commercial banks, the immediate exposure is through federal procurement chains, NSS-adjacent contracts, and the indirect pressure that NSA guidance places on the broader market.</p>
+<h3 id="european-union">European Union <a class="heading-anchor" href="#european-union" aria-label="Ìjápọ̀ sí European Union">#</a></h3>
+<p>The EU is operating on three layers. The <a href="https://pqshield.com/pqc-transition-roadmaps-and-guidance/" title="PQC Roadmaps and Transition Guidance">European Commission's Coordinated Implementation Roadmap ⧉</a>, elaborated by the NIS Cooperation Group in June 2025, sets phased milestones at 2026 (national strategies), 2030 (high-risk systems migrated), and 2035 (full transition). The Cyber Resilience Act will mandate state-of-the-art security upgrades for digital products from the end of 2027. NIS2 reinforces ICT risk management, although neither directive contains an explicit PQC requirement. National regulators, however, have moved ahead of the Commission. Germany's BSI mandates hybrid key exchange and approves a conservative basket of ML-KEM, FrodoKEM, and Classic McEliece. France's ANSSI requires hybrid for both key encapsulation and signatures. The Netherlands NLNCSA and Norway's authorities have aligned around ML-KEM-1024 as the conservative baseline for long-lived data.</p>
+<h3 id="united-kingdom">United Kingdom <a class="heading-anchor" href="#united-kingdom" aria-label="Ìjápọ̀ sí United Kingdom">#</a></h3>
+<p>The UK NCSC published its definitive guidance in mars 2025 and reaffirmed it through the 2025 Annual Review. The three-phase timeline is explicit:</p>
+<ul>
+<li><strong>To 2028</strong> — Identify cryptographic services requiring upgrades, build the migration plan, and produce a complete cryptographic inventory.</li>
+<li><strong>2028 to 2031</strong> — Execute high-priority upgrades, particularly on critical systems and externally-facing internet protocols.</li>
+<li><strong>2031 to 2035</strong> — Complete migration across all systems, services, and products.</li>
+</ul>
+<p>For UK financial institutions, the <a href="https://www.cmorg.org.uk/sites/default/files/2025-06/CMORG%20-%20Guidance%20for%20Post-Quantum%20Cryptography%20-%20April%202025%20-%20TLP%20CLEAR%20(1).pdf" title="CMORG Guidance for Post-Quantum Cryptography">CMORG (Cross-Market Operational Resilience Group) PQC Guidance ⧉</a> sits alongside the NCSC framework, treating banks as critical national infrastructure and emphasising vendor readiness and supply-chain alignment.</p>
+<h3 id="asia-pacific">Asia-Pacific <a class="heading-anchor" href="#asia-pacific" aria-label="Ìjápọ̀ sí Asia-Pacific">#</a></h3>
+<p>The APAC posture is more fragmented but moving fast. Australia's ASD has the hardest position globally: classical public-key cryptography must not be used beyond the end of 2030, no hybrid recommendation, and ML-KEM-1024 required (ML-KEM-768 acceptable only until 2030). Organisations should have a refined transition plan by end-2026. Singapore's Monetary Authority has issued formal quantum-safe readiness guidance. Japan and South Korea are investing substantially, though both have national algorithm tracks (Korea has selected NTRU+ and SMAUG-T as KEMs, ALMer and HAETAE as signatures). India's National Quantum Mission, backed by a Rs. 6,003.65 crore government outlay, explicitly identifies banking and financial systems as a strategic priority. <a href="https://www.forrester.com/press-newsroom/forrester-apac-2026-predictions/" title="Forrester's 2026 APAC predictions">Forrester's 2026 APAC predictions ⧉</a> put the number of regional enterprises expected to invest in post-quantum technologies this year at more than 90%.</p>
+<h3 id="the-net-position">The Net Position <a class="heading-anchor" href="#the-net-position" aria-label="Ìjápọ̀ sí The Net Position">#</a></h3>
+<p>For a board, the practical synthesis of these jurisdictional positions is straightforward. A multinational bank cannot manage to any single regulator's timeline; it must manage to the most stringent applicable. For most major institutions, that means a planning horizon of end-2030 for high-risk systems and end-2035 for the long tail — with ASD-exposed entities targeting pure-PQC by 2030 and CNSA-exposed entities targeting the same window with ML-KEM-1024 and ML-DSA-87 specifically.</p>
+<h2 id="bis-project-leap-what-the-industry-has-actually-proved">BIS Project Leap: What the Industry Has Actually Proved <a class="heading-anchor" href="#bis-project-leap-what-the-industry-has-actually-proved" aria-label="Ìjápọ̀ sí BIS Project Leap: What the Industry Has Actually Proved">#</a></h2>
+<p>Project Leap is worth a board's attention not because it is a marketing milestone but because it is the most credible end-to-end demonstration of post-quantum cryptography in a live financial payment system to date. The headline conclusion is straightforward: it works. The detail beneath is where the operational implications sit.</p>
+<p>Phase 1, completed in 2023, established a quantum-resistant VPN between IT systems at the Bank of France and the Deutsche Bundesbank, with payment messages transmitted between Paris and Frankfurt under a hybrid encryption scheme. Phase 2, completed in late 2025 and <a href="https://www.bis.org/publ/othp107.htm" title="Project Leap phase 2: quantum-proofing payment systems">reported in December ⧉</a>, went considerably further. The consortium replaced traditional RSA-based digital signatures with post-quantum signatures in the execution of liquidity transfers across TARGET2, the Eurosystem's Real-Time Gross Settlement system. The participants — the BIS Innovation Hub Eurosystem Centre, the Bank of Italy, the Banque de France, the Deutsche Bundesbank, Nexi-Colt (which provides TARGET2 connectivity), and Swift — represent precisely the institutions whose infrastructure must eventually migrate.</p>
+<p>The report flagged three findings that every migration programme should internalise:</p>
+<ul>
+<li><strong>Verification latency is meaningfully higher.</strong> Post-quantum signature verification took materially longer than RSA-based verification on the same hardware. For an RTGS system designed around sub-second message handling, this is not a marginal observation; it is a capacity-planning input.</li>
+<li><strong>Packet sizes require system redevelopment.</strong> PQC signatures are an order of magnitude larger than ECDSA equivalents (more on this below). Payment systems whose internal queues, monitoring tools, and database schemas were sized for legacy message dimensions cannot accommodate the new payload without redesign. Project Leap explicitly found that TARGET2 could not &quot;easily accommodate&quot; the hybrid model without substantial redevelopment.</li>
+<li><strong>Hybrid is the right answer — but it is heavier.</strong> Running classical and post-quantum algorithms in parallel preserved backward compatibility and provided defence in depth, but it doubled the cryptographic processing overhead. This is the operational cost of doing PQC correctly during the transition; it is not avoidable through clever engineering alone.</li>
+</ul>
+<p>For a CFO reviewing a PQC business case, the Project Leap findings are useful precisely because they are precise. The cost of post-quantum migration is not a single capital line. It is verification latency that ripples through SLA contracts, message-size expansion that touches storage and bandwidth budgets, and a transitional period of duplicated cryptographic operations that affects compute capacity planning. None of these are speculative. They have been measured in a live central-bank system.</p>
+<h2 id="the-nist-toolkit-ml-kem-and-ml-dsa-compared">The NIST Toolkit: ML-KEM and ML-DSA Compared <a class="heading-anchor" href="#the-nist-toolkit-ml-kem-and-ml-dsa-compared" aria-label="Ìjápọ̀ sí The NIST Toolkit: ML-KEM and ML-DSA Compared">#</a></h2>
+<p>The technical centrepiece of every credible national framework is the NIST suite of post-quantum standards published in août 2024. Two of these standards are the immediate focus for corporate banking: ML-KEM (FIPS 203) for key encapsulation and ML-DSA (FIPS 204) for digital signatures. They share a mathematical foundation — both rely on the hardness of Module Learning With Errors (ML-LWE) and Module Short Integer Solution problems over structured lattices — but they serve very different roles in the cryptographic estate, and their performance and size profiles differ materially.</p>
+<h3 id="ml-kem-fips-203-key-encapsulation">ML-KEM (FIPS 203) — Key Encapsulation <a class="heading-anchor" href="#ml-kem-fips-203-key-encapsulation" aria-label="Ìjápọ̀ sí ML-KEM (FIPS 203) — Key Encapsulation">#</a></h3>
+<p>ML-KEM, derived from <a href="/yo/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-Kyber</a>, is the replacement for ECDH and RSA-KEM in protocols where two parties need to establish a shared symmetric key over an insecure channel. It is, in practical terms, where TLS handshakes go after RSA and ECDH are retired. NIST defines three parameter sets at increasing security strength and decreasing performance: ML-KEM-512 (NIST Category 1), ML-KEM-768 (Category 3), and ML-KEM-1024 (Category 5).</p>
+<h3 id="ml-dsa-fips-204-digital-signatures">ML-DSA (FIPS 204) — Digital Signatures <a class="heading-anchor" href="#ml-dsa-fips-204-digital-signatures" aria-label="Ìjápọ̀ sí ML-DSA (FIPS 204) — Digital Signatures">#</a></h3>
+<p>ML-DSA, derived from CRYSTALS-Dilithium, is the replacement for RSA and ECDSA signatures. It handles certificate signing, code signing, document signing, and authentication. The three parameter sets are ML-DSA-44, ML-DSA-65, and ML-DSA-87, corresponding broadly to NIST Categories 2, 3, and 5.</p>
+<h3 id="size-and-performance-profile">Size and Performance Profile <a class="heading-anchor" href="#size-and-performance-profile" aria-label="Ìjápọ̀ sí Size and Performance Profile">#</a></h3>
+<p>For a CIO scoping migration capacity, the most important figures are the artefact sizes. These are the inputs to network capacity planning, storage projections, and protocol-level testing.</p>
+<table>
+<thead>
+<tr>
+<th>Algorithm</th>
+<th>Public Key</th>
+<th>Ciphertext / Signature</th>
+<th>Closest Classical Equivalent</th>
+<th>Size vs Classical</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ML-KEM-512</td>
+<td>800 bytes</td>
+<td>768 bytes (ciphertext)</td>
+<td>ECDH P-256 (~32 bytes pub key)</td>
+<td>~25× larger</td>
+</tr>
+<tr>
+<td>ML-KEM-768</td>
+<td>1,184 bytes</td>
+<td>1,088 bytes (ciphertext)</td>
+<td>ECDH P-384</td>
+<td>~25× larger</td>
+</tr>
+<tr>
+<td>ML-KEM-1024</td>
+<td>1,568 bytes</td>
+<td>1,568 bytes (ciphertext)</td>
+<td>ECDH P-521</td>
+<td>~25× larger</td>
+</tr>
+<tr>
+<td>ML-DSA-44</td>
+<td>1,312 bytes</td>
+<td>~2,420 bytes (signature)</td>
+<td>ECDSA P-256 (64-byte sig)</td>
+<td>~38× larger</td>
+</tr>
+<tr>
+<td>ML-DSA-65</td>
+<td>1,952 bytes</td>
+<td>~3,293 bytes (signature)</td>
+<td>ECDSA P-384</td>
+<td>~50× larger</td>
+</tr>
+<tr>
+<td>ML-DSA-87</td>
+<td>2,592 bytes</td>
+<td>~4,595 bytes (signature)</td>
+<td>ECDSA P-521</td>
+<td>~70× larger</td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: Synthesis of <a href="https://csrc.nist.gov/pubs/fips/203/final" title="FIPS 203, Module-Lattice-Based Key-Encapsulation Mechanism Standard">NIST FIPS 203 ⧉</a> and FIPS 204 specifications, with comparative data from independent benchmarking literature.</em></p>
+<p>Three operational implications follow directly. <strong>First</strong>, signature size is the binding constraint for most enterprise deployments. An ML-DSA-65 signature is approximately fifty times the size of an ECDSA P-256 signature, and TLS certificate chains carrying intermediate CAs grow proportionally. Capacity work on this surface is not optional — it is load-bearing. <strong>Second</strong>, ML-KEM is computationally competitive with ECDH and in some implementations meaningfully faster, particularly on hardware with vectorised support for the underlying lattice arithmetic. <strong>Third</strong>, ML-DSA verification is consistently fast (often faster than ECDSA verification), but ML-DSA signing involves a rejection-sampling loop that can require multiple attempts on constrained hardware. For high-throughput signing services, this is a benchmark to verify rather than assume.</p>
+<h3 id="choosing-parameter-sets">Choosing Parameter Sets <a class="heading-anchor" href="#choosing-parameter-sets" aria-label="Ìjápọ̀ sí Choosing Parameter Sets">#</a></h3>
+<p>The jurisdictional positions on parameter selection are not identical, but the convergence is clear. ML-KEM-768 and ML-DSA-65 are the enterprise floor — endorsed by UK NCSC as the baseline for UK organisations and acceptable under most European frameworks. ML-KEM-1024 and ML-DSA-87 are the conservative ceiling — mandated by NSA CNSA 2.0 for US national security systems and required by ASD for Australian regulated entities by 2030. For data with extreme long-term sensitivity — sovereign settlement logs, decade-plus intellectual property, custody records for long-dated instruments — the higher parameter sets are the defensible default.</p>
+<h3 id="a-shared-mathematical-foundation-a-shared-risk">A Shared Mathematical Foundation, A Shared Risk <a class="heading-anchor" href="#a-shared-mathematical-foundation-a-shared-risk" aria-label="Ìjápọ̀ sí A Shared Mathematical Foundation, A Shared Risk">#</a></h3>
+<p>A board-level point worth noting: both ML-KEM and ML-DSA derive their security from the same family of lattice problems. A future cryptanalytic breakthrough against Module-LWE would affect both standards simultaneously. This is precisely why several national authorities — notably Germany's BSI and France's ANSSI — recommend complementing the lattice-based stack with hash-based signatures (SLH-DSA, FIPS 205) for long-term signing and code-signing use cases. Crypto-agility, in this sense, is not just about being able to swap RSA for ML-KEM. It is about being able to swap one PQC algorithm for another when the cryptanalytic landscape shifts.</p>
+<h2 id="a-logical-migration-path-discovery-triage-hybrid-deployment">A Logical Migration Path: Discovery → Triage → Hybrid Deployment <a class="heading-anchor" href="#a-logical-migration-path-discovery-triage-hybrid-deployment" aria-label="Ìjápọ̀ sí A Logical Migration Path: Discovery → Triage → Hybrid Deployment">#</a></h2>
+<p>For a board approving a multi-year PQC programme, the operational question is how to phase the work without taking unacceptable service-availability risk. The pattern that has emerged across the G7 roadmap, the NCSC framework, BIS Project Leap, and the major national guidance documents converges on three phases.</p>
+<pre><code>┌──────────────────────┐   ┌──────────────────────┐   ┌──────────────────────┐
+│  1. DISCOVERY &amp; CBOM │ → │  2. TRIAGE (MOSCA)   │ → │  3. HYBRID DEPLOYMENT│
+│  Cryptographic       │   │  Risk-based          │   │  Dual-envelope       │
+│  inventory across    │   │  prioritisation by   │   │  classical + PQC,    │
+│  all systems         │   │  data shelf life     │   │  crypto-agile        │
+└──────────────────────┘   └──────────────────────┘   └──────────────────────┘
+</code></pre>
+<h3 id="phase-1-discovery-and-the-cryptographic-bill-of-materials-cbom">Phase 1 — Discovery and the Cryptographic Bill of Materials (CBOM) <a class="heading-anchor" href="#phase-1-discovery-and-the-cryptographic-bill-of-materials-cbom" aria-label="Ìjápọ̀ sí Phase 1 — Discovery and the Cryptographic Bill of Materials (CBOM)">#</a></h3>
+<p>Migration cannot be planned for a cryptographic estate that has not been mapped, and most institutions do not have an accurate map. The first phase is therefore the production of a Cryptographic Bill of Materials — a structured inventory of every instance of asymmetric cryptography across the organisation, with each instance tagged for algorithm, key length, protocol context, data sensitivity, and system owner. Automated scanning across codebases, web applications, container images, database configurations, certificate stores, hardware security modules, and vendor interfaces is the practical mechanism; manual inventory of legacy systems and proprietary protocols is the unavoidable supplement.</p>
+<p>The output of Phase 1 is not glamorous, but it is the only foundation on which Phases 2 and 3 can rest. It is also the deliverable that most internal audit functions and external regulators will look for first when PQC compliance attestations start being requested.</p>
+<h3 id="phase-2-risk-triage-using-the-mosca-equation">Phase 2 — Risk Triage Using the Mosca Equation <a class="heading-anchor" href="#phase-2-risk-triage-using-the-mosca-equation" aria-label="Ìjápọ̀ sí Phase 2 — Risk Triage Using the Mosca Equation">#</a></h3>
+<p>With the CBOM in hand, the institution can apply Mosca's framework asset by asset. For each cryptographic dependency, the question is whether <strong>S + M &gt; Q</strong> — whether the data's shelf life plus the migration time exceeds the estimated time to a CRQC. Assets where the inequality is most acute — long-lived sensitive data on infrastructure that takes years to migrate — go to the front of the queue. Assets with short data lifespans or already-modernised infrastructure can be sequenced later in the programme.</p>
+<p>This is the phase where the board's risk appetite is most visible. The Q value the institution chooses to plan against is, in effect, a strategic bet on the rate of quantum hardware progress. A conservative Q (mid-2030s) produces a more aggressive migration plan and a higher near-term capital line. An optimistic Q (post-2040) produces a more relaxed plan and a higher residual exposure to data already being harvested. Neither is wrong; both should be explicit decisions of the board, not implicit defaults of the technology function.</p>
+<h3 id="phase-3-hybrid-deployment">Phase 3 — Hybrid Deployment <a class="heading-anchor" href="#phase-3-hybrid-deployment" aria-label="Ìjápọ̀ sí Phase 3 — Hybrid Deployment">#</a></h3>
+<p>Once priority assets are identified, deployment should follow the hybrid pattern proven in Project Leap and endorsed by NCSC, ANSSI, BSI, and the G7 roadmap. A hybrid deployment runs a classical algorithm and a post-quantum algorithm in parallel, combining their outputs into a single envelope. The composite is secure against both classical attacks (the classical algorithm holds today) and quantum attacks (the PQC algorithm holds tomorrow). Specifically, the common pattern is X25519 combined with ML-KEM-768 or ML-KEM-1024 for key encapsulation, and ECDSA combined with ML-DSA for signatures where dual signatures are operationally feasible.</p>
+<p>The Project Leap finding that hybrid is &quot;much, much heavier&quot; than either pure approach is the honest counterweight to this recommendation. Boards should expect compute and storage capacity uplift, longer handshakes, and additional certificate-chain complexity during the transition. The trade-off is that hybrid removes the single largest source of migration risk: the cliff-edge cut-over from one cryptographic foundation to another in a production environment.</p>
+<h2 id="what-this-costs-and-why-doing-nothing-costs-more">What This Costs and Why Doing Nothing Costs More <a class="heading-anchor" href="#what-this-costs-and-why-doing-nothing-costs-more" aria-label="Ìjápọ̀ sí What This Costs and Why Doing Nothing Costs More">#</a></h2>
+<p>Mastercard's analysis, <a href="https://www.qnulabs.com/blog/bank-2030-expiry-date-q-day-fatal-strategy" title="Your Bank's 2030 Expiry — QNu Labs">reported in early 2026 ⧉</a>, put global financial-sector PQC migration cost at $28–42 billion. Within that aggregate, the <a href="https://www.cmorg.org.uk/sites/default/files/2025-06/CMORG%20-%20Guidance%20for%20Post-Quantum%20Cryptography%20-%20April%202025%20-%20TLP%20CLEAR%20(1).pdf" title="CMORG Guidance for Post-Quantum Cryptography">RedCompass Labs and CMORG research ⧉</a> tracking actual institutional spend suggests tier-one banks are committing $20–30 million annually to readiness programmes, with implementation timelines spanning multiple leadership cycles. These are substantial numbers. They are not, however, the relevant comparison.</p>
+<p>The relevant comparison is the cost of a single retrospective decryption event. For an institution whose harvested wire traffic, M&amp;A correspondence, or counterparty exposure data becomes readable to an adversary in 2032, the operational and reputational cost is not bounded by the migration capex line. It is bounded by the value of the underlying decade of strategic information — which, for any systemically important institution, is materially larger than any plausible migration budget. The G7 framing of cryptographic transition as a systemic risk-management issue rather than a technology upgrade is correct, and boards should engage with it on that basis.</p>
+<p>There is a second cost line worth separating. Migration to PQC is a forcing function for crypto-agility — the architectural capability to swap cryptographic algorithms without rebuilding the systems that depend on them. Most institutions do not currently have crypto-agility; their RSA and ECC dependencies are deeply embedded in PKIs, code-signing chains, vendor integrations, and bespoke protocols that have accumulated over decades. The investment in agility, made under the pressure of the PQC transition, is durable. It will be drawn upon again when the next cryptographic transition arrives — whether that is a successor to lattice-based PQC, a quantum-key-distribution overlay, or something not yet on the standards roadmap. Treated correctly, the PQC migration capex is a one-time investment that yields recurring optionality.</p>
+<h2 id="conclusion">Conclusion <a class="heading-anchor" href="#conclusion" aria-label="Ìjápọ̀ sí Conclusion">#</a></h2>
+<p>The case for treating post-quantum migration as a 2026 board-level priority is not built on the imminence of a CRQC. Estimates of that remain genuinely uncertain — credible scholarly opinion places the probability of a CRQC by 2028 at well under one per cent, rising to roughly fifty per cent by 2037–2040. The case is built on three other observations that are not uncertain.</p>
+<p>First, harvest-now-decrypt-later is happening today, and data with a decade-plus confidentiality requirement is exposed regardless of when the CRQC arrives. Second, migration of a major financial institution's cryptographic estate takes five to seven years even with adequate funding and leadership focus — meaning the programme begun in 2026 finishes around 2031, which is well within the conservative end of the CRQC probability distribution. Third, regulatory expectations have hardened materially in the last twelve months, and the institutions whose 2026 board minutes record a clear PQC programme will be in a meaningfully stronger position than those whose minutes record a watching brief.</p>
+<p>The institutions that begin now have the advantage of choice. They can sequence the work across leadership cycles, integrate it with broader resilience initiatives, and absorb the operational costs of hybrid deployment within normal capital planning. The institutions that wait will face the same work under tighter deadlines, with less scope for sequencing, and against the backdrop of supply constraints on PQC-capable hardware, expertise, and vendor capacity. The cost of acting early is known; the cost of acting late is asymmetric in precisely the way risk management is designed to avoid.</p>
+<p>For prior context on this site, the <a href="https://sebastienrousseau.com/yo/2026-04-11-quantum-thresholds-are-moving-again/index.html" title="Quantum Thresholds Are Moving Again">avril 2026 piece on quantum threshold compression</a> examined the underlying hardware trajectory, the <a href="https://sebastienrousseau.com/yo/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" title="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age">novembre 2023 analysis of CRYSTALS-Kyber</a> covered the mathematical foundations now standardised as ML-KEM, the <a href="https://sebastienrousseau.com/yo/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" title="Quantum Key Distribution Revolutionising Security in Banking">décembre 2023 article on Quantum Key Distribution</a> addressed the complementary <a href="/yo/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">QKD</a> overlay, and the <a href="https://sebastienrousseau.com/yo/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html" title="KyberLib: A Rust-Powered Shield Against Quantum Threats">KyberLib open-source reference implementation</a> provides a working Rust implementation of the underlying primitives for institutions wanting to inspect the cryptographic surface directly. Engagement with the practical and technical detail — not just the regulatory headlines — is how boards distinguish credible migration programmes from compliance theatre.</p>
+<h2 id="frequently-asked-questions" class="qa-headline">Questions? <span class="qa-headline-soft">Answers.</span></h2><section class="qa-list" aria-labelledby="frequently-asked-questions"><details class="qa-item"><summary class="qa-q">When will a cryptographically relevant quantum computer actually exist?</summary><section class="qa-a"><p>Credible estimates vary widely. As of early 2026, public quantum demonstrations have achieved roughly 24 to 28 logical qubits, while a CRQC is estimated to require approximately 6,000 logical qubits underpinned by something between 100,000 and several million physical qubits, depending on the error-correction approach. Expert consensus places CRQC probability under one per cent by 2028, around fifty per cent by 2037–2040, with significant variability across forecasts. Recent reductions in theoretical resource estimates — from 20 million qubits a few years ago to under one million in Gidney's 2025 work, and to approximately 100,000 in the février 2026 QLDPC architecture paper — have compressed the planning horizon. For board purposes, the appropriate planning assumption is mid-2030s for high-risk systems, end-2030s as a conservative midpoint, and earlier if HNDL exposure is the binding concern.</p></section></details><details class="qa-item"><summary class="qa-q">Why hybrid deployment rather than pure post-quantum?</summary><section class="qa-a"><p>Three reasons. First, ML-KEM and ML-DSA, while well-vetted, have shorter cryptanalytic histories than RSA and ECC. A hybrid scheme remains secure if either component holds; a pure PQC scheme is exposed if the lattice problem is unexpectedly weakened. Second, hybrid preserves backward compatibility with counterparties that have not yet migrated — critical in a multi-year industry transition. Third, every major authority outside the Australian Signals Directorate explicitly recommends hybrid for the transition period: NCSC, ANSSI, BSI, NLNCSA, and the G7 framework all endorse the dual-envelope approach. The trade-off, as Project Leap quantified, is meaningfully higher compute and storage overhead. That is the price of optionality.</p></section></details><details class="qa-item"><summary class="qa-q">Do we need both ML-KEM and ML-DSA, or can we choose one?</summary><section class="qa-a"><p>Both. ML-KEM and ML-DSA serve different cryptographic roles. ML-KEM replaces the key-establishment primitives in TLS, VPNs, mobile authentication, and similar protocols where two parties need to agree a shared symmetric key. ML-DSA replaces the digital-signature primitives in PKI certificates, code signing, document signing, SWIFT-style authenticated messaging, and identity assertions. An institution's cryptographic estate uses both kinds of primitive in different places; the migration must address both. ML-DSA's significantly larger signature size (50–70× ECDSA) is usually the more operationally demanding of the two; the network and storage planning work for ML-DSA dominates most migration capacity assessments.</p></section></details><details class="qa-item"><summary class="qa-q">How do we measure progress on a programme this large?</summary><section class="qa-a"><p>Three metrics are practical and align with the major regulatory frameworks. <strong>Coverage of the CBOM</strong> — what percentage of the institution's asymmetric cryptographic instances have been inventoried, classified, and tagged for migration priority. <strong>Migration coverage of high-risk assets</strong> — what percentage of assets where Mosca's S + M &gt; Q condition holds have been moved to hybrid PQC. <strong>Crypto-agility coverage</strong> — what percentage of cryptographic-dependency systems can swap algorithms without code changes, configuration-only. The G7 CEG roadmap, the NCSC three-phase framework, and the EU coordinated roadmap all map to roughly these three measures, even where they use different terminology.</p></section></details><details class="qa-item"><summary class="qa-q">What is the cost of waiting another year?</summary><section class="qa-a"><p>It is not zero, and it is not symmetric. Waiting one year forfeits a year of HNDL protection on long-lived data — data whose confidentiality requirement extends to 2040 is exposed for a year longer than necessary. It compresses the migration window against fixed regulatory deadlines (ASD 2030, NSA CNSA 2.0 milestones, EU 2030 critical-systems target), which translates into higher delivery risk and reduced sequencing flexibility. It exposes the institution to vendor and talent supply constraints that are already visible in the market and will worsen as the industry's largest players move from planning to execution. The cost is not catastrophic in any single year, but it compounds, and the regulatory environment is converging on a position where boards will be expected to explain the delay rather than the spend.</p></section></details></section><h2 id="references">References <a class="heading-anchor" href="#references" aria-label="Ìjápọ̀ sí References">#</a></h2>
+<ul>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/yo/2026-04-11-quantum-thresholds-are-moving-again/index.html" title="Quantum Thresholds Are Moving Again">Quantum Thresholds Are Moving Again</a>.</li>
+<li>Sebastien Rousseau, (2023). <a href="https://sebastienrousseau.com/yo/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html" title="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</a>.</li>
+<li>Sebastien Rousseau, (2023). <a href="https://sebastienrousseau.com/yo/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" title="Quantum Key Distribution Revolutionising Security in Banking">Quantum Key Distribution Revolutionising Security in Banking</a>.</li>
+<li>Sebastien Rousseau, (2023). <a href="https://sebastienrousseau.com/yo/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html" title="KyberLib: A Rust-Powered Shield Against Quantum Threats">KyberLib: A Rust-Powered Shield Against Quantum Threats</a>.</li>
+<li>G7 Cyber Expert Group, (2026). <a href="https://www.gov.uk/government/publications/advancing-a-coordinated-roadmap-for-the-transition-to-post-quantum-cryptography-in-the-financial-sector/g7-cyber-expert-group-statement-on-advancing-a-coordinated-roadmap-for-the-transition-to-post-quantum-cryptography-in-the-financial-sector-january-20" title="G7 CEG Statement, janvier 2026">Advancing a Coordinated Roadmap for the Transition to Post-Quantum Cryptography in the Financial Sector ⧉</a>. GOV.UK.</li>
+<li>Bank for International Settlements, (2025). <a href="https://www.bis.org/publ/othp107.htm" title="Project Leap phase 2: quantum-proofing payment systems">Project Leap Phase 2: Quantum-Proofing Payment Systems ⧉</a>. BIS.</li>
+<li>Bank for International Settlements, (2025). <a href="https://www.bis.org/about/bisih/topics/cyber_security/leap.htm" title="Project Leap: quantum-proofing the financial system">Project Leap: Quantum-Proofing the Financial System ⧉</a>. BIS.</li>
+<li>NIST, (2024). <a href="https://csrc.nist.gov/pubs/fips/203/final" title="FIPS 203, Module-Lattice-Based Key-Encapsulation Mechanism Standard">FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard ⧉</a>. NIST.</li>
+<li>UK NCSC, (2025). <a href="https://www.ncsc.gov.uk/guidance/pqc-migration-timelines" title="Timelines for migration to post-quantum cryptography — NCSC">Timelines for Migration to Post-Quantum Cryptography ⧉</a>. UK National Cyber Security Centre.</li>
+<li>CMORG, (2025). <a href="https://www.cmorg.org.uk/sites/default/files/2025-06/CMORG%20-%20Guidance%20for%20Post-Quantum%20Cryptography%20-%20April%202025%20-%20TLP%20CLEAR%20(1).pdf" title="CMORG Guidance for Post-Quantum Cryptography">Guidance for Post-Quantum Cryptography ⧉</a>. Cross-Market Operational Resilience Group.</li>
+<li>Post-Quantum Cryptography Coalition, (2025). <a href="https://pqcc.org/international-pqc-requirements/" title="International PQC Requirements — Post-Quantum Cryptography Coalition">International PQC Requirements ⧉</a>. PQCC.</li>
+<li>PQShield, (2025). <a href="https://pqshield.com/pqc-transition-roadmaps-and-guidance/" title="PQC Roadmaps and Transition Guidance">PQC Roadmaps and Transition Guidance ⧉</a>. PQShield.</li>
+<li>Banking.Vision, (2026). <a href="https://banking.vision/en/the-year-of-quantum-computing/" title="The Year of Quantum Computing 2026">The Year of Quantum Computing: 2026 ⧉</a>. Banking.Vision / msg for banking.</li>
+<li>The Quantum Insider, (2026). <a href="https://thequantuminsider.com/2026/01/15/how-to-prep-for-post-quantum-crytography-g7-releases-roadmap-to-help-financial-sector-navigate-transition-to-quantum-era/" title="How to Prep For Post-Quantum Cryptography — The Quantum Insider">How to Prep For Post-Quantum Cryptography: G7 Releases Roadmap ⧉</a>. The Quantum Insider.</li>
+<li>Quantum Computing Report, (2026). <a href="https://quantumcomputingreport.com/shor-qldpc-codes-and-the-compression-of-rsa-2048-resource-estimates-part-i/" title="Shor, QLDPC Codes, and the Compression of RSA-2048 Resource Estimates">Shor, QLDPC Codes, and the Compression of RSA-2048 Resource Estimates ⧉</a>. Quantum Computing Report.</li>
+<li>Cryptomathic, (2025). <a href="https://www.cryptomathic.com/a-bankers-guide-to-quantum-safe-cryptography-part-3-roadmap-to-pqc-migration-for-financial-institutions-cryptomathic" title="A Banker's Guide to Quantum Safe Cryptography">A Banker's Guide to Quantum Safe Cryptography — Roadmap to PQC Migration for Financial Institutions ⧉</a>. Cryptomathic.</li>
+<li>Forrester, (2025). <a href="https://www.forrester.com/press-newsroom/forrester-apac-2026-predictions/" title="Forrester's 2026 APAC Predictions">2026 Asia Pacific Predictions: Quantum Security ⧉</a>. Forrester Research.</li>
+<li>The Asian Banker, (2025). <a href="https://www.theasianbanker.com/updates-and-articles/building-resilience-for-a-quantum-ready-financial-system" title="Building resilience for a quantum-ready financial system">Building Resilience for a Quantum-Ready Financial System ⧉</a>. The Asian Banker.</li>
+</ul>
+<!-- enrich-start -->
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/yo/nipa-wa/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/yo/nipa-wa/index.html">Àkọsílẹ̀ kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Àyẹ̀wò àkọ́kọ́ <time datetime="2026-05-15">2026-05-15</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Ìwé tó jọmọ́</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2026-05-21-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="the-best-cloud-infrastructure-architecture-in-2026-an-ai-native-multi-cloud-quan"><a href="https://sebastienrousseau.com/yo/2026-05-21-best-cloud-infrastructure-architecture-2026">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a> <a class="heading-anchor" href="#the-best-cloud-infrastructure-architecture-in-2026-an-ai-native-multi-cloud-quan" aria-label="Ìjápọ̀ sí The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services">#</a></h3><p><time datetime="2026-05-21">2026-05-21</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2026-05-18-agentic-engineering-banks-blueprint-2026" class="related-media" aria-label="Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It" tabindex="-1"><img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="agentic-engineering-for-banks-a-2026-blueprint-for-the-c-suite-and-the-engineers"><a href="https://sebastienrousseau.com/yo/2026-05-18-agentic-engineering-banks-blueprint-2026">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a> <a class="heading-anchor" href="#agentic-engineering-for-banks-a-2026-blueprint-for-the-c-suite-and-the-engineers" aria-label="Ìjápọ̀ sí Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It">#</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2026-04-11-quantum-thresholds-are-moving-again" class="related-media" aria-label="Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk" tabindex="-1"><img alt="Shor's algorithm qubit threshold diagram. Quantum computing circuit board with blue light patterns" src="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="quantum-thresholds-are-moving-10-000-qubit-shor-risk"><a href="https://sebastienrousseau.com/yo/2026-04-11-quantum-thresholds-are-moving-again">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</a> <a class="heading-anchor" href="#quantum-thresholds-are-moving-10-000-qubit-shor-risk" aria-label="Ìjápọ̀ sí Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk">#</a></h3><p><time datetime="2026-04-11">2026-04-11</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/yo/nipa-wa/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ báńkì àgbà; mò ń kọ nípa AI tó wúlò, ìṣírò ISO 20022, kírípító lẹ́yìn-kuántọ́mù fún iṣẹ́ ìnáwó àti àtúnṣe ètò ìsanwó ńláńlá.</span><span class="author-credentials">Ìrírí ọdún 20+ ní HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/yo/nipa-wa/index.html">Àkọsílẹ̀ kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Àyẹ̀wò àkọ́kọ́ <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Ìwé tó jọmọ́</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2026-05-21-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="the-best-cloud-infrastructure-architecture-in-2026-an-ai-native-multi-cloud-quan-2"><a href="https://sebastienrousseau.com/yo/2026-05-21-best-cloud-infrastructure-architecture-2026">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a> <a class="heading-anchor" href="#the-best-cloud-infrastructure-architecture-in-2026-an-ai-native-multi-cloud-quan-2" aria-label="Ìjápọ̀ sí The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services">#</a></h3><p><time datetime="2026-05-21">2026-05-21</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2026-05-18-agentic-engineering-banks-blueprint-2026" class="related-media" aria-label="Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It" tabindex="-1"><img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="agentic-engineering-for-banks-a-2026-blueprint-for-the-c-suite-and-the-engineers-2"><a href="https://sebastienrousseau.com/yo/2026-05-18-agentic-engineering-banks-blueprint-2026">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a> <a class="heading-anchor" href="#agentic-engineering-for-banks-a-2026-blueprint-for-the-c-suite-and-the-engineers-2" aria-label="Ìjápọ̀ sí Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It">#</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2026-04-11-quantum-thresholds-are-moving-again" class="related-media" aria-label="Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk" tabindex="-1"><img alt="Shor's algorithm qubit threshold diagram. Quantum computing circuit board with blue light patterns" src="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="quantum-thresholds-are-moving-10-000-qubit-shor-risk-2"><a href="https://sebastienrousseau.com/yo/2026-04-11-quantum-thresholds-are-moving-again">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</a> <a class="heading-anchor" href="#quantum-thresholds-are-moving-10-000-qubit-shor-risk-2" aria-label="Ìjápọ̀ sí Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk">#</a></h3><p><time datetime="2026-04-11">2026-04-11</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Orisun & àyọ̀kà</h2><ol class="article-sources-list"><li><a href="https://www.bis.org/publ/othp107.htm" rel="external noopener nofollow"><span class="source-host">www.bis.org</span><span class="source-path">/publ/othp107.htm</span></a></li><li><a href="https://csrc.nist.gov/pubs/fips/203/final" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/pubs/fips/203/final</span></a></li><li><a href="https://www.bis.org/about/bisih/topics/cyber_security/leap.htm" rel="external noopener nofollow"><span class="source-host">www.bis.org</span><span class="source-path">/about/bisih/topics/cyber_security/leap.htm</span></a></li></ol></aside><nav class="post-pagination" aria-label="Ìpín àkọlé"><a class="post-pagination-prev" href="/yo/2026-05-12-iso-20022-pacs008-structured-address-deadline/"><span class="post-pagination-label">Tẹ́lẹ̀</span><span class="post-pagination-title">The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</span></a><a class="post-pagination-next" href="/yo/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/"><span class="post-pagination-label">Tókàn</span><span class="post-pagination-title">Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/yo/nipa-wa/index.html">About</a></li>
+              <li><a href="/yo/kan-si-wa/index.html">Contact</a></li>
+              <li><a href="/yo/static-site-generator-lo-ti-se/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Àkọsílẹ̀</h2>
+            <ul>
+              <li><a href="/yo/awon-akole/index.html">Articles</a></li>
+              <li><a href="/yo/awon-iwe/index.html">Papers</a></li>
+              <li><a href="/yo/awon-ami/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Iṣẹ́</h2>
+            <ul>
+              <li><a href="/yo/awon-ise/index.html">Projects</a></li>
+              <li><a href="/yo/akojopo-orin/index.html">Playlists</a></li>
+              <li><a href="/yo/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Kàn sí</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Ìforúkọsílẹ̀ ìwé ìròyìn">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — àwọn àkíyèsí ìwádìí lórí ìsanwó, AI àti kírípító lẹ́yìn-kuántọ́mù. Kò sí spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="iwo@banki.com.ng" />
+            <input type="hidden" name="_subject" value="Ìforúkọsílẹ̀ ìwé ìròyìn — sebastienrousseau.com" />
+            <button type="submit">Forúkọsílẹ̀</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. Gbogbo ẹtọ ti wa ni ipamọ.</span>
+          <div class="social" aria-label="Àwọn ọ̀nà àjọṣepọ̀">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau lórí Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau lórí LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau lórí Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau lórí YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/yo/ile-wiwole/index.html">Accessibility</a> ·
+            <a href="/yo/aabo-ikoko/index.html">Privacy</a> ·
+            <a href="/yo/awon-ofin/index.html">Terms</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"yo"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"yo"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":5143,"about":{"@type":"Thing","name":"post-quantum cryptography","sameAs":["https://en.wikipedia.org/wiki/Post-quantum_cryptography","https://www.wikidata.org/wiki/Q1364608","https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa/index.html"]},"headline":"Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance","description":"Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today's data expires.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp","width":"100vw","height":"100vh","caption":"Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA"},"url":"https://sebastienrousseau.com/yo/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/","datePublished":"2026-05-14T06:06:06+00:00","dateModified":"2026-05-14","inLanguage":"yo","keywords":"post-quantum cryptography, PQC migration, corporate banking, financial services, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204","articleSection":"Quantum","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/yo/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"yo"},"citation":[{"@type":"CreativeWork","url":"https://www.bis.org/publ/othp107.htm"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/pubs/fips/203/final"},{"@type":"CreativeWork","url":"https://www.bis.org/about/bisih/topics/cyber_security/leap.htm"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/yo/"},{"@type":"ListItem","position":3,"name":"Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance","item":"https://sebastienrousseau.com/yo/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Wá">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Wá</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Wá">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Wá nínú àwọn ìwé..." autocomplete="off" aria-label="Wá"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> tì</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> ríranlọ́wọ́</span><span><kbd>Enter</kbd> ṣí</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

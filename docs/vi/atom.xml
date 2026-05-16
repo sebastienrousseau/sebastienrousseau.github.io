@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="vi-VN">
+  <title>Sebastien Rousseau — Ấn bản tiếng Việt</title>
+  <link href="https://sebastienrousseau.com/vi/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://sebastienrousseau.com/vi/"/>
+  <id>https://sebastienrousseau.com/vi/</id>
+  <updated>2026-05-16T16:45:32+00:00</updated>
+  <entry>
+    <title>Kiến trúc hạ tầng đám mây tốt nhất cho ngân hàng 2026</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-21-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-21-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/</id>
+    <updated>2026-05-21T06:06:06+00:00</updated>
+    <published>2026-05-21T06:06:06+00:00</published>
+    <summary>Kiến trúc đám mây ngân hàng 2026: đa đám mây thực sự, chủ quyền dữ liệu, sẵn sàng quy định và tích hợp PQC.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Kỹ thuật agentic: bản thiết kế ngân hàng 2026</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-18-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-18-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026/</id>
+    <updated>2026-05-18T06:06:06+00:00</updated>
+    <published>2026-05-18T06:06:06+00:00</published>
+    <summary>Kỹ thuật agentic — sử dụng các tác tử AI tự chủ để hoàn thành các tác vụ phức tạp. Một bản thiết kế cho việc tích hợp vào hạ tầng ngân hàng.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Lợi suất ẩn: giải mã các hồ sơ BRSRV và BSTBL của BlackRock theo GENIUS Act</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-15-loi-suat-an-giai-ma-brsrv-bstbl-blackrock-genius-act/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-15-loi-suat-an-giai-ma-brsrv-bstbl-blackrock-genius-act/</id>
+    <updated>2026-05-15T06:06:06+00:00</updated>
+    <published>2026-05-15T06:06:06+00:00</published>
+    <summary>Stablecoin không thể trả lợi suất theo GENIUS Act. Hồ sơ BRSRV và BSTBL của BlackRock hé lộ giải pháp: một quỹ thị trường tiền tệ token hoá cung cấp lợi suất qua một đường ray tuân thủ kế bên.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Bảo mật sổ cái: chuyển đổi hậu lượng tử trong tài chính doanh nghiệp</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-14-bao-mat-so-cai-chuyen-doi-hau-luong-tu-tai-chinh-doanh-nghiep/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-14-bao-mat-so-cai-chuyen-doi-hau-luong-tu-tai-chinh-doanh-nghiep/</id>
+    <updated>2026-05-14T06:06:06+00:00</updated>
+    <published>2026-05-14T06:06:06+00:00</published>
+    <summary>Cách các nhóm treasury doanh nghiệp chuyển sang mật mã hậu lượng tử: kiểm kê, ưu tiên, thí điểm và triển khai sản xuất.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ISO 20022 pacs.008: hạn chót địa chỉ có cấu trúc</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-12-iso-20022-pacs008-han-chot-dia-chi-co-cau-truc/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-12-iso-20022-pacs008-han-chot-dia-chi-co-cau-truc/</id>
+    <updated>2026-05-12T06:06:06+00:00</updated>
+    <published>2026-05-12T06:06:06+00:00</published>
+    <summary>Từ tháng 11 năm 2026, SWIFT CBPR+ từ chối địa chỉ bưu chính không có cấu trúc trong tin nhắn thanh toán xuyên biên giới. Sáu tháng nữa, 65% pacs.008 vẫn không tuân thủ.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Bộ nhớ flash của Lucy, xem lại: điều Besson đã thấy về việc chuyển tri thức sang máy móc</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-11-lucy-besson-chuyen-giao-tri-thuc-ai-va-luong-tu/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-11-lucy-besson-chuyen-giao-tri-thuc-ai-va-luong-tu/</id>
+    <updated>2026-05-11T06:06:06+00:00</updated>
+    <published>2026-05-11T06:06:06+00:00</published>
+    <summary>Mười hai năm sau, Lucy của Luc Besson đọc kém hơn như khoa học giả và nhiều hơn như một thí nghiệm tư duy về điều gì xảy ra khi tri thức con người di cư sang các cơ sở phi sinh học. Trong kỷ nguyên LLM, qubit nguyên tử trung tính và mô phỏng não đầy đủ, ẩn dụ trung tâm của bộ phim đã già đi đáng chú ý tốt.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Ngưỡng lượng tử lại dịch chuyển</title>
+    <link href="https://sebastienrousseau.com/vi/2026-04-11-nguong-luong-tu-lai-dich-chuyen/"/>
+    <id>https://sebastienrousseau.com/vi/2026-04-11-nguong-luong-tu-lai-dich-chuyen/</id>
+    <updated>2026-04-11T06:06:06+00:00</updated>
+    <published>2026-04-11T06:06:06+00:00</published>
+    <summary>Một bài báo mới cho rằng thuật toán Shor có thể chạy với chỉ 10.000 qubit. Ngưỡng cho tính toán lượng tử liên quan đến mật mã đang giảm nhanh.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Thanh toán An toàn Lượng tử: Vì sao ngành thanh toán phải hành động ngay</title>
+    <link href="https://sebastienrousseau.com/vi/2025-09-01-thanh-toan-an-toan-luong-tu-epaa/"/>
+    <id>https://sebastienrousseau.com/vi/2025-09-01-thanh-toan-an-toan-luong-tu-epaa/</id>
+    <updated>2025-09-01T06:06:06+00:00</updated>
+    <published>2025-09-01T06:06:06+00:00</published>
+    <summary>Sách trắng EPAA về mối đe doạ cấu trúc mà tính toán lượng tử gây ra cho hạ tầng thanh toán và lý lẽ cho hành động phối hợp ngay bây giờ.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Lỗi được phát hiện trong thuật toán lượng tử cho mật mã dựa trên mạng tinh thể</title>
+    <link href="https://sebastienrousseau.com/vi/2024-04-22-loi-trong-thuat-toan-luong-tu-cho-mat-ma-dua-tren-mang-tinh-the/"/>
+    <id>https://sebastienrousseau.com/vi/2024-04-22-loi-trong-thuat-toan-luong-tu-cho-mat-ma-dua-tren-mang-tinh-the/</id>
+    <updated>2024-04-22T06:06:06+00:00</updated>
+    <published>2024-04-22T06:06:06+00:00</published>
+    <summary>Một lỗi đã được phát hiện trong thuật toán lượng tử của Yilei Chen cho LWE, tạm thời bảo vệ mật mã dựa trên mạng tinh thể và nhấn mạnh nhu cầu nghiên cứu liên tục.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Thuật toán lượng tử thách thức mật mã dựa trên mạng tinh thể</title>
+    <link href="https://sebastienrousseau.com/vi/2024-04-15-thuat-toan-luong-tu-thach-thuc-mat-ma-dua-tren-mang-tinh-the/"/>
+    <id>https://sebastienrousseau.com/vi/2024-04-15-thuat-toan-luong-tu-thach-thuc-mat-ma-dua-tren-mang-tinh-the/</id>
+    <updated>2024-04-15T06:06:06+00:00</updated>
+    <published>2024-04-15T06:06:06+00:00</published>
+    <summary>Một thuật toán lượng tử mới giải quyết vấn đề Lattice-LWE — cơ sở của CRYSTALS-Kyber. Điều này có ý nghĩa gì cho mật mã hậu lượng tử?</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>OpenVoice: đổi mới hàng đầu trong công nghệ nhân bản giọng nói</title>
+    <link href="https://sebastienrousseau.com/vi/2024-04-01-openvoice-doi-moi-hang-dau-trong-nhan-ban-giong-noi/"/>
+    <id>https://sebastienrousseau.com/vi/2024-04-01-openvoice-doi-moi-hang-dau-trong-nhan-ban-giong-noi/</id>
+    <updated>2024-04-01T06:06:06+00:00</updated>
+    <published>2024-04-01T06:06:06+00:00</published>
+    <summary>OpenVoice của MyShell mở khoá việc nhân bản giọng nói chất lượng cao từ một mẫu ngắn. Cách nó hoạt động, các trường hợp sử dụng và các vấn đề đạo đức.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Mã hoá hoàn toàn đồng cấu trong kỷ nguyên lượng tử ngân hàng</title>
+    <link href="https://sebastienrousseau.com/vi/2024-03-25-ma-hoa-hoan-toan-dong-cau-thoi-luong-tu-trong-ngan-hang/"/>
+    <id>https://sebastienrousseau.com/vi/2024-03-25-ma-hoa-hoan-toan-dong-cau-thoi-luong-tu-trong-ngan-hang/</id>
+    <updated>2024-03-25T06:06:06+00:00</updated>
+    <published>2024-03-25T06:06:06+00:00</published>
+    <summary>Cách mã hoá hoàn toàn đồng cấu (FHE) cách mạng hoá bảo mật dữ liệu trong ngân hàng và dịch vụ tài chính, bảo vệ quyền riêng tư trước các mối đe doạ thời lượng tử.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Thúc đẩy AI với LLM đa phương thức: bài học từ MM1</title>
+    <link href="https://sebastienrousseau.com/vi/2024-03-18-thuc-day-ai-voi-llm-da-phuong-thuc-bai-hoc-tu-mm1/"/>
+    <id>https://sebastienrousseau.com/vi/2024-03-18-thuc-day-ai-voi-llm-da-phuong-thuc-bai-hoc-tu-mm1/</id>
+    <updated>2024-03-18T06:06:06+00:00</updated>
+    <published>2024-03-18T06:06:06+00:00</published>
+    <summary>Phân tích bài báo MM1 của Apple — kiến trúc, chiến lược huấn luyện trước và các khả năng mới nổi của LLM đa phương thức.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Cách mạng hoá nhận dạng giọng nói thời gian thực trên macOS với OpenAI Whisper</title>
+    <link href="https://sebastienrousseau.com/vi/2024-03-12-cach-mang-nhan-dien-giong-noi-thoi-gian-thuc-tren-macos-voi-whisper/"/>
+    <id>https://sebastienrousseau.com/vi/2024-03-12-cach-mang-nhan-dien-giong-noi-thoi-gian-thuc-tren-macos-voi-whisper/</id>
+    <updated>2024-03-12T06:06:06+00:00</updated>
+    <published>2024-03-12T06:06:06+00:00</published>
+    <summary>Một hệ thống nhận dạng giọng nói thời gian thực trên macOS sử dụng OpenAI Whisper và Metal Performance Shaders để đạt độ trễ dưới một giây.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>RustLogs: thư viện ghi nhật ký nâng cao cho ứng dụng Rust</title>
+    <link href="https://sebastienrousseau.com/vi/2024-03-08-rustlogs-thu-vien-ghi-nhat-ky-nang-cao-cho-rust/"/>
+    <id>https://sebastienrousseau.com/vi/2024-03-08-rustlogs-thu-vien-ghi-nhat-ky-nang-cao-cho-rust/</id>
+    <updated>2024-03-08T06:06:06+00:00</updated>
+    <published>2024-03-08T06:06:06+00:00</published>
+    <summary>RustLogs — thư viện ghi nhật ký Rust cho ứng dụng cấp doanh nghiệp với ghi nhật ký có cấu trúc, đa kênh và an toàn về thread.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Le Chat của Mistral AI: một kỷ nguyên mới của AI đối thoại</title>
+    <link href="https://sebastienrousseau.com/vi/2024-03-04-le-chat-cua-mistral-ai-ky-nguyen-moi-cua-ai-doi-thoai/"/>
+    <id>https://sebastienrousseau.com/vi/2024-03-04-le-chat-cua-mistral-ai-ky-nguyen-moi-cua-ai-doi-thoai/</id>
+    <updated>2024-03-04T06:06:06+00:00</updated>
+    <published>2024-03-04T06:06:06+00:00</published>
+    <summary>Le Chat là chatbot từ Mistral AI, công ty AI hàng đầu của Pháp. Cách nó so sánh với ChatGPT và đâu là ý nghĩa của một LLM châu Âu chủ quyền.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Google Gemma: biến đổi phát triển AI mã nguồn mở</title>
+    <link href="https://sebastienrousseau.com/vi/2024-02-26-google-gemma-bien-doi-phat-trien-ai-ma-nguon-mo/"/>
+    <id>https://sebastienrousseau.com/vi/2024-02-26-google-gemma-bien-doi-phat-trien-ai-ma-nguon-mo/</id>
+    <updated>2024-02-26T06:06:06+00:00</updated>
+    <published>2024-02-26T06:06:06+00:00</published>
+    <summary>Gemma là họ mô hình ngôn ngữ mở của Google, được xây dựng từ cùng nghiên cứu với Gemini. Cách nó thay đổi bối cảnh AI mã nguồn mở.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Khám phá Gemini: cuộc cách mạng AI của Google được giải thích</title>
+    <link href="https://sebastienrousseau.com/vi/2024-02-19-kham-pha-gemini-cuoc-cach-mang-ai-cua-google/"/>
+    <id>https://sebastienrousseau.com/vi/2024-02-19-kham-pha-gemini-cuoc-cach-mang-ai-cua-google/</id>
+    <updated>2024-02-19T06:06:06+00:00</updated>
+    <published>2024-02-19T06:06:06+00:00</published>
+    <summary>Gemini là phản ứng của Google đối với GPT-4. Cách nó hoạt động, sự khác biệt và đâu là ý nghĩa của nó đối với ngành AI.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Đạo luật AI EU: định hình tương lai quản lý AI toàn cầu</title>
+    <link href="https://sebastienrousseau.com/vi/2024-02-13-dao-luat-ai-eu-dinh-hinh-quan-ly-ai-toan-cau/"/>
+    <id>https://sebastienrousseau.com/vi/2024-02-13-dao-luat-ai-eu-dinh-hinh-quan-ly-ai-toan-cau/</id>
+    <updated>2024-02-13T06:06:06+00:00</updated>
+    <published>2024-02-13T06:06:06+00:00</published>
+    <summary>Đạo luật AI EU thiết lập khung quy định cho các hệ thống AI. Cách nó hoạt động, ai bị ảnh hưởng và vì sao nó sẽ định hình quản lý AI toàn cầu.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Akande: trợ lý giọng nói cách mạng hoá hỗ trợ cá nhân và điều hành</title>
+    <link href="https://sebastienrousseau.com/vi/2024-02-12-akande-tro-ly-giong-noi-cach-mang-ho-tro-ca-nhan-va-dieu-hanh/"/>
+    <id>https://sebastienrousseau.com/vi/2024-02-12-akande-tro-ly-giong-noi-cach-mang-ho-tro-ca-nhan-va-dieu-hanh/</id>
+    <updated>2024-02-12T06:06:06+00:00</updated>
+    <published>2024-02-12T06:06:06+00:00</published>
+    <summary>Akande — trợ lý giọng nói tiên tiến sử dụng GPT của OpenAI cho tương tác tự nhiên, tóm tắt PDF và bộ nhớ đệm hiệu quả. Được xây dựng cho cả mục đích cá nhân và điều hành.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Cách mạng hoá quảng cáo: cách AI định hình tương lai</title>
+    <link href="https://sebastienrousseau.com/vi/2024-02-08-cach-mang-quang-cao-ai-dinh-hinh-tuong-lai/"/>
+    <id>https://sebastienrousseau.com/vi/2024-02-08-cach-mang-quang-cao-ai-dinh-hinh-tuong-lai/</id>
+    <updated>2024-02-08T06:06:06+00:00</updated>
+    <published>2024-02-08T06:06:06+00:00</published>
+    <summary>AI biến đổi từng giai đoạn của quảng cáo — sáng tạo, nhắm mục tiêu, tối ưu hoá, đo lường. Tổng quan các xu hướng và rủi ro cho marketers năm 2024.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Phân tích âm thanh, dịch và hiểu biết bằng AI</title>
+    <link href="https://sebastienrousseau.com/vi/2024-01-29-phan-tich-am-thanh-dich-va-hieu-biet-bang-ai/"/>
+    <id>https://sebastienrousseau.com/vi/2024-01-29-phan-tich-am-thanh-dich-va-hieu-biet-bang-ai/</id>
+    <updated>2024-01-29T06:06:06+00:00</updated>
+    <published>2024-01-29T06:06:06+00:00</published>
+    <summary>Cách các mô hình AI mới — Whisper, mô hình ngôn ngữ-âm thanh — biến âm thanh thành văn bản, dịch ngôn ngữ và trích xuất hiểu biết theo thời gian thực.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Tiến bộ trong kỹ thuật prompt AI</title>
+    <link href="https://sebastienrousseau.com/vi/2024-01-23-tien-bo-trong-ky-thuat-prompt-ai/"/>
+    <id>https://sebastienrousseau.com/vi/2024-01-23-tien-bo-trong-ky-thuat-prompt-ai/</id>
+    <updated>2024-01-23T06:06:06+00:00</updated>
+    <published>2024-01-23T06:06:06+00:00</published>
+    <summary>Kỹ thuật prompt đã trưởng thành thành một ngành kỹ thuật riêng. Các kỹ thuật mới — CoT, ReAct, RAG — giúp tối đa hoá giá trị từ các LLM.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Alien Studio: cách mạng nghệ thuật với nhiếp ảnh AI</title>
+    <link href="https://sebastienrousseau.com/vi/2024-01-15-alien-studio-cach-mang-nghe-thuat-voi-nhiep-anh-ai/"/>
+    <id>https://sebastienrousseau.com/vi/2024-01-15-alien-studio-cach-mang-nghe-thuat-voi-nhiep-anh-ai/</id>
+    <updated>2024-01-15T06:06:06+00:00</updated>
+    <published>2024-01-15T06:06:06+00:00</published>
+    <summary>Alien Studio khám phá nhiếp ảnh AI — cách các mô hình diffusion biến đổi sáng tạo nghệ thuật, từ ý tưởng đến hình ảnh hoàn thiện.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Tối ưu phân tích tỉ lệ tín dụng với IBM Qiskit và biến đổi Fourier lượng tử</title>
+    <link href="https://sebastienrousseau.com/vi/2024-01-08-toi-uu-phan-tich-ty-le-tin-dung-voi-ibm-qiskit-va-fourier-luong-tu/"/>
+    <id>https://sebastienrousseau.com/vi/2024-01-08-toi-uu-phan-tich-ty-le-tin-dung-voi-ibm-qiskit-va-fourier-luong-tu/</id>
+    <updated>2024-01-08T06:06:06+00:00</updated>
+    <published>2024-01-08T06:06:06+00:00</published>
+    <summary>Cách IBM Qiskit và biến đổi Fourier lượng tử định hình lại phân tích tỉ lệ tín dụng trong tài chính, mang lại độ chính xác và tốc độ chưa từng có.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Xu hướng AI 2024: phân tích và dự báo cho tương lai</title>
+    <link href="https://sebastienrousseau.com/vi/2024-01-01-xu-huong-ai-2024-phan-tich-va-du-bao/"/>
+    <id>https://sebastienrousseau.com/vi/2024-01-01-xu-huong-ai-2024-phan-tich-va-du-bao/</id>
+    <updated>2024-01-01T06:06:06+00:00</updated>
+    <published>2024-01-01T06:06:06+00:00</published>
+    <summary>Các xu hướng AI sẽ định hình 2024: mô hình đa phương thức, tác tử AI, quy định mới và sự hội tụ với tính toán lượng tử.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Cách mạng hoá tài chính với các thuật toán lượng tử tăng cường AI</title>
+    <link href="https://sebastienrousseau.com/vi/2023-12-25-cach-mang-tai-chinh-voi-thuat-toan-luong-tu-tang-cuong-ai/"/>
+    <id>https://sebastienrousseau.com/vi/2023-12-25-cach-mang-tai-chinh-voi-thuat-toan-luong-tu-tang-cuong-ai/</id>
+    <updated>2023-12-25T06:06:06+00:00</updated>
+    <published>2023-12-25T06:06:06+00:00</published>
+    <summary>Vai trò biến đổi của AI bên trong các thuật toán lượng tử cho tài chính: cấu trúc toán học, ứng dụng ngân hàng và triển vọng.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Tình hình AI và tính toán lượng tử trong ngân hàng: một bài đánh giá 2023</title>
+    <link href="https://sebastienrousseau.com/vi/2023-12-18-tinh-hinh-ai-va-tinh-toan-luong-tu-trong-ngan-hang-2023/"/>
+    <id>https://sebastienrousseau.com/vi/2023-12-18-tinh-hinh-ai-va-tinh-toan-luong-tu-trong-ngan-hang-2023/</id>
+    <updated>2023-12-18T06:06:06+00:00</updated>
+    <published>2023-12-18T06:06:06+00:00</published>
+    <summary>Đánh giá tình hình AI và tính toán lượng tử trong ngân hàng năm 2023 — các triển khai, đầu tư, thách thức và triển vọng cho 2024.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Phân phối Khoá Lượng tử: cách mạng an ninh trong ngân hàng</title>
+    <link href="https://sebastienrousseau.com/vi/2023-12-11-phan-phoi-khoa-luong-tu-cach-mang-an-ninh-ngan-hang/"/>
+    <id>https://sebastienrousseau.com/vi/2023-12-11-phan-phoi-khoa-luong-tu-cach-mang-an-ninh-ngan-hang/</id>
+    <updated>2023-12-11T06:06:06+00:00</updated>
+    <published>2023-12-11T06:06:06+00:00</published>
+    <summary>Quantum Key Distribution (QKD) cung cấp bảo mật được đảm bảo về mặt vật lý cho phân phối khoá. Cách nó hoạt động, đâu là giới hạn, và tại sao các ngân hàng nên quan tâm.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Làm chủ ngày và giờ trong Rust với thư viện DTT</title>
+    <link href="https://sebastienrousseau.com/vi/2023-12-04-lam-chu-ngay-va-gio-trong-rust-voi-thu-vien-dtt/"/>
+    <id>https://sebastienrousseau.com/vi/2023-12-04-lam-chu-ngay-va-gio-trong-rust-voi-thu-vien-dtt/</id>
+    <updated>2023-12-04T06:06:06+00:00</updated>
+    <published>2023-12-04T06:06:06+00:00</published>
+    <summary>DTT — thư viện Rust cho ngày, giờ, múi giờ, định dạng và parsing. Được thiết kế cho các ứng dụng tài chính và backend nghiêm túc về dữ liệu thời gian.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>KyberLib: lá chắn Rust chống các mối đe doạ lượng tử</title>
+    <link href="https://sebastienrousseau.com/vi/2023-11-28-kyberlib-la-chan-rust-chong-de-doa-luong-tu/"/>
+    <id>https://sebastienrousseau.com/vi/2023-11-28-kyberlib-la-chan-rust-chong-de-doa-luong-tu/</id>
+    <updated>2023-11-28T06:06:06+00:00</updated>
+    <published>2023-11-28T06:06:06+00:00</published>
+    <summary>KyberLib — triển khai Rust thuần tuý của CRYSTALS-Kyber (ML-KEM/FIPS 203) được tối ưu hoá cho hiệu năng, tính di động và an toàn bộ nhớ.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>CRYSTALS-Kyber: thuật toán bảo vệ trong thời lượng tử</title>
+    <link href="https://sebastienrousseau.com/vi/2023-11-19-crystals-kyber-thuat-toan-bao-ve-thoi-luong-tu/"/>
+    <id>https://sebastienrousseau.com/vi/2023-11-19-crystals-kyber-thuat-toan-bao-ve-thoi-luong-tu/</id>
+    <updated>2023-11-19T06:06:06+00:00</updated>
+    <published>2023-11-19T06:06:06+00:00</published>
+    <summary>CRYSTALS-Kyber là thuật toán đóng gói khoá kháng lượng tử được NIST lựa chọn. Cách thức hoạt động, vì sao nó quan trọng, và cách nó định hình lại mật mã.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Khám phá trí tuệ nhân tạo tạo sinh</title>
+    <link href="https://sebastienrousseau.com/vi/2023-11-12-kham-pha-tri-tue-nhan-tao-tao-sinh/"/>
+    <id>https://sebastienrousseau.com/vi/2023-11-12-kham-pha-tri-tue-nhan-tao-tao-sinh/</id>
+    <updated>2023-11-12T06:06:06+00:00</updated>
+    <published>2023-11-12T06:06:06+00:00</published>
+    <summary>AI tạo sinh giờ đây tạo ra văn bản, hình ảnh, mã và âm thanh ở cấp độ con người. Tổng quan các mô hình, kiến trúc và ứng dụng cho doanh nghiệp.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Hằng số toán học và mật mã cho bảo mật Rust</title>
+    <link href="https://sebastienrousseau.com/vi/2023-11-05-hang-so-toan-hoc-va-mat-ma-cho-rust/"/>
+    <id>https://sebastienrousseau.com/vi/2023-11-05-hang-so-toan-hoc-va-mat-ma-cho-rust/</id>
+    <updated>2023-11-05T06:06:06+00:00</updated>
+    <published>2023-11-05T06:06:06+00:00</published>
+    <summary>cmn — thư viện Rust cung cấp các hằng số toán học và mật mã với độ chính xác cao cho các ứng dụng tài chính và bảo mật.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>libmake: bộ sinh mã giảm tác vụ lặp lại và xây dựng thư viện Rust chất lượng cao</title>
+    <link href="https://sebastienrousseau.com/vi/2023-10-26-libmake-bo-sinh-ma-cho-thu-vien-rust/"/>
+    <id>https://sebastienrousseau.com/vi/2023-10-26-libmake-bo-sinh-ma-cho-thu-vien-rust/</id>
+    <updated>2023-10-26T06:06:06+00:00</updated>
+    <published>2023-10-26T06:06:06+00:00</published>
+    <summary>libmake — một CLI Rust tạo các thư viện Rust mới với cấu trúc tốt, kiểm thử, CI/CD và tài liệu sẵn sàng.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Bảo vệ dữ liệu thời lượng tử: thư viện băm hsh</title>
+    <link href="https://sebastienrousseau.com/vi/2023-10-16-bao-ve-du-lieu-thoi-luong-tu-thu-vien-bam-hsh/"/>
+    <id>https://sebastienrousseau.com/vi/2023-10-16-bao-ve-du-lieu-thoi-luong-tu-thu-vien-bam-hsh/</id>
+    <updated>2023-10-16T06:06:06+00:00</updated>
+    <published>2023-10-16T06:06:06+00:00</published>
+    <summary>hsh — thư viện Rust triển khai các thuật toán băm và digest an toàn, được thiết kế với tư thế kháng lượng tử cho kỷ nguyên xác thực hậu PQC.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Shokunin: bộ tạo trang tĩnh dựa trên Rust nhanh nhất</title>
+    <link href="https://sebastienrousseau.com/vi/2023-10-09-shokunin-bo-tao-trang-tinh-rust-nhanh-nhat/"/>
+    <id>https://sebastienrousseau.com/vi/2023-10-09-shokunin-bo-tao-trang-tinh-rust-nhanh-nhat/</id>
+    <updated>2023-10-09T06:06:06+00:00</updated>
+    <published>2023-10-09T06:06:06+00:00</published>
+    <summary>Shokunin là bộ tạo trang tĩnh viết bằng Rust, được tối ưu hoá cho hiệu năng, khả năng tiếp cận và SEO. Builds cực nhanh với hỗ trợ JSON-LD hạng nhất.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Tự động hoá tạo tệp thanh toán tuân thủ ISO 20022 với pain001</title>
+    <link href="https://sebastienrousseau.com/vi/2023-09-29-tu-dong-hoa-tep-thanh-toan-iso-20022-voi-pain001/"/>
+    <id>https://sebastienrousseau.com/vi/2023-09-29-tu-dong-hoa-tep-thanh-toan-iso-20022-voi-pain001/</id>
+    <updated>2023-09-29T06:06:06+00:00</updated>
+    <published>2023-09-29T06:06:06+00:00</published>
+    <summary>pain001 — thư viện Python tự động hoá việc tạo tệp thanh toán ISO 20022 pain.001 từ CSV hoặc SQLite, hỗ trợ chuyển đổi MT/MX trên SWIFT, SEPA và các sơ đồ lớn.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Xây dựng nền tảng Express Transaction Credits</title>
+    <link href="https://sebastienrousseau.com/vi/2018-02-15-xay-dung-nen-tang-express-transaction-credits/"/>
+    <id>https://sebastienrousseau.com/vi/2018-02-15-xay-dung-nen-tang-express-transaction-credits/</id>
+    <updated>2018-02-15T06:06:06+00:00</updated>
+    <published>2018-02-15T06:06:06+00:00</published>
+    <summary>Quá trình thiết kế và xây dựng Express Transaction Credits — các quyết định kỹ thuật, các trade-off và bài học rút ra.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Hé lộ một đồng tiền mã hoá mới và giải pháp thanh toán nhanh hơn cho tương lai</title>
+    <link href="https://sebastienrousseau.com/vi/2018-02-04-tien-ma-hoa-moi-va-giai-phap-thanh-toan-nhanh-hon/"/>
+    <id>https://sebastienrousseau.com/vi/2018-02-04-tien-ma-hoa-moi-va-giai-phap-thanh-toan-nhanh-hon/</id>
+    <updated>2018-02-04T06:06:06+00:00</updated>
+    <published>2018-02-04T06:06:06+00:00</published>
+    <summary>Hé lộ Express Transaction Credits — một đồng tiền mã hoá mới được thiết kế để giải quyết các giới hạn tốc độ của Bitcoin và Ethereum.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Tiêu chuẩn token ERC-20</title>
+    <link href="https://sebastienrousseau.com/vi/2018-01-24-tieu-chuan-token-erc-20/"/>
+    <id>https://sebastienrousseau.com/vi/2018-01-24-tieu-chuan-token-erc-20/</id>
+    <updated>2018-01-24T06:06:06+00:00</updated>
+    <published>2018-01-24T06:06:06+00:00</published>
+    <summary>ERC-20 đã chuẩn hoá việc tạo token trên Ethereum, mở khoá hàng nghìn dự án và nền tảng cho stablecoin, DeFi và token hoá tài sản thực.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Hiểu về công nghệ đằng sau blockchain</title>
+    <link href="https://sebastienrousseau.com/vi/2018-01-09-hieu-ve-cong-nghe-dang-sau-blockchain/"/>
+    <id>https://sebastienrousseau.com/vi/2018-01-09-hieu-ve-cong-nghe-dang-sau-blockchain/</id>
+    <updated>2018-01-09T06:06:06+00:00</updated>
+    <published>2018-01-09T06:06:06+00:00</published>
+    <summary>Cách blockchain hoạt động: băm mật mã, cây Merkle, cơ chế đồng thuận và mô hình kinh tế đảm bảo tính bất biến.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Blockchain: công nghệ quan trọng trong năm 2018</title>
+    <link href="https://sebastienrousseau.com/vi/2018-01-02-blockchain-cong-nghe-quan-trong-nam-2018/"/>
+    <id>https://sebastienrousseau.com/vi/2018-01-02-blockchain-cong-nghe-quan-trong-nam-2018/</id>
+    <updated>2018-01-02T06:06:06+00:00</updated>
+    <published>2018-01-02T06:06:06+00:00</published>
+    <summary>Blockchain định hình lại tin cậy số, hợp đồng thông minh và thanh toán xuyên biên giới — vì sao 2018 là năm bản lề cho hạ tầng tài chính.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Bitcoin: nhìn lại một năm của đồng tiền mã hoá đầu tiên</title>
+    <link href="https://sebastienrousseau.com/vi/2018-01-01-bitcoin-nhin-lai-mot-nam/"/>
+    <id>https://sebastienrousseau.com/vi/2018-01-01-bitcoin-nhin-lai-mot-nam/</id>
+    <updated>2018-01-01T06:06:06+00:00</updated>
+    <published>2018-01-01T06:06:06+00:00</published>
+    <summary>Bitcoin: một hệ thống tiền mặt điện tử ngang hàng (P2P ECS) có khả năng cách mạng hoá cách mọi người giao dịch trực tuyến.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+</feed>

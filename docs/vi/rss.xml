@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sebastien Rousseau — Ấn bản tiếng Việt</title>
+    <link>https://sebastienrousseau.com/vi/</link>
+    <description>Bài viết tiếng Việt: AI ứng dụng, thanh toán ISO 20022, mật mã hậu lượng tử và chuyển đổi thanh toán bán buôn.</description>
+    <atom:link href="https://sebastienrousseau.com/vi/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>vi-VN</language>
+    <lastBuildDate>Sat, 16 May 2026 16:45:32 +0000</lastBuildDate>
+    <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Đã đăng ký bản quyền.</copyright>
+    <item>
+      <title>Kiến trúc hạ tầng đám mây tốt nhất cho ngân hàng 2026</title>
+      <link>https://sebastienrousseau.com/vi/2026-05-21-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/</link>
+      <description>Kiến trúc đám mây ngân hàng 2026: đa đám mây thực sự, chủ quyền dữ liệu, sẵn sàng quy định và tích hợp PQC.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-21-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/</guid>
+      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/cloud-banking-banner.webp" type="image/webp" length="0"/>
+      <category>đám mây</category>
+      <category>ngân hàng</category>
+      <category>đa đám mây</category>
+      <category>chủ quyền</category>
+      <category>DORA</category>
+      <category>quy định</category>
+      <category>hạ tầng</category>
+      <category>PQC</category>
+      <category>Kubernetes</category>
+      <category>2026</category>
+    </item>
+    <item>
+      <title>Kỹ thuật agentic: bản thiết kế ngân hàng 2026</title>
+      <link>https://sebastienrousseau.com/vi/2026-05-18-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026/</link>
+      <description>Kỹ thuật agentic — sử dụng các tác tử AI tự chủ để hoàn thành các tác vụ phức tạp. Một bản thiết kế cho việc tích hợp vào hạ tầng ngân hàng.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-18-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026/</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/agentic-banking-banner.webp" type="image/webp" length="0"/>
+      <category>tác tử AI</category>
+      <category>kỹ thuật agentic</category>
+      <category>ngân hàng</category>
+      <category>tự động hoá</category>
+      <category>Claude</category>
+      <category>GPT</category>
+      <category>MCP</category>
+      <category>hành động</category>
+      <category>2026</category>
+    </item>
+    <item>
+      <title>Lợi suất ẩn: giải mã các hồ sơ BRSRV và BSTBL của BlackRock theo GENIUS Act</title>
+      <link>https://sebastienrousseau.com/vi/2026-05-15-loi-suat-an-giai-ma-brsrv-bstbl-blackrock-genius-act/</link>
+      <description>Stablecoin không thể trả lợi suất theo GENIUS Act. Hồ sơ BRSRV và BSTBL của BlackRock hé lộ giải pháp: một quỹ thị trường tiền tệ token hoá cung cấp lợi suất qua một đường ray tuân thủ kế bên.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-15-loi-suat-an-giai-ma-brsrv-bstbl-blackrock-genius-act/</guid>
+      <pubDate>Fri, 15 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/blackrock-genius-banner.webp" type="image/webp" length="0"/>
+      <category>BlackRock</category>
+      <category>GENIUS Act</category>
+      <category>BRSRV</category>
+      <category>BSTBL</category>
+      <category>stablecoin</category>
+      <category>lợi suất</category>
+      <category>MMF token hoá</category>
+      <category>BUIDL</category>
+      <category>USD1</category>
+      <category>quy định</category>
+    </item>
+    <item>
+      <title>Bảo mật sổ cái: chuyển đổi hậu lượng tử trong tài chính doanh nghiệp</title>
+      <link>https://sebastienrousseau.com/vi/2026-05-14-bao-mat-so-cai-chuyen-doi-hau-luong-tu-tai-chinh-doanh-nghiep/</link>
+      <description>Cách các nhóm treasury doanh nghiệp chuyển sang mật mã hậu lượng tử: kiểm kê, ưu tiên, thí điểm và triển khai sản xuất.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-14-bao-mat-so-cai-chuyen-doi-hau-luong-tu-tai-chinh-doanh-nghiep/</guid>
+      <pubDate>Thu, 14 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/treasury-pqc-banner.webp" type="image/webp" length="0"/>
+      <category>PQC</category>
+      <category>hậu lượng tử</category>
+      <category>treasury</category>
+      <category>tài chính doanh nghiệp</category>
+      <category>sổ cái</category>
+      <category>chuyển đổi</category>
+      <category>kiểm kê</category>
+      <category>NIST</category>
+      <category>Kyber</category>
+    </item>
+    <item>
+      <title>ISO 20022 pacs.008: hạn chót địa chỉ có cấu trúc</title>
+      <link>https://sebastienrousseau.com/vi/2026-05-12-iso-20022-pacs008-han-chot-dia-chi-co-cau-truc/</link>
+      <description>Từ tháng 11 năm 2026, SWIFT CBPR+ từ chối địa chỉ bưu chính không có cấu trúc trong tin nhắn thanh toán xuyên biên giới. Sáu tháng nữa, 65% pacs.008 vẫn không tuân thủ.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-12-iso-20022-pacs008-han-chot-dia-chi-co-cau-truc/</guid>
+      <pubDate>Tue, 12 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/pacs008-deadline-banner.webp" type="image/webp" length="0"/>
+      <category>ISO 20022</category>
+      <category>pacs.008</category>
+      <category>CBPR+</category>
+      <category>SWIFT</category>
+      <category>địa chỉ có cấu trúc</category>
+      <category>thanh toán xuyên biên giới</category>
+      <category>tuân thủ</category>
+      <category>2026</category>
+    </item>
+    <item>
+      <title>Bộ nhớ flash của Lucy, xem lại: điều Besson đã thấy về việc chuyển tri thức sang máy móc</title>
+      <link>https://sebastienrousseau.com/vi/2026-05-11-lucy-besson-chuyen-giao-tri-thuc-ai-va-luong-tu/</link>
+      <description>Mười hai năm sau, Lucy của Luc Besson đọc kém hơn như khoa học giả và nhiều hơn như một thí nghiệm tư duy về điều gì xảy ra khi tri thức con người di cư sang các cơ sở phi sinh học. Trong kỷ nguyên LLM, qubit nguyên tử trung tính và mô phỏng não đầy đủ, ẩn dụ trung tâm của bộ phim đã già đi đáng chú ý tốt.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-11-lucy-besson-chuyen-giao-tri-thuc-ai-va-luong-tu/</guid>
+      <pubDate>Mon, 11 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" type="image/webp" length="0"/>
+      <category>Lucy</category>
+      <category>Luc Besson</category>
+      <category>chuyển giao tri thức</category>
+      <category>AI</category>
+      <category>LLM</category>
+      <category>qubit nguyên tử trung tính</category>
+      <category>mô phỏng não</category>
+      <category>Neuralink</category>
+      <category>Eon Systems</category>
+      <category>Carboncopies</category>
+      <category>Fromm</category>
+      <category>độc lập cơ sở</category>
+      <category>triết học AI</category>
+    </item>
+    <item>
+      <title>Ngưỡng lượng tử lại dịch chuyển</title>
+      <link>https://sebastienrousseau.com/vi/2026-04-11-nguong-luong-tu-lai-dich-chuyen/</link>
+      <description>Một bài báo mới cho rằng thuật toán Shor có thể chạy với chỉ 10.000 qubit. Ngưỡng cho tính toán lượng tử liên quan đến mật mã đang giảm nhanh.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-04-11-nguong-luong-tu-lai-dich-chuyen/</guid>
+      <pubDate>Sat, 11 Apr 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-thresholds-banner.webp" type="image/webp" length="0"/>
+      <category>Shor</category>
+      <category>qubit</category>
+      <category>lượng tử</category>
+      <category>mật mã</category>
+      <category>RSA</category>
+      <category>hậu lượng tử</category>
+      <category>ngưỡng</category>
+      <category>10000 qubit</category>
+      <category>Fujitsu</category>
+      <category>Riken</category>
+    </item>
+    <item>
+      <title>Thanh toán An toàn Lượng tử: Vì sao ngành thanh toán phải hành động ngay</title>
+      <link>https://sebastienrousseau.com/vi/2025-09-01-thanh-toan-an-toan-luong-tu-epaa/</link>
+      <description>Sách trắng EPAA về mối đe doạ cấu trúc mà tính toán lượng tử gây ra cho hạ tầng thanh toán và lý lẽ cho hành động phối hợp ngay bây giờ.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2025-09-01-thanh-toan-an-toan-luong-tu-epaa/</guid>
+      <pubDate>Mon, 01 Sep 2025 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/epaa-banner.webp" type="image/webp" length="0"/>
+      <category>EPAA</category>
+      <category>sách trắng</category>
+      <category>thanh toán</category>
+      <category>lượng tử</category>
+      <category>an toàn lượng tử</category>
+      <category>PQC</category>
+      <category>hậu lượng tử</category>
+      <category>hành động phối hợp</category>
+    </item>
+    <item>
+      <title>Lỗi được phát hiện trong thuật toán lượng tử cho mật mã dựa trên mạng tinh thể</title>
+      <link>https://sebastienrousseau.com/vi/2024-04-22-loi-trong-thuat-toan-luong-tu-cho-mat-ma-dua-tren-mang-tinh-the/</link>
+      <description>Một lỗi đã được phát hiện trong thuật toán lượng tử của Yilei Chen cho LWE, tạm thời bảo vệ mật mã dựa trên mạng tinh thể và nhấn mạnh nhu cầu nghiên cứu liên tục.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-04-22-loi-trong-thuat-toan-luong-tu-cho-mat-ma-dua-tren-mang-tinh-the/</guid>
+      <pubDate>Mon, 22 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lattice-secure-banner.webp" type="image/webp" length="0"/>
+      <category>LWE</category>
+      <category>mạng tinh thể</category>
+      <category>mật mã</category>
+      <category>Chen</category>
+      <category>Kyber</category>
+      <category>PQC</category>
+      <category>hậu lượng tử</category>
+      <category>an toàn</category>
+    </item>
+    <item>
+      <title>Thuật toán lượng tử thách thức mật mã dựa trên mạng tinh thể</title>
+      <link>https://sebastienrousseau.com/vi/2024-04-15-thuat-toan-luong-tu-thach-thuc-mat-ma-dua-tren-mang-tinh-the/</link>
+      <description>Một thuật toán lượng tử mới giải quyết vấn đề Lattice-LWE — cơ sở của CRYSTALS-Kyber. Điều này có ý nghĩa gì cho mật mã hậu lượng tử?</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-04-15-thuat-toan-luong-tu-thach-thuc-mat-ma-dua-tren-mang-tinh-the/</guid>
+      <pubDate>Mon, 15 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lattice-quantum-banner.webp" type="image/webp" length="0"/>
+      <category>mạng tinh thể</category>
+      <category>LWE</category>
+      <category>lượng tử</category>
+      <category>Yilei Chen</category>
+      <category>PQC</category>
+      <category>Kyber</category>
+      <category>mật mã</category>
+      <category>hậu lượng tử</category>
+    </item>
+    <item>
+      <title>OpenVoice: đổi mới hàng đầu trong công nghệ nhân bản giọng nói</title>
+      <link>https://sebastienrousseau.com/vi/2024-04-01-openvoice-doi-moi-hang-dau-trong-nhan-ban-giong-noi/</link>
+      <description>OpenVoice của MyShell mở khoá việc nhân bản giọng nói chất lượng cao từ một mẫu ngắn. Cách nó hoạt động, các trường hợp sử dụng và các vấn đề đạo đức.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-04-01-openvoice-doi-moi-hang-dau-trong-nhan-ban-giong-noi/</guid>
+      <pubDate>Mon, 01 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/openvoice-banner.webp" type="image/webp" length="0"/>
+      <category>OpenVoice</category>
+      <category>nhân bản giọng nói</category>
+      <category>TTS</category>
+      <category>MyShell</category>
+      <category>AI</category>
+      <category>deepfake</category>
+      <category>đạo đức</category>
+      <category>hỗ trợ tiếp cận</category>
+    </item>
+    <item>
+      <title>Mã hoá hoàn toàn đồng cấu trong kỷ nguyên lượng tử ngân hàng</title>
+      <link>https://sebastienrousseau.com/vi/2024-03-25-ma-hoa-hoan-toan-dong-cau-thoi-luong-tu-trong-ngan-hang/</link>
+      <description>Cách mã hoá hoàn toàn đồng cấu (FHE) cách mạng hoá bảo mật dữ liệu trong ngân hàng và dịch vụ tài chính, bảo vệ quyền riêng tư trước các mối đe doạ thời lượng tử.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-03-25-ma-hoa-hoan-toan-dong-cau-thoi-luong-tu-trong-ngan-hang/</guid>
+      <pubDate>Mon, 25 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/fhe-banner.webp" type="image/webp" length="0"/>
+      <category>FHE</category>
+      <category>mã hoá đồng cấu</category>
+      <category>mật mã</category>
+      <category>ngân hàng</category>
+      <category>quyền riêng tư</category>
+      <category>lattice</category>
+      <category>mạng tinh thể</category>
+      <category>hậu lượng tử</category>
+    </item>
+    <item>
+      <title>Thúc đẩy AI với LLM đa phương thức: bài học từ MM1</title>
+      <link>https://sebastienrousseau.com/vi/2024-03-18-thuc-day-ai-voi-llm-da-phuong-thuc-bai-hoc-tu-mm1/</link>
+      <description>Phân tích bài báo MM1 của Apple — kiến trúc, chiến lược huấn luyện trước và các khả năng mới nổi của LLM đa phương thức.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-03-18-thuc-day-ai-voi-llm-da-phuong-thuc-bai-hoc-tu-mm1/</guid>
+      <pubDate>Mon, 18 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/mm1-banner.webp" type="image/webp" length="0"/>
+      <category>MM1</category>
+      <category>Apple</category>
+      <category>LLM</category>
+      <category>đa phương thức</category>
+      <category>hình ảnh</category>
+      <category>văn bản</category>
+      <category>học máy</category>
+      <category>kiến trúc</category>
+      <category>huấn luyện trước</category>
+    </item>
+    <item>
+      <title>Cách mạng hoá nhận dạng giọng nói thời gian thực trên macOS với OpenAI Whisper</title>
+      <link>https://sebastienrousseau.com/vi/2024-03-12-cach-mang-nhan-dien-giong-noi-thoi-gian-thuc-tren-macos-voi-whisper/</link>
+      <description>Một hệ thống nhận dạng giọng nói thời gian thực trên macOS sử dụng OpenAI Whisper và Metal Performance Shaders để đạt độ trễ dưới một giây.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-03-12-cach-mang-nhan-dien-giong-noi-thoi-gian-thuc-tren-macos-voi-whisper/</guid>
+      <pubDate>Tue, 12 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/whisper-macos-banner.webp" type="image/webp" length="0"/>
+      <category>Whisper</category>
+      <category>macOS</category>
+      <category>Metal</category>
+      <category>Apple Silicon</category>
+      <category>nhận dạng giọng nói</category>
+      <category>thời gian thực</category>
+      <category>OpenAI</category>
+      <category>M1</category>
+      <category>M2</category>
+    </item>
+    <item>
+      <title>RustLogs: thư viện ghi nhật ký nâng cao cho ứng dụng Rust</title>
+      <link>https://sebastienrousseau.com/vi/2024-03-08-rustlogs-thu-vien-ghi-nhat-ky-nang-cao-cho-rust/</link>
+      <description>RustLogs — thư viện ghi nhật ký Rust cho ứng dụng cấp doanh nghiệp với ghi nhật ký có cấu trúc, đa kênh và an toàn về thread.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-03-08-rustlogs-thu-vien-ghi-nhat-ky-nang-cao-cho-rust/</guid>
+      <pubDate>Fri, 08 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/rustlogs-banner.webp" type="image/webp" length="0"/>
+      <category>RustLogs</category>
+      <category>Rust</category>
+      <category>ghi nhật ký</category>
+      <category>có cấu trúc</category>
+      <category>JSON</category>
+      <category>hiệu năng</category>
+      <category>doanh nghiệp</category>
+      <category>quan sát</category>
+    </item>
+    <item>
+      <title>Le Chat của Mistral AI: một kỷ nguyên mới của AI đối thoại</title>
+      <link>https://sebastienrousseau.com/vi/2024-03-04-le-chat-cua-mistral-ai-ky-nguyen-moi-cua-ai-doi-thoai/</link>
+      <description>Le Chat là chatbot từ Mistral AI, công ty AI hàng đầu của Pháp. Cách nó so sánh với ChatGPT và đâu là ý nghĩa của một LLM châu Âu chủ quyền.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-03-04-le-chat-cua-mistral-ai-ky-nguyen-moi-cua-ai-doi-thoai/</guid>
+      <pubDate>Mon, 04 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/mistral-banner.webp" type="image/webp" length="0"/>
+      <category>Le Chat</category>
+      <category>Mistral AI</category>
+      <category>châu Âu</category>
+      <category>LLM</category>
+      <category>ChatGPT</category>
+      <category>AI chủ quyền</category>
+      <category>Pháp</category>
+      <category>mã nguồn mở</category>
+    </item>
+    <item>
+      <title>Google Gemma: biến đổi phát triển AI mã nguồn mở</title>
+      <link>https://sebastienrousseau.com/vi/2024-02-26-google-gemma-bien-doi-phat-trien-ai-ma-nguon-mo/</link>
+      <description>Gemma là họ mô hình ngôn ngữ mở của Google, được xây dựng từ cùng nghiên cứu với Gemini. Cách nó thay đổi bối cảnh AI mã nguồn mở.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-02-26-google-gemma-bien-doi-phat-trien-ai-ma-nguon-mo/</guid>
+      <pubDate>Mon, 26 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/gemma-banner.webp" type="image/webp" length="0"/>
+      <category>Gemma</category>
+      <category>Google</category>
+      <category>AI mã nguồn mở</category>
+      <category>LLM</category>
+      <category>Llama</category>
+      <category>Mistral</category>
+      <category>mô hình mở</category>
+      <category>phát triển</category>
+    </item>
+    <item>
+      <title>Khám phá Gemini: cuộc cách mạng AI của Google được giải thích</title>
+      <link>https://sebastienrousseau.com/vi/2024-02-19-kham-pha-gemini-cuoc-cach-mang-ai-cua-google/</link>
+      <description>Gemini là phản ứng của Google đối với GPT-4. Cách nó hoạt động, sự khác biệt và đâu là ý nghĩa của nó đối với ngành AI.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-02-19-kham-pha-gemini-cuoc-cach-mang-ai-cua-google/</guid>
+      <pubDate>Mon, 19 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/gemini-banner.webp" type="image/webp" length="0"/>
+      <category>Gemini</category>
+      <category>Google</category>
+      <category>AI</category>
+      <category>LLM</category>
+      <category>đa phương thức</category>
+      <category>GPT-4</category>
+      <category>cạnh tranh</category>
+      <category>mô hình ngôn ngữ</category>
+    </item>
+    <item>
+      <title>Đạo luật AI EU: định hình tương lai quản lý AI toàn cầu</title>
+      <link>https://sebastienrousseau.com/vi/2024-02-13-dao-luat-ai-eu-dinh-hinh-quan-ly-ai-toan-cau/</link>
+      <description>Đạo luật AI EU thiết lập khung quy định cho các hệ thống AI. Cách nó hoạt động, ai bị ảnh hưởng và vì sao nó sẽ định hình quản lý AI toàn cầu.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-02-13-dao-luat-ai-eu-dinh-hinh-quan-ly-ai-toan-cau/</guid>
+      <pubDate>Tue, 13 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/eu-ai-act-banner.webp" type="image/webp" length="0"/>
+      <category>Đạo luật AI EU</category>
+      <category>quy định AI</category>
+      <category>AI có trách nhiệm</category>
+      <category>GDPR</category>
+      <category>tuân thủ</category>
+      <category>quản trị AI</category>
+      <category>ngân hàng</category>
+    </item>
+    <item>
+      <title>Akande: trợ lý giọng nói cách mạng hoá hỗ trợ cá nhân và điều hành</title>
+      <link>https://sebastienrousseau.com/vi/2024-02-12-akande-tro-ly-giong-noi-cach-mang-ho-tro-ca-nhan-va-dieu-hanh/</link>
+      <description>Akande — trợ lý giọng nói tiên tiến sử dụng GPT của OpenAI cho tương tác tự nhiên, tóm tắt PDF và bộ nhớ đệm hiệu quả. Được xây dựng cho cả mục đích cá nhân và điều hành.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-02-12-akande-tro-ly-giong-noi-cach-mang-ho-tro-ca-nhan-va-dieu-hanh/</guid>
+      <pubDate>Mon, 12 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/akande-banner.webp" type="image/webp" length="0"/>
+      <category>Akande</category>
+      <category>trợ lý giọng nói</category>
+      <category>AI</category>
+      <category>GPT</category>
+      <category>OpenAI</category>
+      <category>tóm tắt PDF</category>
+      <category>năng suất</category>
+      <category>mã nguồn mở</category>
+    </item>
+    <item>
+      <title>Cách mạng hoá quảng cáo: cách AI định hình tương lai</title>
+      <link>https://sebastienrousseau.com/vi/2024-02-08-cach-mang-quang-cao-ai-dinh-hinh-tuong-lai/</link>
+      <description>AI biến đổi từng giai đoạn của quảng cáo — sáng tạo, nhắm mục tiêu, tối ưu hoá, đo lường. Tổng quan các xu hướng và rủi ro cho marketers năm 2024.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-02-08-cach-mang-quang-cao-ai-dinh-hinh-tuong-lai/</guid>
+      <pubDate>Thu, 08 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-advertising-banner.webp" type="image/webp" length="0"/>
+      <category>AI</category>
+      <category>quảng cáo</category>
+      <category>marketing</category>
+      <category>cá nhân hoá</category>
+      <category>sáng tạo</category>
+      <category>nhắm mục tiêu</category>
+      <category>đo lường</category>
+      <category>marketing tự động</category>
+    </item>
+    <item>
+      <title>Phân tích âm thanh, dịch và hiểu biết bằng AI</title>
+      <link>https://sebastienrousseau.com/vi/2024-01-29-phan-tich-am-thanh-dich-va-hieu-biet-bang-ai/</link>
+      <description>Cách các mô hình AI mới — Whisper, mô hình ngôn ngữ-âm thanh — biến âm thanh thành văn bản, dịch ngôn ngữ và trích xuất hiểu biết theo thời gian thực.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-01-29-phan-tich-am-thanh-dich-va-hieu-biet-bang-ai/</guid>
+      <pubDate>Mon, 29 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/audio-ai-banner.webp" type="image/webp" length="0"/>
+      <category>AI</category>
+      <category>âm thanh</category>
+      <category>nhận dạng giọng nói</category>
+      <category>Whisper</category>
+      <category>dịch</category>
+      <category>hiểu biết</category>
+      <category>phân tích</category>
+      <category>ngân hàng</category>
+      <category>dịch vụ khách hàng</category>
+    </item>
+    <item>
+      <title>Tiến bộ trong kỹ thuật prompt AI</title>
+      <link>https://sebastienrousseau.com/vi/2024-01-23-tien-bo-trong-ky-thuat-prompt-ai/</link>
+      <description>Kỹ thuật prompt đã trưởng thành thành một ngành kỹ thuật riêng. Các kỹ thuật mới — CoT, ReAct, RAG — giúp tối đa hoá giá trị từ các LLM.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-01-23-tien-bo-trong-ky-thuat-prompt-ai/</guid>
+      <pubDate>Tue, 23 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/prompt-engineering-banner.webp" type="image/webp" length="0"/>
+      <category>kỹ thuật prompt</category>
+      <category>LLM</category>
+      <category>chain of thought</category>
+      <category>ReAct</category>
+      <category>RAG</category>
+      <category>few-shot</category>
+      <category>GPT</category>
+      <category>Claude</category>
+    </item>
+    <item>
+      <title>Alien Studio: cách mạng nghệ thuật với nhiếp ảnh AI</title>
+      <link>https://sebastienrousseau.com/vi/2024-01-15-alien-studio-cach-mang-nghe-thuat-voi-nhiep-anh-ai/</link>
+      <description>Alien Studio khám phá nhiếp ảnh AI — cách các mô hình diffusion biến đổi sáng tạo nghệ thuật, từ ý tưởng đến hình ảnh hoàn thiện.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-01-15-alien-studio-cach-mang-nghe-thuat-voi-nhiep-anh-ai/</guid>
+      <pubDate>Mon, 15 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alien-studio-banner.webp" type="image/webp" length="0"/>
+      <category>AI</category>
+      <category>nhiếp ảnh</category>
+      <category>diffusion</category>
+      <category>Stable Diffusion</category>
+      <category>Midjourney</category>
+      <category>DALL-E</category>
+      <category>nghệ thuật</category>
+      <category>sáng tạo</category>
+    </item>
+    <item>
+      <title>Tối ưu phân tích tỉ lệ tín dụng với IBM Qiskit và biến đổi Fourier lượng tử</title>
+      <link>https://sebastienrousseau.com/vi/2024-01-08-toi-uu-phan-tich-ty-le-tin-dung-voi-ibm-qiskit-va-fourier-luong-tu/</link>
+      <description>Cách IBM Qiskit và biến đổi Fourier lượng tử định hình lại phân tích tỉ lệ tín dụng trong tài chính, mang lại độ chính xác và tốc độ chưa từng có.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-01-08-toi-uu-phan-tich-ty-le-tin-dung-voi-ibm-qiskit-va-fourier-luong-tu/</guid>
+      <pubDate>Mon, 08 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/qiskit-banner.webp" type="image/webp" length="0"/>
+      <category>IBM Qiskit</category>
+      <category>QFT</category>
+      <category>biến đổi Fourier lượng tử</category>
+      <category>tỉ lệ tín dụng</category>
+      <category>rủi ro</category>
+      <category>tài chính</category>
+      <category>lượng tử</category>
+    </item>
+    <item>
+      <title>Xu hướng AI 2024: phân tích và dự báo cho tương lai</title>
+      <link>https://sebastienrousseau.com/vi/2024-01-01-xu-huong-ai-2024-phan-tich-va-du-bao/</link>
+      <description>Các xu hướng AI sẽ định hình 2024: mô hình đa phương thức, tác tử AI, quy định mới và sự hội tụ với tính toán lượng tử.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2024-01-01-xu-huong-ai-2024-phan-tich-va-du-bao/</guid>
+      <pubDate>Mon, 01 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-2024-banner.webp" type="image/webp" length="0"/>
+      <category>AI 2024</category>
+      <category>xu hướng</category>
+      <category>dự báo</category>
+      <category>đa phương thức</category>
+      <category>tác tử AI</category>
+      <category>quy định</category>
+      <category>EU AI Act</category>
+      <category>LLM</category>
+    </item>
+    <item>
+      <title>Cách mạng hoá tài chính với các thuật toán lượng tử tăng cường AI</title>
+      <link>https://sebastienrousseau.com/vi/2023-12-25-cach-mang-tai-chinh-voi-thuat-toan-luong-tu-tang-cuong-ai/</link>
+      <description>Vai trò biến đổi của AI bên trong các thuật toán lượng tử cho tài chính: cấu trúc toán học, ứng dụng ngân hàng và triển vọng.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2023-12-25-cach-mang-tai-chinh-voi-thuat-toan-luong-tu-tang-cuong-ai/</guid>
+      <pubDate>Mon, 25 Dec 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-ai-banner.webp" type="image/webp" length="0"/>
+      <category>AI</category>
+      <category>lượng tử</category>
+      <category>thuật toán</category>
+      <category>tài chính</category>
+      <category>ngân hàng</category>
+      <category>định giá</category>
+      <category>tối ưu hoá</category>
+      <category>Monte Carlo</category>
+      <category>QAOA</category>
+    </item>
+    <item>
+      <title>Tình hình AI và tính toán lượng tử trong ngân hàng: một bài đánh giá 2023</title>
+      <link>https://sebastienrousseau.com/vi/2023-12-18-tinh-hinh-ai-va-tinh-toan-luong-tu-trong-ngan-hang-2023/</link>
+      <description>Đánh giá tình hình AI và tính toán lượng tử trong ngân hàng năm 2023 — các triển khai, đầu tư, thách thức và triển vọng cho 2024.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2023-12-18-tinh-hinh-ai-va-tinh-toan-luong-tu-trong-ngan-hang-2023/</guid>
+      <pubDate>Mon, 18 Dec 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-quantum-banner.webp" type="image/webp" length="0"/>
+      <category>AI</category>
+      <category>tính toán lượng tử</category>
+      <category>ngân hàng</category>
+      <category>2023</category>
+      <category>đánh giá</category>
+      <category>LLM</category>
+      <category>GPT</category>
+      <category>NIST</category>
+      <category>PQC</category>
+      <category>dịch vụ tài chính</category>
+    </item>
+    <item>
+      <title>Phân phối Khoá Lượng tử: cách mạng an ninh trong ngân hàng</title>
+      <link>https://sebastienrousseau.com/vi/2023-12-11-phan-phoi-khoa-luong-tu-cach-mang-an-ninh-ngan-hang/</link>
+      <description>Quantum Key Distribution (QKD) cung cấp bảo mật được đảm bảo về mặt vật lý cho phân phối khoá. Cách nó hoạt động, đâu là giới hạn, và tại sao các ngân hàng nên quan tâm.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2023-12-11-phan-phoi-khoa-luong-tu-cach-mang-an-ninh-ngan-hang/</guid>
+      <pubDate>Mon, 11 Dec 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/qkd-banner.webp" type="image/webp" length="0"/>
+      <category>QKD</category>
+      <category>phân phối khoá lượng tử</category>
+      <category>BB84</category>
+      <category>mật mã lượng tử</category>
+      <category>ngân hàng</category>
+      <category>an ninh tài chính</category>
+      <category>photon</category>
+    </item>
+    <item>
+      <title>Làm chủ ngày và giờ trong Rust với thư viện DTT</title>
+      <link>https://sebastienrousseau.com/vi/2023-12-04-lam-chu-ngay-va-gio-trong-rust-voi-thu-vien-dtt/</link>
+      <description>DTT — thư viện Rust cho ngày, giờ, múi giờ, định dạng và parsing. Được thiết kế cho các ứng dụng tài chính và backend nghiêm túc về dữ liệu thời gian.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2023-12-04-lam-chu-ngay-va-gio-trong-rust-voi-thu-vien-dtt/</guid>
+      <pubDate>Mon, 04 Dec 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/dtt-banner.webp" type="image/webp" length="0"/>
+      <category>DTT</category>
+      <category>Rust</category>
+      <category>ngày</category>
+      <category>giờ</category>
+      <category>múi giờ</category>
+      <category>parsing</category>
+      <category>định dạng</category>
+      <category>tài chính</category>
+      <category>ISO 8601</category>
+      <category>RFC 3339</category>
+    </item>
+    <item>
+      <title>KyberLib: lá chắn Rust chống các mối đe doạ lượng tử</title>
+      <link>https://sebastienrousseau.com/vi/2023-11-28-kyberlib-la-chan-rust-chong-de-doa-luong-tu/</link>
+      <description>KyberLib — triển khai Rust thuần tuý của CRYSTALS-Kyber (ML-KEM/FIPS 203) được tối ưu hoá cho hiệu năng, tính di động và an toàn bộ nhớ.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2023-11-28-kyberlib-la-chan-rust-chong-de-doa-luong-tu/</guid>
+      <pubDate>Tue, 28 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/kyberlib-banner.webp" type="image/webp" length="0"/>
+      <category>KyberLib</category>
+      <category>Rust</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>ML-KEM</category>
+      <category>FIPS 203</category>
+      <category>hậu lượng tử</category>
+      <category>mật mã</category>
+      <category>mã nguồn mở</category>
+    </item>
+    <item>
+      <title>CRYSTALS-Kyber: thuật toán bảo vệ trong thời lượng tử</title>
+      <link>https://sebastienrousseau.com/vi/2023-11-19-crystals-kyber-thuat-toan-bao-ve-thoi-luong-tu/</link>
+      <description>CRYSTALS-Kyber là thuật toán đóng gói khoá kháng lượng tử được NIST lựa chọn. Cách thức hoạt động, vì sao nó quan trọng, và cách nó định hình lại mật mã.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2023-11-19-crystals-kyber-thuat-toan-bao-ve-thoi-luong-tu/</guid>
+      <pubDate>Sun, 19 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/kyber-banner.webp" type="image/webp" length="0"/>
+      <category>CRYSTALS-Kyber</category>
+      <category>NIST</category>
+      <category>FIPS 203</category>
+      <category>hậu lượng tử</category>
+      <category>mật mã</category>
+      <category>KEM</category>
+      <category>mạng tinh thể</category>
+      <category>ML-KEM</category>
+    </item>
+    <item>
+      <title>Khám phá trí tuệ nhân tạo tạo sinh</title>
+      <link>https://sebastienrousseau.com/vi/2023-11-12-kham-pha-tri-tue-nhan-tao-tao-sinh/</link>
+      <description>AI tạo sinh giờ đây tạo ra văn bản, hình ảnh, mã và âm thanh ở cấp độ con người. Tổng quan các mô hình, kiến trúc và ứng dụng cho doanh nghiệp.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2023-11-12-kham-pha-tri-tue-nhan-tao-tao-sinh/</guid>
+      <pubDate>Sun, 12 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/genai-banner.webp" type="image/webp" length="0"/>
+      <category>AI tạo sinh</category>
+      <category>GPT</category>
+      <category>LLM</category>
+      <category>diffusion</category>
+      <category>Stable Diffusion</category>
+      <category>DALL-E</category>
+      <category>Midjourney</category>
+      <category>doanh nghiệp</category>
+      <category>tự động hoá</category>
+    </item>
+    <item>
+      <title>Hằng số toán học và mật mã cho bảo mật Rust</title>
+      <link>https://sebastienrousseau.com/vi/2023-11-05-hang-so-toan-hoc-va-mat-ma-cho-rust/</link>
+      <description>cmn — thư viện Rust cung cấp các hằng số toán học và mật mã với độ chính xác cao cho các ứng dụng tài chính và bảo mật.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2023-11-05-hang-so-toan-hoc-va-mat-ma-cho-rust/</guid>
+      <pubDate>Sun, 05 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/cmn-banner.webp" type="image/webp" length="0"/>
+      <category>Rust</category>
+      <category>hằng số toán học</category>
+      <category>mật mã</category>
+      <category>cmn</category>
+      <category>độ chính xác cao</category>
+      <category>tài chính</category>
+      <category>bảo mật</category>
+    </item>
+    <item>
+      <title>libmake: bộ sinh mã giảm tác vụ lặp lại và xây dựng thư viện Rust chất lượng cao</title>
+      <link>https://sebastienrousseau.com/vi/2023-10-26-libmake-bo-sinh-ma-cho-thu-vien-rust/</link>
+      <description>libmake — một CLI Rust tạo các thư viện Rust mới với cấu trúc tốt, kiểm thử, CI/CD và tài liệu sẵn sàng.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2023-10-26-libmake-bo-sinh-ma-cho-thu-vien-rust/</guid>
+      <pubDate>Thu, 26 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/libmake-banner.webp" type="image/webp" length="0"/>
+      <category>libmake</category>
+      <category>Rust</category>
+      <category>scaffold</category>
+      <category>sinh mã</category>
+      <category>CLI</category>
+      <category>mã nguồn mở</category>
+      <category>năng suất</category>
+      <category>phát triển</category>
+    </item>
+    <item>
+      <title>Bảo vệ dữ liệu thời lượng tử: thư viện băm hsh</title>
+      <link>https://sebastienrousseau.com/vi/2023-10-16-bao-ve-du-lieu-thoi-luong-tu-thu-vien-bam-hsh/</link>
+      <description>hsh — thư viện Rust triển khai các thuật toán băm và digest an toàn, được thiết kế với tư thế kháng lượng tử cho kỷ nguyên xác thực hậu PQC.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2023-10-16-bao-ve-du-lieu-thoi-luong-tu-thu-vien-bam-hsh/</guid>
+      <pubDate>Mon, 16 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/hsh-banner.webp" type="image/webp" length="0"/>
+      <category>hsh</category>
+      <category>Rust</category>
+      <category>băm</category>
+      <category>mật khẩu</category>
+      <category>mật mã</category>
+      <category>hậu lượng tử</category>
+      <category>Argon2</category>
+      <category>bcrypt</category>
+      <category>scrypt</category>
+      <category>an toàn</category>
+    </item>
+    <item>
+      <title>Shokunin: bộ tạo trang tĩnh dựa trên Rust nhanh nhất</title>
+      <link>https://sebastienrousseau.com/vi/2023-10-09-shokunin-bo-tao-trang-tinh-rust-nhanh-nhat/</link>
+      <description>Shokunin là bộ tạo trang tĩnh viết bằng Rust, được tối ưu hoá cho hiệu năng, khả năng tiếp cận và SEO. Builds cực nhanh với hỗ trợ JSON-LD hạng nhất.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2023-10-09-shokunin-bo-tao-trang-tinh-rust-nhanh-nhat/</guid>
+      <pubDate>Mon, 09 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/clients/shokunin/v1/banners/banner-shokunin.svg" type="image/webp" length="0"/>
+      <category>Shokunin</category>
+      <category>SSG</category>
+      <category>Rust</category>
+      <category>bộ tạo trang tĩnh</category>
+      <category>hiệu năng</category>
+      <category>SEO</category>
+      <category>JSON-LD</category>
+      <category>mã nguồn mở</category>
+    </item>
+    <item>
+      <title>Tự động hoá tạo tệp thanh toán tuân thủ ISO 20022 với pain001</title>
+      <link>https://sebastienrousseau.com/vi/2023-09-29-tu-dong-hoa-tep-thanh-toan-iso-20022-voi-pain001/</link>
+      <description>pain001 — thư viện Python tự động hoá việc tạo tệp thanh toán ISO 20022 pain.001 từ CSV hoặc SQLite, hỗ trợ chuyển đổi MT/MX trên SWIFT, SEPA và các sơ đồ lớn.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2023-09-29-tu-dong-hoa-tep-thanh-toan-iso-20022-voi-pain001/</guid>
+      <pubDate>Fri, 29 Sep 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/pain001-banner.webp" type="image/webp" length="0"/>
+      <category>ISO 20022</category>
+      <category>pain.001</category>
+      <category>Python</category>
+      <category>thanh toán</category>
+      <category>SWIFT</category>
+      <category>SEPA</category>
+      <category>mã nguồn mở</category>
+      <category>tự động hoá</category>
+      <category>MT/MX</category>
+    </item>
+    <item>
+      <title>Xây dựng nền tảng Express Transaction Credits</title>
+      <link>https://sebastienrousseau.com/vi/2018-02-15-xay-dung-nen-tang-express-transaction-credits/</link>
+      <description>Quá trình thiết kế và xây dựng Express Transaction Credits — các quyết định kỹ thuật, các trade-off và bài học rút ra.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2018-02-15-xay-dung-nen-tang-express-transaction-credits/</guid>
+      <pubDate>Thu, 15 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/etc-build.webp" type="image/webp" length="0"/>
+      <category>Express Transaction Credits</category>
+      <category>blockchain</category>
+      <category>kiến trúc</category>
+      <category>đồng thuận</category>
+      <category>phát triển</category>
+      <category>kỹ thuật</category>
+      <category>fintech</category>
+    </item>
+    <item>
+      <title>Hé lộ một đồng tiền mã hoá mới và giải pháp thanh toán nhanh hơn cho tương lai</title>
+      <link>https://sebastienrousseau.com/vi/2018-02-04-tien-ma-hoa-moi-va-giai-phap-thanh-toan-nhanh-hon/</link>
+      <description>Hé lộ Express Transaction Credits — một đồng tiền mã hoá mới được thiết kế để giải quyết các giới hạn tốc độ của Bitcoin và Ethereum.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2018-02-04-tien-ma-hoa-moi-va-giai-phap-thanh-toan-nhanh-hon/</guid>
+      <pubDate>Sun, 04 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/etc-banner.webp" type="image/webp" length="0"/>
+      <category>tiền mã hoá</category>
+      <category>thanh toán nhanh</category>
+      <category>Express Transaction Credits</category>
+      <category>ETC</category>
+      <category>blockchain</category>
+      <category>giao dịch tức thời</category>
+      <category>Layer 2</category>
+    </item>
+    <item>
+      <title>Tiêu chuẩn token ERC-20</title>
+      <link>https://sebastienrousseau.com/vi/2018-01-24-tieu-chuan-token-erc-20/</link>
+      <description>ERC-20 đã chuẩn hoá việc tạo token trên Ethereum, mở khoá hàng nghìn dự án và nền tảng cho stablecoin, DeFi và token hoá tài sản thực.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2018-01-24-tieu-chuan-token-erc-20/</guid>
+      <pubDate>Wed, 24 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp" type="image/webp" length="0"/>
+      <category>ERC-20</category>
+      <category>Ethereum</category>
+      <category>token</category>
+      <category>hợp đồng thông minh</category>
+      <category>DeFi</category>
+      <category>stablecoin</category>
+      <category>USDC</category>
+      <category>token hoá tài sản</category>
+    </item>
+    <item>
+      <title>Hiểu về công nghệ đằng sau blockchain</title>
+      <link>https://sebastienrousseau.com/vi/2018-01-09-hieu-ve-cong-nghe-dang-sau-blockchain/</link>
+      <description>Cách blockchain hoạt động: băm mật mã, cây Merkle, cơ chế đồng thuận và mô hình kinh tế đảm bảo tính bất biến.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2018-01-09-hieu-ve-cong-nghe-dang-sau-blockchain/</guid>
+      <pubDate>Tue, 09 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/blockchain-tech.webp" type="image/webp" length="0"/>
+      <category>blockchain</category>
+      <category>băm mật mã</category>
+      <category>cây Merkle</category>
+      <category>đồng thuận</category>
+      <category>proof-of-work</category>
+      <category>sổ cái phân tán</category>
+      <category>mật mã</category>
+      <category>tài chính</category>
+    </item>
+    <item>
+      <title>Blockchain: công nghệ quan trọng trong năm 2018</title>
+      <link>https://sebastienrousseau.com/vi/2018-01-02-blockchain-cong-nghe-quan-trong-nam-2018/</link>
+      <description>Blockchain định hình lại tin cậy số, hợp đồng thông minh và thanh toán xuyên biên giới — vì sao 2018 là năm bản lề cho hạ tầng tài chính.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2018-01-02-blockchain-cong-nghe-quan-trong-nam-2018/</guid>
+      <pubDate>Tue, 02 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/blockchain-banner.webp" type="image/webp" length="0"/>
+      <category>blockchain</category>
+      <category>sổ cái phân tán</category>
+      <category>hợp đồng thông minh</category>
+      <category>Ethereum</category>
+      <category>DLT</category>
+      <category>mã hoá</category>
+      <category>tin cậy</category>
+      <category>tài chính</category>
+      <category>doanh nghiệp</category>
+    </item>
+    <item>
+      <title>Bitcoin: nhìn lại một năm của đồng tiền mã hoá đầu tiên</title>
+      <link>https://sebastienrousseau.com/vi/2018-01-01-bitcoin-nhin-lai-mot-nam/</link>
+      <description>Bitcoin: một hệ thống tiền mặt điện tử ngang hàng (P2P ECS) có khả năng cách mạng hoá cách mọi người giao dịch trực tuyến.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2018-01-01-bitcoin-nhin-lai-mot-nam/</guid>
+      <pubDate>Mon, 01 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp" type="image/webp" length="0"/>
+      <category>Bitcoin</category>
+      <category>tiền mã hoá</category>
+      <category>blockchain</category>
+      <category>P2P</category>
+      <category>chi tiêu hai lần</category>
+      <category>đào</category>
+      <category>proof-of-work</category>
+      <category>ETF</category>
+      <category>Satoshi Nakamoto</category>
+      <category>tài chính phi tập trung</category>
+    </item>
+  </channel>
+</rss>

@@ -71,7 +71,9 @@ _DATED_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-")
 # the consumers to read by lang_code directly.
 I18N_FR: dict[str, str] = _lang_registry.load_labels("fr")
 
-_FM_KEY_RE = re.compile(r'^([a-zA-Z_]+):\s*"((?:[^"\\]|\\.)*)"\s*$')
+_FM_KEY_RE = re.compile(
+    r'^([a-zA-Z_]+):\s*(?:"((?:[^"\\]|\\.)*)"|\'((?:[^\'\\]|\\.)*)\')\s*$'
+)
 
 
 def parse_frontmatter(text: str) -> tuple[dict[str, str], str]:
@@ -94,7 +96,7 @@ def parse_frontmatter(text: str) -> tuple[dict[str, str], str]:
             continue
         m = _FM_KEY_RE.match(line.strip())
         if m:
-            fm[m.group(1)] = m.group(2)
+            fm[m.group(1)] = m.group(2) if m.group(2) is not None else m.group(3)
     body = "".join(lines[body_start:])
     return fm, body
 

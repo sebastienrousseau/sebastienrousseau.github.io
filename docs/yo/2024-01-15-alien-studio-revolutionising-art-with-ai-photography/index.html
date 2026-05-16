@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="yo-NG">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 08 Jan 2024 05:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 08 Jan 2024 05:06:06 +0000" id="last-modified" />
+    <title>Alien Studio: My Tech-to Art Journey in Photography — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.">
+<meta name="keywords" content="personal tech journey, Rust discovery, AI exploration, Quantum Computing, art and photography fusion, Alien Studio, digital art creation, technology in art, innovative photography, artistic rediscovery">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-AMdAyNNr5SB2bflmJgZ79lhfbXXhWvGgtKYSXTmheT4=' 'sha256-AZqCK1YerqsBrlaUm6IFRgqN6buHr9ZoFnEHf9eUX/s=' 'sha256-VFEpNMpoJpXt0xYgDnJChKZmG5pr6mYCL/scnFtH2og=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/yo/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Àyẹ́ Atom" href="/yo/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Alien Studio: My Tech-to Art Journey in Photography — Sebastien Rousseau">
+<meta property="og:description" content="Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/yo/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/">
+<meta property="og:image" content="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="yo_NG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Alien Studio: My Tech-to Art Journey in Photography — Sebastien Rousseau">
+<meta name="twitter:description" content="Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.">
+<meta name="twitter:image" content="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/yo/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-01-15-revolution-de-l-art-par-la-photographie-ia-alien-studio/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2024-01-15-alien-studio-revoluce-umeni-ai-fotografii/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2024-01-15-alien-studio-kunst-revolution-durch-ki-fotografie/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2024-01-15-revolucion-del-arte-mediante-la-fotografia-con-ia-alien-studio/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2024-01-15-alien-studio-ai-photography-se-kala-mein-kraanti/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2024-01-15-alien-studio-revolusi-seni-dengan-fotografi-ai/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2024-01-15-rivoluzione-dellarte-con-la-fotografia-ia-alien-studio/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2024-01-15-alien-studio-ai-shashin-de-aato-wo-kakushin/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2024-01-15-alien-studio-ai-sajin-euro-yesul-hyeokmyeong/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2024-01-15-alien-studio-kunst-revolutie-met-ai-fotografie/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2024-01-15-alien-studio-rewolucja-sztuki-przez-fotografie-ai/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2024-01-15-revolucao-da-arte-pela-fotografia-com-ia-alien-studio/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2024-01-15-alien-studio-revolyutsiya-iskusstva-s-pomoshchyu-ii-fotografii/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2024-01-15-alien-studio-revolutionerar-konst-med-ai-fotografi/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2024-01-15-alien-studio-patiwat-sinlapa-duai-phap-thai-ai/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2024-01-15-alien-studio-yapay-zeka-fotografciligi-ile-sanat-devrimi/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2024-01-15-alien-studio-cach-mang-nghe-thuat-voi-nhiep-anh-ai/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2024-01-15-alien-studio-yong-ai-sheying-biange-yishu/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2024-01-15-alien-studio-yong-ai-sheying-biange-yishu-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Fò sí àkóónú àkọ́kọ́</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Yí ìwọ̀ndì padà" />
+      <div class="wrap">
+        <a class="ap-brand" href="/yo/index.html" aria-label="Ilé Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Ìwọ̀ndì àkọ́kọ́">
+          <ul class="ap-menu">
+            <li><a href="/yo/nipa-wa/index.html">About</a></li>
+            <li><a href="/yo/awon-akole/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/yo/awon-iwe/index.html">Papers</a></li>
+            <li><a href="/yo/awon-koko/index.html">Àwọn kókó</a></li>
+            <li><a href="/yo/awon-ise/index.html">Projects</a></li>
+            <li><a href="/yo/akojopo-orin/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Tan àkòrí òkùnkùn" aria-pressed="false" title="Yí àkòrí padà">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Wá (Cmd tàbí Ctrl + K)" title="Wá (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Èdè">
+            <button type="button" class="ap-lang-toggle" aria-label="YO, Yí èdè padà" aria-expanded="false" aria-haspopup="menu" title="Yí èdè padà">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">YO</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Yóò dé láìpẹ́">🇺🇦 Українська</span>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/yo/kan-si-wa/index.html" aria-label="Kàn sí wa">Kàn sí wa ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Yí ìwọ̀ndì padà">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Alien Studio: My Tech-to Art Journey in Photography</h1>
+      <p class="sub">The Beginnings of a Technological Odyssey</p>
+    <nav class="article-tags" aria-label="Àwọn kókó"><a href="/tags/index.html#h3-personal-tech-journey" class="article-tag" rel="tag">personal tech journey</a><a href="/tags/index.html#h3-rust-discovery" class="article-tag" rel="tag">Rust discovery</a><a href="/tags/index.html#h3-ai-exploration" class="article-tag" rel="tag">AI exploration</a><a href="/tags/index.html#h3-quantum-computing" class="article-tag" rel="tag">Quantum Computing</a><a href="/tags/index.html#h3-art-and-photography-fusion" class="article-tag" rel="tag">art and photography fusion</a><a href="/tags/index.html#h3-alien-studio" class="article-tag" rel="tag">Alien Studio</a><a href="/tags/index.html#h3-digital-art-creation" class="article-tag" rel="tag">digital art creation</a><a href="/tags/index.html#h3-technology-in-art" class="article-tag" rel="tag">technology in art</a><a href="/tags/index.html#h3-innovative-photography" class="article-tag" rel="tag">innovative photography</a><a href="/tags/index.html#h3-artistic-rediscovery" class="article-tag" rel="tag">artistic rediscovery</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-01-08T05:06:06+00:00" class="meta-pub">Tẹ̀ jáde 8 Jan 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Sọdọtun 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Àkókò kíkà tó tó">4 ìṣẹ́jú kíkà</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Àkóónú</h2><ol><li><a href="#unleashing-artistic-innovation-through-cutting-edge-technology">Unleashing Artistic Innovation through Cutting-Edge Technology</a></li><li><a href="#the-tech-trio-rust-ai-and-quantum-computing">The Tech Trio - Rust, AI, and Quantum Computing</a></li><li><a href="#artistic-awakening">Artistic Awakening</a></li><li><a href="#the-birth-of-alien-studio">The Birth of Alien Studio</a></li><li><a href="#beyond-just-a-gallery">Beyond Just a Gallery</a></li><li><a href="#impact-and-future-horizons-expanding-the-canvas-of-possibilities">Impact and Future Horizons: Expanding the Canvas of Possibilities</a></li><li><a href="#reflecting-on-the-journey">Reflecting on the Journey</a></li><li><a href="#visit-alien-studio">Visit Alien Studio</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Unleashing Artistic Innovation through Cutting-Edge Technology.</strong> 2023 was a year of profound transformation and realisation.</li>  <li><strong>The Tech Trio - Rust, AI, and Quantum Computing.</strong> My journey started with [Rust ⧉][06], a language known for its safety and performance.</li>  <li><strong>Artistic Awakening.</strong> I neglected my passion for art and photography while consumed by work and technology.</li>  <li><strong>The Birth of Alien Studio.</strong> The idea for Alien Studio sprang from this unique confluence of technology and art.</li></ul></aside><p><img src="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" alt="Sunset's muse, a serene glance; beauty in stillness"  width="800" height="800" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<hr />
+<blockquote>
+<p><strong>TL;DR.</strong> Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.</p>
+<p><strong>Awọn Pataki Ojulowo</strong></p>
+<ul>
+<li>DRAFT translation: this article is a Yorùbá stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.</li>
+<li>Source title: <em>Alien Studio: My Tech-to Art Journey in Photography</em>.</li>
+<li>Source subtitle: <em>The Beginnings of a Technological Odyssey</em>.</li>
+<li>Editorial note: replace this block with hand-translated copy before flipping <code>active=True</code> for yo in <code>scripts/_lang_registry.py</code>.</li>
+</ul>
+</blockquote>
+<hr />
+<!-- lead-start -->
+<aside class="post-lead" aria-label="Àkójọ àkọlé">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.</p>
+<p class="post-lead-heading"><strong>Awọn Pataki Ojulowo</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Unleashing Artistic Innovation through Cutting-Edge Technology.</strong> 2023 was a year of profound transformation and realisation.</li>
+  <li><strong>The Tech Trio - Rust, AI, and Quantum Computing.</strong> My journey started with Rust ⧉, a language known for its safety and performance.</li>
+  <li><strong>Artistic Awakening.</strong> I neglected my passion for art and photography while consumed by work and technology.</li>
+  <li><strong>The Birth of Alien Studio.</strong> The idea for Alien Studio sprang from this unique confluence of technology and art.</li>
+</ul>
+<p class="post-lead-related"><strong>Ìwé tó jọmọ́:</strong> <a href="https://sebastienrousseau.com/yo/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a>, <a href="https://sebastienrousseau.com/yo/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>, <a href="https://sebastienrousseau.com/yo/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a>.</p>
+</aside>
+<!-- lead-end -->
+<h2 id="unleashing-artistic-innovation-through-cutting-edge-technology">Unleashing Artistic Innovation through Cutting-Edge Technology <a class="heading-anchor" href="#unleashing-artistic-innovation-through-cutting-edge-technology" aria-label="Ìjápọ̀ sí Unleashing Artistic Innovation through Cutting-Edge Technology">#</a></h2>
+<p>2023 was a year of profound transformation and realisation. Motivated by curiosity and a drive to innovate, I delved into cutting-edge technology, including <a href="https://www.rust-lang.org/" title="Rust Programming Language"><strong>Rust ⧉</strong></a>, <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" title="Artificial intelligence"><strong>AI ⧉</strong></a>, and <a href="https://en.wikipedia.org/wiki/Quantum_computing" title="Quantum computing"><strong>Quantum Computing ⧉</strong></a>. My aim wasn't just to understand these complex fields, but to explore their potential to shape innovative strategies.</p>
+<p>As I explored into the intricate workings of code, algorithms, and quantum theories, my professional horizon expanded exponentially. Rust, AI, and Quantum Computing all brought new ideas and expanded my creativity.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="the-tech-trio-rust-ai-and-quantum-computing">The Tech Trio - Rust, AI, and Quantum Computing <a class="heading-anchor" href="#the-tech-trio-rust-ai-and-quantum-computing" aria-label="Ìjápọ̀ sí The Tech Trio - Rust, AI, and Quantum Computing">#</a></h2>
+<h3 id="rust-the-foundations-of-a-new-era">Rust: The Foundations of a New Era <a class="heading-anchor" href="#rust-the-foundations-of-a-new-era" aria-label="Ìjápọ̀ sí Rust: The Foundations of a New Era">#</a></h3>
+<p>My journey started with <a href="https://www.rust-lang.org/" title="Rust Programming Language"><strong>Rust ⧉</strong></a>, a language known for its safety and performance. I was drawn to its simplicity and elegance, and I was intrigued by its potential to transform the way we build software. I was also fascinated by its potential to transform the way we think about software development.</p>
+<h3 id="ai-the-new-frontier">AI: The New Frontier <a class="heading-anchor" href="#ai-the-new-frontier" aria-label="Ìjápọ̀ sí AI: The New Frontier">#</a></h3>
+<p>Next came <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" title="Artificial intelligence"><strong>AI ⧉</strong></a>, a field teeming with possibilities. From understanding machine learning models to experimenting with neural networks, AI has opened up a world of innovative potential.</p>
+<h3 id="quantum-computing-the-enigma">Quantum Computing: The Enigma <a class="heading-anchor" href="#quantum-computing-the-enigma" aria-label="Ìjápọ̀ sí Quantum Computing: The Enigma">#</a></h3>
+<p><a href="https://en.wikipedia.org/wiki/Quantum_computing" title="Quantum computing"><strong>Quantum Computing ⧉</strong></a> was the pinnacle of my technical journey. Its perplexing concepts and mind-bending theories pushed my cognitive boundaries, offering a glimpse into the future of computing.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="artistic-awakening">Artistic Awakening <a class="heading-anchor" href="#artistic-awakening" aria-label="Ìjápọ̀ sí Artistic Awakening">#</a></h2>
+<h3 id="rediscovering-photography">Rediscovering Photography <a class="heading-anchor" href="#rediscovering-photography" aria-label="Ìjápọ̀ sí Rediscovering Photography">#</a></h3>
+<p>I neglected my passion for art and photography while consumed by work and technology. But over Christmas break, I rediscovered it by visiting art collections.</p>
+<h3 id="the-humble-beginnings-of-alien-studio-blending-tech-with-art">The Humble Beginnings of Alien Studio: Blending Tech with Art <a class="heading-anchor" href="#the-humble-beginnings-of-alien-studio-blending-tech-with-art" aria-label="Ìjápọ̀ sí The Humble Beginnings of Alien Studio: Blending Tech with Art">#</a></h3>
+<p>The advent of <a href="https://www.midjourney.com/explore" title="Midjourney"><strong>MidJourney v6 ⧉</strong></a> presented an unassuming yet inspiring opportunity. Its efficiency in content creation sparked a modest idea in me: could I combine my growing understanding of technology with my love for art? This thought led me to ponder a future where these two worlds could gently merge, creating something uniquely meaningful. In this quiet contemplation, the concept of Alien Studio took its first, tentative steps towards reality.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<p><img src="https://cloudcdn.pro/clients/alienstudio/v1/collections/odyssey/odyssey-01.webp" alt="Marigold merchant’s gaze" title="Marigold merchant’s gaze"  width="800" height="800" decoding="async" loading="lazy">.class=&quot;fade-in w-25 m-3 img-thumbnail float-start rounded-circle&quot;</p>
+<h2 id="the-birth-of-alien-studio">The Birth of Alien Studio <a class="heading-anchor" href="#the-birth-of-alien-studio" aria-label="Ìjápọ̀ sí The Birth of Alien Studio">#</a></h2>
+<h3 id="from-technology-to-art">From Technology to Art <a class="heading-anchor" href="#from-technology-to-art" aria-label="Ìjápọ̀ sí From Technology to Art">#</a></h3>
+<p>The idea for Alien Studio sprang from this unique confluence of technology and art. It became a personal project, a space where I could blend my technical acumen with my artistic vision.</p>
+<h3 id="alien-studio-a-digital-renaissance">Alien Studio: A Digital Renaissance <a class="heading-anchor" href="#alien-studio-a-digital-renaissance" aria-label="Ìjápọ̀ sí Alien Studio: A Digital Renaissance">#</a></h3>
+<p>At Alien Studio, every photograph is not just an image but a story, told through the lens of technology and art. It's where the precision of Rust, the intelligence of <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" title="Artificial intelligence"><strong>AI ⧉</strong></a>, and the complexities of Quantum Computing merge with the fluidity and emotion of photography.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<p><img src="https://cloudcdn.pro/clients/alienstudio/v1/collections/ethereal/ethereal-01.webp" alt="A lone silhouette against a fiery cosmic backdrop" title="A lone silhouette against a fiery cosmic backdrop"  width="800" height="800" decoding="async" loading="lazy">.class=&quot;fade-in w-25 m-3 img-thumbnail float-end rounded-circle&quot;</p>
+<h2 id="beyond-just-a-gallery">Beyond Just a Gallery <a class="heading-anchor" href="#beyond-just-a-gallery" aria-label="Ìjápọ̀ sí Beyond Just a Gallery">#</a></h2>
+<h3 id="a-platform-for-exploration">A Platform for Exploration <a class="heading-anchor" href="#a-platform-for-exploration" aria-label="Ìjápọ̀ sí A Platform for Exploration">#</a></h3>
+<p>Each piece here is a representation of my journey, a blend of code and canvas, algorithm and art. It's a platform for exploration, a space where I can experiment with new ideas and push the boundaries of artistic expression.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<p><img src="https://cloudcdn.pro/clients/alienstudio/v1/collections/metropolis/metropolis-08.webp" alt="Youthful beauty, lit by day’s end, amidst the urban flow, a silent story" title="Youthful beauty, lit by day’s end, amidst the urban flow, a silent story"  width="800" height="800" decoding="async" loading="lazy">.class=&quot;fade-in w-25 m-3 img-thumbnail float-start rounded-circle&quot;</p>
+<h2 id="impact-and-future-horizons-expanding-the-canvas-of-possibilities">Impact and Future Horizons: Expanding the Canvas of Possibilities <a class="heading-anchor" href="#impact-and-future-horizons-expanding-the-canvas-of-possibilities" aria-label="Ìjápọ̀ sí Impact and Future Horizons: Expanding the Canvas of Possibilities">#</a></h2>
+<p>Alien Studio's impact lies in showcasing the immense potential of technology to elevate and transform traditional art forms. Looking ahead, the studio plans to collaborate with a diverse range of artists and technologists, pushing the boundaries of artistic expression even further. It also aims to expand its collection to include a wider range of art forms, including music, film, and literature. Ultimately, Alien Studio seeks to redefine the very concept of art, transforming it into a fluid, dynamic, and ever-evolving medium. This project aims to inspire young artists to use technology in their creations, encouraging them to create unique and extraordinary works.</p>
+<p><strong>The canvas is changing, and the possibilities are endless and exciting.</strong></p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<p><img src="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-13.webp" alt="Soulful explorer, sunset adventures await; freedom calls" title="Soulful explorer, sunset adventures await; freedom calls"  width="800" height="800" decoding="async" loading="lazy">.class=&quot;fade-in w-25 m-3 img-thumbnail float-end rounded-circle&quot;</p>
+<h2 id="reflecting-on-the-journey">Reflecting on the Journey <a class="heading-anchor" href="#reflecting-on-the-journey" aria-label="Ìjápọ̀ sí Reflecting on the Journey">#</a></h2>
+<h3 id="a-fusion-of-passions">A Fusion of Passions <a class="heading-anchor" href="#a-fusion-of-passions" aria-label="Ìjápọ̀ sí A Fusion of Passions">#</a></h3>
+<p>This journey has been about more than just learning and applying technology. It's been about rediscovering and exploring my passions, and finding new ways to express them. Alien Studio stands as a personal milestone, a confluence of my love for technology and art, each enriching the other.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<p><img src="https://cloudcdn.pro/clients/alienstudio/v1/collections/serenity/serenity-01.webp" alt="Glistening dawn serenity" title="Glistening dawn serenity"  width="800" height="800" decoding="async" loading="lazy">.class=&quot;fade-in w-25 m-3 img-thumbnail float-start rounded-circle&quot;</p>
+<h2 id="visit-alien-studio">Visit Alien Studio <a class="heading-anchor" href="#visit-alien-studio" aria-label="Ìjápọ̀ sí Visit Alien Studio">#</a></h2>
+<h3 id="experience-the-convergence-of-technology-and-art">Experience the Convergence of Technology and Art <a class="heading-anchor" href="#experience-the-convergence-of-technology-and-art" aria-label="Ìjápọ̀ sí Experience the Convergence of Technology and Art">#</a></h3>
+<p>I invite you to visit <a href="https://web.archive.org/web/2*/https://alienstudio.com/" title="Alien Studio, pioneering the future of photography (archived)"><strong>Alien Studio ⧉</strong></a>, to see through the photographs how technology can not just complement but elevate art. Each piece is a chapter of my journey, a fusion of tech and art, waiting to be explored.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<!-- enrich-start -->
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/yo/nipa-wa/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/yo/nipa-wa/index.html">Àkọsílẹ̀ kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Àyẹ̀wò àkọ́kọ́ <time datetime="2026-05-15">2026-05-15</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Ìwé tó jọmọ́</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html" class="related-media" aria-label="EU's AI Act: Pioneering Ethical AI Regulation Worldwide" tabindex="-1"><img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="eu-s-ai-act-pioneering-ethical-ai-regulation-worldwide"><a href="https://sebastienrousseau.com/yo/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a> <a class="heading-anchor" href="#eu-s-ai-act-pioneering-ethical-ai-regulation-worldwide" aria-label="Ìjápọ̀ sí EU's AI Act: Pioneering Ethical AI Regulation Worldwide">#</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2024-01-23-advancements-in-ai-prompt-engineering/index.html" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="A man analysing data on screens" src="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-prompt-engineering-2024-techniques-that-work"><a href="https://sebastienrousseau.com/yo/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a> <a class="heading-anchor" href="#ai-prompt-engineering-2024-techniques-that-work" aria-label="Ìjápọ̀ sí AI Prompt Engineering 2024: Techniques That Work">#</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html" class="related-media" aria-label="Revolutionising Finance with AI-Enhanced Quantum Algorithms" tabindex="-1"><img alt="Revolutionising Finance with AI-Enhanced Quantum Algorithms" src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="revolutionising-finance-with-ai-enhanced-quantum-algorithms"><a href="https://sebastienrousseau.com/yo/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a> <a class="heading-anchor" href="#revolutionising-finance-with-ai-enhanced-quantum-algorithms" aria-label="Ìjápọ̀ sí Revolutionising Finance with AI-Enhanced Quantum Algorithms">#</a></h3><p><time datetime="2023-12-25">2023-12-25</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/yo/nipa-wa/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Onímọ̀ ẹ̀rọ báńkì àgbà; mò ń kọ nípa AI tó wúlò, ìṣírò ISO 20022, kírípító lẹ́yìn-kuántọ́mù fún iṣẹ́ ìnáwó àti àtúnṣe ètò ìsanwó ńláńlá.</span><span class="author-credentials">Ìrírí ọdún 20+ ní HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/yo/nipa-wa/index.html">Àkọsílẹ̀ kíkún</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Àyẹ̀wò àkọ́kọ́ <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Ìwé tó jọmọ́</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html" class="related-media" aria-label="EU's AI Act: Pioneering Ethical AI Regulation Worldwide" tabindex="-1"><img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="eu-s-ai-act-pioneering-ethical-ai-regulation-worldwide-2"><a href="https://sebastienrousseau.com/yo/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a> <a class="heading-anchor" href="#eu-s-ai-act-pioneering-ethical-ai-regulation-worldwide-2" aria-label="Ìjápọ̀ sí EU's AI Act: Pioneering Ethical AI Regulation Worldwide">#</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2024-01-23-advancements-in-ai-prompt-engineering/index.html" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="A man analysing data on screens" src="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-prompt-engineering-2024-techniques-that-work-2"><a href="https://sebastienrousseau.com/yo/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a> <a class="heading-anchor" href="#ai-prompt-engineering-2024-techniques-that-work-2" aria-label="Ìjápọ̀ sí AI Prompt Engineering 2024: Techniques That Work">#</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/yo/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html" class="related-media" aria-label="Revolutionising Finance with AI-Enhanced Quantum Algorithms" tabindex="-1"><img alt="Revolutionising Finance with AI-Enhanced Quantum Algorithms" src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="revolutionising-finance-with-ai-enhanced-quantum-algorithms-2"><a href="https://sebastienrousseau.com/yo/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a> <a class="heading-anchor" href="#revolutionising-finance-with-ai-enhanced-quantum-algorithms-2" aria-label="Ìjápọ̀ sí Revolutionising Finance with AI-Enhanced Quantum Algorithms">#</a></h3><p><time datetime="2023-12-25">2023-12-25</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Orisun & àyọ̀kà</h2><ol class="article-sources-list"><li><a href="https://en.wikipedia.org/wiki/Artificial_intelligence" rel="external noopener nofollow"><span class="source-host">en.wikipedia.org</span><span class="source-path">/wiki/Artificial_intelligence</span></a></li><li><a href="https://en.wikipedia.org/wiki/Quantum_computing" rel="external noopener nofollow"><span class="source-host">en.wikipedia.org</span><span class="source-path">/wiki/Quantum_computing</span></a></li></ol></aside><nav class="post-pagination" aria-label="Ìpín àkọlé"><a class="post-pagination-prev" href="/yo/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/"><span class="post-pagination-label">Tẹ́lẹ̀</span><span class="post-pagination-title">Qiskit & Quantum Fourier Transform for Credit Ratio Analysis</span></a><a class="post-pagination-next" href="/yo/2024-01-23-advancements-in-ai-prompt-engineering/"><span class="post-pagination-label">Tókàn</span><span class="post-pagination-title">AI Prompt Engineering 2024: Techniques That Work</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/yo/nipa-wa/index.html">About</a></li>
+              <li><a href="/yo/kan-si-wa/index.html">Contact</a></li>
+              <li><a href="/yo/static-site-generator-lo-ti-se/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Àkọsílẹ̀</h2>
+            <ul>
+              <li><a href="/yo/awon-akole/index.html">Articles</a></li>
+              <li><a href="/yo/awon-iwe/index.html">Papers</a></li>
+              <li><a href="/yo/awon-ami/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Iṣẹ́</h2>
+            <ul>
+              <li><a href="/yo/awon-ise/index.html">Projects</a></li>
+              <li><a href="/yo/akojopo-orin/index.html">Playlists</a></li>
+              <li><a href="/yo/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Kàn sí</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Ìforúkọsílẹ̀ ìwé ìròyìn">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — àwọn àkíyèsí ìwádìí lórí ìsanwó, AI àti kírípító lẹ́yìn-kuántọ́mù. Kò sí spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="iwo@banki.com.ng" />
+            <input type="hidden" name="_subject" value="Ìforúkọsílẹ̀ ìwé ìròyìn — sebastienrousseau.com" />
+            <button type="submit">Forúkọsílẹ̀</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. Gbogbo ẹtọ ti wa ni ipamọ.</span>
+          <div class="social" aria-label="Àwọn ọ̀nà àjọṣepọ̀">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau lórí Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau lórí LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau lórí Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau lórí YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau lórí YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/yo/ile-wiwole/index.html">Accessibility</a> ·
+            <a href="/yo/aabo-ikoko/index.html">Privacy</a> ·
+            <a href="/yo/awon-ofin/index.html">Terms</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"yo"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"yo"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":843,"about":{"@type":"Thing","name":"Rust","sameAs":["https://en.wikipedia.org/wiki/Rust_(programming_language)","https://www.wikidata.org/wiki/Q575650"]},"mentions":[{"@type":"Thing","name":"Quantum computing","sameAs":["https://en.wikipedia.org/wiki/Quantum_computing","https://www.wikidata.org/wiki/Q484641"]}],"headline":"Alien Studio: My Tech-to Art Journey in Photography","description":"Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp","width":"100vw","height":"100vh","caption":"Sunset's muse, a serene glance; beauty in stillness"},"url":"https://sebastienrousseau.com/yo/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/","datePublished":"2024-01-08T05:06:06+00:00","dateModified":"2026-05-11","inLanguage":"yo","keywords":"personal tech journey, Rust discovery, AI exploration, Quantum Computing, art and photography fusion, Alien Studio, digital art creation, technology in art, innovative photography, artistic rediscovery","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/yo/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"yo"},"citation":[{"@type":"CreativeWork","url":"https://en.wikipedia.org/wiki/Artificial_intelligence"},{"@type":"CreativeWork","url":"https://en.wikipedia.org/wiki/Quantum_computing"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/yo/"},{"@type":"ListItem","position":3,"name":"Alien Studio: My Tech-to Art Journey in Photography","item":"https://sebastienrousseau.com/yo/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Wá">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Wá</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Wá">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Wá nínú àwọn ìwé..." autocomplete="off" aria-label="Wá"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> tì</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> ríranlọ́wọ́</span><span><kbd>Enter</kbd> ṣí</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

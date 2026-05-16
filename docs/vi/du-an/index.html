@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 01 Apr 2024 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 01 Apr 2024 06:06:06 +0000" id="last-modified" />
+    <title>Dự án — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Danh mục thư viện mã nguồn mở do Sebastien Rousseau duy trì cho thanh toán, quyết toán xuyên biên giới và mật mã kháng lượng tử.">
+<meta name="keywords" content="dự án mã nguồn mở, Python, Rust, thanh toán, ISO 20022, mật mã hậu lượng tử">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-HMsQLDUB9upnUA6e1JjAHuUH8bXnchg4B4Nlm0tlTwA=' 'sha256-e2K7HQO3IKVOZQ/+1PIluB3oXOdF+VUqTywhZLHEIh8=' 'sha256-jQdNZWvHxff8AvpqxH30kKOFmPHg/oKxllXtn3S2yrI=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/vi/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Nguồn cấp Atom" href="/vi/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Dự án — Sebastien Rousseau">
+<meta property="og:description" content="Danh mục thư viện mã nguồn mở do Sebastien Rousseau duy trì cho thanh toán, quyết toán xuyên biên giới và mật mã kháng lượng tử.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/vi/du-an/">
+<meta property="og:image" content="https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="vi_VN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dự án — Sebastien Rousseau">
+<meta name="twitter:description" content="Danh mục thư viện mã nguồn mở do Sebastien Rousseau duy trì cho thanh toán, quyết toán xuyên biên giới và mật mã kháng lượng tử.">
+<meta name="twitter:image" content="https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg">
+<link rel="canonical" href="https://sebastienrousseau.com/vi/du-an/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/projects/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/projets/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/mashari/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/prokolpo/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/projekty/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/projekte/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/proyectos/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/mga-proyekto/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/ayyukan/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/proyektim/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/pariyojanaen/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/proyek/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/progetti/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/purojekuto/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/peurojekteu/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/projecten/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/projekty/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/projetos/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/proiecte/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/proekty/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/projekt/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/khrong-kan/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/projeler/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/du-an/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/awon-ise/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/xiangmu/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/xiangmu-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/projects/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Chuyển đến nội dung chính</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Bật/tắt điều hướng" />
+      <div class="wrap">
+        <a class="ap-brand" href="/vi/index.html" aria-label="Open source for the future of finance. home">
+          <span class="ap-brand-name" itemprop="name">Mã nguồn mở cho tương lai của tài chính.</span>
+        </a>
+        <nav aria-label="Điều hướng chính">
+          <ul class="ap-menu">
+            <li><a href="/vi/gioi-thieu/index.html">Giới thiệu</a></li>
+            <li><a href="/vi/bai-viet/index.html">Bài viết</a></li>
+            <li><a href="/vi/cong-trinh/index.html">Công trình</a></li>
+            <li><a href="/vi/chu-de/index.html">Chủ đề</a></li>
+            <li><a href="/vi/du-an/index.html" aria-current="page" class="active">Dự án</a></li>
+            <li><a href="/vi/danh-sach-phat/index.html">Danh sách phát</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Chuyển sang giao diện tối" aria-pressed="false" title="Đổi giao diện">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Tìm kiếm (Cmd hoặc Ctrl + K)" title="Tìm kiếm (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Ngôn ngữ">
+            <button type="button" class="ap-lang-toggle" aria-label="VI, Đổi ngôn ngữ" aria-expanded="false" aria-haspopup="menu" title="Đổi ngôn ngữ">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">VI</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Sắp ra mắt">🇺🇦 Українська</span>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/vi/lien-he/index.html" aria-label="Liên hệ với tôi">Liên hệ ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Bật/tắt điều hướng">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Mã nguồn mở cho tương lai của tài chính.</h1>
+      <p class="sub">Các dự án mã nguồn mở bằng Python, Rust và JavaScript cho tương lai của tài chính.</p>
+    </section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap"><p class="setup-hero-eyebrow">MÃ NGUỒN MỞ CHO DỊCH VỤ TÀI CHÍNH</p>
+<p class="setup-hero-cta">
+<a class="pill" href="#catalog">Xem tất cả dự án</a>
+<a class="pill ghost" href="/vi/lien-he/index.html">Liên hệ với tôi</a>
+</p>
+<section class="setup-three" aria-labelledby="setup-three-heading"><header class="setup-three-head"><p class="setup-three-kicker">NỘI DUNG</p><h2 id="setup-three-heading" class="setup-three-headline">Ba lĩnh vực thực hành. <span class="setup-three-headline-soft">Một triết lý.</span></h2></header><div class="setup-three-grid"><article class="setup-card">
+<span class="setup-card-icon"><img alt="pain001 logo" src="https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg" loading="lazy" decoding="async" width="80" height="80"  fetchpriority="high"></span>
+<h3 class="setup-card-title">Thanh toán và quyết toán.</h3>
+<p class="setup-card-body">Bộ công cụ ISO 20022 <strong>pain.001</strong> và <strong>pacs.008</strong>, phân tích sao kê ngân hàng và thư viện Rust cho chuyển đổi sang tin nhắn xuyên biên giới có cấu trúc. Được thiết kế cho SWIFT, SEPA và các sơ đồ thanh toán thời gian thực.</p>
+<p class="setup-card-cta"><a href="#cat-payments" class="setup-card-link">Khám phá công cụ thanh toán <span aria-hidden="true">›</span></a></p>
+</article>
+<article class="setup-card">
+<span class="setup-card-icon"><img alt="KyberLib logo" src="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" loading="lazy" decoding="async" width="80" height="80" /></span>
+<h3 class="setup-card-title">Mật mã hậu lượng tử.</h3>
+<p class="setup-card-body">Triển khai Rust của <strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203), nguyên thuỷ băm và các khối xây dựng kháng lượng tử. Lớp bảo vệ vượt ra ngoài kỷ nguyên RSA và đường cong elliptic của xác thực tài chính.</p>
+<p class="setup-card-cta"><a href="#cat-quantum" class="setup-card-link">Khám phá thư viện an toàn lượng tử <span aria-hidden="true">›</span></a></p>
+</article>
+<article class="setup-card">
+<span class="setup-card-icon"><img alt="HSH logo" src="https://cloudcdn.pro/clients/hsh/v1/logos/hsh.svg" loading="lazy" decoding="async" width="80" height="80" /></span>
+<h3 class="setup-card-title">Công cụ và hạ tầng.</h3>
+<p class="setup-card-body">Thư viện Rust mã nguồn mở cho tuần tự hoá, ghi nhật ký, sinh mã, ngày và giờ. Cùng với <strong>Static Site Generator</strong> (SSG) tạo ra trang web này và môi trường lập trình viên giúp nó có thể triển khai được.</p>
+<p class="setup-card-cta"><a href="#cat-rust" class="setup-card-link">Khám phá công cụ lập trình viên <span aria-hidden="true">›</span></a></p>
+</article></div></section>
+<section class="newsroom" id="catalog">
+<header class="cat-section-head" id="cat-payments"><p class="cat-kicker">THANH TOÁN</p><h2 class="cat-headline">Thanh toán và quyết toán.</h2><p class="cat-lede">Công cụ ISO 20022 cho cuộc chuyển đổi toàn cầu. Tạo tệp Pain.001, chuyển khoản tín dụng xuyên biên giới pacs.008 và phân tích sao kê ngân hàng có cấu trúc.</p></header>
+<div class="newsroom-grid cat-grid">
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://pain001.com" title="pain001">
+<img alt="Banner for the pain001 open-source payments library" src="https://cloudcdn.pro/clients/pain001/v1/github/github-pain001.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Nổi bật · Python · ISO 20022</span>
+<h3><a href="https://pain001.com" title="pain001">pain001</a></h3>
+<p class="newsroom-excerpt">Thư viện Python tự động hoá việc tạo tệp thanh toán ISO 20022 pain.001 từ CSV hoặc SQLite. Được xây dựng cho cuộc chuyển đổi toàn cầu sang tin nhắn xuyên biên giới có cấu trúc.</p>
+<p class="gh-stats-row" aria-label="Repository stats"><span class="gh-stat gh-stars" aria-label="41 stars"><span class="gh-ico" aria-hidden="true">★</span><span class="gh-num">41</span></span><span class="gh-stat gh-forks" aria-label="16 forks"><span class="gh-ico" aria-hidden="true">⑂</span><span class="gh-num">16</span></span><span class="gh-stat gh-license"><span class="gh-ico" aria-hidden="true">⚖</span><span class="gh-txt">Apache-2.0</span></span><span class="gh-stat gh-pushed" title="2026-04-14"><span class="gh-ico" aria-hidden="true">⏱</span><span class="gh-txt">last commit 1mo ago</span></span></p></div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://pacs008.com/" title="pacs008">
+<img alt="Banner for the pacs008 ISO 20022 toolkit" src="https://pacs008.com/logo.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Python · ISO 20022</span>
+<h3><a href="https://pacs008.com/" title="pacs008">pacs008</a></h3>
+<p class="newsroom-excerpt">Tạo, xác thực và phân phối tin nhắn thanh toán ISO 20022 pacs.008 cho chuyển khoản tín dụng khách hàng FI-FI. Xác thực JSON Schema + XSD, IBAN tại 75 quốc gia, che PII tuân thủ GDPR/PCI-DSS.</p>
+<p class="gh-stats-row" aria-label="Repository stats"><span class="gh-stat gh-stars" aria-label="2 stars"><span class="gh-ico" aria-hidden="true">★</span><span class="gh-num">2</span></span><span class="gh-stat gh-license"><span class="gh-ico" aria-hidden="true">⚖</span><span class="gh-txt">Apache-2.0</span></span><span class="gh-stat gh-pushed" title="2026-04-10"><span class="gh-ico" aria-hidden="true">⏱</span><span class="gh-txt">last commit 1mo ago</span></span></p></div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://bankstatementparser.com/" title="Bank Statement Parser">
+<img alt="Banner for Bank Statement Parser" src="https://cloudcdn.pro/clients/bankstatementparser/v1/github/github-bankstatementparser.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Python · Tài chính</span>
+<h3><a href="https://bankstatementparser.com/" title="Bank Statement Parser">Bank Statement Parser</a></h3>
+<p class="newsroom-excerpt">Bộ công cụ Python cấp tài chính chuyển đổi sao kê ngân hàng đa định dạng thành dữ liệu có cấu trúc — cho các tệp sao kê thực tế và yêu cầu kiểm toán của môi trường được quản lý.</p>
+<p class="gh-stats-row" aria-label="Repository stats"><span class="gh-stat gh-stars" aria-label="19 stars"><span class="gh-ico" aria-hidden="true">★</span><span class="gh-num">19</span></span><span class="gh-stat gh-forks" aria-label="5 forks"><span class="gh-ico" aria-hidden="true">⑂</span><span class="gh-num">5</span></span><span class="gh-stat gh-license"><span class="gh-ico" aria-hidden="true">⚖</span><span class="gh-txt">Apache-2.0</span></span><span class="gh-stat gh-pushed" title="2026-05-13"><span class="gh-ico" aria-hidden="true">⏱</span><span class="gh-txt">last commit 3d ago</span></span></p></div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/nalufx" title="NaluFX">
+<img alt="Logo for NaluFX, AI-driven cash allocation in Rust" src="https://cloudcdn.pro/clients/nalufx/v1/logos/nalufx.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Kho quỹ · AI</span>
+<h3><a href="https://github.com/sebastienrousseau/nalufx" title="NaluFX">NaluFX</a></h3>
+<p class="newsroom-excerpt">Ứng dụng Rust tối ưu hoá phân bổ tiền mặt trên các cấu trúc quỹ phức tạp bằng dự báo dựa trên AI. Hướng tới các trường hợp sử dụng kho quỹ, kế toán quỹ và phân bổ tài sản trong các ngân hàng và nhà quản lý tài sản.</p>
+<p class="gh-stats-row" aria-label="Repository stats"><span class="gh-stat gh-stars" aria-label="1 stars"><span class="gh-ico" aria-hidden="true">★</span><span class="gh-num">1</span></span><span class="gh-stat gh-license"><span class="gh-ico" aria-hidden="true">⚖</span><span class="gh-txt">Apache-2.0</span></span><span class="gh-stat gh-pushed" title="2026-02-18"><span class="gh-ico" aria-hidden="true">⏱</span><span class="gh-txt">last commit 2mo ago</span></span></p></div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/qrc" title="QRC">
+<img alt="Logo for QRC, a Rust QR-code library" src="https://cloudcdn.pro/clients/qrc/v1/logos/qrc.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · QR Thanh toán</span>
+<h3><a href="https://github.com/sebastienrousseau/qrc" title="QRC">QRC</a></h3>
+<p class="newsroom-excerpt">Thư viện Rust để tạo và xử lý hình ảnh QR code ở nhiều định dạng. Các ứng dụng thanh toán trực tiếp gồm: EPC QR Codes cho chuyển khoản SEPA, QR liên kết thanh toán cho thu hộ thương nhân và luồng xác thực bổ sung.</p>
+<p class="gh-stats-row" aria-label="Repository stats"><span class="gh-stat gh-stars" aria-label="10 stars"><span class="gh-ico" aria-hidden="true">★</span><span class="gh-num">10</span></span><span class="gh-stat gh-license"><span class="gh-ico" aria-hidden="true">⚖</span><span class="gh-txt">Apache-2.0</span></span><span class="gh-stat gh-pushed" title="2026-04-25"><span class="gh-ico" aria-hidden="true">⏱</span><span class="gh-txt">last commit 3w ago</span></span></p></div>
+</article>
+</div>
+<header class="cat-section-head" id="cat-quantum"><p class="cat-kicker">MẬT MÃ HẬU LƯỢNG TỬ</p><h2 class="cat-headline">Mật mã hậu lượng tử.</h2><p class="cat-lede">Triển khai Rust của CRYSTALS-Kyber, nguyên thuỷ băm và digest, và các khối xây dựng kháng lượng tử cho xác thực cấp tài chính.</p></header>
+<div class="newsroom-grid cat-grid">
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://kyberlib.com/" title="KyberLib">
+<img alt="Banner for KyberLib" src="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Lượng tử</span>
+<h3><a href="https://kyberlib.com/" title="KyberLib">KyberLib</a></h3>
+<p class="newsroom-excerpt">Triển khai Rust mạnh mẽ của CRYSTALS-Kyber, tiêu chuẩn NIST FIPS 203 cho đóng gói khoá hậu lượng tử đa mục đích.</p>
+<p class="gh-stats-row" aria-label="Repository stats"><span class="gh-stat gh-stars" aria-label="41 stars"><span class="gh-ico" aria-hidden="true">★</span><span class="gh-num">41</span></span><span class="gh-stat gh-forks" aria-label="3 forks"><span class="gh-ico" aria-hidden="true">⑂</span><span class="gh-num">3</span></span><span class="gh-stat gh-pushed" title="2026-02-18"><span class="gh-ico" aria-hidden="true">⏱</span><span class="gh-txt">last commit 2mo ago</span></span></p></div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/hsh" title="Hash (HSH)">
+<img alt="Banner for the Hash (HSH) Rust library" src="https://cloudcdn.pro/clients/hsh/v1/github/github-hsh.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Bảo mật</span>
+<h3><a href="https://github.com/sebastienrousseau/hsh" title="Hash (HSH)">Hash (HSH)</a></h3>
+<p class="newsroom-excerpt">Thuật toán băm và digest an toàn cho mã hoá và xác thực mật khẩu, được thiết kế với tư thế kháng lượng tử cho kỷ nguyên hậu PQC.</p>
+<p class="gh-stats-row" aria-label="Repository stats"><span class="gh-stat gh-stars" aria-label="20 stars"><span class="gh-ico" aria-hidden="true">★</span><span class="gh-num">20</span></span><span class="gh-stat gh-forks" aria-label="1 forks"><span class="gh-ico" aria-hidden="true">⑂</span><span class="gh-num">1</span></span><span class="gh-stat gh-license"><span class="gh-ico" aria-hidden="true">⚖</span><span class="gh-txt">Apache-2.0</span></span><span class="gh-stat gh-pushed" title="2026-02-18"><span class="gh-ico" aria-hidden="true">⏱</span><span class="gh-txt">last commit 2mo ago</span></span></p></div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://password-generator.pro" title="Password Generator Pro">
+<img alt="Banner for Password Generator Pro" src="https://cloudcdn.pro/clients/password-generator-pro/v1/github/github-password-generator-pro.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Bảo mật</span>
+<h3><a href="https://password-generator.pro" title="Password Generator Pro">Password Generator Pro</a></h3>
+<p class="newsroom-excerpt">CLI đa nền tảng nhanh, đơn giản và mạnh mẽ để tạo mật khẩu mạnh, độc nhất và ngẫu nhiên, được hỗ trợ bởi các nguyên thuỷ mật mã đã được kiểm toán.</p>
+</div>
+</article>
+</div>
+<header class="cat-section-head" id="cat-ai"><p class="cat-kicker">AI VÀ GIỌNG NÓI</p><h2 class="cat-headline">Trí tuệ nhân tạo ứng dụng.</h2><p class="cat-lede">Các dự án AI mã nguồn mở áp dụng nhận dạng giọng nói, ngôn ngữ tự nhiên và các mô hình ngôn ngữ lớn vào các bài toán tài chính và năng suất thực tế.</p></header>
+<div class="newsroom-grid cat-grid">
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://akande.co/" title="Àkàndé">
+<img alt="Banner for Àkàndé, an advanced AI voice assistant" src="https://cloudcdn.pro/clients/akande/v1/github/github-akande.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI · Giọng nói</span>
+<h3><a href="https://akande.co/" title="Àkàndé">Àkàndé</a></h3>
+<p class="newsroom-excerpt">Trợ lý giọng nói tiên tiến sử dụng GPT của OpenAI cho tương tác tự nhiên, tóm tắt PDF và bộ nhớ đệm hiệu quả. Được xây dựng cho cả mục đích cá nhân và điều hành.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://audioanalyser.co/" title="Audio Analyser">
+<img alt="Banner for Audio Analyser" src="https://cloudcdn.pro/clients/audioanalyser/v1/github/github-audioanalyser.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">AI · Lời nói</span>
+<h3><a href="https://audioanalyser.co/" title="Audio Analyser">Audio Analyser</a></h3>
+<p class="newsroom-excerpt">Chuyển đổi âm thanh sang văn bản theo thời gian thực bằng nhận dạng giọng nói AI tiên tiến. Được thiết kế để khai mở những hiểu biết có thể hành động từ dữ liệu âm thanh và nâng cao trải nghiệm khách hàng và vận hành.<</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="https://github.com/sebastienrousseau/crypto-service" title="Crypto Service Suite">
+<img alt="Banner for the Crypto Service Suite" src="https://cloudcdn.pro/stocks/images/steven-wei-Z7NMhw8hcfg.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">JavaScript · Security</span>
+<h3><a href="https://github.com/sebastienrousseau/crypto-service" title="Crypto Service Suite">Crypto Service Suite</a></h3>
+<p class="newsroom-excerpt">A centralised cryptographic suite that solves common application crypto problems — encryption, tokenisation, transaction authorisation, code signing, and key lifecycle management.</p>
+<p class="gh-stats-row" aria-label="Repository stats"><span class="gh-stat gh-stars" aria-label="7 stars"><span class="gh-ico" aria-hidden="true">★</span><span class="gh-num">7</span></span><span class="gh-stat gh-forks" aria-label="2 forks"><span class="gh-ico" aria-hidden="true">⑂</span><span class="gh-num">2</span></span><span class="gh-stat gh-license"><span class="gh-ico" aria-hidden="true">⚖</span><span class="gh-txt">MIT</span></span><span class="gh-stat gh-pushed" title="2026-05-15"><span class="gh-ico" aria-hidden="true">⏱</span><span class="gh-txt">last commit 18h ago</span></span></p></div>
+</article>
+</div>
+<header class="cat-section-head" id="cat-rust"><p class="cat-kicker">RUST MÃ NGUỒN MỞ</p><h2 class="cat-headline">Thư viện và công cụ Rust.</h2><p class="cat-lede">Các dự án Rust mã nguồn mở — tuần tự hoá, ghi nhật ký, sinh mã, toán học và công cụ lập trình viên — bao gồm bộ tạo trang tĩnh đứng sau trang web này.</p></header>
+<div class="newsroom-grid cat-grid">
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/static-site-generator" title="Static Site Generator">
+<img alt="Banner for the Static Site Generator" src="https://cloudcdn.pro/clients/shokunin/v1/github/github-shokunin.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · SSG</span>
+<h3><a href="https://github.com/sebastienrousseau/static-site-generator" title="Static Site Generator">Static Site Generator</a></h3>
+<p class="newsroom-excerpt">A secure-by-default static site generator in Rust. WCAG AAA validation, CSP/SRI hardening, local LLM content pipeline, WebAssembly target, and 28-locale i18n.</p>
+<p class="gh-stats-row" aria-label="Repository stats"><span class="gh-stat gh-stars" aria-label="49 stars"><span class="gh-ico" aria-hidden="true">★</span><span class="gh-num">49</span></span><span class="gh-stat gh-forks" aria-label="4 forks"><span class="gh-ico" aria-hidden="true">⑂</span><span class="gh-num">4</span></span><span class="gh-stat gh-license"><span class="gh-ico" aria-hidden="true">⚖</span><span class="gh-txt">Apache-2.0</span></span><span class="gh-stat gh-pushed" title="2026-05-11"><span class="gh-ico" aria-hidden="true">⏱</span><span class="gh-txt">last commit 5d ago</span></span></p></div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/noyalib" title="noyalib">
+<img alt="Banner for the noyalib Rust YAML 1.2 ecosystem" src="https://cloudcdn.pro/clients/noyalib/v1/github/github-noyalib.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · YAML</span>
+<h3><a href="https://github.com/sebastienrousseau/noyalib" title="noyalib">noyalib</a></h3>
+<p class="newsroom-excerpt">Pure-Rust YAML 1.2 ecosystem. Zero unsafe, 100% spec compliance, streaming-first serde, lossless CST, JSON-Schema validation. Library + CLI + LSP + MCP + WASM bindings.</p>
+<p class="gh-stats-row" aria-label="Repository stats"><span class="gh-stat gh-stars" aria-label="1 stars"><span class="gh-ico" aria-hidden="true">★</span><span class="gh-num">1</span></span><span class="gh-stat gh-license"><span class="gh-ico" aria-hidden="true">⚖</span><span class="gh-txt">Apache-2.0</span></span><span class="gh-stat gh-pushed" title="2026-05-11"><span class="gh-ico" aria-hidden="true">⏱</span><span class="gh-txt">last commit 4d ago</span></span></p></div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://serdeyml.com/" title="Serde YML">
+<img alt="Banner for Serde YML" src="https://cloudcdn.pro/clients/serde_yml/v1/github/github-serde_yml.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Serialisation</span>
+<h3><a href="https://serdeyml.com/" title="Serde YML">Serde YML</a></h3>
+<p class="newsroom-excerpt">Effortless YAML serialisation and deserialisation of Rust data structures, built on the widely used Serde framework.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://rustlogs.com/" title="RustLogs (RLG)">
+<img alt="Banner for the RustLogs (RLG) library" src="https://cloudcdn.pro/clients/rlg/v1/github/github-rlg.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Logging</span>
+<h3><a href="https://rustlogs.com/" title="RustLogs (RLG)">RustLogs (RLG)</a></h3>
+<p class="newsroom-excerpt">A flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/libmake" title="LibMake">
+<img alt="Banner for LibMake" src="https://cloudcdn.pro/clients/libmake/v1/github/github-libmake.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Tooling</span>
+<h3><a href="https://github.com/sebastienrousseau/libmake" title="LibMake">LibMake</a></h3>
+<p class="newsroom-excerpt">A scaffold generator that quickly helps you create high-quality Rust libraries by emitting pre-filled, opinionated templated files.</p>
+<p class="gh-stats-row" aria-label="Repository stats"><span class="gh-stat gh-stars" aria-label="30 stars"><span class="gh-ico" aria-hidden="true">★</span><span class="gh-num">30</span></span><span class="gh-stat gh-forks" aria-label="1 forks"><span class="gh-ico" aria-hidden="true">⑂</span><span class="gh-num">1</span></span><span class="gh-stat gh-license"><span class="gh-ico" aria-hidden="true">⚖</span><span class="gh-txt">Apache-2.0</span></span><span class="gh-stat gh-pushed" title="2026-02-18"><span class="gh-ico" aria-hidden="true">⏱</span><span class="gh-txt">last commit 2mo ago</span></span></p></div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/dtt" title="DateTime (DTT)">
+<img alt="Banner for the DateTime (DTT) Rust library" src="https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Time</span>
+<h3><a href="https://github.com/sebastienrousseau/dtt" title="DateTime (DTT)">DateTime (DTT)</a></h3>
+<p class="newsroom-excerpt">A high-precision date and time library: day of the month, hour of the day, ISO 8601 formatting, time-zone safety, and much more.</p>
+<p class="gh-stats-row" aria-label="Repository stats"><span class="gh-stat gh-stars" aria-label="6 stars"><span class="gh-ico" aria-hidden="true">★</span><span class="gh-num">6</span></span><span class="gh-stat gh-license"><span class="gh-ico" aria-hidden="true">⚖</span><span class="gh-txt">Apache-2.0</span></span><span class="gh-stat gh-pushed" title="2026-04-07"><span class="gh-ico" aria-hidden="true">⏱</span><span class="gh-txt">last commit 1mo ago</span></span></p></div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://vrdlib.com/" title="Random (VRD)">
+<img alt="Banner for the Random (VRD) Rust library" src="https://cloudcdn.pro/clients/vrd/v1/github/github-vrd.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Math</span>
+<h3><a href="https://vrdlib.com/" title="Random (VRD)">Random (VRD)</a></h3>
+<p class="newsroom-excerpt">High-quality random number generation based on the Mersenne Twister algorithm, widely used in simulations and games.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/cmn" title="Common (CMN)">
+<img alt="Banner for the Common (CMN) Rust library" src="https://cloudcdn.pro/clients/cmn/v1/github/github-cmn.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Math</span>
+<h3><a href="https://github.com/sebastienrousseau/cmn" title="Common (CMN)">Common (CMN)</a></h3>
+<p class="newsroom-excerpt">A modern, fast, user-friendly library that makes it easy to access a wide range of mathematical and cryptographic constants.</p>
+<p class="gh-stats-row" aria-label="Repository stats"><span class="gh-stat gh-stars" aria-label="5 stars"><span class="gh-ico" aria-hidden="true">★</span><span class="gh-num">5</span></span><span class="gh-stat gh-license"><span class="gh-ico" aria-hidden="true">⚖</span><span class="gh-txt">Apache-2.0</span></span><span class="gh-stat gh-pushed" title="2026-04-27"><span class="gh-ico" aria-hidden="true">⏱</span><span class="gh-txt">last commit 2w ago</span></span></p></div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://minifunctions.com/" title="Mini Functions">
+<img alt="Banner for the Mini Functions Rust library" src="https://cloudcdn.pro/clients/mini-functions/v1/github/github-mini-functions.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Rust · Utility</span>
+<h3><a href="https://minifunctions.com/" title="Mini Functions">Mini Functions</a></h3>
+<p class="newsroom-excerpt">A highly performant utility and wrapper functions library for Rust, designed with optimisation and efficiency in mind.</p>
+<p class="gh-stats-row" aria-label="Repository stats"><span class="gh-stat gh-stars" aria-label="14 stars"><span class="gh-ico" aria-hidden="true">★</span><span class="gh-num">14</span></span><span class="gh-stat gh-forks" aria-label="2 forks"><span class="gh-ico" aria-hidden="true">⑂</span><span class="gh-num">2</span></span><span class="gh-stat gh-pushed" title="2026-02-18"><span class="gh-ico" aria-hidden="true">⏱</span><span class="gh-txt">last commit 2mo ago</span></span></p></div>
+</article>
+</div>
+<header class="cat-section-head" id="cat-web"><p class="cat-kicker">WEB VÀ MÔI TRƯỜNG LẬP TRÌNH VIÊN</p><h2 class="cat-headline">Web, mẫu và môi trường.</h2><p class="cat-lede">Mẫu khởi đầu, hai ấn phẩm tập trung vào ngành, một framework CSS và các dotfile giữ cho môi trường phát triển có thể tái tạo.</p></header>
+<div class="newsroom-grid cat-grid">
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/kaishi.github.io" title="Kaishi">
+<img alt="Banner for Kaishi, a starter template" src="https://cloudcdn.pro/clients/kaishi/v1/titles/title-kaishi.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Web · Template</span>
+<h3><a href="https://github.com/sebastienrousseau/kaishi.github.io" title="Kaishi">Kaishi</a></h3>
+<p class="newsroom-excerpt">A Static Site Generator starter template designed for clean, accessible, performant sites — the seed I reach for when shipping new content destinations.</p>
+<p class="gh-stats-row" aria-label="Repository stats"><span class="gh-stat gh-stars" aria-label="1 stars"><span class="gh-ico" aria-hidden="true">★</span><span class="gh-num">1</span></span><span class="gh-stat gh-license"><span class="gh-ico" aria-hidden="true">⚖</span><span class="gh-txt">Apache-2.0</span></span><span class="gh-stat gh-pushed" title="2023-11-05"><span class="gh-ico" aria-hidden="true">⏱</span><span class="gh-txt">last commit 2y ago</span></span></p></div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/skeletonic-stylus" title="Skeletonic Stylus">
+<img alt="Banner for the Skeletonic Stylus Library" src="https://cloudcdn.pro/clients/skeletonic/v1/logos/logo-skeletonic-stylus.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">CSS · Stylus</span>
+<h3><a href="https://github.com/sebastienrousseau/skeletonic-stylus" title="Skeletonic Stylus">Skeletonic Stylus</a></h3>
+<p class="newsroom-excerpt">A lightweight, modular Stylus library with components and mixins optimised for mobile and web application design. This site is built on top of it.</p>
+<p class="gh-stats-row" aria-label="Repository stats"><span class="gh-stat gh-stars" aria-label="3 stars"><span class="gh-ico" aria-hidden="true">★</span><span class="gh-num">3</span></span><span class="gh-stat gh-forks" aria-label="2 forks"><span class="gh-ico" aria-hidden="true">⑂</span><span class="gh-num">2</span></span><span class="gh-stat gh-license"><span class="gh-ico" aria-hidden="true">⚖</span><span class="gh-txt">Apache-2.0</span></span><span class="gh-stat gh-pushed" title="2026-05-03"><span class="gh-ico" aria-hidden="true">⏱</span><span class="gh-txt">last commit 1w ago</span></span></p></div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://bankingonai.co/" title="Banking On AI">
+<img alt="Banner for the Banking On AI publication" src="https://cloudcdn.pro/clients/bankingonai/v1/github/github-bankingonai.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Web · Publication</span>
+<h3><a href="https://bankingonai.co/" title="Banking On AI">Banking On AI</a></h3>
+<p class="newsroom-excerpt">How AI is transforming the banking sector — improved customer service, fraud detection, and streamlined operations for a digital age.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://bankingonquantum.com/" title="Banking On Quantum">
+<img alt="Banner for the Banking On Quantum publication" src="https://cloudcdn.pro/clients/bankingonquantum/v1/github/github-bankingonquantum.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Web · Publication</span>
+<h3><a href="https://bankingonquantum.com/" title="Banking On Quantum">Banking On Quantum</a></h3>
+<p class="newsroom-excerpt">How quantum computing is set to revolutionise banking and finance, from risk analysis to quantum cryptography and beyond.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media logo" href="https://l90s.com/" title="L90S">
+<img alt="Banner for the L90S website" src="https://cloudcdn.pro/clients/l90s/v1/github/github-l90s.svg" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Web · Finance</span>
+<h3><a href="https://l90s.com/" title="L90S">L90S</a></h3>
+<p class="newsroom-excerpt">Fractional CFO advisory by a trusted finance leader with 20+ years in tech, guiding companies to sustainable growth, funding, and optimised financial operations.</p>
+</div>
+</article>
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="https://dotfiles.io/" title="Dotfiles">
+<img alt="Banner for the Dotfiles project" src="https://cloudcdn.pro/clients/dotfiles/v2/images/banners/dotfiles.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Config · Cross-platform</span>
+<h3><a href="https://dotfiles.io/" title="Dotfiles">Dotfiles</a></h3>
+<p class="newsroom-excerpt">A powerful set of configuration files for macOS, Linux, and Windows — scripts and customised settings to streamline a development workflow.</p>
+<p class="gh-stats-row" aria-label="Repository stats"><span class="gh-stat gh-stars" aria-label="64 stars"><span class="gh-ico" aria-hidden="true">★</span><span class="gh-num">64</span></span><span class="gh-stat gh-forks" aria-label="16 forks"><span class="gh-ico" aria-hidden="true">⑂</span><span class="gh-num">16</span></span><span class="gh-stat gh-pushed" title="2026-05-15"><span class="gh-ico" aria-hidden="true">⏱</span><span class="gh-txt">last commit 19h ago</span></span></p></div>
+</article>
+</div>
+</section>
+<section class="qa" aria-labelledby="projects-qa-heading"><header class="qa-head"><h2 id="projects-qa-heading" class="qa-headline">Câu hỏi?<span class="qa-headline-soft"> Trả lời.</span></h2></header><section class="qa-list"><details class="qa-item">
+<summary class="qa-q">Các dự án này được phát hành theo giấy phép nào?</summary><section class="qa-a"><p>Tất cả các dự án được phát hành theo giấy phép <strong>Apache-2.0</strong>. Tệp <code>LICENSE</code> tại gốc của mỗi kho lưu trữ là nguồn chính thức.</p></section>
+</details>
+<details class="qa-item">
+<summary class="qa-q">Các dự án này đã sẵn sàng cho sản xuất chưa?</summary><section class="qa-a"><p>Tuỳ dự án. Các thư viện được đánh dấu <em>v1.x</em> đã được ổn định và kiểm thử dưới tải; các phiên bản trước v1 là nền tảng vững chắc nhưng có thể còn phát triển. README của mỗi kho lưu trữ nêu rõ trạng thái hiện tại; nếu bạn cần một đảm bảo cụ thể cho mục đích sử dụng sản xuất, vui lòng <a href="/vi/lien-he/">liên hệ với tôi</a>.</p></section>
+</details>
+<details class="qa-item">
+<summary class="qa-q">Làm thế nào để đóng góp hoặc báo cáo lỗi?</summary><section class="qa-a"><p>Mỗi dự án có một kho lưu trữ GitHub công khai tại <a href="https://github.com/sebastienrousseau" rel="external noopener">github.com/sebastienrousseau</a>. Mở một issue mô tả vấn đề (có ví dụ tái tạo tối thiểu sẽ được đánh giá cao) hoặc một pull request liên kết với một issue. Các đóng góp tuân theo <em>Developer Certificate of Origin</em> và yêu cầu commit có chữ ký.</p></section>
+</details>
+<details class="qa-item">
+<summary class="qa-q">Tôi có thể sử dụng các thư viện này trong môi trường ngân hàng được quản lý không?</summary><section class="qa-a"><p>Có, với các biện pháp phòng ngừa thông thường. Các thư viện là các tác phẩm mã nguồn mở độc lập, không phải sản phẩm được quản lý. Áp dụng quy trình thông thường của bạn về chuỗi cung ứng, bảo mật và rà soát phụ thuộc — vendoring qua bản nhân nội bộ, quét SBOM, ghim theo Git SHA hoặc dấu vân mật mã — trước khi triển khai sản xuất trên hạ tầng thanh toán.</p></section>
+</details>
+<details class="qa-item">
+<summary class="qa-q">Bạn có cung cấp hỗ trợ thương mại hoặc tư vấn không?</summary><section class="qa-a"><p>Có, theo lựa chọn. Các nhiệm vụ tập trung vào chuyển đổi ISO&nbsp;20022, lộ trình chuyển đổi hậu lượng tử và AI ứng dụng cho dịch vụ tài chính. <a href="/vi/lien-he/">Liên hệ với tôi</a> kèm một bản tóm tắt ngắn, lịch trình và các ràng buộc nếu có.</p></section>
+</details>
+<details class="qa-item">
+<summary class="qa-q">Làm thế nào để theo dõi các bản phát hành mới?</summary><section class="qa-a"><p>Mỗi bài viết có ngày trên trang được công bố qua <a href="/vi/rss.xml">nguồn cấp RSS</a> và bản tin <a href="https://news.bankingonquantum.com" rel="external noopener">Banking On Quantum</a>. Các kho lưu trữ riêng lẻ cũng phát hành các bản trên GitHub mà bạn có thể theo dõi trực tiếp.</p></section>
+</details></section></section>
+<aside class="setup-finale" aria-labelledby="projects-finale-heading">
+<p class="setup-finale-eyebrow">LIÊN HỆ</p>
+<h2 id="projects-finale-heading" class="setup-finale-headline">Có một ý tưởng? Hãy cùng xây dựng nó.</h2>
+<p class="setup-finale-lede">Hợp tác mã nguồn mở, kỹ thuật theo đơn đặt hàng, hoặc đơn giản là một cuộc trò chuyện về tương lai của thanh toán. Theo cách bạn muốn.</p>
+<p class="setup-finale-cta"><a class="pill" href="/vi/lien-he/index.html">Bắt đầu trò chuyện</a></p>
+</aside>
+</div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/vi/gioi-thieu/index.html">Giới thiệu</a></li>
+              <li><a href="/vi/lien-he/index.html">Liên hệ</a></li>
+              <li><a href="/vi/tao-bang-static-site-generator/index.html">Tạo bằng Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Bài viết</h2>
+            <ul>
+              <li><a href="/vi/bai-viet/index.html">Bài viết</a></li>
+              <li><a href="/vi/cong-trinh/index.html">Công trình</a></li>
+              <li><a href="/vi/the/index.html">Thẻ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Hoạt động</h2>
+            <ul>
+              <li><a href="/vi/du-an/index.html">Dự án</a></li>
+              <li><a href="/vi/danh-sach-phat/index.html">Danh sách phát</a></li>
+              <li><a href="/vi/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Kết nối</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Đăng ký bản tin">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — ghi chú nghiên cứu về thanh toán, AI và mật mã hậu lượng tử. Không spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="ban@nganhang.vn" />
+            <input type="hidden" name="_subject" value="Đăng ký bản tin — sebastienrousseau.com" />
+            <button type="submit">Đăng ký</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. Đã đăng ký bản quyền.</span>
+          <div class="social" aria-label="Liên kết mạng xã hội">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau trên Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau trên Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau trên LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau trên LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau trên Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau trên Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau trên YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau trên YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/vi/tro-nang/index.html">Trợ năng</a> ·
+            <a href="/vi/quyen-rieng-tu/index.html">Quyền riêng tư</a> ·
+            <a href="/vi/dieu-khoan/index.html">Điều khoản</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"vi"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Dự án — Sebastien Rousseau","url":"https://sebastienrousseau.com/vi/du-an/","inLanguage":"vi"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":"Dự án — Sebastien Rousseau","description":"Danh mục thư viện mã nguồn mở do Sebastien Rousseau duy trì cho thanh toán, quyết toán xuyên biên giới và mật mã kháng lượng tử.","url":"https://sebastienrousseau.com/vi/du-an/","inLanguage":"vi","about":"Open-source projects applied to finance and banking","author":{"@id":"https://sebastienrousseau.com/#person"},"isPartOf":{"@id":"https://sebastienrousseau.com/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Dự án","item":"https://sebastienrousseau.com/vi/du-an/"}]},{"@type":"FAQPage","@id":"https://sebastienrousseau.com/projects#faq","mainEntity":[{"@type":"Question","name":"What licence are these projects released under?","acceptedAnswer":{"@type":"Answer","text":"Most projects are dual-licensed under MIT and Apache-2.0 — the standard for the Rust ecosystem — which gives commercial users explicit patent rights as well as permissive redistribution. A small number of clients' tools are released under Apache-2.0 only. The licence file at the root of each repository is the authoritative source."}},{"@type":"Question","name":"Are these projects production-ready?","acceptedAnswer":{"@type":"Answer","text":"Many are. pain001 is used by banks and payment-service providers to automate ISO 20022 file creation. KyberLib tracks the NIST FIPS 203 specification and ships test vectors. Each repository's README and CI badges will tell you the current status; if you need a specific guarantee for production use, get in touch."}},{"@type":"Question","name":"How can I contribute or report an issue?","acceptedAnswer":{"@type":"Answer","text":"Every project has a public GitHub repository under github.com/sebastienrousseau. Open an issue describing the problem (a minimal reproducer helps) or a pull request linked to an issue. Contributions are governed by the Developer Certificate of Origin and require signed commits."}},{"@type":"Question","name":"Can I use these libraries in a regulated banking environment?","acceptedAnswer":{"@type":"Answer","text":"Yes, with the usual caveats. The libraries are independent open-source work, not a regulated product. Run your normal supply-chain, security, and dependency-review processes — vendoring through your internal mirror, scanning with SBOM tools, and pinning by Git SHA or cryptographic hash — before deploying to production payment infrastructure."}},{"@type":"Question","name":"Do you offer commercial support or consulting?","acceptedAnswer":{"@type":"Answer","text":"Yes, on a selective basis. Engagements focus on ISO 20022 migration, post-quantum cryptography migration roadmaps, and applied AI in financial services. Get in touch with a short brief, your timeline and any constraints."}},{"@type":"Question","name":"How do I follow new releases?","acceptedAnswer":{"@type":"Answer","text":"New papers and research notes are announced first through the site RSS feed and the Banking On Quantum newsletter, which covers post-quantum cryptography, central-bank policy, and the migration roadmap across major payment schemes. Individual repositories also publish releases on GitHub, which you can watch directly."}}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Tìm kiếm">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Tìm kiếm</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Tìm kiếm">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Tìm trong tài liệu..." autocomplete="off" aria-label="Tìm kiếm"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> đóng</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> điều hướng</span><span><kbd>Enter</kbd> mở</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

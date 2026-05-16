@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sebastien Rousseau — české vydání</title>
+    <link>https://sebastienrousseau.com/cs/</link>
+    <description>Články v češtině: aplikovaná AI, platby ISO 20022, postkvantová kryptografie a transformace velkoobchodních plateb.</description>
+    <atom:link href="https://sebastienrousseau.com/cs/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>cs-CZ</language>
+    <lastBuildDate>Sat, 16 May 2026 16:45:31 +0000</lastBuildDate>
+    <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Všechna práva vyhrazena.</copyright>
+    <item>
+      <title>La mejor arquitectura de infraestructura cloud en 2026: un blueprint AI-native, multicloud y consciente del cuántico para los servicios financieros</title>
+      <link>https://sebastienrousseau.com/cs/2026-05-21-nejlepsi-cloudova-architektura-pro-banky-2026/</link>
+      <description>La arquitectura cloud en 2026 se ha cristalizado en torno a seis pilares: infraestructura AI-native, multicloud inteligente, diseño serverless-first con WebAssembly en el edge, edge computing, DevSecOps automatizado con crypto-agilidad, y operaciones sostenibles de alta densidad. Para los bancos, la pregunta ya no es consumir el cloud sino diseñarlo, bajo presión convergente del agentic commerce, los unit economics agénticos, el riesgo cuántico harvest-now-decrypt-later, la seguridad MCP y la contagión algorítmica, la identidad criptográfica de los agentes, los requisitos de continuous treasury y el Reglamento europeo de IA.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-21-nejlepsi-cloudova-architektura-pro-banky-2026/</guid>
+      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
+      <category>arquitectura cloud 2026</category>
+      <category>infraestructura AI-native</category>
+      <category>multicloud</category>
+      <category>serverless</category>
+      <category>edge computing</category>
+      <category>WebAssembly</category>
+      <category>Wasm</category>
+      <category>DevSecOps</category>
+      <category>datacenter sostenible</category>
+      <category>refrigeración líquida</category>
+      <category>AWS Bedrock</category>
+      <category>Google Vertex AI</category>
+      <category>Azure OpenAI Service</category>
+      <category>agentic commerce</category>
+      <category>swarms multiagente</category>
+      <category>unit economics agénticos</category>
+      <category>FinOps agéntico</category>
+      <category>identidad criptográfica de agentes</category>
+      <category>SPIFFE</category>
+      <category>SPIRE</category>
+      <category>contagión algorítmica</category>
+      <category>gravedad de los datos</category>
+      <category>FinOps egress</category>
+      <category>HPC</category>
+      <category>almacenamiento GPU</category>
+      <category>continuous treasury</category>
+      <category>liquidez sin fronteras</category>
+      <category>pagos en tiempo real</category>
+      <category>generación de datos sintéticos</category>
+      <category>confidential computing</category>
+      <category>JPMorgan multicloud</category>
+      <category>modernización Citi</category>
+      <category>graph neural networks</category>
+      <category>fraude deepfake</category>
+      <category>harvest now decrypt later</category>
+      <category>HNDL</category>
+      <category>criptografía postcuántica</category>
+      <category>crypto-agilidad</category>
+      <category>seguridad MCP</category>
+      <category>prompt injection</category>
+      <category>ataques de cadena de suministro</category>
+      <category>CloudCDN</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>WCAG-AA</category>
+      <category>Sebastien Rousseau</category>
+    </item>
+    <item>
+      <title>Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán</title>
+      <link>https://sebastienrousseau.com/cs/2026-05-18-agentni-inzenyrstvi-banky-blueprint-2026/</link>
+      <description>La IA agéntica ha pasado del piloto a la producción en la banca mundial. El 70 % de las instituciones la utiliza en mayor o menor grado; solo una de cada cinco tiene un modelo de gobernanza maduro. Los adversarios autónomos operan a velocidad de máquina, el estate heredado COBOL con el que los nuevos sistemas deben interoperar fue escrito para las hipótesis batch de los años 1960, y el plazo «alto riesgo» del Reglamento europeo de IA está a doce semanas. He aquí la posición de ingeniería y gobernanza que un banco debe sostener.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-18-agentni-inzenyrstvi-banky-blueprint-2026/</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
+      <category>ingeniería agéntica</category>
+      <category>desarrollo guiado por especificación</category>
+      <category>bancos</category>
+      <category>servicios financieros</category>
+      <category>gobernanza IA</category>
+      <category>Reglamento europeo de IA</category>
+      <category>DORA</category>
+      <category>SR 11-7</category>
+      <category>NIST AI RMF</category>
+      <category>ISO 42001</category>
+      <category>modernización COBOL</category>
+      <category>mainframe</category>
+      <category>vibe coding</category>
+      <category>vibe hacking</category>
+      <category>agentes autónomos</category>
+      <category>Claude Code</category>
+      <category>GitHub Spec Kit</category>
+      <category>AI Bill of Materials</category>
+      <category>AIBOM</category>
+      <category>human in the loop</category>
+      <category>HITL</category>
+      <category>human on the loop</category>
+      <category>HOTL</category>
+      <category>gestión de riesgos de terceros</category>
+      <category>TPRM</category>
+      <category>riesgo proveedor</category>
+      <category>criptografía postcuántica</category>
+      <category>plano de control de agentes</category>
+      <category>FCA</category>
+      <category>SM&amp;CR</category>
+      <category>plan de acción 12 semanas</category>
+      <category>Sebastien Rousseau</category>
+    </item>
+    <item>
+      <title>El rendimiento oculto: descifrando los registros BRSRV y BSTBL de BlackRock</title>
+      <link>https://sebastienrousseau.com/cs/2026-05-15-skryty-vynos-blackrock-brsrv-bstbl-genius-act/</link>
+      <description>Bajo la GENIUS Act, las stablecoins no pueden pagar rendimiento. Los registros BRSRV y BSTBL de BlackRock ilustran el rodeo: un fondo monetario tokenizado en paralelo a una stablecoin regulada, para canalizar el rendimiento por un raíl conforme adyacente.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-15-skryty-vynos-blackrock-brsrv-bstbl-genius-act/</guid>
+      <pubDate>Fri, 15 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp" type="image/webp" length="0"/>
+      <category>stablecoins</category>
+      <category>GENIUS Act</category>
+      <category>BlackRock</category>
+      <category>BRSRV</category>
+      <category>BSTBL</category>
+      <category>fondo monetario tokenizado</category>
+      <category>OCC</category>
+      <category>OnChain Shares</category>
+      <category>Securitize</category>
+      <category>BNY Mellon</category>
+      <category>pagos</category>
+    </item>
+    <item>
+      <title>Asegurar el libro contable: guía para consejos de administración sobre la migración postcuántica en banca corporativa</title>
+      <link>https://sebastienrousseau.com/cs/2026-05-14-zabezpeceni-ucetni-knihy-postkvantova-migrace-firemni-finance/</link>
+      <description>El riesgo cuántico ha pasado de la curiosidad académica al mandato normativo. Con la hoja de ruta del G7 de enero de 2026, calendarios UE, UK y australiano ahora aclarados, y BIS Project Leap que ha demostrado la viabilidad en un sistema de pago real, la cuestión para los consejos de administración ya no es la migración, sino los plazos.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-14-zabezpeceni-ucetni-knihy-postkvantova-migrace-firemni-finance/</guid>
+      <pubDate>Thu, 14 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" type="image/webp" length="0"/>
+      <category>criptografía postcuántica</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>BIS Project Leap</category>
+      <category>G7 CEG</category>
+      <category>NCSC</category>
+      <category>ANSSI</category>
+      <category>BSI</category>
+      <category>ASD</category>
+      <category>CNSA 2.0</category>
+      <category>agilidad criptográfica</category>
+      <category>banca corporativa</category>
+      <category>pagos wholesale</category>
+    </item>
+    <item>
+      <title>El plazo pacs.008 de «dirección estructurada» de noviembre de 2026: vista a seis meses</title>
+      <link>https://sebastienrousseau.com/cs/2026-05-12-iso-20022-pacs008-strukturovana-adresa-lhuta/</link>
+      <description>A mediados de noviembre de 2026, SWIFT CBPR+ rechazará las direcciones postales no estructuradas en los mensajes pacs.008 y mensajes asociados. Con cerca del 65 % de mensajes aún no conformes y el 44 % de los bancos atrasados, la ventana de remediación se cierra más rápido de lo que la mayoría de los programas de preparación están diseñados para gestionar.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-12-iso-20022-pacs008-strukturovana-adresa-lhuta/</guid>
+      <pubDate>Tue, 12 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp" type="image/webp" length="0"/>
+      <category>ISO 20022</category>
+      <category>pacs.008</category>
+      <category>pacs.009</category>
+      <category>pacs.004</category>
+      <category>pacs.003</category>
+      <category>pain.001</category>
+      <category>CBPR+</category>
+      <category>SWIFT</category>
+      <category>SR2026</category>
+      <category>dirección estructurada</category>
+      <category>SEPA</category>
+      <category>EPC</category>
+      <category>pagos transfronterizos</category>
+      <category>cribado de sanciones</category>
+      <category>pacs008</category>
+    </item>
+    <item>
+      <title>La memoria flash de Lucy, revisitada: lo que Besson vio sobre la migración del conocimiento a las máquinas</title>
+      <link>https://sebastienrousseau.com/cs/2026-05-11-lucy-besson-prenos-znalosti-ai-a-kvantum/</link>
+      <description>Doce años después de su estreno, Lucy de Luc Besson se lee menos como pseudociencia y más como un experimento mental sobre lo que ocurre cuando el conocimiento humano migra hacia sustratos no biológicos. En la era de los grandes modelos de lenguaje, los qubits de átomos neutros y la emulación cerebral completa, la metáfora central del filme envejece notablemente bien.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-11-lucy-besson-prenos-znalosti-ai-a-kvantum/</guid>
+      <pubDate>Mon, 11 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" type="image/webp" length="0"/>
+      <category>Lucy</category>
+      <category>Luc Besson</category>
+      <category>transferencia de conocimiento</category>
+      <category>IA</category>
+      <category>LLM</category>
+      <category>qubits de átomos neutros</category>
+      <category>emulación cerebral</category>
+      <category>Neuralink</category>
+      <category>Eon Systems</category>
+      <category>Carboncopies</category>
+      <category>Fromm</category>
+      <category>independencia del sustrato</category>
+      <category>filosofía de la IA</category>
+    </item>
+    <item>
+      <title>Los umbrales cuánticos vuelven a moverse</title>
+      <link>https://sebastienrousseau.com/cs/2026-04-11-kvantove-prahove-hodnoty-se-zase-posunuji/</link>
+      <description>Un nuevo artículo sugiere que el algoritmo de Shor podría ejecutarse con solo 10.000 qubits. El umbral de la computación cuántica criptográficamente relevante cae más rápido de lo que la mayoría suponía.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-04-11-kvantove-prahove-hodnoty-se-zase-posunuji/</guid>
+      <pubDate>Sat, 11 Apr 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" type="image/webp" length="0"/>
+      <category>algoritmo de Shor</category>
+      <category>qubits</category>
+      <category>computación cuántica</category>
+      <category>ECC</category>
+      <category>RSA-2048</category>
+      <category>átomos neutros reconfigurables</category>
+      <category>códigos de corrección de errores</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>CRYSTALS-Dilithium</category>
+      <category>PQC</category>
+      <category>criptografía postcuántica</category>
+    </item>
+    <item>
+      <title>Pagos resistentes a lo cuántico: por qué la industria debe actuar ahora</title>
+      <link>https://sebastienrousseau.com/cs/2025-09-01-kvantove-odolne-platby-epaa/</link>
+      <description>La computación cuántica amenaza la criptografía de los sistemas de pago. El libro blanco EPAA expone el riesgo estructural y aboga por una migración urgente hacia la criptografía postcuántica.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2025-09-01-kvantove-odolne-platby-epaa/</guid>
+      <pubDate>Mon, 01 Sep 2025 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/digital-nodes.webp" type="image/webp" length="0"/>
+      <category>pagos resistentes a lo cuántico</category>
+      <category>criptografía postcuántica</category>
+      <category>SEPA</category>
+      <category>SWIFT gpi</category>
+      <category>ISO 20022</category>
+      <category>seguridad de los servicios financieros</category>
+      <category>EPAA</category>
+      <category>harvest-now decrypt-later</category>
+      <category>agilidad criptográfica</category>
+      <category>Sebastien Rousseau</category>
+    </item>
+    <item>
+      <title>Criptografía sobre retículos: un bug en el ataque LWE de Chen</title>
+      <link>https://sebastienrousseau.com/cs/2024-04-22-chyba-v-kvantovem-algoritmu-pro-mrizkovou-kryptografii/</link>
+      <description>Un bug en el algoritmo cuántico LWE de Yilei Chen ofrece un respiro temporal a la criptografía sobre retículos. Lo que esto significa para CRYSTALS-Kyber, Dilithium y la hoja de ruta PQC.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2024-04-22-chyba-v-kvantovem-algoritmu-pro-mrizkovou-kryptografii/</guid>
+      <pubDate>Mon, 22 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/digital-nodes.webp" type="image/webp" length="0"/>
+      <category>criptografía postcuántica</category>
+      <category>NIST</category>
+      <category>estandarización PQC</category>
+      <category>Yilei Chen</category>
+      <category>algoritmo cuántico</category>
+      <category>criptografía sobre retículos</category>
+      <category>problema LWE</category>
+      <category>CRYSTALS-KYBER</category>
+      <category>CRYSTALS-Dilithium</category>
+      <category>criptografía resistente a lo cuántico</category>
+    </item>
+    <item>
+      <title>Un algoritmo cuántico desafía a la criptografía sobre retículos</title>
+      <link>https://sebastienrousseau.com/cs/2024-04-15-kvantovy-algoritmus-vyzva-kryptografii-na-mrizkach/</link>
+      <description>Un nuevo algoritmo cuántico en tiempo polinómico de Yilei Chen apunta a la criptografía sobre retículos. Implicaciones para los estándares postcuánticos, incluido CRYSTALS-Kyber.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2024-04-15-kvantovy-algoritmus-vyzva-kryptografii-na-mrizkach/</guid>
+      <pubDate>Mon, 15 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/digital-constellation.webp" type="image/webp" length="0"/>
+      <category>computación cuántica</category>
+      <category>algoritmo cuántico</category>
+      <category>criptografía sobre retículos</category>
+      <category>LWE</category>
+      <category>cifrado</category>
+      <category>criptografía postcuántica</category>
+      <category>ciberseguridad</category>
+      <category>Yilei Chen</category>
+      <category>investigación criptográfica</category>
+      <category>amenazas de seguridad</category>
+    </item>
+    <item>
+      <title>OpenVoice: a la vanguardia de la innovación en clonación de voz</title>
+      <link>https://sebastienrousseau.com/cs/2024-04-01-openvoice-prukopnicka-inovace-v-klonovani-hlasu/</link>
+      <description>OpenVoice, del MIT, Tsinghua y MyShell: clonación de voz de calidad de producción con control del tono, el acento y la emoción, y los compromisos a conocer.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2024-04-01-openvoice-prukopnicka-inovace-v-klonovani-hlasu/</guid>
+      <pubDate>Mon, 01 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/open-voice.webp" type="image/webp" length="0"/>
+      <category>OpenVoice</category>
+      <category>clonación de voz</category>
+      <category>síntesis vocal IA</category>
+      <category>clonación de voz de código abierto</category>
+      <category>síntesis vocal multilingüe</category>
+      <category>clonación de voz instantánea</category>
+      <category>control de estilo vocal</category>
+      <category>accesibilidad vocal</category>
+      <category>voz en el entretenimiento</category>
+      <category>voz IA para servicio al cliente</category>
+    </item>
+    <item>
+      <title>El cifrado completamente homomórfico (FHE) en la era bancaria cuántica</title>
+      <link>https://sebastienrousseau.com/cs/2024-03-25-plne-homomorfni-sifrovani-v-bankovni-kvantove-ere/</link>
+      <description>Cómo el cifrado completamente homomórfico revoluciona la seguridad de los datos en la banca y las finanzas, garantizando la confidencialidad frente a las amenazas de la computación cuántica.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2024-03-25-plne-homomorfni-sifrovani-v-bankovni-kvantove-ere/</guid>
+      <pubDate>Mon, 25 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp" type="image/webp" length="0"/>
+      <category>cifrado completamente homomórfico</category>
+      <category>seguridad bancaria</category>
+      <category>computación cuántica</category>
+      <category>cifrado de datos financieros</category>
+      <category>FHE</category>
+      <category>RGPD</category>
+      <category>CCPA</category>
+      <category>cumplimiento</category>
+      <category>computación cloud</category>
+      <category>IA y confidencialidad</category>
+      <category>LLM cifrado</category>
+      <category>Zama</category>
+      <category>Gentry</category>
+    </item>
+    <item>
+      <title>Hacer progresar la IA con los LLM multimodales: lecciones de MM1</title>
+      <link>https://sebastienrousseau.com/cs/2024-03-18-pokrok-ai-s-multimodalnimi-llm-lekce-z-mm1/</link>
+      <description>Descubra el artículo MM1 de Apple sobre los grandes modelos de lenguaje multimodales (MLLM). Arquitectura, estrategias de preentrenamiento y potencial de la IA.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2024-03-18-pokrok-ai-s-multimodalnimi-llm-lekce-z-mm1/</guid>
+      <pubDate>Mon, 18 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/mm1-visual.webp" type="image/webp" length="0"/>
+      <category>LLM multimodales</category>
+      <category>estudio MM1</category>
+      <category>avances IA</category>
+      <category>estrategias de preentrenamiento</category>
+      <category>reconocimiento de imágenes</category>
+      <category>procesamiento del lenguaje natural</category>
+      <category>aplicaciones IA</category>
+      <category>futuro de la IA</category>
+      <category>aprendizaje multimodal</category>
+      <category>investigación IA</category>
+    </item>
+    <item>
+      <title>Reconocimiento de voz en tiempo real rápido en macOS: OpenAI Whisper</title>
+      <link>https://sebastienrousseau.com/cs/2024-03-12-revoluce-rozpoznavani-reci-realny-cas-na-macos-s-whisperem/</link>
+      <description>Cómo OpenAI Whisper y Metal Performance Shaders transforman el reconocimiento de voz en tiempo real en macOS, con velocidad y precisión inigualadas.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2024-03-12-revoluce-rozpoznavani-reci-realny-cas-na-macos-s-whisperem/</guid>
+      <pubDate>Tue, 12 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/research-paper.webp" type="image/webp" length="0"/>
+      <category>OpenAI Whisper</category>
+      <category>Metal Performance Shaders</category>
+      <category>reconocimiento de voz macOS</category>
+      <category>transcripción en tiempo real</category>
+      <category>detección de actividad vocal</category>
+      <category>aceleración GPU</category>
+      <category>integración Python</category>
+      <category>speech-to-text macOS</category>
+      <category>detección de voz eficiente en energía</category>
+      <category>Apple silicon</category>
+    </item>
+    <item>
+      <title>RustLogs (RLG): biblioteca de registro estructurado para Rust</title>
+      <link>https://sebastienrousseau.com/cs/2024-03-08-rustlogs-pokrocila-knihovna-logovani-pro-rust/</link>
+      <description>Descubra RustLogs (RLG), la biblioteca flexible de registro para Rust con formatos de logs estructurados, registro asíncrono y opciones de personalización extensas.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2024-03-08-rustlogs-pokrocila-knihovna-logovani-pro-rust/</guid>
+      <pubDate>Fri, 08 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/rustlogs.webp" type="image/webp" length="0"/>
+      <category>biblioteca de registro Rust</category>
+      <category>registro Rust asíncrono</category>
+      <category>formatos de logs estructurados</category>
+      <category>depuración Rust</category>
+      <category>registro personalizable</category>
+      <category>herramientas de desarrollo Rust</category>
+      <category>funcionalidades RustLogs RLG</category>
+      <category>registro eficiente</category>
+      <category>integración RustLogs</category>
+      <category>documentación RustLogs</category>
+    </item>
+    <item>
+      <title>Le Chat de Mistral AI: IA conversacional multilingüe</title>
+      <link>https://sebastienrousseau.com/cs/2024-03-04-le-chat-od-mistral-ai-nova-era-konverzacni-ai/</link>
+      <description>Conozca al nuevo asistente multilingüe de Mistral AI: una IA avanzada capaz de comprender y responder en varias lenguas, en una misma conversación y en tiempo real.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2024-03-04-le-chat-od-mistral-ai-nova-era-konverzacni-ai/</guid>
+      <pubDate>Mon, 04 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp" type="image/webp" length="0"/>
+      <category>Le Chat</category>
+      <category>Mistral AI</category>
+      <category>chatbot Mistral</category>
+      <category>asistente virtual</category>
+      <category>comprensión multilingüe</category>
+      <category>servicio al cliente IA</category>
+      <category>soluciones empresariales Mistral</category>
+      <category>personalización Le Chat</category>
+      <category>soporte multilingüe</category>
+      <category>comunicación IA</category>
+      <category>IA para empresa</category>
+    </item>
+    <item>
+      <title>Google Gemma: transformar el desarrollo de la IA de código abierto</title>
+      <link>https://sebastienrousseau.com/cs/2024-02-26-google-gemma-promena-open-source-ai-vyvoje/</link>
+      <description>Descubra el modelo Gemma de Google: un proyecto de código abierto que propone soluciones de IA ética para uso personal y empresarial.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2024-02-26-google-gemma-promena-open-source-ai-vyvoje/</guid>
+      <pubDate>Mon, 26 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-ship.webp" type="image/webp" length="0"/>
+      <category>Google Gemma</category>
+      <category>modelo de IA de código abierto</category>
+      <category>arquitectura técnica Gemma</category>
+      <category>Gemma 2B 7B</category>
+      <category>IA ética</category>
+      <category>integración IA macOS</category>
+      <category>soluciones IA para empresa</category>
+      <category>IA conversacional</category>
+      <category>análisis de datos IA</category>
+      <category>IA para dispositivos edge</category>
+    </item>
+    <item>
+      <title>Descifrar Gemini 1.5: la revolución IA de Google explicada</title>
+      <link>https://sebastienrousseau.com/cs/2024-02-19-objevit-gemini-googleova-ai-revoluce/</link>
+      <description>Gemini 1.5 de Google lleva la ventana de contexto más allá del millón de tokens. Lo que esto desbloquea para las finanzas potenciadas por recuperación y los compromisos a conocer.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2024-02-19-objevit-gemini-googleova-ai-revoluce/</guid>
+      <pubDate>Mon, 19 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp" type="image/webp" length="0"/>
+      <category>Gemini 1.5</category>
+      <category>Google AI</category>
+      <category>arquitectura Mixture-of-Experts</category>
+      <category>eficiencia computacional</category>
+      <category>expansión de la ventana de contexto</category>
+      <category>innovación IA</category>
+      <category>transformación del análisis de datos</category>
+      <category>in-context learning</category>
+      <category>casos de uso IA</category>
+      <category>revolución tecnológica</category>
+    </item>
+    <item>
+      <title>El AI Act de la UE: pionero de la regulación ética de la IA en el mundo</title>
+      <link>https://sebastienrousseau.com/cs/2024-02-13-evropsky-akt-o-ai-budoucnost-svetove-regulace/</link>
+      <description>El AI Act de la UE establece el primer marco completo de regulación ética y por riesgo de la IA en el mundo. Lo que cambia para los bancos, los proveedores y los sistemas de alto riesgo.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2024-02-13-evropsky-akt-o-ai-budoucnost-svetove-regulace/</guid>
+      <pubDate>Tue, 13 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" type="image/webp" length="0"/>
+      <category>AI Act UE</category>
+      <category>regulación de la inteligencia artificial</category>
+      <category>marco ético IA</category>
+      <category>gestión de riesgos IA</category>
+      <category>innovación IA</category>
+      <category>transparencia IA</category>
+      <category>derechos de los consumidores</category>
+      <category>gobernanza IA</category>
+      <category>estándares IA</category>
+      <category>ética IA</category>
+    </item>
+    <item>
+      <title>Àkàndé: asistente de voz impulsado por GPT para directivos</title>
+      <link>https://sebastienrousseau.com/cs/2024-02-12-akande-hlasovy-asistent-revoluce-asistence/</link>
+      <description>Cómo Àkàndé aprovecha la comprensión del lenguaje natural de OpenAI GPT, los resúmenes en PDF y una caché eficiente para redefinir la asistencia personal y ejecutiva.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2024-02-12-akande-hlasovy-asistent-revoluce-asistence/</guid>
+      <pubDate>Mon, 12 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" type="image/webp" length="0"/>
+      <category>Àkàndé</category>
+      <category>asistente de voz</category>
+      <category>comprensión del lenguaje natural</category>
+      <category>resúmenes en PDF</category>
+      <category>caché eficiente</category>
+      <category>OpenAI GPT</category>
+      <category>asistencia ejecutiva</category>
+      <category>asistencia personal</category>
+      <category>asistentes digitales</category>
+      <category>innovación tecnológica</category>
+    </item>
+    <item>
+      <title>IA generativa en la publicidad: Amazon Rufus y Meta</title>
+      <link>https://sebastienrousseau.com/cs/2024-02-08-revoluce-reklamy-jak-ai-tvori-budoucnost/</link>
+      <description>Cómo la IA transforma la publicidad: perspectivas sobre Rufus de Amazon y los últimos desarrollos de Meta. Descubra el impacto en el compromiso del consumidor.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2024-02-08-revoluce-reklamy-jak-ai-tvori-budoucnost/</guid>
+      <pubDate>Thu, 08 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/advertising-ai.webp" type="image/webp" length="0"/>
+      <category>IA en la publicidad</category>
+      <category>Amazon Rufus</category>
+      <category>herramientas IA Meta</category>
+      <category>segmentación del consumidor</category>
+      <category>tecnología publicitaria</category>
+      <category>chatbots IA</category>
+      <category>tendencias de marketing digital</category>
+      <category>analítica IA</category>
+      <category>IA creativa</category>
+      <category>optimización de campañas</category>
+    </item>
+    <item>
+      <title>Análisis, traducción e insights de audio impulsados por IA</title>
+      <link>https://sebastienrousseau.com/cs/2024-01-29-analyza-audia-preklady-a-poznatky-s-ai/</link>
+      <description>Cómo Audio Analyser, impulsado por Azure AI, transforma la conversión speech-to-text, el análisis de texto y las traducciones para insights accionables.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2024-01-29-analyza-audia-preklady-a-poznatky-s-ai/</guid>
+      <pubDate>Mon, 29 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" type="image/webp" length="0"/>
+      <category>audio analyser</category>
+      <category>azure ai</category>
+      <category>speech-to-text</category>
+      <category>análisis de datos de audio</category>
+      <category>análisis de texto</category>
+      <category>traducciones IA</category>
+      <category>insights de audio</category>
+      <category>transcripción automatizada</category>
+      <category>tratamiento de datos de audio</category>
+      <category>aprendizaje automático</category>
+    </item>
+    <item>
+      <title>AI Prompt Engineering 2024: técnicas que funcionan</title>
+      <link>https://sebastienrousseau.com/cs/2024-01-23-pokrok-v-prompt-engineeringu/</link>
+      <description>Explore los avances 2024 del Prompt Engineering: tendencias y técnicas innovadoras que revolucionan la tecnología y las finanzas.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2024-01-23-pokrok-v-prompt-engineeringu/</guid>
+      <pubDate>Tue, 23 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" type="image/webp" length="0"/>
+      <category>AI Prompt Engineering</category>
+      <category>instrucciones personalizadas</category>
+      <category>IA multipersona</category>
+      <category>chain of thought</category>
+      <category>computación cuántica</category>
+      <category>IA ética</category>
+      <category>adaptive prompting</category>
+      <category>zero shot</category>
+      <category>few shot</category>
+      <category>tendencias tecnológicas IA</category>
+    </item>
+    <item>
+      <title>Alien Studio: mi viaje de la tecnología al arte fotográfico</title>
+      <link>https://sebastienrousseau.com/cs/2024-01-15-alien-studio-revoluce-umeni-ai-fotografii/</link>
+      <description>Acompáñeme en mi recorrido personal: de Rust, la IA y la computación cuántica hacia la redefinición del arte y la fotografía a través de Alien Studio.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2024-01-15-alien-studio-revoluce-umeni-ai-fotografii/</guid>
+      <pubDate>Mon, 15 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" type="image/webp" length="0"/>
+      <category>recorrido tecnológico personal</category>
+      <category>descubrimiento Rust</category>
+      <category>exploración IA</category>
+      <category>computación cuántica</category>
+      <category>fusión arte y fotografía</category>
+      <category>Alien Studio</category>
+      <category>creación de arte digital</category>
+      <category>tecnología en el arte</category>
+      <category>fotografía innovadora</category>
+      <category>redescubrimiento artístico</category>
+    </item>
+    <item>
+      <title>Qiskit y transformada de Fourier cuántica para el análisis de ratios de crédito</title>
+      <link>https://sebastienrousseau.com/cs/2024-01-08-optimalizace-analyzy-uveroveho-pomeru-s-qiskitem-a-fourierovou/</link>
+      <description>Cómo IBM Qiskit y la transformada de Fourier cuántica revolucionan el análisis de ratios de crédito en finanzas, ofreciendo precisión y rapidez inéditas.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2024-01-08-optimalizace-analyzy-uveroveho-pomeru-s-qiskitem-a-fourierovou/</guid>
+      <pubDate>Mon, 08 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" type="image/webp" length="0"/>
+      <category>computación cuántica</category>
+      <category>finanzas</category>
+      <category>análisis de ratios de crédito</category>
+      <category>Qiskit</category>
+      <category>transformada de Fourier cuántica</category>
+      <category>IBM</category>
+      <category>aprendizaje automático</category>
+      <category>inteligencia artificial</category>
+      <category>evaluación del riesgo financiero</category>
+      <category>solvencia</category>
+    </item>
+    <item>
+      <title>Tendencias IA 2024: perspectivas y predicciones para el futuro</title>
+      <link>https://sebastienrousseau.com/cs/2024-01-01-ai-trendy-2024-poznatky-a-predpovedi/</link>
+      <description>Tendencias IA para 2024: IA generativa en finanzas, modelos multimodales, LLM en dispositivo y los giros que remodelarán la banca y la ingeniería de producto.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2024-01-01-ai-trendy-2024-poznatky-a-predpovedi/</guid>
+      <pubDate>Mon, 01 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" type="image/webp" length="0"/>
+      <category>tendencias IA 2024</category>
+      <category>IA generativa</category>
+      <category>IA en educación</category>
+      <category>ciberseguridad IA</category>
+      <category>IA en finanzas</category>
+      <category>creación de contenido IA</category>
+      <category>IA para el espacio</category>
+      <category>IA ética</category>
+      <category>IA en distribución</category>
+      <category>analítica IA</category>
+    </item>
+    <item>
+      <title>Revolucionar las finanzas con algoritmos cuánticos potenciados por IA</title>
+      <link>https://sebastienrousseau.com/cs/2023-12-25-revoluce-financi-pomoci-kvantovych-algoritmu-s-ai/</link>
+      <description>El rol transformador de la IA en los algoritmos cuánticos para las finanzas, con foco en sus sutilezas matemáticas y sus aplicaciones bancarias.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2023-12-25-revoluce-financi-pomoci-kvantovych-algoritmu-s-ai/</guid>
+      <pubDate>Mon, 25 Dec 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
+      <category>computación cuántica</category>
+      <category>algoritmos IA</category>
+      <category>matemáticas financieras</category>
+      <category>tecnología bancaria</category>
+      <category>gestión de riesgos</category>
+      <category>diseño de algoritmos</category>
+      <category>análisis de datos</category>
+      <category>estrategias de inversión</category>
+      <category>finanzas cuánticas</category>
+      <category>aprendizaje automático</category>
+    </item>
+    <item>
+      <title>Estado de la IA y la computación cuántica en la banca: revisión 2023</title>
+      <link>https://sebastienrousseau.com/cs/2023-12-18-stav-ai-a-kvantovych-vypoctu-v-bankovnictvi-prehled-2023/</link>
+      <description>Explorar el panorama tecnológico 2023: IA y computación cuántica revolucionando la banca, auge de los modelos de código abierto, regulaciones y gobernanza en evolución.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2023-12-18-stav-ai-a-kvantovych-vypoctu-v-bankovnictvi-prehled-2023/</guid>
+      <pubDate>Mon, 18 Dec 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
+      <category>IA en la banca</category>
+      <category>computación cuántica</category>
+      <category>tecnología financiera</category>
+      <category>IA de código abierto</category>
+      <category>gestión del riesgo</category>
+      <category>seguridad cuántica</category>
+      <category>regulación de la IA</category>
+      <category>ética de la IA</category>
+      <category>gobernanza de la IA</category>
+      <category>innovación bancaria</category>
+    </item>
+    <item>
+      <title>La distribución cuántica de claves revoluciona la seguridad bancaria</title>
+      <link>https://sebastienrousseau.com/cs/2023-12-11-kvantova-distribuce-klicu-revoluce-bankovni-bezpecnosti/</link>
+      <description>Mientras los ordenadores cuánticos amenazan los métodos de cifrado clásicos, la distribución cuántica de claves (QKD) emerge como un game-changer, ofreciendo una seguridad sin parangón.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2023-12-11-kvantova-distribuce-klicu-revoluce-bankovni-bezpecnosti/</guid>
+      <pubDate>Mon, 11 Dec 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" type="image/webp" length="0"/>
+      <category>distribución cuántica de claves</category>
+      <category>QKD</category>
+      <category>seguridad cuántica</category>
+      <category>banca</category>
+      <category>industria financiera</category>
+      <category>finanzas digitales</category>
+      <category>ciberseguridad</category>
+      <category>computación cuántica</category>
+      <category>HSBC</category>
+      <category>ensayo de protección cuántica</category>
+      <category>transacciones financieras</category>
+    </item>
+    <item>
+      <title>Gestión eficiente de fechas y horas con DateTime (DTT)</title>
+      <link>https://sebastienrousseau.com/cs/2023-12-04-zvladnuti-data-a-casu-v-rustu-s-knihovnou-dtt/</link>
+      <description>DateTime (DTT) es una biblioteca Rust para parsear, validar, manipular y formatear fechas y horas: alta precisión, amplia funcionalidad.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2023-12-04-zvladnuti-data-a-casu-v-rustu-s-knihovnou-dtt/</guid>
+      <pubDate>Mon, 04 Dec 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg" type="image/webp" length="0"/>
+      <category>DateTime</category>
+      <category>DTT</category>
+      <category>biblioteca Rust</category>
+      <category>parseo</category>
+      <category>validación</category>
+      <category>manipulación</category>
+      <category>formateo</category>
+      <category>fechas</category>
+      <category>horas</category>
+    </item>
+    <item>
+      <title>KyberLib: CRYSTALS-Kyber en Rust para el postcuántico</title>
+      <link>https://sebastienrousseau.com/cs/2023-11-28-kyberlib-rust-stit-proti-kvantovym-hrozbam/</link>
+      <description>Implementación criptográfica robusta y resistente a lo cuántico del algoritmo CRYSTALS-Kyber, para proteger sus datos de las amenazas cuánticas y ataques criptoanalíticos.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2023-11-28-kyberlib-rust-stit-proti-kvantovym-hrozbam/</guid>
+      <pubDate>Tue, 28 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" type="image/webp" length="0"/>
+      <category>KyberLib</category>
+      <category>Rust CRYSTALS-Kyber</category>
+      <category>criptografía postcuántica</category>
+      <category>criptografía sobre retículos</category>
+      <category>intercambio de claves resistente a lo cuántico</category>
+      <category>NIST FIPS 203</category>
+      <category>Sebastien Rousseau</category>
+      <category>KEM</category>
+      <category>autenticación de pagos</category>
+      <category>biblioteca PQC</category>
+    </item>
+    <item>
+      <title>CRYSTALS-Kyber: el algoritmo de protección en la era cuántica</title>
+      <link>https://sebastienrousseau.com/cs/2023-11-19-crystals-kyber-ochranny-algoritmus-v-kvantove-ere/</link>
+      <description>Cómo CRYSTALS-Kyber, algoritmo de criptografía resistente a lo cuántico, revoluciona el mundo de la criptografía y nos prepara para la era cuántica.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2023-11-19-crystals-kyber-ochranny-algoritmus-v-kvantove-ere/</guid>
+      <pubDate>Sun, 19 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" type="image/webp" length="0"/>
+      <category>computación cuántica</category>
+      <category>criptografía resistente a lo cuántico</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>criptografía</category>
+      <category>seguridad</category>
+      <category>banca</category>
+      <category>finanzas</category>
+      <category>cifrado</category>
+      <category>protección de datos</category>
+      <category>perdurabilidad</category>
+    </item>
+    <item>
+      <title>IA generativa en 2023: cómo funciona, dónde aterriza</title>
+      <link>https://sebastienrousseau.com/cs/2023-11-12-zkoumani-generativni-ai/</link>
+      <description>Explore la IA generativa en 2023: cómo funciona, dónde se implanta primero en los servicios financieros, y las cuestiones éticas y arquitectónicas a plantearse.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2023-11-12-zkoumani-generativni-ai/</guid>
+      <pubDate>Sun, 12 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
+      <category>IA generativa</category>
+      <category>tecnología</category>
+      <category>futuro</category>
+      <category>impacto</category>
+      <category>ética</category>
+      <category>sinergias</category>
+      <category>innovación</category>
+      <category>creatividad</category>
+      <category>transformación</category>
+      <category>evolución</category>
+    </item>
+    <item>
+      <title>Constantes matemáticas y criptográficas para la seguridad en Rust</title>
+      <link>https://sebastienrousseau.com/cs/2023-11-05-matematicke-a-kryptograficke-konstanty-pro-rust/</link>
+      <description>Proteja la integridad del código con constantes matemáticas y criptográficas rigurosamente verificadas, reforzando la seguridad de memoria y la concurrencia.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2023-11-05-matematicke-a-kryptograficke-konstanty-pro-rust/</guid>
+      <pubDate>Sun, 05 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp" type="image/webp" length="0"/>
+      <category>constantes matemáticas</category>
+      <category>constantes criptográficas</category>
+      <category>seguridad Rust</category>
+      <category>comunicación segura</category>
+      <category>cifrado</category>
+      <category>RSA</category>
+      <category>criptografía de curva elíptica</category>
+      <category>biblioteca Common (CMN)</category>
+      <category>aplicaciones Rust</category>
+      <category>cálculos matemáticos</category>
+    </item>
+    <item>
+      <title>Racionalizar el desarrollo de bibliotecas Rust mediante la generación de código</title>
+      <link>https://sebastienrousseau.com/cs/2023-10-26-libmake-generator-kodu-pro-rust-knihovny/</link>
+      <description>Impulse el desarrollo de bibliotecas Rust con LibMake: una herramienta de generación de código que impone las buenas prácticas y produce el código inicial, ahorrando tiempo y esfuerzo.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2023-10-26-libmake-generator-kodu-pro-rust-knihovny/</guid>
+      <pubDate>Thu, 26 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>Rust</category>
+      <category>biblioteca</category>
+      <category>desarrollo</category>
+      <category>código</category>
+      <category>generador</category>
+      <category>boilerplate</category>
+      <category>buenas prácticas</category>
+      <category>calidad</category>
+      <category>fiable</category>
+    </item>
+    <item>
+      <title>Proteger los datos en la era cuántica: la biblioteca Hash (HSH)</title>
+      <link>https://sebastienrousseau.com/cs/2023-10-16-ochrana-dat-v-kvantove-ere-hash-knihovna-hsh/</link>
+      <description>HSH se apoya en primitivas criptográficas resistentes a lo cuántico para proteger sus datos frente a los avances futuros de la computación cuántica.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2023-10-16-ochrana-dat-v-kvantove-ere-hash-knihovna-hsh/</guid>
+      <pubDate>Mon, 16 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp" type="image/webp" length="0"/>
+      <category>criptografía resistente a lo cuántico</category>
+      <category>biblioteca Hash</category>
+      <category>HSH</category>
+      <category>Rust</category>
+      <category>postcuántica</category>
+      <category>PQC</category>
+      <category>KDF</category>
+      <category>Argon2i</category>
+      <category>BScrypt</category>
+      <category>Scrypt</category>
+      <category>servicios financieros</category>
+      <category>seguridad</category>
+      <category>NIST</category>
+    </item>
+    <item>
+      <title>Shokunin: el generador de sitios estáticos más rápido basado en Rust</title>
+      <link>https://sebastienrousseau.com/cs/2023-10-09-shokunin-nejrychlejsi-staticky-generator-v-rustu/</link>
+      <description>Cree sitios estáticos de alto impacto, escalables hasta el infinito y enteramente bajo su control, gracias a Shokunin: un SSG ultrarrápido escrito en Rust.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2023-10-09-shokunin-nejrychlejsi-staticky-generator-v-rustu/</guid>
+      <pubDate>Mon, 09 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" type="image/webp" length="0"/>
+      <category>Shokunin</category>
+      <category>generador de sitios estáticos</category>
+      <category>SSG</category>
+      <category>Rust</category>
+      <category>rendimiento</category>
+      <category>SEO</category>
+      <category>accesibilidad</category>
+      <category>WCAG</category>
+      <category>ADA</category>
+      <category>PWA</category>
+      <category>Markdown</category>
+      <category>GFM</category>
+      <category>Atom</category>
+      <category>RSS</category>
+    </item>
+    <item>
+      <title>Automatizar la creación de archivos de pago conformes con ISO 20022 con Pain001</title>
+      <link>https://sebastienrousseau.com/cs/2023-09-29-automatizace-platebnich-souboru-iso-20022-s-pain001/</link>
+      <description>Automatice la creación de archivos de pago pain.001 conformes con ISO 20022 a partir de CSV o SQLite con Pain001, la biblioteca Python de código abierto.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2023-09-29-automatizace-platebnich-souboru-iso-20022-s-pain001/</guid>
+      <pubDate>Fri, 29 Sep 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" type="image/webp" length="0"/>
+      <category>ISO 20022</category>
+      <category>pain.001</category>
+      <category>Pain001</category>
+      <category>Python</category>
+      <category>pagos</category>
+      <category>automatización</category>
+      <category>CBPR+</category>
+      <category>HVPS+</category>
+      <category>SEPA</category>
+      <category>cumplimiento</category>
+      <category>transferencias</category>
+    </item>
+    <item>
+      <title>La creación de la plataforma Express Transaction Credits</title>
+      <link>https://sebastienrousseau.com/cs/2018-02-15-vznik-platformy-express-transaction-credits/</link>
+      <description>Desarrollar un marco completo para la próxima generación de tokens conformes a Ethereum Request for Comment mediante el estándar ERC-223.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2018-02-15-vznik-platformy-express-transaction-credits/</guid>
+      <pubDate>Thu, 15 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>Ethereum</category>
+      <category>ERC-223</category>
+      <category>ERC-20</category>
+      <category>EXTC</category>
+      <category>Express Transaction Credits</category>
+      <category>blockchain</category>
+      <category>pagos</category>
+      <category>tokens</category>
+      <category>préstamos</category>
+      <category>finanzas descentralizadas</category>
+    </item>
+    <item>
+      <title>Presentación de una nueva criptomoneda y una solución de pago más rápida</title>
+      <link>https://sebastienrousseau.com/cs/2018-02-04-nova-kryptomena-a-reseni-pro-rychlejsi-platby/</link>
+      <description>Un capítulo significativo en la evolución del panorama financiero mundial, configurado por la innovación tecnológica, los cambios geopolíticos y las finanzas sostenibles.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2018-02-04-nova-kryptomena-a-reseni-pro-rychlejsi-platby/</guid>
+      <pubDate>Sun, 04 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" type="image/webp" length="0"/>
+      <category>EXTC Network</category>
+      <category>criptomoneda</category>
+      <category>pagos más rápidos</category>
+      <category>Ethereum</category>
+      <category>EIP20</category>
+      <category>smart contracts</category>
+      <category>blockchain</category>
+      <category>pagos transfronterizos</category>
+      <category>inclusión financiera</category>
+    </item>
+    <item>
+      <title>El estándar de token ERC-20</title>
+      <link>https://sebastienrousseau.com/cs/2018-01-24-standard-tokenu-erc-20/</link>
+      <description>ERC-20: el tipo de token más extendido en la blockchain Ethereum, a menudo descrito como un contrato digital inteligente (smart contract).</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2018-01-24-standard-tokenu-erc-20/</guid>
+      <pubDate>Wed, 24 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp" type="image/webp" length="0"/>
+      <category>ERC-20</category>
+      <category>Ethereum</category>
+      <category>token</category>
+      <category>smart contract</category>
+      <category>DeFi</category>
+      <category>EIP</category>
+      <category>blockchain</category>
+      <category>interoperabilidad</category>
+      <category>DApps</category>
+      <category>estándar</category>
+    </item>
+    <item>
+      <title>Comprender la tecnología detrás de blockchain</title>
+      <link>https://sebastienrousseau.com/cs/2018-01-09-pochopeni-technologie-za-blockchainem/</link>
+      <description>Construir una criptomoneda en la blockchain Ethereum: una guía completa de desarrollo blockchain, tokenización e implementación.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2018-01-09-pochopeni-technologie-za-blockchainem/</guid>
+      <pubDate>Tue, 09 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" type="image/webp" length="0"/>
+      <category>blockchain</category>
+      <category>Ethereum</category>
+      <category>smart contract</category>
+      <category>criptomoneda</category>
+      <category>Solidity</category>
+      <category>Geth</category>
+      <category>dApps</category>
+      <category>ERC-20</category>
+      <category>tokenización</category>
+      <category>testnet</category>
+    </item>
+    <item>
+      <title>Blockchain: la tecnología que importa en 2018</title>
+      <link>https://sebastienrousseau.com/cs/2018-01-02-blockchain-technologie-ktera-je-dulezita-v-2018/</link>
+      <description>La narración del viaje extraordinario para asegurar las transacciones digitales mediante criptografía de clave privada y redes entre pares (P2P).</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2018-01-02-blockchain-technologie-ktera-je-dulezita-v-2018/</guid>
+      <pubDate>Tue, 02 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp" type="image/webp" length="0"/>
+      <category>blockchain</category>
+      <category>criptomoneda</category>
+      <category>Bitcoin</category>
+      <category>P2P</category>
+      <category>smart contract</category>
+      <category>libro mayor distribuido</category>
+      <category>finanzas</category>
+      <category>cadena de suministro</category>
+      <category>identidad digital</category>
+      <category>tokenización</category>
+    </item>
+    <item>
+      <title>Bitcoin: revisión del año de la primera criptomoneda</title>
+      <link>https://sebastienrousseau.com/cs/2018-01-01-bitcoin-ohlednuti-za-rokem/</link>
+      <description>Bitcoin: un sistema de efectivo electrónico entre pares (P2P ECS) capaz de revolucionar la forma en que las personas transaccionan en línea.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2018-01-01-bitcoin-ohlednuti-za-rokem/</guid>
+      <pubDate>Mon, 01 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp" type="image/webp" length="0"/>
+      <category>Bitcoin</category>
+      <category>criptomoneda</category>
+      <category>blockchain</category>
+      <category>P2P</category>
+      <category>doble gasto</category>
+      <category>minería</category>
+      <category>proof-of-work</category>
+      <category>ETF</category>
+      <category>Satoshi Nakamoto</category>
+      <category>finanzas descentralizadas</category>
+    </item>
+  </channel>
+</rss>

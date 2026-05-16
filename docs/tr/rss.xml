@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sebastien Rousseau — Türkçe baskı</title>
+    <link>https://sebastienrousseau.com/tr/</link>
+    <description>Türkçe makaleler: uygulamalı yapay zeka, ISO 20022 ödemeleri, post-kuantum kriptografi ve toptan ödemelerin dönüşümü.</description>
+    <atom:link href="https://sebastienrousseau.com/tr/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>tr-TR</language>
+    <lastBuildDate>Sat, 16 May 2026 16:45:32 +0000</lastBuildDate>
+    <copyright>© Telif Hakkı 2007 - 2026 - Sebastien Rousseau. Tüm hakları saklıdır.</copyright>
+    <item>
+      <title>Bankalar için en iyi bulut altyapı mimarisi (2026)</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-21-bankalar-icin-en-iyi-bulut-mimarisi-2026/</link>
+      <description>Birinci kademe bankalar için 2026&apos;nın bulut altyapı mimarisi — sağlayıcılar, ödünleşimler ve uyum.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-21-bankalar-icin-en-iyi-bulut-mimarisi-2026/</guid>
+      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
+      <category>bulut</category>
+      <category>mimari</category>
+      <category>bankacılık</category>
+      <category>2026</category>
+      <category>altyapı</category>
+      <category>uyum</category>
+      <category>AWS</category>
+      <category>Azure</category>
+      <category>GCP</category>
+    </item>
+    <item>
+      <title>Ajan tabanlı mühendislik: bankalar için 2026 planı</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-18-ajan-tabanli-muhendislik-bankalar-icin-2026-plani/</link>
+      <description>2026&apos;da bankalarda ajan tabanlı yapay zeka mühendisliğine giriş — mimari, yönetişim ve riskler.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-18-ajan-tabanli-muhendislik-bankalar-icin-2026-plani/</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
+      <category>ajan tabanlı yapay zeka</category>
+      <category>ajanlar</category>
+      <category>bankacılık</category>
+      <category>2026</category>
+      <category>mimari</category>
+      <category>yönetişim</category>
+      <category>LLM</category>
+    </item>
+    <item>
+      <title>Gizli getiri: BlackRock&apos;un BRSRV / BSTBL ve GENIUS Act&apos;ı çözmek</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-15-gizli-getiri-blackrock-brsrv-bstbl-genius-act-cozumlemesi/</link>
+      <description>Stablecoin&apos;ler GENIUS Act kapsamında getiri ödeyemiyor; BlackRock&apos;un BRSRV ve BSTBL başvuruları çıkış yolunu gösteriyor.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-15-gizli-getiri-blackrock-brsrv-bstbl-genius-act-cozumlemesi/</guid>
+      <pubDate>Fri, 15 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp" type="image/webp" length="0"/>
+      <category>BlackRock</category>
+      <category>BRSRV</category>
+      <category>BSTBL</category>
+      <category>stablecoin</category>
+      <category>GENIUS Act</category>
+      <category>tokenizasyon</category>
+      <category>para piyasası</category>
+      <category>regulating</category>
+    </item>
+    <item>
+      <title>Defteri güvene almak: kurumsal finans için post-kuantum geçişi</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-14-defteri-guvene-almak-post-kuantum-gecis-kurumsal-finans/</link>
+      <description>Hazinelerin ve kurumsal finansın post-kuantum kriptografiye nasıl geçeceği — tehdit, takvim ve operasyonel etkiler.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-14-defteri-guvene-almak-post-kuantum-gecis-kurumsal-finans/</guid>
+      <pubDate>Thu, 14 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" type="image/webp" length="0"/>
+      <category>post-kuantum</category>
+      <category>kurumsal finans</category>
+      <category>hazine</category>
+      <category>kriptografi</category>
+      <category>geçiş</category>
+      <category>NIST PQC</category>
+    </item>
+    <item>
+      <title>ISO 20022 pacs.008: yapılandırılmış adres son tarihi yaklaşıyor</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-12-iso-20022-pacs008-yapilandirilmis-adres-son-tarihi/</link>
+      <description>Kasım 2026&apos;dan itibaren SWIFT CBPR+ sınır ötesi pacs.008 mesajlarında yapılandırılmamış posta adreslerini reddediyor.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-12-iso-20022-pacs008-yapilandirilmis-adres-son-tarihi/</guid>
+      <pubDate>Tue, 12 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp" type="image/webp" length="0"/>
+      <category>ISO 20022</category>
+      <category>pacs.008</category>
+      <category>SWIFT</category>
+      <category>CBPR+</category>
+      <category>yapılandırılmış adres</category>
+      <category>ödemeler</category>
+      <category>uyum</category>
+    </item>
+    <item>
+      <title>Lucy Besson: yapay zeka ve kuantum bilgi aktarımı</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-11-lucy-besson-bilgi-aktarimi-yapay-zeka-ve-kuantum/</link>
+      <description>Yapay zeka ile kuantum hesaplama arasındaki bilgi aktarımı: temel olarak Lucy Besson tarafından önerilen bir yöntem.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-11-lucy-besson-bilgi-aktarimi-yapay-zeka-ve-kuantum/</guid>
+      <pubDate>Mon, 11 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" type="image/webp" length="0"/>
+      <category>yapay zeka</category>
+      <category>kuantum</category>
+      <category>bilgi aktarımı</category>
+      <category>Lucy Besson</category>
+      <category>araştırma</category>
+      <category>makine öğrenmesi</category>
+    </item>
+    <item>
+      <title>Kuantum eşikleri yeniden hareket ediyor</title>
+      <link>https://sebastienrousseau.com/tr/2026-04-11-kuantum-esikleri-yeniden-hareket-ediyor/</link>
+      <description>Yeni bir makale, Shor algoritmasının 10.000 kübit kadar az kübitle çalışabileceğini öne sürüyor — kriptografik olarak ilgili kuantum bilişim eşiği düşüyor.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-04-11-kuantum-esikleri-yeniden-hareket-ediyor/</guid>
+      <pubDate>Sat, 11 Apr 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" type="image/webp" length="0"/>
+      <category>kuantum</category>
+      <category>Shor</category>
+      <category>kübit</category>
+      <category>kriptografi</category>
+      <category>post-kuantum</category>
+      <category>araştırma</category>
+    </item>
+    <item>
+      <title>Kuantum güvenli ödemeler: ödeme sektörü neden şimdi harekete geçmeli (EPAA)</title>
+      <link>https://sebastienrousseau.com/tr/2025-09-01-kuantum-guvenli-odemeler-epaa/</link>
+      <description>EPAA için beyaz kitap: kuantum bilişimin ödeme altyapısı için oluşturduğu yapısal tehdit ve koordineli eylem gerekçesi.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2025-09-01-kuantum-guvenli-odemeler-epaa/</guid>
+      <pubDate>Mon, 01 Sep 2025 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/digitale-nodes.webp" type="image/webp" length="0"/>
+      <category>kuantum</category>
+      <category>ödemeler</category>
+      <category>EPAA</category>
+      <category>beyaz kitap</category>
+      <category>post-kuantum</category>
+      <category>kriptografi</category>
+      <category>bankacılık</category>
+    </item>
+    <item>
+      <title>Kafes tabanlı kripto için kuantum algoritmasında hata</title>
+      <link>https://sebastienrousseau.com/tr/2024-04-22-kafes-tabanli-kripto-icin-kuantum-algoritmasinda-hata/</link>
+      <description>Yilei Chen&apos;in LWE&apos;yi çözmek için kuantum algoritmasında bir hata keşfedildi; bu, kafes tabanlı kriptografiyi geçici olarak yeniden güvenceye alıyor.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-04-22-kafes-tabanli-kripto-icin-kuantum-algoritmasinda-hata/</guid>
+      <pubDate>Mon, 22 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/digitale-nodes.webp" type="image/webp" length="0"/>
+      <category>kuantum</category>
+      <category>kafes tabanlı</category>
+      <category>kriptografi</category>
+      <category>LWE</category>
+      <category>Yilei Chen</category>
+      <category>hata</category>
+      <category>post-kuantum</category>
+    </item>
+    <item>
+      <title>Kuantum algoritması kafes tabanlı kriptografiye meydan okuyor</title>
+      <link>https://sebastienrousseau.com/tr/2024-04-15-kuantum-algoritmasi-kafes-tabanli-kriptografiye-meydan-okuyor/</link>
+      <description>Yilei Chen tarafından öne sürülen yeni bir kuantum algoritması, Learning with Errors problemini hedefliyor — kafes tabanlı kriptografi için meydan okuma.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-04-15-kuantum-algoritmasi-kafes-tabanli-kriptografiye-meydan-okuyor/</guid>
+      <pubDate>Mon, 15 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/digitale-constellation.webp" type="image/webp" length="0"/>
+      <category>kuantum</category>
+      <category>kafes tabanlı</category>
+      <category>kriptografi</category>
+      <category>LWE</category>
+      <category>post-kuantum</category>
+      <category>Yilei Chen</category>
+      <category>araştırma</category>
+    </item>
+    <item>
+      <title>OpenVoice: ses klonlama teknolojisinde öncülük</title>
+      <link>https://sebastienrousseau.com/tr/2024-04-01-openvoice-ses-klonlama-teknolojisinde-onculuk/</link>
+      <description>OpenVoice, ses tonunu küçük örneklerden çoğaltabilen sesli klonlama için açık bir modeldir.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-04-01-openvoice-ses-klonlama-teknolojisinde-onculuk/</guid>
+      <pubDate>Mon, 01 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/open-voice.webp" type="image/webp" length="0"/>
+      <category>OpenVoice</category>
+      <category>ses klonlama</category>
+      <category>yapay zeka</category>
+      <category>ses</category>
+      <category>TTS</category>
+      <category>açık kaynak</category>
+    </item>
+    <item>
+      <title>Bankacılık kuantum çağında tamamen homomorfik şifreleme</title>
+      <link>https://sebastienrousseau.com/tr/2024-03-25-bankacilik-kuantum-caginda-tamamen-homomorfik-sifreleme/</link>
+      <description>Tamamen homomorfik şifreleme (FHE), bankacılıkta gizliliği koruyarak şifreli veriler üzerinde hesaplama yapmayı sağlar.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-03-25-bankacilik-kuantum-caginda-tamamen-homomorfik-sifreleme/</guid>
+      <pubDate>Mon, 25 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp" type="image/webp" length="0"/>
+      <category>FHE</category>
+      <category>homomorfik şifreleme</category>
+      <category>bankacılık</category>
+      <category>kuantum</category>
+      <category>gizlilik</category>
+      <category>kriptografi</category>
+    </item>
+    <item>
+      <title>Çok modlu LLM&apos;ler ile yapay zekayı ilerletmek: MM1 dersleri</title>
+      <link>https://sebastienrousseau.com/tr/2024-03-18-cok-modlu-llm-ler-ile-yapay-zekayi-ilerletmek-mm1-dersleri/</link>
+      <description>MM1, mimari, ön eğitim stratejileri ve çok modlu LLM&apos;lerin ortaya çıkan yetenekleri üzerine Apple&apos;ın araştırmasıdır.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-03-18-cok-modlu-llm-ler-ile-yapay-zekayi-ilerletmek-mm1-dersleri/</guid>
+      <pubDate>Mon, 18 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/mm1-visual.webp" type="image/webp" length="0"/>
+      <category>MM1</category>
+      <category>çok modlu</category>
+      <category>LLM</category>
+      <category>Apple</category>
+      <category>üretken yapay zeka</category>
+      <category>araştırma</category>
+    </item>
+    <item>
+      <title>macOS&apos;ta OpenAI Whisper ile gerçek zamanlı konuşma tanımada devrim</title>
+      <link>https://sebastienrousseau.com/tr/2024-03-12-macos-ta-gercek-zamanli-konusma-tanima-whisper-ile-devrim/</link>
+      <description>macOS&apos;ta gerçek zamanlı konuşma tanıma performansı için OpenAI Whisper ile Metal Performance Shaders&apos;ı birleştirme.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-03-12-macos-ta-gercek-zamanli-konusma-tanima-whisper-ile-devrim/</guid>
+      <pubDate>Tue, 12 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/research-paper.webp" type="image/webp" length="0"/>
+      <category>Whisper</category>
+      <category>OpenAI</category>
+      <category>konuşma tanıma</category>
+      <category>macOS</category>
+      <category>Metal Performance Shaders</category>
+      <category>Apple Silicon</category>
+    </item>
+    <item>
+      <title>RustLogs: Rust uygulamaları için gelişmiş loglama kütüphanesi</title>
+      <link>https://sebastienrousseau.com/tr/2024-03-08-rustlogs-rust-icin-gelismis-loglama-kutuphanesi/</link>
+      <description>RustLogs, üretim Rust uygulamaları için yapılandırılmış, performanslı bir loglama kütüphanesidir.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-03-08-rustlogs-rust-icin-gelismis-loglama-kutuphanesi/</guid>
+      <pubDate>Fri, 08 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/rustlogs.webp" type="image/webp" length="0"/>
+      <category>RustLogs</category>
+      <category>Rust</category>
+      <category>loglama</category>
+      <category>observability</category>
+      <category>açık kaynak</category>
+      <category>üretim</category>
+    </item>
+    <item>
+      <title>Mistral AI&apos;dan Le Chat: konuşma tabanlı yapay zekada yeni bir çağ</title>
+      <link>https://sebastienrousseau.com/tr/2024-03-04-mistral-ai-le-chat-konusma-tabanli-yapay-zekada-yeni-cag/</link>
+      <description>Le Chat, Mistral&apos;in Avrupalı modellerinin gücünü açıklığa ve performansa odaklanarak sunan konuşma asistanıdır.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-03-04-mistral-ai-le-chat-konusma-tabanli-yapay-zekada-yeni-cag/</guid>
+      <pubDate>Mon, 04 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/abstract-digitale-art-of-a-cat.webp" type="image/webp" length="0"/>
+      <category>Le Chat</category>
+      <category>Mistral AI</category>
+      <category>konuşma tabanlı yapay zeka</category>
+      <category>LLM</category>
+      <category>Avrupa</category>
+      <category>açık kaynak</category>
+    </item>
+    <item>
+      <title>Google Gemma: açık kaynak yapay zeka geliştirmeyi dönüştürmek</title>
+      <link>https://sebastienrousseau.com/tr/2024-02-26-google-gemma-acik-kaynak-yapay-zeka-gelistirmeyi-donusturuyor/</link>
+      <description>Gemma, Gemini ile aynı araştırma ve teknolojiyle inşa edilen Google&apos;ın yeni hafif açık modeller ailesidir.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-02-26-google-gemma-acik-kaynak-yapay-zeka-gelistirmeyi-donusturuyor/</guid>
+      <pubDate>Mon, 26 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-ship.webp" type="image/webp" length="0"/>
+      <category>Gemma</category>
+      <category>Google</category>
+      <category>açık kaynak</category>
+      <category>yapay zeka</category>
+      <category>LLM</category>
+      <category>üretken yapay zeka</category>
+    </item>
+    <item>
+      <title>Gemini&apos;ı açığa çıkarmak: Google&apos;ın yapay zeka devrimi açıklandı</title>
+      <link>https://sebastienrousseau.com/tr/2024-02-19-gemini-google-yapay-zeka-devrimi-aciklandi/</link>
+      <description>Gemini, doğal olarak çok modlu olarak tasarlanmış Google&apos;ın en gelişmiş yapay zeka modelidir. Mimari ve yetenekler.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-02-19-gemini-google-yapay-zeka-devrimi-aciklandi/</guid>
+      <pubDate>Mon, 19 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp" type="image/webp" length="0"/>
+      <category>Gemini</category>
+      <category>Google</category>
+      <category>yapay zeka</category>
+      <category>çok modlu</category>
+      <category>LLM</category>
+      <category>üretken yapay zeka</category>
+    </item>
+    <item>
+      <title>AB Yapay Zeka Yasası: küresel yapay zeka düzenlemesinin geleceği</title>
+      <link>https://sebastienrousseau.com/tr/2024-02-13-ab-yapay-zeka-yasasi-kuresel-duzenlemenin-gelecegi/</link>
+      <description>AB Yapay Zeka Yasası dünya çapındaki yapay zeka düzenleyici çerçevelerini şekillendiriyor: risk seviyeleri, yükümlülükler ve etkiler.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-02-13-ab-yapay-zeka-yasasi-kuresel-duzenlemenin-gelecegi/</guid>
+      <pubDate>Tue, 13 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" type="image/webp" length="0"/>
+      <category>AB Yapay Zeka Yasası</category>
+      <category>düzenleme</category>
+      <category>yapay zeka</category>
+      <category>AB</category>
+      <category>uyum</category>
+      <category>yönetişim</category>
+    </item>
+    <item>
+      <title>Akande ses asistanı: kişisel ve yönetici asistanlığında devrim</title>
+      <link>https://sebastienrousseau.com/tr/2024-02-12-akande-ses-asistani-kisisel-ve-yonetici-asistanlik-devrimi/</link>
+      <description>Akande, doğal etkileşimler ve PDF özetleri için OpenAI&apos;nin GPT&apos;sini kullanan açık kaynak bir ses asistanıdır.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-02-12-akande-ses-asistani-kisisel-ve-yonetici-asistanlik-devrimi/</guid>
+      <pubDate>Mon, 12 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" type="image/webp" length="0"/>
+      <category>Akande</category>
+      <category>ses asistanı</category>
+      <category>GPT</category>
+      <category>OpenAI</category>
+      <category>yapay zeka</category>
+      <category>üretkenlik</category>
+    </item>
+    <item>
+      <title>Reklamcılıkta devrim: yapay zeka geleceği nasıl şekillendiriyor</title>
+      <link>https://sebastienrousseau.com/tr/2024-02-08-reklamcilikta-devrim-yapay-zeka-gelecegi-nasil-sekillendiriyor/</link>
+      <description>Yapay zekanın reklamcılığı dönüştürdüğü yollar: hiper-kişiselleştirme, kreatif üretim ve programatik optimizasyon.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-02-08-reklamcilikta-devrim-yapay-zeka-gelecegi-nasil-sekillendiriyor/</guid>
+      <pubDate>Thu, 08 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/advertising-ai.webp" type="image/webp" length="0"/>
+      <category>yapay zeka</category>
+      <category>reklam</category>
+      <category>dijital pazarlama</category>
+      <category>kişiselleştirme</category>
+      <category>üretken yapay zeka</category>
+      <category>programatik</category>
+    </item>
+    <item>
+      <title>Yapay zeka ile ses analizi, çeviriler ve içgörüler</title>
+      <link>https://sebastienrousseau.com/tr/2024-01-29-yapay-zeka-destekli-ses-analizi-ceviri-ve-icgoruler/</link>
+      <description>Ses verilerini metne dönüştürmek, çevirmek ve eyleme dönüştürülebilir içgörüler çıkarmak için yapay zeka çözümleri.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-01-29-yapay-zeka-destekli-ses-analizi-ceviri-ve-icgoruler/</guid>
+      <pubDate>Mon, 29 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" type="image/webp" length="0"/>
+      <category>yapay zeka</category>
+      <category>ses</category>
+      <category>konuşma tanıma</category>
+      <category>çeviri</category>
+      <category>içgörüler</category>
+      <category>analiz</category>
+    </item>
+    <item>
+      <title>Yapay zeka prompt mühendisliğinde ilerlemeler</title>
+      <link>https://sebastienrousseau.com/tr/2024-01-23-yapay-zeka-prompt-muhendisliginde-ilerlemeler/</link>
+      <description>Prompt mühendisliği: LLM&apos;lerden tutarlı ve eyleme dönüştürülebilir sonuçlar elde etmek için teknikler.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-01-23-yapay-zeka-prompt-muhendisliginde-ilerlemeler/</guid>
+      <pubDate>Tue, 23 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" type="image/webp" length="0"/>
+      <category>prompt mühendisliği</category>
+      <category>yapay zeka</category>
+      <category>LLM</category>
+      <category>üretken yapay zeka</category>
+      <category>en iyi uygulamalar</category>
+    </item>
+    <item>
+      <title>Alien Studio: yapay zeka fotoğrafçılığıyla sanatta devrim</title>
+      <link>https://sebastienrousseau.com/tr/2024-01-15-alien-studio-yapay-zeka-fotografciligi-ile-sanat-devrimi/</link>
+      <description>Alien Studio, geleneksel ve yapay zeka tabanlı fotoğrafçılığı, gerçeküstü görsel üretmek için birleştiriyor.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-01-15-alien-studio-yapay-zeka-fotografciligi-ile-sanat-devrimi/</guid>
+      <pubDate>Mon, 15 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" type="image/webp" length="0"/>
+      <category>yapay zeka</category>
+      <category>sanat</category>
+      <category>fotoğrafçılık</category>
+      <category>üretken yapay zeka</category>
+      <category>Alien Studio</category>
+      <category>yaratıcılık</category>
+    </item>
+    <item>
+      <title>IBM Qiskit ve kuantum Fourier dönüşümü ile kredi oranı analizini optimize etmek</title>
+      <link>https://sebastienrousseau.com/tr/2024-01-08-kredi-orani-analizini-ibm-qiskit-ve-kuantum-fourier-ile-optimize-etmek/</link>
+      <description>Kuantum Fourier dönüşümü ve IBM Qiskit, kredi oranı analizini eşi görülmemiş bir doğruluk ve hızla optimize eder.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-01-08-kredi-orani-analizini-ibm-qiskit-ve-kuantum-fourier-ile-optimize-etmek/</guid>
+      <pubDate>Mon, 08 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" type="image/webp" length="0"/>
+      <category>Qiskit</category>
+      <category>kuantum</category>
+      <category>Fourier</category>
+      <category>kredi</category>
+      <category>finansal risk</category>
+      <category>IBM</category>
+      <category>optimizasyon</category>
+    </item>
+    <item>
+      <title>Yapay zeka trendleri 2024: gelecek için içgörüler ve tahminler</title>
+      <link>https://sebastienrousseau.com/tr/2024-01-01-yapay-zeka-trendleri-2024-icgoruler-ve-tahminler/</link>
+      <description>2024&apos;te yapay zeka trendleri: çok modlu LLM&apos;ler, etmen sistemleri, düzenleme ve sektörel etki.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2024-01-01-yapay-zeka-trendleri-2024-icgoruler-ve-tahminler/</guid>
+      <pubDate>Mon, 01 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" type="image/webp" length="0"/>
+      <category>yapay zeka</category>
+      <category>trendler 2024</category>
+      <category>LLM</category>
+      <category>çok modlu</category>
+      <category>AI etmenleri</category>
+      <category>düzenleme</category>
+    </item>
+    <item>
+      <title>Yapay zeka destekli kuantum algoritmalarıyla finansı dönüştürmek</title>
+      <link>https://sebastienrousseau.com/tr/2023-12-25-yapay-zeka-destekli-kuantum-algoritmalariyla-finansi-donusturmek/</link>
+      <description>Yapay zeka tarafından geliştirilen kuantum algoritmaları, finansal hizmetlerde yeni optimizasyon ve modelleme yetenekleri sunar.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2023-12-25-yapay-zeka-destekli-kuantum-algoritmalariyla-finansi-donusturmek/</guid>
+      <pubDate>Mon, 25 Dec 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
+      <category>kuantum</category>
+      <category>yapay zeka</category>
+      <category>finans</category>
+      <category>algoritmalar</category>
+      <category>optimizasyon</category>
+      <category>bankacılık</category>
+    </item>
+    <item>
+      <title>Bankacılıkta yapay zeka ve kuantum bilişim: 2023 değerlendirmesi</title>
+      <link>https://sebastienrousseau.com/tr/2023-12-18-bankacilikta-yapay-zeka-ve-kuantum-2023-degerlendirmesi/</link>
+      <description>Bankacılıkta yapay zekanın benimsenmesi ve kuantum bilişimin etkisi üzerine 2023 yıllık değerlendirmesi.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2023-12-18-bankacilikta-yapay-zeka-ve-kuantum-2023-degerlendirmesi/</guid>
+      <pubDate>Mon, 18 Dec 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
+      <category>yapay zeka</category>
+      <category>kuantum bilişim</category>
+      <category>bankacılık</category>
+      <category>finans</category>
+      <category>2023</category>
+      <category>dönüşüm</category>
+    </item>
+    <item>
+      <title>Kuantum anahtar dağıtımı: bankacılık güvenliğinde devrim</title>
+      <link>https://sebastienrousseau.com/tr/2023-12-11-kuantum-anahtar-dagitimi-bankacilik-guvenligi-devrimi/</link>
+      <description>Kuantum Anahtar Dağıtımı (QKD) bankacılık altyapısı için kuantum dirençli güvenlik temelleri sağlar.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2023-12-11-kuantum-anahtar-dagitimi-bankacilik-guvenligi-devrimi/</guid>
+      <pubDate>Mon, 11 Dec 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" type="image/webp" length="0"/>
+      <category>QKD</category>
+      <category>kuantum anahtar dağıtımı</category>
+      <category>bankacılık</category>
+      <category>güvenlik</category>
+      <category>kriptografi</category>
+      <category>finans</category>
+    </item>
+    <item>
+      <title>DTT kütüphanesi ile Rust&apos;ta tarih ve zamana hâkim olmak</title>
+      <link>https://sebastienrousseau.com/tr/2023-12-04-rust-ta-tarih-ve-zamana-hakim-olmak-dtt-kutuphanesi/</link>
+      <description>DTT, sağlamlık ve ergonomi düşünülerek Rust&apos;ta tarih ve zamanı yönetmek için bir kütüphanedir.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2023-12-04-rust-ta-tarih-ve-zamana-hakim-olmak-dtt-kutuphanesi/</guid>
+      <pubDate>Mon, 04 Dec 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg" type="image/webp" length="0"/>
+      <category>Rust</category>
+      <category>DTT</category>
+      <category>tarih</category>
+      <category>zaman</category>
+      <category>kütüphane</category>
+      <category>açık kaynak</category>
+    </item>
+    <item>
+      <title>KyberLib: kuantum tehditlerine karşı Rust destekli kalkan</title>
+      <link>https://sebastienrousseau.com/tr/2023-11-28-kyberlib-kuantum-tehditlerine-karsi-rust-kalkani/</link>
+      <description>KyberLib, kuantum sonrası anahtar kapsülleme için CRYSTALS-Kyber&apos;ın sağlam bir Rust uygulamasıdır.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2023-11-28-kyberlib-kuantum-tehditlerine-karsi-rust-kalkani/</guid>
+      <pubDate>Tue, 28 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" type="image/webp" length="0"/>
+      <category>KyberLib</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>post-kuantum</category>
+      <category>Rust</category>
+      <category>kriptografi</category>
+      <category>KEM</category>
+      <category>FIPS 203</category>
+      <category>açık kaynak</category>
+    </item>
+    <item>
+      <title>CRYSTALS-Kyber: kuantum çağında koruma algoritması</title>
+      <link>https://sebastienrousseau.com/tr/2023-11-19-crystals-kyber-kuantum-cagi-icin-koruma-algoritmasi/</link>
+      <description>CRYSTALS-Kyber, NIST tarafından kuantum sonrası anahtar kapsülleme standardı olarak seçilen kafes tabanlı bir mekanizmadır.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2023-11-19-crystals-kyber-kuantum-cagi-icin-koruma-algoritmasi/</guid>
+      <pubDate>Sun, 19 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" type="image/webp" length="0"/>
+      <category>CRYSTALS-Kyber</category>
+      <category>post-kuantum</category>
+      <category>kriptografi</category>
+      <category>NIST</category>
+      <category>FIPS 203</category>
+      <category>KEM</category>
+      <category>kafes tabanlı</category>
+    </item>
+    <item>
+      <title>Üretken yapay zekayı keşfetmek</title>
+      <link>https://sebastienrousseau.com/tr/2023-11-12-uretken-yapay-zekayi-kesfetmek/</link>
+      <description>Üretken yapay zekaya genel bakış: yayılma modelleri, GAN&apos;ler, dil modelleri ve gerçek dünya uygulamaları.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2023-11-12-uretken-yapay-zekayi-kesfetmek/</guid>
+      <pubDate>Sun, 12 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
+      <category>üretken yapay zeka</category>
+      <category>makine öğrenmesi</category>
+      <category>LLM</category>
+      <category>GAN</category>
+      <category>yayılma modelleri</category>
+      <category>üretken modeller</category>
+    </item>
+    <item>
+      <title>Rust güvenliği için matematiksel ve kriptografik sabitler</title>
+      <link>https://sebastienrousseau.com/tr/2023-11-05-rust-icin-matematiksel-ve-kriptografik-sabitler/</link>
+      <description>cmn, güvenli Rust uygulamaları için matematiksel ve kriptografik sabitler sunan bir kütüphanedir.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2023-11-05-rust-icin-matematiksel-ve-kriptografik-sabitler/</guid>
+      <pubDate>Sun, 05 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp" type="image/webp" length="0"/>
+      <category>Rust</category>
+      <category>cmn</category>
+      <category>kriptografi</category>
+      <category>matematik</category>
+      <category>sabitler</category>
+      <category>güvenlik</category>
+      <category>açık kaynak</category>
+    </item>
+    <item>
+      <title>libmake: tekrarlayan görevleri azaltıp kaliteli Rust kütüphaneleri inşa eden kod üretici</title>
+      <link>https://sebastienrousseau.com/tr/2023-10-26-libmake-rust-kutuphaneleri-icin-kod-uretici/</link>
+      <description>libmake, sağlam ve test edilmiş şablonlardan başlayarak Rust kütüphanelerinin oluşturulmasını otomatikleştirir.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2023-10-26-libmake-rust-kutuphaneleri-icin-kod-uretici/</guid>
+      <pubDate>Thu, 26 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>Rust</category>
+      <category>libmake</category>
+      <category>kod üretici</category>
+      <category>açık kaynak</category>
+      <category>otomasyon</category>
+      <category>kütüphaneler</category>
+    </item>
+    <item>
+      <title>Kuantum çağında veri koruma: hash kütüphanesi hsh</title>
+      <link>https://sebastienrousseau.com/tr/2023-10-16-kuantum-caginda-veri-koruma-hash-kutuphanesi-hsh/</link>
+      <description>hsh, parolaların kuantum sonrası çağda şifrelenmesi ve doğrulanması için güvenli hash algoritmaları sunan bir Rust kütüphanesidir.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2023-10-16-kuantum-caginda-veri-koruma-hash-kutuphanesi-hsh/</guid>
+      <pubDate>Mon, 16 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp" type="image/webp" length="0"/>
+      <category>Rust</category>
+      <category>hash</category>
+      <category>hsh</category>
+      <category>post-kuantum</category>
+      <category>kriptografi</category>
+      <category>parolalar</category>
+      <category>kimlik doğrulama</category>
+      <category>açık kaynak</category>
+    </item>
+    <item>
+      <title>Shokunin: Rust tabanlı en hızlı statik site jeneratörü</title>
+      <link>https://sebastienrousseau.com/tr/2023-10-09-shokunin-rust-tabanli-en-hizli-statik-site-jeneratoru/</link>
+      <description>Shokunin, performans, SEO ve erişilebilirlik için tasarlanmış Rust tabanlı bir statik site jeneratörüdür.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2023-10-09-shokunin-rust-tabanli-en-hizli-statik-site-jeneratoru/</guid>
+      <pubDate>Mon, 09 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" type="image/webp" length="0"/>
+      <category>Shokunin</category>
+      <category>statik site jeneratörü</category>
+      <category>Rust</category>
+      <category>SSG</category>
+      <category>performans</category>
+      <category>SEO</category>
+      <category>açık kaynak</category>
+    </item>
+    <item>
+      <title>ISO 20022 uyumlu ödeme dosyalarını pain001 ile otomatikleştirme</title>
+      <link>https://sebastienrousseau.com/tr/2023-09-29-iso-20022-uyumlu-odeme-dosyalarini-pain001-ile-otomatiklestirme/</link>
+      <description>pain001, CSV veya SQLite kaynaklarından başlayarak ISO 20022 uyumlu pain.001 ödeme dosyalarının oluşturulmasını otomatikleştirir.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2023-09-29-iso-20022-uyumlu-odeme-dosyalarini-pain001-ile-otomatiklestirme/</guid>
+      <pubDate>Fri, 29 Sep 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/andrea-di-santis-T3Qen8vVgRc.webp" type="image/webp" length="0"/>
+      <category>ISO 20022</category>
+      <category>pain.001</category>
+      <category>Python</category>
+      <category>ödemeler</category>
+      <category>otomasyon</category>
+      <category>SEPA</category>
+      <category>SWIFT</category>
+      <category>açık kaynak</category>
+    </item>
+    <item>
+      <title>Express Transaction Credits platformunun yapımı</title>
+      <link>https://sebastienrousseau.com/tr/2018-02-15-express-transaction-credits-platformunun-yapimi/</link>
+      <description>Express Transaction Credits platformunu inşa etmek: gerçek zamanlı transferler için mimari, ölçeklenebilirlik ve uyum kararları.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2018-02-15-express-transaction-credits-platformunun-yapimi/</guid>
+      <pubDate>Thu, 15 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>anlık ödemeler</category>
+      <category>ödeme platformu</category>
+      <category>fintech</category>
+      <category>mimari</category>
+      <category>ölçeklenebilirlik</category>
+      <category>uyum</category>
+    </item>
+    <item>
+      <title>Yeni bir kripto para ve daha hızlı bir ödeme çözümü tanıtımı</title>
+      <link>https://sebastienrousseau.com/tr/2018-02-04-yeni-bir-kripto-para-ve-daha-hizli-odeme-cozumu/</link>
+      <description>Hızlı, ucuz ve ölçeklenebilir ödemeler için tasarlanmış, blockchain teknolojisine dayanan yeni bir kripto para.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2018-02-04-yeni-bir-kripto-para-ve-daha-hizli-odeme-cozumu/</guid>
+      <pubDate>Sun, 04 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" type="image/webp" length="0"/>
+      <category>kripto para</category>
+      <category>ödemeler</category>
+      <category>blockchain</category>
+      <category>hızlı ödemeler</category>
+      <category>fintech</category>
+      <category>ölçeklenebilirlik</category>
+    </item>
+    <item>
+      <title>ERC-20 token standardı</title>
+      <link>https://sebastienrousseau.com/tr/2018-01-24-erc-20-token-standardi/</link>
+      <description>ERC-20, Ethereum ağındaki değiştirilebilir token&apos;lar için referans standarttır. ICO&apos;ları ve DeFi&apos;yi mümkün kılan teknik temelleri inceliyoruz.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2018-01-24-erc-20-token-standardi/</guid>
+      <pubDate>Wed, 24 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp" type="image/webp" length="0"/>
+      <category>ERC-20</category>
+      <category>Ethereum</category>
+      <category>token</category>
+      <category>akıllı sözleşmeler</category>
+      <category>ICO</category>
+      <category>DeFi</category>
+      <category>Solidity</category>
+    </item>
+    <item>
+      <title>Blockchain&apos;in arkasındaki teknolojiyi anlamak</title>
+      <link>https://sebastienrousseau.com/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/</link>
+      <description>Blockchain&apos;in mimarisi: bloklar, hash&apos;ler, konsensüs algoritmaları ve güveni mümkün kılan kriptografi.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/</guid>
+      <pubDate>Tue, 09 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" type="image/webp" length="0"/>
+      <category>blockchain</category>
+      <category>kriptografi</category>
+      <category>hash</category>
+      <category>konsensüs</category>
+      <category>proof-of-work</category>
+      <category>proof-of-stake</category>
+      <category>dağıtık defter</category>
+    </item>
+    <item>
+      <title>Blockchain: 2018&apos;de önemli olan teknoloji</title>
+      <link>https://sebastienrousseau.com/tr/2018-01-02-blockchain-2018de-onemli-olan-teknoloji/</link>
+      <description>Blockchain, finansal hizmetlerden tedarik zincirine kadar birden çok sektörü dönüştürebilen dağıtık bir defter teknolojisidir.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2018-01-02-blockchain-2018de-onemli-olan-teknoloji/</guid>
+      <pubDate>Tue, 02 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp" type="image/webp" length="0"/>
+      <category>blockchain</category>
+      <category>dağıtık defter</category>
+      <category>fintech</category>
+      <category>finansal hizmetler</category>
+      <category>tedarik zinciri</category>
+      <category>akıllı sözleşmeler</category>
+      <category>2018</category>
+    </item>
+    <item>
+      <title>Bitcoin: ilk kripto paranın yıllık değerlendirmesi</title>
+      <link>https://sebastienrousseau.com/tr/2018-01-01-bitcoin-yilin-degerlendirmesi/</link>
+      <description>Bitcoin: insanların çevrimiçi işlem yapma şeklini devrim niteliğinde değiştirebilen eşler arası elektronik nakit sistemi (P2P ECS).</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2018-01-01-bitcoin-yilin-degerlendirmesi/</guid>
+      <pubDate>Mon, 01 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp" type="image/webp" length="0"/>
+      <category>Bitcoin</category>
+      <category>kripto para</category>
+      <category>blockchain</category>
+      <category>P2P</category>
+      <category>çifte harcama</category>
+      <category>madencilik</category>
+      <category>proof-of-work</category>
+      <category>ETF</category>
+      <category>Satoshi Nakamoto</category>
+      <category>merkeziyetsiz finans</category>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="he-IL" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Fri, 15 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Fri, 15 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>العائد المخفي: تفكيك إيداعات BRSRV و BSTBL من BlackRock — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="بموجب GENIUS Act، لا يمكن للـ stablecoins دفع العائد. تُجسّد إيداعات BRSRV و BSTBL من BlackRock التحايل: صندوق سوقٍ نقدية مُرمَّز بالتوازي مع stablecoin مُنظَّم، لتوجيه العائد عبر مسارٍ متوافق مجاور.">
+<meta name="keywords" content="stablecoins، GENIUS Act، BlackRock، BRSRV، BSTBL، صندوق السوق النقدية المُرمَّز، OCC، OnChain Shares، Securitize، BNY Mellon، المدفوعات">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="BlackRock BRSRV and BSTBL">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-Tq7QRu4vNcZfj6ocWD5q++Tzwd5Zi7i2nsQM8rILnEk=' 'sha256-p8ARTlv3uOfMJ2bYCNpLNvI7NNUjm3MhM7zKbRbXlMY=' 'sha256-u7koOMLfrBArjlFVBbTAWQ87rCxGfjLHWnZ6N1pMouY=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/he/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="ערוץ Atom" href="/he/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="العائد المخفي: تفكيك إيداعات BRSRV و BSTBL من BlackRock — Sebastien Rousseau">
+<meta property="og:description" content="بموجب GENIUS Act، لا يمكن للـ stablecoins دفع العائد. تُجسّد إيداعات BRSRV و BSTBL من BlackRock التحايل: صندوق سوقٍ نقدية مُرمَّز بالتوازي مع stablecoin مُنظَّم، لتوجيه العائد عبر مسارٍ متوافق مجاور.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/he/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="he_IL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="العائد المخفي: تفكيك إيداعات BRSRV و BSTBL من BlackRock — Sebastien Rousseau">
+<meta name="twitter:description" content="بموجب GENIUS Act، لا يمكن للـ stablecoins دفع العائد. تُجسّد إيداعات BRSRV و BSTBL من BlackRock التحايل: صندوق سوقٍ نقدية مُرمَّز بالتوازي مع stablecoin مُنظَّم، لتوجيه العائد عبر مسارٍ متوافق مجاور.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/he/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-15-skryty-vynos-blackrock-brsrv-bstbl-genius-act/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenisierter-geldmarktfonds/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-15-rendimiento-oculto-descifrando-depositos-blackrock-brsrv-bstbl-genius-act/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-15-chhupi-aamdani-blackrock-brsrv-bstbl-genius-act/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-15-imbal-hasil-tersembunyi-blackrock-brsrv-bstbl-genius-act/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-15-rendimento-nascosto-decifrare-i-depositi-blackrock-brsrv-bstbl-genius-act/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-15-blackrock-brsrv-bstbl-genius-act-tookun-ka-mmf/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenhwa-mmf/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-15-blackrock-brsrv-bstbl-genius-act-getokeniseerd-geldmarktfonds/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenizowany-fundusz-rynku-pienieznego/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-15-rendimento-oculto-decifrando-depositos-blackrock-brsrv-bstbl-genius-act/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-15-skrytaya-dokhodnost-blackrock-brsrv-bstbl-genius-act/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-15-doljd-avkastning-blackrock-brsrv-bstbl-genius-act/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-15-phon-tobthaen-son-blackrock-brsrv-bstbl-genius-act/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-15-gizli-getiri-blackrock-brsrv-bstbl-genius-act-cozumlemesi/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-15-loi-suat-an-giai-ma-brsrv-bstbl-blackrock-genius-act/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-15-beilaide-brsrv-bstbl-genius-fa-an-daibihua-mmf/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-15-beilaide-brsrv-bstbl-genius-fa-an-daibihua-mmf-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">דלג לתוכן הראשי</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="החלף ניווט" />
+      <div class="wrap">
+        <a class="ap-brand" href="/he/index.html" aria-label="דף הבית של Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="ניווט ראשי">
+          <ul class="ap-menu">
+            <li><a href="/he/aleynu/index.html">אודות</a></li>
+            <li><a href="/he/ma-amarim/index.html" aria-current="page" class="active">מאמרים</a></li>
+            <li><a href="/he/pirsumim/index.html">פרסומים</a></li>
+            <li><a href="/he/nos-im/index.html">נושאים</a></li>
+            <li><a href="/he/proyektim/index.html">פרויקטים</a></li>
+            <li><a href="/he/play-listim/index.html">פלייליסטים</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="מעבר למצב כהה" aria-pressed="false" title="החלף ערכת נושא">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="חיפוש (Cmd או Ctrl + K)" title="חיפוש (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="שפה">
+            <button type="button" class="ap-lang-toggle" aria-label="HE, שינוי שפה" aria-expanded="false" aria-haspopup="menu" title="שינוי שפה">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">HE</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="בקרוב">🇺🇦 Українська</span>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/he/tsor-kesher/index.html" aria-label="צרו קשר">צרו קשר ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="החלף ניווט">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>العائد المخفي: تفكيك إيداعات BRSRV و BSTBL من BlackRock</h1>
+      <p class="sub">بموجب GENIUS Act، لا يمكن للـ stablecoins توزيع عوائد. تتجاوز BlackRock القيد بصندوقَي سوقٍ نقدية مُرمَّزَين.</p>
+    <nav class="article-tags" aria-label="נושאים"><a href="/tags/index.html#h3-stablecoins-genius-act-blackrock-brsrv-bstbl-occ-onchain-shares-securitize-bny-m" class="article-tag" rel="tag">stablecoins، GENIUS Act، BlackRock، BRSRV، BSTBL، صندوق السوق النقدية المُرمَّز، OCC، OnChain Shares، Securitize، BNY Mellon، المدفوعات</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-15T06:06:06+00:00" class="meta-pub">פורסם בתאריך 15 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="זמן קריאה משוער">15 דקות קריאה</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>תוכן עניינים</h2><ol><li><a href="#brsrv-bstbl-blackrock">العائد المخفي: تفكيك إيداعات BRSRV و BSTBL من BlackRock</a></li><li><a href="#section-2">إيداعٌ هو أيضاً موقف سياسة</a></li><li><a href="#stablecoins">لماذا لا يمكن للـ stablecoins دفع العائد</a></li><li><a href="#brsrv">معمارية BRSRV</a></li><li><a href="#bstbl">معمارية BSTBL</a></li><li><a href="#payment-stablecoin">Payment Stablecoin مقابل صندوق سوقٍ نقدية مُرمَّز: التمييز الذي يُهمّ</a></li><li><a href="#section-7">هل هذه ثغرة؟</a></li><li><a href="#section-8">ماذا يعني ذلك بحسب القطاع</a></li><li><a href="#section-13">الخاتمة</a></li><li><a href="#section-14">الأسئلة الشائعة</a></li><li><a href="#section-15">المراجع</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> بموجب GENIUS Act، لا يمكن للـ stablecoins دفع العائد. تُجسّد إيداعات BRSRV و BSTBL من BlackRock التحايل: صندوق سوقٍ نقدية مُرمَّز بالتوازي مع stablecoin مُنظَّم، لتوجيه العائد عبر مسارٍ متوافق مجاور.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>العائد المخفي: تفكيك إيداعات BRSRV و BSTBL من BlackRock.</strong> لا يمكن للـ stablecoins دفع العائد بموجب GENIUS Act.</li>  <li><strong>إيداعٌ هو أيضاً موقف سياسة.</strong> لم يصل إيداعا BlackRock في 8 مايو 2026 في فراغ.</li>  <li><strong>لماذا لا يمكن للـ stablecoins دفع العائد.</strong> GENIUS Act، المُوقَّع في يوليو 2025 والآن أساس قواعد OCC و FDIC و Federal Reserve المتداخلة، يرسم تمييزاً مفاهيمياً نظيفاً بشكلٍ غير عادي.</li>  <li><strong>معمارية BRSRV.</strong> BlackRock Daily Reinvestment Stablecoin Reserve Vehicle هو، في أنابيبه، صندوق سوقٍ نقدية غير ملحوظ.</li></ul></aside><h2 id="brsrv-bstbl-blackrock">العائد المخفي: تفكيك إيداعات BRSRV و BSTBL من BlackRock <a class="heading-anchor" href="#brsrv-bstbl-blackrock" aria-label="קישור אל العائد المخفي: تفكيك إيداعات BRSRV و BSTBL من BlackRock">#</a></h2>
+<p>لا يمكن للـ stablecoins دفع العائد بموجب GENIUS Act. في 8 مايو 2026، أودعت BlackRock لدى SEC طلبَي تسجيل لمنتجَين يحلّان هذا القيد بأن يُنظَّما كصناديق سوقٍ نقدية بدلاً من stablecoins — في الوقت نفسه الذي يتصرّفان فيه، في المحفظة، كدولاراتٍ on-chain حاملة للعائد على blockchain عامة.</p>
+<hr />
+<blockquote>
+<p><strong>עיקרי המסקנות</strong></p>
+<ul>
+<li><strong>GENIUS Act</strong>، المُوقَّع في يوليو 2025 والآن في الأشهر الأخيرة من وضع قواعده، يحظر على مُصدري payment stablecoins دفع الفوائد أو العوائد للحاملين لمجرّد الاحتفاظ بـ stablecoin أو استخدامه أو الاحتفاظ به. شدّد اقتراح OCC في مارس 2026 ذلك أكثر بافتراضٍ قابل للدحض بأن ترتيبات العائد عبر الشركات التابعة والأطراف الثالثة تنتهك الحظر أيضاً.</li>
+<li>المشكلة الاقتصادية التي ينشئها هذا مباشرة. مع نحو <strong>281 مليار دولار من stablecoins المدفوعات القائمة</strong> وعوائد Treasuries عند مستوياتٍ مرتفعة لعدّة سنوات، تبلغ الفجوة بين ما يتلقّاه حامل المحفظة (صفر) وما تكسبه الاحتياطيات الأساسية (~4-5%) عشرات المليارات من الدولارات سنوياً.</li>
+<li>في <strong>8 مايو 2026، أودعت BlackRock بيانَي تسجيل لدى SEC</strong> يلتقطان هذه الفجوة دون انتهاك حظر العائد — لأن أيّاً من المنتجَين ليس، قانونياً، stablecoin.</li>
+<li><strong>BRSRV</strong> (BlackRock Daily Reinvestment Stablecoin Reserve Vehicle) هو صندوق سوقٍ نقدية جديد يحمل النقد، و Treasuries بأقلّ من 93 يوماً، و overnight Treasury repos. يُصدر &quot;OnChain Shares&quot; عبر إطارٍ مأذون متعدّد السلاسل مع Securitize Transfer Agent LLC كسجلّ ملكيةٍ قانوني. الحدّ الأدنى للاستثمار: 3 ملايين دولار. هندس ليتأهّل كأصل احتياطيّ مؤهّل بموجب GENIUS Act.</li>
+<li><strong>BSTBL</strong> هو الإيداع الأكثر أهميةً معمارياً. يُركّب فئة أسهم ERC-20 على Select Treasury Based Liquidity Fund القائم لـ BlackRock بقيمة <strong>6-7 مليارات دولار</strong>، مع BNY Mellon Investment Servicing وكيل تحويلٍ يسجّل المساهمين على Ethereum. هي المرّة الأولى التي تُضاف فيها فئة أسهم Ethereum عامة إلى منتج صندوق سوقٍ نقدية قائم لـ BlackRock.</li>
+<li>النمط مرئي الآن عبر الصناعة. <strong>صناديق السوق النقدية المُرمَّزة هي المعمارية التي جعلها GENIUS Act، بحظره العائد على stablecoins، حتميةً.</strong> سوق Treasury المُرمَّزة بقيمة 14 مليار دولار — يقودها BUIDL من BlackRock بحصةٍ نحو 40% — هو القراءة المبكّرة لمكان وجود الموجة التالية من &quot;دولارات المحفظة&quot;.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="section-2">إيداعٌ هو أيضاً موقف سياسة <a class="heading-anchor" href="#section-2" aria-label="קישור אל إيداعٌ هو أيضاً موقف سياسة">#</a></h2>
+<p>لم يصل إيداعا BlackRock في 8 مايو 2026 في فراغ. وصلا بعد أسبوع من تقديم BlackRock <a href="https://www.theblock.co/post/399812/blackrock-urges-occ-to-drop-tokenized-reserve-cap-idea-expand-eligible-assets-in-genius-act-comment-letter" title="BlackRock urges OCC to drop tokenized reserve cap idea">خطاب تعليقٍ مكوّن من سبع عشرة صفحة ⧉</a> إلى Office of the Comptroller of the Currency في اليوم الأخير من نافذة التعليق على قواعد تنفيذ GENIUS Act — وأربعة أيام بعد <a href="https://beincrypto.com/blackrock-occ-stablecoin-genius-act-comment/" title="BlackRock Backs OCC Stablecoin Rules Under GENIUS Act">نشر BlackRock ملخّصاً عاماً على X ⧉</a> لتوصياتها السبع الأساسية للوكالة.</p>
+<p>أفضل قراءةٍ للتوصيات والإيداعات الجديدة هي بوصفها وثيقةً واحدة من جزأين. جادل خطاب التعليق بأنه ينبغي لـ OCC إسقاط حدّها المقترح بنسبة 20% على أصول الاحتياطي المُرمَّزة، وتأكيد أن ETFs المؤهّلة تتلقى المعاملة نفسها كصناديق السوق النقدية الحكومية، والسماح لـ GMMFs ذات التسوية في اليوم نفسه بالعدّ ضمن أرضية السيولة الأسبوعية. سجّلت الإيداعات، بعد أربعة أيام، الأدوات الدقيقة التي تستفيد من هذه المواقف: صندوقٌ جديد (BRSRV) مُهندس صراحةً للتأهّل كاحتياطيّ مؤهّل بموجب GENIUS Act، وفئة أسهم مُرمَّزة (BSTBL) فوق صندوق السيولة Treasury القائم للشركة بقيمة 6-7 مليارات دولار. وسواء اعتمد OCC مواقف BlackRock في القاعدة النهائية أم لا، فقد وضعت الشركة الآن منتجاتها في النقاش السياسي بنوعٍ من الدقّة يصعب على جهةٍ تنظيمية تجاهلها.</p>
+<p>هذه هي الخلفية الاستراتيجية لما يبدو في القراءة الأولى قطعةً ذكية من الهندسة القانونية. تُقرأ بدقّةٍ أكبر بوصفها أكبر مدير أصول في العالم يُعلن أين ينبغي أن يقع الخطّ بين &quot;stablecoin&quot; و&quot;ورقة مالية مُرمَّزة&quot; في القانون الأمريكي — ويُسجّل المنتجات التي ستعيش على جانبَي ذلك الخط.</p>
+<h2 id="stablecoins">لماذا لا يمكن للـ stablecoins دفع العائد <a class="heading-anchor" href="#stablecoins" aria-label="קישור אל لماذا لا يمكن للـ stablecoins دفع العائد">#</a></h2>
+<p>GENIUS Act، المُوقَّع في يوليو 2025 والآن أساس قواعد OCC و FDIC و Federal Reserve المتداخلة، يرسم تمييزاً مفاهيمياً نظيفاً بشكلٍ غير عادي. &quot;payment stablecoin&quot; بموجب القانون أصلٌ رقمي مُصمَّم للحفاظ على قيمةٍ مستقرّة نسبةً لعملةٍ ورقية، مدعومٌ باحتياطياتٍ عالية الجودة، قابلٌ للاسترداد بالقيمة الاسمية. و&quot;permitted payment stablecoin issuer&quot; (PPSI) كيانٌ مرخّصٌ فيدرالياً أو من ولاية مُخوَّل بإصدار مثل هذا الرمز. ويحظر <a href="https://www.lw.com/en/insights/occ-issues-proposal-to-implement-the-genius-act" title="OCC Issues Proposal to Implement the GENIUS Act">قسم 4(a)(11) من القانون ⧉</a> على أيّ PPSI دفع الفوائد أو العوائد للحاملين لمجرّد الاحتفاظ بـ stablecoin أو استخدامه أو الاحتفاظ به.</p>
+<p>وسّعت <a href="https://www.nixonpeabody.com/insights/alerts/2026/04/02/proposed-occ-regulations-for-payment-stablecoins-under-the-genius-act" title="Proposed OCC regulations for payment stablecoins under the GENIUS Act">قاعدة OCC المقترحة لمارس 2026 ⧉</a> هذا الحظر تشغيلياً. أسّست افتراضاً قابلاً للدحض بأن الترتيبات التي تُوجّه العائد عبر شركةٍ تابعة أو طرفٍ ثالث مرتبط — مثلاً، بورصة عملاتٍ مشفّرة تدفع &quot;مكافآت ولاء&quot; لحاملي stablecoin معيّن — تنتهك الحظر أيضاً، مع وقوع العبء على المُصدر لإثبات خلاف ذلك. تُعامَل ترتيبات العلامة البيضاء، حيث يُصدر PPSI أصولاً رقمية تحمل علامة شريكٍ يدفع بعد ذلك العائد، صراحةً بوصفها مُتهرّبة افتراضياً. وأشار Office of the Comptroller <a href="https://www.compliancecorylated.com/news/us-occ-closes-genius-act-loophole-allowing-yield-bearing-stablecoins/" title="US OCC closes GENIUS Act loophole allowing yield-bearing stablecoins">في مطلع 2026 ⧉</a> إلى أن تأطير &quot;الثغرة&quot; لنموذج المُصدر-يدفع-عبر-التابع لن يصمد في وضع القواعد النهائي بأيّ شكلٍ متساهل.</p>
+<p>المنطق الاقتصادي لهذا الحظر مُتنازَع عليه. جادلت إفادات صناعة المصارف إلى OCC لصالح الحظر الصارم على أساس أن stablecoins حاملة العائد ستستنزف الودائع المصرفية المعاملية — سوقٌ قدّرته <a href="https://www.congress.gov/crs-product/IF13174" title="The Stablecoin Yield Debate — Congressional Research Service">اللجنة الاستشارية لـ US Treasury بنحو 6.6 تريليون دولار ⧉</a>، حصّةٌ معتبرة منها &quot;في خطر&quot; من المنافسة مع بدائل دولاراتٍ حاملة العائد. جادلت إفادات صناعة العملات المشفّرة، بقيادة Coinbase، عكس ذلك: أن الحوافز محورية للمنافسة في المدفوعات، وأن حظراً واسعاً سيفرض تكاليف رفاهية صافية دون التأثير ماديّاً على الإقراض المصرفي.</p>
+<p>أيّاً كان من الجانبَين لديه الحُجج السياسية الأفضل، النتيجة القانونية حالياً مستقرّة: لا يمكن لـ stablecoin بالمعنى التنظيمي لـ GENIUS Act دفع العائد للحامل. لكن ما لا يمكنه فعله هو تعريف ما يمكن للحامل فعله بأمواله بعد ذلك. وهنا تتباعد المعمارية.</p>
+<h2 id="brsrv">معمارية BRSRV <a class="heading-anchor" href="#brsrv" aria-label="קישור אל معمارية BRSRV">#</a></h2>
+<p>BlackRock Daily Reinvestment Stablecoin Reserve Vehicle هو، في أنابيبه، صندوق سوقٍ نقدية غير ملحوظ. يحمل النقد، وأوراق US Treasury بآجالٍ من 93 يوماً أو أقلّ، واتفاقيات إعادة الشراء الليلية المدعومة بـ Treasuries. هو مُحاذى لـ Rule 2a-7 بموجب Investment Company Act of 1940 — البنية التنظيمية نفسها التي حكمت صناديق السوق النقدية المؤسسية لأربعة عقود. عائده، كأيّ MMF حكومي آخر، مُشتقٌّ من معدّل Treasury قصير الأجل السائد.</p>
+<p>ما هو جديد هو فئة الأسهم. تُصدَر أسهم BRSRV كـ <a href="https://unchainedcrypto.com/blackrock-files-for-two-new-tokenized-money-market-funds-targeting-stablecoin-capital/" title="BlackRock Files for Two New Tokenized Money-Market Funds Targeting Stablecoin Capital">&quot;OnChain Shares&quot; عبر إطارٍ مأذون ⧉</a> يتّصل بـ blockchains عامة متعدّدة، مع <a href="https://www.crowdfundinsider.com/2026/05/278346-blackrock-focuses-on-tokenization-initiatives-with-blockchain-enabled-funds/" title="BlackRock Focuses On Tokenization Initiatives With Blockchain Enabled Funds">Securitize Transfer Agent LLC يخدم كوكيل تحويلٍ رسمي ⧉</a>. تربط أنظمة هويةٍ خارج السلسلة — نفس نوع البنية التحتية لـ KYC التي تدعم صندوق BUIDL القائم لـ BlackRock بقيمة 2.9 مليار دولار <a href="https://stablecoininsider.org/top-10-tokenized-treasury-funds-in-2026-buidl-benji-and-the-highest-yielding-on-chain-options/" title="Top 10 Tokenized Treasury Funds in 2026">⧉</a> — عناوين المحافظ بالمستثمرين المُتحقَّق منهم. الحدّ الأدنى للاستثمار: 3 ملايين دولار. لا يُسمّي الإيداع بعدُ أيّ blockchains سيدعمها الصندوق عند الإطلاق.</p>
+<p>المنتج مُهندس صراحةً، <a href="https://cryptobriefing.com/blackrock-tokenized-money-market-funds-stablecoins/" title="BlackRock doubles down on tokenization with new stablecoin reserve funds">كما أشارت مصادر عدّة ⧉</a>، للتأهّل كأصل احتياطيّ مؤهّل بموجب GENIUS Act. المشتري المستهدف ليس مستخدم محفظة تجزئة. هو مُصدر stablecoin (أو عملية خزينةٍ تحتفظ بـ stablecoins كجزءٍ من استراتيجية رأس مالٍ عامل) يحتاج إلى أداةٍ مُنتجة لعائد Treasury يمكنه الاحتفاظ بها برمجياً على مسارات blockchain نفسها كـ stablecoins ذاتها. العرض، مُبسَّطاً إلى جملةٍ واحدة: احتفظ باحتياطياتك on-chain، اكسب عائد Treasury، رضِ المنظِّم.</p>
+<p>بالنسبة لـ BlackRock، الموقف الاستراتيجي أحدّ ممّا يبدو. صندوق BUIDL القائم لديها يدعم بالفعل أكثر من 90% من احتياطيات اثنين من أكبر المنتجات الملاصقة لـ stablecoins &quot;حاملة العائد&quot; — Ethena's USDtb و Solana-based Jupiter's JupUSD. BRSRV هو الامتداد المُكرَّس الواعي بـ GENIUS لذلك الدور: منتج عائد Treasury بالجملة المُصمَّم لغرضٍ خاصّ لسير عمل إدارة الاحتياطي لكلّ PPSI سيوجد بموجب النظام الجديد.</p>
+<h2 id="bstbl">معمارية BSTBL <a class="heading-anchor" href="#bstbl" aria-label="קישור אל معمارية BSTBL">#</a></h2>
+<p>الإيداع الثاني أكثر إثارةً تشغيلياً وأكثر أهميةً معمارياً. BSTBL — فئة الأسهم on-chain لـ BlackRock Select Treasury Based Liquidity Fund القائم — ليس صندوقاً جديداً. هو فئة أسهمٍ جديدة طُبقت على منتج سوقٍ نقدية يُدير بالفعل نحو 6-7 مليارات دولار في الأصول، <a href="https://www.theblock.co/post/399812/blackrock-urges-occ-to-drop-tokenized-reserve-cap-idea-expand-eligible-assets-in-genius-act-comment-letter" title="BlackRock urges OCC to drop tokenized reserve cap idea">أُعيد توظيفه في أكتوبر 2025 ⧉</a> إلى تكوينٍ متوافق مع GENIUS بموعد تداولٍ في الساعة الخامسة مساءً ET وتفويضٍ ثقيل بـ Treasury، ويُمتدّ الآن إلى Ethereum كرمز ERC-20.</p>
+<p>وكيل التحويل لفئة الأسهم هذه هو <a href="https://www.mexc.com/news/1080472" title="BlackRock files for two new tokenized funds with the U.S. SEC on Ethereum">BNY Mellon Investment Servicing ⧉</a>، الذي سيُحافظ على سجلات المساهمين الرسمية على Ethereum باستخدام معيار ERC-20. تربط البنية التحتية KYC خارج السلسلة المحافظ بسجلات هوية المستثمر، كما تفعل لـ BUIDL ولكلّ صندوقٍ مُرمَّز ممتثل آخر في السوق اليوم. التمييز الجوهري عن BRSRV هو السلسلة (Ethereum، عامة، مع رمز ERC-20 كتمثيل أسهم) ووكيل التحويل (BNY بدلاً من Securitize) — وحقيقة أن هذه هي المرّة الأولى التي تُربط فيها فئة أسهم Ethereum عامة بصندوق سوقٍ نقدية قائم لـ BlackRock.</p>
+<p>تلك التفصيلة الأخيرة هي التي تستحقّ التأمّل. كانت منتجات BlackRock المُرمَّزة السابقة — BUIDL بشكلٍ بارز — مُنظَّمةً كصناديق جديدة بمعمارية on-chain أصلية. يتّخذ BSTBL نهجاً مختلفاً وأرجح أن يكون أكثر تبعاتٍ: ترميز منتج سوقٍ نقدية قائم وكبير وتقليدي بإضافة فئة أسهم جديدة، بدلاً من بناء بنيةٍ موازية. التداعي هو أن أيّ MMF قائم لـ BlackRock يمكنه، من حيث المبدأ، اتّباع النمط نفسه. وكذلك أيّ MMF منافسٍ قائم — Vanguard، Fidelity، JPMorgan، State Street. الحاجز المعماري لترميز صناعة صناديق السوق النقدية التقليدية، بعد BSTBL، أقلّ ممّا كان عليه أبداً.</p>
+<p>لسياق الصناعة: نَمَت Treasuries الأمريكية المُرمَّزة من نحو 2 مليار دولار إلى <a href="https://www.mexc.com/news/1080472" title="BlackRock files for two new tokenized funds with the U.S. SEC on Ethereum">14 مليار دولار حتى مايو 2026 ⧉</a>، بحصّة BUIDL من BlackRock نحو 40% من السوق، و BENJI/FOBXX من Franklin Templeton بـ 850 مليون دولار، ومنتجات Ondo Finance المُجمَّعة OUSG و USDY في المركز الثاني. ما هو معقول هو أن 50-100 مليار دولار التالية في الحركة بالفعل عبر إيداعاتٍ مثل BSTBL.</p>
+<h2 id="payment-stablecoin">Payment Stablecoin مقابل صندوق سوقٍ نقدية مُرمَّز: التمييز الذي يُهمّ <a class="heading-anchor" href="#payment-stablecoin" aria-label="קישור אל Payment Stablecoin مقابل صندوق سوقٍ نقدية مُرمَّز: التمييز الذي يُهمّ">#</a></h2>
+<p>للقارئ غير المتخصّص، يمكن أن يبدو التمييز بين &quot;stablecoin&quot; و&quot;حصّة صندوق سوقٍ نقدية مُرمَّزة&quot; تقنيةً تنظيمية. هو ليس كذلك. تحتلّ الأداتان مواقع مختلفة فعلاً في قانون الأوراق المالية الأمريكي وتتدفّق التبعات عبر تصميم المنتج بأكمله.</p>
+<table>
+<thead>
+<tr>
+<th>البُعد</th>
+<th>Payment Stablecoin (بموجب GENIUS Act)</th>
+<th>حصّة MMF مُرمَّزة (نمط BRSRV / BSTBL)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>الوضع القانوني</td>
+<td>أداة دفع</td>
+<td>ورقة مالية (حصّة صندوق)</td>
+</tr>
+<tr>
+<td>النظام الحاكم</td>
+<td>GENIUS Act؛ قواعد OCC/FDIC/Fed</td>
+<td>Investment Company Act 1940؛ Rule 2a-7</td>
+</tr>
+<tr>
+<td>المُصدر</td>
+<td>Permitted Payment Stablecoin Issuer (PPSI)</td>
+<td>صندوق مسجّل لدى SEC (ووكيل تحويل)</td>
+</tr>
+<tr>
+<td>متطلّبات الاحتياطي</td>
+<td>نقد، Treasuries قصيرة، repos — صارمة</td>
+<td>نقد، Treasuries قصيرة، repos — Rule 2a-7</td>
+</tr>
+<tr>
+<td>يمكنه دفع العائد للحامل</td>
+<td><strong>لا</strong> (قسم 4(a)(11))</td>
+<td><strong>نعم</strong> (العائد هو العائد على الحصّة)</td>
+</tr>
+<tr>
+<td>الاسترداد</td>
+<td>بالقيمة الاسمية، عند الطلب</td>
+<td>بـ NAV، عادةً T+0 أو T+1</td>
+</tr>
+<tr>
+<td>سجلّ الملكية</td>
+<td>محفظة المُصدر / on-chain</td>
+<td>وكيل التحويل (قانوني)؛ blockchain (تشغيلي)</td>
+</tr>
+<tr>
+<td>الحدّ الأدنى للاستثمار</td>
+<td>لا شيء (تجزئة نموذجية)</td>
+<td>كبير (3 ملايين دولار لـ BRSRV؛ مؤسسي لـ BSTBL)</td>
+</tr>
+<tr>
+<td>القابلية للتركيب مع DeFi</td>
+<td>عالية</td>
+<td>عالية (BUIDL سابقة)</td>
+</tr>
+<tr>
+<td>تجربة المستخدم في المحفظة</td>
+<td>رمز يحمل 1 دولار</td>
+<td>رمز تتراكم قيمته نحو العائد</td>
+</tr>
+<tr>
+<td>مخاطر بديل الوديعة المصرفية</td>
+<td>القلق التنظيمي المركزي</td>
+<td>أقلّ ماديّاً (ورقة مالية، ليست شبه وديعة)</td>
+</tr>
+</tbody>
+</table>
+<p><em>المصدر: تركيبٌ من نصّ GENIUS Act، و OCC mars 2026 NPRM، وإيداعات BlackRock في 8 مايو 2026، وإطار Rule 2a-7.</em></p>
+<p>الصفّ الأخير يُفسّر المعمارية التنظيمية. payment stablecoin يدفع العائد يبدو، لمنظِّم بنك، كبديل وديعة. حصّة صندوق سوقٍ نقدية مُرمَّزة تدفع العائد تبدو كورقةٍ مالية — والأوراق المالية المنافسة للودائع ليست قلقاً جديداً، لأن صناديق السوق النقدية التقليدية فعلت ذلك بالضبط لأربعين عاماً. يرسم GENIUS Act خطّه عند قلق بديل الوديعة. كلّ ما يقع بوضوحٍ على جانب الأوراق المالية من ذلك الخطّ هو، بالبناء، خارج حظر العائد للقانون.</p>
+<h2 id="section-7">هل هذه ثغرة؟ <a class="heading-anchor" href="#section-7" aria-label="קישור אל هل هذه ثغرة؟">#</a></h2>
+<p>من المُغري — وقد ظهر التأطير على نطاقٍ واسع على LinkedIn و crypto-Twitter منذ الإيداع — تسمية هذا &quot;ثغرةً&quot; في GENIUS Act: لا يمكن لـ stablecoins دفع العائد، لذا أودعت BlackRock شيئاً ليس قانونياً stablecoin. التأطير يلتقط العنوان بذكاء. كتمييزٍ قانوني يُقلّل من الجوهر.</p>
+<p>حظر العائد في GENIUS Act كان اختياراً سياسياً محدّداً بهدفٍ محدّد: مخاطر بديل الوديعة على القطاع المصرفي من فئة أداةٍ مُصمَّمة للعمل كنقود. صناديق السوق النقدية المُرمَّزة ليست مُصمَّمة للعمل كنقود؛ هي مُصمَّمة للعمل كحصص صناديق، بكلّ الوزن التنظيمي (Rule 2a-7، احتياطيات مُدقَّقة، إفصاح NAV، سجلات ملكية قانونية لوكيل التحويل) الذي طُبِّق على تلك الفئة لعقود. أن هذه الحصص الصندوقية تُسوّى الآن صدفةً على Ethereum أو blockchain عامة أخرى لا يُغيّر ما هي في قانون الأوراق المالية. تتأمّل <a href="https://www.morganlewis.com/pubs/2026/04/occs-genius-act-proposal-what-prospective-issuers-need-to-know" title="Stablecoin Regulation: OCC Proposal Under the GENIUS Act">قاعدة OCC المقترحة ذاتها ⧉</a> صراحةً الاحتياطيات المُرمَّزة كفئةٍ مشروعة — النقاش المفتوح هو الحدّ بـ 20%، لا وجود فئة الأصل.</p>
+<p>ما هو حقّاً جديد هو تجربة المستخدم. حامل حصّة MMF مُرمَّزة، في محفظة على blockchain عامة، لديه شيءٌ يبدو كـ stablecoin (رمز قابل للاستبدال، قابل للتحويل من نظيرٍ إلى نظير، قابل للتركيب مع البنية التحتية DeFi) لكنه يتصرّف كورقةٍ مالية (NAV يتراكم، الحامل في قائمة KYC، سجلات وكيل التحويل تتحكّم قانونياً). تأطير العنوان — &quot;ليست قانونياً stablecoin&quot; — صحيحٌ قدر ما يصل. الملاحظة الأعمق هي أن GENIUS Act، بحظره العائد على فئة payment stablecoin، <em>تطلّب</em> فعلياً من الصناعة التقارب على صناديق السوق النقدية المُرمَّزة كحاملٍ للدولارات on-chain حاملة العائد. رسم القانون خطّاً؛ هيكلت الصناعة، كما هو متوقّع، منتجاتٍ تقع على الجانب الأكثر مُلاءمة منه. هذه ليست ثغرة. هي تصميم المعمارية التنظيمية يعمل تقريباً كما هو مقصود — حتى لو كانت السرعة التي تُنتج بها منتجاتٍ مؤسسية أسرع ممّا توقّع معظم المشاركين.</p>
+<h2 id="section-8">ماذا يعني ذلك بحسب القطاع <a class="heading-anchor" href="#section-8" aria-label="קישור אל ماذا يعني ذلك بحسب القطاع">#</a></h2>
+<p>ليست تداعيات إيداعات 8 مايو متجانسة. تختلف الاستجابة الاستراتيجية مادياً اعتماداً على مكان جلوس المؤسسة في سلسلة القيمة.</p>
+<h3 id="stablecoins-ppsis">مُصدرو Stablecoins (PPSIs) <a class="heading-anchor" href="#stablecoins-ppsis" aria-label="קישור אל مُصدرو Stablecoins (PPSIs)">#</a></h3>
+<p>بالنسبة لـ Circle و Tether و PayPal والجيل التالي من stablecoins المدفوعات المُصدَرة من البنوك، BRSRV هو الإجابة التشغيلية لسؤالٍ كانت لديه حتى الآن إجاباتٌ مُخصَّصة فقط: أين تجلس الاحتياطيات حين تحتاج إلى أن تكون مُنتجةً لعائد Treasury وعلى السلسلة نفسها أصلاً كـ stablecoin المُصدَر؟ الاحتفاظ المباشر بـ T-bills يعمل عند مقياس الإصدار لكنه ثقيل تشغيلياً. الاحتفاظ بـ BUIDL يعمل، لكن بنية BUIDL لم تُصمَّم خصّيصاً حول إطار احتياطي GENIUS Act. BRSRV كذلك. التبعة التنافسية هي أن Circle و Tether و PPSIs المُصدَرة من البنوك لديها الآن منتج جملة موثوق ومُهندس بـ GENIUS لتوصيله بإدارة احتياطياتها — والتكلفة الحدّية لتحويل الاحتياطيات إلى منتج BlackRock هي، هيكلياً، أقلّ ممّا كانت عليه أبداً.</p>
+<h3 id="section-10">البنوك ومُشغّلو صناديق السوق النقدية <a class="heading-anchor" href="#section-10" aria-label="קישור אל البنوك ومُشغّلو صناديق السوق النقدية">#</a></h3>
+<p>للبنوك التي تُشغّل امتيازات صناديق سوقٍ نقدية كبيرة — JPMorgan و State Street و BNY Mellon و Northern Trust و Vanguard و Fidelity — BSTBL هو القالب التشغيلي لما من المرجّح أن تُضطر منتجاتها الخاصّة إلى فعله. النمط المعماري مرئي الآن: خذ MMF قائماً، سجّل فئة أسهم on-chain جديدة لدى SEC، عيّن وكيل تحويلٍ للحفاظ على سجلات المساهمين على Ethereum (أو blockchain عامة كبيرة أخرى)، وقيّد الوصول عبر KYC خارج السلسلة. الحاجز للدخول لفئة أسهمٍ مُرمَّزة على MMF قائم بقيمة 10-50 مليار دولار هو، في نمط BSTBL، تنظيمي وتشغيلي بشكلٍ رئيسي لا تقني. دور BNY Mellon كوكيل تحويلٍ لـ BSTBL — يسجّل المساهمين على Ethereum باستخدام ERC-20 — هو ذاته إشارةٌ إلى أن البنية التحتية لوكلاء التحويل التقليديين تُمدّ إلى blockchains عامة تحديداً من قِبَل المؤسسات التي أدارت السجلّ القانوني لملكية الصناديق لعقود.</p>
+<h3 id="defi-on-chain">بروتوكولات DeFi وخزينة on-chain <a class="heading-anchor" href="#defi-on-chain" aria-label="קישור אל بروتوكولات DeFi وخزينة on-chain">#</a></h3>
+<p>لبروتوكولات DeFi، يُمدّ BRSRV و BSTBL نمطاً بدأه BUIDL: هجرة ضمانات Treasury عالية الجودة من حساباتٍ حضانية خارج السلسلة إلى أدواتٍ on-chain يمكن تركيبها مع الإقراض والمشتقات والمنتجات المُهيكَلة. Ethena's USDtb و Jupiter's JupUSD هما المثالان المُتحرّكان مبكراً؛ فضاء التصميم خلفهما الآن أكبر بشكلٍ ملموس. اعتبار المخاطر — وهو غير تافه — هو أن الأدوات الأساسية مُقفلة بـ KYC ومأذونة، ممّا يحدّ من درجة التركيب &quot;غير المأذون&quot; التي يمكن للأنظمة الأصلية لـ DeFi الاعتماد عليها. أنماط التكامل التي تظهر في الاثني عشر شهراً المقبلة ستُحدّد بنظافةٍ كيف تصبح صناديق السوق النقدية المُرمَّزة طبقة ضماناتٍ أساسية للاقتصاد on-chain.</p>
+<h3 id="section-12">الجهات التنظيمية <a class="heading-anchor" href="#section-12" aria-label="קישור אל الجهات التنظيمية">#</a></h3>
+<p>بالنسبة لـ OCC و FDIC و Federal Reserve، توضّح إيداعات 8 مايو ما يُطلَب من المحيط التنظيمي استيعابه. حظر العائد في GENIUS Act لم يوقف بوضوحٍ العائد on-chain من الوصول إلى حاملي المحافظ؛ هجرت معمارية تسليم ذلك العائد من فئة payment stablecoin (التي تُشرف عليها الجهات التنظيمية مباشرةً) إلى فئة الصندوق المسجّل (التي تُشرف عليها SEC). ليس هذا بالضرورة نتيجةً سيئة — الصناديق المسجّلة فئة تنظيمية مفهومة جيداً — لكنه يعني أن سؤال التنسيق بين الوكالات يصبح أحدّ تشغيلياً. ستُحدّد قاعدة OCC النهائية، المستحقّة بحلول يناير 2027، ما إذا كان حدّ 20% على الاحتياطيات المُرمَّزة يصمد بأيّ شكل، وما إذا كان الخطّ بين &quot;payment stablecoin&quot; و&quot;حصّة MMF مُرمَّزة&quot; يُحفَظ على مستوى المُصدر أم يُسمح بضبابيته أكثر على مستوى المحفظة.</p>
+<h2 id="section-13">الخاتمة <a class="heading-anchor" href="#section-13" aria-label="קישור אל الخاتمة">#</a></h2>
+<p>إيداعات 8 مايو 2026 ليست، بحدّ ذاتها، تحوّل نموذج. هي منتجاتٌ فردية من مدير أصولٍ واحد، أُودعت في النافذة التنظيمية المحدّدة التي فتحها وضع قواعد OCC. لكن ما تلتقطه هو شكل انتقال على مستوى الصناعة كان مرئياً منذ إطلاق BlackRock لـ BUIDL في مارس 2024 والذي سرّعه GENIUS Act الآن بدلاً من تقييده.</p>
+<p>ستستمرّ stablecoins، بمعنى GENIUS Act، في فعل ما كانت stablecoins جيّدةً فيه دائماً: تسوية فعّالة، ومدفوعات شبه فورية عابرة للحدود، ونقود قابلة للبرمجة لحالات الاستخدام التي تحتاج إلى وحدة حسابٍ مستقرّة. لن تدفع، بموجب القواعد الحالية والمقترحة، عائداً لحامليها. الدولار حامل العائد في المحفظة — المنتج الذي يأخذ نفس شكل العامل كـ stablecoin لكنه يُراكم عائد Treasury لحامله — سيكون حصّة صندوق سوقٍ نقدية مُرمَّزة، مُصدَرة من صندوق مسجّل، مع وكيل تحويل (Securitize، BNY Mellon، وعدّة آخرين على الأرجح) كسجلّ ملكيةٍ قانوني. BRSRV و BSTBL هما التعبيران المؤسسيّان المبكّران لذلك النمط. لن يكونا الأخيرَين.</p>
+<h2 id="section-14">الأسئلة الشائعة <a class="heading-anchor" href="#section-14" aria-label="קישור אל الأسئلة الشائعة">#</a></h2>
+<p><strong>ما الفرق الفعلي بين BRSRV/BSTBL و stablecoin مثل USDC؟</strong></p>
+<p>في المحفظة، الفرق غير مرئيّ في الغالب. كلٌّ منهما رمزٌ قابل للاستبدال على blockchain عامة، قابل للاسترداد بدولارات (أو بقيمة حصّة الصندوق الأساسية)، قابل للتركيب مع DeFi. قانونياً، الفرق جوهري. USDC هو payment stablecoin بموجب GENIUS Act، مُصدَر من Permitted Payment Stablecoin Issuer، محظور عليه دفع العائد للحاملين. BRSRV و BSTBL هما فئتا أسهم لصناديق سوقٍ نقدية مسجّلة بموجب Investment Company Act of 1940، مُنظَّمتان بموجب Rule 2a-7، حيث العائد هو العائد الطبيعي على الحصّة. حامل BRSRV، قانونياً، مساهم في صندوق. حامل USDC، قانونياً، حامل أداة دفع.</p>
+<p><strong>لماذا BSTBL مختلف عن BUIDL إذا كان كلاهما صناديق BlackRock مُرمَّزة على Ethereum؟</strong></p>
+<p>أُطلق BUIDL في مارس 2024، نُظِّم كصندوقٍ جديد بمعمارية on-chain من البداية، مع Securitize كشريك والتصميم أصلي لسير عمل الأصول الرقمية. BSTBL، بالمقابل، هو فئة أسهم on-chain جديدة مُضافة إلى صندوق سوقٍ نقدية تقليدي قائم بقيمة 6-7 مليارات دولار — Select Treasury Based Liquidity Fund. يخدم BNY Mellon كوكيل تحويل. الأهمية المعمارية هي أن BSTBL يُبرهن كيفية جلب منتج سوقٍ نقدية كبير وتقليدي قائم on-chain دون إعادة بنائه كصندوقٍ جديد. ذلك القالب، إذا نجح، قابل للنقل لأيّ MMF تقليدي في الصناعة.</p>
+<p><strong>لماذا حدّ 20% من OCC على الاحتياطيات المُرمَّزة مُتنازَع عليه؟</strong></p>
+<p>طرحت اقتراح OCC في مارس 2026 حدّاً محتملاً بـ 20% على مقدار احتياطيات مُصدر stablecoin التي يمكن الاحتفاظ بها بشكلٍ مُرمَّز. جادل خطاب تعليق BlackRock بأن هذا سيكون &quot;خارجياً&quot; بالنسبة لأهداف OCC الإشرافية، لأن ملف مخاطر أصل احتياطي مدفوعٌ بجودة الائتمان والمدّة والسيولة — لا بما إذا كان مُحتفَظاً به أو مُحوَّلاً على دفتر موزّع. تشغيلياً، سيُقيّد الحدّ دور BUIDL كدعم احتياطيّ رئيسي لمنتجاتٍ مثل Ethena's USDtb و Jupiter's JupUSD، والتي تعتمد كلتاهما حالياً على BUIDL لأكثر من 90% من احتياطياتهما. ستُحدّد قاعدة OCC النهائية، المستحقّة بحلول يناير 2027، ما إذا كان الحدّ يصمد أم يُرفع أم يُسقَط.</p>
+<p><strong>ماذا يعني أن إيداع BRSRV لا يُسمّي الـ blockchains التي سيدعمها؟</strong></p>
+<p>هي ميزة روتينية لإيداعات SEC في المرحلة المبكّرة لا غموض استراتيجي. يؤسّس الإيداع البنية القانونية (صندوق مسجّل يُصدر OnChain Shares عبر إطارٍ مأذون مع Securitize كوكيل تحويل) دون الالتزام بسلاسل محدّدة، وستُعلن BlackRock عنها على الأرجح أقرب إلى الإطلاق. أُطلق BUIDL ذاته على Ethereum وتوسّع لاحقاً إلى Polygon و Avalanche و Optimism و Aptos و Arbitrum؛ BRSRV على الأرجح سيتّبع نمطاً متعدّد السلاسل مماثلاً نظراً للإشارة الصريحة إلى &quot;blockchains عامة متعدّدة&quot; في الإيداع.</p>
+<p><strong>هل هذه نهاية stablecoins حاملة العائد كفئة منتج؟</strong></p>
+<p>هي نهاية stablecoins المدفوعات حاملة العائد كفئة، على الأقلّ بموجب القانون الفيدرالي الأمريكي، ما لم يُعدّل Congress GENIUS Act. ليست نهاية الدولارات on-chain حاملة العائد كفئة منتج، وهو ما يريده المستخدمون فعلاً. تلك الفئة تهاجر الآن إلى حصص صناديق السوق النقدية المُرمَّزة — BUIDL، BENJI، BRSRV، BSTBL، منتجات Ondo، وموجة MMFs المُرمَّزة المنافسة التي من المرجّح أن يُحفّزها نمط BSTBL. ستبدو الأدوات مختلفةً قليلاً في المحفظة (ستعكس قيمة الرمز العائد المتراكم بدلاً من الاحتفاظ بـ 1.00 دولار ثابت)، لكن الوظيفة الاقتصادية — تعرّضٌ مكافئ للدولار بعائد Treasury، مُسوَّى على blockchain عامة — تُحفَظ عبر مسارٍ تنظيمي مختلف.</p>
+<h2 id="section-15">المراجع <a class="heading-anchor" href="#section-15" aria-label="קישור אל المراجع">#</a></h2>
+<ul>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/he/2026-05-12-iso-20022-pacs008-structured-address-deadline/index.html" title="The novembre 2026 pacs.008 Structured-Address Deadline">The novembre 2026 pacs.008 Structured-Address Deadline</a>.</li>
+<li>Sebastien Rousseau, (2018). <a href="https://sebastienrousseau.com/he/2018-01-24-the-erc-20-token-standard/index.html" title="ERC-20">معيار التوكن ERC-20</a>.</li>
+<li>Sebastien Rousseau, (2018). <a href="https://sebastienrousseau.com/he/2018-01-09-understanding-the-technology-behind-blockchain/index.html" title="فهم التقنية الكامنة وراء البلوكشين">فهم التقنية الكامنة وراء البلوكشين</a>.</li>
+<li>Unchained, (2026). <a href="https://unchainedcrypto.com/blackrock-files-for-two-new-tokenized-money-market-funds-targeting-stablecoin-capital/" title="BlackRock Files for Two New Tokenized Money-Market Funds">BlackRock Files for Two New Tokenized Money-Market Funds ⧉</a>. Unchained.</li>
+<li>The Block, (2026). <a href="https://www.theblock.co/post/399812/blackrock-urges-occ-to-drop-tokenized-reserve-cap-idea-expand-eligible-assets-in-genius-act-comment-letter" title="BlackRock urges OCC">BlackRock urges OCC to drop tokenized reserve cap idea ⧉</a>. The Block.</li>
+<li>BeInCrypto, (2026). <a href="https://beincrypto.com/blackrock-occ-stablecoin-genius-act-comment/" title="BlackRock Backs OCC Stablecoin Rules">BlackRock Backs OCC Stablecoin Rules Under GENIUS Act ⧉</a>. BeInCrypto.</li>
+<li>Crypto Briefing, (2026). <a href="https://cryptobriefing.com/blackrock-tokenized-money-market-funds-stablecoins/" title="BlackRock doubles down on tokenization">BlackRock doubles down on tokenization ⧉</a>. Crypto Briefing.</li>
+<li>Latham &amp; Watkins, (2026). <a href="https://www.lw.com/en/insights/occ-issues-proposal-to-implement-the-genius-act" title="OCC Issues Proposal">OCC Issues Proposal to Implement the GENIUS Act ⧉</a>. Latham &amp; Watkins.</li>
+<li>Morgan Lewis, (2026). <a href="https://www.morganlewis.com/pubs/2026/04/occs-genius-act-proposal-what-prospective-issuers-need-to-know" title="OCC Proposal">Stablecoin Regulation: OCC Proposal Under the GENIUS Act ⧉</a>. Morgan Lewis.</li>
+<li>Congressional Research Service, (2026). <a href="https://www.congress.gov/crs-product/IF13174" title="Stablecoin Yield Debate">The Stablecoin Yield Debate ⧉</a>. Congress.gov.</li>
+<li>MEXC News, (2026). <a href="https://www.mexc.com/news/1080472" title="BlackRock files for two new tokenized funds">BlackRock files for two new tokenized funds with the U.S. SEC on Ethereum ⧉</a>. MEXC News.</li>
+</ul>
+<aside class="author-card" aria-label="אודות הכותב"><img alt="דיוקן של Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/he/aleynu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">מומחה טכנולוגיות בנקאות בכיר הכותב על AI יישומי, מעבר ל-ISO 20022, קריפטוגרפיה פוסט-קוונטית עבור שירותים פיננסיים, וטרנספורמציה מבנית של תשלומי סיטונאות.</span><span class="author-credentials">מעל 20 שנות ניסיון ב-HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA ו-Virgin Group. <a href="/he/aleynu/index.html">פרופיל מלא</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">נסקר לאחרונה <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">קריאה נוספת</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/he/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html" class="related-media" aria-label="قانون الذكاء الاصطناعي في الاتحاد الأوروبي: رائد التنظيم الأخلاقي للذكاء الاصطناعي عالمياً" tabindex="-1"><img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-16"><a href="https://sebastienrousseau.com/he/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">قانون الذكاء الاصطناعي في الاتحاد الأوروبي: رائد التنظيم الأخلاقي للذكاء الاصطناعي عالمياً</a> <a class="heading-anchor" href="#section-16" aria-label="קישור אל قانون الذكاء الاصطناعي في الاتحاد الأوروبي: رائد التنظيم الأخلاقي للذكاء الاصطناعي عالمياً">#</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/he/2018-01-24-the-erc-20-token-standard/index.html" class="related-media" aria-label="معيار التوكن ERC-20" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="erc-20"><a href="https://sebastienrousseau.com/he/2018-01-24-the-erc-20-token-standard/index.html">معيار التوكن ERC-20</a> <a class="heading-anchor" href="#erc-20" aria-label="קישור אל معيار التوكن ERC-20">#</a></h3><p><time datetime="2018-01-24">2018-01-24</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="מיון מאמרים"><a class="post-pagination-prev" href="/he/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/"><span class="post-pagination-label">הקודם</span><span class="post-pagination-title">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</span></a><a class="post-pagination-next" href="/he/2026-05-18-agentic-engineering-banks-blueprint-2026/"><span class="post-pagination-label">הבא</span><span class="post-pagination-title">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/he/aleynu/index.html">אודות</a></li>
+              <li><a href="/he/tsor-kesher/index.html">צור קשר</a></li>
+              <li><a href="/he/noseh-im-static-site-generator/index.html">נוצר עם Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">כתיבה</h2>
+            <ul>
+              <li><a href="/he/ma-amarim/index.html">מאמרים</a></li>
+              <li><a href="/he/pirsumim/index.html">פרסומים</a></li>
+              <li><a href="/he/tagim/index.html">תגיות</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">עבודה</h2>
+            <ul>
+              <li><a href="/he/proyektim/index.html">פרויקטים</a></li>
+              <li><a href="/he/play-listim/index.html">פלייליסטים</a></li>
+              <li><a href="/he/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">צור קשר</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="הרשמה לניוזלטר">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — פתקי מחקר על תשלומים, AI וקריפטוגרפיה פוסט-קוונטית. ללא ספאם.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="atah@bank.co.il" />
+            <input type="hidden" name="_subject" value="הרשמה לניוזלטר — sebastienrousseau.com" />
+            <button type="submit">הרשמה</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© זכויות יוצרים 2007 - 2026 - Sebastien Rousseau. כל הזכויות שמורות.</span>
+          <div class="social" aria-label="קישורי רשתות חברתיות">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau ב-Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau ב-Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau ב-LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau ב-LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau ב-Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau ב-Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau ב-YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau ב-YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/he/nigishut/index.html">נגישות</a> ·
+            <a href="/he/pratiyut/index.html">פרטיות</a> ·
+            <a href="/he/tnaim/index.html">תנאים</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"he"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"he"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":3278,"headline":"العائد المخفي: تفكيك إيداعات BRSRV و BSTBL من BlackRock","description":"بموجب GENIUS Act، لا يمكن للـ stablecoins دفع العائد. تُجسّد إيداعات BRSRV و BSTBL من BlackRock التحايل: صندوق سوقٍ نقدية مُرمَّز بالتوازي مع stablecoin مُنظَّم، لتوجيه العائد عبر مسارٍ متوافق مجاور.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp","width":"100vw","height":"100vh","caption":"قطع دولارات مكدّسة تحت إضاءةٍ دافئة، تمثيل لعائد صندوق سوقٍ نقدية مُرمَّز"},"url":"https://sebastienrousseau.com/he/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/","datePublished":"2026-05-15T06:06:06+00:00","dateModified":"2026-05-15","inLanguage":"he","keywords":"stablecoins، GENIUS Act، BlackRock، BRSRV، BSTBL، صندوق السوق النقدية المُرمَّز، OCC، OnChain Shares، Securitize، BNY Mellon، المدفوعات","articleSection":"Payments","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/he/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"he"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/he/"},{"@type":"ListItem","position":3,"name":"العائد المخفي: تفكيك إيداعات BRSRV و BSTBL من BlackRock","item":"https://sebastienrousseau.com/he/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="חיפוש">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>חיפוש</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="חיפוש">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="חיפוש בתיעוד..." autocomplete="off" aria-label="חיפוש"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> סגירה</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> ניווט</span><span><kbd>Enter</kbd> פתיחה</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>
