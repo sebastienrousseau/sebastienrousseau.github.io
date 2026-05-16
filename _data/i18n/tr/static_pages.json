@@ -1,0 +1,99 @@
+{
+  "_comment": "Turkish static-page metadata — DRAFT pending native review. Mirrors EN/FR/DE/AR static_pages.json shape.",
+  "404": {
+    "title": "Sayfa bulunamadı — Sebastien Rousseau",
+    "subtitle": "Üzgünüz, bu sayfa mevcut değil.",
+    "description": "Talep edilen sayfa bulunamadı. Ana sayfaya dönün veya arama özelliğini kullanın.",
+    "keywords": "404, sayfa bulunamadı"
+  },
+  "about": {
+    "title": "Hakkımda — Sebastien Rousseau",
+    "subtitle": "Yapay zeka, post-kuantum kriptografi ve blockchain teknolojisinin stratejik entegrasyonu yoluyla bankacılığın ve finansal hizmetlerin geleceğini şekillendirmek.",
+    "description": "Sebastien Rousseau, kıdemli bankacılık teknoloğu: uygulamalı yapay zeka, ISO 20022 geçişi, post-kuantum kriptografi, toptan ödemelerin yapısal dönüşümü.",
+    "keywords": "Sebastien Rousseau, biyografi, bankacılık, ödemeler, yapay zeka, ISO 20022, post-kuantum kriptografi, HSBC, PayPal, Barclays"
+  },
+  "accessibility": {
+    "title": "Erişilebilirlik — Sebastien Rousseau",
+    "subtitle": "Engelli kişiler için dijital erişilebilirliğe bağlıyız.",
+    "description": "Erişilebilirlik beyanı: WCAG 2.2 AA uyumu, kapsayıcı ilkeler, geri bildirim ve sorun bildirimi için iletişim bilgileri.",
+    "keywords": "erişilebilirlik, WCAG, uyum, dijital kapsayıcılık, denetim"
+  },
+  "articles": {
+    "title": "Makaleler — Sebastien Rousseau",
+    "subtitle": "Yapay zeka, post-kuantum kriptografi, ISO 20022 ve ödemelerin geleceği üzerine makaleler.",
+    "description": "Uygulamalı yapay zeka, post-kuantum kriptografi, ISO 20022 ödemeleri ve toptan ödemelerin dönüşümü üzerine makaleler.",
+    "keywords": "makaleler, araştırma, yapay zeka, post-kuantum kriptografi, ISO 20022, toptan ödemeler"
+  },
+  "contact": {
+    "title": "İletişim — Sebastien Rousseau",
+    "subtitle": "Bir sorunuz mu var ya da danışmanlık mı gerekiyor? Bana yazın.",
+    "description": "Ödemelerin dönüşümü, ISO 20022 geçişi veya post-kuantum stratejisi konusunda danışmanlık için Sebastien Rousseau ile iletişime geçin.",
+    "keywords": "iletişim, danışmanlık, ödemeler, ISO 20022, post-kuantum kriptografi"
+  },
+  "made-with-shokunin": {
+    "title": "Shokunin ile yapıldı — Sebastien Rousseau",
+    "subtitle": "Yeni nesil statik site jeneratörünü nasıl kullanacağınızı keşfedin.",
+    "description": "Bu site, performans ve SEO için optimize edilmiş bir Rust tabanlı statik site jeneratörü olan Shokunin ile yapılmıştır.",
+    "keywords": "Shokunin, SSG, Rust, performans, SEO"
+  },
+  "made-with-static-site-generator": {
+    "title": "Static Site Generator ile yapıldı — Sebastien Rousseau",
+    "subtitle": "Yeni nesil statik site jeneratörünü nasıl kullanacağınızı keşfedin.",
+    "description": "Bu site, Rust ile yazılmış hızlı bir statik site jeneratörü olan Shokunin ile üretilmiştir.",
+    "keywords": "Shokunin, statik site jeneratörü, Rust, performans"
+  },
+  "offline": {
+    "title": "Çevrimdışı — Sebastien Rousseau",
+    "subtitle": "Bağlantınızı kontrol edin ve tekrar deneyin.",
+    "description": "Çevrimdışısınız. İçeriğe erişmek için yeniden bağlanın.",
+    "keywords": "çevrimdışı, PWA"
+  },
+  "papers": {
+    "title": "Yayınlar — Sebastien Rousseau",
+    "subtitle": "Ödemeler ve güvenlik alanındaki kıdemli yöneticiler için sektörel beyaz kitaplar ve uygulamalı araştırmalar.",
+    "description": "Sebastien Rousseau'nun yapay zeka, ISO 20022 ödemeleri ve post-kuantum kriptografi üzerine makaleleri, raporları ve yayınları.",
+    "keywords": "yayınlar, makaleler, raporlar, araştırma, ISO 20022, yapay zeka, post-kuantum kriptografi"
+  },
+  "playlists": {
+    "title": "Çalma listeleri — Sebastien Rousseau",
+    "subtitle": "Derin çalışma, yaratıcılık ve mühendis zihni için seçilmiş Spotify çalma listeleri.",
+    "description": "Sebastien Rousseau'nun müzik ve dinleme seçkisi.",
+    "keywords": "çalma listeleri, müzik"
+  },
+  "privacy": {
+    "title": "Gizlilik politikası — Sebastien Rousseau",
+    "subtitle": "Gizliliğiniz bizim için önemli.",
+    "description": "Bu sitenin verilerinizi nasıl topladığı, kullandığı ve koruduğu. Anonim kitle ölçümü, çerezler, barındırma ve KVKK/GDPR hakları.",
+    "keywords": "gizlilik, KVKK, GDPR, çerezler, kişisel veriler, analitik"
+  },
+  "projects": {
+    "title": "Projeler — Sebastien Rousseau",
+    "subtitle": "Finansın geleceği için Python, Rust ve JavaScript'te açık kaynak projeler.",
+    "description": "Sebastien Rousseau'nun ödemeler, sınır ötesi mutabakat ve kuantuma dayanıklı kriptografi için sürdürdüğü açık kaynak kütüphane portföyü.",
+    "keywords": "açık kaynak projeler, Python, Rust, ödemeler, ISO 20022, post-kuantum kriptografi"
+  },
+  "tags": {
+    "title": "Etiketler — Sebastien Rousseau",
+    "subtitle": "Sitede konuya göre gezinin: yapay zeka, ödemeler, post-kuantum kriptografi, açık kaynak.",
+    "description": "Makaleleri etikete göre tarayın: yapay zeka, ISO 20022, blockchain, post-kuantum kriptografi ve daha fazlası.",
+    "keywords": "etiketler, tags, konuya göre gezinme"
+  },
+  "terms": {
+    "title": "Kullanım şartları — Sebastien Rousseau",
+    "subtitle": "Sitenin genel kullanım şartları.",
+    "description": "sebastienrousseau.com sitesinin genel kullanım şartları: içerik lisansı, kısıtlamalar, markalar ve yargı yetkisi.",
+    "keywords": "şartlar, yasal uyarı, lisans, telif hakkı"
+  },
+  "thanks": {
+    "title": "Teşekkürler — Sebastien Rousseau",
+    "subtitle": "İletişime geçtiğiniz için teşekkürler!",
+    "description": "Mesajınız için teşekkür ederim. En kısa sürede size dönüş yapacağım.",
+    "keywords": "teşekkürler"
+  },
+  "topics": {
+    "title": "Konular — Sebastien Rousseau",
+    "subtitle": "Yapay zeka, post-kuantum kriptografi, ISO 20022 ve ödemelerin geleceği üzerine makaleler.",
+    "description": "Konuya göre analizleri keşfedin: uygulamalı yapay zeka, ISO 20022 ödemeleri, post-kuantum kriptografi ve toptan ödemelerin dönüşümü.",
+    "keywords": "konular, başlıklar, yapay zeka, ödemeler, ISO 20022, post-kuantum kriptografi"
+  }
+}

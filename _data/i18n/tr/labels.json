@@ -1,0 +1,15 @@
+{
+  "_comment": "Turkish body-text labels — DRAFT pending native review. Key set MUST stay in sync with _data/i18n/en/labels.json; CI gate test_i18n_labels.py enforces parity.",
+  "Published": "Yayımlandı",
+  "Updated": "Güncellendi",
+  "min read": "dk okuma",
+  "Previous": "Önceki",
+  "Next": "Sonraki",
+  "Sources & references": "Kaynaklar ve referanslar",
+  "About the author": "Yazar hakkında",
+  "Topics": "Konular",
+  "Contents": "İçindekiler",
+  "Estimated read time": "Tahmini okuma süresi",
+  "Article pagination": "Makale sayfalama",
+  "Link to": "Bağlantı"
+}
