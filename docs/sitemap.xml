@@ -4181,6 +4181,380 @@
   <priority>0.7</priority>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/it/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/articoli/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/chi-sono/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/pubblicazioni/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/progetti/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/etichette/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/contatti/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/accessibilita/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/privacy/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/termini/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/playlist/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/fatto-con-generatore-di-siti-statici/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/fatto-con-shokunin/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/404/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/senza-connessione/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/grazie/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/argomenti/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/argomenti/post-quantum-cryptography/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/argomenti/iso-20022-payments/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/argomenti/applied-ai-banking/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/argomenti/rust-open-source/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/argomenti/blockchain-digital-assets/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2018-01-01-bitcoin-bilancio-dellanno/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2018-01-02-blockchain-la-tecnologia-che-conta-nel-2018/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2018-01-09-comprendere-la-tecnologia-dietro-la-blockchain/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2018-01-24-lo-standard-token-erc-20/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2018-02-04-nuova-criptovaluta-e-soluzione-di-pagamento-piu-rapida/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2018-02-15-creazione-della-piattaforma-express-transaction-credits/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2023-09-29-automatizzare-i-file-di-pagamento-iso-20022-con-pain001/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2023-10-09-shokunin-il-generatore-di-siti-statici-rust-piu-veloce/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2023-10-16-proteggere-i-dati-nellera-quantistica-libreria-hash-hsh/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2023-10-26-libmake-generatore-di-codice-per-librerie-rust/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2023-11-05-costanti-matematiche-e-crittografiche-per-rust/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2023-11-12-esplorare-lia-generativa/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2023-11-19-crystals-kyber-algoritmo-di-protezione-nellera-quantistica/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2023-11-28-kyberlib-scudo-rust-contro-le-minacce-quantistiche/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2023-12-04-padroneggiare-data-e-ora-in-rust-con-la-libreria-dtt/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2023-12-11-distribuzione-quantistica-delle-chiavi-sicurezza-bancaria/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2023-12-18-stato-ia-e-calcolo-quantistico-nel-banking-bilancio-2023/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2023-12-25-rivoluzionare-la-finanza-con-algoritmi-quantistici-potenziati-dallia/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2024-01-01-tendenze-ia-2024-prospettive-e-previsioni/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2024-01-08-ottimizzare-lanalisi-del-rapporto-di-credito-con-ibm-qiskit-e-fourier-quantistica/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2024-01-15-rivoluzione-dellarte-con-la-fotografia-ia-alien-studio/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2024-01-23-progressi-nellingegneria-dei-prompt-ia/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2024-01-29-analisi-audio-traduzioni-e-prospettive-con-lia/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2024-02-08-rivoluzionare-la-pubblicita-come-lia-plasma-il-futuro/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2024-02-12-akande-assistente-vocale-rivoluzione-dellassistenza-personale-ed-esecutiva/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2024-02-13-regolamento-europeo-sullia-plasmare-il-futuro-della-regolamentazione-mondiale/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2024-02-19-scoprire-gemini-la-rivoluzione-ia-di-google-spiegata/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2024-02-26-google-gemma-trasformare-lo-sviluppo-ia-open-source/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2024-03-04-le-chat-di-mistral-ai-una-nuova-era-dellia-conversazionale/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2024-03-08-rustlogs-libreria-avanzata-di-logging-per-rust/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2024-03-12-rivoluzionare-il-riconoscimento-vocale-in-tempo-reale-su-macos-con-whisper/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2024-03-18-far-progredire-lia-con-llm-multimodali-lezioni-da-mm1/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2024-03-25-cifratura-completamente-omomorfica-nellera-quantistica-bancaria/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2024-04-01-openvoice-innovazione-di-punta-nella-clonazione-vocale/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2024-04-15-algoritmo-quantistico-sfida-la-crittografia-basata-su-reticoli/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2024-04-22-anomalia-nellalgoritmo-quantistico-per-crittografia-su-reticoli/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2025-09-01-pagamenti-resistenti-al-quantum-epaa/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2026-04-11-le-soglie-quantistiche-si-muovono-di-nuovo/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2026-05-11-lucy-besson-trasferimento-conoscenze-ia-e-quantistico/</loc>
+  <lastmod>2026-05-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2026-05-12-iso-20022-pacs008-scadenza-indirizzo-strutturato/</loc>
+  <lastmod>2026-05-13</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2026-05-14-mettere-in-sicurezza-il-libro-mastro-migrazione-post-quantum-finanza-aziendale/</loc>
+  <lastmod>2026-05-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2026-05-15-rendimento-nascosto-decifrare-i-depositi-blackrock-brsrv-bstbl-genius-act/</loc>
+  <lastmod>2026-05-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2026-05-18-ingegneria-agentica-banche-blueprint-2026/</loc>
+  <lastmod>2026-05-18</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2026-05-21-miglior-architettura-cloud-per-banche-2026/</loc>
+  <lastmod>2026-05-21</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/pt-br/</loc>
   <changefreq>weekly</changefreq>
   <priority>0.8</priority>

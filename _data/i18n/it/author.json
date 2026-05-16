@@ -1,0 +1,5 @@
+{
+  "_comment": "Italian author-card prose — DRAFT pending native review. Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
+  "bio": "Senior banking technologist, scrivo di IA applicata, migrazione a ISO 20022, crittografia post-quantistica per i servizi finanziari e trasformazione strutturale dei pagamenti wholesale.",
+  "credentialsPrefix": "Oltre 20 anni di esperienza presso HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group."
+}

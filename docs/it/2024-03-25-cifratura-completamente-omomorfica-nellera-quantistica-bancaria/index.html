@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 25 Mar 2024 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 25 Mar 2024 06:06:06 +0000" id="last-modified" />
+    <title>Cifratura completamente omomorfica nell&#x27;era quantistica bancaria — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Come la cifratura completamente omomorfica (FHE) rivoluziona la sicurezza dei dati nel banking e nei servizi finanziari, preservando la privacy contro le minacce dell&#x27;era quantistica.">
+<meta name="keywords" content="FHE, cifratura omomorfica, banking, post-quantistica, privacy, calcolo sicuro">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-O/dhQISsI3xI+9sqZodPK3MEASsTidLmRTCYuPjkv2s=' 'sha256-aC0SGhFWK7LAQUIK7VBBM8MuNxZftUOylozq2UvRc1w=' 'sha256-wI+hbQI1MmArKhuCeSqmDQtnkQVvNBdz9Cr7VptBG+s=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/it/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Feed Atom" href="/it/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Cifratura completamente omomorfica nell&#x27;era quantistica bancaria — Sebastien Rousseau">
+<meta property="og:description" content="Come la cifratura completamente omomorfica (FHE) rivoluziona la sicurezza dei dati nel banking e nei servizi finanziari, preservando la privacy contro le minacce dell&#x27;era quantistica.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/it/2024-03-25-cifratura-completamente-omomorfica-nellera-quantistica-bancaria/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cifratura completamente omomorfica nell&#x27;era quantistica bancaria — Sebastien Rousseau">
+<meta name="twitter:description" content="Come la cifratura completamente omomorfica (FHE) rivoluziona la sicurezza dei dati nel banking e nei servizi finanziari, preservando la privacy contro le minacce dell&#x27;era quantistica.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/it/2024-03-25-cifratura-completamente-omomorfica-nellera-quantistica-bancaria/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-03-25-chiffrement-completement-homomorphique-a-l-ere-quantique-bancaire/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2024-03-25-vollstaendig-homomorphe-verschluesselung-im-quanten-banking/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2024-03-25-cifrado-completamente-homomorfico-en-la-era-cuantica-bancaria/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2024-03-25-cifratura-completamente-omomorfica-nellera-quantistica-bancaria/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2024-03-25-criptografia-totalmente-homomorfica-na-era-quantica-bancaria/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2024-03-25-liangzi-yinhang-shidai-de-quan-tongtai-jiami/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Vai al contenuto principale</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Attiva/disattiva la navigazione" />
+      <div class="wrap">
+        <a class="ap-brand" href="/it/index.html" aria-label="Home di Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Navigazione principale">
+          <ul class="ap-menu">
+            <li><a href="/it/chi-sono/index.html">Chi sono</a></li>
+            <li><a href="/it/articoli/index.html" aria-current="page" class="active">Articoli</a></li>
+            <li><a href="/it/pubblicazioni/index.html">Pubblicazioni</a></li>
+            <li><a href="/it/argomenti/index.html">Argomenti</a></li>
+            <li><a href="/it/progetti/index.html">Progetti</a></li>
+            <li><a href="/it/playlist/index.html">Playlist</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Attiva il tema scuro" aria-pressed="false" title="Cambia tema">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Cerca (Cmd o Ctrl + K)" title="Cerca (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Lingua">
+            <button type="button" class="ap-lang-toggle" aria-label="IT, Cambia lingua" aria-expanded="false" aria-haspopup="menu" title="Cambia lingua">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">IT</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="Prossimamente">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="Prossimamente">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="Prossimamente">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="Prossimamente">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="Prossimamente">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="Prossimamente">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="Prossimamente">🇮🇩 Indonesia</span>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <span class="ap-lang-item" data-lang="ja" aria-disabled="true" title="Prossimamente">🇯🇵 日本語</span>
+                <span class="ap-lang-item" data-lang="ko" aria-disabled="true" title="Prossimamente">🇰🇷 한국어</span>
+                <span class="ap-lang-item" data-lang="nl" aria-disabled="true" title="Prossimamente">🇳🇱 Nederlands</span>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="Prossimamente">🇵🇱 Polski</span>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="Prossimamente">🇷🇴 Română</span>
+                <span class="ap-lang-item" data-lang="ru" aria-disabled="true" title="Prossimamente">🇷🇺 Русский</span>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="Prossimamente">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="Prossimamente">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="Prossimamente">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Prossimamente">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="Prossimamente">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="Prossimamente">🇳🇬 Yorùbá</span>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <span class="ap-lang-item" data-lang="zh-hant" aria-disabled="true" title="Prossimamente">🇹🇼 繁體中文</span>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/it/contatti/index.html" aria-label="Contattami">Contattami ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Attiva/disattiva la navigazione">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Cifratura completamente omomorfica nell&#x27;era quantistica bancaria</h1>
+      <p class="sub">Calcolo su dati cifrati come difesa contro le minacce dell&#x27;era quantistica</p>
+    <nav class="article-tags" aria-label="Argomenti"><a href="/tags/index.html#h3-fhe" class="article-tag" rel="tag">FHE</a><a href="/tags/index.html#h3-cifratura-omomorfica" class="article-tag" rel="tag">cifratura omomorfica</a><a href="/tags/index.html#h3-banking" class="article-tag" rel="tag">banking</a><a href="/tags/index.html#h3-post-quantistica" class="article-tag" rel="tag">post-quantistica</a><a href="/tags/index.html#h3-privacy" class="article-tag" rel="tag">privacy</a><a href="/tags/index.html#h3-calcolo-sicuro" class="article-tag" rel="tag">calcolo sicuro</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-03-25T06:06:06+00:00" class="meta-pub">Pubblicato il 25 Mar 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Aggiornato il 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Tempo di lettura stimato">11 min di lettura</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Indice</h2><ol><li><a href="#introduccion">Introducción</a></li><li><a href="#comprender-il-cifrado-completamente-homomorfico">Comprender il cifrado completamente homomórfico</a></li><li><a href="#il-progresso-del-cifrado-homomorfico">Il progresso del cifrado homomórfico</a></li><li><a href="#il-impacto-del-fhe-in-la-banca-e-le-finanzas">Il impacto del FHE in la banca e le finanzas</a></li><li><a href="#prepararse-per-il-futuro-quantistico">Prepararse per il futuro quantistico</a></li><li><a href="#il-futuro-del-fhe-in-la-banca-e-le-finanzas">Il futuro del FHE in la banca e le finanzas</a></li><li><a href="#superar-i-sfide-di-adopcion-del-fhe">Superar i sfide di adopción del FHE</a></li><li><a href="#asegurar-i-grandi-modelli-di-linguaggio-con-il-fhe">Asegurar i grandi modelli di linguaggio con il FHE</a></li><li><a href="#conclusione">Conclusione</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Come la cifratura completamente omomorfica (FHE) rivoluziona la sicurezza dei dati nel banking e nei servizi finanziari, preservando la privacy contro le minacce dell&#x27;era quantistica.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Introducción.</strong> La implementación del FHE in il settore finanziario non è solo teórica; viene convirtiendo in una realidad pratica, transformando i standard di sicurezza e confidencialidad dei dati.</li>  <li><strong>Comprender il cifrado completamente homomórfico.</strong> Il cifrado è un método di transformación di dati legibles (texto chiaro) in un formato ilegible (criptograma) per medio di un algoritmo e una chiave di cifrado.</li>  <li><strong>Il progresso del cifrado homomórfico.</strong> Il cifrado homomórfico (HE) resuelve i límites del cifrado convencional.</li>  <li><strong>Il impacto del FHE in la banca e le finanzas.</strong> La applicazione del FHE in il settore finanziario promete un refuerzo significativo della confidencialidad.</li></ul></aside><hr />
+<blockquote>
+<p><strong>TL;DR.</strong> La cifratura completamente omomorfica permette di calcolare su dati cifrati senza decifrarli. Combinata con la PQC, costituisce una difesa stratificata che preserva la privacy dei dati anche di fronte al calcolo quantistico.</p>
+<p><strong>Punti chiave</strong></p>
+<ul>
+<li><strong>Calcolo sicuro</strong> — operazioni aritmetiche su ciphertext senza accesso al plaintext.</li>
+<li><strong>Privacy preservata</strong> — il fornitore di calcolo non vede mai i dati in chiaro.</li>
+<li><strong>Casi d'uso bancari</strong> — credit scoring delegato, ML su dati sensibili, audit conformi.</li>
+<li><strong>Sfide pratiche</strong> — overhead computazionale ancora elevato, ma in calo rapido.</li>
+</ul>
+</blockquote>
+<hr />
+<p>Il <strong>cifrado completamente homomórfico (FHE — Fully Homomorphic Encryption)</strong> promete redefinir la sicurezza dei dati in la banca e le finanzas. Permitiendo cálculos su dati cifrados, il FHE protege la confidencialidad rispetto alle amenazas convencionales e quantistiche.</p>
+<h2 id="introduccion">Introducción <a class="heading-anchor" href="#introduccion" aria-label="Collegamento a Introducción">#</a></h2>
+<p>La implementación del FHE in il settore finanziario non è solo teórica; viene convirtiendo in una realidad pratica, transformando i standard di sicurezza e confidencialidad dei dati. Questo artículo explora i usos pratici, le consideraciones normativas, i posibles inconvenientes e i progressi di ricerca del cifrado completamente homomórfico in finanzas e in le applicazioni di intelligenza artificiale (IA).</p>
+<h2 id="comprender-il-cifrado-completamente-homomorfico">Comprender il cifrado completamente homomórfico <a class="heading-anchor" href="#comprender-il-cifrado-completamente-homomorfico" aria-label="Collegamento a Comprender il cifrado completamente homomórfico">#</a></h2>
+<h3 id="le-bases-del-cifrado">Le bases del cifrado <a class="heading-anchor" href="#le-bases-del-cifrado" aria-label="Collegamento a Le bases del cifrado">#</a></h3>
+<p>Il cifrado è un método di transformación di dati legibles (texto chiaro) in un formato ilegible (criptograma) per medio di un algoritmo e una chiave di cifrado. Il objetivo principale è asegurar che solo le partes autorizadas puedan acceder ai dati originales descifrando il criptograma con la ayuda di una chiave di descifrado.</p>
+<h3 id="metodos-di-cifrado-tradicionales">Métodos di cifrado tradicionales <a class="heading-anchor" href="#metodos-di-cifrado-tradicionales" aria-label="Collegamento a Métodos di cifrado tradicionales">#</a></h3>
+<p>I métodos di cifrado tradicionales possono categorizarse ampliamente in dos tipos: simétrico e asimétrico. Il cifrado simétrico utilizza una sola chiave allo stesso tempo per il cifrado e il descifrado. Questa eficiencia ha un costo in sicurezza, in particolare quando la distribución delle chiavi plantea problemas. Il cifrado asimétrico, anche llamado criptografía di chiave pública, utilizza dos chiavi: una per il cifrado e altra per il descifrado. Questo método è più seguro ma più lento che il cifrado simétrico.</p>
+<h3 id="i-limites-del-cifrado-convencional-per-il-calculo">I límites del cifrado convencional per il cálculo <a class="heading-anchor" href="#i-limites-del-cifrado-convencional-per-il-calculo" aria-label="Collegamento a I límites del cifrado convencional per il cálculo">#</a></h3>
+<p>Sebbene i métodos tradicionales aseguran eficazmente i dati in reposo o in tránsito, fracasan quando se tratta di efectuar cálculos su dati cifrados. Típicamente, per tratar o analizar dati cifrados, bisogna descifrarlos primero, efectuar le operazioni necesarias e luego tornare a cifrarlos. Questa etapa di descifrado plantea un rischio significativo per la confidencialidad, in particolare in entornos non confiables o di cloud computing.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" fetchpriority="high">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="il-progresso-del-cifrado-homomorfico">Il progresso del cifrado homomórfico <a class="heading-anchor" href="#il-progresso-del-cifrado-homomorfico" aria-label="Collegamento a Il progresso del cifrado homomórfico">#</a></h2>
+<p>Il <strong>cifrado homomórfico (HE)</strong> resuelve i límites del cifrado convencional. Permite efectuar ciertos cálculos direttamente su i dati cifrados (criptogramas). Il resultado descifrado è idéntico ai dati originales (texto chiaro) dopo di che è statoyan efectuado le stesse operazioni. Il HE se declina in tres grandi variedades: Partially Homomorphic Encryption (PHE), Somewhat Homomorphic Encryption (SHE) e Fully Homomorphic Encryption (FHE).</p>
+<ul>
+<li><strong>Partially Homomorphic Encryption (PHE):</strong> soporta operazioni ilimitadas di un solo tipo (adición o multiplicación) su i criptogramas.</li>
+<li><strong>Somewhat Homomorphic Encryption (SHE):</strong> soporta un número limitado di operazioni, combinando adición e multiplicación, ma solo fino a una cierta profundidad.</li>
+<li><strong>Fully Homomorphic Encryption (FHE):</strong> la forma più avanzada, autorizando operazioni ilimitadas di adición e multiplicación su i criptogramas.</li>
+</ul>
+<h3 id="la-ingeniosidad-tecnica-del-fhe">La ingeniosidad tecnica del FHE <a class="heading-anchor" href="#la-ingeniosidad-tecnica-del-fhe" aria-label="Collegamento a La ingeniosidad tecnica del FHE">#</a></h3>
+<p>Il FHE reposa su estructuras matemáticas complejas, come la criptografía su retículos. La criptografía su retículos è un tipo di cifrado che utilizza estructuras matemáticas llamadas retículos.</p>
+<p>Un retículo è una disposición regular di puntos in il espacio, e la criptografía su retículos se apoya in la dificultad di resolver ciertos problemas matemáticos vinculados a queste estructuras. Esto fa sì che la criptografía su retículos sea segura e resistente ai ataques, incluidos i procedentes dei computer quantistici.</p>
+<p>In 2009, Craig Gentry ha sviluppato un método, descrito in il suo artículo <a href="https://crypto.stanford.edu/craig/" title="The original paper by Craig Gentry on Fully Homomorphic Encryption"><strong>A Fully Homomorphic Encryption Scheme ⧉</strong></a>, per creare un sistema capaz di efectuar una evaluación homomórfica di il suo propio circuito di descifrado. Questo diseño autorreferencial consente ai esquemas FHE efectuar cálculos arbitrarios su dati cifrados.</p>
+<h3 id="il-processo-del-algoritmo-fhe">Il processo del algoritmo FHE <a class="heading-anchor" href="#il-processo-del-algoritmo-fhe" aria-label="Collegamento a Il processo del algoritmo FHE">#</a></h3>
+<p><img src="https://cloudcdn.pro/stocks/diagrams/fhe_algorithm_diagram.webp" alt="FHE Operational Flow" title="FHE Architecture"  width="1200" height="800" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<p>Il diagrama anterior ilustra il flujo operativo di un algoritmo FHE.</p>
+<ul>
+<li>
+<p>Il processo di cifrado comienza con i dati in texto chiaro, che se cifran con la ayuda di una chiave di cifrado per generare un criptograma.</p>
+</li>
+<li>
+<p>Questi dati cifrados possono entonces someterse a diversos cálculos direttamente su il criptograma mediante un processo conocido come bootstrapping.</p>
+</li>
+<li>
+<p>Questa capacità única del FHE consente ai dati permanecer cifrados durante tutto il processo. Una vez efectuadas le operazioni necesarias, il processo di descifrado può reconvertir il criptograma modificado in texto chiaro gracias al esquema FHE.</p>
+</li>
+</ul>
+<p>La vantaggio principale del FHE reside in il suo capacità per efectuar cálculos su il criptograma senza richiedere descifrado, garantizando así il mantenimiento della confidencialidad e la sicurezza dei dati durante tutto il cálculo.</p>
+<h3 id="la-resistencia-quantistica-del-fhe">La resistencia quantistica del FHE <a class="heading-anchor" href="#la-resistencia-quantistica-del-fhe" aria-label="Collegamento a La resistencia quantistica del FHE">#</a></h3>
+<p>I métodos di cifrado tradicionales sono spesso vulnerables ai algoritmi quantistici. Questi algoritmos possono resolver rapidamente problemas come la factorización di enteros e i logaritmos discretos, che constituyen i fundamentos di questi métodos. Per contraste, il FHE emplea problemas su retículos che se cree difíciles di resolver per computer quantistici. Questa resistencia quantistica hace del FHE un método di cifrado prometedor per la era post-quantistica.</p>
+<p>Il FHE su retículos è resistente ai ataques quantistici perché i problemas matemáticos subyacentes, come il Shortest Vector Problem (SVP) e il Closest Vector Problem (CVP), se consideran difíciles di resolver incluso per i computer quantistici. Se bene algoritmi quantistici come il di Shor possono romper i métodos di cifrado tradicionales che reposan in la factorización di grandi números o i logaritmos discretos, non se sabe che ofrezcan vantaggi significative in la resolución dei problemas su retículos. Questa caratteristica hace del FHE su retículos un candidato prometedor per la crittografia post-quantistica.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="il-impacto-del-fhe-in-la-banca-e-le-finanzas">Il impacto del FHE in la banca e le finanzas <a class="heading-anchor" href="#il-impacto-del-fhe-in-la-banca-e-le-finanzas" aria-label="Collegamento a Il impacto del FHE in la banca e le finanzas">#</a></h2>
+<h3 id="confidencialidad-e-sicurezza-dei-dati-reforzadas">Confidencialidad e sicurezza dei dati reforzadas <a class="heading-anchor" href="#confidencialidad-e-sicurezza-dei-dati-reforzadas" aria-label="Collegamento a Confidencialidad e sicurezza dei dati reforzadas">#</a></h3>
+<p>La applicazione del FHE in il settore finanziario promete un refuerzo significativo della confidencialidad. I bancos possono ora emprender evaluaciones di rischi, la detección di fraude e análisis di dati completi al tiempo che garantiscono la confidencialidad absoluta della informazione dei clienti. Questo progresso tecnológico mitiga il rischio di brechas di dati, reforzando la integridad delle piattaforme bancarie digitali e le transazioni finanziarie.</p>
+<h3 id="cloud-computing-e-externalizacion">Cloud computing e externalización <a class="heading-anchor" href="#cloud-computing-e-externalizacion" aria-label="Collegamento a Cloud computing e externalización">#</a></h3>
+<p>Un ámbito di applicazione principale del cifrado homomórfico è il tratamiento seguro dei dati in la nube. I bancos possono aprovechar i servizi di cloud computing per tratar dati cifrados senza comprometer il suo confidencialidad. Esto consente alle istituzioni finanziarie aprovechar la escalabilidad e la rentabilidad del cloud al tiempo che mantienen la confidencialidad di informazione finanziaria sensible.</p>
+<p>Il movimiento verso il cloud computing e la externalización di tareas computacionales per parte dei bancos subraya la pertinencia del FHE. Con un cloud computing seguro, le istituzioni finanziarie possono acceder a recursos externos al tiempo che protegen i dati cifrados sensibles mediante il FHE. Il FHE consente ai bancos aprovechar i servizi cloud in modo segura al tiempo che se garantisce che i dati cifrados sensibles permanezcan protegidos in tutto momento.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="prepararse-per-il-futuro-quantistico">Prepararse per il futuro quantistico <a class="heading-anchor" href="#prepararse-per-il-futuro-quantistico" aria-label="Collegamento a Prepararse per il futuro quantistico">#</a></h2>
+<p>Il advenimiento inminente della calcolo quantistico anuncia una potencial crisis per le metodologías di cifrado tradicionales. Il FHE su retículos è intrínsecamente resistente ai ataques quantistici, ofreciendo una defensa robusta contra la amenaza che la calcolo quantistico plantea alla sicurezza dei dati.</p>
+<h3 id="cifrado-resistente-a-lo-quantistico">Cifrado resistente a lo quantistico <a class="heading-anchor" href="#cifrado-resistente-a-lo-quantistico" aria-label="Collegamento a Cifrado resistente a lo quantistico">#</a></h3>
+<p>Il FHE fornisce una capa formidable di protección contra le amenazas della calcolo quantistico. Empleando tecniche crittografiche su retículos, il FHE garantisce che i dati finanziari e i activos permanezcan seguros incluso rispetto a adversarios quantistici.</p>
+<p>La resistencia quantistica del FHE è dovuto a problemas matemáticos subyacentes complejos come il Shortest Vector Problem (SVP) e il Closest Vector Problem (CVP). Se supone che questi problemas sono intratables incluso per i computer quantistici, lo che hace del FHE su retículos un candidato ideal per la crittografia post-quantistica.</p>
+<p>Utilizar un cifrado resistente a lo quantistico, come il FHE, è crucial non solo per proteger i activos finanziari sino anche per mantener la confianza dei clienti in la era digitale. A medida che la calcolo quantistico progresa, le istituzioni finanziarie che prioricen un cifrado robusto saranno mejor posicionadas per navegar i sfide e oportunidades futuros.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="il-futuro-del-fhe-in-la-banca-e-le-finanzas">Il futuro del FHE in la banca e le finanzas <a class="heading-anchor" href="#il-futuro-del-fhe-in-la-banca-e-le-finanzas" aria-label="Collegamento a Il futuro del FHE in la banca e le finanzas">#</a></h2>
+<p>La trayectoria del FHE all'interno dil settore finanziario è prometedora, ma ancora afronta sfide. Il settore bancario può explotar il pleno potencial del FHE mejorando la tecnologia, integrándola in le operazioni finanziarie cotidianas e cooperando con i reguladores.</p>
+<p>Il FHE può utilizarse in diversas applicazioni bancarie e finanziarie, come:</p>
+<ul>
+<li>
+<p><strong>Análisis seguro di dati finanziari</strong>: il FHE consente ai bancos analizar dati finanziari cifrados come transazioni, puntuaciones di crédito e carteras di inversión, senza comprometer la confidencialidad del cliente, garantizando un tratamiento seguro della informazione sensible.</p>
+</li>
+<li>
+<p><strong>Aprendizaje automático preservando la confidencialidad</strong>: il FHE consente ai bancos entrenar e desplegar modelli di machine learning su dati cifrados, permitiéndoles aprovechar la IA per la detección di fraude, la evaluación di rischi e la segmentación di clienti allo stesso tempo che mantienen la confidencialidad.</p>
+</li>
+<li>
+<p><strong>Cálculo multipartícipe seguro</strong>: il FHE consente una colaboración segura tra diverse istituzioni finanziarie, permitiéndoles efectuar cálculos conjuntos su dati cifrados senza compartir informazione sensible, facilitando le transazioni interbancarias seguras e il conformità.</p>
+</li>
+<li>
+<p><strong>Seguridad delle API</strong>: il FHE può asegurar le API cifrando i dati sensibles prima della transmisión, garantizando che la informazione dei clienti permanezca confidencial durante i intercambios tra bancos e servizi terceros.</p>
+</li>
+<li>
+<p><strong>Cloud computing seguro</strong>: il FHE consente ai bancos externalizar in modo segura i cálculos e il almacenamiento di dati verso piattaforme cloud senza comprometer la confidencialidad, già che i dati permanecen cifrados durante tutto il processo, ampliando il uso di servizi cloud rentables e escalables.</p>
+</li>
+<li>
+<p><strong>Cumplimiento normativo preservando la confidencialidad</strong>: il FHE consente ai bancos compartir dati cifrados con le autoridades reguladoras, permitiendo il conformità delle exigencias di reporting senza exponer informazione sensible, simplificando il processo di conformità al tiempo che se mantiene la confidencialidad.</p>
+</li>
+</ul>
+<p>Queste applicazioni revelan il potere transformador del FHE in la banca e le finanzas e subrayan il suo potencial per revolucionar i standard di sicurezza e confidencialidad.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="superar-i-sfide-di-adopcion-del-fhe">Superar i sfide di adopción del FHE <a class="heading-anchor" href="#superar-i-sfide-di-adopcion-del-fhe" aria-label="Collegamento a Superar i sfide di adopción del FHE">#</a></h2>
+<h3 id="desafios-di-prestazioni-e-optimizacion">Desafíos di prestazioni e optimización <a class="heading-anchor" href="#desafios-di-prestazioni-e-optimizacion" aria-label="Collegamento a Desafíos di prestazioni e optimización">#</a></h3>
+<p>Abordar il sobrecoste computacional intrínseco al FHE rimane siendo un sfida pivote. I recientes progresos in optimización di algoritmos e in desarrollo di aceleradores di hardware especializados reducen la brecha di prestazioni tra il cálculo tradicional e il FHE.</p>
+<h3 id="estandarizacion-e-colaboracion">Estandarización e colaboración <a class="heading-anchor" href="#estandarizacion-e-colaboracion" aria-label="Collegamento a Estandarización e colaboración">#</a></h3>
+<p>La vía verso una adopción generalizada del FHE depende della estandarización dei protocolos e di una colaboración reforzada tra le partes interesadas del ecosistema finanziario. Un approccio unificado per abrazar il FHE può acelerar significativamente il suo integración con i servizi finanziari generalistas.</p>
+<h3 id="regolamentazione-e-conformita">Regolamentazione e conformità <a class="heading-anchor" href="#regolamentazione-e-conformita" aria-label="Collegamento a Regolamentazione e conformità">#</a></h3>
+<p>I organismos reguladores desempeñan un papel crítico in la adopción del FHE, con leyes su la confidencialidad dei dati che imponen il suo uso. Un impulso normativo potrebbe servire come catalizador per la adopción completa del FHE in tutta la industria bancaria e finanziaria, allo stesso tempo che se garantisce il conformità delle normativas di protección di dati.</p>
+<p>Il panorama normativo attorno alla confidencialidad e la sicurezza dei dati desempeña un papel significativo in la adopción del FHE in il settore bancario. Normativas estrictas come il RGPD (General Data Protection Regulation) e il CCPA (California Consumer Privacy Act) imponen medidas robustas di protección di dati e subrayan il diritto individual alla vida privada. Il FHE, con il suo capacità per tratar dati cifrados senza descifrado, se alinea bene con la orientación centrada in la confidencialidad di queste normativas. A medida che le leyes su la confidencialidad se tornano più estrictas, il FHE offre una soluzione convincente che consente ai bancos efectuar i cálculos e análisis necesarios al tiempo che se respetan le exigencias di conformità.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="asegurar-i-grandi-modelli-di-linguaggio-con-il-fhe">Asegurar i grandi modelli di linguaggio con il FHE <a class="heading-anchor" href="#asegurar-i-grandi-modelli-di-linguaggio-con-il-fhe" aria-label="Collegamento a Asegurar i grandi modelli di linguaggio con il FHE">#</a></h2>
+<p>I grandi modelli di linguaggio (LLM) sono potentes strumenti di IA. Ma il suo uso suscita preocupaciones di confidencialidad, in particolare quando tratan dati di utente sensibles. Il FHE offre una soluzione che protege la confidencialidad del utente e preserva la propiedad intelectual dei propietarios di modelli permitiendo cálculos su dati cifrados.</p>
+<h3 id="desafios-di-confidencialidad-con-i-llm">Desafíos di confidencialidad con i LLM <a class="heading-anchor" href="#desafios-di-confidencialidad-con-i-llm" aria-label="Collegamento a Desafíos di confidencialidad con i LLM">#</a></h3>
+<p>Desplegar un LLM in locale per mantener la confidencialidad dei dati plantea sfide come costi elevados e la exposición potencial di una propiedad intelectual valiosa. Il FHE aborda questi sfide permitiendo ai LLM funcionar su dati di utente cifrados, garantizando la confidencialidad e la sicurezza del modello simultáneamente.</p>
+<h3 id="il-approccio-llm-cifrado-di-zama">Il approccio LLM cifrado di Zama <a class="heading-anchor" href="#il-approccio-llm-cifrado-di-zama" aria-label="Collegamento a Il approccio LLM cifrado di Zama">#</a></h3>
+<p><a href="https://zama.ai/" title="Zama - Fully Homomorphic Encryption"><strong>Zama ⧉</strong></a>, una azienda di tecnologie di confidencialidad, ha demostrado la viabilidad di costruire un LLM cifrado con la ayuda del FHE. Il suo approccio, che combina FHE e altre tecnologie che refuerzan la confidencialidad, alcanza rendimientos comparables ai modelli non cifrados con solo un aumento modesto del sobrecoste computacional.</p>
+<h3 id="mejorar-la-confidencialidad-del-utente-con-llm-cifrados">Mejorar la confidencialidad del utente con LLM cifrados <a class="heading-anchor" href="#mejorar-la-confidencialidad-del-utente-con-llm-cifrados" aria-label="Collegamento a Mejorar la confidencialidad del utente con LLM cifrados">#</a></h3>
+<p>La integración del FHE con i LLM ha il potencial di transformar la confidencialidad del utente, in particolare in le applicazioni che tratan informazione personal o profesional sensible. A medida che la IA se concentra più in la confidencialidad, è importante che sviluppatori, utenti e reguladores trabajen juntos. Questa colaboración è chiave per costruire un ecosistema di IA che ponga la sicurezza e la confidencialidad in primer lugar.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="conclusione">Conclusione <a class="heading-anchor" href="#conclusione" aria-label="Collegamento a Conclusione">#</a></h2>
+<p>Il <strong>cifrado completamente homomórfico (FHE)</strong> è una tecnologia di sicurezza dei dati revolucionaria che offre una confidencialidad e una sicurezza excepcionales alla banca e le finanzas.</p>
+<p>A medida che la calcolo quantistico avanza, il FHE se torna ancora più crucial. Il suo adopción remodelará la ciberseguridad in i servizi finanziari, haciendo la banca digitale più digna di confianza e più segura in il nostro mondo ogni volta più conectado.</p>
+<p>Il advenimiento del FHE anche ha aperto nuove posibilidades di uso seguro e privado dei grandi modelli di linguaggio. Permitiendo LLM cifrados, il FHE garantisce che i dati del utente permanezcan confidenciales al tiempo che se benefician delle capacità avanzadas di questi modelli.</p>
+<p>La era della calcolo quantistico se aproxima. I bancos devono evaluar proactivamente il suo infraestructura di cifrado, identificare le vulnerabilidades potenciales e sviluppare una roadmap chiara per la adopción del FHE al fine di proteger i dati e mantener la confianza del cliente.</p>
+<aside class="author-card" aria-label="Informazioni sull'autore"><img alt="Ritratto di Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/it/chi-sono/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist, scrivo di IA applicata, migrazione a ISO 20022, crittografia post-quantistica per i servizi finanziari e trasformazione strutturale dei pagamenti wholesale.</span><span class="author-credentials">Oltre 20 anni di esperienza presso HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/it/chi-sono/index.html">Profilo completo</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Ultima revisione <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Letture correlate</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/it/2023-12-11-distribuzione-quantistica-delle-chiavi-sicurezza-bancaria/index.html" class="related-media" aria-label="Distribuzione quantistica delle chiavi: rivoluzionare la sicurezza nel banking" tabindex="-1"><img alt="HSBC From the Docks" src="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="distribuzione-quantistica-delle-chiavi-rivoluzionare-la-sicurezza-nel-banking"><a href="https://sebastienrousseau.com/it/2023-12-11-distribuzione-quantistica-delle-chiavi-sicurezza-bancaria/index.html">Distribuzione quantistica delle chiavi: rivoluzionare la sicurezza nel banking</a> <a class="heading-anchor" href="#distribuzione-quantistica-delle-chiavi-rivoluzionare-la-sicurezza-nel-banking" aria-label="Collegamento a Distribuzione quantistica delle chiavi: rivoluzionare la sicurezza nel banking">#</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/it/2023-11-19-crystals-kyber-algoritmo-di-protezione-nellera-quantistica/index.html" class="related-media" aria-label="CRYSTALS-Kyber: l'algoritmo di protezione nell'era quantistica" tabindex="-1"><img alt="A modern, sleek quantum computer" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="crystals-kyber-l-algoritmo-di-protezione-nell-era-quantistica"><a href="https://sebastienrousseau.com/it/2023-11-19-crystals-kyber-algoritmo-di-protezione-nellera-quantistica/index.html">CRYSTALS-Kyber: l'algoritmo di protezione nell'era quantistica</a> <a class="heading-anchor" href="#crystals-kyber-l-algoritmo-di-protezione-nell-era-quantistica" aria-label="Collegamento a CRYSTALS-Kyber: l'algoritmo di protezione nell'era quantistica">#</a></h3><p><time datetime="2023-11-19">2023-11-19</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/it/2026-05-11-lucy-besson-trasferimento-conoscenze-ia-e-quantistico/index.html" class="related-media" aria-label="Lucy Besson: trasferimento di conoscenze in IA e quantistico" tabindex="-1"><img alt="Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles" src="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="lucy-besson-trasferimento-di-conoscenze-in-ia-e-quantistico"><a href="https://sebastienrousseau.com/it/2026-05-11-lucy-besson-trasferimento-conoscenze-ia-e-quantistico/index.html">Lucy Besson: trasferimento di conoscenze in IA e quantistico</a> <a class="heading-anchor" href="#lucy-besson-trasferimento-di-conoscenze-in-ia-e-quantistico" aria-label="Collegamento a Lucy Besson: trasferimento di conoscenze in IA e quantistico">#</a></h3><p><time datetime="2026-05-11">2026-05-11</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Paginazione degli articoli"><a class="post-pagination-prev" href="/it/2024-03-18-far-progredire-lia-con-llm-multimodali-lezioni-da-mm1/"><span class="post-pagination-label">Precedente</span><span class="post-pagination-title">Advancing AI with Multimodal LLMs: Insights from MM1</span></a><a class="post-pagination-next" href="/it/2024-04-01-openvoice-innovazione-di-punta-nella-clonazione-vocale/"><span class="post-pagination-label">Successivo</span><span class="post-pagination-title">OpenVoice: Leading Innovation in Voice Cloning Technology</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/it/chi-sono/index.html">Chi sono</a></li>
+              <li><a href="/it/contatti/index.html">Contatti</a></li>
+              <li><a href="/it/fatto-con-generatore-di-siti-statici/index.html">Fatto con Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Pubblicazioni</h2>
+            <ul>
+              <li><a href="/it/articoli/index.html">Articoli</a></li>
+              <li><a href="/it/pubblicazioni/index.html">Pubblicazioni</a></li>
+              <li><a href="/it/etichette/index.html">Etichette</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Attività</h2>
+            <ul>
+              <li><a href="/it/progetti/index.html">Progetti</a></li>
+              <li><a href="/it/playlist/index.html">Playlist</a></li>
+              <li><a href="/it/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Contatti</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Iscrizione alla newsletter">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — note di ricerca su pagamenti, IA e crittografia post-quantistica. Niente spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="tu@banca.it" />
+            <input type="hidden" name="_subject" value="Iscrizione alla newsletter — sebastienrousseau.com" />
+            <button type="submit">Iscriviti</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. Tutti i diritti riservati.</span>
+          <div class="social" aria-label="Link social">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau su Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau su Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau su LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau su LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau su Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau su Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau su YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau su YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/it/accessibilita/index.html">Accessibilità</a> ·
+            <a href="/it/privacy/index.html">Privacy</a> ·
+            <a href="/it/termini/index.html">Termini</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"it"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"it"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2369,"headline":"Cifratura completamente omomorfica nell'era quantistica bancaria","description":"Come la cifratura completamente omomorfica (FHE) rivoluziona la sicurezza dei dati nel banking e nei servizi finanziari, preservando la privacy contro le minacce dell'era quantistica.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp","width":"100vw","height":"100vh","caption":"Cifratura omomorfica e quantum"},"url":"https://sebastienrousseau.com/it/2024-03-25-cifratura-completamente-omomorfica-nellera-quantistica-bancaria/","datePublished":"2024-03-25T06:06:06+00:00","dateModified":"2026-05-11","inLanguage":"it","keywords":"FHE, cifratura omomorfica, banking, post-quantistica, privacy, calcolo sicuro","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/it/2024-03-25-cifratura-completamente-omomorfica-nellera-quantistica-bancaria/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"it"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/it/"},{"@type":"ListItem","position":3,"name":"Cifratura completamente omomorfica nell'era quantistica bancaria","item":"https://sebastienrousseau.com/it/2024-03-25-cifratura-completamente-omomorfica-nellera-quantistica-bancaria/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Cerca">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Cerca</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Cerca">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Cerca nella documentazione..." autocomplete="off" aria-label="Cerca"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> chiudi</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> naviga</span><span><kbd>Invio</kbd> apri</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>
