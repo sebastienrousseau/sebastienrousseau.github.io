@@ -1,0 +1,289 @@
+{
+  "_comment": "Swedish inline chrome patches — DRAFT pending native review. Inline portion only — the auto-generated portion comes from strings.json via _lang_registry.build_chrome_patches.",
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"Anmälan till nyhetsbrev\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum — notas de investigación sobre pagos, IA y criptografía postcuántica. Sin spam."
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"du@bank.se\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"Anmälan till nyhetsbrev — sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">Prenumerera</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">Hoppa till huvudinnehållet</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"Växla navigering\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"Växla navigering\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"Huvudnavigering\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"Växla till mörkt tema\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"Växla till ljust tema\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"Byt tema\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"Sök (Cmd eller Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"Sök (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"Ta kontakt\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Ta kontakt ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">Ta kontakt</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Sebastien Rousseau startsida\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/sv/om-mig/index.html\">Om mig</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/sv/publikationer/index.html\">Publikationer</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/sv/amnen/index.html\">Ämnen</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/sv/projekt/index.html\">Projekt</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/sv/artiklar/index.html\">Artiklar</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/sv/kontakt/index.html\">Kontakt</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/sv/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Spellistor</a></li>",
+      "<li><a href=\"/sv/spellistor/index.html\">Spellistor</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"Till toppen\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">Publikationer</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">Actividad</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">Kontakt</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/sv/om-mig/index.html\">Om mig</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/sv/gjord-med-statisk-sajtgenerator/index.html\">Gjord med Static Site Generator</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/sv/publikationer/index.html\">Publikationer</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/sv/taggar/index.html\">Taggar</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/sv/projekt/index.html\">Projekt</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Spellistor</a>",
+      "<a href=\"/sv/spellistor/index.html\">Spellistor</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/sv/kontakt/index.html\">Kontakt</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/sv/artiklar/index.html\">Artiklar</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"Enlaces sociales\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau en "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau en "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"Retrato en blanco y negro de Sebastien Rousseau\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna."
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/sv/tillganglighet/index.html\">Tillgänglighet</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/sv/integritet/index.html\">Integritet</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/sv/villkor/index.html\">Villkor</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"Sök i dokumentationen...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"Sök\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> stäng"
+    ],
+    [
+      "navigate</span>",
+      "navigera</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> öppna"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>Sök</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"Språk\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"SV, Byt språk\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"Byt språk\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"Kommer snart\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">SV</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"Atom-flöde\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"RSS-flöde\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"Artikelsammanfattning\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>Viktiga slutsatser</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>Relaterad läsning:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">Relaterad läsning</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">Senast granskad <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"Om författaren\""
+    ],
+    [
+      ">Full profile</a>",
+      ">Fullständig profil</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"Porträtt av Sebastien Rousseau\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">Ta kontakt</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Inled ett samtal</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/articles/index.html\">Läs senaste forskningen</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/contact/index.html\">Ta kontakt</a>"
+    ]
+  ]
+}
