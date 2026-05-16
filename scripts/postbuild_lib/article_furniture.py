@@ -786,7 +786,14 @@ def inject_sources_list(html: str) -> str:
 
 
 _HEAD_END_RE = re.compile(r'</head>', re.IGNORECASE)
-_HREFLANG_RE = re.compile(r'<link\s+rel="alternate"\s+hreflang="[^"]+"[^/]*/>', re.IGNORECASE)
+# Match a <link rel="alternate" hreflang=…> tag with any attribute order
+# and either HTML5 (``>``) or XHTML (``/>``) self-close. The previous form
+# required ``[^/]*/>`` which can never match real URLs (every ``https://``
+# contains ``/``) — so the strip never fired and duplicates accumulated.
+_HREFLANG_RE = re.compile(
+    r'<link\b(?=[^>]*\brel=["\']?alternate["\']?)(?=[^>]*\bhreflang=)[^>]*/?>',
+    re.IGNORECASE,
+)
 
 
 # Speculation Rules API — prerender same-origin pages on hover so any

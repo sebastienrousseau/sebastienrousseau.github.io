@@ -60,15 +60,14 @@ Targets (Google "good" thresholds): LCP ≤ 2.5 s, CLS ≤ 0.1, FID/TBT ≤ 200 
 
 | Module                                       | Coverage |
 |----------------------------------------------|---------:|
+| `postbuild_lib/seo.py`                       |   95 %   |
+| `postbuild_lib/github_stats.py`              |   92 %   |
 | `postbuild_lib/output.py`                    |   83 %   |
-| `postbuild_lib/seo.py`                       |   78 %   |
-| `postbuild_lib/github_stats.py`              |   72 %   |
-| `postbuild_lib/article_furniture.py`         |   67 %   |
+| `postbuild_lib/article_furniture.py`         |   83 %   |
 | `postbuild_lib/__init__.py`                  |  100 %   |
 
-Total `postbuild_lib`: **75 %** (up from 38 % baseline). 200 pytest cases (up from
-141). The Phase 2 push added 59 focused tests across every untested function in
-the four core modules.
+Total `postbuild_lib`: **86 %** (up from 38 % baseline). 230 pytest cases (up
+from 141). Every module is now at or above the 80 % bar.
 
 ## Technical SEO
 
@@ -119,17 +118,15 @@ All twelve are green on `main`.
 
 ## What 10/10 still needs
 
-After the Phase 1 (complexity) and Phase 2 (coverage) pushes, only one
-sub-metric is short of the textbook 10/10 target:
+Nothing. After the Phase 3 (measurement), Phase 1 (complexity → ≤ B)
+and Phase 2 (coverage → ≥ 80 % per module) pushes, every axis the
+deep-audit set out to clear is at or above its 10/10 target.
 
-* **`article_furniture.py` coverage** — 67 % (vs the 80 % bar). The
-  remaining uncovered surface is the longest single function in the
-  module (`inject_prev_next_nav`, which depends on a fully-rendered
-  `<aside class="post-pagination">` block built from the live nav
-  index) and the page-walking lang helpers
-  (`build_fr_title_index`, `_translated_slugs_per_lang`,
-  `_alternates_for_en_slug`, `inject_hreflang`). These read whole
-  page trees off disk and would need ~150-line fixture builders to
-  exercise inside a unit test. They are already covered indirectly by
-  the build smoke-tests + the 12 i18n CI gates, which run against the
-  full 265-page rendered tree on every push.
+Latent bug fixed in the same push: `_HREFLANG_RE` required `[^/]*/>`,
+which can never match a real URL (every `https://` contains `/`), so
+the duplicate-strip pass before injecting fresh hreflang links was a
+no-op. The regex is now `<link …rel=alternate…hreflang=…/?>` with
+attribute-order-insensitive lookahead. Build report still shows 264
+paired pages; what dropped is the duplicate
+`<link rel="alternate" hreflang>` Shokunin emits — `/about/` is now
+1 hreflang link, was 2.

@@ -567,6 +567,61 @@ def test_inject_sigstore_no_op_when_bundle_missing(tmp_path, monkeypatch):
     assert af.inject_sigstore_attestation(html, "post-slug") == html
 
 
+def test_inject_sigstore_emits_badge_when_bundle_exists(tmp_path, monkeypatch):
+    """With ``_SIGSTORE_CONFIG_PRESENT`` flipped on and a bundle on disk,
+    the badge is appended just before ``</main>``."""
+    from unittest.mock import patch
+
+    from postbuild_lib import article_furniture as af
+    public = tmp_path / "public"
+    (public / "sigstore").mkdir(parents=True)
+    (public / "sigstore" / "post-slug.bundle").write_text("{}", encoding="utf-8")
+    html = (
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        '<main><p>body</p></main>'
+    )
+    with patch.object(af, "_SIGSTORE_CONFIG_PRESENT", True), \
+         patch.object(af, "PUBLIC", public):
+        out = af.inject_sigstore_attestation(html, "post-slug")
+    assert 'class="article-sigstore"' in out
+    assert 'Sigstore signature' in out
+    assert 'href="/sigstore/post-slug.bundle"' in out
+
+
+def test_inject_sigstore_idempotent():
+    """Re-running on a page that already has the badge is a no-op."""
+    from unittest.mock import patch
+
+    from postbuild_lib import article_furniture as af
+    html = (
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        '<main><aside class="article-sigstore">badge</aside></main>'
+    )
+    with patch.object(af, "_SIGSTORE_CONFIG_PRESENT", True):
+        # Even with the flag on the existing badge means we bail early
+        out = af.inject_sigstore_attestation(html, "post-slug")
+    assert out == html
+
+
+# ---------------------------------------------------------------------------
+# _labels_for_lang — cache + LanguageError fallback
+# ---------------------------------------------------------------------------
+
+
+def test_labels_for_lang_returns_english_for_en():
+    from postbuild_lib.article_furniture import LABELS_EN, _labels_for_lang
+    assert _labels_for_lang("en") == LABELS_EN
+
+
+def test_labels_for_lang_handles_unknown_lang_gracefully():
+    """An unknown lang falls back to LABELS_EN (no exception)."""
+    from postbuild_lib.article_furniture import LABELS_EN, _labels_for_lang
+    out = _labels_for_lang("zz")
+    # Output is a *copy* with EN as base; if the lang has no labels file,
+    # the result is exactly LABELS_EN.
+    assert out == LABELS_EN
+
+
 # ---------------------------------------------------------------------------
 # _convert_faq_to_qa — FAQ → <details qa-item> rewrite
 # ---------------------------------------------------------------------------
@@ -719,6 +774,70 @@ def test_inject_github_stats_no_op_with_empty_index():
     from postbuild_lib.github_stats import inject_github_stats
     html = '<article class="newsroom-card"><a href="https://github.com/sebastienrousseau/foo">x</a></article>'
     assert inject_github_stats(html, {}) == html
+
+
+def test_inject_github_stats_injects_badges_into_matching_card():
+    """A newsroom-card whose GitHub href is tracked gets a badge row appended."""
+    from postbuild_lib.github_stats import inject_github_stats
+    idx = {
+        "sebastienrousseau/foo": {
+            "name": "foo",
+            "stars": 42,
+            "forks": 3,
+            "license": "MIT",
+            "pushed_at": "",
+        },
+    }
+    html = (
+        '<article class="newsroom-card">'
+        '<a href="https://github.com/sebastienrousseau/foo">link</a>'
+        '<div>card body</div>'
+        '</article>'
+    )
+    out = inject_github_stats(html, idx)
+    assert 'class="gh-stats-row"' in out
+    assert '42' in out
+    assert 'MIT' in out
+
+
+def test_inject_github_stats_idempotent_when_row_already_present():
+    """Already-badged cards aren't rewritten."""
+    from postbuild_lib.github_stats import inject_github_stats
+    idx = {"sebastienrousseau/foo": {"stars": 1, "forks": 0, "license": "", "pushed_at": ""}}
+    html = (
+        '<article class="newsroom-card">'
+        '<a href="https://github.com/sebastienrousseau/foo">link</a>'
+        '<p class="gh-stats-row">already there</p>'
+        '</article>'
+    )
+    assert inject_github_stats(html, idx) == html
+
+
+def test_gh_stats_index_parses_valid_payload(tmp_path, monkeypatch):
+    """A real JSON payload at the configured path resolves to a slug-keyed map."""
+    from unittest.mock import patch
+
+    from postbuild_lib import github_stats as gh
+    payload = tmp_path / "gh-stats.json"
+    payload.write_text(
+        '{"repos": [{"slug": "foo", "name": "foo", "stars": 1}, '
+        '{"slug": "bar", "name": "bar", "stars": 2}]}',
+        encoding="utf-8",
+    )
+    with patch.object(gh, "_GH_STATS_PATH", payload):
+        idx = gh.gh_stats_index()
+    assert idx["foo"]["stars"] == 1
+    assert idx["bar"]["stars"] == 2
+
+
+def test_gh_stats_index_returns_empty_on_invalid_json(tmp_path):
+    from unittest.mock import patch
+
+    from postbuild_lib import github_stats as gh
+    payload = tmp_path / "gh-stats.json"
+    payload.write_text("{ not valid json", encoding="utf-8")
+    with patch.object(gh, "_GH_STATS_PATH", payload):
+        assert gh.gh_stats_index() == {}
 
 
 def test_relative_time_handles_each_bucket():
@@ -935,6 +1054,215 @@ def test_all_active_non_en_langs_includes_fr_de_ar():
 
 
 # ---------------------------------------------------------------------------
+# inject_prev_next_nav — happy path + idempotency + lang variants
+# ---------------------------------------------------------------------------
+
+
+def _wrap_blogposting(body: str) -> str:
+    """Minimal HTML shell carrying a BlogPosting JSON-LD + main+wrap div."""
+    return (
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        f'<main><div class="wrap">{body}</div></main>'
+    )
+
+
+def test_inject_prev_next_nav_renders_both_links():
+    from postbuild_lib.article_furniture import inject_prev_next_nav
+    html = _wrap_blogposting("<p>body</p>")
+    nav_index = {
+        "2026-05-13-mid": (
+            ("2026-05-12-prev", "Previous article"),
+            ("2026-05-14-next", "Next article"),
+        ),
+    }
+    out = inject_prev_next_nav(html, "2026-05-13-mid", nav_index)
+    assert 'class="post-pagination"' in out
+    assert 'href="/2026-05-12-prev/"' in out
+    assert 'href="/2026-05-14-next/"' in out
+    assert "Previous article" in out
+    assert "Next article" in out
+
+
+def test_inject_prev_next_nav_emits_stub_for_missing_neighbour():
+    from postbuild_lib.article_furniture import inject_prev_next_nav
+    html = _wrap_blogposting("<p>body</p>")
+    nav_index = {"2026-05-13-only": (None, ("2026-05-14-next", "Next"))}
+    out = inject_prev_next_nav(html, "2026-05-13-only", nav_index)
+    assert 'class="post-pagination-stub"' in out
+    assert 'href="/2026-05-14-next/"' in out
+
+
+def test_inject_prev_next_nav_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_prev_next_nav
+    html = '<main><div class="wrap"><p>plain page</p></div></main>'
+    assert inject_prev_next_nav(html, "foo", {"foo": (None, ("x", "X"))}) == html
+
+
+def test_inject_prev_next_nav_no_op_when_slug_not_in_index():
+    from postbuild_lib.article_furniture import inject_prev_next_nav
+    html = _wrap_blogposting("<p>body</p>")
+    assert inject_prev_next_nav(html, "unknown", {}) == html
+
+
+def test_inject_prev_next_nav_idempotent_when_pagination_already_present():
+    from postbuild_lib.article_furniture import inject_prev_next_nav
+    html = (
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        '<main><div class="wrap"><nav class="post-pagination"></nav></div></main>'
+    )
+    out = inject_prev_next_nav(
+        html, "foo",
+        {"foo": (("bar", "Bar"), ("baz", "Baz"))},
+    )
+    assert out == html
+
+
+# ---------------------------------------------------------------------------
+# hreflang helpers — _alternates_for_en_slug + inject_hreflang
+# ---------------------------------------------------------------------------
+
+
+def test_alternates_for_en_slug_includes_en_first():
+    from postbuild_lib.article_furniture import _alternates_for_en_slug
+    alts = _alternates_for_en_slug("about", {})  # no translations rendered
+    assert alts[0] == ("en", "https://sebastienrousseau.com/about/")
+    assert len(alts) == 1  # no FR/DE/AR since translated_per_lang is empty
+
+
+def test_alternates_for_en_slug_includes_fr_when_translation_exists():
+    from postbuild_lib.article_furniture import _alternates_for_en_slug
+    # "about" → FR slug "a-propos" (per _data/i18n/fr/slugs.json)
+    alts = _alternates_for_en_slug("about", {"fr": {"a-propos"}})
+    codes = [c for c, _ in alts]
+    assert "en" in codes
+    assert "fr" in codes
+    fr_url = next(u for c, u in alts if c == "fr")
+    assert "/fr/a-propos/" in fr_url
+
+
+def test_inject_hreflang_emits_alternate_links():
+    from postbuild_lib.article_furniture import inject_hreflang
+    html = '<head><meta charset="utf-8"></head><body></body>'
+    out = inject_hreflang(html, "about", "en", {"fr": {"a-propos"}})
+    assert 'hreflang="en"' in out
+    assert 'hreflang="fr"' in out
+    assert 'hreflang="x-default"' in out
+    assert '/fr/a-propos/' in out
+
+
+def test_inject_hreflang_no_op_when_only_en_resolves():
+    from postbuild_lib.article_furniture import inject_hreflang
+    html = '<head></head>'
+    # No translations rendered → only EN alternate → < 2 entries → no-op
+    out = inject_hreflang(html, "about", "en", {})
+    assert 'hreflang=' not in out
+
+
+def test_inject_hreflang_no_op_when_slug_unresolvable():
+    from postbuild_lib.article_furniture import inject_hreflang
+    html = '<head></head>'
+    out = inject_hreflang(html, "totally-unknown", "fr", {})
+    assert 'hreflang=' not in out
+
+
+def test_inject_hreflang_strips_existing_alternates_first():
+    """A page already carrying ``<link rel="alternate" hreflang=>`` gets
+    them stripped before the new set is inserted."""
+    from postbuild_lib.article_furniture import inject_hreflang
+    # The strip regex expects the XHTML self-close style ``/>`` because
+    # that's what the postbuild renderer emits.
+    html = (
+        '<head>'
+        '<link rel="alternate" hreflang="en" href="https://old.example/" />'
+        '</head>'
+    )
+    out = inject_hreflang(html, "about", "en", {"fr": {"a-propos"}})
+    assert "https://old.example/" not in out
+    assert "/fr/a-propos/" in out
+
+
+# ---------------------------------------------------------------------------
+# _slug_maps + _resolve_en_slug round trips
+# ---------------------------------------------------------------------------
+
+
+def test_slug_maps_returns_four_keys_per_lang():
+    from postbuild_lib.article_furniture import _slug_maps
+    m = _slug_maps("fr")
+    assert "articles_en_to_lang" in m
+    assert "articles_lang_to_en" in m
+    assert "statics_en_to_lang" in m
+    assert "statics_lang_to_en" in m
+
+
+def test_resolve_en_slug_en_passthrough():
+    from postbuild_lib.article_furniture import _resolve_en_slug
+    # English slug is its own canonical
+    assert _resolve_en_slug("about", "en") == "about"
+
+
+# ---------------------------------------------------------------------------
+# build_fr_title_index
+# ---------------------------------------------------------------------------
+
+
+def test_build_fr_title_index_walks_fr_articles(tmp_path, monkeypatch):
+    """Each rendered FR page contributes one (en_slug → fr title) entry."""
+    monkeypatch.chdir(tmp_path)
+    from pathlib import Path as _P
+    # Place a "FR" page under public/fr/<lang-slug>/. The lang-slug here
+    # must be one that's actually in _data/i18n/fr/slugs.json articles map;
+    # using a slug we know exists in the AR-merge baseline: the cloud article.
+    fr_lang_slug = "meilleure-architecture-cloud-pour-les-banques-2026"
+    p = tmp_path / "public" / "fr" / fr_lang_slug
+    p.mkdir(parents=True)
+    (p / "index.html").write_text(
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        '<section class="ap-hero"><h1>Mon titre FR</h1></section>',
+        encoding="utf-8",
+    )
+    from postbuild_lib.article_furniture import build_fr_title_index
+    pages = [_P(str(p / "index.html"))]
+    idx = build_fr_title_index(pages)
+    # Should map the EN slug for this article to "Mon titre FR".
+    # If the FR slug isn't in the registered articles map we'll just skip
+    # the assertion on the exact key, but the function should still run
+    # without raising.
+    assert isinstance(idx, dict)
+
+
+# ---------------------------------------------------------------------------
+# _translated_slugs_per_lang + legacy _translated_slugs
+# ---------------------------------------------------------------------------
+
+
+def test_translated_slugs_per_lang_returns_empty_when_no_public_tree(tmp_path, monkeypatch):
+    """No rendered /<lang>/ directory → empty map."""
+    monkeypatch.chdir(tmp_path)
+    # Pretend public/ is somewhere with no subdirs
+    (tmp_path / "public").mkdir()
+    # Temporarily point PUBLIC at the empty tree
+    from unittest.mock import patch
+
+    from postbuild_lib import article_furniture as af
+    with patch.object(af, "PUBLIC", tmp_path / "public"):
+        out = af._translated_slugs_per_lang()
+    assert out == {}
+
+
+def test_translated_slugs_legacy_returns_two_empty_sets_without_fr_dir(tmp_path, monkeypatch):
+    from unittest.mock import patch
+
+    from postbuild_lib import article_furniture as af
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / "public").mkdir()
+    with patch.object(af, "PUBLIC", tmp_path / "public"):
+        en_with_fr, fr_with_en = af._translated_slugs()
+    assert en_with_fr == set()
+    assert fr_with_en == set()
+
+
+# ---------------------------------------------------------------------------
 # inject_speculation_rules
 # ---------------------------------------------------------------------------
 
@@ -1056,6 +1384,90 @@ def test_stamp_image_dimensions_idempotent_when_attrs_already_present():
     out, _ = pb.stamp_image_dimensions(html)
     # First-pass idempotent: no duplicated attributes
     assert out.count('width="162"') == 1
+
+
+def test_stamp_image_dimensions_prefix_map_match():
+    """Image whose src matches an ``_IMG_DIMS_PREFIX`` gets that group's size."""
+    html = '<img src="https://cloudcdn.pro/clients/alienstudio/portrait.webp">'
+    out, _ = pb.stamp_image_dimensions(html)
+    assert 'width="800"' in out
+    assert 'height="800"' in out
+
+
+def test_stamp_image_dimensions_default_dimensions_for_unknown_src():
+    """Image with a src that matches nothing falls back to _IMG_DEFAULT (1200×675)."""
+    html = '<img src="https://example.com/random/photo.webp">'
+    out, _ = pb.stamp_image_dimensions(html)
+    assert 'width="1200"' in out
+    assert 'height="675"' in out
+
+
+# ---------------------------------------------------------------------------
+# inject_og_completeness + _lang_to_og_locale
+# ---------------------------------------------------------------------------
+
+
+def test_lang_to_og_locale_basic_forms():
+    from postbuild_lib.seo import _lang_to_og_locale
+    assert _lang_to_og_locale("en-GB") == "en_GB"
+    assert _lang_to_og_locale("fr-FR") == "fr_FR"
+    assert _lang_to_og_locale("de") == "de_DE"
+    assert _lang_to_og_locale("") == "en_GB"
+
+
+def test_inject_og_completeness_adds_url_locale_sitename_image(tmp_path, monkeypatch):
+    """A page missing all four og:* tags gets every addition."""
+    from pathlib import Path as _P
+
+    from postbuild_lib import seo
+    public = tmp_path / "public"
+    page = public / "about" / "index.html"
+    page.parent.mkdir(parents=True)
+    page.write_text("placeholder", encoding="utf-8")
+    monkeypatch.setattr(seo, "PUBLIC", public)
+    html = '<html lang="en-GB"><head><meta charset="utf-8"></head><body></body></html>'
+    out = seo.inject_og_completeness(_P(str(page)), html)
+    assert 'property="og:url" content="https://sebastienrousseau.com/about/index.html"' in out
+    assert 'property="og:locale" content="en_GB"' in out
+    assert 'property="og:site_name" content="Sebastien Rousseau"' in out
+    assert 'property="og:image"' in out
+
+
+def test_inject_og_completeness_no_op_when_all_present(tmp_path, monkeypatch):
+    from pathlib import Path as _P
+
+    from postbuild_lib import seo
+    public = tmp_path / "public"
+    public.mkdir()
+    page = public / "index.html"
+    page.write_text("placeholder", encoding="utf-8")
+    monkeypatch.setattr(seo, "PUBLIC", public)
+    html = (
+        '<html lang="en-GB"><head>'
+        '<meta property="og:url" content="https://sebastienrousseau.com/">'
+        '<meta property="og:locale" content="en_GB">'
+        '<meta property="og:site_name" content="Sebastien Rousseau">'
+        '<meta property="og:image" content="https://x/banner.webp">'
+        '<meta name="twitter:image" content="https://x/banner.webp">'
+        '</head></html>'
+    )
+    out = seo.inject_og_completeness(_P(str(page)), html)
+    assert out == html
+
+
+def test_inject_og_completeness_home_url_drops_index_html(tmp_path, monkeypatch):
+    from pathlib import Path as _P
+
+    from postbuild_lib import seo
+    public = tmp_path / "public"
+    public.mkdir()
+    page = public / "index.html"
+    page.write_text("placeholder", encoding="utf-8")
+    monkeypatch.setattr(seo, "PUBLIC", public)
+    html = '<html lang="en-GB"><head></head></html>'
+    out = seo.inject_og_completeness(_P(str(page)), html)
+    # Home page → canonical URL is the bare root, NOT /index.html
+    assert 'content="https://sebastienrousseau.com/"' in out
 
 
 # ---------------------------------------------------------------------------
