@@ -1,11 +1,11 @@
 {
-  "keywords": "quantum-resistant cryptography, post-quantum cryptography, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, quantum computing",
   "locale": "yo_NG",
+  "date": "Oct 16, 2023",
   "description": "HSH uses quantum-resistant cryptographic primitives to protect your data, ensuring its security even in the face of future quantum computing advances.",
   "subtitle": "HSH: a quantum-resistant hash library for the post-quantum era of authentication.",
-  "title": "Protecting Data in the Quantum Age: The Hash Library (HSH)",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
+  "keywords": "quantum-resistant cryptography, post-quantum cryptography, hash library, HSH, password hashing, key derivation, Argon2i, Bcrypt, Scrypt, quantum computing",
   "language": "yo-NG",
   "banner_alt": "A creative illustration on Quantum computing theme",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
-  "date": "Oct 16, 2023"
+  "title": "Protecting Data in the Quantum Age: The Hash Library (HSH)"
 }

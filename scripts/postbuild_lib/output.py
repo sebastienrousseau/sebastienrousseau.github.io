@@ -403,21 +403,52 @@ _NEWS_URL_RE   = re.compile(r'<url>[\s\S]*?</url>', re.IGNORECASE)
 
 
 def _build_title_index() -> dict[str, str]:
-    """title -> canonical https://… URL, derived from _posts frontmatter."""
+    """title -> canonical https://… URL, derived from _posts frontmatter.
+
+    Walks both the top-level English ``_posts/*.md`` AND every
+    per-language subtree ``_posts/<lang>/*.md`` so the per-entry rewrite
+    in :func:`fix_xml_feed_urls` can find a URL for translated titles
+    too. Without the per-language pass, Shokunin's atom feed would keep
+    `<link href=".meta/<lang>/">` placeholders for every translation.
+    """
     idx: dict[str, str] = {}
     posts_dir = Path("_posts")
     if not posts_dir.is_dir():
         return idx
+    # English: _posts/*.md (top level)
     for md in posts_dir.glob("*.md"):
         fm = _parse_frontmatter(md)
         title = fm.get("title")
         url = fm.get("url")
         if title and url:
-            idx[title.strip()] = url.strip()
-            # Some feeds emit XML-escaped titles. Pre-compute both forms so
-            # the lookup hits either way.
-            idx[title.replace("&", "&amp;").strip()] = url.strip()
+            _index_title(idx, title, url.strip())
+    # Per-language: _posts/<lang>/<slug>.md. Frontmatter `url:` is
+    # frequently the EN URL (translators copy from source) — so we
+    # synthesise the per-language URL from the post's filesystem path
+    # instead of trusting frontmatter. That avoids feed-entry guid
+    # collisions where multiple translations all point at the EN URL.
+    for md in posts_dir.glob("*/*.md"):
+        fm = _parse_frontmatter(md)
+        title = fm.get("title")
+        if not title:
+            continue
+        lang = md.parent.name
+        slug = md.stem
+        url = f"https://sebastienrousseau.com/{lang}/{slug}/index.html"
+        _index_title(idx, title, url)
     return idx
+
+
+def _index_title(idx: dict[str, str], title: str, url: str) -> None:
+    """Insert title → url under the title's plain form plus the two
+    XML-escaped variants (``&amp;`` for ampersand, ``&apos;`` for
+    apostrophe) so feed-entry lookups hit regardless of escape style."""
+    t = title.strip()
+    idx[t] = url
+    idx[t.replace("&", "&amp;")] = url
+    idx[t.replace("'", "&apos;")] = url
+    # Both substitutions can co-occur if a title carries both characters.
+    idx[t.replace("&", "&amp;").replace("'", "&apos;")] = url
 
 
 def _decode_entities(s: str) -> str:

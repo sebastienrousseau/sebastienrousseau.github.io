@@ -1,12 +1,12 @@
 {
-  "language": "ja-JP",
-  "description": "量子コンピュータが従来の暗号を脅かす中、量子鍵配送(QKD)が金融グレードセキュリティの構造的な答えとして登場しています。",
-  "locale": "ja_JP",
-  "title": "量子鍵配送:銀行セキュリティの革新",
-  "date": "December 11, 2023",
   "keywords": "QKD, 量子鍵配送, 量子暗号, BB84, BBM92, 量子ネットワーク, 銀行セキュリティ, 量子インターネット",
-  "last_reviewed": "2026-05-11",
+  "description": "量子コンピュータが従来の暗号を脅かす中、量子鍵配送(QKD)が金融グレードセキュリティの構造的な答えとして登場しています。",
   "subtitle": "QKD が金融グレードセキュリティの構造的な答えとして登場",
   "banner_alt": "ドックから見た HSBC タワー",
-  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp"
+  "locale": "ja_JP",
+  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
+  "date": "December 11, 2023",
+  "title": "量子鍵配送:銀行セキュリティの革新",
+  "last_reviewed": "2026-05-11",
+  "language": "ja-JP"
 }

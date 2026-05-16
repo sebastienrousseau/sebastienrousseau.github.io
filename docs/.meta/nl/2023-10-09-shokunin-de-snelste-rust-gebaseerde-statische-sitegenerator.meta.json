@@ -1,11 +1,11 @@
 {
   "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
-  "locale": "nl_NL",
+  "description": "Shokunin is een statische sitegenerator in Rust, ontworpen voor prestaties, toegankelijkheid en SEO, met eersteklas JSON-LD.",
   "keywords": "Shokunin, statische sitegenerator, Rust, SSG, prestaties, SEO, JSON-LD, toegankelijkheid",
+  "banner_alt": "Banner van Shokunin: statische sitegenerator in Rust",
+  "locale": "nl_NL",
   "language": "nl-NL",
   "subtitle": "Razendsnelle builds met eersteklas JSON-LD, toegankelijkheid en SEO",
-  "title": "Shokunin: de snelste statische sitegenerator in Rust",
-  "banner_alt": "Banner van Shokunin: statische sitegenerator in Rust",
-  "description": "Shokunin is een statische sitegenerator in Rust, ontworpen voor prestaties, toegankelijkheid en SEO, met eersteklas JSON-LD.",
-  "date": "October 9, 2023"
+  "date": "October 9, 2023",
+  "title": "Shokunin: de snelste statische sitegenerator in Rust"
 }

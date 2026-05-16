@@ -1,11 +1,11 @@
 {
-  "keywords": "blockchain, kriptografi, hash, konsensüs, proof-of-work, proof-of-stake, dağıtık defter",
-  "language": "tr-TR",
-  "title": "Blockchain'in arkasındaki teknolojiyi anlamak",
-  "banner_alt": "Soyut bir blockchain ağ görselleştirmesi",
-  "description": "Blockchain'in mimarisi: bloklar, hash'ler, konsensüs algoritmaları ve güveni mümkün kılan kriptografi.",
   "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
   "subtitle": "Dağıtık defter sistemini destekleyen temel mekanizmalar",
+  "description": "Blockchain'in mimarisi: bloklar, hash'ler, konsensüs algoritmaları ve güveni mümkün kılan kriptografi.",
+  "banner_alt": "Soyut bir blockchain ağ görselleştirmesi",
+  "title": "Blockchain'in arkasındaki teknolojiyi anlamak",
   "locale": "tr_TR",
+  "language": "tr-TR",
+  "keywords": "blockchain, kriptografi, hash, konsensüs, proof-of-work, proof-of-stake, dağıtık defter",
   "date": "January 9, 2018"
 }

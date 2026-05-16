@@ -1,11 +1,11 @@
 {
-  "locale": "pl_PL",
-  "description": "CRYSTALS-Kyber to wybrany przez NIST mechanizm enkapsulacji kluczy odporny na kwanty, fundament kryptografii w erze postkwantowej.",
-  "keywords": "CRYSTALS-Kyber, NIST FIPS 203, KEM, kryptografia postkwantowa, lattice, kraty, PQC",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
-  "date": "Nov 19, 2023",
-  "title": "CRYSTALS-Kyber: algorytm ochrony w erze kwantowej",
   "subtitle": "Standard NIST FIPS 203 dla postkwantowej enkapsulacji kluczy",
+  "title": "CRYSTALS-Kyber: algorytm ochrony w erze kwantowej",
+  "date": "Nov 19, 2023",
+  "description": "CRYSTALS-Kyber to wybrany przez NIST mechanizm enkapsulacji kluczy odporny na kwanty, fundament kryptografii w erze postkwantowej.",
+  "locale": "pl_PL",
   "banner_alt": "Diagram CRYSTALS-Kyber i wymiany kluczy postkwantowych",
-  "language": "pl-PL"
+  "keywords": "CRYSTALS-Kyber, NIST FIPS 203, KEM, kryptografia postkwantowa, lattice, kraty, PQC",
+  "language": "pl-PL",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp"
 }
