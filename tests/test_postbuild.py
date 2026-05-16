@@ -480,6 +480,73 @@ def test_inject_anchor_empty_slug_gets_section_fallback():
 
 
 # ---------------------------------------------------------------------------
+# Asset-URL fingerprint stamping — guards stale CDN cache after a content change
+# ---------------------------------------------------------------------------
+
+
+def test_stamp_asset_fingerprints_rewrites_main_js():
+    """Unquoted ``src=/main.js`` gets rewritten to the fingerprinted name."""
+    from unittest.mock import patch
+
+    import postbuild as _pb
+    fake_map = {"/main.js": "/main.abc123.js"}
+    fake_pat = _pb.re.compile(
+        r'(<(?:script|link)\b[^>]*\b(?:src|href)=["\']?)(/main\.js)(["\']?[^>]*>)',
+        _pb.re.IGNORECASE,
+    )
+    with patch.object(_pb, "_FP_ASSET_MAP", fake_map), patch.object(_pb, "_FP_PATTERN", fake_pat):
+        out, n = _pb.stamp_asset_fingerprints('<script defer src=/main.js></script>')
+        assert n == 1
+        assert "/main.abc123.js" in out
+        assert "src=/main.js" not in out
+
+
+def test_stamp_asset_fingerprints_rewrites_quoted_form():
+    """Quoted ``src="/main.js"`` also gets rewritten."""
+    from unittest.mock import patch
+
+    import postbuild as _pb
+    fake_map = {"/main.js": "/main.abc123.js"}
+    fake_pat = _pb.re.compile(
+        r'(<(?:script|link)\b[^>]*\b(?:src|href)=["\']?)(/main\.js)(["\']?[^>]*>)',
+        _pb.re.IGNORECASE,
+    )
+    with patch.object(_pb, "_FP_ASSET_MAP", fake_map), patch.object(_pb, "_FP_PATTERN", fake_pat):
+        out, n = _pb.stamp_asset_fingerprints('<script src="/main.js" defer></script>')
+        assert n == 1
+        assert 'src="/main.abc123.js"' in out
+
+
+def test_stamp_asset_fingerprints_leaves_inline_js_untouched():
+    """A literal ``/main.js`` inside JS code (not a <script src>) is NOT rewritten."""
+    from unittest.mock import patch
+
+    import postbuild as _pb
+    fake_map = {"/main.js": "/main.abc123.js"}
+    fake_pat = _pb.re.compile(
+        r'(<(?:script|link)\b[^>]*\b(?:src|href)=["\']?)(/main\.js)(["\']?[^>]*>)',
+        _pb.re.IGNORECASE,
+    )
+    with patch.object(_pb, "_FP_ASSET_MAP", fake_map), patch.object(_pb, "_FP_PATTERN", fake_pat):
+        out, n = _pb.stamp_asset_fingerprints(
+            "<script>navigator.serviceWorker.register('/main.js');</script>"
+        )
+        assert n == 0
+        assert "/main.js" in out  # untouched
+
+
+def test_stamp_asset_fingerprints_no_op_when_pattern_missing():
+    """Without a fingerprint map, the pass is a no-op."""
+    from unittest.mock import patch
+
+    import postbuild as _pb
+    with patch.object(_pb, "_FP_PATTERN", None):
+        out, n = _pb.stamp_asset_fingerprints('<script src=/main.js></script>')
+        assert n == 0
+        assert out == '<script src=/main.js></script>'
+
+
+# ---------------------------------------------------------------------------
 # Localhost URL scrub — `scrub_localhost_urls`
 # Guards the SEO/canonical regression: Shokunin bakes the dev-server URL
 # into <link rel="canonical"> and the Atom-feed alternate; if it ships,
