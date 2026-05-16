@@ -103,6 +103,82 @@ def test_patch_block_rewrites_meta_path_on_any_host():
 
 
 # ---------------------------------------------------------------------------
+# Stylesheet sanitizer — `_sanitize_link_tag` + `hoist_body_link_stylesheets`
+# ---------------------------------------------------------------------------
+
+
+def test_sanitize_link_tag_collapses_duplicate_crossorigin():
+    from postbuild_lib.article_furniture import _sanitize_link_tag
+    tag = '<link rel="stylesheet" href="/x.css" crossorigin="anonymous" crossorigin="anonymous">'
+    out = _sanitize_link_tag(tag)
+    assert out.count('crossorigin="anonymous"') == 1
+
+
+def test_sanitize_link_tag_strips_trailing_double_quote():
+    from postbuild_lib.article_furniture import _sanitize_link_tag
+    tag = '<link rel="stylesheet" href="/x.css" crossorigin="anonymous"">'
+    out = _sanitize_link_tag(tag)
+    # Two adjacent quotes before `>` are collapsed to one
+    assert '""' not in out
+
+
+def test_hoist_body_link_stylesheets_moves_to_head():
+    from postbuild_lib.article_furniture import hoist_body_link_stylesheets
+    html = (
+        '<head><meta charset="utf-8"></head>'
+        '<body><main><link rel="stylesheet" href="/widget.css"></main></body>'
+    )
+    out, n = hoist_body_link_stylesheets(html)
+    assert n == 1
+    # Stylesheet now in head, not in body
+    head_end = out.find("</head>")
+    body_start = out.find("<body>")
+    sheet = out.find('href="/widget.css"')
+    assert sheet < head_end < body_start
+
+
+def test_hoist_body_link_stylesheets_no_op_when_already_in_head():
+    from postbuild_lib.article_furniture import hoist_body_link_stylesheets
+    html = (
+        '<head><link rel="stylesheet" href="/x.css"></head><body><main></main></body>'
+    )
+    _, n = hoist_body_link_stylesheets(html)
+    assert n == 0
+
+
+# ---------------------------------------------------------------------------
+# slugify edge cases
+# ---------------------------------------------------------------------------
+
+
+def test_slugify_basic_ascii():
+    from postbuild_lib.article_furniture import slugify
+    assert slugify("Hello, World!") == "hello-world"
+
+
+def test_slugify_strips_html_tags():
+    from postbuild_lib.article_furniture import slugify
+    assert slugify("<strong>Heading</strong> Text") == "heading-text"
+
+
+def test_slugify_folds_accents():
+    from postbuild_lib.article_furniture import slugify
+    assert slugify("Références") == "references"
+
+
+def test_slugify_arabic_strips_to_empty():
+    """Pure-Arabic input slugifies to '' — caller must handle fallback."""
+    from postbuild_lib.article_furniture import slugify
+    assert slugify("النص العربي") == ""
+
+
+def test_slugify_truncates_long_input():
+    from postbuild_lib.article_furniture import slugify
+    s = "a" * 200
+    assert len(slugify(s)) <= 80
+
+
+# ---------------------------------------------------------------------------
 # News-sitemap shrink — Google News recommendations
 # ---------------------------------------------------------------------------
 
