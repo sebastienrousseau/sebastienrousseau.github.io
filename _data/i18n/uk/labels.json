@@ -1,0 +1,15 @@
+{
+  "_comment": "Ukrainian body-text labels — DRAFT pending native-speaker review. Key set MUST stay in sync with _data/i18n/en/labels.json; CI gate test_i18n_labels.py enforces parity.",
+  "Published": "Опубліковано",
+  "Updated": "Оновлено",
+  "min read": "хв читання",
+  "Previous": "Попередня",
+  "Next": "Наступна",
+  "Sources & references": "Джерела та посилання",
+  "About the author": "Про автора",
+  "Topics": "Теми",
+  "Contents": "Зміст",
+  "Estimated read time": "Орієнтовний час читання",
+  "Article pagination": "Навігація статтями",
+  "Link to": "Посилання на"
+}
