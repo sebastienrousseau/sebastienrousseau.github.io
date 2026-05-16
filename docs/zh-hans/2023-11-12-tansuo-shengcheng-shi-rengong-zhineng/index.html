@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sun, 12 Nov 2023 20:30:00 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sun, 12 Nov 2023 20:30:00 +0000" id="last-modified" />
+    <title>探索生成式人工智能 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="深入了解生成式人工智能的机制、影响、推动力，以及在金融与多行业的应用与伦理考量。">
+<meta name="keywords" content="生成式 AI, 人工智能, GPT-4, 大型语言模型, Transformer, GAN, 自动编码器, 扩散模型, 多模态 AI, 可解释 AI">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IhYluAFz3waFDqQJ3xjmyR2pfWaP5jpco16L40VCDz0=' 'sha256-Khjp0Mdxq8SQKwYbUam6023SQ8IED5L1HFTnyeA+eS8=' 'sha256-qnnDEBBWEiO60OOejgPDmUhM0isnbVKFLYkD5w0Ptd4=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/zh-hans/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b2a7b255e05cbd1.css" crossorigin="anonymous" integrity="sha256-VdEMoj4KuWEXE74XtoAwuq5lF2P9UK0jJE+s1mJrYfg=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 订阅源" href="/zh-hans/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="探索生成式人工智能 — Sebastien Rousseau">
+<meta property="og:description" content="深入了解生成式人工智能的机制、影响、推动力，以及在金融与多行业的应用与伦理考量。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/zh-hans/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="探索生成式人工智能 — Sebastien Rousseau">
+<meta name="twitter:description" content="深入了解生成式人工智能的机制、影响、推动力，以及在金融与多行业的应用与伦理考量。">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/zh-hans/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2023-11-12-explorer-l-ia-generative/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2023-11-12-exploring-generative-ai/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2023-11-12-generative-ki-im-detail/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2023-11-12-explorar-la-ia-generativa/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">跳至主要内容</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="切换导航" />
+      <div class="wrap">
+        <a class="ap-brand" href="/zh-hans/index.html" aria-label="Sebastien Rousseau 首页">
+          <span itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="主导航">
+          <ul class="ap-menu">
+            <li><a href="/zh-hans/guanyu/index.html">关于</a></li>
+            <li><a href="/zh-hans/wenzhang/index.html" aria-current="page" class="active">文章</a></li>
+            <li><a href="/zh-hans/lunwen/index.html">论文与白皮书</a></li>
+            <li><a href="/zh-hans/zhuti/index.html">主题</a></li>
+            <li><a href="/zh-hans/xiangmu/index.html">项目</a></li>
+            <li><a href="/zh-hans/boqing/index.html">播放列表</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="切换到深色主题" aria-pressed="false" title="切换主题">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="搜索（Cmd 或 Ctrl + K）" title="搜索（⌘K）">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="语言">
+            <button type="button" class="ap-lang-toggle" aria-label="ZH，切换语言" aria-expanded="false" aria-haspopup="menu" title="切换语言">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">ZH</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="敬请期待">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="敬请期待">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="敬请期待">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="敬请期待">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="敬请期待">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="敬请期待">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="敬请期待">🇮🇩 Indonesia</span>
+                <span class="ap-lang-item" data-lang="it" aria-disabled="true" title="敬请期待">🇮🇹 Italiano</span>
+                <span class="ap-lang-item" data-lang="ja" aria-disabled="true" title="敬请期待">🇯🇵 日本語</span>
+                <span class="ap-lang-item" data-lang="ko" aria-disabled="true" title="敬请期待">🇰🇷 한국어</span>
+                <span class="ap-lang-item" data-lang="nl" aria-disabled="true" title="敬请期待">🇳🇱 Nederlands</span>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="敬请期待">🇵🇱 Polski</span>
+                <span class="ap-lang-item" data-lang="pt-br" aria-disabled="true" title="敬请期待">🇧🇷 Português</span>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="敬请期待">🇷🇴 Română</span>
+                <span class="ap-lang-item" data-lang="ru" aria-disabled="true" title="敬请期待">🇷🇺 Русский</span>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="敬请期待">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="敬请期待">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="敬请期待">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="敬请期待">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="敬请期待">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="敬请期待">🇳🇬 Yorùbá</span>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <span class="ap-lang-item" data-lang="zh-hant" aria-disabled="true" title="敬请期待">🇹🇼 繁體中文</span>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/zh-hans/lianxi/index.html" aria-label="联系我">联系我 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="切换导航">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>探索生成式人工智能</h1>
+      <p class="sub">2023 年的生成式 AI：工作原理、在金融服务中的首批落地以及值得关注的伦理与架构问题</p>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">生成式 AI</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">人工智能</a><a href="/tags/index.html#h3-gpt-4" class="article-tag" rel="tag">GPT-4</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">大型语言模型</a><a href="/tags/index.html#h3-transformer" class="article-tag" rel="tag">Transformer</a><a href="/tags/index.html#h3-gan" class="article-tag" rel="tag">GAN</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">自动编码器</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">扩散模型</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">多模态 AI</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">可解释 AI</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2023-11-12T20:30:00+00:00" class="meta-pub">Published 12 Nov 2023</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Updated 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">1 min read</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#section-1">洞察</a></li><li><a href="#section-3">理念</a></li><li><a href="#section-5">影响</a></li><li><a href="#section-7">激励</a></li><li><a href="#section-9">结论</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 深入了解生成式人工智能的机制、影响、推动力，以及在金融与多行业的应用与伦理考量。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>洞察.</strong> 生成式人工智能是机器学习的前沿领域，使计算机能够产出与人类作品难以区分的内容。这项技术是 AI 的一个子集，将从被动响应转向主动创造。AI 告诉你天气，而生成式 AI 可以用比喻和情感写一首关于雨天的诗，颇具人性。.</li>  <li><strong>理念.</strong> 生成式 AI 的历程始于几乎难以连缀成句的简单模型。最初这些模型基于规则和决策树，使其僵化且仅限于显式编码的知识。然而，机器学习——尤其是更近的深度学习——带来了范式转变。.</li>  <li><strong>影响.</strong> 生成式 AI 不仅是学术好奇心，更是跨多行业的变革力量。在音乐与文学等创意领域，AI 已开始模糊人机创造的边界。.</li>  <li><strong>激励.</strong> 生成式 AI 的发展在很大程度上由经济激励驱动。企业总是寻求提升效率与降低成本的方式，而 AI 同时提供了两者。凭借自动化复杂任务和生成创造性方案的能力，生成式 AI 可以带来显著的成本节约与生产力提升。.</li></ul></aside><p><img src="https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp" alt="AI、人工智能概念、3D 渲染、概念图像"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<h2 id="section-1">洞察 <a class="heading-anchor" href="#section-1" aria-label="Link to 洞察">#</a></h2>
+<h3 id="ai">理解生成式 AI 的机制 <a class="heading-anchor" href="#ai" aria-label="Link to 理解生成式 AI 的机制">#</a></h3>
+<h4>生成式 AI 简介</h4>
+<p>生成式人工智能是机器学习的前沿领域，使计算机能够产出与人类作品难以区分的内容。这项技术是 AI 的一个子集，将从被动响应转向主动创造。AI 告诉你天气，而生成式 AI 可以用比喻和情感写一首关于雨天的诗，颇具人性。</p>
+<p>生成式 AI 旨在预测模式中的下一个序列，例如词语、像素或音符。它的力量在于从数据中学习，做出与其他作品不同的新创造。</p>
+<h4>生成式 AI 背后的科学</h4>
+<p>要理解 ChatGPT 这类生成式 AI 的工作原理，我们必须先深入了解为其提供动力的神经网络架构。这些架构中的巅峰是 Transformer 模型——一种特别擅长处理序列数据的神经网络。与前辈不同，Transformer 不按顺序处理数据，而是同时观察数据的所有部分。这被称为注意力机制，它让模型在预测输出时为输入数据的不同部分加权。</p>
+<p>训练这些模型需要向它们输入庞大的文本语料。训练过程中，模型预测句子接下来的内容并获得反馈。随着时间推移，它会调整内部参数以提高准确性。无监督学习无需标注数据，让模型可以从任何文本中学习。</p>
+<h4>与其他 AI 系统的区别</h4>
+<p>人们可能会想，生成式 AI 与过去的专家系统根本上有何不同。传统 AI 系统依赖人类制定的一组规则。它们是确定性的、可预测的，并受限于被编程处理的场景。然而，生成式 AI 是概率性的，能够以模拟人类思维过程的方式处理不确定性与歧义。</p>
+<p>专家系统可以判断句子是否合乎语法，而生成式 AI 可以撰写富有创意和细节的文章。从规则系统到生成新内容的模型的转变，开启了曾属于科幻范畴的可能性。</p>
+<h2 id="section-3">理念 <a class="heading-anchor" href="#section-3" aria-label="Link to 理念">#</a></h2>
+<h3 id="ai-2">生成式 AI 的演进与进展 <a class="heading-anchor" href="#ai-2" aria-label="Link to 生成式 AI 的演进与进展">#</a></h3>
+<h4>历史视角</h4>
+<p>生成式 AI 的历程始于几乎难以连缀成句的简单模型。最初这些模型基于规则和决策树，使其僵化且仅限于显式编码的知识。然而，机器学习——尤其是更近的深度学习——带来了范式转变。</p>
+<p>生成式 AI 的历史演进可以从早期的符号 AI 追溯到今日的神经网络。每一阶段都让我们更接近能够真正理解并生成类人内容的机器这一目标。</p>
+<h4>最新模型</h4>
+<p>如今，Generative Pre-trained Transformers 4（GPT-4）及后续模型为生成式 AI 所能实现的目标设立了新高度。这些模型可以像人类一样撰写文章、生成复杂的计算机代码，以及更多。</p>
+<p>这些进展是架构创新与可用数据和算力指数级增长的共同结果。Transformer 模型的革命性在于它们能捕捉输入语境。</p>
+<h4>与先前技术的比较</h4>
+<p>生成式 AI 与前辈的对比鲜明。旧模型可能在歧义和语境处理上挣扎，而现代生成式 AI 反而能在这种情况下大显身手。这些模型的稳健性不仅来自架构，也源于训练方法。它们在主题与风格各异的数据集上训练，生成的内容兼具准确性与多样性。</p>
+<h2 id="section-5">影响 <a class="heading-anchor" href="#section-5" aria-label="Link to 影响">#</a></h2>
+<h3 id="ai-3">生成式 AI 的广泛影响 <a class="heading-anchor" href="#ai-3" aria-label="Link to 生成式 AI 的广泛影响">#</a></h3>
+<h4>对各行业的影响</h4>
+<p>生成式 AI 不仅是学术好奇心，更是跨多行业的变革力量。在音乐与文学等创意领域，AI 已开始模糊人机创造的边界。</p>
+<p>AI 也提升了企业的客户服务，对客户问题给出近人化的回答。在医疗领域，生成式模型被用于预测分子结构。</p>
+<p>生成式 AI 可用于任意任务，如内容创作、翻译、游戏开发等。</p>
+<h4>伦理与社会考量</h4>
+<p>随着生成式 AI 的兴起，伦理问题被推到前台。深度伪造、虚假信息以及传统人类工作被取代的可能性都是社会必须应对的真实关切。AI 生成内容的归属与版权也是一个问题。</p>
+<p>不过，生成式 AI 的社会影响并不止于此。它还有改变的潜力，例如适应每个学生学习风格的个性化教育项目，或可跨越语言障碍的 AI。</p>
+<h4>长期展望</h4>
+<p>展望未来，生成式 AI 的长期影响取决于我们如何选择将其融入生活、如何管控其发展。这项技术造福人类的潜力巨大，但需要谨慎管理与监管。</p>
+<p>未来生成式 AI 的进展可能带来与技术更个性化、更具吸引力的互动，为个人偏好与需求定制体验。但这一未来取决于我们能否驾驭伦理挑战，以负责任、受控的方式发展 AI。</p>
+<h2 id="section-7">激励 <a class="heading-anchor" href="#section-7" aria-label="Link to 激励">#</a></h2>
+<h3 id="ai-4">推动生成式 AI 发展的驱动力 <a class="heading-anchor" href="#ai-4" aria-label="Link to 推动生成式 AI 发展的驱动力">#</a></h3>
+<h4>经济激励</h4>
+<p>生成式 AI 的发展在很大程度上由经济激励驱动。企业总是寻求提升效率与降低成本的方式，而 AI 同时提供了两者。凭借自动化复杂任务和生成创造性方案的能力，生成式 AI 可以带来显著的成本节约与生产力提升。</p>
+<p>AI 生成的内容可在营销、软件开发等领域为不同受众定制。这可以缩短并降低将新软件推向市场的时间与成本。</p>
+<h4>创新与竞争</h4>
+<p>生成式 AI 领域也由创新与赢得竞争优势的渴望推动。随着 AI 技术成为市场的关键差异化因素，企业大力投入研发。这种竞争驱动催生了 AI 能力的持续提升，带来更先进、更强大的系统。</p>
+<p>争夺 AI 主导权的不仅是企业，也包括将 AI 技术领先视为战略优势的国家。</p>
+<h4>社会效益</h4>
+<p>除了经济与竞争优势，强有力的社会激励也驱动着生成式 AI 的发展。这项技术有潜力解决当今世界最紧迫的一些挑战，从气候变化到医疗健康。</p>
+<p>例如，生成式 AI 可以为气候系统建模，以预测变化并提出方案，或通过预测分子间相互作用辅助药物研发。</p>
+<h2 id="section-9">结论 <a class="heading-anchor" href="#section-9" aria-label="Link to 结论">#</a></h2>
+<h3 id="ai-5">拥抱生成式 AI 的未来 <a class="heading-anchor" href="#ai-5" aria-label="Link to 拥抱生成式 AI 的未来">#</a></h3>
+<p>随着我们走向技术新纪元，生成式 AI 是创新的灯塔，模拟着思维的创造力。从其谦逊的起源到如今的复杂算法，生成式 AI 已超越工具的角色。</p>
+<p>生成式 AI 改变了机器能做什么以及我们如何使用它们，对技术、法律等行业产生重大影响。其涟漪不止于经济收益与竞争优势；它触及社会进步与伦理考量的肌理。</p>
+<p>驱动生成式 AI 发展的激励描绘出一个充满潜力的未来。然而，权力越大，越需要负责任的护理。我们在用此技术解决复杂问题、激发空前创造力的同时，也必须驾驭它所揭示的道德格局。</p>
+<p>生成式 AI 像一面镜子，映照我们的集体意识，挑战我们反思希望创造怎样的未来。这不只是 AI 能为我们做什么，而是我们渴望与 AI 为伙伴共同实现什么。在这种伙伴关系中，蕴含着可将人类提升至成就新高度的协同潜力。</p>
+<p>在前行的路上，让我们以平衡的视角拥抱生成式 AI，谨慎与远见兼具地驾驭其能力。如此，我们才能保证这项卓越技术成为包容、进步、开明明日的基石。</p>
+<h3 id="ai-6">驾驭前沿：生成式 AI 的最新进展 <a class="heading-anchor" href="#ai-6" aria-label="Link to 驾驭前沿：生成式 AI 的最新进展">#</a></h3>
+<p>生成式 AI 领域不断演进，新进展层出不穷。以下是一些塑造未来的突破：</p>
+<h4>1. GPT-4 及之后：释放大型语言模型的力量</h4>
+<p>大型语言模型（LLM）的发展是生成式 AI 创新的主要驱动力。OpenAI 突破性 LLM 的最新版 GPT-4 展现出非凡能力，包括生成人类水准的文本、翻译语言和撰写多样的创造性内容。Google AI 的 Meena 和 LaMDA 等其他 LLM 也在推动生成式 AI 的边界。</p>
+<h4>2. 生成对抗网络（GAN）：完善创造力与真实感</h4>
+<p>GAN 已成为生成真实且富有创意内容的有力工具。这些模型由两个相互竞争的神经网络组成，能够生成日益复杂的图像、视频和音频。GAN 已被用于生成艺术作品、设计时尚，甚至制作深度伪造。</p>
+<h4>3. 自动编码器与扩散模型：揭示隐藏的模式与结构</h4>
+<p>自动编码器与扩散模型是生成式 AI 中正在兴起的两种技术。自动编码器学习压缩并重建数据，从而识别底层模式与结构。扩散模型则从带噪声的数据表示开始，逐步精炼以生成高质量输出。</p>
+<h4>4. 多模态生成式 AI：跨越感官的鸿沟</h4>
+<p>多模态生成式 AI 旨在跨越视觉、听觉、文本等不同感官的鸿沟。这项技术有潜力创造模糊数字与物理世界界限的沉浸式体验。例如，多模态生成模型可生成与特定图像匹配的音乐，或创建响应自然语言指令的虚拟环境。</p>
+<h4>5. 可解释 AI：揭开黑箱</h4>
+<p>随着生成式 AI 模型日益复杂，对可解释 AI（XAI）技术的需求不断增长。XAI 有助于解释这些模型如何决策，提供透明度与问责性。这对于建立对生成式 AI 的信任、确保其被负责任、合伦理地使用至关重要。</p>
+<p>这些进展只是不断演进的生成式 AI 全景中的一瞥。随着研究继续、算力提升，我们可以期待更多突破性进展，进一步塑造这项变革性技术的未来。</p>
+<h3 id="ai-7">开源 AI 的承诺：促进创新、塑造更光明的未来 <a class="heading-anchor" href="#ai-7" aria-label="Link to 开源 AI 的承诺：促进创新、塑造更光明的未来">#</a></h3>
+<p>近年来开源 AI 运动获得了巨大增长。许多项目与倡议正在利用以往仅供大型企业和研究机构使用的尖端 AI 技术。如今，任何人都能接触并贡献于这一领域。</p>
+<p>这场运动是生成式 AI 显著进展背后的驱动力，打破了访问壁垒，促进了研究者与开发者之间的协作。这种协同让他们能够开展开创性项目，打造重新定义生成式 AI 技术未来的强大工具与框架。</p>
+<p>GPT-3 和 LaMDA 等大型语言模型（LLM）的发展是开源 AI 力量的证明。这些模型在生成人类水准文本、翻译语言以及创作多样内容方面表现出色。它们的可获得性激发了从创意写作、营销到教育、医疗等多个领域的创新。</p>
+<p>开源 AI 也在自然语言处理（NLP）、计算机视觉与机器人等其他 AI 技术发展中起到关键作用。这些进展预示着一个 AI 更易得、更具适应性、更无缝融入日常生活的未来。</p>
+<p>开源 AI 的光明未来取决于其推动协作、透明与加速创新的能力。通过公开分享知识与资源，研究者和开发者可以合力应对复杂挑战，推动 AI 领域前进。开源 AI 提供透明性，便于公众评审与伦理考量，确保该技术被负责任地用于造福社会。</p>
+<p>随着开源 AI 不断演进，它有潜力革新行业、改变世界。开源 AI 是通向技术造福人类、惠及所有人的未来的钥匙——这种未来源自个性化的教育与医疗、创意表达与科学发现。</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="分隔线"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<p>最后，希望这篇文章激发了你对生成式 AI 这个激动人心领域的兴趣。如果你渴望深入这项变革性技术或有任何问题，请随时通过 <a href="https://www.linkedin.com/in/sebastienrousseau/" title="Sebastien Rousseau 的 LinkedIn">LinkedIn ⧉</a> 或<a href="/zh-hans/lianxi/index.html" title="联系">联系页面</a>联系我。</p>
+<p>再次感谢你的时间，期待你的回音。</p>
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/zh-hans/guanyu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，撰写关于应用人工智能、ISO 20022 迁移、面向金融服务的后量子密码学，以及批发支付结构性转型的内容。</span><span class="author-credentials">20 多年经验，曾任职于汇丰商业及投资银行、PayPal、巴克莱、Shazam、AKQA、维珍集团。 <a href="/zh-hans/guanyu/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最近审阅 <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">相关阅读</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2024-02-13-oumeng-ai-fa-an-suzao-quanqiu-ai-jianguan-weilai/index.html" class="related-media" aria-label="欧盟 AI 法案：塑造全球 AI 监管的未来" tabindex="-1"><img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-ai"><a href="https://sebastienrousseau.com/zh-hans/2024-02-13-oumeng-ai-fa-an-suzao-quanqiu-ai-jianguan-weilai/index.html">欧盟 AI 法案：塑造全球 AI 监管的未来</a> <a class="heading-anchor" href="#ai-ai" aria-label="Link to 欧盟 AI 法案：塑造全球 AI 监管的未来">#</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2024-01-23-ai-tishici-gongcheng-de-jinzhan/index.html" class="related-media" aria-label="AI 提示词工程的进展" tabindex="-1"><img alt="A man analysing data on screens" src="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-8"><a href="https://sebastienrousseau.com/zh-hans/2024-01-23-ai-tishici-gongcheng-de-jinzhan/index.html">AI 提示词工程的进展</a> <a class="heading-anchor" href="#ai-8" aria-label="Link to AI 提示词工程的进展">#</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2024-01-01-ai-qushi-2024-jianjie-yu-yuce/index.html" class="related-media" aria-label="AI 趋势 2024：洞察与对未来的预测" tabindex="-1"><img alt="Drone View of London" src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-2024"><a href="https://sebastienrousseau.com/zh-hans/2024-01-01-ai-qushi-2024-jianjie-yu-yuce/index.html">AI 趋势 2024：洞察与对未来的预测</a> <a class="heading-anchor" href="#ai-2024" aria-label="Link to AI 趋势 2024：洞察与对未来的预测">#</a></h3><p><time datetime="2024-01-01">2024-01-01</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/zh-hans/2023-11-05-rust-anquan-de-shuxue-yu-mima-changshu/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">Mathematical and Cryptographic Constants for Rust Security</span></a><a class="post-pagination-next" href="/zh-hans/2023-11-19-crystals-kyber-liangzi-shidai-de-baohu-suanfa/"><span class="post-pagination-label">Next</span><span class="post-pagination-title">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/zh-hans/guanyu/index.html">关于</a></li>
+              <li><a href="/zh-hans/lianxi/index.html">联系</a></li>
+              <li><a href="/zh-hans/yong-static-site-generator-zhizuo/index.html">使用 Static Site Generator 构建</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">文章</h2>
+            <ul>
+              <li><a href="/zh-hans/wenzhang/index.html">文章</a></li>
+              <li><a href="/zh-hans/lunwen/index.html">论文与白皮书</a></li>
+              <li><a href="/zh-hans/biaoqian/index.html">标签</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">工作</h2>
+            <ul>
+              <li><a href="/zh-hans/xiangmu/index.html">项目</a></li>
+              <li><a href="/zh-hans/boqing/index.html">播放列表</a></li>
+              <li><a href="/zh-hans/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">联系</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="通讯订阅">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 关于支付、人工智能与后量子密码学的研究笔记。无垃圾邮件。</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="nin@yinhang.com" />
+            <input type="hidden" name="_subject" value="通讯订阅 — sebastienrousseau.com" />
+            <button type="submit">订阅</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© 版权所有 2007 - 2026 - Sebastien Rousseau。保留所有权利。</span>
+          <div class="social" aria-label="社交链接">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau 于 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau 于 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau 于 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau 于 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/zh-hans/wuzhang-ai/index.html">无障碍访问</a> ·
+            <a href="/zh-hans/yinsi/index.html">隐私</a> ·
+            <a href="/zh-hans/tiaokuan/index.html">条款</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"zh-hans"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"zh-hans"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":268,"headline":"探索生成式人工智能","description":"深入了解生成式人工智能的机制、影响、推动力，以及在金融与多行业的应用与伦理考量。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp","width":"100vw","height":"100vh","caption":"AI、人工智能概念、3D 渲染、概念图像"},"url":"https://sebastienrousseau.com/zh-hans/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng/","datePublished":"2023-11-12T20:30:00+00:00","dateModified":"2026-05-11","inLanguage":"zh-hans","keywords":"生成式 AI, 人工智能, GPT-4, 大型语言模型, Transformer, GAN, 自动编码器, 扩散模型, 多模态 AI, 可解释 AI","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hans/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"zh-hans"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/zh-hans/"},{"@type":"ListItem","position":3,"name":"探索生成式人工智能","item":"https://sebastienrousseau.com/zh-hans/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="搜索">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>搜索</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="搜索">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="搜索文档…" autocomplete="off" aria-label="搜索"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 关闭</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 导航</span><span><kbd>Enter</kbd> 打开</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

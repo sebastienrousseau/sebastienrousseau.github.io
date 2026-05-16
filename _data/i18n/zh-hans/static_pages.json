@@ -1,0 +1,99 @@
+{
+  "_comment": "Simplified Chinese (zh-hans) static-page metadata — DRAFT pending native review. Mirrors AR/ES/FR/DE static_pages.json shape; includes 'articles' key.",
+  "404": {
+    "title": "404 — 页面未找到 — Sebastien Rousseau",
+    "subtitle": "您查找的页面不存在。",
+    "description": "404 — 页面未找到。返回首页或搜索站点。",
+    "keywords": "404, 错误, 页面未找到, Sebastien Rousseau"
+  },
+  "about": {
+    "title": "关于 — Sebastien Rousseau",
+    "subtitle": "通过人工智能、后量子密码学与区块链技术的战略整合，塑造银行业与金融服务业的未来。",
+    "description": "Sebastien Rousseau，资深银行技术专家：应用人工智能、ISO 20022 迁移、后量子密码学，以及批发支付的结构性转型。",
+    "keywords": "Sebastien Rousseau, 简介, 银行业, 支付, 人工智能, ISO 20022, 后量子密码学, 汇丰, PayPal, 巴克莱"
+  },
+  "accessibility": {
+    "title": "无障碍访问 — Sebastien Rousseau",
+    "subtitle": "我们承诺为残障人士提供数字无障碍访问。",
+    "description": "无障碍访问声明：遵循 WCAG 2.2 AA 标准、包容性原则、反馈渠道与问题报告联系方式。",
+    "keywords": "无障碍访问, WCAG, 合规, 数字包容, 审计"
+  },
+  "articles": {
+    "title": "文章 — Sebastien Rousseau",
+    "subtitle": "关于人工智能、后量子密码学、ISO 20022 与支付未来的文章。",
+    "description": "关于应用人工智能、后量子密码学、ISO 20022 支付以及批发支付转型的文章。",
+    "keywords": "文章, 研究, 人工智能, 后量子密码学, ISO 20022, 批发支付"
+  },
+  "contact": {
+    "title": "联系 — Sebastien Rousseau",
+    "subtitle": "有问题或需要咨询？请联系我。",
+    "description": "联系 Sebastien Rousseau，咨询支付转型、ISO 20022 迁移或后量子战略。",
+    "keywords": "联系, 咨询, 支付, ISO 20022, 后量子密码学"
+  },
+  "made-with-shokunin": {
+    "title": "使用 Shokunin 构建 — Sebastien Rousseau",
+    "subtitle": "了解如何使用新一代静态站点生成器。",
+    "description": "本站使用 Shokunin 构建——一款针对性能和 SEO 优化的 Rust 静态站点生成器。",
+    "keywords": "Shokunin, SSG, Rust, 性能, SEO"
+  },
+  "made-with-static-site-generator": {
+    "title": "使用 Static Site Generator 构建 — Sebastien Rousseau",
+    "subtitle": "了解如何使用新一代静态站点生成器。",
+    "description": "本站由 Shokunin 生成——一款用 Rust 编写的高速静态站点生成器。",
+    "keywords": "Shokunin, 静态站点生成器, Rust, 性能"
+  },
+  "offline": {
+    "title": "离线 — Sebastien Rousseau",
+    "subtitle": "请检查网络连接后重试。",
+    "description": "您当前处于离线状态。重新连接以访问内容。",
+    "keywords": "离线, PWA"
+  },
+  "papers": {
+    "title": "论文与白皮书 — Sebastien Rousseau",
+    "subtitle": "面向支付与安全领域高级决策者的行业白皮书与应用研究。",
+    "description": "Sebastien Rousseau 关于人工智能、ISO 20022 支付与后量子密码学的论文、报告与出版物。",
+    "keywords": "论文, 白皮书, 报告, 研究, ISO 20022, 人工智能, 后量子密码学"
+  },
+  "playlists": {
+    "title": "播放列表 — Sebastien Rousseau",
+    "subtitle": "为深度工作、创造力与工程师思维精选的 Spotify 播放列表。",
+    "description": "Sebastien Rousseau 的音乐与聆听精选。",
+    "keywords": "播放列表, 音乐"
+  },
+  "privacy": {
+    "title": "隐私政策 — Sebastien Rousseau",
+    "subtitle": "您的隐私对我们很重要。",
+    "description": "本网站如何收集、使用和保护您的数据。匿名访问统计、Cookie、托管以及 GDPR 权利。",
+    "keywords": "隐私, GDPR, Cookie, 个人数据, 分析"
+  },
+  "projects": {
+    "title": "项目 — Sebastien Rousseau",
+    "subtitle": "面向金融未来的 Python、Rust 与 JavaScript 开源项目。",
+    "description": "Sebastien Rousseau 维护的开源库组合，应用于支付、跨境结算与抗量子密码学。",
+    "keywords": "开源项目, Python, Rust, 支付, ISO 20022, 后量子密码学"
+  },
+  "tags": {
+    "title": "标签 — Sebastien Rousseau",
+    "subtitle": "按主题浏览站点：人工智能、支付、后量子密码学、开源。",
+    "description": "按标签浏览文章：人工智能、ISO 20022、区块链、后量子密码学等。",
+    "keywords": "标签, 标签云, 按主题浏览"
+  },
+  "terms": {
+    "title": "使用条款 — Sebastien Rousseau",
+    "subtitle": "本站的一般使用条款。",
+    "description": "sebastienrousseau.com 的一般使用条款：内容许可、限制、商标与司法管辖。",
+    "keywords": "条款, 法律声明, 许可, 版权"
+  },
+  "thanks": {
+    "title": "感谢 — Sebastien Rousseau",
+    "subtitle": "感谢您的联系！",
+    "description": "感谢您的留言。我会尽快回复。",
+    "keywords": "感谢"
+  },
+  "topics": {
+    "title": "主题 — Sebastien Rousseau",
+    "subtitle": "关于人工智能、后量子密码学、ISO 20022 与支付未来的文章。",
+    "description": "按主题探索分析：应用人工智能、ISO 20022 支付、后量子密码学以及批发支付转型。",
+    "keywords": "主题, 议题, 人工智能, 支付, ISO 20022, 后量子密码学"
+  }
+}
