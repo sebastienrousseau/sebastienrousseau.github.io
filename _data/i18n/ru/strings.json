@@ -1,0 +1,65 @@
+{
+  "_comment": "Russian UI strings — DRAFT pending native review. Key set MUST stay in sync with _data/i18n/en/strings.json — CI gate test_i18n_strings.py enforces parity.",
+
+  "nav.aria.skipToMain": "Перейти к основному содержанию",
+  "nav.aria.toggleNav": "Переключить навигацию",
+  "nav.aria.toggleNavTitle": "Переключить навигацию",
+  "nav.aria.primary": "Основная навигация",
+  "nav.aria.darkTheme": "Включить тёмную тему",
+  "nav.aria.lightTheme": "Включить светлую тему",
+  "nav.aria.themeToggleTitle": "Сменить тему",
+  "nav.aria.searchKbd": "Поиск (Cmd или Ctrl + K)",
+  "nav.aria.searchTitle": "Поиск (⌘K)",
+  "nav.aria.contactCTA": "Связаться со мной",
+  "nav.contactCTA": "Связаться со мной ›",
+  "nav.aria.brandHome": "Главная страница Sebastien Rousseau",
+  "nav.aria.backToTop": "Наверх",
+
+  "search.label": "Поиск",
+  "search.placeholder": "Поиск по документации...",
+  "search.kbdEsc": "закрыть",
+  "search.kbdNavigate": "перемещение",
+  "search.kbdEnter": "открыть",
+  "search.buttonLabel": "Поиск",
+
+  "footer.title.writing": "Публикации",
+  "footer.title.work": "Деятельность",
+  "footer.title.reach": "Контакты",
+  "footer.aria.socialLinks": "Социальные сети",
+  "footer.aria.socialPrefix": "Sebastien Rousseau в ",
+  "footer.copyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Все права защищены.",
+
+  "feeds.atomTitle": "Лента Atom",
+  "feeds.rssTitle": "Лента RSS",
+  "feeds.channelTitle": "Sebastien Rousseau — Русское издание",
+  "feeds.channelDescription": "Статьи на русском языке: прикладной ИИ, платежи ISO 20022, постквантовая криптография и трансформация оптовых платежей.",
+  "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Все права защищены.",
+  "feeds.jsonFeedTitle": "Sebastien Rousseau — Статьи (русский)",
+
+  "lang.aria.langGroup": "Язык",
+  "lang.aria.changeLangPrefix": "RU, Сменить язык",
+  "lang.title.changeLang": "Сменить язык",
+  "lang.title.comingSoon": "Скоро",
+  "lang.currentLabel": "RU",
+
+  "article.aria.summary": "Краткое содержание статьи",
+  "article.keyTakeaways": "Ключевые выводы",
+  "article.relatedReadingInline": "Связанные материалы:",
+  "article.relatedHeading": "Связанные материалы",
+  "article.lastReviewedLabel": "Последняя проверка ",
+
+  "author.aria.aboutAuthor": "Об авторе",
+  "author.fullProfile": "Полный профиль",
+  "author.alt.portrait": "Портрет Sebastien Rousseau",
+
+  "newsletter.aria.signup": "Подписка на рассылку",
+  "newsletter.blurb": "Banking On Quantum — аналитические заметки о платежах, ИИ и постквантовой криптографии. Без спама.",
+  "newsletter.placeholder": "vy@bank.ru",
+  "newsletter.subject": "Подписка на рассылку — sebastienrousseau.com",
+  "newsletter.submit": "Подписаться",
+
+  "home.eyebrow.contact": "Связаться со мной",
+  "home.cta.startConversation": "Начать разговор",
+
+  "listing.readLatest": "Читать последние исследования"
+}

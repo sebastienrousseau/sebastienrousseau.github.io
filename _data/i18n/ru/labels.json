@@ -1,0 +1,15 @@
+{
+  "_comment": "Russian body-text labels — DRAFT pending native review. Key set MUST stay in sync with _data/i18n/en/labels.json; CI gate test_i18n_labels.py enforces parity.",
+  "Published": "Опубликовано",
+  "Updated": "Обновлено",
+  "min read": "мин. чтения",
+  "Previous": "Предыдущая",
+  "Next": "Следующая",
+  "Sources & references": "Источники и ссылки",
+  "About the author": "Об авторе",
+  "Topics": "Темы",
+  "Contents": "Содержание",
+  "Estimated read time": "Примерное время чтения",
+  "Article pagination": "Постраничная навигация по статьям",
+  "Link to": "Ссылка на"
+}

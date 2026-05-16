@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ru-RU">
+  <title>Sebastien Rousseau — Русское издание</title>
+  <link href="https://sebastienrousseau.com/ru/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://sebastienrousseau.com/ru/"/>
+  <id>https://sebastienrousseau.com/ru/</id>
+  <updated>2026-05-16T14:20:56+00:00</updated>
+  <entry>
+    <title>Лучшая архитектура cloud-инфраструктуры в 2026 году: AI-native, multicloud и квантово-осведомлённый план для финансовых услуг</title>
+    <link href="https://sebastienrousseau.com/ru/2026-05-21-luchshaya-cloud-arkhitektura-dlya-bankov-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-05-21-luchshaya-cloud-arkhitektura-dlya-bankov-2026/</id>
+    <updated>2026-05-21T06:06:06+00:00</updated>
+    <published>2026-05-21T06:06:06+00:00</published>
+    <summary>Cloud-архитектура в 2026 году кристаллизовалась вокруг шести столпов: AI-native инфраструктура, интеллектуальный multicloud, serverless-first с WebAssembly на edge, edge-вычисления, автоматизированный DevSecOps с crypto-agility и устойчивые операции высокой плотности. Для банков вопрос больше не в том, потреблять cloud или проектировать его.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Агентная инженерия: план для банков 2026</title>
+    <link href="https://sebastienrousseau.com/ru/2026-05-18-agentnaya-inzheneriya-plan-dlya-bankov-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-05-18-agentnaya-inzheneriya-plan-dlya-bankov-2026/</id>
+    <updated>2026-05-18T06:06:06+00:00</updated>
+    <published>2026-05-18T06:06:06+00:00</published>
+    <summary>Агентная инженерия — переход от LLM-чатов к автономным агентам с делегированным финансовым полномочием. План для банков, готовящихся к эпохе agentic commerce.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Скрытая доходность: расшифровка заявок BlackRock BRSRV, BSTBL и GENIUS Act</title>
+    <link href="https://sebastienrousseau.com/ru/2026-05-15-skrytaya-dokhodnost-blackrock-brsrv-bstbl-genius-act/"/>
+    <id>https://sebastienrousseau.com/ru/2026-05-15-skrytaya-dokhodnost-blackrock-brsrv-bstbl-genius-act/</id>
+    <updated>2026-05-15T06:06:06+00:00</updated>
+    <published>2026-05-15T06:06:06+00:00</published>
+    <summary>Стейблкоины не могут выплачивать доходность в рамках GENIUS Act. Заявки BlackRock BRSRV и BSTBL раскрывают обходной путь: токенизированный фонд денежного рынка, работающий параллельно с регулируемым стейблкоином и обеспечивающий доходность через соответствующий смежный рельс.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Защита книги учёта: постквантовая миграция корпоративных финансов</title>
+    <link href="https://sebastienrousseau.com/ru/2026-05-14-zashchita-knigi-uchyota-postkvantovaya-migratsiya-korporativnykh-finansov/"/>
+    <id>https://sebastienrousseau.com/ru/2026-05-14-zashchita-knigi-uchyota-postkvantovaya-migratsiya-korporativnykh-finansov/</id>
+    <updated>2026-05-14T06:06:06+00:00</updated>
+    <published>2026-05-14T06:06:06+00:00</published>
+    <summary>Квантовый риск перешёл из области исследовательского любопытства в активный регуляторный мандат. С публикацией дорожной карты G7 в январе 2026 года и подтверждением жизнеспособности проектом BIS Project Leap в действующих платёжных системах вопрос для совета директоров — уже не о том, стоит ли мигрировать.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ISO 20022 pacs.008: срок по структурированным адресам приближается</title>
+    <link href="https://sebastienrousseau.com/ru/2026-05-12-iso-20022-pacs008-strukturirovannyi-adres-srok/"/>
+    <id>https://sebastienrousseau.com/ru/2026-05-12-iso-20022-pacs008-strukturirovannyi-adres-srok/</id>
+    <updated>2026-05-12T06:06:06+00:00</updated>
+    <published>2026-05-12T06:06:06+00:00</published>
+    <summary>С ноября 2026 года SWIFT CBPR+ отклоняет неструктурированные почтовые адреса в трансграничных платёжных сообщениях. За шесть месяцев до этого 65% сообщений pacs.008 всё ещё содержат несоответствующие адреса, а 44% банков отстают от программы устранения проблем.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Lucy Besson: передача знаний, ИИ и квантовые технологии</title>
+    <link href="https://sebastienrousseau.com/ru/2026-05-11-lyusi-besson-peredacha-znanii-ii-i-kvantovye-tekhnologii/"/>
+    <id>https://sebastienrousseau.com/ru/2026-05-11-lyusi-besson-peredacha-znanii-ii-i-kvantovye-tekhnologii/</id>
+    <updated>2026-05-11T06:06:06+00:00</updated>
+    <published>2026-05-11T06:06:06+00:00</published>
+    <summary>Lucy Besson и подход к передаче знаний на пересечении ИИ и квантовых технологий: как наставничество ускоряет освоение сложных областей в финансовой индустрии.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Квантовые пороги снова движутся</title>
+    <link href="https://sebastienrousseau.com/ru/2026-04-11-kvantovye-porogi-snova-dvizhutsya/"/>
+    <id>https://sebastienrousseau.com/ru/2026-04-11-kvantovye-porogi-snova-dvizhutsya/</id>
+    <updated>2026-04-11T06:06:06+00:00</updated>
+    <published>2026-04-11T06:06:06+00:00</published>
+    <summary>Новая работа предполагает, что алгоритм Шора может работать всего на 10 000 кубитов. Порог криптографически значимых квантовых вычислений быстро снижается.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Квантово-устойчивые платежи: почему индустрия должна действовать сейчас</title>
+    <link href="https://sebastienrousseau.com/ru/2025-09-01-kvantovo-zashchishchennye-platezhi-epaa/"/>
+    <id>https://sebastienrousseau.com/ru/2025-09-01-kvantovo-zashchishchennye-platezhi-epaa/</id>
+    <updated>2025-09-01T06:06:06+00:00</updated>
+    <published>2025-09-01T06:06:06+00:00</published>
+    <summary>Структурная угроза, которую квантовые вычисления представляют для платёжной инфраструктуры, и обоснование необходимости согласованных действий уже сейчас.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Обнаружена ошибка в квантовом алгоритме для решётчатой криптографии</title>
+    <link href="https://sebastienrousseau.com/ru/2024-04-22-oshibka-v-kvantovom-algoritme-dlya-reshetchatoi-kriptografii/"/>
+    <id>https://sebastienrousseau.com/ru/2024-04-22-oshibka-v-kvantovom-algoritme-dlya-reshetchatoi-kriptografii/</id>
+    <updated>2024-04-22T06:06:06+00:00</updated>
+    <published>2024-04-22T06:06:06+00:00</published>
+    <summary>В квантовом алгоритме Yilei Chen для решения LWE найдена ошибка, временно защищающая решётчатую криптографию и подчёркивающая необходимость продолжения исследований.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Квантовый алгоритм бросает вызов решётчатой криптографии</title>
+    <link href="https://sebastienrousseau.com/ru/2024-04-15-kvantovyi-algoritm-brosaet-vyzov-reshetchatoi-kriptografii/"/>
+    <id>https://sebastienrousseau.com/ru/2024-04-15-kvantovyi-algoritm-brosaet-vyzov-reshetchatoi-kriptografii/</id>
+    <updated>2024-04-15T06:06:06+00:00</updated>
+    <published>2024-04-15T06:06:06+00:00</published>
+    <summary>Новый квантовый алгоритм решает ключевую криптографическую задачу, призывая ускорить исследования в области квантово-устойчивой безопасности.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>OpenVoice: передовая инновация в технологии клонирования голоса</title>
+    <link href="https://sebastienrousseau.com/ru/2024-04-01-openvoice-peredovaya-innovatsiya-v-klonirovanii-golosa/"/>
+    <id>https://sebastienrousseau.com/ru/2024-04-01-openvoice-peredovaya-innovatsiya-v-klonirovanii-golosa/</id>
+    <updated>2024-04-01T06:06:06+00:00</updated>
+    <published>2024-04-01T06:06:06+00:00</published>
+    <summary>OpenVoice — открытая модель клонирования голоса с возможностью контроля над эмоцией, акцентом и темпом речи.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Полностью гомоморфное шифрование в банковскую квантовую эпоху</title>
+    <link href="https://sebastienrousseau.com/ru/2024-03-25-polnostyu-gomomorfnoe-shifrovanie-v-bankovskuyu-kvantovuyu-epokhu/"/>
+    <id>https://sebastienrousseau.com/ru/2024-03-25-polnostyu-gomomorfnoe-shifrovanie-v-bankovskuyu-kvantovuyu-epokhu/</id>
+    <updated>2024-03-25T06:06:06+00:00</updated>
+    <published>2024-03-25T06:06:06+00:00</published>
+    <summary>Как полностью гомоморфное шифрование (FHE) революционизирует безопасность данных в банковском деле и финансовых услугах, сохраняя конфиденциальность перед угрозами квантовой эпохи.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Развитие ИИ с мультимодальными LLM: уроки из MM1</title>
+    <link href="https://sebastienrousseau.com/ru/2024-03-18-razvitie-ii-s-multimodalnymi-llm-uroki-iz-mm1/"/>
+    <id>https://sebastienrousseau.com/ru/2024-03-18-razvitie-ii-s-multimodalnymi-llm-uroki-iz-mm1/</id>
+    <updated>2024-03-18T06:06:06+00:00</updated>
+    <published>2024-03-18T06:06:06+00:00</published>
+    <summary>Анализ статьи Apple MM1 о мультимодальных больших языковых моделях — архитектура, стратегии предварительного обучения и новые возможности.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Революция распознавания речи в реальном времени на macOS с OpenAI Whisper</title>
+    <link href="https://sebastienrousseau.com/ru/2024-03-12-revolyutsiya-raspoznavaniya-rechi-v-realnom-vremeni-na-macos-s-whisper/"/>
+    <id>https://sebastienrousseau.com/ru/2024-03-12-revolyutsiya-raspoznavaniya-rechi-v-realnom-vremeni-na-macos-s-whisper/</id>
+    <updated>2024-03-12T06:06:06+00:00</updated>
+    <published>2024-03-12T06:06:06+00:00</published>
+    <summary>Система транскрипции речи в текст в реальном времени, использующая OpenAI Whisper и ускорение GPU Metal Performance Shaders на macOS для достижения задержки менее секунды при 8–12× в реальном времени на M1 Max.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>RustLogs: продвинутая библиотека журналирования для приложений на Rust</title>
+    <link href="https://sebastienrousseau.com/ru/2024-03-08-rustlogs-prodvinutaya-biblioteka-zhurnalirovaniya-dlya-rust/"/>
+    <id>https://sebastienrousseau.com/ru/2024-03-08-rustlogs-prodvinutaya-biblioteka-zhurnalirovaniya-dlya-rust/</id>
+    <updated>2024-03-08T06:06:06+00:00</updated>
+    <published>2024-03-08T06:06:06+00:00</published>
+    <summary>RustLogs — это продвинутая библиотека журналирования для приложений на Rust, обеспечивающая структурированный лог и высокую производительность.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Le Chat от Mistral AI: новая эра разговорного ИИ</title>
+    <link href="https://sebastienrousseau.com/ru/2024-03-04-le-chat-ot-mistral-ai-novaya-era-razgovornogo-ii/"/>
+    <id>https://sebastienrousseau.com/ru/2024-03-04-le-chat-ot-mistral-ai-novaya-era-razgovornogo-ii/</id>
+    <updated>2024-03-04T06:06:06+00:00</updated>
+    <published>2024-03-04T06:06:06+00:00</published>
+    <summary>Le Chat от Mistral AI — европейское разговорное ИИ-предложение с упором на качество, открытые модели и соответствие европейским регуляторным требованиям.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Google Gemma: трансформация open-source разработки ИИ</title>
+    <link href="https://sebastienrousseau.com/ru/2024-02-26-google-gemma-transformatsiya-razrabotki-ii-s-otkrytym-iskhodnym-kodom/"/>
+    <id>https://sebastienrousseau.com/ru/2024-02-26-google-gemma-transformatsiya-razrabotki-ii-s-otkrytym-iskhodnym-kodom/</id>
+    <updated>2024-02-26T06:06:06+00:00</updated>
+    <published>2024-02-26T06:06:06+00:00</published>
+    <summary>Gemma — это открытая модель Google, предлагающая разработчикам и исследователям мощный фундамент для построения ИИ-приложений.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Раскрываем Gemini 1.5: революция ИИ от Google объяснена</title>
+    <link href="https://sebastienrousseau.com/ru/2024-02-19-otkryvaem-gemini-revolyutsiya-ii-ot-google/"/>
+    <id>https://sebastienrousseau.com/ru/2024-02-19-otkryvaem-gemini-revolyutsiya-ii-ot-google/</id>
+    <updated>2024-02-19T06:06:06+00:00</updated>
+    <published>2024-02-19T06:06:06+00:00</published>
+    <summary>Gemini 1.5 от Google расширяет контекстное окно за миллион токенов. Что это открывает для финансов с retrieval-augmented моделями и какие компромиссы возникают.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Закон ЕС об ИИ: формирование будущего мирового регулирования ИИ</title>
+    <link href="https://sebastienrousseau.com/ru/2024-02-13-zakon-es-ob-ii-formirovanie-mirovogo-regulirovaniya-ii/"/>
+    <id>https://sebastienrousseau.com/ru/2024-02-13-zakon-es-ob-ii-formirovanie-mirovogo-regulirovaniya-ii/</id>
+    <updated>2024-02-13T06:06:06+00:00</updated>
+    <published>2024-02-13T06:06:06+00:00</published>
+    <summary>Закон ЕС об ИИ устанавливает первый всеобъемлющий регуляторный рамочный документ для систем искусственного интеллекта, влияющий на глобальную индустрию.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Akande — голосовой помощник: революция персональной и руководительской поддержки</title>
+    <link href="https://sebastienrousseau.com/ru/2024-02-12-akande-golosovoi-pomoshchnik-revolyutsiya-personalnoi-i-rukovoditelnoi-podderzhki/"/>
+    <id>https://sebastienrousseau.com/ru/2024-02-12-akande-golosovoi-pomoshchnik-revolyutsiya-personalnoi-i-rukovoditelnoi-podderzhki/</id>
+    <updated>2024-02-12T06:06:06+00:00</updated>
+    <published>2024-02-12T06:06:06+00:00</published>
+    <summary>Akande — продвинутый голосовой помощник на базе OpenAI GPT для естественных взаимодействий, резюме PDF и эффективного кэширования, рассчитанный на личное и руководительское использование.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Революция рекламы: как ИИ формирует будущее</title>
+    <link href="https://sebastienrousseau.com/ru/2024-02-08-revolyutsiya-reklamy-kak-ii-formiruet-budushchee/"/>
+    <id>https://sebastienrousseau.com/ru/2024-02-08-revolyutsiya-reklamy-kak-ii-formiruet-budushchee/</id>
+    <updated>2024-02-08T06:06:06+00:00</updated>
+    <published>2024-02-08T06:06:06+00:00</published>
+    <summary>ИИ преобразует рекламную индустрию — от таргетирования и оптимизации показов до генерации креативов и персонализации сообщений.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Аудио-анализ, переводы и инсайты с помощью ИИ</title>
+    <link href="https://sebastienrousseau.com/ru/2024-01-29-audio-analiz-perevody-i-insaity-s-pomoshchyu-ii/"/>
+    <id>https://sebastienrousseau.com/ru/2024-01-29-audio-analiz-perevody-i-insaity-s-pomoshchyu-ii/</id>
+    <updated>2024-01-29T06:06:06+00:00</updated>
+    <published>2024-01-29T06:06:06+00:00</published>
+    <summary>Современные ИИ-инструменты превращают аудио в текст, переводят на десятки языков и извлекают полезные выводы из записей разговоров.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Достижения в инженерии промптов ИИ</title>
+    <link href="https://sebastienrousseau.com/ru/2024-01-23-dostizheniya-v-inzhenerii-promptov-ii/"/>
+    <id>https://sebastienrousseau.com/ru/2024-01-23-dostizheniya-v-inzhenerii-promptov-ii/</id>
+    <updated>2024-01-23T06:06:06+00:00</updated>
+    <published>2024-01-23T06:06:06+00:00</published>
+    <summary>Современные техники prompt-инжиниринга для LLM: chain-of-thought, few-shot learning, retrieval-augmented generation и структурированные ответы.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Alien Studio: революция искусства с помощью ИИ-фотографии</title>
+    <link href="https://sebastienrousseau.com/ru/2024-01-15-alien-studio-revolyutsiya-iskusstva-s-pomoshchyu-ii-fotografii/"/>
+    <id>https://sebastienrousseau.com/ru/2024-01-15-alien-studio-revolyutsiya-iskusstva-s-pomoshchyu-ii-fotografii/</id>
+    <updated>2024-01-15T06:06:06+00:00</updated>
+    <published>2024-01-15T06:06:06+00:00</published>
+    <summary>Alien Studio — креативный проект, использующий генеративные модели изображений для создания нового языка ИИ-фотографии.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Оптимизация анализа кредитного коэффициента с IBM Qiskit и квантовым преобразованием Фурье</title>
+    <link href="https://sebastienrousseau.com/ru/2024-01-08-optimizatsiya-kreditnogo-koeffitsienta-s-ibm-qiskit-i-kvantovym-furie/"/>
+    <id>https://sebastienrousseau.com/ru/2024-01-08-optimizatsiya-kreditnogo-koeffitsienta-s-ibm-qiskit-i-kvantovym-furie/</id>
+    <updated>2024-01-08T06:06:06+00:00</updated>
+    <published>2024-01-08T06:06:06+00:00</published>
+    <summary>Как IBM Qiskit и квантовое преобразование Фурье меняют анализ кредитных коэффициентов в финансах, обеспечивая беспрецедентную точность и скорость.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Тренды ИИ 2024: перспективы и прогнозы на будущее</title>
+    <link href="https://sebastienrousseau.com/ru/2024-01-01-trendy-ii-2024-perspektivy-i-prognozy/"/>
+    <id>https://sebastienrousseau.com/ru/2024-01-01-trendy-ii-2024-perspektivy-i-prognozy/</id>
+    <updated>2024-01-01T06:06:06+00:00</updated>
+    <published>2024-01-01T06:06:06+00:00</published>
+    <summary>Анализ ключевых трендов искусственного интеллекта на 2024 год: мультимодальные модели, малые специализированные LLM, регулирование, ответственный ИИ.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Революция финансов с квантовыми алгоритмами, усиленными ИИ</title>
+    <link href="https://sebastienrousseau.com/ru/2023-12-25-revolyutsiya-finansov-s-kvantovymi-algoritmami-usilennymi-ii/"/>
+    <id>https://sebastienrousseau.com/ru/2023-12-25-revolyutsiya-finansov-s-kvantovymi-algoritmami-usilennymi-ii/</id>
+    <updated>2023-12-25T06:06:06+00:00</updated>
+    <published>2023-12-25T06:06:06+00:00</published>
+    <summary>Преобразующая роль ИИ внутри квантовых алгоритмов для финансов: математическая структура и банковские приложения.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Состояние ИИ и квантовых вычислений в банковском деле: обзор 2023 года</title>
+    <link href="https://sebastienrousseau.com/ru/2023-12-18-sostoyanie-ii-i-kvantovykh-vychislenii-v-banke-obzor-2023/"/>
+    <id>https://sebastienrousseau.com/ru/2023-12-18-sostoyanie-ii-i-kvantovykh-vychislenii-v-banke-obzor-2023/</id>
+    <updated>2023-12-18T06:06:06+00:00</updated>
+    <published>2023-12-18T06:06:06+00:00</published>
+    <summary>Обзор 2023 года: как искусственный интеллект и квантовые вычисления преобразуют банковский сектор и финансовые услуги.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Квантовое распределение ключей: революция безопасности в банковском деле</title>
+    <link href="https://sebastienrousseau.com/ru/2023-12-11-kvantovoe-raspredelenie-klyuchei-revolyutsiya-bezopasnosti-v-bankovskom-dele/"/>
+    <id>https://sebastienrousseau.com/ru/2023-12-11-kvantovoe-raspredelenie-klyuchei-revolyutsiya-bezopasnosti-v-bankovskom-dele/</id>
+    <updated>2023-12-11T06:06:06+00:00</updated>
+    <published>2023-12-11T06:06:06+00:00</published>
+    <summary>Когда квантовые компьютеры угрожают традиционному шифрованию, квантовое распределение ключей (QKD) становится структурным ответом для безопасности финансового уровня.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Осваиваем дату и время в Rust с библиотекой dtt</title>
+    <link href="https://sebastienrousseau.com/ru/2023-12-04-osvaivaem-datu-i-vremya-v-rust-s-bibliotekoi-dtt/"/>
+    <id>https://sebastienrousseau.com/ru/2023-12-04-osvaivaem-datu-i-vremya-v-rust-s-bibliotekoi-dtt/</id>
+    <updated>2023-12-04T06:06:06+00:00</updated>
+    <published>2023-12-04T06:06:06+00:00</published>
+    <summary>dtt — это библиотека Rust для надёжной работы с датой и временем, ориентированная на сценарии финансовых вычислений и регуляторной отчётности.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>kyberlib: щит на Rust против квантовых угроз</title>
+    <link href="https://sebastienrousseau.com/ru/2023-11-28-kyberlib-shchit-na-rust-protiv-kvantovykh-ugroz/"/>
+    <id>https://sebastienrousseau.com/ru/2023-11-28-kyberlib-shchit-na-rust-protiv-kvantovykh-ugroz/</id>
+    <updated>2023-11-28T06:06:06+00:00</updated>
+    <published>2023-11-28T06:06:06+00:00</published>
+    <summary>kyberlib — это надёжная реализация CRYSTALS-Kyber на Rust, стандарт NIST FIPS 203 для постквантовой инкапсуляции ключей общего назначения.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>CRYSTALS-Kyber: защитный алгоритм в квантовую эпоху</title>
+    <link href="https://sebastienrousseau.com/ru/2023-11-19-crystals-kyber-zashchitnyi-algoritm-v-kvantovuyu-epokhu/"/>
+    <id>https://sebastienrousseau.com/ru/2023-11-19-crystals-kyber-zashchitnyi-algoritm-v-kvantovuyu-epokhu/</id>
+    <updated>2023-11-19T06:06:06+00:00</updated>
+    <published>2023-11-19T06:06:06+00:00</published>
+    <summary>Как CRYSTALS-Kyber — выбранный NIST квантово-устойчивый механизм инкапсуляции ключей — переопределяет криптографию для квантовой эпохи.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Изучаем генеративный ИИ</title>
+    <link href="https://sebastienrousseau.com/ru/2023-11-12-izuchaem-generativnyi-ii/"/>
+    <id>https://sebastienrousseau.com/ru/2023-11-12-izuchaem-generativnyi-ii/</id>
+    <updated>2023-11-12T06:06:06+00:00</updated>
+    <published>2023-11-12T06:06:06+00:00</published>
+    <summary>Обзор генеративного ИИ: архитектуры, возможности, ограничения и сценарии применения в финансовых услугах.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Математические и криптографические константы для безопасности на Rust</title>
+    <link href="https://sebastienrousseau.com/ru/2023-11-05-matematicheskie-i-kriptograficheskie-konstanty-dlya-rust/"/>
+    <id>https://sebastienrousseau.com/ru/2023-11-05-matematicheskie-i-kriptograficheskie-konstanty-dlya-rust/</id>
+    <updated>2023-11-05T06:06:06+00:00</updated>
+    <published>2023-11-05T06:06:06+00:00</published>
+    <summary>Библиотека математических и криптографических констант для Rust, обеспечивающая каноничные значения для надёжных вычислений и криптографических операций.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>libmake: генератор кода для создания качественных Rust-библиотек</title>
+    <link href="https://sebastienrousseau.com/ru/2023-10-26-libmake-generator-koda-dlya-bibliotek-rust/"/>
+    <id>https://sebastienrousseau.com/ru/2023-10-26-libmake-generator-koda-dlya-bibliotek-rust/</id>
+    <updated>2023-10-26T06:06:06+00:00</updated>
+    <published>2023-10-26T06:06:06+00:00</published>
+    <summary>libmake — это open-source генератор кода, сокращающий повторяющиеся задачи и помогающий создавать качественные Rust-библиотеки.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Защита данных в квантовую эпоху: библиотека хеширования hsh</title>
+    <link href="https://sebastienrousseau.com/ru/2023-10-16-zashchita-dannykh-v-kvantovuyu-epokhu-biblioteka-khesh-hsh/"/>
+    <id>https://sebastienrousseau.com/ru/2023-10-16-zashchita-dannykh-v-kvantovuyu-epokhu-biblioteka-khesh-hsh/</id>
+    <updated>2023-10-16T06:06:06+00:00</updated>
+    <published>2023-10-16T06:06:06+00:00</published>
+    <summary>hsh — это Rust-библиотека, реализующая безопасные алгоритмы хеширования и дайджеста для шифрования и проверки паролей, спроектированная с расчётом на постквантовую эпоху аутентификации.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Shokunin: самый быстрый статический генератор сайтов на Rust</title>
+    <link href="https://sebastienrousseau.com/ru/2023-10-09-shokunin-samyi-bystryi-staticheskii-generator-na-rust/"/>
+    <id>https://sebastienrousseau.com/ru/2023-10-09-shokunin-samyi-bystryi-staticheskii-generator-na-rust/</id>
+    <updated>2023-10-09T06:06:06+00:00</updated>
+    <published>2023-10-09T06:06:06+00:00</published>
+    <summary>Shokunin — это статический генератор сайтов на Rust, созданный для производительности, доступности и SEO. Молниеносные сборки с поддержкой JSON-LD из коробки.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Автоматизация создания платёжных файлов ISO 20022 с pain001</title>
+    <link href="https://sebastienrousseau.com/ru/2023-09-29-avtomatizatsiya-platezhnykh-failov-iso-20022-s-pain001/"/>
+    <id>https://sebastienrousseau.com/ru/2023-09-29-avtomatizatsiya-platezhnykh-failov-iso-20022-s-pain001/</id>
+    <updated>2023-09-29T06:06:06+00:00</updated>
+    <published>2023-09-29T06:06:06+00:00</published>
+    <summary>pain001 — это open-source Python-библиотека для автоматизации генерации платёжных файлов ISO 20022 pain.001 из CSV или SQLite.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Создание платформы Express Transaction Credits</title>
+    <link href="https://sebastienrousseau.com/ru/2018-02-15-sozdanie-platformy-express-transaction-credits/"/>
+    <id>https://sebastienrousseau.com/ru/2018-02-15-sozdanie-platformy-express-transaction-credits/</id>
+    <updated>2018-02-15T06:06:06+00:00</updated>
+    <published>2018-02-15T06:06:06+00:00</published>
+    <summary>Как создавалась платформа Express Transaction Credits: технические решения, смарт-контракты и операционная архитектура.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Представление новой криптовалюты и более быстрого платёжного решения</title>
+    <link href="https://sebastienrousseau.com/ru/2018-02-04-novaya-kriptovalyuta-i-bystroe-platezhnoe-reshenie/"/>
+    <id>https://sebastienrousseau.com/ru/2018-02-04-novaya-kriptovalyuta-i-bystroe-platezhnoe-reshenie/</id>
+    <updated>2018-02-04T06:06:06+00:00</updated>
+    <published>2018-02-04T06:06:06+00:00</published>
+    <summary>Значимая глава в эволюции глобального финансового ландшафта — технологические инновации, геополитические сдвиги и устойчивые финансы.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ERC-20: стандарт токенов Ethereum, изменивший мир</title>
+    <link href="https://sebastienrousseau.com/ru/2018-01-24-standart-tokenov-erc-20/"/>
+    <id>https://sebastienrousseau.com/ru/2018-01-24-standart-tokenov-erc-20/</id>
+    <updated>2018-01-24T06:06:06+00:00</updated>
+    <published>2018-01-24T06:06:06+00:00</published>
+    <summary>ERC-20 — стандарт интерфейса для совместимых токенов на Ethereum, ставший фундаментом для тысяч проектов и токенизированных активов.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Понимание технологии, лежащей в основе блокчейна</title>
+    <link href="https://sebastienrousseau.com/ru/2018-01-09-ponimanie-tekhnologii-blockchain/"/>
+    <id>https://sebastienrousseau.com/ru/2018-01-09-ponimanie-tekhnologii-blockchain/</id>
+    <updated>2018-01-09T06:06:06+00:00</updated>
+    <published>2018-01-09T06:06:06+00:00</published>
+    <summary>Глубокое погружение в технические основы блокчейна: хеширование, цифровые подписи, алгоритмы консенсуса и архитектура распределённых реестров.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Блокчейн: технология, которая имеет значение в 2018 году</title>
+    <link href="https://sebastienrousseau.com/ru/2018-01-02-blockchain-tekhnologiya-kotoraya-imeet-znachenie-v-2018/"/>
+    <id>https://sebastienrousseau.com/ru/2018-01-02-blockchain-tekhnologiya-kotoraya-imeet-znachenie-v-2018/</id>
+    <updated>2018-01-02T06:06:06+00:00</updated>
+    <published>2018-01-02T06:06:06+00:00</published>
+    <summary>Анализ блокчейна как технологии, переопределяющей доверие, прозрачность и обмен ценностью в финансовых услугах и за их пределами.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Bitcoin: итоги года первой криптовалюты</title>
+    <link href="https://sebastienrousseau.com/ru/2018-01-01-bitcoin-itogi-goda/"/>
+    <id>https://sebastienrousseau.com/ru/2018-01-01-bitcoin-itogi-goda/</id>
+    <updated>2018-01-01T06:06:06+00:00</updated>
+    <published>2018-01-01T06:06:06+00:00</published>
+    <summary>Bitcoin: одноранговая система электронных денег (P2P ECS), способная революционизировать способы онлайн-расчётов между людьми.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+</feed>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 01 Jan 2018 20:20:20 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 01 Jan 2018 20:20:20 +0000" id="last-modified" />
+    <title>Bitcoin: итоги года первой криптовалюты — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Bitcoin: одноранговая система электронных денег (P2P ECS), способная революционизировать способы онлайн-расчётов между людьми.">
+<meta name="keywords" content="Bitcoin, криптовалюта, блокчейн, P2P, двойная трата, майнинг, proof-of-work, ETF, Satoshi Nakamoto, децентрализованные финансы">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-5MsU3P4mfulau3kdrUy43NXiVmAdaqBVCBrZkzbqZoY=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-jjOsTw2F9V0aoiF6qI86CVRiuLYQEx0Sv/04ygJ+H+4=' 'sha256-uIdeCDRxlf2d4e+tnHnvC41BWMq0fXEvI87peHTP4vk=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ru/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Лента Atom" href="/ru/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Bitcoin: итоги года первой криптовалюты — Sebastien Rousseau">
+<meta property="og:description" content="Bitcoin: одноранговая система электронных денег (P2P ECS), способная революционизировать способы онлайн-расчётов между людьми.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/ru/2018-01-01-bitcoin-itogi-goda/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bitcoin: итоги года первой криптовалюты — Sebastien Rousseau">
+<meta name="twitter:description" content="Bitcoin: одноранговая система электронных денег (P2P ECS), способная революционизировать способы онлайн-расчётов между людьми.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/ru/2018-01-01-bitcoin-itogi-goda/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2018-01-01-bitcoin-l-annee-en-revue/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2018-01-01-bitcoin-the-year-in-review/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2018-01-01-bitcoin-das-jahr-im-rueckblick/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2018-01-01-bitcoin-el-ano-en-revision/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2018-01-01-bitcoin-bilancio-dellanno/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2018-01-01-bitcoin-nenkan-soukatsu/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2018-01-01-bitcoin-o-ano-em-revisao/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2018-01-01-bitcoin-itogi-goda/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2018-01-01-bitebi-niandu-huigu/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Перейти к основному содержанию</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Переключить навигацию" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ru/index.html" aria-label="Главная страница Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Основная навигация">
+          <ul class="ap-menu">
+            <li><a href="/ru/o-mne/index.html">Обо мне</a></li>
+            <li><a href="/ru/stati/index.html" aria-current="page" class="active">Статьи</a></li>
+            <li><a href="/ru/publikatsii/index.html">Публикации</a></li>
+            <li><a href="/ru/temy/index.html">Темы</a></li>
+            <li><a href="/ru/proekty/index.html">Проекты</a></li>
+            <li><a href="/ru/pleilisty/index.html">Плейлисты</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Включить тёмную тему" aria-pressed="false" title="Сменить тему">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Поиск (Cmd или Ctrl + K)" title="Поиск (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Язык">
+            <button type="button" class="ap-lang-toggle" aria-label="RU, Сменить язык" aria-expanded="false" aria-haspopup="menu" title="Сменить язык">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">RU</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="Скоро">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="Скоро">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="Скоро">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="Скоро">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="Скоро">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="Скоро">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="Скоро">🇮🇩 Indonesia</span>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <span class="ap-lang-item" data-lang="ko" aria-disabled="true" title="Скоро">🇰🇷 한국어</span>
+                <span class="ap-lang-item" data-lang="nl" aria-disabled="true" title="Скоро">🇳🇱 Nederlands</span>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="Скоро">🇵🇱 Polski</span>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="Скоро">🇷🇴 Română</span>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="Скоро">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="Скоро">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="Скоро">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Скоро">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="Скоро">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="Скоро">🇳🇬 Yorùbá</span>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <span class="ap-lang-item" data-lang="zh-hant" aria-disabled="true" title="Скоро">🇹🇼 繁體中文</span>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ru/kontakty/index.html" aria-label="Связаться со мной">Связаться со мной ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Переключить навигацию">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Bitcoin: итоги года первой криптовалюты</h1>
+      <p class="sub">Одноранговая система электронных платежей, переопределившая деньги</p>
+    <nav class="article-tags" aria-label="Темы"><a href="/tags/index.html#h3-bitcoin" class="article-tag" rel="tag">Bitcoin</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">криптовалюта</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">блокчейн</a><a href="/tags/index.html#h3-p2p" class="article-tag" rel="tag">P2P</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">двойная трата</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">майнинг</a><a href="/tags/index.html#h3-proof-of-work" class="article-tag" rel="tag">proof-of-work</a><a href="/tags/index.html#h3-etf" class="article-tag" rel="tag">ETF</a><a href="/tags/index.html#h3-satoshi-nakamoto" class="article-tag" rel="tag">Satoshi Nakamoto</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">децентрализованные финансы</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-01-01T20:20:20+00:00" class="meta-pub">Опубликовано 1 Jan 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Обновлено 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Примерное время чтения">5 мин. чтения</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Содержание</h2><ol><li><a href="#section-1">Взгляд</a></li><li><a href="#section-3">Идея</a></li><li><a href="#section-5">Влияние</a></li><li><a href="#section-7">Стимулы</a></li><li><a href="#section-9">Проблемы</a></li><li><a href="#section-11">Регулирование</a></li><li><a href="#section-13">Риски мошенничества</a></li><li><a href="#section-15">Устойчивость</a></li><li><a href="#section-17">Конфиденциальность и безопасность</a></li><li><a href="#section-19">Перспективы</a></li><li><a href="#section-21">Заключение</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Bitcoin: одноранговая система электронных денег (P2P ECS), способная революционизировать способы онлайн-расчётов между людьми.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Взгляд.</strong> Bitcoin, часто называемый цифровым золотом, инициировал финансовую революцию, представив децентрализованные электронные деньги и технологию блокчейн.</li>  <li><strong>Идея.</strong> Bitcoin обеспечивает одноранговые транзакции через распределённый реестр, стимулируя участников криптографическими вознаграждениями.</li>  <li><strong>Влияние.</strong> Решение Bitcoin проблемы двойной траты открыло путь к инновациям в децентрализованных финансах, цифровых активах и системах доверия.</li>  <li><strong>Стимулы.</strong> Уникальные стимулы Bitcoin побуждают к участию в сети, согласовывая интересы всех сторон в пользу коллективного роста.</li></ul></aside><p><img src="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp" alt="Кучка золотых и серебряных монет на столе"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<blockquote>
+<p><strong>TL;DR.</strong> Bitcoin — одноранговая система электронных денег (P2P ECS), способная революционизировать способы онлайн-расчётов и продолжающая перестраивать представления о деньгах, доверии и стоимости.</p>
+<p><strong>Ключевые выводы</strong></p>
+<ul>
+<li><strong>Идея.</strong> Bitcoin обеспечивает одноранговые транзакции через распределённый реестр, стимулируя участников криптографическими вознаграждениями.</li>
+<li><strong>Влияние.</strong> Решение проблемы двойной траты открыло путь к инновациям в децентрализованных финансах, цифровых активах и системах доверия.</li>
+<li><strong>Стимулы.</strong> Уникальные стимулы Bitcoin побуждают к участию в сети, согласовывая интересы всех сторон в пользу коллективного роста.</li>
+<li><strong>Проблемы.</strong> Несмотря на рост, Bitcoin сталкивается с волатильностью, проблемами масштабируемости, регуляторной сложностью и экологической критикой.</li>
+</ul>
+</blockquote>
+<h2 id="section-1">Взгляд <a class="heading-anchor" href="#section-1" aria-label="Ссылка на Взгляд">#</a></h2>
+<h3 id="section-2">Рассвет децентрализованных электронных денег и блокчейна <a class="heading-anchor" href="#section-2" aria-label="Ссылка на Рассвет децентрализованных электронных денег и блокчейна">#</a></h3>
+<p>Bitcoin, часто называемый цифровым золотом, инициировал финансовую революцию, представив децентрализованные электронные деньги и технологию блокчейн. Он позволил осуществлять онлайн-платежи между частными лицами без участия центральных органов. Эта новаторская криптовалюта дала финансовую свободу, недоступную правительствам и корпорациям, и нашла отклик у тех, кто стремится к независимости от традиционных банковских систем.</p>
+<p>Чуть более чем за десятилетие Bitcoin продемонстрировал беспрецедентный рост принятия, стоимости и влияния. Несмотря на продолжающиеся споры о волатильности и регуляторные опасения, Bitcoin продолжает менять мир финансов. По мере развития блокчейн-технологий Bitcoin остаётся в авангарде вывода цифровых валют в мейнстрим, выступая катализатором децентрализованной системы обмена ценностью.</p>
+<h2 id="section-3">Идея <a class="heading-anchor" href="#section-3" aria-label="Ссылка на Идея">#</a></h2>
+<h3 id="section-4">Использование криптографии и экономики для бездоверительных одноранговых платежей <a class="heading-anchor" href="#section-4" aria-label="Ссылка на Использование криптографии и экономики для бездоверительных одноранговых платежей">#</a></h3>
+<p>Bitcoin обеспечивает одноранговые транзакции через распределённый реестр, стимулируя участников криптографическими вознаграждениями. Его децентрализованный публичный реестр — блокчейн — записывает транзакции и предотвращает двойную трату без опоры на единый центр управления.</p>
+<p>Майнеры, которые валидируют транзакции и обеспечивают безопасность сети, получают в награду свежеотчеканенные биткойны. Протокол Bitcoin вводит ограничение на эмиссию в 21 миллион BTC, обеспечивая дефицит и экономическую ценность. Это позволяет быстро и недорого проводить глобальные платежи, минуя традиционных посредников и открывая новые клиентские базы для бизнеса.</p>
+<p>Используя криптографию и теорию игр, Bitcoin позволяет проводить бездоверительные онлайн-транзакции между незнакомцами, революционизируя концепцию программируемых интернет-денег.</p>
+<h2 id="section-5">Влияние <a class="heading-anchor" href="#section-5" aria-label="Ссылка на Влияние">#</a></h2>
+<h3 id="section-6">Развязывая безразрешительные инновации за пределами валюты <a class="heading-anchor" href="#section-6" aria-label="Ссылка на Развязывая безразрешительные инновации за пределами валюты">#</a></h3>
+<p>Решение Bitcoin проблемы двойной траты открыло путь к инновациям в децентрализованных финансах, цифровых активах и системах доверия. Был представлен децентрализованный реестр для одноранговых онлайн-обменов, бросающий вызов институциональным банковским и платёжным сетям, на которых держатся экономики.</p>
+<p>Bitcoin дал людям возможность совершать дешёвые глобальные переводы без посредников, демонстрируя коллаборативный потенциал тысяч анонимных узлов, обеспечивающих безопасность сети. Его дефицит превратил его в цифровое золото, создав новый класс активов для диверсификации портфеля.</p>
+<p>Концепции, популяризированные Bitcoin, такие как программируемые деньги и децентрализованное управление, вдохновили центральные банки на изучение цифровых валют. Bitcoin сделал очевидным, что будущее денег — цифровое, разжигая ещё продолжающуюся финансовую революцию.</p>
+<h2 id="section-7">Стимулы <a class="heading-anchor" href="#section-7" aria-label="Ссылка на Стимулы">#</a></h2>
+<h3 id="section-8">Согласование участников через изящные крипто-экономические стимулы <a class="heading-anchor" href="#section-8" aria-label="Ссылка на Согласование участников через изящные крипто-экономические стимулы">#</a></h3>
+<p>Уникальные стимулы Bitcoin побуждают к участию в сети, согласовывая интересы всех сторон в пользу коллективного роста. Вознаграждения за майнинг стимулируют майнеров обеспечивать безопасность сети, увеличивая при этом предложение Bitcoin.</p>
+<p>Комиссии за транзакции также стимулируют майнеров, естественным образом подстраиваясь под спрос по мере уменьшения вознаграждений со временем. Токеномика обеспечивает поощрение участия, а первопроходцы пожинают плоды роста стоимости BTC.</p>
+<p>Разработчики мотивированы улучшать открытый протокол, поскольку рост полезности напрямую увеличивает ценность сети. Эти стимулы создают положительную обратную связь, выгодную всей экосистеме Bitcoin.</p>
+<h2 id="section-9">Проблемы <a class="heading-anchor" href="#section-9" aria-label="Ссылка на Проблемы">#</a></h2>
+<h3 id="section-10">Устойчивые барьеры на пути массового принятия <a class="heading-anchor" href="#section-10" aria-label="Ссылка на Устойчивые барьеры на пути массового принятия">#</a></h3>
+<p>Несмотря на рост, Bitcoin сталкивается с рядом проблем: волатильность, проблемы масштабируемости, приводящие к задержкам транзакций, опасения безопасности, регуляторные сложности и экологическая критика, связанная с энергоёмким майнингом proof-of-work.</p>
+<p>Децентрализованная природа Bitcoin усложняет всеобъемлющее регулирование, а отсутствие чётких правовых рамок препятствует институциональному принятию во многих странах. Кроме того, удобство использования и управление ключами остаются барьерами для рядовых потребителей.</p>
+<p>Усилия по решению этих проблем — например, изучение альтернатив вроде proof-of-stake — критически важны для дальнейшего роста и долгосрочной значимости Bitcoin.</p>
+<h2 id="section-11">Регулирование <a class="heading-anchor" href="#section-11" aria-label="Ссылка на Регулирование">#</a></h2>
+<h3 id="section-12">Развивающийся регуляторный ландшафт с возможностями для улучшения <a class="heading-anchor" href="#section-12" aria-label="Ссылка на Развивающийся регуляторный ландшафт с возможностями для улучшения">#</a></h3>
+<p>Регулирование криптовалют эволюционировало от первоначальной растерянности к прагматичной интеграции. Хотя большинство юрисдикций разрешают использование Bitcoin, они склонны фокусироваться на регулировании посредников, участвующих в покупке и продаже.</p>
+<p>Прибыль от криптоактивов обычно облагается налогом как доход или прирост капитала. Прогрессивные страны предоставляют налоговые рекомендации для облегчения соответствующей интеграции.</p>
+<p>По мере созревания регуляторного ландшафта законодателям потребуется больше технической экспертизы для принятия информированных решений. Тем не менее траектория указывает на растущее признание криптовалют в рамках регулирования.</p>
+<h2 id="section-13">Риски мошенничества <a class="heading-anchor" href="#section-13" aria-label="Ссылка на Риски мошенничества">#</a></h2>
+<h3 id="section-14">Защита от мошенничества, эксплуатирующего анонимность <a class="heading-anchor" href="#section-14" aria-label="Ссылка на Защита от мошенничества, эксплуатирующего анонимность">#</a></h3>
+<p>Псевдонимная природа Bitcoin сделала его уязвимым для мошенничества, что требует бдительности и соблюдения нормативных требований.</p>
+<p>К распространённым схемам относятся pump-and-dump, поддельные биржи и кошельки, фишинговые атаки, мошенничество с использованием знаменитостей и фальшивые криптогруппы. Снижение рисков включает безопасные привычки, использование надёжных платформ и инвестирование на основе доказательств.</p>
+<p>Меры регулирования и соответствия для бирж играют решающую роль в борьбе с мошенничеством в криптопространстве.</p>
+<h2 id="section-15">Устойчивость <a class="heading-anchor" href="#section-15" aria-label="Ссылка на Устойчивость">#</a></h2>
+<h3 id="section-16">Усиление экологической ответственности через проактивные меры <a class="heading-anchor" href="#section-16" aria-label="Ссылка на Усиление экологической ответственности через проактивные меры">#</a></h3>
+<p>Хотя опасения по поводу энергопотребления Bitcoin сохраняются, устойчивость может быть улучшена за счёт майнинга на возобновляемых источниках энергии, повышения эффективности и стимулов к сохранению ресурсов.</p>
+<p>Критика энергопотребления Bitcoin часто упрощает проблему. Всесторонний анализ должен учитывать глобальное энергопотребление и безопасность, обеспечиваемую сетью.</p>
+<p>Предпринимаются усилия по переносу майнинга в регионы с доступом к дешёвым возобновляемым источникам энергии. Изучаются такие инновации, как proof-of-stake и решения для транзакций второго уровня, предлагающие потенциальные пути решения экологических проблем.</p>
+<h2 id="section-17">Конфиденциальность и безопасность <a class="heading-anchor" href="#section-17" aria-label="Ссылка на Конфиденциальность и безопасность">#</a></h2>
+<h3 id="section-18">Надёжная безопасность с вызовами для конфиденциальности <a class="heading-anchor" href="#section-18" aria-label="Ссылка на Надёжная безопасность с вызовами для конфиденциальности">#</a></h3>
+<p>Bitcoin обеспечивает надёжную безопасность благодаря своему прозрачному блокчейну, однако проблемы конфиденциальности сохраняются. Анализ адресов может скомпрометировать конфиденциальность пользователей, поскольку методы анализа блокчейна способны выявить шаблоны использования.</p>
+<p>Пользователи могут усилить безопасность, следуя лучшим практикам — например, хранить закрытые ключи офлайн в аппаратных кошельках. Криптовалюты, ориентированные на конфиденциальность, такие как Monero, обеспечивают более сильную анонимность.</p>
+<p>В целом прозрачный блокчейн Bitcoin обеспечивает надёжную безопасность, делая его устойчивым к подделке и вмешательству.</p>
+<h2 id="section-19">Перспективы <a class="heading-anchor" href="#section-19" aria-label="Ссылка на Перспективы">#</a></h2>
+<h3 id="section-20">Бычья траектория на фоне сохраняющейся неопределённости <a class="heading-anchor" href="#section-20" aria-label="Ссылка на Бычья траектория на фоне сохраняющейся неопределённости">#</a></h3>
+<p>Будущее Bitcoin остаётся многообещающим благодаря растущему институциональному принятию. Ожидаемые события — например, ETF на Bitcoin в США — могут повысить доступность для традиционных инвесторов, хотя страховые и регуляторные вызовы способны повлиять на сроки.</p>
+<p>Прогнозы указывают на продолжение импульса, потенциально ведущего к шестизначным оценкам к 2024 году. Тем не менее затяжная волатильность и коррекции не должны сбрасываться со счетов.</p>
+<p>Несмотря на скептиков, видящих в Bitcoin преходящий пузырь, его устойчивая реальная полезность говорит об обратном. Он продолжает закреплять своё положение наиболее влиятельной криптовалюты со значительным потенциалом роста.</p>
+<h2 id="section-21">Заключение <a class="heading-anchor" href="#section-21" aria-label="Ссылка на Заключение">#</a></h2>
+<h3 id="section-22">Устойчивая инновация, формирующая будущее финансов <a class="heading-anchor" href="#section-22" aria-label="Ссылка на Устойчивая инновация, формирующая будущее финансов">#</a></h3>
+<p>Замечательный путь Bitcoin с момента его представления Satoshi Nakamoto в 2008 году ознаменовал поворотный момент в истории денег и технологий. Bitcoin запустил децентрализованную революцию, став пионером как криптовалют, так и блокчейн-технологий.</p>
+<p>Как цифровой по природе актив вне контроля институтов, Bitcoin обещает переопределить деньги во всё более цифровом мире. С его устойчивой полезностью и растущим финансовым и технологическим влиянием будущее таит увлекательные возможности.</p>
+<p>Влияние Bitcoin на цифровизацию финансов неоспоримо. Он открыл ящик Пандоры возможностей, которые продолжают разворачиваться, делая его ядром цифровой эволюции финансов.</p>
+<aside class="author-card" aria-label="Об авторе"><img alt="Портрет Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/ru/o-mne/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Старший банковский технолог, пишу о прикладном ИИ, миграции на ISO 20022, постквантовой криптографии для финансовых услуг и структурной трансформации оптовых платежей.</span><span class="author-credentials">Более 20 лет опыта в HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/ru/o-mne/index.html">Полный профиль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Последняя проверка <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Связанные материалы</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/ru/2023-12-11-kvantovoe-raspredelenie-klyuchei-revolyutsiya-bezopasnosti-v-bankovskom-dele/index.html" class="related-media" aria-label="Квантовое распределение ключей: революция безопасности в банковском деле" tabindex="-1"><img alt="HSBC From the Docks" src="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-23"><a href="https://sebastienrousseau.com/ru/2023-12-11-kvantovoe-raspredelenie-klyuchei-revolyutsiya-bezopasnosti-v-bankovskom-dele/index.html">Квантовое распределение ключей: революция безопасности в банковском деле</a> <a class="heading-anchor" href="#section-23" aria-label="Ссылка на Квантовое распределение ключей: революция безопасности в банковском деле">#</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ru/2018-01-24-standart-tokenov-erc-20/index.html" class="related-media" aria-label="ERC-20: стандарт токенов Ethereum, изменивший мир" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="erc-20-ethereum"><a href="https://sebastienrousseau.com/ru/2018-01-24-standart-tokenov-erc-20/index.html">ERC-20: стандарт токенов Ethereum, изменивший мир</a> <a class="heading-anchor" href="#erc-20-ethereum" aria-label="Ссылка на ERC-20: стандарт токенов Ethereum, изменивший мир">#</a></h3><p><time datetime="2018-01-24">2018-01-24</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Постраничная навигация по статьям"><span class="post-pagination-stub" aria-hidden="true"></span><a class="post-pagination-next" href="/ru/2018-01-02-blockchain-tekhnologiya-kotoraya-imeet-znachenie-v-2018/"><span class="post-pagination-label">Следующая</span><span class="post-pagination-title">Blockchain explained, the technology that matters the most</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ru/o-mne/index.html">Обо мне</a></li>
+              <li><a href="/ru/kontakty/index.html">Контакты</a></li>
+              <li><a href="/ru/sdelano-so-staticheskim-generatorom/index.html">Сделано со Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Публикации</h2>
+            <ul>
+              <li><a href="/ru/stati/index.html">Статьи</a></li>
+              <li><a href="/ru/publikatsii/index.html">Публикации</a></li>
+              <li><a href="/ru/tegi/index.html">Теги</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Деятельность</h2>
+            <ul>
+              <li><a href="/ru/proekty/index.html">Проекты</a></li>
+              <li><a href="/ru/pleilisty/index.html">Плейлисты</a></li>
+              <li><a href="/ru/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Контакты</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Подписка на рассылку">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — аналитические заметки о платежах, ИИ и постквантовой криптографии. Без спама.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="vy@bank.ru" />
+            <input type="hidden" name="_subject" value="Подписка на рассылку — sebastienrousseau.com" />
+            <button type="submit">Подписаться</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. Все права защищены.</span>
+          <div class="social" aria-label="Социальные сети">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau в Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau в Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau в LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau в LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau в Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau в Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau в YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau в YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ru/dostupnost/index.html">Доступность</a> ·
+            <a href="/ru/konfidentsialnost/index.html">Конфиденциальность</a> ·
+            <a href="/ru/usloviya/index.html">Условия</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ru"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ru"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1053,"about":{"@type":"Thing","name":"Bitcoin","sameAs":["https://en.wikipedia.org/wiki/Bitcoin","https://www.wikidata.org/wiki/Q131723","https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/index.html"]},"headline":"Bitcoin: итоги года первой криптовалюты","description":"Bitcoin: одноранговая система электронных денег (P2P ECS), способная революционизировать способы онлайн-расчётов между людьми.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp","width":"100vw","height":"100vh","caption":"Кучка золотых и серебряных монет на столе"},"url":"https://sebastienrousseau.com/ru/2018-01-01-bitcoin-itogi-goda/","datePublished":"2018-01-01T20:20:20+00:00","dateModified":"2026-05-11","inLanguage":"ru","keywords":"Bitcoin, криптовалюта, блокчейн, P2P, двойная трата, майнинг, proof-of-work, ETF, Satoshi Nakamoto, децентрализованные финансы","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ru/2018-01-01-bitcoin-itogi-goda/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ru"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ru/"},{"@type":"ListItem","position":3,"name":"Bitcoin: итоги года первой криптовалюты","item":"https://sebastienrousseau.com/ru/2018-01-01-bitcoin-itogi-goda/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Поиск">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Поиск</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Поиск">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Поиск по документации..." autocomplete="off" aria-label="Поиск"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> закрыть</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> перемещение</span><span><kbd>Enter</kbd> открыть</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

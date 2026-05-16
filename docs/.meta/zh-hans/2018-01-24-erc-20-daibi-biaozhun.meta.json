@@ -1,11 +1,11 @@
 {
+  "banner_alt": "棕色木桌上一台关机的笔记本电脑",
+  "title": "ERC-20 代币标准",
   "date": "January 24, 2018",
-  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
+  "description": "ERC-20 标准为以太坊代币定义了一套通用规则与功能，是 DeFi 兴起和以太坊广泛采用的关键推动力。",
   "locale": "zh_CN",
   "subtitle": "以太坊上最常见的代币类型——通常被称为智能合约数字契约",
-  "title": "ERC-20 代币标准",
   "language": "zh-Hans",
-  "banner_alt": "棕色木桌上一台关机的笔记本电脑",
-  "keywords": "ERC-20, 以太坊, 代币标准, 智能合约, DeFi, 去中心化金融, 代币化, Solidity, dApps, 区块链",
-  "description": "ERC-20 标准为以太坊代币定义了一套通用规则与功能，是 DeFi 兴起和以太坊广泛采用的关键推动力。"
+  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
+  "keywords": "ERC-20, 以太坊, 代币标准, 智能合约, DeFi, 去中心化金融, 代币化, Solidity, dApps, 区块链"
 }

@@ -1,0 +1,1021 @@
+{
+  "_comment": "RU static-page chrome patches — DRAFT pending native review. Mirrors FR/ES/AR/DE static_patches.json.",
+  "patches": [
+    [
+      "<a href=\"/\">Home</a> &middot; <span>Topics</span>",
+      "<a href=\"/ru/\">Главная</a> &middot; <span>Темы</span>"
+    ],
+    [
+      ">Home<",
+      ">Главная<"
+    ],
+    [
+      ">Topics</h1>",
+      ">Темы</h1>"
+    ],
+    [
+      ">PILLARS</p>",
+      ">НАПРАВЛЕНИЯ</p>"
+    ],
+    [
+      "PILLAR · TOPIC",
+      "НАПРАВЛЕНИЕ · ТЕМА"
+    ],
+    [
+      "PILLAR · PROJECT",
+      "НАПРАВЛЕНИЕ · ПРОЕКТ"
+    ],
+    [
+      "Curated topic clusters[^<]+",
+      "Тематические кластеры — выберите направление и проследите его по архиву."
+    ],
+    [
+      "aria-label=\"Post-Quantum Cryptography\"",
+      "aria-label=\"Постквантовая криптография\""
+    ],
+    [
+      "aria-label=\"ISO 20022 &amp; Payments\"",
+      "aria-label=\"ISO 20022 и платежи\""
+    ],
+    [
+      "aria-label=\"Applied AI in Banking\"",
+      "aria-label=\"Прикладной ИИ в банковском деле\""
+    ],
+    [
+      "aria-label=\"Rust &amp; Open Source\"",
+      "aria-label=\"Rust и open source\""
+    ],
+    [
+      "aria-label=\"Blockchain &amp; Digital Assets\"",
+      "aria-label=\"Блокчейн и цифровые активы\""
+    ],
+    [
+      "alt=\"Post-Quantum Cryptography — topic banner\"",
+      "alt=\"Постквантовая криптография — баннер темы\""
+    ],
+    [
+      "alt=\"ISO 20022 &amp; Payments — topic banner\"",
+      "alt=\"ISO 20022 и платежи — баннер темы\""
+    ],
+    [
+      "alt=\"Applied AI in Banking — topic banner\"",
+      "alt=\"Прикладной ИИ в банковском деле — баннер темы\""
+    ],
+    [
+      "alt=\"Rust &amp; Open Source — topic banner\"",
+      "alt=\"Rust и open source — баннер темы\""
+    ],
+    [
+      "alt=\"Blockchain &amp; Digital Assets — topic banner\"",
+      "alt=\"Блокчейн и цифровые активы — баннер темы\""
+    ],
+    [
+      "<h3><a href=\"/ru/temy/post-quantum-cryptography/[^\"]+\">Post-Quantum Cryptography</a></h3>",
+      "<h3><a href=\"/ru/temy/post-quantum-cryptography/index.html\">Постквантовая криптография</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/ru/temy/iso-20022-payments/[^\"]+\">ISO 20022 &amp; Payments</a></h3>",
+      "<h3><a href=\"/ru/temy/iso-20022-payments/index.html\">ISO 20022 и платежи</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/ru/temy/applied-ai-banking/[^\"]+\">Applied AI in Banking</a></h3>",
+      "<h3><a href=\"/ru/temy/applied-ai-banking/index.html\">Прикладной ИИ в банковском деле</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/ru/temy/rust-open-source/[^\"]+\">Rust &amp; Open Source</a></h3>",
+      "<h3><a href=\"/ru/temy/rust-open-source/index.html\">Rust и open source</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/ru/temy/blockchain-digital-assets/[^\"]+\">Blockchain &amp; Digital Assets</a></h3>",
+      "<h3><a href=\"/ru/temy/blockchain-digital-assets/index.html\">Блокчейн и цифровые активы</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Lattice-based cryptography, NIST PQC standards, quantum-safe payments,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Криптография на решётках, стандарты NIST PQC, квантово-устойчивые платежи и угроза «собрать сейчас — расшифровать позже». Аналитические заметки, библиотеки с открытым исходным кодом и планы миграции для команд безопасности финансовых услуг.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Cross-border message migration, structured-address compliance,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Миграция трансграничных сообщений, соответствие требованиям к структурированным адресам, SEPA Instant, SWIFT gpi и оптовые платёжные рельсы, которые их обеспечивают. Инструменты, плейбуки и регуляторный календарь.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Generative AI, multimodal LLMs, voice, and speech models[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Генеративный ИИ, мультимодальные LLM, голосовые и речевые модели — и то, как они меняют банковские операции, клиентское обслуживание и продуктовую инженерию в банках первого эшелона.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Open-source Rust libraries I author and maintain:[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Библиотеки Rust с открытым исходным кодом, которые я разрабатываю и поддерживаю: журналирование, генерация кода, дата и время, криптографические примитивы, KEM на основе Kyber и статический генератор сайтов на Rust.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Bitcoin, blockchain fundamentals, ERC-20 tokens, stablecoins,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Bitcoin, основы блокчейна, токены ERC-20, стейблкоины и регуляторная база вокруг платёжных рельсов на базе цифровых активов.</p>"
+    ],
+    [
+      "(\\d+) article\\(s\\)</p>",
+      "\\1 статья(-и)</p>"
+    ],
+    [
+      "INDUSTRY WHITE PAPER · EPAA",
+      "ОТРАСЛЕВОЙ WHITE PAPER · EPAA"
+    ],
+    [
+      "INDUSTRY WHITE PAPER",
+      "ОТРАСЛЕВОЙ WHITE PAPER"
+    ],
+    [
+      "PUBLICATION · WHITE PAPER",
+      "ПУБЛИКАЦИЯ · WHITE PAPER"
+    ],
+    [
+      ">RESEARCH NOTES</p>",
+      ">АНАЛИТИЧЕСКИЕ ЗАМЕТКИ</p>"
+    ],
+    [
+      ">RESEARCH NOTE · QUANTUM<",
+      ">АНАЛИТИЧЕСКАЯ ЗАМЕТКА · КВАНТОВЫЕ<"
+    ],
+    [
+      ">RESEARCH · CRYPTOGRAPHY<",
+      ">ИССЛЕДОВАНИЕ · КРИПТОГРАФИЯ<"
+    ],
+    [
+      ">RESEARCH · AI<",
+      ">ИССЛЕДОВАНИЕ · ИИ<"
+    ],
+    [
+      ">RESEARCH · QUANTUM FINANCE<",
+      ">ИССЛЕДОВАНИЕ · КВАНТОВЫЕ ФИНАНСЫ<"
+    ],
+    [
+      ">RESEARCH · QUANTUM BANKING<",
+      ">ИССЛЕДОВАНИЕ · КВАНТОВОЕ БАНКОВСКОЕ ДЕЛО<"
+    ],
+    [
+      "WHITE PAPER",
+      "WHITE PAPER"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">Читать white paper</a>"
+    ],
+    [
+      "title=\"Read the white paper \\(PDF\\)\"",
+      "title=\"Читать white paper (PDF)\""
+    ],
+    [
+      ">About EPAA</a>",
+      ">Об EPAA</a>"
+    ],
+    [
+      "title=\"Visit the Emerging Payments Association Asia\"",
+      "title=\"Посетить Emerging Payments Association Asia\""
+    ],
+    [
+      ">Buy &middot; \\$([0-9]+)\\.([0-9]+)</a>",
+      ">Купить &middot; \\1,\\2 $</a>"
+    ],
+    [
+      "title=\"Buy the publication on PayPal\"",
+      "title=\"Купить публикацию в PayPal\""
+    ],
+    [
+      ">Read the article</a>",
+      ">Читать статью</a>"
+    ],
+    [
+      " · Free download",
+      " · Бесплатная загрузка"
+    ],
+    [
+      "Free download<",
+      "Бесплатная загрузка<"
+    ],
+    [
+      ">Download<",
+      ">Скачать<"
+    ],
+    [
+      ">Request access<",
+      ">Запросить доступ<"
+    ],
+    [
+      ">English · PDF",
+      ">Английский · PDF"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-01-(\\d{2})\">January \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-01-\\2\">\\2 января \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-02-(\\d{2})\">February \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-02-\\2\">\\2 февраля \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-03-(\\d{2})\">March \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-03-\\2\">\\2 марта \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-04-(\\d{2})\">April \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-04-\\2\">\\2 апреля \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-05-(\\d{2})\">May \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-05-\\2\">\\2 мая \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-06-(\\d{2})\">June \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-06-\\2\">\\2 июня \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-07-(\\d{2})\">July \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-07-\\2\">\\2 июля \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-08-(\\d{2})\">August \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-08-\\2\">\\2 августа \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-09-(\\d{2})\">September \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-09-\\2\">\\2 сентября \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-09-01\">September \\d{4}</time>",
+      "<time datetime=\"\\1-09-01\">Сентябрь \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-10-(\\d{2})\">October \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-10-\\2\">\\2 октября \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-11-(\\d{2})\">November \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-11-\\2\">\\2 ноября \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-12-(\\d{2})\">December \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-12-\\2\">\\2 декабря \\1</time>"
+    ],
+    [
+      ">A system for real-time speech-to-text transcription that leverages OpenAI Whisper and Metal Performance Shaders GPU acceleration on macOS to achieve sub-second latency at 8-12x real-time on M1 Max\\.<",
+      ">Система транскрипции речи в текст в реальном времени, использующая OpenAI Whisper и ускорение GPU Metal Performance Shaders на macOS для достижения задержки менее секунды при 8–12× в реальном времени на M1 Max.<"
+    ],
+    [
+      ">A new paper suggests Shor\\'s algorithm could run on as few as 10,000 qubits\\. The threshold for cryptographically relevant quantum computing is dropping fast\\.<",
+      ">Новая статья предполагает, что алгоритм Шора может работать всего на 10 000 кубитов. Порог криптографически значимых квантовых вычислений быстро снижается.<"
+    ],
+    [
+      ">A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research\\.<",
+      ">Обнаружена ошибка в квантовом алгоритме Yilei Chen для решения LWE, что временно защищает решётчатую криптографию и подчёркивает необходимость продолжения исследований.<"
+    ],
+    [
+      ">New quantum algorithm solves a key cryptographic problem, urging accelerated research into quantum-safe security\\.<",
+      ">Новый квантовый алгоритм решает ключевую криптографическую задачу, требуя ускорения исследований в области квантово-устойчивой безопасности.<"
+    ],
+    [
+      ">How Fully Homomorphic Encryption revolutionises data security in banking and financial services, preserving privacy against quantum-era threats\\.<",
+      ">Как полностью гомоморфное шифрование революционизирует безопасность данных в банковском деле и финансовых услугах, сохраняя конфиденциальность перед угрозами квантовой эпохи.<"
+    ],
+    [
+      ">An analysis of Apple's MM1 paper on Multimodal Large Language Models — architecture, pre-training strategies and emerging capabilities\\.<",
+      ">Анализ статьи Apple MM1 о мультимодальных больших языковых моделях — архитектура, стратегии предварительного обучения и новые возможности.<"
+    ],
+    [
+      ">How IBM Qiskit and the Quantum Fourier Transform reshape credit ratio analysis in finance, offering unprecedented accuracy and speed\\.<",
+      ">Как IBM Qiskit и квантовое преобразование Фурье меняют анализ кредитных коэффициентов в финансах, обеспечивая беспрецедентную точность и скорость.<"
+    ],
+    [
+      ">The transformative role of AI inside quantum algorithms for finance, focusing on their mathematical structure and banking applications\\.<",
+      ">Преобразующая роль ИИ внутри квантовых алгоритмов для финансов с акцентом на их математическую структуру и банковские приложения.<"
+    ],
+    [
+      ">As quantum computers threaten traditional encryption, Quantum Key Distribution \\(QKD\\) emerges as a structural answer for financial-grade security\\.<",
+      ">Когда квантовые компьютеры угрожают традиционному шифрованию, квантовое распределение ключей (QKD) становится структурным ответом для безопасности финансового уровня.<"
+    ],
+    [
+      ">How CRYSTALS-Kyber, the NIST-selected quantum-resistant key-encapsulation mechanism, is reshaping cryptography for the quantum era\\.<",
+      ">Как CRYSTALS-Kyber — выбранный NIST квантово-устойчивый механизм инкапсуляции ключей — меняет криптографию для квантовой эпохи.<"
+    ],
+    [
+      ">What kind of research and papers do you publish\\?</summary>",
+      ">Какие исследования и публикации Вы выпускаете?</summary>"
+    ],
+    [
+      "(<summary[^>]*>Какие исследования и публикации Вы выпускаете\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Существуют две линии работ. <strong>Отраслевые white paper</strong>, подготовленные для таких организаций, как Emerging Payments Association Asia (EPAA), рассматривают структурные изменения платёжной инфраструктуры — в частности, влияние криптографически значимых квантовых вычислений на оптовые и расчётные рельсы. <strong>Прикладные исследовательские отчёты</strong> посвящены конкретным техническим темам (например, распознавание речи в реальном времени с Whisper + Metal Performance Shaders на Apple Silicon) и публикуются в виде отдельно продаваемых PDF.</p></section>"
+    ],
+    [
+      ">How often do you release new papers\\?</summary>",
+      ">Как часто Вы публикуете новые материалы?</summary>"
+    ],
+    [
+      "(<summary[^>]*>Как часто Вы публикуете новые материалы\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Нерегулярно — приоритет отдаётся качеству, а не частоте. Краткие аналитические заметки появляются раз в несколько недель, когда этого требует технический прогресс. White paper привязаны к отраслевым циклам (регуляторные сроки, конференции EPAA).</p></section>"
+    ],
+    [
+      ">About EPAA</p>",
+      ">Об EPAA</p>"
+    ],
+    [
+      "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
+      "<p class=\"book-about\"><strong>Emerging Payments Association Asia (EPAA)</strong> — отраслевая ассоциация платёжной индустрии Азиатско-Тихоокеанского региона, объединяющая банки, процессоры, финтех-компании и регуляторов вокруг структурных вопросов, общих для всего сектора."
+    ],
+    [
+      ">Quantum-Safe Payments: Why the Payments Industry Must Act Now<",
+      ">Квантово-устойчивые платежи: почему индустрия должна действовать сейчас<"
+    ],
+    [
+      ">Accelerating Real-Time Speech Recognition with OpenAI Whisper and Metal Performance Shaders on macOS<",
+      ">Ускорение распознавания речи в реальном времени с OpenAI Whisper и Metal Performance Shaders на macOS<"
+    ],
+    [
+      ">Recent research and analysis<",
+      ">Свежие исследования и аналитика<"
+    ],
+    [
+      "September 2025 &middot; Emerging Payments Association Asia \\(EPAA\\)",
+      "Сентябрь 2025 &middot; Emerging Payments Association Asia (EPAA)"
+    ],
+    [
+      ">Quantum computing threatens the cryptographic foundations[^<]+",
+      ">Квантовые вычисления угрожают криптографическим основам финансовых услуг. Платежи — от расчётов в реальном времени до трансграничных — опираются на защиту, которую квантовые вычисления в конечном счёте сделают устаревшей. В этом white paper EPAA изложено, почему индустрия должна действовать уже сейчас."
+    ],
+    [
+      "2024 &middot; Independent Research &middot;",
+      "2024 &middot; Независимое исследование &middot;"
+    ],
+    [
+      ">This independent research paper presents[^<]+",
+      ">Этот независимый исследовательский отчёт представляет оптимизацию распознавания речи в реальном времени на macOS с использованием OpenAI Whisper и Metal Performance Shaders, демонстрируя измеримый выигрыш в задержке и энергоэффективности."
+    ],
+    [
+      ">License &amp; pricing<",
+      ">Лицензия и цена<"
+    ],
+    [
+      ">One copy per buyer<",
+      ">Одна копия на покупателя<"
+    ],
+    [
+      ">Questions\\?\\s*<span class=\"qa-headline-soft\">Answers\\.</span>",
+      ">Вопросы?<span class=\"qa-headline-soft\"> Ответы.</span>"
+    ],
+    [
+      ">Questions\\? Answers\\.</h2>",
+      ">Вопросы? Ответы.</h2>"
+    ],
+    [
+      ">Questions\\? Answers\\.<",
+      ">Вопросы? Ответы.<"
+    ],
+    [
+      ">Are the white papers free to read\\?</summary>",
+      ">White paper доступны для бесплатного чтения?</summary>"
+    ],
+    [
+      ">May I cite or quote from these papers\\?</summary>",
+      ">Могу ли я ссылаться или цитировать эти материалы?</summary>"
+    ],
+    [
+      ">Who is the intended audience\\?</summary>",
+      ">Кому адресованы эти публикации?</summary>"
+    ],
+    [
+      ">Can I commission a paper or speak at an event\\?</summary>",
+      ">Могу ли я заказать исследование или пригласить Вас на мероприятие?</summary>"
+    ],
+    [
+      ">How do I follow new publications\\?</summary>",
+      ">Как следить за новыми публикациями?</summary>"
+    ],
+    [
+      ">Where can I follow new releases\\?</summary>",
+      ">Где можно следить за новыми выпусками?</summary>"
+    ],
+    [
+      "(<summary[^>]*>White paper доступны для бесплатного чтения\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>White paper EPAA <em>Quantum-Safe Payments</em> доступен для бесплатной загрузки на <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. Независимый исследовательский отчёт о распознавании речи в реальном времени с OpenAI Whisper и Metal Performance Shaders предоставляется по лицензии и доступен к индивидуальной покупке за 49,00 $ (английский язык, PDF, ~95 КБ). Одна копия на покупателя; загрузки только для личного использования, без права перераспространения.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Могу ли я ссылаться или цитировать эти материалы\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Да. Короткие цитаты с указанием авторства приветствуются в рамках добросовестного использования. Для публикаций EPAA указывайте EPAA в качестве издателя с упоминанием рабочей группы, года и URL PDF. Для независимых исследовательских отчётов используйте формат: <em>Rousseau, S. (год). Название. Самопубликация.</em> с указанием канонического URL. Для воспроизведения иллюстраций или объёмных фрагментов, пожалуйста, <a href=\"/ru/kontakty/\">свяжитесь со мной</a> заранее.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Кому адресованы эти публикации\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Директорам по платежам, CISO и старшим архитекторам банков первого эшелона, центральных банков, операторов платёжных систем и владельцев схем. Прикладные исследования адресованы инженерам и продуктовым руководителям, создающим решения на основе больших языковых моделей, ИИ на устройстве и квантово-устойчивой криптографии. Каждый материал предполагает экспертизу в предметной области и опускает базовые сведения, которыми практикующий специалист уже владеет.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Могу ли я заказать исследование или пригласить Вас на мероприятие\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Да — по отдельной договорённости. Заказные исследования охватывают оптовые платежи, миграцию на ISO 20022, постквантовую криптографию для финансовых услуг и прикладной ИИ в банковском деле. Выступления на отраслевых конференциях, форумах центральных банков и круглых столах регуляторов рассматриваются индивидуально. Используйте <a href=\"/ru/kontakty/\">форму обратной связи</a>, указав тему, аудиторию и сроки.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Как следить за новыми публикациями\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Новые статьи и аналитические заметки в первую очередь анонсируются через <a href=\"/ru/rss.xml\">RSS-ленту</a> сайта и рассылку <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>, охватывающую постквантовую криптографию, политику центральных банков и дорожную карту миграции основных платёжных схем. Без спама — только новые материалы.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Где можно следить за новыми выпусками\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Подпишитесь на <a href=\"/ru/rss.xml\">RSS-ленту</a> или подпишитесь на меня в <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a>, чтобы получать уведомления о новых публикациях.</p></section>"
+    ],
+    [
+      ">Browse all projects<",
+      ">Просмотреть все проекты<"
+    ],
+    [
+      ">Three areas of practice\\.\\s*<span",
+      ">Три направления практики. <span"
+    ],
+    [
+      ">One philosophy\\.</span>",
+      ">Одна философия.</span>"
+    ],
+    [
+      ">WHAT IS INSIDE<",
+      ">СОДЕРЖИМОЕ<"
+    ],
+    [
+      ">OPEN SOURCE FOR FINANCIAL SERVICES<",
+      ">OPEN SOURCE ДЛЯ ФИНАНСОВЫХ УСЛУГ<"
+    ],
+    [
+      ">Payments and settlement\\.<",
+      ">Платежи и расчёты.<"
+    ],
+    [
+      ">Post-quantum cryptography\\.<",
+      ">Постквантовая криптография.<"
+    ],
+    [
+      ">Tooling and infrastructure\\.<",
+      ">Инструменты и инфраструктура.<"
+    ],
+    [
+      ">Applied AI\\.<",
+      ">Прикладной ИИ.<"
+    ],
+    [
+      ">Explore payments tools\\s+<",
+      ">Изучить инструменты платежей <"
+    ],
+    [
+      ">Explore quantum-safe libraries\\s+<",
+      ">Изучить квантово-устойчивые библиотеки <"
+    ],
+    [
+      ">Explore developer tools\\s+<",
+      ">Изучить инструменты разработчика <"
+    ],
+    [
+      ">Explore PQC tools\\s+<",
+      ">Изучить инструменты PQC <"
+    ],
+    [
+      ">Explore AI tools\\s+<",
+      ">Изучить инструменты ИИ <"
+    ],
+    [
+      ">Authored & maintained<",
+      ">Авторские и поддерживаемые<"
+    ],
+    [
+      ">Authored &amp; maintained<",
+      ">Авторские и поддерживаемые<"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">Open source для будущего финансов.<"
+    ],
+    [
+      "<p class=\"setup-card-body\">ISO 20022 <strong>pain\\.001</strong> and <strong>pacs\\.008</strong> toolkits[^<]*\\.[^<]*\\.</p>",
+      "<p class=\"setup-card-body\">Инструменты ISO 20022 <strong>pain.001</strong> и <strong>pacs.008</strong>, парсинг банковских выписок и библиотеки Rust для миграции на структурированные трансграничные сообщения. Созданы для SWIFT, SEPA и платёжных схем реального времени.</p>"
+    ],
+    [
+      "<p class=\"setup-card-body\">Rust implementations of <strong>CRYSTALS-Kyber</strong>[^<]*\\.[^<]*\\.</p>",
+      "<p class=\"setup-card-body\">Реализации <strong>CRYSTALS-Kyber</strong> на Rust (NIST FIPS&nbsp;203), примитивы хеширования и квантово-устойчивые строительные блоки. Защита, выходящая за рамки эпохи RSA и эллиптической кривой в финансовой аутентификации.</p>"
+    ],
+    [
+      "<p class=\"setup-card-body\">Open-source Rust libraries for serialisation[\\s\\S]+?shippable\\.</p>",
+      "<p class=\"setup-card-body\">Библиотеки Rust с открытым исходным кодом для сериализации, журналирования, генерации кода, даты и времени. Плюс <strong>Static Site Generator</strong> (SSG), который собирает этот сайт, и среда разработчика, делающая его пригодным к поставке.</p>"
+    ],
+    [
+      ">ISO 20022 tooling for the global migration\\. Pain\\.001 file generation, pacs\\.008 cross-border credit transfers, and structured bank-statement parsing\\.<",
+      ">Инструменты ISO 20022 для глобальной миграции. Генерация файлов Pain.001, трансграничные кредитовые переводы pacs.008 и структурированный парсинг банковских выписок.<"
+    ],
+    [
+      ">Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication\\.<",
+      ">Реализации CRYSTALS-Kyber на Rust, примитивы хеширования и квантово-устойчивые строительные блоки для аутентификации финансового уровня.<"
+    ],
+    [
+      ">Applied artificial intelligence\\.<",
+      ">Прикладной искусственный интеллект.<"
+    ],
+    [
+      ">Open-source AI projects applying speech recognition, natural language, and large language models to real-world finance and productivity problems\\.<",
+      ">Open-source проекты в области ИИ, применяющие распознавание речи, обработку естественного языка и большие языковые модели к реальным задачам финансов и продуктивности.<"
+    ],
+    [
+      ">A Python library that automates ISO 20022 pain\\.001 payment file creation from CSV or SQLite\\. Built for the global migration to structured cross-border messages\\.<",
+      ">Библиотека на Python, автоматизирующая создание платёжных файлов ISO 20022 pain.001 из CSV или SQLite. Создана для глобальной миграции на структурированные трансграничные сообщения.<"
+    ],
+    [
+      ">Generate, validate, and deliver ISO 20022 pacs\\.008 payment messages for FI-to-FI customer credit transfers\\. JSON Schema \\+ XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.<",
+      ">Генерация, валидация и доставка платёжных сообщений ISO 20022 pacs.008 о клиентских кредитовых переводах FI-to-FI. Валидация JSON Schema + XSD, IBAN для 75 стран, маскирование персональных данных в соответствии с GDPR/PCI-DSS.<"
+    ],
+    [
+      ">A finance-grade Python toolkit that turns multi-format bank statements into structured data — for the realities of real-world statement files and the audit demands of regulated environments\\.<",
+      ">Финансовый инструментарий Python, превращающий многоформатные банковские выписки в структурированные данные — с учётом реалий файлов выписок и требований аудита регулируемых сред.<"
+    ],
+    [
+      ">A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting\\. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers\\.<",
+      ">Приложение на Rust для оптимизации распределения денежных средств по сложным фондовым структурам с использованием прогнозирования на основе ИИ. Предназначено для задач казначейства, фондового учёта и аллокации активов в банках и asset-менеджерах.<"
+    ],
+    [
+      ">A Rust library for generating and manipulating QR-code images in multiple formats\\. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows\\.<",
+      ">Библиотека Rust для генерации и обработки изображений QR-кодов в различных форматах. Прямые платёжные сценарии: EPC QR-коды для SEPA Credit Transfers, платёжные QR-ссылки для торгового сбора и потоки повышенной аутентификации.<"
+    ],
+    [
+      ">A robust Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for general-purpose post-quantum key encapsulation\\.<",
+      ">Надёжная реализация CRYSTALS-Kyber на Rust — стандарт NIST FIPS 203 для постквантовой инкапсуляции ключей общего назначения.<"
+    ],
+    [
+      ">Secure hash and digest algorithms for password encryption and verification, designed with a quantum-resistant posture for the post-PQC era\\.<",
+      ">Безопасные алгоритмы хеширования и дайджеста для шифрования и проверки паролей, спроектированные с квантово-устойчивой стойкостью для пост-PQC эпохи.<"
+    ],
+    [
+      ">A fast, simple, and powerful cross-platform CLI for generating strong, unique, and random passwords backed by audited cryptographic primitives\\.<",
+      ">Быстрый, простой и мощный кроссплатформенный CLI для генерации надёжных, уникальных и случайных паролей, основанный на аудированных криптографических примитивах.<"
+    ],
+    [
+      ">An advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching\\. Built for both personal and executive use\\.<",
+      ">Продвинутый голосовой помощник на базе OpenAI GPT для естественных взаимодействий, резюме PDF и эффективного кэширования. Подходит для личного и руководительского использования.<"
+    ],
+    [
+      ">Convert audio to text in real-time using advanced AI speech recognition\\. Designed to unlock actionable insights from audio data and enhance customer and[^<]+",
+      ">Преобразование аудио в текст в реальном времени с помощью продвинутого распознавания речи на базе ИИ. Создан для извлечения полезных выводов из аудиоданных и улучшения клиентского и операционного опыта.<"
+    ],
+    [
+      ">Featured · Python · ISO 20022<",
+      ">Избранное · Python · ISO 20022<"
+    ],
+    [
+      ">Python · ISO 20022<",
+      ">Python · ISO 20022<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · Финансы<"
+    ],
+    [
+      ">Rust · Treasury · AI<",
+      ">Rust · Казначейство · ИИ<"
+    ],
+    [
+      ">Rust · Payments QR<",
+      ">Rust · Платёжные QR<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · Квантовые<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · Безопасность<"
+    ],
+    [
+      ">AI · Voice<",
+      ">ИИ · Голос<"
+    ],
+    [
+      ">AI · Speech<",
+      ">ИИ · Речь<"
+    ],
+    [
+      ">PAYMENTS<",
+      ">ПЛАТЕЖИ<"
+    ],
+    [
+      ">POST-QUANTUM CRYPTOGRAPHY<",
+      ">ПОСТКВАНТОВАЯ КРИПТОГРАФИЯ<"
+    ],
+    [
+      ">AI AND VOICE<",
+      ">ИИ И ГОЛОС<"
+    ],
+    [
+      ">DEVELOPER TOOLING<",
+      ">ИНСТРУМЕНТЫ РАЗРАБОТЧИКА<"
+    ],
+    [
+      ">OPEN-SOURCE RUST<",
+      ">RUST OPEN SOURCE<"
+    ],
+    [
+      ">WEB AND DEVELOPER ENVIRONMENT<",
+      ">ВЕБ И СРЕДА РАЗРАБОТЧИКА<"
+    ],
+    [
+      ">Tooling\\.<",
+      ">Инструменты.<"
+    ],
+    [
+      ">Rust libraries and tooling\\.</h2>",
+      ">Библиотеки и инструменты Rust.</h2>"
+    ],
+    [
+      "<p class=\"cat-lede\">Open-source Rust projects across serialisation, logging, code generation, math, and developer tooling — including the static site generator behind this site\\.</p>",
+      "<p class=\"cat-lede\">Open-source проекты на Rust — сериализация, журналирование, генерация кода, математика и инструменты разработчика — включая статический генератор сайтов, на котором работает этот сайт.</p>"
+    ],
+    [
+      ">Web, templates and environment\\.</h2>",
+      ">Веб, шаблоны и среда.</h2>"
+    ],
+    [
+      "<p class=\"cat-lede\">Starter templates, two industry-focused publications, a CSS framework, and the dotfiles that keep a development environment reproducible\\.</p>",
+      "<p class=\"cat-lede\">Стартовые шаблоны, две отраслевые публикации, CSS-фреймворк и dotfiles, обеспечивающие воспроизводимость среды разработки.</p>"
+    ],
+    [
+      ">What licence are these projects released under\\?</summary>",
+      ">Под какой лицензией публикуются эти проекты?</summary>"
+    ],
+    [
+      ">Are these projects production-ready\\?</summary>",
+      ">Готовы ли эти проекты к продуктивному использованию?</summary>"
+    ],
+    [
+      ">How can I contribute or report an issue\\?</summary>",
+      ">Как я могу внести вклад или сообщить о проблеме?</summary>"
+    ],
+    [
+      ">Can I use these libraries in a regulated banking environment\\?</summary>",
+      ">Можно ли использовать эти библиотеки в регулируемой банковской среде?</summary>"
+    ],
+    [
+      ">Do you offer commercial support or consulting\\?</summary>",
+      ">Предоставляете ли Вы коммерческую поддержку или консалтинг?</summary>"
+    ],
+    [
+      ">How do I follow new releases\\?</summary>",
+      ">Как следить за новыми выпусками?</summary>"
+    ],
+    [
+      "(<summary[^>]*>Под какой лицензией публикуются эти проекты\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Все проекты публикуются под лицензией <strong>Apache-2.0</strong>. Файл <code>LICENSE</code> в корне каждого репозитория является источником истины.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Готовы ли эти проекты к продуктивному использованию\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Зависит от проекта. Библиотеки с пометкой <em>v1.x</em> стабилизированы и протестированы под нагрузкой; пре-v1 являются прочной основой, но могут ещё развиваться. README каждого репозитория уточняет текущий статус; если Вам нужна конкретная гарантия для продуктивного использования, <a href=\"/ru/kontakty/\">свяжитесь со мной</a>.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Как я могу внести вклад или сообщить о проблеме\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>У каждого проекта есть публичный GitHub-репозиторий на <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Откройте issue с описанием проблемы (минимальный воспроизводимый пример приветствуется) или pull request, связанный с issue. Вклады регулируются <em>Developer Certificate of Origin</em> и требуют подписанных коммитов.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Можно ли использовать эти библиотеки в регулируемой банковской среде\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Да, с обычными мерами предосторожности. Библиотеки являются независимыми open-source разработками, а не регулируемым продуктом. Применяйте обычные процессы supply-chain, безопасности и ревью зависимостей — vendoring через внутреннее зеркало, сканирование SBOM, привязка по Git SHA или криптографическому отпечатку — перед любым продуктивным развёртыванием в платёжной инфраструктуре.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Предоставляете ли Вы коммерческую поддержку или консалтинг\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Да, по отдельному согласованию. Проекты охватывают миграцию ISO&nbsp;20022, дорожные карты постквантовой миграции и прикладной ИИ для финансовых услуг. <a href=\"/ru/kontakty/\">Свяжитесь со мной</a> с кратким брифом, сроками и возможными ограничениями.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Как следить за новыми выпусками\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>О каждой датированной статье на сайте сообщается через <a href=\"/ru/rss.xml\">RSS-ленту</a> и рассылку <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Отдельные репозитории также публикуют релизы на GitHub, на которые можно подписаться напрямую.</p></section>"
+    ],
+    [
+      ">GET IN TOUCH<",
+      ">СВЯЗАТЬСЯ СО МНОЙ<"
+    ],
+    [
+      ">Have an idea\\? Let's build it\\.<",
+      ">Есть идея? Воплотим её вместе.<"
+    ],
+    [
+      ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
+      ">Open-source сотрудничество, заказная инженерия или просто разговор о будущем платежей. Как Вам удобнее.<"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">FEATURED</p>",
+      "<p class=\"newsroom-kicker\">ИЗБРАННОЕ</p>"
+    ],
+    [
+      ">Latest Music</h2>",
+      ">Последняя музыка</h2>"
+    ],
+    [
+      ">Latest playlist</h2>",
+      ">Последний плейлист</h2>"
+    ],
+    [
+      ">Soulful, jazz and downtempo</h2>",
+      ">Соул, джаз и даунтемпо</h2>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">MORNING & MOOD</p>",
+      "<p class=\"newsroom-kicker\">УТРО И НАСТРОЕНИЕ</p>"
+    ],
+    [
+      ">Morning, mood and chill</h2>",
+      ">Утро, настроение и чилл</h2>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">ELECTRONIC</p>",
+      "<p class=\"newsroom-kicker\">ЭЛЕКТРОНИКА</p>"
+    ],
+    [
+      ">Electronic, house and techno</h2>",
+      ">Электроника, хаус и техно</h2>"
+    ],
+    [
+      ">Pop, rock and alternative</h2>",
+      ">Поп, рок и альтернатива</h2>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">FOCUS</p>",
+      "<p class=\"newsroom-kicker\">КОНЦЕНТРАЦИЯ</p>"
+    ],
+    [
+      ">Focus and productivity</h2>",
+      ">Концентрация и продуктивность</h2>"
+    ],
+    [
+      ">Smooth Jazz, Neo Soul, and laid-back grooves[^<]+",
+      ">Smooth Jazz, Neo Soul и расслабленные грувы. Плейлисты для тех моментов, когда день просит замедлиться."
+    ],
+    [
+      ">This page has a comprehensive list[^<]+",
+      ">На этой странице представлена подборка наиболее популярных и признанных критиками плейлистов Spotify, охватывающих широкий спектр жанров. Любите ли Вы джаз, соул, хип-хоп или электронную музыку — здесь найдётся плейлист на Ваш вкус."
+    ],
+    [
+      ">Step into the harmonious realm of TETRA\\.[^<]+",
+      ">Войдите в гармоничный мир TETRA. Эйфорический плейлист, призванный возвысить дух и наполнить душу радостью."
+    ],
+    [
+      ">Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
+      ">Расслабьтесь и почувствуйте суть лета с этой подборкой Jazz, Soul, R&amp;B и Neo Soul."
+    ],
+    [
+      ">A deep dive into the quintessential collection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
+      ">Глубокое погружение в квинтэссенцию Jazz, Soul, R&amp;B и Neo Soul."
+    ],
+    [
+      ">Take a break from a busy day and relax with soothing nu jazz and downtempo beats\\.",
+      ">Сделайте паузу в насыщенный день и расслабьтесь с успокаивающим nu jazz и downtempo."
+    ],
+    [
+      ">Soulful tracks with a fashion-forward vibe\\. Music to set the tone for a productive and stylish day\\.",
+      ">Соул-треки с прогрессивным fashion-настроением. Музыка, задающая тон продуктивному и стильному дню."
+    ],
+    [
+      ">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms\\.",
+      ">Празднуйте радость жизни и погрузитесь в мир ярких эмоций, насыщенных красок и соул-ритмов."
+    ],
+    [
+      ">Laid-back beats, house-influenced grooves and new deep house tracks\\.",
+      ">Расслабленные биты, грувы с оттенками хауса и свежие deep house треки."
+    ],
+    [
+      ">Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience\\.",
+      ">Бесшовное сочетание funky disco, house, French touch и других жанров в ультрастильное и энергичное музыкальное путешествие."
+    ],
+    [
+      ">A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke\\.",
+      ">Звуковое путешествие с Nu-Disco, French House, Electro и Disco House от таких исполнителей, как Madeon и Fred Falke."
+    ],
+    [
+      ">Laid-back beats, hip-hop-influenced grooves and new indie pop tracks\\.",
+      ">Расслабленные биты, грувы с оттенками хип-хопа и свежие indie pop треки."
+    ],
+    [
+      ">Original Hip Hop, Rap and R(?:&amp;|&)B Flavor Sessions\\.",
+      ">Оригинальные сессии с привкусом Hip Hop, Rap и R&amp;B."
+    ],
+    [
+      ">Brace yourself for hardcore rap and hip hop tracks\\.",
+      ">Готовьтесь к жёсткому рэпу и хардкорному хип-хопу."
+    ],
+    [
+      ">A few of the favourite hip-hop gems\\.",
+      ">Несколько любимых хип-хоп жемчужин."
+    ],
+    [
+      ">Soulful beats and thoughtful lyrics\\. A captivating look into the world of contemporary hip hop, R(?:&amp;|&)B and rap\\.",
+      ">Соул-биты и продуманные тексты. Захватывающий взгляд на мир современного хип-хопа, R&amp;B и рэпа."
+    ],
+    [
+      ">Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats\\.",
+      ">Расслабленные настроения и мягкие ритмы в этом великолепном плейлисте Lo-Fi Hip Hop."
+    ],
+    [
+      ">Celebrate the diverse heritage of African music\\. From the soulful rhythms of Wassoulou to the lively beats of Londonko\\.",
+      ">Откройте для себя многообразие африканской музыки. От соул-ритмов Wassoulou до живых битов Londonko."
+    ],
+    [
+      "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
+      "aria-label=\"Тег: \\1, \\2 статей\""
+    ],
+    [
+      "(\\(\\d+) Posts\\)",
+      "\\1 статей)"
+    ],
+    [
+      ">Featured Tags \\((\\d+)\\)</h2>",
+      ">Избранные теги (\\1)</h2>"
+    ],
+    [
+      ">Featured Tags<",
+      ">Избранные теги<"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"/ru/kontakty/\">Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/ru/kontakty/\">Связаться со мной</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">Связаться со мной</a>"
+    ],
+    [
+      "Made with Static Site Generator: Rust-Powered SSG",
+      "Сделано со Static Site Generator: SSG на базе Rust"
+    ],
+    [
+      "Static Site Generator is a Rust-based static site generator built for performance, accessibility and SEO\\. Lightning-fast builds with first-class JSON-LD\\.",
+      "Static Site Generator — статический генератор сайтов на Rust, созданный для производительности, доступности и SEO. Молниеносные сборки с первоклассной поддержкой JSON-LD."
+    ],
+    [
+      "Website created with Static Site Generator \\(SSG\\)",
+      "Сайт создан со Static Site Generator (SSG)"
+    ],
+    [
+      "The Static Site Generator \\(SSG\\) is a lightning-fast tool for Search Engine Optimisation \\(SEO\\) and compliance to Accessibility Standards\\.",
+      "Static Site Generator (SSG) — молниеносный инструмент для SEO и соответствия стандартам доступности."
+    ],
+    [
+      "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
+      "Указатель тем и тегов: ИИ, платежи, квантовые технологии, Rust OSS"
+    ],
+    [
+      "Browse Sebastien Rousseau's site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more\\.",
+      "Просмотр сайта Sebastien Rousseau по темам и тегам: ИИ, платежи, ISO 20022, постквантовая криптография, Rust open source и многое другое."
+    ],
+    [
+      "Website Accessibility Statement — Standards &amp; Contact",
+      "Декларация о доступности сайта — стандарты и контакты"
+    ],
+    [
+      "This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility\\.",
+      "В этом заявлении изложена доступность нашего сайта, шаги по её улучшению и способы связи с нами по вопросам веб-доступности."
+    ],
+    [
+      "Privacy Statement — How Your Data Is Collected &amp; Used",
+      "Заявление о конфиденциальности — сбор и использование данных"
+    ],
+    [
+      "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website",
+      "Эта страница информирует Вас о нашей политике в отношении сбора, использования и раскрытия персональных данных при использовании Сайта"
+    ],
+    [
+      "Let's Start a Conversation That Will Make a Real Difference",
+      "Начнём разговор, который принесёт реальные изменения"
+    ],
+    [
+      "Have a question or comment\\? Please contact me using the form below\\. I am always happy to hear from you and will respond as soon as possible\\.",
+      "Есть вопрос или комментарий? Свяжитесь со мной через форму ниже. Я всегда рад получать сообщения и отвечу в кратчайшие сроки."
+    ],
+    [
+      "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
+      "Условия использования сайта — Sebastien Rousseau"
+    ],
+    [
+      "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations\\.",
+      "Получая доступ к этому сайту, Вы признаёте и соглашаетесь соблюдать настоящие Условия использования и все применимые законы и нормы."
+    ],
+    [
+      ">Latest research<",
+      ">Свежие исследования<"
+    ],
+    [
+      ">Read latest research<",
+      ">Читать последние исследования<"
+    ],
+    [
+      ">Featured articles<",
+      ">Избранные статьи<"
+    ],
+    [
+      ">All articles<",
+      ">Все статьи<"
+    ],
+    [
+      ">Read more<",
+      ">Читать далее<"
+    ],
+    [
+      ">Read full article<",
+      ">Читать статью полностью<"
+    ],
+    [
+      ">Newest first<",
+      ">Сначала новые<"
+    ],
+    [
+      ">Oldest first<",
+      ">Сначала старые<"
+    ],
+    [
+      ">By topic<",
+      ">По теме<"
+    ],
+    [
+      ">All topics<",
+      ">Все темы<"
+    ],
+    [
+      ">By tag<",
+      ">По тегу<"
+    ],
+    [
+      ">All tags<",
+      ">Все теги<"
+    ],
+    [
+      ">Published<",
+      ">Опубликовано<"
+    ],
+    [
+      ">Updated<",
+      ">Обновлено<"
+    ],
+    [
+      ">Open source<",
+      ">Open source<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">Авторские и поддерживаемые<"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">Open source для будущего финансов.<"
+    ],
+    [
+      ">A portfolio of",
+      ">Портфель"
+    ],
+    [
+      ">Start a conversation<",
+      ">Начать разговор<"
+    ],
+    [
+      ">Drop me a line<",
+      ">Напишите мне<"
+    ],
+    [
+      ">Learn more<",
+      ">Узнать больше<"
+    ],
+    [
+      ">Subscribe<",
+      ">Подписаться<"
+    ],
+    [
+      ">Follow<",
+      ">Подписаться<"
+    ],
+    [
+      ">Latest<",
+      ">Последнее<"
+    ],
+    [
+      "<h1>White Papers (?:&amp;|&) Research</h1>",
+      "<h1>White paper и исследования</h1>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/post-quantum-cryptography/[^\"]*\">Post-Quantum Cryptography</a></h3>",
+      "<h3><a href=\"/ru/temy/post-quantum-cryptography/index.html\">Постквантовая криптография</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/iso-20022-payments/[^\"]*\">ISO 20022 &amp; Payments</a></h3>",
+      "<h3><a href=\"/ru/temy/iso-20022-payments/index.html\">ISO 20022 и платежи</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/applied-ai-banking/[^\"]*\">Applied AI in Banking</a></h3>",
+      "<h3><a href=\"/ru/temy/applied-ai-banking/index.html\">Прикладной ИИ в банковском деле</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/rust-open-source/[^\"]*\">Rust &amp; Open Source</a></h3>",
+      "<h3><a href=\"/ru/temy/rust-open-source/index.html\">Rust open source</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/blockchain-digital-assets/[^\"]*\">Blockchain &amp; Digital Assets</a></h3>",
+      "<h3><a href=\"/ru/temy/blockchain-digital-assets/index.html\">Блокчейн и цифровые активы</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">Tracks to kick off the day or shift the room\\. Fashion\\-forward soul, vivid colour, and laid\\-back energy\\.</p>",
+      "<p class=\"newsroom-lede\">Треки, чтобы начать день или сменить атмосферу. Прогрессивный соул, яркие краски и расслабленная энергия.</p>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">Funky disco, French touch and electro\\. Energetic listening for movement, focus or the dance floor\\.</p>",
+      "<p class=\"newsroom-lede\">Funky disco, French touch и электро. Энергичное прослушивание для движения, концентрации или танцпола.</p>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo\\-Fi\\. The full breadth of beats\\.</p>",
+      "<p class=\"newsroom-lede\">От оригинальных хип-хоп сессий до хардкорного рэпа, современного R&B и Lo-Fi. Полная палитра битов.</p>"
+    ]
+  ]
+}
