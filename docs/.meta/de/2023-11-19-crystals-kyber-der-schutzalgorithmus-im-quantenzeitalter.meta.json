@@ -1,11 +1,11 @@
 {
-  "description": "Wie CRYSTALS-Kyber, ein quantenresistenter Kryptografiealgorithmus, die Welt der Kryptografie verändert und uns auf das Quantenzeitalter vorbereitet.",
-  "banner_alt": "Ein moderner, schlanker Quantencomputer",
+  "title": "CRYSTALS-Kyber: der Schutzalgorithmus im Quantenzeitalter",
   "locale": "de_DE",
   "keywords": "Quantencomputing, quantenresistente Kryptografie, CRYSTALS-Kyber, Kryptografie, Sicherheit, Banken, Finanzen, Verschlüsselung, Datenschutz, Zukunftssicherheit",
-  "language": "de",
   "date": "November 19, 2023",
   "subtitle": "CRYSTALS-Kyber, der NIST-FIPS-203-Standard für die Schlüsselkapselung in der Post-Quanten-Welt",
+  "description": "Wie CRYSTALS-Kyber, ein quantenresistenter Kryptografiealgorithmus, die Welt der Kryptografie verändert und uns auf das Quantenzeitalter vorbereitet.",
+  "banner_alt": "Ein moderner, schlanker Quantencomputer",
   "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
-  "title": "CRYSTALS-Kyber: der Schutzalgorithmus im Quantenzeitalter"
+  "language": "de"
 }

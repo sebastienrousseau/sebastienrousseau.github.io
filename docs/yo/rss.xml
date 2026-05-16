@@ -6,26 +6,51 @@
     <description>Awọn akọle Yorùbá: AI tó wúlò, ìsanwó ISO 20022, kírípítógíráfì lẹ́yìn-kuántọ́mù, àti àtúnṣe ètò ìsanwó ńláńlá.</description>
     <atom:link href="https://sebastienrousseau.com/yo/rss.xml" rel="self" type="application/rss+xml"/>
     <language>yo-NG</language>
-    <lastBuildDate>Sat, 16 May 2026 21:05:20 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 22:36:10 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Gbogbo ẹtọ ti wa ni ipamọ.</copyright>
     <item>
-      <title>The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</title>
+      <title>Ìkọ́lé Ìpìlẹ̀ Ìkùukùu Tó Dára Jùlọ ní 2026: Ìlànà AI-Native, Multi-Cloud, Olùmọ̀-Quantum fún Àwọn Iṣẹ́-Ìnáwó</title>
       <link>https://sebastienrousseau.com/yo/2026-05-21-best-cloud-infrastructure-architecture-2026/</link>
-      <description>Cloud architecture in 2026 has crystallised around six pillars: AI-native infrastructure, intelligent multi-cloud, serverless-first design with WebAssembly at the edge, edge computing, automated security with crypto-agility, and sustainable high-density operations. For banks, the question is whether to consume cloud or design it — under converging pressure from agentic commerce, agentic unit economics, harvest-now-decrypt-later quantum risk, MCP security and algorithmic contagion, cryptographic agent identity, continuous-treasury demands, and the EU AI Act.</description>
+      <description>Ìkọ́lé ìkùukùu (cloud) ní 2026 ti dí kírísítà yí àwọn ọwọ́n mẹ́fà ká: ìpìlẹ̀ AI-native, multi-cloud onílàákàyè, ìpilẹ̀ṣẹ̀ serverless-first pẹ̀lú WebAssembly ní etí, ìṣirò etí (edge computing), ààbò aládàáṣe pẹ̀lú crypto-agility, àti àwọn iṣẹ́ alágbéró tó ní ìpọnjú gíga. Fún àwọn báńkì, ìbéèrè náà ni bóyá láti jẹ ìkùukùu tàbí láti ṣe ìkọ́lé rẹ̀ — lábẹ́ ìtẹ̀mọ́lẹ̀ tó ń dìmúpọ̀ láti agentic commerce, agentic unit economics, ewu quantum harvest-now-decrypt-later, ààbò MCP àti àjàkálẹ̀-ọ̀rọ̀ algorithmic, ìdánimọ̀ olùṣe-iṣẹ́ cryptographic, ìbéèrè continuous-treasury, àti EU AI Act.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-21-best-cloud-infrastructure-architecture-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>cloud architecture 2026</category>
       <category>AI-native infrastructure</category>
       <category>multi-cloud</category>
+      <category>sovereign cloud</category>
+      <category>US CLOUD Act</category>
+      <category>Bleu</category>
+      <category>S3NS</category>
+      <category>AWS European Sovereign Cloud</category>
+      <category>sovereign AI</category>
+      <category>open-weight models</category>
+      <category>Llama 4</category>
+      <category>Mistral</category>
+      <category>confidential computing</category>
       <category>serverless</category>
       <category>edge computing</category>
       <category>WebAssembly</category>
       <category>Wasm</category>
+      <category>eBPF</category>
+      <category>Cilium</category>
+      <category>Tetragon</category>
+      <category>LEO satellite edge</category>
+      <category>Starlink Enterprise</category>
       <category>DevSecOps</category>
       <category>sustainable data centre</category>
+      <category>grid-aware computing</category>
       <category>liquid cooling</category>
+      <category>Small Modular Reactor</category>
+      <category>SMR</category>
+      <category>nuclear power</category>
+      <category>Three Mile Island</category>
+      <category>Kairos Power</category>
+      <category>X-Energy</category>
+      <category>silicon photonics</category>
+      <category>co-packaged optics</category>
+      <category>NVIDIA Spectrum-X</category>
       <category>AWS Bedrock</category>
       <category>Google Vertex AI</category>
       <category>Azure OpenAI Service</category>
@@ -37,6 +62,13 @@
       <category>SPIFFE</category>
       <category>SPIRE</category>
       <category>algorithmic contagion</category>
+      <category>RAG poisoning</category>
+      <category>vector database security</category>
+      <category>data provenance</category>
+      <category>Pinecone</category>
+      <category>Qdrant</category>
+      <category>Weaviate</category>
+      <category>Milvus</category>
       <category>agentic chaos engineering</category>
       <category>data gravity</category>
       <category>egress FinOps</category>
@@ -45,8 +77,13 @@
       <category>continuous treasury</category>
       <category>borderless liquidity</category>
       <category>real-time payments</category>
+      <category>CBDC</category>
+      <category>eCNY</category>
+      <category>DREX</category>
+      <category>e-Rupee</category>
+      <category>BIS Project Agora</category>
+      <category>digital euro</category>
       <category>synthetic data generation</category>
-      <category>confidential computing</category>
       <category>JPMorgan multi-cloud</category>
       <category>Citi modernisation</category>
       <category>graph neural networks</category>
@@ -54,7 +91,14 @@
       <category>harvest now decrypt later</category>
       <category>HNDL</category>
       <category>post-quantum cryptography</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
       <category>crypto-agility</category>
+      <category>quantum key distribution</category>
+      <category>QKD</category>
+      <category>Basel IV</category>
+      <category>cloud concentration risk</category>
+      <category>operational risk RWA</category>
       <category>MCP security</category>
       <category>prompt injection</category>
       <category>supply chain attacks</category>
