@@ -1,0 +1,15 @@
+{
+  "_comment": "Hausa (ha) body-text labels — DRAFT pending native review. Key set MUST stay in sync with _data/i18n/en/labels.json; CI gate test_i18n_labels.py enforces parity.",
+  "Published": "An buga",
+  "Updated": "An sabunta",
+  "min read": "minti karatu",
+  "Previous": "Baya",
+  "Next": "Gaba",
+  "Sources & references": "Tushen bayanai & nassoshi",
+  "About the author": "Game da marubucin",
+  "Topics": "Batutuwa",
+  "Contents": "Abubuwan da ke ciki",
+  "Estimated read time": "Lokacin karatun da aka kiyasta",
+  "Article pagination": "Shafin labarin",
+  "Link to": "Hanyar haɗi zuwa"
+}

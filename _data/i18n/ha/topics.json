@@ -1,0 +1,23 @@
+{
+  "_comment": "Hausa (ha) topic-cluster titles + ledes — DRAFT pending native review. Topic slugs are language-independent; only the displayed name and lede change.",
+  "post-quantum-cryptography": {
+    "title": "Kiriftografi bayan kwantum",
+    "lede": "Kiriftografi mai dogaro da lattice, mizanin NIST PQC, biyan kuɗi mai tsaron kwantum da barazanar “tara yanzu, tafiyar baya”. Bayanan bincike, ɗakunan karatu na buɗaɗɗun tushe da littattafan koyarwar ƙaura don ƙungiyoyin tsaron sabis na kuɗi."
+  },
+  "iso-20022-payments": {
+    "title": "ISO 20022 da Biyan Kuɗi",
+    "lede": "Ƙauran saƙon kuɗi a tsakanin ƙasashe, biyan adireshin tsari, SEPA Instant, SWIFT gpi da hanyoyin biyan kuɗin manyan da suka tallafa wa duka. Kayan aiki, littattafan koyarwa da kalandar tsari."
+  },
+  "applied-ai-banking": {
+    "title": "AI Mai Aiki a Bankin",
+    "lede": "AI mai samar da abu, manyan LLM masu yanayi da yawa, murya da samfuran magana — da yadda suke sake gyara ayyukan banki, kula da abokin ciniki da injiniyan samfur a manyan cibiyoyi."
+  },
+  "rust-open-source": {
+    "title": "Rust da Buɗaɗɗen Tushe",
+    "lede": "Ɗakunan karatu na Rust buɗaɗɗun tushe da na rubuta kuma nake kulawa: logging, samar da kod, kwanan wata da lokaci, mahimman kiriftografi, KEM bisa Kyber da injin tsararraki na shafin yanar gizo na Rust."
+  },
+  "blockchain-digital-assets": {
+    "title": "Blockchain da Kayan Dijital",
+    "lede": "Bitcoin, asalin blockchain, alamomin ERC-20, stablecoin da tsarin tsari da ke kewaye da hanyoyin biyan kuɗi waɗanda kayan dijital ke goyon baya."
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "_comment": "Hausa (ha) inline chrome patches — DRAFT pending native review.",
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"Yi rajistar wasiƙar labarai\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum — bayanan bincike kan biyan kuɗi, AI da kiriftografi bayan kwantum. Babu spam."
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"kai@banki.com.ng\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"Yi rajistar wasiƙar labarai — sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">Yi rajista</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">Tsallaka zuwa babban abun ciki</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"Maɓallin kewayawa\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"Maɓallin kewayawa\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"Babban kewayawa\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"Kunna jigon duhu\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"Kunna jigon haske\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"Canza jigo\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"Bincika (Cmd ko Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"Bincika (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"Tuntube mu\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Tuntube mu ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">Tuntube mu</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Sebastien Rousseau gida\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/ha/game-da-mu/index.html\">About</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/ha/takardun-bincike/index.html\">Papers</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/ha/batutuwa/index.html\">Batutuwa</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/ha/ayyukan/index.html\">Projects</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/ha/labarai/index.html\">Articles</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/ha/tuntube-mu/index.html\">Contact</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/ha/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/ha/jerin-waka/index.html\">Playlists</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"Komawa sama\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">Rubuce-rubuce</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">Aiki</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">Tuntuɓa</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/ha/game-da-mu/index.html\">About</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/ha/an-yi-da-static-site-generator/index.html\">Made with Static Site Generator</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/ha/takardun-bincike/index.html\">Papers</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/ha/tags/index.html\">Tags</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/ha/ayyukan/index.html\">Projects</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/ha/jerin-waka/index.html\">Playlists</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/ha/tuntube-mu/index.html\">Contact</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/ha/labarai/index.html\">Articles</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"Hanyoyin sadarwa na zamantakewa\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau a kan "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau a kan "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"Hoton Sebastien Rousseau\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Copyright 2007 - 2026 - Sebastien Rousseau. An kiyaye duk hakkokin."
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/ha/isar-da-hannu/index.html\">Accessibility</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/ha/sirri/index.html\">Privacy</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/ha/sharudda/index.html\">Terms</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"Bincika cikin takardu...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"Bincika\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> rufe"
+    ],
+    [
+      "navigate</span>",
+      "kewayawa</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> buɗe"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>Bincika</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"Harshe\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"HA, Canza harshe\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"Canza harshe\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"Yana zuwa\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">HA</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"Feed na Atom\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"Feed na RSS\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"Taƙaitaccen labari\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>Mahimman Bayanai</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>Karatun da ke da alaƙa:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">Karatun da ke da alaƙa</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">Bita ta ƙarshe <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"Game da marubucin\""
+    ],
+    [
+      ">Full profile</a>",
+      ">Cikakken bayanin martaba</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"Hoton Sebastien Rousseau\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">Tuntuɓa</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Fara tattaunawa</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/ha/labarai/index.html\">Karanta sabbin bincike</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/ha/tuntube-mu/index.html\">Tuntube mu</a>"
+    ]
+  ]
+}
