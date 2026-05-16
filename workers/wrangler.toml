@@ -1,0 +1,13 @@
+name = "lang-router"
+main = "lang-router.js"
+compatibility_date = "2026-05-16"
+# This Worker is published manually via the Cloudflare dashboard, but the
+# config lives in-repo so the deployment is reproducible.
+#
+# Routes (set in the Cloudflare dashboard, not via wrangler, so they survive
+# repo moves):
+#   - sebastienrousseau.com/*
+#   - www.sebastienrousseau.com/*
+#
+# The Worker pre-empts the GitHub Pages origin: if it issues a 302 it never
+# reaches origin; otherwise the request passes through unchanged.

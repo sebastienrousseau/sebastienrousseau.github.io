@@ -40,10 +40,10 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-8iF9NA7ZXBNIF5BqMVkDk7ch9CxYLCdhqcdx6NqLlpI=' 'sha256-Khjp0Mdxq8SQKwYbUam6023SQ8IED5L1HFTnyeA+eS8=' 'sha256-qnnDEBBWEiO60OOejgPDmUhM0isnbVKFLYkD5w0Ptd4=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-8iF9NA7ZXBNIF5BqMVkDk7ch9CxYLCdhqcdx6NqLlpI=' 'sha256-CCJvbxrnyJ8A5ihEdIx6dAZF7Tj+8emVopeuR19pylQ=' 'sha256-qnnDEBBWEiO60OOejgPDmUhM0isnbVKFLYkD5w0Ptd4=' 'sha256-s1UK6DbJkHIeCIggt3kgSOKYA69WIhZ4l42bc8s9M4k=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
-        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
-        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://www.googletagmanager.com https://i.scdn.co;
         style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
         media-src 'self' https://p.scdn.co https://*.scdn.co;" />
@@ -322,5 +322,5 @@
 </div>
 <script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
 </div>
-</body>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"LibMake：减少重复任务、构建高质量 Rust 库的代码生成器","url":"https://sebastienrousseau.com/zh-hans/2023-10-26-libmake-rust-ku-de-daima-shengchengqi/","inLanguage":"zh-Hans","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"LibMake, Rust 库, 代码生成器, 模板, 脚手架, 最佳实践, GitHub Actions, 开源, Cargo, CLI","programmingLanguage":"Rust"}</script></body>
 </html>

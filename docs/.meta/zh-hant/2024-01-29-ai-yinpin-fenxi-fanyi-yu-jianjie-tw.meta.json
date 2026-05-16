@@ -1,11 +1,11 @@
 {
-  "banner_alt": "極簡現代化的企業辦公室",
-  "language": "zh-Hant",
-  "date": "January 29, 2024",
-  "title": "AI 驅動的音訊分析、翻譯與洞察",
-  "subtitle": "探索由 Azure AI 驅動的 Audio Analyser 如何變革語音轉文字、文字分析與翻譯，提取可執行洞察",
   "keywords": "Audio Analyser, Azure AI, 語音轉文字, 自然語言處理, 情感分析, 多語言翻譯, 客戶服務, 市場研究, 醫療, 金融",
+  "date": "January 29, 2024",
+  "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
   "locale": "zh_TW",
+  "language": "zh-Hant",
+  "title": "AI 驅動的音訊分析、翻譯與洞察",
   "description": "Audio Analyser 藉助 Microsoft Azure AI 實現音訊轉錄、情感分析、翻譯與可執行洞察，加速決策。",
-  "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp"
+  "banner_alt": "極簡現代化的企業辦公室",
+  "subtitle": "探索由 Azure AI 驅動的 Audio Analyser 如何變革語音轉文字、文字分析與翻譯，提取可執行洞察"
 }

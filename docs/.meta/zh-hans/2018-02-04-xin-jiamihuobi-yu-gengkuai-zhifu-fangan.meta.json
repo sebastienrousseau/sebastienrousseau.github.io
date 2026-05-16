@@ -1,11 +1,11 @@
 {
-  "language": "zh-Hans",
   "date": "February 4, 2018",
-  "subtitle": "技术创新、地缘政治变化与可持续金融共同塑造的全球金融演进新篇章",
   "title": "推出新的加密货币与面向未来的更快支付方案",
-  "banner": "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp",
-  "locale": "zh_CN",
-  "description": "Express Transaction Credits Platform（EXTC）网络通过分布式账本和智能合约重新定义快速支付。",
   "keywords": "EXTC, 加密货币, 更快支付, 分布式账本, 智能合约, 以太坊, EIP20, 跨境支付, 即时贷款, 区块链",
-  "banner_alt": "棕色木桌上一台关机的笔记本电脑"
+  "language": "zh-Hans",
+  "locale": "zh_CN",
+  "subtitle": "技术创新、地缘政治变化与可持续金融共同塑造的全球金融演进新篇章",
+  "description": "Express Transaction Credits Platform（EXTC）网络通过分布式账本和智能合约重新定义快速支付。",
+  "banner_alt": "棕色木桌上一台关机的笔记本电脑",
+  "banner": "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp"
 }

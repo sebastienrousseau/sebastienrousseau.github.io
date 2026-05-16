@@ -1,11 +1,11 @@
 {
-  "date": "February 08, 2024",
+  "locale": "it_IT",
   "subtitle": "L'impatto dell'IA generativa sull'industria pubblicitaria",
+  "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp",
   "description": "L'IA generativa sta ridisegnando il marketing e la pubblicità: personalizzazione di massa, creatività assistita, ottimizzazione delle campagne.",
+  "date": "February 08, 2024",
+  "banner_alt": "Pubblicità e IA",
   "title": "Rivoluzionare la pubblicità: come l'IA plasma il futuro",
   "language": "it-IT",
-  "banner_alt": "Pubblicità e IA",
-  "keywords": "pubblicità, IA, marketing, personalizzazione, creatività, campagne, generativa",
-  "locale": "it_IT",
-  "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp"
+  "keywords": "pubblicità, IA, marketing, personalizzazione, creatività, campagne, generativa"
 }

@@ -1,11 +1,11 @@
 {
-  "keywords": "quantum computing, finance, credit ratio analysis, Qiskit, Quantum Fourier Transform, IBM, machine learning, artificial intelligence, financial risk assessment, creditworthiness",
-  "language": "bn-BD",
-  "date": "Jan 08, 2024",
-  "subtitle": "Optimising Credit Ratio Analysis with IBM Qiskit and Quantum Fourier Transform",
-  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
-  "title": "Qiskit & Quantum Fourier Transform for Credit Ratio Analysis",
   "description": "Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed.",
   "locale": "bn_BD",
-  "banner_alt": "Quantum Computer Room"
+  "title": "Qiskit & Quantum Fourier Transform for Credit Ratio Analysis",
+  "banner_alt": "Quantum Computer Room",
+  "date": "Jan 08, 2024",
+  "keywords": "quantum computing, finance, credit ratio analysis, Qiskit, Quantum Fourier Transform, IBM, machine learning, artificial intelligence, financial risk assessment, creditworthiness",
+  "language": "bn-BD",
+  "subtitle": "Optimising Credit Ratio Analysis with IBM Qiskit and Quantum Fourier Transform",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp"
 }

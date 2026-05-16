@@ -289,6 +289,10 @@ from postbuild_lib.output import (  # noqa: F401 — re-exports
     write_llms_txt,
     write_robots,
 )
+from postbuild_lib.schemas import (
+    inject_software_source_code,
+    inject_tech_article,
+)
 from postbuild_lib.seo import (  # noqa: F401 — re-exports for back-compat
     _keywords_re,
     build_about_graph,
@@ -327,8 +331,10 @@ class _PostbuildCounters:
         "nav_patched",
         "og_patched",
         "social_patched",
+        "softwaresourcecode_patched",
         "sources_patched",
         "sri_patched",
+        "techarticle_patched",
         "wc_patched",
     )
 
@@ -467,6 +473,14 @@ def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     out = inject_about(out)
     if out != prev:
         ctr.about_patched += 1
+    prev = out
+    out = inject_tech_article(page, out)
+    if out != prev:
+        ctr.techarticle_patched += 1
+    prev = out
+    out = inject_software_source_code(page, out)
+    if out != prev:
+        ctr.softwaresourcecode_patched += 1
     return out
 
 
@@ -677,6 +691,8 @@ def main() -> None:
         f"{c.asset_fp_patched} got asset URLs fingerprinted, "
         f"{c.sri_patched} got real SRI, "
         f"{c.itemlist_patched} got ItemList JSON-LD, "
+        f"{c.techarticle_patched} got TechArticle, "
+        f"{c.softwaresourcecode_patched} got SoftwareSourceCode, "
         f"{c.social_patched} got og:image fixed, "
         f"{c.og_patched} got og:url/locale/site_name, "
         f"{c.img_dims_patched} img(s) stamped w/h, "

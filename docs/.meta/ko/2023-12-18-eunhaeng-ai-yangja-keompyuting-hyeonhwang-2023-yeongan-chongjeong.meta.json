@@ -1,12 +1,12 @@
 {
-  "title": "은행에서의 AI와 양자 컴퓨팅 현황: 2023년 총정리",
-  "banner_alt": "런던 금융가의 야경",
-  "subtitle": "AI와 양자 컴퓨팅이 은행과 금융 서비스를 어떻게 변혁하고 있는가",
-  "keywords": "AI, 양자 컴퓨팅, 은행, 핀테크, 리스크 관리, 알고리즘 트레이딩, 2023, 검토",
-  "date": "December 18, 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/jc-gellidon-cQ3BneKt5g0-unsplash.webp",
   "language": "ko-KR",
+  "banner": "https://cloudcdn.pro/stocks/images/jc-gellidon-cQ3BneKt5g0-unsplash.webp",
+  "title": "은행에서의 AI와 양자 컴퓨팅 현황: 2023년 총정리",
+  "locale": "ko_KR",
   "description": "2023년 AI와 양자 컴퓨팅이 은행 업무에 미친 영향에 관한 총정리. 최신 상황과 향후 전망.",
-  "last_reviewed": "2026-05-16",
-  "locale": "ko_KR"
+  "date": "December 18, 2023",
+  "subtitle": "AI와 양자 컴퓨팅이 은행과 금융 서비스를 어떻게 변혁하고 있는가",
+  "banner_alt": "런던 금융가의 야경",
+  "keywords": "AI, 양자 컴퓨팅, 은행, 핀테크, 리스크 관리, 알고리즘 트레이딩, 2023, 검토",
+  "last_reviewed": "2026-05-16"
 }

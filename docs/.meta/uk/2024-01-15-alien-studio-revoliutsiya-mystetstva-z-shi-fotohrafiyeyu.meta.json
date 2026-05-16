@@ -1,11 +1,11 @@
 {
-  "keywords": "personal tech journey, Rust discovery, AI exploration, Quantum Computing, art and photography fusion, Alien Studio, digital art creation, technology in art, innovative photography, artistic rediscovery",
   "subtitle": "The Beginnings of a Technological Odyssey",
-  "date": "Jan 15, 2024",
+  "locale": "uk_UA",
+  "keywords": "personal tech journey, Rust discovery, AI exploration, Quantum Computing, art and photography fusion, Alien Studio, digital art creation, technology in art, innovative photography, artistic rediscovery",
   "language": "uk-UA",
   "title": "[UK DRAFT] Alien Studio: My Tech-to Art Journey in Photography",
-  "description": "Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.",
-  "banner_alt": "Sunset's muse, a serene glance; beauty in stillness",
+  "date": "Jan 15, 2024",
   "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
-  "locale": "uk_UA"
+  "banner_alt": "Sunset's muse, a serene glance; beauty in stillness",
+  "description": "Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio."
 }

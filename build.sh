@@ -65,6 +65,12 @@ python3 scripts/test_jsonld_localized.py
 python3 scripts/test_sitemap_completeness.py
 python3 scripts/test_lang_no_leakage.py
 python3 scripts/test_rtl_safe.py --strict
+python3 scripts/test_csp_strict.py
+# Cloudflare Worker (edge Accept-Language router) — pure-logic tests, no
+# Cloudflare runtime required. Skip silently if node isn't on the path.
+if command -v node >/dev/null 2>&1; then
+  node workers/test_lang_router.mjs
+fi
 
 # GitHub Pages serves from main/docs, so mirror the postbuild output into
 # docs/ on every build. CNAME and .nojekyll are preserved.

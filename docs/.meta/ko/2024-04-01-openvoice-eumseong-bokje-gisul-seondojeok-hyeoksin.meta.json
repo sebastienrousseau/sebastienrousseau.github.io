@@ -1,12 +1,12 @@
 {
   "subtitle": "오픈소스 음성 복제와 핀테크에 대한 의미",
-  "title": "OpenVoice: 음성 복제 기술의 최첨단 혁신",
   "language": "ko-KR",
-  "description": "OpenVoice, 오픈소스 음성 복제 기술, 은행 업무의 부정·인증·프라이버시에 대한 의미.",
+  "banner": "https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp",
+  "locale": "ko_KR",
   "date": "April 1, 2024",
   "last_reviewed": "2026-05-16",
-  "banner_alt": "마이크와 음성을 표현한 비주얼",
-  "locale": "ko_KR",
   "keywords": "OpenVoice, 음성 복제, 음성 AI, 딥페이크, 부정, 은행 인증, 음성 생체 인식",
-  "banner": "https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp"
+  "banner_alt": "마이크와 음성을 표현한 비주얼",
+  "title": "OpenVoice: 음성 복제 기술의 최첨단 혁신",
+  "description": "OpenVoice, 오픈소스 음성 복제 기술, 은행 업무의 부정·인증·프라이버시에 대한 의미."
 }

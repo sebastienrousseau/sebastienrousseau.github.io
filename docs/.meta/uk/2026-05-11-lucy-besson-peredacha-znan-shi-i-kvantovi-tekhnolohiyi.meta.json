@@ -1,11 +1,11 @@
 {
+  "date": "May 11, 2026",
+  "language": "uk-UA",
+  "description": "Twelve years on, Besson's Lucy reads like a thought experiment about knowledge migrating from flesh to machine — quietly validated by LLMs and qubits.",
+  "keywords": "Lucy 2014 film, Luc Besson, knowledge transfer, large language models, neutral atom qubits, whole-brain emulation, substrate independence, AI philosophy, quantum computing, knowledge persistence",
   "title": "[UK DRAFT] Lucy's Flash Drive Revisited: AI, Quantum & Knowledge",
+  "subtitle": "Twelve years after Luc Besson's Lucy, the film's central metaphor of knowledge migrating from flesh to machine is being unexpectedly validated by LLMs, neutral atom qubits, and whole-brain emulation.",
   "locale": "uk_UA",
   "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
-  "keywords": "Lucy 2014 film, Luc Besson, knowledge transfer, large language models, neutral atom qubits, whole-brain emulation, substrate independence, AI philosophy, quantum computing, knowledge persistence",
-  "description": "Twelve years on, Besson's Lucy reads like a thought experiment about knowledge migrating from flesh to machine — quietly validated by LLMs and qubits.",
-  "banner_alt": "Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles",
-  "language": "uk-UA",
-  "subtitle": "Twelve years after Luc Besson's Lucy, the film's central metaphor of knowledge migrating from flesh to machine is being unexpectedly validated by LLMs, neutral atom qubits, and whole-brain emulation.",
-  "date": "May 11, 2026"
+  "banner_alt": "Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles"
 }

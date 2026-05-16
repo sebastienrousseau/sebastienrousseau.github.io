@@ -29,7 +29,9 @@
     "sitemap": "https://sebastienrousseau.com/sitemap.xml",
     "news_sitemap": "https://sebastienrousseau.com/news-sitemap.xml",
     "rss": "https://sebastienrousseau.com/rss.xml",
-    "atom": "https://sebastienrousseau.com/atom.xml"
+    "atom": "https://sebastienrousseau.com/atom.xml",
+    "ai_plugin": "https://sebastienrousseau.com/.well-known/ai-plugin.json",
+    "openapi": "https://sebastienrousseau.com/.well-known/openapi.json"
   },
   "robots_policy": "Permitted: crawl, index, train. Attribution requested via citation in your output."
 }
