@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Wed, 24 Jan 2018 09:00:00 +0000" id="date" />
+    <meta itemprop="dateModified" content="Wed, 24 Jan 2018 09:00:00 +0000" id="last-modified" />
+    <title>ERC-20 代币标准 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="ERC-20 标准为以太坊代币定义了一套通用规则与功能，是 DeFi 兴起和以太坊广泛采用的关键推动力。">
+<meta name="keywords" content="ERC-20, 以太坊, 代币标准, 智能合约, DeFi, 去中心化金融, 代币化, Solidity, dApps, 区块链">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-0NxevW7HbeRVFCBlpz8j2dKHX72jzWHy5z5SFIQymqQ=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-Khjp0Mdxq8SQKwYbUam6023SQ8IED5L1HFTnyeA+eS8=' 'sha256-qnnDEBBWEiO60OOejgPDmUhM0isnbVKFLYkD5w0Ptd4=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/zh-hans/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b2a7b255e05cbd1.css" crossorigin="anonymous" integrity="sha256-VdEMoj4KuWEXE74XtoAwuq5lF2P9UK0jJE+s1mJrYfg=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 订阅源" href="/zh-hans/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="ERC-20 代币标准 — Sebastien Rousseau">
+<meta property="og:description" content="ERC-20 标准为以太坊代币定义了一套通用规则与功能，是 DeFi 兴起和以太坊广泛采用的关键推动力。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/zh-hans/2018-01-24-erc-20-daibi-biaozhun/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ERC-20 代币标准 — Sebastien Rousseau">
+<meta name="twitter:description" content="ERC-20 标准为以太坊代币定义了一套通用规则与功能，是 DeFi 兴起和以太坊广泛采用的关键推动力。">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/zh-hans/2018-01-24-erc-20-daibi-biaozhun/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2018-01-24-la-norme-de-jeton-erc-20/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2018-01-24-the-erc-20-token-standard/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2018-01-24-der-erc-20-token-standard/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2018-01-24-el-estandar-de-token-erc-20/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2018-01-24-erc-20-daibi-biaozhun/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">跳至主要内容</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="切换导航" />
+      <div class="wrap">
+        <a class="ap-brand" href="/zh-hans/index.html" aria-label="Sebastien Rousseau 首页">
+          <span itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="主导航">
+          <ul class="ap-menu">
+            <li><a href="/zh-hans/guanyu/index.html">关于</a></li>
+            <li><a href="/zh-hans/wenzhang/index.html" aria-current="page" class="active">文章</a></li>
+            <li><a href="/zh-hans/lunwen/index.html">论文与白皮书</a></li>
+            <li><a href="/zh-hans/zhuti/index.html">主题</a></li>
+            <li><a href="/zh-hans/xiangmu/index.html">项目</a></li>
+            <li><a href="/zh-hans/boqing/index.html">播放列表</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="切换到深色主题" aria-pressed="false" title="切换主题">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="搜索（Cmd 或 Ctrl + K）" title="搜索（⌘K）">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="语言">
+            <button type="button" class="ap-lang-toggle" aria-label="ZH，切换语言" aria-expanded="false" aria-haspopup="menu" title="切换语言">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">ZH</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="敬请期待">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="敬请期待">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="敬请期待">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="敬请期待">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="敬请期待">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="敬请期待">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="敬请期待">🇮🇩 Indonesia</span>
+                <span class="ap-lang-item" data-lang="it" aria-disabled="true" title="敬请期待">🇮🇹 Italiano</span>
+                <span class="ap-lang-item" data-lang="ja" aria-disabled="true" title="敬请期待">🇯🇵 日本語</span>
+                <span class="ap-lang-item" data-lang="ko" aria-disabled="true" title="敬请期待">🇰🇷 한국어</span>
+                <span class="ap-lang-item" data-lang="nl" aria-disabled="true" title="敬请期待">🇳🇱 Nederlands</span>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="敬请期待">🇵🇱 Polski</span>
+                <span class="ap-lang-item" data-lang="pt-br" aria-disabled="true" title="敬请期待">🇧🇷 Português</span>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="敬请期待">🇷🇴 Română</span>
+                <span class="ap-lang-item" data-lang="ru" aria-disabled="true" title="敬请期待">🇷🇺 Русский</span>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="敬请期待">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="敬请期待">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="敬请期待">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="敬请期待">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="敬请期待">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="敬请期待">🇳🇬 Yorùbá</span>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <span class="ap-lang-item" data-lang="zh-hant" aria-disabled="true" title="敬请期待">🇹🇼 繁體中文</span>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/zh-hans/lianxi/index.html" aria-label="联系我">联系我 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="切换导航">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>ERC-20 代币标准</h1>
+      <p class="sub">以太坊上最常见的代币类型——通常被称为智能合约数字契约</p>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-erc-20" class="article-tag" rel="tag">ERC-20</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">以太坊</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">代币标准</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">智能合约</a><a href="/tags/index.html#h3-defi" class="article-tag" rel="tag">DeFi</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">去中心化金融</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">代币化</a><a href="/tags/index.html#h3-solidity" class="article-tag" rel="tag">Solidity</a><a href="/tags/index.html#h3-dapps" class="article-tag" rel="tag">dApps</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">区块链</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-01-24T09:00:00+00:00" class="meta-pub">Published 24 Jan 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Updated 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">1 min read</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> ERC-20 标准为以太坊代币定义了一套通用规则与功能，是 DeFi 兴起和以太坊广泛采用的关键推动力。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>洞察.</strong> 在 ERC-20（以太坊征求意见 20）标准出现之前，以太坊区块链就像代币架构的&quot;狂野西部&quot;。每一种新发行的代币都有自己独特的规则、功能和接口。这不仅让开发者面对陡峭的学习曲线，也阻碍了代币之间的互操作性。本质上，每个新代币就像一种新语言，需要学习、理解并实现。这种碎片化阻碍了代币在以太坊平台上的可扩展性和广泛采用。.</li>  <li><strong>理念.</strong> ERC-20 标准为所有兼容 ERC-20 的代币定义了六个必须实现的核心函数：.</li>  <li><strong>影响.</strong> ERC-20 标准对以太坊生态产生了重大影响。它是 DeFi（去中心化金融）运动的关键推动者，也帮助提升了以太坊的采用率。.</li>  <li><strong>激励.</strong> ERC-20 协议带来的标准化也产生了直接的经济影响。通过提供一个经过测试且为社区认可的代币创建蓝图，它大幅降低了开发者的进入门槛。他们可以以更低的开发成本和更快的上市时间创建新代币，无需重复造轮子。该标准也间接鼓励了能与任意 ERC-20 代币通用交互的 DApps（去中心化应用）与服务的创建，从而促进了一个更具活力的生态系统。.</li></ul></aside><p><img src="https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp" alt="棕色木桌上一台关机的笔记本电脑"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<h2 id="section-1">洞察 <a class="heading-anchor" href="#section-1" aria-label="Link to 洞察">#</a></h2>
+<h3 id="section-2">标准化代币接口的必要性 <a class="heading-anchor" href="#section-2" aria-label="Link to 标准化代币接口的必要性">#</a></h3>
+<p>在 ERC-20（以太坊征求意见 20）标准出现之前，以太坊区块链就像代币架构的&quot;狂野西部&quot;。每一种新发行的代币都有自己独特的规则、功能和接口。这不仅让开发者面对陡峭的学习曲线，也阻碍了代币之间的互操作性。本质上，每个新代币就像一种新语言，需要学习、理解并实现。这种碎片化阻碍了代币在以太坊平台上的可扩展性和广泛采用。</p>
+<p>ERC-20 标准的引入起到了统一语言的作用，规定了所有以太坊代币都必须遵循的一套通用规则与功能。如今，无论是哪种代币，开发者都拥有一致的接口。该标准化简化了代币的交互流程，使其更易于无缝集成到各种应用与服务中。因此，开发者能够更深入地与代币交互，培育出有利于以太坊生态系统创新与增长的环境。</p>
+<h4>代币架构的&quot;狂野西部&quot;</h4>
+<p>以太坊区块链最初被设计为仅支持一种代币：ETH。然而随着平台的流行，开发者开始创建自己的代币来表示各种资产与概念。这导致出现了大量不同的代币架构，各自有独特的规则与功能。</p>
+<p>这种碎片化让开发者难以创建能与多种代币交互的应用，也让用户难以在不同平台间管理其代币资产。</p>
+<h4>ERC-20 标准</h4>
+<p>ERC-20 标准于 2015 年提出，旨在解决代币架构&quot;狂野西部&quot;带来的挑战。该标准为所有以太坊代币定义了一套通用的规则与函数。这种标准化让开发者更容易构建能与任意 ERC-20 代币交互的应用，也让用户更容易管理其代币资产。</p>
+<p>ERC-20 标准已被以太坊社区广泛采用。如今存在的 ERC-20 代币已超过 20 万种，该标准被广泛用于去中心化交易所、借贷平台和游戏 dApps 等多种应用。</p>
+<h2 id="section-3">理念 <a class="heading-anchor" href="#section-3" aria-label="Link to 理念">#</a></h2>
+<h3 id="section-4">适用于所有代币的通用函数与属性 <a class="heading-anchor" href="#section-4" aria-label="Link to 适用于所有代币的通用函数与属性">#</a></h3>
+<p>ERC-20 标准为所有兼容 ERC-20 的代币定义了六个必须实现的核心函数：</p>
+<ul>
+<li><code>transfer(address to, uint256 amount)</code>：将一定数量的代币从调用者地址转移到指定地址。</li>
+<li><code>approve(address spender, uint256 amount)</code>：授权指定地址代表调用者花费一定数量的代币。</li>
+<li><code>allowance(address owner, address spender)</code>：返回指定支出方代表指定所有者可以花费的代币数量。</li>
+<li><code>totalSupply()</code>：返回流通中代币的总量。</li>
+<li><code>balanceOf(address owner)</code>：返回指定地址持有的代币数量。</li>
+<li><code>name()</code>：返回代币的名称。</li>
+<li><code>symbol()</code>：返回代币的符号。</li>
+</ul>
+<p>ERC-20 标准还定义了两个事件，在对应函数成功执行时必须发出：</p>
+<ul>
+<li><code>Transfer(address from, address to, uint256 amount)</code>：在代币从一个地址转移到另一个地址时发出。</li>
+<li><code>Approval(address owner, address spender, uint256 amount)</code>：在指定地址被授权代表指定所有者花费一定数量代币时发出。</li>
+</ul>
+<h2 id="section-5">影响 <a class="heading-anchor" href="#section-5" aria-label="Link to 影响">#</a></h2>
+<h3 id="defi">DeFi 的成长与以太坊采用 <a class="heading-anchor" href="#defi" aria-label="Link to DeFi 的成长与以太坊采用">#</a></h3>
+<p>ERC-20 标准对以太坊生态产生了重大影响。它是 DeFi（去中心化金融）运动的关键推动者，也帮助提升了以太坊的采用率。</p>
+<p>提供从借贷到资产管理等多种金融服务的 DeFi 平台严重依赖代币来促成交易。ERC-20 作为通用适配器，使 DeFi 应用能更轻松地纳入各种代币，而无需为每个代币定制代码。</p>
+<p>ERC-20 标准也使用户更容易管理代币资产。由于代币遵循相同的基本规则，用户可以更容易地在多个平台间转移、消费和管理其代币资产。这一改进的用户体验也是以太坊采用率提升的关键推动因素。</p>
+<h2 id="section-7">激励 <a class="heading-anchor" href="#section-7" aria-label="Link to 激励">#</a></h2>
+<h3 id="section-8">降低开发成本并提升安全 <a class="heading-anchor" href="#section-8" aria-label="Link to 降低开发成本并提升安全">#</a></h3>
+<p>ERC-20 协议带来的标准化也产生了直接的经济影响。通过提供一个经过测试且为社区认可的代币创建蓝图，它大幅降低了开发者的进入门槛。他们可以以更低的开发成本和更快的上市时间创建新代币，无需重复造轮子。该标准也间接鼓励了能与任意 ERC-20 代币通用交互的 DApps（去中心化应用）与服务的创建，从而促进了一个更具活力的生态系统。</p>
+<p>另一项显著优势是更强的安全性。ERC-20 标准经过以太坊社区的严格审查，是一种稳健且安全的代币实现模型。遵循该标准意味着代币智能合约的基础部分符合社区公认的最佳实践。这最大限度地降低了因代币模型设计不当带来的安全漏洞风险。虽然这并非对所有漏洞的保证，但它在确保代币及其相关项目整体安全性方面是重要的一步。</p>
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/zh-hans/guanyu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，撰写关于应用人工智能、ISO 20022 迁移、面向金融服务的后量子密码学，以及批发支付结构性转型的内容。</span><span class="author-credentials">20 多年经验，曾任职于汇丰商业及投资银行、PayPal、巴克莱、Shazam、AKQA、维珍集团。 <a href="/zh-hans/guanyu/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最近审阅 <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">相关阅读</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2026-05-15-beilaide-brsrv-bstbl-genius-fa-an-daibihua-mmf" class="related-media" aria-label="另一种名义下的稳定币收益：贝莱德 BRSRV 与 BSTBL 文件解码" tabindex="-1"><img alt="BlackRock tokenised money market fund architecture diagram — BRSRV OnChain Shares and BSTBL ERC-20 share class with GENIUS Act reserve flows" src="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="brsrv-bstbl"><a href="https://sebastienrousseau.com/zh-hans/2026-05-15-beilaide-brsrv-bstbl-genius-fa-an-daibihua-mmf">另一种名义下的稳定币收益：贝莱德 BRSRV 与 BSTBL 文件解码</a> <a class="heading-anchor" href="#brsrv-bstbl" aria-label="Link to 另一种名义下的稳定币收益：贝莱德 BRSRV 与 BSTBL 文件解码">#</a></h3><p><time datetime="2026-05-15">2026-05-15</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2023-12-11-liangzi-miyao-fenfa-yinhang-anquan-de-biange/index.html" class="related-media" aria-label="量子密钥分发：银行安全的变革" tabindex="-1"><img alt="HSBC From the Docks" src="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-10"><a href="https://sebastienrousseau.com/zh-hans/2023-12-11-liangzi-miyao-fenfa-yinhang-anquan-de-biange/index.html">量子密钥分发：银行安全的变革</a> <a class="heading-anchor" href="#section-10" aria-label="Link to 量子密钥分发：银行安全的变革">#</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2018-01-01-bitebi-niandu-huigu/index.html" class="related-media" aria-label="比特币：首个加密货币的年度回顾" tabindex="-1"><img alt="A pile of gold and silver coins sitting on top of a table" src="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-11"><a href="https://sebastienrousseau.com/zh-hans/2018-01-01-bitebi-niandu-huigu/index.html">比特币：首个加密货币的年度回顾</a> <a class="heading-anchor" href="#section-11" aria-label="Link to 比特币：首个加密货币的年度回顾">#</a></h3><p><time datetime="2018-01-01">2018-01-01</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/zh-hans/2018-01-09-lijie-quqiulian-beihou-de-jishu/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">Understanding the Technology behind Blockchain</span></a><a class="post-pagination-next" href="/zh-hans/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan/"><span class="post-pagination-label">Next</span><span class="post-pagination-title">Unveiling a new Cryptocurrency and Faster Payment Solution</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/zh-hans/guanyu/index.html">关于</a></li>
+              <li><a href="/zh-hans/lianxi/index.html">联系</a></li>
+              <li><a href="/zh-hans/yong-static-site-generator-zhizuo/index.html">使用 Static Site Generator 构建</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">文章</h2>
+            <ul>
+              <li><a href="/zh-hans/wenzhang/index.html">文章</a></li>
+              <li><a href="/zh-hans/lunwen/index.html">论文与白皮书</a></li>
+              <li><a href="/zh-hans/biaoqian/index.html">标签</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">工作</h2>
+            <ul>
+              <li><a href="/zh-hans/xiangmu/index.html">项目</a></li>
+              <li><a href="/zh-hans/boqing/index.html">播放列表</a></li>
+              <li><a href="/zh-hans/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">联系</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="通讯订阅">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 关于支付、人工智能与后量子密码学的研究笔记。无垃圾邮件。</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="nin@yinhang.com" />
+            <input type="hidden" name="_subject" value="通讯订阅 — sebastienrousseau.com" />
+            <button type="submit">订阅</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© 版权所有 2007 - 2026 - Sebastien Rousseau。保留所有权利。</span>
+          <div class="social" aria-label="社交链接">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau 于 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau 于 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau 于 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau 于 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/zh-hans/wuzhang-ai/index.html">无障碍访问</a> ·
+            <a href="/zh-hans/yinsi/index.html">隐私</a> ·
+            <a href="/zh-hans/tiaokuan/index.html">条款</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"zh-hans"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"zh-hans"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":100,"about":{"@type":"Thing","name":"ERC-20","sameAs":["https://en.wikipedia.org/wiki/Ethereum#Tokens","https://sebastienrousseau.com/2018-01-24-the-erc-20-token-standard/index.html"]},"headline":"ERC-20 代币标准","description":"ERC-20 标准为以太坊代币定义了一套通用规则与功能，是 DeFi 兴起和以太坊广泛采用的关键推动力。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp","width":"100vw","height":"100vh","caption":"棕色木桌上一台关机的笔记本电脑"},"url":"https://sebastienrousseau.com/zh-hans/2018-01-24-erc-20-daibi-biaozhun/","datePublished":"2018-01-24T09:00:00+00:00","dateModified":"2026-05-11","inLanguage":"zh-hans","keywords":"ERC-20, 以太坊, 代币标准, 智能合约, DeFi, 去中心化金融, 代币化, Solidity, dApps, 区块链","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hans/2018-01-24-erc-20-daibi-biaozhun/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"zh-hans"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/zh-hans/"},{"@type":"ListItem","position":3,"name":"ERC-20 代币标准","item":"https://sebastienrousseau.com/zh-hans/2018-01-24-erc-20-daibi-biaozhun/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="搜索">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>搜索</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="搜索">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="搜索文档…" autocomplete="off" aria-label="搜索"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 关闭</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 导航</span><span><kbd>Enter</kbd> 打开</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

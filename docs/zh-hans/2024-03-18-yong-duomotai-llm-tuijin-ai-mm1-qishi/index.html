@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 18 Mar 2024 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 18 Mar 2024 06:06:06 +0000" id="last-modified" />
+    <title>用多模态 LLM 推进 AI：MM1 的启示 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Apple MM1 研究为多模态大型语言模型（MLLM）的预训练揭示关键架构与数据组成洞察。">
+<meta name="keywords" content="MM1, 多模态 AI, MLLM, 大型语言模型, Apple 研究, 视觉语言, 图像编码器, 少样本学习, MoE, 跨注意力">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-CmcjpzfABZo4kRNALlXlR5TcjZbKqgHuWRrxneLqYLQ=' 'sha256-Khjp0Mdxq8SQKwYbUam6023SQ8IED5L1HFTnyeA+eS8=' 'sha256-qnnDEBBWEiO60OOejgPDmUhM0isnbVKFLYkD5w0Ptd4=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/zh-hans/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b2a7b255e05cbd1.css" crossorigin="anonymous" integrity="sha256-VdEMoj4KuWEXE74XtoAwuq5lF2P9UK0jJE+s1mJrYfg=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 订阅源" href="/zh-hans/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="用多模态 LLM 推进 AI：MM1 的启示 — Sebastien Rousseau">
+<meta property="og:description" content="Apple MM1 研究为多模态大型语言模型（MLLM）的预训练揭示关键架构与数据组成洞察。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/zh-hans/2024-03-18-yong-duomotai-llm-tuijin-ai-mm1-qishi/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/mm1-visual.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="用多模态 LLM 推进 AI：MM1 的启示 — Sebastien Rousseau">
+<meta name="twitter:description" content="Apple MM1 研究为多模态大型语言模型（MLLM）的预训练揭示关键架构与数据组成洞察。">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/mm1-visual.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/zh-hans/2024-03-18-yong-duomotai-llm-tuijin-ai-mm1-qishi/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-03-18-faire-avancer-l-ia-avec-les-llm-multimodaux-enseignements-de-mm1/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2024-03-18-ki-voranbringen-mit-multimodalen-llms-erkenntnisse-aus-mm1/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2024-03-18-avanzar-la-ia-con-llm-multimodales-lecciones-de-mm1/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2024-03-18-yong-duomotai-llm-tuijin-ai-mm1-qishi/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">跳至主要内容</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="切换导航" />
+      <div class="wrap">
+        <a class="ap-brand" href="/zh-hans/index.html" aria-label="Sebastien Rousseau 首页">
+          <span itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="主导航">
+          <ul class="ap-menu">
+            <li><a href="/zh-hans/guanyu/index.html">关于</a></li>
+            <li><a href="/zh-hans/wenzhang/index.html" aria-current="page" class="active">文章</a></li>
+            <li><a href="/zh-hans/lunwen/index.html">论文与白皮书</a></li>
+            <li><a href="/zh-hans/zhuti/index.html">主题</a></li>
+            <li><a href="/zh-hans/xiangmu/index.html">项目</a></li>
+            <li><a href="/zh-hans/boqing/index.html">播放列表</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="切换到深色主题" aria-pressed="false" title="切换主题">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="搜索（Cmd 或 Ctrl + K）" title="搜索（⌘K）">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="语言">
+            <button type="button" class="ap-lang-toggle" aria-label="ZH，切换语言" aria-expanded="false" aria-haspopup="menu" title="切换语言">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">ZH</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="敬请期待">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="敬请期待">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="敬请期待">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="敬请期待">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="敬请期待">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="敬请期待">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="敬请期待">🇮🇩 Indonesia</span>
+                <span class="ap-lang-item" data-lang="it" aria-disabled="true" title="敬请期待">🇮🇹 Italiano</span>
+                <span class="ap-lang-item" data-lang="ja" aria-disabled="true" title="敬请期待">🇯🇵 日本語</span>
+                <span class="ap-lang-item" data-lang="ko" aria-disabled="true" title="敬请期待">🇰🇷 한국어</span>
+                <span class="ap-lang-item" data-lang="nl" aria-disabled="true" title="敬请期待">🇳🇱 Nederlands</span>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="敬请期待">🇵🇱 Polski</span>
+                <span class="ap-lang-item" data-lang="pt-br" aria-disabled="true" title="敬请期待">🇧🇷 Português</span>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="敬请期待">🇷🇴 Română</span>
+                <span class="ap-lang-item" data-lang="ru" aria-disabled="true" title="敬请期待">🇷🇺 Русский</span>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="敬请期待">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="敬请期待">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="敬请期待">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="敬请期待">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="敬请期待">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="敬请期待">🇳🇬 Yorùbá</span>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <span class="ap-lang-item" data-lang="zh-hant" aria-disabled="true" title="敬请期待">🇹🇼 繁體中文</span>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/zh-hans/lianxi/index.html" aria-label="联系我">联系我 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="切换导航">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>用多模态 LLM 推进 AI：MM1 的启示</h1>
+      <p class="sub">Apple MM1 多模态大型语言模型的方法分析与洞察</p>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-mm1" class="article-tag" rel="tag">MM1</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">多模态 AI</a><a href="/tags/index.html#h3-mllm" class="article-tag" rel="tag">MLLM</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">大型语言模型</a><a href="/tags/index.html#h3-apple" class="article-tag" rel="tag">Apple 研究</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">视觉语言</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">图像编码器</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">少样本学习</a><a href="/tags/index.html#h3-moe" class="article-tag" rel="tag">MoE</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">跨注意力</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-03-18T06:06:06+00:00" class="meta-pub">Published 18 Mar 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Updated 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">1 min read</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#section-1">引言</a></li><li><a href="#ai">多模态 AI 的兴起</a></li><li><a href="#mm1-ai">MM1 研究：多模态 AI 研究的里程碑</a></li><li><a href="#section-5">关键发现与洞察</a></li><li><a href="#mm1">MM1 模型架构与多模态学习过程</a></li><li><a href="#mm1-ai-2">MM1：多模态 AI 的基准</a></li><li><a href="#section-9">结论</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Apple MM1 研究为多模态大型语言模型（MLLM）的预训练揭示关键架构与数据组成洞察。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>引言.</strong> 自然语言处理与图像识别的整合催生了多模态大型语言模型（MLLM）的发展。Apple 在其论文中介绍了 MM1，一系列结合视觉与语言理解的多模态 AI 模型。通过详尽的实验，研究者考察了影响这些模型表现的因素，探索各种架构选择和预训练数据组合。MM1 论文提供了关于 MLLM 如何构建与训练的关键信息。本文讨论该研究的方法与关键发现，展示其对 AI 未来可能的影响。.</li>  <li><strong>多模态 AI 的兴起.</strong> AI 领域近年来取得显著进步，尤其在自然语言处理（NLP）与计算机视觉领域。大型语言模型（LLM）改变了机器理解和生成人类语言的方式，使它们能执行语言翻译、文本摘要、甚至创意写作等复杂任务。类似地，卷积神经网络（CNN）革新了图像识别，让机器以前所未有的准确度感知与解读视觉数据。.</li>  <li><strong>MM1 研究：多模态 AI 研究的里程碑.</strong> [MM1：多模态 LLM 预训练的方法分析与洞察 ⧉][00] 研究是 MLLM 演进中的关键时刻。由一支知名研究团队领导，该研究旨在揭示有效 MLLM 预训练的关键组件与策略，聚焦 MM1 模型作为多模态 AI 的基准。.</li>  <li><strong>关键发现与洞察.</strong> MM1 研究产生了多个开创性洞察，塑造了我们对 MLLM 及其潜力的理解。最重要的发现之一是精心策划的预训练数据组合的重要性。研究者发现，结合图像-字幕数据、交错的图像-文本数据和纯文本数据，对达到最佳少样本学习性能至关重要。这一洞察凸显了能够捕捉多模态沟通细节的多样全面的预训练数据集的需要。.</li></ul></aside><h2 id="section-1">引言 <a class="heading-anchor" href="#section-1" aria-label="Link to 引言">#</a></h2>
+<p>自然语言处理与图像识别的整合催生了多模态大型语言模型（MLLM）的发展。Apple 在其论文中介绍了 MM1，一系列结合视觉与语言理解的多模态 AI 模型。通过详尽的实验，研究者考察了影响这些模型表现的因素，探索各种架构选择和预训练数据组合。MM1 论文提供了关于 MLLM 如何构建与训练的关键信息。本文讨论该研究的方法与关键发现，展示其对 AI 未来可能的影响。</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="分隔线" title="分隔线"  width="40" height="6" decoding="async" fetchpriority="high">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="ai">多模态 AI 的兴起 <a class="heading-anchor" href="#ai" aria-label="Link to 多模态 AI 的兴起">#</a></h2>
+<p>AI 领域近年来取得显著进步，尤其在自然语言处理（NLP）与计算机视觉领域。大型语言模型（LLM）改变了机器理解和生成人类语言的方式，使它们能执行语言翻译、文本摘要、甚至创意写作等复杂任务。类似地，卷积神经网络（CNN）革新了图像识别，让机器以前所未有的准确度感知与解读视觉数据。</p>
+<p>MLLM 代表 AI 的下一个前沿，结合 NLP 与计算机视觉的优势，创造可无缝跨文本与图像处理与生成信息的模型。这种模态融合开启了一系列可能，从更具吸引力的虚拟助手到能生成迷人多媒体体验的智能内容创作工具。</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="分隔线" title="分隔线"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="mm1-ai">MM1 研究：多模态 AI 研究的里程碑 <a class="heading-anchor" href="#mm1-ai" aria-label="Link to MM1 研究：多模态 AI 研究的里程碑">#</a></h2>
+<p><a href="https://arxiv.org/abs/2403.09611" title="MM1：多模态 LLM 预训练的方法分析与洞察"><strong>MM1：多模态 LLM 预训练的方法分析与洞察 ⧉</strong></a> 研究是 MLLM 演进中的关键时刻。由一支知名研究团队领导，该研究旨在揭示有效 MLLM 预训练的关键组件与策略，聚焦 MM1 模型作为多模态 AI 的基准。</p>
+<h3 id="section-4">方法论与目标 <a class="heading-anchor" href="#section-4" aria-label="Link to 方法论与目标">#</a></h3>
+<p>MM1 出版物采用严格的实验方法研究多模态架构与预训练策略的复杂性。研究者探索了模型的各个方面，包括图像编码器、视觉语言连接器和多样预训练数据集的选择。通过系统分析这些组件，研究旨在识别有助于增强 MLLM 性能的关键因素。</p>
+<p>研究的主要目标之一是确定实现卓越少样本学习能力的预训练数据最优组合。少样本学习指模型从有限样本中适应和学习的能力，是需要在现实应用中保持灵活高效的 AI 系统的关键方面。</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="分隔线" title="分隔线"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="section-5">关键发现与洞察 <a class="heading-anchor" href="#section-5" aria-label="Link to 关键发现与洞察">#</a></h2>
+<p>MM1 研究产生了多个开创性洞察，塑造了我们对 MLLM 及其潜力的理解。最重要的发现之一是精心策划的预训练数据组合的重要性。研究者发现，结合图像-字幕数据、交错的图像-文本数据和纯文本数据，对达到最佳少样本学习性能至关重要。这一洞察凸显了能够捕捉多模态沟通细节的多样全面的预训练数据集的需要。</p>
+<p>MM1 研究的另一个显著方面是包含最多 30B 参数的密集模型与专家混合（MoE）变体，展示了该架构的可扩展性与灵活性。研究揭示，图像分辨率对模型性能的影响最大，甚至超过模型大小，凸显高质量视觉输入在多模态学习中的重要性。</p>
+<p>图像编码器架构的选择，如 ResNet 或 ViT，显著影响模型从视觉数据中提取有意义特征并与文本信息整合的能力。此外，输入图像的分辨率在确定模型捕获的视觉特征质量与粒度方面起关键作用。</p>
+<p>MM1 研究还揭示了视觉语言连接器在使视觉与文本模态之间无缝互动中的重要性。研究者尝试了多种融合图像编码器与语言模型信息的方法，识别跨注意力机制与多头注意力作为实现丰富且与上下文相关的互动的有效策略。</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="分隔线" title="分隔线"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="mm1">MM1 模型架构与多模态学习过程 <a class="heading-anchor" href="#mm1" aria-label="Link to MM1 模型架构与多模态学习过程">#</a></h2>
+<p><img src="https://cloudcdn.pro/stocks/diagrams/mm1_model_architecture.svg" alt="MM1 模型架构" title="MM1 模型架构"  width="1200" height="800" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<p>该图说明 MM1 模型的架构与学习过程。预训练数据由图像输入与文本输入组成，图像输入由图像编码器处理，文本输入直接馈入预训练的 LLM transformer。图像编码器从输入图像中提取视觉特征，然后传递给 VL 连接器（视觉语言连接器）。VL 连接器将视觉特征与来自预训练 LLM transformer 的文本信息整合。这种多模态融合让模型通过监督微调生成 VQA（视觉问答）字幕输出。</p>
+<p>预训练数据构成包括 45% 交错数据、45% 字幕、10% 纯文本数据，凸显多样数据类型在训练 MM1 模型中的重要性。</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="分隔线" title="分隔线"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="mm1-ai-2">MM1：多模态 AI 的基准 <a class="heading-anchor" href="#mm1-ai-2" aria-label="Link to MM1：多模态 AI 的基准">#</a></h2>
+<p>MM1 模型作为该研究的一部分而开发，是多模态 AI 的基准，展示 MLLM 在各种应用中的潜力。凭借其精心设计的架构和预训练制度，MM1 在从视觉问答到图像字幕的一系列任务中表现卓越。</p>
+<p>MM1 的关键优势之一在于其基于视觉输入生成连贯且与语境相关的文本能力。例如，当呈现一张熙攘的城市街道图像时，MM1 可以生成详细准确的描述，捕捉场景的本质并突出建筑、人物和活动等关键元素。</p>
+<h3 id="section-8">意义与未来方向 <a class="heading-anchor" href="#section-8" aria-label="Link to 意义与未来方向">#</a></h3>
+<p>MM1 研究的发现对 AI 与多模态学习的未来具有深远意义。该研究获得的洞察为开发更先进、更具能力的 MLLM 架构提供了坚实基础，为能无缝驾驭与解读我们所生活的多模态世界的 AI 系统铺路。</p>
+<blockquote>
+<p>让我们去发明明天，而不是担心昨天发生了什么。—— <strong>史蒂夫·乔布斯</strong></p>
+</blockquote>
+<p>未来研究的一个令人兴奋的领域是探索整合 MLLM 中视觉与文本信息的新方法。MM1 研究凸显了跨注意力机制与多头注意力的有效性，但该领域仍有大量进一步创新的潜力。研究者可能调查能动态适应输入数据内容与结构的新架构，使更灵活、更具语境感知的多模态互动成为可能。</p>
+<p>另一有前景的方向是将 MLLM 应用于现实场景，如智能虚拟助手、教育工具和创意内容生成。MLLM 跨文本与图像处理与生成信息的能力为增强人机沟通与创造更具吸引力、沉浸式体验开启广泛可能。</p>
+<blockquote>
+<p>AI 的下一个重大步骤将是能更好地理解周围世界的机器，能够理解并推理它们之前未见过的数据。—— <strong>Yann LeCun</strong></p>
+</blockquote>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="分隔线" title="分隔线"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="section-9">结论 <a class="heading-anchor" href="#section-9" aria-label="Link to 结论">#</a></h2>
+<p>MM1 研究代表多模态大型语言模型演进的重要里程碑，提供关于这些强大 AI 系统的架构、预训练策略与潜力的宝贵洞察。通过细致分析有效 MLLM 预训练的关键组件与方法论，该研究为多模态 AI 的未来创新奠定基础。</p>
+<p>从 MM1 研究中学到的经验无疑将塑造更复杂、更具能力的 MLLM 的发展。这些模型有潜力革新我们与机器互动的方式，让跨文本与视觉模态的更自然、直观、语境感知的沟通成为可能。</p>
+<p>MM1 模型本身是 MLLM 巨大潜力的证明，展示在一系列任务中的卓越性能并为多模态 AI 设立新基准。随着研究者继续在该研究获得的洞察基础上构建，我们可以预期一个 AI 系统可无缝驾驭和解读复杂多模态世界的未来，让我们更接近真正智能机器的愿景。</p>
+<p>要进一步了解开创性的 MM1 研究并探索多模态大型语言模型的迷人世界，邀请你阅读原始研究论文：<a href="https://arxiv.org/abs/2403.09611" title="MM1：多模态 LLM 预训练的方法分析与洞察"><strong>MM1：多模态 LLM 预训练的方法分析与洞察 ⧉</strong></a></p>
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/zh-hans/guanyu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，撰写关于应用人工智能、ISO 20022 迁移、面向金融服务的后量子密码学，以及批发支付结构性转型的内容。</span><span class="author-credentials">20 多年经验，曾任职于汇丰商业及投资银行、PayPal、巴克莱、Shazam、AKQA、维珍集团。 <a href="/zh-hans/guanyu/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最近审阅 <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">相关阅读</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng/index.html" class="related-media" aria-label="探索生成式人工智能" tabindex="-1"><img alt="AI, Artificial Intelligence concept,3d rendering,conceptual image" src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-10"><a href="https://sebastienrousseau.com/zh-hans/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng/index.html">探索生成式人工智能</a> <a class="heading-anchor" href="#section-10" aria-label="Link to 探索生成式人工智能">#</a></h3><p><time datetime="2023-11-12">2023-11-12</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2026-05-11-lucy-besson-zhishi-zhuanyi-ai-yu-liangzi/index.html" class="related-media" aria-label="重温露西的 U 盘：贝松所看到的知识向机器迁移" tabindex="-1"><img alt="Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles" src="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="u"><a href="https://sebastienrousseau.com/zh-hans/2026-05-11-lucy-besson-zhishi-zhuanyi-ai-yu-liangzi/index.html">重温露西的 U 盘：贝松所看到的知识向机器迁移</a> <a class="heading-anchor" href="#u" aria-label="Link to 重温露西的 U 盘：贝松所看到的知识向机器迁移">#</a></h3><p><time datetime="2026-05-11">2026-05-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2024-04-15-liangzi-suanfa-tiaozhan-gezhuang-mima-xue/index.html" class="related-media" aria-label="量子算法挑战格状密码学" tabindex="-1"><img alt="Banner of Network nodes in a digital blue space" src="https://cloudcdn.pro/stocks/images/digital-constellation.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-12"><a href="https://sebastienrousseau.com/zh-hans/2024-04-15-liangzi-suanfa-tiaozhan-gezhuang-mima-xue/index.html">量子算法挑战格状密码学</a> <a class="heading-anchor" href="#section-12" aria-label="Link to 量子算法挑战格状密码学">#</a></h3><p><time datetime="2024-04-15">2024-04-15</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Sources & references</h2><ol class="article-sources-list"><li><a href="https://arxiv.org/abs/2403.09611" rel="external noopener nofollow"><span class="source-host">arxiv.org</span><span class="source-path">/abs/2403.09611</span></a></li></ol></aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/zh-hans/2024-03-12-yong-openai-whisper-biange-macos-shishi-yuyin-shibie/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</span></a><a class="post-pagination-next" href="/zh-hans/2024-03-25-liangzi-yinhang-shidai-de-quan-tongtai-jiami/"><span class="post-pagination-label">Next</span><span class="post-pagination-title">Fully Homomorphic Encryption (FHE) in a Banking Quantum Era</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/zh-hans/guanyu/index.html">关于</a></li>
+              <li><a href="/zh-hans/lianxi/index.html">联系</a></li>
+              <li><a href="/zh-hans/yong-static-site-generator-zhizuo/index.html">使用 Static Site Generator 构建</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">文章</h2>
+            <ul>
+              <li><a href="/zh-hans/wenzhang/index.html">文章</a></li>
+              <li><a href="/zh-hans/lunwen/index.html">论文与白皮书</a></li>
+              <li><a href="/zh-hans/biaoqian/index.html">标签</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">工作</h2>
+            <ul>
+              <li><a href="/zh-hans/xiangmu/index.html">项目</a></li>
+              <li><a href="/zh-hans/boqing/index.html">播放列表</a></li>
+              <li><a href="/zh-hans/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">联系</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="通讯订阅">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 关于支付、人工智能与后量子密码学的研究笔记。无垃圾邮件。</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="nin@yinhang.com" />
+            <input type="hidden" name="_subject" value="通讯订阅 — sebastienrousseau.com" />
+            <button type="submit">订阅</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© 版权所有 2007 - 2026 - Sebastien Rousseau。保留所有权利。</span>
+          <div class="social" aria-label="社交链接">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau 于 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau 于 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau 于 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau 于 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/zh-hans/wuzhang-ai/index.html">无障碍访问</a> ·
+            <a href="/zh-hans/yinsi/index.html">隐私</a> ·
+            <a href="/zh-hans/tiaokuan/index.html">条款</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"zh-hans"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"zh-hans"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":165,"headline":"用多模态 LLM 推进 AI：MM1 的启示","description":"Apple MM1 研究为多模态大型语言模型（MLLM）的预训练揭示关键架构与数据组成洞察。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/mm1-visual.webp","width":"100vw","height":"100vh","caption":"Apple MM1 横幅"},"url":"https://sebastienrousseau.com/zh-hans/2024-03-18-yong-duomotai-llm-tuijin-ai-mm1-qishi/","datePublished":"2024-03-18T06:06:06+00:00","dateModified":"2026-05-11","inLanguage":"zh-hans","keywords":"MM1, 多模态 AI, MLLM, 大型语言模型, Apple 研究, 视觉语言, 图像编码器, 少样本学习, MoE, 跨注意力","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hans/2024-03-18-yong-duomotai-llm-tuijin-ai-mm1-qishi/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"zh-hans"},"citation":[{"@type":"CreativeWork","url":"https://arxiv.org/abs/2403.09611"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/zh-hans/"},{"@type":"ListItem","position":3,"name":"用多模态 LLM 推进 AI：MM1 的启示","item":"https://sebastienrousseau.com/zh-hans/2024-03-18-yong-duomotai-llm-tuijin-ai-mm1-qishi/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="搜索">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>搜索</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="搜索">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="搜索文档…" autocomplete="off" aria-label="搜索"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 关闭</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 导航</span><span><kbd>Enter</kbd> 打开</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

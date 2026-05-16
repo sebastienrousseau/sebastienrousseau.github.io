@@ -1,0 +1,28 @@
+{
+  "_comment": "Simplified Chinese (zh-hans) topic-cluster titles + ledes — DRAFT pending native review. Topic slugs are language-independent; only the displayed name and lede change. EN equivalents live in scripts/build_topics.py (TOPICS dict).",
+  "post-quantum-cryptography": {
+    "title": "后量子密码学",
+    "lede": "基于格的密码学、NIST PQC 标准、抗量子支付，以及「先收割、后解密」的威胁。面向金融服务安全团队的研究笔记、开源库与迁移手册。",
+    "description": "基于格的密码学、NIST PQC 标准、抗量子支付，以及「先收割、后解密」的威胁。面向金融服务安全团队的研究笔记、开源库与迁移手册。"
+  },
+  "iso-20022-payments": {
+    "title": "ISO 20022 与支付",
+    "lede": "跨境报文迁移、结构化地址合规、SEPA Instant、SWIFT gpi，以及支撑一切的批发支付通道。工具、操作手册与监管时间表。",
+    "description": "跨境报文迁移、结构化地址合规、SEPA Instant、SWIFT gpi，以及支撑一切的批发支付通道。工具、操作手册与监管时间表。"
+  },
+  "applied-ai-banking": {
+    "title": "应用人工智能于银行业",
+    "lede": "生成式人工智能、多模态大语言模型、语音与语音模型——以及它们如何重塑一流机构的银行运营、客户服务和产品工程。",
+    "description": "生成式人工智能、多模态大语言模型、语音与语音模型——以及它们如何重塑一流机构的银行运营、客户服务和产品工程。"
+  },
+  "rust-open-source": {
+    "title": "Rust 与开源",
+    "lede": "我编写和维护的开源 Rust 库：日志、代码生成、日期与时间、密码学原语、基于 Kyber 的 KEM，以及一个用 Rust 编写的静态站点生成器。",
+    "description": "我编写和维护的开源 Rust 库：日志、代码生成、日期与时间、密码学原语、基于 Kyber 的 KEM，以及一个用 Rust 编写的静态站点生成器。"
+  },
+  "blockchain-digital-assets": {
+    "title": "区块链与数字资产",
+    "lede": "区块链与数字资产：代币化、ERC-20、稳定币、加密货币基础设施，以及塑造它们的监管框架。",
+    "description": "区块链与数字资产：代币化、ERC-20、稳定币、加密货币基础设施，以及塑造它们的监管框架。"
+  }
+}

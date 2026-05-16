@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-21-2026-zuijia-yun-jichu-jiagou/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图</news:title>
+    <news:keywords>云架构 2026, AI 原生基础设施, 多云, 无服务器, 边缘计算, WebAssembly, DevSecOps, 液体冷却, 代理式商业, 量子安全, CloudCDN</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
+    <news:title>面向银行的代理式工程：2026 年高管团队与工程师蓝图</news:title>
+    <news:keywords>代理式工程, 规范驱动开发, 银行, 金融服务, AI 治理, 欧盟 AI 法案, DORA, SR 11-7, COBOL 现代化, Claude Code</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-15-beilaide-brsrv-bstbl-genius-fa-an-daibihua-mmf/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-15T06:06:06+00:00</news:publication_date>
+    <news:title>另一种名义下的稳定币收益：贝莱德 BRSRV 与 BSTBL 文件解码</news:title>
+    <news:keywords>贝莱德, BRSRV, BSTBL, GENIUS 法案, 稳定币, 代币化, 货币市场基金, BUIDL, 以太坊, BNY Mellon</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-14-baozhang-zhangbu-hou-liangzi-qianyi-qiye-jinrong/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-14T06:06:06+00:00</news:publication_date>
+    <news:title>保障账簿：后量子迁移面向企业金融的董事会级指南</news:title>
+    <news:keywords>后量子密码学, PQC, ML-KEM, ML-DSA, FIPS 203, FIPS 204, G7, BIS Project Leap, HNDL, Mosca 方程</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-12-iso-20022-pacs008-jiegouhua-dizhi-jiezhi-riqi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-12T06:06:06+00:00</news:publication_date>
+    <news:title>2026 年 11 月 pacs.008 结构化地址截止日期：六个月视角</news:title>
+    <news:keywords>ISO 20022, pacs.008, 结构化地址, SWIFT, CBPR+, SR2026, 跨境支付, 制裁筛查, pain.001, 银行业</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-11-lucy-besson-zhishi-zhuanyi-ai-yu-liangzi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-11T06:06:06+00:00</news:publication_date>
+    <news:title>重温露西的 U 盘：贝松所看到的知识向机器迁移</news:title>
+    <news:keywords>露西, 卢克·贝松, AI, 大型语言模型, 量子计算, 中性原子, 全脑模拟, Neuralink, 知识迁移, 基质独立</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-04-11-liangzi-yuzhi-zai-yi-dong/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-04-11T06:06:06+00:00</news:publication_date>
+    <news:title>量子阈值再次移动：10,000 量子比特的 Shor 风险</news:title>
+    <news:keywords>Shor 算法, 量子计算, 后量子密码学, 中性原子量子比特, ECC, RSA, NIST, CRYSTALS-Kyber, 量子阈值, 错误纠正</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2025-09-01-kang-liangzi-zhifu-epaa/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2025-09-01T06:06:06+00:00</news:publication_date>
+    <news:title>抗量子支付：行业必须立即行动（EPAA）</news:title>
+    <news:keywords>EPAA, 抗量子支付, 后量子密码学, ML-KEM, ML-DSA, SWIFT, SEPA, HNDL, NIST, FIPS 203</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2024-04-22-gezhuang-mima-liangzi-suanfa-faxian-louhdong/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2024-04-22T06:06:06+00:00</news:publication_date>
+    <news:title>格基密码学的量子算法中发现漏洞</news:title>
+    <news:keywords>陈逸雷, LWE, 量子算法, 格密码学, NIST, 后量子密码学, Kyber, Dilithium, BGV, TFHE</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2024-04-15-liangzi-suanfa-tiaozhan-gezhuang-mima-xue/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2024-04-15T06:06:06+00:00</news:publication_date>
+    <news:title>量子算法挑战格状密码学</news:title>
+    <news:keywords>量子算法, LWE, 格密码学, 陈逸雷, GapSVP, SIVP, 后量子密码学, 量子傅里叶变换, 高斯函数, 安全</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2024-04-01-openvoice-yuyin-kelong-jishu-de-lingxian-chuangxin/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2024-04-01T06:06:06+00:00</news:publication_date>
+    <news:title>OpenVoice：语音克隆技术的领先创新</news:title>
+    <news:keywords>OpenVoice, 语音克隆, MIT, 清华大学, MyShell, 零样本, 跨语言, 语音合成, 开源, 负责任 AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2024-03-25-liangzi-yinhang-shidai-de-quan-tongtai-jiami/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-25T06:06:06+00:00</news:publication_date>
+    <news:title>量子银行时代的全同态加密</news:title>
+    <news:keywords>全同态加密, FHE, 同态加密, 银行业, 金融, 量子计算, 后量子, 格密码, 隐私, Zama</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2024-03-18-yong-duomotai-llm-tuijin-ai-mm1-qishi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-18T06:06:06+00:00</news:publication_date>
+    <news:title>用多模态 LLM 推进 AI：MM1 的启示</news:title>
+    <news:keywords>MM1, 多模态 AI, MLLM, 大型语言模型, Apple 研究, 视觉语言, 图像编码器, 少样本学习, MoE, 跨注意力</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2024-03-12-yong-openai-whisper-biange-macos-shishi-yuyin-shibie/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-12T06:06:06+00:00</news:publication_date>
+    <news:title>用 OpenAI Whisper 变革 macOS 实时语音识别</news:title>
+    <news:keywords>OpenAI Whisper, ASR, 语音识别, Metal Performance Shaders, MPS, macOS, GPU, 实时, 隐私, 设备端</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2024-03-08-rustlogs-rust-ying-yong-de-gaoji-rizhi-ku/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-08T06:06:06+00:00</news:publication_date>
+    <news:title>RustLogs：面向 Rust 应用的高级日志库</news:title>
+    <news:keywords>RustLogs, RLG, Rust, 日志, 结构化日志, 异步, JSON, CEF, Logstash, 性能</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2024-03-04-mistral-ai-le-chat-duihua-shi-ai-de-xin-shidai/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-04T06:06:06+00:00</news:publication_date>
+    <news:title>Mistral AI 的 Le Chat：对话式 AI 的新时代</news:title>
+    <news:keywords>Le Chat, Mistral AI, 对话式 AI, 多语言, 定制化, 离线能力, 生成式 AI, ChatGPT, 企业 AI, NLP</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2024-02-26-google-gemma-zhuanxing-kaiyuan-ai-kaifa/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-26T06:06:06+00:00</news:publication_date>
+    <news:title>Google Gemma：转型开源 AI 开发</news:title>
+    <news:keywords>Google Gemma, 开源 AI, Gemini, Ollama, macOS, 2B, 7B, 大型语言模型, 合伦理 AI, 企业应用</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2024-02-19-jiedu-gemini-google-ai-biange-jiexi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-19T06:06:06+00:00</news:publication_date>
+    <news:title>解读 Gemini：Google AI 革命解析</news:title>
+    <news:keywords>Gemini 1.5, Google AI, 大型语言模型, MoE 架构, 上下文窗口, 多模态, AI 伦理, 性能基准, Google DeepMind</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2024-02-13-oumeng-ai-fa-an-suzao-quanqiu-ai-jianguan-weilai/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-13T06:06:06+00:00</news:publication_date>
+    <news:title>欧盟 AI 法案：塑造全球 AI 监管的未来</news:title>
+    <news:keywords>欧盟 AI 法案, AI 监管, 风险等级, 透明度, 基本权利, GDPR, 合伦理 AI, 高风险应用, 创新, 全球治理</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2024-02-12-akande-yuyin-zhushou-biange-geren-yu-gaoguan-fuwu/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
+    <news:title>Àkàndé 语音助手：变革个人与高管协助</news:title>
+    <news:keywords>Àkàndé, 语音助手, GPT, Python, OpenAI, 自然语言理解, PDF 摘要, SQLite, 缓存, 高管助手</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2024-02-08-ai-ruhe-suzao-guanggao-ye-de-weilai/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-08T06:06:06+00:00</news:publication_date>
+    <news:title>革新广告业：AI 如何塑造未来</news:title>
+    <news:keywords>AI 广告, 亚马逊 Rufus, Meta, 生成式 AI, 个性化, 对话商业, 创意工具, 投资回报率, 广告策略, 消费者参与</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2024-01-29-ai-yinpin-fenxi-fanyi-yu-jianjie/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
+    <news:title>AI 驱动的音频分析、翻译与洞察</news:title>
+    <news:keywords>Audio Analyser, Azure AI, 语音转文本, 自然语言处理, 情感分析, 多语言翻译, 客户服务, 市场研究, 医疗, 金融</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2024-01-23-ai-tishici-gongcheng-de-jinzhan/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-23T06:06:06+00:00</news:publication_date>
+    <news:title>AI 提示词工程的进展</news:title>
+    <news:keywords>提示词工程, AI, 自定义指令, 多角色, 思维链, 向量数据库, 零样本, 小样本, 量子计算, AI 伦理</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2024-01-15-alien-studio-yong-ai-sheying-biange-yishu/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-15T06:06:06+00:00</news:publication_date>
+    <news:title>Alien Studio：用 AI 摄影变革艺术</news:title>
+    <news:keywords>Alien Studio, AI 摄影, MidJourney, Rust, 人工智能, 量子计算, 数字艺术, 摄影, 创意, 数字文艺复兴</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2024-01-08-yong-ibm-qiskit-yu-liangzi-fuliye-bianhuan-youhua-xindai-fenxi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-08T06:06:06+00:00</news:publication_date>
+    <news:title>用 IBM Qiskit 与量子傅里叶变换优化信用比率分析</news:title>
+    <news:keywords>IBM Qiskit, 量子傅里叶变换, QFT, 信用比率分析, 量子计算, 金融, 风险管理, 银行业, qubit, 量子算法</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2024-01-01-ai-qushi-2024-jianjie-yu-yuce/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-01T06:06:06+00:00</news:publication_date>
+    <news:title>AI 趋势 2024：洞察与对未来的预测</news:title>
+    <news:keywords>AI 趋势 2024, 生成式 AI, 多模态模型, 客户服务, 网络安全, 教育, 气候变化, 金融, 零售, 伦理</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2023-12-25-ai-zengqiang-de-liangzi-suanfa-biange-jinrong/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2023-12-25T06:06:06+00:00</news:publication_date>
+    <news:title>用 AI 增强的量子算法变革金融</news:title>
+    <news:keywords>量子算法, 量子傅里叶变换, QFT, Grover 算法, 金融 AI, 高盛, BBVA, 桑坦德, TerraQuantum, 风险管理</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2023-12-18-yinhang-ye-ai-yu-liangzi-jisuan-2023-huigu/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2023-12-18T06:06:06+00:00</news:publication_date>
+    <news:title>银行业 AI 与量子计算：2023 年回顾</news:title>
+    <news:keywords>AI, 量子计算, 银行业, HSBC, QKD, LLaMA 2, Mixtral, GPT-NeoX, AI 治理, 布莱切利宣言</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2023-12-11-liangzi-miyao-fenfa-yinhang-anquan-de-biange/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2023-12-11T06:06:06+00:00</news:publication_date>
+    <news:title>量子密钥分发：银行安全的变革</news:title>
+    <news:keywords>量子密钥分发, QKD, 量子纠缠, 量子计算, HSBC, BT, 东芝, AWS, 银行业网络安全, 后量子密码学</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2023-12-04-yong-dtt-ku-zhangwo-rust-de-riqi-yu-shijian/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2023-12-04T06:06:06+00:00</news:publication_date>
+    <news:title>用 DTT 库掌握 Rust 中的日期与时间</news:title>
+    <news:keywords>DTT, DateTime, Rust, 日期时间, 时区, 解析, 验证, 格式化, Cargo, 开源</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2023-11-28-kyberlib-duikang-liangzi-weixie-de-rust-dunpai/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-28T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib：抵御量子威胁的 Rust 盾牌</news:title>
+    <news:keywords>KyberLib, Rust, CRYSTALS-Kyber, 后量子密码学, 量子安全, 格密码学, no-std, WebAssembly, NIST, 嵌入式系统</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2023-11-19-crystals-kyber-liangzi-shidai-de-baohu-suanfa/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-19T06:06:06+00:00</news:publication_date>
+    <news:title>CRYSTALS-Kyber：量子时代的守护算法</news:title>
+    <news:keywords>CRYSTALS-Kyber, 后量子密码学, KEM, LWE, 格密码学, NIST, Kyber512, Kyber768, Kyber1024, 银行业</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
+    <news:title>探索生成式人工智能</news:title>
+    <news:keywords>生成式 AI, 人工智能, GPT-4, 大型语言模型, Transformer, GAN, 自动编码器, 扩散模型, 多模态 AI, 可解释 AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2023-11-05-rust-anquan-de-shuxue-yu-mima-changshu/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-05T06:06:06+00:00</news:publication_date>
+    <news:title>Rust 安全所需的数学与密码常数</news:title>
+    <news:keywords>CMN, Common 库, Rust, 数学常数, 密码常数, RSA, 椭圆曲线, π, e, 后量子密码学</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2023-10-26-libmake-rust-ku-de-daima-shengchengqi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2023-10-26T06:06:06+00:00</news:publication_date>
+    <news:title>LibMake：减少重复任务、构建高质量 Rust 库的代码生成器</news:title>
+    <news:keywords>LibMake, Rust 库, 代码生成器, 模板, 脚手架, 最佳实践, GitHub Actions, 开源, Cargo, CLI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2023-10-16-liangzi-shidai-shuju-baohu-hsh-haxi-ku/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2023-10-16T06:06:06+00:00</news:publication_date>
+    <news:title>量子时代的数据保护：哈希库 HSH</news:title>
+    <news:keywords>HSH, 哈希库, 后量子密码学, 抗量子密码, Argon2i, BScrypt, Scrypt, Rust, NIST, PQC</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2023-10-09-shokunin-zuikuai-de-rust-jingtai-zhandian-shengchengqi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2023-10-09T06:06:06+00:00</news:publication_date>
+    <news:title>Shokunin：最快的基于 Rust 的静态网站生成器</news:title>
+    <news:keywords>Shokunin, 静态网站生成器, SSG, Rust, Markdown, SEO, WCAG, ADA, PWA, RSS</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2023-09-29-yong-pain001-zidonghua-iso-20022-zhifu-wenjian/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
+    <news:title>用 pain001 自动化创建符合 ISO 20022 标准的支付文件</news:title>
+    <news:keywords>ISO 20022, pain.001, pain001, 支付自动化, HVPS+, CBPR+, SEPA, 跨境支付, Python 库, 开源</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2018-02-15-express-transaction-credits-pingtai-de-jianli/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
+    <news:title>Express Transaction Credits 平台的诞生</news:title>
+    <news:keywords>EXTC, ERC-223, 以太坊, 智能合约, 去中心化交易所, 即时贷款, 跨境支付, 金融普惠, 代币, 区块链</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
+    <news:title>推出新的加密货币与面向未来的更快支付方案</news:title>
+    <news:keywords>EXTC, 加密货币, 更快支付, 分布式账本, 智能合约, 以太坊, EIP20, 跨境支付, 即时贷款, 区块链</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2018-01-24-erc-20-daibi-biaozhun/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-24T06:06:06+00:00</news:publication_date>
+    <news:title>ERC-20 代币标准</news:title>
+    <news:keywords>ERC-20, 以太坊, 代币标准, 智能合约, DeFi, 去中心化金融, 代币化, Solidity, dApps, 区块链</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2018-01-09-lijie-quqiulian-beihou-de-jishu/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
+    <news:title>理解区块链背后的技术</news:title>
+    <news:keywords>区块链, 以太坊, 智能合约, Solidity, 加密货币, 代币化, ERC-20, dApps, Geth, 测试网</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2018-01-02-quqiulian-2018-zui-zhongyao-de-jishu/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-02T06:06:06+00:00</news:publication_date>
+    <news:title>区块链：2018 年最重要的技术</news:title>
+    <news:keywords>区块链, 加密货币, 分布式账本, 智能合约, 去中心化金融, 供应链, 数字身份, 共识机制, 银行业, 金融科技</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2018-01-01-bitebi-niandu-huigu/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-01T06:06:06+00:00</news:publication_date>
+    <news:title>比特币：首个加密货币的年度回顾</news:title>
+    <news:keywords>比特币, 加密货币, 区块链, 点对点, 双重支付, 挖矿, 工作量证明, ETF, 中本聪, 去中心化金融</news:keywords>
+  </news:news>
+</url>
+</urlset>

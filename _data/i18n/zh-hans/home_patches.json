@@ -1,0 +1,317 @@
+{
+  "_comment": "Simplified Chinese (zh-hans) home-page chrome patches — DRAFT pending native review. Pairs of [regex, replacement] applied to the EN homepage shell.",
+  "patches": [
+    [
+      ">Authored &amp; maintained<",
+      ">作者编写并维护<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">作者编写并维护<"
+    ],
+    [
+      ">Shaping the future of banking<br>through AI, payments,<br>and quantum-safe security\\.</h1>",
+      ">通过人工智能、支付<br>与抗量子安全，<br>塑造银行业的未来。</h1>"
+    ],
+    [
+      ">Applying AI and quantum-safe security to the future of payments\\.</p>",
+      ">将人工智能与抗量子安全应用于支付的未来。</p>"
+    ],
+    [
+      "id=practice>Open source for the<br>future of finance\\.</h2>",
+      "id=practice>面向金融未来的<br>开源。</h2>"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">面向金融未来的开源。<"
+    ],
+    [
+      ">A portfolio of Python, Rust and JavaScript libraries I created and maintain\\. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography\\.<",
+      ">我所创建并维护的 Python、Rust 与 JavaScript 库组合。开源、可自由使用，应用于批发支付、跨境结算、金融数据与抗量子密码学。<"
+    ],
+    [
+      ">Browse all projects<",
+      ">浏览所有项目<"
+    ],
+    [
+      ">Python · Payments<",
+      ">Python · 支付<"
+    ],
+    [
+      ">Python · Cross-border<",
+      ">Python · 跨境<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · 金融<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · 安全<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · 量子<"
+    ],
+    [
+      ">Rust · YAML<",
+      ">Rust · YAML<"
+    ],
+    [
+      ">Learn about ([A-Za-z0-9 ()_-]+)</a>",
+      ">了解 \\1</a>"
+    ],
+    [
+      "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
+      "<p>一个 Python 库，可从 CSV 或 SQLite 自动生成 <strong>ISO 20022 pain.001</strong> 支付文件。为 SWIFT、SEPA 及主要清算系统从 MT/MX 向结构化报文的全球迁移而构建。</p>"
+    ],
+    [
+      "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
+      "<p>生成、校验并投递 <strong>ISO 20022 pacs.008</strong> 金融机构间客户信用转账报文。支持 JSON Schema、XSD 校验、75 个国家的 IBAN，以及符合 GDPR/PCI-DSS 的个人数据脱敏。</p>"
+    ],
+    [
+      "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
+      "<p>一款金融级 Python 工具包，可将多格式银行对账单转换为结构化数据。专为真实世界中的对账单文件以及受监管环境的审计要求而设计。</p>"
+    ],
+    [
+      "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
+      "<p>一个用于密码加密与验证的 Rust 库，实现了<strong>安全的哈希与摘要算法</strong>。采用抗量子姿态设计，面向后量子时代的身份认证。</p>"
+    ],
+    [
+      "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
+      "<p><strong>CRYSTALS-Kyber</strong> 的稳健 Rust 实现，对应 NIST FIPS 203 通用后量子加密标准。抗量子支付身份认证的基础。</p>"
+    ],
+    [
+      "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
+      "<p>一个<strong>纯 Rust 实现的 YAML 1.2 生态</strong>。零 unsafe，100% 规范符合度（官方测试套件 406/406），流式优先的 serde，无损 CST 与 JSON-Schema 校验。库 + CLI（noyafmt、noyavalidate）+ LSP + MCP + WASM 绑定。</p>"
+    ],
+    [
+      "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
+      "量子计算威胁金融服务的密码学根基。从实时支付到跨境结算所依赖的防护，终将被量子计算所淘汰。"
+    ],
+    [
+      ">Quantum-Safe Payments white paper · September 2025 · Read the paper<",
+      ">Quantum-Safe Payments 白皮书 · 2025 年 9 月 · 阅读白皮书<"
+    ],
+    [
+      ">Read the paper<",
+      ">阅读白皮书<"
+    ],
+    [
+      ">Quantum-Safe Payments\\.</h2>",
+      ">抗量子支付。</h2>"
+    ],
+    [
+      ">Quantum-Safe Payments\\.<",
+      ">抗量子支付。<"
+    ],
+    [
+      ">Industry white paper for the Emerging Payments Association Asia\\.\\s*The structural threat quantum computing poses to payment infrastructure, and the case for coordinated action now\\.<",
+      ">为 Emerging Payments Association Asia 撰写的行业白皮书。量子计算对支付基础设施构成的结构性威胁，以及立即采取协同行动的必要性。<"
+    ],
+    [
+      ">Why the payments industry must act now\\.<",
+      ">为何支付行业必须立即行动。<"
+    ],
+    [
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
+      ">监管机构正将「先收割、后解密」视为当前可信的风险。本白皮书阐述了这一结构性威胁，以及在批发支付通道上协同行动的紧迫性。</p>"
+    ],
+    [
+      ">Latest<",
+      ">最新<"
+    ],
+    [
+      ">From the desk\\.<",
+      ">来自案头。<"
+    ],
+    [
+      ">Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments\\.<",
+      ">关于抗量子密码学、ISO 20022 迁移与批发支付未来的近期研究与写作。<"
+    ],
+    [
+      "<p class=newsroom-excerpt>Stablecoins cannot pay yield under the GENIUS Act\\. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail\\.</p>",
+      "<p class=newsroom-excerpt>根据 GENIUS Act，稳定币不能支付收益。贝莱德 BRSRV 与 BSTBL 的备案展示了变通之道——一只代币化货币市场基金与受监管的稳定币并行运行，通过相邻的合规通道提供收益。</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>Quantum risk has moved from research curiosity to active regulatory mandate\\. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate\\.</p>",
+      "<p class=newsroom-excerpt>量子风险已从学术好奇变为现实监管要求。随着 2026 年 1 月七国集团路线图的发布，以及国际清算银行 Project Leap 在真实支付系统中验证了可行性，董事会层面的问题不再是「是否迁移」。</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\\.</p>",
+      "<p class=newsroom-excerpt>自 2026 年 11 月起，SWIFT CBPR+ 将拒绝跨境支付报文中的非结构化邮政地址。距离生效仅剩六个月，65% 的 pacs.008 报文仍携带不合规的地址，44% 的银行在整改计划上仍处于落后状态。</p>"
+    ],
+    [
+      ">See all articles\\b",
+      ">查看所有文章"
+    ],
+    [
+      "<p class=feat-eyebrow>Get in touch</p>",
+      "<p class=feat-eyebrow>联系我</p>"
+    ],
+    [
+      ">Unlocking the Future of Banking and Financial Services\\.<br>Discover the latest news from</h2>",
+      ">解锁银行业与金融服务的未来。<br>了解最新动态来自</h2>"
+    ],
+    [
+      "<p class=\\\"feat-sub center\\\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.</p>",
+      "<p class=\"feat-sub center\">无论是批发支付战略、ISO 20022 迁移，还是面向金融服务的抗量子密码学，我都乐于交流。</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">开启对话</a>"
+    ],
+    [
+      "<a class=pill href=\"?/articles/index\\.html\"?>Read latest research</a>",
+      "<a class=pill href=\"/zh-hans/wenzhang/index.html\">阅读最新研究</a>"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/zh-hans/lianxi/index.html\">联系我</a>"
+    ],
+    [
+      "href=\"?/papers/index\\.html\"?>Read the paper</a>",
+      "href=\"/zh-hans/lunwen/index.html\">阅读白皮书</a>"
+    ],
+    [
+      "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
+      "href=\"/zh-hans/2026-05-15-beilaide-brsrv-bstbl-genius-fa-an-daibihua-mmf/index.html\">阅读文章</a>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Writing</h2>",
+      "<h2 class=ap-foot-title>文章</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Work</h2>",
+      "<h2 class=ap-foot-title>工作</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Reach</h2>",
+      "<h2 class=ap-foot-title>联系</h2>"
+    ],
+    [
+      "<a href=/about/index\\.html>About</a>",
+      "<a href=/zh-hans/guanyu/index.html>关于</a>"
+    ],
+    [
+      "<a href=/papers/index\\.html>Papers</a>",
+      "<a href=/zh-hans/lunwen/index.html>论文与白皮书</a>"
+    ],
+    [
+      "<a href=/projects/index\\.html>Projects</a>",
+      "<a href=/zh-hans/xiangmu/index.html>项目</a>"
+    ],
+    [
+      "<a href=/playlists/index\\.html>Playlists</a>",
+      "<a href=/zh-hans/boqing/index.html>播放列表</a>"
+    ],
+    [
+      "<a href=/contact/index\\.html>Contact</a>",
+      "<a href=/zh-hans/lianxi/index.html>联系</a>"
+    ],
+    [
+      "<a href=/tags/index\\.html>Tags</a>",
+      "<a href=/zh-hans/biaoqian/index.html>标签</a>"
+    ],
+    [
+      "<a href=/articles/index\\.html>Articles</a>",
+      "<a href=/zh-hans/wenzhang/index.html>文章</a>"
+    ],
+    [
+      "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
+      "<a href=/zh-hans/yong-static-site-generator-zhizuo/index.html>使用 Static Site Generator 构建</a>"
+    ],
+    [
+      "<a href=/accessibility/index\\.html>Accessibility</a>",
+      "<a href=/zh-hans/wuzhang-ai/index.html>无障碍访问</a>"
+    ],
+    [
+      "<a href=/privacy/index\\.html>Privacy</a>",
+      "<a href=/zh-hans/yinsi/index.html>隐私</a>"
+    ],
+    [
+      "<a href=/terms/index\\.html>Terms</a>",
+      "<a href=/zh-hans/tiaokuan/index.html>条款</a>"
+    ],
+    [
+      ">Experience<",
+      ">经历<"
+    ],
+    [
+      ">Brands along the way\\.<",
+      ">一路走过的品牌。<"
+    ],
+    [
+      ">From global Tier-1 banks to consumer technology\\. Payments and digital product leadership across HSBC, PayPal, Barclays, Shazam, AKQA and Virgin Group\\.</p>",
+      ">从全球一级银行到消费科技。在汇丰、PayPal、巴克莱、Shazam、AKQA 与维珍集团担任支付与数字产品的领导职责。</p>"
+    ],
+    [
+      "alt=\"PayPal logo\"",
+      "alt=\"PayPal 标志\""
+    ],
+    [
+      "alt=\"Barclays logo\"",
+      "alt=\"巴克莱标志\""
+    ],
+    [
+      "alt=\"Shazam logo\"",
+      "alt=\"Shazam 标志\""
+    ],
+    [
+      "alt=\"AKQA logo\"",
+      "alt=\"AKQA 标志\""
+    ],
+    [
+      "alt=\"Virgin logo\"",
+      "alt=\"维珍标志\""
+    ],
+    [
+      "alt=\"HSBC logo\"",
+      "alt=\"汇丰标志\""
+    ],
+    [
+      ">Read more<",
+      ">阅读更多<"
+    ],
+    [
+      ">Read the article<",
+      ">阅读文章<"
+    ],
+    [
+      ">Read latest research<",
+      ">阅读最新研究<"
+    ],
+    [
+      ">Read full article<",
+      ">阅读完整文章<"
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">联系我 ›</a>"
+    ],
+    [
+      ">Payments · Stablecoins<",
+      ">支付 · 稳定币<"
+    ],
+    [
+      ">Payments · ISO 20022<",
+      ">支付 · ISO 20022<"
+    ],
+    [
+      ">Quantum<",
+      ">量子<"
+    ],
+    [
+      ">Quantum · Banking<",
+      ">量子 · 银行业<"
+    ],
+    [
+      ">Quantum · Cryptography<",
+      ">量子 · 密码学<"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">阅读白皮书</a>"
+    ]
+  ]
+}

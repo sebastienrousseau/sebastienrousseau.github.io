@@ -1,0 +1,15 @@
+{
+  "_comment": "Simplified Chinese (zh-hans) body-text labels — DRAFT pending native review. Key set MUST stay in sync with _data/i18n/en/labels.json; CI gate test_i18n_labels.py enforces parity.",
+  "Published": "发布于",
+  "Updated": "更新于",
+  "min read": "分钟阅读",
+  "Previous": "上一篇",
+  "Next": "下一篇",
+  "Sources & references": "来源与参考",
+  "About the author": "关于作者",
+  "Topics": "主题",
+  "Contents": "目录",
+  "Estimated read time": "预计阅读时间",
+  "Article pagination": "文章分页",
+  "Link to": "链接至"
+}
