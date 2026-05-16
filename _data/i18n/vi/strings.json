@@ -1,0 +1,65 @@
+{
+  "_comment": "Vietnamese UI strings. Formal banking register. Key set MUST stay in sync with _data/i18n/en/strings.json — CI gate test_i18n_strings.py enforces parity.",
+
+  "nav.aria.skipToMain": "Chuyển đến nội dung chính",
+  "nav.aria.toggleNav": "Bật/tắt điều hướng",
+  "nav.aria.toggleNavTitle": "Bật/tắt điều hướng",
+  "nav.aria.primary": "Điều hướng chính",
+  "nav.aria.darkTheme": "Chuyển sang giao diện tối",
+  "nav.aria.lightTheme": "Chuyển sang giao diện sáng",
+  "nav.aria.themeToggleTitle": "Đổi giao diện",
+  "nav.aria.searchKbd": "Tìm kiếm (Cmd hoặc Ctrl + K)",
+  "nav.aria.searchTitle": "Tìm kiếm (⌘K)",
+  "nav.aria.contactCTA": "Liên hệ với tôi",
+  "nav.contactCTA": "Liên hệ ›",
+  "nav.aria.brandHome": "Trang chủ của Sebastien Rousseau",
+  "nav.aria.backToTop": "Lên đầu trang",
+
+  "search.label": "Tìm kiếm",
+  "search.placeholder": "Tìm trong tài liệu...",
+  "search.kbdEsc": "đóng",
+  "search.kbdNavigate": "điều hướng",
+  "search.kbdEnter": "mở",
+  "search.buttonLabel": "Tìm kiếm",
+
+  "footer.title.writing": "Bài viết",
+  "footer.title.work": "Hoạt động",
+  "footer.title.reach": "Kết nối",
+  "footer.aria.socialLinks": "Liên kết mạng xã hội",
+  "footer.aria.socialPrefix": "Sebastien Rousseau trên ",
+  "footer.copyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Đã đăng ký bản quyền.",
+
+  "feeds.atomTitle": "Nguồn cấp Atom",
+  "feeds.rssTitle": "Nguồn cấp RSS",
+  "feeds.channelTitle": "Sebastien Rousseau — Ấn bản tiếng Việt",
+  "feeds.channelDescription": "Bài viết tiếng Việt: AI ứng dụng, thanh toán ISO 20022, mật mã hậu lượng tử và chuyển đổi thanh toán bán buôn.",
+  "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Đã đăng ký bản quyền.",
+  "feeds.jsonFeedTitle": "Sebastien Rousseau — Bài viết (tiếng Việt)",
+
+  "lang.aria.langGroup": "Ngôn ngữ",
+  "lang.aria.changeLangPrefix": "VI, Đổi ngôn ngữ",
+  "lang.title.changeLang": "Đổi ngôn ngữ",
+  "lang.title.comingSoon": "Sắp ra mắt",
+  "lang.currentLabel": "VI",
+
+  "article.aria.summary": "Tóm tắt bài viết",
+  "article.keyTakeaways": "Điểm chính",
+  "article.relatedReadingInline": "Bài liên quan:",
+  "article.relatedHeading": "Bài liên quan",
+  "article.lastReviewedLabel": "Cập nhật lần cuối ",
+
+  "author.aria.aboutAuthor": "Về tác giả",
+  "author.fullProfile": "Hồ sơ đầy đủ",
+  "author.alt.portrait": "Chân dung Sebastien Rousseau",
+
+  "newsletter.aria.signup": "Đăng ký bản tin",
+  "newsletter.blurb": "Banking On Quantum — ghi chú nghiên cứu về thanh toán, AI và mật mã hậu lượng tử. Không spam.",
+  "newsletter.placeholder": "ban@nganhang.vn",
+  "newsletter.subject": "Đăng ký bản tin — sebastienrousseau.com",
+  "newsletter.submit": "Đăng ký",
+
+  "home.eyebrow.contact": "Liên hệ với tôi",
+  "home.cta.startConversation": "Bắt đầu trò chuyện",
+
+  "listing.readLatest": "Đọc nghiên cứu mới nhất"
+}

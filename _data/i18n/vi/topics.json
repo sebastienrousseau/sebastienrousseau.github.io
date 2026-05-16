@@ -1,0 +1,23 @@
+{
+  "_comment": "Topic-cluster titles + ledes per language. Topic slugs are language-independent; only the displayed name and lede change. EN equivalents live in scripts/build_topics.py (TOPICS dict).",
+  "post-quantum-cryptography": {
+    "title": "Mật mã hậu lượng tử",
+    "lede": "Mật mã dựa trên mạng tinh thể, tiêu chuẩn NIST PQC, thanh toán an toàn lượng tử và mối đe doạ « thu thập ngay, giải mã sau ». Ghi chú nghiên cứu, thư viện mã nguồn mở và sổ tay chuyển đổi cho các nhóm bảo mật trong dịch vụ tài chính."
+  },
+  "iso-20022-payments": {
+    "title": "ISO 20022 & Thanh toán",
+    "lede": "Chuyển đổi tin nhắn xuyên biên giới, tuân thủ địa chỉ có cấu trúc, SEPA Instant, SWIFT gpi và các đường ray thanh toán bán buôn nâng đỡ tất cả. Công cụ, sổ tay và lịch trình quy định."
+  },
+  "applied-ai-banking": {
+    "title": "AI ứng dụng trong ngân hàng",
+    "lede": "AI tạo sinh, LLM đa phương thức, giọng nói và mô hình lời nói — cùng cách chúng định hình lại vận hành ngân hàng, dịch vụ khách hàng và kỹ thuật sản phẩm tại các tổ chức hàng đầu."
+  },
+  "rust-open-source": {
+    "title": "Rust & Mã nguồn mở",
+    "lede": "Các thư viện Rust mã nguồn mở mà tôi viết và bảo trì: ghi nhật ký, sinh mã, ngày-giờ, nguyên thuỷ mật mã, KEM dựa trên Kyber và một bộ tạo trang tĩnh viết bằng Rust."
+  },
+  "blockchain-digital-assets": {
+    "title": "Blockchain & Tài sản số",
+    "lede": "Blockchain và tài sản số: token hoá, ERC-20, stablecoin, hạ tầng tiền mã hoá và khung quy định định hình chúng."
+  }
+}

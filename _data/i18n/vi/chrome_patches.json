@@ -1,0 +1,289 @@
+{
+  "_comment": "VI chrome patches (inline portion only — the auto-generated portion comes from strings.json via _lang_registry.build_chrome_patches).",
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"Đăng ký bản tin\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum — ghi chú nghiên cứu về thanh toán, AI và mật mã hậu lượng tử. Không spam."
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"ban@nganhang.vn\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"Đăng ký bản tin — sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">Đăng ký</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">Chuyển đến nội dung chính</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"Bật/tắt điều hướng\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"Bật/tắt điều hướng\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"Điều hướng chính\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"Chuyển sang giao diện tối\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"Chuyển sang giao diện sáng\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"Đổi giao diện\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"Tìm kiếm (Cmd hoặc Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"Tìm kiếm (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"Liên hệ với tôi\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Liên hệ ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">Liên hệ với tôi</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Trang chủ của Sebastien Rousseau\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/vi/gioi-thieu/index.html\">Giới thiệu</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/vi/cong-trinh/index.html\">Công trình</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/vi/chu-de/index.html\">Chủ đề</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/vi/du-an/index.html\">Dự án</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/vi/bai-viet/index.html\">Bài viết</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/vi/lien-he/index.html\">Liên hệ</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/vi/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/vi/danh-sach-phat/index.html\">Danh sách phát</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"Lên đầu trang\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">Bài viết</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">Hoạt động</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">Kết nối</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/vi/gioi-thieu/index.html\">Giới thiệu</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/vi/tao-bang-static-site-generator/index.html\">Tạo bằng Static Site Generator</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/vi/cong-trinh/index.html\">Công trình</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/vi/the/index.html\">Thẻ</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/vi/du-an/index.html\">Dự án</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/vi/danh-sach-phat/index.html\">Danh sách phát</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/vi/lien-he/index.html\">Liên hệ</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/vi/bai-viet/index.html\">Bài viết</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"Liên kết mạng xã hội\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau trên "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau trên "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"Chân dung đen trắng của Sebastien Rousseau\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Copyright 2007 - 2026 - Sebastien Rousseau. Đã đăng ký bản quyền."
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/vi/tro-nang/index.html\">Trợ năng</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/vi/quyen-rieng-tu/index.html\">Quyền riêng tư</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/vi/dieu-khoan/index.html\">Điều khoản</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"Tìm trong tài liệu...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"Tìm kiếm\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> đóng"
+    ],
+    [
+      "navigate</span>",
+      "điều hướng</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> mở"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>Tìm kiếm</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"Ngôn ngữ\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"VI, Đổi ngôn ngữ\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"Đổi ngôn ngữ\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"Sắp ra mắt\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">VI</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"Nguồn cấp Atom\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"Nguồn cấp RSS\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"Tóm tắt bài viết\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>Điểm chính</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>Bài liên quan:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">Bài liên quan</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">Cập nhật lần cuối <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"Về tác giả\""
+    ],
+    [
+      ">Full profile</a>",
+      ">Hồ sơ đầy đủ</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"Chân dung Sebastien Rousseau\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">Liên hệ với tôi</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Bắt đầu trò chuyện</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/articles/index.html\">Đọc nghiên cứu mới nhất</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/contact/index.html\">Liên hệ với tôi</a>"
+    ]
+  ]
+}
