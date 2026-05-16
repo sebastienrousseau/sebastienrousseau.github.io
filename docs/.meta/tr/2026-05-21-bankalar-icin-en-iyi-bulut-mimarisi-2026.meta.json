@@ -1,11 +1,11 @@
 {
+  "locale": "tr_TR",
+  "banner_alt": "Bir bulut altyapısının görselleştirmesi",
   "description": "Birinci kademe bankalar için 2026'nın bulut altyapı mimarisi — sağlayıcılar, ödünleşimler ve uyum.",
+  "banner": "https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp",
   "title": "Bankalar için en iyi bulut altyapı mimarisi (2026)",
-  "keywords": "bulut, mimari, bankacılık, 2026, altyapı, uyum, AWS, Azure, GCP",
-  "language": "tr-TR",
   "subtitle": "2026'da bankalar için bulut mimarisi seçimleri",
   "date": "May 21, 2026",
-  "locale": "tr_TR",
-  "banner": "https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp",
-  "banner_alt": "Bir bulut altyapısının görselleştirmesi"
+  "keywords": "bulut, mimari, bankacılık, 2026, altyapı, uyum, AWS, Azure, GCP",
+  "language": "tr-TR"
 }

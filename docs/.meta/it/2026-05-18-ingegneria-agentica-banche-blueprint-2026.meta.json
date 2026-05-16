@@ -1,11 +1,11 @@
 {
-  "date": "May 18, 2026",
+  "subtitle": "Architetture, pattern e governance per gli agenti IA nei servizi finanziari",
+  "language": "it-IT",
   "description": "Un blueprint per le banche che adottano l'ingegneria agentica nel 2026: architetture composte, governance del rischio, integrazione con sistemi core e roadmap di adozione.",
   "keywords": "ingegneria agentica, agenti IA, banche, blueprint, 2026, governance, architettura",
-  "title": "Ingegneria agentica per le banche: blueprint 2026",
-  "language": "it-IT",
-  "locale": "it_IT",
-  "subtitle": "Architetture, pattern e governance per gli agenti IA nei servizi finanziari",
   "banner_alt": "Ingegneria agentica per le banche",
-  "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp"
+  "locale": "it_IT",
+  "date": "May 18, 2026",
+  "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
+  "title": "Ingegneria agentica per le banche: blueprint 2026"
 }

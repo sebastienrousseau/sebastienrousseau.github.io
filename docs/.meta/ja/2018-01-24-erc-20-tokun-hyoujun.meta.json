@@ -1,12 +1,12 @@
 {
-  "description": "ERC-20 標準が、イーサリアム上のすべての代替可能なトークン、ICO、DeFi の基盤としてどのように機能するか。",
-  "subtitle": "代替可能なトークンの相互運用可能な未来を切り開いた標準",
+  "language": "ja-JP",
   "date": "January 24, 2018",
-  "last_reviewed": "2026-05-11",
-  "banner_alt": "茶色の木製テーブル上の電源オフのラップトップ",
   "keywords": "ERC-20, イーサリアム, スマートコントラクト, トークン, ICO, DeFi, ステーブルコイン, トークン化, イーサリアム改善提案",
   "locale": "ja_JP",
-  "language": "ja-JP",
+  "description": "ERC-20 標準が、イーサリアム上のすべての代替可能なトークン、ICO、DeFi の基盤としてどのように機能するか。",
+  "subtitle": "代替可能なトークンの相互運用可能な未来を切り開いた標準",
+  "banner_alt": "茶色の木製テーブル上の電源オフのラップトップ",
   "title": "ERC-20:世界を変えたイーサリアム・トークン・インターフェース",
-  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
+  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
+  "last_reviewed": "2026-05-11"
 }

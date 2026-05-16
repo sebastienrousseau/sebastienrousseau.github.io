@@ -1,11 +1,11 @@
 {
-  "language": "zh-Hans",
-  "description": "2024 年 AI 提示词工程的创新——自定义指令、多角色、思维链与零样本/小样本——重塑技术与金融。",
-  "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp",
   "locale": "zh_CN",
+  "description": "2024 年 AI 提示词工程的创新——自定义指令、多角色、思维链与零样本/小样本——重塑技术与金融。",
   "title": "AI 提示词工程的进展",
   "banner_alt": "一名男子在屏幕前分析数据",
   "date": "January 23, 2024",
-  "subtitle": "探索 2024 年 AI 提示词工程的进展，揭示正在革新技术与金融领域的创新趋势与技术",
-  "keywords": "提示词工程, AI, 自定义指令, 多角色, 思维链, 向量数据库, 零样本, 小样本, 量子计算, AI 伦理"
+  "keywords": "提示词工程, AI, 自定义指令, 多角色, 思维链, 向量数据库, 零样本, 小样本, 量子计算, AI 伦理",
+  "language": "zh-Hans",
+  "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp",
+  "subtitle": "探索 2024 年 AI 提示词工程的进展，揭示正在革新技术与金融领域的创新趋势与技术"
 }

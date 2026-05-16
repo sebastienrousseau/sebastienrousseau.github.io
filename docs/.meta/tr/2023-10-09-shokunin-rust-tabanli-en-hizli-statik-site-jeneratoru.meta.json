@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
   "subtitle": "Performans, SEO ve erişilebilirlik için inşa edilmiş açık kaynak SSG",
-  "date": "October 9, 2023",
+  "description": "Shokunin, performans, SEO ve erişilebilirlik için tasarlanmış Rust tabanlı bir statik site jeneratörüdür.",
+  "keywords": "Shokunin, statik site jeneratörü, Rust, SSG, performans, SEO, açık kaynak",
+  "banner_alt": "Shokunin SSG logosu",
   "language": "tr-TR",
   "locale": "tr_TR",
-  "banner_alt": "Shokunin SSG logosu",
   "title": "Shokunin: Rust tabanlı en hızlı statik site jeneratörü",
-  "keywords": "Shokunin, statik site jeneratörü, Rust, SSG, performans, SEO, açık kaynak",
-  "description": "Shokunin, performans, SEO ve erişilebilirlik için tasarlanmış Rust tabanlı bir statik site jeneratörüdür."
+  "date": "October 9, 2023",
+  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
 }

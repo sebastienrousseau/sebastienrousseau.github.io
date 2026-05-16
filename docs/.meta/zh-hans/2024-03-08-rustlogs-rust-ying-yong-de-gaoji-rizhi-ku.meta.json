@@ -1,11 +1,11 @@
 {
-  "description": "RustLogs（RLG）是一个用于 Rust 应用的高级日志库，支持结构化、异步、灵活的日志记录。",
-  "locale": "zh_CN",
+  "date": "March 8, 2024",
+  "language": "zh-Hans",
   "banner_alt": "RustLogs（RLG）横幅",
-  "title": "RustLogs：面向 Rust 应用的高级日志库",
-  "keywords": "RustLogs, RLG, Rust, 日志, 结构化日志, 异步, JSON, CEF, Logstash, 性能",
   "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
   "subtitle": "为 Rust 应用提供结构化、异步、灵活的日志解决方案",
-  "language": "zh-Hans",
-  "date": "March 8, 2024"
+  "keywords": "RustLogs, RLG, Rust, 日志, 结构化日志, 异步, JSON, CEF, Logstash, 性能",
+  "title": "RustLogs：面向 Rust 应用的高级日志库",
+  "locale": "zh_CN",
+  "description": "RustLogs（RLG）是一个用于 Rust 应用的高级日志库，支持结构化、异步、灵活的日志记录。"
 }

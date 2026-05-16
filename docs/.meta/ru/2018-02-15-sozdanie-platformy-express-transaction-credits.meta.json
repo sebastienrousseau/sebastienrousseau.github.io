@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Платформа EXTC: схема компонентов системы",
-  "language": "ru-RU",
-  "banner": "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp",
-  "title": "Создание платформы Express Transaction Credits",
-  "date": "February 15, 2018",
   "description": "Как создавалась платформа Express Transaction Credits: технические решения, смарт-контракты и операционная архитектура.",
-  "keywords": "EXTC, платформа, архитектура, смарт-контракты, Ethereum, ERC-20, разработка, инфраструктура, инженерия",
+  "banner": "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp",
   "subtitle": "Архитектура и инженерные решения EXTC Network",
-  "locale": "ru_RU"
+  "locale": "ru_RU",
+  "title": "Создание платформы Express Transaction Credits",
+  "banner_alt": "Платформа EXTC: схема компонентов системы",
+  "keywords": "EXTC, платформа, архитектура, смарт-контракты, Ethereum, ERC-20, разработка, инфраструктура, инженерия",
+  "language": "ru-RU",
+  "date": "February 15, 2018"
 }
