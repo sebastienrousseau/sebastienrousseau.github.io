@@ -167,47 +167,49 @@ def _strip_tags(s: str) -> str:
     return _ws_re.sub(' ', _strip_tags_re.sub('', s)).strip()
 
 
-def build_itemlist(html: str, classes: tuple[str, ...], page_url: str) -> str | None:
-    items: list[tuple[str, str]] = []
-    for m in _card_block_re.finditer(html):
-        card_classes = m.group(1).split()
-        if not any(c in card_classes for c in classes):
+def _card_title_url(body: str) -> tuple[str, str] | None:
+    """Pick the canonical ``(title, url)`` pair from one card body.
+    The card's H3-title link carries the visible text; the media link
+    (wrapping the thumbnail) carries the URL but no text — we want the
+    longest-text candidate."""
+    best: tuple[int, str, str] | None = None
+    for lm in _first_link_re.finditer(body):
+        href = _html.unescape(lm.group(1))
+        text = _strip_tags(lm.group(2))
+        if not href or href.startswith('#') or len(text) < 3:
             continue
-        body = m.group(2)
-        # Walk every <a href> in the card and pick the one with the longest
-        # visible text. Media links (the wrapping <a> around an <img>) carry
-        # the URL but no text; the H3 title link carries the canonical name.
-        best: tuple[int, str, str] | None = None
-        for lm in _first_link_re.finditer(body):
-            href = _html.unescape(lm.group(1))
-            text = _strip_tags(lm.group(2))
-            if not href or href.startswith('#') or len(text) < 3:
-                continue
-            if href.startswith('/'):
-                href = SITE + href
-            cand = (len(text), text, href)
-            if best is None or cand[0] > best[0]:
-                best = cand
-        if best is not None:
-            items.append((best[1], best[2]))
-    if not items:
-        return None
-    graph = {
+        if href.startswith('/'):
+            href = SITE + href
+        cand = (len(text), text, href)
+        if best is None or cand[0] > best[0]:
+            best = cand
+    return (best[1], best[2]) if best is not None else None
+
+
+def _itemlist_graph(items: list[tuple[str, str]], page_url: str) -> dict[str, object]:
+    return {
         "@context": "https://schema.org",
         "@type": "ItemList",
         "url": page_url,
         "numberOfItems": len(items),
         "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": i + 1,
-                "url": url,
-                "name": title,
-            }
+            {"@type": "ListItem", "position": i + 1, "url": url, "name": title}
             for i, (title, url) in enumerate(items)
         ],
     }
-    return _json.dumps(graph, separators=(',', ':'), ensure_ascii=False)
+
+
+def build_itemlist(html: str, classes: tuple[str, ...], page_url: str) -> str | None:
+    items: list[tuple[str, str]] = []
+    for m in _card_block_re.finditer(html):
+        if not any(c in m.group(1).split() for c in classes):
+            continue
+        pair = _card_title_url(m.group(2))
+        if pair is not None:
+            items.append(pair)
+    if not items:
+        return None
+    return _json.dumps(_itemlist_graph(items, page_url), separators=(',', ':'), ensure_ascii=False)
 
 
 def inject_itemlist(page: Path, html: str) -> str:

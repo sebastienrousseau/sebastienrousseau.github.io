@@ -50,15 +50,19 @@ jobs:
         run: ruff check scripts/ tests/
 
       - name: Cyclomatic complexity (radon)
-        # Hard ceiling: no function above grade B (CC 10). The current
-        # max sits at C(17) and Phase 4 will refactor those down. Until
-        # then the gate runs in advisory mode so it surfaces regressions
-        # without failing the build.
+        # Hard ceiling: every function in postbuild + postbuild_lib must
+        # stay at grade B (CC ≤ 10) or lower. ``radon cc -n C`` prints
+        # any C-grade-or-worse block; we fail the build if it prints
+        # anything.
         run: |
           pip install --quiet radon
-          radon cc scripts/postbuild.py scripts/postbuild_lib/ -a -nb -s || true
-          # Hard failure once the C-grade functions are refactored:
-          # radon cc scripts/postbuild.py scripts/postbuild_lib/ -n B
+          radon cc scripts/postbuild.py scripts/postbuild_lib/ -a -s
+          c_or_worse=$(radon cc scripts/postbuild.py scripts/postbuild_lib/ -n C -s 2>&1)
+          if [ -n "$c_or_worse" ]; then
+            echo "::error::C-grade or worse complexity found:"
+            echo "$c_or_worse"
+            exit 1
+          fi
 
       - name: Code duplication (jscpd)
         # Industry-standard warn threshold is 10 %; we currently sit at

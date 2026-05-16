@@ -671,68 +671,89 @@ def refresh_sitemap_lastmod(sitemap_path: Path, index: dict[str, str]) -> int:
     return n
 
 
-def _splice_fr_urls(xml: str, lastmod_index: dict[str, str]) -> str:  # noqa: C901 — multi-lang sitemap splicer touches every static + article slug per active lang
-    """Ensure the sitemap contains every EN + FR article + the static
-    landing pages. Shokunin's sitemap.xml ships empty (regression) so we
-    splice the missing URLs in here. Idempotent — re-runs don't dupe."""
-    base = "https://sebastienrousseau.com"
-    existing_locs = {m.group(1).strip() for m in _LOC_RE.finditer(xml)}
-    new_blocks: list[str] = []
-    seen: set[str] = set()
+_SITEMAP_BASE = "https://sebastienrousseau.com"
+_STATIC_SLUGS = (
+    "about", "articles", "papers", "projects", "topics", "tags",
+    "playlists", "contact", "accessibility", "privacy", "terms",
+    "made-with-shokunin", "made-with-static-site-generator",
+    "resources-pacs008-checklist",
+)
+_TOPIC_SLUGS = (
+    "post-quantum-cryptography", "iso-20022-payments",
+    "applied-ai-banking", "rust-open-source", "blockchain-digital-assets",
+)
 
-    def _add(url: str, priority: str, changefreq: str, lastmod: str = "") -> None:
-        if url in existing_locs or url in seen:
-            return
-        seen.add(url)
-        lm_line = f"\n  <lastmod>{lastmod}</lastmod>" if lastmod else ""
-        new_blocks.append(
-            f"<url>\n  <loc>{url}</loc>{lm_line}\n"
-            f"  <changefreq>{changefreq}</changefreq>\n"
-            f"  <priority>{priority}</priority>\n</url>"
-        )
 
-    _add(f"{base}/", "1.0", "daily")
-    for slug in (
-        "about", "articles", "papers", "projects", "topics", "tags",
-        "playlists", "contact", "accessibility", "privacy", "terms",
-        "made-with-shokunin", "made-with-static-site-generator",
-        "resources-pacs008-checklist",
-    ):
-        _add(f"{base}/{slug}/", "0.6", "monthly")
+def _url_block(url: str, priority: str, changefreq: str, lastmod: str = "") -> str:
+    lm_line = f"\n  <lastmod>{lastmod}</lastmod>" if lastmod else ""
+    return (
+        f"<url>\n  <loc>{url}</loc>{lm_line}\n"
+        f"  <changefreq>{changefreq}</changefreq>\n"
+        f"  <priority>{priority}</priority>\n</url>"
+    )
 
-    for topic in (
-        "post-quantum-cryptography", "iso-20022-payments",
-        "applied-ai-banking", "rust-open-source", "blockchain-digital-assets",
-    ):
-        _add(f"{base}/topics/{topic}/", "0.6", "monthly")
 
+def _en_sitemap_urls(lastmod_index: dict[str, str]) -> list[tuple[str, str, str, str]]:
+    """Return ``(url, priority, changefreq, lastmod)`` tuples for the EN tree."""
+    out: list[tuple[str, str, str, str]] = [(f"{_SITEMAP_BASE}/", "1.0", "daily", "")]
+    out.extend((f"{_SITEMAP_BASE}/{slug}/", "0.6", "monthly", "") for slug in _STATIC_SLUGS)
+    out.extend((f"{_SITEMAP_BASE}/topics/{topic}/", "0.6", "monthly", "") for topic in _TOPIC_SLUGS)
     posts_dir = Path("_posts")
     if posts_dir.is_dir():
-        for md in sorted(posts_dir.glob("2*.md")):
-            stem = md.stem
-            lastmod = lastmod_index.get(stem, "")
-            _add(f"{base}/{stem}/", "0.8", "weekly", lastmod)
+        out.extend(
+            (f"{_SITEMAP_BASE}/{md.stem}/", "0.8", "weekly", lastmod_index.get(md.stem, ""))
+            for md in sorted(posts_dir.glob("2*.md"))
+        )
+    return out
 
-    for _code in _all_active_non_en_langs():
-        _slugs = _lr.load_slugs(_code)
-        _statics = _slugs.get("static", {})
-        _articles = _slugs.get("articles", {})
-        _topics_slug = _statics.get("topics", "topics")
-        _articles_slug = _statics.get("articles", "articles")
-        _add(f"{base}/{_code}/", "0.8", "weekly")
-        _add(f"{base}/{_code}/{_articles_slug}/", "0.7", "weekly")
-        for _en_static, _lang_static in _statics.items():
-            if _en_static in ("articles", "topics"):
-                continue
-            _add(f"{base}/{_code}/{_lang_static}/", "0.5", "monthly")
-        _add(f"{base}/{_code}/{_topics_slug}/", "0.5", "monthly")
-        for topic in (
-            "post-quantum-cryptography", "iso-20022-payments",
-            "applied-ai-banking", "rust-open-source", "blockchain-digital-assets",
-        ):
-            _add(f"{base}/{_code}/{_topics_slug}/{topic}/", "0.6", "monthly")
-        for _en_art_slug, _lang_slug in _articles.items():
-            _add(f"{base}/{_code}/{_lang_slug}/", "0.7", "monthly", lastmod_index.get(_en_art_slug, ""))
+
+def _lang_sitemap_urls(
+    code: str, lastmod_index: dict[str, str]
+) -> list[tuple[str, str, str, str]]:
+    """Return ``(url, priority, changefreq, lastmod)`` tuples for a single
+    non-EN language tree (home + statics + topics + articles)."""
+    slugs = _lr.load_slugs(code)
+    statics = slugs.get("static", {})
+    articles = slugs.get("articles", {})
+    topics_slug = statics.get("topics", "topics")
+    articles_slug = statics.get("articles", "articles")
+    out: list[tuple[str, str, str, str]] = [
+        (f"{_SITEMAP_BASE}/{code}/", "0.8", "weekly", ""),
+        (f"{_SITEMAP_BASE}/{code}/{articles_slug}/", "0.7", "weekly", ""),
+    ]
+    out.extend(
+        (f"{_SITEMAP_BASE}/{code}/{lang_static}/", "0.5", "monthly", "")
+        for en_static, lang_static in statics.items()
+        if en_static not in ("articles", "topics")
+    )
+    out.append((f"{_SITEMAP_BASE}/{code}/{topics_slug}/", "0.5", "monthly", ""))
+    out.extend(
+        (f"{_SITEMAP_BASE}/{code}/{topics_slug}/{topic}/", "0.6", "monthly", "")
+        for topic in _TOPIC_SLUGS
+    )
+    out.extend(
+        (f"{_SITEMAP_BASE}/{code}/{lang_slug}/", "0.7", "monthly", lastmod_index.get(en_art_slug, ""))
+        for en_art_slug, lang_slug in articles.items()
+    )
+    return out
+
+
+def _splice_fr_urls(xml: str, lastmod_index: dict[str, str]) -> str:
+    """Splice every missing EN + non-EN URL into Shokunin's sitemap.xml,
+    which ships empty. Idempotent — re-runs don't dupe."""
+    existing_locs = {m.group(1).strip() for m in _LOC_RE.finditer(xml)}
+    seen: set[str] = set()
+    new_blocks: list[str] = []
+
+    candidates: list[tuple[str, str, str, str]] = _en_sitemap_urls(lastmod_index)
+    for code in _all_active_non_en_langs():
+        candidates.extend(_lang_sitemap_urls(code, lastmod_index))
+
+    for url, priority, changefreq, lastmod in candidates:
+        if url in existing_locs or url in seen:
+            continue
+        seen.add(url)
+        new_blocks.append(_url_block(url, priority, changefreq, lastmod))
 
     if not new_blocks:
         return xml

@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Bureau d'entreprise moderne et minimaliste",
-  "date": "January 29, 2024",
-  "description": "Comment Audio Analyser, propulsé par Azure AI, transforme la conversion speech-to-text, l'analyse de texte et les traductions pour des insights exploitables.",
-  "keywords": "audio analyser, azure ai, speech-to-text, analyse de données audio, analyse de texte, traductions IA, insights audio, transcription automatisée, traitement de données audio, apprentissage automatique",
-  "title": "Analyse, traduction et insights audio propulsés par l'IA",
+  "locale": "fr_FR",
   "language": "fr",
-  "subtitle": "Révolutionner le traitement des données audio avec Azure AI Platform",
+  "description": "Comment Audio Analyser, propulsé par Azure AI, transforme la conversion speech-to-text, l'analyse de texte et les traductions pour des insights exploitables.",
+  "title": "Analyse, traduction et insights audio propulsés par l'IA",
+  "date": "January 29, 2024",
+  "banner_alt": "Bureau d'entreprise moderne et minimaliste",
+  "keywords": "audio analyser, azure ai, speech-to-text, analyse de données audio, analyse de texte, traductions IA, insights audio, transcription automatisée, traitement de données audio, apprentissage automatique",
   "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
-  "locale": "fr_FR"
+  "subtitle": "Révolutionner le traitement des données audio avec Azure AI Platform"
 }

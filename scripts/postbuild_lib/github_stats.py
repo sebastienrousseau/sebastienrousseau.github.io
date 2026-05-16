@@ -70,6 +70,30 @@ def gh_stats_index() -> dict[str, dict]:
     return {entry["slug"]: entry for entry in data.get("repos", []) if "slug" in entry}
 
 
+# Bucket table for ``_bucket_delta``. Each tuple is
+# ``(upper_bound_seconds, divisor_seconds, format_key)`` — the first
+# entry whose upper bound is greater than ``delta`` wins. The final
+# entry uses ``inf`` to catch the years tail.
+_DELTA_BUCKETS: tuple[tuple[float, int, str], ...] = (
+    (60, 1, "s"),
+    (3_600, 60, "m"),
+    (86_400, 3_600, "h"),
+    (604_800, 86_400, "d"),
+    (2_629_800, 604_800, "w"),
+    (31_557_600, 2_629_800, "mo"),
+    (float("inf"), 31_557_600, "y"),
+)
+
+
+def _bucket_delta(delta_seconds: float) -> tuple[int, str]:
+    """Pick the right ``{n, key}`` pair for the bucket table above."""
+    for upper, divisor, key in _DELTA_BUCKETS:
+        if delta_seconds < upper:
+            return int(delta_seconds // divisor), key
+    # _DELTA_BUCKETS' last entry has inf as upper, so we always return inside the loop.
+    raise AssertionError  # pragma: no cover
+
+
 def _relative_time(iso_ts: str, fr: bool = False, lang: str | None = None) -> str:
     """Render an ISO-8601 timestamp as a localised 'N units ago' label."""
     if not iso_ts:
@@ -80,23 +104,8 @@ def _relative_time(iso_ts: str, fr: bool = False, lang: str | None = None) -> st
         return ""
     code = lang if lang else ("fr" if fr else "en")
     t = _RELTIME.get(code, _RELTIME["en"])
-    delta = (datetime.now(tz=UTC) - ts).total_seconds()
-    if delta < 0:
-        delta = 0
-    if delta < 60:
-        n, key = int(delta), "s"
-    elif delta < 3600:
-        n, key = int(delta // 60), "m"
-    elif delta < 86400:
-        n, key = int(delta // 3600), "h"
-    elif delta < 604800:
-        n, key = int(delta // 86400), "d"
-    elif delta < 2629800:
-        n, key = int(delta // 604800), "w"
-    elif delta < 31557600:
-        n, key = int(delta // 2629800), "mo"
-    else:
-        n, key = int(delta // 31557600), "y"
+    delta = max(0.0, (datetime.now(tz=UTC) - ts).total_seconds())
+    n, key = _bucket_delta(delta)
     out = t[key].format(n=n)
     if code == "fr" and key == "y" and n > 1:
         out += "s"
@@ -161,6 +170,44 @@ def _normalise_url(u: str) -> str:
     return u.rstrip('/')
 
 
+def _lookup_by_slug_href(inner: str, stats_index: dict[str, dict]) -> dict | None:
+    """First resolution path: a ``github.com/sebastienrousseau/<slug>`` href."""
+    m = _GH_REPO_HREF_RE.search(inner)
+    if m and m.group(1) in stats_index:
+        return stats_index[m.group(1)]
+    return None
+
+
+def _lookup_by_homepage(inner: str, stats_index: dict[str, dict]) -> dict | None:
+    """Second resolution path: any external href that matches a repo's
+    recorded homepage URL (scheme / www / trailing-slash insensitive)."""
+    homepage_idx = {
+        _normalise_url(e.get("homepage") or ""): e
+        for e in stats_index.values()
+        if e.get("homepage")
+    }
+    if not homepage_idx:
+        return None
+    for hm in _GH_HREF_RE.finditer(inner):
+        href = (hm.group(1) or hm.group(2) or "").strip()
+        if not href.startswith(("http://", "https://")):
+            continue
+        hit = homepage_idx.get(_normalise_url(href))
+        if hit is not None:
+            return hit
+    return None
+
+
+def _lookup_by_h3_title(inner: str, stats_index: dict[str, dict]) -> dict | None:
+    """Third resolution path: the card's <h3><a> text matches a repo name."""
+    h3 = re.search(r'<h3[^>]*>\s*<a[^>]*>([^<]+)</a>', inner)
+    if not h3:
+        return None
+    title = h3.group(1).strip().lower()
+    name_idx = {(e.get("name") or "").lower(): e for e in stats_index.values()}
+    return name_idx.get(title)
+
+
 def _gh_lookup(inner: str, stats_index: dict[str, dict]) -> dict | None:
     """Resolve a card to its repo entry. Lookup precedence:
 
@@ -171,27 +218,10 @@ def _gh_lookup(inner: str, stats_index: dict[str, dict]) -> dict | None:
     """
     if not stats_index:
         return None
-    m = _GH_REPO_HREF_RE.search(inner)
-    if m and m.group(1) in stats_index:
-        return stats_index[m.group(1)]
-    homepage_idx = {
-        _normalise_url(e.get("homepage") or ""): e
-        for e in stats_index.values()
-        if e.get("homepage")
-    }
-    name_idx = {(e.get("name") or "").lower(): e for e in stats_index.values()}
-    for hm in _GH_HREF_RE.finditer(inner):
-        href = (hm.group(1) or hm.group(2) or "").strip()
-        if not href.startswith(("http://", "https://")):
-            continue
-        key = _normalise_url(href)
-        if key in homepage_idx:
-            return homepage_idx[key]
-    h3 = re.search(r'<h3[^>]*>\s*<a[^>]*>([^<]+)</a>', inner)
-    if h3:
-        title = h3.group(1).strip().lower()
-        if title in name_idx:
-            return name_idx[title]
+    for resolver in (_lookup_by_slug_href, _lookup_by_homepage, _lookup_by_h3_title):
+        hit = resolver(inner, stats_index)
+        if hit is not None:
+            return hit
     return None
 
 
