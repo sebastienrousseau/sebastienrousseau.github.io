@@ -1,11 +1,11 @@
 {
-  "description": "Le Chat от Mistral AI — европейское разговорное ИИ-предложение с упором на качество, открытые модели и соответствие европейским регуляторным требованиям.",
+  "language": "ru-RU",
+  "title": "Le Chat от Mistral AI: новая эра разговорного ИИ",
   "locale": "ru_RU",
+  "description": "Le Chat от Mistral AI — европейское разговорное ИИ-предложение с упором на качество, открытые модели и соответствие европейским регуляторным требованиям.",
   "keywords": "Le Chat, Mistral AI, разговорный ИИ, LLM, Европа, открытые модели, многоязычность, GDPR",
   "date": "March 4, 2024",
-  "language": "ru-RU",
-  "subtitle": "Европейский голос в гонке LLM",
   "banner": "https://cloudcdn.pro/stocks/images/le-chat-mistral.webp",
   "banner_alt": "Le Chat от Mistral AI: разговорный ИИ",
-  "title": "Le Chat от Mistral AI: новая эра разговорного ИИ"
+  "subtitle": "Европейский голос в гонке LLM"
 }

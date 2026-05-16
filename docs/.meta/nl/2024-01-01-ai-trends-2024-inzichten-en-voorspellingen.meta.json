@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp",
-  "subtitle": "Een blik op de AI-doorbraken, regelgeving en toepassingen die 2024 zullen vormgeven",
-  "date": "Jan 08, 2024",
-  "language": "nl-NL",
   "banner_alt": "Conceptuele visualisatie van AI-trends voor 2024",
-  "keywords": "AI-trends, 2024, voorspellingen, machine learning, regelgeving, multimodaal, LLM",
   "locale": "nl_NL",
+  "date": "Jan 08, 2024",
+  "description": "Inzichten en voorspellingen voor de AI-trends die 2024 zullen vormgeven: regelgeving, multimodale modellen, on-device-AI en meer.",
+  "language": "nl-NL",
   "title": "AI-trends 2024: inzichten en voorspellingen voor de toekomst",
-  "description": "Inzichten en voorspellingen voor de AI-trends die 2024 zullen vormgeven: regelgeving, multimodale modellen, on-device-AI en meer."
+  "subtitle": "Een blik op de AI-doorbraken, regelgeving en toepassingen die 2024 zullen vormgeven",
+  "keywords": "AI-trends, 2024, voorspellingen, machine learning, regelgeving, multimodaal, LLM",
+  "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"
 }

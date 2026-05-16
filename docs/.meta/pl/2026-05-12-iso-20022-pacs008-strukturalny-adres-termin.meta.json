@@ -1,11 +1,11 @@
 {
-  "subtitle": "SWIFT CBPR+ odrzuci niestrukturalne adresy pocztowe w komunikatach pacs.008",
-  "description": "Od połowy listopada 2026 SWIFT CBPR+ odrzuci niestrukturalne adresy pocztowe w komunikatach pacs.008 i powiązanych. Z około 65% niezgodnych komunikatów i 44% banków w tyle, okno naprawcze zamyka się szybciej niż zakładają programy.",
+  "banner_alt": "Schemat komunikatu płatności transgranicznej ze strukturalnym adresem, z wyróżnionymi TwnNm i Ctry",
+  "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp",
+  "keywords": "ISO 20022, pacs.008, pacs.009, pacs.004, pacs.003, pain.001, CBPR+, SWIFT, SR2026, strukturalny adres, SEPA, EPC, płatności transgraniczne, screening sankcji, pacs008",
+  "date": "May 12, 2026",
   "title": "Termin strukturalnego adresu pacs.008 w listopadzie 2026: spojrzenie na sześć miesięcy",
   "language": "pl-PL",
-  "keywords": "ISO 20022, pacs.008, pacs.009, pacs.004, pacs.003, pain.001, CBPR+, SWIFT, SR2026, strukturalny adres, SEPA, EPC, płatności transgraniczne, screening sankcji, pacs008",
-  "banner_alt": "Schemat komunikatu płatności transgranicznej ze strukturalnym adresem, z wyróżnionymi TwnNm i Ctry",
-  "date": "May 12, 2026",
-  "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp",
-  "locale": "pl_PL"
+  "locale": "pl_PL",
+  "subtitle": "SWIFT CBPR+ odrzuci niestrukturalne adresy pocztowe w komunikatach pacs.008",
+  "description": "Od połowy listopada 2026 SWIFT CBPR+ odrzuci niestrukturalne adresy pocztowe w komunikatach pacs.008 i powiązanych. Z około 65% niezgodnych komunikatów i 44% banków w tyle, okno naprawcze zamyka się szybciej niż zakładają programy."
 }

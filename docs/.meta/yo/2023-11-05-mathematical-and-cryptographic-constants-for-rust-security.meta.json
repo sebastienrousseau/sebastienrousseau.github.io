@@ -4,8 +4,8 @@
   "language": "yo-NG",
   "title": "Mathematical and Cryptographic Constants for Rust Security",
   "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
-  "date": "Nov 05, 2023",
-  "banner_alt": "Mathematics computation",
+  "subtitle": "Vetted mathematical and cryptographic constants for memory-safe Rust security.",
   "locale": "yo_NG",
-  "subtitle": "Vetted mathematical and cryptographic constants for memory-safe Rust security."
+  "date": "Nov 05, 2023",
+  "banner_alt": "Mathematics computation"
 }
