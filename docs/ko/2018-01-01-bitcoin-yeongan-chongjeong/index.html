@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 01 Jan 2018 20:20:20 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 01 Jan 2018 20:20:20 +0000" id="last-modified" />
+    <title>비트코인: 최초의 암호자산에 관한 연간 총정리 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="비트코인: 온라인 거래의 양상을 혁신할 잠재력을 지닌 P2P 전자 현금 시스템(P2P ECS).">
+<meta name="keywords" content="비트코인, 암호자산, 블록체인, P2P, 이중 지출, 마이닝, 작업 증명, ETF, 사토시 나카모토, 분산형 금융">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-0EgLl/Uj2G87vJW4+KDrnLEKcdPxPQ/XH67uF2S7p10=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-aAR/alubqwuG1+UbvKNFLiB6Ecrw3PGzkKoIj8kYGkU=' 'sha256-uxOP20WzS/vyfSoowTyIW3Hjsq00ULslTDywXsAMKJQ=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ko/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 피드" href="/ko/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="비트코인: 최초의 암호자산에 관한 연간 총정리 — Sebastien Rousseau">
+<meta property="og:description" content="비트코인: 온라인 거래의 양상을 혁신할 잠재력을 지닌 P2P 전자 현금 시스템(P2P ECS).">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/ko/2018-01-01-bitcoin-yeongan-chongjeong/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="비트코인: 최초의 암호자산에 관한 연간 총정리 — Sebastien Rousseau">
+<meta name="twitter:description" content="비트코인: 온라인 거래의 양상을 혁신할 잠재력을 지닌 P2P 전자 현금 시스템(P2P ECS).">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/ko/2018-01-01-bitcoin-yeongan-chongjeong/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2018-01-01-bitcoin-l-annee-en-revue/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2018-01-01-bitcoin-the-year-in-review/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2018-01-01-bitcoin-das-jahr-im-rueckblick/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2018-01-01-bitcoin-el-ano-en-revision/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2018-01-01-bitcoin-bilancio-dellanno/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2018-01-01-bitcoin-nenkan-soukatsu/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2018-01-01-bitcoin-yeongan-chongjeong/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2018-01-01-bitcoin-o-ano-em-revisao/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2018-01-01-bitcoin-itogi-goda/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2018-01-01-bitebi-niandu-huigu/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2018-01-01-bitebi-niandu-huigu-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2018-01-01-bitcoin-the-year-in-review/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">본문으로 건너뛰기</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="내비게이션 전환" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ko/index.html" aria-label="Sebastien Rousseau 홈">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="주요 내비게이션">
+          <ul class="ap-menu">
+            <li><a href="/ko/sogae/index.html">소개</a></li>
+            <li><a href="/ko/gisa/index.html" aria-current="page" class="active">기사</a></li>
+            <li><a href="/ko/nonmun/index.html">논문</a></li>
+            <li><a href="/ko/jujae/index.html">주제</a></li>
+            <li><a href="/ko/peurojekteu/index.html">프로젝트</a></li>
+            <li><a href="/ko/pleilliseuteu/index.html">플레이리스트</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="다크 테마로 전환" aria-pressed="false" title="테마 전환">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="검색 (Cmd 또는 Ctrl + K)" title="검색 (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="언어">
+            <button type="button" class="ap-lang-toggle" aria-label="KO, 언어 변경" aria-expanded="false" aria-haspopup="menu" title="언어 변경">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">KO</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="출시 예정">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="출시 예정">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="출시 예정">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="출시 예정">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="출시 예정">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="출시 예정">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="출시 예정">🇮🇩 Indonesia</span>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <span class="ap-lang-item" data-lang="nl" aria-disabled="true" title="출시 예정">🇳🇱 Nederlands</span>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="출시 예정">🇵🇱 Polski</span>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="출시 예정">🇷🇴 Română</span>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="출시 예정">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="출시 예정">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="출시 예정">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="출시 예정">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="출시 예정">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="출시 예정">🇳🇬 Yorùbá</span>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ko/munui/index.html" aria-label="문의하기">문의하기 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="내비게이션 전환">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>비트코인: 최초의 암호자산에 관한 연간 총정리</h1>
+      <p class="sub">통화를 재정의한 P2P 전자 현금 시스템</p>
+    <nav class="article-tags" aria-label="주제"><a href="/tags/index.html#h3-" class="article-tag" rel="tag">비트코인</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">암호자산</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">블록체인</a><a href="/tags/index.html#h3-p2p" class="article-tag" rel="tag">P2P</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">이중 지출</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">마이닝</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">작업 증명</a><a href="/tags/index.html#h3-etf" class="article-tag" rel="tag">ETF</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">사토시 나카모토</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">분산형 금융</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2018-01-01T20:20:20+00:00" class="meta-pub">발행일 1 Jan 2018</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">갱신일 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="예상 소요 시간">4 분 소요</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>목차</h2><ol><li><a href="#section-1">통찰</a></li><li><a href="#section-3">아이디어</a></li><li><a href="#section-5">영향</a></li><li><a href="#section-7">인센티브</a></li><li><a href="#section-9">과제</a></li><li><a href="#section-11">규제</a></li><li><a href="#section-13">사기 위험</a></li><li><a href="#section-15">지속가능성</a></li><li><a href="#section-17">프라이버시와 보안</a></li><li><a href="#section-19">전망</a></li><li><a href="#section-21">결론</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 비트코인: 온라인 거래의 양상을 혁신할 잠재력을 지닌 P2P 전자 현금 시스템(P2P ECS).</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>통찰.</strong> 「디지털 골드」로도 불리는 비트코인은, 분산형 전자 현금과 블록체인 기술을 도입함으로써 금융 혁명을 촉발하였습니다.</li>  <li><strong>아이디어.</strong> 비트코인은 분산 원장을 통하여 P2P 거래를 가능하게 하고, 암호학적 보상으로 참여자에게 동기를 부여합니다.</li>  <li><strong>영향.</strong> 비트코인이 이중 지출 문제를 해결함으로써 분산형 금융, 디지털 자산, 신뢰 시스템에서의 혁신을 위한 길이 열렸습니다.</li>  <li><strong>인센티브.</strong> 비트코인 고유의 인센티브는 이해관계자를 집단적 성장으로 정렬시키면서 네트워크 참여를 촉진합니다.</li></ul></aside><p><img src="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp" alt="테이블에 쌓인 금화와 은화"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<h2 id="section-1">통찰 <a class="heading-anchor" href="#section-1" aria-label="링크 통찰">#</a></h2>
+<h3 id="section-2">분산형 전자 현금과 블록체인의 여명 <a class="heading-anchor" href="#section-2" aria-label="링크 분산형 전자 현금과 블록체인의 여명">#</a></h3>
+<p>「디지털 골드」로도 불리는 비트코인은, 분산형 전자 현금과 블록체인 기술을 도입함으로써 금융 혁명을 촉발하였습니다. 중앙집권적 기관을 거치지 않고 개인 간 온라인 송금을 가능하게 한 것입니다. 본 혁신적 암호자산은 정부와 기업의 영향력이 미치지 않는 금융적 자유를 제공하여, 전통적인 은행 시스템으로부터의 독립을 추구하는 이들의 공감을 얻었습니다.</p>
+<p>10여 년 남짓한 기간 동안 비트코인은 채택, 가치, 영향력 면에서 전례 없는 성장을 이루어 왔습니다. 변동성과 규제상의 우려를 둘러싼 논의가 이어지는 가운데서도, 비트코인은 금융의 세계를 계속해서 흔들고 있습니다. 블록체인 기술이 진화함에 따라 비트코인은 디지털 통화를 주류로 이끄는 최전선에 자리하며, 분산형 가치 교환 시스템의 촉매가 되어 왔습니다.</p>
+<h2 id="section-3">아이디어 <a class="heading-anchor" href="#section-3" aria-label="링크 아이디어">#</a></h2>
+<h3 id="p2p">암호와 경제학을 활용한 트러스트리스 P2P 결제 <a class="heading-anchor" href="#p2p" aria-label="링크 암호와 경제학을 활용한 트러스트리스 P2P 결제">#</a></h3>
+<p>비트코인은 분산 원장을 통하여 P2P 거래를 가능하게 하고, 암호학적 보상으로 참여자에게 동기를 부여합니다. 블록체인이라 불리는 분산형 공개 원장은 거래를 기록하며, 단일한 관리 지점에 의존하지 않고도 이중 지출을 방지합니다.</p>
+<p>거래를 검증하고 네트워크를 보호하는 채굴자는 새로 발행되는 비트코인을 보상으로 수령합니다. 비트코인 프로토콜은 2,100만 BTC의 공급 상한을 부과하여 희소성과 본질적 경제 가치를 보장합니다. 이를 통하여 전통적 중개자를 우회한 고속·저비용의 글로벌 결제가 가능해지며, 기업에는 새로운 고객 기반이 열립니다.</p>
+<p>암호와 게임 이론을 활용함으로써 비트코인은 모르는 사이의 트러스트리스 온라인 거래를 가능하게 하고, 프로그래밍 가능한 인터넷 머니라는 개념을 혁신하였습니다.</p>
+<h2 id="section-5">영향 <a class="heading-anchor" href="#section-5" aria-label="링크 영향">#</a></h2>
+<h3 id="section-6">통화를 넘어선 무허가 혁신의 해방 <a class="heading-anchor" href="#section-6" aria-label="링크 통화를 넘어선 무허가 혁신의 해방">#</a></h3>
+<p>비트코인이 이중 지출 문제를 해결함으로써 분산형 금융, 디지털 자산, 신뢰 시스템에서의 혁신을 위한 길이 열렸습니다. 온라인 P2P 교환을 위한 분산 원장을 도입하여 경제를 떠받쳐 온 기존의 은행·결제 네트워크에 도전한 것입니다.</p>
+<p>비트코인은 개인이 중개자 없이 저비용 국제 송금을 수행할 수 있도록 하여, 네트워크를 보호하는 수천 개 익명 노드의 협조적 잠재력을 보여주었습니다. 비트코인의 희소성은 그것을 디지털 골드로 변모시켰으며, 포트폴리오 분산을 위한 새로운 자산군을 창출하였습니다.</p>
+<p>비트코인이 보편화시킨 프로그래밍 가능한 머니와 분산형 거버넌스라는 개념은, 중앙은행이 디지털 통화를 검토하도록 자극하기에 이르렀습니다. 비트코인은 돈의 미래가 디지털임을 명확히 보여주며, 현재 진행 중인 금융 혁명에 불을 붙였습니다.</p>
+<h2 id="section-7">인센티브 <a class="heading-anchor" href="#section-7" aria-label="링크 인센티브">#</a></h2>
+<h3 id="section-8">정교한 암호경제적 인센티브를 통한 참여자의 정렬 <a class="heading-anchor" href="#section-8" aria-label="링크 정교한 암호경제적 인센티브를 통한 참여자의 정렬">#</a></h3>
+<p>비트코인 고유의 인센티브는 이해관계자를 집단적 성장으로 정렬시키면서 네트워크 참여를 촉진합니다. 채굴 보상은 채굴자가 네트워크를 보호하는 인센티브가 되지만, 그 대가로 비트코인 공급은 증가합니다.</p>
+<p>거래 수수료 또한 채굴자에게 추가적인 동기를 부여하며, 시간이 지남에 따라 보상이 감소함에 따라 수요에 맞추어 자연스럽게 조정됩니다. 토큰 경제는 참여를 장려하며, 조기 참여자는 BTC의 가격 상승이라는 결실을 거두게 됩니다.</p>
+<p>개발자들은 오픈소스 프로토콜을 개선하려는 동기를 갖습니다. 유용성의 향상이 네트워크 가치에 직결되기 때문입니다. 이러한 인센티브는 비트코인 생태계 전반에 이익을 가져다주는 양의 피드백 루프를 형성합니다.</p>
+<h2 id="section-9">과제 <a class="heading-anchor" href="#section-9" aria-label="링크 과제">#</a></h2>
+<h3 id="section-10">주류 채택을 가로막는 지속적 장벽 <a class="heading-anchor" href="#section-10" aria-label="링크 주류 채택을 가로막는 지속적 장벽">#</a></h3>
+<p>성장에도 불구하고 비트코인은 변동성, 거래 지연을 야기하는 확장성 문제, 보안상의 우려, 규제의 복잡성, 에너지 집약적 작업 증명 채굴에 대한 환경적 비판 등 여러 과제에 직면하고 있습니다.</p>
+<p>비트코인의 분산적 성격은 포괄적 규제를 어렵게 하며, 명확한 법적 체계의 부재는 다수 국가에서의 기관 채택을 저해하고 있습니다. 또한 사용성과 키 관리는 일반 소비자에게 여전히 장벽으로 남아 있습니다.</p>
+<p>작업 증명 대안의 검토와 같이 이러한 과제에 대처하는 노력은, 비트코인의 지속적인 성장과 장기적 존재감을 위하여 필수적입니다.</p>
+<h2 id="section-11">규제 <a class="heading-anchor" href="#section-11" aria-label="링크 규제">#</a></h2>
+<h3 id="section-12">개선의 여지를 남기며 진화하는 규제 환경 <a class="heading-anchor" href="#section-12" aria-label="링크 개선의 여지를 남기며 진화하는 규제 환경">#</a></h3>
+<p>암호자산 규제는 초기의 혼란에서 실용적 통합으로 진화하여 왔습니다. 대부분의 법역은 비트코인 사용을 허용하면서도, 매매에 관여하는 중개자의 규제에 초점을 두는 경향이 있습니다.</p>
+<p>암호자산 이익은 통상 소득 또는 양도소득으로 과세 대상이 됩니다. 앞서가는 국가들은 적합한 통합을 촉진하기 위한 세무 지침을 제공하고 있습니다.</p>
+<p>규제 환경이 성숙해짐에 따라 정책 입안자는 충분한 정보에 기반한 판단을 내리기 위하여 더 높은 기술적 전문성이 필요합니다. 다만 그 궤적은 규제 체계 내 암호자산의 수용이 확대되고 있음을 보여줍니다.</p>
+<h2 id="section-13">사기 위험 <a class="heading-anchor" href="#section-13" aria-label="링크 사기 위험">#</a></h2>
+<h3 id="section-14">익명성을 악용한 사기에 대한 경계 <a class="heading-anchor" href="#section-14" aria-label="링크 익명성을 악용한 사기에 대한 경계">#</a></h3>
+<p>비트코인의 가명성은 사기 행위에 대한 취약성을 초래하며, 경계와 법령 준수를 요구합니다.</p>
+<p>일반적인 사기에는 펌프 앤 덤프, 가짜 거래소·지갑, 피싱, 유명인 사칭, 부정한 암호자산 그룹 등이 포함됩니다. 위험 완화에는 안전한 습관 채택, 신뢰할 수 있는 플랫폼 이용, 근거에 기반한 투자가 포함됩니다.</p>
+<p>거래소에 대한 규제 및 법령 준수 조치는, 암호자산 영역의 사기 대응에 결정적 역할을 수행합니다.</p>
+<h2 id="section-15">지속가능성 <a class="heading-anchor" href="#section-15" aria-label="링크 지속가능성">#</a></h2>
+<h3 id="section-16">적극적 조치를 통한 생태적 책임의 강화 <a class="heading-anchor" href="#section-16" aria-label="링크 적극적 조치를 통한 생태적 책임의 강화">#</a></h3>
+<p>비트코인의 에너지 소비에 대한 우려는 지속되고 있으나, 재생에너지 채굴, 효율 향상, 절감 인센티브를 통하여 지속가능성을 개선할 수 있습니다.</p>
+<p>비트코인 전력 소비에 대한 비판은 종종 사안을 지나치게 단순화합니다. 포괄적인 분석은 글로벌 에너지 사용과 네트워크가 제공하는 보안을 함께 고려하여야 합니다.</p>
+<p>저렴한 재생에너지원에 접근할 수 있는 지역으로 채굴을 이전하려는 노력이 진행 중입니다. 작업 증명의 대안과 2계층 거래 솔루션과 같은 혁신이 검토되고 있으며, 환경적 우려에 대한 해법이 될 수 있습니다.</p>
+<h2 id="section-17">프라이버시와 보안 <a class="heading-anchor" href="#section-17" aria-label="링크 프라이버시와 보안">#</a></h2>
+<h3 id="section-18">프라이버시 과제를 동반한 견고한 보안 <a class="heading-anchor" href="#section-18" aria-label="링크 프라이버시 과제를 동반한 견고한 보안">#</a></h3>
+<p>비트코인은 투명한 블록체인을 통하여 견고한 보안을 제공하지만, 프라이버시 과제는 남아 있습니다. 블록체인 분석 기술이 이용 패턴을 드러낼 수 있어 주소 분석은 이용자의 프라이버시를 손상시킬 가능성이 있습니다.</p>
+<p>이용자는 하드웨어 지갑에 비공개 키를 오프라인으로 보관하는 등 모범 사례를 따름으로써 보안을 강화할 수 있습니다. Monero와 같은 프라이버시 중심 암호자산은 더 강한 익명성을 제공합니다.</p>
+<p>전반적으로 비트코인의 투명한 블록체인은 견고한 보안을 제공하며, 위조와 변조에 대한 내성을 보유하고 있습니다.</p>
+<h2 id="section-19">전망 <a class="heading-anchor" href="#section-19" aria-label="링크 전망">#</a></h2>
+<h3 id="section-20">불확실성 속의 강세 궤적 <a class="heading-anchor" href="#section-20" aria-label="링크 불확실성 속의 강세 궤적">#</a></h3>
+<p>기관 투자자의 채택 확대에 힘입어 비트코인의 미래는 여전히 유망합니다. 미국 비트코인 ETF 등 예상되는 전개로 전통적 투자자의 접근성이 향상될 수 있으나, 보험과 규제 과제가 일정에 영향을 미칠 수 있습니다.</p>
+<p>전망은 지속적인 모멘텀을 시사하며, 2024년까지 6자리 평가액에 도달할 가능성이 있습니다. 다만 변동성과 조정 국면이 장기화될 가능성 또한 무시할 수 없습니다.</p>
+<p>비트코인을 일시적 거품으로 보는 회의론자들이 존재하지만, 지속되는 실용적 유용성은 다른 결론을 시사합니다. 가장 영향력 있는 암호자산으로서의 지위를 계속 다지며, 큰 성장 잠재력을 보유하고 있습니다.</p>
+<h2 id="section-21">결론 <a class="heading-anchor" href="#section-21" aria-label="링크 결론">#</a></h2>
+<h3 id="section-22">금융의 미래를 형성하는 회복력 있는 혁신 <a class="heading-anchor" href="#section-22" aria-label="링크 금융의 미래를 형성하는 회복력 있는 혁신">#</a></h3>
+<p>2008년 사토시 나카모토에 의하여 도입된 이래 비트코인의 주목할 만한 여정은 돈과 기술의 역사에서 전환점을 만들어 냈습니다. 암호자산과 블록체인 기술 양쪽을 개척하며 분산형 혁명을 가동시켰습니다.</p>
+<p>기관의 통제 밖에 있는 디지털 네이티브 자산으로서, 비트코인은 점점 디지털화되는 세계에서 돈을 재정의할 것을 약속합니다. 그 지속되는 유용성과 확대되는 금융·기술적 영향력으로 미래는 흥미로운 가능성을 품고 있습니다.</p>
+<p>금융의 디지털화에 대한 비트코인의 영향은 부정할 수 없습니다. 계속 펼쳐지는 판도라의 상자를 열어, 금융의 디지털 진화의 중심에 자리하고 있습니다.</p>
+<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 초상화" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/ko/sogae/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 이행, 금융 서비스를 위한 포스트 양자 암호, 도매 결제의 구조적 변혁에 관해 집필하는 시니어 뱅킹 테크놀로지스트입니다.</span><span class="author-credentials">HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group에서 20년 이상의 경험을 보유하였습니다. <a href="/ko/sogae/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">최종 검토 <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">관련 읽을거리</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2023-12-11-yangja-ki-baepo-eunhaeng-bohan-hyeokmyeong/index.html" class="related-media" aria-label="양자 키 분배: 은행 보안의 혁신" tabindex="-1"><img alt="HSBC From the Docks" src="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-23"><a href="https://sebastienrousseau.com/ko/2023-12-11-yangja-ki-baepo-eunhaeng-bohan-hyeokmyeong/index.html">양자 키 분배: 은행 보안의 혁신</a> <a class="heading-anchor" href="#section-23" aria-label="링크 양자 키 분배: 은행 보안의 혁신">#</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2018-01-24-erc-20-tokeun-pyojun/index.html" class="related-media" aria-label="ERC-20: 세상을 바꾼 이더리움 토큰 인터페이스" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="erc-20"><a href="https://sebastienrousseau.com/ko/2018-01-24-erc-20-tokeun-pyojun/index.html">ERC-20: 세상을 바꾼 이더리움 토큰 인터페이스</a> <a class="heading-anchor" href="#erc-20" aria-label="링크 ERC-20: 세상을 바꾼 이더리움 토큰 인터페이스">#</a></h3><p><time datetime="2018-01-24">2018-01-24</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="기사 페이지 이동"><span class="post-pagination-stub" aria-hidden="true"></span><a class="post-pagination-next" href="/ko/2018-01-02-beulrokchein-2018-junggyo-gisul/"><span class="post-pagination-label">다음</span><span class="post-pagination-title">Blockchain explained, the technology that matters the most</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ko/sogae/index.html">소개</a></li>
+              <li><a href="/ko/munui/index.html">문의하기</a></li>
+              <li><a href="/ko/jeongjeok-saiteu-saengseonggi-ro-jejak/index.html">Static Site Generator로 제작</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">기사</h2>
+            <ul>
+              <li><a href="/ko/gisa/index.html">기사</a></li>
+              <li><a href="/ko/nonmun/index.html">논문</a></li>
+              <li><a href="/ko/taegeu/index.html">태그</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">업무</h2>
+            <ul>
+              <li><a href="/ko/peurojekteu/index.html">프로젝트</a></li>
+              <li><a href="/ko/pleilliseuteu/index.html">플레이리스트</a></li>
+              <li><a href="/ko/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">연락처</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="뉴스레터 구독">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 결제, AI, 포스트 양자 암호에 관한 연구 노트. 스팸은 발송하지 않습니다.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="yongnim@eunhaeng.com" />
+            <input type="hidden" name="_subject" value="뉴스레터 구독 — sebastienrousseau.com" />
+            <button type="submit">구독하기</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. 무단 복제 및 전재 금지.</span>
+          <div class="social" aria-label="소셜 링크">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau의 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau의 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau의 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau의 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ko/jeobgeunseong/index.html">접근성</a> ·
+            <a href="/ko/gaeinjeongbo/index.html">개인정보처리방침</a> ·
+            <a href="/ko/yakgwan/index.html">이용약관</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ko"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ko"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":874,"headline":"비트코인: 최초의 암호자산에 관한 연간 총정리","description":"비트코인: 온라인 거래의 양상을 혁신할 잠재력을 지닌 P2P 전자 현금 시스템(P2P ECS).","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp","width":"100vw","height":"100vh","caption":"테이블에 쌓인 금화와 은화"},"url":"https://sebastienrousseau.com/ko/2018-01-01-bitcoin-yeongan-chongjeong/","datePublished":"2018-01-01T20:20:20+00:00","dateModified":"2026-05-11","inLanguage":"ko","keywords":"비트코인, 암호자산, 블록체인, P2P, 이중 지출, 마이닝, 작업 증명, ETF, 사토시 나카모토, 분산형 금융","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ko/2018-01-01-bitcoin-yeongan-chongjeong/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ko"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ko/"},{"@type":"ListItem","position":3,"name":"비트코인: 최초의 암호자산에 관한 연간 총정리","item":"https://sebastienrousseau.com/ko/2018-01-01-bitcoin-yeongan-chongjeong/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="검색">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>검색</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="검색">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="문서 검색..." autocomplete="off" aria-label="검색"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 닫기</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 이동</span><span><kbd>Enter</kbd> 열기</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

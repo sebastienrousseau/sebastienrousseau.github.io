@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-05-21-2026-choeseon-keulaeudeu-infra-akitekcheo/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>2026년 최적의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티 클라우드, 양자 인식 설계도</news:title>
+    <news:keywords>클라우드 아키텍처 2026, AI 네이티브 인프라, 멀티 클라우드, 서버리스, 엣지 컴퓨팅, WebAssembly, Wasm, DevSecOps, 지속 가능 데이터 센터, 액체 냉각, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, 에이전트형 상거래, 다중 에이전트 떼, 에이전트형 단위 경제, 에이전트 FinOps, 암호적 에이전트 신원, SPIFFE, SPIRE, 알고리즘 전염, 데이터 중력, FinOps egress, HPC, GPU 스토리지, 연속 트레저리, 국경 없는 유동성, 실시간 결제, 합성 데이터 생성, 기밀 컴퓨팅, JPMorgan 멀티 클라우드, Citi 현대화, 그래프 신경망, 딥페이크 사기, harvest now decrypt later, HNDL, 포스트 양자 암호, 암호 민첩성, MCP 보안, 프롬프트 주입, 공급망 공격, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-05-18-eijenteuk-enjineoring-eunhaeng-2026-seolgyedo/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
+    <news:title>에이전트 엔지니어링: 은행을 위한 2026년 설계도</news:title>
+    <news:keywords>에이전트 AI, AI 에이전트, 은행 자동화, MCP, 멀티 에이전트, 에이전트형 상거래, AI 거버넌스, AI 보안</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenhwa-mmf/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-15T06:06:06+00:00</news:publication_date>
+    <news:title>숨겨진 수익: BlackRock의 BRSRV·BSTBL과 GENIUS Act 토큰화 MMF 해독</news:title>
+    <news:keywords>BlackRock, BRSRV, BSTBL, GENIUS Act, 토큰화 MMF, 스테이블코인, 머니마켓펀드, 디지털 자산</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-05-14-jangbu-boho-beobinyung-pos-yangja-imun/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-14T06:06:06+00:00</news:publication_date>
+    <news:title>원장을 지키기: 기업 재무를 위한 포스트 양자 이행</news:title>
+    <news:keywords>포스트 양자 암호, 기업 재무, ERP, 재무관리, PQC 이행, 암호 민첩성, 양자 안전 결제</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-05-12-iso-20022-pacs008-gujohwa-juso-girhan/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-12T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 pacs.008 구조화 주소: 2026년 11월 마감일</news:title>
+    <news:keywords>ISO 20022, pacs.008, 구조화 주소, SWIFT CBPR+, 2026년 11월, 결제 이행, 도매 결제</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-05-11-lucy-besson-jisik-jeonjeon-ai-yangja/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-11T06:06:06+00:00</news:publication_date>
+    <news:title>Lucy의 플래시 메모리, 다시 보다: 베송이 지식의 기계 이주에 관하여 본 것</news:title>
+    <news:keywords>Lucy, 뤽 베송, 지식 이전, AI, LLM, 중성 원자 큐비트, 전뇌 에뮬레이션, AI 철학</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2026-04-11-yangja-gyegi-da-siusijak/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-04-11T06:06:06+00:00</news:publication_date>
+    <news:title>양자 임계점이 다시 움직이고 있다</news:title>
+    <news:keywords>양자 임계, Shor 알고리즘, 큐비트, 양자 위협, PQC 이행, Y2Q, 암호적으로 유의미한 양자 컴퓨팅</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2025-09-01-yangja-anjeon-gyeolje-epaa/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2025-09-01T06:06:06+00:00</news:publication_date>
+    <news:title>양자 안전 결제: EPAA 백서</news:title>
+    <news:keywords>양자 안전 결제, EPAA, 포스트 양자 암호, 결제 인프라, 도매 결제, 실시간 결제</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2024-04-22-gyeokja-gibon-amho-yong-yangja-allgori-jeum-bugeu-balgyeon/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-04-22T06:06:06+00:00</news:publication_date>
+    <news:title>격자 기반 암호용 양자 알고리즘에서 버그 발견</news:title>
+    <news:keywords>양자 알고리즘, 버그, LWE, 격자 기반 암호, Yilei Chen, 포스트 양자 암호</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2024-04-15-yangja-allgori-jeum-i-gyeokja-gibon-amho-do-jeon/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-04-15T06:06:06+00:00</news:publication_date>
+    <news:title>양자 알고리즘이 격자 기반 암호에 도전하다</news:title>
+    <news:keywords>양자 알고리즘, 격자 기반 암호, LWE, Learning With Errors, 포스트 양자 암호, 양자 위협</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2024-04-01-openvoice-eumseong-bokje-gisul-seondojeok-hyeoksin/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-04-01T06:06:06+00:00</news:publication_date>
+    <news:title>OpenVoice: 음성 복제 기술의 최첨단 혁신</news:title>
+    <news:keywords>OpenVoice, 음성 복제, 음성 AI, 딥페이크, 부정, 은행 인증, 음성 생체 인식</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2024-03-25-eunhaeng-yangja-sidae-wansjeon-donghyeong-amho/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-25T06:06:06+00:00</news:publication_date>
+    <news:title>은행 양자 시대의 완전 동형 암호</news:title>
+    <news:keywords>완전 동형 암호, FHE, 양자 안전, 은행, 프라이버시, 클라우드 컴퓨팅, ML-FHE</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2024-03-18-meolti-modeol-llm-euro-ai-baljeon-mm1-tongchal/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-18T06:06:06+00:00</news:publication_date>
+    <news:title>멀티모달 LLM으로 AI를 진전시키다: MM1로부터의 통찰</news:title>
+    <news:keywords>MM1, Apple AI, 멀티모달 LLM, 비전 언어, 사전 학습, 스케일링 법칙</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2024-03-12-openai-whisper-ro-macos-silsigan-eumseong-insik-hyeokmyeong/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-12T06:06:06+00:00</news:publication_date>
+    <news:title>OpenAI Whisper로 macOS의 실시간 음성 인식을 혁신하다</news:title>
+    <news:keywords>OpenAI Whisper, macOS, Metal Performance Shaders, MPS, 실시간, 음성 인식, Apple Silicon</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2024-03-08-rustlogs-rust-yong-goegeup-logging-laibeureori/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-08T06:06:06+00:00</news:publication_date>
+    <news:title>RustLogs: Rust용 고급 로깅 라이브러리</news:title>
+    <news:keywords>RustLogs, Rust, 로깅, 구조화 로그, JSON, 트레이싱, 관측 가능성, 운영</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2024-03-04-mistral-ai-le-chat-daewhwhasik-ai-sajeunsidae/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-04T06:06:06+00:00</news:publication_date>
+    <news:title>Mistral AI의 Le Chat: 대화형 AI의 새 시대</news:title>
+    <news:keywords>Mistral AI, Le Chat, 유럽 AI, LLM, 오픈소스, 프랑스, AI 주권</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2024-02-26-google-gemma-opeun-soseu-ai-gaebal-hyeonsin/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-26T06:06:06+00:00</news:publication_date>
+    <news:title>Google Gemma: 오픈소스 AI 개발의 변혁</news:title>
+    <news:keywords>Gemma, Google, 오픈소스 AI, LLM, Llama, 파인튜닝, 온디바이스 AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2024-02-19-gemini-google-ai-hyeokmyeong-haeseol/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-19T06:06:06+00:00</news:publication_date>
+    <news:title>Gemini 해부: Google AI 혁명을 해설하다</news:title>
+    <news:keywords>Gemini, Google AI, 멀티모달, LLM, GPT, AI 모델, Bard, Vertex AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2024-02-13-eu-ai-beob-segye-ai-gyuje-mirae/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-13T06:06:06+00:00</news:publication_date>
+    <news:title>EU AI 규제: 세계 AI 규제의 미래를 형성하다</news:title>
+    <news:keywords>EU AI 법, AI 규제, 거버넌스, 위험 분류, 규정 준수, GDPR, AI 감독</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2024-02-12-akande-eumseong-bijoja-gaein-imwon-bijo-hyeokmyeong/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
+    <news:title>Akande 음성 비서: 개인 및 임원 보조의 혁신</news:title>
+    <news:keywords>Akande, 음성 비서, GPT, OpenAI, 임원 지원, PDF, AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2024-02-08-ai-ga-mirae-reul-hyeongseong-haneun-gwanggo-hyeokmyeong/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-08T06:06:06+00:00</news:publication_date>
+    <news:title>AI가 미래를 형성하다: 광고의 혁신</news:title>
+    <news:keywords>AI, 광고, 개인화, 생성 AI, 윤리, 프라이버시, 딥페이크</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2024-01-29-ai-gibon-eumseong-bunseok-beonyeok-tongchal/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
+    <news:title>AI 기반 음성 분석, 번역, 통찰</news:title>
+    <news:keywords>AI, 음성 인식, 음성-텍스트 변환, Whisper, 번역, 다국어, 오디오 통찰</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2024-01-23-ai-peurompeuteu-enjineoring-baljeon/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-23T06:06:06+00:00</news:publication_date>
+    <news:title>AI 프롬프트 엔지니어링의 발전</news:title>
+    <news:keywords>프롬프트 엔지니어링, AI, LLM, chain-of-thought, RAG, 도구 사용, 에이전트, 워크플로</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2024-01-15-alien-studio-ai-sajin-euro-yesul-hyeokmyeong/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-15T06:06:06+00:00</news:publication_date>
+    <news:title>Alien Studio: AI 사진으로 예술을 혁신하다</news:title>
+    <news:keywords>Alien Studio, AI 사진, 확산 모델, Stable Diffusion, Midjourney, AI 아트, 크리에이티브 AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2024-01-08-ibm-qiskit-yangja-fourier-byeonhwan-euro-sinyongbiyul-bunseok-choejeokhwa/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-08T06:06:06+00:00</news:publication_date>
+    <news:title>IBM Qiskit과 양자 푸리에 변환으로 신용 비율 분석 최적화</news:title>
+    <news:keywords>IBM Qiskit, 양자 푸리에 변환, QFT, 신용 비율, 양자 금융, 양자 컴퓨팅, 포트폴리오 분석</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2024-01-01-2024-ai-donghyang-tongchal-yecheuk/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-01T06:06:06+00:00</news:publication_date>
+    <news:title>2024년 AI 동향과 예측: 미래를 향한 통찰</news:title>
+    <news:keywords>AI 트렌드, 2024, 엔터프라이즈 AI, 생성 AI, AI 규제, EU AI 법, 멀티모달 AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2023-12-25-ai-gangwha-yangja-allgori-jeum-euro-geumyung-hyeokmyeong/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2023-12-25T06:06:06+00:00</news:publication_date>
+    <news:title>AI 강화 양자 알고리즘으로 금융 혁신</news:title>
+    <news:keywords>양자 알고리즘, AI, 기계 학습, 금융, 포트폴리오 최적화, 리스크 모델링, QAOA, VQE</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2023-12-18-eunhaeng-ai-yangja-keompyuting-hyeonhwang-2023-yeongan-chongjeong/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2023-12-18T06:06:06+00:00</news:publication_date>
+    <news:title>은행에서의 AI와 양자 컴퓨팅 현황: 2023년 총정리</news:title>
+    <news:keywords>AI, 양자 컴퓨팅, 은행, 핀테크, 리스크 관리, 알고리즘 트레이딩, 2023, 검토</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2023-12-11-yangja-ki-baepo-eunhaeng-bohan-hyeokmyeong/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2023-12-11T06:06:06+00:00</news:publication_date>
+    <news:title>양자 키 분배: 은행 보안의 혁신</news:title>
+    <news:keywords>QKD, 양자 키 분배, 양자 암호, BB84, BBM92, 양자 네트워크, 은행 보안, 양자 인터넷</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2023-12-04-dtt-laibeureori-ro-rust-naljjawa-sigan-supdeuk/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2023-12-04T06:06:06+00:00</news:publication_date>
+    <news:title>dtt 라이브러리로 Rust의 날짜와 시간을 숙달하다</news:title>
+    <news:keywords>dtt, 날짜, 시간, Rust, 시간대, RFC 3339, ISO 8601, 라이브러리, 파싱, 포맷</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2023-11-28-kyberlib-yangja-wihyeop-eul-makneun-rust-bangpae/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-28T06:06:06+00:00</news:publication_date>
+    <news:title>kyberlib: 양자 위협을 막는 Rust 방패</news:title>
+    <news:keywords>kyberlib, CRYSTALS-Kyber, Rust, ML-KEM, FIPS 203, 키 캡슐화, 포스트 양자 암호, 양자 내성</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2023-11-19-crystals-kyber-yangja-sidae-bohoallgori-jeum/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-19T06:06:06+00:00</news:publication_date>
+    <news:title>CRYSTALS-Kyber: 양자 시대의 방어 알고리즘</news:title>
+    <news:keywords>CRYSTALS-Kyber, 양자 내성, 키 캡슐화, KEM, NIST PQC, 격자 기반 암호, ML-KEM, FIPS 203</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2023-11-12-saengseonghyung-ai-tamgu/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
+    <news:title>생성 AI 탐구</news:title>
+    <news:keywords>생성 AI, LLM, 대규모 언어 모델, 확산 모델, GPT, Claude, Gemini, 엔터프라이즈 AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2023-11-05-rust-bohan-eul-wihan-suhakjeok-amhojeok-sangsu/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-05T06:06:06+00:00</news:publication_date>
+    <news:title>Rust 보안을 위한 수학적·암호적 상수</news:title>
+    <news:keywords>암호 상수, 수학, Rust, ECC, RSA, NIST 곡선, PQC, 보안, mathconst</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2023-10-26-libmake-rust-laibeureori-koodeu-saengseonggi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2023-10-26T06:06:06+00:00</news:publication_date>
+    <news:title>libmake: 반복 작업을 줄이고 고품질 Rust 라이브러리를 구축하는 코드 생성기</news:title>
+    <news:keywords>libmake, 코드 생성기, Rust, Cargo, 라이브러리, 템플릿, 개발자 도구, 모범 사례</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2023-10-16-yangja-sidae-deiteo-bohogi-hash-laibeureori-hsh/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2023-10-16T06:06:06+00:00</news:publication_date>
+    <news:title>양자 시대 데이터 보호: 해시 라이브러리 hsh</news:title>
+    <news:keywords>해시, 다이제스트, 비밀번호, Rust, hsh, 양자 내성, 포스트 양자 암호, 보안</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2023-10-09-shokunin-choegoseok-rust-gibon-jeongjeoksaiteu-saengseonggi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2023-10-09T06:06:06+00:00</news:publication_date>
+    <news:title>Shokunin: Rust 기반 최고속 정적 사이트 생성기</news:title>
+    <news:keywords>Shokunin, SSG, 정적 사이트 생성기, Rust, 성능, SEO, JSON-LD, 접근성</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2023-09-29-pain001-ro-iso-20022-junsu-gyeoljepail-jadonghwa/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
+    <news:title>pain001로 ISO 20022 준수 결제 파일 생성 자동화</news:title>
+    <news:keywords>ISO 20022, pain.001, ISO 20022 이행, SWIFT, SEPA, 결제 자동화, Python, 오픈소스, 국경 간 송금</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2018-02-15-express-transaction-credits-peullaetpom-jejak/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
+    <news:title>Express Transaction Credits 플랫폼의 개발</news:title>
+    <news:keywords>국경 간 송금, 블록체인, 암호자산, 토큰, 스마트 컨트랙트, 결제 플랫폼, 핀테크</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2018-02-04-saeroun-amhohwapye-wa-misirae-gwasok-gyeoljeyusol/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
+    <news:title>새로운 암호자산을 공개하며 미래의 보다 빠른 결제 솔루션을 제공한다</news:title>
+    <news:keywords>암호자산, 결제, 실시간 결제, 토큰, ICO, 블록체인, 핀테크, 국경 간 송금</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2018-01-24-erc-20-tokeun-pyojun/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-24T06:06:06+00:00</news:publication_date>
+    <news:title>ERC-20: 세상을 바꾼 이더리움 토큰 인터페이스</news:title>
+    <news:keywords>ERC-20, 이더리움, 스마트 컨트랙트, 토큰, ICO, DeFi, 스테이블코인, 토큰화, 이더리움 개선 제안</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2018-01-09-beulrokchein-baehu-gisul-ihae/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
+    <news:title>블록체인 배후의 기술 이해하기</news:title>
+    <news:keywords>블록체인, 암호, 해시, 디지털 서명, 머클 트리, 합의, 작업 증명, P2P 네트워크</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2018-01-02-beulrokchein-2018-junggyo-gisul/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-02T06:06:06+00:00</news:publication_date>
+    <news:title>블록체인: 2018년에 중요해질 기술</news:title>
+    <news:keywords>블록체인, 분산 원장, 암호자산, 스마트 컨트랙트, 토큰화, 핀테크, 신뢰, 투명성</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ko/2018-01-01-bitcoin-yeongan-chongjeong/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-01T06:06:06+00:00</news:publication_date>
+    <news:title>비트코인: 최초의 암호자산에 관한 연간 총정리</news:title>
+    <news:keywords>비트코인, 암호자산, 블록체인, P2P, 이중 지출, 마이닝, 작업 증명, ETF, 사토시 나카모토, 분산형 금융</news:keywords>
+  </news:news>
+</url>
+</urlset>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 21 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 21 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>2026년 최적의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티 클라우드, 양자 인식 설계도 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="2026년 클라우드 아키텍처는 6개의 기둥으로 결정화되었습니다 — AI 네이티브 인프라, 인텔리전트 멀티 클라우드, 서버리스 우선, 엣지, 자동화 보안과 암호 민첩성, 그리고 지속 가능한 고밀도 운영. 은행에게 질문은 클라우드를 소비할 것인지 설계할 것인지입니다.">
+<meta name="keywords" content="클라우드 아키텍처 2026, AI 네이티브 인프라, 멀티 클라우드, 서버리스, 엣지 컴퓨팅, WebAssembly, Wasm, DevSecOps, 지속 가능 데이터 센터, 액체 냉각, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, 에이전트형 상거래, 다중 에이전트 떼, 에이전트형 단위 경제, 에이전트 FinOps, 암호적 에이전트 신원, SPIFFE, SPIRE, 알고리즘 전염, 데이터 중력, FinOps egress, HPC, GPU 스토리지, 연속 트레저리, 국경 없는 유동성, 실시간 결제, 합성 데이터 생성, 기밀 컴퓨팅, JPMorgan 멀티 클라우드, Citi 현대화, 그래프 신경망, 딥페이크 사기, harvest now decrypt later, HNDL, 포스트 양자 암호, 암호 민첩성, MCP 보안, 프롬프트 주입, 공급망 공격, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Cloud Architecture 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-Fj3rD1Y88slZyAnr+IWp4640MYkotqTWgm2QH29aRsY=' 'sha256-PMS9ZxTs/ybUFjh30ZkbhtV+IC0TmDnamqcAaPVfQ54=' 'sha256-aAR/alubqwuG1+UbvKNFLiB6Ecrw3PGzkKoIj8kYGkU=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ko/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 피드" href="/ko/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="2026년 최적의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티 클라우드, 양자 인식 설계도 — Sebastien Rousseau">
+<meta property="og:description" content="2026년 클라우드 아키텍처는 6개의 기둥으로 결정화되었습니다 — AI 네이티브 인프라, 인텔리전트 멀티 클라우드, 서버리스 우선, 엣지, 자동화 보안과 암호 민첩성, 그리고 지속 가능한 고밀도 운영. 은행에게 질문은 클라우드를 소비할 것인지 설계할 것인지입니다.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/ko/2026-05-21-2026-choeseon-keulaeudeu-infra-akitekcheo/">
+<meta property="og:image" content="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2026년 최적의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티 클라우드, 양자 인식 설계도 — Sebastien Rousseau">
+<meta name="twitter:description" content="2026년 클라우드 아키텍처는 6개의 기둥으로 결정화되었습니다 — AI 네이티브 인프라, 인텔리전트 멀티 클라우드, 서버리스 우선, 엣지, 자동화 보안과 암호 민첩성, 그리고 지속 가능한 고밀도 운영. 은행에게 질문은 클라우드를 소비할 것인지 설계할 것인지입니다.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/ko/2026-05-21-2026-choeseon-keulaeudeu-infra-akitekcheo/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-21-meilleure-architecture-cloud-pour-les-banques-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-21-best-cloud-infrastructure-architecture-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-21-beste-cloud-infrastruktur-architektur-fuer-banken-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-21-mejor-arquitectura-cloud-para-bancos-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-21-miglior-architettura-cloud-per-banche-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-21-2026-saiyou-no-kuraudo-infura-aakitekucha/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-21-2026-choeseon-keulaeudeu-infra-akitekcheo/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-21-melhor-arquitetura-cloud-para-bancos-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-21-luchshaya-cloud-arkhitektura-dlya-bankov-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-21-2026-zuijia-yun-jichu-jiagou/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-21-2026-zuijia-yun-jichu-jiagou-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">본문으로 건너뛰기</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="내비게이션 전환" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ko/index.html" aria-label="Sebastien Rousseau 홈">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="주요 내비게이션">
+          <ul class="ap-menu">
+            <li><a href="/ko/sogae/index.html">소개</a></li>
+            <li><a href="/ko/gisa/index.html" aria-current="page" class="active">기사</a></li>
+            <li><a href="/ko/nonmun/index.html">논문</a></li>
+            <li><a href="/ko/jujae/index.html">주제</a></li>
+            <li><a href="/ko/peurojekteu/index.html">프로젝트</a></li>
+            <li><a href="/ko/pleilliseuteu/index.html">플레이리스트</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="다크 테마로 전환" aria-pressed="false" title="테마 전환">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="검색 (Cmd 또는 Ctrl + K)" title="검색 (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="언어">
+            <button type="button" class="ap-lang-toggle" aria-label="KO, 언어 변경" aria-expanded="false" aria-haspopup="menu" title="언어 변경">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">KO</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="출시 예정">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="출시 예정">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="출시 예정">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="출시 예정">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="출시 예정">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="출시 예정">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="출시 예정">🇮🇩 Indonesia</span>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <span class="ap-lang-item" data-lang="nl" aria-disabled="true" title="출시 예정">🇳🇱 Nederlands</span>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="출시 예정">🇵🇱 Polski</span>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="출시 예정">🇷🇴 Română</span>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="출시 예정">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="출시 예정">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="출시 예정">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="출시 예정">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="출시 예정">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="출시 예정">🇳🇬 Yorùbá</span>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ko/munui/index.html" aria-label="문의하기">문의하기 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="내비게이션 전환">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>2026년 최적의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티 클라우드, 양자 인식 설계도</h1>
+      <p class="sub">2026년 클라우드 아키텍처는 6개의 기둥으로 결정화되었습니다</p>
+    <nav class="article-tags" aria-label="주제"><a href="/tags/index.html#h3-2026" class="article-tag" rel="tag">클라우드 아키텍처 2026</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">AI 네이티브 인프라</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">멀티 클라우드</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">서버리스</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">엣지 컴퓨팅</a><a href="/tags/index.html#h3-webassembly" class="article-tag" rel="tag">WebAssembly</a><a href="/tags/index.html#h3-wasm" class="article-tag" rel="tag">Wasm</a><a href="/tags/index.html#h3-devsecops" class="article-tag" rel="tag">DevSecOps</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">지속 가능 데이터 센터</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">액체 냉각</a><a href="/tags/index.html#h3-aws-bedrock" class="article-tag" rel="tag">AWS Bedrock</a><a href="/tags/index.html#h3-google-vertex-ai" class="article-tag" rel="tag">Google Vertex AI</a><a href="/tags/index.html#h3-azure-openai-service" class="article-tag" rel="tag">Azure OpenAI Service</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">에이전트형 상거래</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">다중 에이전트 떼</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">에이전트형 단위 경제</a><a href="/tags/index.html#h3-finops" class="article-tag" rel="tag">에이전트 FinOps</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">암호적 에이전트 신원</a><a href="/tags/index.html#h3-spiffe" class="article-tag" rel="tag">SPIFFE</a><a href="/tags/index.html#h3-spire" class="article-tag" rel="tag">SPIRE</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">알고리즘 전염</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">데이터 중력</a><a href="/tags/index.html#h3-finops-egress" class="article-tag" rel="tag">FinOps egress</a><a href="/tags/index.html#h3-hpc" class="article-tag" rel="tag">HPC</a><a href="/tags/index.html#h3-gpu" class="article-tag" rel="tag">GPU 스토리지</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">연속 트레저리</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">국경 없는 유동성</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">실시간 결제</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">합성 데이터 생성</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">기밀 컴퓨팅</a><a href="/tags/index.html#h3-jpmorgan" class="article-tag" rel="tag">JPMorgan 멀티 클라우드</a><a href="/tags/index.html#h3-citi" class="article-tag" rel="tag">Citi 현대화</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">그래프 신경망</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">딥페이크 사기</a><a href="/tags/index.html#h3-harvest-now-decrypt-later" class="article-tag" rel="tag">harvest now decrypt later</a><a href="/tags/index.html#h3-hndl" class="article-tag" rel="tag">HNDL</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">포스트 양자 암호</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">암호 민첩성</a><a href="/tags/index.html#h3-mcp" class="article-tag" rel="tag">MCP 보안</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">프롬프트 주입</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">공급망 공격</a><a href="/tags/index.html#h3-cloudcdn" class="article-tag" rel="tag">CloudCDN</a><a href="/tags/index.html#h3-cloudflare-workers" class="article-tag" rel="tag">Cloudflare Workers</a><a href="/tags/index.html#h3-durable-objects" class="article-tag" rel="tag">Durable Objects</a><a href="/tags/index.html#h3-wcag-aa" class="article-tag" rel="tag">WCAG-AA</a><a href="/tags/index.html#h3-sebastien-rousseau" class="article-tag" rel="tag">Sebastien Rousseau</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-21T06:06:06+00:00" class="meta-pub">발행일 21 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="예상 소요 시간">5 분 소요</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>목차</h2><ol><li><a href="#2026">2026년 최적의 클라우드 인프라 아키텍처</a></li><li><a href="#2026-2">왜 2026년이 설계도가 고정된 해인가</a></li><li><a href="#6">6개의 기둥</a></li><li><a href="#hpc-ai">HPC와 AI 워크로드: 모델 학습에서 다중 에이전트 떼로</a></li><li><a href="#finops">에이전트형 단위 경제학: 새 FinOps 프런티어</a></li><li><a href="#section-12">결론</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 2026년 클라우드 아키텍처는 6개의 기둥으로 결정화되었습니다 — AI 네이티브 인프라, 인텔리전트 멀티 클라우드, 서버리스 우선, 엣지, 자동화 보안과 암호 민첩성, 그리고 지속 가능한 고밀도 운영. 은행에게 질문은 클라우드를 소비할 것인지 설계할 것인지입니다.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>2026년 최적의 클라우드 인프라 아키텍처.</strong> 2026년 클라우드 아키텍처는 6개의 기둥을 중심으로 결정화되었습니다: AI 네이티브 인프라, 인텔리전트 멀티 클라우드, 엣지에서의 WebAssembly를 가진 서버리스 우선 설계, 엣지 컴퓨팅, 암호 민첩성을 가진 자동화 DevSecOps, 고밀도 지속 가능한 운영.</li>  <li><strong>왜 2026년이 설계도가 고정된 해인가.</strong> 지난 10년의 대부분 동안 금융 서비스의 「클라우드 아키텍처」 대화는 주로 속도의 문제였습니다: 워크로드를 오프사이트로 얼마나 빠르게 이동할 것인가, 프라이빗 데이터 센터에 보존할 상태는 얼마인가, 어떤 하이퍼스케일러에 닻을 내릴 것인가.</li>  <li><strong>6개의 기둥.</strong> AI는 더 이상 클라우드에서 실행되는 서비스가 아닙니다 — 점차 클라우드의 운영 체제가 됩니다.</li>  <li><strong>HPC와 AI 워크로드: 모델 학습에서 다중 에이전트 떼로.</strong> 에이전트형 상거래와 다중 에이전트 떼는 금융 서비스의 새로운 지배적 HPC 워크로드 프로파일 입니다.</li></ul></aside><h2 id="2026">2026년 최적의 클라우드 인프라 아키텍처 <a class="heading-anchor" href="#2026" aria-label="링크 2026년 최적의 클라우드 인프라 아키텍처">#</a></h2>
+<p>2026년 클라우드 아키텍처는 6개의 기둥을 중심으로 결정화되었습니다: AI 네이티브 인프라, 인텔리전트 멀티 클라우드, 엣지에서의 WebAssembly를 가진 서버리스 우선 설계, 엣지 컴퓨팅, 암호 민첩성을 가진 자동화 DevSecOps, 고밀도 지속 가능한 운영. 은행과 금융 기관에게 질문은 더 이상 어떤 기둥을 채택할 것인가가 아니라, 클라우드를 <strong>소비할 것인가</strong> 아니면 <strong>설계할 것인가</strong> 입니다.</p>
+<hr />
+<blockquote>
+<p><strong>TL;DR.</strong> 2026년 클라우드 아키텍처는 더 이상 조달 대화가 아닙니다. 설계 작업으로 다루는 은행 — 6개의 수렴 기둥, 은행 통제를 다중 클라우드에 적용하는 내부 플랫폼, 에이전트의 암호적 신원, 암호 민첩성, 에이전트형 FinOps — 은 10년에 걸친 우위를 누적합니다. 솔루션 구매로 다루는 은행은 향후 2년 안에 균열을 발견할 것입니다.</p>
+<p><strong>핵심 요약</strong></p>
+<ul>
+<li>2026년 클라우드 아키텍처는 <strong>6개의 수렴 기둥</strong> 으로 정의됩니다: AI 네이티브 인프라 (AWS Bedrock, Google Vertex AI, Azure OpenAI Service), AWS·OCI·Azure·GCP 간 인텔리전트 멀티 클라우드, <strong>WebAssembly가 엣지 표준으로 등장하는 서버리스 우선 컴퓨팅</strong>, 엣지 컴퓨팅과 IoT, <strong>암호 민첩성</strong> 을 내장한 자동화 DevSecOps, 액체 냉각의 고밀도 지속 가능한 운영.</li>
+<li><strong>Gartner는 2026년까지 은행의 75% 이상이 하이브리드 또는 멀티 클라우드 전략을 채택</strong> 한다고 예측하며, 2030년까지 은행 워크로드의 90%가 클라우드에 있을 것이라고 봅니다. JPMorgan Chase는 공개적으로 <strong>데이터의 75%, 애플리케이션의 70%를 클라우드로</strong> 이전한다는 목표를 설정하였습니다.</li>
+<li><strong>HPC는 에이전트형 상거래로 재구성</strong> 됩니다. 프런티어 워크로드는 더 이상 LLM 학습뿐이 아니라 <strong>금융 권한이 위임된 다중 에이전트 떼</strong> 입니다. GPU 랙 밀도는 <strong>132 kW가 표준, 240 kW가 1년 후, 1 MW/랙이 신뢰할 수 있는 로드맵</strong> 위에 있습니다.</li>
+<li><strong>새 FinOps 원칙이 적용됩니다: 에이전트형 단위 경제학.</strong> 에이전트형 시스템을 배포하는 은행은 더 이상 컴퓨트와 스토리지만 지불하지 않습니다 — 자율 결정을 지불합니다: LLM 토큰, 벡터 DB 조회, MCP 도구 호출.</li>
+<li><strong>레거시 함정이 클라우드 기회보다 더 날카롭습니다.</strong> 금융 서비스 IT 예산은 여전히 70~75%가 레거시 유지보수에 소비되며, <strong>은행의 63%가 여전히 2000년 이전에 작성된 코드에 의존</strong> 합니다. Citi는 <strong>2025년에 450개 애플리케이션을 폐기하였으며, 2022년 이후 1,250개 이상</strong> 입니다.</li>
+<li><strong>위협 표면은 은행이 내부화하여야 할 4개의 벡터로 수렴되었습니다:</strong>
+<ul>
+<li>부정 탐지의 지배적 패턴으로서 <strong>그래프 신경망</strong>: 딥페이크 자체가 아니라 그 배후의 자금세탁 네트워크를 탐지.</li>
+<li>국가 후원 적극적 추출 전략으로서 <strong>Harvest-Now-Decrypt-Later (HNDL)</strong>, 즉각적인 PQC 이행과 지속적 대응으로서 암호 민첩성을 요구.</li>
+<li><strong>MCP 공격 표면과 알고리즘 전염</strong>: 에이전트 연결 프로토콜은 에이전트 시스템의 결합 조직이며, 루프 내 내부 에이전트가 은행 API를 DDoS하는 새로운 위협을 포함한 가장 큰 신규 공격 표면이기도 합니다.</li>
+<li><strong>에이전트의 암호적 신원</strong>: 은행이 기업 트레저리 에이전트가 진정으로 인간 트레저러에 의해 인가되었는지 검증하는 미해결 문제.</li>
+</ul>
+</li>
+<li>위 위협 벡터는 실용적이고 검사 가능한 솔루션을 요구합니다. 이것이 <strong>CloudCDN</strong> (<a href="https://cloudcdn.pro/">cloudcdn.pro ⧉</a>, <a href="https://github.com/sebastienrousseau/cloudcdn.pro">GitHub ⧉</a>)을 안내한 추론이었습니다: 엣지 에이전트 위기를 위한 참조 구현으로 개발한 오픈소스, 멀티테넌트, AI 네이티브 CDN. 핵심 아키텍처 선택 — <strong>42개의 MCP 도구를 노출, Durable Objects를 통한 원자적 속도 제한 강제, CI의 차단 게이트로서 WCAG-AA 요구, 90일 불변 감사 로그 보장</strong> — 은 MCP 보안 위기에 대한 의도적, 시험 가능한 답변입니다.</li>
+<li><strong>전략적 질문은 설계의 질문이며 조달이 아닙니다.</strong> 클라우드를 조달로 다루는 은행은 DORA, EU AI 법, 2026년 11월 SWIFT CBPR+ 마감일, 에이전트형 상거래, HNDL 위협, 연속 트레저리 의무사항을 동시에 충족할 수 없는 벤더 로드맵에 갇힙니다. 클라우드를 설계 규율로 다루는 은행은 6개의 기둥이 수렴함을 발견합니다.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="2026-2">왜 2026년이 설계도가 고정된 해인가 <a class="heading-anchor" href="#2026-2" aria-label="링크 왜 2026년이 설계도가 고정된 해인가">#</a></h2>
+<p>지난 10년의 대부분 동안 금융 서비스의 「클라우드 아키텍처」 대화는 주로 속도의 문제였습니다: 워크로드를 오프사이트로 얼마나 빠르게 이동할 것인가, 프라이빗 데이터 센터에 보존할 상태는 얼마인가, 어떤 하이퍼스케일러에 닻을 내릴 것인가. 본 대화는 해결되었습니다. 2026년 말까지 <strong>금융 서비스 회사의 90%가 클라우드 기술을 사용</strong> (Deloitte)하고, Gartner는 <strong>2030년까지 은행 워크로드의 90%가 클라우드에 있을 것</strong> 이라고 예측합니다. 이를 대체하는 질문은 아키텍처적입니다: 클라우드가 현재의 기반이 되었으므로, 은행 규모에서 잘 설계된 시스템은 실제로 어떻게 보입니까?</p>
+<h2 id="6">6개의 기둥 <a class="heading-anchor" href="#6" aria-label="링크 6개의 기둥">#</a></h2>
+<h3 id="1-ai">1. AI 네이티브 인프라 <a class="heading-anchor" href="#1-ai" aria-label="링크 1. AI 네이티브 인프라">#</a></h3>
+<p>AI는 더 이상 클라우드에서 실행되는 서비스가 아닙니다 — 점차 클라우드의 운영 체제가 됩니다. 3대 지배적 관리형 AI 플랫폼 — <strong>AWS Bedrock</strong>, <strong>Google Vertex AI</strong>, <strong>Azure OpenAI Service</strong> — 은 대부분의 엔터프라이즈 AI 워크로드가 실행되는 데이터, 모델, 에이전트, 거버넌스 평면으로 자리 잡고 있습니다.</p>
+<h3 id="2">2. 인텔리전트 멀티 클라우드 <a class="heading-anchor" href="#2" aria-label="링크 2. 인텔리전트 멀티 클라우드">#</a></h3>
+<p><strong>Gartner는 2026년까지 은행의 75% 이상이 하이브리드 또는 멀티 클라우드 전략을 채택</strong> 한다고 예측합니다. 이를 추동하는 논의되지 않는 힘은 <strong>데이터 중력과 egress 경제학</strong> 입니다. 하이퍼스케일러 egress 요금은 <strong>$0.05~$0.09/GB</strong> 이며, 100 TB 분석 워크로드가 제공자 간을 한 번 이동하여야 할 경우 5, 6, 또는 9자릿수의 전송 비용이 발생합니다.</p>
+<h3 id="3-webassembly">3. 서버리스 우선, 컨테이너화, 엣지의 WebAssembly <a class="heading-anchor" href="#3-webassembly" aria-label="링크 3. 서버리스 우선, 컨테이너화, 엣지의 WebAssembly">#</a></h3>
+<p>2026년의 기본값은 상태가 있고 복잡한 워크로드를 위한 <strong>Kubernetes 위 컨테이너화 마이크로서비스</strong>, 모든 무상태 이벤트 기반에 대한 <strong>서버리스 함수</strong>(AWS Lambda, Google Cloud Run, Azure Functions, Cloudflare Workers, Vercel Functions)입니다. <strong>Goldman Sachs는 Kubernetes 위에서 10,000개 이상의 마이크로서비스를 실행</strong> 합니다.</p>
+<p>2026년의 추가 사항은 엣지의 <strong>WebAssembly (Wasm)</strong> 입니다. Wasm은 컨테이너가 받아들일 수 없는 콜드 스타트 지연을 가진 매우 가볍고 안전하며 즉시 시작하는 함수의 표준 런타임으로 등장하였습니다.</p>
+<h3 id="4-iot">4. 엣지 컴퓨팅과 IoT <a class="heading-anchor" href="#4-iot" aria-label="링크 4. 엣지 컴퓨팅과 IoT">#</a></h3>
+<p>엣지 — <strong>300개 이상의 Cloudflare PoP</strong>, AWS Local Zones와 Outposts, Azure Edge Zones, <strong>AWS IoT Greengrass</strong>, <strong>Azure IoT Edge</strong> — 는 현재 50ms 미만 고객 경험, 지역 주권 시행, IoT와 운영 기술 워크로드, 중앙 집중식 데이터 센터가 받아들일 수 없는 왕복 지연을 추가하는 긴 꼬리 워크로드의 자연스러운 실행 계층입니다.</p>
+<h3 id="5">5. 보안, 자동화 컴플라이언스, 암호 민첩성 <a class="heading-anchor" href="#5" aria-label="링크 5. 보안, 자동화 컴플라이언스, 암호 민첩성">#</a></h3>
+<p>5번째 기둥은 EU AI 법, DORA, SR 11-7 모델 리스크 관리 체계, NIS2, 2026년 11월 SWIFT CBPR+ 구조화 주소 마감일, 포스트 양자 이행이 수렴하는 자리입니다. 2026년의 추가 사항은 <strong>암호 민첩성</strong> 입니다. 포스트 양자 암호로의 이행은 기반 시스템이 의존 애플리케이션을 재구축하지 않고 암호 프리미티브를 교체할 수 있도록 설계된 경우에만 운영상 다룰 수 있습니다(ECDH를 ML-KEM으로, ECDSA를 ML-DSA로, 양쪽을 위한 하이브리드 봉투).</p>
+<h3 id="6-2">6. 지속 가능한 고밀도 설계 <a class="heading-anchor" href="#6-2" aria-label="링크 6. 지속 가능한 고밀도 설계">#</a></h3>
+<p>6번째 기둥은 CSR 인접 보고 관심사에서 활발한 인프라 선택 기준으로 이동하였으며, 강제 함수는 AI입니다. <strong>랙당 전력 밀도가 100 kW를 초과하였습니다; 풀 NVIDIA GPU 랙은 현재 132 kW를 끌어옵니다</strong>; 예측은 <strong>240 kW/랙을 1년 후, 1 MW/랙의 미래</strong> 를 신뢰할 수 있는 로드맵 위에서 봅니다. 액체 냉각 데이터 센터는 2026년까지 <strong>30% 침투</strong> 에 도달하고, 시장이 2025년 약 $5.3억에서 <strong>24% CAGR</strong> 로 2030년까지 약 $20억으로 확장될 것이라고 시장 분석가들은 예측합니다.</p>
+<h2 id="hpc-ai">HPC와 AI 워크로드: 모델 학습에서 다중 에이전트 떼로 <a class="heading-anchor" href="#hpc-ai" aria-label="링크 HPC와 AI 워크로드: 모델 학습에서 다중 에이전트 떼로">#</a></h2>
+<p><strong>에이전트형 상거래와 다중 에이전트 떼는 금융 서비스의 새로운 지배적 HPC 워크로드 프로파일</strong> 입니다. 패턴은 직접적입니다: 기관이 단일 AI 에이전트가 아니라 조정된 인구를 배포합니다: 현금 위치를 모니터링하고, 경계 매개변수 내에서 FX 헤지를 실행하는 트레저리 에이전트, 신청서를 심사하고 HITL 검토를 위하여 준비하는 신용 에이전트, 실시간으로 제재를 스크리닝하는 컴플라이언스 에이전트, 분류 쿼리를 전문 하위 에이전트로 라우팅하는 고객 서비스 에이전트.</p>
+<h2 id="finops">에이전트형 단위 경제학: 새 FinOps 프런티어 <a class="heading-anchor" href="#finops" aria-label="링크 에이전트형 단위 경제학: 새 FinOps 프런티어">#</a></h2>
+<p>전통적 FinOps는 컴퓨트 시간당 비용, 전송 GB당 비용, 요청당 비용을 측정합니다. 에이전트형 시스템은 이 프레이밍을 깨뜨립니다, 작업 단위가 변하였기 때문입니다. 2026년에 에이전트형 서비스를 배포하는 은행은 더 이상 컴퓨트와 스토리지만 지불하지 않습니다 — <strong>자율 결정당</strong> 지불합니다: 추론을 위한 LLM 토큰, 컨텍스트 검색을 위한 벡터 DB 조회, 행동을 위한 MCP 도구 호출, 다운스트림의 각 API 호출은 자체 비용 표면을 갖습니다.</p>
+<h2 id="section-12">결론 <a class="heading-anchor" href="#section-12" aria-label="링크 결론">#</a></h2>
+<p>2026년 클라우드 아키텍처는 더 이상 무엇을 채택할 것인가의 문제가 아니라, 그것을 설계할 것인가 구매할 것인가의 문제입니다. 준비된 조직은 6개의 기둥, 에이전트 신원, 암호 민첩성, 에이전트형 단위 경제학을 중심으로 조직화하여 10년에 걸친 우위를 구축합니다. 준비되지 않은 조직은 솔루션 구매로 다루어, 향후 2년 안에 균열을 발견할 것입니다.</p>
+<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 초상화" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ko/sogae/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 이행, 금융 서비스를 위한 포스트 양자 암호, 도매 결제의 구조적 변혁에 관해 집필하는 시니어 뱅킹 테크놀로지스트입니다.</span><span class="author-credentials">HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group에서 20년 이상의 경험을 보유하였습니다. <a href="/ko/sogae/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">최종 검토 <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">관련 읽을거리</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2026-05-14-jangbu-boho-beobinyung-pos-yangja-imun" class="related-media" aria-label="원장을 지키기: 기업 재무를 위한 포스트 양자 이행" tabindex="-1"><img alt="Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-13"><a href="https://sebastienrousseau.com/ko/2026-05-14-jangbu-boho-beobinyung-pos-yangja-imun">원장을 지키기: 기업 재무를 위한 포스트 양자 이행</a> <a class="heading-anchor" href="#section-13" aria-label="링크 원장을 지키기: 기업 재무를 위한 포스트 양자 이행">#</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2026-05-18-eijenteuk-enjineoring-eunhaeng-2026-seolgyedo" class="related-media" aria-label="에이전트 엔지니어링: 은행을 위한 2026년 설계도" tabindex="-1"><img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-3"><a href="https://sebastienrousseau.com/ko/2026-05-18-eijenteuk-enjineoring-eunhaeng-2026-seolgyedo">에이전트 엔지니어링: 은행을 위한 2026년 설계도</a> <a class="heading-anchor" href="#2026-3" aria-label="링크 에이전트 엔지니어링: 은행을 위한 2026년 설계도">#</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2026-04-11-yangja-gyegi-da-siusijak" class="related-media" aria-label="양자 임계점이 다시 움직이고 있다" tabindex="-1"><img alt="Shor's algorithm qubit threshold diagram. Quantum computing circuit board with blue light patterns" src="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-15"><a href="https://sebastienrousseau.com/ko/2026-04-11-yangja-gyegi-da-siusijak">양자 임계점이 다시 움직이고 있다</a> <a class="heading-anchor" href="#section-15" aria-label="링크 양자 임계점이 다시 움직이고 있다">#</a></h3><p><time datetime="2026-04-11">2026-04-11</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">출처 및 참고문헌</h2><ol class="article-sources-list"><li><a href="https://github.com/sebastienrousseau/cloudcdn.pro" rel="external noopener nofollow"><span class="source-host">github.com</span><span class="source-path">/sebastienrousseau/cloudcdn.pro</span></a></li></ol></aside><nav class="post-pagination" aria-label="기사 페이지 이동"><a class="post-pagination-prev" href="/ko/2026-05-18-eijenteuk-enjineoring-eunhaeng-2026-seolgyedo/"><span class="post-pagination-label">이전</span><span class="post-pagination-title">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ko/sogae/index.html">소개</a></li>
+              <li><a href="/ko/munui/index.html">문의하기</a></li>
+              <li><a href="/ko/jeongjeok-saiteu-saengseonggi-ro-jejak/index.html">Static Site Generator로 제작</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">기사</h2>
+            <ul>
+              <li><a href="/ko/gisa/index.html">기사</a></li>
+              <li><a href="/ko/nonmun/index.html">논문</a></li>
+              <li><a href="/ko/taegeu/index.html">태그</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">업무</h2>
+            <ul>
+              <li><a href="/ko/peurojekteu/index.html">프로젝트</a></li>
+              <li><a href="/ko/pleilliseuteu/index.html">플레이리스트</a></li>
+              <li><a href="/ko/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">연락처</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="뉴스레터 구독">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 결제, AI, 포스트 양자 암호에 관한 연구 노트. 스팸은 발송하지 않습니다.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="yongnim@eunhaeng.com" />
+            <input type="hidden" name="_subject" value="뉴스레터 구독 — sebastienrousseau.com" />
+            <button type="submit">구독하기</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="소셜 링크">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau의 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau의 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau의 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau의 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ko/jeobgeunseong/index.html">접근성</a> ·
+            <a href="/ko/gaeinjeongbo/index.html">개인정보처리방침</a> ·
+            <a href="/ko/yakgwan/index.html">이용약관</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ko"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ko"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1087,"headline":"2026년 최적의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티 클라우드, 양자 인식 설계도","description":"2026년 클라우드 아키텍처는 6개의 기둥으로 결정화되었습니다 — AI 네이티브 인프라, 인텔리전트 멀티 클라우드, 서버리스 우선, 엣지, 자동화 보안과 암호 민첩성, 그리고 지속 가능한 고밀도 운영. 은행에게 질문은 클라우드를 소비할 것인지 설계할 것인지입니다.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp","width":"100vw","height":"100vh","caption":"6개의 기둥을 가진 2026 클라우드 아키텍처 도식"},"url":"https://sebastienrousseau.com/ko/2026-05-21-2026-choeseon-keulaeudeu-infra-akitekcheo/","datePublished":"2026-05-21T06:06:06+00:00","dateModified":"2026-05-21","inLanguage":"ko","keywords":"클라우드 아키텍처 2026, AI 네이티브 인프라, 멀티 클라우드, 서버리스, 엣지 컴퓨팅, WebAssembly, Wasm, DevSecOps, 지속 가능 데이터 센터, 액체 냉각, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, 에이전트형 상거래, 다중 에이전트 떼, 에이전트형 단위 경제, 에이전트 FinOps, 암호적 에이전트 신원, SPIFFE, SPIRE, 알고리즘 전염, 데이터 중력, FinOps egress, HPC, GPU 스토리지, 연속 트레저리, 국경 없는 유동성, 실시간 결제, 합성 데이터 생성, 기밀 컴퓨팅, JPMorgan 멀티 클라우드, Citi 현대화, 그래프 신경망, 딥페이크 사기, harvest now decrypt later, HNDL, 포스트 양자 암호, 암호 민첩성, MCP 보안, 프롬프트 주입, 공급망 공격, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ko/2026-05-21-2026-choeseon-keulaeudeu-infra-akitekcheo/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ko"},"citation":[{"@type":"CreativeWork","url":"https://github.com/sebastienrousseau/cloudcdn.pro"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ko/"},{"@type":"ListItem","position":3,"name":"2026년 최적의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티 클라우드, 양자 인식 설계도","item":"https://sebastienrousseau.com/ko/2026-05-21-2026-choeseon-keulaeudeu-infra-akitekcheo/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="검색">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>검색</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="검색">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="문서 검색..." autocomplete="off" aria-label="검색"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 닫기</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 이동</span><span><kbd>Enter</kbd> 열기</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

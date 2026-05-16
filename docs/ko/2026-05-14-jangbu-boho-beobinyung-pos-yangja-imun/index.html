@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 14 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 14 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>원장을 지키기: 기업 재무를 위한 포스트 양자 이행 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="기업 재무 시스템 — ERP, 재무관리, 결제 — 은 양자 위협 모델에 따라 재평가되어야 합니다. 본 분석은 실용적 이행 경로를 제시합니다.">
+<meta name="keywords" content="포스트 양자 암호, 기업 재무, ERP, 재무관리, PQC 이행, 암호 민첩성, 양자 안전 결제">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Securing the Ledger">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-Fj3rD1Y88slZyAnr+IWp4640MYkotqTWgm2QH29aRsY=' 'sha256-aAR/alubqwuG1+UbvKNFLiB6Ecrw3PGzkKoIj8kYGkU=' 'sha256-g1Sm5R56p17c/7fN+gMyxZeIfa1WaBcgzNKBr51P+G8=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ko/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 피드" href="/ko/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="원장을 지키기: 기업 재무를 위한 포스트 양자 이행 — Sebastien Rousseau">
+<meta property="og:description" content="기업 재무 시스템 — ERP, 재무관리, 결제 — 은 양자 위협 모델에 따라 재평가되어야 합니다. 본 분석은 실용적 이행 경로를 제시합니다.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/ko/2026-05-14-jangbu-boho-beobinyung-pos-yangja-imun/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/lucas-favre-N8tIWNRblzo-unsplash.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="원장을 지키기: 기업 재무를 위한 포스트 양자 이행 — Sebastien Rousseau">
+<meta name="twitter:description" content="기업 재무 시스템 — ERP, 재무관리, 결제 — 은 양자 위협 모델에 따라 재평가되어야 합니다. 본 분석은 실용적 이행 경로를 제시합니다.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/lucas-favre-N8tIWNRblzo-unsplash.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/ko/2026-05-14-jangbu-boho-beobinyung-pos-yangja-imun/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-14-securiser-le-livre-comptable-migration-post-quantique-finance-entreprise/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-14-das-hauptbuch-sichern-post-quanten-migration-im-corporate-finance/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-14-asegurar-el-libro-contable-migracion-postcuantica-finanzas-corporativas/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-14-mettere-in-sicurezza-il-libro-mastro-migrazione-post-quantum-finanza-aziendale/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-14-daichou-no-bouei-houjin-kinyuu-no-post-ryoushi-iko/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-14-jangbu-boho-beobinyung-pos-yangja-imun/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-14-proteger-o-livro-razao-migracao-pos-quantica-financas-corporativas/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-14-zashchita-knigi-uchyota-postkvantovaya-migratsiya-korporativnykh-finansov/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-14-baozhang-zhangbu-hou-liangzi-qianyi-qiye-jinrong/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-14-baozhang-zhangbu-hou-liangzi-qianyi-qiye-jinrong-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">본문으로 건너뛰기</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="내비게이션 전환" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ko/index.html" aria-label="Sebastien Rousseau 홈">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="주요 내비게이션">
+          <ul class="ap-menu">
+            <li><a href="/ko/sogae/index.html">소개</a></li>
+            <li><a href="/ko/gisa/index.html" aria-current="page" class="active">기사</a></li>
+            <li><a href="/ko/nonmun/index.html">논문</a></li>
+            <li><a href="/ko/jujae/index.html">주제</a></li>
+            <li><a href="/ko/peurojekteu/index.html">프로젝트</a></li>
+            <li><a href="/ko/pleilliseuteu/index.html">플레이리스트</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="다크 테마로 전환" aria-pressed="false" title="테마 전환">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="검색 (Cmd 또는 Ctrl + K)" title="검색 (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="언어">
+            <button type="button" class="ap-lang-toggle" aria-label="KO, 언어 변경" aria-expanded="false" aria-haspopup="menu" title="언어 변경">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">KO</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="출시 예정">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="출시 예정">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="출시 예정">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="출시 예정">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="출시 예정">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="출시 예정">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="출시 예정">🇮🇩 Indonesia</span>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <span class="ap-lang-item" data-lang="nl" aria-disabled="true" title="출시 예정">🇳🇱 Nederlands</span>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="출시 예정">🇵🇱 Polski</span>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="출시 예정">🇷🇴 Română</span>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="출시 예정">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="출시 예정">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="출시 예정">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="출시 예정">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="출시 예정">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="출시 예정">🇳🇬 Yorùbá</span>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ko/munui/index.html" aria-label="문의하기">문의하기 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="내비게이션 전환">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>원장을 지키기: 기업 재무를 위한 포스트 양자 이행</h1>
+      <p class="sub">기업 재무 시스템은 양자 위협 모델에 따라 재평가되어야 합니다</p>
+    <nav class="article-tags" aria-label="주제"><a href="/tags/index.html#h3-" class="article-tag" rel="tag">포스트 양자 암호</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">기업 재무</a><a href="/tags/index.html#h3-erp" class="article-tag" rel="tag">ERP</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">재무관리</a><a href="/tags/index.html#h3-pqc" class="article-tag" rel="tag">PQC 이행</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">암호 민첩성</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">양자 안전 결제</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-14T06:06:06+00:00" class="meta-pub">발행일 14 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="예상 소요 시간">3 분 소요</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>목차</h2><ol><li><a href="#section-1">원장을 지키기: 기업 재무를 위한 포스트 양자 이행</a></li><li><a href="#section-2">위협 모델: 재무 시스템에 미치는 양자 위험</a></li><li><a href="#hndl">HNDL 위험: 장기 보관 데이터</a></li><li><a href="#section-4">우선순위 매트릭스</a></li><li><a href="#section-5">이행 단계</a></li><li><a href="#section-11">벤더 로드맵</a></li><li><a href="#cfo">CFO를 위한 의제</a></li><li><a href="#section-13">결론</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 기업 재무 시스템 — ERP, 재무관리, 결제 — 은 양자 위협 모델에 따라 재평가되어야 합니다. 본 분석은 실용적 이행 경로를 제시합니다.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>원장을 지키기: 기업 재무를 위한 포스트 양자 이행.</strong> 기업 재무 시스템은 어디서나 암호에 의존합니다:.</li>  <li><strong>위협 모델: 재무 시스템에 미치는 양자 위험.</strong> 기업 재무 시스템은 어디서나 암호에 의존합니다:.</li>  <li><strong>HNDL 위험: 장기 보관 데이터.</strong> 기업 재무 데이터는 흔히 장기간 보관됩니다:.</li>  <li><strong>우선순위 매트릭스.</strong> 기업 재무 시스템에서 PQC 이행 우선순위:.</li></ul></aside><h2 id="section-1">원장을 지키기: 기업 재무를 위한 포스트 양자 이행 <a class="heading-anchor" href="#section-1" aria-label="링크 원장을 지키기: 기업 재무를 위한 포스트 양자 이행">#</a></h2>
+<blockquote>
+<p><strong>TL;DR.</strong> 기업 재무 시스템 — ERP, 재무관리 시스템 (TMS), 은행 결제 통합 — 은 양자 위협 모델에 따라 재평가되어야 합니다. 본 분석은 자산 인벤토리, 위험 우선순위, 하이브리드 배포, 그리고 암호 민첩성을 통한 실용적 이행 경로를 제시합니다.</p>
+<p><strong>핵심 요약</strong></p>
+<ul>
+<li>기업 재무 인프라(SAP, Oracle, Coupa, Kyriba 등)는 RSA·ECDSA·ECDH에 광범위하게 의존하고 있습니다.</li>
+<li><strong>HNDL 위험</strong>: 7~10년 보관되는 재무 기록, 계약, KYC 데이터는 양자 컴퓨터 가용성 이전에 가로채질 수 있습니다.</li>
+<li><strong>순환 우선순위</strong>: (1) 결제 인증, (2) 디지털 서명, (3) 데이터 암호화, (4) ID 페더레이션.</li>
+<li><strong>이행 단계</strong>: 인벤토리 → 위험 평가 → 하이브리드 배포 → 암호 민첩성 → PQC 전용.</li>
+<li>주요 ERP 벤더(SAP, Oracle, Microsoft)는 2027년까지 PQC 지원 발표.</li>
+<li><strong>CFO 위험</strong>: 비행동은 미래 규제 노출, 데이터 침해, 운영 중단으로 이어질 수 있습니다.</li>
+</ul>
+</blockquote>
+<h2 id="section-2">위협 모델: 재무 시스템에 미치는 양자 위험 <a class="heading-anchor" href="#section-2" aria-label="링크 위협 모델: 재무 시스템에 미치는 양자 위험">#</a></h2>
+<p>기업 재무 시스템은 어디서나 암호에 의존합니다:</p>
+<ul>
+<li><strong>결제 인증</strong>: 은행과의 TLS, 디지털 서명, HMAC</li>
+<li><strong>계약 서명</strong>: PKCS#7, X.509 인증서, RSA·ECDSA 서명</li>
+<li><strong>데이터 저장</strong>: 저장 데이터 암호화 (AES-256, RSA 키 래핑)</li>
+<li><strong>ID 페더레이션</strong>: SAML, OAuth 2.0, OpenID Connect (모두 PKI 기반)</li>
+<li><strong>API 통합</strong>: 은행 API, EDI, B2B 게이트웨이</li>
+</ul>
+<p>양자 컴퓨팅은 본 스택의 비대칭 부분(RSA, ECDSA, ECDH)에 위협을 가합니다. 대칭 부분(AES)은 영향을 받지만 키 크기 두 배로 완화됩니다.</p>
+<h2 id="hndl">HNDL 위험: 장기 보관 데이터 <a class="heading-anchor" href="#hndl" aria-label="링크 HNDL 위험: 장기 보관 데이터">#</a></h2>
+<p>기업 재무 데이터는 흔히 장기간 보관됩니다:</p>
+<ul>
+<li><strong>거래 기록</strong>: 7~10년 (세무 컴플라이언스)</li>
+<li><strong>계약</strong>: 영구 (법적 구속력)</li>
+<li><strong>KYC 데이터</strong>: 5~10년 (AML 컴플라이언스)</li>
+<li><strong>감사 추적</strong>: 7~10년 (SOX, 내부 통제)</li>
+<li><strong>지식재산</strong>: 영구</li>
+</ul>
+<p>오늘 가로챈 데이터가 2030년대에 양자 컴퓨터로 복호화될 가능성은 더 이상 사변적이지 않습니다. CFO와 CISO는 본 위험을 동등하게 다루어야 합니다.</p>
+<h2 id="section-4">우선순위 매트릭스 <a class="heading-anchor" href="#section-4" aria-label="링크 우선순위 매트릭스">#</a></h2>
+<p>기업 재무 시스템에서 PQC 이행 우선순위:</p>
+<table>
+<thead>
+<tr>
+<th>영역</th>
+<th>우선순위</th>
+<th>위험</th>
+<th>마감</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>은행 결제 통합</td>
+<td><strong>즉시</strong></td>
+<td>가로챔, 변조</td>
+<td>2027년 1분기</td>
+</tr>
+<tr>
+<td>디지털 서명 (계약, 송장)</td>
+<td><strong>즉시</strong></td>
+<td>사기 가능성</td>
+<td>2027년 2분기</td>
+</tr>
+<tr>
+<td>저장 데이터 암호화</td>
+<td>높음</td>
+<td>HNDL</td>
+<td>2028년</td>
+</tr>
+<tr>
+<td>ID 페더레이션 (SSO)</td>
+<td>높음</td>
+<td>자격증명 절도</td>
+<td>2028년</td>
+</tr>
+<tr>
+<td>데이터 백업·아카이브</td>
+<td>중간</td>
+<td>장기 노출</td>
+<td>2029년</td>
+</tr>
+<tr>
+<td>일반 TLS</td>
+<td>중간</td>
+<td>일반 위협</td>
+<td>2028년</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-5">이행 단계 <a class="heading-anchor" href="#section-5" aria-label="링크 이행 단계">#</a></h2>
+<h3 id="1-3-6">1단계: 인벤토리 (3~6개월) <a class="heading-anchor" href="#1-3-6" aria-label="링크 1단계: 인벤토리 (3~6개월)">#</a></h3>
+<p>모든 암호 자산을 카탈로그화:</p>
+<ul>
+<li>알고리즘 인벤토리 (RSA, ECDSA, ECDH 어디서 사용?)</li>
+<li>키 관리 시스템 인벤토리 (HSM, KMS, vault)</li>
+<li>인증서 인벤토리 (PKI 계층, 만료, 갱신)</li>
+<li>의존성 매핑 (어떤 시스템이 어떤 키를 사용?)</li>
+</ul>
+<h3 id="2-3-6">2단계: 위험 평가 (3~6개월) <a class="heading-anchor" href="#2-3-6" aria-label="링크 2단계: 위험 평가 (3~6개월)">#</a></h3>
+<p>각 자산에 대한 위험 평가:</p>
+<ul>
+<li>양자 위협 노출 (취약 알고리즘?)</li>
+<li>HNDL 노출 (장기 보관 데이터?)</li>
+<li>비즈니스 영향 (결제 중단의 비용?)</li>
+<li>시정 복잡도 (벤더 지원? 사내 개발?)</li>
+</ul>
+<h3 id="3-6-12">3단계: 하이브리드 배포 (6~12개월) <a class="heading-anchor" href="#3-6-12" aria-label="링크 3단계: 하이브리드 배포 (6~12개월)">#</a></h3>
+<p>전통 + PQC 하이브리드 알고리즘 배포:</p>
+<ul>
+<li>TLS: ECDH + ML-KEM 하이브리드</li>
+<li>디지털 서명: ECDSA + ML-DSA 듀얼 서명</li>
+<li>데이터 암호화: 봉투 암호화의 PQC 보호</li>
+</ul>
+<h3 id="4">4단계: 암호 민첩성 (지속적) <a class="heading-anchor" href="#4" aria-label="링크 4단계: 암호 민첩성 (지속적)">#</a></h3>
+<p>알고리즘 교체 가능성을 보장:</p>
+<ul>
+<li>코드에서 알고리즘 식별자 추상화</li>
+<li>키 관리 시스템에서 알고리즘 메타데이터</li>
+<li>정책 기반 알고리즘 선택</li>
+</ul>
+<h3 id="5-pqc-2030">5단계: PQC 전용 (2030년대) <a class="heading-anchor" href="#5-pqc-2030" aria-label="링크 5단계: PQC 전용 (2030년대)">#</a></h3>
+<p>레거시 알고리즘 단계적 폐지가 완료되면 PQC 전용 운영.</p>
+<h2 id="section-11">벤더 로드맵 <a class="heading-anchor" href="#section-11" aria-label="링크 벤더 로드맵">#</a></h2>
+<p>주요 기업 재무 벤더 PQC 로드맵:</p>
+<ul>
+<li><strong>SAP</strong>: 2027년 S/4HANA에서 ML-KEM 지원, 2028년 디지털 서명</li>
+<li><strong>Oracle</strong>: 2027년 ERP Cloud PQC 통합</li>
+<li><strong>Microsoft Dynamics</strong>: 2028년 Azure PQC 서비스 통합</li>
+<li><strong>Coupa</strong>: 2028년 결제 보안 PQC 업그레이드</li>
+<li><strong>Kyriba</strong>: 2027년 은행 통신 PQC 하이브리드</li>
+<li><strong>Bottomline</strong>: 2027년 PTX 플랫폼 PQC 지원</li>
+</ul>
+<h2 id="cfo">CFO를 위한 의제 <a class="heading-anchor" href="#cfo" aria-label="링크 CFO를 위한 의제">#</a></h2>
+<p>CFO는 다음 질문을 CIO/CISO에게 제기하여야 합니다:</p>
+<ol>
+<li>우리는 어디서 RSA, ECDSA, ECDH를 사용하고 있습니까?</li>
+<li>우리의 데이터 중 몇 퍼센트가 HNDL 위험에 노출되어 있습니까?</li>
+<li>우리 벤더의 PQC 로드맵은 무엇입니까?</li>
+<li>우리의 PQC 이행 계획과 예산은 무엇입니까?</li>
+<li>우리는 어떻게 암호 민첩성을 달성하고 있습니까?</li>
+</ol>
+<p>본 질문은 CISO가 PQC 프로그램을 진지하게 다루도록 강제합니다.</p>
+<h2 id="section-13">결론 <a class="heading-anchor" href="#section-13" aria-label="링크 결론">#</a></h2>
+<p>기업 재무 인프라는 양자 위협 모델에 따라 재평가되어야 합니다. 본 이행은 단일 프로젝트가 아니라 다년에 걸친 프로그램입니다. 그러나 산업의 시간 축이 단축됨에 따라, 더 이상 미룰 수 없습니다. 지금 시작하지 않으면, 2030년이 되어서야 후회할 것입니다.</p>
+<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 초상화" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ko/sogae/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 이행, 금융 서비스를 위한 포스트 양자 암호, 도매 결제의 구조적 변혁에 관해 집필하는 시니어 뱅킹 테크놀로지스트입니다.</span><span class="author-credentials">HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group에서 20년 이상의 경험을 보유하였습니다. <a href="/ko/sogae/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">최종 검토 <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">관련 읽을거리</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2026-05-21-2026-choeseon-keulaeudeu-infra-akitekcheo" class="related-media" aria-label="2026년 최적의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티 클라우드, 양자 인식 설계도" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-ai"><a href="https://sebastienrousseau.com/ko/2026-05-21-2026-choeseon-keulaeudeu-infra-akitekcheo">2026년 최적의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티 클라우드, 양자 인식 설계도</a> <a class="heading-anchor" href="#2026-ai" aria-label="링크 2026년 최적의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티 클라우드, 양자 인식 설계도">#</a></h3><p><time datetime="2026-05-21">2026-05-21</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2026-05-18-eijenteuk-enjineoring-eunhaeng-2026-seolgyedo" class="related-media" aria-label="에이전트 엔지니어링: 은행을 위한 2026년 설계도" tabindex="-1"><img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026"><a href="https://sebastienrousseau.com/ko/2026-05-18-eijenteuk-enjineoring-eunhaeng-2026-seolgyedo">에이전트 엔지니어링: 은행을 위한 2026년 설계도</a> <a class="heading-anchor" href="#2026" aria-label="링크 에이전트 엔지니어링: 은행을 위한 2026년 설계도">#</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2026-04-11-yangja-gyegi-da-siusijak" class="related-media" aria-label="양자 임계점이 다시 움직이고 있다" tabindex="-1"><img alt="Shor's algorithm qubit threshold diagram. Quantum computing circuit board with blue light patterns" src="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-16"><a href="https://sebastienrousseau.com/ko/2026-04-11-yangja-gyegi-da-siusijak">양자 임계점이 다시 움직이고 있다</a> <a class="heading-anchor" href="#section-16" aria-label="링크 양자 임계점이 다시 움직이고 있다">#</a></h3><p><time datetime="2026-04-11">2026-04-11</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="기사 페이지 이동"><a class="post-pagination-prev" href="/ko/2026-05-12-iso-20022-pacs008-gujohwa-juso-girhan/"><span class="post-pagination-label">이전</span><span class="post-pagination-title">The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</span></a><a class="post-pagination-next" href="/ko/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenhwa-mmf/"><span class="post-pagination-label">다음</span><span class="post-pagination-title">Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ko/sogae/index.html">소개</a></li>
+              <li><a href="/ko/munui/index.html">문의하기</a></li>
+              <li><a href="/ko/jeongjeok-saiteu-saengseonggi-ro-jejak/index.html">Static Site Generator로 제작</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">기사</h2>
+            <ul>
+              <li><a href="/ko/gisa/index.html">기사</a></li>
+              <li><a href="/ko/nonmun/index.html">논문</a></li>
+              <li><a href="/ko/taegeu/index.html">태그</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">업무</h2>
+            <ul>
+              <li><a href="/ko/peurojekteu/index.html">프로젝트</a></li>
+              <li><a href="/ko/pleilliseuteu/index.html">플레이리스트</a></li>
+              <li><a href="/ko/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">연락처</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="뉴스레터 구독">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 결제, AI, 포스트 양자 암호에 관한 연구 노트. 스팸은 발송하지 않습니다.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="yongnim@eunhaeng.com" />
+            <input type="hidden" name="_subject" value="뉴스레터 구독 — sebastienrousseau.com" />
+            <button type="submit">구독하기</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. 무단 복제 및 전재 금지.</span>
+          <div class="social" aria-label="소셜 링크">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau의 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau의 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau의 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau의 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ko/jeobgeunseong/index.html">접근성</a> ·
+            <a href="/ko/gaeinjeongbo/index.html">개인정보처리방침</a> ·
+            <a href="/ko/yakgwan/index.html">이용약관</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ko"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ko"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":586,"headline":"원장을 지키기: 기업 재무를 위한 포스트 양자 이행","description":"기업 재무 시스템 — ERP, 재무관리, 결제 — 은 양자 위협 모델에 따라 재평가되어야 합니다. 본 분석은 실용적 이행 경로를 제시합니다.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/lucas-favre-N8tIWNRblzo-unsplash.webp","width":"100vw","height":"100vh","caption":"기업 재무 시스템의 안전한 아키텍처"},"url":"https://sebastienrousseau.com/ko/2026-05-14-jangbu-boho-beobinyung-pos-yangja-imun/","datePublished":"2026-05-14T06:06:06+00:00","dateModified":"2026-05-14","inLanguage":"ko","keywords":"포스트 양자 암호, 기업 재무, ERP, 재무관리, PQC 이행, 암호 민첩성, 양자 안전 결제","articleSection":"Quantum","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ko/2026-05-14-jangbu-boho-beobinyung-pos-yangja-imun/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ko"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ko/"},{"@type":"ListItem","position":3,"name":"원장을 지키기: 기업 재무를 위한 포스트 양자 이행","item":"https://sebastienrousseau.com/ko/2026-05-14-jangbu-boho-beobinyung-pos-yangja-imun/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="검색">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>검색</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="검색">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="문서 검색..." autocomplete="off" aria-label="검색"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 닫기</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 이동</span><span><kbd>Enter</kbd> 열기</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

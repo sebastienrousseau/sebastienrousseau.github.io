@@ -1,0 +1,99 @@
+{
+  "_comment": "Korean static-page metadata — DRAFT pending native review. Mirrors EN/FR/DE/AR static_pages.json shape.",
+  "404": {
+    "title": "페이지를 찾을 수 없습니다 — Sebastien Rousseau",
+    "subtitle": "찾으시는 페이지가 존재하지 않습니다.",
+    "description": "요청하신 페이지를 찾을 수 없습니다. 홈으로 돌아가시거나 검색 기능을 이용하여 주십시오.",
+    "keywords": "404, 페이지를 찾을 수 없음"
+  },
+  "about": {
+    "title": "소개 — Sebastien Rousseau",
+    "subtitle": "인공지능, 포스트 양자 암호, 블록체인 기술의 전략적 통합을 통하여 은행과 금융 서비스의 미래를 형성합니다.",
+    "description": "Sebastien Rousseau, 시니어 뱅킹 테크놀로지스트: 응용 AI, ISO 20022 이행, 포스트 양자 암호, 도매 결제의 구조적 변혁.",
+    "keywords": "Sebastien Rousseau, 약력, 은행, 결제, AI, ISO 20022, 포스트 양자 암호, HSBC, PayPal, Barclays"
+  },
+  "accessibility": {
+    "title": "접근성 — Sebastien Rousseau",
+    "subtitle": "장애가 있는 분들을 위한 디지털 접근성에 헌신합니다.",
+    "description": "접근성 성명: WCAG 2.2 AA 준수, 포용성 원칙, 문제 보고를 위한 피드백 및 연락 채널.",
+    "keywords": "접근성, WCAG, 적합성, 디지털 포용, 감사"
+  },
+  "articles": {
+    "title": "기사 — Sebastien Rousseau",
+    "subtitle": "AI, 포스트 양자 암호, ISO 20022, 결제의 미래에 관한 기사.",
+    "description": "응용 AI, 포스트 양자 암호, ISO 20022 결제, 도매 결제 변혁에 관한 기사.",
+    "keywords": "기사, 연구, AI, 포스트 양자 암호, ISO 20022, 도매 결제"
+  },
+  "contact": {
+    "title": "문의하기 — Sebastien Rousseau",
+    "subtitle": "문의나 협력 요청이 있으시면 부담 없이 연락 주십시오.",
+    "description": "결제 변혁, ISO 20022 이행, 포스트 양자 전략 컨설팅에 관하여 Sebastien Rousseau에게 문의하여 주십시오.",
+    "keywords": "문의하기, 컨설팅, 결제, ISO 20022, 포스트 양자 암호"
+  },
+  "made-with-shokunin": {
+    "title": "Shokunin으로 제작 — Sebastien Rousseau",
+    "subtitle": "차세대 정적 사이트 생성기를 활용하는 방법을 안내합니다.",
+    "description": "본 사이트는 성능과 SEO에 최적화된 Rust 기반 정적 사이트 생성기 Shokunin으로 구축되었습니다.",
+    "keywords": "Shokunin, SSG, Rust, 성능, SEO"
+  },
+  "made-with-static-site-generator": {
+    "title": "Static Site Generator로 제작 — Sebastien Rousseau",
+    "subtitle": "차세대 정적 사이트 생성기를 활용하는 방법을 안내합니다.",
+    "description": "본 사이트는 Rust로 작성된 고속 정적 사이트 생성기 Shokunin으로 생성되었습니다.",
+    "keywords": "Shokunin, 정적 사이트 생성기, Rust, 성능"
+  },
+  "offline": {
+    "title": "오프라인 — Sebastien Rousseau",
+    "subtitle": "연결을 확인하시고 다시 시도하여 주십시오.",
+    "description": "오프라인 상태입니다. 콘텐츠에 접근하시려면 다시 연결하여 주십시오.",
+    "keywords": "오프라인, PWA"
+  },
+  "papers": {
+    "title": "논문 — Sebastien Rousseau",
+    "subtitle": "결제와 보안 분야 상위 경영진을 대상으로 한 산업 백서 및 응용 연구.",
+    "description": "AI, ISO 20022 결제, 포스트 양자 암호에 관한 Sebastien Rousseau의 논문, 보고서, 간행물.",
+    "keywords": "논문, 간행물, 보고서, 연구, ISO 20022, AI, 포스트 양자 암호"
+  },
+  "playlists": {
+    "title": "플레이리스트 — Sebastien Rousseau",
+    "subtitle": "딥워크, 창의성, 엔지니어의 집중을 위하여 엄선한 Spotify 플레이리스트.",
+    "description": "Sebastien Rousseau가 엄선한 음악과 청취 가이드.",
+    "keywords": "플레이리스트, 음악"
+  },
+  "privacy": {
+    "title": "개인정보처리방침 — Sebastien Rousseau",
+    "subtitle": "귀하의 프라이버시를 소중히 다룹니다.",
+    "description": "본 사이트가 데이터를 어떻게 수집·이용·보호하는지: 익명 접속 측정, 쿠키, 호스팅, GDPR 권리.",
+    "keywords": "개인정보, GDPR, 쿠키, 개인 데이터, 분석"
+  },
+  "projects": {
+    "title": "프로젝트 — Sebastien Rousseau",
+    "subtitle": "금융의 미래를 위한 Python, Rust, JavaScript 오픈소스 프로젝트.",
+    "description": "결제, 국경 간 결제, 양자 내성 암호를 위하여 Sebastien Rousseau가 유지 관리하는 오픈소스 라이브러리 포트폴리오.",
+    "keywords": "오픈소스 프로젝트, Python, Rust, 결제, ISO 20022, 포스트 양자 암호"
+  },
+  "tags": {
+    "title": "태그 — Sebastien Rousseau",
+    "subtitle": "주제별로 사이트를 탐색하십시오: AI, 결제, 포스트 양자 암호, 오픈소스.",
+    "description": "태그별로 기사를 탐색하십시오: AI, ISO 20022, 블록체인, 포스트 양자 암호 등.",
+    "keywords": "태그, 분류, 주제별 탐색"
+  },
+  "terms": {
+    "title": "이용약관 — Sebastien Rousseau",
+    "subtitle": "본 사이트의 일반 이용약관입니다.",
+    "description": "sebastienrousseau.com의 일반 이용약관: 콘텐츠 라이선스, 제한 사항, 상표, 준거법.",
+    "keywords": "이용약관, 법적 고지, 라이선스, 저작권"
+  },
+  "thanks": {
+    "title": "감사합니다 — Sebastien Rousseau",
+    "subtitle": "문의하여 주셔서 감사합니다.",
+    "description": "메시지를 보내 주셔서 감사합니다. 가능한 한 빠르게 회신을 드리겠습니다.",
+    "keywords": "감사합니다"
+  },
+  "topics": {
+    "title": "주제 — Sebastien Rousseau",
+    "subtitle": "AI, 포스트 양자 암호, ISO 20022, 결제의 미래에 관한 기사.",
+    "description": "주제별로 분석을 탐색하십시오: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 도매 결제 변혁.",
+    "keywords": "주제, 테마, AI, 결제, ISO 20022, 포스트 양자 암호"
+  }
+}
