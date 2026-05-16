@@ -103,6 +103,108 @@ def test_patch_block_rewrites_meta_path_on_any_host():
 
 
 # ---------------------------------------------------------------------------
+# GitHub stats — `_format_count`, `_relative_time`
+# ---------------------------------------------------------------------------
+
+
+def test_gh_format_count_under_1000():
+    from postbuild_lib import github_stats as gh
+    assert gh._format_count(0) == "0"
+    assert gh._format_count(42) == "42"
+    assert gh._format_count(999) == "999"
+
+
+def test_gh_format_count_thousands():
+    from postbuild_lib import github_stats as gh
+    assert gh._format_count(1000) == "1k"
+    assert gh._format_count(1234) == "1.2k"
+    assert gh._format_count(12345) == "12.3k"
+
+
+def test_gh_format_count_millions():
+    from postbuild_lib import github_stats as gh
+    assert gh._format_count(1000000) == "1M"
+    assert gh._format_count(1234567) == "1.2M"
+
+
+def test_gh_relative_time_empty_input():
+    from postbuild_lib import github_stats as gh
+    assert gh._relative_time("") == ""
+
+
+def test_gh_relative_time_invalid_input():
+    from postbuild_lib import github_stats as gh
+    assert gh._relative_time("not-an-iso-timestamp") == ""
+
+
+def test_gh_relative_time_returns_french_label_when_fr():
+    """fr label should render seconds/minutes/etc. in French."""
+    from datetime import UTC, datetime, timedelta
+
+    from postbuild_lib import github_stats as gh
+    one_hour_ago = (datetime.now(tz=UTC) - timedelta(hours=2)).isoformat()
+    out = gh._relative_time(one_hour_ago, fr=True)
+    # French uses "h" or "heures" depending on the format string; just
+    # confirm we got a non-empty result and it isn't the English form.
+    assert out
+    assert "ago" not in out
+
+
+def test_gh_stats_index_missing_file_returns_empty():
+    """gh_stats_index gracefully returns {} when the JSON file is missing."""
+    from pathlib import Path as _P
+    from unittest.mock import patch
+
+    from postbuild_lib import github_stats as gh
+    with patch.object(gh, "_GH_STATS_PATH", _P("/nonexistent/path/gh-stats.json")):
+        assert gh.gh_stats_index() == {}
+
+
+# ---------------------------------------------------------------------------
+# Frontmatter parser — `_parse_frontmatter`
+# ---------------------------------------------------------------------------
+
+
+def test_parse_frontmatter_basic(tmp_path):
+    from postbuild_lib import output as out
+    p = tmp_path / "post.md"
+    p.write_text('---\ntitle: "Hello"\nurl: "https://example.com"\n---\n\nBody', encoding="utf-8")
+    fm = out._parse_frontmatter(p)
+    assert fm == {"title": "Hello", "url": "https://example.com"}
+
+
+def test_parse_frontmatter_stops_at_second_delimiter(tmp_path):
+    """Once we've seen the second ``---`` we ignore everything below
+    even if it looks frontmatter-ish."""
+    from postbuild_lib import output as out
+    p = tmp_path / "post.md"
+    p.write_text(
+        '---\ntitle: "A"\n---\nbody\ntitle: "B" (in body)\n---\nmore\n', encoding="utf-8"
+    )
+    fm = out._parse_frontmatter(p)
+    assert fm == {"title": "A"}
+
+
+def test_parse_frontmatter_ignores_unquoted_values(tmp_path):
+    """Parser only takes quoted string values — bare YAML scalars
+    (numbers, booleans, lists) are skipped."""
+    from postbuild_lib import output as out
+    p = tmp_path / "post.md"
+    p.write_text('---\ntitle: "Hi"\nweight: 42\nactive: true\n---\n', encoding="utf-8")
+    fm = out._parse_frontmatter(p)
+    assert fm == {"title": "Hi"}
+
+
+def test_parse_frontmatter_no_frontmatter(tmp_path):
+    """A file with no ``---`` block returns an empty dict."""
+    from postbuild_lib import output as out
+    p = tmp_path / "post.md"
+    p.write_text("# Heading\n\nJust a body\n", encoding="utf-8")
+    fm = out._parse_frontmatter(p)
+    assert fm == {}
+
+
+# ---------------------------------------------------------------------------
 # Heading slug uniqueness — `inject_anchor_links_and_toc`
 # Guards the WCAG/AAA "Duplicate id attribute value" failure: non-ASCII
 # scripts (Arabic, Cyrillic, CJK) collapse multiple headings to the
