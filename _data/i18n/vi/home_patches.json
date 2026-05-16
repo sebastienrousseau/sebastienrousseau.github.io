@@ -1,0 +1,317 @@
+{
+  "_comment": "VI home-page chrome patches — Pairs of [regex, replacement] applied to the EN homepage shell.",
+  "patches": [
+    [
+      ">Authored &amp; maintained<",
+      ">Tác giả và bảo trì<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">Tác giả và bảo trì<"
+    ],
+    [
+      ">Shaping the future of banking<br>through AI, payments,<br>and quantum-safe security\\.</h1>",
+      ">Định hình tương lai của ngân hàng<br>qua AI, thanh toán<br>và bảo mật an toàn lượng tử.</h1>"
+    ],
+    [
+      ">Applying AI and quantum-safe security to the future of payments\\.</p>",
+      ">Áp dụng AI và bảo mật an toàn lượng tử cho tương lai của thanh toán.</p>"
+    ],
+    [
+      "id=practice>Open source for the<br>future of finance\\.</h2>",
+      "id=practice>Mã nguồn mở cho<br>tương lai của tài chính.</h2>"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">Mã nguồn mở cho tương lai của tài chính.<"
+    ],
+    [
+      ">A portfolio of Python, Rust and JavaScript libraries I created and maintain\\. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography\\.<",
+      ">Danh mục thư viện Python, Rust và JavaScript mà tôi đã tạo và bảo trì. Mã nguồn mở, miễn phí sử dụng, áp dụng cho thanh toán bán buôn, quyết toán xuyên biên giới, dữ liệu tài chính và mật mã kháng lượng tử.<"
+    ],
+    [
+      ">Browse all projects<",
+      ">Xem tất cả dự án<"
+    ],
+    [
+      ">Python · Payments<",
+      ">Python · Thanh toán<"
+    ],
+    [
+      ">Python · Cross-border<",
+      ">Python · Xuyên biên giới<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · Tài chính<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · Bảo mật<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · Lượng tử<"
+    ],
+    [
+      ">Rust · YAML<",
+      ">Rust · YAML<"
+    ],
+    [
+      ">Learn about ([A-Za-z0-9 ()_-]+)</a>",
+      ">Tìm hiểu về \\1</a>"
+    ],
+    [
+      "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
+      "<p>Thư viện Python tự động hoá việc tạo tệp thanh toán <strong>ISO 20022 pain.001</strong> từ CSV hoặc SQLite. Được xây dựng cho chuyển đổi toàn cầu từ MT/MX sang tin nhắn có cấu trúc trên SWIFT, SEPA và các sơ đồ lớn.</p>"
+    ],
+    [
+      "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
+      "<p>Tạo, xác thực và phân phối tin nhắn chuyển khoản tín dụng khách hàng FI-FI <strong>ISO 20022 pacs.008</strong>. JSON Schema, xác thực XSD, IBAN tại 75 quốc gia, che PII tuân thủ GDPR/PCI-DSS.</p>"
+    ],
+    [
+      "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
+      "<p>Bộ công cụ Python cấp tài chính chuyển đổi sao kê ngân hàng đa định dạng thành dữ liệu có cấu trúc. Được thiết kế cho các tệp sao kê thực tế và yêu cầu kiểm toán của môi trường được quản lý.</p>"
+    ],
+    [
+      "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
+      "<p>Thư viện Rust triển khai <strong>thuật toán băm và digest an toàn</strong> cho mã hoá và xác thực mật khẩu. Thiết kế với tư thế kháng lượng tử cho kỷ nguyên xác thực hậu PQC.</p>"
+    ],
+    [
+      "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
+      "<p>Triển khai Rust mạnh mẽ của <strong>CRYSTALS-Kyber</strong>, tiêu chuẩn NIST FIPS 203 cho mã hoá hậu lượng tử đa mục đích. Nền tảng cho xác thực thanh toán kháng lượng tử.</p>"
+    ],
+    [
+      "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
+      "<p>Một <strong>hệ sinh thái YAML 1.2 thuần Rust</strong>. Không unsafe, tuân thủ đặc tả 100% (406 / 406 bộ kiểm thử chính thức), serde streaming-first, CST không mất mát và xác thực JSON-Schema. Thư viện + CLI (noyafmt, noyavalidate) + LSP + MCP + binding WASM.</p>"
+    ],
+    [
+      "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
+      "Tính toán lượng tử đe doạ nền tảng mật mã của dịch vụ tài chính. Thanh toán — từ thời gian thực đến quyết toán xuyên biên giới — dựa vào các biện pháp bảo vệ mà lượng tử sẽ làm lỗi thời."
+    ],
+    [
+      ">Quantum-Safe Payments white paper · September 2025 · Read the paper<",
+      ">Sách trắng Thanh toán An toàn Lượng tử · Tháng 9 năm 2025 · Đọc sách trắng<"
+    ],
+    [
+      ">Read the paper<",
+      ">Đọc sách trắng<"
+    ],
+    [
+      ">Quantum-Safe Payments\\.</h2>",
+      ">Thanh toán an toàn lượng tử.</h2>"
+    ],
+    [
+      ">Quantum-Safe Payments\\.<",
+      ">Thanh toán an toàn lượng tử.<"
+    ],
+    [
+      ">Industry white paper for the Emerging Payments Association Asia\\.\\s*The structural threat quantum computing poses to payment infrastructure, and the case for coordinated action now\\.<",
+      ">Sách trắng ngành cho Emerging Payments Association Asia. Mối đe doạ cấu trúc mà tính toán lượng tử gây ra cho hạ tầng thanh toán, và lý lẽ cho hành động phối hợp ngay bây giờ.<"
+    ],
+    [
+      ">Why the payments industry must act now\\.<",
+      ">Vì sao ngành thanh toán phải hành động ngay.<"
+    ],
+    [
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
+      ">Cơ quan quản lý xem « thu thập ngay, giải mã sau » là một rủi ro hiện tại đáng tin. Sách trắng này nêu rõ mối đe doạ cấu trúc và lý lẽ cấp bách cho hành động phối hợp trên các đường ray thanh toán bán buôn.</p>"
+    ],
+    [
+      ">Latest<",
+      ">Mới nhất<"
+    ],
+    [
+      ">From the desk\\.<",
+      ">Từ bàn làm việc.<"
+    ],
+    [
+      ">Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments\\.<",
+      ">Nghiên cứu và bài viết gần đây về mật mã an toàn lượng tử, chuyển đổi ISO 20022 và tương lai của thanh toán bán buôn.<"
+    ],
+    [
+      "<p class=newsroom-excerpt>Stablecoins cannot pay yield under the GENIUS Act\\. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail\\.</p>",
+      "<p class=newsroom-excerpt>Stablecoin không thể trả lợi suất theo GENIUS Act. Hồ sơ BRSRV và BSTBL của BlackRock hé lộ giải pháp — một quỹ thị trường tiền tệ token hoá chạy song song với một stablecoin được quản lý để mang lại lợi suất qua một đường ray tuân thủ kế bên.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>Quantum risk has moved from research curiosity to active regulatory mandate\\. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate\\.</p>",
+      "<p class=newsroom-excerpt>Rủi ro lượng tử đã chuyển từ tò mò nghiên cứu thành chỉ thị quản lý hoạt động. Với lộ trình G7 công bố tháng 1 năm 2026 và BIS Project Leap chứng minh tính khả thi trên hệ thống thanh toán trực tiếp, câu hỏi ở cấp hội đồng quản trị không còn là liệu có nên chuyển đổi.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\\.</p>",
+      "<p class=newsroom-excerpt>Từ tháng 11 năm 2026, SWIFT CBPR+ sẽ từ chối địa chỉ bưu chính không có cấu trúc trong tin nhắn thanh toán xuyên biên giới. Còn sáu tháng nữa, 65% tin nhắn pacs.008 vẫn gửi địa chỉ không tuân thủ và 44% ngân hàng vẫn chậm tiến độ chương trình khắc phục.</p>"
+    ],
+    [
+      ">See all articles\\b",
+      ">Xem tất cả bài viết"
+    ],
+    [
+      "<p class=feat-eyebrow>Get in touch</p>",
+      "<p class=feat-eyebrow>Liên hệ với tôi</p>"
+    ],
+    [
+      ">Unlocking the Future of Banking and Financial Services\\.<br>Discover the latest news from</h2>",
+      ">Mở khoá tương lai của ngân hàng và dịch vụ tài chính.<br>Khám phá tin tức mới nhất từ</h2>"
+    ],
+    [
+      "<p class=\\\"feat-sub center\\\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.</p>",
+      "<p class=\"feat-sub center\">Chiến lược thanh toán bán buôn, chuyển đổi ISO 20022 hay mật mã an toàn lượng tử cho dịch vụ tài chính — rất sẵn lòng trao đổi.</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Bắt đầu trò chuyện</a>"
+    ],
+    [
+      "<a class=pill href=\"?/articles/index\\.html\"?>Read latest research</a>",
+      "<a class=pill href=\"/vi/bai-viet/index.html\">Đọc nghiên cứu mới nhất</a>"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/vi/lien-he/index.html\">Liên hệ với tôi</a>"
+    ],
+    [
+      "href=\"?/papers/index\\.html\"?>Read the paper</a>",
+      "href=\"/vi/cong-trinh/index.html\">Đọc sách trắng</a>"
+    ],
+    [
+      "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
+      "href=\"/vi/2026-05-15-loi-suat-an-giai-ma-brsrv-bstbl-blackrock-genius-act/index.html\">Đọc bài viết</a>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Writing</h2>",
+      "<h2 class=ap-foot-title>Bài viết</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Work</h2>",
+      "<h2 class=ap-foot-title>Hoạt động</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Reach</h2>",
+      "<h2 class=ap-foot-title>Kết nối</h2>"
+    ],
+    [
+      "<a href=/about/index\\.html>About</a>",
+      "<a href=/vi/gioi-thieu/index.html>Giới thiệu</a>"
+    ],
+    [
+      "<a href=/papers/index\\.html>Papers</a>",
+      "<a href=/vi/cong-trinh/index.html>Công trình</a>"
+    ],
+    [
+      "<a href=/projects/index\\.html>Projects</a>",
+      "<a href=/vi/du-an/index.html>Dự án</a>"
+    ],
+    [
+      "<a href=/playlists/index\\.html>Playlists</a>",
+      "<a href=/vi/danh-sach-phat/index.html>Danh sách phát</a>"
+    ],
+    [
+      "<a href=/contact/index\\.html>Contact</a>",
+      "<a href=/vi/lien-he/index.html>Liên hệ</a>"
+    ],
+    [
+      "<a href=/tags/index\\.html>Tags</a>",
+      "<a href=/vi/the/index.html>Thẻ</a>"
+    ],
+    [
+      "<a href=/articles/index\\.html>Articles</a>",
+      "<a href=/vi/bai-viet/index.html>Bài viết</a>"
+    ],
+    [
+      "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
+      "<a href=/vi/tao-bang-static-site-generator/index.html>Tạo bằng Static Site Generator</a>"
+    ],
+    [
+      "<a href=/accessibility/index\\.html>Accessibility</a>",
+      "<a href=/vi/tro-nang/index.html>Trợ năng</a>"
+    ],
+    [
+      "<a href=/privacy/index\\.html>Privacy</a>",
+      "<a href=/vi/quyen-rieng-tu/index.html>Quyền riêng tư</a>"
+    ],
+    [
+      "<a href=/terms/index\\.html>Terms</a>",
+      "<a href=/vi/dieu-khoan/index.html>Điều khoản</a>"
+    ],
+    [
+      ">Experience<",
+      ">Kinh nghiệm<"
+    ],
+    [
+      ">Brands along the way\\.<",
+      ">Các thương hiệu đã đi qua.<"
+    ],
+    [
+      ">From global Tier-1 banks to consumer technology\\. Payments and digital product leadership across HSBC, PayPal, Barclays, Shazam, AKQA and Virgin Group\\.</p>",
+      ">Từ các ngân hàng Tier-1 toàn cầu đến công nghệ tiêu dùng. Lãnh đạo sản phẩm thanh toán và số tại HSBC, PayPal, Barclays, Shazam, AKQA và Virgin Group.</p>"
+    ],
+    [
+      "alt=\"PayPal logo\"",
+      "alt=\"Logo PayPal\""
+    ],
+    [
+      "alt=\"Barclays logo\"",
+      "alt=\"Logo Barclays\""
+    ],
+    [
+      "alt=\"Shazam logo\"",
+      "alt=\"Logo Shazam\""
+    ],
+    [
+      "alt=\"AKQA logo\"",
+      "alt=\"Logo AKQA\""
+    ],
+    [
+      "alt=\"Virgin logo\"",
+      "alt=\"Logo Virgin\""
+    ],
+    [
+      "alt=\"HSBC logo\"",
+      "alt=\"Logo HSBC\""
+    ],
+    [
+      ">Read more<",
+      ">Đọc thêm<"
+    ],
+    [
+      ">Read the article<",
+      ">Đọc bài viết<"
+    ],
+    [
+      ">Read latest research<",
+      ">Đọc nghiên cứu mới nhất<"
+    ],
+    [
+      ">Read full article<",
+      ">Đọc toàn bộ bài viết<"
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Liên hệ ›</a>"
+    ],
+    [
+      ">Payments · Stablecoins<",
+      ">Thanh toán · Stablecoin<"
+    ],
+    [
+      ">Payments · ISO 20022<",
+      ">Thanh toán · ISO 20022<"
+    ],
+    [
+      ">Quantum<",
+      ">Lượng tử<"
+    ],
+    [
+      ">Quantum · Banking<",
+      ">Lượng tử · Ngân hàng<"
+    ],
+    [
+      ">Quantum · Cryptography<",
+      ">Lượng tử · Mật mã<"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">Đọc sách trắng</a>"
+    ]
+  ]
+}

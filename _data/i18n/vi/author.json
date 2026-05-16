@@ -1,0 +1,5 @@
+{
+  "_comment": "Vietnamese author-card prose. Mirrors the EN key set; CI gate test_i18n_author.py enforces parity.",
+  "bio": "Là chuyên gia công nghệ cấp cao trong lĩnh vực ngân hàng, tôi viết về AI ứng dụng, chuyển đổi ISO 20022, mật mã hậu lượng tử cho dịch vụ tài chính và chuyển đổi cấu trúc của thanh toán bán buôn.",
+  "credentialsPrefix": "Hơn 20 năm kinh nghiệm tại HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group."
+}

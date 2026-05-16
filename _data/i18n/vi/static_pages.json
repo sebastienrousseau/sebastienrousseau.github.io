@@ -1,0 +1,93 @@
+{
+  "_comment": "Per-static-page metadata for the Vietnamese mirror. Keys are the EN slug; each entry replaces the EN values in <title>, <meta name=description>, <meta name=keywords>, og:*, twitter:*, and the hero subtitle. STATIC_BODIES_VI supplies the curated VI <main> body for pages that need more than a regex pass.",
+  "about": {
+    "title": "Giới thiệu — Sebastien Rousseau",
+    "subtitle": "Định hình tương lai của ngân hàng và dịch vụ tài chính thông qua tích hợp chiến lược của trí tuệ nhân tạo, mật mã hậu lượng tử và công nghệ blockchain.",
+    "description": "Sebastien Rousseau, chuyên gia công nghệ cấp cao trong ngân hàng: AI ứng dụng, chuyển đổi ISO 20022, mật mã hậu lượng tử, chuyển đổi cấu trúc thanh toán bán buôn.",
+    "keywords": "Sebastien Rousseau, tiểu sử, ngân hàng, thanh toán, AI, ISO 20022, mật mã hậu lượng tử, HSBC, PayPal, Barclays"
+  },
+  "papers": {
+    "title": "Công trình — Sebastien Rousseau",
+    "subtitle": "Sách trắng ngành và nghiên cứu ứng dụng dành cho lãnh đạo cấp cao về thanh toán và bảo mật.",
+    "description": "Bài viết, báo cáo và ấn phẩm của Sebastien Rousseau về AI, thanh toán ISO 20022 và mật mã hậu lượng tử.",
+    "keywords": "công trình, bài viết, báo cáo, nghiên cứu, ISO 20022, AI, mật mã hậu lượng tử"
+  },
+  "projects": {
+    "title": "Dự án — Sebastien Rousseau",
+    "subtitle": "Các dự án mã nguồn mở bằng Python, Rust và JavaScript cho tương lai của tài chính.",
+    "description": "Danh mục thư viện mã nguồn mở do Sebastien Rousseau duy trì cho thanh toán, quyết toán xuyên biên giới và mật mã kháng lượng tử.",
+    "keywords": "dự án mã nguồn mở, Python, Rust, thanh toán, ISO 20022, mật mã hậu lượng tử"
+  },
+  "topics": {
+    "title": "Chủ đề — Sebastien Rousseau",
+    "subtitle": "Bài viết về AI, mật mã hậu lượng tử, ISO 20022 và tương lai của thanh toán.",
+    "description": "Khám phá phân tích theo chủ đề: AI ứng dụng, thanh toán ISO 20022, mật mã hậu lượng tử và chuyển đổi thanh toán bán buôn.",
+    "keywords": "chủ đề, AI, thanh toán, ISO 20022, mật mã hậu lượng tử"
+  },
+  "tags": {
+    "title": "Thẻ — Sebastien Rousseau",
+    "subtitle": "Duyệt website theo chủ đề: AI, thanh toán, mật mã hậu lượng tử, mã nguồn mở.",
+    "description": "Duyệt bài viết theo thẻ: AI, ISO 20022, blockchain, mật mã hậu lượng tử và nhiều chủ đề khác.",
+    "keywords": "thẻ, tags, điều hướng theo chủ đề"
+  },
+  "contact": {
+    "title": "Liên hệ — Sebastien Rousseau",
+    "subtitle": "Có câu hỏi hay cần tư vấn? Hãy gửi tin nhắn cho tôi.",
+    "description": "Liên hệ với Sebastien Rousseau để tư vấn chuyển đổi thanh toán, chuyển đổi ISO 20022 hoặc chiến lược hậu lượng tử.",
+    "keywords": "liên hệ, tư vấn, thanh toán, ISO 20022, mật mã hậu lượng tử"
+  },
+  "accessibility": {
+    "title": "Trợ năng — Sebastien Rousseau",
+    "subtitle": "Cam kết về khả năng tiếp cận số cho người khuyết tật.",
+    "description": "Tuyên bố trợ năng: tuân thủ WCAG 2.2 AA, nguyên tắc hoà nhập, phản hồi và đầu mối báo cáo.",
+    "keywords": "trợ năng, WCAG, tuân thủ, hoà nhập số, kiểm toán"
+  },
+  "privacy": {
+    "title": "Chính sách quyền riêng tư — Sebastien Rousseau",
+    "subtitle": "Quyền riêng tư của bạn rất quan trọng với chúng tôi.",
+    "description": "Cách website này thu thập, sử dụng và bảo vệ dữ liệu của bạn. Đo lường ẩn danh, cookie, lưu trữ và quyền GDPR.",
+    "keywords": "quyền riêng tư, GDPR, cookie, dữ liệu cá nhân, phân tích"
+  },
+  "terms": {
+    "title": "Điều khoản sử dụng — Sebastien Rousseau",
+    "subtitle": "Điều khoản và điều kiện sử dụng website.",
+    "description": "Điều khoản và điều kiện sử dụng website sebastienrousseau.com: giấy phép nội dung, hạn chế, nhãn hiệu và quyền tài phán.",
+    "keywords": "điều khoản, thông báo pháp lý, giấy phép, bản quyền"
+  },
+  "made-with-static-site-generator": {
+    "title": "Tạo bằng Static Site Generator — Sebastien Rousseau",
+    "subtitle": "Khám phá cách sử dụng bộ tạo trang tĩnh thế hệ mới.",
+    "description": "Website này được tạo bằng Shokunin, bộ tạo trang tĩnh tốc độ cao viết bằng Rust.",
+    "keywords": "Shokunin, bộ tạo trang tĩnh, Rust, hiệu năng"
+  },
+  "made-with-shokunin": {
+    "title": "Tạo bằng Shokunin — Sebastien Rousseau",
+    "subtitle": "Khám phá cách sử dụng bộ tạo trang tĩnh thế hệ mới.",
+    "description": "Website này được tạo bằng Shokunin, bộ tạo trang tĩnh Rust tối ưu cho hiệu năng và SEO.",
+    "keywords": "Shokunin, SSG, Rust, hiệu năng, SEO"
+  },
+  "playlists": {
+    "title": "Danh sách phát — Sebastien Rousseau",
+    "subtitle": "Tuyển chọn các playlist Spotify cho deep work, sáng tạo và tinh thần kỹ sư.",
+    "description": "Tuyển chọn âm nhạc và nghe của Sebastien Rousseau.",
+    "keywords": "danh sách phát, âm nhạc"
+  },
+  "404": {
+    "title": "Không tìm thấy trang — Sebastien Rousseau",
+    "subtitle": "Rất tiếc, không tìm thấy trang này.",
+    "description": "Không tìm thấy trang bạn yêu cầu. Hãy quay lại trang chủ hoặc dùng chức năng tìm kiếm.",
+    "keywords": "404, không tìm thấy trang"
+  },
+  "offline": {
+    "title": "Ngoại tuyến — Sebastien Rousseau",
+    "subtitle": "Hãy kiểm tra kết nối và thử lại.",
+    "description": "Bạn đang ngoại tuyến. Hãy kết nối lại để truy cập nội dung.",
+    "keywords": "ngoại tuyến, PWA"
+  },
+  "thanks": {
+    "title": "Cảm ơn — Sebastien Rousseau",
+    "subtitle": "Cảm ơn bạn đã liên hệ!",
+    "description": "Cảm ơn bạn đã gửi tin nhắn. Tôi sẽ phản hồi sớm nhất có thể.",
+    "keywords": "cảm ơn"
+  }
+}
