@@ -1,0 +1,65 @@
+{
+  "_comment": "Filipino UI strings — DRAFT pending native-speaker review. Key set MUST stay in sync with _data/i18n/en/strings.json; CI gate test_i18n_strings.py enforces parity.",
+
+  "nav.aria.skipToMain": "Lumaktaw sa pangunahing nilalaman",
+  "nav.aria.toggleNav": "I-toggle ang nabigasyon",
+  "nav.aria.toggleNavTitle": "I-toggle ang nabigasyon",
+  "nav.aria.primary": "Pangunahing nabigasyon",
+  "nav.aria.darkTheme": "Lumipat sa dark mode",
+  "nav.aria.lightTheme": "Lumipat sa light mode",
+  "nav.aria.themeToggleTitle": "Ibahin ang tema",
+  "nav.aria.searchKbd": "Maghanap (Cmd o Ctrl + K)",
+  "nav.aria.searchTitle": "Maghanap (⌘K)",
+  "nav.aria.contactCTA": "Makipag-ugnayan",
+  "nav.contactCTA": "Makipag-ugnayan ›",
+  "nav.aria.brandHome": "Home ni Sebastien Rousseau",
+  "nav.aria.backToTop": "Bumalik sa itaas",
+
+  "search.label": "Maghanap",
+  "search.placeholder": "Maghanap sa dokumentasyon...",
+  "search.kbdEsc": "isara",
+  "search.kbdNavigate": "mag-navigate",
+  "search.kbdEnter": "buksan",
+  "search.buttonLabel": "Maghanap",
+
+  "footer.title.writing": "Pagsusulat",
+  "footer.title.work": "Trabaho",
+  "footer.title.reach": "Makipag-ugnayan",
+  "footer.aria.socialLinks": "Mga link sa social media",
+  "footer.aria.socialPrefix": "Sebastien Rousseau sa ",
+  "footer.copyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Lahat ng karapatan ay nakalaan.",
+
+  "feeds.atomTitle": "Atom Feed",
+  "feeds.rssTitle": "RSS Feed",
+  "feeds.channelTitle": "Sebastien Rousseau — Filipino edition",
+  "feeds.channelDescription": "Mga artikulo sa Filipino: applied AI, ISO 20022 payments, post-quantum cryptography at wholesale-payments transformation.",
+  "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Lahat ng karapatan ay nakalaan.",
+  "feeds.jsonFeedTitle": "Sebastien Rousseau — Mga Artikulo (Filipino)",
+
+  "lang.aria.langGroup": "Wika",
+  "lang.aria.changeLangPrefix": "FIL, Baguhin ang wika",
+  "lang.title.changeLang": "Baguhin ang wika",
+  "lang.title.comingSoon": "Malapit na",
+  "lang.currentLabel": "FIL",
+
+  "article.aria.summary": "Buod ng artikulo",
+  "article.keyTakeaways": "Mga Pangunahing Punto",
+  "article.relatedReadingInline": "Kaugnay na pagbasa:",
+  "article.relatedHeading": "Kaugnay na pagbasa",
+  "article.lastReviewedLabel": "Huling sinuri ",
+
+  "author.aria.aboutAuthor": "Tungkol sa may-akda",
+  "author.fullProfile": "Buong profile",
+  "author.alt.portrait": "Portrait ni Sebastien Rousseau",
+
+  "newsletter.aria.signup": "Pag-sign up sa newsletter",
+  "newsletter.blurb": "Banking On Quantum — mga research note tungkol sa payments, AI at post-quantum crypto. Walang spam.",
+  "newsletter.placeholder": "ikaw@bangko.ph",
+  "newsletter.subject": "Pag-sign up sa newsletter — sebastienrousseau.com",
+  "newsletter.submit": "Mag-subscribe",
+
+  "home.eyebrow.contact": "Makipag-ugnayan",
+  "home.cta.startConversation": "Magsimula ng usapan",
+
+  "listing.readLatest": "Basahin ang pinakabagong research"
+}

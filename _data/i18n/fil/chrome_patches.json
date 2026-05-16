@@ -1,0 +1,289 @@
+{
+  "_comment": "DRAFT inline chrome patches — DRAFT pending native review. (auto-derived from AR template; DRAFT, needs native review)",
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"Pag-sign up sa newsletter\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum — mga research note tungkol sa payments, AI at post-quantum crypto. Walang spam."
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"ikaw@bangko.ph\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"Pag-sign up sa newsletter — sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">Mag-subscribe</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">Lumaktaw sa pangunahing nilalaman</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"I-toggle ang nabigasyon\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"I-toggle ang nabigasyon\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"Pangunahing nabigasyon\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"Lumipat sa dark mode\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"Lumipat sa light mode\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"Ibahin ang tema\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"Maghanap (Cmd o Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"Maghanap (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"Makipag-ugnayan\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Makipag-ugnayan ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">Makipag-ugnayan</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Home ni Sebastien Rousseau\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/fil/tungkol-sa-akin/index.html\">Tungkol</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/fil/mga-publikasyon/index.html\">Mga publikasyon</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/fil/mga-paksa/index.html\">Mga paksa</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/fil/mga-proyekto/index.html\">Mga proyekto</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/fil/mga-artikulo/index.html\">Mga artikulo</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/fil/makipag-ugnayan/index.html\">Makipag-ugnayan</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/fil/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/fil/mga-playlist/index.html\">Mga playlist</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"Bumalik sa itaas\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">Pagsusulat</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">Trabaho</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">Makipag-ugnayan</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/fil/tungkol-sa-akin/index.html\">Tungkol</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/fil/ginawa-sa-static-site-generator/index.html\">Ginawa sa Static Site Generator</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/fil/mga-publikasyon/index.html\">Mga publikasyon</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/fil/mga-tag/index.html\">Mga tag</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/fil/mga-proyekto/index.html\">Mga proyekto</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/fil/mga-playlist/index.html\">Mga playlist</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/fil/makipag-ugnayan/index.html\">Makipag-ugnayan</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/fil/mga-artikulo/index.html\">Mga artikulo</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"Mga link sa social media\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau sa "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau sa "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"Black and White Portrait ni Sebastien Rousseau\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Copyright 2007 - 2026 - Sebastien Rousseau. Lahat ng karapatan ay nakalaan."
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/fil/pagiging-accessible/index.html\">Pagiging accessible</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/fil/pagkapribado/index.html\">Pagkapribado</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/fil/mga-tuntunin/index.html\">Mga tuntunin</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"Maghanap sa dokumentasyon...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"Maghanap\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> isara"
+    ],
+    [
+      "navigate</span>",
+      "mag-navigate</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> buksan"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>Maghanap</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"Wika\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"FIL, Baguhin ang wika\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"Baguhin ang wika\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"Malapit na\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">FIL</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"Atom Feed\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"RSS Feed\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"Buod ng artikulo\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>Mga Pangunahing Punto</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>Kaugnay na pagbasa:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">Kaugnay na pagbasa</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">Huling sinuri <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"Tungkol sa may-akda\""
+    ],
+    [
+      ">Full profile</a>",
+      ">Buong profile</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"Portrait ni Sebastien Rousseau\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">Makipag-ugnayan</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Magsimula ng usapan</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/mga-artikulo/index.html\">Basahin ang pinakabagong research</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/makipag-ugnayan/index.html\">Makipag-ugnayan</a>"
+    ]
+  ]
+}

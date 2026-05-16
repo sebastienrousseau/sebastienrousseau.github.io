@@ -1,0 +1,23 @@
+{
+  "_comment": "Filipino topic-cluster titles + ledes — DRAFT pending native review. Five topic clusters; identical EN slugs.",
+  "post-quantum-cryptography": {
+    "title": "Post-Quantum Cryptography",
+    "lede": "Lattice-based cryptography, mga NIST PQC standard, quantum-safe payments, at banta ng \"harvest now, decrypt later\". Mga research note, open-source library at migration playbook para sa mga security team sa financial services."
+  },
+  "iso-20022-payments": {
+    "title": "ISO 20022 at Payments",
+    "lede": "Cross-border message migration, structured-address compliance, SEPA Instant at SWIFT gpi, at mga wholesale payment rail na sumusuporta sa lahat ng ito. Mga tooling, playbook at regulatory roadmap."
+  },
+  "applied-ai-banking": {
+    "title": "Applied AI sa Banking",
+    "lede": "Generative AI, multimodal LLMs, at mga voice at speech model — at kung paano nito muling hinuhubog ang banking operations, customer service at product engineering sa mga Tier-1 na institusyon."
+  },
+  "rust-open-source": {
+    "title": "Rust at Open Source",
+    "lede": "Mga open-source na Rust library na pinananatili ko: logging, code generation, date and time, cryptographic primitives, Kyber-based KEM, at isang Rust-based static site generator."
+  },
+  "blockchain-digital-assets": {
+    "title": "Blockchain at Mga Digital Asset",
+    "lede": "Blockchain at digital assets: tokenisation, ERC-20, stablecoins, crypto infrastructure, at ang regulatory framework na humuhubog sa mga ito."
+  }
+}
