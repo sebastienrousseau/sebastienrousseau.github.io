@@ -73,7 +73,7 @@ LANGUAGES: tuple[Language, ...] = (
     Language("bn", "bn-BD", "bn_BD", "BN", "বাংলা", "🇧🇩"),
     Language("cs", "cs-CZ", "cs_CZ", "CS", "Čeština", "🇨🇿"),
     Language("de", "de-DE", "de_DE", "DE", "Deutsch", "🇩🇪", active=True),
-    Language("es", "es-ES", "es_ES", "ES", "Español", "🇪🇸"),
+    Language("es", "es-ES", "es_ES", "ES", "Español", "🇪🇸", active=True),
     Language("fil", "fil-PH", "fil_PH", "FIL", "Filipino", "🇵🇭"),
     Language("ha", "ha-NG", "ha_NG", "HA", "Hausa", "🇳🇬"),
     Language("he", "he-IL", "he_IL", "HE", "עברית", "🇮🇱", rtl=True),

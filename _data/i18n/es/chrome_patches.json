@@ -1,0 +1,289 @@
+{
+  "_comment": "Spanish inline chrome patches — DRAFT pending native review. Inline portion only — the auto-generated portion comes from strings.json via _lang_registry.build_chrome_patches.",
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"Suscripción a la newsletter\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum — notas de investigación sobre pagos, IA y criptografía postcuántica. Sin spam."
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"tu@banco.com\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"Suscripción a la newsletter — sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">Suscribirse</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">Saltar al contenido principal</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"Alternar navegación\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"Alternar navegación\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"Navegación principal\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"Activar el tema oscuro\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"Activar el tema claro\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"Cambiar tema\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"Buscar (Cmd o Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"Buscar (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"Contactar\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Contactar ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">Contactar</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Inicio de Sebastien Rousseau\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/es/sobre-mi/index.html\">Sobre mí</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/es/publicaciones/index.html\">Publicaciones</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/es/temas/index.html\">Temas</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/es/proyectos/index.html\">Proyectos</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/es/articulos/index.html\">Artículos</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/es/contacto/index.html\">Contacto</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/es/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/es/playlists/index.html\">Playlists</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"Volver arriba\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">Publicaciones</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">Actividad</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">Contacto</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/es/sobre-mi/index.html\">Sobre mí</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/es/hecho-con-static-site-generator/index.html\">Hecho con Static Site Generator</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/es/publicaciones/index.html\">Publicaciones</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/es/etiquetas/index.html\">Etiquetas</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/es/proyectos/index.html\">Proyectos</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/es/playlists/index.html\">Playlists</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/es/contacto/index.html\">Contacto</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/es/articulos/index.html\">Artículos</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"Enlaces sociales\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau en "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau en "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"Retrato en blanco y negro de Sebastien Rousseau\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Copyright 2007 - 2026 - Sebastien Rousseau. Todos los derechos reservados."
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/es/accesibilidad/index.html\">Accesibilidad</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/es/privacidad/index.html\">Privacidad</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/es/terminos/index.html\">Términos</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"Buscar en la documentación...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"Buscar\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> cerrar"
+    ],
+    [
+      "navigate</span>",
+      "navegar</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Intro</kbd> abrir"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>Buscar</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"Idioma\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"ES, Cambiar de idioma\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"Cambiar de idioma\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"Próximamente\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">ES</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"Feed Atom\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"Feed RSS\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"Resumen del artículo\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>Puntos clave</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>Lecturas relacionadas:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">Lecturas relacionadas</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">Última revisión <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"Sobre el autor\""
+    ],
+    [
+      ">Full profile</a>",
+      ">Perfil completo</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"Retrato de Sebastien Rousseau\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">Contactar</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Iniciar una conversación</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/articles/index.html\">Leer las investigaciones recientes</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/contact/index.html\">Contactar</a>"
+    ]
+  ]
+}
