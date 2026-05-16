@@ -71,7 +71,7 @@ LANGUAGES: tuple[Language, ...] = (
     # tree to exist; ``scripts/test_i18n_parity.py`` enforces that.
     Language("ar", "ar-SA", "ar_SA", "AR", "العربية", "🇸🇦", rtl=True, active=True),
     Language("bn", "bn-BD", "bn_BD", "BN", "বাংলা", "🇧🇩"),
-    Language("cs", "cs-CZ", "cs_CZ", "CS", "Čeština", "🇨🇿"),
+    Language("cs", "cs-CZ", "cs_CZ", "CS", "Čeština", "🇨🇿", active=True),
     Language("de", "de-DE", "de_DE", "DE", "Deutsch", "🇩🇪", active=True),
     Language("es", "es-ES", "es_ES", "ES", "Español", "🇪🇸", active=True),
     Language("fil", "fil-PH", "fil_PH", "FIL", "Filipino", "🇵🇭"),
@@ -87,7 +87,7 @@ LANGUAGES: tuple[Language, ...] = (
     Language("pt-br", "pt-BR", "pt_BR", "PT", "Português", "🇧🇷", active=True),
     Language("ro", "ro-RO", "ro_RO", "RO", "Română", "🇷🇴"),
     Language("ru", "ru-RU", "ru_RU", "RU", "Русский", "🇷🇺", active=True),
-    Language("sv", "sv-SE", "sv_SE", "SV", "Svenska", "🇸🇪"),
+    Language("sv", "sv-SE", "sv_SE", "SV", "Svenska", "🇸🇪", active=True),
     Language("th", "th-TH", "th_TH", "TH", "ไทย", "🇹🇭"),
     Language("tr", "tr-TR", "tr_TR", "TR", "Türkçe", "🇹🇷"),
     Language("uk", "uk-UA", "uk_UA", "UK", "Українська", "🇺🇦"),

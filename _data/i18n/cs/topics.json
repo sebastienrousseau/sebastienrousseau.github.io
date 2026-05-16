@@ -1,0 +1,23 @@
+{
+  "_comment": "Czech topic-cluster titles + ledes — DRAFT pending native review.",
+  "post-quantum-cryptography": {
+    "title": "Postkvantová kryptografie",
+    "lede": "Kryptografie založená na mřížkách, standardy NIST PQC, kvantově odolné platby a hrozba „sklízej teď, dešifruj později“. Výzkumné poznámky, open-source knihovny a migrační příručky pro bezpečnostní týmy finančních služeb."
+  },
+  "iso-20022-payments": {
+    "title": "ISO 20022 a platby",
+    "lede": "Migrace přeshraničních zpráv, soulad strukturovaných adres, SEPA Instant, SWIFT gpi a velkoobchodní platební koleje, které vše drží. Nástroje, příručky a regulační harmonogram."
+  },
+  "applied-ai-banking": {
+    "title": "Aplikovaná AI v bankovnictví",
+    "lede": "Generativní AI, multimodální LLM, hlas a modely řeči — a jak přetvářejí bankovní operace, péči o zákazníka a produktové inženýrství u špičkových institucí."
+  },
+  "rust-open-source": {
+    "title": "Rust a open source",
+    "lede": "Open-source Rust knihovny, které vytvářím a udržuji: logování, generování kódu, datum a čas, kryptografické primitivy, KEM založený na Kyberu a statický generátor webu v Rustu."
+  },
+  "blockchain-digital-assets": {
+    "title": "Blockchain a digitální aktiva",
+    "lede": "Blockchain a digitální aktiva: tokenizace, ERC-20, stablecoiny, infrastruktura kryptoměn a regulační rámec, který je formuje."
+  }
+}

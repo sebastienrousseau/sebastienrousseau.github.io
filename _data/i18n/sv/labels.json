@@ -1,0 +1,15 @@
+{
+  "_comment": "Swedish body-text labels — DRAFT pending native review. Key set MUST stay in sync with _data/i18n/en/labels.json; CI gate test_i18n_labels.py enforces parity.",
+  "Published": "Publicerad",
+  "Updated": "Uppdaterad",
+  "min read": "min läsning",
+  "Previous": "Föregående",
+  "Next": "Nästa",
+  "Sources & references": "Källor och referenser",
+  "About the author": "Om författaren",
+  "Topics": "Ämnen",
+  "Contents": "Innehåll",
+  "Estimated read time": "Uppskattad lästid",
+  "Article pagination": "Artikelpaginering",
+  "Link to": "Länk till"
+}

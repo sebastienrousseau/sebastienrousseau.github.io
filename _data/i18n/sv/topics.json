@@ -1,0 +1,23 @@
+{
+  "_comment": "Swedish topic-cluster titles + ledes — DRAFT pending native review. Topic slugs are language-independent; only the displayed name and lede change. EN equivalents live in scripts/build_topics.py (TOPICS dict).",
+  "post-quantum-cryptography": {
+    "title": "Postkvantkryptografi",
+    "lede": "Gitterbaserad kryptografi, NIST PQC-standarder, kvantsäkra betalningar och hotet «harvest now, decrypt later». Forskningsanteckningar, öppen källkod och migrationsmanualer för säkerhetsteam inom finansiella tjänster."
+  },
+  "iso-20022-payments": {
+    "title": "ISO 20022 och betalningar",
+    "lede": "Migrering av gränsöverskridande meddelanden, krav på strukturerade adresser, SEPA Instant, SWIFT gpi och de grossistbetalningsskenor som bär upp allt. Verktyg, manualer och regulatorisk tidslinje."
+  },
+  "applied-ai-banking": {
+    "title": "Tillämpad AI i bank",
+    "lede": "Generativ AI, multimodala LLM, röst- och talmodeller — och hur de ritar om bankverksamhet, kundtjänst och produktteknik i förstaklassens institutioner."
+  },
+  "rust-open-source": {
+    "title": "Rust och öppen källkod",
+    "lede": "Rust-bibliotek med öppen källkod som jag skriver och underhåller: loggning, kodgenerering, datum och tid, kryptografiska primitiver, Kyber-baserad KEM och en statisk sajtgenerator i Rust."
+  },
+  "blockchain-digital-assets": {
+    "title": "Blockchain och digitala tillgångar",
+    "lede": "Blockchain och digitala tillgångar: tokenisering, ERC-20, stablecoins, kryptoinfrastruktur och det regelverk som omger dem."
+  }
+}

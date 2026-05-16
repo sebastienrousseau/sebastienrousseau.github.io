@@ -1,0 +1,99 @@
+{
+  "_comment": "Swedish static-page metadata — DRAFT pending native review. Mirrors EN/FR/DE/AR static_pages.json shape.",
+  "404": {
+    "title": "Sidan hittades inte — Sebastien Rousseau",
+    "subtitle": "Tyvärr, denna sida finns inte.",
+    "description": "Den begärda sidan kunde inte hittas. Återvänd till startsidan eller använd sökfunktionen.",
+    "keywords": "404, sidan hittades inte"
+  },
+  "about": {
+    "title": "Om mig — Sebastien Rousseau",
+    "subtitle": "Att forma framtiden för bank och finansiella tjänster genom strategisk integration av artificiell intelligens, postkvantkryptografi och blockchainteknik.",
+    "description": "Sebastien Rousseau, senior banktekniker: tillämpad AI, migrering till ISO 20022, postkvantkryptografi och strukturell transformation av grossistbetalningar.",
+    "keywords": "Sebastien Rousseau, biografi, bank, betalningar, AI, ISO 20022, postkvantkryptografi, HSBC, PayPal, Barclays"
+  },
+  "accessibility": {
+    "title": "Tillgänglighet — Sebastien Rousseau",
+    "subtitle": "Engagerade i digital tillgänglighet för personer med funktionsnedsättning.",
+    "description": "Tillgänglighetsdeklaration: efterlevnad av WCAG 2.2 AA, inkluderande principer, återkoppling och kontaktuppgifter för att rapportera problem.",
+    "keywords": "tillgänglighet, WCAG, efterlevnad, digital inkludering, granskning"
+  },
+  "articles": {
+    "title": "Artiklar — Sebastien Rousseau",
+    "subtitle": "Artiklar om AI, postkvantkryptografi, ISO 20022 och framtidens betalningar.",
+    "description": "Artiklar om tillämpad AI, postkvantkryptografi, ISO 20022-betalningar och transformationen av grossistbetalningar.",
+    "keywords": "artiklar, forskning, AI, postkvantkryptografi, ISO 20022, grossistbetalningar"
+  },
+  "contact": {
+    "title": "Kontakt — Sebastien Rousseau",
+    "subtitle": "Har du en fråga eller behöver rådgivning? Skriv till mig.",
+    "description": "Kontakta Sebastien Rousseau för rådgivning kring betaltransformation, migrering till ISO 20022 eller postkvantstrategi.",
+    "keywords": "kontakt, rådgivning, betalningar, ISO 20022, postkvantkryptografi"
+  },
+  "made-with-shokunin": {
+    "title": "Gjord med Shokunin — Sebastien Rousseau",
+    "subtitle": "Upptäck hur du använder nästa generations statiska sajtgenerator.",
+    "description": "Den här sajten är byggd med Shokunin, en statisk sajtgenerator i Rust optimerad för prestanda och SEO.",
+    "keywords": "Shokunin, SSG, Rust, prestanda, SEO"
+  },
+  "made-with-static-site-generator": {
+    "title": "Gjord med Static Site Generator — Sebastien Rousseau",
+    "subtitle": "Upptäck hur du använder nästa generations statiska sajtgenerator.",
+    "description": "Den här sajten genereras med Shokunin, en blixtsnabb statisk sajtgenerator skriven i Rust.",
+    "keywords": "Shokunin, statisk sajtgenerator, Rust, prestanda"
+  },
+  "offline": {
+    "title": "Offline — Sebastien Rousseau",
+    "subtitle": "Kontrollera din anslutning och försök igen.",
+    "description": "Du är offline. Anslut igen för att komma åt innehållet.",
+    "keywords": "offline, PWA"
+  },
+  "papers": {
+    "title": "Publikationer — Sebastien Rousseau",
+    "subtitle": "Branschvita böcker och tillämpad forskning för seniora beslutsfattare inom betalningar och säkerhet.",
+    "description": "Artiklar, rapporter och publikationer av Sebastien Rousseau om AI, ISO 20022-betalningar och postkvantkryptografi.",
+    "keywords": "publikationer, artiklar, rapporter, forskning, ISO 20022, AI, postkvantkryptografi"
+  },
+  "playlists": {
+    "title": "Spellistor — Sebastien Rousseau",
+    "subtitle": "Utvalda Spotify-spellistor för djupt arbete, kreativitet och ingenjörstänkande.",
+    "description": "Sebastien Rousseaus musik- och lyssningsurval.",
+    "keywords": "spellistor, musik"
+  },
+  "privacy": {
+    "title": "Integritetspolicy — Sebastien Rousseau",
+    "subtitle": "Din integritet är viktig för oss.",
+    "description": "Hur den här sajten samlar in, använder och skyddar dina data. Anonym besöksmätning, cookies, hosting och GDPR-rättigheter.",
+    "keywords": "integritet, GDPR, cookies, personuppgifter, analys"
+  },
+  "projects": {
+    "title": "Projekt — Sebastien Rousseau",
+    "subtitle": "Öppen källkod i Python, Rust och JavaScript för finansens framtid.",
+    "description": "Sebastien Rousseaus portfölj av bibliotek med öppen källkod för betalningar, gränsöverskridande avveckling och kvantsäker kryptografi.",
+    "keywords": "öppen källkod, Python, Rust, betalningar, ISO 20022, postkvantkryptografi"
+  },
+  "tags": {
+    "title": "Taggar — Sebastien Rousseau",
+    "subtitle": "Bläddra i sajten efter ämne: AI, betalningar, postkvantkryptografi, öppen källkod.",
+    "description": "Bläddra i artiklar efter tagg: AI, ISO 20022, blockchain, postkvantkryptografi och mer.",
+    "keywords": "taggar, ämnen, bläddra"
+  },
+  "terms": {
+    "title": "Användarvillkor — Sebastien Rousseau",
+    "subtitle": "Allmänna villkor för användning av sajten.",
+    "description": "Allmänna villkor för användning av sebastienrousseau.com: innehållslicens, restriktioner, varumärken och jurisdiktion.",
+    "keywords": "villkor, juridiskt, licens, copyright"
+  },
+  "thanks": {
+    "title": "Tack — Sebastien Rousseau",
+    "subtitle": "Tack för att du kontaktade mig!",
+    "description": "Tack för ditt meddelande. Jag återkommer snart.",
+    "keywords": "tack"
+  },
+  "topics": {
+    "title": "Ämnen — Sebastien Rousseau",
+    "subtitle": "Artiklar om AI, postkvantkryptografi, ISO 20022 och framtidens betalningar.",
+    "description": "Utforska analyser efter ämne: tillämpad AI, ISO 20022-betalningar, postkvantkryptografi och transformationen av grossistbetalningar.",
+    "keywords": "ämnen, tema, AI, betalningar, ISO 20022, postkvantkryptografi"
+  }
+}

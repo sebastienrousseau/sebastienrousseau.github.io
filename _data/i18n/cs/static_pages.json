@@ -1,0 +1,99 @@
+{
+  "_comment": "Czech static-page metadata — DRAFT pending native review.",
+  "404": {
+    "title": "Stránka nenalezena — Sebastien Rousseau",
+    "subtitle": "Omlouváme se, tato stránka neexistuje.",
+    "description": "Požadovaná stránka nebyla nalezena. Vraťte se na domovskou stránku nebo použijte vyhledávání.",
+    "keywords": "404, stránka nenalezena"
+  },
+  "about": {
+    "title": "O mně — Sebastien Rousseau",
+    "subtitle": "Utvářím budoucnost bankovnictví a finančních služeb strategickou integrací AI, postkvantové kryptografie a blockchainu.",
+    "description": "Sebastien Rousseau, senior bankovní technolog: aplikovaná AI, migrace na ISO 20022, postkvantová kryptografie, strukturální transformace velkoobchodních plateb.",
+    "keywords": "Sebastien Rousseau, biografie, bankovnictví, platby, AI, ISO 20022, postkvantová kryptografie"
+  },
+  "accessibility": {
+    "title": "Přístupnost — Sebastien Rousseau",
+    "subtitle": "Zavázáni k digitální přístupnosti pro osoby se zdravotním postižením.",
+    "description": "Prohlášení o přístupnosti: soulad s WCAG 2.2 AA, inkluzivní principy, zpětná vazba a kontakt pro hlášení problémů.",
+    "keywords": "přístupnost, WCAG, soulad, digitální inkluze"
+  },
+  "articles": {
+    "title": "Články — Sebastien Rousseau",
+    "subtitle": "Články o AI, postkvantové kryptografii, ISO 20022 a budoucnosti plateb.",
+    "description": "Články o aplikované AI, postkvantové kryptografii, platbách ISO 20022 a transformaci velkoobchodních plateb.",
+    "keywords": "články, výzkum, AI, postkvantová kryptografie, ISO 20022, velkoobchodní platby"
+  },
+  "contact": {
+    "title": "Kontakt — Sebastien Rousseau",
+    "subtitle": "Máte otázku nebo potřebujete poradit? Napište mi.",
+    "description": "Kontaktujte Sebastiena Rousseaua ohledně konzultací o transformaci plateb, migraci ISO 20022 nebo postkvantové strategii.",
+    "keywords": "kontakt, konzultace, platby, ISO 20022, postkvantová kryptografie"
+  },
+  "made-with-shokunin": {
+    "title": "Vytvořeno se Shokuninem — Sebastien Rousseau",
+    "subtitle": "Objevte, jak používat statický generátor nové generace.",
+    "description": "Tento web je vytvořen se Shokuninem, statickým generátorem v Rustu optimalizovaným pro výkon a SEO.",
+    "keywords": "Shokunin, SSG, Rust, výkon, SEO"
+  },
+  "made-with-static-site-generator": {
+    "title": "Vytvořeno se Static Site Generator — Sebastien Rousseau",
+    "subtitle": "Objevte, jak používat statický generátor nové generace.",
+    "description": "Tento web je generován pomocí Shokunina, rychlého statického generátoru psaného v Rustu.",
+    "keywords": "Shokunin, statický generátor, Rust, výkon"
+  },
+  "offline": {
+    "title": "Offline — Sebastien Rousseau",
+    "subtitle": "Zkontrolujte připojení a zkuste to znovu.",
+    "description": "Jste offline. Připojte se znovu pro přístup k obsahu.",
+    "keywords": "offline, PWA"
+  },
+  "papers": {
+    "title": "Publikace — Sebastien Rousseau",
+    "subtitle": "Oborové bílé knihy a aplikovaný výzkum pro vrcholový management v oblasti plateb a bezpečnosti.",
+    "description": "Články, zprávy a publikace Sebastiena Rousseaua o AI, platbách ISO 20022 a postkvantové kryptografii.",
+    "keywords": "publikace, články, zprávy, výzkum, ISO 20022, AI, postkvantová kryptografie"
+  },
+  "playlists": {
+    "title": "Playlisty — Sebastien Rousseau",
+    "subtitle": "Vybrané Spotify playlisty pro hlubokou práci, kreativitu a inženýrský mindset.",
+    "description": "Hudební a poslechový výběr Sebastiena Rousseaua.",
+    "keywords": "playlisty, hudba"
+  },
+  "privacy": {
+    "title": "Zásady ochrany osobních údajů — Sebastien Rousseau",
+    "subtitle": "Vaše soukromí je pro nás důležité.",
+    "description": "Jak tento web shromažďuje, používá a chrání vaše údaje. Anonymní měření, cookies, hosting a práva podle GDPR.",
+    "keywords": "soukromí, GDPR, cookies, osobní údaje, analytika"
+  },
+  "projects": {
+    "title": "Projekty — Sebastien Rousseau",
+    "subtitle": "Open-source projekty v Pythonu, Rustu a JavaScriptu pro budoucnost financí.",
+    "description": "Portfolio open-source knihoven, které Sebastien Rousseau udržuje pro platby, přeshraniční zúčtování a kvantově odolnou kryptografii.",
+    "keywords": "open-source, projekty, Python, Rust, platby, ISO 20022, postkvantová kryptografie"
+  },
+  "tags": {
+    "title": "Štítky — Sebastien Rousseau",
+    "subtitle": "Procházejte web podle tématu: AI, platby, postkvantová kryptografie, open source.",
+    "description": "Procházejte články podle štítku: AI, ISO 20022, blockchain, postkvantová kryptografie a další.",
+    "keywords": "štítky, tagy, navigace podle tématu"
+  },
+  "terms": {
+    "title": "Podmínky použití — Sebastien Rousseau",
+    "subtitle": "Všeobecné podmínky používání webu.",
+    "description": "Všeobecné podmínky používání webu sebastienrousseau.com: licence obsahu, omezení, ochranné známky a jurisdikce.",
+    "keywords": "podmínky, právní upozornění, licence, copyright"
+  },
+  "thanks": {
+    "title": "Děkuji — Sebastien Rousseau",
+    "subtitle": "Děkujeme za kontaktování!",
+    "description": "Děkujeme za vaši zprávu. Odpovím vám velmi brzy.",
+    "keywords": "děkuji"
+  },
+  "topics": {
+    "title": "Témata — Sebastien Rousseau",
+    "subtitle": "Články o AI, postkvantové kryptografii, ISO 20022 a budoucnosti plateb.",
+    "description": "Prozkoumejte analýzy podle tématu: aplikovaná AI, platby ISO 20022, postkvantová kryptografie a transformace velkoobchodních plateb.",
+    "keywords": "témata, AI, platby, ISO 20022, postkvantová kryptografie"
+  }
+}
