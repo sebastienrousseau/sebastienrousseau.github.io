@@ -1,11 +1,11 @@
 {
   "locale": "fr_FR",
-  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
-  "date": "April 01, 2024",
-  "subtitle": "L'outil open-source de clonage vocal de nouvelle génération",
   "banner_alt": "Bannière représentant une superposition de profils en dégradé vif",
-  "title": "OpenVoice : à la pointe de l'innovation en clonage vocal",
-  "language": "fr",
   "description": "OpenVoice, du MIT, Tsinghua et MyShell : un clonage vocal de qualité production avec contrôle du ton, de l'accent et de l'émotion — et les compromis à connaître.",
-  "keywords": "OpenVoice, clonage vocal, synthèse vocale IA, clonage vocal open source, synthèse vocale multilingue, clonage vocal instantané, contrôle de style vocal, accessibilité vocale, voix dans le divertissement, voix IA pour service client"
+  "language": "fr",
+  "title": "OpenVoice : à la pointe de l'innovation en clonage vocal",
+  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
+  "keywords": "OpenVoice, clonage vocal, synthèse vocale IA, clonage vocal open source, synthèse vocale multilingue, clonage vocal instantané, contrôle de style vocal, accessibilité vocale, voix dans le divertissement, voix IA pour service client",
+  "subtitle": "L'outil open-source de clonage vocal de nouvelle génération",
+  "date": "April 01, 2024"
 }

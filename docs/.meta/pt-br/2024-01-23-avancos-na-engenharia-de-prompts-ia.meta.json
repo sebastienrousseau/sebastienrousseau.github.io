@@ -1,11 +1,11 @@
 {
-  "description": "Explore os avances 2024 do Prompt Engineering: tendencias e técnicas innovadoras que revolucionam a tecnologia e as finanzas.",
-  "subtitle": "Rediseñar a interacción humano-máquina mediante avances em as instrucciones personalizadas",
-  "locale": "pt_BR",
-  "date": "January 23, 2024",
-  "keywords": "AI Prompt Engineering, instrucciones personalizadas, IA multipersona, chain of thought, computação quântica, IA ética, adaptive prompting, zero shot, few shot, tendencias tecnológicas IA",
-  "language": "pt-BR",
   "banner_alt": "Um hombre analizando dados em telas",
   "title": "AI Prompt Engineering 2024: técnicas que funcionan",
-  "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp"
+  "subtitle": "Rediseñar a interacción humano-máquina mediante avances em as instrucciones personalizadas",
+  "language": "pt-BR",
+  "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp",
+  "date": "January 23, 2024",
+  "description": "Explore os avances 2024 do Prompt Engineering: tendencias e técnicas innovadoras que revolucionam a tecnologia e as finanzas.",
+  "keywords": "AI Prompt Engineering, instrucciones personalizadas, IA multipersona, chain of thought, computação quântica, IA ética, adaptive prompting, zero shot, few shot, tendencias tecnológicas IA",
+  "locale": "pt_BR"
 }

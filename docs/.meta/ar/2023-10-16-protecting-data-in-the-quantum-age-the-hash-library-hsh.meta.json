@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
   "keywords": "التشفير المقاوم للكم، التشفير ما بعد الكمي، مكتبة الهاش، HSH، تجزئة كلمات المرور، اشتقاق المفاتيح، Argon2i، Bcrypt، Scrypt، الحوسبة الكمية",
-  "locale": "ar_SA",
-  "banner_alt": "رسم توضيحي إبداعي حول موضوع الحوسبة الكمية",
-  "title": "حماية البيانات في عصر الكم: مكتبة الهاش (HSH)",
   "description": "تستخدم HSH أوليات تشفيرية مقاومة للحوسبة الكمية لحماية بياناتكم، وضمان أمنها حتى في مواجهة التقدمات المستقبلية للحوسبة الكمية.",
-  "subtitle": "HSH: مكتبة هاش مقاومة للحوسبة الكمية لعصر ما بعد الكم في المصادقة.",
   "date": "Oct 16, 2023",
-  "language": "ar"
+  "locale": "ar_SA",
+  "title": "حماية البيانات في عصر الكم: مكتبة الهاش (HSH)",
+  "language": "ar",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
+  "subtitle": "HSH: مكتبة هاش مقاومة للحوسبة الكمية لعصر ما بعد الكم في المصادقة.",
+  "banner_alt": "رسم توضيحي إبداعي حول موضوع الحوسبة الكمية"
 }

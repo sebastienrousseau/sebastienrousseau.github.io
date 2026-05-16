@@ -1,11 +1,11 @@
 {
-  "locale": "it_IT",
   "keywords": "cloud, banche, multi-cloud, sovranità, DORA, AWS, Azure, GCP, conformità",
-  "banner": "https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp",
-  "banner_alt": "Architettura cloud per banche",
-  "subtitle": "Pattern, scelte e principi per i piani cloud delle istituzioni di primo livello",
-  "description": "Un'analisi delle migliori architetture cloud per le banche nel 2026: multi-cloud, sovranità dei dati, conformità, costi e roadmap di migrazione.",
+  "title": "Migliore architettura cloud per le banche nel 2026",
   "date": "May 21, 2026",
-  "language": "it-IT",
-  "title": "Migliore architettura cloud per le banche nel 2026"
+  "locale": "it_IT",
+  "description": "Un'analisi delle migliori architetture cloud per le banche nel 2026: multi-cloud, sovranità dei dati, conformità, costi e roadmap di migrazione.",
+  "subtitle": "Pattern, scelte e principi per i piani cloud delle istituzioni di primo livello",
+  "banner_alt": "Architettura cloud per banche",
+  "banner": "https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp",
+  "language": "it-IT"
 }

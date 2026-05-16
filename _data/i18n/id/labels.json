@@ -1,0 +1,15 @@
+{
+  "_comment": "Indonesian body-text labels — DRAFT pending native-speaker review. Key set MUST stay in sync with _data/i18n/en/labels.json; CI gate test_i18n_labels.py enforces parity.",
+  "Published": "Diterbitkan",
+  "Updated": "Diperbarui",
+  "min read": "menit baca",
+  "Previous": "Sebelumnya",
+  "Next": "Berikutnya",
+  "Sources & references": "Sumber & referensi",
+  "About the author": "Tentang penulis",
+  "Topics": "Topik",
+  "Contents": "Daftar isi",
+  "Estimated read time": "Perkiraan waktu baca",
+  "Article pagination": "Navigasi artikel",
+  "Link to": "Tautan ke"
+}
