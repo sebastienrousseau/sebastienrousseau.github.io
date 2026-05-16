@@ -36,6 +36,73 @@ def test_escape_xml_numeric_entities_preserved():
 
 
 # ---------------------------------------------------------------------------
+# XML feed URL repair — `_patch_block` lookup-by-title path
+# Regression guard for #32: an earlier refactor (#31) rewrote _patch_block
+# to slug-extract from the URL itself. Shokunin emits ``.../.meta/`` for
+# every per-item link, so the regex fell back to the home URL on every
+# match — producing 50 duplicate <guid>/<link> values per feed.
+# ---------------------------------------------------------------------------
+
+
+def test_patch_block_rewrites_localhost_url_using_title():
+    """RSS <item> with localhost URL gets rewritten to canonical URL."""
+    from postbuild_lib import output as out
+    block = (
+        "<item>"
+        "<title>The Best Cloud Infrastructure Architecture in 2026</title>"
+        "<link>http://127.0.0.1:8000/.meta/</link>"
+        "<guid isPermaLink=\"true\">http://127.0.0.1:8000/.meta/</guid>"
+        "</item>"
+    )
+    idx = {
+        "The Best Cloud Infrastructure Architecture in 2026":
+            "https://sebastienrousseau.com/best-cloud-2026",
+    }
+    rewritten = out._patch_block(block, idx)
+    assert "https://sebastienrousseau.com/best-cloud-2026" in rewritten
+    assert "127.0.0.1" not in rewritten
+    assert "/.meta/" not in rewritten
+
+
+def test_patch_block_no_op_when_title_not_in_index():
+    """If we can't resolve the title, leave the block untouched —
+    don't fall back to the home URL."""
+    from postbuild_lib import output as out
+    block = (
+        "<item><title>Unknown post</title>"
+        "<link>http://127.0.0.1:8000/.meta/</link></item>"
+    )
+    rewritten = out._patch_block(block, {})
+    assert rewritten == block
+
+
+def test_patch_block_decodes_xml_entities_in_title_lookup():
+    """Feed emits ``&amp;`` in titles; the index should resolve via
+    either escaped or unescaped form."""
+    from postbuild_lib import output as out
+    block = (
+        "<item><title>AI &amp; Quantum</title>"
+        "<link>http://localhost:8000/.meta/</link></item>"
+    )
+    idx = {"AI & Quantum": "https://sebastienrousseau.com/ai-quantum"}
+    rewritten = out._patch_block(block, idx)
+    assert "https://sebastienrousseau.com/ai-quantum" in rewritten
+
+
+def test_patch_block_rewrites_meta_path_on_any_host():
+    """``host/.meta/`` is rewritten even when the host isn't localhost."""
+    from postbuild_lib import output as out
+    block = (
+        "<item><title>X</title>"
+        "<link>https://example.com/.meta/</link></item>"
+    )
+    idx = {"X": "https://sebastienrousseau.com/x"}
+    rewritten = out._patch_block(block, idx)
+    assert "https://sebastienrousseau.com/x" in rewritten
+    assert "/.meta/" not in rewritten
+
+
+# ---------------------------------------------------------------------------
 # Word count
 # ---------------------------------------------------------------------------
 
