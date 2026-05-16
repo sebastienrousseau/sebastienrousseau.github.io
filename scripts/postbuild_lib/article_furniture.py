@@ -285,6 +285,20 @@ def inject_sigstore_attestation(html: str, slug: str) -> str:
     return re.sub(r'(</main>)', badge + r'\1', html, count=1)
 
 
+def _extract_article_metadata(html: str) -> tuple[list[str], str, str, int | None]:
+    """Pull the inputs ``inject_article_furniture`` needs out of the page:
+    keyword list, datePublished, dateModified, wordCount."""
+    keywords: list[str] = []
+    m = _keywords_re.search(html)
+    if m and m.group(1):
+        keywords = [k.strip() for k in m.group(1).split(",") if k.strip()]
+    dm = _BLOGPOSTING_DATES_RE.search(html)
+    date_pub, date_mod = (dm.group(1), dm.group(2)) if dm else ("", "")
+    wm = _WORDCOUNT_RE.search(html)
+    word_count = int(wm.group(1)) if wm else None
+    return keywords, date_pub, date_mod, word_count
+
+
 def inject_article_furniture(html: str) -> str:
     """Insert tag badges + meta bar between the H1 hero and the main body.
 
@@ -296,19 +310,13 @@ def inject_article_furniture(html: str) -> str:
     # Don't double-inject if a previous postbuild run already added them.
     if 'class="article-tags"' in html:
         return html
-    keywords = []
-    m = _keywords_re.search(html)
-    if m and m.group(1):
-        keywords = [k.strip() for k in m.group(1).split(",") if k.strip()]
-    dm = _BLOGPOSTING_DATES_RE.search(html)
-    date_pub, date_mod = (dm.group(1), dm.group(2)) if dm else ("", "")
-    wm = _WORDCOUNT_RE.search(html)
-    word_count = int(wm.group(1)) if wm else None
+    keywords, date_pub, date_mod, word_count = _extract_article_metadata(html)
     labels = _labels(html)
     lang = "fr" if _is_french(html) else "en"
-    badges = _render_tag_badges(keywords, labels, lang)
-    meta = _render_meta_bar(date_pub, date_mod, word_count, labels, lang)
-    fragment = badges + meta
+    fragment = (
+        _render_tag_badges(keywords, labels, lang)
+        + _render_meta_bar(date_pub, date_mod, word_count, labels, lang)
+    )
     if not fragment:
         return html
     return _HERO_RE.sub(rf'\1{fragment}\2', html, count=1)
@@ -533,41 +541,40 @@ _NAV_LINK_RE = re.compile(
 )
 
 
+def _nav_target_for_en_page(top: str) -> str:
+    """Map an EN top-level page slug to its nav-link href."""
+    if _DATED_SLUG_RE.match(top):
+        return "/articles/index.html"
+    return f"/{top}/index.html"
+
+
+def _nav_target_for_lang_page(lang: str, top: str) -> str:
+    """Map a localised top-level page slug to its nav-link href."""
+    articles_slug = _slug_maps(lang)["statics_en_to_lang"].get("articles", "articles")
+    if _DATED_SLUG_RE.match(top):
+        return f"/{lang}/{articles_slug}/index.html"
+    return f"/{lang}/{top}/index.html"
+
+
 def _nav_active_target(page: Path) -> str | None:
     """Return the nav-link href that should be marked active for this
-    page, or ``None`` if there's no obvious match (e.g. dated articles
-    map to /articles/ on EN, /<lang-articles-slug>/ on translated pages).
+    page, or ``None`` if there's no obvious match.
 
-    The match is greedy by depth: /about/ → /about/index.html;
-    /2026-05-12-…/ → /articles/index.html; /<lang>/<x>/ → /<lang>/<x>/index.html.
+    Greedy by depth: ``/about/`` → ``/about/index.html``;
+    ``/2026-05-12-…/`` → ``/articles/index.html``;
+    ``/<lang>/<x>/`` → ``/<lang>/<x>/index.html``.
     """
     rel = page.relative_to(PUBLIC).as_posix()
     if rel == "index.html":
         return "/index.html"  # home
     parts = rel.split("/")
-    # /<top>/index.html → /<top>/index.html
     if len(parts) == 2 and parts[1] == "index.html":
-        top = parts[0]
-        # Dated article → /articles/index.html
-        if _DATED_SLUG_RE.match(top):
-            return "/articles/index.html"
-        return f"/{top}/index.html"
-    # /<lang>/<top>/index.html
+        return _nav_target_for_en_page(parts[0])
     if len(parts) == 3 and parts[2] == "index.html":
         lang, top = parts[0], parts[1]
         if lang not in _all_active_non_en_langs():
             return None
-        articles_slug = _slug_maps(lang)["statics_en_to_lang"].get("articles", "articles")
-        # Localised home /lang/index.html
-        if top == "index.html":
-            return f"/{lang}/index.html"
-        # Dated article under /<lang>/ → /<lang>/<articles_slug>/
-        if _DATED_SLUG_RE.match(top):
-            return f"/{lang}/{articles_slug}/index.html"
-        return f"/{lang}/{top}/index.html"
-    # /<lang>/index.html
-    if len(parts) == 2 and parts[1] == "index.html" and parts[0] in _all_active_non_en_langs():
-        return f"/{parts[0]}/index.html"
+        return _nav_target_for_lang_page(lang, top)
     return None
 
 

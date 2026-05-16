@@ -126,43 +126,72 @@ def _current_stem(html: str) -> str | None:
     return url.rsplit("/", 1)[-1] if "/" in url else None
 
 
-def build_about_graph(html: str) -> str | None:
+def _keywords_from_html(html: str) -> list[str]:
+    """Pull and clean the comma-separated keywords meta tag."""
     m = _keywords_re.search(html)
-    if not m:
-        return None
-    keywords_raw = m.group(1)
-    if not keywords_raw:
-        return None
-    keywords = [k.strip() for k in keywords_raw.split(",") if k.strip()]
-    own_stem = _current_stem(html)
+    if not m or not m.group(1):
+        return []
+    return [k.strip() for k in m.group(1).split(",") if k.strip()]
+
+
+def _keyword_matches_entity(kw_lower: str, entity_lower: str) -> bool:
+    """True if the keyword overlaps the entity name in either direction."""
+    return kw_lower == entity_lower or entity_lower in kw_lower or kw_lower in entity_lower
+
+
+def _same_as_anchors(
+    ext_url: str, qid: str, canonical_stem: str, own_stem: str | None
+) -> list[str]:
+    """Build the ``sameAs`` list for an entity: authoritative external URL,
+    plus Wikidata Q-number anchor, plus the user's canonical post (skipped
+    when the current page IS the canonical post)."""
+    out: list[str] = [ext_url]
+    if qid:
+        out.append(f"https://www.wikidata.org/wiki/{qid}")
+    if canonical_stem and canonical_stem != own_stem:
+        out.append(f"{SITE_ROOT}/{canonical_stem}/index.html")
+    return out
+
+
+def _build_entity_node(
+    entity: str, ext_url: str, qid: str, canonical_stem: str, own_stem: str | None
+) -> dict[str, object]:
+    same_as = _same_as_anchors(ext_url, qid, canonical_stem, own_stem)
+    return {
+        "@type": "Thing",
+        "name": entity,
+        "sameAs": same_as if len(same_as) > 1 else same_as[0],
+    }
+
+
+def _match_entities_for_keywords(
+    keywords: list[str], own_stem: str | None
+) -> list[dict[str, object]]:
+    """Walk the keyword list once and emit one entity node per first match."""
     seen: set[str] = set()
     matches: list[dict[str, object]] = []
     for kw in keywords:
-        kwl = kw.lower()
+        kw_l = kw.lower()
         for entity, (ext_url, qid, canonical_stem) in ENTITY_AUTHORITY.items():
-            ent_l = entity.lower()
-            if (kwl == ent_l or ent_l in kwl or kwl in ent_l) and entity not in seen:
+            if entity in seen:
+                continue
+            if _keyword_matches_entity(kw_l, entity.lower()):
                 seen.add(entity)
-                same_as: list[str] = [ext_url]
-                # Wikidata Q-number as a second sameAs anchor — gives engines
-                # that reconcile on the Wikidata knowledge graph a precise pin.
-                if qid:
-                    same_as.append(f"https://www.wikidata.org/wiki/{qid}")
-                # The user's own canonical post as a third sameAs anchor —
-                # tells crawlers this site is also an authority. Skipped when
-                # the current page IS the canonical post (no self-link).
-                if canonical_stem and canonical_stem != own_stem:
-                    same_as.append(f"{SITE_ROOT}/{canonical_stem}/index.html")
-                node: dict[str, object] = {
-                    "@type": "Thing",
-                    "name": entity,
-                    "sameAs": same_as if len(same_as) > 1 else same_as[0],
-                }
-                matches.append(node)
+                matches.append(_build_entity_node(entity, ext_url, qid, canonical_stem, own_stem))
                 break
+    return matches
+
+
+def build_about_graph(html: str) -> str | None:
+    """Build the BlogPosting ``about`` + ``mentions`` JSON-LD fragment.
+    First entity match becomes the primary subject; up to five more land
+    in ``mentions``. Returns None when no keyword resolves to an entity."""
+    keywords = _keywords_from_html(html)
+    if not keywords:
+        return None
+    matches = _match_entities_for_keywords(keywords, _current_stem(html))
     if not matches:
         return None
-    # First match is the primary "about" subject; the rest land in "mentions".
     import json as _json
     primary = matches[0]
     rest = matches[1:6]  # cap secondary entities at 5 to keep schema lean
@@ -478,33 +507,41 @@ def _lang_to_og_locale(lang: str) -> str:
     return f"{lang.lower()}_{lang.upper()}"
 
 
+def _page_canonical_url(page: Path) -> str:
+    """Canonical URL for a built page, with the home page collapsing
+    ``/index.html`` to ``/``."""
+    rel = page.relative_to(PUBLIC).as_posix()
+    return f"{BASE_URL}/" if rel == "index.html" else f"{BASE_URL}/{rel}"
+
+
+def _resolve_og_banner(html: str, present: set[str]) -> list[str]:
+    """If ``og:image`` is missing, return the meta-tag additions (image +
+    matching twitter:image) needed to populate it."""
+    if "og:image" in present:
+        return []
+    img_m = _blogposting_image_re.search(html)
+    banner = (img_m.group(1) if img_m else "") or \
+        "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+    out = [f'<meta property="og:image" content="{banner}">']
+    if "twitter:image" not in present:
+        out.append(f'<meta name="twitter:image" content="{banner}">')
+    return out
+
+
 def inject_og_completeness(page: Path, html: str) -> str:
     """Ensure og:image / og:url / og:locale / og:site_name are present."""
-    rel = page.relative_to(PUBLIC).as_posix()
-    page_url = f"{BASE_URL}/{rel}" if rel != "index.html" else f"{BASE_URL}/"
-
     lm = _HTML_LANG_RE.search(html)
     locale = _lang_to_og_locale(lm.group(1) if lm else "en-GB")
-
     present = {m.group(1).lower() for m in _OG_TAG_RE.finditer(html)}
-    additions: list[str] = []
 
+    additions: list[str] = []
     if "og:url" not in present:
-        additions.append(f'<meta property="og:url" content="{page_url}">')
+        additions.append(f'<meta property="og:url" content="{_page_canonical_url(page)}">')
     if "og:locale" not in present:
         additions.append(f'<meta property="og:locale" content="{locale}">')
     if "og:site_name" not in present:
         additions.append(f'<meta property="og:site_name" content="{SITE_NAME}">')
-
-    if "og:image" not in present:
-        # Try to lift the banner from the BlogPosting graph; fall back to
-        # the site default portrait.
-        img_m = _blogposting_image_re.search(html)
-        banner = (img_m.group(1) if img_m else "") or \
-            "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
-        additions.append(f'<meta property="og:image" content="{banner}">')
-        if "twitter:image" not in present:
-            additions.append(f'<meta name="twitter:image" content="{banner}">')
+    additions.extend(_resolve_og_banner(html, present))
 
     if not additions:
         return html

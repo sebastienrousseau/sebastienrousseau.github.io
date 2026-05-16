@@ -88,6 +88,9 @@ public/
 # Lighthouse CI run output (uploaded to LHCI temp storage instead)
 .lighthouseci/
 
+# jscpd duplication-detector report (local-only)
+jscpd-report/
+
 # Local audit artefacts (Lighthouse + pa11y dumps under audits/lh/)
 audits/lh/
 .coverage

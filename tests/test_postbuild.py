@@ -480,6 +480,748 @@ def test_inject_anchor_empty_slug_gets_section_fallback():
 
 
 # ---------------------------------------------------------------------------
+# Article furniture renderers (tag badges, meta bar, prev/next nav)
+# ---------------------------------------------------------------------------
+
+
+def test_render_tag_badges_empty_returns_empty_string():
+    from postbuild_lib.article_furniture import LABELS_EN, _render_tag_badges
+    assert _render_tag_badges([], LABELS_EN) == ""
+
+
+def test_render_tag_badges_en_uses_tags_prefix():
+    from postbuild_lib.article_furniture import LABELS_EN, _render_tag_badges
+    out = _render_tag_badges(["quantum", "ISO 20022"], LABELS_EN, lang="en")
+    assert '/tags/index.html#h3-quantum' in out
+    assert '/tags/index.html#h3-iso-20022' in out
+    assert 'rel="tag"' in out
+    assert 'aria-label="Topics"' in out
+
+
+def test_render_tag_badges_fr_uses_etiquettes_prefix():
+    from postbuild_lib.article_furniture import LABELS_FR, _render_tag_badges
+    out = _render_tag_badges(["quantique"], LABELS_FR, lang="fr")
+    assert '/fr/etiquettes/index.html#h3-quantique' in out
+
+
+def test_render_meta_bar_includes_author_and_dates():
+    from postbuild_lib.article_furniture import LABELS_EN, _render_meta_bar
+    out = _render_meta_bar(
+        date_pub="2026-05-12T08:00:00+01:00",
+        date_mod="2026-05-15T08:00:00+01:00",
+        word_count=440,
+        labels=LABELS_EN,
+        lang="en",
+    )
+    assert 'class="article-author"' in out
+    assert 'class="meta-pub"' in out
+    assert 'class="meta-rev"' in out  # mod > pub → revised stamp present
+    assert '2 min read' in out  # 440 words / 220 wpm → 2 min
+
+
+def test_render_meta_bar_suppresses_updated_when_same_day():
+    """If date_mod is the same day as date_pub, the 'Updated' stamp is suppressed."""
+    from postbuild_lib.article_furniture import LABELS_EN, _render_meta_bar
+    out = _render_meta_bar(
+        date_pub="2026-05-12T08:00:00+01:00",
+        date_mod="2026-05-12T18:00:00+01:00",
+        word_count=None,
+        labels=LABELS_EN,
+    )
+    assert 'class="meta-pub"' in out
+    assert 'class="meta-rev"' not in out
+
+
+def test_render_meta_bar_french_uses_localised_author_url():
+    from postbuild_lib.article_furniture import LABELS_FR, _render_meta_bar
+    out = _render_meta_bar(
+        date_pub="2026-05-12T08:00:00+01:00",
+        date_mod="",
+        word_count=220,
+        labels=LABELS_FR,
+        lang="fr",
+    )
+    assert 'href="/fr/a-propos/index.html"' in out
+    assert 'min de lecture' in out
+
+
+# ---------------------------------------------------------------------------
+# inject_sigstore_attestation
+# ---------------------------------------------------------------------------
+
+
+def test_inject_sigstore_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_sigstore_attestation
+    html = '<p>plain page, no BlogPosting graph</p>'
+    assert inject_sigstore_attestation(html, "post-slug") == html
+
+
+def test_inject_sigstore_no_op_when_bundle_missing(tmp_path, monkeypatch):
+    """Without a sigstore bundle on disk, the injector is a no-op."""
+    from postbuild_lib import article_furniture as af
+    html = (
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        '<main></main>'
+    )
+    monkeypatch.chdir(tmp_path)  # no _data/sigstore/* tree → no bundle
+    assert af.inject_sigstore_attestation(html, "post-slug") == html
+
+
+# ---------------------------------------------------------------------------
+# _convert_faq_to_qa — FAQ → <details qa-item> rewrite
+# ---------------------------------------------------------------------------
+
+
+def test_convert_faq_to_qa_rewrites_strong_q_a_pattern():
+    from postbuild_lib.article_furniture import _convert_faq_to_qa
+    html = (
+        '<main><div class="wrap">'
+        '<h2 id="frequently-asked-questions">FAQ</h2>'
+        '<p><strong>Q1: Is this hot?</strong></p>'
+        '<p>Yes, very.</p>'
+        '<p><strong>Q2: Anything else?</strong></p>'
+        '<p>Maybe later.</p>'
+        '<h2 id="next">Next section</h2>'
+        '</div></main>'
+    )
+    out = _convert_faq_to_qa(html)
+    assert '<details class="qa-item">' in out
+    assert '<summary class="qa-q">Q1: Is this hot?</summary>' in out
+    assert '<summary class="qa-q">Q2: Anything else?</summary>' in out
+    assert '<section class="qa-a"><p>Yes, very.</p></section>' in out
+
+
+def test_convert_faq_to_qa_no_op_without_faq_h2():
+    from postbuild_lib.article_furniture import _convert_faq_to_qa
+    html = '<main><div class="wrap"><h2 id="intro">Hello</h2><p>Body.</p></div></main>'
+    assert _convert_faq_to_qa(html) == html
+
+
+# ---------------------------------------------------------------------------
+# Citations + sources list
+# ---------------------------------------------------------------------------
+
+
+def test_extract_citations_picks_authoritative_outbound_only():
+    """Only links to ``CITATION_AUTHORITIES`` hosts make it into the citation graph."""
+    from postbuild_lib.article_furniture import _extract_citations
+    html = (
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        '<main><div class="wrap">'
+        '<a href="/internal/">internal</a>'
+        '<a href="https://example.com/page">non-authority</a>'
+        '<a href="https://wikipedia.org/wiki/Quantum">External wiki</a>'
+        '<a href="https://nist.gov/pubs">NIST</a>'
+        '<a href="#anchor">anchor</a>'
+        '</div></main>'
+    )
+    cites = _extract_citations(html)
+    urls = [c['url'] for c in cites]
+    assert 'https://wikipedia.org/wiki/Quantum' in urls
+    assert 'https://nist.gov/pubs' in urls
+    assert 'https://example.com/page' not in urls
+    assert not any(u.startswith(('/', '#')) for u in urls)
+
+
+def test_inject_citations_no_op_without_outbound_links():
+    from postbuild_lib.article_furniture import inject_citations
+    html = (
+        '<script type="application/ld+json">{"@type":"BlogPosting","speakable":{}}</script>'
+        '<main><div class="wrap"><a href="/internal/">x</a></div></main>'
+    )
+    assert inject_citations(html) == html
+
+
+# ---------------------------------------------------------------------------
+# GitHub stats renderer (`_render_gh_badges`)
+# ---------------------------------------------------------------------------
+
+
+def test_render_gh_badges_full_payload_emits_four_pills():
+    """Stars + forks + license + pushed_at all produce a pill."""
+    from datetime import UTC, datetime, timedelta
+
+    from postbuild_lib.github_stats import _render_gh_badges
+    info = {
+        "stars": 121,
+        "forks": 9,
+        "license": "MIT",
+        "pushed_at": (datetime.now(tz=UTC) - timedelta(days=3)).isoformat(),
+    }
+    out = _render_gh_badges(info, lang="en")
+    assert 'class="gh-stat gh-stars"' in out
+    assert 'class="gh-stat gh-forks"' in out
+    assert 'class="gh-stat gh-license"' in out
+    assert 'class="gh-stat gh-pushed"' in out
+    assert "121" in out
+    assert "MIT" in out
+
+
+def test_render_gh_badges_drops_license_when_noassertion():
+    """NOASSERTION / OTHER / "" license values are filtered out."""
+    from postbuild_lib.github_stats import _render_gh_badges
+    info = {"stars": 1, "forks": 0, "license": "NOASSERTION", "pushed_at": ""}
+    out = _render_gh_badges(info, lang="en")
+    assert 'gh-license' not in out
+
+
+def test_render_gh_badges_empty_payload_returns_empty_string():
+    from postbuild_lib.github_stats import _render_gh_badges
+    out = _render_gh_badges({"stars": 0, "forks": 0, "license": "", "pushed_at": ""})
+    assert out == ""
+
+
+def test_normalise_url_strips_scheme_www_trailing_slash():
+    from postbuild_lib.github_stats import _normalise_url
+    assert _normalise_url("https://www.example.com/") == "example.com"
+    assert _normalise_url("HTTP://Example.COM/foo/") == "example.com/foo"
+    assert _normalise_url("https://example.com") == "example.com"
+
+
+def test_lookup_by_slug_href_hits_index():
+    from postbuild_lib.github_stats import _lookup_by_slug_href
+    # The regex captures the full ``sebastienrousseau/<repo>`` group, so the
+    # index key has to match that exactly.
+    idx = {"sebastienrousseau/foo": {"name": "foo", "stars": 10}}
+    inner = '<a href="https://github.com/sebastienrousseau/foo">…</a>'
+    assert _lookup_by_slug_href(inner, idx) == idx["sebastienrousseau/foo"]
+
+
+def test_lookup_by_slug_href_misses_when_repo_not_tracked():
+    from postbuild_lib.github_stats import _lookup_by_slug_href
+    idx = {"sebastienrousseau/bar": {"name": "bar"}}
+    inner = '<a href="https://github.com/sebastienrousseau/foo">…</a>'
+    assert _lookup_by_slug_href(inner, idx) is None
+
+
+def test_lookup_by_homepage_matches_normalised_url():
+    """Homepage URL and card href normalise to the same key (scheme + www stripped)."""
+    from postbuild_lib.github_stats import _lookup_by_homepage
+    idx = {"foo": {"name": "foo", "homepage": "https://www.foo-project.io/"}}
+    inner = '<a href="https://foo-project.io">read more</a>'
+    assert _lookup_by_homepage(inner, idx) == idx["foo"]
+
+
+def test_lookup_by_h3_title_matches_case_insensitive():
+    from postbuild_lib.github_stats import _lookup_by_h3_title
+    idx = {"foo": {"name": "Foo"}}
+    inner = '<h3><a>foo</a></h3>'
+    assert _lookup_by_h3_title(inner, idx) == idx["foo"]
+
+
+def test_inject_github_stats_no_op_without_cards():
+    from postbuild_lib.github_stats import inject_github_stats
+    html = '<p>no newsroom cards here</p>'
+    assert inject_github_stats(html, {"foo": {"stars": 1}}) == html
+
+
+def test_inject_github_stats_no_op_with_empty_index():
+    from postbuild_lib.github_stats import inject_github_stats
+    html = '<article class="newsroom-card"><a href="https://github.com/sebastienrousseau/foo">x</a></article>'
+    assert inject_github_stats(html, {}) == html
+
+
+def test_relative_time_handles_each_bucket():
+    """Walk through the duration table — seconds, minutes, hours, days, weeks, months, years."""
+    from datetime import UTC, datetime, timedelta
+
+    from postbuild_lib.github_stats import _relative_time
+    now = datetime.now(tz=UTC)
+    cases = [
+        timedelta(seconds=30),
+        timedelta(minutes=5),
+        timedelta(hours=3),
+        timedelta(days=2),
+        timedelta(weeks=2),
+        timedelta(days=120),
+        timedelta(days=900),
+    ]
+    for td in cases:
+        ts = (now - td).isoformat()
+        assert _relative_time(ts) != ""
+
+
+# ---------------------------------------------------------------------------
+# seo.inject_about + _build_howto_jsonld
+# ---------------------------------------------------------------------------
+
+
+def test_inject_about_no_op_when_no_keyword_matches():
+    """BlogPosting keywords that match no ENTITY_AUTHORITY → unchanged."""
+    html = (
+        '<script type="application/ld+json">'
+        '{"@type":"BlogPosting","headline":"X","keywords":"basketweaving, ceramics"}'
+        '</script>'
+    )
+    assert pb.inject_about(html) == html
+
+
+def test_inject_about_injects_about_field_for_known_entity():
+    """A keyword that maps to ENTITY_AUTHORITY produces an ``about`` field."""
+    html = (
+        '<script type="application/ld+json">'
+        '{"@type":"BlogPosting","keywords":"post-quantum cryptography, banking","headline":"X"}'
+        '</script>'
+    )
+    out = pb.inject_about(html)
+    assert '"about":' in out
+    assert '"@type":"Thing"' in out
+
+
+def test_inject_howto_no_op_when_no_resource_marker():
+    """Pages without the ``data-resource-howto`` marker are untouched."""
+    from pathlib import Path as _P
+    html = '<p>regular content</p>'
+    assert pb.inject_howto(_P("public/index.html"), html) == html
+
+
+# ---------------------------------------------------------------------------
+# inject_anchor_links_and_toc — happy path + ToC
+# ---------------------------------------------------------------------------
+
+
+def test_inject_anchor_links_emits_anchor_per_heading():
+    from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+    html = (
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        '<main><div class="wrap">'
+        '<h2>Intro</h2><p>body</p>'
+        '<h2>Setup</h2><p>body</p>'
+        '<h3>Subsection</h3>'
+        '</div></main>'
+    )
+    out = inject_anchor_links_and_toc(html)
+    assert out.count('class="heading-anchor"') == 3
+    assert 'href="#intro"' in out
+    assert 'href="#setup"' in out
+    assert 'href="#subsection"' in out
+
+
+def test_inject_anchor_renders_toc_when_5_or_more_h2():
+    """≥ 5 H2s triggers the ToC card."""
+    from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+    body = "".join(f"<h2>Section {i}</h2>" for i in range(1, 6))
+    html = (
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        f'<main><div class="wrap">{body}</div></main>'
+    )
+    out = inject_anchor_links_and_toc(html)
+    assert 'class="article-toc"' in out
+    assert out.count('<li><a href="#section-') == 5
+
+
+def test_inject_anchor_omits_toc_when_fewer_than_5_h2():
+    from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+    html = (
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        '<main><div class="wrap"><h2>One</h2><h2>Two</h2></div></main>'
+    )
+    out = inject_anchor_links_and_toc(html)
+    assert 'class="article-toc"' not in out
+
+
+def test_inject_anchor_no_op_without_blogposting():
+    from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+    html = '<main><div class="wrap"><h2>X</h2></div></main>'
+    assert inject_anchor_links_and_toc(html) == html
+
+
+# ---------------------------------------------------------------------------
+# inject_prev_next_nav + build_post_nav_index
+# ---------------------------------------------------------------------------
+
+
+def test_build_post_nav_index_chronological_order(tmp_path, monkeypatch):
+    """Posts sorted oldest→newest; each entry maps to (prev, next)."""
+    monkeypatch.chdir(tmp_path)
+    pages = []
+    for stem, title in [
+        ("2026-05-12-a", "First"), ("2026-05-13-b", "Middle"), ("2026-05-14-c", "Last"),
+    ]:
+        d = tmp_path / "public" / stem
+        d.mkdir(parents=True)
+        (d / "index.html").write_text(
+            '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+            f'<section class="ap-hero"><h1>{title}</h1></section>',
+            encoding="utf-8",
+        )
+        pages.append(d / "index.html")
+    from postbuild_lib.article_furniture import build_post_nav_index
+    idx = build_post_nav_index(pages)
+    # Middle post has both prev and next
+    assert idx["2026-05-13-b"][0] == ("2026-05-12-a", "First")
+    assert idx["2026-05-13-b"][1] == ("2026-05-14-c", "Last")
+    # First has no prev
+    assert idx["2026-05-12-a"][0] is None
+    # Last has no next
+    assert idx["2026-05-14-c"][1] is None
+
+
+# ---------------------------------------------------------------------------
+# inject_mermaid
+# ---------------------------------------------------------------------------
+
+
+def test_inject_mermaid_no_op_when_no_mermaid_block():
+    from postbuild_lib.article_furniture import inject_mermaid
+    html = '<pre><code>plain code</code></pre>'
+    assert inject_mermaid(html) == html
+
+
+def test_inject_mermaid_converts_fenced_block():
+    from postbuild_lib.article_furniture import inject_mermaid
+    html = (
+        '<meta http-equiv="Content-Security-Policy" content="script-src \'self\'">'
+        '<pre><code class="language-mermaid">graph TD; A--&gt;B</code></pre>'
+    )
+    out = inject_mermaid(html)
+    assert '<pre class="mermaid">' in out
+    assert 'graph TD' in out
+    # CSP widened to allow the Mermaid CDN import
+    assert 'cdn.jsdelivr.net' in out
+
+
+# ---------------------------------------------------------------------------
+# inject_sources_list
+# ---------------------------------------------------------------------------
+
+
+def test_inject_sources_list_renders_aside_with_authoritative_links():
+    from postbuild_lib.article_furniture import inject_sources_list
+    html = (
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        '<main><div class="wrap">'
+        '<a href="https://nist.gov/pub1">NIST 1</a>'
+        '<a href="https://wikipedia.org/wiki/X">Wiki</a>'
+        '</div></main>'
+    )
+    out = inject_sources_list(html)
+    assert 'class="article-sources"' in out
+    assert 'nist.gov' in out
+
+
+def test_inject_sources_list_no_op_without_outbound_links():
+    from postbuild_lib.article_furniture import inject_sources_list
+    html = (
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        '<main><div class="wrap"><p>no links</p></div></main>'
+    )
+    assert inject_sources_list(html) == html
+
+
+# ---------------------------------------------------------------------------
+# Lang helpers — _resolve_en_slug, _alternates_for_en_slug
+# ---------------------------------------------------------------------------
+
+
+def test_resolve_en_slug_static_pages_use_static_map():
+    from postbuild_lib.article_furniture import _resolve_en_slug
+    # "about" → static EN page. FR slug for "about" is "a-propos".
+    # When given the FR slug, _resolve_en_slug returns the EN canonical.
+    assert _resolve_en_slug("a-propos", "fr") == "about"
+
+
+def test_resolve_en_slug_returns_none_for_unknown_slug():
+    from postbuild_lib.article_furniture import _resolve_en_slug
+    assert _resolve_en_slug("totally-unknown-slug", "fr") is None
+
+
+def test_all_active_non_en_langs_includes_fr_de_ar():
+    from postbuild_lib.article_furniture import _all_active_non_en_langs
+    codes = _all_active_non_en_langs()
+    assert "fr" in codes
+    assert "de" in codes
+    assert "ar" in codes
+
+
+# ---------------------------------------------------------------------------
+# inject_speculation_rules
+# ---------------------------------------------------------------------------
+
+
+def test_inject_speculation_rules_no_op_when_already_present():
+    from postbuild_lib.article_furniture import inject_speculation_rules
+    html = '<head><script type="speculationrules">{}</script></head>'
+    assert inject_speculation_rules(html) == html
+
+
+def test_inject_speculation_rules_inserts_when_missing():
+    from postbuild_lib.article_furniture import inject_speculation_rules
+    html = '<head><meta charset="utf-8"></head><body></body>'
+    out = inject_speculation_rules(html)
+    assert '<script type="speculationrules">' in out
+
+
+# ---------------------------------------------------------------------------
+# inject_nav_active + _nav_active_target dispatch
+# ---------------------------------------------------------------------------
+
+
+def test_nav_active_target_home_en():
+    from pathlib import Path as _P
+
+    from postbuild_lib.article_furniture import _nav_active_target
+    assert _nav_active_target(_P("public/index.html")) == "/index.html"
+
+
+def test_nav_active_target_top_static_en():
+    from pathlib import Path as _P
+
+    from postbuild_lib.article_furniture import _nav_active_target
+    assert _nav_active_target(_P("public/about/index.html")) == "/about/index.html"
+
+
+def test_nav_active_target_dated_article_maps_to_articles_hub():
+    from pathlib import Path as _P
+
+    from postbuild_lib.article_furniture import _nav_active_target
+    p = _P("public/2026-05-12-some-article/index.html")
+    assert _nav_active_target(p) == "/articles/index.html"
+
+
+def test_nav_active_target_returns_none_for_unknown_lang():
+    from pathlib import Path as _P
+
+    from postbuild_lib.article_furniture import _nav_active_target
+    # /xx/foo/ — xx is not a registered language
+    p = _P("public/xx/foo/index.html")
+    assert _nav_active_target(p) is None
+
+
+def test_inject_nav_active_marks_match_and_clears_others():
+    from pathlib import Path as _P
+
+    from postbuild_lib.article_furniture import inject_nav_active
+    html = (
+        '<header>'
+        '<a href="/about/index.html">About</a>'
+        '<a href="/articles/index.html" aria-current="page">Articles</a>'
+        '</header>'
+    )
+    out = inject_nav_active(html, _P("public/about/index.html"))
+    assert 'aria-current="page"' in out
+    # only the /about/ link should have the marker
+    assert out.count('aria-current="page"') == 1
+    # The /about/ link gets it, the /articles/ link loses it
+    about_seg = out[out.find('href="/about'): out.find('Articles')]
+    articles_seg = out[out.find('Articles'):]
+    assert 'aria-current' in about_seg
+    assert 'aria-current' not in articles_seg
+
+
+# ---------------------------------------------------------------------------
+# stamp_image_dimensions — width/height + fetchpriority for LCP / lazy below
+# ---------------------------------------------------------------------------
+
+
+def test_stamp_image_dimensions_first_image_gets_fetchpriority_high():
+    html = '<body><img src="https://example.com/banner.webp" alt="x"></body>'
+    out, n = pb.stamp_image_dimensions(html)
+    assert n == 1
+    assert 'fetchpriority="high"' in out
+    assert 'width="' in out
+    assert 'height="' in out
+
+
+def test_stamp_image_dimensions_subsequent_images_get_lazy_async():
+    html = (
+        '<img src="https://example.com/1.webp" alt="hero">'
+        '<img src="https://example.com/2.webp" alt="below">'
+    )
+    out, n = pb.stamp_image_dimensions(html)
+    assert n == 2
+    first_img = out[: out.find("<img", 5)]
+    second_img = out[out.find("<img", 5):]
+    assert 'fetchpriority="high"' in first_img
+    assert 'fetchpriority="high"' not in second_img
+    assert 'loading="lazy"' in second_img
+    assert 'decoding="async"' in second_img
+
+
+def test_stamp_image_dimensions_uses_known_size_for_personal_portrait():
+    """The personal portrait is registered in _IMG_DIMS as 162×162."""
+    html = '<img src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" alt="x">'
+    out, _ = pb.stamp_image_dimensions(html)
+    assert 'width="162"' in out
+    assert 'height="162"' in out
+
+
+def test_stamp_image_dimensions_idempotent_when_attrs_already_present():
+    """Images that already have w/h/loading/decoding aren't rewritten."""
+    html = (
+        '<img src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" '
+        'width="162" height="162" loading="lazy" decoding="async" '
+        'fetchpriority="high" alt="x">'
+    )
+    out, _ = pb.stamp_image_dimensions(html)
+    # First-pass idempotent: no duplicated attributes
+    assert out.count('width="162"') == 1
+
+
+# ---------------------------------------------------------------------------
+# write_json_feed (JSON Feed 1.1)
+# ---------------------------------------------------------------------------
+
+
+def test_write_json_feed_emits_valid_feed_at_target(tmp_path, monkeypatch):
+    """Writes a JSON Feed 1.1 with version + items from _posts/."""
+    monkeypatch.chdir(tmp_path)
+    posts = tmp_path / "_posts"
+    posts.mkdir()
+    (posts / "2026-05-12-test-post.md").write_text(
+        '---\ntitle: "Test post"\ndate: "May 12, 2026"\n'
+        'description: "Body description"\nbanner: "https://x/banner.webp"\n'
+        'keywords: "quantum, ai"\n---\nBody.\n',
+        encoding="utf-8",
+    )
+    public = tmp_path / "public"
+    public.mkdir()
+    from postbuild_lib.output import write_json_feed
+    assert write_json_feed(public) is True
+    import json as _json
+    feed = _json.loads((public / "feed.json").read_text())
+    assert feed["version"].startswith("https://jsonfeed.org/version/")
+    assert feed["language"] == "en-GB"
+    assert len(feed["items"]) == 1
+    item = feed["items"][0]
+    assert item["title"] == "Test post"
+    assert item["image"] == "https://x/banner.webp"
+    assert item["tags"] == ["quantum", "ai"]
+
+
+def test_write_json_feed_skips_posts_without_title_or_bad_date(tmp_path, monkeypatch):
+    monkeypatch.chdir(tmp_path)
+    posts = tmp_path / "_posts"
+    posts.mkdir()
+    (posts / "2026-05-12-no-title.md").write_text(
+        '---\ndate: "May 12, 2026"\n---\n', encoding="utf-8"
+    )
+    (posts / "2026-05-13-bad-date.md").write_text(
+        '---\ntitle: "X"\ndate: "not-a-date"\n---\n', encoding="utf-8"
+    )
+    public = tmp_path / "public"
+    public.mkdir()
+    from postbuild_lib.output import write_json_feed
+    write_json_feed(public)
+    import json as _json
+    feed = _json.loads((public / "feed.json").read_text())
+    assert feed["items"] == []
+
+
+# ---------------------------------------------------------------------------
+# build_llms_full_txt
+# ---------------------------------------------------------------------------
+
+
+def test_build_llms_full_txt_emits_header_and_body_blocks(tmp_path):
+    """Output starts with an H1 and contains every page body."""
+    public = tmp_path / "public"
+    (public / "about").mkdir(parents=True)
+    (public / "about" / "index.html").write_text(
+        '<!doctype html><html lang="en-GB"><head><title>About</title>'
+        '<meta content="bio" name=description></head>'
+        '<body><main><h1>About</h1><p>Bio body content.</p></main></body></html>',
+        encoding="utf-8",
+    )
+    from postbuild_lib.output import build_llms_full_txt
+    out = build_llms_full_txt(public)
+    assert out.startswith("# Sebastien Rousseau") or "About" in out
+
+
+# ---------------------------------------------------------------------------
+# build_lastmod_index + refresh_sitemap_lastmod
+# ---------------------------------------------------------------------------
+
+
+def test_build_lastmod_index_prefers_last_reviewed(tmp_path, monkeypatch):
+    monkeypatch.chdir(tmp_path)
+    posts = tmp_path / "_posts"
+    posts.mkdir()
+    (posts / "2026-05-12-x.md").write_text(
+        '---\ntitle: "X"\ndate: "May 12, 2026"\nlast_reviewed: "2026-05-15"\n---\n',
+        encoding="utf-8",
+    )
+    from postbuild_lib.output import build_lastmod_index
+    idx = build_lastmod_index()
+    assert idx["2026-05-12-x"] == "2026-05-15"
+
+
+def test_build_lastmod_index_falls_back_to_date(tmp_path, monkeypatch):
+    monkeypatch.chdir(tmp_path)
+    posts = tmp_path / "_posts"
+    posts.mkdir()
+    (posts / "2026-05-12-x.md").write_text(
+        '---\ntitle: "X"\ndate: "May 12, 2026"\n---\n', encoding="utf-8"
+    )
+    from postbuild_lib.output import build_lastmod_index
+    idx = build_lastmod_index()
+    assert idx["2026-05-12-x"] == "2026-05-12"
+
+
+def test_build_lastmod_index_returns_empty_when_no_posts_dir(tmp_path, monkeypatch):
+    monkeypatch.chdir(tmp_path)
+    from postbuild_lib.output import build_lastmod_index
+    assert build_lastmod_index() == {}
+
+
+def test_refresh_sitemap_lastmod_no_op_when_file_missing(tmp_path):
+    from postbuild_lib.output import refresh_sitemap_lastmod
+    assert refresh_sitemap_lastmod(tmp_path / "missing.xml", {}) == 0
+
+
+def test_refresh_sitemap_lastmod_rewrites_existing_entry(tmp_path, monkeypatch):
+    """Existing ``<lastmod>`` for a tracked post is replaced with the index value."""
+    monkeypatch.chdir(tmp_path)
+    # No _posts dir means _splice_fr_urls only adds the home + static slugs
+    sitemap = tmp_path / "sitemap.xml"
+    sitemap.write_text(
+        '<?xml version="1.0"?><urlset>'
+        '<url><loc>https://sebastienrousseau.com/2026-05-12-x/</loc>'
+        '<lastmod>2026-01-01</lastmod></url>'
+        '</urlset>',
+        encoding="utf-8",
+    )
+    from postbuild_lib.output import refresh_sitemap_lastmod
+    n = refresh_sitemap_lastmod(sitemap, {"2026-05-12-x": "2026-05-15"})
+    assert n == 1
+    out = sitemap.read_text(encoding="utf-8")
+    assert "<lastmod>2026-05-15</lastmod>" in out
+
+
+# ---------------------------------------------------------------------------
+# shrink_news_sitemap end-to-end
+# ---------------------------------------------------------------------------
+
+
+def test_shrink_news_sitemap_no_op_when_file_missing(tmp_path):
+    from postbuild_lib.output import shrink_news_sitemap
+    assert shrink_news_sitemap(tmp_path) == 0
+
+
+def test_shrink_news_sitemap_rewrites_long_title(tmp_path):
+    nsm = tmp_path / "news-sitemap.xml"
+    long_title = "A " * 60  # ~120 chars
+    nsm.write_text(
+        f'<urlset><url><news:news><news:title>{long_title}</news:title>'
+        '<news:keywords>a,b,c,d,e,f,g,h,i,j,k,l,m</news:keywords>'
+        '</news:news></url></urlset>',
+        encoding="utf-8",
+    )
+    from postbuild_lib.output import shrink_news_sitemap
+    assert shrink_news_sitemap(tmp_path) == 1
+    out = nsm.read_text(encoding="utf-8")
+    # Title clipped to ≤ 80 chars
+    import re as _re
+    m = _re.search(r"<news:title>([\s\S]*?)</news:title>", out)
+    assert m is not None
+    assert len(m.group(1)) <= 80
+    # Keywords trimmed to 10 items
+    m2 = _re.search(r"<news:keywords>([\s\S]*?)</news:keywords>", out)
+    assert m2 is not None
+    assert len([k for k in m2.group(1).split(",") if k.strip()]) == 10
+
+
+# ---------------------------------------------------------------------------
 # Asset-URL fingerprint stamping — guards stale CDN cache after a content change
 # ---------------------------------------------------------------------------
 
