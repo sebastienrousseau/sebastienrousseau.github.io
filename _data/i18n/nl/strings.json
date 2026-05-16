@@ -1,0 +1,65 @@
+{
+  "_comment": "Dutch UI strings — DRAFT pending native-speaker review. Key set MUST stay in sync with _data/i18n/en/strings.json — CI gate test_i18n_strings.py enforces parity. Formal u-vorm (banking register). NL text expansion vs EN is typically +20-25%; verify with visual diff before flipping Language(\"nl\", active=True).",
+
+  "nav.aria.skipToMain": "Naar hoofdinhoud gaan",
+  "nav.aria.toggleNav": "Navigatie omschakelen",
+  "nav.aria.toggleNavTitle": "Navigatie omschakelen",
+  "nav.aria.primary": "Hoofdnavigatie",
+  "nav.aria.darkTheme": "Donker thema inschakelen",
+  "nav.aria.lightTheme": "Licht thema inschakelen",
+  "nav.aria.themeToggleTitle": "Thema wisselen",
+  "nav.aria.searchKbd": "Zoeken (Cmd of Ctrl + K)",
+  "nav.aria.searchTitle": "Zoeken (⌘K)",
+  "nav.aria.contactCTA": "Neem contact op",
+  "nav.contactCTA": "Neem contact op ›",
+  "nav.aria.brandHome": "Startpagina van Sebastien Rousseau",
+  "nav.aria.backToTop": "Naar boven",
+
+  "search.label": "Zoeken",
+  "search.placeholder": "Documentatie doorzoeken...",
+  "search.kbdEsc": "sluiten",
+  "search.kbdNavigate": "navigeren",
+  "search.kbdEnter": "openen",
+  "search.buttonLabel": "Zoeken",
+
+  "footer.title.writing": "Publicaties",
+  "footer.title.work": "Werk",
+  "footer.title.reach": "Netwerk",
+  "footer.aria.socialLinks": "Sociale netwerken",
+  "footer.aria.socialPrefix": "Sebastien Rousseau op ",
+  "footer.copyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden.",
+
+  "feeds.atomTitle": "Atom-feed",
+  "feeds.rssTitle": "RSS-feed",
+  "feeds.channelTitle": "Sebastien Rousseau — Nederlandse editie",
+  "feeds.channelDescription": "Artikelen in het Nederlands: toegepaste AI, ISO 20022-betalingen, post-kwantumcryptografie en transformatie van het wholesale-betalingsverkeer.",
+  "feeds.channelCopyright": "© Copyright 2007 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden.",
+  "feeds.jsonFeedTitle": "Sebastien Rousseau — Artikelen (Nederlands)",
+
+  "lang.aria.langGroup": "Taal",
+  "lang.aria.changeLangPrefix": "NL, Taal wijzigen",
+  "lang.title.changeLang": "Taal wijzigen",
+  "lang.title.comingSoon": "Binnenkort beschikbaar",
+  "lang.currentLabel": "NL",
+
+  "article.aria.summary": "Artikelsamenvatting",
+  "article.keyTakeaways": "Belangrijkste punten",
+  "article.relatedReadingInline": "Verwante artikelen:",
+  "article.relatedHeading": "Verwante artikelen",
+  "article.lastReviewedLabel": "Laatst herzien ",
+
+  "author.aria.aboutAuthor": "Over de auteur",
+  "author.fullProfile": "Volledig profiel",
+  "author.alt.portrait": "Portret van Sebastien Rousseau",
+
+  "newsletter.aria.signup": "Aanmelding nieuwsbrief",
+  "newsletter.blurb": "Banking On Quantum — onderzoeksnotities over betalingen, AI en post-kwantumcryptografie. Geen spam.",
+  "newsletter.placeholder": "jij@bank.nl",
+  "newsletter.subject": "Aanmelding nieuwsbrief — sebastienrousseau.com",
+  "newsletter.submit": "Abonneren",
+
+  "home.eyebrow.contact": "Neem contact op",
+  "home.cta.startConversation": "Start een gesprek",
+
+  "listing.readLatest": "Lees het laatste onderzoek"
+}

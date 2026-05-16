@@ -1,0 +1,23 @@
+{
+  "_comment": "Topic-cluster titles + ledes for the Dutch edition. DRAFT — pending native-speaker review. Five topic clusters, identical slugs to EN (topic slugs are language-independent).",
+  "post-quantum-cryptography": {
+    "title": "Post-kwantumcryptografie",
+    "lede": "Rooster-gebaseerde cryptografie, NIST-PQC-standaarden, kwantumveilige betalingen en de „nu verzamelen, later ontsleutelen\"-dreiging. Onderzoeksnotities, open-source-bibliotheken en migratie-playbooks voor security-teams in de financiële dienstverlening."
+  },
+  "iso-20022-payments": {
+    "title": "ISO 20022 & betalingen",
+    "lede": "Migratie van grensoverschrijdende berichten, naleving van gestructureerde adressen, SEPA Instant, SWIFT gpi en de wholesale-betaalinfrastructuur die het geheel draagt. Tools, playbooks en de regelgevingsagenda."
+  },
+  "applied-ai-banking": {
+    "title": "Toegepaste AI in banking",
+    "lede": "Generatieve AI, multimodale LLM's, taal- en spraakmodellen — en hoe ze bankoperaties, klantenservice en productontwikkeling bij Tier-1-instellingen opnieuw vormgeven."
+  },
+  "rust-open-source": {
+    "title": "Rust & open source",
+    "lede": "Open-source Rust-bibliotheken die ik onderhoud: logging, codegeneratie, datum/tijd, cryptografische primitieven, een op Kyber gebaseerd KEM en een statische sitegenerator in Rust."
+  },
+  "blockchain-digital-assets": {
+    "title": "Blockchain & digitale activa",
+    "lede": "Blockchain en digitale activa: tokenisatie, ERC-20, stablecoins, infrastructuur voor cryptovaluta en het regelgevingskader dat deze vormt."
+  }
+}

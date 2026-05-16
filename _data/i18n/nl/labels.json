@@ -1,0 +1,15 @@
+{
+  "_comment": "Dutch body-text labels — DRAFT pending native-speaker review. Key set MUST stay in sync with _data/i18n/en/labels.json; CI gate test_i18n_labels.py enforces parity.",
+  "Published": "Gepubliceerd op",
+  "Updated": "Bijgewerkt op",
+  "min read": "min. leestijd",
+  "Previous": "Vorige",
+  "Next": "Volgende",
+  "Sources & references": "Bronnen en referenties",
+  "About the author": "Over de auteur",
+  "Topics": "Onderwerpen",
+  "Contents": "Inhoud",
+  "Estimated read time": "Geschatte leestijd",
+  "Article pagination": "Artikelnavigatie",
+  "Link to": "Link naar"
+}

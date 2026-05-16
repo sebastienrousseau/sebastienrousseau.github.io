@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Fri, 15 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Fri, 15 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>BlackRock BRSRV en BSTBL onder de GENIUS Act: een getokeniseerd geldmarktfonds — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="BlackRock&#x27;s BRSRV- en BSTBL-aanvragen laten zien hoe een tokenised money-market fund rendement levert binnen het kader van de GENIUS Act.">
+<meta name="keywords" content="BlackRock, BRSRV, BSTBL, GENIUS Act, geldmarktfonds, stablecoin, tokenisatie">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="BlackRock BRSRV and BSTBL">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-JZ87vM76QBbgvAxILtNpmfmMyWjRVCag43kl9+wHupA=' 'sha256-cCgx/GBXXZ0IdnGrRa/kiskyXsbX+scIaCszCWypg04=' 'sha256-naWYAlZHTG7N/EJthh1LoM6rVa+zHstHsjr0r9l4zkY=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/nl/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom-feed" href="/nl/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="BlackRock BRSRV en BSTBL onder de GENIUS Act: een getokeniseerd geldmarktfonds — Sebastien Rousseau">
+<meta property="og:description" content="BlackRock&#x27;s BRSRV- en BSTBL-aanvragen laten zien hoe een tokenised money-market fund rendement levert binnen het kader van de GENIUS Act.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/nl/2026-05-15-blackrock-brsrv-bstbl-genius-act-getokeniseerd-geldmarktfonds/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="nl_NL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BlackRock BRSRV en BSTBL onder de GENIUS Act: een getokeniseerd geldmarktfonds — Sebastien Rousseau">
+<meta name="twitter:description" content="BlackRock&#x27;s BRSRV- en BSTBL-aanvragen laten zien hoe een tokenised money-market fund rendement levert binnen het kader van de GENIUS Act.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/nl/2026-05-15-blackrock-brsrv-bstbl-genius-act-getokeniseerd-geldmarktfonds/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenisierter-geldmarktfonds/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-15-rendimiento-oculto-descifrando-depositos-blackrock-brsrv-bstbl-genius-act/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-15-rendimento-nascosto-decifrare-i-depositi-blackrock-brsrv-bstbl-genius-act/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-15-blackrock-brsrv-bstbl-genius-act-tookun-ka-mmf/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenhwa-mmf/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-15-blackrock-brsrv-bstbl-genius-act-getokeniseerd-geldmarktfonds/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-15-rendimento-oculto-decifrando-depositos-blackrock-brsrv-bstbl-genius-act/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-15-skrytaya-dokhodnost-blackrock-brsrv-bstbl-genius-act/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-15-beilaide-brsrv-bstbl-genius-fa-an-daibihua-mmf/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-15-beilaide-brsrv-bstbl-genius-fa-an-daibihua-mmf-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Naar hoofdinhoud gaan</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Navigatie omschakelen" />
+      <div class="wrap">
+        <a class="ap-brand" href="/nl/index.html" aria-label="Startpagina van Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Hoofdnavigatie">
+          <ul class="ap-menu">
+            <li><a href="/nl/over/index.html">Over mij</a></li>
+            <li><a href="/nl/artikelen/index.html" aria-current="page" class="active">Artikelen</a></li>
+            <li><a href="/nl/publicaties/index.html">Publicaties</a></li>
+            <li><a href="/nl/onderwerpen/index.html">Onderwerpen</a></li>
+            <li><a href="/nl/projecten/index.html">Projecten</a></li>
+            <li><a href="/nl/afspeellijsten/index.html">Afspeellijsten</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Donker thema inschakelen" aria-pressed="false" title="Thema wisselen">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Zoeken (Cmd of Ctrl + K)" title="Zoeken (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Taal">
+            <button type="button" class="ap-lang-toggle" aria-label="NL, Taal wijzigen" aria-expanded="false" aria-haspopup="menu" title="Taal wijzigen">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">NL</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="Binnenkort beschikbaar">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="Binnenkort beschikbaar">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="Binnenkort beschikbaar">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="Binnenkort beschikbaar">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="Binnenkort beschikbaar">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="Binnenkort beschikbaar">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="Binnenkort beschikbaar">🇮🇩 Indonesia</span>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="Binnenkort beschikbaar">🇵🇱 Polski</span>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="Binnenkort beschikbaar">🇷🇴 Română</span>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="Binnenkort beschikbaar">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="Binnenkort beschikbaar">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="Binnenkort beschikbaar">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Binnenkort beschikbaar">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="Binnenkort beschikbaar">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="Binnenkort beschikbaar">🇳🇬 Yorùbá</span>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/nl/contact/index.html" aria-label="Neem contact op">Neem contact op ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Navigatie omschakelen">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>BlackRock BRSRV en BSTBL onder de GENIUS Act: een getokeniseerd geldmarktfonds</h1>
+      <p class="sub">Hoe BlackRock een tokenised money-market fund inzet om rendement te bieden binnen de GENIUS Act</p>
+    <nav class="article-tags" aria-label="Onderwerpen"><a href="/tags/index.html#h3-blackrock" class="article-tag" rel="tag">BlackRock</a><a href="/tags/index.html#h3-brsrv" class="article-tag" rel="tag">BRSRV</a><a href="/tags/index.html#h3-bstbl" class="article-tag" rel="tag">BSTBL</a><a href="/tags/index.html#h3-genius-act" class="article-tag" rel="tag">GENIUS Act</a><a href="/tags/index.html#h3-geldmarktfonds" class="article-tag" rel="tag">geldmarktfonds</a><a href="/tags/index.html#h3-stablecoin" class="article-tag" rel="tag">stablecoin</a><a href="/tags/index.html#h3-tokenisatie" class="article-tag" rel="tag">tokenisatie</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-15T06:06:06+00:00" class="meta-pub">Gepubliceerd op 15 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Geschatte leestijd">17 min. leestijd</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Inhoud</h2><ol><li><a href="#een-einreichung-de-tegelijk-een-positionooitrung-is">Een Einreichung, de tegelijk een Positionooitrung is</a></li><li><a href="#warum-stablecoins-keine-rendement-zahlen-durfen">Warum stablecoins keine rendement zahlen dürfen</a></li><li><a href="#de-architektur-van-brsrv">De Architektur van BRSRV</a></li><li><a href="#de-architektur-van-bstbl">De Architektur van BSTBL</a></li><li><a href="#payment-stablecoin-vs-getokeniseerder-geldmarktfonds-de-doorslaggevende-untersch">Payment-stablecoin vs. getokeniseerder geldmarktfonds: de doorslaggevende Unterscheidung</a></li><li><a href="#ist-het-een-schlupfloch">Ist het een Schlupfloch?</a></li><li><a href="#was-het-je-sector-bedeutet">Was het je sector bedeutet</a></li><li><a href="#fazit">Fazit</a></li><li><a href="#veelgestelde-vragen">Veelgestelde vragen</a></li><li><a href="#quellen">Quellen</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> BlackRock&#x27;s BRSRV- en BSTBL-aanvragen laten zien hoe een tokenised money-market fund rendement levert binnen het kader van de GENIUS Act.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Een Einreichung, de tegelijk een Positionooitrung is.</strong> De beiden BlackRock-Einreichungen vom 8.</li>  <li><strong>Warum stablecoins keine rendement zahlen dürfen.</strong> De GENIUS Act, in juli 2025 unterzeichnet en nun Gongeveerlage überlappender Regelsetzungen van OCC, FDIC en Federal Reserve, zieht een ungewöhnlich duidelijke konzeptionelle Trennlinooit.</li>  <li><strong>De Architektur van BRSRV.</strong> Het BlackRock Daily Reinvestment stablecoin Reserve Vehicle is in zijn Innereien een unauffälliger geldmarktfonds.</li>  <li><strong>De Architektur van BSTBL.</strong> De zweite Einreichung is operativ interessanter en architektonisch bedeutsamer.</li></ul></aside><p>Unter de GENIUS Act dürfen stablecoins keine rendement zahlen. Am 8. mei 2026 heeft BlackRock zwei SEC-Registrierungen voor producten eingereicht, de deze Beschränkung omzeilen, doordat ze als geldmarktfonds en niet als stablecoins reguliert worden – terwijl ze sich in de Wallet zoals renditetragende Dollar op een öffentlichen Blockchain verhouden.</p>
+<hr />
+<blockquote>
+<p><strong>Wesentliche inzichten</strong></p>
+<ul>
+<li>De <strong>GENIUS Act</strong>, in juli 2025 unterzeichnet en nun in de letzten maanden zijner Regelausgestoudung, untersagt Emittenten van betalings-stablecoins, Zinsen of rendement aan Inhaber tot zahlen – allein voor het Houden, Nutzen of Aufbewahren een stablecoins. De OCC-Entwurf vom maart 2026 heeft dies door een widerlegbare Vermutung verschärft, dat ook rendement-Arrangements over verbundene ondernemingen of Dritte tegen het Verbot vpasoßen.</li>
+<li>Het daraus entstehende ökonomische probleem is eindeutig. Bei ongeveer <strong>281 miljarden US-Dollar aan ausstehenden betalings-stablecoins</strong> en treasury-rendementn op Mehrjahreshoogs liegt de Lücke tussen de, was een Wallet-Inhaber ontvangt (null), en de, was de zugongeveere liegenden Reserven verdienen (~4–5 %), inmiddels bij zweistelligen miljardenbeträgen pro jaar.</li>
+<li>Am <strong>8. mei 2026 reichte BlackRock zwei SEC-Registrierungserklärungen</strong> een, de deze Lücke schließen, zonder het rendementverbot tot verletzen – omdat keines de beiden producten rechtlich een stablecoin is.</li>
+<li><strong>BRSRV</strong> (BlackRock Daily Reinvestment stablecoin Reserve Vehicle) is een nieuwer geldmarktfonds, de Bargeld, Treasuries onder 93 dagen Laufzeit en Overnight-treasury-Repos hält. Hij emittiert „OnChain Shares&quot; over een permissioned Multi-Chain-Rahmen, met de Securitize Transfer Agent LLC als rechtlichem Eigentumsregister. Mindestanlage: 3 Mio. US-Dollar. Hij is so konstruiert, dat hij als zulässiger Reservewert onder de GENIUS Act qualifiziert.</li>
+<li><strong>BSTBL</strong> is de architektonisch bedeutsamere Einreichung. U schraubt een ERC-20-Anteilsklasse op BlackRocks bestaanden <strong>6–7 miljarden US-Dollar schweren Select treasury Based Liquidity Fund</strong>, met BNY Mellon Investment Servicing als Transfer Agent, de Anteilsinhaber op Ethereum registriert. Es is het pase Mal, dat een Public-Ethereum-Anteilsklasse tot een bestaanden BlackRock-geldmarktprodukt hinzugefügt wordt.</li>
+<li>Het Muster is branchenweit sichtbar. <strong>Tokenisierte geldmarktfonds zijn de Architektur, de de GENIUS Act, doordat hij rendement op stablecoins untersagt, unvermeidlich gemacht heeft.</strong> De 14-miljarden-Dollar-markt voor getokeniseerde Treasuries – angeführt van BlackRocks BUIDL met ongeveer 40 % Anteil – is de frühe Lesart darauf, wo de nächste Welle „Wallet-Dollar&quot; sitzt.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="een-einreichung-de-tegelijk-een-positionooitrung-is">Een Einreichung, de tegelijk een Positionooitrung is <a class="heading-anchor" href="#een-einreichung-de-tegelijk-een-positionooitrung-is" aria-label="Link naar Een Einreichung, de tegelijk een Positionooitrung is">#</a></h2>
+<p>De beiden BlackRock-Einreichungen vom 8. mei 2026 trafen niet in luftleeren Raum een. U kamen een week, nachdem BlackRock een <a href="https://www.theblock.co/post/399812/blackrock-urges-occ-to-drop-tokenized-reserve-cap-idea-expand-eligible-assets-in-genius-act-comment-letter" title="BlackRock urges OCC to drop tokenized reserve cap idea, expand eligible assets in GENIUS Act comment letter">siebzehnseitiges Kommentarschreiben ⧉</a> am letzten dag des Anhörungszeitraums aan het Office of the Comptroller of the Currency tot Umsetzungsregelung des GENIUS Act eingereicht had – en vier dage, nachdem <a href="https://beincrypto.com/blackrock-occ-stablecoin-genius-act-comment/" title="BlackRock Backs OCC stablecoin Rules Under GENIUS Act">BlackRock op X een öffentliche Zusammenfassung ⧉</a> zijner sieben Kernempfehlungen aan de instantie veröffentlicht had.</p>
+<p>De aanbevelingen en de nieuwen Einreichungen lesen sich am besten als een zweiteiliges Dokument. Het Kommentarschreiben argumentierte, de OCC solle haar vorgeschlagenen 20-%-Deckel op getokeniseerde Reservewerte fallen lassen, bestätigen, dat qualifizierende ETFs dieselbe Behandlung zoals Government Money Market Funds erhouden, en Same-Day-settling-GMMFs op de wöchentlichen liquiditeitsbodensatz anrechnen lassen. De Einreichungen vier dage später registrierten nauwkeurig de Instrumente, de van deze Positionen profitieren: een nieuwen Fonds (BRSRV), ausdrücklich darauf zugeschnitten, als zulässige Reserve onder de GENIUS Act tot qualifizieren, en een getokeniseerde Anteilsklasse (BSTBL) op de bestaanden 6–7-miljarden-Dollar-treasury-liquiditeitsfonds des Hauses. Ob de OCC de BlackRock-Positionen in de Schlussregel übernimmt of niet – het ondernemingen heeft zijne producten met een nauwkeurigheid in de beleiddebatte gestelt, aan de een Regulator alleen schwer vorbeisehen kan.</p>
+<p>Dies is de strategische achtergrond voor het, was bij pasen Lesen zoals een schlauer Stück juristischer Konstruktion aussieht. Treffender liest es sich als de Ansage des weltgrößten Vermögensverwouders, wo de Grenze tussen een „stablecoin&quot; en een „getokeniseerden waardepapier&quot; in US-Recht verlaufen zou moeten – en als Anmeldung de producten, de op beiden Seiten deze Grenze leben worden.</p>
+<h2 id="warum-stablecoins-keine-rendement-zahlen-durfen">Warum stablecoins keine rendement zahlen dürfen <a class="heading-anchor" href="#warum-stablecoins-keine-rendement-zahlen-durfen" aria-label="Link naar Warum stablecoins keine rendement zahlen dürfen">#</a></h2>
+<p>De GENIUS Act, in juli 2025 unterzeichnet en nun Gongeveerlage überlappender Regelsetzungen van OCC, FDIC en Federal Reserve, zieht een ungewöhnlich duidelijke konzeptionelle Trennlinooit. Een „Payment stablecoin&quot; onder de Act is een digitaal Asset, het een stabilen waarde gegenüber een Fiat-valuta houden zou, gedeckt door hoogwertige Reserven, einlösbar tot Nennwert. Een „Permitted Payment stablecoin Issuer&quot; (PPSI) is een bundes- of landesgenehmigte Einheit, de een solches Token emittieren darf. Und <a href="https://www.lw.com/en/insights/occ-issues-proposal-to-implement-the-genius-act" title="OCC Issues Proposal to Implement the GENIUS Act">Section 4(a)(11) des Acts ⧉</a> untersagt jedem PPSI, Zinsen of rendement aan Inhaber tot zahlen, allein voor het Houden, Nutzen of Aufbewahren des stablecoins.</p>
+<p>De <a href="https://www.nixonpeabody.com/insights/alerts/2026/04/02/proposed-occ-regulations-for-payment-stablecoins-under-the-genius-act" title="Proposed OCC regulations for payment stablecoins under the GENIUS Act">Verordnungsentwurf de OCC vom maart 2026 ⧉</a> heeft dit Verbot operativ uitgebreid. Hij etabliert een widerlegbare Vermutung, dat Arrangements, de rendement over een verbundenes ondernemingen of een verwandten Dritten leiten – tot voorbeeld een Krypto-Börse, de „Loyoudy Rewards&quot; aan Inhaber een bestimmten stablecoins zahlt –, eveneens tegen het Verbot vpasoßen, met de Beweislast bij Emittenten, het Gegenteil tot tonen. White-Label-Arrangements, bij denen een PPSI digitaale Assets emittiert, de van een Partner met eigenr Marke versehen worden, de dan rendement zahlt, worden ausdrücklich als mutmaßlich omzeilend behandelt. Het Office of the Comptroller <a href="https://www.compliancecorylated.com/news/us-occ-closes-genius-act-loophole-allowing-yield-bearing-stablecoins/" title="US OCC closes GENIUS Act loophole allowing yield-bearing stablecoins">signalisierte begin 2026 ⧉</a>, dat de „Schlupfloch&quot;-Lesart des models „Emittent zahlt over Verbundene&quot; in de Schlussregelung in keiner permissiven Form übervaren werde.</p>
+<p>De ökonomische Rechtfertigung voor dit Verbot is umstritten. Einreichungen de bankenbranche bij de OCC argumentierten zugunsten des strikten Verbots: rendementtragende stablecoins würden transaktionale bankeinlagen abziehen – een markt, de de <a href="https://www.congress.gov/crs-product/IF13174" title="The stablecoin Yield Debate — Congressional Research dienst">adviessausschuss des US-financieelministeriums op ongeveer 6,6 Billionen US-Dollar ⧉</a> schätzt, van de een nennenswerter Anteil in concurrentie met renditetragenden Dollar-Substituten „at risk&quot; is. Stellungnahmen uit de Krypto-industrie, angeführt van Coinbase, argumentierten gegenteilig: prikkels seien centraal voor de concurrentie in betalingsverkeer, en een pauschales Verbot bringe een Wohlfahrtsverlust zonder wesentliche impact op de Kreditvergabe de banken.</p>
+<p>Welche Seite de betere politieke Argumentation heeft – het rechtliche resultaat is vorpas gezet: Een stablecoin in regelgevenden Sinne des GENIUS Acts darf zijn Inhaber keine rendement zahlen. Was hij echter niet festleggen kan, is, was een Inhaber als Nächstes met zijn geld tut. Und hier divergiert de Architektur.</p>
+<h2 id="de-architektur-van-brsrv">De Architektur van BRSRV <a class="heading-anchor" href="#de-architektur-van-brsrv" aria-label="Link naar De Architektur van BRSRV">#</a></h2>
+<p>Het BlackRock Daily Reinvestment stablecoin Reserve Vehicle is in zijn Innereien een unauffälliger geldmarktfonds. Hij hält Bargeld, US-Treasuries met Laufzeiten van 93 dagen of minder en Overnight-Repurchase-Agreements, besichert met Treasuries. Hij is op Rule 2a-7 des Investment Company Act van 1940 ausgerichtet – dieselbe regelgevende Architektur, de institutionelle geldmarktfonds seit vier jaarzehnten regiert. Seine rendement, zoals bij jedem anderen Government-MMF, leitet sich vom vorherrschenden kortetermijn-en treasury-Zinssatz ab.</p>
+<p>Was nieuw is, is de Anteilsklasse. BRSRV-Anteile worden als <a href="https://unchainedcrypto.com/blackrock-files-for-two-new-tokenized-money-market-funds-targeting-stablecoin-capital/" title="BlackRock Files for Two New Tokenized Money-Market Funds Targeting stablecoin Capital">„OnChain Shares&quot; door een permissioned Rahmen ⧉</a> emittiert, de aan mehrere öffentliche Blockchains anbindet, wobei <a href="https://www.crowdfundinsider.com/2026/05/278346-blackrock-focuses-on-tokenization-initiatives-with-blockchain-enabled-funds/" title="BlackRock Focuses On Tokenization initiatiefs With Blockchain Enabled Funds">Securitize Transfer Agent LLC als offizieller Transfer Agent ⧉</a> fungiert. Off-Chain-Identitätssysteme – de gleiche KYC-Infrastruktur, de BlackRocks bestaanden 2,9 miljarden Dollar schweren <a href="https://stablecoininsider.org/top-10-tokenized-treasury-funds-in-2026-buidl-benji-and-the-highest-yielding-on-chain-options/" title="Top 10 Tokenized treasury Funds in 2026">BUIDL-Fonds ⧉</a> trägt – verknüpfen Wallet-Adressen met verifizierten beleggersn. Mindestanlage: 3 Mio. US-Dollar. De Einreichung nennt nog niet, welche Blockchains de Fonds tot Start untpasützen wordt.</p>
+<p>Het product is ausdrücklich darauf zugeschnitten, <a href="https://cryptobriefing.com/blackrock-tokenized-money-market-funds-stablecoins/" title="BlackRock doubles down on tokenization with new stablecoin reserve funds">zoals mehrere Quellen festhouden ⧉</a>, als zulässiger Reservewert onder de GENIUS Act tot qualifizieren. De Zielkäufer is niet de Retail-Wallet-gebruikers. Es is een stablecoin-Emittent (of een treasury-Operation, de stablecoins als Teil een Working-Capital-strategie hält), de een treasury-rendement-Instrument vereist, het hij programmatisch op denselben Blockchain-Schienen houden kan zoals de stablecoins selbst. De Pitch-Botschaft, op een Satz reduziert: Lass deine Reserven op de Chain, verdiene de treasury-rendement, erfülle de Regulator.</p>
+<p>Für BlackRock is de strategische Position schärfer, als ze wirkt. Zijn bestaander BUIDL-Fonds deckt reeds meer als 90 % de Reserven zweier de größten „renditetragenden&quot; stablecoin-nahen producten – Ethenas USDtb en het Solana-basierte JupUSD van Jupiter. BRSRV is de dezidierte, GENIUS-conforme Erweiterung deze Rolle: het Großhandels-treasury-rendementprodukt, zugeschnitten op de Reservemanagement-Workflow ieder PPSI, de onder de nieuwen Regime existieren wordt.</p>
+<h2 id="de-architektur-van-bstbl">De Architektur van BSTBL <a class="heading-anchor" href="#de-architektur-van-bstbl" aria-label="Link naar De Architektur van BSTBL">#</a></h2>
+<p>De zweite Einreichung is operativ interessanter en architektonisch bedeutsamer. BSTBL – de On-Chain-Anteilsklasse voor de bestaanden BlackRock Select treasury Based Liquidity Fund – is kein nieuwer Fonds. Es is een nieuwe Anteilsklasse, de een geldmarktprodukt aufgezet wordt, het reeds ongeveer 6–7 miljarden US-Dollar verwoudet, <a href="https://www.theblock.co/post/399812/blackrock-urges-occ-to-drop-tokenized-reserve-cap-idea-expand-eligible-assets-in-genius-act-comment-letter" title="BlackRock urges OCC to drop tokenized reserve cap idea">in oktober 2025 in een GENIUS-conforme Konfiguration ⧉</a> met een Handels-Deadline um 17 Uhr ET en een treasury-lastigen Mandat umgebouwt werd en nun als ERC-20-Token op Ethereum uitgebreid wordt.</p>
+<p>De Transfer Agent voor deze Anteilsklasse is <a href="https://www.mexc.com/news/1080472" title="BlackRock files for two new tokenized funds with the U.S. SEC on Ethereum">BNY Mellon Investment Servicing ⧉</a>, het de offiziellen Anteilsinhaberregister op Ethereum onder Verwendung des ERC-20-standaards führen wordt. Off-Chain-KYC-Infrastruktur verknüpft Wallets met beleggersidentitätsdaten – ebenso zoals bij BUIDL en jedem anderen heute am markt befindlichen conformen getokeniseerden Fonds. De substanzielle Abgrenzung tot BRSRV bestaat in de Chain (Ethereum, öffentlich, met de ERC-20-Token als Anteilsdarstellung) en in Transfer Agent (BNY statt Securitize) – en in de Tatsache, dat dies het pase Mal is, dat een Public-Ethereum-Anteilsklasse een bestaanden BlackRock-geldmarktfonds beigefügt wordt.</p>
+<p>Dit letzte Detail verdient Aufmerksamkeit. BlackRocks bisherige getokeniseerde producten – alle voran BUIDL – waren als nieuwe Fonds met on-chain-nativer Architektur strukturiert. BSTBL geht een anderen, womogelijk folgenreicheren Weg: een bestaanden, grooten, konventionellen geldmarktfonds tot tokenisieren, doordat een nieuwe Anteilsklasse hinzugefügt wordt, statt een Parallelstruktur tot bouwen. De Implikation: Gongeveersätzlich könnte iedere bestaande BlackRock-MMF demselben Muster folgen. Ebenso iedere bestaande concurrentieer-MMF – Vanguards, Fidelitys, JPMorgans, State Streets. De architektonische horde tot tokenisatie de konventionellen geldmarktfondsindustrie is na BSTBL laager als je zuvor.</p>
+<p>Zur sectorn-Einordnung: Tokenisierte US-Treasuries zijn van ongeveer 2 miljarden op <a href="https://www.mexc.com/news/1080472" title="BlackRock files for two new tokenized funds with the U.S. SEC on Ethereum">14 miljarden US-Dollar per mei 2026 ⧉</a> gewachsen, met BlackRocks BUIDL bij ongeveer 40 % marktanteil, Franklin Templetons BENJI/FOBXX bij 850 Mio. US-Dollar en Ondo Finances kombinooitrtem OUSG/USDY op de zweiten Platz. De nächsten 50–100 miljarden US-Dollar zijn plausibel reeds over Einreichungen zoals BSTBL in Bewegung.</p>
+<h2 id="payment-stablecoin-vs-getokeniseerder-geldmarktfonds-de-doorslaggevende-untersch">Payment-stablecoin vs. getokeniseerder geldmarktfonds: de doorslaggevende Unterscheidung <a class="heading-anchor" href="#payment-stablecoin-vs-getokeniseerder-geldmarktfonds-de-doorslaggevende-untersch" aria-label="Link naar Payment-stablecoin vs. getokeniseerder geldmarktfonds: de doorslaggevende Unterscheidung">#</a></h2>
+<p>Für niet spezialisierte Leser kan de Unterscheidung tussen een „stablecoin&quot; en een „getokeniseerden geldmarktfondsanteil&quot; zoals een regelgevende Technikalität wirken. Het is ze niet. Beide Instrumente nehmen tatsächlich unterschiedliche Stellungen in US-waardepapierrecht een, en de consequentieen ziehen sich door het gesamte productdesign.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Payment-stablecoin (onder GENIUS Act)</th>
+<th>Tokenisierter MMF-Anteil (BRSRV-/BSTBL-Muster)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rechtlicher status</td>
+<td>betalingsinstrument</td>
+<td>waardepapier (Fondsanteil)</td>
+</tr>
+<tr>
+<td>regelgevingskader</td>
+<td>GENIUS Act; OCC/FDIC/Fed-Regelungen</td>
+<td>Investment Company Act 1940; Rule 2a-7</td>
+</tr>
+<tr>
+<td>Emittent</td>
+<td>Permitted Payment stablecoin Issuer (PPSI)</td>
+<td>SEC-registrierter Fonds (en Transfer Agent)</td>
+</tr>
+<tr>
+<td>Reserveanforderungen</td>
+<td>Bargeld, kurze Treasuries, Repos – strikt</td>
+<td>Bargeld, kurze Treasuries, Repos – Rule 2a-7</td>
+</tr>
+<tr>
+<td>Darf rendement aan Inhaber zahlen</td>
+<td><strong>Nein</strong> (Section 4(a)(11))</td>
+<td><strong>Ja</strong> (de rendement is de Verzinsung des Anteils)</td>
+</tr>
+<tr>
+<td>Rückgabe</td>
+<td>Zum Nennwert, op Verlangen</td>
+<td>Zum NAV, in de Regel T+0 of T+1</td>
+</tr>
+<tr>
+<td>Eigentumsregister</td>
+<td>Emittenten-Wallet / on-chain</td>
+<td>Transfer Agent (rechtlich); Blockchain (operativ)</td>
+</tr>
+<tr>
+<td>Mindestanlage</td>
+<td>Keine (typischerweise Retail)</td>
+<td>Erheblich (3 Mio. US-Dollar bij BRSRV; institutionell bij BSTBL)</td>
+</tr>
+<tr>
+<td>Komponooitrbarkeit met DeFi</td>
+<td>Hoch</td>
+<td>Hoch (BUIDL als Präzedenz)</td>
+</tr>
+<tr>
+<td>Wallet-gebruikerserlebnis</td>
+<td>Token, de 1 US-Dollar hält</td>
+<td>Token, dessen waarde sich um de rendement anreichert</td>
+</tr>
+<tr>
+<td>risico de Einlagensubstitution</td>
+<td>Het centrale aufsichtsrechtliche Anliegen</td>
+<td>Materiell geringer (waardepapier, niet einlagenvergelijkbaar)</td>
+</tr>
+</tbody>
+</table>
+<p><em>Quelle: Synthese uit de Wortlaut des GENIUS Acts, de OCC-NPRM van maart 2026, de BlackRock-Einreichungen vom 8. mei 2026 en de Rule-2a-7-Rahmen.</em></p>
+<p>De untpase Zeile erklärt de regelgevende Architektur. Een renditetragender Payment-stablecoin sieht voor een bankenaufseher zoals een Einlagensubstitut uit. Een renditetragender getokeniseerder geldmarktfondsanteil sieht zoals een waardepapier uit – en waardepapiere, de met Einlagen konkurrieren, zijn kein nieuwes Anliegen, omdat konventionelle geldmarktfonds het seit vierzig jaaren tun. De GENIUS Act zieht zijne Linooit am Einlagensubstitut-Anliegen. Alles, was eindeutig op de waardepapierseite deze Linooit liegt, is konstruktionsbedingt vom rendementverbot des Acts ausgenommen.</p>
+<h2 id="ist-het-een-schlupfloch">Ist het een Schlupfloch? <a class="heading-anchor" href="#ist-het-een-schlupfloch" aria-label="Link naar Ist het een Schlupfloch?">#</a></h2>
+<p>Es is verlockend – en de Rahmung kursiert seit de Einreichung breit op LinkedIn en Krypto-Twitter –, dies als „Schlupfloch&quot; in GENIUS Act tot bezeichnen: stablecoins dürfen keine rendement zahlen, also reichte BlackRock ongeveers een, het rechtlich keiner is. De Rahmung trifft de Schlagzeile pointiert. Als rechtliche Einordnung verkürzt ze de Substanz.</p>
+<p>Het rendementverbot in GENIUS Act was een spezifische politieke beslissing met een spezifischen Ziel: het risico de Einlagensubstitution voor de bankensektor door een Instrumentenklasse, de als geld funktionooitren zou. Tokenisierte geldmarktfonds zijn niet darauf ausgelegd, als geld tot funktionooitren; ze zijn darauf ausgelegd, als Fondsanteile tot funktionooitren – met de vollen regelgevenden Last (Rule 2a-7, geprüfte Reserven, NAV-Veröffentlichung, rechtlich maßgebliche Eigentumsregister des Transfer Agents), de seit jaarzehnten voor deze Kategorie gilt. Dass deze Fondsanteile nun zufällig op Ethereum of een anderen öffentlichen Chain settlen, verändert niet, was ze wertpapierrechtlich zijn. De <a href="https://www.morganlewis.com/pubs/2026/04/occs-genius-act-proposal-what-prospective-issuers-need-to-know" title="stablecoin Regulation: OCC Proposal Under the GENIUS Act">Verordnungsentwurf de OCC selbst ⧉</a> sieht getokeniseerde Reserven ausdrücklich als legitime Kategorie vóór – de offene Debatte betrifft de 20-%-Deckel, niet de Existenz de activaklasse.</p>
+<p>Was tatsächlich nieuw is, is het gebruikerserlebnis. Een Inhaber een getokeniseerden MMF-Anteils in een Wallet op een öffentlichen Chain heeft ongeveers, het <em>aussieht</em> zoals een stablecoin (een fungibles Token, peer-to-peer übertragbar, met DeFi-Infrastruktur komponooitrbar), het sich maar <em>vontvangt</em> zoals een waardepapier (de NAV wächst, de Inhaber steht op een KYC-Liste, de Aufzeichnungen des Transfer Agents zijn rechtlich maßgeblich). De Schlagzeilenrahmung – „rechtlich kein stablecoin&quot; – is soweit zutreffend. De tiefere Beobachtung is, dat de GENIUS Act, doordat hij rendement op de betalings-stablecoin-Kategorie untersagte, de industrie faktisch <em>vorgegeben</em> heeft, sich op getokeniseerde MMFs als Träger renditetragender On-Chain-Dollar tot verleggen. Het Gesetz zog een Linooit; de industrie strukturierte – wenig überraschend – producten op de günstigeren Seite daarvan. Het is kein Schlupfloch. Es is het Design de regelgevenden Architektur, zoals es ongeveer beabsichtigt was – ook indien het Tempo, met de es institutionelle producten hervorbringt, hoger is, als de meisten deelnemers erwartet hadden.</p>
+<h2 id="was-het-je-sector-bedeutet">Was het je sector bedeutet <a class="heading-anchor" href="#was-het-je-sector-bedeutet" aria-label="Link naar Was het je sector bedeutet">#</a></h2>
+<p>De Implikationen de Einreichungen vom 8. mei zijn niet einheitlich. De strategische Reaktion hängt materiell daarvan ab, wo een Institution in de waardeschöpfungskette sitzt.</p>
+<h3 id="stablecoin-emittenten-ppsis">stablecoin-Emittenten (PPSIs) <a class="heading-anchor" href="#stablecoin-emittenten-ppsis" aria-label="Link naar stablecoin-Emittenten (PPSIs)">#</a></h3>
+<p>Für Circle, Tether, PayPal en de nächste Generation banklich emittierter betalings-stablecoins is BRSRV de operative antwoord op een bisher alleen ad hoc beantwortete vraag: Wo sitzen Reserven, indien ze zowel treasury-rendement tragen als nativ op derselben Chain liegen moeten zoals de ausgegebene stablecoin? Het direkte Houden van T-Bills funktionooitrt op Emissionsskala, is maar operativ aufwendig. Het Houden van BUIDL funktionooitrt, toch BUIDLs Struktur was niet explizit op het Reserveregime des GENIUS Acts ausgelegd. BRSRV is es. De concurrentiesfolge: Circle, Tether en banklich emittierte PPSIs verfügen nun over een glaubwürdiges, GENIUS-conformes Großhandelsprodukt, het sich in ihr Reservemanagement einklinken lässt – en de Wechselkosten in een BlackRock-product zijn strukturell so laag zoals nooit.</p>
+<h3 id="banken-en-geldmarktfonds-betreiber">banken en geldmarktfonds-Betreiber <a class="heading-anchor" href="#banken-en-geldmarktfonds-betreiber" aria-label="Link naar banken en geldmarktfonds-Betreiber">#</a></h3>
+<p>Für banken, de groote geldmarktfonds-Franchises bedrijven – JPMorgan, State Street, BNY Mellon, Northern Trust, Vanguard, Fidelity –, is BSTBL de operative Schablone voor het, was deren eigen producten wahrscheinlich tun worden moeten. Het architektonische Muster is nun sichtbar: Nimm een bestaanden MMF, registriere een nieuwe On-Chain-Anteilsklasse bij de SEC, beauftrage een Transfer Agent, de Anteilsinhaber op Ethereum (of een anderen grooten öffentlichen Chain) führt, en sichere de toegang over Off-Chain-KYC. De Einstiegshürde voor een getokeniseerde Anteilsklasse op een bestaanden 10–50-miljarden-MMF is in BSTBL-Muster primair regelgevend en operativ, niet technisch. BNY Mellons Rolle als Transfer Agent voor BSTBL – het Führen van Anteilsinhabern op Ethereum onder Verwendung van ERC-20 – is selbst een Signal, dat traditionele Transfer-Agent-Infrastruktur op öffentliche Chains uitgebreid wordt, en zwar van nauwkeurig jenen Institutionen, de het rechtliche Eigentumsregister van Fonds seit jaarzehnten verwouden.</p>
+<h3 id="defi-protokolle-en-on-chain-treasury">DeFi-Protokolle en On-Chain-treasury <a class="heading-anchor" href="#defi-protokolle-en-on-chain-treasury" aria-label="Link naar DeFi-Protokolle en On-Chain-treasury">#</a></h3>
+<p>Für DeFi-Protokolle zetten BRSRV en BSTBL een Muster fort, het BUIDL begonnen heeft: de migratie hoogqualitativer treasury-beveiligingen uit Off-Chain-Verwahrungskonten in On-Chain-Instrumente, de sich met Lending, Derivaten en strukturierten productenn komponooitren lassen. Ethenas USDtb en Jupiters JupUSD zijn de Frühbewegerbeispiele; de dahinter aufgespannte Designraum is nun duidelijk größer. De relevante risicoüberlegung lautet, dat de zugongeveere liegenden Instrumente KYC-gesichert en permissioned zijn – was de Grad aan „permissionless&quot; Komposition begrenzt, op de DeFi-native systeeme bouwen kunnen. De Integrationsmuster de nächsten zwölf maande worden bestimmen, zoals sauber getokeniseerde MMFs tot een primairen beveiligingenebene de On-Chain-economie worden.</p>
+<h3 id="toezichthouders">toezichthouders <a class="heading-anchor" href="#toezichthouders" aria-label="Link naar toezichthouders">#</a></h3>
+<p>Für de OCC, de FDIC en de Federal Reserve klären de Einreichungen vom 8. mei, was de regelgevende Perimeter aufnehmen zou. Het rendementverbot des GENIUS Acts heeft erkennbar niet verhindert, dat On-Chain-rendement bij Wallet-Inhabern landet; es heeft de Architektur, met de deze rendement gelevert wordt, uit de betalings-stablecoin-Kategorie (de de instanties direkt beaufsichtigen) in de Kategorie de registrierten Fonds (de de SEC beaufsichtigt) verschoben. Het is niet zwingend een slechtes resultaat – registrierte Fonds zijn een goed vpasandene regelgevende Kategorie –, maar es bedeutet, dat de behördenübergrijpende Koordination operativ schärfer wordt. De finale OCC-Regel, fällig bis januari 2027, wordt beslissen, ob de 20-%-Deckel op getokeniseerde Reserven in irgendeiner Form übervaren en ob de Linooit tussen „Payment-stablecoin&quot; en „getokeniseerdem MMF-Anteil&quot; op Emittentenebene gehouden of op Wallet-Ebene weiter aufweichen darf.</p>
+<h2 id="fazit">Fazit <a class="heading-anchor" href="#fazit" aria-label="Link naar Fazit">#</a></h2>
+<p>De Einreichungen vom 8. mei 2026 zijn voor sich genommen kein Paradigmenwechsel. Es zijn einzelne producten een einzelnen Vermögensverwouders, eingereicht in spezifischen regelgevingsfenster, het de OCC-Regelausgestoudung geöffnet heeft. Was ze echter einfangen, is de Form een branchenweiten Übergangs, de seit BlackRocks Lancierung van BUIDL in maart 2024 sichtbar is en de de GENIUS Act eher beschleunigt als gebremst heeft.</p>
+<p>stablecoins in Sinne des GENIUS Acts worden weiter tun, was stablecoins altijd goed konden: efficiëntes settlement, nagenoeg sofortige grensoverschrijdende betaling, programmeerbaares geld voor toepassingen, de een stabile Recheneinheit brauchen. Unter de actuelen en vorgeschlagenen Regeln worden ze keine rendement aan haar Inhaber zahlen. De renditetragende Dollar in de Wallet – het product, het de gleiche Formfaktor zoals een stablecoin heeft, de Inhaber maar treasury-rendement zuführt – wordt een getokeniseerder geldmarktfondsanteil zijn, emittiert door een registrierten Fonds, met een Transfer Agent (Securitize, BNY Mellon en wahrscheinlich mehreren weiteren) als rechtlichem Eigentumsregister. BRSRV en BSTBL zijn de frühen, institutionellen Ausdrucksformen dit Musters. U worden niet de letzten zijn.</p>
+<p>Zur Einordnung op deze Website: De <a href="https://sebastienrousseau.com/2018-01-09-undpasanding-the-technology-behind-blockchain/index.html" title="Undpasanding the Technology behind Blockchain">Beitrag vom januari 2018 tot Technologie hinter Blockchain ⧉</a> behandelte het Substrat, op de BSTBL nun sitzt; de <a href="https://sebastienrousseau.com/nl/2018-01-24-de-erc-20-tokenstandaard/index.html" title="De ERC-20-tokenstandaard">Beitrag vom januari 2018 tot ERC-20-standaard ⧉</a> behandelte de Anteilsklassenrepräsentation, de BlackRock gewählt heeft; de <a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-bijnaer-payment-solution/index.html" title="Unveiling a New Cryptocurrency and Faster Payment Solution">Analyse vom februari 2018 tot Faster-Payment-cryptovaluta's ⧉</a> behandelte het gebruikerserlebnis-probleem, het renditetragende On-Chain-Instrumente nun teilweise lösen; en de <a href="https://sebastienrousseau.com/nl/2026-05-12-iso-20022-pacs008-gestructureerd-adres-deadline/index.html" title="The novembre 2026 pacs.008 Structured-Address Deadline">jüngste Beitrag tot SWIFT-CBPR+-Frist voor strukturierte Adressen</a> liegt benachbart in de breiteren betalingsmodernisierungs-Debatte, in de ook BlackRocks Einreichungen hineinwirken. De Sinn deze Triangulation is niet, tot behaupten, dat een einzelne Architektur gewonnen hätte. Hij liegt darin, dat institutionelles en On-Chain-financieelsystem sich 2026 sneler op gedeelte Primitive zubewegen, als beide nog vóór een jaar erwartet hadden.</p>
+<h2 id="veelgestelde-vragen">Veelgestelde vragen <a class="heading-anchor" href="#veelgestelde-vragen" aria-label="Link naar Veelgestelde vragen">#</a></h2>
+<p><strong>Worin liegt de tatsächliche Unterschied tussen BRSRV/BSTBL en een stablecoin zoals USDC?</strong></p>
+<p>In de Wallet is de Unterschied weitgehend unsichtbar. Beides zijn fungible Token op een öffentlichen Blockchain, einlösbar tegen Dollar (of tegen de zugongeveere liegenden Fondsanteilswert), met DeFi komponooitrbar. Rechtlich is de Unterschied substanziell. USDC is een Payment-stablecoin onder de GENIUS Act, emittiert van een Permitted Payment stablecoin Issuer, met rendementverbot gegenüber Inhabern. BRSRV en BSTBL zijn Anteilsklassen registrierter geldmarktfonds onder de Investment Company Act van 1940, reguliert na Rule 2a-7, bij denen de rendement de natürliche Verzinsung des Anteils is. Een BRSRV-Houder is rechtlich Anteilseigner een Fonds. Een USDC-Houder is rechtlich Inhaber een betalingsinstruments.</p>
+<p><strong>Warum unterscheidet sich BSTBL van BUIDL, indien beide getokeniseerde BlackRock-Fonds op Ethereum zijn?</strong></p>
+<p>BUIDL, in maart 2024 gestartet, werd van begin aan als nieuwer Fonds met On-Chain-Architektur strukturiert, met Securitize als Partner en een op de Digital-Asset-Workflow zugeschnittenen Design. BSTBL is demgegenüber een nieuwe On-Chain-Anteilsklasse, de een bestaanden 6–7-miljarden-Dollar-konventionellen geldmarktfonds – de Select treasury Based Liquidity Fund – hinzugefügt wordt. BNY Mellon übernimmt de Rolle des Transfer Agents. De architektonische Bedeutung liegt darin, dat BSTBL toont, zoals een bestaandes, grootes, traditioneles geldmarktprodukt op de Chain gebracht worden kan, zonder es als nieuwen Fonds nieuw tot bouwen. Deze Schablone is – indien ze funktionooitrt – op iedere konventionellen MMF de sector übertragbar.</p>
+<p><strong>Warum is de 20-%-Deckel de OCC op getokeniseerde Reserven umstritten?</strong></p>
+<p>De OCC-Entwurf vom maart 2026 stelte een mogelijke Obergrenze van 20 % voor de Anteil de Reserven een stablecoin-Emittenten tot Diskussion, de in getokeniseerder Form gehouden worden darf. BlackRocks Kommentarschreiben argumentierte, dies wäre de aufsichtsrechtlichen Zielen de OCC „fremd&quot;, denn het risicoprofil een Reservewerts werde van Kreditqualität, Laufzeit en liquiditeit bestimmt – niet daarvan, ob hij op een Distributed Ledger gehouden of übertragen werde. Operativ würde de Deckel BUIDLs Rolle als primaire Reservedeckung van productenn zoals Ethenas USDtb en Jupiters JupUSD einschränken, de beide momenteel tot meer als 90 % op BUIDL zetten. De finale OCC-Regelung, fällig bis januari 2027, wordt beslissen, ob de Deckel übervaren, angehoben of fallengelassen wordt.</p>
+<p><strong>Was bedeutet es, dat de BRSRV-Einreichung de tot untpasützenden Blockchains niet benennt?</strong></p>
+<p>Het is eher een üblicher Zug früher SEC-Einreichungen als een strategische Mehrdeutigkeit. De Einreichung legt de rechtliche Struktur fest (een registrierter Fonds, de OnChain Shares over een permissioned Rahmen met Securitize als Transfer Agent emittiert), zonder sich op spezifische Chains festzuleggen, de BlackRock voraussichtlich näher tot Start benennt. BUIDL selbst startete op Ethereum en werd anschließend op Polygon, Avalanche, Optimism, Aptos en Arbitrum uitgebreid; BRSRV wordt angesichts des ausdrücklichen Verweises in de Einreichung op „mehrere öffentliche Blockchains&quot; am wahrscheinlichsten een vergelijkbaaren Multi-Chain-Muster folgen.</p>
+<p><strong>Ist dies het einde renditetragender stablecoins als productkategorie?</strong></p>
+<p>Es is het einde renditetragender Payment-stablecoins als Kategorie, tenminste na US-Bundesrecht, sofern de Kongress de GENIUS Act niet ändert. Es is niet het einde renditetragender On-Chain-Dollar als productkategorie – was gebruikers tatsächlich wollen. Deze Kategorie wandert nun in getokeniseerde geldmarktfondsanteile – BUIDL, BENJI, BRSRV, BSTBL, Ondos producten en de Welle konkurrierender getokeniseerder MMFs, de het BSTBL-Muster wahrscheinlich ontketenen wordt. De Instrumente worden in de Wallet leicht anders aussehen (de Tokenwert spiegelt aufgelaufene rendement statt een flachen 1,00-US-Dollar-Houdens wider), maar de ökonomische Funktion – dollaräquivalentes Exposure met treasury-rendement, abgerechnet op een öffentlichen Chain – wordt over een anderen regelgevenden Pfad erhouden.</p>
+<h2 id="quellen">Quellen <a class="heading-anchor" href="#quellen" aria-label="Link naar Quellen">#</a></h2>
+<ul>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/nl/2026-05-12-iso-20022-pacs008-gestructureerd-adres-deadline/index.html" title="The novembre 2026 pacs.008 Structured-Address Deadline">ISO 20022 pacs.008: de deadline voor gestructureerde adressen</a>.</li>
+<li>Sebastien Rousseau, (2018). <a href="https://sebastienrousseau.com/nl/2018-01-24-de-erc-20-tokenstandaard/index.html" title="De ERC-20-tokenstandaard">De ERC-20-tokenstandaard</a>.</li>
+<li>Sebastien Rousseau, (2018). <a href="https://sebastienrousseau.com/2018-01-09-undpasanding-the-technology-behind-blockchain/index.html" title="Undpasanding the Technology behind Blockchain">Undpasanding the Technology behind Blockchain</a>.</li>
+<li>Sebastien Rousseau, (2018). <a href="https://sebastienrousseau.com/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-bijnaer-payment-solution/index.html" title="Unveiling a New Cryptocurrency and Faster Payment Solution">Unveiling a New Cryptocurrency and Faster Payment Solution</a>.</li>
+<li>Unchained, (2026). <a href="https://unchainedcrypto.com/blackrock-files-for-two-new-tokenized-money-market-funds-targeting-stablecoin-capital/" title="BlackRock Files for Two New Tokenized Money-Market Funds Targeting stablecoin Capital">BlackRock Files for Two New Tokenized Money-Market Funds Targeting stablecoin Capital ⧉</a>. Unchained.</li>
+<li>The Block, (2026). <a href="https://www.theblock.co/post/399812/blackrock-urges-occ-to-drop-tokenized-reserve-cap-idea-expand-eligible-assets-in-genius-act-comment-letter" title="BlackRock urges OCC to drop tokenized reserve cap idea">BlackRock urges OCC to drop tokenized reserve cap idea, expand eligible assets in GENIUS Act comment letter ⧉</a>. The Block.</li>
+<li>BeInCrypto, (2026). <a href="https://beincrypto.com/blackrock-occ-stablecoin-genius-act-comment/" title="BlackRock Backs OCC stablecoin Rules Under GENIUS Act">BlackRock Backs OCC stablecoin Rules Under GENIUS Act ⧉</a>. BeInCrypto.</li>
+<li>Markets Media, (2026). <a href="https://www.marketsmedia.com/blackrock-fires-starting-gun-for-a-new-financial-era/" title="BlackRock Fires 'Starting Gun for a New Financial Era'">BlackRock Fires 'Starting Gun for a New Financial Era' ⧉</a>. Markets Media.</li>
+<li>Crowdfund Insider, (2026). <a href="https://www.crowdfundinsider.com/2026/05/278346-blackrock-focuses-on-tokenization-initiatives-with-blockchain-enabled-funds/" title="BlackRock Focuses On Tokenization initiatiefs With Blockchain Enabled Funds">BlackRock Focuses On Tokenization initiatiefs With Blockchain Enabled Funds ⧉</a>. Crowdfund Insider.</li>
+<li>CoinDesk, (2026). <a href="https://www.coindesk.com/business/2026/05/09/blackrock-deepens-tokenization-push-with-new-onchain-fund-offerings" title="BlackRock Deepens Tokenization Push with New Onchain Fund Offerings">BlackRock Deepens Tokenization Push with New Onchain Fund Offerings ⧉</a>. CoinDesk.</li>
+<li>Crypto Briefing, (2026). <a href="https://cryptobriefing.com/blackrock-tokenized-money-market-funds-stablecoins/" title="BlackRock doubles down on tokenization with new stablecoin reserve funds">BlackRock doubles down on tokenization with new stablecoin reserve funds ⧉</a>. Crypto Briefing.</li>
+<li>Latham &amp; Watkins, (2026). <a href="https://www.lw.com/en/insights/occ-issues-proposal-to-implement-the-genius-act" title="OCC Issues Proposal to Implement the GENIUS Act">OCC Issues Proposal to Implement the GENIUS Act ⧉</a>. Latham &amp; Watkins.</li>
+<li>Nixon Peabody, (2026). <a href="https://www.nixonpeabody.com/insights/alerts/2026/04/02/proposed-occ-regulations-for-payment-stablecoins-under-the-genius-act" title="Proposed OCC regulations for payment stablecoins under the GENIUS Act">Proposed OCC Regulations for Payment stablecoins Under the GENIUS Act ⧉</a>. Nixon Peabody LLP.</li>
+<li>Morgan Lewis, (2026). <a href="https://www.morganlewis.com/pubs/2026/04/occs-genius-act-proposal-what-prospective-issuers-need-to-know" title="stablecoin Regulation: OCC Proposal Under the GENIUS Act">stablecoin Regulation: OCC Proposal Under the GENIUS Act ⧉</a>. Morgan Lewis.</li>
+<li>American banker, (2026). <a href="https://www.americanbanker.com/news/stablecoin-yield-debate-dominates-genius-rule-comments" title="stablecoin yield debate dominates GENIUS rule comments">stablecoin yield debate dominates GENIUS rule comments ⧉</a>. American banker.</li>
+<li>Congressional Research dienst, (2026). <a href="https://www.congress.gov/crs-product/IF13174" title="The stablecoin Yield Debate">The stablecoin Yield Debate ⧉</a>. Congress.gov.</li>
+<li>Compliance Corylated, (2026). <a href="https://www.compliancecorylated.com/news/us-occ-closes-genius-act-loophole-allowing-yield-bearing-stablecoins/" title="US OCC closes GENIUS Act loophole allowing yield-bearing stablecoins">US OCC closes GENIUS Act loophole allowing yield-bearing stablecoins ⧉</a>. Compliance Corylated.</li>
+<li>CryptoSlate, (2025). <a href="https://cryptoslate.com/tokenized-us-treasuries-silently-replaced-defis-foundation-and-you-missed-the-critical-9-billion-shift/" title="Tokenized US Treasuries — CryptoSlate">Tokenized US Treasuries just broke DeFi's most sacred rule ⧉</a>. CryptoSlate.</li>
+<li>MEXC News, (2026). <a href="https://www.mexc.com/news/1080472" title="BlackRock files for two new tokenized funds with the U.S. SEC on Ethereum">BlackRock files for two new tokenized funds with the U.S. SEC on Ethereum ⧉</a>. MEXC News.</li>
+<li>Stellar Foundation, (2026). <a href="https://stellar.org/press/franklin-templeton-stellar-development-foundation-mark-five-years-of-benji-the-first-u-s-registered-tokenized-money-market-fund" title="Five Years of BENJI">Franklin Templeton, Stellar Development Foundation Mark Five Years of BENJI ⧉</a>. Stellar Development Foundation.</li>
+</ul>
+<aside class="author-card" aria-label="Over de auteur"><img alt="Portret van Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/nl/over/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior technoloog in banking; schrijft over toegepaste AI, ISO 20022-migratie, post-kwantumcryptografie voor financiële dienstverlening en de structurele transformatie van het wholesale-betalingsverkeer.</span><span class="author-credentials">20+ jaar ervaring bij HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/nl/over/index.html">Volledig profiel</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Laatst herzien <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Verwante artikelen</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2024-02-13-eu-ai-verordening-de-toekomst-van-wereldwijde-ai-regulering/index.html" class="related-media" aria-label="De EU AI-verordening: de toekomst van wereldwijde AI-regulering vormgeven" tabindex="-1"><img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="de-eu-ai-verordening-de-toekomst-van-wereldwijde-ai-regulering-vormgeven"><a href="https://sebastienrousseau.com/nl/2024-02-13-eu-ai-verordening-de-toekomst-van-wereldwijde-ai-regulering/index.html">De EU AI-verordening: de toekomst van wereldwijde AI-regulering vormgeven</a> <a class="heading-anchor" href="#de-eu-ai-verordening-de-toekomst-van-wereldwijde-ai-regulering-vormgeven" aria-label="Link naar De EU AI-verordening: de toekomst van wereldwijde AI-regulering vormgeven">#</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2018-01-24-de-erc-20-tokenstandaard/index.html" class="related-media" aria-label="De ERC-20-tokenstandaard" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="de-erc-20-tokenstandaard"><a href="https://sebastienrousseau.com/nl/2018-01-24-de-erc-20-tokenstandaard/index.html">De ERC-20-tokenstandaard</a> <a class="heading-anchor" href="#de-erc-20-tokenstandaard" aria-label="Link naar De ERC-20-tokenstandaard">#</a></h3><p><time datetime="2018-01-24">2018-01-24</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Artikelnavigatie"><a class="post-pagination-prev" href="/nl/2026-05-14-het-grootboek-beveiligen-post-kwantum-migratie-corporate-finance/"><span class="post-pagination-label">Vorige</span><span class="post-pagination-title">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</span></a><a class="post-pagination-next" href="/nl/2026-05-18-agentic-engineering-banken-blauwdruk-2026/"><span class="post-pagination-label">Volgende</span><span class="post-pagination-title">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/nl/over/index.html">Over mij</a></li>
+              <li><a href="/nl/contact/index.html">Contact</a></li>
+              <li><a href="/nl/gemaakt-met-statische-sitegenerator/index.html">Gemaakt met Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publicaties</h2>
+            <ul>
+              <li><a href="/nl/artikelen/index.html">Artikelen</a></li>
+              <li><a href="/nl/publicaties/index.html">Publicaties</a></li>
+              <li><a href="/nl/labels/index.html">Labels</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Werk</h2>
+            <ul>
+              <li><a href="/nl/projecten/index.html">Projecten</a></li>
+              <li><a href="/nl/afspeellijsten/index.html">Afspeellijsten</a></li>
+              <li><a href="/nl/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Netwerk</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Aanmelding nieuwsbrief">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — onderzoeksnotities over betalingen, AI en post-kwantumcryptografie. Geen spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="jij@bank.nl" />
+            <input type="hidden" name="_subject" value="Aanmelding nieuwsbrief — sebastienrousseau.com" />
+            <button type="submit">Abonneren</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden.</span>
+          <div class="social" aria-label="Sociale netwerken">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau op Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau op LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau op Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau op YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/nl/toegankelijkheid/index.html">Toegankelijkheid</a> ·
+            <a href="/nl/privacy/index.html">Privacy</a> ·
+            <a href="/nl/voorwaarden/index.html">Voorwaarden</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"nl"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"nl"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":3742,"headline":"BlackRock BRSRV en BSTBL onder de GENIUS Act: een getokeniseerd geldmarktfonds","description":"BlackRock's BRSRV- en BSTBL-aanvragen laten zien hoe een tokenised money-market fund rendement levert binnen het kader van de GENIUS Act.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp","width":"100vw","height":"100vh","caption":"Visualisatie van BlackRock BRSRV en BSTBL"},"url":"https://sebastienrousseau.com/nl/2026-05-15-blackrock-brsrv-bstbl-genius-act-getokeniseerd-geldmarktfonds/","datePublished":"2026-05-15T06:06:06+00:00","dateModified":"2026-05-15","inLanguage":"nl","keywords":"BlackRock, BRSRV, BSTBL, GENIUS Act, geldmarktfonds, stablecoin, tokenisatie","articleSection":"Payments","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/nl/2026-05-15-blackrock-brsrv-bstbl-genius-act-getokeniseerd-geldmarktfonds/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"nl"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/nl/"},{"@type":"ListItem","position":3,"name":"BlackRock BRSRV en BSTBL onder de GENIUS Act: een getokeniseerd geldmarktfonds","item":"https://sebastienrousseau.com/nl/2026-05-15-blackrock-brsrv-bstbl-genius-act-getokeniseerd-geldmarktfonds/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Zoeken">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Zoeken</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Zoeken">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Documentatie doorzoeken..." autocomplete="off" aria-label="Zoeken"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> sluiten</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigeren</span><span><kbd>Enter</kbd> openen</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

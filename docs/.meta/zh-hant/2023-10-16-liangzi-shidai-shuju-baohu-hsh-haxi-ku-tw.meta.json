@@ -1,11 +1,11 @@
 {
-  "locale": "zh_TW",
-  "keywords": "HSH, 雜湊庫, 後量子密碼學, 抗量子密碼, Argon2i, BScrypt, Scrypt, Rust, NIST, PQC",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
-  "language": "zh-Hant",
-  "description": "HSH 是一個用 Rust 開發的輕量級抗量子密碼雜湊庫，用於密碼雜湊與驗證。",
-  "date": "October 16, 2023",
-  "banner_alt": "量子計算主題的創意插圖",
   "title": "量子時代的資料保護：雜湊庫 HSH",
-  "subtitle": "HSH 使用抗量子密碼原語保護你的資料，即便面對未來的量子計算進展也能確保安全"
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp",
+  "banner_alt": "量子計算主題的創意插圖",
+  "language": "zh-Hant",
+  "keywords": "HSH, 雜湊庫, 後量子密碼學, 抗量子密碼, Argon2i, BScrypt, Scrypt, Rust, NIST, PQC",
+  "description": "HSH 是一個用 Rust 開發的輕量級抗量子密碼雜湊庫，用於密碼雜湊與驗證。",
+  "subtitle": "HSH 使用抗量子密碼原語保護你的資料，即便面對未來的量子計算進展也能確保安全",
+  "locale": "zh_TW",
+  "date": "October 16, 2023"
 }

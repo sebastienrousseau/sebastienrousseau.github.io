@@ -1,11 +1,11 @@
 {
-  "banner_alt": "神經網路與量子原子陣列的抽象視覺化。由重新排列的粒子形成的黑色計算機",
-  "description": "12 年後重新解讀《露西》——貝松對知識遷移到非生物基質的思考在 AI 與量子時代顯得格外貼切。",
-  "locale": "zh_TW",
-  "date": "May 11, 2026",
-  "language": "zh-Hant",
   "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
-  "title": "重溫露西的 U 盤：貝松所看到的知識向機器遷移",
+  "description": "12 年後重新解讀《露西》——貝松對知識遷移到非生物基質的思考在 AI 與量子時代顯得格外貼切。",
+  "language": "zh-Hant",
+  "date": "May 11, 2026",
   "subtitle": "AI、量子計算與知識——12 年後重新解讀盧克·貝松的《露西》",
+  "banner_alt": "神經網路與量子原子陣列的抽象視覺化。由重新排列的粒子形成的黑色計算機",
+  "locale": "zh_TW",
+  "title": "重溫露西的 U 盤：貝松所看到的知識向機器遷移",
   "keywords": "露西, 盧克·貝松, AI, 大型語言模型, 量子計算, 中性原子, 全腦模擬, Neuralink, 知識遷移, 基質獨立"
 }

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 11 Apr 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 11 Apr 2026 06:06:06 +0000" id="last-modified" />
+    <title>Kwantumdrempels verschuiven opnieuw — Sebastien Rousseau</title>
+
+    <meta name="description" content="Een nieuw paper suggereert dat het algoritme van Shor al met slechts 10.000 qubits zou kunnen draaien. De drempel voor cryptografisch relevante kwantumcomputing daalt snel.">
+<meta name="keywords" content="Shor algoritme, kwantumcomputing, post-kwantumcryptografie, beveiliging, qubits">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Quantum Thresholds Are Moving Again">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-F3UOJdnBXYwu8jJZL644GGzR+RaZY9/IUFHtby0jLdQ=' 'sha256-V9gjPhKXytGE/XjJctfB6XMZklU0V8ZkxsgE5qA51Lw=' 'sha256-naWYAlZHTG7N/EJthh1LoM6rVa+zHstHsjr0r9l4zkY=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/nl/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom-feed" href="/nl/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Kwantumdrempels verschuiven opnieuw — Sebastien Rousseau">
+<meta property="og:description" content="Een nieuw paper suggereert dat het algoritme van Shor al met slechts 10.000 qubits zou kunnen draaien. De drempel voor cryptografisch relevante kwantumcomputing daalt snel.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/nl/2026-04-11-kwantumdrempels-verschuiven-opnieuw/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="nl_NL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kwantumdrempels verschuiven opnieuw — Sebastien Rousseau">
+<meta name="twitter:description" content="Een nieuw paper suggereert dat het algoritme van Shor al met slechts 10.000 qubits zou kunnen draaien. De drempel voor cryptografisch relevante kwantumcomputing daalt snel.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/nl/2026-04-11-kwantumdrempels-verschuiven-opnieuw/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-04-11-les-seuils-quantiques-bougent-a-nouveau/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-04-11-quantum-thresholds-are-moving-again/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-04-11-quantenschwellen-verschieben-sich-erneut/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-04-11-los-umbrales-cuanticos-vuelven-a-moverse/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-04-11-le-soglie-quantistiche-si-muovono-di-nuovo/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-04-11-ryoushi-shikiichi-ga-mata-ugoki-hajimeta/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-04-11-yangja-gyegi-da-siusijak/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-04-11-kwantumdrempels-verschuiven-opnieuw/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-04-11-os-limiares-quanticos-voltam-a-se-mover/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-04-11-kvantovye-porogi-snova-dvizhutsya/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-04-11-liangzi-yuzhi-zai-yi-dong/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-04-11-liangzi-yuzhi-zai-yi-dong-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Naar hoofdinhoud gaan</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Navigatie omschakelen" />
+      <div class="wrap">
+        <a class="ap-brand" href="/nl/index.html" aria-label="Startpagina van Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Hoofdnavigatie">
+          <ul class="ap-menu">
+            <li><a href="/nl/over/index.html">Over mij</a></li>
+            <li><a href="/nl/artikelen/index.html" aria-current="page" class="active">Artikelen</a></li>
+            <li><a href="/nl/publicaties/index.html">Publicaties</a></li>
+            <li><a href="/nl/onderwerpen/index.html">Onderwerpen</a></li>
+            <li><a href="/nl/projecten/index.html">Projecten</a></li>
+            <li><a href="/nl/afspeellijsten/index.html">Afspeellijsten</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Donker thema inschakelen" aria-pressed="false" title="Thema wisselen">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Zoeken (Cmd of Ctrl + K)" title="Zoeken (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Taal">
+            <button type="button" class="ap-lang-toggle" aria-label="NL, Taal wijzigen" aria-expanded="false" aria-haspopup="menu" title="Taal wijzigen">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">NL</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="Binnenkort beschikbaar">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="Binnenkort beschikbaar">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="Binnenkort beschikbaar">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="Binnenkort beschikbaar">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="Binnenkort beschikbaar">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="Binnenkort beschikbaar">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="Binnenkort beschikbaar">🇮🇩 Indonesia</span>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="Binnenkort beschikbaar">🇵🇱 Polski</span>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="Binnenkort beschikbaar">🇷🇴 Română</span>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="Binnenkort beschikbaar">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="Binnenkort beschikbaar">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="Binnenkort beschikbaar">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Binnenkort beschikbaar">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="Binnenkort beschikbaar">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="Binnenkort beschikbaar">🇳🇬 Yorùbá</span>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/nl/contact/index.html" aria-label="Neem contact op">Neem contact op ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Navigatie omschakelen">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Kwantumdrempels verschuiven opnieuw</h1>
+      <p class="sub">Het algoritme van Shor zou al met 10.000 qubits kunnen draaien — en wat dat betekent</p>
+    <nav class="article-tags" aria-label="Onderwerpen"><a href="/tags/index.html#h3-shor-algoritme" class="article-tag" rel="tag">Shor algoritme</a><a href="/tags/index.html#h3-kwantumcomputing" class="article-tag" rel="tag">kwantumcomputing</a><a href="/tags/index.html#h3-post-kwantumcryptografie" class="article-tag" rel="tag">post-kwantumcryptografie</a><a href="/tags/index.html#h3-beveiliging" class="article-tag" rel="tag">beveiliging</a><a href="/tags/index.html#h3-qubits" class="article-tag" rel="tag">qubits</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-04-11T06:06:06+00:00" class="meta-pub">Gepubliceerd op 11 Apr 2026</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Bijgewerkt op 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Geschatte leestijd">9 min. leestijd</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Inhoud</h2><ol><li><a href="#kwantumdrempels-verschieben-sich-ernieuwt">kwantumdrempels verschieben sich ernieuwt</a></li><li><a href="#een-vertraute-annahme-nun-onder-druck">Een vertraute Annahme, nun onder Druck</a></li><li><a href="#de-konvergenz-hinter-de-verschiebung-fehlerkorrektur-architektur-en-parallelitat">De Konvergenz hinter de Verschiebung: Fehlerkorrektur, Architektur en Parallelität</a></li><li><a href="#von-miljoenen-tot-zehnduizendenn-was-de-zahlen-wirklich-bedeuten">Von miljoenen tot Zehnduizendenn: Was de Zahlen wirklich bedeuten</a></li><li><a href="#zeit-schaling-en-de-ungleiche-verwundbarkeit-cryptografischer-systeeme">Zeit, schaling en de ungleiche Verwundbarkeit cryptografischer systeeme</a></li><li><a href="#de-verbleibende-engineering-lucke">De verbleibende Engineering-Lücke</a></li><li><a href="#warum-de-sich-verdichtende-zeithorizont-jetzt-aufmerksamkeit-verlangt">Warum de sich verdichtende Zeithorizont jetzt Aufmerksamkeit verlangt</a></li><li><a href="#was-het-je-sector-bedeutet-een-praktischer-leitfaden">Was het je sector bedeutet: een praktischer Leitfaden</a></li><li><a href="#fazit">Fazit</a></li><li><a href="#veelgestelde-vragen">Veelgestelde vragen</a></li><li><a href="#quellen">Quellen</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Een nieuw paper suggereert dat het algoritme van Shor al met slechts 10.000 qubits zou kunnen draaien. De drempel voor cryptografisch relevante kwantumcomputing daalt snel.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>kwantumdrempels verschieben sich ernieuwt.</strong> Een nieuwer Aufsatz legt nahe, dat Shors Algorithmus op alleen 10.000 Qubits laufen könnte.</li>  <li><strong>Een vertraute Annahme, nun onder Druck.</strong> Im vergangenen jaarzehnt folgten Diskussionen um kwantumcomputing en cryptografie een vertrauten Bogen.</li>  <li><strong>De Konvergenz hinter de Verschiebung: Fehlerkorrektur, Architektur en Parallelität.</strong> Het resultaat entsteht niet uit een einzelnen Entdeckung.</li>  <li><strong>Von miljoenen tot Zehnduizendenn: Was de Zahlen wirklich bedeuten.</strong> jaarelang lag de Konsensschätzung voor de Ausführung van Shors Algorithmus in cryptografischen groottenordnungen bij miljoenen physischer Qubits.</li></ul></aside><h2 id="kwantumdrempels-verschieben-sich-ernieuwt">kwantumdrempels verschieben sich ernieuwt <a class="heading-anchor" href="#kwantumdrempels-verschieben-sich-ernieuwt" aria-label="Link naar kwantumdrempels verschieben sich ernieuwt">#</a></h2>
+<p>Een nieuwer Aufsatz legt nahe, dat Shors Algorithmus op alleen 10.000 Qubits laufen könnte. De Schwelle voor cryptografisch relevantes kwantumcomputing fällt sneler als allgemein angenommen.</p>
+<blockquote>
+<p><strong>Wesentliche inzichten</strong></p>
+<ul>
+<li>Een nieuwer Aufsatz schlägt vóór, dat Shors Algorithmus op alleen <strong>10.000 physischen Qubits</strong> ausführbar zijn könnte – ongeveer hundertmal minder als bisherige Konsensschätzungen.</li>
+<li>De Reduktion wordt door drei konvergierende Fortschritte getragen: hoograte-kwantumfehlerkorrekturcodes, rekonfigurierbare Anordnungen nieuwtraler Atome en erhöhte Parallelität.</li>
+<li>De dreiging is niet einheitlich. <strong>Elliptische-Kurven-cryptografie (ECC)</strong> is bij geringeren Qubit-Zahlen anfälliger; RSA-2048 vereist in vergleichbaren groottenordnungen duidelijk längere Laufzeiten.</li>
+<li>Es handelt sich um een <strong>theoretische Projektion</strong>, niet um een funktionooitrende Demonstration. Een erhebliche Engineering-Lücke bleibt tussen actueler Hardware en fehlertolerantem Betrieb in deze groottenordnung.</li>
+<li>post-kwantumcryptografiestandards zijn reeds finalisiert. De Priorität liegt nun darauf, <strong>de migratie tot beschleunigen</strong> – niet darauf, op het Erscheinen een kwantumsystems tot warten.</li>
+</ul>
+</blockquote>
+<h2 id="een-vertraute-annahme-nun-onder-druck">Een vertraute Annahme, nun onder Druck <a class="heading-anchor" href="#een-vertraute-annahme-nun-onder-druck" aria-label="Link naar Een vertraute Annahme, nun onder Druck">#</a></h2>
+<p>Im vergangenen jaarzehnt folgten Diskussionen um kwantumcomputing en cryptografie een vertrauten Bogen. kwantummaschinen gouden als theoretisch leistungsfähig, echter in grooten Maßstab als unpraktikabel. Moderne cryptografische systeeme tot brechen hätte miljoenen physischer Qubits vereist, en de Zeithorizont blieb komfortabel fern. Deze Annahme steht inmiddels ernsthaft onder Druck.</p>
+<p>Een jüngst verschenener Aufsatz, <a href="https://arxiv.org/pdf/2603.28627" title="Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits (PDF)">Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits ⧉</a>, schlägt ongeveers gevolgenreicheres vóór als een einzelnen Durchbruch. Hij legt nahe, dat de Schwelle voor cryptografisch relevantes kwantumcomputing een groottenordnung laager liegen könnte als bislang angenommen. Nicht miljoenen Qubits, sondern Zehnduizenden. De Unterscheidung is bedeutsam, en de daarmee angedeutete Richtung lässt sich schwer ignorieren.</p>
+<h2 id="de-konvergenz-hinter-de-verschiebung-fehlerkorrektur-architektur-en-parallelitat">De Konvergenz hinter de Verschiebung: Fehlerkorrektur, Architektur en Parallelität <a class="heading-anchor" href="#de-konvergenz-hinter-de-verschiebung-fehlerkorrektur-architektur-en-parallelitat" aria-label="Link naar De Konvergenz hinter de Verschiebung: Fehlerkorrektur, Architektur en Parallelität">#</a></h2>
+<p>Het resultaat entsteht niet uit een einzelnen Entdeckung. Es spiegelt een Konvergenz van Verbeterungen over mehrere Schichten des kwantumcomputing-Stacks wider, de samengenommen de Grenze des Machbaren verschieben.</p>
+<p>De pase Verbeterung betrifft de Fehlerkorrektur. Klassische Ansätze vereisten hoge Overheads – vaak Hunderte physische Qubits, um een einzelnes logisches Qubit darzustellen. De Aufsatz stützt sich stattdessen op hoograte-kwantumfehlerkorrekturcodes, de deze Overhead duidelijk reduzieren (<a href="https://www.emergentmind.com/papers/2603.28627" title="Shor's Algorithm with 10000 Atomic Qubits">Emergent Mind ⧉</a>). De zweite betrifft de Architektur. Het systeem basiert op rekonfigurierbaren Anordnungen nieuwtraler Atome, de terwijl de Berechnung nieuw angeordnet worden kunnen, um flexiblere Konnektivität en efficiëntere Ausführung tot mogelijk maken (<a href="https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/" title="Oratomic Launches to Build Utility-scale Quantum Computers">The Quantum Insider ⧉</a>). De dritte is Parallelität: Mehr Qubits erlauben es, meer Operationen gleichzeitig auszuführen en so de Gesamtlaufzeit tot verkürzen.</p>
+<p>Keiner deze Gedanken is isoliert nieuw. In Kombination echter definooitren ze nieuw, was zuvor als harte Grenze goud.</p>
+<h2 id="von-miljoenen-tot-zehnduizendenn-was-de-zahlen-wirklich-bedeuten">Von miljoenen tot Zehnduizendenn: Was de Zahlen wirklich bedeuten <a class="heading-anchor" href="#von-miljoenen-tot-zehnduizendenn-was-de-zahlen-wirklich-bedeuten" aria-label="Link naar Von miljoenen tot Zehnduizendenn: Was de Zahlen wirklich bedeuten">#</a></h2>
+<p>jaarelang lag de Konsensschätzung voor de Ausführung van Shors Algorithmus in cryptografischen groottenordnungen bij miljoenen physischer Qubits. De nieuwe Analyse legt nahe, dat deze Zahl onder bestimmten Annahmen op ongeveer 10.000 sinken könnte (<a href="https://arxiv.org/abs/2603.28627" title="Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits">arXiv ⧉</a>). Deze Zahl is echter niet het vollvoortdurende Bild.</p>
+<p>Am unteren einde dit domeins bleiben de Laufzeiten lang. De Faktorisierung van RSA-2048 met de minimalen Qubit-Zahl könnte nog steeds jaare continuen Betriebs vereisen. Schnellere Ausführung verlangt meer Qubits – potenziell Zehnduizenden. De Beziehung tussen Qubit-Zahl en Laufzeit is niet linear, en de Aufsatz präsentiert dies sorgfältig als Spektrum statt als feste Schwelle. Was sich verändert, is de Richtung: De horde is niet meer rein theoretisch. U is nun een vraag des Engineerings.</p>
+<h3 id="alte-annahmen-tegen-nieuwe-realitaten">Alte Annahmen tegen nieuwe Realitäten <a class="heading-anchor" href="#alte-annahmen-tegen-nieuwe-realitaten" aria-label="Link naar Alte Annahmen tegen nieuwe Realitäten">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Alte Annahme</th>
+<th>Neue Realität</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Erforderliche physische Qubits (Shors Algorithmus)</td>
+<td>~1.000.000+</td>
+<td>~10.000–26.000</td>
+</tr>
+<tr>
+<td>Zeit tot Brechen van RSA-2048 (bij minimaler Qubit-Zahl)</td>
+<td>In deze jaarzehnt niet machbar</td>
+<td>jaare (bij 10.000 Qubits); sneler met meer</td>
+</tr>
+<tr>
+<td>Zeit tot Brechen van ECC-256</td>
+<td>In deze jaarzehnt niet machbar</td>
+<td>dage (geschätzt bij ~26.000 Qubits)</td>
+</tr>
+<tr>
+<td>Dominantes Hardware-Paradigma</td>
+<td>Supraleitende Qubits</td>
+<td>Rekonfigurierbare Anordnungen nieuwtraler Atome</td>
+</tr>
+<tr>
+<td>Fehlerkorrektur-Overhead</td>
+<td>Hunderte physische Qubits je logischem Qubit</td>
+<td>Deutlich reduziert door hoograte-Codes</td>
+</tr>
+<tr>
+<td>Natur de horde</td>
+<td>Theoretisch</td>
+<td>Engineering</td>
+</tr>
+<tr>
+<td>migratiesdringlichkeit</td>
+<td>Langfristige planung</td>
+<td>Aktive Umsetzung jetzt vereist</td>
+</tr>
+</tbody>
+</table>
+<p><em>Quelle: Analyse op basis van <a href="https://arxiv.org/abs/2603.28627">arXiv:2603.28627 ⧉</a> en früherer Literatur.</em></p>
+<h2 id="zeit-schaling-en-de-ungleiche-verwundbarkeit-cryptografischer-systeeme">Zeit, schaling en de ungleiche Verwundbarkeit cryptografischer systeeme <a class="heading-anchor" href="#zeit-schaling-en-de-ungleiche-verwundbarkeit-cryptografischer-systeeme" aria-label="Link naar Zeit, schaling en de ungleiche Verwundbarkeit cryptografischer systeeme">#</a></h2>
+<p>Einer de bedeutendsten Beiträge des Aufsatzes is de Nuance, de hij met betrekking tot Zeit invoert. kwantumvorteil verschijnt niet op een Schlag. Hij existiert langs een Spektrums, het door de grootte des systeems en de Art des cryptografischen Ziels bestimmt wordt.</p>
+<p>Mit ongeveer 26.000 Qubits schätzen de Autoren, dat het Brechen de Elliptische-Kurven-cryptografie onder günstigen voorwaarden dage dauern könnte (<a href="https://arxiv.org/abs/2603.28627" title="Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits">arXiv ⧉</a>). Für RSA-2048 zijn de Zeitskalen erheblich länger. Deze Asymmetrie is belangrijk. U legt nahe, dat unterschiedliche cryptografische systeeme tot unterschiedlichen Zeitpunkten verwundbar worden kunnen – niet gleichzeitig – en dat de Übergang tot post-kwantum-standaards wahrscheinlich kein einzelnes Ereignis met een einzigen Frist zijn wordt.</p>
+<p>Dit Muster steht in Einklang met de breiteren Berichtpasattung. Analysen de letzten maande leggen nahe, dat kwantumsysteme, de weit verbreitete versleuteling herausfordern könnten, vóór einde des jaarzehnts entstehen könnten (<a href="https://www.nature.com/articles/d41586-026-01054-1" title="Quantum-computing breakthroughs pose risks to encryption">Nature ⧉</a>). regeringen en normungsgremien planen reeds Übergänge tot post-kwantumcryptografie, met Umsetzungsfristen, de bis in de 2030er jaare reichen (<a href="https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/" title="Oratomic Launches to Build Utility-scale Quantum Computers">The Quantum Insider ⧉</a>). De Diskussion is vom „Ob&quot; tot „Wann&quot; übergegangen.</p>
+<h2 id="de-verbleibende-engineering-lucke">De verbleibende Engineering-Lücke <a class="heading-anchor" href="#de-verbleibende-engineering-lucke" aria-label="Link naar De verbleibende Engineering-Lücke">#</a></h2>
+<p>Es is belangrijk, präzise tot benennen, was deze Aufsatz darstelt. Hij is een Projektion, keine Demonstration. De vorgeschlagenen systeeme hängen van Annahmen over Fehlerraten, Hardwarestabilität en schalingsverhouden ab, de in de vereisten groottenordnung nog niet gevalideerd werden. Aktuelle Experimente operieren op de Ebene van Hunderten bis wenigen Tausend Qubits – niet Zehnduizendenn, de over längere Zeiträume fehlertolerant arbeiten (<a href="https://phys.org/news/2026-04-quantum-built-qubits-team.html" title="Useful quantum computers could be built with as few as 10,000 qubits">Phys.org ⧉</a>).</p>
+<p>Een erhebliche Engineering-Lücke bleibt bestaan. De Weg van een überzeugenden theoretischen model tot een funktionooitrenden systeem, het in deze groottenordnung duurzaam fehlertolerant arbeitet, beinhoudet uitdagingen, de nog niet vollvoortdurend vpasanden, geschweige denn geontketent zijn. Was sich verändert heeft, is niet de Nähe een funktionooitrenden Maschine, sondern de Glaubwürdigkeit des Ziels. De Lücke verengt sich, en de Richtung des Fortschritts is konsistent.</p>
+<h2 id="warum-de-sich-verdichtende-zeithorizont-jetzt-aufmerksamkeit-verlangt">Warum de sich verdichtende Zeithorizont jetzt Aufmerksamkeit verlangt <a class="heading-anchor" href="#warum-de-sich-verdichtende-zeithorizont-jetzt-aufmerksamkeit-verlangt" aria-label="Link naar Warum de sich verdichtende Zeithorizont jetzt Aufmerksamkeit verlangt">#</a></h2>
+<p>De Bedeutung deze Arbeit liegt niet darin, dat cryptografie kortetermijn- gebrochen wordt. U liegt darin, dat sich de Zeithorizont op een Weise verdichtet, de heute tot treffende beslissingen beeinflusst. beveiligingssysteme worden met langen Lebenszyklen in Blick konzipiert. Heute versleutelde Daten moeten onder Umständen jahrzehntelang vertraulich bleiben. Infrastrukturentscheidungen, de in deze jaar getroffen worden, lassen sich in een Fünfjahresfenster alleen schwer revidieren. Treffen kwantumfähigkeiten früher een als erwartet, worden deze Annahmen fragil.</p>
+<p>Aus deze Gongeveer wordt post-kwantumcryptografie reeds in kritischen sectoren ausgerollt. Nicht omdat de dreiging unmittelbar wäre, sondern omdat de Übergang Zeit braucht en de kosten een vertraging asymmetrisch zijn. Es gibt een wiederkehrendes Muster in de geschiedenis des Computings: Fortschritt verschijnt langsam, bis hij es plötzlich niet meer is. Was als theoretische Verbeterung beginnt, wordt tot praktischen Restriktion, en was einst als fern abgetan werd, wordt tot ongeveers, het einzuplanen is. kwantumcomputing könnte exakt deze Bahn nehmen – niet door een einzelnen dramatischen Durchbruch, sondern door stetige Reduktionen bij kosten, Komplexität en Maßstab.</p>
+<h2 id="was-het-je-sector-bedeutet-een-praktischer-leitfaden">Was het je sector bedeutet: een praktischer Leitfaden <a class="heading-anchor" href="#was-het-je-sector-bedeutet-een-praktischer-leitfaden" aria-label="Link naar Was het je sector bedeutet: een praktischer Leitfaden">#</a></h2>
+<p>De Implikationen deze onderzoek zijn branchenübergrijpend niet einheitlich. De angemessene Reaktion hängt van de Art de gefährdeten cryptografischen activa ab, van de Sensitivität en Langlebigkeit de betroffenen Daten en vom Tempo, in de sich regelgevende Erwartungen bewegen.</p>
+<h3 id="financiele-dienstverlening-en-fintech">financiële dienstverlening en FinTech <a class="heading-anchor" href="#financiele-dienstverlening-en-fintech" aria-label="Link naar financiële dienstverlening en FinTech">#</a></h3>
+<p>financieelinstitute stehen vóór een samengezeten risico: Sie houden langlebige sensible Daten, bedrijven Infrastrukturen met langsamen Ernieuwerungszyklen en unterliegen een zunehmenden aufsichtsrechtlichen Prüfung met betrekking tot cryptografische Resilienz. ECC wordt in TLS-Verbindungen, mobiler Authentifizierung en digitaale Signaturen over alle betalingsschienen hinweg breit eingezet – jene cryptografische Kategorie, de de Aufsatz als bij geringeren Qubit-Zahlen am anfälligsten identifiziert. Institute, de nog keine cryptografische voorraadsaufnahme begonnen of een post-kwantummigratiesplan initiiert hebben, zouden moeten deze Aufsatz als Anstoß tot Beschleunigung begrijpen, niet als Gongeveer tot Panik. <a href="/nl/2023-11-19-crystals-kyber-het-beschermingsalgoritme-in-het-kwantumtijdperk/index.html">CRYSTALS-Kyber</a> en CRYSTALS-Dilithium, beide inmiddels van NIST gestandaardiseerd, zijn de geeigneten migratiesziele voor sleutelverkapselung beziehungsweise digitaale Signaturen.</p>
+<h3 id="offentlicher-sector-en-verteidigung">Öffentlicher sector en Verteidigung <a class="heading-anchor" href="#offentlicher-sector-en-verteidigung" aria-label="Link naar Öffentlicher sector en Verteidigung">#</a></h3>
+<p>Staatliche actoren hebben de stärkste Motivation – en in veel Fällen de Ressourcen –, de kwantumhardware-ontwikkeling over het öffentlich Bekannte uit tot beschleunigen. regeringen, de sensible Kommunikation, nachrichtendienstliche Daten of sleutel kritischer Infrastrukturen verwouden, moeten daarvan ausgehen, dat Gegner reeds versleutelde Daten voor een spätere ontsleuteling sammeln – een strategie, de gemeinhin als „Harvest now, decrypt later&quot; bezeichnet wordt. Für Organisationen des öffentlichen sectors wordt de Einhoudung nationaler Quantum-Readiness-Vorgaben zunehmend unumgänglich, en het Zeitfenster voor een proaktive migratie verengt sich.</p>
+<h3 id="gesundheitswesen-en-kritische-infrastrukturen">Gesundheitswesen en kritische Infrastrukturen <a class="heading-anchor" href="#gesundheitswesen-en-kritische-infrastrukturen" aria-label="Link naar Gesundheitswesen en kritische Infrastrukturen">#</a></h3>
+<p>Patientenakten, belastingungssysteme van Versorgern en industrienetze delen een gezamenlijke Verwundbarkeit: Daten en systeeme met zeer langen operativen Lebenszyklen, beschermd door cryptografische standaards, de voor een vorquantisches dreigingsmodell konzipiert werden. Een heute versleutelde medizinische Aufzeichnung moet mogelijkerweise fünfzig jaare lang privat bleiben. Een in deze jaar zertifiziertes belastingungssystem kan zwei jaarzehnte in inzet bleiben. Für deze sectoren is de sich verdichtende Zeithorizont keine abstrakte Sorge. Hij is een direkte uitdaging de gongeveerleggenden Annahmen hinter de heutigen beveiligingsarchitekturen.</p>
+<h2 id="fazit">Fazit <a class="heading-anchor" href="#fazit" aria-label="Link naar Fazit">#</a></h2>
+<p>De belangrijkste Aspekt dit Aufsatzes is niet de konkrete Qubit-Zahl, de hij nennt. Es is de Richtung, de ze impliziert. De vraag is niet meer, ob kwantumcomputers de moderne cryptografie herausfordern kunnen. U lautet, zoals snel de vereisten systeeme gebouwt worden kunnen – en ob de Organisationen, de op de heutigen standaards aufzetten, snel genug reagieren.</p>
+<p>Vorpas bleiben de antwoorden ungewiss. Doch de Spielraum, de vraag aufzuschieben, verengt sich, en de kosten des Wartens wachsen met iedere glaubhaften Senkung de theoretischen Schwelle. De cryptografische Gemeinschaft, beveiligingsverantwortliche en de op ze angewiesenen sectorn täten goed daran, deze Aufsatz niet als Anlass tot Beunruhigung tot betrachten, sondern als ernsthaften Anstoß, reeds laufende Übergänge tot beschleunigen.</p>
+<h2 id="veelgestelde-vragen">Veelgestelde vragen <a class="heading-anchor" href="#veelgestelde-vragen" aria-label="Link naar Veelgestelde vragen">#</a></h2>
+<p><strong>Können 10.000 Qubits RSA-versleuteling wirklich brechen?</strong></p>
+<p>Theoretisch ja – met belangrijken Einschränkungen. Während frühere Schätzungen miljoenen physischer Qubits forderten, legt nieuwe onderzoek tot hoograte-Fehlerkorrekturcodes en rekonfigurierbaren Anordnungen nieuwtraler Atome nahe, dat de Schwelle duidelijk laager liegt. Bei 10.000 Qubits bleibt de geschätzte Laufzeit voor de Faktorisierung van RSA-2048 echter extrem lang – potenziell jaare continuen Betriebs. Schnellere Angriffe verlangen meer Qubits, wahrscheinlich in domein van Zehnduizendenn. De Aufsatz stelt een Projektion op basis modellierter Annahmen dar, keine Demonstration op een funktionooitrenden systeem.</p>
+<p><strong>Welche versleuteling is door kwantumcomputing am stärksten gefährdet?</strong></p>
+<p>Elliptische-Kurven-cryptografie (ECC) is bij geringeren Qubit-Zahlen in Allgemeinen anfälliger als RSA-2048. De Aufsatz schätzt, dat het Brechen van ECC onder günstigen voorwaarden dage dauern könnte – bij ongeveer 26.000 rekonfigurierbaren Qubits. RSA-2048 vereist bij vergleichbaren Qubit-Zahlen duidelijk längere Laufzeiten. Deze Asymmetrie bedeutet, dat ECC-abhängige systeeme – verbreitet in TLS, mobiler Authentifizierung en Blockchain – op een kürzeren Zeithorizont gefährdet zijn kunnen als RSA-basierte Infrastrukturen.</p>
+<p><strong>Was is een rekonfigurierbares Qubit uit nieuwtralen Atomen?</strong></p>
+<p>Qubits uit nieuwtralen Atomen zijn einzelne Atome – typischerweise Rubidium of Cäsium –, de mittels Laserlicht in een Vakuumkammer eingefangen en manipuliert worden. „Rekonfigurierbar&quot; bedeutet, dat de Anordnung de Atome terwijl de Berechnung dynamisch verändert worden kan, was een efficiëntere Ausführung komplexer kwantumschoudkreise maakt mogelijk. Deze Flexibilität reduziert de Anzahl physischer Qubits, de voor fehlertolerante logische Operationen vereist zijn, en is een wesentlicher Gongeveer, weshalb de nieuwe Aufsatz laagere Qubit-Schätzungen erreicht als frühere Arbeiten op basis supraleitender Qubit-Architekturen.</p>
+<p><strong>Was is post-kwantumcryptografie, en warum wordt ze jetzt ingevoerd?</strong></p>
+<p>post-kwantumcryptografie (PQC) bezeichnet cryptografische Algorithmen, de zowel tegen klassische als tegen kwantumcomputers als sicher gelten. NIST heeft 2024 zijn pasen PQC-standaardsatz finalisiert, darunter <a href="/nl/2023-11-19-crystals-kyber-het-beschermingsalgoritme-in-het-kwantumtijdperk/index.html">CRYSTALS-Kyber</a> voor de sleutelverkapselung en CRYSTALS-Dilithium voor digitaale Signaturen. De Einführung beginnt jetzt – weit bevor kwantumcomputers een unmittelbare dreiging darstellen –, omdat cryptografische Übergänge langsam verlaufen. Eingebettete standaards in de wereldwijden Infrastruktur auszutauschen, dauert in de Regel een jaarzehnt of länger, en heute versleutelde Daten moeten onder Umständen lange na de rijping de kwantumfähigkeiten vertraulich bleiben.</p>
+<p><strong>Wie veel Qubits heeft de heute leistungsfähigste kwantumcomputers?</strong></p>
+<p>begin 2026 arbeiten führende kwantumsysteme in domein van Hunderten bis wenigen Tausend physischen Qubits. Entscheidend is, dat de meisten nog niet fehlertolerant zijn – ze operieren unterhalb de voor anhoudende, betrouwbaare logische Berechnungen vereisten Fehlerkorrekturschwellen. De Lücke tussen heutiger Hardware en de in nieuwen Aufsatz beschriebenen Zehnduizendenn hoogwertiger, fehlertoleranter logischer Qubits bleibt erheblich, ook indien sich het Fortschrittstempo over de platformen Supraleitung, nieuwtrale Atome en Ionenfallen beschleunigt.</p>
+<h2 id="quellen">Quellen <a class="heading-anchor" href="#quellen" aria-label="Link naar Quellen">#</a></h2>
+<ul>
+<li>Sebastien Rousseau, (2025). <a href="https://sebastienrousseau.com/nl/2025-09-01-kwantumveilige-betalingen-epaa/index.html" title="Quantum-Safe Payments: Why the Payments Industry Must Act Now">Quantum-Safe Payments: Why the Payments Industry Must Act Now</a>.</li>
+<li>Sebastien Rousseau, (2023). <a href="https://sebastienrousseau.com/nl/2023-12-11-kwantumsleuteldistributie-revolutie-bankbeveiliging/index.html" title="Quantum Key Distribution: revolutionising Security in banking">Quantum Key Distribution: revolutionising Security in banking</a>.</li>
+<li>Sebastien Rousseau, (2023). <a href="https://sebastienrousseau.com/nl/2023-11-19-crystals-kyber-het-beschermingsalgoritme-in-het-kwantumtijdperk/index.html" title="CRYSTALS-Kyber: het beschermingsalgoritme in het kwantumtijdperk">CRYSTALS-Kyber: het beschermingsalgoritme in het kwantumtijdperk</a>.</li>
+<li>Anonymous, (2026). <a href="https://arxiv.org/abs/2603.28627" title="Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits">Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits ⧉</a>. arXiv preprint arXiv:2603.28627.</li>
+<li>Castelvecchi, D. (2026). <a href="https://www.nature.com/articles/d41586-026-01054-1" title="Quantum-computing breakthroughs pose risks to encryption">Quantum-computing breakthroughs pose risks to encryption ⧉</a>. Nature.</li>
+<li>Phys.org, (2026). <a href="https://phys.org/news/2026-04-quantum-built-qubits-team.html" title="Useful quantum computers could be built with as few as 10,000 qubits">Useful quantum computers could be built with as few as 10,000 qubits ⧉</a>. Phys.org.</li>
+</ul>
+<aside class="author-card" aria-label="Over de auteur"><img alt="Portret van Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/nl/over/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior technoloog in banking; schrijft over toegepaste AI, ISO 20022-migratie, post-kwantumcryptografie voor financiële dienstverlening en de structurele transformatie van het wholesale-betalingsverkeer.</span><span class="author-credentials">20+ jaar ervaring bij HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/nl/over/index.html">Volledig profiel</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Laatst herzien <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Verwante artikelen</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2026-05-11-lucy-besson-kennisoverdracht-ai-en-kwantum/index.html" class="related-media" aria-label="Lucy Besson — kennisoverdracht in AI en kwantum" tabindex="-1"><img alt="Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles" src="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="lucy-besson-kennisoverdracht-in-ai-en-kwantum"><a href="https://sebastienrousseau.com/nl/2026-05-11-lucy-besson-kennisoverdracht-ai-en-kwantum/index.html">Lucy Besson — kennisoverdracht in AI en kwantum</a> <a class="heading-anchor" href="#lucy-besson-kennisoverdracht-in-ai-en-kwantum" aria-label="Link naar Lucy Besson — kennisoverdracht in AI en kwantum">#</a></h3><p><time datetime="2026-05-11">2026-05-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2025-09-01-kwantumveilige-betalingen-epaa" class="related-media" aria-label="Kwantumveilige betalingen — EPAA-whitepaper" tabindex="-1"><img alt="Quantum computing circuit board in blue light" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="kwantumveilige-betalingen-epaa-whitepaper"><a href="https://sebastienrousseau.com/nl/2025-09-01-kwantumveilige-betalingen-epaa">Kwantumveilige betalingen — EPAA-whitepaper</a> <a class="heading-anchor" href="#kwantumveilige-betalingen-epaa-whitepaper" aria-label="Link naar Kwantumveilige betalingen — EPAA-whitepaper">#</a></h3><p><time datetime="2025-09-01">2025-09-01</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2024-04-22-fout-ontdekt-in-kwantumalgoritme-voor-rooster-gebaseerde-cryptografie/index.html" class="related-media" aria-label="Fout ontdekt in kwantumalgoritme voor rooster-gebaseerde cryptografie" tabindex="-1"><img alt="Image generated using MidJourney - A Network of digital nodes in red and blue hues." src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="fout-ontdekt-in-kwantumalgoritme-voor-rooster-gebaseerde-cryptografie"><a href="https://sebastienrousseau.com/nl/2024-04-22-fout-ontdekt-in-kwantumalgoritme-voor-rooster-gebaseerde-cryptografie/index.html">Fout ontdekt in kwantumalgoritme voor rooster-gebaseerde cryptografie</a> <a class="heading-anchor" href="#fout-ontdekt-in-kwantumalgoritme-voor-rooster-gebaseerde-cryptografie" aria-label="Link naar Fout ontdekt in kwantumalgoritme voor rooster-gebaseerde cryptografie">#</a></h3><p><time datetime="2024-04-22">2024-04-22</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Bronnen en referenties</h2><ol class="article-sources-list"><li><a href="https://arxiv.org/pdf/2603.28627" rel="external noopener nofollow"><span class="source-host">arxiv.org</span><span class="source-path">/pdf/2603.28627</span></a></li><li><a href="https://arxiv.org/abs/2603.28627" rel="external noopener nofollow"><span class="source-host">arxiv.org</span><span class="source-path">/abs/2603.28627</span></a></li></ol></aside><nav class="post-pagination" aria-label="Artikelnavigatie"><a class="post-pagination-prev" href="/nl/2025-09-01-kwantumveilige-betalingen-epaa/"><span class="post-pagination-label">Vorige</span><span class="post-pagination-title">Quantum-Safe Payments: Why the Industry Must Act Now</span></a><a class="post-pagination-next" href="/nl/2026-05-11-lucy-besson-kennisoverdracht-ai-en-kwantum/"><span class="post-pagination-label">Volgende</span><span class="post-pagination-title">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/nl/over/index.html">Over mij</a></li>
+              <li><a href="/nl/contact/index.html">Contact</a></li>
+              <li><a href="/nl/gemaakt-met-statische-sitegenerator/index.html">Gemaakt met Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publicaties</h2>
+            <ul>
+              <li><a href="/nl/artikelen/index.html">Artikelen</a></li>
+              <li><a href="/nl/publicaties/index.html">Publicaties</a></li>
+              <li><a href="/nl/labels/index.html">Labels</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Werk</h2>
+            <ul>
+              <li><a href="/nl/projecten/index.html">Projecten</a></li>
+              <li><a href="/nl/afspeellijsten/index.html">Afspeellijsten</a></li>
+              <li><a href="/nl/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Netwerk</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Aanmelding nieuwsbrief">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — onderzoeksnotities over betalingen, AI en post-kwantumcryptografie. Geen spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="jij@bank.nl" />
+            <input type="hidden" name="_subject" value="Aanmelding nieuwsbrief — sebastienrousseau.com" />
+            <button type="submit">Abonneren</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden.</span>
+          <div class="social" aria-label="Sociale netwerken">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau op Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau op LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau op Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau op YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/nl/toegankelijkheid/index.html">Toegankelijkheid</a> ·
+            <a href="/nl/privacy/index.html">Privacy</a> ·
+            <a href="/nl/voorwaarden/index.html">Voorwaarden</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"nl"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"nl"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2016,"headline":"Kwantumdrempels verschuiven opnieuw","description":"Een nieuw paper suggereert dat het algoritme van Shor al met slechts 10.000 qubits zou kunnen draaien. De drempel voor cryptografisch relevante kwantumcomputing daalt snel.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp","width":"100vw","height":"100vh","caption":"Visualisatie van de evolutie van kwantumdrempels"},"url":"https://sebastienrousseau.com/nl/2026-04-11-kwantumdrempels-verschuiven-opnieuw/","datePublished":"2026-04-11T06:06:06+00:00","dateModified":"2026-05-11","inLanguage":"nl","keywords":"Shor algoritme, kwantumcomputing, post-kwantumcryptografie, beveiliging, qubits","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/nl/2026-04-11-kwantumdrempels-verschuiven-opnieuw/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"nl"},"citation":[{"@type":"CreativeWork","url":"https://arxiv.org/pdf/2603.28627"},{"@type":"CreativeWork","url":"https://arxiv.org/abs/2603.28627"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/nl/"},{"@type":"ListItem","position":3,"name":"Kwantumdrempels verschuiven opnieuw","item":"https://sebastienrousseau.com/nl/2026-04-11-kwantumdrempels-verschuiven-opnieuw/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Zoeken">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Zoeken</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Zoeken">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Documentatie doorzoeken..." autocomplete="off" aria-label="Zoeken"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> sluiten</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigeren</span><span><kbd>Enter</kbd> openen</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

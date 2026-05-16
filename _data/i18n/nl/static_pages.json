@@ -1,0 +1,99 @@
+{
+  "_comment": "Per-static-page metadata for the Dutch mirror. DRAFT — pending native-speaker review. Keys are EN slugs; entries replace EN values in <title>, <meta name=description>, <meta name=keywords>, og:*, twitter:*, and the hero subtitle.",
+  "about": {
+    "title": "Over mij — Sebastien Rousseau",
+    "subtitle": "De toekomst van bank- en financiële dienstverlening vormgeven door de strategische integratie van kunstmatige intelligentie, post-kwantumcryptografie en blockchaintechnologie.",
+    "description": "Sebastien Rousseau, senior technoloog in banking: toegepaste AI, ISO 20022-migratie, post-kwantumcryptografie, structurele transformatie van wholesale-betalingen.",
+    "keywords": "Sebastien Rousseau, biografie, banking, betalingen, AI, ISO 20022, post-kwantumcryptografie, HSBC, PayPal, Barclays"
+  },
+  "papers": {
+    "title": "Publicaties — Sebastien Rousseau",
+    "subtitle": "Sectorale whitepapers en toegepast onderzoek voor besluitvormers in betalingsverkeer en beveiliging.",
+    "description": "Artikelen, rapporten en publicaties van Sebastien Rousseau over AI, ISO 20022-betalingen en post-kwantumcryptografie.",
+    "keywords": "publicaties, artikelen, rapporten, onderzoek, ISO 20022, AI, post-kwantumcryptografie"
+  },
+  "projects": {
+    "title": "Projecten — Sebastien Rousseau",
+    "subtitle": "Open-sourceprojecten in Python, Rust en JavaScript voor de toekomst van de financiële sector.",
+    "description": "Portfolio van open-sourcebibliotheken onderhouden door Sebastien Rousseau voor betalingsverkeer, grensoverschrijdende settlement en kwantumveilige cryptografie.",
+    "keywords": "open-sourceprojecten, Python, Rust, betalingen, ISO 20022, post-kwantumcryptografie"
+  },
+  "topics": {
+    "title": "Onderwerpen — Sebastien Rousseau",
+    "subtitle": "Artikelen over AI, post-kwantumcryptografie, ISO 20022 en de toekomst van het betalingsverkeer.",
+    "description": "Analyses per onderwerp: toegepaste AI, ISO 20022-betalingen, post-kwantumcryptografie en de transformatie van het wholesale-betalingsverkeer.",
+    "keywords": "onderwerpen, thema's, AI, betalingen, ISO 20022, post-kwantumcryptografie"
+  },
+  "tags": {
+    "title": "Labels — Sebastien Rousseau",
+    "subtitle": "Doorblader de site per onderwerp: AI, betalingen, post-kwantumcryptografie, open source.",
+    "description": "Doorblader artikelen per label: AI, ISO 20022, blockchain, post-kwantumcryptografie en meer.",
+    "keywords": "labels, tags, onderwerp-navigatie"
+  },
+  "contact": {
+    "title": "Contact — Sebastien Rousseau",
+    "subtitle": "Een vraag of behoefte aan advies? Schrijf mij gerust.",
+    "description": "Neem contact op met Sebastien Rousseau voor advies over transformatie van betalingsverkeer, ISO 20022-migratie of post-kwantumstrategie.",
+    "keywords": "contact, advies, betalingen, ISO 20022, post-kwantumcryptografie"
+  },
+  "accessibility": {
+    "title": "Toegankelijkheid — Sebastien Rousseau",
+    "subtitle": "Toegewijd aan digitale toegankelijkheid voor mensen met een beperking.",
+    "description": "Toegankelijkheidsverklaring: WCAG 2.2 AA-conformiteit, inclusieve principes, feedback en contactgegevens om problemen te melden.",
+    "keywords": "toegankelijkheid, WCAG, conformiteit, digitale inclusie, audit"
+  },
+  "privacy": {
+    "title": "Privacyverklaring — Sebastien Rousseau",
+    "subtitle": "Uw privacy is voor ons belangrijk.",
+    "description": "Hoe deze site gegevens verzamelt, gebruikt en beschermt. Anonieme bezoekersmeting, cookies, hosting en AVG-rechten.",
+    "keywords": "privacy, AVG, cookies, persoonsgegevens, analytics"
+  },
+  "terms": {
+    "title": "Gebruiksvoorwaarden — Sebastien Rousseau",
+    "subtitle": "Algemene gebruiksvoorwaarden van de website.",
+    "description": "Algemene gebruiksvoorwaarden van de website sebastienrousseau.com: contentlicentie, beperkingen, merken en jurisdictie.",
+    "keywords": "voorwaarden, gebruiksvoorwaarden, licentie, copyright"
+  },
+  "made-with-static-site-generator": {
+    "title": "Gemaakt met Static Site Generator — Sebastien Rousseau",
+    "subtitle": "Ontdek de statische sitegenerator van de volgende generatie.",
+    "description": "Deze website wordt gegenereerd met Shokunin, een snelle statische sitegenerator geschreven in Rust.",
+    "keywords": "Shokunin, statische sitegenerator, Rust, prestaties"
+  },
+  "made-with-shokunin": {
+    "title": "Gemaakt met Shokunin — Sebastien Rousseau",
+    "subtitle": "Ontdek de statische sitegenerator van de volgende generatie.",
+    "description": "Deze website is gemaakt met Shokunin, een statische sitegenerator in Rust, geoptimaliseerd voor prestaties en SEO.",
+    "keywords": "Shokunin, SSG, Rust, prestaties, SEO"
+  },
+  "playlists": {
+    "title": "Afspeellijsten — Sebastien Rousseau",
+    "subtitle": "Spotify-afspeellijsten geselecteerd voor diepe focus, creativiteit en engineering-mindset.",
+    "description": "Muziek- en luisterselectie van Sebastien Rousseau.",
+    "keywords": "afspeellijsten, muziek"
+  },
+  "404": {
+    "title": "Pagina niet gevonden — Sebastien Rousseau",
+    "subtitle": "Helaas, deze pagina kon niet worden gevonden.",
+    "description": "De gevraagde pagina is niet gevonden. Keer terug naar de startpagina of gebruik de zoekfunctie.",
+    "keywords": "404, pagina niet gevonden"
+  },
+  "offline": {
+    "title": "Offline — Sebastien Rousseau",
+    "subtitle": "Controleer uw verbinding en probeer het opnieuw.",
+    "description": "U bent offline. Herstel de verbinding om de inhoud te bekijken.",
+    "keywords": "offline, PWA"
+  },
+  "thanks": {
+    "title": "Bedankt — Sebastien Rousseau",
+    "subtitle": "Hartelijk dank voor uw bericht!",
+    "description": "Bedankt voor uw bericht. Ik neem zo spoedig mogelijk contact met u op.",
+    "keywords": "bedankt"
+  },
+  "articles": {
+    "title": "Artikelen — Sebastien Rousseau",
+    "subtitle": "Artikelen over AI, post-kwantumcryptografie, ISO 20022 en de toekomst van het betalingsverkeer.",
+    "description": "Artikelen over toegepaste AI, post-kwantumcryptografie, ISO 20022-betalingen en de transformatie van het wholesale-betalingsverkeer.",
+    "keywords": "artikelen, onderzoek, AI, post-kwantumcryptografie, ISO 20022, wholesale-betalingen"
+  }
+}

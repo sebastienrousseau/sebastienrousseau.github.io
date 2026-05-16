@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sun, 12 Nov 2023 20:30:00 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sun, 12 Nov 2023 20:30:00 +0000" id="last-modified" />
+    <title>Generatieve AI verkennen — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Een diepgaande verkenning van generatieve AI: architecturen, trainingsstrategieën en toepassingen in financiën, kunst en wetenschap.">
+<meta name="keywords" content="Generatieve AI, LLM, GAN, diffusiemodellen, GPT, machine learning, AI">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-F3UOJdnBXYwu8jJZL644GGzR+RaZY9/IUFHtby0jLdQ=' 'sha256-JhbKETyuyzz8VP61rTi+49XUJBpbmyw1zTo38KmOaos=' 'sha256-naWYAlZHTG7N/EJthh1LoM6rVa+zHstHsjr0r9l4zkY=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/nl/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom-feed" href="/nl/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Generatieve AI verkennen — Sebastien Rousseau">
+<meta property="og:description" content="Een diepgaande verkenning van generatieve AI: architecturen, trainingsstrategieën en toepassingen in financiën, kunst en wetenschap.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/nl/2023-11-12-generatieve-ai-verkennen/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="nl_NL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Generatieve AI verkennen — Sebastien Rousseau">
+<meta name="twitter:description" content="Een diepgaande verkenning van generatieve AI: architecturen, trainingsstrategieën en toepassingen in financiën, kunst en wetenschap.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/nl/2023-11-12-generatieve-ai-verkennen/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2023-11-12-explorer-l-ia-generative/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2023-11-12-exploring-generative-ai/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2023-11-12-generative-ki-im-detail/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2023-11-12-explorar-la-ia-generativa/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2023-11-12-esplorare-lia-generativa/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2023-11-12-seisei-ai-wo-tankyuu-suru/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2023-11-12-saengseonghyung-ai-tamgu/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2023-11-12-generatieve-ai-verkennen/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2023-11-12-explorar-a-ia-generativa/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2023-11-12-izuchaem-generativnyi-ii/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Naar hoofdinhoud gaan</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Navigatie omschakelen" />
+      <div class="wrap">
+        <a class="ap-brand" href="/nl/index.html" aria-label="Startpagina van Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Hoofdnavigatie">
+          <ul class="ap-menu">
+            <li><a href="/nl/over/index.html">Over mij</a></li>
+            <li><a href="/nl/artikelen/index.html" aria-current="page" class="active">Artikelen</a></li>
+            <li><a href="/nl/publicaties/index.html">Publicaties</a></li>
+            <li><a href="/nl/onderwerpen/index.html">Onderwerpen</a></li>
+            <li><a href="/nl/projecten/index.html">Projecten</a></li>
+            <li><a href="/nl/afspeellijsten/index.html">Afspeellijsten</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Donker thema inschakelen" aria-pressed="false" title="Thema wisselen">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Zoeken (Cmd of Ctrl + K)" title="Zoeken (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Taal">
+            <button type="button" class="ap-lang-toggle" aria-label="NL, Taal wijzigen" aria-expanded="false" aria-haspopup="menu" title="Taal wijzigen">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">NL</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="Binnenkort beschikbaar">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="Binnenkort beschikbaar">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="Binnenkort beschikbaar">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="Binnenkort beschikbaar">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="Binnenkort beschikbaar">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="Binnenkort beschikbaar">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="Binnenkort beschikbaar">🇮🇩 Indonesia</span>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="Binnenkort beschikbaar">🇵🇱 Polski</span>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="Binnenkort beschikbaar">🇷🇴 Română</span>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="Binnenkort beschikbaar">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="Binnenkort beschikbaar">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="Binnenkort beschikbaar">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Binnenkort beschikbaar">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="Binnenkort beschikbaar">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="Binnenkort beschikbaar">🇳🇬 Yorùbá</span>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/nl/contact/index.html" aria-label="Neem contact op">Neem contact op ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Navigatie omschakelen">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Generatieve AI verkennen</h1>
+      <p class="sub">Het landschap van moderne generatieve modellen, hun mogelijkheden en hun grenzen</p>
+    <nav class="article-tags" aria-label="Onderwerpen"><a href="/tags/index.html#h3-generatieve-ai" class="article-tag" rel="tag">Generatieve AI</a><a href="/tags/index.html#h3-llm" class="article-tag" rel="tag">LLM</a><a href="/tags/index.html#h3-gan" class="article-tag" rel="tag">GAN</a><a href="/tags/index.html#h3-diffusiemodellen" class="article-tag" rel="tag">diffusiemodellen</a><a href="/tags/index.html#h3-gpt" class="article-tag" rel="tag">GPT</a><a href="/tags/index.html#h3-machine-learning" class="article-tag" rel="tag">machine learning</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">AI</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2023-11-12T20:30:00+00:00" class="meta-pub">Gepubliceerd op 12 Nov 2023</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Bijgewerkt op 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Geschatte leestijd">9 min. leestijd</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Inhoud</h2><ol><li><a href="#overzicht">Overzicht</a></li><li><a href="#idee">Idee</a></li><li><a href="#impact">Impact</a></li><li><a href="#prikkels">prikkels</a></li><li><a href="#fazit">Fazit</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Een diepgaande verkenning van generatieve AI: architecturen, trainingsstrategieën en toepassingen in financiën, kunst en wetenschap.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Overzicht.</strong> Generative Kunstmatige Intelligentie is een fortgeschrittenes Teilgebiet des maschinellen Lernens, het Computer befähigt, Inhoude tot erzeugen, de van menschlich gecreërenen kaum tot unterscheiden zijn.</li>  <li><strong>Idee.</strong> De Reise de generatieve AI begann met einfachen modelen, de kaum samenhängende Sätze formulieren konden.</li>  <li><strong>Impact.</strong> Generative AI is niet alleen akademische Kuriosität, sondern een transformative Kraft quer door talrijke sectorn.</li>  <li><strong>prikkels.</strong> De ontwikkeling generatieve AI wordt in hogem Maße van ökonomischen prikkelsn getragen.</li></ul></aside><p><img src="https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp" alt="AI-concept, 3D-Rendering, konzeptionelles Bild"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<h2 id="overzicht">Overzicht <a class="heading-anchor" href="#overzicht" aria-label="Link naar Overzicht">#</a></h2>
+<h3 id="de-funktionsweise-generatieve-ai-begrijpen">De Funktionsweise generatieve AI begrijpen <a class="heading-anchor" href="#de-funktionsweise-generatieve-ai-begrijpen" aria-label="Link naar De Funktionsweise generatieve AI begrijpen">#</a></h3>
+<h4>Einführung in de generatieve AI</h4>
+<p>Generative Kunstmatige Intelligentie is een fortgeschrittenes Teilgebiet des maschinellen Lernens, het Computer befähigt, Inhoude tot erzeugen, de van menschlich gecreërenen kaum tot unterscheiden zijn. Deze Technologie is een Teilbereich de AI, de de stap van reaktiven antwoorden tot proaktiven Schöpfung vollzieht. Während u klassische AI het Wetter ansagt, könnte generatieve AI een Gedicht over een Regentag schreiben – met Metaphern en Gefühlen, de menschlich wirken.</p>
+<p>Bei generatieve AI geht es darum, de nächste Sequenz in een Muster vorherzusagen – Wörter, Pixel of Töne. uw Stärke liegt darin, uit Daten tot lernen, um nieuwe Schöpfungen tot hervorzubringen, de sich vom Bestehenden unterscheiden.</p>
+<h4>De kennisschaft hinter generatieve AI</h4>
+<p>Um tot begrijpen, zoals generatieve AI zoals ChatGPT funktionooitrt, moet man epas in de nieuwronalen netwerkarchitekturen eintauchen, de ze andrijven. An de Spitze deze Architekturen steht het Transformer-model – een Typ nieuwronaler Netze, de besonders goed met sequenziellen Daten omzeilt. Anders als zijne Vorgänger verarbeitet de Transformer Daten niet streng sequenziell, sondern kan alle Teile gleichzeitig betrachten. Het nennt sich Attention-Mechanismus: Hij erlaubt de model, de belang unterschiedlicher Eingabeteile bij de voorspelling een Ausgabe tot gewichten.</p>
+<p>Het training deze modele bedeutet, ze met een riesigen Textkorpus tot füttern. Während des trainings sagt het model vorher, was als Nächstes in een Satz kommt, en ontvangt Rückmeldung tot zijn voorspellingen. Im Laufe de Zeit justiert es zijne internen Parameter na, um zijne nauwkeurigheid tot erhöhen. Unüberwachtes Lernen vereist keine gelabelten Daten en erlaubt es de model, uit beliebigen Texten tot lernen.</p>
+<h4>Abgrenzung tot anderen AI-systeemen</h4>
+<p>Man könnte sich fragen, zoals sich generatieve AI gongeveerleggend van de Expertensystemen früherer jaarzehnte unterscheidet. Traditionelle AI-systeeme stützen sich op van mensen formulierte Regeln. U zijn deterministisch, vorhersehbar en op jene Szenarien beschränkt, voor de ze programmiert werden. Generative AI daarentegen is probabilistisch en kan Unsicherheit en Mehrdeutigkeit in een Weise verarbeiten, de menschlichen Denkprozessen nahekommt.</p>
+<p>Während Expertensysteme beurdelen kunnen, ob een Satz grammatisch korrekt is, kan generatieve AI een Artikel verfassen, de van Kreativität en Nuance geprägt is. Deze Wechsel van regelbasierten systeemen tot modelen, de nieuwe Inhoude erzeugen, heeft mogelijkheiden eröffnet, de zuvor de Reich de Science-Fiction angehörten.</p>
+<h2 id="idee">Idee <a class="heading-anchor" href="#idee" aria-label="Link naar Idee">#</a></h2>
+<h3 id="de-ontwikkeling-en-fortschritte-de-generatieve-ai">De ontwikkeling en Fortschritte de generatieve AI <a class="heading-anchor" href="#de-ontwikkeling-en-fortschritte-de-generatieve-ai" aria-label="Link naar De ontwikkeling en Fortschritte de generatieve AI">#</a></h3>
+<h4>Historische Perspektive</h4>
+<p>De Reise de generatieve AI begann met einfachen modelen, de kaum samenhängende Sätze formulieren konden. Anfänglich basierten deze modele op Regeln en beslissingsbäumen, was ze starr en op het ausdrücklich codierte kennis beschränkt machte. De Entstehung des maschinellen Lernens en – jüngst – des Deep Learning brachte echter een Paradigmenwechsel.</p>
+<p>De historische ontwikkeling de generatieve AI lässt sich van de frühen symbolischen AI bis tot de heutigen nieuwronalen Netzen vplaatsvinden. Jede Etappe heeft uns de Ziel nähergebracht, Maschinen tot ercreëren, de menschlich anmutende Inhoude tatsächlich begrijpen en erzeugen.</p>
+<h4>Aktuelle modele</h4>
+<p>Heute hebben Generative Pre-trained Transformers 4 (GPT-4) en nieuwere modele de Messlatte dessen, was generatieve AI leisten kan, duidelijk angehoben. Deze modele kunnen Aufsätze op menschlichem niveau verfassen, komplexen Programmcode erzeugen en meer.</p>
+<p>Deze Fortschritte zijn het resultaat zowel architektonischer innovaties als de exponentiellen Zunahme aan Daten en Rechenleistung. Transformer-modele zijn revolutieär, omdat ze de Kontext een Eingabe erfassen.</p>
+<h4>Vergleich met früheren Technologien</h4>
+<p>De Kontrast tussen generatieve AI en haar Vorgängern is duidelijk. Wo ältere modele met Mehrdeutigkeit en Kontext tot kämpfen hadden, lebt moderne generatieve AI daarvan. De Robustheit deze modele beruht niet alleen op haar Architektur, maar ook op haar trainingsmethoden. U trainooitren op Datensätzen met unterschiedlichen Themen en Stilen, sodass ze Inhoude erzeugen, de tegelijk präzise en vielfältig zijn.</p>
+<h2 id="impact">Impact <a class="heading-anchor" href="#impact" aria-label="Link naar Impact">#</a></h2>
+<h3 id="de-weitreichenden-implikationen-generatieve-ai">De weitreichenden Implikationen generatieve AI <a class="heading-anchor" href="#de-weitreichenden-implikationen-generatieve-ai" aria-label="Link naar De weitreichenden Implikationen generatieve AI">#</a></h3>
+<h4>invloed op verschillende sectoren</h4>
+<p>Generative AI is niet alleen akademische Kuriosität, sondern een transformative Kraft quer door talrijke sectorn. In Kreativsektoren zoals Musik en Literatur beginnt AI, de Grenze tussen menschlicher en maschineller Kreativität tot verwischen.</p>
+<p>AI heeft bovendien de klantenservice in ondernemingen verbeterd, doordat ze menschlich anmutende antwoorden op klantenfragen levert. Im Gesundheitswesen worden generatieve modele eingezet, um molekulare Strukturen vorherzusagen.</p>
+<p>Generative AI lässt sich voor vielfältige Aufgaben einzetten – Content-Erstellung, Übersetzung, Spieleentwicklung en meer.</p>
+<h4>Ethische en gesellschaftliche Erwägungen</h4>
+<p>Mit de Aufstieg generatieve AI rücken ethische vraagn in de Vordergongeveer. Het Potenzial voor Deepfakes, Desinformation en de Verdrängung traditioneel menschlicher Tätigkeiten zijn reale zorgen, denen sich de Gesellschaft stellen moet. Hinzu kommen vraagn na Eigentum en Urheberrecht, indien Inhoude door AI erzeugt worden.</p>
+<p>De gesellschaftliche Wirkung generatieve AI reicht maar over deze zorgen uit. Es gibt ook Potenzial tot Veränderung – ongeveer personalisierte Bildungsangebote, de sich de Lernstil ieder Lernenden anpassen, of AI, de Sprachbarrieren überbrückt.</p>
+<h4>Langfristiger Ausblick</h4>
+<p>Mittel- en langetermijn- hängt de Wirkung de generatieve AI daarvan ab, zoals we ze in ons Leben integrieren en haar ontwikkeling steuern. Het Potenzial deze Technologie voor de Nutzen de mensheit is enorm – maar ze vereist sorgfältige belastingung en regelgeving.</p>
+<p>Zukünftige Fortschritte könnten tot persönlicheren en ansprechenderen Interaktionen met Technologie führen en Erlebnisse creëren, de op individuelle Vorlieben en Bedürfnisse zugeschnitten zijn. Deze toekomst hängt echter van onze Fähigkeit ab, de ethischen uitdagingen verantwortungsvoll en gecontroleerd tot meistern.</p>
+<h2 id="prikkels">prikkels <a class="heading-anchor" href="#prikkels" aria-label="Link naar prikkels">#</a></h2>
+<h3 id="de-drijvenden-krafte-hinter-de-ontwikkeling-generatieve-ai">De drijvenden Kräfte hinter de ontwikkeling generatieve AI <a class="heading-anchor" href="#de-drijvenden-krafte-hinter-de-ontwikkeling-generatieve-ai" aria-label="Link naar De drijvenden Kräfte hinter de ontwikkeling generatieve AI">#</a></h3>
+<h4>Ökonomische prikkels</h4>
+<p>De ontwikkeling generatieve AI wordt in hogem Maße van ökonomischen prikkelsn getragen. ondernemingen zijn voortdurend op de Suche na Wegen, efficiëntie tot steigern en kosten tot senken – AI biedt beides. Mit haar Fähigkeit, komplexe Aufgaben tot automatisieren en kreative oplossingen tot erzeugen, kan generatieve AI erhebliche kosteneinsparungen en productivitätsschübe bewirken.</p>
+<p>AI-generierte Inhoude lassen sich voor unterschiedliche Zielgruppen zuschneiden – in Marketing, in de Svaakwareentwicklung en daarover uit. Het kan de Zeit en de kosten reduzieren, nieuwe Svaakware op de markt tot bringen.</p>
+<h4>innovatie en concurrentie</h4>
+<p>Het Feld de generatieve AI wordt bovendien vom Wunsch na innovatie en concurrentiesvordelen gedreven. Da AI-Technologie tot een doorslaggevenden Differenzierungsmerkmal wordt, investieren ondernemingen massiv in onderzoek en ontwikkeling. Deze concurrentiesdruck spornt tot continuen Verbeterungen de AI-Fähigkeiten aan en führt tot fortschrittlicheren en leistungsfähigeren systeemen.</p>
+<p>Het Rennen um AI-Vorherrschaft wordt niet alleen tussen ondernemingen ausgetragen, maar ook tussen Nationen, de AI-Führerschaft als strategischen voordeel betrachten.</p>
+<h4>Gesellschaftlicher Nutzen</h4>
+<p>Über economische en wettbewerbliche voordelen uit gibt es kraftvolle gesellschaftliche prikkels, de de ontwikkeling generatieve AI andrijven. Deze Technologie heeft het Potenzial, einige de drängendsten uitdagingen onze Zeit tot adressieren – vom Klimawandel bis tot Gesundheitsversorgung.</p>
+<p>Generative AI könnte bijvoorbeeld Klimasysteme modellieren, um Veränderungen vorherzusagen en oplossingen anzubieden, of bij de Arzneimittelentdeckung helfen, doordat ze Wechselwirkungen tussen Molekülen prognostiziert.</p>
+<h2 id="fazit">Fazit <a class="heading-anchor" href="#fazit" aria-label="Link naar Fazit">#</a></h2>
+<h3 id="de-toekomst-de-generatieve-ai-annehmen">De toekomst de generatieve AI annehmen <a class="heading-anchor" href="#de-toekomst-de-generatieve-ai-annehmen" aria-label="Link naar De toekomst de generatieve AI annehmen">#</a></h3>
+<p>An de Schwelle een nieuwen Technologieära is generatieve AI een Leuchtfeuer de innovatie, het de Erfindungsgeist des menschlichen Denkens nachahmt. Von haar bescheidenen Anfängen bis tot de ausgefeilten Algorithmen van heute is generatieve AI over haar Rolle als bloßes tool uitgewachsen.</p>
+<p>De Veränderungen, de generatieve AI met betrekking tot het Können van Maschinen en onze Umgang met ihnen bringt, wirken stark op sectorn zoals Technologie en Recht. De Ausläufer deze Wirkung reichen over economische winste en concurrentiesvorteile uit en berühren het Gefüge gesellschaftlicher ontwikkeling en ethischer Erwägungen.</p>
+<p>De prikkels, de de ontwikkeling generatieve AI vorandrijven, zeichnen het Bild een toekomst voller Potenzial. Doch met grooter Macht geht de Pflicht tot verantwortungsvollen Verwoudung einher. Während we deze Technologie benutten, um komplexe probleeme tot lösen en beispiellose Kreativität tot entfachen, moeten we tegelijk de moralischen landschaften navigieren, de ze offenbart.</p>
+<p>Generative AI hält onze kollektiven Bewusstsein een Spiegel vóór en fordert uns op, daarover nachzudenken, welche Art van toekomst we creëren wollen. Es geht niet alleen darum, was AI voor uns tun kan, maar ook darum, was we met AI als Partner erreichen wollen. In deze Partnerschaft liegt het Potenzial een Synergie, de de mensheit op nieuwe hoogten heben kan.</p>
+<p>Lassen Sie uns op deze Weg generatieve AI met een ausgewogenen Perspektive umarmen en haar Fähigkeiten met Umsicht en Weitblick benutten. So kunnen we waarborgen, dat deze bemerkenswerte Technologie tot een Eckpfeiler voor een inklusives, fortschrittliches en aufgeklärtes Morgen wordt.</p>
+<h3 id="an-de-spitze-unterwegs-aktuelle-fortschritte-in-de-generatieve-ai">An de Spitze unterwegs: Aktuelle Fortschritte in de generatieve AI <a class="heading-anchor" href="#an-de-spitze-unterwegs-aktuelle-fortschritte-in-de-generatieve-ai" aria-label="Link naar An de Spitze unterwegs: Aktuelle Fortschritte in de generatieve AI">#</a></h3>
+<p>Het Feld de generatieve AI ontwikkeld sich rasch weiter, nieuwe Fortschritte verschijnen in hoger Frequenz. Im gevolgenden einige de jüngsten Durchbrüche, de de toekomst deze transformativen Technologie prägen:</p>
+<h4>1. GPT-4 en daarover uit: de Kraft grooter taalmodellen entfesseln</h4>
+<p>De ontwikkeling grooter taalmodellen (LLM) was een centraler innovatiesmotor de generatieve AI. GPT-4, de jüngste Iteration des bahnbrechenden LLM van OpenAI, heeft bemerkenswerte Fähigkeiten getoont – darunter het Generieren van Text in menschlicher Qualität, het Überzetten van Sprachen en het Verfassen unterschiedlicher kreativer Inhoude. Auch andere LLM's zoals Meena en LaMDA van Google AI verschieben de Grenzen dessen, was met generatieve AI mogelijk is.</p>
+<h4>2. Generative Adversarial Networks (GANs): Kreativität en Realismus verfeinern</h4>
+<p>GANs zijn tot een leistungsstarken tool voor de Erzeugung realistischer en kreativer Inhoude geworden. Deze modele bestaan uit zwei nieuwronalen Netzen, de gegeneinander antreten, was tot Erzeugung altijd raffinooitrter Bilder, Videos en Audios führt. GANs werden tot Generierung van Kunst, Modedesign en sogar tot Erstellung van Deepfakes eingezet.</p>
+<h4>3. Autoencoder en Diffusionsmodelle: verborgene Muster en Strukturen sichtbar machen</h4>
+<p>Autoencoder en Diffusionsmodelle zijn zwei aufkommende Techniken, de in de generatieve AI aan Bedeutung gewinnen. Autoencoder lernen, Daten tot komprimieren en tot rekonstruieren, en kunnen so zugongeveereliegende Muster en Strukturen identifizieren. Diffusionsmodelle daarentegen beginnen met een verrauschten Datenrepräsentation en verfeinern ze schrittweise tot een hoogwertigen Ausgabe.</p>
+<h4>4. Multimodale generatieve AI: de Brücke tussen de Sinnen schlagen</h4>
+<p>Multimodale generatieve AI zielt darauf ab, de Lücke tussen verschillenden Sinnen tot schließen – Sehen, Hören en Sprache. Deze Technologie heeft het Potenzial, altijdsive Erfahrungen tot creëren, welche de Grenzen tussen digitaaler en physischer wereld verwischen. So könnten multimodaale generatieve modele ongeveer Musik erzeugen, de tot een bestimmten Bild passt, of een virtuelle Umgebung creëren, de op natürliche Sprachbefehle reagiert.</p>
+<h4>5. Erklärbare AI: de Blackbox entschlüsseln</h4>
+<p>Mit zunehmender Komplexität generatieve AI-modellen wächst de Bedarf aan Techniken voor erklärbare AI (XAI). XAI hilft tot erklären, zoals deze modele beslissingen treffen, en sorgt voor Transparenz en Verantwortlichkeit. Het is doorslaggevend, um vertrouwen in generatieve AI aufzubouwen en haar verantwortungsvollen en ethischen inzet tot waarborgen.</p>
+<p>Deze Fortschritte zijn alleen een Ausschnitt uit de sich stetig weiterontwikkelenden landschaft de generatieve AI. Mit fortschreitender onderzoek en wachsender Rechenleistung dürfen we nog weitere bahnbrechende ontwikkelingen erwarten, de de toekomst deze transformativen Technologie weiter prägen worden.</p>
+<h3 id="het-versprechen-van-open-source-ai-innovatie-bevorderen-en-een-betere-toekomst-g">Het Versprechen van open source-AI: innovatie bevorderen en een betere toekomst gestouden <a class="heading-anchor" href="#het-versprechen-van-open-source-ai-innovatie-bevorderen-en-een-betere-toekomst-g" aria-label="Link naar Het Versprechen van open source-AI: innovatie bevorderen en een betere toekomst gestouden">#</a></h3>
+<p>De open source-AI-Bewegung heeft in de letzten jaaren een enormes groei ervaren. Zahlreiche Projekte en initiatiefn benutten heute AI-Technologien, de zuvor alleen grooten ondernemingen en onderzoeksinstitutionen vorbehouden waren. Heute kan iedere darauf zugrijpen en beitragen.</p>
+<p>Deze Bewegung was een drijvende Kraft hinter de bemerkenswerten Fortschritten in de generatieve AI; ze heeft toegangsbarrieren abgebouwt en de samenwerking tussen Forschenden en Entwickelnden bevorderd. Deze Synergie heeft ihnen maakt mogelijk, bahnbrechende Projekte anzugehen en mächtige tools en Frameworks tot creëren, welche de toekomst generatieve AI nieuw definooitren.</p>
+<p>De ontwikkeling grooter taalmodellen zoals GPT-3 en LaMDA is een Beleg voor de Kraft van open source-AI. Deze modele hebben außerordentliche Fähigkeiten onder Beweis gestelt – Text in menschlicher Qualität erzeugen, Sprachen überzetten en vielfältige kreative Inhoude gestouden. uw beschikbaarheid heeft innovatie in unterschiedlichsten domeinen entfacht – vom kreativen Schreiben en Marketing bis hin tot Bildung en Gesundheit.</p>
+<p>open source-AI spielt ook een sleutelrolle bij anderen AI-Technologien – Natural Language Processing (NLP), Computer Vision en Robotik. Deze Fortschritte kündigen een toekomst aan, in de AI zugänglicher, anpassbarer en naadlooser in onze Alltag integriert is.</p>
+<p>De vielversprechende toekomst van open source-AI hängt van haar Fähigkeit ab, samenwerking, Transparenz en beschleunigte innovatie tot bevorderen. Durch het offene Teilen van kennis en Ressourcen kunnen Forschende en Entwickelnde haar Kräfte bündeln, um komplexe uitdagingen anzugehen en het Feld de AI voranzubringen. open source-AI sorgt voor Transparenz en maakt mogelijk öffentliche Überprüfung en ethische Reflexion – en daarmee de verantwortungsvollen inzet deze Technologie tot Wohle de Gesellschaft.</p>
+<p>Während sich open source-AI weiterontwikkeld, birgt ze het Potenzial, sectorn tot revolutieeren en onze wereld tot verändern. open source-AI is de sleutel tot een toekomst, in de Technologie de mensheit dient en alle zugoedekommt – getragen van personalisierter Bildung en Gesundheitsversorgung, kreativem Ausdruck en wissenschaftlicher Entdeckung.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Trenner"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<p>Zum Abschluss hoffe ich, dat deze Artikel uw Interesse aan de faszinooitrenden wereld de generatieve AI geweckt heeft. Wenn Sie tiefer in deze transformative Technologie eintauchen möchten of vraagn hebben, kontaktieren Sie mich gerne over <a href="https://www.linkedin.com/in/sebastienrousseau/" title="Sebastien Rousseau op LinkedIn">LinkedIn ⧉</a> of de <a href="/nl/contact/index.html" title="Kontakt">Kontaktseite</a>.</p>
+<p>Vielen Dank nochmals voor uw Zeit – ich freue mich, van u tot hören.</p>
+<aside class="author-card" aria-label="Over de auteur"><img alt="Portret van Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/nl/over/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior technoloog in banking; schrijft over toegepaste AI, ISO 20022-migratie, post-kwantumcryptografie voor financiële dienstverlening en de structurele transformatie van het wholesale-betalingsverkeer.</span><span class="author-credentials">20+ jaar ervaring bij HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/nl/over/index.html">Volledig profiel</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Laatst herzien <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Verwante artikelen</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2024-02-13-eu-ai-verordening-de-toekomst-van-wereldwijde-ai-regulering/index.html" class="related-media" aria-label="De EU AI-verordening: de toekomst van wereldwijde AI-regulering vormgeven" tabindex="-1"><img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="de-eu-ai-verordening-de-toekomst-van-wereldwijde-ai-regulering-vormgeven"><a href="https://sebastienrousseau.com/nl/2024-02-13-eu-ai-verordening-de-toekomst-van-wereldwijde-ai-regulering/index.html">De EU AI-verordening: de toekomst van wereldwijde AI-regulering vormgeven</a> <a class="heading-anchor" href="#de-eu-ai-verordening-de-toekomst-van-wereldwijde-ai-regulering-vormgeven" aria-label="Link naar De EU AI-verordening: de toekomst van wereldwijde AI-regulering vormgeven">#</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2024-01-23-vooruitgang-in-ai-prompt-engineering/index.html" class="related-media" aria-label="Vooruitgang in AI-prompt-engineering" tabindex="-1"><img alt="A man analysing data on screens" src="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="vooruitgang-in-ai-prompt-engineering"><a href="https://sebastienrousseau.com/nl/2024-01-23-vooruitgang-in-ai-prompt-engineering/index.html">Vooruitgang in AI-prompt-engineering</a> <a class="heading-anchor" href="#vooruitgang-in-ai-prompt-engineering" aria-label="Link naar Vooruitgang in AI-prompt-engineering">#</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/nl/2024-01-01-ai-trends-2024-inzichten-en-voorspellingen/index.html" class="related-media" aria-label="AI-trends 2024: inzichten en voorspellingen voor de toekomst" tabindex="-1"><img alt="Drone View of London" src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-trends-2024-inzichten-en-voorspellingen-voor-de-toekomst"><a href="https://sebastienrousseau.com/nl/2024-01-01-ai-trends-2024-inzichten-en-voorspellingen/index.html">AI-trends 2024: inzichten en voorspellingen voor de toekomst</a> <a class="heading-anchor" href="#ai-trends-2024-inzichten-en-voorspellingen-voor-de-toekomst" aria-label="Link naar AI-trends 2024: inzichten en voorspellingen voor de toekomst">#</a></h3><p><time datetime="2024-01-01">2024-01-01</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Artikelnavigatie"><a class="post-pagination-prev" href="/nl/2023-11-05-wiskundige-en-cryptografische-constanten-voor-rust-beveiliging/"><span class="post-pagination-label">Vorige</span><span class="post-pagination-title">Mathematical and Cryptographic Constants for Rust Security</span></a><a class="post-pagination-next" href="/nl/2023-11-19-crystals-kyber-het-beschermingsalgoritme-in-het-kwantumtijdperk/"><span class="post-pagination-label">Volgende</span><span class="post-pagination-title">CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/nl/over/index.html">Over mij</a></li>
+              <li><a href="/nl/contact/index.html">Contact</a></li>
+              <li><a href="/nl/gemaakt-met-statische-sitegenerator/index.html">Gemaakt met Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publicaties</h2>
+            <ul>
+              <li><a href="/nl/artikelen/index.html">Artikelen</a></li>
+              <li><a href="/nl/publicaties/index.html">Publicaties</a></li>
+              <li><a href="/nl/labels/index.html">Labels</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Werk</h2>
+            <ul>
+              <li><a href="/nl/projecten/index.html">Projecten</a></li>
+              <li><a href="/nl/afspeellijsten/index.html">Afspeellijsten</a></li>
+              <li><a href="/nl/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Netwerk</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Aanmelding nieuwsbrief">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — onderzoeksnotities over betalingen, AI en post-kwantumcryptografie. Geen spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="jij@bank.nl" />
+            <input type="hidden" name="_subject" value="Aanmelding nieuwsbrief — sebastienrousseau.com" />
+            <button type="submit">Abonneren</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden.</span>
+          <div class="social" aria-label="Sociale netwerken">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau op Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau op LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau op Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau op YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau op YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/nl/toegankelijkheid/index.html">Toegankelijkheid</a> ·
+            <a href="/nl/privacy/index.html">Privacy</a> ·
+            <a href="/nl/voorwaarden/index.html">Voorwaarden</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"nl"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"nl"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2044,"about":{"@type":"Thing","name":"Generative AI","sameAs":["https://en.wikipedia.org/wiki/Generative_artificial_intelligence","https://www.wikidata.org/wiki/Q108766533","https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"]},"headline":"Generatieve AI verkennen","description":"Een diepgaande verkenning van generatieve AI: architecturen, trainingsstrategieën en toepassingen in financiën, kunst en wetenschap.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp","width":"100vw","height":"100vh","caption":"Conceptuele visualisatie van een generatief AI-systeem"},"url":"https://sebastienrousseau.com/nl/2023-11-12-generatieve-ai-verkennen/","datePublished":"2023-11-12T20:30:00+00:00","dateModified":"2026-05-11","inLanguage":"nl","keywords":"Generatieve AI, LLM, GAN, diffusiemodellen, GPT, machine learning, AI","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/nl/2023-11-12-generatieve-ai-verkennen/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"nl"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/nl/"},{"@type":"ListItem","position":3,"name":"Generatieve AI verkennen","item":"https://sebastienrousseau.com/nl/2023-11-12-generatieve-ai-verkennen/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Zoeken">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Zoeken</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Zoeken">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Documentatie doorzoeken..." autocomplete="off" aria-label="Zoeken"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> sluiten</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigeren</span><span><kbd>Enter</kbd> openen</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>
