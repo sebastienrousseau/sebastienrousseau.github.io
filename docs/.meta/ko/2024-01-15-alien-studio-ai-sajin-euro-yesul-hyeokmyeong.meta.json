@@ -1,12 +1,12 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/aron-visuals-bN5XdU-bap4-unsplash.webp",
-  "locale": "ko_KR",
-  "subtitle": "확산 모델이 이미지 생성을 바꾸다",
-  "date": "January 15, 2024",
-  "description": "Alien Studio가 AI 기반 사진과 예술로 창의적 표현을 어떻게 재구성하고 있는지에 관하여.",
-  "banner_alt": "AI가 생성한 추상적 예술",
-  "last_reviewed": "2026-05-16",
-  "keywords": "Alien Studio, AI 사진, 확산 모델, Stable Diffusion, Midjourney, AI 아트, 크리에이티브 AI",
   "language": "ko-KR",
-  "title": "Alien Studio: AI 사진으로 예술을 혁신하다"
+  "banner": "https://cloudcdn.pro/stocks/images/aron-visuals-bN5XdU-bap4-unsplash.webp",
+  "banner_alt": "AI가 생성한 추상적 예술",
+  "date": "January 15, 2024",
+  "locale": "ko_KR",
+  "title": "Alien Studio: AI 사진으로 예술을 혁신하다",
+  "subtitle": "확산 모델이 이미지 생성을 바꾸다",
+  "description": "Alien Studio가 AI 기반 사진과 예술로 창의적 표현을 어떻게 재구성하고 있는지에 관하여.",
+  "keywords": "Alien Studio, AI 사진, 확산 모델, Stable Diffusion, Midjourney, AI 아트, 크리에이티브 AI",
+  "last_reviewed": "2026-05-16"
 }

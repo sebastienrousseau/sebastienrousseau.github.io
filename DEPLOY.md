@@ -106,3 +106,37 @@ via `'inline-speculationrules'` in `script-src`.
 Excluded patterns: `/_csp/*` (assets), `*.xml`/`*.json`/`*.txt`/`*.pdf`
 (static feeds and downloads), `/manifest.json`, `/sw.js`, and contact
 pages (don't prerender forms).
+
+## Accept-Language edge routing (Cloudflare Worker)
+
+The site ships a static subtree per active language (`/fr/`, `/ja/`,
+`/zh-hans/`, …). A Cloudflare Worker at `workers/lang-router.js`
+redirects bare-root requests to the visitor's preferred locale at the
+edge — sub-50ms, no origin fetch.
+
+**Decision order:**
+
+1. Honour an existing `pref-lang` cookie (visitor already chose).
+2. Honour `?lang=xx` in the URL — set the cookie so it sticks.
+3. Sniff `Accept-Language`; map the highest-q non-EN tag to a site
+   lang via `TAG_TO_LANG` and 302 there.
+4. Fall through to the EN tree if nothing matches.
+
+**Deploy:** Cloudflare dashboard → Workers & Pages → create application
+→ paste `workers/lang-router.js` → set routes
+`sebastienrousseau.com/*` and `www.sebastienrousseau.com/*`.
+
+**Verify:**
+
+```bash
+# EN-only client — no redirect:
+curl -sI -H 'Accept-Language: en-US,en;q=0.9' https://sebastienrousseau.com/ | head -1
+
+# FR-first client — expect 302 → /fr/:
+curl -sI -H 'Accept-Language: fr-FR,fr;q=0.9,en;q=0.5' https://sebastienrousseau.com/ \
+  | grep -iE '(location|HTTP)'
+```
+
+**Tests:** `node workers/test_lang_router.mjs` exercises the pure helpers
+(parsing, mapping, navigation gating, cookie reader). Wired into
+`scripts/test_workers.py` and `build.sh`.

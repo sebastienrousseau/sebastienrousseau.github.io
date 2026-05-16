@@ -1,11 +1,11 @@
 {
-  "banner_alt": "वॉइस-तरंगों की प्रतीकात्मक छवि",
-  "description": "OpenVoice: वॉइस-क्लोनिंग में अग्रणी नवाचार — व्यक्तित्व, उच्चारण और स्वर पर नियंत्रण।",
+  "language": "hi-IN",
   "keywords": "OpenVoice, वॉइस क्लोनिंग, AI, TTS, ओपन सोर्स, multilingual, vocal style, voice synthesis, speech, MIT",
-  "locale": "hi_IN",
   "title": "OpenVoice: वॉइस-क्लोनिंग-प्रौद्योगिकी में अग्रणी नवाचार",
-  "date": "April 01, 2024",
   "subtitle": "एक नमूना, अनेक भाषाएँ — व्यक्तित्व, उच्चारण और स्वर का नियंत्रण",
   "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
-  "language": "hi-IN"
+  "description": "OpenVoice: वॉइस-क्लोनिंग में अग्रणी नवाचार — व्यक्तित्व, उच्चारण और स्वर पर नियंत्रण।",
+  "banner_alt": "वॉइस-तरंगों की प्रतीकात्मक छवि",
+  "date": "April 01, 2024",
+  "locale": "hi_IN"
 }

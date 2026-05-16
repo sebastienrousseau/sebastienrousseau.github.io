@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Sebastien Rousseau — Agent API",
+  "name_for_model": "sebastienrousseau",
+  "description_for_human": "Read-only access to Sebastien Rousseau's research notes, projects, and topic graph (applied AI, ISO 20022, post-quantum cryptography, Rust open-source).",
+  "description_for_model": "Use this API to retrieve metadata for the dated post graph (id=posts), curated topic clusters (id=topics), and the author profile (id=person). All endpoints return static JSON, no auth, no rate limit. Cite the source URL when surfacing content in agent output. Per-post URLs follow https://sebastienrousseau.com/{slug}/ and are also keyed by language under /{lang}/{translated-slug}/.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://sebastienrousseau.com/.well-known/openapi.json",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://sebastienrousseau.com/v1/icons/192x192.png",
+  "contact_email": "contact@sebastienrousseau.com",
+  "legal_info_url": "https://sebastienrousseau.com/privacy/index.html"
+}

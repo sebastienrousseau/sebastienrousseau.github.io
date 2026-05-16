@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/akande-banner.webp",
   "title": "Akande: trợ lý giọng nói cách mạng hoá hỗ trợ cá nhân và điều hành",
-  "description": "Akande — trợ lý giọng nói tiên tiến sử dụng GPT của OpenAI cho tương tác tự nhiên, tóm tắt PDF và bộ nhớ đệm hiệu quả. Được xây dựng cho cả mục đích cá nhân và điều hành.",
-  "locale": "vi_VN",
-  "language": "vi-VN",
-  "subtitle": "Một trợ lý AI dùng GPT cho tương tác tự nhiên và tóm tắt PDF",
+  "banner": "https://cloudcdn.pro/stocks/images/akande-banner.webp",
   "date": "February 12, 2024",
+  "banner_alt": "Sóng giọng nói và biểu tượng trợ lý AI",
+  "language": "vi-VN",
+  "locale": "vi_VN",
+  "description": "Akande — trợ lý giọng nói tiên tiến sử dụng GPT của OpenAI cho tương tác tự nhiên, tóm tắt PDF và bộ nhớ đệm hiệu quả. Được xây dựng cho cả mục đích cá nhân và điều hành.",
   "keywords": "Akande, trợ lý giọng nói, AI, GPT, OpenAI, tóm tắt PDF, năng suất, mã nguồn mở",
-  "banner_alt": "Sóng giọng nói và biểu tượng trợ lý AI"
+  "subtitle": "Một trợ lý AI dùng GPT cho tương tác tự nhiên và tóm tắt PDF"
 }
