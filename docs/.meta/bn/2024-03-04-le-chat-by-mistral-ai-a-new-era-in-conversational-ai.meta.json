@@ -1,11 +1,11 @@
 {
-  "date": "Mar 04, 2024",
-  "description": "Meet Mistral AI's new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real-time.",
-  "language": "bn-BD",
   "subtitle": "Redefining User Interaction Across Languages",
-  "banner_alt": "Colourful, abstract digital art of a cat",
-  "keywords": "Le Chat AI, Mistral AI chatbot, Le Chat virtual assistant, Mistral AI language understanding, Le Chat AI customer service, Mistral AI enterprise solutions, Le Chat AI customisation, Mistral AI multilingual support, Le Chat AI-powered communication, Mistral AI AI-driven business solutions",
   "banner": "https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp",
-  "title": "Le Chat by Mistral AI: Multilingual Conversational AI",
-  "locale": "bn_BD"
+  "locale": "bn_BD",
+  "keywords": "Le Chat AI, Mistral AI chatbot, Le Chat virtual assistant, Mistral AI language understanding, Le Chat AI customer service, Mistral AI enterprise solutions, Le Chat AI customisation, Mistral AI multilingual support, Le Chat AI-powered communication, Mistral AI AI-driven business solutions",
+  "language": "bn-BD",
+  "date": "Mar 04, 2024",
+  "banner_alt": "Colourful, abstract digital art of a cat",
+  "description": "Meet Mistral AI's new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real-time.",
+  "title": "Le Chat by Mistral AI: Multilingual Conversational AI"
 }

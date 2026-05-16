@@ -1,11 +1,11 @@
 {
   "subtitle": "DTT, the high-precision Rust library for date and time operations.",
   "date": "Dec 04, 2023",
-  "description": "DateTime (DTT) is a Rust library for parsing, validating, manipulating and formatting dates and times — high precision, broad functionality.",
-  "banner": "https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg",
-  "keywords": "DateTime, DTT, Rust library, parsing, validating, manipulating, formatting, dates, times",
   "locale": "yo_NG",
   "language": "yo-NG",
-  "title": "Efficient Date and Time Management with DateTime (DTT)",
-  "banner_alt": "DateTime (DTT), Your Essential Toolkit for Date and Time Operations."
+  "banner": "https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg",
+  "banner_alt": "DateTime (DTT), Your Essential Toolkit for Date and Time Operations.",
+  "description": "DateTime (DTT) is a Rust library for parsing, validating, manipulating and formatting dates and times — high precision, broad functionality.",
+  "keywords": "DateTime, DTT, Rust library, parsing, validating, manipulating, formatting, dates, times",
+  "title": "Efficient Date and Time Management with DateTime (DTT)"
 }
