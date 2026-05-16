@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-Hant">
+  <title>Sebastien Rousseau — 繁體中文版</title>
+  <link href="https://sebastienrousseau.com/zh-hant/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://sebastienrousseau.com/zh-hant/"/>
+  <id>https://sebastienrousseau.com/zh-hant/</id>
+  <updated>2026-05-16T14:32:26+00:00</updated>
+  <entry>
+    <title>2026 年最佳雲基礎設施架構：金融服務的 AI 原生、多雲、量子感知藍圖</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-05-21-2026-zuijia-yun-jichu-jiagou-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-05-21-2026-zuijia-yun-jichu-jiagou-tw/</id>
+    <updated>2026-05-21T06:06:06+00:00</updated>
+    <published>2026-05-21T06:06:06+00:00</published>
+    <summary>2026 年雲架構圍繞六大支柱結晶：AI 原生基礎設施、智慧多雲、無伺服器優先與邊緣 WebAssembly、邊緣計算、自動化 DevSecOps 與密碼敏捷性、可持續高密度運營。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>面向銀行的代理式工程：2026 年高管團隊與工程師藍圖</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu-tw/</id>
+    <updated>2026-05-18T06:06:06+00:00</updated>
+    <published>2026-05-18T06:06:06+00:00</published>
+    <summary>代理式 AI 已在全球銀行業從試點走向生產；70% 機構在用，僅五分之一擁有成熟治理。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>另一種名義下的穩定幣收益：貝萊德 BRSRV 與 BSTBL 檔案解碼</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-05-15-beilaide-brsrv-bstbl-genius-fa-an-daibihua-mmf-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-05-15-beilaide-brsrv-bstbl-genius-fa-an-daibihua-mmf-tw/</id>
+    <updated>2026-05-15T06:06:06+00:00</updated>
+    <published>2026-05-15T06:06:06+00:00</published>
+    <summary>貝萊德 2026 年 5 月 8 日提交兩份 SEC 註冊——BRSRV 與 BSTBL——透過代幣化貨幣市場基金繞開 GENIUS 法案對穩定幣付息的禁令。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>保障賬簿：後量子遷移面向企業金融的董事會級指南</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-05-14-baozhang-zhangbu-hou-liangzi-qianyi-qiye-jinrong-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-05-14-baozhang-zhangbu-hou-liangzi-qianyi-qiye-jinrong-tw/</id>
+    <updated>2026-05-14T06:06:06+00:00</updated>
+    <published>2026-05-14T06:06:06+00:00</published>
+    <summary>G7 路線圖與 BIS Project Leap 讓後量子遷移從研究興趣變為監管要求，董事會必須制定明確時間表。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 年 11 月 pacs.008 結構化地址截止日期：六個月視角</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-05-12-iso-20022-pacs008-jiegouhua-dizhi-jiezhi-riqi-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-05-12-iso-20022-pacs008-jiegouhua-dizhi-jiezhi-riqi-tw/</id>
+    <updated>2026-05-12T06:06:06+00:00</updated>
+    <published>2026-05-12T06:06:06+00:00</published>
+    <summary>2026 年 11 月起 SWIFT CBPR+ 拒絕 pacs.008 中的非結構化地址。約 65% 報文仍不合規，44% 銀行進度滯後。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>重溫露西的 U 盤：貝松所看到的知識向機器遷移</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-05-11-lucy-besson-zhishi-zhuanyi-ai-yu-liangzi-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-05-11-lucy-besson-zhishi-zhuanyi-ai-yu-liangzi-tw/</id>
+    <updated>2026-05-11T06:06:06+00:00</updated>
+    <published>2026-05-11T06:06:06+00:00</published>
+    <summary>12 年後重新解讀《露西》——貝松對知識遷移到非生物基質的思考在 AI 與量子時代顯得格外貼切。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>量子閾值再次移動：10,000 量子位元的 Shor 風險</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-04-11-liangzi-yuzhi-zai-yi-dong-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-04-11-liangzi-yuzhi-zai-yi-dong-tw/</id>
+    <updated>2026-04-11T06:06:06+00:00</updated>
+    <published>2026-04-11T06:06:06+00:00</published>
+    <summary>新研究顯示 Shor 演算法可能僅需 10,000 量子位元，密碼學相關量子計算門檻正快速下降。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>抗量子支付：行業必須立即行動（EPAA）</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2025-09-01-kang-liangzi-zhifu-epaa-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2025-09-01-kang-liangzi-zhifu-epaa-tw/</id>
+    <updated>2025-09-01T06:06:06+00:00</updated>
+    <published>2025-09-01T06:06:06+00:00</published>
+    <summary>EPAA 量子安全支付白皮書闡述支付行業為何必須立即採取行動應對量子威脅。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>格基密碼學的量子演算法中發現漏洞</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-04-22-gezhuang-mima-liangzi-suanfa-faxian-louhdong-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-04-22-gezhuang-mima-liangzi-suanfa-faxian-louhdong-tw/</id>
+    <updated>2024-04-22T06:06:06+00:00</updated>
+    <published>2024-04-22T06:06:06+00:00</published>
+    <summary>陳逸雷的 LWE 量子演算法被發現存在漏洞，格基密碼學暫時保持安全，但量子抗性研究仍需推進。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>量子演算法挑戰格狀密碼學</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-04-15-liangzi-suanfa-tiaozhan-gezhuang-mima-xue-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-04-15-liangzi-suanfa-tiaozhan-gezhuang-mima-xue-tw/</id>
+    <updated>2024-04-15T06:06:06+00:00</updated>
+    <published>2024-04-15T06:06:06+00:00</published>
+    <summary>陳逸雷的多項式時間量子演算法對 Learning With Errors（LWE）問題及格基密碼學構成挑戰。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>OpenVoice：語音克隆技術的領先創新</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-04-01-openvoice-yuyin-kelong-jishu-de-lingxian-chuangxin-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-04-01-openvoice-yuyin-kelong-jishu-de-lingxian-chuangxin-tw/</id>
+    <updated>2024-04-01T06:06:06+00:00</updated>
+    <published>2024-04-01T06:06:06+00:00</published>
+    <summary>OpenVoice 是 MIT、清華大學與 MyShell 聯合開發的開源語音克隆技術，支援零樣本跨語言合成。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>量子銀行時代的全同態加密</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-03-25-liangzi-yinhang-shidai-de-quan-tongtai-jiami-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-03-25-liangzi-yinhang-shidai-de-quan-tongtai-jiami-tw/</id>
+    <updated>2024-03-25T06:06:06+00:00</updated>
+    <published>2024-03-25T06:06:06+00:00</published>
+    <summary>全同態加密（FHE）讓資料在加密狀態下計算，為量子時代的銀行業帶來全新資料安全正規化。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>用多模態 LLM 推進 AI：MM1 的啟示</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-03-18-yong-duomotai-llm-tuijin-ai-mm1-qishi-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-03-18-yong-duomotai-llm-tuijin-ai-mm1-qishi-tw/</id>
+    <updated>2024-03-18T06:06:06+00:00</updated>
+    <published>2024-03-18T06:06:06+00:00</published>
+    <summary>Apple MM1 研究為多模態大型語言模型（MLLM）的預訓練揭示關鍵架構與資料組成洞察。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>用 OpenAI Whisper 變革 macOS 實時語音識別</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-03-12-yong-openai-whisper-biange-macos-shishi-yuyin-shibie-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-03-12-yong-openai-whisper-biange-macos-shishi-yuyin-shibie-tw/</id>
+    <updated>2024-03-12T06:06:06+00:00</updated>
+    <published>2024-03-12T06:06:06+00:00</published>
+    <summary>OpenAI Whisper 與 Metal Performance Shaders（MPS）的整合帶來 macOS 上低延遲、高精度的實時語音識別。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>RustLogs：面向 Rust 應用的高階日誌庫</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-03-08-rustlogs-rust-ying-yong-de-gaoji-rizhi-ku-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-03-08-rustlogs-rust-ying-yong-de-gaoji-rizhi-ku-tw/</id>
+    <updated>2024-03-08T06:06:06+00:00</updated>
+    <published>2024-03-08T06:06:06+00:00</published>
+    <summary>RustLogs（RLG）是一個用於 Rust 應用的高階日誌庫，支援結構化、非同步、靈活的日誌記錄。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Mistral AI 的 Le Chat：對話式 AI 的新時代</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-03-04-mistral-ai-le-chat-duihua-shi-ai-de-xin-shidai-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-03-04-mistral-ai-le-chat-duihua-shi-ai-de-xin-shidai-tw/</id>
+    <updated>2024-03-04T06:06:06+00:00</updated>
+    <published>2024-03-04T06:06:06+00:00</published>
+    <summary>由 Mistral AI 打造的 Le Chat 以多語言、定製化與離線能力重塑對話式 AI 格局。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Google Gemma：轉型開源 AI 開發</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-02-26-google-gemma-zhuanxing-kaiyuan-ai-kaifa-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-02-26-google-gemma-zhuanxing-kaiyuan-ai-kaifa-tw/</id>
+    <updated>2024-02-26T06:06:06+00:00</updated>
+    <published>2024-02-26T06:06:06+00:00</published>
+    <summary>Google Gemma 是開源 AI 模型，配合 Ollama 在 macOS 上執行，為開源 AI 開發帶來新格局。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>解讀 Gemini：Google AI 革命解析</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-02-19-jiedu-gemini-google-ai-biange-jiexi-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-02-19-jiedu-gemini-google-ai-biange-jiexi-tw/</id>
+    <updated>2024-02-19T06:06:06+00:00</updated>
+    <published>2024-02-19T06:06:06+00:00</published>
+    <summary>Gemini 1.5 透過新的 MoE 架構和擴充套件上下文視窗，重新定義大型語言模型的能力。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>歐盟 AI 法案：塑造全球 AI 監管的未來</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-02-13-oumeng-ai-fa-an-suzao-quanqiu-ai-jianguan-weilai-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-02-13-oumeng-ai-fa-an-suzao-quanqiu-ai-jianguan-weilai-tw/</id>
+    <updated>2024-02-13T06:06:06+00:00</updated>
+    <published>2024-02-13T06:06:06+00:00</published>
+    <summary>歐盟人工智慧法案以基於風險的方法為 AI 監管設定全球標準，平衡創新與基本權利保護。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Àkàndé 語音助手：變革個人與高管協助</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-02-12-akande-yuyin-zhushou-biange-geren-yu-gaoguan-fuwu-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-02-12-akande-yuyin-zhushou-biange-geren-yu-gaoguan-fuwu-tw/</id>
+    <updated>2024-02-12T06:06:06+00:00</updated>
+    <published>2024-02-12T06:06:06+00:00</published>
+    <summary>Àkàndé 語音助手整合 OpenAI GPT 模型，提供自然語言理解、PDF 摘要與 SQLite 高效快取。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>革新廣告業：AI 如何塑造未來</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-02-08-ai-ruhe-suzao-guanggao-ye-de-weilai-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-02-08-ai-ruhe-suzao-guanggao-ye-de-weilai-tw/</id>
+    <updated>2024-02-08T06:06:06+00:00</updated>
+    <published>2024-02-08T06:06:06+00:00</published>
+    <summary>AI 透過亞馬遜 Rufus 與 Meta 的生成式工具重塑廣告業，提升消費者參與度與廣告投資回報率。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>AI 驅動的音訊分析、翻譯與洞察</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-01-29-ai-yinpin-fenxi-fanyi-yu-jianjie-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-01-29-ai-yinpin-fenxi-fanyi-yu-jianjie-tw/</id>
+    <updated>2024-01-29T06:06:06+00:00</updated>
+    <published>2024-01-29T06:06:06+00:00</published>
+    <summary>Audio Analyser 藉助 Microsoft Azure AI 實現音訊轉錄、情感分析、翻譯與可執行洞察，加速決策。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>AI 提示詞工程的進展</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-01-23-ai-tishici-gongcheng-de-jinzhan-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-01-23-ai-tishici-gongcheng-de-jinzhan-tw/</id>
+    <updated>2024-01-23T06:06:06+00:00</updated>
+    <published>2024-01-23T06:06:06+00:00</published>
+    <summary>2024 年 AI 提示詞工程的創新——自定義指令、多角色、思維鏈與零樣本/小樣本——重塑技術與金融。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Alien Studio：用 AI 攝影變革藝術</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-01-15-alien-studio-yong-ai-sheying-biange-yishu-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-01-15-alien-studio-yong-ai-sheying-biange-yishu-tw/</id>
+    <updated>2024-01-15T06:06:06+00:00</updated>
+    <published>2024-01-15T06:06:06+00:00</published>
+    <summary>從 Rust、AI 與量子計算的探索到 Alien Studio 這一融合技術與藝術的攝影專案。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>用 IBM Qiskit 與量子傅立葉變換最佳化信用比率分析</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-01-08-yong-ibm-qiskit-yu-liangzi-fuliye-bianhuan-youhua-xindai-fenxi-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-01-08-yong-ibm-qiskit-yu-liangzi-fuliye-bianhuan-youhua-xindai-fenxi-tw/</id>
+    <updated>2024-01-08T06:06:06+00:00</updated>
+    <published>2024-01-08T06:06:06+00:00</published>
+    <summary>IBM Qiskit 與量子傅立葉變換（QFT）為信用比率分析帶來突破，提升風險評估的精度與速度。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>AI 趨勢 2024：洞察與對未來的預測</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2024-01-01-ai-qushi-2024-jianjie-yu-yuce-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2024-01-01-ai-qushi-2024-jianjie-yu-yuce-tw/</id>
+    <updated>2024-01-01T06:06:06+00:00</updated>
+    <published>2024-01-01T06:06:06+00:00</published>
+    <summary>AI 在 2024 年從概念走向現實，影響商業、社會、教育、金融、氣候、空間技術與零售各個層面。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>用 AI 增強的量子演算法變革金融</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2023-12-25-ai-zengqiang-de-liangzi-suanfa-biange-jinrong-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2023-12-25-ai-zengqiang-de-liangzi-suanfa-biange-jinrong-tw/</id>
+    <updated>2023-12-25T06:06:06+00:00</updated>
+    <published>2023-12-25T06:06:06+00:00</published>
+    <summary>AI 與量子演算法的融合在金融領域釋放新效率：QFT、Grover 演算法在風險、欺詐檢測中的應用。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>銀行業 AI 與量子計算：2023 年回顧</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2023-12-18-yinhang-ye-ai-yu-liangzi-jisuan-2023-huigu-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2023-12-18-yinhang-ye-ai-yu-liangzi-jisuan-2023-huigu-tw/</id>
+    <updated>2023-12-18T06:06:06+00:00</updated>
+    <published>2023-12-18T06:06:06+00:00</published>
+    <summary>回顧 2023 年人工智慧與量子計算如何變革銀行業，開源 AI 模型崛起以及全球 AI 治理進展。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>量子金鑰分發：銀行安全的變革</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2023-12-11-liangzi-miyao-fenfa-yinhang-anquan-de-biange-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2023-12-11-liangzi-miyao-fenfa-yinhang-anquan-de-biange-tw/</id>
+    <updated>2023-12-11T06:06:06+00:00</updated>
+    <published>2023-12-11T06:06:06+00:00</published>
+    <summary>量子金鑰分發（QKD）透過量子力學原理提供銀行業不可破解的金鑰交換安全保障。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>用 DTT 庫掌握 Rust 中的日期與時間</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2023-12-04-yong-dtt-ku-zhangwo-rust-de-riqi-yu-shijian-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2023-12-04-yong-dtt-ku-zhangwo-rust-de-riqi-yu-shijian-tw/</id>
+    <updated>2023-12-04T06:06:06+00:00</updated>
+    <published>2023-12-04T06:06:06+00:00</published>
+    <summary>DateTime（DTT）是一個高精度的 Rust 日期與時間庫，簡化時區、解析、驗證與格式化等操作。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>KyberLib：抵禦量子威脅的 Rust 盾牌</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2023-11-28-kyberlib-duikang-liangzi-weixie-de-rust-dunpai-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2023-11-28-kyberlib-duikang-liangzi-weixie-de-rust-dunpai-tw/</id>
+    <updated>2023-11-28T06:06:06+00:00</updated>
+    <published>2023-11-28T06:06:06+00:00</published>
+    <summary>KyberLib 是基於 CRYSTALS-Kyber 的 Rust 抗量子密碼庫，適用於 no-std 與 WebAssembly 環境。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>CRYSTALS-Kyber：量子時代的守護演算法</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2023-11-19-crystals-kyber-liangzi-shidai-de-baohu-suanfa-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2023-11-19-crystals-kyber-liangzi-shidai-de-baohu-suanfa-tw/</id>
+    <updated>2023-11-19T06:06:06+00:00</updated>
+    <published>2023-11-19T06:06:06+00:00</published>
+    <summary>CRYSTALS-Kyber 是基於格的抗量子金鑰封裝機制（KEM），是 NIST 後量子標準化的領跑者。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>探索生成式人工智慧</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2023-11-12-tansuo-shengcheng-shi-rengong-zhineng-tw/</id>
+    <updated>2023-11-12T06:06:06+00:00</updated>
+    <published>2023-11-12T06:06:06+00:00</published>
+    <summary>深入瞭解生成式人工智慧的機制、影響、推動力，以及在金融與多行業的應用與倫理考量。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Rust 安全所需的數學與密碼常數</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2023-11-05-rust-anquan-de-shuxue-yu-mima-changshu-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2023-11-05-rust-anquan-de-shuxue-yu-mima-changshu-tw/</id>
+    <updated>2023-11-05T06:06:06+00:00</updated>
+    <published>2023-11-05T06:06:06+00:00</published>
+    <summary>Common（CMN）庫為 Rust 開發者提供精確的數學與密碼常數，提升程式碼安全性與可靠性。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>LibMake：減少重複任務、構建高質量 Rust 庫的程式碼生成器</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2023-10-26-libmake-rust-ku-de-daima-shengchengqi-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2023-10-26-libmake-rust-ku-de-daima-shengchengqi-tw/</id>
+    <updated>2023-10-26T06:06:06+00:00</updated>
+    <published>2023-10-26T06:06:06+00:00</published>
+    <summary>LibMake 是一款 Rust 庫程式碼生成工具，透過模板化生成減少重複勞動，強制最佳實踐。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>量子時代的資料保護：雜湊庫 HSH</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2023-10-16-liangzi-shidai-shuju-baohu-hsh-haxi-ku-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2023-10-16-liangzi-shidai-shuju-baohu-hsh-haxi-ku-tw/</id>
+    <updated>2023-10-16T06:06:06+00:00</updated>
+    <published>2023-10-16T06:06:06+00:00</published>
+    <summary>HSH 是一個用 Rust 開發的輕量級抗量子密碼雜湊庫，用於密碼雜湊與驗證。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Shokunin：最快的基於 Rust 的靜態網站生成器</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2023-10-09-shokunin-zuikuai-de-rust-jingtai-zhandian-shengchengqi-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2023-10-09-shokunin-zuikuai-de-rust-jingtai-zhandian-shengchengqi-tw/</id>
+    <updated>2023-10-09T06:06:06+00:00</updated>
+    <published>2023-10-09T06:06:06+00:00</published>
+    <summary>Shokunin 是一款基於 Rust 的高效能靜態網站生成器，致力於 SEO、可訪問性與極速效能。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>用 pain001 自動化建立符合 ISO 20022 標準的支付檔案</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2023-09-29-yong-pain001-zidonghua-iso-20022-zhifu-wenjian-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2023-09-29-yong-pain001-zidonghua-iso-20022-zhifu-wenjian-tw/</id>
+    <updated>2023-09-29T06:06:06+00:00</updated>
+    <published>2023-09-29T06:06:06+00:00</published>
+    <summary>pain001 是一個開源 Python 庫，可從 CSV 或 SQLite 自動生成 ISO 20022 合規的支付檔案。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Express Transaction Credits 平臺的誕生</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2018-02-15-express-transaction-credits-pingtai-de-jianli-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2018-02-15-express-transaction-credits-pingtai-de-jianli-tw/</id>
+    <updated>2018-02-15T06:06:06+00:00</updated>
+    <published>2018-02-15T06:06:06+00:00</published>
+    <summary>EXTC 平臺基於 ERC-223 標準，致力於透過去中心化交易平臺實現閃電般的金融交易。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>推出新的加密貨幣與面向未來的更快支付方案</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2018-02-04-xin-jiamihuobi-yu-gengkuai-zhifu-fangan-tw/</id>
+    <updated>2018-02-04T06:06:06+00:00</updated>
+    <published>2018-02-04T06:06:06+00:00</published>
+    <summary>Express Transaction Credits Platform（EXTC）網路透過分散式賬本和智慧合約重新定義快速支付。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ERC-20 代幣標準</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2018-01-24-erc-20-daibi-biaozhun-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2018-01-24-erc-20-daibi-biaozhun-tw/</id>
+    <updated>2018-01-24T06:06:06+00:00</updated>
+    <published>2018-01-24T06:06:06+00:00</published>
+    <summary>ERC-20 標準為以太坊代幣定義了一套通用規則與功能，是 DeFi 興起和以太坊廣泛採用的關鍵推動力。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>理解區塊鏈背後的技術</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/</id>
+    <updated>2018-01-09T06:06:06+00:00</updated>
+    <published>2018-01-09T06:06:06+00:00</published>
+    <summary>區塊鏈技術已經開啟了一個去中心化的新時代。本文以以太坊為平臺，帶你逐步構建自己的加密貨幣。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>區塊鏈：2018 年最重要的技術</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2018-01-02-quqiulian-2018-zui-zhongyao-de-jishu-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2018-01-02-quqiulian-2018-zui-zhongyao-de-jishu-tw/</id>
+    <updated>2018-01-02T06:06:06+00:00</updated>
+    <published>2018-01-02T06:06:06+00:00</published>
+    <summary>區塊鏈——驅動加密貨幣飛速崛起的底層技術——正在顛覆企業、金融服務和資本市場。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>比特幣：首個加密貨幣的年度回顧</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2018-01-01-bitebi-niandu-huigu-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2018-01-01-bitebi-niandu-huigu-tw/</id>
+    <updated>2018-01-01T06:06:06+00:00</updated>
+    <published>2018-01-01T06:06:06+00:00</published>
+    <summary>比特幣：一種點對點電子現金系統（P2P ECS），有望徹底改變人們線上交易的方式。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+</feed>

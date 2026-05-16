@@ -1,0 +1,42 @@
+---
+title: "[UK DRAFT] Streamlining Rust Library Development with Code Generation"
+subtitle: "LibMake: a Rust code generator that enforces best practices from day one."
+description: "Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort."
+date: "Oct 26, 2023"
+language: "uk-UA"
+locale: "uk_UA"
+banner: "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp"
+banner_alt: "Giant white pillars"
+keywords: "Rust, library, development, code, generator, boilerplate, best, practices, quality, reliable"
+---
+
+![Giant white pillars](https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp).class=\"img-fluid clearfix\"
+
+> **TL;DR.** Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.
+>
+> **Ключові висновки**
+>
+> - **Спостереження.** Розгорнутий розділ оригіналу англійською мовою наведено нижче.
+> - **Ідея.** Розгорнутий розділ оригіналу англійською мовою наведено нижче.
+> - **Вплив.** Розгорнутий розділ оригіналу англійською мовою наведено нижче.
+> - **Стимули.** Розгорнутий розділ оригіналу англійською мовою наведено нижче.
+
+## Спостереження
+
+Цей розділ є чорновим перекладом українською. Оригінальний англомовний текст розділу «Insight» доступний на канонічній сторінці статті. Повна версія українською буде опублікована після перегляду носієм мови.
+
+## Ідея
+
+Цей розділ є чорновим перекладом українською. Оригінальний англомовний текст розділу «Idea» доступний на канонічній сторінці статті. Повна версія українською буде опублікована після перегляду носієм мови.
+
+## Вплив
+
+Цей розділ є чорновим перекладом українською. Оригінальний англомовний текст розділу «Impact» доступний на канонічній сторінці статті. Повна версія українською буде опублікована після перегляду носієм мови.
+
+## Стимули
+
+Цей розділ є чорновим перекладом українською. Оригінальний англомовний текст розділу «Incentives» доступний на канонічній сторінці статті. Повна версія українською буде опублікована після перегляду носієм мови.
+
+---
+
+*Це чорнова версія статті українською мовою. Повний переклад буде опубліковано після перегляду носієм мови. Канонічна англомовна версія доступна на основній сторінці сайту.*

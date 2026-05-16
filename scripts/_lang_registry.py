@@ -94,7 +94,7 @@ LANGUAGES: tuple[Language, ...] = (
     Language("vi", "vi-VN", "vi_VN", "VI", "Tiếng Việt", "🇻🇳"),
     Language("yo", "yo-NG", "yo_NG", "YO", "Yorùbá", "🇳🇬"),
     Language("zh-hans", "zh-Hans", "zh_CN", "ZH", "简体中文", "🇨🇳", active=True),
-    Language("zh-hant", "zh-Hant", "zh_TW", "ZH-TW", "繁體中文", "🇹🇼"),
+    Language("zh-hant", "zh-Hant", "zh_TW", "ZH-TW", "繁體中文", "🇹🇼", active=True),
 )
 
 _BY_CODE: dict[str, Language] = {lang.code: lang for lang in LANGUAGES}

@@ -1,11 +1,11 @@
 {
-  "date": "April 22, 2024",
   "banner_alt": "Mit MidJourney generiertes Bild – ein Netzwerk digitaler Knoten in roten und blauen Farbtönen.",
   "description": "Ein Fehler in Yilei Chens quantenbasiertem LWE-Algorithmus verschafft der gitterbasierten Kryptografie eine vorübergehende Atempause. Was dies für CRYSTALS-Kyber, Dilithium und den PQC-Fahrplan bedeutet.",
-  "title": "Gitterbasierte Kryptografie: Fehler in Chens LWE-Angriff",
-  "keywords": "Post-Quanten-Kryptografie, NIST, PQC-Standardisierung, Yilei Chen, Quantenalgorithmus, gitterbasierte Kryptografie, LWE-Problem, CRYSTALS-KYBER, CRYSTALS-Dilithium, quantenresistente Kryptografie",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
   "locale": "de_DE",
   "subtitle": "Peer-Review deckt Schwachstelle in Chens bahnbrechender Arbeit auf",
-  "language": "de"
+  "keywords": "Post-Quanten-Kryptografie, NIST, PQC-Standardisierung, Yilei Chen, Quantenalgorithmus, gitterbasierte Kryptografie, LWE-Problem, CRYSTALS-KYBER, CRYSTALS-Dilithium, quantenresistente Kryptografie",
+  "language": "de",
+  "title": "Gitterbasierte Kryptografie: Fehler in Chens LWE-Angriff",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "date": "April 22, 2024"
 }

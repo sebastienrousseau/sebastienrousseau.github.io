@@ -1,0 +1,289 @@
+{
+  "_comment": "Traditional Chinese (zh-hant) inline chrome patches — DRAFT pending native review. Inline portion only — the auto-generated portion comes from strings.json via _lang_registry.build_chrome_patches.",
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"通訊訂閱\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum — 關於支付、人工智慧與後量子密碼學的研究筆記。無垃圾郵件。"
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"nin@yinhang-tw.com\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"通訊訂閱 — sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">訂閱</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">跳至主要內容</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"切換導航\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"切換導航\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"主導航\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"切換到深色主題\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"切換到淺色主題\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"切換主題\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"搜尋（Cmd 或 Ctrl + K）\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"搜尋（⌘K）\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"聯絡我\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">聯絡我 ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">聯絡我</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Sebastien Rousseau 首頁\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/zh-hant/guanyu-tw/index.html\">關於</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/zh-hant/lunwen-tw/index.html\">論文與白皮書</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/zh-hant/zhuti-tw/index.html\">主題</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/zh-hant/xiangmu-tw/index.html\">專案</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/zh-hant/wenzhang-tw/index.html\">文章</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/zh-hant/lianxi-tw/index.html\">聯絡</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/zh-hant/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/zh-hant/boqing-tw/index.html\">播放列表</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"返回頂部\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">文章</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">工作</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">聯絡</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/zh-hant/guanyu-tw/index.html\">關於</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/zh-hant/yong-static-site-generator-zhizuo-tw/index.html\">使用 Static Site Generator 構建</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/zh-hant/lunwen-tw/index.html\">論文與白皮書</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/zh-hant/biaoqian-tw/index.html\">標籤</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/zh-hant/xiangmu-tw/index.html\">專案</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/zh-hant/boqing-tw/index.html\">播放列表</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/zh-hant/lianxi-tw/index.html\">聯絡</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/zh-hant/wenzhang-tw/index.html\">文章</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"社交連結\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau 於 "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau 於 "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"Sebastien Rousseau 黑白肖像\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© 版權所有 2007 - 2026 - Sebastien Rousseau。保留所有權利。"
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/zh-hant/wuzhang-ai-tw/index.html\">無障礙訪問</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/zh-hant/yinsi-tw/index.html\">隱私</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/zh-hant/tiaokuan-tw/index.html\">條款</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"搜尋文件…\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"搜尋\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> 關閉"
+    ],
+    [
+      "navigate</span>",
+      "導航</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> 開啟"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>搜尋</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"語言\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"ZH，切換語言\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"切換語言\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"敬請期待\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">ZH</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"Atom 訂閱源\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"RSS 訂閱源\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"文章摘要\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>核心要點</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>相關閱讀：</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">相關閱讀</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">最近審閱 <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"關於作者\""
+    ],
+    [
+      ">Full profile</a>",
+      ">完整簡介</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"Sebastien Rousseau 肖像\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">聯絡我</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">開啟對話</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/zh-hant/wenzhang-tw/index.html\">閱讀最新研究</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/zh-hant/lianxi-tw/index.html\">聯絡我</a>"
+    ]
+  ]
+}

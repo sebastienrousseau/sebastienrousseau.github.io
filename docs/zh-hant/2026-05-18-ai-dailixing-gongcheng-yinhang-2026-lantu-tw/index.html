@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 18 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 18 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>面向銀行的代理式工程：2026 年高管團隊與工程師藍圖 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="代理式 AI 已在全球銀行業從試點走向生產；70% 機構在用，僅五分之一擁有成熟治理。">
+<meta name="keywords" content="代理式工程, 規範驅動開發, 銀行, 金融服務, AI 治理, 歐盟 AI 法案, DORA, SR 11-7, COBOL 現代化, Claude Code">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Agentic Engineering for Banks">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-+4/UwGEEPkSmHx1ehJQh4JY6UKTXEtg0ARvdQUpowKU=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-lyhCPVxGxkTiutRcPzNLL4VFlznEEFTotqrh9NkViJk=' 'sha256-wDSmiFAMwPD4Ju1hVjZ+JvYKxiKZvcDoFojB4Zg6/ZU=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/zh-hant/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 訂閱源" href="/zh-hant/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="面向銀行的代理式工程：2026 年高管團隊與工程師藍圖 — Sebastien Rousseau">
+<meta property="og:description" content="代理式 AI 已在全球銀行業從試點走向生產；70% 機構在用，僅五分之一擁有成熟治理。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/zh-hant/2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu-tw/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="面向銀行的代理式工程：2026 年高管團隊與工程師藍圖 — Sebastien Rousseau">
+<meta name="twitter:description" content="代理式 AI 已在全球銀行業從試點走向生產；70% 機構在用，僅五分之一擁有成熟治理。">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/zh-hant/2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu-tw/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-18-ingenierie-agentique-banques-blueprint-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-18-agentic-engineering-banks-blueprint-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-18-agentische-engineering-banken-blueprint-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-18-ingenieria-agentica-bancos-blueprint-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-18-ingegneria-agentica-banche-blueprint-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-18-eejentikku-enjiniaringu-ginkou-no-2026-sekkeizu/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-18-engenharia-agentica-bancos-blueprint-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-18-agentnaya-inzheneriya-plan-dlya-bankov-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">跳至主要內容</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="切換導航" />
+      <div class="wrap">
+        <a class="ap-brand" href="/zh-hant/index.html" aria-label="Sebastien Rousseau 首頁">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="主導航">
+          <ul class="ap-menu">
+            <li><a href="/zh-hant/guanyu-tw/index.html">關於</a></li>
+            <li><a href="/zh-hant/wenzhang-tw/index.html" aria-current="page" class="active">文章</a></li>
+            <li><a href="/zh-hant/lunwen-tw/index.html">論文與白皮書</a></li>
+            <li><a href="/zh-hant/zhuti-tw/index.html">主題</a></li>
+            <li><a href="/zh-hant/xiangmu-tw/index.html">專案</a></li>
+            <li><a href="/zh-hant/boqing-tw/index.html">播放列表</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="切換到深色主題" aria-pressed="false" title="切換主題">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="搜尋（Cmd 或 Ctrl + K）" title="搜尋（⌘K）">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="語言">
+            <button type="button" class="ap-lang-toggle" aria-label="ZH，切換語言" aria-expanded="false" aria-haspopup="menu" title="切換語言">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">ZH</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="敬請期待">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="敬請期待">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="敬請期待">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="敬請期待">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="敬請期待">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="敬請期待">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="敬請期待">🇮🇩 Indonesia</span>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <span class="ap-lang-item" data-lang="ko" aria-disabled="true" title="敬請期待">🇰🇷 한국어</span>
+                <span class="ap-lang-item" data-lang="nl" aria-disabled="true" title="敬請期待">🇳🇱 Nederlands</span>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="敬請期待">🇵🇱 Polski</span>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="敬請期待">🇷🇴 Română</span>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="敬請期待">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="敬請期待">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="敬請期待">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="敬請期待">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="敬請期待">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="敬請期待">🇳🇬 Yorùbá</span>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/zh-hant/lianxi-tw/index.html" aria-label="聯絡我">聯絡我 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="切換導航">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>面向銀行的代理式工程：2026 年高管團隊與工程師藍圖</h1>
+      <p class="sub">代理式 AI 已從試點走向生產。70% 的銀行已使用，僅五分之一擁有成熟治理模型</p>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-" class="article-tag" rel="tag">代理式工程</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">規範驅動開發</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">銀行</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">金融服務</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">AI 治理</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">歐盟 AI 法案</a><a href="/tags/index.html#h3-dora" class="article-tag" rel="tag">DORA</a><a href="/tags/index.html#h3-sr-11-7" class="article-tag" rel="tag">SR 11-7</a><a href="/tags/index.html#h3-cobol" class="article-tag" rel="tag">COBOL 現代化</a><a href="/tags/index.html#h3-claude-code" class="article-tag" rel="tag">Claude Code</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-18T06:06:06+00:00" class="meta-pub">Published 18 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">4 min read</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#section-1">代理式工程變得不可避免的一年</a></li><li><a href="#section-2">銀行業採用現狀</a></li><li><a href="#section-3">銀行必須內化的三個風險向量</a></li><li><a href="#section-7">為何隨性編碼不能成為銀行業預設</a></li><li><a href="#section-8">在受監管資產中的規範驅動開發</a></li><li><a href="#section-9">現在適用的監管棧</a></li><li><a href="#ai">AI 輔助開發的三種模式比較</a></li><li><a href="#section-11">構建代理式銀行：架構檢視</a></li><li><a href="#hitl-vs-hotl">實踐中的人類監督：HITL vs HOTL</a></li><li><a href="#vs">購買 vs 構建：第三方代理問題</a></li><li><a href="#section-14">按銀行型別意味著什麼</a></li><li><a href="#2026-8-12">到 2026 年 8 月的 12 周行動計劃</a></li><li><a href="#section-20">結論</a></li><li><a href="#section-21">常見問題</a></li><li><a href="#section-22">參考資料</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 代理式 AI 已在全球銀行業從試點走向生產；70% 機構在用，僅五分之一擁有成熟治理。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>代理式工程變得不可避免的一年.</strong> 直到最近，關於金融服務 AI 的對話一直由兩個相鄰但不同的事物主導：生成式聊天介面（有幫助但有限）和層疊到企業資料上的檢索增強生成模式（有用但也有限）。2025 年末到 2026 年初變化的是第三類——自主代理，它們規劃、執行和完成多步驟工作流，人類監督有限——從技術演示轉向運營現實，並同時跨越企業和威脅行為者。.</li>  <li><strong>銀行業採用現狀.</strong> 總體圖景明確。根據 2026 年多項調查的研究，70% 的銀行高管 ⧉ 報告其公司已在某種程度上使用代理式 AI。Gartner 預測 ⧉ 到 2026 年底約 40% 的金融服務公司將以某種形式執行 AI 代理。.</li>  <li><strong>銀行必須內化的三個風險向量.</strong> 在任何架構對話之前，董事會的注意力應放在三個特定於代理式系統、比大多數銀行規劃得更早到達的風險上。.</li>  <li><strong>為何隨性編碼不能成為銀行業預設.</strong> 值得精確說明隨性編碼——短提示、觀察輸出、迭代——為何作為受監管資產中的預設工作流失敗。失敗模式不是明顯的（LLM 偶爾幻覺）。失敗模式是結構性的，在四個地方同時出現：缺乏共享約定、上下文衰減、不可見缺陷累積 和 監管可追溯性問題。.</li></ul></aside><h1>面向銀行的代理式工程：2026 年高管團隊與工程師藍圖</h1>
+<p>代理式 AI 已在全球銀行業從試點走向生產。70% 的機構已在某種程度上使用；僅五分之一擁有成熟治理模型。同時，自主對手以機器速度運營，新系統必須互操作的遺留 COBOL 資產是為 1960 年代的批處理假設而編寫的，歐盟 AI 法案的高風險截止日期還有 12 周。這就是銀行需要持有的工程與治理立場。</p>
+<hr />
+<blockquote>
+<p><strong>核心要點</strong></p>
+<ul>
+<li><strong>從隨性編碼（vibe coding）到規範驅動開發（spec-driven development）的過渡不再是願景。</strong> 2025 年 2 月創造&quot;隨性編碼&quot;一詞的 Andrej Karpathy，<a href="https://towardsdatascience.com/from-vibe-coding-to-spec-driven-development/">一年後承認 ⧉</a> 該時代正在結束，專業人士的新預設是 <strong>代理式工程</strong>——根據詳細規範編排代理並具有人類監督。</li>
+<li>銀行業採用真實且加速。<a href="https://theuxda.com/blog/agentic-ai-banking-risk-next-financial-crisis-wont-be-human">70% 的銀行業公司 ⧉</a> 報告在某種程度上使用代理式 AI（EY 2026：16% 生產中，52% 試點中）；44% 的金融團隊今年將使用——Wolters Kluwer 報告同比增長 600%+。</li>
+<li><strong>治理未跟上步伐。</strong> Deloitte 的 AI 狀況 2026 發現，只有五分之一的公司擁有自主 AI 代理的成熟治理模型。Deloitte 對 MIT AI 風險資料庫的分析識別 <a href="https://www.deloitte.com/us/en/insights/industry/financial-services/agentic-ai-risks-banking.html">350 多種風險 ⧉</a> 可能由自主或代理行為產生。</li>
+<li><strong>威脅格局已工業化。</strong> Anthropic 在 2025 年 11 月披露中國國家支援的 GTG-1002 組劫持 Claude Code 對約 30 個目標進行自主間諜活動，AI <strong>自主處理 80-90% 的戰術運營</strong>。Flashpoint 觀察到 <a href="https://www.hstoday.us/subject-matter-areas/cybersecurity/2026-global-threat-intelligence-report-highlights-rise-in-agentic-ai-cybercrime/">AI 相關非法討論增加 <strong>1,500%</strong> ⧉</a>，僅在 2025 年 11 月至 12 月間。</li>
+<li><strong>遺留資產是無聲約束。</strong> 金融服務 IT 預算的 70-75% 被遺留維護消耗，63% 的銀行仍依賴 2000 年前編寫的程式碼，大多數銀行報告內部只有一兩個人能維護其核心平臺執行的 COBOL。代理式 AI 現在是縮小該差距的主導方法。</li>
+<li><strong>監管棧正在收斂。</strong> 歐盟 AI 法案下，<strong>2026 年 8 月 2 日</strong> 觸發高風險 AI 系統的完全可執行性（附件 III 明確包括信用評分和信用度評估）。DORA 已生效。SR 11-7 在監管實踐中已擴充套件到涵蓋 LLM 和代理式系統。違規罰款達 <strong>3500 萬歐元或全球年營業額 7%</strong>。</li>
+<li><strong>人類監督不是單一概念。</strong> <strong>HITL</strong>（人在迴路中，代理未經明確人類批准不能執行）與 <strong>HOTL</strong>（人在迴路上，代理在人類監督下自主執行）的區別現在是歐盟 AI 法案第 14 條合規的工作框架，每個高風險代理都需要明確立場說明哪種模型適用。</li>
+<li><strong>大多數代理將被購買，而非構建。</strong> DORA 下的第三方風險管理是 2026 年最響亮且未被充分認識的挑戰。供應商將提供銀行部署的大部分代理能力；監管義務仍在銀行，大多數現有供應商合同無法滿足第 13 條文件要求。</li>
+<li><strong>代理式工程不是&quot;ChatGPT 加 MCP 伺服器&quot;。</strong> 它是對機構端到端流的結構性所有權立場——客戶旅程、交易生命週期、控制平面、審計基質、量子安全密碼基礎——由機構自己的工程職能構建和運營，而非委託給聊天機器人。</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="section-1">代理式工程變得不可避免的一年 <a class="heading-anchor" href="#section-1" aria-label="Link to 代理式工程變得不可避免的一年">#</a></h2>
+<p>直到最近，關於金融服務 AI 的對話一直由兩個相鄰但不同的事物主導：生成式聊天介面（有幫助但有限）和層疊到企業資料上的檢索增強生成模式（有用但也有限）。2025 年末到 2026 年初變化的是第三類——自主代理，它們規劃、執行和完成多步驟工作流，人類監督有限——從技術演示轉向運營現實，並同時跨越企業和威脅行為者。</p>
+<p><a href="https://towardsdatascience.com/from-vibe-coding-to-spec-driven-development/">2025 年 2 月創造&quot;vibe coding&quot;一詞 ⧉</a> 的 Andrej Karpathy，在接下來的一年裡觀察專業工程師超越它。他的修訂——<em>&quot;代理式工程&quot;</em>——現在是整個行業的工作術語。轉變的實質直接：在 2026 年嚴肅的軟體工作中，工程師 99% 的時間不直接編寫程式碼。他們編排代理來做，同時擔任監督。</p>
+<p>這一轉變聽起來像工程團隊對話。在銀行業不是。這是董事會層面的對話，因為正在重寫內部程式碼生成方式的相同代理能力，也在重寫外部對手的運營方式、監管機構期望監督執行的方式以及機構邊界的定義方式。</p>
+<h2 id="section-2">銀行業採用現狀 <a class="heading-anchor" href="#section-2" aria-label="Link to 銀行業採用現狀">#</a></h2>
+<p>總體圖景明確。根據 2026 年多項調查的研究，<a href="https://thefinancialbrand.com/news/artificial-intelligence-banking/autonomous-ai-agents-redefine-banking-growth-196646">70% 的銀行高管 ⧉</a> 報告其公司已在某種程度上使用代理式 AI。<a href="https://www.thenews.com.pk/latest/1385186-why-british-banks-push-for-agentic-ai-is-worrying-uk-regulators">Gartner 預測 ⧉</a> 到 2026 年底約 40% 的金融服務公司將以某種形式執行 AI 代理。</p>
+<p>執行圖景較不令人鼓舞。<a href="https://neurons-lab.com/article/agentic-ai-in-financial-services-2026/">KPMG 報告 ⧉</a> 99% 的公司計劃將自主代理投入生產，但 <strong>只有 11% 已這樣做</strong>。EY 發現 34% 的領導者已開始使用 AI 代理，只有 14% 已完全實施。Forrester 發現 <strong>57% 的組織認為缺乏內部能力</strong> 利用代理式 AI。</p>
+<p>英國金融行為監管局已 <a href="https://www.thenews.com.pk/latest/1385186-why-british-banks-push-for-agentic-ai-is-worrying-uk-regulators">公開提出關切 ⧉</a> 部署速度超過治理成熟度——FCA 首席資料官 Jessica Rasu 將這種緊張定性為近期零售消費者風險。麥肯錫單獨 <a href="https://www.unboxfuture.com/2026/05/the-autonomous-banker-how-ai-agents.html">警告 ⧉</a> 未能調整業務模式的銀行 <strong>到 2030 年面臨侵蝕全球利潤高達 1700 億美元</strong> 的風險。</p>
+<h2 id="section-3">銀行必須內化的三個風險向量 <a class="heading-anchor" href="#section-3" aria-label="Link to 銀行必須內化的三個風險向量">#</a></h2>
+<p>在任何架構對話之前，董事會的注意力應放在三個特定於代理式系統、比大多數銀行規劃得更早到達的風險上。</p>
+<h3 id="1">1. 自主對手 <a class="heading-anchor" href="#1" aria-label="Link to 1. 自主對手">#</a></h3>
+<p>2026 年最令人迷失方向的發展是代理式 AI 在攻擊側的運營化。2025 年 8 月，Anthropic 披露了一類活動，稱為 <a href="https://www.anthropic.com/news/detecting-countering-misuse-aug-2025"><em>vibe hacking</em> ⧉</a>：網路犯罪分子使用代理式 AI 大規模執行復雜攻擊，AI 嵌入偵察、憑證收集、網路滲透和被盜資料分析。<a href="https://www.anthropic.com/news/disrupting-AI-espionage">2025 年 11 月 ⧉</a>，Anthropic 披露它已破壞由中國國家支援組（指定 <strong>GTG-1002</strong>）發起的活動，該組劫持 Claude Code 例項對 <strong>約 30 個國防、能源和技術目標</strong> 進行自主間諜活動，AI 處理 <strong>80-90% 的戰術運營</strong>，以 <strong>每秒數千次請求</strong> 執行——人類操作員不可能的速度。</p>
+<p>2026 年 1 月，Step Finance——基於 Solana 的 DeFi 投資組合經理——以將裝置入侵轉變為 <strong>2700-3000 萬美元損失</strong> 的方式被攻破，因為該公司的 AI 交易代理有許可權在沒有人類批准的情況下執行大額轉賬。攻擊者對 AI 本身進行社會工程，聲稱在執行授權的漏洞懸賞計劃。</p>
+<p>總趨勢是銀行必須內化的。Flashpoint 2026 全球威脅情報報告識別 <a href="https://www.hstoday.us/subject-matter-areas/cybersecurity/2026-global-threat-intelligence-report-highlights-rise-in-agentic-ai-cybercrime/">AI 相關非法討論增加 <strong>1,500%</strong> ⧉</a>。摩根大通的 Jamie Dimon <a href="https://www.cnbc.com/2026/05/08/anthropic-mythos-ai-cybersecurity-banks.html">公開明確 ⧉</a> 該技術的初始優勢在進攻，而非防禦。</p>
+<h3 id="2">2. 程式碼質量回歸 <a class="heading-anchor" href="#2" aria-label="Link to 2. 程式碼質量回歸">#</a></h3>
+<p>第二個向量是內部和較安靜的。在沒有規範紀律和嚴格驗證的情況下，LLM 生成的程式碼以實質上高於人類編寫程式碼的速率攜帶缺陷出貨。<a href="https://www.augmentcode.com/guides/what-is-spec-driven-development">SonarQube 對五個前沿 LLM 的分析 ⧉</a> 生成 Java 程式碼發現，<strong>Llama 3.2 90B 輸出中檢測到的漏洞中超過 70% 被評為 BLOCKER 嚴重性</strong>。Pearce 等人（IEEE S&amp;P）發現 <strong>約 40% 的安全敏感語境中 LLM 生成的程式包含漏洞</strong>。</p>
+<p>對非監管行業，這是生產力稅。對銀行，這是複合的監管和運營風險。</p>
+<h3 id="3">3. 遺留錨 <a class="heading-anchor" href="#3" aria-label="Link to 3. 遺留錨">#</a></h3>
+<p>第三個向量是銀行已最瞭解的，代理式過渡使它同時更緊迫和更可處理。超過 <strong>70% 的財富 500 強公司仍依賴大型機</strong>，<a href="https://www.computerweekly.com/opinion/AI-to-help-mainframes-remain-business-critical-in-2026">Computer Weekly 分析指出 ⧉</a>，通常建立在數十年交織的 COBOL 和 RPG 與自定義業務邏輯上。在金融服務中具體而言，遺留技術消耗 <a href="https://www.cio.com/article/4085184/using-ai-to-modernize-mainframes-turning-legacy-tech-into-a-strategic-advantage.html"><strong>70-75% 的年度 IT 支出</strong> ⧉</a>。</p>
+<p>2026 年 2 月發生的變化是可信代理工具用於遺留現代化的到來。Anthropic 宣佈 Claude Code <a href="https://www.cnbc.com/2026/02/23/ibm-is-the-latest-ai-casualty-shares-are-tanking-on-anthropic-cobol-threat.html">可以對映 COBOL 依賴、記錄工作流並識別風險 ⧉</a>，人類分析師需要數月才能浮出。</p>
+<h2 id="section-7">為何隨性編碼不能成為銀行業預設 <a class="heading-anchor" href="#section-7" aria-label="Link to 為何隨性編碼不能成為銀行業預設">#</a></h2>
+<p>值得精確說明隨性編碼——短提示、觀察輸出、迭代——為何作為受監管資產中的預設工作流失敗。失敗模式不是明顯的（LLM 偶爾幻覺）。失敗模式是結構性的，在四個地方同時出現：<strong>缺乏共享約定</strong>、<strong>上下文衰減</strong>、<strong>不可見缺陷累積</strong> 和 <strong>監管可追溯性問題</strong>。</p>
+<h2 id="section-8">在受監管資產中的規範驅動開發 <a class="heading-anchor" href="#section-8" aria-label="Link to 在受監管資產中的規範驅動開發">#</a></h2>
+<p>規範驅動開發（SDD）顛倒工作順序。團隊不直接跳入實現並與代理迭代，而是首先產生規範——架構決策、要求、介面契約、成功標準、安全約束——代理生成滿足規範的程式碼。驗證是結構化的：規範定義輸出必須做什麼，單獨的過程（測試生成、程式碼評審、適用時的形式驗證）檢查它是否已完成。</p>
+<p>實際工具在 2025 年末和 2026 年初已合併。<a href="https://www.cgi.com/en/blog/artificial-intelligence/spec-driven-development">GitHub 的 Spec Kit ⧉</a>（2025 年末釋出）在程式碼生成前形式化意圖。AWS 在其 Kiro IDE 中直接嵌入規範優先工作流。</p>
+<p>對銀行，重要的變體是 Augment Code 的分析所稱的 <strong>規範錨定開發</strong>——規範優先，AI 生成受其約束的程式碼，額外治理層（憲法約束、監督檢查點、人類批准門）位於生成和合並之間。</p>
+<h2 id="section-9">現在適用的監管棧 <a class="heading-anchor" href="#section-9" aria-label="Link to 現在適用的監管棧">#</a></h2>
+<p>2026 年銀行業 AI 周圍的監管邊界不再是檢查清單；它是需要一起推理的重疊義務棧。最重要的單一日期是 <strong>2026 年 8 月 2 日</strong>，歐盟 AI 法案的 <a href="https://ai2.work/economics/eu-ai-act-high-risk-rules-hit-august-2026-your-compliance-countdown/">高風險系統義務變得完全可執行 ⧉</a>。附件 III 明確將信用評分、信用度評估、壽險和健康險中的風險評估，以及個人金融立場的評估或分類分類為高風險。違規罰款達 <strong>3500 萬歐元或全球年營業額 7%</strong>。</p>
+<p>與 AI 法案並存：</p>
+<ul>
+<li><strong>DORA</strong>（數字運營韌性法案）自 2025 年 1 月起生效，建立明確涵蓋關鍵金融功能中使用的 AI 系統的 22 項 ICT 風險管理義務。</li>
+<li><strong>SR 11-7</strong>——美聯儲和 OCC 的模型風險管理指南，最初於 2011 年編寫——已 <a href="https://aegisaicompliance.com/ai-governance-for-banks/">在監管實踐中擴充套件 ⧉</a> 以涵蓋 LLM 和代理式系統。</li>
+<li><strong>NIST AI RMF</strong>（1.0，2023 年 1 月）在美國是自願的，但被聯邦監管機構引用為基線。</li>
+<li><strong>ISO/IEC 42001</strong>（2023 年 12 月釋出）是首個可認證的 AI 管理系統標準。</li>
+<li><strong>英國 SM&amp;CR 和 Consumer Duty</strong>——高階經理與認證制度現在要求為每個高風險 AI 系統指定問責。</li>
+<li><strong>G7 後量子路線圖</strong>（2026 年 1 月）、NCSC 三階段遷移框架和 BIS Project Leap 發現與該棧並存。</li>
+</ul>
+<h2 id="ai">AI 輔助開發的三種模式比較 <a class="heading-anchor" href="#ai" aria-label="Link to AI 輔助開發的三種模式比較">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>維度</th>
+<th>隨性編碼</th>
+<th>規範驅動開發</th>
+<th>代理式工程</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>主要輸入</td>
+<td>短提示</td>
+<td>形式規範</td>
+<td>規範 + 代理編排計劃</td>
+</tr>
+<tr>
+<td>工程師角色</td>
+<td>提示迭代者</td>
+<td>規範作者</td>
+<td>編排者和驗證者</td>
+</tr>
+<tr>
+<td>輸出紀律</td>
+<td>直接程式碼生成</td>
+<td>受規範約束的程式碼</td>
+<td>產生程式碼、測試、文件的多代理工作流</td>
+</tr>
+<tr>
+<td>審計追蹤</td>
+<td>聊天曆史（未持久化）</td>
+<td>規範 + 生成的程式碼 + 測試</td>
+<td>規範 + 代理追蹤 + 驗證工件</td>
+</tr>
+<tr>
+<td>缺陷率（僅 LLM）</td>
+<td>10-40% 漏洞率（文獻基線）</td>
+<td>受規範約束顯著降低</td>
+<td>驗證門下最低</td>
+</tr>
+<tr>
+<td>監管可追溯性</td>
+<td>對高風險 AI 不足</td>
+<td>與歐盟 AI 法案第 12 條相容</td>
+<td>為第 12 條 + SR 11-7 + DORA 設計</td>
+</tr>
+<tr>
+<td>適合銀行業？</td>
+<td>否，對生產</td>
+<td>是，帶治理</td>
+<td>是，帶成熟治理</td>
+</tr>
+<tr>
+<td>能力上限</td>
+<td>受單次提示約束</td>
+<td>受規範質量約束</td>
+<td>受編排質量約束</td>
+</tr>
+</tbody>
+</table>
+<p><em>來源：Karpathy 評論 (2026)、<a href="https://www.augmentcode.com/guides/what-is-spec-driven-development">Augment Code SDD 分析 ⧉</a> 和 LLM 程式碼生成漏洞率學術文獻的綜合。</em></p>
+<h2 id="section-11">構建代理式銀行：架構檢視 <a class="heading-anchor" href="#section-11" aria-label="Link to 構建代理式銀行：架構檢視">#</a></h2>
+<p>這些工作流背後的戰略立場是高管團隊需要明確擁有的。銀行業代理式工程不是開發者生產力倡議。它是觸及端到端客戶旅程、整個交易生命週期以及兩者之下的密碼和審計基質的機構能力。該能力的四層值得直接執行關注，自上而下：</p>
+<blockquote>
+<p><strong>第 4 層 — 代理控制平面</strong>
+治理、審計、終止開關、行為異常檢測、人類覆蓋。每個代理類的 HITL 和 HOTL 監督配置。</p>
+<p><strong>第 3 層 — 代理式工作流</strong>
+客戶旅程、內部運營、開發管道。高風險流預設規範驅動。</p>
+<p><strong>第 2 層 — 資料和模型層</strong>
+AIBOM（AI 物料清單）、模型登錄檔、檢索基質、提示模板版本控制、微調譜系。</p>
+<p><strong>第 1 層 — 量子安全基礎</strong>
+ML-KEM、ML-DSA、混合 PKI、密碼敏捷性。每個更高層完整性宣告所依賴的基質。</p>
+</blockquote>
+<h2 id="hitl-vs-hotl">實踐中的人類監督：HITL vs HOTL <a class="heading-anchor" href="#hitl-vs-hotl" aria-label="Link to 實踐中的人類監督：HITL vs HOTL">#</a></h2>
+<p>監管機構在 2026 年最關注的第 4 層內的單一區別是兩種監督模型。兩者都是人類監督的形式；它們在延遲、規模以及監管機構願意授予的關於代理行為的假設上不同。</p>
+<p><strong>人在迴路中（HITL）</strong> 是代理未經明確人類批准不能執行後果行動的模型。代理準備決策、呈現並等待。</p>
+<p><strong>人在迴路上（HOTL）</strong> 是代理在有界引數內自主執行的模型，人類實時監控遙測並保留隨時停止代理的權威。</p>
+<p>歐盟 AI 法案第 14 條不規定 HITL 與 HOTL；它要求人類監督是 <strong>有意義的</strong>。</p>
+<h2 id="vs">購買 vs 構建：第三方代理問題 <a class="heading-anchor" href="#vs" aria-label="Link to 購買 vs 構建：第三方代理問題">#</a></h2>
+<p>潛入大多數銀行的 2026 年現實是它們將不會主要 <em>構建</em> 代理能力。它們將 <em>購買</em> 它。</p>
+<p>對於處於購買地位的銀行，三個實踐紀律適用：<strong>向供應商要求 AIBOM</strong>、<strong>測試黑盒而非小冊子</strong>、<strong>根據第 13 條條款重新談判合同</strong>。</p>
+<h2 id="section-14">按銀行型別意味著什麼 <a class="heading-anchor" href="#section-14" aria-label="Link to 按銀行型別意味著什麼">#</a></h2>
+<h3 id="section-15">一級綜合銀行 <a class="heading-anchor" href="#section-15" aria-label="Link to 一級綜合銀行">#</a></h3>
+<p>具有 1 萬億美元以上資產負債表和全球存在的機構同時是最暴露的（最廣泛的監管邊界、最大的遺留資產、自主對手的最高價值目標）和資源最豐富的。戰略優先事項是首先構建控制平面——上面架構的第 4 層。</p>
+<h3 id="section-16">中型和區域銀行 <a class="heading-anchor" href="#section-16" aria-label="Link to 中型和區域銀行">#</a></h3>
+<p>二級銀行的競爭問題比一級銀行更尖銳。實際答案是在小套經審查的供應商上硬標準化（合同滿足第 13 條文件要求），投資規範驅動開發紀律。</p>
+<h3 id="psp">金融科技、PSP 和加密鄰近機構 <a class="heading-anchor" href="#psp" aria-label="Link to 金融科技、PSP 和加密鄰近機構">#</a></h3>
+<p>金融科技和支付機構部分有相反問題：敏捷度高，治理常低於同行銀行。戰略紀律是將 AI 治理視為產品就緒門而非合規疊加。</p>
+<h3 id="section-18">內部工程職能 <a class="heading-anchor" href="#section-18" aria-label="Link to 內部工程職能">#</a></h3>
+<p>對閱讀本文的工程師和研究者，重要的工作紀律是日常的。將工作的重心從輸入字元移到產生規範和驗證工具。</p>
+<h2 id="2026-8-12">到 2026 年 8 月的 12 周行動計劃 <a class="heading-anchor" href="#2026-8-12" aria-label="Link to 到 2026 年 8 月的 12 周行動計劃">#</a></h2>
+<p>對在現在到歐盟 AI 法案執行日期之間執行代理式工程專案的執行贊助者，工作壓縮為 12 周序列：</p>
+<ul>
+<li><strong>第 1-2 周 —— 製作 AIBOM。</strong></li>
+<li><strong>第 3-4 周 —— 按系統分類監督模型。</strong></li>
+<li><strong>第 5-6 周 —— 構建或強化代理控制平面。</strong></li>
+<li><strong>第 7-8 周 —— 供應商合同審查。</strong></li>
+<li><strong>第 9-10 周 —— 幹執行符合性評估。</strong></li>
+<li><strong>第 11-12 周 —— 截止前驗證和董事會簽字。</strong></li>
+</ul>
+<h2 id="section-20">結論 <a class="heading-anchor" href="#section-20" aria-label="Link to 結論">#</a></h2>
+<p>過去六個月在行業中結晶的尖銳觀察是，舊的企業級運營方式不是被新技術超越，而是被新工作模式超越。</p>
+<p>內部擁有這一立場的機構——將代理式工程視為銀行的結構效能力而非從供應商採購的生產力疊加——將在未來兩年複合優勢。不這樣做的機構將在未來兩年透過事件報告和監管發現來發現它們應該構建什麼。</p>
+<h2 id="section-21">常見問題 <a class="heading-anchor" href="#section-21" aria-label="Link to 常見問題">#</a></h2>
+<p><strong>生成式 AI、代理式 AI 和代理式工程之間的區別是什麼？</strong></p>
+<p>生成式 AI 響應提示產生內容；它是反應性的。代理式 AI 自主追求定義的目標，訪問資料、使用工具，並在多步驟工作流中採取行動，不需要在每一步都有人類提示。代理式工程——<a href="https://towardsdatascience.com/from-vibe-coding-to-spec-driven-development/">Karpathy 在 2026 年採用的術語 ⧉</a>——是根據詳細規範編排代理與人類監督的工作紀律。</p>
+<p><strong>為何 2026 年 8 月歐盟 AI 法案截止日期對銀行如此重要？</strong></p>
+<p>AI 法案附件 III 明確將幾個核心銀行 AI 用例分類為高風險：自然人的信用度評估和信用評分、壽險和健康險中的風險評估和定價，以及個人金融立場的評估或分類。</p>
+<p><strong>HITL 和 HOTL 之間的實際區別是什麼？</strong></p>
+<p>HITL 意味著代理未經明確人類批准不能執行後果行動。HOTL 意味著代理在有界引數內自主執行，人類監控遙測並保留隨時停止的權威。</p>
+<p><strong>我們的大多數代理將來自供應商。我們如何為不是我們構建的系統滿足 DORA 和歐盟 AI 法案？</strong></p>
+<p>監管義務在部署者，而非供應商。實際答案三方面：要求供應商在簽字前提供文件化 AIBOM、對代理進行行為測試、重新談判供應商合同以包括第 13 條文件權利。</p>
+<p><strong>銀行實際應擔心代理式對手到什麼程度？</strong></p>
+<p>誠實的答案是威脅是真實的，在運營上與之前的網路威脅不同。2025 年 11 月 Anthropic 披露的 GTG-1002 是規範例子。</p>
+<p><strong>代理式 AI 僅僅是&quot;ChatGPT 加 MCP 伺服器&quot;嗎？</strong></p>
+<p>不，這是當前市場中最重要的誤解之一。聊天介面增強 MCP 伺服器是在有界會話中檢索和處理資料的有用模式。代理式工程是機構的結構效能力。</p>
+<p><strong>銀行在未來 12 周應做的最重要的事是什麼？</strong></p>
+<p>三件事，依次：製作 AI 物料清單、為任何當前做出或實質影響客戶決策的 AI 系統構建代理控制平面、將內部工程文化從隨性編碼移到規範驅動開發。</p>
+<h2 id="section-22">參考資料 <a class="heading-anchor" href="#section-22" aria-label="Link to 參考資料">#</a></h2>
+<ul>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/zh-hant/2026-05-14-baozhang-zhangbu-hou-liangzi-qianyi-qiye-jinrong-tw/index.html">保障賬簿：後量子遷移的董事會級指南</a>。</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/zh-hant/2026-05-12-iso-20022-pacs008-jiegouhua-dizhi-jiezhi-riqi-tw/index.html">2026 年 11 月 pacs.008 結構化地址截止日期</a>。</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/zh-hant/2026-04-11-liangzi-yuzhi-zai-yi-dong-tw/index.html">量子閾值再次移動</a>。</li>
+<li>Sebastien Rousseau, (2023). <a href="https://sebastienrousseau.com/zh-hant/2023-11-19-crystals-kyber-liangzi-shidai-de-baohu-suanfa-tw/index.html">CRYSTALS-Kyber：量子時代的守護演算法</a>。</li>
+<li>Mansurova, M. (2026). <a href="https://towardsdatascience.com/from-vibe-coding-to-spec-driven-development/">從隨性編碼到規範驅動開發 ⧉</a>。Towards Data Science.</li>
+<li>CGI, (2026). <a href="https://www.cgi.com/en/blog/artificial-intelligence/spec-driven-development">規範驅動開發 ⧉</a>。CGI.</li>
+<li>Augment Code, (2026). <a href="https://www.augmentcode.com/guides/what-is-spec-driven-development">什麼是規範驅動開發？完整指南 ⧉</a>。Augment Code.</li>
+<li>Deloitte, (2026). <a href="https://www.deloitte.com/us/en/insights/industry/financial-services/agentic-ai-risks-banking.html">管理銀行業 AI 代理新風險浪潮 ⧉</a>。Deloitte 金融服務中心.</li>
+<li>Anthropic, (2025). <a href="https://www.anthropic.com/news/detecting-countering-misuse-aug-2025">檢測和應對 AI 濫用：2025 年 8 月 ⧉</a>。Anthropic.</li>
+<li>Anthropic, (2025). <a href="https://www.anthropic.com/news/disrupting-AI-espionage">破壞首次報告的 AI 編排網路間諜活動 ⧉</a>。Anthropic.</li>
+<li>Flashpoint, (2026). <a href="https://www.hstoday.us/subject-matter-areas/cybersecurity/2026-global-threat-intelligence-report-highlights-rise-in-agentic-ai-cybercrime/">2026 全球威脅情報報告 ⧉</a>。HSToday / Flashpoint.</li>
+<li>歐盟委員會, (2024). 關於人工智慧的歐盟法規 (EU) 2024/1689（歐盟 AI 法案）。</li>
+<li>Regulativ, (2026). <a href="https://www.finextra.com/blogposting/31653/the-eu-ai-acts-august-2026-deadline-what-financial-services-firms-must-do-now">歐盟 AI 法案 2026 年 8 月截止日期 ⧉</a>。Finextra.</li>
+<li>AegisAI Compliance, (2026). <a href="https://aegisaicompliance.com/ai-governance-for-banks/">銀行 AI 治理：SR 11-7 和歐盟 AI 法案合規指南 ⧉</a>。AegisAI.</li>
+<li>The Financial Brand, (2026). <a href="https://thefinancialbrand.com/news/artificial-intelligence-banking/autonomous-ai-agents-redefine-banking-growth-196646">自主 AI 代理將如何真正重新定義銀行業增長 ⧉</a>。The Financial Brand.</li>
+<li>Computer Weekly, (2026). <a href="https://www.computerweekly.com/opinion/AI-to-help-mainframes-remain-business-critical-in-2026">AI 幫助大型機在 2026 年保持業務關鍵 ⧉</a>。Computer Weekly.</li>
+<li>CIO Magazine, (2025). <a href="https://www.cio.com/article/4085184/using-ai-to-modernize-mainframes-turning-legacy-tech-into-a-strategic-advantage.html">使用 AI 現代化大型機 ⧉</a>。CIO Magazine.</li>
+<li>CNBC, (2026). <a href="https://www.cnbc.com/2026/05/08/anthropic-mythos-ai-cybersecurity-banks.html">Anthropic 的 Mythos 引發網路安全&quot;歇斯底里&quot; ⧉</a>。CNBC.</li>
+</ul>
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/zh-hant/guanyu-tw/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家，撰寫關於應用人工智慧、ISO 20022 遷移、面向金融服務的後量子密碼學，以及批發支付結構性轉型的內容。</span><span class="author-credentials">20 多年經驗，曾任職於滙豐商業及投資銀行、PayPal、巴克萊、Shazam、AKQA、維珍集團。 <a href="/zh-hant/guanyu-tw/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最近審閱 <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">相關閱讀</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2023-12-18-yinhang-ye-ai-yu-liangzi-jisuan-2023-huigu-tw/index.html" class="related-media" aria-label="銀行業 AI 與量子計算：2023 年回顧" tabindex="-1"><img alt="銀行業 AI 與量子計算：2023 年回顧" src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-2023"><a href="https://sebastienrousseau.com/zh-hant/2023-12-18-yinhang-ye-ai-yu-liangzi-jisuan-2023-huigu-tw/index.html">銀行業 AI 與量子計算：2023 年回顧</a> <a class="heading-anchor" href="#ai-2023" aria-label="Link to 銀行業 AI 與量子計算：2023 年回顧">#</a></h3><p><time datetime="2023-12-18">2023-12-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2026-05-21-2026-zuijia-yun-jichu-jiagou-tw" class="related-media" aria-label="2026 年最佳雲基礎設施架構：金融服務的 AI 原生、多雲、量子感知藍圖" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-ai"><a href="https://sebastienrousseau.com/zh-hant/2026-05-21-2026-zuijia-yun-jichu-jiagou-tw">2026 年最佳雲基礎設施架構：金融服務的 AI 原生、多雲、量子感知藍圖</a> <a class="heading-anchor" href="#2026-ai" aria-label="Link to 2026 年最佳雲基礎設施架構：金融服務的 AI 原生、多雲、量子感知藍圖">#</a></h3><p><time datetime="2026-05-21">2026-05-21</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2026-05-14-baozhang-zhangbu-hou-liangzi-qianyi-qiye-jinrong-tw" class="related-media" aria-label="保障賬簿：後量子遷移面向企業金融的董事會級指南" tabindex="-1"><img alt="Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-25"><a href="https://sebastienrousseau.com/zh-hant/2026-05-14-baozhang-zhangbu-hou-liangzi-qianyi-qiye-jinrong-tw">保障賬簿：後量子遷移面向企業金融的董事會級指南</a> <a class="heading-anchor" href="#section-25" aria-label="Link to 保障賬簿：後量子遷移面向企業金融的董事會級指南">#</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Sources & references</h2><ol class="article-sources-list"><li><a href="https://www.anthropic.com/news/detecting-countering-misuse-aug-2025" rel="external noopener nofollow"><span class="source-host">www.anthropic.com</span><span class="source-path">/news/detecting-countering-misuse-aug-2025</span></a></li><li><a href="https://www.anthropic.com/news/disrupting-AI-espionage" rel="external noopener nofollow"><span class="source-host">www.anthropic.com</span><span class="source-path">/news/disrupting-AI-espionage</span></a></li></ol></aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/zh-hant/2026-05-15-beilaide-brsrv-bstbl-genius-fa-an-daibihua-mmf-tw/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded</span></a><a class="post-pagination-next" href="/zh-hant/2026-05-21-2026-zuijia-yun-jichu-jiagou-tw/"><span class="post-pagination-label">Next</span><span class="post-pagination-title">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/zh-hant/guanyu-tw/index.html">關於</a></li>
+              <li><a href="/zh-hant/lianxi-tw/index.html">聯絡</a></li>
+              <li><a href="/zh-hant/yong-static-site-generator-zhizuo-tw/index.html">使用 Static Site Generator 構建</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">文章</h2>
+            <ul>
+              <li><a href="/zh-hant/wenzhang-tw/index.html">文章</a></li>
+              <li><a href="/zh-hant/lunwen-tw/index.html">論文與白皮書</a></li>
+              <li><a href="/zh-hant/biaoqian-tw/index.html">標籤</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">工作</h2>
+            <ul>
+              <li><a href="/zh-hant/xiangmu-tw/index.html">專案</a></li>
+              <li><a href="/zh-hant/boqing-tw/index.html">播放列表</a></li>
+              <li><a href="/zh-hant/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">聯絡</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="通訊訂閱">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 關於支付、人工智慧與後量子密碼學的研究筆記。無垃圾郵件。</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="nin@yinhang-tw.com" />
+            <input type="hidden" name="_subject" value="通訊訂閱 — sebastienrousseau.com" />
+            <button type="submit">訂閱</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© 版權所有 2007 - 2026 - Sebastien Rousseau。保留所有權利。</span>
+          <div class="social" aria-label="社交連結">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 於 Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau 於 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 於 LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau 於 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 於 Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau 於 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 於 YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau 於 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/zh-hant/wuzhang-ai-tw/index.html">無障礙訪問</a> ·
+            <a href="/zh-hant/yinsi-tw/index.html">隱私</a> ·
+            <a href="/zh-hant/tiaokuan-tw/index.html">條款</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"zh-hant"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"zh-hant"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":916,"headline":"面向銀行的代理式工程：2026 年高管團隊與工程師藍圖","description":"代理式 AI 已在全球銀行業從試點走向生產；70% 機構在用，僅五分之一擁有成熟治理。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp","width":"100vw","height":"100vh","caption":"銀行代理式工程架構圖——規範驅動的 AI 代理、治理控制平面、量子安全基質和遺留主機現代化流"},"url":"https://sebastienrousseau.com/zh-hant/2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu-tw/","datePublished":"2026-05-18T06:06:06+00:00","dateModified":"2026-05-18","inLanguage":"zh-hant","keywords":"代理式工程, 規範驅動開發, 銀行, 金融服務, AI 治理, 歐盟 AI 法案, DORA, SR 11-7, COBOL 現代化, Claude Code","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hant/2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu-tw/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"zh-hant"},"citation":[{"@type":"CreativeWork","url":"https://www.anthropic.com/news/detecting-countering-misuse-aug-2025"},{"@type":"CreativeWork","url":"https://www.anthropic.com/news/disrupting-AI-espionage"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/zh-hant/"},{"@type":"ListItem","position":3,"name":"面向銀行的代理式工程：2026 年高管團隊與工程師藍圖","item":"https://sebastienrousseau.com/zh-hant/2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu-tw/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="搜尋">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>搜尋</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="搜尋">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="搜尋文件…" autocomplete="off" aria-label="搜尋"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 關閉</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 導航</span><span><kbd>Enter</kbd> 開啟</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>
