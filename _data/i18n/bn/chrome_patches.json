@@ -1,0 +1,289 @@
+{
+  "_comment": "বাংলা (bn) inline chrome patches — DRAFT pending native review.",
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"নিউজলেটার সাবস্ক্রিপশন\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum — পেমেন্ট, এআই এবং পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি বিষয়ক গবেষণা নোট। কোনও স্প্যাম নয়।"
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"apni@bank.bd\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"নিউজলেটার সাবস্ক্রিপশন — sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">সাবস্ক্রাইব করুন</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">মূল কনটেন্টে যান</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"নেভিগেশন টগল করুন\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"নেভিগেশন টগল করুন\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"প্রধান নেভিগেশন\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"ডার্ক থিম চালু করুন\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"লাইট থিম চালু করুন\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"থিম পরিবর্তন করুন\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"অনুসন্ধান (Cmd বা Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"অনুসন্ধান (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"যোগাযোগ\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">যোগাযোগ ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">যোগাযোগ</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Sebastien Rousseau হোম\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/bn/amader-shomporke/index.html\">About</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/bn/prokashana/index.html\">Papers</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/bn/bishay/index.html\">বিষয়</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/bn/prokolpo/index.html\">Projects</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/bn/prabondho/index.html\">Articles</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/bn/jogajog/index.html\">Contact</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/bn/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/bn/playlist/index.html\">Playlists</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"উপরে ফিরুন\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">লেখা</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">কাজ</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">যোগাযোগ</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/bn/amader-shomporke/index.html\">About</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/bn/static-site-generator-die-toiri/index.html\">Made with Static Site Generator</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/bn/prokashana/index.html\">Papers</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/bn/tag/index.html\">Tags</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/bn/prokolpo/index.html\">Projects</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/bn/playlist/index.html\">Playlists</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/bn/jogajog/index.html\">Contact</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/bn/prabondho/index.html\">Articles</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"সামাজিক লিঙ্ক\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau-এ "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau-এ "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"Sebastien Rousseau-এর ছবি\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।"
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/bn/prabeshjogyota/index.html\">Accessibility</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/bn/goponiyota/index.html\">Privacy</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/bn/shorto/index.html\">Terms</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"ডকুমেন্টে অনুসন্ধান করুন...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"অনুসন্ধান\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> বন্ধ করুন"
+    ],
+    [
+      "navigate</span>",
+      "নেভিগেট করুন</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> খুলুন"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>অনুসন্ধান</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"ভাষা\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"BN, ভাষা পরিবর্তন\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"ভাষা পরিবর্তন\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"শীঘ্রই আসছে\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">BN</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"Atom ফিড\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"RSS ফিড\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"নিবন্ধ সারাংশ\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>মূল বার্তা</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>সম্পর্কিত পঠন:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">সম্পর্কিত পঠন</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">সর্বশেষ পর্যালোচনা <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"লেখক সম্পর্কে\""
+    ],
+    [
+      ">Full profile</a>",
+      ">সম্পূর্ণ প্রোফাইল</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"Sebastien Rousseau-এর ছবি\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">যোগাযোগ</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">কথোপকথন শুরু করুন</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/bn/prabondho/index.html\">সর্বশেষ গবেষণা পড়ুন</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/bn/jogajog/index.html\">যোগাযোগ</a>"
+    ]
+  ]
+}
