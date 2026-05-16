@@ -1,0 +1,15 @@
+{
+  "_comment": "Japanese body-text labels — DRAFT pending native review. Key set MUST stay in sync with _data/i18n/en/labels.json; CI gate test_i18n_labels.py enforces parity.",
+  "Published": "公開日",
+  "Updated": "更新日",
+  "min read": "分で読了",
+  "Previous": "前へ",
+  "Next": "次へ",
+  "Sources & references": "出典・参考文献",
+  "About the author": "著者について",
+  "Topics": "トピック",
+  "Contents": "目次",
+  "Estimated read time": "想定読了時間",
+  "Article pagination": "記事ページネーション",
+  "Link to": "リンク先"
+}

@@ -1,0 +1,99 @@
+{
+  "_comment": "Japanese static-page metadata — DRAFT pending native review. Mirrors EN/FR/DE/AR static_pages.json shape.",
+  "404": {
+    "title": "ページが見つかりません — Sebastien Rousseau",
+    "subtitle": "お探しのページは存在しません。",
+    "description": "リクエストされたページは見つかりませんでした。ホームに戻るか、検索をご利用ください。",
+    "keywords": "404, ページが見つかりません"
+  },
+  "about": {
+    "title": "私について — Sebastien Rousseau",
+    "subtitle": "人工知能、ポスト量子暗号、ブロックチェーン技術の戦略的統合を通じて、銀行と金融サービスの未来を形作る。",
+    "description": "Sebastien Rousseau、シニア・バンキング・テクノロジスト:応用AI、ISO 20022 への移行、ポスト量子暗号、ホールセール決済の構造変革。",
+    "keywords": "Sebastien Rousseau, 略歴, 銀行, 決済, AI, ISO 20022, ポスト量子暗号, HSBC, PayPal, Barclays"
+  },
+  "accessibility": {
+    "title": "アクセシビリティ — Sebastien Rousseau",
+    "subtitle": "障害のある方のためのデジタルアクセシビリティに取り組んでいます。",
+    "description": "アクセシビリティ・ステートメント:WCAG 2.2 AA への準拠、インクルーシブの原則、問題報告のフィードバック・連絡先。",
+    "keywords": "アクセシビリティ, WCAG, 適合, デジタル・インクルージョン, 監査"
+  },
+  "articles": {
+    "title": "記事 — Sebastien Rousseau",
+    "subtitle": "AI、ポスト量子暗号、ISO 20022、決済の未来に関する記事。",
+    "description": "応用AI、ポスト量子暗号、ISO 20022 決済、ホールセール決済の変革に関する記事。",
+    "keywords": "記事, リサーチ, AI, ポスト量子暗号, ISO 20022, ホールセール決済"
+  },
+  "contact": {
+    "title": "お問い合わせ — Sebastien Rousseau",
+    "subtitle": "ご質問やご相談がありましたらお気軽にどうぞ。",
+    "description": "決済変革、ISO 20022 移行、ポスト量子戦略のコンサルティングについて Sebastien Rousseau にお問い合わせください。",
+    "keywords": "お問い合わせ, コンサルティング, 決済, ISO 20022, ポスト量子暗号"
+  },
+  "made-with-shokunin": {
+    "title": "Shokunin で作成 — Sebastien Rousseau",
+    "subtitle": "次世代の静的サイトジェネレータの活用方法をご紹介します。",
+    "description": "このサイトはパフォーマンスと SEO を最適化した Rust 製静的サイトジェネレータ Shokunin で構築されています。",
+    "keywords": "Shokunin, SSG, Rust, パフォーマンス, SEO"
+  },
+  "made-with-static-site-generator": {
+    "title": "Static Site Generator で作成 — Sebastien Rousseau",
+    "subtitle": "次世代の静的サイトジェネレータの活用方法をご紹介します。",
+    "description": "このサイトは Rust で書かれた高速な静的サイトジェネレータ Shokunin で生成されています。",
+    "keywords": "Shokunin, 静的サイトジェネレータ, Rust, パフォーマンス"
+  },
+  "offline": {
+    "title": "オフライン — Sebastien Rousseau",
+    "subtitle": "接続を確認して再度お試しください。",
+    "description": "オフライン状態です。コンテンツにアクセスするには再接続してください。",
+    "keywords": "オフライン, PWA"
+  },
+  "papers": {
+    "title": "論文 — Sebastien Rousseau",
+    "subtitle": "決済とセキュリティの上級経営層向け業界ホワイトペーパーと応用リサーチ。",
+    "description": "AI、ISO 20022 決済、ポスト量子暗号に関する Sebastien Rousseau の論文、レポート、刊行物。",
+    "keywords": "論文, 刊行物, レポート, リサーチ, ISO 20022, AI, ポスト量子暗号"
+  },
+  "playlists": {
+    "title": "プレイリスト — Sebastien Rousseau",
+    "subtitle": "ディープワーク、創造性、エンジニアの集中力のために厳選した Spotify プレイリスト。",
+    "description": "Sebastien Rousseau による音楽セレクションとリスニングガイド。",
+    "keywords": "プレイリスト, 音楽"
+  },
+  "privacy": {
+    "title": "プライバシーポリシー — Sebastien Rousseau",
+    "subtitle": "あなたのプライバシーを大切にしています。",
+    "description": "本サイトがデータをどのように収集・利用・保護するか:匿名アクセス計測、Cookie、ホスティング、GDPR の権利。",
+    "keywords": "プライバシー, GDPR, Cookie, 個人データ, アナリティクス"
+  },
+  "projects": {
+    "title": "プロジェクト — Sebastien Rousseau",
+    "subtitle": "金融の未来のための Python、Rust、JavaScript のオープンソースプロジェクト。",
+    "description": "決済、国際送金、量子耐性暗号のために Sebastien Rousseau が維持するオープンソースライブラリのポートフォリオ。",
+    "keywords": "オープンソースプロジェクト, Python, Rust, 決済, ISO 20022, ポスト量子暗号"
+  },
+  "tags": {
+    "title": "タグ — Sebastien Rousseau",
+    "subtitle": "テーマ別にサイトを閲覧:AI、決済、ポスト量子暗号、オープンソース。",
+    "description": "タグ別に記事を閲覧:AI、ISO 20022、ブロックチェーン、ポスト量子暗号など。",
+    "keywords": "タグ, 分類, テーマ別ナビゲーション"
+  },
+  "terms": {
+    "title": "利用規約 — Sebastien Rousseau",
+    "subtitle": "本サイトの一般利用規約。",
+    "description": "sebastienrousseau.com の一般利用規約:コンテンツのライセンス、制限事項、商標、準拠法。",
+    "keywords": "利用規約, 法的告知, ライセンス, 著作権"
+  },
+  "thanks": {
+    "title": "ありがとうございます — Sebastien Rousseau",
+    "subtitle": "お問い合わせいただきありがとうございます。",
+    "description": "メッセージありがとうございます。近日中にご返信いたします。",
+    "keywords": "ありがとう"
+  },
+  "topics": {
+    "title": "トピック — Sebastien Rousseau",
+    "subtitle": "AI、ポスト量子暗号、ISO 20022、決済の未来に関する記事。",
+    "description": "テーマ別に分析を閲覧:応用AI、ISO 20022 決済、ポスト量子暗号、ホールセール決済の変革。",
+    "keywords": "トピック, テーマ, AI, 決済, ISO 20022, ポスト量子暗号"
+  }
+}

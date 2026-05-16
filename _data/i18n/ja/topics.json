@@ -1,0 +1,23 @@
+{
+  "_comment": "Japanese topic-cluster titles + ledes — DRAFT pending native review. Topic slugs are language-independent; only the displayed name and lede change. EN equivalents live in scripts/build_topics.py (TOPICS dict).",
+  "post-quantum-cryptography": {
+    "title": "ポスト量子暗号",
+    "lede": "格子ベース暗号、NIST PQC 標準、量子耐性決済、そして「Harvest Now, Decrypt Later」の脅威。金融サービスのセキュリティチーム向けのリサーチノート、オープンソースライブラリ、移行ガイド。"
+  },
+  "iso-20022-payments": {
+    "title": "ISO 20022 と決済",
+    "lede": "国際送金メッセージへの移行、構造化アドレス遵守、SEPA Instant、SWIFT gpi、そしてホールセール決済レール。ツール、ガイド、規制スケジュール。"
+  },
+  "applied-ai-banking": {
+    "title": "銀行業務における応用AI",
+    "lede": "生成AI、マルチモーダルLLM、音声・スピーチモデル。これらが Tier-1 機関で銀行オペレーション、顧客対応、製品エンジニアリングをどのように再設計しているか。"
+  },
+  "rust-open-source": {
+    "title": "Rust とオープンソース",
+    "lede": "私が執筆・維持しているオープンソース Rust ライブラリ:ロギング、コード生成、日時、暗号プリミティブ、Kyber ベース KEM、Rust 製の静的サイトジェネレータ。"
+  },
+  "blockchain-digital-assets": {
+    "title": "ブロックチェーンとデジタル資産",
+    "lede": "ブロックチェーンとデジタル資産:トークン化、ERC-20、ステーブルコイン、暗号資産インフラ、そしてそれらを形成する規制枠組み。"
+  }
+}
