@@ -1,0 +1,23 @@
+{
+  "_comment": "Topic-cluster titles + ledes for the Indonesian edition. DRAFT — pending native-speaker review.",
+  "post-quantum-cryptography": {
+    "title": "Kriptografi pasca-kuantum",
+    "lede": "Kriptografi berbasis lattice, standar NIST PQC, pembayaran tahan-kuantum, dan ancaman «harvest now, decrypt later». Catatan riset, pustaka sumber terbuka, dan playbook migrasi untuk tim keamanan di layanan keuangan."
+  },
+  "iso-20022-payments": {
+    "title": "ISO 20022 & Pembayaran",
+    "lede": "Migrasi pesan lintas batas, kepatuhan alamat terstruktur, SEPA Instant, SWIFT gpi, dan rel pembayaran grosir yang menopang semuanya. Alat, playbook, dan kalender regulasi."
+  },
+  "applied-ai-banking": {
+    "title": "AI terapan di perbankan",
+    "lede": "AI generatif, LLM multimodal, model suara dan ucapan — dan bagaimana semua ini menata ulang operasi perbankan, layanan pelanggan, dan rekayasa produk di institusi Tier-1."
+  },
+  "rust-open-source": {
+    "title": "Rust & Sumber terbuka",
+    "lede": "Pustaka Rust sumber terbuka yang saya tulis dan pelihara: logging, generasi kode, tanggal-waktu, primitif kriptografi, KEM berbasis Kyber, dan generator situs statis Rust."
+  },
+  "blockchain-digital-assets": {
+    "title": "Blockchain & Aset digital",
+    "lede": "Blockchain dan aset digital: tokenisasi, ERC-20, stablecoin, infrastruktur mata uang kripto, dan kerangka regulasi yang membentuknya."
+  }
+}
