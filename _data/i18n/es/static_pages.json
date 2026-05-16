@@ -1,0 +1,99 @@
+{
+  "_comment": "Spanish static-page metadata — DRAFT pending native review. Mirrors EN/FR/DE/AR static_pages.json shape.",
+  "404": {
+    "title": "Página no encontrada — Sebastien Rousseau",
+    "subtitle": "Lo sentimos, esta página no existe.",
+    "description": "La página solicitada no se ha encontrado. Vuelva al inicio o utilice el buscador.",
+    "keywords": "404, página no encontrada"
+  },
+  "about": {
+    "title": "Sobre mí — Sebastien Rousseau",
+    "subtitle": "Configurar el futuro de la banca y de los servicios financieros mediante la integración estratégica de la inteligencia artificial, la criptografía postcuántica y la tecnología blockchain.",
+    "description": "Sebastien Rousseau, tecnólogo bancario senior: IA aplicada, migración a ISO 20022, criptografía postcuántica, transformación estructural de los pagos mayoristas.",
+    "keywords": "Sebastien Rousseau, biografía, banca, pagos, IA, ISO 20022, criptografía postcuántica, HSBC, PayPal, Barclays"
+  },
+  "accessibility": {
+    "title": "Accesibilidad — Sebastien Rousseau",
+    "subtitle": "Comprometidos con la accesibilidad digital de las personas con discapacidad.",
+    "description": "Declaración de accesibilidad: cumplimiento de WCAG 2.2 AA, principios inclusivos, retroalimentación y datos de contacto para reportar incidencias.",
+    "keywords": "accesibilidad, WCAG, conformidad, inclusión digital, auditoría"
+  },
+  "articles": {
+    "title": "Artículos — Sebastien Rousseau",
+    "subtitle": "Artículos sobre IA, criptografía postcuántica, ISO 20022 y el futuro de los pagos.",
+    "description": "Artículos sobre IA aplicada, criptografía postcuántica, pagos ISO 20022 y la transformación de los pagos mayoristas.",
+    "keywords": "artículos, investigación, IA, criptografía postcuántica, ISO 20022, pagos mayoristas"
+  },
+  "contact": {
+    "title": "Contacto — Sebastien Rousseau",
+    "subtitle": "¿Tiene una pregunta o necesita asesoramiento? Escríbame.",
+    "description": "Póngase en contacto con Sebastien Rousseau para consultoría en transformación de pagos, migración a ISO 20022 o estrategia postcuántica.",
+    "keywords": "contacto, consultoría, pagos, ISO 20022, criptografía postcuántica"
+  },
+  "made-with-shokunin": {
+    "title": "Hecho con Shokunin — Sebastien Rousseau",
+    "subtitle": "Descubra cómo utilizar el generador de sitios estáticos de nueva generación.",
+    "description": "Este sitio está hecho con Shokunin, un generador de sitios estáticos en Rust optimizado para el rendimiento y el SEO.",
+    "keywords": "Shokunin, SSG, Rust, rendimiento, SEO"
+  },
+  "made-with-static-site-generator": {
+    "title": "Hecho con Static Site Generator — Sebastien Rousseau",
+    "subtitle": "Descubra cómo utilizar el generador de sitios estáticos de nueva generación.",
+    "description": "Este sitio se genera con Shokunin, un generador de sitios estáticos rápido escrito en Rust.",
+    "keywords": "Shokunin, generador de sitios estáticos, Rust, rendimiento"
+  },
+  "offline": {
+    "title": "Sin conexión — Sebastien Rousseau",
+    "subtitle": "Compruebe su conexión y vuelva a intentarlo.",
+    "description": "Está sin conexión. Vuelva a conectarse para acceder al contenido.",
+    "keywords": "sin conexión, PWA"
+  },
+  "papers": {
+    "title": "Publicaciones — Sebastien Rousseau",
+    "subtitle": "Libros blancos sectoriales e investigación aplicada para directivos senior en pagos y seguridad.",
+    "description": "Artículos, informes y publicaciones de Sebastien Rousseau sobre IA, pagos ISO 20022 y criptografía postcuántica.",
+    "keywords": "publicaciones, artículos, informes, investigación, ISO 20022, IA, criptografía postcuántica"
+  },
+  "playlists": {
+    "title": "Playlists — Sebastien Rousseau",
+    "subtitle": "Playlists de Spotify seleccionadas para el deep work, la creatividad y la mentalidad de ingeniero.",
+    "description": "Selección musical y de escucha de Sebastien Rousseau.",
+    "keywords": "playlists, música"
+  },
+  "privacy": {
+    "title": "Política de privacidad — Sebastien Rousseau",
+    "subtitle": "Su privacidad nos importa.",
+    "description": "Cómo este sitio recopila, utiliza y protege sus datos. Medición de audiencia anónima, cookies, alojamiento y derechos del RGPD.",
+    "keywords": "privacidad, RGPD, cookies, datos personales, analítica"
+  },
+  "projects": {
+    "title": "Proyectos — Sebastien Rousseau",
+    "subtitle": "Proyectos de código abierto en Python, Rust y JavaScript para el futuro de las finanzas.",
+    "description": "Cartera de bibliotecas de código abierto que Sebastien Rousseau mantiene para pagos, liquidación transfronteriza y criptografía resistente al cuántico.",
+    "keywords": "proyectos de código abierto, Python, Rust, pagos, ISO 20022, criptografía postcuántica"
+  },
+  "tags": {
+    "title": "Etiquetas — Sebastien Rousseau",
+    "subtitle": "Navegue por el sitio por tema: IA, pagos, criptografía postcuántica, código abierto.",
+    "description": "Navegue por los artículos por etiqueta: IA, ISO 20022, blockchain, criptografía postcuántica y mucho más.",
+    "keywords": "etiquetas, tags, navegación por tema"
+  },
+  "terms": {
+    "title": "Condiciones de uso — Sebastien Rousseau",
+    "subtitle": "Condiciones generales de uso del sitio.",
+    "description": "Condiciones generales de uso del sitio sebastienrousseau.com: licencia del contenido, restricciones, marcas y jurisdicción.",
+    "keywords": "condiciones, aviso legal, licencia, copyright"
+  },
+  "thanks": {
+    "title": "Gracias — Sebastien Rousseau",
+    "subtitle": "¡Gracias por contactar conmigo!",
+    "description": "Gracias por su mensaje. Le responderé muy pronto.",
+    "keywords": "gracias"
+  },
+  "topics": {
+    "title": "Temas — Sebastien Rousseau",
+    "subtitle": "Artículos sobre IA, criptografía postcuántica, ISO 20022 y el futuro de los pagos.",
+    "description": "Explore los análisis por temática: IA aplicada, pagos ISO 20022, criptografía postcuántica y transformación de los pagos mayoristas.",
+    "keywords": "temas, temáticas, IA, pagos, ISO 20022, criptografía postcuántica"
+  }
+}
