@@ -393,67 +393,113 @@ def write_llms_full_txt(public: Path) -> bool:
 # ---------------------------------------------------------------------------
 
 
-_FEED_URL_FIX_RE = re.compile(
-    r"https?://(?:127\.0\.0\.1(?::\d+)?|localhost(?::\d+)?)"
-    r"(?:/[^\"<\s]*)?",
+_TITLE_INSIDE_RE = re.compile(
+    r'<(?:title|news:title)[^>]*>([\s\S]*?)</(?:title|news:title)>',
+    re.IGNORECASE,
 )
+_RSS_ITEM_RE   = re.compile(r'<item>[\s\S]*?</item>', re.IGNORECASE)
+_ATOM_ENTRY_RE = re.compile(r'<entry>[\s\S]*?</entry>', re.IGNORECASE)
+_NEWS_URL_RE   = re.compile(r'<url>[\s\S]*?</url>', re.IGNORECASE)
 
 
 def _build_title_index() -> dict[str, str]:
-    """Walk _posts/ once; return ``{slug: title}`` for every dated post."""
-    out: dict[str, str] = {}
+    """title -> canonical https://… URL, derived from _posts frontmatter."""
+    idx: dict[str, str] = {}
     posts_dir = Path("_posts")
     if not posts_dir.is_dir():
-        return out
-    for md in posts_dir.glob("2*-*-*.md"):
+        return idx
+    for md in posts_dir.glob("*.md"):
         fm = _parse_frontmatter(md)
-        if "title" in fm:
-            out[md.stem] = fm["title"]
-    return out
+        title = fm.get("title")
+        url = fm.get("url")
+        if title and url:
+            idx[title.strip()] = url.strip()
+            # Some feeds emit XML-escaped titles. Pre-compute both forms so
+            # the lookup hits either way.
+            idx[title.replace("&", "&amp;").strip()] = url.strip()
+    return idx
 
 
 def _decode_entities(s: str) -> str:
-    """Decode the handful of XML entities we encounter in Shokunin's
-    feed output."""
-    return (
-        s.replace("&amp;amp;", "&amp;")
-        .replace("&amp;", "&")
-        .replace("&lt;", "<")
-        .replace("&gt;", ">")
-        .replace("&quot;", '"')
-        .replace("&apos;", "'")
-    )
+    return (s.replace("&amp;", "&")
+             .replace("&lt;", "<")
+             .replace("&gt;", ">")
+             .replace("&quot;", '"')
+             .replace("&apos;", "'")
+             .strip())
 
 
 def _patch_block(block: str, title_index: dict[str, str]) -> str:
-    """Rewrite localhost / .meta/ URLs inside a single <item> /
-    <entry> / <url> XML block."""
+    tm = _TITLE_INSIDE_RE.search(block)
+    if not tm:
+        return block
+    title_raw = tm.group(1)
+    title_clean = _decode_entities(title_raw)
+    url = title_index.get(title_clean) or title_index.get(title_raw.strip())
+    if not url:
+        return block
 
-    def _fix_url(m: re.Match[str]) -> str:
-        bad = m.group(0)
-        # Look for a /<dated-slug>/ component in the URL
-        slug_m = re.search(r"/(2\d{3}-\d{2}-\d{2}-[a-z0-9-]+)(?:/|$)", bad)
-        if not slug_m:
-            return "https://sebastienrousseau.com/"
-        return f"https://sebastienrousseau.com/{slug_m.group(1)}/"
+    # Replace any URL inside this block that either has a localhost host or
+    # has /.meta/ anywhere in its path — that's the Shokunin bug signature.
+    bad_url = (
+        r'https?://'
+        r'(?:'
+        # localhost host (any path)
+        r'(?:127\.0\.0\.1|localhost)(?::\d+)?[^<\s"]*'
+        # OR any host with a /.meta/ path segment
+        r'|[^<\s"]*?/\.meta(?:/[^<\s"]*)?'
+        r')'
+    )
 
-    return _FEED_URL_FIX_RE.sub(_fix_url, block)
+    def rewrite_url(m: re.Match[str]) -> str:
+        return m.group(1) + url + m.group(3)
+
+    block = re.sub(rf'(>\s*)({bad_url})(\s*<)', rewrite_url, block)
+    block = re.sub(rf'(="\s*)({bad_url})(\s*")', rewrite_url, block)
+    return block
 
 
 def fix_xml_feed_urls(public: Path) -> int:
     """Repair localhost/.meta/ URLs Shokunin sometimes bakes into the
     RSS / Atom / news-sitemap output."""
     title_index = _build_title_index()
-    n = 0
-    for xml in [public / "rss.xml", public / "atom.xml", public / "news-sitemap.xml"]:
-        if not xml.is_file():
-            continue
-        text = xml.read_text(encoding="utf-8")
-        new = _patch_block(text, title_index)
-        if new != text:
-            xml.write_text(new, encoding="utf-8")
-            n += 1
-    return n
+    if not title_index:
+        return 0
+    patched = 0
+    for xml in public.glob("*.xml"):
+        original = xml.read_text(encoding="utf-8", errors="ignore")
+        text = original
+
+        # Per-item / per-entry / per-url URL rewrites.
+        if "<item>" in text.lower():
+            text = _RSS_ITEM_RE.sub(lambda m: _patch_block(m.group(0), title_index), text)
+        if "<entry>" in text.lower():
+            text = _ATOM_ENTRY_RE.sub(lambda m: _patch_block(m.group(0), title_index), text)
+        if "<news:" in text.lower():
+            text = _NEWS_URL_RE.sub(lambda m: _patch_block(m.group(0), title_index), text)
+
+        # Strip any residual <url>…</url> block whose <loc> still has the
+        # dev-artefact /.meta/ path — those entries come from Shokunin
+        # processing the nested _posts/fr/ directory and don't belong in
+        # the news-sitemap.
+        text = re.sub(
+            r'<url>\s*<loc>[^<]*\/\.meta\/[^<]*</loc>[\s\S]*?</url>\s*',
+            '',
+            text,
+        )
+
+        # Top-of-feed cleanup: any residual localhost reference becomes the
+        # production root. Done last so it doesn't shadow per-block matches.
+        text = re.sub(
+            r'https?://(?:127\.0\.0\.1|localhost)(?::\d+)?',
+            "https://sebastienrousseau.com",
+            text,
+        )
+
+        if text != original:
+            xml.write_text(text, encoding="utf-8")
+            patched += 1
+    return patched
 
 
 # ---------------------------------------------------------------------------
@@ -507,6 +553,54 @@ def fix_xml_feeds(public: Path) -> int:
             xml.write_text(new, encoding="utf-8")
             n += 1
     return n
+
+
+_NEWS_TITLE_RE = re.compile(r'(<news:title>)([\s\S]*?)(</news:title>)', re.IGNORECASE)
+_NEWS_KEYWORDS_RE = re.compile(r'(<news:keywords>)([\s\S]*?)(</news:keywords>)', re.IGNORECASE)
+
+
+def _truncate_news_title(title: str, limit: int = 80) -> str:
+    """Google News recommends news:title ≤ 80 chars. Truncate at the
+    last word boundary inside the limit; append a single ``…`` so the
+    reader sees the title was clipped."""
+    if len(title) <= limit:
+        return title
+    cut = title[: limit - 1]
+    # Back up to the last space so we don't split a word mid-syllable.
+    sp = cut.rfind(" ")
+    if sp > limit // 2:
+        cut = cut[:sp]
+    return cut.rstrip(" ,;:.") + "…"
+
+
+def _limit_news_keywords(kws: str, limit: int = 10) -> str:
+    """Google News recommends news:keywords ≤ 10 items."""
+    items = [k.strip() for k in kws.split(",") if k.strip()]
+    if len(items) <= limit:
+        return kws
+    return ", ".join(items[:limit])
+
+
+def shrink_news_sitemap(public: Path) -> int:
+    """Bring news-sitemap.xml within Google News' recommended bounds:
+    ``news:title`` ≤ 80 chars and ``news:keywords`` ≤ 10 items.
+
+    Returns the count of files actually rewritten (0 or 1)."""
+    xml = public / "news-sitemap.xml"
+    if not xml.is_file():
+        return 0
+    text = xml.read_text(encoding="utf-8")
+    original = text
+    text = _NEWS_TITLE_RE.sub(
+        lambda m: m.group(1) + _truncate_news_title(m.group(2)) + m.group(3), text
+    )
+    text = _NEWS_KEYWORDS_RE.sub(
+        lambda m: m.group(1) + _limit_news_keywords(m.group(2)) + m.group(3), text
+    )
+    if text == original:
+        return 0
+    xml.write_text(text, encoding="utf-8")
+    return 1
 
 
 # ---------------------------------------------------------------------------

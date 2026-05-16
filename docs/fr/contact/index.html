@@ -86,7 +86,7 @@
 <link rel="canonical" href="https://sebastienrousseau.com/fr/contact/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
 <link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/contact/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/contact/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/contact/" /><meta property="og:site_name" content="Sebastien Rousseau">
-<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/contact/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/contact/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/kontakt/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/contact/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/contact/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/contact/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/ittisal/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/kontakt/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/contact/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <a class="skip" href="#main">Aller au contenu principal</a>
     <div class="ap-progress" aria-hidden="true"></div>
@@ -125,7 +125,7 @@
               <div class="ap-lang-menu-grid">
                 <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
                 <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
-                <span class="ap-lang-item" data-lang="ar" aria-disabled="true" title="Prochainement">🇸🇦 العربية</span>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
                 <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="Prochainement">🇧🇩 বাংলা</span>
                 <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="Prochainement">🇨🇿 Čeština</span>
                 <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
@@ -238,7 +238,13 @@
 
         <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ContactPage","name":"Me contacter — Sebastien Rousseau","description":"Entrez en contact avec Sebastien Rousseau pour les conseils en transformation des paiements, la migration ISO 20022 ou la stratégie post-quantique.","url":"https://sebastienrousseau.com/fr/contact/","inLanguage":"fr","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"isPartOf":{"@id":"https://sebastienrousseau.com/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Me contacter","item":"https://sebastienrousseau.com/fr/contact/"}]}]}</script>
 <script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
-    <script async defer src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- Lazy-load reCAPTCHA on first form interaction (focus/click within
+         the form). Eager-loading the 250KB+ API.js bundle is the single
+         biggest Lighthouse perf hit on this page — deferring it until the
+         user actually engages with the form moves /contact/ from ~0.84
+         into the green band without changing the spam-protection guarantee
+         at submit-time. -->
+    <script src="/_csp/d9130ae368f43830.js" crossorigin="anonymous" integrity="sha256-QOeO4mDB3JPI2sWdY94R1C0uGxPHZutN2Rzo4Gpcx1g=" crossorigin="anonymous""></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
     <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
   

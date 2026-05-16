@@ -69,7 +69,7 @@ LANGUAGES: tuple[Language, ...] = (
     # sitemap don't reference URLs that don't exist. Flipping
     # ``active=True`` requires the matching ``_data/i18n/<code>/``
     # tree to exist; ``scripts/test_i18n_parity.py`` enforces that.
-    Language("ar", "ar-SA", "ar_SA", "AR", "العربية", "🇸🇦", rtl=True),
+    Language("ar", "ar-SA", "ar_SA", "AR", "العربية", "🇸🇦", rtl=True, active=True),
     Language("bn", "bn-BD", "bn_BD", "BN", "বাংলা", "🇧🇩"),
     Language("cs", "cs-CZ", "cs_CZ", "CS", "Čeština", "🇨🇿"),
     Language("de", "de-DE", "de_DE", "DE", "Deutsch", "🇩🇪", active=True),

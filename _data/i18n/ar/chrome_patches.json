@@ -1,0 +1,289 @@
+{
+  "_comment": "Arabic inline chrome patches — DRAFT pending native review.",
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"الاشتراك في النشرة الإخبارية\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum — ملاحظات بحثية حول المدفوعات والذكاء الاصطناعي والتشفير ما بعد الكمي. بدون رسائل مزعجة."
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"anta@bank.com\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"الاشتراك في النشرة الإخبارية — sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">اشترك</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">الانتقال إلى المحتوى الرئيسي</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"تبديل التنقل\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"تبديل التنقل\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"التنقل الرئيسي\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"تفعيل المظهر الداكن\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"تفعيل المظهر الفاتح\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"تغيير المظهر\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"بحث (Cmd أو Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"بحث (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"تواصل معي\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">تواصل معي ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">تواصل معي</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"الصفحة الرئيسية لسيباستيان روسو\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/ar/hawla/index.html\">حول</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/ar/buhuth/index.html\">الأبحاث</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/ar/mawadi/index.html\">المواضيع</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/ar/mashari/index.html\">المشاريع</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/ar/maqalat/index.html\">المقالات</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/ar/ittisal/index.html\">اتصل</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/ar/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/ar/qawaim/index.html\">قوائم التشغيل</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"العودة إلى الأعلى\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">الكتابات</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">العمل</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">التواصل</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/ar/hawla/index.html\">حول</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/ar/masnu-bi-static-site-generator/index.html\">مصنوع بواسطة Static Site Generator</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/ar/buhuth/index.html\">الأبحاث</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/ar/wusum/index.html\">الوسوم</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/ar/mashari/index.html\">المشاريع</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/ar/qawaim/index.html\">قوائم التشغيل</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/ar/ittisal/index.html\">اتصل</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/ar/maqalat/index.html\">المقالات</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"روابط التواصل الاجتماعي\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"سيباستيان روسو على "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"سيباستيان روسو على "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"صورة بالأبيض والأسود لسيباستيان روسو\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© حقوق النشر 2007 - 2026 - سيباستيان روسو. جميع الحقوق محفوظة."
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/ar/wusul/index.html\">إمكانية الوصول</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/ar/khusoosiya/index.html\">الخصوصية</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/ar/shurut/index.html\">الشروط</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"البحث في التوثيق...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"بحث\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> إغلاق"
+    ],
+    [
+      "navigate</span>",
+      "تنقل</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> فتح"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>بحث</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"اللغة\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"AR، تغيير اللغة\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"تغيير اللغة\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"قريباً\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">AR</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"تغذية Atom\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"تغذية RSS\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"ملخص المقال\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>النقاط الرئيسية</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>قراءات ذات صلة:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">قراءات ذات صلة</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">آخر مراجعة <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"عن المؤلف\""
+    ],
+    [
+      ">Full profile</a>",
+      ">الملف الكامل</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"صورة لسيباستيان روسو\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">تواصل معي</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">ابدأ محادثة</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/articles/index.html\">اقرأ أحدث الأبحاث</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/contact/index.html\">تواصل معي</a>"
+    ]
+  ]
+}

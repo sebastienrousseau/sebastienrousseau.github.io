@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ar-SA" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 15 Apr 2024 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 15 Apr 2024 06:06:06 +0000" id="last-modified" />
+    <title>التشفير الكمومي القائم على الشبكات: خلل في هجوم Chen على LWE — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="خلل في الخوارزمية الكمومية لـLWE من Yilei Chen يمنح التشفير القائم على الشبكات مهلةً مؤقّتة. ما يعنيه ذلك لـCRYSTALS-Kyber وDilithium وخارطة طريق PQC.">
+<meta name="keywords" content="التشفير ما بعد الكمومي, NIST, توحيد PQC القياسي, Yilei Chen, الخوارزمية الكمومية, التشفير القائم على الشبكات, مسألة LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, التشفير المقاوم للكمومية">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-QclfxgnbDr1VymtaO7sxcAinYNsfoIGR97QFXq2CF0c=' 'sha256-fFWpJUI98Nam4tBKYt7nl7j3QVQ/oB70jGkBXA4RVbc=' 'sha256-oPhJLuCYrzWcPGuTovPdJxDV5jN/y0vjIOh3lUCELlo=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    <link rel="alternate" href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html" hreflang="en" />
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ar/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b2a7b255e05cbd1.css" crossorigin="anonymous" integrity="sha256-VdEMoj4KuWEXE74XtoAwuq5lF2P9UK0jJE+s1mJrYfg=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="تغذية Atom" href="/ar/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="التشفير الكمومي القائم على الشبكات: خلل في هجوم Chen على LWE — Sebastien Rousseau">
+<meta property="og:description" content="خلل في الخوارزمية الكمومية لـLWE من Yilei Chen يمنح التشفير القائم على الشبكات مهلةً مؤقّتة. ما يعنيه ذلك لـCRYSTALS-Kyber وDilithium وخارطة طريق PQC.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/ar/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/digital-nodes.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="التشفير الكمومي القائم على الشبكات: خلل في هجوم Chen على LWE — Sebastien Rousseau">
+<meta name="twitter:description" content="خلل في الخوارزمية الكمومية لـLWE من Yilei Chen يمنح التشفير القائم على الشبكات مهلةً مؤقّتة. ما يعنيه ذلك لـCRYSTALS-Kyber وDilithium وخارطة طريق PQC.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/digital-nodes.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/ar/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-04-22-anomalie-dans-l-algorithme-quantique-pour-la-cryptographie-fondee-sur-les-reseaux/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2024-04-22-fehler-im-quantenalgorithmus-fuer-gitterbasierte-kryptografie-entdeckt/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">تخطّى إلى المحتوى الرئيسي</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="تبديل التنقل" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ar/index.html" aria-label="الصفحة الرئيسية لسيباستيان روسو">
+          <span itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="التنقل الرئيسي">
+          <ul class="ap-menu">
+            <li><a href="/ar/hawla/index.html">حول</a></li>
+            <li><a href="/ar/maqalat/index.html" aria-current="page" class="active">المقالات</a></li>
+            <li><a href="/ar/buhuth/index.html">الأبحاث</a></li>
+            <li><a href="/ar/mawadi/index.html">المواضيع</a></li>
+            <li><a href="/ar/mashari/index.html">المشاريع</a></li>
+            <li><a href="/ar/qawaim/index.html">قوائم التشغيل</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="تفعيل الوضع الداكن" aria-pressed="false" title="تبديل المظهر">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="بحث (Cmd أو Ctrl + K)" title="بحث (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="اللغة">
+            <button type="button" class="ap-lang-toggle" aria-label="AR، تغيير اللغة" aria-expanded="false" aria-haspopup="menu" title="تغيير اللغة">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">AR</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="قريبًا">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="قريبًا">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <span class="ap-lang-item" data-lang="es" aria-disabled="true" title="قريبًا">🇪🇸 Español</span>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="قريبًا">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="قريبًا">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="قريبًا">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="قريبًا">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="قريبًا">🇮🇩 Indonesia</span>
+                <span class="ap-lang-item" data-lang="it" aria-disabled="true" title="قريبًا">🇮🇹 Italiano</span>
+                <span class="ap-lang-item" data-lang="ja" aria-disabled="true" title="قريبًا">🇯🇵 日本語</span>
+                <span class="ap-lang-item" data-lang="ko" aria-disabled="true" title="قريبًا">🇰🇷 한국어</span>
+                <span class="ap-lang-item" data-lang="nl" aria-disabled="true" title="قريبًا">🇳🇱 Nederlands</span>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="قريبًا">🇵🇱 Polski</span>
+                <span class="ap-lang-item" data-lang="pt-br" aria-disabled="true" title="قريبًا">🇧🇷 Português</span>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="قريبًا">🇷🇴 Română</span>
+                <span class="ap-lang-item" data-lang="ru" aria-disabled="true" title="قريبًا">🇷🇺 Русский</span>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="قريبًا">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="قريبًا">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="قريبًا">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="قريبًا">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="قريبًا">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="قريبًا">🇳🇬 Yorùbá</span>
+                <span class="ap-lang-item" data-lang="zh-hans" aria-disabled="true" title="قريبًا">🇨🇳 简体中文</span>
+                <span class="ap-lang-item" data-lang="zh-hant" aria-disabled="true" title="قريبًا">🇹🇼 繁體中文</span>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ar/ittisal/index.html" aria-label="تواصل معي">تواصل معي ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="تبديل التنقل">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>التشفير الكمومي القائم على الشبكات: خلل في هجوم Chen على LWE</h1>
+      <p class="sub">مراجعة الأقران تكشف عن خلل في عمل Chen الرائد</p>
+    <nav class="article-tags" aria-label="المواضيع"><a href="/tags/index.html#h3-" class="article-tag" rel="tag">التشفير ما بعد الكمومي</a><a href="/tags/index.html#h3-nist" class="article-tag" rel="tag">NIST</a><a href="/tags/index.html#h3-pqc" class="article-tag" rel="tag">توحيد PQC القياسي</a><a href="/tags/index.html#h3-yilei-chen" class="article-tag" rel="tag">Yilei Chen</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">الخوارزمية الكمومية</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">التشفير القائم على الشبكات</a><a href="/tags/index.html#h3-lwe" class="article-tag" rel="tag">مسألة LWE</a><a href="/tags/index.html#h3-crystals-kyber" class="article-tag" rel="tag">CRYSTALS-KYBER</a><a href="/tags/index.html#h3-crystals-dilithium" class="article-tag" rel="tag">CRYSTALS-Dilithium</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">التشفير المقاوم للكمومية</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-04-15T06:06:06+00:00" class="meta-pub">نُشر في 15 Apr 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">حُدّث في 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="وقت القراءة المقدّر">3 دقيقة قراءة</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>المحتويات</h2><ol><li><a href="#chen-lwe">التشفير الكمومي القائم على الشبكات: خلل في هجوم Chen على LWE</a></li><li><a href="#nist-yilei-chen">اللغز الكمومي: إعادة تقييم توحيد NIST القياسي للتشفير ما بعد الكمومي على ضوء خوارزمية Yilei Chen</a></li><li><a href="#chen">الخلل في خوارزمية Chen الكمومية</a></li><li><a href="#nist">التبعات على عملية توحيد NIST القياسي للتشفير ما بعد الكمومي</a></li><li><a href="#section-5">مستقبل التشفير ما بعد الكمومي</a></li><li><a href="#section-6">الخاتمة</a></li><li><a href="#section-7">المراجع</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> خلل في الخوارزمية الكمومية لـLWE من Yilei Chen يمنح التشفير القائم على الشبكات مهلةً مؤقّتة. ما يعنيه ذلك لـCRYSTALS-Kyber وDilithium وخارطة طريق PQC.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>التشفير الكمومي القائم على الشبكات: خلل في هجوم Chen على LWE.</strong> في أعقاب مقالي الأخير حول [تحدّيات الخوارزميات الكمومية للتشفير القائم على الشبكات][00]، يتعيّن عليّ تقديم تحديث بشأن آخر التطوّرات المتعلّقة بـ[بحث Yilei Chen ⧉][01].</li>  <li><strong>اللغز الكمومي: إعادة تقييم توحيد NIST القياسي للتشفير ما بعد الكمومي على ضوء خوارزمية Yilei Chen.</strong> في أعقاب مقالي الأخير حول [تحدّيات الخوارزميات الكمومية للتشفير القائم على الشبكات][00]، يتعيّن عليّ تقديم تحديث بشأن آخر التطوّرات المتعلّقة بـ[بحث Yilei Chen ⧉][01].</li>  <li><strong>الخلل في خوارزمية Chen الكمومية.</strong> عُثر على الخلل في الخطوة 9 من خوارزمية Chen، وقد صرّح بأنّه لا يعرف كيفية إصلاحه.</li>  <li><strong>التبعات على عملية توحيد NIST القياسي للتشفير ما بعد الكمومي.</strong> أثار بحث Chen، بشكل غير مباشر، مخاوف وشكوكاً حول [عملية توحيد NIST القياسي للتشفير ما بعد الكمومي (PQC) ⧉][03] واختيار خوارزميات تشفير مقاومة للكمومية.</li></ul></aside><h2 id="chen-lwe">التشفير الكمومي القائم على الشبكات: خلل في هجوم Chen على LWE <a class="heading-anchor" href="#chen-lwe" aria-label="رابط إلى التشفير الكمومي القائم على الشبكات: خلل في هجوم Chen على LWE">#</a></h2>
+<h2 id="nist-yilei-chen">اللغز الكمومي: إعادة تقييم توحيد NIST القياسي للتشفير ما بعد الكمومي على ضوء خوارزمية Yilei Chen <a class="heading-anchor" href="#nist-yilei-chen" aria-label="رابط إلى اللغز الكمومي: إعادة تقييم توحيد NIST القياسي للتشفير ما بعد الكمومي على ضوء خوارزمية Yilei Chen">#</a></h2>
+<p>في أعقاب مقالي الأخير حول <a href="https://sebastienrousseau.com/ar/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html" title="Challenges in Quantum Algorithms for Lattice-Based Cryptography">تحدّيات الخوارزميات الكمومية للتشفير القائم على الشبكات</a>، يتعيّن عليّ تقديم تحديث بشأن آخر التطوّرات المتعلّقة بـ<a href="https://eprint.iacr.org/2024/555.pdf" title="Quantum Algorithms for Lattice Problems: A New Era in Cryptography">بحث Yilei Chen ⧉</a>.</p>
+<p>في تحوّل غير متوقَّع، أفاد Yilei Chen، الأستاذ المساعد في معهد العلوم المعلوماتية متعدّدة التخصّصات (IIIS) بجامعة Tsinghua، بأنّ زميليه العالمَين Hongxun Wu وThomas Vidick قد اكتشفا، كلٌّ على حدة، خللاً في خوارزميته الكمومية في الزمن المتعدّد الحدود المُصمَّمة لحلّ مسألة Learning with Errors (LWE).</p>
+<p>ويجعل هذا الخلل الخوارزمية غير صالحة للعمل، وقد أقرّ Chen بأنّ نهجه لا يصمد كما اُدّعي في البداية.</p>
+<h2 id="chen">الخلل في خوارزمية Chen الكمومية <a class="heading-anchor" href="#chen" aria-label="رابط إلى الخلل في خوارزمية Chen الكمومية">#</a></h2>
+<p>عُثر على الخلل في الخطوة 9 من خوارزمية Chen، وقد صرّح بأنّه لا يعرف كيفية إصلاحه. وهذا الاكتشاف يُمثّل ارتياحاً للمجتمع التشفيري، إذ يُؤكِّد أنّ مسألة LWE، وهي مكوّن حاسم في طرق الحماية التشفيرية ما بعد الكمومية، تظلّ آمنة.</p>
+<p>كما تناولت ورقة Chen مسائل شبكية معقّدة أخرى، كـdecisional shortest vector problem (GapSVP) وshortest independent vector problem (SIVP) في إطار عوامل تقريب متعدّدة الحدود. ورغم أنّ الخلل في خوارزميته لا يؤثّر مباشرةً في هذه المسائل، فإنّه يُثير تساؤلات حول متانة الخوارزميات الكمومية ضدّ التشفير القائم على الشبكات.</p>
+<p>ولكن وفقاً لـ<a href="https://nigelsmart.github.io/LWE.html" title="Learning with Errors">صفحة Nigel Smart ⧉</a>، فإنّ الهجوم الكمومي المقترح على LWE معيب ولا يُعرّض للخطر مخطّطات التشفير على الشبكات كـ<a href="https://pq-crystals.org/kyber/" title="Kyber">Kyber ⧉</a> أو <a href="https://pq-crystals.org/dilithium/" title="Dilithium">Dilithium ⧉</a> أو <a href="https://www.inferati.com/blog/fhe-schemes-bgv" title="BGV">BGV ⧉</a> أو <a href="https://tfhe.github.io/tfhe/" title="TFHE">TFHE ⧉</a>.</p>
+<h2 id="nist">التبعات على عملية توحيد NIST القياسي للتشفير ما بعد الكمومي <a class="heading-anchor" href="#nist" aria-label="رابط إلى التبعات على عملية توحيد NIST القياسي للتشفير ما بعد الكمومي">#</a></h2>
+<p>أثار بحث Chen، بشكل غير مباشر، مخاوف وشكوكاً حول <a href="https://csrc.nist.gov/projects/post-quantum-cryptography/post-quantum-cryptography-standardization" title="Post-Quantum Cryptography Standardization">عملية توحيد NIST القياسي للتشفير ما بعد الكمومي (PQC) ⧉</a> واختيار خوارزميات تشفير مقاومة للكمومية.</p>
+<p>ومخطّطا <a href="/ar/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html">CRYSTALS-KYBER</a> وCRYSTALS-Dilithium، اللذان يُعدّان من المرشَّحين النهائيين في عملية توحيد NIST PQC، مثالان على مخطّطات تشفيرية قائمة على الشبكات اختُبرت وقُيِّمت بصرامة بحثاً عن مقاومتها للكمومية. غير أنّه من الجوهري مواصلة اختبار هذه المخطّطات وتنقيحها لضمان أمنها وقابليتها للحياة على المدى الطويل.</p>
+<p>ويجب على NIST والمجتمع التشفيري والشركات الحفاظ على اليقظة ومواصلة استكشاف أُسس رياضية بديلة للتشفير ما بعد الكمومي لضمان توافر مجموعة متينة ومتنوّعة من الخيارات للأمن المقاوم للكمومية.</p>
+<h2 id="section-5">مستقبل التشفير ما بعد الكمومي <a class="heading-anchor" href="#section-5" aria-label="رابط إلى مستقبل التشفير ما بعد الكمومي">#</a></h2>
+<p>يُؤكِّد اكتشاف الخلل في خوارزمية Chen الدور الحاسم لمراجعة الأقران في العملية العلمية. كما يُبرز الحاجة إلى المراجعة الفورية والملاحظات والنقاش.</p>
+<p>لقد بدأ العصر الكمومي، والحاجة إلى تطوير طرق تشفير مقاومة للكمومية تتطلّب تدابير تعاونية على نطاق عالمي لضمان أمن بنيتنا التحتية الرقمية في مواجهة قدرات الحوسبة الكمومية المتقدّمة والسباق نحو التفوّق الكمومي.</p>
+<p>وعملية توحيد NIST PQC القياسي خطوة مهمّة في هذا الاتّجاه، ولكنّها مجرّد بداية. والخلل في خوارزمية Chen تذكير صارخ بالتحدّيات والشكوك التي تلوح في الأفق، ولكنّه يُمثّل أيضاً نداءً للعمل للمجتمع التشفيري كي يُضاعف جهوده ويُوسِّع حدود الممكن.</p>
+<p>هذا تطوّر مُذهل في ميدان التشفير ما بعد الكمومي، وسيكون من المثير للاهتمام رؤية كيف ستتطوّر عملية توحيد NIST PQC القياسي استجابةً لهذه المعلومات الجديدة.</p>
+<h2 id="section-6">الخاتمة <a class="heading-anchor" href="#section-6" aria-label="رابط إلى الخاتمة">#</a></h2>
+<p>الخلل المكتشَف في خوارزمية Yilei Chen الكمومية لحلّ مسألة LWE شاهد على أهمّية مراجعة الأقران الصارمة والتعاون في تطوير التشفير المقاوم للكمومية.</p>
+<p>ورغم أنّ الخلل يُوفِّر مهلةً مؤقّتة لأمن المخطّطات التشفيرية القائمة على الشبكات، فإنّه يُذكِّر أيضاً بالحاجة المستمرّة إلى البحث والتطوير في ميدان التشفير ما بعد الكمومي.</p>
+<p>ومع مواصلة NIST عملية توحيد PQC القياسي، يجب على المجتمع التشفيري أن يبقى استباقياً ومتكيِّفاً، مُحتضِناً الأفكار والنهج الجديدة لضمان الأمن طويل الأمد لعالمنا الرقمي في مواجهة قدرات الحوسبة الكمومية المتقدّمة.</p>
+<h2 id="section-7">المراجع <a class="heading-anchor" href="#section-7" aria-label="رابط إلى المراجع">#</a></h2>
+<ul>
+<li>Sebastien Rousseau, (2024). <a href="https://sebastienrousseau.com/ar/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html" title="Challenges in Quantum Algorithms for Lattice-Based Cryptography">خوارزمية كمومية تتحدّى التشفير القائم على الشبكات</a>.</li>
+<li>Chen, Y. (2024). <a href="https://eprint.iacr.org/2024/555.pdf" title="Quantum Algorithms for Lattice Problems: A New Era in Cryptography">Quantum Algorithms for Lattice Problems: A New Era in Cryptography ⧉</a>. Journal of Quantum Computing and Cryptography, 7(4), 112-135.</li>
+<li>Regev, O. (2005). <a href="https://nigelsmart.github.io/LWE.html" title="Learning with Errors">On lattices, learning with errors, random linear codes, and cryptography. ⧉</a> In Proceedings of the 37th Annual ACM Symposium on Theory of Computing (pp. 84-93).</li>
+<li>Kuperberg, G. (2005). <a href="https://csrc.nist.gov/projects/post-quantum-cryptography/post-quantum-cryptography-standardization" title="Post-Quantum Cryptography Standardization">A subexponential-time quantum algorithm for the dihedral hidden subgroup problem. ⧉</a> SIAM Journal on Computing, 35(1), 170-188.</li>
+</ul>
+<aside class="author-card" aria-label="نبذة عن الكاتب"><img alt="صورة سيباستيان روسو" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ar/hawla/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي كبير يكتب عن الذكاء الاصطناعي التطبيقي، وهجرة ISO 20022، والتشفير ما بعد الكمي للخدمات المالية، والتحوّل الهيكلي للمدفوعات بالجملة.</span><span class="author-credentials">أكثر من 20 عامًا في HSBC Commercial &amp; Investment Bank وPayPal وBarclays وShazam وAKQA وVirgin Group. <a href="/ar/hawla/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">آخر مراجعة <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">قراءات ذات صلة</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/ar/2026-04-11-quantum-thresholds-are-moving-again" class="related-media" aria-label="العتبات الكمية تتحرّك من جديد" tabindex="-1"><img alt="Shor's algorithm qubit threshold diagram. Quantum computing circuit board with blue light patterns" src="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-8"><a href="https://sebastienrousseau.com/ar/2026-04-11-quantum-thresholds-are-moving-again">العتبات الكمية تتحرّك من جديد</a> <a class="heading-anchor" href="#section-8" aria-label="رابط إلى العتبات الكمية تتحرّك من جديد">#</a></h3><p><time datetime="2026-04-11">2026-04-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ar/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" class="related-media" aria-label="حالة الذكاء الاصطناعي والحوسبة الكمومية في القطاع المصرفي: مراجعة 2023" tabindex="-1"><img alt="حالة الذكاء الاصطناعي والحوسبة الكمومية في القطاع المصرفي: مراجعة 2023" src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2023"><a href="https://sebastienrousseau.com/ar/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">حالة الذكاء الاصطناعي والحوسبة الكمومية في القطاع المصرفي: مراجعة 2023</a> <a class="heading-anchor" href="#2023" aria-label="رابط إلى حالة الذكاء الاصطناعي والحوسبة الكمومية في القطاع المصرفي: مراجعة 2023">#</a></h3><p><time datetime="2023-12-18">2023-12-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ar/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html" class="related-media" aria-label="KyberLib: CRYSTALS-Kyber بلغة Rust لما بعد الكم" tabindex="-1"><img alt="Empowering Secure Communications in the Quantum Era with KyberLib" src="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="kyberlib-crystals-kyber-rust"><a href="https://sebastienrousseau.com/ar/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html">KyberLib: CRYSTALS-Kyber بلغة Rust لما بعد الكم</a> <a class="heading-anchor" href="#kyberlib-crystals-kyber-rust" aria-label="رابط إلى KyberLib: CRYSTALS-Kyber بلغة Rust لما بعد الكم">#</a></h3><p><time datetime="2023-11-28">2023-11-28</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">المصادر والمراجع</h2><ol class="article-sources-list"><li><a href="https://csrc.nist.gov/projects/post-quantum-cryptography/post-quantum-cryptography-standardization" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/projects/post-quantum-cryptography/post-quantum-cryptography-standardization</span></a></li></ol></aside><nav class="post-pagination" aria-label="ترقيم المقال"><a class="post-pagination-prev" href="/ar/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/"><span class="post-pagination-label">السابق</span><span class="post-pagination-title">Quantum Algorithm Challenges Lattice-Based Cryptography</span></a><a class="post-pagination-next" href="/ar/2025-09-01-quantum-safe-payments-epaa/"><span class="post-pagination-label">التالي</span><span class="post-pagination-title">Quantum-Safe Payments: Why the Industry Must Act Now</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ar/hawla/index.html">حول</a></li>
+              <li><a href="/ar/ittisal/index.html">اتصل</a></li>
+              <li><a href="/ar/masnu-bi-static-site-generator/index.html">مصنوع بواسطة Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">الكتابة</h2>
+            <ul>
+              <li><a href="/ar/maqalat/index.html">المقالات</a></li>
+              <li><a href="/ar/buhuth/index.html">الأبحاث</a></li>
+              <li><a href="/ar/wusum/index.html">الوسوم</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">الأعمال</h2>
+            <ul>
+              <li><a href="/ar/mashari/index.html">المشاريع</a></li>
+              <li><a href="/ar/qawaim/index.html">قوائم التشغيل</a></li>
+              <li><a href="/ar/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">تواصل</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="التسجيل في النشرة">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — ملاحظات بحثية حول المدفوعات والذكاء الاصطناعي والتشفير ما بعد الكمي. بدون رسائل مزعجة.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="antum@bank.com" />
+            <input type="hidden" name="_subject" value="الاشتراك في النشرة الإخبارية — sebastienrousseau.com" />
+            <button type="submit">اشترك</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© حقوق النشر 2007 - 2026 - سيباستيان روسو. جميع الحقوق محفوظة.</span>
+          <div class="social" aria-label="روابط التواصل الاجتماعي">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="سيباستيان روسو على Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="سيباستيان روسو على Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="سيباستيان روسو على LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="سيباستيان روسو على LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="سيباستيان روسو على Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="سيباستيان روسو على Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="سيباستيان روسو على YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="سيباستيان روسو على YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ar/wusul/index.html">إمكانية الوصول</a> ·
+            <a href="/ar/khusoosiya/index.html">الخصوصية</a> ·
+            <a href="/ar/shurut/index.html">الشروط</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ar"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ar"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":636,"about":{"@type":"Thing","name":"NIST PQC","sameAs":"https://csrc.nist.gov/projects/post-quantum-cryptography"},"mentions":[{"@type":"Thing","name":"CRYSTALS-Kyber","sameAs":["https://en.wikipedia.org/wiki/Kyber","https://www.wikidata.org/wiki/Q116727584","https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html"]}],"headline":"التشفير الكمومي القائم على الشبكات: خلل في هجوم Chen على LWE","description":"خلل في الخوارزمية الكمومية لـLWE من Yilei Chen يمنح التشفير القائم على الشبكات مهلةً مؤقّتة. ما يعنيه ذلك لـCRYSTALS-Kyber وDilithium وخارطة طريق PQC.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/digital-nodes.webp","width":"100vw","height":"100vh","caption":"صورة مُولَّدة باستخدام MidJourney — شبكة من العُقَد الرقمية بألوان حمراء وزرقاء."},"url":"https://sebastienrousseau.com/ar/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/","datePublished":"2024-04-15T06:06:06+00:00","dateModified":"2026-05-11","inLanguage":"ar","keywords":"التشفير ما بعد الكمومي, NIST, توحيد PQC القياسي, Yilei Chen, الخوارزمية الكمومية, التشفير القائم على الشبكات, مسألة LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, التشفير المقاوم للكمومية","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ar/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ar"},"citation":[{"@type":"CreativeWork","url":"https://csrc.nist.gov/projects/post-quantum-cryptography/post-quantum-cryptography-standardization"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ar/"},{"@type":"ListItem","position":3,"name":"التشفير الكمومي القائم على الشبكات: خلل في هجوم Chen على LWE","item":"https://sebastienrousseau.com/ar/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="بحث">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>بحث</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="بحث">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="البحث في المحتوى..." autocomplete="off" aria-label="بحث"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> إغلاق</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> تنقل</span><span><kbd>Enter</kbd> فتح</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "_comment": "Arabic body-text labels — DRAFT pending native review. Mirrors _data/i18n/en/labels.json key set.",
+  "Published": "نُشر في",
+  "Updated": "حُدّث في",
+  "min read": "دقيقة قراءة",
+  "Previous": "السابق",
+  "Next": "التالي",
+  "Sources & references": "المصادر والمراجع",
+  "About the author": "نبذة عن الكاتب",
+  "Topics": "المواضيع",
+  "Contents": "المحتويات",
+  "Estimated read time": "وقت القراءة المقدّر",
+  "Article pagination": "ترقيم المقال",
+  "Link to": "رابط إلى"
+}
