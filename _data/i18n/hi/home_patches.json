@@ -1,0 +1,317 @@
+{
+  "_comment": "Hindi (hi) home-page chrome patches — DRAFT pending native review. Pairs of [regex, replacement] applied to the EN homepage shell.",
+  "patches": [
+    [
+      ">Authored &amp; maintained<",
+      ">लिखित और रखरखावित<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">लिखित और रखरखावित<"
+    ],
+    [
+      ">Shaping the future of banking<br>through AI, payments,<br>and quantum-safe security\\.</h1>",
+      ">AI, भुगतान<br>और क्वांटम-सुरक्षित सुरक्षा के माध्यम से<br>बैंकिंग के भविष्य को आकार देना।</h1>"
+    ],
+    [
+      ">Applying AI and quantum-safe security to the future of payments\\.</p>",
+      ">भुगतानों के भविष्य पर AI और क्वांटम-सुरक्षित सुरक्षा का अनुप्रयोग।</p>"
+    ],
+    [
+      "id=practice>Open source for the<br>future of finance\\.</h2>",
+      "id=practice>वित्त के भविष्य के लिए<br>ओपन-सोर्स।</h2>"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">वित्त के भविष्य के लिए ओपन-सोर्स।<"
+    ],
+    [
+      ">A portfolio of Python, Rust and JavaScript libraries I created and maintain\\. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography\\.<",
+      ">मेरे द्वारा बनाए और रखरखावित Python, Rust और JavaScript लाइब्रेरियों का संकलन। ओपन-सोर्स, स्वतंत्र उपयोग योग्य, थोक भुगतान, सीमा-पार निपटान, वित्तीय डेटा और क्वांटम-प्रतिरोधी क्रिप्टोग्राफी पर लागू।<"
+    ],
+    [
+      ">Browse all projects<",
+      ">सभी परियोजनाएँ देखें<"
+    ],
+    [
+      ">Python · Payments<",
+      ">Python · भुगतान<"
+    ],
+    [
+      ">Python · Cross-border<",
+      ">Python · सीमा-पार<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · वित्त<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · सुरक्षा<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · क्वांटम<"
+    ],
+    [
+      ">Rust · YAML<",
+      ">Rust · YAML<"
+    ],
+    [
+      ">Learn about ([A-Za-z0-9 ()_-]+)</a>",
+      ">\\1 के बारे में जानें</a>"
+    ],
+    [
+      "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
+      "<p>एक Python लाइब्रेरी जो CSV या SQLite से <strong>ISO 20022 pain.001</strong> भुगतान-फ़ाइल निर्माण को स्वचालित करती है। SWIFT, SEPA और प्रमुख योजनाओं में MT/MX से संरचित संदेशों की वैश्विक माइग्रेशन के लिए निर्मित।</p>"
+    ],
+    [
+      "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
+      "<p><strong>ISO 20022 pacs.008</strong> FI-से-FI ग्राहक क्रेडिट-ट्रांसफ़र संदेश जेनरेट, सत्यापित और वितरित करें। JSON Schema, XSD सत्यापन, 75 देशों में IBAN, GDPR/PCI-DSS-अनुपालन PII मास्किंग।</p>"
+    ],
+    [
+      "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
+      "<p>वित्त-स्तरीय Python टूलकिट जो बहु-प्रारूप बैंक-स्टेटमेंट को संरचित डेटा में बदलता है। वास्तविक-दुनिया के स्टेटमेंट-फ़ाइलों और विनियमित वातावरणों की ऑडिट-माँगों के लिए डिज़ाइन किया गया।</p>"
+    ],
+    [
+      "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
+      "<p>पासवर्ड एन्क्रिप्शन और सत्यापन के लिए <strong>सुरक्षित हैश और डाइजेस्ट एल्गोरिथ्म</strong> लागू करने वाली Rust लाइब्रेरी। प्रमाणीकरण के पोस्ट-PQC युग के लिए क्वांटम-प्रतिरोधी मुद्रा में डिज़ाइन की गई।</p>"
+    ],
+    [
+      "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
+      "<p><strong>CRYSTALS-Kyber</strong> का सुदृढ़ Rust कार्यान्वयन — सामान्य-प्रयोजन पोस्ट-क्वांटम एन्क्रिप्शन हेतु NIST FIPS 203 मानक। क्वांटम-प्रतिरोधी भुगतान-प्रमाणीकरण की नींव।</p>"
+    ],
+    [
+      "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
+      "<p>एक <strong>शुद्ध-Rust YAML 1.2 परिवेश</strong>। शून्य unsafe, 100% स्पेक-अनुपालन (आधिकारिक सुइट 406/406), स्ट्रीमिंग-प्राथमिकता serde, बिना हानि CST और JSON-Schema सत्यापन। लाइब्रेरी + CLI (noyafmt, noyavalidate) + LSP + MCP + WASM बाइंडिंग्स।</p>"
+    ],
+    [
+      "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
+      "क्वांटम कंप्यूटिंग वित्तीय-सेवाओं की क्रिप्टोग्राफिक नींव को ख़तरे में डालती है। वास्तविक-समय से लेकर सीमा-पार निपटान तक के भुगतान उन सुरक्षा-व्यवस्थाओं पर निर्भर हैं जिन्हें क्वांटम कंप्यूटिंग अंततः अप्रचलित कर देगी।"
+    ],
+    [
+      ">Quantum-Safe Payments white paper · September 2025 · Read the paper<",
+      ">Quantum-Safe Payments श्वेत-पत्र · सितंबर 2025 · श्वेत-पत्र पढ़ें<"
+    ],
+    [
+      ">Read the paper<",
+      ">श्वेत-पत्र पढ़ें<"
+    ],
+    [
+      ">Quantum-Safe Payments\\.</h2>",
+      ">क्वांटम-सुरक्षित भुगतान।</h2>"
+    ],
+    [
+      ">Quantum-Safe Payments\\.<",
+      ">क्वांटम-सुरक्षित भुगतान।<"
+    ],
+    [
+      ">Industry white paper for the Emerging Payments Association Asia\\.\\s*The structural threat quantum computing poses to payment infrastructure, and the case for coordinated action now\\.<",
+      ">Emerging Payments Association Asia के लिए उद्योग श्वेत-पत्र। भुगतान-अवसंरचना पर क्वांटम कंप्यूटिंग के संरचनात्मक ख़तरे और तत्काल समन्वित कार्यवाही के तर्क।<"
+    ],
+    [
+      ">Why the payments industry must act now\\.<",
+      ">भुगतान-उद्योग को अभी कार्यवाही क्यों करनी चाहिए।<"
+    ],
+    [
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
+      ">नियामक „अभी-संग्रह, बाद-में-डिक्रिप्ट\" को वर्तमान का विश्वसनीय जोखिम मान रहे हैं। यह श्वेत-पत्र संरचनात्मक ख़तरे और थोक भुगतान-रेल पर समन्वित कार्यवाही की तत्काल आवश्यकता को रेखांकित करता है।</p>"
+    ],
+    [
+      ">Latest<",
+      ">नवीनतम<"
+    ],
+    [
+      ">From the desk\\.<",
+      ">कार्य-डेस्क से।<"
+    ],
+    [
+      ">Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments\\.<",
+      ">क्वांटम-सुरक्षित क्रिप्टोग्राफी, ISO 20022 माइग्रेशन और थोक भुगतानों के भविष्य पर हाल का शोध और लेखन।<"
+    ],
+    [
+      "<p class=newsroom-excerpt>Stablecoins cannot pay yield under the GENIUS Act\\. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail\\.</p>",
+      "<p class=newsroom-excerpt>GENIUS Act के तहत स्टेबलकॉइन उपज नहीं दे सकते। BlackRock की BRSRV और BSTBL फ़ाइलिंग्स विकल्प दिखाती हैं — एक टोकनाइज़्ड मनी-मार्केट फ़ंड जो विनियमित स्टेबलकॉइन के साथ-साथ चलता है और एक अनुपालक, समानांतर रेल के माध्यम से उपज प्रदान करता है।</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>Quantum risk has moved from research curiosity to active regulatory mandate\\. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate\\.</p>",
+      "<p class=newsroom-excerpt>क्वांटम-जोखिम शोध-जिज्ञासा से सक्रिय नियामक अधिदेश बन चुका है। जनवरी 2026 में G7 रोडमैप के प्रकाशन और BIS Project Leap द्वारा सजीव भुगतान-प्रणालियों में व्यवहार्यता सिद्ध होने के साथ, बोर्ड-स्तर का प्रश्न अब „माइग्रेट करें या नहीं\" नहीं है।</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\\.</p>",
+      "<p class=newsroom-excerpt>नवंबर 2026 से, SWIFT CBPR+ सीमा-पार भुगतान-संदेशों में असंरचित डाक-पते को अस्वीकार करेगा। छह माह बचे हैं, और pacs.008 के 65 % संदेश अब भी ग़ैर-अनुपालक पते भेज रहे हैं तथा 44 % बैंक उपचार-कार्यक्रम में पिछड़े हुए हैं।</p>"
+    ],
+    [
+      ">See all articles\\b",
+      ">सभी लेख देखें"
+    ],
+    [
+      "<p class=feat-eyebrow>Get in touch</p>",
+      "<p class=feat-eyebrow>संपर्क करें</p>"
+    ],
+    [
+      ">Unlocking the Future of Banking and Financial Services\\.<br>Discover the latest news from</h2>",
+      ">बैंकिंग और वित्तीय-सेवाओं के भविष्य को उन्मुक्त करना।<br>नवीनतम विश्लेषण देखें</h2>"
+    ],
+    [
+      "<p class=\\\"feat-sub center\\\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.</p>",
+      "<p class=\"feat-sub center\">थोक भुगतान-रणनीति, ISO 20022 माइग्रेशन या वित्तीय-सेवाओं हेतु क्वांटम-सुरक्षित क्रिप्टोग्राफी — किसी भी विषय पर बात करने में मुझे ख़ुशी होगी।</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">बातचीत शुरू करें</a>"
+    ],
+    [
+      "<a class=pill href=\"?/articles/index\\.html\"?>Read latest research</a>",
+      "<a class=pill href=\"/hi/lekh/index.html\">नवीनतम शोध पढ़ें</a>"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/hi/sampark/index.html\">संपर्क करें</a>"
+    ],
+    [
+      "href=\"?/papers/index\\.html\"?>Read the paper</a>",
+      "href=\"/hi/prakashan/index.html\">श्वेत-पत्र पढ़ें</a>"
+    ],
+    [
+      "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
+      "href=\"/hi/2026-05-15-chhupi-aamdani-blackrock-brsrv-bstbl-genius-act/index.html\">लेख पढ़ें</a>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Writing</h2>",
+      "<h2 class=ap-foot-title>लेखन</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Work</h2>",
+      "<h2 class=ap-foot-title>कार्य</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Reach</h2>",
+      "<h2 class=ap-foot-title>संपर्क</h2>"
+    ],
+    [
+      "<a href=/about/index\\.html>About</a>",
+      "<a href=/hi/hamare-baare-mein/index.html>हमारे बारे में</a>"
+    ],
+    [
+      "<a href=/papers/index\\.html>Papers</a>",
+      "<a href=/hi/prakashan/index.html>प्रकाशन</a>"
+    ],
+    [
+      "<a href=/projects/index\\.html>Projects</a>",
+      "<a href=/hi/pariyojanaen/index.html>परियोजनाएँ</a>"
+    ],
+    [
+      "<a href=/playlists/index\\.html>Playlists</a>",
+      "<a href=/hi/pleelist/index.html>प्लेलिस्ट</a>"
+    ],
+    [
+      "<a href=/contact/index\\.html>Contact</a>",
+      "<a href=/hi/sampark/index.html>संपर्क</a>"
+    ],
+    [
+      "<a href=/tags/index\\.html>Tags</a>",
+      "<a href=/hi/tag/index.html>टैग</a>"
+    ],
+    [
+      "<a href=/articles/index\\.html>Articles</a>",
+      "<a href=/hi/lekh/index.html>लेख</a>"
+    ],
+    [
+      "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
+      "<a href=/hi/static-site-generator-se-banaya/index.html>Static Site Generator से बनाया गया</a>"
+    ],
+    [
+      "<a href=/accessibility/index\\.html>Accessibility</a>",
+      "<a href=/hi/pahunch-yogyata/index.html>पहुँच-योग्यता</a>"
+    ],
+    [
+      "<a href=/privacy/index\\.html>Privacy</a>",
+      "<a href=/hi/gopniyata/index.html>गोपनीयता</a>"
+    ],
+    [
+      "<a href=/terms/index\\.html>Terms</a>",
+      "<a href=/hi/shartein/index.html>शर्तें</a>"
+    ],
+    [
+      ">Experience<",
+      ">अनुभव<"
+    ],
+    [
+      ">Brands along the way\\.<",
+      ">यात्रा के ब्रांड।<"
+    ],
+    [
+      ">From global Tier-1 banks to consumer technology\\. Payments and digital product leadership across HSBC, PayPal, Barclays, Shazam, AKQA and Virgin Group\\.</p>",
+      ">वैश्विक Tier-1 बैंकों से लेकर उपभोक्ता-प्रौद्योगिकी तक। HSBC, PayPal, Barclays, Shazam, AKQA और Virgin Group में भुगतान और डिजिटल-उत्पाद नेतृत्व।</p>"
+    ],
+    [
+      "alt=\"PayPal logo\"",
+      "alt=\"PayPal का लोगो\""
+    ],
+    [
+      "alt=\"Barclays logo\"",
+      "alt=\"Barclays का लोगो\""
+    ],
+    [
+      "alt=\"Shazam logo\"",
+      "alt=\"Shazam का लोगो\""
+    ],
+    [
+      "alt=\"AKQA logo\"",
+      "alt=\"AKQA का लोगो\""
+    ],
+    [
+      "alt=\"Virgin logo\"",
+      "alt=\"Virgin का लोगो\""
+    ],
+    [
+      "alt=\"HSBC logo\"",
+      "alt=\"HSBC का लोगो\""
+    ],
+    [
+      ">Read more<",
+      ">और पढ़ें<"
+    ],
+    [
+      ">Read the article<",
+      ">लेख पढ़ें<"
+    ],
+    [
+      ">Read latest research<",
+      ">नवीनतम शोध पढ़ें<"
+    ],
+    [
+      ">Read full article<",
+      ">पूरा लेख पढ़ें<"
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">संपर्क करें ›</a>"
+    ],
+    [
+      ">Payments · Stablecoins<",
+      ">भुगतान · स्टेबलकॉइन<"
+    ],
+    [
+      ">Payments · ISO 20022<",
+      ">भुगतान · ISO 20022<"
+    ],
+    [
+      ">Quantum<",
+      ">क्वांटम<"
+    ],
+    [
+      ">Quantum · Banking<",
+      ">क्वांटम · बैंकिंग<"
+    ],
+    [
+      ">Quantum · Cryptography<",
+      ">क्वांटम · क्रिप्टोग्राफी<"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">श्वेत-पत्र पढ़ें</a>"
+    ]
+  ]
+}

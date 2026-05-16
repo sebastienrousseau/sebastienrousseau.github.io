@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="hi-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Tue, 23 Jan 2024 05:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Tue, 23 Jan 2024 05:06:06 +0000" id="last-modified" />
+    <title>AI प्रॉम्प्ट-इंजीनियरिंग में प्रगति — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="AI प्रॉम्प्ट-इंजीनियरिंग में नवीनतम प्रगति: chain-of-thought, RAG और टूल-यूज़।">
+<meta name="keywords" content="प्रॉम्प्ट इंजीनियरिंग, AI, LLM, chain-of-thought, RAG, फ़्यू-शॉट, टूल यूज़, GPT, Claude, Gemini">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-V+4gQokLuSBsAEd6+rjrLAuEInhUBgDlkXBQzYxtrJ8=' 'sha256-cnzjCmTmUkSYhjivM3JzemFrKiZ0mNMzJwvgX3cFQ2I=' 'sha256-mpLPman8xRsigMWZZoce8pJ3/tx7kEXBdYqLhk75RNI=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/hi/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom फ़ीड" href="/hi/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="AI प्रॉम्प्ट-इंजीनियरिंग में प्रगति — Sebastien Rousseau">
+<meta property="og:description" content="AI प्रॉम्प्ट-इंजीनियरिंग में नवीनतम प्रगति: chain-of-thought, RAG और टूल-यूज़।">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/hi/2024-01-23-ai-prompt-engineering-mein-pragati/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="hi_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI प्रॉम्प्ट-इंजीनियरिंग में प्रगति — Sebastien Rousseau">
+<meta name="twitter:description" content="AI प्रॉम्प्ट-इंजीनियरिंग में नवीनतम प्रगति: chain-of-thought, RAG और टूल-यूज़।">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/hi/2024-01-23-ai-prompt-engineering-mein-pragati/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-01-23-avancees-en-ingenierie-de-prompts-ia/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2024-01-23-advancements-in-ai-prompt-engineering/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2024-01-23-fortschritte-im-ki-prompt-engineering/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2024-01-23-avances-en-ingenieria-de-prompts-ia/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2024-01-23-ai-prompt-engineering-mein-pragati/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2024-01-23-progressi-nellingegneria-dei-prompt-ia/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2024-01-23-ai-puronputo-enjiniaringu-no-shinpo/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2024-01-23-ai-peurompeuteu-enjineoring-baljeon/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2024-01-23-vooruitgang-in-ai-prompt-engineering/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2024-01-23-avancos-na-engenharia-de-prompts-ia/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2024-01-23-dostizheniya-v-inzhenerii-promptov-ii/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2024-01-23-ai-tishici-gongcheng-de-jinzhan/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2024-01-23-ai-tishici-gongcheng-de-jinzhan-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">मुख्य सामग्री पर जाएँ</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="नेविगेशन बदलें" />
+      <div class="wrap">
+        <a class="ap-brand" href="/hi/index.html" aria-label="Sebastien Rousseau मुख्य पृष्ठ">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="मुख्य नेविगेशन">
+          <ul class="ap-menu">
+            <li><a href="/hi/hamare-baare-mein/index.html">हमारे बारे में</a></li>
+            <li><a href="/hi/lekh/index.html" aria-current="page" class="active">लेख</a></li>
+            <li><a href="/hi/prakashan/index.html">प्रकाशन</a></li>
+            <li><a href="/hi/vishay/index.html">विषय</a></li>
+            <li><a href="/hi/pariyojanaen/index.html">परियोजनाएँ</a></li>
+            <li><a href="/hi/pleelist/index.html">प्लेलिस्ट</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="डार्क थीम चालू करें" aria-pressed="false" title="थीम बदलें">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="खोजें (Cmd या Ctrl + K)" title="खोजें (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="भाषा">
+            <button type="button" class="ap-lang-toggle" aria-label="HI, भाषा बदलें" aria-expanded="false" aria-haspopup="menu" title="भाषा बदलें">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">HI</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="जल्द आ रहा है">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="जल्द आ रहा है">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="जल्द आ रहा है">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="जल्द आ रहा है">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="जल्द आ रहा है">🇮🇱 עברית</span>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="जल्द आ रहा है">🇮🇩 Indonesia</span>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="जल्द आ रहा है">🇵🇱 Polski</span>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="जल्द आ रहा है">🇷🇴 Română</span>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="जल्द आ रहा है">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="जल्द आ रहा है">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="जल्द आ रहा है">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="जल्द आ रहा है">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="जल्द आ रहा है">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="जल्द आ रहा है">🇳🇬 Yorùbá</span>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/hi/sampark/index.html" aria-label="संपर्क करें">संपर्क करें ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="नेविगेशन बदलें">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>AI प्रॉम्प्ट-इंजीनियरिंग में प्रगति</h1>
+      <p class="sub">Chain-of-thought, RAG और टूल-यूज़ के बीच</p>
+    <nav class="article-tags" aria-label="विषय"><a href="/tags/index.html#h3-" class="article-tag" rel="tag">प्रॉम्प्ट इंजीनियरिंग</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">AI</a><a href="/tags/index.html#h3-llm" class="article-tag" rel="tag">LLM</a><a href="/tags/index.html#h3-chain-of-thought" class="article-tag" rel="tag">chain-of-thought</a><a href="/tags/index.html#h3-rag" class="article-tag" rel="tag">RAG</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">फ़्यू-शॉट</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">टूल यूज़</a><a href="/tags/index.html#h3-gpt" class="article-tag" rel="tag">GPT</a><a href="/tags/index.html#h3-claude" class="article-tag" rel="tag">Claude</a><a href="/tags/index.html#h3-gemini" class="article-tag" rel="tag">Gemini</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-01-23T05:06:06+00:00" class="meta-pub">प्रकाशित 23 Jan 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">अद्यतन 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="अनुमानित पठन-समय">12 मिनट का पठन</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>विषय-सूची</h2><ol><li><a href="#las-instrucciones-personalizadas-impacto">Las instrucciones personalizadas और उसका impacto</a></li><li><a href="#multipersona-leveraging">Multipersona leveraging</a></li><li><a href="#enfoques-chain-of-thought">Enfoques Chain of Thought</a></li><li><a href="#aprendizaje-bases-vectoriales">Aprendizaje में मॉडल और bases का डेटा vectoriales</a></li><li><a href="#adaptive-prompting">Adaptive prompting</a></li><li><a href="#implicaciones-eticas">Implicaciones éticas</a></li><li><a href="#computacion-prompt-engineering">Computación क्वांटम और Prompt Engineering</a></li><li><a href="#tecnicas-avanzadas-prompt-engineering">Técnicas avanzadas में Prompt Engineering</a></li><li><a href="#zero-shot-few-shot-prompting">Zero Shot और Few-Shot Prompting</a></li><li><a href="#reforzar-fiabilidad-mediante-chain-of-thought-cot">Reforzar वह fiabilidad mediante वह Chain of Thought (CoT)</a></li><li><a href="#self-consistency">Self-Consistency</a></li><li><a href="#general-knowledge-prompting">General Knowledge Prompting</a></li><li><a href="#react">ReAct</a></li><li><a href="#implicaciones-eticas-prompt-engineering">Implicaciones éticas में Prompt Engineering</a></li><li><a href="#section-19">निष्कर्ष</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> AI प्रॉम्प्ट-इंजीनियरिंग में नवीनतम प्रगति: chain-of-thought, RAG और टूल-यूज़।</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Las instrucciones personalizadas और उसका impacto.</strong> Las instrucciones personalizadas हैं revolucionado वे interacciones के साथ IA को अनुमति देना एक नियंत्रण का मॉडल específico के लिए वह उपयोगकर्ता.</li>  <li><strong>Multipersona leveraging.</strong> El multipersona leveraging में वे मॉडल का IA है transformado वे experiencias का उपयोगकर्ता को proporcionar flexibilidad में वे respuestas.</li>  <li><strong>Enfoques Chain of Thought.</strong> Los enfoques chain-of-thought हैं revolucionado वह resolución का समस्याएँ द्वारा IA को imitar वे procesos cognitivos humanos.</li>  <li><strong>Aprendizaje में मॉडल और bases का डेटा vectoriales.</strong> El aprendizaje में मॉडल और वे bases का डेटा vectoriales representan avances significativos में वह capacidad का वह IA के लिए evolucionar और पहुँच पाना को vastos conjuntos का डेटा.</li></ul></aside><p>En 2024, वह Prompt Engineering अनुमति देता है को समाधान जैसे वे chatbots mantener conversaciones empáticas जो comprenden वे कुंजियाँ culturales: एक avance महत्वपूर्ण में वे interacciones IA-humano. El <strong>Prompt Engineering</strong> transforma वह interacción humano-máquina mediante avances में वे instrucciones personalizadas, multipersona leveraging और enfoques chain-of-thought. Este artículo explora ये desarrollos और उसका impacto में वह प्रौद्योगिकी, वे वित्त और वह educación, integrando भी perspectivas sobre वह क्वांटम कंप्यूटिंग और वह ética का वह IA.</p>
+<p>Para empezar, वह Prompt Engineering है conocido evoluciones importantes में वे últimos वर्ष जैसे componente गंभीर का वह IA जो dicta वह calidad, pertinencia और सुरक्षा के contenido. En यह artículo examinamos वह impacto का वे avances के Prompt Engineering में sectores जैसे वह प्रौद्योगिकी, वे वित्त और वह educación, específicamente में 2024.</p>
+<h2 id="las-instrucciones-personalizadas-impacto">Las instrucciones personalizadas और उसका impacto <a class="heading-anchor" href="#las-instrucciones-personalizadas-impacto" aria-label="लिंक:  Las instrucciones personalizadas और उसका impacto">#</a></h2>
+<p>Las <strong>instrucciones personalizadas</strong> हैं revolucionado वे interacciones के साथ IA को अनुमति देना एक नियंत्रण का मॉडल específico के लिए वह उपयोगकर्ता. En वह finanza empresarial, वे prompts personalizados सुनिश्चित करते हैं वह cumplimiento normativo को वह vez जो refuerzan वह precisión में वह ámbito académico.</p>
+<p>De forma crucial, ये prompts insuflan एक comprensión cultural और contextual को वे respuestas, lo जो resulta vital के लिए वह marketing और वह educación.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" fetchpriority="high">.class=&quot;m-10 w-100&quot;</p>
+<blockquote>
+<p><strong>TL;DR.</strong> AI प्रॉम्प्ट-इंजीनियरिंग में नवीनतम प्रगति: chain-of-thought, RAG और टूल-यूज़। (DRAFT — मशीन-सहायता प्राप्त हिंदी अनुवाद; देशी समीक्षा लंबित।)</p>
+<p><strong>मुख्य निष्कर्ष</strong></p>
+<ul>
+<li>यह लेख एक तकनीकी विषय का विश्लेषण प्रस्तुत करता है।</li>
+<li>मुख्य अवधारणाएँ ऊपर परिभाषित की गई हैं।</li>
+<li>बैंकिंग और वित्तीय निहितार्थ नीचे विवेचित हैं।</li>
+<li>प्रौद्योगिकी, अंगीकार और जोखिमों पर दृष्टिकोण साझा किया गया है।</li>
+<li>दीर्घकालिक रुझान निष्कर्ष में सारांशित हैं।</li>
+</ul>
+</blockquote>
+<h2 id="multipersona-leveraging">Multipersona leveraging <a class="heading-anchor" href="#multipersona-leveraging" aria-label="लिंक:  Multipersona leveraging">#</a></h2>
+<p>El <strong>multipersona leveraging</strong> में वे मॉडल का IA है transformado वे experiencias का उपयोगकर्ता को proporcionar flexibilidad में वे respuestas. Este enfoque है particularmente eficaz में वह servicio को cliente और वे entornos का e-learning, जहाँ वह IA puede alternar बीच diversas personas के लिए adaptarse को वे necesidades के उपयोगकर्ता. Favorece भी वह inclusividad, permitiendo को वे मॉडल का IA interactuar का manera culturalmente sensible में distintos sectores, incluida वह sanidad.</p>
+<p>Al diseñar मॉडल का IA जो comprendan और respondan में diversos dialectos और contextos culturales, वे उद्यम pueden dirigirse अधिक eficazmente को एक audiencia वैश्विक. Un तंत्र का IA में sanidad puede बेहतर बनाना वह comunicación और वह atención को paciente को ser culturalmente sensible और apropiado. Este enfoque नहीं se limita को ampliar वह alcance का वे अनुप्रयोग का IA: alimenta एक entorno का inclusividad और respeto द्वारा वह diversidad cultural.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="enfoques-chain-of-thought">Enfoques Chain of Thought <a class="heading-anchor" href="#enfoques-chain-of-thought" aria-label="लिंक:  Enfoques Chain of Thought">#</a></h2>
+<p>Los enfoques <strong>chain-of-thought</strong> हैं revolucionado वह resolución का समस्याएँ द्वारा IA को imitar वे procesos cognitivos humanos. Este método है inestimable में वे ámbitos जो exigen altos niveles का पारदर्शिता और fiabilidad, जैसे वह diagnóstico médico और वह previsión वित्तीय. Al detallar उसका razonamiento, वे मॉडल का IA refuerzan उसका fiabilidad में वे entornos का उच्च जोखिम.</p>
+<p>Además, वह técnica chain-of-thought refuerza significativamente वह fiabilidad का वे तंत्र का IA. En medicina और में वित्त, वे मॉडल का IA pueden ayudar को वे expertos को tomar decisiones अधिक precisas और fiables.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="aprendizaje-bases-vectoriales">Aprendizaje में मॉडल और bases का डेटा vectoriales <a class="heading-anchor" href="#aprendizaje-bases-vectoriales" aria-label="लिंक:  Aprendizaje में मॉडल और bases का डेटा vectoriales">#</a></h2>
+<p>El <strong>aprendizaje में मॉडल</strong> और वे <strong>bases का डेटा vectoriales</strong> representan avances significativos में वह capacidad का वह IA के लिए evolucionar और पहुँच पाना को vastos conjuntos का डेटा. El aprendizaje में मॉडल है महत्वपूर्ण में entornos cambiantes जैसे वह bolsa. Las bases का डेटा vectoriales हैं útiles के लिए gestionar डेटा में ámbitos जैसे वह investigación biomédica और वह procesamiento के lenguaje.</p>
+<p>Las bases का डेटा vectoriales, द्वारा उसका parte, हैं abierto नई posibilidades का पहुँच e interpretación द्वारा वह IA का grandes conjuntos का डेटा. Al convertir डेटा complejos में representaciones vectoriales, वे मॉडल का IA pueden tratar और recuperar वह जानकारी का forma अधिक दक्ष, conduciendo को respuestas अधिक rápidas और precisas. Esta प्रौद्योगिकी tiene implicaciones profundas में ámbitos जैसे वह investigación biomédica और वह procesamiento के lenguaje, जहाँ वह manipulación का vastas cantidades का डेटा है एक चुनौती rutinario.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="adaptive-prompting">Adaptive prompting <a class="heading-anchor" href="#adaptive-prompting" aria-label="लिंक:  Adaptive prompting">#</a></h2>
+<p>El Prompt Engineering marca एक giro hacia तंत्र का IA empáticos और conscientes के contexto. Permite को वे मॉडल का IA afinar उसका comunicación según वह feedback के उपयोगकर्ता, reforzando वे experiencias का उपयोगकर्ता में वह servicio को cliente और वे प्लेटफ़ॉर्म का aprendizaje ऑनलाइन. Este enfoque है particularmente significativo में वे अनुप्रयोग का salud mental, जहाँ वह IA puede proporcionar soporte personalizado.</p>
+<p>Además, वह adaptive prompting encarna वह giro hacia तंत्र का IA अधिक empáticos और conscientes के contexto. Una IA puede aprender का वे emociones humanas, वे diferencias culturales और वे situaciones recibiendo feedback का वे उपयोगकर्ता और mejorando उसके métodos. Los chatbots का IA pueden ser muy útiles में salud mental: pueden proporcionar soporte और consejos personales. La IA puede adaptar उसके respuestas según lo जो siente वह persona और lo जो necesita. Es एक gran paso hacia एक प्रौद्योगिकी अधिक humana, adaptable को वे necesidades únicas का cada uno.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="implicaciones-eticas">Implicaciones éticas <a class="heading-anchor" href="#implicaciones-eticas" aria-label="लिंक:  Implicaciones éticas">#</a></h2>
+<p>Las consideraciones éticas में <strong>Prompt Engineering</strong> हैं críticas, में particular में sectores जहाँ एक IA sesgada podría conducir को resultados injustos. La ingeniería का prompt ética सुनिश्चित करता है वह respeto को वह vida निजी और को consentimiento के उपयोगकर्ता, एक necesidad में sanidad और वित्त. Se extiende भी को वे impactos sociales, exigiendo equidad और पारदर्शिता में वह influencia का वह IA sobre वह opinión सार्वजनिक और वे procesos democráticos.</p>
+<p>Además, वह उपयोग ético का वे prompts का IA se extiende को उसका impacto social. La IA se उपयोग करता है cada vez अधिक में वह educación, वे medios और वह política. La forma में जो se diseñan वे prompts puede afectar enormemente को pensamiento का वे personas, को lo जो aprenden और को funcionamiento का वह democracia. Los prompts का IA deben ser equitativos, transparentes e imparciales के लिए समर्थन देना वह equidad और वह justicia में nuestro mundo pilotado द्वारा IA.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="computacion-prompt-engineering">Computación क्वांटम और Prompt Engineering <a class="heading-anchor" href="#computacion-prompt-engineering" aria-label="लिंक:  Computación क्वांटम और Prompt Engineering">#</a></h2>
+<p>La <strong>क्वांटम कंप्यूटिंग</strong> अनुमति देता है रचना prompts óptimos अधिक rápidamente के लिए उपयोग जैसे वह personalización के contenido educativo según वे fortalezas का cada estudiante, analizando rápidamente वे डेटा का निष्पादन. Esta प्रौद्योगिकी refuerza भी वह capacidad का वह IA के लिए resolver समस्याएँ complejos, में beneficio का ámbitos जैसे वह क्रिप्टोग्राफी और वह descubrimiento का medicamentos. Los मॉडल का IA potenciados के साथ lo क्वांटम pueden optimizar वे estructuras का prompts, में beneficio का वह medicina personalizada और का वे estrategias का निवेश वित्तीय.</p>
+<p>La क्वांटम कंप्यूटिंग está llamada को reforzar वह <strong>Prompt Engineering</strong> proporcionando एक potencia computacional avanzada. Permite एक tratamiento अधिक तेज़ का prompts complejos, crucial में क्रिप्टोग्राफी और descubrimiento का medicamentos. Los मॉडल का IA potenciados के साथ lo क्वांटम pueden optimizar वे estructuras का prompts, में beneficio का वह medicina personalizada और का वे estrategias का निवेश.</p>
+<p>Además, वह potencial का वह क्वांटम कंप्यूटिंग के लिए resolver समस्याएँ का optimización puede reforzar enormemente वह दक्षता का वह ingeniería का prompt. Los मॉडल का IA pueden उपयोग करना algoritmos क्वांटम के लिए optimizar वे estructuras का prompts, haciéndolos अधिक eficaces के लिए suscitar वे comportamientos और respuestas IA deseados. El उपयोग का यह प्रौद्योगिकी puede बेहतर बनाना वह medicina personalizada और वे वित्त. La IA puede रचना planes का tratamiento individuales basados में वे genes का एक persona. En वित्त, वह IA puede उपयोग करना grandes cantidades का डेटा का बाज़ार के लिए बेहतर बनाना वे estrategias का निवेश.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="tecnicas-avanzadas-prompt-engineering">Técnicas avanzadas में Prompt Engineering <a class="heading-anchor" href="#tecnicas-avanzadas-prompt-engineering" aria-label="लिंक:  Técnicas avanzadas में Prompt Engineering">#</a></h2>
+<p>Técnicas avanzadas जैसे वह Zero Shot और वह Few Shot prompting amplían वे capacidades का वह IA. El Zero Shot prompting अनुमति देता है को वे मॉडल का IA tratar tareas नई, जबकि वह Few Shot prompting facilita एक adaptación तेज़ को नए contextos. Estos métodos हैं valiosos के लिए वह generación का contenido को medida और वह educación personalizada.</p>
+<p>El Few Shot prompting अनुमति देता है को वे मॉडल का IA adaptarse rápidamente को नई tareas और contextos के साथ solo algunos ejemplos. Este método है instrumental के लिए वह generación का contenido को medida, जहाँ वह IA puede producir salidas creativas और contextualmente pertinentes से शुरू होकर एक entrada mínima. Los tutores IA pueden उपयोग करना वह Few Shot prompting के लिए personalizar उसका enseñanza según वे necesidades का cada estudiante, यहाँ तक कि में materias जो nunca antes habían aprendido.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="zero-shot-few-shot-prompting">Zero Shot और Few-Shot Prompting <a class="heading-anchor" href="#zero-shot-few-shot-prompting" aria-label="लिंक:  Zero Shot और Few-Shot Prompting">#</a></h2>
+<p>El ZSL (Zero Shot Learning) अनुमति देता है को वे asistentes IA proporcionar respuestas útiles को वे preguntas नई का वे ग्राहक में सभी वे ámbitos, reduciendo वह dependencia का वे capacidades preentrenadas. El FSL (Few Shot Learning) अनुमति देता है को वह IA adaptarse को नई tareas के साथ solo एक puñado का ejemplos, encontrando एक equilibrio बीच entrenamiento extensivo और flexibilidad. Estas técnicas हैं valiosas में investigación científica का nicho और traducción का lengua personalizada.</p>
+<p>Las técnicas Zero Shot और Few Shot Prompting ayudan को वह IA को gestionar tareas बिना entrenamiento previo. Esto muestra जो वह IA puede adaptarse और aprender cosas नई के साथ facilidad. Esta versatilidad है कुंजी में वे ámbitos के साथ डेटा limitados, जैसे वह investigación científica का nicho, permitiendo को वह IA proporcionar perspectivas valiosas sobre temas variados.</p>
+<p>El Few-Shot Prompting, द्वारा उसका parte, exige जो वह मॉडल se adapte को नई tareas के साथ solo एक puñado का ejemplos के लिए guiar उसके respuestas. Esta técnica encuentra एक equilibrio बीच वह entrenamiento extensivo habitualmente आवश्यक के लिए वे मॉडल का मशीन-लर्निंग और वह flexibilidad के Zero Shot Prompting. Con algunos ejemplos, वह IA puede afinar उसके respuestas के लिए alinearse mejor के साथ वे exigencias específicas का वह tarea. Es útil के लिए personalizar वह traducción का lenguas, रचना contenido especializado और resolver समस्याएँ únicos. El Few-Shot Prompting pone का relieve वह aprendizaje तेज़ और वह adaptabilidad का वह IA, convirtiéndolo में एक activo के लिए अनुप्रयोग dinámicas और diversas जो exigen एक adaptación तेज़.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="reforzar-fiabilidad-mediante-chain-of-thought-cot">Reforzar वह fiabilidad mediante वह Chain of Thought (CoT) <a class="heading-anchor" href="#reforzar-fiabilidad-mediante-chain-of-thought-cot" aria-label="लिंक:  Reforzar वह fiabilidad mediante वह Chain of Thought (CoT)">#</a></h2>
+<p>Igualmente महत्वपूर्ण, वे enfoques chain-of-thought permiten ahora procesos का decisión IA अधिक transparentes. Esto resulta valioso में ámbitos जैसे वह diagnóstico और वह previsión जो exigen resultados fiables. Específicamente, को detallar वह razonamiento, वे IA construyen एक fiabilidad के लिए जो वे expertos humanos evalúen वे conclusiones.</p>
+<p>Esencialmente, एक पारदर्शिता reflexiva और एक colaboración बीच humanos e IA refuerzan significativamente वह medicina का precisión और वे वित्त cuantitativas.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="self-consistency">Self-Consistency <a class="heading-anchor" href="#self-consistency" aria-label="लिंक:  Self-Consistency">#</a></h2>
+<p>La Self-Consistency में वह IA refuerza वह fiabilidad incitando को वे मॉडल को cotejar उसके respuestas. Este método है crucial में entornos dinámicos जहाँ se आवश्यक है एक जानकारी actualizada और coherente: cobertura informativa या análisis का बाज़ार.</p>
+<p>Además, वह Self-Consistency desempeña एक papel गंभीर में वह entrenamiento और refinamiento का वे मॉडल का IA. Mediante evaluación और refinamiento iterativos, वह IA puede बेहतर बनाना उसका comprensión और वह precisión का उसके respuestas, convirtiéndola में एक उपकरण valiosa का aprendizaje और विकास continuos. La self-consistency है muy महत्वपूर्ण में cosas जैसे वह traducción का lengua और वह análisis cultural. Esto se debe को जो pequeños detalles और वह situación pueden afectar enormemente को वह precisión और pertinencia का वे respuestas.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="general-knowledge-prompting">General Knowledge Prompting <a class="heading-anchor" href="#general-knowledge-prompting" aria-label="लिंक:  General Knowledge Prompting">#</a></h2>
+<p>El general knowledge prompting अनुमति देता है को वह IA उपयोग करना उसका vasto entrenamiento में कई disciplinas, simplificando वह recopilación का जानकारी और proporcionando एक comprensión holística का diversos temas. Esta funcionalidad है particularmente útil में educación और में contextos का trivia.</p>
+<p>Sirve जैसे उपकरण inestimable के लिए educadores, estudiantes और mentes curiosas, ofreciendo एक समाधान ventanilla única के लिए वे consultas के माध्यम से वे disciplinas. Esta conectividad का saberes interdisciplinares refuerza वह उपयोगिता का वे asistentes IA.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="react">ReAct <a class="heading-anchor" href="#react" aria-label="लिंक:  ReAct">#</a></h2>
+<p>ReAct अनुमति देता है को वह IA evaluar का forma गंभीर और निर्माण करना sobre उसके salidas, alimentando एक conversación dinámica e interactiva. Esta funcionalidad है beneficiosa में वे tareas creativas और का resolución का समस्याएँ, permitiendo को वह IA explorar perspectivas alternativas और generar समाधान novedosas.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="implicaciones-eticas-prompt-engineering">Implicaciones éticas में Prompt Engineering <a class="heading-anchor" href="#implicaciones-eticas-prompt-engineering" aria-label="लिंक:  Implicaciones éticas में Prompt Engineering">#</a></h2>
+<p>A medida जो वे प्रौद्योगिकियाँ का IA continúan permeando diversos aspectos का वह sociedad, वे implicaciones éticas के <strong>Prompt Engineering</strong> se vuelven cada vez अधिक significativas. Esta parte subraya वह importancia का वह ética में वह creación और उपयोग का वह IA, और propone reglas और estructuras prácticas के लिए सुनिश्चित करना जो वह IA sea diseñada éticamente.</p>
+<h3 id="comprender-panorama-etico">Comprender वह panorama ético <a class="heading-anchor" href="#comprender-panorama-etico" aria-label="लिंक:  Comprender वह panorama ético">#</a></h3>
+<p>El <strong>panorama ético</strong> में IA se articula में torno को principios कुंजी जैसे equidad, rendición का cuentas, पारदर्शिता और confidencialidad. En वह ámbito के Prompt Engineering, ये principios se traducen में वह creación का मॉडल का IA जो नहीं perpetúen sesgos, estereotipos या comportamientos नहीं éticos. Es crucial reconocer जो वे मॉडल का IA reflejan को menudo वे डेटा sobre वे जो se entrenan: डेटा जो pueden incluir डेटा históricos या sociales sesgados. El diseño ético का वे prompts debe, pues, trabajar activamente के लिए mitigar ये sesgos, asegurando जो वे salidas IA sean justas और equitativas.</p>
+<h3 id="directrices-practicas-prompt-engineering-etico">Directrices prácticas के लिए एक Prompt Engineering ético <a class="heading-anchor" href="#directrices-practicas-prompt-engineering-etico" aria-label="लिंक:  Directrices prácticas के लिए एक Prompt Engineering ético">#</a></h3>
+<p>Datos का entrenamiento diversos e inclusivos के लिए वे मॉडल का IA ayudan को कम करना वे sesgos में वे respuestas को representar diversas demografías, culturas और puntos का vista.</p>
+<ul>
+<li><strong>Auditorías regulares का sesgo</strong>: realice auditorías regulares का वे मॉडल का IA के लिए identificar और abordar cualquier sesgo जो pudiera surgir. Estas auditorías deben implicar को equipos diversos के लिए सुनिश्चित करना एक evaluación completa के निष्पादन का वह IA desde múltiples perspectivas.</li>
+<li><strong>Transparencia में वह toma का decisiones IA</strong>: mantenga वह पारदर्शिता में वह manera में जो वे मॉडल का IA concluyen, sobre todo में ámbitos का उच्च जोखिम जैसे वह sanidad और वे वित्त. Esto implica diseñar prompts जो animen को वह IA को व्याख्या करना उसका razonamiento, facilitando वह comprensión और वह विश्वास के उपयोगकर्ता में वे decisiones का वह IA.</li>
+<li><strong>Confidencialidad और सुरक्षा का वे डेटा</strong>: mantenga मानक estrictos का confidencialidad और सुरक्षा का वे डेटा के लिए proteger वह जानकारी sensible का वे उपयोगकर्ता. Esto incluye वह diseño का prompts जो नहीं inciten ni exijan जो वह IA almacene या recuerde डेटा का उपयोगकर्ता personales अधिक allá का lo आवश्यक.</li>
+<li><strong>Permita को वे उपयोगकर्ता नियंत्रित करना वे डेटा</strong> जो comparten के साथ वे तंत्र का IA mediante वह consentimiento और वह capacidad का optar द्वारा salir या का modificar वे preferencias.</li>
+<li>Establezca comités का revisión ética के लिए supervisar वे proyectos का IA, में particular वे जो involucran ámbitos sensibles जैसे वह apoyo में salud mental या वह asesoramiento jurídico. Estos comités pueden proporcionar orientación और supervisión के लिए सुनिश्चित करना वह mantenimiento का वे मानक éticos.</li>
+</ul>
+<h3 id="marcos-etico-ia">Marcos के लिए एक विकास ético का वह IA <a class="heading-anchor" href="#marcos-etico-ia" aria-label="लिंक:  Marcos के लिए एक विकास ético का वह IA">#</a></h3>
+<p>Adoptar marcos establecidos के लिए एक <strong>विकास ético का वह IA</strong> puede guiar को वे ingenieros का prompt में वह creación का मॉडल का IA responsables. Diversos marcos, जैसे वह Ethically Aligned Design का वह IEEE और वे Ethics Guidelines का वह UE, abordan वह ética का वह IA में ámbitos जैसे वह पारदर्शिता, वह rendición का cuentas और वह impacto social. La integración का ये marcos में वह proceso का विकास IA सुनिश्चित करता है एक enfoque completo के diseño ético.</p>
+<h3 id="abordar-eticos-futuros">Abordar वे चुनौतियाँ éticos futuros <a class="heading-anchor" href="#abordar-eticos-futuros" aria-label="लिंक:  Abordar वे चुनौतियाँ éticos futuros">#</a></h3>
+<p>A medida जो वह IA continúa evolucionando, emergerán नए <strong>चुनौतियाँ éticos</strong>. Por ejemplo, वह integración का वह IA में वे तंत्र judiciales या वे vehículos autónomos suscita cuestiones éticas complejas sobre वह toma का decisiones और वह responsabilidad. Los ingenieros का prompt deben mantenerse informados sobre ये desarrollos और adaptar उसके prácticas éticas में consecuencia. Esto implica educación continua, colaboración के साथ éticos और expertos के ámbito, और compromiso सार्वजनिक के लिए comprender वे preocupaciones और expectativas sociales.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="section-19">निष्कर्ष <a class="heading-anchor" href="#section-19" aria-label="लिंक:  निष्कर्ष">#</a></h2>
+<p>En निष्कर्ष, वे consideraciones éticas में Prompt Engineering नहीं हैं solo एक necesidad técnica sino एक responsabilidad social. Siguiendo directrices और marcos éticos, वे ingenieros का prompt pueden सुनिश्चित करना एक उपयोग beneficioso, justo और alineado का वे प्रौद्योगिकियाँ का IA.</p>
+<p>El Prompt Engineering evoluciona rápidamente, के साथ implicaciones significativas के लिए वह प्रौद्योगिकी और वे वित्त. El dominio का यह disciplina है crucial के लिए aprovechar plenamente वह potencial का वह IA, desde वह análisis का डेटा hasta वह traducción का lenguas. El campo debería ver उपकरण और प्रौद्योगिकियाँ अधिक sofisticadas, reforzando वह eficacia और वह दक्षता के Prompt Engineering.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<aside class="author-card" aria-label="लेखक के बारे में"><img alt="Sebastien Rousseau का चित्र" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/hi/hamare-baare-mein/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग टेक्नोलॉजिस्ट; मैं व्यावहारिक AI, ISO 20022 की ओर माइग्रेशन, वित्तीय सेवाओं के लिए पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतानों के संरचनात्मक रूपांतरण पर लिखता हूँ।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20 वर्ष से अधिक का अनुभव। <a href="/hi/hamare-baare-mein/index.html">पूरा परिचय</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">अंतिम समीक्षा <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">संबंधित पठन</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/hi/2024-01-01-ai-rujhaan-2024-bhavishya-anumaan-aur-drishtikon/index.html" class="related-media" aria-label="AI रुझान 2024: अंतर्दृष्टि और भविष्य के अनुमान" tabindex="-1"><img alt="Drone View of London" src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-2024"><a href="https://sebastienrousseau.com/hi/2024-01-01-ai-rujhaan-2024-bhavishya-anumaan-aur-drishtikon/index.html">AI रुझान 2024: अंतर्दृष्टि और भविष्य के अनुमान</a> <a class="heading-anchor" href="#ai-2024" aria-label="लिंक:  AI रुझान 2024: अंतर्दृष्टि और भविष्य के अनुमान">#</a></h3><p><time datetime="2024-01-01">2024-01-01</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/hi/2023-12-25-ai-samvardhit-quantum-algorithm-se-vitt-mein-kraanti/index.html" class="related-media" aria-label="AI-संवर्धित क्वांटम-अल्गोरिदम से वित्त में क्रांति" tabindex="-1"><img alt="AI-संवर्धित क्वांटम-अल्गोरिदम से वित्त में क्रांति" src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai"><a href="https://sebastienrousseau.com/hi/2023-12-25-ai-samvardhit-quantum-algorithm-se-vitt-mein-kraanti/index.html">AI-संवर्धित क्वांटम-अल्गोरिदम से वित्त में क्रांति</a> <a class="heading-anchor" href="#ai" aria-label="लिंक:  AI-संवर्धित क्वांटम-अल्गोरिदम से वित्त में क्रांति">#</a></h3><p><time datetime="2023-12-25">2023-12-25</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/hi/2024-02-13-eu-ai-act-vaishvik-ai-niyaman-ka-bhavishya/index.html" class="related-media" aria-label="EU AI Act: वैश्विक AI-विनियमन के भविष्य को आकार देना" tabindex="-1"><img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="eu-ai-act-ai"><a href="https://sebastienrousseau.com/hi/2024-02-13-eu-ai-act-vaishvik-ai-niyaman-ka-bhavishya/index.html">EU AI Act: वैश्विक AI-विनियमन के भविष्य को आकार देना</a> <a class="heading-anchor" href="#eu-ai-act-ai" aria-label="लिंक:  EU AI Act: वैश्विक AI-विनियमन के भविष्य को आकार देना">#</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="लेख पृष्ठ-क्रम"><a class="post-pagination-prev" href="/hi/2024-01-15-alien-studio-ai-photography-se-kala-mein-kraanti/"><span class="post-pagination-label">पिछला</span><span class="post-pagination-title">Alien Studio: My Tech-to Art Journey in Photography</span></a><a class="post-pagination-next" href="/hi/2024-01-29-ai-aadharit-audio-vishleshan-anuvaad-aur-drishtikon/"><span class="post-pagination-label">अगला</span><span class="post-pagination-title">AI-Powered Speech Analysis, Translation, & Insight Tool</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/hi/hamare-baare-mein/index.html">हमारे बारे में</a></li>
+              <li><a href="/hi/sampark/index.html">संपर्क</a></li>
+              <li><a href="/hi/static-site-generator-se-banaya/index.html">Static Site Generator से बनाया गया</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">लेखन</h2>
+            <ul>
+              <li><a href="/hi/lekh/index.html">लेख</a></li>
+              <li><a href="/hi/prakashan/index.html">प्रकाशन</a></li>
+              <li><a href="/hi/tag/index.html">टैग</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">कार्य</h2>
+            <ul>
+              <li><a href="/hi/pariyojanaen/index.html">परियोजनाएँ</a></li>
+              <li><a href="/hi/pleelist/index.html">प्लेलिस्ट</a></li>
+              <li><a href="/hi/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">संपर्क</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="न्यूज़लेटर सदस्यता">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — भुगतान, AI और पोस्ट-क्वांटम क्रिप्टोग्राफी पर शोध-नोट्स। कोई स्पैम नहीं।</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="aap@bank.in" />
+            <input type="hidden" name="_subject" value="न्यूज़लेटर सदस्यता — sebastienrousseau.com" />
+            <button type="submit">सदस्यता लें</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</span>
+          <div class="social" aria-label="सामाजिक लिंक">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau पर Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau पर LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau पर Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau पर YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/hi/pahunch-yogyata/index.html">पहुँच-योग्यता</a> ·
+            <a href="/hi/gopniyata/index.html">गोपनीयता</a> ·
+            <a href="/hi/shartein/index.html">शर्तें</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"hi"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"hi"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2704,"about":{"@type":"Thing","name":"Generative AI","sameAs":["https://en.wikipedia.org/wiki/Generative_artificial_intelligence","https://www.wikidata.org/wiki/Q108766533","https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"]},"headline":"AI प्रॉम्प्ट-इंजीनियरिंग में प्रगति","description":"AI प्रॉम्प्ट-इंजीनियरिंग में नवीनतम प्रगति: chain-of-thought, RAG और टूल-यूज़।","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp","width":"100vw","height":"100vh","caption":"प्रॉम्प्ट-संरचना की प्रतीकात्मक छवि"},"url":"https://sebastienrousseau.com/hi/2024-01-23-ai-prompt-engineering-mein-pragati/","datePublished":"2024-01-23T05:06:06+00:00","dateModified":"2026-05-11","inLanguage":"hi","keywords":"प्रॉम्प्ट इंजीनियरिंग, AI, LLM, chain-of-thought, RAG, फ़्यू-शॉट, टूल यूज़, GPT, Claude, Gemini","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/hi/2024-01-23-ai-prompt-engineering-mein-pragati/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"hi"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/hi/"},{"@type":"ListItem","position":3,"name":"AI प्रॉम्प्ट-इंजीनियरिंग में प्रगति","item":"https://sebastienrousseau.com/hi/2024-01-23-ai-prompt-engineering-mein-pragati/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="खोजें">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>खोजें</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="खोजें">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="दस्तावेज़ में खोजें..." autocomplete="off" aria-label="खोजें"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> बंद करें</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> नेविगेट करें</span><span><kbd>Enter</kbd> खोलें</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

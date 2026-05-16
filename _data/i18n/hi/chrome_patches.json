@@ -1,0 +1,289 @@
+{
+  "_comment": "Hindi (hi) inline chrome patches — DRAFT pending native review. Inline portion only — the auto-generated portion comes from strings.json via _lang_registry.build_chrome_patches.",
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"न्यूज़लेटर सदस्यता\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum — भुगतान, AI और पोस्ट-क्वांटम क्रिप्टोग्राफी पर शोध-नोट्स। कोई स्पैम नहीं।"
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"aap@bank.in\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"न्यूज़लेटर सदस्यता — sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">सदस्यता लें</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">मुख्य सामग्री पर जाएँ</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"नेविगेशन बदलें\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"नेविगेशन बदलें\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"मुख्य नेविगेशन\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"डार्क थीम चालू करें\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"लाइट थीम चालू करें\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"थीम बदलें\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"खोजें (Cmd या Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"खोजें (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"संपर्क करें\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">संपर्क करें ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">संपर्क करें</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Sebastien Rousseau मुख्य पृष्ठ\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/hi/hamare-baare-mein/index.html\">हमारे बारे में</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/hi/prakashan/index.html\">प्रकाशन</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/hi/vishay/index.html\">विषय</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/hi/pariyojanaen/index.html\">परियोजनाएँ</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/hi/lekh/index.html\">लेख</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/hi/sampark/index.html\">संपर्क</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/hi/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/hi/pleelist/index.html\">प्लेलिस्ट</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"ऊपर लौटें\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">लेखन</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">कार्य</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">संपर्क</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/hi/hamare-baare-mein/index.html\">हमारे बारे में</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/hi/static-site-generator-se-banaya/index.html\">Static Site Generator से बनाया गया</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/hi/prakashan/index.html\">प्रकाशन</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/hi/tag/index.html\">टैग</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/hi/pariyojanaen/index.html\">परियोजनाएँ</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/hi/pleelist/index.html\">प्लेलिस्ट</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/hi/sampark/index.html\">संपर्क</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/hi/lekh/index.html\">लेख</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"सामाजिक लिंक\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau पर "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau पर "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"Sebastien Rousseau का श्वेत-श्याम चित्र\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।"
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/hi/pahunch-yogyata/index.html\">पहुँच-योग्यता</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/hi/gopniyata/index.html\">गोपनीयता</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/hi/shartein/index.html\">शर्तें</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"दस्तावेज़ में खोजें...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"खोजें\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> बंद करें"
+    ],
+    [
+      "navigate</span>",
+      "नेविगेट करें</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> खोलें"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>खोजें</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"भाषा\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"HI, भाषा बदलें\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"भाषा बदलें\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"जल्द आ रहा है\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">HI</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"Atom फ़ीड\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"RSS फ़ीड\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"लेख सारांश\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>मुख्य निष्कर्ष</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>संबंधित पठन:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">संबंधित पठन</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">अंतिम समीक्षा <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"लेखक के बारे में\""
+    ],
+    [
+      ">Full profile</a>",
+      ">पूरा परिचय</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"Sebastien Rousseau का चित्र\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">संपर्क करें</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">बातचीत शुरू करें</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/articles/index.html\">नवीनतम शोध पढ़ें</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/contact/index.html\">संपर्क करें</a>"
+    ]
+  ]
+}

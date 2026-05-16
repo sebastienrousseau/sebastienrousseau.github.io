@@ -1,0 +1,65 @@
+{
+  "_comment": "Hindi (hi) UI strings — DRAFT pending native review. Formal banking register, आप-form. Key set MUST stay in sync with _data/i18n/en/strings.json — CI gate test_i18n_strings.py enforces parity.",
+
+  "nav.aria.skipToMain": "मुख्य सामग्री पर जाएँ",
+  "nav.aria.toggleNav": "नेविगेशन बदलें",
+  "nav.aria.toggleNavTitle": "नेविगेशन बदलें",
+  "nav.aria.primary": "मुख्य नेविगेशन",
+  "nav.aria.darkTheme": "डार्क थीम चालू करें",
+  "nav.aria.lightTheme": "लाइट थीम चालू करें",
+  "nav.aria.themeToggleTitle": "थीम बदलें",
+  "nav.aria.searchKbd": "खोजें (Cmd या Ctrl + K)",
+  "nav.aria.searchTitle": "खोजें (⌘K)",
+  "nav.aria.contactCTA": "संपर्क करें",
+  "nav.contactCTA": "संपर्क करें ›",
+  "nav.aria.brandHome": "Sebastien Rousseau मुख्य पृष्ठ",
+  "nav.aria.backToTop": "ऊपर लौटें",
+
+  "search.label": "खोजें",
+  "search.placeholder": "दस्तावेज़ में खोजें...",
+  "search.kbdEsc": "बंद करें",
+  "search.kbdNavigate": "नेविगेट करें",
+  "search.kbdEnter": "खोलें",
+  "search.buttonLabel": "खोजें",
+
+  "footer.title.writing": "लेखन",
+  "footer.title.work": "कार्य",
+  "footer.title.reach": "संपर्क",
+  "footer.aria.socialLinks": "सामाजिक लिंक",
+  "footer.aria.socialPrefix": "Sebastien Rousseau पर ",
+  "footer.copyright": "© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।",
+
+  "feeds.atomTitle": "Atom फ़ीड",
+  "feeds.rssTitle": "RSS फ़ीड",
+  "feeds.channelTitle": "Sebastien Rousseau — हिन्दी संस्करण",
+  "feeds.channelDescription": "हिन्दी लेख: व्यावहारिक AI, ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान का रूपांतरण।",
+  "feeds.channelCopyright": "© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।",
+  "feeds.jsonFeedTitle": "Sebastien Rousseau — लेख (हिन्दी)",
+
+  "lang.aria.langGroup": "भाषा",
+  "lang.aria.changeLangPrefix": "HI, भाषा बदलें",
+  "lang.title.changeLang": "भाषा बदलें",
+  "lang.title.comingSoon": "जल्द आ रहा है",
+  "lang.currentLabel": "HI",
+
+  "article.aria.summary": "लेख सारांश",
+  "article.keyTakeaways": "मुख्य निष्कर्ष",
+  "article.relatedReadingInline": "संबंधित पठन:",
+  "article.relatedHeading": "संबंधित पठन",
+  "article.lastReviewedLabel": "अंतिम समीक्षा ",
+
+  "author.aria.aboutAuthor": "लेखक के बारे में",
+  "author.fullProfile": "पूरा परिचय",
+  "author.alt.portrait": "Sebastien Rousseau का चित्र",
+
+  "newsletter.aria.signup": "न्यूज़लेटर सदस्यता",
+  "newsletter.blurb": "Banking On Quantum — भुगतान, AI और पोस्ट-क्वांटम क्रिप्टोग्राफी पर शोध-नोट्स। कोई स्पैम नहीं।",
+  "newsletter.placeholder": "aap@bank.in",
+  "newsletter.subject": "न्यूज़लेटर सदस्यता — sebastienrousseau.com",
+  "newsletter.submit": "सदस्यता लें",
+
+  "home.eyebrow.contact": "संपर्क करें",
+  "home.cta.startConversation": "बातचीत शुरू करें",
+
+  "listing.readLatest": "नवीनतम शोध पढ़ें"
+}

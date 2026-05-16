@@ -1,11 +1,11 @@
 {
-  "subtitle": "全同態加密（FHE）如何在量子時代守護銀行業的資料安全與隱私",
-  "language": "zh-Hant",
-  "title": "量子銀行時代的全同態加密",
   "keywords": "全同態加密, FHE, 同態加密, 銀行業, 金融, 量子計算, 後量子, 格密碼, 隱私, Zama",
-  "description": "全同態加密（FHE）讓資料在加密狀態下計算，為量子時代的銀行業帶來全新資料安全正規化。",
-  "date": "March 25, 2024",
   "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
+  "description": "全同態加密（FHE）讓資料在加密狀態下計算，為量子時代的銀行業帶來全新資料安全正規化。",
+  "subtitle": "全同態加密（FHE）如何在量子時代守護銀行業的資料安全與隱私",
   "locale": "zh_TW",
-  "banner_alt": "全同態加密橫幅"
+  "title": "量子銀行時代的全同態加密",
+  "banner_alt": "全同態加密橫幅",
+  "language": "zh-Hant",
+  "date": "March 25, 2024"
 }

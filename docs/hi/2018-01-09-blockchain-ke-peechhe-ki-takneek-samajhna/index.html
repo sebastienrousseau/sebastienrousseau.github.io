@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="hi-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 09 Jan 2023 09:09:00 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 09 Jan 2023 09:09:00 +0000" id="last-modified" />
+    <title>Blockchain के पीछे की प्रौद्योगिकी को समझना — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Blockchain वितरित बही, क्रिप्टोग्राफी और सहमति-तंत्रों को कैसे जोड़ती है — इसकी एक स्पष्ट व्याख्या।">
+<meta name="keywords" content="blockchain, वितरित बही, क्रिप्टोग्राफी, सहमति, proof-of-work, smart contract, हैश, मर्कल वृक्ष, विकेंद्रीकरण, P2P">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-5OJE+AtZEHzeDPLFvTDZEeb3nJAE6Uf7L0L1kV4hQ88=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-V+4gQokLuSBsAEd6+rjrLAuEInhUBgDlkXBQzYxtrJ8=' 'sha256-cnzjCmTmUkSYhjivM3JzemFrKiZ0mNMzJwvgX3cFQ2I=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/hi/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom फ़ीड" href="/hi/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="stylesheet" href="/highlight.a92b9694.css">
+<meta property="og:title" content="Blockchain के पीछे की प्रौद्योगिकी को समझना — Sebastien Rousseau">
+<meta property="og:description" content="Blockchain वितरित बही, क्रिप्टोग्राफी और सहमति-तंत्रों को कैसे जोड़ती है — इसकी एक स्पष्ट व्याख्या।">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/hi/2018-01-09-blockchain-ke-peechhe-ki-takneek-samajhna/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="hi_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blockchain के पीछे की प्रौद्योगिकी को समझना — Sebastien Rousseau">
+<meta name="twitter:description" content="Blockchain वितरित बही, क्रिप्टोग्राफी और सहमति-तंत्रों को कैसे जोड़ती है — इसकी एक स्पष्ट व्याख्या।">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/hi/2018-01-09-blockchain-ke-peechhe-ki-takneek-samajhna/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2018-01-09-comprendre-la-technologie-derriere-la-blockchain/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2018-01-09-understanding-the-technology-behind-blockchain/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2018-01-09-die-technologie-hinter-blockchain-verstehen/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2018-01-09-comprender-la-tecnologia-detras-de-blockchain/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2018-01-09-blockchain-ke-peechhe-ki-takneek-samajhna/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2018-01-09-comprendere-la-tecnologia-dietro-la-blockchain/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2018-01-09-beulrokchein-baehu-gisul-ihae/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2018-01-09-de-technologie-achter-blockchain-begrijpen/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2018-01-09-compreender-a-tecnologia-por-tras-do-blockchain/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2018-01-09-ponimanie-tekhnologii-blockchain/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2018-01-09-lijie-quqiulian-beihou-de-jishu/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2018-01-09-lijie-quqiulian-beihou-de-jishu-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2018-01-09-understanding-the-technology-behind-blockchain/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">मुख्य सामग्री पर जाएँ</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="नेविगेशन बदलें" />
+      <div class="wrap">
+        <a class="ap-brand" href="/hi/index.html" aria-label="Sebastien Rousseau मुख्य पृष्ठ">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="मुख्य नेविगेशन">
+          <ul class="ap-menu">
+            <li><a href="/hi/hamare-baare-mein/index.html">हमारे बारे में</a></li>
+            <li><a href="/hi/lekh/index.html" aria-current="page" class="active">लेख</a></li>
+            <li><a href="/hi/prakashan/index.html">प्रकाशन</a></li>
+            <li><a href="/hi/vishay/index.html">विषय</a></li>
+            <li><a href="/hi/pariyojanaen/index.html">परियोजनाएँ</a></li>
+            <li><a href="/hi/pleelist/index.html">प्लेलिस्ट</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="डार्क थीम चालू करें" aria-pressed="false" title="थीम बदलें">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="खोजें (Cmd या Ctrl + K)" title="खोजें (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="भाषा">
+            <button type="button" class="ap-lang-toggle" aria-label="HI, भाषा बदलें" aria-expanded="false" aria-haspopup="menu" title="भाषा बदलें">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">HI</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="जल्द आ रहा है">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="जल्द आ रहा है">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="जल्द आ रहा है">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="जल्द आ रहा है">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="जल्द आ रहा है">🇮🇱 עברית</span>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="जल्द आ रहा है">🇮🇩 Indonesia</span>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="जल्द आ रहा है">🇵🇱 Polski</span>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="जल्द आ रहा है">🇷🇴 Română</span>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="जल्द आ रहा है">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="जल्द आ रहा है">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="जल्द आ रहा है">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="जल्द आ रहा है">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="जल्द आ रहा है">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="जल्द आ रहा है">🇳🇬 Yorùbá</span>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/hi/sampark/index.html" aria-label="संपर्क करें">संपर्क करें ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="नेविगेशन बदलें">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Blockchain के पीछे की प्रौद्योगिकी को समझना</h1>
+      <p class="sub">वितरित बही, क्रिप्टोग्राफी और सहमति का परस्पर मेल</p>
+    <nav class="article-tags" aria-label="विषय"><a href="/tags/index.html#h3-blockchain" class="article-tag" rel="tag">blockchain</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">वितरित बही</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">क्रिप्टोग्राफी</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">सहमति</a><a href="/tags/index.html#h3-proof-of-work" class="article-tag" rel="tag">proof-of-work</a><a href="/tags/index.html#h3-smart-contract" class="article-tag" rel="tag">smart contract</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">हैश</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">मर्कल वृक्ष</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">विकेंद्रीकरण</a><a href="/tags/index.html#h3-p2p" class="article-tag" rel="tag">P2P</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2023-01-09T09:09:00+00:00" class="meta-pub">प्रकाशित 9 Jan 2023</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">अद्यतन 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="अनुमानित पठन-समय">4 मिनट का पठन</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>विषय-सूची</h2><ol><li><a href="#section-1">दृष्टिकोण</a></li><li><a href="#section-2">विचार</a></li><li><a href="#section-6">प्रभाव</a></li><li><a href="#section-7">प्रोत्साहन</a></li><li><a href="#section-8">निष्कर्ष</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Blockchain वितरित बही, क्रिप्टोग्राफी और सहमति-तंत्रों को कैसे जोड़ती है — इसकी एक स्पष्ट व्याख्या।</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>दृष्टिकोण.</strong> La प्रौद्योगिकी blockchain है abierto वह puerta को एक नई था का अनुप्रयोग विकेंद्रीकृत (dApps) जो operan का forma independiente, बिना नियंत्रण centralizado.</li>  <li><strong>विचार.</strong> Nuestro objetivo है निर्माण करना एक क्रिप्टोकरेंसी sencilla sobre Ethereum, ofreciéndole एक experiencia práctica का विकास blockchain.</li>  <li><strong>प्रभाव.</strong> Al निर्माण करना एक क्रिप्टोकरेंसी basada में Ethereum desde cero, obtendrá:.</li>  <li><strong>प्रोत्साहन.</strong> Completar एक construcción का टोकन का extremo को extremo desbloquea एक experiencia práctica का पहली mano के साथ:.</li></ul></aside><p><img src="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" alt="नेटवर्क-कनेक्शन दर्शाता डिजिटल अमूर्त चित्र"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<blockquote>
+<p><strong>TL;DR.</strong> Blockchain वितरित बही, क्रिप्टोग्राफी और सहमति-तंत्रों को कैसे जोड़ती है — इसकी एक स्पष्ट व्याख्या। (DRAFT — मशीन-सहायता प्राप्त हिंदी अनुवाद; देशी समीक्षा लंबित।)</p>
+<p><strong>मुख्य निष्कर्ष</strong></p>
+<ul>
+<li>यह लेख एक तकनीकी विषय का विश्लेषण प्रस्तुत करता है।</li>
+<li>मुख्य अवधारणाएँ ऊपर परिभाषित की गई हैं।</li>
+<li>बैंकिंग और वित्तीय निहितार्थ नीचे विवेचित हैं।</li>
+<li>प्रौद्योगिकी, अंगीकार और जोखिमों पर दृष्टिकोण साझा किया गया है।</li>
+<li>दीर्घकालिक रुझान निष्कर्ष में सारांशित हैं।</li>
+</ul>
+</blockquote>
+<h2 id="section-1">दृष्टिकोण <a class="heading-anchor" href="#section-1" aria-label="लिंक:  दृष्टिकोण">#</a></h2>
+<p>La प्रौद्योगिकी blockchain है abierto वह puerta को एक नई था का अनुप्रयोग विकेंद्रीकृत (dApps) जो operan का forma independiente, बिना नियंत्रण centralizado. Ethereum proporciona एक प्लेटफ़ॉर्म potente के लिए रचना dApps complejas और smart contracts.</p>
+<p>Uno का वे उपयोग अधिक prometedores का Ethereum है वह lanzamiento का क्रिप्टोकरेंसी और टोकन digitales personalizados. En यह guía completa examinaremos paso को paso cómo रचना उसका propio टोकन क्रिप्टोग्राफिक sobre Ethereum.</p>
+<h2 id="section-2">विचार <a class="heading-anchor" href="#section-2" aria-label="लिंक:  विचार">#</a></h2>
+<p>Nuestro objetivo है निर्माण करना एक क्रिप्टोकरेंसी sencilla sobre Ethereum, ofreciéndole एक experiencia práctica का विकास blockchain. Estos हैं वे pasos कुंजी जो cubriremos:</p>
+<h3 id="disenar">Diseñar वह क्रिप्टोकरेंसी <a class="heading-anchor" href="#disenar" aria-label="लिंक:  Diseñar वह क्रिप्टोकरेंसी">#</a></h3>
+<p>La पहली tarea crucial है diseñar उसका क्रिप्टोकरेंसी. Esto abarca वह definición का atributos कुंजी:</p>
+<ul>
+<li><strong>Nombre</strong>: elija एक nombre único जो represente वह identidad और वह propósito के टोकन.</li>
+<li><strong>Símbolo</strong>: elija एक símbolo corto जैसे BTC के लिए Bitcoin. Se उपयोग करता है में वे exchanges.</li>
+<li><strong>Oferta total</strong>: determine वह número máximo का टोकन में circulación.</li>
+<li><strong>Decimales</strong>: defina वह divisibilidad का उसका टोकन, जैसे 2 के लिए céntimos.</li>
+<li><strong>Funcionalidades adicionales</strong>: añada opcionalmente extras जैसे minting, burning, freezing, etc.</li>
+</ul>
+<h3 id="escribir-smart-contracts">Escribir smart contracts <a class="heading-anchor" href="#escribir-smart-contracts" aria-label="लिंक:  Escribir smart contracts">#</a></h3>
+<p>Para dar vida को उसका क्रिप्टोकरेंसी, deberá codificar smart contracts जो definan वह funcionalidad और वे reglas के टोकन. Los smart contracts हैं scripts programáticos almacenados में blockchain जो se ejecutan automáticamente जब se cumplen ciertas condiciones.</p>
+<p>Estas हैं algunas capacidades कुंजी जो hacen जो वे smart contracts sean idóneos के लिए वे क्रिप्टोकरेंसी:</p>
+<ul>
+<li><strong>Autoejecución</strong>: se activan automáticamente, बिना intervención का एक तीसरा.</li>
+<li><strong>Inmutabilidad</strong>: एक vez desplegado, वह कोड नहीं puede modificarse. Esto सुनिश्चित करता है वह सुरक्षा.</li>
+<li><strong>Autonomía</strong>: नहीं है आवश्यक कोई नहीं autoridad central के लिए gestionar वे smart contracts.</li>
+<li><strong>Transparencia</strong>: cualquiera puede inspeccionar वह lógica का एक smart contract.</li>
+<li><strong>Automatización</strong>: acciones जैसे वह transferencia का fondos pueden automatizarse mediante वह कोड के contrato.</li>
+<li><strong>Seguridad</strong>: वे fondos depositados में एक contrato quedan protegidos hasta जो se cumplen वे condiciones का liberación.</li>
+<li><strong>Eficiencia</strong>: वे smart contracts eliminan बिचौलिये, haciendo वे procesos अधिक rápidos और कम costosos.</li>
+</ul>
+<p>Ejemplo का कोड का contrato में Solidity.</p>
+<pre><code class="language-solidity">pragma solidity ^0.8.0;
+
+contract MyToken {
+
+  string public name;
+  string public symbol;
+  uint256 public decimals;
+  uint256 public totalSupply;
+
+  constructor(string memory _name, string memory _symbol, uint8 _decimals, uint256 _totalSupply) {
+    name = _name;
+    symbol = _symbol;
+    decimals = _decimals;
+    totalSupply = _totalSupply;
+  }
+
+}
+</code></pre>
+<p>Este contrato básico अनुमति देता है रचना एक टोकन के साथ propiedades जैसे nombre, símbolo, decimales और आपूर्ति total.</p>
+<p>La función <code>constructor</code> inicializa ये parámetros में वह momento के despliegue के contrato.</p>
+<p>Este ejemplo se limita को configurar propiedades básicas. Extendería वह contrato के लिए añadir अधिक funcionalidades:</p>
+<ul>
+<li>Transferencias का टोकन बीच direcciones</li>
+<li>Gestión का saldos</li>
+<li>Autorizaciones (allowances) के लिए gastar टोकन</li>
+<li>Minting और burning का टोकन</li>
+<li>Congelación या bloqueo का transferencias का टोकन</li>
+<li>Implementación का मानक का टोकन जैसे ERC-20</li>
+<li>Despliegue e interacción के साथ वह contrato</li>
+</ul>
+<h3 id="desarrollo-pruebas-locales">Desarrollo और pruebas locales <a class="heading-anchor" href="#desarrollo-pruebas-locales" aria-label="लिंक:  Desarrollo और pruebas locales">#</a></h3>
+<p>Antes का desplegar उसका क्रिप्टोकरेंसी में blockchain Ethereum, है prudente realizar pruebas locales exhaustivas. Esto सुनिश्चित करता है जो उसका क्रिप्टोकरेंसी funcione जैसे se espera, बिना bugs ni vulnerabilidades imprevistas.</p>
+<p>Para empezar, siga ये pasos:</p>
+<h4>Descargar Go-Ethereum (Geth)</h4>
+<p>Comience descargando <a href="https://geth.ethereum.org/downloads/">Go-Ethereum</a>, भी llamado Geth, एक cliente Ethereum escrito में Go. Geth actúa जैसे interfaz का línea का comandos (CLI) Ethereum, ejecutable में Windows, Mac और Linux. Es एक उपकरण versátil जो अनुमति देता है माइन करना, रचना e interactuar के साथ smart contracts में वह नेटवर्क Ethereum.</p>
+<h4>Instalar Ethereum</h4>
+<p>Una vez descargado Geth, instale Ethereum. Para वे requisitos previos detallados e instrucciones का compilación completas, consulte वे <a href="https://geth.ethereum.org/docs/getting-started/installing-geth">Installation Instructions</a> disponibles में उसका wiki oficial.</p>
+<h4>Configurar एक entorno का विकास</h4>
+<p>Para facilitar वह विकास का उसका क्रिप्टोकरेंसी, necesitará एक entorno का विकास, एक framework का pruebas और एक canalización का activos के लिए Ethereum. Las instrucciones detalladas के लिए instalar ये उपकरण esenciales se encuentran में वह wiki का Ethereum.</p>
+<h4>Desplegar में एक testnet</h4>
+<p>Una vez जो उसका क्रिप्टोकरेंसी supere वे pruebas locales, puede desplegarla में एक testnet. Una testnet है एक entorno seguro और controlado जो imita वह mainnet का Ethereum, permitiéndole evaluar वह निष्पादन का उसका क्रिप्टोकरेंसी में एक entorno real, बिना जोखिम वित्तीय real.</p>
+<h2 id="section-6">प्रभाव <a class="heading-anchor" href="#section-6" aria-label="लिंक:  प्रभाव">#</a></h2>
+<p>Al निर्माण करना एक क्रिप्टोकरेंसी basada में Ethereum desde cero, obtendrá:</p>
+<ul>
+<li>Un ज्ञान profundo का वे अनुप्रयोग विकेंद्रीकृत (dApps) और का वह programación का smart contracts</li>
+<li>Experiencia práctica के साथ वह programación में Solidity</li>
+<li>Una comprensión का वे प्रोटोकॉल का consenso का Ethereum</li>
+<li>Familiaridad के साथ मानक का टोकन जैसे ERC-20</li>
+</ul>
+<p>Este aprendizaje le otorgará वे medios के लिए aprovechar वह प्रौद्योगिकी blockchain में समाधान innovadoras.</p>
+<h2 id="section-7">प्रोत्साहन <a class="heading-anchor" href="#section-7" aria-label="लिंक:  प्रोत्साहन">#</a></h2>
+<p>Completar एक construcción का टोकन का extremo को extremo desbloquea एक experiencia práctica का पहली mano के साथ:</p>
+<ul>
+<li>La arquitectura blockchain</li>
+<li>La mecánica का वे क्रिप्टोकरेंसी</li>
+<li>El विकास का smart contracts</li>
+<li>Las capacidades और limitaciones का Ethereum</li>
+</ul>
+<p>Adquirirá competencias valiosas के लिए hacer avanzar उसका carrera में programación blockchain.</p>
+<h2 id="section-8">निष्कर्ष <a class="heading-anchor" href="#section-8" aria-label="लिंक:  निष्कर्ष">#</a></h2>
+<p>En वह campo का वह प्रौद्योगिकी blockchain, वह comprensión se gana mejor के माध्यम से वह puesta में práctica. Construir एक क्रिप्टोकरेंसी sobre वह प्लेटफ़ॉर्म Ethereum प्रदान करता है एक अवसर única का adquirir experiencia का पहली mano के साथ वे capacidades और limitaciones का वह प्रौद्योगिकी. Esta guía le arma के साथ वे conocimientos और competencias के लिए emprender यह apasionante viaje, favoreciendo वह नवाचार और वह descubrimiento में वह universo में perpetua evolución के विकास blockchain और क्रिप्टो.</p>
+<aside class="author-card" aria-label="लेखक के बारे में"><img alt="Sebastien Rousseau का चित्र" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/hi/hamare-baare-mein/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग टेक्नोलॉजिस्ट; मैं व्यावहारिक AI, ISO 20022 की ओर माइग्रेशन, वित्तीय सेवाओं के लिए पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतानों के संरचनात्मक रूपांतरण पर लिखता हूँ।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20 वर्ष से अधिक का अनुभव। <a href="/hi/hamare-baare-mein/index.html">पूरा परिचय</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">अंतिम समीक्षा <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">संबंधित पठन</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/hi/2023-10-09-shokunin-sabse-tez-rust-static-site-generator/index.html" class="related-media" aria-label="Shokunin: सबसे तेज़ Rust-आधारित स्टैटिक-साइट जनरेटर" tabindex="-1"><img alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right" src="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="shokunin-rust"><a href="https://sebastienrousseau.com/hi/2023-10-09-shokunin-sabse-tez-rust-static-site-generator/index.html">Shokunin: सबसे तेज़ Rust-आधारित स्टैटिक-साइट जनरेटर</a> <a class="heading-anchor" href="#shokunin-rust" aria-label="लिंक:  Shokunin: सबसे तेज़ Rust-आधारित स्टैटिक-साइट जनरेटर">#</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/hi/2023-09-29-pain001-ke-saath-iso-20022-bhugtaan-file-svachalan/index.html" class="related-media" aria-label="pain001 के साथ ISO 20022-अनुपालक भुगतान-फ़ाइलों का स्वचालन" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="pain001-iso-20022"><a href="https://sebastienrousseau.com/hi/2023-09-29-pain001-ke-saath-iso-20022-bhugtaan-file-svachalan/index.html">pain001 के साथ ISO 20022-अनुपालक भुगतान-फ़ाइलों का स्वचालन</a> <a class="heading-anchor" href="#pain001-iso-20022" aria-label="लिंक:  pain001 के साथ ISO 20022-अनुपालक भुगतान-फ़ाइलों का स्वचालन">#</a></h3><p><time datetime="2023-09-29">2023-09-29</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/hi/2018-02-04-nayi-cryptocurrency-aur-teevra-bhugtaan-samaadhaan/index.html" class="related-media" aria-label="एक नई क्रिप्टोकरेंसी का अनावरण और भविष्य के तीव्र-भुगतान-समाधान की प्रस्तुति" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-11"><a href="https://sebastienrousseau.com/hi/2018-02-04-nayi-cryptocurrency-aur-teevra-bhugtaan-samaadhaan/index.html">एक नई क्रिप्टोकरेंसी का अनावरण और भविष्य के तीव्र-भुगतान-समाधान की प्रस्तुति</a> <a class="heading-anchor" href="#section-11" aria-label="लिंक:  एक नई क्रिप्टोकरेंसी का अनावरण और भविष्य के तीव्र-भुगतान-समाधान की प्रस्तुति">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="लेख पृष्ठ-क्रम"><a class="post-pagination-prev" href="/hi/2018-01-02-blockchain-2018-mein-mahatvapurn-takneek/"><span class="post-pagination-label">पिछला</span><span class="post-pagination-title">Blockchain explained, the technology that matters the most</span></a><a class="post-pagination-next" href="/hi/2018-01-24-erc-20-token-maanak/"><span class="post-pagination-label">अगला</span><span class="post-pagination-title">ERC-20: The Ethereum Token Interface That Changed the World</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/hi/hamare-baare-mein/index.html">हमारे बारे में</a></li>
+              <li><a href="/hi/sampark/index.html">संपर्क</a></li>
+              <li><a href="/hi/static-site-generator-se-banaya/index.html">Static Site Generator से बनाया गया</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">लेखन</h2>
+            <ul>
+              <li><a href="/hi/lekh/index.html">लेख</a></li>
+              <li><a href="/hi/prakashan/index.html">प्रकाशन</a></li>
+              <li><a href="/hi/tag/index.html">टैग</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">कार्य</h2>
+            <ul>
+              <li><a href="/hi/pariyojanaen/index.html">परियोजनाएँ</a></li>
+              <li><a href="/hi/pleelist/index.html">प्लेलिस्ट</a></li>
+              <li><a href="/hi/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">संपर्क</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="न्यूज़लेटर सदस्यता">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — भुगतान, AI और पोस्ट-क्वांटम क्रिप्टोग्राफी पर शोध-नोट्स। कोई स्पैम नहीं।</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="aap@bank.in" />
+            <input type="hidden" name="_subject" value="न्यूज़लेटर सदस्यता — sebastienrousseau.com" />
+            <button type="submit">सदस्यता लें</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</span>
+          <div class="social" aria-label="सामाजिक लिंक">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau पर Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau पर LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau पर Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau पर YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/hi/pahunch-yogyata/index.html">पहुँच-योग्यता</a> ·
+            <a href="/hi/gopniyata/index.html">गोपनीयता</a> ·
+            <a href="/hi/shartein/index.html">शर्तें</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"hi"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"hi"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":958,"about":{"@type":"Thing","name":"Blockchain","sameAs":["https://en.wikipedia.org/wiki/Blockchain","https://www.wikidata.org/wiki/Q20514253","https://sebastienrousseau.com/2018-01-02-blockchain-the-technology-that-matters-in-2018/index.html"]},"headline":"Blockchain के पीछे की प्रौद्योगिकी को समझना","description":"Blockchain वितरित बही, क्रिप्टोग्राफी और सहमति-तंत्रों को कैसे जोड़ती है — इसकी एक स्पष्ट व्याख्या।","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp","width":"100vw","height":"100vh","caption":"नेटवर्क-कनेक्शन दर्शाता डिजिटल अमूर्त चित्र"},"url":"https://sebastienrousseau.com/hi/2018-01-09-blockchain-ke-peechhe-ki-takneek-samajhna/","datePublished":"2023-01-09T09:09:00+00:00","dateModified":"2026-05-11","inLanguage":"hi","keywords":"blockchain, वितरित बही, क्रिप्टोग्राफी, सहमति, proof-of-work, smart contract, हैश, मर्कल वृक्ष, विकेंद्रीकरण, P2P","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/hi/2018-01-09-blockchain-ke-peechhe-ki-takneek-samajhna/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"hi"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/hi/"},{"@type":"ListItem","position":3,"name":"Blockchain के पीछे की प्रौद्योगिकी को समझना","item":"https://sebastienrousseau.com/hi/2018-01-09-blockchain-ke-peechhe-ki-takneek-samajhna/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="खोजें">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>खोजें</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="खोजें">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="दस्तावेज़ में खोजें..." autocomplete="off" aria-label="खोजें"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> बंद करें</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> नेविगेट करें</span><span><kbd>Enter</kbd> खोलें</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

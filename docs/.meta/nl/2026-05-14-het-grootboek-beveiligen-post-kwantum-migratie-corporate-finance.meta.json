@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Visualisatie van een beveiligd corporate-finance-grootboek",
-  "description": "Een blauwdruk voor de post-kwantummigratie van het corporate-finance-grootboek — krypto-agility, audit en governance.",
-  "keywords": "Corporate finance, post-kwantum, migratie, grootboek, cryptografie, banking",
-  "title": "Het grootboek beveiligen: post-kwantummigratie in corporate finance",
+  "locale": "nl_NL",
   "language": "nl-NL",
   "subtitle": "Hoe corporate finance zich voorbereidt op het post-kwantumtijdperk",
+  "title": "Het grootboek beveiligen: post-kwantummigratie in corporate finance",
   "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
-  "date": "May 14, 2026",
-  "locale": "nl_NL"
+  "description": "Een blauwdruk voor de post-kwantummigratie van het corporate-finance-grootboek — krypto-agility, audit en governance.",
+  "banner_alt": "Visualisatie van een beveiligd corporate-finance-grootboek",
+  "keywords": "Corporate finance, post-kwantum, migratie, grootboek, cryptografie, banking",
+  "date": "May 14, 2026"
 }
