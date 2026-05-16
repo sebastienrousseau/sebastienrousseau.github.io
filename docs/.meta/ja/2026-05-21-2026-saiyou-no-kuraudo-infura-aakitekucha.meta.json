@@ -1,12 +1,12 @@
 {
-  "keywords": "クラウドアーキテクチャ 2026, AI ネイティブインフラ, マルチクラウド, サーバーレス, エッジコンピューティング, WebAssembly, Wasm, DevSecOps, 持続可能なデータセンター, 液体冷却, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, エージェンティック商業, マルチエージェントスウォーム, エージェンティックユニット経済, エージェンティック FinOps, エージェント暗号アイデンティティ, SPIFFE, SPIRE, アルゴリズム伝染, データ重力, FinOps egress, HPC, GPU ストレージ, 連続的トレジャリー, ボーダーレス流動性, リアルタイム決済, 合成データ生成, 機密計算, JPMorgan マルチクラウド, Citi モダニゼーション, グラフニューラルネットワーク, ディープフェイク不正, harvest now decrypt later, HNDL, ポスト量子暗号, 暗号アグリティ, MCP セキュリティ, プロンプトインジェクション, サプライチェーン攻撃, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau",
+  "subtitle": "クラウドアーキテクチャは銀行の 6 つの柱と 1 つの戦略的問いを中心に結晶化しました:クラウドを消費するか、設計するか",
+  "date": "May 21, 2026",
+  "last_reviewed": "2026-05-21",
+  "banner_alt": "2026 年向け 6 つの柱のクラウドアーキテクチャ図:AI ネイティブ、マルチクラウド、サーバーレス、エッジ、DevSecOps、持続可能な設計、CloudCDN エッジリサーチレイヤーを持つ",
   "locale": "ja_JP",
   "description": "2026 年のクラウドアーキテクチャは、6 つの柱を中心に結晶化しました:AI ネイティブインフラ、インテリジェントマルチクラウド、エッジでの WebAssembly を持つサーバーレス第一設計、エッジコンピューティング、暗号アグリティを持つ自動化された DevSecOps、高密度の持続可能な運用。",
-  "subtitle": "クラウドアーキテクチャは銀行の 6 つの柱と 1 つの戦略的問いを中心に結晶化しました:クラウドを消費するか、設計するか",
-  "banner": "https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp",
-  "last_reviewed": "2026-05-21",
   "title": "2026 年最良のクラウドインフラアーキテクチャ:金融サービスのための AI ネイティブ、マルチクラウド、量子認識設計図",
-  "language": "ja-JP",
-  "date": "May 21, 2026",
-  "banner_alt": "2026 年向け 6 つの柱のクラウドアーキテクチャ図:AI ネイティブ、マルチクラウド、サーバーレス、エッジ、DevSecOps、持続可能な設計、CloudCDN エッジリサーチレイヤーを持つ"
+  "keywords": "クラウドアーキテクチャ 2026, AI ネイティブインフラ, マルチクラウド, サーバーレス, エッジコンピューティング, WebAssembly, Wasm, DevSecOps, 持続可能なデータセンター, 液体冷却, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, エージェンティック商業, マルチエージェントスウォーム, エージェンティックユニット経済, エージェンティック FinOps, エージェント暗号アイデンティティ, SPIFFE, SPIRE, アルゴリズム伝染, データ重力, FinOps egress, HPC, GPU ストレージ, 連続的トレジャリー, ボーダーレス流動性, リアルタイム決済, 合成データ生成, 機密計算, JPMorgan マルチクラウド, Citi モダニゼーション, グラフニューラルネットワーク, ディープフェイク不正, harvest now decrypt later, HNDL, ポスト量子暗号, 暗号アグリティ, MCP セキュリティ, プロンプトインジェクション, サプライチェーン攻撃, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau",
+  "banner": "https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp",
+  "language": "ja-JP"
 }

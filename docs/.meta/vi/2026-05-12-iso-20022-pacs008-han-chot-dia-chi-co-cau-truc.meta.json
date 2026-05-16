@@ -1,11 +1,11 @@
 {
-  "subtitle": "Từ tháng 11 năm 2026, SWIFT CBPR+ sẽ từ chối các địa chỉ không cấu trúc",
   "locale": "vi_VN",
+  "banner": "https://cloudcdn.pro/stocks/images/pacs008-deadline-banner.webp",
+  "language": "vi-VN",
+  "title": "ISO 20022 pacs.008: hạn chót địa chỉ có cấu trúc",
   "date": "May 12, 2026",
   "keywords": "ISO 20022, pacs.008, CBPR+, SWIFT, địa chỉ có cấu trúc, thanh toán xuyên biên giới, tuân thủ, 2026",
-  "title": "ISO 20022 pacs.008: hạn chót địa chỉ có cấu trúc",
-  "language": "vi-VN",
-  "banner": "https://cloudcdn.pro/stocks/images/pacs008-deadline-banner.webp",
+  "subtitle": "Từ tháng 11 năm 2026, SWIFT CBPR+ sẽ từ chối các địa chỉ không cấu trúc",
   "description": "Từ tháng 11 năm 2026, SWIFT CBPR+ từ chối địa chỉ bưu chính không có cấu trúc trong tin nhắn thanh toán xuyên biên giới. Sáu tháng nữa, 65% pacs.008 vẫn không tuân thủ.",
   "banner_alt": "Sơ đồ địa chỉ có cấu trúc trong tin nhắn ISO 20022"
 }

@@ -1,11 +1,11 @@
 {
-  "description": "Bitcoin: un sistema di contante elettronico peer-to-peer (P2P ECS) capace di rivoluzionare il modo in cui le persone effettuano transazioni online.",
-  "locale": "it_IT",
-  "title": "Bitcoin: bilancio dell'anno della prima criptovaluta",
   "date": "January 1, 2018",
+  "locale": "it_IT",
+  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
   "language": "it-IT",
   "banner_alt": "Un mucchio di monete d'oro e d'argento su un tavolo",
-  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
-  "subtitle": "Un sistema di pagamento elettronico peer-to-peer che ha ridefinito il denaro",
-  "keywords": "Bitcoin, criptovaluta, blockchain, P2P, doppia spesa, mining, proof-of-work, ETF, Satoshi Nakamoto, finanza decentralizzata"
+  "keywords": "Bitcoin, criptovaluta, blockchain, P2P, doppia spesa, mining, proof-of-work, ETF, Satoshi Nakamoto, finanza decentralizzata",
+  "description": "Bitcoin: un sistema di contante elettronico peer-to-peer (P2P ECS) capace di rivoluzionare il modo in cui le persone effettuano transazioni online.",
+  "title": "Bitcoin: bilancio dell'anno della prima criptovaluta",
+  "subtitle": "Un sistema di pagamento elettronico peer-to-peer che ha ridefinito il denaro"
 }

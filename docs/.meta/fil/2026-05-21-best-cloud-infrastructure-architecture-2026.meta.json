@@ -1,11 +1,11 @@
 {
-  "title": "أفضل معمارية بنية تحتية سحابية في 2026: مخطّط AI-native ومتعدّد السحابة وواعٍ بالكم للخدمات المالية",
-  "language": "fil-PH",
   "banner_alt": "مخطّط معمارية سحابة بستّ ركائز لـ 2026 — AI-native، multi-cloud، serverless، edge، DevSecOps وتصميم مستدام، مع طبقة بحوث الحافة CloudCDN",
-  "subtitle": "تبلورت معمارية السحابة حول ستّ ركائز وسؤال استراتيجي للبنوك: استهلاك السحابة أم تصميمها — تحت ضغطٍ متقارب من agentic commerce، و agentic unit economics، ومخاطر الكم harvest-now-decrypt-later، وأمن MCP والعدوى الخوارزمية، والهوية التشفيرية للوكلاء، وممتلكاتٍ قديمة لا تزال تستهلك 70-75% من إنفاق IT في الخدمات المالية.",
-  "locale": "fil_PH",
+  "language": "fil-PH",
+  "keywords": "معمارية السحابة 2026، بنية تحتية AI-native، multi-cloud، serverless، edge computing، WebAssembly، Wasm، DevSecOps، مركز بياناتٍ مستدام، التبريد السائل، AWS Bedrock، Google Vertex AI، Azure OpenAI Service، agentic commerce، أسراب متعدّدة الوكلاء، agentic unit economics، FinOps وكيلي، الهوية التشفيرية للوكلاء، SPIFFE، SPIRE، العدوى الخوارزمية، gravity البيانات، FinOps egress، HPC، تخزين GPU، continuous treasury، السيولة دون حدود، المدفوعات في الوقت الفعلي، توليد البيانات الاصطناعية، confidential computing، JPMorgan multi-cloud، تحديث Citi، graph neural networks، احتيال deepfake، harvest now decrypt later، HNDL، التشفير ما بعد الكمي، crypto-agility، أمن MCP، prompt injection، هجمات سلسلة التوريد، CloudCDN، Cloudflare Workers، Durable Objects، WCAG-AA، Sebastien Rousseau",
   "banner": "https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp",
-  "date": "May 21, 2026",
   "description": "بلورت معمارية السحابة في 2026 حول ستّ ركائز: بنية تحتية AI-native، multi-cloud ذكي، تصميم serverless-first مع WebAssembly في الحافة، edge computing، DevSecOps آلي مع crypto-agility، وعمليات مستدامة عالية الكثافة. للبنوك، السؤال لم يعد استهلاك السحابة بل تصميمها — تحت ضغطٍ متقارب من agentic commerce، و agentic unit economics، ومخاطر الكم harvest-now-decrypt-later، وأمن MCP والعدوى الخوارزمية، والهوية التشفيرية للوكلاء، ومتطلّبات continuous treasury، و EU AI Act.",
-  "keywords": "معمارية السحابة 2026، بنية تحتية AI-native، multi-cloud، serverless، edge computing، WebAssembly، Wasm، DevSecOps، مركز بياناتٍ مستدام، التبريد السائل، AWS Bedrock، Google Vertex AI، Azure OpenAI Service، agentic commerce، أسراب متعدّدة الوكلاء، agentic unit economics، FinOps وكيلي، الهوية التشفيرية للوكلاء، SPIFFE، SPIRE، العدوى الخوارزمية، gravity البيانات، FinOps egress، HPC، تخزين GPU، continuous treasury، السيولة دون حدود، المدفوعات في الوقت الفعلي، توليد البيانات الاصطناعية، confidential computing، JPMorgan multi-cloud، تحديث Citi، graph neural networks، احتيال deepfake، harvest now decrypt later، HNDL، التشفير ما بعد الكمي، crypto-agility، أمن MCP، prompt injection، هجمات سلسلة التوريد، CloudCDN، Cloudflare Workers، Durable Objects، WCAG-AA، Sebastien Rousseau"
+  "title": "أفضل معمارية بنية تحتية سحابية في 2026: مخطّط AI-native ومتعدّد السحابة وواعٍ بالكم للخدمات المالية",
+  "locale": "fil_PH",
+  "subtitle": "تبلورت معمارية السحابة حول ستّ ركائز وسؤال استراتيجي للبنوك: استهلاك السحابة أم تصميمها — تحت ضغطٍ متقارب من agentic commerce، و agentic unit economics، ومخاطر الكم harvest-now-decrypt-later، وأمن MCP والعدوى الخوارزمية، والهوية التشفيرية للوكلاء، وممتلكاتٍ قديمة لا تزال تستهلك 70-75% من إنفاق IT في الخدمات المالية.",
+  "date": "May 21, 2026"
 }

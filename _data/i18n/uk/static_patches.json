@@ -102,7 +102,7 @@
       "<p class=\"newsroom-excerpt\">Генеративний ШІ, мультимодальні LLM, голосові й мовленнєві моделі — і як вони перебудовують банківські операції, обслуговування клієнтів та інженерію продуктів у провідних інституціях.</p>"
     ],
     [
-      "<p class=\"newsroom-excerpt\">Open-source Rust libraries I author and травняntain:[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Open-source Rust libraries I author and maintain:[^<]+</p>",
       "<p class=\"newsroom-excerpt\">Бібліотеки Rust з відкритим кодом, які я створюю та підтримую: журналування, генерація коду, дата й час, криптографічні примітиви, KEM на основі Kyber та генератор статичних сайтів на Rust.</p>"
     ],
     [
@@ -307,7 +307,7 @@
     ],
     [
       "(<summary[^>]*>À quelle fréquence publiez-vous de nouveaux articles \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Irrégulièrement, par préférence pour la qualité plutôt que la cadence. Les notes de recherche brèves paraissent toutes les quelques seтравняnes lorsqu\\'une avancée technique le justifie. Les livres blancs sont publiés en lien avec des cycles industriels (par exemple : calendriers réglementaires, congrès EPAA).</p></section>"
+      "\\1<section class=\"qa-a\"><p>Irrégulièrement, par préférence pour la qualité plutôt que la cadence. Les notes de recherche brèves paraissent toutes les quelques semaines lorsqu\\'une avancée technique le justifie. Les livres blancs sont publiés en lien avec des cycles industriels (par exemple : calendriers réglementaires, congrès EPAA).</p></section>"
     ],
     [
       ">About EPAA</p>",
@@ -335,7 +335,7 @@
     ],
     [
       ">Quantum computing threatens the cryptographic foundations[^<]+",
-      ">L'informatique quantique menace les fondations cryptographiques des services financiers. Les paiements — du temps réel au règlement transfrontalier — reposent sur des protections que l'informatique quantique finira par rendre obsolètes. Ce livre blanc EPAA expose pourquoi le secteur doit agir dès травняntenant."
+      ">L'informatique quantique menace les fondations cryptographiques des services financiers. Les paiements — du temps réel au règlement transfrontalier — reposent sur des protections que l'informatique quantique finira par rendre obsolètes. Ce livre blanc EPAA expose pourquoi le secteur doit agir dès maintenant."
     ],
     [
       "2024 &middot; Independent Research &middot;",
@@ -399,7 +399,7 @@
     ],
     [
       "(<summary[^>]*>À qui s’adressent ces publications \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Directeurs des paiements, RSSI et architectes seniors dans les banques de premier rang, banques centrales, opérateurs de systèmes de paiement et propriétaires de schémas. La recherche appliquée s\\'adresse aux ingénieurs et responsables produit qui bâtissent sur les grands modèles de langage, l\\'IA on-device et la cryptographie résistante au quantique. Chaque article suppose une connaissance du doтравняne et omet les rappels qu\\'un professionnel en exercice possède déjà.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Directeurs des paiements, RSSI et architectes seniors dans les banques de premier rang, banques centrales, opérateurs de systèmes de paiement et propriétaires de schémas. La recherche appliquée s\\'adresse aux ingénieurs et responsables produit qui bâtissent sur les grands modèles de langage, l\\'IA on-device et la cryptographie résistante au quantique. Chaque article suppose une connaissance du domain et omet les rappels qu\\'un professionnel en exercice possède déjà.</p></section>"
     ],
     [
       "(<summary[^>]*>Puis-je commander une étude ou inviter à une conférence \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
@@ -470,11 +470,11 @@
       ">Дослідити інструменти ШІ <"
     ],
     [
-      ">Authored & травняntained<",
+      ">Authored & maintained<",
       ">Створено та підтримуються<"
     ],
     [
-      ">Authored &amp; травняntained<",
+      ">Authored &amp; maintained<",
       ">Створено та підтримуються<"
     ],
     [
@@ -659,7 +659,7 @@
     ],
     [
       "(<summary[^>]*>Ces projets sont-ils prêts pour la production \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Cela dépend du projet. Les bibliothèques marquées <em>v1.x</em> sont stabilisées et testées en charge ; les pré-v1 sont des bases solides травняs peuvent encore évoluer. Le README de chaque dépôt précise le statut actuel ; si vous avez besoin d\\'une garantie spécifique pour un usage en production, <a href=\"/uk/kontakt/\">contactez-moi</a>.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Cela dépend du projet. Les bibliothèques marquées <em>v1.x</em> sont stabilisées et testées en charge ; les pré-v1 sont des bases solides mais peuvent encore évoluer. Le README de chaque dépôt précise le statut actuel ; si vous avez besoin d\\'une garantie spécifique pour un usage en production, <a href=\"/uk/kontakt/\">contactez-moi</a>.</p></section>"
     ],
     [
       "(<summary[^>]*>Comment puis-je contribuer ou signaler un problème \\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
@@ -946,7 +946,7 @@
       ">Open source<"
     ],
     [
-      ">Authored & травняntained<",
+      ">Authored & maintained<",
       ">Створено та підтримуються<"
     ],
     [

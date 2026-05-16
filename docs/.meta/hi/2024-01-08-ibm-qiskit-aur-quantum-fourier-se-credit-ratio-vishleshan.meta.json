@@ -1,11 +1,11 @@
 {
-  "language": "hi-IN",
-  "date": "January 08, 2024",
-  "title": "IBM Qiskit और क्वांटम-फूरियर-ट्रांसफ़ॉर्म से क्रेडिट-अनुपात-विश्लेषण का अनुकूलन",
-  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
-  "subtitle": "बैंकिंग जोखिम-मॉडलिंग पर एक व्यावहारिक क्वांटम प्रयोग",
-  "keywords": "Qiskit, IBM, क्वांटम, QFT, क्रेडिट, बैंकिंग, जोखिम, Python, अल्गोरिदम, post-quantum",
   "locale": "hi_IN",
   "description": "IBM Qiskit और क्वांटम-फूरियर-ट्रांसफ़ॉर्म पर आधारित क्रेडिट-अनुपात-विश्लेषण का एक व्यावहारिक प्रदर्शन।",
+  "date": "January 08, 2024",
+  "language": "hi-IN",
+  "subtitle": "बैंकिंग जोखिम-मॉडलिंग पर एक व्यावहारिक क्वांटम प्रयोग",
+  "title": "IBM Qiskit और क्वांटम-फूरियर-ट्रांसफ़ॉर्म से क्रेडिट-अनुपात-विश्लेषण का अनुकूलन",
+  "keywords": "Qiskit, IBM, क्वांटम, QFT, क्रेडिट, बैंकिंग, जोखिम, Python, अल्गोरिदम, post-quantum",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
   "banner_alt": "एक क्वांटम-सर्किट-आरेख"
 }
