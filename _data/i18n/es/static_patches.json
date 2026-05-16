@@ -71,23 +71,23 @@
     ],
     [
       "<h3><a href=\"/fr/topics/post-quantum-cryptography/[^\"]+\">Post-Quantum Cryptography</a></h3>",
-      "<h3><a href=\"/es/topics/post-quantum-cryptography/index.html\">Criptografía postcuántica</a></h3>"
+      "<h3><a href=\"/es/temas/post-quantum-cryptography/index.html\">Criptografía postcuántica</a></h3>"
     ],
     [
       "<h3><a href=\"/fr/topics/iso-20022-payments/[^\"]+\">ISO 20022 &amp; Payments</a></h3>",
-      "<h3><a href=\"/es/topics/iso-20022-payments/index.html\">ISO 20022 &amp; Pagos</a></h3>"
+      "<h3><a href=\"/es/temas/iso-20022-payments/index.html\">ISO 20022 &amp; Pagos</a></h3>"
     ],
     [
       "<h3><a href=\"/fr/topics/applied-ai-banking/[^\"]+\">Applied AI in Banking</a></h3>",
-      "<h3><a href=\"/es/topics/applied-ai-banking/index.html\">IA aplicada a la banca</a></h3>"
+      "<h3><a href=\"/es/temas/applied-ai-banking/index.html\">IA aplicada a la banca</a></h3>"
     ],
     [
       "<h3><a href=\"/fr/topics/rust-open-source/[^\"]+\">Rust &amp; Open Source</a></h3>",
-      "<h3><a href=\"/es/topics/rust-open-source/index.html\">Rust &amp; Código abierto</a></h3>"
+      "<h3><a href=\"/es/temas/rust-open-source/index.html\">Rust &amp; Código abierto</a></h3>"
     ],
     [
       "<h3><a href=\"/fr/topics/blockchain-digital-assets/[^\"]+\">Blockchain &amp; Digital Assets</a></h3>",
-      "<h3><a href=\"/es/topics/blockchain-digital-assets/index.html\">Blockchain &amp; Activos digitales</a></h3>"
+      "<h3><a href=\"/es/temas/blockchain-digital-assets/index.html\">Blockchain &amp; Activos digitales</a></h3>"
     ],
     [
       "<p class=\"newsroom-excerpt\">Lattice-based cryptography, NIST PQC standards, quantum-safe payments,[^<]+</p>",
@@ -395,7 +395,7 @@
     ],
     [
       "(<summary[^>]*>¿Puedo citar estos documentos\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Sí. Las citas breves con atribución son bienvenidas en el marco del fair use. Para las publicaciones de la EPAA, cite a la EPAA como editora junto con el grupo de trabajo, el año y la URL del PDF. Para los informes de investigación independientes, cite así: <em>Rousseau, S. (año). Título. Autopublicación.</em> con la URL canónica. Para reproducir una figura o un pasaje extenso, <a href=\"/es/contact/\">póngase en contacto</a> previamente.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Sí. Las citas breves con atribución son bienvenidas en el marco del fair use. Para las publicaciones de la EPAA, cite a la EPAA como editora junto con el grupo de trabajo, el año y la URL del PDF. Para los informes de investigación independientes, cite así: <em>Rousseau, S. (año). Título. Autopublicación.</em> con la URL canónica. Para reproducir una figura o un pasaje extenso, <a href=\"/es/contacto/\">póngase en contacto</a> previamente.</p></section>"
     ],
     [
       "(<summary[^>]*>¿A quién van dirigidas estas publicaciones\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
@@ -403,7 +403,7 @@
     ],
     [
       "(<summary[^>]*>¿Puedo encargar un estudio o invitarle a una conferencia\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Sí — caso a caso, con selección previa. Los encargos versan sobre pagos mayoristas, migración a ISO 20022, criptografía postcuántica para los servicios financieros e IA aplicada a la banca. Las intervenciones en conferencias sectoriales, foros de bancos centrales y mesas redondas de reguladores se estudian caso a caso. Utilice el <a href=\"/es/contact/\">formulario de contacto</a> indicando el tema, la audiencia y el calendario.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Sí — caso a caso, con selección previa. Los encargos versan sobre pagos mayoristas, migración a ISO 20022, criptografía postcuántica para los servicios financieros e IA aplicada a la banca. Las intervenciones en conferencias sectoriales, foros de bancos centrales y mesas redondas de reguladores se estudian caso a caso. Utilice el <a href=\"/es/contacto/\">formulario de contacto</a> indicando el tema, la audiencia y el calendario.</p></section>"
     ],
     [
       "(<summary[^>]*>¿Cómo seguir las nuevas publicaciones\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
@@ -659,7 +659,7 @@
     ],
     [
       "(<summary[^>]*>¿Están estos proyectos listos para producción\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Depende del proyecto. Las bibliotecas marcadas como <em>v1.x</em> están estabilizadas y probadas bajo carga; las pre-v1 son bases sólidas pero pueden evolucionar. El README de cada repositorio detalla el estado actual; si necesita una garantía específica para uso en producción, <a href=\"/es/contact/\">póngase en contacto</a>.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Depende del proyecto. Las bibliotecas marcadas como <em>v1.x</em> están estabilizadas y probadas bajo carga; las pre-v1 son bases sólidas pero pueden evolucionar. El README de cada repositorio detalla el estado actual; si necesita una garantía específica para uso en producción, <a href=\"/es/contacto/\">póngase en contacto</a>.</p></section>"
     ],
     [
       "(<summary[^>]*>¿Cómo puedo contribuir o reportar un problema\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
@@ -671,7 +671,7 @@
     ],
     [
       "(<summary[^>]*>¿Ofrece soporte comercial o consultoría\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
-      "\\1<section class=\"qa-a\"><p>Sí, con selección previa. Los encargos versan sobre migración a ISO&nbsp;20022, hojas de ruta de migración postcuántica e IA aplicada a los servicios financieros. <a href=\"/es/contact/\">Contacte conmigo</a> con un brief breve, su calendario y las restricciones aplicables.</p></section>"
+      "\\1<section class=\"qa-a\"><p>Sí, con selección previa. Los encargos versan sobre migración a ISO&nbsp;20022, hojas de ruta de migración postcuántica e IA aplicada a los servicios financieros. <a href=\"/es/contacto/\">Contacte conmigo</a> con un brief breve, su calendario y las restricciones aplicables.</p></section>"
     ],
     [
       "(<summary[^>]*>¿Cómo seguir las nuevas publicaciones\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
@@ -823,7 +823,7 @@
     ],
     [
       "<a class=\"pill ghost\" href=\"/fr/contact/\">Get in touch</a>",
-      "<a class=\"pill ghost\" href=\"/es/contact/\">Contactar</a>"
+      "<a class=\"pill ghost\" href=\"/es/contacto/\">Contactar</a>"
     ],
     [
       ">Get in touch</a>",
