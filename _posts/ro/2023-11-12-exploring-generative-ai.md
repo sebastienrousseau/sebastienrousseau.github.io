@@ -1,0 +1,207 @@
+---
+title: "Generative AI in 2023: How It Works, Where It Lands"
+subtitle: "Applied artificial intelligence in banking and financial services."
+description: "Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking."
+date: "Nov 12, 2023"
+language: "ro-RO"
+locale: "ro_RO"
+banner: "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
+banner_alt: "AI, Artificial Intelligence concept,3d rendering,conceptual image"
+keywords: "Generative AI, technology, future, impact, ethics, synergies, innovation, creativity, transformation, evolution"
+---
+
+![AI, Artificial Intelligence concept,3d rendering,conceptual image](https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp).class="img-fluid clearfix"
+
+---
+
+> **TL;DR.** Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.
+>
+> **Concluzii cheie**
+>
+> - DRAFT translation: this article is a Română stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.
+> - Source title: *Generative AI in 2023: How It Works, Where It Lands*.
+> - Source subtitle: *Applied artificial intelligence in banking and financial services.*.
+> - Editorial note: replace this block with hand-translated copy before flipping `active=True` for ro in `scripts/_lang_registry.py`.
+
+---
+
+<!-- lead-start -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Idea.</strong> The journey of generative AI began with simple models that could barely string together coherent sentences.</li>
+  <li><strong>Impact.</strong> Generative AI is not just an academic curiosity; it's a transformative force across multiple industries.</li>
+  <li><strong>Incentives.</strong> The development of generative AI is largely driven by economic incentives.</li>
+  <li><strong>Understanding the Mechanics of Generative AI.</strong> Generative Artificial Intelligence is a cutting-edge field of machine learning that enables computers to produce content indistinguishable from that created by humans.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a>, <a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a>, <a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">AI Trends 2024: Insights and Predictions for the Future</a>.</p>
+</aside>
+<!-- lead-end -->
+
+![AI, Artificial Intelligence concept,3d rendering,conceptual image](https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp).class=\"img-fluid clearfix\"
+
+## Insight
+
+### Understanding the Mechanics of Generative AI
+
+#### Introduction to Generative AI
+
+Generative Artificial Intelligence is a cutting-edge field of machine learning that enables computers to produce content indistinguishable from that created by humans. This technology is a subset of AI that shifts from reactive responses to proactive creation. While AI tells you the weather, generative AI could write a poem about a rainy day, using metaphors and emotions that feel human.
+
+Generative AI is about predicting the next sequence in a pattern, such as words, pixels, or notes. Generative AI's power is that it learns from data to make new creations that are different from others.
+
+#### The Science Behind Generative AI
+
+To understand how generative AI like ChatGPT works, we must first delve into the neural network architectures that power it. At the pinnacle of these architectures is the transformer model, a type of neural network that is particularly adept at handling sequential data. Unlike its predecessors, the transformer does not process data in order, allowing it to look at all parts of the data simultaneously. This is known as the attention mechanism, which lets the model weigh the importance of different parts of the input data when predicting an output.
+
+Training these models involves feeding them an enormous corpus of text. During training, the model predicts what comes next in a sentence and receives feedback on its predictions. Over time, it adjusts its internal parameters to improve its accuracy. Unsupervised learning doesn't need labelled data, allowing the model to learn from any text.
+
+#### Differentiation from Other AI Systems
+
+One might wonder how generative AI differs fundamentally from the expert systems of the past. Traditional AI systems rely on a set of rules crafted by humans. They are deterministic, predictable, and limited by the scenarios they are programmed to handle. Generative AI, however, is probabilistic and can handle uncertainty and ambiguity in a way that mimics human thought processes.
+
+While expert systems can tell if a sentence is grammatically correct, generative AI can write an article imbued with creativity and nuance. This shift from rule-based systems to models that generate new content has opened up possibilities that were previously the realm of science fiction.
+
+## Idea
+
+### The Evolution and Advances in Generative AI
+
+#### Historical Perspective
+
+The journey of generative AI began with simple models that could barely string together coherent sentences. Initially, these models were based on rules and decision trees, which made them rigid and limited to the knowledge explicitly coded into them. However, the advent of machine learning, and more recently deep learning, brought about a paradigm shift.
+
+The historical evolution of generative AI can be traced from early symbolic AI to today's neural networks. Each stage brought us closer to the goal of creating machines that could truly understand and generate human-like content.
+
+#### Latest Models
+
+Today, Generative Pre-trained Transformers 4 (GPT-4) and later models have raised the bar for what can be achieved with generative AI. These models can write essays like humans, make complex computer code, and more.
+
+These advancements are a result of both architectural innovations and the exponential increase in the amount of data and computing power available. Transformer models are revolutionary because they capture input context.
+
+#### Comparison with Previous Technologies
+
+The contrast between generative AI and its predecessors is stark. Where older models might struggle with ambiguity and context, modern generative AI thrives on it. The robustness of these models comes not only from their architecture but also from their training methodologies. They train on datasets with different topics and styles, so they generate content that is both accurate and varied.
+
+## Impact
+
+### The Broad Implications of Generative AI
+
+#### Influence on Various Sectors
+
+Generative AI is not just an academic curiosity; it's a transformative force across multiple industries. In the creative sectors, such as music and literature, AI has begun to blur the lines between human and machine creativity.
+
+AI has also improved customer service in businesses, giving human-like responses to customers' questions. In healthcare, generative models are being used to predict molecular structures.
+
+Gen AI can be used for any tasks, like content creation, translation, game development, and more.
+
+#### Ethical and Societal Considerations
+
+With the rise of generative AI, ethical considerations have come to the forefront. The potential for deepfakes, misinformation, and the displacement of jobs traditionally done by humans are real concerns that society must address. There is also the question of ownership and copyright when content is generated by AI.
+
+The societal impact of generative AI extends beyond these concerns, though. There's also potential for change, such as personalised education programmes that adapt to each student's learning style or AI that can bridge language barriers.
+
+#### Long-Term Outlook
+
+Looking ahead, the long-term impact of generative AI hinges on how we choose to integrate it into our lives and control its development. The potential for this technology to benefit humanity is enormous, but it requires careful management and regulation.
+
+Future advancements in generative AI could lead to more personalised and engaging interactions with technology, creating experiences tailored to individual preferences and needs. However, this future is contingent upon our ability to navigate the ethical challenges and to develop AI in a responsible and controlled manner.
+
+## Incentives
+
+### The Driving Forces Behind Generative AI Development
+
+#### Economic Incentives
+
+The development of generative AI is largely driven by economic incentives. Businesses are always on the lookout for ways to improve efficiency and reduce costs, and AI offers both. With its ability to automate complex tasks and generate creative solutions, generative AI can provide significant cost savings and productivity boosts.
+
+AI-generated content can be tailored to different audiences in marketing, software development, and more. This can reduce the time and cost of bringing new software to market.
+
+#### Innovation and Competition
+
+The field of generative AI is also propelled by the desire to innovate and gain a competitive edge. As AI technology becomes a crucial differentiator in the market, companies are investing heavily in research and development. This competitive drive spurs continuous improvements in AI capabilities, leading to more advanced and capable systems.
+
+The race to achieve AI supremacy is not just among companies but also among nations, which view leadership in AI technology as a strategic advantage.
+
+#### Societal Benefits
+
+Beyond the economic and competitive advantages, there are powerful societal incentives driving the development of generative AI. This technology has the potential to address some of the most pressing challenges facing the world today, from climate change to healthcare.
+
+Generative AI could, for example, model climate systems to predict changes and offer solutions or help with drug discovery by predicting interactions between molecules.
+
+## Conclusion
+
+### Embracing the Future of Generative AI
+
+As we approach a new era in technology, generative AI is a beacon of innovation, mimicking the mind's ingenuity. From its humble beginnings to today's sophisticated algorithms, generative AI has transcended its role as a tool.
+
+Generative AI's changes to what machines can do and how we use them have a big impact on sectors like technology and law. The ripples of this impact extend beyond economic gains and competitive edges; they touch the very fabric of societal advancement and ethical considerations.
+
+The incentives driving the development of generative AI paint a picture of a future filled with potential. Yet, with great power comes the imperative for responsible stewardship. As we harness this technology to solve complex problems and inspire unprecedented creativity, we must also navigate the moral landscapes it unveils.
+
+Generative AI holds a mirror to our collective consciousness, challenging us to reflect on the kind of future we wish to create. It is not just about what AI can do for us, but what we aspire to achieve with AI as our partner. In this partnership lies the potential for a synergy that could elevate humanity to new heights of accomplishment.
+
+As we forge ahead, let us embrace generative AI with a balanced perspective, harnessing its capabilities with caution and foresight. By doing so, we can guarantee that this remarkable technology serves as a cornerstone for an inclusive, progressive, and enlightened tomorrow.
+
+### Navigating the Cutting Edge: Latest Advancements in Generative AI
+
+The field of generative AI is constantly evolving, with new advancements emerging at a rapid pace. Here are some of the latest breakthroughs that are shaping the future of this transformative technology:
+
+#### 1. GPT-4 and Beyond: Unleashing the Power of Large Language Models
+
+The development of large language models (LLM) has been a major driver of innovation in generative AI. GPT-4, the latest iteration of OpenAI's groundbreaking LLM, has demonstrated remarkable capabilities, including generating human-quality text, translating languages, and writing different kinds of creative content. Other LLMs, such as Google AI's Meena and LaMDA, are also pushing the boundaries of what's possible with generative AI.
+
+#### 2. Generative Adversarial Networks (GANs): Refining Creativity and Realism
+
+GANs have become a powerful tool for generating realistic and creative content. These models consist of two neural networks that compete against each other, resulting in the creation of increasingly sophisticated images, videos, and audio. GANs have been used to generate art, design fashion, and even create deepfakes.
+
+#### 3. Autoencoders and Diffusion Models: Unveiling Hidden Patterns and Structures
+
+Autoencoders and diffusion models are two emerging techniques that are gaining traction in generative AI. Autoencoders learn to compress and reconstruct data, allowing them to identify underlying patterns and structures. Diffusion models, on the other hand, start with a noisy representation of data and gradually refine it to produce a high-quality output.
+
+#### 4. Multimodal Generative AI: Bridging the Gap Between Senses
+
+Multimodal generative AI aims to bridge the gap between different senses, such as sight, sound, and text. This technology has the potential to create immersive experiences that blur the lines between the digital and physical worlds. For instance, multimodal generative models could generate music that matches a specific image or create a virtual environment that responds to natural language commands.
+
+#### 5. Explainable AI: Unravelling the Black Box
+
+As generative AI models become increasingly complex, there is a growing need for explainable AI (XAI) techniques. XAI helps to explain how these models make decisions, providing transparency and accountability. This is crucial for building trust in generative AI and making sure that it is used responsibly and ethically.
+
+These advancements represent just a glimpse into the ever-evolving landscape of generative AI. As research continues and computational power increases, we can expect even more groundbreaking developments that will further shape the future of this transformative technology.
+
+### The Promise of Open-Source AI: Fostering Innovation and Shaping a Brighter Future
+
+The open-source AI movement has seen tremendous growth in recent years. Numerous projects and initiatives are leveraging cutting-edge AI technologies, which were previously only available to large companies and research institutions. Now, however, anyone can access and contribute to this field.
+
+This movement has been a driving force behind the remarkable progress in generative AI, breaking down barriers to access and fostering collaboration among researchers and developers. This synergy has enabled them to undertake groundbreaking projects, creating powerful tools and frameworks that are redefining the future of generative AI technology.
+
+The development of large language models (LLMs), such as GPT-3 and LaMDA, stands as a testament to the power of open-source AI. These models have demonstrated exceptional capabilities in generating human-quality text, translating languages, and crafting diverse creative content. Their availability has ignited innovation across various domains, from creative writing and marketing to education and healthcare.
+
+Open-source AI is also playing a pivotal role in the advancement of other AI technologies, including natural language processing (NLP), computer vision, and robotics. These advancements herald a future where AI is more accessible, adaptable, and seamlessly integrated into our daily lives.
+
+The promising future of open-source AI hinges on its ability to foster collaboration, transparency, and accelerated innovation. By openly sharing knowledge and resources, researchers and developers can synergize their efforts to tackle complex challenges and propel the field of AI forward. Open-source AI provides transparency and facilitates public review and ethical considerations, ensuring the responsible use of this technology for the benefit of society.
+
+As open-source AI continues to evolve, it holds the potential to revolutionise industries and transform our world. Open-source AI is key to a future where technology helps humanity and benefits everyone. This comes from personalised education and healthcare, creative expression and scientific discovery.
+
+![divider][divider].class=\"m-10 w-100\"
+
+In closing, I hope this article has sparked your interest in the exciting world of generative AI. If you're eager to dive deeper into this transformative technology or have any questions, please don't hesitate to reach out to me on [LinkedIn ⧉][LinkedIn] or via the [contact page][contact].
+
+Thank you again for your time and I look forward to hearing from you.
+
+[contact]: /contact/index.html "Contact"
+[divider]: https://cloudcdn.pro/clients/common/images/elements/divider.svg "Divider"
+[linkedin]: https://www.linkedin.com/in/sebastienrousseau/ "Sebastien Rousseau on LinkedIn"
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-15">2026-05-15</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html" class="related-media" aria-label="EU's AI Act: Pioneering Ethical AI Regulation Worldwide" tabindex="-1"><img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/index.html">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html" class="related-media" aria-label="AI Prompt Engineering 2024: Techniques That Work" tabindex="-1"><img alt="A man analysing data on screens" src="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/index.html">AI Prompt Engineering 2024: Techniques That Work</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html" class="related-media" aria-label="AI Trends 2024: Insights and Predictions for the Future" tabindex="-1"><img alt="Drone View of London" src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html">AI Trends 2024: Insights and Predictions for the Future</a></h3><p><time datetime="2024-01-01">2024-01-01</time></p></footer></article>
+</div>
+</aside>
+<!-- enrich-end -->

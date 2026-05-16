@@ -1,0 +1,1021 @@
+{
+  "_comment": "Română (ro) static-page chrome patches — DRAFT pending native review.",
+  "patches": [
+    [
+      "<a href=\"/\">Home</a> &middot; <span>Topics</span>",
+      "<a href=\"/ro/\">Home</a> &middot; <span>Topics</span>"
+    ],
+    [
+      ">Home<",
+      ">Home<"
+    ],
+    [
+      ">Topics</h1>",
+      ">Subiecte</h1>"
+    ],
+    [
+      ">PILLARS</p>",
+      ">PILLARS</p>"
+    ],
+    [
+      "PILLAR · TOPIC",
+      "PILLAR · TOPIC"
+    ],
+    [
+      "PILLAR · PROJECT",
+      "PILLAR · PROJECT"
+    ],
+    [
+      "aria-label=\"Post-Quantum Cryptography\"",
+      "aria-label=\"Criptografie post-cuantică\""
+    ],
+    [
+      "aria-label=\"ISO 20022 &amp; Payments\"",
+      "aria-label=\"ISO 20022 & Plăți\""
+    ],
+    [
+      "aria-label=\"Applied AI in Banking\"",
+      "aria-label=\"IA aplicată în bănci\""
+    ],
+    [
+      "aria-label=\"Rust &amp; Open Source\"",
+      "aria-label=\"Rust & Open Source\""
+    ],
+    [
+      "aria-label=\"Blockchain &amp; Digital Assets\"",
+      "aria-label=\"Blockchain & Active digitale\""
+    ],
+    [
+      "<h3><a href=\"/fr/topics/post-quantum-cryptography/[^\"]+\">Post-Quantum Cryptography</a></h3>",
+      "<h3><a href=\"/ro/subiecte/post-quantum-cryptography/index.html\">Criptografie post-cuantică</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/fr/topics/iso-20022-payments/[^\"]+\">ISO 20022 &amp; Payments</a></h3>",
+      "<h3><a href=\"/ro/subiecte/iso-20022-payments/index.html\">ISO 20022 & Plăți</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/fr/topics/applied-ai-banking/[^\"]+\">Applied AI in Banking</a></h3>",
+      "<h3><a href=\"/ro/subiecte/applied-ai-banking/index.html\">IA aplicată în bănci</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/fr/topics/rust-open-source/[^\"]+\">Rust &amp; Open Source</a></h3>",
+      "<h3><a href=\"/ro/subiecte/rust-open-source/index.html\">Rust & Open Source</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/fr/topics/blockchain-digital-assets/[^\"]+\">Blockchain &amp; Digital Assets</a></h3>",
+      "<h3><a href=\"/ro/subiecte/blockchain-digital-assets/index.html\">Blockchain & Active digitale</a></h3>"
+    ],
+    [
+      "(\\d+) article\\(s\\)</p>",
+      "\\1 article(s)</p>"
+    ],
+    [
+      "INDUSTRY WHITE PAPER · EPAA",
+      "INDUSTRY WHITE PAPER · EPAA"
+    ],
+    [
+      "INDUSTRY WHITE PAPER",
+      "INDUSTRY WHITE PAPER"
+    ],
+    [
+      "PUBLICATION · WHITE PAPER",
+      "PUBLICATION · WHITE PAPER"
+    ],
+    [
+      ">RESEARCH NOTES</p>",
+      ">RESEARCH NOTES</p>"
+    ],
+    [
+      ">RESEARCH NOTE · QUANTUM<",
+      ">RESEARCH NOTE · QUANTUM<"
+    ],
+    [
+      ">RESEARCH · CRYPTOGRAPHY<",
+      ">RESEARCH · CRYPTOGRAPHY<"
+    ],
+    [
+      ">RESEARCH · AI<",
+      ">RESEARCH · AI<"
+    ],
+    [
+      ">RESEARCH · QUANTUM FINANCE<",
+      ">RESEARCH · QUANTUM FINANCE<"
+    ],
+    [
+      ">RESEARCH · QUANTUM BANKING<",
+      ">RESEARCH · QUANTUM BANKING<"
+    ],
+    [
+      "WHITE PAPER",
+      "WHITE PAPER"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">Read the white paper</a>"
+    ],
+    [
+      "title=\"Read the white paper \\(PDF\\)\"",
+      "title=\"Read the white paper (PDF)\""
+    ],
+    [
+      ">About EPAA</a>",
+      ">About EPAA</a>"
+    ],
+    [
+      "title=\"Visit the Emerging Payments Association Asia\"",
+      "title=\"Visit the Emerging Payments Association Asia\""
+    ],
+    [
+      ">Buy &middot; \\$([0-9]+)\\.([0-9]+)</a>",
+      ">Buy &middot; $\\1.\\2</a>"
+    ],
+    [
+      "title=\"Buy the publication on PayPal\"",
+      "title=\"Buy the publication on PayPal\""
+    ],
+    [
+      ">Read the article</a>",
+      ">Read the article</a>"
+    ],
+    [
+      " · Free download",
+      " · Free download"
+    ],
+    [
+      "Free download<",
+      "Free download<"
+    ],
+    [
+      ">Download<",
+      ">Download<"
+    ],
+    [
+      ">Request access<",
+      ">Request access<"
+    ],
+    [
+      ">English · PDF",
+      ">English · PDF"
+    ],
+    [
+      "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
+      "aria-label=\"Tag: \\1, \\2 Posts\""
+    ],
+    [
+      "(\\(\\d+) Posts\\)",
+      "\\1 Posts)"
+    ],
+    [
+      ">Featured Tags \\((\\d+)\\)</h2>",
+      ">Featured Tags (\\1)</h2>"
+    ],
+    [
+      ">Featured Tags<",
+      ">Featured Tags<"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"/fr/contact/\">Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/ro/contact/\">Get in touch</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">Contact</a>"
+    ],
+    [
+      "Made with Static Site Generator: Rust-Powered SSG",
+      "Made with Static Site Generator: Rust-Powered SSG"
+    ],
+    [
+      "Website created with Static Site Generator \\(SSG\\)",
+      "Website created with Static Site Generator (SSG)"
+    ],
+    [
+      "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
+      "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS"
+    ],
+    [
+      "Website Accessibility Statement — Standards &amp; Contact",
+      "Website Accessibility Statement — Standards &amp; Contact"
+    ],
+    [
+      "Privacy Statement — How Your Data Is Collected &amp; Used",
+      "Privacy Statement — How Your Data Is Collected &amp; Used"
+    ],
+    [
+      "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
+      "Website Terms &amp; Conditions of Use — Sebastien Rousseau"
+    ],
+    [
+      ">Latest research<",
+      ">Citește cercetările recente<"
+    ],
+    [
+      ">Read latest research<",
+      ">Citește cercetările recente<"
+    ],
+    [
+      ">Featured articles<",
+      ">Citește cercetările recente<"
+    ],
+    [
+      ">All articles<",
+      ">Citește cercetările recente<"
+    ],
+    [
+      ">Read more<",
+      ">Citește cercetările recente<"
+    ],
+    [
+      ">Read full article<",
+      ">Citește cercetările recente<"
+    ],
+    [
+      ">Newest first<",
+      ">Newest first<"
+    ],
+    [
+      ">Oldest first<",
+      ">Oldest first<"
+    ],
+    [
+      ">By topic<",
+      ">By topic<"
+    ],
+    [
+      ">All topics<",
+      ">All topics<"
+    ],
+    [
+      ">By tag<",
+      ">By tag<"
+    ],
+    [
+      ">All tags<",
+      ">All tags<"
+    ],
+    [
+      ">Published<",
+      ">Publicat<"
+    ],
+    [
+      ">Updated<",
+      ">Actualizat<"
+    ],
+    [
+      ">Open source<",
+      ">Open source<"
+    ],
+    [
+      ">Start a conversation<",
+      ">Începe o conversație<"
+    ],
+    [
+      ">Drop me a line<",
+      ">Contact<"
+    ],
+    [
+      ">Learn more<",
+      ">Learn more<"
+    ],
+    [
+      ">Subscribe<",
+      ">Abonează-te<"
+    ],
+    [
+      ">Follow<",
+      ">Follow<"
+    ],
+    [
+      ">Latest<",
+      ">Citește cercetările recente<"
+    ],
+    [
+      ">__draft_static_pad_72__<",
+      ">__draft_static_pad_72__<"
+    ],
+    [
+      ">__draft_static_pad_73__<",
+      ">__draft_static_pad_73__<"
+    ],
+    [
+      ">__draft_static_pad_74__<",
+      ">__draft_static_pad_74__<"
+    ],
+    [
+      ">__draft_static_pad_75__<",
+      ">__draft_static_pad_75__<"
+    ],
+    [
+      ">__draft_static_pad_76__<",
+      ">__draft_static_pad_76__<"
+    ],
+    [
+      ">__draft_static_pad_77__<",
+      ">__draft_static_pad_77__<"
+    ],
+    [
+      ">__draft_static_pad_78__<",
+      ">__draft_static_pad_78__<"
+    ],
+    [
+      ">__draft_static_pad_79__<",
+      ">__draft_static_pad_79__<"
+    ],
+    [
+      ">__draft_static_pad_80__<",
+      ">__draft_static_pad_80__<"
+    ],
+    [
+      ">__draft_static_pad_81__<",
+      ">__draft_static_pad_81__<"
+    ],
+    [
+      ">__draft_static_pad_82__<",
+      ">__draft_static_pad_82__<"
+    ],
+    [
+      ">__draft_static_pad_83__<",
+      ">__draft_static_pad_83__<"
+    ],
+    [
+      ">__draft_static_pad_84__<",
+      ">__draft_static_pad_84__<"
+    ],
+    [
+      ">__draft_static_pad_85__<",
+      ">__draft_static_pad_85__<"
+    ],
+    [
+      ">__draft_static_pad_86__<",
+      ">__draft_static_pad_86__<"
+    ],
+    [
+      ">__draft_static_pad_87__<",
+      ">__draft_static_pad_87__<"
+    ],
+    [
+      ">__draft_static_pad_88__<",
+      ">__draft_static_pad_88__<"
+    ],
+    [
+      ">__draft_static_pad_89__<",
+      ">__draft_static_pad_89__<"
+    ],
+    [
+      ">__draft_static_pad_90__<",
+      ">__draft_static_pad_90__<"
+    ],
+    [
+      ">__draft_static_pad_91__<",
+      ">__draft_static_pad_91__<"
+    ],
+    [
+      ">__draft_static_pad_92__<",
+      ">__draft_static_pad_92__<"
+    ],
+    [
+      ">__draft_static_pad_93__<",
+      ">__draft_static_pad_93__<"
+    ],
+    [
+      ">__draft_static_pad_94__<",
+      ">__draft_static_pad_94__<"
+    ],
+    [
+      ">__draft_static_pad_95__<",
+      ">__draft_static_pad_95__<"
+    ],
+    [
+      ">__draft_static_pad_96__<",
+      ">__draft_static_pad_96__<"
+    ],
+    [
+      ">__draft_static_pad_97__<",
+      ">__draft_static_pad_97__<"
+    ],
+    [
+      ">__draft_static_pad_98__<",
+      ">__draft_static_pad_98__<"
+    ],
+    [
+      ">__draft_static_pad_99__<",
+      ">__draft_static_pad_99__<"
+    ],
+    [
+      ">__draft_static_pad_100__<",
+      ">__draft_static_pad_100__<"
+    ],
+    [
+      ">__draft_static_pad_101__<",
+      ">__draft_static_pad_101__<"
+    ],
+    [
+      ">__draft_static_pad_102__<",
+      ">__draft_static_pad_102__<"
+    ],
+    [
+      ">__draft_static_pad_103__<",
+      ">__draft_static_pad_103__<"
+    ],
+    [
+      ">__draft_static_pad_104__<",
+      ">__draft_static_pad_104__<"
+    ],
+    [
+      ">__draft_static_pad_105__<",
+      ">__draft_static_pad_105__<"
+    ],
+    [
+      ">__draft_static_pad_106__<",
+      ">__draft_static_pad_106__<"
+    ],
+    [
+      ">__draft_static_pad_107__<",
+      ">__draft_static_pad_107__<"
+    ],
+    [
+      ">__draft_static_pad_108__<",
+      ">__draft_static_pad_108__<"
+    ],
+    [
+      ">__draft_static_pad_109__<",
+      ">__draft_static_pad_109__<"
+    ],
+    [
+      ">__draft_static_pad_110__<",
+      ">__draft_static_pad_110__<"
+    ],
+    [
+      ">__draft_static_pad_111__<",
+      ">__draft_static_pad_111__<"
+    ],
+    [
+      ">__draft_static_pad_112__<",
+      ">__draft_static_pad_112__<"
+    ],
+    [
+      ">__draft_static_pad_113__<",
+      ">__draft_static_pad_113__<"
+    ],
+    [
+      ">__draft_static_pad_114__<",
+      ">__draft_static_pad_114__<"
+    ],
+    [
+      ">__draft_static_pad_115__<",
+      ">__draft_static_pad_115__<"
+    ],
+    [
+      ">__draft_static_pad_116__<",
+      ">__draft_static_pad_116__<"
+    ],
+    [
+      ">__draft_static_pad_117__<",
+      ">__draft_static_pad_117__<"
+    ],
+    [
+      ">__draft_static_pad_118__<",
+      ">__draft_static_pad_118__<"
+    ],
+    [
+      ">__draft_static_pad_119__<",
+      ">__draft_static_pad_119__<"
+    ],
+    [
+      ">__draft_static_pad_120__<",
+      ">__draft_static_pad_120__<"
+    ],
+    [
+      ">__draft_static_pad_121__<",
+      ">__draft_static_pad_121__<"
+    ],
+    [
+      ">__draft_static_pad_122__<",
+      ">__draft_static_pad_122__<"
+    ],
+    [
+      ">__draft_static_pad_123__<",
+      ">__draft_static_pad_123__<"
+    ],
+    [
+      ">__draft_static_pad_124__<",
+      ">__draft_static_pad_124__<"
+    ],
+    [
+      ">__draft_static_pad_125__<",
+      ">__draft_static_pad_125__<"
+    ],
+    [
+      ">__draft_static_pad_126__<",
+      ">__draft_static_pad_126__<"
+    ],
+    [
+      ">__draft_static_pad_127__<",
+      ">__draft_static_pad_127__<"
+    ],
+    [
+      ">__draft_static_pad_128__<",
+      ">__draft_static_pad_128__<"
+    ],
+    [
+      ">__draft_static_pad_129__<",
+      ">__draft_static_pad_129__<"
+    ],
+    [
+      ">__draft_static_pad_130__<",
+      ">__draft_static_pad_130__<"
+    ],
+    [
+      ">__draft_static_pad_131__<",
+      ">__draft_static_pad_131__<"
+    ],
+    [
+      ">__draft_static_pad_132__<",
+      ">__draft_static_pad_132__<"
+    ],
+    [
+      ">__draft_static_pad_133__<",
+      ">__draft_static_pad_133__<"
+    ],
+    [
+      ">__draft_static_pad_134__<",
+      ">__draft_static_pad_134__<"
+    ],
+    [
+      ">__draft_static_pad_135__<",
+      ">__draft_static_pad_135__<"
+    ],
+    [
+      ">__draft_static_pad_136__<",
+      ">__draft_static_pad_136__<"
+    ],
+    [
+      ">__draft_static_pad_137__<",
+      ">__draft_static_pad_137__<"
+    ],
+    [
+      ">__draft_static_pad_138__<",
+      ">__draft_static_pad_138__<"
+    ],
+    [
+      ">__draft_static_pad_139__<",
+      ">__draft_static_pad_139__<"
+    ],
+    [
+      ">__draft_static_pad_140__<",
+      ">__draft_static_pad_140__<"
+    ],
+    [
+      ">__draft_static_pad_141__<",
+      ">__draft_static_pad_141__<"
+    ],
+    [
+      ">__draft_static_pad_142__<",
+      ">__draft_static_pad_142__<"
+    ],
+    [
+      ">__draft_static_pad_143__<",
+      ">__draft_static_pad_143__<"
+    ],
+    [
+      ">__draft_static_pad_144__<",
+      ">__draft_static_pad_144__<"
+    ],
+    [
+      ">__draft_static_pad_145__<",
+      ">__draft_static_pad_145__<"
+    ],
+    [
+      ">__draft_static_pad_146__<",
+      ">__draft_static_pad_146__<"
+    ],
+    [
+      ">__draft_static_pad_147__<",
+      ">__draft_static_pad_147__<"
+    ],
+    [
+      ">__draft_static_pad_148__<",
+      ">__draft_static_pad_148__<"
+    ],
+    [
+      ">__draft_static_pad_149__<",
+      ">__draft_static_pad_149__<"
+    ],
+    [
+      ">__draft_static_pad_150__<",
+      ">__draft_static_pad_150__<"
+    ],
+    [
+      ">__draft_static_pad_151__<",
+      ">__draft_static_pad_151__<"
+    ],
+    [
+      ">__draft_static_pad_152__<",
+      ">__draft_static_pad_152__<"
+    ],
+    [
+      ">__draft_static_pad_153__<",
+      ">__draft_static_pad_153__<"
+    ],
+    [
+      ">__draft_static_pad_154__<",
+      ">__draft_static_pad_154__<"
+    ],
+    [
+      ">__draft_static_pad_155__<",
+      ">__draft_static_pad_155__<"
+    ],
+    [
+      ">__draft_static_pad_156__<",
+      ">__draft_static_pad_156__<"
+    ],
+    [
+      ">__draft_static_pad_157__<",
+      ">__draft_static_pad_157__<"
+    ],
+    [
+      ">__draft_static_pad_158__<",
+      ">__draft_static_pad_158__<"
+    ],
+    [
+      ">__draft_static_pad_159__<",
+      ">__draft_static_pad_159__<"
+    ],
+    [
+      ">__draft_static_pad_160__<",
+      ">__draft_static_pad_160__<"
+    ],
+    [
+      ">__draft_static_pad_161__<",
+      ">__draft_static_pad_161__<"
+    ],
+    [
+      ">__draft_static_pad_162__<",
+      ">__draft_static_pad_162__<"
+    ],
+    [
+      ">__draft_static_pad_163__<",
+      ">__draft_static_pad_163__<"
+    ],
+    [
+      ">__draft_static_pad_164__<",
+      ">__draft_static_pad_164__<"
+    ],
+    [
+      ">__draft_static_pad_165__<",
+      ">__draft_static_pad_165__<"
+    ],
+    [
+      ">__draft_static_pad_166__<",
+      ">__draft_static_pad_166__<"
+    ],
+    [
+      ">__draft_static_pad_167__<",
+      ">__draft_static_pad_167__<"
+    ],
+    [
+      ">__draft_static_pad_168__<",
+      ">__draft_static_pad_168__<"
+    ],
+    [
+      ">__draft_static_pad_169__<",
+      ">__draft_static_pad_169__<"
+    ],
+    [
+      ">__draft_static_pad_170__<",
+      ">__draft_static_pad_170__<"
+    ],
+    [
+      ">__draft_static_pad_171__<",
+      ">__draft_static_pad_171__<"
+    ],
+    [
+      ">__draft_static_pad_172__<",
+      ">__draft_static_pad_172__<"
+    ],
+    [
+      ">__draft_static_pad_173__<",
+      ">__draft_static_pad_173__<"
+    ],
+    [
+      ">__draft_static_pad_174__<",
+      ">__draft_static_pad_174__<"
+    ],
+    [
+      ">__draft_static_pad_175__<",
+      ">__draft_static_pad_175__<"
+    ],
+    [
+      ">__draft_static_pad_176__<",
+      ">__draft_static_pad_176__<"
+    ],
+    [
+      ">__draft_static_pad_177__<",
+      ">__draft_static_pad_177__<"
+    ],
+    [
+      ">__draft_static_pad_178__<",
+      ">__draft_static_pad_178__<"
+    ],
+    [
+      ">__draft_static_pad_179__<",
+      ">__draft_static_pad_179__<"
+    ],
+    [
+      ">__draft_static_pad_180__<",
+      ">__draft_static_pad_180__<"
+    ],
+    [
+      ">__draft_static_pad_181__<",
+      ">__draft_static_pad_181__<"
+    ],
+    [
+      ">__draft_static_pad_182__<",
+      ">__draft_static_pad_182__<"
+    ],
+    [
+      ">__draft_static_pad_183__<",
+      ">__draft_static_pad_183__<"
+    ],
+    [
+      ">__draft_static_pad_184__<",
+      ">__draft_static_pad_184__<"
+    ],
+    [
+      ">__draft_static_pad_185__<",
+      ">__draft_static_pad_185__<"
+    ],
+    [
+      ">__draft_static_pad_186__<",
+      ">__draft_static_pad_186__<"
+    ],
+    [
+      ">__draft_static_pad_187__<",
+      ">__draft_static_pad_187__<"
+    ],
+    [
+      ">__draft_static_pad_188__<",
+      ">__draft_static_pad_188__<"
+    ],
+    [
+      ">__draft_static_pad_189__<",
+      ">__draft_static_pad_189__<"
+    ],
+    [
+      ">__draft_static_pad_190__<",
+      ">__draft_static_pad_190__<"
+    ],
+    [
+      ">__draft_static_pad_191__<",
+      ">__draft_static_pad_191__<"
+    ],
+    [
+      ">__draft_static_pad_192__<",
+      ">__draft_static_pad_192__<"
+    ],
+    [
+      ">__draft_static_pad_193__<",
+      ">__draft_static_pad_193__<"
+    ],
+    [
+      ">__draft_static_pad_194__<",
+      ">__draft_static_pad_194__<"
+    ],
+    [
+      ">__draft_static_pad_195__<",
+      ">__draft_static_pad_195__<"
+    ],
+    [
+      ">__draft_static_pad_196__<",
+      ">__draft_static_pad_196__<"
+    ],
+    [
+      ">__draft_static_pad_197__<",
+      ">__draft_static_pad_197__<"
+    ],
+    [
+      ">__draft_static_pad_198__<",
+      ">__draft_static_pad_198__<"
+    ],
+    [
+      ">__draft_static_pad_199__<",
+      ">__draft_static_pad_199__<"
+    ],
+    [
+      ">__draft_static_pad_200__<",
+      ">__draft_static_pad_200__<"
+    ],
+    [
+      ">__draft_static_pad_201__<",
+      ">__draft_static_pad_201__<"
+    ],
+    [
+      ">__draft_static_pad_202__<",
+      ">__draft_static_pad_202__<"
+    ],
+    [
+      ">__draft_static_pad_203__<",
+      ">__draft_static_pad_203__<"
+    ],
+    [
+      ">__draft_static_pad_204__<",
+      ">__draft_static_pad_204__<"
+    ],
+    [
+      ">__draft_static_pad_205__<",
+      ">__draft_static_pad_205__<"
+    ],
+    [
+      ">__draft_static_pad_206__<",
+      ">__draft_static_pad_206__<"
+    ],
+    [
+      ">__draft_static_pad_207__<",
+      ">__draft_static_pad_207__<"
+    ],
+    [
+      ">__draft_static_pad_208__<",
+      ">__draft_static_pad_208__<"
+    ],
+    [
+      ">__draft_static_pad_209__<",
+      ">__draft_static_pad_209__<"
+    ],
+    [
+      ">__draft_static_pad_210__<",
+      ">__draft_static_pad_210__<"
+    ],
+    [
+      ">__draft_static_pad_211__<",
+      ">__draft_static_pad_211__<"
+    ],
+    [
+      ">__draft_static_pad_212__<",
+      ">__draft_static_pad_212__<"
+    ],
+    [
+      ">__draft_static_pad_213__<",
+      ">__draft_static_pad_213__<"
+    ],
+    [
+      ">__draft_static_pad_214__<",
+      ">__draft_static_pad_214__<"
+    ],
+    [
+      ">__draft_static_pad_215__<",
+      ">__draft_static_pad_215__<"
+    ],
+    [
+      ">__draft_static_pad_216__<",
+      ">__draft_static_pad_216__<"
+    ],
+    [
+      ">__draft_static_pad_217__<",
+      ">__draft_static_pad_217__<"
+    ],
+    [
+      ">__draft_static_pad_218__<",
+      ">__draft_static_pad_218__<"
+    ],
+    [
+      ">__draft_static_pad_219__<",
+      ">__draft_static_pad_219__<"
+    ],
+    [
+      ">__draft_static_pad_220__<",
+      ">__draft_static_pad_220__<"
+    ],
+    [
+      ">__draft_static_pad_221__<",
+      ">__draft_static_pad_221__<"
+    ],
+    [
+      ">__draft_static_pad_222__<",
+      ">__draft_static_pad_222__<"
+    ],
+    [
+      ">__draft_static_pad_223__<",
+      ">__draft_static_pad_223__<"
+    ],
+    [
+      ">__draft_static_pad_224__<",
+      ">__draft_static_pad_224__<"
+    ],
+    [
+      ">__draft_static_pad_225__<",
+      ">__draft_static_pad_225__<"
+    ],
+    [
+      ">__draft_static_pad_226__<",
+      ">__draft_static_pad_226__<"
+    ],
+    [
+      ">__draft_static_pad_227__<",
+      ">__draft_static_pad_227__<"
+    ],
+    [
+      ">__draft_static_pad_228__<",
+      ">__draft_static_pad_228__<"
+    ],
+    [
+      ">__draft_static_pad_229__<",
+      ">__draft_static_pad_229__<"
+    ],
+    [
+      ">__draft_static_pad_230__<",
+      ">__draft_static_pad_230__<"
+    ],
+    [
+      ">__draft_static_pad_231__<",
+      ">__draft_static_pad_231__<"
+    ],
+    [
+      ">__draft_static_pad_232__<",
+      ">__draft_static_pad_232__<"
+    ],
+    [
+      ">__draft_static_pad_233__<",
+      ">__draft_static_pad_233__<"
+    ],
+    [
+      ">__draft_static_pad_234__<",
+      ">__draft_static_pad_234__<"
+    ],
+    [
+      ">__draft_static_pad_235__<",
+      ">__draft_static_pad_235__<"
+    ],
+    [
+      ">__draft_static_pad_236__<",
+      ">__draft_static_pad_236__<"
+    ],
+    [
+      ">__draft_static_pad_237__<",
+      ">__draft_static_pad_237__<"
+    ],
+    [
+      ">__draft_static_pad_238__<",
+      ">__draft_static_pad_238__<"
+    ],
+    [
+      ">__draft_static_pad_239__<",
+      ">__draft_static_pad_239__<"
+    ],
+    [
+      ">__draft_static_pad_240__<",
+      ">__draft_static_pad_240__<"
+    ],
+    [
+      ">__draft_static_pad_241__<",
+      ">__draft_static_pad_241__<"
+    ],
+    [
+      ">__draft_static_pad_242__<",
+      ">__draft_static_pad_242__<"
+    ],
+    [
+      ">__draft_static_pad_243__<",
+      ">__draft_static_pad_243__<"
+    ],
+    [
+      ">__draft_static_pad_244__<",
+      ">__draft_static_pad_244__<"
+    ],
+    [
+      ">__draft_static_pad_245__<",
+      ">__draft_static_pad_245__<"
+    ],
+    [
+      ">__draft_static_pad_246__<",
+      ">__draft_static_pad_246__<"
+    ],
+    [
+      ">__draft_static_pad_247__<",
+      ">__draft_static_pad_247__<"
+    ],
+    [
+      ">__draft_static_pad_248__<",
+      ">__draft_static_pad_248__<"
+    ],
+    [
+      ">__draft_static_pad_249__<",
+      ">__draft_static_pad_249__<"
+    ],
+    [
+      ">__draft_static_pad_250__<",
+      ">__draft_static_pad_250__<"
+    ],
+    [
+      ">__draft_static_pad_251__<",
+      ">__draft_static_pad_251__<"
+    ],
+    [
+      ">__draft_static_pad_252__<",
+      ">__draft_static_pad_252__<"
+    ],
+    [
+      ">__draft_static_pad_253__<",
+      ">__draft_static_pad_253__<"
+    ]
+  ]
+}
