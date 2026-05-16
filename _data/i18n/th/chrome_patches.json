@@ -1,0 +1,289 @@
+{
+  "_comment": "Thai chrome patches — DRAFT pending native review.",
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"สมัครรับจดหมายข่าว\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum — บันทึกวิจัยเรื่องการชำระเงิน AI และการเข้ารหัสหลังควอนตัม ไม่มีสแปม"
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"khun@thanakhan.co.th\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"สมัครรับจดหมายข่าว — sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">สมัครรับ</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">ข้ามไปยังเนื้อหาหลัก</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"สลับการนำทาง\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"สลับการนำทาง\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"การนำทางหลัก\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"เปลี่ยนเป็นธีมมืด\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"เปลี่ยนเป็นธีมสว่าง\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"เปลี่ยนธีม\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"ค้นหา (Cmd หรือ Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"ค้นหา (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"ติดต่อ\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">ติดต่อ ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">ติดต่อ</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"หน้าแรกของ Sebastien Rousseau\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/th/nueng-rao/index.html\">เกี่ยวกับเรา</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/th/ngan-wichai/index.html\">งานวิจัย</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/th/hua-kho/index.html\">หัวข้อ</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/th/khrong-kan/index.html\">โครงการ</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/th/bot-khwam/index.html\">บทความ</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/th/tit-to/index.html\">ติดต่อ</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/th/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/th/rai-kan-len/index.html\">Playlists</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"กลับด้านบน\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">งานวิจัย</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">Actividad</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">ติดต่อ</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/th/nueng-rao/index.html\">เกี่ยวกับเรา</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/th/sang-duai-static-site-generator/index.html\">สร้างด้วย Static Site Generator</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/th/ngan-wichai/index.html\">งานวิจัย</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/th/thaek/index.html\">แท็ก</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/th/khrong-kan/index.html\">โครงการ</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/th/rai-kan-len/index.html\">Playlists</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/th/tit-to/index.html\">ติดต่อ</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/th/bot-khwam/index.html\">บทความ</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"ลิงก์โซเชียล\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau บน "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau บน "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"ภาพถ่ายขาวดำของ Sebastien Rousseau\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์"
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/th/kan-khao-thueng/index.html\">การเข้าถึง</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/th/khwam-pen-suan-tua/index.html\">ความเป็นส่วนตัว</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/th/khu-bangkhab/index.html\">เงื่อนไข</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"ค้นหาในเอกสาร...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"ค้นหา\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> ปิด"
+    ],
+    [
+      "navigate</span>",
+      "นำทาง</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> เปิด"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>ค้นหา</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"ภาษา\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"TH, เปลี่ยนภาษา\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"เปลี่ยนภาษา\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"เร็ว ๆ นี้\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">TH</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"Atom Feed\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"RSS Feed\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"สรุปบทความ\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>ประเด็นสำคัญ</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>อ่านเพิ่มเติม:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">อ่านเพิ่มเติม</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">ทบทวนล่าสุด <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"เกี่ยวกับผู้เขียน\""
+    ],
+    [
+      ">Full profile</a>",
+      ">ดูประวัติเต็ม</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"ภาพถ่าย Sebastien Rousseau\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">ติดต่อ</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">เริ่มสนทนา</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/articles/index.html\">อ่านงานวิจัยล่าสุด</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/contact/index.html\">ติดต่อ</a>"
+    ]
+  ]
+}

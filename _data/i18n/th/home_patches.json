@@ -1,0 +1,317 @@
+{
+  "_comment": "Thai home patches — DRAFT pending native review.",
+  "patches": [
+    [
+      ">Authored &amp; maintained<",
+      ">สร้างและดูแล<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">สร้างและดูแล<"
+    ],
+    [
+      ">Shaping the future of banking<br>through AI, payments,<br>and quantum-safe security\\.</h1>",
+      ">กำหนดอนาคตของธนาคาร<br>ผ่าน AI การชำระเงิน<br>และความปลอดภัยที่ทนต่อควอนตัม</h1>"
+    ],
+    [
+      ">Applying AI and quantum-safe security to the future of payments\\.</p>",
+      ">ประยุกต์ใช้ AI และความปลอดภัยที่ทนต่อควอนตัมกับอนาคตของการชำระเงิน</p>"
+    ],
+    [
+      "id=practice>Open source for the<br>future of finance\\.</h2>",
+      "id=practice>โอเพนซอร์สเพื่อ<br>อนาคตของการเงิน</h2>"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">โอเพนซอร์สเพื่ออนาคตของการเงิน<"
+    ],
+    [
+      ">A portfolio of Python, Rust and JavaScript libraries I created and maintain\\. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography\\.<",
+      ">พอร์ตโฟลิโอของไลบรารี Python, Rust และ JavaScript ที่ฉันสร้างและดูแล โอเพนซอร์ส ใช้งานฟรี ประยุกต์ใช้กับการชำระเงินขายส่ง การชำระข้ามพรมแดน ข้อมูลทางการเงิน และการเข้ารหัสที่ทนต่อควอนตัม<"
+    ],
+    [
+      ">Browse all projects<",
+      ">Ver todos los khrong-kan<"
+    ],
+    [
+      ">Python · Payments<",
+      ">Python · Pagos<"
+    ],
+    [
+      ">Python · Cross-border<",
+      ">Python · Transfronterizo<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · Finanzas<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · Seguridad<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · ควอนตัม<"
+    ],
+    [
+      ">Rust · YAML<",
+      ">Rust · YAML<"
+    ],
+    [
+      ">Learn about ([A-Za-z0-9 ()_-]+)</a>",
+      ">ข้อมูลเพิ่มเติมเกี่ยวกับ \\1</a>"
+    ],
+    [
+      "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
+      "<p>ไลบรารี Python ที่ทำให้การสร้างไฟล์การชำระเงิน <strong>ISO 20022 pain.001</strong> จาก CSV หรือ SQLite เป็นอัตโนมัติ ออกแบบมาเพื่อการย้ายจาก MT/MX ไปสู่ข้อความที่มีโครงสร้างใน SWIFT, SEPA และระบบหลัก</p>"
+    ],
+    [
+      "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
+      "<p>สร้าง ตรวจสอบ และส่งข้อความ <strong>ISO 20022 pacs.008</strong> สำหรับการโอนระหว่างสถาบันการเงิน JSON Schema, การตรวจสอบ XSD, IBAN ใน 75 ประเทศ, การปกปิดข้อมูลส่วนบุคคลตาม GDPR/PCI-DSS</p>"
+    ],
+    [
+      "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
+      "<p>ชุดเครื่องมือ Python คุณภาพการเงินที่แปลงใบแจ้งยอดธนาคารหลายรูปแบบเป็นข้อมูลที่มีโครงสร้าง ออกแบบมาสำหรับไฟล์ใบแจ้งยอดในโลกจริงและข้อกำหนดการตรวจสอบของสภาพแวดล้อมที่กำกับดูแล</p>"
+    ],
+    [
+      "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
+      "<p>ไลบรารี Rust ที่ใช้ <strong>อัลกอริทึม hash และ digest ที่ปลอดภัย</strong> สำหรับการเข้ารหัสและตรวจสอบรหัสผ่าน ออกแบบให้ทนต่อควอนตัมสำหรับยุคหลัง PQC ของการตรวจสอบสิทธิ์</p>"
+    ],
+    [
+      "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
+      "<p>การใช้งาน Rust ที่แข็งแกร่งของ <strong>CRYSTALS-Kyber</strong> มาตรฐาน NIST FIPS 203 สำหรับการเข้ารหัสหลังควอนตัมทั่วไป รากฐานของการตรวจสอบสิทธิ์การชำระเงินที่ทนต่อควอนตัม</p>"
+    ],
+    [
+      "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
+      "<p><strong>ระบบนิเวศ YAML 1.2 ใน Rust 100%</strong> ไม่มี unsafe สอดคล้องกับสเปก 100% (406 / 406 ของชุดทดสอบทางการ), serde แบบ streaming-first, CST แบบไม่สูญเสีย และการตรวจสอบ JSON-Schema ไลบรารี + CLI (noyafmt, noyavalidate) + LSP + MCP + bindings WASM</p>"
+    ],
+    [
+      "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
+      "การคำนวณควอนตัมคุกคามรากฐานการเข้ารหัสของบริการการเงิน การชำระเงิน ตั้งแต่เรียลไทม์จนถึงการชำระข้ามพรมแดน ขึ้นอยู่กับการป้องกันที่การคำนวณควอนตัมจะทำให้ล้าสมัยในที่สุด"
+    ],
+    [
+      ">Quantum-Safe Payments white paper · September 2025 · Read the paper<",
+      ">เอกสารวิจัย Quantum-Safe Payments · กันยายน 2025 · อ่านเอกสาร<"
+    ],
+    [
+      ">Read the paper<",
+      ">อ่านเอกสารวิจัย<"
+    ],
+    [
+      ">Quantum-Safe Payments\\.</h2>",
+      ">การชำระเงินที่ทนต่อควอนตัม</h2>"
+    ],
+    [
+      ">Quantum-Safe Payments\\.<",
+      ">การชำระเงินที่ทนต่อควอนตัม<"
+    ],
+    [
+      ">Industry white paper for the Emerging Payments Association Asia\\.\\s*The structural threat quantum computing poses to payment infrastructure, and the case for coordinated action now\\.<",
+      ">เอกสารวิจัยภาคอุตสาหกรรมสำหรับ Emerging Payments Association Asia ภัยคุกคามเชิงโครงสร้างที่การคำนวณควอนตัมก่อขึ้นต่อโครงสร้างพื้นฐานการชำระเงิน และเหตุผลในการดำเนินการประสานงานในขณะนี้<"
+    ],
+    [
+      ">Why the payments industry must act now\\.<",
+      ">เหตุใดอุตสาหกรรมการชำระเงินจึงต้องดำเนินการเดี๋ยวนี้<"
+    ],
+    [
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
+      ">หน่วยกำกับดูแลถือว่า \"เก็บเดี๋ยวนี้ ถอดรหัสภายหลัง\" เป็นความเสี่ยงในปัจจุบันที่น่าเชื่อถือ เอกสารนี้แสดงให้เห็นถึงภัยคุกคามเชิงโครงสร้างและความจำเป็นเร่งด่วนในการดำเนินการประสานงานบนรางการชำระเงินขายส่ง</p>"
+    ],
+    [
+      ">Latest<",
+      ">ล่าสุด<"
+    ],
+    [
+      ">From the desk\\.<",
+      ">จากโต๊ะทำงาน<"
+    ],
+    [
+      ">Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments\\.<",
+      ">งานวิจัยและงานเขียนล่าสุดเกี่ยวกับการเข้ารหัสที่ทนต่อควอนตัม การย้าย ISO 20022 และอนาคตของการชำระเงินขายส่ง<"
+    ],
+    [
+      "<p class=newsroom-excerpt>Stablecoins cannot pay yield under the GENIUS Act\\. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail\\.</p>",
+      "<p class=newsroom-excerpt>Stablecoin ไม่สามารถจ่ายผลตอบแทนตาม GENIUS Act ได้ การลงทะเบียน BRSRV และ BSTBL ของ BlackRock แสดงให้เห็นทางอ้อม: กองทุนตลาดเงินแบบโทเค็นที่ทำงานควบคู่ไปกับ stablecoin ที่อยู่ภายใต้การกำกับดูแลเพื่อมอบผลตอบแทนผ่านรางที่อยู่ติดกันและเป็นไปตามข้อกำหนด</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>Quantum risk has moved from research curiosity to active regulatory mandate\\. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate\\.</p>",
+      "<p class=newsroom-excerpt>El riesgo cuántico ha pasado de curiosidad investigadora a mandato regulatorio activo. Con la hoja de ruta del G7 publicada en มกราคม de 2026 y el BIS Project Leap demostrando viabilidad en sishua-kho de pago en producción, la pregunta en el consejo ya no es si migrar.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\\.</p>",
+      "<p class=newsroom-excerpt>ตั้งแต่เดือนพฤศจิกายน 2026 SWIFT CBPR+ จะปฏิเสธที่อยู่ไปรษณีย์แบบไม่มีโครงสร้างในข้อความการชำระเงินข้ามพรมแดน หกเดือนข้างหน้า 65% ของข้อความ pacs.008 ยังคงส่งที่อยู่ที่ไม่สอดคล้อง และ 44% ของธนาคารยังคงล้าหลังในโครงการแก้ไข</p>"
+    ],
+    [
+      ">See all articles\\b",
+      ">ดูบทความทั้งหมด"
+    ],
+    [
+      "<p class=feat-eyebrow>Get in touch</p>",
+      "<p class=feat-eyebrow>ติดต่อ</p>"
+    ],
+    [
+      ">Unlocking the Future of Banking and Financial Services\\.<br>Discover the latest news from</h2>",
+      ">ปลดล็อกอนาคตของธนาคารและบริการการเงิน<br>ค้นพบการวิเคราะห์ล่าสุดจาก</h2>"
+    ],
+    [
+      "<p class=\\\"feat-sub center\\\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.</p>",
+      "<p class=\"feat-sub center\">กลยุทธ์การชำระเงินขายส่ง การย้าย ISO 20022 หรือการเข้ารหัสที่ทนต่อควอนตัมสำหรับบริการการเงิน: ยินดีที่จะพูดคุย</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">เริ่มสนทนา</a>"
+    ],
+    [
+      "<a class=pill href=\"?/articles/index\\.html\"?>Read latest research</a>",
+      "<a class=pill href=\"/th/bot-khwam/index.html\">อ่านงานวิจัยล่าสุด</a>"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/th/tit-to/index.html\">ติดต่อ</a>"
+    ],
+    [
+      "href=\"?/papers/index\\.html\"?>Read the paper</a>",
+      "href=\"/th/ngan-wichai/index.html\">อ่านเอกสารวิจัย</a>"
+    ],
+    [
+      "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
+      "href=\"/th/2026-05-15-phon-tobthaen-son-blackrock-brsrv-bstbl-genius-act/index.html\">อ่านบทความ</a>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Writing</h2>",
+      "<h2 class=ap-foot-title>งานวิจัย</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Work</h2>",
+      "<h2 class=ap-foot-title>Actividad</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Reach</h2>",
+      "<h2 class=ap-foot-title>ติดต่อ</h2>"
+    ],
+    [
+      "<a href=/about/index\\.html>About</a>",
+      "<a href=/th/nueng-rao/index.html>เกี่ยวกับเรา</a>"
+    ],
+    [
+      "<a href=/papers/index\\.html>Papers</a>",
+      "<a href=/th/ngan-wichai/index.html>งานวิจัย</a>"
+    ],
+    [
+      "<a href=/projects/index\\.html>Projects</a>",
+      "<a href=/th/khrong-kan/index.html>โครงการ</a>"
+    ],
+    [
+      "<a href=/playlists/index\\.html>Playlists</a>",
+      "<a href=/th/rai-kan-len/index.html>Playlists</a>"
+    ],
+    [
+      "<a href=/contact/index\\.html>Contact</a>",
+      "<a href=/th/tit-to/index.html>ติดต่อ</a>"
+    ],
+    [
+      "<a href=/tags/index\\.html>Tags</a>",
+      "<a href=/th/thaek/index.html>แท็ก</a>"
+    ],
+    [
+      "<a href=/articles/index\\.html>Articles</a>",
+      "<a href=/th/bot-khwam/index.html>บทความ</a>"
+    ],
+    [
+      "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
+      "<a href=/th/sang-duai-static-site-generator/index.html>สร้างด้วย Static Site Generator</a>"
+    ],
+    [
+      "<a href=/accessibility/index\\.html>Accessibility</a>",
+      "<a href=/th/kan-khao-thueng/index.html>การเข้าถึง</a>"
+    ],
+    [
+      "<a href=/privacy/index\\.html>Privacy</a>",
+      "<a href=/th/khwam-pen-suan-tua/index.html>ความเป็นส่วนตัว</a>"
+    ],
+    [
+      "<a href=/terms/index\\.html>Terms</a>",
+      "<a href=/th/khu-bangkhab/index.html>เงื่อนไข</a>"
+    ],
+    [
+      ">Experience<",
+      ">ประสบการณ์<"
+    ],
+    [
+      ">Brands along the way\\.<",
+      ">แบรนด์ตลอดเส้นทาง<"
+    ],
+    [
+      ">From global Tier-1 banks to consumer technology\\. Payments and digital product leadership across HSBC, PayPal, Barclays, Shazam, AKQA and Virgin Group\\.</p>",
+      ">จากธนาคารระดับโลกชั้นนำสู่เทคโนโลยีผู้บริโภค การเป็นผู้นำผลิตภัณฑ์ด้านการชำระเงินและดิจิทัลที่ HSBC, PayPal, Barclays, Shazam, AKQA และ Virgin Group</p>"
+    ],
+    [
+      "alt=\"PayPal logo\"",
+      "alt=\"โลโก้ PayPal\""
+    ],
+    [
+      "alt=\"Barclays logo\"",
+      "alt=\"โลโก้ Barclays\""
+    ],
+    [
+      "alt=\"Shazam logo\"",
+      "alt=\"โลโก้ Shazam\""
+    ],
+    [
+      "alt=\"AKQA logo\"",
+      "alt=\"โลโก้ AKQA\""
+    ],
+    [
+      "alt=\"Virgin logo\"",
+      "alt=\"โลโก้ Virgin\""
+    ],
+    [
+      "alt=\"HSBC logo\"",
+      "alt=\"โลโก้ HSBC\""
+    ],
+    [
+      ">Read more<",
+      ">อ่านเพิ่มเติม<"
+    ],
+    [
+      ">Read the article<",
+      "<>อ่านบทความ<"
+    ],
+    [
+      ">Read latest research<",
+      ">อ่านงานวิจัยล่าสุด<"
+    ],
+    [
+      ">Read full article<",
+      "<>อ่านบทความเต็ม<"
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">ติดต่อ ›</a>"
+    ],
+    [
+      ">Payments · Stablecoins<",
+      ">การชำระเงิน · Stablecoin<"
+    ],
+    [
+      ">Payments · ISO 20022<",
+      ">การชำระเงิน · ISO 20022<"
+    ],
+    [
+      ">Quantum<",
+      ">ควอนตัม<"
+    ],
+    [
+      ">Quantum · Banking<",
+      ">ควอนตัม · ธนาคาร<"
+    ],
+    [
+      ">Quantum · Cryptography<",
+      ">ควอนตัม · การเข้ารหัส<"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">อ่านเอกสารวิจัย</a>"
+    ]
+  ]
+}
