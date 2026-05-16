@@ -1,0 +1,99 @@
+{
+  "_comment": "Filipino static-page metadata — DRAFT pending native review. Mirrors EN/FR/DE static_pages.json shape.",
+  "404": {
+    "title": "404 — Hindi nahanap ang page — Sebastien Rousseau",
+    "subtitle": "Hindi umiiral ang page na hinahanap mo.",
+    "description": "404 — Hindi nahanap ang page. Bumalik sa home o maghanap sa site.",
+    "keywords": "404, error, hindi nahanap ang page, Sebastien Rousseau"
+  },
+  "about": {
+    "title": "Tungkol sa Akin — Sebastien Rousseau",
+    "subtitle": "Hinuhubog ang kinabukasan ng banking at financial services sa pamamagitan ng strategic integration ng AI, post-quantum cryptography at blockchain technology.",
+    "description": "Si Sebastien Rousseau, senior banking technologist: applied AI, ISO 20022 migration, post-quantum cryptography, at structural transformation ng wholesale payments.",
+    "keywords": "Sebastien Rousseau, biography, banking, payments, AI, ISO 20022, post-quantum cryptography, HSBC, PayPal, Barclays"
+  },
+  "accessibility": {
+    "title": "Pagiging Accessible — Sebastien Rousseau",
+    "subtitle": "Ang aming pangako sa accessibility ayon sa WCAG standards.",
+    "description": "Accessibility statement para sa sebastienrousseau.com. WCAG 2.2 Level AA.",
+    "keywords": "accessibility, WCAG, AA, accessible, Sebastien Rousseau"
+  },
+  "articles": {
+    "title": "Mga Artikulo — Sebastien Rousseau",
+    "subtitle": "Mga artikulo tungkol sa AI, post-quantum cryptography, ISO 20022 at kinabukasan ng payments.",
+    "description": "Mga artikulo tungkol sa AI, post-quantum cryptography, ISO 20022 at kinabukasan ng payments.",
+    "keywords": "mga artikulo, research, AI, post-quantum cryptography, ISO 20022, wholesale payments"
+  },
+  "contact": {
+    "title": "Makipag-ugnayan — Sebastien Rousseau",
+    "subtitle": "Makipag-ugnayan tungkol sa consulting, mga usapan o mga oportunidad ng kolaborasyon.",
+    "description": "Professional contact form para kay Sebastien Rousseau: consulting, mga usapan, mga kolaborasyon.",
+    "keywords": "contact, Sebastien Rousseau, consulting, mga usapan"
+  },
+  "made-with-shokunin": {
+    "title": "Ginawa sa Shokunin — Sebastien Rousseau",
+    "subtitle": "Ang site na ito ay ginawa sa Shokunin static site generator, nakasulat sa Rust.",
+    "description": "Ang site na ito ay ginawa sa Shokunin, isang mabilis at secure na static site generator sa Rust.",
+    "keywords": "Shokunin, static site generator, Rust, SSG"
+  },
+  "made-with-static-site-generator": {
+    "title": "Ginawa sa Static Site Generator — Sebastien Rousseau",
+    "subtitle": "Ang site na ito ay ginawa sa Shokunin static site generator sa Rust.",
+    "description": "Ang site na ito ay ginawa sa Shokunin, isang static site generator sa Rust.",
+    "keywords": "static site generator, Shokunin, Rust"
+  },
+  "offline": {
+    "title": "Offline ka — Sebastien Rousseau",
+    "subtitle": "Walang kasalukuyang koneksyon sa internet.",
+    "description": "Offline ka. Tingnan ang iyong koneksyon at subukang muli.",
+    "keywords": "offline, walang koneksyon, network error"
+  },
+  "papers": {
+    "title": "Mga Publikasyon at Pananaliksik — Sebastien Rousseau",
+    "subtitle": "Mga white paper at applied research para sa mga senior decision-maker sa payments, AI at post-quantum cryptography.",
+    "description": "Mga white paper, peer-reviewed research at industry note tungkol sa wholesale payments, ISO 20022 at post-quantum cryptography.",
+    "keywords": "mga white paper, pananaliksik, EPAA, wholesale payments, ISO 20022, post-quantum cryptography"
+  },
+  "playlists": {
+    "title": "Mga Playlist — Sebastien Rousseau",
+    "subtitle": "Mga curated Spotify playlist para sa deep work, pagkamalikhain at engineering spirit.",
+    "description": "Mga curated Spotify playlist para sa deep work, pagkamalikhain at engineering spirit.",
+    "keywords": "mga playlist, Spotify, deep work, musika"
+  },
+  "privacy": {
+    "title": "Patakaran sa Privacy — Sebastien Rousseau",
+    "subtitle": "Paano namin pinangangasiwaan ang iyong data.",
+    "description": "Patakaran sa privacy ng sebastienrousseau.com: kung ano ang kinokolekta, paano iniimbak, at iyong mga karapatan sa ilalim ng GDPR.",
+    "keywords": "privacy, GDPR, proteksyon ng data, cookies"
+  },
+  "projects": {
+    "title": "Mga Proyekto — Sebastien Rousseau",
+    "subtitle": "Mga open-source na proyekto sa Python, Rust at JavaScript para sa kinabukasan ng financial industry.",
+    "description": "Mga open-source na Python at Rust library para sa payments, post-quantum cryptography at mga AI tool.",
+    "keywords": "Python, Rust, open source, payments, post-quantum cryptography, AI"
+  },
+  "tags": {
+    "title": "Mga Tag — Sebastien Rousseau",
+    "subtitle": "Mag-browse ng content ayon sa tag.",
+    "description": "Mag-browse ng mga artikulo at proyekto ayon sa tag.",
+    "keywords": "mga tag, index, klasipikasyon"
+  },
+  "terms": {
+    "title": "Mga Tuntunin — Sebastien Rousseau",
+    "subtitle": "Mga tuntunin ng paggamit para sa sebastienrousseau.com.",
+    "description": "Mga tuntunin ng paggamit para sa sebastienrousseau.com.",
+    "keywords": "mga tuntunin, mga tuntunin ng paggamit, legal"
+  },
+  "thanks": {
+    "title": "Salamat — Sebastien Rousseau",
+    "subtitle": "Salamat sa pakikipag-ugnayan.",
+    "description": "Salamat. Natanggap na ang iyong mensahe.",
+    "keywords": "salamat, kumpirmasyon, contact"
+  },
+  "topics": {
+    "title": "Mga Paksa — Sebastien Rousseau",
+    "subtitle": "Mga topic cluster: post-quantum cryptography, ISO 20022, applied AI, Rust, blockchain.",
+    "description": "Mag-browse ayon sa paksa: post-quantum cryptography, ISO 20022 at payments, applied AI, Rust at open source, blockchain at digital assets.",
+    "keywords": "post-quantum cryptography, ISO 20022, AI, Rust, blockchain"
+  }
+}

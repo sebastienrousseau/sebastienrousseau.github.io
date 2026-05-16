@@ -1,0 +1,317 @@
+{
+  "_comment": "DRAFT home-page chrome patches — DRAFT pending native review. (auto-derived from AR template; DRAFT, needs native review)",
+  "patches": [
+    [
+      ">Authored &amp; maintained<",
+      ">Sinulat at pinananatili<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">Sinulat at pinananatili<"
+    ],
+    [
+      ">Shaping the future of banking<br>through AI, payments,<br>and quantum-safe security\\.</h1>",
+      ">Hinuhubog ang kinabukasan ng banking<br>sa pamamagitan ng AI, payments,<br>at quantum-safe security.</h1>"
+    ],
+    [
+      ">Applying AI and quantum-safe security to the future of payments\\.</p>",
+      ">Paglalapat ng AI at quantum-safe security sa kinabukasan ng payments.</p>"
+    ],
+    [
+      "id=practice>Open source for the<br>future of finance\\.</h2>",
+      "id=practice>Open source para sa<br>kinabukasan ng finance.</h2>"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">Open source para sa kinabukasan ng finance.<"
+    ],
+    [
+      ">A portfolio of Python, Rust and JavaScript libraries I created and maintain\\. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography\\.<",
+      ">Isang portfolio ng mga Python, Rust at JavaScript library na ginawa at pinananatili ko. Open source, libreng gamitin, at inilapat sa wholesale payments, cross-border settlement, financial data at quantum-resistant cryptography.<"
+    ],
+    [
+      ">Browse all projects<",
+      ">I-browse ang lahat ng proyekto<"
+    ],
+    [
+      ">Python · Payments<",
+      ">Python · Payments<"
+    ],
+    [
+      ">Python · Cross-border<",
+      ">Python · Cross-border<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · Finance<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · Security<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · Quantum<"
+    ],
+    [
+      ">Rust · YAML<",
+      ">Rust · YAML<"
+    ],
+    [
+      ">Learn about ([A-Za-z0-9 ()_-]+)</a>",
+      ">Matuto tungkol sa \\1</a>"
+    ],
+    [
+      "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
+      "<p>مكتبة Python تُؤتمت إنشاء ملفات الدفع <strong>ISO 20022 pain.001</strong> انطلاقًا من CSV أو SQLite. مُصمَّمة للترحيل العالمي من MT/MX إلى الرسائل المهيكلة عبر SWIFT وSEPA وأبرز الأنظمة.</p>"
+    ],
+    [
+      "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
+      "<p>توليد رسائل التحويل الائتماني للعملاء بين المؤسسات المالية <strong>ISO 20022 pacs.008</strong> والتحقق منها وتسليمها. JSON Schema، تحقق XSD، IBAN في 75 دولة، إخفاء البيانات الشخصية وفق GDPR/PCI-DSS.</p>"
+    ],
+    [
+      "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
+      "<p>عُدّة أدوات Python بمستوى صناعة التمويل تحوّل كشوف الحسابات المصرفية متعددة الصيغ إلى بيانات مهيكلة. مصمَّمة لواقع ملفات الكشوف الفعلية ولمتطلبات التدقيق في البيئات الخاضعة للتنظيم.</p>"
+    ],
+    [
+      "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
+      "<p>مكتبة Rust تُطبّق <strong>خوارزميات تجزئة وملخّص آمنة</strong> لتشفير كلمات المرور والتحقق منها. مُصمَّمة بمنحى مقاوم للحوسبة الكمومية لعصر ما بعد PQC في المصادقة.</p>"
+    ],
+    [
+      "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
+      "<p>تنفيذ Rust متين لـ <strong>CRYSTALS-Kyber</strong>، معيار NIST FIPS 203 للتشفير ما بعد الQuantum عام الاستخدام. أساس مصادقة المدفوعات المقاومة للحوسبة الكمومية.</p>"
+    ],
+    [
+      "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
+      "<p><strong>منظومة YAML 1.2 مكتوبة بالكامل بـ Rust</strong>. صفر unsafe، توافق كامل 100% مع المواصفة (406 / 406 من المجموعة الرسمية)، serde يعتمد البث أولًا، CST بلا فقدان، وتحقق JSON-Schema. مكتبة + CLI (noyafmt، noyavalidate) + LSP + MCP + روابط WASM.</p>"
+    ],
+    [
+      "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
+      "تُهدّد الحوسبة الكمومية الأسس التشفيرية للخدمات المالية. فالمدفوعات — من الزمن الحقيقي إلى التسوية العابرة للحدود — ترتكز على وسائل حماية ستجعلها الحوسبة الكمومية في نهاية المطاف عتيقة."
+    ],
+    [
+      ">Quantum-Safe Payments white paper · September 2025 · Read the paper<",
+      ">Quantum-Safe Payments white paper · September 2025 · Basahin ang paper<"
+    ],
+    [
+      ">Read the paper<",
+      ">Basahin ang white paper<"
+    ],
+    [
+      ">Quantum-Safe Payments\\.</h2>",
+      ">Quantum-safe payments.</h2>"
+    ],
+    [
+      ">Quantum-Safe Payments\\.<",
+      ">Quantum-safe payments.<"
+    ],
+    [
+      ">Industry white paper for the Emerging Payments Association Asia\\.\\s*The structural threat quantum computing poses to payment infrastructure, and the case for coordinated action now\\.<",
+      ">Industry white paper para sa Emerging Payments Association Asia. Ang structural threat ng quantum computing sa payment infrastructure, at ang dahilan para sa coordinated action ngayon.<"
+    ],
+    [
+      ">Why the payments industry must act now\\.<",
+      ">Bakit kailangang kumilos na ang industriya ng payments.<"
+    ],
+    [
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
+      ">باتت الجهات التنظيمية تتعامل مع مبدأ « اجمع الآن وفُكّ الشفرة لاحقًا » بوصفه خطرًا حاضرًا ذا مصداقية. تستعرض هذه الورقة التهديد البنيوي والحجة العاجلة لتحرّك منسَّق عبر قنوات مدفوعات الجملة.</p>"
+    ],
+    [
+      ">Latest<",
+      ">Pinakabago<"
+    ],
+    [
+      ">From the desk\\.<",
+      ">Mula sa mesa.<"
+    ],
+    [
+      ">Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments\\.<",
+      ">Kamakailang research at pagsusulat sa quantum-safe cryptography, ISO 20022 migration at kinabukasan ng wholesale payments.<"
+    ],
+    [
+      "<p class=newsroom-excerpt>Stablecoins cannot pay yield under the GENIUS Act\\. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail\\.</p>",
+      "<p class=newsroom-excerpt>لا يحقّ للعملات المستقرة دفع عائد بموجب GENIUS Act. تكشف إيداعات BRSRV وBSTBL الخاصة بـ BlackRock الالتفاف على ذلك: صندوق سوق نقد مرمَّز يعمل جنبًا إلى جنب مع عملة مستقرة منظَّمة لتقديم العائد عبر قناة متاخمة ممتثلة.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>Quantum risk has moved from research curiosity to active regulatory mandate\\. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate\\.</p>",
+      "<p class=newsroom-excerpt>انتقل الخطر الQuantum من فضول Maghanapيّ إلى تفويض تنظيمي فاعل. ومع نشر خارطة طريق G7 في يناير 2026 وإثبات BIS Project Leap الجدوى على أنظمة مدفوعات في الإنتاج، لم يعد السؤال على مستوى مجلس الإدارة هو هل ينبغي الترحيل.</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\\.</p>",
+      "<p class=newsroom-excerpt>اعتبارًا من نوفمبر 2026، يرفض SWIFT CBPR+ العناوين البريدية غير المهيكلة في رسائل المدفوعات العابرة للحدود. على بُعد ستة أشهر، لا تزال 65% من رسائل pacs.008 تُرسَل بعناوين غير ممتثلة، فيما 44% من البنوك متأخرة في برنامج المعالجة.</p>"
+    ],
+    [
+      ">See all articles\\b",
+      ">Tingnan ang lahat ng artikulo"
+    ],
+    [
+      "<p class=feat-eyebrow>Get in touch</p>",
+      "<p class=feat-eyebrow>Makipag-ugnayan</p>"
+    ],
+    [
+      ">Unlocking the Future of Banking and Financial Services\\.<br>Discover the latest news from</h2>",
+      ">Pagbubukas ng kinabukasan ng Banking at Financial Services.<br>Tuklasin ang pinakabagong balita mula kay</h2>"
+    ],
+    [
+      "<p class=\\\"feat-sub center\\\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.</p>",
+      "<p class=\"feat-sub center\">Maging tungkol man sa wholesale payments strategy, ISO 20022 migration, o quantum-safe cryptography para sa financial services. Masaya akong kausapin.</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Magsimula ng usapan</a>"
+    ],
+    [
+      "<a class=pill href=\"?/articles/index\\.html\"?>Read latest research</a>",
+      "<a class=pill href=\"/fil/mga-artikulo/index.html\">Basahin ang pinakabagong research</a>"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/fil/makipag-ugnayan/index.html\">Makipag-ugnayan</a>"
+    ],
+    [
+      "href=\"?/papers/index\\.html\"?>Read the paper</a>",
+      "href=\"/fil/mga-publikasyon/index.html\">Basahin ang white paper</a>"
+    ],
+    [
+      "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
+      "href=\"/fil/2026-05-15-rendement-cache-decryptage-depots-blackrock-brsrv-bstbl-genius-act/index.html\">Basahin ang artikulo</a>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Writing</h2>",
+      "<h2 class=ap-foot-title>Pagsusulat</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Work</h2>",
+      "<h2 class=ap-foot-title>Trabaho</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Reach</h2>",
+      "<h2 class=ap-foot-title>Makipag-ugnayan</h2>"
+    ],
+    [
+      "<a href=/about/index\\.html>About</a>",
+      "<a href=/fil/tungkol-sa-akin/index.html>Tungkol</a>"
+    ],
+    [
+      "<a href=/papers/index\\.html>Papers</a>",
+      "<a href=/fil/mga-publikasyon/index.html>Mga publikasyon</a>"
+    ],
+    [
+      "<a href=/projects/index\\.html>Projects</a>",
+      "<a href=/fil/mga-proyekto/index.html>Mga proyekto</a>"
+    ],
+    [
+      "<a href=/playlists/index\\.html>Playlists</a>",
+      "<a href=/fil/mga-playlist/index.html>Mga playlist</a>"
+    ],
+    [
+      "<a href=/contact/index\\.html>Contact</a>",
+      "<a href=/fil/makipag-ugnayan/index.html>Makipag-ugnayan</a>"
+    ],
+    [
+      "<a href=/tags/index\\.html>Tags</a>",
+      "<a href=/fil/mga-tag/index.html>Mga tag</a>"
+    ],
+    [
+      "<a href=/articles/index\\.html>Articles</a>",
+      "<a href=/fil/mga-artikulo/index.html>Mga artikulo</a>"
+    ],
+    [
+      "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
+      "<a href=/fil/ginawa-sa-static-site-generator/index.html>Ginawa sa Static Site Generator</a>"
+    ],
+    [
+      "<a href=/accessibility/index\\.html>Accessibility</a>",
+      "<a href=/fil/pagiging-accessible/index.html>Pagiging accessible</a>"
+    ],
+    [
+      "<a href=/privacy/index\\.html>Privacy</a>",
+      "<a href=/fil/pagkapribado/index.html>Pagkapribado</a>"
+    ],
+    [
+      "<a href=/terms/index\\.html>Terms</a>",
+      "<a href=/fil/mga-tuntunin/index.html>Mga tuntunin</a>"
+    ],
+    [
+      ">Experience<",
+      ">Karanasan<"
+    ],
+    [
+      ">Brands along the way\\.<",
+      ">Mga brand sa daan.<"
+    ],
+    [
+      ">From global Tier-1 banks to consumer technology\\. Payments and digital product leadership across HSBC, PayPal, Barclays, Shazam, AKQA and Virgin Group\\.</p>",
+      ">Mula sa global Tier-1 banks hanggang sa consumer technology. Payments at digital product leadership sa HSBC, PayPal, Barclays, Shazam, AKQA at Virgin Group.</p>"
+    ],
+    [
+      "alt=\"PayPal logo\"",
+      "alt=\"Logo ng PayPal\""
+    ],
+    [
+      "alt=\"Barclays logo\"",
+      "alt=\"Logo ng Barclays\""
+    ],
+    [
+      "alt=\"Shazam logo\"",
+      "alt=\"Logo ng Shazam\""
+    ],
+    [
+      "alt=\"AKQA logo\"",
+      "alt=\"Logo ng AKQA\""
+    ],
+    [
+      "alt=\"Virgin logo\"",
+      "alt=\"Logo ng Virgin\""
+    ],
+    [
+      "alt=\"HSBC logo\"",
+      "alt=\"Logo ng HSBC\""
+    ],
+    [
+      ">Read more<",
+      ">Basahin pa<"
+    ],
+    [
+      ">Read the article<",
+      "<>Basahin ang artikulo<"
+    ],
+    [
+      ">Read latest research<",
+      ">Basahin ang pinakabagong research<"
+    ],
+    [
+      ">Read full article<",
+      "<>Basahin ang buong artikulo<"
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Makipag-ugnayan ›</a>"
+    ],
+    [
+      ">Payments · Stablecoins<",
+      ">Payments · Stablecoins<"
+    ],
+    [
+      ">Payments · ISO 20022<",
+      ">Payments · ISO 20022<"
+    ],
+    [
+      ">Quantum<",
+      ">Quantum<"
+    ],
+    [
+      ">Quantum · Banking<",
+      ">Quantum · Banking<"
+    ],
+    [
+      ">Quantum · Cryptography<",
+      ">Quantum · Cryptography<"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">Basahin ang white paper</a>"
+    ]
+  ]
+}
