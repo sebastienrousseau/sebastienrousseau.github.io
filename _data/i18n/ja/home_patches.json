@@ -1,0 +1,317 @@
+{
+  "_comment": "Japanese home-page chrome patches — DRAFT pending native review. Pairs of [regex, replacement] applied to the EN homepage shell.",
+  "patches": [
+    [
+      ">Authored &amp; maintained<",
+      ">執筆・維持<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">執筆・維持<"
+    ],
+    [
+      ">Shaping the future of banking<br>through AI, payments,<br>and quantum-safe security\\.</h1>",
+      ">AI、決済、量子安全セキュリティを通じて<br>銀行の未来を形作る。</h1>"
+    ],
+    [
+      ">Applying AI and quantum-safe security to the future of payments\\.</p>",
+      ">AI と量子安全セキュリティを決済の未来に適用する。</p>"
+    ],
+    [
+      "id=practice>Open source for the<br>future of finance\\.</h2>",
+      "id=practice>金融の未来のための<br>オープンソース。</h2>"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">金融の未来のためのオープンソース。<"
+    ],
+    [
+      ">A portfolio of Python, Rust and JavaScript libraries I created and maintain\\. Open source, free to use, and applied to wholesale payments, cross-border settlement, financial data and quantum-resistant cryptography\\.<",
+      ">私が作成・維持する Python、Rust、JavaScript ライブラリのポートフォリオ。オープンソースで自由に利用でき、ホールセール決済、国際送金、金融データ、量子耐性暗号に適用されています。<"
+    ],
+    [
+      ">Browse all projects<",
+      ">すべてのプロジェクトを見る<"
+    ],
+    [
+      ">Python · Payments<",
+      ">Python · 決済<"
+    ],
+    [
+      ">Python · Cross-border<",
+      ">Python · 国際送金<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · 金融<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · セキュリティ<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · 量子<"
+    ],
+    [
+      ">Rust · YAML<",
+      ">Rust · YAML<"
+    ],
+    [
+      ">Learn about ([A-Za-z0-9 ()_-]+)</a>",
+      ">\\1 について詳しく見る</a>"
+    ],
+    [
+      "<p>A Python library that automates <strong>ISO 20022 pain\\.001</strong> payment file creation from CSV or SQLite\\.\\s*Built for the global migration from MT/MX to structured messages across SWIFT, SEPA and major schemes\\.</p>",
+      "<p>CSV または SQLite から <strong>ISO 20022 pain.001</strong> 決済ファイルの作成を自動化する Python ライブラリ。SWIFT、SEPA および主要スキームにおける MT/MX から構造化メッセージへの世界的な移行のために設計されています。</p>"
+    ],
+    [
+      "<p>Generate, validate and deliver <strong>ISO 20022 pacs\\.008</strong> FI-to-FI customer credit transfer messages\\.\\s*JSON Schema, XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.</p>",
+      "<p><strong>ISO 20022 pacs.008</strong> 金融機関間顧客信用送金メッセージを生成、検証、配信。JSON Schema、XSD 検証、75 か国の IBAN、GDPR/PCI-DSS 準拠の個人情報マスキング。</p>"
+    ],
+    [
+      "<p>A finance-grade Python toolkit that turns multi-format bank statements into structured data\\.\\s*Designed for the realities of real-world statement files and the audit demands of regulated environments\\.</p>",
+      "<p>マルチフォーマットの銀行明細を構造化データに変換する金融グレードの Python ツールキット。現実の明細ファイルと規制環境の監査要件に対応するよう設計されています。</p>"
+    ],
+    [
+      "<p>A Rust library implementing <strong>secure hash and digest algorithms</strong> for password encryption and verification\\.\\s*Designed with a quantum-resistant posture for the post-PQC era of authentication\\.</p>",
+      "<p>パスワードの暗号化と検証のための<strong>セキュアハッシュ・ダイジェストアルゴリズム</strong>を実装する Rust ライブラリ。ポスト PQC 時代の認証に向けて量子耐性の姿勢で設計されています。</p>"
+    ],
+    [
+      "<p>A robust Rust implementation of <strong>CRYSTALS-Kyber</strong>, the NIST FIPS 203 standard for general-purpose post-quantum encryption\\.\\s*The foundation for quantum-resistant payment authentication\\.</p>",
+      "<p>汎用ポスト量子暗号化のための NIST FIPS 203 標準 <strong>CRYSTALS-Kyber</strong> の堅牢な Rust 実装。量子耐性決済認証の基盤。</p>"
+    ],
+    [
+      "<p>A <strong>pure-Rust YAML 1\\.2 ecosystem</strong>\\. Zero unsafe, 100% spec compliance \\(406 / 406 official suite\\), streaming-first serde, lossless CST and JSON-Schema validation\\.\\s*Library \\+ CLI \\(noyafmt, noyavalidate\\) \\+ LSP \\+ MCP \\+ WASM bindings\\.</p>",
+      "<p><strong>純 Rust の YAML 1.2 エコシステム</strong>。unsafe ゼロ、仕様 100% 準拠(公式スイート 406/406)、ストリーミング優先 serde、ロスレス CST、JSON-Schema 検証。ライブラリ + CLI (noyafmt, noyavalidate) + LSP + MCP + WASM バインディング。</p>"
+    ],
+    [
+      "Quantum computing threatens the cryptographic foundations of financial services\\.\\s*Payments, from real-time to cross-border settlement, rely on protections that quantum computing will eventually render obsolete\\.",
+      "量子コンピューティングは金融サービスの暗号基盤を脅かします。リアルタイムから国際送金まで、決済は量子コンピューティングが最終的に陳腐化させる保護に依存しています。"
+    ],
+    [
+      ">Quantum-Safe Payments white paper · September 2025 · Read the paper<",
+      ">Quantum-Safe Payments ホワイトペーパー · 2025 年 9 月 · 論文を読む<"
+    ],
+    [
+      ">Read the paper<",
+      ">論文を読む<"
+    ],
+    [
+      ">Quantum-Safe Payments\\.</h2>",
+      ">量子安全決済。</h2>"
+    ],
+    [
+      ">Quantum-Safe Payments\\.<",
+      ">量子安全決済。<"
+    ],
+    [
+      ">Industry white paper for the Emerging Payments Association Asia\\.\\s*The structural threat quantum computing poses to payment infrastructure, and the case for coordinated action now\\.<",
+      ">Emerging Payments Association Asia のための業界ホワイトペーパー。量子コンピューティングが決済インフラに与える構造的脅威と、今すぐ協調行動を起こす必要性。<"
+    ],
+    [
+      ">Why the payments industry must act now\\.<",
+      ">決済業界が今すぐ行動すべき理由。<"
+    ],
+    [
+      ">Regulators are treating harvest-now-decrypt-later as a credible present risk\\. This paper outlines the structural threat and the urgent case for coordinated action across wholesale payment rails\\.</p>",
+      ">規制当局は「Harvest Now, Decrypt Later」を信憑性のある現在のリスクとして扱っています。本ペーパーは構造的脅威と、ホールセール決済レール全体での協調行動の緊急性を示します。</p>"
+    ],
+    [
+      ">Latest<",
+      ">最新<"
+    ],
+    [
+      ">From the desk\\.<",
+      ">デスクから。<"
+    ],
+    [
+      ">Recent research and writing on quantum-safe cryptography, ISO 20022 migration and the future of wholesale payments\\.<",
+      ">量子安全暗号、ISO 20022 移行、ホールセール決済の未来に関する最新のリサーチと執筆。<"
+    ],
+    [
+      "<p class=newsroom-excerpt>Stablecoins cannot pay yield under the GENIUS Act\\. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail\\.</p>",
+      "<p class=newsroom-excerpt>GENIUS Act の下ではステーブルコインは利回りを支払えません。BlackRock の BRSRV および BSTBL の申請は迂回策を示しています。規制対象ステーブルコインと並行して稼働するトークン化マネー・マーケット・ファンドが、隣接する準拠レールを通じて利回りを提供します。</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>Quantum risk has moved from research curiosity to active regulatory mandate\\. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate\\.</p>",
+      "<p class=newsroom-excerpt>量子リスクは研究上の関心事から能動的な規制要件へと移行しました。2026 年 1 月公表の G7 ロードマップと本番決済システムで実現可能性を実証した BIS Project Leap により、取締役会レベルの論点はもはや移行するか否かではありません。</p>"
+    ],
+    [
+      "<p class=newsroom-excerpt>From November 2026, SWIFT CBPR\\+ rejects unstructured postal addresses in cross-border payment messages\\. Six months out, 65% of pacs\\.008 messages still ship non-compliant addresses and 44% of banks remain behind on the remediation programme\\.</p>",
+      "<p class=newsroom-excerpt>2026 年 11 月から、SWIFT CBPR+ は国際送金メッセージにおける非構造化郵便アドレスを拒否します。残り 6 か月の時点で、pacs.008 メッセージの 65% は依然として非準拠アドレスを送信し、銀行の 44% は是正プログラムで遅れています。</p>"
+    ],
+    [
+      ">See all articles\\b",
+      ">すべての記事を見る"
+    ],
+    [
+      "<p class=feat-eyebrow>Get in touch</p>",
+      "<p class=feat-eyebrow>お問い合わせ</p>"
+    ],
+    [
+      ">Unlocking the Future of Banking and Financial Services\\.<br>Discover the latest news from</h2>",
+      ">銀行と金融サービスの未来を解き放つ。<br>最新の分析を発見</h2>"
+    ],
+    [
+      "<p class=\\\"feat-sub center\\\">Whether it's wholesale payments strategy, ISO 20022 migration, or quantum-safe cryptography for financial services\\. Happy to talk\\.</p>",
+      "<p class=\"feat-sub center\">ホールセール決済戦略、ISO 20022 移行、金融サービス向け量子安全暗号——お気軽にご相談ください。</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">対話を始める</a>"
+    ],
+    [
+      "<a class=pill href=\"?/articles/index\\.html\"?>Read latest research</a>",
+      "<a class=pill href=\"/ja/kiji/index.html\">最新のリサーチを読む</a>"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"?/contact/index\\.html\"?>Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/ja/otoiawase/index.html\">お問い合わせ</a>"
+    ],
+    [
+      "href=\"?/papers/index\\.html\"?>Read the paper</a>",
+      "href=\"/ja/ronbun/index.html\">論文を読む</a>"
+    ],
+    [
+      "href=\"?/2026-05-15[^\"]*\"?>Read the article</a>",
+      "href=\"/ja/2026-05-15-blackrock-brsrv-bstbl-genius-act-tookun-ka-mmf/index.html\">記事を読む</a>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Writing</h2>",
+      "<h2 class=ap-foot-title>記事</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Work</h2>",
+      "<h2 class=ap-foot-title>活動</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Reach</h2>",
+      "<h2 class=ap-foot-title>連絡先</h2>"
+    ],
+    [
+      "<a href=/about/index\\.html>About</a>",
+      "<a href=/ja/nitsuite/index.html>私について</a>"
+    ],
+    [
+      "<a href=/papers/index\\.html>Papers</a>",
+      "<a href=/ja/ronbun/index.html>論文</a>"
+    ],
+    [
+      "<a href=/projects/index\\.html>Projects</a>",
+      "<a href=/ja/purojekuto/index.html>プロジェクト</a>"
+    ],
+    [
+      "<a href=/playlists/index\\.html>Playlists</a>",
+      "<a href=/ja/pureirisuto/index.html>プレイリスト</a>"
+    ],
+    [
+      "<a href=/contact/index\\.html>Contact</a>",
+      "<a href=/ja/otoiawase/index.html>お問い合わせ</a>"
+    ],
+    [
+      "<a href=/tags/index\\.html>Tags</a>",
+      "<a href=/ja/tagu/index.html>タグ</a>"
+    ],
+    [
+      "<a href=/articles/index\\.html>Articles</a>",
+      "<a href=/ja/kiji/index.html>記事</a>"
+    ],
+    [
+      "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
+      "<a href=/ja/sutaitikku-saito-jenereta-de-sakusei/index.html>Static Site Generator で作成</a>"
+    ],
+    [
+      "<a href=/accessibility/index\\.html>Accessibility</a>",
+      "<a href=/ja/akusesibiriti/index.html>アクセシビリティ</a>"
+    ],
+    [
+      "<a href=/privacy/index\\.html>Privacy</a>",
+      "<a href=/ja/puraibashi/index.html>プライバシー</a>"
+    ],
+    [
+      "<a href=/terms/index\\.html>Terms</a>",
+      "<a href=/ja/riyou-kiyaku/index.html>利用規約</a>"
+    ],
+    [
+      ">Experience<",
+      ">経歴<"
+    ],
+    [
+      ">Brands along the way\\.<",
+      ">これまでのブランド。<"
+    ],
+    [
+      ">From global Tier-1 banks to consumer technology\\. Payments and digital product leadership across HSBC, PayPal, Barclays, Shazam, AKQA and Virgin Group\\.</p>",
+      ">グローバル Tier-1 銀行からコンシューマー・テクノロジーまで。HSBC、PayPal、Barclays、Shazam、AKQA、Virgin Group における決済およびデジタルプロダクトのリーダーシップ。</p>"
+    ],
+    [
+      "alt=\"PayPal logo\"",
+      "alt=\"PayPal ロゴ\""
+    ],
+    [
+      "alt=\"Barclays logo\"",
+      "alt=\"Barclays ロゴ\""
+    ],
+    [
+      "alt=\"Shazam logo\"",
+      "alt=\"Shazam ロゴ\""
+    ],
+    [
+      "alt=\"AKQA logo\"",
+      "alt=\"AKQA ロゴ\""
+    ],
+    [
+      "alt=\"Virgin logo\"",
+      "alt=\"Virgin ロゴ\""
+    ],
+    [
+      "alt=\"HSBC logo\"",
+      "alt=\"HSBC ロゴ\""
+    ],
+    [
+      ">Read more<",
+      ">続きを読む<"
+    ],
+    [
+      ">Read the article<",
+      ">記事を読む<"
+    ],
+    [
+      ">Read latest research<",
+      ">最新のリサーチを読む<"
+    ],
+    [
+      ">Read full article<",
+      ">記事全文を読む<"
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">お問い合わせ ›</a>"
+    ],
+    [
+      ">Payments · Stablecoins<",
+      ">決済 · ステーブルコイン<"
+    ],
+    [
+      ">Payments · ISO 20022<",
+      ">決済 · ISO 20022<"
+    ],
+    [
+      ">Quantum<",
+      ">量子<"
+    ],
+    [
+      ">Quantum · Banking<",
+      ">量子 · 銀行<"
+    ],
+    [
+      ">Quantum · Cryptography<",
+      ">量子 · 暗号<"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">ホワイトペーパーを読む</a>"
+    ]
+  ]
+}

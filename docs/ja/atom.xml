@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja-JP">
+  <title>Sebastien Rousseau — 日本語版</title>
+  <link href="https://sebastienrousseau.com/ja/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://sebastienrousseau.com/ja/"/>
+  <id>https://sebastienrousseau.com/ja/</id>
+  <updated>2026-05-16T13:54:26+00:00</updated>
+  <entry>
+    <title>2026 年最良のクラウドインフラアーキテクチャ:金融サービスのための AI ネイティブ、マルチクラウド、量子認識設計図</title>
+    <link href="https://sebastienrousseau.com/ja/2026-05-21-2026-saiyou-no-kuraudo-infura-aakitekucha/"/>
+    <id>https://sebastienrousseau.com/ja/2026-05-21-2026-saiyou-no-kuraudo-infura-aakitekucha/</id>
+    <updated>2026-05-21T06:06:06+00:00</updated>
+    <published>2026-05-21T06:06:06+00:00</published>
+    <summary>2026 年のクラウドアーキテクチャは、6 つの柱を中心に結晶化しました:AI ネイティブインフラ、インテリジェントマルチクラウド、エッジでの WebAssembly を持つサーバーレス第一設計、エッジコンピューティング、暗号アグリティを持つ自動化された DevSecOps、高密度の持続可能な運用。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>エージェンティック・エンジニアリング:銀行の 2026 年設計図</title>
+    <link href="https://sebastienrousseau.com/ja/2026-05-18-eejentikku-enjiniaringu-ginkou-no-2026-sekkeizu/"/>
+    <id>https://sebastienrousseau.com/ja/2026-05-18-eejentikku-enjiniaringu-ginkou-no-2026-sekkeizu/</id>
+    <updated>2026-05-18T06:06:06+00:00</updated>
+    <published>2026-05-18T06:06:06+00:00</published>
+    <summary>エージェンティック・エンジニアリングの実用的な設計図 ——直接プロンプトを置き換える監督付きオーケストレーション ——銀行のソフトウェア・エンジニアリングのために。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>BlackRock BRSRV、BSTBL、GENIUS Act、トークン化された MMF</title>
+    <link href="https://sebastienrousseau.com/ja/2026-05-15-blackrock-brsrv-bstbl-genius-act-tookun-ka-mmf/"/>
+    <id>https://sebastienrousseau.com/ja/2026-05-15-blackrock-brsrv-bstbl-genius-act-tookun-ka-mmf/</id>
+    <updated>2026-05-15T06:06:06+00:00</updated>
+    <published>2026-05-15T06:06:06+00:00</published>
+    <summary>ステーブルコインは GENIUS Act の下で利回りを支払えません。BlackRock の BRSRV と BSTBL の申請は迂回策を示します:規制されたステーブルコインと並んで動作するトークン化マネー・マーケット・ファンド。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>台帳の防衛:法人金融のポスト量子移行</title>
+    <link href="https://sebastienrousseau.com/ja/2026-05-14-daichou-no-bouei-houjin-kinyuu-no-post-ryoushi-iko/"/>
+    <id>https://sebastienrousseau.com/ja/2026-05-14-daichou-no-bouei-houjin-kinyuu-no-post-ryoushi-iko/</id>
+    <updated>2026-05-14T06:06:06+00:00</updated>
+    <published>2026-05-14T06:06:06+00:00</published>
+    <summary>コーポレート金融サービスのためのポスト量子移行ガイド。台帳、メッセージング、認証システム。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2026 年 11 月の pacs.008 構造化アドレス期限</title>
+    <link href="https://sebastienrousseau.com/ja/2026-05-12-iso-20022-pacs008-kouzouka-juusho-kigen/"/>
+    <id>https://sebastienrousseau.com/ja/2026-05-12-iso-20022-pacs008-kouzouka-juusho-kigen/</id>
+    <updated>2026-05-12T06:06:06+00:00</updated>
+    <published>2026-05-12T06:06:06+00:00</published>
+    <summary>2026 年 11 月から SWIFT CBPR+ は pacs.008 国際送金メッセージで非構造化郵便アドレスを拒否します。残り 6 ヶ月、まだ大規模な是正作業が残っています。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Lucy Besson:AI と量子の知識移転</title>
+    <link href="https://sebastienrousseau.com/ja/2026-05-11-lucy-besson-chishiki-iten-ai-to-ryoushi/"/>
+    <id>https://sebastienrousseau.com/ja/2026-05-11-lucy-besson-chishiki-iten-ai-to-ryoushi/</id>
+    <updated>2026-05-11T06:06:06+00:00</updated>
+    <published>2026-05-11T06:06:06+00:00</published>
+    <summary>Lucy Besson と、AI と量子計算における知識移転、メンタリング、新世代の銀行テクノロジストの構築の重要性について。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>量子閾値が再び動き始めた</title>
+    <link href="https://sebastienrousseau.com/ja/2026-04-11-ryoushi-shikiichi-ga-mata-ugoki-hajimeta/"/>
+    <id>https://sebastienrousseau.com/ja/2026-04-11-ryoushi-shikiichi-ga-mata-ugoki-hajimeta/</id>
+    <updated>2026-04-11T06:06:06+00:00</updated>
+    <published>2026-04-11T06:06:06+00:00</published>
+    <summary>新しい論文は、Shor のアルゴリズムが 10,000 量子ビット程度で動作する可能性を示唆しています。暗号的に有意な量子計算の閾値は急速に低下しています。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>量子安全な決済:EPAA ホワイトペーパー</title>
+    <link href="https://sebastienrousseau.com/ja/2025-09-01-ryoushi-anzen-na-kessai-epaa/"/>
+    <id>https://sebastienrousseau.com/ja/2025-09-01-ryoushi-anzen-na-kessai-epaa/</id>
+    <updated>2025-09-01T06:06:06+00:00</updated>
+    <published>2025-09-01T06:06:06+00:00</published>
+    <summary>Emerging Payments Association Asia のための業界ホワイトペーパー。量子コンピューティングが決済インフラに与える構造的脅威。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>格子暗号の量子アルゴリズムにバグ発見</title>
+    <link href="https://sebastienrousseau.com/ja/2024-04-22-koushi-ankou-no-ryoushi-arugorizumu-ni-bagu-hakken/"/>
+    <id>https://sebastienrousseau.com/ja/2024-04-22-koushi-ankou-no-ryoushi-arugorizumu-ni-bagu-hakken/</id>
+    <updated>2024-04-22T06:06:06+00:00</updated>
+    <published>2024-04-22T06:06:06+00:00</published>
+    <summary>LWE を解く Yilei Chen の量子アルゴリズムにバグが発見され、格子ベース暗号が一時的に安全になり、継続的な研究の必要性を浮き彫りに。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>量子アルゴリズムが格子暗号に挑戦</title>
+    <link href="https://sebastienrousseau.com/ja/2024-04-15-ryoushi-arugorizumu-ga-koushi-ankou-ni-chousen/"/>
+    <id>https://sebastienrousseau.com/ja/2024-04-15-ryoushi-arugorizumu-ga-koushi-ankou-ni-chousen/</id>
+    <updated>2024-04-15T06:06:06+00:00</updated>
+    <published>2024-04-15T06:06:06+00:00</published>
+    <summary>新しい量子アルゴリズムが鍵となる暗号問題を解決し、量子安全セキュリティの研究を加速する必要性を示唆。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>OpenVoice:音声クローン技術の最先端革新</title>
+    <link href="https://sebastienrousseau.com/ja/2024-04-01-openvoice-onsei-kuroon-gijutsu-no-saisentan-kakushin/"/>
+    <id>https://sebastienrousseau.com/ja/2024-04-01-openvoice-onsei-kuroon-gijutsu-no-saisentan-kakushin/</id>
+    <updated>2024-04-01T06:06:06+00:00</updated>
+    <published>2024-04-01T06:06:06+00:00</published>
+    <summary>OpenVoice、オープンソース音声クローン技術、銀行業務における不正、認証、プライバシーへのその意味。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>銀行量子時代の完全準同型暗号</title>
+    <link href="https://sebastienrousseau.com/ja/2024-03-25-ginkou-ryoushi-jidai-no-kanzen-junidoukei-ankou/"/>
+    <id>https://sebastienrousseau.com/ja/2024-03-25-ginkou-ryoushi-jidai-no-kanzen-junidoukei-ankou/</id>
+    <updated>2024-03-25T06:06:06+00:00</updated>
+    <published>2024-03-25T06:06:06+00:00</published>
+    <summary>完全準同型暗号が銀行・金融サービスにおけるデータセキュリティをどのように革新し、量子時代の脅威に対してプライバシーを保護するか。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>マルチモーダル LLM で AI を前進:MM1 からの洞察</title>
+    <link href="https://sebastienrousseau.com/ja/2024-03-18-marutimoodaru-llm-de-ai-wo-zenshin-mm1-kara-no-insaito/"/>
+    <id>https://sebastienrousseau.com/ja/2024-03-18-marutimoodaru-llm-de-ai-wo-zenshin-mm1-kara-no-insaito/</id>
+    <updated>2024-03-18T06:06:06+00:00</updated>
+    <published>2024-03-18T06:06:06+00:00</published>
+    <summary>Apple のマルチモーダル大規模言語モデルに関する MM1 論文 —— アーキテクチャ、事前学習戦略、創発的能力 —— の分析。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>OpenAI Whisper で macOS のリアルタイム音声認識を革新</title>
+    <link href="https://sebastienrousseau.com/ja/2024-03-12-openai-whisper-de-macos-no-riarutaimu-onsei-ninshiki-wo-kakushin/"/>
+    <id>https://sebastienrousseau.com/ja/2024-03-12-openai-whisper-de-macos-no-riarutaimu-onsei-ninshiki-wo-kakushin/</id>
+    <updated>2024-03-12T06:06:06+00:00</updated>
+    <published>2024-03-12T06:06:06+00:00</published>
+    <summary>OpenAI Whisper と macOS Metal Performance Shaders GPU アクセラレーションでリアルタイム音声テキスト変換を実現。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>RustLogs:Rust 向け高度ロギングライブラリ</title>
+    <link href="https://sebastienrousseau.com/ja/2024-03-08-rustlogs-rust-muke-koudo-roguingu-raiburari/"/>
+    <id>https://sebastienrousseau.com/ja/2024-03-08-rustlogs-rust-muke-koudo-roguingu-raiburari/</id>
+    <updated>2024-03-08T06:06:06+00:00</updated>
+    <published>2024-03-08T06:06:06+00:00</published>
+    <summary>RustLogs は、本番グレードの Rust アプリケーションのための包括的な構造化ロギングライブラリです。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Mistral AI の Le Chat:対話型 AI の新時代</title>
+    <link href="https://sebastienrousseau.com/ja/2024-03-04-mistral-ai-no-le-chat-taiwa-gata-ai-no-shinjidai/"/>
+    <id>https://sebastienrousseau.com/ja/2024-03-04-mistral-ai-no-le-chat-taiwa-gata-ai-no-shinjidai/</id>
+    <updated>2024-03-04T06:06:06+00:00</updated>
+    <published>2024-03-04T06:06:06+00:00</published>
+    <summary>Mistral AI の Le Chat、ヨーロッパ AI チャンピオンの台頭、フランスとヨーロッパ AI への影響。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Google Gemma:オープンソース AI 開発の変革</title>
+    <link href="https://sebastienrousseau.com/ja/2024-02-26-google-gemma-oopun-soosu-ai-kaihatsu-no-henkaku/"/>
+    <id>https://sebastienrousseau.com/ja/2024-02-26-google-gemma-oopun-soosu-ai-kaihatsu-no-henkaku/</id>
+    <updated>2024-02-26T06:06:06+00:00</updated>
+    <published>2024-02-26T06:06:06+00:00</published>
+    <summary>Google Gemma、オープンソース AI 開発を変革する Gemini に基づく軽量言語モデル。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Gemini を解封:Google AI 革命を解き明かす</title>
+    <link href="https://sebastienrousseau.com/ja/2024-02-19-gemini-wo-kaifuu-google-ai-kakumei-wo-tokiakasu/"/>
+    <id>https://sebastienrousseau.com/ja/2024-02-19-gemini-wo-kaifuu-google-ai-kakumei-wo-tokiakasu/</id>
+    <updated>2024-02-19T06:06:06+00:00</updated>
+    <published>2024-02-19T06:06:06+00:00</published>
+    <summary>Google の Gemini AI モデル、その能力、アーキテクチャ、AI 業界への影響の概観。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>EU AI 規制:世界の AI 規制の未来を形作る</title>
+    <link href="https://sebastienrousseau.com/ja/2024-02-13-eu-ai-kisei-sekai-no-ai-kisei-no-shourai/"/>
+    <id>https://sebastienrousseau.com/ja/2024-02-13-eu-ai-kisei-sekai-no-ai-kisei-no-shourai/</id>
+    <updated>2024-02-13T06:06:06+00:00</updated>
+    <published>2024-02-13T06:06:06+00:00</published>
+    <summary>EU AI 法がどのように世界の AI 規制を形作り、企業の AI 採用に影響を与えるか。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Akande 音声アシスタント:個人と役員支援の革新</title>
+    <link href="https://sebastienrousseau.com/ja/2024-02-12-akande-onsei-ashisutanto-kojin-to-yakuin-shien-no-kakushin/"/>
+    <id>https://sebastienrousseau.com/ja/2024-02-12-akande-onsei-ashisutanto-kojin-to-yakuin-shien-no-kakushin/</id>
+    <updated>2024-02-12T06:06:06+00:00</updated>
+    <published>2024-02-12T06:06:06+00:00</published>
+    <summary>Akande、自然な対話、PDF 要約、効率的なキャッシュを提供する高度な音声アシスタント。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>AI が未来を形作る:広告の革新</title>
+    <link href="https://sebastienrousseau.com/ja/2024-02-08-ai-ga-shourai-wo-katadoru-koukoku-no-kakushin/"/>
+    <id>https://sebastienrousseau.com/ja/2024-02-08-ai-ga-shourai-wo-katadoru-koukoku-no-kakushin/</id>
+    <updated>2024-02-08T06:06:06+00:00</updated>
+    <published>2024-02-08T06:06:06+00:00</published>
+    <summary>AI が広告の未来を形作る方法と、業界が直面する機会と倫理的考察。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>AI による音声分析、翻訳、インサイト</title>
+    <link href="https://sebastienrousseau.com/ja/2024-01-29-ai-ni-yoru-onsei-bunseki-honyaku-to-insaito/"/>
+    <id>https://sebastienrousseau.com/ja/2024-01-29-ai-ni-yoru-onsei-bunseki-honyaku-to-insaito/</id>
+    <updated>2024-01-29T06:06:06+00:00</updated>
+    <published>2024-01-29T06:06:06+00:00</published>
+    <summary>OpenAI Whisper、リアルタイム音声テキスト変換、多言語翻訳によるオーディオインサイトのための AI ソリューション。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>AI プロンプトエンジニアリングの進歩</title>
+    <link href="https://sebastienrousseau.com/ja/2024-01-23-ai-puronputo-enjiniaringu-no-shinpo/"/>
+    <id>https://sebastienrousseau.com/ja/2024-01-23-ai-puronputo-enjiniaringu-no-shinpo/</id>
+    <updated>2024-01-23T06:06:06+00:00</updated>
+    <published>2024-01-23T06:06:06+00:00</published>
+    <summary>AI プロンプトエンジニアリングの最新の進歩。Chain-of-thought、ツール使用、エージェントワークフロー。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Alien Studio:AI 写真でアートを革新</title>
+    <link href="https://sebastienrousseau.com/ja/2024-01-15-alien-studio-ai-shashin-de-aato-wo-kakushin/"/>
+    <id>https://sebastienrousseau.com/ja/2024-01-15-alien-studio-ai-shashin-de-aato-wo-kakushin/</id>
+    <updated>2024-01-15T06:06:06+00:00</updated>
+    <published>2024-01-15T06:06:06+00:00</published>
+    <summary>Alien Studio が AI 駆動の写真とアートで創造的な表現をどのように再構築しているか。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>IBM Qiskit と量子フーリエ変換による信用比率分析の最適化</title>
+    <link href="https://sebastienrousseau.com/ja/2024-01-08-ibm-qiskit-to-ryoushi-fourier-henkan-de-shinyou-bunseki-saitekika/"/>
+    <id>https://sebastienrousseau.com/ja/2024-01-08-ibm-qiskit-to-ryoushi-fourier-henkan-de-shinyou-bunseki-saitekika/</id>
+    <updated>2024-01-08T06:06:06+00:00</updated>
+    <published>2024-01-08T06:06:06+00:00</published>
+    <summary>IBM Qiskit と量子フーリエ変換が金融の信用比率分析を再構築し、前例のない精度と速度を提供する方法。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>2024 年 AI 動向と予測:未来に向けた洞察</title>
+    <link href="https://sebastienrousseau.com/ja/2024-01-01-2024-nen-ai-doukou-to-yosoku/"/>
+    <id>https://sebastienrousseau.com/ja/2024-01-01-2024-nen-ai-doukou-to-yosoku/</id>
+    <updated>2024-01-01T06:06:06+00:00</updated>
+    <published>2024-01-01T06:06:06+00:00</published>
+    <summary>2024 年の AI トレンドと予測。エンタープライズ展開、新規制、技術進歩について。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>AI 強化量子アルゴリズムで金融を革新する</title>
+    <link href="https://sebastienrousseau.com/ja/2023-12-25-ai-kyouka-ryoushi-arugorizumu-de-kinyuu-wo-kakushin/"/>
+    <id>https://sebastienrousseau.com/ja/2023-12-25-ai-kyouka-ryoushi-arugorizumu-de-kinyuu-wo-kakushin/</id>
+    <updated>2023-12-25T06:06:06+00:00</updated>
+    <published>2023-12-25T06:06:06+00:00</published>
+    <summary>金融向け量子アルゴリズム内における AI の変革的役割、数学構造と銀行応用に焦点を当てて。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>銀行における AI と量子計算の現状:2023 年総括</title>
+    <link href="https://sebastienrousseau.com/ja/2023-12-18-ginkou-ni-okeru-ai-to-ryoushi-keisan-no-genjou-2023-soukatsu/"/>
+    <id>https://sebastienrousseau.com/ja/2023-12-18-ginkou-ni-okeru-ai-to-ryoushi-keisan-no-genjou-2023-soukatsu/</id>
+    <updated>2023-12-18T06:06:06+00:00</updated>
+    <published>2023-12-18T06:06:06+00:00</published>
+    <summary>2023 年における AI と量子計算が銀行業務にどう影響しているかの総括。最先端の状況と今後の展望。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>量子鍵配送:銀行セキュリティの革新</title>
+    <link href="https://sebastienrousseau.com/ja/2023-12-11-ryoushi-kagi-haisou-ginkou-sekyuriti-no-kakushin/"/>
+    <id>https://sebastienrousseau.com/ja/2023-12-11-ryoushi-kagi-haisou-ginkou-sekyuriti-no-kakushin/</id>
+    <updated>2023-12-11T06:06:06+00:00</updated>
+    <published>2023-12-11T06:06:06+00:00</published>
+    <summary>量子コンピュータが従来の暗号を脅かす中、量子鍵配送(QKD)が金融グレードセキュリティの構造的な答えとして登場しています。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>dtt ライブラリで Rust の日時を習得する</title>
+    <link href="https://sebastienrousseau.com/ja/2023-12-04-dtt-raiburari-de-rust-no-nichiji-wo-shuutoku-suru/"/>
+    <id>https://sebastienrousseau.com/ja/2023-12-04-dtt-raiburari-de-rust-no-nichiji-wo-shuutoku-suru/</id>
+    <updated>2023-12-04T06:06:06+00:00</updated>
+    <published>2023-12-04T06:06:06+00:00</published>
+    <summary>dtt は、解析、フォーマット、タイムゾーン操作のための包括的な日付・時刻 Rust ライブラリです。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>kyberlib:量子脅威に対する Rust の盾</title>
+    <link href="https://sebastienrousseau.com/ja/2023-11-28-kyberlib-ryoushi-kyoui-ni-taisuru-rust-no-tate/"/>
+    <id>https://sebastienrousseau.com/ja/2023-11-28-kyberlib-ryoushi-kyoui-ni-taisuru-rust-no-tate/</id>
+    <updated>2023-11-28T06:06:06+00:00</updated>
+    <published>2023-11-28T06:06:06+00:00</published>
+    <summary>kyberlib は NIST FIPS 203 標準 CRYSTALS-Kyber の Rust 実装で、汎用ポスト量子鍵カプセル化のためのものです。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>CRYSTALS-Kyber:量子時代の防衛アルゴリズム</title>
+    <link href="https://sebastienrousseau.com/ja/2023-11-19-crystals-kyber-ryoushi-jidai-no-bouei-arugorizumu/"/>
+    <id>https://sebastienrousseau.com/ja/2023-11-19-crystals-kyber-ryoushi-jidai-no-bouei-arugorizumu/</id>
+    <updated>2023-11-19T06:06:06+00:00</updated>
+    <published>2023-11-19T06:06:06+00:00</published>
+    <summary>CRYSTALS-Kyber、NIST FIPS 203 標準、量子時代の暗号通信の基盤。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>生成 AI を探求する</title>
+    <link href="https://sebastienrousseau.com/ja/2023-11-12-seisei-ai-wo-tankyuu-suru/"/>
+    <id>https://sebastienrousseau.com/ja/2023-11-12-seisei-ai-wo-tankyuu-suru/</id>
+    <updated>2023-11-12T06:06:06+00:00</updated>
+    <published>2023-11-12T06:06:06+00:00</published>
+    <summary>生成 AI が画像、テキスト、音声、コードでどのように動作するか、エンタープライズアプリケーションの実用的な検討事項。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Rust セキュリティのための数学的・暗号的定数</title>
+    <link href="https://sebastienrousseau.com/ja/2023-11-05-rust-no-tame-no-suugaku-to-ankouka-teisuu/"/>
+    <id>https://sebastienrousseau.com/ja/2023-11-05-rust-no-tame-no-suugaku-to-ankouka-teisuu/</id>
+    <updated>2023-11-05T06:06:06+00:00</updated>
+    <published>2023-11-05T06:06:06+00:00</published>
+    <summary>Rust の数学的・暗号的定数ライブラリ。ECC、PQC、暗号スイートのための検証された定数を含みます。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>libmake:反復作業を削減し、高品質な Rust ライブラリを構築するコードジェネレータ</title>
+    <link href="https://sebastienrousseau.com/ja/2023-10-26-libmake-rust-raiburari-no-koodo-jenereta/"/>
+    <id>https://sebastienrousseau.com/ja/2023-10-26-libmake-rust-raiburari-no-koodo-jenereta/</id>
+    <updated>2023-10-26T06:06:06+00:00</updated>
+    <published>2023-10-26T06:06:06+00:00</published>
+    <summary>libmake は、高品質な Rust ライブラリを迅速に作成するためのコードジェネレータで、定型コードを排除し、ベストプラクティスを組み込みます。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>量子時代のデータ保護:hash ライブラリ hsh</title>
+    <link href="https://sebastienrousseau.com/ja/2023-10-16-ryoushi-jidai-no-deeta-hogo-hsh-hash-raiburari/"/>
+    <id>https://sebastienrousseau.com/ja/2023-10-16-ryoushi-jidai-no-deeta-hogo-hsh-hash-raiburari/</id>
+    <updated>2023-10-16T06:06:06+00:00</updated>
+    <published>2023-10-16T06:06:06+00:00</published>
+    <summary>hsh は量子耐性の姿勢で設計された Rust ハッシュライブラリで、パスワード暗号化と検証のためのものです。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Shokunin:Rust ベースの最速静的サイトジェネレータ</title>
+    <link href="https://sebastienrousseau.com/ja/2023-10-09-shokunin-saisoku-no-rust-sei-shizen-saito-jenereta/"/>
+    <id>https://sebastienrousseau.com/ja/2023-10-09-shokunin-saisoku-no-rust-sei-shizen-saito-jenereta/</id>
+    <updated>2023-10-09T06:06:06+00:00</updated>
+    <published>2023-10-09T06:06:06+00:00</published>
+    <summary>Shokunin は Rust で書かれた静的サイトジェネレータで、超高速ビルド、JSON-LD ネイティブサポート、優れたアクセシビリティを実現します。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>pain001 による ISO 20022 準拠決済ファイル作成の自動化</title>
+    <link href="https://sebastienrousseau.com/ja/2023-09-29-pain001-de-iso-20022-junkyo-kessai-fairu-no-jidouka/"/>
+    <id>https://sebastienrousseau.com/ja/2023-09-29-pain001-de-iso-20022-junkyo-kessai-fairu-no-jidouka/</id>
+    <updated>2023-09-29T06:06:06+00:00</updated>
+    <published>2023-09-29T06:06:06+00:00</published>
+    <summary>pain001 は ISO 20022 pain.001 決済ファイル作成を自動化する Python ライブラリで、MT/MX から構造化メッセージへの世界的な移行のために構築されています。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>Express Transaction Credits プラットフォームの開発</title>
+    <link href="https://sebastienrousseau.com/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu/"/>
+    <id>https://sebastienrousseau.com/ja/2018-02-15-express-transaction-credits-puratto-foomu-no-kaihatsu/</id>
+    <updated>2018-02-15T06:06:06+00:00</updated>
+    <published>2018-02-15T06:06:06+00:00</published>
+    <summary>ブロックチェーンと暗号資産を利用した高速な国際送金プラットフォーム Express Transaction Credits の構築。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>新たな暗号資産を公開し、将来のより高速な決済ソリューションを提供する</title>
+    <link href="https://sebastienrousseau.com/ja/2018-02-04-arata-na-ankouka-tsuuka-to-koukousoku-kessai-no-shourai/"/>
+    <id>https://sebastienrousseau.com/ja/2018-02-04-arata-na-ankouka-tsuuka-to-koukousoku-kessai-no-shourai/</id>
+    <updated>2018-02-04T06:06:06+00:00</updated>
+    <published>2018-02-04T06:06:06+00:00</published>
+    <summary>新たな暗号資産プロジェクトと、それがより高速な決済ソリューションをどのように可能にするかについて。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ERC-20:世界を変えたイーサリアム・トークン・インターフェース</title>
+    <link href="https://sebastienrousseau.com/ja/2018-01-24-erc-20-tokun-hyoujun/"/>
+    <id>https://sebastienrousseau.com/ja/2018-01-24-erc-20-tokun-hyoujun/</id>
+    <updated>2018-01-24T06:06:06+00:00</updated>
+    <published>2018-01-24T06:06:06+00:00</published>
+    <summary>ERC-20 標準が、イーサリアム上のすべての代替可能なトークン、ICO、DeFi の基盤としてどのように機能するか。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ブロックチェーンの背後にある技術を理解する</title>
+    <link href="https://sebastienrousseau.com/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/"/>
+    <id>https://sebastienrousseau.com/ja/2018-01-09-burokkuchein-no-gijutsu-wo-rikai-suru/</id>
+    <updated>2018-01-09T06:06:06+00:00</updated>
+    <published>2018-01-09T06:06:06+00:00</published>
+    <summary>ブロックチェーンを構成する暗号、ネットワーク、合意の各レイヤーを技術的に分解して解説します。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ブロックチェーン:2018 年に重要となるテクノロジー</title>
+    <link href="https://sebastienrousseau.com/ja/2018-01-02-burokkuchein-2018-nen-juuyou-gijutsu/"/>
+    <id>https://sebastienrousseau.com/ja/2018-01-02-burokkuchein-2018-nen-juuyou-gijutsu/</id>
+    <updated>2018-01-02T06:06:06+00:00</updated>
+    <published>2018-01-02T06:06:06+00:00</published>
+    <summary>金融サービスを再構築し、新たなビジネスモデルを生み出すブロックチェーン技術の概観。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>ビットコイン:最初の暗号資産の年次レビュー</title>
+    <link href="https://sebastienrousseau.com/ja/2018-01-01-bitcoin-nenkan-soukatsu/"/>
+    <id>https://sebastienrousseau.com/ja/2018-01-01-bitcoin-nenkan-soukatsu/</id>
+    <updated>2018-01-01T06:06:06+00:00</updated>
+    <published>2018-01-01T06:06:06+00:00</published>
+    <summary>ビットコイン:オンライン取引の在り方を革新する可能性を秘めたピア・ツー・ピア電子現金システム(P2P ECS)。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+</feed>

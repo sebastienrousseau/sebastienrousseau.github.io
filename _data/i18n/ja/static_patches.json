@@ -1,0 +1,1021 @@
+{
+  "_comment": "Japanese static-page chrome patches — DRAFT pending native review.",
+  "patches": [
+    [
+      "<a href=\"/\">Home</a> &middot; <span>Topics</span>",
+      "<a href=\"/ja/\">ホーム</a> &middot; <span>トピック</span>"
+    ],
+    [
+      ">Home<",
+      ">ホーム<"
+    ],
+    [
+      ">Topics</h1>",
+      ">トピック</h1>"
+    ],
+    [
+      ">PILLARS</p>",
+      ">柱</p>"
+    ],
+    [
+      "PILLAR · TOPIC",
+      "柱 · トピック"
+    ],
+    [
+      "PILLAR · PROJECT",
+      "柱 · プロジェクト"
+    ],
+    [
+      "Curated topic clusters[^<]+",
+      "厳選されたトピッククラスター — スレッドを選び、アーカイブをたどってください。"
+    ],
+    [
+      "aria-label=\"Post-Quantum Cryptography\"",
+      "aria-label=\"ポスト量子暗号\""
+    ],
+    [
+      "aria-label=\"ISO 20022 &amp; Payments\"",
+      "aria-label=\"ISO 20022 と決済\""
+    ],
+    [
+      "aria-label=\"Applied AI in Banking\"",
+      "aria-label=\"銀行業務における応用AI\""
+    ],
+    [
+      "aria-label=\"Rust &amp; Open Source\"",
+      "aria-label=\"Rust とオープンソース\""
+    ],
+    [
+      "aria-label=\"Blockchain &amp; Digital Assets\"",
+      "aria-label=\"ブロックチェーンとデジタル資産\""
+    ],
+    [
+      "alt=\"Post-Quantum Cryptography — topic banner\"",
+      "alt=\"ポスト量子暗号 — トピックバナー\""
+    ],
+    [
+      "alt=\"ISO 20022 &amp; Payments — topic banner\"",
+      "alt=\"ISO 20022 と決済 — トピックバナー\""
+    ],
+    [
+      "alt=\"Applied AI in Banking — topic banner\"",
+      "alt=\"銀行業務における応用AI — トピックバナー\""
+    ],
+    [
+      "alt=\"Rust &amp; Open Source — topic banner\"",
+      "alt=\"Rust とオープンソース — トピックバナー\""
+    ],
+    [
+      "alt=\"Blockchain &amp; Digital Assets — topic banner\"",
+      "alt=\"ブロックチェーンとデジタル資産 — トピックバナー\""
+    ],
+    [
+      "<h3><a href=\"/fr/topics/post-quantum-cryptography/[^\"]+\">Post-Quantum Cryptography</a></h3>",
+      "<h3><a href=\"/ja/toppikku/post-quantum-cryptography/index.html\">ポスト量子暗号</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/fr/topics/iso-20022-payments/[^\"]+\">ISO 20022 &amp; Payments</a></h3>",
+      "<h3><a href=\"/ja/toppikku/iso-20022-payments/index.html\">ISO 20022 と決済</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/fr/topics/applied-ai-banking/[^\"]+\">Applied AI in Banking</a></h3>",
+      "<h3><a href=\"/ja/toppikku/applied-ai-banking/index.html\">銀行業務における応用AI</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/fr/topics/rust-open-source/[^\"]+\">Rust &amp; Open Source</a></h3>",
+      "<h3><a href=\"/ja/toppikku/rust-open-source/index.html\">Rust とオープンソース</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/fr/topics/blockchain-digital-assets/[^\"]+\">Blockchain &amp; Digital Assets</a></h3>",
+      "<h3><a href=\"/ja/toppikku/blockchain-digital-assets/index.html\">ブロックチェーンとデジタル資産</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Lattice-based cryptography, NIST PQC standards, quantum-safe payments,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">格子ベース暗号、NIST PQC 標準、量子耐性決済、そして「Harvest Now, Decrypt Later」の脅威。金融サービスのセキュリティチーム向けのリサーチノート、オープンソースライブラリ、移行ガイド。</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Cross-border message migration, structured-address compliance,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">国際送金メッセージへの移行、構造化アドレス遵守、SEPA Instant、SWIFT gpi、そしてホールセール決済レール。ツール、ガイド、規制スケジュール。</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Generative AI, multimodal LLMs, voice, and speech models[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">生成AI、マルチモーダルLLM、音声・スピーチモデル。これらが Tier-1 機関で銀行オペレーション、顧客対応、製品エンジニアリングをどのように再設計しているか。</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Open-source Rust libraries I author and maintain:[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">私が執筆・維持しているオープンソース Rust ライブラリ:ロギング、コード生成、日時、暗号プリミティブ、Kyber ベース KEM、Rust 製の静的サイトジェネレータ。</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Bitcoin, blockchain fundamentals, ERC-20 tokens, stablecoins,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">ビットコイン、ブロックチェーンの基礎、ERC-20 トークン、ステーブルコイン、そしてデジタル資産担保決済レール周辺の規制枠組み。</p>"
+    ],
+    [
+      "(\\d+) article\\(s\\)</p>",
+      "\\1 件の記事</p>"
+    ],
+    [
+      "INDUSTRY WHITE PAPER · EPAA",
+      "業界ホワイトペーパー · EPAA"
+    ],
+    [
+      "INDUSTRY WHITE PAPER",
+      "業界ホワイトペーパー"
+    ],
+    [
+      "PUBLICATION · WHITE PAPER",
+      "刊行物 · ホワイトペーパー"
+    ],
+    [
+      ">RESEARCH NOTES</p>",
+      ">リサーチノート</p>"
+    ],
+    [
+      ">RESEARCH NOTE · QUANTUM<",
+      ">リサーチノート · 量子<"
+    ],
+    [
+      ">RESEARCH · CRYPTOGRAPHY<",
+      ">リサーチ · 暗号<"
+    ],
+    [
+      ">RESEARCH · AI<",
+      ">リサーチ · AI<"
+    ],
+    [
+      ">RESEARCH · QUANTUM FINANCE<",
+      ">リサーチ · 量子金融<"
+    ],
+    [
+      ">RESEARCH · QUANTUM BANKING<",
+      ">リサーチ · 量子銀行<"
+    ],
+    [
+      "WHITE PAPER",
+      "ホワイトペーパー"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">ホワイトペーパーを読む</a>"
+    ],
+    [
+      "title=\"Read the white paper \\(PDF\\)\"",
+      "title=\"ホワイトペーパーを読む (PDF)\""
+    ],
+    [
+      ">About EPAA</a>",
+      ">EPAA について</a>"
+    ],
+    [
+      "title=\"Visit the Emerging Payments Association Asia\"",
+      "title=\"Emerging Payments Association Asia にアクセスする\""
+    ],
+    [
+      ">Buy &middot; \\$([0-9]+)\\.([0-9]+)</a>",
+      ">購入 &middot; $\\1.\\2</a>"
+    ],
+    [
+      "title=\"Buy the publication on PayPal\"",
+      "title=\"PayPal で刊行物を購入\""
+    ],
+    [
+      ">Read the article</a>",
+      ">記事を読む</a>"
+    ],
+    [
+      " · Free download",
+      " · 無料ダウンロード"
+    ],
+    [
+      "Free download<",
+      "無料ダウンロード<"
+    ],
+    [
+      ">Download<",
+      ">ダウンロード<"
+    ],
+    [
+      ">Request access<",
+      ">アクセス申請<"
+    ],
+    [
+      ">English · PDF",
+      ">日本語 · PDF"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-01-(\\d{2})\">January \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-01-\\2\">\\1年1月\\2日</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-02-(\\d{2})\">February \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-02-\\2\">\\1年2月\\2日</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-03-(\\d{2})\">March \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-03-\\2\">\\1年3月\\2日</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-04-(\\d{2})\">April \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-04-\\2\">\\1年4月\\2日</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-05-(\\d{2})\">May \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-05-\\2\">\\1年5月\\2日</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-06-(\\d{2})\">June \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-06-\\2\">\\1年6月\\2日</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-07-(\\d{2})\">July \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-07-\\2\">\\1年7月\\2日</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-08-(\\d{2})\">August \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-08-\\2\">\\1年8月\\2日</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-09-(\\d{2})\">September \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-09-\\2\">\\1年9月\\2日</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-09-01\">September \\d{4}</time>",
+      "<time datetime=\"\\1-09-01\">\\1年9月</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-10-(\\d{2})\">October \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-10-\\2\">\\1年10月\\2日</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-11-(\\d{2})\">November \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-11-\\2\">\\1年11月\\2日</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-12-(\\d{2})\">December \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-12-\\2\">\\1年12月\\2日</time>"
+    ],
+    [
+      ">A system for real-time speech-to-text transcription that leverages OpenAI Whisper and Metal Performance Shaders GPU acceleration on macOS to achieve sub-second latency at 8-12x real-time on M1 Max\\.<",
+      ">OpenAI Whisper と macOS の Metal Performance Shaders GPU アクセラレーションを活用し、M1 Max でリアルタイム速度の 8〜12 倍、サブ秒のレイテンシを実現するリアルタイム音声テキスト変換システム。<"
+    ],
+    [
+      ">A new paper suggests Shor\\'s algorithm could run on as few as 10,000 qubits\\. The threshold for cryptographically relevant quantum computing is dropping fast\\.<",
+      ">新しい論文は、Shor のアルゴリズムが 1 万量子ビット程度で動作する可能性を示唆しています。暗号的に有意な量子計算の閾値は急速に低下しています。<"
+    ],
+    [
+      ">A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research\\.<",
+      ">LWE を解く Yilei Chen の量子アルゴリズムにバグが発見され、格子ベース暗号が一時的に安全になり、継続的な研究の必要性が浮き彫りになりました。<"
+    ],
+    [
+      ">New quantum algorithm solves a key cryptographic problem, urging accelerated research into quantum-safe security\\.<",
+      ">新しい量子アルゴリズムが重要な暗号問題を解決し、量子安全セキュリティの研究加速を促しています。<"
+    ],
+    [
+      ">How Fully Homomorphic Encryption revolutionises data security in banking and financial services, preserving privacy against quantum-era threats\\.<",
+      ">完全準同型暗号が銀行・金融サービスのデータセキュリティをどのように革新し、量子時代の脅威に対してプライバシーを保護するか。<"
+    ],
+    [
+      ">An analysis of Apple's MM1 paper on Multimodal Large Language Models — architecture, pre-training strategies and emerging capabilities\\.<",
+      ">Apple のマルチモーダル大規模言語モデルに関する MM1 論文の分析 — アーキテクチャ、事前学習戦略、創発的能力。<"
+    ],
+    [
+      ">How IBM Qiskit and the Quantum Fourier Transform reshape credit ratio analysis in finance, offering unprecedented accuracy and speed\\.<",
+      ">IBM Qiskit と量子フーリエ変換が金融の信用比率分析を再構築し、前例のない精度と速度を提供する方法。<"
+    ],
+    [
+      ">The transformative role of AI inside quantum algorithms for finance, focusing on their mathematical structure and banking applications\\.<",
+      ">金融向け量子アルゴリズム内における AI の変革的役割を、数学構造と銀行応用に焦点を当てて解説。<"
+    ],
+    [
+      ">As quantum computers threaten traditional encryption, Quantum Key Distribution \\(QKD\\) emerges as a structural answer for financial-grade security\\.<",
+      ">量子コンピュータが従来の暗号を脅かす中、量子鍵配送 (QKD) は金融グレードのセキュリティに対する構造的な答えとして浮上しています。<"
+    ],
+    [
+      ">How CRYSTALS-Kyber, the NIST-selected quantum-resistant key-encapsulation mechanism, is reshaping cryptography for the quantum era\\.<",
+      ">NIST が選定した量子耐性鍵カプセル化機構 CRYSTALS-Kyber が、量子時代の暗号をどのように再構築しているか。<"
+    ],
+    [
+      ">What kind of research and papers do you publish\\?</summary>",
+      ">どのようなリサーチや論文を公開していますか?</summary>"
+    ],
+    [
+      "(<summary[^>]*>どのようなリサーチや論文を公開していますか\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>2 つの軸が共存しています。Emerging Payments Association Asia (EPAA) などの組織向けに作成する<strong>業界ホワイトペーパー</strong>は、決済インフラの構造的変革を検証します。最近は暗号的に有意な量子コンピューティングがホールセールおよびリアルタイム決済レールに与える影響を扱いました。<strong>応用リサーチレポート</strong>は具体的な技術テーマ(例:Apple Silicon での Whisper + Metal Performance Shaders によるリアルタイム音声認識)を扱い、個別購入の PDF として公開されます。</p></section>"
+    ],
+    [
+      ">How often do you release new papers\\?</summary>",
+      ">新しい論文の公開頻度は?</summary>"
+    ],
+    [
+      "(<summary[^>]*>新しい論文の公開頻度は\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>頻度よりも質を優先するため、不定期です。短いリサーチノートは技術的なブレークスルーがあれば数週おきに公開されます。ホワイトペーパーは業界サイクル(規制スケジュール、EPAA カンファレンスなど)と連動して公開されます。</p></section>"
+    ],
+    [
+      ">About EPAA</p>",
+      ">EPAA について</p>"
+    ],
+    [
+      "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
+      "<p class=\"book-about\"><strong>Emerging Payments Association Asia (EPAA)</strong> はアジア太平洋地域の決済業界の業界団体で、銀行、プロセッサー、フィンテック、規制当局を業界横断的な構造的課題のもとに結集させています。"
+    ],
+    [
+      ">Quantum-Safe Payments: Why the Payments Industry Must Act Now<",
+      ">量子安全決済:決済業界が今すぐ行動すべき理由<"
+    ],
+    [
+      ">Accelerating Real-Time Speech Recognition with OpenAI Whisper and Metal Performance Shaders on macOS<",
+      ">macOS 上の OpenAI Whisper と Metal Performance Shaders によるリアルタイム音声認識の高速化<"
+    ],
+    [
+      ">Recent research and analysis<",
+      ">最近のリサーチと分析<"
+    ],
+    [
+      "September 2025 &middot; Emerging Payments Association Asia \\(EPAA\\)",
+      "2025年9月 &middot; Emerging Payments Association Asia (EPAA)"
+    ],
+    [
+      ">Quantum computing threatens the cryptographic foundations[^<]+",
+      ">量子コンピューティングは金融サービスの暗号基盤を脅かします。決済 — リアルタイムから国際送金まで — は、量子コンピューティングが最終的に陳腐化させる保護に依存しています。この EPAA ホワイトペーパーは、業界が今すぐ行動しなければならない理由を示します。"
+    ],
+    [
+      "2024 &middot; Independent Research &middot;",
+      "2024 &middot; 独立リサーチ &middot;"
+    ],
+    [
+      ">This independent research paper presents[^<]+",
+      ">この独立リサーチレポートは、OpenAI Whisper と Metal Performance Shaders を使用した macOS でのリアルタイム音声認識最適化を提示し、レイテンシとエネルギー効率の測定可能な向上を実証しています。"
+    ],
+    [
+      ">License &amp; pricing<",
+      ">ライセンスと価格<"
+    ],
+    [
+      ">One copy per buyer<",
+      ">購入者 1 名につき 1 部<"
+    ],
+    [
+      ">Questions\\?\\s*<span class=\"qa-headline-soft\">Answers\\.</span>",
+      ">質問は?<span class=\"qa-headline-soft\"> 回答します。</span>"
+    ],
+    [
+      ">Questions\\? Answers\\.</h2>",
+      ">質問は? 回答します。</h2>"
+    ],
+    [
+      ">Questions\\? Answers\\.<",
+      ">質問は? 回答します。<"
+    ],
+    [
+      ">Are the white papers free to read\\?</summary>",
+      ">ホワイトペーパーは無料で読めますか?</summary>"
+    ],
+    [
+      ">May I cite or quote from these papers\\?</summary>",
+      ">これらの論文を引用してもよいですか?</summary>"
+    ],
+    [
+      ">Who is the intended audience\\?</summary>",
+      ">想定読者は誰ですか?</summary>"
+    ],
+    [
+      ">Can I commission a paper or speak at an event\\?</summary>",
+      ">論文の委託やイベントでの講演を依頼できますか?</summary>"
+    ],
+    [
+      ">How do I follow new publications\\?</summary>",
+      ">新しい刊行物をどのようにフォローしますか?</summary>"
+    ],
+    [
+      ">Where can I follow new releases\\?</summary>",
+      ">新着情報はどこでフォローできますか?</summary>"
+    ],
+    [
+      "(<summary[^>]*>ホワイトペーパーは無料で読めますか\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>EPAA のホワイトペーパー <em>Quantum-Safe Payments</em> は <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a> で無料で公開ダウンロードできます。OpenAI Whisper と Metal Performance Shaders を使ったリアルタイム音声認識に関する独立リサーチレポートはライセンス付きで、49.00 ドルで個別購入可能です(英語、PDF、約 95 KB)。購入者 1 名につき 1 部、ダウンロードは個人利用のみで再配布はできません。</p></section>"
+    ],
+    [
+      "(<summary[^>]*>これらの論文を引用してもよいですか\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>はい。フェアユースの範囲内で出典を明示した短い引用は歓迎します。EPAA の刊行物については、EPAA を発行者として、ワーキンググループ、年、PDF の URL とともに引用してください。独立リサーチレポートについては、次のように引用してください:<em>Rousseau, S. (年). タイトル. 自己出版.</em> 正規 URL を付記。図や長い文章を再掲する場合は、事前に<a href=\"/ja/otoiawase/\">お問い合わせ</a>ください。</p></section>"
+    ],
+    [
+      "(<summary[^>]*>想定読者は誰ですか\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Tier-1 銀行、中央銀行、決済システム運営者、スキームオーナーの決済責任者、CISO、シニアアーキテクト。応用リサーチは、大規模言語モデル、オンデバイス AI、量子耐性暗号上で構築するエンジニアおよびプロダクトマネージャーを対象としています。各論文はドメイン知識を前提とし、現役プロフェッショナルが既に知っているリマインダーは省略しています。</p></section>"
+    ],
+    [
+      "(<summary[^>]*>論文の委託やイベントでの講演を依頼できますか\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>はい — 事前選定のうえケースバイケースで。委託はホールセール決済、ISO 20022 移行、金融サービス向けポスト量子暗号、銀行業務における応用 AI を扱います。業界カンファレンス、中央銀行フォーラム、規制当局ラウンドテーブルでの講演はケースバイケースで検討します。<a href=\"/ja/otoiawase/\">お問い合わせフォーム</a>にテーマ、聴衆、スケジュールを明記してください。</p></section>"
+    ],
+    [
+      "(<summary[^>]*>新しい刊行物をどのようにフォローしますか\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>新しい記事とリサーチノートは、サイトの <a href=\"/ja/rss.xml\">RSS フィード</a>とニュースレター <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> で優先的にお知らせします。ポスト量子暗号、中央銀行政策、主要決済スキームの移行ロードマップを扱います。スパムは送りません — 新着情報のみです。</p></section>"
+    ],
+    [
+      "(<summary[^>]*>新着情報はどこでフォローできますか\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p><a href=\"/ja/rss.xml\">RSS フィード</a>を購読するか、<a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a> でフォローして新着刊行物の情報を受け取ってください。</p></section>"
+    ],
+    [
+      ">Browse all projects<",
+      ">すべてのプロジェクトを見る<"
+    ],
+    [
+      ">Three areas of practice\\.\\s*<span",
+      ">3 つの実践領域。 <span"
+    ],
+    [
+      ">One philosophy\\.</span>",
+      ">ひとつの哲学。</span>"
+    ],
+    [
+      ">WHAT IS INSIDE<",
+      ">内容<"
+    ],
+    [
+      ">OPEN SOURCE FOR FINANCIAL SERVICES<",
+      ">金融サービスのためのオープンソース<"
+    ],
+    [
+      ">Payments and settlement\\.<",
+      ">決済とセトルメント。<"
+    ],
+    [
+      ">Post-quantum cryptography\\.<",
+      ">ポスト量子暗号。<"
+    ],
+    [
+      ">Tooling and infrastructure\\.<",
+      ">ツールとインフラ。<"
+    ],
+    [
+      ">Applied AI\\.<",
+      ">応用AI。<"
+    ],
+    [
+      ">Explore payments tools\\s+<",
+      ">決済ツールを探索 <"
+    ],
+    [
+      ">Explore quantum-safe libraries\\s+<",
+      ">量子安全ライブラリを探索 <"
+    ],
+    [
+      ">Explore developer tools\\s+<",
+      ">開発者ツールを探索 <"
+    ],
+    [
+      ">Explore PQC tools\\s+<",
+      ">PQC ツールを探索 <"
+    ],
+    [
+      ">Explore AI tools\\s+<",
+      ">AI ツールを探索 <"
+    ],
+    [
+      ">Authored & maintained<",
+      ">執筆・維持<"
+    ],
+    [
+      ">Authored &amp; maintained<",
+      ">執筆・維持<"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">金融の未来のためのオープンソース。<"
+    ],
+    [
+      "<p class=\"setup-card-body\">ISO 20022 <strong>pain\\.001</strong> and <strong>pacs\\.008</strong> toolkits[^<]*\\.[^<]*\\.</p>",
+      "<p class=\"setup-card-body\">ISO 20022 <strong>pain.001</strong> と <strong>pacs.008</strong> のツールキット、銀行明細パース、構造化国際送金メッセージへの移行のための Rust ライブラリ。SWIFT、SEPA、リアルタイム決済スキーム向けに設計。</p>"
+    ],
+    [
+      "<p class=\"setup-card-body\">Rust implementations of <strong>CRYSTALS-Kyber</strong>[^<]*\\.[^<]*\\.</p>",
+      "<p class=\"setup-card-body\"><strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203)、ハッシュプリミティブ、量子耐性ビルディングブロックの Rust 実装。金融認証の RSA・楕円曲線時代を超える保護。</p>"
+    ],
+    [
+      "<p class=\"setup-card-body\">Open-source Rust libraries for serialisation[\\s\\S]+?shippable\\.</p>",
+      "<p class=\"setup-card-body\">シリアライズ、ロギング、コード生成、日時のためのオープンソース Rust ライブラリ。さらにこのサイトを構築する <strong>Static Site Generator</strong> (SSG) と、それを出荷可能にする開発環境。</p>"
+    ],
+    [
+      ">ISO 20022 tooling for the global migration\\. Pain\\.001 file generation, pacs\\.008 cross-border credit transfers, and structured bank-statement parsing\\.<",
+      ">グローバル移行のための ISO 20022 ツール。Pain.001 ファイル生成、pacs.008 国際送金、構造化銀行明細パース。<"
+    ],
+    [
+      ">Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication\\.<",
+      ">CRYSTALS-Kyber、ハッシュ・ダイジェストプリミティブ、金融グレード認証のための量子耐性ビルディングブロックの Rust 実装。<"
+    ],
+    [
+      ">Applied artificial intelligence\\.<",
+      ">応用人工知能。<"
+    ],
+    [
+      ">Open-source AI projects applying speech recognition, natural language, and large language models to real-world finance and productivity problems\\.<",
+      ">音声認識、自然言語処理、大規模言語モデルを現実の金融・生産性課題に適用するオープンソース AI プロジェクト。<"
+    ],
+    [
+      ">A Python library that automates ISO 20022 pain\\.001 payment file creation from CSV or SQLite\\. Built for the global migration to structured cross-border messages\\.<",
+      ">CSV または SQLite から ISO 20022 pain.001 決済ファイルの作成を自動化する Python ライブラリ。構造化国際送金メッセージへのグローバル移行のために設計。<"
+    ],
+    [
+      ">Generate, validate, and deliver ISO 20022 pacs\\.008 payment messages for FI-to-FI customer credit transfers\\. JSON Schema \\+ XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.<",
+      ">金融機関間顧客信用送金のための ISO 20022 pacs.008 決済メッセージを生成、検証、配信。JSON Schema + XSD 検証、75 か国の IBAN、GDPR/PCI-DSS 準拠の個人情報マスキング。<"
+    ],
+    [
+      ">A finance-grade Python toolkit that turns multi-format bank statements into structured data — for the realities of real-world statement files and the audit demands of regulated environments\\.<",
+      ">マルチフォーマット銀行明細を構造化データに変換する金融グレードの Python ツールキット — 現実の明細ファイルと規制環境の監査要件に対応。<"
+    ],
+    [
+      ">A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting\\. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers\\.<",
+      ">AI 駆動型予測で複雑なファンド構造のキャッシュ配分を最適化する Rust アプリケーション。銀行と資産運用会社内のトレジャリー、ファンド会計、資産配分のユースケースを対象。<"
+    ],
+    [
+      ">A Rust library for generating and manipulating QR-code images in multiple formats\\. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows\\.<",
+      ">複数フォーマットの QR コード画像を生成・操作する Rust ライブラリ。直接の決済用途には SEPA 送金用の EPC QR コード、加盟店集金用の決済リンク QR、ステップアップ認証フローが含まれます。<"
+    ],
+    [
+      ">A robust Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for general-purpose post-quantum key encapsulation\\.<",
+      ">汎用ポスト量子鍵カプセル化のための NIST FIPS 203 標準 CRYSTALS-Kyber の堅牢な Rust 実装。<"
+    ],
+    [
+      ">Secure hash and digest algorithms for password encryption and verification, designed with a quantum-resistant posture for the post-PQC era\\.<",
+      ">パスワードの暗号化と検証のためのセキュアハッシュ・ダイジェストアルゴリズム。ポスト PQC 時代に向けて量子耐性の姿勢で設計。<"
+    ],
+    [
+      ">A fast, simple, and powerful cross-platform CLI for generating strong, unique, and random passwords backed by audited cryptographic primitives\\.<",
+      ">監査済み暗号プリミティブに支えられ、強力で一意かつランダムなパスワードを生成する、高速・シンプル・強力なクロスプラットフォーム CLI。<"
+    ],
+    [
+      ">An advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching\\. Built for both personal and executive use\\.<",
+      ">OpenAI の GPT を使用した高度な音声アシスタント。自然な対話、PDF 要約、効率的なキャッシュを提供。個人用途とエグゼクティブ用途の両方に対応。<"
+    ],
+    [
+      ">Convert audio to text in real-time using advanced AI speech recognition\\. Designed to unlock actionable insights from audio data and enhance customer and[^<]+",
+      ">高度な AI 音声認識でオーディオをリアルタイムにテキスト変換。オーディオデータから実行可能なインサイトを引き出し、顧客体験と業務を強化するように設計。<"
+    ],
+    [
+      ">Featured · Python · ISO 20022<",
+      ">注目 · Python · ISO 20022<"
+    ],
+    [
+      ">Python · ISO 20022<",
+      ">Python · ISO 20022<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · 金融<"
+    ],
+    [
+      ">Rust · Treasury · AI<",
+      ">Rust · トレジャリー · AI<"
+    ],
+    [
+      ">Rust · Payments QR<",
+      ">Rust · 決済 QR<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · 量子<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · セキュリティ<"
+    ],
+    [
+      ">AI · Voice<",
+      ">AI · 音声<"
+    ],
+    [
+      ">AI · Speech<",
+      ">AI · 音声<"
+    ],
+    [
+      ">PAYMENTS<",
+      ">決済<"
+    ],
+    [
+      ">POST-QUANTUM CRYPTOGRAPHY<",
+      ">ポスト量子暗号<"
+    ],
+    [
+      ">AI AND VOICE<",
+      ">AI と音声<"
+    ],
+    [
+      ">DEVELOPER TOOLING<",
+      ">開発者ツール<"
+    ],
+    [
+      ">OPEN-SOURCE RUST<",
+      ">オープンソース Rust<"
+    ],
+    [
+      ">WEB AND DEVELOPER ENVIRONMENT<",
+      ">ウェブと開発環境<"
+    ],
+    [
+      ">Tooling\\.<",
+      ">ツール。<"
+    ],
+    [
+      ">Rust libraries and tooling\\.</h2>",
+      ">Rust ライブラリとツール。</h2>"
+    ],
+    [
+      "<p class=\"cat-lede\">Open-source Rust projects across serialisation, logging, code generation, math, and developer tooling — including the static site generator behind this site\\.</p>",
+      "<p class=\"cat-lede\">シリアライズ、ロギング、コード生成、数学、開発者ツールに渡るオープンソース Rust プロジェクト — このサイトの背後にある静的サイトジェネレータを含みます。</p>"
+    ],
+    [
+      ">Web, templates and environment\\.</h2>",
+      ">ウェブ、テンプレート、環境。</h2>"
+    ],
+    [
+      "<p class=\"cat-lede\">Starter templates, two industry-focused publications, a CSS framework, and the dotfiles that keep a development environment reproducible\\.</p>",
+      "<p class=\"cat-lede\">スターターテンプレート、2 つの業界特化型刊行物、CSS フレームワーク、開発環境の再現性を保つ dotfiles。</p>"
+    ],
+    [
+      ">What licence are these projects released under\\?</summary>",
+      ">これらのプロジェクトはどのライセンスで公開されていますか?</summary>"
+    ],
+    [
+      ">Are these projects production-ready\\?</summary>",
+      ">これらのプロジェクトは本番運用に対応していますか?</summary>"
+    ],
+    [
+      ">How can I contribute or report an issue\\?</summary>",
+      ">どのように貢献または問題報告できますか?</summary>"
+    ],
+    [
+      ">Can I use these libraries in a regulated banking environment\\?</summary>",
+      ">規制下の銀行環境でこれらのライブラリを使用できますか?</summary>"
+    ],
+    [
+      ">Do you offer commercial support or consulting\\?</summary>",
+      ">商用サポートやコンサルティングを提供していますか?</summary>"
+    ],
+    [
+      ">How do I follow new releases\\?</summary>",
+      ">新しいリリースをどのようにフォローしますか?</summary>"
+    ],
+    [
+      "(<summary[^>]*>これらのプロジェクトはどのライセンスで公開されていますか\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>すべてのプロジェクトは <strong>Apache-2.0</strong> ライセンスで公開されています。各リポジトリのルートにある <code>LICENSE</code> ファイルが信頼できる情報源です。</p></section>"
+    ],
+    [
+      "(<summary[^>]*>これらのプロジェクトは本番運用に対応していますか\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>プロジェクトによります。<em>v1.x</em> とマークされたライブラリは安定化され負荷下でテスト済みです。v1 以前は堅実な基盤ですが進化する可能性があります。各リポジトリの README に現在の状況が詳述されています。本番利用の具体的な保証が必要な場合は<a href=\"/ja/otoiawase/\">お問い合わせ</a>ください。</p></section>"
+    ],
+    [
+      "(<summary[^>]*>どのように貢献または問題報告できますか\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>各プロジェクトは <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a> に公開 GitHub リポジトリがあります。問題を記述する Issue を開く(最小再現可能例を歓迎)か、Issue にリンクした Pull Request を提出してください。貢献は <em>Developer Certificate of Origin</em> に従い、署名済みコミットが必要です。</p></section>"
+    ],
+    [
+      "(<summary[^>]*>規制下の銀行環境でこれらのライブラリを使用できますか\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>はい、通常の注意のもとで。これらのライブラリは独立したオープンソース作品であり、規制対象製品ではありません。決済インフラ上の本番展開前に、通常のサプライチェーン、セキュリティ、依存関係レビューのプロセス(社内ミラー経由のベンダリング、SBOM スキャン、Git SHA または暗号フィンガープリントによるピン留め)を適用してください。</p></section>"
+    ],
+    [
+      "(<summary[^>]*>商用サポートやコンサルティングを提供していますか\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>はい、事前選定のうえで。委託は ISO&nbsp;20022 移行、ポスト量子移行ロードマップ、金融サービス向け応用 AI を扱います。<a href=\"/ja/otoiawase/\">お問い合わせ</a>に、簡単なブリーフ、スケジュール、適用される制約を添えてご連絡ください。</p></section>"
+    ],
+    [
+      "(<summary[^>]*>新しいリリースをどのようにフォローしますか\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>サイト上のすべての日付付き記事は、<a href=\"/ja/rss.xml\">RSS フィード</a>とニュースレター <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a> でお知らせします。個別リポジトリも GitHub でリリースを公開しており、直接フォローできます。</p></section>"
+    ],
+    [
+      ">GET IN TOUCH<",
+      ">お問い合わせ<"
+    ],
+    [
+      ">Have an idea\\? Let's build it\\.<",
+      ">アイデアはありますか? 一緒に構築しましょう。<"
+    ],
+    [
+      ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
+      ">オープンソースコラボレーション、委託エンジニアリング、または決済の未来に関する会話。お好みのスタイルでどうぞ。<"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">FEATURED</p>",
+      "<p class=\"newsroom-kicker\">注目</p>"
+    ],
+    [
+      ">Latest Music</h2>",
+      ">最新の音楽</h2>"
+    ],
+    [
+      ">Latest playlist</h2>",
+      ">最新のプレイリスト</h2>"
+    ],
+    [
+      ">Soulful, jazz and downtempo</h2>",
+      ">ソウル、ジャズ、ダウンテンポ</h2>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">MORNING & MOOD</p>",
+      "<p class=\"newsroom-kicker\">朝とムード</p>"
+    ],
+    [
+      ">Morning, mood and chill</h2>",
+      ">朝、ムード、チル</h2>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">ELECTRONIC</p>",
+      "<p class=\"newsroom-kicker\">エレクトロニック</p>"
+    ],
+    [
+      ">Electronic, house and techno</h2>",
+      ">エレクトロニック、ハウス、テクノ</h2>"
+    ],
+    [
+      ">Pop, rock and alternative</h2>",
+      ">ポップ、ロック、オルタナティブ</h2>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">FOCUS</p>",
+      "<p class=\"newsroom-kicker\">集中</p>"
+    ],
+    [
+      ">Focus and productivity</h2>",
+      ">集中と生産性</h2>"
+    ],
+    [
+      ">Smooth Jazz, Neo Soul, and laid-back grooves[^<]+",
+      ">スムーズジャズ、ネオソウル、ゆったりとしたグルーヴ。一日のテンポを落としたいときのためのプレイリスト。"
+    ],
+    [
+      ">This page has a comprehensive list[^<]+",
+      ">このページでは、幅広いジャンルにわたる最も人気で批評家に評価された Spotify プレイリストの厳選を紹介します。ジャズ、ソウル、ヒップホップ、エレクトロニックのファンを問わず、お好みに合うプレイリストが見つかります。"
+    ],
+    [
+      ">Step into the harmonious realm of TETRA\\.[^<]+",
+      ">TETRA の調和に満ちた世界へ。気分を高め、魂を喜びで満たすために設計された幸福感あふれるプレイリスト。"
+    ],
+    [
+      ">Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
+      ">ジャズ、ソウル、R&amp;B、ネオソウルのビートを厳選したこのプレイリストで、リラックスして夏の本質を抱きしめてください。"
+    ],
+    [
+      ">A deep dive into the quintessential collection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
+      ">ジャズ、ソウル、R&amp;B、ネオソウルのビートの真髄を深く掘り下げます。"
+    ],
+    [
+      ">Take a break from a busy day and relax with soothing nu jazz and downtempo beats\\.",
+      ">忙しい一日からひと息ついて、心地よいニュージャズとダウンテンポのビートでリラックス。"
+    ],
+    [
+      ">Soulful tracks with a fashion-forward vibe\\. Music to set the tone for a productive and stylish day\\.",
+      ">先進的なファッションの雰囲気を持つソウルフルなトラック。生産的でスタイリッシュな一日のトーンを決める音楽。"
+    ],
+    [
+      ">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms\\.",
+      ">生きる喜びを祝い、鮮やかな感情、色彩、ソウルフルなリズムの世界に飛び込みましょう。"
+    ],
+    [
+      ">Laid-back beats, house-influenced grooves and new deep house tracks\\.",
+      ">ゆったりとしたビート、ハウスの影響を受けたグルーヴ、新しいディープハウスのトラック。"
+    ],
+    [
+      ">Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience\\.",
+      ">ファンキーディスコ、ハウス、フレンチタッチなどのジャンルをシームレスにブレンドし、ウルトラクールでエネルギッシュな音楽体験を。"
+    ],
+    [
+      ">A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke\\.",
+      ">Madeon や Fred Falke のようなアーティストによるニューディスコ、フレンチハウス、エレクトロ、ディスコハウスをフィーチャーした音の旅。"
+    ],
+    [
+      ">Laid-back beats, hip-hop-influenced grooves and new indie pop tracks\\.",
+      ">ゆったりとしたビート、ヒップホップの影響を受けたグルーヴ、新しいインディーポップのトラック。"
+    ],
+    [
+      ">Original Hip Hop, Rap and R(?:&amp;|&)B Flavor Sessions\\.",
+      ">オリジナルのヒップホップ、ラップ、R&amp;B フレーバーセッション。"
+    ],
+    [
+      ">Brace yourself for hardcore rap and hip hop tracks\\.",
+      ">ハードコアラップとヒップホップのトラックに備えてください。"
+    ],
+    [
+      ">A few of the favourite hip-hop gems\\.",
+      ">お気に入りのヒップホップの宝石たち。"
+    ],
+    [
+      ">Soulful beats and thoughtful lyrics\\. A captivating look into the world of contemporary hip hop, R(?:&amp;|&)B and rap\\.",
+      ">ソウルフルなビートと思慮深いリリック。コンテンポラリーヒップホップ、R&amp;B、ラップの世界への魅力的な視点。"
+    ],
+    [
+      ">Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats\\.",
+      ">この見事な Lo-Fi ヒップホップビートのプレイリストでゆったりとした雰囲気とまろやかなリズムを。"
+    ],
+    [
+      ">Celebrate the diverse heritage of African music\\. From the soulful rhythms of Wassoulou to the lively beats of Londonko\\.",
+      ">アフリカ音楽の豊かな多様性を祝います。ワッスールーのソウルフルなリズムからロンドンコの軽快なビートまで。"
+    ],
+    [
+      "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
+      "aria-label=\"タグ: \\1, \\2 件の記事\""
+    ],
+    [
+      "(\\(\\d+) Posts\\)",
+      "\\1 件の記事)"
+    ],
+    [
+      ">Featured Tags \\((\\d+)\\)</h2>",
+      ">注目のタグ (\\1)</h2>"
+    ],
+    [
+      ">Featured Tags<",
+      ">注目のタグ<"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"/fr/contact/\">Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/ja/otoiawase/\">お問い合わせ</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">お問い合わせ</a>"
+    ],
+    [
+      "Made with Static Site Generator: Rust-Powered SSG",
+      "Static Site Generator で作成:Rust 製の SSG"
+    ],
+    [
+      "Static Site Generator is a Rust-based static site generator built for performance, accessibility and SEO\\. Lightning-fast builds with first-class JSON-LD\\.",
+      "Static Site Generator は、パフォーマンス、アクセシビリティ、SEO のために設計された Rust 製の静的サイトジェネレータです。JSON-LD をネイティブサポートする超高速ビルド。"
+    ],
+    [
+      "Website created with Static Site Generator \\(SSG\\)",
+      "Static Site Generator (SSG) で作成されたウェブサイト"
+    ],
+    [
+      "The Static Site Generator \\(SSG\\) is a lightning-fast tool for Search Engine Optimisation \\(SEO\\) and compliance to Accessibility Standards\\.",
+      "Static Site Generator (SSG) は、SEO とアクセシビリティ標準への準拠を実現する超高速ツールです。"
+    ],
+    [
+      "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
+      "トピックとタグの索引:AI、決済、量子、Rust OSS"
+    ],
+    [
+      "Browse Sebastien Rousseau's site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more\\.",
+      "Sebastien Rousseau のサイトをトピックとタグで閲覧:AI、決済、ISO 20022、ポスト量子暗号、Rust オープンソースなど。"
+    ],
+    [
+      "Website Accessibility Statement — Standards &amp; Contact",
+      "サイトアクセシビリティ・ステートメント — 標準と連絡先"
+    ],
+    [
+      "This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility\\.",
+      "このステートメントは、当サイトのアクセシビリティ、改善の取り組み、ウェブアクセシビリティに関するお問い合わせ方法について説明します。"
+    ],
+    [
+      "Privacy Statement — How Your Data Is Collected &amp; Used",
+      "プライバシーポリシー — データの収集と利用について"
+    ],
+    [
+      "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website",
+      "このページでは、当サイト利用時の個人データの収集、利用、開示に関する当社のポリシーをお知らせします"
+    ],
+    [
+      "Let's Start a Conversation That Will Make a Real Difference",
+      "本当の違いを生む対話を始めましょう"
+    ],
+    [
+      "Have a question or comment\\? Please contact me using the form below\\. I am always happy to hear from you and will respond as soon as possible\\.",
+      "ご質問やコメントはありますか? 下記フォームからお問い合わせください。お返事は可能な限り早く差し上げます。"
+    ],
+    [
+      "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
+      "サイト利用規約 — Sebastien Rousseau"
+    ],
+    [
+      "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations\\.",
+      "本ウェブサイトにアクセスすることで、本利用規約および適用されるすべての法令の遵守に同意したものとみなされます。"
+    ],
+    [
+      ">Latest research<",
+      ">最新のリサーチ<"
+    ],
+    [
+      ">Read latest research<",
+      ">最新のリサーチを読む<"
+    ],
+    [
+      ">Featured articles<",
+      ">注目の記事<"
+    ],
+    [
+      ">All articles<",
+      ">すべての記事<"
+    ],
+    [
+      ">Read more<",
+      ">続きを読む<"
+    ],
+    [
+      ">Read full article<",
+      ">記事全文を読む<"
+    ],
+    [
+      ">Newest first<",
+      ">新しい順<"
+    ],
+    [
+      ">Oldest first<",
+      ">古い順<"
+    ],
+    [
+      ">By topic<",
+      ">トピック別<"
+    ],
+    [
+      ">All topics<",
+      ">すべてのトピック<"
+    ],
+    [
+      ">By tag<",
+      ">タグ別<"
+    ],
+    [
+      ">All tags<",
+      ">すべてのタグ<"
+    ],
+    [
+      ">Published<",
+      ">公開日<"
+    ],
+    [
+      ">Updated<",
+      ">更新日<"
+    ],
+    [
+      ">Open source<",
+      ">オープンソース<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">執筆・維持<"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">金融の未来のためのオープンソース。<"
+    ],
+    [
+      ">A portfolio of",
+      ">ポートフォリオ:"
+    ],
+    [
+      ">Start a conversation<",
+      ">対話を始める<"
+    ],
+    [
+      ">Drop me a line<",
+      ">メッセージを送る<"
+    ],
+    [
+      ">Learn more<",
+      ">詳しく見る<"
+    ],
+    [
+      ">Subscribe<",
+      ">登録する<"
+    ],
+    [
+      ">Follow<",
+      ">フォロー<"
+    ],
+    [
+      ">Latest<",
+      ">最新<"
+    ],
+    [
+      "<h1>White Papers (?:&amp;|&) Research</h1>",
+      "<h1>ホワイトペーパーとリサーチ</h1>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/post-quantum-cryptography/[^\"]*\">Post-Quantum Cryptography</a></h3>",
+      "<h3><a href=\"/ja/toppikku/post-quantum-cryptography/index.html\">ポスト量子暗号</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/iso-20022-payments/[^\"]*\">ISO 20022 &amp; Payments</a></h3>",
+      "<h3><a href=\"/ja/toppikku/iso-20022-payments/index.html\">ISO 20022 と決済</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/applied-ai-banking/[^\"]*\">Applied AI in Banking</a></h3>",
+      "<h3><a href=\"/ja/toppikku/applied-ai-banking/index.html\">銀行業務における応用AI</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/rust-open-source/[^\"]*\">Rust &amp; Open Source</a></h3>",
+      "<h3><a href=\"/ja/toppikku/rust-open-source/index.html\">Rust オープンソース</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/blockchain-digital-assets/[^\"]*\">Blockchain &amp; Digital Assets</a></h3>",
+      "<h3><a href=\"/ja/toppikku/blockchain-digital-assets/index.html\">ブロックチェーンとデジタル資産</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">Tracks to kick off the day or shift the room\\. Fashion\\-forward soul, vivid colour, and laid\\-back energy\\.</p>",
+      "<p class=\"newsroom-lede\">一日を始めたり、空気を変えたりするためのトラック。先進的なファッションのソウル、鮮やかな色彩、ゆったりとしたエネルギー。</p>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">Funky disco, French touch and electro\\. Energetic listening for movement, focus or the dance floor\\.</p>",
+      "<p class=\"newsroom-lede\">ファンキーディスコ、フレンチタッチ、エレクトロ。動き、集中、ダンスフロアのためのエネルギッシュな音楽。</p>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo\\-Fi\\. The full breadth of beats\\.</p>",
+      "<p class=\"newsroom-lede\">オリジナルのヒップホップセッションからハードコアラップ、コンテンポラリー R&B、Lo-Fi まで。ビートのすべてを網羅します。</p>"
+    ]
+  ]
+}
