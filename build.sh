@@ -24,6 +24,17 @@ ssg -n=docs -c=_posts -t=_layouts -o=public
 # Static Site Generator doesn't pick up theme-init.js as a managed asset; we ship it as-is.
 cp -f _layouts/theme-init.js public/theme-init.js
 
+# Mirror .well-known/ into the build output so the OpenPGP Web Key
+# Directory (WKD) endpoint is served at
+#   https://sebastienrousseau.com/.well-known/openpgpkey/hu/<hash>
+# Researchers verify the disclosure key here per .github/SECURITY.md
+# in the sebastienrousseau/dotfiles repo. Files are static; no
+# post-processing applies.
+if [[ -d .well-known ]]; then
+  mkdir -p public/.well-known
+  cp -R .well-known/. public/.well-known/
+fi
+
 # Copy fingerprinted assets to their unfingerprinted aliases so the layouts'
 # /main.js, /sw.js, /highlight.css references resolve.
 for f in public/main.*.js public/sw.*.js public/theme-init.*.js public/highlight.*.css; do
