@@ -1,0 +1,99 @@
+{
+  "_comment": "Brazilian Portuguese static-page metadata — DRAFT pending native review. Mirrors EN/FR/ES/AR static_pages.json shape.",
+  "404": {
+    "title": "Página não encontrada — Sebastien Rousseau",
+    "subtitle": "Desculpe, esta página não existe.",
+    "description": "A página solicitada não foi encontrada. Volte ao início ou utilize a busca.",
+    "keywords": "404, página não encontrada"
+  },
+  "about": {
+    "title": "Sobre — Sebastien Rousseau",
+    "subtitle": "Moldar o futuro dos serviços bancários e financeiros pela integração estratégica da inteligência artificial, da criptografia pós-quântica e da tecnologia blockchain.",
+    "description": "Sebastien Rousseau, tecnólogo bancário sênior: IA aplicada, migração para ISO 20022, criptografia pós-quântica, transformação estrutural dos pagamentos de atacado.",
+    "keywords": "Sebastien Rousseau, biografia, banco, pagamentos, IA, ISO 20022, criptografia pós-quântica, HSBC, PayPal, Barclays"
+  },
+  "accessibility": {
+    "title": "Acessibilidade — Sebastien Rousseau",
+    "subtitle": "Comprometidos com a acessibilidade digital das pessoas com deficiência.",
+    "description": "Declaração de acessibilidade: conformidade com WCAG 2.2 AA, princípios inclusivos, retorno e dados de contato para reportar problemas.",
+    "keywords": "acessibilidade, WCAG, conformidade, inclusão digital, auditoria"
+  },
+  "articles": {
+    "title": "Artigos — Sebastien Rousseau",
+    "subtitle": "Artigos sobre IA, criptografia pós-quântica, ISO 20022 e o futuro dos pagamentos.",
+    "description": "Artigos sobre IA aplicada, criptografia pós-quântica, pagamentos ISO 20022 e a transformação dos pagamentos de atacado.",
+    "keywords": "artigos, pesquisa, IA, criptografia pós-quântica, ISO 20022, pagamentos de atacado"
+  },
+  "contact": {
+    "title": "Contato — Sebastien Rousseau",
+    "subtitle": "Tem uma pergunta ou precisa de orientação? Escreva-me.",
+    "description": "Entre em contato com Sebastien Rousseau para consultoria em transformação de pagamentos, migração para ISO 20022 ou estratégia pós-quântica.",
+    "keywords": "contato, consultoria, pagamentos, ISO 20022, criptografia pós-quântica"
+  },
+  "made-with-shokunin": {
+    "title": "Feito com Shokunin — Sebastien Rousseau",
+    "subtitle": "Descubra como utilizar o gerador de sites estáticos de nova geração.",
+    "description": "Este site é feito com Shokunin, um gerador de sites estáticos em Rust otimizado para desempenho e SEO.",
+    "keywords": "Shokunin, SSG, Rust, desempenho, SEO"
+  },
+  "made-with-static-site-generator": {
+    "title": "Feito com Static Site Generator — Sebastien Rousseau",
+    "subtitle": "Descubra como utilizar o gerador de sites estáticos de nova geração.",
+    "description": "Este site é gerado com Shokunin, um gerador de sites estáticos rápido escrito em Rust.",
+    "keywords": "Shokunin, gerador de sites estáticos, Rust, desempenho"
+  },
+  "offline": {
+    "title": "Sem conexão — Sebastien Rousseau",
+    "subtitle": "Verifique sua conexão e tente novamente.",
+    "description": "Você está sem conexão. Reconecte-se para acessar o conteúdo.",
+    "keywords": "sem conexão, offline, PWA"
+  },
+  "papers": {
+    "title": "Publicações — Sebastien Rousseau",
+    "subtitle": "White papers setoriais e pesquisa aplicada para executivos sêniores em pagamentos e segurança.",
+    "description": "Artigos, relatórios e publicações de Sebastien Rousseau sobre IA, pagamentos ISO 20022 e criptografia pós-quântica.",
+    "keywords": "publicações, artigos, relatórios, pesquisa, ISO 20022, IA, criptografia pós-quântica"
+  },
+  "playlists": {
+    "title": "Listas de reprodução — Sebastien Rousseau",
+    "subtitle": "Playlists do Spotify selecionadas para deep work, criatividade e mentalidade de engenharia.",
+    "description": "Seleção musical e de escuta de Sebastien Rousseau.",
+    "keywords": "playlists, música, listas de reprodução"
+  },
+  "privacy": {
+    "title": "Política de privacidade — Sebastien Rousseau",
+    "subtitle": "Sua privacidade é importante.",
+    "description": "Como este site coleta, utiliza e protege seus dados. Medição de audiência anônima, cookies, hospedagem e direitos da LGPD/RGPD.",
+    "keywords": "privacidade, LGPD, RGPD, cookies, dados pessoais, analytics"
+  },
+  "projects": {
+    "title": "Projetos — Sebastien Rousseau",
+    "subtitle": "Projetos de código aberto em Python, Rust e JavaScript para o futuro das finanças.",
+    "description": "Portfólio de bibliotecas de código aberto que Sebastien Rousseau mantém para pagamentos, liquidação transfronteiriça e criptografia resistente ao quântico.",
+    "keywords": "projetos de código aberto, Python, Rust, pagamentos, ISO 20022, criptografia pós-quântica"
+  },
+  "tags": {
+    "title": "Etiquetas — Sebastien Rousseau",
+    "subtitle": "Navegue pelo site por tema: IA, pagamentos, criptografia pós-quântica, código aberto.",
+    "description": "Navegue pelos artigos por etiqueta: IA, ISO 20022, blockchain, criptografia pós-quântica e muito mais.",
+    "keywords": "etiquetas, tags, navegação por tema"
+  },
+  "terms": {
+    "title": "Termos de uso — Sebastien Rousseau",
+    "subtitle": "Termos gerais de uso do site.",
+    "description": "Termos gerais de uso do site sebastienrousseau.com: licença do conteúdo, restrições, marcas e jurisdição.",
+    "keywords": "termos, aviso legal, licença, copyright"
+  },
+  "thanks": {
+    "title": "Obrigado — Sebastien Rousseau",
+    "subtitle": "Obrigado por entrar em contato!",
+    "description": "Obrigado por sua mensagem. Responderei em breve.",
+    "keywords": "obrigado"
+  },
+  "topics": {
+    "title": "Tópicos — Sebastien Rousseau",
+    "subtitle": "Artigos sobre IA, criptografia pós-quântica, ISO 20022 e o futuro dos pagamentos.",
+    "description": "Explore as análises por tema: IA aplicada, pagamentos ISO 20022, criptografia pós-quântica e transformação dos pagamentos de atacado.",
+    "keywords": "tópicos, temas, IA, pagamentos, ISO 20022, criptografia pós-quântica"
+  }
+}

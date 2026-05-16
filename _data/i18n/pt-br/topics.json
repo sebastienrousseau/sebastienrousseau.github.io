@@ -1,0 +1,23 @@
+{
+  "_comment": "Brazilian Portuguese topic-cluster titles + ledes — DRAFT pending native review. Topic slugs are language-independent; only the displayed name and lede change. EN equivalents live in scripts/build_topics.py (TOPICS dict).",
+  "post-quantum-cryptography": {
+    "title": "Criptografia pós-quântica",
+    "lede": "Criptografia baseada em reticulados, padrões NIST PQC, pagamentos resistentes ao quântico e a ameaça «colher agora, decifrar depois». Notas de pesquisa, bibliotecas de código aberto e manuais de migração para as equipes de segurança dos serviços financeiros."
+  },
+  "iso-20022-payments": {
+    "title": "ISO 20022 e pagamentos",
+    "lede": "Migração das mensagens transfronteiriças, conformidade de endereços estruturados, SEPA Instant, SWIFT gpi e os trilhos de pagamentos de atacado que sustentam tudo. Ferramentas, manuais e calendário regulatório."
+  },
+  "applied-ai-banking": {
+    "title": "IA aplicada ao setor bancário",
+    "lede": "IA generativa, LLMs multimodais, voz e modelos de fala — e como estão redesenhando as operações bancárias, o atendimento ao cliente e a engenharia de produto nas instituições de primeira linha."
+  },
+  "rust-open-source": {
+    "title": "Rust e código aberto",
+    "lede": "Bibliotecas Rust de código aberto que escrevo e mantenho: logs, geração de código, data e hora, primitivas criptográficas, KEM baseado em Kyber e um gerador de sites estáticos em Rust."
+  },
+  "blockchain-digital-assets": {
+    "title": "Blockchain e ativos digitais",
+    "lede": "Blockchain e ativos digitais: tokenização, ERC-20, stablecoins, infraestrutura de criptomoedas e o arcabouço regulatório que os molda."
+  }
+}
