@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="hi-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 18 Mar 2024 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 18 Mar 2024 06:06:06 +0000" id="last-modified" />
+    <title>मल्टीमॉडल LLM से AI को आगे बढ़ाना: MM1 की सीख — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Apple के MM1 परिवार से मल्टीमॉडल LLM के प्रशिक्षण के बारे में सीख और अंतर्दृष्टि।">
+<meta name="keywords" content="MM1, Apple, मल्टीमॉडल, LLM, AI, vision, transformer, training, फाउंडेशन मॉडल, बेंचमार्क">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-1YpwIXKKgh53B07YrAjgvtzMOSFWXC6M1XRyWIA2EG8=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-V+4gQokLuSBsAEd6+rjrLAuEInhUBgDlkXBQzYxtrJ8=' 'sha256-cnzjCmTmUkSYhjivM3JzemFrKiZ0mNMzJwvgX3cFQ2I=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/hi/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom फ़ीड" href="/hi/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="मल्टीमॉडल LLM से AI को आगे बढ़ाना: MM1 की सीख — Sebastien Rousseau">
+<meta property="og:description" content="Apple के MM1 परिवार से मल्टीमॉडल LLM के प्रशिक्षण के बारे में सीख और अंतर्दृष्टि।">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/hi/2024-03-18-multimodal-llm-se-ai-ko-aage-badhana-mm1-drishtikon/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/mm1-visual.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="hi_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="मल्टीमॉडल LLM से AI को आगे बढ़ाना: MM1 की सीख — Sebastien Rousseau">
+<meta name="twitter:description" content="Apple के MM1 परिवार से मल्टीमॉडल LLM के प्रशिक्षण के बारे में सीख और अंतर्दृष्टि।">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/mm1-visual.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/hi/2024-03-18-multimodal-llm-se-ai-ko-aage-badhana-mm1-drishtikon/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-03-18-faire-avancer-l-ia-avec-les-llm-multimodaux-enseignements-de-mm1/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2024-03-18-ki-voranbringen-mit-multimodalen-llms-erkenntnisse-aus-mm1/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2024-03-18-avanzar-la-ia-con-llm-multimodales-lecciones-de-mm1/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2024-03-18-multimodal-llm-se-ai-ko-aage-badhana-mm1-drishtikon/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2024-03-18-far-progredire-lia-con-llm-multimodali-lezioni-da-mm1/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2024-03-18-marutimoodaru-llm-de-ai-wo-zenshin-mm1-kara-no-insaito/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2024-03-18-meolti-modeol-llm-euro-ai-baljeon-mm1-tongchal/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2024-03-18-ai-versterken-met-multimodale-llms-inzichten-uit-mm1/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2024-03-18-avancar-a-ia-com-llm-multimodais-licoes-do-mm1/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2024-03-18-razvitie-ii-s-multimodalnymi-llm-uroki-iz-mm1/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2024-03-18-yong-duomotai-llm-tuijin-ai-mm1-qishi/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2024-03-18-yong-duomotai-llm-tuijin-ai-mm1-qishi-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">मुख्य सामग्री पर जाएँ</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="नेविगेशन बदलें" />
+      <div class="wrap">
+        <a class="ap-brand" href="/hi/index.html" aria-label="Sebastien Rousseau मुख्य पृष्ठ">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="मुख्य नेविगेशन">
+          <ul class="ap-menu">
+            <li><a href="/hi/hamare-baare-mein/index.html">हमारे बारे में</a></li>
+            <li><a href="/hi/lekh/index.html" aria-current="page" class="active">लेख</a></li>
+            <li><a href="/hi/prakashan/index.html">प्रकाशन</a></li>
+            <li><a href="/hi/vishay/index.html">विषय</a></li>
+            <li><a href="/hi/pariyojanaen/index.html">परियोजनाएँ</a></li>
+            <li><a href="/hi/pleelist/index.html">प्लेलिस्ट</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="डार्क थीम चालू करें" aria-pressed="false" title="थीम बदलें">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="खोजें (Cmd या Ctrl + K)" title="खोजें (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="भाषा">
+            <button type="button" class="ap-lang-toggle" aria-label="HI, भाषा बदलें" aria-expanded="false" aria-haspopup="menu" title="भाषा बदलें">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">HI</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="जल्द आ रहा है">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="जल्द आ रहा है">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="जल्द आ रहा है">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="जल्द आ रहा है">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="जल्द आ रहा है">🇮🇱 עברית</span>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="जल्द आ रहा है">🇮🇩 Indonesia</span>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="जल्द आ रहा है">🇵🇱 Polski</span>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="जल्द आ रहा है">🇷🇴 Română</span>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="जल्द आ रहा है">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="जल्द आ रहा है">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="जल्द आ रहा है">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="जल्द आ रहा है">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="जल्द आ रहा है">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="जल्द आ रहा है">🇳🇬 Yorùbá</span>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/hi/sampark/index.html" aria-label="संपर्क करें">संपर्क करें ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="नेविगेशन बदलें">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>मल्टीमॉडल LLM से AI को आगे बढ़ाना: MM1 की सीख</h1>
+      <p class="sub">Apple के MM1 परिवार से प्रशिक्षण-निर्णयों की प्राप्तियाँ</p>
+    <nav class="article-tags" aria-label="विषय"><a href="/tags/index.html#h3-mm1" class="article-tag" rel="tag">MM1</a><a href="/tags/index.html#h3-apple" class="article-tag" rel="tag">Apple</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">मल्टीमॉडल</a><a href="/tags/index.html#h3-llm" class="article-tag" rel="tag">LLM</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">AI</a><a href="/tags/index.html#h3-vision" class="article-tag" rel="tag">vision</a><a href="/tags/index.html#h3-transformer" class="article-tag" rel="tag">transformer</a><a href="/tags/index.html#h3-training" class="article-tag" rel="tag">training</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">फाउंडेशन मॉडल</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">बेंचमार्क</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-03-18T06:06:06+00:00" class="meta-pub">प्रकाशित 18 Mar 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">अद्यतन 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="अनुमानित पठन-समय">8 मिनट का पठन</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>विषय-सूची</h2><ol><li><a href="#section-1">परिचय</a></li><li><a href="#la-emergencia-ia-multimodal">La emergencia का वह IA multimodal</a></li><li><a href="#el-estudio-mm1-hito-investigacion-ia-multimodal">El estudio MM1: एक hito का वह investigación IA multimodal</a></li><li><a href="#section-5">मुख्य निष्कर्ष और सीख</a></li><li><a href="#mm1-proceso-aprendizaje-multimodal">वास्तुकला के मॉडल MM1 और proceso का aprendizaje multimodal</a></li><li><a href="#mm1-referencia-ia-multimodal">MM1: एक referencia के लिए वह IA multimodal</a></li><li><a href="#section-9">निष्कर्ष</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Apple के MM1 परिवार से मल्टीमॉडल LLM के प्रशिक्षण के बारे में सीख और अंतर्दृष्टि।</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>परिचय.</strong> La integración के procesamiento के lenguaje natural और के reconocimiento का imágenes है conducido को विकास का वे grandes मॉडल का lenguaje multimodales (MLLM).</li>  <li><strong>La emergencia का वह IA multimodal.</strong> El campo का वह IA है conocido avances notables में वे últimos वर्ष, में particular में वह procesamiento के lenguaje natural (NLP) और वह visión द्वारा ordenador.</li>  <li><strong>El estudio MM1: एक hito का वह investigación IA multimodal.</strong> El estudio [MM1: Methods Analysis &amp; Insights from Multimodal LLM Pre-training ⧉][00] representa एक momento pivote में वह evolución का वे MLLM.</li>  <li><strong>मुख्य निष्कर्ष और सीख.</strong> El estudio MM1 है producido कई perspectivas revolucionarias जो हैं configurado nuestra comprensión का वे MLLM और का उसका potencial.</li></ul></aside><h2 id="section-1">परिचय <a class="heading-anchor" href="#section-1" aria-label="लिंक:  परिचय">#</a></h2>
+<p>La integración के procesamiento के lenguaje natural और के reconocimiento का imágenes है conducido को विकास का वे grandes मॉडल का lenguaje multimodales (MLLM). En उसका artículo, Apple presenta MM1, एक colección का मॉडल का IA multimodales जो combinan comprensión visual और lingüística. Tras experimentos exhaustivos, वे investigadores हैं examinado वे factores जो contribuyen को निष्पादन का ये मॉडल, explorando diversas elecciones arquitectónicas और combinaciones का डेटा का preentrenamiento. El artículo MM1 proporciona जानकारी अत्यावश्यक sobre वह manera में जो वे MLLM están estructurados और entrenados. Describe वह enfoque के estudio और उसके conclusiones cruciales, poniendo का manifiesto उसका संभव impacto में वह भविष्य का वह IA.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" fetchpriority="high">.class=&quot;m-10 w-100&quot;</p>
+<blockquote>
+<p><strong>TL;DR.</strong> Apple के MM1 परिवार से मल्टीमॉडल LLM के प्रशिक्षण के बारे में सीख और अंतर्दृष्टि। (DRAFT — मशीन-सहायता प्राप्त हिंदी अनुवाद; देशी समीक्षा लंबित।)</p>
+<p><strong>मुख्य निष्कर्ष</strong></p>
+<ul>
+<li>यह लेख एक तकनीकी विषय का विश्लेषण प्रस्तुत करता है।</li>
+<li>मुख्य अवधारणाएँ ऊपर परिभाषित की गई हैं।</li>
+<li>बैंकिंग और वित्तीय निहितार्थ नीचे विवेचित हैं।</li>
+<li>प्रौद्योगिकी, अंगीकार और जोखिमों पर दृष्टिकोण साझा किया गया है।</li>
+<li>दीर्घकालिक रुझान निष्कर्ष में सारांशित हैं।</li>
+</ul>
+</blockquote>
+<h2 id="la-emergencia-ia-multimodal">La emergencia का वह IA multimodal <a class="heading-anchor" href="#la-emergencia-ia-multimodal" aria-label="लिंक:  La emergencia का वह IA multimodal">#</a></h2>
+<p>El campo का वह IA है conocido avances notables में वे últimos वर्ष, में particular में वह procesamiento के lenguaje natural (NLP) और वह visión द्वारा ordenador. Los grandes मॉडल का lenguaje (LLM) हैं transformado वह manera में जो वे máquinas comprenden और generan वह lenguaje humano, permitiéndoles realizar tareas complejas जैसे वह traducción, वह सारांश का texto e यहाँ तक कि वह escritura creativa. De igual modo, वे न्यूरल नेटवर्क convolucionales (CNN) हैं revolucionado वह reconocimiento का imágenes, permitiendo को वे máquinas percibir e interpretar डेटा visuales के साथ एक precisión बिना precedentes.</p>
+<p>Los MLLM representan वह próxima frontera का वह IA, combinando वे fortalezas के NLP और वह visión द्वारा ordenador के लिए रचना मॉडल जो pueden tratar और generar जानकारी के माध्यम से texto e imágenes का manera पारदर्शी. Esta fusión का modalidades abre एक mundo का posibilidades, desde asistentes virtuales अधिक atractivos hasta उपकरण inteligentes का creación का contenido capaces का generar experiencias multimedia cautivadoras.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="el-estudio-mm1-hito-investigacion-ia-multimodal">El estudio MM1: एक hito का वह investigación IA multimodal <a class="heading-anchor" href="#el-estudio-mm1-hito-investigacion-ia-multimodal" aria-label="लिंक:  El estudio MM1: एक hito का वह investigación IA multimodal">#</a></h2>
+<p>El estudio <a href="https://arxiv.org/abs/2403.09611" title="MM1: Methods Analysis &amp; Insights from Multimodal LLM Pre-training"><strong>MM1: Methods Analysis &amp; Insights from Multimodal LLM Pre-training ⧉</strong></a> representa एक momento pivote में वह evolución का वे MLLM. Llevado को cabo द्वारा एक equipo का investigadores renombrados, aspiraba को sacar को वह luz वे componentes कुंजी और वे estrategias esenciales के लिए एक preentrenamiento eficaz का वे MLLM, centrándose में वह मॉडल MM1 जैसे referencia के लिए वह IA multimodal.</p>
+<h3 id="objetivos">कार्यप्रणाली और objetivos <a class="heading-anchor" href="#objetivos" aria-label="लिंक:  कार्यप्रणाली और objetivos">#</a></h3>
+<p>La publicación MM1 है empleado एक enfoque experimental riguroso के लिए investigar वे sutilezas का वह arquitectura multimodal और का वे estrategias का preentrenamiento. Los investigadores हैं explorado diversos aspectos के मॉडल, incluido वह codificador का imágenes, वह conector visión-lenguaje और वह selección का diversos conjuntos का डेटा का preentrenamiento. Analizando sistemáticamente ये componentes, वह estudio aspiraba को identificar वे factores críticos जो contribuyen को एक निष्पादन aumentado का वे MLLM.</p>
+<p>Un objetivo principal का वह investigación था determinar वह mezcla óptima का डेटा का preentrenamiento के लिए alcanzar capacidades का aprendizaje few-shot superiores. El aprendizaje few-shot designa वह capacidad का एक मॉडल के लिए adaptarse और aprender से शुरू होकर एक número limitado का ejemplos, एक aspecto crucial का वे तंत्र का IA जो deben ser flexibles और eficientes में condiciones reales.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="section-5">मुख्य निष्कर्ष और सीख <a class="heading-anchor" href="#section-5" aria-label="लिंक:  मुख्य निष्कर्ष और सीख">#</a></h2>
+<p>El estudio MM1 है producido कई perspectivas revolucionarias जो हैं configurado nuestra comprensión का वे MLLM और का उसका potencial. Una का वे conclusiones अधिक significativas है sido वह importancia का एक mezcla bien curada का डेटा का preentrenamiento. Los investigadores हैं descubierto जो combinar डेटा imagen-pie का foto, डेटा imagen-texto entrelazados और डेटा का solo texto था अत्यावश्यक के लिए alcanzar एक निष्पादन óptimo में aprendizaje few-shot. Esta perspectiva subraya वह necesidad का conjuntos का डेटा का preentrenamiento diversos और completos, capaces का captar वे matices का वह comunicación multimodal.</p>
+<p>Otro aspecto notable के estudio MM1 है वह inclusión tanto का मॉडल densos जो pueden alcanzar 30.000 millones का parámetros जैसे का variantes mixture-of-experts (MoE), demostrando वह मापनीयता और वह flexibilidad का वह arquitectura. El estudio है revelado जो वह resolución का imagen tiene वह impacto अधिक significativo sobre वह निष्पादन के मॉडल, अधिक अब भी जो वह tamaño के मॉडल, subrayando वह importancia का एक entrada visual का उच्च calidad में वह aprendizaje multimodal.</p>
+<p>La elección का वह arquitectura के codificador का imágenes, जैसे ResNet या ViT, influye significativamente में वह capacidad के मॉडल के लिए extraer características significativas का वे डेटा visuales और के लिए integrarlas के साथ वह जानकारी textual. Además, वह resolución का वे imágenes का entrada desempeña एक papel vital में वह determinación का वह calidad और वह granularidad का वे características visuales capturadas द्वारा वह मॉडल.</p>
+<p>El estudio MM1 भी pone का manifiesto वह importancia के conector visión-lenguaje के लिए अनुमति देना एक interacción fluida बीच वे modalidades visual और textual. Los investigadores हैं experimentado के साथ distintos enfoques के लिए fusionar वह जानकारी के codificador का imágenes और के मॉडल का lenguaje, identificando वे mecanismos का atención cruzada और वह atención multicabeza जैसे estrategias eficaces के लिए interacciones ricas और contextualmente pertinentes.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="mm1-proceso-aprendizaje-multimodal">वास्तुकला के मॉडल MM1 और proceso का aprendizaje multimodal <a class="heading-anchor" href="#mm1-proceso-aprendizaje-multimodal" aria-label="लिंक:  वास्तुकला के मॉडल MM1 और proceso का aprendizaje multimodal">#</a></h2>
+<p><img src="https://cloudcdn.pro/stocks/diagrams/mm1_model_architecture.svg" alt="MM1 Model Architecture" title="MM1 Model Architecture"  width="1200" height="800" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<p>El diagrama ilustra वह arquitectura और वह proceso का aprendizaje के मॉडल MM1. Los डेटा का preentrenamiento se componen का एक entrada का imagen और एक entrada का texto; वह entrada का imagen se trata mediante वह Image Encoder और वह entrada का texto alimenta directamente को transformer LLM preentrenado. El Image Encoder extrae वे características visuales का वे imágenes का entrada, जो se transmiten después को VL Connector (Vision-Language Connector). El VL Connector integra वे características visuales के साथ वह जानकारी textual के transformer LLM preentrenado. Esta fusión multimodal अनुमति देता है को मॉडल generar एक salida का captioning VQA (Visual Question Answering) mediante fine-tuning supervisado.</p>
+<p>La composición का वे डेटा का preentrenamiento incluye एक 45 % का डेटा entrelazados, एक 45 % का pies का foto और एक 10 % का डेटा का solo texto, subrayando वह importancia का tipos का डेटा diversos के लिए वह entrenamiento के मॉडल MM1.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="mm1-referencia-ia-multimodal">MM1: एक referencia के लिए वह IA multimodal <a class="heading-anchor" href="#mm1-referencia-ia-multimodal" aria-label="लिंक:  MM1: एक referencia के लिए वह IA multimodal">#</a></h2>
+<p>El मॉडल MM1, विकसित में वह marco के estudio, sirve जैसे referencia के लिए वह IA multimodal, demostrando वह potencial का वे MLLM में diversas अनुप्रयोग. Con उसका arquitectura cuidadosamente diseñada और उसका régimen का preentrenamiento, MM1 muestra एक निष्पादन excepcional में एक gama का tareas, desde वह visual question answering hasta वह captioning का imágenes.</p>
+<p>Una का वे fortalezas कुंजी का MM1 reside में उसका capacidad के लिए generar एक texto coherente और contextualmente pertinente से शुरू होकर एक entrada visual. Por ejemplo, presentado के साथ एक imagen का एक calle concurrida, MM1 puede generar एक descripción detallada और precisa, captando वह esencia का वह escena और poniendo का manifiesto elementos कुंजी जैसे वह arquitectura, वे personas और वे actividades.</p>
+<h3 id="implicaciones-direcciones-futuras">Implicaciones और direcciones futuras <a class="heading-anchor" href="#implicaciones-direcciones-futuras" aria-label="लिंक:  Implicaciones और direcciones futuras">#</a></h3>
+<p>Las conclusiones के estudio MM1 tienen implicaciones का gran alcance के लिए वह भविष्य का वह IA और के aprendizaje multimodal. Las lecciones extraídas का यह investigación proporcionan एक base sólida के लिए वह विकास का arquitecturas MLLM अधिक avanzadas और अधिक capaces, abriendo वह vía को तंत्र का IA capaces का navegar e interpretar का manera fluida वह mundo multimodal में वह जो vivimos.</p>
+<blockquote>
+<p>Vamos को inventar वह कल के बजाय preocuparnos द्वारा lo जो ocurrió बीते कल. — <strong>Steve Jobs</strong></p>
+</blockquote>
+<p>Una dirección का investigación futura emocionante है वह exploración का नए enfoques के लिए integrar जानकारी visual और textual के भीतर वे MLLM. El estudio MM1 है subrayado वह eficacia का वे mecanismos का atención cruzada और का वह atención multicabeza, परंतु queda एक vasto potencial के लिए नवाचार adicionales में यह campo. Los investigadores podrán investigar नई arquitecturas जो se adapten dinámicamente को contenido और वह estructura का वे डेटा का entrada, permitiendo interacciones multimodales अब भी अधिक flexibles और conscientes के contexto.</p>
+<p>Otra dirección prometedora है वह अनुप्रयोग का वे MLLM को escenarios reales, जैसे वे asistentes virtuales inteligentes, वे उपकरण educativas और वह generación का contenido creativo. La capacidad का वे MLLM के लिए tratar और generar जानकारी के माध्यम से texto e imágenes abre एक amplio abanico का posibilidades के लिए बेहतर बनाना वह comunicación humano-máquina और रचना experiencias अधिक atractivas e inmersivas.</p>
+<blockquote>
+<p>La próxima gran etapa का वह IA होंगे máquinas जो comprendan वह mundo जो वे rodea mucho mejor, siendo capaces का comprender और razonar sobre डेटा जो nunca antes हैं visto. — <strong>Yann LeCun</strong></p>
+</blockquote>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="section-9">निष्कर्ष <a class="heading-anchor" href="#section-9" aria-label="लिंक:  निष्कर्ष">#</a></h2>
+<p>El estudio MM1 representa एक hito significativo में वह evolución का वे grandes मॉडल का lenguaje multimodales, ofreciendo lecciones valiosas sobre वह arquitectura, वे estrategias का preentrenamiento और वह potencial का ये potentes तंत्र का IA. Al analizar meticulosamente वे componentes कुंजी और वे metodologías esenciales के लिए एक preentrenamiento MLLM eficaz, वह estudio है sentado वे bases का नवाचार futuras में IA multimodal.</p>
+<p>Las lecciones extraídas के estudio MM1 darán forma बिना duda को विकास का MLLM अधिक sofisticados और capaces. Estos मॉडल tienen वह potencial का क्रांति लाना वह manera में जो interactuamos के साथ वे máquinas, permitiendo एक comunicación अधिक natural, intuitiva और consciente के contexto के माध्यम से वे modalidades textual और visual.</p>
+<p>El propio मॉडल MM1 atestigua वह potencial increíble का वे MLLM, demostrando एक निष्पादन excepcional में एक gama का tareas और estableciendo एक नई referencia के लिए वह IA multimodal. A medida जो वे investigadores continúen construyendo sobre वे lecciones extraídas का यह estudio, podemos anticipar एक भविष्य में वह जो वे तंत्र का IA navegarán e interpretarán का manera fluida वह mundo complejo और multimodal जो habitamos, acercándonos को वह visión का máquinas verdaderamente inteligentes.</p>
+<p>Para saber अधिक sobre वह estudio MM1 और explorar वह fascinante mundo का वे grandes मॉडल का lenguaje multimodales, le invito को leer वह artículo original: <a href="https://arxiv.org/abs/2403.09611" title="MM1: Methods Analysis &amp; Insights from Multimodal LLM Pre-training"><strong>MM1: Methods Analysis &amp; Insights from Multimodal LLM Pre-training ⧉</strong></a></p>
+<aside class="author-card" aria-label="लेखक के बारे में"><img alt="Sebastien Rousseau का चित्र" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/hi/hamare-baare-mein/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग टेक्नोलॉजिस्ट; मैं व्यावहारिक AI, ISO 20022 की ओर माइग्रेशन, वित्तीय सेवाओं के लिए पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतानों के संरचनात्मक रूपांतरण पर लिखता हूँ।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20 वर्ष से अधिक का अनुभव। <a href="/hi/hamare-baare-mein/index.html">पूरा परिचय</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">अंतिम समीक्षा <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">संबंधित पठन</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/hi/2023-11-12-generative-ai-ki-padtaal/index.html" class="related-media" aria-label="जनरेटिव AI की पड़ताल" tabindex="-1"><img alt="AI, Artificial Intelligence concept,3d rendering,conceptual image" src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai"><a href="https://sebastienrousseau.com/hi/2023-11-12-generative-ai-ki-padtaal/index.html">जनरेटिव AI की पड़ताल</a> <a class="heading-anchor" href="#ai" aria-label="लिंक:  जनरेटिव AI की पड़ताल">#</a></h3><p><time datetime="2023-11-12">2023-11-12</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/hi/2026-05-11-lucy-besson-gyaan-hastantaran-ai-aur-quantum/index.html" class="related-media" aria-label="Lucy Besson: AI और क्वांटम पर ज्ञान-हस्तांतरण" tabindex="-1"><img alt="Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles" src="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="lucy-besson-ai"><a href="https://sebastienrousseau.com/hi/2026-05-11-lucy-besson-gyaan-hastantaran-ai-aur-quantum/index.html">Lucy Besson: AI और क्वांटम पर ज्ञान-हस्तांतरण</a> <a class="heading-anchor" href="#lucy-besson-ai" aria-label="लिंक:  Lucy Besson: AI और क्वांटम पर ज्ञान-हस्तांतरण">#</a></h3><p><time datetime="2026-05-11">2026-05-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/hi/2024-04-15-quantum-algorithm-lattice-aadharit-cryptography-ko-chunauti/index.html" class="related-media" aria-label="एक क्वांटम-अल्गोरिदम लैटिस-आधारित क्रिप्टोग्राफी को चुनौती देता है" tabindex="-1"><img alt="Banner of Network nodes in a digital blue space" src="https://cloudcdn.pro/stocks/images/digital-constellation.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-12"><a href="https://sebastienrousseau.com/hi/2024-04-15-quantum-algorithm-lattice-aadharit-cryptography-ko-chunauti/index.html">एक क्वांटम-अल्गोरिदम लैटिस-आधारित क्रिप्टोग्राफी को चुनौती देता है</a> <a class="heading-anchor" href="#section-12" aria-label="लिंक:  एक क्वांटम-अल्गोरिदम लैटिस-आधारित क्रिप्टोग्राफी को चुनौती देता है">#</a></h3><p><time datetime="2024-04-15">2024-04-15</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">स्रोत और संदर्भ</h2><ol class="article-sources-list"><li><a href="https://arxiv.org/abs/2403.09611" rel="external noopener nofollow"><span class="source-host">arxiv.org</span><span class="source-path">/abs/2403.09611</span></a></li></ol></aside><nav class="post-pagination" aria-label="लेख पृष्ठ-क्रम"><a class="post-pagination-prev" href="/hi/2024-03-12-openai-whisper-se-macos-par-vaastvik-samay-vaani-pahchaan/"><span class="post-pagination-label">पिछला</span><span class="post-pagination-title">Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</span></a><a class="post-pagination-next" href="/hi/2024-03-25-banking-quantum-yug-mein-poorn-homomorphic-encryption/"><span class="post-pagination-label">अगला</span><span class="post-pagination-title">Fully Homomorphic Encryption (FHE) in a Banking Quantum Era</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/hi/hamare-baare-mein/index.html">हमारे बारे में</a></li>
+              <li><a href="/hi/sampark/index.html">संपर्क</a></li>
+              <li><a href="/hi/static-site-generator-se-banaya/index.html">Static Site Generator से बनाया गया</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">लेखन</h2>
+            <ul>
+              <li><a href="/hi/lekh/index.html">लेख</a></li>
+              <li><a href="/hi/prakashan/index.html">प्रकाशन</a></li>
+              <li><a href="/hi/tag/index.html">टैग</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">कार्य</h2>
+            <ul>
+              <li><a href="/hi/pariyojanaen/index.html">परियोजनाएँ</a></li>
+              <li><a href="/hi/pleelist/index.html">प्लेलिस्ट</a></li>
+              <li><a href="/hi/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">संपर्क</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="न्यूज़लेटर सदस्यता">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — भुगतान, AI और पोस्ट-क्वांटम क्रिप्टोग्राफी पर शोध-नोट्स। कोई स्पैम नहीं।</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="aap@bank.in" />
+            <input type="hidden" name="_subject" value="न्यूज़लेटर सदस्यता — sebastienrousseau.com" />
+            <button type="submit">सदस्यता लें</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</span>
+          <div class="social" aria-label="सामाजिक लिंक">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau पर Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau पर LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau पर Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau पर YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/hi/pahunch-yogyata/index.html">पहुँच-योग्यता</a> ·
+            <a href="/hi/gopniyata/index.html">गोपनीयता</a> ·
+            <a href="/hi/shartein/index.html">शर्तें</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"hi"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"hi"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1659,"about":{"@type":"Thing","name":"Generative AI","sameAs":["https://en.wikipedia.org/wiki/Generative_artificial_intelligence","https://www.wikidata.org/wiki/Q108766533","https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"]},"headline":"मल्टीमॉडल LLM से AI को आगे बढ़ाना: MM1 की सीख","description":"Apple के MM1 परिवार से मल्टीमॉडल LLM के प्रशिक्षण के बारे में सीख और अंतर्दृष्टि।","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/mm1-visual.webp","width":"100vw","height":"100vh","caption":"MM1 मॉडल-वास्तुकला की प्रतीकात्मक छवि"},"url":"https://sebastienrousseau.com/hi/2024-03-18-multimodal-llm-se-ai-ko-aage-badhana-mm1-drishtikon/","datePublished":"2024-03-18T06:06:06+00:00","dateModified":"2026-05-11","inLanguage":"hi","keywords":"MM1, Apple, मल्टीमॉडल, LLM, AI, vision, transformer, training, फाउंडेशन मॉडल, बेंचमार्क","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/hi/2024-03-18-multimodal-llm-se-ai-ko-aage-badhana-mm1-drishtikon/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"hi"},"citation":[{"@type":"CreativeWork","url":"https://arxiv.org/abs/2403.09611"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/hi/"},{"@type":"ListItem","position":3,"name":"मल्टीमॉडल LLM से AI को आगे बढ़ाना: MM1 की सीख","item":"https://sebastienrousseau.com/hi/2024-03-18-multimodal-llm-se-ai-ko-aage-badhana-mm1-drishtikon/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="खोजें">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>खोजें</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="खोजें">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="दस्तावेज़ में खोजें..." autocomplete="off" aria-label="खोजें"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> बंद करें</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> नेविगेट करें</span><span><kbd>Enter</kbd> खोलें</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

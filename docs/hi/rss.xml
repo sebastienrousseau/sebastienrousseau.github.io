@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sebastien Rousseau — हिन्दी संस्करण</title>
+    <link>https://sebastienrousseau.com/hi/</link>
+    <description>हिन्दी लेख: व्यावहारिक AI, ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान का रूपांतरण।</description>
+    <atom:link href="https://sebastienrousseau.com/hi/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>hi-IN</language>
+    <lastBuildDate>Sat, 16 May 2026 14:52:44 +0000</lastBuildDate>
+    <copyright>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</copyright>
+    <item>
+      <title>बैंकों के लिए सर्वोत्तम क्लाउड-अवसंरचना-वास्तुकला (2026)</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-21-banks-ke-liye-shreshth-cloud-architecture-2026/</link>
+      <description>वित्तीय-सेवाओं हेतु 2026 की क्लाउड-वास्तुकला का ब्लूप्रिंट — AI-नेटिव, मल्टीक्लाउड, क्वांटम-सचेत।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-21-banks-ke-liye-shreshth-cloud-architecture-2026/</guid>
+      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
+      <category>क्लाउड वास्तुकला 2026</category>
+      <category>AI-नेटिव</category>
+      <category>मल्टीक्लाउड</category>
+      <category>serverless</category>
+      <category>edge</category>
+      <category>WebAssembly</category>
+      <category>DevSecOps</category>
+      <category>बैंकिंग</category>
+      <category>क्रिप्टो चपलता</category>
+      <category>agentic</category>
+    </item>
+    <item>
+      <title>बैंकों के लिए एजेंटिक-इंजीनियरिंग: 2026 का ब्लूप्रिंट</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-18-agentic-engineering-banks-blueprint-2026/</link>
+      <description>बैंकों के लिए एजेंटिक-इंजीनियरिंग — 2026 का ब्लूप्रिंट: एजेंट, MCP, यूनिट-अर्थशास्त्र और निगरानी।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-18-agentic-engineering-banks-blueprint-2026/</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
+      <category>agentic</category>
+      <category>AI एजेंट</category>
+      <category>MCP</category>
+      <category>बैंकिंग</category>
+      <category>blueprint</category>
+      <category>ब्लूप्रिंट</category>
+      <category>FinOps</category>
+      <category>यूनिट अर्थशास्त्र</category>
+      <category>EU AI Act</category>
+      <category>identity</category>
+    </item>
+    <item>
+      <title>छुपी हुई आमदनी: BlackRock BRSRV, BSTBL और GENIUS Act टोकनीकृत MMF</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-15-chhupi-aamdani-blackrock-brsrv-bstbl-genius-act/</link>
+      <description>BlackRock BRSRV, BSTBL और GENIUS Act टोकनीकृत MMF: एक नई संस्थागत उपज-संरचना का खुलासा।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-15-chhupi-aamdani-blackrock-brsrv-bstbl-genius-act/</guid>
+      <pubDate>Fri, 15 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp" type="image/webp" length="0"/>
+      <category>BlackRock</category>
+      <category>BRSRV</category>
+      <category>BSTBL</category>
+      <category>GENIUS Act</category>
+      <category>MMF</category>
+      <category>टोकनीकरण</category>
+      <category>stablecoin</category>
+      <category>T-bills</category>
+      <category>repo</category>
+      <category>बैंकिंग</category>
+    </item>
+    <item>
+      <title>बही की सुरक्षा: कॉर्पोरेट-वित्त में पोस्ट-क्वांटम माइग्रेशन</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-14-bahi-ki-suraksha-post-quantum-migration-corporate-finance/</link>
+      <description>कॉर्पोरेट-वित्त के लिए पोस्ट-क्वांटम माइग्रेशन — ट्रेज़री, बही और क्रिप्टो-चपलता हेतु एक रोडमैप।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-14-bahi-ki-suraksha-post-quantum-migration-corporate-finance/</guid>
+      <pubDate>Thu, 14 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" type="image/webp" length="0"/>
+      <category>post-quantum</category>
+      <category>क्रिप्टो चपलता</category>
+      <category>कॉर्पोरेट वित्त</category>
+      <category>ट्रेज़री</category>
+      <category>NIST</category>
+      <category>ML-DSA</category>
+      <category>ML-KEM</category>
+      <category>HNDL</category>
+      <category>माइग्रेशन</category>
+      <category>बैंकिंग</category>
+    </item>
+    <item>
+      <title>ISO 20022 pacs.008: संरचित-पता समय-सीमा</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-12-iso-20022-pacs008-sanrachit-pataa-samay-seema/</link>
+      <description>ISO 20022 pacs.008 संरचित-पते की समय-सीमा से पहले बैंकों के लिए एक व्यावहारिक रोडमैप।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-12-iso-20022-pacs008-sanrachit-pataa-samay-seema/</guid>
+      <pubDate>Tue, 12 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp" type="image/webp" length="0"/>
+      <category>ISO 20022</category>
+      <category>pacs.008</category>
+      <category>संरचित पता</category>
+      <category>SWIFT</category>
+      <category>CBPR+</category>
+      <category>समय सीमा</category>
+      <category>बैंकिंग</category>
+      <category>भुगतान</category>
+      <category>माइग्रेशन</category>
+      <category>अनुपालन</category>
+    </item>
+    <item>
+      <title>Lucy Besson: AI और क्वांटम पर ज्ञान-हस्तांतरण</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-11-lucy-besson-gyaan-hastantaran-ai-aur-quantum/</link>
+      <description>AI और क्वांटम पर पीढ़ीगत ज्ञान-हस्तांतरण की एक यात्रा — Lucy Besson की सीख।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-11-lucy-besson-gyaan-hastantaran-ai-aur-quantum/</guid>
+      <pubDate>Mon, 11 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" type="image/webp" length="0"/>
+      <category>Lucy Besson</category>
+      <category>ज्ञान हस्तांतरण</category>
+      <category>AI</category>
+      <category>क्वांटम</category>
+      <category>मेंटरिंग</category>
+      <category>करियर</category>
+      <category>STEM</category>
+      <category>education</category>
+      <category>इंटर्नशिप</category>
+      <category>technology</category>
+    </item>
+    <item>
+      <title>क्वांटम-सीमाएँ फिर से बदल रही हैं</title>
+      <link>https://sebastienrousseau.com/hi/2026-04-11-quantum-seemaayen-phir-se-badal-rahi-hain/</link>
+      <description>नवीनतम संख्या और बेहतर अनुमान दर्शाते हैं कि क्वांटम-सीमाएँ फिर से बदल रही हैं — और बैंकों को क्या करना चाहिए।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-04-11-quantum-seemaayen-phir-se-badal-rahi-hain/</guid>
+      <pubDate>Sat, 11 Apr 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" type="image/webp" length="0"/>
+      <category>क्वांटम</category>
+      <category>थ्रेसहोल्ड</category>
+      <category>post-quantum</category>
+      <category>NIST</category>
+      <category>क्रिप्टोग्राफी</category>
+      <category>RSA</category>
+      <category>HNDL</category>
+      <category>harvest now</category>
+      <category>माइग्रेशन</category>
+      <category>बैंकिंग</category>
+    </item>
+    <item>
+      <title>क्वांटम-सुरक्षित भुगतान: EPAA</title>
+      <link>https://sebastienrousseau.com/hi/2025-09-01-quantum-surakshit-bhugtaan-epaa/</link>
+      <description>EPAA — ISO 20022 भुगतान-संदेशों हेतु एक पोस्ट-क्वांटम प्रामाणीकरण-संरचना — एक खुले-मानक प्रस्ताव।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2025-09-01-quantum-surakshit-bhugtaan-epaa/</guid>
+      <pubDate>Mon, 01 Sep 2025 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/digital-nodes.webp" type="image/webp" length="0"/>
+      <category>EPAA</category>
+      <category>क्वांटम-सुरक्षित</category>
+      <category>post-quantum</category>
+      <category>ISO 20022</category>
+      <category>भुगतान</category>
+      <category>क्रिप्टोग्राफी</category>
+      <category>ML-DSA</category>
+      <category>Dilithium</category>
+      <category>NIST</category>
+      <category>बैंकिंग</category>
+    </item>
+    <item>
+      <title>लैटिस-आधारित क्रिप्टो के क्वांटम-अल्गोरिदम में त्रुटि मिली</title>
+      <link>https://sebastienrousseau.com/hi/2024-04-22-lattice-cryptography-quantum-algorithm-mein-truti-mili/</link>
+      <description>Yilei Chen के क्वांटम-अल्गोरिदम में त्रुटि — लैटिस-आधारित पोस्ट-क्वांटम मानक सुरक्षित बने रहते हैं।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-04-22-lattice-cryptography-quantum-algorithm-mein-truti-mili/</guid>
+      <pubDate>Mon, 22 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/digital-nodes.webp" type="image/webp" length="0"/>
+      <category>क्वांटम अल्गोरिदम</category>
+      <category>लैटिस</category>
+      <category>क्रिप्टोग्राफी</category>
+      <category>post-quantum</category>
+      <category>NIST</category>
+      <category>Yilei Chen</category>
+      <category>त्रुटि</category>
+      <category>बग</category>
+      <category>सुरक्षा</category>
+      <category>MLWE</category>
+    </item>
+    <item>
+      <title>एक क्वांटम-अल्गोरिदम लैटिस-आधारित क्रिप्टोग्राफी को चुनौती देता है</title>
+      <link>https://sebastienrousseau.com/hi/2024-04-15-quantum-algorithm-lattice-aadharit-cryptography-ko-chunauti/</link>
+      <description>Yilei Chen का क्वांटम-अल्गोरिदम लैटिस-आधारित क्रिप्टोग्राफी को कैसे चुनौती देता है — और इसके पोस्ट-क्वांटम मानकों पर निहितार्थ।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-04-15-quantum-algorithm-lattice-aadharit-cryptography-ko-chunauti/</guid>
+      <pubDate>Mon, 15 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/digital-constellation.webp" type="image/webp" length="0"/>
+      <category>क्वांटम अल्गोरिदम</category>
+      <category>लैटिस</category>
+      <category>क्रिप्टोग्राफी</category>
+      <category>post-quantum</category>
+      <category>NIST</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>Yilei Chen</category>
+      <category>LWE</category>
+      <category>MLWE</category>
+      <category>सुरक्षा</category>
+    </item>
+    <item>
+      <title>OpenVoice: वॉइस-क्लोनिंग-प्रौद्योगिकी में अग्रणी नवाचार</title>
+      <link>https://sebastienrousseau.com/hi/2024-04-01-openvoice-voice-cloning-takneek-mein-agra-navinya/</link>
+      <description>OpenVoice: वॉइस-क्लोनिंग में अग्रणी नवाचार — व्यक्तित्व, उच्चारण और स्वर पर नियंत्रण।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-04-01-openvoice-voice-cloning-takneek-mein-agra-navinya/</guid>
+      <pubDate>Mon, 01 Apr 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/open-voice.webp" type="image/webp" length="0"/>
+      <category>OpenVoice</category>
+      <category>वॉइस क्लोनिंग</category>
+      <category>AI</category>
+      <category>TTS</category>
+      <category>ओपन सोर्स</category>
+      <category>multilingual</category>
+      <category>vocal style</category>
+      <category>voice synthesis</category>
+      <category>speech</category>
+      <category>MIT</category>
+    </item>
+    <item>
+      <title>बैंकिंग क्वांटम-युग में पूर्ण-होमोमॉर्फ़िक एन्क्रिप्शन</title>
+      <link>https://sebastienrousseau.com/hi/2024-03-25-banking-quantum-yug-mein-poorn-homomorphic-encryption/</link>
+      <description>FHE बैंकिंग-डेटा को क्वांटम-युग में कैसे सुरक्षित कर सकती है — एन्क्रिप्टेड डेटा पर सीधी गणना।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-03-25-banking-quantum-yug-mein-poorn-homomorphic-encryption/</guid>
+      <pubDate>Mon, 25 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp" type="image/webp" length="0"/>
+      <category>FHE</category>
+      <category>होमोमॉर्फ़िक एन्क्रिप्शन</category>
+      <category>बैंकिंग</category>
+      <category>क्वांटम</category>
+      <category>post-quantum</category>
+      <category>क्रिप्टोग्राफी</category>
+      <category>BFV</category>
+      <category>CKKS</category>
+      <category>गोपनीयता</category>
+      <category>सुरक्षा</category>
+    </item>
+    <item>
+      <title>मल्टीमॉडल LLM से AI को आगे बढ़ाना: MM1 की सीख</title>
+      <link>https://sebastienrousseau.com/hi/2024-03-18-multimodal-llm-se-ai-ko-aage-badhana-mm1-drishtikon/</link>
+      <description>Apple के MM1 परिवार से मल्टीमॉडल LLM के प्रशिक्षण के बारे में सीख और अंतर्दृष्टि।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-03-18-multimodal-llm-se-ai-ko-aage-badhana-mm1-drishtikon/</guid>
+      <pubDate>Mon, 18 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/mm1-visual.webp" type="image/webp" length="0"/>
+      <category>MM1</category>
+      <category>Apple</category>
+      <category>मल्टीमॉडल</category>
+      <category>LLM</category>
+      <category>AI</category>
+      <category>vision</category>
+      <category>transformer</category>
+      <category>training</category>
+      <category>फाउंडेशन मॉडल</category>
+      <category>बेंचमार्क</category>
+    </item>
+    <item>
+      <title>OpenAI Whisper से macOS पर वास्तविक-समय वाणी-पहचान में क्रांति</title>
+      <link>https://sebastienrousseau.com/hi/2024-03-12-openai-whisper-se-macos-par-vaastvik-samay-vaani-pahchaan/</link>
+      <description>OpenAI Whisper को macOS पर लाना: वास्तविक-समय, ऑफ़लाइन और बहुभाषी वाणी-पहचान।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-03-12-openai-whisper-se-macos-par-vaastvik-samay-vaani-pahchaan/</guid>
+      <pubDate>Tue, 12 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/research-paper.webp" type="image/webp" length="0"/>
+      <category>Whisper</category>
+      <category>OpenAI</category>
+      <category>macOS</category>
+      <category>Apple Silicon</category>
+      <category>वाणी पहचान</category>
+      <category>ASR</category>
+      <category>ऑफ़लाइन</category>
+      <category>बहुभाषी</category>
+      <category>AI</category>
+      <category>transcription</category>
+    </item>
+    <item>
+      <title>RustLogs: Rust-अनुप्रयोगों के लिए उन्नत लॉगिंग-लाइब्रेरी</title>
+      <link>https://sebastienrousseau.com/hi/2024-03-08-rustlogs-rust-applications-ke-liye-logging-library/</link>
+      <description>RustLogs: Rust-अनुप्रयोगों हेतु एक उन्नत संरचित-लॉगिंग लाइब्रेरी — कम-ओवरहेड और एर्गोनॉमिक।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-03-08-rustlogs-rust-applications-ke-liye-logging-library/</guid>
+      <pubDate>Fri, 08 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/rustlogs.webp" type="image/webp" length="0"/>
+      <category>RustLogs</category>
+      <category>Rust</category>
+      <category>logging</category>
+      <category>संरचित लॉग</category>
+      <category>observability</category>
+      <category>tracing</category>
+      <category>क्रेट</category>
+      <category>OpenTelemetry</category>
+      <category>JSON</category>
+      <category>ओपन सोर्स</category>
+    </item>
+    <item>
+      <title>Mistral AI का Le Chat: संवादात्मक AI का नया युग</title>
+      <link>https://sebastienrousseau.com/hi/2024-03-04-mistral-ai-le-chat-conversational-ai-ka-nayaa-yug/</link>
+      <description>Mistral AI का Le Chat: संवादात्मक AI के लिए एक यूरोपीय विकल्प — दक्षता और गोपनीयता।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-03-04-mistral-ai-le-chat-conversational-ai-ka-nayaa-yug/</guid>
+      <pubDate>Mon, 04 Mar 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp" type="image/webp" length="0"/>
+      <category>Mistral</category>
+      <category>Le Chat</category>
+      <category>AI</category>
+      <category>LLM</category>
+      <category>यूरोप</category>
+      <category>संवादात्मक</category>
+      <category>ओपन सोर्स</category>
+      <category>फाउंडेशन मॉडल</category>
+      <category>गोपनीयता</category>
+      <category>dense</category>
+    </item>
+    <item>
+      <title>Google Gemma: ओपन-सोर्स AI-विकास का रूपांतरण</title>
+      <link>https://sebastienrousseau.com/hi/2024-02-26-google-gemma-open-source-ai-vikaas-mein-rupaantaran/</link>
+      <description>Google Gemma: एक ओपन-सोर्स मॉडल-परिवार जो स्थानीय-तैनात AI-विकास को बढ़ावा देता है।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-02-26-google-gemma-open-source-ai-vikaas-mein-rupaantaran/</guid>
+      <pubDate>Mon, 26 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-ship.webp" type="image/webp" length="0"/>
+      <category>Gemma</category>
+      <category>Google</category>
+      <category>ओपन सोर्स</category>
+      <category>AI</category>
+      <category>LLM</category>
+      <category>फ़ाइन-ट्यूनिंग</category>
+      <category>स्थानीय</category>
+      <category>edge</category>
+      <category>Gemini</category>
+      <category>मॉडल</category>
+    </item>
+    <item>
+      <title>Gemini का अनावरण: Google AI क्रांति की व्याख्या</title>
+      <link>https://sebastienrousseau.com/hi/2024-02-19-gemini-google-ai-kraanti-ki-vyaakhya/</link>
+      <description>Gemini: Google का मल्टीमॉडल फाउंडेशन-मॉडल — क्षमताएँ, बेंचमार्क और उपयोग-मामले।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-02-19-gemini-google-ai-kraanti-ki-vyaakhya/</guid>
+      <pubDate>Mon, 19 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp" type="image/webp" length="0"/>
+      <category>Gemini</category>
+      <category>Google</category>
+      <category>AI</category>
+      <category>multimodal</category>
+      <category>फाउंडेशन मॉडल</category>
+      <category>LLM</category>
+      <category>बेंचमार्क</category>
+      <category>Pro</category>
+      <category>Ultra</category>
+      <category>Nano</category>
+    </item>
+    <item>
+      <title>EU AI Act: वैश्विक AI-विनियमन के भविष्य को आकार देना</title>
+      <link>https://sebastienrousseau.com/hi/2024-02-13-eu-ai-act-vaishvik-ai-niyaman-ka-bhavishya/</link>
+      <description>EU AI Act का वैश्विक AI-विनियमन पर प्रभाव — जोखिम-वर्गीकरण, दायित्व और पारदर्शिता।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-02-13-eu-ai-act-vaishvik-ai-niyaman-ka-bhavishya/</guid>
+      <pubDate>Tue, 13 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" type="image/webp" length="0"/>
+      <category>EU AI Act</category>
+      <category>AI विनियमन</category>
+      <category>यूरोप</category>
+      <category>अनुपालन</category>
+      <category>जोखिम</category>
+      <category>GDPR</category>
+      <category>AI</category>
+      <category>governance</category>
+      <category>FRIA</category>
+      <category>मानक</category>
+    </item>
+    <item>
+      <title>Akande वॉइस-सहायक: व्यक्तिगत और कार्यकारी-सहायता में क्रांति</title>
+      <link>https://sebastienrousseau.com/hi/2024-02-12-akande-voice-assistant-vyaktigat-aur-karyakari-sahaayata/</link>
+      <description>Akande एक Rust-आधारित वॉइस-सहायक है जो व्यक्तिगत और कार्यकारी-सहायता हेतु डिज़ाइन किया गया है।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-02-12-akande-voice-assistant-vyaktigat-aur-karyakari-sahaayata/</guid>
+      <pubDate>Mon, 12 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" type="image/webp" length="0"/>
+      <category>Akande</category>
+      <category>वॉइस सहायक</category>
+      <category>Rust</category>
+      <category>AI</category>
+      <category>गोपनीयता</category>
+      <category>executive</category>
+      <category>सहायक</category>
+      <category>Whisper</category>
+      <category>TTS</category>
+      <category>LLM</category>
+    </item>
+    <item>
+      <title>विज्ञापन में क्रांति: AI भविष्य को कैसे आकार देता है</title>
+      <link>https://sebastienrousseau.com/hi/2024-02-08-vigyaapan-mein-kraanti-ai-bhavishya-ko-aakaar-deti-hai/</link>
+      <description>जनरेटिव AI विज्ञापन-क्षेत्र को कैसे बदल रहा है: व्यक्तिगतकरण, रचनात्मकता और मापन।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-02-08-vigyaapan-mein-kraanti-ai-bhavishya-ko-aakaar-deti-hai/</guid>
+      <pubDate>Thu, 08 Feb 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/advertising-ai.webp" type="image/webp" length="0"/>
+      <category>AI</category>
+      <category>विज्ञापन</category>
+      <category>जनरेटिव</category>
+      <category>व्यक्तिगतकरण</category>
+      <category>marketing</category>
+      <category>ROAS</category>
+      <category>attribution</category>
+      <category>अनुकूलन</category>
+      <category>मीडिया</category>
+      <category>टार्गेटिंग</category>
+    </item>
+    <item>
+      <title>AI-संचालित ऑडियो-अंतर्दृष्टि, विश्लेषण और अनुवाद</title>
+      <link>https://sebastienrousseau.com/hi/2024-01-29-ai-aadharit-audio-vishleshan-anuvaad-aur-drishtikon/</link>
+      <description>AI-संचालित ऑडियो-विश्लेषण, बोलने वालों की पहचान, भाषाई पहचान और अनुवाद का परिचय।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-01-29-ai-aadharit-audio-vishleshan-anuvaad-aur-drishtikon/</guid>
+      <pubDate>Mon, 29 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" type="image/webp" length="0"/>
+      <category>AI</category>
+      <category>ऑडियो</category>
+      <category>Whisper</category>
+      <category>अनुवाद</category>
+      <category>भाषण-पहचान</category>
+      <category>NLP</category>
+      <category>speaker diarization</category>
+      <category>multilingual</category>
+      <category>ASR</category>
+      <category>transcription</category>
+    </item>
+    <item>
+      <title>AI प्रॉम्प्ट-इंजीनियरिंग में प्रगति</title>
+      <link>https://sebastienrousseau.com/hi/2024-01-23-ai-prompt-engineering-mein-pragati/</link>
+      <description>AI प्रॉम्प्ट-इंजीनियरिंग में नवीनतम प्रगति: chain-of-thought, RAG और टूल-यूज़।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-01-23-ai-prompt-engineering-mein-pragati/</guid>
+      <pubDate>Tue, 23 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" type="image/webp" length="0"/>
+      <category>प्रॉम्प्ट इंजीनियरिंग</category>
+      <category>AI</category>
+      <category>LLM</category>
+      <category>chain-of-thought</category>
+      <category>RAG</category>
+      <category>फ़्यू-शॉट</category>
+      <category>टूल यूज़</category>
+      <category>GPT</category>
+      <category>Claude</category>
+      <category>Gemini</category>
+    </item>
+    <item>
+      <title>Alien Studio: AI-फ़ोटोग्राफ़ी से कला में क्रांति</title>
+      <link>https://sebastienrousseau.com/hi/2024-01-15-alien-studio-ai-photography-se-kala-mein-kraanti/</link>
+      <description>Alien Studio: AI-फ़ोटोग्राफ़ी द्वारा कला को कैसे नया आकार दिया जा रहा है।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-01-15-alien-studio-ai-photography-se-kala-mein-kraanti/</guid>
+      <pubDate>Mon, 15 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" type="image/webp" length="0"/>
+      <category>Alien Studio</category>
+      <category>AI</category>
+      <category>फ़ोटोग्राफ़ी</category>
+      <category>जनरेटिव</category>
+      <category>कला</category>
+      <category>Stable Diffusion</category>
+      <category>MidJourney</category>
+      <category>रचनात्मकता</category>
+      <category>फ़ाइन-ट्यूनिंग</category>
+      <category>स्टाइल</category>
+    </item>
+    <item>
+      <title>IBM Qiskit और क्वांटम-फूरियर-ट्रांसफ़ॉर्म से क्रेडिट-अनुपात-विश्लेषण का अनुकूलन</title>
+      <link>https://sebastienrousseau.com/hi/2024-01-08-ibm-qiskit-aur-quantum-fourier-se-credit-ratio-vishleshan/</link>
+      <description>IBM Qiskit और क्वांटम-फूरियर-ट्रांसफ़ॉर्म पर आधारित क्रेडिट-अनुपात-विश्लेषण का एक व्यावहारिक प्रदर्शन।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-01-08-ibm-qiskit-aur-quantum-fourier-se-credit-ratio-vishleshan/</guid>
+      <pubDate>Mon, 08 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" type="image/webp" length="0"/>
+      <category>Qiskit</category>
+      <category>IBM</category>
+      <category>क्वांटम</category>
+      <category>QFT</category>
+      <category>क्रेडिट</category>
+      <category>बैंकिंग</category>
+      <category>जोखिम</category>
+      <category>Python</category>
+      <category>अल्गोरिदम</category>
+      <category>post-quantum</category>
+    </item>
+    <item>
+      <title>AI रुझान 2024: अंतर्दृष्टि और भविष्य के अनुमान</title>
+      <link>https://sebastienrousseau.com/hi/2024-01-01-ai-rujhaan-2024-bhavishya-anumaan-aur-drishtikon/</link>
+      <description>2024 के लिए AI रुझान: मल्टीमॉडल फाउंडेशन-मॉडल, एजेंट-वर्कफ़्लो और नियामक संरचना।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2024-01-01-ai-rujhaan-2024-bhavishya-anumaan-aur-drishtikon/</guid>
+      <pubDate>Mon, 01 Jan 2024 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" type="image/webp" length="0"/>
+      <category>AI</category>
+      <category>2024</category>
+      <category>रुझान</category>
+      <category>मल्टीमॉडल</category>
+      <category>एजेंट</category>
+      <category>फाउंडेशन मॉडल</category>
+      <category>GPT</category>
+      <category>Gemini</category>
+      <category>EU AI Act</category>
+      <category>बैंकिंग</category>
+    </item>
+    <item>
+      <title>AI-संवर्धित क्वांटम-अल्गोरिदम से वित्त में क्रांति</title>
+      <link>https://sebastienrousseau.com/hi/2023-12-25-ai-samvardhit-quantum-algorithm-se-vitt-mein-kraanti/</link>
+      <description>हाइब्रिड AI-क्वांटम अल्गोरिदम वित्त को कैसे बदल रहे हैं — पोर्टफ़ोलियो-अनुकूलन से लेकर जोखिम-मॉडलिंग तक।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2023-12-25-ai-samvardhit-quantum-algorithm-se-vitt-mein-kraanti/</guid>
+      <pubDate>Mon, 25 Dec 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" type="image/webp" length="0"/>
+      <category>AI</category>
+      <category>क्वांटम</category>
+      <category>हाइब्रिड</category>
+      <category>वित्त</category>
+      <category>पोर्टफ़ोलियो</category>
+      <category>जोखिम</category>
+      <category>बैंकिंग</category>
+      <category>NISQ</category>
+      <category>VQE</category>
+      <category>QAOA</category>
+    </item>
+    <item>
+      <title>बैंकिंग में AI और क्वांटम कंप्यूटिंग की स्थिति: 2023 की समीक्षा</title>
+      <link>https://sebastienrousseau.com/hi/2023-12-18-banking-mein-ai-aur-quantum-computing-2023-samiksha/</link>
+      <description>बैंकिंग में AI और क्वांटम कंप्यूटिंग पर 2023 का दृष्टिकोण: नए मॉडल, उपयोग-मामले और नियामक स्पष्टता।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2023-12-18-banking-mein-ai-aur-quantum-computing-2023-samiksha/</guid>
+      <pubDate>Mon, 18 Dec 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
+      <category>AI</category>
+      <category>क्वांटम</category>
+      <category>बैंकिंग</category>
+      <category>2023</category>
+      <category>समीक्षा</category>
+      <category>post-quantum</category>
+      <category>NIST</category>
+      <category>EU AI Act</category>
+      <category>LLM</category>
+      <category>फ़ाइनेंस</category>
+    </item>
+    <item>
+      <title>क्वांटम कुंजी-वितरण: बैंकिंग-सुरक्षा में क्रांति</title>
+      <link>https://sebastienrousseau.com/hi/2023-12-11-quantum-kunji-vitaran-banking-suraksha-mein-kraanti/</link>
+      <description>क्वांटम कुंजी-वितरण (QKD) कैसे बैंकिंग-सुरक्षा को नई परिभाषा देता है — BB84 से उत्पादन-तंत्रों तक।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2023-12-11-quantum-kunji-vitaran-banking-suraksha-mein-kraanti/</guid>
+      <pubDate>Mon, 11 Dec 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" type="image/webp" length="0"/>
+      <category>QKD</category>
+      <category>क्वांटम कुंजी-वितरण</category>
+      <category>BB84</category>
+      <category>क्वांटम क्रिप्टोग्राफी</category>
+      <category>बैंकिंग सुरक्षा</category>
+      <category>post-quantum</category>
+      <category>NIST</category>
+      <category>फ़ोटॉन</category>
+      <category>उलझाव</category>
+      <category>सुरक्षा</category>
+    </item>
+    <item>
+      <title>Rust में dtt लाइब्रेरी से तारीख़ और समय पर नियंत्रण</title>
+      <link>https://sebastienrousseau.com/hi/2023-12-04-rust-mein-dtt-library-se-tarikh-aur-samay/</link>
+      <description>Rust हेतु dtt लाइब्रेरी: तारीख़, समय और समय-क्षेत्रों के सुरक्षित और एर्गोनॉमिक हस्तांतरण के लिए।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2023-12-04-rust-mein-dtt-library-se-tarikh-aur-samay/</guid>
+      <pubDate>Mon, 04 Dec 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg" type="image/webp" length="0"/>
+      <category>Rust</category>
+      <category>dtt</category>
+      <category>तारीख़</category>
+      <category>समय</category>
+      <category>समय-क्षेत्र</category>
+      <category>RFC 3339</category>
+      <category>ISO 8601</category>
+      <category>स्वरूपण</category>
+      <category>क्रोनो</category>
+      <category>क्रेट</category>
+    </item>
+    <item>
+      <title>KyberLib: क्वांटम-ख़तरों के विरुद्ध Rust-संचालित कवच</title>
+      <link>https://sebastienrousseau.com/hi/2023-11-28-kyberlib-quantum-khatron-se-rust-rakshak/</link>
+      <description>KyberLib: CRYSTALS-Kyber पोस्ट-क्वांटम कुंजी-समायोजन का एक Rust कार्यान्वयन, जो एम्बेडेड और सर्वर दोनों के लिए तैयार है।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2023-11-28-kyberlib-quantum-khatron-se-rust-rakshak/</guid>
+      <pubDate>Tue, 28 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" type="image/webp" length="0"/>
+      <category>KyberLib</category>
+      <category>Rust</category>
+      <category>CRYSTALS-Kyber</category>
+      <category>post-quantum</category>
+      <category>KEM</category>
+      <category>एम्बेडेड</category>
+      <category>क्रिप्टोग्राफी</category>
+      <category>सुरक्षा</category>
+      <category>NIST</category>
+      <category>FIPS</category>
+    </item>
+    <item>
+      <title>CRYSTALS-Kyber: क्वांटम-युग का सुरक्षा-कवच अल्गोरिदम</title>
+      <link>https://sebastienrousseau.com/hi/2023-11-19-crystals-kyber-quantum-yug-mein-suraksha-algorithm/</link>
+      <description>CRYSTALS-Kyber: NIST द्वारा मानकीकरण के लिए चयनित लैटिस-आधारित पोस्ट-क्वांटम कुंजी-समायोजन-तंत्र।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2023-11-19-crystals-kyber-quantum-yug-mein-suraksha-algorithm/</guid>
+      <pubDate>Sun, 19 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" type="image/webp" length="0"/>
+      <category>CRYSTALS-Kyber</category>
+      <category>post-quantum</category>
+      <category>NIST</category>
+      <category>lattice</category>
+      <category>KEM</category>
+      <category>क्रिप्टोग्राफी</category>
+      <category>सुरक्षा</category>
+      <category>क्वांटम कंप्यूटर</category>
+      <category>MLWE</category>
+      <category>FIPS</category>
+    </item>
+    <item>
+      <title>जनरेटिव AI की पड़ताल</title>
+      <link>https://sebastienrousseau.com/hi/2023-11-12-generative-ai-ki-padtaal/</link>
+      <description>जनरेटिव AI का परिचय: LLM, प्रसार-मॉडल, उद्यम-स्तरीय उपयोग के मामले और नैतिक विचार।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2023-11-12-generative-ai-ki-padtaal/</guid>
+      <pubDate>Sun, 12 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" type="image/webp" length="0"/>
+      <category>जनरेटिव AI</category>
+      <category>LLM</category>
+      <category>GPT</category>
+      <category>Stable Diffusion</category>
+      <category>MidJourney</category>
+      <category>उद्यम AI</category>
+      <category>AI नैतिकता</category>
+      <category>फाउंडेशन मॉडल</category>
+      <category>ट्रांसफ़ॉर्मर</category>
+      <category>NLP</category>
+    </item>
+    <item>
+      <title>Rust सुरक्षा हेतु गणितीय और क्रिप्टोग्राफिक स्थिरांक</title>
+      <link>https://sebastienrousseau.com/hi/2023-11-05-rust-suraksha-ke-liye-ganitiy-cryptographic-sthirank/</link>
+      <description>Rust हेतु एक क्रेट जो क्रिप्टोग्राफी और गणित के लिए सुरक्षित, संगत और परीक्षित स्थिरांकों का संग्रह प्रदान करती है।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2023-11-05-rust-suraksha-ke-liye-ganitiy-cryptographic-sthirank/</guid>
+      <pubDate>Sun, 05 Nov 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp" type="image/webp" length="0"/>
+      <category>Rust</category>
+      <category>स्थिरांक</category>
+      <category>क्रिप्टोग्राफी</category>
+      <category>गणित</category>
+      <category>सुरक्षा</category>
+      <category>टाइप-सुरक्षा</category>
+      <category>Cargo</category>
+      <category>NIST</category>
+      <category>π</category>
+      <category>e</category>
+    </item>
+    <item>
+      <title>libmake: दोहराव कम करने और उच्च-गुणवत्ता वाली Rust-लाइब्रेरी बनाने वाला कोड-जनरेटर</title>
+      <link>https://sebastienrousseau.com/hi/2023-10-26-libmake-rust-libraries-ke-liye-code-generator/</link>
+      <description>libmake एक Rust कोड-जनरेटर है जो लाइब्रेरी-स्कैफ़ोल्डिंग — CI, परीक्षण, लाइसेंस — का स्वचालन करता है।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2023-10-26-libmake-rust-libraries-ke-liye-code-generator/</guid>
+      <pubDate>Thu, 26 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>libmake</category>
+      <category>Rust</category>
+      <category>कोड जनरेटर</category>
+      <category>लाइब्रेरी</category>
+      <category>scaffolding</category>
+      <category>CI</category>
+      <category>टेस्टिंग</category>
+      <category>ओपन सोर्स</category>
+      <category>Cargo</category>
+      <category>Crates</category>
+    </item>
+    <item>
+      <title>क्वांटम-युग में डेटा-सुरक्षा: hash-लाइब्रेरी hsh</title>
+      <link>https://sebastienrousseau.com/hi/2023-10-16-quantum-yug-mein-data-suraksha-hsh-hash-library/</link>
+      <description>hsh एक Rust हैश-लाइब्रेरी है जो Argon2i, bcrypt और scrypt को एक एकीकृत और सुरक्षित API के अंतर्गत समाहित करती है।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2023-10-16-quantum-yug-mein-data-suraksha-hsh-hash-library/</guid>
+      <pubDate>Mon, 16 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp" type="image/webp" length="0"/>
+      <category>hsh</category>
+      <category>hash</category>
+      <category>Argon2i</category>
+      <category>bcrypt</category>
+      <category>scrypt</category>
+      <category>Rust</category>
+      <category>क्रिप्टोग्राफी</category>
+      <category>पासवर्ड</category>
+      <category>सुरक्षा</category>
+      <category>क्वांटम</category>
+    </item>
+    <item>
+      <title>Shokunin: सबसे तेज़ Rust-आधारित स्टैटिक-साइट जनरेटर</title>
+      <link>https://sebastienrousseau.com/hi/2023-10-09-shokunin-sabse-tez-rust-static-site-generator/</link>
+      <description>Shokunin एक Rust-आधारित स्टैटिक-साइट जनरेटर है जो उच्च-निष्पादन, कम-स्मृति और सुरक्षा को प्राथमिकता देता है।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2023-10-09-shokunin-sabse-tez-rust-static-site-generator/</guid>
+      <pubDate>Mon, 09 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" type="image/webp" length="0"/>
+      <category>Shokunin</category>
+      <category>Rust</category>
+      <category>स्टैटिक साइट</category>
+      <category>SSG</category>
+      <category>Markdown</category>
+      <category>Hugo</category>
+      <category>Jekyll</category>
+      <category>निष्पादन</category>
+      <category>सुरक्षा</category>
+      <category>ओपन सोर्स</category>
+    </item>
+    <item>
+      <title>pain001 के साथ ISO 20022-अनुपालक भुगतान-फ़ाइलों का स्वचालन</title>
+      <link>https://sebastienrousseau.com/hi/2023-09-29-pain001-ke-saath-iso-20022-bhugtaan-file-svachalan/</link>
+      <description>pain001 Python लाइब्रेरी से ISO 20022-अनुपालक भुगतान-फ़ाइलें कैसे उत्पन्न करें — एक व्यावहारिक गाइड।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2023-09-29-pain001-ke-saath-iso-20022-bhugtaan-file-svachalan/</guid>
+      <pubDate>Fri, 29 Sep 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" type="image/webp" length="0"/>
+      <category>ISO 20022</category>
+      <category>pain.001</category>
+      <category>Python</category>
+      <category>भुगतान</category>
+      <category>स्वचालन</category>
+      <category>SEPA</category>
+      <category>SWIFT</category>
+      <category>XML</category>
+      <category>बैंकिंग</category>
+      <category>ट्रेज़री</category>
+    </item>
+    <item>
+      <title>Express Transaction Credits प्लेटफ़ॉर्म का निर्माण</title>
+      <link>https://sebastienrousseau.com/hi/2018-02-15-express-transaction-credits-platform-ka-nirmaan/</link>
+      <description>Express Transaction Credits प्लेटफ़ॉर्म का निर्माण — डिज़ाइन से लेकर उत्पादन तक की तकनीकी यात्रा।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2018-02-15-express-transaction-credits-platform-ka-nirmaan/</guid>
+      <pubDate>Thu, 15 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" type="image/webp" length="0"/>
+      <category>Express Transaction Credits</category>
+      <category>ETC</category>
+      <category>blockchain</category>
+      <category>टोकन</category>
+      <category>smart contract</category>
+      <category>Solidity</category>
+      <category>EVM</category>
+      <category>मंच-इंजीनियरिंग</category>
+      <category>क्रिप्टोग्राफी</category>
+      <category>भुगतान</category>
+    </item>
+    <item>
+      <title>एक नई क्रिप्टोकरेंसी का अनावरण और भविष्य के तीव्र-भुगतान-समाधान की प्रस्तुति</title>
+      <link>https://sebastienrousseau.com/hi/2018-02-04-nayi-cryptocurrency-aur-teevra-bhugtaan-samaadhaan/</link>
+      <description>एक नई क्रिप्टोकरेंसी का अनावरण जो सीमा-पार भुगतान को तेज़, सस्ता और अधिक सुरक्षित बनाने का लक्ष्य रखती है।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2018-02-04-nayi-cryptocurrency-aur-teevra-bhugtaan-samaadhaan/</guid>
+      <pubDate>Sun, 04 Feb 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" type="image/webp" length="0"/>
+      <category>क्रिप्टोकरेंसी</category>
+      <category>तीव्र भुगतान</category>
+      <category>सीमा-पार</category>
+      <category>blockchain</category>
+      <category>टोकन</category>
+      <category>ICO</category>
+      <category>वित्तीय समावेशन</category>
+      <category>ETC</category>
+      <category>P2P</category>
+      <category>payment rails</category>
+    </item>
+    <item>
+      <title>ERC-20 टोकन-मानक</title>
+      <link>https://sebastienrousseau.com/hi/2018-01-24-erc-20-token-maanak/</link>
+      <description>ERC-20: Ethereum पर टोकन के लिए मानक — टोकन कैसे जारी, अंतरित और परस्पर-संचालित होते हैं।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2018-01-24-erc-20-token-maanak/</guid>
+      <pubDate>Wed, 24 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp" type="image/webp" length="0"/>
+      <category>ERC-20</category>
+      <category>Ethereum</category>
+      <category>token</category>
+      <category>ICO</category>
+      <category>smart contract</category>
+      <category>क्रिप्टोकरेंसी</category>
+      <category>टोकनीकरण</category>
+      <category>मानक</category>
+      <category>इंटरऑपरेबिलिटी</category>
+      <category>blockchain</category>
+    </item>
+    <item>
+      <title>Blockchain के पीछे की प्रौद्योगिकी को समझना</title>
+      <link>https://sebastienrousseau.com/hi/2018-01-09-blockchain-ke-peechhe-ki-takneek-samajhna/</link>
+      <description>Blockchain वितरित बही, क्रिप्टोग्राफी और सहमति-तंत्रों को कैसे जोड़ती है — इसकी एक स्पष्ट व्याख्या।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2018-01-09-blockchain-ke-peechhe-ki-takneek-samajhna/</guid>
+      <pubDate>Tue, 09 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" type="image/webp" length="0"/>
+      <category>blockchain</category>
+      <category>वितरित बही</category>
+      <category>क्रिप्टोग्राफी</category>
+      <category>सहमति</category>
+      <category>proof-of-work</category>
+      <category>smart contract</category>
+      <category>हैश</category>
+      <category>मर्कल वृक्ष</category>
+      <category>विकेंद्रीकरण</category>
+      <category>P2P</category>
+    </item>
+    <item>
+      <title>Blockchain: 2018 में मायने रखने वाली प्रौद्योगिकी</title>
+      <link>https://sebastienrousseau.com/hi/2018-01-02-blockchain-2018-mein-mahatvapurn-takneek/</link>
+      <description>निजी-कुंजी क्रिप्टोग्राफी और पीयर-टू-पीयर (P2P) नेटवर्क के माध्यम से डिजिटल लेनदेन को सुरक्षित करने की असाधारण यात्रा का वर्णन।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2018-01-02-blockchain-2018-mein-mahatvapurn-takneek/</guid>
+      <pubDate>Tue, 02 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp" type="image/webp" length="0"/>
+      <category>blockchain</category>
+      <category>क्रिप्टोकरेंसी</category>
+      <category>Bitcoin</category>
+      <category>P2P</category>
+      <category>स्मार्ट कॉन्ट्रैक्ट</category>
+      <category>वितरित बही</category>
+      <category>वित्त</category>
+      <category>आपूर्ति शृंखला</category>
+      <category>डिजिटल पहचान</category>
+      <category>टोकनीकरण</category>
+    </item>
+    <item>
+      <title>Bitcoin: पहली क्रिप्टोकरेंसी के वर्ष की समीक्षा</title>
+      <link>https://sebastienrousseau.com/hi/2018-01-01-bitcoin-varsh-ki-samiksha/</link>
+      <description>Bitcoin: एक पीयर-टू-पीयर इलेक्ट्रॉनिक नक़द-प्रणाली (P2P ECS) जो ऑनलाइन लेनदेन के तरीक़े में क्रांति ला सकती है।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2018-01-01-bitcoin-varsh-ki-samiksha/</guid>
+      <pubDate>Mon, 01 Jan 2018 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp" type="image/webp" length="0"/>
+      <category>Bitcoin</category>
+      <category>क्रिप्टोकरेंसी</category>
+      <category>blockchain</category>
+      <category>P2P</category>
+      <category>दोहरा-व्यय</category>
+      <category>माइनिंग</category>
+      <category>proof-of-work</category>
+      <category>ETF</category>
+      <category>Satoshi Nakamoto</category>
+      <category>विकेंद्रीकृत वित्त</category>
+    </item>
+  </channel>
+</rss>

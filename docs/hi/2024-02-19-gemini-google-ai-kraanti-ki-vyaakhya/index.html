@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="hi-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 19 Feb 2024 14:15:15 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 19 Feb 2024 14:15:15 +0000" id="last-modified" />
+    <title>Gemini का अनावरण: Google AI क्रांति की व्याख्या — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Gemini: Google का मल्टीमॉडल फाउंडेशन-मॉडल — क्षमताएँ, बेंचमार्क और उपयोग-मामले।">
+<meta name="keywords" content="Gemini, Google, AI, multimodal, फाउंडेशन मॉडल, LLM, बेंचमार्क, Pro, Ultra, Nano">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-FVupslgSQxtwiRzM1bpkhfwS/4BP3wHoFnGgdE7mSRY=' 'sha256-V+4gQokLuSBsAEd6+rjrLAuEInhUBgDlkXBQzYxtrJ8=' 'sha256-cnzjCmTmUkSYhjivM3JzemFrKiZ0mNMzJwvgX3cFQ2I=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/hi/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom फ़ीड" href="/hi/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Gemini का अनावरण: Google AI क्रांति की व्याख्या — Sebastien Rousseau">
+<meta property="og:description" content="Gemini: Google का मल्टीमॉडल फाउंडेशन-मॉडल — क्षमताएँ, बेंचमार्क और उपयोग-मामले।">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sebastienrousseau.com/hi/2024-02-19-gemini-google-ai-kraanti-ki-vyaakhya/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="hi_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gemini का अनावरण: Google AI क्रांति की व्याख्या — Sebastien Rousseau">
+<meta name="twitter:description" content="Gemini: Google का मल्टीमॉडल फाउंडेशन-मॉडल — क्षमताएँ, बेंचमार्क और उपयोग-मामले।">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/hi/2024-02-19-gemini-google-ai-kraanti-ki-vyaakhya/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-02-19-unlocking-gemini-google-ai-revolution-explained/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-02-19-decouvrir-gemini-la-revolution-ia-de-google-expliquee/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2024-02-19-unlocking-gemini-google-ai-revolution-explained/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2024-02-19-gemini-erklaert-die-ki-revolution-von-google/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2024-02-19-descubrir-gemini-la-revolucion-ia-de-google-explicada/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2024-02-19-gemini-google-ai-kraanti-ki-vyaakhya/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2024-02-19-scoprire-gemini-la-rivoluzione-ia-di-google-spiegata/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2024-02-19-gemini-wo-kaifuu-google-ai-kakumei-wo-tokiakasu/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2024-02-19-gemini-google-ai-hyeokmyeong-haeseol/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2024-02-19-gemini-ontsluiten-de-ai-revolutie-van-google-uitgelegd/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2024-02-19-descobrir-gemini-a-revolucao-ia-do-google-explicada/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2024-02-19-otkryvaem-gemini-revolyutsiya-ii-ot-google/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2024-02-19-jiedu-gemini-google-ai-biange-jiexi/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2024-02-19-jiedu-gemini-google-ai-biange-jiexi-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-02-19-unlocking-gemini-google-ai-revolution-explained/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">मुख्य सामग्री पर जाएँ</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="नेविगेशन बदलें" />
+      <div class="wrap">
+        <a class="ap-brand" href="/hi/index.html" aria-label="Sebastien Rousseau मुख्य पृष्ठ">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="मुख्य नेविगेशन">
+          <ul class="ap-menu">
+            <li><a href="/hi/hamare-baare-mein/index.html">हमारे बारे में</a></li>
+            <li><a href="/hi/lekh/index.html" aria-current="page" class="active">लेख</a></li>
+            <li><a href="/hi/prakashan/index.html">प्रकाशन</a></li>
+            <li><a href="/hi/vishay/index.html">विषय</a></li>
+            <li><a href="/hi/pariyojanaen/index.html">परियोजनाएँ</a></li>
+            <li><a href="/hi/pleelist/index.html">प्लेलिस्ट</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="डार्क थीम चालू करें" aria-pressed="false" title="थीम बदलें">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="खोजें (Cmd या Ctrl + K)" title="खोजें (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="भाषा">
+            <button type="button" class="ap-lang-toggle" aria-label="HI, भाषा बदलें" aria-expanded="false" aria-haspopup="menu" title="भाषा बदलें">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">HI</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="जल्द आ रहा है">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="जल्द आ रहा है">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="जल्द आ रहा है">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="जल्द आ रहा है">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="जल्द आ रहा है">🇮🇱 עברית</span>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="जल्द आ रहा है">🇮🇩 Indonesia</span>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="जल्द आ रहा है">🇵🇱 Polski</span>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="जल्द आ रहा है">🇷🇴 Română</span>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="जल्द आ रहा है">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="जल्द आ रहा है">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="जल्द आ रहा है">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="जल्द आ रहा है">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="जल्द आ रहा है">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="जल्द आ रहा है">🇳🇬 Yorùbá</span>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/hi/sampark/index.html" aria-label="संपर्क करें">संपर्क करें ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="नेविगेशन बदलें">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Gemini का अनावरण: Google AI क्रांति की व्याख्या</h1>
+      <p class="sub">एक मल्टीमॉडल फाउंडेशन-मॉडल जो Pro, Ultra और Nano में फैला</p>
+    <nav class="article-tags" aria-label="विषय"><a href="/tags/index.html#h3-gemini" class="article-tag" rel="tag">Gemini</a><a href="/tags/index.html#h3-google" class="article-tag" rel="tag">Google</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">AI</a><a href="/tags/index.html#h3-multimodal" class="article-tag" rel="tag">multimodal</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">फाउंडेशन मॉडल</a><a href="/tags/index.html#h3-llm" class="article-tag" rel="tag">LLM</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">बेंचमार्क</a><a href="/tags/index.html#h3-pro" class="article-tag" rel="tag">Pro</a><a href="/tags/index.html#h3-ultra" class="article-tag" rel="tag">Ultra</a><a href="/tags/index.html#h3-nano" class="article-tag" rel="tag">Nano</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-02-19T14:15:15+00:00" class="meta-pub">प्रकाशित 19 Feb 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">अद्यतन 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="अनुमानित पठन-समय">3 मिनट का पठन</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Gemini: Google का मल्टीमॉडल फाउंडेशन-मॉडल — क्षमताएँ, बेंचमार्क और उपयोग-मामले।</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>La evolución का Gemini: का 1.0 को 1.5.</strong> Gemini 1.5 está निर्मित sobre एक नई versión का वह arquitectura Mixture of Experts (MoE), reforzando उसका capacidad के लिए activar selectivamente वे rutas अधिक pertinentes का उसका नेटवर्क neuronal.</li>  <li><strong>उपयोग-मामले revolucionarios e implicaciones futuras.</strong> Los avances का Gemini 1.5 desbloquean एक plétora का अनुप्रयोग में sectores जैसे वह प्रौद्योगिकी, वह educación और वे artes creativas.</li>  <li><strong>Consideraciones éticas और विकास responsable.</strong> El avance तेज़ का वे मॉडल का lenguaje जैसे Gemini 1.5 suscita cuestiones importantes में torno को वे implicaciones éticas.</li>  <li><strong>निष्कर्ष.</strong> Gemini 1.5 marca एक avance significativo में वह प्रौद्योगिकी IA.</li></ul></aside><blockquote>
+<p><strong>TL;DR.</strong> Gemini: Google का मल्टीमॉडल फाउंडेशन-मॉडल — क्षमताएँ, बेंचमार्क और उपयोग-मामले। (DRAFT — मशीन-सहायता प्राप्त हिंदी अनुवाद; देशी समीक्षा लंबित।)</p>
+<p><strong>मुख्य निष्कर्ष</strong></p>
+<ul>
+<li>यह लेख एक तकनीकी विषय का विश्लेषण प्रस्तुत करता है।</li>
+<li>मुख्य अवधारणाएँ ऊपर परिभाषित की गई हैं।</li>
+<li>बैंकिंग और वित्तीय निहितार्थ नीचे विवेचित हैं।</li>
+<li>प्रौद्योगिकी, अंगीकार और जोखिमों पर दृष्टिकोण साझा किया गया है।</li>
+<li>दीर्घकालिक रुझान निष्कर्ष में सारांशित हैं।</li>
+</ul>
+</blockquote>
+<p><a href="https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/" title="Google's Gemini 1.5: The Next Generation of AI Models"><strong>Gemini 1.5 का Google ⧉</strong></a> marca एक avance significativo में IA, mejorando वह दक्षता और वह capacidad के लिए tratar grandes cantidades का जानकारी. Este मॉडल का lenguaje supera को उसका predecesor, Gemini 1.0, e inaugura एक नई था का potencia computacional और उपयोग का वे मॉडल का IA. Exploremos वह potencial परिवर्तनकारी का Gemini 1.5 और उसके implicaciones के लिए वह भविष्य का वह नवाचार IA.</p>
+<h2 id="la-evolucion-gemini-1-0-1-5">La evolución का Gemini: का 1.0 को 1.5 <a class="heading-anchor" href="#la-evolucion-gemini-1-0-1-5" aria-label="लिंक:  La evolución का Gemini: का 1.0 को 1.5">#</a></h2>
+<p>Gemini 1.5 está निर्मित sobre एक नई versión का वह arquitectura Mixture of Experts (MoE), reforzando उसका capacidad के लिए activar selectivamente वे rutas अधिक pertinentes का उसका नेटवर्क neuronal. Este avance aumenta significativamente वह दक्षता और वह निष्पादन, permitiendo को Gemini 1.5 tratar hasta एक millón का टोकन. Esta funcionalidad अनुमति देता है को मॉडल tratar grandes conjuntos का डेटा —vídeos, audios और bases का कोड complejas— superando को Gemini 1.0.</p>
+<h3 id="avance-calidad">Avance में दक्षता और calidad <a class="heading-anchor" href="#avance-calidad" aria-label="लिंक:  Avance में दक्षता और calidad">#</a></h3>
+<p>Gemini 1.5 alcanza एक calidad comparable को वह versión Ultra anterior को tiempo जो reduce significativamente वे recursos computacionales requeridos. Esta दक्षता democratiza वह पहुँच को वे capacidades IA avanzadas, permitiendo एक अनुप्रयोग और experimentación अधिक amplias में सभी वे industrias.</p>
+<h3 id="ampliar-ventana-contexto">Ampliar वह ventana का contexto <a class="heading-anchor" href="#ampliar-ventana-contexto" aria-label="लिंक:  Ampliar वह ventana का contexto">#</a></h3>
+<p>Una का वे funcionalidades अधिक revolucionarias का Gemini 1.5 है उसका ventana का contexto ampliada, capaz का tratar entradas का hasta 10 millones का टोकन. Esta capacidad है एक game-changer के लिए वे अनुप्रयोग जो आवश्यक हैं वह síntesis का grandes volúmenes का जानकारी, permitiendo एक comprensión अधिक profunda और matizada का वे डेटा.</p>
+<h3 id="exito-benchmarks">Éxito में वे benchmarks <a class="heading-anchor" href="#exito-benchmarks" aria-label="लिंक:  Éxito में वे benchmarks">#</a></h3>
+<p>El निष्पादन का Gemini 1.5 में diversos benchmarks, superando को Gemini 1.0 में वह 87 % का वे escenarios का prueba, subraya उसका superioridad. La IA है establecido एक récord में tratamiento और recuperación का जानकारी से शुरू होकर grandes conjuntos का डेटा में वह evaluación «Needle In A Haystack».</p>
+<h2 id="revolucionarios-e-implicaciones-futuras">उपयोग-मामले revolucionarios e implicaciones futuras <a class="heading-anchor" href="#revolucionarios-e-implicaciones-futuras" aria-label="लिंक:  उपयोग-मामले revolucionarios e implicaciones futuras">#</a></h2>
+<p>Los avances का Gemini 1.5 desbloquean एक plétora का अनुप्रयोग में sectores जैसे वह प्रौद्योगिकी, वह educación और वे artes creativas. Su versatilidad और उसका potencial परिवर्तनकारी van को क्रांति लाना वे industrias, ofreciendo उपकरण के लिए वह análisis का डेटा, वह comprensión multimodal, वह asistencia को वह programación और वह generación का contenido creativo.</p>
+<h2 id="consideraciones-eticas-responsable">Consideraciones éticas और विकास responsable <a class="heading-anchor" href="#consideraciones-eticas-responsable" aria-label="लिंक:  Consideraciones éticas और विकास responsable">#</a></h2>
+<p>El avance तेज़ का वे मॉडल का lenguaje जैसे Gemini 1.5 suscita cuestiones importantes में torno को वे implicaciones éticas. La समुदाय IA reconoce ampliamente वह importancia का priorizar वह confidencialidad, रोकना वे sesgos और विकसित करना तंत्र seguros को medida जो वे मॉडल se vuelven अधिक capaces. <a href="https://deepmind.google/technologies/gemini/#introduction" title="Gemini - Google DeepMind"><strong>Google ⧉</strong></a> indica haber puesto वह énfasis में propiedades जैसे वह सुरक्षा और वह equidad के दौरान वह विकास का Gemini 1.5. Además, वह compañía afirma haber incorporado técnicas algorítmicas के लिए detectar वह generación का contenido dañino, así जैसे तंत्र का vigilancia का sesgos. Auditorías externas continuas और वह supervisión द्वारा parte का संगठन बिना ánimo का lucro और estudios académicos हैं cruciales के लिए मान्य करना वे prioridades éticas और वे salvaguardas técnicas. Para बेहतर बनाना Gemini 1.5 और वे demás मॉडल punteros को tiempo जो se protege वह confidencialidad और se promueve वह equidad, investigadores, legisladores और उद्यम deben बने रहना vigilantes.</p>
+<h2 id="section-7">निष्कर्ष <a class="heading-anchor" href="#section-7" aria-label="लिंक:  निष्कर्ष">#</a></h2>
+<p>Gemini 1.5 marca एक avance significativo में वह प्रौद्योगिकी IA. Mejora वह दक्षता, amplía वह contexto e प्रस्तुत करता है उपयोग innovadores, fijando नए मानक के लिए वह प्रौद्योगिकी. Va को क्रांति लाना nuestras interacciones के साथ वह प्रौद्योगिकी और configurar वह भविष्य का वह नवाचार IA.</p>
+<aside class="author-card" aria-label="लेखक के बारे में"><img alt="Sebastien Rousseau का चित्र" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/hi/hamare-baare-mein/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">वरिष्ठ बैंकिंग टेक्नोलॉजिस्ट; मैं व्यावहारिक AI, ISO 20022 की ओर माइग्रेशन, वित्तीय सेवाओं के लिए पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतानों के संरचनात्मक रूपांतरण पर लिखता हूँ।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group में 20 वर्ष से अधिक का अनुभव। <a href="/hi/hamare-baare-mein/index.html">पूरा परिचय</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">अंतिम समीक्षा <time datetime="2026-05-16">2026-05-16</time>.</p><nav class="post-pagination" aria-label="लेख पृष्ठ-क्रम"><a class="post-pagination-prev" href="/hi/2024-02-13-eu-ai-act-vaishvik-ai-niyaman-ka-bhavishya/"><span class="post-pagination-label">पिछला</span><span class="post-pagination-title">EU's AI Act: Pioneering Ethical AI Regulation Worldwide</span></a><a class="post-pagination-next" href="/hi/2024-02-26-google-gemma-open-source-ai-vikaas-mein-rupaantaran/"><span class="post-pagination-label">अगला</span><span class="post-pagination-title">Google Gemma AI: Transforming Open-Source AI Development</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/hi/hamare-baare-mein/index.html">हमारे बारे में</a></li>
+              <li><a href="/hi/sampark/index.html">संपर्क</a></li>
+              <li><a href="/hi/static-site-generator-se-banaya/index.html">Static Site Generator से बनाया गया</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">लेखन</h2>
+            <ul>
+              <li><a href="/hi/lekh/index.html">लेख</a></li>
+              <li><a href="/hi/prakashan/index.html">प्रकाशन</a></li>
+              <li><a href="/hi/tag/index.html">टैग</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">कार्य</h2>
+            <ul>
+              <li><a href="/hi/pariyojanaen/index.html">परियोजनाएँ</a></li>
+              <li><a href="/hi/pleelist/index.html">प्लेलिस्ट</a></li>
+              <li><a href="/hi/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">संपर्क</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="न्यूज़लेटर सदस्यता">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — भुगतान, AI और पोस्ट-क्वांटम क्रिप्टोग्राफी पर शोध-नोट्स। कोई स्पैम नहीं।</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="aap@bank.in" />
+            <input type="hidden" name="_subject" value="न्यूज़लेटर सदस्यता — sebastienrousseau.com" />
+            <button type="submit">सदस्यता लें</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</span>
+          <div class="social" aria-label="सामाजिक लिंक">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau पर Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau पर LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau पर Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau पर YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau पर YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/hi/pahunch-yogyata/index.html">पहुँच-योग्यता</a> ·
+            <a href="/hi/gopniyata/index.html">गोपनीयता</a> ·
+            <a href="/hi/shartein/index.html">शर्तें</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"hi"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"hi"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":638,"about":{"@type":"Thing","name":"Generative AI","sameAs":["https://en.wikipedia.org/wiki/Generative_artificial_intelligence","https://www.wikidata.org/wiki/Q108766533","https://sebastienrousseau.com/2023-11-12-exploring-generative-ai/index.html"]},"mentions":[{"@type":"Thing","name":"Multimodal learning","sameAs":["https://en.wikipedia.org/wiki/Multimodal_learning","https://www.wikidata.org/wiki/Q117259025","https://sebastienrousseau.com/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/index.html"]}],"headline":"Gemini का अनावरण: Google AI क्रांति की व्याख्या","description":"Gemini: Google का मल्टीमॉडल फाउंडेशन-मॉडल — क्षमताएँ, बेंचमार्क और उपयोग-मामले।","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp","width":"100vw","height":"100vh","caption":"Google Gemini लोगो की अमूर्त छवि"},"url":"https://sebastienrousseau.com/hi/2024-02-19-gemini-google-ai-kraanti-ki-vyaakhya/","datePublished":"2024-02-19T14:15:15+00:00","dateModified":"2026-05-11","inLanguage":"hi","keywords":"Gemini, Google, AI, multimodal, फाउंडेशन मॉडल, LLM, बेंचमार्क, Pro, Ultra, Nano","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/hi/2024-02-19-gemini-google-ai-kraanti-ki-vyaakhya/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"hi"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/hi/"},{"@type":"ListItem","position":3,"name":"Gemini का अनावरण: Google AI क्रांति की व्याख्या","item":"https://sebastienrousseau.com/hi/2024-02-19-gemini-google-ai-kraanti-ki-vyaakhya/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="खोजें">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>खोजें</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="खोजें">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="दस्तावेज़ में खोजें..." autocomplete="off" aria-label="खोजें"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> बंद करें</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> नेविगेट करें</span><span><kbd>Enter</kbd> खोलें</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "_comment": "Hindi (hi) body-text labels — DRAFT pending native review. Key set MUST stay in sync with _data/i18n/en/labels.json; CI gate test_i18n_labels.py enforces parity.",
+  "Published": "प्रकाशित",
+  "Updated": "अद्यतन",
+  "min read": "मिनट का पठन",
+  "Previous": "पिछला",
+  "Next": "अगला",
+  "Sources & references": "स्रोत और संदर्भ",
+  "About the author": "लेखक के बारे में",
+  "Topics": "विषय",
+  "Contents": "विषय-सूची",
+  "Estimated read time": "अनुमानित पठन-समय",
+  "Article pagination": "लेख पृष्ठ-क्रम",
+  "Link to": "लिंक: "
+}

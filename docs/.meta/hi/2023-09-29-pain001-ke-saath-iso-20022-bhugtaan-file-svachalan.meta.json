@@ -1,0 +1,11 @@
+{
+  "description": "pain001 Python लाइब्रेरी से ISO 20022-अनुपालक भुगतान-फ़ाइलें कैसे उत्पन्न करें — एक व्यावहारिक गाइड।",
+  "date": "September 29, 2023",
+  "keywords": "ISO 20022, pain.001, Python, भुगतान, स्वचालन, SEPA, SWIFT, XML, बैंकिंग, ट्रेज़री",
+  "banner": "https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp",
+  "subtitle": "बैंकिंग पे-इन-डायरेक्शन-फ़ाइलों को कोड से निर्मित करना",
+  "locale": "hi_IN",
+  "banner_alt": "ISO 20022 भुगतान-संदेशों की प्रवाह-रेखा",
+  "language": "hi-IN",
+  "title": "pain001 के साथ ISO 20022-अनुपालक भुगतान-फ़ाइलों का स्वचालन"
+}
