@@ -318,6 +318,7 @@ class _PostbuildCounters:
         "img_dims_patched",
         "itemlist_patched",
         "link_hoisted",
+        "localhost_patched",
         "mermaid_patched",
         "nav_patched",
         "og_patched",
@@ -348,6 +349,25 @@ class _PostbuildContext:
         self.counters = _PostbuildCounters()
 
 
+_LOCALHOST_HOST_RE = re.compile(
+    r'https?://(?:127\.0\.0\.1(?::\d+)?|localhost(?::\d+)?)',
+    re.IGNORECASE,
+)
+
+
+def scrub_localhost_urls(html: str) -> tuple[str, int]:
+    """Replace any ``http://127.0.0.1[:port]`` or ``http://localhost[:port]``
+    leftover inside the page (typically <link rel="canonical"> or the
+    Atom feed alternate) with the production origin.
+
+    Shokunin bakes these in based on the dev-server it was built against;
+    they survive its own HTML emission pass and only show up at runtime.
+    """
+    new = _LOCALHOST_HOST_RE.sub("https://sebastienrousseau.com", html)
+    n = 0 if new == html else 1
+    return new, n
+
+
 def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     """SEO + JSON-LD passes that don't depend on lang context.
 
@@ -355,8 +375,11 @@ def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     CSP-hash pass (so its hash gets included); furniture must run
     after wordCount + about populate the BlogPosting JSON-LD; etc.
     """
-    out = fix_sri(html)
-    if out != html:
+    out, n_lh = scrub_localhost_urls(html)
+    ctr.localhost_patched += n_lh
+    prev = out
+    out = fix_sri(out)
+    if out != prev:
         ctr.sri_patched += 1
     prev = out
     out = inject_itemlist(page, out)
@@ -589,6 +612,7 @@ def main() -> None:
     c = ctx.counters
     print(
         f"postbuild: {len(pages)} HTML pages, "
+        f"{c.localhost_patched} got localhost→prod scrubbed, "
         f"{c.sri_patched} got real SRI, "
         f"{c.itemlist_patched} got ItemList JSON-LD, "
         f"{c.social_patched} got og:image fixed, "

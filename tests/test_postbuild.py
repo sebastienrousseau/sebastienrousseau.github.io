@@ -103,6 +103,41 @@ def test_patch_block_rewrites_meta_path_on_any_host():
 
 
 # ---------------------------------------------------------------------------
+# Localhost URL scrub — `scrub_localhost_urls`
+# Guards the SEO/canonical regression: Shokunin bakes the dev-server URL
+# into <link rel="canonical"> and the Atom-feed alternate; if it ships,
+# Lighthouse SEO fails ("Document does not have a valid rel=canonical").
+# ---------------------------------------------------------------------------
+
+
+def test_scrub_localhost_canonical_to_prod():
+    html = '<link rel="canonical" href="http://127.0.0.1:8000/about/index.html">'
+    out, n = pb.scrub_localhost_urls(html)
+    assert n == 1
+    assert "127.0.0.1" not in out
+    assert "https://sebastienrousseau.com/about/index.html" in out
+
+
+def test_scrub_localhost_atom_alternate():
+    html = '<link rel="alternate" type="application/atom+xml" href="http://localhost:8000/atom.xml"/>'
+    out, _ = pb.scrub_localhost_urls(html)
+    assert "https://sebastienrousseau.com/atom.xml" in out
+
+
+def test_scrub_localhost_idempotent_when_no_match():
+    html = '<link rel="canonical" href="https://sebastienrousseau.com/">'
+    out, n = pb.scrub_localhost_urls(html)
+    assert out == html
+    assert n == 0
+
+
+def test_scrub_localhost_handles_no_port():
+    html = '<a href="http://127.0.0.1/feed.xml">feed</a>'
+    out, _ = pb.scrub_localhost_urls(html)
+    assert "https://sebastienrousseau.com/feed.xml" in out
+
+
+# ---------------------------------------------------------------------------
 # Word count
 # ---------------------------------------------------------------------------
 
