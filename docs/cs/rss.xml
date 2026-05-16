@@ -6,57 +6,102 @@
     <description>Články v češtině: aplikovaná AI, platby ISO 20022, postkvantová kryptografie a transformace velkoobchodních plateb.</description>
     <atom:link href="https://sebastienrousseau.com/cs/rss.xml" rel="self" type="application/rss+xml"/>
     <language>cs-CZ</language>
-    <lastBuildDate>Sat, 16 May 2026 21:24:34 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 22:31:07 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Všechna práva vyhrazena.</copyright>
     <item>
-      <title>La mejor arquitectura de infraestructura cloud en 2026: un blueprint AI-native, multicloud y consciente del cuántico para los servicios financieros</title>
+      <title>Nejlepší cloudová infrastrukturní architektura v roce 2026: AI-nativní, multi-cloudový a kvantově odolný plán pro finanční služby</title>
       <link>https://sebastienrousseau.com/cs/2026-05-21-nejlepsi-cloudova-architektura-pro-banky-2026/</link>
-      <description>La arquitectura cloud en 2026 se ha cristalizado en torno a seis pilares: infraestructura AI-native, multicloud inteligente, diseño serverless-first con WebAssembly en el edge, edge computing, DevSecOps automatizado con crypto-agilidad, y operaciones sostenibles de alta densidad. Para los bancos, la pregunta ya no es consumir el cloud sino diseñarlo, bajo presión convergente del agentic commerce, los unit economics agénticos, el riesgo cuántico harvest-now-decrypt-later, la seguridad MCP y la contagión algorítmica, la identidad criptográfica de los agentes, los requisitos de continuous treasury y el Reglamento europeo de IA.</description>
+      <description>Cloudová architektura v roce 2026 krystalizovala okolo šesti pilířů: AI-nativní infrastruktura, inteligentní multi-cloud, serverless-first design s WebAssembly na edge, edge computing, automatizovaná bezpečnost s krypto-agilitou a udržitelný provoz s vysokou hustotou. Pro banky je otázkou, zda cloud spotřebovávat, nebo jej navrhovat — pod sbíhajícím se tlakem agentního obchodu, agentní ekonomiky jednotky, kvantového rizika harvest-now-decrypt-later, MCP bezpečnosti a algoritmické nákazy, kryptografické identity agenta, požadavků kontinuální treasury a EU AI Act.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-21-nejlepsi-cloudova-architektura-pro-banky-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
-      <category>arquitectura cloud 2026</category>
-      <category>infraestructura AI-native</category>
-      <category>multicloud</category>
+      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
+      <category>cloudová architektura 2026</category>
+      <category>AI-nativní infrastruktura</category>
+      <category>multi-cloud</category>
+      <category>suverénní cloud</category>
+      <category>US CLOUD Act</category>
+      <category>Bleu</category>
+      <category>S3NS</category>
+      <category>AWS European Sovereign Cloud</category>
+      <category>suverénní AI</category>
+      <category>modely s otevřenými váhami</category>
+      <category>Llama 4</category>
+      <category>Mistral</category>
+      <category>confidential computing</category>
       <category>serverless</category>
       <category>edge computing</category>
       <category>WebAssembly</category>
       <category>Wasm</category>
+      <category>eBPF</category>
+      <category>Cilium</category>
+      <category>Tetragon</category>
+      <category>LEO satelitní edge</category>
+      <category>Starlink Enterprise</category>
       <category>DevSecOps</category>
-      <category>datacenter sostenible</category>
-      <category>refrigeración líquida</category>
+      <category>udržitelné datové centrum</category>
+      <category>grid-aware computing</category>
+      <category>kapalinové chlazení</category>
+      <category>Small Modular Reactor</category>
+      <category>SMR</category>
+      <category>jaderná energie</category>
+      <category>Three Mile Island</category>
+      <category>Kairos Power</category>
+      <category>X-Energy</category>
+      <category>silicon photonics</category>
+      <category>co-packaged optics</category>
+      <category>NVIDIA Spectrum-X</category>
       <category>AWS Bedrock</category>
       <category>Google Vertex AI</category>
       <category>Azure OpenAI Service</category>
-      <category>agentic commerce</category>
-      <category>swarms multiagente</category>
-      <category>unit economics agénticos</category>
-      <category>FinOps agéntico</category>
-      <category>identidad criptográfica de agentes</category>
+      <category>agentní obchod</category>
+      <category>multi-agentní roje</category>
+      <category>agentní ekonomika jednotky</category>
+      <category>agent FinOps</category>
+      <category>kryptografická identita agenta</category>
       <category>SPIFFE</category>
       <category>SPIRE</category>
-      <category>contagión algorítmica</category>
-      <category>gravedad de los datos</category>
-      <category>FinOps egress</category>
+      <category>algoritmická nákaza</category>
+      <category>RAG poisoning</category>
+      <category>bezpečnost vektorových databází</category>
+      <category>datová proveniencia</category>
+      <category>Pinecone</category>
+      <category>Qdrant</category>
+      <category>Weaviate</category>
+      <category>Milvus</category>
+      <category>agentní chaos engineering</category>
+      <category>datová gravitace</category>
+      <category>egress FinOps</category>
       <category>HPC</category>
-      <category>almacenamiento GPU</category>
-      <category>continuous treasury</category>
-      <category>liquidez sin fronteras</category>
-      <category>pagos en tiempo real</category>
-      <category>generación de datos sintéticos</category>
-      <category>confidential computing</category>
-      <category>JPMorgan multicloud</category>
-      <category>modernización Citi</category>
-      <category>graph neural networks</category>
-      <category>fraude deepfake</category>
+      <category>GPU úložiště</category>
+      <category>kontinuální treasury</category>
+      <category>bezhraniční likvidita</category>
+      <category>real-time platby</category>
+      <category>CBDC</category>
+      <category>eCNY</category>
+      <category>DREX</category>
+      <category>e-Rupee</category>
+      <category>BIS Project Agora</category>
+      <category>digitální euro</category>
+      <category>generování syntetických dat</category>
+      <category>JPMorgan multi-cloud</category>
+      <category>Citi modernizace</category>
+      <category>grafové neuronové sítě</category>
+      <category>deepfake podvod</category>
       <category>harvest now decrypt later</category>
       <category>HNDL</category>
-      <category>criptografía postcuántica</category>
-      <category>crypto-agilidad</category>
-      <category>seguridad MCP</category>
+      <category>postkvantová kryptografie</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>krypto-agilita</category>
+      <category>kvantová distribuce klíčů</category>
+      <category>QKD</category>
+      <category>Basel IV</category>
+      <category>riziko cloudové koncentrace</category>
+      <category>operační riziko RWA</category>
+      <category>MCP bezpečnost</category>
       <category>prompt injection</category>
-      <category>ataques de cadena de suministro</category>
+      <category>útoky na dodavatelský řetězec</category>
       <category>CloudCDN</category>
       <category>Cloudflare Workers</category>
       <category>Durable Objects</category>

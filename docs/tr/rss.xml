@@ -6,25 +6,107 @@
     <description>Türkçe makaleler: uygulamalı yapay zeka, ISO 20022 ödemeleri, post-kuantum kriptografi ve toptan ödemelerin dönüşümü.</description>
     <atom:link href="https://sebastienrousseau.com/tr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>tr-TR</language>
-    <lastBuildDate>Sat, 16 May 2026 21:24:34 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 22:31:07 +0000</lastBuildDate>
     <copyright>© Telif Hakkı 2007 - 2026 - Sebastien Rousseau. Tüm hakları saklıdır.</copyright>
     <item>
-      <title>Bankalar için en iyi bulut altyapı mimarisi (2026)</title>
+      <title>2026&apos;da En İyi Bulut Altyapı Mimarisi: Finansal Hizmetler için AI-Yerel, Çoklu Bulut, Kuantum-Farkındalıklı Bir Şablon</title>
       <link>https://sebastienrousseau.com/tr/2026-05-21-bankalar-icin-en-iyi-bulut-mimarisi-2026/</link>
-      <description>Birinci kademe bankalar için 2026&apos;nın bulut altyapı mimarisi — sağlayıcılar, ödünleşimler ve uyum.</description>
+      <description>2026&apos;da bulut mimarisi altı sütun etrafında kristalleşti: AI-yerel altyapı, akıllı çoklu bulut, uçta WebAssembly ile sunucusuz-öncelikli tasarım, uç bilişim, kripto-çeviklik ile otomatik güvenlik ve sürdürülebilir yüksek yoğunluklu operasyonlar. Bankalar için soru, bulutu tüketmek mi yoksa tasarlamak mı olduğudur — ajansal ticaret, ajansal birim ekonomisi, şimdi-topla-sonra-deşifre-et kuantum riski, MCP güvenliği ve algoritmik bulaşma, kriptografik ajan kimliği, sürekli hazine talepleri ve AB AI Yasası&apos;nın yakınsayan baskısı altında.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-21-bankalar-icin-en-iyi-bulut-mimarisi-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
-      <category>bulut</category>
-      <category>mimari</category>
-      <category>bankacılık</category>
-      <category>2026</category>
-      <category>altyapı</category>
-      <category>uyum</category>
-      <category>AWS</category>
-      <category>Azure</category>
-      <category>GCP</category>
+      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
+      <category>2026 bulut mimarisi</category>
+      <category>AI-yerel altyapı</category>
+      <category>çoklu bulut</category>
+      <category>egemen bulut</category>
+      <category>US CLOUD Act</category>
+      <category>Bleu</category>
+      <category>S3NS</category>
+      <category>AWS European Sovereign Cloud</category>
+      <category>egemen AI</category>
+      <category>açık-ağırlıklı modeller</category>
+      <category>Llama 4</category>
+      <category>Mistral</category>
+      <category>gizli bilişim</category>
+      <category>sunucusuz</category>
+      <category>uç bilişim</category>
+      <category>WebAssembly</category>
+      <category>Wasm</category>
+      <category>eBPF</category>
+      <category>Cilium</category>
+      <category>Tetragon</category>
+      <category>LEO uydu uç</category>
+      <category>Starlink Enterprise</category>
+      <category>DevSecOps</category>
+      <category>sürdürülebilir veri merkezi</category>
+      <category>şebeke-farkındalıklı bilişim</category>
+      <category>sıvı soğutma</category>
+      <category>Küçük Modüler Reaktör</category>
+      <category>SMR</category>
+      <category>nükleer enerji</category>
+      <category>Three Mile Island</category>
+      <category>Kairos Power</category>
+      <category>X-Energy</category>
+      <category>silikon fotonik</category>
+      <category>birlikte-paketlenmiş optik</category>
+      <category>NVIDIA Spectrum-X</category>
+      <category>AWS Bedrock</category>
+      <category>Google Vertex AI</category>
+      <category>Azure OpenAI Service</category>
+      <category>ajansal ticaret</category>
+      <category>çoklu-ajan sürüleri</category>
+      <category>ajansal birim ekonomisi</category>
+      <category>ajan FinOps</category>
+      <category>kriptografik ajan kimliği</category>
+      <category>SPIFFE</category>
+      <category>SPIRE</category>
+      <category>algoritmik bulaşma</category>
+      <category>RAG zehirlenmesi</category>
+      <category>vektör veritabanı güvenliği</category>
+      <category>veri kökeni</category>
+      <category>Pinecone</category>
+      <category>Qdrant</category>
+      <category>Weaviate</category>
+      <category>Milvus</category>
+      <category>ajansal kaos mühendisliği</category>
+      <category>veri kütleçekimi</category>
+      <category>çıkış FinOps</category>
+      <category>HPC</category>
+      <category>GPU depolama</category>
+      <category>sürekli hazine</category>
+      <category>sınırsız likidite</category>
+      <category>gerçek zamanlı ödemeler</category>
+      <category>CBDC</category>
+      <category>eCNY</category>
+      <category>DREX</category>
+      <category>e-Rupee</category>
+      <category>BIS Project Agora</category>
+      <category>dijital euro</category>
+      <category>sentetik veri üretimi</category>
+      <category>JPMorgan çoklu bulut</category>
+      <category>Citi modernizasyonu</category>
+      <category>graf sinir ağları</category>
+      <category>deepfake dolandırıcılık</category>
+      <category>harvest now decrypt later</category>
+      <category>HNDL</category>
+      <category>post-kuantum kriptografi</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>kripto-çeviklik</category>
+      <category>kuantum anahtar dağıtımı</category>
+      <category>QKD</category>
+      <category>Basel IV</category>
+      <category>bulut yoğunlaşma riski</category>
+      <category>operasyonel risk RWA</category>
+      <category>MCP güvenliği</category>
+      <category>prompt enjeksiyonu</category>
+      <category>tedarik zinciri saldırıları</category>
+      <category>CloudCDN</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>WCAG-AA</category>
+      <category>Sebastien Rousseau</category>
     </item>
     <item>
       <title>Ajan tabanlı mühendislik: bankalar için 2026 planı</title>

@@ -6,12 +6,12 @@
     <description>Artikel auf Deutsch: angewandte KI, ISO-20022-Zahlungen, Post-Quanten-Kryptografie und Transformation des Wholesale-Zahlungsverkehrs.</description>
     <atom:link href="https://sebastienrousseau.com/de/rss.xml" rel="self" type="application/rss+xml"/>
     <language>de-DE</language>
-    <lastBuildDate>Sat, 16 May 2026 21:24:34 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 22:31:07 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle Rechte vorbehalten.</copyright>
     <item>
       <title>Die beste Cloud-Infrastruktur-Architektur 2026: ein KI-nativer, Multi-Cloud- und quantenbewusster Blueprint für Finanzdienstleister</title>
       <link>https://sebastienrousseau.com/de/2026-05-21-beste-cloud-infrastruktur-architektur-fuer-banken-2026/</link>
-      <description>Die Cloud-Architektur 2026 hat sich um sechs Pfeiler kristallisiert: KI-native Infrastruktur, intelligente Multi-Cloud, Serverless-First-Design mit WebAssembly am Edge, Edge Computing, automatisierte Sicherheit mit Krypto-Agilität und nachhaltige, hochdichte Operations. Für Banken stellt sich nicht mehr die Frage, welchen Pfeiler man übernimmt, sondern ob man Cloud konsumiert oder gestaltet – unter dem konvergierenden Druck von agentischem Commerce, agentischer Unit Economics, Harvest-Now-Decrypt-Later-Quantenrisiko, MCP-Sicherheit und algorithmischer Ansteckung, kryptografischer Agentenidentität, kontinuierlichem Treasury und dem EU-KI-Gesetz.</description>
+      <description>Die Cloud-Architektur 2026 hat sich um sechs Pfeiler kristallisiert: KI-native Infrastruktur, intelligente Multi-Cloud, Serverless-First-Design mit WebAssembly am Edge, Edge Computing, automatisierte Sicherheit mit Krypto-Agilität und nachhaltige, hochdichte Operations. Für Banken stellt sich nicht mehr die Frage, welchen Pfeiler man übernimmt, sondern ob man Cloud konsumiert oder gestaltet – unter dem konvergierenden Druck von agentischem Commerce, agentischer Unit Economics, Harvest-Now-Decrypt-Later-Quantenrisiko, MCP-Sicherheit und algorithmischer Ansteckung, kryptografischer Agentenidentität, kontinuierlichem Treasury, CBDC-Integration, Sovereign Cloud unter dem US CLOUD Act, Basel-IV-Kapitalanforderungen, SMR-Energieverträgen, Silicon Photonics und dem EU-KI-Gesetz.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-21-beste-cloud-infrastruktur-architektur-fuer-banken-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
@@ -19,13 +19,38 @@
       <category>Cloud-Architektur 2026</category>
       <category>KI-native Infrastruktur</category>
       <category>Multi-Cloud</category>
+      <category>Sovereign Cloud</category>
+      <category>US CLOUD Act</category>
+      <category>Bleu</category>
+      <category>S3NS</category>
+      <category>AWS European Sovereign Cloud</category>
+      <category>Sovereign AI</category>
+      <category>Open-Weight-Modelle</category>
+      <category>Llama 4</category>
+      <category>Mistral</category>
+      <category>Confidential Computing</category>
       <category>Serverless</category>
       <category>Edge Computing</category>
       <category>WebAssembly</category>
       <category>Wasm</category>
+      <category>eBPF</category>
+      <category>Cilium</category>
+      <category>Tetragon</category>
+      <category>LEO-Satelliten-Edge</category>
+      <category>Starlink Enterprise</category>
       <category>DevSecOps</category>
       <category>nachhaltiges Rechenzentrum</category>
+      <category>grid-aware Computing</category>
       <category>Flüssigkühlung</category>
+      <category>Small Modular Reactor</category>
+      <category>SMR</category>
+      <category>Nuklearenergie</category>
+      <category>Three Mile Island</category>
+      <category>Kairos Power</category>
+      <category>X-Energy</category>
+      <category>Silicon Photonics</category>
+      <category>Co-Packaged Optics</category>
+      <category>NVIDIA Spectrum-X</category>
       <category>AWS Bedrock</category>
       <category>Google Vertex AI</category>
       <category>Azure OpenAI Service</category>
@@ -37,6 +62,13 @@
       <category>SPIFFE</category>
       <category>SPIRE</category>
       <category>algorithmische Ansteckung</category>
+      <category>RAG-Poisoning</category>
+      <category>Vektordatenbank-Sicherheit</category>
+      <category>Daten-Provenienz</category>
+      <category>Pinecone</category>
+      <category>Qdrant</category>
+      <category>Weaviate</category>
+      <category>Milvus</category>
       <category>agentisches Chaos Engineering</category>
       <category>Data Gravity</category>
       <category>Egress FinOps</category>
@@ -45,8 +77,13 @@
       <category>kontinuierliches Treasury</category>
       <category>grenzenlose Liquidität</category>
       <category>Echtzeitzahlungen</category>
+      <category>CBDC</category>
+      <category>eCNY</category>
+      <category>DREX</category>
+      <category>e-Rupee</category>
+      <category>BIS Project Agora</category>
+      <category>digitaler Euro</category>
       <category>synthetische Datengenerierung</category>
-      <category>Confidential Computing</category>
       <category>JPMorgan Multi-Cloud</category>
       <category>Citi-Modernisierung</category>
       <category>Graph Neural Networks</category>
@@ -54,7 +91,14 @@
       <category>Harvest Now Decrypt Later</category>
       <category>HNDL</category>
       <category>Post-Quanten-Kryptografie</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
       <category>Krypto-Agilität</category>
+      <category>Quantum Key Distribution</category>
+      <category>QKD</category>
+      <category>Basel IV</category>
+      <category>Cloud-Konzentrationsrisiko</category>
+      <category>operative Risiko-RWA</category>
       <category>MCP-Sicherheit</category>
       <category>Prompt Injection</category>
       <category>Supply-Chain-Angriffe</category>

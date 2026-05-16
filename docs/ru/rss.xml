@@ -6,55 +6,100 @@
     <description>Статьи на русском языке: прикладной ИИ, платежи ISO 20022, постквантовая криптография и трансформация оптовых платежей.</description>
     <atom:link href="https://sebastienrousseau.com/ru/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ru-RU</language>
-    <lastBuildDate>Sat, 16 May 2026 21:24:34 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 22:31:07 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Все права защищены.</copyright>
     <item>
-      <title>Лучшая архитектура cloud-инфраструктуры в 2026 году: AI-native, multicloud и квантово-осведомлённый план для финансовых услуг</title>
+      <title>Лучшая облачная инфраструктурная архитектура в 2026 году: AI-native, multi-cloud, квантово-осведомлённый чертёж для финансовых услуг</title>
       <link>https://sebastienrousseau.com/ru/2026-05-21-luchshaya-cloud-arkhitektura-dlya-bankov-2026/</link>
-      <description>Cloud-архитектура в 2026 году кристаллизовалась вокруг шести столпов: AI-native инфраструктура, интеллектуальный multicloud, serverless-first с WebAssembly на edge, edge-вычисления, автоматизированный DevSecOps с crypto-agility и устойчивые операции высокой плотности. Для банков вопрос больше не в том, потреблять cloud или проектировать его.</description>
+      <description>Облачная архитектура в 2026 году кристаллизовалась вокруг шести столпов: AI-native инфраструктура, интеллектуальная multi-cloud облачная архитектура, serverless-first дизайн с WebAssembly на edge, edge computing, автоматизированная безопасность с crypto-agility и устойчивые операции высокой плотности. Для банков вопрос состоит в том, потреблять облако или проектировать его — под сходящимся давлением agentic commerce, agentic unit economics, квантового риска harvest-now-decrypt-later, MCP security и algorithmic contagion, криптографической идентичности агентов, требований continuous treasury и EU AI Act.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-21-luchshaya-cloud-arkhitektura-dlya-bankov-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
-      <category>архитектура cloud 2026</category>
+      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
+      <category>облачная архитектура 2026</category>
       <category>AI-native инфраструктура</category>
-      <category>multicloud</category>
+      <category>multi-cloud</category>
+      <category>суверенное облако</category>
+      <category>US CLOUD Act</category>
+      <category>Bleu</category>
+      <category>S3NS</category>
+      <category>AWS European Sovereign Cloud</category>
+      <category>суверенный AI</category>
+      <category>open-weight модели</category>
+      <category>Llama 4</category>
+      <category>Mistral</category>
+      <category>конфиденциальные вычисления</category>
       <category>serverless</category>
       <category>edge computing</category>
       <category>WebAssembly</category>
       <category>Wasm</category>
+      <category>eBPF</category>
+      <category>Cilium</category>
+      <category>Tetragon</category>
+      <category>LEO satellite edge</category>
+      <category>Starlink Enterprise</category>
       <category>DevSecOps</category>
       <category>устойчивый дата-центр</category>
+      <category>grid-aware computing</category>
       <category>жидкостное охлаждение</category>
+      <category>Small Modular Reactor</category>
+      <category>SMR</category>
+      <category>ядерная энергия</category>
+      <category>Three Mile Island</category>
+      <category>Kairos Power</category>
+      <category>X-Energy</category>
+      <category>кремниевая фотоника</category>
+      <category>co-packaged optics</category>
+      <category>NVIDIA Spectrum-X</category>
       <category>AWS Bedrock</category>
       <category>Google Vertex AI</category>
       <category>Azure OpenAI Service</category>
       <category>agentic commerce</category>
-      <category>multi-agent swarms</category>
+      <category>мультиагентные рои</category>
       <category>agentic unit economics</category>
-      <category>agentic FinOps</category>
+      <category>agent FinOps</category>
       <category>криптографическая идентичность агентов</category>
       <category>SPIFFE</category>
       <category>SPIRE</category>
-      <category>алгоритмическое заражение</category>
+      <category>algorithmic contagion</category>
+      <category>RAG poisoning</category>
+      <category>безопасность векторных баз данных</category>
+      <category>происхождение данных</category>
+      <category>Pinecone</category>
+      <category>Qdrant</category>
+      <category>Weaviate</category>
+      <category>Milvus</category>
+      <category>agentic chaos engineering</category>
       <category>гравитация данных</category>
-      <category>FinOps egress</category>
+      <category>egress FinOps</category>
       <category>HPC</category>
-      <category>GPU-хранилище</category>
+      <category>GPU storage</category>
       <category>continuous treasury</category>
       <category>безграничная ликвидность</category>
-      <category>платежи в реальном времени</category>
+      <category>мгновенные платежи</category>
+      <category>CBDC</category>
+      <category>eCNY</category>
+      <category>DREX</category>
+      <category>e-Rupee</category>
+      <category>BIS Project Agora</category>
+      <category>цифровой евро</category>
       <category>генерация синтетических данных</category>
-      <category>confidential computing</category>
-      <category>JPMorgan multicloud</category>
-      <category>модернизация Citi</category>
+      <category>JPMorgan multi-cloud</category>
+      <category>Citi modernisation</category>
       <category>графовые нейронные сети</category>
-      <category>deepfake-мошенничество</category>
+      <category>дипфейк-мошенничество</category>
       <category>harvest now decrypt later</category>
       <category>HNDL</category>
       <category>постквантовая криптография</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
       <category>crypto-agility</category>
-      <category>безопасность MCP</category>
+      <category>квантовое распределение ключей</category>
+      <category>QKD</category>
+      <category>Basel IV</category>
+      <category>риск концентрации облака</category>
+      <category>операционный риск RWA</category>
+      <category>MCP security</category>
       <category>prompt injection</category>
       <category>атаки на цепочку поставок</category>
       <category>CloudCDN</category>

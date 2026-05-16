@@ -1,11 +1,11 @@
 {
-  "banner_alt": "A minimalist, modern corporate office",
-  "title": "AI-Powered Speech Analysis, Translation, & Insight Tool",
-  "keywords": "audio analyser, azure ai, speech-to-text, audio data analysis, text analysis, ai translations, audio insights, automated transcription, audio data processing, machine learning",
   "description": "Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights.",
   "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
+  "locale": "ha_NG",
   "subtitle": "Revolutionising audio data processing with Azure AI Platform",
-  "language": "ha-NG",
   "date": "Jan 29, 2024",
-  "locale": "ha_NG"
+  "title": "AI-Powered Speech Analysis, Translation, & Insight Tool",
+  "keywords": "audio analyser, azure ai, speech-to-text, audio data analysis, text analysis, ai translations, audio insights, automated transcription, audio data processing, machine learning",
+  "banner_alt": "A minimalist, modern corporate office",
+  "language": "ha-NG"
 }

@@ -6,57 +6,102 @@
     <description>Artiklar på svenska: tillämpad AI, ISO 20022-betalningar, postkvantkryptografi och transformationen av grossistbetalningar.</description>
     <atom:link href="https://sebastienrousseau.com/sv/rss.xml" rel="self" type="application/rss+xml"/>
     <language>sv-SE</language>
-    <lastBuildDate>Sat, 16 May 2026 21:24:34 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 22:31:07 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna.</copyright>
     <item>
-      <title>La mejor arquitectura de infraestructura cloud en 2026: un blueprint AI-native, multicloud y consciente del cuántico para los servicios financieros</title>
+      <title>Den bästa molninfrastrukturarkitekturen 2026: En AI-nativ, multi-cloud, kvantmedveten ritning för finansiella tjänster</title>
       <link>https://sebastienrousseau.com/sv/2026-05-21-basta-molnarkitektur-for-banker-2026/</link>
-      <description>La arquitectura cloud en 2026 se ha cristalizado en torno a seis pilares: infraestructura AI-native, multicloud inteligente, diseño serverless-first con WebAssembly en el edge, edge computing, DevSecOps automatizado con crypto-agilidad, y operaciones sostenibles de alta densidad. Para los bancos, la pregunta ya no es consumir el cloud sino diseñarlo, bajo presión convergente del agentic commerce, los unit economics agénticos, el riesgo cuántico harvest-now-decrypt-later, la seguridad MCP y la contagión algorítmica, la identidad criptográfica de los agentes, los requisitos de continuous treasury y el Reglamento europeo de IA.</description>
+      <description>Molnarkitektur 2026 har kristalliserats kring sex pelare: AI-nativ infrastruktur, intelligent multi-cloud, serverlös-först-design med WebAssembly vid edge, edge computing, automatiserad säkerhet med kryptoagilitet och hållbar drift med hög densitet. För banker är frågan om man ska konsumera molnet eller designa det — under konvergerande tryck från agentisk handel, agentisk enhetsekonomi, harvest-now-decrypt-later-kvantrisk, MCP-säkerhet och algoritmisk kontaminering, kryptografisk agentidentitet, krav på kontinuerlig treasury och EU:s AI Act.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-21-basta-molnarkitektur-for-banker-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
-      <category>arquitectura cloud 2026</category>
-      <category>infraestructura AI-native</category>
-      <category>multicloud</category>
-      <category>serverless</category>
+      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
+      <category>molnarkitektur 2026</category>
+      <category>AI-nativ infrastruktur</category>
+      <category>multi-cloud</category>
+      <category>suverän cloud</category>
+      <category>US CLOUD Act</category>
+      <category>Bleu</category>
+      <category>S3NS</category>
+      <category>AWS European Sovereign Cloud</category>
+      <category>suverän AI</category>
+      <category>öppna viktmodeller</category>
+      <category>Llama 4</category>
+      <category>Mistral</category>
+      <category>konfidentiell databehandling</category>
+      <category>serverlös</category>
       <category>edge computing</category>
       <category>WebAssembly</category>
       <category>Wasm</category>
+      <category>eBPF</category>
+      <category>Cilium</category>
+      <category>Tetragon</category>
+      <category>LEO-satellit-edge</category>
+      <category>Starlink Enterprise</category>
       <category>DevSecOps</category>
-      <category>datacenter sostenible</category>
-      <category>refrigeración líquida</category>
+      <category>hållbart datacenter</category>
+      <category>nätmedveten databehandling</category>
+      <category>vätskekylning</category>
+      <category>Small Modular Reactor</category>
+      <category>SMR</category>
+      <category>kärnkraft</category>
+      <category>Three Mile Island</category>
+      <category>Kairos Power</category>
+      <category>X-Energy</category>
+      <category>kiselfotonik</category>
+      <category>co-packaged optics</category>
+      <category>NVIDIA Spectrum-X</category>
       <category>AWS Bedrock</category>
       <category>Google Vertex AI</category>
       <category>Azure OpenAI Service</category>
-      <category>agentic commerce</category>
-      <category>swarms multiagente</category>
-      <category>unit economics agénticos</category>
-      <category>FinOps agéntico</category>
-      <category>identidad criptográfica de agentes</category>
+      <category>agentisk handel</category>
+      <category>multi-agent-svärmar</category>
+      <category>agentisk enhetsekonomi</category>
+      <category>agent-FinOps</category>
+      <category>kryptografisk agentidentitet</category>
       <category>SPIFFE</category>
       <category>SPIRE</category>
-      <category>contagión algorítmica</category>
-      <category>gravedad de los datos</category>
-      <category>FinOps egress</category>
+      <category>algoritmisk kontaminering</category>
+      <category>RAG-förgiftning</category>
+      <category>vektordatabasens säkerhet</category>
+      <category>dataursprung</category>
+      <category>Pinecone</category>
+      <category>Qdrant</category>
+      <category>Weaviate</category>
+      <category>Milvus</category>
+      <category>agentisk chaos engineering</category>
+      <category>datagravitation</category>
+      <category>egress-FinOps</category>
       <category>HPC</category>
-      <category>almacenamiento GPU</category>
-      <category>continuous treasury</category>
-      <category>liquidez sin fronteras</category>
-      <category>pagos en tiempo real</category>
-      <category>generación de datos sintéticos</category>
-      <category>confidential computing</category>
-      <category>JPMorgan multicloud</category>
-      <category>modernización Citi</category>
-      <category>graph neural networks</category>
-      <category>fraude deepfake</category>
+      <category>GPU-lagring</category>
+      <category>kontinuerlig treasury</category>
+      <category>gränslös likviditet</category>
+      <category>realtidsbetalningar</category>
+      <category>CBDC</category>
+      <category>eCNY</category>
+      <category>DREX</category>
+      <category>e-Rupee</category>
+      <category>BIS Project Agora</category>
+      <category>digital euro</category>
+      <category>syntetisk datagenerering</category>
+      <category>JPMorgan multi-cloud</category>
+      <category>Citi-modernisering</category>
+      <category>grafiska neurala nätverk</category>
+      <category>deepfake-bedrägeri</category>
       <category>harvest now decrypt later</category>
       <category>HNDL</category>
-      <category>criptografía postcuántica</category>
-      <category>crypto-agilidad</category>
-      <category>seguridad MCP</category>
+      <category>post-kvantum-kryptografi</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>kryptoagilitet</category>
+      <category>kvantnyckeldistribution</category>
+      <category>QKD</category>
+      <category>Basel IV</category>
+      <category>molnkoncentrationsrisk</category>
+      <category>operationell risk RWA</category>
+      <category>MCP-säkerhet</category>
       <category>prompt injection</category>
-      <category>ataques de cadena de suministro</category>
+      <category>leveranskedjeattacker</category>
       <category>CloudCDN</category>
       <category>Cloudflare Workers</category>
       <category>Durable Objects</category>

@@ -1,12 +1,12 @@
 {
-  "date": "April 15, 2024",
-  "banner_alt": "양자 컴퓨터 회로",
   "description": "새로운 양자 알고리즘이 핵심 암호 문제를 해결하며, 양자 안전 보안 연구의 가속 필요성을 시사합니다.",
-  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
-  "title": "양자 알고리즘이 격자 기반 암호에 도전하다",
-  "last_reviewed": "2026-05-16",
-  "language": "ko-KR",
-  "keywords": "양자 알고리즘, 격자 기반 암호, LWE, Learning With Errors, 포스트 양자 암호, 양자 위협",
   "locale": "ko_KR",
-  "subtitle": "새로운 양자 알고리즘이 핵심 암호 문제를 해결할 가능성"
+  "date": "April 15, 2024",
+  "subtitle": "새로운 양자 알고리즘이 핵심 암호 문제를 해결할 가능성",
+  "banner_alt": "양자 컴퓨터 회로",
+  "language": "ko-KR",
+  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
+  "keywords": "양자 알고리즘, 격자 기반 암호, LWE, Learning With Errors, 포스트 양자 암호, 양자 위협",
+  "title": "양자 알고리즘이 격자 기반 암호에 도전하다",
+  "last_reviewed": "2026-05-16"
 }

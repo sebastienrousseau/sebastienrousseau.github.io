@@ -430,3 +430,6 @@ A **cloud consumer** procures the six pillars from hyperscalers with minimal int
 - Anthropic, (2025). Model Context Protocol (MCP) Specification and Security Best Practices.
 - SPIFFE Project, (2025). SPIFFE / SPIRE Specifications for Workload Identity, with extensions for AI agent identity (2025–2026).
 - Confidential Computing Consortium, (2025). Confidential Computing for Synthetic Data Generation in Regulated Industries.
+
+<!-- enrich-start -->
+<!-- enrich-end -->

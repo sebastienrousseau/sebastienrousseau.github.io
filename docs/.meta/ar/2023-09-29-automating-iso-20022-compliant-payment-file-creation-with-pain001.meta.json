@@ -1,11 +1,11 @@
 {
+  "description": "أتمتة إنشاء ملفّات الدفع pain.001 المتوافقة مع ISO 20022 انطلاقاً من CSV أو SQLite عبر Pain001، مكتبة Python مفتوحة المصدر.",
+  "language": "ar",
+  "title": "أتمتة إنشاء ملفّات الدفع المتوافقة مع ISO 20022 باستخدام Pain001",
+  "banner_alt": "مبنىً شاهق الارتفاع تتخلّله فتحاتٌ كثيرة",
   "banner": "https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp",
   "keywords": "ISO 20022, pain.001, Pain001, Python, المدفوعات, الأتمتة, CBPR+, HVPS+, SEPA, الامتثال, التحويلات",
-  "date": "September 29, 2023",
-  "banner_alt": "مبنىً شاهق الارتفاع تتخلّله فتحاتٌ كثيرة",
-  "subtitle": "Pain001: مكتبة Python مفتوحة المصدر تُبسّط الامتثال لـ ISO 20022",
   "locale": "ar_SA",
-  "title": "أتمتة إنشاء ملفّات الدفع المتوافقة مع ISO 20022 باستخدام Pain001",
-  "language": "ar",
-  "description": "أتمتة إنشاء ملفّات الدفع pain.001 المتوافقة مع ISO 20022 انطلاقاً من CSV أو SQLite عبر Pain001، مكتبة Python مفتوحة المصدر."
+  "date": "September 29, 2023",
+  "subtitle": "Pain001: مكتبة Python مفتوحة المصدر تُبسّط الامتثال لـ ISO 20022"
 }
