@@ -1,0 +1,15 @@
+{
+  "_comment": "Italian body-text labels — DRAFT pending native review. Key set MUST stay in sync with _data/i18n/en/labels.json; CI gate test_i18n_labels.py enforces parity.",
+  "Published": "Pubblicato il",
+  "Updated": "Aggiornato il",
+  "min read": "min di lettura",
+  "Previous": "Precedente",
+  "Next": "Successivo",
+  "Sources & references": "Fonti e riferimenti",
+  "About the author": "Informazioni sull'autore",
+  "Topics": "Argomenti",
+  "Contents": "Indice",
+  "Estimated read time": "Tempo di lettura stimato",
+  "Article pagination": "Paginazione degli articoli",
+  "Link to": "Collegamento a"
+}

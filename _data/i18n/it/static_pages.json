@@ -1,0 +1,99 @@
+{
+  "_comment": "Italian static-page metadata — DRAFT pending native review. Mirrors EN/FR/DE/AR static_pages.json shape.",
+  "404": {
+    "title": "Pagina non trovata — Sebastien Rousseau",
+    "subtitle": "Spiacenti, questa pagina non esiste.",
+    "description": "La pagina richiesta non è stata trovata. Torna alla home page o utilizza la ricerca.",
+    "keywords": "404, pagina non trovata"
+  },
+  "about": {
+    "title": "Chi sono — Sebastien Rousseau",
+    "subtitle": "Plasmare il futuro del banking e dei servizi finanziari attraverso l'integrazione strategica di intelligenza artificiale, crittografia post-quantistica e tecnologia blockchain.",
+    "description": "Sebastien Rousseau, senior banking technologist: IA applicata, migrazione a ISO 20022, crittografia post-quantistica, trasformazione strutturale dei pagamenti wholesale.",
+    "keywords": "Sebastien Rousseau, biografia, banca, pagamenti, IA, ISO 20022, crittografia post-quantistica, HSBC, PayPal, Barclays"
+  },
+  "accessibility": {
+    "title": "Accessibilità — Sebastien Rousseau",
+    "subtitle": "Impegnati nell'accessibilità digitale per le persone con disabilità.",
+    "description": "Dichiarazione di accessibilità: conformità WCAG 2.2 AA, principi inclusivi, feedback e contatti per segnalare problemi.",
+    "keywords": "accessibilità, WCAG, conformità, inclusione digitale, audit"
+  },
+  "articles": {
+    "title": "Articoli — Sebastien Rousseau",
+    "subtitle": "Articoli su IA, crittografia post-quantistica, ISO 20022 e il futuro dei pagamenti.",
+    "description": "Articoli su IA applicata, crittografia post-quantistica, pagamenti ISO 20022 e trasformazione dei pagamenti wholesale.",
+    "keywords": "articoli, ricerca, IA, crittografia post-quantistica, ISO 20022, pagamenti wholesale"
+  },
+  "contact": {
+    "title": "Contatti — Sebastien Rousseau",
+    "subtitle": "Hai una domanda o ti serve un consiglio? Scrivimi.",
+    "description": "Contatta Sebastien Rousseau per consulenza sulla trasformazione dei pagamenti, migrazione a ISO 20022 o strategia post-quantistica.",
+    "keywords": "contatti, consulenza, pagamenti, ISO 20022, crittografia post-quantistica"
+  },
+  "made-with-shokunin": {
+    "title": "Fatto con Shokunin — Sebastien Rousseau",
+    "subtitle": "Scopri come utilizzare il generatore di siti statici di nuova generazione.",
+    "description": "Questo sito è realizzato con Shokunin, un generatore di siti statici in Rust ottimizzato per prestazioni e SEO.",
+    "keywords": "Shokunin, SSG, Rust, prestazioni, SEO"
+  },
+  "made-with-static-site-generator": {
+    "title": "Fatto con Static Site Generator — Sebastien Rousseau",
+    "subtitle": "Scopri come utilizzare il generatore di siti statici di nuova generazione.",
+    "description": "Questo sito è generato con Shokunin, un generatore di siti statici veloce scritto in Rust.",
+    "keywords": "Shokunin, generatore di siti statici, Rust, prestazioni"
+  },
+  "offline": {
+    "title": "Senza connessione — Sebastien Rousseau",
+    "subtitle": "Controlla la tua connessione e riprova.",
+    "description": "Sei offline. Riconnettiti per accedere al contenuto.",
+    "keywords": "offline, senza connessione, PWA"
+  },
+  "papers": {
+    "title": "Pubblicazioni — Sebastien Rousseau",
+    "subtitle": "Libri bianchi di settore e ricerca applicata per i dirigenti senior nei pagamenti e nella sicurezza.",
+    "description": "Articoli, rapporti e pubblicazioni di Sebastien Rousseau su IA, pagamenti ISO 20022 e crittografia post-quantistica.",
+    "keywords": "pubblicazioni, articoli, rapporti, ricerca, ISO 20022, IA, crittografia post-quantistica"
+  },
+  "playlists": {
+    "title": "Playlist — Sebastien Rousseau",
+    "subtitle": "Playlist di Spotify selezionate per il deep work, la creatività e la mentalità ingegneristica.",
+    "description": "Selezione musicale e di ascolto di Sebastien Rousseau.",
+    "keywords": "playlist, musica"
+  },
+  "privacy": {
+    "title": "Informativa sulla privacy — Sebastien Rousseau",
+    "subtitle": "La tua privacy ci sta a cuore.",
+    "description": "Come questo sito raccoglie, utilizza e protegge i tuoi dati. Misurazione del traffico anonimo, cookie, hosting e diritti GDPR.",
+    "keywords": "privacy, GDPR, cookie, dati personali, analitica"
+  },
+  "projects": {
+    "title": "Progetti — Sebastien Rousseau",
+    "subtitle": "Progetti open source in Python, Rust e JavaScript per il futuro della finanza.",
+    "description": "Portfolio di librerie open source che Sebastien Rousseau mantiene per pagamenti, regolamento transfrontaliero e crittografia resistente al quantum.",
+    "keywords": "progetti open source, Python, Rust, pagamenti, ISO 20022, crittografia post-quantistica"
+  },
+  "tags": {
+    "title": "Etichette — Sebastien Rousseau",
+    "subtitle": "Naviga il sito per argomento: IA, pagamenti, crittografia post-quantistica, open source.",
+    "description": "Sfoglia gli articoli per etichetta: IA, ISO 20022, blockchain, crittografia post-quantistica e molto altro.",
+    "keywords": "etichette, tag, navigazione per argomento"
+  },
+  "terms": {
+    "title": "Condizioni d'uso — Sebastien Rousseau",
+    "subtitle": "Condizioni generali di utilizzo del sito.",
+    "description": "Condizioni generali di utilizzo del sito sebastienrousseau.com: licenza dei contenuti, restrizioni, marchi e giurisdizione.",
+    "keywords": "condizioni, termini legali, licenza, copyright"
+  },
+  "thanks": {
+    "title": "Grazie — Sebastien Rousseau",
+    "subtitle": "Grazie per avermi contattato!",
+    "description": "Grazie per il tuo messaggio. Ti risponderò molto presto.",
+    "keywords": "grazie"
+  },
+  "topics": {
+    "title": "Argomenti — Sebastien Rousseau",
+    "subtitle": "Articoli su IA, crittografia post-quantistica, ISO 20022 e il futuro dei pagamenti.",
+    "description": "Esplora le analisi per argomento: IA applicata, pagamenti ISO 20022, crittografia post-quantistica e trasformazione dei pagamenti wholesale.",
+    "keywords": "argomenti, temi, IA, pagamenti, ISO 20022, crittografia post-quantistica"
+  }
+}
