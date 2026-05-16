@@ -103,6 +103,48 @@ def test_patch_block_rewrites_meta_path_on_any_host():
 
 
 # ---------------------------------------------------------------------------
+# News-sitemap shrink — Google News recommendations
+# ---------------------------------------------------------------------------
+
+
+def test_truncate_news_title_under_limit_passes_through():
+    from postbuild_lib import output as out
+    title = "Short title"
+    assert out._truncate_news_title(title) == title
+
+
+def test_truncate_news_title_clips_at_word_boundary():
+    from postbuild_lib import output as out
+    title = "A very long title that absolutely exceeds the eighty character recommendation set by Google News"
+    result = out._truncate_news_title(title)
+    assert len(result) <= 80
+    assert result.endswith("…")
+    # Must clip at a word boundary, not mid-word
+    body = result.rstrip("…").rstrip()
+    assert not title[len(body)].isalpha() or title[: len(body) + 1].endswith(" ")
+
+
+def test_truncate_news_title_custom_limit():
+    from postbuild_lib import output as out
+    assert len(out._truncate_news_title("one two three four five", limit=10)) <= 10
+
+
+def test_limit_news_keywords_under_limit_passes_through():
+    from postbuild_lib import output as out
+    kws = "a, b, c"
+    assert out._limit_news_keywords(kws) == kws
+
+
+def test_limit_news_keywords_trims_to_first_n():
+    from postbuild_lib import output as out
+    kws = ", ".join(f"k{i}" for i in range(15))
+    result = out._limit_news_keywords(kws)
+    items = [k.strip() for k in result.split(",")]
+    assert len(items) == 10
+    assert items == [f"k{i}" for i in range(10)]
+
+
+# ---------------------------------------------------------------------------
 # GitHub stats — `_format_count`, `_relative_time`
 # ---------------------------------------------------------------------------
 

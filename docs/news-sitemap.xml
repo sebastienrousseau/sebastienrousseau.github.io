@@ -429,8 +429,8 @@
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</news:title>
-    <news:keywords>cloud architecture 2026, AI-native infrastructure, multi-cloud, serverless, edge computing, WebAssembly, Wasm, DevSecOps, sustainable data centre, liquid cooling, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, agentic commerce, multi-agent swarms, agentic unit economics, agent FinOps, cryptographic agent identity, SPIFFE, SPIRE, algorithmic contagion, agentic chaos engineering, data gravity, egress FinOps, HPC, GPU storage, continuous treasury, borderless liquidity, real-time payments, synthetic data generation, confidential computing, JPMorgan multi-cloud, Citi modernisation, graph neural networks, deepfake fraud, harvest now decrypt later, HNDL, post-quantum cryptography, crypto-agility, MCP security, prompt injection, supply chain attacks, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
+    <news:title>The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud…</news:title>
+    <news:keywords>cloud architecture 2026, AI-native infrastructure, multi-cloud, serverless, edge computing, WebAssembly, Wasm, DevSecOps, sustainable data centre, liquid cooling</news:keywords>
   </news:news>
 </url>
 <url>
@@ -585,8 +585,8 @@
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
-    <news:title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</news:title>
-    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, COBOL modernisation, mainframe, vibe coding, vibe hacking, autonomous agents, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, third-party risk management, TPRM, vendor risk, post-quantum cryptography, agent control plane, FCA, SM&amp;CR, 12-week action plan, Sebastien Rousseau</news:keywords>
+    <news:title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the…</news:title>
+    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
   </news:news>
 </url>
 <url>
@@ -717,7 +717,7 @@
       <news:language>en-GB</news:language>
     </news:publication>
     <news:publication_date>2026-05-14T06:06:06+00:00</news:publication_date>
-    <news:title>Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</news:title>
+    <news:title>Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for…</news:title>
     <news:keywords>post-quantum cryptography, PQC migration, corporate banking, financial services, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204</news:keywords>
   </news:news>
 </url>

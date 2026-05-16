@@ -1,11 +1,11 @@
 {
-  "subtitle": "Comment l'IA transforme les interactions consommateurs et la dynamique publicitaire",
-  "locale": "fr_FR",
-  "keywords": "IA dans la publicité, Amazon Rufus, outils IA Meta, ciblage consommateur, technologie publicitaire, chatbots IA, tendances marketing digital, analytics IA, IA créative, optimisation de campagne",
-  "description": "Comment l'IA transforme la publicité — aperçus sur Rufus d'Amazon et les derniers développements de Meta. Découvrez l'impact sur l'engagement consommateur.",
-  "date": "February 08, 2024",
-  "banner_alt": "Une femme robot avec papillons et fleurs",
   "language": "fr",
+  "date": "February 08, 2024",
+  "description": "Comment l'IA transforme la publicité — aperçus sur Rufus d'Amazon et les derniers développements de Meta. Découvrez l'impact sur l'engagement consommateur.",
+  "subtitle": "Comment l'IA transforme les interactions consommateurs et la dynamique publicitaire",
+  "title": "IA générative dans la publicité : Amazon Rufus & Meta",
   "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp",
-  "title": "IA générative dans la publicité : Amazon Rufus & Meta"
+  "keywords": "IA dans la publicité, Amazon Rufus, outils IA Meta, ciblage consommateur, technologie publicitaire, chatbots IA, tendances marketing digital, analytics IA, IA créative, optimisation de campagne",
+  "banner_alt": "Une femme robot avec papillons et fleurs",
+  "locale": "fr_FR"
 }

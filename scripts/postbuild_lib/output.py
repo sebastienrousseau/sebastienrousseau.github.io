@@ -555,6 +555,54 @@ def fix_xml_feeds(public: Path) -> int:
     return n
 
 
+_NEWS_TITLE_RE = re.compile(r'(<news:title>)([\s\S]*?)(</news:title>)', re.IGNORECASE)
+_NEWS_KEYWORDS_RE = re.compile(r'(<news:keywords>)([\s\S]*?)(</news:keywords>)', re.IGNORECASE)
+
+
+def _truncate_news_title(title: str, limit: int = 80) -> str:
+    """Google News recommends news:title ≤ 80 chars. Truncate at the
+    last word boundary inside the limit; append a single ``…`` so the
+    reader sees the title was clipped."""
+    if len(title) <= limit:
+        return title
+    cut = title[: limit - 1]
+    # Back up to the last space so we don't split a word mid-syllable.
+    sp = cut.rfind(" ")
+    if sp > limit // 2:
+        cut = cut[:sp]
+    return cut.rstrip(" ,;:.") + "…"
+
+
+def _limit_news_keywords(kws: str, limit: int = 10) -> str:
+    """Google News recommends news:keywords ≤ 10 items."""
+    items = [k.strip() for k in kws.split(",") if k.strip()]
+    if len(items) <= limit:
+        return kws
+    return ", ".join(items[:limit])
+
+
+def shrink_news_sitemap(public: Path) -> int:
+    """Bring news-sitemap.xml within Google News' recommended bounds:
+    ``news:title`` ≤ 80 chars and ``news:keywords`` ≤ 10 items.
+
+    Returns the count of files actually rewritten (0 or 1)."""
+    xml = public / "news-sitemap.xml"
+    if not xml.is_file():
+        return 0
+    text = xml.read_text(encoding="utf-8")
+    original = text
+    text = _NEWS_TITLE_RE.sub(
+        lambda m: m.group(1) + _truncate_news_title(m.group(2)) + m.group(3), text
+    )
+    text = _NEWS_KEYWORDS_RE.sub(
+        lambda m: m.group(1) + _limit_news_keywords(m.group(2)) + m.group(3), text
+    )
+    if text == original:
+        return 0
+    xml.write_text(text, encoding="utf-8")
+    return 1
+
+
 # ---------------------------------------------------------------------------
 # 6e. Sitemap lastmod refresh + per-language splice
 # ---------------------------------------------------------------------------

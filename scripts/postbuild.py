@@ -281,6 +281,7 @@ from postbuild_lib.output import (  # noqa: F401 — re-exports
     fix_xml_feed_urls,
     fix_xml_feeds,
     refresh_sitemap_lastmod,
+    shrink_news_sitemap,
     write_json_feed,
     write_llms_full_txt,
     write_llms_txt,
@@ -575,7 +576,7 @@ def _process_page(page: Path, ctx: _PostbuildContext) -> None:
         page.write_text(patched2, encoding="utf-8")
 
 
-def _finalize_build() -> tuple[int, bool, bool, bool, int, int]:
+def _finalize_build() -> tuple[int, bool, bool, bool, int, int, int]:
     """Run post-page-loop tasks: sitemap lastmod refresh, robots.txt
     rewrite, llms.txt + llms-full.txt rewrite, JSON Feed emission,
     XML feed URL fix + ampersand scrub. Returns the counters for the
@@ -588,9 +589,10 @@ def _finalize_build() -> tuple[int, bool, bool, bool, int, int]:
     write_json_feed(PUBLIC)
     feed_urls_patched = fix_xml_feed_urls(PUBLIC)
     xml_patched = fix_xml_feeds(PUBLIC)
+    news_shrunk = shrink_news_sitemap(PUBLIC)
     return (
         sitemap_patched, robots_written, llms_written, llms_full_written,
-        feed_urls_patched, xml_patched,
+        feed_urls_patched, xml_patched, news_shrunk,
     )
 
 
@@ -606,7 +608,7 @@ def main() -> None:
 
     (
         sitemap_patched, robots_written, llms_written, llms_full_written,
-        feed_urls_patched, xml_patched,
+        feed_urls_patched, xml_patched, news_shrunk,
     ) = _finalize_build()
 
     c = ctx.counters
@@ -632,6 +634,7 @@ def main() -> None:
         f"{sitemap_patched} sitemap entries refreshed, "
         f"{feed_urls_patched} feed(s) URL-repaired, "
         f"{xml_patched} XML feed(s) scrubbed, "
+        f"{news_shrunk} news-sitemap shrunk, "
         f"robots.txt {'updated' if robots_written else 'unchanged'}, "
         f"llms.txt {'updated' if llms_written else 'unchanged'}, "
         f"llms-full.txt {'updated' if llms_full_written else 'unchanged'}"
