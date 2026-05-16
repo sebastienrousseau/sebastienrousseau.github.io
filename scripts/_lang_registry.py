@@ -86,7 +86,7 @@ LANGUAGES: tuple[Language, ...] = (
     Language("pl", "pl-PL", "pl_PL", "PL", "Polski", "🇵🇱"),
     Language("pt-br", "pt-BR", "pt_BR", "PT", "Português", "🇧🇷", active=True),
     Language("ro", "ro-RO", "ro_RO", "RO", "Română", "🇷🇴"),
-    Language("ru", "ru-RU", "ru_RU", "RU", "Русский", "🇷🇺"),
+    Language("ru", "ru-RU", "ru_RU", "RU", "Русский", "🇷🇺", active=True),
     Language("sv", "sv-SE", "sv_SE", "SV", "Svenska", "🇸🇪"),
     Language("th", "th-TH", "th_TH", "TH", "ไทย", "🇹🇭"),
     Language("tr", "tr-TR", "tr_TR", "TR", "Türkçe", "🇹🇷"),

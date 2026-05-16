@@ -1,11 +1,11 @@
 {
-  "title": "2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图",
-  "language": "zh-Hans",
-  "banner_alt": "2026 年六支柱云架构图——AI 原生、多云、无服务器、边缘、DevSecOps 和可持续设计，配 CloudCDN 边缘研究覆盖",
-  "locale": "zh_CN",
-  "subtitle": "云架构已围绕六大支柱和银行的一个战略问题结晶：消费云还是设计它",
+  "keywords": "云架构 2026, AI 原生基础设施, 多云, 无服务器, 边缘计算, WebAssembly, DevSecOps, 液体冷却, 代理式商业, 量子安全, CloudCDN",
   "banner": "https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp",
-  "description": "2026 年云架构围绕六大支柱结晶：AI 原生基础设施、智能多云、无服务器优先与边缘 WebAssembly、边缘计算、自动化 DevSecOps 与密码敏捷性、可持续高密度运营。",
   "date": "May 21, 2026",
-  "keywords": "云架构 2026, AI 原生基础设施, 多云, 无服务器, 边缘计算, WebAssembly, DevSecOps, 液体冷却, 代理式商业, 量子安全, CloudCDN"
+  "description": "2026 年云架构围绕六大支柱结晶：AI 原生基础设施、智能多云、无服务器优先与边缘 WebAssembly、边缘计算、自动化 DevSecOps 与密码敏捷性、可持续高密度运营。",
+  "title": "2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图",
+  "subtitle": "云架构已围绕六大支柱和银行的一个战略问题结晶：消费云还是设计它",
+  "locale": "zh_CN",
+  "language": "zh-Hans",
+  "banner_alt": "2026 年六支柱云架构图——AI 原生、多云、无服务器、边缘、DevSecOps 和可持续设计，配 CloudCDN 边缘研究覆盖"
 }

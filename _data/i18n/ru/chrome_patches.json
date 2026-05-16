@@ -1,0 +1,289 @@
+{
+  "_comment": "RU chrome patches (inline portion only — the auto-generated portion comes from strings.json via _lang_registry.build_chrome_patches). DRAFT pending native review. Mirrors FR/ES/AR/DE chrome_patches.json.",
+  "patches": [
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"Подписка на рассылку\""
+    ],
+    [
+      "Banking On Quantum — research notes on payments, AI (?:&amp;|&) post-quantum crypto\\. No spam\\.",
+      "Banking On Quantum — аналитические заметки о платежах, ИИ и постквантовой криптографии. Без спама."
+    ],
+    [
+      "placeholder=\"?you@bank\\.com\"?",
+      "placeholder=\"vy@bank.ru\""
+    ],
+    [
+      "value=\"Newsletter signup — sebastienrousseau\\.com\"",
+      "value=\"Подписка на рассылку — sebastienrousseau.com\""
+    ],
+    [
+      ">Subscribe</button>",
+      ">Подписаться</button>"
+    ],
+    [
+      ">Skip to main content</a>",
+      ">Перейти к основному содержанию</a>"
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"Переключить навигацию\""
+    ],
+    [
+      "title=\"Toggle navigation\"",
+      "title=\"Переключить навигацию\""
+    ],
+    [
+      "aria-label=\"?Primary\"?(?=[\\s>])",
+      "aria-label=\"Основная навигация\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"Включить тёмную тему\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"Включить светлую тему\""
+    ],
+    [
+      "title=\"Switch theme\"",
+      "title=\"Сменить тему\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"Поиск (Cmd или Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"Поиск (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"Связаться со мной\""
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">Связаться со мной ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">Связаться со мной</a>"
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Главная страница Sebastien Rousseau\""
+    ],
+    [
+      "<li><a href=\"?/about/index\\.html\"?>About</a></li>",
+      "<li><a href=\"/ru/o-mne/index.html\">Обо мне</a></li>"
+    ],
+    [
+      "<li><a href=\"?/papers/index\\.html\"?>Papers</a></li>",
+      "<li><a href=\"/ru/publikatsii/index.html\">Публикации</a></li>"
+    ],
+    [
+      "<li><a href=\"?/topics/index\\.html\"?>Topics</a></li>",
+      "<li><a href=\"/ru/temy/index.html\">Темы</a></li>"
+    ],
+    [
+      "<li><a href=\"?/projects/index\\.html\"?>Projects</a></li>",
+      "<li><a href=\"/ru/proekty/index.html\">Проекты</a></li>"
+    ],
+    [
+      "<li><a href=\"?/articles/index\\.html\"?>Articles</a></li>",
+      "<li><a href=\"/ru/stati/index.html\">Статьи</a></li>"
+    ],
+    [
+      "<li><a href=\"?/contact/index\\.html\"?>Contact</a></li>",
+      "<li><a href=\"/ru/kontakty/index.html\">Контакты</a></li>"
+    ],
+    [
+      "(<a\\b[^>]*?\\bclass=\"?ap-brand\"?[^>]*?\\bhref=)\"?/index\\.html\"?",
+      "\\g<1>\"/ru/index.html\""
+    ],
+    [
+      "<li><a href=\"?/playlists/index\\.html\"?>Playlists</a></li>",
+      "<li><a href=\"/ru/pleilisty/index.html\">Плейлисты</a></li>"
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"Наверх\""
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Writing</h2>",
+      "<h2 class=\"ap-foot-title\">Публикации</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Work</h2>",
+      "<h2 class=\"ap-foot-title\">Деятельность</h2>"
+    ],
+    [
+      "<h2 class=\"?ap-foot-title\"?>Reach</h2>",
+      "<h2 class=\"ap-foot-title\">Контакты</h2>"
+    ],
+    [
+      "<a href=\"?/about/index\\.html\"?>About</a>",
+      "<a href=\"/ru/o-mne/index.html\">Обо мне</a>"
+    ],
+    [
+      "<a href=\"?/made-with-static-site-generator/index\\.html\"?>Made with Static Site Generator</a>",
+      "<a href=\"/ru/sdelano-so-staticheskim-generatorom/index.html\">Сделано со Static Site Generator</a>"
+    ],
+    [
+      "<a href=\"?/papers/index\\.html\"?>Papers</a>",
+      "<a href=\"/ru/publikatsii/index.html\">Публикации</a>"
+    ],
+    [
+      "<a href=\"?/tags/index\\.html\"?>Tags</a>",
+      "<a href=\"/ru/tegi/index.html\">Теги</a>"
+    ],
+    [
+      "<a href=\"?/projects/index\\.html\"?>Projects</a>",
+      "<a href=\"/ru/proekty/index.html\">Проекты</a>"
+    ],
+    [
+      "<a href=\"?/playlists/index\\.html\"?>Playlists</a>",
+      "<a href=\"/ru/pleilisty/index.html\">Плейлисты</a>"
+    ],
+    [
+      "<a href=\"?/contact/index\\.html\"?>Contact</a>",
+      "<a href=\"/ru/kontakty/index.html\">Контакты</a>"
+    ],
+    [
+      "<a href=\"?/articles/index\\.html\"?>Articles</a>",
+      "<a href=\"/ru/stati/index.html\">Статьи</a>"
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"Социальные сети\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau on ",
+      "aria-label=\"Sebastien Rousseau в "
+    ],
+    [
+      "alt=\"Sebastien Rousseau on ",
+      "alt=\"Sebastien Rousseau в "
+    ],
+    [
+      "alt=\"Black and White Portrait of Sebastien Rousseau\"",
+      "alt=\"Чёрно-белый портрет Sebastien Rousseau\""
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Copyright 2007 - 2026 - Sebastien Rousseau. Все права защищены."
+    ],
+    [
+      "<a href=\"?/accessibility/index\\.html\"?>Accessibility</a>",
+      "<a href=\"/ru/dostupnost/index.html\">Доступность</a>"
+    ],
+    [
+      "<a href=\"?/privacy/index\\.html\"?>Privacy</a>",
+      "<a href=\"/ru/konfidentsialnost/index.html\">Конфиденциальность</a>"
+    ],
+    [
+      "<a href=\"?/terms/index\\.html\"?>Terms</a>",
+      "<a href=\"/ru/usloviya/index.html\">Условия</a>"
+    ],
+    [
+      "placeholder=\"Search documentation\\.\\.\\.\"",
+      "placeholder=\"Поиск по документации...\""
+    ],
+    [
+      "aria-label=\"Search\"(?!\\s*\\()",
+      "aria-label=\"Поиск\""
+    ],
+    [
+      "<kbd>Esc</kbd>\\s*close",
+      "<kbd>Esc</kbd> закрыть"
+    ],
+    [
+      "navigate</span>",
+      "перемещение</span>"
+    ],
+    [
+      "<kbd>Enter</kbd>\\s*open",
+      "<kbd>Enter</kbd> открыть"
+    ],
+    [
+      "<span>Search</span>",
+      "<span>Поиск</span>"
+    ],
+    [
+      "aria-label=\"?Language\"?(?=[\\s>])",
+      "aria-label=\"Язык\""
+    ],
+    [
+      "aria-label=\"EN, Change language\"",
+      "aria-label=\"RU, Сменить язык\""
+    ],
+    [
+      "title=\"Change language\"",
+      "title=\"Сменить язык\""
+    ],
+    [
+      "title=\"Coming soon\"",
+      "title=\"Скоро\""
+    ],
+    [
+      "<span class=\"?ap-lang-current\"?>EN</span>",
+      "<span class=\"ap-lang-current\">RU</span>"
+    ],
+    [
+      "title=\"Atom Feed\"",
+      "title=\"Лента Atom\""
+    ],
+    [
+      "title=\"RSS Feed\"",
+      "title=\"Лента RSS\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"Краткое содержание статьи\""
+    ],
+    [
+      "<strong>Key takeaways</strong>",
+      "<strong>Ключевые выводы</strong>"
+    ],
+    [
+      "<strong>Related reading:</strong>",
+      "<strong>Связанные материалы:</strong>"
+    ],
+    [
+      "<h2 id=\"related-heading\" class=\"related-heading\">Related reading</h2>",
+      "<h2 id=\"related-heading\" class=\"related-heading\">Связанные материалы</h2>"
+    ],
+    [
+      ">Last reviewed <",
+      ">Последняя проверка <"
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"Об авторе\""
+    ],
+    [
+      ">Full profile</a>",
+      ">Полный профиль</a>"
+    ],
+    [
+      "alt=\"Portrait of Sebastien Rousseau\"",
+      "alt=\"Портрет Sebastien Rousseau\""
+    ],
+    [
+      "<p class=\"feat-eyebrow\">Get in touch</p>",
+      "<p class=\"feat-eyebrow\">Связаться со мной</p>"
+    ],
+    [
+      ">Start a conversation</a>",
+      ">Начать разговор</a>"
+    ],
+    [
+      "<a href=\"/articles/index\\.html\">Read latest research</a>",
+      "<a href=\"/ru/stati/index.html\">Читать последние исследования</a>"
+    ],
+    [
+      "<a href=\"/contact/index\\.html\">Get in touch</a>",
+      "<a href=\"/ru/kontakty/index.html\">Связаться со мной</a>"
+    ]
+  ]
+}
