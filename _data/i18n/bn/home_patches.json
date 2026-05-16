@@ -1,0 +1,317 @@
+{
+  "_comment": "বাংলা (bn) home-page chrome patches — DRAFT pending native review. Pairs of [regex, replacement] applied to the EN homepage shell.",
+  "patches": [
+    [
+      ">Skip to main content</a>",
+      ">মূল কনটেন্টে যান</a>"
+    ],
+    [
+      ">Get in touch ›</a>",
+      ">যোগাযোগ ›</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">যোগাযোগ</a>"
+    ],
+    [
+      ">Read latest research<",
+      ">সর্বশেষ গবেষণা পড়ুন<"
+    ],
+    [
+      ">Latest<",
+      ">সর্বশেষ গবেষণা পড়ুন<"
+    ],
+    [
+      ">Read more<",
+      ">সর্বশেষ গবেষণা পড়ুন<"
+    ],
+    [
+      "<h2 class=ap-foot-title>Writing</h2>",
+      "<h2 class=ap-foot-title>লেখা</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Work</h2>",
+      "<h2 class=ap-foot-title>কাজ</h2>"
+    ],
+    [
+      "<h2 class=ap-foot-title>Reach</h2>",
+      "<h2 class=ap-foot-title>যোগাযোগ</h2>"
+    ],
+    [
+      "<a href=/about/index\\.html>About</a>",
+      "<a href=/bn/amader-shomporke/index.html>About</a>"
+    ],
+    [
+      "<a href=/papers/index\\.html>Papers</a>",
+      "<a href=/bn/prokashana/index.html>Papers</a>"
+    ],
+    [
+      "<a href=/projects/index\\.html>Projects</a>",
+      "<a href=/bn/prokolpo/index.html>Projects</a>"
+    ],
+    [
+      "<a href=/playlists/index\\.html>Playlists</a>",
+      "<a href=/bn/playlist/index.html>Playlists</a>"
+    ],
+    [
+      "<a href=/contact/index\\.html>Contact</a>",
+      "<a href=/bn/jogajog/index.html>Contact</a>"
+    ],
+    [
+      "<a href=/tags/index\\.html>Tags</a>",
+      "<a href=/bn/tag/index.html>Tags</a>"
+    ],
+    [
+      "<a href=/articles/index\\.html>Articles</a>",
+      "<a href=/bn/prabondho/index.html>Articles</a>"
+    ],
+    [
+      "<a href=/made-with-static-site-generator/index\\.html>Made with Static Site Generator</a>",
+      "<a href=/bn/static-site-generator-die-toiri/index.html>Made with Static Site Generator</a>"
+    ],
+    [
+      "<a href=/accessibility/index\\.html>Accessibility</a>",
+      "<a href=/bn/prabeshjogyota/index.html>Accessibility</a>"
+    ],
+    [
+      "<a href=/privacy/index\\.html>Privacy</a>",
+      "<a href=/bn/goponiyota/index.html>Privacy</a>"
+    ],
+    [
+      "<a href=/terms/index\\.html>Terms</a>",
+      "<a href=/bn/shorto/index.html>Terms</a>"
+    ],
+    [
+      "© Copyright 2007 - 2026 - Sebastien Rousseau\\. All rights reserved\\.",
+      "© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।"
+    ],
+    [
+      ">Latest research<",
+      ">সর্বশেষ গবেষণা পড়ুন<"
+    ],
+    [
+      ">Featured articles<",
+      ">সর্বশেষ গবেষণা পড়ুন<"
+    ],
+    [
+      ">All articles<",
+      ">সর্বশেষ গবেষণা পড়ুন<"
+    ],
+    [
+      ">Read full article<",
+      ">সর্বশেষ গবেষণা পড়ুন<"
+    ],
+    [
+      ">Newest first<",
+      ">Newest first<"
+    ],
+    [
+      ">Oldest first<",
+      ">Oldest first<"
+    ],
+    [
+      ">By topic<",
+      ">By topic<"
+    ],
+    [
+      ">All topics<",
+      ">All topics<"
+    ],
+    [
+      ">By tag<",
+      ">By tag<"
+    ],
+    [
+      ">All tags<",
+      ">All tags<"
+    ],
+    [
+      ">Published<",
+      ">প্রকাশিত<"
+    ],
+    [
+      ">Updated<",
+      ">আপডেট<"
+    ],
+    [
+      ">Open source<",
+      ">Open source<"
+    ],
+    [
+      ">Subscribe<",
+      ">সাবস্ক্রাইব করুন<"
+    ],
+    [
+      ">Follow<",
+      ">Follow<"
+    ],
+    [
+      ">Start a conversation<",
+      ">কথোপকথন শুরু করুন<"
+    ],
+    [
+      ">Drop me a line<",
+      ">যোগাযোগ<"
+    ],
+    [
+      ">Learn more<",
+      ">Learn more<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">Authored & maintained<"
+    ],
+    [
+      ">Authored &amp; maintained<",
+      ">Authored &amp; maintained<"
+    ],
+    [
+      "alt=\"PayPal logo\"",
+      "alt=\"PayPal logo\""
+    ],
+    [
+      "alt=\"Barclays logo\"",
+      "alt=\"Barclays logo\""
+    ],
+    [
+      "alt=\"Shazam logo\"",
+      "alt=\"Shazam logo\""
+    ],
+    [
+      "alt=\"AKQA logo\"",
+      "alt=\"AKQA logo\""
+    ],
+    [
+      "alt=\"Virgin logo\"",
+      "alt=\"Virgin logo\""
+    ],
+    [
+      "alt=\"HSBC logo\"",
+      "alt=\"HSBC logo\""
+    ],
+    [
+      ">Read the white paper</a>",
+      ">Read the white paper</a>"
+    ],
+    [
+      ">Read the article<",
+      ">Read the article<"
+    ],
+    [
+      ">Read the paper<",
+      ">Read the paper<"
+    ],
+    [
+      ">See all articles\\b",
+      ">See all articles"
+    ],
+    [
+      ">Quantum<",
+      ">Quantum<"
+    ],
+    [
+      ">Quantum · Banking<",
+      ">Quantum · Banking<"
+    ],
+    [
+      ">Quantum · Cryptography<",
+      ">Quantum · Cryptography<"
+    ],
+    [
+      ">Payments · Stablecoins<",
+      ">Payments · Stablecoins<"
+    ],
+    [
+      ">Payments · ISO 20022<",
+      ">Payments · ISO 20022<"
+    ],
+    [
+      ">Python · Payments<",
+      ">Python · Payments<"
+    ],
+    [
+      ">Python · Cross-border<",
+      ">Python · Cross-border<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · Finance<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · Security<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · Quantum<"
+    ],
+    [
+      ">Rust · YAML<",
+      ">Rust · YAML<"
+    ],
+    [
+      ">Browse all projects<",
+      ">Browse all projects<"
+    ],
+    [
+      ">Experience<",
+      ">Experience<"
+    ],
+    [
+      ">Brands along the way\\.<",
+      ">Brands along the way.<"
+    ],
+    [
+      "aria-label=\"Newsletter signup\"",
+      "aria-label=\"নিউজলেটার সাবস্ক্রিপশন\""
+    ],
+    [
+      "aria-label=\"Sebastien Rousseau home\"",
+      "aria-label=\"Sebastien Rousseau হোম\""
+    ],
+    [
+      "aria-label=\"Toggle navigation\"",
+      "aria-label=\"নেভিগেশন টগল করুন\""
+    ],
+    [
+      "aria-label=\"Switch to dark theme\"",
+      "aria-label=\"ডার্ক থিম চালু করুন\""
+    ],
+    [
+      "aria-label=\"Switch to light theme\"",
+      "aria-label=\"লাইট থিম চালু করুন\""
+    ],
+    [
+      "aria-label=\"Search \\(Cmd or Ctrl \\+ K\\)\"",
+      "aria-label=\"অনুসন্ধান (Cmd বা Ctrl + K)\""
+    ],
+    [
+      "title=\"Search \\(⌘K\\)\"",
+      "title=\"অনুসন্ধান (⌘K)\""
+    ],
+    [
+      "aria-label=\"Get in touch\"",
+      "aria-label=\"যোগাযোগ\""
+    ],
+    [
+      "aria-label=\"Back to top\"",
+      "aria-label=\"উপরে ফিরুন\""
+    ],
+    [
+      "aria-label=\"Social links\"",
+      "aria-label=\"সামাজিক লিঙ্ক\""
+    ],
+    [
+      "aria-label=\"Article summary\"",
+      "aria-label=\"নিবন্ধ সারাংশ\""
+    ],
+    [
+      "aria-label=\"About the author\"",
+      "aria-label=\"লেখক সম্পর্কে\""
+    ],
+    [
+      ">Full profile</a>",
+      ">সম্পূর্ণ প্রোফাইল</a>"
+    ]
+  ]
+}

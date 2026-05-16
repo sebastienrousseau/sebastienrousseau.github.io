@@ -1,0 +1,15 @@
+{
+  "_comment": "বাংলা (bn) body-text labels — DRAFT pending native review. Key set MUST stay in sync with _data/i18n/en/labels.json; CI gate test_i18n_labels.py enforces parity.",
+  "Published": "প্রকাশিত",
+  "Updated": "আপডেট",
+  "min read": "মিনিট পঠন",
+  "Previous": "পূর্ববর্তী",
+  "Next": "পরবর্তী",
+  "Sources & references": "সূত্র ও তথ্যসূত্র",
+  "About the author": "লেখক সম্পর্কে",
+  "Topics": "বিষয়",
+  "Contents": "বিষয়বস্তু",
+  "Estimated read time": "আনুমানিক পঠন সময়",
+  "Article pagination": "নিবন্ধ পেজিনেশন",
+  "Link to": "লিঙ্ক"
+}
