@@ -2427,6 +2427,68 @@ def test_build_title_index_maps_title_to_url(tmp_path, monkeypatch):
     assert "AI &amp; Banking" in idx
 
 
+def test_build_title_index_walks_per_language_posts(tmp_path, monkeypatch):
+    """`_posts/<lang>/<slug>.md` files get indexed under a synthesised
+    `/<lang>/<slug>/` URL, ignoring any `url:` the translator copied
+    verbatim from the EN source."""
+    monkeypatch.chdir(tmp_path)
+    posts = tmp_path / "_posts"
+    (posts / "fr").mkdir(parents=True)
+    (posts / "fr" / "2026-05-21-mon-article.md").write_text(
+        # Frontmatter `url:` is the EN URL — translator copied it. The
+        # synthesised URL should win, derived from the post path.
+        '---\n'
+        'title: "Mon article test"\n'
+        'url: "https://sebastienrousseau.com/2026-05-21-en-article"\n'
+        '---\n',
+        encoding="utf-8",
+    )
+    from postbuild_lib.output import _build_title_index
+    idx = _build_title_index()
+    assert idx["Mon article test"] == (
+        "https://sebastienrousseau.com/fr/2026-05-21-mon-article/index.html"
+    )
+
+
+def test_build_title_index_skips_per_lang_post_without_title(tmp_path, monkeypatch):
+    """`_posts/<lang>/<slug>.md` without a title is skipped (no key added)."""
+    monkeypatch.chdir(tmp_path)
+    posts = tmp_path / "_posts"
+    (posts / "de").mkdir(parents=True)
+    (posts / "de" / "stub.md").write_text(
+        # No title in frontmatter — gets skipped before the synthesised URL
+        # is computed.
+        '---\nurl: "https://example.com/"\n---\n',
+        encoding="utf-8",
+    )
+    from postbuild_lib.output import _build_title_index
+    idx = _build_title_index()
+    assert idx == {}
+
+
+def test_build_title_index_handles_apostrophe_in_title(tmp_path, monkeypatch):
+    """Titles with apostrophes get an `&apos;` variant indexed for atom
+    lookup (atom feeds XML-escape `'` even though XML doesn't require it)."""
+    monkeypatch.chdir(tmp_path)
+    posts = tmp_path / "_posts"
+    posts.mkdir()
+    (posts / "p.md").write_text(
+        '---\ntitle: "Don\'t Panic & Carry On"\n'
+        'url: "https://sebastienrousseau.com/dont-panic/"\n---\n',
+        encoding="utf-8",
+    )
+    from postbuild_lib.output import _build_title_index
+    idx = _build_title_index()
+    # Plain
+    assert "Don't Panic & Carry On" in idx
+    # &amp;-only variant
+    assert "Don't Panic &amp; Carry On" in idx
+    # &apos;-only variant
+    assert "Don&apos;t Panic & Carry On" in idx
+    # Combined variant
+    assert "Don&apos;t Panic &amp; Carry On" in idx
+
+
 def test_fix_xml_feed_urls_no_op_when_title_index_empty(tmp_path, monkeypatch):
     """Without _posts/, the title index is empty → no patching."""
     monkeypatch.chdir(tmp_path)
