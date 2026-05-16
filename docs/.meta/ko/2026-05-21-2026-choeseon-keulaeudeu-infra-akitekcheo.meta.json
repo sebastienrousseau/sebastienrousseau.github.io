@@ -1,12 +1,12 @@
 {
-  "title": "2026년 최적의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티 클라우드, 양자 인식 설계도",
-  "banner": "https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp",
-  "date": "May 21, 2026",
-  "subtitle": "2026년 클라우드 아키텍처는 6개의 기둥으로 결정화되었습니다",
   "locale": "ko_KR",
+  "date": "May 21, 2026",
   "description": "2026년 클라우드 아키텍처는 6개의 기둥으로 결정화되었습니다 — AI 네이티브 인프라, 인텔리전트 멀티 클라우드, 서버리스 우선, 엣지, 자동화 보안과 암호 민첩성, 그리고 지속 가능한 고밀도 운영. 은행에게 질문은 클라우드를 소비할 것인지 설계할 것인지입니다.",
+  "language": "ko-KR",
+  "banner": "https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp",
+  "title": "2026년 최적의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티 클라우드, 양자 인식 설계도",
   "last_reviewed": "2026-05-16",
   "banner_alt": "6개의 기둥을 가진 2026 클라우드 아키텍처 도식",
-  "keywords": "클라우드 아키텍처 2026, AI 네이티브 인프라, 멀티 클라우드, 서버리스, 엣지 컴퓨팅, WebAssembly, Wasm, DevSecOps, 지속 가능 데이터 센터, 액체 냉각, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, 에이전트형 상거래, 다중 에이전트 떼, 에이전트형 단위 경제, 에이전트 FinOps, 암호적 에이전트 신원, SPIFFE, SPIRE, 알고리즘 전염, 데이터 중력, FinOps egress, HPC, GPU 스토리지, 연속 트레저리, 국경 없는 유동성, 실시간 결제, 합성 데이터 생성, 기밀 컴퓨팅, JPMorgan 멀티 클라우드, Citi 현대화, 그래프 신경망, 딥페이크 사기, harvest now decrypt later, HNDL, 포스트 양자 암호, 암호 민첩성, MCP 보안, 프롬프트 주입, 공급망 공격, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau",
-  "language": "ko-KR"
+  "subtitle": "2026년 클라우드 아키텍처는 6개의 기둥으로 결정화되었습니다",
+  "keywords": "클라우드 아키텍처 2026, AI 네이티브 인프라, 멀티 클라우드, 서버리스, 엣지 컴퓨팅, WebAssembly, Wasm, DevSecOps, 지속 가능 데이터 센터, 액체 냉각, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, 에이전트형 상거래, 다중 에이전트 떼, 에이전트형 단위 경제, 에이전트 FinOps, 암호적 에이전트 신원, SPIFFE, SPIRE, 알고리즘 전염, 데이터 중력, FinOps egress, HPC, GPU 스토리지, 연속 트레저리, 국경 없는 유동성, 실시간 결제, 합성 데이터 생성, 기밀 컴퓨팅, JPMorgan 멀티 클라우드, Citi 현대화, 그래프 신경망, 딥페이크 사기, harvest now decrypt later, HNDL, 포스트 양자 암호, 암호 민첩성, MCP 보안, 프롬프트 주입, 공급망 공격, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau"
 }

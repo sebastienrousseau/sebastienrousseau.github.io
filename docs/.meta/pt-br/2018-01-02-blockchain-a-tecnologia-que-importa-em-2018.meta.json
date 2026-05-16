@@ -1,11 +1,11 @@
 {
-  "title": "Blockchain: a tecnologia que importa em 2018",
-  "description": "La narración do viaje extraordinario para asegurar as transações digitais mediante criptografia de clave privada e redes entre pares (P2P).",
-  "banner_alt": "Ordenador portátil apagado sobre uma mesa de madera marrón",
-  "date": "January 2, 2018",
-  "keywords": "blockchain, criptomoeda, Bitcoin, P2P, smart contract, libro mayor distribuido, finanzas, cadena de suministro, identidade digital, tokenización",
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
-  "locale": "pt_BR",
   "language": "pt-BR",
-  "subtitle": "Criptografia de clave privada e redes entre pares ao serviço de transações seguras"
+  "title": "Blockchain: a tecnologia que importa em 2018",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "banner_alt": "Ordenador portátil apagado sobre uma mesa de madera marrón",
+  "keywords": "blockchain, criptomoeda, Bitcoin, P2P, smart contract, libro mayor distribuido, finanzas, cadena de suministro, identidade digital, tokenización",
+  "description": "La narración do viaje extraordinario para asegurar as transações digitais mediante criptografia de clave privada e redes entre pares (P2P).",
+  "date": "January 2, 2018",
+  "subtitle": "Criptografia de clave privada e redes entre pares ao serviço de transações seguras",
+  "locale": "pt_BR"
 }

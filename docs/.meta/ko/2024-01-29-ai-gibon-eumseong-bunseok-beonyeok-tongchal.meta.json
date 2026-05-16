@@ -1,12 +1,12 @@
 {
-  "title": "AI 기반 음성 분석, 번역, 통찰",
+  "banner_alt": "파형을 보여주는 마이크",
   "last_reviewed": "2026-05-16",
+  "date": "January 29, 2024",
   "locale": "ko_KR",
-  "description": "OpenAI Whisper, 실시간 음성-텍스트 변환, 다국어 번역을 통한 오디오 통찰을 위한 AI 솔루션.",
+  "title": "AI 기반 음성 분석, 번역, 통찰",
+  "banner": "https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp",
+  "language": "ko-KR",
   "subtitle": "실시간 음성-텍스트 변환과 다국어 통찰을 위한 AI",
   "keywords": "AI, 음성 인식, 음성-텍스트 변환, Whisper, 번역, 다국어, 오디오 통찰",
-  "language": "ko-KR",
-  "banner": "https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp",
-  "date": "January 29, 2024",
-  "banner_alt": "파형을 보여주는 마이크"
+  "description": "OpenAI Whisper, 실시간 음성-텍스트 변환, 다국어 번역을 통한 오디오 통찰을 위한 AI 솔루션."
 }

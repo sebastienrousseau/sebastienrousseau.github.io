@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="uk-UA">
+  <title>Sebastien Rousseau — українське видання</title>
+  <link href="https://sebastienrousseau.com/uk/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://sebastienrousseau.com/uk/"/>
+  <id>https://sebastienrousseau.com/uk/</id>
+  <updated>2026-05-16T18:42:29+00:00</updated>
+  <entry>
+    <title>[UK DRAFT] The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</title>
+    <link href="https://sebastienrousseau.com/uk/2026-05-21-naikrashcha-khmarna-arkhitektura-dlya-bankiv-2026/"/>
+    <id>https://sebastienrousseau.com/uk/2026-05-21-naikrashcha-khmarna-arkhitektura-dlya-bankiv-2026/</id>
+    <updated>2026-05-21T06:06:06+00:00</updated>
+    <published>2026-05-21T06:06:06+00:00</published>
+    <summary>Cloud architecture in 2026 has crystallised around six pillars: AI-native infrastructure, intelligent multi-cloud, serverless-first design with WebAssembly at the edge, edge computing, automated security with crypto-agility, and sustainable high-density operations. For banks, the question is whether to consume cloud or design it — under converging pressure from agentic commerce, agentic unit economics, harvest-now-decrypt-later quantum risk, MCP security and algorithmic contagion, cryptographic agent identity, continuous-treasury demands, and the EU AI Act.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
+    <link href="https://sebastienrousseau.com/uk/2026-05-18-ahentyna-inzheneriya-banky-blueprint-2026/"/>
+    <id>https://sebastienrousseau.com/uk/2026-05-18-ahentyna-inzheneriya-banky-blueprint-2026/</id>
+    <updated>2026-05-18T06:06:06+00:00</updated>
+    <published>2026-05-18T06:06:06+00:00</published>
+    <summary>Agentic AI has crossed from pilot into production across global banking. 70% of institutions are using it to some degree; only one in five has a mature governance model. Meanwhile, autonomous adversaries are operating at machine speed, the legacy COBOL estate the new systems must interoperate with was written for the batch-processing assumptions of the 1960s, and the EU AI Act&apos;s August 2026 high-risk deadline is twelve weeks away. This is the engineering and governance position a bank needs to hold.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Stablecoin Yield by Another Name: BlackRock&apos;s BRSRV and BSTBL Filings Decoded</title>
+    <link href="https://sebastienrousseau.com/uk/2026-05-15-prykhovana-dokhidnist-blackrock-brsrv-bstbl-genius-act/"/>
+    <id>https://sebastienrousseau.com/uk/2026-05-15-prykhovana-dokhidnist-blackrock-brsrv-bstbl-genius-act/</id>
+    <updated>2026-05-15T06:06:06+00:00</updated>
+    <published>2026-05-15T06:06:06+00:00</published>
+    <summary>Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two SEC registrations for products that solve this constraint by being regulated as money market funds rather than stablecoins — while behaving, in the wallet, like yield-bearing dollars. A close reading of BRSRV, BSTBL, and the OCC rulemaking they respond to.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</title>
+    <link href="https://sebastienrousseau.com/uk/2026-05-14-zakhyst-knyhy-postkvantova-migratsiya-korporatyvnykh-finansiv/"/>
+    <id>https://sebastienrousseau.com/uk/2026-05-14-zakhyst-knyhy-postkvantova-migratsiya-korporatyvnykh-finansiv/</id>
+    <updated>2026-05-14T06:06:06+00:00</updated>
+    <published>2026-05-14T06:06:06+00:00</published>
+    <summary>Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today&apos;s data expires.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</title>
+    <link href="https://sebastienrousseau.com/uk/2026-05-12-iso-20022-pacs008-strukturovana-adresa-deadline/"/>
+    <id>https://sebastienrousseau.com/uk/2026-05-12-iso-20022-pacs008-strukturovana-adresa-deadline/</id>
+    <updated>2026-05-12T06:06:06+00:00</updated>
+    <published>2026-05-12T06:06:06+00:00</published>
+    <summary>From November 2026, SWIFT CBPR+ requires structured postal addresses in cross-border payment messages. Unstructured address lines (AdrLine alone) will no longer be accepted for key party fields in pacs.008. At minimum, TwnNm and Ctry are required, with StrtNm and BldgNb or PstBx recommended. With six months to go, 65% of payment messages still contain unstructured addresses and 44% of banks remain behind schedule.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Lucy&apos;s Flash Drive Revisited: AI, Quantum &amp; Knowledge</title>
+    <link href="https://sebastienrousseau.com/uk/2026-05-11-lucy-besson-peredacha-znan-shi-i-kvantovi-tekhnolohiyi/"/>
+    <id>https://sebastienrousseau.com/uk/2026-05-11-lucy-besson-peredacha-znan-shi-i-kvantovi-tekhnolohiyi/</id>
+    <updated>2026-05-11T06:06:06+00:00</updated>
+    <published>2026-05-11T06:06:06+00:00</published>
+    <summary>Twelve years on, Besson&apos;s Lucy reads like a thought experiment about knowledge migrating from flesh to machine — quietly validated by LLMs and qubits.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</title>
+    <link href="https://sebastienrousseau.com/uk/2026-04-11-kvantovi-porohy-znovu-zminyuyutsya/"/>
+    <id>https://sebastienrousseau.com/uk/2026-04-11-kvantovi-porohy-znovu-zminyuyutsya/</id>
+    <updated>2026-04-11T06:06:06+00:00</updated>
+    <published>2026-04-11T06:06:06+00:00</published>
+    <summary>Shor&apos;s algorithm may now run on as few as 10,000 qubits. RSA, ECC and the timeline for post-quantum migration are all moving up. Here&apos;s why.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Quantum-Safe Payments: Why the Industry Must Act Now</title>
+    <link href="https://sebastienrousseau.com/uk/2025-09-01-kvantovo-stiyki-platezhi-epaa/"/>
+    <id>https://sebastienrousseau.com/uk/2025-09-01-kvantovo-stiyki-platezhi-epaa/</id>
+    <updated>2025-09-01T06:06:06+00:00</updated>
+    <published>2025-09-01T06:06:06+00:00</published>
+    <summary>Quantum computing threatens payment system cryptography. The EPAA white paper outlines the structural risk and the urgent case for PQC migration.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Quantum Lattice Crypto: Bug in Chen&apos;s LWE Attack</title>
+    <link href="https://sebastienrousseau.com/uk/2024-04-22-pomylka-v-kvantovomu-alhorytmi-dlya-hratkovoyi-kryptohrafiyi/"/>
+    <id>https://sebastienrousseau.com/uk/2024-04-22-pomylka-v-kvantovomu-alhorytmi-dlya-hratkovoyi-kryptohrafiyi/</id>
+    <updated>2024-04-22T06:06:06+00:00</updated>
+    <published>2024-04-22T06:06:06+00:00</published>
+    <summary>A bug in Yilei Chen&apos;s quantum LWE algorithm temporarily reprieves lattice-based cryptography. What it means for CRYSTALS-Kyber, Dilithium and the PQC roadmap.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] OpenVoice: Leading Innovation in Voice Cloning Technology</title>
+    <link href="https://sebastienrousseau.com/uk/2024-04-01-openvoice-vedyche-innovatsiyne-klonuvannya-holosu/"/>
+    <id>https://sebastienrousseau.com/uk/2024-04-01-openvoice-vedyche-innovatsiyne-klonuvannya-holosu/</id>
+    <updated>2024-04-01T06:06:06+00:00</updated>
+    <published>2024-04-01T06:06:06+00:00</published>
+    <summary>OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Quantum Algorithm Challenges Lattice-Based Cryptography</title>
+    <link href="https://sebastienrousseau.com/uk/2024-04-15-kvantovyy-alhorytm-kydaye-vyklyk-hratkovii-kryptohrafiyi/"/>
+    <id>https://sebastienrousseau.com/uk/2024-04-15-kvantovyy-alhorytm-kydaye-vyklyk-hratkovii-kryptohrafiyi/</id>
+    <updated>2024-04-01T06:06:06+00:00</updated>
+    <published>2024-04-01T06:06:06+00:00</published>
+    <summary>A new polynomial-time quantum algorithm by Yilei Chen targets lattice-based cryptography. Implications for post-quantum standards including CRYSTALS-Kyber.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Fully Homomorphic Encryption (FHE) in a Banking Quantum Era</title>
+    <link href="https://sebastienrousseau.com/uk/2024-03-25-povnistyu-homomorfne-shyfruvannia-v-bankivskii-kvantovii-eri/"/>
+    <id>https://sebastienrousseau.com/uk/2024-03-25-povnistyu-homomorfne-shyfruvannia-v-bankivskii-kvantovii-eri/</id>
+    <updated>2024-03-25T06:06:06+00:00</updated>
+    <published>2024-03-25T06:06:06+00:00</published>
+    <summary>Explore how Fully Homomorphic Encryption revolutionises data security in Banking and the Financial Industry, ensuring privacy against quantum computing threats.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Advancing AI with Multimodal LLMs: Insights from MM1</title>
+    <link href="https://sebastienrousseau.com/uk/2024-03-18-prosuvannia-shi-z-multymodalnymy-llm-uroky-mm1/"/>
+    <id>https://sebastienrousseau.com/uk/2024-03-18-prosuvannia-shi-z-multymodalnymy-llm-uroky-mm1/</id>
+    <updated>2024-03-17T06:06:06+00:00</updated>
+    <published>2024-03-17T06:06:06+00:00</published>
+    <summary>Explore Apple&apos;s MM1 paper on Multimodal Large Language Models (MLLMs). Learn about their architecture, pre-training strategies, and AI potentials.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Fast Real-Time Speech Recognition on macOS: OpenAI Whisper</title>
+    <link href="https://sebastienrousseau.com/uk/2024-03-12-rozpiznavannia-movy-v-realnomu-chasi-na-macos-z-whisper/"/>
+    <id>https://sebastienrousseau.com/uk/2024-03-12-rozpiznavannia-movy-v-realnomu-chasi-na-macos-z-whisper/</id>
+    <updated>2024-03-12T06:06:06+00:00</updated>
+    <published>2024-03-12T06:06:06+00:00</published>
+    <summary>Explore how OpenAI Whisper and Metal Performance Shaders are transforming real-time speech recognition on macOS, offering unparalleled speed and accuracy.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] RustLogs (RLG): Structured Logging Library for Rust</title>
+    <link href="https://sebastienrousseau.com/uk/2024-03-08-rustlogs-prosunuta-biblioteka-zhurnalyuvannya-dlya-rust/"/>
+    <id>https://sebastienrousseau.com/uk/2024-03-08-rustlogs-prosunuta-biblioteka-zhurnalyuvannya-dlya-rust/</id>
+    <updated>2024-03-08T06:06:06+00:00</updated>
+    <published>2024-03-08T06:06:06+00:00</published>
+    <summary>Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. </summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Le Chat by Mistral AI: Multilingual Conversational AI</title>
+    <link href="https://sebastienrousseau.com/uk/2024-03-04-le-chat-vid-mistral-ai-nova-era-rozmovnoho-shi/"/>
+    <id>https://sebastienrousseau.com/uk/2024-03-04-le-chat-vid-mistral-ai-nova-era-rozmovnoho-shi/</id>
+    <updated>2024-03-04T06:06:06+00:00</updated>
+    <published>2024-03-04T06:06:06+00:00</published>
+    <summary>Meet Mistral AI&apos;s new multilingual Assistant. An advanced AI that can understand and respond in multiple languages, all in one conversation and in real-time.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Google Gemma AI: Transforming Open-Source AI Development</title>
+    <link href="https://sebastienrousseau.com/uk/2024-02-26-google-gemma-transformatsiya-rozrobky-vidkrytoho-shi/"/>
+    <id>https://sebastienrousseau.com/uk/2024-02-26-google-gemma-transformatsiya-rozrobky-vidkrytoho-shi/</id>
+    <updated>2024-02-26T06:06:06+00:00</updated>
+    <published>2024-02-26T06:06:06+00:00</published>
+    <summary>Explore Google&apos;s Gemma AI Model: An open-source project offering ethical AI solutions for both personal and enterprise use.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Unlocking Gemini 1.5: Google&apos;s AI Revolution Explained</title>
+    <link href="https://sebastienrousseau.com/uk/2024-02-19-vidkryvayuchy-gemini-revoliutsiya-shi-vid-google/"/>
+    <id>https://sebastienrousseau.com/uk/2024-02-19-vidkryvayuchy-gemini-revoliutsiya-shi-vid-google/</id>
+    <updated>2024-02-19T06:06:06+00:00</updated>
+    <published>2024-02-19T06:06:06+00:00</published>
+    <summary>Gemini 1.5 from Google scales context windows past 1M tokens. What that unlocks for retrieval-augmented finance and the trade-offs worth knowing.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] EU&apos;s AI Act: Pioneering Ethical AI Regulation Worldwide</title>
+    <link href="https://sebastienrousseau.com/uk/2024-02-13-rehlament-shi-ies-formuvannia-maibutnoho-svitovoho-rehulyuvannya/"/>
+    <id>https://sebastienrousseau.com/uk/2024-02-13-rehlament-shi-ies-formuvannia-maibutnoho-svitovoho-rehulyuvannya/</id>
+    <updated>2024-02-13T06:06:06+00:00</updated>
+    <published>2024-02-13T06:06:06+00:00</published>
+    <summary>The EU AI Act sets the first comprehensive framework for ethical, risk-tiered AI regulation worldwide. What changes for banks, vendors and high-risk systems.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Àkàndé: GPT-Powered Voice Assistant for Executives</title>
+    <link href="https://sebastienrousseau.com/uk/2024-02-12-akande-holosovyy-asystent-osobyste-ta-vykonavche-asystyrovannia/"/>
+    <id>https://sebastienrousseau.com/uk/2024-02-12-akande-holosovyy-asystent-osobyste-ta-vykonavche-asystyrovannia/</id>
+    <updated>2024-02-12T06:06:06+00:00</updated>
+    <published>2024-02-12T06:06:06+00:00</published>
+    <summary>Discover how Àkàndé leverages OpenAI GPT&apos;s natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Generative AI in Advertising: Amazon Rufus &amp; Meta</title>
+    <link href="https://sebastienrousseau.com/uk/2024-02-08-revoliutsiya-reklamy-yak-shi-formuye-maibutnye/"/>
+    <id>https://sebastienrousseau.com/uk/2024-02-08-revoliutsiya-reklamy-yak-shi-formuye-maibutnye/</id>
+    <updated>2024-02-08T06:06:06+00:00</updated>
+    <published>2024-02-08T06:06:06+00:00</published>
+    <summary>Explore how AI transforms advertising with insights on Amazon&apos;s Rufus and Meta&apos;s latest developments. Discover the impact on consumer engagement</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] AI-Powered Speech Analysis, Translation, &amp; Insight Tool</title>
+    <link href="https://sebastienrousseau.com/uk/2024-01-29-audio-analiz-pereklady-i-perspektyvy-na-shi/"/>
+    <id>https://sebastienrousseau.com/uk/2024-01-29-audio-analiz-pereklady-i-perspektyvy-na-shi/</id>
+    <updated>2024-01-29T06:06:06+00:00</updated>
+    <published>2024-01-29T06:06:06+00:00</published>
+    <summary>Explore how Audio Analyser, powered by Azure AI, transforms speech-to-text conversion, text analysis, and translations for actionable insights.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] AI Prompt Engineering 2024: Techniques That Work</title>
+    <link href="https://sebastienrousseau.com/uk/2024-01-23-prohres-v-inzheneriyi-promptiv-shi/"/>
+    <id>https://sebastienrousseau.com/uk/2024-01-23-prohres-v-inzheneriyi-promptiv-shi/</id>
+    <updated>2024-01-23T06:06:06+00:00</updated>
+    <published>2024-01-23T06:06:06+00:00</published>
+    <summary>Explore the 2024 advancements in AI Prompt Engineering, uncovering innovative trends and techniques revolutionising tech and finance sectors.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Alien Studio: My Tech-to Art Journey in Photography</title>
+    <link href="https://sebastienrousseau.com/uk/2024-01-15-alien-studio-revoliutsiya-mystetstva-z-shi-fotohrafiyeyu/"/>
+    <id>https://sebastienrousseau.com/uk/2024-01-15-alien-studio-revoliutsiya-mystetstva-z-shi-fotohrafiyeyu/</id>
+    <updated>2024-01-15T06:06:06+00:00</updated>
+    <published>2024-01-15T06:06:06+00:00</published>
+    <summary>Join me on my personal journey from Rust, AI, and Quantum Computing to redefining art and photography through Alien Studio.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] AI Trends 2024: Insights and Predictions for the Future</title>
+    <link href="https://sebastienrousseau.com/uk/2024-01-01-trendy-shi-2024-prohnozy-i-perspektyvy/"/>
+    <id>https://sebastienrousseau.com/uk/2024-01-01-trendy-shi-2024-prohnozy-i-perspektyvy/</id>
+    <updated>2024-01-08T06:06:06+00:00</updated>
+    <published>2024-01-08T06:06:06+00:00</published>
+    <summary>AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Qiskit &amp; Quantum Fourier Transform for Credit Ratio Analysis</title>
+    <link href="https://sebastienrousseau.com/uk/2024-01-08-optymizatsiya-kredytnoho-koefitsiyenta-z-ibm-qiskit-ta-kvantovym-fure/"/>
+    <id>https://sebastienrousseau.com/uk/2024-01-08-optymizatsiya-kredytnoho-koefitsiyenta-z-ibm-qiskit-ta-kvantovym-fure/</id>
+    <updated>2024-01-08T06:06:06+00:00</updated>
+    <published>2024-01-08T06:06:06+00:00</published>
+    <summary>Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Revolutionising Finance with AI-Enhanced Quantum Algorithms</title>
+    <link href="https://sebastienrousseau.com/uk/2023-12-25-revoliutsiya-finansiv-z-kvantovymy-alhorytmamy-pidsylenymy-shi/"/>
+    <id>https://sebastienrousseau.com/uk/2023-12-25-revoliutsiya-finansiv-z-kvantovymy-alhorytmamy-pidsylenymy-shi/</id>
+    <updated>2023-12-25T06:06:06+00:00</updated>
+    <published>2023-12-25T06:06:06+00:00</published>
+    <summary>Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] State of AI and Quantum Computing in Banking: A 2023 Review</title>
+    <link href="https://sebastienrousseau.com/uk/2023-12-18-stan-shi-ta-kvantovykh-obchyslen-v-bankivnytstvi-pidsumky-2023/"/>
+    <id>https://sebastienrousseau.com/uk/2023-12-18-stan-shi-ta-kvantovykh-obchyslen-v-bankivnytstvi-pidsumky-2023/</id>
+    <updated>2023-12-18T06:06:06+00:00</updated>
+    <published>2023-12-18T06:06:06+00:00</published>
+    <summary>Exploring 2023&apos;s Technological Landscape: AI &amp; Quantum Computing Revolutionising Banking, Rising Open-Source Models, and Evolving Regulations &amp; Governance</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Quantum Key Distribution Revolutionising Security in Banking</title>
+    <link href="https://sebastienrousseau.com/uk/2023-12-11-kvantovyy-rozpodil-klyuchiv-revoliutsiya-bezpeky-v-bankivnytstvi/"/>
+    <id>https://sebastienrousseau.com/uk/2023-12-11-kvantovyy-rozpodil-klyuchiv-revoliutsiya-bezpeky-v-bankivnytstvi/</id>
+    <updated>2023-12-11T06:06:06+00:00</updated>
+    <published>2023-12-11T06:06:06+00:00</published>
+    <summary>As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Efficient Date and Time Management with DateTime (DTT)</title>
+    <link href="https://sebastienrousseau.com/uk/2023-12-04-data-i-chas-u-rust-z-bibliotekoyu-dtt/"/>
+    <id>https://sebastienrousseau.com/uk/2023-12-04-data-i-chas-u-rust-z-bibliotekoyu-dtt/</id>
+    <updated>2023-12-04T06:06:06+00:00</updated>
+    <published>2023-12-04T06:06:06+00:00</published>
+    <summary>DateTime (DTT) is a Rust library for parsing, validating, manipulating and formatting dates and times — high precision, broad functionality.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</title>
+    <link href="https://sebastienrousseau.com/uk/2023-11-28-kyberlib-rust-shchyt-proty-kvantovykh-zahroz/"/>
+    <id>https://sebastienrousseau.com/uk/2023-11-28-kyberlib-rust-shchyt-proty-kvantovykh-zahroz/</id>
+    <updated>2023-11-28T06:06:06+00:00</updated>
+    <published>2023-11-28T06:06:06+00:00</published>
+    <summary>A Robust and Quantum-Safe Cryptography Implementation of the CRYSTALS-Kyber Algorithm, to Protect Your Data from Quantum Threats and Cryptanalytic Attacks.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</title>
+    <link href="https://sebastienrousseau.com/uk/2023-11-19-crystals-kyber-alhorytm-zakhystu-v-kvantovu-eru/"/>
+    <id>https://sebastienrousseau.com/uk/2023-11-19-crystals-kyber-alhorytm-zakhystu-v-kvantovu-eru/</id>
+    <updated>2023-11-19T06:06:06+00:00</updated>
+    <published>2023-11-19T06:06:06+00:00</published>
+    <summary>Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Generative AI in 2023: How It Works, Where It Lands</title>
+    <link href="https://sebastienrousseau.com/uk/2023-11-12-doslidzhuyuchy-heneratyvnyy-shi/"/>
+    <id>https://sebastienrousseau.com/uk/2023-11-12-doslidzhuyuchy-heneratyvnyy-shi/</id>
+    <updated>2023-11-12T06:06:06+00:00</updated>
+    <published>2023-11-12T06:06:06+00:00</published>
+    <summary>Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Mathematical and Cryptographic Constants for Rust Security</title>
+    <link href="https://sebastienrousseau.com/uk/2023-11-05-matematychni-ta-kryptohrafichni-konstanty-dlya-rust/"/>
+    <id>https://sebastienrousseau.com/uk/2023-11-05-matematychni-ta-kryptohrafichni-konstanty-dlya-rust/</id>
+    <updated>2023-11-05T06:06:06+00:00</updated>
+    <published>2023-11-05T06:06:06+00:00</published>
+    <summary>Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Streamlining Rust Library Development with Code Generation</title>
+    <link href="https://sebastienrousseau.com/uk/2023-10-26-libmake-henerator-kodu-dlya-rust-bibliotek/"/>
+    <id>https://sebastienrousseau.com/uk/2023-10-26-libmake-henerator-kodu-dlya-rust-bibliotek/</id>
+    <updated>2023-10-26T06:06:06+00:00</updated>
+    <published>2023-10-26T06:06:06+00:00</published>
+    <summary>Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Protecting Data in the Quantum Age: The Hash Library (HSH)</title>
+    <link href="https://sebastienrousseau.com/uk/2023-10-16-zakhyst-danykh-u-kvantovu-eru-biblioteka-hash-hsh/"/>
+    <id>https://sebastienrousseau.com/uk/2023-10-16-zakhyst-danykh-u-kvantovu-eru-biblioteka-hash-hsh/</id>
+    <updated>2023-10-16T06:06:06+00:00</updated>
+    <published>2023-10-16T06:06:06+00:00</published>
+    <summary>HSH uses quantum-resistant cryptographic primitives to protect your data, ensuring its security even in the face of future quantum computing advances.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Static Site Generator: Fastest Rust-Based SSG</title>
+    <link href="https://sebastienrousseau.com/uk/2023-10-09-shokunin-naishvydshyi-rust-statychnyy-henerator/"/>
+    <id>https://sebastienrousseau.com/uk/2023-10-09-shokunin-naishvydshyi-rust-statychnyy-henerator/</id>
+    <updated>2023-10-09T06:06:06+00:00</updated>
+    <published>2023-10-09T06:06:06+00:00</published>
+    <summary>Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Automating ISO 20022 Payment Files Creation with Pain001</title>
+    <link href="https://sebastienrousseau.com/uk/2023-09-29-avtomatyzatsiya-platizhnykh-faylov-iso-20022-z-pain001/"/>
+    <id>https://sebastienrousseau.com/uk/2023-09-29-avtomatyzatsiya-platizhnykh-faylov-iso-20022-z-pain001/</id>
+    <updated>2023-09-29T06:06:06+00:00</updated>
+    <published>2023-09-29T06:06:06+00:00</published>
+    <summary>Automate the creation of ISO 20022 pain.001 payment files from CSV or SQLite. pain001 is the open-source Python library that streamlines compliance.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] The making of the Express Transaction Credits Platform</title>
+    <link href="https://sebastienrousseau.com/uk/2018-02-15-stvorennia-platformy-express-transaction-credits/"/>
+    <id>https://sebastienrousseau.com/uk/2018-02-15-stvorennia-platformy-express-transaction-credits/</id>
+    <updated>2018-02-15T06:06:06+00:00</updated>
+    <published>2018-02-15T06:06:06+00:00</published>
+    <summary>Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Unveiling a new Cryptocurrency and Faster Payment Solution</title>
+    <link href="https://sebastienrousseau.com/uk/2018-02-04-nova-kryptovaluta-shvydshe-rishennia-dlia-platezhiv/"/>
+    <id>https://sebastienrousseau.com/uk/2018-02-04-nova-kryptovaluta-shvydshe-rishennia-dlia-platezhiv/</id>
+    <updated>2018-02-04T06:06:06+00:00</updated>
+    <published>2018-02-04T06:06:06+00:00</published>
+    <summary>A significant chapter in the evolution of the global financial landscape, shaped by technological innovation, geopolitical shifts, and sustainable finance.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] ERC-20: The Ethereum Token Interface That Changed the World</title>
+    <link href="https://sebastienrousseau.com/uk/2018-01-24-standart-tokena-erc-20/"/>
+    <id>https://sebastienrousseau.com/uk/2018-01-24-standart-tokena-erc-20/</id>
+    <updated>2018-01-24T06:06:06+00:00</updated>
+    <published>2018-01-24T06:06:06+00:00</published>
+    <summary>ERC-20: The Ethereum Token ERC-20 is the most common type of token used on the Ethereum blockchain and is often referred to as a smart contract digital contract</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Understanding the Technology behind Blockchain</title>
+    <link href="https://sebastienrousseau.com/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/"/>
+    <id>https://sebastienrousseau.com/uk/2018-01-09-rozuminnia-tekhnolohiyi-za-blokcheinom/</id>
+    <updated>2018-01-09T06:06:06+00:00</updated>
+    <published>2018-01-09T06:06:06+00:00</published>
+    <summary>Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Blockchain explained, the technology that matters the most</title>
+    <link href="https://sebastienrousseau.com/uk/2018-01-02-blokchein-tekhnolohiya-yaka-maye-znachennia-2018/"/>
+    <id>https://sebastienrousseau.com/uk/2018-01-02-blokchein-tekhnolohiya-yaka-maye-znachennia-2018/</id>
+    <updated>2018-01-02T06:06:06+00:00</updated>
+    <published>2018-01-02T06:06:06+00:00</published>
+    <summary>A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  <entry>
+    <title>[UK DRAFT] Bitcoin: A Year In Review of the First Cryptocurrency</title>
+    <link href="https://sebastienrousseau.com/uk/2018-01-01-bitcoin-pidsumky-roku/"/>
+    <id>https://sebastienrousseau.com/uk/2018-01-01-bitcoin-pidsumky-roku/</id>
+    <updated>2018-01-01T06:06:06+00:00</updated>
+    <published>2018-01-01T06:06:06+00:00</published>
+    <summary>Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+</feed>
