@@ -1,0 +1,15 @@
+{
+  "_comment": "Korean body-text labels — DRAFT pending native review. Key set MUST stay in sync with _data/i18n/en/labels.json; CI gate test_i18n_labels.py enforces parity.",
+  "Published": "발행일",
+  "Updated": "갱신일",
+  "min read": "분 소요",
+  "Previous": "이전",
+  "Next": "다음",
+  "Sources & references": "출처 및 참고문헌",
+  "About the author": "저자 소개",
+  "Topics": "주제",
+  "Contents": "목차",
+  "Estimated read time": "예상 소요 시간",
+  "Article pagination": "기사 페이지 이동",
+  "Link to": "링크"
+}

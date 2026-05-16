@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
-  "title": "Descifrar Gemini 1.5: a revolução IA de Google explicada",
-  "banner_alt": "Visualización abstracta de redes IA que representan as capacidades de Gemini 1.5",
-  "language": "pt-BR",
   "locale": "pt_BR",
-  "date": "February 19, 2024",
-  "subtitle": "Inmersión em o último avance IA de Google",
   "description": "Gemini 1.5 de Google lleva a ventana de contexto mais allá do millón de tokens. Lo que esto desbloquea para as finanzas potenciadas por recuperación e os compromisos a conhecer.",
-  "keywords": "Gemini 1.5, Google AI, arquitectura Mixture-of-Experts, eficiência computacional, expansão de a ventana de contexto, innovación IA, transformação do análisis de dados, in-context learning, casos de uso IA, revolução tecnológica"
+  "date": "February 19, 2024",
+  "keywords": "Gemini 1.5, Google AI, arquitectura Mixture-of-Experts, eficiência computacional, expansão de a ventana de contexto, innovación IA, transformação do análisis de dados, in-context learning, casos de uso IA, revolução tecnológica",
+  "banner_alt": "Visualización abstracta de redes IA que representan as capacidades de Gemini 1.5",
+  "title": "Descifrar Gemini 1.5: a revolução IA de Google explicada",
+  "subtitle": "Inmersión em o último avance IA de Google",
+  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
+  "language": "pt-BR"
 }

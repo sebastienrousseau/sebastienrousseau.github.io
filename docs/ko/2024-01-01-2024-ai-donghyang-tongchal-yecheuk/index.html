@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 01 Jan 2024 05:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 01 Jan 2024 05:06:06 +0000" id="last-modified" />
+    <title>2024년 AI 동향과 예측: 미래를 향한 통찰 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="2024년의 AI 트렌드와 예측. 엔터프라이즈 배포, 신규 규제, 기술 진보에 관하여.">
+<meta name="keywords" content="AI 트렌드, 2024, 엔터프라이즈 AI, 생성 AI, AI 규제, EU AI 법, 멀티모달 AI">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-aAR/alubqwuG1+UbvKNFLiB6Ecrw3PGzkKoIj8kYGkU=' 'sha256-gDw//5z1TcvS69xlNSK6PgIcsnd71uLVStwXF/e468o=' 'sha256-uxOP20WzS/vyfSoowTyIW3Hjsq00ULslTDywXsAMKJQ=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ko/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 피드" href="/ko/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="2024년 AI 동향과 예측: 미래를 향한 통찰 — Sebastien Rousseau">
+<meta property="og:description" content="2024년의 AI 트렌드와 예측. 엔터프라이즈 배포, 신규 규제, 기술 진보에 관하여.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/ko/2024-01-01-2024-ai-donghyang-tongchal-yecheuk/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2024년 AI 동향과 예측: 미래를 향한 통찰 — Sebastien Rousseau">
+<meta name="twitter:description" content="2024년의 AI 트렌드와 예측. 엔터프라이즈 배포, 신규 규제, 기술 진보에 관하여.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/ko/2024-01-01-2024-ai-donghyang-tongchal-yecheuk/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-01-01-tendances-ia-2024-perspectives-et-predictions/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2024-01-01-ki-trends-2024-einblicke-und-vorhersagen/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2024-01-01-tendencias-ia-2024-perspectivas-y-predicciones/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2024-01-01-tendenze-ia-2024-prospettive-e-previsioni/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2024-01-01-2024-nen-ai-doukou-to-yosoku/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2024-01-01-2024-ai-donghyang-tongchal-yecheuk/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2024-01-01-tendencias-ia-2024-perspectivas-e-previsoes/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2024-01-01-trendy-ii-2024-perspektivy-i-prognozy/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2024-01-01-ai-qushi-2024-jianjie-yu-yuce/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2024-01-01-ai-qushi-2024-jianjie-yu-yuce-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">본문으로 건너뛰기</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="내비게이션 전환" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ko/index.html" aria-label="Sebastien Rousseau 홈">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="주요 내비게이션">
+          <ul class="ap-menu">
+            <li><a href="/ko/sogae/index.html">소개</a></li>
+            <li><a href="/ko/gisa/index.html" aria-current="page" class="active">기사</a></li>
+            <li><a href="/ko/nonmun/index.html">논문</a></li>
+            <li><a href="/ko/jujae/index.html">주제</a></li>
+            <li><a href="/ko/peurojekteu/index.html">프로젝트</a></li>
+            <li><a href="/ko/pleilliseuteu/index.html">플레이리스트</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="다크 테마로 전환" aria-pressed="false" title="테마 전환">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="검색 (Cmd 또는 Ctrl + K)" title="검색 (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="언어">
+            <button type="button" class="ap-lang-toggle" aria-label="KO, 언어 변경" aria-expanded="false" aria-haspopup="menu" title="언어 변경">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">KO</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="출시 예정">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="출시 예정">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="출시 예정">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="출시 예정">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="출시 예정">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="출시 예정">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="출시 예정">🇮🇩 Indonesia</span>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <span class="ap-lang-item" data-lang="nl" aria-disabled="true" title="출시 예정">🇳🇱 Nederlands</span>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="출시 예정">🇵🇱 Polski</span>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="출시 예정">🇷🇴 Română</span>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="출시 예정">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="출시 예정">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="출시 예정">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="출시 예정">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="출시 예정">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="출시 예정">🇳🇬 Yorùbá</span>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ko/munui/index.html" aria-label="문의하기">문의하기 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="내비게이션 전환">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>2024년 AI 동향과 예측: 미래를 향한 통찰</h1>
+      <p class="sub">AI, 규제, 엔터프라이즈 채택의 해</p>
+    <nav class="article-tags" aria-label="주제"><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">AI 트렌드</a><a href="/tags/index.html#h3-2024" class="article-tag" rel="tag">2024</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">엔터프라이즈 AI</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">생성 AI</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">AI 규제</a><a href="/tags/index.html#h3-eu-ai" class="article-tag" rel="tag">EU AI 법</a><a href="/tags/index.html#h3-ai" class="article-tag" rel="tag">멀티모달 AI</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-01-01T05:06:06+00:00" class="meta-pub">발행일 1 Jan 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">갱신일 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="예상 소요 시간">1 분 소요</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>목차</h2><ol><li><a href="#section-1">통찰</a></li><li><a href="#section-3">아이디어</a></li><li><a href="#section-5">혁신</a></li><li><a href="#section-7">규제</a></li><li><a href="#section-9">활용 사례</a></li><li><a href="#section-11">과제</a></li><li><a href="#section-13">보안</a></li><li><a href="#section-15">전망</a></li><li><a href="#section-17">결론</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 2024년의 AI 트렌드와 예측. 엔터프라이즈 배포, 신규 규제, 기술 진보에 관하여.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>통찰.</strong> 2023년이 AI 인식의 해였다면, 2024년은 엔터프라이즈 채택의 해입니다.</li>  <li><strong>아이디어.</strong> GPT-4V, Claude 3, Gemini Ultra 출시로 멀티모달 AI(텍스트, 이미지, 음성, 비디오)가 주류가 됩니다.</li>  <li><strong>혁신.</strong> 단순 질의응답을 넘어, AI 에이전트는 여러 단계의 과제를 자율적으로 수행합니다.</li>  <li><strong>규제.</strong> EU AI 법은 2024년에 발효되어 고위험 AI 시스템에 대한 엄격한 요건을 확립합니다.</li></ul></aside><p><img src="https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp" alt="AI의 진화를 표현하는 추상적 비주얼"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<h2 id="section-1">통찰 <a class="heading-anchor" href="#section-1" aria-label="링크 통찰">#</a></h2>
+<h3 id="2024-ai">2024년은 AI의 엔터프라이즈 채택의 해 <a class="heading-anchor" href="#2024-ai" aria-label="링크 2024년은 AI의 엔터프라이즈 채택의 해">#</a></h3>
+<p>2023년이 AI 인식의 해였다면, 2024년은 엔터프라이즈 채택의 해입니다. 모든 주요 기업이 AI 전략을 수립하고, 운영 워크로드를 배포하며, ROI를 측정하고 있습니다.</p>
+<h2 id="section-3">아이디어 <a class="heading-anchor" href="#section-3" aria-label="링크 아이디어">#</a></h2>
+<h3 id="ai">멀티모달 AI가 주류로 <a class="heading-anchor" href="#ai" aria-label="링크 멀티모달 AI가 주류로">#</a></h3>
+<p>GPT-4V, Claude 3, Gemini Ultra 출시로 멀티모달 AI(텍스트, 이미지, 음성, 비디오)가 주류가 됩니다. 기업은 실세계 입력을 다루는 AI 응용을 구축합니다.</p>
+<h2 id="section-5">혁신 <a class="heading-anchor" href="#section-5" aria-label="링크 혁신">#</a></h2>
+<h3 id="ai-2">에이전트 AI의 등장 <a class="heading-anchor" href="#ai-2" aria-label="링크 에이전트 AI의 등장">#</a></h3>
+<p>단순 질의응답을 넘어, AI 에이전트는 여러 단계의 과제를 자율적으로 수행합니다. 이는 특히 은행 업무의 고객 서비스, 거래 처리, 리스크 평가에 큰 영향을 미칩니다.</p>
+<h2 id="section-7">규제 <a class="heading-anchor" href="#section-7" aria-label="링크 규제">#</a></h2>
+<h3 id="eu-ai">EU AI 법과 글로벌 체계 <a class="heading-anchor" href="#eu-ai" aria-label="링크 EU AI 법과 글로벌 체계">#</a></h3>
+<p>EU AI 법은 2024년에 발효되어 고위험 AI 시스템에 대한 엄격한 요건을 확립합니다. 미국 Biden 행정명령, 영국 AI 거버넌스, 싱가포르 등의 체계도 함께 진화합니다.</p>
+<h2 id="section-9">활용 사례 <a class="heading-anchor" href="#section-9" aria-label="링크 활용 사례">#</a></h2>
+<h3 id="ai-3">엔터프라이즈에서 AI가 중요한 영역 <a class="heading-anchor" href="#ai-3" aria-label="링크 엔터프라이즈에서 AI가 중요한 영역">#</a></h3>
+<p>주요 엔터프라이즈 활용 사례: 고객 서비스 자동화, 문서 자동화, 계약 검토, 부정 탐지, 코드 생성, 지식 관리. 각 활용 사례는 서로 다른 ROI, 위험, 복잡성을 갖습니다.</p>
+<h2 id="section-11">과제 <a class="heading-anchor" href="#section-11" aria-label="링크 과제">#</a></h2>
+<h3 id="section-12">환각, 비용, 거버넌스 <a class="heading-anchor" href="#section-12" aria-label="링크 환각, 비용, 거버넌스">#</a></h3>
+<p>AI 엔터프라이즈 채택의 주요 과제: 환각 관리, 비용 관리(LLM API 청구액은 급속히 늘어남), 효과적인 거버넌스 구축, 조직 전반의 AI 리터러시 함양.</p>
+<h2 id="section-13">보안 <a class="heading-anchor" href="#section-13" aria-label="링크 보안">#</a></h2>
+<h3 id="section-14">프롬프트 주입과 적대적 공격 <a class="heading-anchor" href="#section-14" aria-label="링크 프롬프트 주입과 적대적 공격">#</a></h3>
+<p>새로운 AI 공격 벡터: 프롬프트 주입, 데이터 오염, 모델 역공학. 엔터프라이즈 AI 시스템은 이러한 위협에 대한 기본 방어가 필요합니다.</p>
+<h2 id="section-15">전망 <a class="heading-anchor" href="#section-15" aria-label="링크 전망">#</a></h2>
+<h3 id="2024">2024년 그 이후 <a class="heading-anchor" href="#2024" aria-label="링크 2024년 그 이후">#</a></h3>
+<p>2024년은 AI 하이프의 진정, 현실적인 엔터프라이즈 채택으로의 전환, 첫 진정한 운영 배포 모범 사례의 확립을 보게 될 것입니다. 준비된 조직은 경쟁 우위를 확보합니다.</p>
+<h2 id="section-17">결론 <a class="heading-anchor" href="#section-17" aria-label="링크 결론">#</a></h2>
+<h3 id="ai-4">AI를 주류 엔지니어링 규율로 변모시키다 <a class="heading-anchor" href="#ai-4" aria-label="링크 AI를 주류 엔지니어링 규율로 변모시키다">#</a></h3>
+<p>2024년은 AI가 「마법」에서 「주류 엔지니어링 규율」로 진화하는 해입니다. 이는 신뢰성, 테스트, 관측 가능성, 거버넌스를 초점으로 삼는 조직화된 분야입니다.</p>
+<aside class="author-card" aria-label="저자 소개"><img alt="Sebastien Rousseau의 초상화" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/ko/sogae/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">응용 AI, ISO 20022 이행, 금융 서비스를 위한 포스트 양자 암호, 도매 결제의 구조적 변혁에 관해 집필하는 시니어 뱅킹 테크놀로지스트입니다.</span><span class="author-credentials">HSBC 상업·투자은행, PayPal, Barclays, Shazam, AKQA, Virgin Group에서 20년 이상의 경험을 보유하였습니다. <a href="/ko/sogae/index.html">전체 프로필</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">최종 검토 <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">관련 읽을거리</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2024-01-23-ai-peurompeuteu-enjineoring-baljeon/index.html" class="related-media" aria-label="AI 프롬프트 엔지니어링의 발전" tabindex="-1"><img alt="A man analysing data on screens" src="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-5"><a href="https://sebastienrousseau.com/ko/2024-01-23-ai-peurompeuteu-enjineoring-baljeon/index.html">AI 프롬프트 엔지니어링의 발전</a> <a class="heading-anchor" href="#ai-5" aria-label="링크 AI 프롬프트 엔지니어링의 발전">#</a></h3><p><time datetime="2024-01-23">2024-01-23</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2023-11-12-saengseonghyung-ai-tamgu/index.html" class="related-media" aria-label="생성 AI 탐구" tabindex="-1"><img alt="AI, Artificial Intelligence concept,3d rendering,conceptual image" src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ai-6"><a href="https://sebastienrousseau.com/ko/2023-11-12-saengseonghyung-ai-tamgu/index.html">생성 AI 탐구</a> <a class="heading-anchor" href="#ai-6" aria-label="링크 생성 AI 탐구">#</a></h3><p><time datetime="2023-11-12">2023-11-12</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/ko/2024-02-13-eu-ai-beob-segye-ai-gyuje-mirae/index.html" class="related-media" aria-label="EU AI 규제: 세계 AI 규제의 미래를 형성하다" tabindex="-1"><img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="eu-ai-ai"><a href="https://sebastienrousseau.com/ko/2024-02-13-eu-ai-beob-segye-ai-gyuje-mirae/index.html">EU AI 규제: 세계 AI 규제의 미래를 형성하다</a> <a class="heading-anchor" href="#eu-ai-ai" aria-label="링크 EU AI 규제: 세계 AI 규제의 미래를 형성하다">#</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="기사 페이지 이동"><a class="post-pagination-prev" href="/ko/2023-12-25-ai-gangwha-yangja-allgori-jeum-euro-geumyung-hyeokmyeong/"><span class="post-pagination-label">이전</span><span class="post-pagination-title">Revolutionising Finance with AI-Enhanced Quantum Algorithms</span></a><a class="post-pagination-next" href="/ko/2024-01-08-ibm-qiskit-yangja-fourier-byeonhwan-euro-sinyongbiyul-bunseok-choejeokhwa/"><span class="post-pagination-label">다음</span><span class="post-pagination-title">Qiskit & Quantum Fourier Transform for Credit Ratio Analysis</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ko/sogae/index.html">소개</a></li>
+              <li><a href="/ko/munui/index.html">문의하기</a></li>
+              <li><a href="/ko/jeongjeok-saiteu-saengseonggi-ro-jejak/index.html">Static Site Generator로 제작</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">기사</h2>
+            <ul>
+              <li><a href="/ko/gisa/index.html">기사</a></li>
+              <li><a href="/ko/nonmun/index.html">논문</a></li>
+              <li><a href="/ko/taegeu/index.html">태그</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">업무</h2>
+            <ul>
+              <li><a href="/ko/peurojekteu/index.html">프로젝트</a></li>
+              <li><a href="/ko/pleilliseuteu/index.html">플레이리스트</a></li>
+              <li><a href="/ko/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">연락처</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="뉴스레터 구독">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 결제, AI, 포스트 양자 암호에 관한 연구 노트. 스팸은 발송하지 않습니다.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="yongnim@eunhaeng.com" />
+            <input type="hidden" name="_subject" value="뉴스레터 구독 — sebastienrousseau.com" />
+            <button type="submit">구독하기</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. 무단 복제 및 전재 금지.</span>
+          <div class="social" aria-label="소셜 링크">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau의 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau의 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau의 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau의 YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau의 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ko/jeobgeunseong/index.html">접근성</a> ·
+            <a href="/ko/gaeinjeongbo/index.html">개인정보처리방침</a> ·
+            <a href="/ko/yakgwan/index.html">이용약관</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ko"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ko"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":244,"headline":"2024년 AI 동향과 예측: 미래를 향한 통찰","description":"2024년의 AI 트렌드와 예측. 엔터프라이즈 배포, 신규 규제, 기술 진보에 관하여.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp","width":"100vw","height":"100vh","caption":"AI의 진화를 표현하는 추상적 비주얼"},"url":"https://sebastienrousseau.com/ko/2024-01-01-2024-ai-donghyang-tongchal-yecheuk/","datePublished":"2024-01-01T05:06:06+00:00","dateModified":"2026-05-11","inLanguage":"ko","keywords":"AI 트렌드, 2024, 엔터프라이즈 AI, 생성 AI, AI 규제, EU AI 법, 멀티모달 AI","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ko/2024-01-01-2024-ai-donghyang-tongchal-yecheuk/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ko"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ko/"},{"@type":"ListItem","position":3,"name":"2024년 AI 동향과 예측: 미래를 향한 통찰","item":"https://sebastienrousseau.com/ko/2024-01-01-2024-ai-donghyang-tongchal-yecheuk/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="검색">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>검색</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="검색">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="문서 검색..." autocomplete="off" aria-label="검색"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 닫기</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 이동</span><span><kbd>Enter</kbd> 열기</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

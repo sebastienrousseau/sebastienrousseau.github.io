@@ -1,11 +1,11 @@
 {
-  "date": "May 14, 2026",
+  "description": "Le risque quantique est passé de la curiosité académique au mandat réglementaire. Avec la feuille de route du G7 de janvier 2026, des calendriers UE, UK et australien désormais clarifiés, et BIS Project Leap qui a fait la démonstration de la faisabilité en système de paiement réel, la question pour les conseils d'administration n'est plus celle de la migration, mais celle des délais.",
   "title": "Sécuriser le registre : guide à l'usage des conseils d'administration sur la migration post-quantique en banque de financement",
+  "subtitle": "Le risque quantique est passé de la curiosité académique à un mandat réglementaire actif. La feuille de route du G7, BIS Project Leap et les calendriers UE/UK/Australie posent désormais la question non plus du quand, mais du comment.",
   "language": "fr",
-  "banner_alt": "Porte de coffre ouverte baignée de lumière dorée — métaphore visuelle de la protection cryptographique des archives financières",
-  "keywords": "cryptographie post-quantique, ML-KEM, ML-DSA, FIPS 203, FIPS 204, BIS Project Leap, G7 CEG, NCSC, ANSSI, BSI, ASD, CNSA 2.0, agilité cryptographique, banque de financement, paiements wholesale",
   "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
   "locale": "fr_FR",
-  "description": "Le risque quantique est passé de la curiosité académique au mandat réglementaire. Avec la feuille de route du G7 de janvier 2026, des calendriers UE, UK et australien désormais clarifiés, et BIS Project Leap qui a fait la démonstration de la faisabilité en système de paiement réel, la question pour les conseils d'administration n'est plus celle de la migration, mais celle des délais.",
-  "subtitle": "Le risque quantique est passé de la curiosité académique à un mandat réglementaire actif. La feuille de route du G7, BIS Project Leap et les calendriers UE/UK/Australie posent désormais la question non plus du quand, mais du comment."
+  "banner_alt": "Porte de coffre ouverte baignée de lumière dorée — métaphore visuelle de la protection cryptographique des archives financières",
+  "date": "May 14, 2026",
+  "keywords": "cryptographie post-quantique, ML-KEM, ML-DSA, FIPS 203, FIPS 204, BIS Project Leap, G7 CEG, NCSC, ANSSI, BSI, ASD, CNSA 2.0, agilité cryptographique, banque de financement, paiements wholesale"
 }
