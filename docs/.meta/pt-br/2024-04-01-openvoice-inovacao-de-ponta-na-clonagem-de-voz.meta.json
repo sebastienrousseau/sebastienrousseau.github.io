@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
-  "locale": "pt_BR",
-  "date": "April 01, 2024",
   "subtitle": "La ferramenta de código aberto de clonación de voz de nova geração",
+  "date": "April 01, 2024",
+  "locale": "pt_BR",
   "keywords": "OpenVoice, clonación de voz, síntesis vocal IA, clonación de voz de código aberto, síntesis vocal multilingüe, clonación de voz instantánea, control de estilo vocal, acessibilidade vocal, voz em o entretenimiento, voz IA para serviço ao cliente",
+  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
   "banner_alt": "Banner que representa uma superposición de perfiles em degradado vivo",
-  "title": "OpenVoice: a a vanguarda de a innovación em clonación de voz",
   "language": "pt-BR",
-  "description": "OpenVoice, do MIT, Tsinghua e MyShell: clonación de voz de qualidade de producción com control do tono, o acento e a emoción, e os compromisos a conhecer."
+  "description": "OpenVoice, do MIT, Tsinghua e MyShell: clonación de voz de qualidade de producción com control do tono, o acento e a emoción, e os compromisos a conhecer.",
+  "title": "OpenVoice: a a vanguarda de a innovación em clonación de voz"
 }

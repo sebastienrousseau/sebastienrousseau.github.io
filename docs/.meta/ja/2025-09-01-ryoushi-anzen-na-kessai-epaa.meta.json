@@ -1,12 +1,12 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo-unsplash.webp",
-  "locale": "ja_JP",
-  "date": "September 1, 2025",
-  "subtitle": "決済業界が今すぐ行動すべき理由",
   "banner_alt": "量子計算と決済インフラ",
-  "description": "Emerging Payments Association Asia のための業界ホワイトペーパー。量子コンピューティングが決済インフラに与える構造的脅威。",
+  "locale": "ja_JP",
+  "subtitle": "決済業界が今すぐ行動すべき理由",
   "title": "量子安全な決済:EPAA ホワイトペーパー",
-  "last_reviewed": "2026-05-11",
   "keywords": "量子安全決済, EPAA, ポスト量子暗号, 決済インフラ, ホールセール決済, リアルタイム決済",
-  "language": "ja-JP"
+  "language": "ja-JP",
+  "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo-unsplash.webp",
+  "last_reviewed": "2026-05-11",
+  "date": "September 1, 2025",
+  "description": "Emerging Payments Association Asia のための業界ホワイトペーパー。量子コンピューティングが決済インフラに与える構造的脅威。"
 }

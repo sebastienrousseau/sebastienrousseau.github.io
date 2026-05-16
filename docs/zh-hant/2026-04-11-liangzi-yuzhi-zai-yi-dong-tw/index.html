@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 11 Apr 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 11 Apr 2026 06:06:06 +0000" id="last-modified" />
+    <title>量子閾值再次移動：10,000 量子位元的 Shor 風險 — Sebastien Rousseau</title>
+
+    <meta name="description" content="新研究顯示 Shor 演算法可能僅需 10,000 量子位元，密碼學相關量子計算門檻正快速下降。">
+<meta name="keywords" content="Shor 演算法, 量子計算, 後量子密碼學, 中性原子量子位元, ECC, RSA, NIST, CRYSTALS-Kyber, 量子閾值, 錯誤糾正">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Quantum Thresholds Are Moving Again">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-/PPKCZNT4Mx/mG0a3IqugTC6CWN3CD7uDjXUrn4CtoY=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-9ofxXrVPaeuA7qsMu6nWDIDgXbmEEFxv4w4pivrDmNs=' 'sha256-wDSmiFAMwPD4Ju1hVjZ+JvYKxiKZvcDoFojB4Zg6/ZU=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/zh-hant/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 訂閱源" href="/zh-hant/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="量子閾值再次移動：10,000 量子位元的 Shor 風險 — Sebastien Rousseau">
+<meta property="og:description" content="新研究顯示 Shor 演算法可能僅需 10,000 量子位元，密碼學相關量子計算門檻正快速下降。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/zh-hant/2026-04-11-liangzi-yuzhi-zai-yi-dong-tw/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="量子閾值再次移動：10,000 量子位元的 Shor 風險 — Sebastien Rousseau">
+<meta name="twitter:description" content="新研究顯示 Shor 演算法可能僅需 10,000 量子位元，密碼學相關量子計算門檻正快速下降。">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/zh-hant/2026-04-11-liangzi-yuzhi-zai-yi-dong-tw/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-04-11-les-seuils-quantiques-bougent-a-nouveau/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-04-11-quantum-thresholds-are-moving-again/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-04-11-quantenschwellen-verschieben-sich-erneut/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-04-11-los-umbrales-cuanticos-vuelven-a-moverse/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-04-11-le-soglie-quantistiche-si-muovono-di-nuovo/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-04-11-ryoushi-shikiichi-ga-mata-ugoki-hajimeta/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-04-11-os-limiares-quanticos-voltam-a-se-mover/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-04-11-kvantovye-porogi-snova-dvizhutsya/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-04-11-liangzi-yuzhi-zai-yi-dong/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-04-11-liangzi-yuzhi-zai-yi-dong-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">跳至主要內容</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="切換導航" />
+      <div class="wrap">
+        <a class="ap-brand" href="/zh-hant/index.html" aria-label="Sebastien Rousseau 首頁">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="主導航">
+          <ul class="ap-menu">
+            <li><a href="/zh-hant/guanyu-tw/index.html">關於</a></li>
+            <li><a href="/zh-hant/wenzhang-tw/index.html" aria-current="page" class="active">文章</a></li>
+            <li><a href="/zh-hant/lunwen-tw/index.html">論文與白皮書</a></li>
+            <li><a href="/zh-hant/zhuti-tw/index.html">主題</a></li>
+            <li><a href="/zh-hant/xiangmu-tw/index.html">專案</a></li>
+            <li><a href="/zh-hant/boqing-tw/index.html">播放列表</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="切換到深色主題" aria-pressed="false" title="切換主題">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="搜尋（Cmd 或 Ctrl + K）" title="搜尋（⌘K）">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="語言">
+            <button type="button" class="ap-lang-toggle" aria-label="ZH，切換語言" aria-expanded="false" aria-haspopup="menu" title="切換語言">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">ZH</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <span class="ap-lang-item" data-lang="bn" aria-disabled="true" title="敬請期待">🇧🇩 বাংলা</span>
+                <span class="ap-lang-item" data-lang="cs" aria-disabled="true" title="敬請期待">🇨🇿 Čeština</span>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <span class="ap-lang-item" data-lang="fil" aria-disabled="true" title="敬請期待">🇵🇭 Filipino</span>
+                <span class="ap-lang-item" data-lang="ha" aria-disabled="true" title="敬請期待">🇳🇬 Hausa</span>
+                <span class="ap-lang-item" data-lang="he" aria-disabled="true" title="敬請期待">🇮🇱 עברית</span>
+                <span class="ap-lang-item" data-lang="hi" aria-disabled="true" title="敬請期待">🇮🇳 हिन्दी</span>
+                <span class="ap-lang-item" data-lang="id" aria-disabled="true" title="敬請期待">🇮🇩 Indonesia</span>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <span class="ap-lang-item" data-lang="ko" aria-disabled="true" title="敬請期待">🇰🇷 한국어</span>
+                <span class="ap-lang-item" data-lang="nl" aria-disabled="true" title="敬請期待">🇳🇱 Nederlands</span>
+                <span class="ap-lang-item" data-lang="pl" aria-disabled="true" title="敬請期待">🇵🇱 Polski</span>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <span class="ap-lang-item" data-lang="ro" aria-disabled="true" title="敬請期待">🇷🇴 Română</span>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <span class="ap-lang-item" data-lang="sv" aria-disabled="true" title="敬請期待">🇸🇪 Svenska</span>
+                <span class="ap-lang-item" data-lang="th" aria-disabled="true" title="敬請期待">🇹🇭 ไทย</span>
+                <span class="ap-lang-item" data-lang="tr" aria-disabled="true" title="敬請期待">🇹🇷 Türkçe</span>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="敬請期待">🇺🇦 Українська</span>
+                <span class="ap-lang-item" data-lang="vi" aria-disabled="true" title="敬請期待">🇻🇳 Tiếng Việt</span>
+                <span class="ap-lang-item" data-lang="yo" aria-disabled="true" title="敬請期待">🇳🇬 Yorùbá</span>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/zh-hant/lianxi-tw/index.html" aria-label="聯絡我">聯絡我 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="切換導航">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>量子閾值再次移動：10,000 量子位元的 Shor 風險</h1>
+      <p class="sub">新論文顯示 Shor 演算法可在 10,000 量子位元上執行——具密碼學意義的量子計算門檻下降速度比多數人預期的快</p>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-shor" class="article-tag" rel="tag">Shor 演算法</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">量子計算</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">後量子密碼學</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">中性原子量子位元</a><a href="/tags/index.html#h3-ecc" class="article-tag" rel="tag">ECC</a><a href="/tags/index.html#h3-rsa" class="article-tag" rel="tag">RSA</a><a href="/tags/index.html#h3-nist" class="article-tag" rel="tag">NIST</a><a href="/tags/index.html#h3-crystals-kyber" class="article-tag" rel="tag">CRYSTALS-Kyber</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">量子閾值</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">錯誤糾正</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-04-11T06:06:06+00:00" class="meta-pub">Published 11 Apr 2026</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Updated 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">1 min read</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#section-1">量子閾值再次移動</a></li><li><a href="#section-2">一個熟悉的假設，現在面臨壓力</a></li><li><a href="#section-3">推動轉變的匯聚：錯誤糾正、架構與並行性</a></li><li><a href="#section-4">從數百萬到數萬：數字真正的含義</a></li><li><a href="#section-6">時間、規模與密碼系統不均的脆弱性</a></li><li><a href="#section-7">仍存在的工程鴻溝</a></li><li><a href="#section-8">為何壓縮中的時間線現在就要求關注</a></li><li><a href="#section-9">這對各行業意味著什麼：實用指南</a></li><li><a href="#section-13">結論</a></li><li><a href="#section-14">常見問題</a></li><li><a href="#section-15">參考資料</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> 新研究顯示 Shor 演算法可能僅需 10,000 量子位元，密碼學相關量子計算門檻正快速下降。</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>量子閾值再次移動.</strong> 一篇新論文顯示 Shor 演算法可在 10,000 量子位元上執行。具密碼學意義的量子計算門檻下降速度比多數人預期的快。.</li>  <li><strong>一個熟悉的假設，現在面臨壓力.</strong> 過去十年裡，圍繞量子計算和密碼學的討論遵循一個熟悉的弧線。量子機器在理論上被承認強大，但被認為在規模上不切實際。破解現代密碼系統需要數百萬物理量子位元，時間表保持令人安心的距離。這一假設現在面臨嚴峻壓力。.</li>  <li><strong>推動轉變的匯聚：錯誤糾正、架構與並行性.</strong> 該結果並非源自單一發現。它反映了量子計算棧多層改進的匯聚，綜合起來改變了看似可行的邊界。.</li>  <li><strong>從數百萬到數萬：數字真正的含義.</strong> 多年來，在密碼規模上執行 Shor 演算法的共識估計需要數百萬物理量子位元。新分析顯示，在某些假設下，這一數字可能降至約 10,000。然而該數字並非完整圖景。.</li></ul></aside><h2 id="section-1">量子閾值再次移動 <a class="heading-anchor" href="#section-1" aria-label="Link to 量子閾值再次移動">#</a></h2>
+<p>一篇新論文顯示 Shor 演算法可在 10,000 量子位元上執行。具密碼學意義的量子計算門檻下降速度比多數人預期的快。</p>
+<blockquote>
+<p><strong>核心要點</strong></p>
+<ul>
+<li>一篇新論文提出 Shor 演算法可在 <strong>10,000 個物理量子位元</strong> 上執行——大約比此前共識估計少 100 倍。</li>
+<li>下降由三種匯聚的進展驅動：高速率量子糾錯碼、可重構中性原子陣列以及更高並行度。</li>
+<li>威脅不均勻。<strong>橢圓曲線密碼學（ECC）</strong> 在較低量子位元數下更脆弱；RSA-2048 在可比規模下需要長得多的執行時。</li>
+<li>這是 <strong>理論投射</strong>，而非工作演示。當前硬體與該規模下容錯執行之間仍存在巨大工程鴻溝。</li>
+<li>後量子密碼標準已經定稿。當前的優先事項是 <strong>加速遷移</strong>——而非等待量子系統出現。</li>
+</ul>
+</blockquote>
+<h2 id="section-2">一個熟悉的假設，現在面臨壓力 <a class="heading-anchor" href="#section-2" aria-label="Link to 一個熟悉的假設，現在面臨壓力">#</a></h2>
+<p>過去十年裡，圍繞量子計算和密碼學的討論遵循一個熟悉的弧線。量子機器在理論上被承認強大，但被認為在規模上不切實際。破解現代密碼系統需要數百萬物理量子位元，時間表保持令人安心的距離。這一假設現在面臨嚴峻壓力。</p>
+<p>最近一篇論文 <a href="https://arxiv.org/pdf/2603.28627" title="Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits (PDF)">Shor 演算法可在少至 10,000 個可重構原子量子位元上執行 ⧉</a> 提出比單一突破更具影響的內容。它表明密碼學相關量子計算的門檻可能比此前認為的低一個數量級。不是數百萬量子位元，而是數萬。區別很重要，它所暗示的方向很難被忽視。</p>
+<h2 id="section-3">推動轉變的匯聚：錯誤糾正、架構與並行性 <a class="heading-anchor" href="#section-3" aria-label="Link to 推動轉變的匯聚：錯誤糾正、架構與並行性">#</a></h2>
+<p>該結果並非源自單一發現。它反映了量子計算棧多層改進的匯聚，綜合起來改變了看似可行的邊界。</p>
+<p>第一項改進涉及錯誤糾正。傳統方法需要大開銷，常需數百個物理量子位元表示一個邏輯量子位元。論文轉而依賴高速率量子糾錯碼，顯著降低該開銷。第二項涉及架構。該系統建立在中性原子的可重構陣列上，可在計算期間重新排列以允許更靈活的連線性與更高效的執行。第三是並行性：增加量子位元數允許更多操作同時執行，縮短整體執行時間。</p>
+<p>這些想法單獨並不新。然而結合起來，它們重新框定了此前被視為硬限制的內容。</p>
+<h2 id="section-4">從數百萬到數萬：數字真正的含義 <a class="heading-anchor" href="#section-4" aria-label="Link to 從數百萬到數萬：數字真正的含義">#</a></h2>
+<p>多年來，在密碼規模上執行 Shor 演算法的共識估計需要數百萬物理量子位元。新分析顯示，在某些假設下，這一數字可能降至約 10,000。然而該數字並非完整圖景。</p>
+<p>在該範圍的低端，執行時仍然很長。以最少量子位元數因數分解 RSA-2048 可能仍需連續執行多年。更快執行需要更多量子位元，可能在數萬量級。量子位元數與執行時之間的關係非線性，論文謹慎地將其呈現為光譜而非固定閾值。變化的是方向：障礙不再純粹是理論的，而是工程問題。</p>
+<h3 id="section-5">舊假設與新現實 <a class="heading-anchor" href="#section-5" aria-label="Link to 舊假設與新現實">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>維度</th>
+<th>舊假設</th>
+<th>新現實</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>所需物理量子位元數（Shor 演算法）</td>
+<td>約 1,000,000+</td>
+<td>約 10,000–26,000</td>
+</tr>
+<tr>
+<td>破解 RSA-2048 所需時間（最少量子位元數）</td>
+<td>本十年不可行</td>
+<td>數年（10K 量子位元）；更多則更快</td>
+</tr>
+<tr>
+<td>破解 ECC-256 所需時間</td>
+<td>本十年不可行</td>
+<td>數天（約 26K 量子位元估算）</td>
+</tr>
+<tr>
+<td>主流硬體正規化</td>
+<td>超導量子位元</td>
+<td>可重構中性原子陣列</td>
+</tr>
+<tr>
+<td>錯誤糾正開銷</td>
+<td>每邏輯位元數百個物理位元</td>
+<td>透過高速率碼顯著降低</td>
+</tr>
+<tr>
+<td>障礙性質</td>
+<td>理論性</td>
+<td>工程性</td>
+</tr>
+<tr>
+<td>遷移緊迫性</td>
+<td>長期規劃</td>
+<td>現在需要主動部署</td>
+</tr>
+</tbody>
+</table>
+<p><em>來源：基於 <a href="https://arxiv.org/abs/2603.28627">arXiv:2603.28627 ⧉</a> 與既往文獻的分析。</em></p>
+<h2 id="section-6">時間、規模與密碼系統不均的脆弱性 <a class="heading-anchor" href="#section-6" aria-label="Link to 時間、規模與密碼系統不均的脆弱性">#</a></h2>
+<p>論文較顯著的貢獻之一是關於時間引入的細緻差異。量子優勢不會一次性到來。它沿一個由系統規模和密碼目標性質決定的光譜存在。</p>
+<p>約 26,000 量子位元下，作者估計在有利條件下破解橢圓曲線密碼學可能需要數天。對 RSA-2048，時間線長得多。這種不對稱很重要。它表明不同的密碼系統可能在不同時間點變得脆弱，而非同時，向後量子標準的過渡不太可能是單一事件、單一截止日期。</p>
+<p>這一模式與更廣泛的報道一致。近月分析顯示，能挑戰廣泛使用加密的量子系統可能在本十年末前出現。各國政府與標準機構已在規劃向後量子密碼學的過渡，實施時間表延伸至 2030 年代。討論已從是否轉變為何時。</p>
+<h2 id="section-7">仍存在的工程鴻溝 <a class="heading-anchor" href="#section-7" aria-label="Link to 仍存在的工程鴻溝">#</a></h2>
+<p>精確說明該論文代表什麼很重要。它是預測，而非演示。所提議的系統依賴關於錯誤率、硬體穩定性與擴充套件行為的假設——這些假設尚未在所需規模上得到驗證。當前實驗在數百到數千量子位元水平執行，而非數萬量子位元長時間容錯執行。</p>
+<p>實質性的工程鴻溝仍然存在。從令人信服的理論模型到能在該規模上持續容錯執行的系統的路徑，涉及尚未完全理解、更不用說解決的挑戰。變化的不是工作機器的臨近，而是目標的可信度。鴻溝在縮窄，進展方向是一致的。</p>
+<h2 id="section-8">為何壓縮中的時間線現在就要求關注 <a class="heading-anchor" href="#section-8" aria-label="Link to 為何壓縮中的時間線現在就要求關注">#</a></h2>
+<p>這項工作的意義不在於密碼學將在近期被破解。而是時間線正在以影響今日決策的方式壓縮。安全系統設計時考慮長生命週期。現在加密的資料可能需要保密數十年。今年作出的基礎設施決策在五年視窗內難以扭轉。如果量子能力比預期更早到來，這些假設將變得脆弱。</p>
+<p>這就是為何後量子密碼學已在關鍵領域部署。不是因為威脅迫在眉睫，而是因為過渡需要時間，而遲到的代價是不對稱的。計算史上有一種反覆出現的模式：進展看似緩慢，直到突然不再如此。一開始是理論改進，然後變成實際約束，曾經被視為遙遠的事物變成必須為之規劃的事物。量子計算可能正沿著這一軌跡前進——不是透過單一戲劇性突破，而是透過成本、複雜性和規模的穩步降低。</p>
+<h2 id="section-9">這對各行業意味著什麼：實用指南 <a class="heading-anchor" href="#section-9" aria-label="Link to 這對各行業意味著什麼：實用指南">#</a></h2>
+<p>該研究的意義在各領域並不均勻。適當回應取決於面臨風險的密碼資產型別、所涉資料的敏感性與壽命，以及監管期望推進的步伐。</p>
+<h3 id="section-10">金融服務與金融科技 <a class="heading-anchor" href="#section-10" aria-label="Link to 金融服務與金融科技">#</a></h3>
+<p>金融機構面臨複合風險：它們持有長壽命敏感資料，執行在替換週期緩慢的基礎設施上，且越來越受到圍繞密碼韌性的監管審視。ECC 在 TLS 連線、移動認證和跨支付通道的數字簽名中廣泛使用——這是論文識別為在較低量子位元數下最脆弱的密碼類別。尚未開始密碼學清單或啟動後量子遷移路線圖的機構應將本論文視為加速的提示，而非恐慌的理由。<a href="/zh-hant/2023-11-19-crystals-kyber-liangzi-shidai-de-baohu-suanfa-tw/index.html">CRYSTALS-Kyber</a> 與 CRYSTALS-Dilithium（兩者現已由 NIST 標準化）是金鑰封裝與數字簽名的適當遷移目標。</p>
+<h3 id="section-11">政府與國防 <a class="heading-anchor" href="#section-11" aria-label="Link to 政府與國防">#</a></h3>
+<p>國家級行為者有最強烈的動機——在許多情況下也有資源——加速量子硬體開發超越公開已知的水平。持有敏感通訊、情報資料或關鍵基礎設施金鑰的政府必須假設對手已在收集加密資料以備未來解密，這一策略通常稱為&quot;現在收集，未來解密&quot;。對公共部門組織，遵守國家量子就緒指令越來越不可避免，主動遷移的視窗正在縮窄。</p>
+<h3 id="section-12">醫療與關鍵基礎設施 <a class="heading-anchor" href="#section-12" aria-label="Link to 醫療與關鍵基礎設施">#</a></h3>
+<p>醫療記錄、公用事業控制系統與工業網路共享一種共同脆弱性：資料和系統具有非常長的執行壽命，由為前量子威脅模型設計的密碼標准保護。今天加密的醫療記錄可能需要保密五十年。今年認證的控制系統可能服役二十年。對這些領域，壓縮中的時間線不是抽象關切，而是對當前安全架構基礎假設的直接挑戰。</p>
+<h2 id="section-13">結論 <a class="heading-anchor" href="#section-13" aria-label="Link to 結論">#</a></h2>
+<p>該論文最重要的方面不是它呈現的具體量子位元數，而是該數字所暗示的方向。問題不再是量子計算機能否挑戰現代密碼學，而是所需系統能多快建成，以及依賴當前標準的組織響應是否足夠快。</p>
+<p>目前答案仍不確定。但推遲問題的餘地正在縮窄，等待的代價隨著理論門檻每一次可信下降而增長。密碼學界、安全規劃者及依賴它們的行業最好將本論文視為加速已在進行的過渡的嚴肅提示，而非警報的理由。</p>
+<h2 id="section-14">常見問題 <a class="heading-anchor" href="#section-14" aria-label="Link to 常見問題">#</a></h2>
+<p><strong>10,000 量子位元真的能破解 RSA 加密嗎？</strong></p>
+<p>理論上可以——但有重要保留。雖然此前估計需要數百萬物理量子位元，關於高速率糾錯碼與可重構中性原子陣列的新研究表明門檻顯著更低。然而在 10,000 量子位元下，因數分解 RSA-2048 的估計執行時仍然極長——可能數年的連續執行。更快攻擊需要更多量子位元，可能在數萬量級。該論文代表基於建模假設的預測，而非在工作系統上的演示。</p>
+<p><strong>哪種加密最易受量子計算威脅？</strong></p>
+<p>橢圓曲線密碼學（ECC）通常比 RSA-2048 在較低量子位元數下更脆弱。論文估計在有利條件下，使用約 26,000 個可重構量子位元破解 ECC 可能需要數天。RSA-2048 在可比量子位元數下需要長得多的執行時。這種不對稱意味著依賴 ECC 的系統——常見於 TLS、移動認證和區塊鏈——可能比基於 RSA 的基礎設施面臨更短時間線的風險。</p>
+<p><strong>什麼是可重構中性原子量子位元？</strong></p>
+<p>中性原子量子位元是單個原子——通常是銣或銫——在真空腔中被鐳射光束捕獲和操縱。&quot;可重構&quot;意味著原子的排列可在計算期間動態改變，允許更高效執行復雜量子電路。這種靈活性減少了實施容錯邏輯操作所需的物理量子位元數量，是新論文相對早期基於超導量子位元架構的工作實現更低量子位元估計的關鍵原因。</p>
+<p><strong>什麼是後量子密碼學，為何現在就在部署？</strong></p>
+<p>後量子密碼學（PQC）指被認為對經典和量子計算機都安全的密碼演算法。NIST 在 2024 年定型了首批 PQC 標準，包括用於金鑰封裝的 <a href="/zh-hant/2023-11-19-crystals-kyber-liangzi-shidai-de-baohu-suanfa-tw/index.html">CRYSTALS-Kyber</a> 與用於數字簽名的 CRYSTALS-Dilithium。部署正在開始——遠在量子計算機構成即時威脅之前——因為密碼過渡緩慢。在全球基礎設施中替換嵌入的標準通常需要十年或更長，今天加密的資料可能需要在量子能力成熟後很久仍保持機密。</p>
+<p><strong>今天最強大的量子計算機有多少量子位元？</strong></p>
+<p>截至 2026 年初，領先的量子系統在數百到數千個物理量子位元範圍執行。關鍵的是，大多數尚未容錯——它們的執行低於持續可靠邏輯計算所需的糾錯閾值。今天硬體與新論文描述的數萬個高保真容錯邏輯量子位元之間的差距仍然顯著，儘管超導、中性原子和離子阱平臺的進展步伐正在加速。</p>
+<h2 id="section-15">參考資料 <a class="heading-anchor" href="#section-15" aria-label="Link to 參考資料">#</a></h2>
+<ul>
+<li>Sebastien Rousseau, (2025). <a href="https://sebastienrousseau.com/zh-hant/2025-09-01-kang-liangzi-zhifu-epaa-tw/index.html" title="抗量子支付：行業必須立即行動">抗量子支付：行業必須立即行動</a>。</li>
+<li>Sebastien Rousseau, (2023). <a href="https://sebastienrousseau.com/zh-hant/2023-12-11-liangzi-miyao-fenfa-yinhang-anquan-de-biange-tw/index.html" title="量子金鑰分發：變革銀行業安全">量子金鑰分發：變革銀行業安全</a>。</li>
+<li>Sebastien Rousseau, (2023). <a href="https://sebastienrousseau.com/zh-hant/2023-11-19-crystals-kyber-liangzi-shidai-de-baohu-suanfa-tw/index.html" title="CRYSTALS-Kyber：量子時代的守護演算法">CRYSTALS-Kyber：量子時代的守護演算法</a>。</li>
+<li>Anonymous, (2026). <a href="https://arxiv.org/abs/2603.28627" title="Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits">Shor 演算法可在少至 10,000 個可重構原子量子位元上執行 ⧉</a>。arXiv preprint arXiv:2603.28627.</li>
+<li>Castelvecchi, D. (2026). <a href="https://www.nature.com/articles/d41586-026-01054-1" title="Quantum-computing breakthroughs pose risks to encryption">量子計算突破對加密構成風險 ⧉</a>。Nature.</li>
+<li>Phys.org, (2026). <a href="https://phys.org/news/2026-04-quantum-built-qubits-team.html" title="Useful quantum computers could be built with as few as 10,000 qubits">僅 10,000 量子位元即可構建有用的量子計算機 ⧉</a>。Phys.org.</li>
+</ul>
+<aside class="author-card" aria-label="關於作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/zh-hant/guanyu-tw/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">資深銀行技術專家，撰寫關於應用人工智慧、ISO 20022 遷移、面向金融服務的後量子密碼學，以及批發支付結構性轉型的內容。</span><span class="author-credentials">20 多年經驗，曾任職於滙豐商業及投資銀行、PayPal、巴克萊、Shazam、AKQA、維珍集團。 <a href="/zh-hant/guanyu-tw/index.html">完整簡介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最近審閱 <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">相關閱讀</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2026-05-11-lucy-besson-zhishi-zhuanyi-ai-yu-liangzi-tw/index.html" class="related-media" aria-label="重溫露西的 U 盤：貝松所看到的知識向機器遷移" tabindex="-1"><img alt="Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles" src="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="u"><a href="https://sebastienrousseau.com/zh-hant/2026-05-11-lucy-besson-zhishi-zhuanyi-ai-yu-liangzi-tw/index.html">重溫露西的 U 盤：貝松所看到的知識向機器遷移</a> <a class="heading-anchor" href="#u" aria-label="Link to 重溫露西的 U 盤：貝松所看到的知識向機器遷移">#</a></h3><p><time datetime="2026-05-11">2026-05-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2025-09-01-kang-liangzi-zhifu-epaa-tw" class="related-media" aria-label="抗量子支付：行業必須立即行動（EPAA）" tabindex="-1"><img alt="Quantum computing circuit board in blue light" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="epaa"><a href="https://sebastienrousseau.com/zh-hant/2025-09-01-kang-liangzi-zhifu-epaa-tw">抗量子支付：行業必須立即行動（EPAA）</a> <a class="heading-anchor" href="#epaa" aria-label="Link to 抗量子支付：行業必須立即行動（EPAA）">#</a></h3><p><time datetime="2025-09-01">2025-09-01</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hant/2024-04-22-gezhuang-mima-liangzi-suanfa-faxian-louhdong-tw/index.html" class="related-media" aria-label="格基密碼學的量子演算法中發現漏洞" tabindex="-1"><img alt="Image generated using MidJourney - A Network of digital nodes in red and blue hues." src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-18"><a href="https://sebastienrousseau.com/zh-hant/2024-04-22-gezhuang-mima-liangzi-suanfa-faxian-louhdong-tw/index.html">格基密碼學的量子演算法中發現漏洞</a> <a class="heading-anchor" href="#section-18" aria-label="Link to 格基密碼學的量子演算法中發現漏洞">#</a></h3><p><time datetime="2024-04-22">2024-04-22</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Sources & references</h2><ol class="article-sources-list"><li><a href="https://arxiv.org/pdf/2603.28627" rel="external noopener nofollow"><span class="source-host">arxiv.org</span><span class="source-path">/pdf/2603.28627</span></a></li><li><a href="https://arxiv.org/abs/2603.28627" rel="external noopener nofollow"><span class="source-host">arxiv.org</span><span class="source-path">/abs/2603.28627</span></a></li></ol></aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/zh-hant/2025-09-01-kang-liangzi-zhifu-epaa-tw/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">Quantum-Safe Payments: Why the Industry Must Act Now</span></a><a class="post-pagination-next" href="/zh-hant/2026-05-11-lucy-besson-zhishi-zhuanyi-ai-yu-liangzi-tw/"><span class="post-pagination-label">Next</span><span class="post-pagination-title">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/zh-hant/guanyu-tw/index.html">關於</a></li>
+              <li><a href="/zh-hant/lianxi-tw/index.html">聯絡</a></li>
+              <li><a href="/zh-hant/yong-static-site-generator-zhizuo-tw/index.html">使用 Static Site Generator 構建</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">文章</h2>
+            <ul>
+              <li><a href="/zh-hant/wenzhang-tw/index.html">文章</a></li>
+              <li><a href="/zh-hant/lunwen-tw/index.html">論文與白皮書</a></li>
+              <li><a href="/zh-hant/biaoqian-tw/index.html">標籤</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">工作</h2>
+            <ul>
+              <li><a href="/zh-hant/xiangmu-tw/index.html">專案</a></li>
+              <li><a href="/zh-hant/boqing-tw/index.html">播放列表</a></li>
+              <li><a href="/zh-hant/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">聯絡</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="通訊訂閱">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 關於支付、人工智慧與後量子密碼學的研究筆記。無垃圾郵件。</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="nin@yinhang-tw.com" />
+            <input type="hidden" name="_subject" value="通訊訂閱 — sebastienrousseau.com" />
+            <button type="submit">訂閱</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© 版權所有 2007 - 2026 - Sebastien Rousseau。保留所有權利。</span>
+          <div class="social" aria-label="社交連結">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 於 Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau 於 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 於 LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau 於 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 於 Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau 於 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 於 YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau 於 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/zh-hant/wuzhang-ai-tw/index.html">無障礙訪問</a> ·
+            <a href="/zh-hant/yinsi-tw/index.html">隱私</a> ·
+            <a href="/zh-hant/tiaokuan-tw/index.html">條款</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"zh-hant"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"zh-hant"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":202,"about":{"@type":"Thing","name":"NIST PQC","sameAs":"https://csrc.nist.gov/projects/post-quantum-cryptography"},"mentions":[{"@type":"Thing","name":"CRYSTALS-Kyber","sameAs":["https://en.wikipedia.org/wiki/Kyber","https://www.wikidata.org/wiki/Q116727584","https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html"]}],"headline":"量子閾值再次移動：10,000 量子位元的 Shor 風險","description":"新研究顯示 Shor 演算法可能僅需 10,000 量子位元，密碼學相關量子計算門檻正快速下降。","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp","width":"100vw","height":"100vh","caption":"Shor 演算法量子位元閾值示意圖——藍光圖案的量子計算電路板"},"url":"https://sebastienrousseau.com/zh-hant/2026-04-11-liangzi-yuzhi-zai-yi-dong-tw/","datePublished":"2026-04-11T06:06:06+00:00","dateModified":"2026-05-11","inLanguage":"zh-hant","keywords":"Shor 演算法, 量子計算, 後量子密碼學, 中性原子量子位元, ECC, RSA, NIST, CRYSTALS-Kyber, 量子閾值, 錯誤糾正","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hant/2026-04-11-liangzi-yuzhi-zai-yi-dong-tw/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"zh-hant"},"citation":[{"@type":"CreativeWork","url":"https://arxiv.org/pdf/2603.28627"},{"@type":"CreativeWork","url":"https://arxiv.org/abs/2603.28627"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/zh-hant/"},{"@type":"ListItem","position":3,"name":"量子閾值再次移動：10,000 量子位元的 Shor 風險","item":"https://sebastienrousseau.com/zh-hant/2026-04-11-liangzi-yuzhi-zai-yi-dong-tw/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="搜尋">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>搜尋</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="搜尋">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="搜尋文件…" autocomplete="off" aria-label="搜尋"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 關閉</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 導航</span><span><kbd>Enter</kbd> 開啟</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

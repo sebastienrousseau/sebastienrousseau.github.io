@@ -1,0 +1,99 @@
+{
+  "_comment": "Traditional Chinese (zh-hant) static-page metadata — DRAFT pending native review. Mirrors AR/ES/FR/DE static_pages.json shape; includes 'articles' key.",
+  "404": {
+    "title": "404 — 頁面未找到 — Sebastien Rousseau",
+    "subtitle": "您查詢的頁面不存在。",
+    "description": "404 — 頁面未找到。返回首頁或搜尋站點。",
+    "keywords": "404, 錯誤, 頁面未找到, Sebastien Rousseau"
+  },
+  "about": {
+    "title": "關於 — Sebastien Rousseau",
+    "subtitle": "透過人工智慧、後量子密碼學與區塊鏈技術的戰略整合，塑造銀行業與金融服務業的未來。",
+    "description": "Sebastien Rousseau，資深銀行技術專家：應用人工智慧、ISO 20022 遷移、後量子密碼學，以及批發支付的結構性轉型。",
+    "keywords": "Sebastien Rousseau, 簡介, 銀行業, 支付, 人工智慧, ISO 20022, 後量子密碼學, 滙豐, PayPal, 巴克萊"
+  },
+  "accessibility": {
+    "title": "無障礙訪問 — Sebastien Rousseau",
+    "subtitle": "我們承諾為殘障人士提供數字無障礙訪問。",
+    "description": "無障礙訪問宣告：遵循 WCAG 2.2 AA 標準、包容性原則、反饋渠道與問題報告聯絡方式。",
+    "keywords": "無障礙訪問, WCAG, 合規, 數字包容, 審計"
+  },
+  "articles": {
+    "title": "文章 — Sebastien Rousseau",
+    "subtitle": "關於人工智慧、後量子密碼學、ISO 20022 與支付未來的文章。",
+    "description": "關於應用人工智慧、後量子密碼學、ISO 20022 支付以及批發支付轉型的文章。",
+    "keywords": "文章, 研究, 人工智慧, 後量子密碼學, ISO 20022, 批發支付"
+  },
+  "contact": {
+    "title": "聯絡 — Sebastien Rousseau",
+    "subtitle": "有問題或需要諮詢？請聯絡我。",
+    "description": "聯絡 Sebastien Rousseau，諮詢支付轉型、ISO 20022 遷移或後量子戰略。",
+    "keywords": "聯絡, 諮詢, 支付, ISO 20022, 後量子密碼學"
+  },
+  "made-with-shokunin": {
+    "title": "使用 Shokunin 構建 — Sebastien Rousseau",
+    "subtitle": "瞭解如何使用新一代靜態站點生成器。",
+    "description": "本站使用 Shokunin 構建——一款針對效能和 SEO 最佳化的 Rust 靜態站點生成器。",
+    "keywords": "Shokunin, SSG, Rust, 效能, SEO"
+  },
+  "made-with-static-site-generator": {
+    "title": "使用 Static Site Generator 構建 — Sebastien Rousseau",
+    "subtitle": "瞭解如何使用新一代靜態站點生成器。",
+    "description": "本站由 Shokunin 生成——一款用 Rust 編寫的高速靜態站點生成器。",
+    "keywords": "Shokunin, 靜態站點生成器, Rust, 效能"
+  },
+  "offline": {
+    "title": "離線 — Sebastien Rousseau",
+    "subtitle": "請檢查網路連線後重試。",
+    "description": "您當前處於離線狀態。重新連線以訪問內容。",
+    "keywords": "離線, PWA"
+  },
+  "papers": {
+    "title": "論文與白皮書 — Sebastien Rousseau",
+    "subtitle": "面向支付與安全領域高階決策者的行業白皮書與應用研究。",
+    "description": "Sebastien Rousseau 關於人工智慧、ISO 20022 支付與後量子密碼學的論文、報告與出版物。",
+    "keywords": "論文, 白皮書, 報告, 研究, ISO 20022, 人工智慧, 後量子密碼學"
+  },
+  "playlists": {
+    "title": "播放列表 — Sebastien Rousseau",
+    "subtitle": "為深度工作、創造力與工程師思維精選的 Spotify 播放列表。",
+    "description": "Sebastien Rousseau 的音樂與聆聽精選。",
+    "keywords": "播放列表, 音樂"
+  },
+  "privacy": {
+    "title": "隱私政策 — Sebastien Rousseau",
+    "subtitle": "您的隱私對我們很重要。",
+    "description": "本網站如何收集、使用和保護您的資料。匿名訪問統計、Cookie、託管以及 GDPR 權利。",
+    "keywords": "隱私, GDPR, Cookie, 個人資料, 分析"
+  },
+  "projects": {
+    "title": "專案 — Sebastien Rousseau",
+    "subtitle": "面向金融未來的 Python、Rust 與 JavaScript 開源專案。",
+    "description": "Sebastien Rousseau 維護的開源庫組合，應用於支付、跨境結算與抗量子密碼學。",
+    "keywords": "開源專案, Python, Rust, 支付, ISO 20022, 後量子密碼學"
+  },
+  "tags": {
+    "title": "標籤 — Sebastien Rousseau",
+    "subtitle": "按主題瀏覽站點：人工智慧、支付、後量子密碼學、開源。",
+    "description": "按標籤瀏覽文章：人工智慧、ISO 20022、區塊鏈、後量子密碼學等。",
+    "keywords": "標籤, 標籤雲, 按主題瀏覽"
+  },
+  "terms": {
+    "title": "使用條款 — Sebastien Rousseau",
+    "subtitle": "本站的一般使用條款。",
+    "description": "sebastienrousseau.com 的一般使用條款：內容許可、限制、商標與司法管轄。",
+    "keywords": "條款, 法律宣告, 許可, 版權"
+  },
+  "thanks": {
+    "title": "感謝 — Sebastien Rousseau",
+    "subtitle": "感謝您的聯絡！",
+    "description": "感謝您的留言。我會盡快回復。",
+    "keywords": "感謝"
+  },
+  "topics": {
+    "title": "主題 — Sebastien Rousseau",
+    "subtitle": "關於人工智慧、後量子密碼學、ISO 20022 與支付未來的文章。",
+    "description": "按主題探索分析：應用人工智慧、ISO 20022 支付、後量子密碼學以及批發支付轉型。",
+    "keywords": "主題, 議題, 人工智慧, 支付, ISO 20022, 後量子密碼學"
+  }
+}

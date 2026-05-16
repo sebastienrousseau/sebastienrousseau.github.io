@@ -1,0 +1,15 @@
+{
+  "_comment": "Traditional Chinese (zh-hant) body-text labels — DRAFT pending native review. Key set MUST stay in sync with _data/i18n/en/labels.json; CI gate test_i18n_labels.py enforces parity.",
+  "Published": "釋出於",
+  "Updated": "更新於",
+  "min read": "分鐘閱讀",
+  "Previous": "上一篇",
+  "Next": "下一篇",
+  "Sources & references": "來源與參考",
+  "About the author": "關於作者",
+  "Topics": "主題",
+  "Contents": "目錄",
+  "Estimated read time": "預計閱讀時間",
+  "Article pagination": "文章分頁",
+  "Link to": "連結至"
+}
