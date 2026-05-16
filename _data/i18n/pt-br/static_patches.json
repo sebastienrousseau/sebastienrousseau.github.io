@@ -1,0 +1,1021 @@
+{
+  "_comment": "Brazilian Portuguese static-page chrome patches — DRAFT pending native review.",
+  "patches": [
+    [
+      "<a href=\"/\">Home</a> &middot; <span>Topics</span>",
+      "<a href=\"/pt-br/\">Início</a> &middot; <span>Tópicos</span>"
+    ],
+    [
+      ">Home<",
+      ">Início<"
+    ],
+    [
+      ">Topics</h1>",
+      ">Tópicos</h1>"
+    ],
+    [
+      ">PILLARS</p>",
+      ">PILARES</p>"
+    ],
+    [
+      "PILLAR · TOPIC",
+      "PILAR · TÓPICO"
+    ],
+    [
+      "PILLAR · PROJECT",
+      "PILAR · PROJETO"
+    ],
+    [
+      "Curated topic clusters[^<]+",
+      "Clusters temáticos selecionados — escolha um fio e siga-o pelo arquivo."
+    ],
+    [
+      "aria-label=\"Post-Quantum Cryptography\"",
+      "aria-label=\"Criptografia pós-quântica\""
+    ],
+    [
+      "aria-label=\"ISO 20022 &amp; Payments\"",
+      "aria-label=\"ISO 20022 &amp; Pagamentos\""
+    ],
+    [
+      "aria-label=\"Applied AI in Banking\"",
+      "aria-label=\"IA aplicada ao setor bancário\""
+    ],
+    [
+      "aria-label=\"Rust &amp; Open Source\"",
+      "aria-label=\"Rust &amp; Código aberto\""
+    ],
+    [
+      "aria-label=\"Blockchain &amp; Digital Assets\"",
+      "aria-label=\"Blockchain &amp; Ativos digitais\""
+    ],
+    [
+      "alt=\"Post-Quantum Cryptography — topic banner\"",
+      "alt=\"Criptografia pós-quântica — banner do tópico\""
+    ],
+    [
+      "alt=\"ISO 20022 &amp; Payments — topic banner\"",
+      "alt=\"ISO 20022 &amp; Pagamentos — banner do tópico\""
+    ],
+    [
+      "alt=\"Applied AI in Banking — topic banner\"",
+      "alt=\"IA aplicada ao setor bancário — banner do tópico\""
+    ],
+    [
+      "alt=\"Rust &amp; Open Source — topic banner\"",
+      "alt=\"Rust &amp; Código aberto — banner do tópico\""
+    ],
+    [
+      "alt=\"Blockchain &amp; Digital Assets — topic banner\"",
+      "alt=\"Blockchain &amp; Ativos digitais — banner do tópico\""
+    ],
+    [
+      "<h3><a href=\"/fr/topics/post-quantum-cryptography/[^\"]+\">Post-Quantum Cryptography</a></h3>",
+      "<h3><a href=\"/pt-br/topicos/post-quantum-cryptography/index.html\">Criptografia pós-quântica</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/fr/topics/iso-20022-payments/[^\"]+\">ISO 20022 &amp; Payments</a></h3>",
+      "<h3><a href=\"/pt-br/topicos/iso-20022-payments/index.html\">ISO 20022 &amp; Pagamentos</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/fr/topics/applied-ai-banking/[^\"]+\">Applied AI in Banking</a></h3>",
+      "<h3><a href=\"/pt-br/topicos/applied-ai-banking/index.html\">IA aplicada ao setor bancário</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/fr/topics/rust-open-source/[^\"]+\">Rust &amp; Open Source</a></h3>",
+      "<h3><a href=\"/pt-br/topicos/rust-open-source/index.html\">Rust &amp; Código aberto</a></h3>"
+    ],
+    [
+      "<h3><a href=\"/fr/topics/blockchain-digital-assets/[^\"]+\">Blockchain &amp; Digital Assets</a></h3>",
+      "<h3><a href=\"/pt-br/topicos/blockchain-digital-assets/index.html\">Blockchain &amp; Ativos digitais</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Lattice-based cryptography, NIST PQC standards, quantum-safe payments,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Criptografia baseada em reticulados, padrões NIST PQC, pagamentos resistentes ao quântico e a ameaça «colher agora, decifrar depois». Notas de pesquisa, bibliotecas de código aberto e manuais de migração para as equipes de segurança dos serviços financeiros.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Cross-border message migration, structured-address compliance,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Migração das mensagens transfronteiriças, conformidade de endereços estruturados, SEPA Instant, SWIFT gpi e os trilhos de pagamentos de atacado que sustentam tudo. Ferramentas, manuais e calendário regulatório.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Generative AI, multimodal LLMs, voice, and speech models[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">IA generativa, LLMs multimodais, voz e modelos de fala — e como estão redesenhando as operações bancárias, o atendimento ao cliente e a engenharia de produto nas instituições de primeira linha.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Open-source Rust libraries I author and maintain:[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Bibliotecas Rust de código aberto que escrevo e mantenho: logs, geração de código, data e hora, primitivas criptográficas, KEM baseado em Kyber e um gerador de sites estáticos em Rust.</p>"
+    ],
+    [
+      "<p class=\"newsroom-excerpt\">Bitcoin, blockchain fundamentals, ERC-20 tokens, stablecoins,[^<]+</p>",
+      "<p class=\"newsroom-excerpt\">Bitcoin, fundamentos de blockchain, tokens ERC-20, stablecoins e o arcabouço regulatório em torno dos trilhos de pagamentos lastreados em ativos digitais.</p>"
+    ],
+    [
+      "(\\d+) article\\(s\\)</p>",
+      "\\1 artigo(s)</p>"
+    ],
+    [
+      "INDUSTRY WHITE PAPER · EPAA",
+      "WHITE PAPER SETORIAL · EPAA"
+    ],
+    [
+      "INDUSTRY WHITE PAPER",
+      "WHITE PAPER SETORIAL"
+    ],
+    [
+      "PUBLICATION · WHITE PAPER",
+      "PUBLICAÇÃO · WHITE PAPER"
+    ],
+    [
+      ">RESEARCH NOTES</p>",
+      ">NOTAS DE PESQUISA</p>"
+    ],
+    [
+      ">RESEARCH NOTE · QUANTUM<",
+      ">NOTA DE PESQUISA · QUÂNTICO<"
+    ],
+    [
+      ">RESEARCH · CRYPTOGRAPHY<",
+      ">PESQUISA · CRIPTOGRAFIA<"
+    ],
+    [
+      ">RESEARCH · AI<",
+      ">PESQUISA · IA<"
+    ],
+    [
+      ">RESEARCH · QUANTUM FINANCE<",
+      ">PESQUISA · FINANÇAS QUÂNTICAS<"
+    ],
+    [
+      ">RESEARCH · QUANTUM BANKING<",
+      ">PESQUISA · BANCO QUÂNTICO<"
+    ],
+    [
+      "WHITE PAPER",
+      "WHITE PAPER"
+    ],
+    [
+      ">Read the white paper</a>",
+      ">Ler o white paper</a>"
+    ],
+    [
+      "title=\"Read the white paper \\(PDF\\)\"",
+      "title=\"Ler o white paper (PDF)\""
+    ],
+    [
+      ">About EPAA</a>",
+      ">Sobre a EPAA</a>"
+    ],
+    [
+      "title=\"Visit the Emerging Payments Association Asia\"",
+      "title=\"Visitar a Emerging Payments Association Asia\""
+    ],
+    [
+      ">Buy &middot; \\$([0-9]+)\\.([0-9]+)</a>",
+      ">Comprar &middot; US$ \\1,\\2</a>"
+    ],
+    [
+      "title=\"Buy the publication on PayPal\"",
+      "title=\"Comprar a publicação no PayPal\""
+    ],
+    [
+      ">Read the article</a>",
+      ">Ler o artigo</a>"
+    ],
+    [
+      " · Free download",
+      " · Download gratuito"
+    ],
+    [
+      "Free download<",
+      "Download gratuito<"
+    ],
+    [
+      ">Download<",
+      ">Baixar<"
+    ],
+    [
+      ">Request access<",
+      ">Solicitar acesso<"
+    ],
+    [
+      ">English · PDF",
+      ">Português · PDF"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-01-(\\d{2})\">January \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-01-\\2\">\\2 de janeiro de \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-02-(\\d{2})\">February \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-02-\\2\">\\2 de fevereiro de \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-03-(\\d{2})\">March \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-03-\\2\">\\2 de março de \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-04-(\\d{2})\">April \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-04-\\2\">\\2 de abril de \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-05-(\\d{2})\">May \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-05-\\2\">\\2 de maio de \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-06-(\\d{2})\">June \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-06-\\2\">\\2 de junho de \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-07-(\\d{2})\">July \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-07-\\2\">\\2 de julho de \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-08-(\\d{2})\">August \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-08-\\2\">\\2 de agosto de \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-09-(\\d{2})\">September \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-09-\\2\">\\2 de setembro de \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-09-01\">September \\d{4}</time>",
+      "<time datetime=\"\\1-09-01\">Setembro de \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-10-(\\d{2})\">October \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-10-\\2\">\\2 de outubro de \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-11-(\\d{2})\">November \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-11-\\2\">\\2 de novembro de \\1</time>"
+    ],
+    [
+      "<time datetime=\"(\\d{4})-12-(\\d{2})\">December \\d+, \\d{4}</time>",
+      "<time datetime=\"\\1-12-\\2\">\\2 de dezembro de \\1</time>"
+    ],
+    [
+      ">A system for real-time speech-to-text transcription that leverages OpenAI Whisper and Metal Performance Shaders GPU acceleration on macOS to achieve sub-second latency at 8-12x real-time on M1 Max\\.<",
+      ">Um sistema de transcrição de voz para texto em tempo real que utiliza OpenAI Whisper e a aceleração GPU Metal Performance Shaders no macOS para alcançar latência abaixo de um segundo, 8-12× o tempo real no M1 Max.<"
+    ],
+    [
+      ">A new paper suggests Shor\\'s algorithm could run on as few as 10,000 qubits\\. The threshold for cryptographically relevant quantum computing is dropping fast\\.<",
+      ">Um novo artigo sugere que o algoritmo de Shor pode rodar com apenas 10.000 qubits. O limiar da computação quântica criptograficamente relevante está caindo rapidamente.<"
+    ],
+    [
+      ">A bug in Yilei Chen's quantum algorithm for solving LWE has been found, temporarily securing lattice-based cryptography and highlighting the need for ongoing research\\.<",
+      ">Foi descoberta uma falha no algoritmo quântico de Yilei Chen para resolver o LWE, protegendo temporariamente a criptografia baseada em reticulados e destacando a necessidade de pesquisa contínua.<"
+    ],
+    [
+      ">New quantum algorithm solves a key cryptographic problem, urging accelerated research into quantum-safe security\\.<",
+      ">Um novo algoritmo quântico resolve um problema criptográfico chave, urgindo a aceleração da pesquisa em segurança resistente ao quântico.<"
+    ],
+    [
+      ">How Fully Homomorphic Encryption revolutionises data security in banking and financial services, preserving privacy against quantum-era threats\\.<",
+      ">Como a criptografia totalmente homomórfica revoluciona a segurança dos dados nos serviços bancários e financeiros, preservando a privacidade frente às ameaças da era quântica.<"
+    ],
+    [
+      ">An analysis of Apple's MM1 paper on Multimodal Large Language Models — architecture, pre-training strategies and emerging capabilities\\.<",
+      ">Uma análise do artigo MM1 da Apple sobre grandes modelos de linguagem multimodais — arquitetura, estratégias de pré-treinamento e capacidades emergentes.<"
+    ],
+    [
+      ">How IBM Qiskit and the Quantum Fourier Transform reshape credit ratio analysis in finance, offering unprecedented accuracy and speed\\.<",
+      ">Como o IBM Qiskit e a Transformada Quântica de Fourier redesenham a análise de índices de crédito em finanças, oferecendo precisão e velocidade sem precedentes.<"
+    ],
+    [
+      ">The transformative role of AI inside quantum algorithms for finance, focusing on their mathematical structure and banking applications\\.<",
+      ">O papel transformador da IA dentro dos algoritmos quânticos em finanças, com foco em sua estrutura matemática e aplicações bancárias.<"
+    ],
+    [
+      ">As quantum computers threaten traditional encryption, Quantum Key Distribution \\(QKD\\) emerges as a structural answer for financial-grade security\\.<",
+      ">À medida que os computadores quânticos ameaçam a criptografia tradicional, a Distribuição Quântica de Chaves (QKD) emerge como uma resposta estrutural para a segurança de grau financeiro.<"
+    ],
+    [
+      ">How CRYSTALS-Kyber, the NIST-selected quantum-resistant key-encapsulation mechanism, is reshaping cryptography for the quantum era\\.<",
+      ">Como o CRYSTALS-Kyber, o mecanismo de encapsulação de chaves resistente ao quântico selecionado pelo NIST, está redesenhando a criptografia para a era quântica.<"
+    ],
+    [
+      ">What kind of research and papers do you publish\\?</summary>",
+      ">Que tipo de pesquisas e publicações você publica?</summary>"
+    ],
+    [
+      "(<summary[^>]*>Que tipo de pesquisas e publicações você publica\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Convivem dois eixos. Os <strong>white papers setoriais</strong>, produzidos para organizações como a Emerging Payments Association Asia (EPAA), examinam as transformações estruturais das infraestruturas de pagamento — recentemente o impacto da computação quântica criptograficamente relevante sobre os trilhos de liquidação de atacado e em tempo real. Os <strong>relatórios de pesquisa aplicada</strong> abordam temas técnicos concretos (por exemplo: reconhecimento de voz em tempo real com Whisper + Metal Performance Shaders no Apple Silicon) e são publicados como PDFs de compra individual.</p></section>"
+    ],
+    [
+      ">How often do you release new papers\\?</summary>",
+      ">Com que frequência você publica novos artigos?</summary>"
+    ],
+    [
+      "(<summary[^>]*>Com que frequência você publica novos artigos\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Irregularmente, por preferência pela qualidade em vez da cadência. As notas breves de pesquisa aparecem a cada poucas semanas quando um avanço técnico justifica. Os white papers são publicados em sintonia com os ciclos setoriais (por exemplo: calendários regulatórios, congressos da EPAA).</p></section>"
+    ],
+    [
+      ">About EPAA</p>",
+      ">Sobre a EPAA</p>"
+    ],
+    [
+      "<p[^>]*class=\\\"book-about\\\"[^>]*>The Emerging Payments Association Asia[^<]+",
+      "<p class=\"book-about\">A <strong>Emerging Payments Association Asia (EPAA)</strong> é a associação profissional do setor de pagamentos na região Ásia-Pacífico, reunindo bancos, processadoras, fintechs e reguladores em torno das questões estruturais transversais ao setor."
+    ],
+    [
+      ">Quantum-Safe Payments: Why the Payments Industry Must Act Now<",
+      ">Pagamentos resistentes ao quântico: por que o setor deve agir agora<"
+    ],
+    [
+      ">Accelerating Real-Time Speech Recognition with OpenAI Whisper and Metal Performance Shaders on macOS<",
+      ">Acelerar o reconhecimento de voz em tempo real com OpenAI Whisper e Metal Performance Shaders no macOS<"
+    ],
+    [
+      ">Recent research and analysis<",
+      ">Pesquisas e análises recentes<"
+    ],
+    [
+      "September 2025 &middot; Emerging Payments Association Asia \\(EPAA\\)",
+      "Setembro de 2025 &middot; Emerging Payments Association Asia (EPAA)"
+    ],
+    [
+      ">Quantum computing threatens the cryptographic foundations[^<]+",
+      ">A computação quântica ameaça os alicerces criptográficos dos serviços financeiros. Os pagamentos — do tempo real à liquidação transfronteiriça — dependem de proteções que a computação quântica acabará tornando obsoletas. Este white paper da EPAA expõe por que o setor deve agir agora."
+    ],
+    [
+      "2024 &middot; Independent Research &middot;",
+      "2024 &middot; Pesquisa independente &middot;"
+    ],
+    [
+      ">This independent research paper presents[^<]+",
+      ">Este relatório de pesquisa independente apresenta uma otimização do reconhecimento de voz em tempo real no macOS com OpenAI Whisper e Metal Performance Shaders, demonstrando ganhos mensuráveis de latência e eficiência energética."
+    ],
+    [
+      ">License &amp; pricing<",
+      ">Licença e preço<"
+    ],
+    [
+      ">One copy per buyer<",
+      ">Um exemplar por comprador<"
+    ],
+    [
+      ">Questions\\?\\s*<span class=\"qa-headline-soft\">Answers\\.</span>",
+      ">Perguntas?<span class=\"qa-headline-soft\"> Respostas.</span>"
+    ],
+    [
+      ">Questions\\? Answers\\.</h2>",
+      ">Perguntas? Respostas.</h2>"
+    ],
+    [
+      ">Questions\\? Answers\\.<",
+      ">Perguntas? Respostas.<"
+    ],
+    [
+      ">Are the white papers free to read\\?</summary>",
+      ">Os white papers são de leitura gratuita?</summary>"
+    ],
+    [
+      ">May I cite or quote from these papers\\?</summary>",
+      ">Posso citar estes documentos?</summary>"
+    ],
+    [
+      ">Who is the intended audience\\?</summary>",
+      ">A quem se destinam estas publicações?</summary>"
+    ],
+    [
+      ">Can I commission a paper or speak at an event\\?</summary>",
+      ">Posso encomendar um estudo ou convidá-lo para uma conferência?</summary>"
+    ],
+    [
+      ">How do I follow new publications\\?</summary>",
+      ">Como acompanhar as novas publicações?</summary>"
+    ],
+    [
+      ">Where can I follow new releases\\?</summary>",
+      ">Onde posso acompanhar as novas publicações?</summary>"
+    ],
+    [
+      "(<summary[^>]*>Os white papers são de leitura gratuita\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>O white paper da EPAA <em>Quantum-Safe Payments</em> está disponível para download público gratuito em <a href=\"https://emergingpaymentsasia.org/wp-content/uploads/2025/09/Quantum-Safe-Payments-Why-the-Payments-Industry-Must-Act-Now.pdf\" rel=\"external noopener\">emergingpaymentsasia.org</a>. O relatório de pesquisa independente sobre reconhecimento de voz em tempo real com OpenAI Whisper e Metal Performance Shaders é licenciado e disponível para compra individual por US$ 49,00 (inglês, PDF, ~95 KB). Um exemplar por comprador; downloads para uso pessoal apenas, não redistribuíveis.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Posso citar estes documentos\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Sim. Citações breves com atribuição são bem-vindas no escopo do fair use. Para as publicações da EPAA, cite a EPAA como editora junto com o grupo de trabalho, o ano e a URL do PDF. Para os relatórios de pesquisa independentes, cite assim: <em>Rousseau, S. (ano). Título. Autopublicação.</em> com a URL canônica. Para reproduzir uma figura ou um trecho extenso, <a href=\"/pt-br/contato/\">entre em contato</a> antes.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>A quem se destinam estas publicações\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Diretores de pagamentos, CISOs e arquitetos sêniores em bancos de primeira linha, bancos centrais, operadores de sistemas de pagamento e gestores de arranjos. A pesquisa aplicada é direcionada a engenheiros e líderes de produto que constroem sobre grandes modelos de linguagem, IA em dispositivo e criptografia resistente ao quântico. Cada artigo pressupõe conhecimento do domínio e omite os lembretes que um profissional em atividade já possui.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Posso encomendar um estudo ou convidá-lo para uma conferência\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Sim — caso a caso, com triagem prévia. Os trabalhos versam sobre pagamentos de atacado, migração para ISO 20022, criptografia pós-quântica para os serviços financeiros e IA aplicada ao setor bancário. As palestras em conferências setoriais, fóruns de bancos centrais e mesas-redondas regulatórias são avaliadas caso a caso. Utilize o <a href=\"/pt-br/contato/\">formulário de contato</a> indicando o tema, o público e o calendário.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Como acompanhar as novas publicações\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Os novos artigos e notas de pesquisa são anunciados com prioridade pelo <a href=\"/pt-br/rss.xml\">feed RSS</a> do site e pela newsletter <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>, que cobre criptografia pós-quântica, política de bancos centrais e o roadmap de migração dos principais arranjos de pagamento. Sem spam — apenas novidades.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Onde posso acompanhar as novas publicações\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Assine o <a href=\"/pt-br/rss.xml\">feed RSS</a> ou siga-me no <a href=\"https://www.linkedin.com/in/sebastienrousseau/\" rel=\"external noopener\">LinkedIn</a> para se manter informado sobre as novas publicações.</p></section>"
+    ],
+    [
+      ">Browse all projects<",
+      ">Ver todos os projetos<"
+    ],
+    [
+      ">Three areas of practice\\.\\s*<span",
+      ">Três áreas de prática. <span"
+    ],
+    [
+      ">One philosophy\\.</span>",
+      ">Uma filosofia.</span>"
+    ],
+    [
+      ">WHAT IS INSIDE<",
+      ">CONTEÚDO<"
+    ],
+    [
+      ">OPEN SOURCE FOR FINANCIAL SERVICES<",
+      ">CÓDIGO ABERTO PARA OS SERVIÇOS FINANCEIROS<"
+    ],
+    [
+      ">Payments and settlement\\.<",
+      ">Pagamentos e liquidação.<"
+    ],
+    [
+      ">Post-quantum cryptography\\.<",
+      ">Criptografia pós-quântica.<"
+    ],
+    [
+      ">Tooling and infrastructure\\.<",
+      ">Ferramentas e infraestrutura.<"
+    ],
+    [
+      ">Applied AI\\.<",
+      ">IA aplicada.<"
+    ],
+    [
+      ">Explore payments tools\\s+<",
+      ">Explorar as ferramentas de pagamento <"
+    ],
+    [
+      ">Explore quantum-safe libraries\\s+<",
+      ">Explorar as bibliotecas quantum-safe <"
+    ],
+    [
+      ">Explore developer tools\\s+<",
+      ">Explorar as ferramentas para desenvolvedores <"
+    ],
+    [
+      ">Explore PQC tools\\s+<",
+      ">Explorar as ferramentas PQC <"
+    ],
+    [
+      ">Explore AI tools\\s+<",
+      ">Explorar as ferramentas de IA <"
+    ],
+    [
+      ">Authored & maintained<",
+      ">Criados e mantidos<"
+    ],
+    [
+      ">Authored &amp; maintained<",
+      ">Criados e mantidos<"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">Código aberto para o futuro das finanças.<"
+    ],
+    [
+      "<p class=\"setup-card-body\">ISO 20022 <strong>pain\\.001</strong> and <strong>pacs\\.008</strong> toolkits[^<]*\\.[^<]*\\.</p>",
+      "<p class=\"setup-card-body\">Kits de ferramentas ISO 20022 <strong>pain.001</strong> e <strong>pacs.008</strong>, parsing de extratos bancários e bibliotecas Rust para a migração de mensagens transfronteiriças estruturadas. Projetados para SWIFT, SEPA e os arranjos de pagamentos em tempo real.</p>"
+    ],
+    [
+      "<p class=\"setup-card-body\">Rust implementations of <strong>CRYSTALS-Kyber</strong>[^<]*\\.[^<]*\\.</p>",
+      "<p class=\"setup-card-body\">Implementações Rust de <strong>CRYSTALS-Kyber</strong> (NIST FIPS&nbsp;203), primitivas de hash e blocos resistentes ao quântico. Uma proteção além da era RSA e curvas elípticas da autenticação financeira.</p>"
+    ],
+    [
+      "<p class=\"setup-card-body\">Open-source Rust libraries for serialisation[\\s\\S]+?shippable\\.</p>",
+      "<p class=\"setup-card-body\">Bibliotecas Rust de código aberto para serialização, logs, geração de código, data e hora. Além do <strong>Static Site Generator</strong> (SSG) que constrói este site e do ambiente de desenvolvimento que o torna entregável.</p>"
+    ],
+    [
+      ">ISO 20022 tooling for the global migration\\. Pain\\.001 file generation, pacs\\.008 cross-border credit transfers, and structured bank-statement parsing\\.<",
+      ">Ferramentas ISO 20022 para a migração global. Geração de arquivos Pain.001, transferências transfronteiriças pacs.008 e parsing estruturado de extratos bancários.<"
+    ],
+    [
+      ">Rust implementations of CRYSTALS-Kyber, hash and digest primitives, and quantum-resistant building blocks for financial-grade authentication\\.<",
+      ">Implementações Rust de CRYSTALS-Kyber, primitivas de hash e blocos resistentes ao quântico para a autenticação de grau financeiro.<"
+    ],
+    [
+      ">Applied artificial intelligence\\.<",
+      ">Inteligência artificial aplicada.<"
+    ],
+    [
+      ">Open-source AI projects applying speech recognition, natural language, and large language models to real-world finance and productivity problems\\.<",
+      ">Projetos de IA de código aberto que aplicam reconhecimento de voz, linguagem natural e grandes modelos de linguagem a problemas reais de finanças e produtividade.<"
+    ],
+    [
+      ">A Python library that automates ISO 20022 pain\\.001 payment file creation from CSV or SQLite\\. Built for the global migration to structured cross-border messages\\.<",
+      ">Uma biblioteca Python que automatiza a criação de arquivos de pagamento ISO 20022 pain.001 a partir de CSV ou SQLite. Projetada para a migração global para mensagens transfronteiriças estruturadas.<"
+    ],
+    [
+      ">Generate, validate, and deliver ISO 20022 pacs\\.008 payment messages for FI-to-FI customer credit transfers\\. JSON Schema \\+ XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking\\.<",
+      ">Gere, valide e entregue mensagens de pagamento ISO 20022 pacs.008 para transferências entre instituições financeiras. Validação JSON Schema + XSD, IBAN em 75 países, mascaramento de dados pessoais em conformidade com GDPR/PCI-DSS.<"
+    ],
+    [
+      ">A finance-grade Python toolkit that turns multi-format bank statements into structured data — for the realities of real-world statement files and the audit demands of regulated environments\\.<",
+      ">Um kit de ferramentas Python de qualidade financeira que converte extratos bancários multiformato em dados estruturados — para os arquivos de extrato do mundo real e as exigências de auditoria dos ambientes regulados.<"
+    ],
+    [
+      ">A Rust application for optimising cash allocation across complex fund structures using AI-driven forecasting\\. Aimed at treasury, fund accounting, and asset-allocation use cases inside banks and asset managers\\.<",
+      ">Uma aplicação Rust para otimizar a alocação de caixa em estruturas de fundos complexas mediante previsão baseada em IA. Pensada para casos de uso em tesouraria, contabilidade de fundos e alocação de ativos em bancos e gestoras.<"
+    ],
+    [
+      ">A Rust library for generating and manipulating QR-code images in multiple formats\\. Direct payment uses include EPC QR Codes for SEPA Credit Transfers, payment-link QR for merchant collection, and step-up authentication flows\\.<",
+      ">Uma biblioteca Rust para gerar e manipular códigos QR em múltiplos formatos. Usos diretos de pagamento: EPC QR Codes para transferências SEPA, QR de link de pagamento para cobrança do lojista e fluxos de autenticação step-up.<"
+    ],
+    [
+      ">A robust Rust implementation of CRYSTALS-Kyber, the NIST FIPS 203 standard for general-purpose post-quantum key encapsulation\\.<",
+      ">Uma implementação Rust robusta de CRYSTALS-Kyber, o padrão NIST FIPS 203 para encapsulação de chaves pós-quântica de uso geral.<"
+    ],
+    [
+      ">Secure hash and digest algorithms for password encryption and verification, designed with a quantum-resistant posture for the post-PQC era\\.<",
+      ">Algoritmos seguros de hash e digest para a criptografia e verificação de senhas, projetados com uma postura resistente ao quântico para a era pós-PQC.<"
+    ],
+    [
+      ">A fast, simple, and powerful cross-platform CLI for generating strong, unique, and random passwords backed by audited cryptographic primitives\\.<",
+      ">Uma CLI multiplataforma rápida, simples e poderosa para gerar senhas fortes, únicas e aleatórias, lastreada em primitivas criptográficas auditadas.<"
+    ],
+    [
+      ">An advanced voice assistant using OpenAI's GPT for natural interactions, PDF summaries, and efficient caching\\. Built for both personal and executive use\\.<",
+      ">Um assistente de voz avançado que utiliza o GPT da OpenAI para interações naturais, resumos de PDF e cache eficiente. Projetado tanto para uso pessoal quanto executivo.<"
+    ],
+    [
+      ">Convert audio to text in real-time using advanced AI speech recognition\\. Designed to unlock actionable insights from audio data and enhance customer and[^<]+",
+      ">Converta áudio em texto em tempo real com reconhecimento de voz por IA avançada. Projetado para extrair insights acionáveis dos dados de áudio e melhorar a experiência do cliente e operacional.<"
+    ],
+    [
+      ">Featured · Python · ISO 20022<",
+      ">Destaque · Python · ISO 20022<"
+    ],
+    [
+      ">Python · ISO 20022<",
+      ">Python · ISO 20022<"
+    ],
+    [
+      ">Python · Finance<",
+      ">Python · Finanças<"
+    ],
+    [
+      ">Rust · Treasury · AI<",
+      ">Rust · Tesouraria · IA<"
+    ],
+    [
+      ">Rust · Payments QR<",
+      ">Rust · QR de pagamentos<"
+    ],
+    [
+      ">Rust · Quantum<",
+      ">Rust · Quântico<"
+    ],
+    [
+      ">Rust · Security<",
+      ">Rust · Segurança<"
+    ],
+    [
+      ">AI · Voice<",
+      ">IA · Voz<"
+    ],
+    [
+      ">AI · Speech<",
+      ">IA · Voz<"
+    ],
+    [
+      ">PAYMENTS<",
+      ">PAGAMENTOS<"
+    ],
+    [
+      ">POST-QUANTUM CRYPTOGRAPHY<",
+      ">CRIPTOGRAFIA PÓS-QUÂNTICA<"
+    ],
+    [
+      ">AI AND VOICE<",
+      ">IA E VOZ<"
+    ],
+    [
+      ">DEVELOPER TOOLING<",
+      ">FERRAMENTAS PARA DESENVOLVEDORES<"
+    ],
+    [
+      ">OPEN-SOURCE RUST<",
+      ">RUST DE CÓDIGO ABERTO<"
+    ],
+    [
+      ">WEB AND DEVELOPER ENVIRONMENT<",
+      ">WEB E AMBIENTE DE DESENVOLVIMENTO<"
+    ],
+    [
+      ">Tooling\\.<",
+      ">Ferramentas.<"
+    ],
+    [
+      ">Rust libraries and tooling\\.</h2>",
+      ">Bibliotecas e ferramentas Rust.</h2>"
+    ],
+    [
+      "<p class=\"cat-lede\">Open-source Rust projects across serialisation, logging, code generation, math, and developer tooling — including the static site generator behind this site\\.</p>",
+      "<p class=\"cat-lede\">Projetos Rust de código aberto — serialização, logs, geração de código, matemática e ferramentas para desenvolvedores — incluindo o gerador de sites estáticos que impulsiona este site.</p>"
+    ],
+    [
+      ">Web, templates and environment\\.</h2>",
+      ">Web, templates e ambiente.</h2>"
+    ],
+    [
+      "<p class=\"cat-lede\">Starter templates, two industry-focused publications, a CSS framework, and the dotfiles that keep a development environment reproducible\\.</p>",
+      "<p class=\"cat-lede\">Templates iniciais, duas publicações setoriais, um framework CSS e os dotfiles que garantem um ambiente de desenvolvimento reproduzível.</p>"
+    ],
+    [
+      ">What licence are these projects released under\\?</summary>",
+      ">Sob qual licença esses projetos são publicados?</summary>"
+    ],
+    [
+      ">Are these projects production-ready\\?</summary>",
+      ">Esses projetos estão prontos para produção?</summary>"
+    ],
+    [
+      ">How can I contribute or report an issue\\?</summary>",
+      ">Como posso contribuir ou reportar um problema?</summary>"
+    ],
+    [
+      ">Can I use these libraries in a regulated banking environment\\?</summary>",
+      ">Posso usar essas bibliotecas em um ambiente bancário regulado?</summary>"
+    ],
+    [
+      ">Do you offer commercial support or consulting\\?</summary>",
+      ">Você oferece suporte comercial ou consultoria?</summary>"
+    ],
+    [
+      ">How do I follow new releases\\?</summary>",
+      ">Como acompanhar as novas publicações?</summary>"
+    ],
+    [
+      "(<summary[^>]*>Sob qual licença esses projetos são publicados\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Todos os projetos são publicados sob a licença <strong>Apache-2.0</strong>. O arquivo <code>LICENSE</code> na raiz de cada repositório é a fonte autoritativa.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Esses projetos estão prontos para produção\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Depende do projeto. As bibliotecas marcadas como <em>v1.x</em> estão estabilizadas e testadas sob carga; as pré-v1 são bases sólidas, mas podem evoluir. O README de cada repositório detalha o estado atual; se você precisa de uma garantia específica para uso em produção, <a href=\"/pt-br/contato/\">entre em contato</a>.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Como posso contribuir ou reportar um problema\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Cada projeto tem um repositório GitHub público em <a href=\"https://github.com/sebastienrousseau\" rel=\"external noopener\">github.com/sebastienrousseau</a>. Abra uma issue descrevendo o problema (um reprodutor mínimo é bem-vindo) ou um pull request vinculado a uma issue. As contribuições regem-se pelo <em>Developer Certificate of Origin</em> e exigem commits assinados.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Posso usar essas bibliotecas em um ambiente bancário regulado\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Sim, com as precauções habituais. As bibliotecas são trabalhos de código aberto independentes, não um produto regulado. Aplique seus processos habituais de supply chain, segurança e revisão de dependências — vendoring via seu mirror interno, scan de SBOM, fixação por Git SHA ou impressão digital criptográfica — antes de qualquer implantação em produção sobre infraestrutura de pagamentos.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Você oferece suporte comercial ou consultoria\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Sim, com triagem prévia. Os trabalhos versam sobre migração para ISO&nbsp;20022, roadmaps de migração pós-quântica e IA aplicada aos serviços financeiros. <a href=\"/pt-br/contato/\">Entre em contato</a> com um briefing breve, seu calendário e as restrições aplicáveis.</p></section>"
+    ],
+    [
+      "(<summary[^>]*>Como acompanhar as novas publicações\\?</summary>)\\s*<section class=\"qa-a\">[\\s\\S]*?</section>",
+      "\\1<section class=\"qa-a\"><p>Cada artigo datado do site é anunciado pelo <a href=\"/pt-br/rss.xml\">feed RSS</a> e pela newsletter <a href=\"https://news.bankingonquantum.com\" rel=\"external noopener\">Banking On Quantum</a>. Os repositórios individuais também publicam releases no GitHub que você pode acompanhar diretamente.</p></section>"
+    ],
+    [
+      ">GET IN TOUCH<",
+      ">ENTRAR EM CONTATO<"
+    ],
+    [
+      ">Have an idea\\? Let's build it\\.<",
+      ">Tem uma ideia? Vamos construí-la juntos.<"
+    ],
+    [
+      ">Open-source collaboration, commissioned engineering, or a conversation about the future of payments\\. Whichever fits\\.<",
+      ">Colaboração em código aberto, engenharia sob encomenda ou uma conversa sobre o futuro dos pagamentos. O que melhor lhe convier.<"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">FEATURED</p>",
+      "<p class=\"newsroom-kicker\">DESTAQUE</p>"
+    ],
+    [
+      ">Latest Music</h2>",
+      ">Música recente</h2>"
+    ],
+    [
+      ">Latest playlist</h2>",
+      ">Playlist recente</h2>"
+    ],
+    [
+      ">Soulful, jazz and downtempo</h2>",
+      ">Soulful, jazz e downtempo</h2>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">MORNING & MOOD</p>",
+      "<p class=\"newsroom-kicker\">MANHÃ & CLIMA</p>"
+    ],
+    [
+      ">Morning, mood and chill</h2>",
+      ">Manhã, clima e chill</h2>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">ELECTRONIC</p>",
+      "<p class=\"newsroom-kicker\">ELETRÔNICA</p>"
+    ],
+    [
+      ">Electronic, house and techno</h2>",
+      ">Eletrônica, house e techno</h2>"
+    ],
+    [
+      ">Pop, rock and alternative</h2>",
+      ">Pop, rock e alternativo</h2>"
+    ],
+    [
+      "<p class=\"newsroom-kicker\">FOCUS</p>",
+      "<p class=\"newsroom-kicker\">FOCO</p>"
+    ],
+    [
+      ">Focus and productivity</h2>",
+      ">Foco e produtividade</h2>"
+    ],
+    [
+      ">Smooth Jazz, Neo Soul, and laid-back grooves[^<]+",
+      ">Smooth Jazz, Neo Soul e grooves relaxados. Playlists para quando o dia pede para diminuir o ritmo."
+    ],
+    [
+      ">This page has a comprehensive list[^<]+",
+      ">Esta página apresenta uma seleção das playlists do Spotify mais populares e aclamadas pela crítica, abrangendo um amplo leque de gêneros. Seja você fã de jazz, soul, hip-hop ou música eletrônica, encontrará uma playlist a seu gosto."
+    ],
+    [
+      ">Step into the harmonious realm of TETRA\\.[^<]+",
+      ">Entre no reino harmonioso de TETRA. Uma playlist eufórica concebida para elevar seu humor e encher sua alma de alegria."
+    ],
+    [
+      ">Unwind and embrace the essence of summer with this curated selection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
+      ">Relaxe e abrace a essência do verão com esta seleção de Jazz, Soul, R&amp;B e Neo Soul."
+    ],
+    [
+      ">A deep dive into the quintessential collection of Jazz, Soul, R(?:&amp;|&)B and Neo Soul beats\\.",
+      ">Um mergulho profundo na coleção quintessencial de Jazz, Soul, R&amp;B e Neo Soul."
+    ],
+    [
+      ">Take a break from a busy day and relax with soothing nu jazz and downtempo beats\\.",
+      ">Faça uma pausa em um dia agitado e relaxe com nu jazz e downtempo apaziguadores."
+    ],
+    [
+      ">Soulful tracks with a fashion-forward vibe\\. Music to set the tone for a productive and stylish day\\.",
+      ">Faixas soul com vibe vanguardista. A música ideal para dar o tom de um dia produtivo e estiloso."
+    ],
+    [
+      ">Celebrate the joy of life and dive into a world of vivid emotions, vibrant hues and soulful rhythms\\.",
+      ">Celebre a alegria de viver e mergulhe em um mundo de emoções vívidas, cores vibrantes e ritmos soul."
+    ],
+    [
+      ">Laid-back beats, house-influenced grooves and new deep house tracks\\.",
+      ">Beats relaxados, grooves de influência house e novas joias do deep house."
+    ],
+    [
+      ">Seamlessly blending funky disco, house, French touch and other genres into an ultra-cool and energetic musical experience\\.",
+      ">Uma mistura fluida de disco funky, house, French touch e outros gêneros para uma experiência musical ultra-cool e enérgica."
+    ],
+    [
+      ">A sonic voyage featuring Nu-Disco, French House, Electro and Disco House tunes from artists like Madeon and Fred Falke\\.",
+      ">Uma viagem sonora com Nu-Disco, French House, Electro e Disco House de artistas como Madeon e Fred Falke."
+    ],
+    [
+      ">Laid-back beats, hip-hop-influenced grooves and new indie pop tracks\\.",
+      ">Beats relaxados, grooves de influência hip-hop e novas faixas indie pop."
+    ],
+    [
+      ">Original Hip Hop, Rap and R(?:&amp;|&)B Flavor Sessions\\.",
+      ">Sessões originais com sabor Hip Hop, Rap e R&amp;B."
+    ],
+    [
+      ">Brace yourself for hardcore rap and hip hop tracks\\.",
+      ">Prepare-se para rap e hip hop hardcore."
+    ],
+    [
+      ">A few of the favourite hip-hop gems\\.",
+      ">Algumas das joias favoritas do hip-hop."
+    ],
+    [
+      ">Soulful beats and thoughtful lyrics\\. A captivating look into the world of contemporary hip hop, R(?:&amp;|&)B and rap\\.",
+      ">Beats soul e letras reflexivas. Um olhar cativante sobre o hip hop, R&amp;B e rap contemporâneos."
+    ],
+    [
+      ">Laid-back vibes and mellow rhythms with this stunning playlist of Lo-Fi Hip Hop beats\\.",
+      ">Vibes relaxados e ritmos suaves nesta esplêndida playlist de Lo-Fi Hip Hop."
+    ],
+    [
+      ">Celebrate the diverse heritage of African music\\. From the soulful rhythms of Wassoulou to the lively beats of Londonko\\.",
+      ">Celebre a rica diversidade da música africana. Dos ritmos soul do Wassoulou aos beats vivos do Londonko."
+    ],
+    [
+      "aria-label=\"Tag: ([^,]+), (\\d+) Posts\"",
+      "aria-label=\"Etiqueta: \\1, \\2 artigos\""
+    ],
+    [
+      "(\\(\\d+) Posts\\)",
+      "\\1 artigos)"
+    ],
+    [
+      ">Featured Tags \\((\\d+)\\)</h2>",
+      ">Etiquetas em destaque (\\1)</h2>"
+    ],
+    [
+      ">Featured Tags<",
+      ">Etiquetas em destaque<"
+    ],
+    [
+      "<a class=\"pill ghost\" href=\"/fr/contact/\">Get in touch</a>",
+      "<a class=\"pill ghost\" href=\"/pt-br/contato/\">Entrar em contato</a>"
+    ],
+    [
+      ">Get in touch</a>",
+      ">Entrar em contato</a>"
+    ],
+    [
+      "Made with Static Site Generator: Rust-Powered SSG",
+      "Feito com Static Site Generator: SSG impulsionado por Rust"
+    ],
+    [
+      "Static Site Generator is a Rust-based static site generator built for performance, accessibility and SEO\\. Lightning-fast builds with first-class JSON-LD\\.",
+      "O Static Site Generator é um gerador de sites estáticos em Rust projetado para desempenho, acessibilidade e SEO. Builds ultrarrápidos com suporte nativo a JSON-LD."
+    ],
+    [
+      "Website created with Static Site Generator \\(SSG\\)",
+      "Site criado com Static Site Generator (SSG)"
+    ],
+    [
+      "The Static Site Generator \\(SSG\\) is a lightning-fast tool for Search Engine Optimisation \\(SEO\\) and compliance to Accessibility Standards\\.",
+      "O Static Site Generator (SSG) é uma ferramenta ultrarrápida para SEO e conformidade com os padrões de acessibilidade."
+    ],
+    [
+      "Topics &amp; Tags Index: AI, Payments, Quantum, Rust OSS",
+      "Índice de tópicos e etiquetas: IA, pagamentos, quântico, Rust OSS"
+    ],
+    [
+      "Browse Sebastien Rousseau's site by topic and tag: AI, payments, ISO 20022, post-quantum cryptography, Rust open source, and more\\.",
+      "Navegue pelo site de Sebastien Rousseau por tema e etiqueta: IA, pagamentos, ISO 20022, criptografia pós-quântica, Rust de código aberto e muito mais."
+    ],
+    [
+      "Website Accessibility Statement — Standards &amp; Contact",
+      "Declaração de acessibilidade do site — padrões e contato"
+    ],
+    [
+      "This statement explains the accessibility of our website, what we are doing to address it, and how to contact us about web accessibility\\.",
+      "Esta declaração explica a acessibilidade do nosso site, o que fazemos para melhorá-la e como entrar em contato a respeito."
+    ],
+    [
+      "Privacy Statement — How Your Data Is Collected &amp; Used",
+      "Política de privacidade — como seus dados são coletados e usados"
+    ],
+    [
+      "This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Website",
+      "Esta página informa nossas políticas sobre a coleta, o uso e a divulgação de dados pessoais quando você utiliza o nosso Site"
+    ],
+    [
+      "Let's Start a Conversation That Will Make a Real Difference",
+      "Vamos iniciar uma conversa que faça diferença real"
+    ],
+    [
+      "Have a question or comment\\? Please contact me using the form below\\. I am always happy to hear from you and will respond as soon as possible\\.",
+      "Tem uma pergunta ou comentário? Entre em contato pelo formulário abaixo. Sempre fico feliz em receber notícias suas e responderei o mais breve possível."
+    ],
+    [
+      "Website Terms &amp; Conditions of Use — Sebastien Rousseau",
+      "Termos de uso do site — Sebastien Rousseau"
+    ],
+    [
+      "By accessing this website, you acknowledge and agree to be bound by these Terms and Conditions of Use and all applicable laws and regulations\\.",
+      "Ao acessar este site, você reconhece e concorda em ficar vinculado a estes Termos de uso e a todas as leis e regulamentos aplicáveis."
+    ],
+    [
+      ">Latest research<",
+      ">Pesquisas recentes<"
+    ],
+    [
+      ">Read latest research<",
+      ">Ler as pesquisas recentes<"
+    ],
+    [
+      ">Featured articles<",
+      ">Artigos em destaque<"
+    ],
+    [
+      ">All articles<",
+      ">Todos os artigos<"
+    ],
+    [
+      ">Read more<",
+      ">Ler mais<"
+    ],
+    [
+      ">Read full article<",
+      ">Ler o artigo completo<"
+    ],
+    [
+      ">Newest first<",
+      ">Mais recentes primeiro<"
+    ],
+    [
+      ">Oldest first<",
+      ">Mais antigos primeiro<"
+    ],
+    [
+      ">By topic<",
+      ">Por tópico<"
+    ],
+    [
+      ">All topics<",
+      ">Todos os tópicos<"
+    ],
+    [
+      ">By tag<",
+      ">Por etiqueta<"
+    ],
+    [
+      ">All tags<",
+      ">Todas as etiquetas<"
+    ],
+    [
+      ">Published<",
+      ">Publicado<"
+    ],
+    [
+      ">Updated<",
+      ">Atualizado<"
+    ],
+    [
+      ">Open source<",
+      ">Código aberto<"
+    ],
+    [
+      ">Authored & maintained<",
+      ">Criados e mantidos<"
+    ],
+    [
+      ">Open source for the future of finance\\.<",
+      ">Código aberto para o futuro das finanças.<"
+    ],
+    [
+      ">A portfolio of",
+      ">Um portfólio de"
+    ],
+    [
+      ">Start a conversation<",
+      ">Iniciar uma conversa<"
+    ],
+    [
+      ">Drop me a line<",
+      ">Escreva-me<"
+    ],
+    [
+      ">Learn more<",
+      ">Saiba mais<"
+    ],
+    [
+      ">Subscribe<",
+      ">Assinar<"
+    ],
+    [
+      ">Follow<",
+      ">Seguir<"
+    ],
+    [
+      ">Latest<",
+      ">Recente<"
+    ],
+    [
+      "<h1>White Papers (?:&amp;|&) Research</h1>",
+      "<h1>White papers e pesquisa</h1>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/post-quantum-cryptography/[^\"]*\">Post-Quantum Cryptography</a></h3>",
+      "<h3><a href=\"/pt-br/topicos/post-quantum-cryptography/index.html\">Criptografia pós-quântica</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/iso-20022-payments/[^\"]*\">ISO 20022 &amp; Payments</a></h3>",
+      "<h3><a href=\"/pt-br/topicos/iso-20022-payments/index.html\">ISO 20022 &amp; Pagamentos</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/applied-ai-banking/[^\"]*\">Applied AI in Banking</a></h3>",
+      "<h3><a href=\"/pt-br/topicos/applied-ai-banking/index.html\">IA aplicada ao setor bancário</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/rust-open-source/[^\"]*\">Rust &amp; Open Source</a></h3>",
+      "<h3><a href=\"/pt-br/topicos/rust-open-source/index.html\">Rust de código aberto</a></h3>"
+    ],
+    [
+      "<h3><a href=\"[^\"]+/blockchain-digital-assets/[^\"]*\">Blockchain &amp; Digital Assets</a></h3>",
+      "<h3><a href=\"/pt-br/topicos/blockchain-digital-assets/index.html\">Blockchain &amp; ativos digitais</a></h3>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">Tracks to kick off the day or shift the room\\. Fashion\\-forward soul, vivid colour, and laid\\-back energy\\.</p>",
+      "<p class=\"newsroom-lede\">Faixas para começar o dia ou mudar o ambiente. Soul vanguardista, cores vivas e energia relaxada.</p>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">Funky disco, French touch and electro\\. Energetic listening for movement, focus or the dance floor\\.</p>",
+      "<p class=\"newsroom-lede\">Disco funky, French touch e electro. Uma escuta enérgica para o movimento, a concentração ou a pista de dança.</p>"
+    ],
+    [
+      "<p class=\"newsroom-lede\">From original Hip Hop sessions to hardcore rap, contemporary R&B and Lo\\-Fi\\. The full breadth of beats\\.</p>",
+      "<p class=\"newsroom-lede\">Das sessões originais de Hip Hop ao rap hardcore, passando pelo R&B contemporâneo e o Lo-Fi. Toda a amplitude dos beats.</p>"
+    ]
+  ]
+}
