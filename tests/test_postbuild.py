@@ -103,6 +103,51 @@ def test_patch_block_rewrites_meta_path_on_any_host():
 
 
 # ---------------------------------------------------------------------------
+# llms.txt + robots.txt + json-feed writers
+# ---------------------------------------------------------------------------
+
+
+def test_build_llms_txt_includes_canonical_sections():
+    """llms.txt must contain H1, summary, and the seven canonical entries."""
+    from postbuild_lib.output import build_llms_txt
+    text = build_llms_txt()
+    assert text.startswith("# Sebastien Rousseau")
+    for section in ("Canonical entry points", "Feeds", "Areas of expertise", "Contact"):
+        assert f"## {section}" in text
+    for entry in ("Home", "About", "Articles", "Papers", "Projects", "Topics", "Contact"):
+        assert f"[{entry}](https://sebastienrousseau.com/" in text
+
+
+def test_write_llms_txt_skips_when_unchanged(tmp_path):
+    """No-op when the target already has the current content."""
+    from postbuild_lib.output import build_llms_txt, write_llms_txt
+    (tmp_path / "llms.txt").write_text(build_llms_txt(), encoding="utf-8")
+    assert write_llms_txt(tmp_path) is False
+
+
+def test_write_llms_txt_writes_when_changed(tmp_path):
+    """Writes when the target is missing or stale."""
+    from postbuild_lib.output import write_llms_txt
+    assert write_llms_txt(tmp_path) is True
+    assert (tmp_path / "llms.txt").is_file()
+
+
+def test_write_robots_emits_sitemap_lines(tmp_path):
+    from postbuild_lib.output import write_robots
+    write_robots(tmp_path)
+    text = (tmp_path / "robots.txt").read_text(encoding="utf-8")
+    assert "User-agent:" in text
+    assert "Sitemap: https://sebastienrousseau.com/sitemap.xml" in text
+
+
+def test_write_robots_idempotent(tmp_path):
+    """Second write with no content change returns False."""
+    from postbuild_lib.output import write_robots
+    assert write_robots(tmp_path) is True
+    assert write_robots(tmp_path) is False
+
+
+# ---------------------------------------------------------------------------
 # Stylesheet sanitizer — `_sanitize_link_tag` + `hoist_body_link_stylesheets`
 # ---------------------------------------------------------------------------
 
