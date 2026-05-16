@@ -103,6 +103,51 @@ def test_patch_block_rewrites_meta_path_on_any_host():
 
 
 # ---------------------------------------------------------------------------
+# Heading slug uniqueness — `inject_anchor_links_and_toc`
+# Guards the WCAG/AAA "Duplicate id attribute value" failure: non-ASCII
+# scripts (Arabic, Cyrillic, CJK) collapse multiple headings to the
+# same Latin fragment (e.g. "FHE", "2026"). Pa11y rejects duplicate ids.
+# ---------------------------------------------------------------------------
+
+
+def test_inject_anchor_dedupes_colliding_slugs():
+    """Two H2s that slugify to the same value get -2 suffix on the second."""
+    from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+    html = (
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        '<main><div class="wrap">'
+        '<h2>تأثير FHE على القطاع المصرفي</h2>'
+        '<h2>مستقبل FHE في القطاع المصرفي</h2>'
+        '</div></main>'
+    )
+    out = inject_anchor_links_and_toc(html)
+    import re as _re
+    ids = _re.findall(r'<h2 id="([^"]+)"', out)
+    assert len(ids) == 2
+    assert ids[0] != ids[1]
+    assert ids[0] == "fhe"
+    assert ids[1] == "fhe-2"
+
+
+def test_inject_anchor_empty_slug_gets_section_fallback():
+    """A heading that slugifies to '' (pure Arabic, no Latin) gets
+    a 'section-N' fallback so the id attribute is non-empty + unique."""
+    from postbuild_lib.article_furniture import inject_anchor_links_and_toc
+    html = (
+        '<script type="application/ld+json">{"@type":"BlogPosting"}</script>'
+        '<main><div class="wrap">'
+        '<h2>كل النص عربي</h2><h2>عربي آخر</h2>'
+        '</div></main>'
+    )
+    out = inject_anchor_links_and_toc(html)
+    import re as _re
+    ids = _re.findall(r'<h2 id="([^"]+)"', out)
+    assert len(ids) == 2
+    assert all(i for i in ids)  # non-empty
+    assert ids[0] != ids[1]     # unique
+
+
+# ---------------------------------------------------------------------------
 # Localhost URL scrub — `scrub_localhost_urls`
 # Guards the SEO/canonical regression: Shokunin bakes the dev-server URL
 # into <link rel="canonical"> and the Atom-feed alternate; if it ships,

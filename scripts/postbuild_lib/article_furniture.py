@@ -326,14 +326,30 @@ def inject_anchor_links_and_toc(html: str) -> str:
     pre, body, post = m.group(1), m.group(2), m.group(3)
     h2_titles: list[tuple[str, str]] = []
     labels = _labels(html)
+    # Track slugs already emitted on this page; append -2, -3… on
+    # collision. Non-ASCII scripts (Arabic, Cyrillic, CJK) often
+    # slugify to the same Latin fragment (e.g. "FHE", "2026") for
+    # multiple headings — without dedup, pa11y fails on duplicate ids.
+    seen: dict[str, int] = {}
+
+    def _unique(slug: str, idx: int) -> str:
+        if not slug:
+            slug = f"section-{idx}"
+        n = seen.get(slug, 0) + 1
+        seen[slug] = n
+        return slug if n == 1 else f"{slug}-{n}"
+
+    heading_idx = 0
 
     def patch_heading(hm: re.Match[str]) -> str:
+        nonlocal heading_idx
+        heading_idx += 1
         level = hm.group(1).lower()
         inner = hm.group(2)
         text = re.sub(r'<[^>]+>', '', inner).strip()
         if not text:
             return hm.group(0)
-        slug = slugify(text)
+        slug = _unique(slugify(text), heading_idx)
         if level == "h2":
             h2_titles.append((slug, text))
         return (
