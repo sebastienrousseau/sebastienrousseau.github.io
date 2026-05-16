@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-21-bankalar-icin-en-iyi-bulut-mimarisi-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>Bankalar için en iyi bulut altyapı mimarisi (2026)</news:title>
+    <news:keywords>bulut, mimari, bankacılık, 2026, altyapı, uyum, AWS, Azure, GCP</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-18-ajan-tabanli-muhendislik-bankalar-icin-2026-plani/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
+    <news:title>Ajan tabanlı mühendislik: bankalar için 2026 planı</news:title>
+    <news:keywords>ajan tabanlı yapay zeka, ajanlar, bankacılık, 2026, mimari, yönetişim, LLM</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-15-gizli-getiri-blackrock-brsrv-bstbl-genius-act-cozumlemesi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-15T06:06:06+00:00</news:publication_date>
+    <news:title>Gizli getiri: BlackRock&apos;un BRSRV / BSTBL ve GENIUS Act&apos;ı çözmek</news:title>
+    <news:keywords>BlackRock, BRSRV, BSTBL, stablecoin, GENIUS Act, tokenizasyon, para piyasası, regulating</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-14-defteri-guvene-almak-post-kuantum-gecis-kurumsal-finans/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-14T06:06:06+00:00</news:publication_date>
+    <news:title>Defteri güvene almak: kurumsal finans için post-kuantum geçişi</news:title>
+    <news:keywords>post-kuantum, kurumsal finans, hazine, kriptografi, geçiş, NIST PQC</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-12-iso-20022-pacs008-yapilandirilmis-adres-son-tarihi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-12T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 pacs.008: yapılandırılmış adres son tarihi yaklaşıyor</news:title>
+    <news:keywords>ISO 20022, pacs.008, SWIFT, CBPR+, yapılandırılmış adres, ödemeler, uyum</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-11-lucy-besson-bilgi-aktarimi-yapay-zeka-ve-kuantum/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-11T06:06:06+00:00</news:publication_date>
+    <news:title>Lucy Besson: yapay zeka ve kuantum bilgi aktarımı</news:title>
+    <news:keywords>yapay zeka, kuantum, bilgi aktarımı, Lucy Besson, araştırma, makine öğrenmesi</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2026-04-11-kuantum-esikleri-yeniden-hareket-ediyor/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2026-04-11T06:06:06+00:00</news:publication_date>
+    <news:title>Kuantum eşikleri yeniden hareket ediyor</news:title>
+    <news:keywords>kuantum, Shor, kübit, kriptografi, post-kuantum, araştırma</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2025-09-01-kuantum-guvenli-odemeler-epaa/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2025-09-01T06:06:06+00:00</news:publication_date>
+    <news:title>Kuantum güvenli ödemeler: ödeme sektörü neden şimdi harekete geçmeli (EPAA)</news:title>
+    <news:keywords>kuantum, ödemeler, EPAA, beyaz kitap, post-kuantum, kriptografi, bankacılık</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2024-04-22-kafes-tabanli-kripto-icin-kuantum-algoritmasinda-hata/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2024-04-22T06:06:06+00:00</news:publication_date>
+    <news:title>Kafes tabanlı kripto için kuantum algoritmasında hata</news:title>
+    <news:keywords>kuantum, kafes tabanlı, kriptografi, LWE, Yilei Chen, hata, post-kuantum</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2024-04-15-kuantum-algoritmasi-kafes-tabanli-kriptografiye-meydan-okuyor/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2024-04-15T06:06:06+00:00</news:publication_date>
+    <news:title>Kuantum algoritması kafes tabanlı kriptografiye meydan okuyor</news:title>
+    <news:keywords>kuantum, kafes tabanlı, kriptografi, LWE, post-kuantum, Yilei Chen, araştırma</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2024-04-01-openvoice-ses-klonlama-teknolojisinde-onculuk/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2024-04-01T06:06:06+00:00</news:publication_date>
+    <news:title>OpenVoice: ses klonlama teknolojisinde öncülük</news:title>
+    <news:keywords>OpenVoice, ses klonlama, yapay zeka, ses, TTS, açık kaynak</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2024-03-25-bankacilik-kuantum-caginda-tamamen-homomorfik-sifreleme/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-25T06:06:06+00:00</news:publication_date>
+    <news:title>Bankacılık kuantum çağında tamamen homomorfik şifreleme</news:title>
+    <news:keywords>FHE, homomorfik şifreleme, bankacılık, kuantum, gizlilik, kriptografi</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2024-03-18-cok-modlu-llm-ler-ile-yapay-zekayi-ilerletmek-mm1-dersleri/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-18T06:06:06+00:00</news:publication_date>
+    <news:title>Çok modlu LLM&apos;ler ile yapay zekayı ilerletmek: MM1 dersleri</news:title>
+    <news:keywords>MM1, çok modlu, LLM, Apple, üretken yapay zeka, araştırma</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2024-03-12-macos-ta-gercek-zamanli-konusma-tanima-whisper-ile-devrim/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-12T06:06:06+00:00</news:publication_date>
+    <news:title>macOS&apos;ta OpenAI Whisper ile gerçek zamanlı konuşma tanımada devrim</news:title>
+    <news:keywords>Whisper, OpenAI, konuşma tanıma, macOS, Metal Performance Shaders, Apple Silicon</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2024-03-08-rustlogs-rust-icin-gelismis-loglama-kutuphanesi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-08T06:06:06+00:00</news:publication_date>
+    <news:title>RustLogs: Rust uygulamaları için gelişmiş loglama kütüphanesi</news:title>
+    <news:keywords>RustLogs, Rust, loglama, observability, açık kaynak, üretim</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2024-03-04-mistral-ai-le-chat-konusma-tabanli-yapay-zekada-yeni-cag/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-04T06:06:06+00:00</news:publication_date>
+    <news:title>Mistral AI&apos;dan Le Chat: konuşma tabanlı yapay zekada yeni bir çağ</news:title>
+    <news:keywords>Le Chat, Mistral AI, konuşma tabanlı yapay zeka, LLM, Avrupa, açık kaynak</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2024-02-26-google-gemma-acik-kaynak-yapay-zeka-gelistirmeyi-donusturuyor/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-26T06:06:06+00:00</news:publication_date>
+    <news:title>Google Gemma: açık kaynak yapay zeka geliştirmeyi dönüştürmek</news:title>
+    <news:keywords>Gemma, Google, açık kaynak, yapay zeka, LLM, üretken yapay zeka</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2024-02-19-gemini-google-yapay-zeka-devrimi-aciklandi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-19T06:06:06+00:00</news:publication_date>
+    <news:title>Gemini&apos;ı açığa çıkarmak: Google&apos;ın yapay zeka devrimi açıklandı</news:title>
+    <news:keywords>Gemini, Google, yapay zeka, çok modlu, LLM, üretken yapay zeka</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2024-02-13-ab-yapay-zeka-yasasi-kuresel-duzenlemenin-gelecegi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-13T06:06:06+00:00</news:publication_date>
+    <news:title>AB Yapay Zeka Yasası: küresel yapay zeka düzenlemesinin geleceği</news:title>
+    <news:keywords>AB Yapay Zeka Yasası, düzenleme, yapay zeka, AB, uyum, yönetişim</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2024-02-12-akande-ses-asistani-kisisel-ve-yonetici-asistanlik-devrimi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
+    <news:title>Akande ses asistanı: kişisel ve yönetici asistanlığında devrim</news:title>
+    <news:keywords>Akande, ses asistanı, GPT, OpenAI, yapay zeka, üretkenlik</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2024-02-08-reklamcilikta-devrim-yapay-zeka-gelecegi-nasil-sekillendiriyor/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-08T06:06:06+00:00</news:publication_date>
+    <news:title>Reklamcılıkta devrim: yapay zeka geleceği nasıl şekillendiriyor</news:title>
+    <news:keywords>yapay zeka, reklam, dijital pazarlama, kişiselleştirme, üretken yapay zeka, programatik</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2024-01-29-yapay-zeka-destekli-ses-analizi-ceviri-ve-icgoruler/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
+    <news:title>Yapay zeka ile ses analizi, çeviriler ve içgörüler</news:title>
+    <news:keywords>yapay zeka, ses, konuşma tanıma, çeviri, içgörüler, analiz</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2024-01-23-yapay-zeka-prompt-muhendisliginde-ilerlemeler/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-23T06:06:06+00:00</news:publication_date>
+    <news:title>Yapay zeka prompt mühendisliğinde ilerlemeler</news:title>
+    <news:keywords>prompt mühendisliği, yapay zeka, LLM, üretken yapay zeka, en iyi uygulamalar</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2024-01-15-alien-studio-yapay-zeka-fotografciligi-ile-sanat-devrimi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-15T06:06:06+00:00</news:publication_date>
+    <news:title>Alien Studio: yapay zeka fotoğrafçılığıyla sanatta devrim</news:title>
+    <news:keywords>yapay zeka, sanat, fotoğrafçılık, üretken yapay zeka, Alien Studio, yaratıcılık</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2024-01-08-kredi-orani-analizini-ibm-qiskit-ve-kuantum-fourier-ile-optimize-etmek/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-08T06:06:06+00:00</news:publication_date>
+    <news:title>IBM Qiskit ve kuantum Fourier dönüşümü ile kredi oranı analizini optimize etmek</news:title>
+    <news:keywords>Qiskit, kuantum, Fourier, kredi, finansal risk, IBM, optimizasyon</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2024-01-01-yapay-zeka-trendleri-2024-icgoruler-ve-tahminler/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-01T06:06:06+00:00</news:publication_date>
+    <news:title>Yapay zeka trendleri 2024: gelecek için içgörüler ve tahminler</news:title>
+    <news:keywords>yapay zeka, trendler 2024, LLM, çok modlu, AI etmenleri, düzenleme</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2023-12-25-yapay-zeka-destekli-kuantum-algoritmalariyla-finansi-donusturmek/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2023-12-25T06:06:06+00:00</news:publication_date>
+    <news:title>Yapay zeka destekli kuantum algoritmalarıyla finansı dönüştürmek</news:title>
+    <news:keywords>kuantum, yapay zeka, finans, algoritmalar, optimizasyon, bankacılık</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2023-12-18-bankacilikta-yapay-zeka-ve-kuantum-2023-degerlendirmesi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2023-12-18T06:06:06+00:00</news:publication_date>
+    <news:title>Bankacılıkta yapay zeka ve kuantum bilişim: 2023 değerlendirmesi</news:title>
+    <news:keywords>yapay zeka, kuantum bilişim, bankacılık, finans, 2023, dönüşüm</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2023-12-11-kuantum-anahtar-dagitimi-bankacilik-guvenligi-devrimi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2023-12-11T06:06:06+00:00</news:publication_date>
+    <news:title>Kuantum anahtar dağıtımı: bankacılık güvenliğinde devrim</news:title>
+    <news:keywords>QKD, kuantum anahtar dağıtımı, bankacılık, güvenlik, kriptografi, finans</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2023-12-04-rust-ta-tarih-ve-zamana-hakim-olmak-dtt-kutuphanesi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2023-12-04T06:06:06+00:00</news:publication_date>
+    <news:title>DTT kütüphanesi ile Rust&apos;ta tarih ve zamana hâkim olmak</news:title>
+    <news:keywords>Rust, DTT, tarih, zaman, kütüphane, açık kaynak</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2023-11-28-kyberlib-kuantum-tehditlerine-karsi-rust-kalkani/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-28T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib: kuantum tehditlerine karşı Rust destekli kalkan</news:title>
+    <news:keywords>KyberLib, CRYSTALS-Kyber, post-kuantum, Rust, kriptografi, KEM, FIPS 203, açık kaynak</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2023-11-19-crystals-kyber-kuantum-cagi-icin-koruma-algoritmasi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-19T06:06:06+00:00</news:publication_date>
+    <news:title>CRYSTALS-Kyber: kuantum çağında koruma algoritması</news:title>
+    <news:keywords>CRYSTALS-Kyber, post-kuantum, kriptografi, NIST, FIPS 203, KEM, kafes tabanlı</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2023-11-12-uretken-yapay-zekayi-kesfetmek/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
+    <news:title>Üretken yapay zekayı keşfetmek</news:title>
+    <news:keywords>üretken yapay zeka, makine öğrenmesi, LLM, GAN, yayılma modelleri, üretken modeller</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2023-11-05-rust-icin-matematiksel-ve-kriptografik-sabitler/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-05T06:06:06+00:00</news:publication_date>
+    <news:title>Rust güvenliği için matematiksel ve kriptografik sabitler</news:title>
+    <news:keywords>Rust, cmn, kriptografi, matematik, sabitler, güvenlik, açık kaynak</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2023-10-26-libmake-rust-kutuphaneleri-icin-kod-uretici/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2023-10-26T06:06:06+00:00</news:publication_date>
+    <news:title>libmake: tekrarlayan görevleri azaltıp kaliteli Rust kütüphaneleri inşa eden kod üretici</news:title>
+    <news:keywords>Rust, libmake, kod üretici, açık kaynak, otomasyon, kütüphaneler</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2023-10-16-kuantum-caginda-veri-koruma-hash-kutuphanesi-hsh/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2023-10-16T06:06:06+00:00</news:publication_date>
+    <news:title>Kuantum çağında veri koruma: hash kütüphanesi hsh</news:title>
+    <news:keywords>Rust, hash, hsh, post-kuantum, kriptografi, parolalar, kimlik doğrulama, açık kaynak</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2023-10-09-shokunin-rust-tabanli-en-hizli-statik-site-jeneratoru/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2023-10-09T06:06:06+00:00</news:publication_date>
+    <news:title>Shokunin: Rust tabanlı en hızlı statik site jeneratörü</news:title>
+    <news:keywords>Shokunin, statik site jeneratörü, Rust, SSG, performans, SEO, açık kaynak</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2023-09-29-iso-20022-uyumlu-odeme-dosyalarini-pain001-ile-otomatiklestirme/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
+    <news:title>ISO 20022 uyumlu ödeme dosyalarını pain001 ile otomatikleştirme</news:title>
+    <news:keywords>ISO 20022, pain.001, Python, ödemeler, otomasyon, SEPA, SWIFT, açık kaynak</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2018-02-15-express-transaction-credits-platformunun-yapimi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
+    <news:title>Express Transaction Credits platformunun yapımı</news:title>
+    <news:keywords>anlık ödemeler, ödeme platformu, fintech, mimari, ölçeklenebilirlik, uyum</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2018-02-04-yeni-bir-kripto-para-ve-daha-hizli-odeme-cozumu/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
+    <news:title>Yeni bir kripto para ve daha hızlı bir ödeme çözümü tanıtımı</news:title>
+    <news:keywords>kripto para, ödemeler, blockchain, hızlı ödemeler, fintech, ölçeklenebilirlik</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2018-01-24-erc-20-token-standardi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-24T06:06:06+00:00</news:publication_date>
+    <news:title>ERC-20 token standardı</news:title>
+    <news:keywords>ERC-20, Ethereum, token, akıllı sözleşmeler, ICO, DeFi, Solidity</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2018-01-09-blockchain-arkasindaki-teknolojiyi-anlamak/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
+    <news:title>Blockchain&apos;in arkasındaki teknolojiyi anlamak</news:title>
+    <news:keywords>blockchain, kriptografi, hash, konsensüs, proof-of-work, proof-of-stake, dağıtık defter</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2018-01-02-blockchain-2018de-onemli-olan-teknoloji/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-02T06:06:06+00:00</news:publication_date>
+    <news:title>Blockchain: 2018&apos;de önemli olan teknoloji</news:title>
+    <news:keywords>blockchain, dağıtık defter, fintech, finansal hizmetler, tedarik zinciri, akıllı sözleşmeler, 2018</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2018-01-01-bitcoin-yilin-degerlendirmesi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-01T06:06:06+00:00</news:publication_date>
+    <news:title>Bitcoin: ilk kripto paranın yıllık değerlendirmesi</news:title>
+    <news:keywords>Bitcoin, kripto para, blockchain, P2P, çifte harcama, madencilik, proof-of-work, ETF, Satoshi Nakamoto, merkeziyetsiz finans</news:keywords>
+  </news:news>
+</url>
+</urlset>

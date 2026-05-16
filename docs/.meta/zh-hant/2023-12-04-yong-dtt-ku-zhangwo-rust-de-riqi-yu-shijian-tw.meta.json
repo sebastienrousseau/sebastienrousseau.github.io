@@ -1,11 +1,11 @@
 {
-  "banner_alt": "DateTime（DTT），日期與時間操作的必備工具集",
   "language": "zh-Hant",
-  "keywords": "DTT, DateTime, Rust, 日期時間, 時區, 解析, 驗證, 格式化, Cargo, 開源",
-  "description": "DateTime（DTT）是一個高精度的 Rust 日期與時間庫，簡化時區、解析、驗證與格式化等操作。",
   "subtitle": "DateTime（DTT）是一個用於解析、驗證、操作和格式化日期與時間的 Rust 庫——高精度、廣泛功能",
-  "banner": "https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg",
-  "title": "用 DTT 庫掌握 Rust 中的日期與時間",
   "date": "December 4, 2023",
-  "locale": "zh_TW"
+  "description": "DateTime（DTT）是一個高精度的 Rust 日期與時間庫，簡化時區、解析、驗證與格式化等操作。",
+  "title": "用 DTT 庫掌握 Rust 中的日期與時間",
+  "banner": "https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg",
+  "banner_alt": "DateTime（DTT），日期與時間操作的必備工具集",
+  "locale": "zh_TW",
+  "keywords": "DTT, DateTime, Rust, 日期時間, 時區, 解析, 驗證, 格式化, Cargo, 開源"
 }

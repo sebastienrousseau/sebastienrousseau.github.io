@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fil-PH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Fri, 29 Sep 2023 08:57:00 +0000" id="date" />
+    <meta itemprop="dateModified" content="Fri, 29 Sep 2023 08:57:00 +0000" id="last-modified" />
+    <title>أتمتة إنشاء ملفّات الدفع المتوافقة مع ISO 20022 باستخدام Pain001 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="أتمتة إنشاء ملفّات الدفع pain.001 المتوافقة مع ISO 20022 انطلاقاً من CSV أو SQLite عبر Pain001، مكتبة Python مفتوحة المصدر.">
+<meta name="keywords" content="ISO 20022, pain.001, Pain001, Python, المدفوعات, الأتمتة, CBPR+, HVPS+, SEPA, الامتثال, التحويلات">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-Fp4F5U6naAfvWUVq56mYeN8k1uU3GJlbidrhLHtrhPI=' 'sha256-RGXlit3N8CsCaCCYFj88xejOUWx3ViD0sUm0ZGQqv8Y=' 'sha256-wQW3A67UI/VaR1hCZVBI4Z/6zE7AeMyLsNNjIKuZkCk=' 'sha256-zUkL7aSUANMa0xvFcr5Fhd9JdiAmlAMvNNPtuAq2OmM=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/fil/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Feed ng Atom" href="/fil/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="أتمتة إنشاء ملفّات الدفع المتوافقة مع ISO 20022 باستخدام Pain001 — Sebastien Rousseau">
+<meta property="og:description" content="أتمتة إنشاء ملفّات الدفع pain.001 المتوافقة مع ISO 20022 انطلاقاً من CSV أو SQLite عبر Pain001، مكتبة Python مفتوحة المصدر.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/fil/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="fil_PH">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="أتمتة إنشاء ملفّات الدفع المتوافقة مع ISO 20022 باستخدام Pain001 — Sebastien Rousseau">
+<meta name="twitter:description" content="أتمتة إنشاء ملفّات الدفع pain.001 المتوافقة مع ISO 20022 انطلاقاً من CSV أو SQLite عبر Pain001، مكتبة Python مفتوحة المصدر.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/fil/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2023-09-29-automatiser-fichiers-de-paiement-iso-20022-avec-pain001/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2023-09-29-automatizace-platebnich-souboru-iso-20022-s-pain001/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2023-09-29-iso-20022-konforme-zahlungsdateien-automatisieren-mit-pain001/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2023-09-29-automatizar-archivos-de-pago-iso-20022-con-pain001/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2023-09-29-pain001-ke-saath-iso-20022-bhugtaan-file-svachalan/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2023-09-29-otomatisasi-pembuatan-berkas-pembayaran-iso-20022-dengan-pain001/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2023-09-29-automatizzare-i-file-di-pagamento-iso-20022-con-pain001/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2023-09-29-pain001-de-iso-20022-junkyo-kessai-fairu-no-jidouka/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2023-09-29-pain001-ro-iso-20022-junsu-gyeoljepail-jadonghwa/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2023-09-29-iso-20022-conforme-betaalbestanden-automatiseren-met-pain001/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2023-09-29-automatyzacja-plikow-platnosci-iso-20022-z-pain001/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2023-09-29-automatizar-arquivos-de-pagamento-iso-20022-com-pain001/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2023-09-29-avtomatizatsiya-platezhnykh-failov-iso-20022-s-pain001/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2023-09-29-automatisera-iso-20022-betalfiler-med-pain001/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2023-09-29-attanomat-fai-chamra-nguen-iso-20022-duai-pain001/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2023-09-29-iso-20022-uyumlu-odeme-dosyalarini-pain001-ile-otomatiklestirme/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2023-09-29-tu-dong-hoa-tep-thanh-toan-iso-20022-voi-pain001/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2023-09-29-yong-pain001-zidonghua-iso-20022-zhifu-wenjian/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2023-09-29-yong-pain001-zidonghua-iso-20022-zhifu-wenjian-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Lumaktaw sa pangunahing nilalaman</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="I-toggle ang nabigasyon" />
+      <div class="wrap">
+        <a class="ap-brand" href="/fil/index.html" aria-label="Home ni Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Pangunahing nabigasyon">
+          <ul class="ap-menu">
+            <li><a href="/fil/tungkol-sa-akin/index.html">Tungkol</a></li>
+            <li><a href="/fil/mga-artikulo/index.html" aria-current="page" class="active">Mga artikulo</a></li>
+            <li><a href="/fil/mga-publikasyon/index.html">Mga publikasyon</a></li>
+            <li><a href="/fil/mga-paksa/index.html">Mga paksa</a></li>
+            <li><a href="/fil/mga-proyekto/index.html">Mga proyekto</a></li>
+            <li><a href="/fil/mga-playlist/index.html">Mga playlist</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Lumipat sa dark mode" aria-pressed="false" title="Ibahin ang tema">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Maghanap (Cmd o Ctrl + K)" title="Maghanap (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Wika">
+            <button type="button" class="ap-lang-toggle" aria-label="FIL, Baguhin ang wika" aria-expanded="false" aria-haspopup="menu" title="Baguhin ang wika">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">FIL</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Malapit na">🇺🇦 Українська</span>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/fil/makipag-ugnayan/index.html" aria-label="Makipag-ugnayan">Makipag-ugnayan ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="I-toggle ang nabigasyon">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>أتمتة إنشاء ملفّات الدفع المتوافقة مع ISO 20022 باستخدام Pain001</h1>
+      <p class="sub">Pain001: مكتبة Python مفتوحة المصدر تُبسّط الامتثال لـ ISO 20022</p>
+    <nav class="article-tags" aria-label="Mga paksa"><a href="/tags/index.html#h3-iso-20022" class="article-tag" rel="tag">ISO 20022</a><a href="/tags/index.html#h3-pain-001" class="article-tag" rel="tag">pain.001</a><a href="/tags/index.html#h3-pain001" class="article-tag" rel="tag">Pain001</a><a href="/tags/index.html#h3-python" class="article-tag" rel="tag">Python</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">المدفوعات</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">الأتمتة</a><a href="/tags/index.html#h3-cbpr" class="article-tag" rel="tag">CBPR+</a><a href="/tags/index.html#h3-hvps" class="article-tag" rel="tag">HVPS+</a><a href="/tags/index.html#h3-sepa" class="article-tag" rel="tag">SEPA</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">الامتثال</a><a href="/tags/index.html#h3-" class="article-tag" rel="tag">التحويلات</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2023-09-29T08:57:00+00:00" class="meta-pub">Inilathala noong 29 Sep 2023</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Na-update noong 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Tinatayang oras ng pagbasa">2 min basahin</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> أتمتة إنشاء ملفّات الدفع pain.001 المتوافقة مع ISO 20022 انطلاقاً من CSV أو SQLite عبر Pain001، مكتبة Python مفتوحة المصدر.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>أتمتة إنشاء ملفّات الدفع المتوافقة مع ISO 20022 باستخدام Pain001.</strong> [ISO 20022 ⧉][01] معيارٌ رائد يُبسّط المعاملات ويُحسّن منظومات المدفوعات حول العالم.</li>  <li><strong>الفكرة.</strong> إدراكاً مني لتعقيد ISO 20022، طوّرتُ وأطلقتُ [Pain001 ⧉][00]، وهي مجموعة أدوات مفتوحة المصدر لإنشاء رسائل بدء المدفوعات والإشعارات وترجمتها والتحقّق من صحّتها.</li>  <li><strong>الأثر.</strong> تلتزم Pain001 بتبسيط عملية توليد رسائل الدفع وتسريعها، ما يُتيح تبنّياً ميسوراً لـ ISO 20022، ويُسهّل تكاملاً سلساً مع المنظومات القائمة لبلوغ الامتثال لـ ISO 20022.</li>  <li><strong>الحوافز.</strong> اخبر تحوّلاً جذرياً في عملية أتمتة المدفوعات لديك مع Pain001.</li></ul></aside><p><img src="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" alt="مبنىً شاهق الارتفاع تتخلّله فتحاتٌ كثيرة"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<h2 id="iso-20022-pain001">أتمتة إنشاء ملفّات الدفع المتوافقة مع ISO 20022 باستخدام Pain001 <a class="heading-anchor" href="#iso-20022-pain001" aria-label="Link patungo sa أتمتة إنشاء ملفّات الدفع المتوافقة مع ISO 20022 باستخدام Pain001">#</a></h2>
+<h3 id="iso-20022">قطاع المدفوعات يتطوّر، و ISO 20022 يقود الطريق <a class="heading-anchor" href="#iso-20022" aria-label="Link patungo sa قطاع المدفوعات يتطوّر، و ISO 20022 يقود الطريق">#</a></h3>
+<p><a href="https://www.iso20022.org/" title="ISO 20022: A single standardisation approach (methodology, process, repository) to be used by all financial standards initiatives"><strong>ISO 20022 ⧉</strong></a> معيارٌ رائد يُبسّط المعاملات ويُحسّن منظومات المدفوعات حول العالم. وهو يوفّر لغةً موحّدة لتبادل بيانات الدفع، فيجعل المدفوعات أكثر كفاءةً وأماناً.</p>
+<p>وقد تبنّت المصارف والشركات والمؤسّسات المالية في شتى أنحاء العالم معيار ISO 20022، مُستثمرةً قوّته في أتمتة معاملات الدفع وتوحيدها. ويُيسّر ذلك إقامة منظومةٍ ماليّة عالميّة انسيابية وفعّالة.</p>
+<h2 id="section-3">الفكرة <a class="heading-anchor" href="#section-3" aria-label="Link patungo sa الفكرة">#</a></h2>
+<h3 id="pain001-python-iso-20022">Pain001 مكتبة Python تُبسّط إنشاء رسائل الدفع المتوافقة مع ISO 20022 <a class="heading-anchor" href="#pain001-python-iso-20022" aria-label="Link patungo sa Pain001 مكتبة Python تُبسّط إنشاء رسائل الدفع المتوافقة مع ISO 20022">#</a></h3>
+<p>إدراكاً مني لتعقيد ISO 20022، طوّرتُ وأطلقتُ <a href="https://pain001.com/" title="Pain001: Automate ISO 20022-Compliant Payment File Creation"><strong>Pain001 ⧉</strong></a>، وهي مجموعة أدوات مفتوحة المصدر لإنشاء رسائل بدء المدفوعات والإشعارات وترجمتها والتحقّق من صحّتها. وتتوافق المكتبة مع معياري High Value Payments Plus (HVPS+) و Cross-Border Payments and Reporting Plus (CBPR+).</p>
+<p>وتُتيح Pain001 الإنشاء المباشر للرسائل من ملفّات CSV أو قواعد بيانات SQLite، ما يُخفّض كلفة المعالجة، ويرفع الكفاءة، ويُعزّز الدقّة.</p>
+<h2 id="section-5">الأثر <a class="heading-anchor" href="#section-5" aria-label="Link patungo sa الأثر">#</a></h2>
+<h3 id="iso-20022-pain001-2">استثمر قوّة ISO 20022 مع Pain001 <a class="heading-anchor" href="#iso-20022-pain001-2" aria-label="Link patungo sa استثمر قوّة ISO 20022 مع Pain001">#</a></h3>
+<p>تلتزم <strong>Pain001</strong> بتبسيط عملية توليد رسائل الدفع وتسريعها، ما يُتيح تبنّياً ميسوراً لـ ISO 20022، ويُسهّل تكاملاً سلساً مع المنظومات القائمة لبلوغ الامتثال لـ ISO 20022.</p>
+<p>ويمكن لـ Pain001 أن تُقلّص كلفات المعالجة وتعقيداتها تقليصاً ملموساً بإلغاء الحاجة إلى إدخال البيانات يدويّاً وتوليد الملفّات يدويّاً. كما تُسهم في تخفيض مخاطر الأخطاء، ما يُقلّص الكلفة أكثر.</p>
+<p>ولأيّ منظّمةٍ تسعى إلى تبسيط معالجة مدفوعاتها وأتمتتها، تُمثّل <strong>Pain001</strong> حلاًّ عمليّاً عالي الفاعلية.</p>
+<h2 id="section-7">الحوافز <a class="heading-anchor" href="#section-7" aria-label="Link patungo sa الحوافز">#</a></h2>
+<h3 id="pain001">رسم مستقبل أتمتة المدفوعات مع Pain001 <a class="heading-anchor" href="#pain001" aria-label="Link patungo sa رسم مستقبل أتمتة المدفوعات مع Pain001">#</a></h3>
+<p>اخبر تحوّلاً جذرياً في عملية أتمتة المدفوعات لديك مع Pain001. فهذه الأداة شديدة الابتكار تُخفّض كلفة المعالجة تخفيضاً كبيراً، وتُقلّل الأخطاء، وتُبسّط المعاملات. وما أتمتة إنشاء ملفّات الدفع والتحقّق منها سوى بداية للإمكانات التي تتيحها Pain001.</p>
+<p>وفيما يلي أسبابٌ تدفعك إلى النظر في <strong>Pain001</strong> لتلبية احتياجاتك في أتمتة المدفوعات:</p>
+<ul>
+<li><strong>سهولة الاستخدام:</strong> Pain001 مكتبةٌ سهلة الاستعمال، مصمَّمة للمطوّرين وغير المطوّرين على حدٍّ سواء. وتتطلّب واجهتها الميسّرة حداً أدنى من المعرفة البرمجية، فتُقدّم تجربةً سلسة.</li>
+<li><strong>الإتاحة بمفتوح المصدر:</strong> Pain001 مكتبة مفتوحة المصدر متاحة للجميع. وتُتيح مجّانيّتها للشركات بجميع أحجامها الإفادة من مزاياها.</li>
+<li><strong>أمانٌ متين:</strong> تلتزم Pain001 بحماية سرّية البيانات، وتُقدّم حلاً آمناً بعدم تخزين أيّ بياناتٍ حسّاسة.</li>
+<li><strong>قابلية التخصيص:</strong> تُتيح Pain001 للمطوّرين تخصيص الناتج، وتكييفه مع المتطلبات والتفضيلات المحدّدة للعمل، بما يُضفي لمسةً شخصيّة على عملية الأتمتة.</li>
+<li><strong>حلٌّ قابلٌ للتوسّع:</strong> بإمكان مكتبة Pain001 التعامل مع أحجامٍ متفاوتة من ملفّات الدفع، ما يجعلها مناسبةً لشركاتٍ بمختلف الأحجام وأحجام المعاملات.</li>
+<li><strong>توفير الوقت:</strong> ودِّع الإدخال اليدوي للبيانات. تُؤتمت Pain001 إنشاء الملفّات، فتُوفّر وقتاً ثميناً وتدفع الإنتاجية الإجمالية إلى الأعلى.</li>
+<li><strong>تكاملٌ سلس:</strong> بوصفها حزمة Python، تتكامل Pain001 يسراً مع أيّ تطبيق قائم على Python ومع سير العمل الراهن، فتُسلّس عملية الانتقال.</li>
+<li><strong>توافقٌ عابر للحدود:</strong> صُمّمت Pain001 لتعدّد الاستخدام، إذ تدعم تحويلات SEPA وغير SEPA، ما يجعلها مثاليّة للشركات العاملة في بلدانٍ ومناطق متعدّدة.</li>
+<li><strong>الدقّة والكفاءة:</strong> بتقديمها بياناتٍ دقيقة، تُقلّل Pain001 من الأخطاء في إنشاء ملفّات الدفع ومعالجتها. وهذا التحسين في الكفاءة يُحوّل عملية أتمتة مدفوعاتك.</li>
+<li><strong>الامتثال لمعايير ISO 20022:</strong> تضمن Pain001 أعلى مستوى من الجودة عبر التحقّق من جميع ملفّات الدفع للتأكد من استيفائها معايير ISO 20022. ويُبسّط نسقها الموحّد لملفّات الدفع إنشاء رسائل بدء المدفوعات المتوافقة مع ISO 20022.</li>
+<li><strong>خفض الكلفة:</strong> تُخفّض Pain001 الكلفات بإلغاء الإدخال اليدوي للبيانات وتوليد الملفّات يدويّاً، وتقليص زمن معالجة المدفوعات، وتقليل الأخطاء.</li>
+</ul>
+<p><a href="https://pain001.com/index.html" title="Embrace the future of payment automation with Pain001">احتضن مستقبل أتمتة المدفوعات ⧉</a> مع Pain001، أداةٌ تُعيد تشكيل الطريقة التي تُدير بها مدفوعاتك.</p>
+<p><em>هذا المقال متاحٌ كذلك على <a href="https://medium.com/@wwdseb/automating-iso-20022-compliant-payment-file-creation-with-pain001-5e32f789155a" title="Embrace the future of payment automation with Pain001">Medium ⧉</a></em></p>
+<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Portrait ni Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/fil/tungkol-sa-akin/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist na sumusulat tungkol sa applied AI, ISO 20022 migration, post-quantum cryptography para sa financial services, at structural transformation ng wholesale payments.</span><span class="author-credentials">Higit sa 20 taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA at Virgin Group. <a href="/fil/tungkol-sa-akin/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Huling sinuri <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Kaugnay na pagbasa</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" class="related-media" aria-label="Shokunin: أسرع مولّد للمواقع الساكنة قائمٌ على Rust" tabindex="-1"><img alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right" src="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="shokunin-rust"><a href="https://sebastienrousseau.com/fil/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html">Shokunin: أسرع مولّد للمواقع الساكنة قائمٌ على Rust</a> <a class="heading-anchor" href="#shokunin-rust" aria-label="Link patungo sa Shokunin: أسرع مولّد للمواقع الساكنة قائمٌ على Rust">#</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html" class="related-media" aria-label="كشف عملة مشفّرة جديدة وحلّ مدفوعات أسرع" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-10"><a href="https://sebastienrousseau.com/fil/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/index.html">كشف عملة مشفّرة جديدة وحلّ مدفوعات أسرع</a> <a class="heading-anchor" href="#section-10" aria-label="Link patungo sa كشف عملة مشفّرة جديدة وحلّ مدفوعات أسرع">#</a></h3><p><time datetime="2018-02-04">2018-02-04</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2018-01-09-understanding-the-technology-behind-blockchain/index.html" class="related-media" aria-label="فهم التقنية الكامنة وراء البلوكشين" tabindex="-1"><img alt="Turned off laptop computer on top of brown wooden table" src="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-11"><a href="https://sebastienrousseau.com/fil/2018-01-09-understanding-the-technology-behind-blockchain/index.html">فهم التقنية الكامنة وراء البلوكشين</a> <a class="heading-anchor" href="#section-11" aria-label="Link patungo sa فهم التقنية الكامنة وراء البلوكشين">#</a></h3><p><time datetime="2018-01-09">2018-01-09</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Mga pinagmulan at sanggunian</h2><ol class="article-sources-list"><li><a href="https://www.iso20022.org/" rel="external noopener nofollow"><span class="source-host">www.iso20022.org</span><span class="source-path">/</span></a></li></ol></aside><nav class="post-pagination" aria-label="Pagination ng artikulo"><a class="post-pagination-prev" href="/fil/2018-02-15-the-making-of-the-express-transaction-credits-platform/"><span class="post-pagination-label">Nakaraan</span><span class="post-pagination-title">The making of the Express Transaction Credits Platform</span></a><a class="post-pagination-next" href="/fil/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/"><span class="post-pagination-label">Susunod</span><span class="post-pagination-title">Static Site Generator: Fastest Rust-Based SSG</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/fil/tungkol-sa-akin/index.html">Tungkol</a></li>
+              <li><a href="/fil/makipag-ugnayan/index.html">Makipag-ugnayan</a></li>
+              <li><a href="/fil/ginawa-sa-static-site-generator/index.html">Ginawa sa Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Pagsusulat</h2>
+            <ul>
+              <li><a href="/fil/mga-artikulo/index.html">Mga artikulo</a></li>
+              <li><a href="/fil/mga-publikasyon/index.html">Mga publikasyon</a></li>
+              <li><a href="/fil/mga-tag/index.html">Mga tag</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Trabaho</h2>
+            <ul>
+              <li><a href="/fil/mga-proyekto/index.html">Mga proyekto</a></li>
+              <li><a href="/fil/mga-playlist/index.html">Mga playlist</a></li>
+              <li><a href="/fil/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Makipag-ugnayan</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Pag-sign up sa newsletter">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — mga research note tungkol sa payments, AI at post-quantum crypto. Walang spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="ikaw@bangko.ph" />
+            <input type="hidden" name="_subject" value="Pag-sign up sa newsletter — sebastienrousseau.com" />
+            <button type="submit">Mag-subscribe</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. Lahat ng karapatan ay nakalaan.</span>
+          <div class="social" aria-label="Mga link sa social media">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau sa Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau sa LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau sa Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau sa YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/fil/pagiging-accessible/index.html">Pagiging accessible</a> ·
+            <a href="/fil/pagkapribado/index.html">Pagkapribado</a> ·
+            <a href="/fil/mga-tuntunin/index.html">Mga tuntunin</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"fil"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"fil"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":535,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611"]},"mentions":[{"@type":"Thing","name":"Python","sameAs":["https://en.wikipedia.org/wiki/Python_(programming_language)","https://www.wikidata.org/wiki/Q28865"]},{"@type":"Thing","name":"SEPA","sameAs":["https://en.wikipedia.org/wiki/Single_Euro_Payments_Area","https://www.wikidata.org/wiki/Q286094"]}],"headline":"أتمتة إنشاء ملفّات الدفع المتوافقة مع ISO 20022 باستخدام Pain001","description":"أتمتة إنشاء ملفّات الدفع pain.001 المتوافقة مع ISO 20022 انطلاقاً من CSV أو SQLite عبر Pain001، مكتبة Python مفتوحة المصدر.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp","width":"100vw","height":"100vh","caption":"مبنىً شاهق الارتفاع تتخلّله فتحاتٌ كثيرة"},"url":"https://sebastienrousseau.com/fil/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/","datePublished":"2023-09-29T08:57:00+00:00","dateModified":"2026-05-11","inLanguage":"fil","keywords":"ISO 20022, pain.001, Pain001, Python, المدفوعات, الأتمتة, CBPR+, HVPS+, SEPA, الامتثال, التحويلات","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/fil/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"fil"},"citation":[{"@type":"CreativeWork","url":"https://www.iso20022.org/"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/fil/"},{"@type":"ListItem","position":3,"name":"أتمتة إنشاء ملفّات الدفع المتوافقة مع ISO 20022 باستخدام Pain001","item":"https://sebastienrousseau.com/fil/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Maghanap">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Maghanap</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Maghanap">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Maghanap sa dokumentasyon..." autocomplete="off" aria-label="Maghanap"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> isara</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> mag-navigate</span><span><kbd>Enter</kbd> buksan</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Generate an ISO 20022 pain.001 payment file with pain001","description":"Step-by-step procedure to install pain001, supply a CSV instruction set and an XML template, and emit a validated ISO 20022 pain.001.001.09 payment-initiation file.","totalTime":"PT15M","supply":[{"@type":"HowToSupply","name":"Python 3.9+"},{"@type":"HowToSupply","name":"pain001 PyPI package"},{"@type":"HowToSupply","name":"ISO 20022 XML template"},{"@type":"HowToSupply","name":"Input CSV of payment instructions"}],"tool":[{"@type":"HowToTool","name":"pip"},{"@type":"HowToTool","name":"Terminal"},{"@type":"HowToTool","name":"lxml validator"}],"step":[{"@type":"HowToStep","position":1,"name":"Install pain001","text":"Install the package from PyPI with `pip install pain001`."},{"@type":"HowToStep","position":2,"name":"Prepare your inputs","text":"Place your payment-instruction CSV and your ISO 20022 XML template in the same directory; both must follow the column layout documented in the README."},{"@type":"HowToStep","position":3,"name":"Run pain001","text":"Invoke `pain001 -t template.xml -i instructions.csv -o pain001.xml`."},{"@type":"HowToStep","position":4,"name":"Validate the output","text":"Open the generated XML in lxml or your bank's validator; the file should parse against the pain.001.001.09 schema with zero errors."}]}</script></body>
+</html>

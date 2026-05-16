@@ -1,12 +1,12 @@
 {
-  "keywords": "生成 AI, LLM, 大規模言語モデル, 拡散モデル, GPT, Claude, Gemini, エンタープライズ AI",
-  "banner": "https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp",
-  "title": "生成 AI を探求する",
-  "language": "ja-JP",
-  "date": "November 12, 2023",
-  "last_reviewed": "2026-05-11",
-  "subtitle": "大規模言語モデル、拡散モデル、エンタープライズ展開の概観",
   "description": "生成 AI が画像、テキスト、音声、コードでどのように動作するか、エンタープライズアプリケーションの実用的な検討事項。",
-  "banner_alt": "AI と人間の対話を表す抽象的なビジュアル",
-  "locale": "ja_JP"
+  "subtitle": "大規模言語モデル、拡散モデル、エンタープライズ展開の概観",
+  "keywords": "生成 AI, LLM, 大規模言語モデル, 拡散モデル, GPT, Claude, Gemini, エンタープライズ AI",
+  "last_reviewed": "2026-05-11",
+  "language": "ja-JP",
+  "locale": "ja_JP",
+  "date": "November 12, 2023",
+  "title": "生成 AI を探求する",
+  "banner": "https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp",
+  "banner_alt": "AI と人間の対話を表す抽象的なビジュアル"
 }

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 11 Apr 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 11 Apr 2026 06:06:06 +0000" id="last-modified" />
+    <title>Los umbrales cuánticos vuelven a moverse — Sebastien Rousseau</title>
+
+    <meta name="description" content="Un nuevo artículo sugiere que el algoritmo de Shor podría ejecutarse con solo 10.000 qubits. El umbral de la computación cuántica criptográficamente relevante cae más rápido de lo que la mayoría suponía.">
+<meta name="keywords" content="algoritmo de Shor, qubits, computación cuántica, ECC, RSA-2048, átomos neutros reconfigurables, códigos de corrección de errores, CRYSTALS-Kyber, CRYSTALS-Dilithium, PQC, criptografía postcuántica">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Quantum Thresholds Are Moving Again">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-QTW0yc36cWtZ+w7AZAOCQGl2JvDDbl6sBjXHqxPCnZo=' 'sha256-aKHhww2y/X/IetvhLixcPWdBacUlIrJCCi8dfX9qSF4=' 'sha256-tkFTKMapuX3qOABMCBqFM3gWE0PaJ8sfNvHO6yY2fJM=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/cs/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="/cs/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Los umbrales cuánticos vuelven a moverse — Sebastien Rousseau">
+<meta property="og:description" content="Un nuevo artículo sugiere que el algoritmo de Shor podría ejecutarse con solo 10.000 qubits. El umbral de la computación cuántica criptográficamente relevante cae más rápido de lo que la mayoría suponía.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/cs/2026-04-11-kvantove-prahove-hodnoty-se-zase-posunuji/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="cs_CZ">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Los umbrales cuánticos vuelven a moverse — Sebastien Rousseau">
+<meta name="twitter:description" content="Un nuevo artículo sugiere que el algoritmo de Shor podría ejecutarse con solo 10.000 qubits. El umbral de la computación cuántica criptográficamente relevante cae más rápido de lo que la mayoría suponía.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/cs/2026-04-11-kvantove-prahove-hodnoty-se-zase-posunuji/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-04-11-les-seuils-quantiques-bougent-a-nouveau/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-04-11-quantum-thresholds-are-moving-again/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-04-11-quantum-thresholds-are-moving-again/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-04-11-kvantove-prahove-hodnoty-se-zase-posunuji/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-04-11-quantenschwellen-verschieben-sich-erneut/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-04-11-los-umbrales-cuanticos-vuelven-a-moverse/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-04-11-quantum-thresholds-are-moving-again/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-04-11-quantum-thresholds-are-moving-again/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-04-11-quantum-thresholds-are-moving-again/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-04-11-quantum-seemaayen-phir-se-badal-rahi-hain/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-04-11-ambang-kuantum-bergeser-lagi/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-04-11-le-soglie-quantistiche-si-muovono-di-nuovo/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-04-11-ryoushi-shikiichi-ga-mata-ugoki-hajimeta/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-04-11-yangja-gyegi-da-siusijak/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-04-11-kwantumdrempels-verschuiven-opnieuw/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-04-11-progi-kwantowe-znow-sie-przesuwaja/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-04-11-os-limiares-quanticos-voltam-a-se-mover/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-04-11-quantum-thresholds-are-moving-again/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-04-11-kvantovye-porogi-snova-dvizhutsya/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-04-11-kvanttrosklarna-rors-igen/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-04-11-ked-quantum-khap-kheuanwai-ik-khrang/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-04-11-kuantum-esikleri-yeniden-hareket-ediyor/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-04-11-nguong-luong-tu-lai-dich-chuyen/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-04-11-quantum-thresholds-are-moving-again/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-04-11-liangzi-yuzhi-zai-yi-dong/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-04-11-liangzi-yuzhi-zai-yi-dong-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Přeskočit na hlavní obsah</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Přepnout navigaci" />
+      <div class="wrap">
+        <a class="ap-brand" href="/cs/index.html" aria-label="Domovská stránka Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Hlavní navigace">
+          <ul class="ap-menu">
+            <li><a href="/cs/o-mne/index.html">O mně</a></li>
+            <li><a href="/cs/clanky/index.html" aria-current="page" class="active">Články</a></li>
+            <li><a href="/cs/publikace/index.html">Publikace</a></li>
+            <li><a href="/cs/temata/index.html">Témata</a></li>
+            <li><a href="/cs/projekty/index.html">Projekty</a></li>
+            <li><a href="/cs/playlisty/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Přepnout na tmavý motiv" aria-pressed="false" title="Přepnout motiv">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Hledat (Cmd nebo Ctrl + K)" title="Hledat (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Jazyk">
+            <button type="button" class="ap-lang-toggle" aria-label="CS, změnit jazyk" aria-expanded="false" aria-haspopup="menu" title="Změnit jazyk">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">CS</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Již brzy">🇺🇦 Українська</span>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/cs/kontakt/index.html" aria-label="Kontaktovat">Kontaktovat ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Přepnout navigaci">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Los umbrales cuánticos vuelven a moverse</h1>
+      <p class="sub">Un nuevo artículo sugiere que el algoritmo de Shor podría ejecutarse con solo 10.000 qubits. El umbral de la computación cuántica criptográficamente relevante cae más rápido de lo que la mayoría suponía.</p>
+    <nav class="article-tags" aria-label="Témata"><a href="/tags/index.html#h3-algoritmo-de-shor" class="article-tag" rel="tag">algoritmo de Shor</a><a href="/tags/index.html#h3-qubits" class="article-tag" rel="tag">qubits</a><a href="/tags/index.html#h3-computacion-cuantica" class="article-tag" rel="tag">computación cuántica</a><a href="/tags/index.html#h3-ecc" class="article-tag" rel="tag">ECC</a><a href="/tags/index.html#h3-rsa-2048" class="article-tag" rel="tag">RSA-2048</a><a href="/tags/index.html#h3-atomos-neutros-reconfigurables" class="article-tag" rel="tag">átomos neutros reconfigurables</a><a href="/tags/index.html#h3-codigos-de-correccion-de-errores" class="article-tag" rel="tag">códigos de corrección de errores</a><a href="/tags/index.html#h3-crystals-kyber" class="article-tag" rel="tag">CRYSTALS-Kyber</a><a href="/tags/index.html#h3-crystals-dilithium" class="article-tag" rel="tag">CRYSTALS-Dilithium</a><a href="/tags/index.html#h3-pqc" class="article-tag" rel="tag">PQC</a><a href="/tags/index.html#h3-criptografia-postcuantica" class="article-tag" rel="tag">criptografía postcuántica</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-04-11T06:06:06+00:00" class="meta-pub">Publikováno 11 Apr 2026</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Aktualizováno 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Odhadovaná doba čtení">11 min čtení</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Obsah</h2><ol><li><a href="#los-umbrales-cuanticos-vuelven-a-moverse">Los umbrales cuánticos vuelven a moverse</a></li><li><a href="#una-hipotesis-familiar-ahora-bajo-presion">Una hipótesis familiar, ahora bajo presión</a></li><li><a href="#la-convergencia-que-impulsa-este-desplazamiento-correccion-de-errores-arquitectu">La convergencia que impulsa este desplazamiento: corrección de errores, arquitectura y paralelismo</a></li><li><a href="#de-millones-a-decenas-de-miles-lo-que-las-cifras-significan-realmente">De millones a decenas de miles: lo que las cifras significan realmente</a></li><li><a href="#tiempo-escala-y-vulnerabilidad-desigual-de-los-sistemas-criptograficos">Tiempo, escala y vulnerabilidad desigual de los sistemas criptográficos</a></li><li><a href="#la-brecha-de-ingenieria-que-persiste">La brecha de ingeniería que persiste</a></li><li><a href="#por-que-el-calendario-que-se-comprime-exige-atencion-ahora">Por qué el calendario que se comprime exige atención ahora</a></li><li><a href="#lo-que-esto-significa-por-sector-una-guia-practica">Lo que esto significa por sector: una guía práctica</a></li><li><a href="#conclusion">Conclusión</a></li><li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li><li><a href="#referencias">Referencias</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Un nuevo artículo sugiere que el algoritmo de Shor podría ejecutarse con solo 10.000 qubits. El umbral de la computación cuántica criptográficamente relevante cae más rápido de lo que la mayoría suponía.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Los umbrales cuánticos vuelven a moverse.</strong> Un nuevo artículo sugiere que el algoritmo de Shor podría ejecutarse con solo 10.000 qubits.</li>  <li><strong>Una hipótesis familiar, ahora bajo presión.</strong> A lo largo de la última década, las discusiones en torno a la computación cuántica y la criptografía han seguido un arco familiar.</li>  <li><strong>La convergencia que impulsa este desplazamiento: corrección de errores, arquitectura y paralelismo.</strong> El resultado no emerge de un descubrimiento único.</li>  <li><strong>De millones a decenas de miles: lo que las cifras significan realmente.</strong> Durante años, la estimación consensuada para ejecutar el algoritmo de Shor a escalas criptográficas exigía millones de qubits físicos.</li></ul></aside><blockquote>
+<p><strong>TL;DR.</strong> Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.</p>
+</blockquote>
+<p><strong>Klíčové body</strong></p>
+<h2 id="los-umbrales-cuanticos-vuelven-a-moverse">Los umbrales cuánticos vuelven a moverse <a class="heading-anchor" href="#los-umbrales-cuanticos-vuelven-a-moverse" aria-label="Odkaz na Los umbrales cuánticos vuelven a moverse">#</a></h2>
+<p>Un nuevo artículo sugiere que el algoritmo de Shor podría ejecutarse con solo 10.000 qubits. El umbral de la computación cuántica criptográficamente relevante cae más rápido de lo que la mayoría suponía.</p>
+<blockquote>
+<p><strong>TL;DR.</strong> Un nuevo artículo propone que el algoritmo de Shor pueda ejecutarse con solo 10.000 qubits físicos —cerca de cien veces menos que las estimaciones consensuadas anteriores—. La barrera ya no es puramente teórica: es de ingeniería. Los estándares de criptografía postcuántica ya están finalizados; la prioridad ahora es acelerar la migración.</p>
+<p><strong>Conclusiones clave</strong></p>
+<ul>
+<li>Un nuevo artículo propone que el algoritmo de Shor pueda ejecutarse con solo <strong>10.000 qubits físicos</strong>, alrededor de cien veces menos que las estimaciones consensuadas anteriores.</li>
+<li>La reducción está impulsada por tres avances convergentes: códigos de corrección de errores cuánticos de alto rendimiento, retículos de átomos neutros reconfigurables y paralelismo aumentado.</li>
+<li>La amenaza no es uniforme. La <strong>criptografía de curva elíptica (ECC)</strong> es más vulnerable a bajos números de qubits; RSA-2048 requiere tiempos de ejecución significativamente más largos a escalas comparables.</li>
+<li>Se trata de una <strong>proyección teórica</strong>, no de una demostración operativa. Sigue existiendo una brecha de ingeniería sustancial entre el hardware actual y la ejecución tolerante a fallos a esa escala.</li>
+<li>Los estándares de criptografía postcuántica ya están finalizados. La prioridad ahora es <strong>acelerar la migración</strong>, no esperar a que aparezca un sistema cuántico.</li>
+</ul>
+</blockquote>
+<h2 id="una-hipotesis-familiar-ahora-bajo-presion">Una hipótesis familiar, ahora bajo presión <a class="heading-anchor" href="#una-hipotesis-familiar-ahora-bajo-presion" aria-label="Odkaz na Una hipótesis familiar, ahora bajo presión">#</a></h2>
+<p>A lo largo de la última década, las discusiones en torno a la computación cuántica y la criptografía han seguido un arco familiar. Las máquinas cuánticas eran reconocidas como teóricamente potentes, pero consideradas impracticables a gran escala. Romper los sistemas criptográficos modernos habría exigido millones de qubits físicos, y el calendario permanecía cómodamente lejano. Esta hipótesis está ahora bajo presión seria.</p>
+<p>Un artículo reciente, <a href="https://arxiv.org/pdf/2603.28627" title="Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits (PDF)">«Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits» ⧉</a>, propone algo más consecuente que un simple avance. Sugiere que el umbral de la computación cuántica criptográficamente relevante podría ser inferior en un orden de magnitud a lo que se creía. No millones de qubits, sino decenas de miles. La distinción importa, y la dirección que implica es difícil de ignorar.</p>
+<h2 id="la-convergencia-que-impulsa-este-desplazamiento-correccion-de-errores-arquitectu">La convergencia que impulsa este desplazamiento: corrección de errores, arquitectura y paralelismo <a class="heading-anchor" href="#la-convergencia-que-impulsa-este-desplazamiento-correccion-de-errores-arquitectu" aria-label="Odkaz na La convergencia que impulsa este desplazamiento: corrección de errores, arquitectura y paralelismo">#</a></h2>
+<p>El resultado no emerge de un descubrimiento único. Refleja una convergencia de mejoras en varias capas de la pila de la computación cuántica que, tomadas juntas, desplazan la frontera de lo que parece factible.</p>
+<p>La primera mejora se refiere a la corrección de errores. Los enfoques tradicionales exigían grandes sobrecostes —a menudo cientos de qubits físicos para representar un solo qubit lógico—. El artículo se apoya en cambio en códigos de corrección de errores cuánticos de alto rendimiento, que reducen significativamente ese sobrecoste (<a href="https://www.emergentmind.com/papers/2603.28627" title="Shor's Algorithm with 10000 Atomic Qubits">Emergent Mind ⧉</a>). La segunda se refiere a la arquitectura. El sistema está construido sobre retículos reconfigurables de átomos neutros, que pueden reorganizarse durante el cálculo para permitir una conectividad más flexible y una ejecución más eficiente (<a href="https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/" title="Oratomic Launches to Build Utility-scale Quantum Computers">The Quantum Insider ⧉</a>). La tercera es el paralelismo: aumentar el número de qubits permite ejecutar más operaciones simultáneamente, reduciendo el tiempo de ejecución global.</p>
+<p>Ninguna de estas ideas es nueva aisladamente. Combinadas, sin embargo, redefinen lo que antes se trataba como un límite duro.</p>
+<h2 id="de-millones-a-decenas-de-miles-lo-que-las-cifras-significan-realmente">De millones a decenas de miles: lo que las cifras significan realmente <a class="heading-anchor" href="#de-millones-a-decenas-de-miles-lo-que-las-cifras-significan-realmente" aria-label="Odkaz na De millones a decenas de miles: lo que las cifras significan realmente">#</a></h2>
+<p>Durante años, la estimación consensuada para ejecutar el algoritmo de Shor a escalas criptográficas exigía millones de qubits físicos. El nuevo análisis sugiere que, bajo ciertas hipótesis, ese número podría caer a alrededor de 10.000 (<a href="https://arxiv.org/abs/2603.28627" title="Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits">arXiv ⧉</a>). Esta cifra, sin embargo, no es la imagen completa.</p>
+<p>En el extremo bajo de ese rango, los tiempos de ejecución siguen siendo largos. Factorizar RSA-2048 al número mínimo de qubits podría aún llevar años de funcionamiento continuo. Una ejecución más rápida requiere más qubits, potencialmente decenas de miles. La relación entre el número de qubits y el tiempo de ejecución no es lineal, y el artículo se cuida de presentar esto como un espectro en lugar de un umbral fijo. Lo que cambia es la dirección: la barrera ya no es puramente teórica. Es ahora una cuestión de ingeniería.</p>
+<h3 id="antiguas-hipotesis-frente-a-nuevas-realidades">Antiguas hipótesis frente a nuevas realidades <a class="heading-anchor" href="#antiguas-hipotesis-frente-a-nuevas-realidades" aria-label="Odkaz na Antiguas hipótesis frente a nuevas realidades">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Dimensión</th>
+<th>Antigua hipótesis</th>
+<th>Nueva realidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Qubits físicos requeridos (algoritmo de Shor)</td>
+<td>~1.000.000+</td>
+<td>~10.000–26.000</td>
+</tr>
+<tr>
+<td>Tiempo para romper RSA-2048 (al mínimo de qubits)</td>
+<td>Inviable esta década</td>
+<td>Años (con 10.000 qubits); más rápido con más</td>
+</tr>
+<tr>
+<td>Tiempo para romper ECC-256</td>
+<td>Inviable esta década</td>
+<td>Días (estimado con ~26.000 qubits)</td>
+</tr>
+<tr>
+<td>Paradigma de hardware dominante</td>
+<td>Qubits superconductores</td>
+<td>Retículos de átomos neutros reconfigurables</td>
+</tr>
+<tr>
+<td>Sobrecoste de corrección de errores</td>
+<td>Cientos de qubits físicos por qubit lógico</td>
+<td>Reducido significativamente mediante códigos de alto rendimiento</td>
+</tr>
+<tr>
+<td>Naturaleza de la barrera</td>
+<td>Teórica</td>
+<td>Ingeniería</td>
+</tr>
+<tr>
+<td>Urgencia de migración</td>
+<td>Planificación a largo plazo</td>
+<td>Despliegue activo requerido ahora</td>
+</tr>
+</tbody>
+</table>
+<p><em>Fuente: análisis a partir de <a href="https://arxiv.org/abs/2603.28627">arXiv:2603.28627 ⧉</a> y de la literatura anterior.</em></p>
+<h2 id="tiempo-escala-y-vulnerabilidad-desigual-de-los-sistemas-criptograficos">Tiempo, escala y vulnerabilidad desigual de los sistemas criptográficos <a class="heading-anchor" href="#tiempo-escala-y-vulnerabilidad-desigual-de-los-sistemas-criptograficos" aria-label="Odkaz na Tiempo, escala y vulnerabilidad desigual de los sistemas criptográficos">#</a></h2>
+<p>Una de las contribuciones más significativas del artículo es el matiz que introduce en torno al tiempo. La ventaja cuántica no llega de golpe. Existe a lo largo de un espectro determinado por la escala del sistema y la naturaleza del objetivo criptográfico.</p>
+<p>Con alrededor de 26.000 qubits, los autores estiman que romper la criptografía de curva elíptica podría llevar unos días en condiciones favorables (<a href="https://arxiv.org/abs/2603.28627" title="Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits">arXiv ⧉</a>). Para RSA-2048, los plazos son considerablemente más largos. Esta asimetría es importante. Sugiere que distintos sistemas criptográficos pueden volverse vulnerables en momentos diferentes, en lugar de simultáneamente, y que la transición hacia los estándares postcuánticos probablemente no será un acontecimiento único con una fecha límite única.</p>
+<p>Este esquema es coherente con una cobertura más amplia. Análisis de los últimos meses sugieren que sistemas cuánticos capaces de desafiar el cifrado ampliamente utilizado podrían emerger antes del final de la década (<a href="https://www.nature.com/articles/d41586-026-01054-1" title="Quantum-computing breakthroughs pose risks to encryption">Nature ⧉</a>). Los gobiernos y los organismos de normalización planifican ya las transiciones a la criptografía postcuántica, con calendarios de implementación que se extienden hasta la década de 2030 (<a href="https://thequantuminsider.com/2026/03/31/oratomic-launches-to-build-utility-scale-quantum-computers/" title="Oratomic Launches to Build Utility-scale Quantum Computers">The Quantum Insider ⧉</a>). La discusión ha pasado de «si» a «cuándo».</p>
+<h2 id="la-brecha-de-ingenieria-que-persiste">La brecha de ingeniería que persiste <a class="heading-anchor" href="#la-brecha-de-ingenieria-que-persiste" aria-label="Odkaz na La brecha de ingeniería que persiste">#</a></h2>
+<p>Conviene ser preciso sobre lo que representa este artículo. Es una proyección, no una demostración. Los sistemas propuestos dependen de hipótesis sobre tasas de error, estabilidad del hardware y comportamiento a la escala que aún no han sido validadas a la escala requerida. Los experimentos actuales operan en el nivel de cientos a algunos miles de qubits, no de decenas de miles funcionando de manera tolerante a fallos durante periodos prolongados (<a href="https://phys.org/news/2026-04-quantum-built-qubits-team.html" title="Useful quantum computers could be built with as few as 10,000 qubits">Phys.org ⧉</a>).</p>
+<p>Sigue existiendo una brecha de ingeniería sustancial. El camino de un modelo teórico convincente a un sistema funcional capaz de operación sostenida y tolerante a fallos a esa escala implica desafíos que aún no se comprenden plenamente, y mucho menos se resuelven. Lo que ha cambiado no es la proximidad de una máquina operativa, sino la credibilidad del objetivo. La brecha se estrecha, y la dirección del progreso es coherente.</p>
+<h2 id="por-que-el-calendario-que-se-comprime-exige-atencion-ahora">Por qué el calendario que se comprime exige atención ahora <a class="heading-anchor" href="#por-que-el-calendario-que-se-comprime-exige-atencion-ahora" aria-label="Odkaz na Por qué el calendario que se comprime exige atención ahora">#</a></h2>
+<p>La importancia de este trabajo no es que la criptografía vaya a romperse a corto plazo. Es que el calendario se comprime de manera que afecta a las decisiones tomadas hoy. Los sistemas de seguridad se diseñan con largos ciclos de vida en mente. Los datos cifrados hoy pueden tener que permanecer confidenciales durante décadas. Las decisiones de infraestructura tomadas este año serán difíciles de invertir en una ventana de cinco años. Si las capacidades cuánticas llegan antes de lo esperado, estas hipótesis se vuelven frágiles.</p>
+<p>Por eso la criptografía postcuántica ya se está desplegando en los sectores críticos. No porque la amenaza sea inmediata, sino porque la transición lleva tiempo y el coste de llegar tarde es asimétrico. Hay un patrón recurrente en la historia de la informática: el progreso parece lento hasta que de repente deja de serlo. Lo que comienza como una mejora teórica se convierte en una restricción práctica, y lo que antes se descartaba como lejano se convierte en algo que hay que planificar. La computación cuántica podría seguir exactamente esta trayectoria, no mediante un único avance dramático, sino mediante reducciones regulares de coste, complejidad y escala.</p>
+<h2 id="lo-que-esto-significa-por-sector-una-guia-practica">Lo que esto significa por sector: una guía práctica <a class="heading-anchor" href="#lo-que-esto-significa-por-sector-una-guia-practica" aria-label="Odkaz na Lo que esto significa por sector: una guía práctica">#</a></h2>
+<p>Las implicaciones de esta investigación no son uniformes en todos los sectores. La respuesta apropiada depende del tipo de activos criptográficos en juego, de la sensibilidad y longevidad de los datos implicados, y del ritmo al que evolucionan las expectativas normativas.</p>
+<h3 id="servicios-financieros-y-fintech">Servicios financieros y FinTech <a class="heading-anchor" href="#servicios-financieros-y-fintech" aria-label="Odkaz na Servicios financieros y FinTech">#</a></h3>
+<p>Las instituciones financieras afrontan un riesgo compuesto: poseen datos sensibles a largo plazo, operan sobre infraestructuras con ciclos de reemplazo lentos y están sometidas a un escrutinio normativo creciente en torno a la resiliencia criptográfica. ECC se utiliza ampliamente en las conexiones TLS, la autenticación móvil y las firmas digitales en los rails de pago: la categoría criptográfica que el artículo identifica como la más vulnerable a bajos números de qubits. Las instituciones que aún no han comenzado un inventario criptográfico ni han iniciado una hoja de ruta de migración postcuántica deberían tratar este artículo como un incentivo para acelerar, no como un motivo de pánico. <a href="/cs/2023-11-19-crystals-kyber-ochranny-algoritmus-v-kvantove-ere/index.html">CRYSTALS-Kyber</a> y CRYSTALS-Dilithium, ahora estandarizados por el NIST, son los objetivos de migración apropiados para la encapsulación de claves y las firmas digitales respectivamente.</p>
+<h3 id="sector-publico-y-defensa">Sector público y defensa <a class="heading-anchor" href="#sector-publico-y-defensa" aria-label="Odkaz na Sector público y defensa">#</a></h3>
+<p>Los actores estatales tienen la motivación más fuerte —y, en muchos casos, los recursos— para acelerar el desarrollo de hardware cuántico más allá de lo que se conoce públicamente. Los gobiernos que custodian comunicaciones sensibles, datos de inteligencia o claves de infraestructura crítica deben suponer que los adversarios cosechan ya datos cifrados con vistas a un descifrado futuro, una estrategia comúnmente llamada «harvest now, decrypt later». Para las organizaciones del sector público, el cumplimiento de los mandatos nacionales de preparación cuántica se vuelve cada vez más ineludible, y la ventana de migración proactiva se estrecha.</p>
+<h3 id="sanidad-e-infraestructuras-criticas">Sanidad e infraestructuras críticas <a class="heading-anchor" href="#sanidad-e-infraestructuras-criticas" aria-label="Odkaz na Sanidad e infraestructuras críticas">#</a></h3>
+<p>Los historiales médicos, los sistemas de control de servicios públicos y las redes industriales comparten una vulnerabilidad común: datos y sistemas con una vida operativa muy larga, protegidos por estándares criptográficos diseñados para un modelo de amenaza precuántico. Un historial médico cifrado hoy puede tener que permanecer privado durante cincuenta años. Un sistema de control certificado este año puede permanecer en servicio durante dos décadas. Para estos sectores, el calendario que se comprime no es una preocupación abstracta. Es un desafío directo a las hipótesis fundacionales de las arquitecturas de seguridad actuales.</p>
+<h2 id="conclusion">Conclusión <a class="heading-anchor" href="#conclusion" aria-label="Odkaz na Conclusión">#</a></h2>
+<p>El aspecto más importante de este artículo no es el número específico de qubits que presenta. Es la dirección que ese número implica. La cuestión ya no es si los ordenadores cuánticos pueden desafiar la criptografía moderna. Es a qué velocidad pueden construirse los sistemas requeridos, y si las organizaciones que dependen de los estándares actuales reaccionan lo bastante rápido.</p>
+<p>Por el momento, las respuestas siguen siendo inciertas. Pero el margen para diferir la cuestión se estrecha, y el coste de esperar crece con cada reducción creíble del umbral teórico. La comunidad criptográfica, los responsables de seguridad y las industrias que dependen de ellos harían bien en tratar este artículo no como un motivo de alarma, sino como un incentivo serio para acelerar transiciones ya en curso.</p>
+<h2 id="preguntas-frecuentes">Preguntas frecuentes <a class="heading-anchor" href="#preguntas-frecuentes" aria-label="Odkaz na Preguntas frecuentes">#</a></h2>
+<p><strong>¿Pueden realmente 10.000 qubits romper el cifrado RSA?</strong></p>
+<p>Teóricamente, sí, con matices importantes. Aunque las estimaciones anteriores sugerían millones de qubits físicos requeridos, nuevas investigaciones sobre códigos de corrección de errores de alto rendimiento y retículos de átomos neutros reconfigurables sugieren que el umbral es significativamente más bajo. Sin embargo, con 10.000 qubits, el tiempo de ejecución estimado para factorizar RSA-2048 sigue siendo extremadamente largo: potencialmente años de funcionamiento continuo. Los ataques más rápidos exigen más qubits, probablemente en el rango de las decenas de miles. El artículo representa una proyección basada en hipótesis modeladas, no una demostración en un sistema operativo.</p>
+<p><strong>¿Qué cifrado está más en riesgo frente a la computación cuántica?</strong></p>
+<p>La criptografía de curva elíptica (ECC) es generalmente más vulnerable a bajos números de qubits que RSA-2048. El artículo estima que romper ECC podría llevar algunos días utilizando alrededor de 26.000 qubits reconfigurables en condiciones favorables. RSA-2048 requiere un tiempo de ejecución significativamente más largo con números de qubits comparables. Esta asimetría significa que los sistemas dependientes de ECC —comunes en TLS, autenticación móvil y blockchain— pueden afrontar el riesgo en un calendario más corto que las infraestructuras basadas en RSA.</p>
+<p><strong>¿Qué es un qubit de átomo neutro reconfigurable?</strong></p>
+<p>Los qubits de átomos neutros son átomos individuales —típicamente rubidio o cesio— atrapados y manipulados mediante luz láser en una cámara de vacío. «Reconfigurable» significa que la disposición de los átomos puede modificarse dinámicamente durante el cálculo, permitiendo una ejecución más eficiente de circuitos cuánticos complejos. Esta flexibilidad reduce el número de qubits físicos necesarios para implementar operaciones lógicas tolerantes a fallos, y es una razón clave por la que el nuevo artículo alcanza estimaciones de qubits más bajas que los trabajos anteriores basados en las arquitecturas de qubits superconductores.</p>
+<p><strong>¿Qué es la criptografía postcuántica, y por qué se está desplegando ahora?</strong></p>
+<p>La criptografía postcuántica (PQC) designa los algoritmos criptográficos que se piensan seguros tanto contra ordenadores clásicos como cuánticos. El NIST finalizó su primer juego de estándares PQC en 2024, incluido <a href="/cs/2023-11-19-crystals-kyber-ochranny-algoritmus-v-kvantove-ere/index.html">CRYSTALS-Kyber</a> para la encapsulación de claves y CRYSTALS-Dilithium para las firmas digitales. El despliegue comienza ahora —mucho antes de que los ordenadores cuánticos representen una amenaza inmediata— porque las transiciones criptográficas son lentas. Reemplazar estándares incrustados en toda la infraestructura mundial lleva típicamente una década o más, y los datos cifrados hoy pueden tener que permanecer confidenciales mucho después de que las capacidades cuánticas hayan llegado a la madurez.</p>
+<p><strong>¿Cuántos qubits tiene hoy el ordenador cuántico más potente?</strong></p>
+<p>A principios de 2026, los sistemas cuánticos punteros operan en el rango de cientos a algunos miles de qubits físicos. De forma crucial, la mayoría aún no son tolerantes a fallos: operan por debajo de los umbrales de corrección de errores requeridos para un cálculo lógico sostenido y fiable. La brecha entre el hardware actual y las decenas de miles de qubits lógicos tolerantes a fallos de alta fidelidad descritos en el nuevo artículo sigue siendo significativa, aunque el ritmo del progreso a través de las plataformas superconductora, de átomos neutros y de iones atrapados se acelera.</p>
+<h2 id="referencias">Referencias <a class="heading-anchor" href="#referencias" aria-label="Odkaz na Referencias">#</a></h2>
+<ul>
+<li>Sebastien Rousseau, (2025). <a href="https://sebastienrousseau.com/cs/2025-09-01-kvantove-odolne-platby-epaa/index.html" title="Quantum-Safe Payments: Why the Payments Industry Must Act Now">Quantum-Safe Payments: Why the Payments Industry Must Act Now</a>.</li>
+<li>Sebastien Rousseau, (2023). <a href="https://sebastienrousseau.com/cs/2023-12-11-kvantova-distribuce-klicu-revoluce-bankovni-bezpecnosti/index.html" title="Quantum Key Distribution: Revolutionising Security in Banking">Quantum Key Distribution: Revolutionising Security in Banking</a>.</li>
+<li>Sebastien Rousseau, (2023). <a href="https://sebastienrousseau.com/cs/2023-11-19-crystals-kyber-ochranny-algoritmus-v-kvantove-ere/index.html" title="CRYSTALS-Kyber: el algoritmo de protección en la era cuántica">CRYSTALS-Kyber: el algoritmo de protección en la era cuántica</a>.</li>
+<li>Anonymous, (2026). <a href="https://arxiv.org/abs/2603.28627" title="Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits">Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits ⧉</a>. arXiv preprint arXiv:2603.28627.</li>
+<li>Castelvecchi, D. (2026). <a href="https://www.nature.com/articles/d41586-026-01054-1" title="Quantum-computing breakthroughs pose risks to encryption">Quantum-computing breakthroughs pose risks to encryption ⧉</a>. Nature.</li>
+<li>Phys.org, (2026). <a href="https://phys.org/news/2026-04-quantum-built-qubits-team.html" title="Useful quantum computers could be built with as few as 10,000 qubits">Useful quantum computers could be built with as few as 10,000 qubits ⧉</a>. Phys.org.</li>
+</ul>
+<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/cs/o-mne/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior bankovní technolog, píši o aplikované AI, migraci na ISO 20022, postkvantové kryptografii pro finanční služby a strukturální transformaci velkoobchodních plateb.</span><span class="author-credentials">Více než 20 let zkušeností v HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/cs/o-mne/index.html">Celý profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Naposledy revidováno <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Související četba</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/cs/2026-05-11-lucy-besson-prenos-znalosti-ai-a-kvantum/index.html" class="related-media" aria-label="La memoria flash de Lucy, revisitada: lo que Besson vio sobre la migración del conocimiento a las máquinas" tabindex="-1"><img alt="Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles" src="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="la-memoria-flash-de-lucy-revisitada-lo-que-besson-vio-sobre-la-migracion-del-con"><a href="https://sebastienrousseau.com/cs/2026-05-11-lucy-besson-prenos-znalosti-ai-a-kvantum/index.html">La memoria flash de Lucy, revisitada: lo que Besson vio sobre la migración del conocimiento a las máquinas</a> <a class="heading-anchor" href="#la-memoria-flash-de-lucy-revisitada-lo-que-besson-vio-sobre-la-migracion-del-con" aria-label="Odkaz na La memoria flash de Lucy, revisitada: lo que Besson vio sobre la migración del conocimiento a las máquinas">#</a></h3><p><time datetime="2026-05-11">2026-05-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/cs/2025-09-01-kvantove-odolne-platby-epaa" class="related-media" aria-label="Pagos resistentes a lo cuántico: por qué la industria debe actuar ahora" tabindex="-1"><img alt="Quantum computing circuit board in blue light" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="pagos-resistentes-a-lo-cuantico-por-que-la-industria-debe-actuar-ahora"><a href="https://sebastienrousseau.com/cs/2025-09-01-kvantove-odolne-platby-epaa">Pagos resistentes a lo cuántico: por qué la industria debe actuar ahora</a> <a class="heading-anchor" href="#pagos-resistentes-a-lo-cuantico-por-que-la-industria-debe-actuar-ahora" aria-label="Odkaz na Pagos resistentes a lo cuántico: por qué la industria debe actuar ahora">#</a></h3><p><time datetime="2025-09-01">2025-09-01</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/cs/2024-04-22-chyba-v-kvantovem-algoritmu-pro-mrizkovou-kryptografii/index.html" class="related-media" aria-label="Criptografía sobre retículos: un bug en el ataque LWE de Chen" tabindex="-1"><img alt="Image generated using MidJourney - A Network of digital nodes in red and blue hues." src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="criptografia-sobre-reticulos-un-bug-en-el-ataque-lwe-de-chen"><a href="https://sebastienrousseau.com/cs/2024-04-22-chyba-v-kvantovem-algoritmu-pro-mrizkovou-kryptografii/index.html">Criptografía sobre retículos: un bug en el ataque LWE de Chen</a> <a class="heading-anchor" href="#criptografia-sobre-reticulos-un-bug-en-el-ataque-lwe-de-chen" aria-label="Odkaz na Criptografía sobre retículos: un bug en el ataque LWE de Chen">#</a></h3><p><time datetime="2024-04-22">2024-04-22</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Zdroje a odkazy</h2><ol class="article-sources-list"><li><a href="https://arxiv.org/pdf/2603.28627" rel="external noopener nofollow"><span class="source-host">arxiv.org</span><span class="source-path">/pdf/2603.28627</span></a></li><li><a href="https://arxiv.org/abs/2603.28627" rel="external noopener nofollow"><span class="source-host">arxiv.org</span><span class="source-path">/abs/2603.28627</span></a></li></ol></aside><nav class="post-pagination" aria-label="Stránkování článků"><a class="post-pagination-prev" href="/cs/2025-09-01-kvantove-odolne-platby-epaa/"><span class="post-pagination-label">Předchozí</span><span class="post-pagination-title">Quantum-Safe Payments: Why the Industry Must Act Now</span></a><a class="post-pagination-next" href="/cs/2026-05-11-lucy-besson-prenos-znalosti-ai-a-kvantum/"><span class="post-pagination-label">Další</span><span class="post-pagination-title">Lucy's Flash Drive Revisited: AI, Quantum & Knowledge</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/cs/o-mne/index.html">O mně</a></li>
+              <li><a href="/cs/kontakt/index.html">Kontakt</a></li>
+              <li><a href="/cs/vytvoreno-statickym-generatorem/index.html">Vytvořeno se Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publikace</h2>
+            <ul>
+              <li><a href="/cs/clanky/index.html">Články</a></li>
+              <li><a href="/cs/publikace/index.html">Publikace</a></li>
+              <li><a href="/cs/stitky/index.html">Štítky</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Práce</h2>
+            <ul>
+              <li><a href="/cs/projekty/index.html">Projekty</a></li>
+              <li><a href="/cs/playlisty/index.html">Playlists</a></li>
+              <li><a href="/cs/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Kontakt</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Přihlášení k odběru newsletteru">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — výzkumné poznámky o platbách, AI a postkvantové kryptografii. Žádný spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="vy@banka.cz" />
+            <input type="hidden" name="_subject" value="Přihlášení k odběru newsletteru — sebastienrousseau.com" />
+            <button type="submit">Přihlásit se k odběru</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. Všechna práva vyhrazena.</span>
+          <div class="social" aria-label="Sociální odkazy">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau na Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau na LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau na Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau na YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/cs/pristupnost/index.html">Přístupnost</a> ·
+            <a href="/cs/soukromi/index.html">Soukromí</a> ·
+            <a href="/cs/podminky/index.html">Podmínky</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"cs"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"cs"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2498,"about":{"@type":"Thing","name":"CRYSTALS-Kyber","sameAs":["https://en.wikipedia.org/wiki/Kyber","https://www.wikidata.org/wiki/Q116727584","https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html"]},"mentions":[{"@type":"Thing","name":"NIST PQC","sameAs":"https://csrc.nist.gov/projects/post-quantum-cryptography"}],"headline":"Los umbrales cuánticos vuelven a moverse","description":"Un nuevo artículo sugiere que el algoritmo de Shor podría ejecutarse con solo 10.000 qubits. El umbral de la computación cuántica criptográficamente relevante cae más rápido de lo que la mayoría suponía.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp","width":"100vw","height":"100vh","caption":"Esquema del umbral de qubits para el algoritmo de Shor. Placa de circuito de computación cuántica con reflejos azules"},"url":"https://sebastienrousseau.com/cs/2026-04-11-kvantove-prahove-hodnoty-se-zase-posunuji/","datePublished":"2026-04-11T06:06:06+00:00","dateModified":"2026-05-11","inLanguage":"cs","keywords":"algoritmo de Shor, qubits, computación cuántica, ECC, RSA-2048, átomos neutros reconfigurables, códigos de corrección de errores, CRYSTALS-Kyber, CRYSTALS-Dilithium, PQC, criptografía postcuántica","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/cs/2026-04-11-kvantove-prahove-hodnoty-se-zase-posunuji/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"cs"},"citation":[{"@type":"CreativeWork","url":"https://arxiv.org/pdf/2603.28627"},{"@type":"CreativeWork","url":"https://arxiv.org/abs/2603.28627"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/cs/"},{"@type":"ListItem","position":3,"name":"Los umbrales cuánticos vuelven a moverse","item":"https://sebastienrousseau.com/cs/2026-04-11-kvantove-prahove-hodnoty-se-zase-posunuji/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Hledat">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Hledat</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Hledat">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Hledat v dokumentaci..." autocomplete="off" aria-label="Hledat"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> zavřít</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigovat</span><span><kbd>Enter</kbd> otevřít</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

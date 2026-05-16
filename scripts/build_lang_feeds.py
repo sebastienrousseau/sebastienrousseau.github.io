@@ -41,7 +41,9 @@ PUBLIC = Path("public")
 BASE = "https://sebastienrousseau.com"
 
 _DATED_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-")
-_FM_KEY_RE = re.compile(r'^([a-zA-Z_]+):\s*"((?:[^"\\]|\\.)*)"\s*$')
+_FM_KEY_RE = re.compile(
+    r'^([a-zA-Z_]+):\s*(?:"((?:[^"\\]|\\.)*)"|\'((?:[^\'\\]|\\.)*)\')\s*$'
+)
 
 _MONTHS = {
     "January": 1, "February": 2, "March": 3, "April": 4,
@@ -72,7 +74,7 @@ def parse_frontmatter(text: str) -> dict[str, str]:
             continue
         m = _FM_KEY_RE.match(line.strip())
         if m:
-            fm[m.group(1)] = m.group(2)
+            fm[m.group(1)] = m.group(2) if m.group(2) is not None else m.group(3)
     return fm
 
 

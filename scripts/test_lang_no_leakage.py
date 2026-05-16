@@ -129,7 +129,7 @@ def check_page(path: Path, en_strings: list[str]) -> list[str]:
     defects: list[str] = []
     for s in en_strings:
         escaped = re.escape(s)
-        pat = rf"(?<![A-Za-z]){escaped}(?![A-Za-z])"
+        pat = rf"(?<![A-Za-z\-]){escaped}(?![A-Za-z\-])"
         if re.search(pat, chrome):
             defects.append(f"{rel}: EN string leaked into chrome: {s!r}")
     return defects

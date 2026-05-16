@@ -1,12 +1,12 @@
 {
-  "subtitle": "디지털 거래의 신뢰를 재형성하는 분산 원장",
-  "keywords": "블록체인, 분산 원장, 암호자산, 스마트 컨트랙트, 토큰화, 핀테크, 신뢰, 투명성",
-  "date": "January 2, 2018",
-  "description": "금융 서비스를 재구성하고 새로운 비즈니스 모델을 창출하는 블록체인 기술 개관.",
-  "locale": "ko_KR",
-  "language": "ko-KR",
-  "banner_alt": "야간의 네트워크화된 도시 스카이라인",
   "title": "블록체인: 2018년에 중요해질 기술",
   "banner": "https://cloudcdn.pro/stocks/images/clint-adair-BW0vK-FA3eg-unsplash.webp",
-  "last_reviewed": "2026-05-16"
+  "subtitle": "디지털 거래의 신뢰를 재형성하는 분산 원장",
+  "banner_alt": "야간의 네트워크화된 도시 스카이라인",
+  "locale": "ko_KR",
+  "keywords": "블록체인, 분산 원장, 암호자산, 스마트 컨트랙트, 토큰화, 핀테크, 신뢰, 투명성",
+  "last_reviewed": "2026-05-16",
+  "language": "ko-KR",
+  "description": "금융 서비스를 재구성하고 새로운 비즈니스 모델을 창출하는 블록체인 기술 개관.",
+  "date": "January 2, 2018"
 }

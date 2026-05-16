@@ -1,11 +1,11 @@
 {
-  "keywords": "Bitcoin, криптовалюта, блокчейн, P2P, двойная трата, майнинг, proof-of-work, ETF, Satoshi Nakamoto, децентрализованные финансы",
-  "language": "ru-RU",
+  "description": "Bitcoin: одноранговая система электронных денег (P2P ECS), способная революционизировать способы онлайн-расчётов между людьми.",
+  "locale": "ru_RU",
   "banner_alt": "Кучка золотых и серебряных монет на столе",
   "title": "Bitcoin: итоги года первой криптовалюты",
-  "description": "Bitcoin: одноранговая система электронных денег (P2P ECS), способная революционизировать способы онлайн-расчётов между людьми.",
-  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
+  "date": "January 1, 2018",
+  "keywords": "Bitcoin, криптовалюта, блокчейн, P2P, двойная трата, майнинг, proof-of-work, ETF, Satoshi Nakamoto, децентрализованные финансы",
   "subtitle": "Одноранговая система электронных платежей, переопределившая деньги",
-  "locale": "ru_RU",
-  "date": "January 1, 2018"
+  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
+  "language": "ru-RU"
 }

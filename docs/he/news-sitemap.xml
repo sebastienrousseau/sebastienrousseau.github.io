@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<url>
+  <loc>https://sebastienrousseau.com/he/2026-05-21-best-cloud-infrastructure-architecture-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>أفضل معمارية بنية تحتية سحابية في 2026: مخطّط AI-native ومتعدّد السحابة وواعٍ بالكم للخدمات المالية</news:title>
+    <news:keywords>معمارية السحابة 2026، بنية تحتية AI-native، multi-cloud، serverless، edge computing، WebAssembly، Wasm، DevSecOps، مركز بياناتٍ مستدام، التبريد السائل، AWS Bedrock، Google Vertex AI، Azure OpenAI Service، agentic commerce، أسراب متعدّدة الوكلاء، agentic unit economics، FinOps وكيلي، الهوية التشفيرية للوكلاء، SPIFFE، SPIRE، العدوى الخوارزمية، gravity البيانات، FinOps egress، HPC، تخزين GPU، continuous treasury، السيولة دون حدود، المدفوعات في الوقت الفعلي، توليد البيانات الاصطناعية، confidential computing، JPMorgan multi-cloud، تحديث Citi، graph neural networks، احتيال deepfake، harvest now decrypt later، HNDL، التشفير ما بعد الكمي، crypto-agility، أمن MCP، prompt injection، هجمات سلسلة التوريد، CloudCDN، Cloudflare Workers، Durable Objects، WCAG-AA، Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2026-05-18-agentic-engineering-banks-blueprint-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
+    <news:title>الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه</news:title>
+    <news:keywords>الهندسة الوكيلية، التطوير المُوجَّه بالمواصفات، البنوك، الخدمات المالية، حوكمة AI، EU AI Act، DORA، SR 11-7، NIST AI RMF، ISO 42001، تحديث COBOL، mainframe، vibe coding، vibe hacking، الوكلاء المستقلّون، Claude Code، GitHub Spec Kit، AI Bill of Materials، AIBOM، human in the loop، HITL، human on the loop، HOTL، إدارة مخاطر الأطراف الثالثة، TPRM، التشفير ما بعد الكمي، مستوى تحكّم الوكلاء، FCA، SM&amp;CR، خطة عمل 12 أسبوعاً، Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-15T06:06:06+00:00</news:publication_date>
+    <news:title>العائد المخفي: تفكيك إيداعات BRSRV و BSTBL من BlackRock</news:title>
+    <news:keywords>stablecoins، GENIUS Act، BlackRock، BRSRV، BSTBL، صندوق السوق النقدية المُرمَّز، OCC، OnChain Shares، Securitize، BNY Mellon، المدفوعات</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-14T06:06:06+00:00</news:publication_date>
+    <news:title>تأمين السجلّ: دليل لمجالس الإدارة بشأن الهجرة ما بعد الكمية في بنوك التمويل المؤسسي</news:title>
+    <news:keywords>التشفير ما بعد الكمي، ML-KEM، ML-DSA، FIPS 203، FIPS 204، BIS Project Leap، G7 CEG، NCSC، ANSSI، BSI، ASD، CNSA 2.0، المرونة التشفيرية، التمويل المؤسسي، مدفوعات الجملة</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2026-05-12-iso-20022-pacs008-structured-address-deadline/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-12T06:06:06+00:00</news:publication_date>
+    <news:title>موعد pacs.008 «العنوان المُهيكَل» في نوفمبر 2026: نظرةٌ على ستّة أشهر</news:title>
+    <news:keywords>ISO 20022، pacs.008، pacs.009، pacs.004، pacs.003، pain.001، CBPR+، SWIFT، SR2026، العنوان المُهيكَل، SEPA، EPC، المدفوعات العابرة للحدود، فحص العقوبات، pacs008</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2026-05-11-lucy-besson-knowledge-transfer-ai-quantum/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-11T06:06:06+00:00</news:publication_date>
+    <news:title>ذاكرة فلاش لوسي، عودة إلى الزيارة: ما رآه Besson في هجرة المعرفة إلى الآلات</news:title>
+    <news:keywords>Lucy، Luc Besson، نقل المعرفة، الذكاء الاصطناعي، LLM، qubits الذرّات المحايدة، محاكاة الدماغ، Neuralink، Eon Systems، Carboncopies، Fromm، استقلال الركيزة، فلسفة الذكاء الاصطناعي</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2026-04-11-quantum-thresholds-are-moving-again/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2026-04-11T06:06:06+00:00</news:publication_date>
+    <news:title>العتبات الكمية تتحرّك من جديد</news:title>
+    <news:keywords>خوارزمية Shor، qubits، الحوسبة الكمية، ECC، RSA-2048، الذرّات المحايدة القابلة لإعادة التشكيل، رموز تصحيح الأخطاء، CRYSTALS-Kyber، CRYSTALS-Dilithium، PQC، التشفير ما بعد الكمي</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2025-09-01-quantum-safe-payments-epaa/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2025-09-01T06:06:06+00:00</news:publication_date>
+    <news:title>المدفوعات المقاومة للحوسبة الكمية: لماذا يجب على الصناعة التحرّك الآن</news:title>
+    <news:keywords>المدفوعات المقاومة للحوسبة الكمية، التشفير ما بعد الكمي، SEPA، SWIFT gpi، ISO 20022، أمن الخدمات المالية، EPAA، harvest-now decrypt-later، المرونة التشفيرية، Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2024-04-22T06:06:06+00:00</news:publication_date>
+    <news:title>التشفير الكمومي القائم على الشبكات: خلل في هجوم Chen على LWE</news:title>
+    <news:keywords>التشفير ما بعد الكمومي, NIST, توحيد PQC القياسي, Yilei Chen, الخوارزمية الكمومية, التشفير القائم على الشبكات, مسألة LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, التشفير المقاوم للكمومية</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2024-04-01T06:06:06+00:00</news:publication_date>
+    <news:title>OpenVoice: ريادة الابتكار في تقنية الاستنساخ الصوتي</news:title>
+    <news:keywords>OpenVoice, تقنية الاستنساخ الصوتي, الكلام الصناعي بالذكاء الاصطناعي, الاستنساخ الصوتي مفتوح المصدر, التركيب الصوتي عبر اللغات, الاستنساخ الصوتي الفوري, التحكّم في الأسلوب الصوتي, تقنية صوتية للوصول, الأصوات في صناعة الترفيه, الذكاء الاصطناعي الصوتي لخدمة العملاء</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2024-04-01T06:06:06+00:00</news:publication_date>
+    <news:title>خوارزمية كمومية تتحدّى التشفير القائم على الشبكات</news:title>
+    <news:keywords>الحوسبة الكمومية, الخوارزمية الكمومية, التشفير القائم على الشبكات, LWE, التشفير, التشفير ما بعد الكمومي, الأمن السيبراني, Yilei Chen, أبحاث التشفير, التهديدات الأمنية</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-25T06:06:06+00:00</news:publication_date>
+    <news:title>التشفير المتماثل الكامل (FHE) في عصر الحوسبة الكمومية المصرفية</news:title>
+    <news:keywords>التشفير المتماثل الكامل, الأمن المصرفي, الحوسبة الكمومية, تشفير البيانات المالية, دراسات حالة FHE, الأُطُر التنظيمية لـFHE, العبء الحاسوبي لـFHE, أبحاث FHE, عتاد FHE, قوانين خصوصية البيانات</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-17T06:06:06+00:00</news:publication_date>
+    <news:title>تطوير الذكاء الاصطناعي بالنماذج اللغوية الكبيرة متعدّدة الوسائط: رؤى من MM1</news:title>
+    <news:keywords>النماذج اللغوية الكبيرة متعدّدة الوسائط, دراسة MM1, تقدّمات الذكاء الاصطناعي, استراتيجيات التدريب المسبق, التعرّف على الصور, معالجة اللغة الطبيعية, تطبيقات الذكاء الاصطناعي, مستقبل الذكاء الاصطناعي, التعلّم متعدّد الوسائط, أبحاث الذكاء الاصطناعي</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2024-03-12-revolutionising-real-time-speech-recognition-on-macos-with-openai-whisper/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-12T06:06:06+00:00</news:publication_date>
+    <news:title>التعرّف الصوتي السريع في الزمن الفعلي على macOS باستخدام OpenAI Whisper</news:title>
+    <news:keywords>OpenAI Whisper, Metal Performance Shaders, التعرّف الصوتي على macOS, النسخ في الزمن الفعلي, اكتشاف النشاط الصوتي, تسريع GPU, تكامل Python, تحويل الكلام إلى نصّ على macOS, اكتشاف الكلام الموفِّر للطاقة, Apple silicon</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-08T06:06:06+00:00</news:publication_date>
+    <news:title>RustLogs (RLG): مكتبة تسجيل منظَّمة للغة Rust</news:title>
+    <news:keywords>مكتبة تسجيل Rust, تسجيل غير متزامن في Rust, تنسيقات سجلات منظَّمة, تصحيح تطبيقات Rust, تسجيل قابل للتخصيص في Rust, أدوات تطوير Rust, ميزات RustLogs RLG, تسجيل فعّال في Rust, تكامل RustLogs, توثيق RustLogs</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2024-03-04-le-chat-by-mistral-ai-a-new-era-in-conversational-ai/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-04T06:06:06+00:00</news:publication_date>
+    <news:title>Le Chat من Mistral AI: ذكاء اصطناعي حواري متعدد اللغات</news:title>
+    <news:keywords>Le Chat, Mistral AI, chatbot Mistral, مساعد افتراضي, الفهم متعدد اللغات, خدمة العملاء بالذكاء الاصطناعي, حلول المؤسسات Mistral, تخصيص Le Chat, دعم متعدد اللغات, التواصل بالذكاء الاصطناعي, الذكاء الاصطناعي للمؤسسات</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2024-02-26-google-gemma-ai-transforming-open-source-ai-development/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-26T06:06:06+00:00</news:publication_date>
+    <news:title>Google Gemma: تحويل تطوير الذكاء الاصطناعي مفتوح المصدر</news:title>
+    <news:keywords>Google Gemma, نموذج ذكاء اصطناعي مفتوح المصدر, البنية التقنية لـ Gemma, Gemma 2B 7B, ذكاء اصطناعي أخلاقي, دمج الذكاء الاصطناعي مع macOS, حلول الذكاء الاصطناعي للمؤسسات, الذكاء الاصطناعي الحواري, تحليل البيانات بالذكاء الاصطناعي, الذكاء الاصطناعي للأجهزة الطرفية</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2024-02-19-unlocking-gemini-google-ai-revolution-explained/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-19T06:06:06+00:00</news:publication_date>
+    <news:title>فك شفرة Gemini 1.5: ثورة Google في الذكاء الاصطناعي مشروحةً</news:title>
+    <news:keywords>Gemini 1.5, Google AI, architecture Mixture-of-Experts, الكفاءة الحسابية, توسيع نافذة السياق, ابتكار الذكاء الاصطناعي, تحويل تحليل البيانات, in-context learning, حالات استخدام الذكاء الاصطناعي, الثورة التكنولوجية</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2024-02-13-eus-ai-act-shaping-the-future-of-global-ai-regulation/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-13T06:06:06+00:00</news:publication_date>
+    <news:title>قانون الذكاء الاصطناعي في الاتحاد الأوروبي: رائد التنظيم الأخلاقي للذكاء الاصطناعي عالمياً</news:title>
+    <news:keywords>AI Act الاتحاد الأوروبي, تنظيم الذكاء الاصطناعي, إطار الذكاء الاصطناعي الأخلاقي, إدارة مخاطر الذكاء الاصطناعي, ابتكار الذكاء الاصطناعي, شفافية الذكاء الاصطناعي, حقوق المستهلكين, حوكمة الذكاء الاصطناعي, معايير الذكاء الاصطناعي, أخلاقيات الذكاء الاصطناعي</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2024-02-12-akande-voice-assistant-revolutionising-personal-and-executive-assistance/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
+    <news:title>Àkàndé: مساعد صوتي مدعوم بـ GPT للتنفيذيين</news:title>
+    <news:keywords>Àkàndé, مساعد صوتي, فهم اللغة الطبيعية, تلخيصات PDF, تخزين مؤقت فعّال, OpenAI GPT, مساعدة تنفيذية, مساعدة شخصية, مساعدون رقميون, ابتكار تكنولوجي</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-08T06:06:06+00:00</news:publication_date>
+    <news:title>الذكاء الاصطناعي التوليدي في الإعلان: Amazon Rufus وMeta</news:title>
+    <news:keywords>الذكاء الاصطناعي في الإعلان, Amazon Rufus, أدوات Meta AI, استهداف المستهلكين, تكنولوجيا الإعلان, روبوتات الدردشة, اتجاهات التسويق الرقمي, تحليلات الذكاء الاصطناعي, الذكاء الاصطناعي الإبداعي, تحسين الحملات</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2024-01-29-ai-powered-audio-insights-analysis-translations/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
+    <news:title>تحليل الكلام والترجمة والرؤى المدعومة بالذكاء الاصطناعي</news:title>
+    <news:keywords>audio analyser, azure ai, speech-to-text, تحليل البيانات الصوتية, تحليل النصوص, ترجمات الذكاء الاصطناعي, رؤى صوتية, التفريغ الآلي, معالجة البيانات الصوتية, تعلم الآلة</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2024-01-23-advancements-in-ai-prompt-engineering/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-23T06:06:06+00:00</news:publication_date>
+    <news:title>هندسة الموجِّهات في الذكاء الاصطناعي 2024: تقنيات فعّالة</news:title>
+    <news:keywords>AI Prompt Engineering، التعليمات المخصّصة، الذكاء الاصطناعي متعدّد الشخصيات، chain of thought، الحوسبة الكمومية، الذكاء الاصطناعي الأخلاقي، adaptive prompting، zero shot، few shot، اتّجاهات تكنولوجيا الذكاء الاصطناعي</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-15T06:06:06+00:00</news:publication_date>
+    <news:title>Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري</news:title>
+    <news:keywords>رحلة تقنية شخصية، اكتشاف Rust، استكشاف الذكاء الاصطناعي، الحوسبة الكمومية، اندماج الفنّ والتصوير، Alien Studio، إنشاء الفنّ الرقمي، التكنولوجيا في الفنّ، تصوير مبتكر، إعادة اكتشاف فنّي</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-08T06:06:06+00:00</news:publication_date>
+    <news:title>اتّجاهات الذكاء الاصطناعي 2024: رؤى وتوقّعات للمستقبل</news:title>
+    <news:keywords>اتّجاهات الذكاء الاصطناعي 2024، الذكاء الاصطناعي التوليدي، الذكاء الاصطناعي في التعليم، الأمن السيبراني والذكاء الاصطناعي، الذكاء الاصطناعي في التمويل، إنشاء المحتوى بالذكاء الاصطناعي، الذكاء الاصطناعي لاستكشاف الفضاء، الذكاء الاصطناعي الأخلاقي، الذكاء الاصطناعي في التجزئة، تحليلات الذكاء الاصطناعي</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-08T06:06:06+00:00</news:publication_date>
+    <news:title>Qiskit والتحويل الكمومي لفورييه لتحليل نسب الائتمان</news:title>
+    <news:keywords>الحوسبة الكمومية، التمويل، تحليل نسب الائتمان، Qiskit، التحويل الكمومي لفورييه، IBM، تعلّم الآلة، الذكاء الاصطناعي، تقييم المخاطر المالية، الجدارة الائتمانية</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2023-12-25T06:06:06+00:00</news:publication_date>
+    <news:title>إحداث ثورة في التمويل عبر الخوارزميات الكمومية المعزّزة بالذكاء الاصطناعي</news:title>
+    <news:keywords>الحوسبة الكمومية، خوارزميات الذكاء الاصطناعي، الرياضيات المالية، تكنولوجيا القطاع المصرفي، إدارة المخاطر، تصميم الخوارزميات، تحليل البيانات، استراتيجيات الاستثمار، التمويل الكمومي، تعلّم الآلة</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2023-12-18T06:06:06+00:00</news:publication_date>
+    <news:title>حالة الذكاء الاصطناعي والحوسبة الكمومية في القطاع المصرفي: مراجعة 2023</news:title>
+    <news:keywords>الذكاء الاصطناعي في القطاع المصرفي، الحوسبة الكمومية، التكنولوجيا المالية، الذكاء الاصطناعي مفتوح المصدر، إدارة المخاطر، الأمن الكمومي، تنظيم الذكاء الاصطناعي، أخلاقيات الذكاء الاصطناعي، حوكمة الذكاء الاصطناعي، الابتكار المصرفي</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2023-12-11T06:06:06+00:00</news:publication_date>
+    <news:title>توزيع المفاتيح الكمومي يُحدث ثورة في أمن القطاع المصرفي</news:title>
+    <news:keywords>توزيع المفاتيح الكمومي، QKD، الأمن الكمومي، الصيرفة، الصناعة المالية، التمويل الرقمي، الأمن السيبراني، الحوسبة الكمومية، HSBC، تجربة الحماية الكمومية، المعاملات المالية</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2023-12-04T06:06:06+00:00</news:publication_date>
+    <news:title>الإدارة الفعّالة للتاريخ والوقت مع DateTime (DTT)</news:title>
+    <news:keywords>DateTime، DTT، مكتبة Rust، التحليل، التحقّق، المعالجة، التنسيق، التواريخ، الأوقات</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-28T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib: CRYSTALS-Kyber بلغة Rust لما بعد الكم</news:title>
+    <news:keywords>KyberLib، Rust CRYSTALS-Kyber، التشفير ما بعد الكمي، التشفير القائم على الشبكيات، تبادل المفاتيح المقاوم للكم، NIST FIPS 203، Sebastien Rousseau، KEM، مصادقة المدفوعات، مكتبة PQC</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-19T06:06:06+00:00</news:publication_date>
+    <news:title>CRYSTALS-Kyber: خوارزمية الحماية في العصر الكمي</news:title>
+    <news:keywords>الحوسبة الكمية، التشفير المقاوم للكم، CRYSTALS-Kyber، التشفير، الأمن، المصرفية، المالية، الحماية، حماية البيانات، الاستدامة</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2023-11-12-exploring-generative-ai/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
+    <news:title>الذكاء الاصطناعي التوليدي في 2023: كيف يعمل، وأين يَحلّ</news:title>
+    <news:keywords>الذكاء الاصطناعي التوليدي، التقنية، المستقبل، الأثر، الأخلاقيات، التآزر، الابتكار، الإبداع، التحوّل، التطوّر</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-05T06:06:06+00:00</news:publication_date>
+    <news:title>ثوابت رياضية وتشفيرية لأمن Rust</news:title>
+    <news:keywords>الثوابت الرياضية، الثوابت التشفيرية، أمن Rust، الاتصالات الآمنة، التشفير، RSA، تشفير المنحنى الإهليلجي، مكتبة Common (CMN)، تطبيقات Rust، الحسابات الرياضية</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2023-10-26-libmake-a-code-generator-to-reduce-repetitive-tasks-and-build-high-quality-rust-libraries/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2023-10-26T06:06:06+00:00</news:publication_date>
+    <news:title>تبسيط تطوير مكتبات Rust عبر توليد الشفرة</news:title>
+    <news:keywords>Rust، المكتبة، التطوير، الشفرة، المولِّد، البويلربليت، أفضل الممارسات، الجودة، الموثوقية</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2023-10-16T06:06:06+00:00</news:publication_date>
+    <news:title>حماية البيانات في عصر الكم: مكتبة الهاش (HSH)</news:title>
+    <news:keywords>التشفير المقاوم للكم، التشفير ما بعد الكمي، مكتبة الهاش، HSH، تجزئة كلمات المرور، اشتقاق المفاتيح، Argon2i، Bcrypt، Scrypt، الحوسبة الكمية</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2023-10-09T06:06:06+00:00</news:publication_date>
+    <news:title>Shokunin: أسرع مولّد للمواقع الساكنة قائمٌ على Rust</news:title>
+    <news:keywords>Shokunin, مولّد المواقع الساكنة, SSG, Rust, الأداء, SEO, الوصول الميسّر, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
+    <news:title>أتمتة إنشاء ملفّات الدفع المتوافقة مع ISO 20022 باستخدام Pain001</news:title>
+    <news:keywords>ISO 20022, pain.001, Pain001, Python, المدفوعات, الأتمتة, CBPR+, HVPS+, SEPA, الامتثال, التحويلات</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2018-02-15-the-making-of-the-express-transaction-credits-platform/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
+    <news:title>صناعة منصّة Express Transaction Credits</news:title>
+    <news:keywords>Ethereum, ERC-223, ERC-20, EXTC, Express Transaction Credits, blockchain, المدفوعات, التوكنات, القروض, التمويل اللامركزي</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
+    <news:title>كشف عملة مشفّرة جديدة وحلّ مدفوعات أسرع</news:title>
+    <news:keywords>EXTC Network, العملة المشفّرة, المدفوعات الأسرع, Ethereum, EIP20, smart contracts, blockchain, المدفوعات العابرة للحدود, الشمول المالي</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2018-01-24-the-erc-20-token-standard/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-24T06:06:06+00:00</news:publication_date>
+    <news:title>معيار التوكن ERC-20</news:title>
+    <news:keywords>ERC-20, Ethereum, token, smart contract, DeFi, EIP, blockchain, التشغيل البيني, DApps, المعيار</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2018-01-09-understanding-the-technology-behind-blockchain/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
+    <news:title>فهم التقنية الكامنة وراء البلوكشين</news:title>
+    <news:keywords>blockchain, Ethereum, smart contract, العملة المشفّرة, Solidity, Geth, dApps, ERC-20, الترميز, testnet</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2018-01-02-blockchain-the-technology-that-matters-in-2018/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-02T06:06:06+00:00</news:publication_date>
+    <news:title>البلوكشين: التقنية التي تهمّ في 2018</news:title>
+    <news:keywords>blockchain, العملة المشفّرة, Bitcoin, P2P, smart contract, السجل الموزّع, التمويل, سلسلة التوريد, الهويّة الرقمية, الترميز</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2018-01-01-bitcoin-the-year-in-review/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-01T06:06:06+00:00</news:publication_date>
+    <news:title>بيتكوين: عام في المراجعة لأوّل عملة مشفّرة</news:title>
+    <news:keywords>بيتكوين, عملة مشفّرة, blockchain, P2P, الإنفاق المزدوج, التعدين, proof-of-work, ETF, Satoshi Nakamoto, التمويل اللامركزي</news:keywords>
+  </news:news>
+</url>
+</urlset>

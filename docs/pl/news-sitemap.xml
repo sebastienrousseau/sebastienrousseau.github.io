@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-05-21-najlepsza-architektura-infrastruktury-chmurowej-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
+    <news:title>Najlepsza architektura infrastruktury chmurowej 2026</news:title>
+    <news:keywords>architektura chmurowa, banki, 2026, multi-cloud, suwerenność danych, FinOps, AWS, Azure, GCP</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-05-18-inzynieria-agentowa-blueprint-bankow-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
+    <news:title>Inżynieria agentowa: blueprint banków na 2026</news:title>
+    <news:keywords>inżynieria agentowa, agenci AI, bankowość, blueprint 2026, LLM, automatyzacja, AI w produkcji</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenizowany-fundusz-rynku-pienieznego/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-15T06:06:06+00:00</news:publication_date>
+    <news:title>BlackRock BRSRV/BSTBL: GENIUS Act i tokenizowany fundusz rynku pieniężnego</news:title>
+    <news:keywords>BlackRock, BRSRV, BSTBL, GENIUS Act, stablecoin, tokenizacja, MMF, fundusz rynku pieniężnego</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-05-14-zabezpieczenie-ksiegi-migracja-postkwantowa-finansow-korporacyjnych/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-14T06:06:06+00:00</news:publication_date>
+    <news:title>Zabezpieczanie księgi: migracja postkwantowa w finansach korporacyjnych</news:title>
+    <news:keywords>migracja postkwantowa, PQC, finanse korporacyjne, skarbce, G7, BIS Project Leap, kryptografia</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-05-12-iso-20022-pacs008-strukturalny-adres-termin/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-12T06:06:06+00:00</news:publication_date>
+    <news:title>Termin strukturalnego adresu pacs.008 w listopadzie 2026: spojrzenie na sześć miesięcy</news:title>
+    <news:keywords>ISO 20022, pacs.008, pacs.009, pacs.004, pacs.003, pain.001, CBPR+, SWIFT, SR2026, strukturalny adres, SEPA, EPC, płatności transgraniczne, screening sankcji, pacs008</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-05-11-lucy-besson-transfer-wiedzy-ai-i-kwanty/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-11T06:06:06+00:00</news:publication_date>
+    <news:title>Lucy Besson: transfer wiedzy w AI i kwantach</news:title>
+    <news:keywords>transfer wiedzy, AI, kwanty, konsulting, knowledge transfer, Lucy Besson</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2026-04-11-progi-kwantowe-znow-sie-przesuwaja/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-04-11T06:06:06+00:00</news:publication_date>
+    <news:title>Progi kwantowe znów się przesuwają</news:title>
+    <news:keywords>algorytm Shora, kubity, kwantowe komputery, PQC, kryptografia, RSA, ECC</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2025-09-01-platnosci-odporne-na-kwantowe-epaa/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2025-09-01T06:06:06+00:00</news:publication_date>
+    <news:title>Płatności odporne na kwanty: biała księga EPAA</news:title>
+    <news:keywords>EPAA, quantum-safe payments, biała księga, kryptografia postkwantowa, płatności, SWIFT, infrastruktura</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2024-04-22-blad-w-algorytmie-kwantowym-dla-kryptografii-kratowej/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2024-04-22T06:06:06+00:00</news:publication_date>
+    <news:title>Błąd odkryty w algorytmie kwantowym dla kryptografii kratowej</news:title>
+    <news:keywords>kwantowy algorytm, błąd, LWE, kraty, PQC, Yilei Chen, kryptografia postkwantowa</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2024-04-01-openvoice-innowacja-w-klonowaniu-glosu/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2024-04-01T06:06:06+00:00</news:publication_date>
+    <news:title>OpenVoice: innowacja w technologii klonowania głosu</news:title>
+    <news:keywords>OpenVoice, klonowanie głosu, AI, synteza mowy, TTS, open source</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2024-04-15-algorytm-kwantowy-wyzwaniem-dla-kryptografii-kratowej/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2024-04-01T06:06:06+00:00</news:publication_date>
+    <news:title>Algorytm kwantowy wyzwaniem dla kryptografii kratowej</news:title>
+    <news:keywords>kwantowy algorytm, kryptografia kratowa, LWE, PQC, kwantowe ataki, Yilei Chen</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2024-03-25-w-pelni-homomorficzne-szyfrowanie-w-bankowej-erze-kwantowej/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-25T06:06:06+00:00</news:publication_date>
+    <news:title>W pełni homomorficzne szyfrowanie w bankowej erze kwantowej</news:title>
+    <news:keywords>FHE, homomorficzne szyfrowanie, kwanty, bankowość, prywatność, kryptografia</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2024-03-18-rozwoj-ai-z-multimodalnymi-llm-wnioski-z-mm1/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-17T06:06:06+00:00</news:publication_date>
+    <news:title>Rozwój AI z multimodalnymi LLM: wnioski z MM1</news:title>
+    <news:keywords>MM1, Apple, multimodalny LLM, AI, machine learning, pretreening, badania</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2024-03-12-rozpoznawanie-mowy-w-czasie-rzeczywistym-na-macos-z-openai-whisper/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-12T06:06:06+00:00</news:publication_date>
+    <news:title>Rewolucja rozpoznawania mowy w czasie rzeczywistym na macOS z OpenAI Whisper</news:title>
+    <news:keywords>OpenAI Whisper, macOS, Metal Performance Shaders, rozpoznawanie mowy, Apple Silicon, AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2024-03-08-rustlogs-zaawansowana-biblioteka-logow-dla-rust/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-08T06:06:06+00:00</news:publication_date>
+    <news:title>RustLogs: zaawansowana biblioteka logów dla aplikacji Rust</news:title>
+    <news:keywords>RustLogs, Rust, logowanie, log, biblioteka, open source, obserwowalność</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2024-03-04-le-chat-mistral-ai-nowa-era-ai-konwersacyjnej/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2024-03-04T06:06:06+00:00</news:publication_date>
+    <news:title>Le Chat od Mistral AI: nowa era AI konwersacyjnej</news:title>
+    <news:keywords>Mistral AI, Le Chat, AI konwersacyjna, LLM, europejska AI, open source</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2024-02-26-google-gemma-przeksztalca-rozwoj-open-source-ai/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-26T06:06:06+00:00</news:publication_date>
+    <news:title>Google Gemma: przekształcanie rozwoju open source AI</news:title>
+    <news:keywords>Gemma, Google, open source AI, LLM, modele otwarte, Gemini</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2024-02-19-gemini-rewolucja-ai-google-wyjasniona/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-19T06:06:06+00:00</news:publication_date>
+    <news:title>Gemini: rewolucja AI Google wyjaśniona</news:title>
+    <news:keywords>Gemini, Google AI, multimodalna AI, LLM, Bard, machine learning</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2024-02-13-akt-ai-ue-przyszlosc-globalnej-regulacji-ai/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-13T06:06:06+00:00</news:publication_date>
+    <news:title>Akt AI UE: kształtowanie przyszłości globalnej regulacji AI</news:title>
+    <news:keywords>EU AI Act, regulacja AI, sztuczna inteligencja, prawo, UE, compliance, etyka AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2024-02-12-akande-asystent-glosowy-rewolucja-asystentury-osobistej-i-wykonawczej/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-12T06:06:06+00:00</news:publication_date>
+    <news:title>Akande: asystent głosowy rewolucjonizujący asystenturę osobistą i wykonawczą</news:title>
+    <news:keywords>Akande, asystent głosowy, GPT, AI, OpenAI, asystentura wykonawcza, produktywność</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2024-02-08-rewolucja-reklamy-jak-ai-ksztaltuje-przyszlosc/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2024-02-08T06:06:06+00:00</news:publication_date>
+    <news:title>Rewolucja reklamy: jak AI kształtuje przyszłość</news:title>
+    <news:keywords>AI, reklama, marketing, personalizacja, generatywna AI, GPT, automatyzacja</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2024-01-29-analiza-dzwieku-tlumaczenia-i-spostrzezenia-z-ai/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-29T06:06:06+00:00</news:publication_date>
+    <news:title>Analiza dźwięku, tłumaczenia i spostrzeżenia z AI</news:title>
+    <news:keywords>AI, audio, transkrypcja, tłumaczenia, Whisper, rozpoznawanie mowy, NLP</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2024-01-23-postep-w-inzynierii-promptow-ai/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-23T06:06:06+00:00</news:publication_date>
+    <news:title>Postęp w inżynierii promptów AI</news:title>
+    <news:keywords>prompt engineering, LLM, AI, GPT, Claude, chain-of-thought, few-shot, RAG</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2024-01-15-alien-studio-rewolucja-sztuki-przez-fotografie-ai/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-15T06:06:06+00:00</news:publication_date>
+    <news:title>Alien Studio: rewolucja sztuki przez fotografię AI</news:title>
+    <news:keywords>Alien Studio, AI, fotografia, sztuka cyfrowa, diffusion, Midjourney, generatywna sztuka</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2024-01-01-trendy-ai-2024-spostrzezenia-i-przewidywania/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-08T06:06:06+00:00</news:publication_date>
+    <news:title>Trendy AI 2024: spostrzeżenia i przewidywania</news:title>
+    <news:keywords>AI, trendy 2024, LLM, agenci AI, multimodalne, regulacje, fintech</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2024-01-08-optymalizacja-analizy-wskaznika-kredytowego-z-ibm-qiskit-i-kwantowa-transformata-fouriera/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2024-01-08T06:06:06+00:00</news:publication_date>
+    <news:title>Optymalizacja analizy wskaźnika kredytowego z IBM Qiskit i kwantową transformatą Fouriera</news:title>
+    <news:keywords>IBM Qiskit, QFT, kwantowa transformata Fouriera, kredyt, analiza ryzyka, bankowość, kwanty</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2023-12-25-rewolucja-finansow-przez-algorytmy-kwantowe-wspierane-ai/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2023-12-25T06:06:06+00:00</news:publication_date>
+    <news:title>Rewolucja finansów dzięki algorytmom kwantowym wspieranym AI</news:title>
+    <news:keywords>AI, kwantowe algorytmy, finanse, IBM Qiskit, optymalizacja, machine learning</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2023-12-18-stan-ai-i-obliczen-kwantowych-w-bankowosci-podsumowanie-2023/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2023-12-18T06:06:06+00:00</news:publication_date>
+    <news:title>Stan AI i obliczeń kwantowych w bankowości: podsumowanie 2023</news:title>
+    <news:keywords>AI, kwanty, bankowość, podsumowanie 2023, fintech, LLM, kryptografia postkwantowa</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2023-12-11-kwantowa-dystrybucja-kluczy-rewolucja-bezpieczenstwa-w-bankowosci/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2023-12-11T06:06:06+00:00</news:publication_date>
+    <news:title>Kwantowa dystrybucja kluczy: rewolucja bezpieczeństwa w bankowości</news:title>
+    <news:keywords>QKD, kwantowa dystrybucja kluczy, bezpieczeństwo, bankowość, kryptografia kwantowa, BB84</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2023-12-04-data-i-czas-w-rust-z-biblioteka-dtt/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2023-12-04T06:06:06+00:00</news:publication_date>
+    <news:title>Opanowanie daty i czasu w Rust z biblioteką DTT</news:title>
+    <news:keywords>DTT, Rust, data, czas, strefa czasowa, biblioteka, open source</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2023-11-28-kyberlib-tarcza-rust-przed-zagrozeniami-kwantowymi/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-28T06:06:06+00:00</news:publication_date>
+    <news:title>KyberLib: tarcza Rust przed zagrożeniami kwantowymi</news:title>
+    <news:keywords>KyberLib, CRYSTALS-Kyber, Rust, PQC, kryptografia postkwantowa, NIST, FIPS 203</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2023-11-19-crystals-kyber-algorytm-ochrony-w-erze-kwantowej/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-19T06:06:06+00:00</news:publication_date>
+    <news:title>CRYSTALS-Kyber: algorytm ochrony w erze kwantowej</news:title>
+    <news:keywords>CRYSTALS-Kyber, NIST FIPS 203, KEM, kryptografia postkwantowa, lattice, kraty, PQC</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2023-11-12-eksploracja-generatywnej-ai/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-12T06:06:06+00:00</news:publication_date>
+    <news:title>Eksploracja generatywnej AI</news:title>
+    <news:keywords>generatywna AI, LLM, GPT, diffusion, sztuczna inteligencja, ChatGPT, modele językowe</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2023-11-05-stale-matematyczne-i-kryptograficzne-dla-bezpieczenstwa-rust/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2023-11-05T06:06:06+00:00</news:publication_date>
+    <news:title>Stałe matematyczne i kryptograficzne dla bezpieczeństwa Rust</news:title>
+    <news:keywords>Rust, kryptografia, stałe, matematyka, bezpieczeństwo, NIST</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2023-10-26-libmake-generator-kodu-do-bibliotek-rust/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2023-10-26T06:06:06+00:00</news:publication_date>
+    <news:title>Libmake: generator kodu redukujący powtarzalne zadania w bibliotekach Rust</news:title>
+    <news:keywords>Libmake, Rust, generator kodu, biblioteka, szablon, scaffold, open source</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2023-10-16-ochrona-danych-w-erze-kwantowej-biblioteka-hash-hsh/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2023-10-16T06:06:06+00:00</news:publication_date>
+    <news:title>Ochrona danych w erze kwantowej: biblioteka hash HSH</news:title>
+    <news:keywords>HSH, hash, kryptografia, Rust, kwanty, post-kwantowe, bezpieczeństwo, hasła</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2023-10-09-shokunin-najszybszy-generator-stron-statycznych-w-rust/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2023-10-09T06:06:06+00:00</news:publication_date>
+    <news:title>Shokunin: najszybszy generator stron statycznych w Rust</news:title>
+    <news:keywords>Shokunin, generator stron statycznych, Rust, SSG, wydajność, SEO, dostępność, JSON-LD</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2023-09-29-automatyzacja-plikow-platnosci-iso-20022-z-pain001/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2023-09-29T06:06:06+00:00</news:publication_date>
+    <news:title>Automatyzacja tworzenia plików płatności zgodnych z ISO 20022 przy użyciu pain001</news:title>
+    <news:keywords>ISO 20022, pain.001, płatności, SEPA, SWIFT, Python, automatyzacja, open source</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2018-02-15-powstanie-platformy-express-transaction-credits/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-15T06:06:06+00:00</news:publication_date>
+    <news:title>Powstanie platformy Express Transaction Credits</news:title>
+    <news:keywords>platforma płatnicza, ETC, transakcje, blockchain, fintech, architektura</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2018-02-04-nowa-kryptowaluta-i-szybsze-platnosci-przyszlosci/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2018-02-04T06:06:06+00:00</news:publication_date>
+    <news:title>Nowa kryptowaluta i rozwiązanie szybszych płatności przyszłości</news:title>
+    <news:keywords>kryptowaluta, szybkie płatności, blockchain, protokół, fintech</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2018-01-24-standard-tokenow-erc-20/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-24T06:06:06+00:00</news:publication_date>
+    <news:title>Standard tokenów ERC-20</news:title>
+    <news:keywords>ERC-20, Ethereum, tokeny, smart kontrakty, kryptowaluta, ICO, blockchain</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2018-01-09-zrozumiec-technologie-stojaca-za-blockchainem/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-09T06:06:06+00:00</news:publication_date>
+    <news:title>Zrozumieć technologię stojącą za blockchainem</news:title>
+    <news:keywords>blockchain, kryptografia, funkcja skrótu, drzewo Merkle, proof-of-work, proof-of-stake, konsensus</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2018-01-02-blockchain-technologia-ktora-liczy-sie-w-2018/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-02T06:06:06+00:00</news:publication_date>
+    <news:title>Blockchain: technologia, która liczy się w 2018</news:title>
+    <news:keywords>blockchain, technologia rozproszonej księgi, decentralizacja, kryptografia, smart kontrakty, fintech</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pl/2018-01-01-bitcoin-rok-w-podsumowaniu/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2018-01-01T06:06:06+00:00</news:publication_date>
+    <news:title>Bitcoin: rok pierwszej kryptowaluty w podsumowaniu</news:title>
+    <news:keywords>Bitcoin, kryptowaluta, blockchain, P2P, podwójne wydatkowanie, kopanie, proof-of-work, ETF, Satoshi Nakamoto, finanse zdecentralizowane</news:keywords>
+  </news:news>
+</url>
+</urlset>

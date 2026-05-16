@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="bn-BD">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sun, 19 Nov 2023 09:59:00 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sun, 19 Nov 2023 09:59:00 +0000" id="last-modified" />
+    <title>CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.">
+<meta name="keywords" content="quantum computing, quantum-resistant cryptography, CRYSTALS-Kyber, cryptography, security, banking, financial, encryption, data protection, future-proof">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-NwczfO1I5SzNniUFzJ2i9XCGPKMvSKlS1g/pkJ0NPpM=' 'sha256-d1HzCPRPSZMdSWX8y39pUZ7dNehPRqABMASedtw4Xno=' 'sha256-k9usfq3oNecAl2AFT5xBcWeUJOQXCdim7jrOr/ivnbE=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/bn/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom ফিড" href="/bn/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age — Sebastien Rousseau">
+<meta property="og:description" content="Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/bn/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="bn_BD">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age — Sebastien Rousseau">
+<meta name="twitter:description" content="Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/bn/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2023-11-19-algorithme-de-protection-a-l-ere-quantique-crystals-kyber/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2023-11-19-crystals-kyber-ochranny-algoritmus-v-kvantove-ere/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2023-11-19-crystals-kyber-der-schutzalgorithmus-im-quantenzeitalter/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2023-11-19-crystals-kyber-algoritmo-de-proteccion-en-la-era-cuantica/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2023-11-19-crystals-kyber-quantum-yug-mein-suraksha-algorithm/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2023-11-19-crystals-kyber-algoritma-pengaman-di-era-kuantum/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2023-11-19-crystals-kyber-algoritmo-di-protezione-nellera-quantistica/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2023-11-19-crystals-kyber-ryoushi-jidai-no-bouei-arugorizumu/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2023-11-19-crystals-kyber-yangja-sidae-bohoallgori-jeum/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2023-11-19-crystals-kyber-het-beschermingsalgoritme-in-het-kwantumtijdperk/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2023-11-19-crystals-kyber-algorytm-ochrony-w-erze-kwantowej/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2023-11-19-crystals-kyber-algoritmo-de-protecao-na-era-quantica/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2023-11-19-crystals-kyber-zashchitnyi-algoritm-v-kvantovuyu-epokhu/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2023-11-19-crystals-kyber-skyddsalgoritmen-i-kvantaldern/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2023-11-19-crystals-kyber-aljorhithem-pongkan-yuk-quantum/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2023-11-19-crystals-kyber-kuantum-cagi-icin-koruma-algoritmasi/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2023-11-19-crystals-kyber-thuat-toan-bao-ve-thoi-luong-tu/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2023-11-19-crystals-kyber-liangzi-shidai-de-baohu-suanfa/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2023-11-19-crystals-kyber-liangzi-shidai-de-baohu-suanfa-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">মূল কনটেন্টে যান</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="নেভিগেশন টগল করুন" />
+      <div class="wrap">
+        <a class="ap-brand" href="/bn/index.html" aria-label="Sebastien Rousseau হোম">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="প্রধান নেভিগেশন">
+          <ul class="ap-menu">
+            <li><a href="/bn/amader-shomporke/index.html">About</a></li>
+            <li><a href="/bn/prabondho/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/bn/prokashana/index.html">Papers</a></li>
+            <li><a href="/bn/bishay/index.html">বিষয়</a></li>
+            <li><a href="/bn/prokolpo/index.html">Projects</a></li>
+            <li><a href="/bn/playlist/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="ডার্ক থিম চালু করুন" aria-pressed="false" title="থিম পরিবর্তন করুন">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="অনুসন্ধান (Cmd বা Ctrl + K)" title="অনুসন্ধান (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="ভাষা">
+            <button type="button" class="ap-lang-toggle" aria-label="BN, ভাষা পরিবর্তন" aria-expanded="false" aria-haspopup="menu" title="ভাষা পরিবর্তন">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">BN</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="শীঘ্রই আসছে">🇺🇦 Українська</span>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/bn/jogajog/index.html" aria-label="যোগাযোগ">যোগাযোগ ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="নেভিগেশন টগল করুন">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</h1>
+      <p class="sub">CRYSTALS-Kyber, the NIST FIPS 203 standard for post-quantum key encapsulation.</p>
+    <nav class="article-tags" aria-label="বিষয়"><a href="/tags/index.html#h3-quantum-computing" class="article-tag" rel="tag">quantum computing</a><a href="/tags/index.html#h3-quantum-resistant-cryptography" class="article-tag" rel="tag">quantum-resistant cryptography</a><a href="/tags/index.html#h3-crystals-kyber" class="article-tag" rel="tag">CRYSTALS-Kyber</a><a href="/tags/index.html#h3-cryptography" class="article-tag" rel="tag">cryptography</a><a href="/tags/index.html#h3-security" class="article-tag" rel="tag">security</a><a href="/tags/index.html#h3-banking" class="article-tag" rel="tag">banking</a><a href="/tags/index.html#h3-financial" class="article-tag" rel="tag">financial</a><a href="/tags/index.html#h3-encryption" class="article-tag" rel="tag">encryption</a><a href="/tags/index.html#h3-data-protection" class="article-tag" rel="tag">data protection</a><a href="/tags/index.html#h3-future-proof" class="article-tag" rel="tag">future-proof</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2023-11-19T09:59:00+00:00" class="meta-pub">প্রকাশিত 19 Nov 2023</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">আপডেট 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="আনুমানিক পঠন সময়">10 মিনিট পঠন</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>বিষয়বস্তু</h2><ol><li><a href="#insight">Insight</a></li><li><a href="#idea">Idea</a></li><li><a href="#impact">Impact</a></li><li><a href="#incentives">Incentives</a></li><li><a href="#conclusion">Conclusion</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Insight.</strong> In my previous article, [Protecting Data in the Quantum Age ⧉][03], I delved into the impending threat of quantum computing to digital security and looked at how quantum-resistant cryptography (QRC) can address it.</li>  <li><strong>Idea.</strong> At the core of CRYSTALS-Kyber&#x27;s groundbreaking design lies its innovative approach to key encapsulation, a critical component of secure communication.</li>  <li><strong>Impact.</strong> The banking and financial services industry is in a constant race to stay ahead of increasingly sophisticated cyber threats.</li>  <li><strong>Incentives.</strong> In a landscape where cybersecurity is not just a necessity but a competitive differentiator, the banking and financial services industry stands at a critical juncture.</li></ul></aside><p><img src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" alt="A modern, sleek quantum computer"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<hr />
+<blockquote>
+<p><strong>TL;DR.</strong> Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.</p>
+<p><strong>মূল বার্তা</strong></p>
+<ul>
+<li>DRAFT translation: this article is a বাংলা stub generated from the English source. Body text is intentionally left in English until a native reviewer signs off.</li>
+<li>Source title: <em>CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</em>.</li>
+<li>Source subtitle: <em>CRYSTALS-Kyber, the NIST FIPS 203 standard for post-quantum key encapsulation.</em>.</li>
+<li>Editorial note: replace this block with hand-translated copy before flipping <code>active=True</code> for bn in <code>scripts/_lang_registry.py</code>.</li>
+</ul>
+</blockquote>
+<hr />
+<!-- lead-start -->
+<aside class="post-lead" aria-label="নিবন্ধ সারাংশ">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.</p>
+<p class="post-lead-heading"><strong>মূল বার্তা</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Idea.</strong> At the core of CRYSTALS-Kyber's groundbreaking design lies its innovative approach to key encapsulation, a critical component of secure communication.</li>
+  <li><strong>Impact.</strong> The banking and financial services industry is in a constant race to stay ahead of increasingly sophisticated cyber threats.</li>
+  <li><strong>Incentives.</strong> In a landscape where cybersecurity is not just a necessity but a competitive differentiator, the banking and financial services industry stands at a critical juncture.</li>
+  <li><strong>Navigating the Quantum Threat: The Genesis of CRYSTALS-Kyber.</strong> In my previous article, Protecting Data in the Quantum Age ⧉, I delved into the impending threat of quantum computing to digital security and looked at how quantum-resistant cryptography (QRC) can address it.</li>
+</ul>
+<p class="post-lead-related"><strong>সম্পর্কিত পঠন:</strong> <a href="https://sebastienrousseau.com/bn/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a>, <a href="https://sebastienrousseau.com/bn/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a>, <a href="https://sebastienrousseau.com/bn/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html">Mathematical and Cryptographic Constants for Rust Security</a>.</p>
+</aside>
+<!-- lead-end -->
+<p><img src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" alt="AI, Artificial Intelligence concept,3d rendering,conceptual image"  width="1200" height="675" decoding="async" loading="lazy">.class=&quot;img-fluid clearfix&quot;</p>
+<h2 id="insight">Insight <a class="heading-anchor" href="#insight" aria-label="লিঙ্ক Insight">#</a></h2>
+<h3 id="navigating-the-quantum-threat-the-genesis-of-crystals-kyber">Navigating the Quantum Threat: The Genesis of CRYSTALS-Kyber <a class="heading-anchor" href="#navigating-the-quantum-threat-the-genesis-of-crystals-kyber" aria-label="লিঙ্ক Navigating the Quantum Threat: The Genesis of CRYSTALS-Kyber">#</a></h3>
+<p>In my previous article, <a href="/bn/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html" title="Protecting Data in the Quantum Age: The Hash Library (HSH)">Protecting Data in the Quantum Age ⧉</a>, I delved into the impending threat of quantum computing to digital security and looked at how quantum-resistant cryptography (QRC) can address it. I will explore now <code>CRYSTALS-Kyber</code>, a groundbreaking QRC algorithm that is transforming the security landscape.</p>
+<p>Quantum computers, with their ability to perform certain calculations far faster than classical computers, pose a significant risk to current encryption algorithms. This raises concerns about the safety of sensitive information, including financial transactions, medical records, and personal communications.</p>
+<p>To mitigate this threat, cryptographers have developed QRC algorithms, such as <code>CRYSTALS-Kyber</code>. This algorithm is a key encapsulation mechanism (KEM) designed to securely exchange secret keys between parties.</p>
+<p>Today, <code>CRYSTALS-Kyber</code> stands as a frontrunner in the <a href="https://www.nist.gov/" title="The National Institute of Standards and Technology (NIST)">National Institute of Standards and Technology (NIST) ⧉</a> post-quantum cryptography standardisation process, demonstrating its potential as a robust security solution for the digital era.</p>
+<h3 id="crystals-kyber-unyielding-security-in-the-face-of-quantum-computing">CRYSTALS-Kyber: Unyielding Security in the Face of Quantum Computing <a class="heading-anchor" href="#crystals-kyber-unyielding-security-in-the-face-of-quantum-computing" aria-label="লিঙ্ক CRYSTALS-Kyber: Unyielding Security in the Face of Quantum Computing">#</a></h3>
+<p>The security of <code>CRYSTALS-Kyber</code> hinges on the inherent difficulty of solving the <code>Learning With Errors (LWE)</code> problem over module lattices. This intricate mathematical challenge, considered computationally intractable even for quantum computers, serves as the bedrock of <code>CRYSTALS-Kyber</code>'s resilience against quantum attacks.</p>
+<h3 id="crystals-kyber-a-paradigm-shift-in-digital-security">CRYSTALS-Kyber: A Paradigm Shift in Digital Security <a class="heading-anchor" href="#crystals-kyber-a-paradigm-shift-in-digital-security" aria-label="লিঙ্ক CRYSTALS-Kyber: A Paradigm Shift in Digital Security">#</a></h3>
+<p><code>CRYSTALS-Kyber</code> belongs to the CRYSTALS (Cryptographic Suite for Algebraic Lattices) suite of algorithms and proudly bears the distinction of being a quantum-safe algorithm (QSA).</p>
+<p>While the concept of utilising lattice problems for cryptographic purposes is not entirely new, <code>CRYSTALS-Kyber</code> elevates this concept to unparalleled levels of efficiency. Its ability to generate cryptographic keys with smaller key sizes and faster encryption and decryption speeds makes it an ideal choice for real-world applications, particularly in the demanding world of finance.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="Divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="idea">Idea <a class="heading-anchor" href="#idea" aria-label="লিঙ্ক Idea">#</a></h2>
+<h3 id="understanding-crystals-kyber-s-mechanics-key-encapsulation-at-its-core">Understanding CRYSTALS-Kyber's Mechanics: Key Encapsulation at Its Core <a class="heading-anchor" href="#understanding-crystals-kyber-s-mechanics-key-encapsulation-at-its-core" aria-label="লিঙ্ক Understanding CRYSTALS-Kyber's Mechanics: Key Encapsulation at Its Core">#</a></h3>
+<p>At the core of <code>CRYSTALS-Kyber</code>'s groundbreaking design lies its innovative approach to key encapsulation, a critical component of secure communication. It harnesses the power of lattice cryptography, a method renowned for its resilience against quantum-based attacks. This sophisticated technique leverages geometric structures in multidimensional space to establish cryptographic keys.</p>
+<p><code>CRYSTALS-Kyber</code> employs a specific type of lattice problem, known for its efficiency and security properties, to generate cryptographic keys. This ensures the protection of sensitive data even in the face of quantum computing advancements.</p>
+<h4>Secure Key Encapsulation: The Essence of CRYSTALS-Kyber</h4>
+<p>Key encapsulation is akin to securely locking a message in a box, where only the intended recipient has the key to open it. In the world of cryptography, this process involves creating a pair of keys: a public key, which can be shared openly, and a private key, which must be kept secret. The brilliance of <code>CRYSTALS-Kyber</code> lies in its ability to generate and use these keys in a way that ensures unparalleled security.</p>
+<p>Let's see how <code>CRYSTALS-Kyber</code> uses key encapsulation to establish secure communication between two parties, Alice and Bob. The sequence diagram below illustrates the steps involved in establishing secure communication between Alice and Bob using <code>CRYSTALS-Kyber</code>, a key encapsulation mechanism (KEM) designed to provide secure key exchange for cryptographic protocols. The KyberServer plays here a pivotal role in this process, generating and distributing the cryptographic keys required for secure communication using <code>CRYSTALS-Kyber</code>.</p>
+<p><img src="https://cloudcdn.pro/stocks/diagrams/alice-bob-eve-kyber.svg" alt="CRYSTALS-Kyber Key Encapsulation Mechanism (KEM)" title="CRYSTALS-Kyber Key Encapsulation Mechanism (KEM)"  width="1200" height="800" decoding="async" loading="lazy">.class=&quot;img-fluid clearfix&quot;</p>
+<h5>Legend</h5>
+<ul>
+<li>Alice: The sender of the message.</li>
+<li>Bob: The receiver of the message.</li>
+<li>KyberServer: The server that generates and distributes the cryptographic keys.</li>
+</ul>
+<h5>Explanation</h5>
+<h6>Public Key Exchange</h6>
+<ul>
+<li>Alice initiates the process by requesting her public key from the KyberServer.</li>
+<li>The KyberServer responds by sending Alice's public key, a mathematical value that can be publicly shared without compromising the security of Alice's private key.</li>
+<li>Alice then shares her public key with Bob, allowing him to encrypt messages that only Alice can decrypt.</li>
+</ul>
+<h6>Encapsulation and Decapsulation</h6>
+<ul>
+<li>Bob requests an encapsulation key from the KyberServer. This temporary key will be used to encrypt the shared secret key before sending it to Alice.</li>
+<li>The KyberServer sends the encapsulation key to Bob.</li>
+<li>Bob uses Alice's public key and the encapsulation key to encrypt the shared secret key, creating an encrypted capsule.</li>
+<li>Bob sends the encrypted capsule to Alice.</li>
+<li>Alice requests a decryption key from the KyberServer. This temporary key will be used to decrypt the encrypted capsule and reveal the shared secret key.</li>
+<li>The KyberServer sends the decryption key to Alice.</li>
+</ul>
+<h6>Shared Secret Key Exchange</h6>
+<ul>
+<li>Alice uses her private key and the decryption key to decrypt the capsule, revealing the shared secret key.</li>
+<li>Alice shares the shared secret key with Bob, allowing him to decrypt messages encrypted using the shared secret key.</li>
+</ul>
+<h6>Secure Communication</h6>
+<p>The sequence diagram effectively illustrates the intricate steps involved in establishing a secure communication channel, highlighting the crucial role of the KyberServer in generating and distributing the cryptographic keys. By employing the <code>CRYSTALS-Kyber</code> KEM, Alice and Bob can safeguard their sensitive information and maintain secure communication even in the face of potential adversaries.</p>
+<h3 id="lattice-based-cryptography-a-robust-foundation-for-quantum-resistance">Lattice-Based Cryptography: A Robust Foundation for Quantum Resistance <a class="heading-anchor" href="#lattice-based-cryptography-a-robust-foundation-for-quantum-resistance" aria-label="লিঙ্ক Lattice-Based Cryptography: A Robust Foundation for Quantum Resistance">#</a></h3>
+<p><code>CRYSTALS-Kyber</code> employs a lattice-based approach, a method known for its potential resistance to quantum attacks. The underlying principle of lattice cryptography involves geometric structures in multidimensional space. While the concept of navigating these complex structures might seem daunting, <code>CRYSTALS-Kyber</code> simplifies it. It uses a specific type of lattice problem, known for its efficiency and security properties, to create cryptographic keys.</p>
+<h4>Efficient Key Sizes: A Balancing Act Between Security and Performance</h4>
+<p>One of <code>CRYSTALS-Kyber</code>'s standout features is the size of its keys. Compared to other post-quantum cryptographic (PQC) algorithms, <code>CRYSTALS-Kyber</code> offers significantly smaller key sizes, making it more practical for real-world applications. <code>CRYSTALS-Kyber</code> provides three different security levels, each with its own key size:</p>
+<ul>
+<li><strong>Kyber512</strong>: This security level provides 128 bits of security and uses key sizes of 1,632 bytes for secret keys, 800 bytes for public keys, and 768 bytes for ciphertexts.</li>
+<li><strong>Kyber768</strong>: This security level provides 192 bits of security and uses key sizes of 2,400 bytes for secret keys, 1,184 bytes for public keys, and 1,088 bytes for ciphertexts.</li>
+<li><strong>Kyber1024</strong>: This security level provides 256 bits of security and uses key sizes of 3,168 bytes for secret keys, 1,568 bytes for public keys, and 1,568 bytes for ciphertexts.</li>
+</ul>
+<p>These relatively small key sizes make <code>CRYSTALS-Kyber</code> an attractive option for resource-constrained devices, such as smartphones and IoT devices. They also reduce the bandwidth required to transmit cryptographic keys, which can be beneficial for applications with limited network connectivity.</p>
+<h4>Unwavering Speed: A Beacon in the Fast-Paced Financial Landscape</h4>
+<p>Another aspect of <code>CRYSTALS-Kyber</code>'s appeal is its speed. In the fast-paced banking and financial services sector, speed is as important as security. The algorithm's design ensures that it operates swiftly, facilitating quick encryption and decryption processes. This efficiency does not come at the expense of security; instead, it is a direct result of the sophisticated mathematical foundations of the algorithm.</p>
+<h3 id="crystals-kyber-a-symbiosis-of-security-efficiency-and-speed">CRYSTALS-Kyber: A Symbiosis of Security, Efficiency, and Speed <a class="heading-anchor" href="#crystals-kyber-a-symbiosis-of-security-efficiency-and-speed" aria-label="লিঙ্ক CRYSTALS-Kyber: A Symbiosis of Security, Efficiency, and Speed">#</a></h3>
+<p><code>CRYSTALS-Kyber</code> has emerged as a frontrunner in the quest for quantum-resistant cryptography, offering a unique combination of security, efficiency, and speed. Its innovative lattice-based approach, smaller key sizes, and optimised design make it an ideal choice for protecting sensitive information in the banking and financial services industry. As the world continues to embrace digital technologies, <code>CRYSTALS-Kyber</code> stands poised to play a pivotal role in safeguarding our data for years to come.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="Divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="impact">Impact <a class="heading-anchor" href="#impact" aria-label="লিঙ্ক Impact">#</a></h2>
+<h3 id="crystals-kyber-advantages-for-banking-and-financial-services">CRYSTALS-Kyber: Advantages for Banking and Financial Services <a class="heading-anchor" href="#crystals-kyber-advantages-for-banking-and-financial-services" aria-label="লিঙ্ক CRYSTALS-Kyber: Advantages for Banking and Financial Services">#</a></h3>
+<p>The banking and financial services industry is in a constant race to stay ahead of increasingly sophisticated cyber threats. In this context, <code>CRYSTALS-Kyber</code> stands out not only for its quantum-resistant (QR) properties but also for the tangible benefits it offers to this industry. This section delves into the practical advantages of <code>CRYSTALS-Kyber</code>, emphasising why it is particularly well-suited for the unique needs of financial institutions.</p>
+<ul>
+<li>
+<p><strong>Enhanced Security with Smaller Keys</strong>: One of the most significant advantages of <code>CRYSTALS-Kyber</code> is its ability to create smaller encryption keys without sacrificing security. In a sector where data breaches can have catastrophic consequences, robust security is non-negotiable. The smaller key sizes offered by <code>CRYSTALS-Kyber</code> simplify key management processes, a critical factor in large-scale banking systems where thousands of keys are in play. This not only enhances security but also optimises storage and transmission efficiency, a crucial factor in an era where speed and space are at a premium.</p>
+</li>
+<li>
+<p><strong>Speed and Efficiency</strong>: In financial services, where transactions occur in milliseconds, the speed of cryptographic operations is crucial. <code>CRYSTALS-Kyber</code> excels in this regard, offering fast key generation, encapsulation, and decapsulation processes. This speed ensures that security measures do not become a bottleneck in high-frequency trading environments or during large-scale transactions. Furthermore, the efficiency of <code>CRYSTALS-Kyber</code> translates into reduced computational resources, leading to cost savings and more environmentally friendly operations.</p>
+</li>
+<li>
+<p><strong>Future-Proofing Against Quantum Threats</strong>: With the advent of quantum computing, the industry faces a future where traditional cryptographic methods could be rendered obsolete. By adopting <code>CRYSTALS-Kyber</code>, financial institutions are not only securing their present but are also preparing for a post-quantum world. This proactive approach to cybersecurity demonstrates a commitment to long-term data protection, an essential consideration for stakeholders and customers who prioritise data security.</p>
+</li>
+<li>
+<p><strong>Regulatory Compliance and Competitive Advantage</strong>: As regulators worldwide begin to acknowledge the quantum threat, they are likely to mandate the adoption of quantum-resistant algorithms. Early adoption of <code>CRYSTALS-Kyber</code> positions financial institutions as leaders in compliance and security. Additionally, it offers a competitive edge, reassuring clients and partners of the institution's dedication to cutting-edge security practices.</p>
+</li>
+</ul>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="Divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="incentives">Incentives <a class="heading-anchor" href="#incentives" aria-label="লিঙ্ক Incentives">#</a></h2>
+<h3 id="the-case-for-adopting-crystals-kyber">The Case for Adopting CRYSTALS-Kyber <a class="heading-anchor" href="#the-case-for-adopting-crystals-kyber" aria-label="লিঙ্ক The Case for Adopting CRYSTALS-Kyber">#</a></h3>
+<p>In a landscape where cybersecurity is not just a necessity but a competitive differentiator, the banking and financial services industry stands at a critical juncture. The adoption of <code>CRYSTALS-Kyber</code> represents a strategic move, aligning with both current security needs and future technological shifts. This final section outlines the compelling incentives for integrating <code>CRYSTALS-Kyber</code> into the cryptographic infrastructure of financial services.</p>
+<ul>
+<li>
+<p><strong>Staying Ahead of Cybersecurity Trends</strong>: The rise of quantum computing poses a significant threat to traditional encryption algorithms, rendering them vulnerable to decryption by future quantum computers. By adopting <code>CRYSTALS-Kyber</code>, financial institutions can safeguard their sensitive data and critical infrastructure against these emerging threats.</p>
+</li>
+<li>
+<p><strong>Operational Efficiency and Cost-Effectiveness</strong>: The compact key sizes and efficient algorithms of <code>CRYSTALS-Kyber</code> lead to substantial cost savings. Compared to traditional encryption algorithms, <code>CRYSTALS-Kyber</code> reduces storage requirements by up to 50% and bandwidth consumption by up to 30%, resulting in significant cost savings for financial institutions with large data volumes.</p>
+</li>
+<li>
+<p><strong>Regulatory Alignment and Risk Management</strong>: With several regulatory bodies, including the National Institute of Standards and Technology (NIST) and the European Union Agency for Cybersecurity (ENISA), actively recommending the adoption of quantum-resistant cryptographic solutions, early adopters of <code>CRYSTALS-Kyber</code> will be well-positioned to comply with future regulatory requirements and mitigate potential legal risks.</p>
+</li>
+<li>
+<p><strong>Enhancing Client Trust and Institutional Reputation</strong>: Leading financial institutions like Barclays and Deutsche Bank have adopted <code>CRYSTALS-Kyber</code> to safeguard their client data and secure their critical financial transactions. This commitment to advanced security has not only protected these institutions from potential cyberattacks but has also enhanced their reputation as trusted custodians of sensitive information.</p>
+</li>
+</ul>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="Divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="conclusion">Conclusion <a class="heading-anchor" href="#conclusion" aria-label="লিঙ্ক Conclusion">#</a></h2>
+<h3 id="securing-the-financial-future-with-crystals-kyber">Securing the Financial Future with CRYSTALS-Kyber <a class="heading-anchor" href="#securing-the-financial-future-with-crystals-kyber" aria-label="লিঙ্ক Securing the Financial Future with CRYSTALS-Kyber">#</a></h3>
+<p>In the face of evolving cybersecurity threats, the banking and financial services industry faces a critical choice. Traditional encryption algorithms, once considered secure, are now vulnerable to the emerging power of quantum computing. <code>CRYSTALS-Kyber</code> emerges as a beacon of security, offering a robust, efficient, and future-proof solution to protect the financial sector's digital assets.</p>
+<p>With its unique combination of QR features, operational efficiency, and smaller key sizes, <code>CRYSTALS-Kyber</code> is a game-changer for financial security. By adopting <code>CRYSTALS-Kyber</code>, institutions not only secure their current operations but also prepare for a future where quantum computing redefines cybersecurity. This proactive approach demonstrates a commitment to the highest standards of security, enhancing client trust and reinforcing the industry's resilience against evolving threats.</p>
+<p>In an increasingly interconnected and digital world, <code>CRYSTALS-Kyber</code> stands as a testament to the power of innovative, forward-thinking solutions. Its adoption by leading financial institutions like Barclays and Deutsche Bank is a powerful endorsement of its capabilities and a clear signal to the industry to embrace this quantum-resistant cryptographic solution.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="Divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<p>In closing, I trust this exploration of <code>CRYSTALS-Kyber</code> has illuminated the profound impact of quantum-resistant cryptography in the financial sector. If you're keen to delve further into this groundbreaking technology or have any queries, I invite you to connect with me on <a href="https://www.linkedin.com/in/sebastienrousseau/" title="Sebastien Rousseau on LinkedIn">LinkedIn ⧉</a> or via the <a href="/bn/jogajog/index.html" title="Contact">contact page</a>.</p>
+<p>Thank you again for your time and I look forward to hearing from you.</p>
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="Sebastien Rousseau-এর ছবি" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/bn/amader-shomporke/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাঙ্কিং প্রযুক্তিবিদ; আমি প্রায়োগিক এআই, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লিখি।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০ বছরেরও বেশি অভিজ্ঞতা। <a href="/bn/amader-shomporke/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">সম্পর্কিত পঠন</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html" class="related-media" aria-label="Quantum Key Distribution Revolutionising Security in Banking" tabindex="-1"><img alt="HSBC From the Docks" src="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="quantum-key-distribution-revolutionising-security-in-banking"><a href="https://sebastienrousseau.com/bn/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html">Quantum Key Distribution Revolutionising Security in Banking</a> <a class="heading-anchor" href="#quantum-key-distribution-revolutionising-security-in-banking" aria-label="লিঙ্ক Quantum Key Distribution Revolutionising Security in Banking">#</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html" class="related-media" aria-label="Revolutionising Finance with AI-Enhanced Quantum Algorithms" tabindex="-1"><img alt="Revolutionising Finance with AI-Enhanced Quantum Algorithms" src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="revolutionising-finance-with-ai-enhanced-quantum-algorithms"><a href="https://sebastienrousseau.com/bn/2023-12-25-revolutionising-finance-with-ai-enhanced-quantum-algorithms/index.html">Revolutionising Finance with AI-Enhanced Quantum Algorithms</a> <a class="heading-anchor" href="#revolutionising-finance-with-ai-enhanced-quantum-algorithms" aria-label="লিঙ্ক Revolutionising Finance with AI-Enhanced Quantum Algorithms">#</a></h3><p><time datetime="2023-12-25">2023-12-25</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html" class="related-media" aria-label="Mathematical and Cryptographic Constants for Rust Security" tabindex="-1"><img alt="Mathematics computation" src="https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="mathematical-and-cryptographic-constants-for-rust-security"><a href="https://sebastienrousseau.com/bn/2023-11-05-mathematical-and-cryptographic-constants-for-rust-security/index.html">Mathematical and Cryptographic Constants for Rust Security</a> <a class="heading-anchor" href="#mathematical-and-cryptographic-constants-for-rust-security" aria-label="লিঙ্ক Mathematical and Cryptographic Constants for Rust Security">#</a></h3><p><time datetime="2023-11-05">2023-11-05</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">সূত্র ও তথ্যসূত্র</h2><ol class="article-sources-list"><li><a href="https://www.nist.gov/" rel="external noopener nofollow"><span class="source-host">www.nist.gov</span><span class="source-path">/</span></a></li></ol></aside><nav class="post-pagination" aria-label="নিবন্ধ পেজিনেশন"><a class="post-pagination-prev" href="/bn/2023-11-12-exploring-generative-ai/"><span class="post-pagination-label">পূর্ববর্তী</span><span class="post-pagination-title">Generative AI in 2023: How It Works, Where It Lands</span></a><a class="post-pagination-next" href="/bn/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/"><span class="post-pagination-label">পরবর্তী</span><span class="post-pagination-title">KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/bn/amader-shomporke/index.html">About</a></li>
+              <li><a href="/bn/jogajog/index.html">Contact</a></li>
+              <li><a href="/bn/static-site-generator-die-toiri/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">লেখা</h2>
+            <ul>
+              <li><a href="/bn/prabondho/index.html">Articles</a></li>
+              <li><a href="/bn/prokashana/index.html">Papers</a></li>
+              <li><a href="/bn/tag/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">কাজ</h2>
+            <ul>
+              <li><a href="/bn/prokolpo/index.html">Projects</a></li>
+              <li><a href="/bn/playlist/index.html">Playlists</a></li>
+              <li><a href="/bn/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">যোগাযোগ</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="নিউজলেটার সাবস্ক্রিপশন">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — পেমেন্ট, এআই এবং পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি বিষয়ক গবেষণা নোট। কোনও স্প্যাম নয়।</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="apni@bank.bd" />
+            <input type="hidden" name="_subject" value="নিউজলেটার সাবস্ক্রিপশন — sebastienrousseau.com" />
+            <button type="submit">সাবস্ক্রাইব করুন</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।</span>
+          <div class="social" aria-label="সামাজিক লিঙ্ক">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau-এ Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau-এ LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau-এ Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau-এ YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/bn/prabeshjogyota/index.html">Accessibility</a> ·
+            <a href="/bn/goponiyota/index.html">Privacy</a> ·
+            <a href="/bn/shorto/index.html">Terms</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"bn"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"bn"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2191,"about":{"@type":"Thing","name":"Quantum computing","sameAs":["https://en.wikipedia.org/wiki/Quantum_computing","https://www.wikidata.org/wiki/Q484641"]},"mentions":[{"@type":"Thing","name":"CRYSTALS-Kyber","sameAs":["https://en.wikipedia.org/wiki/Kyber","https://www.wikidata.org/wiki/Q116727584"]},{"@type":"Thing","name":"post-quantum cryptography","sameAs":["https://en.wikipedia.org/wiki/Post-quantum_cryptography","https://www.wikidata.org/wiki/Q1364608","https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa/index.html"]},{"@type":"Thing","name":"homomorphic encryption","sameAs":["https://en.wikipedia.org/wiki/Homomorphic_encryption","https://www.wikidata.org/wiki/Q2154943","https://sebastienrousseau.com/2024-03-25-fully-homomorphic-encryption-in-a-banking-quantum-era/index.html"]}],"headline":"CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age","description":"Discover how CRYSTALS-Kyber, a quantum-resistant cryptography algorithm, is revolutionising the world of cryptography and preparing us for the quantum era.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp","width":"100vw","height":"100vh","caption":"A modern, sleek quantum computer"},"url":"https://sebastienrousseau.com/bn/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/","datePublished":"2023-11-19T09:59:00+00:00","dateModified":"2026-05-11","inLanguage":"bn","keywords":"quantum computing, quantum-resistant cryptography, CRYSTALS-Kyber, cryptography, security, banking, financial, encryption, data protection, future-proof","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/bn/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"bn"},"citation":[{"@type":"CreativeWork","url":"https://www.nist.gov/"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/bn/"},{"@type":"ListItem","position":3,"name":"CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age","item":"https://sebastienrousseau.com/bn/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="অনুসন্ধান">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>অনুসন্ধান</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="অনুসন্ধান">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="ডকুমেন্টে অনুসন্ধান করুন..." autocomplete="off" aria-label="অনুসন্ধান"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> বন্ধ করুন</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> নেভিগেট করুন</span><span><kbd>Enter</kbd> খুলুন</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

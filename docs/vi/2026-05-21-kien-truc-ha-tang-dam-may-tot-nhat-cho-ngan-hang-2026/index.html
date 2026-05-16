@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 21 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 21 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Kiến trúc hạ tầng đám mây tốt nhất cho ngân hàng 2026 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Kiến trúc đám mây ngân hàng 2026: đa đám mây thực sự, chủ quyền dữ liệu, sẵn sàng quy định và tích hợp PQC.">
+<meta name="keywords" content="đám mây, ngân hàng, đa đám mây, chủ quyền, DORA, quy định, hạ tầng, PQC, Kubernetes, 2026">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Cloud Architecture 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-WcS9nNSH3MREnABcyFjhYIfHpq1Apmgmc1XLlI3s+BQ=' 'sha256-f17s768n6zDFjf3jwV8wijU3nCT8qjX04dM7nxEnnmM=' 'sha256-pFQRPeO2hBS1UmkFB+OOnRlAmaDf5CitfmiFP+IE630=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/vi/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Nguồn cấp Atom" href="/vi/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Kiến trúc hạ tầng đám mây tốt nhất cho ngân hàng 2026 — Sebastien Rousseau">
+<meta property="og:description" content="Kiến trúc đám mây ngân hàng 2026: đa đám mây thực sự, chủ quyền dữ liệu, sẵn sàng quy định và tích hợp PQC.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/vi/2026-05-21-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/cloud-banking-banner.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="vi_VN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kiến trúc hạ tầng đám mây tốt nhất cho ngân hàng 2026 — Sebastien Rousseau">
+<meta name="twitter:description" content="Kiến trúc đám mây ngân hàng 2026: đa đám mây thực sự, chủ quyền dữ liệu, sẵn sàng quy định và tích hợp PQC.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/cloud-banking-banner.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/vi/2026-05-21-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-21-meilleure-architecture-cloud-pour-les-banques-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-21-best-cloud-infrastructure-architecture-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-21-best-cloud-infrastructure-architecture-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-21-nejlepsi-cloudova-architektura-pro-banky-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-21-beste-cloud-infrastruktur-architektur-fuer-banken-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-21-mejor-arquitectura-cloud-para-bancos-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-21-best-cloud-infrastructure-architecture-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-21-best-cloud-infrastructure-architecture-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-21-best-cloud-infrastructure-architecture-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-21-banks-ke-liye-shreshth-cloud-architecture-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-21-arsitektur-infrastruktur-cloud-terbaik-untuk-bank-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-21-miglior-architettura-cloud-per-banche-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-21-2026-saiyou-no-kuraudo-infura-aakitekucha/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-21-2026-choeseon-keulaeudeu-infra-akitekcheo/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-21-beste-cloud-infrastructuur-architectuur-voor-banken-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-21-najlepsza-architektura-infrastruktury-chmurowej-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-21-melhor-arquitetura-cloud-para-bancos-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-21-best-cloud-infrastructure-architecture-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-21-luchshaya-cloud-arkhitektura-dlya-bankov-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-21-basta-molnarkitektur-for-banker-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-21-sthapattayakam-cloud-thi-di-thi-sut-samrap-thanakhan-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-21-bankalar-icin-en-iyi-bulut-mimarisi-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-21-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-21-best-cloud-infrastructure-architecture-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-21-2026-zuijia-yun-jichu-jiagou/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-21-2026-zuijia-yun-jichu-jiagou-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Chuyển đến nội dung chính</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Bật/tắt điều hướng" />
+      <div class="wrap">
+        <a class="ap-brand" href="/vi/index.html" aria-label="Trang chủ của Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Điều hướng chính">
+          <ul class="ap-menu">
+            <li><a href="/vi/gioi-thieu/index.html">Giới thiệu</a></li>
+            <li><a href="/vi/bai-viet/index.html" aria-current="page" class="active">Bài viết</a></li>
+            <li><a href="/vi/cong-trinh/index.html">Công trình</a></li>
+            <li><a href="/vi/chu-de/index.html">Chủ đề</a></li>
+            <li><a href="/vi/du-an/index.html">Dự án</a></li>
+            <li><a href="/vi/danh-sach-phat/index.html">Danh sách phát</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Chuyển sang giao diện tối" aria-pressed="false" title="Đổi giao diện">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Tìm kiếm (Cmd hoặc Ctrl + K)" title="Tìm kiếm (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Ngôn ngữ">
+            <button type="button" class="ap-lang-toggle" aria-label="VI, Đổi ngôn ngữ" aria-expanded="false" aria-haspopup="menu" title="Đổi ngôn ngữ">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">VI</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Sắp ra mắt">🇺🇦 Українська</span>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/vi/lien-he/index.html" aria-label="Liên hệ với tôi">Liên hệ ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Bật/tắt điều hướng">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Kiến trúc hạ tầng đám mây tốt nhất cho ngân hàng 2026</h1>
+      <p class="sub">Đa đám mây, có chủ quyền và sẵn sàng quy định</p>
+    <nav class="article-tags" aria-label="Chủ đề"><a href="/tags/index.html#h3-am-may" class="article-tag" rel="tag">đám mây</a><a href="/tags/index.html#h3-ngan-hang" class="article-tag" rel="tag">ngân hàng</a><a href="/tags/index.html#h3-a-am-may" class="article-tag" rel="tag">đa đám mây</a><a href="/tags/index.html#h3-chu-quyen" class="article-tag" rel="tag">chủ quyền</a><a href="/tags/index.html#h3-dora" class="article-tag" rel="tag">DORA</a><a href="/tags/index.html#h3-quy-inh" class="article-tag" rel="tag">quy định</a><a href="/tags/index.html#h3-ha-tang" class="article-tag" rel="tag">hạ tầng</a><a href="/tags/index.html#h3-pqc" class="article-tag" rel="tag">PQC</a><a href="/tags/index.html#h3-kubernetes" class="article-tag" rel="tag">Kubernetes</a><a href="/tags/index.html#h3-2026" class="article-tag" rel="tag">2026</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-21T06:06:06+00:00" class="meta-pub">Xuất bản 21 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Thời gian đọc ước tính">4 phút đọc</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Nội dung</h2><ol><li><a href="#boi-canh">Bối cảnh</a></li><li><a href="#a-am-may-thuc-su">Đa đám mây thực sự</a></li><li><a href="#chu-quyen-du-lieu">Chủ quyền dữ liệu</a></li><li><a href="#phuc-hoi-van-hanh">Phục hồi vận hành</a></li><li><a href="#tich-hop-pqc">Tích hợp PQC</a></li><li><a href="#mau-kien-truc">Mẫu kiến trúc</a></li><li><a href="#trien-vong">Triển vọng</a></li><li><a href="#ket-luan">Kết luận</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Kiến trúc đám mây ngân hàng 2026: đa đám mây thực sự, chủ quyền dữ liệu, sẵn sàng quy định và tích hợp PQC.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Bối cảnh.</strong> Năm 2024-2025 đã chứng kiến nhiều sự cố lớn:.</li>  <li><strong>Đa đám mây thực sự.</strong> Nhiều ngân hàng nói &quot;đa đám mây&quot; nhưng thực tế:.</li>  <li><strong>Chủ quyền dữ liệu.</strong> Giải pháp:.</li>  <li><strong>Phục hồi vận hành.</strong> Đám mây 2026 phải sẵn sàng cho PQC:.</li></ul></aside><p><img src="https://cloudcdn.pro/stocks/images/cloud-banking-banner.webp" alt="Kiến trúc đám mây ngân hàng"  width="1200" height="675" decoding="async" fetchpriority="high">.class=&quot;img-fluid clearfix&quot;</p>
+<blockquote>
+<p><strong>TL;DR.</strong> Kiến trúc đám mây ngân hàng 2026 không phải là chỉ chọn AWS hoặc Azure. Đó là kiến trúc đa đám mây thực sự, chủ quyền dữ liệu, sẵn sàng quy định (DORA, MAS, FFIEC) và sẵn sàng PQC. Bài viết này phác hoạ thiết kế tham khảo.</p>
+<p><strong>Điểm chính</strong></p>
+<ul>
+<li><strong>Đa đám mây thực sự.</strong> Khả năng di chuyển công việc giữa các nhà cung cấp mà không bị khoá.</li>
+<li><strong>Chủ quyền dữ liệu.</strong> Tuân thủ các yêu cầu của khu vực (DORA EU, MAS Singapore).</li>
+<li><strong>Sẵn sàng quy định.</strong> Phục hồi vận hành, xuất nhập khẩu dữ liệu, kiểm toán đầy đủ.</li>
+<li><strong>Sẵn sàng PQC.</strong> Hạ tầng có khả năng cập nhật mật mã.</li>
+</ul>
+</blockquote>
+<h2 id="boi-canh">Bối cảnh <a class="heading-anchor" href="#boi-canh" aria-label="Liên kết đến Bối cảnh">#</a></h2>
+<h3 id="tai-sao-kien-truc-am-may-quan-trong-vao-nam-2026">Tại sao kiến trúc đám mây quan trọng vào năm 2026 <a class="heading-anchor" href="#tai-sao-kien-truc-am-may-quan-trong-vao-nam-2026" aria-label="Liên kết đến Tại sao kiến trúc đám mây quan trọng vào năm 2026">#</a></h3>
+<p>Năm 2024-2025 đã chứng kiến nhiều sự cố lớn:</p>
+<ul>
+<li><strong>Sự cố CrowdStrike</strong> (tháng 7 năm 2024) hạ gục hàng nghìn ngân hàng.</li>
+<li><strong>Sự cố AWS us-east-1</strong> ảnh hưởng đến phần lớn các dịch vụ fintech.</li>
+<li><strong>Hành động của cơ quan quản lý</strong> chống lại các ngân hàng phụ thuộc đơn-nhà-cung-cấp.</li>
+</ul>
+<p>DORA (Digital Operational Resilience Act) EU, có hiệu lực tháng 1 năm 2025, áp đặt các yêu cầu nghiêm ngặt cho phục hồi vận hành và quản lý nhà cung cấp bên thứ ba.</p>
+<h2 id="a-am-may-thuc-su">Đa đám mây thực sự <a class="heading-anchor" href="#a-am-may-thuc-su" aria-label="Liên kết đến Đa đám mây thực sự">#</a></h2>
+<h3 id="vuot-ra-ngoai-a-am-may-bang-loi-noi">Vượt ra ngoài &quot;đa đám mây bằng lời nói&quot; <a class="heading-anchor" href="#vuot-ra-ngoai-a-am-may-bang-loi-noi" aria-label="Liên kết đến Vượt ra ngoài &quot;đa đám mây bằng lời nói&quot;">#</a></h3>
+<p>Nhiều ngân hàng nói &quot;đa đám mây&quot; nhưng thực tế:</p>
+<ul>
+<li>90% công việc trên một nhà cung cấp.</li>
+<li>Các công cụ và quy trình đặc biệt cho nhà cung cấp đó.</li>
+<li>Việc di chuyển sẽ mất 18-24 tháng.</li>
+</ul>
+<p><strong>Đa đám mây thực sự</strong> có nghĩa là:</p>
+<ul>
+<li>Các công việc có thể được triển khai trên ít nhất hai nhà cung cấp mà không cần thay đổi mã.</li>
+<li>Dữ liệu được sao chép giữa các nhà cung cấp.</li>
+<li>Các đội vận hành thông thạo với nhiều môi trường.</li>
+</ul>
+<h3 id="cac-cong-nghe-kich-hoat">Các công nghệ kích hoạt <a class="heading-anchor" href="#cac-cong-nghe-kich-hoat" aria-label="Liên kết đến Các công nghệ kích hoạt">#</a></h3>
+<ul>
+<li><strong>Kubernetes</strong> như mặt phẳng điều khiển trừu tượng.</li>
+<li><strong>OpenTofu / Terraform</strong> cho hạ tầng dưới dạng mã đa nhà cung cấp.</li>
+<li><strong>Crossplane</strong> cho quản lý nhà cung cấp đám mây qua Kubernetes.</li>
+<li><strong>Istio / Linkerd</strong> cho lưu thông liên đám mây an toàn.</li>
+</ul>
+<h2 id="chu-quyen-du-lieu">Chủ quyền dữ liệu <a class="heading-anchor" href="#chu-quyen-du-lieu" aria-label="Liên kết đến Chủ quyền dữ liệu">#</a></h2>
+<h3 id="tuan-thu-khu-vuc">Tuân thủ khu vực <a class="heading-anchor" href="#tuan-thu-khu-vuc" aria-label="Liên kết đến Tuân thủ khu vực">#</a></h3>
+<ul>
+<li><strong>EU.</strong> Dữ liệu phải nằm trong EU; các nhà cung cấp Mỹ phải tuân thủ DPA, GDPR.</li>
+<li><strong>Singapore.</strong> MAS TRM yêu cầu các kiểm soát cụ thể.</li>
+<li><strong>Trung Đông.</strong> Một số quốc gia yêu cầu dữ liệu nằm trong nước.</li>
+</ul>
+<p><strong>Giải pháp:</strong></p>
+<ul>
+<li><strong>Đám mây có chủ quyền</strong> (AWS European Sovereign Cloud, Microsoft EU Boundary, Google Sovereign Cloud).</li>
+<li><strong>Khu vực địa phương</strong> với chứng chỉ và phê duyệt phù hợp.</li>
+<li><strong>Quản trị khoá khách hàng</strong> đảm bảo nhà cung cấp đám mây không thể giải mã dữ liệu.</li>
+</ul>
+<h2 id="phuc-hoi-van-hanh">Phục hồi vận hành <a class="heading-anchor" href="#phuc-hoi-van-hanh" aria-label="Liên kết đến Phục hồi vận hành">#</a></h2>
+<h3 id="cac-yeu-cau-dora">Các yêu cầu DORA <a class="heading-anchor" href="#cac-yeu-cau-dora" aria-label="Liên kết đến Các yêu cầu DORA">#</a></h3>
+<ul>
+<li><strong>Kiểm thử khả năng phục hồi.</strong> Mỗi năm, các kịch bản gián đoạn được kiểm thử.</li>
+<li><strong>Quản lý nhà cung cấp bên thứ ba.</strong> Các nhà cung cấp quan trọng được đánh giá và thay thế.</li>
+<li><strong>Thời gian phục hồi.</strong> RTO &lt; 4 giờ cho các dịch vụ quan trọng.</li>
+<li><strong>Báo cáo sự cố.</strong> Báo cáo các sự cố lớn cho cơ quan quản lý trong vòng 4 giờ.</li>
+</ul>
+<h2 id="tich-hop-pqc">Tích hợp PQC <a class="heading-anchor" href="#tich-hop-pqc" aria-label="Liên kết đến Tích hợp PQC">#</a></h2>
+<h3 id="ha-tang-linh-hoat-mat-ma">Hạ tầng linh hoạt mật mã <a class="heading-anchor" href="#ha-tang-linh-hoat-mat-ma" aria-label="Liên kết đến Hạ tầng linh hoạt mật mã">#</a></h3>
+<p>Đám mây 2026 phải sẵn sàng cho PQC:</p>
+<ul>
+<li><strong>TLS termination</strong> hỗ trợ Kyber + X25519 hybrid.</li>
+<li><strong>HSM</strong> hỗ trợ các thuật toán PQC (Dilithium, SPHINCS+).</li>
+<li><strong>Quản trị bí mật</strong> cho phép xoay vòng khoá nhanh chóng.</li>
+<li><strong>Đường ngầm dữ liệu</strong> được mã hoá với PQC.</li>
+</ul>
+<h2 id="mau-kien-truc">Mẫu kiến trúc <a class="heading-anchor" href="#mau-kien-truc" aria-label="Liên kết đến Mẫu kiến trúc">#</a></h2>
+<h3 id="mat-phang-kiem-soat">Mặt phẳng kiểm soát <a class="heading-anchor" href="#mat-phang-kiem-soat" aria-label="Liên kết đến Mặt phẳng kiểm soát">#</a></h3>
+<pre><code class="language-text">┌─────────────────────────────────┐
+│   Mặt phẳng kiểm soát           │
+│   (Kubernetes + Crossplane)     │
+└────────┬─────────────┬──────────┘
+         │             │
+   ┌─────▼────┐  ┌────▼──────┐
+   │   AWS    │  │   Azure   │  ← Các nhà cung cấp đám mây
+   └─────┬────┘  └─────┬─────┘
+         │             │
+   ┌─────▼─────────────▼─────┐
+   │   Lưới Service          │
+   │   (Istio / Linkerd)     │
+   └──────────────────────────┘
+</code></pre>
+<h3 id="mat-phang-du-lieu">Mặt phẳng dữ liệu <a class="heading-anchor" href="#mat-phang-du-lieu" aria-label="Liên kết đến Mặt phẳng dữ liệu">#</a></h3>
+<ul>
+<li><strong>Cơ sở dữ liệu phân tán</strong> (CockroachDB, YugabyteDB) với sao chép liên nhà cung cấp.</li>
+<li><strong>Object storage</strong> với sao chép liên khu vực.</li>
+<li><strong>Streaming</strong> (Kafka) với các cụm rời rạc cho mỗi đám mây.</li>
+</ul>
+<h2 id="trien-vong">Triển vọng <a class="heading-anchor" href="#trien-vong" aria-label="Liên kết đến Triển vọng">#</a></h2>
+<h3 id="2026-va-xa-hon">2026 và xa hơn <a class="heading-anchor" href="#2026-va-xa-hon" aria-label="Liên kết đến 2026 và xa hơn">#</a></h3>
+<ul>
+<li><strong>Edge cho banking.</strong> Suy luận AI tại các chi nhánh, xử lý độ trễ thấp.</li>
+<li><strong>Confidential computing.</strong> Enclave (Intel SGX, AMD SEV) cho các tác vụ nhạy cảm.</li>
+<li><strong>Đám mây có chủ quyền nội địa hoá.</strong> Nhiều quốc gia phát triển đám mây có chủ quyền cấp quốc gia.</li>
+</ul>
+<h2 id="ket-luan">Kết luận <a class="heading-anchor" href="#ket-luan" aria-label="Liên kết đến Kết luận">#</a></h2>
+<p>Kiến trúc đám mây ngân hàng 2026 không phải là một quyết định một lần — đó là một thiết kế liên tục thích nghi với các yêu cầu quy định, mối đe doạ và công nghệ. Các ngân hàng đầu tư vào kiến trúc đa đám mây thực sự, có chủ quyền và sẵn sàng PQC hôm nay sẽ tránh được các quyết định ràng buộc trong những năm tới.</p>
+<aside class="author-card" aria-label="Về tác giả"><img alt="Chân dung Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/vi/gioi-thieu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Là chuyên gia công nghệ cấp cao trong lĩnh vực ngân hàng, tôi viết về AI ứng dụng, chuyển đổi ISO 20022, mật mã hậu lượng tử cho dịch vụ tài chính và chuyển đổi cấu trúc của thanh toán bán buôn.</span><span class="author-credentials">Hơn 20 năm kinh nghiệm tại HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/vi/gioi-thieu/index.html">Hồ sơ đầy đủ</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Cập nhật lần cuối <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Bài liên quan</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/vi/2026-05-14-bao-mat-so-cai-chuyen-doi-hau-luong-tu-tai-chinh-doanh-nghiep" class="related-media" aria-label="Bảo mật sổ cái: chuyển đổi hậu lượng tử trong tài chính doanh nghiệp" tabindex="-1"><img alt="Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="bao-mat-so-cai-chuyen-oi-hau-luong-tu-trong-tai-chinh-doanh-nghiep"><a href="https://sebastienrousseau.com/vi/2026-05-14-bao-mat-so-cai-chuyen-doi-hau-luong-tu-tai-chinh-doanh-nghiep">Bảo mật sổ cái: chuyển đổi hậu lượng tử trong tài chính doanh nghiệp</a> <a class="heading-anchor" href="#bao-mat-so-cai-chuyen-oi-hau-luong-tu-trong-tai-chinh-doanh-nghiep" aria-label="Liên kết đến Bảo mật sổ cái: chuyển đổi hậu lượng tử trong tài chính doanh nghiệp">#</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/vi/2026-05-18-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026" class="related-media" aria-label="Kỹ thuật agentic: bản thiết kế ngân hàng 2026" tabindex="-1"><img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026"><a href="https://sebastienrousseau.com/vi/2026-05-18-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026">Kỹ thuật agentic: bản thiết kế ngân hàng 2026</a> <a class="heading-anchor" href="#ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026" aria-label="Liên kết đến Kỹ thuật agentic: bản thiết kế ngân hàng 2026">#</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/vi/2026-04-11-nguong-luong-tu-lai-dich-chuyen" class="related-media" aria-label="Ngưỡng lượng tử lại dịch chuyển" tabindex="-1"><img alt="Shor's algorithm qubit threshold diagram. Quantum computing circuit board with blue light patterns" src="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="nguong-luong-tu-lai-dich-chuyen"><a href="https://sebastienrousseau.com/vi/2026-04-11-nguong-luong-tu-lai-dich-chuyen">Ngưỡng lượng tử lại dịch chuyển</a> <a class="heading-anchor" href="#nguong-luong-tu-lai-dich-chuyen" aria-label="Liên kết đến Ngưỡng lượng tử lại dịch chuyển">#</a></h3><p><time datetime="2026-04-11">2026-04-11</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Phân trang bài viết"><a class="post-pagination-prev" href="/vi/2026-05-18-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026/"><span class="post-pagination-label">Trước</span><span class="post-pagination-title">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/vi/gioi-thieu/index.html">Giới thiệu</a></li>
+              <li><a href="/vi/lien-he/index.html">Liên hệ</a></li>
+              <li><a href="/vi/tao-bang-static-site-generator/index.html">Tạo bằng Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Bài viết</h2>
+            <ul>
+              <li><a href="/vi/bai-viet/index.html">Bài viết</a></li>
+              <li><a href="/vi/cong-trinh/index.html">Công trình</a></li>
+              <li><a href="/vi/the/index.html">Thẻ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Hoạt động</h2>
+            <ul>
+              <li><a href="/vi/du-an/index.html">Dự án</a></li>
+              <li><a href="/vi/danh-sach-phat/index.html">Danh sách phát</a></li>
+              <li><a href="/vi/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Kết nối</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Đăng ký bản tin">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — ghi chú nghiên cứu về thanh toán, AI và mật mã hậu lượng tử. Không spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="ban@nganhang.vn" />
+            <input type="hidden" name="_subject" value="Đăng ký bản tin — sebastienrousseau.com" />
+            <button type="submit">Đăng ký</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Liên kết mạng xã hội">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau trên Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau trên Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau trên LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau trên LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau trên Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau trên Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau trên YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau trên YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/vi/tro-nang/index.html">Trợ năng</a> ·
+            <a href="/vi/quyen-rieng-tu/index.html">Quyền riêng tư</a> ·
+            <a href="/vi/dieu-khoan/index.html">Điều khoản</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"vi"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"vi"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":814,"about":{"@type":"Thing","name":"NIST PQC","sameAs":"https://csrc.nist.gov/projects/post-quantum-cryptography"},"headline":"Kiến trúc hạ tầng đám mây tốt nhất cho ngân hàng 2026","description":"Kiến trúc đám mây ngân hàng 2026: đa đám mây thực sự, chủ quyền dữ liệu, sẵn sàng quy định và tích hợp PQC.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/cloud-banking-banner.webp","width":"100vw","height":"100vh","caption":"Sơ đồ kiến trúc đám mây ngân hàng đa đám mây"},"url":"https://sebastienrousseau.com/vi/2026-05-21-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/","datePublished":"2026-05-21T06:06:06+00:00","dateModified":"2026-05-21","inLanguage":"vi","keywords":"đám mây, ngân hàng, đa đám mây, chủ quyền, DORA, quy định, hạ tầng, PQC, Kubernetes, 2026","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/vi/2026-05-21-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"vi"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/vi/"},{"@type":"ListItem","position":3,"name":"Kiến trúc hạ tầng đám mây tốt nhất cho ngân hàng 2026","item":"https://sebastienrousseau.com/vi/2026-05-21-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Tìm kiếm">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Tìm kiếm</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Tìm kiếm">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Tìm trong tài liệu..." autocomplete="off" aria-label="Tìm kiếm"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> đóng</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> điều hướng</span><span><kbd>Enter</kbd> mở</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

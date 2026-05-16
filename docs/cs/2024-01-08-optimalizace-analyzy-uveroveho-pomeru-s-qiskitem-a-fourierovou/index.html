@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 08 Jan 2024 05:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 08 Jan 2024 05:06:06 +0000" id="last-modified" />
+    <title>Qiskit y transformada de Fourier cuántica para el análisis de ratios de crédito — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Cómo IBM Qiskit y la transformada de Fourier cuántica revolucionan el análisis de ratios de crédito en finanzas, ofreciendo precisión y rapidez inéditas.">
+<meta name="keywords" content="computación cuántica, finanzas, análisis de ratios de crédito, Qiskit, transformada de Fourier cuántica, IBM, aprendizaje automático, inteligencia artificial, evaluación del riesgo financiero, solvencia">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-QTW0yc36cWtZ+w7AZAOCQGl2JvDDbl6sBjXHqxPCnZo=' 'sha256-iBm/ljhfGTHyQ/b/t4N3AOv9L2urv7rjvSWh+CIQGhk=' 'sha256-tkFTKMapuX3qOABMCBqFM3gWE0PaJ8sfNvHO6yY2fJM=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/cs/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="/cs/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Qiskit y transformada de Fourier cuántica para el análisis de ratios de crédito — Sebastien Rousseau">
+<meta property="og:description" content="Cómo IBM Qiskit y la transformada de Fourier cuántica revolucionan el análisis de ratios de crédito en finanzas, ofreciendo precisión y rapidez inéditas.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/cs/2024-01-08-optimalizace-analyzy-uveroveho-pomeru-s-qiskitem-a-fourierovou/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="cs_CZ">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Qiskit y transformada de Fourier cuántica para el análisis de ratios de crédito — Sebastien Rousseau">
+<meta name="twitter:description" content="Cómo IBM Qiskit y la transformada de Fourier cuántica revolucionan el análisis de ratios de crédito en finanzas, ofreciendo precisión y rapidez inéditas.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/cs/2024-01-08-optimalizace-analyzy-uveroveho-pomeru-s-qiskitem-a-fourierovou/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-01-08-optimiser-le-ratio-de-credit-avec-ibm-qiskit-et-fourier-quantique/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2024-01-08-optimalizace-analyzy-uveroveho-pomeru-s-qiskitem-a-fourierovou/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2024-01-08-kreditquotenanalyse-optimieren-mit-ibm-qiskit-und-quanten-fourier-transformation/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2024-01-08-optimizar-ratio-de-credito-con-ibm-qiskit-y-fourier-cuantica/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2024-01-08-ibm-qiskit-aur-quantum-fourier-se-credit-ratio-vishleshan/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2024-01-08-mengoptimalkan-rasio-kredit-dengan-ibm-qiskit-dan-fourier-kuantum/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2024-01-08-ottimizzare-lanalisi-del-rapporto-di-credito-con-ibm-qiskit-e-fourier-quantistica/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2024-01-08-ibm-qiskit-to-ryoushi-fourier-henkan-de-shinyou-bunseki-saitekika/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2024-01-08-ibm-qiskit-yangja-fourier-byeonhwan-euro-sinyongbiyul-bunseok-choejeokhwa/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2024-01-08-kredietratio-analyse-optimaliseren-met-ibm-qiskit-en-kwantum-fourier-transformatie/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2024-01-08-optymalizacja-analizy-wskaznika-kredytowego-z-ibm-qiskit-i-kwantowa-transformata-fouriera/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2024-01-08-otimizar-analise-de-indice-de-credito-com-ibm-qiskit-e-fourier-quantica/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2024-01-08-optimizatsiya-kreditnogo-koeffitsienta-s-ibm-qiskit-i-kvantovym-furie/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2024-01-08-optimera-kreditkvotsanalys-med-ibm-qiskit-och-kvantfourier/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2024-01-08-prapprung-kan-wikhro-atsuan-sinaheu-duai-qiskit/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2024-01-08-kredi-orani-analizini-ibm-qiskit-ve-kuantum-fourier-ile-optimize-etmek/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2024-01-08-toi-uu-phan-tich-ty-le-tin-dung-voi-ibm-qiskit-va-fourier-luong-tu/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2024-01-08-yong-ibm-qiskit-yu-liangzi-fuliye-bianhuan-youhua-xindai-fenxi/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2024-01-08-yong-ibm-qiskit-yu-liangzi-fuliye-bianhuan-youhua-xindai-fenxi-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-01-08-optimising-credit-ratio-analysis-with-ibm-qiskit-and-quantum-fourier-transform/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Přeskočit na hlavní obsah</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Přepnout navigaci" />
+      <div class="wrap">
+        <a class="ap-brand" href="/cs/index.html" aria-label="Domovská stránka Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Hlavní navigace">
+          <ul class="ap-menu">
+            <li><a href="/cs/o-mne/index.html">O mně</a></li>
+            <li><a href="/cs/clanky/index.html" aria-current="page" class="active">Články</a></li>
+            <li><a href="/cs/publikace/index.html">Publikace</a></li>
+            <li><a href="/cs/temata/index.html">Témata</a></li>
+            <li><a href="/cs/projekty/index.html">Projekty</a></li>
+            <li><a href="/cs/playlisty/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Přepnout na tmavý motiv" aria-pressed="false" title="Přepnout motiv">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Hledat (Cmd nebo Ctrl + K)" title="Hledat (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Jazyk">
+            <button type="button" class="ap-lang-toggle" aria-label="CS, změnit jazyk" aria-expanded="false" aria-haspopup="menu" title="Změnit jazyk">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">CS</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="Již brzy">🇺🇦 Українська</span>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/cs/kontakt/index.html" aria-label="Kontaktovat">Kontaktovat ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Přepnout navigaci">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Qiskit y transformada de Fourier cuántica para el análisis de ratios de crédito</h1>
+      <p class="sub">Optimizar el análisis de ratios de crédito con IBM Qiskit y la transformada de Fourier cuántica</p>
+    <nav class="article-tags" aria-label="Témata"><a href="/tags/index.html#h3-computacion-cuantica" class="article-tag" rel="tag">computación cuántica</a><a href="/tags/index.html#h3-finanzas" class="article-tag" rel="tag">finanzas</a><a href="/tags/index.html#h3-analisis-de-ratios-de-credito" class="article-tag" rel="tag">análisis de ratios de crédito</a><a href="/tags/index.html#h3-qiskit" class="article-tag" rel="tag">Qiskit</a><a href="/tags/index.html#h3-transformada-de-fourier-cuantica" class="article-tag" rel="tag">transformada de Fourier cuántica</a><a href="/tags/index.html#h3-ibm" class="article-tag" rel="tag">IBM</a><a href="/tags/index.html#h3-aprendizaje-automatico" class="article-tag" rel="tag">aprendizaje automático</a><a href="/tags/index.html#h3-inteligencia-artificial" class="article-tag" rel="tag">inteligencia artificial</a><a href="/tags/index.html#h3-evaluacion-del-riesgo-financiero" class="article-tag" rel="tag">evaluación del riesgo financiero</a><a href="/tags/index.html#h3-solvencia" class="article-tag" rel="tag">solvencia</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-01-08T05:06:06+00:00" class="meta-pub">Publikováno 8 Jan 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">Aktualizováno 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Odhadovaná doba čtení">7 min čtení</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Obsah</h2><ol><li><a href="#perspectiva">Perspectiva</a></li><li><a href="#idea">Idea</a></li><li><a href="#impacto">Impacto</a></li><li><a href="#incentivo">Incentivo</a></li><li><a href="#conclusion">Conclusión</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Cómo IBM Qiskit y la transformada de Fourier cuántica revolucionan el análisis de ratios de crédito en finanzas, ofreciendo precisión y rapidez inéditas.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Perspectiva.</strong> Imagine una revolución computacional en la que la información danza a velocidades y complejidades fuera del alcance de los ordenadores clásicos.</li>  <li><strong>Idea.</strong> [IBM Qiskit ⧉][01], herramienta integral del panorama cuántico, es un framework de desarrollo de software de código abierto diseñado para la computación cuántica.</li>  <li><strong>Impacto.</strong> El análisis de ratios de crédito es una herramienta fundamental de la industria bancaria y financiera para evaluar la estabilidad financiera y la solvencia de las entidades.</li>  <li><strong>Incentivo.</strong> La implementación práctica de la [QFT][02] en el análisis de ratios de crédito comienza con la configuración de [IBM Qiskit ⧉][01].</li></ul></aside><blockquote>
+<p><strong>TL;DR.</strong> Tento článek je DRAFT překlad původně španělského zdroje, čekající na revizi rodilým mluvčím. Hlavní obsah, příklady a citace zůstávají ve španělštině; pouze záhlaví/frontmatter byly přepnuty na češtinu.</p>
+</blockquote>
+<p><strong>Klíčové body</strong></p>
+<p>Imagine un préstamo impago que podría haberse predicho. Un prestatario aparentemente de bajo riesgo entra en mora, dejando al banco sacudido por pérdidas inesperadas. Este escenario, antaño escollo común en análisis de crédito, podría pronto volverse una reliquia del pasado gracias al poder revolucionario de la computación cuántica. Aprovechando los principios del dominio cuántico, herramientas como <a href="https://www.ibm.com/quantum/qiskit" title="IBM Quantum Computing | Qiskit"><strong>IBM Qiskit</strong> ⧉</a> y algoritmos como la <a href="https://sebastienrousseau.com/cs/2023-12-25-revoluce-financi-pomoci-kvantovych-algoritmu-s-ai/index.html#h4-quantum" title="Quantum Fourier Transform (QFT)"><strong>transformada de Fourier cuántica (QFT)</strong></a> están dispuestas a transformar el análisis de ratios de crédito, aportando una precisión y una rapidez sin precedentes a esta práctica financiera crítica.</p>
+<p>En una época en la que la toma de decisiones impulsada por datos es primordial, la industria bancaria y financiera busca continuamente avances tecnológicos para afinar sus métodos de análisis y evaluación de riesgos. En el corazón de esta búsqueda se encuentra la integración innovadora de la computación cuántica, en particular a través de herramientas como <a href="https://www.ibm.com/quantum/qiskit" title="IBM Quantum Computing | Qiskit"><strong>IBM Qiskit</strong> ⧉</a> y algoritmos como la <a href="https://sebastienrousseau.com/cs/2023-12-25-revoluce-financi-pomoci-kvantovych-algoritmu-s-ai/index.html#h4-quantum" title="Quantum Fourier Transform (QFT)"><strong>QFT</strong></a>. Este artículo explora cómo estas tecnologías cuánticas transforman específicamente el análisis de ratios de crédito, componente crítico de la evaluación de la estabilidad financiera y la solvencia.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" fetchpriority="high">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="perspectiva">Perspectiva <a class="heading-anchor" href="#perspectiva" aria-label="Odkaz na Perspectiva">#</a></h2>
+<h3 id="la-computacion-cuantica-en-finanzas">La computación cuántica en finanzas <a class="heading-anchor" href="#la-computacion-cuantica-en-finanzas" aria-label="Odkaz na La computación cuántica en finanzas">#</a></h3>
+<p>Imagine una revolución computacional en la que la información danza a velocidades y complejidades fuera del alcance de los ordenadores clásicos. Esa es la promesa de la computación cuántica, aprovechando la extraña física del dominio cuántico para desbloquear una dimensión enteramente nueva de potencia de procesamiento. En el corazón de las finanzas, donde el análisis rápido y preciso de datos voluminosos y complejos reina supremo, la computación cuántica emerge como un game-changer.</p>
+<p>La computación cuántica aprovecha los principios de la mecánica cuántica para tratar la información de maneras inaccesibles a los ordenadores clásicos. En finanzas, esta capacidad computacional avanzada puede reforzar significativamente los modelos y algoritmos complejos. Los algoritmos cuánticos ofrecen, en particular, una velocidad y una eficiencia sin precedentes para resolver ciertos tipos de problemas.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="idea">Idea <a class="heading-anchor" href="#idea" aria-label="Odkaz na Idea">#</a></h2>
+<h3 id="ibm-qiskit-y-la-transformada-de-fourier-cuantica">IBM Qiskit y la transformada de Fourier cuántica <a class="heading-anchor" href="#ibm-qiskit-y-la-transformada-de-fourier-cuantica" aria-label="Odkaz na IBM Qiskit y la transformada de Fourier cuántica">#</a></h3>
+<p><a href="https://www.ibm.com/quantum/qiskit" title="IBM Quantum Computing | Qiskit"><strong>IBM Qiskit</strong> ⧉</a>, herramienta integral del panorama cuántico, es un framework de desarrollo de software de código abierto diseñado para la computación cuántica. Permite a los usuarios, desde el programador novato hasta el físico cuántico experimentado, desarrollar, simular y ejecutar algoritmos cuánticos. Uno de los componentes clave de Qiskit es su soporte de la <a href="https://sebastienrousseau.com/cs/2023-12-25-revoluce-financi-pomoci-kvantovych-algoritmu-s-ai/index.html#h4-quantum" title="Quantum Fourier Transform (QFT)"><strong>transformada de Fourier cuántica (QFT)</strong></a>.</p>
+<p>La transformada de Fourier cuántica es el análogo cuántico de la transformada de Fourier discreta clásica. Es una piedra angular de muchos algoritmos cuánticos, conocida por su capacidad para gestionar eficientemente cálculos complejos. En las aplicaciones financieras como el análisis de ratios de crédito, el potencial de la QFT reside en su capacidad para tratar los datos financieros mucho más eficientemente que los métodos clásicos. Esta eficiencia se deriva de la capacidad de la QFT para aprovechar el paralelismo cuántico, donde un sistema cuántico puede existir en varios estados simultáneamente, permitiendo el tratamiento simultáneo de un gran conjunto de datos.</p>
+<p>La integración de la QFT con el análisis financiero, en particular con el análisis de ratios de crédito, es un game-changer. Sacando partido de la QFT, los analistas financieros pueden tratar y analizar grandes conjuntos de datos con más velocidad y precisión que nunca. Este avance no se resume en la velocidad; se trata de la capacidad para revelar perspectivas y patrones en los datos financieros antes inaccesibles a los métodos clásicos.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="impacto">Impacto <a class="heading-anchor" href="#impacto" aria-label="Odkaz na Impacto">#</a></h2>
+<h3 id="reforzar-el-analisis-de-ratios-de-credito-con-la-qft">Reforzar el análisis de ratios de crédito con la QFT <a class="heading-anchor" href="#reforzar-el-analisis-de-ratios-de-credito-con-la-qft" aria-label="Odkaz na Reforzar el análisis de ratios de crédito con la QFT">#</a></h3>
+<p>El análisis de ratios de crédito es una herramienta fundamental de la industria bancaria y financiera para evaluar la estabilidad financiera y la solvencia de las entidades. Tradicionalmente, este análisis se apoya en el tratamiento de grandes volúmenes de datos financieros, una tarea que puede ser a la vez costosa en tiempo y limitada en precisión con los métodos clásicos. La introducción de la <a href="https://sebastienrousseau.com/cs/2023-12-25-revoluce-financi-pomoci-kvantovych-algoritmu-s-ai/index.html#h4-quantum" title="Quantum Fourier Transform (QFT)"><strong>QFT</strong></a> en este proceso marca un salto significativo.</p>
+<p>Al aplicar la QFT, la velocidad y la eficiencia del análisis de los ratios de crédito aumentan exponencialmente. La capacidad de la computación cuántica para gestionar rápidamente vastos conjuntos de datos permite un análisis más profundo y matizado de los riesgos de crédito. Esta capacidad reforzada no solo es beneficiosa en términos de velocidad sino también en profundidad y amplitud de análisis. La QFT puede revelar patrones y correlaciones complejos en los datos financieros imperceptibles para los algoritmos clásicos, proporcionando una visión más completa de la estabilidad y los riesgos financieros.</p>
+<p>Sin embargo, integrar la computación cuántica, y específicamente la QFT, en los sistemas financieros existentes no está exento de desafíos. Estos incluyen obstáculos técnicos como la necesidad de una infraestructura preparada para lo cuántico y la complejidad del diseño de algoritmos cuánticos. También hay una curva de aprendizaje pronunciada para comprender e implementar soluciones de computación cuántica. Pese a estos desafíos, los potenciales beneficios de incorporar la QFT al análisis de ratios de crédito son demasiado significativos para ignorarlos, señalando un giro transformador en analítica financiera.</p>
+<p>La verdadera potencia de la QFT reside en su capacidad para desvelar conexiones y patrones ocultos que escapan a los algoritmos tradicionales. Imagine tamizar millones de puntos de datos y descubrir correlaciones sutiles entre fluctuaciones de mercado aparentemente sin vínculo, cambios del comportamiento del consumidor e incluso patrones meteorológicos. La QFT puede identificar los hilos anteriormente invisibles que tejen la tapicería financiera, pintando un cuadro mucho más rico y preciso de la salud financiera de una entidad. Esta comprensión más profunda se traduce en evaluaciones de crédito más precisas, permitiendo a los bancos predecir los riesgos potenciales con una precisión sin precedentes y tomar decisiones de préstamo informadas que benefician tanto a las instituciones como a los prestatarios.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="incentivo">Incentivo <a class="heading-anchor" href="#incentivo" aria-label="Odkaz na Incentivo">#</a></h2>
+<h3 id="implementacion-practica">Implementación práctica <a class="heading-anchor" href="#implementacion-practica" aria-label="Odkaz na Implementación práctica">#</a></h3>
+<p>La implementación práctica de la <a href="https://sebastienrousseau.com/cs/2023-12-25-revoluce-financi-pomoci-kvantovych-algoritmu-s-ai/index.html#h4-quantum" title="Quantum Fourier Transform (QFT)"><strong>QFT</strong></a> en el análisis de ratios de crédito comienza con la configuración de <a href="https://www.ibm.com/quantum/qiskit" title="IBM Quantum Computing | Qiskit"><strong>IBM Qiskit</strong> ⧉</a>. Esto implica la instalación del software Qiskit y la familiarización con sus funcionalidades. El paso siguiente es codificar los datos financieros en un formato compatible con lo cuántico, proceso que exige una comprensión matizada tanto de las finanzas como de la computación cuántica.</p>
+<p>La ejecución de la QFT a través de <a href="https://www.ibm.com/quantum/qiskit" title="IBM Quantum Computing | Qiskit"><strong>IBM Qiskit</strong> ⧉</a> implica varios pasos técnicos. Primero, los datos financieros deben codificarse en qubits, las unidades básicas de la información cuántica. A continuación, el algoritmo QFT se aplica a estos qubits, permitiendo el tratamiento cuántico de los datos. El paso final consiste en interpretar los resultados de la QFT, traduciendo los cálculos cuánticos en perspectivas financieras significativas.</p>
+<p>Para ilustrar estos pasos, los estudios de caso concretos pueden ser muy beneficiosos. Podrían incluir instancias en las que instituciones financieras hayan implementado con éxito la computación cuántica en sus procesos de análisis de crédito, demostrando las aplicaciones prácticas y los beneficios de esta tecnología.</p>
+<p>El proceso de implementación de la QFT en análisis financiero no es solo un desafío técnico sino también una oportunidad de innovación en el sector financiero. Representa un paso significativo hacia modelos financieros más sofisticados y eficientes, impulsados por las capacidades sin parangón de la computación cuántica.</p>
+<p>Aunque la integración de la QFT con los sistemas financieros existentes presenta obstáculos técnicos, el futuro está lejos de ser sombrío. Los avances rápidos en infraestructura preparada para lo cuántico y el desarrollo de algoritmos cuánticos cada vez más fáciles de usar cierran regularmente la brecha entre potencial teórico y aplicación práctica. Con investigación y colaboración continuas, el poder transformador de la QFT en análisis de crédito está más cerca que nunca de convertirse en realidad.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="conclusion">Conclusión <a class="heading-anchor" href="#conclusion" aria-label="Odkaz na Conclusión">#</a></h2>
+<p>La integración de <a href="https://www.ibm.com/quantum/qiskit" title="IBM Quantum Computing | Qiskit"><strong>IBM Qiskit</strong> ⧉</a> y la <a href="https://sebastienrousseau.com/cs/2023-12-25-revoluce-financi-pomoci-kvantovych-algoritmu-s-ai/index.html#h4-quantum" title="Quantum Fourier Transform (QFT)">transformada de Fourier cuántica</a> con el análisis de ratios de crédito es un indicador claro del potencial transformador de la computación cuántica en el sector financiero. Esta tecnología no es solo una mejora incremental de los métodos existentes; representa un cambio de paradigma en la manera en que se tratan y analizan los datos financieros.</p>
+<p>A medida que la computación cuántica continúa evolucionando y madurando, su adopción en la industria financiera podría redefinir el panorama de la analítica financiera y la evaluación de riesgos. Las implicaciones de esta revolución tecnológica son vastas, con el potencial de reforzar la precisión, la velocidad y la profundidad del análisis financiero, conduciendo en última instancia a una toma de decisiones más informada y eficiente en la industria bancaria y financiera.</p>
+<p>El futuro del análisis de crédito es cuántico, y este es el momento de explorar sus posibilidades. Sumérjase más profundamente en <a href="https://www.ibm.com/quantum/qiskit" title="IBM Quantum Computing | Qiskit"><strong>IBM Qiskit</strong> ⧉</a>, únase a comunidades en línea de entusiastas de lo cuántico y manténgase informado de los últimos avances en este campo en rápida evolución. A medida que la computación cuántica toma protagonismo en el panorama financiero, quienes abracen su potencial están a punto de recoger los frutos de un futuro más informado, preciso y, en última instancia, próspero.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/cs/o-mne/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior bankovní technolog, píši o aplikované AI, migraci na ISO 20022, postkvantové kryptografii pro finanční služby a strukturální transformaci velkoobchodních plateb.</span><span class="author-credentials">Více než 20 let zkušeností v HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/cs/o-mne/index.html">Celý profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Naposledy revidováno <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Související četba</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/cs/2023-12-18-stav-ai-a-kvantovych-vypoctu-v-bankovnictvi-prehled-2023/index.html" class="related-media" aria-label="Estado de la IA y la computación cuántica en la banca: revisión 2023" tabindex="-1"><img alt="Estado de la IA y la computación cuántica en la banca: revisión 2023" src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="estado-de-la-ia-y-la-computacion-cuantica-en-la-banca-revision-2023"><a href="https://sebastienrousseau.com/cs/2023-12-18-stav-ai-a-kvantovych-vypoctu-v-bankovnictvi-prehled-2023/index.html">Estado de la IA y la computación cuántica en la banca: revisión 2023</a> <a class="heading-anchor" href="#estado-de-la-ia-y-la-computacion-cuantica-en-la-banca-revision-2023" aria-label="Odkaz na Estado de la IA y la computación cuántica en la banca: revisión 2023">#</a></h3><p><time datetime="2023-12-18">2023-12-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/cs/2023-12-11-kvantova-distribuce-klicu-revoluce-bankovni-bezpecnosti/index.html" class="related-media" aria-label="La distribución cuántica de claves revoluciona la seguridad bancaria" tabindex="-1"><img alt="HSBC From the Docks" src="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="la-distribucion-cuantica-de-claves-revoluciona-la-seguridad-bancaria"><a href="https://sebastienrousseau.com/cs/2023-12-11-kvantova-distribuce-klicu-revoluce-bankovni-bezpecnosti/index.html">La distribución cuántica de claves revoluciona la seguridad bancaria</a> <a class="heading-anchor" href="#la-distribucion-cuantica-de-claves-revoluciona-la-seguridad-bancaria" aria-label="Odkaz na La distribución cuántica de claves revoluciona la seguridad bancaria">#</a></h3><p><time datetime="2023-12-11">2023-12-11</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/cs/2026-05-11-lucy-besson-prenos-znalosti-ai-a-kvantum/index.html" class="related-media" aria-label="La memoria flash de Lucy, revisitada: lo que Besson vio sobre la migración del conocimiento a las máquinas" tabindex="-1"><img alt="Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles" src="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="la-memoria-flash-de-lucy-revisitada-lo-que-besson-vio-sobre-la-migracion-del-con"><a href="https://sebastienrousseau.com/cs/2026-05-11-lucy-besson-prenos-znalosti-ai-a-kvantum/index.html">La memoria flash de Lucy, revisitada: lo que Besson vio sobre la migración del conocimiento a las máquinas</a> <a class="heading-anchor" href="#la-memoria-flash-de-lucy-revisitada-lo-que-besson-vio-sobre-la-migracion-del-con" aria-label="Odkaz na La memoria flash de Lucy, revisitada: lo que Besson vio sobre la migración del conocimiento a las máquinas">#</a></h3><p><time datetime="2026-05-11">2026-05-11</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Stránkování článků"><a class="post-pagination-prev" href="/cs/2024-01-01-ai-trendy-2024-poznatky-a-predpovedi/"><span class="post-pagination-label">Předchozí</span><span class="post-pagination-title">AI Trends 2024: Insights and Predictions for the Future</span></a><a class="post-pagination-next" href="/cs/2024-01-15-alien-studio-revoluce-umeni-ai-fotografii/"><span class="post-pagination-label">Další</span><span class="post-pagination-title">Alien Studio: My Tech-to Art Journey in Photography</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/cs/o-mne/index.html">O mně</a></li>
+              <li><a href="/cs/kontakt/index.html">Kontakt</a></li>
+              <li><a href="/cs/vytvoreno-statickym-generatorem/index.html">Vytvořeno se Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publikace</h2>
+            <ul>
+              <li><a href="/cs/clanky/index.html">Články</a></li>
+              <li><a href="/cs/publikace/index.html">Publikace</a></li>
+              <li><a href="/cs/stitky/index.html">Štítky</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Práce</h2>
+            <ul>
+              <li><a href="/cs/projekty/index.html">Projekty</a></li>
+              <li><a href="/cs/playlisty/index.html">Playlists</a></li>
+              <li><a href="/cs/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Kontakt</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="Přihlášení k odběru newsletteru">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — výzkumné poznámky o platbách, AI a postkvantové kryptografii. Žádný spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="vy@banka.cz" />
+            <input type="hidden" name="_subject" value="Přihlášení k odběru newsletteru — sebastienrousseau.com" />
+            <button type="submit">Přihlásit se k odběru</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. Všechna práva vyhrazena.</span>
+          <div class="social" aria-label="Sociální odkazy">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau na Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau na LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau na Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau na YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/cs/pristupnost/index.html">Přístupnost</a> ·
+            <a href="/cs/soukromi/index.html">Soukromí</a> ·
+            <a href="/cs/podminky/index.html">Podmínky</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"cs"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"cs"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1500,"headline":"Qiskit y transformada de Fourier cuántica para el análisis de ratios de crédito","description":"Cómo IBM Qiskit y la transformada de Fourier cuántica revolucionan el análisis de ratios de crédito en finanzas, ofreciendo precisión y rapidez inéditas.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/quantum-computer-room.webp","width":"100vw","height":"100vh","caption":"Sala de ordenador cuántico"},"url":"https://sebastienrousseau.com/cs/2024-01-08-optimalizace-analyzy-uveroveho-pomeru-s-qiskitem-a-fourierovou/","datePublished":"2024-01-08T05:06:06+00:00","dateModified":"2026-05-11","inLanguage":"cs","keywords":"computación cuántica, finanzas, análisis de ratios de crédito, Qiskit, transformada de Fourier cuántica, IBM, aprendizaje automático, inteligencia artificial, evaluación del riesgo financiero, solvencia","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/cs/2024-01-08-optimalizace-analyzy-uveroveho-pomeru-s-qiskitem-a-fourierovou/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"cs"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/cs/"},{"@type":"ListItem","position":3,"name":"Qiskit y transformada de Fourier cuántica para el análisis de ratios de crédito","item":"https://sebastienrousseau.com/cs/2024-01-08-optimalizace-analyzy-uveroveho-pomeru-s-qiskitem-a-fourierovou/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Hledat">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Hledat</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Hledat">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Hledat v dokumentaci..." autocomplete="off" aria-label="Hledat"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> zavřít</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigovat</span><span><kbd>Enter</kbd> otevřít</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>

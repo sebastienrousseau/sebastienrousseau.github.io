@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="th-TH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Tue, 23 Jan 2024 05:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Tue, 23 Jan 2024 05:06:06 +0000" id="last-modified" />
+    <title>AI Prompt Engineering 2024: técnicas que funcionan — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Explore los avances 2024 del Prompt Engineering: tendencias y técnicas innovadoras que revolucionan la tecnología y las finanzas.">
+<meta name="keywords" content="AI Prompt Engineering, instrucciones personalizadas, IA multipersona, chain of thought, computación cuántica, IA ética, adaptive prompting, zero shot, few shot, tendencias tecnológicas IA">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sebastien Rousseau">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-OkNtFqaKoYifO5tHK9+ti3LCmhZkUQLugzhFIjDjNOw=' 'sha256-bSEmlvzLEVSZ0Mk2GlOjxE2j+gIShS2AxPbkKU1C3xI=' 'sha256-iPHsCCH11lKaR/xGJ7vMGR+1wgpKOEDEc0P93eZSFgE=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: https: cloudcdn.pro www.googletagmanager.com i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/clients/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/th/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/5b69ea131d35cdfb.css" crossorigin="anonymous" integrity="sha256-20EAZL5Ty6y9NCAI9Ws/1Br0eCrtMicp2nsdC8vYUN8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="ฟีด Atom" href="/th/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="AI Prompt Engineering 2024: técnicas que funcionan — Sebastien Rousseau">
+<meta property="og:description" content="Explore los avances 2024 del Prompt Engineering: tendencias y técnicas innovadoras que revolucionan la tecnología y las finanzas.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/th/2024-01-23-khwam-kaona-nai-witsawakam-prompt-ai/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="th_TH">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Prompt Engineering 2024: técnicas que funcionan — Sebastien Rousseau">
+<meta name="twitter:description" content="Explore los avances 2024 del Prompt Engineering: tendencias y técnicas innovadoras que revolucionan la tecnología y las finanzas.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/th/2024-01-23-khwam-kaona-nai-witsawakam-prompt-ai/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2024-01-23-avancees-en-ingenierie-de-prompts-ia/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2024-01-23-advancements-in-ai-prompt-engineering/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2024-01-23-advancements-in-ai-prompt-engineering/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2024-01-23-pokrok-v-prompt-engineeringu/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2024-01-23-fortschritte-im-ki-prompt-engineering/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2024-01-23-avances-en-ingenieria-de-prompts-ia/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2024-01-23-advancements-in-ai-prompt-engineering/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2024-01-23-advancements-in-ai-prompt-engineering/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2024-01-23-advancements-in-ai-prompt-engineering/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2024-01-23-ai-prompt-engineering-mein-pragati/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2024-01-23-kemajuan-rekayasa-prompt-ai/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2024-01-23-progressi-nellingegneria-dei-prompt-ia/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2024-01-23-ai-puronputo-enjiniaringu-no-shinpo/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2024-01-23-ai-peurompeuteu-enjineoring-baljeon/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2024-01-23-vooruitgang-in-ai-prompt-engineering/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2024-01-23-postep-w-inzynierii-promptow-ai/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2024-01-23-avancos-na-engenharia-de-prompts-ia/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2024-01-23-advancements-in-ai-prompt-engineering/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2024-01-23-dostizheniya-v-inzhenerii-promptov-ii/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2024-01-23-framsteg-inom-ai-promptteknik/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2024-01-23-khwam-kaona-nai-witsawakam-prompt-ai/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2024-01-23-yapay-zeka-prompt-muhendisliginde-ilerlemeler/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2024-01-23-tien-bo-trong-ky-thuat-prompt-ai/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2024-01-23-advancements-in-ai-prompt-engineering/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2024-01-23-ai-tishici-gongcheng-de-jinzhan/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2024-01-23-ai-tishici-gongcheng-de-jinzhan-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2024-01-23-advancements-in-ai-prompt-engineering/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">ข้ามไปยังเนื้อหาหลัก</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="สลับการนำทาง" />
+      <div class="wrap">
+        <a class="ap-brand" href="/th/index.html" aria-label="หน้าแรกของ Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="การนำทางหลัก">
+          <ul class="ap-menu">
+            <li><a href="/th/nueng-rao/index.html">เกี่ยวกับเรา</a></li>
+            <li><a href="/th/bot-khwam/index.html" aria-current="page" class="active">บทความ</a></li>
+            <li><a href="/th/ngan-wichai/index.html">งานวิจัย</a></li>
+            <li><a href="/th/hua-kho/index.html">หัวข้อ</a></li>
+            <li><a href="/th/khrong-kan/index.html">โครงการ</a></li>
+            <li><a href="/th/rai-kan-len/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="เปลี่ยนเป็นธีมมืด" aria-pressed="false" title="เปลี่ยนธีม">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="ค้นหา (Cmd หรือ Ctrl + K)" title="ค้นหา (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="ภาษา">
+            <button type="button" class="ap-lang-toggle" aria-label="TH, เปลี่ยนภาษา" aria-expanded="false" aria-haspopup="menu" title="เปลี่ยนภาษา">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">TH</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <span class="ap-lang-item" data-lang="uk" aria-disabled="true" title="เร็ว ๆ นี้">🇺🇦 Українська</span>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/th/tit-to/index.html" aria-label="ติดต่อ">ติดต่อ ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="สลับการนำทาง">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>AI Prompt Engineering 2024: técnicas que funcionan</h1>
+      <p class="sub">Rediseñar la interacción humano-máquina mediante avances en las instrucciones personalizadas</p>
+    <nav class="article-tags" aria-label="หัวข้อ"><a href="/tags/index.html#h3-ai-prompt-engineering" class="article-tag" rel="tag">AI Prompt Engineering</a><a href="/tags/index.html#h3-instrucciones-personalizadas" class="article-tag" rel="tag">instrucciones personalizadas</a><a href="/tags/index.html#h3-ia-multipersona" class="article-tag" rel="tag">IA multipersona</a><a href="/tags/index.html#h3-chain-of-thought" class="article-tag" rel="tag">chain of thought</a><a href="/tags/index.html#h3-computacion-cuantica" class="article-tag" rel="tag">computación cuántica</a><a href="/tags/index.html#h3-ia-etica" class="article-tag" rel="tag">IA ética</a><a href="/tags/index.html#h3-adaptive-prompting" class="article-tag" rel="tag">adaptive prompting</a><a href="/tags/index.html#h3-zero-shot" class="article-tag" rel="tag">zero shot</a><a href="/tags/index.html#h3-few-shot" class="article-tag" rel="tag">few shot</a><a href="/tags/index.html#h3-tendencias-tecnologicas-ia" class="article-tag" rel="tag">tendencias tecnológicas IA</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2024-01-23T05:06:06+00:00" class="meta-pub">เผยแพร่เมื่อ 23 Jan 2024</time> <span aria-hidden="true">·</span> <time datetime="2026-05-11" class="meta-rev">อัปเดตเมื่อ 11 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="เวลาในการอ่านโดยประมาณ">12 นาทีในการอ่าน</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>สารบัญ</h2><ol><li><a href="#las-instrucciones-personalizadas-y-su-impacto">Las instrucciones personalizadas y su impacto</a></li><li><a href="#multipersona-leveraging">Multipersona leveraging</a></li><li><a href="#enfoques-chain-of-thought">Enfoques Chain of Thought</a></li><li><a href="#aprendizaje-en-modelo-y-bases-de-datos-vectoriales">Aprendizaje en modelo y bases de datos vectoriales</a></li><li><a href="#adaptive-prompting">Adaptive prompting</a></li><li><a href="#implicaciones-eticas">Implicaciones éticas</a></li><li><a href="#computacion-cuantica-y-prompt-engineering">Computación cuántica y Prompt Engineering</a></li><li><a href="#tecnicas-avanzadas-en-prompt-engineering">Técnicas avanzadas en Prompt Engineering</a></li><li><a href="#zero-shot-y-few-shot-prompting">Zero Shot y Few-Shot Prompting</a></li><li><a href="#reforzar-la-fiabilidad-mediante-el-chain-of-thought-cot">Reforzar la fiabilidad mediante el Chain of Thought (CoT)</a></li><li><a href="#self-consistency">Self-Consistency</a></li><li><a href="#general-knowledge-prompting">General Knowledge Prompting</a></li><li><a href="#react">ReAct</a></li><li><a href="#implicaciones-eticas-en-prompt-engineering">Implicaciones éticas en Prompt Engineering</a></li><li><a href="#conclusion">Conclusión</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Explore los avances 2024 del Prompt Engineering: tendencias y técnicas innovadoras que revolucionan la tecnología y las finanzas.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Las instrucciones personalizadas y su impacto.</strong> Las instrucciones personalizadas han revolucionado las interacciones con IA al permitir un control de modelo específico para el usuario.</li>  <li><strong>Multipersona leveraging.</strong> El multipersona leveraging en los modelos de IA ha transformado las experiencias de usuario al proporcionar flexibilidad en las respuestas.</li>  <li><strong>Enfoques Chain of Thought.</strong> Los enfoques chain-of-thought han revolucionado la resolución de problemas por IA al imitar los procesos cognitivos humanos.</li>  <li><strong>Aprendizaje en modelo y bases de datos vectoriales.</strong> El aprendizaje en modelo y las bases de datos vectoriales representan avances significativos en la capacidad de la IA para evolucionar y acceder a vastos conjuntos de datos.</li></ul></aside><blockquote>
+<p><strong>TL;DR.</strong> บทความนี้เป็น DRAFT แปลจากต้นฉบับภาษาสเปน รอการตรวจสอบโดยเจ้าของภาษา เนื้อหาหลัก ตัวอย่าง และการอ้างอิงยังคงเป็นภาษาสเปน เฉพาะ frontmatter เท่านั้นที่ถูกเปลี่ยนเป็นภาษาไทย</p>
+</blockquote>
+<p><strong>ประเด็นสำคัญ</strong></p>
+<p>En 2024, el Prompt Engineering permite a soluciones como los chatbots mantener conversaciones empáticas que comprenden las claves culturales: un avance importante en las interacciones IA-humano. El <strong>Prompt Engineering</strong> transforma la interacción humano-máquina mediante avances en las instrucciones personalizadas, multipersona leveraging y enfoques chain-of-thought. Este artículo explora estos desarrollos y su impacto en la tecnología, las finanzas y la educación, integrando también perspectivas sobre la computación cuántica y la ética de la IA.</p>
+<p>Para empezar, el Prompt Engineering ha conocido evoluciones importantes en los últimos años como componente crítico de la IA que dicta la calidad, pertinencia y seguridad del contenido. En este artículo examinamos el impacto de los avances del Prompt Engineering en sectores como la tecnología, las finanzas y la educación, específicamente en 2024.</p>
+<h2 id="las-instrucciones-personalizadas-y-su-impacto">Las instrucciones personalizadas y su impacto <a class="heading-anchor" href="#las-instrucciones-personalizadas-y-su-impacto" aria-label="ลิงก์ไปยัง Las instrucciones personalizadas y su impacto">#</a></h2>
+<p>Las <strong>instrucciones personalizadas</strong> han revolucionado las interacciones con IA al permitir un control de modelo específico para el usuario. En la finanza empresarial, los prompts personalizados garantizan el cumplimiento normativo a la vez que refuerzan la precisión en el ámbito académico.</p>
+<p>De forma crucial, estos prompts insuflan una comprensión cultural y contextual a las respuestas, lo que resulta vital para el marketing y la educación.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" fetchpriority="high">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="multipersona-leveraging">Multipersona leveraging <a class="heading-anchor" href="#multipersona-leveraging" aria-label="ลิงก์ไปยัง Multipersona leveraging">#</a></h2>
+<p>El <strong>multipersona leveraging</strong> en los modelos de IA ha transformado las experiencias de usuario al proporcionar flexibilidad en las respuestas. Este enfoque es particularmente eficaz en el servicio al cliente y los entornos de e-learning, donde la IA puede alternar entre diversas personas para adaptarse a las necesidades del usuario. Favorece también la inclusividad, permitiendo a los modelos de IA interactuar de manera culturalmente sensible en distintos sectores, incluida la sanidad.</p>
+<p>Al diseñar modelos de IA que comprendan y respondan en diversos dialectos y contextos culturales, las empresas pueden dirigirse más eficazmente a una audiencia global. Un sistema de IA en sanidad puede mejorar la comunicación y la atención al paciente al ser culturalmente sensible y apropiado. Este enfoque no se limita a ampliar el alcance de las aplicaciones de IA: alimenta un entorno de inclusividad y respeto por la diversidad cultural.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="enfoques-chain-of-thought">Enfoques Chain of Thought <a class="heading-anchor" href="#enfoques-chain-of-thought" aria-label="ลิงก์ไปยัง Enfoques Chain of Thought">#</a></h2>
+<p>Los enfoques <strong>chain-of-thought</strong> han revolucionado la resolución de problemas por IA al imitar los procesos cognitivos humanos. Este método es inestimable en los ámbitos que exigen altos niveles de transparencia y fiabilidad, como el diagnóstico médico y la previsión financiera. Al detallar su razonamiento, los modelos de IA refuerzan su fiabilidad en los entornos de alto riesgo.</p>
+<p>Además, la técnica chain-of-thought refuerza significativamente la fiabilidad de los sistemas de IA. En medicina y en finanzas, los modelos de IA pueden ayudar a los expertos a tomar decisiones más precisas y fiables.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="aprendizaje-en-modelo-y-bases-de-datos-vectoriales">Aprendizaje en modelo y bases de datos vectoriales <a class="heading-anchor" href="#aprendizaje-en-modelo-y-bases-de-datos-vectoriales" aria-label="ลิงก์ไปยัง Aprendizaje en modelo y bases de datos vectoriales">#</a></h2>
+<p>El <strong>aprendizaje en modelo</strong> y las <strong>bases de datos vectoriales</strong> representan avances significativos en la capacidad de la IA para evolucionar y acceder a vastos conjuntos de datos. El aprendizaje en modelo es importante en entornos cambiantes como la bolsa. Las bases de datos vectoriales son útiles para gestionar datos en ámbitos como la investigación biomédica y el procesamiento del lenguaje.</p>
+<p>Las bases de datos vectoriales, por su parte, han abierto nuevas posibilidades de acceso e interpretación por la IA de grandes conjuntos de datos. Al convertir datos complejos en representaciones vectoriales, los modelos de IA pueden tratar y recuperar la información de forma más eficiente, conduciendo a respuestas más rápidas y precisas. Esta tecnología tiene implicaciones profundas en ámbitos como la investigación biomédica y el procesamiento del lenguaje, donde la manipulación de vastas cantidades de datos es un desafío rutinario.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="adaptive-prompting">Adaptive prompting <a class="heading-anchor" href="#adaptive-prompting" aria-label="ลิงก์ไปยัง Adaptive prompting">#</a></h2>
+<p>El Prompt Engineering marca un giro hacia sistemas de IA empáticos y conscientes del contexto. Permite a los modelos de IA afinar su comunicación según el feedback del usuario, reforzando las experiencias de usuario en el servicio al cliente y las plataformas de aprendizaje en línea. Este enfoque es particularmente significativo en las aplicaciones de salud mental, donde la IA puede proporcionar soporte personalizado.</p>
+<p>Además, el adaptive prompting encarna el giro hacia sistemas de IA más empáticos y conscientes del contexto. Una IA puede aprender de las emociones humanas, las diferencias culturales y las situaciones recibiendo feedback de los usuarios y mejorando sus métodos. Los chatbots de IA pueden ser muy útiles en salud mental: pueden proporcionar soporte y consejos personales. La IA puede adaptar sus respuestas según lo que siente la persona y lo que necesita. Es un gran paso hacia una tecnología más humana, adaptable a las necesidades únicas de cada uno.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="implicaciones-eticas">Implicaciones éticas <a class="heading-anchor" href="#implicaciones-eticas" aria-label="ลิงก์ไปยัง Implicaciones éticas">#</a></h2>
+<p>Las consideraciones éticas en <strong>Prompt Engineering</strong> son críticas, en particular en sectores donde una IA sesgada podría conducir a resultados injustos. La ingeniería de prompt ética garantiza el respeto a la vida privada y al consentimiento del usuario, una necesidad en sanidad y finanzas. Se extiende también a los impactos sociales, exigiendo equidad y transparencia en la influencia de la IA sobre la opinión pública y los procesos democráticos.</p>
+<p>Además, el uso ético de los prompts de IA se extiende a su impacto social. La IA se utiliza cada vez más en la educación, los medios y la política. La forma en que se diseñan los prompts puede afectar enormemente al pensamiento de las personas, a lo que aprenden y al funcionamiento de la democracia. Los prompts de IA deben ser equitativos, transparentes e imparciales para apoyar la equidad y la justicia en nuestro mundo pilotado por IA.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="computacion-cuantica-y-prompt-engineering">Computación cuántica y Prompt Engineering <a class="heading-anchor" href="#computacion-cuantica-y-prompt-engineering" aria-label="ลิงก์ไปยัง Computación cuántica y Prompt Engineering">#</a></h2>
+<p>La <strong>computación cuántica</strong> permite crear prompts óptimos más rápidamente para usos como la personalización del contenido educativo según las fortalezas de cada estudiante, analizando rápidamente los datos de rendimiento. Esta tecnología refuerza también la capacidad de la IA para resolver problemas complejos, en beneficio de ámbitos como la criptografía y el descubrimiento de medicamentos. Los modelos de IA potenciados con lo cuántico pueden optimizar las estructuras de prompts, en beneficio de la medicina personalizada y de las estrategias de inversión financiera.</p>
+<p>La computación cuántica está llamada a reforzar el <strong>Prompt Engineering</strong> proporcionando una potencia computacional avanzada. Permite un tratamiento más rápido de prompts complejos, crucial en criptografía y descubrimiento de medicamentos. Los modelos de IA potenciados con lo cuántico pueden optimizar las estructuras de prompts, en beneficio de la medicina personalizada y de las estrategias de inversión.</p>
+<p>Además, el potencial de la computación cuántica para resolver problemas de optimización puede reforzar enormemente la eficiencia de la ingeniería de prompt. Los modelos de IA pueden utilizar algoritmos cuánticos para optimizar las estructuras de prompts, haciéndolos más eficaces para suscitar los comportamientos y respuestas IA deseados. El uso de esta tecnología puede mejorar la medicina personalizada y las finanzas. La IA puede crear planes de tratamiento individuales basados en los genes de una persona. En finanzas, la IA puede utilizar grandes cantidades de datos de mercado para mejorar las estrategias de inversión.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="tecnicas-avanzadas-en-prompt-engineering">Técnicas avanzadas en Prompt Engineering <a class="heading-anchor" href="#tecnicas-avanzadas-en-prompt-engineering" aria-label="ลิงก์ไปยัง Técnicas avanzadas en Prompt Engineering">#</a></h2>
+<p>Técnicas avanzadas como el Zero Shot y el Few Shot prompting amplían las capacidades de la IA. El Zero Shot prompting permite a los modelos de IA tratar tareas nuevas, mientras que el Few Shot prompting facilita una adaptación rápida a nuevos contextos. Estos métodos son valiosos para la generación de contenido a medida y la educación personalizada.</p>
+<p>El Few Shot prompting permite a los modelos de IA adaptarse rápidamente a nuevas tareas y contextos con solo algunos ejemplos. Este método es instrumental para la generación de contenido a medida, donde la IA puede producir salidas creativas y contextualmente pertinentes a partir de una entrada mínima. Los tutores IA pueden utilizar el Few Shot prompting para personalizar su enseñanza según las necesidades de cada estudiante, incluso en materias que nunca antes habían aprendido.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="zero-shot-y-few-shot-prompting">Zero Shot y Few-Shot Prompting <a class="heading-anchor" href="#zero-shot-y-few-shot-prompting" aria-label="ลิงก์ไปยัง Zero Shot y Few-Shot Prompting">#</a></h2>
+<p>El ZSL (Zero Shot Learning) permite a los asistentes IA proporcionar respuestas útiles a las preguntas nuevas de los clientes en todos los ámbitos, reduciendo la dependencia de las capacidades preentrenadas. El FSL (Few Shot Learning) permite a la IA adaptarse a nuevas tareas con solo un puñado de ejemplos, encontrando un equilibrio entre entrenamiento extensivo y flexibilidad. Estas técnicas son valiosas en investigación científica de nicho y traducción de lengua personalizada.</p>
+<p>Las técnicas Zero Shot y Few Shot Prompting ayudan a la IA a gestionar tareas sin entrenamiento previo. Esto muestra que la IA puede adaptarse y aprender cosas nuevas con facilidad. Esta versatilidad es clave en los ámbitos con datos limitados, como la investigación científica de nicho, permitiendo a la IA proporcionar perspectivas valiosas sobre temas variados.</p>
+<p>El Few-Shot Prompting, por su parte, exige que el modelo se adapte a nuevas tareas con solo un puñado de ejemplos para guiar sus respuestas. Esta técnica encuentra un equilibrio entre el entrenamiento extensivo habitualmente necesario para los modelos de aprendizaje automático y la flexibilidad del Zero Shot Prompting. Con algunos ejemplos, la IA puede afinar sus respuestas para alinearse mejor con las exigencias específicas de la tarea. Es útil para personalizar la traducción de lenguas, crear contenido especializado y resolver problemas únicos. El Few-Shot Prompting pone de relieve el aprendizaje rápido y la adaptabilidad de la IA, convirtiéndolo en un activo para aplicaciones dinámicas y diversas que exigen una adaptación rápida.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="reforzar-la-fiabilidad-mediante-el-chain-of-thought-cot">Reforzar la fiabilidad mediante el Chain of Thought (CoT) <a class="heading-anchor" href="#reforzar-la-fiabilidad-mediante-el-chain-of-thought-cot" aria-label="ลิงก์ไปยัง Reforzar la fiabilidad mediante el Chain of Thought (CoT)">#</a></h2>
+<p>Igualmente importante, los enfoques chain-of-thought permiten ahora procesos de decisión IA más transparentes. Esto resulta valioso en ámbitos como el diagnóstico y la previsión que exigen resultados fiables. Específicamente, al detallar el razonamiento, las IA construyen una fiabilidad para que los expertos humanos evalúen las conclusiones.</p>
+<p>Esencialmente, una transparencia reflexiva y una colaboración entre humanos e IA refuerzan significativamente la medicina de precisión y las finanzas cuantitativas.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="self-consistency">Self-Consistency <a class="heading-anchor" href="#self-consistency" aria-label="ลิงก์ไปยัง Self-Consistency">#</a></h2>
+<p>La Self-Consistency en la IA refuerza la fiabilidad incitando a los modelos a cotejar sus respuestas. Este método es crucial en entornos dinámicos donde se requiere una información actualizada y coherente: cobertura informativa o análisis de mercado.</p>
+<p>Además, la Self-Consistency desempeña un papel crítico en el entrenamiento y refinamiento de los modelos de IA. Mediante evaluación y refinamiento iterativos, la IA puede mejorar su comprensión y la precisión de sus respuestas, convirtiéndola en una herramienta valiosa de aprendizaje y desarrollo continuos. La self-consistency es muy importante en cosas como la traducción de lengua y el análisis cultural. Esto se debe a que pequeños detalles y la situación pueden afectar enormemente a la precisión y pertinencia de las respuestas.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="general-knowledge-prompting">General Knowledge Prompting <a class="heading-anchor" href="#general-knowledge-prompting" aria-label="ลิงก์ไปยัง General Knowledge Prompting">#</a></h2>
+<p>El general knowledge prompting permite a la IA utilizar su vasto entrenamiento en varias disciplinas, simplificando la recopilación de información y proporcionando una comprensión holística de diversos temas. Esta funcionalidad es particularmente útil en educación y en contextos de trivia.</p>
+<p>Sirve como herramienta inestimable para educadores, estudiantes y mentes curiosas, ofreciendo una solución ventanilla única para las consultas a través de las disciplinas. Esta conectividad de saberes interdisciplinares refuerza la utilidad de los asistentes IA.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="react">ReAct <a class="heading-anchor" href="#react" aria-label="ลิงก์ไปยัง ReAct">#</a></h2>
+<p>ReAct permite a la IA evaluar de forma crítica y construir sobre sus salidas, alimentando una conversación dinámica e interactiva. Esta funcionalidad es beneficiosa en las tareas creativas y de resolución de problemas, permitiendo a la IA explorar perspectivas alternativas y generar soluciones novedosas.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="implicaciones-eticas-en-prompt-engineering">Implicaciones éticas en Prompt Engineering <a class="heading-anchor" href="#implicaciones-eticas-en-prompt-engineering" aria-label="ลิงก์ไปยัง Implicaciones éticas en Prompt Engineering">#</a></h2>
+<p>A medida que las tecnologías de IA continúan permeando diversos aspectos de la sociedad, las implicaciones éticas del <strong>Prompt Engineering</strong> se vuelven cada vez más significativas. Esta parte subraya la importancia de la ética en la creación y uso de la IA, y propone reglas y estructuras prácticas para garantizar que la IA sea diseñada éticamente.</p>
+<h3 id="comprender-el-panorama-etico">Comprender el panorama ético <a class="heading-anchor" href="#comprender-el-panorama-etico" aria-label="ลิงก์ไปยัง Comprender el panorama ético">#</a></h3>
+<p>El <strong>panorama ético</strong> en IA se articula en torno a principios clave como equidad, rendición de cuentas, transparencia y confidencialidad. En el ámbito del Prompt Engineering, estos principios se traducen en la creación de modelos de IA que no perpetúen sesgos, estereotipos o comportamientos no éticos. Es crucial reconocer que los modelos de IA reflejan a menudo los datos sobre los que se entrenan: datos que pueden incluir datos históricos o sociales sesgados. El diseño ético de los prompts debe, pues, trabajar activamente para mitigar estos sesgos, asegurando que las salidas IA sean justas y equitativas.</p>
+<h3 id="directrices-practicas-para-un-prompt-engineering-etico">Directrices prácticas para un Prompt Engineering ético <a class="heading-anchor" href="#directrices-practicas-para-un-prompt-engineering-etico" aria-label="ลิงก์ไปยัง Directrices prácticas para un Prompt Engineering ético">#</a></h3>
+<p>Datos de entrenamiento diversos e inclusivos para los modelos de IA ayudan a reducir los sesgos en las respuestas al representar diversas demografías, culturas y puntos de vista.</p>
+<ul>
+<li><strong>Auditorías regulares de sesgo</strong>: realice auditorías regulares de los modelos de IA para identificar y abordar cualquier sesgo que pudiera surgir. Estas auditorías deben implicar a equipos diversos para garantizar una evaluación completa del rendimiento de la IA desde múltiples perspectivas.</li>
+<li><strong>Transparencia en la toma de decisiones IA</strong>: mantenga la transparencia en la manera en que los modelos de IA concluyen, sobre todo en ámbitos de alto riesgo como la sanidad y las finanzas. Esto implica diseñar prompts que animen a la IA a explicar su razonamiento, facilitando la comprensión y la confianza del usuario en las decisiones de la IA.</li>
+<li><strong>Confidencialidad y seguridad de los datos</strong>: mantenga estándares estrictos de confidencialidad y seguridad de los datos para proteger la información sensible de los usuarios. Esto incluye el diseño de prompts que no inciten ni exijan que la IA almacene o recuerde datos de usuario personales más allá de lo necesario.</li>
+<li><strong>Permita a los usuarios controlar los datos</strong> que comparten con los sistemas de IA mediante el consentimiento y la capacidad de optar por salir o de modificar las preferencias.</li>
+<li>Establezca comités de revisión ética para supervisar los proyectos de IA, en particular los que involucran ámbitos sensibles como el apoyo en salud mental o el asesoramiento jurídico. Estos comités pueden proporcionar orientación y supervisión para garantizar el mantenimiento de los estándares éticos.</li>
+</ul>
+<h3 id="marcos-para-un-desarrollo-etico-de-la-ia">Marcos para un desarrollo ético de la IA <a class="heading-anchor" href="#marcos-para-un-desarrollo-etico-de-la-ia" aria-label="ลิงก์ไปยัง Marcos para un desarrollo ético de la IA">#</a></h3>
+<p>Adoptar marcos establecidos para un <strong>desarrollo ético de la IA</strong> puede guiar a los ingenieros de prompt en la creación de modelos de IA responsables. Diversos marcos, como el Ethically Aligned Design de la IEEE y las Ethics Guidelines de la UE, abordan la ética de la IA en ámbitos como la transparencia, la rendición de cuentas y el impacto social. La integración de estos marcos en el proceso de desarrollo IA garantiza un enfoque completo del diseño ético.</p>
+<h3 id="abordar-los-desafios-eticos-futuros">Abordar los desafíos éticos futuros <a class="heading-anchor" href="#abordar-los-desafios-eticos-futuros" aria-label="ลิงก์ไปยัง Abordar los desafíos éticos futuros">#</a></h3>
+<p>A medida que la IA continúa evolucionando, emergerán nuevos <strong>desafíos éticos</strong>. Por ejemplo, la integración de la IA en los sistemas judiciales o los vehículos autónomos suscita cuestiones éticas complejas sobre la toma de decisiones y la responsabilidad. Los ingenieros de prompt deben mantenerse informados sobre estos desarrollos y adaptar sus prácticas éticas en consecuencia. Esto implica educación continua, colaboración con éticos y expertos del ámbito, y compromiso público para comprender las preocupaciones y expectativas sociales.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<h2 id="conclusion">Conclusión <a class="heading-anchor" href="#conclusion" aria-label="ลิงก์ไปยัง Conclusión">#</a></h2>
+<p>En conclusión, las consideraciones éticas en Prompt Engineering no son solo una necesidad técnica sino una responsabilidad social. Siguiendo directrices y marcos éticos, los ingenieros de prompt pueden garantizar un uso beneficioso, justo y alineado de las tecnologías de IA.</p>
+<p>El Prompt Engineering evoluciona rápidamente, con implicaciones significativas para la tecnología y las finanzas. El dominio de esta disciplina es crucial para aprovechar plenamente el potencial de la IA, desde el análisis de datos hasta la traducción de lenguas. El campo debería ver herramientas y tecnologías más sofisticadas, reforzando la eficacia y la eficiencia del Prompt Engineering.</p>
+<p><img src="https://cloudcdn.pro/clients/common/images/elements/divider.svg" alt="divider" title="Divider"  width="40" height="6" decoding="async" loading="lazy">.class=&quot;m-10 w-100&quot;</p>
+<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพถ่าย Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/th/nueng-rao/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">ผู้เชี่ยวชาญด้านเทคโนโลยีธนาคารระดับอาวุโส เขียนเกี่ยวกับ AI ประยุกต์ การย้ายระบบ ISO 20022 การเข้ารหัสหลังควอนตัมสำหรับบริการการเงิน และการปฏิรูปเชิงโครงสร้างของการชำระเงินขายส่ง</span><span class="author-credentials">ประสบการณ์กว่า 20 ปีที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/th/nueng-rao/index.html">ดูประวัติเต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">ทบทวนล่าสุด <time datetime="2026-05-16">2026-05-16</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">อ่านเพิ่มเติม</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/th/2024-01-01-naewnom-ai-2024-khwam-khaochai-lae-khat-konnan/index.html" class="related-media" aria-label="Tendencias IA 2024: perspectivas y predicciones para el futuro" tabindex="-1"><img alt="Drone View of London" src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="tendencias-ia-2024-perspectivas-y-predicciones-para-el-futuro"><a href="https://sebastienrousseau.com/th/2024-01-01-naewnom-ai-2024-khwam-khaochai-lae-khat-konnan/index.html">Tendencias IA 2024: perspectivas y predicciones para el futuro</a> <a class="heading-anchor" href="#tendencias-ia-2024-perspectivas-y-predicciones-para-el-futuro" aria-label="ลิงก์ไปยัง Tendencias IA 2024: perspectivas y predicciones para el futuro">#</a></h3><p><time datetime="2024-01-01">2024-01-01</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/th/2023-12-25-patiwat-kanngeon-duai-aljorhithem-quantum-thi-mi-ai/index.html" class="related-media" aria-label="Revolucionar las finanzas con algoritmos cuánticos potenciados por IA" tabindex="-1"><img alt="Revolucionar las finanzas con algoritmos cuánticos potenciados por IA" src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="revolucionar-las-finanzas-con-algoritmos-cuanticos-potenciados-por-ia"><a href="https://sebastienrousseau.com/th/2023-12-25-patiwat-kanngeon-duai-aljorhithem-quantum-thi-mi-ai/index.html">Revolucionar las finanzas con algoritmos cuánticos potenciados por IA</a> <a class="heading-anchor" href="#revolucionar-las-finanzas-con-algoritmos-cuanticos-potenciados-por-ia" aria-label="ลิงก์ไปยัง Revolucionar las finanzas con algoritmos cuánticos potenciados por IA">#</a></h3><p><time datetime="2023-12-25">2023-12-25</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/th/2024-02-13-kotmai-ai-yu-yuen-sang-anakhot-kotmai-ai-lok/index.html" class="related-media" aria-label="El AI Act de la UE: pionero de la regulación ética de la IA en el mundo" tabindex="-1"><img alt="A person sitting on black bench reading newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="el-ai-act-de-la-ue-pionero-de-la-regulacion-etica-de-la-ia-en-el-mundo"><a href="https://sebastienrousseau.com/th/2024-02-13-kotmai-ai-yu-yuen-sang-anakhot-kotmai-ai-lok/index.html">El AI Act de la UE: pionero de la regulación ética de la IA en el mundo</a> <a class="heading-anchor" href="#el-ai-act-de-la-ue-pionero-de-la-regulacion-etica-de-la-ia-en-el-mundo" aria-label="ลิงก์ไปยัง El AI Act de la UE: pionero de la regulación ética de la IA en el mundo">#</a></h3><p><time datetime="2024-02-13">2024-02-13</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="การแบ่งหน้าบทความ"><a class="post-pagination-prev" href="/th/2024-01-15-alien-studio-patiwat-sinlapa-duai-phap-thai-ai/"><span class="post-pagination-label">ก่อนหน้า</span><span class="post-pagination-title">Alien Studio: My Tech-to Art Journey in Photography</span></a><a class="post-pagination-next" href="/th/2024-01-29-kan-wikhro-siang-praeplian-lae-khwam-khaochai-ai/"><span class="post-pagination-label">ถัดไป</span><span class="post-pagination-title">AI-Powered Speech Analysis, Translation, & Insight Tool</span></a></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/th/nueng-rao/index.html">เกี่ยวกับเรา</a></li>
+              <li><a href="/th/tit-to/index.html">ติดต่อ</a></li>
+              <li><a href="/th/sang-duai-static-site-generator/index.html">สร้างด้วย Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">บทความ</h2>
+            <ul>
+              <li><a href="/th/bot-khwam/index.html">บทความ</a></li>
+              <li><a href="/th/ngan-wichai/index.html">งานวิจัย</a></li>
+              <li><a href="/th/thaek/index.html">แท็ก</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">ผลงาน</h2>
+            <ul>
+              <li><a href="/th/khrong-kan/index.html">โครงการ</a></li>
+              <li><a href="/th/rai-kan-len/index.html">Playlists</a></li>
+              <li><a href="/th/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">ติดต่อ</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="https://formspree.io/f/mjvqpwyo" method="POST" aria-label="สมัครรับจดหมายข่าว">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — บันทึกวิจัยเรื่องการชำระเงิน AI และการเข้ารหัสหลังควอนตัม ไม่มีสแปม</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="khun@thanakhan.co.th" />
+            <input type="hidden" name="_subject" value="สมัครรับจดหมายข่าว — sebastienrousseau.com" />
+            <button type="submit">สมัครรับ</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</span>
+          <div class="social" aria-label="ลิงก์โซเชียล">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau บน Twitter / X"><img src="https://cloudcdn.pro/clients/common/images/buttons/x-black.svg" alt="Sebastien Rousseau บน Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau บน LinkedIn"><img src="https://cloudcdn.pro/clients/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau บน LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau บน Medium"><img src="https://cloudcdn.pro/clients/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau บน Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau บน YouTube"><img src="https://cloudcdn.pro/clients/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau บน YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/th/kan-khao-thueng/index.html">การเข้าถึง</a> ·
+            <a href="/th/khwam-pen-suan-tua/index.html">ความเป็นส่วนตัว</a> ·
+            <a href="/th/khu-bangkhab/index.html">เงื่อนไข</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"th"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"th"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2562,"headline":"AI Prompt Engineering 2024: técnicas que funcionan","description":"Explore los avances 2024 del Prompt Engineering: tendencias y técnicas innovadoras que revolucionan la tecnología y las finanzas.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp","width":"100vw","height":"100vh","caption":"Un hombre analizando datos en pantallas"},"url":"https://sebastienrousseau.com/th/2024-01-23-khwam-kaona-nai-witsawakam-prompt-ai/","datePublished":"2024-01-23T05:06:06+00:00","dateModified":"2026-05-11","inLanguage":"th","keywords":"AI Prompt Engineering, instrucciones personalizadas, IA multipersona, chain of thought, computación cuántica, IA ética, adaptive prompting, zero shot, few shot, tendencias tecnológicas IA","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/th/2024-01-23-khwam-kaona-nai-witsawakam-prompt-ai/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"th"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/th/"},{"@type":"ListItem","position":3,"name":"AI Prompt Engineering 2024: técnicas que funcionan","item":"https://sebastienrousseau.com/th/2024-01-23-khwam-kaona-nai-witsawakam-prompt-ai/"}]}]}</script>
+<script src="/main.b5833c97.js" integrity="sha256-tYM8lxvdkCWufxnzXzMQGNXoL+WM703+OHsaeBCFHcw=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="ค้นหา">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>ค้นหา</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="ค้นหา">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="ค้นหาในเอกสาร..." autocomplete="off" aria-label="ค้นหา"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> ปิด</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> นำทาง</span><span><kbd>Enter</kbd> เปิด</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+</body>
+</html>
