@@ -144,10 +144,11 @@ footer {
   color: var(--ink-mute);
 }
 
+/* Footer code chips: no background tint — the card grey only reaches
+   6.96:1 against --ink, just under the 7:1 WCAG AAA threshold. The
+   mono font + ink colour is enough visual distinction. */
 footer code {
   font-family: var(--mono);
   font-size: 12px;
-  background: var(--card);
-  padding: 1px 6px;
-  border-radius: 4px;
+  color: var(--ink);
 }
