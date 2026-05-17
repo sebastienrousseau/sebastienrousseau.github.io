@@ -34,6 +34,16 @@ jobs:
             cargo install ssg --locked
           fi
 
+      - name: Install wasm-pack + wasm32 target
+        # build.sh compiles every crate under _wasm-demos/ to WebAssembly
+        # and stages the artefacts under public/labs/<crate>/. wasm-pack
+        # ships a prebuilt binary so the install is a couple seconds.
+        run: |
+          rustup target add wasm32-unknown-unknown
+          if ! command -v wasm-pack >/dev/null 2>&1; then
+            curl -sSf https://rustwasm.github.io/wasm-pack/installer/init.sh | sh
+          fi
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:

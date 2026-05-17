@@ -87,6 +87,11 @@ public/
 # Lighthouse CI run output (uploaded to LHCI temp storage instead)
 .lighthouseci/
 
+# Rust/WASM build artefacts under _wasm-demos/. The compiled bundles
+# get rebuilt from source by build.sh on every CI run; nothing to track.
+_wasm-demos/*/target/
+_wasm-demos/*/pkg/
+
 # jscpd duplication-detector report (local-only)
 jscpd-report/
 

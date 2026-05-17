@@ -33,6 +33,14 @@ _EXCLUDE_TAILS = (
     "/fr/404/", "/fr/hors-ligne/", "/fr/merci/",
 )
 
+# Prefixes excluded from sitemap by convention. WASM lab demos are
+# `<meta name="robots" content="noindex,nofollow">` by design — they're
+# experimental playgrounds linked from articles, not canonical content
+# that should rank in search.
+_EXCLUDE_PREFIXES = (
+    "/labs/",
+)
+
 _LOC_RE = re.compile(r'<loc>([^<]+)</loc>')
 
 
@@ -67,6 +75,9 @@ def collect_rendered_pages() -> set[str]:
         else:
             canonical = SITE + "/" + rel.removesuffix("index.html")
         if any(canonical.endswith(tail) for tail in _EXCLUDE_TAILS):
+            continue
+        path = canonical[len(SITE):]
+        if any(path.startswith(prefix) for prefix in _EXCLUDE_PREFIXES):
             continue
         urls.add(_norm(canonical))
     return urls

@@ -1,0 +1,32 @@
+[package]
+name = "hsh-demo"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+sha2 = "0.10"
+blake3 = { version = "1.5", default-features = false }
+argon2 = { version = "0.5", default-features = false, features = ["alloc", "password-hash"] }
+hex = "0.4"
+# `js` feature routes getrandom calls through crypto.getRandomValues in the
+# browser; `password-hash`'s SaltString::generate needs an OS-RNG-shaped
+# source which lives behind rand_core's `getrandom` feature.
+getrandom = { version = "0.2", features = ["js"] }
+rand_core = { version = "0.6", features = ["getrandom"] }
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+strip = true
+
+[package.metadata.wasm-pack.profile.release]
+# Skip wasm-opt — wasm-pack's bundled binary doesn't grok the bulk-memory
+# instructions modern rustc emits. The release profile above (opt-level=z,
+# lto, codegen-units=1, strip) already produces a compact bundle.
+wasm-opt = false
