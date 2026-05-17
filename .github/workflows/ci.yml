@@ -39,6 +39,14 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Setup Node
+        # Node 22 (LTS) is needed for the stable `--test-coverage-{lines,
+        # branches,functions}` flags that gate workers/lang-router.js at
+        # 100 % during build.sh.
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
       - name: Install Python dev tooling
         # Pin ruff so CI uses the same rule set + complexity bookkeeping
         # as local. Bump deliberately rather than drift with `latest`.

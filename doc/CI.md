@@ -128,7 +128,7 @@ CSP has no `unsafe-inline`/`unsafe-eval`; `img-src` has no blanket `https:`; eve
 
 ### 14. `workers/test_lang_router.mjs`
 
-Cloudflare Worker pure-logic tests (parseAcceptLanguage, pickSiteLang, isPageNavigation, getCookie, ACTIVE_LANGS shape).
+Cloudflare Worker tests — locale-routing decision tree (parseAcceptLanguage, pickSiteLang, isPageNavigation, getCookie, ACTIVE_LANGS shape) **and** the edge security-header layer (CSP shape, formspree.io allowlist, HSTS, Permissions-Policy, `withSecurityHeaders` wrapper). Runs under Node's built-in test coverage with **100% line / branch / function thresholds** — any new code path must come with a test or the build fails.
 
 ---
 

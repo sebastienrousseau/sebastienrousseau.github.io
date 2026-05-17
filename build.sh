@@ -66,10 +66,19 @@ python3 scripts/test_sitemap_completeness.py
 python3 scripts/test_lang_no_leakage.py
 python3 scripts/test_rtl_safe.py --strict
 python3 scripts/test_csp_strict.py
-# Cloudflare Worker (edge Accept-Language router) — pure-logic tests, no
-# Cloudflare runtime required. Skip silently if node isn't on the path.
+# Cloudflare Worker (edge Accept-Language router + security headers) —
+# pure-logic tests, no Cloudflare runtime required. 100% line/branch/
+# function coverage is enforced via Node's built-in test coverage so the
+# CSP and locale-routing decision tree stays exhaustively tested.
+# Skip silently if node isn't on the path.
 if command -v node >/dev/null 2>&1; then
-  node workers/test_lang_router.mjs
+  node --test \
+    --experimental-test-coverage \
+    --test-coverage-lines=100 \
+    --test-coverage-branches=100 \
+    --test-coverage-functions=100 \
+    --test-coverage-include='workers/lang-router.js' \
+    workers/test_lang_router.mjs
 fi
 
 # GitHub Pages serves from main/docs, so mirror the postbuild output into
