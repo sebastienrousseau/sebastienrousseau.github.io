@@ -1,11 +1,11 @@
 {
-  "locale": "it_IT",
-  "banner": "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp",
   "banner_alt": "Regolamento europeo sull'IA",
-  "keywords": "AI Act, UE, regolamentazione, IA, conformità, alto rischio, GDPR",
-  "subtitle": "Cosa prevede il regolamento europeo e perché definirà la regolamentazione globale",
-  "date": "February 13, 2024",
-  "title": "L'AI Act dell'UE: plasmare il futuro della regolamentazione mondiale dell'IA",
   "language": "it-IT",
-  "description": "Una sintesi dell'AI Act dell'UE: classificazione dei rischi, obblighi per i sistemi ad alto rischio, sanzioni e impatto extraterritoriale sui mercati mondiali."
+  "title": "L'AI Act dell'UE: plasmare il futuro della regolamentazione mondiale dell'IA",
+  "keywords": "AI Act, UE, regolamentazione, IA, conformità, alto rischio, GDPR",
+  "banner": "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp",
+  "locale": "it_IT",
+  "description": "Una sintesi dell'AI Act dell'UE: classificazione dei rischi, obblighi per i sistemi ad alto rischio, sanzioni e impatto extraterritoriale sui mercati mondiali.",
+  "subtitle": "Cosa prevede il regolamento europeo e perché definirà la regolamentazione globale",
+  "date": "February 13, 2024"
 }

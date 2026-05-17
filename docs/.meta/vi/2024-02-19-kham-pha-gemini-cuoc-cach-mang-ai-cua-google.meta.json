@@ -1,11 +1,11 @@
 {
-  "language": "vi-VN",
-  "date": "February 19, 2024",
-  "banner_alt": "Logo Gemini của Google",
-  "keywords": "Gemini, Google, AI, LLM, đa phương thức, GPT-4, cạnh tranh, mô hình ngôn ngữ",
   "banner": "https://cloudcdn.pro/stocks/images/gemini-banner.webp",
-  "locale": "vi_VN",
-  "subtitle": "Đa phương thức, cửa sổ ngữ cảnh dài và sự cạnh tranh với GPT-4",
   "description": "Gemini là phản ứng của Google đối với GPT-4. Cách nó hoạt động, sự khác biệt và đâu là ý nghĩa của nó đối với ngành AI.",
-  "title": "Khám phá Gemini: cuộc cách mạng AI của Google được giải thích"
+  "language": "vi-VN",
+  "subtitle": "Đa phương thức, cửa sổ ngữ cảnh dài và sự cạnh tranh với GPT-4",
+  "date": "February 19, 2024",
+  "keywords": "Gemini, Google, AI, LLM, đa phương thức, GPT-4, cạnh tranh, mô hình ngôn ngữ",
+  "banner_alt": "Logo Gemini của Google",
+  "title": "Khám phá Gemini: cuộc cách mạng AI của Google được giải thích",
+  "locale": "vi_VN"
 }
