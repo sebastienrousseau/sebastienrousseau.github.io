@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
-  "keywords": "Rust, library, development, code, generator, boilerplate, best, practices, quality, reliable",
-  "banner_alt": "Giant white pillars",
-  "language": "id-ID",
-  "title": "[ID DRAFT] Streamlining Rust Library Development with Code Generation",
+  "date": "Oct 26, 2023",
   "subtitle": "LibMake: a Rust code generator that enforces best practices from day one.",
   "locale": "id_ID",
-  "date": "Oct 26, 2023",
-  "description": "Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort."
+  "description": "Boost Rust library development with LibMake: A code generator tool that enforces best practises and generates initial code, saving developers time and effort.",
+  "language": "id-ID",
+  "keywords": "Rust, library, development, code, generator, boilerplate, best, practices, quality, reliable",
+  "title": "[ID DRAFT] Streamlining Rust Library Development with Code Generation",
+  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
+  "banner_alt": "Giant white pillars"
 }

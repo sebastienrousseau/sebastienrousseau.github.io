@@ -2,10 +2,10 @@
   "banner_alt": "Diagram kwantowej dystrybucji kluczy między dwoma stronami",
   "subtitle": "QKD jako strukturalna odpowiedź na zagrożenia kwantowe",
   "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
-  "language": "pl-PL",
   "date": "Dec 11, 2023",
+  "locale": "pl_PL",
   "title": "Kwantowa dystrybucja kluczy: rewolucja bezpieczeństwa w bankowości",
   "description": "Kwantowa dystrybucja kluczy (QKD) staje się strukturalną odpowiedzią dla bezpieczeństwa klasy finansowej w erze komputerów kwantowych.",
-  "locale": "pl_PL",
-  "keywords": "QKD, kwantowa dystrybucja kluczy, bezpieczeństwo, bankowość, kryptografia kwantowa, BB84"
+  "keywords": "QKD, kwantowa dystrybucja kluczy, bezpieczeństwo, bankowość, kryptografia kwantowa, BB84",
+  "language": "pl-PL"
 }

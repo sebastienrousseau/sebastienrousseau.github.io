@@ -1,12 +1,12 @@
 {
+  "date": "December 25, 2023",
   "keywords": "양자 알고리즘, AI, 기계 학습, 금융, 포트폴리오 최적화, 리스크 모델링, QAOA, VQE",
   "title": "AI 강화 양자 알고리즘으로 금융 혁신",
-  "date": "December 25, 2023",
-  "description": "금융용 양자 알고리즘 내 AI의 변혁적 역할을, 수학적 구조와 은행 응용에 초점을 맞추어 다룹니다.",
-  "locale": "ko_KR",
   "last_reviewed": "2026-05-16",
-  "subtitle": "양자 알고리즘 내 AI의 변혁적 역할",
+  "banner_alt": "양자 계산을 표현하는 추상적 비주얼",
+  "locale": "ko_KR",
   "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo-unsplash.webp",
-  "language": "ko-KR",
-  "banner_alt": "양자 계산을 표현하는 추상적 비주얼"
+  "subtitle": "양자 알고리즘 내 AI의 변혁적 역할",
+  "description": "금융용 양자 알고리즘 내 AI의 변혁적 역할을, 수학적 구조와 은행 응용에 초점을 맞추어 다룹니다.",
+  "language": "ko-KR"
 }

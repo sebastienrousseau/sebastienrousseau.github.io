@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/shokunin-banner.webp",
-  "locale": "ru_RU",
+  "description": "Shokunin — это статический генератор сайтов на Rust, созданный для производительности, доступности и SEO. Молниеносные сборки с поддержкой JSON-LD из коробки.",
   "date": "October 9, 2023",
-  "title": "Shokunin: самый быстрый статический генератор сайтов на Rust",
-  "language": "ru-RU",
   "banner_alt": "Логотип и баннер Shokunin SSG",
+  "locale": "ru_RU",
+  "banner": "https://cloudcdn.pro/stocks/images/shokunin-banner.webp",
   "subtitle": "Производительность, доступность и SEO как первоклассные граждане",
   "keywords": "Shokunin, статический генератор сайтов, Rust, SSG, производительность, SEO, JSON-LD, доступность, open source",
-  "description": "Shokunin — это статический генератор сайтов на Rust, созданный для производительности, доступности и SEO. Молниеносные сборки с поддержкой JSON-LD из коробки."
+  "language": "ru-RU",
+  "title": "Shokunin: самый быстрый статический генератор сайтов на Rust"
 }

@@ -1,11 +1,11 @@
 {
   "description": "Een systeem voor real-time spraak-naar-tekst-transcriptie dat OpenAI Whisper en Metal Performance Shaders combineert om sub-seconde latentie te halen.",
   "subtitle": "Sub-seconde latentie bij 8 tot 12× real-time op M1 Max via Metal Performance Shaders",
-  "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
-  "date": "March 12, 2024",
-  "locale": "nl_NL",
-  "language": "nl-NL",
-  "title": "Real-time spraakherkenning op macOS met OpenAI Whisper",
   "banner_alt": "Visualisatie van real-time spraakherkenning op macOS",
-  "keywords": "OpenAI Whisper, macOS, M1 Max, Metal Performance Shaders, spraakherkenning, real-time"
+  "locale": "nl_NL",
+  "date": "March 12, 2024",
+  "keywords": "OpenAI Whisper, macOS, M1 Max, Metal Performance Shaders, spraakherkenning, real-time",
+  "language": "nl-NL",
+  "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
+  "title": "Real-time spraakherkenning op macOS met OpenAI Whisper"
 }

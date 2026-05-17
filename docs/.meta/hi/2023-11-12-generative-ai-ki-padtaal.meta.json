@@ -1,11 +1,11 @@
 {
-  "banner_alt": "जनरेटिव AI निर्मित कलाकृति",
-  "date": "November 12, 2023",
-  "title": "जनरेटिव AI की पड़ताल",
-  "description": "जनरेटिव AI का परिचय: LLM, प्रसार-मॉडल, उद्यम-स्तरीय उपयोग के मामले और नैतिक विचार।",
-  "locale": "hi_IN",
-  "language": "hi-IN",
   "subtitle": "बड़े भाषा-मॉडल, प्रसार-मॉडल और उद्यम-उपयोग के मामलों के बीच",
   "keywords": "जनरेटिव AI, LLM, GPT, Stable Diffusion, MidJourney, उद्यम AI, AI नैतिकता, फाउंडेशन मॉडल, ट्रांसफ़ॉर्मर, NLP",
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
+  "date": "November 12, 2023",
+  "language": "hi-IN",
+  "locale": "hi_IN",
+  "title": "जनरेटिव AI की पड़ताल",
+  "banner_alt": "जनरेटिव AI निर्मित कलाकृति",
+  "description": "जनरेटिव AI का परिचय: LLM, प्रसार-मॉडल, उद्यम-स्तरीय उपयोग के मामले और नैतिक विचार।"
 }
