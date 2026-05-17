@@ -1,16 +1,18 @@
 /**
- * Cloudflare Worker — Accept-Language redirect + edge security headers.
+ * Cloudflare Worker — locale cookie / query-param routing + edge security headers.
  *
  * Two responsibilities, both running on every request that hits the
  * apex domain (the Worker is wired to `sebastienrousseau.com/*` and
  * `www.sebastienrousseau.com/*` in the Cloudflare dashboard, sitting
  * in front of the GitHub Pages origin):
  *
- *   1. Locale routing. Bare-root visitors get a 302 to their preferred
- *      locale subtree when they haven't already picked one, their
- *      `Accept-Language` header names an active non-EN language, and a
- *      static page actually exists for that language at the requested
- *      path. Honours the `pref-lang` cookie + `?lang=xx` override.
+ *   1. Locale routing — explicit only. Visitors land on the canonical
+ *      EN site by default. The Worker redirects to `/<lang>/<path>` only
+ *      when the visitor has actively opted in: either a `pref-lang=<lang>`
+ *      cookie (set by clicking the in-page locale switcher) or a
+ *      `?lang=<lang>` deep-link parameter. Accept-Language is no longer
+ *      sniffed — too many bilingual readers were getting bounced off the
+ *      canonical site they actually wanted.
  *
  *   2. Strict security headers on every response — most importantly
  *      Content-Security-Policy. The header CSP mirrors the per-page
@@ -45,38 +47,6 @@ export const ACTIVE_LANGS = new Set([
   'it', 'ja', 'ko', 'nl', 'pl', 'pt-br', 'ro', 'ru', 'sv', 'th', 'tr',
   'uk', 'vi', 'yo', 'zh-hans', 'zh-hant',
 ]);
-
-// BCP-47 base tag → site lang code. Multiple base tags can map to the
-// same site code (e.g. 'pt-PT' and 'pt-BR' both map to 'pt-br').
-const TAG_TO_LANG = {
-  'ar': 'ar',
-  'bn': 'bn',
-  'cs': 'cs',
-  'de': 'de',
-  'es': 'es',
-  'fil': 'fil',  'tl': 'fil',
-  'fr': 'fr',
-  'ha': 'ha',
-  'he': 'he',
-  'hi': 'hi',
-  'id': 'id',
-  'it': 'it',
-  'ja': 'ja',
-  'ko': 'ko',
-  'nl': 'nl',
-  'pl': 'pl',
-  'pt': 'pt-br',  // pt-BR ships first; pt-PT readers get pt-br
-  'ro': 'ro',
-  'ru': 'ru',
-  'sv': 'sv',
-  'th': 'th',
-  'tr': 'tr',
-  'uk': 'uk',
-  'vi': 'vi',
-  'yo': 'yo',
-  'zh-cn': 'zh-hans', 'zh-sg': 'zh-hans', 'zh-hans': 'zh-hans',
-  'zh-tw': 'zh-hant', 'zh-hk': 'zh-hant', 'zh-mo': 'zh-hant', 'zh-hant': 'zh-hant',
-};
 
 const COOKIE = 'pref-lang';
 // 30 days — long enough to be sticky, short enough to honour later changes.
@@ -155,43 +125,6 @@ export function withSecurityHeaders(response, extraHeaders) {
   });
 }
 
-/**
- * Parse a single `Accept-Language` header into a list of language codes
- * ordered by descending q-value, normalised to lowercase. Whitespace,
- * malformed q-values and the wildcard `*` are tolerated.
- */
-export function parseAcceptLanguage(header) {
-  if (!header) return [];
-  return header
-    .split(',')
-    .map(part => {
-      const [tag, ...params] = part.trim().split(';');
-      let q = 1.0;
-      for (const p of params) {
-        const m = p.trim().match(/^q=([\d.]+)$/);
-        if (m) q = parseFloat(m[1]) || 0;
-      }
-      return { tag: tag.trim().toLowerCase(), q };
-    })
-    .filter(t => t.tag && t.tag !== '*')
-    .sort((a, b) => b.q - a.q)
-    .map(t => t.tag);
-}
-
-/**
- * Map a list of BCP-47 tags (already ordered by preference) to the first
- * site lang code we serve. Tries the exact tag first, then the language
- * primary subtag.
- */
-export function pickSiteLang(tags) {
-  for (const tag of tags) {
-    if (TAG_TO_LANG[tag]) return TAG_TO_LANG[tag];
-    const base = tag.split('-')[0];
-    if (TAG_TO_LANG[base]) return TAG_TO_LANG[base];
-  }
-  return null;
-}
-
 export function getCookie(cookieHeader, name) {
   if (!cookieHeader) return null;
   for (const part of cookieHeader.split(';')) {
@@ -261,24 +194,11 @@ export default {
         { 'Set-Cookie': cookieValue },
       );
     }
-    // No cookie, no override — fall back to Accept-Language sniffing.
-    const tags = parseAcceptLanguage(request.headers.get('Accept-Language'));
-    if (tags.length === 0) {
-      return withSecurityHeaders(await fetch(request));
-    }
-    // If EN ranks first in the visitor's preference list, leave them be —
-    // they want the canonical site. parseAcceptLanguage drops empty tags,
-    // so tags[0] is a non-empty string and split('-')[0] is at minimum ''.
-    const topBase = tags[0].split('-')[0].toLowerCase();
-    if (topBase === 'en') {
-      return withSecurityHeaders(await fetch(request));
-    }
-    const siteLang = pickSiteLang(tags);
-    if (!siteLang) {
-      return withSecurityHeaders(await fetch(request));
-    }
-    const redirected = new URL(url);
-    redirected.pathname = `/${siteLang}${url.pathname === '/' ? '/' : url.pathname}`;
-    return withSecurityHeaders(Response.redirect(redirected.toString(), 302));
+    // No cookie, no override — serve the canonical EN site. Visitors
+    // can still pick a locale via the in-page switcher (which sets
+    // `pref-lang`) or by deep-linking with `?lang=xx`. Auto-redirect on
+    // Accept-Language alone surprises too many bilingual readers who
+    // expect the English version by default; keeping discovery opt-in.
+    return withSecurityHeaders(await fetch(request));
   },
 };

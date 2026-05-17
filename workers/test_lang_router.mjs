@@ -15,8 +15,6 @@ import { test, before, after } from 'node:test';
 import { strict as assert } from 'node:assert';
 
 import handler, {
-  parseAcceptLanguage,
-  pickSiteLang,
   isPageNavigation,
   getCookie,
   ACTIVE_LANGS,
@@ -63,93 +61,6 @@ function makeRequest(url, opts = {}) {
 async function callHandler(request) {
   return handler.fetch(request, {}, {});
 }
-
-// ---------------------------------------------------------------------------
-// parseAcceptLanguage
-// ---------------------------------------------------------------------------
-
-test('parseAcceptLanguage: q-sorted, lowercased', () => {
-  assert.deepEqual(
-    parseAcceptLanguage('fr-FR,fr;q=0.9,en;q=0.8'),
-    ['fr-fr', 'fr', 'en'],
-  );
-});
-
-test('parseAcceptLanguage: empty / null input', () => {
-  assert.deepEqual(parseAcceptLanguage(''), []);
-  assert.deepEqual(parseAcceptLanguage(null), []);
-  assert.deepEqual(parseAcceptLanguage(undefined), []);
-});
-
-test('parseAcceptLanguage: wildcard dropped', () => {
-  assert.deepEqual(parseAcceptLanguage('*;q=0.5,de;q=0.9'), ['de']);
-});
-
-test('parseAcceptLanguage: sorted by q descending', () => {
-  assert.deepEqual(
-    parseAcceptLanguage('en;q=0.5,fr;q=0.9'),
-    ['fr', 'en'],
-  );
-});
-
-test('parseAcceptLanguage: malformed q-value that matches the [\\d.] charset but parseFloat-fails is treated as 0', () => {
-  // 'fr;q=.' matches /^q=([\d.]+)$/ but parseFloat('.') is NaN → q=0.
-  // 'de' has implicit q=1, so it wins.
-  assert.deepEqual(
-    parseAcceptLanguage('fr;q=.,de'),
-    ['de', 'fr'],
-  );
-});
-
-test('parseAcceptLanguage: garbage q-value that fails the regex leaves q at default 1', () => {
-  // 'fr;q=garbage' fails the regex; q stays at default 1.0; original
-  // order is preserved by the stable sort when q-values tie.
-  assert.deepEqual(
-    parseAcceptLanguage('fr;q=garbage,de'),
-    ['fr', 'de'],
-  );
-});
-
-test('parseAcceptLanguage: q without value clause is ignored', () => {
-  assert.deepEqual(parseAcceptLanguage('fr;foo=bar'), ['fr']);
-});
-
-// ---------------------------------------------------------------------------
-// pickSiteLang
-// ---------------------------------------------------------------------------
-
-test('pickSiteLang: exact match wins over base', () => {
-  assert.equal(pickSiteLang(['fr-fr', 'fr', 'en']), 'fr');
-});
-
-test('pickSiteLang: pt-PT folds to pt-br', () => {
-  assert.equal(pickSiteLang(['pt-pt', 'pt']), 'pt-br');
-});
-
-test('pickSiteLang: zh-tw → zh-hant', () => {
-  assert.equal(pickSiteLang(['zh-tw', 'zh']), 'zh-hant');
-});
-
-test('pickSiteLang: zh-cn → zh-hans', () => {
-  assert.equal(pickSiteLang(['zh-cn']), 'zh-hans');
-});
-
-test('pickSiteLang: EN is not a non-EN target', () => {
-  assert.equal(pickSiteLang(['en-us', 'en']), null);
-});
-
-test('pickSiteLang: unsupported lang returns null', () => {
-  assert.equal(pickSiteLang(['xh-za']), null);
-});
-
-test('pickSiteLang: empty list returns null', () => {
-  assert.equal(pickSiteLang([]), null);
-});
-
-test('pickSiteLang: falls back to base subtag when exact not mapped', () => {
-  // 'fr-ca' isn't in TAG_TO_LANG; base 'fr' is. Should return 'fr'.
-  assert.equal(pickSiteLang(['fr-ca']), 'fr');
-});
 
 // ---------------------------------------------------------------------------
 // isPageNavigation
@@ -391,27 +302,26 @@ test('handler: POST request passes through with security headers', async () => {
     SECURITY_HEADERS['Content-Security-Policy']);
 });
 
-test('handler: HEAD request takes the GET/HEAD path (no early pass-through)', async () => {
-  // HEAD is *not* short-circuited by the method check; the request still
-  // goes through the language-routing decision tree like a GET.
+test('handler: HEAD with pref-lang cookie still redirects', async () => {
+  // HEAD requests run through the routing decision tree like GETs.
   resetLog();
   const req = makeRequest('https://sebastienrousseau.com/', {
     method: 'HEAD',
-    headers: { 'Accept-Language': 'fr' },
+    headers: { Cookie: 'pref-lang=fr' },
   });
   const res = await callHandler(req);
   assert.equal(res.status, 302);
   assert.equal(res.headers.get('location'), 'https://sebastienrousseau.com/fr/');
 });
 
-test('handler: Cookie present but no pref-lang key falls through to A-L', async () => {
+test('handler: Cookie present but no pref-lang key → pass-through (no auto-redirect)', async () => {
   resetLog();
   const req = makeRequest('https://sebastienrousseau.com/', {
     headers: { Cookie: 'other=value; theme=dark', 'Accept-Language': 'fr' },
   });
   const res = await callHandler(req);
-  assert.equal(res.status, 302);
-  assert.equal(res.headers.get('location'), 'https://sebastienrousseau.com/fr/');
+  assert.equal(res.status, 200);
+  assert.equal(passThroughLog.length, 1);
 });
 
 test('handler: asset request bypasses redirect, gets security headers', async () => {
@@ -453,15 +363,16 @@ test('handler: cookie pref-lang=fr on /papers/ redirects to /fr/papers/', async 
     'https://sebastienrousseau.com/fr/papers/index.html');
 });
 
-test('handler: cookie set to inactive lang is ignored (falls through to A-L)', async () => {
+test('handler: cookie set to inactive lang is ignored → pass-through', async () => {
   resetLog();
   const req = makeRequest('https://sebastienrousseau.com/', {
     headers: { Cookie: 'pref-lang=xx', 'Accept-Language': 'de' },
   });
   const res = await callHandler(req);
-  // pref-lang=xx isn't ACTIVE → falls to ?lang=, then to Accept-Language=de.
-  assert.equal(res.status, 302);
-  assert.equal(res.headers.get('location'), 'https://sebastienrousseau.com/de/');
+  // pref-lang=xx isn't ACTIVE → no cookie redirect. Accept-Language is
+  // never sniffed, so the visitor lands on the canonical EN homepage.
+  assert.equal(res.status, 200);
+  assert.equal(passThroughLog.length, 1);
 });
 
 test('handler: ?lang=en passes through (explicit opt-out)', async () => {
@@ -492,16 +403,16 @@ test('handler: ?lang=ZH-HANS (case mixed) normalises + redirects', async () => {
   assert.equal(res.headers.get('location'), 'https://sebastienrousseau.com/zh-hans/');
 });
 
-test('handler: ?lang=xx (inactive) falls through to Accept-Language; param is carried along on the redirect (does not re-fire because /de/ is in a lang subtree)', async () => {
+test('handler: ?lang=xx (inactive) falls through to canonical site', async () => {
   const req = makeRequest('https://sebastienrousseau.com/?lang=xx', {
     headers: { 'Accept-Language': 'de' },
   });
   const res = await callHandler(req);
-  assert.equal(res.status, 302);
-  assert.equal(res.headers.get('location'), 'https://sebastienrousseau.com/de/?lang=xx');
+  assert.equal(res.status, 200);
+  assert.equal(passThroughLog.length, 1);
 });
 
-test('handler: no A-L header → pass-through', async () => {
+test('handler: no cookie / no override → pass-through (canonical EN)', async () => {
   resetLog();
   const req = makeRequest('https://sebastienrousseau.com/');
   const res = await callHandler(req);
@@ -509,41 +420,13 @@ test('handler: no A-L header → pass-through', async () => {
   assert.equal(passThroughLog.length, 1);
 });
 
-test('handler: A-L=en passes through (canonical site)', async () => {
+test('handler: Accept-Language fr-FR no longer triggers a redirect', async () => {
+  // Regression test for the bilingual-reader complaint: French-browser
+  // visitors used to be 302'd to /fr/ before they could even see the
+  // canonical site. Now they stay on / unless they explicitly opt in.
   resetLog();
   const req = makeRequest('https://sebastienrousseau.com/', {
-    headers: { 'Accept-Language': 'en-US,en;q=0.9' },
-  });
-  const res = await callHandler(req);
-  assert.equal(res.status, 200);
-  assert.equal(passThroughLog.length, 1);
-});
-
-test('handler: A-L=fr-FR redirects to /fr/', async () => {
-  const req = makeRequest('https://sebastienrousseau.com/', {
-    headers: { 'Accept-Language': 'fr-FR,fr;q=0.9' },
-  });
-  const res = await callHandler(req);
-  assert.equal(res.status, 302);
-  assert.equal(res.headers.get('location'), 'https://sebastienrousseau.com/fr/');
-});
-
-test('handler: A-L=fr on a non-root pathname keeps the suffix on redirect', async () => {
-  // Exercises the non-root branch of the `url.pathname === '/' ? '/' : url.pathname`
-  // ternary in the Accept-Language path.
-  const req = makeRequest('https://sebastienrousseau.com/papers/index.html', {
-    headers: { 'Accept-Language': 'fr' },
-  });
-  const res = await callHandler(req);
-  assert.equal(res.status, 302);
-  assert.equal(res.headers.get('location'),
-    'https://sebastienrousseau.com/fr/papers/index.html');
-});
-
-test('handler: A-L=xh-ZA (unsupported) passes through', async () => {
-  resetLog();
-  const req = makeRequest('https://sebastienrousseau.com/', {
-    headers: { 'Accept-Language': 'xh-ZA' },
+    headers: { 'Accept-Language': 'fr-FR,fr;q=0.9,en;q=0.5' },
   });
   const res = await callHandler(req);
   assert.equal(res.status, 200);
@@ -552,9 +435,7 @@ test('handler: A-L=xh-ZA (unsupported) passes through', async () => {
 
 test('handler: /fr/ request (already in lang subtree) passes through', async () => {
   resetLog();
-  const req = makeRequest('https://sebastienrousseau.com/fr/papers/', {
-    headers: { 'Accept-Language': 'de' },
-  });
+  const req = makeRequest('https://sebastienrousseau.com/fr/papers/');
   const res = await callHandler(req);
   assert.equal(res.status, 200);
   assert.equal(passThroughLog.length, 1);
