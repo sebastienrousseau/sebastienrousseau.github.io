@@ -1,12 +1,12 @@
 {
-  "date": "May 14, 2026",
-  "subtitle": "コーポレートトレジャリーの量子安全アーキテクチャ",
   "locale": "ja_JP",
-  "keywords": "ポスト量子移行, コーポレート金融, トレジャリー, 台帳, 量子安全, PQC, 暗号アグリティ",
-  "description": "コーポレート金融サービスのためのポスト量子移行ガイド。台帳、メッセージング、認証システム。",
   "banner_alt": "量子安全な暗号化されたデータ",
-  "title": "台帳の防衛:法人金融のポスト量子移行",
+  "language": "ja-JP",
+  "keywords": "ポスト量子移行, コーポレート金融, トレジャリー, 台帳, 量子安全, PQC, 暗号アグリティ",
   "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-iar-afB0QQw-unsplash.webp",
-  "last_reviewed": "2026-05-14",
-  "language": "ja-JP"
+  "subtitle": "コーポレートトレジャリーの量子安全アーキテクチャ",
+  "date": "May 14, 2026",
+  "title": "台帳の防衛:法人金融のポスト量子移行",
+  "description": "コーポレート金融サービスのためのポスト量子移行ガイド。台帳、メッセージング、認証システム。",
+  "last_reviewed": "2026-05-14"
 }

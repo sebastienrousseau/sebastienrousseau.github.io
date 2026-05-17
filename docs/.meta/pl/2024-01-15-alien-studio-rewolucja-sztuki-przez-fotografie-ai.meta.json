@@ -1,11 +1,11 @@
 {
-  "keywords": "Alien Studio, AI, fotografia, sztuka cyfrowa, diffusion, Midjourney, generatywna sztuka",
-  "title": "Alien Studio: rewolucja sztuki przez fotografię AI",
   "subtitle": "Nowa estetyka tworzona przez sztuczną inteligencję",
-  "banner_alt": "Surrealistyczny obraz wygenerowany przez Alien Studio",
-  "description": "Alien Studio łączy fotografię i AI, by tworzyć obrazy, które redefiniują sztukę cyfrową.",
+  "date": "Jan 15, 2024",
+  "keywords": "Alien Studio, AI, fotografia, sztuka cyfrowa, diffusion, Midjourney, generatywna sztuka",
   "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
-  "language": "pl-PL",
+  "banner_alt": "Surrealistyczny obraz wygenerowany przez Alien Studio",
   "locale": "pl_PL",
-  "date": "Jan 15, 2024"
+  "language": "pl-PL",
+  "description": "Alien Studio łączy fotografię i AI, by tworzyć obrazy, które redefiniują sztukę cyfrową.",
+  "title": "Alien Studio: rewolucja sztuki przez fotografię AI"
 }
