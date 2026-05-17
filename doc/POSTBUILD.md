@@ -18,51 +18,52 @@
 ## Order of operations
 
 ```mermaid
+%%{init: {'theme':'neutral'} }%%
 flowchart TB
-    P0[HTML page<br/>from public/]
-    
-    subgraph SEO["SEO + JSON-LD"]
-        S1[scrub_localhost_urls]
-        S2[stamp_asset_fingerprints]
-        S3[fix_sri]
-        S4[inject_itemlist]
-        S5[inject_tech_article]
-        S6[inject_software_source_code]
-        S7[fix_social_image]
-        S8[inject_og_completeness]
-        S9[stamp_image_dimensions]
-        S10[inject_howto]
-        S11[inject_word_count]
-        S12[inject_about]
-    end
+ P0[HTML page<br/>from public/]
+ 
+ subgraph SEO["SEO + JSON-LD"]
+ S1[scrub_localhost_urls]
+ S2[stamp_asset_fingerprints]
+ S3[fix_sri]
+ S4[inject_itemlist]
+ S5[inject_tech_article]
+ S6[inject_software_source_code]
+ S7[fix_social_image]
+ S8[inject_og_completeness]
+ S9[stamp_image_dimensions]
+ S10[inject_howto]
+ S11[inject_word_count]
+ S12[inject_about]
+ end
 
-    subgraph ART["Article furniture"]
-        A1[inject_article_furniture<br/>(tag badges, meta bar)]
-        A2[inject_sigstore_attestation]
-        A3[inject_anchor_links_and_toc]
-        A4[inject_citations]
-        A5[inject_sources_list]
-        A6[inject_mermaid]
-    end
+ subgraph ART["Article furniture"]
+ A1[inject_article_furniture<br/>(tag badges, meta bar)]
+ A2[inject_sigstore_attestation]
+ A3[inject_anchor_links_and_toc]
+ A4[inject_citations]
+ A5[inject_sources_list]
+ A6[inject_mermaid]
+ end
 
-    subgraph NAV["Navigation"]
-        N1[inject_nav_active]
-        N2[inject_prev_next_nav]
-        N3[inject_hreflang]
-    end
+ subgraph NAV["Navigation"]
+ N1[inject_nav_active]
+ N2[inject_prev_next_nav]
+ N3[inject_hreflang]
+ end
 
-    subgraph FIN["Finalisation"]
-        F1[inject_speculation_rules]
-        F2[inject_github_stats]
-        F3[hoist_body_link_stylesheets]
-        F4[inject_jsonld_hashes<br/>MUST run last]
-    end
+ subgraph FIN["Finalisation"]
+ F1[inject_speculation_rules]
+ F2[inject_github_stats]
+ F3[hoist_body_link_stylesheets]
+ F4[inject_jsonld_hashes<br/>MUST run last]
+ end
 
-    P0 --> S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8 --> S9 --> S10 --> S11 --> S12
-    S12 --> A1 --> A2 --> A3 --> A4 --> A5 --> A6
-    A6 --> N1 --> N2 --> N3
-    N3 --> F1 --> F2 --> F3 --> F4
-    F4 --> OUT[Patched HTML<br/>written back]
+ P0 --> S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8 --> S9 --> S10 --> S11 --> S12
+ S12 --> A1 --> A2 --> A3 --> A4 --> A5 --> A6
+ A6 --> N1 --> N2 --> N3
+ N3 --> F1 --> F2 --> F3 --> F4
+ F4 --> OUT[Patched HTML<br/>written back]
 ```
 
 Why the order matters:
@@ -213,7 +214,7 @@ Static Site Generator's search-widget injects a `<link rel=stylesheet>` into the
 
 Counter: `link_hoisted`.
 
-### 25. `inject_jsonld_hashes` ⚠️ Must run last
+### 25. `inject_jsonld_hashes` [!] Must run last
 
 Computes SHA-256 of every inline `<script type="application/ld+json">` block + the `<script type="speculationrules">` block. Strips `'unsafe-inline'` from the page's `script-src` and folds in the per-block hashes as `'sha256-<base64>'` tokens.
 
@@ -272,7 +273,7 @@ page = Path('public/2026-05-21-best-cloud-infrastructure-architecture-2026/index
 html = page.read_text()
 out = inject_tech_article(page, html)
 # Compare lengths, check for the expected marker, etc.
-print(f'before: {len(html)}  after: {len(out)}')
+print(f'before: {len(html)} after: {len(out)}')
 print('marker present:', '\"@type\":\"TechArticle\"' in out)
 "
 ```

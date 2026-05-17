@@ -21,48 +21,49 @@ This site is the public face of someone who writes about post-quantum cryptograp
 ## Threat model
 
 ```mermaid
+%%{init: {'theme':'neutral'} }%%
 graph TB
-    subgraph EXT["External"]
-        V[/"Visitor"/]
-        AI[/"AI crawler"/]
-        ATK[/"Attacker /<br/>nation-state"/]
-    end
+ subgraph EXT["External"]
+ V[/"Visitor"/]
+ AI[/"AI crawler"/]
+ ATK[/"Attacker /<br/>nation-state"/]
+ end
 
-    subgraph EDGE["Cloudflare edge (TLS termination)"]
-        PQ["X25519MLKEM768<br/>(NIST FIPS 203)"]
-        CFW["lang-router Worker"]
-        TR["Transform Rules<br/>HSTS · X-Frame · COOP · CORP"]
-        CDN["CDN cache<br/>(stale-while-revalidate)"]
-    end
+ subgraph EDGE["Cloudflare edge (TLS termination)"]
+ PQ["X25519MLKEM768<br/>(NIST FIPS 203)"]
+ CFW["lang-router Worker"]
+ TR["Transform Rules<br/>HSTS · X-Frame · COOP · CORP"]
+ CDN["CDN cache<br/>(stale-while-revalidate)"]
+ end
 
-    subgraph ORIG["GitHub Pages origin"]
-        H["docs/ (static HTML)"]
-        SBOM["sbom.cdx.json"]
-        WKD["openpgpkey/<br/>(WKD)"]
-    end
+ subgraph ORIG["GitHub Pages origin"]
+ H["docs/ (static HTML)"]
+ SBOM["sbom.cdx.json"]
+ WKD["openpgpkey/<br/>(WKD)"]
+ end
 
-    subgraph CSP["Per-page browser enforcement"]
-        SRI["SRI on /_csp/*"]
-        JLD["JSON-LD sha256<br/>allowlist"]
-        SR["speculation-rules<br/>keyword"]
-        FA["frame-ancestors<br/>'none'"]
-    end
+ subgraph CSP["Per-page browser enforcement"]
+ SRI["SRI on /_csp/*"]
+ JLD["JSON-LD sha256<br/>allowlist"]
+ SR["speculation-rules<br/>keyword"]
+ FA["frame-ancestors<br/>'none'"]
+ end
 
-    V --> PQ
-    AI --> PQ
-    ATK -.->|harvest-now-<br/>decrypt-later| PQ
-    ATK -.->|XSS / injection| CDN
-    ATK -.->|supply-chain| CDN
-    PQ --> CFW
-    CFW --> TR
-    TR --> CDN
-    CDN --> H
-    CDN --> SBOM
-    CDN --> WKD
-    H --> SRI
-    H --> JLD
-    H --> SR
-    H --> FA
+ V --> PQ
+ AI --> PQ
+ ATK -.->|harvest-now-<br/>decrypt-later| PQ
+ ATK -.->|XSS / injection| CDN
+ ATK -.->|supply-chain| CDN
+ PQ --> CFW
+ CFW --> TR
+ TR --> CDN
+ CDN --> H
+ CDN --> SBOM
+ CDN --> WKD
+ H --> SRI
+ H --> JLD
+ H --> SR
+ H --> FA
 ```
 
 Adversaries the site is hardened against:
@@ -87,9 +88,9 @@ Cloudflare's edge negotiates the post-quantum hybrid **X25519MLKEM768** (NIST FI
 
 | Client | PQC negotiation |
 |---|---|
-| Chrome 124+ | ✓ X25519MLKEM768 |
-| Firefox 132+ | ✓ X25519MLKEM768 |
-| Safari 18+ | ✓ X25519MLKEM768 |
+| Chrome 124+ | [x] X25519MLKEM768 |
+| Firefox 132+ | [x] X25519MLKEM768 |
+| Safari 18+ | [x] X25519MLKEM768 |
 | Older browsers | Falls back to X25519 — no breakage |
 
 **Why hybrid?** ML-KEM is new. A hybrid scheme (classical + PQ) survives if either half is broken — defense in depth. The NIST standard is exactly this construction.
@@ -98,8 +99,8 @@ Verification:
 
 ```bash
 echo | openssl s_client -connect sebastienrousseau.com:443 \
-  -tls1_3 -curves X25519MLKEM768 2>/dev/null \
-  | grep -E 'Server (Temp|public) Key|TLS_'
+ -tls1_3 -curves X25519MLKEM768 2>/dev/null \
+ | grep -E 'Server (Temp|public) Key|TLS_'
 
 # Or via Chrome DevTools:
 # Security tab → "Connection — secure connection settings"
@@ -121,34 +122,34 @@ form-action 'self' https://formspree.io;
 object-src 'none';
 upgrade-insecure-requests;
 script-src 'self' 'inline-speculation-rules'
-           'sha256-<per-page-hash>'…
-           https://www.google-analytics.com
-           https://www.googletagmanager.com
-           https://www.google.com
-           https://www.gstatic.com
-           https://open.spotify.com
-           https://static.cloudflareinsights.com
-           https://challenges.cloudflare.com
-           https://ajax.cloudflare.com;
+ 'sha256-<per-page-hash>'…
+ https://www.google-analytics.com
+ https://www.googletagmanager.com
+ https://www.google.com
+ https://www.gstatic.com
+ https://open.spotify.com
+ https://static.cloudflareinsights.com
+ https://challenges.cloudflare.com
+ https://ajax.cloudflare.com;
 frame-src 'self' https://www.google.com
-          https://open.spotify.com
-          https://www.youtube.com
-          https://www.youtube-nocookie.com;
+ https://open.spotify.com
+ https://www.youtube.com
+ https://www.youtube-nocookie.com;
 connect-src 'self'
-            https://www.googletagmanager.com
-            https://www.google-analytics.com
-            https://region1.google-analytics.com
-            https://www.google.com
-            https://stats.g.doubleclick.net
-            https://open.spotify.com;
+ https://www.googletagmanager.com
+ https://www.google-analytics.com
+ https://region1.google-analytics.com
+ https://www.google.com
+ https://stats.g.doubleclick.net
+ https://open.spotify.com;
 img-src 'self' data: blob:
-        https://cloudcdn.pro
-        https://pacs008.com
-        https://www.googletagmanager.com
-        https://i.scdn.co;
+ https://cloudcdn.pro
+ https://pacs008.com
+ https://www.googletagmanager.com
+ https://i.scdn.co;
 style-src 'self'
-          'sha256-47DEQpj…='
-          https://fonts.googleapis.com;
+ 'sha256-47DEQpj…='
+ https://fonts.googleapis.com;
 font-src 'self' https://fonts.gstatic.com;
 media-src 'self' https://p.scdn.co https://*.scdn.co;
 ```
@@ -168,8 +169,8 @@ Every `/_csp/*` asset (the fingerprinted CSS/JS bundles) carries a real base64 S
 
 ```html
 <link rel="stylesheet" href="/_csp/abc123.css"
-      integrity="sha256-base64-of-actual-bytes="
-      crossorigin="anonymous" />
+ integrity="sha256-base64-of-actual-bytes="
+ crossorigin="anonymous" />
 ```
 
 Static Site Generator emits a placeholder `integrity="sha256-<short-hex>"`; `scripts/postbuild.py:fix_sri()` replaces it with the real base64 hash computed from the actual file bytes. Browsers refuse to execute/apply the asset if the content doesn't match.

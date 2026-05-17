@@ -19,46 +19,47 @@ End-to-end map of the build pipeline. Read this if you want to understand how a 
 ## Top-level flow
 
 ```mermaid
+%%{init: {'theme':'neutral'} }%%
 flowchart TB
-    subgraph Source["Source (Git)"]
-        EN[_posts/*.md<br/>61 English]
-        T[_posts/&lt;lang&gt;/*.md<br/>1189 translations]
-        L[_layouts/*.html<br/>11 layouts]
-        D[_data/i18n/&lt;lang&gt;/<br/>28 × 11 JSON files]
-        REG[scripts/_lang_registry.py<br/>28-lang truth]
-    end
+ subgraph Source["Source (Git)"]
+ EN[_posts/*.md<br/>61 English]
+ T[_posts/<lang>/*.md<br/>1189 translations]
+ L[_layouts/*.html<br/>11 layouts]
+ D[_data/i18n/<lang>/<br/>28 × 11 JSON files]
+ REG[scripts/_lang_registry.py<br/>28-lang truth]
+ end
 
-    subgraph Build["Build (12s)"]
-        SSG[Static Site Generator<br/>Rust binary]
-        BT[build_topics.py]
-        BR[build_translations.py]
-        BF[build_lang_feeds.py]
-        BA[build_agent_api.py]
-        BL[build_lead_magnets.py]
-        PB[postbuild.py<br/>18 passes]
-    end
+ subgraph Build["Build (12s)"]
+ SSG[Static Site Generator<br/>Rust binary]
+ BT[build_topics.py]
+ BR[build_translations.py]
+ BF[build_lang_feeds.py]
+ BA[build_agent_api.py]
+ BL[build_lead_magnets.py]
+ PB[postbuild.py<br/>18 passes]
+ end
 
-    subgraph Gates["14 CI gates"]
-        G[ruff · radon · pytest 100%<br/>JSON-LD validate<br/>i18n parity ×7<br/>pa11y AAA · Lighthouse<br/>CSP strict-shape<br/>EN-leakage · Workers]
-    end
+ subgraph Gates["14 CI gates"]
+ G[ruff · radon · pytest 100%<br/>JSON-LD validate<br/>i18n parity ×7<br/>pa11y AAA · Lighthouse<br/>CSP strict-shape<br/>EN-leakage · Workers]
+ end
 
-    subgraph Output["Output"]
-        P[public/<br/>1849 pages]
-        DC[docs/<br/>GH Pages root]
-        CF[Cloudflare CDN<br/>PQC TLS]
-        WORK[Worker: lang-router<br/>Accept-Language redirect]
-    end
+ subgraph Output["Output"]
+ P[public/<br/>1849 pages]
+ DC[docs/<br/>GH Pages root]
+ CF[Cloudflare CDN<br/>PQC TLS]
+ WORK[Worker: lang-router<br/>Accept-Language redirect]
+ end
 
-    Source --> SSG
-    SSG --> BT --> BR --> BF --> BA --> BL --> PB
-    REG --> BR
-    REG --> BF
-    REG --> BA
-    PB --> Gates
-    Gates --> P
-    P -->|rsync| DC
-    DC -->|git push| CF
-    CF --> WORK
+ Source --> SSG
+ SSG --> BT --> BR --> BF --> BA --> BL --> PB
+ REG --> BR
+ REG --> BF
+ REG --> BA
+ PB --> Gates
+ Gates --> P
+ P -->|rsync| DC
+ DC -->|git push| CF
+ CF --> WORK
 ```
 
 The build is a strict pipeline — each stage reads from disk, writes to disk, and produces no in-memory state shared with the next. That means you can re-run a single stage to debug it.
@@ -114,10 +115,10 @@ Per-language RSS, Atom, news-sitemap, and JSON-Feed 1.1 outputs. Same article or
 Machine-readable JSON for AI / agentic clients:
 
 ```
-/api/agents/index.json    — discovery document
-/api/agents/posts.json    — every dated post with metadata
-/api/agents/topics.json   — curated topic clusters + slug lists
-/api/agents/person.json   — author profile (Person + Organization)
+/api/agents/index.json — discovery document
+/api/agents/posts.json — every dated post with metadata
+/api/agents/topics.json — curated topic clusters + slug lists
+/api/agents/person.json — author profile (Person + Organization)
 ```
 
 Cross-linked from `/.well-known/ai-plugin.json` and described by `/.well-known/openapi.json` (OpenAPI 3.1).
@@ -152,13 +153,14 @@ The single-page orchestrator. Reads every `public/**/*.html`, applies 18 transfo
 `scripts/postbuild.py` delegates almost everything to submodules:
 
 ```mermaid
+%%{init: {'theme':'neutral'} }%%
 flowchart LR
-    PB["postbuild.py"]
-    PB --> AF[article_furniture<br/>tag badges,<br/>meta bar, author<br/>card, prev/next]
-    PB --> GH[github_stats<br/>repo star/fork<br/>pills injection]
-    PB --> OUT[output<br/>llms.txt,<br/>sitemap splice,<br/>XML feed fix]
-    PB --> SC[schemas<br/>TechArticle,<br/>SoftwareSourceCode]
-    PB --> SEO[seo<br/>og:image, HowTo,<br/>about/mentions,<br/>image w/h]
+ PB["postbuild.py"]
+ PB --> AF[article_furniture<br/>tag badges,<br/>meta bar, author<br/>card, prev/next]
+ PB --> GH[github_stats<br/>repo star/fork<br/>pills injection]
+ PB --> OUT[output<br/>llms.txt,<br/>sitemap splice,<br/>XML feed fix]
+ PB --> SC[schemas<br/>TechArticle,<br/>SoftwareSourceCode]
+ PB --> SEO[seo<br/>og:image, HowTo,<br/>about/mentions,<br/>image w/h]
 ```
 
 | Module | Stmts | Coverage | Responsibility |
@@ -178,43 +180,44 @@ Plus the bare orchestrator `postbuild.py` (~700 lines) which wires the pieces to
 The order matters. `inject_word_count` must run before `inject_article_furniture` (which renders word count into the meta bar). `inject_about` must run before `inject_jsonld_hashes` (which computes the page's per-block CSP hashes — adding to the JSON-LD after invalidates the hash).
 
 ```mermaid
+%%{init: {'theme':'neutral'} }%%
 sequenceDiagram
-    autonumber
-    participant FS as public/&lt;page&gt;
-    participant PB as postbuild.py
-    participant SEO as seo
-    participant SC as schemas
-    participant AF as article_furniture
-    participant GH as github_stats
-    participant CSP as inject_jsonld_hashes
+ autonumber
+ participant FS as "public/<page>"
+ participant PB as postbuild.py
+ participant SEO as seo
+ participant SC as schemas
+ participant AF as article_furniture
+ participant GH as github_stats
+ participant CSP as inject_jsonld_hashes
 
-    FS->>PB: Read original HTML
-    PB->>PB: scrub_localhost_urls
-    PB->>PB: stamp_asset_fingerprints
-    PB->>PB: fix_sri (real sha256)
-    PB->>SEO: inject_itemlist
-    PB->>SC: inject_tech_article
-    PB->>SC: inject_software_source_code
-    PB->>SEO: fix_social_image
-    PB->>SEO: inject_og_completeness
-    PB->>SEO: stamp_image_dimensions
-    PB->>SEO: inject_howto
-    PB->>SEO: inject_word_count
-    PB->>SEO: inject_about
-    PB->>AF: inject_article_furniture (tag badges, meta bar)
-    PB->>AF: inject_sigstore_attestation
-    PB->>AF: inject_anchor_links_and_toc
-    PB->>AF: inject_citations
-    PB->>AF: inject_sources_list
-    PB->>AF: inject_mermaid
-    PB->>AF: inject_nav_active
-    PB->>AF: inject_prev_next_nav
-    PB->>AF: inject_hreflang
-    PB->>AF: inject_speculation_rules
-    PB->>GH: inject_github_stats
-    PB->>AF: hoist_body_link_stylesheets
-    PB->>CSP: inject_jsonld_hashes (final)
-    PB->>FS: Write patched HTML
+ FS->>PB: Read original HTML
+ PB->>PB: scrub_localhost_urls
+ PB->>PB: stamp_asset_fingerprints
+ PB->>PB: fix_sri (real sha256)
+ PB->>SEO: inject_itemlist
+ PB->>SC: inject_tech_article
+ PB->>SC: inject_software_source_code
+ PB->>SEO: fix_social_image
+ PB->>SEO: inject_og_completeness
+ PB->>SEO: stamp_image_dimensions
+ PB->>SEO: inject_howto
+ PB->>SEO: inject_word_count
+ PB->>SEO: inject_about
+ PB->>AF: inject_article_furniture (tag badges, meta bar)
+ PB->>AF: inject_sigstore_attestation
+ PB->>AF: inject_anchor_links_and_toc
+ PB->>AF: inject_citations
+ PB->>AF: inject_sources_list
+ PB->>AF: inject_mermaid
+ PB->>AF: inject_nav_active
+ PB->>AF: inject_prev_next_nav
+ PB->>AF: inject_hreflang
+ PB->>AF: inject_speculation_rules
+ PB->>GH: inject_github_stats
+ PB->>AF: hoist_body_link_stylesheets
+ PB->>CSP: inject_jsonld_hashes (final)
+ PB->>FS: Write patched HTML
 ```
 
 The final `inject_jsonld_hashes` pass computes SHA-256 of every inline JSON-LD block + the `<script type="speculationrules">` block, strips `'unsafe-inline'` from `script-src`, and adds the per-page hash allowlist. After this pass, ANY further mutation to JSON-LD content invalidates browser enforcement — so it has to run last.
@@ -237,16 +240,17 @@ Everywhere else, transforms read HTML and write HTML, nothing more.
 ## Edge layer (Cloudflare)
 
 ```mermaid
+%%{init: {'theme':'neutral'} }%%
 flowchart LR
-    REQ[Browser request] --> CF
-    subgraph CF["Cloudflare edge"]
-        PQ[PQC TLS<br/>X25519MLKEM768]
-        WORK[lang-router Worker<br/>~50ms]
-        TR[Transform Rules<br/>HSTS, X-Frame, COOP, CORP]
-        CACHE[CDN cache]
-    end
-    CF --> PAGES[GitHub Pages<br/>docs/]
-    PAGES --> CACHE
+ REQ[Browser request] --> CF
+ subgraph CF["Cloudflare edge"]
+ PQ[PQC TLS<br/>X25519MLKEM768]
+ WORK[lang-router Worker<br/>~50ms]
+ TR[Transform Rules<br/>HSTS, X-Frame, COOP, CORP]
+ CACHE[CDN cache]
+ end
+ CF --> PAGES[GitHub Pages<br/>docs/]
+ PAGES --> CACHE
 ```
 
 Three configurable surfaces, all documented in [`DEPLOY.md`](../DEPLOY.md):

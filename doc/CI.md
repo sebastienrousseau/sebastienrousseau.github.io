@@ -18,44 +18,43 @@ Every push and PR runs through 14 distinct gates across 6 GitHub Actions workflo
 ## Gate landscape
 
 ```mermaid
-flowchart LR
-    PUSH[/push or PR/]
-    
-    subgraph CI["ci.yml: build-audit"]
-        L1[ruff]
-        L2[radon ≥B]
-        L3[pytest +<br/>coverage 100%]
-        L4[build.sh]
-        L5[validate_jsonld]
-        L6[pa11y AAA<br/>1849 pages]
-        L7[Lighthouse<br/>nested]
-    end
-    
-    subgraph SD["schema-diff.yml"]
-        S1[JSON-LD<br/>before/after diff]
-    end
-    
-    subgraph LH["lighthouse.yml"]
-        H1[Lighthouse CI<br/>7 URLs × 3 runs]
-    end
-    
-    subgraph PD["pages-deploy.yml"]
-        P1[upload-pages-<br/>artifact]
-        P2[deploy-pages]
-    end
-    
-    subgraph RS["refresh-gh-stats.yml"]
-        R1[Nightly cron]
-    end
-    
-    subgraph LA["link-audit.yml"]
-        A1[Monthly external<br/>link audit]
-    end
-    
+%%{init: {'theme':'neutral'} }%%
+flowchart TB
+    PUSH(["push or PR"])
     PUSH --> CI
     PUSH --> SD
     PUSH --> LH
     PUSH --> PD
+
+    subgraph CI["ci.yml — build-audit"]
+        direction TB
+        L1["ruff"] --> L2["radon"] --> L3["pytest + 100% coverage"]
+        L3 --> L4["build.sh + 14 in-repo gates"]
+        L4 --> L5["validate_jsonld"]
+        L5 --> L6["pa11y AAA — 1849 pages"]
+        L6 --> L7["Lighthouse nested"]
+    end
+
+    subgraph SD["schema-diff.yml"]
+        S1["JSON-LD before / after diff"]
+    end
+
+    subgraph LH["lighthouse.yml"]
+        H1["Lighthouse CI — 7 URLs × 3 runs"]
+    end
+
+    subgraph PD["pages-deploy.yml"]
+        direction TB
+        P1["upload-pages-artifact"] --> P2["deploy-pages"]
+    end
+
+    subgraph RS["refresh-gh-stats.yml"]
+        R1["Nightly cron"]
+    end
+
+    subgraph LA["link-audit.yml"]
+        A1["Monthly external link audit"]
+    end
 ```
 
 Six workflows; together they run 14 distinct gates. Triggers:

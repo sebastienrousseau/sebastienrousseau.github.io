@@ -17,33 +17,34 @@ Every page on the site emits structured data — Google, Bing, AI agents, and Sc
 ## Type matrix
 
 ```mermaid
+%%{init: {'theme':'neutral'} }%%
 graph TB
-    subgraph EVERY["Every page"]
-        PERSON[Person<br/>Sebastien Rousseau]
-        BC[BreadcrumbList]
-        ORG[Organization<br/>HSBC · PayPal · Barclays …]
-        MEM[ProgramMembership<br/>EPAA Working Group]
-    end
+ subgraph EVERY["Every page"]
+ PERSON[Person<br/>Sebastien Rousseau]
+ BC[BreadcrumbList]
+ ORG[Organization<br/>HSBC · PayPal · Barclays …]
+ MEM[ProgramMembership<br/>EPAA Working Group]
+ end
 
-    subgraph ARTICLES["Dated articles"]
-        BP[BlogPosting]
-        TA[TechArticle<br/>if technical keyword]
-        HT[HowTo<br/>if step-by-step]
-        ABOUT[about / mentions<br/>Wikidata cross-links]
-    end
+ subgraph ARTICLES["Dated articles"]
+ BP[BlogPosting]
+ TA[TechArticle<br/>if technical keyword]
+ HT[HowTo<br/>if step-by-step]
+ ABOUT[about / mentions<br/>Wikidata cross-links]
+ end
 
-    subgraph LISTING["Listing pages"]
-        IL[ItemList]
-        SSC[SoftwareSourceCode<br/>/projects/ only]
-    end
+ subgraph LISTING["Listing pages"]
+ IL[ItemList]
+ SSC[SoftwareSourceCode<br/>/projects/ only]
+ end
 
-    subgraph PROFILE["/about/"]
-        PP[ProfilePage]
-    end
+ subgraph PROFILE["/about/"]
+ PP[ProfilePage]
+ end
 
-    subgraph FAQ["/papers/, /projects/"]
-        FAQP[FAQPage]
-    end
+ subgraph FAQ["/papers/, /projects/"]
+ FAQP[FAQPage]
+ end
 ```
 
 | Type | Pages emitted | Source |
@@ -70,16 +71,16 @@ graph TB
 
 ```json
 {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://sebastienrousseau.com/#person",
-  "name": "Sebastien Rousseau",
-  "url": "https://sebastienrousseau.com",
-  "jobTitle": "Senior Product Manager",
-  "worksFor": {"@type": "Organization", "name": "HSBC Commercial & Investment Bank"},
-  "knowsAbout": ["Post-quantum cryptography", "ISO 20022", …],
-  "memberOf": {"@type": "ProgramMembership", …},
-  "sameAs": ["https://twitter.com/wwdseb", "https://github.com/sebastienrousseau", …]
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "@id": "https://sebastienrousseau.com/#person",
+ "name": "Sebastien Rousseau",
+ "url": "https://sebastienrousseau.com",
+ "jobTitle": "Senior Product Manager",
+ "worksFor": {"@type": "Organization", "name": "HSBC Commercial & Investment Bank"},
+ "knowsAbout": ["Post-quantum cryptography", "ISO 20022", …],
+ "memberOf": {"@type": "ProgramMembership", …},
+ "sameAs": ["https://twitter.com/wwdseb", "https://github.com/sebastienrousseau", …]
 }
 ```
 
@@ -99,12 +100,12 @@ Emitted on dated posts whose keywords name a programming language or one of the 
 
 ```python
 _LANG_TOKENS = {"rust": "Rust", "python": "Python", "javascript": "JavaScript", "typescript": "TypeScript",
-                "go": "Go", "wasm": "WebAssembly", "webassembly": "WebAssembly", "solidity": "Solidity"}
+ "go": "Go", "wasm": "WebAssembly", "webassembly": "WebAssembly", "solidity": "Solidity"}
 
 _DEP_TOKENS = {"iso 20022": "ISO 20022", "pain.001": "ISO 20022 pain.001", "pacs.008": "ISO 20022 pacs.008",
-               "post-quantum": "Post-Quantum Cryptography", "crystals-kyber": "CRYSTALS-Kyber (NIST FIPS 203)",
-               "kyber": "CRYSTALS-Kyber", "nist": "NIST", "fips 203": "NIST FIPS 203",
-               "swift gpi": "SWIFT gpi", "sepa": "SEPA Instant Payments", …}
+ "post-quantum": "Post-Quantum Cryptography", "crystals-kyber": "CRYSTALS-Kyber (NIST FIPS 203)",
+ "kyber": "CRYSTALS-Kyber", "nist": "NIST", "fips 203": "NIST FIPS 203",
+ "swift gpi": "SWIFT gpi", "sepa": "SEPA Instant Payments", …}
 ```
 
 When the article's keywords match ≥1 entry, `TechArticle` is emitted alongside `BlogPosting` with `programmingLanguage` + `dependencies` fields. Google's Rich Results Test treats TechArticle as a richer Article subtype.
@@ -115,14 +116,14 @@ When the article's keywords match ≥1 entry, `TechArticle` is emitted alongside
 
 ```json
 {
-  "@type": "SoftwareSourceCode",
-  "name": "pain001",
-  "url": "https://pain001.com",
-  "applicationCategory": "Finance — Payments",
-  "description": "A Python library that automates ISO 20022 pain.001 …",
-  "programmingLanguage": "Python",
-  "codeRepository": "https://github.com/sebastienrousseau/pain001",
-  "author": {"@type": "Person", "name": "Sebastien Rousseau", "url": "…"}
+ "@type": "SoftwareSourceCode",
+ "name": "pain001",
+ "url": "https://pain001.com",
+ "applicationCategory": "Finance — Payments",
+ "description": "A Python library that automates ISO 20022 pain.001 …",
+ "programmingLanguage": "Python",
+ "codeRepository": "https://github.com/sebastienrousseau/pain001",
+ "author": {"@type": "Person", "name": "Sebastien Rousseau", "url": "…"}
 }
 ```
 
@@ -147,11 +148,12 @@ Every page emits a 3-level breadcrumb: `Home › <section> › <page>`. Per-lang
 Inline `<script type="application/ld+json">` blocks are allowed strictly by SHA-256 hash. The pipeline runs in this order:
 
 ```mermaid
+%%{init: {'theme':'neutral'} }%%
 flowchart LR
-    A[1. Per-page<br/>JSON-LD emitted<br/>by SSG +<br/>postbuild passes] --> B[2. inject_jsonld_hashes<br/>compute sha256<br/>of every block]
-    B --> C[3. Strip<br/>'unsafe-inline'<br/>from script-src]
-    C --> D[4. Inject<br/>'sha256-…'<br/>per block]
-    D --> E[Browser enforces<br/>byte-exact match]
+ A[1. Per-page<br/>JSON-LD emitted<br/>by SSG +<br/>postbuild passes] --> B[2. inject_jsonld_hashes<br/>compute sha256<br/>of every block]
+ B --> C[3. Strip<br/>'unsafe-inline'<br/>from script-src]
+ C --> D[4. Inject<br/>'sha256-…'<br/>per block]
+ D --> E[Browser enforces<br/>byte-exact match]
 ```
 
 If a postbuild pass adds JSON-LD AFTER `inject_jsonld_hashes` runs, the page's CSP won't carry that block's hash and the browser refuses it. To guarantee correctness:
