@@ -1,11 +1,11 @@
 {
-  "keywords": "kripto para, ödemeler, blockchain, hızlı ödemeler, fintech, ölçeklenebilirlik",
-  "date": "February 4, 2018",
-  "banner_alt": "Hareket halindeki kripto para sembolleri",
   "title": "Yeni bir kripto para ve daha hızlı bir ödeme çözümü tanıtımı",
-  "language": "tr-TR",
-  "locale": "tr_TR",
+  "date": "February 4, 2018",
+  "keywords": "kripto para, ödemeler, blockchain, hızlı ödemeler, fintech, ölçeklenebilirlik",
+  "description": "Hızlı, ucuz ve ölçeklenebilir ödemeler için tasarlanmış, blockchain teknolojisine dayanan yeni bir kripto para.",
   "banner": "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp",
+  "locale": "tr_TR",
   "subtitle": "Geleceğin ödeme altyapısı için yeni bir blockchain protokolü",
-  "description": "Hızlı, ucuz ve ölçeklenebilir ödemeler için tasarlanmış, blockchain teknolojisine dayanan yeni bir kripto para."
+  "banner_alt": "Hareket halindeki kripto para sembolleri",
+  "language": "tr-TR"
 }
