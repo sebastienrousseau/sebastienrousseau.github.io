@@ -1,11 +1,11 @@
 {
-  "title": "Quantenschwellen verschieben sich erneut",
-  "locale": "de_DE",
-  "keywords": "Shors Algorithmus, Qubits, Quantencomputing, ECC, RSA-2048, rekonfigurierbare neutrale Atome, Fehlerkorrekturcodes, CRYSTALS-Kyber, CRYSTALS-Dilithium, PQC, Post-Quanten-Kryptografie",
-  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
-  "date": "April 11, 2026",
-  "subtitle": "Ein neuer Aufsatz legt nahe, dass Shors Algorithmus auf nur 10.000 Qubits laufen könnte. Die Schwelle für kryptografisch relevantes Quantencomputing fällt schneller als allgemein angenommen.",
-  "banner_alt": "Diagramm der Qubit-Schwelle für Shors Algorithmus. Quantencomputing-Leiterplatte mit blauen Lichtmustern",
   "description": "Ein neuer Aufsatz legt nahe, dass Shors Algorithmus auf nur 10.000 Qubits laufen könnte. Die Schwelle für kryptografisch relevantes Quantencomputing fällt schneller als allgemein angenommen.",
-  "language": "de"
+  "locale": "de_DE",
+  "date": "April 11, 2026",
+  "keywords": "Shors Algorithmus, Qubits, Quantencomputing, ECC, RSA-2048, rekonfigurierbare neutrale Atome, Fehlerkorrekturcodes, CRYSTALS-Kyber, CRYSTALS-Dilithium, PQC, Post-Quanten-Kryptografie",
+  "language": "de",
+  "subtitle": "Ein neuer Aufsatz legt nahe, dass Shors Algorithmus auf nur 10.000 Qubits laufen könnte. Die Schwelle für kryptografisch relevantes Quantencomputing fällt schneller als allgemein angenommen.",
+  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
+  "banner_alt": "Diagramm der Qubit-Schwelle für Shors Algorithmus. Quantencomputing-Leiterplatte mit blauen Lichtmustern",
+  "title": "Quantenschwellen verschieben sich erneut"
 }

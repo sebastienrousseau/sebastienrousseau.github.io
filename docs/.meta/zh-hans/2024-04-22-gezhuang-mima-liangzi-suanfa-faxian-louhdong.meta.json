@@ -1,11 +1,11 @@
 {
-  "language": "zh-Hans",
-  "keywords": "陈逸雷, LWE, 量子算法, 格密码学, NIST, 后量子密码学, Kyber, Dilithium, BGV, TFHE",
-  "date": "April 22, 2024",
-  "title": "格基密码学的量子算法中发现漏洞",
-  "banner_alt": "MidJourney 生成图像 - 红蓝色调的数字节点网络",
   "locale": "zh_CN",
-  "description": "陈逸雷的 LWE 量子算法被发现存在漏洞，格基密码学暂时保持安全，但量子抗性研究仍需推进。",
   "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "subtitle": "陈逸雷 LWE 量子算法的漏洞：对 NIST 后量子密码学标准化的重新评估"
+  "language": "zh-Hans",
+  "banner_alt": "MidJourney 生成图像 - 红蓝色调的数字节点网络",
+  "keywords": "陈逸雷, LWE, 量子算法, 格密码学, NIST, 后量子密码学, Kyber, Dilithium, BGV, TFHE",
+  "subtitle": "陈逸雷 LWE 量子算法的漏洞：对 NIST 后量子密码学标准化的重新评估",
+  "description": "陈逸雷的 LWE 量子算法被发现存在漏洞，格基密码学暂时保持安全，但量子抗性研究仍需推进。",
+  "date": "April 22, 2024",
+  "title": "格基密码学的量子算法中发现漏洞"
 }

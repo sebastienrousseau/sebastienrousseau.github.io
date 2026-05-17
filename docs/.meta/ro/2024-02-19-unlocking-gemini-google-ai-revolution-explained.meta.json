@@ -1,11 +1,11 @@
 {
-  "subtitle": "A Deep Dive into Google's Latest AI Breakthrough",
-  "keywords": "Gemini 1.5, Google AI, Mixture-of-Experts architecture, computational efficiency, context window expansion, AI innovation, data analysis transformation, in-context learning, AI use cases, technology revolution",
-  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
   "title": "Unlocking Gemini 1.5: Google's AI Revolution Explained",
-  "description": "Gemini 1.5 from Google scales context windows past 1M tokens. What that unlocks for retrieval-augmented finance and the trade-offs worth knowing.",
-  "locale": "ro_RO",
+  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
+  "subtitle": "A Deep Dive into Google's Latest AI Breakthrough",
   "banner_alt": "Abstract visualisation of AI networks, representing Gemini 1.5's capabilities",
+  "keywords": "Gemini 1.5, Google AI, Mixture-of-Experts architecture, computational efficiency, context window expansion, AI innovation, data analysis transformation, in-context learning, AI use cases, technology revolution",
+  "locale": "ro_RO",
+  "date": "Feb 19, 2024",
   "language": "ro-RO",
-  "date": "Feb 19, 2024"
+  "description": "Gemini 1.5 from Google scales context windows past 1M tokens. What that unlocks for retrieval-augmented finance and the trade-offs worth knowing."
 }

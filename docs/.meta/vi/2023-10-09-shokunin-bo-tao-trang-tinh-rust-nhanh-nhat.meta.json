@@ -1,11 +1,11 @@
 {
   "language": "vi-VN",
+  "banner": "https://cloudcdn.pro/clients/shokunin/v1/banners/banner-shokunin.svg",
   "locale": "vi_VN",
   "subtitle": "Tốc độ, an toàn và đơn giản cho web hiện đại",
-  "banner": "https://cloudcdn.pro/clients/shokunin/v1/banners/banner-shokunin.svg",
-  "date": "October 9, 2023",
-  "keywords": "Shokunin, SSG, Rust, bộ tạo trang tĩnh, hiệu năng, SEO, JSON-LD, mã nguồn mở",
-  "banner_alt": "Biểu ngữ Shokunin Static Site Generator",
   "description": "Shokunin là bộ tạo trang tĩnh viết bằng Rust, được tối ưu hoá cho hiệu năng, khả năng tiếp cận và SEO. Builds cực nhanh với hỗ trợ JSON-LD hạng nhất.",
-  "title": "Shokunin: bộ tạo trang tĩnh dựa trên Rust nhanh nhất"
+  "date": "October 9, 2023",
+  "title": "Shokunin: bộ tạo trang tĩnh dựa trên Rust nhanh nhất",
+  "keywords": "Shokunin, SSG, Rust, bộ tạo trang tĩnh, hiệu năng, SEO, JSON-LD, mã nguồn mở",
+  "banner_alt": "Biểu ngữ Shokunin Static Site Generator"
 }
