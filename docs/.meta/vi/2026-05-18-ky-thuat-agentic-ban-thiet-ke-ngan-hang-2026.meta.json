@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Sơ đồ các tác tử AI làm việc trong hạ tầng ngân hàng",
-  "keywords": "tác tử AI, kỹ thuật agentic, ngân hàng, tự động hoá, Claude, GPT, MCP, hành động, 2026",
-  "language": "vi-VN",
-  "subtitle": "Cách các đội kỹ thuật ngân hàng tích hợp các tác tử AI vào sản xuất",
-  "locale": "vi_VN",
-  "banner": "https://cloudcdn.pro/stocks/images/agentic-banking-banner.webp",
-  "description": "Kỹ thuật agentic — sử dụng các tác tử AI tự chủ để hoàn thành các tác vụ phức tạp. Một bản thiết kế cho việc tích hợp vào hạ tầng ngân hàng.",
   "title": "Kỹ thuật agentic: bản thiết kế ngân hàng 2026",
-  "date": "May 18, 2026"
+  "date": "May 18, 2026",
+  "banner": "https://cloudcdn.pro/stocks/images/agentic-banking-banner.webp",
+  "keywords": "tác tử AI, kỹ thuật agentic, ngân hàng, tự động hoá, Claude, GPT, MCP, hành động, 2026",
+  "locale": "vi_VN",
+  "description": "Kỹ thuật agentic — sử dụng các tác tử AI tự chủ để hoàn thành các tác vụ phức tạp. Một bản thiết kế cho việc tích hợp vào hạ tầng ngân hàng.",
+  "banner_alt": "Sơ đồ các tác tử AI làm việc trong hạ tầng ngân hàng",
+  "language": "vi-VN",
+  "subtitle": "Cách các đội kỹ thuật ngân hàng tích hợp các tác tử AI vào sản xuất"
 }

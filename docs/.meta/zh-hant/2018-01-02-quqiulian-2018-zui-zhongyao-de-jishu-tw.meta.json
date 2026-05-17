@@ -1,11 +1,11 @@
 {
+  "date": "January 2, 2018",
   "locale": "zh_TW",
   "title": "區塊鏈：2018 年最重要的技術",
   "banner_alt": "一座具有許多孔洞的高塔建築",
-  "date": "January 2, 2018",
   "language": "zh-Hant",
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
-  "subtitle": "透過私鑰密碼學和點對點（P2P）網路保障數字交易的非凡歷程",
   "keywords": "區塊鏈, 加密貨幣, 分散式賬本, 智慧合約, 去中心化金融, 供應鏈, 數字身份, 共識機制, 銀行業, 金融科技",
-  "description": "區塊鏈——驅動加密貨幣飛速崛起的底層技術——正在顛覆企業、金融服務和資本市場。"
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "description": "區塊鏈——驅動加密貨幣飛速崛起的底層技術——正在顛覆企業、金融服務和資本市場。",
+  "subtitle": "透過私鑰密碼學和點對點（P2P）網路保障數字交易的非凡歷程"
 }

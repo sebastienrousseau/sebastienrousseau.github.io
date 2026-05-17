@@ -1,11 +1,11 @@
 {
-  "description": "CRYSTALS-Kyber: NIST द्वारा मानकीकरण के लिए चयनित लैटिस-आधारित पोस्ट-क्वांटम कुंजी-समायोजन-तंत्र।",
+  "title": "CRYSTALS-Kyber: क्वांटम-युग का सुरक्षा-कवच अल्गोरिदम",
   "date": "November 19, 2023",
   "language": "hi-IN",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
-  "subtitle": "लैटिस-आधारित KEM जिसे NIST ने पोस्ट-क्वांटम मानकीकरण हेतु चुना",
-  "locale": "hi_IN",
-  "title": "CRYSTALS-Kyber: क्वांटम-युग का सुरक्षा-कवच अल्गोरिदम",
+  "keywords": "CRYSTALS-Kyber, post-quantum, NIST, lattice, KEM, क्रिप्टोग्राफी, सुरक्षा, क्वांटम कंप्यूटर, MLWE, FIPS",
+  "description": "CRYSTALS-Kyber: NIST द्वारा मानकीकरण के लिए चयनित लैटिस-आधारित पोस्ट-क्वांटम कुंजी-समायोजन-तंत्र।",
   "banner_alt": "क्वांटम कंप्यूटर की डिजिटल कल्पना",
-  "keywords": "CRYSTALS-Kyber, post-quantum, NIST, lattice, KEM, क्रिप्टोग्राफी, सुरक्षा, क्वांटम कंप्यूटर, MLWE, FIPS"
+  "locale": "hi_IN",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
+  "subtitle": "लैटिस-आधारित KEM जिसे NIST ने पोस्ट-क्वांटम मानकीकरण हेतु चुना"
 }

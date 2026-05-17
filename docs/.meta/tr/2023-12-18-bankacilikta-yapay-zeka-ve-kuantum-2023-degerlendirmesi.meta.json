@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
-  "banner_alt": "Yapay zeka ve kuantumun soyut görselleştirmesi",
-  "date": "December 18, 2023",
-  "title": "Bankacılıkta yapay zeka ve kuantum bilişim: 2023 değerlendirmesi",
   "subtitle": "Bankacılık ve finansal hizmetlerde yapay zeka ve kuantumun durumu",
   "keywords": "yapay zeka, kuantum bilişim, bankacılık, finans, 2023, dönüşüm",
+  "banner_alt": "Yapay zeka ve kuantumun soyut görselleştirmesi",
+  "title": "Bankacılıkta yapay zeka ve kuantum bilişim: 2023 değerlendirmesi",
+  "date": "December 18, 2023",
+  "description": "Bankacılıkta yapay zekanın benimsenmesi ve kuantum bilişimin etkisi üzerine 2023 yıllık değerlendirmesi.",
   "locale": "tr_TR",
   "language": "tr-TR",
-  "description": "Bankacılıkta yapay zekanın benimsenmesi ve kuantum bilişimin etkisi üzerine 2023 yıllık değerlendirmesi."
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
 }

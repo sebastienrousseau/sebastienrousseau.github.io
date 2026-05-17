@@ -1,11 +1,11 @@
 {
-  "date": "November 12, 2023",
-  "subtitle": "2023 年的生成式 AI：工作原理、在金融服務中的首批落地以及值得關注的倫理與架構問題",
-  "language": "zh-Hant",
-  "description": "深入瞭解生成式人工智慧的機制、影響、推動力，以及在金融與多行業的應用與倫理考量。",
   "banner_alt": "AI、人工智慧概念、3D 渲染、概念影象",
-  "locale": "zh_TW",
+  "description": "深入瞭解生成式人工智慧的機制、影響、推動力，以及在金融與多行業的應用與倫理考量。",
+  "date": "November 12, 2023",
+  "title": "探索生成式人工智慧",
   "banner": "https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp",
+  "locale": "zh_TW",
+  "subtitle": "2023 年的生成式 AI：工作原理、在金融服務中的首批落地以及值得關注的倫理與架構問題",
   "keywords": "生成式 AI, 人工智慧, GPT-4, 大型語言模型, Transformer, GAN, 自動編碼器, 擴散模型, 多模態 AI, 可解釋 AI",
-  "title": "探索生成式人工智慧"
+  "language": "zh-Hant"
 }
