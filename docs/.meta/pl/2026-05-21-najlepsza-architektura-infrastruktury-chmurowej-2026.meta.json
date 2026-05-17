@@ -1,11 +1,11 @@
 {
+  "title": "Najlepsza architektura infrastruktury chmurowej 2026",
   "locale": "pl_PL",
-  "subtitle": "Wzorce architektury chmurowej dla banków na 2026",
-  "banner_alt": "Diagram architektury chmurowej dla banków 2026",
-  "description": "Najlepsze praktyki i wzorce architektury infrastruktury chmurowej dla banków w 2026: multi-cloud, suwerenność danych, kontrola kosztów.",
-  "banner": "https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp",
   "language": "pl-PL",
   "date": "May 21, 2026",
+  "description": "Najlepsze praktyki i wzorce architektury infrastruktury chmurowej dla banków w 2026: multi-cloud, suwerenność danych, kontrola kosztów.",
+  "subtitle": "Wzorce architektury chmurowej dla banków na 2026",
   "keywords": "architektura chmurowa, banki, 2026, multi-cloud, suwerenność danych, FinOps, AWS, Azure, GCP",
-  "title": "Najlepsza architektura infrastruktury chmurowej 2026"
+  "banner_alt": "Diagram architektury chmurowej dla banków 2026",
+  "banner": "https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp"
 }

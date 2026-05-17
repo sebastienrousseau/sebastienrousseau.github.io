@@ -148,8 +148,12 @@ jobs:
                   #     the body, which fails "link elements must be in <head>".
                   #   - Google reCAPTCHA on /contact/ injects a hidden iframe
                   #     with no title attribute, which fails "iframe needs
-                  #     a non-empty title". Both are upstream markup.
-                  "hideElements": "#ssg-search-widget, #ssg-search-btn, iframe[src*='recaptcha'], iframe[src*='google.com/recaptcha'], form iframe"
+                  #     a non-empty title".
+                  #   - Spotify iframes on /playlist/ pages fire a navigation
+                  #     event on load that intermittently trips Puppeteer's
+                  #     "Execution context was destroyed" error.
+                  # All three are upstream markup we can't change.
+                  "hideElements": "#ssg-search-widget, #ssg-search-btn, iframe[src*='recaptcha'], iframe[src*='google.com/recaptcha'], iframe[src*='open.spotify.com'], iframe[src*='spotify'], form iframe"
               },
               "urls": urls,
           }, open(".pa11yci","w"), indent=2)

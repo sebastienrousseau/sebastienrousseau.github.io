@@ -41,56 +41,6 @@
       <category>Cloudflare</category>
     </item>
     <item>
-      <title>Ìkọ́lé Ìpìlẹ̀ Ìkùukùu Tó Dára Jùlọ ní 2026: Ìlànà AI-Native, Multi-Cloud, Olùmọ̀-Quantum fún Àwọn Iṣẹ́-Ìnáwó</title>
-      <link>https://sebastienrousseau.com/.meta/yo/</link>
-      <description>Ìkọ́lé ìkùukùu (cloud) ní 2026 ti dí kírísítà yí àwọn ọwọ́n mẹ́fà ká: ìpìlẹ̀ AI-native, multi-cloud onílàákàyè, ìpilẹ̀ṣẹ̀ serverless-first pẹ̀lú WebAssembly ní etí, ìṣirò etí (edge computing), ààbò aládàáṣe pẹ̀lú crypto-agility, àti àwọn iṣẹ́ alágbéró tó ní ìpọnjú gíga. Fún àwọn báńkì, ìbéèrè náà ni bóyá láti jẹ ìkùukùu tàbí láti ṣe ìkọ́lé rẹ̀ — lábẹ́ ìtẹ̀mọ́lẹ̀ tó ń dìmúpọ̀ láti agentic commerce, agentic unit economics, ewu quantum harvest-now-decrypt-later, ààbò MCP àti àjàkálẹ̀-ọ̀rọ̀ algorithmic, ìdánimọ̀ olùṣe-iṣẹ́ cryptographic, ìbéèrè continuous-treasury, àti EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/.meta/yo/</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>cloud architecture</category>
-      <category>AI-native infrastructure</category>
-      <category>multi-cloud</category>
-      <category>sovereign cloud</category>
-      <category>CLOUD Act</category>
-      <category>sovereign AI</category>
-      <category>open-weight models</category>
-      <category>Llama 4</category>
-      <category>serverless</category>
-      <category>WebAssembly</category>
-      <category>eBPF</category>
-      <category>Cilium</category>
-      <category>edge computing</category>
-      <category>LEO satellite</category>
-      <category>DevSecOps</category>
-      <category>liquid cooling</category>
-      <category>grid-aware computing</category>
-      <category>SMR</category>
-      <category>nuclear power</category>
-      <category>silicon photonics</category>
-      <category>agentic commerce</category>
-      <category>agentic unit economics</category>
-      <category>cryptographic agent identity</category>
-      <category>algorithmic contagion</category>
-      <category>RAG poisoning</category>
-      <category>vector database security</category>
-      <category>synthetic data</category>
-      <category>data gravity</category>
-      <category>continuous treasury</category>
-      <category>CBDC</category>
-      <category>graph neural networks</category>
-      <category>HNDL</category>
-      <category>post-quantum cryptography</category>
-      <category>crypto-agility</category>
-      <category>QKD</category>
-      <category>Basel IV</category>
-      <category>cloud concentration risk</category>
-      <category>MCP security</category>
-      <category>CloudCDN</category>
-      <category>Cloudflare</category>
-    </item>
-    <item>
       <title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
       <link>https://sebastienrousseau.com/2026-05-18-agentic-engineering-banks-blueprint-2026</link>
       <description>Agentic AI has crossed from pilot into production across global banking. 70% of institutions are using it to some degree; only one in five has a mature governance model. Meanwhile, autonomous adversaries are operating at machine speed, the legacy COBOL estate the new systems must interoperate with was written for the batch-processing assumptions of the 1960s, and the EU AI Act&apos;s August 2026 high-risk deadline is twelve weeks away. This is the engineering and governance position a bank needs to hold.</description>
@@ -1061,6 +1011,26 @@
       <category>house music playlists</category>
       <category>indie rock playlists</category>
       <category>pop music playlists</category>
+    </item>
+    <item>
+      <title>Sebastien Rousseau: AI, Banking &amp; Financial Services Expert</title>
+      <link>https://sebastienrousseau.com/about</link>
+      <description>Shaping the Future of Banking and Financial Services through Strategic Integration of Artificial Intelligence, Post-Quantum Cryptography &amp; Blockchain Technology</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/about</guid>
+      <pubDate>Sun, 01 Oct 2023 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://sebastienrousseau.com/about" type="image/jpeg" length="0"/>
+      <category>Technology</category>
+      <category>payments technology</category>
+      <category>digital finance</category>
+      <category>artificial intelligence</category>
+      <category>post-quantum cryptography</category>
+      <category>blockchain technology</category>
+      <category>strategic leadership</category>
+      <category>operational leadership</category>
+      <category>cross-platform product design</category>
+      <category>engineering</category>
+      <category>solution architecture</category>
     </item>
   </channel>
 </rss>

@@ -1,11 +1,11 @@
 {
-  "banner_alt": "A person sitting on black bench reading newspaper",
-  "description": "The EU AI Act sets the first comprehensive framework for ethical, risk-tiered AI regulation worldwide. What changes for banks, vendors and high-risk systems.",
-  "date": "Feb 13, 2024",
-  "language": "uk-UA",
-  "title": "[UK DRAFT] EU's AI Act: Pioneering Ethical AI Regulation Worldwide",
-  "keywords": "EU AI Act, Artificial Intelligence regulation, Ethical AI framework, AI risk management, AI innovation, AI transparency, AI consumer rights, AI governance, AI standards, AI ethics",
   "banner": "https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp",
+  "date": "Feb 13, 2024",
+  "locale": "uk_UA",
+  "title": "[UK DRAFT] EU's AI Act: Pioneering Ethical AI Regulation Worldwide",
+  "description": "The EU AI Act sets the first comprehensive framework for ethical, risk-tiered AI regulation worldwide. What changes for banks, vendors and high-risk systems.",
+  "language": "uk-UA",
+  "keywords": "EU AI Act, Artificial Intelligence regulation, Ethical AI framework, AI risk management, AI innovation, AI transparency, AI consumer rights, AI governance, AI standards, AI ethics",
   "subtitle": "Navigating the Future of AI with the EU's Groundbreaking Legal Framework",
-  "locale": "uk_UA"
+  "banner_alt": "A person sitting on black bench reading newspaper"
 }
