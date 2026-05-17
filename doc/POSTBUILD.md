@@ -55,7 +55,7 @@ flowchart TB
         F1[inject_speculation_rules]
         F2[inject_github_stats]
         F3[hoist_body_link_stylesheets]
-        F4[inject_jsonld_hashes<br/>⚠️ MUST run last]
+        F4[inject_jsonld_hashes<br/>MUST run last]
     end
 
     P0 --> S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8 --> S9 --> S10 --> S11 --> S12
@@ -77,19 +77,19 @@ Why the order matters:
 
 ### 1. `scrub_localhost_urls`
 
-Shokunin's dev server bakes `http://localhost:port` into og:url and a few other places when invoked locally. This pass rewrites every occurrence to `https://sebastienrousseau.com`.
+Static Site Generator's dev server bakes `http://localhost:port` into og:url and a few other places when invoked locally. This pass rewrites every occurrence to `https://sebastienrousseau.com`.
 
 Counter: `localhost_patched`.
 
 ### 2. `stamp_asset_fingerprints`
 
-Shokunin emits `/_csp/<short-hex>.{css,js}` filenames for fingerprinted bundles, but page-level references use bare `/main.js`. This pass copies fingerprinted assets to their bare-name aliases so all references resolve.
+Static Site Generator emits `/_csp/<short-hex>.{css,js}` filenames for fingerprinted bundles, but page-level references use bare `/main.js`. This pass copies fingerprinted assets to their bare-name aliases so all references resolve.
 
 Counter: `asset_fp_patched`.
 
 ### 3. `fix_sri`
 
-Replaces the placeholder `integrity="sha256-<short-hex>"` that Shokunin emits with a real base64 SHA-256 computed from the actual asset bytes. Without this, browsers refuse to load the asset.
+Replaces the placeholder `integrity="sha256-<short-hex>"` that Static Site Generator emits with a real base64 SHA-256 computed from the actual asset bytes. Without this, browsers refuse to load the asset.
 
 Counter: `sri_patched`.
 
@@ -113,13 +113,13 @@ Counter: `softwaresourcecode_patched`.
 
 ### 7. `fix_social_image`
 
-Shokunin auto-picks the first `<img>` in the body for `og:image`, often a decorative divider. This pass rebuilds `og:image` + `twitter:image` from the article's `BlogPosting.image` (which reads from the post's `banner:` frontmatter).
+Static Site Generator auto-picks the first `<img>` in the body for `og:image`, often a decorative divider. This pass rebuilds `og:image` + `twitter:image` from the article's `BlogPosting.image` (which reads from the post's `banner:` frontmatter).
 
 Counter: `social_patched`.
 
 ### 8. `inject_og_completeness`
 
-Fills in `og:url`, `og:locale`, `og:site_name`, `og:image` when Shokunin omits them. Handles locale variants (e.g. `fr_FR`, `zh_CN`) from `<html lang>`.
+Fills in `og:url`, `og:locale`, `og:site_name`, `og:image` when Static Site Generator omits them. Handles locale variants (e.g. `fr_FR`, `zh_CN`) from `<html lang>`.
 
 Counter: `og_patched`.
 
@@ -209,7 +209,7 @@ Injects star/fork/license/last-commit pills onto project cards. Stats refreshed 
 
 ### 24. `hoist_body_link_stylesheets`
 
-Shokunin's search-widget injects a `<link rel=stylesheet>` into the `<body>`, which fails pa11y AAA ("link elements must be in `<head>`"). This pass moves it back into `<head>`.
+Static Site Generator's search-widget injects a `<link rel=stylesheet>` into the `<body>`, which fails pa11y AAA ("link elements must be in `<head>`"). This pass moves it back into `<head>`.
 
 Counter: `link_hoisted`.
 

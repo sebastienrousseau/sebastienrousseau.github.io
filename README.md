@@ -82,7 +82,7 @@ git clone https://github.com/sebastienrousseau/sebastienrousseau.github.io.git
 cd sebastienrousseau.github.io
 
 # 2. Install toolchain
-cargo install ssg --locked          # Shokunin SSG (Rust)
+cargo install ssg --locked          # Static Site Generator (Rust)
 pip install -r requirements.txt     # Python pipeline (markdown-it-py, …)
 
 # 3. Build
@@ -94,7 +94,7 @@ A clean build finishes in ~12 seconds on a modern laptop and emits **1849 HTML p
 
 | Tool | Version | Why |
 |---|---|---|
-| Rust toolchain | stable | `ssg` (Shokunin) is a Rust binary; install via `cargo install ssg --locked` |
+| Rust toolchain | stable | `ssg` (Static Site Generator) is a Rust binary; install via `cargo install ssg --locked` |
 | Python | 3.11+ | Postbuild pipeline (`scripts/*.py`) — 37 modules, 100% test coverage |
 | `markdown-it-py` | latest | FR-canonical translation pipeline parser |
 | Node.js | 20+ | Cloudflare Worker tests (`workers/test_lang_router.mjs`), pa11y CI |
@@ -133,15 +133,15 @@ sebastienrousseau.github.io/
 
 ```mermaid
 flowchart TB
-    subgraph SRC["📂 Source"]
+    subgraph SRC["Source"]
         EN["_posts/*.md<br/><i>61 English</i>"]
         T["_posts/&lt;lang&gt;/*.md<br/><i>1189 translations</i>"]
         L["_layouts/*.html<br/><i>11 layouts</i>"]
         D["_data/i18n/&lt;lang&gt;/<br/><i>28 locales</i>"]
     end
 
-    subgraph BUILD["⚙️ Build pipeline"]
-        SSG["ssg<br/><i>Shokunin SSG (Rust)</i>"]
+    subgraph BUILD["Build pipeline"]
+        SSG["ssg<br/><i>Static Site Generator (Rust)</i>"]
         BT["build_topics.py"]
         BR["build_translations.py"]
         BF["build_lang_feeds.py"]
@@ -150,7 +150,7 @@ flowchart TB
         PB["postbuild.py<br/><i>18 passes</i>"]
     end
 
-    subgraph GATES["✅ 14 CI gates"]
+    subgraph GATES["14 CI gates"]
         G1["pytest + coverage<br/><i>100%</i>"]
         G2["ruff + radon"]
         G3["i18n parity ×7"]
@@ -161,7 +161,7 @@ flowchart TB
         G8["EN-leakage absence"]
     end
 
-    subgraph OUT["📦 Output"]
+    subgraph OUT["Output"]
         P["public/<br/><i>1849 pages</i>"]
         DC["docs/<br/><i>GH Pages root</i>"]
         CF["Cloudflare CDN<br/><i>PQC TLS edge</i>"]
@@ -193,7 +193,7 @@ No JavaScript framework. No server-side renderer. Every URL is a real HTML file.
 
 | # | Stage | Inputs | Output |
 |---|---|---|---|
-| 1 | **`ssg`** (Shokunin) | `_posts/*.md` + `_layouts/*.html` | `public/{slug}/index.html` (English) — picks the layout from each post's `layout:` frontmatter (`report`, `link`, `articles`, `papers`, `projects`, `playlist`, `contact`, `about`, `page`, `thank-you`). |
+| 1 | **`ssg`** (Static Site Generator) | `_posts/*.md` + `_layouts/*.html` | `public/{slug}/index.html` (English) — picks the layout from each post's `layout:` frontmatter (`report`, `link`, `articles`, `papers`, `projects`, `playlist`, `contact`, `about`, `page`, `thank-you`). |
 | 2 | **`build_topics.py`** | hand-curated topic taxonomy | `public/topics/{topic}/` — 5 clusters (post-quantum, ISO 20022, applied AI, Rust OSS, blockchain) + hub. |
 | 3 | **`build_translations.py`** | `_posts/<lang>/*.md` + per-language glossaries | `public/<lang>/{slug}/index.html` — 27 non-EN locales, FR-canonical fork pattern (see [Translation pipeline](#translation-pipeline)). |
 | 4 | **`build_lang_feeds.py`** | rendered translations | Per-language `rss.xml`, `atom.xml`, `news-sitemap.xml`, `feed.json`. |
@@ -320,7 +320,7 @@ The English render is the source of truth. Each non-EN language **forks the rend
 ```mermaid
 sequenceDiagram
     autonumber
-    participant SSG as ssg (Shokunin)
+    participant SSG as ssg (Static Site Generator)
     participant FS as public/{slug}/
     participant BT as build_translations.py
     participant LR as _lang_registry.py
@@ -432,26 +432,26 @@ Decision priorities, from highest to lowest:
 
 ```mermaid
 graph TB
-    subgraph EXT["🌍 External"]
+    subgraph EXT["External"]
         V[/"Visitor"/]
         CR[/"Crawler / AI agent"/]
         ATK[/"Attacker"/]
     end
 
-    subgraph EDGE["☁️ Cloudflare edge (TLS termination)"]
+    subgraph EDGE["Cloudflare edge (TLS termination)"]
         CFW["lang-router Worker"]
         TR["Transform Rules<br/>HSTS, X-Frame-Options,<br/>COOP, CORP, OAC"]
         CDN["CDN cache"]
         PQ["X25519MLKEM768<br/>(NIST FIPS 203)"]
     end
 
-    subgraph ORIG["🏠 GitHub Pages origin"]
+    subgraph ORIG["GitHub Pages origin"]
         H["docs/ (static HTML)<br/><i>1849 pages</i>"]
         SBOM["sbom.cdx.json"]
         WKD["openpgpkey/<br/>(WKD)"]
     end
 
-    subgraph CSP["🛡️ Per-page browser enforcement"]
+    subgraph CSP["Per-page browser enforcement"]
         SRI["SRI on /_csp/*"]
         JSONLD["JSON-LD sha256<br/>allowlist"]
         SR["speculation-rules<br/>keyword"]
@@ -668,7 +668,7 @@ This is the source-tree for a single author's personal site. It's public so anyo
 - **No multi-tenant story.** The build pipeline assumes one origin (`sebastienrousseau.com`) and one author identity.
 - **Heavy i18n surface.** Adding a new language requires authoring 11 JSON glossaries and 44 article translations. Not a 10-minute job.
 
-For a general-purpose Rust SSG with theming, see [Shokunin](https://shokunin.one).
+For a general-purpose Rust SSG with theming, see [Static Site Generator](https://github.com/sebastienrousseau/static-site-generator).
 
 ---
 

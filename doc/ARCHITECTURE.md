@@ -20,7 +20,7 @@ End-to-end map of the build pipeline. Read this if you want to understand how a 
 
 ```mermaid
 flowchart TB
-    subgraph Source["📂 Source (Git)"]
+    subgraph Source["Source (Git)"]
         EN[_posts/*.md<br/>61 English]
         T[_posts/&lt;lang&gt;/*.md<br/>1189 translations]
         L[_layouts/*.html<br/>11 layouts]
@@ -28,8 +28,8 @@ flowchart TB
         REG[scripts/_lang_registry.py<br/>28-lang truth]
     end
 
-    subgraph Build["⚙️ Build (12s)"]
-        SSG[Shokunin SSG<br/>Rust binary]
+    subgraph Build["Build (12s)"]
+        SSG[Static Site Generator<br/>Rust binary]
         BT[build_topics.py]
         BR[build_translations.py]
         BF[build_lang_feeds.py]
@@ -38,11 +38,11 @@ flowchart TB
         PB[postbuild.py<br/>18 passes]
     end
 
-    subgraph Gates["✅ 14 CI gates"]
+    subgraph Gates["14 CI gates"]
         G[ruff · radon · pytest 100%<br/>JSON-LD validate<br/>i18n parity ×7<br/>pa11y AAA · Lighthouse<br/>CSP strict-shape<br/>EN-leakage · Workers]
     end
 
-    subgraph Output["📦 Output"]
+    subgraph Output["Output"]
         P[public/<br/>1849 pages]
         DC[docs/<br/>GH Pages root]
         CF[Cloudflare CDN<br/>PQC TLS]
@@ -67,13 +67,13 @@ The build is a strict pipeline — each stage reads from disk, writes to disk, a
 
 ## The seven build stages
 
-### 1. `ssg` (Shokunin)
+### 1. `ssg` (Static Site Generator)
 
 The Rust binary `ssg` reads `_posts/*.md` + `_layouts/*.html` and emits `public/<slug>/index.html` for every English source. It picks the layout from each post's `layout:` frontmatter (`report` for long-form, `link` for the link-board, etc.).
 
 **Frontmatter convention:** YAML between two `---` markers. Required fields: `title`, `description`, `date`, `layout`, `language`, `keywords`. Optional but heavily used: `banner`, `banner_alt`, `subtitle`, `seo_title`, `last_reviewed`, `tags`, `twitter_*`, `item_*`.
 
-**Asset fingerprinting:** Shokunin extracts inline CSS into a single bundle under `/_csp/<hash>.css` and inline JS into `/_csp/<hash>.js`. The references in the rendered HTML carry placeholder `integrity="sha256-<short-hex>"` that `postbuild.py` later replaces with real base64 SHA-256.
+**Asset fingerprinting:** Static Site Generator extracts inline CSS into a single bundle under `/_csp/<hash>.css` and inline JS into `/_csp/<hash>.js`. The references in the rendered HTML carry placeholder `integrity="sha256-<short-hex>"` that `postbuild.py` later replaces with real base64 SHA-256.
 
 ### 2. `scripts/build_topics.py`
 

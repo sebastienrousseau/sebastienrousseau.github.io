@@ -18,30 +18,30 @@ Every page on the site emits structured data — Google, Bing, AI agents, and Sc
 
 ```mermaid
 graph TB
-    subgraph EVERY["📄 Every page"]
+    subgraph EVERY["Every page"]
         PERSON[Person<br/>Sebastien Rousseau]
         BC[BreadcrumbList]
         ORG[Organization<br/>HSBC · PayPal · Barclays …]
         MEM[ProgramMembership<br/>EPAA Working Group]
     end
 
-    subgraph ARTICLES["📝 Dated articles"]
+    subgraph ARTICLES["Dated articles"]
         BP[BlogPosting]
         TA[TechArticle<br/>if technical keyword]
         HT[HowTo<br/>if step-by-step]
         ABOUT[about / mentions<br/>Wikidata cross-links]
     end
 
-    subgraph LISTING["📋 Listing pages"]
+    subgraph LISTING["Listing pages"]
         IL[ItemList]
         SSC[SoftwareSourceCode<br/>/projects/ only]
     end
 
-    subgraph PROFILE["👤 /about/"]
+    subgraph PROFILE["/about/"]
         PP[ProfilePage]
     end
 
-    subgraph FAQ["❓ /papers/, /projects/"]
+    subgraph FAQ["/papers/, /projects/"]
         FAQP[FAQPage]
     end
 ```
@@ -49,13 +49,13 @@ graph TB
 | Type | Pages emitted | Source |
 |---|---:|---|
 | `Person` | 1849 | [`scripts/build_agent_api.py`](../scripts/build_agent_api.py) + per-page JSON-LD |
-| `BlogPosting` | 1232 | Per-article frontmatter via Shokunin |
+| `BlogPosting` | 1232 | Per-article frontmatter via Static Site Generator |
 | `TechArticle` | 613 | [`scripts/postbuild_lib/schemas.py:inject_tech_article`](../scripts/postbuild_lib/schemas.py) |
 | `SoftwareSourceCode` | 26 | [`scripts/postbuild_lib/schemas.py:inject_software_source_code`](../scripts/postbuild_lib/schemas.py) |
 | `HowTo` | 16 | [`scripts/postbuild_lib/seo.py:inject_howto`](../scripts/postbuild_lib/seo.py) |
 | `ItemList` | 3 | [`scripts/postbuild.py:inject_itemlist`](../scripts/postbuild.py) |
-| `BreadcrumbList` | 1849 | Per-page Shokunin emission |
-| `FAQPage` | 2 | Per-page Shokunin emission |
+| `BreadcrumbList` | 1849 | Per-page Static Site Generator emission |
+| `FAQPage` | 2 | Per-page Static Site Generator emission |
 | `ProfilePage` | 1 | `/about/` frontmatter |
 | `Organization` | 1849 | Author Person.worksFor chain |
 | `ProgramMembership` | 1849 | Author Person.memberOf |

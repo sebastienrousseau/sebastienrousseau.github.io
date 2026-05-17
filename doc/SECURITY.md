@@ -22,26 +22,26 @@ This site is the public face of someone who writes about post-quantum cryptograp
 
 ```mermaid
 graph TB
-    subgraph EXT["🌍 External"]
+    subgraph EXT["External"]
         V[/"Visitor"/]
         AI[/"AI crawler"/]
         ATK[/"Attacker /<br/>nation-state"/]
     end
 
-    subgraph EDGE["☁️ Cloudflare edge (TLS termination)"]
+    subgraph EDGE["Cloudflare edge (TLS termination)"]
         PQ["X25519MLKEM768<br/>(NIST FIPS 203)"]
         CFW["lang-router Worker"]
         TR["Transform Rules<br/>HSTS · X-Frame · COOP · CORP"]
         CDN["CDN cache<br/>(stale-while-revalidate)"]
     end
 
-    subgraph ORIG["🏠 GitHub Pages origin"]
+    subgraph ORIG["GitHub Pages origin"]
         H["docs/ (static HTML)"]
         SBOM["sbom.cdx.json"]
         WKD["openpgpkey/<br/>(WKD)"]
     end
 
-    subgraph CSP["🛡️ Per-page browser enforcement"]
+    subgraph CSP["Per-page browser enforcement"]
         SRI["SRI on /_csp/*"]
         JLD["JSON-LD sha256<br/>allowlist"]
         SR["speculation-rules<br/>keyword"]
@@ -172,7 +172,7 @@ Every `/_csp/*` asset (the fingerprinted CSS/JS bundles) carries a real base64 S
       crossorigin="anonymous" />
 ```
 
-Shokunin SSG emits a placeholder `integrity="sha256-<short-hex>"`; `scripts/postbuild.py:fix_sri()` replaces it with the real base64 hash computed from the actual file bytes. Browsers refuse to execute/apply the asset if the content doesn't match.
+Static Site Generator emits a placeholder `integrity="sha256-<short-hex>"`; `scripts/postbuild.py:fix_sri()` replaces it with the real base64 hash computed from the actual file bytes. Browsers refuse to execute/apply the asset if the content doesn't match.
 
 ---
 

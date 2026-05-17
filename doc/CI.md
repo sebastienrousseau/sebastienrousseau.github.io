@@ -227,7 +227,7 @@ The article's source markdown is missing the `<!-- enrich-start -->...<!-- enric
 
 ### `validate_jsonld: <id> contains dev artefact (.meta/...)`
 
-Shokunin emits `.meta/<lang>/` paths into atom/RSS for translated articles. `postbuild_lib/output.py:_build_title_index` walks `_posts/<lang>/*.md` and synthesises a per-lang URL from the post path. If a translated post is missing or has no `title:` in frontmatter, the URL can't be looked up — make sure the source file has a non-empty title.
+Static Site Generator emits `.meta/<lang>/` paths into atom/RSS for translated articles. `postbuild_lib/output.py:_build_title_index` walks `_posts/<lang>/*.md` and synthesises a per-lang URL from the post path. If a translated post is missing or has no `title:` in frontmatter, the URL can't be looked up — make sure the source file has a non-empty title.
 
 ### `Coverage failure: 99%, fail-under=100`
 
