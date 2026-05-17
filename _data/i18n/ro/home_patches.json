@@ -102,14 +102,6 @@
       ">Citește cercetările recente<"
     ],
     [
-      ">Newest first<",
-      ">Newest first<"
-    ],
-    [
-      ">Oldest first<",
-      ">Oldest first<"
-    ],
-    [
       ">By topic<",
       ">By topic<"
     ],
@@ -312,6 +304,14 @@
     [
       ">Full profile</a>",
       ">Profil complet</a>"
+    ],
+    [
+      ">Securing the future of banking<br>with agentic AI<br>and post-quantum cryptography\\.</h1>",
+      ">Securizarea viitorului bancar<br>cu IA agentică<br>și criptografie post-cuantică.</h1>"
+    ],
+    [
+      ">Built for the edge\\. Architected for uncompromising resilience\\. Powering the next generation of global payments\\.</p>",
+      ">Construit pentru edge. Arhitecturat pentru reziliență fără compromisuri. Alimentând următoarea generație de plăți globale.</p>"
     ]
   ]
 }
