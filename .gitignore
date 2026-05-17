@@ -49,7 +49,6 @@
 /.git/
 /.vscode/
 /build/
-/doc/
 /node_modules/
 $RECYCLE.BIN/
 bower_components

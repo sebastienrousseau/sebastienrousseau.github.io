@@ -1,21 +1,29 @@
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 
 <p align="center">
-  <img src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg" alt="Sebastien Rousseau logo" width="128" />
+ <img src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg" alt="Sebastien Rousseau logo" width="128" />
 </p>
 
 <h1 align="center">sebastienrousseau.com</h1>
 
 <p align="center">
-  The build pipeline behind <a href="https://sebastienrousseau.com"><code>sebastienrousseau.com</code></a> — applied AI, ISO 20022 payments,
-  and post-quantum cryptography for financial services.
+ The static-site pipeline behind <a href="https://sebastienrousseau.com"><code>sebastienrousseau.com</code></a> — long-form research on applied AI, ISO 20022 payments, and post-quantum cryptography for financial services, published in <strong>28 languages</strong>.
 </p>
 
 <p align="center">
-  <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/sebastienrousseau/sebastienrousseau.github.io/ci.yml?style=for-the-badge&logo=github&label=build" alt="Build" /></a>
-  <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/actions/workflows/lighthouse.yml"><img src="https://img.shields.io/github/actions/workflow/status/sebastienrousseau/sebastienrousseau.github.io/lighthouse.yml?style=for-the-badge&logo=lighthouse&label=lighthouse" alt="Lighthouse" /></a>
-  <a href="https://sebastienrousseau.com"><img src="https://img.shields.io/website?url=https%3A%2F%2Fsebastienrousseau.com&style=for-the-badge&logo=cloudflare&label=live" alt="Live site" /></a>
-  <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-66c2a5?style=for-the-badge" alt="License" /></a>
+ <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/sebastienrousseau/sebastienrousseau.github.io/ci.yml?style=for-the-badge&logo=github&label=build" alt="Build" /></a>
+ <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/actions/workflows/lighthouse.yml"><img src="https://img.shields.io/github/actions/workflow/status/sebastienrousseau/sebastienrousseau.github.io/lighthouse.yml?style=for-the-badge&logo=lighthouse&label=lighthouse" alt="Lighthouse" /></a>
+ <a href="https://sebastienrousseau.com"><img src="https://img.shields.io/website?url=https%3A%2F%2Fsebastienrousseau.com&style=for-the-badge&logo=cloudflare&label=live" alt="Live site" /></a>
+ <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-66c2a5?style=for-the-badge" alt="License" /></a>
+</p>
+
+<p align="center">
+ <a href="#quick-start"><img src="https://img.shields.io/badge/languages-28-blue?style=flat-square" alt="28 languages" /></a>
+ <a href="#capabilities-shipped"><img src="https://img.shields.io/badge/pages-1849-blue?style=flat-square" alt="1849 pages" /></a>
+ <a href="#security-posture"><img src="https://img.shields.io/badge/CSP-strict-success?style=flat-square" alt="Strict CSP" /></a>
+ <a href="#security-posture"><img src="https://img.shields.io/badge/TLS-X25519MLKEM768-success?style=flat-square" alt="PQC TLS" /></a>
+ <a href="#ci-gates"><img src="https://img.shields.io/badge/WCAG-2.2%20AAA-success?style=flat-square" alt="WCAG 2.2 AAA" /></a>
+ <a href="#ci-gates"><img src="https://img.shields.io/badge/coverage-100%25-success?style=flat-square" alt="100% test coverage" /></a>
 </p>
 
 ---
@@ -24,320 +32,361 @@
 
 **Getting started**
 
-- [Install](#install) — toolchain, clone, build
-- [Quick Start](#quick-start) — build the site in three commands
+- [Quick Start](#quick-start) — install + build the site in three commands
+- [Repository tour](#repository-tour) — what lives where
 
-**Pipeline**
+**Architecture**
 
-- [Architecture at a glance](#architecture-at-a-glance) — the build is a Unix pipeline
+- [Pipeline overview](#pipeline-overview) — Mermaid flowchart of every stage
 - [Build stages](#build-stages) — what each script does, in order
-- [Inputs](#inputs) — `_posts/`, `_layouts/`, `_data/`
-- [Outputs](#outputs) — `public/` and `docs/`
+- [Inputs](#inputs) and [Outputs](#outputs)
+- [Postbuild passes](#postbuild-passes) — the 18 transforms in `postbuild.py`
 
-**Why this approach?**
+**Internationalisation**
 
-- [Why a static pipeline](#why-a-static-pipeline) — design rationale
-- [Capabilities shipped](#capabilities-shipped) — what's in production right now
+- [The 28-language matrix](#the-28-language-matrix)
+- [Translation pipeline](#translation-pipeline) — Mermaid sequence of the FR-canonical fork
+- [Per-language CI gates](#per-language-ci-gates)
+
+**Security**
+
+- [Security posture](#security-posture) — CSP, PQC TLS, SRI, SBOM, signed commits
+- [Edge routing Worker](#edge-routing-worker) — sub-50ms `Accept-Language` redirect
+- [Threat model](#threat-model) — Mermaid attack-surface diagram
 
 **Reference**
 
-- [Features](#features) — the build pipeline's capability matrix
-- [Bilingual model (EN ↔ FR)](#bilingual-model-en--fr) — slug mapping, search-index parity, hreflang reciprocity
-- [Security posture](#security-posture) — CSP, PQC TLS, SRI, SBOM, signed commits
+- [Capabilities shipped](#capabilities-shipped) — what's in production today
+- [Schema.org coverage](#schemaorg-coverage) — every JSON-LD type emitted
+- [AI / agent discovery](#ai--agent-discovery) — `/api/agents/`, `.well-known/`, `llms.txt`
 
 **Operational**
 
-- [Development](#development) — `make` targets, local audit recipe
-- [CI gates](#ci-gates) — what every push must clear
+- [Development](#development) — local QA recipe, `make` targets
+- [CI gates](#ci-gates) — all 14 checks every push must clear
 - [Deployment](#deployment) — GitHub Pages + Cloudflare
-- [When this repo is not what you want](#when-this-repo-is-not-what-you-want) — fork considerations
-- [Documentation](#documentation) — companion docs in this repo
+- [When this repo is not what you want](#when-this-repo-is-not-what-you-want)
+
+**Documentation**
+
+- [Companion docs](#companion-docs)
 - [License](#license)
-
----
-
-## Install
-
-### Prerequisites
-
-| Tool | Version | Why |
-|---|---|---|
-| Rust toolchain | stable | `ssg` (Shokunin) is a Rust binary; install via `cargo install ssg --locked` |
-| Python | 3.11+ | Postbuild pipeline (`scripts/*.py`) |
-| `markdown-it-py` | latest | FR translation pipeline parser. Installed via `requirements.txt`. |
-| `gh` CLI | optional | Repo administration, CI inspection |
-
-### Clone and bootstrap
-
-```bash
-git clone https://github.com/sebastienrousseau/sebastienrousseau.github.io.git
-cd sebastienrousseau.github.io
-cargo install ssg --locked
-pip install -r requirements.txt
-```
-
-### Build from source
-
-```bash
-./build.sh           # build into public/, mirror to docs/
-./build.sh --serve   # build + serve on http://127.0.0.1:8000
-```
-
-The `Makefile` exposes the same surface plus QA targets:
-
-```bash
-make build              # full build pipeline
-make serve              # build + serve locally
-make audit              # internal-link audit (strict)
-make validate           # JSON-LD + XML feed validity
-make test-search-index  # EN + FR search-index shape guard
-make lint               # ruff
-make test               # pytest
-```
 
 ---
 
 ## Quick Start
 
-A from-scratch build runs end-to-end in ~3 seconds on a modern laptop:
-
 ```bash
-$ ./build.sh
-ssg → public/ (English markdown + topic posts)
-build_topics: wrote 5 topic page(s) + 1 hub
-build_translations: wrote 65 page(s) (43 translation(s) + hub + 20 static page(s))
-build_fr_feeds: wrote 43 entry feeds (rss.xml + atom.xml + news-sitemap.xml)
-build_agent_api: wrote 43 posts + 5 topics + person + index
-postbuild: 130 HTML pages, 130 got real SRI, 920 img(s) stamped w/h, …
-ok: 2 search-index file(s) pass shape check
+# 1. Clone
+git clone https://github.com/sebastienrousseau/sebastienrousseau.github.io.git
+cd sebastienrousseau.github.io
+
+# 2. Install toolchain
+cargo install ssg --locked # Static Site Generator (Rust)
+pip install -r requirements.txt # Python pipeline (markdown-it-py, …)
+
+# 3. Build
+./build.sh # build into public/, mirror to docs/
+./build.sh --serve # build + serve on http://127.0.0.1:8000
 ```
 
-Then open <http://127.0.0.1:8000/> for the English site or
-<http://127.0.0.1:8000/fr/> for French.
+A clean build finishes in ~12 seconds on a modern laptop and emits **1849 HTML pages** across **28 languages** with **0 CI failures**.
+
+| Tool | Version | Why |
+|---|---|---|
+| Rust toolchain | stable | `ssg` (Static Site Generator) is a Rust binary; install via `cargo install ssg --locked` |
+| Python | 3.11+ | Postbuild pipeline (`scripts/*.py`) — 37 modules, 100% test coverage |
+| `markdown-it-py` | latest | FR-canonical translation pipeline parser |
+| Node.js | 20+ | Cloudflare Worker tests (`workers/test_lang_router.mjs`), pa11y CI |
+| `gh` CLI | optional | Repo administration, CI inspection |
 
 ---
 
-## Architecture at a glance
+## Repository tour
 
 ```
-_posts/*.md ┐
-            │
-_posts/fr/*.md
-            │
-_layouts/*.html ───►  ssg (Rust SSG)  ───►  public/{slug}/
-            │
-_data/*.json
-            │
-            ▼
-   scripts/build_topics.py        ───►  public/topics/{topic}/
-   scripts/build_translations.py  ───►  public/fr/{fr-slug}/
-   scripts/build_fr_feeds.py      ───►  public/fr/{rss,atom,news-sitemap}.xml
-   scripts/build_agent_api.py     ───►  public/api/agents/*.json
-   scripts/postbuild.py           ───►  every page: SRI, CSP hashes,
-                                        og:* completion, image w/h,
-                                        hreflang, HowTo JSON-LD,
-                                        GitHub stats, sitemaps
-            │
-            ▼
-        public/   ───  rsync ───►   docs/  (GitHub Pages root)
-            │                          │
-            └─────  Cloudflare CDN ◄───┘
-                       (PQC TLS, HSTS preload, COOP/CORP/X-Frame-Options
-                        via Transform Rules — see DEPLOY.md)
+sebastienrousseau.github.io/
+├── _posts/ # Source content
+│ ├── *.md # 61 English posts (44 dated + 17 static)
+│ └── <lang>/*.md # 1189 translated posts (44 × 27 langs)
+├── _layouts/ # 11 HTML layouts
+├── _data/
+│ ├── gh-stats.json # Nightly GitHub repo stats
+│ ├── i18n/<lang>/ # Per-language UI strings + patch tables (28 dirs)
+│ └── lead-magnets/ # PDF source markdown
+├── scripts/ # 37 Python modules
+│ ├── build_*.py # 6 build pipelines
+│ ├── postbuild.py # Single-page orchestrator (~700 lines)
+│ ├── postbuild_lib/ # 6 modules — schemas, seo, output, …
+│ └── test_*.py # 13 in-repo CI gates
+├── tests/ # 359 pytest unit tests, 100% coverage on postbuild_lib
+├── workers/ # Cloudflare Worker (Accept-Language edge router)
+├── .well-known/ # AI plugin manifest, OpenAPI schema, OpenPGP WKD
+├── .github/workflows/ # 6 CI workflows
+├── public/ # Canonical build output — 1849 HTML pages
+└── docs/ # GitHub Pages root (rsync mirror of public/)
 ```
 
-No JavaScript framework. No client-side renderer. Every URL is a real
-HTML file. Speculation Rules API prerenders the next likely page on
-hover; everything else is static.
+---
 
-### Build stages
+## Pipeline overview
 
-`build.sh` chains six tools in this order. Each is a pure
-transformation on `public/`:
+```mermaid
+%%{init: {'theme':'neutral'} }%%
+flowchart TB
+ subgraph SRC["Source"]
+ EN["_posts/*.md<br/><i>61 English</i>"]
+ T["_posts/<lang>/*.md<br/><i>1189 translations</i>"]
+ L["_layouts/*.html<br/><i>11 layouts</i>"]
+ D["_data/i18n/<lang>/<br/><i>28 locales</i>"]
+ end
 
-1. **`ssg`** — Shokunin renders English Markdown under `_posts/*.md`
-   into `public/{slug}/index.html`. Picks up the layout selected by
-   each post's `layout:` frontmatter (`report`, `link`, `articles`,
-   `papers`, `projects`, `contact`, …).
-2. **`scripts/build_topics.py`** — Five hand-curated topic clusters
-   (Post-Quantum, ISO 20022, Applied AI, Rust OSS, Blockchain). Forks
-   `public/articles/index.html` as the shell and emits one page per
-   topic + a `/topics/` hub.
-3. **`scripts/build_translations.py`** — French edition. Reads
-   manually-translated Markdown from `_posts/fr/*.md`; the EN↔FR slug
-   map (`scripts/_fr_slugs.py`) is the single source of truth for
-   slug rewrites. Patches JSON-LD `inLanguage`, swaps chrome (nav,
-   footer, search, CTAs), localises dates, fixes hreflang
-   reciprocity.
-4. **`scripts/build_fr_feeds.py`** — Per-language RSS / Atom /
-   news-sitemap. Same article ordering as the EN feeds.
-5. **`scripts/build_agent_api.py`** — Machine-readable JSON
-   endpoints at `/api/agents/{posts,topics,person,index}.json` for
-   AI crawlers and agentic clients.
-6. **`scripts/postbuild.py`** — The big one. Single-pass over every
-   built page applying ~15 independent transforms:
-   - Stamp real SHA-256 SRI on every `/_csp/*` asset
-   - Inject `og:url` / `og:locale` / `og:site_name` / `og:image`
-   - Add explicit `width`/`height` + `fetchpriority`/`loading` to
-     every `<img>` (920+ on a clean build)
-   - Inject `HowTo` JSON-LD on practical articles
-   - Build the article table-of-contents, citations graph,
-     prev/next nav, FAQ accordion
-   - Compute SHA-256 of every inline `<script type="application/ld+json">`
-     plus the `<script type="speculationrules">` block and fold
-     into the page's CSP `script-src`
-   - Hoist any in-body `<link rel=stylesheet>` back into `<head>`
-     (sanitises SSG's malformed widget link tag in transit)
-   - Emit `robots.txt`, `llms.txt`, `llms-full.txt`
-   - Splice missing sitemap entries
+ subgraph BUILD["Build pipeline"]
+ SSG["ssg<br/><i>Static Site Generator (Rust)</i>"]
+ BT["build_topics.py"]
+ BR["build_translations.py"]
+ BF["build_lang_feeds.py"]
+ BA["build_agent_api.py"]
+ BL["build_lead_magnets.py"]
+ PB["postbuild.py<br/><i>18 passes</i>"]
+ end
 
-The pipeline finishes with `scripts/test_search_indexes.py` — a
-shape guard that fails the build if EN or FR search-index entries
-ever drop the required `title`/`url`/`content`/`headings` keys.
+ subgraph GATES["14 CI gates"]
+ G1["pytest + coverage<br/><i>100%</i>"]
+ G2["ruff + radon"]
+ G3["i18n parity ×7"]
+ G4["JSON-LD validate"]
+ G5["pa11y AAA ×1849"]
+ G6["Lighthouse CI"]
+ G7["CSP strict-shape"]
+ G8["EN-leakage absence"]
+ end
+
+ subgraph OUT["Output"]
+ P["public/<br/><i>1849 pages</i>"]
+ DC["docs/<br/><i>GH Pages root</i>"]
+ CF["Cloudflare CDN<br/><i>PQC TLS edge</i>"]
+ end
+
+ EN --> SSG
+ L --> SSG
+ SSG --> BT
+ BT --> BR
+ T --> BR
+ D --> BR
+ BR --> BF
+ BF --> BA
+ BA --> BL
+ BL --> PB
+ PB --> GATES
+ GATES --> P
+ P -->|rsync| DC
+ DC -->|git push| CF
+```
+
+No JavaScript framework. No server-side renderer. Every URL is a real HTML file. Speculation Rules API prerenders the next-likely page on hover; the Cloudflare Worker auto-routes visitors to their preferred locale in under 50ms.
+
+---
+
+## Build stages
+
+`build.sh` chains seven tools in this order. Each is a pure transformation on `public/`:
+
+| # | Stage | Inputs | Output |
+|---|---|---|---|
+| 1 | **`ssg`** (Static Site Generator) | `_posts/*.md` + `_layouts/*.html` | `public/{slug}/index.html` (English) — picks the layout from each post's `layout:` frontmatter (`report`, `link`, `articles`, `papers`, `projects`, `playlist`, `contact`, `about`, `page`, `thank-you`). |
+| 2 | **`build_topics.py`** | hand-curated topic taxonomy | `public/topics/{topic}/` — 5 clusters (post-quantum, ISO 20022, applied AI, Rust OSS, blockchain) + hub. |
+| 3 | **`build_translations.py`** | `_posts/<lang>/*.md` + per-language glossaries | `public/<lang>/{slug}/index.html` — 27 non-EN locales, FR-canonical fork pattern (see [Translation pipeline](#translation-pipeline)). |
+| 4 | **`build_lang_feeds.py`** | rendered translations | Per-language `rss.xml`, `atom.xml`, `news-sitemap.xml`, `feed.json`. |
+| 5 | **`build_agent_api.py`** | post + topic graph | `/api/agents/{posts,topics,person,index}.json` — JSON inventory for AI/agentic clients. |
+| 6 | **`build_lead_magnets.py`** | `_data/lead-magnets/*.md` | PDF gates (e.g. `/resources/pacs008-checklist.pdf`). |
+| 7 | **`postbuild.py`** | every rendered HTML page | The big one — 18 single-page transforms ([details](#postbuild-passes)). |
+
+After the build, **13 in-repo CI gates** run against `public/`:
+
+```
+search-index • i18n-parity • UI-strings • body-labels • takeaway-labels
+render-data • author-card • hreflang reciprocity • JSON-LD inLanguage
+sitemap completeness • EN-leakage absence • no physical CSS
+CSP strict-shape • workers test
+```
+
+A failure on any gate aborts the build and surfaces in CI as a red X.
 
 ---
 
 ## Inputs
 
 ```
-_posts/*.md          # 59 English source documents (43 dated articles + 16 static pages)
-_posts/fr/*.md       # 44 French translations
-_layouts/*.html      # 11 page layouts (index, articles, papers, projects, …)
-_data/gh-stats.json  # nightly GitHub repo stats (stars, forks, last commit) — refresh-gh-stats workflow
-scripts/_fr_slugs.py # EN ↔ FR slug map (42 entries + static-page slugs)
+_posts/*.md # 61 English source documents (44 dated + 17 static)
+_posts/<lang>/*.md # 1189 translations (27 langs × ~44 posts)
+_layouts/*.html # 11 page layouts
+_data/i18n/<lang>/*.json # 11 JSON files × 28 locales — strings, labels,
+ # patches, slugs, author, topics, …
+_data/gh-stats.json # Nightly GitHub repo stats
+scripts/_lang_registry.py # Single source of truth for the 28-language matrix
+ # (BCP-47, locale, flag, active flag, RTL bit)
 ```
 
 ## Outputs
 
 ```
-public/              # canonical build output — 130 HTML pages
-docs/                # mirror of public/ that GitHub Pages serves
-public/sitemap.xml   # 249 URLs (EN + FR + news-sitemap split)
-public/llms.txt      # 86 entries (one per article)
-public/llms-full.txt # 6029-line corpus dump for AI crawlers
+public/ # canonical build output — 1849 HTML pages
+docs/ # GitHub Pages root (rsync mirror of public/)
+public/sitemap.xml # 108k entries across 28 languages
+public/llms.txt # AI-crawler index
+public/llms-full.txt # Full corpus dump
 public/sbom.cdx.json # CycloneDX SBOM — supply-chain provenance
-public/api/agents/   # JSON endpoints for AI / agentic clients
+public/api/agents/ # JSON endpoints for AI / agentic clients
+public/.well-known/ # ai-plugin.json, openapi.json, openpgpkey/
 ```
 
 ---
 
-## Why this approach?
+## Postbuild passes
 
-### Why a static pipeline
+`scripts/postbuild.py` is a single-page orchestrator that applies 18 independent transforms per HTML page. The orchestration sequence is order-sensitive (e.g. `inject_word_count` must run before `inject_article_furniture` which renders the word count into the meta bar):
 
-The site exists to host long-form research on payments, AI, and PQC
-for senior banking technologists. Three constraints made a static
-build the right choice:
+```mermaid
+%%{init: {'theme':'neutral'} }%%
+flowchart TB
+    P0["HTML page"]
+    subgraph S1["1 · SEO + Schema.org"]
+        direction TB
+        A1["scrub localhost"] --> A2["fingerprint assets"]
+        A2 --> A3["fix SRI"]
+        A3 --> A4["inject ItemList"]
+        A4 --> A5["TechArticle"]
+        A5 --> A6["SoftwareSourceCode"]
+        A6 --> A7["fix og:image"]
+        A7 --> A8["complete OG"]
+        A8 --> A9["stamp img w/h"]
+        A9 --> A10["HowTo schema"]
+        A10 --> A11["wordCount"]
+        A11 --> A12["about / mentions"]
+    end
+    subgraph S2["2 · Article furniture"]
+        direction TB
+        B1["article furniture"] --> B2["sigstore attestation"]
+        B2 --> B3["nav highlight"]
+        B3 --> B4["prev / next"]
+        B4 --> B5["hreflang"]
+        B5 --> B6["speculation rules"]
+        B6 --> B7["GitHub stats"]
+        B7 --> B8["hoist body link tags"]
+    end
+    subgraph S3["3 · CSP finalisation"]
+        direction TB
+        C1["CSP JSON-LD sha256 hashes"]
+    end
+    P1["page written"]
 
-1. **Read-heavy traffic, write-light authorship.** One author, ~50
-   articles a year. No comments, no user accounts. The cost ratio
-   of "server-side render every request" vs "render once, serve
-   from CDN" is dominated by the latter.
-2. **Strict content-security posture.** The site is the public face
-   of someone who writes about post-quantum cryptography. CSP must
-   be strict, hash-allowlisted JSON-LD only, no `unsafe-inline`,
-   PQC TLS at the edge, SRI on every asset, SBOM published.
-   Easier to enforce on a static artefact than a runtime stack.
-3. **Future-resistant publishing.** Markdown + Git history + the
-   build script in this repo is enough to reconstruct any version
-   of the site indefinitely. No managed service, no SaaS dependency
-   for content.
+    P0 --> S1 --> S2 --> S3 --> P1
+```
 
-### Architectural choices that follow
-
-- **Shokunin SSG over Hugo/Jekyll.** Rust, fast, fewer build deps,
-  generates an emit-everything tree on every invocation (no
-  incremental cache to corrupt).
-- **Python postbuild over Rust postbuild.** The transforms are
-  regex-heavy and frequently revised; iteration speed matters more
-  than runtime. Postbuild runs in ~1.5s on 130 pages.
-- **FR pipeline forks rendered EN HTML rather than re-rendering FR
-  from layout templates.** Cuts manual layout drift to zero: any
-  HTML change ships to both languages by construction.
-- **No client-side framework.** No build artefact ships JavaScript
-  beyond a 4 KB main bundle (theme toggle, ⌘K search, reading
-  progress, back-to-top). Lighthouse Best-Practices/SEO/A11y all
-  score 1.0; performance lands ≥0.96 on every audited URL.
-
----
-
-## Capabilities shipped
-
-What's in production right now (≠ what's on the roadmap):
-
-| Surface | What ships |
-|---|---|
-| Languages | English (`en-GB`, 86 dated + 14 static pages) + French (`fr-FR`, 43 articles + hub + 20 static). |
-| Content | 43 long-form articles, 5 topic-cluster hubs, papers index, projects portfolio, playlists, contact form. |
-| Security | Strict CSP (no `unsafe-inline`, hash-allowlisted JSON-LD + speculationrules), HSTS preload, X25519MLKEM768 PQC TLS at the edge, COOP/CORP/X-Frame-Options via Cloudflare Transform Rules. |
-| Discovery | sitemap.xml (249 URLs), news-sitemap per language, RSS + Atom per language, `robots.txt` (20 AI bots listed explicitly), `llms.txt` + `llms-full.txt`. |
-| Performance | Speculation Rules API (hover-prerender), 920+ images with explicit width/height, hero `fetchpriority=high`, below-fold `loading=lazy`, system fonts only, ~4 KB JS. |
-| Accessibility | WCAG 2.2 AAA — 0 pa11y violations across 130 pages, all interactive targets ≥24×24 (WCAG 2.5.5), focus-visible rings, `prefers-reduced-motion` honored. |
-| SEO / GEO | `Person` / `Article` / `FAQPage` / `HowTo` / `BreadcrumbList` / `ItemList` / `ProfilePage` JSON-LD, complete OG/Twitter metadata, hreflang reciprocity, regional BCP-47 tags. |
-| Build provenance | CycloneDX SBOM published at `/sbom.cdx.json`, SRI on every asset, signed commits, CI gates on every push. |
+Each pass is a pure `(html, …) -> html` transformation. Module-level state is regex constants only. Coverage is 100% on `postbuild_lib/` — see [`tests/`](tests/).
 
 ---
 
-## Features
+## The 28-language matrix
 
-| | |
-| :--- | :--- |
-| **EN render** | Shokunin SSG (Rust) reads `_posts/*.md` + `_layouts/*.html`, emits `public/{slug}/index.html`. Asset fingerprinting under `/_csp/*` with `integrity=…` placeholders that `postbuild.py` later replaces with real SHA-256. |
-| **FR render** | `build_translations.py` reads `_posts/fr/*.md` and the canonical `scripts/_fr_slugs.py` EN↔FR slug map, then forks each rendered EN page, swaps chrome (nav, footer, search, CTAs, aria-labels), localises dates ("August 2026" → "août 2026"), patches JSON-LD `inLanguage`, fixes hreflang reciprocity. 65 FR pages in ~0.4s. |
-| **Topics** | Five curated topic clusters (`post-quantum-cryptography`, `iso-20022-payments`, `applied-ai-banking`, `rust-open-source`, `blockchain-digital-assets`). Each is a manually-curated list of article slugs + a French translation of title + lede. Hub at `/topics/` + `/fr/sujets/`. |
-| **AI / agentic API** | `/api/agents/{index,posts,topics,person}.json` — machine-readable inventory of every dated post (title, URL, summary, date, topic), every topic (slug, title, lede, article list), and the canonical `Person` schema. `robots.txt` advertises `llms.txt` + `llms-full.txt`. |
-| **JSON-LD** | `Person`, `WebSite`, `ProfilePage` on `/about/`, `BlogPosting` on every article, `CollectionPage` on listing pages, `FAQPage` on `/papers/` + `/projects/`, `HowTo` on the practical articles (pain001, pacs.008), `BreadcrumbList` and `ItemList` everywhere. Hash-allowlisted in CSP per page. |
-| **OG / Twitter Cards** | Every page emits `og:title`, `og:description`, `og:url`, `og:locale`, `og:site_name`, `og:image`, `twitter:card=summary_large_image`. `og:image` defaults to the article banner; falls back to the author headshot when absent. |
-| **Search** | `/search-index.json` (EN) + `/fr/search-index.json` (FR). 65 FR + 100+ EN entries. `scripts/test_search_indexes.py` is wired into `build.sh` and fails the build if any entry is missing `title`/`url`/`content`/`headings`. |
-| **Sitemaps** | Root `sitemap.xml` (249 URLs), `news-sitemap.xml` for fresh content, per-language `/fr/news-sitemap.xml`. `scripts/postbuild.py:_splice_fr_urls()` repopulates from authoritative sources if SSG emits an empty `<urlset>`. |
-| **Feeds** | `/rss.xml`, `/atom.xml`, and JSON-Feed-style `/api/agents/posts.json`. `/fr/rss.xml`, `/fr/atom.xml`, `/fr/news-sitemap.xml` for the French edition. |
-| **Speculation Rules** | Every page carries a `<script type="speculationrules">` block that asks Chromium 126+ to prerender same-origin pages on hover. Excludes `/_csp/*`, `*.xml`, `*.json`, `*.txt`, `*.pdf`, contact forms. CSP allows it via `'inline-speculation-rules'` keyword plus the block's SHA-256 hash. |
-| **GitHub stats** | Nightly `refresh-gh-stats` GitHub Action queries the GitHub API for 20 repos and writes `_data/gh-stats.json`. `postbuild.py:inject_github_stats()` injects star/fork/license/last-commit pills onto every project card. |
-| **Search widget** | ⌘K / Ctrl-K opens the SSG-built search overlay; language-aware (auto-loads `/fr/search-index.json` when the URL is under `/fr/`). |
-| **Image pipeline** | 920+ images on a clean build get explicit `width`/`height` (CLS budget = 0). Hero image gets `fetchpriority="high"`; everything else `loading="lazy"` + `decoding="async"`. Per-asset manifest pins known dimensions for common SVGs and the author portrait. |
-| **HowTo schema** | Curated per-article steps for practical guides (pain001 ISO 20022 file generation, pacs.008 structured-address migration). Step text is decoupled from heading styling so the article can be refactored without invalidating the schema. |
-| **GEO** | TL;DR + Key Takeaways on every dated post (extracted by `post_enrich.py`). `llms.txt` directory; `llms-full.txt` corpus dump (6029 lines) for AI crawlers. `Article.about` / `mentions` cross-linking to Wikidata where applicable. |
-| **PWA** | `manifest.json`, service worker (`sw.js`) with stale-while-revalidate on `/_csp/*` assets and network-first on HTML. Offline page at `/offline/`. |
-| **SBOM** | CycloneDX 1.4 SBOM published at `/sbom.cdx.json` on every build — supply-chain provenance for downstream auditors. |
+| Code | BCP-47 | Locale | Native name | Direction |
+|---|---|---|---|---|
+| en | en-GB | en_GB | English | LTR |
+| fr | fr-FR | fr_FR | Français | LTR |
+| ar | ar-SA | ar_SA | العربية | **RTL** |
+| bn | bn-BD | bn_BD | বাংলা | LTR |
+| cs | cs-CZ | cs_CZ | Čeština | LTR |
+| de | de-DE | de_DE | Deutsch | LTR |
+| es | es-ES | es_ES | Español | LTR |
+| fil | fil-PH | fil_PH | Filipino | LTR |
+| ha | ha-NG | ha_NG | Hausa | LTR |
+| he | he-IL | he_IL | עברית | **RTL** |
+| hi | hi-IN | hi_IN | हिन्दी | LTR |
+| id | id-ID | id_ID | Indonesia | LTR |
+| it | it-IT | it_IT | Italiano | LTR |
+| ja | ja-JP | ja_JP | 日本語 | LTR |
+| ko | ko-KR | ko_KR | 한국어 | LTR |
+| nl | nl-NL | nl_NL | Nederlands | LTR |
+| pl | pl-PL | pl_PL | Polski | LTR |
+| pt-br | pt-BR | pt_BR | Português (Brasil) | LTR |
+| ro | ro-RO | ro_RO | Română | LTR |
+| ru | ru-RU | ru_RU | Русский | LTR |
+| sv | sv-SE | sv_SE | Svenska | LTR |
+| th | th-TH | th_TH | ไทย | LTR |
+| tr | tr-TR | tr_TR | Türkçe | LTR |
+| uk | uk-UA | uk_UA | Українська | LTR |
+| vi | vi-VN | vi_VN | Tiếng Việt | LTR |
+| yo | yo-NG | yo_NG | Yorùbá | LTR |
+| zh-hans | zh-Hans | zh_CN | 简体中文 | LTR |
+| zh-hant | zh-Hant | zh_TW | 繁體中文 | LTR |
+
+All 28 languages emit a complete page tree (44 articles + ~20 static pages each), a search index, RSS / Atom / news-sitemap feeds, and JSON-LD with `inLanguage` set. Hreflang reciprocity is enforced by a CI gate — see [`scripts/test_hreflang_reciprocity.py`](scripts/test_hreflang_reciprocity.py).
 
 ---
 
-## Bilingual model (EN ↔ FR)
+## Translation pipeline
 
-English is the source of truth. The FR pipeline forks rendered EN
-HTML rather than re-rendering from templates — that guarantees layout
-parity by construction. Three components keep the two languages
-synchronised:
+The English render is the source of truth. Each non-EN language **forks the rendered EN HTML** rather than re-rendering from layout templates — that guarantees layout parity by construction. Eleven per-language JSON files drive the chrome + body string swaps:
 
-| Component | Role |
-|---|---|
-| `scripts/_fr_slugs.py` | Single source of truth for EN ↔ FR slug mapping (42 articles + every static page). Both directions exposed so hreflang and the FR pipeline use the same data. |
-| `scripts/build_translations.py` | The FR build pipeline. Forks each EN page, patches `<html lang>`, swaps chrome strings, rewrites links to FR counterparts, localises dates, patches JSON-LD `inLanguage`, fixes hreflang reciprocity. Two passes: chrome (nav/footer/search/aria) and content (article-card titles, eyebrows, tooltips). |
-| `scripts/test_search_indexes.py` | CI gate. Fails the build if EN or FR search-index entries don't share the `title`/`url`/`content`/`headings` shape. This guard exists because the FR widget silently returned zero results before it was added. |
+```mermaid
+%%{init: {'theme':'neutral'} }%%
+sequenceDiagram
+ autonumber
+ participant SSG as "ssg (Static Site Generator)"
+ participant FS as "public/{slug}/"
+ participant BT as build_translations.py
+ participant LR as _lang_registry.py
+ participant D as "_data/i18n/<lang>/"
+ participant Out as "public/<lang>/"
 
-### URL slug discipline
+ SSG->>FS: Emit English HTML
+ BT->>LR: load_languages() — 28 entries
+ loop for each active non-EN lang
+ BT->>D: load strings.json (52 UI keys)
+ BT->>D: load labels.json (12 body labels)
+ BT->>D: load takeaway_labels.json (29 keys)
+ BT->>D: load chrome_patches.json (~71 regex)
+ BT->>D: load home_patches.json (~78 regex)
+ BT->>D: load static_patches.json (~254 regex)
+ BT->>D: load slugs.json (EN→lang slug map)
+ BT->>FS: Read EN shell
+ BT->>BT: build_chrome_patches() auto-gen from strings
+ BT->>BT: apply chrome patches (nav/footer/CTAs)
+ BT->>BT: apply body patches (article cards, lede)
+ BT->>BT: patch <html lang>, og:locale, hreflang
+ BT->>BT: rewrite EN slug links → lang-localised
+ BT->>BT: localise dates ("May 2026" → native)
+ BT->>BT: patch JSON-LD inLanguage
+ BT->>Out: Write public/<lang>/{lang-slug}/index.html
+ end
+ BT->>Out: 27 search-index.json files
+```
 
-| English | French |
-|---|---|
-| `/about/` | `/fr/a-propos/` |
-| `/articles/` | `/fr/articles/` |
-| `/papers/` | `/fr/publications/` |
-| `/projects/` | `/fr/projets/` |
-| `/topics/` | `/fr/sujets/` |
-| `/tags/` | `/fr/etiquettes/` |
-| `/privacy/` | `/fr/confidentialite/` |
-| `/contact/` | `/fr/contact/` |
-| `/2026-05-12-iso-20022-pacs008-structured-address-deadline/` | `/fr/2026-05-12-iso-20022-pacs008-adresse-structuree-echeance/` |
+The fork pattern means **any HTML change ships to all 28 languages by construction**. The trade-off is a richer patch surface (per-locale chrome + body patches) — but the patches are JSON, not Python, so they're easy to author and review.
 
-Slugs are ASCII-only — Unicode in URLs harms SERP CTR. Idiomatic, not
-transliterated.
+---
 
-### Hreflang reciprocity
+## Per-language CI gates
 
-Every translated page emits a complete `<link rel="alternate"
-hreflang="…" href="…">` set including `x-default`. The pairs are
-symmetric: if A claims B is its FR alternate, B claims A is its EN
-alternate. 103 pages currently carry hreflang on a clean build.
+Seven parity gates enforce that every non-EN language ships the same shape as English:
+
+| Gate | What it asserts | File |
+|---|---|---|
+| `test_i18n_parity` | Every active lang renders the same article count | [`scripts/test_i18n_parity.py`](scripts/test_i18n_parity.py) |
+| `test_i18n_strings` | UI strings keyset matches EN reference | [`scripts/test_i18n_strings.py`](scripts/test_i18n_strings.py) |
+| `test_i18n_labels` | Body labels keyset matches EN reference | [`scripts/test_i18n_labels.py`](scripts/test_i18n_labels.py) |
+| `test_i18n_takeaway_labels` | Takeaway labels keyset matches EN reference | [`scripts/test_i18n_takeaway_labels.py`](scripts/test_i18n_takeaway_labels.py) |
+| `test_i18n_render_data` | Patch-table count matches FR canonical | [`scripts/test_i18n_render_data.py`](scripts/test_i18n_render_data.py) |
+| `test_i18n_author` | Author-card metadata keyset matches | [`scripts/test_i18n_author.py`](scripts/test_i18n_author.py) |
+| `test_lang_no_leakage` | No English UI strings leaked into non-EN chrome | [`scripts/test_lang_no_leakage.py`](scripts/test_lang_no_leakage.py) |
+
+Plus three pan-locale gates:
+
+- `test_hreflang_reciprocity` — every translated page's hreflang set is symmetric (A claims B is the FR alternate ⇒ B claims A is the EN alternate). 1848 paired pages on a clean build.
+- `test_jsonld_localized` — JSON-LD `inLanguage` matches `<html lang>` on every page.
+- `test_sitemap_completeness` — every rendered page is present in `sitemap.xml`.
+- `test_rtl_safe` — RTL languages don't carry physical CSS properties (`margin-left` etc.) that don't flip with `dir="rtl"`.
 
 ---
 
@@ -347,78 +396,274 @@ alternate. 103 pages currently carry hreflang on a clean build.
 |---|---|
 | **TLS** | Cloudflare edge with the post-quantum hybrid X25519MLKEM768 (NIST FIPS 203), classical X25519 fallback for legacy clients. Negotiated by Chrome 124+, Firefox 132+, Safari 18+. |
 | **HSTS** | `max-age=63072000; includeSubDomains; preload`. Submitted to the Chromium HSTS preload list. |
-| **CSP** | Strict; no `unsafe-inline` for scripts. JSON-LD allowed strictly by per-page SHA-256 hash. `'inline-speculation-rules'` keyword authorises the Speculation Rules API block (which also carries its own hash). |
-| **Frame protection** | `frame-ancestors 'none'` + `X-Frame-Options: DENY` shipped via Cloudflare Transform Rules (meta CSP can't express it). |
+| **CSP** | Strict. No `unsafe-inline` for scripts. JSON-LD allowed strictly by per-page SHA-256 hash. `'inline-speculation-rules'` keyword authorises the Speculation Rules API block (which also carries its own hash). `img-src` enumerates 4 origins; no blanket `https:`. CI gate [`test_csp_strict.py`](scripts/test_csp_strict.py) fails the build if any future regression widens the policy. |
+| **Frame protection** | `frame-ancestors 'none'` + `X-Frame-Options: DENY` via Cloudflare Transform Rules. |
 | **MIME** | `X-Content-Type-Options: nosniff`. |
 | **Referrer** | `Referrer-Policy: strict-origin-when-cross-origin`. |
-| **Permissions** | `Permissions-Policy` denies ~40 sensitive permissions by default (camera, mic, geolocation, USB, payment, etc.). |
+| **Permissions** | `Permissions-Policy` denies ~40 sensitive permissions by default. |
 | **Cross-origin** | `Cross-Origin-Opener-Policy: same-origin`, `Cross-Origin-Resource-Policy: same-origin`. `COEP` deliberately not set to keep Spotify iframes working on `/playlists/`. |
-| **SRI** | Real SHA-256 SRI on every `/_csp/*` asset. Browsers refuse the file if it doesn't byte-for-byte match. |
+| **SRI** | Real SHA-256 SRI on every `/_csp/*` asset. |
 | **SBOM** | CycloneDX 1.4 published at `/sbom.cdx.json`. |
 | **Git** | Signed commits enforced. Branch protection on `main`. |
 
-Full deployment notes including the Cloudflare configuration and
-verification commands live in [`DEPLOY.md`](DEPLOY.md).
+Full deployment notes including the Cloudflare configuration and verification commands live in [`DEPLOY.md`](DEPLOY.md).
+
+---
+
+## Edge routing Worker
+
+`workers/lang-router.js` is a Cloudflare Worker that redirects visitors hitting the bare root to their preferred locale subtree — sub-50ms at the edge, no origin fetch.
+
+```mermaid
+%%{init: {'theme':'neutral'} }%%
+flowchart TD
+ REQ[/"GET /"/] --> COOKIE{"pref-lang<br/>cookie set?"}
+ COOKIE -->|yes| LANG_OK{"value is<br/>active lang?"}
+ LANG_OK -->|yes| R1["302 → /lang/"]
+ LANG_OK -->|no| PASS["Pass through<br/>(EN tree)"]
+ COOKIE -->|no| QP{"?lang=xx<br/>in URL?"}
+ QP -->|yes, EN| PASS
+ QP -->|yes, active| R2["302 → /lang/<br/>+ set cookie"]
+ QP -->|no| AL{"Accept-Language<br/>top-q is EN?"}
+ AL -->|yes| PASS
+ AL -->|no| MAP{"map to<br/>site lang?"}
+ MAP -->|hit| R3["302 → /lang/"]
+ MAP -->|miss| PASS
+```
+
+Decision priorities, from highest to lowest:
+
+1. **Explicit cookie** — `pref-lang=fr` from a prior visit; sticky for 30 days.
+2. **URL override** — `?lang=fr` deep-link (also sets the cookie).
+3. **Accept-Language sniff** — top q-valued tag maps via `TAG_TO_LANG` to one of the 28 actives.
+4. **Fall through** — unsupported tags / EN-first visitors get the EN tree.
+
+`zh-CN`, `zh-SG` → `zh-hans`. `zh-TW`, `zh-HK`, `zh-MO` → `zh-hant`. `pt-PT` and `pt-BR` both → `pt-br`. `tl-PH` → `fil`. The Worker is pure-logic — no fetches, no KV. Tests at [`workers/test_lang_router.mjs`](workers/test_lang_router.mjs), wired into `build.sh`.
+
+---
+
+## Threat model
+
+```mermaid
+%%{init: {'theme':'neutral'} }%%
+graph TB
+ subgraph EXT["External"]
+ V[/"Visitor"/]
+ CR[/"Crawler / AI agent"/]
+ ATK[/"Attacker"/]
+ end
+
+ subgraph EDGE["Cloudflare edge (TLS termination)"]
+ CFW["lang-router Worker"]
+ TR["Transform Rules<br/>HSTS, X-Frame-Options,<br/>COOP, CORP, OAC"]
+ CDN["CDN cache"]
+ PQ["X25519MLKEM768<br/>(NIST FIPS 203)"]
+ end
+
+ subgraph ORIG["GitHub Pages origin"]
+ H["docs/ (static HTML)<br/><i>1849 pages</i>"]
+ SBOM["sbom.cdx.json"]
+ WKD["openpgpkey/<br/>(WKD)"]
+ end
+
+ subgraph CSP["Per-page browser enforcement"]
+ SRI["SRI on /_csp/*"]
+ JSONLD["JSON-LD sha256<br/>allowlist"]
+ SR["speculation-rules<br/>keyword"]
+ end
+
+ V --> PQ
+ CR --> PQ
+ ATK -.->|harvest now,<br/>decrypt later| PQ
+ PQ --> CFW
+ CFW --> TR
+ TR --> CDN
+ CDN --> H
+ CDN --> SBOM
+ CDN --> WKD
+ H --> SRI
+ H --> JSONLD
+ H --> SR
+```
+
+Specific mitigations:
+
+- **Harvest-now-decrypt-later quantum risk** — every TLS session uses ML-KEM-768 hybrid key exchange. An adversary recording today's traffic cannot retroactively decrypt it with a future cryptographically relevant quantum computer.
+- **Supply-chain integrity** — every page ships a CycloneDX SBOM, every CSS/JS asset carries a real SHA-256 SRI, and commits are signed. Branch protection requires PRs + green CI before merge.
+- **XSS / injection** — strict CSP (no `unsafe-inline`), per-page JSON-LD sha256 allowlist, `'inline-speculation-rules'` keyword authorises only the Speculation Rules block. `object-src 'none'`, `base-uri 'self'`.
+- **Disclosure channel** — OpenPGP Web Key Directory (WKD) at `.well-known/openpgpkey/` for researcher contact; full security policy via [`SECURITY.md`](https://github.com/sebastienrousseau/dotfiles/blob/main/.github/SECURITY.md).
+
+---
+
+## Capabilities shipped
+
+What's in production today (≠ what's on the roadmap):
+
+| Surface | What ships |
+|---|---|
+| **Languages** | 28 active languages (`en-GB` + 27 non-EN). 44 articles per language, ~20 static pages, full chrome translation, RTL support for Arabic + Hebrew. |
+| **Content** | 44 long-form articles, 5 topic-cluster hubs, papers index with 1 lead-magnet PDF, projects portfolio (~26 SoftwareSourceCode entries), playlists, contact form. |
+| **Security** | Strict CSP (no `unsafe-inline`, hash-allowlisted JSON-LD + speculationrules), HSTS preload, X25519MLKEM768 PQC TLS at the edge, real SRI, CycloneDX SBOM, Cross-Origin-Opener-Policy + Cross-Origin-Resource-Policy via Cloudflare Transform Rules. |
+| **Discovery** | sitemap.xml (108k entries), per-language news-sitemap + RSS + Atom + JSON-Feed, `robots.txt` (20+ AI bots listed explicitly), `llms.txt` + `llms-full.txt`. |
+| **AI / agent surface** | `/api/agents/{posts,topics,person,index}.json` + `.well-known/ai-plugin.json` + `.well-known/openapi.json` (OpenAPI 3.1). |
+| **Performance** | Speculation Rules API (hover-prerender), 11750+ images with explicit width/height, hero `fetchpriority=high`, system fonts only, ~5 KB JS. Lighthouse 100/100/100/100 across all categories on article pages. |
+| **Accessibility** | WCAG 2.2 AAA — 0 pa11y violations across 1849 pages, all interactive targets ≥24×24 (WCAG 2.5.5), focus-visible rings, `prefers-reduced-motion` honored, full keyboard nav. |
+| **SEO / GEO** | `Person` / `Article` / `BlogPosting` / `TechArticle` / `SoftwareSourceCode` / `FAQPage` / `HowTo` / `BreadcrumbList` / `ItemList` / `ProfilePage` JSON-LD. Complete OG/Twitter metadata, hreflang reciprocity, BCP-47 regional tags. |
+| **Build provenance** | CycloneDX SBOM published at `/sbom.cdx.json`, real SRI on every asset, signed commits, 14 CI gates on every push. |
+| **Edge routing** | Cloudflare Worker auto-routes visitors to their preferred locale subtree based on `Accept-Language` — sub-50ms, no origin fetch. |
+
+---
+
+## Schema.org coverage
+
+Every page emits structured data. The site uses these `@type`s:
+
+| Type | Where | Count (typical clean build) |
+|---|---|---|
+| `Person` | Every page (Sebastien Rousseau) | 1849 |
+| `BlogPosting` | Dated articles | 1232 |
+| `TechArticle` | Dated articles whose keywords name a programming language or technical domain | 613 |
+| `SoftwareSourceCode` | `/projects/` cards (26 items, in an ItemList wrapper) | 26 |
+| `HowTo` | Step-by-step articles (pain001, pacs.008, …) | 16 |
+| `ItemList` | `/articles/`, `/papers/`, `/projects/` listings | 3 |
+| `BreadcrumbList` | Every page | 1849 |
+| `FAQPage` | `/papers/`, `/projects/` | 2 |
+| `ProfilePage` | `/about/` | 1 |
+| `Organization` | `/about/` employer chain (HSBC, PayPal, Barclays, …) | 1849 |
+| `ProgramMembership` | `/about/` EPAA Working Group | 1849 |
+
+Every inline JSON-LD block is allowlisted in the page's CSP by its SHA-256 hash. The CI gate [`test_csp_strict.py`](scripts/test_csp_strict.py) fails the build if any JSON-LD block on any page lacks its hash in the policy. The schema validator at [`scripts/validate_jsonld.py`](scripts/validate_jsonld.py) fails on required-property gaps (e.g. `ListItem` missing `name`).
+
+---
+
+## AI / agent discovery
+
+Three layers of discovery for AI crawlers and agentic clients:
+
+| File | Format | Purpose |
+|---|---|---|
+| `/llms.txt` | Plain text directory | Per-llmstxt.org spec — one-line summary per article. |
+| `/llms-full.txt` | Plain text corpus | Full article bodies (Markdown) for fine-tuning / RAG. |
+| `/api/agents/posts.json` | Application JSON | Every dated post with title, URL, date, topics, keywords, description, wordCount. |
+| `/api/agents/topics.json` | Application JSON | Curated topic clusters + slug lists. |
+| `/api/agents/person.json` | Schema.org JSON | Author profile (Person + Organization). |
+| `/api/agents/index.json` | Application JSON | Discovery document — entry point + cross-links to RSS / Atom / sitemap / ai-plugin. |
+| `/.well-known/ai-plugin.json` | ChatGPT-plugin manifest | Plugin-style discovery for AI agent toolchains. |
+| `/.well-known/openapi.json` | OpenAPI 3.1 | Schema for the `/api/agents/*` endpoints. |
+| `/feed.json` per lang | JSON Feed 1.1 | Modern JSON-Feed alternative to RSS. |
+
+The `robots.txt` advertises permissive access for all major AI bots (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, OAI-SearchBot, etc.) and the discovery files above.
 
 ---
 
 ## Development
 
-Local QA recipe — every gate that CI runs, runnable locally:
+Local QA recipe — every CI gate, runnable locally:
 
 ```bash
-ruff check scripts/ tests/         # Python lint (target = 0 errors)
-pytest tests/ -ra                  # 58 unit tests
-./build.sh                         # full build pipeline
-python3 scripts/audit_links.py     # 0 internal-link breakages
-python3 scripts/validate_jsonld.py # 0 JSON-LD / XML feed errors
-python3 scripts/test_search_indexes.py  # EN + FR search-index shape guard
+ruff check scripts/ tests/ # Python lint
+radon cc scripts/postbuild_lib/ -nC # Cyclomatic complexity (A/B only)
+pytest tests/ --cov=scripts/postbuild_lib --cov-fail-under=100
+./build.sh # full build + 14 CI gates
+python3 scripts/validate_jsonld.py # JSON-LD + XML feed shape
+python3 scripts/test_csp_strict.py # CSP strict-shape
+node workers/test_lang_router.mjs # Worker pure-logic tests
 ```
 
 The pre-commit-equivalent one-liner is `make build && make audit && make validate`.
 
-### Worked example: build a single layout change
+### `make` targets
 
 ```bash
-$ vim _layouts/index.html      # change a CSS rule
-$ python3 scripts/gen_layouts.py    # propagate the shared shell to the 10 sibling layouts
-$ ./build.sh                   # full rebuild
-$ python3 -m http.server -d public 8000
-# visit http://127.0.0.1:8000/
+make build # full build pipeline
+make serve # build + serve locally
+make audit # internal-link audit (strict)
+make validate # JSON-LD + XML feed validity
+make test-search-index # EN + per-language search-index shape guard
+make lint # ruff
+make test # pytest + coverage
 ```
 
-If the change touches a CSS variable, bump `_layouts/sw.js`'s
-`CACHE` constant so the service worker invalidates and re-fetches.
+### Worked example: add a new article
+
+```bash
+$ vim _posts/YYYY-MM-DD-my-new-article.md # write English source
+$ ./build.sh # builds EN page; non-EN langs fall back to EN until translated
+$ # 27 parallel translation passes will need _posts/<lang>/YYYY-MM-DD-<translated-slug>.md
+$ # and corresponding slugs.json entries per lang
+```
+
+### Worked example: add a new language
+
+1. Append a `Language(...)` entry to [`scripts/_lang_registry.py`](scripts/_lang_registry.py) with `active=False`.
+2. Create `_data/i18n/<lang>/` with 11 JSON files (mirror an existing locale's structure).
+3. Translate `_posts/<lang>/*.md` (44 articles).
+4. Activate (`active=True`), wire the new language entry into all 11 `_layouts/*.html` switcher tables, push.
+5. CI's per-language parity gates enforce that nothing is missing.
+
+See [`doc/I18N.md`](doc/I18N.md) for the full workflow.
 
 ---
 
 ## CI gates
 
-Six workflows guard every push:
+Six GitHub Actions workflows guard every push. Together they run 14 distinct checks:
 
-| Workflow | Runs on | Gates |
+```mermaid
+%%{init: {'theme':'neutral'} }%%
+flowchart TB
+    PUSH(["push / PR"])
+    PUSH --> CI
+    PUSH --> SD
+    PUSH --> LH
+    PUSH --> PD
+
+    subgraph CI["ci.yml — build-audit"]
+        direction TB
+        L1["ruff"] --> L2["radon"] --> L3["pytest + 100% coverage"]
+        L3 --> L4["build.sh + 14 in-repo gates"]
+        L4 --> L5["validate_jsonld"]
+        L5 --> L6["pa11y AAA — 1849 pages"]
+        L6 --> L7["Lighthouse CI nested"]
+    end
+    subgraph SD["schema-diff.yml"]
+        S1["JSON-LD before / after"]
+    end
+    subgraph LH["lighthouse.yml"]
+        L8["Lighthouse weekly · 7 URLs × 3 runs"]
+    end
+    subgraph PD["pages-deploy.yml"]
+        L10["Build → Pages deploy"]
+    end
+```
+
+| Workflow | Triggers | Gates |
 |---|---|---|
-| `ci.yml` (build-audit) | every push + PR | ruff, pytest, build, audit_links, validate_jsonld, pa11y AAA against all 130 pages, nested Lighthouse (LHCI 0.13 / Lighthouse 11) |
-| `lighthouse.yml` | every push + weekly cron | Full Lighthouse CI on 7 representative URLs × 3 runs (LHCI 0.14 / Lighthouse 12 — stricter `target-size` audit). Thresholds: perf ≥0.90 warn, a11y/best-practices/SEO ≥0.95 error. |
-| `pages-deploy.yml` | push to `main` | Build + upload-pages-artifact + deploy-pages |
-| `schema-diff.yml` | every PR | Builds the PR base and HEAD, diffs JSON-LD, posts a comment. Read-only. |
-| `refresh-gh-stats.yml` | nightly cron + manual | Refreshes `_data/gh-stats.json` from the GitHub API. Opens a PR on changes (cannot push directly to protected `main`). |
-| `link-audit.yml` | first of every month | External link audit. Files a tracking issue if any external link 404s. |
+| [`ci.yml`](.github/workflows/ci.yml) (build-audit) | every push + PR | ruff, radon, pytest+coverage 100%, build, JSON-LD validate, pa11y AAA over 1849 pages, nested Lighthouse CI. |
+| [`lighthouse.yml`](.github/workflows/lighthouse.yml) | every push + weekly cron | Full Lighthouse CI on 7 representative URLs × 3 runs. Thresholds: performance ≥0.90 warn, a11y/best-practices/SEO ≥0.95 error. |
+| [`pages-deploy.yml`](.github/workflows/pages-deploy.yml) | push to `main` | Build + `upload-pages-artifact` + `deploy-pages`. |
+| [`schema-diff.yml`](.github/workflows/schema-diff.yml) | every PR | Builds base + HEAD, diffs JSON-LD, posts a PR comment. Read-only. |
+| [`refresh-gh-stats.yml`](.github/workflows/refresh-gh-stats.yml) | nightly cron + manual | Refreshes `_data/gh-stats.json` from the GitHub API. Opens a PR on change. |
+| [`link-audit.yml`](.github/workflows/link-audit.yml) | first of every month | External link audit. Files a tracking issue if any external link returns 404. |
 
-All six green at HEAD. Local `make` parity is `make build && make
-test && make audit && make validate && make test-search-index`.
+Plus the in-repo gates baked into `build.sh`:
+
+```
+search-index [x] i18n-parity [x] UI-strings [x] body-labels [x] takeaway-labels [x]
+render-data [x] author-card [x] hreflang reciprocity [x] JSON-LD inLanguage [x]
+sitemap completeness [x] EN-leakage absence [x] no physical CSS [x]
+CSP strict-shape [x] workers test [x]
+```
+
+All workflows green at HEAD on `main`.
 
 ---
 
 ## Deployment
 
-GitHub Pages serves `docs/` (mirrored from `public/` by `build.sh`).
-Cloudflare sits in front of Pages as the CDN — see
-[`DEPLOY.md`](DEPLOY.md) for the canonical record of headers,
-PQC TLS toggle, HSTS preload submission, and Transform Rules.
+GitHub Pages serves `docs/` (mirrored from `public/` by `build.sh`). Cloudflare sits in front of Pages as the CDN — see [`DEPLOY.md`](DEPLOY.md) for the canonical record of headers, PQC TLS toggle, HSTS preload submission, Transform Rules, and the `lang-router` Worker deployment.
 
-`pages-deploy.yml` is the active deploy path. The legacy
-`main`-branch `docs/` auto-deploy still works as a fallback.
+`pages-deploy.yml` is the active deploy path. The legacy `main`-branch `docs/` auto-deploy still works as a fallback.
 
 Production URL: <https://sebastienrousseau.com/>.
 
@@ -426,32 +671,32 @@ Production URL: <https://sebastienrousseau.com/>.
 
 ## When this repo is **not** what you want
 
-This is the source-tree for a single author's personal site. It's
-public so anyone curious about the pipeline can read it, but:
+This is the source-tree for a single author's personal site. It's public so anyone curious about the pipeline can read it, but:
 
-- **No CMS.** Adding content means a Git commit. Comfortable with
-  Markdown, frontmatter, and Git is a hard prerequisite.
-- **No theming system.** Layouts are bespoke. Forking and rebranding
-  is possible but involves rewriting `_layouts/index.html` end to
-  end.
-- **No multi-tenant story.** The build pipeline assumes one origin
-  (`sebastienrousseau.com`) and one author identity.
+- **No CMS.** Adding content means a Git commit. Comfortable with Markdown, frontmatter, and Git is a hard prerequisite.
+- **No theming system.** Layouts are bespoke. Forking and rebranding is possible but involves rewriting `_layouts/index.html` end to end.
+- **No multi-tenant story.** The build pipeline assumes one origin (`sebastienrousseau.com`) and one author identity.
+- **Heavy i18n surface.** Adding a new language requires authoring 11 JSON glossaries and 44 article translations. Not a 10-minute job.
 
-For a general-purpose Rust SSG with theming, see
-[Shokunin](https://shokunin.one).
+For a general-purpose Rust SSG with theming, see [Static Site Generator](https://github.com/sebastienrousseau/static-site-generator).
 
 ---
 
-## Documentation
+## Companion docs
 
 | Document | Covers |
 |---|---|
-| [`DEPLOY.md`](DEPLOY.md) | Cloudflare configuration: PQC TLS toggle, Transform Rules for HSTS / COOP / CORP / X-Frame-Options, HSTS preload submission, verification commands. |
-| [`_posts/fr/README.md`](_posts/fr/README.md) | Manual French translation workflow: adding a new translation, slug-map convention, chrome-patch authoring rules. |
-| `_data/gh-stats.json` | Nightly snapshot of GitHub repo stats (stars, forks, last commit) consumed by `postbuild.py:inject_github_stats()`. |
-| `scripts/_fr_slugs.py` | The EN ↔ FR slug map. Single source of truth. |
-| `requirements.txt` | Python runtime dependencies (currently `markdown-it-py`). |
-| `pyproject.toml` | Ruff + pytest configuration, MSRV-equivalent for the Python pipeline (3.11+). |
+| [`DEPLOY.md`](DEPLOY.md) | Cloudflare configuration: PQC TLS toggle, Transform Rules for HSTS / COOP / CORP / X-Frame-Options, HSTS preload submission, verification commands, Worker deployment. |
+| [`doc/ARCHITECTURE.md`](doc/ARCHITECTURE.md) | Full pipeline architecture: every script in `scripts/`, every module in `postbuild_lib/`, every CI gate. With Mermaid diagrams. |
+| [`doc/I18N.md`](doc/I18N.md) | The 28-language translation system: registry, JSON glossaries, chrome patches, RTL handling, adding a new language end-to-end. |
+| [`doc/SECURITY.md`](doc/SECURITY.md) | Threat model, CSP design, SRI policy, PQC TLS, SBOM provenance, OpenPGP WKD. |
+| [`doc/SCHEMAS.md`](doc/SCHEMAS.md) | Every Schema.org `@type` emitted by the site, plus the CSP-hash discipline that allowlists them. |
+| [`doc/POSTBUILD.md`](doc/POSTBUILD.md) | The 18 single-page transforms in `postbuild.py`: order, dependencies, idempotence. |
+| [`doc/CI.md`](doc/CI.md) | All 14 CI gates: what they check, how to run them locally, common failure modes. |
+| `_data/gh-stats.json` | Nightly snapshot of GitHub repo stats consumed by `postbuild_lib/github_stats.py`. |
+| `scripts/_lang_registry.py` | Single source of truth for the 28-language matrix. |
+| `requirements.txt` | Python runtime dependencies. |
+| `pyproject.toml` | Ruff + pytest configuration, MSRV-equivalent for Python (3.11+). |
 
 ---
 

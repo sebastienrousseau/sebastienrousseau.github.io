@@ -1,11 +1,11 @@
 {
-  "subtitle": "Il nuovo lavoro di Yilei Chen suggerisce una potenziale vulnerabilità",
-  "date": "April 15, 2024",
-  "title": "Un algoritmo quantistico sfida la crittografia basata su reticoli",
   "banner_alt": "Algoritmo quantistico e reticoli",
-  "banner": "https://cloudcdn.pro/stocks/images/digitale-constellation.webp",
-  "language": "it-IT",
   "description": "Un nuovo algoritmo quantistico risolve un problema crittografico chiave, sollecitando un'accelerazione della ricerca sulla sicurezza resistente al quantum.",
+  "subtitle": "Il nuovo lavoro di Yilei Chen suggerisce una potenziale vulnerabilità",
   "keywords": "quantistico, reticoli, LWE, Yilei Chen, Kyber, PQC, vulnerabilità",
-  "locale": "it_IT"
+  "title": "Un algoritmo quantistico sfida la crittografia basata su reticoli",
+  "locale": "it_IT",
+  "date": "April 15, 2024",
+  "language": "it-IT",
+  "banner": "https://cloudcdn.pro/stocks/images/digitale-constellation.webp"
 }
