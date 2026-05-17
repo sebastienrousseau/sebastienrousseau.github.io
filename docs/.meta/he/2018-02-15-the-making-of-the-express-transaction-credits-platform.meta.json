@@ -1,11 +1,11 @@
 {
+  "description": "تطوير إطارٍ شامل للجيل المقبل من التوكنات المتوافقة مع Ethereum Request for Comment عبر معيار ERC-223.",
   "subtitle": "إطارٌ شامل للجيل المقبل من توكنات ERC-223",
   "title": "صناعة منصّة Express Transaction Credits",
-  "language": "he-IL",
-  "keywords": "Ethereum, ERC-223, ERC-20, EXTC, Express Transaction Credits, blockchain, المدفوعات, التوكنات, القروض, التمويل اللامركزي",
+  "date": "February 15, 2018",
   "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
-  "description": "تطوير إطارٍ شامل للجيل المقبل من التوكنات المتوافقة مع Ethereum Request for Comment عبر معيار ERC-223.",
-  "locale": "he_IL",
+  "keywords": "Ethereum, ERC-223, ERC-20, EXTC, Express Transaction Credits, blockchain, المدفوعات, التوكنات, القروض, التمويل اللامركزي",
   "banner_alt": "أعمدة ضخمة بيضاء",
-  "date": "February 15, 2018"
+  "language": "he-IL",
+  "locale": "he_IL"
 }

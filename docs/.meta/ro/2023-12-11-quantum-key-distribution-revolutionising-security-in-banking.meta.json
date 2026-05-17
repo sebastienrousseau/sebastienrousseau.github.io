@@ -1,11 +1,11 @@
 {
-  "banner_alt": "HSBC From the Docks",
-  "date": "Dec 11, 2023",
-  "title": "Quantum Key Distribution Revolutionising Security in Banking",
-  "description": "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.",
   "subtitle": "Quantum Key Distribution (QKD) for financial-grade security in banking.",
   "locale": "ro_RO",
-  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
+  "title": "Quantum Key Distribution Revolutionising Security in Banking",
+  "description": "As quantum computers pose a threat to traditional encryption methods, Quantum Key Distribution (QKD) emerges as a game-changer, offering unparalleled security.",
+  "date": "Dec 11, 2023",
+  "keywords": "Quantum Key Distribution (QKD), Quantum Security, Banking, Financial Industry, Digital Finance, Cybersecurity, Quantum Computing, HSBC, Quantum Protection Trial, Financial Transactions",
   "language": "ro-RO",
-  "keywords": "Quantum Key Distribution (QKD), Quantum Security, Banking, Financial Industry, Digital Finance, Cybersecurity, Quantum Computing, HSBC, Quantum Protection Trial, Financial Transactions"
+  "banner_alt": "HSBC From the Docks",
+  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp"
 }

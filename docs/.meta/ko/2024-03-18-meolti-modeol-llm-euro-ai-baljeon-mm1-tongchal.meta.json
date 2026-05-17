@@ -1,12 +1,12 @@
 {
-  "banner_alt": "AI의 진화를 표현하는 비주얼",
-  "title": "멀티모달 LLM으로 AI를 진전시키다: MM1로부터의 통찰",
+  "keywords": "MM1, Apple AI, 멀티모달 LLM, 비전 언어, 사전 학습, 스케일링 법칙",
   "banner": "https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp",
   "description": "Apple의 멀티모달 대규모 언어 모델에 관한 MM1 논문 — 아키텍처, 사전 학습 전략, 신생 능력 — 의 분석.",
-  "subtitle": "Apple의 MM1 논문이 멀티모달 AI 설계를 재구성하다",
+  "date": "March 18, 2024",
   "last_reviewed": "2026-05-16",
-  "keywords": "MM1, Apple AI, 멀티모달 LLM, 비전 언어, 사전 학습, 스케일링 법칙",
-  "language": "ko-KR",
+  "title": "멀티모달 LLM으로 AI를 진전시키다: MM1로부터의 통찰",
   "locale": "ko_KR",
-  "date": "March 18, 2024"
+  "subtitle": "Apple의 MM1 논문이 멀티모달 AI 설계를 재구성하다",
+  "language": "ko-KR",
+  "banner_alt": "AI의 진화를 표현하는 비주얼"
 }

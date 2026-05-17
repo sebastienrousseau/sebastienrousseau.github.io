@@ -6,61 +6,74 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Sun, 17 May 2026 01:03:51 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2026 05:35:49 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
     <item>
-      <title>La mejor arquitectura de infraestructura cloud en 2026: un blueprint AI-native, multicloud y consciente del cuántico para los servicios financieros</title>
+      <title>สถาปัตยกรรมโครงสร้างพื้นฐานคลาวด์ที่ดีที่สุดในปี 2026: พิมพ์เขียวแบบ AI-Native, Multi-Cloud และพร้อมรับมือควอนตัมสำหรับบริการทางการเงิน</title>
       <link>https://sebastienrousseau.com/th/2026-05-21-sthapattayakam-cloud-thi-di-thi-sut-samrap-thanakhan-2026/</link>
-      <description>La arquitectura cloud en 2026 se ha cristalizado en torno a seis pilares: infraestructura AI-native, multicloud inteligente, diseño serverless-first con WebAssembly en el edge, edge computing, DevSecOps automatizado con crypto-agilidad, y operaciones sostenibles de alta densidad. Para los bancos, la pregunta ya no es consumir el cloud sino diseñarlo, bajo presión convergente del agentic commerce, los unit economics agénticos, el riesgo cuántico harvest-now-decrypt-later, la seguridad MCP y la contagión algorítmica, la identidad criptográfica de los agentes, los requisitos de continuous treasury y el Reglamento europeo de IA.</description>
+      <description>สถาปัตยกรรมคลาวด์ในปี 2026 ได้ตกผลึกอยู่ที่หกเสาหลัก: โครงสร้างพื้นฐาน AI-native, multi-cloud อัจฉริยะ, การออกแบบ serverless-first พร้อม WebAssembly ที่ edge, edge computing, ความมั่นคงอัตโนมัติพร้อม crypto-agility และการดำเนินงานความหนาแน่นสูงที่ยั่งยืน สำหรับธนาคาร คำถามคือควรบริโภคคลาวด์หรือออกแบบมัน</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-21-sthapattayakam-cloud-thi-di-thi-sut-samrap-thanakhan-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
-      <category>arquitectura cloud 2026</category>
-      <category>infraestructura AI-native</category>
-      <category>multicloud</category>
+      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
+      <category>สถาปัตยกรรมคลาวด์ 2026</category>
+      <category>โครงสร้างพื้นฐาน AI-native</category>
+      <category>multi-cloud</category>
+      <category>sovereign cloud</category>
+      <category>US CLOUD Act</category>
+      <category>Bleu</category>
+      <category>S3NS</category>
+      <category>AWS European Sovereign Cloud</category>
+      <category>sovereign AI</category>
+      <category>open-weight models</category>
+      <category>Llama 4</category>
+      <category>Mistral</category>
+      <category>confidential computing</category>
       <category>serverless</category>
       <category>edge computing</category>
       <category>WebAssembly</category>
       <category>Wasm</category>
+      <category>eBPF</category>
+      <category>Cilium</category>
+      <category>Tetragon</category>
+      <category>LEO satellite edge</category>
       <category>DevSecOps</category>
-      <category>datacenter sostenible</category>
-      <category>refrigeración líquida</category>
+      <category>ศูนย์ข้อมูลที่ยั่งยืน</category>
+      <category>grid-aware computing</category>
+      <category>liquid cooling</category>
+      <category>Small Modular Reactor</category>
+      <category>SMR</category>
+      <category>นิวเคลียร์</category>
+      <category>Three Mile Island</category>
+      <category>Kairos Power</category>
+      <category>X-Energy</category>
+      <category>silicon photonics</category>
       <category>AWS Bedrock</category>
       <category>Google Vertex AI</category>
       <category>Azure OpenAI Service</category>
       <category>agentic commerce</category>
-      <category>swarms multiagente</category>
-      <category>unit economics agénticos</category>
-      <category>FinOps agéntico</category>
-      <category>identidad criptográfica de agentes</category>
+      <category>multi-agent swarms</category>
+      <category>agentic unit economics</category>
+      <category>cryptographic agent identity</category>
       <category>SPIFFE</category>
       <category>SPIRE</category>
-      <category>contagión algorítmica</category>
-      <category>gravedad de los datos</category>
-      <category>FinOps egress</category>
-      <category>HPC</category>
-      <category>almacenamiento GPU</category>
-      <category>continuous treasury</category>
-      <category>liquidez sin fronteras</category>
-      <category>pagos en tiempo real</category>
-      <category>generación de datos sintéticos</category>
-      <category>confidential computing</category>
-      <category>JPMorgan multicloud</category>
-      <category>modernización Citi</category>
-      <category>graph neural networks</category>
-      <category>fraude deepfake</category>
-      <category>harvest now decrypt later</category>
+      <category>algorithmic contagion</category>
+      <category>RAG poisoning</category>
+      <category>ความมั่นคง vector database</category>
+      <category>JPMorgan</category>
+      <category>Citi</category>
+      <category>GNN</category>
+      <category>deepfake fraud</category>
       <category>HNDL</category>
-      <category>criptografía postcuántica</category>
-      <category>crypto-agilidad</category>
-      <category>seguridad MCP</category>
-      <category>prompt injection</category>
-      <category>ataques de cadena de suministro</category>
+      <category>post-quantum cryptography</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>crypto-agility</category>
+      <category>QKD</category>
+      <category>Basel IV</category>
+      <category>cloud concentration risk</category>
+      <category>MCP security</category>
       <category>CloudCDN</category>
-      <category>Cloudflare Workers</category>
-      <category>Durable Objects</category>
-      <category>WCAG-AA</category>
       <category>Sebastien Rousseau</category>
     </item>
     <item>

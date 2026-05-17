@@ -1,11 +1,11 @@
 {
-  "title": "Qiskit والتحويل الكمومي لفورييه لتحليل نسب الائتمان",
-  "date": "Jan 08, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
-  "banner_alt": "غرفة حاسوب كمومي",
-  "locale": "fil_PH",
-  "subtitle": "تحسين تحليل نسب الائتمان باستخدام IBM Qiskit والتحويل الكمومي لفورييه",
-  "description": "كيف يُحدث IBM Qiskit والتحويل الكمومي لفورييه ثورة في تحليل نسب الائتمان في التمويل، مقدّمَين دقّة وسرعة غير مسبوقتَين.",
   "keywords": "الحوسبة الكمومية، التمويل، تحليل نسب الائتمان، Qiskit، التحويل الكمومي لفورييه، IBM، تعلّم الآلة، الذكاء الاصطناعي، تقييم المخاطر المالية، الجدارة الائتمانية",
-  "language": "fil-PH"
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
+  "subtitle": "تحسين تحليل نسب الائتمان باستخدام IBM Qiskit والتحويل الكمومي لفورييه",
+  "date": "Jan 08, 2024",
+  "description": "كيف يُحدث IBM Qiskit والتحويل الكمومي لفورييه ثورة في تحليل نسب الائتمان في التمويل، مقدّمَين دقّة وسرعة غير مسبوقتَين.",
+  "locale": "fil_PH",
+  "language": "fil-PH",
+  "title": "Qiskit والتحويل الكمومي لفورييه لتحليل نسب الائتمان",
+  "banner_alt": "غرفة حاسوب كمومي"
 }
