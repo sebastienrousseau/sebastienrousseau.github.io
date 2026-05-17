@@ -120,6 +120,8 @@ last_reviewed: "2026-05-11"
 
 In this article, I will examine the uses of quantum-resistant cryptography, specifically addressing the Rust Hash Library (HSH) that I developed. This library is fully optimised for cryptographic hashing and verification functions.
 
+> **Try it in your browser.** A companion crate that wraps the same algorithm family (SHA-256, BLAKE3, Argon2id) is compiled to WebAssembly and runs entirely client-side, with no server round-trip and no third-party JavaScript: **[open the hsh in-browser demo →](/labs/hsh-demo/)**
+
 ## Insight
 
 ### The Emerging Threat of Quantum Computing

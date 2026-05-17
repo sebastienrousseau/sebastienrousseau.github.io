@@ -35,6 +35,27 @@ if [[ -d .well-known ]]; then
   cp -R .well-known/. public/.well-known/
 fi
 
+# Build + stage WASM lab demos. Each subdirectory of _wasm-demos/ is a
+# self-contained Rust→WASM crate plus a `web/` folder with the standalone
+# HTML/JS/CSS shell. The compiled wasm-pack artefacts + the web shell are
+# copied into public/labs/<crate-name>/ where they're served alongside the
+# rest of the static site. Skipped if wasm-pack isn't on the PATH (e.g.
+# minimal local builds) — CI installs it explicitly.
+if command -v wasm-pack >/dev/null 2>&1 && [[ -d _wasm-demos ]]; then
+  for demo in _wasm-demos/*/; do
+    [[ -f "$demo/Cargo.toml" ]] || continue
+    name=$(basename "$demo")
+    echo "wasm-pack[$name]: building"
+    (cd "$demo" && wasm-pack build --target web --release 2>&1 | tail -3)
+    mkdir -p "public/labs/$name"
+    cp "$demo/pkg/${name//-/_}.js" "public/labs/$name/"
+    cp "$demo/pkg/${name//-/_}_bg.wasm" "public/labs/$name/"
+    if [[ -d "$demo/web" ]]; then
+      cp -R "$demo/web/." "public/labs/$name/"
+    fi
+  done
+fi
+
 # Copy fingerprinted assets to their unfingerprinted aliases so the layouts'
 # /main.js, /sw.js, /highlight.css references resolve.
 for f in public/main.*.js public/sw.*.js public/theme-init.*.js public/highlight.*.css; do

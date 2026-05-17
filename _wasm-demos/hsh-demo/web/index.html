@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'none'; upgrade-insecure-requests">
+  <title>hsh — in-browser cryptography demo</title>
+  <link rel="stylesheet" href="demo.css">
+  <link rel="canonical" href="https://sebastienrousseau.com/labs/hsh-demo/">
+  <meta name="robots" content="noindex,nofollow">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow"><a href="/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/">← Back to the hsh article</a></p>
+      <h1>hsh — in-browser demo</h1>
+      <p class="lede">Type any string. The hash is computed in your browser by a Rust crate compiled to WebAssembly — no server round-trip, no third-party JavaScript. View source: <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/tree/main/_wasm-demos/hsh-demo">_wasm-demos/hsh-demo</a>.</p>
+    </header>
+
+    <section class="demo">
+      <label for="input">Input</label>
+      <textarea id="input" rows="3" autofocus placeholder="Type or paste anything — the hashes update live."></textarea>
+
+      <div class="row">
+        <div class="cell">
+          <p class="algo">SHA-256 <span class="note">(NIST FIPS 180-4)</span></p>
+          <pre id="out-sha256" aria-live="polite">—</pre>
+        </div>
+        <div class="cell">
+          <p class="algo">BLAKE3 <span class="note">(modern, parallelisable)</span></p>
+          <pre id="out-blake3" aria-live="polite">—</pre>
+        </div>
+        <div class="cell argon2">
+          <p class="algo">Argon2id <span class="note">(password hashing, fresh salt per click)</span></p>
+          <pre id="out-argon2" aria-live="polite">click <em>compute</em></pre>
+          <button id="argon2-go" type="button">Compute Argon2id</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Build: <code>wasm-pack build --target web --release</code> against the crate at <code>_wasm-demos/hsh-demo/</code>. The wasm bundle below is loaded under a strict CSP: <code>script-src 'self' 'wasm-unsafe-eval'</code>, no inline scripts, no external network.</p>
+    </footer>
+  </main>
+
+  <script type="module" src="demo.js"></script>
+</body>
+</html>
