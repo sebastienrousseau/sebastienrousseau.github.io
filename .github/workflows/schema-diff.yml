@@ -57,6 +57,14 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Setup Node
+        # Both base + HEAD builds run build.sh, which gates the Worker
+        # tests with --test-coverage-{lines,branches,functions}=100 —
+        # stable from Node 22+.
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
       - name: Install Python build deps
         run: pip install --quiet -r head/requirements.txt
 

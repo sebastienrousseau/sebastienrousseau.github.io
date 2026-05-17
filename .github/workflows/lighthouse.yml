@@ -38,7 +38,8 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          # Node 22+ for stable --test-coverage-* flags used by build.sh.
+          node-version: "22"
 
       - name: Install Lighthouse CI
         run: npm install -g @lhci/cli@0.14.x

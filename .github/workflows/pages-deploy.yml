@@ -54,6 +54,13 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Setup Node
+        # build.sh runs the Worker coverage gate which requires the stable
+        # --test-coverage-{lines,branches,functions} flags (Node 22+).
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
       - name: Install Python build deps
         run: pip install --quiet -r requirements.txt
 
