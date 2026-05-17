@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T04:22:43.049678+00:00",
+  "generated_at": "2026-05-17T08:28:09.130428+00:00",
   "repos": [
     {
       "slug": "sebastienrousseau/pain001",
@@ -40,7 +40,7 @@
       "name": "bankstatementparser",
       "description": "Parse bank statements across CAMT, PAIN.001, CSV, OFX/QFX, MT940, and PDFs (digital + scanned) into unified Transaction models. Deterministic ISO 20022 parsers, LLM fallback for PDFs, vision for scans, balance verification, categorization, and interactive review mode.",
       "homepage": "https://bankstatementparser.com/",
-      "stars": 19,
+      "stars": 21,
       "forks": 5,
       "watchers": 2,
       "open_issues": 16,
@@ -251,7 +251,7 @@
       "language": "TypeScript",
       "license": "MIT",
       "default_branch": "main",
-      "pushed_at": "2026-05-15T22:12:08Z",
+      "pushed_at": "2026-05-17T08:26:05Z",
       "created_at": "2022-05-13T11:32:00Z",
       "archived": false,
       "html_url": "https://github.com/sebastienrousseau/crypto-service"
@@ -298,11 +298,11 @@
       "stars": 64,
       "forks": 16,
       "watchers": 3,
-      "open_issues": 2,
+      "open_issues": 1,
       "language": "Shell",
       "license": "NOASSERTION",
       "default_branch": "master",
-      "pushed_at": "2026-05-15T21:08:39Z",
+      "pushed_at": "2026-05-17T08:11:36Z",
       "created_at": "2015-02-16T14:15:57Z",
       "archived": false,
       "html_url": "https://github.com/sebastienrousseau/dotfiles"
