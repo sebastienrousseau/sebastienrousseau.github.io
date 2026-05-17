@@ -1,12 +1,12 @@
 {
-  "subtitle": "GENIUS Act の下のステーブルコインの利回り迂回",
-  "banner_alt": "金融データのダッシュボード",
-  "keywords": "BlackRock, BRSRV, BSTBL, GENIUS Act, ステーブルコイン, トークン化, MMF, マネー・マーケット・ファンド, デジタル資産, 利回り, 規制",
-  "date": "May 15, 2026",
-  "language": "ja-JP",
-  "description": "ステーブルコインは GENIUS Act の下で利回りを支払えません。BlackRock の BRSRV と BSTBL の申請は迂回策を示します:規制されたステーブルコインと並んで動作するトークン化マネー・マーケット・ファンド。",
+  "last_reviewed": "2026-05-15",
   "banner": "https://cloudcdn.pro/stocks/images/luke-chesser-JKUTrJ4vK00-unsplash.webp",
   "locale": "ja_JP",
+  "language": "ja-JP",
+  "description": "ステーブルコインは GENIUS Act の下で利回りを支払えません。BlackRock の BRSRV と BSTBL の申請は迂回策を示します:規制されたステーブルコインと並んで動作するトークン化マネー・マーケット・ファンド。",
+  "keywords": "BlackRock, BRSRV, BSTBL, GENIUS Act, ステーブルコイン, トークン化, MMF, マネー・マーケット・ファンド, デジタル資産, 利回り, 規制",
+  "subtitle": "GENIUS Act の下のステーブルコインの利回り迂回",
+  "banner_alt": "金融データのダッシュボード",
   "title": "BlackRock BRSRV、BSTBL、GENIUS Act、トークン化された MMF",
-  "last_reviewed": "2026-05-15"
+  "date": "May 15, 2026"
 }

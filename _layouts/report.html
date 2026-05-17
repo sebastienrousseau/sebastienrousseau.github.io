@@ -135,12 +135,7 @@
       .topic-breadcrumb a:hover{color:var(--accent, #0056b3)}
       .topic-lede{font-size:18px;line-height:1.5;color:var(--ink-soft);max-width:760px;margin:8px auto 0}
       @media (prefers-reduced-motion: reduce){.reading-progress{transition:none}}
-      /* WCAG AAA 1.4.6 — body link colour must hit ≥7:1 against --bg
-         (#fbfbfd). var(--accent) is the per-page theme tint (e.g.
-         rgb(0,67,165) = #0043a5) and measures 6.23:1 by pa11y. Use
-         var(--link-color) (#004caf in light mode) which is the
-         theme-neutral AAA-compliant blue. */
-      a{color:var(--link-color);text-decoration:none;transition:opacity .2s ease}
+      a{color:var(--accent);text-decoration:none;transition:opacity .2s ease}
       a:hover{opacity:.72}
       /* WCAG AAA 1.4.1 — in-body prose links must be distinguishable without
          colour alone. Underline bare <a> inside main content; buttons/cards

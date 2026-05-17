@@ -6,26 +6,75 @@
     <description>Bài viết tiếng Việt: AI ứng dụng, thanh toán ISO 20022, mật mã hậu lượng tử và chuyển đổi thanh toán bán buôn.</description>
     <atom:link href="https://sebastienrousseau.com/vi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>vi-VN</language>
-    <lastBuildDate>Sun, 17 May 2026 01:03:51 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2026 02:52:16 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Đã đăng ký bản quyền.</copyright>
     <item>
-      <title>Kiến trúc hạ tầng đám mây tốt nhất cho ngân hàng 2026</title>
+      <title>Kiến trúc hạ tầng đám mây tốt nhất năm 2026: Bản thiết kế AI-Native, Đa đám mây, Sẵn sàng Lượng tử cho Dịch vụ Tài chính</title>
       <link>https://sebastienrousseau.com/vi/2026-05-21-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/</link>
-      <description>Kiến trúc đám mây ngân hàng 2026: đa đám mây thực sự, chủ quyền dữ liệu, sẵn sàng quy định và tích hợp PQC.</description>
+      <description>Kiến trúc hạ tầng đám mây năm 2026 đã kết tinh quanh sáu trụ cột: hạ tầng AI-native, đa đám mây thông minh, thiết kế serverless-first với WebAssembly tại biên, điện toán biên, an ninh tự động hoá với tính linh hoạt mật mã, và vận hành mật độ cao bền vững. Với ngân hàng, câu hỏi là liệu nên tiêu thụ đám mây hay thiết kế nó — dưới áp lực hội tụ từ thương mại agentic, kinh tế đơn vị agentic, rủi ro lượng tử kiểu thu hoạch ngay - giải mã sau, an ninh MCP và lây nhiễm thuật toán, danh tính tác nhân bằng mật mã, các nhu cầu kho bạc liên tục, và Đạo luật AI của EU.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-21-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/cloud-banking-banner.webp" type="image/webp" length="0"/>
-      <category>đám mây</category>
-      <category>ngân hàng</category>
+      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
+      <category>kiến trúc hạ tầng đám mây 2026</category>
+      <category>hạ tầng AI-native</category>
       <category>đa đám mây</category>
-      <category>chủ quyền</category>
-      <category>DORA</category>
-      <category>quy định</category>
-      <category>hạ tầng</category>
-      <category>PQC</category>
-      <category>Kubernetes</category>
-      <category>2026</category>
+      <category>đám mây có chủ quyền</category>
+      <category>US CLOUD Act</category>
+      <category>Bleu</category>
+      <category>S3NS</category>
+      <category>AWS European Sovereign Cloud</category>
+      <category>AI có chủ quyền</category>
+      <category>mô hình trọng số mở</category>
+      <category>Llama 4</category>
+      <category>Mistral</category>
+      <category>điện toán bảo mật</category>
+      <category>serverless</category>
+      <category>điện toán biên</category>
+      <category>WebAssembly</category>
+      <category>eBPF</category>
+      <category>Cilium</category>
+      <category>vệ tinh LEO</category>
+      <category>Starlink Enterprise</category>
+      <category>DevSecOps</category>
+      <category>trung tâm dữ liệu bền vững</category>
+      <category>làm mát chất lỏng</category>
+      <category>SMR</category>
+      <category>năng lượng hạt nhân</category>
+      <category>NVIDIA Spectrum-X</category>
+      <category>AWS Bedrock</category>
+      <category>Google Vertex AI</category>
+      <category>Azure OpenAI Service</category>
+      <category>thương mại agentic</category>
+      <category>kinh tế đơn vị agentic</category>
+      <category>FinOps tác nhân</category>
+      <category>danh tính tác nhân bằng mật mã</category>
+      <category>SPIFFE</category>
+      <category>SPIRE</category>
+      <category>lây nhiễm thuật toán</category>
+      <category>đầu độc RAG</category>
+      <category>an ninh cơ sở dữ liệu vector</category>
+      <category>JPMorgan đa đám mây</category>
+      <category>Citi hiện đại hoá</category>
+      <category>mạng nơ-ron đồ thị</category>
+      <category>gian lận deepfake</category>
+      <category>thu hoạch ngay giải mã sau</category>
+      <category>HNDL</category>
+      <category>mật mã hậu lượng tử</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>tính linh hoạt mật mã</category>
+      <category>phân phối khoá lượng tử</category>
+      <category>QKD</category>
+      <category>Basel IV</category>
+      <category>rủi ro tập trung đám mây</category>
+      <category>an ninh MCP</category>
+      <category>tiêm nhiễm prompt</category>
+      <category>CloudCDN</category>
+      <category>Cloudflare Workers</category>
+      <category>Durable Objects</category>
+      <category>WCAG-AA</category>
+      <category>Sebastien Rousseau</category>
     </item>
     <item>
       <title>Kỹ thuật agentic: bản thiết kế ngân hàng 2026</title>

@@ -1,11 +1,11 @@
 {
   "banner_alt": "Bannière du chiffrement entièrement homomorphe",
+  "subtitle": "Renforcer la sécurité des données, améliorer la confidentialité de l'IA et bâtir la confiance client à l'ère du calcul quantique avec le FHE",
+  "language": "fr",
   "title": "Le chiffrement entièrement homomorphe (FHE) à l'ère bancaire quantique",
-  "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
+  "date": "March 25, 2024",
   "locale": "fr_FR",
   "keywords": "chiffrement entièrement homomorphe, sécurité bancaire, calcul quantique, chiffrement de données financières, FHE, RGPD, CCPA, conformité, calcul cloud, IA et confidentialité, LLM chiffré, Zama, Gentry",
   "description": "Comment le chiffrement entièrement homomorphe révolutionne la sécurité des données dans la banque et la finance, en garantissant la confidentialité face aux menaces du calcul quantique.",
-  "date": "March 25, 2024",
-  "subtitle": "Renforcer la sécurité des données, améliorer la confidentialité de l'IA et bâtir la confiance client à l'ère du calcul quantique avec le FHE",
-  "language": "fr"
+  "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp"
 }

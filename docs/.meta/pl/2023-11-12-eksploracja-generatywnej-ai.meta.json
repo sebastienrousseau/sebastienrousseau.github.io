@@ -1,11 +1,11 @@
 {
-  "description": "Generatywna AI: jak modele językowe i dyfuzji zmieniają sposób, w jaki tworzymy treści, kod i decyzje biznesowe.",
-  "subtitle": "Modele generatywne, LLM-y i ich wpływ na biznes",
-  "locale": "pl_PL",
   "title": "Eksploracja generatywnej AI",
-  "keywords": "generatywna AI, LLM, GPT, diffusion, sztuczna inteligencja, ChatGPT, modele językowe",
-  "language": "pl-PL",
-  "banner_alt": "Wizualizacja generatywnego modelu AI tworzącego obraz",
+  "locale": "pl_PL",
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
   "date": "Nov 12, 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
+  "language": "pl-PL",
+  "keywords": "generatywna AI, LLM, GPT, diffusion, sztuczna inteligencja, ChatGPT, modele językowe",
+  "banner_alt": "Wizualizacja generatywnego modelu AI tworzącego obraz",
+  "description": "Generatywna AI: jak modele językowe i dyfuzji zmieniają sposób, w jaki tworzymy treści, kod i decyzje biznesowe.",
+  "subtitle": "Modele generatywne, LLM-y i ich wpływ na biznes"
 }

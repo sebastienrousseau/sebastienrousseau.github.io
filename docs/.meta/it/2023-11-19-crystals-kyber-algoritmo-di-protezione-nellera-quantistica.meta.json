@@ -1,11 +1,11 @@
 {
-  "subtitle": "Il meccanismo di incapsulamento delle chiavi resistente al quantum selezionato dal NIST",
-  "date": "November 19, 2023",
-  "description": "Come CRYSTALS-Kyber, il meccanismo di incapsulamento delle chiavi resistente al quantum selezionato dal NIST, sta ridisegnando la crittografia per l'era quantistica.",
   "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
-  "banner_alt": "Un computer quantistico moderno ed elegante",
-  "language": "it-IT",
   "locale": "it_IT",
+  "title": "CRYSTALS-Kyber: l'algoritmo di protezione nell'era quantistica",
+  "language": "it-IT",
   "keywords": "CRYSTALS-Kyber, NIST, PQC, post-quantistica, KEM, incapsulamento chiavi, crittografia, FIPS 203",
-  "title": "CRYSTALS-Kyber: l'algoritmo di protezione nell'era quantistica"
+  "subtitle": "Il meccanismo di incapsulamento delle chiavi resistente al quantum selezionato dal NIST",
+  "banner_alt": "Un computer quantistico moderno ed elegante",
+  "date": "November 19, 2023",
+  "description": "Come CRYSTALS-Kyber, il meccanismo di incapsulamento delle chiavi resistente al quantum selezionato dal NIST, sta ridisegnando la crittografia per l'era quantistica."
 }

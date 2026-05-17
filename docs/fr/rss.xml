@@ -6,26 +6,51 @@
     <description>Articles en français : IA appliquée, paiements ISO 20022, cryptographie post-quantique et transformation des paiements wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/fr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fr-FR</language>
-    <lastBuildDate>Sun, 17 May 2026 01:03:50 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2026 02:52:16 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tous droits réservés.</copyright>
     <item>
-      <title>La meilleure architecture d&apos;infrastructure cloud en 2026 : un blueprint AI-native, multi-cloud et quantum-aware pour les services financiers</title>
+      <title>La meilleure architecture d&apos;infrastructure cloud en 2026 : un blueprint AI-native, multi-cloud et préparé au quantique pour les services financiers</title>
       <link>https://sebastienrousseau.com/fr/2026-05-21-meilleure-architecture-cloud-pour-les-banques-2026/</link>
-      <description>L&apos;architecture cloud en 2026 s&apos;est cristallisée autour de six piliers : infrastructure AI-native, multi-cloud intelligent, conception serverless-first avec WebAssembly en périphérie, edge computing, DevSecOps automatisé avec crypto-agilité, et opérations durables à haute densité. Pour les banques, la question n&apos;est plus de consommer le cloud mais de le concevoir — sous pression convergente de l&apos;agentic commerce, des unit economics agentiques, du risque quantique harvest-now-decrypt-later, de la sécurité MCP et de la contagion algorithmique, de l&apos;identité cryptographique des agents, des exigences de continuous treasury et du Règlement européen sur l&apos;IA.</description>
+      <description>L&apos;architecture cloud en 2026 s&apos;est cristallisée autour de six piliers : infrastructure AI-native, multi-cloud intelligent, conception serverless-first avec WebAssembly en périphérie, edge computing, sécurité automatisée avec crypto-agilité, et opérations durables à haute densité. Pour les banques, la question est de savoir s&apos;il faut consommer le cloud ou le concevoir — sous pression convergente de l&apos;agentic commerce, des unit economics agentiques, du risque quantique harvest-now-decrypt-later, de la sécurité MCP et de la contagion algorithmique, de l&apos;identité cryptographique des agents, des exigences de continuous treasury, et du Règlement européen sur l&apos;IA.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-21-meilleure-architecture-cloud-pour-les-banques-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>architecture cloud 2026</category>
       <category>infrastructure AI-native</category>
       <category>multi-cloud</category>
+      <category>cloud souverain</category>
+      <category>US CLOUD Act</category>
+      <category>Bleu</category>
+      <category>S3NS</category>
+      <category>AWS European Sovereign Cloud</category>
+      <category>IA souveraine</category>
+      <category>modèles à poids ouverts</category>
+      <category>Llama 4</category>
+      <category>Mistral</category>
+      <category>confidential computing</category>
       <category>serverless</category>
       <category>edge computing</category>
       <category>WebAssembly</category>
       <category>Wasm</category>
+      <category>eBPF</category>
+      <category>Cilium</category>
+      <category>Tetragon</category>
+      <category>edge satellitaire LEO</category>
+      <category>Starlink Enterprise</category>
       <category>DevSecOps</category>
       <category>datacentre durable</category>
+      <category>computing grid-aware</category>
       <category>refroidissement liquide</category>
+      <category>Small Modular Reactor</category>
+      <category>SMR</category>
+      <category>énergie nucléaire</category>
+      <category>Three Mile Island</category>
+      <category>Kairos Power</category>
+      <category>X-Energy</category>
+      <category>photonique sur silicium</category>
+      <category>optique co-packagée</category>
+      <category>NVIDIA Spectrum-X</category>
       <category>AWS Bedrock</category>
       <category>Google Vertex AI</category>
       <category>Azure OpenAI Service</category>
@@ -37,6 +62,13 @@
       <category>SPIFFE</category>
       <category>SPIRE</category>
       <category>contagion algorithmique</category>
+      <category>RAG poisoning</category>
+      <category>sécurité des bases vectorielles</category>
+      <category>provenance des données</category>
+      <category>Pinecone</category>
+      <category>Qdrant</category>
+      <category>Weaviate</category>
+      <category>Milvus</category>
       <category>chaos engineering agentique</category>
       <category>gravité des données</category>
       <category>FinOps egress</category>
@@ -45,8 +77,13 @@
       <category>continuous treasury</category>
       <category>liquidité sans frontières</category>
       <category>paiements temps réel</category>
+      <category>CBDC</category>
+      <category>eCNY</category>
+      <category>DREX</category>
+      <category>e-Rupee</category>
+      <category>BIS Project Agora</category>
+      <category>euro numérique</category>
       <category>génération de données synthétiques</category>
-      <category>confidential computing</category>
       <category>JPMorgan multi-cloud</category>
       <category>modernisation Citi</category>
       <category>graph neural networks</category>
@@ -54,7 +91,14 @@
       <category>harvest now decrypt later</category>
       <category>HNDL</category>
       <category>cryptographie post-quantique</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
       <category>crypto-agilité</category>
+      <category>distribution quantique de clés</category>
+      <category>QKD</category>
+      <category>Bâle IV</category>
+      <category>risque de concentration cloud</category>
+      <category>RWA risque opérationnel</category>
       <category>sécurité MCP</category>
       <category>prompt injection</category>
       <category>attaques chaîne d&apos;approvisionnement</category>

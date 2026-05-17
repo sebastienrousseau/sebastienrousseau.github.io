@@ -6,54 +6,99 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Sun, 17 May 2026 01:03:51 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2026 02:52:16 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
     <item>
-      <title>2026년 최적의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티 클라우드, 양자 인식 설계도</title>
+      <title>2026년 최선의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티클라우드, 양자 인식 청사진</title>
       <link>https://sebastienrousseau.com/ko/2026-05-21-2026-choeseon-keulaeudeu-infra-akitekcheo/</link>
-      <description>2026년 클라우드 아키텍처는 6개의 기둥으로 결정화되었습니다 — AI 네이티브 인프라, 인텔리전트 멀티 클라우드, 서버리스 우선, 엣지, 자동화 보안과 암호 민첩성, 그리고 지속 가능한 고밀도 운영. 은행에게 질문은 클라우드를 소비할 것인지 설계할 것인지입니다.</description>
+      <description>2026년 클라우드 아키텍처는 여섯 가지 기둥을 중심으로 결정화되었습니다: AI 네이티브 인프라, 지능형 멀티클라우드, 엣지에서의 WebAssembly를 활용한 서버리스 우선 설계, 엣지 컴퓨팅, 암호 민첩성을 갖춘 자동화된 보안, 그리고 지속 가능한 고밀도 운영. 은행에게 질문은 클라우드를 소비할 것인가 설계할 것인가입니다 — 에이전트 상거래, 에이전트 단위 경제학, 지금-수확-나중-해독 양자 위험, MCP 보안과 알고리즘 전염, 암호학적 에이전트 신원, 연속 트레저리 요구사항, 그리고 EU AI Act의 수렴하는 압력 아래에서 말입니다.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-21-2026-choeseon-keulaeudeu-infra-akitekcheo/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
-      <category>클라우드 아키텍처 2026</category>
+      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
+      <category>2026 클라우드 아키텍처</category>
       <category>AI 네이티브 인프라</category>
-      <category>멀티 클라우드</category>
+      <category>멀티클라우드</category>
+      <category>소버린 클라우드</category>
+      <category>US CLOUD Act</category>
+      <category>Bleu</category>
+      <category>S3NS</category>
+      <category>AWS European Sovereign Cloud</category>
+      <category>소버린 AI</category>
+      <category>오픈 가중치 모델</category>
+      <category>Llama 4</category>
+      <category>Mistral</category>
+      <category>컨피덴셜 컴퓨팅</category>
       <category>서버리스</category>
       <category>엣지 컴퓨팅</category>
       <category>WebAssembly</category>
       <category>Wasm</category>
+      <category>eBPF</category>
+      <category>Cilium</category>
+      <category>Tetragon</category>
+      <category>LEO 위성 엣지</category>
+      <category>Starlink Enterprise</category>
       <category>DevSecOps</category>
-      <category>지속 가능 데이터 센터</category>
+      <category>지속 가능한 데이터센터</category>
+      <category>그리드 인식 컴퓨팅</category>
       <category>액체 냉각</category>
+      <category>소형 모듈식 원자로</category>
+      <category>SMR</category>
+      <category>원자력</category>
+      <category>Three Mile Island</category>
+      <category>Kairos Power</category>
+      <category>X-Energy</category>
+      <category>실리콘 포토닉스</category>
+      <category>공동 패키지 광학</category>
+      <category>NVIDIA Spectrum-X</category>
       <category>AWS Bedrock</category>
       <category>Google Vertex AI</category>
       <category>Azure OpenAI Service</category>
-      <category>에이전트형 상거래</category>
-      <category>다중 에이전트 떼</category>
-      <category>에이전트형 단위 경제</category>
+      <category>에이전트 상거래</category>
+      <category>다중 에이전트 스웜</category>
+      <category>에이전트 단위 경제학</category>
       <category>에이전트 FinOps</category>
-      <category>암호적 에이전트 신원</category>
+      <category>암호학적 에이전트 신원</category>
       <category>SPIFFE</category>
       <category>SPIRE</category>
       <category>알고리즘 전염</category>
+      <category>RAG 포이즈닝</category>
+      <category>벡터 데이터베이스 보안</category>
+      <category>데이터 출처</category>
+      <category>Pinecone</category>
+      <category>Qdrant</category>
+      <category>Weaviate</category>
+      <category>Milvus</category>
+      <category>에이전트 카오스 엔지니어링</category>
       <category>데이터 중력</category>
-      <category>FinOps egress</category>
+      <category>이그레스 FinOps</category>
       <category>HPC</category>
       <category>GPU 스토리지</category>
       <category>연속 트레저리</category>
       <category>국경 없는 유동성</category>
       <category>실시간 결제</category>
+      <category>CBDC</category>
+      <category>eCNY</category>
+      <category>DREX</category>
+      <category>e-Rupee</category>
+      <category>BIS Project Agora</category>
+      <category>디지털 유로</category>
       <category>합성 데이터 생성</category>
-      <category>기밀 컴퓨팅</category>
-      <category>JPMorgan 멀티 클라우드</category>
+      <category>JPMorgan 멀티클라우드</category>
       <category>Citi 현대화</category>
       <category>그래프 신경망</category>
       <category>딥페이크 사기</category>
-      <category>harvest now decrypt later</category>
+      <category>지금 수확 나중 해독</category>
       <category>HNDL</category>
-      <category>포스트 양자 암호</category>
+      <category>포스트양자 암호</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
       <category>암호 민첩성</category>
+      <category>양자 키 분배</category>
+      <category>QKD</category>
+      <category>Basel IV</category>
+      <category>클라우드 집중 위험</category>
+      <category>운영 위험 RWA</category>
       <category>MCP 보안</category>
       <category>프롬프트 주입</category>
       <category>공급망 공격</category>

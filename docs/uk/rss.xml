@@ -6,58 +6,57 @@
     <description>Статті українською: прикладний ШІ, платежі ISO 20022, постквантова криптографія та трансформація оптових платежів.</description>
     <atom:link href="https://sebastienrousseau.com/uk/rss.xml" rel="self" type="application/rss+xml"/>
     <language>uk-UA</language>
-    <lastBuildDate>Sun, 17 May 2026 01:03:51 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2026 02:52:16 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Усі права захищено.</copyright>
     <item>
-      <title>[UK DRAFT] The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</title>
+      <title>Найкраща хмарна інфраструктурна архітектура у 2026 році: AI-нативний, мультихмарний, квантово-обізнаний план для фінансових послуг</title>
       <link>https://sebastienrousseau.com/uk/2026-05-21-naikrashcha-khmarna-arkhitektura-dlya-bankiv-2026/</link>
-      <description>Cloud architecture in 2026 has crystallised around six pillars: AI-native infrastructure, intelligent multi-cloud, serverless-first design with WebAssembly at the edge, edge computing, automated security with crypto-agility, and sustainable high-density operations. For banks, the question is whether to consume cloud or design it — under converging pressure from agentic commerce, agentic unit economics, harvest-now-decrypt-later quantum risk, MCP security and algorithmic contagion, cryptographic agent identity, continuous-treasury demands, and the EU AI Act.</description>
+      <description>Хмарна архітектура у 2026 році викристалізувалася навколо шести стовпів: AI-нативна інфраструктура, інтелектуальна мультихмара, безсерверний дизайн із WebAssembly на краю, периферійні обчислення, автоматизована безпека з криптоагільністю та сталі операції високої щільності. Для банків питання полягає у тому, споживати хмару чи проєктувати її — під поєднаним тиском агентної комерції, агентної одиничної економіки, квантового ризику «збирай зараз — розшифровуй потім», безпеки MCP, алгоритмічного зараження, криптографічної ідентичності агентів, вимог безперервного казначейства та EU AI Act.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-21-naikrashcha-khmarna-arkhitektura-dlya-bankiv-2026/</guid>
       <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
-      <category>cloud architecture 2026</category>
-      <category>AI-native infrastructure</category>
-      <category>multi-cloud</category>
-      <category>serverless</category>
-      <category>edge computing</category>
+      <category>хмарна архітектура 2026</category>
+      <category>AI-нативна інфраструктура</category>
+      <category>мультихмара</category>
+      <category>суверенна хмара</category>
+      <category>безсерверні обчислення</category>
       <category>WebAssembly</category>
       <category>Wasm</category>
       <category>DevSecOps</category>
-      <category>sustainable data centre</category>
-      <category>liquid cooling</category>
+      <category>стала ЦОД</category>
+      <category>рідинне охолодження</category>
       <category>AWS Bedrock</category>
       <category>Google Vertex AI</category>
       <category>Azure OpenAI Service</category>
-      <category>agentic commerce</category>
-      <category>multi-agent swarms</category>
-      <category>agentic unit economics</category>
-      <category>agent FinOps</category>
-      <category>cryptographic agent identity</category>
+      <category>агентна комерція</category>
+      <category>мультиагентні рої</category>
+      <category>агентна одинична економіка</category>
+      <category>агентний FinOps</category>
+      <category>криптографічна ідентичність агентів</category>
       <category>SPIFFE</category>
       <category>SPIRE</category>
-      <category>algorithmic contagion</category>
-      <category>agentic chaos engineering</category>
-      <category>data gravity</category>
-      <category>egress FinOps</category>
+      <category>алгоритмічне зараження</category>
+      <category>агентний хаос-інжиніринг</category>
+      <category>гравітація даних</category>
+      <category>FinOps трафіку</category>
       <category>HPC</category>
-      <category>GPU storage</category>
-      <category>continuous treasury</category>
-      <category>borderless liquidity</category>
-      <category>real-time payments</category>
-      <category>synthetic data generation</category>
-      <category>confidential computing</category>
-      <category>JPMorgan multi-cloud</category>
-      <category>Citi modernisation</category>
-      <category>graph neural networks</category>
-      <category>deepfake fraud</category>
+      <category>GPU-сховище</category>
+      <category>безперервне казначейство</category>
+      <category>безмежна ліквідність</category>
+      <category>синтетична генерація даних</category>
+      <category>конфіденційні обчислення</category>
+      <category>JPMorgan</category>
+      <category>Citi</category>
+      <category>графові нейронні мережі</category>
+      <category>дипфейк-шахрайство</category>
       <category>harvest now decrypt later</category>
       <category>HNDL</category>
-      <category>post-quantum cryptography</category>
-      <category>crypto-agility</category>
-      <category>MCP security</category>
+      <category>постквантова криптографія</category>
+      <category>криптоагільність</category>
+      <category>безпека MCP</category>
       <category>prompt injection</category>
-      <category>supply chain attacks</category>
+      <category>атаки на ланцюг постачання</category>
       <category>CloudCDN</category>
       <category>Cloudflare Workers</category>
       <category>Durable Objects</category>
