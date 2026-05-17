@@ -428,68 +428,49 @@ document.addEventListener("click", function (event) {
 })();
 
 /**
- * Formspree AJAX submit — keeps users on-site by POSTing with
- * `Accept: application/json` so formspree returns JSON instead of
- * redirecting to its reCAPTCHA interstitial (which fails for visitors
- * running tracker-blocking extensions). Falls back transparently to
- * the native form POST if anything throws — the form's `action`
- * attribute stays correct and JS-disabled visitors lose nothing.
- *
- * Covers every form whose action points at formspree.io (newsletter
- * widget in every page footer plus the contact page's full form).
+ * Pre-fill the contact form from URL query parameters. The footer
+ * newsletter widget submits as GET to /contact/?email=…&subject=newsletter
+ * &message=…, so on arrival we pull those values into the matching
+ * form fields and focus the Name field (the only one not pre-filled).
+ * The contact form's own reCAPTCHA flow then takes over from there —
+ * no AJAX shenanigans, no formspree interstitial, no tracker-blocker
+ * conflicts. Acts only on the contact page (or any page hosting the
+ * full ap-form contact form); silently no-ops elsewhere.
  */
-(function formspreeAjax() {
+(function contactPrefill() {
     "use strict";
-    var forms = document.querySelectorAll('form[action^="https://formspree.io/"]');
-    if (!forms.length) return;
-    forms.forEach(function (form) {
-        form.addEventListener("submit", function (e) {
-            var submit = form.querySelector('[type="submit"]');
-            var data = new FormData(form);
-            e.preventDefault();
-            if (submit) {
-                submit.disabled = true;
-                submit.dataset.originalText = submit.textContent;
-                submit.textContent = "Sending…";
-            }
-            fetch(form.action, {
-                method: "POST",
-                body: data,
-                headers: { Accept: "application/json" },
-            })
-                .then(function (res) {
-                    if (res.ok) {
-                        var done = document.createElement("p");
-                        done.className = "ap-newsletter-thanks";
-                        done.setAttribute("role", "status");
-                        done.textContent = "Thanks — you're subscribed.";
-                        form.replaceWith(done);
-                        return;
-                    }
-                    return res.json().then(function (body) {
-                        var msg = (body && body.errors && body.errors[0] && body.errors[0].message)
-                            || "Submission failed. Please try again.";
-                        throw new Error(msg);
-                    });
-                })
-                .catch(function (err) {
-                    if (submit) {
-                        submit.disabled = false;
-                        submit.textContent = submit.dataset.originalText || "Subscribe";
-                    }
-                    var existing = form.querySelector(".ap-form-error");
-                    if (existing) existing.remove();
-                    var note = document.createElement("p");
-                    note.className = "ap-form-error";
-                    note.setAttribute("role", "alert");
-                    note.style.color = "var(--danger,#c00)";
-                    note.style.marginTop = "8px";
-                    note.style.fontSize = "13px";
-                    note.textContent = String(err && err.message ? err.message : err);
-                    form.appendChild(note);
-                });
-        });
-    });
+    var form = document.querySelector("form.ap-form");
+    if (!form) return;
+    var params = new URLSearchParams(window.location.search);
+    var email = params.get("email");
+    var subject = params.get("subject");
+    var message = params.get("message");
+    if (!email && !subject && !message) return;
+    if (email) {
+        var emailEl = form.querySelector('input[name="email"]');
+        if (emailEl) emailEl.value = email;
+    }
+    if (subject) {
+        var subjectEl = form.querySelector('select[name="subject"]');
+        if (subjectEl) {
+            var match = Array.prototype.find.call(
+                subjectEl.options,
+                function (opt) { return opt.value === subject; }
+            );
+            if (match) subjectEl.value = subject;
+        }
+    }
+    if (message) {
+        var messageEl = form.querySelector('textarea[name="message"]');
+        if (messageEl && !messageEl.value) messageEl.value = message;
+    }
+    var nameEl = form.querySelector('input[name="name"]');
+    if (nameEl) nameEl.focus();
+    // Strip the query string from the address bar so a refresh doesn't
+    // re-prefill and the URL stays canonical.
+    if (history && typeof history.replaceState === "function") {
+        history.replaceState({}, "", window.location.pathname + window.location.hash);
+    }
 })();
 
 /**
