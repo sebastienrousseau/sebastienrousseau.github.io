@@ -58,15 +58,25 @@ jobs:
           git add _data/gh-stats.json
           git commit -m "chore(stats): refresh gh-stats.json [skip ci]"
           git push -f --set-upstream origin "$BR"
-          # Try to open a PR. This requires Settings → Actions → General →
-          # "Allow GitHub Actions to create and approve pull requests" to
-          # be enabled. If it's off, the branch is still pushed and the
-          # repo owner can open the PR manually — we don't want to fail
-          # the whole workflow over that.
+          # Try to open the PR + queue an auto-merge. Requires:
+          #   - Settings → Actions → General → "Allow GitHub Actions to
+          #     create and approve pull requests"
+          #   - Settings → General → "Allow auto-merge"
+          # If either is off, the branch is still pushed and the repo
+          # owner can finish the loop manually — we don't fail the whole
+          # workflow over that.
           if ! gh pr view "$BR" >/dev/null 2>&1; then
-            gh pr create \
-              --base main --head "$BR" \
-              --title "chore(stats): nightly gh-stats refresh" \
-              --body "Automated refresh of \`_data/gh-stats.json\` from GitHub API. Safe to auto-merge." \
-              || echo "::warning::PR creation blocked; branch ${BR} pushed for manual PR"
+            if gh pr create \
+                 --base main --head "$BR" \
+                 --title "chore(stats): nightly gh-stats refresh" \
+                 --body "Automated refresh of \`_data/gh-stats.json\` from GitHub API. Auto-merges + deletes branch once all checks pass." ; then
+              # Queue auto-merge — squash strategy + drop branch on merge.
+              # GitHub's auto-merge engine waits for required-status checks
+              # to go green before completing the squash, so the failsafe
+              # check-pass guarantee survives.
+              gh pr merge "$BR" --auto --squash --delete-branch \
+                || echo "::warning::auto-merge enqueue failed; PR will need a manual merge"
+            else
+              echo "::warning::PR creation blocked; branch ${BR} pushed for manual PR"
+            fi
           fi
