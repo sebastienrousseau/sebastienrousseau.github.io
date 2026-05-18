@@ -159,7 +159,19 @@ Key design choices:
 1. **No `unsafe-inline` for scripts.** Per-page inline JSON-LD blocks are allowed strictly by SHA-256 hash. `scripts/postbuild.py:inject_jsonld_hashes()` computes each block's hash at build time and folds it into the page's `script-src`. The CSP-strict CI gate ([`scripts/test_csp_strict.py`](../scripts/test_csp_strict.py)) fails the build if any inline JSON-LD lacks its hash.
 2. **`'inline-speculation-rules'` keyword** for the Speculation Rules block (which also carries its own hash as belt-and-braces).
 3. **`img-src` enumerates 4 origins** — no blanket `https:`. The CSP-strict gate fails on any reintroduction of `https:` as a bare allow.
-4. **`frame-ancestors 'none'`** is set via Cloudflare Transform Rules (meta CSP doesn't honour `frame-ancestors` per spec).
+4. **`frame-ancestors 'none'`** is set via the **Cloudflare Worker response header** (meta CSP doesn't honour `frame-ancestors` per spec).
+
+### Header CSP vs meta CSP: the dual-layer model
+
+The same CSP shape is set twice — once as a `<meta>` tag inside every page (with per-page sha256 hashes for inline JSON-LD), and once as an HTTP response header by `workers/lang-router.js` (without the per-page hashes — those can only live in meta). Browsers enforce the **intersection**, so:
+
+- The meta tag's per-page sha256 still narrows `script-src` to the exact inline JSON-LD on that page.
+- The Worker header carries the directives that only work at the response layer: `frame-ancestors 'none'`, 2-year HSTS with preload, `Permissions-Policy`, `Cross-Origin-Opener-Policy`, `Referrer-Policy`, `X-Content-Type-Options`.
+- A formerly-needed Cloudflare Transform Rule that injected a competing loose CSP has been retired — the Worker is now the single source of truth.
+
+### WASM-labs CSP carve-out
+
+`/labs/<crate>/` pages add **`'wasm-unsafe-eval'`** to `script-src` in their own per-page meta CSP. This permits `WebAssembly.instantiate()` while keeping arbitrary JS-eval disallowed. Crucially `'wasm-unsafe-eval'` is a **different token** from `'unsafe-eval'` — the strict-shape gate tokenises and exact-matches, so it's accepted without weakening the global rule. No inline scripts, no third-party network: lab pages run under one of the tightest CSPs on the entire site.
 
 ---
 
@@ -179,20 +191,23 @@ Static Site Generator emits a placeholder `integrity="sha256-<short-hex>"`; `scr
 
 ## Security headers
 
-Headers that have to be set on the HTTP response (not via `<meta>`). Configured via Cloudflare Transform Rules — see [`DEPLOY.md`](../DEPLOY.md) for the canonical record.
+Headers that have to be set on the HTTP response (not via `<meta>`). All emitted by `workers/lang-router.js`'s `SECURITY_HEADERS` constant — single source of truth in-repo, verified by `workers/test_lang_router.mjs` under Node's built-in coverage at 100% line / branch / function:
 
 | Header | Value |
 |---|---|
 | `Strict-Transport-Security` | `max-age=63072000; includeSubDomains; preload` |
 | `Cross-Origin-Opener-Policy` | `same-origin` |
-| `Cross-Origin-Resource-Policy` | `same-origin` |
-| `X-Frame-Options` | `DENY` |
-| `Origin-Agent-Cluster` | `?1` |
+| `X-Content-Type-Options` | `nosniff` |
+| `Referrer-Policy` | `strict-origin-when-cross-origin` |
+| `Permissions-Policy` | `browsing-topics=(), interest-cohort=(), camera=(), microphone=(), geolocation=()` |
+| `Content-Security-Policy` | full strict CSP — see previous section |
+
+`frame-ancestors 'none'` is the modern replacement for `X-Frame-Options: DENY` — set inside the Worker's `Content-Security-Policy` header. The XFO Transform Rule that previously did this job has been retired.
 
 Notes:
 
 - **`Cross-Origin-Embedder-Policy`** is deliberately *not* set — would break the Spotify iframes on `/playlists/`. If the playlists are ever dropped, COEP can be enabled (`credentialless` mode).
-- `X-Content-Type-Options: nosniff` and `Referrer-Policy: strict-origin-when-cross-origin` are already shipped via `<meta>` in the HTML and don't need a Transform Rule.
+- The Worker overwrites any pre-existing response header (including any leftover from a Cloudflare Transform Rule) — the dashboard layer no longer needs a CSP / security-header rule.
 
 Validation runs via Mozilla Observatory + securityheaders.com — target A+ on both:
 

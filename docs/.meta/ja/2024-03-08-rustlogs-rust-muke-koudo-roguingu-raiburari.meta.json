@@ -1,12 +1,12 @@
 {
   "last_reviewed": "2026-05-11",
-  "subtitle": "本番グレードのアプリケーションのための包括的なロギングソリューション",
-  "banner": "https://cloudcdn.pro/stocks/images/luca-bravo-XJXWbfSo2f0-unsplash.webp",
-  "title": "RustLogs:Rust 向け高度ロギングライブラリ",
-  "keywords": "RustLogs, Rust, ロギング, 構造化ログ, JSON, トレーシング, 観測可能性, 本番",
-  "date": "March 8, 2024",
   "locale": "ja_JP",
-  "description": "RustLogs は、本番グレードの Rust アプリケーションのための包括的な構造化ロギングライブラリです。",
+  "banner_alt": "コードを示すラップトップ",
+  "date": "March 8, 2024",
+  "title": "RustLogs:Rust 向け高度ロギングライブラリ",
   "language": "ja-JP",
-  "banner_alt": "コードを示すラップトップ"
+  "keywords": "RustLogs, Rust, ロギング, 構造化ログ, JSON, トレーシング, 観測可能性, 本番",
+  "description": "RustLogs は、本番グレードの Rust アプリケーションのための包括的な構造化ロギングライブラリです。",
+  "banner": "https://cloudcdn.pro/stocks/images/luca-bravo-XJXWbfSo2f0-unsplash.webp",
+  "subtitle": "本番グレードのアプリケーションのための包括的なロギングソリューション"
 }

@@ -19,7 +19,7 @@
 
 <p align="center">
  <a href="#quick-start"><img src="https://img.shields.io/badge/languages-28-blue?style=flat-square" alt="28 languages" /></a>
- <a href="#capabilities-shipped"><img src="https://img.shields.io/badge/pages-1849-blue?style=flat-square" alt="1849 pages" /></a>
+ <a href="#capabilities-shipped"><img src="https://img.shields.io/badge/pages-1850-blue?style=flat-square" alt="1850 pages" /></a>
  <a href="#security-posture"><img src="https://img.shields.io/badge/CSP-strict-success?style=flat-square" alt="Strict CSP" /></a>
  <a href="#security-posture"><img src="https://img.shields.io/badge/TLS-X25519MLKEM768-success?style=flat-square" alt="PQC TLS" /></a>
  <a href="#ci-gates"><img src="https://img.shields.io/badge/WCAG-2.2%20AAA-success?style=flat-square" alt="WCAG 2.2 AAA" /></a>
@@ -51,7 +51,8 @@
 **Security**
 
 - [Security posture](#security-posture) — CSP, PQC TLS, SRI, SBOM, signed commits
-- [Edge routing Worker](#edge-routing-worker) — sub-50ms `Accept-Language` redirect
+- [Edge routing Worker](#edge-routing-worker) — explicit cookie / `?lang=` routing + edge security headers
+- [WASM labs](#wasm-labs) — Rust→WebAssembly demos under `/labs/<crate>/`, strict-CSP isolated
 - [Threat model](#threat-model) — Mermaid attack-surface diagram
 
 **Reference**
@@ -90,7 +91,7 @@ pip install -r requirements.txt # Python pipeline (markdown-it-py, …)
 ./build.sh --serve # build + serve on http://127.0.0.1:8000
 ```
 
-A clean build finishes in ~12 seconds on a modern laptop and emits **1849 HTML pages** across **28 languages** with **0 CI failures**.
+A clean build finishes in ~12 seconds on a modern laptop and emits **1850 HTML pages** across **28 languages** with **0 CI failures**.
 
 | Tool | Version | Why |
 |---|---|---|
@@ -120,10 +121,14 @@ sebastienrousseau.github.io/
 │ ├── postbuild_lib/ # 6 modules — schemas, seo, output, …
 │ └── test_*.py # 13 in-repo CI gates
 ├── tests/ # 359 pytest unit tests, 100% coverage on postbuild_lib
-├── workers/ # Cloudflare Worker (Accept-Language edge router)
+├── workers/ # Cloudflare Worker — locale routing + edge security headers
+│ ├── lang-router.js # the Worker (cookie + ?lang only; no A-L sniff)
+│ └── test_lang_router.mjs # 43 tests, 100% line/branch/func coverage
+├── _wasm-demos/ # Rust → WASM lab demos served under /labs/<crate>/
+│ └── hsh-demo/ # SHA-256 / BLAKE3 / Argon2id in-browser, 94 KB bundle
 ├── .well-known/ # AI plugin manifest, OpenAPI schema, OpenPGP WKD
 ├── .github/workflows/ # 6 CI workflows
-├── public/ # Canonical build output — 1849 HTML pages
+├── public/ # Canonical build output — 1850 HTML pages
 └── docs/ # GitHub Pages root (rsync mirror of public/)
 ```
 
@@ -156,14 +161,14 @@ flowchart TB
  G2["ruff + radon"]
  G3["i18n parity ×7"]
  G4["JSON-LD validate"]
- G5["pa11y AAA ×1849"]
+ G5["pa11y AAA ×1850"]
  G6["Lighthouse CI"]
  G7["CSP strict-shape"]
  G8["EN-leakage absence"]
  end
 
  subgraph OUT["Output"]
- P["public/<br/><i>1849 pages</i>"]
+ P["public/<br/><i>1850 pages</i>"]
  DC["docs/<br/><i>GH Pages root</i>"]
  CF["Cloudflare CDN<br/><i>PQC TLS edge</i>"]
  end
@@ -231,7 +236,7 @@ scripts/_lang_registry.py # Single source of truth for the 28-language matrix
 ## Outputs
 
 ```
-public/ # canonical build output — 1849 HTML pages
+public/ # canonical build output — 1850 HTML pages
 docs/ # GitHub Pages root (rsync mirror of public/)
 public/sitemap.xml # 108k entries across 28 languages
 public/llms.txt # AI-crawler index
@@ -412,33 +417,64 @@ Full deployment notes including the Cloudflare configuration and verification co
 
 ## Edge routing Worker
 
-`workers/lang-router.js` is a Cloudflare Worker that redirects visitors hitting the bare root to their preferred locale subtree — sub-50ms at the edge, no origin fetch.
+`workers/lang-router.js` is a Cloudflare Worker that does two jobs on every request at the apex: explicit-only locale routing (cookie or `?lang=` query — Accept-Language is *not* sniffed) and the full strict-CSP / security-header layer (HSTS, COOP, Permissions-Policy, Referrer-Policy, X-Content-Type-Options, frame-ancestors).
 
 ```mermaid
 %%{init: {'theme':'neutral'} }%%
 flowchart TD
- REQ[/"GET /"/] --> COOKIE{"pref-lang<br/>cookie set?"}
- COOKIE -->|yes| LANG_OK{"value is<br/>active lang?"}
- LANG_OK -->|yes| R1["302 → /lang/"]
- LANG_OK -->|no| PASS["Pass through<br/>(EN tree)"]
+ REQ[/"GET /"/] --> ASSET{"Page<br/>navigation?"}
+ ASSET -->|no, asset| PASS["Pass through<br/>+ security headers"]
+ ASSET -->|yes| COOKIE{"pref-lang<br/>cookie set?"}
+ COOKIE -->|yes, EN| PASS
+ COOKIE -->|yes, active| R1["302 → /lang/<br/>+ security headers"]
  COOKIE -->|no| QP{"?lang=xx<br/>in URL?"}
  QP -->|yes, EN| PASS
- QP -->|yes, active| R2["302 → /lang/<br/>+ set cookie"]
- QP -->|no| AL{"Accept-Language<br/>top-q is EN?"}
- AL -->|yes| PASS
- AL -->|no| MAP{"map to<br/>site lang?"}
- MAP -->|hit| R3["302 → /lang/"]
- MAP -->|miss| PASS
+ QP -->|yes, active| R2["302 → /lang/<br/>+ Set-Cookie<br/>+ security headers"]
+ QP -->|no| PASS
 ```
 
 Decision priorities, from highest to lowest:
 
 1. **Explicit cookie** — `pref-lang=fr` from a prior visit; sticky for 30 days.
 2. **URL override** — `?lang=fr` deep-link (also sets the cookie).
-3. **Accept-Language sniff** — top q-valued tag maps via `TAG_TO_LANG` to one of the 28 actives.
-4. **Fall through** — unsupported tags / EN-first visitors get the EN tree.
+3. **Fall through** — every other visitor (including bilingual readers with French-system browsers) lands on the canonical EN site. Accept-Language sniffing was removed deliberately: too many readers got bounced off the canonical copy they actually wanted.
 
-`zh-CN`, `zh-SG` → `zh-hans`. `zh-TW`, `zh-HK`, `zh-MO` → `zh-hant`. `pt-PT` and `pt-BR` both → `pt-br`. `tl-PH` → `fil`. The Worker is pure-logic — no fetches, no KV. Tests at [`workers/test_lang_router.mjs`](workers/test_lang_router.mjs), wired into `build.sh`.
+Every response — redirect or origin pass-through — carries the same security-header set: strict CSP with `form-action 'self' https://formspree.io`, `frame-ancestors 'none'`, 2-year HSTS with preload, `Permissions-Policy` locking down browsing-topics / interest-cohort / camera / mic / geolocation, `Cross-Origin-Opener-Policy: same-origin`, `Referrer-Policy: strict-origin-when-cross-origin`, `X-Content-Type-Options: nosniff`.
+
+The Worker is pure-logic — no fetches beyond the origin pass-through, no KV. Tests at [`workers/test_lang_router.mjs`](workers/test_lang_router.mjs) cover every branch under Node's built-in coverage with **100% line / branch / function** thresholds enforced by `build.sh`.
+
+---
+
+## WASM labs
+
+Each subdirectory of `_wasm-demos/` is a Rust crate that compiles to WebAssembly via `wasm-pack` and ships an interactive companion page under `/labs/<crate>/`. The first one (`hsh-demo`) wraps `sha2` + `blake3` + `argon2` and computes SHA-256, BLAKE3 and Argon2id entirely client-side from a 94 KB bundle — no server round-trip, no third-party JavaScript, no network beyond the same-origin WASM fetch.
+
+```mermaid
+%%{init: {'theme':'neutral'} }%%
+flowchart LR
+ subgraph SRC["Source"]
+ RUST["_wasm-demos/<crate>/<br/>Cargo.toml + src/lib.rs<br/>(wasm-bindgen)"]
+ WEB["_wasm-demos/<crate>/web/<br/>index.html, demo.js, demo.css"]
+ end
+
+ subgraph BUILD["build.sh + CI"]
+ WP["wasm-pack build<br/>--target web --release"]
+ STAGE["copy pkg + web shell to<br/>public/labs/<crate>/"]
+ end
+
+ subgraph SERVE["Served by Cloudflare"]
+ LAB["/labs/<crate>/<br/>script-src 'self' 'wasm-unsafe-eval'"]
+ end
+
+ RUST --> WP
+ WEB --> STAGE
+ WP --> STAGE
+ STAGE --> LAB
+```
+
+**CSP discipline:** `'wasm-unsafe-eval'` is the only loosening — it's a distinct token from `'unsafe-eval'`, so the strict-shape CSP gate ([`scripts/test_csp_strict.py`](scripts/test_csp_strict.py)) passes unchanged. Lab pages are `noindex,nofollow` and excluded from the sitemap-completeness gate.
+
+**Reusing the pattern:** drop a new crate at `_wasm-demos/<name>/` with the `Cargo.toml`, `src/lib.rs` (wasm-bindgen exports), and a `web/{index.html, demo.js, demo.css}` shell; the next build publishes `/labs/<name>/` automatically. See [`_wasm-demos/README.md`](_wasm-demos/README.md) for the copy-paste recipe.
 
 ---
 
@@ -461,7 +497,7 @@ graph TB
  end
 
  subgraph ORIG["GitHub Pages origin"]
- H["docs/ (static HTML)<br/><i>1849 pages</i>"]
+ H["docs/ (static HTML)<br/><i>1850 pages</i>"]
  SBOM["sbom.cdx.json"]
  WKD["openpgpkey/<br/>(WKD)"]
  end
@@ -507,10 +543,11 @@ What's in production today (≠ what's on the roadmap):
 | **Discovery** | sitemap.xml (108k entries), per-language news-sitemap + RSS + Atom + JSON-Feed, `robots.txt` (20+ AI bots listed explicitly), `llms.txt` + `llms-full.txt`. |
 | **AI / agent surface** | `/api/agents/{posts,topics,person,index}.json` + `.well-known/ai-plugin.json` + `.well-known/openapi.json` (OpenAPI 3.1). |
 | **Performance** | Speculation Rules API (hover-prerender), 11750+ images with explicit width/height, hero `fetchpriority=high`, system fonts only, ~5 KB JS. Lighthouse 100/100/100/100 across all categories on article pages. |
-| **Accessibility** | WCAG 2.2 AAA — 0 pa11y violations across 1849 pages, all interactive targets ≥24×24 (WCAG 2.5.5), focus-visible rings, `prefers-reduced-motion` honored, full keyboard nav. |
+| **Accessibility** | WCAG 2.2 AAA — 0 pa11y violations across 1850 pages, all interactive targets ≥24×24 (WCAG 2.5.5), focus-visible rings, `prefers-reduced-motion` honored, full keyboard nav. |
 | **SEO / GEO** | `Person` / `Article` / `BlogPosting` / `TechArticle` / `SoftwareSourceCode` / `FAQPage` / `HowTo` / `BreadcrumbList` / `ItemList` / `ProfilePage` JSON-LD. Complete OG/Twitter metadata, hreflang reciprocity, BCP-47 regional tags. |
 | **Build provenance** | CycloneDX SBOM published at `/sbom.cdx.json`, real SRI on every asset, signed commits, 14 CI gates on every push. |
-| **Edge routing** | Cloudflare Worker auto-routes visitors to their preferred locale subtree based on `Accept-Language` — sub-50ms, no origin fetch. |
+| **Edge routing** | Cloudflare Worker honours `pref-lang` cookie + `?lang=` deep-links for locale routing (opt-in only — no Accept-Language sniffing) and owns the strict-CSP / security-header layer on every response. Sub-50ms, no origin fetch beyond pass-through. |
+| **WASM labs** | Rust crates compiled to WebAssembly via `wasm-pack`, served under `/labs/<crate>/` under a tight CSP (`script-src 'self' 'wasm-unsafe-eval'`). First demo: SHA-256 / BLAKE3 / Argon2id computed client-side from a 94 KB bundle. |
 
 ---
 
@@ -520,17 +557,17 @@ Every page emits structured data. The site uses these `@type`s:
 
 | Type | Where | Count (typical clean build) |
 |---|---|---|
-| `Person` | Every page (Sebastien Rousseau) | 1849 |
+| `Person` | Every page (Sebastien Rousseau) | 1850 |
 | `BlogPosting` | Dated articles | 1232 |
 | `TechArticle` | Dated articles whose keywords name a programming language or technical domain | 613 |
 | `SoftwareSourceCode` | `/projects/` cards (26 items, in an ItemList wrapper) | 26 |
 | `HowTo` | Step-by-step articles (pain001, pacs.008, …) | 16 |
 | `ItemList` | `/articles/`, `/papers/`, `/projects/` listings | 3 |
-| `BreadcrumbList` | Every page | 1849 |
+| `BreadcrumbList` | Every page | 1850 |
 | `FAQPage` | `/papers/`, `/projects/` | 2 |
 | `ProfilePage` | `/about/` | 1 |
-| `Organization` | `/about/` employer chain (HSBC, PayPal, Barclays, …) | 1849 |
-| `ProgramMembership` | `/about/` EPAA Working Group | 1849 |
+| `Organization` | `/about/` employer chain (HSBC, PayPal, Barclays, …) | 1850 |
+| `ProgramMembership` | `/about/` EPAA Working Group | 1850 |
 
 Every inline JSON-LD block is allowlisted in the page's CSP by its SHA-256 hash. The CI gate [`test_csp_strict.py`](scripts/test_csp_strict.py) fails the build if any JSON-LD block on any page lacks its hash in the policy. The schema validator at [`scripts/validate_jsonld.py`](scripts/validate_jsonld.py) fails on required-property gaps (e.g. `ListItem` missing `name`).
 
@@ -623,7 +660,7 @@ flowchart TB
         L1["ruff"] --> L2["radon"] --> L3["pytest + 100% coverage"]
         L3 --> L4["build.sh + 14 in-repo gates"]
         L4 --> L5["validate_jsonld"]
-        L5 --> L6["pa11y AAA — 1849 pages"]
+        L5 --> L6["pa11y AAA — 1850 pages"]
         L6 --> L7["Lighthouse CI nested"]
     end
     subgraph SD["schema-diff.yml"]
@@ -639,7 +676,7 @@ flowchart TB
 
 | Workflow | Triggers | Gates |
 |---|---|---|
-| [`ci.yml`](.github/workflows/ci.yml) (build-audit) | every push + PR | ruff, radon, pytest+coverage 100%, build, JSON-LD validate, pa11y AAA over 1849 pages, nested Lighthouse CI. |
+| [`ci.yml`](.github/workflows/ci.yml) (build-audit) | every push + PR | ruff, radon, pytest+coverage 100%, build, JSON-LD validate, pa11y AAA over 1850 pages, nested Lighthouse CI. |
 | [`lighthouse.yml`](.github/workflows/lighthouse.yml) | every push + weekly cron | Full Lighthouse CI on 7 representative URLs × 3 runs. Thresholds: performance ≥0.90 warn, a11y/best-practices/SEO ≥0.95 error. |
 | [`pages-deploy.yml`](.github/workflows/pages-deploy.yml) | push to `main` | Build + `upload-pages-artifact` + `deploy-pages`. |
 | [`schema-diff.yml`](.github/workflows/schema-diff.yml) | every PR | Builds base + HEAD, diffs JSON-LD, posts a PR comment. Read-only. |

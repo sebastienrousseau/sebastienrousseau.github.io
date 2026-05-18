@@ -227,13 +227,13 @@ Counter: `csp_patched`.
 `scripts/postbuild.py:_PostbuildCounters` is a `__slots__`-bound counter object threaded through every pass. The orchestrator increments a per-pass counter when a transform changes the HTML; the summary print at the end of postbuild reads them all:
 
 ```
-postbuild: 1849 HTML pages, 72 got localhost→prod scrubbed, 168 got asset URLs fingerprinted,
-1849 got real SRI, 3 got ItemList JSON-LD, 613 got TechArticle, 1 got SoftwareSourceCode,
-1232 got og:image fixed, 1849 got og:url/locale/site_name, 12069 img(s) stamped w/h,
+postbuild: 1850 HTML pages, 72 got localhost→prod scrubbed, 168 got asset URLs fingerprinted,
+1849 got real SRI, 3 got ItemList JSON-LD, 642 got TechArticle, 1 got SoftwareSourceCode,
+1232 got og:image fixed, 1850 got og:url/locale/site_name, 12070 img(s) stamped w/h,
 16 HowTo schema(s) injected, 1232 got wordCount, 741 got about/mentions entities,
 1232 got tag badges + meta bar, 1232 got anchor links + ToC, 502 got citation graphs,
 502 got visible sources list, 0 got mermaid blocks, 1456 got prev/next nav,
-1848 got hreflang pairs, 1849 got CSP JSON-LD hashes
+1848 got hreflang pairs, 1850 got CSP JSON-LD hashes
 ```
 
 If a counter's value is unexpected (e.g. 0 hreflang pairs would mean the i18n pipeline is broken), it's a signal worth investigating.
@@ -284,11 +284,11 @@ Each pass is a pure function — you can test it in isolation without invoking t
 
 ## Performance
 
-A clean build with 1849 pages × 18 postbuild passes runs in **~3 seconds** on a modern laptop. The hot path is pa11y / Lighthouse (each takes 30-45 min in CI for the full 1849-page sweep) — postbuild itself isn't on the critical path.
+A clean build with 1850 pages × 18 postbuild passes runs in **~3 seconds** on a modern laptop. The hot path is pa11y / Lighthouse (each takes 30-45 min in CI for the full 1850-page sweep) — postbuild itself isn't on the critical path.
 
 Time budget per pass (rough — measured on M1 MacBook Pro):
 
-| Pass | Time per page | Total (1849 pages) |
+| Pass | Time per page | Total (1850 pages) |
 |---|---:|---:|
 | `fix_sri` | 80 µs | 150 ms |
 | `inject_word_count` | 200 µs | 370 ms |
