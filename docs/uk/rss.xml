@@ -6,8 +6,38 @@
     <description>Статті українською: прикладний ШІ, платежі ISO 20022, постквантова криптографія та трансформація оптових платежів.</description>
     <atom:link href="https://sebastienrousseau.com/uk/rss.xml" rel="self" type="application/rss+xml"/>
     <language>uk-UA</language>
-    <lastBuildDate>Mon, 18 May 2026 07:36:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 11:48:18 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Усі права захищено.</copyright>
+    <item>
+      <title>Перезапуск квантової криптографії у 2026 році: стандарти PQC, гарантії QKD та робота з міграції, яку банки не можуть відкладати</title>
+      <link>https://sebastienrousseau.com/uk/2026-05-18-kvantova-kryptohrafiya-standarty-rozvytok-2026/</link>
+      <description>Квантова криптографія у 2026 році — це вже не дебати про те, чи близькі квантові комп&apos;ютери. Це програма міграції, що охоплює постквантову криптографію, криптографічну гнучкість, гарантії квантового розподілу ключів, протокольні стандарти, готовність постачальників та довгоживучі фінансові дані, які вже зазнають ризику harvest-now-decrypt-later.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-18-kvantova-kryptohrafiya-standarty-rozvytok-2026/</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp" type="image/webp" length="0"/>
+      <category>квантова криптографія 2026</category>
+      <category>постквантова криптографія</category>
+      <category>NIST FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>FIPS 205</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>NCSC PQC</category>
+      <category>IETF TLS</category>
+      <category>IPsec</category>
+      <category>RFC 9794</category>
+      <category>гібридний обмін ключами</category>
+      <category>QKD</category>
+      <category>ETSI QKD</category>
+      <category>ISO IEC 23837</category>
+      <category>криптографічна гнучкість</category>
+      <category>harvest now decrypt later</category>
+      <category>HNDL</category>
+      <category>криптографія фінансових послуг</category>
+      <category>банківська безпека</category>
+    </item>
     <item>
       <title>[UK DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
       <link>https://sebastienrousseau.com/uk/2026-05-17-ahentyna-inzheneriya-banky-blueprint-2026/</link>

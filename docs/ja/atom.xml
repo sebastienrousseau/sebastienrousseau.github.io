@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/ja/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ja/"/>
   <id>https://sebastienrousseau.com/ja/</id>
-  <updated>2026-05-18T07:36:27+00:00</updated>
+  <updated>2026-05-18T11:48:18+00:00</updated>
+  <entry>
+    <title>2026 年の量子暗号リセット:PQC 標準、QKD 保証、銀行が先送りできない移行作業</title>
+    <link href="https://sebastienrousseau.com/ja/2026-05-18-ryoshi-angou-hyojun-saishin-doukou-2026/"/>
+    <id>https://sebastienrousseau.com/ja/2026-05-18-ryoshi-angou-hyojun-saishin-doukou-2026/</id>
+    <updated>2026-05-18T06:06:06+00:00</updated>
+    <published>2026-05-18T06:06:06+00:00</published>
+    <summary>2026 年の量子暗号は、もはや量子コンピュータが差し迫っているかという議論ではない。それは、ポスト量子暗号、暗号アジリティ、量子鍵配送保証、プロトコル標準、サプライヤー準備、そして「いま収穫し、あとで復号する」リスクにすでに晒されている長期保管金融データを横断する移行プログラムである。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>エージェンティック・エンジニアリング:銀行の 2026 年設計図</title>
     <link href="https://sebastienrousseau.com/ja/2026-05-17-eejentikku-enjiniaringu-ginkou-no-2026-sekkeizu/"/>

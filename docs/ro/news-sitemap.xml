@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ro/2026-05-18-quantum-cryptography-standards-developments-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ro-RO</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
+    <news:title>Resetarea criptografiei cuantice în 2026: standarde PQC, asigurarea QKD și lucrările de migrare pe care băncile nu le mai pot amâna</news:title>
+    <news:keywords>criptografie cuantică 2026, criptografie post-cuantică, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, schimb hibrid de chei, QKD, ETSI QKD, ISO IEC 23837, agilitate criptografică, harvest now decrypt later, HNDL, criptografie pentru servicii financiare, securitate bancară</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ro/2026-05-17-agentic-engineering-banks-blueprint-2026/</loc>
   <news:news>
     <news:publication>

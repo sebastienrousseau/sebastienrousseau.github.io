@@ -6,8 +6,38 @@
     <description>Labaran Hausa: AI mai amfani, biyan kuɗi na ISO 20022, kiriftografi bayan kwantum da sauye-sauyen biyan kuɗi na manyan.</description>
     <atom:link href="https://sebastienrousseau.com/ha/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ha-NG</language>
-    <lastBuildDate>Mon, 18 May 2026 07:36:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 11:48:18 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. An kiyaye duk hakkokin.</copyright>
+    <item>
+      <title>Sake Saita Sirrin Quantum a 2026: Ƙa&apos;idodin PQC, Tabbatar QKD, da Aikin Ƙaura da Bankuna Ba Za Su Iya Jinkirtawa Ba</title>
+      <link>https://sebastienrousseau.com/ha/2026-05-18-quantum-cryptography-standards-developments-2026/</link>
+      <description>Sirrin quantum a 2026 ba muhawara ba ne kan ko kwamfutoci na quantum suna kusa. Shirin ƙaura ne na sirrin post-quantum, sassaucin sirri, tabbatar rabon maɓallin quantum, ƙa&apos;idodin protocol, shirin masu samar da kayayyaki, da bayanan kuɗi masu dadewa waɗanda tuni ke fuskantar haɗarin ‘girbi-yanzu-warkar-da-baya’.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-18-quantum-cryptography-standards-developments-2026/</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp" type="image/webp" length="0"/>
+      <category>sirrin quantum 2026</category>
+      <category>sirrin post-quantum</category>
+      <category>NIST FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>FIPS 205</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>NCSC PQC</category>
+      <category>IETF TLS</category>
+      <category>IPsec</category>
+      <category>RFC 9794</category>
+      <category>musayar maɓalli haɗaka</category>
+      <category>QKD</category>
+      <category>ETSI QKD</category>
+      <category>ISO IEC 23837</category>
+      <category>sassaucin sirri</category>
+      <category>harvest now decrypt later</category>
+      <category>HNDL</category>
+      <category>sirrin sabis na kuɗi</category>
+      <category>tsaron banki</category>
+    </item>
     <item>
       <title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
       <link>https://sebastienrousseau.com/ha/2026-05-17-agentic-engineering-banks-blueprint-2026/</link>

@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/ro/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ro/"/>
   <id>https://sebastienrousseau.com/ro/</id>
-  <updated>2026-05-18T07:36:27+00:00</updated>
+  <updated>2026-05-18T11:48:18+00:00</updated>
+  <entry>
+    <title>Resetarea criptografiei cuantice în 2026: standarde PQC, asigurarea QKD și lucrările de migrare pe care băncile nu le mai pot amâna</title>
+    <link href="https://sebastienrousseau.com/ro/2026-05-18-quantum-cryptography-standards-developments-2026/"/>
+    <id>https://sebastienrousseau.com/ro/2026-05-18-quantum-cryptography-standards-developments-2026/</id>
+    <updated>2026-05-18T06:06:06+00:00</updated>
+    <published>2026-05-18T06:06:06+00:00</published>
+    <summary>Criptografia cuantică în 2026 nu mai este o dezbatere despre iminența calculatoarelor cuantice. Este un program de migrare care traversează criptografia post-cuantică, agilitatea criptografică, asigurarea distribuției cuantice a cheilor, standardele de protocol, pregătirea furnizorilor și datele financiare cu durată lungă de viață deja expuse riscului «harvest-now-decrypt-later».</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
     <link href="https://sebastienrousseau.com/ro/2026-05-17-agentic-engineering-banks-blueprint-2026/"/>

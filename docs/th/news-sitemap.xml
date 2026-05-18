@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/th/2026-05-18-witsawakam-khrip-thografi-khwantam-mathana-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
+    <news:title>การรีเซ็ตการเข้ารหัสควอนตัมในปี 2026: มาตรฐาน PQC การประกัน QKD และงานอพยพที่ธนาคารไม่อาจเลื่อนได้</news:title>
+    <news:keywords>การเข้ารหัสควอนตัม 2026, การเข้ารหัสหลังควอนตัม, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, การแลกเปลี่ยนคีย์แบบไฮบริด, QKD, ETSI QKD, ISO IEC 23837, ความคล่องตัวด้านการเข้ารหัส, harvest now decrypt later, HNDL, การเข้ารหัสของบริการทางการเงิน, ความมั่นคงทางธนาคาร</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/th/2026-05-17-witsawakam-agentic-thanakhan-phaen-2026/</loc>
   <news:news>
     <news:publication>

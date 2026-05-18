@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/cs/2026-05-18-kvantova-kryptografie-standardy-vyvoj-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
+    <news:title>Reset kvantové kryptografie v roce 2026: standardy PQC, ujištění o QKD a migrační práce, kterou banky nemohou odložit</news:title>
+    <news:keywords>kvantová kryptografie 2026, postkvantová kryptografie, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybridní výměna klíčů, QKD, ETSI QKD, ISO IEC 23837, kryptografická agilita, harvest now decrypt later, HNDL, kryptografie finančních služeb, bankovní bezpečnost</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/cs/2026-05-17-agentni-inzenyrstvi-banky-blueprint-2026/</loc>
   <news:news>
     <news:publication>

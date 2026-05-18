@@ -6,8 +6,38 @@
     <description>Bài viết tiếng Việt: AI ứng dụng, thanh toán ISO 20022, mật mã hậu lượng tử và chuyển đổi thanh toán bán buôn.</description>
     <atom:link href="https://sebastienrousseau.com/vi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>vi-VN</language>
-    <lastBuildDate>Mon, 18 May 2026 07:36:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 11:48:18 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Đã đăng ký bản quyền.</copyright>
+    <item>
+      <title>Tái thiết mật mã lượng tử 2026: tiêu chuẩn PQC, bảo đảm QKD và công việc di trú mà ngân hàng không thể trì hoãn</title>
+      <link>https://sebastienrousseau.com/vi/2026-05-18-mat-ma-luong-tu-tieu-chuan-phat-trien-2026/</link>
+      <description>Mật mã lượng tử năm 2026 không còn là tranh luận về việc máy tính lượng tử sắp tới hay chưa. Đó là một chương trình di trú trải dài qua mật mã hậu lượng tử, tính linh hoạt mật mã, bảo đảm phân phối khoá lượng tử, tiêu chuẩn giao thức, mức độ sẵn sàng của nhà cung cấp và dữ liệu tài chính dài tuổi đã bị phơi nhiễm với rủi ro “thu hoạch nay, giải mã sau”.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-18-mat-ma-luong-tu-tieu-chuan-phat-trien-2026/</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp" type="image/webp" length="0"/>
+      <category>mật mã lượng tử 2026</category>
+      <category>mật mã hậu lượng tử</category>
+      <category>NIST FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>FIPS 205</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>NCSC PQC</category>
+      <category>IETF TLS</category>
+      <category>IPsec</category>
+      <category>RFC 9794</category>
+      <category>trao đổi khoá lai</category>
+      <category>QKD</category>
+      <category>ETSI QKD</category>
+      <category>ISO IEC 23837</category>
+      <category>tính linh hoạt mật mã</category>
+      <category>harvest now decrypt later</category>
+      <category>HNDL</category>
+      <category>mật mã dịch vụ tài chính</category>
+      <category>bảo mật ngân hàng</category>
+    </item>
     <item>
       <title>Kỹ thuật agentic: bản thiết kế ngân hàng 2026</title>
       <link>https://sebastienrousseau.com/vi/2026-05-17-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026/</link>

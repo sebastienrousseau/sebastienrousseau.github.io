@@ -1,11 +1,11 @@
 {
-  "date": "November 19, 2023",
-  "banner_alt": "Un ordenador cuántico moderno y depurado",
-  "locale": "th_TH",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
-  "subtitle": "CRYSTALS-Kyber, el estándar NIST FIPS 203 para la encapsulación de claves postcuántica",
-  "keywords": "computación cuántica, criptografía resistente a lo cuántico, CRYSTALS-Kyber, criptografía, seguridad, banca, finanzas, cifrado, protección de datos, perdurabilidad",
-  "language": "th-TH",
   "description": "Cómo CRYSTALS-Kyber, algoritmo de criptografía resistente a lo cuántico, revoluciona el mundo de la criptografía y nos prepara para la era cuántica.",
-  "title": "CRYSTALS-Kyber: el algoritmo de protección en la era cuántica"
+  "locale": "th_TH",
+  "date": "November 19, 2023",
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
+  "language": "th-TH",
+  "keywords": "computación cuántica, criptografía resistente a lo cuántico, CRYSTALS-Kyber, criptografía, seguridad, banca, finanzas, cifrado, protección de datos, perdurabilidad",
+  "subtitle": "CRYSTALS-Kyber, el estándar NIST FIPS 203 para la encapsulación de claves postcuántica",
+  "title": "CRYSTALS-Kyber: el algoritmo de protección en la era cuántica",
+  "banner_alt": "Un ordenador cuántico moderno y depurado"
 }

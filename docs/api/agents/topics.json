@@ -6,8 +6,9 @@
       "title": "Post-Quantum Cryptography",
       "description": "Lattice-based cryptography, NIST PQC standards, quantum-safe payments, and the harvest-now-decrypt-later threat. Research notes, open-source libraries, and migration playbooks for financial-services security teams.",
       "url": "https://sebastienrousseau.com/topics/post-quantum-cryptography/",
-      "post_count": 12,
+      "post_count": 13,
       "post_slugs": [
+        "2026-05-18-quantum-cryptography-standards-developments-2026",
         "2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance",
         "2026-04-11-quantum-thresholds-are-moving-again",
         "2025-09-01-quantum-safe-payments-epaa",

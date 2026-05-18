@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-18-liangzi-mima-biaozhun-jinzhan-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
+    <news:title>2026 年量子密码重置：PQC 标准、QKD 保证与银行不能再延期的迁移工作</news:title>
+    <news:keywords>量子密码 2026, 后量子密码, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, 混合密钥交换, QKD, ETSI QKD, ISO IEC 23837, 密码敏捷性, harvest now decrypt later, HNDL, 金融服务密码, 银行安全</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/zh-hans/2026-05-17-ai-dailixing-gongcheng-yinhang-2026-lantu/</loc>
   <news:news>
     <news:publication>

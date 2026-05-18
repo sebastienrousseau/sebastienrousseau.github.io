@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ar/2026-05-18-quantum-cryptography-standards-developments-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar-SA</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
+    <news:title>إعادة ضبط التشفير الكمومي في 2026: معايير PQC، ضمان QKD، وعمل الهجرة الذي لا تستطيع البنوك تأجيله</news:title>
+    <news:keywords>التشفير الكمومي 2026، التشفير ما بعد الكمومي، NIST FIPS 203، FIPS 204، FIPS 205، ML-KEM، ML-DSA، SLH-DSA، NCSC PQC، IETF TLS، IPsec، RFC 9794، تبادل المفاتيح الهجين، QKD، ETSI QKD، ISO IEC 23837، المرونة التشفيرية، احصد الآن فُكّ التشفير لاحقاً، HNDL، تشفير الخدمات المالية، أمن البنوك</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ar/2026-05-17-agentic-engineering-banks-blueprint-2026/</loc>
   <news:news>
     <news:publication>

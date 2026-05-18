@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
-  "date": "December 11, 2023",
-  "subtitle": "BB84 से लेकर वास्तविक उत्पादन-तंत्रों तक",
-  "language": "hi-IN",
-  "keywords": "QKD, क्वांटम कुंजी-वितरण, BB84, क्वांटम क्रिप्टोग्राफी, बैंकिंग सुरक्षा, post-quantum, NIST, फ़ोटॉन, उलझाव, सुरक्षा",
-  "banner_alt": "क्वांटम कुंजी-वितरण की प्रकाशीय अवधारणा",
   "description": "क्वांटम कुंजी-वितरण (QKD) कैसे बैंकिंग-सुरक्षा को नई परिभाषा देता है — BB84 से उत्पादन-तंत्रों तक।",
   "title": "क्वांटम कुंजी-वितरण: बैंकिंग-सुरक्षा में क्रांति",
-  "locale": "hi_IN"
+  "language": "hi-IN",
+  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
+  "locale": "hi_IN",
+  "subtitle": "BB84 से लेकर वास्तविक उत्पादन-तंत्रों तक",
+  "date": "December 11, 2023",
+  "keywords": "QKD, क्वांटम कुंजी-वितरण, BB84, क्वांटम क्रिप्टोग्राफी, बैंकिंग सुरक्षा, post-quantum, NIST, फ़ोटॉन, उलझाव, सुरक्षा",
+  "banner_alt": "क्वांटम कुंजी-वितरण की प्रकाशीय अवधारणा"
 }

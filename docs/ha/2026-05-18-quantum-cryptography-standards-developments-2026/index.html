@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ha-NG">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 18 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 18 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Sake Saita Sirrin Quantum a 2026: Ƙa&#x27;idodin PQC, Tabbatar QKD, da Aikin Ƙaura da Bankuna Ba Za Su Iya Jinkirtawa Ba — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Sirrin quantum a 2026 ba muhawara ba ne kan ko kwamfutoci na quantum suna kusa. Shirin ƙaura ne na sirrin post-quantum, sassaucin sirri, tabbatar rabon maɓallin quantum, ƙa&#x27;idodin protocol, shirin masu samar da kayayyaki, da bayanan kuɗi masu dadewa waɗanda tuni ke fuskantar haɗarin ‘girbi-yanzu-warkar-da-baya’.">
+<meta name="keywords" content="sirrin quantum 2026, sirrin post-quantum, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, musayar maɓalli haɗaka, QKD, ETSI QKD, ISO IEC 23837, sassaucin sirri, harvest now decrypt later, HNDL, sirrin sabis na kuɗi, tsaron banki">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Quantum Crypto 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-3BjO4j5e45UJnWVJey4VKSfan1/i3htKkRhYmXD6DHU=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-hMRyA9Ci4bopfhW5hr3fmhqe2soTDF66m1iPr1Hn+pY=' 'sha256-iAp+G9R0+bBnNhpyt8dICbd3jQsmE6v0QxBPIjcVFJg=' 'sha256-rTX/E/ZnVELu39kiR70i2TTkCz+nQ8Im4Qs7MFXxF9U=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://www.googletagmanager.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ha/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/a057afa19d87c0fe.css" crossorigin="anonymous" integrity="sha256-nyKUsN7CbNTpYwkJ8VEOR5Wetskwe92vnzOKxMl6ltw=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Feed na Atom" href="/ha/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Sake Saita Sirrin Quantum a 2026: Ƙa&#x27;idodin PQC, Tabbatar QKD, da Aikin Ƙaura da Bankuna Ba Za Su Iya Jinkirtawa Ba — Sebastien Rousseau">
+<meta property="og:description" content="Sirrin quantum a 2026 ba muhawara ba ne kan ko kwamfutoci na quantum suna kusa. Shirin ƙaura ne na sirrin post-quantum, sassaucin sirri, tabbatar rabon maɓallin quantum, ƙa&#x27;idodin protocol, shirin masu samar da kayayyaki, da bayanan kuɗi masu dadewa waɗanda tuni ke fuskantar haɗarin ‘girbi-yanzu-warkar-da-baya’.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sebastienrousseau.com/ha/2026-05-18-quantum-cryptography-standards-developments-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ha_NG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sake Saita Sirrin Quantum a 2026: Ƙa&#x27;idodin PQC, Tabbatar QKD, da Aikin Ƙaura da Bankuna Ba Za Su Iya Jinkirtawa Ba — Sebastien Rousseau">
+<meta name="twitter:description" content="Sirrin quantum a 2026 ba muhawara ba ne kan ko kwamfutoci na quantum suna kusa. Shirin ƙaura ne na sirrin post-quantum, sassaucin sirri, tabbatar rabon maɓallin quantum, ƙa&#x27;idodin protocol, shirin masu samar da kayayyaki, da bayanan kuɗi masu dadewa waɗanda tuni ke fuskantar haɗarin ‘girbi-yanzu-warkar-da-baya’.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/ha/2026-05-18-quantum-cryptography-standards-developments-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-18-cryptographie-quantique-normes-developpements-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-18-kvantova-kryptografie-standardy-vyvoj-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-18-quantenkryptografie-standards-entwicklungen-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-18-criptografia-cuantica-estandares-desarrollos-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-18-kriptografi-kuantum-standar-perkembangan-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-18-crittografia-quantistica-standard-sviluppi-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-18-ryoshi-angou-hyojun-saishin-doukou-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-18-yangja-amho-pyojun-baljeon-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-18-kwantumcryptografie-standaarden-ontwikkelingen-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-18-kryptografia-kwantowa-standardy-rozwoj-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-18-criptografia-quantica-padroes-desenvolvimentos-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-18-kvantovaya-kriptografiya-standarty-razvitiye-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-18-kvantkryptografi-standarder-utveckling-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-18-witsawakam-khrip-thografi-khwantam-mathana-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-18-kuantum-kriptografi-standartlari-gelismeler-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-18-kvantova-kryptohrafiya-standarty-rozvytok-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-18-mat-ma-luong-tu-tieu-chuan-phat-trien-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-18-liangzi-mima-biaozhun-jinzhan-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-18-liangzi-mima-biaozhun-jinzhan-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Tsallaka zuwa babban abun ciki</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Maɓallin kewayawa" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ha/index.html" aria-label="Sebastien Rousseau gida">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Babban kewayawa">
+          <ul class="ap-menu">
+            <li><a href="/ha/game-da-mu/index.html">About</a></li>
+            <li><a href="/ha/labarai/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/ha/takardun-bincike/index.html">Papers</a></li>
+            <li><a href="/ha/batutuwa/index.html">Batutuwa</a></li>
+            <li><a href="/ha/ayyukan/index.html">Projects</a></li>
+            <li><a href="/ha/jerin-waka/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Kunna jigon duhu" aria-pressed="false" title="Canza jigo">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Bincika (Cmd ko Ctrl + K)" title="Bincika (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Harshe">
+            <button type="button" class="ap-lang-toggle" aria-label="HA, Canza harshe" aria-expanded="false" aria-haspopup="menu" title="Canza harshe">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">HA</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ha/tuntube-mu/index.html" aria-label="Tuntube mu">Tuntube mu ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Maɓallin kewayawa">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Sake Saita Sirrin Quantum a 2026: Ƙa&#x27;idodin PQC, Tabbatar QKD, da Aikin Ƙaura da Bankuna Ba Za Su Iya Jinkirtawa Ba</h1>
+      <p class="sub">Sirrin quantum ya yi ƙaura daga binciken sararin sama zuwa horon aiwatarwa: ƙa&#x27;idodin NIST PQC sun shirya, jagorancin NCSC na Birtaniya ya rage zaɓuɓɓukan algorithm, aikin protocol na IETF har yanzu yana balaga, kuma tabbatar QKD yana motsawa daga amincewar dakin gwaje-gwaje zuwa harshen tabbatarwa.</p>
+    <nav class="article-tags" aria-label="Batutuwa"><a href="/tags/index.html#h3-sirrin-quantum-2026" class="article-tag" rel="tag">sirrin quantum 2026</a><a href="/tags/index.html#h3-sirrin-post-quantum" class="article-tag" rel="tag">sirrin post-quantum</a><a href="/tags/index.html#h3-nist-fips-203" class="article-tag" rel="tag">NIST FIPS 203</a><a href="/tags/index.html#h3-fips-204" class="article-tag" rel="tag">FIPS 204</a><a href="/tags/index.html#h3-fips-205" class="article-tag" rel="tag">FIPS 205</a><a href="/tags/index.html#h3-ml-kem" class="article-tag" rel="tag">ML-KEM</a><a href="/tags/index.html#h3-ml-dsa" class="article-tag" rel="tag">ML-DSA</a><a href="/tags/index.html#h3-slh-dsa" class="article-tag" rel="tag">SLH-DSA</a><a href="/tags/index.html#h3-ncsc-pqc" class="article-tag" rel="tag">NCSC PQC</a><a href="/tags/index.html#h3-ietf-tls" class="article-tag" rel="tag">IETF TLS</a><a href="/tags/index.html#h3-ipsec" class="article-tag" rel="tag">IPsec</a><a href="/tags/index.html#h3-rfc-9794" class="article-tag" rel="tag">RFC 9794</a><a href="/tags/index.html#h3-musayar-maalli-haaka" class="article-tag" rel="tag">musayar maɓalli haɗaka</a><a href="/tags/index.html#h3-qkd" class="article-tag" rel="tag">QKD</a><a href="/tags/index.html#h3-etsi-qkd" class="article-tag" rel="tag">ETSI QKD</a><a href="/tags/index.html#h3-iso-iec-23837" class="article-tag" rel="tag">ISO IEC 23837</a><a href="/tags/index.html#h3-sassaucin-sirri" class="article-tag" rel="tag">sassaucin sirri</a><a href="/tags/index.html#h3-harvest-now-decrypt-later" class="article-tag" rel="tag">harvest now decrypt later</a><a href="/tags/index.html#h3-hndl" class="article-tag" rel="tag">HNDL</a><a href="/tags/index.html#h3-sirrin-sabis-na-kui" class="article-tag" rel="tag">sirrin sabis na kuɗi</a><a href="/tags/index.html#h3-tsaron-banki" class="article-tag" rel="tag">tsaron banki</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-18T06:06:06+00:00" class="meta-pub">An buga 18 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Lokacin karatun da aka kiyasta">10 minti karatu</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Abubuwan da ke ciki</h2><ol><li><a href="#sake-saita-sirrin-quantum-a-2026-a-idodin-pqc-tabbatar-qkd-da-aikin-aura-da-bank">Sake Saita Sirrin Quantum a 2026: Ƙa'idodin PQC, Tabbatar QKD, da Aikin Ƙaura da Bankuna Ba Za Su Iya Jinkirtawa Ba</a></li><li><a href="#me-ya-sa-wannan-mako-ke-da-muhimmanci">Me ya sa wannan mako ke da muhimmanci</a></li><li><a href="#tushen-sirrin-2026-hanyoyin-aiki-huu">Tushen Sirrin 2026: Hanyoyin Aiki Huɗu</a></li><li><a href="#abin-da-ya-kamata-bankuna-su-yi-yanzu">Abin da ya Kamata Bankuna su Yi Yanzu</a></li><li><a href="#pqc-qkd-da-haaka-tebur-yanke-shawara-mai-amfani">PQC, QKD, da Haɗaka: Tebur Yanke Shawara mai Amfani</a></li><li><a href="#me-hakan-ke-nufi-a-kowane-nau-in-cibiya">Me Hakan Ke Nufi a Kowane Nau'in Cibiya</a></li><li><a href="#arshe">Ƙarshe</a></li><li><a href="#tambayoyin-da-ake-yawan-yi">Tambayoyin da ake Yawan Yi</a></li><li><a href="#manazarta">Manazarta</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Sirrin quantum a 2026 ba muhawara ba ne kan ko kwamfutoci na quantum suna kusa. Shirin ƙaura ne na sirrin post-quantum, sassaucin sirri, tabbatar rabon maɓallin quantum, ƙa&#x27;idodin protocol, shirin masu samar da kayayyaki, da bayanan kuɗi masu dadewa waɗanda tuni ke fuskantar haɗarin ‘girbi-yanzu-warkar-da-baya’.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Sake Saita Sirrin Quantum a 2026: Ƙa&#x27;idodin PQC, Tabbatar QKD, da Aikin Ƙaura da Bankuna Ba Za Su Iya Jinkirtawa Ba.</strong> Sirrin quantum a 2026 ya rabu zuwa hanyoyi biyu masu amfani.</li>  <li><strong>Me ya sa wannan mako ke da muhimmanci.</strong> Tattaunawar ƙa&#x27;idodi ta wuce maƙasudin ƙwarewa.</li>  <li><strong>Tushen Sirrin 2026: Hanyoyin Aiki Huɗu.</strong> Tushen farko shi ne na algorithm.</li>  <li><strong>Abin da ya Kamata Bankuna su Yi Yanzu.</strong> Abin da za a kawo na farko shi ne lissafin abubuwan sirri.</li></ul></aside><h2 id="sake-saita-sirrin-quantum-a-2026-a-idodin-pqc-tabbatar-qkd-da-aikin-aura-da-bank">Sake Saita Sirrin Quantum a 2026: Ƙa'idodin PQC, Tabbatar QKD, da Aikin Ƙaura da Bankuna Ba Za Su Iya Jinkirtawa Ba <a class="heading-anchor" href="#sake-saita-sirrin-quantum-a-2026-a-idodin-pqc-tabbatar-qkd-da-aikin-aura-da-bank" aria-label="Hanyar haɗi zuwa Sake Saita Sirrin Quantum a 2026: Ƙa'idodin PQC, Tabbatar QKD, da Aikin Ƙaura da Bankuna Ba Za Su Iya Jinkirtawa Ba">#</a></h2>
+<p>Sirrin quantum a 2026 ya rabu zuwa hanyoyi biyu masu amfani. Sirrin post-quantum yanzu shiri ne na aiwatarwa, saboda NIST ya ce ƙa'idodi uku na post-quantum sun shirya don amfani kuma tsarin tarayya dole ne su ɗauki su a matsayin ƙa'idodin FIPS (<a href="https://www.nist.gov/pqc" title="NIST Post-Quantum Cryptography">NIST</a>); rabon maɓallin quantum yana zama matsalar tabbatarwa da tabbatarwa, saboda tsare-tsaren QKD suna buƙatar harshen ƙima, bayanan kariya, da ƙa'idodin aiki maimakon nunin dakin gwaje-gwaje kaɗai (<a href="https://www.idquantique.com/etsi-releases-qkd-protection-profile/" title="ETSI releases QKD Protection Profile">ID Quantique / ETSI QKD 016</a>).</p>
+<hr />
+<blockquote>
+<p><strong>Taƙaitaccen Bayani na Zartarwa / Muhimman Maganganu</strong></p>
+<ul>
+<li><strong>NIST ya motsa PQC zuwa aiwatarwa.</strong> Ƙa'idodin yanzu sune FIPS 203 don kafa maɓalli na ML-KEM, FIPS 204 don sa hannun ML-DSA, da FIPS 205 don sa hannun SLH-DSA, tare da NIST yana kira ga ƙungiyoyi su gano sirrin mai rauni kuma su fara ƙaura yanzu (<a href="https://www.nist.gov/pqc" title="NIST Post-Quantum Cryptography">NIST</a>).</li>
+<li><strong>NCSC na Birtaniya ya rage zaɓuɓɓukan aiki.</strong> Yana ba da shawarar ML-KEM-768 da ML-DSA-65 don yawancin shari'o'in amfani, yayin da yake yin gargaɗin cewa tsarin ya kamata ya dogara da aiwatar da ƙa'idodin ƙarshe masu ƙarfi maimakon gwaje-gwaje masu jituwa da daftari (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC next steps in preparing for PQC">NCSC</a>).</li>
+<li><strong>Shirin protocol ba a daidaita ba.</strong> IETF yana sabunta TLS da IPsec don PQC da musayar maɓalli haɗaka, amma NCSC yana kashedi cewa tsarin aiki yana son RFCs da aka buga akan Internet Drafts masu canzawa (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC next steps in preparing for PQC">NCSC</a>).</li>
+<li><strong>Haɗaka tsari ne na canji, ba ƙarshen yanayi ba.</strong> Tsare-tsaren maɓallin jama'a haɗaka tare da post-quantum suna taimakawa wajen rabe-raben ƙaura da rage haɗarin aiwatarwa, amma suna ƙara rikitarwa kuma suna iya buƙatar ƙaura ta biyu zuwa PQC-kawai daga baya (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC next steps in preparing for PQC">NCSC</a>).</li>
+<li><strong>QKD ba madadin PQC ba ne.</strong> QKD na iya hidima maɓallai na musamman masu tabbacin gaske, amma dacewar bankinsa ya dogara da tabbatarwa, haɗin gwiwar aiki, farashin aiki, da haɗin kai tare da tsarin sarrafa maɓalli na yanzu maimakon kawai ilimin physics (<a href="https://www.idquantique.com/etsi-releases-qkd-protection-profile/" title="ETSI releases QKD Protection Profile">ID Quantique / ETSI QKD 016</a>).</li>
+<li><strong>Tambayar matakin banki ita ce kayan aiki.</strong> Cibiyar kuɗi da ba za ta iya gano RSA, ECDH, ECDSA, EdDSA, sirrin VPN na kanta, samfuran HSM, rayuwar takaddun shaida, da sirrin da masu samar da kayayyaki ke gudanarwa ba za ta iya ƙaura ba, ko da wace ƙa'ida tana samuwa.</li>
+<li><strong>Haɗarin ya riga yana raye.</strong> Hare-haren ‘girbi-yanzu-warkar-da-baya’ suna sa bayanan kuɗi masu dadewa su zama masu rauni kafin kwamfutocin quantum masu mahimmancin sirri su wanzu, saboda maƙiyi yana buƙatar tara rubutun ɓoye kaɗai a yau.</li>
+<li><strong>Sassaucin sirri shi ne kulawar da ke da ɗorewa.</strong> Tsarin nasara ba canji ɗaya bane na RSA zuwa ML-KEM; iyawar dandamali ce don juya algorithms, sigogi, ɗakunan karatu, takaddun shaida, manufofin hardware, da yanayin protocol ba tare da sake gina banki ba.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="me-ya-sa-wannan-mako-ke-da-muhimmanci">Me ya sa wannan mako ke da muhimmanci <a class="heading-anchor" href="#me-ya-sa-wannan-mako-ke-da-muhimmanci" aria-label="Hanyar haɗi zuwa Me ya sa wannan mako ke da muhimmanci">#</a></h2>
+<p>Tattaunawar ƙa'idodi ta wuce maƙasudin ƙwarewa. Jagorancin jama'a na NIST ya ce ƙungiyoyi ya kamata su fara amfani da sabbin ƙa'idodi yanzu, gano inda ake amfani da algorithms masu rauni, da tsara sabunta samfuran, ayyuka, da protocol (<a href="https://www.nist.gov/pqc" title="NIST Post-Quantum Cryptography">NIST</a>). Wannan harshen yana da mahimmanci saboda yana mai da PQC daga batun bincike zuwa dogaron sabunta fasaha.</p>
+<p>Lokacin kuma yana da mahimmanci saboda bayanan kuɗi suna da rabin rayuwar sirri mai tsayi. Kayan M&amp;A, kwararar kuɗin baitulmali, binciken takunkumi, takaddun shaidan abokin ciniki, metadata na shirin biyan kuɗi, da rikodin sasanta tarbaya na iya kasancewa masu mahimmanci na shekaru. Kwamfutar quantum da ke karya sirrin maɓallin jama'a na gargajiya ba ta buƙatar zama a yau don bayyani ya zama da hankali a yau.</p>
+<h2 id="tushen-sirrin-2026-hanyoyin-aiki-huu">Tushen Sirrin 2026: Hanyoyin Aiki Huɗu <a class="heading-anchor" href="#tushen-sirrin-2026-hanyoyin-aiki-huu" aria-label="Hanyar haɗi zuwa Tushen Sirrin 2026: Hanyoyin Aiki Huɗu">#</a></h2>
+<h3 id="1-a-idodin-pqc-sun-isa-shiri-don-tsara">1. Ƙa'idodin PQC sun isa shiri don tsara <a class="heading-anchor" href="#1-a-idodin-pqc-sun-isa-shiri-don-tsara" aria-label="Hanyar haɗi zuwa 1. Ƙa'idodin PQC sun isa shiri don tsara">#</a></h3>
+<p>Tushen farko shi ne na algorithm. Shirin PQC na NIST yanzu yana ba shugabannin fasaha makasudai masu suna: ML-KEM don kafa maɓalli, ML-DSA don sa hannun dijital na gabaɗaya, da SLH-DSA don sa hannun da aka kafa akan hash (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC next steps in preparing for PQC">NCSC</a>). Tasirin aiki shi ne cewa ƙungiyoyin saye, gine-gine, da sarrafa masu samar da kayayyaki za su iya tsaya neman ko ƙa'idodin PQC za su kasance kuma su fara neman lokacin da kowane tsari zai goyi bayansu.</p>
+<p>Mafi wuyar ma'ana ita ce daidaituwa. NCSC yana kashedi cewa aiwatarwa bisa daftarin ƙa'idodi bazai dace da ƙa'idodin ƙarshe ba, wanda shine irin cikakken bayanin da ke karya ƙaurawar manyan bankuna idan aka yi watsi da shi (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC next steps in preparing for PQC">NCSC</a>). Don haka bankuna ya kamata su raba gwajen gwaje-gwaje daga hanyoyin ƙaura na samarwa.</p>
+<h3 id="2-protocol-su-ne-matsananci">2. Protocol su ne matsananci <a class="heading-anchor" href="#2-protocol-su-ne-matsananci" aria-label="Hanyar haɗi zuwa 2. Protocol su ne matsananci">#</a></h3>
+<p>Algorithms kaɗai ba sa amintar da zirga-zirgar banki. TLS, IPsec, SSH, S/MIME, API na biyan kuɗi, haɗin HSM, da tsararraki na sarrafa takaddun shaida duk suna buƙatar tallafi a matakin protocol. NCSC yana faɗin cewa IETF yana sabunta protocols da aka yi amfani da su sosai kamar TLS da IPsec don a iya haɗa algorithms na PQC cikin musayar maɓalli da hanyoyin sa hannu (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC next steps in preparing for PQC">NCSC</a>).</p>
+<p>Wannan yana haifar da matsalar aiwatarwa ta matakai. Banki na iya yin kayan aikin sirri nan da nan, buƙatar taswirorin masu samar da kayayyaki nan da nan, da zane sassaucin sirri nan da nan, amma har yanzu yana iya buƙatar jira don aiwatar da protocol mai ƙarko kafin motsa hanyoyin samar da mahimmanci.</p>
+<h3 id="3-qkd-ya-zama-horon-tabbatarwa">3. QKD ya zama horon tabbatarwa <a class="heading-anchor" href="#3-qkd-ya-zama-horon-tabbatarwa" aria-label="Hanyar haɗi zuwa 3. QKD ya zama horon tabbatarwa">#</a></h3>
+<p>Rabon maɓallin quantum ya kasance mai dacewa ga maɓallai na musamman, musamman inda cibiya ke sarrafa wuraren karshe da hanyoyin sadarwa. Muhimmin ci gaba na 2026 ba sabuwar akwati ɗaya na QKD ba ne; bayyanar harshen tabbatarwa ne, tare da ETSI GS QKD 016 da aka kwatanta a matsayin alama na bayani na kariya don ƙimar samfurin QKD (<a href="https://www.idquantique.com/etsi-releases-qkd-protection-profile/" title="ETSI releases QKD Protection Profile">ID Quantique / ETSI QKD 016</a>).</p>
+<p>Ga bankuna, wannan yana canza tattaunawar saye. Tambayar daidai ba ta ƙara ba ce ko QKD tana da aminci-quantum a ƙa'ida. Tambayar daidai ita ce ko na'urar, haɗin kai, tsarin sarrafa maɓalli, yanayin aiki, da shaidar tabbatarwa suna cikar samfurin barazana na banki.</p>
+<h3 id="4-sassaucin-sirri-shi-ne-ginin">4. Sassaucin sirri shi ne ginin <a class="heading-anchor" href="#4-sassaucin-sirri-shi-ne-ginin" aria-label="Hanyar haɗi zuwa 4. Sassaucin sirri shi ne ginin">#</a></h3>
+<p>Sassaucin sirri shi ne ikon canza algorithms ba tare da canza dukan tsarin ba. Yana rufe ɗakunan karatu na software, tattaunawar protocol, manufar HSM, bayanan takaddun shaida, rayuwar maɓalli, sabis na sa hannu, shaidar bincike, da hanyoyin komawa baya. Ba tare da shi ba, kowane ƙaura na sirri ya zama aikin musamman.</p>
+<p>Wannan shine darasi na ginin tushe. Sauyin post-quantum ba zai zama sauyin sirri na ƙarshe da tsarin kuɗi zai fuskanta ba. Bankuna da ke gina sassaucin sirri yanzu suna samun jirgin sarrafawa mai sake amfani don sabunta algorithm, haɗarin masu samar da kayayyaki, soke gaggawa, da shaidar masu tsarawa.</p>
+<h2 id="abin-da-ya-kamata-bankuna-su-yi-yanzu">Abin da ya Kamata Bankuna su Yi Yanzu <a class="heading-anchor" href="#abin-da-ya-kamata-bankuna-su-yi-yanzu" aria-label="Hanyar haɗi zuwa Abin da ya Kamata Bankuna su Yi Yanzu">#</a></h2>
+<h3 id="gina-kayan-aiki-na-sirri">Gina Kayan Aiki na Sirri <a class="heading-anchor" href="#gina-kayan-aiki-na-sirri" aria-label="Hanyar haɗi zuwa Gina Kayan Aiki na Sirri">#</a></h3>
+<p>Abin da za a kawo na farko shi ne lissafin abubuwan sirri. Ya kamata ya haɗa da algorithms na maɓallin jama'a, tsawon maɓalli, hukumomin takaddun shaida, samfuran HSM, sigogin TLS, samfuran VPN, ƙofofin biyan kuɗi, APIs na ɓangare na uku, SDKs na waya, masu lulluɓe ɓoye-bayanan-da-suka-tsaya, maɓallan sa hannu, hanyoyin sa hannun firmware, da sirrin da masu samar da kayayyaki ke gudanarwa.</p>
+<p>Kayan aiki ya kamata ya bambanta tsakanin sirri da gaskiya. Bayanan ɓoye masu dadewa suna fuskantar haɗarin ‘girbi-yanzu-warkar-da-baya’, yayin da maɓallan sa hannu masu dadewa ke haifar da haɗarin yaudara na gaba idan suka kasance a cikin algorithms na maɓallin jama'a masu rauni.</p>
+<h3 id="raba-ta-rabin-rayuwar-bayanai">Raba Ta Rabin Rayuwar Bayanai <a class="heading-anchor" href="#raba-ta-rabin-rayuwar-bayanai" aria-label="Hanyar haɗi zuwa Raba Ta Rabin Rayuwar Bayanai">#</a></h3>
+<p>Ba duk bayanai ke buƙatar tsari ɗaya na ƙaura ba. Saƙon izini na katin lokaci-na-zahiri na iya samun rabin rayuwar sirri daban da binciken takunkumi, fayil na siyan kamfani, kunshin shaidar banki na sirri, ko takardar fitar da bashin gwamnati. Wannan shi ne dalilin da ya sa ƙaura na quantum ya dace da rabe-raben bayanai maimakon kawai tsaron hanyar sadarwa.</p>
+<p>Fifiko ya kamata ya kasance ga tsarin da ke kare bayanai masu dadewa tare da kafa maɓalli masu rauni. Waɗannan su ne tsarin inda tarawa a yau ke haifar da bayyani gobe.</p>
+<h3 id="tilasta-taswirorin-masu-samar-da-kayayyaki-cikin-yarjejeniyoyi">Tilasta Taswirorin Masu Samar da Kayayyaki cikin Yarjejeniyoyi <a class="heading-anchor" href="#tilasta-taswirorin-masu-samar-da-kayayyaki-cikin-yarjejeniyoyi" aria-label="Hanyar haɗi zuwa Tilasta Taswirorin Masu Samar da Kayayyaki cikin Yarjejeniyoyi">#</a></h3>
+<p>NIST ya ce kayayyaki, ayyuka, da protocols suna buƙatar sabuntawa don sauyi (<a href="https://www.nist.gov/pqc" title="NIST Post-Quantum Cryptography">NIST</a>). Wannan yana nufin harshen saye dole ne ya canza. Masu samar da kayayyaki ya kamata su bayyana lokutan tallafin PQC, daidaituwar ƙa'ida ta ƙarshe, halayyar yanayin haɗaka, ƙuntataccen kayan aikin hardware, tasirin aiki, tallafin bayanin takaddun shaida, da sarrafa komawa baya.</p>
+<p>Mai samar da kayayyaki da ya ce kawai &quot;taswirar lafiya-quantum&quot; bai amsa tambayar ba. Banki yana buƙatar kwanaki, algorithms, iyakokin haɗin kai, da shaida.</p>
+<h2 id="pqc-qkd-da-haaka-tebur-yanke-shawara-mai-amfani">PQC, QKD, da Haɗaka: Tebur Yanke Shawara mai Amfani <a class="heading-anchor" href="#pqc-qkd-da-haaka-tebur-yanke-shawara-mai-amfani" aria-label="Hanyar haɗi zuwa PQC, QKD, da Haɗaka: Tebur Yanke Shawara mai Amfani">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Sarrafa</th>
+<th>Amfani Mafi Kyau</th>
+<th>Yanayin 2026</th>
+<th>Kashedin Banki</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ML-KEM / FIPS 203</strong></td>
+<td>Kafa maɓalli don sirrin gaba</td>
+<td>An tsara kuma yana shirye don tsarin aiwatarwa (<a href="https://www.nist.gov/pqc" title="NIST Post-Quantum Cryptography">NIST</a>)</td>
+<td>Yana buƙatar tallafin protocol da ɗakin karatu kafin fitar da samarwa mai mahimmanci</td>
+</tr>
+<tr>
+<td><strong>ML-DSA / FIPS 204</strong></td>
+<td>Sa hannun dijital na gabaɗaya</td>
+<td>An ba da shawara don yawancin shari'o'in sa hannu na gabaɗaya ta NCSC (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC next steps in preparing for PQC">NCSC</a>)</td>
+<td>Sarƙar takaddun shaida da ƙaura na PKI suna da wuya a aikin yi</td>
+</tr>
+<tr>
+<td><strong>SLH-DSA / FIPS 205</strong></td>
+<td>Sa hannun da aka kafa a kan hash don firmware da sa hannun software</td>
+<td>Ƙa'idar NIST ta ƙarshe wadda NCSC ke ambata (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC next steps in preparing for PQC">NCSC</a>)</td>
+<td>Sa hannu mafi girma na iya shafar yanayin da aka iyakance</td>
+</tr>
+<tr>
+<td><strong>Tsare-tsaren PQ/T haɗaka</strong></td>
+<td>Ƙaura na ɗan lokaci da haɗin gwiwar aiki</td>
+<td>Mai amfani a matsayin matakin sauyi (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC next steps in preparing for PQC">NCSC</a>)</td>
+<td>Yana ƙara rikitarwa kuma yana iya buƙatar ƙaura ta biyu</td>
+</tr>
+<tr>
+<td><strong>QKD</strong></td>
+<td>Maɓallai na musamman masu tabbacin gaske</td>
+<td>Aikin tabbatarwa yana balaga ta hanyar aikin bayanin-kariya na ETSI (<a href="https://www.idquantique.com/etsi-releases-qkd-protection-profile/" title="ETSI releases QKD Protection Profile">ID Quantique / ETSI QKD 016</a>)</td>
+<td>Baya warware tabbatar da ainihi a sikelin yanar gizo na gabaɗaya ko kayan aikin sirri na kasuwanci</td>
+</tr>
+</tbody>
+</table>
+<h2 id="me-hakan-ke-nufi-a-kowane-nau-in-cibiya">Me Hakan Ke Nufi a Kowane Nau'in Cibiya <a class="heading-anchor" href="#me-hakan-ke-nufi-a-kowane-nau-in-cibiya" aria-label="Hanyar haɗi zuwa Me Hakan Ke Nufi a Kowane Nau'in Cibiya">#</a></h2>
+<h3 id="manyan-bankuna-na-mataki-na-farko">Manyan Bankuna na Mataki na Farko <a class="heading-anchor" href="#manyan-bankuna-na-mataki-na-farko" aria-label="Hanyar haɗi zuwa Manyan Bankuna na Mataki na Farko">#</a></h3>
+<p>Manyan bankuna na mataki na farko suna buƙatar ofishin shiri, ba shaidar manufa ba. Tsarin aiki da aka nufa ya kamata ya haɗu da kayan aikin sirri, tilasta masu samar da kayayyaki, sarrafa taswirar HSM, yanayin gwaji don haɗakar TLS/IPsec, da shaidar shirye-shiryen tsara. Aikin farko mafi daraja ba shi ne canza kowane cipher nan da nan ba; shi ne gina jirgin sarrafawa wanda ya sa canji ya zama mai aminci.</p>
+<h3 id="bankuna-na-tsakiya-da-na-yanki">Bankuna na Tsakiya da na Yanki <a class="heading-anchor" href="#bankuna-na-tsakiya-da-na-yanki" aria-label="Hanyar haɗi zuwa Bankuna na Tsakiya da na Yanki">#</a></h3>
+<p>Bankuna na tsakiya ya kamata su ɗauki PQC a matsayin aikin sarrafa masu samar da kayayyaki da ma'aunin dandamali. Za su iya guje wa aikin musamman mai tsada ta hanyar mai da hankali tsarin a kusa da ɗakunan karatu da ake tallafawa, tsararraki na TLS na ma'auni, sabis na takaddun shaida da ake sarrafa, da ƙayyadaddun lokutan masu samar da kayayyaki. Babban haɗarin shi ne sirrin da aka ɓoye a cikin na'urori, ƙofofin biyan kuɗi, da middleware na gargajiya.</p>
+<h3 id="fintechs-psps-da-cibiyoyin-masu-kusanci-da-crypto">FinTechs, PSPs, da Cibiyoyin Masu Kusanci da Crypto <a class="heading-anchor" href="#fintechs-psps-da-cibiyoyin-masu-kusanci-da-crypto" aria-label="Hanyar haɗi zuwa FinTechs, PSPs, da Cibiyoyin Masu Kusanci da Crypto">#</a></h3>
+<p>FinTechs na iya motsawa cikin sauri saboda yawanci suna da ɗan ƙarancin manunan amincewa na gargajiya. Haɗarin shi ne sako-sako a APIs na ɓangare na uku, tsoffin saituna na KMS na girgije, kayan aikin walat, da haɗin haƙƙin riƙewa. Kamfanonin masu kusanci da crypto ya kamata su yi taka tsantsan musamman kar a rikitar da labaran tsaron blockchain-na asali da shirin post-quantum.</p>
+<h3 id="injiniyoyi-da-masu-gini-na-tsaro">Injiniyoyi da Masu Gini na Tsaro <a class="heading-anchor" href="#injiniyoyi-da-masu-gini-na-tsaro" aria-label="Hanyar haɗi zuwa Injiniyoyi da Masu Gini na Tsaro">#</a></h3>
+<p>Horon injiniya yana da tabbas: ƙara metadata na algorithm zuwa kayan aikin sabis, yi log na yanayin protocol da aka tattauna, ƙirƙira tutoci na fasali masu aminci don gwaje-gwaje na haɗaka, gajarta rayuwar takaddun shaida inda zai yiwu, cire zato na algorithm da aka tsage da lambar, kuma sanya manufar sirri ta zama mai turawa ta hanyar saiti maimakon rassa na lamba.</p>
+<h2 id="arshe">Ƙarshe <a class="heading-anchor" href="#arshe" aria-label="Hanyar haɗi zuwa Ƙarshe">#</a></h2>
+<p>Sake saita sirrin quantum ba siyan fasaha ɗaya ba ne. Tsari ne na aiki na sirri. NIST ya ba da masana'antu tushen ƙa'idodi, NCSC ya rage jagorancin aiki, ƙungiyoyin protocol har yanzu suna motsawa, kuma tabbatar QKD yana zama mafi tsari. Cibiyoyin banki da za su yi nasara wannan sauyi ba za su zama waɗanda suka sanar da babbar gwaji ba. Za su zama cibiyoyin da suka san inda sirri na su ke zama, sun san wace bayanai ke buƙatar kariya da farko, kuma za su iya canza abubuwan da ke farko na sirri ba tare da sake gina banki ba.</p>
+<h2 id="tambayoyin-da-ake-yawan-yi">Tambayoyin da ake Yawan Yi <a class="heading-anchor" href="#tambayoyin-da-ake-yawan-yi" aria-label="Hanyar haɗi zuwa Tambayoyin da ake Yawan Yi">#</a></h2>
+<p><strong>Shin sirrin post-quantum ya shirya don bankuna su yi amfani da shi?</strong></p>
+<p>Ya shirya don tsarawa, haɗin gwiwa da masu samar da kayayyaki, gwaje-gwaje, da zaɓaɓɓun ayyukan aiwatarwa. NIST ya ce ƙa'idodi uku sun shirya don aiwatar, yayin da NCSC ke kashedi cewa amfani na aiki ya kamata ya dogara da aiwatar da ƙa'idodin ƙarshe masu ƙarfi da protocols masu ƙarko (<a href="https://www.nist.gov/pqc" title="NIST Post-Quantum Cryptography">NIST</a>, <a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC next steps in preparing for PQC">NCSC</a>).</p>
+<p><strong>Shin QKD yana kawar da buƙatar PQC?</strong></p>
+<p>Aa. QKD na iya zama mai amfani ga maɓallai na musamman da aka sarrafa, amma PQC shi ne hanyar ƙaura mai iya faɗaɗawa ga software na gabaɗaya, protocols na yanar gizo, APIs, takaddun shaida, da tsarin kasuwanci. QKD kuma yana dogara da tsare-tsaren tabbatarwa da tabbatarwa kafin a iya ɗaukar shi a matsayin kayan aikin banki (<a href="https://www.idquantique.com/etsi-releases-qkd-protection-profile/" title="ETSI releases QKD Protection Profile">ID Quantique / ETSI QKD 016</a>).</p>
+<p><strong>Me ya kamata a ƙaura farko?</strong></p>
+<p>Ya kamata a ba fifiko ga tsarin da ke kare bayanai masu mahimmanci masu dadewa. Wannan ya haɗa da ɓoye-bayanan-tarihi, binciken biyan kuɗi, takaddun baitulmali da kasuwannin jari, rikodin shaidar banki na sirri, fayilolin yarjejeniyoyin dabaru, hukumomin takaddun shaida na tushe, sa hannun firmware, da hanyoyin tsakanin-bankuna.</p>
+<p><strong>Mene ne tarko mafi girma na aiwatarwa?</strong></p>
+<p>Tarko mafi girma shi ne ɗaukar PQC a matsayin canjin algorithm. Ƙaura yana taɓa protocols, takaddun shaida, HSMs, masu samar da kayayyaki, gwajin aiki, amsar lamarin, sa ido, da gudanarwa. Ba tare da sassaucin sirri ba, cibiyar kawai tana sake ƙirƙirar matsalar ƙaura iri ɗaya don canjin algorithm na gaba.</p>
+<h2 id="manazarta">Manazarta <a class="heading-anchor" href="#manazarta" aria-label="Hanyar haɗi zuwa Manazarta">#</a></h2>
+<ul>
+<li>NIST, (2025). <a href="https://www.nist.gov/pqc" title="Post-quantum cryptography">Sirrin post-quantum ⧉</a>.</li>
+<li>NCSC, (2024). <a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC PQC guidance">Matakai na gaba a shirin sirrin post-quantum ⧉</a>.</li>
+<li>NIST CSRC, (2026). <a href="https://csrc.nist.gov/presentations/2026/mpts2026-3b1" title="The NIST PQC Project">Aikin Sirrin Post-Quantum na NIST ⧉</a>.</li>
+<li>ID Quantique, (2024). <a href="https://www.idquantique.com/etsi-releases-qkd-protection-profile/" title="ETSI QKD 016">ETSI ya saki Bayanin Kariya na farko a duniya don QKD ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ha/game-da-mu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/ha/game-da-mu/index.html">Cikakken bayanin martaba</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Bita ta ƙarshe <time datetime="2026-05-18">2026-05-18</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/ha/game-da-mu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Manyan masanin fasahar banki; ina rubutu kan AI mai amfani, ƙaura zuwa ISO 20022, kiriftografi bayan kwantum don sabis na kuɗi da sauye-sauyen tsari na biyan kuɗi na manyan.</span><span class="author-credentials">Fiye da shekaru 20 na ƙwarewa a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/ha/game-da-mu/index.html">Cikakken bayanin martaba</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Bita ta ƙarshe <time datetime="2026-05-18">2026-05-18</time>.</p><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Tushen bayanai & nassoshi</h2><ol class="article-sources-list"><li><a href="https://www.nist.gov/pqc" rel="external noopener nofollow"><span class="source-host">www.nist.gov</span><span class="source-path">/pqc</span></a></li><li><a href="https://csrc.nist.gov/presentations/2026/mpts2026-3b1" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/presentations/2026/mpts2026-3b1</span></a></li></ol></aside><nav class="post-pagination" aria-label="Shafin labarin"><a class="post-pagination-prev" href="/ha/2026-05-17-agentic-engineering-banks-blueprint-2026/"><span class="post-pagination-label">Baya</span><span class="post-pagination-title">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ha/game-da-mu/index.html">About</a></li>
+              <li><a href="/ha/tuntube-mu/index.html">Contact</a></li>
+              <li><a href="/ha/an-yi-da-static-site-generator/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Rubuce-rubuce</h2>
+            <ul>
+              <li><a href="/ha/labarai/index.html">Articles</a></li>
+              <li><a href="/ha/takardun-bincike/index.html">Papers</a></li>
+              <li><a href="/ha/tags/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Aiki</h2>
+            <ul>
+              <li><a href="/ha/ayyukan/index.html">Projects</a></li>
+              <li><a href="/ha/jerin-waka/index.html">Playlists</a></li>
+              <li><a href="/ha/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Tuntuɓa</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Yi rajistar wasiƙar labarai">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — bayanan bincike kan biyan kuɗi, AI da kiriftografi bayan kwantum. Babu spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="kai@banki.com.ng" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Yi rajista</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Hanyoyin sadarwa na zamantakewa">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau a kan Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau a kan Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau a kan LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau a kan LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau a kan Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau a kan Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau a kan YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau a kan YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ha/isar-da-hannu/index.html">Accessibility</a> ·
+            <a href="/ha/sirri/index.html">Privacy</a> ·
+            <a href="/ha/sharudda/index.html">Terms</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ha"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ha"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2302,"headline":"Sake Saita Sirrin Quantum a 2026: Ƙa'idodin PQC, Tabbatar QKD, da Aikin Ƙaura da Bankuna Ba Za Su Iya Jinkirtawa Ba","description":"Sirrin quantum a 2026 ba muhawara ba ne kan ko kwamfutoci na quantum suna kusa. Shirin ƙaura ne na sirrin post-quantum, sassaucin sirri, tabbatar rabon maɓallin quantum, ƙa'idodin protocol, shirin masu samar da kayayyaki, da bayanan kuɗi masu dadewa waɗanda tuni ke fuskantar haɗarin ‘girbi-yanzu-warkar-da-baya’.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp","width":"100vw","height":"100vh","caption":"Taswirar ƙaura na sirrin lafiya na quantum na 2026 yana nuna ƙa'idodin NIST PQC, aikin protocol na haɗaka, tabbatar QKD, sassaucin sirri, da matakan haɗarin bayanan banki"},"url":"https://sebastienrousseau.com/ha/2026-05-18-quantum-cryptography-standards-developments-2026/","datePublished":"2026-05-18T06:06:06+00:00","dateModified":"2026-05-18","inLanguage":"ha","keywords":"sirrin quantum 2026, sirrin post-quantum, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, musayar maɓalli haɗaka, QKD, ETSI QKD, ISO IEC 23837, sassaucin sirri, harvest now decrypt later, HNDL, sirrin sabis na kuɗi, tsaron banki","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ha/2026-05-18-quantum-cryptography-standards-developments-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ha"},"citation":[{"@type":"CreativeWork","url":"https://www.nist.gov/pqc"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/presentations/2026/mpts2026-3b1"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ha/"},{"@type":"ListItem","position":3,"name":"Sake Saita Sirrin Quantum a 2026: Ƙa'idodin PQC, Tabbatar QKD, da Aikin Ƙaura da Bankuna Ba Za Su Iya Jinkirtawa Ba","item":"https://sebastienrousseau.com/ha/2026-05-18-quantum-cryptography-standards-developments-2026/"}]}]}</script>
+<script src="/main.f6d240db.js" integrity="sha256-9tJA2wY/3I+5OuXezpCLH3rb8KlkFS651l1/veOMebM=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Bincika">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Bincika</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Bincika">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Bincika cikin takardu..." autocomplete="off" aria-label="Bincika"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> rufe</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> kewayawa</span><span><kbd>Enter</kbd> buɗe</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Sake Saita Sirrin Quantum a 2026: Ƙa'idodin PQC, Tabbatar QKD, da Aikin Ƙaura da Bankuna Ba Za Su Iya Jinkirtawa Ba","url":"https://sebastienrousseau.com/ha/2026-05-18-quantum-cryptography-standards-developments-2026/","inLanguage":"ha-NG","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"sirrin quantum 2026, sirrin post-quantum, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, musayar maɓalli haɗaka, QKD, ETSI QKD, ISO IEC 23837, sassaucin sirri, harvest now decrypt later, HNDL, sirrin sabis na kuɗi, tsaron banki","dependencies":["Post-Quantum Cryptography","NIST","NIST FIPS 203"]}</script></body>
+</html>

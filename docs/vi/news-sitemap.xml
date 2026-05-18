@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/vi/2026-05-18-mat-ma-luong-tu-tieu-chuan-phat-trien-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>vi-VN</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
+    <news:title>Tái thiết mật mã lượng tử 2026: tiêu chuẩn PQC, bảo đảm QKD và công việc di trú mà ngân hàng không thể trì hoãn</news:title>
+    <news:keywords>mật mã lượng tử 2026, mật mã hậu lượng tử, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, trao đổi khoá lai, QKD, ETSI QKD, ISO IEC 23837, tính linh hoạt mật mã, harvest now decrypt later, HNDL, mật mã dịch vụ tài chính, bảo mật ngân hàng</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/vi/2026-05-17-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026/</loc>
   <news:news>
     <news:publication>

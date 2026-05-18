@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/th/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/th/"/>
   <id>https://sebastienrousseau.com/th/</id>
-  <updated>2026-05-18T07:36:27+00:00</updated>
+  <updated>2026-05-18T11:48:18+00:00</updated>
+  <entry>
+    <title>การรีเซ็ตการเข้ารหัสควอนตัมในปี 2026: มาตรฐาน PQC การประกัน QKD และงานอพยพที่ธนาคารไม่อาจเลื่อนได้</title>
+    <link href="https://sebastienrousseau.com/th/2026-05-18-witsawakam-khrip-thografi-khwantam-mathana-2026/"/>
+    <id>https://sebastienrousseau.com/th/2026-05-18-witsawakam-khrip-thografi-khwantam-mathana-2026/</id>
+    <updated>2026-05-18T06:06:06+00:00</updated>
+    <published>2026-05-18T06:06:06+00:00</published>
+    <summary>การเข้ารหัสควอนตัมในปี 2026 ไม่ใช่การโต้แย้งอีกต่อไปว่าคอมพิวเตอร์ควอนตัมจะมาถึงเมื่อไร แต่เป็นโปรแกรมอพยพข้ามการเข้ารหัสหลังควอนตัม ความคล่องตัวด้านการเข้ารหัส การประกันการแจกจ่ายคีย์ควอนตัม มาตรฐานโปรโตคอล ความพร้อมของผู้จัดส่ง และข้อมูลทางการเงินอายุยืนที่ถูกเปิดต่อความเสี่ยง &apos;เก็บเกี่ยววันนี้ ถอดรหัสภายหลัง&apos; ไปแล้ว</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán</title>
     <link href="https://sebastienrousseau.com/th/2026-05-17-witsawakam-agentic-thanakhan-phaen-2026/"/>

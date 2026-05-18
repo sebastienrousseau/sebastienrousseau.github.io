@@ -6,8 +6,38 @@
     <description>Artikel auf Deutsch: angewandte KI, ISO-20022-Zahlungen, Post-Quanten-Kryptografie und Transformation des Wholesale-Zahlungsverkehrs.</description>
     <atom:link href="https://sebastienrousseau.com/de/rss.xml" rel="self" type="application/rss+xml"/>
     <language>de-DE</language>
-    <lastBuildDate>Mon, 18 May 2026 07:36:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 11:48:18 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle Rechte vorbehalten.</copyright>
+    <item>
+      <title>Der Quantenkryptografie-Reset 2026: PQC-Standards, QKD-Assurance und die Migrationsarbeit, die Banken nicht länger aufschieben können</title>
+      <link>https://sebastienrousseau.com/de/2026-05-18-quantenkryptografie-standards-entwicklungen-2026/</link>
+      <description>Quantenkryptografie ist 2026 keine Debatte mehr darüber, ob Quantencomputer kurz bevorstehen. Sie ist ein Migrationsprogramm über Post-Quanten-Kryptografie, Krypto-Agilität, QKD-Assurance, Protokollstandards, Lieferantenreife und langlebige Finanzdaten, die bereits dem Harvest-now-decrypt-later-Risiko ausgesetzt sind.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-18-quantenkryptografie-standards-entwicklungen-2026/</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp" type="image/webp" length="0"/>
+      <category>Quantenkryptografie 2026</category>
+      <category>Post-Quanten-Kryptografie</category>
+      <category>NIST FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>FIPS 205</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>NCSC PQC</category>
+      <category>IETF TLS</category>
+      <category>IPsec</category>
+      <category>RFC 9794</category>
+      <category>hybrider Schlüsselaustausch</category>
+      <category>QKD</category>
+      <category>ETSI QKD</category>
+      <category>ISO IEC 23837</category>
+      <category>Krypto-Agilität</category>
+      <category>harvest now decrypt later</category>
+      <category>HNDL</category>
+      <category>Kryptografie für Finanzdienstleistungen</category>
+      <category>Banksicherheit</category>
+    </item>
     <item>
       <title>Agentische Engineering für Banken: ein Blueprint 2026 für den Vorstand und die Ingenieure, die ihn bauen werden</title>
       <link>https://sebastienrousseau.com/de/2026-05-17-agentische-engineering-banken-blueprint-2026/</link>

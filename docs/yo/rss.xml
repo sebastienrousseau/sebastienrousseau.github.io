@@ -6,8 +6,38 @@
     <description>Awọn akọle Yorùbá: AI tó wúlò, ìsanwó ISO 20022, kírípítógíráfì lẹ́yìn-kuántọ́mù, àti àtúnṣe ètò ìsanwó ńláńlá.</description>
     <atom:link href="https://sebastienrousseau.com/yo/rss.xml" rel="self" type="application/rss+xml"/>
     <language>yo-NG</language>
-    <lastBuildDate>Mon, 18 May 2026 07:36:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 11:48:18 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Gbogbo ẹtọ ti wa ni ipamọ.</copyright>
+    <item>
+      <title>Àtúnṣe Cryptography Quantum ní 2026: Àwọn Ìlànà PQC, Ìdánilójú QKD, àti Iṣẹ́ Ìṣípò tí Àwọn Báńkì Kò Lè Sún Síwájú</title>
+      <link>https://sebastienrousseau.com/yo/2026-05-18-quantum-cryptography-standards-developments-2026/</link>
+      <description>Cryptography quantum ní 2026 kì í ṣe àríyànjiyàn mọ́ nípa bóyá àwọn kọ̀ǹpútà quantum sún mọ́. Ó jẹ́ ètò ìṣípò kọjá cryptography post-quantum, ìrọ̀rùn-crypto, ìdánilójú pípèsè kọ́kọ́rọ́ quantum, àwọn ìlànà ìlànà, ìmúrasílẹ̀ olùpèsè, àti àwọn dátà ìṣúná onípẹ̀kun tí ó ti farahàn sí ewu ‘kórè-nísinsìnyí-tú-padà-lẹ́yìn’.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-18-quantum-cryptography-standards-developments-2026/</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp" type="image/webp" length="0"/>
+      <category>cryptography quantum 2026</category>
+      <category>cryptography post-quantum</category>
+      <category>NIST FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>FIPS 205</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>NCSC PQC</category>
+      <category>IETF TLS</category>
+      <category>IPsec</category>
+      <category>RFC 9794</category>
+      <category>ìpààrọ̀ kọ́kọ́rọ́ àpapọ̀</category>
+      <category>QKD</category>
+      <category>ETSI QKD</category>
+      <category>ISO IEC 23837</category>
+      <category>ìrọ̀rùn-crypto</category>
+      <category>harvest now decrypt later</category>
+      <category>HNDL</category>
+      <category>cryptography iṣẹ́ ìṣúná</category>
+      <category>ààbò báńkì</category>
+    </item>
     <item>
       <title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
       <link>https://sebastienrousseau.com/yo/2026-05-17-agentic-engineering-banks-blueprint-2026/</link>

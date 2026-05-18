@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/ru/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ru/"/>
   <id>https://sebastienrousseau.com/ru/</id>
-  <updated>2026-05-18T07:36:27+00:00</updated>
+  <updated>2026-05-18T11:48:18+00:00</updated>
+  <entry>
+    <title>Перезапуск квантовой криптографии в 2026 году: стандарты PQC, гарантии QKD и работа по миграции, которую банки не могут отложить</title>
+    <link href="https://sebastienrousseau.com/ru/2026-05-18-kvantovaya-kriptografiya-standarty-razvitiye-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-05-18-kvantovaya-kriptografiya-standarty-razvitiye-2026/</id>
+    <updated>2026-05-18T06:06:06+00:00</updated>
+    <published>2026-05-18T06:06:06+00:00</published>
+    <summary>Квантовая криптография в 2026 году — это уже не дебаты о том, насколько близки квантовые компьютеры. Это программа миграции по постквантовой криптографии, криптографической гибкости, гарантиям квантовой распределения ключей, протокольным стандартам, готовности поставщиков и долгоживущим финансовым данным, которые уже подвержены риску harvest-now-decrypt-later.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Агентная инженерия: план для банков 2026</title>
     <link href="https://sebastienrousseau.com/ru/2026-05-17-agentnaya-inzheneriya-plan-dlya-bankov-2026/"/>

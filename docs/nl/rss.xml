@@ -6,8 +6,38 @@
     <description>Artikelen in het Nederlands: toegepaste AI, ISO 20022-betalingen, post-kwantumcryptografie en transformatie van het wholesale-betalingsverkeer.</description>
     <atom:link href="https://sebastienrousseau.com/nl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>nl-NL</language>
-    <lastBuildDate>Mon, 18 May 2026 07:36:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 11:48:18 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden.</copyright>
+    <item>
+      <title>De reset van kwantumcryptografie in 2026: PQC-standaarden, QKD-assurance en het migratiewerk dat banken niet langer kunnen uitstellen</title>
+      <link>https://sebastienrousseau.com/nl/2026-05-18-kwantumcryptografie-standaarden-ontwikkelingen-2026/</link>
+      <description>Kwantumcryptografie in 2026 is niet langer een debat over de vraag of kwantumcomputers nakend zijn. Het is een migratieprogramma dat post-kwantumcryptografie, crypto-agility, QKD-assurance, protocolstandaarden, leveranciersparaatheid en langlevende financiële data raakt die al worden blootgesteld aan het «harvest-now-decrypt-later»-risico.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-18-kwantumcryptografie-standaarden-ontwikkelingen-2026/</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp" type="image/webp" length="0"/>
+      <category>kwantumcryptografie 2026</category>
+      <category>post-kwantumcryptografie</category>
+      <category>NIST FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>FIPS 205</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>NCSC PQC</category>
+      <category>IETF TLS</category>
+      <category>IPsec</category>
+      <category>RFC 9794</category>
+      <category>hybride sleuteluitwisseling</category>
+      <category>QKD</category>
+      <category>ETSI QKD</category>
+      <category>ISO IEC 23837</category>
+      <category>crypto-agility</category>
+      <category>harvest now decrypt later</category>
+      <category>HNDL</category>
+      <category>cryptografie voor financiële dienstverlening</category>
+      <category>bankbeveiliging</category>
+    </item>
     <item>
       <title>Agentic engineering voor banken: blauwdruk 2026</title>
       <link>https://sebastienrousseau.com/nl/2026-05-17-agentic-engineering-banken-blauwdruk-2026/</link>

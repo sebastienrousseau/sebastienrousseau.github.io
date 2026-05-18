@@ -6,8 +6,38 @@
     <description>Articoli in italiano: IA applicata, pagamenti ISO 20022, crittografia post-quantistica e trasformazione dei pagamenti wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/it/rss.xml" rel="self" type="application/rss+xml"/>
     <language>it-IT</language>
-    <lastBuildDate>Mon, 18 May 2026 07:36:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 11:48:18 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tutti i diritti riservati.</copyright>
+    <item>
+      <title>Il reset della crittografia quantistica nel 2026: standard PQC, garanzia QKD e il lavoro di migrazione che le banche non possono più rimandare</title>
+      <link>https://sebastienrousseau.com/it/2026-05-18-crittografia-quantistica-standard-sviluppi-2026/</link>
+      <description>La crittografia quantistica nel 2026 non è più un dibattito su quando arriveranno i computer quantistici. È un programma di migrazione che attraversa la crittografia post-quantum, la crypto-agility, la garanzia della distribuzione quantistica di chiavi, gli standard di protocollo, la maturità dei fornitori e i dati finanziari di lunga durata già esposti al rischio «harvest-now-decrypt-later».</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-18-crittografia-quantistica-standard-sviluppi-2026/</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp" type="image/webp" length="0"/>
+      <category>crittografia quantistica 2026</category>
+      <category>crittografia post-quantum</category>
+      <category>NIST FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>FIPS 205</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>NCSC PQC</category>
+      <category>IETF TLS</category>
+      <category>IPsec</category>
+      <category>RFC 9794</category>
+      <category>scambio di chiavi ibrido</category>
+      <category>QKD</category>
+      <category>ETSI QKD</category>
+      <category>ISO IEC 23837</category>
+      <category>crypto-agility</category>
+      <category>harvest now decrypt later</category>
+      <category>HNDL</category>
+      <category>crittografia per i servizi finanziari</category>
+      <category>sicurezza bancaria</category>
+    </item>
     <item>
       <title>Ingegneria agentica per le banche: blueprint 2026</title>
       <link>https://sebastienrousseau.com/it/2026-05-17-ingegneria-agentica-banche-blueprint-2026/</link>

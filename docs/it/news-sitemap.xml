@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/it/2026-05-18-crittografia-quantistica-standard-sviluppi-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it-IT</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
+    <news:title>Il reset della crittografia quantistica nel 2026: standard PQC, garanzia QKD e il lavoro di migrazione che le banche non possono più rimandare</news:title>
+    <news:keywords>crittografia quantistica 2026, crittografia post-quantum, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, scambio di chiavi ibrido, QKD, ETSI QKD, ISO IEC 23837, crypto-agility, harvest now decrypt later, HNDL, crittografia per i servizi finanziari, sicurezza bancaria</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/it/2026-05-17-ingegneria-agentica-banche-blueprint-2026/</loc>
   <news:news>
     <news:publication>
