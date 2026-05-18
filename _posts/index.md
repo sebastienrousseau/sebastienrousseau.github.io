@@ -235,25 +235,25 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html" title="The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services">
+<a class="newsroom-card-media" href="/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html" title="The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services">
 <img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Cloud · AI-Native · Post-Quantum</span>
-<h3><a href="/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-21">May 21, 2026</time></p>
+<h3><a href="/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-16">May 16, 2026</time></p>
 <p class="newsroom-excerpt">Cloud architecture has crystallised around six pillars and one strategic question for banks: whether to consume cloud or design it — under converging pressure from agentic commerce, agentic unit economics, harvest-now-decrypt-later quantum risk, MCP security, cryptographic agent identity, and the legacy estate that still consumes 70–75% of financial-services IT spend.</p>
 </div>
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html" title="Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It">
+<a class="newsroom-card-media" href="/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html" title="Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It">
 <img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Applied AI · Governance · Engineering</span>
-<h3><a href="/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-18">May 18, 2026</time></p>
+<h3><a href="/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-17">May 17, 2026</time></p>
 <p class="newsroom-excerpt">70% of banks now use agentic AI in some form; only one in five has a mature governance model. With the EU AI Act high-risk deadline twelve weeks away and autonomous adversaries operating at machine speed, this is the engineering and governance position a bank needs to hold.</p>
 </div>
 </article>

@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Một sơ đồ kiến trúc của một nền tảng blockchain",
-  "language": "vi-VN",
-  "title": "Xây dựng nền tảng Express Transaction Credits",
-  "locale": "vi_VN",
-  "keywords": "Express Transaction Credits, blockchain, kiến trúc, đồng thuận, phát triển, kỹ thuật, fintech",
-  "subtitle": "Hành trình kỹ thuật từ ý tưởng đến triển khai",
-  "date": "February 15, 2018",
   "banner": "https://cloudcdn.pro/stocks/images/etc-build.webp",
-  "description": "Quá trình thiết kế và xây dựng Express Transaction Credits — các quyết định kỹ thuật, các trade-off và bài học rút ra."
+  "title": "Xây dựng nền tảng Express Transaction Credits",
+  "date": "February 15, 2018",
+  "language": "vi-VN",
+  "banner_alt": "Một sơ đồ kiến trúc của một nền tảng blockchain",
+  "locale": "vi_VN",
+  "description": "Quá trình thiết kế và xây dựng Express Transaction Credits — các quyết định kỹ thuật, các trade-off và bài học rút ra.",
+  "subtitle": "Hành trình kỹ thuật từ ý tưởng đến triển khai",
+  "keywords": "Express Transaction Credits, blockchain, kiến trúc, đồng thuận, phát triển, kỹ thuật, fintech"
 }

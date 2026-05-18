@@ -6,14 +6,30 @@
     <description>Artykuły po polsku: stosowana sztuczna inteligencja, płatności ISO 20022, kryptografia postkwantowa oraz transformacja płatności hurtowych.</description>
     <atom:link href="https://sebastienrousseau.com/pl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pl-PL</language>
-    <lastBuildDate>Sun, 17 May 2026 09:16:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 06:28:51 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Wszelkie prawa zastrzeżone.</copyright>
     <item>
+      <title>Inżynieria agentowa: blueprint banków na 2026</title>
+      <link>https://sebastienrousseau.com/pl/2026-05-17-inzynieria-agentowa-blueprint-bankow-2026/</link>
+      <description>Blueprint inżynierii agentowej dla banków 2026: jak wdrażać agentów AI w produkcji, zarządzać ryzykiem i mierzyć wpływ.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-17-inzynieria-agentowa-blueprint-bankow-2026/</guid>
+      <pubDate>Sun, 17 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
+      <category>inżynieria agentowa</category>
+      <category>agenci AI</category>
+      <category>bankowość</category>
+      <category>blueprint 2026</category>
+      <category>LLM</category>
+      <category>automatyzacja</category>
+      <category>AI w produkcji</category>
+    </item>
+    <item>
       <title>Najlepsza architektura infrastruktury chmurowej w 2026 roku: natywny AI, multi-cloud, świadomy kwantowo plan dla usług finansowych</title>
-      <link>https://sebastienrousseau.com/pl/2026-05-21-najlepsza-architektura-infrastruktury-chmurowej-2026/</link>
+      <link>https://sebastienrousseau.com/pl/2026-05-16-najlepsza-architektura-infrastruktury-chmurowej-2026/</link>
       <description>Architektura chmurowa w 2026 roku skrystalizowała się wokół sześciu filarów: natywnej dla AI infrastruktury, inteligentnej strategii multi-cloud, projektowania serverless-first z WebAssembly na brzegu sieci, przetwarzania na brzegu, zautomatyzowanego bezpieczeństwa z elastycznością kryptograficzną oraz zrównoważonych operacji o wysokiej gęstości. Dla banków pytanie brzmi, czy konsumować chmurę, czy ją projektować — pod zbieżną presją handlu agentowego, ekonomii jednostkowej agentów, ryzyka kwantowego harvest-now-decrypt-later, bezpieczeństwa MCP i zarażenia algorytmicznego, kryptograficznej tożsamości agentów, wymagań ciągłej skarbowości oraz EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-21-najlepsza-architektura-infrastruktury-chmurowej-2026/</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-16-najlepsza-architektura-infrastruktury-chmurowej-2026/</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>architektura chmurowa 2026</category>
@@ -107,22 +123,6 @@
       <category>Durable Objects</category>
       <category>WCAG-AA</category>
       <category>Sebastien Rousseau</category>
-    </item>
-    <item>
-      <title>Inżynieria agentowa: blueprint banków na 2026</title>
-      <link>https://sebastienrousseau.com/pl/2026-05-18-inzynieria-agentowa-blueprint-bankow-2026/</link>
-      <description>Blueprint inżynierii agentowej dla banków 2026: jak wdrażać agentów AI w produkcji, zarządzać ryzykiem i mierzyć wpływ.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-18-inzynieria-agentowa-blueprint-bankow-2026/</guid>
-      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
-      <category>inżynieria agentowa</category>
-      <category>agenci AI</category>
-      <category>bankowość</category>
-      <category>blueprint 2026</category>
-      <category>LLM</category>
-      <category>automatyzacja</category>
-      <category>AI w produkcji</category>
     </item>
     <item>
       <title>BlackRock BRSRV/BSTBL: GENIUS Act i tokenizowany fundusz rynku pieniężnego</title>

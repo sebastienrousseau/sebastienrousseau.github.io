@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/ja/2026-05-21-2026-saiyou-no-kuraudo-infura-aakitekucha/</loc>
+  <loc>https://sebastienrousseau.com/ja/2026-05-17-eejentikku-enjiniaringu-ginkou-no-2026-sekkeizu/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ja-JP</news:language>
     </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>2026年の最良のクラウドインフラストラクチャアーキテクチャ:金融サービスのためのAIネイティブ・マルチクラウド・量子対応設計図</news:title>
-    <news:keywords>クラウドアーキテクチャ 2026, AIネイティブインフラ, マルチクラウド, ソブリンクラウド, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, ソブリンAI, オープンウェイトモデル, Llama 4, Mistral, コンフィデンシャルコンピューティング, サーバーレス, エッジコンピューティング, WebAssembly, Wasm, eBPF, Cilium, Tetragon, LEO衛星エッジ, Starlink Enterprise, DevSecOps, サステナブルデータセンター, グリッドアウェアコンピューティング, 液冷, 小型モジュール炉, SMR, 原子力, スリーマイル島, Kairos Power, X-Energy, シリコンフォトニクス, 共パッケージ光学, NVIDIA Spectrum-X, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, エージェント型コマース, マルチエージェントスウォーム, エージェント型ユニットエコノミクス, エージェントFinOps, 暗号学的エージェントアイデンティティ, SPIFFE, SPIRE, アルゴリズム的伝染, RAGポイズニング, ベクトルデータベースセキュリティ, データ来歴, Pinecone, Qdrant, Weaviate, Milvus, エージェント型カオスエンジニアリング, データグラビティ, エグレスFinOps, HPC, GPUストレージ, 継続的トレジャリー, ボーダーレス流動性, リアルタイム決済, CBDC, eCNY, DREX, e-Rupee, BIS Project Agora, デジタルユーロ, 合成データ生成, JPMorgan マルチクラウド, Citi 近代化, グラフニューラルネットワーク, ディープフェイク不正, ハーベスト・ナウ・ディクリプト・レイター, HNDL, 耐量子暗号, ML-KEM, ML-DSA, クリプトアジリティ, 量子鍵配送, QKD, Basel IV, クラウド集中リスク, オペレーショナルリスクRWA, MCPセキュリティ, プロンプトインジェクション, サプライチェーン攻撃, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
+    <news:publication_date>2026-05-17T06:06:06+00:00</news:publication_date>
+    <news:title>エージェンティック・エンジニアリング:銀行の 2026 年設計図</news:title>
+    <news:keywords>エージェンティック AI, エージェント, AI オーケストレーション, MCP, AIBOM, EU AI 法, 銀行ソフトウェア, Bedrock Agents, Vertex AI Agent Builder, Azure AI Foundry</news:keywords>
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/ja/2026-05-18-eejentikku-enjiniaringu-ginkou-no-2026-sekkeizu/</loc>
+  <loc>https://sebastienrousseau.com/ja/2026-05-16-2026-saiyou-no-kuraudo-infura-aakitekucha/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ja-JP</news:language>
     </news:publication>
-    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
-    <news:title>エージェンティック・エンジニアリング:銀行の 2026 年設計図</news:title>
-    <news:keywords>エージェンティック AI, エージェント, AI オーケストレーション, MCP, AIBOM, EU AI 法, 銀行ソフトウェア, Bedrock Agents, Vertex AI Agent Builder, Azure AI Foundry</news:keywords>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>2026年の最良のクラウドインフラストラクチャアーキテクチャ:金融サービスのためのAIネイティブ・マルチクラウド・量子対応設計図</news:title>
+    <news:keywords>クラウドアーキテクチャ 2026, AIネイティブインフラ, マルチクラウド, ソブリンクラウド, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, ソブリンAI, オープンウェイトモデル, Llama 4, Mistral, コンフィデンシャルコンピューティング, サーバーレス, エッジコンピューティング, WebAssembly, Wasm, eBPF, Cilium, Tetragon, LEO衛星エッジ, Starlink Enterprise, DevSecOps, サステナブルデータセンター, グリッドアウェアコンピューティング, 液冷, 小型モジュール炉, SMR, 原子力, スリーマイル島, Kairos Power, X-Energy, シリコンフォトニクス, 共パッケージ光学, NVIDIA Spectrum-X, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, エージェント型コマース, マルチエージェントスウォーム, エージェント型ユニットエコノミクス, エージェントFinOps, 暗号学的エージェントアイデンティティ, SPIFFE, SPIRE, アルゴリズム的伝染, RAGポイズニング, ベクトルデータベースセキュリティ, データ来歴, Pinecone, Qdrant, Weaviate, Milvus, エージェント型カオスエンジニアリング, データグラビティ, エグレスFinOps, HPC, GPUストレージ, 継続的トレジャリー, ボーダーレス流動性, リアルタイム決済, CBDC, eCNY, DREX, e-Rupee, BIS Project Agora, デジタルユーロ, 合成データ生成, JPMorgan マルチクラウド, Citi 近代化, グラフニューラルネットワーク, ディープフェイク不正, ハーベスト・ナウ・ディクリプト・レイター, HNDL, 耐量子暗号, ML-KEM, ML-DSA, クリプトアジリティ, 量子鍵配送, QKD, Basel IV, クラウド集中リスク, オペレーショナルリスクRWA, MCPセキュリティ, プロンプトインジェクション, サプライチェーン攻撃, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
   </news:news>
 </url>
 <url>

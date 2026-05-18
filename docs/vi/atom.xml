@@ -4,23 +4,23 @@
   <link href="https://sebastienrousseau.com/vi/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/vi/"/>
   <id>https://sebastienrousseau.com/vi/</id>
-  <updated>2026-05-17T09:16:06+00:00</updated>
+  <updated>2026-05-18T06:28:51+00:00</updated>
   <entry>
-    <title>Kiến trúc hạ tầng đám mây tốt nhất năm 2026: Bản thiết kế AI-Native, Đa đám mây, Sẵn sàng Lượng tử cho Dịch vụ Tài chính</title>
-    <link href="https://sebastienrousseau.com/vi/2026-05-21-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/"/>
-    <id>https://sebastienrousseau.com/vi/2026-05-21-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/</id>
-    <updated>2026-05-21T06:06:06+00:00</updated>
-    <published>2026-05-21T06:06:06+00:00</published>
-    <summary>Kiến trúc hạ tầng đám mây năm 2026 đã kết tinh quanh sáu trụ cột: hạ tầng AI-native, đa đám mây thông minh, thiết kế serverless-first với WebAssembly tại biên, điện toán biên, an ninh tự động hoá với tính linh hoạt mật mã, và vận hành mật độ cao bền vững. Với ngân hàng, câu hỏi là liệu nên tiêu thụ đám mây hay thiết kế nó — dưới áp lực hội tụ từ thương mại agentic, kinh tế đơn vị agentic, rủi ro lượng tử kiểu thu hoạch ngay - giải mã sau, an ninh MCP và lây nhiễm thuật toán, danh tính tác nhân bằng mật mã, các nhu cầu kho bạc liên tục, và Đạo luật AI của EU.</summary>
+    <title>Kỹ thuật agentic: bản thiết kế ngân hàng 2026</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-17-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-17-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026/</id>
+    <updated>2026-05-17T06:06:06+00:00</updated>
+    <published>2026-05-17T06:06:06+00:00</published>
+    <summary>Kỹ thuật agentic — sử dụng các tác tử AI tự chủ để hoàn thành các tác vụ phức tạp. Một bản thiết kế cho việc tích hợp vào hạ tầng ngân hàng.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Kỹ thuật agentic: bản thiết kế ngân hàng 2026</title>
-    <link href="https://sebastienrousseau.com/vi/2026-05-18-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026/"/>
-    <id>https://sebastienrousseau.com/vi/2026-05-18-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026/</id>
-    <updated>2026-05-18T06:06:06+00:00</updated>
-    <published>2026-05-18T06:06:06+00:00</published>
-    <summary>Kỹ thuật agentic — sử dụng các tác tử AI tự chủ để hoàn thành các tác vụ phức tạp. Một bản thiết kế cho việc tích hợp vào hạ tầng ngân hàng.</summary>
+    <title>Kiến trúc hạ tầng đám mây tốt nhất năm 2026: Bản thiết kế AI-Native, Đa đám mây, Sẵn sàng Lượng tử cho Dịch vụ Tài chính</title>
+    <link href="https://sebastienrousseau.com/vi/2026-05-16-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/"/>
+    <id>https://sebastienrousseau.com/vi/2026-05-16-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/</id>
+    <updated>2026-05-16T06:06:06+00:00</updated>
+    <published>2026-05-16T06:06:06+00:00</published>
+    <summary>Kiến trúc hạ tầng đám mây năm 2026 đã kết tinh quanh sáu trụ cột: hạ tầng AI-native, đa đám mây thông minh, thiết kế serverless-first với WebAssembly tại biên, điện toán biên, an ninh tự động hoá với tính linh hoạt mật mã, và vận hành mật độ cao bền vững. Với ngân hàng, câu hỏi là liệu nên tiêu thụ đám mây hay thiết kế nó — dưới áp lực hội tụ từ thương mại agentic, kinh tế đơn vị agentic, rủi ro lượng tử kiểu thu hoạch ngay - giải mã sau, an ninh MCP và lây nhiễm thuật toán, danh tính tác nhân bằng mật mã, các nhu cầu kho bạc liên tục, và Đạo luật AI của EU.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

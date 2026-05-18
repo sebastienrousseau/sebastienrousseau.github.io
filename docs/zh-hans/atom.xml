@@ -4,23 +4,23 @@
   <link href="https://sebastienrousseau.com/zh-hans/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/zh-hans/"/>
   <id>https://sebastienrousseau.com/zh-hans/</id>
-  <updated>2026-05-17T09:16:06+00:00</updated>
+  <updated>2026-05-18T06:28:51+00:00</updated>
   <entry>
-    <title>2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图</title>
-    <link href="https://sebastienrousseau.com/zh-hans/2026-05-21-2026-zuijia-yun-jichu-jiagou/"/>
-    <id>https://sebastienrousseau.com/zh-hans/2026-05-21-2026-zuijia-yun-jichu-jiagou/</id>
-    <updated>2026-05-21T06:06:06+00:00</updated>
-    <published>2026-05-21T06:06:06+00:00</published>
-    <summary>2026 年云架构已围绕六大支柱结晶：AI 原生基础设施、智能多云、带边缘 WebAssembly 的无服务器优先设计、边缘计算、带密码敏捷性的自动化安全，以及可持续高密度运营。对银行而言，问题在于消费云还是设计它——在代理式商业、代理式单位经济学、现在收集-未来解密量子风险、MCP 安全与算法传染、密码代理身份、持续财库需求,以及欧盟 AI 法案的汇聚压力下。</summary>
+    <title>面向银行的代理式工程：2026 年高管团队与工程师蓝图</title>
+    <link href="https://sebastienrousseau.com/zh-hans/2026-05-17-ai-dailixing-gongcheng-yinhang-2026-lantu/"/>
+    <id>https://sebastienrousseau.com/zh-hans/2026-05-17-ai-dailixing-gongcheng-yinhang-2026-lantu/</id>
+    <updated>2026-05-17T06:06:06+00:00</updated>
+    <published>2026-05-17T06:06:06+00:00</published>
+    <summary>代理式 AI 已在全球银行业从试点走向生产；70% 机构在用，仅五分之一拥有成熟治理。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>面向银行的代理式工程：2026 年高管团队与工程师蓝图</title>
-    <link href="https://sebastienrousseau.com/zh-hans/2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu/"/>
-    <id>https://sebastienrousseau.com/zh-hans/2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu/</id>
-    <updated>2026-05-18T06:06:06+00:00</updated>
-    <published>2026-05-18T06:06:06+00:00</published>
-    <summary>代理式 AI 已在全球银行业从试点走向生产；70% 机构在用，仅五分之一拥有成熟治理。</summary>
+    <title>2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图</title>
+    <link href="https://sebastienrousseau.com/zh-hans/2026-05-16-2026-zuijia-yun-jichu-jiagou/"/>
+    <id>https://sebastienrousseau.com/zh-hans/2026-05-16-2026-zuijia-yun-jichu-jiagou/</id>
+    <updated>2026-05-16T06:06:06+00:00</updated>
+    <published>2026-05-16T06:06:06+00:00</published>
+    <summary>2026 年云架构已围绕六大支柱结晶：AI 原生基础设施、智能多云、带边缘 WebAssembly 的无服务器优先设计、边缘计算、带密码敏捷性的自动化安全，以及可持续高密度运营。对银行而言，问题在于消费云还是设计它——在代理式商业、代理式单位经济学、现在收集-未来解密量子风险、MCP 安全与算法传染、密码代理身份、持续财库需求,以及欧盟 AI 法案的汇聚压力下。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

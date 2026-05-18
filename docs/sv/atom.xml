@@ -4,23 +4,23 @@
   <link href="https://sebastienrousseau.com/sv/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/sv/"/>
   <id>https://sebastienrousseau.com/sv/</id>
-  <updated>2026-05-17T09:16:06+00:00</updated>
+  <updated>2026-05-18T06:28:51+00:00</updated>
   <entry>
-    <title>Den bästa molninfrastrukturarkitekturen 2026: En AI-nativ, multi-cloud, kvantmedveten ritning för finansiella tjänster</title>
-    <link href="https://sebastienrousseau.com/sv/2026-05-21-basta-molnarkitektur-for-banker-2026/"/>
-    <id>https://sebastienrousseau.com/sv/2026-05-21-basta-molnarkitektur-for-banker-2026/</id>
-    <updated>2026-05-21T06:06:06+00:00</updated>
-    <published>2026-05-21T06:06:06+00:00</published>
-    <summary>Molnarkitektur 2026 har kristalliserats kring sex pelare: AI-nativ infrastruktur, intelligent multi-cloud, serverlös-först-design med WebAssembly vid edge, edge computing, automatiserad säkerhet med kryptoagilitet och hållbar drift med hög densitet. För banker är frågan om man ska konsumera molnet eller designa det — under konvergerande tryck från agentisk handel, agentisk enhetsekonomi, harvest-now-decrypt-later-kvantrisk, MCP-säkerhet och algoritmisk kontaminering, kryptografisk agentidentitet, krav på kontinuerlig treasury och EU:s AI Act.</summary>
+    <title>Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán</title>
+    <link href="https://sebastienrousseau.com/sv/2026-05-17-agentisk-ingenjorskonst-banker-blueprint-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-05-17-agentisk-ingenjorskonst-banker-blueprint-2026/</id>
+    <updated>2026-05-17T06:06:06+00:00</updated>
+    <published>2026-05-17T06:06:06+00:00</published>
+    <summary>La IA agéntica ha pasado del piloto a la producción en la banca mundial. El 70 % de las instituciones la utiliza en mayor o menor grado; solo una de cada cinco tiene un modelo de gobernanza maduro. Los adversarios autónomos operan a velocidad de máquina, el estate heredado COBOL con el que los nuevos sistemas deben interoperar fue escrito para las hipótesis batch de los años 1960, y el plazo «alto riesgo» del Reglamento europeo de IA está a doce semanas. He aquí la posición de ingeniería y gobernanza que un banco debe sostener.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán</title>
-    <link href="https://sebastienrousseau.com/sv/2026-05-18-agentisk-ingenjorskonst-banker-blueprint-2026/"/>
-    <id>https://sebastienrousseau.com/sv/2026-05-18-agentisk-ingenjorskonst-banker-blueprint-2026/</id>
-    <updated>2026-05-18T06:06:06+00:00</updated>
-    <published>2026-05-18T06:06:06+00:00</published>
-    <summary>La IA agéntica ha pasado del piloto a la producción en la banca mundial. El 70 % de las instituciones la utiliza en mayor o menor grado; solo una de cada cinco tiene un modelo de gobernanza maduro. Los adversarios autónomos operan a velocidad de máquina, el estate heredado COBOL con el que los nuevos sistemas deben interoperar fue escrito para las hipótesis batch de los años 1960, y el plazo «alto riesgo» del Reglamento europeo de IA está a doce semanas. He aquí la posición de ingeniería y gobernanza que un banco debe sostener.</summary>
+    <title>Den bästa molninfrastrukturarkitekturen 2026: En AI-nativ, multi-cloud, kvantmedveten ritning för finansiella tjänster</title>
+    <link href="https://sebastienrousseau.com/sv/2026-05-16-basta-molnarkitektur-for-banker-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-05-16-basta-molnarkitektur-for-banker-2026/</id>
+    <updated>2026-05-16T06:06:06+00:00</updated>
+    <published>2026-05-16T06:06:06+00:00</published>
+    <summary>Molnarkitektur 2026 har kristalliserats kring sex pelare: AI-nativ infrastruktur, intelligent multi-cloud, serverlös-först-design med WebAssembly vid edge, edge computing, automatiserad säkerhet med kryptoagilitet och hållbar drift med hög densitet. För banker är frågan om man ska konsumera molnet eller designa det — under konvergerande tryck från agentisk handel, agentisk enhetsekonomi, harvest-now-decrypt-later-kvantrisk, MCP-säkerhet och algoritmisk kontaminering, kryptografisk agentidentitet, krav på kontinuerlig treasury och EU:s AI Act.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/ro/2026-05-21-best-cloud-infrastructure-architecture-2026/</loc>
+  <loc>https://sebastienrousseau.com/ro/2026-05-17-agentic-engineering-banks-blueprint-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ro-RO</news:language>
     </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Cea mai bună arhitectură de infrastructură cloud în 2026: un plan AI-nativ, multi-cloud și conștient cuantic pentru serviciile financiare</news:title>
-    <news:keywords>arhitectură cloud 2026, infrastructură AI-nativă, multi-cloud, cloud suveran, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, IA suverană, modele cu greutăți deschise, Llama 4, Mistral, confidential computing, serverless, edge computing, WebAssembly, Wasm, eBPF, Cilium, Tetragon, edge satelit LEO, Starlink Enterprise, DevSecOps, centru de date sustenabil, calcul conștient de rețea, răcire lichidă, Small Modular Reactor, SMR, energie nucleară, Three Mile Island, Kairos Power, X-Energy, fotonică pe siliciu, optică co-împachetată, NVIDIA Spectrum-X, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, comerț agentic, roiuri multi-agent, economia unitară agentică, FinOps agentic, identitate criptografică a agenților, SPIFFE, SPIRE, contagiune algoritmică, otrăvirea RAG, securitatea bazelor de date vectoriale, proveniența datelor, Pinecone, Qdrant, Weaviate, Milvus, ingineria haosului agentic, gravitația datelor, FinOps egress, HPC, stocare GPU, trezorerie continuă, lichiditate fără frontiere, plăți în timp real, CBDC, eCNY, DREX, e-Rupee, BIS Project Agora, euro digital, generarea datelor sintetice, JPMorgan multi-cloud, modernizare Citi, rețele neuronale grafice, fraudă deepfake, harvest now decrypt later, HNDL, criptografie post-cuantică, ML-KEM, ML-DSA, agilitate criptografică, distribuția cuantică a cheilor, QKD, Basel IV, risc de concentrare cloud, RWA risc operațional, securitate MCP, prompt injection, atacuri supply chain, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
+    <news:publication_date>2026-05-17T06:06:06+00:00</news:publication_date>
+    <news:title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</news:title>
+    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, COBOL modernisation, mainframe, vibe coding, vibe hacking, autonomous agents, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, third-party risk management, TPRM, vendor risk, post-quantum cryptography, agent control plane, FCA, SM&amp;CR, 12-week action plan, Sebastien Rousseau</news:keywords>
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/ro/2026-05-18-agentic-engineering-banks-blueprint-2026/</loc>
+  <loc>https://sebastienrousseau.com/ro/2026-05-16-best-cloud-infrastructure-architecture-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ro-RO</news:language>
     </news:publication>
-    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
-    <news:title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</news:title>
-    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, COBOL modernisation, mainframe, vibe coding, vibe hacking, autonomous agents, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, third-party risk management, TPRM, vendor risk, post-quantum cryptography, agent control plane, FCA, SM&amp;CR, 12-week action plan, Sebastien Rousseau</news:keywords>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>Cea mai bună arhitectură de infrastructură cloud în 2026: un plan AI-nativ, multi-cloud și conștient cuantic pentru serviciile financiare</news:title>
+    <news:keywords>arhitectură cloud 2026, infrastructură AI-nativă, multi-cloud, cloud suveran, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, IA suverană, modele cu greutăți deschise, Llama 4, Mistral, confidential computing, serverless, edge computing, WebAssembly, Wasm, eBPF, Cilium, Tetragon, edge satelit LEO, Starlink Enterprise, DevSecOps, centru de date sustenabil, calcul conștient de rețea, răcire lichidă, Small Modular Reactor, SMR, energie nucleară, Three Mile Island, Kairos Power, X-Energy, fotonică pe siliciu, optică co-împachetată, NVIDIA Spectrum-X, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, comerț agentic, roiuri multi-agent, economia unitară agentică, FinOps agentic, identitate criptografică a agenților, SPIFFE, SPIRE, contagiune algoritmică, otrăvirea RAG, securitatea bazelor de date vectoriale, proveniența datelor, Pinecone, Qdrant, Weaviate, Milvus, ingineria haosului agentic, gravitația datelor, FinOps egress, HPC, stocare GPU, trezorerie continuă, lichiditate fără frontiere, plăți în timp real, CBDC, eCNY, DREX, e-Rupee, BIS Project Agora, euro digital, generarea datelor sintetice, JPMorgan multi-cloud, modernizare Citi, rețele neuronale grafice, fraudă deepfake, harvest now decrypt later, HNDL, criptografie post-cuantică, ML-KEM, ML-DSA, agilitate criptografică, distribuția cuantică a cheilor, QKD, Basel IV, risc de concentrare cloud, RWA risc operațional, securitate MCP, prompt injection, atacuri supply chain, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
   </news:news>
 </url>
 <url>

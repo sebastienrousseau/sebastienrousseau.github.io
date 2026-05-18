@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/ru/2026-05-21-luchshaya-cloud-arkhitektura-dlya-bankov-2026/</loc>
+  <loc>https://sebastienrousseau.com/ru/2026-05-17-agentnaya-inzheneriya-plan-dlya-bankov-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ru-RU</news:language>
     </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Лучшая облачная инфраструктурная архитектура в 2026 году: AI-native, multi-cloud, квантово-осведомлённый чертёж для финансовых услуг</news:title>
-    <news:keywords>облачная архитектура 2026, AI-native инфраструктура, multi-cloud, суверенное облако, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, суверенный AI, open-weight модели, Llama 4, Mistral, конфиденциальные вычисления, serverless, edge computing, WebAssembly, Wasm, eBPF, Cilium, Tetragon, LEO satellite edge, Starlink Enterprise, DevSecOps, устойчивый дата-центр, grid-aware computing, жидкостное охлаждение, Small Modular Reactor, SMR, ядерная энергия, Three Mile Island, Kairos Power, X-Energy, кремниевая фотоника, co-packaged optics, NVIDIA Spectrum-X, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, agentic commerce, мультиагентные рои, agentic unit economics, agent FinOps, криптографическая идентичность агентов, SPIFFE, SPIRE, algorithmic contagion, RAG poisoning, безопасность векторных баз данных, происхождение данных, Pinecone, Qdrant, Weaviate, Milvus, agentic chaos engineering, гравитация данных, egress FinOps, HPC, GPU storage, continuous treasury, безграничная ликвидность, мгновенные платежи, CBDC, eCNY, DREX, e-Rupee, BIS Project Agora, цифровой евро, генерация синтетических данных, JPMorgan multi-cloud, Citi modernisation, графовые нейронные сети, дипфейк-мошенничество, harvest now decrypt later, HNDL, постквантовая криптография, ML-KEM, ML-DSA, crypto-agility, квантовое распределение ключей, QKD, Basel IV, риск концентрации облака, операционный риск RWA, MCP security, prompt injection, атаки на цепочку поставок, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
+    <news:publication_date>2026-05-17T06:06:06+00:00</news:publication_date>
+    <news:title>Агентная инженерия: план для банков 2026</news:title>
+    <news:keywords>агентная инженерия, LLM-агенты, agentic commerce, банковские агенты, MCP, autonomous finance, identity, унит-экономика агентов</news:keywords>
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/ru/2026-05-18-agentnaya-inzheneriya-plan-dlya-bankov-2026/</loc>
+  <loc>https://sebastienrousseau.com/ru/2026-05-16-luchshaya-cloud-arkhitektura-dlya-bankov-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ru-RU</news:language>
     </news:publication>
-    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
-    <news:title>Агентная инженерия: план для банков 2026</news:title>
-    <news:keywords>агентная инженерия, LLM-агенты, agentic commerce, банковские агенты, MCP, autonomous finance, identity, унит-экономика агентов</news:keywords>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>Лучшая облачная инфраструктурная архитектура в 2026 году: AI-native, multi-cloud, квантово-осведомлённый чертёж для финансовых услуг</news:title>
+    <news:keywords>облачная архитектура 2026, AI-native инфраструктура, multi-cloud, суверенное облако, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, суверенный AI, open-weight модели, Llama 4, Mistral, конфиденциальные вычисления, serverless, edge computing, WebAssembly, Wasm, eBPF, Cilium, Tetragon, LEO satellite edge, Starlink Enterprise, DevSecOps, устойчивый дата-центр, grid-aware computing, жидкостное охлаждение, Small Modular Reactor, SMR, ядерная энергия, Three Mile Island, Kairos Power, X-Energy, кремниевая фотоника, co-packaged optics, NVIDIA Spectrum-X, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, agentic commerce, мультиагентные рои, agentic unit economics, agent FinOps, криптографическая идентичность агентов, SPIFFE, SPIRE, algorithmic contagion, RAG poisoning, безопасность векторных баз данных, происхождение данных, Pinecone, Qdrant, Weaviate, Milvus, agentic chaos engineering, гравитация данных, egress FinOps, HPC, GPU storage, continuous treasury, безграничная ликвидность, мгновенные платежи, CBDC, eCNY, DREX, e-Rupee, BIS Project Agora, цифровой евро, генерация синтетических данных, JPMorgan multi-cloud, Citi modernisation, графовые нейронные сети, дипфейк-мошенничество, harvest now decrypt later, HNDL, постквантовая криптография, ML-KEM, ML-DSA, crypto-agility, квантовое распределение ключей, QKD, Basel IV, риск концентрации облака, операционный риск RWA, MCP security, prompt injection, атаки на цепочку поставок, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
   </news:news>
 </url>
 <url>

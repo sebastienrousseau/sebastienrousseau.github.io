@@ -4,23 +4,23 @@
   <link href="https://sebastienrousseau.com/ru/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ru/"/>
   <id>https://sebastienrousseau.com/ru/</id>
-  <updated>2026-05-17T09:16:06+00:00</updated>
+  <updated>2026-05-18T06:28:51+00:00</updated>
   <entry>
-    <title>Лучшая облачная инфраструктурная архитектура в 2026 году: AI-native, multi-cloud, квантово-осведомлённый чертёж для финансовых услуг</title>
-    <link href="https://sebastienrousseau.com/ru/2026-05-21-luchshaya-cloud-arkhitektura-dlya-bankov-2026/"/>
-    <id>https://sebastienrousseau.com/ru/2026-05-21-luchshaya-cloud-arkhitektura-dlya-bankov-2026/</id>
-    <updated>2026-05-21T06:06:06+00:00</updated>
-    <published>2026-05-21T06:06:06+00:00</published>
-    <summary>Облачная архитектура в 2026 году кристаллизовалась вокруг шести столпов: AI-native инфраструктура, интеллектуальная multi-cloud облачная архитектура, serverless-first дизайн с WebAssembly на edge, edge computing, автоматизированная безопасность с crypto-agility и устойчивые операции высокой плотности. Для банков вопрос состоит в том, потреблять облако или проектировать его — под сходящимся давлением agentic commerce, agentic unit economics, квантового риска harvest-now-decrypt-later, MCP security и algorithmic contagion, криптографической идентичности агентов, требований continuous treasury и EU AI Act.</summary>
+    <title>Агентная инженерия: план для банков 2026</title>
+    <link href="https://sebastienrousseau.com/ru/2026-05-17-agentnaya-inzheneriya-plan-dlya-bankov-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-05-17-agentnaya-inzheneriya-plan-dlya-bankov-2026/</id>
+    <updated>2026-05-17T06:06:06+00:00</updated>
+    <published>2026-05-17T06:06:06+00:00</published>
+    <summary>Агентная инженерия — переход от LLM-чатов к автономным агентам с делегированным финансовым полномочием. План для банков, готовящихся к эпохе agentic commerce.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Агентная инженерия: план для банков 2026</title>
-    <link href="https://sebastienrousseau.com/ru/2026-05-18-agentnaya-inzheneriya-plan-dlya-bankov-2026/"/>
-    <id>https://sebastienrousseau.com/ru/2026-05-18-agentnaya-inzheneriya-plan-dlya-bankov-2026/</id>
-    <updated>2026-05-18T06:06:06+00:00</updated>
-    <published>2026-05-18T06:06:06+00:00</published>
-    <summary>Агентная инженерия — переход от LLM-чатов к автономным агентам с делегированным финансовым полномочием. План для банков, готовящихся к эпохе agentic commerce.</summary>
+    <title>Лучшая облачная инфраструктурная архитектура в 2026 году: AI-native, multi-cloud, квантово-осведомлённый чертёж для финансовых услуг</title>
+    <link href="https://sebastienrousseau.com/ru/2026-05-16-luchshaya-cloud-arkhitektura-dlya-bankov-2026/"/>
+    <id>https://sebastienrousseau.com/ru/2026-05-16-luchshaya-cloud-arkhitektura-dlya-bankov-2026/</id>
+    <updated>2026-05-16T06:06:06+00:00</updated>
+    <published>2026-05-16T06:06:06+00:00</published>
+    <summary>Облачная архитектура в 2026 году кристаллизовалась вокруг шести столпов: AI-native инфраструктура, интеллектуальная multi-cloud облачная архитектура, serverless-first дизайн с WebAssembly на edge, edge computing, автоматизированная безопасность с crypto-agility и устойчивые операции высокой плотности. Для банков вопрос состоит в том, потреблять облако или проектировать его — под сходящимся давлением agentic commerce, agentic unit economics, квантового риска harvest-now-decrypt-later, MCP security и algorithmic contagion, криптографической идентичности агентов, требований continuous treasury и EU AI Act.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

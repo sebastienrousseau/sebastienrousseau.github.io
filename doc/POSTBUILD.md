@@ -269,7 +269,7 @@ python3 -c "
 import sys; sys.path.insert(0,'scripts')
 from postbuild_lib.schemas import inject_tech_article
 from pathlib import Path
-page = Path('public/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html')
+page = Path('public/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html')
 html = page.read_text()
 out = inject_tech_article(page, html)
 # Compare lengths, check for the expected marker, etc.

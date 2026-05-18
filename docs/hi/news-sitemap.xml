@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/hi/2026-05-21-banks-ke-liye-shreshth-cloud-architecture-2026/</loc>
+  <loc>https://sebastienrousseau.com/hi/2026-05-17-agentic-engineering-banks-blueprint-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>hi-IN</news:language>
     </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>बैंकों के लिए सर्वोत्तम क्लाउड-अवसंरचना-वास्तुकला (2026)</news:title>
-    <news:keywords>क्लाउड वास्तुकला 2026, AI-नेटिव, मल्टीक्लाउड, serverless, edge, WebAssembly, DevSecOps, बैंकिंग, क्रिप्टो चपलता, agentic</news:keywords>
+    <news:publication_date>2026-05-17T06:06:06+00:00</news:publication_date>
+    <news:title>बैंकों के लिए एजेंटिक-इंजीनियरिंग: 2026 का ब्लूप्रिंट</news:title>
+    <news:keywords>agentic, AI एजेंट, MCP, बैंकिंग, blueprint, ब्लूप्रिंट, FinOps, यूनिट अर्थशास्त्र, EU AI Act, identity</news:keywords>
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/hi/2026-05-18-agentic-engineering-banks-blueprint-2026/</loc>
+  <loc>https://sebastienrousseau.com/hi/2026-05-16-banks-ke-liye-shreshth-cloud-architecture-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>hi-IN</news:language>
     </news:publication>
-    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
-    <news:title>बैंकों के लिए एजेंटिक-इंजीनियरिंग: 2026 का ब्लूप्रिंट</news:title>
-    <news:keywords>agentic, AI एजेंट, MCP, बैंकिंग, blueprint, ब्लूप्रिंट, FinOps, यूनिट अर्थशास्त्र, EU AI Act, identity</news:keywords>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>बैंकों के लिए सर्वोत्तम क्लाउड-अवसंरचना-वास्तुकला (2026)</news:title>
+    <news:keywords>क्लाउड वास्तुकला 2026, AI-नेटिव, मल्टीक्लाउड, serverless, edge, WebAssembly, DevSecOps, बैंकिंग, क्रिप्टो चपलता, agentic</news:keywords>
   </news:news>
 </url>
 <url>

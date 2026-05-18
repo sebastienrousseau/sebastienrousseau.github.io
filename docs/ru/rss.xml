@@ -6,14 +6,31 @@
     <description>Статьи на русском языке: прикладной ИИ, платежи ISO 20022, постквантовая криптография и трансформация оптовых платежей.</description>
     <atom:link href="https://sebastienrousseau.com/ru/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ru-RU</language>
-    <lastBuildDate>Sun, 17 May 2026 09:16:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 06:28:51 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Все права защищены.</copyright>
     <item>
+      <title>Агентная инженерия: план для банков 2026</title>
+      <link>https://sebastienrousseau.com/ru/2026-05-17-agentnaya-inzheneriya-plan-dlya-bankov-2026/</link>
+      <description>Агентная инженерия — переход от LLM-чатов к автономным агентам с делегированным финансовым полномочием. План для банков, готовящихся к эпохе agentic commerce.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-17-agentnaya-inzheneriya-plan-dlya-bankov-2026/</guid>
+      <pubDate>Sun, 17 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/agentic-engineering-banks.webp" type="image/webp" length="0"/>
+      <category>агентная инженерия</category>
+      <category>LLM-агенты</category>
+      <category>agentic commerce</category>
+      <category>банковские агенты</category>
+      <category>MCP</category>
+      <category>autonomous finance</category>
+      <category>identity</category>
+      <category>унит-экономика агентов</category>
+    </item>
+    <item>
       <title>Лучшая облачная инфраструктурная архитектура в 2026 году: AI-native, multi-cloud, квантово-осведомлённый чертёж для финансовых услуг</title>
-      <link>https://sebastienrousseau.com/ru/2026-05-21-luchshaya-cloud-arkhitektura-dlya-bankov-2026/</link>
+      <link>https://sebastienrousseau.com/ru/2026-05-16-luchshaya-cloud-arkhitektura-dlya-bankov-2026/</link>
       <description>Облачная архитектура в 2026 году кристаллизовалась вокруг шести столпов: AI-native инфраструктура, интеллектуальная multi-cloud облачная архитектура, serverless-first дизайн с WebAssembly на edge, edge computing, автоматизированная безопасность с crypto-agility и устойчивые операции высокой плотности. Для банков вопрос состоит в том, потреблять облако или проектировать его — под сходящимся давлением agentic commerce, agentic unit economics, квантового риска harvest-now-decrypt-later, MCP security и algorithmic contagion, криптографической идентичности агентов, требований continuous treasury и EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-21-luchshaya-cloud-arkhitektura-dlya-bankov-2026/</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-16-luchshaya-cloud-arkhitektura-dlya-bankov-2026/</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>облачная архитектура 2026</category>
@@ -107,23 +124,6 @@
       <category>Durable Objects</category>
       <category>WCAG-AA</category>
       <category>Sebastien Rousseau</category>
-    </item>
-    <item>
-      <title>Агентная инженерия: план для банков 2026</title>
-      <link>https://sebastienrousseau.com/ru/2026-05-18-agentnaya-inzheneriya-plan-dlya-bankov-2026/</link>
-      <description>Агентная инженерия — переход от LLM-чатов к автономным агентам с делегированным финансовым полномочием. План для банков, готовящихся к эпохе agentic commerce.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-18-agentnaya-inzheneriya-plan-dlya-bankov-2026/</guid>
-      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/agentic-engineering-banks.webp" type="image/webp" length="0"/>
-      <category>агентная инженерия</category>
-      <category>LLM-агенты</category>
-      <category>agentic commerce</category>
-      <category>банковские агенты</category>
-      <category>MCP</category>
-      <category>autonomous finance</category>
-      <category>identity</category>
-      <category>унит-экономика агентов</category>
     </item>
     <item>
       <title>Скрытая доходность: расшифровка заявок BlackRock BRSRV, BSTBL и GENIUS Act</title>

@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/zh-hans/2026-05-21-2026-zuijia-yun-jichu-jiagou/</loc>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-17-ai-dailixing-gongcheng-yinhang-2026-lantu/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>zh-Hans</news:language>
     </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图</news:title>
-    <news:keywords>2026 云架构, AI 原生基础设施, 多云, 主权云, 美国 CLOUD 法案, Bleu, S3NS, AWS European Sovereign Cloud, 主权 AI, 开权重模型, Llama 4, Mistral, 机密计算, 无服务器, 边缘计算, WebAssembly, Wasm, eBPF, Cilium, Tetragon, LEO 卫星边缘, Starlink Enterprise, DevSecOps, 可持续数据中心, 电网感知计算, 液体冷却, 小型模块化反应堆, SMR, 核能, Three Mile Island, Kairos Power, X-Energy, 硅光子学, 共封装光学, NVIDIA Spectrum-X, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, 代理式商业, 多代理群, 代理式单位经济学, 代理 FinOps, 密码代理身份, SPIFFE, SPIRE, 算法传染, RAG 中毒, 向量数据库安全, 数据溯源, Pinecone, Qdrant, Weaviate, Milvus, 代理式混沌工程, 数据引力, 出口 FinOps, HPC, GPU 存储, 持续财库, 无国界流动性, 实时支付, CBDC, eCNY, DREX, e-Rupee, BIS Project Agora, 数字欧元, 合成数据生成, 摩根大通多云, 花旗现代化, 图神经网络, 深度伪造欺诈, 现在收集未来解密, HNDL, 后量子密码学, ML-KEM, ML-DSA, 密码敏捷性, 量子密钥分发, QKD, Basel IV, 云集中风险, 操作风险 RWA, MCP 安全, 提示注入, 供应链攻击, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
+    <news:publication_date>2026-05-17T06:06:06+00:00</news:publication_date>
+    <news:title>面向银行的代理式工程：2026 年高管团队与工程师蓝图</news:title>
+    <news:keywords>代理式工程, 规范驱动开发, 银行, 金融服务, AI 治理, 欧盟 AI 法案, DORA, SR 11-7, COBOL 现代化, Claude Code</news:keywords>
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/zh-hans/2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu/</loc>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-16-2026-zuijia-yun-jichu-jiagou/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>zh-Hans</news:language>
     </news:publication>
-    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
-    <news:title>面向银行的代理式工程：2026 年高管团队与工程师蓝图</news:title>
-    <news:keywords>代理式工程, 规范驱动开发, 银行, 金融服务, AI 治理, 欧盟 AI 法案, DORA, SR 11-7, COBOL 现代化, Claude Code</news:keywords>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图</news:title>
+    <news:keywords>2026 云架构, AI 原生基础设施, 多云, 主权云, 美国 CLOUD 法案, Bleu, S3NS, AWS European Sovereign Cloud, 主权 AI, 开权重模型, Llama 4, Mistral, 机密计算, 无服务器, 边缘计算, WebAssembly, Wasm, eBPF, Cilium, Tetragon, LEO 卫星边缘, Starlink Enterprise, DevSecOps, 可持续数据中心, 电网感知计算, 液体冷却, 小型模块化反应堆, SMR, 核能, Three Mile Island, Kairos Power, X-Energy, 硅光子学, 共封装光学, NVIDIA Spectrum-X, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, 代理式商业, 多代理群, 代理式单位经济学, 代理 FinOps, 密码代理身份, SPIFFE, SPIRE, 算法传染, RAG 中毒, 向量数据库安全, 数据溯源, Pinecone, Qdrant, Weaviate, Milvus, 代理式混沌工程, 数据引力, 出口 FinOps, HPC, GPU 存储, 持续财库, 无国界流动性, 实时支付, CBDC, eCNY, DREX, e-Rupee, BIS Project Agora, 数字欧元, 合成数据生成, 摩根大通多云, 花旗现代化, 图神经网络, 深度伪造欺诈, 现在收集未来解密, HNDL, 后量子密码学, ML-KEM, ML-DSA, 密码敏捷性, 量子密钥分发, QKD, Basel IV, 云集中风险, 操作风险 RWA, MCP 安全, 提示注入, 供应链攻击, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
   </news:news>
 </url>
 <url>

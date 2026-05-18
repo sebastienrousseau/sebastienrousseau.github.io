@@ -6,14 +6,30 @@
     <description>Articoli in italiano: IA applicata, pagamenti ISO 20022, crittografia post-quantistica e trasformazione dei pagamenti wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/it/rss.xml" rel="self" type="application/rss+xml"/>
     <language>it-IT</language>
-    <lastBuildDate>Sun, 17 May 2026 09:16:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 06:28:51 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tutti i diritti riservati.</copyright>
     <item>
+      <title>Ingegneria agentica per le banche: blueprint 2026</title>
+      <link>https://sebastienrousseau.com/it/2026-05-17-ingegneria-agentica-banche-blueprint-2026/</link>
+      <description>Un blueprint per le banche che adottano l&apos;ingegneria agentica nel 2026: architetture composte, governance del rischio, integrazione con sistemi core e roadmap di adozione.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-17-ingegneria-agentica-banche-blueprint-2026/</guid>
+      <pubDate>Sun, 17 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
+      <category>ingegneria agentica</category>
+      <category>agenti IA</category>
+      <category>banche</category>
+      <category>blueprint</category>
+      <category>2026</category>
+      <category>governance</category>
+      <category>architettura</category>
+    </item>
+    <item>
       <title>La migliore architettura di infrastruttura cloud nel 2026: un blueprint AI-native, multi-cloud e consapevole del quantum per i servizi finanziari</title>
-      <link>https://sebastienrousseau.com/it/2026-05-21-miglior-architettura-cloud-per-banche-2026/</link>
+      <link>https://sebastienrousseau.com/it/2026-05-16-miglior-architettura-cloud-per-banche-2026/</link>
       <description>L&apos;architettura cloud nel 2026 si è cristallizzata attorno a sei pilastri: infrastruttura AI-native, multi-cloud intelligente, design serverless-first con WebAssembly al margine, edge computing, sicurezza automatizzata con crypto-agilità e operazioni sostenibili ad alta densità. Per le banche e gli istituti finanziari, la domanda è se consumare il cloud o progettarlo — sotto la pressione convergente di agentic commerce, agentic unit economics, rischio quantum harvest-now-decrypt-later, sicurezza MCP e contagio algoritmico, identità crittografica degli agenti, esigenze di continuous treasury e il EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-21-miglior-architettura-cloud-per-banche-2026/</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-16-miglior-architettura-cloud-per-banche-2026/</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>architettura cloud 2026</category>
@@ -107,22 +123,6 @@
       <category>Durable Objects</category>
       <category>WCAG-AA</category>
       <category>Sebastien Rousseau</category>
-    </item>
-    <item>
-      <title>Ingegneria agentica per le banche: blueprint 2026</title>
-      <link>https://sebastienrousseau.com/it/2026-05-18-ingegneria-agentica-banche-blueprint-2026/</link>
-      <description>Un blueprint per le banche che adottano l&apos;ingegneria agentica nel 2026: architetture composte, governance del rischio, integrazione con sistemi core e roadmap di adozione.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-18-ingegneria-agentica-banche-blueprint-2026/</guid>
-      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
-      <category>ingegneria agentica</category>
-      <category>agenti IA</category>
-      <category>banche</category>
-      <category>blueprint</category>
-      <category>2026</category>
-      <category>governance</category>
-      <category>architettura</category>
     </item>
     <item>
       <title>Rendimento nascosto: decifrare i depositi BRSRV/BSTBL di BlackRock e il GENIUS Act</title>

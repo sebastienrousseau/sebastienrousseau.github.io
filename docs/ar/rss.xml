@@ -6,14 +6,24 @@
     <description>مقالات بالعربية: الذكاء الاصطناعي التطبيقي، مدفوعات ISO 20022، التشفير ما بعد الكمي، وتحوّل المدفوعات بالجملة.</description>
     <atom:link href="https://sebastienrousseau.com/ar/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ar-SA</language>
-    <lastBuildDate>Sun, 17 May 2026 09:16:05 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 06:28:50 +0000</lastBuildDate>
     <copyright>© حقوق النشر 2007 - 2026 - سيباستيان روسو. جميع الحقوق محفوظة.</copyright>
     <item>
+      <title>الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه</title>
+      <link>https://sebastienrousseau.com/ar/2026-05-17-agentic-engineering-banks-blueprint-2026/</link>
+      <description>انتقل الذكاء الاصطناعي الوكيلي من التجربة إلى الإنتاج في الخدمات المصرفية العالمية. تستخدمه 70% من المؤسسات بدرجاتٍ متفاوتة؛ ولدى واحدةٍ من كلّ خمسٍ نموذج حوكمة ناضج. الخصوم المستقلّون يعملون بسرعة الآلة، والممتلكات القديمة COBOL التي يجب أن تتفاعل معها الأنظمة الجديدة كُتبت لافتراضات الدفعات في الستينيات، وموعد «المخاطر العالية» في EU AI Act على بُعد اثني عشر أسبوعاً. هذا هو الموقف الهندسي والحوكمي الذي يحتاج البنك للحفاظ عليه.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-17-agentic-engineering-banks-blueprint-2026/</guid>
+      <pubDate>Sun, 17 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
+      <category>الهندسة الوكيلية، التطوير المُوجَّه بالمواصفات، البنوك، الخدمات المالية، حوكمة AI، EU AI Act، DORA، SR 11-7، NIST AI RMF، ISO 42001، تحديث COBOL، mainframe، vibe coding، vibe hacking، الوكلاء المستقلّون، Claude Code، GitHub Spec Kit، AI Bill of Materials، AIBOM، human in the loop، HITL، human on the loop، HOTL، إدارة مخاطر الأطراف الثالثة، TPRM، التشفير ما بعد الكمي، مستوى تحكّم الوكلاء، FCA، SM&amp;CR، خطة عمل 12 أسبوعاً، Sebastien Rousseau</category>
+    </item>
+    <item>
       <title>أفضل بنية تحتية سحابية في 2026: مخطط أصيل للذكاء الاصطناعي، متعدد السحب، وواعٍ كمياً للخدمات المالية</title>
-      <link>https://sebastienrousseau.com/ar/2026-05-21-best-cloud-infrastructure-architecture-2026/</link>
+      <link>https://sebastienrousseau.com/ar/2026-05-16-best-cloud-infrastructure-architecture-2026/</link>
       <description>تبلورت بنية السحابة في عام 2026 حول ست ركائز: بنية تحتية أصيلة للذكاء الاصطناعي، وسحابة متعددة ذكية، وتصميم يعتمد على بنية بدون خوادم أولاً مع WebAssembly عند الحافة، والحوسبة الطرفية، والأمان الآلي مع المرونة التشفيرية، والعمليات المستدامة عالية الكثافة. بالنسبة للبنوك، السؤال هو ما إذا كانت ستستهلك السحابة أم تصممها — في ظل ضغوط متقاربة من التجارة الوكيلة، واقتصاديات الوحدة الوكيلة، ومخاطر الكم الناجمة عن استراتيجية الحصاد الآن والفك لاحقاً، وأمان MCP، والعدوى الخوارزمية، وهوية الوكلاء التشفيرية، ومتطلبات الخزانة المستمرة، وقانون الذكاء الاصطناعي للاتحاد الأوروبي.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-21-best-cloud-infrastructure-architecture-2026/</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-16-best-cloud-infrastructure-architecture-2026/</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>بنية السحابة 2026</category>
@@ -107,16 +117,6 @@
       <category>Durable Objects</category>
       <category>WCAG-AA</category>
       <category>Sebastien Rousseau</category>
-    </item>
-    <item>
-      <title>الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه</title>
-      <link>https://sebastienrousseau.com/ar/2026-05-18-agentic-engineering-banks-blueprint-2026/</link>
-      <description>انتقل الذكاء الاصطناعي الوكيلي من التجربة إلى الإنتاج في الخدمات المصرفية العالمية. تستخدمه 70% من المؤسسات بدرجاتٍ متفاوتة؛ ولدى واحدةٍ من كلّ خمسٍ نموذج حوكمة ناضج. الخصوم المستقلّون يعملون بسرعة الآلة، والممتلكات القديمة COBOL التي يجب أن تتفاعل معها الأنظمة الجديدة كُتبت لافتراضات الدفعات في الستينيات، وموعد «المخاطر العالية» في EU AI Act على بُعد اثني عشر أسبوعاً. هذا هو الموقف الهندسي والحوكمي الذي يحتاج البنك للحفاظ عليه.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-18-agentic-engineering-banks-blueprint-2026/</guid>
-      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
-      <category>الهندسة الوكيلية، التطوير المُوجَّه بالمواصفات، البنوك، الخدمات المالية، حوكمة AI، EU AI Act، DORA، SR 11-7، NIST AI RMF، ISO 42001، تحديث COBOL، mainframe، vibe coding، vibe hacking، الوكلاء المستقلّون، Claude Code، GitHub Spec Kit، AI Bill of Materials، AIBOM، human in the loop، HITL، human on the loop، HOTL، إدارة مخاطر الأطراف الثالثة، TPRM، التشفير ما بعد الكمي، مستوى تحكّم الوكلاء، FCA، SM&amp;CR، خطة عمل 12 أسبوعاً، Sebastien Rousseau</category>
     </item>
     <item>
       <title>العائد المخفي: تفكيك إيداعات BRSRV و BSTBL من BlackRock</title>

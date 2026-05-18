@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/uk/2026-05-21-naikrashcha-khmarna-arkhitektura-dlya-bankiv-2026/</loc>
+  <loc>https://sebastienrousseau.com/uk/2026-05-17-ahentyna-inzheneriya-banky-blueprint-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>uk-UA</news:language>
     </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Найкраща хмарна інфраструктурна архітектура у 2026 році: AI-нативний, мультихмарний, квантово-обізнаний план для фінансових послуг</news:title>
-    <news:keywords>хмарна архітектура 2026, AI-нативна інфраструктура, мультихмара, суверенна хмара, безсерверні обчислення, WebAssembly, Wasm, DevSecOps, стала ЦОД, рідинне охолодження, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, агентна комерція, мультиагентні рої, агентна одинична економіка, агентний FinOps, криптографічна ідентичність агентів, SPIFFE, SPIRE, алгоритмічне зараження, агентний хаос-інжиніринг, гравітація даних, FinOps трафіку, HPC, GPU-сховище, безперервне казначейство, безмежна ліквідність, синтетична генерація даних, конфіденційні обчислення, JPMorgan, Citi, графові нейронні мережі, дипфейк-шахрайство, harvest now decrypt later, HNDL, постквантова криптографія, криптоагільність, безпека MCP, prompt injection, атаки на ланцюг постачання, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
+    <news:publication_date>2026-05-17T06:06:06+00:00</news:publication_date>
+    <news:title>[UK DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</news:title>
+    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, COBOL modernisation, mainframe, vibe coding, vibe hacking, autonomous agents, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, third-party risk management, TPRM, vendor risk, post-quantum cryptography, agent control plane, FCA, SM&amp;CR, 12-week action plan, Sebastien Rousseau</news:keywords>
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/uk/2026-05-18-ahentyna-inzheneriya-banky-blueprint-2026/</loc>
+  <loc>https://sebastienrousseau.com/uk/2026-05-16-naikrashcha-khmarna-arkhitektura-dlya-bankiv-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>uk-UA</news:language>
     </news:publication>
-    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
-    <news:title>[UK DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</news:title>
-    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, COBOL modernisation, mainframe, vibe coding, vibe hacking, autonomous agents, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, third-party risk management, TPRM, vendor risk, post-quantum cryptography, agent control plane, FCA, SM&amp;CR, 12-week action plan, Sebastien Rousseau</news:keywords>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>Найкраща хмарна інфраструктурна архітектура у 2026 році: AI-нативний, мультихмарний, квантово-обізнаний план для фінансових послуг</news:title>
+    <news:keywords>хмарна архітектура 2026, AI-нативна інфраструктура, мультихмара, суверенна хмара, безсерверні обчислення, WebAssembly, Wasm, DevSecOps, стала ЦОД, рідинне охолодження, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, агентна комерція, мультиагентні рої, агентна одинична економіка, агентний FinOps, криптографічна ідентичність агентів, SPIFFE, SPIRE, алгоритмічне зараження, агентний хаос-інжиніринг, гравітація даних, FinOps трафіку, HPC, GPU-сховище, безперервне казначейство, безмежна ліквідність, синтетична генерація даних, конфіденційні обчислення, JPMorgan, Citi, графові нейронні мережі, дипфейк-шахрайство, harvest now decrypt later, HNDL, постквантова криптографія, криптоагільність, безпека MCP, prompt injection, атаки на ланцюг постачання, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
   </news:news>
 </url>
 <url>

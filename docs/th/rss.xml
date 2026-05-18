@@ -6,14 +6,55 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Sun, 17 May 2026 09:16:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 06:28:51 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
     <item>
+      <title>Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán</title>
+      <link>https://sebastienrousseau.com/th/2026-05-17-witsawakam-agentic-thanakhan-phaen-2026/</link>
+      <description>La IA agéntica ha pasado del piloto a la producción en la banca mundial. El 70 % de las instituciones la utiliza en mayor o menor grado; solo una de cada cinco tiene un modelo de gobernanza maduro. Los adversarios autónomos operan a velocidad de máquina, el estate heredado COBOL con el que los nuevos sistemas deben interoperar fue escrito para las hipótesis batch de los años 1960, y el plazo «alto riesgo» del Reglamento europeo de IA está a doce semanas. He aquí la posición de ingeniería y gobernanza que un banco debe sostener.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-17-witsawakam-agentic-thanakhan-phaen-2026/</guid>
+      <pubDate>Sun, 17 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
+      <category>ingeniería agéntica</category>
+      <category>desarrollo guiado por especificación</category>
+      <category>bancos</category>
+      <category>servicios financieros</category>
+      <category>gobernanza IA</category>
+      <category>Reglamento europeo de IA</category>
+      <category>DORA</category>
+      <category>SR 11-7</category>
+      <category>NIST AI RMF</category>
+      <category>ISO 42001</category>
+      <category>modernización COBOL</category>
+      <category>mainframe</category>
+      <category>vibe coding</category>
+      <category>vibe hacking</category>
+      <category>agentes autónomos</category>
+      <category>Claude Code</category>
+      <category>GitHub Spec Kit</category>
+      <category>AI Bill of Materials</category>
+      <category>AIBOM</category>
+      <category>human in the loop</category>
+      <category>HITL</category>
+      <category>human on the loop</category>
+      <category>HOTL</category>
+      <category>gestión de riesgos de terceros</category>
+      <category>TPRM</category>
+      <category>riesgo proveedor</category>
+      <category>criptografía postcuántica</category>
+      <category>plano de control de agentes</category>
+      <category>FCA</category>
+      <category>SM&amp;CR</category>
+      <category>plan de acción 12 semanas</category>
+      <category>Sebastien Rousseau</category>
+    </item>
+    <item>
       <title>สถาปัตยกรรมโครงสร้างพื้นฐานคลาวด์ที่ดีที่สุดในปี 2026: พิมพ์เขียวแบบ AI-Native, Multi-Cloud และพร้อมรับมือควอนตัมสำหรับบริการทางการเงิน</title>
-      <link>https://sebastienrousseau.com/th/2026-05-21-sthapattayakam-cloud-thi-di-thi-sut-samrap-thanakhan-2026/</link>
+      <link>https://sebastienrousseau.com/th/2026-05-16-sthapattayakam-cloud-thi-di-thi-sut-samrap-thanakhan-2026/</link>
       <description>สถาปัตยกรรมคลาวด์ในปี 2026 ได้ตกผลึกอยู่ที่หกเสาหลัก: โครงสร้างพื้นฐาน AI-native, multi-cloud อัจฉริยะ, การออกแบบ serverless-first พร้อม WebAssembly ที่ edge, edge computing, ความมั่นคงอัตโนมัติพร้อม crypto-agility และการดำเนินงานความหนาแน่นสูงที่ยั่งยืน สำหรับธนาคาร คำถามคือควรบริโภคคลาวด์หรือออกแบบมัน</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-21-sthapattayakam-cloud-thi-di-thi-sut-samrap-thanakhan-2026/</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-16-sthapattayakam-cloud-thi-di-thi-sut-samrap-thanakhan-2026/</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>สถาปัตยกรรมคลาวด์ 2026</category>
@@ -74,47 +115,6 @@
       <category>cloud concentration risk</category>
       <category>MCP security</category>
       <category>CloudCDN</category>
-      <category>Sebastien Rousseau</category>
-    </item>
-    <item>
-      <title>Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán</title>
-      <link>https://sebastienrousseau.com/th/2026-05-18-witsawakam-agentic-thanakhan-phaen-2026/</link>
-      <description>La IA agéntica ha pasado del piloto a la producción en la banca mundial. El 70 % de las instituciones la utiliza en mayor o menor grado; solo una de cada cinco tiene un modelo de gobernanza maduro. Los adversarios autónomos operan a velocidad de máquina, el estate heredado COBOL con el que los nuevos sistemas deben interoperar fue escrito para las hipótesis batch de los años 1960, y el plazo «alto riesgo» del Reglamento europeo de IA está a doce semanas. He aquí la posición de ingeniería y gobernanza que un banco debe sostener.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-18-witsawakam-agentic-thanakhan-phaen-2026/</guid>
-      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
-      <category>ingeniería agéntica</category>
-      <category>desarrollo guiado por especificación</category>
-      <category>bancos</category>
-      <category>servicios financieros</category>
-      <category>gobernanza IA</category>
-      <category>Reglamento europeo de IA</category>
-      <category>DORA</category>
-      <category>SR 11-7</category>
-      <category>NIST AI RMF</category>
-      <category>ISO 42001</category>
-      <category>modernización COBOL</category>
-      <category>mainframe</category>
-      <category>vibe coding</category>
-      <category>vibe hacking</category>
-      <category>agentes autónomos</category>
-      <category>Claude Code</category>
-      <category>GitHub Spec Kit</category>
-      <category>AI Bill of Materials</category>
-      <category>AIBOM</category>
-      <category>human in the loop</category>
-      <category>HITL</category>
-      <category>human on the loop</category>
-      <category>HOTL</category>
-      <category>gestión de riesgos de terceros</category>
-      <category>TPRM</category>
-      <category>riesgo proveedor</category>
-      <category>criptografía postcuántica</category>
-      <category>plano de control de agentes</category>
-      <category>FCA</category>
-      <category>SM&amp;CR</category>
-      <category>plan de acción 12 semanas</category>
       <category>Sebastien Rousseau</category>
     </item>
     <item>

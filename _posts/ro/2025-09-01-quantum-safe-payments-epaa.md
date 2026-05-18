@@ -35,7 +35,7 @@ keywords: "quantum-safe payments, post-quantum cryptography, SEPA, SWIFT gpi, IS
   <li><strong>Impact Across Payment Rails.</strong> The implications span the full breadth of payment infrastructure:.</li>
   <li><strong>What Organisations Must Do Now.</strong> The transition to quantum-safe cryptography is not a single upgrade but a multi-year programme requiring structured preparation:.</li>
 </ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline">The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</a>, <a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</a>, <a href="https://sebastienrousseau.com/2026-05-21-best-cloud-infrastructure-architecture-2026">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a>.</p>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline">The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</a>, <a href="https://sebastienrousseau.com/2026-04-11-quantum-thresholds-are-moving-again">Quantum Thresholds Are Moving: 10,000-Qubit Shor Risk</a>, <a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a>.</p>
 </aside>
 <!-- lead-end -->
 

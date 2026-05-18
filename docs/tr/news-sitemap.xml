@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/tr/2026-05-21-bankalar-icin-en-iyi-bulut-mimarisi-2026/</loc>
+  <loc>https://sebastienrousseau.com/tr/2026-05-17-ajan-tabanli-muhendislik-bankalar-icin-2026-plani/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>tr-TR</news:language>
     </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>2026&apos;da En İyi Bulut Altyapı Mimarisi: Finansal Hizmetler için AI-Yerel, Çoklu Bulut, Kuantum-Farkındalıklı Bir Şablon</news:title>
-    <news:keywords>2026 bulut mimarisi, AI-yerel altyapı, çoklu bulut, egemen bulut, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, egemen AI, açık-ağırlıklı modeller, Llama 4, Mistral, gizli bilişim, sunucusuz, uç bilişim, WebAssembly, Wasm, eBPF, Cilium, Tetragon, LEO uydu uç, Starlink Enterprise, DevSecOps, sürdürülebilir veri merkezi, şebeke-farkındalıklı bilişim, sıvı soğutma, Küçük Modüler Reaktör, SMR, nükleer enerji, Three Mile Island, Kairos Power, X-Energy, silikon fotonik, birlikte-paketlenmiş optik, NVIDIA Spectrum-X, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, ajansal ticaret, çoklu-ajan sürüleri, ajansal birim ekonomisi, ajan FinOps, kriptografik ajan kimliği, SPIFFE, SPIRE, algoritmik bulaşma, RAG zehirlenmesi, vektör veritabanı güvenliği, veri kökeni, Pinecone, Qdrant, Weaviate, Milvus, ajansal kaos mühendisliği, veri kütleçekimi, çıkış FinOps, HPC, GPU depolama, sürekli hazine, sınırsız likidite, gerçek zamanlı ödemeler, CBDC, eCNY, DREX, e-Rupee, BIS Project Agora, dijital euro, sentetik veri üretimi, JPMorgan çoklu bulut, Citi modernizasyonu, graf sinir ağları, deepfake dolandırıcılık, harvest now decrypt later, HNDL, post-kuantum kriptografi, ML-KEM, ML-DSA, kripto-çeviklik, kuantum anahtar dağıtımı, QKD, Basel IV, bulut yoğunlaşma riski, operasyonel risk RWA, MCP güvenliği, prompt enjeksiyonu, tedarik zinciri saldırıları, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
+    <news:publication_date>2026-05-17T06:06:06+00:00</news:publication_date>
+    <news:title>Ajan tabanlı mühendislik: bankalar için 2026 planı</news:title>
+    <news:keywords>ajan tabanlı yapay zeka, ajanlar, bankacılık, 2026, mimari, yönetişim, LLM</news:keywords>
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/tr/2026-05-18-ajan-tabanli-muhendislik-bankalar-icin-2026-plani/</loc>
+  <loc>https://sebastienrousseau.com/tr/2026-05-16-bankalar-icin-en-iyi-bulut-mimarisi-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>tr-TR</news:language>
     </news:publication>
-    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
-    <news:title>Ajan tabanlı mühendislik: bankalar için 2026 planı</news:title>
-    <news:keywords>ajan tabanlı yapay zeka, ajanlar, bankacılık, 2026, mimari, yönetişim, LLM</news:keywords>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>2026&apos;da En İyi Bulut Altyapı Mimarisi: Finansal Hizmetler için AI-Yerel, Çoklu Bulut, Kuantum-Farkındalıklı Bir Şablon</news:title>
+    <news:keywords>2026 bulut mimarisi, AI-yerel altyapı, çoklu bulut, egemen bulut, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, egemen AI, açık-ağırlıklı modeller, Llama 4, Mistral, gizli bilişim, sunucusuz, uç bilişim, WebAssembly, Wasm, eBPF, Cilium, Tetragon, LEO uydu uç, Starlink Enterprise, DevSecOps, sürdürülebilir veri merkezi, şebeke-farkındalıklı bilişim, sıvı soğutma, Küçük Modüler Reaktör, SMR, nükleer enerji, Three Mile Island, Kairos Power, X-Energy, silikon fotonik, birlikte-paketlenmiş optik, NVIDIA Spectrum-X, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, ajansal ticaret, çoklu-ajan sürüleri, ajansal birim ekonomisi, ajan FinOps, kriptografik ajan kimliği, SPIFFE, SPIRE, algoritmik bulaşma, RAG zehirlenmesi, vektör veritabanı güvenliği, veri kökeni, Pinecone, Qdrant, Weaviate, Milvus, ajansal kaos mühendisliği, veri kütleçekimi, çıkış FinOps, HPC, GPU depolama, sürekli hazine, sınırsız likidite, gerçek zamanlı ödemeler, CBDC, eCNY, DREX, e-Rupee, BIS Project Agora, dijital euro, sentetik veri üretimi, JPMorgan çoklu bulut, Citi modernizasyonu, graf sinir ağları, deepfake dolandırıcılık, harvest now decrypt later, HNDL, post-kuantum kriptografi, ML-KEM, ML-DSA, kripto-çeviklik, kuantum anahtar dağıtımı, QKD, Basel IV, bulut yoğunlaşma riski, operasyonel risk RWA, MCP güvenliği, prompt enjeksiyonu, tedarik zinciri saldırıları, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
   </news:news>
 </url>
 <url>

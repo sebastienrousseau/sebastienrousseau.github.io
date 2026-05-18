@@ -153,6 +153,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/tr/2026-05-17-ajan-tabanli-muhendislik-bankalar-icin-2026-plani/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/tr/2023-10-09-shokunin-rust-tabanli-en-hizli-statik-site-jeneratoru/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -243,12 +249,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/tr/2026-05-21-bankalar-icin-en-iyi-bulut-mimarisi-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/tr/2024-01-15-alien-studio-yapay-zeka-fotografciligi-ile-sanat-devrimi/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -273,12 +273,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/tr/2026-05-18-ajan-tabanli-muhendislik-bankalar-icin-2026-plani/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/tr/2023-09-29-iso-20022-uyumlu-odeme-dosyalarini-pain001-ile-otomatiklestirme/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -286,6 +280,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/tr/2024-03-12-macos-ta-gercek-zamanli-konusma-tanima-whisper-ile-devrim/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/tr/2026-05-16-bankalar-icin-en-iyi-bulut-mimarisi-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -471,6 +471,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/th/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -573,12 +579,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/th/2026-05-21-sthapattayakam-cloud-thi-di-thi-sut-samrap-thanakhan-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/th/2024-02-19-poed-kanchai-gemini-patiwat-ai-khong-google/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -603,13 +603,13 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/th/2026-05-18-witsawakam-agentic-thanakhan-phaen-2026/index.html</loc>
+  <loc>https://sebastienrousseau.com/papers/th/2024-01-08-prapprung-kan-wikhro-atsuan-sinaheu-duai-qiskit/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/th/2024-01-08-prapprung-kan-wikhro-atsuan-sinaheu-duai-qiskit/index.html</loc>
+  <loc>https://sebastienrousseau.com/papers/th/2026-05-17-witsawakam-agentic-thanakhan-phaen-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -724,6 +724,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/th/2026-04-11-ked-quantum-khap-kheuanwai-ik-khrang/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/th/2026-05-16-sthapattayakam-cloud-thi-di-thi-sut-samrap-thanakhan-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -927,12 +933,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/es/2026-05-21-mejor-arquitectura-cloud-para-bancos-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/es/404/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -1071,6 +1071,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/es/2026-05-16-mejor-arquitectura-cloud-para-bancos-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/es/2018-02-15-creacion-de-la-plataforma-express-transaction-credits/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -1191,6 +1197,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/es/2026-05-17-ingenieria-agentica-bancos-blueprint-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/es/articulos/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -1270,12 +1282,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/es/accesibilidad/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/es/2026-05-18-ingenieria-agentica-bancos-blueprint-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -1419,12 +1425,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/fr/2026-05-18-ingenierie-agentique-banques-blueprint-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/fr/2024-02-26-google-gemma-transformer-le-developpement-ia-en-source-ouverte/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -1485,6 +1485,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/fr/2026-05-17-ingenierie-agentique-banques-blueprint-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/fr/2023-12-04-maitriser-date-et-heure-en-rust-avec-la-bibliotheque-dtt/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -1492,12 +1498,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/fr/a-propos/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/fr/2026-05-21-meilleure-architecture-cloud-pour-les-banques-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -1552,6 +1552,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/fr/2023-11-05-constantes-mathematiques-et-cryptographiques-pour-rust/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/fr/2026-05-16-meilleure-architecture-cloud-pour-les-banques-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -1767,12 +1773,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/id/2026-05-21-arsitektur-infrastruktur-cloud-terbaik-untuk-bank-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/id/tentang/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -1828,6 +1828,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/id/dibuat-dengan-shokunin/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/id/2026-05-17-rekayasa-agentik-bank-cetak-biru-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -2019,13 +2025,13 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/id/2026-05-18-rekayasa-agentik-bank-cetak-biru-2026/index.html</loc>
+  <loc>https://sebastienrousseau.com/papers/id/2024-02-12-akande-asisten-suara-revolusi-asistensi-pribadi-dan-eksekutif/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/id/2024-02-12-akande-asisten-suara-revolusi-asistensi-pribadi-dan-eksekutif/index.html</loc>
+  <loc>https://sebastienrousseau.com/papers/id/2026-05-16-arsitektur-infrastruktur-cloud-terbaik-untuk-bank-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -2133,12 +2139,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/ko/2026-05-18-eijenteuk-enjineoring-eunhaeng-2026-seolgyedo/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ko/2024-01-08-ibm-qiskit-yangja-fourier-byeonhwan-euro-sinyongbiyul-bunseok-choejeokhwa/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -2169,6 +2169,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/ko/2026-05-16-2026-choeseon-keulaeudeu-infra-akitekcheo/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ko/gaeinjeongbo/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -2182,6 +2188,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ko/2018-01-09-beulrokchein-baehu-gisul-ihae/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/ko/2026-05-17-eijenteuk-enjineoring-eunhaeng-2026-seolgyedo/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -2242,12 +2254,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ko/2023-11-05-rust-bohan-eul-wihan-suhakjeok-amhojeok-sangsu/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/ko/2026-05-21-2026-choeseon-keulaeudeu-infra-akitekcheo/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -2601,6 +2607,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/de/2026-05-17-agentische-engineering-banken-blueprint-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/de/404/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -2620,12 +2632,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/de/barrierefreiheit/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/de/2026-05-21-beste-cloud-infrastruktur-architektur-fuer-banken-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -2656,12 +2662,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/de/2026-05-14-das-hauptbuch-sichern-post-quanten-migration-im-corporate-finance/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/de/2026-05-18-agentische-engineering-banken-blueprint-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -2812,6 +2812,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/de/kontakt/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/de/2026-05-16-beste-cloud-infrastruktur-architektur-fuer-banken-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -3081,6 +3087,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/hi/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/hi/2025-09-01-quantum-surakshit-bhugtaan-epaa/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -3171,13 +3183,13 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/hi/2023-10-16-quantum-yug-mein-data-suraksha-hsh-hash-library/index.html</loc>
+  <loc>https://sebastienrousseau.com/papers/hi/2026-05-16-banks-ke-liye-shreshth-cloud-architecture-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/hi/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html</loc>
+  <loc>https://sebastienrousseau.com/papers/hi/2023-10-16-quantum-yug-mein-data-suraksha-hsh-hash-library/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -3273,12 +3285,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/hi/2026-05-21-banks-ke-liye-shreshth-cloud-architecture-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/hi/shartein/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -3322,6 +3328,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/fil/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/fil/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -3417,12 +3429,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/fil/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/fil/2018-01-09-understanding-the-technology-behind-blockchain/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -3484,6 +3490,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/fil/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/fil/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -3574,12 +3586,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/fil/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/fil/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -3735,6 +3741,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/bn/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/bn/tag/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -3826,12 +3838,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/bn/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/bn/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -3939,6 +3945,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/bn/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/bn/prokashana/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -4012,12 +4024,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/bn/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/bn/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -4137,6 +4143,18 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/nl/2026-05-17-agentic-engineering-banken-blauwdruk-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/nl/2026-05-16-beste-cloud-infrastructuur-architectuur-voor-banken-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/nl/2023-10-16-data-beschermen-in-het-kwantumtijdperk-de-hash-bibliotheek-hsh/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -4209,12 +4227,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/nl/2026-05-18-agentic-engineering-banken-blauwdruk-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/nl/2024-01-23-vooruitgang-in-ai-prompt-engineering/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -4240,12 +4252,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/nl/2023-11-19-crystals-kyber-het-beschermingsalgoritme-in-het-kwantumtijdperk/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/nl/2026-05-21-beste-cloud-infrastructuur-architectuur-voor-banken-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -4521,6 +4527,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/pt-br/2026-05-17-engenharia-agentica-bancos-blueprint-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/pt-br/2023-09-29-automatizar-arquivos-de-pagamento-iso-20022-com-pain001/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -4534,12 +4546,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/pt-br/2024-01-29-analise-audio-traducoes-e-insights-com-ia/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/pt-br/2026-05-21-melhor-arquitetura-cloud-para-bancos-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -4611,12 +4617,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/pt-br/2026-05-18-engenharia-agentica-bancos-blueprint-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/pt-br/2023-12-25-revolucionar-as-financas-com-algoritmos-quanticos-impulsionados-por-ia/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -4660,6 +4660,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/pt-br/2018-02-15-criacao-da-plataforma-express-transaction-credits/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/pt-br/2026-05-16-melhor-arquitetura-cloud-para-bancos-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -4935,6 +4941,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/ar/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ar/maqalat/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -5043,12 +5055,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/ar/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ar/2018-01-09-understanding-the-technology-behind-blockchain/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -5133,6 +5139,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/ar/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ar/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -5206,12 +5218,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ar/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/ar/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -5307,12 +5313,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ha/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -5338,6 +5338,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ha/2024-02-08-revolutionising-advertising-how-ai-shapes-the-future/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/ha/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -5445,12 +5451,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/ha/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ha/2018-01-09-understanding-the-technology-behind-blockchain/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -5518,6 +5518,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ha/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/ha/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -5638,12 +5644,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ha/labarai/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/ha/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -5829,12 +5829,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/uk/2026-05-18-ahentyna-inzheneriya-banky-blueprint-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/uk/proekty/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -5860,12 +5854,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/uk/2023-10-16-zakhyst-danykh-u-kvantovu-eru-biblioteka-hash-hsh/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/uk/2026-05-21-naikrashcha-khmarna-arkhitektura-dlya-bankiv-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -5943,6 +5931,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/uk/2026-05-17-ahentyna-inzheneriya-banky-blueprint-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/uk/2024-01-29-audio-analiz-pereklady-i-perspektyvy-na-shi/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -5962,6 +5956,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/uk/2024-02-12-akande-holosovyy-asystent-osobyste-ta-vykonavche-asystyrovannia/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/uk/2026-05-16-naikrashcha-khmarna-arkhitektura-dlya-bankiv-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -6183,6 +6183,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/yo/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/yo/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -6303,12 +6309,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/yo/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/yo/2018-01-09-understanding-the-technology-behind-blockchain/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -6376,6 +6376,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/yo/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/yo/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -6466,12 +6472,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/yo/nipa-wa/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/yo/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -6591,6 +6591,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/ro/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ro/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -6675,12 +6681,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/ro/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ro/liste-de-redare/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -6742,6 +6742,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ro/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/ro/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -6873,12 +6879,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/ro/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ro/termeni/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -6969,6 +6969,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -7029,6 +7035,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/ru/2026-05-16-luchshaya-cloud-arkhitektura-dlya-bankov-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ru/2023-12-25-revolyutsiya-finansov-s-kvantovymi-algoritmami-usilennymi-ii/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -7072,12 +7084,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ru/2023-10-09-shokunin-samyi-bystryi-staticheskii-generator-na-rust/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/ru/2026-05-21-luchshaya-cloud-arkhitektura-dlya-bankov-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -7215,6 +7221,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/ru/2026-05-17-agentnaya-inzheneriya-plan-dlya-bankov-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ru/2023-12-18-sostoyanie-ii-i-kvantovykh-vychislenii-v-banke-obzor-2023/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -7252,12 +7264,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ru/2024-03-12-revolyutsiya-raspoznavaniya-rechi-v-realnom-vremeni-na-macos-s-whisper/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/ru/2026-05-18-agentnaya-inzheneriya-plan-dlya-bankov-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -7563,12 +7569,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/cs/2026-05-18-agentni-inzenyrstvi-banky-blueprint-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/cs/2023-11-19-crystals-kyber-ochranny-algoritmus-v-kvantove-ere/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -7629,6 +7629,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/cs/2026-05-16-nejlepsi-cloudova-architektura-pro-banky-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/cs/2024-03-08-rustlogs-pokrocila-knihovna-logovani-pro-rust/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -7683,13 +7689,13 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/cs/2024-02-08-revoluce-reklamy-jak-ai-tvori-budoucnost/index.html</loc>
+  <loc>https://sebastienrousseau.com/papers/cs/2026-05-17-agentni-inzenyrstvi-banky-blueprint-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/cs/2026-05-21-nejlepsi-cloudova-architektura-pro-banky-2026/index.html</loc>
+  <loc>https://sebastienrousseau.com/papers/cs/2024-02-08-revoluce-reklamy-jak-ai-tvori-budoucnost/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -7887,6 +7893,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/it/2026-05-17-ingegneria-agentica-banche-blueprint-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/it/contatti/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -7953,12 +7965,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/it/2026-05-21-miglior-architettura-cloud-per-banche-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/it/2024-03-25-cifratura-completamente-omomorfica-nellera-quantistica-bancaria/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -7972,12 +7978,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/it/2026-05-14-mettere-in-sicurezza-il-libro-mastro-migrazione-post-quantum-finanza-aziendale/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/it/2026-05-18-ingegneria-agentica-banche-blueprint-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -8032,6 +8032,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/it/accessibilita/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/it/2026-05-16-miglior-architettura-cloud-per-banche-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -8385,6 +8391,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/ja/2026-05-17-eejentikku-enjiniaringu-ginkou-no-2026-sekkeizu/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ja/2018-01-01-bitcoin-nenkan-soukatsu/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -8505,12 +8517,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/ja/2026-05-21-2026-saiyou-no-kuraudo-infura-aakitekucha/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ja/2023-12-18-ginkou-ni-okeru-ai-to-ryoushi-keisan-no-genjou-2023-soukatsu/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -8518,12 +8524,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ja/2024-01-29-ai-ni-yoru-onsei-bunseki-honyaku-to-insaito/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/ja/2026-05-18-eejentikku-enjiniaringu-ginkou-no-2026-sekkeizu/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -8560,6 +8560,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/ja/2024-03-04-mistral-ai-no-le-chat-taiwa-gata-ai-no-shinjidai/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/ja/2026-05-16-2026-saiyou-no-kuraudo-infura-aakitekucha/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -8643,12 +8649,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/privacy/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -8722,6 +8722,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/he/nigishut/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/he/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -8847,12 +8853,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/he/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/he/2018-01-09-understanding-the-technology-behind-blockchain/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -8931,6 +8931,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/he/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/he/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -8998,12 +9004,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/he/2023-10-16-protecting-data-in-the-quantum-age-the-hash-library-hsh/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/he/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -9303,13 +9303,13 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/sv/projekt/index.html</loc>
+  <loc>https://sebastienrousseau.com/papers/sv/2026-05-16-basta-molnarkitektur-for-banker-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/sv/2026-05-21-basta-molnarkitektur-for-banker-2026/index.html</loc>
+  <loc>https://sebastienrousseau.com/papers/sv/projekt/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -9363,12 +9363,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/sv/2026-05-18-agentisk-ingenjorskonst-banker-blueprint-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/sv/2024-04-22-fel-upptackt-i-kvantalgoritm-for-gitterbaserad-krypto/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -9406,6 +9400,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/sv/villkor/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/sv/2026-05-17-agentisk-ingenjorskonst-banker-blueprint-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -9573,13 +9573,13 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/vi/2026-05-18-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026/index.html</loc>
+  <loc>https://sebastienrousseau.com/papers/vi/2024-02-26-google-gemma-bien-doi-phat-trien-ai-ma-nguon-mo/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/vi/2024-02-26-google-gemma-bien-doi-phat-trien-ai-ma-nguon-mo/index.html</loc>
+  <loc>https://sebastienrousseau.com/papers/vi/2026-05-16-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -9603,6 +9603,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/vi/2026-05-17-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/vi/2018-01-24-tieu-chuan-token-erc-20/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -9610,12 +9616,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/vi/2023-11-05-hang-so-toan-hoc-va-mat-ma-cho-rust/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/vi/2026-05-21-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -10041,7 +10041,7 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/pl/2026-05-21-najlepsza-architektura-infrastruktury-chmurowej-2026/index.html</loc>
+  <loc>https://sebastienrousseau.com/papers/pl/2026-05-16-najlepsza-architektura-infrastruktury-chmurowej-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -10155,12 +10155,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/pl/2026-05-18-inzynieria-agentowa-blueprint-bankow-2026/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/pl/dziekuje/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -10216,6 +10210,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/pl/2018-01-02-blockchain-technologia-ktora-liczy-sie-w-2018/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/pl/2026-05-17-inzynieria-agentowa-blueprint-bankow-2026/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -10300,6 +10300,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/2018-01-24-the-erc-20-token-standard/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/labs/hsh-demo/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -10485,6 +10491,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/zh-hant/2026-05-16-2026-zuijia-yun-jichu-jiagou-tw/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/zh-hant/2024-02-26-google-gemma-zhuanxing-kaiyuan-ai-kaifa-tw/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -10522,18 +10534,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/zh-hant/2023-12-04-yong-dtt-ku-zhangwo-rust-de-riqi-yu-shijian-tw/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/zh-hant/2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu-tw/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/zh-hant/2026-05-21-2026-zuijia-yun-jichu-jiagou-tw/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -10665,6 +10665,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/zh-hant/2026-05-17-ai-dailixing-gongcheng-yinhang-2026-lantu-tw/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/zh-hant/wuzhang-ai-tw/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -10785,12 +10791,6 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/zh-hans/2026-05-21-2026-zuijia-yun-jichu-jiagou/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/zh-hans/2024-02-08-ai-ruhe-suzao-guanggao-ye-de-weilai/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -10846,6 +10846,12 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/zh-hans/yinsi/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/zh-hans/2026-05-16-2026-zuijia-yun-jichu-jiagou/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>
@@ -11013,6 +11019,12 @@
 <url>
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
+  <loc>https://sebastienrousseau.com/papers/zh-hans/2026-05-17-ai-dailixing-gongcheng-yinhang-2026-lantu/index.html</loc>
+</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+  <changefreq>weekly</changefreq>
+  <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/zh-hans/boqing/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -11074,12 +11086,6 @@
   <changefreq>weekly</changefreq>
   <lastmod>2024-03-12</lastmod>
   <loc>https://sebastienrousseau.com/papers/zh-hans/yong-shokunin-zhizuo/index.html</loc>
-</url>
-<?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <changefreq>weekly</changefreq>
-  <lastmod>2024-03-12</lastmod>
-  <loc>https://sebastienrousseau.com/papers/zh-hans/2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu/index.html</loc>
 </url>
 <?xml version="1.0" encoding="UTF-8"?>
 <url>

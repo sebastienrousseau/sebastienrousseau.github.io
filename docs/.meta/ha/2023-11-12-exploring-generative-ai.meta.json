@@ -1,11 +1,11 @@
 {
-  "language": "ha-NG",
+  "description": "Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.",
+  "subtitle": "Applied artificial intelligence in banking and financial services.",
+  "locale": "ha_NG",
   "banner_alt": "AI, Artificial Intelligence concept,3d rendering,conceptual image",
   "keywords": "Generative AI, technology, future, impact, ethics, synergies, innovation, creativity, transformation, evolution",
-  "description": "Explore Generative AI in 2023: how it works, where it lands first in financial services, and the ethical and architectural questions worth asking.",
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
-  "locale": "ha_NG",
-  "subtitle": "Applied artificial intelligence in banking and financial services.",
+  "title": "Generative AI in 2023: How It Works, Where It Lands",
   "date": "Nov 12, 2023",
-  "title": "Generative AI in 2023: How It Works, Where It Lands"
+  "language": "ha-NG",
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp"
 }

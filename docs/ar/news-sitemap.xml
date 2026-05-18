@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/ar/2026-05-21-best-cloud-infrastructure-architecture-2026/</loc>
+  <loc>https://sebastienrousseau.com/ar/2026-05-17-agentic-engineering-banks-blueprint-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ar-SA</news:language>
     </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>أفضل بنية تحتية سحابية في 2026: مخطط أصيل للذكاء الاصطناعي، متعدد السحب، وواعٍ كمياً للخدمات المالية</news:title>
-    <news:keywords>بنية السحابة 2026, البنية التحتية الأصيلة للذكاء الاصطناعي, السحابة المتعددة, السحابة السيادية, قانون CLOUD الأمريكي, Bleu, S3NS, AWS European Sovereign Cloud, الذكاء الاصطناعي السيادي, النماذج مفتوحة الأوزان, Llama 4, Mistral, الحوسبة السرية, بدون خوادم, الحوسبة الطرفية, WebAssembly, Wasm, eBPF, Cilium, Tetragon, الحافة عبر أقمار LEO, Starlink Enterprise, DevSecOps, مركز البيانات المستدام, الحوسبة الواعية للشبكة, التبريد السائل, المفاعلات النمطية الصغيرة, SMR, الطاقة النووية, Three Mile Island, Kairos Power, X-Energy, الفوتونيات السيليكونية, البصريات المعلبة مشتركاً, NVIDIA Spectrum-X, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, التجارة الوكيلة, أسراب الوكلاء المتعددين, اقتصاديات الوحدة الوكيلة, FinOps الوكيلة, هوية الوكيل التشفيرية, SPIFFE, SPIRE, العدوى الخوارزمية, تسميم RAG, أمان قواعد بيانات المتجهات, إثبات منشأ البيانات, Pinecone, Qdrant, Weaviate, Milvus, هندسة الفوضى الوكيلة, جاذبية البيانات, FinOps للتدفق الخارج, HPC, تخزين GPU, الخزانة المستمرة, السيولة بلا حدود, المدفوعات الفورية, CBDC, eCNY, DREX, e-Rupee, BIS Project Agora, اليورو الرقمي, توليد البيانات الاصطناعية, السحابة المتعددة لـ JPMorgan, تحديث Citi, الشبكات العصبية الرسومية, احتيال التزييف العميق, الحصاد الآن والفك لاحقاً, HNDL, التشفير ما بعد الكمي, ML-KEM, ML-DSA, المرونة التشفيرية, توزيع المفاتيح الكمي, QKD, Basel IV, مخاطر تركيز السحابة, RWA لمخاطر التشغيل, أمان MCP, الحقن السريع, هجمات سلسلة التوريد, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
+    <news:publication_date>2026-05-17T06:06:06+00:00</news:publication_date>
+    <news:title>الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه</news:title>
+    <news:keywords>الهندسة الوكيلية، التطوير المُوجَّه بالمواصفات، البنوك، الخدمات المالية، حوكمة AI، EU AI Act، DORA، SR 11-7، NIST AI RMF، ISO 42001، تحديث COBOL، mainframe، vibe coding، vibe hacking، الوكلاء المستقلّون، Claude Code، GitHub Spec Kit، AI Bill of Materials، AIBOM، human in the loop، HITL، human on the loop، HOTL، إدارة مخاطر الأطراف الثالثة، TPRM، التشفير ما بعد الكمي، مستوى تحكّم الوكلاء، FCA، SM&amp;CR، خطة عمل 12 أسبوعاً، Sebastien Rousseau</news:keywords>
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/ar/2026-05-18-agentic-engineering-banks-blueprint-2026/</loc>
+  <loc>https://sebastienrousseau.com/ar/2026-05-16-best-cloud-infrastructure-architecture-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ar-SA</news:language>
     </news:publication>
-    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
-    <news:title>الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه</news:title>
-    <news:keywords>الهندسة الوكيلية، التطوير المُوجَّه بالمواصفات، البنوك، الخدمات المالية، حوكمة AI، EU AI Act، DORA، SR 11-7، NIST AI RMF، ISO 42001، تحديث COBOL، mainframe، vibe coding، vibe hacking، الوكلاء المستقلّون، Claude Code، GitHub Spec Kit، AI Bill of Materials، AIBOM، human in the loop، HITL، human on the loop، HOTL، إدارة مخاطر الأطراف الثالثة، TPRM، التشفير ما بعد الكمي، مستوى تحكّم الوكلاء، FCA، SM&amp;CR، خطة عمل 12 أسبوعاً، Sebastien Rousseau</news:keywords>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>أفضل بنية تحتية سحابية في 2026: مخطط أصيل للذكاء الاصطناعي، متعدد السحب، وواعٍ كمياً للخدمات المالية</news:title>
+    <news:keywords>بنية السحابة 2026, البنية التحتية الأصيلة للذكاء الاصطناعي, السحابة المتعددة, السحابة السيادية, قانون CLOUD الأمريكي, Bleu, S3NS, AWS European Sovereign Cloud, الذكاء الاصطناعي السيادي, النماذج مفتوحة الأوزان, Llama 4, Mistral, الحوسبة السرية, بدون خوادم, الحوسبة الطرفية, WebAssembly, Wasm, eBPF, Cilium, Tetragon, الحافة عبر أقمار LEO, Starlink Enterprise, DevSecOps, مركز البيانات المستدام, الحوسبة الواعية للشبكة, التبريد السائل, المفاعلات النمطية الصغيرة, SMR, الطاقة النووية, Three Mile Island, Kairos Power, X-Energy, الفوتونيات السيليكونية, البصريات المعلبة مشتركاً, NVIDIA Spectrum-X, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, التجارة الوكيلة, أسراب الوكلاء المتعددين, اقتصاديات الوحدة الوكيلة, FinOps الوكيلة, هوية الوكيل التشفيرية, SPIFFE, SPIRE, العدوى الخوارزمية, تسميم RAG, أمان قواعد بيانات المتجهات, إثبات منشأ البيانات, Pinecone, Qdrant, Weaviate, Milvus, هندسة الفوضى الوكيلة, جاذبية البيانات, FinOps للتدفق الخارج, HPC, تخزين GPU, الخزانة المستمرة, السيولة بلا حدود, المدفوعات الفورية, CBDC, eCNY, DREX, e-Rupee, BIS Project Agora, اليورو الرقمي, توليد البيانات الاصطناعية, السحابة المتعددة لـ JPMorgan, تحديث Citi, الشبكات العصبية الرسومية, احتيال التزييف العميق, الحصاد الآن والفك لاحقاً, HNDL, التشفير ما بعد الكمي, ML-KEM, ML-DSA, المرونة التشفيرية, توزيع المفاتيح الكمي, QKD, Basel IV, مخاطر تركيز السحابة, RWA لمخاطر التشغيل, أمان MCP, الحقن السريع, هجمات سلسلة التوريد, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
   </news:news>
 </url>
 <url>

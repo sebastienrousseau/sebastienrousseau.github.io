@@ -81,7 +81,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "at Tier-1 institutions."
         ),
         "slugs": [
-            "2026-05-18-agentic-engineering-banks-blueprint-2026",
+            "2026-05-17-agentic-engineering-banks-blueprint-2026",
             "2026-05-11-lucy-besson-knowledge-transfer-ai-quantum",
             "2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology",
             "2024-03-18-advancing-ai-with-multimodal-llms-insights-from-mm1",

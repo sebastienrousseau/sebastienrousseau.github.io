@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/pl/2026-05-21-najlepsza-architektura-infrastruktury-chmurowej-2026/</loc>
+  <loc>https://sebastienrousseau.com/pl/2026-05-17-inzynieria-agentowa-blueprint-bankow-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>pl-PL</news:language>
     </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Najlepsza architektura infrastruktury chmurowej w 2026 roku: natywny AI, multi-cloud, świadomy kwantowo plan dla usług finansowych</news:title>
-    <news:keywords>architektura chmurowa 2026, infrastruktura natywna AI, multi-cloud, suwerenna chmura, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, suwerenna AI, modele open-weight, Llama 4, Mistral, poufne obliczenia, serverless, przetwarzanie brzegowe, WebAssembly, Wasm, eBPF, Cilium, Tetragon, brzeg LEO satelitarny, Starlink Enterprise, DevSecOps, zrównoważone centrum danych, obliczenia świadome sieci, chłodzenie cieczą, Small Modular Reactor, SMR, energia jądrowa, Three Mile Island, Kairos Power, X-Energy, fotonika krzemowa, optyka współpakowana, NVIDIA Spectrum-X, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, handel agentowy, roje wieloagentowe, ekonomia jednostkowa agentów, agent FinOps, kryptograficzna tożsamość agenta, SPIFFE, SPIRE, zarażenie algorytmiczne, zatruwanie RAG, bezpieczeństwo baz wektorowych, pochodzenie danych, Pinecone, Qdrant, Weaviate, Milvus, agentowa inżynieria chaosu, grawitacja danych, FinOps egress, HPC, pamięć GPU, ciągła skarbowość, bezgraniczna płynność, płatności natychmiastowe, CBDC, eCNY, DREX, e-Rupee, BIS Project Agora, cyfrowe euro, generowanie danych syntetycznych, JPMorgan multi-cloud, modernizacja Citi, grafowe sieci neuronowe, oszustwa deepfake, harvest now decrypt later, HNDL, kryptografia postkwantowa, ML-KEM, ML-DSA, elastyczność kryptograficzna, kwantowa dystrybucja kluczy, QKD, Basel IV, ryzyko koncentracji chmurowej, ryzyko operacyjne RWA, bezpieczeństwo MCP, prompt injection, ataki na łańcuch dostaw, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
+    <news:publication_date>2026-05-17T06:06:06+00:00</news:publication_date>
+    <news:title>Inżynieria agentowa: blueprint banków na 2026</news:title>
+    <news:keywords>inżynieria agentowa, agenci AI, bankowość, blueprint 2026, LLM, automatyzacja, AI w produkcji</news:keywords>
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/pl/2026-05-18-inzynieria-agentowa-blueprint-bankow-2026/</loc>
+  <loc>https://sebastienrousseau.com/pl/2026-05-16-najlepsza-architektura-infrastruktury-chmurowej-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>pl-PL</news:language>
     </news:publication>
-    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
-    <news:title>Inżynieria agentowa: blueprint banków na 2026</news:title>
-    <news:keywords>inżynieria agentowa, agenci AI, bankowość, blueprint 2026, LLM, automatyzacja, AI w produkcji</news:keywords>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>Najlepsza architektura infrastruktury chmurowej w 2026 roku: natywny AI, multi-cloud, świadomy kwantowo plan dla usług finansowych</news:title>
+    <news:keywords>architektura chmurowa 2026, infrastruktura natywna AI, multi-cloud, suwerenna chmura, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, suwerenna AI, modele open-weight, Llama 4, Mistral, poufne obliczenia, serverless, przetwarzanie brzegowe, WebAssembly, Wasm, eBPF, Cilium, Tetragon, brzeg LEO satelitarny, Starlink Enterprise, DevSecOps, zrównoważone centrum danych, obliczenia świadome sieci, chłodzenie cieczą, Small Modular Reactor, SMR, energia jądrowa, Three Mile Island, Kairos Power, X-Energy, fotonika krzemowa, optyka współpakowana, NVIDIA Spectrum-X, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, handel agentowy, roje wieloagentowe, ekonomia jednostkowa agentów, agent FinOps, kryptograficzna tożsamość agenta, SPIFFE, SPIRE, zarażenie algorytmiczne, zatruwanie RAG, bezpieczeństwo baz wektorowych, pochodzenie danych, Pinecone, Qdrant, Weaviate, Milvus, agentowa inżynieria chaosu, grawitacja danych, FinOps egress, HPC, pamięć GPU, ciągła skarbowość, bezgraniczna płynność, płatności natychmiastowe, CBDC, eCNY, DREX, e-Rupee, BIS Project Agora, cyfrowe euro, generowanie danych syntetycznych, JPMorgan multi-cloud, modernizacja Citi, grafowe sieci neuronowe, oszustwa deepfake, harvest now decrypt later, HNDL, kryptografia postkwantowa, ML-KEM, ML-DSA, elastyczność kryptograficzna, kwantowa dystrybucja kluczy, QKD, Basel IV, ryzyko koncentracji chmurowej, ryzyko operacyjne RWA, bezpieczeństwo MCP, prompt injection, ataki na łańcuch dostaw, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
   </news:news>
 </url>
 <url>

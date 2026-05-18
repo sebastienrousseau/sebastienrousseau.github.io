@@ -6,14 +6,32 @@
     <description>Bài viết tiếng Việt: AI ứng dụng, thanh toán ISO 20022, mật mã hậu lượng tử và chuyển đổi thanh toán bán buôn.</description>
     <atom:link href="https://sebastienrousseau.com/vi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>vi-VN</language>
-    <lastBuildDate>Sun, 17 May 2026 09:16:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 06:28:51 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Đã đăng ký bản quyền.</copyright>
     <item>
+      <title>Kỹ thuật agentic: bản thiết kế ngân hàng 2026</title>
+      <link>https://sebastienrousseau.com/vi/2026-05-17-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026/</link>
+      <description>Kỹ thuật agentic — sử dụng các tác tử AI tự chủ để hoàn thành các tác vụ phức tạp. Một bản thiết kế cho việc tích hợp vào hạ tầng ngân hàng.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-17-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026/</guid>
+      <pubDate>Sun, 17 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/agentic-banking-banner.webp" type="image/webp" length="0"/>
+      <category>tác tử AI</category>
+      <category>kỹ thuật agentic</category>
+      <category>ngân hàng</category>
+      <category>tự động hoá</category>
+      <category>Claude</category>
+      <category>GPT</category>
+      <category>MCP</category>
+      <category>hành động</category>
+      <category>2026</category>
+    </item>
+    <item>
       <title>Kiến trúc hạ tầng đám mây tốt nhất năm 2026: Bản thiết kế AI-Native, Đa đám mây, Sẵn sàng Lượng tử cho Dịch vụ Tài chính</title>
-      <link>https://sebastienrousseau.com/vi/2026-05-21-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/</link>
+      <link>https://sebastienrousseau.com/vi/2026-05-16-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/</link>
       <description>Kiến trúc hạ tầng đám mây năm 2026 đã kết tinh quanh sáu trụ cột: hạ tầng AI-native, đa đám mây thông minh, thiết kế serverless-first với WebAssembly tại biên, điện toán biên, an ninh tự động hoá với tính linh hoạt mật mã, và vận hành mật độ cao bền vững. Với ngân hàng, câu hỏi là liệu nên tiêu thụ đám mây hay thiết kế nó — dưới áp lực hội tụ từ thương mại agentic, kinh tế đơn vị agentic, rủi ro lượng tử kiểu thu hoạch ngay - giải mã sau, an ninh MCP và lây nhiễm thuật toán, danh tính tác nhân bằng mật mã, các nhu cầu kho bạc liên tục, và Đạo luật AI của EU.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-21-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-16-kien-truc-ha-tang-dam-may-tot-nhat-cho-ngan-hang-2026/</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>kiến trúc hạ tầng đám mây 2026</category>
@@ -75,24 +93,6 @@
       <category>Durable Objects</category>
       <category>WCAG-AA</category>
       <category>Sebastien Rousseau</category>
-    </item>
-    <item>
-      <title>Kỹ thuật agentic: bản thiết kế ngân hàng 2026</title>
-      <link>https://sebastienrousseau.com/vi/2026-05-18-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026/</link>
-      <description>Kỹ thuật agentic — sử dụng các tác tử AI tự chủ để hoàn thành các tác vụ phức tạp. Một bản thiết kế cho việc tích hợp vào hạ tầng ngân hàng.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-18-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026/</guid>
-      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/agentic-banking-banner.webp" type="image/webp" length="0"/>
-      <category>tác tử AI</category>
-      <category>kỹ thuật agentic</category>
-      <category>ngân hàng</category>
-      <category>tự động hoá</category>
-      <category>Claude</category>
-      <category>GPT</category>
-      <category>MCP</category>
-      <category>hành động</category>
-      <category>2026</category>
     </item>
     <item>
       <title>Lợi suất ẩn: giải mã các hồ sơ BRSRV và BSTBL của BlackRock theo GENIUS Act</title>

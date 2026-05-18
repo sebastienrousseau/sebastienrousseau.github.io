@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/de/2026-05-21-beste-cloud-infrastruktur-architektur-fuer-banken-2026/</loc>
+  <loc>https://sebastienrousseau.com/de/2026-05-17-agentische-engineering-banken-blueprint-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>de-DE</news:language>
     </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Die beste Cloud-Infrastruktur-Architektur 2026: ein KI-nativer, Multi-Cloud- und quantenbewusster Blueprint für Finanzdienstleister</news:title>
-    <news:keywords>Cloud-Architektur 2026, KI-native Infrastruktur, Multi-Cloud, Sovereign Cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, Sovereign AI, Open-Weight-Modelle, Llama 4, Mistral, Confidential Computing, Serverless, Edge Computing, WebAssembly, Wasm, eBPF, Cilium, Tetragon, LEO-Satelliten-Edge, Starlink Enterprise, DevSecOps, nachhaltiges Rechenzentrum, grid-aware Computing, Flüssigkühlung, Small Modular Reactor, SMR, Nuklearenergie, Three Mile Island, Kairos Power, X-Energy, Silicon Photonics, Co-Packaged Optics, NVIDIA Spectrum-X, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, agentischer Commerce, Multi-Agent-Swarms, agentische Unit Economics, Agent FinOps, kryptografische Agentenidentität, SPIFFE, SPIRE, algorithmische Ansteckung, RAG-Poisoning, Vektordatenbank-Sicherheit, Daten-Provenienz, Pinecone, Qdrant, Weaviate, Milvus, agentisches Chaos Engineering, Data Gravity, Egress FinOps, HPC, GPU-Storage, kontinuierliches Treasury, grenzenlose Liquidität, Echtzeitzahlungen, CBDC, eCNY, DREX, e-Rupee, BIS Project Agora, digitaler Euro, synthetische Datengenerierung, JPMorgan Multi-Cloud, Citi-Modernisierung, Graph Neural Networks, Deepfake-Betrug, Harvest Now Decrypt Later, HNDL, Post-Quanten-Kryptografie, ML-KEM, ML-DSA, Krypto-Agilität, Quantum Key Distribution, QKD, Basel IV, Cloud-Konzentrationsrisiko, operative Risiko-RWA, MCP-Sicherheit, Prompt Injection, Supply-Chain-Angriffe, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
+    <news:publication_date>2026-05-17T06:06:06+00:00</news:publication_date>
+    <news:title>Agentische Engineering für Banken: ein Blueprint 2026 für den Vorstand und die Ingenieure, die ihn bauen werden</news:title>
+    <news:keywords>agentische Engineering, spezifikationsgesteuerte Entwicklung, Banken, Finanzdienstleistungen, KI-Governance, EU-KI-Gesetz, DORA, SR 11-7, NIST AI RMF, ISO 42001, COBOL-Modernisierung, Mainframe, Vibe Coding, Vibe Hacking, autonome Agenten, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, Human in the Loop, HITL, Human on the Loop, HOTL, TPRM, Lieferantenrisiko, Post-Quanten-Kryptografie, Agent Control Plane, FCA, SM&amp;CR, 12-Wochen-Aktionsplan, Sebastien Rousseau</news:keywords>
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/de/2026-05-18-agentische-engineering-banken-blueprint-2026/</loc>
+  <loc>https://sebastienrousseau.com/de/2026-05-16-beste-cloud-infrastruktur-architektur-fuer-banken-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>de-DE</news:language>
     </news:publication>
-    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
-    <news:title>Agentische Engineering für Banken: ein Blueprint 2026 für den Vorstand und die Ingenieure, die ihn bauen werden</news:title>
-    <news:keywords>agentische Engineering, spezifikationsgesteuerte Entwicklung, Banken, Finanzdienstleistungen, KI-Governance, EU-KI-Gesetz, DORA, SR 11-7, NIST AI RMF, ISO 42001, COBOL-Modernisierung, Mainframe, Vibe Coding, Vibe Hacking, autonome Agenten, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, Human in the Loop, HITL, Human on the Loop, HOTL, TPRM, Lieferantenrisiko, Post-Quanten-Kryptografie, Agent Control Plane, FCA, SM&amp;CR, 12-Wochen-Aktionsplan, Sebastien Rousseau</news:keywords>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>Die beste Cloud-Infrastruktur-Architektur 2026: ein KI-nativer, Multi-Cloud- und quantenbewusster Blueprint für Finanzdienstleister</news:title>
+    <news:keywords>Cloud-Architektur 2026, KI-native Infrastruktur, Multi-Cloud, Sovereign Cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, Sovereign AI, Open-Weight-Modelle, Llama 4, Mistral, Confidential Computing, Serverless, Edge Computing, WebAssembly, Wasm, eBPF, Cilium, Tetragon, LEO-Satelliten-Edge, Starlink Enterprise, DevSecOps, nachhaltiges Rechenzentrum, grid-aware Computing, Flüssigkühlung, Small Modular Reactor, SMR, Nuklearenergie, Three Mile Island, Kairos Power, X-Energy, Silicon Photonics, Co-Packaged Optics, NVIDIA Spectrum-X, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, agentischer Commerce, Multi-Agent-Swarms, agentische Unit Economics, Agent FinOps, kryptografische Agentenidentität, SPIFFE, SPIRE, algorithmische Ansteckung, RAG-Poisoning, Vektordatenbank-Sicherheit, Daten-Provenienz, Pinecone, Qdrant, Weaviate, Milvus, agentisches Chaos Engineering, Data Gravity, Egress FinOps, HPC, GPU-Storage, kontinuierliches Treasury, grenzenlose Liquidität, Echtzeitzahlungen, CBDC, eCNY, DREX, e-Rupee, BIS Project Agora, digitaler Euro, synthetische Datengenerierung, JPMorgan Multi-Cloud, Citi-Modernisierung, Graph Neural Networks, Deepfake-Betrug, Harvest Now Decrypt Later, HNDL, Post-Quanten-Kryptografie, ML-KEM, ML-DSA, Krypto-Agilität, Quantum Key Distribution, QKD, Basel IV, Cloud-Konzentrationsrisiko, operative Risiko-RWA, MCP-Sicherheit, Prompt Injection, Supply-Chain-Angriffe, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
   </news:news>
 </url>
 <url>

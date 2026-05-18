@@ -6,33 +6,14 @@
     <description>हिन्दी लेख: व्यावहारिक AI, ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान का रूपांतरण।</description>
     <atom:link href="https://sebastienrousseau.com/hi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>hi-IN</language>
-    <lastBuildDate>Sun, 17 May 2026 09:16:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 06:28:51 +0000</lastBuildDate>
     <copyright>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</copyright>
     <item>
-      <title>बैंकों के लिए सर्वोत्तम क्लाउड-अवसंरचना-वास्तुकला (2026)</title>
-      <link>https://sebastienrousseau.com/hi/2026-05-21-banks-ke-liye-shreshth-cloud-architecture-2026/</link>
-      <description>वित्तीय-सेवाओं हेतु 2026 की क्लाउड-वास्तुकला का ब्लूप्रिंट — AI-नेटिव, मल्टीक्लाउड, क्वांटम-सचेत।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-21-banks-ke-liye-shreshth-cloud-architecture-2026/</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
-      <category>क्लाउड वास्तुकला 2026</category>
-      <category>AI-नेटिव</category>
-      <category>मल्टीक्लाउड</category>
-      <category>serverless</category>
-      <category>edge</category>
-      <category>WebAssembly</category>
-      <category>DevSecOps</category>
-      <category>बैंकिंग</category>
-      <category>क्रिप्टो चपलता</category>
-      <category>agentic</category>
-    </item>
-    <item>
       <title>बैंकों के लिए एजेंटिक-इंजीनियरिंग: 2026 का ब्लूप्रिंट</title>
-      <link>https://sebastienrousseau.com/hi/2026-05-18-agentic-engineering-banks-blueprint-2026/</link>
+      <link>https://sebastienrousseau.com/hi/2026-05-17-agentic-engineering-banks-blueprint-2026/</link>
       <description>बैंकों के लिए एजेंटिक-इंजीनियरिंग — 2026 का ब्लूप्रिंट: एजेंट, MCP, यूनिट-अर्थशास्त्र और निगरानी।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-18-agentic-engineering-banks-blueprint-2026/</guid>
-      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-17-agentic-engineering-banks-blueprint-2026/</guid>
+      <pubDate>Sun, 17 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
       <category>agentic</category>
@@ -45,6 +26,25 @@
       <category>यूनिट अर्थशास्त्र</category>
       <category>EU AI Act</category>
       <category>identity</category>
+    </item>
+    <item>
+      <title>बैंकों के लिए सर्वोत्तम क्लाउड-अवसंरचना-वास्तुकला (2026)</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-16-banks-ke-liye-shreshth-cloud-architecture-2026/</link>
+      <description>वित्तीय-सेवाओं हेतु 2026 की क्लाउड-वास्तुकला का ब्लूप्रिंट — AI-नेटिव, मल्टीक्लाउड, क्वांटम-सचेत।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-16-banks-ke-liye-shreshth-cloud-architecture-2026/</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
+      <category>क्लाउड वास्तुकला 2026</category>
+      <category>AI-नेटिव</category>
+      <category>मल्टीक्लाउड</category>
+      <category>serverless</category>
+      <category>edge</category>
+      <category>WebAssembly</category>
+      <category>DevSecOps</category>
+      <category>बैंकिंग</category>
+      <category>क्रिप्टो चपलता</category>
+      <category>agentic</category>
     </item>
     <item>
       <title>छुपी हुई आमदनी: BlackRock BRSRV, BSTBL और GENIUS Act टोकनीकृत MMF</title>

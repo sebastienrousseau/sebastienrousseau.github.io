@@ -4,23 +4,23 @@
   <link href="https://sebastienrousseau.com/he/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/he/"/>
   <id>https://sebastienrousseau.com/he/</id>
-  <updated>2026-05-17T09:16:06+00:00</updated>
+  <updated>2026-05-18T06:28:51+00:00</updated>
   <entry>
-    <title>ארכיטקטורת תשתית הענן הטובה ביותר ב-2026: שרטוט AI-native, רב-ענני ומודע-קוונטי לשירותים פיננסיים</title>
-    <link href="https://sebastienrousseau.com/he/2026-05-21-best-cloud-infrastructure-architecture-2026/"/>
-    <id>https://sebastienrousseau.com/he/2026-05-21-best-cloud-infrastructure-architecture-2026/</id>
-    <updated>2026-05-21T06:06:06+00:00</updated>
-    <published>2026-05-21T06:06:06+00:00</published>
-    <summary>ארכיטקטורת ענן ב-2026 התגבשה סביב שש עמודי תווך: תשתית AI-native, multi-cloud אינטליגנטי, תכנון serverless-first עם WebAssembly בקצה, edge computing, אבטחה אוטומטית עם crypto-agility, ופעולות בנות-קיימא בצפיפות גבוהה. לבנקים, השאלה היא האם לצרוך את הענן או לעצב אותו — תחת לחץ מתכנס מ-agentic commerce, agentic unit economics, סיכון קוונטי של harvest-now-decrypt-later, אבטחת MCP והדבקה אלגוריתמית, זהות הצפנתית של סוכנים, דרישות continuous treasury, ו-EU AI Act.</summary>
+    <title>الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه</title>
+    <link href="https://sebastienrousseau.com/he/2026-05-17-agentic-engineering-banks-blueprint-2026/"/>
+    <id>https://sebastienrousseau.com/he/2026-05-17-agentic-engineering-banks-blueprint-2026/</id>
+    <updated>2026-05-17T06:06:06+00:00</updated>
+    <published>2026-05-17T06:06:06+00:00</published>
+    <summary>انتقل الذكاء الاصطناعي الوكيلي من التجربة إلى الإنتاج في الخدمات المصرفية العالمية. تستخدمه 70% من المؤسسات بدرجاتٍ متفاوتة؛ ولدى واحدةٍ من كلّ خمسٍ نموذج حوكمة ناضج. الخصوم المستقلّون يعملون بسرعة الآلة، والممتلكات القديمة COBOL التي يجب أن تتفاعل معها الأنظمة الجديدة كُتبت لافتراضات الدفعات في الستينيات، وموعد «المخاطر العالية» في EU AI Act على بُعد اثني عشر أسبوعاً. هذا هو الموقف الهندسي والحوكمي الذي يحتاج البنك للحفاظ عليه.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه</title>
-    <link href="https://sebastienrousseau.com/he/2026-05-18-agentic-engineering-banks-blueprint-2026/"/>
-    <id>https://sebastienrousseau.com/he/2026-05-18-agentic-engineering-banks-blueprint-2026/</id>
-    <updated>2026-05-18T06:06:06+00:00</updated>
-    <published>2026-05-18T06:06:06+00:00</published>
-    <summary>انتقل الذكاء الاصطناعي الوكيلي من التجربة إلى الإنتاج في الخدمات المصرفية العالمية. تستخدمه 70% من المؤسسات بدرجاتٍ متفاوتة؛ ولدى واحدةٍ من كلّ خمسٍ نموذج حوكمة ناضج. الخصوم المستقلّون يعملون بسرعة الآلة، والممتلكات القديمة COBOL التي يجب أن تتفاعل معها الأنظمة الجديدة كُتبت لافتراضات الدفعات في الستينيات، وموعد «المخاطر العالية» في EU AI Act على بُعد اثني عشر أسبوعاً. هذا هو الموقف الهندسي والحوكمي الذي يحتاج البنك للحفاظ عليه.</summary>
+    <title>ארכיטקטורת תשתית הענן הטובה ביותר ב-2026: שרטוט AI-native, רב-ענני ומודע-קוונטי לשירותים פיננסיים</title>
+    <link href="https://sebastienrousseau.com/he/2026-05-16-best-cloud-infrastructure-architecture-2026/"/>
+    <id>https://sebastienrousseau.com/he/2026-05-16-best-cloud-infrastructure-architecture-2026/</id>
+    <updated>2026-05-16T06:06:06+00:00</updated>
+    <published>2026-05-16T06:06:06+00:00</published>
+    <summary>ארכיטקטורת ענן ב-2026 התגבשה סביב שש עמודי תווך: תשתית AI-native, multi-cloud אינטליגנטי, תכנון serverless-first עם WebAssembly בקצה, edge computing, אבטחה אוטומטית עם crypto-agility, ופעולות בנות-קיימא בצפיפות גבוהה. לבנקים, השאלה היא האם לצרוך את הענן או לעצב אותו — תחת לחץ מתכנס מ-agentic commerce, agentic unit economics, סיכון קוונטי של harvest-now-decrypt-later, אבטחת MCP והדבקה אלגוריתמית, זהות הצפנתית של סוכנים, דרישות continuous treasury, ו-EU AI Act.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

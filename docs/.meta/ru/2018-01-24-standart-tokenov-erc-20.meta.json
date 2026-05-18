@@ -1,11 +1,11 @@
 {
-  "keywords": "ERC-20, Ethereum, токены, смарт-контракты, ICO, стейблкоины, DeFi, EIP, стандартизация",
-  "locale": "ru_RU",
   "banner_alt": "Выключенный ноутбук на коричневом деревянном столе",
+  "date": "January 24, 2018",
   "language": "ru-RU",
-  "description": "ERC-20 — стандарт интерфейса для совместимых токенов на Ethereum, ставший фундаментом для тысяч проектов и токенизированных активов.",
   "title": "ERC-20: стандарт токенов Ethereum, изменивший мир",
-  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
+  "locale": "ru_RU",
   "subtitle": "Интерфейс, на котором построена экономика токенов",
-  "date": "January 24, 2018"
+  "keywords": "ERC-20, Ethereum, токены, смарт-контракты, ICO, стейблкоины, DeFi, EIP, стандартизация",
+  "description": "ERC-20 — стандарт интерфейса для совместимых токенов на Ethereum, ставший фундаментом для тысяч проектов и токенизированных активов.",
+  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
 }
