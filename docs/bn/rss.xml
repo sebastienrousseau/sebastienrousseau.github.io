@@ -6,7 +6,7 @@
     <description>বাংলা প্রবন্ধ: প্রায়োগিক এআই, ISO 20022 পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের রূপান্তর।</description>
     <atom:link href="https://sebastienrousseau.com/bn/rss.xml" rel="self" type="application/rss+xml"/>
     <language>bn-BD</language>
-    <lastBuildDate>Mon, 18 May 2026 11:48:18 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 12:52:29 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।</copyright>
     <item>
       <title>২০২৬-এ কোয়ান্টাম ক্রিপ্টোগ্রাফি রিসেট: PQC মান, QKD নিশ্চয়তা, এবং যে মাইগ্রেশন কাজ ব্যাঙ্কগুলি স্থগিত করতে পারে না</title>
@@ -15,7 +15,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-18-quantum-cryptography-standards-developments-2026/</guid>
       <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" type="image/webp" length="0"/>
       <category>কোয়ান্টাম ক্রিপ্টোগ্রাফি ২০২৬</category>
       <category>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি</category>
       <category>NIST FIPS 203</category>

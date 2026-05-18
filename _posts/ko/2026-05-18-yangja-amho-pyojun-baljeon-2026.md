@@ -5,7 +5,7 @@ description: "2026년 양자 암호는 더 이상 양자 컴퓨터가 임박했�
 date: "May 18, 2026"
 language: "ko-KR"
 locale: "ko_KR"
-banner: "https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp"
+banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "2026년 양자 안전 암호 마이그레이션 맵 — NIST PQC 표준, 하이브리드 프로토콜 작업, QKD 보증, 암호 민첩성, 은행 데이터 위험 계층 표시"
 keywords: "양자 암호 2026, 포스트 양자 암호, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, 하이브리드 키 교환, QKD, ETSI QKD, ISO IEC 23837, 암호 민첩성, harvest now decrypt later, HNDL, 금융 서비스 암호, 은행 보안"
 last_reviewed: "2026-05-18"

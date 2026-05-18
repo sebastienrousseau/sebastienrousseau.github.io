@@ -6,7 +6,7 @@
     <description>Türkçe makaleler: uygulamalı yapay zeka, ISO 20022 ödemeleri, post-kuantum kriptografi ve toptan ödemelerin dönüşümü.</description>
     <atom:link href="https://sebastienrousseau.com/tr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>tr-TR</language>
-    <lastBuildDate>Mon, 18 May 2026 11:48:18 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 12:52:29 +0000</lastBuildDate>
     <copyright>© Telif Hakkı 2007 - 2026 - Sebastien Rousseau. Tüm hakları saklıdır.</copyright>
     <item>
       <title>2026&apos;da Kuantum Kriptografi Sıfırlaması: PQC Standartları, QKD Güvencesi ve Bankaların Erteleyemeyeceği Geçiş Çalışması</title>
@@ -15,7 +15,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-18-kuantum-kriptografi-standartlari-gelismeler-2026/</guid>
       <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" type="image/webp" length="0"/>
       <category>kuantum kriptografi 2026</category>
       <category>postkuantum kriptografi</category>
       <category>NIST FIPS 203</category>

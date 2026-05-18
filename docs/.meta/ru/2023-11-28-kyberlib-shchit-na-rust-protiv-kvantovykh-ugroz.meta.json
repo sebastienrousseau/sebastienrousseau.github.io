@@ -1,11 +1,11 @@
 {
-  "date": "November 28, 2023",
-  "description": "kyberlib — это надёжная реализация CRYSTALS-Kyber на Rust, стандарт NIST FIPS 203 для постквантовой инкапсуляции ключей общего назначения.",
-  "language": "ru-RU",
-  "banner": "https://cloudcdn.pro/stocks/images/kyberlib-banner.webp",
-  "banner_alt": "kyberlib — квантово-устойчивый щит, баннер библиотеки",
   "keywords": "kyberlib, CRYSTALS-Kyber, ML-KEM, Rust, FIPS 203, постквантовая криптография, инкапсуляция ключей, финансовая безопасность",
+  "date": "November 28, 2023",
+  "locale": "ru_RU",
   "title": "kyberlib: щит на Rust против квантовых угроз",
+  "language": "ru-RU",
+  "banner_alt": "kyberlib — квантово-устойчивый щит, баннер библиотеки",
+  "banner": "https://cloudcdn.pro/stocks/images/kyberlib-banner.webp",
   "subtitle": "Реализация CRYSTALS-Kyber для финансовой аутентификации",
-  "locale": "ru_RU"
+  "description": "kyberlib — это надёжная реализация CRYSTALS-Kyber на Rust, стандарт NIST FIPS 203 для постквантовой инкапсуляции ключей общего назначения."
 }

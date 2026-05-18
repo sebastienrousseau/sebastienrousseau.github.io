@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/lattice-quantum-banner.webp",
-  "subtitle": "Bài báo của Yilei Chen làm rung chuyển nền tảng PQC",
-  "banner_alt": "Sơ đồ trừu tượng của mạng tinh thể bị tấn công",
-  "date": "April 15, 2024",
-  "language": "vi-VN",
-  "title": "Thuật toán lượng tử thách thức mật mã dựa trên mạng tinh thể",
-  "description": "Một thuật toán lượng tử mới giải quyết vấn đề Lattice-LWE — cơ sở của CRYSTALS-Kyber. Điều này có ý nghĩa gì cho mật mã hậu lượng tử?",
   "locale": "vi_VN",
+  "banner": "https://cloudcdn.pro/stocks/images/lattice-quantum-banner.webp",
+  "date": "April 15, 2024",
+  "banner_alt": "Sơ đồ trừu tượng của mạng tinh thể bị tấn công",
+  "subtitle": "Bài báo của Yilei Chen làm rung chuyển nền tảng PQC",
+  "language": "vi-VN",
+  "description": "Một thuật toán lượng tử mới giải quyết vấn đề Lattice-LWE — cơ sở của CRYSTALS-Kyber. Điều này có ý nghĩa gì cho mật mã hậu lượng tử?",
+  "title": "Thuật toán lượng tử thách thức mật mã dựa trên mạng tinh thể",
   "keywords": "mạng tinh thể, LWE, lượng tử, Yilei Chen, PQC, Kyber, mật mã, hậu lượng tử"
 }

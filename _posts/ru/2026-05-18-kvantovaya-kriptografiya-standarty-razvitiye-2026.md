@@ -5,7 +5,7 @@ description: "Квантовая криптография в 2026 году — �
 date: "May 18, 2026"
 language: "ru-RU"
 locale: "ru_RU"
-banner: "https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp"
+banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "Карта миграции на квантово-безопасную криптографию на 2026 год: стандарты NIST PQC, работа над гибридными протоколами, гарантии QKD, криптографическая гибкость и уровни риска банковских данных"
 keywords: "квантовая криптография 2026, постквантовая криптография, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, гибридный обмен ключами, QKD, ETSI QKD, ISO IEC 23837, криптографическая гибкость, harvest now decrypt later, HNDL, криптография финансовых услуг, банковская безопасность"
 ---

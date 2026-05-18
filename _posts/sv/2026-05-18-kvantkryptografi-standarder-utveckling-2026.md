@@ -5,7 +5,7 @@ description: "Kvantkryptografi 2026 är inte längre en debatt om huruvida kvant
 date: "May 18, 2026"
 language: "sv-SE"
 locale: "sv_SE"
-banner: "https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp"
+banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "Karta för migration till kvantsäker kryptografi 2026 med NIST PQC-standarder, arbete med hybridprotokoll, QKD-säkerhet, kryptoagilitet och risknivåer för bankdata"
 keywords: "kvantkryptografi 2026, postkvantkryptografi, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybrid nyckelutbyte, QKD, ETSI QKD, ISO IEC 23837, kryptoagilitet, harvest now decrypt later, HNDL, kryptografi för finansiella tjänster, banksäkerhet"
 ---

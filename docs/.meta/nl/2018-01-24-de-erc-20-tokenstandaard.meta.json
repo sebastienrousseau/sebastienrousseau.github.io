@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
-  "title": "De ERC-20-tokenstandaard",
-  "subtitle": "De technische basis van interoperabele tokens op Ethereum",
-  "language": "nl-NL",
+  "keywords": "ERC-20, Ethereum, smart contracts, tokens, ICO, blockchain, interoperabiliteit",
   "locale": "nl_NL",
-  "description": "ERC-20 als interface-standaard die de uitwisselbare token de facto interoperabel maakt op Ethereum-gebaseerde smart contracts.",
+  "subtitle": "De technische basis van interoperabele tokens op Ethereum",
   "date": "January 24, 2018",
+  "language": "nl-NL",
   "banner_alt": "Visualisatie van ERC-20-tokens binnen het Ethereum-netwerk",
-  "keywords": "ERC-20, Ethereum, smart contracts, tokens, ICO, blockchain, interoperabiliteit"
+  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
+  "description": "ERC-20 als interface-standaard die de uitwisselbare token de facto interoperabel maakt op Ethereum-gebaseerde smart contracts.",
+  "title": "De ERC-20-tokenstandaard"
 }

@@ -6,7 +6,7 @@
     <description>Artiklar på svenska: tillämpad AI, ISO 20022-betalningar, postkvantkryptografi och transformationen av grossistbetalningar.</description>
     <atom:link href="https://sebastienrousseau.com/sv/rss.xml" rel="self" type="application/rss+xml"/>
     <language>sv-SE</language>
-    <lastBuildDate>Mon, 18 May 2026 11:48:18 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 12:52:29 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna.</copyright>
     <item>
       <title>Återställningen av kvantkryptografi 2026: PQC-standarder, QKD-säkerhet och migrationsarbetet bankerna inte kan skjuta upp</title>
@@ -15,7 +15,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-18-kvantkryptografi-standarder-utveckling-2026/</guid>
       <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" type="image/webp" length="0"/>
       <category>kvantkryptografi 2026</category>
       <category>postkvantkryptografi</category>
       <category>NIST FIPS 203</category>

@@ -5,7 +5,7 @@ description: "Criptografia cuantică în 2026 nu mai este o dezbatere despre imi
 date: "May 18, 2026"
 language: "ro-RO"
 locale: "ro_RO"
-banner: "https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp"
+banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "Hartă a migrării către o criptografie rezistentă la cuantic pentru 2026 — standarde NIST PQC, lucrări asupra protocoalelor hibride, asigurare QKD, agilitate criptografică și niveluri de risc al datelor bancare"
 keywords: "criptografie cuantică 2026, criptografie post-cuantică, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, schimb hibrid de chei, QKD, ETSI QKD, ISO IEC 23837, agilitate criptografică, harvest now decrypt later, HNDL, criptografie pentru servicii financiare, securitate bancară"
 tags: "criptografie cuantică, criptografie post-cuantică, PQC, NIST, FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC, IETF, TLS, IPsec, QKD, ETSI, agilitate criptografică, HNDL, securitate bancară"
