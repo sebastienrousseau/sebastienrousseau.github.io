@@ -1,7 +1,7 @@
 ---
 title: 'Tái thiết mật mã lượng tử 2026: tiêu chuẩn PQC, bảo đảm QKD và công việc di trú mà ngân hàng không thể trì hoãn'
 subtitle: 'Mật mã lượng tử đã chuyển từ quét chân trời sang kỷ luật triển khai: tiêu chuẩn NIST PQC đã sẵn sàng, hướng dẫn NCSC Anh quốc thu hẹp lựa chọn thuật toán, công tác giao thức của IETF còn đang trưởng thành, và bảo đảm QKD đang chuyển từ niềm tin phòng thí nghiệm sang ngôn ngữ chứng nhận.'
-description: 'Mật mã lượng tử năm 2026 không còn là tranh luận về việc máy tính lượng tử sắp tới hay chưa. Đó là một chương trình di trú trải dài qua mật mã hậu lượng tử, tính linh hoạt mật mã, bảo đảm phân phối khoá lượng tử, tiêu chuẩn giao thức, mức độ sẵn sàng của nhà cung cấp và dữ liệu tài chính dài tuổi đã bị phơi nhiễm với rủi ro "thu hoạch nay, giải mã sau".'
+description: 'Mật mã lượng tử năm 2026 không còn là tranh luận về việc máy tính lượng tử sắp tới hay chưa. Đó là một chương trình di trú trải dài qua mật mã hậu lượng tử, tính linh hoạt mật mã, bảo đảm phân phối khoá lượng tử, tiêu chuẩn giao thức, mức độ sẵn sàng của nhà cung cấp và dữ liệu tài chính dài tuổi đã bị phơi nhiễm với rủi ro “thu hoạch nay, giải mã sau”.'
 date: 'May 18, 2026'
 language: 'vi-VN'
 locale: 'vi_VN'
@@ -24,7 +24,7 @@ Mật mã lượng tử năm 2026 đã chia thành hai hướng thực tiễn. M
 > - **Lai là cơ chế chuyển tiếp, không phải đích đến.** Các sơ đồ khoá công khai lai cộng hậu lượng tử giúp phân giai đoạn di trú và phòng ngừa rủi ro triển khai, nhưng làm tăng độ phức tạp và có thể đòi hỏi một lần di trú thứ hai sang chỉ PQC sau này ([NCSC](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography "NCSC: các bước tiếp theo chuẩn bị cho PQC")).
 > - **QKD không phải là sự thay thế cho PQC.** QKD có thể phục vụ các đường truyền chuyên biệt yêu cầu bảo đảm cao, nhưng tính phù hợp ngân hàng phụ thuộc vào chứng nhận, tính khả tương tác, chi phí vận hành và sự tích hợp với hệ thống quản lý khoá hiện có chứ không chỉ phụ thuộc vào vật lý ([ID Quantique / ETSI QKD 016](https://www.idquantique.com/etsi-releases-qkd-protection-profile/ "ETSI công bố hồ sơ bảo vệ QKD")).
 > - **Câu hỏi ở cấp ngân hàng là kiểm kê.** Một tổ chức tài chính không thể xác định vị trí của RSA, ECDH, ECDSA, EdDSA, mật mã VPN độc quyền, mẫu HSM, thời hạn chứng chỉ và mật mã do nhà cung cấp quản lý thì không thể di trú, bất kể có sẵn tiêu chuẩn nào.
-> - **Rủi ro đang diễn ra trực tiếp.** Các cuộc tấn công "thu hoạch nay, giải mã sau" khiến dữ liệu tài chính dài tuổi bị tổn thương trước khi tồn tại máy tính lượng tử có liên quan về mật mã học, vì kẻ tấn công hôm nay chỉ cần thu thập bản mã.
+> - **Rủi ro đang diễn ra trực tiếp.** Các cuộc tấn công “thu hoạch nay, giải mã sau” khiến dữ liệu tài chính dài tuổi bị tổn thương trước khi tồn tại máy tính lượng tử có liên quan về mật mã học, vì kẻ tấn công hôm nay chỉ cần thu thập bản mã.
 > - **Tính linh hoạt mật mã là kiểm soát bền vững.** Kiến trúc thắng cuộc không phải là một lần đổi RSA sang ML-KEM; đó là khả năng nền tảng để xoay vòng thuật toán, tham số, thư viện, chứng chỉ, chính sách phần cứng và chế độ giao thức mà không cần xây lại ngân hàng.
 >
 ---
@@ -67,7 +67,7 @@ Tính linh hoạt mật mã là khả năng thay đổi thuật toán mà không
 
 Sản phẩm đầu tiên là một bảng kê vật liệu mật mã. Nó nên bao gồm thuật toán khoá công khai, độ dài khoá, các cơ quan cấp chứng chỉ, mẫu HSM, các phiên bản TLS, sản phẩm VPN, cổng thanh toán, API bên thứ ba, SDK di động, các trình bao mã hoá dữ liệu tĩnh, khoá ký, quy trình ký firmware và mật mã do nhà cung cấp quản lý.
 
-Bảng kiểm kê nên phân biệt giữa tính bảo mật và tính xác thực. Dữ liệu mã hoá dài tuổi bị phơi nhiễm với rủi ro "thu hoạch nay, giải mã sau", trong khi các khoá ký dài tuổi tạo ra rủi ro giả mạo trong tương lai nếu chúng vẫn dựa trên các thuật toán khoá công khai dễ tổn thương.
+Bảng kiểm kê nên phân biệt giữa tính bảo mật và tính xác thực. Dữ liệu mã hoá dài tuổi bị phơi nhiễm với rủi ro “thu hoạch nay, giải mã sau”, trong khi các khoá ký dài tuổi tạo ra rủi ro giả mạo trong tương lai nếu chúng vẫn dựa trên các thuật toán khoá công khai dễ tổn thương.
 
 ### Phân đoạn theo chu kỳ bán huỷ của dữ liệu
 

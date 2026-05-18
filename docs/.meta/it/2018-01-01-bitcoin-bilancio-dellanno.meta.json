@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Un mucchio di monete d'oro e d'argento su un tavolo",
   "subtitle": "Un sistema di pagamento elettronico peer-to-peer che ha ridefinito il denaro",
-  "date": "January 1, 2018",
+  "language": "it-IT",
   "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
+  "banner_alt": "Un mucchio di monete d'oro e d'argento su un tavolo",
+  "keywords": "Bitcoin, criptovaluta, blockchain, P2P, doppia spesa, mining, proof-of-work, ETF, Satoshi Nakamoto, finanza decentralizzata",
   "description": "Bitcoin: un sistema di contante elettronico peer-to-peer (P2P ECS) capace di rivoluzionare il modo in cui le persone effettuano transazioni online.",
   "locale": "it_IT",
-  "title": "Bitcoin: bilancio dell'anno della prima criptovaluta",
-  "language": "it-IT",
-  "keywords": "Bitcoin, criptovaluta, blockchain, P2P, doppia spesa, mining, proof-of-work, ETF, Satoshi Nakamoto, finanza decentralizzata"
+  "date": "January 1, 2018",
+  "title": "Bitcoin: bilancio dell'anno della prima criptovaluta"
 }

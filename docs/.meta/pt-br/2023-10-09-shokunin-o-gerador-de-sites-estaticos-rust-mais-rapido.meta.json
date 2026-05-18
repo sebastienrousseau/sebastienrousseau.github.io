@@ -1,11 +1,11 @@
 {
-  "language": "pt-BR",
-  "description": "Cree sitios estáticos de alto impacto, escalables até ou infinito e enteramente sob seu control, gracias a Shokunin: um SSG ultrarrápido escrito em Rust.",
-  "locale": "pt_BR",
   "title": "Shokunin: o generador de sitios estáticos mais rápido basado em Rust",
-  "subtitle": "Um SSG ultrarrápido, accesible e optimizado para SEO, escrito em Rust",
+  "banner_alt": "Ordenador portátil apagado sobre uma mesa blanca com um vaso de agua a a esquerda e um bolígrafo, um cuaderno e uma planta a a direita",
+  "date": "October 9, 2023",
+  "description": "Cree sitios estáticos de alto impacto, escalables até ou infinito e enteramente sob seu control, gracias a Shokunin: um SSG ultrarrápido escrito em Rust.",
   "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
   "keywords": "Shokunin, generador de sitios estáticos, SSG, Rust, rendimiento, SEO, acessibilidade, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS",
-  "banner_alt": "Ordenador portátil apagado sobre uma mesa blanca com um vaso de agua a a esquerda e um bolígrafo, um cuaderno e uma planta a a direita",
-  "date": "October 9, 2023"
+  "locale": "pt_BR",
+  "language": "pt-BR",
+  "subtitle": "Um SSG ultrarrápido, accesible e optimizado para SEO, escrito em Rust"
 }

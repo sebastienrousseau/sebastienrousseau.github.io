@@ -1,11 +1,11 @@
 {
-  "language": "ha-NG",
+  "banner_alt": "Mathematics computation",
+  "locale": "ha_NG",
+  "subtitle": "Vetted mathematical and cryptographic constants for memory-safe Rust security.",
+  "description": "Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security.",
+  "date": "Nov 05, 2023",
+  "title": "Mathematical and Cryptographic Constants for Rust Security",
   "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
   "keywords": "mathematical constants, cryptographic constants, Rust security, secure communication, encryption, RSA, elliptic curve cryptography, Common (CMN) library, Rust applications, mathematical computations",
-  "date": "Nov 05, 2023",
-  "subtitle": "Vetted mathematical and cryptographic constants for memory-safe Rust security.",
-  "locale": "ha_NG",
-  "description": "Safeguard code integrity with meticulously vetted mathematical and cryptographic constants, bolstering memory and concurrency safety for enhanced code security.",
-  "title": "Mathematical and Cryptographic Constants for Rust Security",
-  "banner_alt": "Mathematics computation"
+  "language": "ha-NG"
 }

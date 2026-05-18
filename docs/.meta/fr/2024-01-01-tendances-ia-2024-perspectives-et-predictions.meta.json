@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp",
-  "keywords": "tendances IA 2024, IA générative, IA en éducation, cybersécurité IA, IA en finance, création de contenu IA, IA pour l'espace, IA éthique, IA dans la distribution, analytique IA",
-  "description": "Tendances IA pour 2024 : IA générative en finance, modèles multimodaux, LLM on-device et les basculements qui remodèleront la banque et l'ingénierie produit.",
-  "language": "fr",
-  "locale": "fr_FR",
-  "banner_alt": "Vue par drone de Londres",
   "date": "January 01, 2024",
+  "language": "fr",
+  "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp",
+  "description": "Tendances IA pour 2024 : IA générative en finance, modèles multimodaux, LLM on-device et les basculements qui remodèleront la banque et l'ingénierie produit.",
+  "banner_alt": "Vue par drone de Londres",
+  "locale": "fr_FR",
+  "title": "Tendances IA 2024 : aperçus et prédictions pour le futur",
   "subtitle": "Une année pivot pour la tech, la société et l'évolution éthique",
-  "title": "Tendances IA 2024 : aperçus et prédictions pour le futur"
+  "keywords": "tendances IA 2024, IA générative, IA en éducation, cybersécurité IA, IA en finance, création de contenu IA, IA pour l'espace, IA éthique, IA dans la distribution, analytique IA"
 }

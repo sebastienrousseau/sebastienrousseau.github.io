@@ -1,11 +1,11 @@
 {
-  "language": "vi-VN",
-  "subtitle": "Khi máy tính lượng tử đe doạ mã hoá truyền thống, QKD nổi lên như câu trả lời cấu trúc",
+  "date": "December 11, 2023",
   "banner": "https://cloudcdn.pro/stocks/images/qkd-banner.webp",
   "title": "Phân phối Khoá Lượng tử: cách mạng an ninh trong ngân hàng",
-  "date": "December 11, 2023",
-  "keywords": "QKD, phân phối khoá lượng tử, BB84, mật mã lượng tử, ngân hàng, an ninh tài chính, photon",
+  "banner_alt": "Sơ đồ giao thoa photon trong một hệ thống QKD",
   "locale": "vi_VN",
+  "keywords": "QKD, phân phối khoá lượng tử, BB84, mật mã lượng tử, ngân hàng, an ninh tài chính, photon",
+  "language": "vi-VN",
   "description": "Quantum Key Distribution (QKD) cung cấp bảo mật được đảm bảo về mặt vật lý cho phân phối khoá. Cách nó hoạt động, đâu là giới hạn, và tại sao các ngân hàng nên quan tâm.",
-  "banner_alt": "Sơ đồ giao thoa photon trong một hệ thống QKD"
+  "subtitle": "Khi máy tính lượng tử đe doạ mã hoá truyền thống, QKD nổi lên như câu trả lời cấu trúc"
 }

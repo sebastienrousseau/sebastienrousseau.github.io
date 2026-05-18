@@ -1,11 +1,11 @@
 {
-  "date": "April 22, 2024",
-  "language": "pt-BR",
-  "locale": "pt_BR",
-  "description": "Um bug em o algoritmo quântico LWE de Yilei Chen oferece um respiro temporal a a criptografia sobre retículos. Lo que esto significa para CRYSTALS-Kyber, Dilithium e a folha de ruta PQC.",
   "keywords": "criptografia pós-quântica, NIST, padronização PQC, Yilei Chen, algoritmo quântico, criptografia sobre retículos, problema LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, criptografia resistente a lo quântico",
+  "description": "Um bug em o algoritmo quântico LWE de Yilei Chen oferece um respiro temporal a a criptografia sobre retículos. Lo que esto significa para CRYSTALS-Kyber, Dilithium e a folha de ruta PQC.",
+  "locale": "pt_BR",
+  "banner_alt": "Imagen generada com MidJourney: uma red de nodos digitais em tonos rojos e azules.",
   "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "title": "Criptografia sobre retículos: um bug em o ataque LWE de Chen",
+  "date": "April 22, 2024",
   "subtitle": "La revisión por pares revela um fallo em o trabalho revolucionário de Chen",
-  "banner_alt": "Imagen generada com MidJourney: uma red de nodos digitais em tonos rojos e azules."
+  "title": "Criptografia sobre retículos: um bug em o ataque LWE de Chen",
+  "language": "pt-BR"
 }

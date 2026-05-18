@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
-  "subtitle": "MIT、清華大學與 MyShell 合作的語音克隆突破，實現快速、精準、跨語言語音合成",
-  "description": "OpenVoice 是 MIT、清華大學與 MyShell 聯合開發的開源語音克隆技術，支援零樣本跨語言合成。",
+  "locale": "zh_TW",
+  "banner_alt": "重複輪廓上明亮漸變疊加的橫幅",
+  "title": "OpenVoice：語音克隆技術的領先創新",
+  "keywords": "OpenVoice, 語音克隆, MIT, 清華大學, MyShell, 零樣本, 跨語言, 語音合成, 開源, 負責任 AI",
   "date": "April 1, 2024",
   "language": "zh-Hant",
-  "banner_alt": "重複輪廓上明亮漸變疊加的橫幅",
-  "locale": "zh_TW",
-  "title": "OpenVoice：語音克隆技術的領先創新",
-  "keywords": "OpenVoice, 語音克隆, MIT, 清華大學, MyShell, 零樣本, 跨語言, 語音合成, 開源, 負責任 AI"
+  "description": "OpenVoice 是 MIT、清華大學與 MyShell 聯合開發的開源語音克隆技術，支援零樣本跨語言合成。",
+  "subtitle": "MIT、清華大學與 MyShell 合作的語音克隆突破，實現快速、精準、跨語言語音合成",
+  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp"
 }
