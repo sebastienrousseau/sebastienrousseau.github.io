@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/bn/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/bn/"/>
   <id>https://sebastienrousseau.com/bn/</id>
-  <updated>2026-05-18T07:36:27+00:00</updated>
+  <updated>2026-05-18T10:56:11+00:00</updated>
+  <entry>
+    <title>২০২৬-এ কোয়ান্টাম ক্রিপ্টোগ্রাফি রিসেট: PQC মান, QKD নিশ্চয়তা, এবং যে মাইগ্রেশন কাজ ব্যাঙ্কগুলি স্থগিত করতে পারে না</title>
+    <link href="https://sebastienrousseau.com/bn/2026-05-18-quantum-cryptography-standards-developments-2026/"/>
+    <id>https://sebastienrousseau.com/bn/2026-05-18-quantum-cryptography-standards-developments-2026/</id>
+    <updated>2026-05-18T06:06:06+00:00</updated>
+    <published>2026-05-18T06:06:06+00:00</published>
+    <summary>২০২৬-এ কোয়ান্টাম ক্রিপ্টোগ্রাফি আর কোয়ান্টাম কম্পিউটার আসন্ন কিনা সে বিতর্ক নয়। এটি পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, ক্রিপ্টো-চটপটেতা, কোয়ান্টাম কী ডিস্ট্রিবিউশন নিশ্চয়তা, প্রোটোকল মান, সরবরাহকারী প্রস্তুতি এবং দীর্ঘজীবী আর্থিক ডেটার একটি মাইগ্রেশন প্রোগ্রাম যা ইতিমধ্যে ‘হারভেস্ট-নাও-ডিক্রিপ্ট-লেটার’ ঝুঁকির সম্মুখীন।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
     <link href="https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026/"/>

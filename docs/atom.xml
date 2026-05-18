@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com"/>
   <id>https://sebastienrousseau.com</id>
-  <updated>2026-05-17T06:06:06+00:00</updated>
+  <updated>2026-05-18T06:06:06+00:00</updated>
+  <entry>
+    <title>The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer</title>
+    <link href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026"/>
+    <id>https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026</id>
+    <updated>2026-05-18T06:06:06+00:00</updated>
+    <published>2026-05-18T06:06:06+00:00</published>
+    <summary>Quantum cryptography in 2026 is no longer a debate about whether quantum computers are imminent. It is a migration programme across post-quantum cryptography, crypto-agility, quantum key distribution assurance, protocol standards, supplier readiness, and long-lived financial data that is already exposed to harvest-now-decrypt-later risk.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
     <link href="https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html"/>
@@ -444,15 +453,6 @@
     <updated>2024-01-08T05:06:06+00:00</updated>
     <published>2024-01-08T05:06:06+00:00</published>
     <summary>Explore how IBM Qiskit and Quantum Fourier Transform revolutionise credit ratio analysis in finance, offering unprecedented accuracy and speed.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>AI Trends 2024: Insights and Predictions for the Future</title>
-    <link href="https://sebastienrousseau.com/bn/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html"/>
-    <id>https://sebastienrousseau.com/bn/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html</id>
-    <updated>2024-01-01T05:06:06+00:00</updated>
-    <published>2024-01-01T05:06:06+00:00</published>
-    <summary>AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
 </feed>

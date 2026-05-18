@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/he/2026-05-18-quantum-cryptography-standards-developments-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
+    <news:title>איפוס הקריפטוגרפיה הקוונטית ב-2026: תקני PQC, אסמכתת QKD ועבודת ההגירה שבנקים אינם יכולים לדחות</news:title>
+    <news:keywords>קריפטוגרפיה קוונטית 2026, קריפטוגרפיה פוסט-קוונטית, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, חליפת מפתחות היברידית, QKD, ETSI QKD, ISO IEC 23837, גמישות-קריפטו, קצור עכשיו פענח אחר כך, HNDL, קריפטוגרפיה לשירותים פיננסיים, אבטחת בנקים</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/he/2026-05-17-agentic-engineering-banks-blueprint-2026/</loc>
   <news:news>
     <news:publication>

@@ -41,6 +41,7 @@ TOPICS: dict[str, dict[str, object]] = {
             "libraries, and migration playbooks for financial-services security teams."
         ),
         "slugs": [
+            "2026-05-18-quantum-cryptography-standards-developments-2026",
             "2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance",
             "2026-04-11-quantum-thresholds-are-moving-again",
             "2025-09-01-quantum-safe-payments-epaa",

@@ -1,12 +1,12 @@
 {
-  "language": "ja-JP",
-  "banner": "https://cloudcdn.pro/stocks/images/shokunin-banner.webp",
-  "description": "Shokunin は Rust で書かれた静的サイトジェネレータで、超高速ビルド、JSON-LD ネイティブサポート、優れたアクセシビリティを実現します。",
-  "title": "Shokunin:Rust ベースの最速静的サイトジェネレータ",
-  "subtitle": "パフォーマンスと開発者体験のために構築された静的サイトジェネレータ",
-  "banner_alt": "Shokunin プロジェクトのバナー",
-  "last_reviewed": "2026-05-11",
-  "keywords": "Shokunin, SSG, 静的サイトジェネレータ, Rust, パフォーマンス, SEO, JSON-LD, アクセシビリティ",
   "locale": "ja_JP",
-  "date": "October 9, 2023"
+  "last_reviewed": "2026-05-11",
+  "date": "October 9, 2023",
+  "keywords": "Shokunin, SSG, 静的サイトジェネレータ, Rust, パフォーマンス, SEO, JSON-LD, アクセシビリティ",
+  "description": "Shokunin は Rust で書かれた静的サイトジェネレータで、超高速ビルド、JSON-LD ネイティブサポート、優れたアクセシビリティを実現します。",
+  "language": "ja-JP",
+  "title": "Shokunin:Rust ベースの最速静的サイトジェネレータ",
+  "banner": "https://cloudcdn.pro/stocks/images/shokunin-banner.webp",
+  "subtitle": "パフォーマンスと開発者体験のために構築された静的サイトジェネレータ",
+  "banner_alt": "Shokunin プロジェクトのバナー"
 }

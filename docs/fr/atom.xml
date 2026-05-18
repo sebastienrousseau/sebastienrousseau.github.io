@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/fr/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/fr/"/>
   <id>https://sebastienrousseau.com/fr/</id>
-  <updated>2026-05-18T07:36:27+00:00</updated>
+  <updated>2026-05-18T10:56:10+00:00</updated>
+  <entry>
+    <title>La réinitialisation de la cryptographie quantique en 2026 : normes PQC, assurance QKD et le chantier de migration que les banques ne peuvent plus différer</title>
+    <link href="https://sebastienrousseau.com/fr/2026-05-18-cryptographie-quantique-normes-developpements-2026/"/>
+    <id>https://sebastienrousseau.com/fr/2026-05-18-cryptographie-quantique-normes-developpements-2026/</id>
+    <updated>2026-05-18T06:06:06+00:00</updated>
+    <published>2026-05-18T06:06:06+00:00</published>
+    <summary>La cryptographie quantique en 2026 n&apos;est plus un débat sur l&apos;imminence des ordinateurs quantiques. C&apos;est un programme de migration qui touche la cryptographie post-quantique, la crypto-agilité, l&apos;assurance de la distribution quantique de clés, les normes de protocole, la maturité des fournisseurs et les données financières à longue durée de vie déjà exposées au risque « harvest-now-decrypt-later ».</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Ingénierie agentique pour les banques : un blueprint 2026 pour le COMEX et les ingénieurs qui le bâtiront</title>
     <link href="https://sebastienrousseau.com/fr/2026-05-17-ingenierie-agentique-banques-blueprint-2026/"/>

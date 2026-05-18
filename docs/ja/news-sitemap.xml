@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ja/2026-05-18-ryoshi-angou-hyojun-saishin-doukou-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ja-JP</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
+    <news:title>2026 年の量子暗号リセット:PQC 標準、QKD 保証、銀行が先送りできない移行作業</news:title>
+    <news:keywords>量子暗号 2026, ポスト量子暗号, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, ハイブリッド鍵交換, QKD, ETSI QKD, ISO IEC 23837, 暗号アジリティ, harvest now decrypt later, HNDL, 金融サービス暗号, 銀行セキュリティ</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ja/2026-05-17-eejentikku-enjiniaringu-ginkou-no-2026-sekkeizu/</loc>
   <news:news>
     <news:publication>

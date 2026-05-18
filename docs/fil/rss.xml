@@ -6,8 +6,38 @@
     <description>Mga artikulo sa Filipino: applied AI, ISO 20022 payments, post-quantum cryptography at wholesale-payments transformation.</description>
     <atom:link href="https://sebastienrousseau.com/fil/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fil-PH</language>
-    <lastBuildDate>Mon, 18 May 2026 07:36:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 10:56:11 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Lahat ng karapatan ay nakalaan.</copyright>
+    <item>
+      <title>Ang Quantum Cryptography Reset sa 2026: Mga PQC Standard, QKD Assurance, at ang Migration Work na Hindi Maaaring Ipagpaliban ng mga Bangko</title>
+      <link>https://sebastienrousseau.com/fil/2026-05-18-quantum-cryptography-standards-developments-2026/</link>
+      <description>Ang quantum cryptography sa 2026 ay hindi na isang debate kung malapit na ang mga quantum computer. Ito ay isang programa ng migration sa post-quantum cryptography, crypto-agility, quantum key distribution assurance, mga protocol standard, kahandaan ng supplier, at matagal-tagal na financial data na nakalantad na sa harvest-now-decrypt-later na panganib.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-18-quantum-cryptography-standards-developments-2026/</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp" type="image/webp" length="0"/>
+      <category>quantum cryptography 2026</category>
+      <category>post-quantum cryptography</category>
+      <category>NIST FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>FIPS 205</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>NCSC PQC</category>
+      <category>IETF TLS</category>
+      <category>IPsec</category>
+      <category>RFC 9794</category>
+      <category>hybrid key exchange</category>
+      <category>QKD</category>
+      <category>ETSI QKD</category>
+      <category>ISO IEC 23837</category>
+      <category>crypto-agility</category>
+      <category>harvest now decrypt later</category>
+      <category>HNDL</category>
+      <category>cryptography ng financial services</category>
+      <category>seguridad ng pagbabangko</category>
+    </item>
     <item>
       <title>الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه</title>
       <link>https://sebastienrousseau.com/fil/2026-05-17-agentic-engineering-banks-blueprint-2026/</link>

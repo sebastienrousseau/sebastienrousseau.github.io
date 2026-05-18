@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/ko/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ko/"/>
   <id>https://sebastienrousseau.com/ko/</id>
-  <updated>2026-05-18T07:36:27+00:00</updated>
+  <updated>2026-05-18T10:56:11+00:00</updated>
+  <entry>
+    <title>2026년 양자 암호 리셋: PQC 표준, QKD 보증, 그리고 은행이 미룰 수 없는 마이그레이션 작업</title>
+    <link href="https://sebastienrousseau.com/ko/2026-05-18-yangja-amho-pyojun-baljeon-2026/"/>
+    <id>https://sebastienrousseau.com/ko/2026-05-18-yangja-amho-pyojun-baljeon-2026/</id>
+    <updated>2026-05-18T06:06:06+00:00</updated>
+    <published>2026-05-18T06:06:06+00:00</published>
+    <summary>2026년 양자 암호는 더 이상 양자 컴퓨터가 임박했는지에 대한 논쟁이 아닙니다. 포스트 양자 암호, 암호 민첩성, 양자 키 분배 보증, 프로토콜 표준, 공급자 준비, 그리고 이미 「지금 수확하고 나중에 복호화」 위험에 노출된 장수명 금융 데이터를 가로지르는 마이그레이션 프로그램입니다.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>에이전트 엔지니어링: 은행을 위한 2026년 설계도</title>
     <link href="https://sebastienrousseau.com/ko/2026-05-17-eijenteuk-enjineoring-eunhaeng-2026-seolgyedo/"/>

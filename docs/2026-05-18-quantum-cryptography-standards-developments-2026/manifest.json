@@ -1,0 +1,19 @@
+{
+  "background_color": "#ffffff",
+  "description": "Quantum cryptography in 2026 is no longer a debate about whether quantum computers are imminent. It is a migration progr",
+  "display": "standalone",
+  "icons": [
+    {
+      "purpose": "any maskable",
+      "sizes": "512x512",
+      "src": "https://cloudcdn.pro/sebastienrousseau/v1/logos/sebastienrousseau.svg",
+      "type": "image/svg+xml"
+    }
+  ],
+  "name": "Sebastien Rousseau",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": "sebastienrou",
+  "start_url": ".",
+  "theme_color": "#ffffff"
+}

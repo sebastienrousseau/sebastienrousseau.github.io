@@ -6,8 +6,38 @@
     <description>हिन्दी लेख: व्यावहारिक AI, ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान का रूपांतरण।</description>
     <atom:link href="https://sebastienrousseau.com/hi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>hi-IN</language>
-    <lastBuildDate>Mon, 18 May 2026 07:36:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 10:56:11 +0000</lastBuildDate>
     <copyright>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</copyright>
+    <item>
+      <title>2026 में क्वांटम क्रिप्टोग्राफी रीसेट: PQC मानक, QKD आश्वासन, और वह माइग्रेशन कार्य जिसे बैंक टाल नहीं सकते</title>
+      <link>https://sebastienrousseau.com/hi/2026-05-18-quantum-cryptography-standards-developments-2026/</link>
+      <description>2026 में क्वांटम क्रिप्टोग्राफी अब इस बारे में बहस नहीं है कि क्वांटम कंप्यूटर निकट हैं या नहीं। यह पोस्ट-क्वांटम क्रिप्टोग्राफी, क्रिप्टो-चपलता, क्वांटम-कुंजी-वितरण आश्वासन, प्रोटोकॉल मानकों, आपूर्तिकर्ता तत्परता और लंबी-जीवन वाले वित्तीय डेटा का माइग्रेशन कार्यक्रम है जो पहले से ही ‘harvest-now-decrypt-later’ जोखिम के संपर्क में है।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-18-quantum-cryptography-standards-developments-2026/</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp" type="image/webp" length="0"/>
+      <category>क्वांटम क्रिप्टोग्राफी 2026</category>
+      <category>पोस्ट-क्वांटम क्रिप्टोग्राफी</category>
+      <category>NIST FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>FIPS 205</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>NCSC PQC</category>
+      <category>IETF TLS</category>
+      <category>IPsec</category>
+      <category>RFC 9794</category>
+      <category>हाइब्रिड कुंजी विनिमय</category>
+      <category>QKD</category>
+      <category>ETSI QKD</category>
+      <category>ISO IEC 23837</category>
+      <category>क्रिप्टो-चपलता</category>
+      <category>harvest now decrypt later</category>
+      <category>HNDL</category>
+      <category>वित्तीय सेवा क्रिप्टोग्राफी</category>
+      <category>बैंकिंग सुरक्षा</category>
+    </item>
     <item>
       <title>बैंकों के लिए एजेंटिक-इंजीनियरिंग: 2026 का ब्लूप्रिंट</title>
       <link>https://sebastienrousseau.com/hi/2026-05-17-agentic-engineering-banks-blueprint-2026/</link>

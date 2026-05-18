@@ -6,8 +6,38 @@
     <description>日本語の記事:応用AI、ISO 20022 決済、ポスト量子暗号、ホールセール決済の構造変革。</description>
     <atom:link href="https://sebastienrousseau.com/ja/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ja-JP</language>
-    <lastBuildDate>Mon, 18 May 2026 07:36:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 10:56:11 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>2026 年の量子暗号リセット:PQC 標準、QKD 保証、銀行が先送りできない移行作業</title>
+      <link>https://sebastienrousseau.com/ja/2026-05-18-ryoshi-angou-hyojun-saishin-doukou-2026/</link>
+      <description>2026 年の量子暗号は、もはや量子コンピュータが差し迫っているかという議論ではない。それは、ポスト量子暗号、暗号アジリティ、量子鍵配送保証、プロトコル標準、サプライヤー準備、そして「いま収穫し、あとで復号する」リスクにすでに晒されている長期保管金融データを横断する移行プログラムである。</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-18-ryoshi-angou-hyojun-saishin-doukou-2026/</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp" type="image/webp" length="0"/>
+      <category>量子暗号 2026</category>
+      <category>ポスト量子暗号</category>
+      <category>NIST FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>FIPS 205</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>NCSC PQC</category>
+      <category>IETF TLS</category>
+      <category>IPsec</category>
+      <category>RFC 9794</category>
+      <category>ハイブリッド鍵交換</category>
+      <category>QKD</category>
+      <category>ETSI QKD</category>
+      <category>ISO IEC 23837</category>
+      <category>暗号アジリティ</category>
+      <category>harvest now decrypt later</category>
+      <category>HNDL</category>
+      <category>金融サービス暗号</category>
+      <category>銀行セキュリティ</category>
+    </item>
     <item>
       <title>エージェンティック・エンジニアリング:銀行の 2026 年設計図</title>
       <link>https://sebastienrousseau.com/ja/2026-05-17-eejentikku-enjiniaringu-ginkou-no-2026-sekkeizu/</link>

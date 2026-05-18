@@ -6,8 +6,38 @@
     <description>Články v češtině: aplikovaná AI, platby ISO 20022, postkvantová kryptografie a transformace velkoobchodních plateb.</description>
     <atom:link href="https://sebastienrousseau.com/cs/rss.xml" rel="self" type="application/rss+xml"/>
     <language>cs-CZ</language>
-    <lastBuildDate>Mon, 18 May 2026 07:36:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 10:56:11 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Všechna práva vyhrazena.</copyright>
+    <item>
+      <title>Reset kvantové kryptografie v roce 2026: standardy PQC, ujištění o QKD a migrační práce, kterou banky nemohou odložit</title>
+      <link>https://sebastienrousseau.com/cs/2026-05-18-kvantova-kryptografie-standardy-vyvoj-2026/</link>
+      <description>Kvantová kryptografie v roce 2026 už není debatou o tom, zda jsou kvantové počítače na spadnutí. Je to migrační program napříč postkvantovou kryptografií, kryptografickou agilitou, ujištěním o kvantové distribuci klíčů, protokolovými standardy, připraveností dodavatelů a dlouhožijícími finančními daty, která jsou již vystavena riziku harvest-now-decrypt-later.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-18-kvantova-kryptografie-standardy-vyvoj-2026/</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp" type="image/webp" length="0"/>
+      <category>kvantová kryptografie 2026</category>
+      <category>postkvantová kryptografie</category>
+      <category>NIST FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>FIPS 205</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>NCSC PQC</category>
+      <category>IETF TLS</category>
+      <category>IPsec</category>
+      <category>RFC 9794</category>
+      <category>hybridní výměna klíčů</category>
+      <category>QKD</category>
+      <category>ETSI QKD</category>
+      <category>ISO IEC 23837</category>
+      <category>kryptografická agilita</category>
+      <category>harvest now decrypt later</category>
+      <category>HNDL</category>
+      <category>kryptografie finančních služeb</category>
+      <category>bankovní bezpečnost</category>
+    </item>
     <item>
       <title>Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán</title>
       <link>https://sebastienrousseau.com/cs/2026-05-17-agentni-inzenyrstvi-banky-blueprint-2026/</link>

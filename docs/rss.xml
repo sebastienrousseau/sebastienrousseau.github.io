@@ -6,8 +6,37 @@
     <description>AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography.</description>
     <atom:link href="https://sebastienrousseau.com/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Sun, 17 May 2026 06:06:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 06:06:06 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer</title>
+      <link>https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026</link>
+      <description>Quantum cryptography in 2026 is no longer a debate about whether quantum computers are imminent. It is a migration programme across post-quantum cryptography, crypto-agility, quantum key distribution assurance, protocol standards, supplier readiness, and long-lived financial data that is already exposed to harvest-now-decrypt-later risk.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>quantum cryptography</category>
+      <category>post-quantum cryptography</category>
+      <category>PQC</category>
+      <category>NIST</category>
+      <category>FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>FIPS 205</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>NCSC</category>
+      <category>IETF</category>
+      <category>TLS</category>
+      <category>IPsec</category>
+      <category>QKD</category>
+      <category>ETSI</category>
+      <category>crypto-agility</category>
+      <category>HNDL</category>
+      <category>banking security</category>
+    </item>
     <item>
       <title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
       <link>https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</link>
@@ -1519,26 +1548,6 @@
       <category>Data Science</category>
       <category>Algorithm</category>
       <category>Quantum Technology</category>
-    </item>
-    <item>
-      <title>AI Trends 2024: Insights and Predictions for the Future</title>
-      <link>https://sebastienrousseau.com/bn/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html</link>
-      <description>AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html</guid>
-      <pubDate>Mon, 01 Jan 2024 05:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>AI</category>
-      <category>2024</category>
-      <category>Trends</category>
-      <category>Generative</category>
-      <category>Cybersecurity</category>
-      <category>Education</category>
-      <category>Retail</category>
-      <category>Ethics</category>
-      <category>Analytics</category>
-      <category>Innovation</category>
     </item>
   </channel>
 </rss>

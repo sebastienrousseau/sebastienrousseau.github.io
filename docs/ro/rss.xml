@@ -6,8 +6,38 @@
     <description>Articole în limba română: IA aplicată, plăți ISO 20022, criptografie post-cuantică și transformarea plăților wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/ro/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ro-RO</language>
-    <lastBuildDate>Mon, 18 May 2026 07:36:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 10:56:11 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Toate drepturile rezervate.</copyright>
+    <item>
+      <title>Resetarea criptografiei cuantice în 2026: standarde PQC, asigurarea QKD și lucrările de migrare pe care băncile nu le mai pot amâna</title>
+      <link>https://sebastienrousseau.com/ro/2026-05-18-quantum-cryptography-standards-developments-2026/</link>
+      <description>Criptografia cuantică în 2026 nu mai este o dezbatere despre iminența calculatoarelor cuantice. Este un program de migrare care traversează criptografia post-cuantică, agilitatea criptografică, asigurarea distribuției cuantice a cheilor, standardele de protocol, pregătirea furnizorilor și datele financiare cu durată lungă de viață deja expuse riscului «harvest-now-decrypt-later».</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-18-quantum-cryptography-standards-developments-2026/</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp" type="image/webp" length="0"/>
+      <category>criptografie cuantică 2026</category>
+      <category>criptografie post-cuantică</category>
+      <category>NIST FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>FIPS 205</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>NCSC PQC</category>
+      <category>IETF TLS</category>
+      <category>IPsec</category>
+      <category>RFC 9794</category>
+      <category>schimb hibrid de chei</category>
+      <category>QKD</category>
+      <category>ETSI QKD</category>
+      <category>ISO IEC 23837</category>
+      <category>agilitate criptografică</category>
+      <category>harvest now decrypt later</category>
+      <category>HNDL</category>
+      <category>criptografie pentru servicii financiare</category>
+      <category>securitate bancară</category>
+    </item>
     <item>
       <title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
       <link>https://sebastienrousseau.com/ro/2026-05-17-agentic-engineering-banks-blueprint-2026/</link>

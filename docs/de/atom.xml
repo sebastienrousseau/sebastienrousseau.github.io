@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/de/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/de/"/>
   <id>https://sebastienrousseau.com/de/</id>
-  <updated>2026-05-18T07:36:27+00:00</updated>
+  <updated>2026-05-18T10:56:11+00:00</updated>
+  <entry>
+    <title>Der Quantenkryptografie-Reset 2026: PQC-Standards, QKD-Assurance und die Migrationsarbeit, die Banken nicht länger aufschieben können</title>
+    <link href="https://sebastienrousseau.com/de/2026-05-18-quantenkryptografie-standards-entwicklungen-2026/"/>
+    <id>https://sebastienrousseau.com/de/2026-05-18-quantenkryptografie-standards-entwicklungen-2026/</id>
+    <updated>2026-05-18T06:06:06+00:00</updated>
+    <published>2026-05-18T06:06:06+00:00</published>
+    <summary>Quantenkryptografie ist 2026 keine Debatte mehr darüber, ob Quantencomputer kurz bevorstehen. Sie ist ein Migrationsprogramm über Post-Quanten-Kryptografie, Krypto-Agilität, QKD-Assurance, Protokollstandards, Lieferantenreife und langlebige Finanzdaten, die bereits dem Harvest-now-decrypt-later-Risiko ausgesetzt sind.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Agentische Engineering für Banken: ein Blueprint 2026 für den Vorstand und die Ingenieure, die ihn bauen werden</title>
     <link href="https://sebastienrousseau.com/de/2026-05-17-agentische-engineering-banken-blueprint-2026/"/>

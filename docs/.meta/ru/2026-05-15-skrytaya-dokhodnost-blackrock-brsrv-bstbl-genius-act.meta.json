@@ -1,11 +1,11 @@
 {
-  "title": "Скрытая доходность: расшифровка заявок BlackRock BRSRV, BSTBL и GENIUS Act",
   "date": "May 15, 2026",
-  "banner": "https://cloudcdn.pro/stocks/images/blackrock-brsrv-bstbl.webp",
-  "description": "Стейблкоины не могут выплачивать доходность в рамках GENIUS Act. Заявки BlackRock BRSRV и BSTBL раскрывают обходной путь: токенизированный фонд денежного рынка, работающий параллельно с регулируемым стейблкоином и обеспечивающий доходность через соответствующий смежный рельс.",
-  "keywords": "BlackRock, BRSRV, BSTBL, GENIUS Act, стейблкоины, токенизированный фонд денежного рынка, MMF, регуляторный обход, цифровые активы",
-  "banner_alt": "BlackRock BRSRV/BSTBL и GENIUS Act: токенизированный MMF",
-  "subtitle": "Токенизированный фонд денежного рынка как обход запрета на доходность стейблкоинов",
   "locale": "ru_RU",
-  "language": "ru-RU"
+  "subtitle": "Токенизированный фонд денежного рынка как обход запрета на доходность стейблкоинов",
+  "keywords": "BlackRock, BRSRV, BSTBL, GENIUS Act, стейблкоины, токенизированный фонд денежного рынка, MMF, регуляторный обход, цифровые активы",
+  "title": "Скрытая доходность: расшифровка заявок BlackRock BRSRV, BSTBL и GENIUS Act",
+  "banner": "https://cloudcdn.pro/stocks/images/blackrock-brsrv-bstbl.webp",
+  "language": "ru-RU",
+  "banner_alt": "BlackRock BRSRV/BSTBL и GENIUS Act: токенизированный MMF",
+  "description": "Стейблкоины не могут выплачивать доходность в рамках GENIUS Act. Заявки BlackRock BRSRV и BSTBL раскрывают обходной путь: токенизированный фонд денежного рынка, работающий параллельно с регулируемым стейблкоином и обеспечивающий доходность через соответствующий смежный рельс."
 }

@@ -1,11 +1,11 @@
 {
-  "title": "Tendenze IA 2024: prospettive e previsioni per il futuro",
-  "banner_alt": "Vista aerea con drone di Londra",
   "date": "January 01, 2024",
-  "locale": "it_IT",
-  "language": "it-IT",
-  "description": "Una panoramica delle tendenze IA per il 2024: agenti autonomi, modelli multimodali, regolamentazione UE e l'impatto sul banking e i servizi finanziari.",
-  "subtitle": "Le direzioni principali dell'IA per l'anno e oltre",
+  "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp",
   "keywords": "IA, 2024, tendenze, agenti, multimodale, regolamentazione, AI Act, banking",
-  "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"
+  "language": "it-IT",
+  "locale": "it_IT",
+  "title": "Tendenze IA 2024: prospettive e previsioni per il futuro",
+  "subtitle": "Le direzioni principali dell'IA per l'anno e oltre",
+  "banner_alt": "Vista aerea con drone di Londra",
+  "description": "Una panoramica delle tendenze IA per il 2024: agenti autonomi, modelli multimodali, regolamentazione UE e l'impatto sul banking e i servizi finanziari."
 }

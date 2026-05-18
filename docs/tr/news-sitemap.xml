@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-18-kuantum-kriptografi-standartlari-gelismeler-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
+    <news:title>2026&apos;da Kuantum Kriptografi Sıfırlaması: PQC Standartları, QKD Güvencesi ve Bankaların Erteleyemeyeceği Geçiş Çalışması</news:title>
+    <news:keywords>kuantum kriptografi 2026, postkuantum kriptografi, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hibrit anahtar değişimi, QKD, ETSI QKD, ISO IEC 23837, kripto çevikliği, harvest now decrypt later, HNDL, finansal hizmetler kriptografisi, banka güvenliği</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/tr/2026-05-17-ajan-tabanli-muhendislik-bankalar-icin-2026-plani/</loc>
   <news:news>
     <news:publication>

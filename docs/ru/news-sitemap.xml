@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ru/2026-05-18-kvantovaya-kriptografiya-standarty-razvitiye-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
+    <news:title>Перезапуск квантовой криптографии в 2026 году: стандарты PQC, гарантии QKD и работа по миграции, которую банки не могут отложить</news:title>
+    <news:keywords>квантовая криптография 2026, постквантовая криптография, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, гибридный обмен ключами, QKD, ETSI QKD, ISO IEC 23837, криптографическая гибкость, harvest now decrypt later, HNDL, криптография финансовых услуг, банковская безопасность</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ru/2026-05-17-agentnaya-inzheneriya-plan-dlya-bankov-2026/</loc>
   <news:news>
     <news:publication>

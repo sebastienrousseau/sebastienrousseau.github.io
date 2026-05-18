@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/uk/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/uk/"/>
   <id>https://sebastienrousseau.com/uk/</id>
-  <updated>2026-05-18T07:36:27+00:00</updated>
+  <updated>2026-05-18T10:56:11+00:00</updated>
+  <entry>
+    <title>Перезапуск квантової криптографії у 2026 році: стандарти PQC, гарантії QKD та робота з міграції, яку банки не можуть відкладати</title>
+    <link href="https://sebastienrousseau.com/uk/2026-05-18-kvantova-kryptohrafiya-standarty-rozvytok-2026/"/>
+    <id>https://sebastienrousseau.com/uk/2026-05-18-kvantova-kryptohrafiya-standarty-rozvytok-2026/</id>
+    <updated>2026-05-18T06:06:06+00:00</updated>
+    <published>2026-05-18T06:06:06+00:00</published>
+    <summary>Квантова криптографія у 2026 році — це вже не дебати про те, чи близькі квантові комп&apos;ютери. Це програма міграції, що охоплює постквантову криптографію, криптографічну гнучкість, гарантії квантового розподілу ключів, протокольні стандарти, готовність постачальників та довгоживучі фінансові дані, які вже зазнають ризику harvest-now-decrypt-later.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>[UK DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
     <link href="https://sebastienrousseau.com/uk/2026-05-17-ahentyna-inzheneriya-banky-blueprint-2026/"/>

@@ -1,6 +1,41 @@
 {
-  "count": 44,
+  "count": 45,
   "posts": [
+    {
+      "slug": "2026-05-18-quantum-cryptography-standards-developments-2026",
+      "url": "https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/index.html",
+      "date": "2026-05-18",
+      "title": "The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer",
+      "description": "Quantum cryptography in 2026 is no longer a debate about whether quantum computers are imminent. It is a migration programme across post-quantum cryptography, crypto-agility, quantum key distribution assurance, protocol standards, supplier readiness, and long-lived financial data that is already exposed to harvest-now-decrypt-later risk.",
+      "keywords": [
+        "quantum cryptography 2026",
+        "post-quantum cryptography",
+        "NIST FIPS 203",
+        "FIPS 204",
+        "FIPS 205",
+        "ML-KEM",
+        "ML-DSA",
+        "SLH-DSA",
+        "NCSC PQC",
+        "IETF TLS",
+        "IPsec",
+        "RFC 9794",
+        "hybrid key exchange",
+        "QKD",
+        "ETSI QKD",
+        "ISO IEC 23837",
+        "crypto-agility",
+        "harvest now decrypt later",
+        "HNDL",
+        "financial services cryptography",
+        "banking security"
+      ],
+      "banner": "https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp",
+      "topics": [
+        "post-quantum-cryptography"
+      ],
+      "language": "en-GB"
+    },
     {
       "slug": "2026-05-17-agentic-engineering-banks-blueprint-2026",
       "url": "https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html",

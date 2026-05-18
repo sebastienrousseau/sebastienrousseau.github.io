@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ko/2026-05-18-yangja-amho-pyojun-baljeon-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
+    <news:title>2026년 양자 암호 리셋: PQC 표준, QKD 보증, 그리고 은행이 미룰 수 없는 마이그레이션 작업</news:title>
+    <news:keywords>양자 암호 2026, 포스트 양자 암호, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, 하이브리드 키 교환, QKD, ETSI QKD, ISO IEC 23837, 암호 민첩성, harvest now decrypt later, HNDL, 금융 서비스 암호, 은행 보안</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ko/2026-05-17-eijenteuk-enjineoring-eunhaeng-2026-seolgyedo/</loc>
   <news:news>
     <news:publication>

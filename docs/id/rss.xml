@@ -6,8 +6,38 @@
     <description>Artikel berbahasa Indonesia: AI terapan, pembayaran ISO 20022, kriptografi pasca-kuantum, dan transformasi pembayaran grosir.</description>
     <atom:link href="https://sebastienrousseau.com/id/rss.xml" rel="self" type="application/rss+xml"/>
     <language>id-ID</language>
-    <lastBuildDate>Mon, 18 May 2026 07:36:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 10:56:11 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Hak cipta dilindungi.</copyright>
+    <item>
+      <title>Reset Kriptografi Kuantum 2026: Standar PQC, Jaminan QKD, dan Pekerjaan Migrasi yang Tidak Dapat Ditunda Bank</title>
+      <link>https://sebastienrousseau.com/id/2026-05-18-kriptografi-kuantum-standar-perkembangan-2026/</link>
+      <description>Kriptografi kuantum di 2026 bukan lagi perdebatan tentang apakah komputer kuantum sudah dekat. Ini adalah program migrasi yang melintasi kriptografi pasca-kuantum, ketangkasan kripto, jaminan distribusi kunci kuantum, standar protokol, kesiapan pemasok, dan data keuangan berumur panjang yang sudah terpapar risiko &apos;panen sekarang, dekripsi nanti&apos;.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-18-kriptografi-kuantum-standar-perkembangan-2026/</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp" type="image/webp" length="0"/>
+      <category>kriptografi kuantum 2026</category>
+      <category>kriptografi pasca-kuantum</category>
+      <category>NIST FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>FIPS 205</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>NCSC PQC</category>
+      <category>IETF TLS</category>
+      <category>IPsec</category>
+      <category>RFC 9794</category>
+      <category>pertukaran kunci hibrida</category>
+      <category>QKD</category>
+      <category>ETSI QKD</category>
+      <category>ISO IEC 23837</category>
+      <category>ketangkasan kripto</category>
+      <category>harvest now decrypt later</category>
+      <category>HNDL</category>
+      <category>kriptografi jasa keuangan</category>
+      <category>keamanan perbankan</category>
+    </item>
     <item>
       <title>[ID DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
       <link>https://sebastienrousseau.com/id/2026-05-17-rekayasa-agentik-bank-cetak-biru-2026/</link>

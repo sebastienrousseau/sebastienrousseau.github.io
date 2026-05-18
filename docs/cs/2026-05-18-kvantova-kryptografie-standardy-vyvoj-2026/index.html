@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 18 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 18 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Reset kvantové kryptografie v roce 2026: standardy PQC, ujištění o QKD a migrační práce, kterou banky nemohou odložit — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Kvantová kryptografie v roce 2026 už není debatou o tom, zda jsou kvantové počítače na spadnutí. Je to migrační program napříč postkvantovou kryptografií, kryptografickou agilitou, ujištěním o kvantové distribuci klíčů, protokolovými standardy, připraveností dodavatelů a dlouhožijícími finančními daty, která jsou již vystavena riziku harvest-now-decrypt-later.">
+<meta name="keywords" content="kvantová kryptografie 2026, postkvantová kryptografie, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybridní výměna klíčů, QKD, ETSI QKD, ISO IEC 23837, kryptografická agilita, harvest now decrypt later, HNDL, kryptografie finančních služeb, bankovní bezpečnost">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Quantum Crypto 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-QTW0yc36cWtZ+w7AZAOCQGl2JvDDbl6sBjXHqxPCnZo=' 'sha256-TnfawIxvB1cUWAN73WCJfBdLUHn1fxePa3UkhQaYjfM=' 'sha256-qgz/JGb1dbRgs3q1q26mskGcku86K2IKo7hPygauo3o=' 'sha256-zkUKn2DBp2xs8w8uA+YtgsBzSsyiJH8YBqBTb/nAL/U=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://www.googletagmanager.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/cs/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/a057afa19d87c0fe.css" crossorigin="anonymous" integrity="sha256-nyKUsN7CbNTpYwkJ8VEOR5Wetskwe92vnzOKxMl6ltw=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="/cs/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Reset kvantové kryptografie v roce 2026: standardy PQC, ujištění o QKD a migrační práce, kterou banky nemohou odložit — Sebastien Rousseau">
+<meta property="og:description" content="Kvantová kryptografie v roce 2026 už není debatou o tom, zda jsou kvantové počítače na spadnutí. Je to migrační program napříč postkvantovou kryptografií, kryptografickou agilitou, ujištěním o kvantové distribuci klíčů, protokolovými standardy, připraveností dodavatelů a dlouhožijícími finančními daty, která jsou již vystavena riziku harvest-now-decrypt-later.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sebastienrousseau.com/cs/2026-05-18-kvantova-kryptografie-standardy-vyvoj-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="cs_CZ">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Reset kvantové kryptografie v roce 2026: standardy PQC, ujištění o QKD a migrační práce, kterou banky nemohou odložit — Sebastien Rousseau">
+<meta name="twitter:description" content="Kvantová kryptografie v roce 2026 už není debatou o tom, zda jsou kvantové počítače na spadnutí. Je to migrační program napříč postkvantovou kryptografií, kryptografickou agilitou, ujištěním o kvantové distribuci klíčů, protokolovými standardy, připraveností dodavatelů a dlouhožijícími finančními daty, která jsou již vystavena riziku harvest-now-decrypt-later.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/cs/2026-05-18-kvantova-kryptografie-standardy-vyvoj-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-18-cryptographie-quantique-normes-developpements-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-18-kvantova-kryptografie-standardy-vyvoj-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-18-quantenkryptografie-standards-entwicklungen-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-18-criptografia-cuantica-estandares-desarrollos-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-18-kriptografi-kuantum-standar-perkembangan-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-18-crittografia-quantistica-standard-sviluppi-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-18-ryoshi-angou-hyojun-saishin-doukou-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-18-yangja-amho-pyojun-baljeon-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-18-kwantumcryptografie-standaarden-ontwikkelingen-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-18-kryptografia-kwantowa-standardy-rozwoj-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-18-criptografia-quantica-padroes-desenvolvimentos-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-18-kvantovaya-kriptografiya-standarty-razvitiye-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-18-kvantkryptografi-standarder-utveckling-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-18-witsawakam-khrip-thografi-khwantam-mathana-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-18-kuantum-kriptografi-standartlari-gelismeler-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-18-kvantova-kryptohrafiya-standarty-rozvytok-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-18-mat-ma-luong-tu-tieu-chuan-phat-trien-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-18-liangzi-mima-biaozhun-jinzhan-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-18-liangzi-mima-biaozhun-jinzhan-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Přeskočit na hlavní obsah</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Přepnout navigaci" />
+      <div class="wrap">
+        <a class="ap-brand" href="/cs/index.html" aria-label="Domovská stránka Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Hlavní navigace">
+          <ul class="ap-menu">
+            <li><a href="/cs/o-mne/index.html">O mně</a></li>
+            <li><a href="/cs/clanky/index.html" aria-current="page" class="active">Články</a></li>
+            <li><a href="/cs/publikace/index.html">Publikace</a></li>
+            <li><a href="/cs/temata/index.html">Témata</a></li>
+            <li><a href="/cs/projekty/index.html">Projekty</a></li>
+            <li><a href="/cs/playlisty/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Přepnout na tmavý motiv" aria-pressed="false" title="Přepnout motiv">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Hledat (Cmd nebo Ctrl + K)" title="Hledat (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Jazyk">
+            <button type="button" class="ap-lang-toggle" aria-label="CS, změnit jazyk" aria-expanded="false" aria-haspopup="menu" title="Změnit jazyk">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">CS</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/cs/kontakt/index.html" aria-label="Kontaktovat">Kontaktovat ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Přepnout navigaci">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Reset kvantové kryptografie v roce 2026: standardy PQC, ujištění o QKD a migrační práce, kterou banky nemohou odložit</h1>
+      <p class="sub">Kvantová kryptografie přešla od skenování horizontu k implementační disciplíně: standardy NIST PQC jsou připraveny, britská NCSC zúžila volbu algoritmů, protokolová práce IETF stále zraje a ujištění o QKD se posouvá z laboratorní důvěry k certifikační dikci.</p>
+    <nav class="article-tags" aria-label="Témata"><a href="/tags/index.html#h3-kvantova-kryptografie-2026" class="article-tag" rel="tag">kvantová kryptografie 2026</a><a href="/tags/index.html#h3-postkvantova-kryptografie" class="article-tag" rel="tag">postkvantová kryptografie</a><a href="/tags/index.html#h3-nist-fips-203" class="article-tag" rel="tag">NIST FIPS 203</a><a href="/tags/index.html#h3-fips-204" class="article-tag" rel="tag">FIPS 204</a><a href="/tags/index.html#h3-fips-205" class="article-tag" rel="tag">FIPS 205</a><a href="/tags/index.html#h3-ml-kem" class="article-tag" rel="tag">ML-KEM</a><a href="/tags/index.html#h3-ml-dsa" class="article-tag" rel="tag">ML-DSA</a><a href="/tags/index.html#h3-slh-dsa" class="article-tag" rel="tag">SLH-DSA</a><a href="/tags/index.html#h3-ncsc-pqc" class="article-tag" rel="tag">NCSC PQC</a><a href="/tags/index.html#h3-ietf-tls" class="article-tag" rel="tag">IETF TLS</a><a href="/tags/index.html#h3-ipsec" class="article-tag" rel="tag">IPsec</a><a href="/tags/index.html#h3-rfc-9794" class="article-tag" rel="tag">RFC 9794</a><a href="/tags/index.html#h3-hybridni-vymena-klicu" class="article-tag" rel="tag">hybridní výměna klíčů</a><a href="/tags/index.html#h3-qkd" class="article-tag" rel="tag">QKD</a><a href="/tags/index.html#h3-etsi-qkd" class="article-tag" rel="tag">ETSI QKD</a><a href="/tags/index.html#h3-iso-iec-23837" class="article-tag" rel="tag">ISO IEC 23837</a><a href="/tags/index.html#h3-kryptograficka-agilita" class="article-tag" rel="tag">kryptografická agilita</a><a href="/tags/index.html#h3-harvest-now-decrypt-later" class="article-tag" rel="tag">harvest now decrypt later</a><a href="/tags/index.html#h3-hndl" class="article-tag" rel="tag">HNDL</a><a href="/tags/index.html#h3-kryptografie-financnich-sluzeb" class="article-tag" rel="tag">kryptografie finančních služeb</a><a href="/tags/index.html#h3-bankovni-bezpecnost" class="article-tag" rel="tag">bankovní bezpečnost</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-18T06:06:06+00:00" class="meta-pub">Publikováno 18 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Odhadovaná doba čtení">8 min čtení</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Obsah</h2><ol><li><a href="#proc-na-tomto-tydnu-zalezi">Proč na tomto týdnu záleží</a></li><li><a href="#kryptograficka-zakladna-2026-ctyri-pracovni-proudy">Kryptografická základna 2026: čtyři pracovní proudy</a></li><li><a href="#co-by-banky-mely-udelat-nyni">Co by banky měly udělat nyní</a></li><li><a href="#pqc-qkd-a-hybridni-reseni-prakticka-rozhodovaci-tabulka">PQC, QKD a hybridní řešení: praktická rozhodovací tabulka</a></li><li><a href="#co-to-znamena-podle-typu-instituce">Co to znamená podle typu instituce</a></li><li><a href="#zaver">Závěr</a></li><li><a href="#casto-kladene-otazky">Často kladené otázky</a></li><li><a href="#reference">Reference</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Kvantová kryptografie v roce 2026 už není debatou o tom, zda jsou kvantové počítače na spadnutí. Je to migrační program napříč postkvantovou kryptografií, kryptografickou agilitou, ujištěním o kvantové distribuci klíčů, protokolovými standardy, připraveností dodavatelů a dlouhožijícími finančními daty, která jsou již vystavena riziku harvest-now-decrypt-later.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Proč na tomto týdnu záleží.</strong> Diskuse o standardech překročila bod abstrakce.</li>  <li><strong>Kryptografická základna 2026: čtyři pracovní proudy.</strong> První základnou je algoritmická.</li>  <li><strong>Co by banky měly udělat nyní.</strong> Prvním dodávkou je kryptografický soupis materiálu.</li>  <li><strong>PQC, QKD a hybridní řešení: praktická rozhodovací tabulka.</strong> Banky první úrovně potřebují programovou kancelář, nikoli proof of concept.</li></ul></aside><h1>Reset kvantové kryptografie v roce 2026: standardy PQC, ujištění o QKD a migrační práce, kterou banky nemohou odložit</h1>
+<p>Kvantová kryptografie se v roce 2026 rozdělila do dvou praktických směrů. Postkvantová kryptografie je nyní implementačním programem, protože NIST říká, že tři postkvantové standardy jsou připraveny k použití a federální systémy s nimi musí zacházet jako se standardy FIPS (<a href="https://www.nist.gov/pqc" title="NIST Post-Quantum Cryptography">NIST</a>); kvantová distribuce klíčů se stává otázkou ujištění a certifikace, protože nasazení QKD potřebují evaluační dikci, ochranné profily a provozní standardy, nikoli jen laboratorní demonstrace (<a href="https://www.idquantique.com/etsi-releases-qkd-protection-profile/" title="ETSI vydává ochranný profil QKD">ID Quantique / ETSI QKD 016</a>).</p>
+<hr />
+<blockquote>
+<p><strong>Shrnutí pro vedení / Klíčové závěry</strong></p>
+<ul>
+<li><strong>NIST přesunul PQC do implementace.</strong> Aktuální standardy jsou FIPS 203 pro ustavení klíče ML-KEM, FIPS 204 pro podpisy ML-DSA a FIPS 205 pro podpisy SLH-DSA, přičemž NIST nabádá organizace, aby identifikovaly zranitelnou kryptografii a začaly s migrací nyní (<a href="https://www.nist.gov/pqc" title="NIST Post-Quantum Cryptography">NIST</a>).</li>
+<li><strong>Britská NCSC zúžila praktické volby.</strong> Pro většinu případů použití doporučuje ML-KEM-768 a ML-DSA-65 a varuje, že systémy by se měly spoléhat na robustní implementace finálních standardů, nikoli na experimenty kompatibilní s návrhy (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC – další kroky v přípravě na PQC">NCSC</a>).</li>
+<li><strong>Připravenost protokolů je nerovnoměrná.</strong> IETF aktualizuje TLS a IPsec pro PQC a hybridní výměnu klíčů, ale NCSC upozorňuje, že provozní systémy by měly upřednostnit publikované RFC před měnícími se Internet Drafts (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC – další kroky v přípravě na PQC">NCSC</a>).</li>
+<li><strong>Hybridní řešení je přechodový mechanismus, ne cílový stav.</strong> Hybridní schémata s veřejným klíčem plus postkvantová schémata pomáhají rozfázovat migraci a zajistit se proti implementačnímu riziku, ale přidávají složitost a mohou vyžadovat druhou migraci na čistě PQC později (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC – další kroky v přípravě na PQC">NCSC</a>).</li>
+<li><strong>QKD není náhradou za PQC.</strong> QKD může sloužit specializovaným linkám s vysokým ujištěním, ale její bankovní relevance závisí na certifikaci, interoperabilitě, provozních nákladech a integraci se stávajícími systémy správy klíčů, nikoli jen na fyzice (<a href="https://www.idquantique.com/etsi-releases-qkd-protection-profile/" title="ETSI vydává ochranný profil QKD">ID Quantique / ETSI QKD 016</a>).</li>
+<li><strong>Otázka na úrovni banky je inventura.</strong> Finanční instituce, která neumí lokalizovat RSA, ECDH, ECDSA, EdDSA, proprietární VPN kryptografii, šablony HSM, doby životnosti certifikátů a kryptografii spravovanou dodavateli, nemůže migrovat, bez ohledu na to, které standardy jsou k dispozici.</li>
+<li><strong>Riziko je již aktivní.</strong> Útoky harvest-now-decrypt-later činí dlouhožijící finanční data zranitelnými ještě předtím, než existují kryptograficky relevantní kvantové počítače, protože protivník dnes potřebuje jen nasbírat šifrový text.</li>
+<li><strong>Kryptografická agilita je trvanlivá kontrola.</strong> Vítězná architektura není jednorázová výměna RSA za ML-KEM; je to platformová schopnost rotovat algoritmy, parametry, knihovny, certifikáty, hardwarové politiky a protokolové režimy, aniž by se musela banka přestavovat.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="proc-na-tomto-tydnu-zalezi">Proč na tomto týdnu záleží <a class="heading-anchor" href="#proc-na-tomto-tydnu-zalezi" aria-label="Odkaz na Proč na tomto týdnu záleží">#</a></h2>
+<p>Diskuse o standardech překročila bod abstrakce. Veřejný návod NIST říká, že organizace by měly začít aplikovat nové standardy nyní, identifikovat, kde se používají zranitelné algoritmy, a plánovat aktualizace produktů, služeb a protokolů (<a href="https://www.nist.gov/pqc" title="NIST Post-Quantum Cryptography">NIST</a>). Tato dikce je důležitá, protože mění PQC z výzkumného tématu v závislost technologické obnovy.</p>
+<p>Časování je rovněž důležité, protože finanční data mají dlouhý poločas důvěrnosti. Materiály k M&amp;A, treasury toky, vyšetřování sankcí, identifikační dokumenty klientů, metadata směrování plateb a záznamy o velkoobchodním vypořádání mohou zůstat citlivé roky. Kvantový počítač, který prolomí klasickou kryptografii s veřejným klíčem, dnes nemusí existovat, aby byla expozice racionální už dnes.</p>
+<h2 id="kryptograficka-zakladna-2026-ctyri-pracovni-proudy">Kryptografická základna 2026: čtyři pracovní proudy <a class="heading-anchor" href="#kryptograficka-zakladna-2026-ctyri-pracovni-proudy" aria-label="Odkaz na Kryptografická základna 2026: čtyři pracovní proudy">#</a></h2>
+<h3 id="1-standardy-pqc-jsou-dostatecne-pripraveny-pro-planovani">1. Standardy PQC jsou dostatečně připraveny pro plánování <a class="heading-anchor" href="#1-standardy-pqc-jsou-dostatecne-pripraveny-pro-planovani" aria-label="Odkaz na 1. Standardy PQC jsou dostatečně připraveny pro plánování">#</a></h3>
+<p>První základnou je algoritmická. Program PQC NIST nyní dává technologickým lídrům pojmenované cíle: ML-KEM pro ustavení klíčů, ML-DSA pro obecné digitální podpisy a SLH-DSA pro podpisy založené na hashích (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC – další kroky v přípravě na PQC">NCSC</a>). Praktickým dopadem je, že týmy nákupu, architektury a správy dodavatelů mohou přestat klást otázku, zda standardy PQC budou existovat, a začít se ptát, kdy je každý systém bude podporovat.</p>
+<p>Tvrdším bodem je kompatibilita. NCSC varuje, že implementace založené na návrzích standardů nemusí být kompatibilní s finálními standardy, což je přesně ten druh detailu, který rozbíjí migrace velkých bank, pokud se ignoruje (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC – další kroky v přípravě na PQC">NCSC</a>). Banky by proto měly oddělit experimentální piloty od produkčních migračních cest.</p>
+<h3 id="2-protokoly-jsou-uzkym-hrdlem">2. Protokoly jsou úzkým hrdlem <a class="heading-anchor" href="#2-protokoly-jsou-uzkym-hrdlem" aria-label="Odkaz na 2. Protokoly jsou úzkým hrdlem">#</a></h3>
+<p>Algoritmy samy o sobě nezajišťují bankovní provoz. TLS, IPsec, SSH, S/MIME, platební API, integrace HSM a stacky správy certifikátů – to vše potřebuje podporu na úrovni protokolu. NCSC uvádí, že IETF aktualizuje široce používané protokoly jako TLS a IPsec tak, aby algoritmy PQC mohly být začleněny do mechanismů výměny klíčů a podpisů (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC – další kroky v přípravě na PQC">NCSC</a>).</p>
+<p>To vytváří etapový implementační problém. Banka může okamžitě inventarizovat kryptografii, okamžitě vyžadovat dodavatelské roadmapy a okamžitě navrhnout kryptografickou agilitu, ale stále může čekat na stabilní implementace protokolů, než přesune kriticky důležité produkční kanály.</p>
+<h3 id="3-qkd-se-stava-disciplinou-ujisteni">3. QKD se stává disciplínou ujištění <a class="heading-anchor" href="#3-qkd-se-stava-disciplinou-ujisteni" aria-label="Odkaz na 3. QKD se stává disciplínou ujištění">#</a></h3>
+<p>Kvantová distribuce klíčů zůstává relevantní pro vysoce specializované linky, zvláště tam, kde instituce kontroluje koncové body a síťové trasy. Důležitým vývojem roku 2026 není jeden nový QKD box; je to vznik certifikační dikce, kde je ETSI GS QKD 016 popsáno jako milník ochranného profilu pro evaluaci produktů QKD (<a href="https://www.idquantique.com/etsi-releases-qkd-protection-profile/" title="ETSI vydává ochranný profil QKD">ID Quantique / ETSI QKD 016</a>).</p>
+<p>Pro banky to posouvá nákupní konverzaci. Správnou otázkou už není, zda je QKD principiálně kvantově bezpečná. Správnou otázkou je, zda zařízení, integrace, proces správy klíčů, provozní prostředí a certifikační důkazy splňují bankovní model hrozeb.</p>
+<h3 id="4-kryptograficka-agilita-je-architektura">4. Kryptografická agilita je architektura <a class="heading-anchor" href="#4-kryptograficka-agilita-je-architektura" aria-label="Odkaz na 4. Kryptografická agilita je architektura">#</a></h3>
+<p>Kryptografická agilita je schopnost změnit algoritmy bez změny celého systému. Pokrývá softwarové knihovny, vyjednávání protokolu, politiku HSM, profily certifikátů, životnost klíčů, podpisové služby, audit a cesty zpětného vrácení. Bez ní se každá kryptografická migrace stává projektem na míru.</p>
+<p>To je hlavní architektonická lekce. Postkvantový přechod nebude poslední kryptografický přechod, kterému finanční systém čelí. Banky, které si vybudují kryptografickou agilitu nyní, získají znovupoužitelnou kontrolní rovinu pro aktualizace algoritmů, dodavatelské riziko, mimořádné odvolávání a regulatorní důkazy.</p>
+<h2 id="co-by-banky-mely-udelat-nyni">Co by banky měly udělat nyní <a class="heading-anchor" href="#co-by-banky-mely-udelat-nyni" aria-label="Odkaz na Co by banky měly udělat nyní">#</a></h2>
+<h3 id="vybudovat-inventar-kryptografickych-aktiv">Vybudovat inventář kryptografických aktiv <a class="heading-anchor" href="#vybudovat-inventar-kryptografickych-aktiv" aria-label="Odkaz na Vybudovat inventář kryptografických aktiv">#</a></h3>
+<p>Prvním dodávkou je kryptografický soupis materiálu. Měl by zahrnovat algoritmy s veřejným klíčem, délky klíčů, certifikační autority, šablony HSM, verze TLS, VPN produkty, platební brány, API třetích stran, mobilní SDK, obálky šifrování dat v klidu, podpisové klíče, procesy podepisování firmwaru a kryptografii spravovanou dodavateli.</p>
+<p>Inventář by měl rozlišovat mezi důvěrností a autentičností. Dlouhožijící šifrovaná data jsou vystavena riziku harvest-now-decrypt-later, zatímco dlouhožijící podpisové klíče vytvářejí budoucí riziko padělání, pokud zůstávají zakotveny ve zranitelných algoritmech s veřejným klíčem.</p>
+<h3 id="segmentovat-podle-polocasu-dat">Segmentovat podle poločasu dat <a class="heading-anchor" href="#segmentovat-podle-polocasu-dat" aria-label="Odkaz na Segmentovat podle poločasu dat">#</a></h3>
+<p>Ne všechna data potřebují stejné pořadí migrace. Autorizační zpráva o platbě kartou v reálném čase může mít jiný poločas důvěrnosti než vyšetřování sankcí, soubor korporátní akvizice, balíček identity privátního bankovnictví nebo dokument o emisi suverénního dluhu. Proto kvantová migrace patří ke klasifikaci dat, nejen k síťové bezpečnosti.</p>
+<p>Prioritou by měly být systémy, které chrání dlouhožijící data zranitelným ustavením klíče. To jsou systémy, kde dnešní sběr vytváří zítřejší expozici.</p>
+<h3 id="vynutit-dodavatelske-roadmapy-do-smluv">Vynutit dodavatelské roadmapy do smluv <a class="heading-anchor" href="#vynutit-dodavatelske-roadmapy-do-smluv" aria-label="Odkaz na Vynutit dodavatelské roadmapy do smluv">#</a></h3>
+<p>NIST říká, že produkty, služby a protokoly potřebují pro přechod aktualizace (<a href="https://www.nist.gov/pqc" title="NIST Post-Quantum Cryptography">NIST</a>). To znamená, že se musí změnit smluvní dikce. Dodavatelé by měli zveřejňovat časové harmonogramy podpory PQC, kompatibilitu s finálními standardy, chování v hybridním režimu, omezení hardwarových modulů, dopady na výkon, podporu profilů certifikátů a fallback kontroly.</p>
+<p>Dodavatel, který říká jen „kvantově bezpečná roadmapa“, neodpověděl na otázku. Banka potřebuje data, algoritmy, integrační hranice a důkazy.</p>
+<h2 id="pqc-qkd-a-hybridni-reseni-prakticka-rozhodovaci-tabulka">PQC, QKD a hybridní řešení: praktická rozhodovací tabulka <a class="heading-anchor" href="#pqc-qkd-a-hybridni-reseni-prakticka-rozhodovaci-tabulka" aria-label="Odkaz na PQC, QKD a hybridní řešení: praktická rozhodovací tabulka">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Kontrola</th>
+<th>Nejlepší použití</th>
+<th>Stav 2026</th>
+<th>Bankovní výhrada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ML-KEM / FIPS 203</strong></td>
+<td>Ustavení klíče pro budoucí důvěrnost</td>
+<td>Standardizováno a připraveno pro implementační plánování (<a href="https://www.nist.gov/pqc" title="NIST Post-Quantum Cryptography">NIST</a>)</td>
+<td>Před kritickým produkčním nasazením potřebuje podporu protokolů a knihoven</td>
+</tr>
+<tr>
+<td><strong>ML-DSA / FIPS 204</strong></td>
+<td>Obecné digitální podpisy</td>
+<td>NCSC doporučuje pro většinu obecných případů použití podpisů (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC – další kroky v přípravě na PQC">NCSC</a>)</td>
+<td>Řetězce certifikátů a migrace PKI jsou provozně obtížné</td>
+</tr>
+<tr>
+<td><strong>SLH-DSA / FIPS 205</strong></td>
+<td>Podpisy založené na hashích pro podpisování firmwaru a softwaru</td>
+<td>Finální standard NIST referencovaný NCSC (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC – další kroky v přípravě na PQC">NCSC</a>)</td>
+<td>Větší podpisy mohou ovlivnit omezená prostředí</td>
+</tr>
+<tr>
+<td><strong>Hybridní PQ/T schémata</strong></td>
+<td>Přechodná migrace a interoperabilita</td>
+<td>Užitečné jako přechodové opatření (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC – další kroky v přípravě na PQC">NCSC</a>)</td>
+<td>Přidává složitost a může vyžadovat druhou migraci</td>
+</tr>
+<tr>
+<td><strong>QKD</strong></td>
+<td>Specializované linky s vysokým ujištěním</td>
+<td>Práce na ujištění zraje prostřednictvím aktivity ETSI okolo ochranného profilu (<a href="https://www.idquantique.com/etsi-releases-qkd-protection-profile/" title="ETSI vydává ochranný profil QKD">ID Quantique / ETSI QKD 016</a>)</td>
+<td>Neřeší obecnou autentizaci v internetovém měřítku ani podnikový kryptografický inventář</td>
+</tr>
+</tbody>
+</table>
+<h2 id="co-to-znamena-podle-typu-instituce">Co to znamená podle typu instituce <a class="heading-anchor" href="#co-to-znamena-podle-typu-instituce" aria-label="Odkaz na Co to znamená podle typu instituce">#</a></h2>
+<h3 id="univerzalni-banky-prvni-urovne">Univerzální banky první úrovně <a class="heading-anchor" href="#univerzalni-banky-prvni-urovne" aria-label="Odkaz na Univerzální banky první úrovně">#</a></h3>
+<p>Banky první úrovně potřebují programovou kancelář, nikoli proof of concept. Cílový provozní model by měl kombinovat kryptografický inventář, vynucování vůči dodavatelům, správu roadmapy HSM, testovací prostředí pro hybridní TLS/IPsec a regulátorům připravené důkazy. Nejhodnotnější včasná práce není okamžitá výměna každé šifry; je to vybudování kontrolní roviny, která činí změnu bezpečnou.</p>
+<h3 id="stredne-velke-a-regionalni-banky">Středně velké a regionální banky <a class="heading-anchor" href="#stredne-velke-a-regionalni-banky" aria-label="Odkaz na Středně velké a regionální banky">#</a></h3>
+<p>Banky střední úrovně by měly s PQC zacházet jako se cvičením správy dodavatelů a standardizace platforem. Mohou se vyhnout drahé práci na míru tím, že soustředí systémy kolem podporovaných knihoven, standardních TLS stacků, řízených služeb certifikátů a jasných termínů dodavatelů. Klíčovým rizikem je skrytá kryptografie uvnitř appliancí, platebních bran a starší middlewaru.</p>
+<h3 id="fintech-psp-a-instituce-blizke-kryptu">Fintech, PSP a instituce blízké kryptu <a class="heading-anchor" href="#fintech-psp-a-instituce-blizke-kryptu" aria-label="Odkaz na Fintech, PSP a instituce blízké kryptu">#</a></h3>
+<p>Fintech může postupovat rychleji, protože obvykle má méně starých kotev důvěry. Rizikem je samolibost v API třetích stran, výchozích nastaveních cloudových KMS, infrastruktuře peněženek a integracích custody. Firmy blízké kryptu by měly zvláště dbát na to, aby si nepletly narativy o nativní bezpečnosti blockchainu s postkvantovou připraveností.</p>
+<h3 id="inzenyri-a-bezpecnostni-architekti">Inženýři a bezpečnostní architekti <a class="heading-anchor" href="#inzenyri-a-bezpecnostni-architekti" aria-label="Odkaz na Inženýři a bezpečnostní architekti">#</a></h3>
+<p>Inženýrská disciplína je konkrétní: přidat metadata algoritmů do inventářů služeb, logovat vyjednané režimy protokolů, vytvořit bezpečné feature flagy pro hybridní testy, zkrátit životnost certifikátů, kde je to možné, odstranit napevno zadané algoritmické předpoklady a učinit kryptografickou politiku nasaditelnou skrze konfiguraci místo přes forky kódu.</p>
+<h2 id="zaver">Závěr <a class="heading-anchor" href="#zaver" aria-label="Odkaz na Závěr">#</a></h2>
+<p>Reset kvantové kryptografie není jeden technologický nákup. Je to kryptografický provozní model. NIST dal odvětví standardní základnu, NCSC zúžila praktický návod, protokolové orgány se stále hýbou a ujištění o QKD nabývá formálnější podoby. Bankovní instituce, které tento přechod vyhrají, nebudou ty, které oznámí největší pilot. Budou to instituce, které vědí, kde jejich kryptografie sídlí, vědí, která data je třeba chránit nejdříve, a umí měnit kryptografické primitivy bez přestavby banky.</p>
+<h2 id="casto-kladene-otazky">Často kladené otázky <a class="heading-anchor" href="#casto-kladene-otazky" aria-label="Odkaz na Často kladené otázky">#</a></h2>
+<p><strong>Je postkvantová kryptografie připravena k použití pro banky?</strong></p>
+<p>Je připravena pro plánování, spolupráci s dodavateli, piloty a vybranou implementační práci. NIST říká, že tři standardy jsou připraveny k implementaci, zatímco NCSC varuje, že provozní použití by se mělo spoléhat na robustní implementace finálních standardů a stabilní protokoly (<a href="https://www.nist.gov/pqc" title="NIST Post-Quantum Cryptography">NIST</a>, <a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC – další kroky v přípravě na PQC">NCSC</a>).</p>
+<p><strong>Odstraňuje QKD potřebu PQC?</strong></p>
+<p>Ne. QKD může být užitečná pro specializované řízené linky, ale PQC je škálovatelná migrační cesta pro obecný software, internetové protokoly, API, certifikáty a podnikové systémy. QKD navíc závisí na rámcích ujištění a certifikace, než s ní lze zacházet jako s infrastrukturou bankovní úrovně (<a href="https://www.idquantique.com/etsi-releases-qkd-protection-profile/" title="ETSI vydává ochranný profil QKD">ID Quantique / ETSI QKD 016</a>).</p>
+<p><strong>Co by mělo být migrováno jako první?</strong></p>
+<p>Prioritu by měly mít systémy chránící dlouhožijící citlivá data. To zahrnuje šifrování archivů, vyšetřování plateb, dokumenty treasury a kapitálových trhů, identifikační záznamy privátního bankovnictví, strategické obchodní spisy, kořenové certifikační autority, podpisování firmwaru a mezibankovní kanály.</p>
+<p><strong>Jaká je největší implementační past?</strong></p>
+<p>Největší pastí je zacházet s PQC jako s pouhou výměnou algoritmu. Migrace se dotýká protokolů, certifikátů, HSM, dodavatelů, testování výkonu, reakce na incidenty, monitoringu a governance. Bez kryptografické agility instituce jednoduše znovu vytvoří stejný migrační problém pro příští změnu algoritmu.</p>
+<h2 id="reference">Reference <a class="heading-anchor" href="#reference" aria-label="Odkaz na Reference">#</a></h2>
+<ul>
+<li>NIST, (2025). <a href="https://www.nist.gov/pqc" title="Postkvantová kryptografie">Postkvantová kryptografie ⧉</a>.</li>
+<li>NCSC, (2024). <a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="Návod NCSC k PQC">Další kroky v přípravě na postkvantovou kryptografii ⧉</a>.</li>
+<li>NIST CSRC, (2026). <a href="https://csrc.nist.gov/presentations/2026/mpts2026-3b1" title="Projekt NIST PQC">Projekt NIST Postkvantová kryptografie ⧉</a>.</li>
+<li>ID Quantique, (2024). <a href="https://www.idquantique.com/etsi-releases-qkd-protection-profile/" title="ETSI QKD 016">ETSI vydává první ochranný profil pro QKD na světě ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/cs/o-mne/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/cs/o-mne/index.html">Celý profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Naposledy revidováno <time datetime="2026-05-18">2026-05-18</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/cs/o-mne/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior bankovní technolog, píši o aplikované AI, migraci na ISO 20022, postkvantové kryptografii pro finanční služby a strukturální transformaci velkoobchodních plateb.</span><span class="author-credentials">Více než 20 let zkušeností v HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/cs/o-mne/index.html">Celý profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Naposledy revidováno <time datetime="2026-05-18">2026-05-18</time>.</p><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Zdroje a odkazy</h2><ol class="article-sources-list"><li><a href="https://www.nist.gov/pqc" rel="external noopener nofollow"><span class="source-host">www.nist.gov</span><span class="source-path">/pqc</span></a></li><li><a href="https://csrc.nist.gov/presentations/2026/mpts2026-3b1" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/presentations/2026/mpts2026-3b1</span></a></li></ol></aside><nav class="post-pagination" aria-label="Stránkování článků"><a class="post-pagination-prev" href="/cs/2026-05-17-agentni-inzenyrstvi-banky-blueprint-2026/"><span class="post-pagination-label">Předchozí</span><span class="post-pagination-title">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/cs/o-mne/index.html">O mně</a></li>
+              <li><a href="/cs/kontakt/index.html">Kontakt</a></li>
+              <li><a href="/cs/vytvoreno-statickym-generatorem/index.html">Vytvořeno se Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publikace</h2>
+            <ul>
+              <li><a href="/cs/clanky/index.html">Články</a></li>
+              <li><a href="/cs/publikace/index.html">Publikace</a></li>
+              <li><a href="/cs/stitky/index.html">Štítky</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Práce</h2>
+            <ul>
+              <li><a href="/cs/projekty/index.html">Projekty</a></li>
+              <li><a href="/cs/playlisty/index.html">Playlists</a></li>
+              <li><a href="/cs/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Kontakt</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Přihlášení k odběru newsletteru">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — výzkumné poznámky o platbách, AI a postkvantové kryptografii. Žádný spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="vy@banka.cz" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Přihlásit se k odběru</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Sociální odkazy">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau na Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau na LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau na Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau na YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/cs/pristupnost/index.html">Přístupnost</a> ·
+            <a href="/cs/soukromi/index.html">Soukromí</a> ·
+            <a href="/cs/podminky/index.html">Podmínky</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"cs"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"cs"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1797,"headline":"Reset kvantové kryptografie v roce 2026: standardy PQC, ujištění o QKD a migrační práce, kterou banky nemohou odložit","description":"Kvantová kryptografie v roce 2026 už není debatou o tom, zda jsou kvantové počítače na spadnutí. Je to migrační program napříč postkvantovou kryptografií, kryptografickou agilitou, ujištěním o kvantové distribuci klíčů, protokolovými standardy, připraveností dodavatelů a dlouhožijícími finančními daty, která jsou již vystavena riziku harvest-now-decrypt-later.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp","width":"100vw","height":"100vh","caption":"Mapa migrace na kvantově odolnou kryptografii pro rok 2026 zobrazující standardy NIST PQC, hybridní protokolovou práci, ujištění QKD, kryptografickou agilitu a úrovně rizika bankovních dat"},"url":"https://sebastienrousseau.com/cs/2026-05-18-kvantova-kryptografie-standardy-vyvoj-2026/","datePublished":"2026-05-18T06:06:06+00:00","dateModified":"2026-05-18","inLanguage":"cs","keywords":"kvantová kryptografie 2026, postkvantová kryptografie, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybridní výměna klíčů, QKD, ETSI QKD, ISO IEC 23837, kryptografická agilita, harvest now decrypt later, HNDL, kryptografie finančních služeb, bankovní bezpečnost","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/cs/2026-05-18-kvantova-kryptografie-standardy-vyvoj-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"cs"},"citation":[{"@type":"CreativeWork","url":"https://www.nist.gov/pqc"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/presentations/2026/mpts2026-3b1"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/cs/"},{"@type":"ListItem","position":3,"name":"Reset kvantové kryptografie v roce 2026: standardy PQC, ujištění o QKD a migrační práce, kterou banky nemohou odložit","item":"https://sebastienrousseau.com/cs/2026-05-18-kvantova-kryptografie-standardy-vyvoj-2026/"}]}]}</script>
+<script src="/main.f6d240db.js" integrity="sha256-9tJA2wY/3I+5OuXezpCLH3rb8KlkFS651l1/veOMebM=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Hledat">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Hledat</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Hledat">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Hledat v dokumentaci..." autocomplete="off" aria-label="Hledat"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> zavřít</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigovat</span><span><kbd>Enter</kbd> otevřít</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Reset kvantové kryptografie v roce 2026: standardy PQC, ujištění o QKD a migrační práce, kterou banky nemohou odložit","url":"https://sebastienrousseau.com/cs/2026-05-18-kvantova-kryptografie-standardy-vyvoj-2026/","inLanguage":"cs-CZ","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"kvantová kryptografie 2026, postkvantová kryptografie, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybridní výměna klíčů, QKD, ETSI QKD, ISO IEC 23837, kryptografická agilita, harvest now decrypt later, HNDL, kryptografie finančních služeb, bankovní bezpečnost","dependencies":["Post-Quantum Cryptography","NIST","NIST FIPS 203"]}</script></body>
+</html>

@@ -6,8 +6,38 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Mon, 18 May 2026 07:36:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 10:56:11 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
+    <item>
+      <title>การรีเซ็ตการเข้ารหัสควอนตัมในปี 2026: มาตรฐาน PQC การประกัน QKD และงานอพยพที่ธนาคารไม่อาจเลื่อนได้</title>
+      <link>https://sebastienrousseau.com/th/2026-05-18-witsawakam-khrip-thografi-khwantam-mathana-2026/</link>
+      <description>การเข้ารหัสควอนตัมในปี 2026 ไม่ใช่การโต้แย้งอีกต่อไปว่าคอมพิวเตอร์ควอนตัมจะมาถึงเมื่อไร แต่เป็นโปรแกรมอพยพข้ามการเข้ารหัสหลังควอนตัม ความคล่องตัวด้านการเข้ารหัส การประกันการแจกจ่ายคีย์ควอนตัม มาตรฐานโปรโตคอล ความพร้อมของผู้จัดส่ง และข้อมูลทางการเงินอายุยืนที่ถูกเปิดต่อความเสี่ยง &apos;เก็บเกี่ยววันนี้ ถอดรหัสภายหลัง&apos; ไปแล้ว</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-18-witsawakam-khrip-thografi-khwantam-mathana-2026/</guid>
+      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp" type="image/webp" length="0"/>
+      <category>การเข้ารหัสควอนตัม 2026</category>
+      <category>การเข้ารหัสหลังควอนตัม</category>
+      <category>NIST FIPS 203</category>
+      <category>FIPS 204</category>
+      <category>FIPS 205</category>
+      <category>ML-KEM</category>
+      <category>ML-DSA</category>
+      <category>SLH-DSA</category>
+      <category>NCSC PQC</category>
+      <category>IETF TLS</category>
+      <category>IPsec</category>
+      <category>RFC 9794</category>
+      <category>การแลกเปลี่ยนคีย์แบบไฮบริด</category>
+      <category>QKD</category>
+      <category>ETSI QKD</category>
+      <category>ISO IEC 23837</category>
+      <category>ความคล่องตัวด้านการเข้ารหัส</category>
+      <category>harvest now decrypt later</category>
+      <category>HNDL</category>
+      <category>การเข้ารหัสของบริการทางการเงิน</category>
+      <category>ความมั่นคงทางธนาคาร</category>
+    </item>
     <item>
       <title>Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán</title>
       <link>https://sebastienrousseau.com/th/2026-05-17-witsawakam-agentic-thanakhan-phaen-2026/</link>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Mon, 18 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Mon, 18 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Reset kryptografii kwantowej w 2026: standardy PQC, gwarancje QKD i prace migracyjne, których banki nie mogą odłożyć — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Kryptografia kwantowa w 2026 roku to już nie debata o tym, czy komputery kwantowe są blisko. To program migracyjny obejmujący kryptografię postkwantową, agilność kryptograficzną, gwarancje kwantowej dystrybucji kluczy, standardy protokołów, gotowość dostawców i długożyjące dane finansowe, które są już narażone na ryzyko harvest-now-decrypt-later.">
+<meta name="keywords" content="kryptografia kwantowa 2026, kryptografia postkwantowa, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybrydowa wymiana kluczy, QKD, ETSI QKD, ISO IEC 23837, agilność kryptograficzna, harvest now decrypt later, HNDL, kryptografia usług finansowych, bezpieczeństwo bankowe">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Quantum Crypto 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-4mybKU9fEsc+EUeMCJfU0ZPWVduRWMCXyF46xEB9kHI=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-CnwqJnEDqPLtvB6DYfnnIWQFi4cSCSENshqX434X0QE=' 'sha256-EbKqVgav6FLdhxVf6vMXo1kP4Xl7fdAWQupIW490mTs=' 'sha256-V85XT7mjyut3hl3iI67XrWEqkKcKwf3oss68j7q4Ars=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://www.googletagmanager.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/pl/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/a057afa19d87c0fe.css" crossorigin="anonymous" integrity="sha256-nyKUsN7CbNTpYwkJ8VEOR5Wetskwe92vnzOKxMl6ltw=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Kanał Atom" href="/pl/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Reset kryptografii kwantowej w 2026: standardy PQC, gwarancje QKD i prace migracyjne, których banki nie mogą odłożyć — Sebastien Rousseau">
+<meta property="og:description" content="Kryptografia kwantowa w 2026 roku to już nie debata o tym, czy komputery kwantowe są blisko. To program migracyjny obejmujący kryptografię postkwantową, agilność kryptograficzną, gwarancje kwantowej dystrybucji kluczy, standardy protokołów, gotowość dostawców i długożyjące dane finansowe, które są już narażone na ryzyko harvest-now-decrypt-later.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sebastienrousseau.com/pl/2026-05-18-kryptografia-kwantowa-standardy-rozwoj-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="pl_PL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Reset kryptografii kwantowej w 2026: standardy PQC, gwarancje QKD i prace migracyjne, których banki nie mogą odłożyć — Sebastien Rousseau">
+<meta name="twitter:description" content="Kryptografia kwantowa w 2026 roku to już nie debata o tym, czy komputery kwantowe są blisko. To program migracyjny obejmujący kryptografię postkwantową, agilność kryptograficzną, gwarancje kwantowej dystrybucji kluczy, standardy protokołów, gotowość dostawców i długożyjące dane finansowe, które są już narażone na ryzyko harvest-now-decrypt-later.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/pl/2026-05-18-kryptografia-kwantowa-standardy-rozwoj-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-18-cryptographie-quantique-normes-developpements-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-18-kvantova-kryptografie-standardy-vyvoj-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-18-quantenkryptografie-standards-entwicklungen-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-18-criptografia-cuantica-estandares-desarrollos-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-18-kriptografi-kuantum-standar-perkembangan-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-18-crittografia-quantistica-standard-sviluppi-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-18-ryoshi-angou-hyojun-saishin-doukou-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-18-yangja-amho-pyojun-baljeon-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-18-kwantumcryptografie-standaarden-ontwikkelingen-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-18-kryptografia-kwantowa-standardy-rozwoj-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-18-criptografia-quantica-padroes-desenvolvimentos-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-18-kvantovaya-kriptografiya-standarty-razvitiye-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-18-kvantkryptografi-standarder-utveckling-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-18-witsawakam-khrip-thografi-khwantam-mathana-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-18-kuantum-kriptografi-standartlari-gelismeler-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-18-kvantova-kryptohrafiya-standarty-rozvytok-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-18-mat-ma-luong-tu-tieu-chuan-phat-trien-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-18-quantum-cryptography-standards-developments-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-18-liangzi-mima-biaozhun-jinzhan-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-18-liangzi-mima-biaozhun-jinzhan-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Przejdź do treści głównej</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Przełącz nawigację" />
+      <div class="wrap">
+        <a class="ap-brand" href="/pl/index.html" aria-label="Strona główna Sebastiena Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Nawigacja główna">
+          <ul class="ap-menu">
+            <li><a href="/pl/o-mnie/index.html">O mnie</a></li>
+            <li><a href="/pl/artykuly/index.html" aria-current="page" class="active">Artykuły</a></li>
+            <li><a href="/pl/publikacje/index.html">Publikacje</a></li>
+            <li><a href="/pl/tematy/index.html">Tematy</a></li>
+            <li><a href="/pl/projekty/index.html">Projekty</a></li>
+            <li><a href="/pl/playlisty/index.html">Playlisty</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Przełącz na motyw ciemny" aria-pressed="false" title="Zmień motyw">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Szukaj (Cmd lub Ctrl + K)" title="Szukaj (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Język">
+            <button type="button" class="ap-lang-toggle" aria-label="PL, Zmień język" aria-expanded="false" aria-haspopup="menu" title="Zmień język">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">PL</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/pl/kontakt/index.html" aria-label="Skontaktuj się">Skontaktuj się ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Przełącz nawigację">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Reset kryptografii kwantowej w 2026: standardy PQC, gwarancje QKD i prace migracyjne, których banki nie mogą odłożyć</h1>
+      <p class="sub">Kryptografia kwantowa przeszła od skanowania horyzontu do dyscypliny wdrożeniowej: standardy NIST PQC są gotowe, brytyjska NCSC zawęziła wybór algorytmów, prace protokołowe IETF wciąż dojrzewają, a gwarancje QKD przechodzą od pewności laboratoryjnej do języka certyfikacji.</p>
+    <nav class="article-tags" aria-label="Tematy"><a href="/tags/index.html#h3-kryptografia-kwantowa-2026" class="article-tag" rel="tag">kryptografia kwantowa 2026</a><a href="/tags/index.html#h3-kryptografia-postkwantowa" class="article-tag" rel="tag">kryptografia postkwantowa</a><a href="/tags/index.html#h3-nist-fips-203" class="article-tag" rel="tag">NIST FIPS 203</a><a href="/tags/index.html#h3-fips-204" class="article-tag" rel="tag">FIPS 204</a><a href="/tags/index.html#h3-fips-205" class="article-tag" rel="tag">FIPS 205</a><a href="/tags/index.html#h3-ml-kem" class="article-tag" rel="tag">ML-KEM</a><a href="/tags/index.html#h3-ml-dsa" class="article-tag" rel="tag">ML-DSA</a><a href="/tags/index.html#h3-slh-dsa" class="article-tag" rel="tag">SLH-DSA</a><a href="/tags/index.html#h3-ncsc-pqc" class="article-tag" rel="tag">NCSC PQC</a><a href="/tags/index.html#h3-ietf-tls" class="article-tag" rel="tag">IETF TLS</a><a href="/tags/index.html#h3-ipsec" class="article-tag" rel="tag">IPsec</a><a href="/tags/index.html#h3-rfc-9794" class="article-tag" rel="tag">RFC 9794</a><a href="/tags/index.html#h3-hybrydowa-wymiana-kluczy" class="article-tag" rel="tag">hybrydowa wymiana kluczy</a><a href="/tags/index.html#h3-qkd" class="article-tag" rel="tag">QKD</a><a href="/tags/index.html#h3-etsi-qkd" class="article-tag" rel="tag">ETSI QKD</a><a href="/tags/index.html#h3-iso-iec-23837" class="article-tag" rel="tag">ISO IEC 23837</a><a href="/tags/index.html#h3-agilnosc-kryptograficzna" class="article-tag" rel="tag">agilność kryptograficzna</a><a href="/tags/index.html#h3-harvest-now-decrypt-later" class="article-tag" rel="tag">harvest now decrypt later</a><a href="/tags/index.html#h3-hndl" class="article-tag" rel="tag">HNDL</a><a href="/tags/index.html#h3-kryptografia-usug-finansowych" class="article-tag" rel="tag">kryptografia usług finansowych</a><a href="/tags/index.html#h3-bezpieczenstwo-bankowe" class="article-tag" rel="tag">bezpieczeństwo bankowe</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-18T06:06:06+00:00" class="meta-pub">Opublikowano 18 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Szacowany czas czytania">8 min czytania</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Spis treści</h2><ol><li><a href="#dlaczego-ten-tydzien-sie-liczy">Dlaczego ten tydzień się liczy</a></li><li><a href="#baza-kryptograficzna-2026-cztery-strumienie-pracy">Baza kryptograficzna 2026: cztery strumienie pracy</a></li><li><a href="#co-banki-powinny-zrobic-teraz">Co banki powinny zrobić teraz</a></li><li><a href="#pqc-qkd-i-hybryda-praktyczna-tabela-decyzyjna">PQC, QKD i hybryda: praktyczna tabela decyzyjna</a></li><li><a href="#co-to-oznacza-wedug-typu-instytucji">Co to oznacza według typu instytucji</a></li><li><a href="#wnioski">Wnioski</a></li><li><a href="#najczesciej-zadawane-pytania">Najczęściej zadawane pytania</a></li><li><a href="#bibliografia">Bibliografia</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Kryptografia kwantowa w 2026 roku to już nie debata o tym, czy komputery kwantowe są blisko. To program migracyjny obejmujący kryptografię postkwantową, agilność kryptograficzną, gwarancje kwantowej dystrybucji kluczy, standardy protokołów, gotowość dostawców i długożyjące dane finansowe, które są już narażone na ryzyko harvest-now-decrypt-later.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Dlaczego ten tydzień się liczy.</strong> Rozmowa o standardach minęła już etap abstrakcji.</li>  <li><strong>Baza kryptograficzna 2026: cztery strumienie pracy.</strong> Pierwszą bazą jest algorytmiczna.</li>  <li><strong>Co banki powinny zrobić teraz.</strong> Pierwszym dokumentem dostawczym jest kryptograficzny wykaz materiałów.</li>  <li><strong>PQC, QKD i hybryda: praktyczna tabela decyzyjna.</strong> Banki Tier-1 potrzebują biura programu, nie proof of concept.</li></ul></aside><h1>Reset kryptografii kwantowej w 2026: standardy PQC, gwarancje QKD i prace migracyjne, których banki nie mogą odłożyć</h1>
+<p>Kryptografia kwantowa w 2026 roku rozdzieliła się na dwa praktyczne tory. Kryptografia postkwantowa jest teraz programem wdrożeniowym, ponieważ NIST mówi, że trzy standardy postkwantowe są gotowe do użytku, a systemy federalne muszą je traktować jako standardy FIPS (<a href="https://www.nist.gov/pqc" title="NIST Post-Quantum Cryptography">NIST</a>); kwantowa dystrybucja kluczy staje się problemem gwarancji i certyfikacji, ponieważ wdrożenia QKD potrzebują języka oceny, profili ochrony i standardów operacyjnych, a nie samych demonstracji laboratoryjnych (<a href="https://www.idquantique.com/etsi-releases-qkd-protection-profile/" title="ETSI publikuje profil ochrony QKD">ID Quantique / ETSI QKD 016</a>).</p>
+<hr />
+<blockquote>
+<p><strong>Streszczenie wykonawcze / Kluczowe wnioski</strong></p>
+<ul>
+<li><strong>NIST przesunął PQC do wdrożenia.</strong> Aktualne standardy to FIPS 203 dla ustanawiania klucza ML-KEM, FIPS 204 dla podpisów ML-DSA i FIPS 205 dla podpisów SLH-DSA, a NIST zachęca organizacje do identyfikacji podatnej kryptografii i rozpoczęcia migracji już teraz (<a href="https://www.nist.gov/pqc" title="NIST Post-Quantum Cryptography">NIST</a>).</li>
+<li><strong>Brytyjska NCSC zawęziła praktyczne wybory.</strong> Zaleca ML-KEM-768 i ML-DSA-65 dla większości zastosowań, ostrzegając, że systemy powinny polegać na solidnych implementacjach finalnych standardów, a nie na eksperymentach zgodnych z wersjami roboczymi (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC – kolejne kroki w przygotowaniach do PQC">NCSC</a>).</li>
+<li><strong>Gotowość protokołów jest nierówna.</strong> IETF aktualizuje TLS i IPsec pod PQC i hybrydową wymianę kluczy, ale NCSC ostrzega, że systemy operacyjne powinny preferować opublikowane RFC nad zmieniającymi się Internet Drafts (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC – kolejne kroki w przygotowaniach do PQC">NCSC</a>).</li>
+<li><strong>Hybryda to mechanizm przejściowy, nie stan docelowy.</strong> Hybrydowe schematy klucza publicznego plus postkwantowego pomagają etapować migrację i zabezpieczyć się przed ryzykiem implementacyjnym, ale dodają złożoność i mogą wymagać drugiej migracji do czystego PQC później (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC – kolejne kroki w przygotowaniach do PQC">NCSC</a>).</li>
+<li><strong>QKD nie jest zastępstwem dla PQC.</strong> QKD może obsługiwać wyspecjalizowane łącza o wysokim poziomie gwarancji, ale jej znaczenie bankowe zależy od certyfikacji, interoperacyjności, kosztów operacyjnych i integracji z istniejącymi systemami zarządzania kluczami, a nie tylko od fizyki (<a href="https://www.idquantique.com/etsi-releases-qkd-protection-profile/" title="ETSI publikuje profil ochrony QKD">ID Quantique / ETSI QKD 016</a>).</li>
+<li><strong>Pytanie na poziomie banku to inwentarz.</strong> Instytucja finansowa, która nie potrafi zlokalizować RSA, ECDH, ECDSA, EdDSA, autorskiej kryptografii VPN, szablonów HSM, cyklów życia certyfikatów i kryptografii zarządzanej przez dostawcę, nie może migrować, niezależnie od dostępnych standardów.</li>
+<li><strong>Ryzyko jest już aktywne.</strong> Ataki harvest-now-decrypt-later sprawiają, że długożyjące dane finansowe są podatne jeszcze zanim powstaną kryptograficznie istotne komputery kwantowe, bo przeciwnik potrzebuje dziś tylko zebrać szyfrogram.</li>
+<li><strong>Agilność kryptograficzna to trwała kontrola.</strong> Wygrywającą architekturą nie jest jednorazowa wymiana RSA na ML-KEM; to platformowa zdolność rotacji algorytmów, parametrów, bibliotek, certyfikatów, polityk sprzętowych i trybów protokołu bez przebudowy banku.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="dlaczego-ten-tydzien-sie-liczy">Dlaczego ten tydzień się liczy <a class="heading-anchor" href="#dlaczego-ten-tydzien-sie-liczy" aria-label="Link do Dlaczego ten tydzień się liczy">#</a></h2>
+<p>Rozmowa o standardach minęła już etap abstrakcji. Publiczne wytyczne NIST mówią, że organizacje powinny rozpocząć stosowanie nowych standardów teraz, zidentyfikować, gdzie używane są podatne algorytmy, oraz zaplanować aktualizacje produktów, usług i protokołów (<a href="https://www.nist.gov/pqc" title="NIST Post-Quantum Cryptography">NIST</a>). Ten język ma znaczenie, ponieważ przekształca PQC z tematu badawczego w zależność odświeżenia technologii.</p>
+<p>Timing też się liczy, bo dane finansowe mają długi okres półtrwania poufności. Materiały M&amp;A, przepływy treasury, postępowania sankcyjne, dokumenty tożsamości klientów, metadane kierowania płatności i zapisy hurtowych rozliczeń mogą pozostać wrażliwe przez lata. Komputer kwantowy łamiący klasyczną kryptografię klucza publicznego nie musi istnieć dziś, by ekspozycja była dziś racjonalna.</p>
+<h2 id="baza-kryptograficzna-2026-cztery-strumienie-pracy">Baza kryptograficzna 2026: cztery strumienie pracy <a class="heading-anchor" href="#baza-kryptograficzna-2026-cztery-strumienie-pracy" aria-label="Link do Baza kryptograficzna 2026: cztery strumienie pracy">#</a></h2>
+<h3 id="1-standardy-pqc-sa-wystarczajaco-gotowe-by-na-nich-planowac">1. Standardy PQC są wystarczająco gotowe, by na nich planować <a class="heading-anchor" href="#1-standardy-pqc-sa-wystarczajaco-gotowe-by-na-nich-planowac" aria-label="Link do 1. Standardy PQC są wystarczająco gotowe, by na nich planować">#</a></h3>
+<p>Pierwszą bazą jest algorytmiczna. Program PQC NIST daje teraz liderom technologicznym wskazane cele: ML-KEM do ustanawiania kluczy, ML-DSA dla ogólnych podpisów cyfrowych i SLH-DSA dla podpisów opartych na haszach (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC – kolejne kroki w przygotowaniach do PQC">NCSC</a>). Praktycznym skutkiem jest to, że zespoły zakupów, architektury i zarządzania dostawcami mogą przestać pytać, czy standardy PQC będą istnieć, i zacząć pytać, kiedy każdy system je obsłuży.</p>
+<p>Trudniejszy punkt to kompatybilność. NCSC ostrzega, że implementacje oparte na wersjach roboczych mogą nie być kompatybilne z finalnymi standardami, co jest dokładnie tym detalem, który psuje migracje dużych banków, gdy zostaje zignorowany (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC – kolejne kroki w przygotowaniach do PQC">NCSC</a>). Banki powinny więc oddzielić piloty eksperymentalne od produkcyjnych ścieżek migracji.</p>
+<h3 id="2-protokoy-sa-waskim-gardem">2. Protokoły są wąskim gardłem <a class="heading-anchor" href="#2-protokoy-sa-waskim-gardem" aria-label="Link do 2. Protokoły są wąskim gardłem">#</a></h3>
+<p>Algorytmy same w sobie nie zabezpieczają ruchu bankowego. TLS, IPsec, SSH, S/MIME, API płatności, integracje HSM i stosy zarządzania certyfikatami – wszystko potrzebuje wsparcia na poziomie protokołu. NCSC stwierdza, że IETF aktualizuje powszechnie używane protokoły takie jak TLS i IPsec, aby algorytmy PQC mogły zostać włączone do mechanizmów wymiany kluczy i podpisów (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC – kolejne kroki w przygotowaniach do PQC">NCSC</a>).</p>
+<p>To tworzy problem etapowej implementacji. Bank może natychmiast inwentaryzować kryptografię, natychmiast żądać roadmap od dostawców i natychmiast projektować agilność kryptograficzną, ale wciąż może czekać na stabilne implementacje protokołów, zanim przeniesie krytyczne kanały produkcyjne.</p>
+<h3 id="3-qkd-staje-sie-dyscyplina-gwarancji">3. QKD staje się dyscypliną gwarancji <a class="heading-anchor" href="#3-qkd-staje-sie-dyscyplina-gwarancji" aria-label="Link do 3. QKD staje się dyscypliną gwarancji">#</a></h3>
+<p>Kwantowa dystrybucja kluczy pozostaje istotna dla wyspecjalizowanych łączy, szczególnie tam, gdzie instytucja kontroluje punkty końcowe i trasy sieciowe. Ważnym rozwojem 2026 nie jest jakieś pojedyncze nowe pudełko QKD; to pojawienie się języka certyfikacji, gdzie ETSI GS QKD 016 opisywany jest jako kamień milowy profilu ochrony do oceny produktów QKD (<a href="https://www.idquantique.com/etsi-releases-qkd-protection-profile/" title="ETSI publikuje profil ochrony QKD">ID Quantique / ETSI QKD 016</a>).</p>
+<p>Dla banków przesuwa to rozmowę zakupową. Właściwym pytaniem nie jest już to, czy QKD jest zasadniczo kwantowo bezpieczna. Właściwym pytaniem jest, czy urządzenie, integracja, proces zarządzania kluczami, środowisko operacyjne i dowody certyfikacyjne spełniają model zagrożeń banku.</p>
+<h3 id="4-agilnosc-kryptograficzna-to-architektura">4. Agilność kryptograficzna to architektura <a class="heading-anchor" href="#4-agilnosc-kryptograficzna-to-architektura" aria-label="Link do 4. Agilność kryptograficzna to architektura">#</a></h3>
+<p>Agilność kryptograficzna to zdolność zmiany algorytmów bez zmiany całego systemu. Obejmuje biblioteki oprogramowania, negocjację protokołów, politykę HSM, profile certyfikatów, czasy życia kluczy, usługi podpisu, dowody audytu i ścieżki rollback. Bez niej każda migracja kryptograficzna staje się projektem szytym na miarę.</p>
+<p>To główna lekcja architektoniczna. Przejście postkwantowe nie będzie ostatnim przejściem kryptograficznym, z jakim system finansowy się zmierzy. Banki, które budują agilność kryptograficzną teraz, otrzymują wielokrotnie używalną płaszczyznę kontroli dla aktualizacji algorytmów, ryzyka dostawców, awaryjnego unieważnienia i dowodów dla regulatora.</p>
+<h2 id="co-banki-powinny-zrobic-teraz">Co banki powinny zrobić teraz <a class="heading-anchor" href="#co-banki-powinny-zrobic-teraz" aria-label="Link do Co banki powinny zrobić teraz">#</a></h2>
+<h3 id="zbudowac-inwentarz-aktywow-kryptograficznych">Zbudować inwentarz aktywów kryptograficznych <a class="heading-anchor" href="#zbudowac-inwentarz-aktywow-kryptograficznych" aria-label="Link do Zbudować inwentarz aktywów kryptograficznych">#</a></h3>
+<p>Pierwszym dokumentem dostawczym jest kryptograficzny wykaz materiałów. Powinien zawierać algorytmy klucza publicznego, długości kluczy, urzędy certyfikacji, szablony HSM, wersje TLS, produkty VPN, bramki płatnicze, API stron trzecich, mobilne SDK, opakowania szyfrowania danych w spoczynku, klucze podpisu, procesy podpisywania firmware'u oraz kryptografię zarządzaną przez dostawców.</p>
+<p>Inwentarz powinien rozróżniać poufność i autentyczność. Długożyjące dane szyfrowane są narażone na ryzyko harvest-now-decrypt-later, podczas gdy długożyjące klucze podpisowe tworzą przyszłe ryzyko fałszerstwa, jeśli pozostają zakorzenione w podatnych algorytmach klucza publicznego.</p>
+<h3 id="segmentowac-wedug-okresu-potrwania-danych">Segmentować według okresu półtrwania danych <a class="heading-anchor" href="#segmentowac-wedug-okresu-potrwania-danych" aria-label="Link do Segmentować według okresu półtrwania danych">#</a></h3>
+<p>Nie wszystkie dane wymagają tej samej kolejności migracji. Komunikat autoryzacji karty w czasie rzeczywistym może mieć inny okres półtrwania poufności niż postępowanie sankcyjne, plik akwizycji korporacyjnej, pakiet tożsamości private bankingu lub dokument emisji długu suwerennego. Dlatego migracja kwantowa należy do klasyfikacji danych, a nie tylko do bezpieczeństwa sieci.</p>
+<p>Priorytet powinny mieć systemy chroniące długożyjące dane z podatnym ustanawianiem klucza. To są systemy, w których dzisiejsze zbieranie tworzy jutrzejszą ekspozycję.</p>
+<h3 id="wymusic-roadmapy-dostawcow-w-kontraktach">Wymusić roadmapy dostawców w kontraktach <a class="heading-anchor" href="#wymusic-roadmapy-dostawcow-w-kontraktach" aria-label="Link do Wymusić roadmapy dostawców w kontraktach">#</a></h3>
+<p>NIST mówi, że produkty, usługi i protokoły wymagają aktualizacji na potrzeby przejścia (<a href="https://www.nist.gov/pqc" title="NIST Post-Quantum Cryptography">NIST</a>). To oznacza, że język zakupów musi się zmienić. Dostawcy powinni ujawniać harmonogramy wsparcia PQC, kompatybilność z finalnymi standardami, zachowanie w trybie hybrydowym, ograniczenia modułów sprzętowych, wpływ na wydajność, wsparcie dla profili certyfikatów oraz mechanizmy awaryjne.</p>
+<p>Dostawca, który mówi tylko „kwantowo bezpieczna roadmapa&quot;, nie odpowiedział na pytanie. Bank potrzebuje dat, algorytmów, granic integracyjnych i dowodów.</p>
+<h2 id="pqc-qkd-i-hybryda-praktyczna-tabela-decyzyjna">PQC, QKD i hybryda: praktyczna tabela decyzyjna <a class="heading-anchor" href="#pqc-qkd-i-hybryda-praktyczna-tabela-decyzyjna" aria-label="Link do PQC, QKD i hybryda: praktyczna tabela decyzyjna">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Kontrola</th>
+<th>Najlepsze zastosowanie</th>
+<th>Status 2026</th>
+<th>Zastrzeżenie bankowe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ML-KEM / FIPS 203</strong></td>
+<td>Ustanawianie klucza dla przyszłej poufności</td>
+<td>Wystandaryzowane i gotowe do planowania wdrożenia (<a href="https://www.nist.gov/pqc" title="NIST Post-Quantum Cryptography">NIST</a>)</td>
+<td>Przed krytycznym wdrożeniem produkcyjnym potrzebuje wsparcia protokołów i bibliotek</td>
+</tr>
+<tr>
+<td><strong>ML-DSA / FIPS 204</strong></td>
+<td>Ogólne podpisy cyfrowe</td>
+<td>Zalecane przez NCSC dla większości ogólnych przypadków podpisów (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC – kolejne kroki w przygotowaniach do PQC">NCSC</a>)</td>
+<td>Łańcuchy certyfikatów i migracja PKI są operacyjnie trudne</td>
+</tr>
+<tr>
+<td><strong>SLH-DSA / FIPS 205</strong></td>
+<td>Podpisy oparte na haszach dla podpisywania firmware'u i oprogramowania</td>
+<td>Finalny standard NIST cytowany przez NCSC (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC – kolejne kroki w przygotowaniach do PQC">NCSC</a>)</td>
+<td>Większe podpisy mogą wpłynąć na środowiska ograniczone</td>
+</tr>
+<tr>
+<td><strong>Hybrydowe schematy PQ/T</strong></td>
+<td>Migracja przejściowa i interoperacyjność</td>
+<td>Użyteczne jako środek przejściowy (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC – kolejne kroki w przygotowaniach do PQC">NCSC</a>)</td>
+<td>Dodaje złożoność i może wymagać drugiej migracji</td>
+</tr>
+<tr>
+<td><strong>QKD</strong></td>
+<td>Wyspecjalizowane łącza wysokiego zaufania</td>
+<td>Prace nad gwarancjami dojrzewają poprzez aktywność ETSI wokół profilu ochrony (<a href="https://www.idquantique.com/etsi-releases-qkd-protection-profile/" title="ETSI publikuje profil ochrony QKD">ID Quantique / ETSI QKD 016</a>)</td>
+<td>Nie rozwiązuje ogólnej uwierzytelnienia w skali internetu ani korporacyjnego inwentarza kryptograficznego</td>
+</tr>
+</tbody>
+</table>
+<h2 id="co-to-oznacza-wedug-typu-instytucji">Co to oznacza według typu instytucji <a class="heading-anchor" href="#co-to-oznacza-wedug-typu-instytucji" aria-label="Link do Co to oznacza według typu instytucji">#</a></h2>
+<h3 id="uniwersalne-banki-tier-1">Uniwersalne banki Tier-1 <a class="heading-anchor" href="#uniwersalne-banki-tier-1" aria-label="Link do Uniwersalne banki Tier-1">#</a></h3>
+<p>Banki Tier-1 potrzebują biura programu, nie proof of concept. Docelowy model operacyjny powinien łączyć kryptograficzny inwentarz, wymuszanie wobec dostawców, zarządzanie roadmapą HSM, środowiska testowe dla hybrydowego TLS/IPsec oraz dowody gotowe dla regulatora. Najwartościowszą wczesną pracą nie jest natychmiastowa zmiana każdego szyfru; jest nią budowa płaszczyzny kontroli, która sprawia, że zmiana jest bezpieczna.</p>
+<h3 id="banki-sredniej-wielkosci-i-regionalne">Banki średniej wielkości i regionalne <a class="heading-anchor" href="#banki-sredniej-wielkosci-i-regionalne" aria-label="Link do Banki średniej wielkości i regionalne">#</a></h3>
+<p>Banki średniej klasy powinny traktować PQC jako ćwiczenie zarządzania dostawcami i standaryzacji platform. Mogą uniknąć drogiej pracy szytej na miarę, koncentrując systemy wokół wspieranych bibliotek, standardowych stosów TLS, zarządzanych usług certyfikatów i jasnych terminów dostawców. Kluczowym ryzykiem jest ukryta kryptografia wewnątrz urządzeń, bramek płatniczych i starszego middleware'u.</p>
+<h3 id="fintech-psp-i-instytucje-powiazane-z-kryptowalutami">Fintech, PSP i instytucje powiązane z kryptowalutami <a class="heading-anchor" href="#fintech-psp-i-instytucje-powiazane-z-kryptowalutami" aria-label="Link do Fintech, PSP i instytucje powiązane z kryptowalutami">#</a></h3>
+<p>Fintech może poruszać się szybciej, bo zwykle ma mniej starych kotwic zaufania. Ryzykiem jest samozadowolenie w API stron trzecich, domyślnych ustawieniach cloud KMS, infrastrukturze portfeli i integracjach custody. Firmy powiązane z kryptowalutami powinny być szczególnie ostrożne, by nie mylić narracji bezpieczeństwa rodem z blockchainu z gotowością postkwantową.</p>
+<h3 id="inzynierowie-i-architekci-bezpieczenstwa">Inżynierowie i architekci bezpieczeństwa <a class="heading-anchor" href="#inzynierowie-i-architekci-bezpieczenstwa" aria-label="Link do Inżynierowie i architekci bezpieczeństwa">#</a></h3>
+<p>Dyscyplina inżynierska jest konkretna: dodać metadane algorytmów do inwentarzy usług, logować wynegocjowane tryby protokołów, tworzyć bezpieczne feature flagi dla testów hybrydowych, skracać życie certyfikatów tam, gdzie to możliwe, usuwać sztywne założenia algorytmiczne i sprawić, by polityka kryptograficzna była wdrażalna przez konfigurację, a nie forki kodu.</p>
+<h2 id="wnioski">Wnioski <a class="heading-anchor" href="#wnioski" aria-label="Link do Wnioski">#</a></h2>
+<p>Reset kryptografii kwantowej to nie jeden zakup technologiczny. To kryptograficzny model operacyjny. NIST dał branży podstawę standardów, NCSC zawęziła praktyczne wytyczne, ciała protokołowe wciąż się poruszają, a gwarancje QKD stają się bardziej formalne. Instytucje bankowe, które wygrają to przejście, nie będą tymi, które ogłoszą największy pilot. Będą tymi, które wiedzą, gdzie żyje ich kryptografia, wiedzą, które dane wymagają najpierw ochrony, i potrafią zmienić prymitywne elementy kryptograficzne bez przebudowy banku.</p>
+<h2 id="najczesciej-zadawane-pytania">Najczęściej zadawane pytania <a class="heading-anchor" href="#najczesciej-zadawane-pytania" aria-label="Link do Najczęściej zadawane pytania">#</a></h2>
+<p><strong>Czy kryptografia postkwantowa jest gotowa do użytku przez banki?</strong></p>
+<p>Jest gotowa do planowania, zaangażowania dostawców, pilotów i wybranych prac wdrożeniowych. NIST mówi, że trzy standardy są gotowe do implementacji, podczas gdy NCSC ostrzega, że użycie operacyjne powinno polegać na solidnych implementacjach finalnych standardów i stabilnych protokołów (<a href="https://www.nist.gov/pqc" title="NIST Post-Quantum Cryptography">NIST</a>, <a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="NCSC – kolejne kroki w przygotowaniach do PQC">NCSC</a>).</p>
+<p><strong>Czy QKD eliminuje potrzebę PQC?</strong></p>
+<p>Nie. QKD może być użyteczna dla wyspecjalizowanych kontrolowanych łączy, ale PQC jest skalowalną ścieżką migracji dla ogólnego oprogramowania, protokołów internetowych, API, certyfikatów i systemów korporacyjnych. QKD zależy też od ram gwarancji i certyfikacji, zanim będzie można traktować ją jak infrastrukturę klasy bankowej (<a href="https://www.idquantique.com/etsi-releases-qkd-protection-profile/" title="ETSI publikuje profil ochrony QKD">ID Quantique / ETSI QKD 016</a>).</p>
+<p><strong>Co powinno być zmigrowane najpierw?</strong></p>
+<p>Priorytet powinny mieć systemy chroniące długożyjące dane wrażliwe. Obejmuje to szyfrowanie archiwów, postępowania płatnicze, dokumenty treasury i rynków kapitałowych, rekordy tożsamości private bankingu, strategiczne pliki transakcyjne, główne urzędy certyfikacji, podpisywanie firmware'u i kanały międzybankowe.</p>
+<p><strong>Jaka jest największa pułapka wdrożeniowa?</strong></p>
+<p>Największą pułapką jest traktowanie PQC jako prostej wymiany algorytmu. Migracja dotyka protokołów, certyfikatów, HSM, dostawców, testów wydajności, reakcji na incydenty, monitoringu i ładu korporacyjnego. Bez agilności kryptograficznej instytucja po prostu odtwarza ten sam problem migracji dla następnej zmiany algorytmu.</p>
+<h2 id="bibliografia">Bibliografia <a class="heading-anchor" href="#bibliografia" aria-label="Link do Bibliografia">#</a></h2>
+<ul>
+<li>NIST, (2025). <a href="https://www.nist.gov/pqc" title="Kryptografia postkwantowa">Kryptografia postkwantowa ⧉</a>.</li>
+<li>NCSC, (2024). <a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography" title="Wytyczne NCSC dotyczące PQC">Kolejne kroki w przygotowaniach do kryptografii postkwantowej ⧉</a>.</li>
+<li>NIST CSRC, (2026). <a href="https://csrc.nist.gov/presentations/2026/mpts2026-3b1" title="Projekt NIST PQC">Projekt NIST Kryptografia Postkwantowa ⧉</a>.</li>
+<li>ID Quantique, (2024). <a href="https://www.idquantique.com/etsi-releases-qkd-protection-profile/" title="ETSI QKD 016">ETSI publikuje pierwszy na świecie profil ochrony dla QKD ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+<aside class="author-card" aria-label="O autorze"><img alt="Portret Sebastiena Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/pl/o-mnie/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/pl/o-mnie/index.html">Pełny profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Ostatnia weryfikacja <time datetime="2026-05-18">2026-05-18</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="O autorze"><img alt="Portret Sebastiena Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/pl/o-mnie/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Starszy technolog bankowy, pisze o zastosowanej sztucznej inteligencji, migracji na ISO 20022, kryptografii postkwantowej dla usług finansowych oraz strukturalnej transformacji płatności hurtowych.</span><span class="author-credentials">Ponad 20 lat doświadczenia w HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/pl/o-mnie/index.html">Pełny profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Ostatnia weryfikacja <time datetime="2026-05-18">2026-05-18</time>.</p><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Źródła i odniesienia</h2><ol class="article-sources-list"><li><a href="https://www.nist.gov/pqc" rel="external noopener nofollow"><span class="source-host">www.nist.gov</span><span class="source-path">/pqc</span></a></li><li><a href="https://csrc.nist.gov/presentations/2026/mpts2026-3b1" rel="external noopener nofollow"><span class="source-host">csrc.nist.gov</span><span class="source-path">/presentations/2026/mpts2026-3b1</span></a></li></ol></aside><nav class="post-pagination" aria-label="Nawigacja po artykule"><a class="post-pagination-prev" href="/pl/2026-05-17-inzynieria-agentowa-blueprint-bankow-2026/"><span class="post-pagination-label">Poprzedni</span><span class="post-pagination-title">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/pl/o-mnie/index.html">O mnie</a></li>
+              <li><a href="/pl/kontakt/index.html">Kontakt</a></li>
+              <li><a href="/pl/stworzone-statycznym-generatorem/index.html">Stworzone statycznym generatorem</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publikacje</h2>
+            <ul>
+              <li><a href="/pl/artykuly/index.html">Artykuły</a></li>
+              <li><a href="/pl/publikacje/index.html">Publikacje</a></li>
+              <li><a href="/pl/tagi/index.html">Tagi</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Praca</h2>
+            <ul>
+              <li><a href="/pl/projekty/index.html">Projekty</a></li>
+              <li><a href="/pl/playlisty/index.html">Playlisty</a></li>
+              <li><a href="/pl/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Kontakt</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Zapis do newslettera">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — notatki badawcze o płatnościach, AI i kryptografii postkwantowej. Bez spamu.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="ty@bank.pl" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Zapisz się</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Linki społecznościowe">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau na Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau na LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau na Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau na YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/pl/dostepnosc/index.html">Dostępność</a> ·
+            <a href="/pl/prywatnosc/index.html">Prywatność</a> ·
+            <a href="/pl/warunki/index.html">Warunki</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"pl"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"pl"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1786,"headline":"Reset kryptografii kwantowej w 2026: standardy PQC, gwarancje QKD i prace migracyjne, których banki nie mogą odłożyć","description":"Kryptografia kwantowa w 2026 roku to już nie debata o tym, czy komputery kwantowe są blisko. To program migracyjny obejmujący kryptografię postkwantową, agilność kryptograficzną, gwarancje kwantowej dystrybucji kluczy, standardy protokołów, gotowość dostawców i długożyjące dane finansowe, które są już narażone na ryzyko harvest-now-decrypt-later.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp","width":"100vw","height":"100vh","caption":"Mapa migracji do kryptografii kwantowo-bezpiecznej na 2026 rok pokazująca standardy NIST PQC, prace nad protokołami hybrydowymi, gwarancje QKD, agilność kryptograficzną i poziomy ryzyka danych bankowych"},"url":"https://sebastienrousseau.com/pl/2026-05-18-kryptografia-kwantowa-standardy-rozwoj-2026/","datePublished":"2026-05-18T06:06:06+00:00","dateModified":"2026-05-18","inLanguage":"pl","keywords":"kryptografia kwantowa 2026, kryptografia postkwantowa, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybrydowa wymiana kluczy, QKD, ETSI QKD, ISO IEC 23837, agilność kryptograficzna, harvest now decrypt later, HNDL, kryptografia usług finansowych, bezpieczeństwo bankowe","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/pl/2026-05-18-kryptografia-kwantowa-standardy-rozwoj-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"pl"},"citation":[{"@type":"CreativeWork","url":"https://www.nist.gov/pqc"},{"@type":"CreativeWork","url":"https://csrc.nist.gov/presentations/2026/mpts2026-3b1"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/pl/"},{"@type":"ListItem","position":3,"name":"Reset kryptografii kwantowej w 2026: standardy PQC, gwarancje QKD i prace migracyjne, których banki nie mogą odłożyć","item":"https://sebastienrousseau.com/pl/2026-05-18-kryptografia-kwantowa-standardy-rozwoj-2026/"}]}]}</script>
+<script src="/main.f6d240db.js" integrity="sha256-9tJA2wY/3I+5OuXezpCLH3rb8KlkFS651l1/veOMebM=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Szukaj">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Szukaj</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Szukaj">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Przeszukaj dokumentację..." autocomplete="off" aria-label="Szukaj"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> zamknij</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> nawiguj</span><span><kbd>Enter</kbd> otwórz</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Reset kryptografii kwantowej w 2026: standardy PQC, gwarancje QKD i prace migracyjne, których banki nie mogą odłożyć","url":"https://sebastienrousseau.com/pl/2026-05-18-kryptografia-kwantowa-standardy-rozwoj-2026/","inLanguage":"pl-PL","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"kryptografia kwantowa 2026, kryptografia postkwantowa, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybrydowa wymiana kluczy, QKD, ETSI QKD, ISO IEC 23837, agilność kryptograficzna, harvest now decrypt later, HNDL, kryptografia usług finansowych, bezpieczeństwo bankowe","dependencies":["Post-Quantum Cryptography","NIST","NIST FIPS 203"]}</script></body>
+</html>

@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/yo/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/yo/"/>
   <id>https://sebastienrousseau.com/yo/</id>
-  <updated>2026-05-18T07:36:27+00:00</updated>
+  <updated>2026-05-18T10:56:11+00:00</updated>
+  <entry>
+    <title>Àtúnṣe Cryptography Quantum ní 2026: Àwọn Ìlànà PQC, Ìdánilójú QKD, àti Iṣẹ́ Ìṣípò tí Àwọn Báńkì Kò Lè Sún Síwájú</title>
+    <link href="https://sebastienrousseau.com/yo/2026-05-18-quantum-cryptography-standards-developments-2026/"/>
+    <id>https://sebastienrousseau.com/yo/2026-05-18-quantum-cryptography-standards-developments-2026/</id>
+    <updated>2026-05-18T06:06:06+00:00</updated>
+    <published>2026-05-18T06:06:06+00:00</published>
+    <summary>Cryptography quantum ní 2026 kì í ṣe àríyànjiyàn mọ́ nípa bóyá àwọn kọ̀ǹpútà quantum sún mọ́. Ó jẹ́ ètò ìṣípò kọjá cryptography post-quantum, ìrọ̀rùn-crypto, ìdánilójú pípèsè kọ́kọ́rọ́ quantum, àwọn ìlànà ìlànà, ìmúrasílẹ̀ olùpèsè, àti àwọn dátà ìṣúná onípẹ̀kun tí ó ti farahàn sí ewu ‘kórè-nísinsìnyí-tú-padà-lẹ́yìn’.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
     <link href="https://sebastienrousseau.com/yo/2026-05-17-agentic-engineering-banks-blueprint-2026/"/>

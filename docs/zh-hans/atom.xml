@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/zh-hans/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/zh-hans/"/>
   <id>https://sebastienrousseau.com/zh-hans/</id>
-  <updated>2026-05-18T07:36:27+00:00</updated>
+  <updated>2026-05-18T10:56:11+00:00</updated>
+  <entry>
+    <title>2026 年量子密码重置：PQC 标准、QKD 保证与银行不能再延期的迁移工作</title>
+    <link href="https://sebastienrousseau.com/zh-hans/2026-05-18-liangzi-mima-biaozhun-jinzhan-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hans/2026-05-18-liangzi-mima-biaozhun-jinzhan-2026/</id>
+    <updated>2026-05-18T06:06:06+00:00</updated>
+    <published>2026-05-18T06:06:06+00:00</published>
+    <summary>2026 年的量子密码不再是关于量子计算机是否迫近的辩论。它是一项跨越后量子密码、密码敏捷性、量子密钥分发保证、协议标准、供应商就绪度和已暴露于「先收割后解密」风险的长寿命金融数据的迁移计划。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>面向银行的代理式工程：2026 年高管团队与工程师蓝图</title>
     <link href="https://sebastienrousseau.com/zh-hans/2026-05-17-ai-dailixing-gongcheng-yinhang-2026-lantu/"/>
