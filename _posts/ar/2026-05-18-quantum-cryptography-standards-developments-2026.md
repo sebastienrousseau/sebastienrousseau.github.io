@@ -5,7 +5,7 @@ description: "التشفير الكمومي في 2026 لم يعد جدلاً ح�
 date: "May 18, 2026"
 language: "ar"
 locale: "ar_SA"
-banner: "https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp"
+banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "خريطة هجرة التشفير الآمن للكم لعام 2026 تُظهر معايير NIST PQC، وعمل البروتوكولات الهجين، وضمان QKD، والمرونة التشفيرية، ومستويات مخاطر بيانات البنوك"
 keywords: "التشفير الكمومي 2026، التشفير ما بعد الكمومي، NIST FIPS 203، FIPS 204، FIPS 205، ML-KEM، ML-DSA، SLH-DSA، NCSC PQC، IETF TLS، IPsec، RFC 9794، تبادل المفاتيح الهجين، QKD، ETSI QKD، ISO IEC 23837، المرونة التشفيرية، احصد الآن فُكّ التشفير لاحقاً، HNDL، تشفير الخدمات المالية، أمن البنوك"
 ---

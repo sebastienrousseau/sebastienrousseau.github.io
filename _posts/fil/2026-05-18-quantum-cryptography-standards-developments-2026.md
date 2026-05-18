@@ -5,7 +5,7 @@ description: "Ang quantum cryptography sa 2026 ay hindi na isang debate kung mal
 date: "May 18, 2026"
 language: "fil-PH"
 locale: "fil_PH"
-banner: "https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp"
+banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "Mapa ng migration ng quantum-safe cryptography para sa 2026 na nagpapakita ng mga NIST PQC standard, hybrid protocol work, QKD assurance, crypto-agility, at mga tier ng panganib sa data ng bangko"
 keywords: "quantum cryptography 2026, post-quantum cryptography, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybrid key exchange, QKD, ETSI QKD, ISO IEC 23837, crypto-agility, harvest now decrypt later, HNDL, cryptography ng financial services, seguridad ng pagbabangko"
 ---

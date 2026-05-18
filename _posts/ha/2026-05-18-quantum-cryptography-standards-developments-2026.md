@@ -5,7 +5,7 @@ description: "Sirrin quantum a 2026 ba muhawara ba ne kan ko kwamfutoci na quant
 date: "May 18, 2026"
 language: "ha-NG"
 locale: "ha_NG"
-banner: "https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp"
+banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "Taswirar ƙaura na sirrin lafiya na quantum na 2026 yana nuna ƙa'idodin NIST PQC, aikin protocol na haɗaka, tabbatar QKD, sassaucin sirri, da matakan haɗarin bayanan banki"
 keywords: "sirrin quantum 2026, sirrin post-quantum, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, musayar maɓalli haɗaka, QKD, ETSI QKD, ISO IEC 23837, sassaucin sirri, harvest now decrypt later, HNDL, sirrin sabis na kuɗi, tsaron banki"
 ---

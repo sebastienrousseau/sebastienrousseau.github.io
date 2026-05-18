@@ -5,7 +5,7 @@ description: "Kriptografi kuantum di 2026 bukan lagi perdebatan tentang apakah k
 date: "May 18, 2026"
 language: "id-ID"
 locale: "id_ID"
-banner: "https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp"
+banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "Peta migrasi kriptografi aman-kuantum untuk 2026 yang menunjukkan standar NIST PQC, pekerjaan protokol hibrida, jaminan QKD, ketangkasan kripto, dan tingkat risiko data bank"
 keywords: "kriptografi kuantum 2026, kriptografi pasca-kuantum, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, pertukaran kunci hibrida, QKD, ETSI QKD, ISO IEC 23837, ketangkasan kripto, harvest now decrypt later, HNDL, kriptografi jasa keuangan, keamanan perbankan"
 ---

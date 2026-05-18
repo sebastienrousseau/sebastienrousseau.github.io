@@ -5,7 +5,7 @@ description: "הקריפטוגרפיה הקוונטית ב-2026 כבר אינה 
 date: "May 18, 2026"
 language: "he-IL"
 locale: "he_IL"
-banner: "https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp"
+banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "מפת הגירה לקריפטוגרפיה בטוחה-קוונטית ל-2026 המראה את תקני NIST PQC, עבודת פרוטוקולים היברידיים, אסמכתת QKD, גמישות-קריפטו ורמות סיכון נתונים בבנקים"
 keywords: "קריפטוגרפיה קוונטית 2026, קריפטוגרפיה פוסט-קוונטית, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, חליפת מפתחות היברידית, QKD, ETSI QKD, ISO IEC 23837, גמישות-קריפטו, קצור עכשיו פענח אחר כך, HNDL, קריפטוגרפיה לשירותים פיננסיים, אבטחת בנקים"
 ---

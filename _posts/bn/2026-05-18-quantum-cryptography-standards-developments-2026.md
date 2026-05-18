@@ -5,7 +5,7 @@ description: "২০২৬-এ কোয়ান্টাম ক্রিপ্
 date: "May 18, 2026"
 language: "bn-BD"
 locale: "bn_BD"
-banner: "https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp"
+banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "২০২৬-এর জন্য কোয়ান্টাম-নিরাপদ ক্রিপ্টোগ্রাফি মাইগ্রেশন মানচিত্র — NIST PQC মান, হাইব্রিড প্রোটোকল কাজ, QKD নিশ্চয়তা, ক্রিপ্টো-চটপটেতা এবং ব্যাঙ্ক ডেটা-ঝুঁকি স্তর দেখাচ্ছে"
 keywords: "কোয়ান্টাম ক্রিপ্টোগ্রাফি ২০২৬, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, হাইব্রিড কী এক্সচেঞ্জ, QKD, ETSI QKD, ISO IEC 23837, ক্রিপ্টো-চটপটেতা, harvest now decrypt later, HNDL, আর্থিক সেবা ক্রিপ্টোগ্রাফি, ব্যাঙ্কিং সুরক্ষা"
 ---

@@ -6,7 +6,7 @@
     <description>مقالات بالعربية: الذكاء الاصطناعي التطبيقي، مدفوعات ISO 20022، التشفير ما بعد الكمي، وتحوّل المدفوعات بالجملة.</description>
     <atom:link href="https://sebastienrousseau.com/ar/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ar-SA</language>
-    <lastBuildDate>Mon, 18 May 2026 11:48:18 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 12:52:29 +0000</lastBuildDate>
     <copyright>© حقوق النشر 2007 - 2026 - سيباستيان روسو. جميع الحقوق محفوظة.</copyright>
     <item>
       <title>إعادة ضبط التشفير الكمومي في 2026: معايير PQC، ضمان QKD، وعمل الهجرة الذي لا تستطيع البنوك تأجيله</title>
@@ -15,7 +15,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-18-quantum-cryptography-standards-developments-2026/</guid>
       <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" type="image/webp" length="0"/>
       <category>التشفير الكمومي 2026، التشفير ما بعد الكمومي، NIST FIPS 203، FIPS 204، FIPS 205، ML-KEM، ML-DSA، SLH-DSA، NCSC PQC، IETF TLS، IPsec، RFC 9794، تبادل المفاتيح الهجين، QKD، ETSI QKD، ISO IEC 23837، المرونة التشفيرية، احصد الآن فُكّ التشفير لاحقاً، HNDL، تشفير الخدمات المالية، أمن البنوك</category>
     </item>
     <item>

@@ -1,11 +1,11 @@
 {
-  "title": "Constantes mathématiques et cryptographiques pour la sécurité Rust",
-  "keywords": "constantes mathématiques, constantes cryptographiques, sécurité Rust, communication sécurisée, chiffrement, RSA, cryptographie sur courbe elliptique, bibliothèque Common (CMN), applications Rust, calculs mathématiques",
-  "description": "Protégez l'intégrité du code avec des constantes mathématiques et cryptographiques rigoureusement vérifiées, renforçant sûreté mémoire et concurrence.",
-  "subtitle": "Constantes mathématiques et cryptographiques éprouvées pour une sécurité Rust à sûreté mémoire",
-  "date": "November 05, 2023",
-  "locale": "fr_FR",
   "banner_alt": "Calcul mathématique",
-  "language": "fr",
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp"
+  "title": "Constantes mathématiques et cryptographiques pour la sécurité Rust",
+  "description": "Protégez l'intégrité du code avec des constantes mathématiques et cryptographiques rigoureusement vérifiées, renforçant sûreté mémoire et concurrence.",
+  "keywords": "constantes mathématiques, constantes cryptographiques, sécurité Rust, communication sécurisée, chiffrement, RSA, cryptographie sur courbe elliptique, bibliothèque Common (CMN), applications Rust, calculs mathématiques",
+  "subtitle": "Constantes mathématiques et cryptographiques éprouvées pour une sécurité Rust à sûreté mémoire",
+  "locale": "fr_FR",
+  "date": "November 05, 2023",
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
+  "language": "fr"
 }

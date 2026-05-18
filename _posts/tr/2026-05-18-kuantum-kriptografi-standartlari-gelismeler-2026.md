@@ -5,7 +5,7 @@ description: "2026'da kuantum kriptografi artık kuantum bilgisayarların yakın
 date: "May 18, 2026"
 language: "tr-TR"
 locale: "tr_TR"
-banner: "https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp"
+banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "2026 için kuantum güvenli kriptografi geçiş haritası: NIST PQC standartları, hibrit protokol çalışmaları, QKD güvencesi, kripto çevikliği ve banka veri risk kademeleri"
 keywords: "kuantum kriptografi 2026, postkuantum kriptografi, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hibrit anahtar değişimi, QKD, ETSI QKD, ISO IEC 23837, kripto çevikliği, harvest now decrypt later, HNDL, finansal hizmetler kriptografisi, banka güvenliği"
 ---

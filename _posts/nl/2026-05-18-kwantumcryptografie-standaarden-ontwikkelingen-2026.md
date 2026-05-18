@@ -5,7 +5,7 @@ description: "Kwantumcryptografie in 2026 is niet langer een debat over de vraag
 date: "May 18, 2026"
 language: "nl-NL"
 locale: "nl_NL"
-banner: "https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp"
+banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "Migratiekaart voor kwantumveilige cryptografie voor 2026 — NIST PQC-standaarden, werk aan hybride protocollen, QKD-assurance, crypto-agility en risiconiveaus voor bankgegevens"
 keywords: "kwantumcryptografie 2026, post-kwantumcryptografie, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybride sleuteluitwisseling, QKD, ETSI QKD, ISO IEC 23837, crypto-agility, harvest now decrypt later, HNDL, cryptografie voor financiële dienstverlening, bankbeveiliging"
 tags: "kwantumcryptografie, post-kwantumcryptografie, PQC, NIST, FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC, IETF, TLS, IPsec, QKD, ETSI, crypto-agility, HNDL, bankbeveiliging"

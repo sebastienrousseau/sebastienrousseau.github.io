@@ -5,7 +5,7 @@ description: "Cryptography quantum ní 2026 kì í ṣe àríyànjiyàn mọ́ n
 date: "May 18, 2026"
 language: "yo-NG"
 locale: "yo_NG"
-banner: "https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp"
+banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "Àwòrán ìṣípò cryptography ààbò-quantum fún 2026 tí ó fi àwọn ìlànà NIST PQC, iṣẹ́ ìlànà àpapọ̀, ìdánilójú QKD, ìrọ̀rùn-crypto, àti àwọn ìpele ewu dátà báńkì hàn"
 keywords: "cryptography quantum 2026, cryptography post-quantum, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, ìpààrọ̀ kọ́kọ́rọ́ àpapọ̀, QKD, ETSI QKD, ISO IEC 23837, ìrọ̀rùn-crypto, harvest now decrypt later, HNDL, cryptography iṣẹ́ ìṣúná, ààbò báńkì"
 ---

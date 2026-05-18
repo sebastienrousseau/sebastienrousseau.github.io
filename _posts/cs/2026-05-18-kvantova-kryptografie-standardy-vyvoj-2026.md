@@ -5,7 +5,7 @@ description: "Kvantová kryptografie v roce 2026 už není debatou o tom, zda js
 date: "May 18, 2026"
 language: "cs-CZ"
 locale: "cs_CZ"
-banner: "https://cloudcdn.pro/stock/images/quantum-cryptography-2026-banner.webp"
+banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "Mapa migrace na kvantově odolnou kryptografii pro rok 2026 zobrazující standardy NIST PQC, hybridní protokolovou práci, ujištění QKD, kryptografickou agilitu a úrovně rizika bankovních dat"
 keywords: "kvantová kryptografie 2026, postkvantová kryptografie, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybridní výměna klíčů, QKD, ETSI QKD, ISO IEC 23837, kryptografická agilita, harvest now decrypt later, HNDL, kryptografie finančních služeb, bankovní bezpečnost"
 ---
