@@ -2,7 +2,7 @@
 
 # Architecture
 
-End-to-end map of the build pipeline. Read this if you want to understand how a Markdown source ends up as a 1849-page CDN-served static site in 28 languages with strict CSP, real SRI, and complete Schema.org structured data.
+End-to-end map of the build pipeline. Read this if you want to understand how a Markdown source ends up as a 1850-page CDN-served static site in 28 languages with strict CSP, real SRI, and complete Schema.org structured data.
 
 ## Contents
 
@@ -44,10 +44,11 @@ flowchart TB
  end
 
  subgraph Output["Output"]
- P[public/<br/>1849 pages]
+ P[public/<br/>1850 pages]
  DC[docs/<br/>GH Pages root]
  CF[Cloudflare CDN<br/>PQC TLS]
- WORK[Worker: lang-router<br/>Accept-Language redirect]
+ WORK[Worker: lang-router<br/>cookie/?lang routing<br/>+ edge security headers]
+ LABS[_wasm-demos → /labs/<crate>/<br/>Rust → WASM, strict CSP]
  end
 
  Source --> SSG
@@ -245,18 +246,59 @@ flowchart LR
  REQ[Browser request] --> CF
  subgraph CF["Cloudflare edge"]
  PQ[PQC TLS<br/>X25519MLKEM768]
- WORK[lang-router Worker<br/>~50ms]
- TR[Transform Rules<br/>HSTS, X-Frame, COOP, CORP]
+ WORK[lang-router Worker<br/>routing + security headers<br/>~50ms]
  CACHE[CDN cache]
  end
  CF --> PAGES[GitHub Pages<br/>docs/]
  PAGES --> CACHE
 ```
 
-Three configurable surfaces, all documented in [`DEPLOY.md`](../DEPLOY.md):
+Two configurable surfaces:
 
-1. **PQC TLS toggle** — Cloudflare dashboard SSL/TLS → Edge Certificates → enable "Post-quantum hybrid TLS".
-2. **Transform Rules** — sets HSTS, COOP, CORP, X-Frame-Options, Origin-Agent-Cluster (headers that can't be set via meta CSP).
-3. **Worker** — `workers/lang-router.js` redirects `/` to `/<lang>/` based on the visitor's `Accept-Language`.
+1. **PQC TLS toggle** — Cloudflare dashboard SSL/TLS → Edge Certificates → enable "Post-quantum hybrid TLS". The negotiated key-exchange shows as `X25519MLKEM768` in the browser's connection-security panel (NIST FIPS 203).
+2. **Worker** — `workers/lang-router.js` is the **single source of truth** for both locale routing and the strict security-header set. It:
+   - Honours the `pref-lang` cookie (set by the in-page locale switcher) and the `?lang=<code>` deep-link override; redirects to `/<lang>/...` with the cookie attached.
+   - Does **not** sniff Accept-Language — too many bilingual readers were getting bounced off the canonical EN site they actually wanted. Locale routing is now opt-in only.
+   - Sets every security header on every response (redirect or pass-through): strict CSP with `form-action 'self' https://formspree.io` + `frame-ancestors 'none'`, 2-year HSTS with preload, `Permissions-Policy` locking down browsing-topics / interest-cohort / camera / mic / geolocation, `Cross-Origin-Opener-Policy: same-origin`, `Referrer-Policy: strict-origin-when-cross-origin`, `X-Content-Type-Options: nosniff`.
+
+The Worker was previously paired with a Cloudflare-dashboard Transform Rule that injected a competing CSP — that rule was retired once the in-repo Worker became authoritative. Pure-logic, no fetches beyond the origin pass-through, no KV. **43 tests, 100% line / branch / function coverage** enforced by `build.sh`.
 
 Everything else is static — `docs/` on GitHub Pages, fronted by Cloudflare's cache.
+
+---
+
+## WASM labs
+
+Each subdirectory of `_wasm-demos/` is a self-contained Rust crate that compiles to WebAssembly via `wasm-pack` and ships an interactive companion page for one of the user-facing libraries. The first crate (`hsh-demo`) exposes SHA-256, BLAKE3 and Argon2id from a 94 KB bundle, computed entirely client-side under a tight CSP — no server round-trip, no third-party JavaScript, no network beyond the same-origin WASM fetch.
+
+```mermaid
+%%{init: {'theme':'neutral'} }%%
+flowchart LR
+ subgraph Source["Source"]
+ RUST["_wasm-demos/<crate>/<br/>Cargo.toml + src/lib.rs<br/>(wasm-bindgen)"]
+ WEB["_wasm-demos/<crate>/web/<br/>index.html + demo.{js,css}"]
+ end
+
+ subgraph Build["build.sh auto-discovery"]
+ WP["wasm-pack build<br/>--target web --release"]
+ STAGE["copy pkg/*.wasm + *.js<br/>+ web/* to public/labs/<crate>/"]
+ end
+
+ subgraph Output["Served by Cloudflare"]
+ LAB["/labs/<crate>/<br/>index.html, demo.css,<br/>demo.js, <crate>_bg.wasm"]
+ CSP["meta CSP per page:<br/>script-src 'self' 'wasm-unsafe-eval'<br/>style-src 'self'<br/>connect-src 'self'<br/>frame-ancestors 'none'"]
+ end
+
+ RUST --> WP
+ WEB --> STAGE
+ WP --> STAGE
+ STAGE --> LAB
+ LAB --> CSP
+```
+
+**CI integration:** `ci.yml`, `schema-diff.yml` and `pages-deploy.yml` install `wasm-pack` + the `wasm32-unknown-unknown` Rust target. `build.sh` walks `_wasm-demos/*/`, runs `wasm-pack build --target web --release` per crate, then stages the bundle plus the `web/` shell into `public/labs/<crate>/`. The lab page is then a first-class citizen of the postbuild pipeline (gets `og:url`, hreflang neutrality, JSON-LD hash injection if applicable).
+
+**CSP discipline:** `'wasm-unsafe-eval'` is the only loosening — distinct from `'unsafe-eval'`, so the strict-shape CSP gate (`scripts/test_csp_strict.py`) passes unchanged. Lab pages are `<meta name="robots" content="noindex,nofollow">` and excluded from the sitemap-completeness gate via the `/labs/` prefix in `_EXCLUDE_PREFIXES`.
+
+**Reusing the pattern:** drop a new crate at `_wasm-demos/<name>/{Cargo.toml, src/lib.rs, web/{index.html, demo.js, demo.css}}` and the next build will publish `/labs/<name>/` automatically. See `_wasm-demos/README.md` for the copy-paste recipe.
+

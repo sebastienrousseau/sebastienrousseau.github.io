@@ -31,7 +31,7 @@ flowchart TB
         L1["ruff"] --> L2["radon"] --> L3["pytest + 100% coverage"]
         L3 --> L4["build.sh + 14 in-repo gates"]
         L4 --> L5["validate_jsonld"]
-        L5 --> L6["pa11y AAA — 1849 pages"]
+        L5 --> L6["pa11y AAA — 1850 pages"]
         L6 --> L7["Lighthouse nested"]
     end
 
@@ -158,7 +158,11 @@ Per-page Schema.org required-property check + XML feed shape (no `localhost`/`.m
 
 ### `pa11y-ci`
 
-WCAG 2.2 AAA accessibility audit across every rendered page (1849 in current state). Hide-elements filter excludes Spotify iframes (intermittent "context destroyed" race) and reCAPTCHA iframes (upstream missing title).
+WCAG 2.2 AAA accessibility audit. The URL-collection step in `.github/workflows/ci.yml` walks every rendered `public/**/index.html` and **drops pages whose HTML contains both an `<iframe>` and a Spotify host** (`open.spotify.com` or `scdn.co`) before pa11y ever sees them. Pa11y's `hideElements` mitigation ran *after* page load — by then Spotify's iframe had already fired the navigation event that raises Puppeteer's `Execution context was destroyed, most likely because of a navigation`. Filtering at config-build time is the only reliable fix; the embedded player's accessibility is the upstream's responsibility, the surrounding chrome is already covered by the other ~1849 pages.
+
+What pa11y still runs on every kept page:
+- WCAG 2.2 AAA standard, 20s timeout per page, Chrome `--no-sandbox` (required in GHA containers).
+- `hideElements` strips the SSG search widget (`<link>` in body), reCAPTCHA iframes (upstream missing `title`), and any other in-form iframe before evaluation.
 
 ### `Lighthouse CI` (nested in build-audit)
 
@@ -261,13 +265,13 @@ Approximate gate runtimes on GitHub-hosted runners:
 | pytest + coverage | ~3s |
 | `build.sh` (incl. 14 in-repo gates) | ~15s |
 | `validate_jsonld` | ~3s |
-| pa11y AAA × 1849 pages | **35-45 min** |
+| pa11y AAA × 1850 pages | **35-45 min** |
 | Lighthouse CI nested (7 URLs × 3 runs) | 7-15 min |
 | Lighthouse CI standalone weekly | 15-20 min |
 | pages-deploy | 1-2 min |
 | schema-diff (build PR base + HEAD) | 5-7 min |
 
-**pa11y is the long pole.** A full sweep over 1849 pages takes 35-45 minutes. There's no shortcut — every page must be rendered and probed for WCAG violations. For tight iteration loops, run pa11y locally against a subset:
+**pa11y is the long pole.** A full sweep over 1850 pages takes 35-45 minutes. There's no shortcut — every page must be rendered and probed for WCAG violations. For tight iteration loops, run pa11y locally against a subset:
 
 ```bash
 echo "http://127.0.0.1:8000/2026-05-16-best-cloud-infrastructure-architecture-2026/" > pa11y-subset.txt

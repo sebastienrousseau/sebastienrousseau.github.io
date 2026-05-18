@@ -1,11 +1,11 @@
 {
   "date": "January 23, 2024",
   "title": "Vooruitgang in AI-prompt-engineering",
-  "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp",
-  "subtitle": "Hoe systematisch prompt-ontwerp de uitkomst van grote taalmodellen stuurt",
   "keywords": "Prompt engineering, AI, LLM, GPT, chain-of-thought, few-shot, best practices",
-  "language": "nl-NL",
   "banner_alt": "Visualisatie van prompt-engineering voor grote taalmodellen",
+  "language": "nl-NL",
+  "subtitle": "Hoe systematisch prompt-ontwerp de uitkomst van grote taalmodellen stuurt",
+  "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp",
   "locale": "nl_NL",
   "description": "Vooruitgang in AI-prompt-engineering — een verkenning van patronen, technieken en best practices voor het sturen van LLM-uitkomsten."
 }

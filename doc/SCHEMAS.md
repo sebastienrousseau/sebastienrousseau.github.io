@@ -49,17 +49,17 @@ graph TB
 
 | Type | Pages emitted | Source |
 |---|---:|---|
-| `Person` | 1849 | [`scripts/build_agent_api.py`](../scripts/build_agent_api.py) + per-page JSON-LD |
+| `Person` | 1850 | [`scripts/build_agent_api.py`](../scripts/build_agent_api.py) + per-page JSON-LD |
 | `BlogPosting` | 1232 | Per-article frontmatter via Static Site Generator |
 | `TechArticle` | 613 | [`scripts/postbuild_lib/schemas.py:inject_tech_article`](../scripts/postbuild_lib/schemas.py) |
 | `SoftwareSourceCode` | 26 | [`scripts/postbuild_lib/schemas.py:inject_software_source_code`](../scripts/postbuild_lib/schemas.py) |
 | `HowTo` | 16 | [`scripts/postbuild_lib/seo.py:inject_howto`](../scripts/postbuild_lib/seo.py) |
 | `ItemList` | 3 | [`scripts/postbuild.py:inject_itemlist`](../scripts/postbuild.py) |
-| `BreadcrumbList` | 1849 | Per-page Static Site Generator emission |
+| `BreadcrumbList` | 1850 | Per-page Static Site Generator emission |
 | `FAQPage` | 2 | Per-page Static Site Generator emission |
 | `ProfilePage` | 1 | `/about/` frontmatter |
-| `Organization` | 1849 | Author Person.worksFor chain |
-| `ProgramMembership` | 1849 | Author Person.memberOf |
+| `Organization` | 1850 | Author Person.worksFor chain |
+| `ProgramMembership` | 1850 | Author Person.memberOf |
 
 (Counts are typical clean-build values; will scale with the 28-language matrix.)
 
