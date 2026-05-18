@@ -6,14 +6,55 @@
     <description>Artiklar på svenska: tillämpad AI, ISO 20022-betalningar, postkvantkryptografi och transformationen av grossistbetalningar.</description>
     <atom:link href="https://sebastienrousseau.com/sv/rss.xml" rel="self" type="application/rss+xml"/>
     <language>sv-SE</language>
-    <lastBuildDate>Sun, 17 May 2026 09:16:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 06:28:51 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna.</copyright>
     <item>
+      <title>Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-17-agentisk-ingenjorskonst-banker-blueprint-2026/</link>
+      <description>La IA agéntica ha pasado del piloto a la producción en la banca mundial. El 70 % de las instituciones la utiliza en mayor o menor grado; solo una de cada cinco tiene un modelo de gobernanza maduro. Los adversarios autónomos operan a velocidad de máquina, el estate heredado COBOL con el que los nuevos sistemas deben interoperar fue escrito para las hipótesis batch de los años 1960, y el plazo «alto riesgo» del Reglamento europeo de IA está a doce semanas. He aquí la posición de ingeniería y gobernanza que un banco debe sostener.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-17-agentisk-ingenjorskonst-banker-blueprint-2026/</guid>
+      <pubDate>Sun, 17 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
+      <category>ingeniería agéntica</category>
+      <category>desarrollo guiado por especificación</category>
+      <category>bancos</category>
+      <category>servicios financieros</category>
+      <category>gobernanza IA</category>
+      <category>Reglamento europeo de IA</category>
+      <category>DORA</category>
+      <category>SR 11-7</category>
+      <category>NIST AI RMF</category>
+      <category>ISO 42001</category>
+      <category>modernización COBOL</category>
+      <category>mainframe</category>
+      <category>vibe coding</category>
+      <category>vibe hacking</category>
+      <category>agentes autónomos</category>
+      <category>Claude Code</category>
+      <category>GitHub Spec Kit</category>
+      <category>AI Bill of Materials</category>
+      <category>AIBOM</category>
+      <category>human in the loop</category>
+      <category>HITL</category>
+      <category>human on the loop</category>
+      <category>HOTL</category>
+      <category>gestión de riesgos de terceros</category>
+      <category>TPRM</category>
+      <category>riesgo proveedor</category>
+      <category>criptografía postcuántica</category>
+      <category>plano de control de agentes</category>
+      <category>FCA</category>
+      <category>SM&amp;CR</category>
+      <category>plan de acción 12 semanas</category>
+      <category>Sebastien Rousseau</category>
+    </item>
+    <item>
       <title>Den bästa molninfrastrukturarkitekturen 2026: En AI-nativ, multi-cloud, kvantmedveten ritning för finansiella tjänster</title>
-      <link>https://sebastienrousseau.com/sv/2026-05-21-basta-molnarkitektur-for-banker-2026/</link>
+      <link>https://sebastienrousseau.com/sv/2026-05-16-basta-molnarkitektur-for-banker-2026/</link>
       <description>Molnarkitektur 2026 har kristalliserats kring sex pelare: AI-nativ infrastruktur, intelligent multi-cloud, serverlös-först-design med WebAssembly vid edge, edge computing, automatiserad säkerhet med kryptoagilitet och hållbar drift med hög densitet. För banker är frågan om man ska konsumera molnet eller designa det — under konvergerande tryck från agentisk handel, agentisk enhetsekonomi, harvest-now-decrypt-later-kvantrisk, MCP-säkerhet och algoritmisk kontaminering, kryptografisk agentidentitet, krav på kontinuerlig treasury och EU:s AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-21-basta-molnarkitektur-for-banker-2026/</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-16-basta-molnarkitektur-for-banker-2026/</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>molnarkitektur 2026</category>
@@ -106,47 +147,6 @@
       <category>Cloudflare Workers</category>
       <category>Durable Objects</category>
       <category>WCAG-AA</category>
-      <category>Sebastien Rousseau</category>
-    </item>
-    <item>
-      <title>Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán</title>
-      <link>https://sebastienrousseau.com/sv/2026-05-18-agentisk-ingenjorskonst-banker-blueprint-2026/</link>
-      <description>La IA agéntica ha pasado del piloto a la producción en la banca mundial. El 70 % de las instituciones la utiliza en mayor o menor grado; solo una de cada cinco tiene un modelo de gobernanza maduro. Los adversarios autónomos operan a velocidad de máquina, el estate heredado COBOL con el que los nuevos sistemas deben interoperar fue escrito para las hipótesis batch de los años 1960, y el plazo «alto riesgo» del Reglamento europeo de IA está a doce semanas. He aquí la posición de ingeniería y gobernanza que un banco debe sostener.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-18-agentisk-ingenjorskonst-banker-blueprint-2026/</guid>
-      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
-      <category>ingeniería agéntica</category>
-      <category>desarrollo guiado por especificación</category>
-      <category>bancos</category>
-      <category>servicios financieros</category>
-      <category>gobernanza IA</category>
-      <category>Reglamento europeo de IA</category>
-      <category>DORA</category>
-      <category>SR 11-7</category>
-      <category>NIST AI RMF</category>
-      <category>ISO 42001</category>
-      <category>modernización COBOL</category>
-      <category>mainframe</category>
-      <category>vibe coding</category>
-      <category>vibe hacking</category>
-      <category>agentes autónomos</category>
-      <category>Claude Code</category>
-      <category>GitHub Spec Kit</category>
-      <category>AI Bill of Materials</category>
-      <category>AIBOM</category>
-      <category>human in the loop</category>
-      <category>HITL</category>
-      <category>human on the loop</category>
-      <category>HOTL</category>
-      <category>gestión de riesgos de terceros</category>
-      <category>TPRM</category>
-      <category>riesgo proveedor</category>
-      <category>criptografía postcuántica</category>
-      <category>plano de control de agentes</category>
-      <category>FCA</category>
-      <category>SM&amp;CR</category>
-      <category>plan de acción 12 semanas</category>
       <category>Sebastien Rousseau</category>
     </item>
     <item>

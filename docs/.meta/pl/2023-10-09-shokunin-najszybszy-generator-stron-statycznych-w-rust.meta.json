@@ -1,11 +1,11 @@
 {
+  "locale": "pl_PL",
   "language": "pl-PL",
-  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
-  "date": "Oct 09, 2023",
+  "description": "Shokunin to generator stron statycznych w Rust zaprojektowany dla wydajności, dostępności i SEO, z natywnym wsparciem JSON-LD.",
+  "title": "Shokunin: najszybszy generator stron statycznych w Rust",
   "banner_alt": "Logo Shokunin z motywem Rust w tle",
   "subtitle": "Generator stron statycznych zoptymalizowany pod kątem wydajności, dostępności i SEO",
-  "locale": "pl_PL",
-  "title": "Shokunin: najszybszy generator stron statycznych w Rust",
-  "keywords": "Shokunin, generator stron statycznych, Rust, SSG, wydajność, SEO, dostępność, JSON-LD",
-  "description": "Shokunin to generator stron statycznych w Rust zaprojektowany dla wydajności, dostępności i SEO, z natywnym wsparciem JSON-LD."
+  "date": "Oct 09, 2023",
+  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
+  "keywords": "Shokunin, generator stron statycznych, Rust, SSG, wydajność, SEO, dostępność, JSON-LD"
 }

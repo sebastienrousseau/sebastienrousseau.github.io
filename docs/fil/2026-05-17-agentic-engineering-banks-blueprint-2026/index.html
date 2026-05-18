@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="fil-PH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sun, 17 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sun, 17 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="انتقل الذكاء الاصطناعي الوكيلي من التجربة إلى الإنتاج في الخدمات المصرفية العالمية. تستخدمه 70% من المؤسسات بدرجاتٍ متفاوتة؛ ولدى واحدةٍ من كلّ خمسٍ نموذج حوكمة ناضج. الخصوم المستقلّون يعملون بسرعة الآلة، والممتلكات القديمة COBOL التي يجب أن تتفاعل معها الأنظمة الجديدة كُتبت لافتراضات الدفعات في الستينيات، وموعد «المخاطر العالية» في EU AI Act على بُعد اثني عشر أسبوعاً. هذا هو الموقف الهندسي والحوكمي الذي يحتاج البنك للحفاظ عليه.">
+<meta name="keywords" content="الهندسة الوكيلية، التطوير المُوجَّه بالمواصفات، البنوك، الخدمات المالية، حوكمة AI، EU AI Act، DORA، SR 11-7، NIST AI RMF، ISO 42001، تحديث COBOL، mainframe، vibe coding، vibe hacking، الوكلاء المستقلّون، Claude Code، GitHub Spec Kit، AI Bill of Materials، AIBOM، human in the loop، HITL، human on the loop، HOTL، إدارة مخاطر الأطراف الثالثة، TPRM، التشفير ما بعد الكمي، مستوى تحكّم الوكلاء، FCA، SM&amp;CR، خطة عمل 12 أسبوعاً، Sebastien Rousseau">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Agentic Engineering for Banks">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-RGXlit3N8CsCaCCYFj88xejOUWx3ViD0sUm0ZGQqv8Y=' 'sha256-fMxfcn2lzwS6rgzAQWyLdbY9Xtkc8XulwASp4aOCqcE=' 'sha256-nJH4OPGkfCUzBSL+CNysx+G1RKX1Dpb27jqvOqO5Ve8=' 'sha256-vc1kBh4K9bWgGTq8ojafOALZJh7xlvox1NChMbLEe+M=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://www.googletagmanager.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/fil/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="/theme-init.js"></script>
+
+    <link rel="stylesheet" href="/_csp/ae8a690863128eb4.css" crossorigin="anonymous" integrity="sha256-Q+UYbzJldWV5kddeR3wuMvIq7PpXdtUZfzbIAI0R8QY=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Feed ng Atom" href="/fil/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه — Sebastien Rousseau">
+<meta property="og:description" content="انتقل الذكاء الاصطناعي الوكيلي من التجربة إلى الإنتاج في الخدمات المصرفية العالمية. تستخدمه 70% من المؤسسات بدرجاتٍ متفاوتة؛ ولدى واحدةٍ من كلّ خمسٍ نموذج حوكمة ناضج. الخصوم المستقلّون يعملون بسرعة الآلة، والممتلكات القديمة COBOL التي يجب أن تتفاعل معها الأنظمة الجديدة كُتبت لافتراضات الدفعات في الستينيات، وموعد «المخاطر العالية» في EU AI Act على بُعد اثني عشر أسبوعاً. هذا هو الموقف الهندسي والحوكمي الذي يحتاج البنك للحفاظ عليه.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/fil/2026-05-17-agentic-engineering-banks-blueprint-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="fil_PH">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه — Sebastien Rousseau">
+<meta name="twitter:description" content="انتقل الذكاء الاصطناعي الوكيلي من التجربة إلى الإنتاج في الخدمات المصرفية العالمية. تستخدمه 70% من المؤسسات بدرجاتٍ متفاوتة؛ ولدى واحدةٍ من كلّ خمسٍ نموذج حوكمة ناضج. الخصوم المستقلّون يعملون بسرعة الآلة، والممتلكات القديمة COBOL التي يجب أن تتفاعل معها الأنظمة الجديدة كُتبت لافتراضات الدفعات في الستينيات، وموعد «المخاطر العالية» في EU AI Act على بُعد اثني عشر أسبوعاً. هذا هو الموقف الهندسي والحوكمي الذي يحتاج البنك للحفاظ عليه.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/fil/2026-05-17-agentic-engineering-banks-blueprint-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-17-ingenierie-agentique-banques-blueprint-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-17-agentic-engineering-banks-blueprint-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-17-agentni-inzenyrstvi-banky-blueprint-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-17-agentische-engineering-banken-blueprint-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-17-ingenieria-agentica-bancos-blueprint-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-17-agentic-engineering-banks-blueprint-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-17-agentic-engineering-banks-blueprint-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-17-agentic-engineering-banks-blueprint-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-17-agentic-engineering-banks-blueprint-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-17-rekayasa-agentik-bank-cetak-biru-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-17-ingegneria-agentica-banche-blueprint-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-17-eejentikku-enjiniaringu-ginkou-no-2026-sekkeizu/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-17-eijenteuk-enjineoring-eunhaeng-2026-seolgyedo/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-17-agentic-engineering-banken-blauwdruk-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-17-inzynieria-agentowa-blueprint-bankow-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-17-engenharia-agentica-bancos-blueprint-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-17-agentic-engineering-banks-blueprint-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-17-agentnaya-inzheneriya-plan-dlya-bankov-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-17-agentisk-ingenjorskonst-banker-blueprint-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-17-witsawakam-agentic-thanakhan-phaen-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-17-ajan-tabanli-muhendislik-bankalar-icin-2026-plani/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-17-ahentyna-inzheneriya-banky-blueprint-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-17-ky-thuat-agentic-ban-thiet-ke-ngan-hang-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-17-agentic-engineering-banks-blueprint-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-17-ai-dailixing-gongcheng-yinhang-2026-lantu/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-17-ai-dailixing-gongcheng-yinhang-2026-lantu-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Lumaktaw sa pangunahing nilalaman</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="I-toggle ang nabigasyon" />
+      <div class="wrap">
+        <a class="ap-brand" href="/fil/index.html" aria-label="Home ni Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Pangunahing nabigasyon">
+          <ul class="ap-menu">
+            <li><a href="/fil/tungkol-sa-akin/index.html">Tungkol</a></li>
+            <li><a href="/fil/mga-artikulo/index.html" aria-current="page" class="active">Mga artikulo</a></li>
+            <li><a href="/fil/mga-publikasyon/index.html">Mga publikasyon</a></li>
+            <li><a href="/fil/mga-paksa/index.html">Mga paksa</a></li>
+            <li><a href="/fil/mga-proyekto/index.html">Mga proyekto</a></li>
+            <li><a href="/fil/mga-playlist/index.html">Mga playlist</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Lumipat sa dark mode" aria-pressed="false" title="Ibahin ang tema">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Maghanap (Cmd o Ctrl + K)" title="Maghanap (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Wika">
+            <button type="button" class="ap-lang-toggle" aria-label="FIL, Baguhin ang wika" aria-expanded="false" aria-haspopup="menu" title="Baguhin ang wika">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">FIL</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/fil/makipag-ugnayan/index.html" aria-label="Makipag-ugnayan">Makipag-ugnayan ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="I-toggle ang nabigasyon">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه</h1>
+      <p class="sub">انتقل الذكاء الاصطناعي الوكيلي من التجربة إلى الإنتاج. تستخدمه 70% من البنوك بالفعل؛ ولديها واحدةٌ من كلّ خمسٍ نموذج حوكمة ناضج. والخصوم يعملون بسرعة الآلة، والممتلكات القديمة كُتبت لافتراضات الدفعات في الستينيات، وموعد «المخاطر العالية» في EU AI Act على بُعد اثني عشر أسبوعاً.</p>
+    <nav class="article-tags" aria-label="Mga paksa"><a href="/tags/index.html#h3-ai-eu-ai-act-dora-sr-11-7-nist-ai-rmf-iso-42001-cobol-mainframe-vibe-coding-vibe" class="article-tag" rel="tag">الهندسة الوكيلية، التطوير المُوجَّه بالمواصفات، البنوك، الخدمات المالية، حوكمة AI، EU AI Act، DORA، SR 11-7، NIST AI RMF، ISO 42001، تحديث COBOL، mainframe، vibe coding، vibe hacking، الوكلاء المستقلّون، Claude Code، GitHub Spec Kit، AI Bill of Materials، AIBOM، human in the loop، HITL، human on the loop، HOTL، إدارة مخاطر الأطراف الثالثة، TPRM، التشفير ما بعد الكمي، مستوى تحكّم الوكلاء، FCA، SM&CR، خطة عمل 12 أسبوعاً، Sebastien Rousseau</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-17T06:06:06+00:00" class="meta-pub">Inilathala noong 17 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Tinatayang oras ng pagbasa">21 min basahin</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Mga nilalaman</h2><ol><li><a href="#2026">الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه</a></li><li><a href="#section-2">العام الذي أصبحت فيه الهندسة الوكيلية لا مفرّ منها</a></li><li><a href="#section-3">حالة التبنّي في الخدمات المصرفية</a></li><li><a href="#section-4">ثلاثة متّجهات مخاطر يجب على البنوك استيعابها</a></li><li><a href="#vibe-coding">لماذا لا يمكن أن يكون vibe coding الافتراضي في الخدمات المصرفية</a></li><li><a href="#section-9">التطوير المُوجَّه بالمواصفات في ممتلكاتٍ منظَّمة</a></li><li><a href="#section-10">الكومة التنظيمية المُطبَّقة الآن</a></li><li><a href="#ai">ثلاثة أنماط من التطوير المُساعَد بـ AI مُقارَنة</a></li><li><a href="#section-12">بناء البنك الوكيلي: نظرة معمارية</a></li><li><a href="#hitl-hotl">الإشراف البشري عملياً: HITL مقابل HOTL</a></li><li><a href="#section-14">الشراء مقابل البناء: مشكلة الوكلاء من الأطراف الثالثة</a></li><li><a href="#section-15">ماذا يعني ذلك بحسب نوع البنك</a></li><li><a href="#12-2026">خطة العمل لمدّة 12 أسبوعاً حتى أغسطس 2026</a></li><li><a href="#section-21">الخاتمة</a></li><li><a href="#section-22">الأسئلة الشائعة</a></li><li><a href="#section-23">المراجع</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> انتقل الذكاء الاصطناعي الوكيلي من التجربة إلى الإنتاج في الخدمات المصرفية العالمية. تستخدمه 70% من المؤسسات بدرجاتٍ متفاوتة؛ ولدى واحدةٍ من كلّ خمسٍ نموذج حوكمة ناضج. الخصوم المستقلّون يعملون بسرعة الآلة، والممتلكات القديمة COBOL التي يجب أن تتفاعل معها الأنظمة الجديدة كُتبت لافتراضات الدفعات في الستينيات، وموعد «المخاطر العالية» في EU AI Act على بُعد اثني عشر أسبوعاً. هذا هو الموقف الهندسي والحوكمي الذي يحتاج البنك للحفاظ عليه.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه.</strong> انتقل الذكاء الاصطناعي الوكيلي من التجربة إلى الإنتاج في الخدمات المصرفية العالمية.</li>  <li><strong>العام الذي أصبحت فيه الهندسة الوكيلية لا مفرّ منها.</strong> سيطر على حوار الذكاء الاصطناعي في الخدمات المالية، حتى وقتٍ قريب جداً، أمران متجاوران لكن متمايزان: واجهات الدردشة التوليدية (مفيدة لكن محدودة)، وأنماط Retrieval-Augmented Generation المُرتبة فوق بيانات المؤسسة…</li>  <li><strong>حالة التبنّي في الخدمات المصرفية.</strong> الصورة الإجمالية لا لبس فيها.</li>  <li><strong>ثلاثة متّجهات مخاطر يجب على البنوك استيعابها.</strong> قبل أيّ حوارٍ معماري، ينبغي أن يستقرّ اهتمام مجلس الإدارة على ثلاثة مخاطر خاصّة بالأنظمة الوكيلية وتصل أبكر ممّا خطّطت له معظم البنوك.</li></ul></aside><h2 id="2026">الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه <a class="heading-anchor" href="#2026" aria-label="Link patungo sa الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه">#</a></h2>
+<p>انتقل الذكاء الاصطناعي الوكيلي من التجربة إلى الإنتاج في الخدمات المصرفية العالمية. تستخدمه 70% من المؤسسات بدرجاتٍ متفاوتة؛ ولدى واحدةٍ من كلّ خمسٍ نموذج حوكمة ناضج. في الوقت نفسه، يعمل الخصوم المستقلّون بسرعة الآلة، والممتلكات القديمة COBOL التي يجب أن تتفاعل معها الأنظمة الجديدة كُتبت لافتراضات الدفعات في الستينيات، وموعد «المخاطر العالية» في EU AI Act على بُعد اثني عشر أسبوعاً. هذا هو الموقف الهندسي والحوكمي الذي يحتاج البنك للحفاظ عليه.</p>
+<hr />
+<blockquote>
+<p><strong>Mga Pangunahing Punto</strong></p>
+<ul>
+<li>التحوّل من <strong>vibe coding إلى التطوير المُوجَّه بالمواصفات</strong> لم يعد طموحياً. اعترف Andrej Karpathy، الذي صاغ &quot;vibe coding&quot; في فبراير 2025، <a href="https://towardsdatascience.com/from-vibe-coding-to-spec-driven-development/" title="From Vibe Coding to Spec-Driven Development">بعد عامٍ ⧉</a> بانتهاء هذه الحقبة وأن الافتراضي الجديد للمحترفين هو <strong>الهندسة الوكيلية</strong> — تنسيق الوكلاء مقابل مواصفاتٍ مفصّلة بإشرافٍ بشري.</li>
+<li>تبنّي البنوك حقيقي ومتسارع. <a href="https://theuxda.com/blog/agentic-ai-banking-risk-next-financial-crisis-wont-be-human" title="Could Agentic AI Banking Threaten Global Financial Services">70% من شركات الخدمات المصرفية ⧉</a> تُبلّغ عن استخدام الذكاء الاصطناعي الوكيلي بدرجاتٍ متفاوتة (16% في الإنتاج، 52% في التجربة، EY 2026)؛ 44% من فرق التمويل ستستخدمه هذا العام — زيادة 600%+ سنوياً وفق Wolters Kluwer.</li>
+<li><strong>الحوكمة لم تواكب الوتيرة.</strong> يجد Deloitte State of AI 2026 أن واحدةً من كلّ خمس شركاتٍ فقط لديها نموذج حوكمة ناضج لوكلاء AI المستقلّين. يُحدّد تحليل Deloitte لقاعدة بيانات مخاطر MIT AI <a href="https://www.deloitte.com/us/en/insights/industry/financial-services/agentic-ai-risks-banking.html" title="Managing the new wave of risks from AI agents in banking">أكثر من 350 خطراً ⧉</a> يمكن أن ينشأ من السلوك المستقلّ أو الوكيلي.</li>
+<li><strong>مشهد التهديد تصنّع.</strong> كشفت Anthropic في نوفمبر 2025 أن مجموعةً مدعومة من الدولة الصينية GTG-1002 اختطفت Claude Code لتشغيل تجسّسٍ مستقلّ ضدّ نحو 30 هدفاً، مع تعامل AI مع <strong>80-90% من العمليات التكتيكية باستقلالية</strong>. لاحظ Flashpoint ارتفاع نقاشات <a href="https://www.hstoday.us/subject-matter-areas/cybersecurity/2026-global-threat-intelligence-report-highlights-rise-in-agentic-ai-cybercrime/" title="2026 Global Threat Intelligence Report">AI غير المشروعة بنسبة <strong>1500%</strong> ⧉</a> بين نوفمبر وديسمبر 2025 وحدهما.</li>
+<li><strong>الممتلكات القديمة هي القيد الصامت.</strong> تستهلك ميزانيات IT للخدمات المالية 70-75% بالصيانة القديمة، 63% من البنوك لا تزال تعتمد على كودٍ كُتب قبل 2000، ومعظم البنوك تُبلّغ عن وجود شخصٍ أو شخصَين فقط داخلياً يستطيعون صيانة COBOL الذي تعمل عليه منصّاتها الأساسية. الذكاء الاصطناعي الوكيلي هو الآن النهج المهيمن لإغلاق تلك الفجوة.</li>
+<li><strong>الكومة التنظيمية تتقارب.</strong> بموجب EU AI Act، يُحفّز <strong>2 أغسطس 2026</strong> الإنفاذ الكامل لأنظمة AI عالية المخاطر (يشمل Annex III صراحةً تقييم الائتمان وتقييم الجدارة الائتمانية). DORA نافذة بالفعل. SR 11-7 جرى تمديده في الممارسة التنظيمية ليُغطّي LLMs والأنظمة الوكيلية. والغرامات على الانتهاك تصل إلى <strong>35 مليون يورو أو 7% من حجم الأعمال العالمي السنوي</strong>.</li>
+<li><strong>الإشراف البشري ليس مفهوماً واحداً.</strong> التمييز بين <strong>HITL</strong> (Human-in-the-Loop، حيث لا يمكن للوكيل التنفيذ دون موافقةٍ بشرية صريحة) و <strong>HOTL</strong> (Human-on-the-Loop، حيث ينفّذ الوكيل باستقلالية تحت مراقبةٍ بشرية) هو الإطار العامل الآن للامتثال لـ EU AI Act Article 14، ويحتاج كلّ وكيل عالي المخاطر إلى موقفٍ صريح بشأن النموذج المُطبَّق.</li>
+<li><strong>معظم الوكلاء سيُشترَون لا يُبنَون.</strong> إدارة مخاطر الأطراف الثالثة بموجب DORA هي التحدّي الأقلّ اعترافاً به والأكثر صوتاً في 2026. سيُورِّد البائعون معظم القدرة الوكيلية التي تنشرها البنوك؛ يبقى الالتزام التنظيمي مع البنك، ومعظم عقود البائعين الحالية لا يمكنها تلبية متطلبات وثائق Article 13.</li>
+<li><strong>الهندسة الوكيلية ليست &quot;ChatGPT زائد MCP servers&quot;.</strong> هي موقف ملكيةٍ هيكلية على التدفّقات من طرفٍ إلى آخر للمؤسسة — رحلات العملاء، ودورات حياة المعاملات، ومستوى التحكّم، وركيزة التدقيق، والأساس التشفيري الآمن للكم — مبني ومُشغَّل من قِبَل وظيفة الهندسة للمؤسسة نفسها، لا مُفوَّض إلى chatbot.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="section-2">العام الذي أصبحت فيه الهندسة الوكيلية لا مفرّ منها <a class="heading-anchor" href="#section-2" aria-label="Link patungo sa العام الذي أصبحت فيه الهندسة الوكيلية لا مفرّ منها">#</a></h2>
+<p>سيطر على حوار الذكاء الاصطناعي في الخدمات المالية، حتى وقتٍ قريب جداً، أمران متجاوران لكن متمايزان: واجهات الدردشة التوليدية (مفيدة لكن محدودة)، وأنماط Retrieval-Augmented Generation المُرتبة فوق بيانات المؤسسة (مفيدة، محدودة أيضاً). ما تغيّر بين أواخر 2025 ومطلع 2026 هو أن الفئة الثالثة — الوكلاء المستقلّون الذين يُخطّطون وينفّذون ويُكملون سير عملٍ متعدّد الخطوات بإشرافٍ بشري محدود — انتقلوا من العرض التقني إلى الواقع التشغيلي، وعبروا آنياً إلى كلٍّ من المؤسسة والجهة الفاعلة في التهديد.</p>
+<p>Andrej Karpathy، الذي <a href="https://towardsdatascience.com/from-vibe-coding-to-spec-driven-development/" title="From Vibe Coding to Spec-Driven Development">صاغ مصطلح &quot;vibe coding&quot; في فبراير 2025 ⧉</a>، أمضى العام التالي يُراقب المهندسين المحترفين يتجاوزونه. مراجعته — <em>&quot;الهندسة الوكيلية&quot;</em> — هي الآن المصطلح العامل عبر الصناعة. جوهر التحوّل مباشر: في العمل الهندسي الجدّي في 2026، لا يكتب المهندسون الكود مباشرةً 99% من الوقت. يُنسّقون الوكلاء الذين يفعلون، فيما يتصرّفون بصفة المُشرف. لم يعد العمل كتابة الحروف في محرّر؛ هو إنتاج المواصفات التي تُقيّد ما يمكن للوكلاء توليده، وتصميم بوّابات التحقّق التي يجب أن تمرّ بها المخرجات، وتنسيق القرارات المعمارية التي ينفّذها الوكلاء.</p>
+<p>يبدو هذا التحوّل حواراً لفريق هندسي. في الخدمات المصرفية ليس كذلك. هو حوار على مستوى مجلس الإدارة، لأن القدرة الوكيلية نفسها التي تُعيد كتابة كيفية إنتاج الكود الداخلي تُعيد أيضاً كتابة كيفية عمل الخصوم الخارجيين، وكيف تتوقّع الجهات التنظيمية ممارسة الإشراف، وكيف يُعرَّف المحيط المؤسسي. البنك الذي لا يمتلك موقفه بشأن الهندسة الوكيلية بحلول نهاية 2026 ليس بنكاً تجنّب السؤال. هو بنكٌ أجاب بائعوه وخصومه وجهاته التنظيمية عن السؤال نيابةً عنه.</p>
+<h2 id="section-3">حالة التبنّي في الخدمات المصرفية <a class="heading-anchor" href="#section-3" aria-label="Link patungo sa حالة التبنّي في الخدمات المصرفية">#</a></h2>
+<p>الصورة الإجمالية لا لبس فيها. وفقاً للأبحاث المُجمَّعة عبر استطلاعاتٍ متعدّدة في 2026، يُبلّغ <a href="https://thefinancialbrand.com/news/artificial-intelligence-banking/autonomous-ai-agents-redefine-banking-growth-196646" title="How Autonomous AI Agents Will Really Redefine Banking Growth">70% من التنفيذيّين في البنوك ⧉</a> عن أن شركاتهم تستخدم بالفعل الذكاء الاصطناعي الوكيلي بدرجاتٍ متفاوتة. تتوقّع <a href="https://www.thenews.com.pk/latest/1385186-why-british-banks-push-for-agentic-ai-is-worrying-uk-regulators" title="Why British banks' push for agentic AI is worrying UK regulators">Gartner ⧉</a> أن بحلول نهاية 2026 ستُشغّل نحو 40% من جميع شركات الخدمات المالية وكلاء AI بشكلٍ ما. الإنفاق على AI للخدمات المالية في طريقه للوصول إلى 67 مليار دولار بحلول 2028 (IDC). يُقدّر McKinsey أن AI الوكيلي يمكن أن يُعيد 10-12 ساعة أسبوعياً لمديري العلاقات في الخدمات المصرفية.</p>
+<p>صورة التنفيذ أقلّ تشجيعاً. يُبلّغ <a href="https://neurons-lab.com/article/agentic-ai-in-financial-services-2026/" title="Agentic AI in Financial Services: A Research Roundup for 2026">KPMG ⧉</a> عن أن 99% من الشركات تُخطّط لوضع الوكلاء المستقلّين في الإنتاج لكن <strong>11% فقط فعلت ذلك</strong>. يجد EY أن 34% من القادة بدأوا استخدام وكلاء AI و 14% فقط نفّذوهم بالكامل. يجد Forrester أن <strong>57% من المنظمات تعتقد أنها تفتقر إلى القدرات الداخلية</strong> للاستفادة من AI الوكيلي. الفجوة بين النيّة والتنفيذ ليست أثراً تسويقياً. هي انعكاسٌ حقيقي للعمل الهندسي والحوكمي والثقافي الذي لم يُنجَز بعد.</p>
+<p><a href="https://www.thenews.com.pk/latest/1385186-why-british-banks-push-for-agentic-ai-is-worrying-uk-regulators" title="Why British banks' push for agentic AI is worrying UK regulators">رفعت Financial Conduct Authority في المملكة المتحدة مخاوف ⧉</a> علناً بشأن سرعة النشر التي تتجاوز نضج الحوكمة — توتّر أطّرته Jessica Rasu، Chief Data Officer لـ FCA، كخطرٍ قريب الأمد لمستهلكي التجزئة. حذّر McKinsey بشكلٍ منفصل من أن <a href="https://www.unboxfuture.com/2026/05/the-autonomous-banker-how-ai-agents.html" title="The Autonomous Banker">البنوك التي تفشل في تكييف نماذج أعمالها ⧉</a> تُخاطر بتآكل حتى <strong>170 مليار دولار من الأرباح العالمية بحلول 2030</strong>. كلتا الملاحظتَين صحيحتان آنياً. السؤال ليس ما إذا كان يجب التحرّك؛ بل كيف يجب التحرّك بالنزاهة التشغيلية والحوكمية التي طلبتها تنظيمات الخدمات المالية دائماً، والتي تجعلها الأنظمة الوكيلية أحدّ.</p>
+<h2 id="section-4">ثلاثة متّجهات مخاطر يجب على البنوك استيعابها <a class="heading-anchor" href="#section-4" aria-label="Link patungo sa ثلاثة متّجهات مخاطر يجب على البنوك استيعابها">#</a></h2>
+<p>قبل أيّ حوارٍ معماري، ينبغي أن يستقرّ اهتمام مجلس الإدارة على ثلاثة مخاطر خاصّة بالأنظمة الوكيلية وتصل أبكر ممّا خطّطت له معظم البنوك.</p>
+<h3 id="1">1. الخصم المستقلّ <a class="heading-anchor" href="#1" aria-label="Link patungo sa 1. الخصم المستقلّ">#</a></h3>
+<p>أكثر تطوّرات 2026 إرباكاً هو تشغيل AI الوكيلي على جانب الهجوم. في أغسطس 2025، كشفت Anthropic عن فئةٍ من النشاط أسمتها <a href="https://www.anthropic.com/news/detecting-countering-misuse-aug-2025" title="Detecting and countering misuse of AI: août 2025"><em>vibe hacking</em> ⧉</a>: مجرمو الإنترنت يستخدمون AI الوكيلي لتنفيذ هجماتٍ متطوّرة على نطاقٍ واسع، مع تضمين AI في الاستطلاع، وجمع بيانات الاعتماد، واختراق الشبكة، وتحليل البيانات المسروقة. في <a href="https://www.anthropic.com/news/disrupting-AI-espionage" title="Disrupting the first reported AI-orchestrated cyber espionage campaign">نوفمبر 2025 ⧉</a>، كشفت Anthropic أنها عطّلت حملةً من قِبَل مجموعةٍ مدعومة من الدولة الصينية (مُصنَّفة <strong>GTG-1002</strong>) اختطفت نُسخ Claude Code لتشغيل تجسّسٍ مستقلّ ضدّ <strong>نحو ثلاثين هدفاً للدفاع والطاقة والتقنية</strong>، مع تعامل AI مع <strong>80-90% من العمليات التكتيكية</strong> والعمل بـ <strong>آلاف الطلبات في الثانية</strong> — سرعاتٌ مستحيلة على المُشغّلين البشريين.</p>
+<p>في يناير 2026، اخترقت Step Finance — مدير محفظة DeFi قائم على Solana — بطريقةٍ حوّلت تطفّلاً على جهاز إلى <strong>خسارة 27-30 مليون دولار</strong> لأن وكلاء التداول AI للشركة كان لديهم أذونات لتنفيذ تحويلاتٍ كبيرة دون موافقةٍ بشرية. هندس المهاجم اجتماعياً AI نفسه، مدّعياً تشغيل برنامج مكافآت أخطاء مُرخَّص. لم يكن <a href="https://beam.ai/agentic-insights/ai-agent-security-breaches-2026-lessons" title="5 Real AI Agent Security Breaches in 2026 and Their Lessons">الدرس ⧉</a> أن AI كان آمناً جوهرياً؛ بل أن <strong>وكيل AI الذي يقبل التفويض المُدَّعى دون تحقّق هو نقطة ضعفٍ في المحيط</strong>.</p>
+<p>الاتجاه الإجمالي هو ما يجب على البنوك استيعابه. حدّد تقرير Flashpoint Global Threat Intelligence لـ 2026 <a href="https://www.hstoday.us/subject-matter-areas/cybersecurity/2026-global-threat-intelligence-report-highlights-rise-in-agentic-ai-cybercrime/" title="2026 Global Threat Intelligence Report">ارتفاعاً بنسبة <strong>1500% في النقاشات غير المشروعة المتعلّقة بـ AI</strong> ⧉</a> بين نوفمبر وديسمبر 2025، مع تطوير المهاجمين بنشاطٍ أنظمةً مستقلّة تكشط البيانات، وتُدير البنية التحتية، وتُعدّل الرسائل، وتتعلّم من المحاولات الفاشلة دون إشرافٍ بشري متواصل. كان Jamie Dimon من JPMorgan <a href="https://www.cnbc.com/2026/05/08/anthropic-mythos-ai-cybersecurity-banks.html" title="Anthropic's Mythos set off a cybersecurity 'hysteria'">صريحاً علناً ⧉</a> بأن <strong>الميزة الأولية في هذه التقنية تذهب للهجوم، لا للدفاع</strong>. التداعي غير مريح: بنكٌ يُشغّل عمليات أمنٍ كلاسيكية ضدّ خصوم وكيليّين هو، هيكلياً، في موقف لاعب شطرنج أُعطيَ خصمه حاسوب.</p>
+<h3 id="2">2. تراجع جودة الكود <a class="heading-anchor" href="#2" aria-label="Link patungo sa 2. تراجع جودة الكود">#</a></h3>
+<p>المتّجه الثاني داخلي وأكثر هدوءاً. كود LLM المُولَّد، في غياب انضباط المواصفات والتحقّق الصارم، يُشحَن بعيوبٍ بمعدّلٍ أعلى بكثيرٍ من الكود المكتوب بشرياً. وجد <a href="https://www.augmentcode.com/guides/what-is-spec-driven-development" title="What Is Spec-Driven Development? A Complete Guide">تحليل SonarQube لخمسة LLMs حدودية ⧉</a> تولّد كود Java أن <strong>أكثر من 70% من الثغرات المُكتشَفة في مخرجات Llama 3.2 90B صُنّفت بشدّة BLOCKER</strong>، مع نحو ثُلثَي ثغرات GPT-4o و OpenCoder-8B مصنّفة <strong>BLOCKER أو CRITICAL</strong>. وجد Pearce et al. (IEEE S&amp;P) أن نحو <strong>40% من برامج LLM المُولَّدة في سياقاتٍ حسّاسة أمنياً تحتوي ثغرات</strong>. وضع Yan et al. (2025) النطاق عند <strong>9.8-42.1% عبر معاييرهم</strong>. حدّد فهرسٌ منفصل من Fu et al. <strong>43 CWE عبر ثلاث أدوات توليد كود AI</strong>.</p>
+<p>لصناعةٍ غير منظَّمة، هذه ضريبة إنتاجية. للبنك، هي خطرٌ تنظيمي وتشغيلي يتراكم. الكود الذي يُشحَن بمعدّل ثغراتٍ مرتفع في نظامٍ يتعامل مع المدفوعات أو التسوية أو بيانات العملاء ليس قضية جودة كود بشكلٍ مُجرَّد؛ هو السطح الذي ستُحقّقه الخصوم من فئة GTG-1002 في 2027 بنفس الأدوات الوكيلية التي أنتجته. الدفاع ليس حظر كود LLM المُولَّد (مستحيلٌ تجارياً) بل إحاطته ببنية التحقّق والمواصفات التي تضمن ظهور العيوب قبل النشر. <strong>هذا هو السبب العملي الذي يُتبنّى به التطوير المُوجَّه بالمواصفات بسرعة</strong> من قِبَل منظمات هندسة المؤسسات التي ليست شركات تقنية أصلاً.</p>
+<h3 id="3">3. مرساة الإرث <a class="heading-anchor" href="#3" aria-label="Link patungo sa 3. مرساة الإرث">#</a></h3>
+<p>المتّجه الثالث هو الذي تفهمه البنوك بالفعل أفضل، والذي جعلته نقلة AI الوكيلي آنياً أكثر إلحاحاً وأكثر قابلية للمعالجة. أكثر من <strong>70% من شركات Fortune 500 لا تزال تعتمد على mainframes</strong>، تُلاحظ <a href="https://www.computerweekly.com/opinion/AI-to-help-mainframes-remain-business-critical-in-2026" title="AI to help mainframes remain business critical in 2026">تحليلات Computer Weekly ⧉</a>، مبنيّةً غالباً على عقودٍ من COBOL و RPG المُتشابكَين مع منطق أعمالٍ مخصّص. في الخدمات المالية تحديداً، تستهلك التقنيات القديمة <a href="https://www.cio.com/article/4085184/using-ai-to-modernize-mainframes-turning-legacy-tech-into-a-strategic-advantage.html" title="Using AI to modernize mainframes"><strong>70-75% من الإنفاق السنوي على IT</strong> ⧉</a>. وجدت دراسة CIO المذكورة في تحليل صناعة 2026 أن <strong>63% من البنوك لا تزال تعتمد على كودٍ كُتب قبل 2000</strong>، وأبلغ أكثر من 75% عن وجود <strong>شخصٍ أو شخصَين فقط داخلياً بمهارات صيانته</strong>.</p>
+<p>ما تغيّر في فبراير 2026 كان وصول أدواتٍ وكيلية موثوقة لتحديث الإرث. إعلان Anthropic بأنّ Claude Code <a href="https://www.cnbc.com/2026/02/23/ibm-is-the-latest-ai-casualty-shares-are-tanking-on-anthropic-cobol-threat.html" title="IBM shares tank on Anthropic COBOL threat">يستطيع رسم تبعيات COBOL، وتوثيق سير العمل، وتحديد المخاطر ⧉</a> التي يستغرق المحلّلون البشر شهوراً لإبرازها — مقترناً بقدراتٍ مماثلة من Microsoft (GitHub Copilot for COBOL، Watsonx Code Assistant) و AWS (Mainframe Modernization مع AI الوكيلي) — ضغط منحنى تكلفة التحديث مادياً. كان ردّ فعل سعر سهم IBM (انخفاض <strong>13%</strong> يوم الإعلان) إشارة سوق غير أنيقة لكنها دقيقة. يُمثّل AI الآن نحو ثلث استثمار التحديث المؤسسي، وأكثر من 75% من المؤسسات تستخدم AI في استراتيجية التحديث لديها. مرساة الإرث هي، للمرّة الأولى، مشكلة هندسية قابلة للمعالجة لا مشكلة جيلية.</p>
+<h2 id="vibe-coding">لماذا لا يمكن أن يكون vibe coding الافتراضي في الخدمات المصرفية <a class="heading-anchor" href="#vibe-coding" aria-label="Link patungo sa لماذا لا يمكن أن يكون vibe coding الافتراضي في الخدمات المصرفية">#</a></h2>
+<p>يجدر التحديد بدقّةٍ سبب فشل vibe coding — موجَّز قصير، ملاحظة المخرَج، التكرار — كسير عمل افتراضي في ممتلكاتٍ منظَّمة. وضع الفشل ليس الواضح (LLM يُهلوس أحياناً). وضع الفشل هيكلي ويظهر في أربعة أماكن آنياً.</p>
+<p>الأول <strong>انعدام الاتفاقيات المشتركة</strong>. سينتج مهندسون متعدّدون يعملون عبر موجّزات الدردشة خمس طرقٍ مختلفة لفعل الشيء نفسه في قاعدة الكود نفسها خلال ربعٍ واحد. في سياقٍ غير منظَّم، هذه ديون تقنية. في سياقٍ منظَّم، هذا هو السطح الذي ينكسر تحت الفحص.</p>
+<p>الثاني <strong>تحلّل السياق</strong>. وكلاء AI عديمو الحالة. في مشروعٍ كبير، تتجاوز المحادثات نوافذ السياق، ويتبخّر التفكير وراء القرارات المعمارية السابقة. الوكيل نفسه، بعد أسبوعَين، سيتّخذ القرار العكسي في دردشةٍ جديدة لأن لا شيء يُحفظ من منطق الأولى. للأنظمة التي تحتاج إلى مسار تدقيقٍ للجهات التنظيمية، هذا غير متوافقٍ هيكلياً.</p>
+<p>الثالث <strong>تراكم العيوب غير المرئي</strong>. نتائج Pearce و Yan و SonarQube المذكورة أعلاه ليست حالات زاوية. هي المعدّل الأساسي الذي تُولّد فيه LLMs كوداً ضعيفاً في غياب انضباط المواصفات والاختبار الصارم. بنكٌ يُشغّل سير عمل vibe coding في الإنتاج يُراكم هذه العيوب بنفس المعدّل، دون رؤية السطح لمعرفة ما شُحن.</p>
+<p>الرابع هو <strong>مشكلة التتبّع التنظيمي</strong>. تتطلب Article 12 من EU AI Act تسجيلاً آلياً للمدخلات والمخرجات لأنظمة AI عالية المخاطر. يتطلب SR 11-7 أدوار مالك النموذج والمُحقّق الموثّقة، وإدارة التغيير لتحديثات النموذج، وتقريراً لمجلس الإدارة حول مخاطر نموذج AI. تتطلب DORA إدارة شاملة لمخاطر ICT بأدلّةٍ موثّقة. لا يمكن تلبية أيٍّ من هذه الالتزامات بسير عمل قطعته الأثرية الأولية هي تاريخ دردشةٍ لا يحفظه أحد.</p>
+<p>الاستنتاج ليس أن LLMs غير ملائمة للخدمات المصرفية. الاستنتاج هو أن سير العمل المُحيط بها يجب أن يُنتج مواصفاتٍ ومسارات تدقيقٍ وبوّابات تحقّقٍ كمخرجاتٍ من الدرجة الأولى لا كأفكار لاحقة. هذا ما هو عليه التطوير المُوجَّه بالمواصفات، تشغيلياً.</p>
+<h2 id="section-9">التطوير المُوجَّه بالمواصفات في ممتلكاتٍ منظَّمة <a class="heading-anchor" href="#section-9" aria-label="Link patungo sa التطوير المُوجَّه بالمواصفات في ممتلكاتٍ منظَّمة">#</a></h2>
+<p>يقلب التطوير المُوجَّه بالمواصفات (SDD) ترتيب العمل. بدلاً من القفز إلى التنفيذ والتكرار مع وكيل، يُنتج الفريق مواصفةً أولاً — قرارات معمارية، متطلّبات، عقود واجهات، معايير نجاح، قيود أمن — ويُولّد الوكيل كوداً يُلبّي المواصفة. التحقّق مُنظَّم: تُعرّف المواصفة ما يجب أن يفعله المخرج، ويفحص عمليةٌ منفصلة (توليد الاختبارات، مراجعة الكود، التحقّق الرسمي حيث يُطبَّق) ما إذا كان قد فُعل.</p>
+<p>تماسكت الأدوات العملية في أواخر 2025 ومطلع 2026. تُضفي <a href="https://www.cgi.com/en/blog/artificial-intelligence/spec-driven-development" title="Spec-driven development: From vibe coding to intent engineering">GitHub's Spec Kit ⧉</a> (الصادرة في أواخر 2025) الطابع الرسمي على القصد قبل توليد الكود. تُدمج AWS سير عمل أوّلية للمواصفات مباشرةً في Kiro IDE. قدّمت JetBrains و Cursor أوضاع تخطيطٍ تُهيكل تفاعل AI. تدفع أُطرٌ مثل BMAD (Breakthrough Method for Agile AI-Driven Development) أبعد بفرقٍ من وكلاء AI متخصّصين يعكسون أدوار المحلّل والمعماري والمطوّر و QA عبر SDLC. يُضمّن Constitutional SDD، المُنسَّق في ورقة arXiv في فبراير 2026، قيود الأمن الصريحة مع تعيينات ثغرات CWE في المواصفة نفسها.</p>
+<p>للبنك، المتغيّر الذي يهمّ هو ما يُسمّيه تحليل Augment Code <strong>التطوير المرتكز على المواصفة</strong> — تأتي المواصفات أولاً، يُولّد AI كوداً مُقيَّداً بها، وتجلس طبقات حوكمةٍ إضافية (قيود دستورية، نقاط فحص الإشراف، بوّابات الموافقة البشرية) بين التوليد والدمج. هذا هو المتغيّر الوحيد الذي يُنتج مسار التدقيق الذي تتوقّعه Article 12 من EU AI Act، ودور المُحقّق الموثّق الذي يتطلبه SR 11-7، وانضباط إدارة التغيير الذي تتطلبه DORA.</p>
+<h2 id="section-10">الكومة التنظيمية المُطبَّقة الآن <a class="heading-anchor" href="#section-10" aria-label="Link patungo sa الكومة التنظيمية المُطبَّقة الآن">#</a></h2>
+<p>محيط التنظيم لـ 2026 حول AI في الخدمات المصرفية لم يعد قائمةً مرجعية؛ هو كومةٌ من الالتزامات المتداخلة التي تحتاج إلى التفكير فيها معاً. التاريخ الواحد الأكثر تبعاتٍ هو <strong>2 أغسطس 2026</strong>، حين <a href="https://ai2.work/economics/eu-ai-act-high-risk-rules-hit-august-2026-your-compliance-countdown/" title="EU AI Act High-Risk Rules Hit août 2026">تصبح التزامات أنظمة EU AI Act عالية المخاطر قابلة الإنفاذ بالكامل ⧉</a>. يُصنّف Annex III صراحةً تقييم الائتمان وتقييم الجدارة الائتمانية، وتقييم المخاطر في تأمين الحياة والصحة، وتقييم أو تصنيف الوضع المالي للأفراد كعالي المخاطر. الالتزامات التي تتدفّق من ذلك التصنيف تشمل تقييمات الامتثال، وأنظمة إدارة الجودة، وأُطر إدارة المخاطر، والوثائق التقنية، والتسجيل في قاعدة بيانات الاتحاد الأوروبي، وحوكمة البيانات القوية، والإشراف البشري، وحماية الأمن السيبراني. تصل عقوبات انتهاك التزامات المخاطر العالية إلى <strong>35 مليون يورو أو 7% من حجم الأعمال العالمي السنوي</strong>، أيّهما أعلى.</p>
+<p>تجلس بجانب AI Act:</p>
+<ul>
+<li><strong>DORA</strong> (Digital Operational Resilience Act) نافذة منذ يناير 2025 وتُنشئ 22 التزاماً لإدارة مخاطر ICT يُغطّي صراحةً أنظمة AI المُستخدَمة في وظائف الخدمات المالية الحرجة.</li>
+<li><strong>SR 11-7</strong> — إرشاد إدارة مخاطر النموذج لـ Federal Reserve و OCC، المكتوب أصلاً في 2011 — جرى <a href="https://aegisaicompliance.com/ai-governance-for-banks/" title="AI Governance for Banks: SR 11-7 &amp; EU AI Act Compliance Guide">تمديده في الممارسة التنظيمية ⧉</a> ليُغطّي LLMs والأنظمة الوكيلية.</li>
+<li><strong>NIST AI RMF</strong> (1.0، يناير 2023) طوعي في الولايات المتحدة لكنه يُشار إليه كخطّ أساس من الجهات التنظيمية الفيدرالية.</li>
+<li><strong>ISO/IEC 42001</strong> (المنشورة في ديسمبر 2023) هو معيار أنظمة إدارة AI القابل للاعتماد الأول.</li>
+<li><strong>UK SM&amp;CR و Consumer Duty</strong> — يتطلب نظام Senior Managers and Certification الآن المساءلة المسمّاة لكلّ نظام AI عالي المخاطر.</li>
+<li><strong>خارطة طريق G7 لما بعد الكم</strong> (يناير 2026)، وإطار NCSC ذو المراحل الثلاث، ونتائج BIS Project Leap تجلس بجانب هذه الكومة. (للنظرة الأعمق على الجانب التشفيري، انظر <a href="https://sebastienrousseau.com/fil/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html" title="Securing the Ledger">مقالة مايو 2026 عن هجرة ما بعد الكم في التمويل المؤسسي</a>.)</li>
+</ul>
+<h2 id="ai">ثلاثة أنماط من التطوير المُساعَد بـ AI مُقارَنة <a class="heading-anchor" href="#ai" aria-label="Link patungo sa ثلاثة أنماط من التطوير المُساعَد بـ AI مُقارَنة">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>البُعد</th>
+<th>Vibe Coding</th>
+<th>التطوير المُوجَّه بالمواصفات</th>
+<th>الهندسة الوكيلية</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>المدخل الأساسي</td>
+<td>موجّز قصير</td>
+<td>مواصفة رسمية</td>
+<td>مواصفة + خطة تنسيق الوكيل</td>
+</tr>
+<tr>
+<td>دور المهندس</td>
+<td>مكرّر الموجّز</td>
+<td>مؤلّف المواصفة</td>
+<td>المُنسّق والمُحقّق</td>
+</tr>
+<tr>
+<td>انضباط المخرج</td>
+<td>توليد مباشر للكود</td>
+<td>كود مُقيَّد بالمواصفة</td>
+<td>سير عمل متعدّد الوكلاء يُنتج الكود والاختبارات والوثائق</td>
+</tr>
+<tr>
+<td>مسار التدقيق</td>
+<td>تاريخ الدردشة (غير محفوظ)</td>
+<td>مواصفة + كود مُولَّد + اختبارات</td>
+<td>مواصفة + آثار الوكيل + قطع التحقّق</td>
+</tr>
+<tr>
+<td>معدّل العيوب (LLM فقط)</td>
+<td>معدّل ثغرات 10-40% (خطّ أساس الأدبيات)</td>
+<td>منخفض مادياً بقيود المواصفة</td>
+<td>الأدنى مع بوّابات التحقّق</td>
+</tr>
+<tr>
+<td>التتبّع التنظيمي</td>
+<td>غير كافٍ لـ AI عالي المخاطر</td>
+<td>متوافق مع EU AI Act Article 12</td>
+<td>مُصمَّم لـ Article 12 + SR 11-7 + DORA</td>
+</tr>
+<tr>
+<td>ملائم للخدمات المصرفية؟</td>
+<td>لا، للإنتاج</td>
+<td>نعم، مع الحوكمة</td>
+<td>نعم، مع حوكمةٍ ناضجة</td>
+</tr>
+<tr>
+<td>سقف القدرة</td>
+<td>محدود بالموجّز الواحد</td>
+<td>محدود بجودة المواصفة</td>
+<td>محدود بجودة التنسيق</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-12">بناء البنك الوكيلي: نظرة معمارية <a class="heading-anchor" href="#section-12" aria-label="Link patungo sa بناء البنك الوكيلي: نظرة معمارية">#</a></h2>
+<p>الموقف الاستراتيجي وراء سير العمل هذا هو ما يحتاج C-suite إلى امتلاكه صراحةً. الهندسة الوكيلية في الخدمات المصرفية ليست مبادرة إنتاجية للمطوّر. هي قدرةٌ مؤسسية تمسّ رحلات العملاء من طرفٍ إلى آخر، ودورة حياة المعاملة بأكملها، والركيزة التشفيرية والتدقيقية التي تستند إليها كلتاهما. تستحقّ أربع طبقاتٍ من تلك القدرة اهتماماً تنفيذياً مباشراً، من القمّة إلى القاعدة:</p>
+<blockquote>
+<p><strong>الطبقة 4 — مستوى تحكّم الوكيل</strong>
+الحوكمة، التدقيق، مفاتيح الإيقاف، اكتشاف الشذوذ السلوكي، التجاوز البشري. تكوينات إشراف HITL و HOTL لكلّ فئة وكيل.</p>
+<p><strong>الطبقة 3 — سير العمل الوكيلي</strong>
+رحلات العملاء، العمليات الداخلية، خطّ التطوير. مُوجَّه بالمواصفات افتراضياً للتدفّقات عالية المخاطر.</p>
+<p><strong>الطبقة 2 — طبقة البيانات والنموذج</strong>
+AIBOM (AI Bill of Materials)، سجلّ النموذج، ركيزة الاسترداد، تحكّم في إصدار قالب الموجّز، نسب التدريب الدقيق.</p>
+<p><strong>الطبقة 1 — الأساس الآمن للكم</strong>
+ML-KEM، ML-DSA، PKI هجين، المرونة التشفيرية. الركيزة التي تعتمد عليها ادّعاءات التكامل لكلّ طبقةٍ أعلى.</p>
+</blockquote>
+<h2 id="hitl-hotl">الإشراف البشري عملياً: HITL مقابل HOTL <a class="heading-anchor" href="#hitl-hotl" aria-label="Link patungo sa الإشراف البشري عملياً: HITL مقابل HOTL">#</a></h2>
+<p>التمييز الواحد داخل الطبقة 4 الذي تُركّز عليه الجهات التنظيمية أكثر في 2026 هو بين نموذجَي إشراف. كلاهما أشكالٌ من الإشراف البشري؛ يختلفان في الكُمون والمقياس والافتراض الذي تكون الجهة التنظيمية على استعداد لمنحه بشأن سلوك الوكيل.</p>
+<p><strong>Human-in-the-Loop (HITL)</strong> هو النموذج الذي لا يستطيع فيه وكيلٌ تنفيذ إجراءٍ تبعي دون موافقةٍ بشرية صريحة. وكيل معالجة KYC يُعلِّم حساباً للإغلاق لكنه لا يستطيع إغلاقه دون توقيع موظف الامتثال هو HITL. المُقايضة تشغيلية: HITL أكثر أماناً ويُنتج مسار تدقيق Article 14 لا لبس فيه، لكنه لا يتوسّع إلى سير العمل عالي الحجم منخفض الكُمون.</p>
+<p><strong>Human-on-the-Loop (HOTL)</strong> هو النموذج الذي ينفّذ فيه الوكيل باستقلالية ضمن معلَماتٍ محدّدة، مع بشرٍ يراقبون القياس عن بُعد في الوقت الفعلي ويحتفظون بسلطة إيقاف الوكيل في أيّ نقطة. وكيل فحص احتيالٍ في الوقت الفعلي يحظر تلقائياً المعاملات المطابقة لأنماط مخاطرٍ محدّدة، مع فريق عملياتٍ بشري يراقب حجم التنبيهات ويتدخّل في الشذوذات، هو HOTL.</p>
+<p>EU AI Act Article 14 لا تُحدّد HITL مقابل HOTL؛ تتطلب أن يكون الإشراف البشري <strong>ذا معنى</strong>. التداعي العملي هو أن كلّ وكيلٍ عالي المخاطر يُشغّله البنك يجب أن يكون له موقفٌ صريح ومُوثَّق بشأن النموذج المُطبَّق ولماذا، وما هو مسار التصعيد عندما يواجه الوكيل مواقف خارج معلَماته المحدّدة.</p>
+<h2 id="section-14">الشراء مقابل البناء: مشكلة الوكلاء من الأطراف الثالثة <a class="heading-anchor" href="#section-14" aria-label="Link patungo sa الشراء مقابل البناء: مشكلة الوكلاء من الأطراف الثالثة">#</a></h2>
+<p>واقع 2026 الذي تسلّل إلى معظم البنوك هو أنها لن تبني، في الغالب، القدرة الوكيلية. ستشتريها. مشهد البائعين — منصّة Oracle المصرفية الوكيلية المُطلَقة في فبراير 2026، Watsonx من IBM، مجموعة Copilot من Microsoft، AWS Bedrock Agents، Salesforce Agentforce، NowAssist من ServiceNow، وموجة بائعي الوكلاء المتخصّصين في FinTech — يتحرّك أسرع ممّا تستطيع هندسة البنك الداخلية. التبعة الاستراتيجية هي أن <strong>معظم الوكلاء العاملين داخل بنكٍ في 2027 ستكون قد كُتبت من قِبَل شخصٍ آخر</strong>، وسؤال الحوكمة لم يعد &quot;هل يمكننا الوثوق بوكلائنا؟&quot; بل &quot;هل يمكننا الوثوق بالوكلاء الذين أشتريناهم، وهل يمكننا إثبات ذلك لجهةٍ تنظيمية؟&quot;</p>
+<p>هذا هو التحدّي الأقلّ اعترافاً به والأكثر صوتاً بموجب DORA. تجعل Articles 28-30 من التنظيم إدارة مخاطر الأطراف الثالثة لـ ICT منطقةً إشرافية فاعلة. الواقع التشغيلي الجديد هو أن بائعي AI في 2026 — مُوفّرو النماذج الحدودية، وبائعو منصّات الوكلاء، و SaaS المُمكّن لـ AI — هم، بشكلٍ متزايد، الأطراف الثالثة لـ ICT التي كُتبت DORA لتغطيتها.</p>
+<p>للبنك في موقف الشراء، تُطبَّق ثلاثة انضباطات عملية:</p>
+<p><strong>اطلب AIBOM من البائع.</strong> أيّ منتج وكيل مُشترى للاستخدام في سير عملٍ عالي المخاطر يجب أن يأتي بقائمة موادٍ موثّقة تُغطّي النماذج الأساسية، وأصل بيانات التدريب وقيودها، والتدريبات الدقيقة المُطبَّقة، ومؤشّرات الاسترداد المُتاحة، وإصدارات قوالب الموجّز، وسلسلة التبعية لمكوّنات الوكيل في الأسفل.</p>
+<p><strong>اختبر الصندوق الأسود، لا الكُتيّب.</strong> يجب على المؤسسة إجراء اختبارٍ سلوكي للوكيل تحت ظروفٍ مماثلة لنشره الإنتاجي المقصود — بما في ذلك التحقيق الخصومي لحقن الموجّز، ومقاومة الهندسة الاجتماعية (متّجه Step Finance)، والانجراف تحت تحوّلات توزيع البيانات، وأنماط الكُمون والفشل لمسار مفتاح الإيقاف والتجاوز.</p>
+<p><strong>أعد التفاوض على العقود بشروط Article 13.</strong> معظم اتفاقيات بائعي AI الحالية لا تتضمّن أيّاً من حقوق التوثيق، أو إخطار تغيير النموذج، أو إبلاغ الحوادث، أو حقوق التدقيق، أو إفصاحات المعالج الفرعي التي يطلبها EU AI Act و DORA معاً.</p>
+<h2 id="section-15">ماذا يعني ذلك بحسب نوع البنك <a class="heading-anchor" href="#section-15" aria-label="Link patungo sa ماذا يعني ذلك بحسب نوع البنك">#</a></h2>
+<h3 id="section-16">البنوك الشاملة من المستوى الأول <a class="heading-anchor" href="#section-16" aria-label="Link patungo sa البنوك الشاملة من المستوى الأول">#</a></h3>
+<p>المؤسسات بميزانياتٍ عمومية تتجاوز تريليون دولار وحضور عالمي هي آنياً الأكثر عرضةً (أوسع محيط تنظيمي، أكبر ممتلكات قديمة، أعلى هدف قيمي للخصوم المستقلّين) والأفضل تجهيزاً. الأولوية الاستراتيجية هي بناء مستوى التحكّم أولاً — الطبقة 4 من المعمارية أعلاه — وإحضار انضباط التطوير المُوجَّه بالمواصفات إلى وظيفة الهندسة الداخلية قبل توسيع نشر الوكيل أكثر.</p>
+<h3 id="section-17">البنوك من المستوى المتوسّط والإقليمية <a class="heading-anchor" href="#section-17" aria-label="Link patungo sa البنوك من المستوى المتوسّط والإقليمية">#</a></h3>
+<p>سؤال المنافسة لبنوك المستوى الثاني أحدّ من بنوك المستوى الأول. تواجه المحيط التنظيمي نفسه دون ميزانية الحوكمة نفسها. الإجابة العملية هي التوحيد القياسي على عددٍ صغير من البائعين المُدقّقين (بعقودٍ تُلبّي متطلبات وثائق Article 13)، والاستثمار في انضباط التطوير المُوجَّه بالمواصفات بدلاً من هندسة المنصّات المخصّصة، واستخدام الأدوات الوكيلية لضغط جدول تحديث COBOL.</p>
+<h3 id="fintechs-psps">FinTechs، PSPs، والمؤسسات الملاصقة للعملات المشفّرة <a class="heading-anchor" href="#fintechs-psps" aria-label="Link patungo sa FinTechs، PSPs، والمؤسسات الملاصقة للعملات المشفّرة">#</a></h3>
+<p>لقطاع FinTech ومؤسسات المدفوعات المشكلة العكسية: المرونة عالية، الحوكمة غالباً أقلّ من البنوك النظيرة، وتعرّض عقوبات EU AI Act، لـ FinTech متوسط الحجم، قد يكون وجودياً. الانضباط الاستراتيجي هو معاملة حوكمة AI كبوّابة جاهزية منتج بدلاً من تراكب امتثال.</p>
+<h3 id="section-19">وظائف الهندسة الداخلية <a class="heading-anchor" href="#section-19" aria-label="Link patungo sa وظائف الهندسة الداخلية">#</a></h3>
+<p>للمهندسين والباحثين الذين يقرؤون هذا، الانضباط العامل الذي يهمّ هو اليومي. انقل مركز ثقل العمل من كتابة الحروف إلى إنتاج المواصفات وأدوات التحقّق. عامل آثار الوكيل، والخطط الوسيطة، وبوّابات الموافقة كقطعٍ أثرية من الدرجة الأولى في تحكّم الإصدار لديك. استثمر في الأدوات — Spec Kit، Kiro، وضع خطة Cursor، Claude Code بملفات مهارات على مستوى المشروع — التي تجعل المواصفة هي القطعة الأثرية الدائمة والكود المُولَّد هي القابلة للتخلّص.</p>
+<h2 id="12-2026">خطة العمل لمدّة 12 أسبوعاً حتى أغسطس 2026 <a class="heading-anchor" href="#12-2026" aria-label="Link patungo sa خطة العمل لمدّة 12 أسبوعاً حتى أغسطس 2026">#</a></h2>
+<p>للراعي التنفيذي الذي يُدير برنامج هندسةٍ وكيلية بين الآن وتاريخ إنفاذ EU AI Act، يضغط العمل في تسلسلٍ من اثني عشر أسبوعاً.</p>
+<p><strong>الأسبوعان 1-2 — إنتاج AIBOM.</strong> أنشئ الجرد المركزي لكلّ نظام AI، ونموذج، ومجموعة بيانات، وقالب موجّز، ومؤشّر استرداد، وتدريب دقيق، وتبعية AI من طرفٍ ثالث في الإنتاج أو قيد التطوير. ارسم خريطة كلّ إدخالٍ إلى تصنيف EU AI Act Annex III.</p>
+<p><strong>الأسبوعان 3-4 — صنّف نموذج الإشراف لكلّ نظام.</strong> لكلّ وكيلٍ عالي المخاطر وتبعي، وثّق صراحةً ما إذا كان نموذج الإشراف هو HITL أو HOTL، والمنطق، ومسار التصعيد، والإنسان المسمّى المسؤول بموجب SM&amp;CR (المملكة المتحدة) أو النظام الوطني المُكافئ.</p>
+<p><strong>الأسبوعان 5-6 — ابنِ أو شدّد مستوى تحكّم الوكيل.</strong> تسجيل الإجراءات في الوقت الفعلي، اكتشاف الشذوذ السلوكي، مسارات مفتاح الإيقاف والتجاوز عاملة على كلّ وكيل إنتاجي.</p>
+<p><strong>الأسبوعان 7-8 — مراجعة عقود البائعين.</strong> القانوني والمشتريات يسيران كلّ عقد بائع AI نشط لحقوق وثائق Article 13، وإخطار تغيير النموذج، وإبلاغ الحوادث، وحقوق التدقيق، وإفصاحات المعالج الفرعي.</p>
+<p><strong>الأسبوعان 9-10 — تجريبة جافّة لتقييم الامتثال.</strong> لكلّ نظامٍ عالي المخاطر بموجب Annex III، أكمل سير عمل تقييم الامتثال كما لو كانت هيئةٌ مُبلَّغة ستصل الأسبوع التالي.</p>
+<p><strong>الأسبوعان 11-12 — التحقّق قبل التحوّل وموافقة مجلس الإدارة.</strong> المراجعة النهائية لـ AIBOM، وتصنيفات HITL/HOTL، وأدلّة مستوى التحكّم، وحالة معالجة البائعين، ومخرجات تقييم الامتثال. مساءلة كبار المديرين المسمّاة مُؤكّدة. مجلس الإدارة يُسجّل الموقف في المحضر.</p>
+<h2 id="section-21">الخاتمة <a class="heading-anchor" href="#section-21" aria-label="Link patungo sa الخاتمة">#</a></h2>
+<p>الملاحظة القاسية التي تبلورت عبر الصناعة في الأشهر الستّة الأخيرة هي أن الطرق القديمة للعمل بمقياس المؤسسة تتجاوزها لا تقنية جديدة بل نمط عملٍ جديد. كشفت الأدوات الوكيلية — أحياناً في الإنتاج، أحياناً في تقارير الحوادث — عيوباً وفجواتٍ في الممتلكات القديمة كانت تتراكم بصمتٍ لسنوات. أتاحت الأدوات نفسها للجهات الفاعلة الخبيثة الموارد التي كانت تتطلب سابقاً دعم جهةٍ على مستوى الدولة. الأدوات نفسها، المستخدَمة داخلياً وبانضباط، هي الطريق الأكثر موثوقية الذي لدى المؤسسات لإغلاق فجوة الإرث، وتلبية موعد أغسطس 2026 التنظيمي، والوصول إلى الإيقاع التشغيلي الذي تتطلبه الآن توقّعات العملاء والواقع التنافسي.</p>
+<p>المؤسسات التي تمتلك هذا الموقف داخلياً — التي تُعامل الهندسة الوكيلية كقدرةٍ هيكلية للبنك بدلاً من تراكب إنتاجية مُشترى من بائع — ستقضي العامَين المقبلَين تُراكم الميزة. المؤسسات التي لا تفعل ستقضي العامَين المقبلَين تكتشف، في تقارير الحوادث ونتائج الجهات التنظيمية، ما كان ينبغي بناؤه.</p>
+<h2 id="section-22">الأسئلة الشائعة <a class="heading-anchor" href="#section-22" aria-label="Link patungo sa الأسئلة الشائعة">#</a></h2>
+<p><strong>ما الفرق بين generative AI و agentic AI والهندسة الوكيلية؟</strong></p>
+<p>ينتج generative AI محتوى استجابةً لموجّز؛ هو تفاعلي. agentic AI يسعى لتحقيق أهدافٍ مُحدّدة بشكلٍ مستقلّ، يصل إلى البيانات، يستخدم الأدوات، ويتّخذ إجراءاتٍ عبر سير عملٍ متعدّد الخطوات دون الحاجة إلى موجّز بشري في كلّ خطوة. الهندسة الوكيلية — المصطلح الذي <a href="https://towardsdatascience.com/from-vibe-coding-to-spec-driven-development/" title="From Vibe Coding to Spec-Driven Development">تبنّاه Karpathy في 2026 ⧉</a> — هو الانضباط العامل لتنسيق الوكلاء مقابل مواصفاتٍ مفصّلة بإشرافٍ بشري.</p>
+<p><strong>لماذا موعد EU AI Act في أغسطس 2026 ذو تبعاتٍ للبنوك؟</strong></p>
+<p>يُصنّف Annex III من AI Act صراحةً عدّة حالات استخدام AI أساسية في الخدمات المصرفية كعالية المخاطر: تقييم الجدارة الائتمانية وتقييم الائتمان للأشخاص الطبيعيّين، وتقييم المخاطر والتسعير في تأمين الحياة والصحة، وتقييم أو تصنيف الوضع المالي للأفراد. من 2 أغسطس 2026، يجب على ناشري هذه الأنظمة إثبات الامتثال لأنظمة إدارة الجودة، وأُطر إدارة المخاطر، والوثائق التقنية، وتقييمات الامتثال، والتسجيل في قاعدة بيانات الاتحاد الأوروبي، وحوكمة البيانات القوية، والإشراف البشري، وحماية الأمن السيبراني. تصل العقوبات إلى 35 مليون يورو أو 7% من حجم الأعمال العالمي السنوي.</p>
+<p><strong>ما الفرق العملي بين HITL و HOTL، ومتى ينبغي تطبيق كلٍّ منهما؟</strong></p>
+<p>HITL يعني أن الوكيل لا يستطيع تنفيذ إجراءاتٍ تبعية دون موافقةٍ بشرية صريحة. HOTL يعني أن الوكيل ينفّذ باستقلالية ضمن معلَماتٍ محدّدة، مع بشرٍ يراقبون القياس عن بُعد ويحتفظون بسلطة الإيقاف في أيّ نقطة. EU AI Act Article 14 تتطلب أن يكون الإشراف ذا معنى لكنها لا تُحدّد أيّ نموذج. قاعدة القرار هي تطبيق HITL حيث يكون الإجراء تبعياً ومنخفض الحجم وغير قابلٍ للتراجع (رفض الائتمان، إغلاق الحساب، تفويض تحويل عالي القيمة، تقديم ملفّ تنظيمي)؛ و HOTL حيث يكون الإجراء عالي الحجم قابلاً للتراجع ومحدوداً بالمعلَمات (تنبيهات مراقبة المعاملات، تصنيف المستندات، فرز خدمة عملاء روتيني).</p>
+<p><strong>معظم وكلائنا سيأتون من بائعين. كيف نُلبّي DORA و EU AI Act لأنظمةٍ لم نبنِها؟</strong></p>
+<p>يجلس الالتزام التنظيمي مع الناشر، لا البائع. الإجابة العملية ثلاثية. أولاً، اطلب AIBOM موثّقاً من البائع قبل التوقيع. ثانياً، أجرِ اختباراً سلوكياً للوكيل تحت ظروفٍ مماثلة للإنتاج. ثالثاً، أعد التفاوض على عقود البائعين لتشمل حقوق وثائق Article 13. تُغطّي DORA Articles 28-30 إدارة مخاطر الأطراف الثالثة لـ ICT.</p>
+<p><strong>كم ينبغي على البنوك أن تقلق فعلاً بشأن الخصوم الوكيليّين؟</strong></p>
+<p>الإجابة الصادقة هي أن التهديد حقيقي ومتميّز تشغيلياً عن التهديدات السيبرانية السابقة. كشف Anthropic في نوفمبر 2025 عن GTG-1002 هو المثال الأساسي: AI الوكيلي يتعامل مع 80-90% من العمليات التكتيكية في حملة تجسّسٍ مدعومة من الدولة ضدّ نحو ثلاثين هدفاً، يعمل بآلاف الطلبات في الثانية. حادثة Step Finance في يناير 2026 — خسارة 27-30 مليون دولار مدفوعة بوكلاء تداول AI بسلطة مُفرَطة — هي المثال الأساسي لكيف يمكن لنشر AI داخلي أن يصبح سطح هجوم.</p>
+<p><strong>هل AI الوكيلي مجرّد &quot;ChatGPT زائد MCP servers&quot;؟</strong></p>
+<p>لا، وهذا أحد أكثر المفاهيم الخاطئة تبعاتٍ في السوق الحالي. واجهة دردشةٍ مُعزَّزة بـ MCP servers نمطٌ مفيد لاسترداد البيانات والتصرّف عليها داخل جلسةٍ محدّدة. الهندسة الوكيلية قدرةٌ هيكلية للمؤسسة — AIBOM، مستوى تحكّم الوكيل، خطّ تطوير مُوجَّه بالمواصفات، ركيزة التدقيق، الأساس التشفيري الآمن للكم، أنماط التنسيق عبر رحلات العملاء من طرفٍ إلى آخر.</p>
+<p><strong>ما الشيء الأكثر أهميةً الذي ينبغي أن يفعله البنك في الاثني عشر أسبوعاً المقبلة؟</strong></p>
+<p>ثلاثة أشياء، مرتّبة. أولاً، أنتج AI Bill of Materials. ثانياً، ابنِ مستوى تحكّم الوكيل لأيّ نظام AI يصنع حالياً أو يُؤثّر مادياً على قرارات تمسّ العميل. ثالثاً، انقل ثقافة الهندسة الداخلية من vibe coding إلى التطوير المُوجَّه بالمواصفات على العمل الأكثر أهمية.</p>
+<h2 id="section-23">المراجع <a class="heading-anchor" href="#section-23" aria-label="Link patungo sa المراجع">#</a></h2>
+<ul>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/fil/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html" title="Securing the Ledger">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/fil/2026-05-12-iso-20022-pacs008-structured-address-deadline/index.html" title="Pacs.008">The novembre 2026 pacs.008 Structured-Address Deadline</a>.</li>
+<li>Sebastien Rousseau, (2026). <a href="https://sebastienrousseau.com/fil/2026-04-11-quantum-thresholds-are-moving-again/index.html" title="Quantum Thresholds">Quantum Thresholds Are Moving Again</a>.</li>
+<li>Mansurova, M. (2026). <a href="https://towardsdatascience.com/from-vibe-coding-to-spec-driven-development/" title="From Vibe Coding to Spec-Driven Development">From Vibe Coding to Spec-Driven Development ⧉</a>. Towards Data Science.</li>
+<li>Deloitte, (2026). <a href="https://www.deloitte.com/us/en/insights/industry/financial-services/agentic-ai-risks-banking.html" title="AI agents in banking">Managing the new wave of risks from AI agents in banking ⧉</a>. Deloitte.</li>
+<li>Anthropic, (2025). <a href="https://www.anthropic.com/news/detecting-countering-misuse-aug-2025" title="Misuse août 2025">Detecting and countering misuse of AI: août 2025 ⧉</a>. Anthropic.</li>
+<li>Anthropic, (2025). <a href="https://www.anthropic.com/news/disrupting-AI-espionage" title="Disrupting AI espionage">Disrupting the first reported AI-orchestrated cyber espionage campaign ⧉</a>. Anthropic.</li>
+<li>Flashpoint, (2026). <a href="https://www.hstoday.us/subject-matter-areas/cybersecurity/2026-global-threat-intelligence-report-highlights-rise-in-agentic-ai-cybercrime/" title="GTIR 2026">2026 Global Threat Intelligence Report ⧉</a>. HSToday.</li>
+<li>European Commission, (2024). Regulation (EU) 2024/1689 on Artificial Intelligence (EU AI Act).</li>
+<li>AegisAI Compliance, (2026). <a href="https://aegisaicompliance.com/ai-governance-for-banks/" title="AI Governance for Banks">AI Governance for Banks: SR 11-7 &amp; EU AI Act ⧉</a>. AegisAI.</li>
+</ul>
+<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Portrait ni Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/fil/tungkol-sa-akin/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist na sumusulat tungkol sa applied AI, ISO 20022 migration, post-quantum cryptography para sa financial services, at structural transformation ng wholesale payments.</span><span class="author-credentials">Higit sa 20 taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA at Virgin Group. <a href="/fil/tungkol-sa-akin/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Huling sinuri <time datetime="2026-05-18">2026-05-18</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Kaugnay na pagbasa</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" class="related-media" aria-label="حالة الذكاء الاصطناعي والحوسبة الكمومية في القطاع المصرفي: مراجعة 2023" tabindex="-1"><img alt="حالة الذكاء الاصطناعي والحوسبة الكمومية في القطاع المصرفي: مراجعة 2023" src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2023"><a href="https://sebastienrousseau.com/fil/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">حالة الذكاء الاصطناعي والحوسبة الكمومية في القطاع المصرفي: مراجعة 2023</a> <a class="heading-anchor" href="#2023" aria-label="Link patungo sa حالة الذكاء الاصطناعي والحوسبة الكمومية في القطاع المصرفي: مراجعة 2023">#</a></h3><p><time datetime="2023-12-18">2023-12-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2026-05-16-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="Ang Pinakamahusay na Arkitektura ng Cloud Infrastructure sa 2026: Isang AI-Native, Multi-Cloud, Quantum-Aware na Blueprint para sa Financial Services" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="ang-pinakamahusay-na-arkitektura-ng-cloud-infrastructure-sa-2026-isang-ai-native"><a href="https://sebastienrousseau.com/fil/2026-05-16-best-cloud-infrastructure-architecture-2026">Ang Pinakamahusay na Arkitektura ng Cloud Infrastructure sa 2026: Isang AI-Native, Multi-Cloud, Quantum-Aware na Blueprint para sa Financial Services</a> <a class="heading-anchor" href="#ang-pinakamahusay-na-arkitektura-ng-cloud-infrastructure-sa-2026-isang-ai-native" aria-label="Link patungo sa Ang Pinakamahusay na Arkitektura ng Cloud Infrastructure sa 2026: Isang AI-Native, Multi-Cloud, Quantum-Aware na Blueprint para sa Financial Services">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance" class="related-media" aria-label="تأمين السجلّ: دليل لمجالس الإدارة بشأن الهجرة ما بعد الكمية في بنوك التمويل المؤسسي" tabindex="-1"><img alt="Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-26"><a href="https://sebastienrousseau.com/fil/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance">تأمين السجلّ: دليل لمجالس الإدارة بشأن الهجرة ما بعد الكمية في بنوك التمويل المؤسسي</a> <a class="heading-anchor" href="#section-26" aria-label="Link patungo sa تأمين السجلّ: دليل لمجالس الإدارة بشأن الهجرة ما بعد الكمية في بنوك التمويل المؤسسي">#</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Mga pinagmulan at sanggunian</h2><ol class="article-sources-list"><li><a href="https://www.anthropic.com/news/detecting-countering-misuse-aug-2025" rel="external noopener nofollow"><span class="source-host">www.anthropic.com</span><span class="source-path">/news/detecting-countering-misuse-aug-2025</span></a></li><li><a href="https://www.anthropic.com/news/disrupting-AI-espionage" rel="external noopener nofollow"><span class="source-host">www.anthropic.com</span><span class="source-path">/news/disrupting-AI-espionage</span></a></li></ol></aside><nav class="post-pagination" aria-label="Pagination ng artikulo"><a class="post-pagination-prev" href="/fil/2026-05-16-best-cloud-infrastructure-architecture-2026/"><span class="post-pagination-label">Nakaraan</span><span class="post-pagination-title">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/fil/tungkol-sa-akin/index.html">Tungkol</a></li>
+              <li><a href="/fil/makipag-ugnayan/index.html">Makipag-ugnayan</a></li>
+              <li><a href="/fil/ginawa-sa-static-site-generator/index.html">Ginawa sa Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Pagsusulat</h2>
+            <ul>
+              <li><a href="/fil/mga-artikulo/index.html">Mga artikulo</a></li>
+              <li><a href="/fil/mga-publikasyon/index.html">Mga publikasyon</a></li>
+              <li><a href="/fil/mga-tag/index.html">Mga tag</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Trabaho</h2>
+            <ul>
+              <li><a href="/fil/mga-proyekto/index.html">Mga proyekto</a></li>
+              <li><a href="/fil/mga-playlist/index.html">Mga playlist</a></li>
+              <li><a href="/fil/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Makipag-ugnayan</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Pag-sign up sa newsletter">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — mga research note tungkol sa payments, AI at post-quantum crypto. Walang spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="ikaw@bangko.ph" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Mag-subscribe</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2007 - 2026 - Sebastien Rousseau. Lahat ng karapatan ay nakalaan.</span>
+          <div class="social" aria-label="Mga link sa social media">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau sa Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau sa LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau sa Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau sa YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/fil/pagiging-accessible/index.html">Pagiging accessible</a> ·
+            <a href="/fil/pagkapribado/index.html">Pagkapribado</a> ·
+            <a href="/fil/mga-tuntunin/index.html">Mga tuntunin</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"fil"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"fil"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":4543,"headline":"الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه","description":"انتقل الذكاء الاصطناعي الوكيلي من التجربة إلى الإنتاج في الخدمات المصرفية العالمية. تستخدمه 70% من المؤسسات بدرجاتٍ متفاوتة؛ ولدى واحدةٍ من كلّ خمسٍ نموذج حوكمة ناضج. الخصوم المستقلّون يعملون بسرعة الآلة، والممتلكات القديمة COBOL التي يجب أن تتفاعل معها الأنظمة الجديدة كُتبت لافتراضات الدفعات في الستينيات، وموعد «المخاطر العالية» في EU AI Act على بُعد اثني عشر أسبوعاً. هذا هو الموقف الهندسي والحوكمي الذي يحتاج البنك للحفاظ عليه.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp","width":"100vw","height":"100vh","caption":"مخطّط معماري للهندسة الوكيلية في البنوك — وكلاء AI مُوجَّهون بالمواصفات، مستوى تحكّم حوكمة، ركيزة مقاومة للكم، وتدفّقات تحديث mainframe القديمة"},"url":"https://sebastienrousseau.com/fil/2026-05-17-agentic-engineering-banks-blueprint-2026/","datePublished":"2026-05-17T06:06:06+00:00","dateModified":"2026-05-17","inLanguage":"fil","keywords":"الهندسة الوكيلية، التطوير المُوجَّه بالمواصفات، البنوك، الخدمات المالية، حوكمة AI، EU AI Act، DORA، SR 11-7، NIST AI RMF، ISO 42001، تحديث COBOL، mainframe، vibe coding، vibe hacking، الوكلاء المستقلّون، Claude Code، GitHub Spec Kit، AI Bill of Materials، AIBOM، human in the loop، HITL، human on the loop، HOTL، إدارة مخاطر الأطراف الثالثة، TPRM، التشفير ما بعد الكمي، مستوى تحكّم الوكلاء، FCA، SM&CR، خطة عمل 12 أسبوعاً، Sebastien Rousseau","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/fil/2026-05-17-agentic-engineering-banks-blueprint-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"fil"},"citation":[{"@type":"CreativeWork","url":"https://www.anthropic.com/news/detecting-countering-misuse-aug-2025"},{"@type":"CreativeWork","url":"https://www.anthropic.com/news/disrupting-AI-espionage"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/fil/"},{"@type":"ListItem","position":3,"name":"الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه","item":"https://sebastienrousseau.com/fil/2026-05-17-agentic-engineering-banks-blueprint-2026/"}]}]}</script>
+<script src="/main.f6d240db.js" integrity="sha256-9tJA2wY/3I+5OuXezpCLH3rb8KlkFS651l1/veOMebM=" crossorigin="anonymous" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
+    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Maghanap">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Maghanap</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Maghanap">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Maghanap sa dokumentasyon..." autocomplete="off" aria-label="Maghanap"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> isara</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> mag-navigate</span><span><kbd>Enter</kbd> buksan</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين سيُنفّذونه","url":"https://sebastienrousseau.com/fil/2026-05-17-agentic-engineering-banks-blueprint-2026/","inLanguage":"fil-PH","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"الهندسة الوكيلية، التطوير المُوجَّه بالمواصفات، البنوك، الخدمات المالية، حوكمة AI، EU AI Act، DORA، SR 11-7، NIST AI RMF، ISO 42001، تحديث COBOL، mainframe، vibe coding، vibe hacking، الوكلاء المستقلّون، Claude Code، GitHub Spec Kit، AI Bill of Materials، AIBOM، human in the loop، HITL، human on the loop، HOTL، إدارة مخاطر الأطراف الثالثة، TPRM، التشفير ما بعد الكمي، مستوى تحكّم الوكلاء، FCA، SM&CR، خطة عمل 12 أسبوعاً، Sebastien Rousseau","dependencies":["NIST"]}</script></body>
+</html>

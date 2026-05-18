@@ -86,7 +86,7 @@ None yet. 42 EN articles to translate.
 | 2026-05-12-iso-20022-pacs008-structured-address-deadline | 2026-05-12-iso-20022-pacs008-strukturierte-adresse-frist | — | — | pending |
 | 2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance | 2026-05-14-das-hauptbuch-sichern-post-quanten-migration-im-corporate-finance | — | — | pending |
 | 2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf | 2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenisierter-geldmarktfonds | — | — | pending |
-| 2026-05-18-agentic-engineering-banks-blueprint-2026 | 2026-05-18-agentische-engineering-banken-blueprint-2026 | — | — | pending |
+| 2026-05-17-agentic-engineering-banks-blueprint-2026 | 2026-05-17-agentische-engineering-banken-blueprint-2026 | — | — | pending |
 
 ### UI chrome strings (CHROME_PATCHES equivalent)
 Not yet extracted. The current FR pipeline carries ~200 regex patches in `scripts/build_translations.py:CHROME_PATCHES` covering nav, footer, search, aria-labels, CTAs. Required deliverable before German articles can render: `_data/i18n/de/strings.json` with the same key set as `_data/i18n/fr/strings.json` (still to be authored as a future-Phase-0 deliverable).

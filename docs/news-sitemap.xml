@@ -182,6 +182,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-17T06:06:06+00:00</news:publication_date>
+    <news:title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the…</news:title>
+    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/bn/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html</loc>
   <news:news>
     <news:publication>
@@ -422,18 +434,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/ha/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>en-GB</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud…</news:title>
-    <news:keywords>cloud architecture 2026, AI-native infrastructure, multi-cloud, sovereign cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, sovereign AI, open-weight models</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/bn/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html</loc>
   <news:news>
     <news:publication>
@@ -578,18 +578,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/bn/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>en-GB</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
-    <news:title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the…</news:title>
-    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/privacy</loc>
   <news:news>
     <news:publication>
@@ -722,6 +710,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/ha/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>en-GB</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud…</news:title>
+    <news:keywords>cloud architecture 2026, AI-native infrastructure, multi-cloud, sovereign cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, sovereign AI, open-weight models</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/bn/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html</loc>
   <news:news>
     <news:publication>
@@ -842,18 +842,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/tr/2026-05-18-ajan-tabanli-muhendislik-bankalar-icin-2026-plani/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>tr-TR</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>Ajan tabanlı mühendislik: bankalar için 2026 planı</news:title>
-    <news:keywords>ajan tabanlı yapay zeka, ajanlar, bankacılık, 2026, mimari, yönetişim, LLM</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/tr/2024-01-15-alien-studio-yapay-zeka-fotografciligi-ile-sanat-devrimi/index.html</loc>
   <news:news>
     <news:publication>
@@ -935,6 +923,30 @@
     <news:publication_date></news:publication_date>
     <news:title>Blockchain: 2018'de önemli olan teknoloji</news:title>
     <news:keywords>blockchain, dağıtık defter, fintech, finansal hizmetler, tedarik zinciri, akıllı sözleşmeler, 2018</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-16-bankalar-icin-en-iyi-bulut-mimarisi-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>2026'da En İyi Bulut Altyapı Mimarisi: Finansal Hizmetler için AI-Yerel, Çoklu…</news:title>
+    <news:keywords>2026 bulut mimarisi, AI-yerel altyapı, çoklu bulut, egemen bulut, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, egemen AI, açık-ağırlıklı modeller</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-17-ajan-tabanli-muhendislik-bankalar-icin-2026-plani/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Ajan tabanlı mühendislik: bankalar için 2026 planı</news:title>
+    <news:keywords>ajan tabanlı yapay zeka, ajanlar, bankacılık, 2026, mimari, yönetişim, LLM</news:keywords>
   </news:news>
 </url>
 <url>
@@ -1079,18 +1091,6 @@
     <news:publication_date></news:publication_date>
     <news:title>ERC-20 token standardı</news:title>
     <news:keywords>ERC-20, Ethereum, token, akıllı sözleşmeler, ICO, DeFi, Solidity</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/tr/2026-05-21-bankalar-icin-en-iyi-bulut-mimarisi-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>tr-TR</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>2026'da En İyi Bulut Altyapı Mimarisi: Finansal Hizmetler için AI-Yerel, Çoklu…</news:title>
-    <news:keywords>2026 bulut mimarisi, AI-yerel altyapı, çoklu bulut, egemen bulut, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, egemen AI, açık-ağırlıklı modeller</news:keywords>
   </news:news>
 </url>
 <url>
@@ -1478,6 +1478,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/th/2026-05-17-witsawakam-agentic-thanakhan-phaen-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los…</news:title>
+    <news:keywords>ingeniería agéntica, desarrollo guiado por especificación, bancos, servicios financieros, gobernanza IA, Reglamento europeo de IA, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/th/2024-01-15-alien-studio-patiwat-sinlapa-duai-phap-thai-ai/index.html</loc>
   <news:news>
     <news:publication>
@@ -1694,30 +1706,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/th/2026-05-18-witsawakam-agentic-thanakhan-phaen-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>th-TH</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los…</news:title>
-    <news:keywords>ingeniería agéntica, desarrollo guiado por especificación, bancos, servicios financieros, gobernanza IA, Reglamento europeo de IA, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/th/2026-05-21-sthapattayakam-cloud-thi-di-thi-sut-samrap-thanakhan-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>th-TH</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>สถาปัตยกรรมโครงสร้างพื้นฐานคลาวด์ที่ดีที่สุดในปี 2026: พิมพ์เขียวแบบ…</news:title>
-    <news:keywords>สถาปัตยกรรมคลาวด์ 2026, โครงสร้างพื้นฐาน AI-native, multi-cloud, sovereign cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, sovereign AI, open-weight models</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/th/2023-09-29-attanomat-fai-chamra-nguen-iso-20022-duai-pain001/index.html</loc>
   <news:news>
     <news:publication>
@@ -1763,6 +1751,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Shokunin: el generador de sitios estáticos más rápido basado en Rust</news:title>
     <news:keywords>Shokunin, generador de sitios estáticos, SSG, Rust, rendimiento, SEO, accesibilidad, WCAG, ADA, PWA</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/th/2026-05-16-sthapattayakam-cloud-thi-di-thi-sut-samrap-thanakhan-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>สถาปัตยกรรมโครงสร้างพื้นฐานคลาวด์ที่ดีที่สุดในปี 2026: พิมพ์เขียวแบบ…</news:title>
+    <news:keywords>สถาปัตยกรรมคลาวด์ 2026, โครงสร้างพื้นฐาน AI-native, multi-cloud, sovereign cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, sovereign AI, open-weight models</news:keywords>
   </news:news>
 </url>
 <url>
@@ -1862,6 +1862,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/th/2026-05-17-witsawakam-agentic-thanakhan-phaen-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>es-ES</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los…</news:title>
+    <news:keywords>ingeniería agéntica, desarrollo guiado por especificación, bancos, servicios financieros, gobernanza IA, Reglamento europeo de IA, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/th/2018-02-15-kan-sang-platform-express-transaction-credits/index.html</loc>
   <news:news>
     <news:publication>
@@ -1907,18 +1919,6 @@
     <news:publication_date></news:publication_date>
     <news:title>El cifrado completamente homomórfico (FHE) en la era bancaria cuántica</news:title>
     <news:keywords>cifrado completamente homomórfico, seguridad bancaria, computación cuántica, cifrado de datos financieros, FHE, RGPD, CCPA, cumplimiento, computación cloud, IA y confidencialidad</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/es/2026-05-21-mejor-arquitectura-cloud-para-bancos-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>es-ES</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>La mejor arquitectura de infraestructura cloud en 2026: un blueprint…</news:title>
-    <news:keywords>arquitectura cloud 2026, infraestructura AI-native, multicloud, cloud soberano, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, IA soberana, modelos de pesos abiertos</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2114,6 +2114,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/es/2026-05-16-mejor-arquitectura-cloud-para-bancos-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>es-ES</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>La mejor arquitectura de infraestructura cloud en 2026: un blueprint…</news:title>
+    <news:keywords>arquitectura cloud 2026, infraestructura AI-native, multicloud, cloud soberano, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, IA soberana, modelos de pesos abiertos</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/th/2023-10-16-pongkan-khomun-yuk-quantum-laibrari-hash-hsh/index.html</loc>
   <news:news>
     <news:publication>
@@ -2183,18 +2195,6 @@
     <news:publication_date></news:publication_date>
     <news:title>El estándar de token ERC-20</news:title>
     <news:keywords>ERC-20, Ethereum, token, smart contract, DeFi, EIP, blockchain, interoperabilidad, DApps, estándar</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/th/2026-05-18-witsawakam-agentic-thanakhan-phaen-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>es-ES</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los…</news:title>
-    <news:keywords>ingeniería agéntica, desarrollo guiado por especificación, bancos, servicios financieros, gobernanza IA, Reglamento europeo de IA, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2402,6 +2402,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/fr/2026-05-17-ingenierie-agentique-banques-blueprint-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>fr</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Ingénierie agentique pour les banques : un blueprint 2026 pour le COMEX et les…</news:title>
+    <news:keywords>ingénierie agentique, développement piloté par spécification, banques, services financiers, gouvernance IA, Règlement européen sur l&apos;IA, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fr/2018-02-04-nouvelle-cryptomonnaie-solution-de-paiement-plus-rapide/index.html</loc>
   <news:news>
     <news:publication>
@@ -2594,7 +2606,7 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/fr/2026-05-21-meilleure-architecture-cloud-pour-les-banques-2026/index.html</loc>
+  <loc>https://sebastienrousseau.com/fr/2026-05-16-meilleure-architecture-cloud-pour-les-banques-2026/index.html</loc>
   <news:news>
     <news:publication>
       <news:name></news:name>
@@ -2663,18 +2675,6 @@
     <news:publication_date></news:publication_date>
     <news:title>Sécuriser le registre : guide à l'usage des conseils d'administration sur la…</news:title>
     <news:keywords>cryptographie post-quantique, ML-KEM, ML-DSA, FIPS 203, FIPS 204, BIS Project Leap, G7 CEG, NCSC, ANSSI, BSI</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/fr/2026-05-18-ingenierie-agentique-banques-blueprint-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>fr</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>Ingénierie agentique pour les banques : un blueprint 2026 pour le COMEX et les…</news:title>
-    <news:keywords>ingénierie agentique, développement piloté par spécification, banques, services financiers, gouvernance IA, Règlement européen sur l&apos;IA, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2990,6 +2990,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/id/2026-05-16-arsitektur-infrastruktur-cloud-terbaik-untuk-bank-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>id-ID</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>Arsitektur Infrastruktur Cloud Terbaik pada 2026: Cetak Biru AI-Native…</news:title>
+    <news:keywords>arsitektur cloud 2026, infrastruktur AI-native, multi-cloud, sovereign cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, sovereign AI, model bobot terbuka</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/id/2026-05-12-iso-20022-pacs008-tenggat-alamat-terstruktur/index.html</loc>
   <news:news>
     <news:publication>
@@ -3059,18 +3071,6 @@
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] Streamlining Rust Library Development with Code Generation</news:title>
     <news:keywords>Rust, library, development, code, generator, boilerplate, best, practices, quality, reliable</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/id/2026-05-18-rekayasa-agentik-bank-cetak-biru-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>id-ID</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>[ID DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and…</news:title>
-    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3266,6 +3266,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/id/2026-05-17-rekayasa-agentik-bank-cetak-biru-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>id-ID</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>[ID DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and…</news:title>
+    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/id/2024-02-19-membuka-gemini-revolusi-ai-google-dijelaskan/index.html</loc>
   <news:news>
     <news:publication>
@@ -3359,18 +3371,6 @@
     <news:publication_date></news:publication_date>
     <news:title>[ID DRAFT] ERC-20: The Ethereum Token Interface That Changed the World</news:title>
     <news:keywords>ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, solidity</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/id/2026-05-21-arsitektur-infrastruktur-cloud-terbaik-untuk-bank-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>id-ID</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Arsitektur Infrastruktur Cloud Terbaik pada 2026: Cetak Biru AI-Native…</news:title>
-    <news:keywords>arsitektur cloud 2026, infrastruktur AI-native, multi-cloud, sovereign cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, sovereign AI, model bobot terbuka</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3470,15 +3470,15 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/ko/2026-05-18-eijenteuk-enjineoring-eunhaeng-2026-seolgyedo/index.html</loc>
+  <loc>https://sebastienrousseau.com/ko/2026-05-16-2026-choeseon-keulaeudeu-infra-akitekcheo/index.html</loc>
   <news:news>
     <news:publication>
-      <news:name></news:name>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>ko-KR</news:language>
     </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>에이전트 엔지니어링: 은행을 위한 2026년 설계도</news:title>
-    <news:keywords>에이전트 AI, AI 에이전트, 은행 자동화, MCP, 멀티 에이전트, 에이전트형 상거래, AI 거버넌스, AI 보안</news:keywords>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>2026년 최선의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티클라우드, 양자 인식 청사진</news:title>
+    <news:keywords>2026 클라우드 아키텍처, AI 네이티브 인프라, 멀티클라우드, 소버린 클라우드, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, 소버린 AI, 오픈 가중치 모델</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3758,6 +3758,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/ko/2026-05-17-eijenteuk-enjineoring-eunhaeng-2026-seolgyedo/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>에이전트 엔지니어링: 은행을 위한 2026년 설계도</news:title>
+    <news:keywords>에이전트 AI, AI 에이전트, 은행 자동화, MCP, 멀티 에이전트, 에이전트형 상거래, AI 거버넌스, AI 보안</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ko/2026-05-11-lucy-besson-jisik-jeonjeon-ai-yangja/index.html</loc>
   <news:news>
     <news:publication>
@@ -3887,18 +3899,6 @@
     <news:publication_date></news:publication_date>
     <news:title>ERC-20: 세상을 바꾼 이더리움 토큰 인터페이스</news:title>
     <news:keywords>ERC-20, 이더리움, 스마트 컨트랙트, 토큰, ICO, DeFi, 스테이블코인, 토큰화, 이더리움 개선 제안</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/ko/2026-05-21-2026-choeseon-keulaeudeu-infra-akitekcheo/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>ko-KR</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>2026년 최선의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티클라우드, 양자 인식 청사진</news:title>
-    <news:keywords>2026 클라우드 아키텍처, AI 네이티브 인프라, 멀티클라우드, 소버린 클라우드, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, 소버린 AI, 오픈 가중치 모델</news:keywords>
   </news:news>
 </url>
 <url>
@@ -4067,6 +4067,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Der ERC-20-Token-Standard</news:title>
     <news:keywords>ERC-20, Ethereum, Token, Smart Contract, DeFi, EIP, Blockchain, Interoperabilität, DApps, Standard</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/de/2026-05-16-beste-cloud-infrastruktur-architektur-fuer-banken-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>de</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Die beste Cloud-Infrastruktur-Architektur 2026: ein KI-nativer, Multi-Cloud-…</news:title>
+    <news:keywords>Cloud-Architektur 2026, KI-native Infrastruktur, Multi-Cloud, Sovereign Cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, Sovereign AI, Open-Weight-Modelle</news:keywords>
   </news:news>
 </url>
 <url>
@@ -4370,18 +4382,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/de/2026-05-21-beste-cloud-infrastruktur-architektur-fuer-banken-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>de</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>Die beste Cloud-Infrastruktur-Architektur 2026: ein KI-nativer, Multi-Cloud-…</news:title>
-    <news:keywords>Cloud-Architektur 2026, KI-native Infrastruktur, Multi-Cloud, Sovereign Cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, Sovereign AI, Open-Weight-Modelle</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/de/2023-09-29-iso-20022-konforme-zahlungsdateien-automatisieren-mit-pain001/index.html</loc>
   <news:news>
     <news:publication>
@@ -4439,6 +4439,18 @@
     <news:publication_date></news:publication_date>
     <news:title>OpenVoice: वॉइस-क्लोनिंग-प्रौद्योगिकी में अग्रणी नवाचार</news:title>
     <news:keywords>OpenVoice, वॉइस क्लोनिंग, AI, TTS, ओपन सोर्स, multilingual, vocal style, voice synthesis, speech, MIT</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/hi/2026-05-16-banks-ke-liye-shreshth-cloud-architecture-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>hi-IN</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>बैंकों के लिए सर्वोत्तम क्लाउड-अवसंरचना-वास्तुकला (2026)</news:title>
+    <news:keywords>क्लाउड वास्तुकला 2026, AI-नेटिव, मल्टीक्लाउड, serverless, edge, WebAssembly, DevSecOps, बैंकिंग, क्रिप्टो चपलता, agentic</news:keywords>
   </news:news>
 </url>
 <url>
@@ -4550,6 +4562,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/hi/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>hi-IN</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>बैंकों के लिए एजेंटिक-इंजीनियरिंग: 2026 का ब्लूप्रिंट</news:title>
+    <news:keywords>agentic, AI एजेंट, MCP, बैंकिंग, blueprint, ब्लूप्रिंट, FinOps, यूनिट अर्थशास्त्र, EU AI Act, identity</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/hi/2024-01-23-ai-prompt-engineering-mein-pragati/index.html</loc>
   <news:news>
     <news:publication>
@@ -4619,18 +4643,6 @@
     <news:publication_date></news:publication_date>
     <news:title>Blockchain: 2018 में मायने रखने वाली प्रौद्योगिकी</news:title>
     <news:keywords>blockchain, क्रिप्टोकरेंसी, Bitcoin, P2P, स्मार्ट कॉन्ट्रैक्ट, वितरित बही, वित्त, आपूर्ति शृंखला, डिजिटल पहचान, टोकनीकरण</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/hi/2026-05-21-banks-ke-liye-shreshth-cloud-architecture-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>hi-IN</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>बैंकों के लिए सर्वोत्तम क्लाउड-अवसंरचना-वास्तुकला (2026)</news:title>
-    <news:keywords>क्लाउड वास्तुकला 2026, AI-नेटिव, मल्टीक्लाउड, serverless, edge, WebAssembly, DevSecOps, बैंकिंग, क्रिप्टो चपलता, agentic</news:keywords>
   </news:news>
 </url>
 <url>
@@ -4799,18 +4811,6 @@
     <news:publication_date></news:publication_date>
     <news:title>बैंकिंग क्वांटम-युग में पूर्ण-होमोमॉर्फ़िक एन्क्रिप्शन</news:title>
     <news:keywords>FHE, होमोमॉर्फ़िक एन्क्रिप्शन, बैंकिंग, क्वांटम, post-quantum, क्रिप्टोग्राफी, BFV, CKKS, गोपनीयता, सुरक्षा</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/hi/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>hi-IN</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>बैंकों के लिए एजेंटिक-इंजीनियरिंग: 2026 का ब्लूप्रिंट</news:title>
-    <news:keywords>agentic, AI एजेंट, MCP, बैंकिंग, blueprint, ब्लूप्रिंट, FinOps, यूनिट अर्थशास्त्र, EU AI Act, identity</news:keywords>
   </news:news>
 </url>
 <url>
@@ -5066,6 +5066,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/fil/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>fil-PH</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين…</news:title>
+    <news:keywords>الهندسة الوكيلية، التطوير المُوجَّه بالمواصفات، البنوك، الخدمات المالية، حوكمة AI، EU AI Act، DORA، SR 11-7، NIST AI RMF، ISO 42001، تحديث COBOL، mainframe، vibe coding، vibe hacking، الوكلاء المستقلّون، Claude Code، GitHub Spec Kit، AI Bill of Materials، AIBOM، human in the loop، HITL، human on the loop، HOTL، إدارة مخاطر الأطراف الثالثة، TPRM، التشفير ما بعد الكمي، مستوى تحكّم الوكلاء، FCA، SM&amp;CR، خطة عمل 12 أسبوعاً، Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fil/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html</loc>
   <news:news>
     <news:publication>
@@ -5246,18 +5258,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/fil/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>fil-PH</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Ang Pinakamahusay na Arkitektura ng Cloud Infrastructure sa 2026: Isang…</news:title>
-    <news:keywords>arkitektura ng cloud 2026, AI-native infrastructure, multi-cloud, sovereign cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, sovereign AI, open-weight models</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/fil/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html</loc>
   <news:news>
     <news:publication>
@@ -5378,18 +5378,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/fil/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>fil-PH</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين…</news:title>
-    <news:keywords>الهندسة الوكيلية، التطوير المُوجَّه بالمواصفات، البنوك، الخدمات المالية، حوكمة AI، EU AI Act، DORA، SR 11-7، NIST AI RMF، ISO 42001، تحديث COBOL، mainframe، vibe coding، vibe hacking، الوكلاء المستقلّون، Claude Code، GitHub Spec Kit، AI Bill of Materials، AIBOM، human in the loop، HITL، human on the loop، HOTL، إدارة مخاطر الأطراف الثالثة، TPRM، التشفير ما بعد الكمي، مستوى تحكّم الوكلاء، FCA، SM&amp;CR، خطة عمل 12 أسبوعاً، Sebastien Rousseau</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/fil/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html</loc>
   <news:news>
     <news:publication>
@@ -5447,6 +5435,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Qiskit والتحويل الكمومي لفورييه لتحليل نسب الائتمان</news:title>
     <news:keywords>الحوسبة الكمومية، التمويل، تحليل نسب الائتمان، Qiskit، التحويل الكمومي لفورييه، IBM، تعلّم الآلة، الذكاء الاصطناعي، تقييم المخاطر المالية، الجدارة الائتمانية</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fil/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fil-PH</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>Ang Pinakamahusay na Arkitektura ng Cloud Infrastructure sa 2026: Isang…</news:title>
+    <news:keywords>arkitektura ng cloud 2026, AI-native infrastructure, multi-cloud, sovereign cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, sovereign AI, open-weight models</news:keywords>
   </news:news>
 </url>
 <url>
@@ -5579,6 +5579,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Alien Studio: My Tech-to Art Journey in Photography</news:title>
     <news:keywords>personal tech journey, Rust discovery, AI exploration, Quantum Computing, art and photography fusion, Alien Studio, digital art creation, technology in art, innovative photography, artistic rediscovery</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>bn-BD</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the…</news:title>
+    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
   </news:news>
 </url>
 <url>
@@ -5762,18 +5774,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/bn/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>bn</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>২০২৬ সালে সেরা ক্লাউড অবকাঠামো আর্কিটেকচার: আর্থিক পরিষেবাগুলির জন্য একটি…</news:title>
-    <news:keywords>ক্লাউড আর্কিটেকচার ২০২৬, AI-নেটিভ অবকাঠামো, মাল্টি-ক্লাউড, সার্বভৌম ক্লাউড, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, সার্বভৌম AI, ওপেন-ওয়েট মডেল</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/bn/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html</loc>
   <news:news>
     <news:publication>
@@ -5894,18 +5894,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/bn/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>bn-BD</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the…</news:title>
-    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/bn/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html</loc>
   <news:news>
     <news:publication>
@@ -5975,6 +5963,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for…</news:title>
     <news:keywords>post-quantum cryptography, PQC migration, corporate banking, financial services, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/bn/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>bn</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>২০২৬ সালে সেরা ক্লাউড অবকাঠামো আর্কিটেকচার: আর্থিক পরিষেবাগুলির জন্য একটি…</news:title>
+    <news:keywords>ক্লাউড আর্কিটেকচার ২০২৬, AI-নেটিভ অবকাঠামো, মাল্টি-ক্লাউড, সার্বভৌম ক্লাউড, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, সার্বভৌম AI, ওপেন-ওয়েট মডেল</news:keywords>
   </news:news>
 </url>
 <url>
@@ -6143,18 +6143,6 @@
     <news:publication_date></news:publication_date>
     <news:title>Door AI aangestuurde audio: inzichten, analyse en vertalingen</news:title>
     <news:keywords>AI, audio, spraakherkenning, samenvatting, vertaling, machine learning</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/nl/2026-05-18-agentic-engineering-banken-blauwdruk-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>nl-NL</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>Agentic engineering voor banken: blauwdruk 2026</news:title>
-    <news:keywords>Agentic engineering, AI, banken, 2026, MCP, governance, regulering</news:keywords>
   </news:news>
 </url>
 <url>
@@ -6422,15 +6410,15 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/nl/2026-05-21-beste-cloud-infrastructuur-architectuur-voor-banken-2026/index.html</loc>
+  <loc>https://sebastienrousseau.com/nl/2026-05-17-agentic-engineering-banken-blauwdruk-2026/index.html</loc>
   <news:news>
     <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:name></news:name>
       <news:language>nl-NL</news:language>
     </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>De beste cloudinfrastructuur-architectuur in 2026: een AI-native, multi-cloud…</news:title>
-    <news:keywords>cloudarchitectuur 2026, AI-native infrastructuur, multi-cloud, soevereine cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, soevereine AI, open-weight modellen</news:keywords>
+    <news:publication_date></news:publication_date>
+    <news:title>Agentic engineering voor banken: blauwdruk 2026</news:title>
+    <news:keywords>Agentic engineering, AI, banken, 2026, MCP, governance, regulering</news:keywords>
   </news:news>
 </url>
 <url>
@@ -6491,6 +6479,18 @@
     <news:publication_date></news:publication_date>
     <news:title>AI-trends 2024: inzichten en voorspellingen voor de toekomst</news:title>
     <news:keywords>AI-trends, 2024, voorspellingen, machine learning, regelgeving, multimodaal, LLM</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/nl/2026-05-16-beste-cloud-infrastructuur-architectuur-voor-banken-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>nl-NL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>De beste cloudinfrastructuur-architectuur in 2026: een AI-native, multi-cloud…</news:title>
+    <news:keywords>cloudarchitectuur 2026, AI-native infrastructuur, multi-cloud, soevereine cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, soevereine AI, open-weight modellen</news:keywords>
   </news:news>
 </url>
 <url>
@@ -6695,6 +6695,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Descifrar Gemini 1.5: a revolução IA de Google explicada</news:title>
     <news:keywords>Gemini 1.5, Google AI, arquitectura Mixture-of-Experts, eficiência computacional, expansão de a ventana de contexto, innovación IA, transformação do análisis de dados, in-context learning, casos de uso IA, revolução tecnológica</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/pt-br/2026-05-17-engenharia-agentica-bancos-blueprint-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>pt-BR</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Ingeniería agéntica para bancos: um blueprint 2026 para o COMEX e os…</news:title>
+    <news:keywords>ingeniería agéntica, desenvolvimento guiado por especificación, bancos, serviços financeiros, gobernanza IA, Reglamento europeo de IA, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7010,18 +7022,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/pt-br/2026-05-18-engenharia-agentica-bancos-blueprint-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>pt-BR</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>Ingeniería agéntica para bancos: um blueprint 2026 para o COMEX e os…</news:title>
-    <news:keywords>ingeniería agéntica, desenvolvimento guiado por especificación, bancos, serviços financeiros, gobernanza IA, Reglamento europeo de IA, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/pt-br/2023-10-16-proteger-dados-na-era-quantica-biblioteca-de-hash-hsh/index.html</loc>
   <news:news>
     <news:publication>
@@ -7151,6 +7151,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Alien Studio: رحلتي من التكنولوجيا إلى الفنّ التصويري</news:title>
     <news:keywords>رحلة تقنية شخصية، اكتشاف Rust، استكشاف الذكاء الاصطناعي، الحوسبة الكمومية، اندماج الفنّ والتصوير، Alien Studio، إنشاء الفنّ الرقمي، التكنولوجيا في الفنّ، تصوير مبتكر، إعادة اكتشاف فنّي</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/fil/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>ar</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين…</news:title>
+    <news:keywords>الهندسة الوكيلية، التطوير المُوجَّه بالمواصفات، البنوك، الخدمات المالية، حوكمة AI، EU AI Act، DORA، SR 11-7، NIST AI RMF، ISO 42001، تحديث COBOL، mainframe، vibe coding، vibe hacking، الوكلاء المستقلّون، Claude Code، GitHub Spec Kit، AI Bill of Materials، AIBOM، human in the loop، HITL، human on the loop، HOTL، إدارة مخاطر الأطراف الثالثة، TPRM، التشفير ما بعد الكمي، مستوى تحكّم الوكلاء، FCA، SM&amp;CR، خطة عمل 12 أسبوعاً، Sebastien Rousseau</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7334,18 +7346,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/ar/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>ar</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>أفضل بنية تحتية سحابية في 2026: مخطط أصيل للذكاء الاصطناعي، متعدد السحب، وواعٍ…</news:title>
-    <news:keywords>بنية السحابة 2026, البنية التحتية الأصيلة للذكاء الاصطناعي, السحابة المتعددة, السحابة السيادية, قانون CLOUD الأمريكي, Bleu, S3NS, AWS European Sovereign Cloud, الذكاء الاصطناعي السيادي, النماذج مفتوحة الأوزان</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/fil/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html</loc>
   <news:news>
     <news:publication>
@@ -7466,18 +7466,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/fil/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>ar</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين…</news:title>
-    <news:keywords>الهندسة الوكيلية، التطوير المُوجَّه بالمواصفات، البنوك، الخدمات المالية، حوكمة AI، EU AI Act، DORA، SR 11-7، NIST AI RMF، ISO 42001، تحديث COBOL، mainframe، vibe coding، vibe hacking، الوكلاء المستقلّون، Claude Code، GitHub Spec Kit، AI Bill of Materials، AIBOM، human in the loop، HITL، human on the loop، HOTL، إدارة مخاطر الأطراف الثالثة، TPRM، التشفير ما بعد الكمي، مستوى تحكّم الوكلاء، FCA، SM&amp;CR، خطة عمل 12 أسبوعاً، Sebastien Rousseau</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/fil/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html</loc>
   <news:news>
     <news:publication>
@@ -7535,6 +7523,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Qiskit والتحويل الكمومي لفورييه لتحليل نسب الائتمان</news:title>
     <news:keywords>الحوسبة الكمومية، التمويل، تحليل نسب الائتمان، Qiskit، التحويل الكمومي لفورييه، IBM، تعلّم الآلة، الذكاء الاصطناعي، تقييم المخاطر المالية، الجدارة الائتمانية</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ar/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>أفضل بنية تحتية سحابية في 2026: مخطط أصيل للذكاء الاصطناعي، متعدد السحب، وواعٍ…</news:title>
+    <news:keywords>بنية السحابة 2026, البنية التحتية الأصيلة للذكاء الاصطناعي, السحابة المتعددة, السحابة السيادية, قانون CLOUD الأمريكي, Bleu, S3NS, AWS European Sovereign Cloud, الذكاء الاصطناعي السيادي, النماذج مفتوحة الأوزان</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7667,6 +7667,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Alien Studio: My Tech-to Art Journey in Photography</news:title>
     <news:keywords>personal tech journey, Rust discovery, AI exploration, Quantum Computing, art and photography fusion, Alien Studio, digital art creation, technology in art, innovative photography, artistic rediscovery</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>ha-NG</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the…</news:title>
+    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7850,18 +7862,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/ha/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>ha-NG</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud…</news:title>
-    <news:keywords>tsarin gine-ginen cloud 2026, AI-native infrastructure, multi-cloud, serverless, edge computing, WebAssembly, Wasm, DevSecOps, sustainable data centre, liquid cooling</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/bn/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html</loc>
   <news:news>
     <news:publication>
@@ -7982,18 +7982,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/bn/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>ha-NG</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the…</news:title>
-    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/bn/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html</loc>
   <news:news>
     <news:publication>
@@ -8066,6 +8054,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/ha/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>ha-NG</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud…</news:title>
+    <news:keywords>tsarin gine-ginen cloud 2026, AI-native infrastructure, multi-cloud, serverless, edge computing, WebAssembly, Wasm, DevSecOps, sustainable data centre, liquid cooling</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/bn/2024-04-15-quantum-algorithm-challenges-lattice-based-cryptography/index.html</loc>
   <news:news>
     <news:publication>
@@ -8123,18 +8123,6 @@
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] Securing the Ledger: A Board-Level Guide to Post-Quantum Migration…</news:title>
     <news:keywords>post-quantum cryptography, PQC migration, corporate banking, financial services, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/uk/2026-05-18-ahentyna-inzheneriya-banky-blueprint-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>uk-UA</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>[UK DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and…</news:title>
-    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
   </news:news>
 </url>
 <url>
@@ -8282,18 +8270,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/uk/2026-05-21-naikrashcha-khmarna-arkhitektura-dlya-bankiv-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>uk-UA</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>Найкраща хмарна інфраструктурна архітектура у 2026 році: AI-нативний…</news:title>
-    <news:keywords>хмарна архітектура 2026, AI-нативна інфраструктура, мультихмара, суверенна хмара, безсерверні обчислення, WebAssembly, Wasm, DevSecOps, стала ЦОД, рідинне охолодження</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/uk/2023-10-16-zakhyst-danykh-u-kvantovu-eru-biblioteka-hash-hsh/index.html</loc>
   <news:news>
     <news:publication>
@@ -8339,6 +8315,18 @@
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] OpenVoice: Leading Innovation in Voice Cloning Technology</news:title>
     <news:keywords>OpenVoice, Voice Cloning Technology, AI Synthetic Speech, Open-Source Voice Cloning, Cross-Lingual Voice Synthesis, Instant Voice Cloning, Voice Style Control, Accessibility Voice Tech, Entertainment Industry Voices, Customer Service Voice AI</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/uk/2026-05-17-ahentyna-inzheneriya-banky-blueprint-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>uk-UA</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>[UK DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and…</news:title>
+    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
   </news:news>
 </url>
 <url>
@@ -8507,6 +8495,18 @@
     <news:publication_date></news:publication_date>
     <news:title>[UK DRAFT] CRYSTALS-Kyber: The Safeguarding Algorithm in a Quantum Age</news:title>
     <news:keywords>quantum computing, quantum-resistant cryptography, CRYSTALS-Kyber, cryptography, security, banking, financial, encryption, data protection, future-proof</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/uk/2026-05-16-naikrashcha-khmarna-arkhitektura-dlya-bankiv-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>uk-UA</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Найкраща хмарна інфраструктурна архітектура у 2026 році: AI-нативний…</news:title>
+    <news:keywords>хмарна архітектура 2026, AI-нативна інфраструктура, мультихмара, суверенна хмара, безсерверні обчислення, WebAssembly, Wasm, DevSecOps, стала ЦОД, рідинне охолодження</news:keywords>
   </news:news>
 </url>
 <url>
@@ -8726,6 +8726,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>yo-NG</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the…</news:title>
+    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/bn/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html</loc>
   <news:news>
     <news:publication>
@@ -8906,18 +8918,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/yo/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>yo</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Ìkọ́lé Ìpìlẹ̀ Ìkùukùu Tó Dára Jùlọ ní 2026: Ìlànà AI-Native, Multi-Cloud…</news:title>
-    <news:keywords>cloud architecture 2026, AI-native infrastructure, multi-cloud, sovereign cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, sovereign AI, open-weight models</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/bn/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html</loc>
   <news:news>
     <news:publication>
@@ -9038,18 +9038,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/bn/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>yo-NG</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the…</news:title>
-    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/bn/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html</loc>
   <news:news>
     <news:publication>
@@ -9119,6 +9107,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for…</news:title>
     <news:keywords>post-quantum cryptography, PQC migration, corporate banking, financial services, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/yo/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>yo</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>Ìkọ́lé Ìpìlẹ̀ Ìkùukùu Tó Dára Jùlọ ní 2026: Ìlànà AI-Native, Multi-Cloud…</news:title>
+    <news:keywords>cloud architecture 2026, AI-native infrastructure, multi-cloud, sovereign cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, sovereign AI, open-weight models</news:keywords>
   </news:news>
 </url>
 <url>
@@ -9254,6 +9254,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>ro-RO</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the…</news:title>
+    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/bn/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html</loc>
   <news:news>
     <news:publication>
@@ -9434,18 +9446,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/ro/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>ro</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Cea mai bună arhitectură de infrastructură cloud în 2026: un plan AI-nativ…</news:title>
-    <news:keywords>arhitectură cloud 2026, infrastructură AI-nativă, multi-cloud, cloud suveran, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, IA suverană, modele cu greutăți deschise</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/bn/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html</loc>
   <news:news>
     <news:publication>
@@ -9566,18 +9566,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/bn/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>ro-RO</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the…</news:title>
-    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/bn/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html</loc>
   <news:news>
     <news:publication>
@@ -9647,6 +9635,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for…</news:title>
     <news:keywords>post-quantum cryptography, PQC migration, corporate banking, financial services, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ro/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ro</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>Cea mai bună arhitectură de infrastructură cloud în 2026: un plan AI-nativ…</news:title>
+    <news:keywords>arhitectură cloud 2026, infrastructură AI-nativă, multi-cloud, cloud suveran, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, IA suverană, modele cu greutăți deschise</news:keywords>
   </news:news>
 </url>
 <url>
@@ -9755,18 +9755,6 @@
     <news:publication_date></news:publication_date>
     <news:title>kyberlib: щит на Rust против квантовых угроз</news:title>
     <news:keywords>kyberlib, CRYSTALS-Kyber, ML-KEM, Rust, FIPS 203, постквантовая криптография, инкапсуляция ключей, финансовая безопасность</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/ru/2026-05-18-agentnaya-inzheneriya-plan-dlya-bankov-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>ru-RU</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>Агентная инженерия: план для банков 2026</news:title>
-    <news:keywords>агентная инженерия, LLM-агенты, agentic commerce, банковские агенты, MCP, autonomous finance, identity, унит-экономика агентов</news:keywords>
   </news:news>
 </url>
 <url>
@@ -10046,6 +10034,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/ru/2026-05-17-agentnaya-inzheneriya-plan-dlya-bankov-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Агентная инженерия: план для банков 2026</news:title>
+    <news:keywords>агентная инженерия, LLM-агенты, agentic commerce, банковские агенты, MCP, autonomous finance, identity, унит-экономика агентов</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ru/2024-03-18-razvitie-ii-s-multimodalnymi-llm-uroki-iz-mm1/index.html</loc>
   <news:news>
     <news:publication>
@@ -10058,18 +10058,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/ru/2026-05-21-luchshaya-cloud-arkhitektura-dlya-bankov-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>ru-RU</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Лучшая облачная инфраструктурная архитектура в 2026 году: AI-native…</news:title>
-    <news:keywords>облачная архитектура 2026, AI-native инфраструктура, multi-cloud, суверенное облако, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, суверенный AI, open-weight модели</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/ru/2024-03-08-rustlogs-prodvinutaya-biblioteka-zhurnalirovaniya-dlya-rust/index.html</loc>
   <news:news>
     <news:publication>
@@ -10079,6 +10067,18 @@
     <news:publication_date></news:publication_date>
     <news:title>RustLogs: продвинутая библиотека журналирования для приложений на Rust</news:title>
     <news:keywords>RustLogs, журналирование, логирование, Rust, структурированное логирование, OpenTelemetry, наблюдаемость, производительность</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ru/2026-05-16-luchshaya-cloud-arkhitektura-dlya-bankov-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ru-RU</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>Лучшая облачная инфраструктурная архитектура в 2026 году: AI-native…</news:title>
+    <news:keywords>облачная архитектура 2026, AI-native инфраструктура, multi-cloud, суверенное облако, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, суверенный AI, open-weight модели</news:keywords>
   </news:news>
 </url>
 <url>
@@ -10190,6 +10190,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/th/2026-05-17-witsawakam-agentic-thanakhan-phaen-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los…</news:title>
+    <news:keywords>ingeniería agéntica, desarrollo guiado por especificación, bancos, servicios financieros, gobernanza IA, Reglamento europeo de IA, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/th/2023-12-11-kan-krachai-khun-kunchae-quantum-pra-thanakhan/index.html</loc>
   <news:news>
     <news:publication>
@@ -10250,18 +10262,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/cs/2026-05-21-nejlepsi-cloudova-architektura-pro-banky-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>cs-CZ</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Nejlepší cloudová infrastrukturní architektura v roce 2026: AI-nativní…</news:title>
-    <news:keywords>cloudová architektura 2026, AI-nativní infrastruktura, multi-cloud, suverénní cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, suverénní AI, modely s otevřenými váhami</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/th/2023-11-19-crystals-kyber-aljorhithem-pongkan-yuk-quantum/index.html</loc>
   <news:news>
     <news:publication>
@@ -10295,6 +10295,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Presentación de una nueva criptomoneda y una solución de pago más rápida</news:title>
     <news:keywords>EXTC Network, criptomoneda, pagos más rápidos, Ethereum, EIP20, smart contracts, blockchain, pagos transfronterizos, inclusión financiera</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/cs/2026-05-16-nejlepsi-cloudova-architektura-pro-banky-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>Nejlepší cloudová infrastrukturní architektura v roce 2026: AI-nativní…</news:title>
+    <news:keywords>cloudová architektura 2026, AI-nativní infrastruktura, multi-cloud, suverénní cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, suverénní AI, modely s otevřenými váhami</news:keywords>
   </news:news>
 </url>
 <url>
@@ -10694,18 +10706,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/th/2026-05-18-witsawakam-agentic-thanakhan-phaen-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>cs-CZ</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los…</news:title>
-    <news:keywords>ingeniería agéntica, desarrollo guiado por especificación, bancos, servicios financieros, gobernanza IA, Reglamento europeo de IA, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/th/2024-04-22-phop-khophitphlat-nai-aljorhithem-quantum-samrap-lattice/index.html</loc>
   <news:news>
     <news:publication>
@@ -10943,6 +10943,18 @@
     <news:publication_date></news:publication_date>
     <news:title>RustLogs: libreria avanzata di logging per applicazioni Rust</news:title>
     <news:keywords>RustLogs, Rust, logging, osservabilità, structured logging, performance</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/it/2026-05-17-ingegneria-agentica-banche-blueprint-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>it-IT</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Ingegneria agentica per le banche: blueprint 2026</news:title>
+    <news:keywords>ingegneria agentica, agenti IA, banche, blueprint, 2026, governance, architettura</news:keywords>
   </news:news>
 </url>
 <url>
@@ -11198,18 +11210,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/it/2026-05-18-ingegneria-agentica-banche-blueprint-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>it-IT</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>Ingegneria agentica per le banche: blueprint 2026</news:title>
-    <news:keywords>ingegneria agentica, agenti IA, banche, blueprint, 2026, governance, architettura</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/it/2018-01-09-comprendere-la-tecnologia-dietro-la-blockchain/index.html</loc>
   <news:news>
     <news:publication>
@@ -11450,18 +11450,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/ja/2026-05-21-2026-saiyou-no-kuraudo-infura-aakitekucha/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>ja</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>2026年の最良のクラウドインフラストラクチャアーキテクチャ:金融サービスのためのAIネイティブ・マルチクラウド・量子対応設計図</news:title>
-    <news:keywords>クラウドアーキテクチャ 2026, AIネイティブインフラ, マルチクラウド, ソブリンクラウド, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, ソブリンAI, オープンウェイトモデル</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/ja/2023-10-26-libmake-rust-raiburari-no-koodo-jenereta/index.html</loc>
   <news:news>
     <news:publication>
@@ -11582,15 +11570,15 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/ja/2026-05-18-eejentikku-enjiniaringu-ginkou-no-2026-sekkeizu/index.html</loc>
+  <loc>https://sebastienrousseau.com/ja/2026-05-16-2026-saiyou-no-kuraudo-infura-aakitekucha/index.html</loc>
   <news:news>
     <news:publication>
-      <news:name></news:name>
-      <news:language>ja-JP</news:language>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ja</news:language>
     </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>エージェンティック・エンジニアリング:銀行の 2026 年設計図</news:title>
-    <news:keywords>エージェンティック AI, エージェント, AI オーケストレーション, MCP, AIBOM, EU AI 法, 銀行ソフトウェア, Bedrock Agents, Vertex AI Agent Builder, Azure AI Foundry</news:keywords>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>2026年の最良のクラウドインフラストラクチャアーキテクチャ:金融サービスのためのAIネイティブ・マルチクラウド・量子対応設計図</news:title>
+    <news:keywords>クラウドアーキテクチャ 2026, AIネイティブインフラ, マルチクラウド, ソブリンクラウド, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, ソブリンAI, オープンウェイトモデル</news:keywords>
   </news:news>
 </url>
 <url>
@@ -11627,6 +11615,18 @@
     <news:publication_date></news:publication_date>
     <news:title>新たな暗号資産を公開し、将来のより高速な決済ソリューションを提供する</news:title>
     <news:keywords>暗号資産, 決済, リアルタイム決済, トークン, ICO, ブロックチェーン, フィンテック, 国際送金</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/ja/2026-05-17-eejentikku-enjiniaringu-ginkou-no-2026-sekkeizu/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>ja-JP</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>エージェンティック・エンジニアリング:銀行の 2026 年設計図</news:title>
+    <news:keywords>エージェンティック AI, エージェント, AI オーケストレーション, MCP, AIBOM, EU AI 法, 銀行ソフトウェア, Bedrock Agents, Vertex AI Agent Builder, Azure AI Foundry</news:keywords>
   </news:news>
 </url>
 <url>
@@ -11882,6 +11882,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/fil/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين…</news:title>
+    <news:keywords>الهندسة الوكيلية، التطوير المُوجَّه بالمواصفات، البنوك، الخدمات المالية، حوكمة AI، EU AI Act، DORA، SR 11-7، NIST AI RMF، ISO 42001، تحديث COBOL، mainframe، vibe coding، vibe hacking، الوكلاء المستقلّون، Claude Code، GitHub Spec Kit، AI Bill of Materials، AIBOM، human in the loop، HITL، human on the loop، HOTL، إدارة مخاطر الأطراف الثالثة، TPRM، التشفير ما بعد الكمي، مستوى تحكّم الوكلاء، FCA، SM&amp;CR، خطة عمل 12 أسبوعاً، Sebastien Rousseau</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fil/2024-02-19-unlocking-gemini-google-ai-revolution-explained/index.html</loc>
   <news:news>
     <news:publication>
@@ -12062,18 +12074,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/he/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>he-IL</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>ארכיטקטורת תשתית הענן הטובה ביותר ב-2026: שרטוט AI-native, רב-ענני…</news:title>
-    <news:keywords>ארכיטקטורת ענן 2026, תשתית AI-native, multi-cloud, ענן ריבוני, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, sovereign AI, מודלים בעלי משקלים פתוחים</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/fil/2024-01-01-ai-trends-2024-insights-and-predictions-for-the-future/index.html</loc>
   <news:news>
     <news:publication>
@@ -12194,18 +12194,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/fil/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>he-IL</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>الهندسة الوكيلية للبنوك: مخطّط 2026 للقيادة التنفيذية وللمهندسين الذين…</news:title>
-    <news:keywords>الهندسة الوكيلية، التطوير المُوجَّه بالمواصفات، البنوك، الخدمات المالية، حوكمة AI، EU AI Act، DORA، SR 11-7، NIST AI RMF، ISO 42001، تحديث COBOL، mainframe، vibe coding، vibe hacking، الوكلاء المستقلّون، Claude Code، GitHub Spec Kit، AI Bill of Materials، AIBOM، human in the loop، HITL، human on the loop، HOTL، إدارة مخاطر الأطراف الثالثة، TPRM، التشفير ما بعد الكمي، مستوى تحكّم الوكلاء، FCA، SM&amp;CR، خطة عمل 12 أسبوعاً، Sebastien Rousseau</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/fil/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html</loc>
   <news:news>
     <news:publication>
@@ -12263,6 +12251,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Qiskit والتحويل الكمومي لفورييه لتحليل نسب الائتمان</news:title>
     <news:keywords>الحوسبة الكمومية، التمويل، تحليل نسب الائتمان، Qiskit، التحويل الكمومي لفورييه، IBM، تعلّم الآلة، الذكاء الاصطناعي، تقييم المخاطر المالية، الجدارة الائتمانية</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/he/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>ארכיטקטורת תשתית הענן הטובה ביותר ב-2026: שרטוט AI-native, רב-ענני…</news:title>
+    <news:keywords>ארכיטקטורת ענן 2026, תשתית AI-native, multi-cloud, ענן ריבוני, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, sovereign AI, מודלים בעלי משקלים פתוחים</news:keywords>
   </news:news>
 </url>
 <url>
@@ -12410,18 +12410,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/sv/2026-05-21-basta-molnarkitektur-for-banker-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>sv-SE</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Den bästa molninfrastrukturarkitekturen 2026: En AI-nativ, multi-cloud…</news:title>
-    <news:keywords>molnarkitektur 2026, AI-nativ infrastruktur, multi-cloud, suverän cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, suverän AI, öppna viktmodeller</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/th/2024-04-22-phop-khophitphlat-nai-aljorhithem-quantum-samrap-lattice/index.html</loc>
   <news:news>
     <news:publication>
@@ -12470,6 +12458,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/th/2026-05-17-witsawakam-agentic-thanakhan-phaen-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los…</news:title>
+    <news:keywords>ingeniería agéntica, desarrollo guiado por especificación, bancos, servicios financieros, gobernanza IA, Reglamento europeo de IA, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/th/2025-09-01-kanchamra-nguen-thon-quantum-epaa/index.html</loc>
   <news:news>
     <news:publication>
@@ -12506,6 +12506,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/sv/2026-05-16-basta-molnarkitektur-for-banker-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>sv-SE</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>Den bästa molninfrastrukturarkitekturen 2026: En AI-nativ, multi-cloud…</news:title>
+    <news:keywords>molnarkitektur 2026, AI-nativ infrastruktur, multi-cloud, suverän cloud, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, suverän AI, öppna viktmodeller</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/th/2018-02-15-kan-sang-platform-express-transaction-credits/index.html</loc>
   <news:news>
     <news:publication>
@@ -12515,18 +12527,6 @@
     <news:publication_date></news:publication_date>
     <news:title>La creación de la plataforma Express Transaction Credits</news:title>
     <news:keywords>Ethereum, ERC-223, ERC-20, EXTC, Express Transaction Credits, blockchain, pagos, tokens, préstamos, finanzas descentralizadas</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/th/2026-05-18-witsawakam-agentic-thanakhan-phaen-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>sv-SE</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los…</news:title>
-    <news:keywords>ingeniería agéntica, desarrollo guiado por especificación, bancos, servicios financieros, gobernanza IA, Reglamento europeo de IA, DORA, SR 11-7, NIST AI RMF, ISO 42001</news:keywords>
   </news:news>
 </url>
 <url>
@@ -13010,6 +13010,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/pl/2026-05-17-inzynieria-agentowa-blueprint-bankow-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>Inżynieria agentowa: blueprint banków na 2026</news:title>
+    <news:keywords>inżynieria agentowa, agenci AI, bankowość, blueprint 2026, LLM, automatyzacja, AI w produkcji</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/pl/2023-11-12-eksploracja-generatywnej-ai/index.html</loc>
   <news:news>
     <news:publication>
@@ -13238,18 +13250,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/pl/2026-05-18-inzynieria-agentowa-blueprint-bankow-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>pl-PL</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>Inżynieria agentowa: blueprint banków na 2026</news:title>
-    <news:keywords>inżynieria agentowa, agenci AI, bankowość, blueprint 2026, LLM, automatyzacja, AI w produkcji</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/pl/2024-01-01-trendy-ai-2024-spostrzezenia-i-przewidywania/index.html</loc>
   <news:news>
     <news:publication>
@@ -13274,6 +13274,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/pl/2026-05-16-najlepsza-architektura-infrastruktury-chmurowej-2026/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pl-PL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>Najlepsza architektura infrastruktury chmurowej w 2026 roku: natywny AI…</news:title>
+    <news:keywords>architektura chmurowa 2026, infrastruktura natywna AI, multi-cloud, suwerenna chmura, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, suwerenna AI, modele open-weight</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/pl/2024-03-18-rozwoj-ai-z-multimodalnymi-llm-wnioski-z-mm1/index.html</loc>
   <news:news>
     <news:publication>
@@ -13283,18 +13295,6 @@
     <news:publication_date></news:publication_date>
     <news:title>Rozwój AI z multimodalnymi LLM: wnioski z MM1</news:title>
     <news:keywords>MM1, Apple, multimodalny LLM, AI, machine learning, pretreening, badania</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/pl/2026-05-21-najlepsza-architektura-infrastruktury-chmurowej-2026/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>pl-PL</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>Najlepsza architektura infrastruktury chmurowej w 2026 roku: natywny AI…</news:title>
-    <news:keywords>architektura chmurowa 2026, infrastruktura natywna AI, multi-cloud, suwerenna chmura, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, suwerenna AI, modele open-weight</news:keywords>
   </news:news>
 </url>
 <url>
@@ -13367,6 +13367,18 @@
     <news:publication_date></news:publication_date>
     <news:title>重溫露西的 U 盤：貝松所看到的知識向機器遷移</news:title>
     <news:keywords>露西, 盧克·貝松, AI, 大型語言模型, 量子計算, 中性原子, 全腦模擬, Neuralink, 知識遷移, 基質獨立</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-05-16-2026-zuijia-yun-jichu-jiagou-tw/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hant-TW</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>2026 年最佳雲端基礎設施架構:面向金融服務的 AI 原生、多雲、量子感知藍圖</news:title>
+    <news:keywords>2026 雲端架構, AI 原生基礎設施, 多雲, 主權雲, 美國 CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, 主權 AI, 開放權重模型</news:keywords>
   </news:news>
 </url>
 <url>
@@ -13502,18 +13514,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/zh-hant/2026-05-21-2026-zuijia-yun-jichu-jiagou-tw/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>zh-Hant-TW</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>2026 年最佳雲端基礎設施架構:面向金融服務的 AI 原生、多雲、量子感知藍圖</news:title>
-    <news:keywords>2026 雲端架構, AI 原生基礎設施, 多雲, 主權雲, 美國 CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, 主權 AI, 開放權重模型</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/zh-hant/2024-02-12-akande-yuyin-zhushou-biange-geren-yu-gaoguan-fuwu-tw/index.html</loc>
   <news:news>
     <news:publication>
@@ -13571,6 +13571,18 @@
     <news:publication_date></news:publication_date>
     <news:title>Shokunin：最快的基於 Rust 的靜態網站生成器</news:title>
     <news:keywords>Shokunin, 靜態網站生成器, SSG, Rust, Markdown, SEO, WCAG, ADA, PWA, RSS</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hant/2026-05-17-ai-dailixing-gongcheng-yinhang-2026-lantu-tw/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>zh-Hant</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>面向銀行的代理式工程：2026 年高管團隊與工程師藍圖</news:title>
+    <news:keywords>代理式工程, 規範驅動開發, 銀行, 金融服務, AI 治理, 歐盟 AI 法案, DORA, SR 11-7, COBOL 現代化, Claude Code</news:keywords>
   </news:news>
 </url>
 <url>
@@ -13838,18 +13850,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/zh-hant/2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu-tw/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>zh-Hant</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>面向銀行的代理式工程：2026 年高管團隊與工程師藍圖</news:title>
-    <news:keywords>代理式工程, 規範驅動開發, 銀行, 金融服務, AI 治理, 歐盟 AI 法案, DORA, SR 11-7, COBOL 現代化, Claude Code</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/zh-hant/2024-02-19-jiedu-gemini-google-ai-biange-jiexi-tw/index.html</loc>
   <news:news>
     <news:publication>
@@ -13883,18 +13883,6 @@
     <news:publication_date></news:publication_date>
     <news:title>革新广告业：AI 如何塑造未来</news:title>
     <news:keywords>AI 广告, 亚马逊 Rufus, Meta, 生成式 AI, 个性化, 对话商业, 创意工具, 投资回报率, 广告策略, 消费者参与</news:keywords>
-  </news:news>
-</url>
-<url>
-  <loc>https://sebastienrousseau.com/zh-hans/2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name></news:name>
-      <news:language>zh-Hans</news:language>
-    </news:publication>
-    <news:publication_date></news:publication_date>
-    <news:title>面向银行的代理式工程：2026 年高管团队与工程师蓝图</news:title>
-    <news:keywords>代理式工程, 规范驱动开发, 银行, 金融服务, AI 治理, 欧盟 AI 法案, DORA, SR 11-7, COBOL 现代化, Claude Code</news:keywords>
   </news:news>
 </url>
 <url>
@@ -14042,6 +14030,18 @@
   </news:news>
 </url>
 <url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-16-2026-zuijia-yun-jichu-jiagou/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图</news:title>
+    <news:keywords>2026 云架构, AI 原生基础设施, 多云, 主权云, 美国 CLOUD 法案, Bleu, S3NS, AWS European Sovereign Cloud, 主权 AI, 开权重模型</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/zh-hans/2023-09-29-yong-pain001-zidonghua-iso-20022-zhifu-wenjian/index.html</loc>
   <news:news>
     <news:publication>
@@ -14126,18 +14126,6 @@
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/zh-hans/2026-05-21-2026-zuijia-yun-jichu-jiagou/index.html</loc>
-  <news:news>
-    <news:publication>
-      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
-      <news:language>zh-Hans</news:language>
-    </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图</news:title>
-    <news:keywords>2026 云架构, AI 原生基础设施, 多云, 主权云, 美国 CLOUD 法案, Bleu, S3NS, AWS European Sovereign Cloud, 主权 AI, 开权重模型</news:keywords>
-  </news:news>
-</url>
-<url>
   <loc>https://sebastienrousseau.com/zh-hans/2023-12-11-liangzi-miyao-fenfa-yinhang-anquan-de-biange/index.html</loc>
   <news:news>
     <news:publication>
@@ -14147,6 +14135,18 @@
     <news:publication_date></news:publication_date>
     <news:title>量子密钥分发：银行安全的变革</news:title>
     <news:keywords>量子密钥分发, QKD, 量子纠缠, 量子计算, HSBC, BT, 东芝, AWS, 银行业网络安全, 后量子密码学</news:keywords>
+  </news:news>
+</url>
+<url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-17-ai-dailixing-gongcheng-yinhang-2026-lantu/index.html</loc>
+  <news:news>
+    <news:publication>
+      <news:name></news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date></news:publication_date>
+    <news:title>面向银行的代理式工程：2026 年高管团队与工程师蓝图</news:title>
+    <news:keywords>代理式工程, 规范驱动开发, 银行, 金融服务, AI 治理, 欧盟 AI 法案, DORA, SR 11-7, COBOL 现代化, Claude Code</news:keywords>
   </news:news>
 </url>
 <url>

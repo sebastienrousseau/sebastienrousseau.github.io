@@ -6,14 +6,38 @@
     <description>AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography.</description>
     <atom:link href="https://sebastienrousseau.com/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Thu, 21 May 2026 06:06:06 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2026 06:06:06 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
     <item>
+      <title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</link>
+      <description>Agentic AI has crossed from pilot into production across global banking. 70% of institutions are using it to some degree; only one in five has a mature governance model. Meanwhile, autonomous adversaries are operating at machine speed, the legacy COBOL estate the new systems must interoperate with was written for the batch-processing assumptions of the 1960s, and the EU AI Act&apos;s August 2026 high-risk deadline is twelve weeks away. This is the engineering and governance position a bank needs to hold.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</guid>
+      <pubDate>Sun, 17 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>agentic engineering</category>
+      <category>spec-driven development</category>
+      <category>banks</category>
+      <category>AI governance</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+      <category>COBOL modernisation</category>
+      <category>autonomous agents</category>
+      <category>HITL</category>
+      <category>HOTL</category>
+      <category>TPRM</category>
+      <category>AIBOM</category>
+      <category>Claude Code</category>
+      <category>post-quantum cryptography</category>
+    </item>
+    <item>
       <title>The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</title>
-      <link>https://sebastienrousseau.com/ha/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</link>
+      <link>https://sebastienrousseau.com/ha/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</link>
       <description>Cloud architecture in 2026 has crystallised around six pillars: AI-native infrastructure, intelligent multi-cloud, serverless-first design with WebAssembly at the edge, edge computing, automated security with crypto-agility, and sustainable high-density operations. For banks, the question is whether to consume cloud or design it — under converging pressure from agentic commerce, agentic unit economics, harvest-now-decrypt-later quantum risk, MCP security and algorithmic contagion, cryptographic agent identity, continuous-treasury demands, and the EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>Technology</category>
@@ -60,10 +84,10 @@
     </item>
     <item>
       <title>2026'da En İyi Bulut Altyapı Mimarisi: Finansal Hizmetler için AI-Yerel, Çoklu Bulut, Kuantum-Farkındalıklı Bir Şablon</title>
-      <link>https://sebastienrousseau.com/tr/2026-05-21-bankalar-icin-en-iyi-bulut-mimarisi-2026/index.html</link>
+      <link>https://sebastienrousseau.com/tr/2026-05-16-bankalar-icin-en-iyi-bulut-mimarisi-2026/index.html</link>
       <description>2026&apos;da bulut mimarisi altı sütun etrafında kristalleşti: AI-yerel altyapı, akıllı çoklu bulut, uçta WebAssembly ile sunucusuz-öncelikli tasarım, uç bilişim, kripto-çeviklik ile otomatik güvenlik ve sürdürülebilir yüksek yoğunluklu operasyonlar. Bankalar için soru, bulutu tüketmek mi yoksa tasarlamak mı olduğudur — ajansal ticaret, ajansal birim ekonomisi, şimdi-topla-sonra-deşifre-et kuantum riski, MCP güvenliği ve algoritmik bulaşma, kriptografik ajan kimliği, sürekli hazine talepleri ve AB AI Yasası&apos;nın yakınsayan baskısı altında.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-21-bankalar-icin-en-iyi-bulut-mimarisi-2026/index.html</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-16-bankalar-icin-en-iyi-bulut-mimarisi-2026/index.html</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>Teknoloji</category>
@@ -110,10 +134,10 @@
     </item>
     <item>
       <title>Arsitektur Infrastruktur Cloud Terbaik pada 2026: Cetak Biru AI-Native, Multi-Cloud, dan Sadar-Kuantum untuk Jasa Keuangan</title>
-      <link>https://sebastienrousseau.com/id/2026-05-21-arsitektur-infrastruktur-cloud-terbaik-untuk-bank-2026/index.html</link>
+      <link>https://sebastienrousseau.com/id/2026-05-16-arsitektur-infrastruktur-cloud-terbaik-untuk-bank-2026/index.html</link>
       <description>Arsitektur cloud pada 2026 telah mengkristal pada enam pilar: infrastruktur AI-native, multi-cloud cerdas, desain serverless-first dengan WebAssembly di edge, edge computing, keamanan otomatis dengan crypto-agility, serta operasi berkepadatan tinggi yang berkelanjutan. Bagi bank, pertanyaannya adalah apakah harus mengonsumsi cloud atau merancangnya — di tengah tekanan konvergen dari agentic commerce, ekonomi unit agentic, risiko kuantum harvest-now-decrypt-later, keamanan MCP dan algorithmic contagion, identitas agen kriptografis, tuntutan continuous treasury, serta EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-21-arsitektur-infrastruktur-cloud-terbaik-untuk-bank-2026/index.html</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-16-arsitektur-infrastruktur-cloud-terbaik-untuk-bank-2026/index.html</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>Teknologi</category>
@@ -160,10 +184,10 @@
     </item>
     <item>
       <title>2026년 최선의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티클라우드, 양자 인식 청사진</title>
-      <link>https://sebastienrousseau.com/ko/2026-05-21-2026-choeseon-keulaeudeu-infra-akitekcheo/index.html</link>
+      <link>https://sebastienrousseau.com/ko/2026-05-16-2026-choeseon-keulaeudeu-infra-akitekcheo/index.html</link>
       <description>2026년 클라우드 아키텍처는 여섯 가지 기둥을 중심으로 결정화되었습니다: AI 네이티브 인프라, 지능형 멀티클라우드, 엣지에서의 WebAssembly를 활용한 서버리스 우선 설계, 엣지 컴퓨팅, 암호 민첩성을 갖춘 자동화된 보안, 그리고 지속 가능한 고밀도 운영. 은행에게 질문은 클라우드를 소비할 것인가 설계할 것인가입니다 — 에이전트 상거래, 에이전트 단위 경제학, 지금-수확-나중-해독 양자 위험, MCP 보안과 알고리즘 전염, 암호학적 에이전트 신원, 연속 트레저리 요구사항, 그리고 EU AI Act의 수렴하는 압력 아래에서 말입니다.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-21-2026-choeseon-keulaeudeu-infra-akitekcheo/index.html</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-16-2026-choeseon-keulaeudeu-infra-akitekcheo/index.html</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>Technology</category>
@@ -210,10 +234,10 @@
     </item>
     <item>
       <title>Ang Pinakamahusay na Arkitektura ng Cloud Infrastructure sa 2026: Isang AI-Native, Multi-Cloud, Quantum-Aware na Blueprint para sa Financial Services</title>
-      <link>https://sebastienrousseau.com/fil/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</link>
+      <link>https://sebastienrousseau.com/fil/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</link>
       <description>Ang arkitektura ng cloud sa 2026 ay nag-crystallise sa anim na haligi: AI-native infrastructure, intelligent multi-cloud, serverless-first design na may WebAssembly sa edge, edge computing, automated security na may crypto-agility, at sustainable high-density operations. Para sa mga bangko, ang tanong ay kung kokonsumuhin ang cloud o idi-disenyo ito — sa ilalim ng nagsasanib na pressure mula sa agentic commerce, agentic unit economics, harvest-now-decrypt-later quantum risk, MCP security at algorithmic contagion, cryptographic agent identity, continuous-treasury demands, at ang EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>Technology</category>
@@ -260,10 +284,10 @@
     </item>
     <item>
       <title>২০২৬ সালে সেরা ক্লাউড অবকাঠামো আর্কিটেকচার: আর্থিক পরিষেবাগুলির জন্য একটি AI-নেটিভ, মাল্টি-ক্লাউড, কোয়ান্টাম-সচেতন ব্লুপ্রিন্ট</title>
-      <link>https://sebastienrousseau.com/bn/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</link>
+      <link>https://sebastienrousseau.com/bn/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</link>
       <description>২০২৬ সালে ক্লাউড আর্কিটেকচার ছয়টি স্তম্ভের চারপাশে স্ফটিকীভূত হয়েছে: AI-নেটিভ অবকাঠামো, বুদ্ধিমান মাল্টি-ক্লাউড, এজে WebAssembly সহ সার্ভারলেস-ফার্স্ট ডিজাইন, এজ কম্পিউটিং, ক্রিপ্টো-চটপটতাসহ স্বয়ংক্রিয় নিরাপত্তা, এবং টেকসই উচ্চ-ঘনত্ব অপারেশন। ব্যাংকগুলির জন্য, প্রশ্নটি হল ক্লাউড গ্রহণ করা বা এটি ডিজাইন করা — এজেন্টিক বাণিজ্য, এজেন্টিক ইউনিট অর্থনীতি, harvest-now-decrypt-later কোয়ান্টাম ঝুঁকি, MCP নিরাপত্তা এবং অ্যালগরিদমিক সংক্রমণ, ক্রিপ্টোগ্রাফিক এজেন্ট পরিচয়, ক্রমাগত-ট্রেজারি চাহিদা, এবং EU AI Act-এর কনভার্জিং চাপের অধীনে।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>Technology</category>
@@ -310,10 +334,10 @@
     </item>
     <item>
       <title>De beste cloudinfrastructuur-architectuur in 2026: een AI-native, multi-cloud, kwantumbewuste blauwdruk voor financiële dienstverlening</title>
-      <link>https://sebastienrousseau.com/nl/2026-05-21-beste-cloud-infrastructuur-architectuur-voor-banken-2026/index.html</link>
+      <link>https://sebastienrousseau.com/nl/2026-05-16-beste-cloud-infrastructuur-architectuur-voor-banken-2026/index.html</link>
       <description>Cloudarchitectuur is in 2026 uitgekristalliseerd rond zes pijlers: AI-native infrastructuur, intelligente multi-cloud, serverless-first ontwerp met WebAssembly aan de edge, edge computing, geautomatiseerde beveiliging met crypto-agility en duurzame, hoogdichte operaties. Voor banken is de vraag niet langer welke pijler ze moeten overnemen, maar of ze de cloud willen consumeren of ontwerpen — onder de samenkomende druk van agentic commerce, agentic unit economics, harvest-now-decrypt-later kwantumrisico, MCP-beveiliging en algoritmische besmetting, cryptografische agentidentiteit, continue-treasury eisen en de EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-21-beste-cloud-infrastructuur-architectuur-voor-banken-2026/index.html</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-16-beste-cloud-infrastructuur-architectuur-voor-banken-2026/index.html</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>Technologie</category>
@@ -360,10 +384,10 @@
     </item>
     <item>
       <title>أفضل بنية تحتية سحابية في 2026: مخطط أصيل للذكاء الاصطناعي، متعدد السحب، وواعٍ كمياً للخدمات المالية</title>
-      <link>https://sebastienrousseau.com/ar/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</link>
+      <link>https://sebastienrousseau.com/ar/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</link>
       <description>تبلورت بنية السحابة في عام 2026 حول ست ركائز: بنية تحتية أصيلة للذكاء الاصطناعي، وسحابة متعددة ذكية، وتصميم يعتمد على بنية بدون خوادم أولاً مع WebAssembly عند الحافة، والحوسبة الطرفية، والأمان الآلي مع المرونة التشفيرية، والعمليات المستدامة عالية الكثافة. بالنسبة للبنوك، السؤال هو ما إذا كانت ستستهلك السحابة أم تصممها — في ظل ضغوط متقاربة من التجارة الوكيلة، واقتصاديات الوحدة الوكيلة، ومخاطر الكم الناجمة عن استراتيجية الحصاد الآن والفك لاحقاً، وأمان MCP، والعدوى الخوارزمية، وهوية الوكلاء التشفيرية، ومتطلبات الخزانة المستمرة، وقانون الذكاء الاصطناعي للاتحاد الأوروبي.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>Technology</category>
@@ -410,10 +434,10 @@
     </item>
     <item>
       <title>Ìkọ́lé Ìpìlẹ̀ Ìkùukùu Tó Dára Jùlọ ní 2026: Ìlànà AI-Native, Multi-Cloud, Olùmọ̀-Quantum fún Àwọn Iṣẹ́-Ìnáwó</title>
-      <link>https://sebastienrousseau.com/yo/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</link>
+      <link>https://sebastienrousseau.com/yo/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</link>
       <description>Ìkọ́lé ìkùukùu (cloud) ní 2026 ti dí kírísítà yí àwọn ọwọ́n mẹ́fà ká: ìpìlẹ̀ AI-native, multi-cloud onílàákàyè, ìpilẹ̀ṣẹ̀ serverless-first pẹ̀lú WebAssembly ní etí, ìṣirò etí (edge computing), ààbò aládàáṣe pẹ̀lú crypto-agility, àti àwọn iṣẹ́ alágbéró tó ní ìpọnjú gíga. Fún àwọn báńkì, ìbéèrè náà ni bóyá láti jẹ ìkùukùu tàbí láti ṣe ìkọ́lé rẹ̀ — lábẹ́ ìtẹ̀mọ́lẹ̀ tó ń dìmúpọ̀ láti agentic commerce, agentic unit economics, ewu quantum harvest-now-decrypt-later, ààbò MCP àti àjàkálẹ̀-ọ̀rọ̀ algorithmic, ìdánimọ̀ olùṣe-iṣẹ́ cryptographic, ìbéèrè continuous-treasury, àti EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>Technology</category>
@@ -460,10 +484,10 @@
     </item>
     <item>
       <title>Cea mai bună arhitectură de infrastructură cloud în 2026: un plan AI-nativ, multi-cloud și conștient cuantic pentru serviciile financiare</title>
-      <link>https://sebastienrousseau.com/ro/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</link>
+      <link>https://sebastienrousseau.com/ro/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</link>
       <description>Arhitectura cloud în 2026 s-a cristalizat în jurul a șase piloni: infrastructură AI-nativă, multi-cloud inteligent, design serverless-first cu WebAssembly la edge, edge computing, securitate automatizată cu agilitate criptografică și operațiuni sustenabile de înaltă densitate. Pentru bănci, întrebarea este dacă să consume cloud sau să îl proiecteze — sub presiunea convergentă a comerțului agentic, a economiei unitare agentice, a riscului cuantic harvest-now-decrypt-later, a securității MCP și a contagiunii algoritmice, a identității criptografice a agenților, a cerințelor de trezorerie continuă și a Legii UE privind IA.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-21-best-cloud-infrastructure-architecture-2026/index.html</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>Tehnologie</category>
@@ -510,10 +534,10 @@
     </item>
     <item>
       <title>Лучшая облачная инфраструктурная архитектура в 2026 году: AI-native, multi-cloud, квантово-осведомлённый чертёж для финансовых услуг</title>
-      <link>https://sebastienrousseau.com/ru/2026-05-21-luchshaya-cloud-arkhitektura-dlya-bankov-2026/index.html</link>
+      <link>https://sebastienrousseau.com/ru/2026-05-16-luchshaya-cloud-arkhitektura-dlya-bankov-2026/index.html</link>
       <description>Облачная архитектура в 2026 году кристаллизовалась вокруг шести столпов: AI-native инфраструктура, интеллектуальная multi-cloud облачная архитектура, serverless-first дизайн с WebAssembly на edge, edge computing, автоматизированная безопасность с crypto-agility и устойчивые операции высокой плотности. Для банков вопрос состоит в том, потреблять облако или проектировать его — под сходящимся давлением agentic commerce, agentic unit economics, квантового риска harvest-now-decrypt-later, MCP security и algorithmic contagion, криптографической идентичности агентов, требований continuous treasury и EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-21-luchshaya-cloud-arkhitektura-dlya-bankov-2026/index.html</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-16-luchshaya-cloud-arkhitektura-dlya-bankov-2026/index.html</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>Технологии</category>
@@ -560,10 +584,10 @@
     </item>
     <item>
       <title>Nejlepší cloudová infrastrukturní architektura v roce 2026: AI-nativní, multi-cloudový a kvantově odolný plán pro finanční služby</title>
-      <link>https://sebastienrousseau.com/cs/2026-05-21-nejlepsi-cloudova-architektura-pro-banky-2026/index.html</link>
+      <link>https://sebastienrousseau.com/cs/2026-05-16-nejlepsi-cloudova-architektura-pro-banky-2026/index.html</link>
       <description>Cloudová architektura v roce 2026 krystalizovala okolo šesti pilířů: AI-nativní infrastruktura, inteligentní multi-cloud, serverless-first design s WebAssembly na edge, edge computing, automatizovaná bezpečnost s krypto-agilitou a udržitelný provoz s vysokou hustotou. Pro banky je otázkou, zda cloud spotřebovávat, nebo jej navrhovat — pod sbíhajícím se tlakem agentního obchodu, agentní ekonomiky jednotky, kvantového rizika harvest-now-decrypt-later, MCP bezpečnosti a algoritmické nákazy, kryptografické identity agenta, požadavků kontinuální treasury a EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-21-nejlepsi-cloudova-architektura-pro-banky-2026/index.html</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-16-nejlepsi-cloudova-architektura-pro-banky-2026/index.html</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>Technologie</category>
@@ -610,10 +634,10 @@
     </item>
     <item>
       <title>2026年の最良のクラウドインフラストラクチャアーキテクチャ:金融サービスのためのAIネイティブ・マルチクラウド・量子対応設計図</title>
-      <link>https://sebastienrousseau.com/ja/2026-05-21-2026-saiyou-no-kuraudo-infura-aakitekucha/index.html</link>
+      <link>https://sebastienrousseau.com/ja/2026-05-16-2026-saiyou-no-kuraudo-infura-aakitekucha/index.html</link>
       <description>2026年のクラウドアーキテクチャは6本柱に結晶化しました。AIネイティブインフラ、インテリジェントマルチクラウド、エッジでのWebAssemblyを伴うサーバーレスファースト設計、エッジコンピューティング、クリプトアジリティを備えた自動化セキュリティ、そして高密度のサステナブル運用です。銀行にとっての問いは、クラウドを消費するのか、それを設計するのかです — エージェント型コマース、エージェント型ユニットエコノミクス、ハーベスト・ナウ・ディクリプト・レイターの量子リスク、MCPセキュリティとアルゴリズム的伝染、暗号学的エージェントアイデンティティ、継続的トレジャリーの要請、EU AI法という収束する圧力のもとで。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-21-2026-saiyou-no-kuraudo-infura-aakitekucha/index.html</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-16-2026-saiyou-no-kuraudo-infura-aakitekucha/index.html</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>Technology</category>
@@ -660,10 +684,10 @@
     </item>
     <item>
       <title>Den bästa molninfrastrukturarkitekturen 2026: En AI-nativ, multi-cloud, kvantmedveten ritning för finansiella tjänster</title>
-      <link>https://sebastienrousseau.com/sv/2026-05-21-basta-molnarkitektur-for-banker-2026/index.html</link>
+      <link>https://sebastienrousseau.com/sv/2026-05-16-basta-molnarkitektur-for-banker-2026/index.html</link>
       <description>Molnarkitektur 2026 har kristalliserats kring sex pelare: AI-nativ infrastruktur, intelligent multi-cloud, serverlös-först-design med WebAssembly vid edge, edge computing, automatiserad säkerhet med kryptoagilitet och hållbar drift med hög densitet. För banker är frågan om man ska konsumera molnet eller designa det — under konvergerande tryck från agentisk handel, agentisk enhetsekonomi, harvest-now-decrypt-later-kvantrisk, MCP-säkerhet och algoritmisk kontaminering, kryptografisk agentidentitet, krav på kontinuerlig treasury och EU:s AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-21-basta-molnarkitektur-for-banker-2026/index.html</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-16-basta-molnarkitektur-for-banker-2026/index.html</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>Technology</category>
@@ -710,10 +734,10 @@
     </item>
     <item>
       <title>Najlepsza architektura infrastruktury chmurowej w 2026 roku: natywny AI, multi-cloud, świadomy kwantowo plan dla usług finansowych</title>
-      <link>https://sebastienrousseau.com/pl/2026-05-21-najlepsza-architektura-infrastruktury-chmurowej-2026/index.html</link>
+      <link>https://sebastienrousseau.com/pl/2026-05-16-najlepsza-architektura-infrastruktury-chmurowej-2026/index.html</link>
       <description>Architektura chmurowa w 2026 roku skrystalizowała się wokół sześciu filarów: natywnej dla AI infrastruktury, inteligentnej strategii multi-cloud, projektowania serverless-first z WebAssembly na brzegu sieci, przetwarzania na brzegu, zautomatyzowanego bezpieczeństwa z elastycznością kryptograficzną oraz zrównoważonych operacji o wysokiej gęstości. Dla banków pytanie brzmi, czy konsumować chmurę, czy ją projektować — pod zbieżną presją handlu agentowego, ekonomii jednostkowej agentów, ryzyka kwantowego harvest-now-decrypt-later, bezpieczeństwa MCP i zarażenia algorytmicznego, kryptograficznej tożsamości agentów, wymagań ciągłej skarbowości oraz EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-21-najlepsza-architektura-infrastruktury-chmurowej-2026/index.html</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-16-najlepsza-architektura-infrastruktury-chmurowej-2026/index.html</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>Technology</category>
@@ -760,10 +784,10 @@
     </item>
     <item>
       <title>2026 年最佳雲端基礎設施架構:面向金融服務的 AI 原生、多雲、量子感知藍圖</title>
-      <link>https://sebastienrousseau.com/zh-hant/2026-05-21-2026-zuijia-yun-jichu-jiagou-tw/index.html</link>
+      <link>https://sebastienrousseau.com/zh-hant/2026-05-16-2026-zuijia-yun-jichu-jiagou-tw/index.html</link>
       <description>2026 年的雲端架構已圍繞六大支柱固化成形:AI 原生基礎設施、智慧型多雲、以 WebAssembly 為邊緣前提的無伺服器優先設計、邊緣運算、具備密碼敏捷性的自動化資安,以及永續高密度運作。對銀行而言,問題在於要消費雲端,還是設計雲端 — 在代理式商務、代理式單位經濟、現在收割稍後解密的量子風險、MCP 資安與演算法傳染、密碼學代理身分、持續性財務管理需求以及《歐盟人工智慧法》的多重壓力下匯流而至。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-05-21-2026-zuijia-yun-jichu-jiagou-tw/index.html</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-05-16-2026-zuijia-yun-jichu-jiagou-tw/index.html</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>Technology</category>
@@ -810,10 +834,10 @@
     </item>
     <item>
       <title>2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图</title>
-      <link>https://sebastienrousseau.com/zh-hans/2026-05-21-2026-zuijia-yun-jichu-jiagou/index.html</link>
+      <link>https://sebastienrousseau.com/zh-hans/2026-05-16-2026-zuijia-yun-jichu-jiagou/index.html</link>
       <description>2026 年云架构已围绕六大支柱结晶：AI 原生基础设施、智能多云、带边缘 WebAssembly 的无服务器优先设计、边缘计算、带密码敏捷性的自动化安全，以及可持续高密度运营。对银行而言，问题在于消费云还是设计它——在代理式商业、代理式单位经济学、现在收集-未来解密量子风险、MCP 安全与算法传染、密码代理身份、持续财库需求,以及欧盟 AI 法案的汇聚压力下。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-21-2026-zuijia-yun-jichu-jiagou/index.html</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-16-2026-zuijia-yun-jichu-jiagou/index.html</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>技术</category>
@@ -857,30 +881,6 @@
       <category>MCP 安全</category>
       <category>CloudCDN</category>
       <category>Cloudflare</category>
-    </item>
-    <item>
-      <title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
-      <link>https://sebastienrousseau.com/bn/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html</link>
-      <description>Agentic AI has crossed from pilot into production across global banking. 70% of institutions are using it to some degree; only one in five has a mature governance model. Meanwhile, autonomous adversaries are operating at machine speed, the legacy COBOL estate the new systems must interoperate with was written for the batch-processing assumptions of the 1960s, and the EU AI Act&apos;s August 2026 high-risk deadline is twelve weeks away. This is the engineering and governance position a bank needs to hold.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-18-agentic-engineering-banks-blueprint-2026/index.html</guid>
-      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>agentic engineering</category>
-      <category>spec-driven development</category>
-      <category>banks</category>
-      <category>AI governance</category>
-      <category>EU AI Act</category>
-      <category>DORA</category>
-      <category>COBOL modernisation</category>
-      <category>autonomous agents</category>
-      <category>HITL</category>
-      <category>HOTL</category>
-      <category>TPRM</category>
-      <category>AIBOM</category>
-      <category>Claude Code</category>
-      <category>post-quantum cryptography</category>
     </item>
     <item>
       <title>ISO 20022 pacs.008 Structured-Address Migration Checklist — Free PDF</title>

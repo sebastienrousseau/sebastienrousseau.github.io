@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
-  <loc>https://sebastienrousseau.com/bn/2026-05-21-best-cloud-infrastructure-architecture-2026/</loc>
+  <loc>https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>bn-BD</news:language>
     </news:publication>
-    <news:publication_date>2026-05-21T06:06:06+00:00</news:publication_date>
-    <news:title>২০২৬ সালে সেরা ক্লাউড অবকাঠামো আর্কিটেকচার: আর্থিক পরিষেবাগুলির জন্য একটি AI-নেটিভ, মাল্টি-ক্লাউড, কোয়ান্টাম-সচেতন ব্লুপ্রিন্ট</news:title>
-    <news:keywords>ক্লাউড আর্কিটেকচার ২০২৬, AI-নেটিভ অবকাঠামো, মাল্টি-ক্লাউড, সার্বভৌম ক্লাউড, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, সার্বভৌম AI, ওপেন-ওয়েট মডেল, Llama 4, Mistral, কনফিডেনশিয়াল কম্পিউটিং, সার্ভারলেস, এজ কম্পিউটিং, WebAssembly, Wasm, eBPF, Cilium, Tetragon, LEO স্যাটেলাইট এজ, Starlink Enterprise, DevSecOps, টেকসই ডেটা সেন্টার, গ্রিড-সচেতন কম্পিউটিং, লিকুইড কুলিং, Small Modular Reactor, SMR, পারমাণবিক শক্তি, Three Mile Island, Kairos Power, X-Energy, সিলিকন ফোটোনিক্স, কো-প্যাকেজড অপটিক্স, NVIDIA Spectrum-X, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, এজেন্টিক বাণিজ্য, মাল্টি-এজেন্ট স্বার্ম, এজেন্টিক ইউনিট অর্থনীতি, এজেন্ট FinOps, ক্রিপ্টোগ্রাফিক এজেন্ট পরিচয়, SPIFFE, SPIRE, অ্যালগরিদমিক সংক্রমণ, RAG পয়জনিং, ভেক্টর ডেটাবেস নিরাপত্তা, ডেটা প্রভিন্যান্স, Pinecone, Qdrant, Weaviate, Milvus, এজেন্টিক ক্যাওস ইঞ্জিনিয়ারিং, ডেটা গ্র্যাভিটি, এগ্রেস FinOps, HPC, GPU স্টোরেজ, ক্রমাগত ট্রেজারি, সীমাহীন তরলতা, রিয়েল-টাইম পেমেন্ট, CBDC, eCNY, DREX, e-Rupee, BIS Project Agora, ডিজিটাল ইউরো, সিন্থেটিক ডেটা জেনারেশন, JPMorgan মাল্টি-ক্লাউড, Citi আধুনিকীকরণ, গ্রাফ নিউরাল নেটওয়ার্ক, ডিপফেক জালিয়াতি, harvest now decrypt later, HNDL, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, ML-KEM, ML-DSA, ক্রিপ্টো-চটপটতা, কোয়ান্টাম কী ডিস্ট্রিবিউশন, QKD, Basel IV, ক্লাউড কেন্দ্রীকরণ ঝুঁকি, অপারেশনাল ঝুঁকি RWA, MCP নিরাপত্তা, প্রম্পট ইনজেকশন, সাপ্লাই চেইন আক্রমণ, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
+    <news:publication_date>2026-05-17T06:06:06+00:00</news:publication_date>
+    <news:title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</news:title>
+    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, COBOL modernisation, mainframe, vibe coding, vibe hacking, autonomous agents, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, third-party risk management, TPRM, vendor risk, post-quantum cryptography, agent control plane, FCA, SM&amp;CR, 12-week action plan, Sebastien Rousseau</news:keywords>
   </news:news>
 </url>
 <url>
-  <loc>https://sebastienrousseau.com/bn/2026-05-18-agentic-engineering-banks-blueprint-2026/</loc>
+  <loc>https://sebastienrousseau.com/bn/2026-05-16-best-cloud-infrastructure-architecture-2026/</loc>
   <news:news>
     <news:publication>
       <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
       <news:language>bn-BD</news:language>
     </news:publication>
-    <news:publication_date>2026-05-18T06:06:06+00:00</news:publication_date>
-    <news:title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</news:title>
-    <news:keywords>agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, COBOL modernisation, mainframe, vibe coding, vibe hacking, autonomous agents, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, third-party risk management, TPRM, vendor risk, post-quantum cryptography, agent control plane, FCA, SM&amp;CR, 12-week action plan, Sebastien Rousseau</news:keywords>
+    <news:publication_date>2026-05-16T06:06:06+00:00</news:publication_date>
+    <news:title>২০২৬ সালে সেরা ক্লাউড অবকাঠামো আর্কিটেকচার: আর্থিক পরিষেবাগুলির জন্য একটি AI-নেটিভ, মাল্টি-ক্লাউড, কোয়ান্টাম-সচেতন ব্লুপ্রিন্ট</news:title>
+    <news:keywords>ক্লাউড আর্কিটেকচার ২০২৬, AI-নেটিভ অবকাঠামো, মাল্টি-ক্লাউড, সার্বভৌম ক্লাউড, US CLOUD Act, Bleu, S3NS, AWS European Sovereign Cloud, সার্বভৌম AI, ওপেন-ওয়েট মডেল, Llama 4, Mistral, কনফিডেনশিয়াল কম্পিউটিং, সার্ভারলেস, এজ কম্পিউটিং, WebAssembly, Wasm, eBPF, Cilium, Tetragon, LEO স্যাটেলাইট এজ, Starlink Enterprise, DevSecOps, টেকসই ডেটা সেন্টার, গ্রিড-সচেতন কম্পিউটিং, লিকুইড কুলিং, Small Modular Reactor, SMR, পারমাণবিক শক্তি, Three Mile Island, Kairos Power, X-Energy, সিলিকন ফোটোনিক্স, কো-প্যাকেজড অপটিক্স, NVIDIA Spectrum-X, AWS Bedrock, Google Vertex AI, Azure OpenAI Service, এজেন্টিক বাণিজ্য, মাল্টি-এজেন্ট স্বার্ম, এজেন্টিক ইউনিট অর্থনীতি, এজেন্ট FinOps, ক্রিপ্টোগ্রাফিক এজেন্ট পরিচয়, SPIFFE, SPIRE, অ্যালগরিদমিক সংক্রমণ, RAG পয়জনিং, ভেক্টর ডেটাবেস নিরাপত্তা, ডেটা প্রভিন্যান্স, Pinecone, Qdrant, Weaviate, Milvus, এজেন্টিক ক্যাওস ইঞ্জিনিয়ারিং, ডেটা গ্র্যাভিটি, এগ্রেস FinOps, HPC, GPU স্টোরেজ, ক্রমাগত ট্রেজারি, সীমাহীন তরলতা, রিয়েল-টাইম পেমেন্ট, CBDC, eCNY, DREX, e-Rupee, BIS Project Agora, ডিজিটাল ইউরো, সিন্থেটিক ডেটা জেনারেশন, JPMorgan মাল্টি-ক্লাউড, Citi আধুনিকীকরণ, গ্রাফ নিউরাল নেটওয়ার্ক, ডিপফেক জালিয়াতি, harvest now decrypt later, HNDL, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি, ML-KEM, ML-DSA, ক্রিপ্টো-চটপটতা, কোয়ান্টাম কী ডিস্ট্রিবিউশন, QKD, Basel IV, ক্লাউড কেন্দ্রীকরণ ঝুঁকি, অপারেশনাল ঝুঁকি RWA, MCP নিরাপত্তা, প্রম্পট ইনজেকশন, সাপ্লাই চেইন আক্রমণ, CloudCDN, Cloudflare Workers, Durable Objects, WCAG-AA, Sebastien Rousseau</news:keywords>
   </news:news>
 </url>
 <url>

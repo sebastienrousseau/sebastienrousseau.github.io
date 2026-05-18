@@ -270,6 +270,6 @@ Approximate gate runtimes on GitHub-hosted runners:
 **pa11y is the long pole.** A full sweep over 1849 pages takes 35-45 minutes. There's no shortcut — every page must be rendered and probed for WCAG violations. For tight iteration loops, run pa11y locally against a subset:
 
 ```bash
-echo "http://127.0.0.1:8000/2026-05-21-best-cloud-infrastructure-architecture-2026/" > pa11y-subset.txt
+echo "http://127.0.0.1:8000/2026-05-16-best-cloud-infrastructure-architecture-2026/" > pa11y-subset.txt
 npx pa11y-ci --sitemap none --threshold 0 --reporter junit < pa11y-subset.txt
 ```

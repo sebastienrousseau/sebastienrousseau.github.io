@@ -1,11 +1,11 @@
 {
+  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
+  "language": "de",
   "date": "January 9, 2018",
-  "title": "Die Technologie hinter Blockchain verstehen",
   "subtitle": "Eine Kryptowährung auf Ethereum aufbauen — Schritt für Schritt",
   "keywords": "Blockchain, Ethereum, Smart Contract, Kryptowährung, Solidity, Geth, dApps, ERC-20, Tokenisierung, Testnet",
-  "language": "de",
-  "locale": "de_DE",
-  "description": "Eine Kryptowährung auf der Ethereum-Blockchain entwickeln: ein umfassender Leitfaden zur Blockchain-Entwicklung, Tokenisierung und Implementierung einer Kryptowährung.",
   "banner_alt": "Ausgeschalteter Laptop auf einem braunen Holztisch",
-  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp"
+  "title": "Die Technologie hinter Blockchain verstehen",
+  "description": "Eine Kryptowährung auf der Ethereum-Blockchain entwickeln: ein umfassender Leitfaden zur Blockchain-Entwicklung, Tokenisierung und Implementierung einer Kryptowährung.",
+  "locale": "de_DE"
 }

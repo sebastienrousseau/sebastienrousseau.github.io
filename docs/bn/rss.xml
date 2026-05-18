@@ -6,14 +6,55 @@
     <description>বাংলা প্রবন্ধ: প্রায়োগিক এআই, ISO 20022 পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের রূপান্তর।</description>
     <atom:link href="https://sebastienrousseau.com/bn/rss.xml" rel="self" type="application/rss+xml"/>
     <language>bn-BD</language>
-    <lastBuildDate>Sun, 17 May 2026 09:16:05 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 06:28:50 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।</copyright>
     <item>
+      <title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026/</link>
+      <description>Agentic AI has crossed from pilot into production across global banking. 70% of institutions are using it to some degree; only one in five has a mature governance model. Meanwhile, autonomous adversaries are operating at machine speed, the legacy COBOL estate the new systems must interoperate with was written for the batch-processing assumptions of the 1960s, and the EU AI Act&apos;s August 2026 high-risk deadline is twelve weeks away. This is the engineering and governance position a bank needs to hold.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026/</guid>
+      <pubDate>Sun, 17 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
+      <category>agentic engineering</category>
+      <category>spec-driven development</category>
+      <category>banks</category>
+      <category>financial services</category>
+      <category>AI governance</category>
+      <category>EU AI Act</category>
+      <category>DORA</category>
+      <category>SR 11-7</category>
+      <category>NIST AI RMF</category>
+      <category>ISO 42001</category>
+      <category>COBOL modernisation</category>
+      <category>mainframe</category>
+      <category>vibe coding</category>
+      <category>vibe hacking</category>
+      <category>autonomous agents</category>
+      <category>Claude Code</category>
+      <category>GitHub Spec Kit</category>
+      <category>AI Bill of Materials</category>
+      <category>AIBOM</category>
+      <category>human in the loop</category>
+      <category>HITL</category>
+      <category>human on the loop</category>
+      <category>HOTL</category>
+      <category>third-party risk management</category>
+      <category>TPRM</category>
+      <category>vendor risk</category>
+      <category>post-quantum cryptography</category>
+      <category>agent control plane</category>
+      <category>FCA</category>
+      <category>SM&amp;CR</category>
+      <category>12-week action plan</category>
+      <category>Sebastien Rousseau</category>
+    </item>
+    <item>
       <title>২০২৬ সালে সেরা ক্লাউড অবকাঠামো আর্কিটেকচার: আর্থিক পরিষেবাগুলির জন্য একটি AI-নেটিভ, মাল্টি-ক্লাউড, কোয়ান্টাম-সচেতন ব্লুপ্রিন্ট</title>
-      <link>https://sebastienrousseau.com/bn/2026-05-21-best-cloud-infrastructure-architecture-2026/</link>
+      <link>https://sebastienrousseau.com/bn/2026-05-16-best-cloud-infrastructure-architecture-2026/</link>
       <description>২০২৬ সালে ক্লাউড আর্কিটেকচার ছয়টি স্তম্ভের চারপাশে স্ফটিকীভূত হয়েছে: AI-নেটিভ অবকাঠামো, বুদ্ধিমান মাল্টি-ক্লাউড, এজে WebAssembly সহ সার্ভারলেস-ফার্স্ট ডিজাইন, এজ কম্পিউটিং, ক্রিপ্টো-চটপটতাসহ স্বয়ংক্রিয় নিরাপত্তা, এবং টেকসই উচ্চ-ঘনত্ব অপারেশন। ব্যাংকগুলির জন্য, প্রশ্নটি হল ক্লাউড গ্রহণ করা বা এটি ডিজাইন করা — এজেন্টিক বাণিজ্য, এজেন্টিক ইউনিট অর্থনীতি, harvest-now-decrypt-later কোয়ান্টাম ঝুঁকি, MCP নিরাপত্তা এবং অ্যালগরিদমিক সংক্রমণ, ক্রিপ্টোগ্রাফিক এজেন্ট পরিচয়, ক্রমাগত-ট্রেজারি চাহিদা, এবং EU AI Act-এর কনভার্জিং চাপের অধীনে।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-21-best-cloud-infrastructure-architecture-2026/</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-16-best-cloud-infrastructure-architecture-2026/</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>ক্লাউড আর্কিটেকচার ২০২৬</category>
@@ -106,47 +147,6 @@
       <category>Cloudflare Workers</category>
       <category>Durable Objects</category>
       <category>WCAG-AA</category>
-      <category>Sebastien Rousseau</category>
-    </item>
-    <item>
-      <title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
-      <link>https://sebastienrousseau.com/bn/2026-05-18-agentic-engineering-banks-blueprint-2026/</link>
-      <description>Agentic AI has crossed from pilot into production across global banking. 70% of institutions are using it to some degree; only one in five has a mature governance model. Meanwhile, autonomous adversaries are operating at machine speed, the legacy COBOL estate the new systems must interoperate with was written for the batch-processing assumptions of the 1960s, and the EU AI Act&apos;s August 2026 high-risk deadline is twelve weeks away. This is the engineering and governance position a bank needs to hold.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-18-agentic-engineering-banks-blueprint-2026/</guid>
-      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
-      <category>agentic engineering</category>
-      <category>spec-driven development</category>
-      <category>banks</category>
-      <category>financial services</category>
-      <category>AI governance</category>
-      <category>EU AI Act</category>
-      <category>DORA</category>
-      <category>SR 11-7</category>
-      <category>NIST AI RMF</category>
-      <category>ISO 42001</category>
-      <category>COBOL modernisation</category>
-      <category>mainframe</category>
-      <category>vibe coding</category>
-      <category>vibe hacking</category>
-      <category>autonomous agents</category>
-      <category>Claude Code</category>
-      <category>GitHub Spec Kit</category>
-      <category>AI Bill of Materials</category>
-      <category>AIBOM</category>
-      <category>human in the loop</category>
-      <category>HITL</category>
-      <category>human on the loop</category>
-      <category>HOTL</category>
-      <category>third-party risk management</category>
-      <category>TPRM</category>
-      <category>vendor risk</category>
-      <category>post-quantum cryptography</category>
-      <category>agent control plane</category>
-      <category>FCA</category>
-      <category>SM&amp;CR</category>
-      <category>12-week action plan</category>
       <category>Sebastien Rousseau</category>
     </item>
     <item>

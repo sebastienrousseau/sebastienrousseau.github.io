@@ -175,7 +175,7 @@ External validators worth periodic checks:
 
 ```bash
 # Rich Results Test (Google)
-open "https://search.google.com/test/rich-results?url=https%3A%2F%2Fsebastienrousseau.com%2F2026-05-21-best-cloud-infrastructure-architecture-2026%2F"
+open "https://search.google.com/test/rich-results?url=https%3A%2F%2Fsebastienrousseau.com%2F2026-05-16-best-cloud-infrastructure-architecture-2026%2F"
 
 # Schema.org validator
 open "https://validator.schema.org/?url=https%3A%2F%2Fsebastienrousseau.com%2F"

@@ -6,14 +6,30 @@
     <description>Türkçe makaleler: uygulamalı yapay zeka, ISO 20022 ödemeleri, post-kuantum kriptografi ve toptan ödemelerin dönüşümü.</description>
     <atom:link href="https://sebastienrousseau.com/tr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>tr-TR</language>
-    <lastBuildDate>Sun, 17 May 2026 09:16:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 06:28:51 +0000</lastBuildDate>
     <copyright>© Telif Hakkı 2007 - 2026 - Sebastien Rousseau. Tüm hakları saklıdır.</copyright>
     <item>
+      <title>Ajan tabanlı mühendislik: bankalar için 2026 planı</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-17-ajan-tabanli-muhendislik-bankalar-icin-2026-plani/</link>
+      <description>2026&apos;da bankalarda ajan tabanlı yapay zeka mühendisliğine giriş — mimari, yönetişim ve riskler.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-17-ajan-tabanli-muhendislik-bankalar-icin-2026-plani/</guid>
+      <pubDate>Sun, 17 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
+      <category>ajan tabanlı yapay zeka</category>
+      <category>ajanlar</category>
+      <category>bankacılık</category>
+      <category>2026</category>
+      <category>mimari</category>
+      <category>yönetişim</category>
+      <category>LLM</category>
+    </item>
+    <item>
       <title>2026&apos;da En İyi Bulut Altyapı Mimarisi: Finansal Hizmetler için AI-Yerel, Çoklu Bulut, Kuantum-Farkındalıklı Bir Şablon</title>
-      <link>https://sebastienrousseau.com/tr/2026-05-21-bankalar-icin-en-iyi-bulut-mimarisi-2026/</link>
+      <link>https://sebastienrousseau.com/tr/2026-05-16-bankalar-icin-en-iyi-bulut-mimarisi-2026/</link>
       <description>2026&apos;da bulut mimarisi altı sütun etrafında kristalleşti: AI-yerel altyapı, akıllı çoklu bulut, uçta WebAssembly ile sunucusuz-öncelikli tasarım, uç bilişim, kripto-çeviklik ile otomatik güvenlik ve sürdürülebilir yüksek yoğunluklu operasyonlar. Bankalar için soru, bulutu tüketmek mi yoksa tasarlamak mı olduğudur — ajansal ticaret, ajansal birim ekonomisi, şimdi-topla-sonra-deşifre-et kuantum riski, MCP güvenliği ve algoritmik bulaşma, kriptografik ajan kimliği, sürekli hazine talepleri ve AB AI Yasası&apos;nın yakınsayan baskısı altında.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-21-bankalar-icin-en-iyi-bulut-mimarisi-2026/</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-16-bankalar-icin-en-iyi-bulut-mimarisi-2026/</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>2026 bulut mimarisi</category>
@@ -107,22 +123,6 @@
       <category>Durable Objects</category>
       <category>WCAG-AA</category>
       <category>Sebastien Rousseau</category>
-    </item>
-    <item>
-      <title>Ajan tabanlı mühendislik: bankalar için 2026 planı</title>
-      <link>https://sebastienrousseau.com/tr/2026-05-18-ajan-tabanli-muhendislik-bankalar-icin-2026-plani/</link>
-      <description>2026&apos;da bankalarda ajan tabanlı yapay zeka mühendisliğine giriş — mimari, yönetişim ve riskler.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-18-ajan-tabanli-muhendislik-bankalar-icin-2026-plani/</guid>
-      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
-      <category>ajan tabanlı yapay zeka</category>
-      <category>ajanlar</category>
-      <category>bankacılık</category>
-      <category>2026</category>
-      <category>mimari</category>
-      <category>yönetişim</category>
-      <category>LLM</category>
     </item>
     <item>
       <title>Gizli getiri: BlackRock&apos;un BRSRV / BSTBL ve GENIUS Act&apos;ı çözmek</title>

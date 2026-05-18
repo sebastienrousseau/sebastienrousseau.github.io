@@ -6,14 +6,54 @@
     <description>Artikel auf Deutsch: angewandte KI, ISO-20022-Zahlungen, Post-Quanten-Kryptografie und Transformation des Wholesale-Zahlungsverkehrs.</description>
     <atom:link href="https://sebastienrousseau.com/de/rss.xml" rel="self" type="application/rss+xml"/>
     <language>de-DE</language>
-    <lastBuildDate>Sun, 17 May 2026 09:16:05 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 06:28:50 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle Rechte vorbehalten.</copyright>
     <item>
+      <title>Agentische Engineering für Banken: ein Blueprint 2026 für den Vorstand und die Ingenieure, die ihn bauen werden</title>
+      <link>https://sebastienrousseau.com/de/2026-05-17-agentische-engineering-banken-blueprint-2026/</link>
+      <description>Agentische KI hat den Schritt vom Pilot in die Produktion in der globalen Bankbranche vollzogen. 70 % der Institute setzen sie in irgendeiner Form ein; nur eine von fünf verfügt über ein ausgereiftes Governance-Modell. Gleichzeitig agieren autonome Gegner mit Maschinengeschwindigkeit, das COBOL-Altlast-Inventar, mit dem neue Systeme interoperieren müssen, wurde für die Batch-Annahmen der 1960er Jahre geschrieben, und die Hochrisiko-Frist des EU-KI-Gesetzes (2. August 2026) ist zwölf Wochen entfernt. Dies ist die Engineering- und Governance-Position, die eine Bank einnehmen muss.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-17-agentische-engineering-banken-blueprint-2026/</guid>
+      <pubDate>Sun, 17 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
+      <category>agentische Engineering</category>
+      <category>spezifikationsgesteuerte Entwicklung</category>
+      <category>Banken</category>
+      <category>Finanzdienstleistungen</category>
+      <category>KI-Governance</category>
+      <category>EU-KI-Gesetz</category>
+      <category>DORA</category>
+      <category>SR 11-7</category>
+      <category>NIST AI RMF</category>
+      <category>ISO 42001</category>
+      <category>COBOL-Modernisierung</category>
+      <category>Mainframe</category>
+      <category>Vibe Coding</category>
+      <category>Vibe Hacking</category>
+      <category>autonome Agenten</category>
+      <category>Claude Code</category>
+      <category>GitHub Spec Kit</category>
+      <category>AI Bill of Materials</category>
+      <category>AIBOM</category>
+      <category>Human in the Loop</category>
+      <category>HITL</category>
+      <category>Human on the Loop</category>
+      <category>HOTL</category>
+      <category>TPRM</category>
+      <category>Lieferantenrisiko</category>
+      <category>Post-Quanten-Kryptografie</category>
+      <category>Agent Control Plane</category>
+      <category>FCA</category>
+      <category>SM&amp;CR</category>
+      <category>12-Wochen-Aktionsplan</category>
+      <category>Sebastien Rousseau</category>
+    </item>
+    <item>
       <title>Die beste Cloud-Infrastruktur-Architektur 2026: ein KI-nativer, Multi-Cloud- und quantenbewusster Blueprint für Finanzdienstleister</title>
-      <link>https://sebastienrousseau.com/de/2026-05-21-beste-cloud-infrastruktur-architektur-fuer-banken-2026/</link>
+      <link>https://sebastienrousseau.com/de/2026-05-16-beste-cloud-infrastruktur-architektur-fuer-banken-2026/</link>
       <description>Die Cloud-Architektur 2026 hat sich um sechs Pfeiler kristallisiert: KI-native Infrastruktur, intelligente Multi-Cloud, Serverless-First-Design mit WebAssembly am Edge, Edge Computing, automatisierte Sicherheit mit Krypto-Agilität und nachhaltige, hochdichte Operations. Für Banken stellt sich nicht mehr die Frage, welchen Pfeiler man übernimmt, sondern ob man Cloud konsumiert oder gestaltet – unter dem konvergierenden Druck von agentischem Commerce, agentischer Unit Economics, Harvest-Now-Decrypt-Later-Quantenrisiko, MCP-Sicherheit und algorithmischer Ansteckung, kryptografischer Agentenidentität, kontinuierlichem Treasury, CBDC-Integration, Sovereign Cloud unter dem US CLOUD Act, Basel-IV-Kapitalanforderungen, SMR-Energieverträgen, Silicon Photonics und dem EU-KI-Gesetz.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-21-beste-cloud-infrastruktur-architektur-fuer-banken-2026/</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-16-beste-cloud-infrastruktur-architektur-fuer-banken-2026/</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
       <category>Cloud-Architektur 2026</category>
@@ -106,46 +146,6 @@
       <category>Cloudflare Workers</category>
       <category>Durable Objects</category>
       <category>WCAG-AA</category>
-      <category>Sebastien Rousseau</category>
-    </item>
-    <item>
-      <title>Agentische Engineering für Banken: ein Blueprint 2026 für den Vorstand und die Ingenieure, die ihn bauen werden</title>
-      <link>https://sebastienrousseau.com/de/2026-05-18-agentische-engineering-banken-blueprint-2026/</link>
-      <description>Agentische KI hat den Schritt vom Pilot in die Produktion in der globalen Bankbranche vollzogen. 70 % der Institute setzen sie in irgendeiner Form ein; nur eine von fünf verfügt über ein ausgereiftes Governance-Modell. Gleichzeitig agieren autonome Gegner mit Maschinengeschwindigkeit, das COBOL-Altlast-Inventar, mit dem neue Systeme interoperieren müssen, wurde für die Batch-Annahmen der 1960er Jahre geschrieben, und die Hochrisiko-Frist des EU-KI-Gesetzes (2. August 2026) ist zwölf Wochen entfernt. Dies ist die Engineering- und Governance-Position, die eine Bank einnehmen muss.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-18-agentische-engineering-banken-blueprint-2026/</guid>
-      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
-      <category>agentische Engineering</category>
-      <category>spezifikationsgesteuerte Entwicklung</category>
-      <category>Banken</category>
-      <category>Finanzdienstleistungen</category>
-      <category>KI-Governance</category>
-      <category>EU-KI-Gesetz</category>
-      <category>DORA</category>
-      <category>SR 11-7</category>
-      <category>NIST AI RMF</category>
-      <category>ISO 42001</category>
-      <category>COBOL-Modernisierung</category>
-      <category>Mainframe</category>
-      <category>Vibe Coding</category>
-      <category>Vibe Hacking</category>
-      <category>autonome Agenten</category>
-      <category>Claude Code</category>
-      <category>GitHub Spec Kit</category>
-      <category>AI Bill of Materials</category>
-      <category>AIBOM</category>
-      <category>Human in the Loop</category>
-      <category>HITL</category>
-      <category>Human on the Loop</category>
-      <category>HOTL</category>
-      <category>TPRM</category>
-      <category>Lieferantenrisiko</category>
-      <category>Post-Quanten-Kryptografie</category>
-      <category>Agent Control Plane</category>
-      <category>FCA</category>
-      <category>SM&amp;CR</category>
-      <category>12-Wochen-Aktionsplan</category>
       <category>Sebastien Rousseau</category>
     </item>
     <item>

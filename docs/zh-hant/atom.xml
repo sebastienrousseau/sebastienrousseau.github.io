@@ -4,23 +4,23 @@
   <link href="https://sebastienrousseau.com/zh-hant/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/zh-hant/"/>
   <id>https://sebastienrousseau.com/zh-hant/</id>
-  <updated>2026-05-17T09:16:06+00:00</updated>
+  <updated>2026-05-18T06:28:51+00:00</updated>
   <entry>
-    <title>2026 年最佳雲端基礎設施架構:面向金融服務的 AI 原生、多雲、量子感知藍圖</title>
-    <link href="https://sebastienrousseau.com/zh-hant/2026-05-21-2026-zuijia-yun-jichu-jiagou-tw/"/>
-    <id>https://sebastienrousseau.com/zh-hant/2026-05-21-2026-zuijia-yun-jichu-jiagou-tw/</id>
-    <updated>2026-05-21T06:06:06+00:00</updated>
-    <published>2026-05-21T06:06:06+00:00</published>
-    <summary>2026 年的雲端架構已圍繞六大支柱固化成形:AI 原生基礎設施、智慧型多雲、以 WebAssembly 為邊緣前提的無伺服器優先設計、邊緣運算、具備密碼敏捷性的自動化資安,以及永續高密度運作。對銀行而言,問題在於要消費雲端,還是設計雲端 — 在代理式商務、代理式單位經濟、現在收割稍後解密的量子風險、MCP 資安與演算法傳染、密碼學代理身分、持續性財務管理需求以及《歐盟人工智慧法》的多重壓力下匯流而至。</summary>
+    <title>面向銀行的代理式工程：2026 年高管團隊與工程師藍圖</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-05-17-ai-dailixing-gongcheng-yinhang-2026-lantu-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-05-17-ai-dailixing-gongcheng-yinhang-2026-lantu-tw/</id>
+    <updated>2026-05-17T06:06:06+00:00</updated>
+    <published>2026-05-17T06:06:06+00:00</published>
+    <summary>代理式 AI 已在全球銀行業從試點走向生產；70% 機構在用，僅五分之一擁有成熟治理。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>面向銀行的代理式工程：2026 年高管團隊與工程師藍圖</title>
-    <link href="https://sebastienrousseau.com/zh-hant/2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu-tw/"/>
-    <id>https://sebastienrousseau.com/zh-hant/2026-05-18-ai-dailixing-gongcheng-yinhang-2026-lantu-tw/</id>
-    <updated>2026-05-18T06:06:06+00:00</updated>
-    <published>2026-05-18T06:06:06+00:00</published>
-    <summary>代理式 AI 已在全球銀行業從試點走向生產；70% 機構在用，僅五分之一擁有成熟治理。</summary>
+    <title>2026 年最佳雲端基礎設施架構:面向金融服務的 AI 原生、多雲、量子感知藍圖</title>
+    <link href="https://sebastienrousseau.com/zh-hant/2026-05-16-2026-zuijia-yun-jichu-jiagou-tw/"/>
+    <id>https://sebastienrousseau.com/zh-hant/2026-05-16-2026-zuijia-yun-jichu-jiagou-tw/</id>
+    <updated>2026-05-16T06:06:06+00:00</updated>
+    <published>2026-05-16T06:06:06+00:00</published>
+    <summary>2026 年的雲端架構已圍繞六大支柱固化成形:AI 原生基礎設施、智慧型多雲、以 WebAssembly 為邊緣前提的無伺服器優先設計、邊緣運算、具備密碼敏捷性的自動化資安,以及永續高密度運作。對銀行而言,問題在於要消費雲端,還是設計雲端 — 在代理式商務、代理式單位經濟、現在收割稍後解密的量子風險、MCP 資安與演算法傳染、密碼學代理身分、持續性財務管理需求以及《歐盟人工智慧法》的多重壓力下匯流而至。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

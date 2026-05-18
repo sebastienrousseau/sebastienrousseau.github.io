@@ -6,14 +6,55 @@
     <description>Articles en français : IA appliquée, paiements ISO 20022, cryptographie post-quantique et transformation des paiements wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/fr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fr-FR</language>
-    <lastBuildDate>Sun, 17 May 2026 09:16:05 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 06:28:50 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tous droits réservés.</copyright>
     <item>
+      <title>Ingénierie agentique pour les banques : un blueprint 2026 pour le COMEX et les ingénieurs qui le bâtiront</title>
+      <link>https://sebastienrousseau.com/fr/2026-05-17-ingenierie-agentique-banques-blueprint-2026/</link>
+      <description>L&apos;IA agentique est passée du pilote à la production dans la banque mondiale. 70 % des institutions l&apos;utilisent à un degré ou un autre ; seule une sur cinq a un modèle de gouvernance mature. Les adversaires autonomes opèrent à vitesse machine, l&apos;estate hérité COBOL avec lequel les nouveaux systèmes doivent interopérer a été écrit pour les hypothèses batch des années 1960, et l&apos;échéance « haut risque » du Règlement européen sur l&apos;IA est à douze semaines. Voici la position d&apos;ingénierie et de gouvernance qu&apos;une banque doit tenir.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-17-ingenierie-agentique-banques-blueprint-2026/</guid>
+      <pubDate>Sun, 17 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
+      <category>ingénierie agentique</category>
+      <category>développement piloté par spécification</category>
+      <category>banques</category>
+      <category>services financiers</category>
+      <category>gouvernance IA</category>
+      <category>Règlement européen sur l&apos;IA</category>
+      <category>DORA</category>
+      <category>SR 11-7</category>
+      <category>NIST AI RMF</category>
+      <category>ISO 42001</category>
+      <category>modernisation COBOL</category>
+      <category>mainframe</category>
+      <category>vibe coding</category>
+      <category>vibe hacking</category>
+      <category>agents autonomes</category>
+      <category>Claude Code</category>
+      <category>GitHub Spec Kit</category>
+      <category>AI Bill of Materials</category>
+      <category>AIBOM</category>
+      <category>human in the loop</category>
+      <category>HITL</category>
+      <category>human on the loop</category>
+      <category>HOTL</category>
+      <category>gestion des risques tiers</category>
+      <category>TPRM</category>
+      <category>risque fournisseur</category>
+      <category>cryptographie post-quantique</category>
+      <category>plan de contrôle des agents</category>
+      <category>FCA</category>
+      <category>SM&amp;CR</category>
+      <category>plan d&apos;action 12 semaines</category>
+      <category>Sebastien Rousseau</category>
+    </item>
+    <item>
       <title>La meilleure architecture d&apos;infrastructure cloud en 2026 : un blueprint AI-native, multi-cloud et préparé au quantique pour les services financiers</title>
-      <link>https://sebastienrousseau.com/fr/2026-05-21-meilleure-architecture-cloud-pour-les-banques-2026/</link>
+      <link>https://sebastienrousseau.com/fr/2026-05-16-meilleure-architecture-cloud-pour-les-banques-2026/</link>
       <description>L&apos;architecture cloud en 2026 s&apos;est cristallisée autour de six piliers : infrastructure AI-native, multi-cloud intelligent, conception serverless-first avec WebAssembly en périphérie, edge computing, sécurité automatisée avec crypto-agilité, et opérations durables à haute densité. Pour les banques, la question est de savoir s&apos;il faut consommer le cloud ou le concevoir — sous pression convergente de l&apos;agentic commerce, des unit economics agentiques, du risque quantique harvest-now-decrypt-later, de la sécurité MCP et de la contagion algorithmique, de l&apos;identité cryptographique des agents, des exigences de continuous treasury, et du Règlement européen sur l&apos;IA.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-21-meilleure-architecture-cloud-pour-les-banques-2026/</guid>
-      <pubDate>Thu, 21 May 2026 06:06:06 +0000</pubDate>
+      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-16-meilleure-architecture-cloud-pour-les-banques-2026/</guid>
+      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
       <category>architecture cloud 2026</category>
@@ -106,47 +147,6 @@
       <category>Cloudflare Workers</category>
       <category>Durable Objects</category>
       <category>WCAG-AA</category>
-      <category>Sebastien Rousseau</category>
-    </item>
-    <item>
-      <title>Ingénierie agentique pour les banques : un blueprint 2026 pour le COMEX et les ingénieurs qui le bâtiront</title>
-      <link>https://sebastienrousseau.com/fr/2026-05-18-ingenierie-agentique-banques-blueprint-2026/</link>
-      <description>L&apos;IA agentique est passée du pilote à la production dans la banque mondiale. 70 % des institutions l&apos;utilisent à un degré ou un autre ; seule une sur cinq a un modèle de gouvernance mature. Les adversaires autonomes opèrent à vitesse machine, l&apos;estate hérité COBOL avec lequel les nouveaux systèmes doivent interopérer a été écrit pour les hypothèses batch des années 1960, et l&apos;échéance « haut risque » du Règlement européen sur l&apos;IA est à douze semaines. Voici la position d&apos;ingénierie et de gouvernance qu&apos;une banque doit tenir.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fr/2026-05-18-ingenierie-agentique-banques-blueprint-2026/</guid>
-      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
-      <category>ingénierie agentique</category>
-      <category>développement piloté par spécification</category>
-      <category>banques</category>
-      <category>services financiers</category>
-      <category>gouvernance IA</category>
-      <category>Règlement européen sur l&apos;IA</category>
-      <category>DORA</category>
-      <category>SR 11-7</category>
-      <category>NIST AI RMF</category>
-      <category>ISO 42001</category>
-      <category>modernisation COBOL</category>
-      <category>mainframe</category>
-      <category>vibe coding</category>
-      <category>vibe hacking</category>
-      <category>agents autonomes</category>
-      <category>Claude Code</category>
-      <category>GitHub Spec Kit</category>
-      <category>AI Bill of Materials</category>
-      <category>AIBOM</category>
-      <category>human in the loop</category>
-      <category>HITL</category>
-      <category>human on the loop</category>
-      <category>HOTL</category>
-      <category>gestion des risques tiers</category>
-      <category>TPRM</category>
-      <category>risque fournisseur</category>
-      <category>cryptographie post-quantique</category>
-      <category>plan de contrôle des agents</category>
-      <category>FCA</category>
-      <category>SM&amp;CR</category>
-      <category>plan d&apos;action 12 semaines</category>
       <category>Sebastien Rousseau</category>
     </item>
     <item>

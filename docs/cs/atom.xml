@@ -4,23 +4,23 @@
   <link href="https://sebastienrousseau.com/cs/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/cs/"/>
   <id>https://sebastienrousseau.com/cs/</id>
-  <updated>2026-05-17T09:16:05+00:00</updated>
+  <updated>2026-05-18T06:28:50+00:00</updated>
   <entry>
-    <title>Nejlepší cloudová infrastrukturní architektura v roce 2026: AI-nativní, multi-cloudový a kvantově odolný plán pro finanční služby</title>
-    <link href="https://sebastienrousseau.com/cs/2026-05-21-nejlepsi-cloudova-architektura-pro-banky-2026/"/>
-    <id>https://sebastienrousseau.com/cs/2026-05-21-nejlepsi-cloudova-architektura-pro-banky-2026/</id>
-    <updated>2026-05-21T06:06:06+00:00</updated>
-    <published>2026-05-21T06:06:06+00:00</published>
-    <summary>Cloudová architektura v roce 2026 krystalizovala okolo šesti pilířů: AI-nativní infrastruktura, inteligentní multi-cloud, serverless-first design s WebAssembly na edge, edge computing, automatizovaná bezpečnost s krypto-agilitou a udržitelný provoz s vysokou hustotou. Pro banky je otázkou, zda cloud spotřebovávat, nebo jej navrhovat — pod sbíhajícím se tlakem agentního obchodu, agentní ekonomiky jednotky, kvantového rizika harvest-now-decrypt-later, MCP bezpečnosti a algoritmické nákazy, kryptografické identity agenta, požadavků kontinuální treasury a EU AI Act.</summary>
+    <title>Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán</title>
+    <link href="https://sebastienrousseau.com/cs/2026-05-17-agentni-inzenyrstvi-banky-blueprint-2026/"/>
+    <id>https://sebastienrousseau.com/cs/2026-05-17-agentni-inzenyrstvi-banky-blueprint-2026/</id>
+    <updated>2026-05-17T06:06:06+00:00</updated>
+    <published>2026-05-17T06:06:06+00:00</published>
+    <summary>La IA agéntica ha pasado del piloto a la producción en la banca mundial. El 70 % de las instituciones la utiliza en mayor o menor grado; solo una de cada cinco tiene un modelo de gobernanza maduro. Los adversarios autónomos operan a velocidad de máquina, el estate heredado COBOL con el que los nuevos sistemas deben interoperar fue escrito para las hipótesis batch de los años 1960, y el plazo «alto riesgo» del Reglamento europeo de IA está a doce semanas. He aquí la posición de ingeniería y gobernanza que un banco debe sostener.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán</title>
-    <link href="https://sebastienrousseau.com/cs/2026-05-18-agentni-inzenyrstvi-banky-blueprint-2026/"/>
-    <id>https://sebastienrousseau.com/cs/2026-05-18-agentni-inzenyrstvi-banky-blueprint-2026/</id>
-    <updated>2026-05-18T06:06:06+00:00</updated>
-    <published>2026-05-18T06:06:06+00:00</published>
-    <summary>La IA agéntica ha pasado del piloto a la producción en la banca mundial. El 70 % de las instituciones la utiliza en mayor o menor grado; solo una de cada cinco tiene un modelo de gobernanza maduro. Los adversarios autónomos operan a velocidad de máquina, el estate heredado COBOL con el que los nuevos sistemas deben interoperar fue escrito para las hipótesis batch de los años 1960, y el plazo «alto riesgo» del Reglamento europeo de IA está a doce semanas. He aquí la posición de ingeniería y gobernanza que un banco debe sostener.</summary>
+    <title>Nejlepší cloudová infrastrukturní architektura v roce 2026: AI-nativní, multi-cloudový a kvantově odolný plán pro finanční služby</title>
+    <link href="https://sebastienrousseau.com/cs/2026-05-16-nejlepsi-cloudova-architektura-pro-banky-2026/"/>
+    <id>https://sebastienrousseau.com/cs/2026-05-16-nejlepsi-cloudova-architektura-pro-banky-2026/</id>
+    <updated>2026-05-16T06:06:06+00:00</updated>
+    <published>2026-05-16T06:06:06+00:00</published>
+    <summary>Cloudová architektura v roce 2026 krystalizovala okolo šesti pilířů: AI-nativní infrastruktura, inteligentní multi-cloud, serverless-first design s WebAssembly na edge, edge computing, automatizovaná bezpečnost s krypto-agilitou a udržitelný provoz s vysokou hustotou. Pro banky je otázkou, zda cloud spotřebovávat, nebo jej navrhovat — pod sbíhajícím se tlakem agentního obchodu, agentní ekonomiky jednotky, kvantového rizika harvest-now-decrypt-later, MCP bezpečnosti a algoritmické nákazy, kryptografické identity agenta, požadavků kontinuální treasury a EU AI Act.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
