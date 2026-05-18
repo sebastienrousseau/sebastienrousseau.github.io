@@ -68,10 +68,10 @@ export const CSP_DIRECTIVES = [
   // can only live in the meta-CSP. Browser intersection means the meta
   // hash still gates the actual inline JSON-LD blob; this directive
   // only constrains the external-script allowlist at the header layer.
-  "script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com",
+  "script-src 'self' 'unsafe-inline' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com",
   "frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com",
-  "connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com",
-  "img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://www.googletagmanager.com https://i.scdn.co",
+  "connect-src 'self' https://www.google.com https://open.spotify.com",
+  "img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com",
   "media-src 'self' https://p.scdn.co https://*.scdn.co",
