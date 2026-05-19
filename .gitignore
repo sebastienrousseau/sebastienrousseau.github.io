@@ -59,7 +59,7 @@ coverage
 .coverage
 .coverage.*
 .coveragerc
-.claude/
+.claude/*
 !.claude/commands/
 debug
 Desktop.ini
