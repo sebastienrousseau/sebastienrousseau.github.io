@@ -1,11 +1,11 @@
 {
-  "keywords": "yapay zeka, kuantum, bilgi aktarımı, Lucy Besson, araştırma, makine öğrenmesi",
-  "language": "tr-TR",
   "subtitle": "Yapay zekayı kuantum hesaplama için bilgi aktarımına uygulama",
-  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
-  "description": "Yapay zeka ile kuantum hesaplama arasındaki bilgi aktarımı: temel olarak Lucy Besson tarafından önerilen bir yöntem.",
-  "date": "May 11, 2026",
   "locale": "tr_TR",
-  "banner_alt": "Yapay zeka ve kuantum arasındaki bilgi aktarımının görselleştirmesi",
-  "title": "Lucy Besson: yapay zeka ve kuantum bilgi aktarımı"
+  "title": "Lucy Besson: yapay zeka ve kuantum bilgi aktarımı",
+  "language": "tr-TR",
+  "date": "May 11, 2026",
+  "description": "Yapay zeka ile kuantum hesaplama arasındaki bilgi aktarımı: temel olarak Lucy Besson tarafından önerilen bir yöntem.",
+  "keywords": "yapay zeka, kuantum, bilgi aktarımı, Lucy Besson, araştırma, makine öğrenmesi",
+  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
+  "banner_alt": "Yapay zeka ve kuantum arasındaki bilgi aktarımının görselleştirmesi"
 }

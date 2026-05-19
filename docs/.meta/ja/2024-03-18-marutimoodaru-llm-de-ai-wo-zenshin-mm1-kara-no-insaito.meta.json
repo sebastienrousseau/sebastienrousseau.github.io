@@ -1,12 +1,12 @@
 {
-  "locale": "ja_JP",
-  "date": "March 18, 2024",
-  "title": "マルチモーダル LLM で AI を前進:MM1 からの洞察",
-  "subtitle": "Apple の MM1 論文がマルチモーダル AI 設計を再構築",
-  "banner_alt": "AI の進化を表すビジュアル",
   "language": "ja-JP",
-  "banner": "https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp",
-  "description": "Apple のマルチモーダル大規模言語モデルに関する MM1 論文 —— アーキテクチャ、事前学習戦略、創発的能力 —— の分析。",
+  "last_reviewed": "2026-05-11",
   "keywords": "MM1, Apple AI, マルチモーダル LLM, ビジョン言語, 事前学習, スケーリング法則",
-  "last_reviewed": "2026-05-11"
+  "banner_alt": "AI の進化を表すビジュアル",
+  "description": "Apple のマルチモーダル大規模言語モデルに関する MM1 論文 —— アーキテクチャ、事前学習戦略、創発的能力 —— の分析。",
+  "date": "March 18, 2024",
+  "subtitle": "Apple の MM1 論文がマルチモーダル AI 設計を再構築",
+  "locale": "ja_JP",
+  "banner": "https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp",
+  "title": "マルチモーダル LLM で AI を前進:MM1 からの洞察"
 }

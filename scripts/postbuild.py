@@ -157,12 +157,23 @@ _CSS_MINIFY_COUNT, _CSS_MINIFY_BEFORE, _CSS_MINIFY_AFTER = _bulk_minify_css()
 # Both need to be covered or the browser will refuse to execute scripts
 # whose SRI digest doesn't match.
 
+# GitHub Pages (via Fastly) UNCONDITIONALLY appends a single ``\n`` to
+# every text-class response body — including ``.css``, ``.js``, ``.json``
+# and ``.html``. This is invisible to most consumers but it shifts the
+# on-the-wire SHA-256 by exactly one byte and breaks any SRI hash we
+# computed against the on-disk bytes. We don't control Pages' behaviour,
+# so we bake the trailing newline into the hash computation — the
+# integrity attribute then matches what the browser actually fetches.
+_PAGES_TRAILING_NEWLINE = b"\n"
+
 _csp_dir = PUBLIC / "_csp"
 asset_hashes: dict[str, str] = {}
 if _csp_dir.is_dir():
     for asset in _csp_dir.iterdir():
         if asset.is_file() and asset.suffix in (".js", ".css"):
-            asset_hashes[asset.name] = b64_sha256(asset.read_bytes())
+            asset_hashes[asset.name] = b64_sha256(
+                asset.read_bytes() + _PAGES_TRAILING_NEWLINE,
+            )
 # Top-level fingerprinted JS — main.<hash>.js, sw.<hash>.js, theme-init.<hash>.js.
 # Keyed by both the bare path (matches HTML reference) and the unprefixed name
 # so fix_sri can look it up against either form.
@@ -170,7 +181,9 @@ _top_fp_re = re.compile(r"^[a-z\-_]+\.[a-f0-9]+\.js$", re.IGNORECASE)
 if PUBLIC.is_dir():
     for asset in PUBLIC.iterdir():
         if asset.is_file() and _top_fp_re.match(asset.name):
-            asset_hashes[asset.name] = b64_sha256(asset.read_bytes())
+            asset_hashes[asset.name] = b64_sha256(
+                asset.read_bytes() + _PAGES_TRAILING_NEWLINE,
+            )
 
 # Matches /_csp/<name> OR /<name> for top-level fingerprinted JS aliases.
 # Filenames start with a hex digit or letter (SSG emits 16-char hex hashes for
