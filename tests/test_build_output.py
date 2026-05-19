@@ -343,19 +343,25 @@ def test_all_referenced_fingerprinted_main_js_exist():
 
 @SKIP_IF_NO_BUILD
 def test_integrity_attributes_are_base64_shape():
-    """An ``integrity="sha256-<digest>"`` digest must be base64 (44 chars
-    ending in ``=``), not a 16-char hex shard or anything else."""
+    """Every ``sha256-<digest>`` token inside an integrity attribute
+    must be base64 (44 chars ending in ``=``). The attribute may carry
+    multiple whitespace-separated tokens (post-#95: dual digest for
+    Pages-POP-variant byte append), so we validate each token, not the
+    whole attribute value."""
+    _TOKEN_RE = re.compile(r"sha256-([A-Za-z0-9+/=]+)")
     bad: list[str] = []
     for page in _PAGES[:200]:  # representative slice — checking all 1878 is overkill
         html = page.read_text(encoding="utf-8", errors="ignore")
         for m in re.finditer(
-            r'integrity=(["\'])sha256-([^"\']+)\1', html, re.IGNORECASE,
+            r'integrity=(["\'])([^"\']+)\1', html, re.IGNORECASE,
         ):
-            digest = m.group(2)
-            if len(digest) != 44 or not digest.endswith("="):
-                bad.append(f"{_rel(page)}: {digest!r}")
+            value = m.group(2)
+            for tok in _TOKEN_RE.finditer(value):
+                digest = tok.group(1)
+                if len(digest) != 44 or not digest.endswith("="):
+                    bad.append(f"{_rel(page)}: {digest!r}")
     assert not bad, (
-        "non-base64 SRI digest(s):\n  " + "\n  ".join(bad[:10])
+        "non-base64 SRI digest token(s):\n  " + "\n  ".join(bad[:10])
     )
 
 

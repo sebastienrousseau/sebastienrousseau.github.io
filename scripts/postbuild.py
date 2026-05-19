@@ -274,18 +274,30 @@ _FIRST_IMG_RE = re.compile(
     r'<img\b(?![^>]*\b(?:loading=["\']?lazy)\b)[^>]*\bsrc=["\']([^"\']+)["\']',
     re.IGNORECASE,
 )
-_HAS_LCP_PRELOAD_RE = re.compile(
-    r'<link\b[^>]*\brel=["\']?preload["\']?[^>]*\bas=["\']?image["\']?',
-    re.IGNORECASE,
-)
 _HEAD_CLOSE_RE = re.compile(r'</head>', re.IGNORECASE)
+# Match a preload image link regardless of attribute order — SSG's
+# minifier alphabetises ``as=image`` before ``rel=preload``, so the
+# straightforward ``rel=preload[…]as=image`` regex misses the
+# layout-emitted form. Walk every <link> tag and check both attrs are
+# present independently.
+_LINK_TAG_RE = re.compile(r"<link\b[^>]+>", re.IGNORECASE)
+_REL_PRELOAD_ATTR_RE = re.compile(r"\brel=[\"']?preload\b", re.IGNORECASE)
+_AS_IMAGE_ATTR_RE = re.compile(r"\bas=[\"']?image\b", re.IGNORECASE)
+
+
+def _has_image_preload(html: str) -> bool:
+    for m in _LINK_TAG_RE.finditer(html):
+        tag = m.group(0)
+        if _REL_PRELOAD_ATTR_RE.search(tag) and _AS_IMAGE_ATTR_RE.search(tag):
+            return True
+    return False
 
 
 def inject_lcp_preload(html: str) -> tuple[str, int]:
     """If the page has at least one non-lazy <img> and no existing
     ``rel="preload" as="image"`` link, inject one for the first such
     image. Returns ``(new_html, 1)`` on inject, ``(html, 0)`` otherwise."""
-    if _HAS_LCP_PRELOAD_RE.search(html):
+    if _has_image_preload(html):
         return html, 0
     img_m = _FIRST_IMG_RE.search(html)
     if not img_m:
@@ -375,8 +387,37 @@ def _img_is_high_priority(attrs: str) -> bool:
     return val == "high"
 
 
+_LINK_PRELOAD_IMAGE_RE = re.compile(
+    r"<link\b([^>]*?\brel=[\"']?preload[\"']?[^>]*?\bas=[\"']?image[\"']?[^>]*?|"
+    r"[^>]*?\bas=[\"']?image[\"']?[^>]*?\brel=[\"']?preload[\"']?[^>]*?)>",
+    re.IGNORECASE,
+)
+_LINK_HREF_ANY_RE = re.compile(
+    r"""\bhref=(?:(["'])([^"']+)\1|([^\s>'"]+))""", re.IGNORECASE,
+)
+
+
+def _link_attr_href(attrs: str) -> str | None:
+    m = _LINK_HREF_ANY_RE.search(attrs)
+    if not m:
+        return None
+    return m.group(2) or m.group(3) or None
+
+
+def _wrap_cdn_path(path: str, base_w: int, quality: int) -> str | None:
+    """Return the /api/transform URL for ``path``, or ``None`` if the
+    asset isn't raster or is already wrapped or isn't on the CDN."""
+    if path.startswith("/api/"):
+        return None
+    if not _RASTER_EXT_RE.search(path):
+        return None
+    target_w = max(200, min(base_w * 2, 1600))
+    return _build_cdn_transform_url(path, target_w, quality)
+
+
 def wrap_cdn_images_in_transform(html: str) -> tuple[str, int]:
-    """Rewrite every raster ``<img src="https://cloudcdn.pro/...">`` tag
+    """Rewrite every raster ``<img src="https://cloudcdn.pro/...">`` and
+    every ``<link rel="preload" as="image" href="https://cloudcdn.pro/...">``
     to use the CDN's /api/transform endpoint with a width-matched WebP.
 
     Returns ``(new_html, n_rewrites)``. SVG sources, already-wrapped
@@ -385,30 +426,19 @@ def wrap_cdn_images_in_transform(html: str) -> tuple[str, int]:
     """
     n = 0
 
-    def patch(match: re.Match[str]) -> str:
+    def patch_img(match: re.Match[str]) -> str:
         nonlocal n
         attrs = match.group(1)
         src = _img_attr_src(attrs)
-        if not src:
-            return match.group(0)
-        if not src.startswith(_CDN_HOST + "/"):
+        if not src or not src.startswith(_CDN_HOST + "/"):
             return match.group(0)
         # Strip the host + any query/fragment to isolate the on-CDN path.
         path = src[len(_CDN_HOST):].split("?", 1)[0].split("#", 1)[0]
-        # Already wrapped — leave alone.
-        if path.startswith("/api/"):
-            return match.group(0)
-        # SVG passthrough — transform doesn't rasterise vector sources,
-        # so wrapping just adds bytes without shrinking.
-        if not _RASTER_EXT_RE.search(path):
-            return match.group(0)
-        # Choose a target width. We aim for 2× the rendered width so
-        # retina clients still get a crisp render; the CDN's network-aware
-        # downgrade trims quality on slow links. Floor 200, ceiling 1600.
         base_w = _img_attr_width(attrs) or 600
-        target_w = max(200, min(base_w * 2, 1600))
         quality = 85 if _img_is_high_priority(attrs) else 80
-        new_src = _build_cdn_transform_url(path, target_w, quality)
+        new_src = _wrap_cdn_path(path, base_w, quality)
+        if new_src is None:
+            return match.group(0)
         # Splice the new src into the attribute string, preserving quote
         # style. Match both quoted and unquoted src= forms.
         new_attrs, n_sub = _IMG_SRC_ANY_RE.subn(
@@ -419,7 +449,30 @@ def wrap_cdn_images_in_transform(html: str) -> tuple[str, int]:
         n += 1
         return f"<img{new_attrs}>"
 
-    out = _IMG_TAG_TRANSFORM_RE.sub(patch, html)
+    def patch_preload(match: re.Match[str]) -> str:
+        nonlocal n
+        attrs = match.group(1)
+        href = _link_attr_href(attrs)
+        if not href or not href.startswith(_CDN_HOST + "/"):
+            return match.group(0)
+        path = href[len(_CDN_HOST):].split("?", 1)[0].split("#", 1)[0]
+        # Preloads don't carry a width hint; fetchpriority="high" on a
+        # preload IS the LCP hero signal, so use the LCP defaults.
+        quality = 85 if _img_is_high_priority(attrs) else 80
+        # Default width 600 for hero preloads (2× → 1200, capped to 1600).
+        new_href = _wrap_cdn_path(path, base_w=600, quality=quality)
+        if new_href is None:
+            return match.group(0)
+        new_attrs, n_sub = _LINK_HREF_ANY_RE.subn(
+            f'href="{new_href}"', attrs, count=1,
+        )
+        if n_sub == 0:
+            return match.group(0)
+        n += 1
+        return f"<link{new_attrs}>"
+
+    out = _IMG_TAG_TRANSFORM_RE.sub(patch_img, html)
+    out = _LINK_PRELOAD_IMAGE_RE.sub(patch_preload, out)
     return out, n
 
 

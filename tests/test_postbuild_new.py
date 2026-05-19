@@ -615,6 +615,58 @@ def test_build_cdn_transform_url_encodes_path_segments():
     assert "&w=400&format=webp&q=80" in out
 
 
+def test_wrap_cdn_images_also_rewrites_preload_link_href():
+    """``<link rel="preload" as="image" href="...">`` carrying a bare
+    CDN URL was a regression source — the template-emitted preload
+    pointed at the raw 350 KB PNG while the corresponding <img> used the
+    transform-wrapped URL, so the browser fetched both. Wrap pass now
+    rewrites the preload too."""
+    html = (
+        '<link rel="preload" as="image" '
+        'href="https://cloudcdn.pro/stocks/images/hero.png" fetchpriority="high">'
+    )
+    out, n = pb.wrap_cdn_images_in_transform(html)
+    assert n == 1
+    assert "/api/transform?url=/stocks/images/hero.png" in out
+    # fetchpriority=high on a preload is the LCP signal — q=85.
+    assert "q=85" in out
+
+
+def test_wrap_cdn_preload_handles_reverse_attribute_order():
+    """SSG's minifier may emit ``as=image`` before ``rel=preload``."""
+    html = (
+        '<link as=image fetchpriority=high '
+        'href=https://cloudcdn.pro/stocks/images/hero.png rel=preload>'
+    )
+    out, n = pb.wrap_cdn_images_in_transform(html)
+    assert n == 1
+    assert "/api/transform?url=/stocks/images/hero.png" in out
+
+
+def test_wrap_cdn_preload_skips_svg_passthrough():
+    html = (
+        '<link rel="preload" as="image" '
+        'href="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/hsbc.svg">'
+    )
+    out, n = pb.wrap_cdn_images_in_transform(html)
+    assert (out, n) == (html, 0)
+
+
+def test_wrap_cdn_preload_skips_non_cdn_origin():
+    html = '<link rel="preload" as="image" href="https://example.com/hero.webp">'
+    out, n = pb.wrap_cdn_images_in_transform(html)
+    assert (out, n) == (html, 0)
+
+
+def test_wrap_cdn_preload_skips_already_wrapped_url():
+    html = (
+        '<link rel="preload" as="image" '
+        'href="https://cloudcdn.pro/api/transform?url=/x.webp&w=400">'
+    )
+    out, n = pb.wrap_cdn_images_in_transform(html)
+    assert (out, n) == (html, 0)
+
+
 def test_img_attr_helpers_parse_quoted_and_unquoted():
     assert pb._img_attr_src('src="foo.webp"') == "foo.webp"
     assert pb._img_attr_src("src='bar.webp'") == "bar.webp"
