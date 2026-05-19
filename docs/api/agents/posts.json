@@ -1,6 +1,35 @@
 {
-  "count": 45,
+  "count": 46,
   "posts": [
+    {
+      "slug": "2026-05-19-global-wholesale-payments-economics-2026",
+      "url": "https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/index.html",
+      "date": "2026-05-19",
+      "title": "Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability",
+      "description": "Global wholesale payments in 2026 are being reshaped by ISO 20022 harmonisation, RTGS renewal, extended settlement windows, non-bank access, API governance, DLT pilots, and cross-border payment fragmentation. The economic issue is interoperability, not messaging alone.",
+      "keywords": [
+        "wholesale payments 2026",
+        "global payments economics",
+        "ISO 20022",
+        "RTGS",
+        "cross-border payments",
+        "BIS CPMI",
+        "FSB",
+        "Swift CBPR+",
+        "G20 roadmap",
+        "real time gross settlement",
+        "Project Agora",
+        "Project Mandala",
+        "Project Nexus",
+        "payment interoperability",
+        "correspondent banking",
+        "payment fragmentation",
+        "wholesale CBDC"
+      ],
+      "banner": "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp",
+      "topics": [],
+      "language": "en-GB"
+    },
     {
       "slug": "2026-05-18-quantum-cryptography-standards-developments-2026",
       "url": "https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/index.html",

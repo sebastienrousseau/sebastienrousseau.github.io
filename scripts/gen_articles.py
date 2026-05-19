@@ -13,6 +13,12 @@ SRC = ROOT / "_posts" / "articles.md"
 
 # (date_iso, date_display, eyebrow, title, image_url, image_alt, excerpt, href)
 ARTICLES = [
+    ("2026-05-19", "May 19, 2026", "Payments · ISO 20022 · Cross-Border",
+     "Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability",
+     "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp",
+     "Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots",
+     "Wholesale payments in 2026 are part of macroeconomic resilience: ISO 20022 harmonisation, RTGS renewal and extended operating hours, non-bank access, interlinking, and DLT settlement pilots are converging around the cost of moving global liquidity — and the G20 cross-border targets are still off-track for 2027.",
+     "/2026-05-19-global-wholesale-payments-economics-2026/index.html"),
     ("2026-05-15", "May 15, 2026", "Payments · Stablecoins · Regulation",
      "Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded",
      "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",

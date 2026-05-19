@@ -6,8 +6,34 @@
     <description>מאמרים בעברית: AI יישומי, תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית, וטרנספורמציה של תשלומי סיטונאות.</description>
     <atom:link href="https://sebastienrousseau.com/he/rss.xml" rel="self" type="application/rss+xml"/>
     <language>he-IL</language>
-    <lastBuildDate>Tue, 19 May 2026 14:02:38 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 14:27:40 +0000</lastBuildDate>
     <copyright>© זכויות יוצרים 2007 - 2026 - Sebastien Rousseau. כל הזכויות שמורות.</copyright>
+    <item>
+      <title>Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</title>
+      <link>https://sebastienrousseau.com/he/2026-05-19-global-wholesale-payments-economics-2026/</link>
+      <description>Global wholesale payments in 2026 are being reshaped by ISO 20022 harmonisation, RTGS renewal, extended settlement windows, non-bank access, API governance, DLT pilots, and cross-border payment fragmentation. The economic issue is interoperability, not messaging alone.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-19-global-wholesale-payments-economics-2026/</guid>
+      <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
+      <category>wholesale payments 2026</category>
+      <category>global payments economics</category>
+      <category>ISO 20022</category>
+      <category>RTGS</category>
+      <category>cross-border payments</category>
+      <category>BIS CPMI</category>
+      <category>FSB</category>
+      <category>Swift CBPR+</category>
+      <category>G20 roadmap</category>
+      <category>real time gross settlement</category>
+      <category>Project Agora</category>
+      <category>Project Mandala</category>
+      <category>Project Nexus</category>
+      <category>payment interoperability</category>
+      <category>correspondent banking</category>
+      <category>payment fragmentation</category>
+      <category>wholesale CBDC</category>
+    </item>
     <item>
       <title>איפוס הקריפטוגרפיה הקוונטית ב-2026: תקני PQC, אסמכתת QKD ועבודת ההגירה שבנקים אינם יכולים לדחות</title>
       <link>https://sebastienrousseau.com/he/2026-05-18-quantum-cryptography-standards-developments-2026/</link>

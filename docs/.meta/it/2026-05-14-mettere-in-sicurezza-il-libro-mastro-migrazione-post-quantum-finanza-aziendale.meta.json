@@ -1,11 +1,11 @@
 {
-  "language": "it-IT",
-  "banner_alt": "Migrazione post-quantum nella finanza aziendale",
-  "description": "Una guida pratica alla migrazione post-quantistica per la finanza aziendale: inventory crittografico, valutazione dei rischi, piani di transizione e governance.",
-  "subtitle": "Un piano pratico per i CFO e i tesorieri",
   "date": "May 14, 2026",
+  "description": "Una guida pratica alla migrazione post-quantistica per la finanza aziendale: inventory crittografico, valutazione dei rischi, piani di transizione e governance.",
+  "banner_alt": "Migrazione post-quantum nella finanza aziendale",
+  "language": "it-IT",
   "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
   "locale": "it_IT",
   "keywords": "post-quantum, finanza aziendale, CFO, tesoreria, migrazione crittografica, inventory, governance",
-  "title": "Mettere in sicurezza il libro mastro: migrazione post-quantum nella finanza aziendale"
+  "title": "Mettere in sicurezza il libro mastro: migrazione post-quantum nella finanza aziendale",
+  "subtitle": "Un piano pratico per i CFO e i tesorieri"
 }

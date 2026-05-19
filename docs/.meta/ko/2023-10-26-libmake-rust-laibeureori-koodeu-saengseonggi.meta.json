@@ -1,12 +1,12 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/danial-igdery-FCHlYvR5gJI-unsplash.webp",
-  "last_reviewed": "2026-05-16",
   "date": "October 26, 2023",
-  "description": "libmake는 고품질 Rust 라이브러리를 신속히 작성하기 위한 코드 생성기로, 정형 코드를 제거하고 모범 사례를 내장합니다.",
-  "subtitle": "라이브러리 작성의 정형 작업을 없애는 코드 생성기",
   "keywords": "libmake, 코드 생성기, Rust, Cargo, 라이브러리, 템플릿, 개발자 도구, 모범 사례",
+  "subtitle": "라이브러리 작성의 정형 작업을 없애는 코드 생성기",
+  "last_reviewed": "2026-05-16",
   "title": "libmake: 반복 작업을 줄이고 고품질 Rust 라이브러리를 구축하는 코드 생성기",
-  "banner_alt": "코드 에디터를 사용하는 개발자",
   "locale": "ko_KR",
+  "banner": "https://cloudcdn.pro/stocks/images/danial-igdery-FCHlYvR5gJI-unsplash.webp",
+  "banner_alt": "코드 에디터를 사용하는 개발자",
+  "description": "libmake는 고품질 Rust 라이브러리를 신속히 작성하기 위한 코드 생성기로, 정형 코드를 제거하고 모범 사례를 내장합니다.",
   "language": "ko-KR"
 }
