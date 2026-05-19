@@ -66,17 +66,19 @@ def _cosign_available() -> bool:
 
 def _sign_one(html_path: Path, out_dir: Path, cfg: dict) -> bool:
     """Run ``cosign sign-blob`` against one article and write the
-    detached signature + bundle to ``out_dir``. Returns True on success."""
+    signed bundle to ``out_dir``. Returns True on success.
+
+    Modern cosign (≥2.x) embeds the signature inside the bundle, so we no
+    longer pass --output-signature (deprecated; produces a noisy warning
+    and was previously redundant with --bundle's content)."""
     key_path = os.environ.get(cfg.get("key_env_var", "COSIGN_KEY_PATH"))
     if not key_path or not Path(key_path).is_file():
         return False
-    sig_path = out_dir / f"{html_path.parent.name}.sig"
     bundle_path = out_dir / f"{html_path.parent.name}.bundle"
     cmd = [
         "cosign", "sign-blob",
         "--key", key_path,
         "--bundle", str(bundle_path),
-        "--output-signature", str(sig_path),
         "--yes",
         str(html_path),
     ]
