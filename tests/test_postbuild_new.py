@@ -320,14 +320,32 @@ def test_inject_lcp_preload_injects_for_first_eager_image():
     )
 
 
-def test_inject_lcp_preload_skips_when_already_preloaded():
+def test_inject_lcp_preload_no_op_when_preload_already_matches_img():
+    """Existing preload already pointing at the first <img> src — no
+    rewrite needed."""
     html = (
-        '<head><link rel="preload" as="image" href="/x.webp"></head>'
+        '<head><link rel="preload" as="image" href="/y.webp"></head>'
         '<body><img src="/y.webp"></body>'
     )
     out, n = pb.inject_lcp_preload(html)
     assert n == 0
     assert out == html
+
+
+def test_inject_lcp_preload_realigns_existing_preload_to_first_img():
+    """The layout may emit a preload that doesn't quite match the
+    URL the <img> ends up with (different transform width, etc.) —
+    inject_lcp_preload rewrites the preload's href so the browser
+    can actually use it."""
+    html = (
+        '<head><link rel="preload" as="image" '
+        'href="https://cdn.example/hero.webp?w=1200"></head>'
+        '<body><img src="https://cdn.example/hero.webp?w=200"></body>'
+    )
+    out, n = pb.inject_lcp_preload(html)
+    assert n == 1
+    assert 'href="https://cdn.example/hero.webp?w=200"' in out
+    assert "?w=1200" not in out
 
 
 def test_inject_lcp_preload_skips_first_image_when_lazy():
