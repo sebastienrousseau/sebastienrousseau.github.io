@@ -4,7 +4,7 @@
   <link href="https://sebastienrousseau.com/hi/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/hi/"/>
   <id>https://sebastienrousseau.com/hi/</id>
-  <updated>2026-05-18T12:52:29+00:00</updated>
+  <updated>2026-05-19T09:09:20+00:00</updated>
   <entry>
     <title>2026 में क्वांटम क्रिप्टोग्राफी रीसेट: PQC मानक, QKD आश्वासन, और वह माइग्रेशन कार्य जिसे बैंक टाल नहीं सकते</title>
     <link href="https://sebastienrousseau.com/hi/2026-05-18-quantum-cryptography-standards-developments-2026/"/>
@@ -339,12 +339,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Shokunin: सबसे तेज़ Rust-आधारित स्टैटिक-साइट जनरेटर</title>
+    <title>Static Site Generator: सबसे तेज़ Rust-आधारित स्टैटिक-साइट जनरेटर</title>
     <link href="https://sebastienrousseau.com/hi/2023-10-09-shokunin-sabse-tez-rust-static-site-generator/"/>
     <id>https://sebastienrousseau.com/hi/2023-10-09-shokunin-sabse-tez-rust-static-site-generator/</id>
     <updated>2023-10-09T06:06:06+00:00</updated>
     <published>2023-10-09T06:06:06+00:00</published>
-    <summary>Shokunin एक Rust-आधारित स्टैटिक-साइट जनरेटर है जो उच्च-निष्पादन, कम-स्मृति और सुरक्षा को प्राथमिकता देता है।</summary>
+    <summary>Static Site Generator एक Rust-आधारित स्टैटिक-साइट जनरेटर है जो उच्च-निष्पादन, कम-स्मृति और सुरक्षा को प्राथमिकता देता है।</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

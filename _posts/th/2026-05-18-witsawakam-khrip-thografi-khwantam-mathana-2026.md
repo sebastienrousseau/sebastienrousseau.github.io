@@ -5,7 +5,7 @@ description: "การเข้ารหัสควอนตัมในปี
 date: "May 18, 2026"
 language: "th-TH"
 locale: "th_TH"
-banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "แผนที่การอพยพการเข้ารหัสปลอดภัยจากควอนตัมสำหรับปี 2026 แสดงมาตรฐาน NIST PQC งานโปรโตคอลแบบไฮบริด การประกัน QKD ความคล่องตัวด้านการเข้ารหัส และระดับชั้นความเสี่ยงของข้อมูลธนาคาร"
 keywords: "การเข้ารหัสควอนตัม 2026, การเข้ารหัสหลังควอนตัม, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, การแลกเปลี่ยนคีย์แบบไฮบริด, QKD, ETSI QKD, ISO IEC 23837, ความคล่องตัวด้านการเข้ารหัส, harvest now decrypt later, HNDL, การเข้ารหัสของบริการทางการเงิน, ความมั่นคงทางธนาคาร"
 ---

@@ -837,8 +837,8 @@
       <news:language>tr-TR</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Shokunin: Rust tabanlı en hızlı statik site jeneratörü</news:title>
-    <news:keywords>Shokunin, statik site jeneratörü, Rust, SSG, performans, SEO, açık kaynak</news:keywords>
+    <news:title>Static Site Generator: Rust tabanlı en hızlı statik site jeneratörü</news:title>
+    <news:keywords>Static Site Generator, statik site jeneratörü, Rust, SSG, performans, SEO, açık kaynak</news:keywords>
   </news:news>
 </url>
 <url>
@@ -1785,8 +1785,8 @@
       <news:language>th-TH</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Shokunin: el generador de sitios estáticos más rápido basado en Rust</news:title>
-    <news:keywords>Shokunin, generador de sitios estáticos, SSG, Rust, rendimiento, SEO, accesibilidad, WCAG, ADA, PWA</news:keywords>
+    <news:title>Static Site Generator: el generador de sitios estáticos más rápido basado en…</news:title>
+    <news:keywords>Static Site Generator, generador de sitios estáticos, SSG, Rust, rendimiento, SEO, accesibilidad, WCAG, ADA, PWA</news:keywords>
   </news:news>
 </url>
 <url>
@@ -1845,8 +1845,8 @@
       <news:language>es-ES</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Shokunin: el generador de sitios estáticos más rápido basado en Rust</news:title>
-    <news:keywords>Shokunin, generador de sitios estáticos, SSG, Rust, rendimiento, SEO, accesibilidad, WCAG, ADA, PWA</news:keywords>
+    <news:title>Static Site Generator: el generador de sitios estáticos más rápido basado en…</news:title>
+    <news:keywords>Static Site Generator, generador de sitios estáticos, SSG, Rust, rendimiento, SEO, accesibilidad, WCAG, ADA, PWA</news:keywords>
   </news:news>
 </url>
 <url>
@@ -2541,8 +2541,8 @@
       <news:language>fr</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Shokunin : le générateur de sites statiques le plus rapide basé sur Rust</news:title>
-    <news:keywords>Shokunin, générateur de sites statiques, SSG, Rust, performance, SEO, accessibilité, WCAG, ADA, PWA</news:keywords>
+    <news:title>Static Site Generator : le générateur de sites statiques le plus rapide basé…</news:title>
+    <news:keywords>Static Site Generator, générateur de sites statiques, SSG, Rust, performance, SEO, accessibilité, WCAG, ADA, PWA</news:keywords>
   </news:news>
 </url>
 <url>
@@ -3897,8 +3897,8 @@
       <news:language>ko-KR</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Shokunin: Rust 기반 최고속 정적 사이트 생성기</news:title>
-    <news:keywords>Shokunin, SSG, 정적 사이트 생성기, Rust, 성능, SEO, JSON-LD, 접근성</news:keywords>
+    <news:title>Static Site Generator: Rust 기반 최고속 정적 사이트 생성기</news:title>
+    <news:keywords>Static Site Generator, SSG, 정적 사이트 생성기, Rust, 성능, SEO, JSON-LD, 접근성</news:keywords>
   </news:news>
 </url>
 <url>
@@ -4245,8 +4245,8 @@
       <news:language>de</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Shokunin: der schnellste Rust-basierte Static Site Generator</news:title>
-    <news:keywords>Shokunin, Static Site Generator, SSG, Rust, Performance, SEO, Barrierefreiheit, WCAG, ADA, PWA</news:keywords>
+    <news:title>Static Site Generator: der schnellste Rust-basierte Static Site Generator</news:title>
+    <news:keywords>Static Site Generator, Static Site Generator, SSG, Rust, Performance, SEO, Barrierefreiheit, WCAG, ADA, PWA</news:keywords>
   </news:news>
 </url>
 <url>
@@ -4665,8 +4665,8 @@
       <news:language>hi-IN</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Shokunin: सबसे तेज़ Rust-आधारित स्टैटिक-साइट जनरेटर</news:title>
-    <news:keywords>Shokunin, Rust, स्टैटिक साइट, SSG, Markdown, Hugo, Jekyll, निष्पादन, सुरक्षा, ओपन सोर्स</news:keywords>
+    <news:title>Static Site Generator: सबसे तेज़ Rust-आधारित स्टैटिक-साइट जनरेटर</news:title>
+    <news:keywords>Static Site Generator, Rust, स्टैटिक साइट, SSG, Markdown, Hugo, Jekyll, निष्पादन, सुरक्षा, ओपन सोर्स</news:keywords>
   </news:news>
 </url>
 <url>
@@ -5421,8 +5421,8 @@
       <news:language>fil-PH</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Shokunin: أسرع مولّد للمواقع الساكنة قائمٌ على Rust</news:title>
-    <news:keywords>Shokunin, مولّد المواقع الساكنة, SSG, Rust, الأداء, SEO, الوصول الميسّر, WCAG, ADA, PWA</news:keywords>
+    <news:title>Static Site Generator: أسرع مولّد للمواقع الساكنة قائمٌ على Rust</news:title>
+    <news:keywords>Static Site Generator, مولّد المواقع الساكنة, SSG, Rust, الأداء, SEO, الوصول الميسّر, WCAG, ADA, PWA</news:keywords>
   </news:news>
 </url>
 <url>
@@ -6249,8 +6249,8 @@
       <news:language>nl-NL</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Shokunin: de snelste statische sitegenerator in Rust</news:title>
-    <news:keywords>Shokunin, statische sitegenerator, Rust, SSG, prestaties, SEO, JSON-LD, toegankelijkheid</news:keywords>
+    <news:title>Static Site Generator: de snelste statische sitegenerator in Rust</news:title>
+    <news:keywords>Static Site Generator, statische sitegenerator, Rust, SSG, prestaties, SEO, JSON-LD, toegankelijkheid</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7125,8 +7125,8 @@
       <news:language>pt-BR</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Shokunin: o generador de sitios estáticos mais rápido basado em Rust</news:title>
-    <news:keywords>Shokunin, generador de sitios estáticos, SSG, Rust, rendimiento, SEO, acessibilidade, WCAG, ADA, PWA</news:keywords>
+    <news:title>Static Site Generator: o generador de sitios estáticos mais rápido basado em…</news:title>
+    <news:keywords>Static Site Generator, generador de sitios estáticos, SSG, Rust, rendimiento, SEO, acessibilidade, WCAG, ADA, PWA</news:keywords>
   </news:news>
 </url>
 <url>
@@ -7557,8 +7557,8 @@
       <news:language>ar</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Shokunin: أسرع مولّد للمواقع الساكنة قائمٌ على Rust</news:title>
-    <news:keywords>Shokunin, مولّد المواقع الساكنة, SSG, Rust, الأداء, SEO, الوصول الميسّر, WCAG, ADA, PWA</news:keywords>
+    <news:title>Static Site Generator: أسرع مولّد للمواقع الساكنة قائمٌ على Rust</news:title>
+    <news:keywords>Static Site Generator, مولّد المواقع الساكنة, SSG, Rust, الأداء, SEO, الوصول الميسّر, WCAG, ADA, PWA</news:keywords>
   </news:news>
 </url>
 <url>
@@ -10197,8 +10197,8 @@
       <news:language>ru-RU</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Shokunin: самый быстрый статический генератор сайтов на Rust</news:title>
-    <news:keywords>Shokunin, статический генератор сайтов, Rust, SSG, производительность, SEO, JSON-LD, доступность, open source</news:keywords>
+    <news:title>Static Site Generator: самый быстрый статический генератор сайтов на Rust</news:title>
+    <news:keywords>Static Site Generator, статический генератор сайтов, Rust, SSG, производительность, SEO, JSON-LD, доступность, open source</news:keywords>
   </news:news>
 </url>
 <url>
@@ -10461,8 +10461,8 @@
       <news:language>cs-CZ</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Shokunin: el generador de sitios estáticos más rápido basado en Rust</news:title>
-    <news:keywords>Shokunin, generador de sitios estáticos, SSG, Rust, rendimiento, SEO, accesibilidad, WCAG, ADA, PWA</news:keywords>
+    <news:title>Static Site Generator: el generador de sitios estáticos más rápido basado en…</news:title>
+    <news:keywords>Static Site Generator, generador de sitios estáticos, SSG, Rust, rendimiento, SEO, accesibilidad, WCAG, ADA, PWA</news:keywords>
   </news:news>
 </url>
 <url>
@@ -11290,7 +11290,7 @@
     </news:publication>
     <news:publication_date></news:publication_date>
     <news:title>Static Site Generator: il generatore di siti statici più veloce basato su Rust</news:title>
-    <news:keywords>Shokunin, SSG, Rust, generatore di siti statici, prestazioni, SEO, accessibilità, JSON-LD</news:keywords>
+    <news:keywords>Static Site Generator, SSG, Rust, generatore di siti statici, prestazioni, SEO, accessibilità, JSON-LD</news:keywords>
   </news:news>
 </url>
 <url>
@@ -12009,8 +12009,8 @@
       <news:language>ja-JP</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Shokunin:Rust ベースの最速静的サイトジェネレータ</news:title>
-    <news:keywords>Shokunin, SSG, 静的サイトジェネレータ, Rust, パフォーマンス, SEO, JSON-LD, アクセシビリティ</news:keywords>
+    <news:title>Static Site Generator:Rust ベースの最速静的サイトジェネレータ</news:title>
+    <news:keywords>Static Site Generator, SSG, 静的サイトジェネレータ, Rust, パフォーマンス, SEO, JSON-LD, アクセシビリティ</news:keywords>
   </news:news>
 </url>
 <url>
@@ -12393,8 +12393,8 @@
       <news:language>he-IL</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Shokunin: أسرع مولّد للمواقع الساكنة قائمٌ على Rust</news:title>
-    <news:keywords>Shokunin, مولّد المواقع الساكنة, SSG, Rust, الأداء, SEO, الوصول الميسّر, WCAG, ADA, PWA</news:keywords>
+    <news:title>Static Site Generator: أسرع مولّد للمواقع الساكنة قائمٌ على Rust</news:title>
+    <news:keywords>Static Site Generator, مولّد المواقع الساكنة, SSG, Rust, الأداء, SEO, الوصول الميسّر, WCAG, ADA, PWA</news:keywords>
   </news:news>
 </url>
 <url>
@@ -12693,8 +12693,8 @@
       <news:language>sv-SE</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Shokunin: el generador de sitios estáticos más rápido basado en Rust</news:title>
-    <news:keywords>Shokunin, generador de sitios estáticos, SSG, Rust, rendimiento, SEO, accesibilidad, WCAG, ADA, PWA</news:keywords>
+    <news:title>Static Site Generator: el generador de sitios estáticos más rápido basado en…</news:title>
+    <news:keywords>Static Site Generator, generador de sitios estáticos, SSG, Rust, rendimiento, SEO, accesibilidad, WCAG, ADA, PWA</news:keywords>
   </news:news>
 </url>
 <url>
@@ -13533,8 +13533,8 @@
       <news:language>pl-PL</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Shokunin: najszybszy generator stron statycznych w Rust</news:title>
-    <news:keywords>Shokunin, generator stron statycznych, Rust, SSG, wydajność, SEO, dostępność, JSON-LD</news:keywords>
+    <news:title>Static Site Generator: najszybszy generator stron statycznych w Rust</news:title>
+    <news:keywords>Static Site Generator, generator stron statycznych, Rust, SSG, wydajność, SEO, dostępność, JSON-LD</news:keywords>
   </news:news>
 </url>
 <url>
@@ -13869,8 +13869,8 @@
       <news:language>zh-Hant</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Shokunin：最快的基於 Rust 的靜態網站生成器</news:title>
-    <news:keywords>Shokunin, 靜態網站生成器, SSG, Rust, Markdown, SEO, WCAG, ADA, PWA, RSS</news:keywords>
+    <news:title>Static Site Generator：最快的基於 Rust 的靜態網站生成器</news:title>
+    <news:keywords>Static Site Generator, 靜態網站生成器, SSG, Rust, Markdown, SEO, WCAG, ADA, PWA, RSS</news:keywords>
   </news:news>
 </url>
 <url>
@@ -14181,8 +14181,8 @@
       <news:language>zh-Hans</news:language>
     </news:publication>
     <news:publication_date></news:publication_date>
-    <news:title>Shokunin：最快的基于 Rust 的静态网站生成器</news:title>
-    <news:keywords>Shokunin, 静态网站生成器, SSG, Rust, Markdown, SEO, WCAG, ADA, PWA, RSS</news:keywords>
+    <news:title>Static Site Generator：最快的基于 Rust 的静态网站生成器</news:title>
+    <news:keywords>Static Site Generator, 静态网站生成器, SSG, Rust, Markdown, SEO, WCAG, ADA, PWA, RSS</news:keywords>
   </news:news>
 </url>
 <url>

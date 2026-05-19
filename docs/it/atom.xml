@@ -4,7 +4,7 @@
   <link href="https://sebastienrousseau.com/it/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/it/"/>
   <id>https://sebastienrousseau.com/it/</id>
-  <updated>2026-05-18T12:52:29+00:00</updated>
+  <updated>2026-05-19T09:09:20+00:00</updated>
   <entry>
     <title>Il reset della crittografia quantistica nel 2026: standard PQC, garanzia QKD e il lavoro di migrazione che le banche non possono più rimandare</title>
     <link href="https://sebastienrousseau.com/it/2026-05-18-crittografia-quantistica-standard-sviluppi-2026/"/>
@@ -344,7 +344,7 @@
     <id>https://sebastienrousseau.com/it/2023-10-09-shokunin-il-generatore-di-siti-statici-rust-piu-veloce/</id>
     <updated>2023-10-09T06:06:06+00:00</updated>
     <published>2023-10-09T06:06:06+00:00</published>
-    <summary>Shokunin è un generatore di siti statici scritto in Rust, ottimizzato per build ultraveloci, accessibilità di alto livello e SEO con supporto JSON-LD nativo.</summary>
+    <summary>Static Site Generator è un generatore di siti statici scritto in Rust, ottimizzato per build ultraveloci, accessibilità di alto livello e SEO con supporto JSON-LD nativo.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

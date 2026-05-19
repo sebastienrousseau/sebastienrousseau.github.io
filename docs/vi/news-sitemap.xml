@@ -453,8 +453,8 @@
       <news:language>vi-VN</news:language>
     </news:publication>
     <news:publication_date>2023-10-09T06:06:06+00:00</news:publication_date>
-    <news:title>Shokunin: bộ tạo trang tĩnh dựa trên Rust nhanh nhất</news:title>
-    <news:keywords>Shokunin, SSG, Rust, bộ tạo trang tĩnh, hiệu năng, SEO, JSON-LD, mã nguồn mở</news:keywords>
+    <news:title>Static Site Generator: bộ tạo trang tĩnh dựa trên Rust nhanh nhất</news:title>
+    <news:keywords>Static Site Generator, SSG, Rust, bộ tạo trang tĩnh, hiệu năng, SEO, JSON-LD, mã nguồn mở</news:keywords>
   </news:news>
 </url>
 <url>

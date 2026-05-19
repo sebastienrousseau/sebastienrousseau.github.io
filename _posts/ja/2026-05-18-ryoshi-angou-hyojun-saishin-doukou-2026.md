@@ -5,7 +5,7 @@ description: "2026 年の量子暗号は、もはや量子コンピュータが�
 date: "May 18, 2026"
 language: "ja-JP"
 locale: "ja_JP"
-banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "2026 年向け量子安全暗号移行マップ:NIST PQC 標準、ハイブリッドプロトコル作業、QKD 保証、暗号アジリティ、銀行データリスク階層を示す"
 keywords: "量子暗号 2026, ポスト量子暗号, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, ハイブリッド鍵交換, QKD, ETSI QKD, ISO IEC 23837, 暗号アジリティ, harvest now decrypt later, HNDL, 金融サービス暗号, 銀行セキュリティ"
 last_reviewed: "2026-05-18"

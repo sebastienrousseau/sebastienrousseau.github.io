@@ -359,12 +359,12 @@ site_software: "Static Site Generator, Rust"
 </article>
 
 <article class="newsroom-card">
-<a class="newsroom-card-media logo" href="https://minifunctions.com/" title="Mini Functions">
+<a class="newsroom-card-media logo" href="http://minifunctions.com/" title="Mini Functions">
 <img alt="Banner for the Mini Functions Rust library" src="https://cloudcdn.pro/clients/mini-functions/v1/github/github-mini-functions.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Rust · Utility</span>
-<h3><a href="https://minifunctions.com/" title="Mini Functions">Mini Functions</a></h3>
+<h3><a href="http://minifunctions.com/" title="Mini Functions">Mini Functions</a></h3>
 <p class="newsroom-excerpt">A highly performant utility and wrapper functions library for Rust, designed with optimisation and efficiency in mind.</p>
 </div>
 </article>

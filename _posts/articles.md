@@ -105,57 +105,21 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-05-18-quantum-cryptography-standards-developments-2026/index.html" title="The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer">
-<img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html" title="Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded">
+<img alt="Stacked US dollar coins under warm light, representing tokenised money-market fund yield" src="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Post-Quantum · Standards · Banking</span>
-<h3><a href="/2026-05-18-quantum-cryptography-standards-developments-2026/index.html" title="The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer">The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-18">May 18, 2026</time> · Sebastien Rousseau</p>
-<p>Quantum cryptography has moved from horizon-scanning to implementation discipline: NIST PQC standards are ready, UK NCSC guidance has narrowed the algorithm choices, IETF protocol work is still maturing, and QKD assurance is moving from laboratory confidence to certification language.</p>
-<p><a class="pill ghost" href="/2026-05-18-quantum-cryptography-standards-developments-2026/index.html" title="The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer">Read the full story</a></p>
+<span class="newsroom-eyebrow">Payments · Stablecoins · Regulation</span>
+<h3><a href="/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html" title="Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded">Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-15">May 15, 2026</time> · Sebastien Rousseau</p>
+<p>Stablecoins cannot pay yield under the GENIUS Act. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail.</p>
+<p><a class="pill ghost" href="/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html" title="Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html" title="Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It">
-<img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Applied AI · Governance · Engineering</span>
-<h3><a href="/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html" title="Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-17">May 17, 2026</time> · Sebastien Rousseau</p>
-<p class="newsroom-excerpt">70% of banks now use agentic AI in some form; only one in five has a mature governance model. With the EU AI Act high-risk deadline twelve weeks away and autonomous adversaries operating at machine speed, this is the engineering and governance position a bank needs to hold.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html" title="The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services">
-<img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Cloud · AI-Native · Post-Quantum</span>
-<h3><a href="/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html" title="The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-16">May 16, 2026</time> · Sebastien Rousseau</p>
-<p class="newsroom-excerpt">Cloud architecture has crystallised around six pillars and one strategic question for banks: whether to consume cloud or design it — under converging pressure from agentic commerce, agentic unit economics, harvest-now-decrypt-later quantum risk, MCP security, cryptographic agent identity, and the legacy estate that still consumes 70–75% of financial-services IT spend.</p>
-</div>
-</article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html" title="Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded">
-<img alt="Stacked US dollar coins under warm light, representing tokenised money-market fund yield" src="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Payments · Stablecoins · Regulation</span>
-<h3><a href="/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html" title="Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded">Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-15">May 15, 2026</time> · Sebastien Rousseau</p>
-<p class="newsroom-excerpt">Stablecoins cannot pay yield under the GENIUS Act. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail.</p>
-</div>
-</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html" title="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance">

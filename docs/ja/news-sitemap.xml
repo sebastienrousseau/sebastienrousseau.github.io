@@ -453,8 +453,8 @@
       <news:language>ja-JP</news:language>
     </news:publication>
     <news:publication_date>2023-10-09T06:06:06+00:00</news:publication_date>
-    <news:title>Shokunin:Rust ベースの最速静的サイトジェネレータ</news:title>
-    <news:keywords>Shokunin, SSG, 静的サイトジェネレータ, Rust, パフォーマンス, SEO, JSON-LD, アクセシビリティ</news:keywords>
+    <news:title>Static Site Generator:Rust ベースの最速静的サイトジェネレータ</news:title>
+    <news:keywords>Static Site Generator, SSG, 静的サイトジェネレータ, Rust, パフォーマンス, SEO, JSON-LD, アクセシビリティ</news:keywords>
   </news:news>
 </url>
 <url>

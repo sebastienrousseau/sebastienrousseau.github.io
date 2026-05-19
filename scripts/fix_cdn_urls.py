@@ -38,7 +38,7 @@ PROJECT_PREFIXES = {
     "mini-functions", "nalufx", "neferankh", "noyalib", "nucleusflow", "pain001",
     "password-generator-pro", "pipelines", "pm2md", "publications", "pythondev",
     "qrc", "rlg", "routefinder", "rssgen", "rustdev", "sebastienrousseau",
-    "serde_yml", "shokunin", "sinewavegenerator", "sitemap-gen", "skeletonic",
+    "serde_yml", "Static Site Generator", "sinewavegenerator", "sitemap-gen", "skeletonic",
     "vrd",
 }
 

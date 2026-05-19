@@ -6,7 +6,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -15,12 +15,12 @@ date: "May 18, 2026"
 description: "Quantum cryptography in 2026 is no longer a debate about whether quantum computers are imminent. It is a migration programme across post-quantum cryptography, crypto-agility, quantum key distribution assurance, protocol standards, supplier readiness, and long-lived financial data that is already exposed to harvest-now-decrypt-later risk."
 format-detection: "telephone=no"
 hreflang: "en"
-icon: "https://cloudcdn.pro/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stock/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "quantum cryptography 2026, post-quantum cryptography, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybrid key exchange, QKD, ETSI QKD, ISO IEC 23837, crypto-agility, harvest now decrypt later, HNDL, financial services cryptography, banking security"
 language: "en-GB"
 last_reviewed: "2026-05-18"
@@ -29,7 +29,7 @@ locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
-logo: "https://cloudcdn.pro/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
@@ -51,7 +51,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/rss.xml"
 category: "Technology"
 docs: https://validator.w3.org/feed/docs/rss2.html
-generator: "Shokunin SSG (version 0.0.26)"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "The 2026 quantum cryptography reset — NIST PQC standards, NCSC migration advice, IETF protocol readiness, QKD assurance, crypto-agility, and what banks should prioritise this week."
 item_guid: "https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/rss.xml"
 item_link: "https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/rss.xml"
@@ -82,7 +82,7 @@ msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "The 2026 quantum cryptography reset — NIST PQC standards, NCSC migration advice, IETF protocol readiness, QKD assurance, crypto-agility, and what banks should prioritise this week."
-twitter_image: "https://cloudcdn.pro/sebastienrousseau/v1/logos/sebastienrousseau.png"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Quantum Cryptography 2026: PQC Standards and Banking Migration"
@@ -96,13 +96,32 @@ thanks: "Thanks for reading!"
 site_last_updated: "2026-05-18"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 
+excerpt: "Quantum cryptography in 2026 has split into two practical tracks. Post-quantum cryptography is now an implementation programme, because NIST says three post-quantum standards are ready for use and…"
 ---
 
 # The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer
 
-Quantum cryptography in 2026 has split into two practical tracks. Post-quantum cryptography is now an implementation programme, because NIST says three post-quantum standards are ready for use and federal systems must treat them as FIPS standards ([NIST](https://www.nist.gov/pqc "NIST Post-Quantum Cryptography")); quantum key distribution is becoming an assurance and certification problem, because QKD deployments need evaluation language, protection profiles, and operational standards rather than laboratory demonstrations alone ([ID Quantique / ETSI QKD 016](https://www.idquantique.com/etsi-releases-qkd-protection-profile/ "ETSI releases QKD Protection Profile")).
+
+
+
+
+<!-- lead-start -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Quantum cryptography in 2026 is no longer a debate about whether quantum computers are imminent. It is a migration programme across post-quantum cryptography, crypto-agility, quantum key distribution assurance, protocol standards, supplier readiness, and long-lived financial data that is already exposed to harvest-now-decrypt-later risk.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Why This Week Matters.</strong> The standards conversation has passed the point of abstraction.</li>
+  <li><strong>The 2026 Cryptography Baseline: Four Workstreams.</strong> The first baseline is algorithmic.</li>
+  <li><strong>What Banks Should Do Now.</strong> The first deliverable is a cryptographic bill of materials.</li>
+  <li><strong>PQC, QKD, and Hybrid: A Practical Decision Table.</strong> Tier-one banks need a programme office, not a proof of concept.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a>, <a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a>, <a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">Quantum Lattice Crypto: Bug in Chen's LWE Attack</a>.</p>
+</aside>
+<!-- lead-end -->
+
+Quantum cryptography in 2026 has split into two practical tracks. Post-quantum cryptography is now an implementation programme, because NIST says three post-quantum standards are ready for use and federal systems must treat them as FIPS standards ([NIST](https://www.nist.gov/pqc "NIST Post-Quantum Cryptography")); [quantum key distribution](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) is becoming an assurance and certification problem, because [QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) deployments need evaluation language, protection profiles, and operational standards rather than laboratory demonstrations alone ([ID Quantique / ETSI QKD 016](https://www.idquantique.com/etsi-releases-qkd-protection-profile/ "ETSI releases QKD Protection Profile")).
 
 ---
 
@@ -112,7 +131,7 @@ Quantum cryptography in 2026 has split into two practical tracks. Post-quantum c
 > - **The UK NCSC has narrowed the practical choices.** It recommends ML-KEM-768 and ML-DSA-65 for most use cases, while warning that systems should rely on robust implementations of final standards rather than draft-compatible experiments ([NCSC](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography "NCSC next steps in preparing for PQC")).
 > - **Protocol readiness is uneven.** The IETF is updating TLS and IPsec for PQC and hybrid key exchange, but the NCSC cautions that operational systems should prefer published RFCs over changing Internet Drafts ([NCSC](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography "NCSC next steps in preparing for PQC")).
 > - **Hybrid is a transition mechanism, not an end state.** Hybrid public-key plus post-quantum schemes help phase migration and hedge implementation risk, but they add complexity and may require a second migration to PQC-only later ([NCSC](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography "NCSC next steps in preparing for PQC")).
-> - **QKD is not a replacement for PQC.** QKD can serve specialised high-assurance links, but its banking relevance depends on certification, interoperability, operational cost, and integration with existing key-management systems rather than the physics alone ([ID Quantique / ETSI QKD 016](https://www.idquantique.com/etsi-releases-qkd-protection-profile/ "ETSI releases QKD Protection Profile")).
+> - **[QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) is not a replacement for PQC.** QKD can serve specialised high-assurance links, but its banking relevance depends on certification, interoperability, operational cost, and integration with existing key-management systems rather than the physics alone ([ID Quantique / ETSI QKD 016](https://www.idquantique.com/etsi-releases-qkd-protection-profile/ "ETSI releases QKD Protection Profile")).
 > - **The bank-level question is inventory.** A financial institution that cannot locate RSA, ECDH, ECDSA, EdDSA, proprietary VPN crypto, HSM templates, certificate lifetimes, and vendor-managed cryptography cannot migrate, regardless of which standards are available.
 > - **The risk is already live.** Harvest-now-decrypt-later attacks make long-lived financial data vulnerable before cryptographically relevant quantum computers exist, because the adversary only needs to collect the ciphertext today.
 > - **Crypto-agility is the durable control.** The winning architecture is not a one-off swap from RSA to ML-KEM; it is a platform ability to rotate algorithms, parameters, libraries, certificates, hardware policies, and protocol modes without rebuilding the bank.
@@ -230,4 +249,17 @@ The biggest trap is treating PQC as an algorithm swap. The migration touches pro
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-05-18">2026-05-18</time>.</p>
+<!-- enrich-end -->
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-19">2026-05-19</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance" class="related-media" aria-label="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance" tabindex="-1"><img alt="Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html" class="related-media" aria-label="Quantum Lattice Crypto: Bug in Chen's LWE Attack" tabindex="-1"><img alt="Image generated using MidJourney - A Network of digital nodes in red and blue hues." src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-04-22-bug-discovered-in-quantum-algorithm-for-lattice-based-crypto/index.html">Quantum Lattice Crypto: Bug in Chen's LWE Attack</a></h3><p><time datetime="2024-04-22">2024-04-22</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->

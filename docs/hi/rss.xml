@@ -6,7 +6,7 @@
     <description>हिन्दी लेख: व्यावहारिक AI, ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान का रूपांतरण।</description>
     <atom:link href="https://sebastienrousseau.com/hi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>hi-IN</language>
-    <lastBuildDate>Mon, 18 May 2026 12:52:29 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 09:09:20 +0000</lastBuildDate>
     <copyright>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</copyright>
     <item>
       <title>2026 में क्वांटम क्रिप्टोग्राफी रीसेट: PQC मानक, QKD आश्वासन, और वह माइग्रेशन कार्य जिसे बैंक टाल नहीं सकते</title>
@@ -15,7 +15,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-18-quantum-cryptography-standards-developments-2026/</guid>
       <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" type="image/webp" length="0"/>
       <category>क्वांटम क्रिप्टोग्राफी 2026</category>
       <category>पोस्ट-क्वांटम क्रिप्टोग्राफी</category>
       <category>NIST FIPS 203</category>
@@ -64,7 +64,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/hi/2026-05-16-banks-ke-liye-shreshth-cloud-architecture-2026/</guid>
       <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
       <category>क्लाउड वास्तुकला 2026</category>
       <category>AI-नेटिव</category>
       <category>मल्टीक्लाउड</category>
@@ -723,14 +723,14 @@
       <category>क्वांटम</category>
     </item>
     <item>
-      <title>Shokunin: सबसे तेज़ Rust-आधारित स्टैटिक-साइट जनरेटर</title>
+      <title>Static Site Generator: सबसे तेज़ Rust-आधारित स्टैटिक-साइट जनरेटर</title>
       <link>https://sebastienrousseau.com/hi/2023-10-09-shokunin-sabse-tez-rust-static-site-generator/</link>
-      <description>Shokunin एक Rust-आधारित स्टैटिक-साइट जनरेटर है जो उच्च-निष्पादन, कम-स्मृति और सुरक्षा को प्राथमिकता देता है।</description>
+      <description>Static Site Generator एक Rust-आधारित स्टैटिक-साइट जनरेटर है जो उच्च-निष्पादन, कम-स्मृति और सुरक्षा को प्राथमिकता देता है।</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/hi/2023-10-09-shokunin-sabse-tez-rust-static-site-generator/</guid>
       <pubDate>Mon, 09 Oct 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" type="image/webp" length="0"/>
-      <category>Shokunin</category>
+      <category>Static Site Generator</category>
       <category>Rust</category>
       <category>स्टैटिक साइट</category>
       <category>SSG</category>

@@ -5,7 +5,7 @@ description: 'Mật mã lượng tử năm 2026 không còn là tranh luận v�
 date: 'May 18, 2026'
 language: 'vi-VN'
 locale: 'vi_VN'
-banner: 'https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp'
+banner: 'https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp'
 banner_alt: 'Bản đồ di trú mật mã an toàn lượng tử cho năm 2026, thể hiện tiêu chuẩn NIST PQC, công việc giao thức lai, bảo đảm QKD, tính linh hoạt mật mã và các tầng rủi ro dữ liệu ngân hàng'
 keywords: 'mật mã lượng tử 2026, mật mã hậu lượng tử, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, trao đổi khoá lai, QKD, ETSI QKD, ISO IEC 23837, tính linh hoạt mật mã, harvest now decrypt later, HNDL, mật mã dịch vụ tài chính, bảo mật ngân hàng'
 ---

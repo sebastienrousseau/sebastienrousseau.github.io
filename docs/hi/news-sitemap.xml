@@ -453,8 +453,8 @@
       <news:language>hi-IN</news:language>
     </news:publication>
     <news:publication_date>2023-10-09T06:06:06+00:00</news:publication_date>
-    <news:title>Shokunin: सबसे तेज़ Rust-आधारित स्टैटिक-साइट जनरेटर</news:title>
-    <news:keywords>Shokunin, Rust, स्टैटिक साइट, SSG, Markdown, Hugo, Jekyll, निष्पादन, सुरक्षा, ओपन सोर्स</news:keywords>
+    <news:title>Static Site Generator: सबसे तेज़ Rust-आधारित स्टैटिक-साइट जनरेटर</news:title>
+    <news:keywords>Static Site Generator, Rust, स्टैटिक साइट, SSG, Markdown, Hugo, Jekyll, निष्पादन, सुरक्षा, ओपन सोर्स</news:keywords>
   </news:news>
 </url>
 <url>

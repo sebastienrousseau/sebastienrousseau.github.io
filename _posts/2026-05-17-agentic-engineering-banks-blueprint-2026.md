@@ -15,12 +15,12 @@ date: "May 17, 2026"
 description: "Agentic AI has crossed from pilot into production across global banking. 70% of institutions are using it to some degree; only one in five has a mature governance model. Meanwhile, autonomous adversaries are operating at machine speed, the legacy COBOL estate the new systems must interoperate with was written for the batch-processing assumptions of the 1960s, and the EU AI Act's August 2026 high-risk deadline is twelve weeks away. This is the engineering and governance position a bank needs to hold."
 format-detection: "telephone=no"
 hreflang: "en"
-icon: "https://cloudcdn.pro/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
-image: "https://cloudcdn.pro/stock/images/sebastien-rousseau.png"
+image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, COBOL modernisation, mainframe, vibe coding, vibe hacking, autonomous agents, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, third-party risk management, TPRM, vendor risk, post-quantum cryptography, agent control plane, FCA, SM&CR, 12-week action plan, Sebastien Rousseau"
 language: "en-GB"
 layout: "report"
@@ -28,7 +28,7 @@ locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
-logo: "https://cloudcdn.pro/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
@@ -51,7 +51,7 @@ last_reviewed: "2026-05-17"
 atom_link: "https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/rss.xml"
 category: "Technology"
 docs: https://validator.w3.org/feed/docs/rss2.html
-generator: "Shokunin SSG (version 0.0.26)"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "The definitive 2026 blueprint for agentic engineering in banks and financial institutions — covering the move from vibe coding to spec-driven development, HITL vs HOTL, third-party risk management under DORA, the regulatory stack, legacy modernisation, and the quantum-safe substrate."
 item_guid: "https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/rss.xml"
 item_link: "https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026/rss.xml"
@@ -82,7 +82,7 @@ msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "The definitive 2026 blueprint for agentic engineering in banks and financial institutions — spec-driven development, HITL vs HOTL, TPRM under DORA, the regulatory stack, legacy modernisation, and the quantum-safe substrate."
-twitter_image: "https://cloudcdn.pro/sebastienrousseau/v1/logos/sebastienrousseau.png"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Agentic Engineering for Banks: 2026 AI Governance Blueprint"
@@ -96,7 +96,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2026-05-17"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 
 excerpt: "Agentic AI has crossed from pilot into production across global banking. Seventy per cent of institutions are using it to some degree; only one in five has a mature governance model. Meanwhile,…"
 ---
@@ -376,13 +376,13 @@ Three things, sequenced. First, produce the AI Bill of Materials — the complet
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-17">2026-05-17</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-19">2026-05-19</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
 <article class="related-card"><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" class="related-media" aria-label="State of AI and Quantum Computing in Banking: A 2023 Review" tabindex="-1"><img alt="State of AI and Quantum Computing in Banking: A 2023 Review" src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a></h3><p><time datetime="2023-12-18">2023-12-18</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance" class="related-media" aria-label="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance" tabindex="-1"><img alt="Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a></h3><p><time datetime="2026-05-14">2026-05-14</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026" class="related-media" aria-label="The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer" tabindex="-1"><img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026">The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer</a></h3><p><time datetime="2026-05-18">2026-05-18</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
 </div>
 </aside>
 <!-- enrich-end -->

@@ -4,7 +4,7 @@
   <link href="https://sebastienrousseau.com/tr/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/tr/"/>
   <id>https://sebastienrousseau.com/tr/</id>
-  <updated>2026-05-18T12:52:29+00:00</updated>
+  <updated>2026-05-19T09:09:20+00:00</updated>
   <entry>
     <title>2026&apos;da Kuantum Kriptografi Sıfırlaması: PQC Standartları, QKD Güvencesi ve Bankaların Erteleyemeyeceği Geçiş Çalışması</title>
     <link href="https://sebastienrousseau.com/tr/2026-05-18-kuantum-kriptografi-standartlari-gelismeler-2026/"/>
@@ -339,12 +339,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Shokunin: Rust tabanlı en hızlı statik site jeneratörü</title>
+    <title>Static Site Generator: Rust tabanlı en hızlı statik site jeneratörü</title>
     <link href="https://sebastienrousseau.com/tr/2023-10-09-shokunin-rust-tabanli-en-hizli-statik-site-jeneratoru/"/>
     <id>https://sebastienrousseau.com/tr/2023-10-09-shokunin-rust-tabanli-en-hizli-statik-site-jeneratoru/</id>
     <updated>2023-10-09T06:06:06+00:00</updated>
     <published>2023-10-09T06:06:06+00:00</published>
-    <summary>Shokunin, performans, SEO ve erişilebilirlik için tasarlanmış Rust tabanlı bir statik site jeneratörüdür.</summary>
+    <summary>Static Site Generator, performans, SEO ve erişilebilirlik için tasarlanmış Rust tabanlı bir statik site jeneratörüdür.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

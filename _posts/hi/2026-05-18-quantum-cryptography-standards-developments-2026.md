@@ -5,7 +5,7 @@ description: "2026 में क्वांटम क्रिप्टोग�
 date: "May 18, 2026"
 language: "hi-IN"
 locale: "hi_IN"
-banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "2026 के लिए क्वांटम-सुरक्षित क्रिप्टोग्राफी माइग्रेशन मानचित्र — NIST PQC मानक, हाइब्रिड प्रोटोकॉल कार्य, QKD आश्वासन, क्रिप्टो-चपलता और बैंक डेटा-जोखिम स्तर दिखाता है"
 keywords: "क्वांटम क्रिप्टोग्राफी 2026, पोस्ट-क्वांटम क्रिप्टोग्राफी, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, हाइब्रिड कुंजी विनिमय, QKD, ETSI QKD, ISO IEC 23837, क्रिप्टो-चपलता, harvest now decrypt later, HNDL, वित्तीय सेवा क्रिप्टोग्राफी, बैंकिंग सुरक्षा"
 ---

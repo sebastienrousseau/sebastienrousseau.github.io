@@ -454,7 +454,7 @@
     </news:publication>
     <news:publication_date>2023-10-09T06:06:06+00:00</news:publication_date>
     <news:title>Static Site Generator: il generatore di siti statici più veloce basato su Rust</news:title>
-    <news:keywords>Shokunin, SSG, Rust, generatore di siti statici, prestazioni, SEO, accessibilità, JSON-LD</news:keywords>
+    <news:keywords>Static Site Generator, SSG, Rust, generatore di siti statici, prestazioni, SEO, accessibilità, JSON-LD</news:keywords>
   </news:news>
 </url>
 <url>

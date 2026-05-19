@@ -4,7 +4,7 @@
   <link href="https://sebastienrousseau.com/he/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/he/"/>
   <id>https://sebastienrousseau.com/he/</id>
-  <updated>2026-05-18T12:52:29+00:00</updated>
+  <updated>2026-05-19T09:09:20+00:00</updated>
   <entry>
     <title>איפוס הקריפטוגרפיה הקוונטית ב-2026: תקני PQC, אסמכתת QKD ועבודת ההגירה שבנקים אינם יכולים לדחות</title>
     <link href="https://sebastienrousseau.com/he/2026-05-18-quantum-cryptography-standards-developments-2026/"/>
@@ -339,12 +339,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Shokunin: أسرع مولّد للمواقع الساكنة قائمٌ على Rust</title>
+    <title>Static Site Generator: أسرع مولّد للمواقع الساكنة قائمٌ على Rust</title>
     <link href="https://sebastienrousseau.com/he/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/"/>
     <id>https://sebastienrousseau.com/he/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/</id>
     <updated>2023-10-09T06:06:06+00:00</updated>
     <published>2023-10-09T06:06:06+00:00</published>
-    <summary>أنشئ مواقع ساكنة عالية الأثر، قابلة للتوسّع بلا حدود وتحت سيطرتك الكاملة، بفضل Shokunin — مولّد SSG فائق السرعة مكتوب بلغة Rust.</summary>
+    <summary>أنشئ مواقع ساكنة عالية الأثر، قابلة للتوسّع بلا حدود وتحت سيطرتك الكاملة، بفضل Static Site Generator — مولّد SSG فائق السرعة مكتوب بلغة Rust.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

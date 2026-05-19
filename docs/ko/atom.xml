@@ -4,7 +4,7 @@
   <link href="https://sebastienrousseau.com/ko/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/ko/"/>
   <id>https://sebastienrousseau.com/ko/</id>
-  <updated>2026-05-18T12:52:29+00:00</updated>
+  <updated>2026-05-19T09:09:20+00:00</updated>
   <entry>
     <title>2026년 양자 암호 리셋: PQC 표준, QKD 보증, 그리고 은행이 미룰 수 없는 마이그레이션 작업</title>
     <link href="https://sebastienrousseau.com/ko/2026-05-18-yangja-amho-pyojun-baljeon-2026/"/>
@@ -339,7 +339,7 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Shokunin: Rust 기반 최고속 정적 사이트 생성기</title>
+    <title>Static Site Generator: Rust 기반 최고속 정적 사이트 생성기</title>
     <link href="https://sebastienrousseau.com/ko/2023-10-09-shokunin-choegoseok-rust-gibon-jeongjeoksaiteu-saengseonggi/"/>
     <id>https://sebastienrousseau.com/ko/2023-10-09-shokunin-choegoseok-rust-gibon-jeongjeoksaiteu-saengseonggi/</id>
     <updated>2023-10-09T06:06:06+00:00</updated>

@@ -5,7 +5,7 @@ description: "La criptografía cuántica en 2026 ya no es un debate sobre la inm
 date: "May 18, 2026"
 language: "es-ES"
 locale: "es_ES"
-banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "Mapa de migración hacia una criptografía resistente a lo cuántico para 2026 — estándares NIST PQC, trabajo sobre protocolos híbridos, garantía de QKD, cripto-agilidad y niveles de riesgo de datos bancarios"
 keywords: "criptografía cuántica 2026, criptografía postcuántica, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, intercambio de claves híbrido, QKD, ETSI QKD, ISO IEC 23837, cripto-agilidad, harvest now decrypt later, HNDL, criptografía para servicios financieros, seguridad bancaria"
 tags: "criptografía cuántica, criptografía postcuántica, PQC, NIST, FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC, IETF, TLS, IPsec, QKD, ETSI, cripto-agilidad, HNDL, seguridad bancaria"

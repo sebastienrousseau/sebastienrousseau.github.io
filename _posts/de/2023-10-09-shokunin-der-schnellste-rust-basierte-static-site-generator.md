@@ -1,13 +1,13 @@
 ---
-title: "Shokunin: der schnellste Rust-basierte Static Site Generator"
+title: "Static Site Generator: der schnellste Rust-basierte Static Site Generator"
 subtitle: "Ein blitzschneller, barrierefreier und SEO-optimierter SSG, geschrieben in Rust"
-description: "Erstellen Sie wirkungsvolle statische Websites mit grenzenloser Skalierbarkeit und vollständiger Kontrolle, dank Shokunin – einem ultraschnellen, in Rust geschriebenen SSG."
+description: "Erstellen Sie wirkungsvolle statische Websites mit grenzenloser Skalierbarkeit und vollständiger Kontrolle, dank Static Site Generator – einem ultraschnellen, in Rust geschriebenen SSG."
 date: "October 9, 2023"
 language: "de"
 locale: "de_DE"
 banner: "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
 banner_alt: "Ausgeschalteter Laptop auf einem weißen Tisch, links ein Wasserglas, rechts ein Stift, ein Notizblock und eine Pflanze"
-keywords: "Shokunin, Static Site Generator, SSG, Rust, Performance, SEO, Barrierefreiheit, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS"
+keywords: "Static Site Generator, Static Site Generator, SSG, Rust, Performance, SEO, Barrierefreiheit, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS"
 ---
 
 ![Ausgeschalteter Laptop auf einem weißen Tisch, links ein Wasserglas, rechts ein Stift, ein Notizblock und eine Pflanze](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"
@@ -26,17 +26,17 @@ Leider erfüllte kein bestehendes Produkt meine Anforderungen ab Werk. Daher hab
 
 ### Eine Lösung mit unbegrenzter Skalierbarkeit und Anpassbarkeit
 
-Ich habe [**Shokunin ⧉**][00] entwickelt, um einen blitzschnellen Static Site Generator (SSG) bereitzustellen, der mit [**Rust ⧉**][03] umgesetzt ist und die Erstellung von SEO-optimierten und vollständig an Barrierefreiheitsstandards ausgerichteten statischen Websites vereinfacht.
+Ich habe [**Static Site Generator ⧉**][00] entwickelt, um einen blitzschnellen Static Site Generator (SSG) bereitzustellen, der mit [**Rust ⧉**][03] umgesetzt ist und die Erstellung von SEO-optimierten und vollständig an Barrierefreiheitsstandards ausgerichteten statischen Websites vereinfacht.
 
-Geschwindigkeit und Zuverlässigkeit hatten bei der Entwicklung von Shokunin oberste Priorität. Rust ist eine Systemprogrammiersprache, die für ihre Geschwindigkeit und Verlässlichkeit bekannt ist – ideal also, um leistungsstarke Static Site Generatoren zu entwickeln.
+Geschwindigkeit und Zuverlässigkeit hatten bei der Entwicklung von Static Site Generator oberste Priorität. Rust ist eine Systemprogrammiersprache, die für ihre Geschwindigkeit und Verlässlichkeit bekannt ist – ideal also, um leistungsstarke Static Site Generatoren zu entwickeln.
 
-Ich war begierig darauf, die Grenzen des mit Markdown Möglichen auszuloten. Mein Anspruch war es, mit Shokunin statische Websites zu erzeugen, die schnell, sicher und verlässlich sind. Sie sollten für alle zugänglich, benutzerfreundlich und leicht zu pflegen sein und in Suchmaschinen gut abschneiden.
+Ich war begierig darauf, die Grenzen des mit Markdown Möglichen auszuloten. Mein Anspruch war es, mit Static Site Generator statische Websites zu erzeugen, die schnell, sicher und verlässlich sind. Sie sollten für alle zugänglich, benutzerfreundlich und leicht zu pflegen sein und in Suchmaschinen gut abschneiden.
 
 ## Impact
 
 ### Ein neuer Standard für Static Site Generatoren
 
-Eine statische Website mit Shokunin zu erzeugen, ist mühelos – das erlaubt die volle Konzentration auf Inhalte, die bei der Zielgruppe Wirkung entfalten. Der Prozess ist geradlinig und in wenigen Millisekunden abgeschlossen.
+Eine statische Website mit Static Site Generator zu erzeugen, ist mühelos – das erlaubt die volle Konzentration auf Inhalte, die bei der Zielgruppe Wirkung entfalten. Der Prozess ist geradlinig und in wenigen Millisekunden abgeschlossen.
 
 Das Ergebnis sind vollständig responsive Websites, konform mit den [**Web Content Accessibility Guidelines (WCAG) ⧉**][01] und dem [**ADA ⧉**][02], und von Beginn an für die Suchmaschinenoptimierung (SEO) gerüstet.
 
@@ -44,7 +44,7 @@ Das Ergebnis sind vollständig responsive Websites, konform mit den [**Web Conte
 
 ### Ein neues Paradigma anzunehmen erfordert Mut und Zuversicht
 
-[**Shokunin ⧉**][00] eröffnet eine neue Perspektive – ein innovativer Ansatz, das Web zu verstehen. Mit seinem sorgfältig durchdachten Design befähigt es Content-Creator und Kreativschaffende, das kundenzentrierte Erlebnis zu bereichern.
+[**Static Site Generator ⧉**][00] eröffnet eine neue Perspektive – ein innovativer Ansatz, das Web zu verstehen. Mit seinem sorgfältig durchdachten Design befähigt es Content-Creator und Kreativschaffende, das kundenzentrierte Erlebnis zu bereichern.
 
 **Kernfunktionen:**
 
@@ -59,11 +59,11 @@ Das Ergebnis sind vollständig responsive Websites, konform mit den [**Web Conte
 * Unterstützung für Progressive Web Apps (PWAs) zur Offline-Nutzung
 * Unterstützung individueller Templates und HTML-Themes
 
-Jede Funktion spiegelt Werte wie Einfachheit, Verlässlichkeit und Skalierbarkeit wider. [**Shokunin ⧉**][00] ist darauf ausgelegt, hochwertige statische Websites zu erstellen und zu pflegen, die den Anforderungen moderner Nutzer gerecht werden.
+Jede Funktion spiegelt Werte wie Einfachheit, Verlässlichkeit und Skalierbarkeit wider. [**Static Site Generator ⧉**][00] ist darauf ausgelegt, hochwertige statische Websites zu erstellen und zu pflegen, die den Anforderungen moderner Nutzer gerecht werden.
 
 ### SEO-Optimierung
 
-[**Shokunin ⧉**][00] ist darauf ausgelegt, Nutzer beim Erstellen suchmaschinenoptimierter statischer Websites zu unterstützen. Zu den zentralen SEO-Funktionen zählen:
+[**Static Site Generator ⧉**][00] ist darauf ausgelegt, Nutzer beim Erstellen suchmaschinenoptimierter statischer Websites zu unterstützen. Zu den zentralen SEO-Funktionen zählen:
 
 * Automatische Erzeugung von Sitemaps und robots.txt-Dateien
 * Unterstützung individueller 404-Seiten
@@ -72,13 +72,13 @@ Jede Funktion spiegelt Werte wie Einfachheit, Verlässlichkeit und Skalierbarkei
 * Responsives Design
 * Konformität mit Standards der Barrierefreiheit
 
-[**Shokunin ⧉**][00] ist ein leistungsstarker und vielseitiger Static Site Generator, der eine breite Palette an Funktionen und Vorteilen bietet. Er hilft Nutzern, hochwertige statische Websites zu erstellen und zu pflegen, die für SEO optimiert sind und ein überlegenes Nutzererlebnis liefern.
+[**Static Site Generator ⧉**][00] ist ein leistungsstarker und vielseitiger Static Site Generator, der eine breite Palette an Funktionen und Vorteilen bietet. Er hilft Nutzern, hochwertige statische Websites zu erstellen und zu pflegen, die für SEO optimiert sind und ein überlegenes Nutzererlebnis liefern.
 
 Bereit, in wenigen Minuten eine performante statische Website zu erstellen, die Ihren Traffic und Ihre Konversionen steigert?
 
-[**Probieren Sie Shokunin ⧉**][00] noch heute kostenfrei aus und erleben Sie den Unterschied!
+[**Probieren Sie Static Site Generator ⧉**][00] noch heute kostenfrei aus und erleben Sie den Unterschied!
 
-[00]: https://shokunin.com/ "Shokunin, der schnellste Rust-basierte Static Site Generator (SSG)"
+[00]: https://shokunin.com/ "Static Site Generator, der schnellste Rust-basierte Static Site Generator (SSG)"
 [01]: https://www.w3.org/WAI/standards-guidelines/wcag/ "Web Content Accessibility Guidelines (WCAG)"
 [02]: https://www.access-board.gov/ada/ "Americans with Disabilities Act (ADA)"
 [03]: https://www.rust-lang.org/ "Rust Programming Language"

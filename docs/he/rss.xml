@@ -6,7 +6,7 @@
     <description>מאמרים בעברית: AI יישומי, תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית, וטרנספורמציה של תשלומי סיטונאות.</description>
     <atom:link href="https://sebastienrousseau.com/he/rss.xml" rel="self" type="application/rss+xml"/>
     <language>he-IL</language>
-    <lastBuildDate>Mon, 18 May 2026 12:52:29 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 09:09:20 +0000</lastBuildDate>
     <copyright>© זכויות יוצרים 2007 - 2026 - Sebastien Rousseau. כל הזכויות שמורות.</copyright>
     <item>
       <title>איפוס הקריפטוגרפיה הקוונטית ב-2026: תקני PQC, אסמכתת QKD ועבודת ההגירה שבנקים אינם יכולים לדחות</title>
@@ -15,7 +15,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-18-quantum-cryptography-standards-developments-2026/</guid>
       <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" type="image/webp" length="0"/>
       <category>קריפטוגרפיה קוונטית 2026</category>
       <category>קריפטוגרפיה פוסט-קוונטית</category>
       <category>NIST FIPS 203</category>
@@ -616,14 +616,14 @@
       <category>التشفير المقاوم للكم، التشفير ما بعد الكمي، مكتبة الهاش، HSH، تجزئة كلمات المرور، اشتقاق المفاتيح، Argon2i، Bcrypt، Scrypt، الحوسبة الكمية</category>
     </item>
     <item>
-      <title>Shokunin: أسرع مولّد للمواقع الساكنة قائمٌ على Rust</title>
+      <title>Static Site Generator: أسرع مولّد للمواقع الساكنة قائمٌ على Rust</title>
       <link>https://sebastienrousseau.com/he/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/</link>
-      <description>أنشئ مواقع ساكنة عالية الأثر، قابلة للتوسّع بلا حدود وتحت سيطرتك الكاملة، بفضل Shokunin — مولّد SSG فائق السرعة مكتوب بلغة Rust.</description>
+      <description>أنشئ مواقع ساكنة عالية الأثر، قابلة للتوسّع بلا حدود وتحت سيطرتك الكاملة، بفضل Static Site Generator — مولّد SSG فائق السرعة مكتوب بلغة Rust.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/he/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/</guid>
       <pubDate>Mon, 09 Oct 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" type="image/webp" length="0"/>
-      <category>Shokunin</category>
+      <category>Static Site Generator</category>
       <category>مولّد المواقع الساكنة</category>
       <category>SSG</category>
       <category>Rust</category>
