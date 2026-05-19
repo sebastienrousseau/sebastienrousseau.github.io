@@ -1,11 +1,11 @@
 {
-  "banner_alt": "प्रॉम्प्ट-संरचना की प्रतीकात्मक छवि",
-  "date": "January 23, 2024",
-  "description": "AI प्रॉम्प्ट-इंजीनियरिंग में नवीनतम प्रगति: chain-of-thought, RAG और टूल-यूज़।",
-  "title": "AI प्रॉम्प्ट-इंजीनियरिंग में प्रगति",
-  "locale": "hi_IN",
   "subtitle": "Chain-of-thought, RAG और टूल-यूज़ के बीच",
+  "title": "AI प्रॉम्प्ट-इंजीनियरिंग में प्रगति",
+  "date": "January 23, 2024",
+  "locale": "hi_IN",
+  "description": "AI प्रॉम्प्ट-इंजीनियरिंग में नवीनतम प्रगति: chain-of-thought, RAG और टूल-यूज़।",
   "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp",
+  "keywords": "प्रॉम्प्ट इंजीनियरिंग, AI, LLM, chain-of-thought, RAG, फ़्यू-शॉट, टूल यूज़, GPT, Claude, Gemini",
   "language": "hi-IN",
-  "keywords": "प्रॉम्प्ट इंजीनियरिंग, AI, LLM, chain-of-thought, RAG, फ़्यू-शॉट, टूल यूज़, GPT, Claude, Gemini"
+  "banner_alt": "प्रॉम्प्ट-संरचना की प्रतीकात्मक छवि"
 }

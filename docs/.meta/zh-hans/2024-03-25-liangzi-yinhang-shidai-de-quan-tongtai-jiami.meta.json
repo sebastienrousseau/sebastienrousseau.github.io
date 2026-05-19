@@ -1,11 +1,11 @@
 {
-  "language": "zh-Hans",
-  "subtitle": "全同态加密（FHE）如何在量子时代守护银行业的数据安全与隐私",
-  "locale": "zh_CN",
   "banner_alt": "全同态加密横幅",
-  "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
-  "date": "March 25, 2024",
-  "keywords": "全同态加密, FHE, 同态加密, 银行业, 金融, 量子计算, 后量子, 格密码, 隐私, Zama",
+  "locale": "zh_CN",
+  "description": "全同态加密（FHE）让数据在加密状态下计算，为量子时代的银行业带来全新数据安全范式。",
   "title": "量子银行时代的全同态加密",
-  "description": "全同态加密（FHE）让数据在加密状态下计算，为量子时代的银行业带来全新数据安全范式。"
+  "language": "zh-Hans",
+  "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
+  "keywords": "全同态加密, FHE, 同态加密, 银行业, 金融, 量子计算, 后量子, 格密码, 隐私, Zama",
+  "date": "March 25, 2024",
+  "subtitle": "全同态加密（FHE）如何在量子时代守护银行业的数据安全与隐私"
 }

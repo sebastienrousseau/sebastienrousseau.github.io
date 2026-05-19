@@ -1,11 +1,11 @@
 {
-  "language": "sv-SE",
-  "description": "El rol transformador de la IA en los algoritmos cuánticos para las finanzas, con foco en sus sutilezas matemáticas y sus aplicaciones bancarias.",
-  "subtitle": "Liberar la potencia cuántica para la innovación financiera: la IA en el corazón de los algoritmos de nueva generación",
   "date": "December 25, 2023",
   "title": "Revolucionar las finanzas con algoritmos cuánticos potenciados por IA",
-  "banner_alt": "Revolucionar las finanzas con algoritmos cuánticos potenciados por IA",
-  "locale": "sv_SE",
   "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
-  "keywords": "computación cuántica, algoritmos IA, matemáticas financieras, tecnología bancaria, gestión de riesgos, diseño de algoritmos, análisis de datos, estrategias de inversión, finanzas cuánticas, aprendizaje automático"
+  "subtitle": "Liberar la potencia cuántica para la innovación financiera: la IA en el corazón de los algoritmos de nueva generación",
+  "locale": "sv_SE",
+  "banner_alt": "Revolucionar las finanzas con algoritmos cuánticos potenciados por IA",
+  "keywords": "computación cuántica, algoritmos IA, matemáticas financieras, tecnología bancaria, gestión de riesgos, diseño de algoritmos, análisis de datos, estrategias de inversión, finanzas cuánticas, aprendizaje automático",
+  "description": "El rol transformador de la IA en los algoritmos cuánticos para las finanzas, con foco en sus sutilezas matemáticas y sus aplicaciones bancarias.",
+  "language": "sv-SE"
 }

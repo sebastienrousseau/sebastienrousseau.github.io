@@ -1,11 +1,11 @@
 {
-  "subtitle": "Dlaczego branża płatnicza musi działać już teraz",
-  "description": "Branżowa biała księga dla Emerging Payments Association Asia: strukturalne zagrożenie kwantowe dla infrastruktury płatniczej i konieczność skoordynowanych działań.",
-  "banner_alt": "Okładka białej księgi Quantum-Safe Payments EPAA",
-  "date": "Sep 01, 2025",
-  "keywords": "EPAA, quantum-safe payments, biała księga, kryptografia postkwantowa, płatności, SWIFT, infrastruktura",
   "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "locale": "pl_PL",
+  "subtitle": "Dlaczego branża płatnicza musi działać już teraz",
   "language": "pl-PL",
+  "keywords": "EPAA, quantum-safe payments, biała księga, kryptografia postkwantowa, płatności, SWIFT, infrastruktura",
+  "date": "Sep 01, 2025",
   "title": "Płatności odporne na kwanty: biała księga EPAA",
-  "locale": "pl_PL"
+  "description": "Branżowa biała księga dla Emerging Payments Association Asia: strukturalne zagrożenie kwantowe dla infrastruktury płatniczej i konieczność skoordynowanych działań.",
+  "banner_alt": "Okładka białej księgi Quantum-Safe Payments EPAA"
 }

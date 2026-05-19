@@ -1,11 +1,11 @@
 {
   "banner_alt": "حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية",
-  "subtitle": "بناء عملة مشفّرة على Ethereum، خطوةً خطوة",
-  "language": "fil-PH",
   "date": "January 9, 2018",
-  "description": "بناء عملة مشفّرة على بلوكشين Ethereum: دليل شامل لتطوير البلوكشين والترميز وتنفيذ العملات المشفّرة.",
+  "subtitle": "بناء عملة مشفّرة على Ethereum، خطوةً خطوة",
   "locale": "fil_PH",
   "title": "فهم التقنية الكامنة وراء البلوكشين",
-  "keywords": "blockchain, Ethereum, smart contract, العملة المشفّرة, Solidity, Geth, dApps, ERC-20, الترميز, testnet",
-  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp"
+  "language": "fil-PH",
+  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
+  "description": "بناء عملة مشفّرة على بلوكشين Ethereum: دليل شامل لتطوير البلوكشين والترميز وتنفيذ العملات المشفّرة.",
+  "keywords": "blockchain, Ethereum, smart contract, العملة المشفّرة, Solidity, Geth, dApps, ERC-20, الترميز, testnet"
 }

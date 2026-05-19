@@ -1,11 +1,11 @@
 {
-  "date": "March 18, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
-  "banner_alt": "Banner van het MM1-paper van Apple",
-  "subtitle": "Een analyse van Apple's MM1-paper en wat het betekent voor multimodale modellen",
-  "description": "Een analyse van Apple's MM1-paper over multimodale grote taalmodellen — architectuur, pretraining-strategieën en opkomende mogelijkheden.",
-  "title": "AI versterken met multimodale LLM's: inzichten uit MM1",
   "locale": "nl_NL",
+  "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
+  "title": "AI versterken met multimodale LLM's: inzichten uit MM1",
+  "description": "Een analyse van Apple's MM1-paper over multimodale grote taalmodellen — architectuur, pretraining-strategieën en opkomende mogelijkheden.",
   "keywords": "Apple MM1, multimodale LLM, AI, machine learning, pretraining",
-  "language": "nl-NL"
+  "language": "nl-NL",
+  "subtitle": "Een analyse van Apple's MM1-paper en wat het betekent voor multimodale modellen",
+  "date": "March 18, 2024",
+  "banner_alt": "Banner van het MM1-paper van Apple"
 }
