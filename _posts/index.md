@@ -294,6 +294,18 @@ site_software: "Static Site Generator, Rust"
 </div>
 </article>
 
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html" title="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance">
+<img alt="Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Post-Quantum · Corporate Banking · Board</span>
+<h3><a href="/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-14">May 14, 2026</time></p>
+<p class="newsroom-excerpt">Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap, the EU, UK and Australian timelines clarified, and BIS Project Leap proving feasibility, the board question is no longer whether to migrate — but whether it can finish before today's data outlives its cryptographic shelf-life.</p>
+</div>
+</article>
+
 
 </div>
 
