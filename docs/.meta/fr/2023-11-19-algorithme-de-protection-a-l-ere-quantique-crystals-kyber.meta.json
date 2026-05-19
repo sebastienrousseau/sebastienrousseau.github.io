@@ -1,11 +1,11 @@
 {
-  "language": "fr",
-  "description": "Comment CRYSTALS-Kyber, algorithme de cryptographie quantique-résistant, révolutionne le monde de la cryptographie et nous prépare à l'ère quantique.",
-  "locale": "fr_FR",
-  "keywords": "calcul quantique, cryptographie quantique-résistante, CRYSTALS-Kyber, cryptographie, sécurité, banque, finance, chiffrement, protection des données, pérennité",
-  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
   "banner_alt": "Un ordinateur quantique moderne et épuré",
   "title": "CRYSTALS-Kyber : l'algorithme de protection à l'ère quantique",
-  "date": "November 19, 2023",
-  "subtitle": "CRYSTALS-Kyber, le standard NIST FIPS 203 pour l'encapsulation de clés post-quantique"
+  "banner": "https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp",
+  "subtitle": "CRYSTALS-Kyber, le standard NIST FIPS 203 pour l'encapsulation de clés post-quantique",
+  "locale": "fr_FR",
+  "language": "fr",
+  "keywords": "calcul quantique, cryptographie quantique-résistante, CRYSTALS-Kyber, cryptographie, sécurité, banque, finance, chiffrement, protection des données, pérennité",
+  "description": "Comment CRYSTALS-Kyber, algorithme de cryptographie quantique-résistant, révolutionne le monde de la cryptographie et nous prépare à l'ère quantique.",
+  "date": "November 19, 2023"
 }

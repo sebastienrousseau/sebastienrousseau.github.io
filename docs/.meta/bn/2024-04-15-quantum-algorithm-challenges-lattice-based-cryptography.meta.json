@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp",
-  "title": "Quantum Algorithm Challenges Lattice-Based Cryptography",
-  "keywords": "quantum computing, quantum algorithm, lattice cryptography, LWE, encryption, post-quantum cryptography, cybersecurity, Yilei Chen, cryptography research, security threats",
-  "banner_alt": "Banner of Network nodes in a digital blue space",
-  "locale": "bn_BD",
-  "description": "A new polynomial-time quantum algorithm by Yilei Chen targets lattice-based cryptography. Implications for post-quantum standards including CRYSTALS-Kyber.",
-  "language": "bn-BD",
   "date": "Apr 01, 2024",
-  "subtitle": "The Next polynomial-time quantum algorithm for lattice-based cryptography"
+  "language": "bn-BD",
+  "subtitle": "The Next polynomial-time quantum algorithm for lattice-based cryptography",
+  "description": "A new polynomial-time quantum algorithm by Yilei Chen targets lattice-based cryptography. Implications for post-quantum standards including CRYSTALS-Kyber.",
+  "title": "Quantum Algorithm Challenges Lattice-Based Cryptography",
+  "banner_alt": "Banner of Network nodes in a digital blue space",
+  "keywords": "quantum computing, quantum algorithm, lattice cryptography, LWE, encryption, post-quantum cryptography, cybersecurity, Yilei Chen, cryptography research, security threats",
+  "locale": "bn_BD",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-constellation.webp"
 }
