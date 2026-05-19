@@ -1,11 +1,11 @@
 {
-  "keywords": "ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, solidity",
-  "locale": "uk_UA",
-  "description": "ERC-20: The Ethereum Token ERC-20 is the most common type of token used on the Ethereum blockchain and is often referred to as a smart contract digital contract",
-  "language": "uk-UA",
-  "title": "[UK DRAFT] ERC-20: The Ethereum Token Interface That Changed the World",
+  "subtitle": "ERC-20 tokens, Ethereum smart contracts and the standardisation of digital assets.",
   "banner_alt": "Turned off laptop computer on top of brown wooden table",
   "date": "Jan 24, 2018",
-  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
-  "subtitle": "ERC-20 tokens, Ethereum smart contracts and the standardisation of digital assets."
+  "language": "uk-UA",
+  "description": "ERC-20: The Ethereum Token ERC-20 is the most common type of token used on the Ethereum blockchain and is often referred to as a smart contract digital contract",
+  "title": "[UK DRAFT] ERC-20: The Ethereum Token Interface That Changed the World",
+  "keywords": "ethereum, erc20, eip, tokens, contracts, blockchain, cryptocurrencies, smart-token, solidity",
+  "locale": "uk_UA",
+  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp"
 }

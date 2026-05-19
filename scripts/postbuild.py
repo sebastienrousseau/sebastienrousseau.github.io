@@ -44,18 +44,36 @@ def b64_sha256(data: bytes) -> str:
 # the script with a "Failed to find a valid digest" error.
 
 
+def _ensure_trailing_newline(s: str) -> str:
+    """GitHub Pages / Fastly append a ``\\n`` to text assets in flight,
+    which silently shifts the on-the-wire SHA-256 by one byte and
+    breaks any SRI tag computed against the on-disk bytes. Pin the
+    newline at build time so disk == wire."""
+    return s if s.endswith("\n") else s + "\n"
+
+
 def _minify_one(p: Path) -> tuple[int, int]:
-    """Minify ``p`` in place. Returns ``(bytes_before, bytes_after)``;
-    ``(0, 0)`` if the file was already minified or unreadable."""
+    """Minify ``p`` in place + ensure a trailing newline. Returns
+    ``(bytes_before, bytes_after)``; ``(0, 0)`` if neither the
+    minification nor the newline-stamp changed the file.
+
+    GitHub Pages / Fastly append a ``\\n`` to text assets in flight,
+    so we pin it here — otherwise SRI computed against the on-disk
+    bytes diverges from what the browser fetches and the script gets
+    blocked."""
     try:
         src = p.read_text(encoding="utf-8")
     except (UnicodeDecodeError, OSError):
         return 0, 0
-    mini = rjsmin.jsmin(src)
-    if len(mini) >= len(src):
+    candidate = _ensure_trailing_newline(rjsmin.jsmin(src))
+    # Pick the smaller of (minified+nl) and (original+nl). If neither
+    # is shorter than the source, keep the source — but still stamp the
+    # trailing newline so the on-disk hash matches on-the-wire.
+    out = candidate if len(candidate) < len(src) else _ensure_trailing_newline(src)
+    if out == src:
         return 0, 0
-    p.write_text(mini, encoding="utf-8")
-    return len(src), len(mini)
+    p.write_text(out, encoding="utf-8")
+    return len(src), len(out)
 
 
 def _gather_js_targets() -> list[Path]:
@@ -75,17 +93,18 @@ def _gather_js_targets() -> list[Path]:
 
 
 def _minify_css(p: Path) -> tuple[int, int]:
-    """Minify a CSS file in place. Returns ``(bytes_before, bytes_after)``;
-    ``(0, 0)`` if no net savings."""
+    """Minify a CSS file in place + ensure a trailing newline. Same
+    SRI-vs-wire reasoning as ``_minify_one``."""
     try:
         src = p.read_text(encoding="utf-8")
     except (UnicodeDecodeError, OSError):
         return 0, 0
-    mini = rcssmin.cssmin(src)
-    if len(mini) >= len(src):
+    candidate = _ensure_trailing_newline(rcssmin.cssmin(src))
+    out = candidate if len(candidate) < len(src) else _ensure_trailing_newline(src)
+    if out == src:
         return 0, 0
-    p.write_text(mini, encoding="utf-8")
-    return len(src), len(mini)
+    p.write_text(out, encoding="utf-8")
+    return len(src), len(out)
 
 
 def _gather_css_targets() -> list[Path]:

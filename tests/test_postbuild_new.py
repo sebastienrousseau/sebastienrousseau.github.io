@@ -32,12 +32,22 @@ def test_minify_one_saves_bytes_on_unminified_js(tmp_path: Path):
     assert "function foo()" in body
 
 
-def test_minify_one_idempotent_on_already_minified(tmp_path: Path):
+def test_minify_one_idempotent_on_already_minified_with_trailing_newline(tmp_path: Path):
+    """Already-minified + already-trailing-\\n → no rewrite, (0, 0)."""
+    p = tmp_path / "x.js"
+    p.write_text("function foo(){return 42}\n", encoding="utf-8")
+    before, after = pb._minify_one(p)
+    assert (before, after) == (0, 0)
+
+
+def test_minify_one_stamps_trailing_newline_when_missing(tmp_path: Path):
+    """Already-minified but no trailing \\n → still rewrites to add it
+    so the on-disk SHA-256 matches the bytes GitHub Pages serves."""
     p = tmp_path / "x.js"
     p.write_text("function foo(){return 42}", encoding="utf-8")
     before, after = pb._minify_one(p)
-    # Already minified — returns (0, 0) and leaves bytes alone.
-    assert (before, after) == (0, 0)
+    assert after == before + 1
+    assert p.read_text(encoding="utf-8").endswith("\n")
 
 
 def test_minify_one_returns_zero_on_missing_file(tmp_path: Path):
@@ -67,10 +77,20 @@ def test_minify_css_strips_leading_indent_and_comments(tmp_path: Path):
     assert "color:#fff" in body or "color: #fff" in body
 
 
-def test_minify_css_idempotent_on_already_minified(tmp_path: Path):
+def test_minify_css_idempotent_on_already_minified_with_trailing_newline(tmp_path: Path):
+    """Already-minified + already-trailing-\\n → no rewrite, (0, 0)."""
+    p = tmp_path / "x.css"
+    p.write_text("body{color:red}\n", encoding="utf-8")
+    assert pb._minify_css(p) == (0, 0)
+
+
+def test_minify_css_stamps_trailing_newline_when_missing(tmp_path: Path):
+    """Same as the JS case — pin \\n so SRI ≡ wire."""
     p = tmp_path / "x.css"
     p.write_text("body{color:red}", encoding="utf-8")
-    assert pb._minify_css(p) == (0, 0)
+    before, after = pb._minify_css(p)
+    assert after == before + 1
+    assert p.read_text(encoding="utf-8").endswith("\n")
 
 
 def test_minify_css_handles_missing_file(tmp_path: Path):
@@ -405,13 +425,17 @@ def test_theme_init_minified_is_smaller_than_source():
 # ---------------------------------------------------------------------------
 
 
-def test_bulk_minify_js_counts_files_that_shrank(tmp_path: Path, monkeypatch):
+def test_bulk_minify_js_counts_files_that_changed(tmp_path: Path, monkeypatch):
+    """Every file that ended up rewritten (whether for size reduction
+    OR for the SRI-stamping trailing newline) counts as 'changed'."""
     monkeypatch.setattr(pb, "PUBLIC", tmp_path)
     (tmp_path / "a.js").write_text("// comment\nfunction a() { return 1; }\n", encoding="utf-8")
-    (tmp_path / "b.js").write_text("function b(){return 2}", encoding="utf-8")  # already minified
+    (tmp_path / "b.js").write_text("function b(){return 2}", encoding="utf-8")  # no nl
+    (tmp_path / "c.js").write_text("function c(){return 3}\n", encoding="utf-8")  # mini + nl
     count, before, after = pb._bulk_minify_js()
-    assert count == 1
-    assert before > after > 0
+    # a.js (minified), b.js (newline-stamped) — c.js is left alone.
+    assert count == 2
+    assert before > 0 and after > 0
 
 
 def test_bulk_minify_js_returns_zero_on_empty_public(tmp_path: Path, monkeypatch):
@@ -419,13 +443,15 @@ def test_bulk_minify_js_returns_zero_on_empty_public(tmp_path: Path, monkeypatch
     assert pb._bulk_minify_js() == (0, 0, 0)
 
 
-def test_bulk_minify_css_counts_files_that_shrank(tmp_path: Path, monkeypatch):
+def test_bulk_minify_css_counts_files_that_changed(tmp_path: Path, monkeypatch):
     monkeypatch.setattr(pb, "PUBLIC", tmp_path)
     (tmp_path / "a.css").write_text("/* preamble */\n      body { margin: 0; }\n", encoding="utf-8")
-    (tmp_path / "b.css").write_text("body{margin:0}", encoding="utf-8")  # already minified
+    (tmp_path / "b.css").write_text("body{margin:0}", encoding="utf-8")  # no nl
+    (tmp_path / "c.css").write_text("body{margin:0}\n", encoding="utf-8")  # mini + nl
     count, before, after = pb._bulk_minify_css()
-    assert count == 1
-    assert before > after > 0
+    # a.css (minified), b.css (newline-stamped) — c.css is left alone.
+    assert count == 2
+    assert before > 0 and after > 0
 
 
 def test_bulk_minify_css_returns_zero_on_empty_public(tmp_path: Path, monkeypatch):

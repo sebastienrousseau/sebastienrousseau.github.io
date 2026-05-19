@@ -1,11 +1,11 @@
 {
   "banner_alt": "Akande ses asistanının arayüzü",
-  "description": "Akande, doğal etkileşimler ve PDF özetleri için OpenAI'nin GPT'sini kullanan açık kaynak bir ses asistanıdır.",
-  "keywords": "Akande, ses asistanı, GPT, OpenAI, yapay zeka, üretkenlik",
-  "subtitle": "OpenAI GPT tabanlı, kişisel ve yönetici kullanımı için ses asistanı",
   "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp",
-  "title": "Akande ses asistanı: kişisel ve yönetici asistanlığında devrim",
-  "date": "February 12, 2024",
   "language": "tr-TR",
-  "locale": "tr_TR"
+  "locale": "tr_TR",
+  "keywords": "Akande, ses asistanı, GPT, OpenAI, yapay zeka, üretkenlik",
+  "description": "Akande, doğal etkileşimler ve PDF özetleri için OpenAI'nin GPT'sini kullanan açık kaynak bir ses asistanıdır.",
+  "title": "Akande ses asistanı: kişisel ve yönetici asistanlığında devrim",
+  "subtitle": "OpenAI GPT tabanlı, kişisel ve yönetici kullanımı için ses asistanı",
+  "date": "February 12, 2024"
 }
