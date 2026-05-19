@@ -1,17 +1,17 @@
 ---
-title: "Shokunin: Rust 기반 최고속 정적 사이트 생성기"
+title: "Static Site Generator: Rust 기반 최고속 정적 사이트 생성기"
 subtitle: "성능과 개발자 경험을 위하여 설계된 정적 사이트 생성기"
 description: "Shokunin은 Rust로 작성된 정적 사이트 생성기로, 초고속 빌드, JSON-LD 네이티브 지원, 우수한 접근성을 실현합니다."
 date: "October 9, 2023"
 language: "ko-KR"
 locale: "ko_KR"
 banner: "https://cloudcdn.pro/stocks/images/shokunin-banner.webp"
-banner_alt: "Shokunin 프로젝트 배너"
-keywords: "Shokunin, SSG, 정적 사이트 생성기, Rust, 성능, SEO, JSON-LD, 접근성"
+banner_alt: "Static Site Generator 프로젝트 배너"
+keywords: "Static Site Generator, SSG, 정적 사이트 생성기, Rust, 성능, SEO, JSON-LD, 접근성"
 last_reviewed: "2026-05-16"
 ---
 
-![Shokunin 프로젝트 배너](https://cloudcdn.pro/stocks/images/shokunin-banner.webp).class=\"img-fluid clearfix\"
+![Static Site Generator 프로젝트 배너](https://cloudcdn.pro/stocks/images/shokunin-banner.webp).class=\"img-fluid clearfix\"
 
 ## 통찰
 
@@ -23,7 +23,7 @@ last_reviewed: "2026-05-16"
 
 ### 속도와 단순성을 위한 Rust
 
-Shokunin은 전적으로 Rust로 작성되어, 안전성·속도·신뢰성의 보증을 활용합니다. `cargo install shokunin`으로 동작하며, 빌드 시간은 중규모 사이트에서 수백 밀리초 이하입니다.
+Shokunin은 전적으로 Rust로 작성되어, 안전성·속도·신뢰성의 보증을 활용합니다. `cargo install Static Site Generator`으로 동작하며, 빌드 시간은 중규모 사이트에서 수백 밀리초 이하입니다.
 
 ## 혁신
 
@@ -59,4 +59,4 @@ Hugo, Jekyll, Eleventy, Astro와 나란히 한 벤치마크에서, Shokunin은 �
 
 ### 디테일의 장인 정신
 
-Shokunin (장인)은 디테일, 품질, 장기적 신뢰성을 중시하는 일본 전통에서 영감을 얻었습니다. 그것이 Shokunin SSG가 구현하는 접근 방식입니다. 최소한의 의존성, 명시적 동작, 견고한 추상화, 모두 Rust의 힘으로 작동합니다.
+Static Site Generator (장인)은 디테일, 품질, 장기적 신뢰성을 중시하는 일본 전통에서 영감을 얻었습니다. 그것이 Static Site Generator SSG가 구현하는 접근 방식입니다. 최소한의 의존성, 명시적 동작, 견고한 추상화, 모두 Rust의 힘으로 작동합니다.

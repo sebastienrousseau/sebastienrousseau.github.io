@@ -1,21 +1,21 @@
 ---
-title: "Shokunin: Rust tabanlı en hızlı statik site jeneratörü"
+title: "Static Site Generator: Rust tabanlı en hızlı statik site jeneratörü"
 subtitle: "Performans, SEO ve erişilebilirlik için inşa edilmiş açık kaynak SSG"
-description: "Shokunin, performans, SEO ve erişilebilirlik için tasarlanmış Rust tabanlı bir statik site jeneratörüdür."
+description: "Static Site Generator, performans, SEO ve erişilebilirlik için tasarlanmış Rust tabanlı bir statik site jeneratörüdür."
 date: "October 9, 2023"
 language: "tr-TR"
 locale: "tr_TR"
 banner: "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
-banner_alt: "Shokunin SSG logosu"
-keywords: "Shokunin, statik site jeneratörü, Rust, SSG, performans, SEO, açık kaynak"
+banner_alt: "Static Site Generator (SSG) logosu"
+keywords: "Static Site Generator, statik site jeneratörü, Rust, SSG, performans, SEO, açık kaynak"
 ---
 
 
-![Shokunin SSG logosu](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"
+![Static Site Generator (SSG) logosu](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"
 
 ---
 
-> **TL;DR.** Shokunin è un generatore di siti statici scritto in Rust pensato için velocità di compilazione e l'eccellenza in SEO e accessibilità. È il motore che alimenta sebastienrousseau.com.
+> **TL;DR.** Static Site Generator è un generatore di siti statici scritto in Rust pensato için velocità di compilazione e l'eccellenza in SEO e accessibilità. È il motore che alimenta sebastienrousseau.com.
 >
 > **Önemli Çıkarımlar**
 >
@@ -40,17 +40,17 @@ Per desgracia, nessun prodotto existente respondía a i miei exigencias listo pe
 
 ### Una soluzione con escalabilidad e personalización infinitas
 
-Desarrollé [**Shokunin ⧉**][00] per fornire un generatore di siti statici (SSG) ultrarrápido costruito con [**Rust ⧉**][03], che simplifica la creación di sitios estáticos optimizados per SEO e plenamente alineados con i standard di accesibilidad.
+Desarrollé [**Static Site Generator ⧉**][00] per fornire un generatore di siti statici (SSG) ultrarrápido costruito con [**Rust ⧉**][03], che simplifica la creación di sitios estáticos optimizados per SEO e plenamente alineados con i standard di accesibilidad.
 
-La velocità ve fiabilidad erano i miei prioridades absolutas durante il desarrollo di Shokunin. Rust è un lenguaje di programación di sistemi reconocido için suo rapidez e fiabilidad, lo che lo converte in la strumento ideal per sviluppare generatori di siti statici di alto prestazioni.
+La velocità ve fiabilidad erano i miei prioridades absolutas durante il desarrollo di Static Site Generator. Rust è un lenguaje di programación di sistemi reconocido için suo rapidez e fiabilidad, lo che lo converte in la strumento ideal per sviluppare generatori di siti statici di alto prestazioni.
 
-Estaba impaciente per explorar i límites di lo posible con Markdown. Il mio objetivo: asegurarme di che Shokunin pudiera producir sitios estáticos rápidos, seguros e fiables. Quería che fueran accesibles a tutti, cómodos e fáciles di actualizar, e che rindieran bene in i motori di ricerca.
+Estaba impaciente per explorar i límites di lo posible con Markdown. Il mio objetivo: asegurarme di che Static Site Generator pudiera producir sitios estáticos rápidos, seguros e fiables. Quería che fueran accesibles a tutti, cómodos e fáciles di actualizar, e che rindieran bene in i motori di ricerca.
 
 ## Etki
 
 ### Un nuovo standard için generatori di siti statici
 
-Generar un sitio estático con Shokunin è senza esfuerzo, lo che consente concentrarse in il contenuto per maximizar il impacto in la audiencia destinataria. Il processo è directo e se cierra in alcuni pochi milisegundos.
+Generar un sitio estático con Static Site Generator è senza esfuerzo, lo che consente concentrarse in il contenuto per maximizar il impacto in la audiencia destinataria. Il processo è directo e se cierra in alcuni pochi milisegundos.
 
 Il resultado sono sitios totalmente responsive, conformes con le [**Web Content Accessibility Guidelines (WCAG) ⧉**][01] ve [**ADA ⧉**][02], e optimizados per SEO da il principio.
 
@@ -58,7 +58,7 @@ Il resultado sono sitios totalmente responsive, conformes con le [**Web Content 
 
 ### Abrazar un nuovo paradigma exige coraje e confianza
 
-[**Shokunin ⧉**][00] introduce una prospettiva nuova: un approccio innovador per comprender la web. Con un diseño meticulosamente concebido, consente ai creadores di contenuto e ai profesionales ın creación enriquecer la experiencia centrada in il cliente.
+[**Static Site Generator ⧉**][00] introduce una prospettiva nuova: un approccio innovador per comprender la web. Con un diseño meticulosamente concebido, consente ai creadores di contenuto e ai profesionales ın creación enriquecer la experiencia centrada in il cliente.
 
 **Funcionalidades chiave:**
 
@@ -73,11 +73,11 @@ Il resultado sono sitios totalmente responsive, conformes con le [**Web Content 
 * Soporte di applicazioni web progresivas (PWA) için navegación senza conexión
 * Soporte di plantillas personalizadas e temi HTML
 
-Ogni funzionalità refleja valori gibi simplicidad, fiabilidad e escalabilidad. [**Shokunin ⧉**][00] è concebido per ayudar a creare e mantener sitios estáticos di alta qualità che respondan alle necesidades ın utenti modernos.
+Ogni funzionalità refleja valori gibi simplicidad, fiabilidad e escalabilidad. [**Static Site Generator ⧉**][00] è concebido per ayudar a creare e mantener sitios estáticos di alta qualità che respondan alle necesidades ın utenti modernos.
 
 ### Optimización SEO
 
-[**Shokunin ⧉**][00] è concebido per ayudar ai utenti a creare sitios estáticos optimizados için motori di ricerca. Tra le funzionalità chiave di SEO:
+[**Static Site Generator ⧉**][00] è concebido per ayudar ai utenti a creare sitios estáticos optimizados için motori di ricerca. Tra le funzionalità chiave di SEO:
 
 * Generación automática di sitemaps e file robots.txt
 * Soporte di páginas 404 personalizadas
@@ -86,13 +86,13 @@ Ogni funzionalità refleja valori gibi simplicidad, fiabilidad e escalabilidad. 
 * Diseño responsive
 * Conformidad di accesibilidad
 
-[**Shokunin ⧉**][00] è un generatore di siti statici potente e polivalente che offre una amplia gama di funzionalità e beneficios. È concebido per ayudar ai utenti a creare e mantener sitios estáticos di alta qualità, optimizados per SEO e che offrono una experiencia di utente superior.
+[**Static Site Generator ⧉**][00] è un generatore di siti statici potente e polivalente che offre una amplia gama di funzionalità e beneficios. È concebido per ayudar ai utenti a creare e mantener sitios estáticos di alta qualità, optimizados per SEO e che offrono una experiencia di utente superior.
 
 Listo per creare in alcuni minutos un sitio estático di alto prestazioni che impulsará il suo tráfico ve suoi conversiones?
 
-[**Pruebe Shokunin ⧉**][00] gratis hoy e compruebe la differenza.
+[**Pruebe Static Site Generator ⧉**][00] gratis hoy e compruebe la differenza.
 
-[00]: https://shokunin.com/ "Shokunin, il generatore di siti statici daha çok rápido basato in Rust"
+[00]: https://shokunin.com/ "Static Site Generator, il generatore di siti statici daha çok rápido basato in Rust"
 [01]: https://www.w3.org/WAI/standards-guidelines/wcag/ "Web Content Accessibility Guidelines (WCAG)"
 [02]: https://www.access-board.gov/ada/ "Americans with Disabilities Act (ADA)"
 [03]: https://www.rust-lang.org/ "Rust Programming Language"

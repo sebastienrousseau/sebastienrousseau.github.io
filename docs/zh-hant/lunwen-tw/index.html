@@ -40,10 +40,10 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-48X7VOlM3lFXnmiYF/QcTufhgia/vKk8xDtqARuPD9I=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-ijP+68/1AhevMDXXWAi5c3uUgB3Zxk9rzuwrJF8gnuI=' 'sha256-v+MyZmWEH8ym/FeDtEIsoKH1viO5cmBTzQK4h37XkUw=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-48X7VOlM3lFXnmiYF/QcTufhgia/vKk8xDtqARuPD9I=' 'sha256-6cctSGOECFNQvKZJdLeWldN8FxSZ+OedXQBsOeW7LWo=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-v+MyZmWEH8ym/FeDtEIsoKH1viO5cmBTzQK4h37XkUw=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
-        connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
-        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://www.googletagmanager.com https://i.scdn.co;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
         style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
         media-src 'self' https://p.scdn.co https://*.scdn.co;" />
@@ -62,13 +62,18 @@
     <link rel="alternate" type="application/rss+xml" href="/zh-hant/rss.xml" />
     <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
     <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" fetchpriority="high">
     <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
     <meta name="color-scheme" content="light dark" />
-    <script src="/theme-init.js"></script>
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
 
-    <link rel="stylesheet" href="/_csp/07bd0b1e02602495.css" crossorigin="anonymous" integrity="sha256-x1R9Kd4qhI9HNa3KWsMcPK2NzfArQDZxph1XUpJzL54=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/_csp/6346d01ad7de2d6f.css" integrity="sha256-E9B7gTYmpOBOMurZ1sfCPlfZrjS9tse/iME9YVt/f/I=" crossorigin="anonymous">
     <link rel="alternate" type="application/atom+xml" title="Atom 訂閱源" href="/zh-hant/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta property="og:title" content="論文與白皮書 — Sebastien Rousseau">
@@ -86,7 +91,7 @@
 <link rel="canonical" href="https://sebastienrousseau.com/zh-hant/lunwen-tw/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
 <meta property="og:site_name" content="Sebastien Rousseau">
-<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/papers/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/publications/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/buhuth/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/prokashana/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/publikace/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/publikationen/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/publicaciones/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/mga-publikasyon/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/takardun-bincike/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/pirsumim/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/prakashan/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/makalah/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/pubblicazioni/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/ronbun/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/nonmun/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/publicaties/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/publikacje/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/publicacoes/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/publicatii/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/publikatsii/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/publikationer/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/ngan-wichai/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/yayinlar/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/publikatsiyi/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/cong-trinh/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/awon-iwe/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/lunwen/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/lunwen-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/papers/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/papers/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/publications/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/buhuth/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/prokashana/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/publikace/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/publikationen/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/publicaciones/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/mga-publikasyon/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/takardun-bincike/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/pirsumim/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/prakashan/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/makalah/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/pubblicazioni/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/ronbun/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/nonmun/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/publicaties/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/publikacje/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/publicacoes/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/publicatii/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/publikatsii/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/publikationer/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/ngan-wichai/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/yayinlar/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/publikatsiyi/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/cong-trinh/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/awon-iwe/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/lunwen/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/lunwen-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/papers/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-fL3dgbe3HSUwP7lNJg+zbHGz4LhDfCFuj8xITRtLDg4=" crossorigin="anonymous"></head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <a class="skip" href="#main">跳至主要內容</a>
     <div class="ap-progress" aria-hidden="true"></div>
@@ -193,7 +198,7 @@
 <div class="newsroom-grid newsroom-grid-tight">
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/zh-hant/2026-04-11-liangzi-yuzhi-zai-yi-dong-tw/index.html" title="Quantum Thresholds Are Moving Again">
-<img alt="Quantum computing circuit board with blue light patterns" src="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" loading="lazy" decoding="async" width="600" height="600"  fetchpriority="high">
+<img alt="Quantum computing circuit board with blue light patterns" src="https://cloudcdn.pro/api/transform?url=/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp&w=1200&format=webp&q=85" loading="lazy" decoding="async" width="600" height="600"  fetchpriority="high">
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">研究筆記 · 量子</span>
@@ -204,7 +209,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/zh-hant/2024-04-22-gezhuang-mima-liangzi-suanfa-faxian-louhdong-tw/index.html" title="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto">
-<img alt="Network of digital nodes in red and blue hues" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Network of digital nodes in red and blue hues" src="https://cloudcdn.pro/api/transform?url=/stocks/images/digital-nodes.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">研究筆記 · 量子</span>
@@ -215,7 +220,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/zh-hant/2024-04-15-liangzi-suanfa-tiaozhan-gezhuang-mima-xue-tw/index.html" title="量子演算法挑戰格狀密碼學">
-<img alt="Network nodes in a digital blue space" src="https://cloudcdn.pro/stocks/images/digital-constellation.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Network nodes in a digital blue space" src="https://cloudcdn.pro/api/transform?url=/stocks/images/digital-constellation.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">研究筆記 · 量子</span>
@@ -226,7 +231,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/zh-hant/2024-03-25-liangzi-yinhang-shidai-de-quan-tongtai-jiami-tw/index.html" title="量子銀行時代的全同態加密">
-<img alt="Banner for Fully Homomorphic Encryption" src="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for Fully Homomorphic Encryption" src="https://cloudcdn.pro/api/transform?url=/stocks/images/fully-homomorphic-encryption.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">研究 · 密碼學</span>
@@ -237,7 +242,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/zh-hant/2024-03-18-yong-duomotai-llm-tuijin-ai-mm1-qishi-tw/index.html" title="用多模態 LLM 推進 AI：MM1 的啟示">
-<img alt="Banner for Apple's MM1 multimodal LLM research" src="https://cloudcdn.pro/stocks/images/mm1-visual.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for Apple's MM1 multimodal LLM research" src="https://cloudcdn.pro/api/transform?url=/stocks/images/mm1-visual.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">研究 · 人工智慧</span>
@@ -248,7 +253,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/zh-hant/2024-01-08-yong-ibm-qiskit-yu-liangzi-fuliye-bianhuan-youhua-xindai-fenxi-tw/index.html" title="Qiskit and Quantum Fourier Transform for Credit Ratio Analysis">
-<img alt="A quantum computer room" src="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A quantum computer room" src="https://cloudcdn.pro/api/transform?url=/stocks/images/quantum-computer-room.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">研究 · 量子金融</span>
@@ -259,7 +264,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/zh-hant/2023-12-25-ai-zengqiang-de-liangzi-suanfa-biange-jinrong-tw/index.html" title="用 AI 增強的量子演算法變革金融">
-<img alt="A circuit board cityscape" src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A circuit board cityscape" src="https://cloudcdn.pro/api/transform?url=/stocks/images/circuit_board_cityscape.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">研究 · 量子金融</span>
@@ -270,7 +275,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/zh-hant/2023-12-11-liangzi-miyao-fenfa-yinhang-anquan-de-biange-tw/index.html" title="Quantum Key Distribution: Revolutionising Security in Banking">
-<img alt="HSBC headquarter in London Canary Wharf docks" src="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="HSBC headquarter in London Canary Wharf docks" src="https://cloudcdn.pro/api/transform?url=/stocks/images/hsbc-from-the-docks.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">研究 · 量子銀行</span>
@@ -281,7 +286,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/zh-hant/2023-11-19-crystals-kyber-liangzi-shidai-de-baohu-suanfa-tw/index.html" title="CRYSTALS-Kyber：量子時代的守護演算法">
-<img alt="A complex quantum computer architecture" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A complex quantum computer architecture" src="https://cloudcdn.pro/api/transform?url=/stocks/images/galina-nelyubova-V70-ng4FuiA.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">研究 · 密碼學</span>
@@ -388,9 +393,7 @@
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"zh-hant"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"論文與白皮書 — Sebastien Rousseau","url":"https://sebastienrousseau.com/zh-hant/lunwen-tw/","inLanguage":"zh-hant"}]}</script>
 
         <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":"論文與白皮書 — Sebastien Rousseau","description":"Sebastien Rousseau 關於人工智慧、ISO 20022 支付與後量子密碼學的論文、報告與出版物。","url":"https://sebastienrousseau.com/zh-hant/lunwen-tw/","inLanguage":"zh-hant","about":"Research papers and white papers on wholesale payments and post-quantum cryptography","author":{"@id":"https://sebastienrousseau.com/#person"},"isPartOf":{"@id":"https://sebastienrousseau.com/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"論文與白皮書","item":"https://sebastienrousseau.com/zh-hant/lunwen-tw/"}]},{"@type":"FAQPage","@id":"https://sebastienrousseau.com/papers#faq","mainEntity":[{"@type":"Question","name":"What kind of research and papers do you publish?","acceptedAnswer":{"@type":"Answer","text":"Two strands sit side-by-side. Industry white papers, produced for organisations such as the Emerging Payments Association Asia (EPAA), examine structural shifts to payment infrastructure — most recently the impact of cryptographically-relevant quantum computing on wholesale and real-time settlement rails. Applied research papers, published independently, share reproducible engineering work — for example, real-time speech recognition on macOS using OpenAI Whisper and Metal Performance Shaders."}},{"@type":"Question","name":"Who is the intended audience?","acceptedAnswer":{"@type":"Answer","text":"Heads of payments, CISOs and senior architects in Tier-1 banks, central banks, payment system operators and scheme owners. The applied research is written for engineers and product leaders building on top of large language models, on-device AI, and quantum-resistant cryptography."}},{"@type":"Question","name":"Are the white papers free to read?","acceptedAnswer":{"@type":"Answer","text":"The EPAA Quantum-Safe Payments paper is a free 18.9 MB PDF download from emergingpaymentsasia.org. The independent research paper on real-time speech recognition with OpenAI Whisper and Metal Performance Shaders is licensed and available for individual purchase at $49.00 (English, PDF, ~95 KB). One copy per buyer; downloads are personal-use only."}},{"@type":"Question","name":"May I cite or quote from these papers?","acceptedAnswer":{"@type":"Answer","text":"Yes. Short quotations with attribution are welcome under fair-dealing or fair-use norms. For EPAA papers, cite the EPAA as publisher with the working group, year and PDF URL. For independent research papers, cite as Rousseau, S. (year). Title. Self-published. with the canonical URL."}},{"@type":"Question","name":"Can I commission a paper or speak at an event?","acceptedAnswer":{"@type":"Answer","text":"Yes — limited, by selection. Commissioned work focuses on wholesale payments, ISO 20022 migration, post-quantum cryptography for financial services, and applied AI in banking. Speaking engagements at industry conferences, central-bank fora, and regulator round-tables are considered case-by-case."}},{"@type":"Question","name":"How do I follow new publications?","acceptedAnswer":{"@type":"Answer","text":"New papers and research notes are announced first through the site RSS feed at /rss.xml and the Banking On Quantum newsletter at news.bankingonquantum.com, which covers post-quantum cryptography, central-bank policy, and the migration roadmap across major payment schemes."}}]}]}</script>
-<script src="/main.f6d240db.js" integrity="sha256-9tJA2wY/3I+5OuXezpCLH3rb8KlkFS651l1/veOMebM=" crossorigin="anonymous" defer></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
-    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-1nBAjCuth9aoZ5kK7ZcxCdtBVCui0ybfAs/4H79Xh48=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
 <div id="ssg-search-widget">
@@ -413,7 +416,7 @@
 <div class="ssg-search-footer"><span><kbd>Esc</kbd> 關閉</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 導航</span><span><kbd>Enter</kbd> 開啟</span></div>
 </div>
 </div>
-<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-9ID9Qj34nE2XINSOOeFVqeQhu/X1W6cOQprtFVzVZUg=" crossorigin="anonymous"></script>
 </div>
 </body>
 </html>

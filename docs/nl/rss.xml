@@ -6,7 +6,7 @@
     <description>Artikelen in het Nederlands: toegepaste AI, ISO 20022-betalingen, post-kwantumcryptografie en transformatie van het wholesale-betalingsverkeer.</description>
     <atom:link href="https://sebastienrousseau.com/nl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>nl-NL</language>
-    <lastBuildDate>Mon, 18 May 2026 12:52:29 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 09:09:20 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle rechten voorbehouden.</copyright>
     <item>
       <title>De reset van kwantumcryptografie in 2026: PQC-standaarden, QKD-assurance en het migratiewerk dat banken niet langer kunnen uitstellen</title>
@@ -15,7 +15,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-18-kwantumcryptografie-standaarden-ontwikkelingen-2026/</guid>
       <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" type="image/webp" length="0"/>
       <category>kwantumcryptografie 2026</category>
       <category>post-kwantumcryptografie</category>
       <category>NIST FIPS 203</category>
@@ -666,14 +666,14 @@
       <category>wachtwoord</category>
     </item>
     <item>
-      <title>Shokunin: de snelste statische sitegenerator in Rust</title>
+      <title>Static Site Generator: de snelste statische sitegenerator in Rust</title>
       <link>https://sebastienrousseau.com/nl/2023-10-09-shokunin-de-snelste-rust-gebaseerde-statische-sitegenerator/</link>
-      <description>Shokunin is een statische sitegenerator in Rust, ontworpen voor prestaties, toegankelijkheid en SEO, met eersteklas JSON-LD.</description>
+      <description>Static Site Generator is een statische sitegenerator in Rust, ontworpen voor prestaties, toegankelijkheid en SEO, met eersteklas JSON-LD.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/nl/2023-10-09-shokunin-de-snelste-rust-gebaseerde-statische-sitegenerator/</guid>
       <pubDate>Mon, 09 Oct 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" type="image/webp" length="0"/>
-      <category>Shokunin</category>
+      <category>Static Site Generator</category>
       <category>statische sitegenerator</category>
       <category>Rust</category>
       <category>SSG</category>

@@ -4,7 +4,7 @@
   <link href="https://sebastienrousseau.com/zh-hant/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/zh-hant/"/>
   <id>https://sebastienrousseau.com/zh-hant/</id>
-  <updated>2026-05-18T12:52:29+00:00</updated>
+  <updated>2026-05-19T09:09:20+00:00</updated>
   <entry>
     <title>2026 年量子密碼重置：PQC 標準、QKD 保證與銀行不能再延期的遷移工作</title>
     <link href="https://sebastienrousseau.com/zh-hant/2026-05-18-liangzi-mima-biaozhun-jinzhan-tw/"/>
@@ -339,12 +339,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Shokunin：最快的基於 Rust 的靜態網站生成器</title>
+    <title>Static Site Generator：最快的基於 Rust 的靜態網站生成器</title>
     <link href="https://sebastienrousseau.com/zh-hant/2023-10-09-shokunin-zuikuai-de-rust-jingtai-zhandian-shengchengqi-tw/"/>
     <id>https://sebastienrousseau.com/zh-hant/2023-10-09-shokunin-zuikuai-de-rust-jingtai-zhandian-shengchengqi-tw/</id>
     <updated>2023-10-09T06:06:06+00:00</updated>
     <published>2023-10-09T06:06:06+00:00</published>
-    <summary>Shokunin 是一款基於 Rust 的高效能靜態網站生成器，致力於 SEO、可訪問性與極速效能。</summary>
+    <summary>Static Site Generator 是一款基於 Rust 的高效能靜態網站生成器，致力於 SEO、可訪問性與極速效能。</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

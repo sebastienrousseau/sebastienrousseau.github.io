@@ -1,12 +1,12 @@
 {
-  "banner_alt": "波形を持つマイク",
-  "keywords": "AI, 音声認識, 音声テキスト変換, Whisper, 翻訳, 多言語, オーディオインサイト",
-  "title": "AI による音声分析、翻訳、インサイト",
-  "language": "ja-JP",
-  "date": "January 29, 2024",
   "banner": "https://cloudcdn.pro/stocks/images/icons8-team-r-enAOPw8Rs-unsplash.webp",
-  "description": "OpenAI Whisper、リアルタイム音声テキスト変換、多言語翻訳によるオーディオインサイトのための AI ソリューション。",
   "last_reviewed": "2026-05-11",
+  "title": "AI による音声分析、翻訳、インサイト",
+  "date": "January 29, 2024",
+  "subtitle": "リアルタイム音声テキスト変換と多言語インサイトのための AI",
+  "description": "OpenAI Whisper、リアルタイム音声テキスト変換、多言語翻訳によるオーディオインサイトのための AI ソリューション。",
+  "keywords": "AI, 音声認識, 音声テキスト変換, Whisper, 翻訳, 多言語, オーディオインサイト",
   "locale": "ja_JP",
-  "subtitle": "リアルタイム音声テキスト変換と多言語インサイトのための AI"
+  "language": "ja-JP",
+  "banner_alt": "波形を持つマイク"
 }

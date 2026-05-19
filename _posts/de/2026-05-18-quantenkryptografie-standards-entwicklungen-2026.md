@@ -5,7 +5,7 @@ description: "Quantenkryptografie ist 2026 keine Debatte mehr darüber, ob Quant
 date: "May 18, 2026"
 language: "de"
 locale: "de_DE"
-banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "Migrationskarte für quantensichere Kryptografie 2026 — NIST-PQC-Standards, Hybridprotokollarbeit, QKD-Assurance, Krypto-Agilität und Bank-Datenrisikostufen"
 keywords: "Quantenkryptografie 2026, Post-Quanten-Kryptografie, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybrider Schlüsselaustausch, QKD, ETSI QKD, ISO IEC 23837, Krypto-Agilität, harvest now decrypt later, HNDL, Kryptografie für Finanzdienstleistungen, Banksicherheit"
 tags: "Quantenkryptografie, Post-Quanten-Kryptografie, PQC, NIST, FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC, IETF, TLS, IPsec, QKD, ETSI, Krypto-Agilität, HNDL, Banksicherheit"

@@ -4,7 +4,7 @@
   <link href="https://sebastienrousseau.com/pt-br/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/pt-br/"/>
   <id>https://sebastienrousseau.com/pt-br/</id>
-  <updated>2026-05-18T12:52:29+00:00</updated>
+  <updated>2026-05-19T09:09:20+00:00</updated>
   <entry>
     <title>O reset da criptografia quântica em 2026: padrões PQC, garantia de QKD e o trabalho de migração que os bancos não podem adiar</title>
     <link href="https://sebastienrousseau.com/pt-br/2026-05-18-criptografia-quantica-padroes-desenvolvimentos-2026/"/>
@@ -339,12 +339,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Shokunin: o generador de sitios estáticos mais rápido basado em Rust</title>
+    <title>Static Site Generator: o generador de sitios estáticos mais rápido basado em Rust</title>
     <link href="https://sebastienrousseau.com/pt-br/2023-10-09-shokunin-o-gerador-de-sites-estaticos-rust-mais-rapido/"/>
     <id>https://sebastienrousseau.com/pt-br/2023-10-09-shokunin-o-gerador-de-sites-estaticos-rust-mais-rapido/</id>
     <updated>2023-10-09T06:06:06+00:00</updated>
     <published>2023-10-09T06:06:06+00:00</published>
-    <summary>Cree sitios estáticos de alto impacto, escalables até ou infinito e enteramente sob seu control, gracias a Shokunin: um SSG ultrarrápido escrito em Rust.</summary>
+    <summary>Cree sitios estáticos de alto impacto, escalables até ou infinito e enteramente sob seu control, gracias a Static Site Generator: um SSG ultrarrápido escrito em Rust.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

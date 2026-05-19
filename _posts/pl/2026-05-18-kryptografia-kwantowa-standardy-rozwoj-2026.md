@@ -5,7 +5,7 @@ description: "Kryptografia kwantowa w 2026 roku to już nie debata o tym, czy ko
 date: "May 18, 2026"
 language: "pl-PL"
 locale: "pl_PL"
-banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "Mapa migracji do kryptografii kwantowo-bezpiecznej na 2026 rok pokazująca standardy NIST PQC, prace nad protokołami hybrydowymi, gwarancje QKD, agilność kryptograficzną i poziomy ryzyka danych bankowych"
 keywords: "kryptografia kwantowa 2026, kryptografia postkwantowa, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybrydowa wymiana kluczy, QKD, ETSI QKD, ISO IEC 23837, agilność kryptograficzna, harvest now decrypt later, HNDL, kryptografia usług finansowych, bezpieczeństwo bankowe"
 ---

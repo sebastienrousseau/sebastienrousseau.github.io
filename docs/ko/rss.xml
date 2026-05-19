@@ -6,7 +6,7 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Mon, 18 May 2026 12:52:29 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 09:09:20 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
     <item>
       <title>2026년 양자 암호 리셋: PQC 표준, QKD 보증, 그리고 은행이 미룰 수 없는 마이그레이션 작업</title>
@@ -15,7 +15,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-18-yangja-amho-pyojun-baljeon-2026/</guid>
       <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" type="image/webp" length="0"/>
       <category>양자 암호 2026</category>
       <category>포스트 양자 암호</category>
       <category>NIST FIPS 203</category>
@@ -714,14 +714,14 @@
       <category>보안</category>
     </item>
     <item>
-      <title>Shokunin: Rust 기반 최고속 정적 사이트 생성기</title>
+      <title>Static Site Generator: Rust 기반 최고속 정적 사이트 생성기</title>
       <link>https://sebastienrousseau.com/ko/2023-10-09-shokunin-choegoseok-rust-gibon-jeongjeoksaiteu-saengseonggi/</link>
       <description>Shokunin은 Rust로 작성된 정적 사이트 생성기로, 초고속 빌드, JSON-LD 네이티브 지원, 우수한 접근성을 실현합니다.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ko/2023-10-09-shokunin-choegoseok-rust-gibon-jeongjeoksaiteu-saengseonggi/</guid>
       <pubDate>Mon, 09 Oct 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/shokunin-banner.webp" type="image/webp" length="0"/>
-      <category>Shokunin</category>
+      <category>Static Site Generator</category>
       <category>SSG</category>
       <category>정적 사이트 생성기</category>
       <category>Rust</category>

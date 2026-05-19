@@ -146,12 +146,12 @@ Crossref / EUR ePub / IEEE cross-walk a profile back to publications.
 Brands Sebastien has worked with along the way.
 
 <div class="brands">
-<img alt="HSBC logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/hsbc.svg" width="120" />
-<img alt="PayPal logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/paypal.svg" width="120" />
-<img alt="Barclays logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/barclays.svg" width="120" />
-<img alt="Shazam logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/shazam.svg" width="120" />
-<img alt="AKQA logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/akqa.svg" width="120" />
-<img alt="Virgin logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/virgin.svg" width="120" />
+<img alt="HSBC logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/hsbc.webp" width="120" />
+<img alt="PayPal logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/paypal.webp" width="120" />
+<img alt="Barclays logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/barclays.webp" width="120" />
+<img alt="Shazam logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/shazam.webp" width="120" />
+<img alt="AKQA logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/akqa.webp" width="120" />
+<img alt="Virgin logo" class="brand-logo" decoding="async" height="32" loading="lazy" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/virgin.webp" width="120" />
 </div>
 
 ![divider][divider].class=\"m-10 w-100\"

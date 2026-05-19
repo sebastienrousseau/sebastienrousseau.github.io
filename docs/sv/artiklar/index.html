@@ -40,10 +40,10 @@
         form-action 'self' https://formspree.io;
         object-src 'none';
         upgrade-insecure-requests;
-        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-OZNs0g67tYInB9PSmEd4UpAOtaM+rT09CXtPuHm87RA=' 'sha256-cEc1DiZMQ83ozZ1JNFdu2c1+QjbFeEgq9bzrpP0O6SA=' 'sha256-zE/UEZ1TW4j3s1abbv49o7GPQjuurqPPOggoRdgGmSQ=' 'self' 'inline-speculation-rules' https://www.google-analytics.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-Im+JpU1vzH9gWjYwS6v31bJIdYOBXGiSi116o7ok6gE=' 'sha256-OZNs0g67tYInB9PSmEd4UpAOtaM+rT09CXtPuHm87RA=' 'sha256-zE/UEZ1TW4j3s1abbv49o7GPQjuurqPPOggoRdgGmSQ=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
         frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
-        connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com https://www.google.com https://stats.g.doubleclick.net https://open.spotify.com;
-        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://www.googletagmanager.com https://i.scdn.co;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
         style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
         media-src 'self' https://p.scdn.co https://*.scdn.co;" />
@@ -62,31 +62,36 @@
     <link rel="alternate" type="application/rss+xml" href="/sv/rss.xml" />
     <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
     <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" fetchpriority="high">
     <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
     <meta name="color-scheme" content="light dark" />
-    <script src="/theme-init.js"></script>
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
 
-    <link rel="stylesheet" href="/_csp/07bd0b1e02602495.css" crossorigin="anonymous" integrity="sha256-x1R9Kd4qhI9HNa3KWsMcPK2NzfArQDZxph1XUpJzL54=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/_csp/6346d01ad7de2d6f.css" integrity="sha256-E9B7gTYmpOBOMurZ1sfCPlfZrjS9tse/iME9YVt/f/I=" crossorigin="anonymous">
     <link rel="alternate" type="application/atom+xml" title="Atom-flöde" href="/sv/atom.xml"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta property="og:title" content="Artiklar — Sebastien Rousseau">
 <meta property="og:description" content="Artiklar om tillämpad AI, postkvantkryptografi, ISO 20022-betalningar och transformationen av grossistbetalningar.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sebastienrousseau.com/sv/artiklar/">
-<meta property="og:image" content="https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="sv_SE">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Artiklar — Sebastien Rousseau">
 <meta name="twitter:description" content="Artiklar om tillämpad AI, postkvantkryptografi, ISO 20022-betalningar och transformationen av grossistbetalningar.">
-<meta name="twitter:image" content="https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp">
 <link rel="canonical" href="https://sebastienrousseau.com/sv/artiklar/">
 <link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
 <meta property="og:site_name" content="Sebastien Rousseau">
-<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/articles/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/articles/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/maqalat/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/prabondho/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/clanky/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/artikel/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/articulos/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/mga-artikulo/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/labarai/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/ma-amarim/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/lekh/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/artikel/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/articoli/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/kiji/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/gisa/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/artikelen/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/artykuly/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/artigos/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/articole/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/stati/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/artiklar/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/bot-khwam/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/makaleler/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/statti/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/bai-viet/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/awon-akole/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/wenzhang/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/wenzhang-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/articles/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" crossorigin="anonymous" integrity="sha256-qrZMiHtYUDTrqu7hrA6Vyz6IZeltvQLSksKVwx3VWdE=" crossorigin="anonymous"></head>
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/articles/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/articles/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/maqalat/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/prabondho/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/clanky/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/artikel/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/articulos/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/mga-artikulo/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/labarai/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/ma-amarim/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/lekh/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/artikel/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/articoli/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/kiji/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/gisa/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/artikelen/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/artykuly/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/artigos/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/articole/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/stati/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/artiklar/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/bot-khwam/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/makaleler/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/statti/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/bai-viet/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/awon-akole/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/wenzhang/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/wenzhang-tw/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/articles/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-fL3dgbe3HSUwP7lNJg+zbHGz4LhDfCFuj8xITRtLDg4=" crossorigin="anonymous"></head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <a class="skip" href="#main">Hoppa till huvudinnehållet</a>
     <div class="ap-progress" aria-hidden="true"></div>
@@ -169,55 +174,22 @@
       <div class="wrap"><section class="newsroom">
 <header class="newsroom-section-head"><p class="newsroom-kicker">UTVALT</p><h2>Latest story</h2></header>
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/sv/2026-05-18-kvantkryptografi-standarder-utveckling-2026/index.html" title="Återställningen av kvantkryptografi 2026: PQC-standarder, QKD-säkerhet och migrationsarbetet bankerna inte kan skjuta upp">
-<img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/sv/2026-05-15-doljd-avkastning-blackrock-brsrv-bstbl-genius-act/index.html" title="El rendimiento oculto: descifrando los registros BRSRV y BSTBL de BlackRock">
+<img alt="Stacked US dollar coins under warm light, representing tokenised money-market fund yield" src="https://cloudcdn.pro/api/transform?url=/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp&w=1600&format=webp&q=85" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Post-Quantum · Standards · Banking</span>
-<h3><a href="/sv/2026-05-18-kvantkryptografi-standarder-utveckling-2026/index.html" title="Återställningen av kvantkryptografi 2026: PQC-standarder, QKD-säkerhet och migrationsarbetet bankerna inte kan skjuta upp">Återställningen av kvantkryptografi 2026: PQC-standarder, QKD-säkerhet och migrationsarbetet bankerna inte kan skjuta upp</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-18">18 mai 2026</time> · Sebastien Rousseau</p>
-<p>Quantum cryptography has moved from horizon-scanning to implementation discipline: NIST PQC standards are ready, UK NCSC guidance has narrowed the algorithm choices, IETF protocol work is still maturing, and QKD assurance is moving from laboratory confidence to certification language.</p>
-<p><a class="pill ghost" href="/sv/2026-05-18-kvantkryptografi-standarder-utveckling-2026/index.html" title="Återställningen av kvantkryptografi 2026: PQC-standarder, QKD-säkerhet och migrationsarbetet bankerna inte kan skjuta upp">Read the full story</a></p>
+<span class="newsroom-eyebrow">Payments · Stablecoins · Regulation</span>
+<h3><a href="/sv/2026-05-15-doljd-avkastning-blackrock-brsrv-bstbl-genius-act/index.html" title="El rendimiento oculto: descifrando los registros BRSRV y BSTBL de BlackRock">El rendimiento oculto: descifrando los registros BRSRV y BSTBL de BlackRock</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-15">15 mai 2026</time> · Sebastien Rousseau</p>
+<p>Stablecoins cannot pay yield under the GENIUS Act. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail.</p>
+<p><a class="pill ghost" href="/sv/2026-05-15-doljd-avkastning-blackrock-brsrv-bstbl-genius-act/index.html" title="El rendimiento oculto: descifrando los registros BRSRV y BSTBL de BlackRock">Read the full story</a></p>
 </div>
 </article>
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 <div class="newsroom-grid">
 <article class="newsroom-card">
-<a class="newsroom-card-media" href="/sv/2026-05-17-agentisk-ingenjorskonst-banker-blueprint-2026/index.html" title="Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán">
-<img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Applied AI · Governance · Engineering</span>
-<h3><a href="/sv/2026-05-17-agentisk-ingenjorskonst-banker-blueprint-2026/index.html" title="Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán">Ingeniería agéntica para bancos: un blueprint 2026 para el COMEX y los ingenieros que lo construirán</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-17">17 mai 2026</time> · Sebastien Rousseau</p>
-<p class="newsroom-excerpt">70% of banks now use agentic AI in some form; only one in five has a mature governance model. With the EU AI Act high-risk deadline twelve weeks away and autonomous adversaries operating at machine speed, this is the engineering and governance position a bank needs to hold.</p>
-</div>
-</article>
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/sv/2026-05-16-basta-molnarkitektur-for-banker-2026/index.html" title="Den bästa molninfrastrukturarkitekturen 2026: En AI-nativ, multi-cloud, kvantmedveten ritning för finansiella tjänster">
-<img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Cloud · AI-Native · Post-Quantum</span>
-<h3><a href="/sv/2026-05-16-basta-molnarkitektur-for-banker-2026/index.html" title="Den bästa molninfrastrukturarkitekturen 2026: En AI-nativ, multi-cloud, kvantmedveten ritning för finansiella tjänster">Den bästa molninfrastrukturarkitekturen 2026: En AI-nativ, multi-cloud, kvantmedveten ritning för finansiella tjänster</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-16">16 mai 2026</time> · Sebastien Rousseau</p>
-<p class="newsroom-excerpt">Cloud architecture has crystallised around six pillars and one strategic question for banks: whether to consume cloud or design it — under converging pressure from agentic commerce, agentic unit economics, harvest-now-decrypt-later quantum risk, MCP security, cryptographic agent identity, and the legacy estate that still consumes 70–75% of financial-services IT spend.</p>
-</div>
-</article>
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/sv/2026-05-15-doljd-avkastning-blackrock-brsrv-bstbl-genius-act/index.html" title="El rendimiento oculto: descifrando los registros BRSRV y BSTBL de BlackRock">
-<img alt="Stacked US dollar coins under warm light, representing tokenised money-market fund yield" src="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Payments · Stablecoins · Regulation</span>
-<h3><a href="/sv/2026-05-15-doljd-avkastning-blackrock-brsrv-bstbl-genius-act/index.html" title="El rendimiento oculto: descifrando los registros BRSRV y BSTBL de BlackRock">El rendimiento oculto: descifrando los registros BRSRV y BSTBL de BlackRock</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-15">15 mai 2026</time> · Sebastien Rousseau</p>
-<p class="newsroom-excerpt">Stablecoins cannot pay yield under the GENIUS Act. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail.</p>
-</div>
-</article>
-<article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2026-05-14-sakra-huvudboken-postkvantmigration-foretagsfinans/index.html" title="Asegurar el libro contable: guía para consejos de administración sobre la migración postcuántica en banca corporativa">
-<img alt="Open vault door framed by gold light — visual metaphor for cryptographic protection of financial records" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Open vault door framed by gold light — visual metaphor for cryptographic protection of financial records" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Post-Quantum · Treasury · Governance</span>
@@ -228,7 +200,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2026-05-12-iso-20022-pacs008-strukturerad-adress-deadline/index.html" title="El plazo pacs.008 de «dirección estructurada» de noviembre de 2026: vista a seis meses">
-<img alt="Cross-border payment message structured-address diagram with TwnNm and Ctry highlighted" src="https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Cross-border payment message structured-address diagram with TwnNm and Ctry highlighted" src="https://cloudcdn.pro/api/transform?url=/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">ISO 20022 · Payments · CBPR+</span>
@@ -239,7 +211,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2026-05-11-lucy-besson-kunskapsoverforing-ai-och-kvant/index.html" title="Lucy's Flash Drive, Revisited: What Besson Saw About Knowledge Migrating to Machines">
-<img alt="Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles" src="https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Abstract visualisation of neural networks and quantum atomic arrays. A black computer forming from rearranging particles" src="https://cloudcdn.pro/api/transform?url=/stocks/images/lucy-knowledge-transfer-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI · Quantum · Philosophy</span>
@@ -250,7 +222,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2026-04-11-kvanttrosklarna-rors-igen/index.html" title="Quantum Thresholds Are Moving Again">
-<img alt="Quantum computing circuit board with blue light patterns" src="https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Quantum computing circuit board with blue light patterns" src="https://cloudcdn.pro/api/transform?url=/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Quantum</span>
@@ -261,7 +233,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2024-04-22-fel-upptackt-i-kvantalgoritm-for-gitterbaserad-krypto/index.html" title="Bug Discovered in Quantum Algorithm for Lattice-Based Crypto">
-<img alt="Image generated using MidJourney. A network of digital nodes in red and blue hues" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Image generated using MidJourney. A network of digital nodes in red and blue hues" src="https://cloudcdn.pro/api/transform?url=/stocks/images/digital-nodes.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Quantum</span>
@@ -272,7 +244,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2024-04-15-kvantalgoritm-utmanar-gitterbaserad-kryptografi/index.html" title="Un algoritmo cuántico desafía a la criptografía sobre retículos">
-<img alt="Banner Image of Network nodes in a digital blue space" src="https://cloudcdn.pro/stocks/images/digital-constellation.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner Image of Network nodes in a digital blue space" src="https://cloudcdn.pro/api/transform?url=/stocks/images/digital-constellation.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Quantum</span>
@@ -283,7 +255,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2024-04-01-openvoice-ledande-innovation-inom-roststkloning/index.html" title="OpenVoice: a la vanguardia de la innovación en clonación de voz">
-<img alt="Banner of vibrant gradient overlay on repeated profiles" src="https://cloudcdn.pro/stocks/images/open-voice.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner of vibrant gradient overlay on repeated profiles" src="https://cloudcdn.pro/api/transform?url=/stocks/images/open-voice.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI</span>
@@ -294,7 +266,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2024-03-25-helt-homomorf-kryptering-i-en-bankvarld-i-kvantalder/index.html" title="El cifrado completamente homomórfico (FHE) en la era bancaria cuántica">
-<img alt="Banner for Fully Homomorphic Encryption" src="https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for Fully Homomorphic Encryption" src="https://cloudcdn.pro/api/transform?url=/stocks/images/fully-homomorphic-encryption.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Quantum</span>
@@ -305,7 +277,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2024-03-18-fora-ai-framat-med-multimodala-llm-lardomar-fran-mm1/index.html" title="Hacer progresar la IA con los LLM multimodales: lecciones de MM1">
-<img alt="Banner for the Apple MM1 multimodal LLM research" src="https://cloudcdn.pro/stocks/images/mm1-visual.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the Apple MM1 multimodal LLM research" src="https://cloudcdn.pro/api/transform?url=/stocks/images/mm1-visual.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI</span>
@@ -316,7 +288,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2024-03-12-realtids-talgenkanning-pa-macos-med-whisper/index.html" title="Accelerating Real-Time Speech Recognition on macOS with OpenAI Whisper">
-<img alt="Banner for Real-time automatic speech recognition research" src="https://cloudcdn.pro/stocks/images/research-paper.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for Real-time automatic speech recognition research" src="https://cloudcdn.pro/api/transform?url=/stocks/images/research-paper.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI · macOS</span>
@@ -327,7 +299,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2024-03-08-rustlogs-avancerat-loggbibliotek-for-rust/index.html" title="Unleashing the Power of Logging in Rust with RustLogs (RLG)">
-<img alt="Banner for RustLogs (RLG) library" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for RustLogs (RLG) library" src="https://cloudcdn.pro/api/transform?url=/stocks/images/rustlogs.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Open source · Rust</span>
@@ -338,7 +310,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2024-03-04-le-chat-fran-mistral-ny-era-for-konversations-ai/index.html" title="Le Chat by Mistral AI: A New Era in Conversational AI">
-<img alt="Colourful, abstract digital art of a cat" src="https://cloudcdn.pro/stocks/images/abstract-digital-art-of-a-cat.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Colourful, abstract digital art of a cat" src="https://cloudcdn.pro/api/transform?url=/stocks/images/abstract-digital-art-of-a-cat.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI</span>
@@ -349,7 +321,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2024-02-26-google-gemma-transformerar-oppen-kallkods-ai/index.html" title="Google Gemma: transformar el desarrollo de la IA de código abierto">
-<img alt="Futuristic blue spaceship with neon lights" src="https://cloudcdn.pro/stocks/images/ai-ship.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Futuristic blue spaceship with neon lights" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-ship.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI</span>
@@ -360,7 +332,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2024-02-19-las-upp-gemini-googles-ai-revolution-forklarad/index.html" title="Descifrar Gemini 1.5: la revolución IA de Google explicada">
-<img alt="Abstract visualisation of AI networks, representing Gemini 1.5" src="https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Abstract visualisation of AI networks, representing Gemini 1.5" src="https://cloudcdn.pro/api/transform?url=/stocks/images/abstract-visualization-of-gemini.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI</span>
@@ -371,7 +343,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2024-02-13-eu-ai-forordning-formar-framtidens-globala-ai-reglering/index.html" title="El AI Act de la UE: pionero de la regulación ética de la IA en el mundo">
-<img alt="A person sitting on a black bench reading a newspaper" src="https://cloudcdn.pro/stocks/images/ryoji-iwata-a-qsFZimp1M.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A person sitting on a black bench reading a newspaper" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ryoji-iwata-a-qsFZimp1M.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Policy</span>
@@ -382,7 +354,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2024-02-12-akande-rostassistent-personlig-och-chefsassistans/index.html" title="Àkàndé Voice Assistant, A Personal and Executive Assistance">
-<img alt="A white, spherical modern AI device" src="https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A white, spherical modern AI device" src="https://cloudcdn.pro/api/transform?url=/stocks/images/akande-voice-assistant.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI</span>
@@ -393,7 +365,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2024-02-08-revolutionera-reklam-hur-ai-formar-framtiden/index.html" title="Revolutionising Advertising: How AI Shapes the Future">
-<img alt="A robotic woman with butterflies and flowers" src="https://cloudcdn.pro/stocks/images/advertising-ai.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A robotic woman with butterflies and flowers" src="https://cloudcdn.pro/api/transform?url=/stocks/images/advertising-ai.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI · Advertising</span>
@@ -404,7 +376,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2024-01-29-ai-driven-ljudanalys-oversattningar-och-insikter/index.html" title="AI-Powered Speech Analysis, Translation & Insight Tool">
-<img alt="A minimalist, modern corporate office with technological displays" src="https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A minimalist, modern corporate office with technological displays" src="https://cloudcdn.pro/api/transform?url=/stocks/images/modern-corporate-office-with-technological-displays.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI</span>
@@ -415,7 +387,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2024-01-23-framsteg-inom-ai-promptteknik/index.html" title="AI Prompt Engineering 2024: Insights & Advanced Techniques">
-<img alt="Man analysing data on screens in a modern office" src="https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Man analysing data on screens in a modern office" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-prompt-engineering-modern-office.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI</span>
@@ -426,7 +398,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2024-01-15-alien-studio-revolutionerar-konst-med-ai-fotografi/index.html" title="Alien Studio: My Tech-to-Art Journey in Photography">
-<img alt="A sunset's muse. Beauty in stillness from Alien Studio's Radiance collection" src="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A sunset's muse. Beauty in stillness from Alien Studio's Radiance collection" src="https://cloudcdn.pro/api/transform?url=/clients/alienstudio/v1/collections/radiance/radiance-08.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Art</span>
@@ -437,7 +409,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2024-01-08-optimera-kreditkvotsanalys-med-ibm-qiskit-och-kvantfourier/index.html" title="Qiskit y transformada de Fourier cuántica para el análisis de ratios de crédito">
-<img alt="A Quantum Computer Room" src="https://cloudcdn.pro/stocks/images/quantum-computer-room.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A Quantum Computer Room" src="https://cloudcdn.pro/api/transform?url=/stocks/images/quantum-computer-room.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Quantum · Finance</span>
@@ -448,7 +420,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2024-01-01-ai-trender-2024-insikter-och-prognoser/index.html" title="Tendencias IA 2024: perspectivas y predicciones para el futuro">
-<img alt="A Drone View of London" src="https://cloudcdn.pro/stocks/images/drone-view-of-london.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A Drone View of London" src="https://cloudcdn.pro/api/transform?url=/stocks/images/drone-view-of-london.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI</span>
@@ -459,7 +431,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2023-12-25-revolutionera-finans-med-ai-forstarkta-kvantalgoritmer/index.html" title="Revolucionar las finanzas con algoritmos cuánticos potenciados por IA">
-<img alt="A circuit board cityscape" src="https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A circuit board cityscape" src="https://cloudcdn.pro/api/transform?url=/stocks/images/circuit_board_cityscape.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Quantum · Finance</span>
@@ -470,7 +442,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2023-12-18-laget-ai-och-kvantdatorer-i-banker-2023/index.html" title="Estado de la IA y la computación cuántica en la banca: revisión 2023">
-<img alt="A circuit board with an AI GPU" src="https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A circuit board with an AI GPU" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-aTWKwJllPOA.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI · Quantum</span>
@@ -481,7 +453,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2023-12-11-kvantnyckeldistribution-revolutionerar-banksakerhet/index.html" title="La distribución cuántica de claves revoluciona la seguridad bancaria">
-<img alt="HSBC Headquarter in London Canary Wharf Docks" src="https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="HSBC Headquarter in London Canary Wharf Docks" src="https://cloudcdn.pro/api/transform?url=/stocks/images/hsbc-from-the-docks.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Quantum · Banking</span>
@@ -514,7 +486,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2023-11-19-crystals-kyber-skyddsalgoritmen-i-kvantaldern/index.html" title="CRYSTALS-Kyber: el algoritmo de protección en la era cuántica">
-<img alt="A complex quantum computer architecture" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-V70-ng4FuiA.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A complex quantum computer architecture" src="https://cloudcdn.pro/api/transform?url=/stocks/images/galina-nelyubova-V70-ng4FuiA.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Quantum</span>
@@ -525,7 +497,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2023-11-12-utforska-generativ-ai/index.html" title="Exploring Generative AI: Shaping the Future of Technology">
-<img alt="Holographic cubes at a concert" src="https://cloudcdn.pro/stocks/images/fabio-oyXis2kALVg.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Holographic cubes at a concert" src="https://cloudcdn.pro/api/transform?url=/stocks/images/fabio-oyXis2kALVg.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI</span>
@@ -536,7 +508,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2023-11-05-matematiska-och-kryptografiska-konstanter-for-rust/index.html" title="Constantes matemáticas y criptográficas para la seguridad en Rust">
-<img alt="Mathematical and cryptographic constants" src="https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Mathematical and cryptographic constants" src="https://cloudcdn.pro/api/transform?url=/stocks/images/antoine-dautry-05A-kdOH6Hw.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Open source · Rust</span>
@@ -547,7 +519,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2023-10-26-libmake-kodgenerator-for-rust-bibliotek/index.html" title="Racionalizar el desarrollo de bibliotecas Rust mediante la generación de código">
-<img alt="A white modern building" src="https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A white modern building" src="https://cloudcdn.pro/api/transform?url=/stocks/images/tarik-haiga-3637943.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Open source · Rust</span>
@@ -558,7 +530,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2023-10-16-skydda-data-i-kvantaldern-hashbiblioteket-hsh/index.html" title="Proteger los datos en la era cuántica: la biblioteca Hash (HSH)">
-<img alt="A creative illustration on the quantum computing theme" src="https://cloudcdn.pro/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A creative illustration on the quantum computing theme" src="https://cloudcdn.pro/api/transform?url=/stocks/images/galina-nelyubova-7ej8VWfwFsg.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Quantum · Rust</span>
@@ -569,18 +541,18 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2023-10-09-shokunin-snabbaste-rust-baserade-statiska-sajtgeneratorn/index.html" title="Static Site Generator: the fastest Rust-based SSG">
-<img alt="Turned-off laptop computer on top of a white table" src="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Turned-off laptop computer on top of a white table" src="https://cloudcdn.pro/api/transform?url=/stocks/images/anna-nekrashevich-8534387.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Open source · Rust</span>
 <h3><a href="/sv/2023-10-09-shokunin-snabbaste-rust-baserade-statiska-sajtgeneratorn/index.html" title="Static Site Generator: the fastest Rust-based SSG">Static Site Generator: the fastest Rust-based SSG</a></h3>
 <p class="newsroom-meta"><time datetime="2023-10-09">9 octobre 2023</time> · Sebastien Rousseau</p>
-<p class="newsroom-excerpt">Cree sitios estáticos de alto impacto, escalables hasta el infinito y enteramente bajo su control, gracias a Shokunin: un SSG ultrarrápido escrito en Rust.</p>
+<p class="newsroom-excerpt">Cree sitios estáticos de alto impacto, escalables hasta el infinito y enteramente bajo su control, gracias a Static Site Generator: un SSG ultrarrápido escrito en Rust.</p>
 </div>
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2023-09-29-automatisera-iso-20022-betalfiler-med-pain001/index.html" title="Automating ISO 20022 Payment Files Creation with pain001">
-<img alt="A very tall building with intricate hollow façade detailing" src="https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="A very tall building with intricate hollow façade detailing" src="https://cloudcdn.pro/api/transform?url=/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Payments</span>
@@ -591,7 +563,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2018-02-15-skapandet-av-express-transaction-credits-plattformen/index.html" title="The Making of the Express Transaction Credits Platform">
-<img alt="Man typing on a laptop keyboard" src="https://cloudcdn.pro/stocks/images/rawpixel-com-369782.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Man typing on a laptop keyboard" src="https://cloudcdn.pro/api/transform?url=/stocks/images/rawpixel-com-369782.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Blockchain</span>
@@ -602,7 +574,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2018-02-04-ny-kryptovaluta-och-snabbare-betallosning/index.html" title="Unveiling a New Cryptocurrency and Faster Payment Solution">
-<img alt="Canary Wharf clocks" src="https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Canary Wharf clocks" src="https://cloudcdn.pro/api/transform?url=/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Blockchain · Payments</span>
@@ -613,7 +585,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2018-01-24-erc-20-tokenstandarden/index.html" title="El estándar de token ERC-20">
-<img alt="Computer screen with trades" src="https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Computer screen with trades" src="https://cloudcdn.pro/api/transform?url=/stocks/images/m-ZzOa5G8hSPI.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Blockchain</span>
@@ -624,7 +596,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2018-01-09-forsta-tekniken-bakom-blockchain/index.html" title="Comprender la tecnología detrás de blockchain">
-<img alt="Computer and mobile screens with trades" src="https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Computer and mobile screens with trades" src="https://cloudcdn.pro/api/transform?url=/stocks/images/adam-smigielski-K5mPtONmpHM.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Blockchain</span>
@@ -635,7 +607,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2018-01-02-blockchain-tekniken-som-spelar-roll-2018/index.html" title="Blockchain Explained. The Technology That Matters the Most">
-<img alt="Horizontal view of a tall building" src="https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Horizontal view of a tall building" src="https://cloudcdn.pro/api/transform?url=/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Blockchain</span>
@@ -646,7 +618,7 @@
 </article>
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/sv/2018-01-01-bitcoin-aret-i-aterblick/index.html" title="Bitcoin: A Year in Review of the First Cryptocurrency">
-<img alt="Physical bitcoins on a flat surface" src="https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Physical bitcoins on a flat surface" src="https://cloudcdn.pro/api/transform?url=/stocks/images/traxer-AIKjbZdNOlw.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Blockchain</span>
@@ -728,9 +700,7 @@
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"sv"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Artiklar — Sebastien Rousseau","url":"https://sebastienrousseau.com/sv/artiklar/","inLanguage":"sv"}]}</script>
 
         <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":"Artiklar — Sebastien Rousseau","description":"Artiklar om tillämpad AI, postkvantkryptografi, ISO 20022-betalningar och transformationen av grossistbetalningar.","url":"https://sebastienrousseau.com/sv/artiklar/","inLanguage":"sv","about":"Banking, payments, AI and post-quantum cryptography","author":{"@id":"https://sebastienrousseau.com/#person"},"isPartOf":{"@id":"https://sebastienrousseau.com/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Artiklar","item":"https://sebastienrousseau.com/sv/artiklar/"}]}]}</script>
-<script src="/main.f6d240db.js" integrity="sha256-9tJA2wY/3I+5OuXezpCLH3rb8KlkFS651l1/veOMebM=" crossorigin="anonymous" defer></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-169G4ET5HQ"></script>
-    <script src="/_csp/4432d76b8ef91b2e.js" crossorigin="anonymous" integrity="sha256-ILdP9mvfeP1seDIMLZvI2Z54xkZNnRDVV6iCUI8IF5I=" crossorigin="anonymous""></script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-1nBAjCuth9aoZ5kK7ZcxCdtBVCui0ybfAs/4H79Xh48=" crossorigin="anonymous"></script>
   
 <!-- SSG Search Widget -->
 <div id="ssg-search-widget">
@@ -753,7 +723,7 @@
 <div class="ssg-search-footer"><span><kbd>Esc</kbd> stäng</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigera</span><span><kbd>Enter</kbd> öppna</span></div>
 </div>
 </div>
-<script src="/_csp/61bc2fae7f71ccad.js" crossorigin="anonymous" integrity="sha256-rTwaMPvyYLEkvpFm0cIofI5tV5ZT8f5Y82fkvdg4zC8=" crossorigin="anonymous""></script>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-9ID9Qj34nE2XINSOOeFVqeQhu/X1W6cOQprtFVzVZUg=" crossorigin="anonymous"></script>
 </div>
 </body>
 </html>

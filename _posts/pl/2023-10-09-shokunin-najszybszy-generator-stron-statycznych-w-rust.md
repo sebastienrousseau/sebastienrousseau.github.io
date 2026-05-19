@@ -1,22 +1,22 @@
 ---
-title: "Shokunin: najszybszy generator stron statycznych w Rust"
+title: "Static Site Generator: najszybszy generator stron statycznych w Rust"
 subtitle: "Generator stron statycznych zoptymalizowany pod kątem wydajności, dostępności i SEO"
-description: "Shokunin to generator stron statycznych w Rust zaprojektowany dla wydajności, dostępności i SEO, z natywnym wsparciem JSON-LD."
+description: "Static Site Generator to generator stron statycznych w Rust zaprojektowany dla wydajności, dostępności i SEO, z natywnym wsparciem JSON-LD."
 date: "Oct 09, 2023"
 language: "pl-PL"
 locale: "pl_PL"
 banner: "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
-banner_alt: "Logo Shokunin z motywem Rust w tle"
-keywords: "Shokunin, generator stron statycznych, Rust, SSG, wydajność, SEO, dostępność, JSON-LD"
+banner_alt: "Logo Static Site Generator z motywem Rust w tle"
+keywords: "Static Site Generator, generator stron statycznych, Rust, SSG, wydajność, SEO, dostępność, JSON-LD"
 ---
 
-![Logo Shokunin z motywem Rust w tle](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"
+![Logo Static Site Generator z motywem Rust w tle](https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp).class=\"img-fluid clearfix\"
 
-Shokunin to generator stron statycznych w Rust zaprojektowany dla wydajności, dostępności i SEO, z natywnym wsparciem JSON-LD.
+Static Site Generator to generator stron statycznych w Rust zaprojektowany dla wydajności, dostępności i SEO, z natywnym wsparciem JSON-LD.
 
 ---
 
-> **TL;DR.** Shokunin to generator stron statycznych w Rust zaprojektowany dla wydajności, dostępności i SEO, z natywnym wsparciem JSON-LD.
+> **TL;DR.** Static Site Generator to generator stron statycznych w Rust zaprojektowany dla wydajności, dostępności i SEO, z natywnym wsparciem JSON-LD.
 >
 > **Kluczowe wnioski**
 >
@@ -28,7 +28,7 @@ Shokunin to generator stron statycznych w Rust zaprojektowany dla wydajności, d
 
 ## Streszczenie
 
-Shokunin to generator stron statycznych w Rust zaprojektowany dla wydajności, dostępności i SEO, z natywnym wsparciem JSON-LD.
+Static Site Generator to generator stron statycznych w Rust zaprojektowany dla wydajności, dostępności i SEO, z natywnym wsparciem JSON-LD.
 
 Generator stron statycznych zoptymalizowany pod kątem wydajności, dostępności i SEO.
 

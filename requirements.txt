@@ -3,3 +3,5 @@
 # every build. Dev tooling (ruff, pytest) is pinned in CI workflows
 # directly so it doesn't drift with the build deps.
 markdown-it-py>=3,<4
+rjsmin>=1.2,<2
+rcssmin>=1.2,<2

@@ -453,8 +453,8 @@
       <news:language>nl-NL</news:language>
     </news:publication>
     <news:publication_date>2023-10-09T06:06:06+00:00</news:publication_date>
-    <news:title>Shokunin: de snelste statische sitegenerator in Rust</news:title>
-    <news:keywords>Shokunin, statische sitegenerator, Rust, SSG, prestaties, SEO, JSON-LD, toegankelijkheid</news:keywords>
+    <news:title>Static Site Generator: de snelste statische sitegenerator in Rust</news:title>
+    <news:keywords>Static Site Generator, statische sitegenerator, Rust, SSG, prestaties, SEO, JSON-LD, toegankelijkheid</news:keywords>
   </news:news>
 </url>
 <url>

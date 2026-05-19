@@ -4,7 +4,7 @@
   <link href="https://sebastienrousseau.com/nl/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/nl/"/>
   <id>https://sebastienrousseau.com/nl/</id>
-  <updated>2026-05-18T12:52:29+00:00</updated>
+  <updated>2026-05-19T09:09:20+00:00</updated>
   <entry>
     <title>De reset van kwantumcryptografie in 2026: PQC-standaarden, QKD-assurance en het migratiewerk dat banken niet langer kunnen uitstellen</title>
     <link href="https://sebastienrousseau.com/nl/2026-05-18-kwantumcryptografie-standaarden-ontwikkelingen-2026/"/>
@@ -339,12 +339,12 @@
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>
-    <title>Shokunin: de snelste statische sitegenerator in Rust</title>
+    <title>Static Site Generator: de snelste statische sitegenerator in Rust</title>
     <link href="https://sebastienrousseau.com/nl/2023-10-09-shokunin-de-snelste-rust-gebaseerde-statische-sitegenerator/"/>
     <id>https://sebastienrousseau.com/nl/2023-10-09-shokunin-de-snelste-rust-gebaseerde-statische-sitegenerator/</id>
     <updated>2023-10-09T06:06:06+00:00</updated>
     <published>2023-10-09T06:06:06+00:00</published>
-    <summary>Shokunin is een statische sitegenerator in Rust, ontworpen voor prestaties, toegankelijkheid en SEO, met eersteklas JSON-LD.</summary>
+    <summary>Static Site Generator is een statische sitegenerator in Rust, ontworpen voor prestaties, toegankelijkheid en SEO, met eersteklas JSON-LD.</summary>
     <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
   </entry>
   <entry>

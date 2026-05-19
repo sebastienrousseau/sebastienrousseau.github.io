@@ -453,8 +453,8 @@
       <news:language>pl-PL</news:language>
     </news:publication>
     <news:publication_date>2023-10-09T06:06:06+00:00</news:publication_date>
-    <news:title>Shokunin: najszybszy generator stron statycznych w Rust</news:title>
-    <news:keywords>Shokunin, generator stron statycznych, Rust, SSG, wydajność, SEO, dostępność, JSON-LD</news:keywords>
+    <news:title>Static Site Generator: najszybszy generator stron statycznych w Rust</news:title>
+    <news:keywords>Static Site Generator, generator stron statycznych, Rust, SSG, wydajność, SEO, dostępność, JSON-LD</news:keywords>
   </news:news>
 </url>
 <url>

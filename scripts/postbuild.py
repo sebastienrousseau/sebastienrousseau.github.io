@@ -19,6 +19,9 @@ import re
 import sys
 from pathlib import Path
 
+import rcssmin
+import rjsmin
+
 sys.path.insert(0, str(Path(__file__).parent))
 
 PUBLIC = Path("public")
@@ -29,8 +32,111 @@ def b64_sha256(data: bytes) -> str:
 
 
 # ---------------------------------------------------------------------------
-# 1. /_csp/* SRI fix
+# 0. JS minification (runs at module init, before any SRI hash is computed)
 # ---------------------------------------------------------------------------
+#
+# Static Site Generator emits ``main.js`` (and the fingerprinted alias
+# ``main.<hash>.js``) unminified. Lighthouse's ``unminified-javascript``
+# audit flags ~5 KiB of avoidable bytes. We run rjsmin in place *before*
+# computing the SRI digests below, so the integrity attributes that
+# Static Site Generator (and our own ``fix_sri`` pass) stamp into the
+# HTML match the on-disk minified bytes — otherwise the browser blocks
+# the script with a "Failed to find a valid digest" error.
+
+
+def _minify_one(p: Path) -> tuple[int, int]:
+    """Minify ``p`` in place. Returns ``(bytes_before, bytes_after)``;
+    ``(0, 0)`` if the file was already minified or unreadable."""
+    try:
+        src = p.read_text(encoding="utf-8")
+    except (UnicodeDecodeError, OSError):
+        return 0, 0
+    mini = rjsmin.jsmin(src)
+    if len(mini) >= len(src):
+        return 0, 0
+    p.write_text(mini, encoding="utf-8")
+    return len(src), len(mini)
+
+
+def _gather_js_targets() -> list[Path]:
+    """Top-level public/*.js + service-worker + theme bootstrap.
+    Excludes /_csp/* (SSG already minifies; SRI is hash-pinned by us
+    afterwards) and /labs/* (wasm-pack output, may contain non-ASCII
+    identifiers)."""
+    out: list[Path] = []
+    if not PUBLIC.is_dir():
+        return out
+    for js in PUBLIC.rglob("*.js"):
+        rel = js.as_posix()
+        if "/labs/" in rel:
+            continue
+        out.append(js)
+    return out
+
+
+def _minify_css(p: Path) -> tuple[int, int]:
+    """Minify a CSS file in place. Returns ``(bytes_before, bytes_after)``;
+    ``(0, 0)`` if no net savings."""
+    try:
+        src = p.read_text(encoding="utf-8")
+    except (UnicodeDecodeError, OSError):
+        return 0, 0
+    mini = rcssmin.cssmin(src)
+    if len(mini) >= len(src):
+        return 0, 0
+    p.write_text(mini, encoding="utf-8")
+    return len(src), len(mini)
+
+
+def _gather_css_targets() -> list[Path]:
+    """All CSS under public/. /_csp/* is the main target — Lighthouse
+    flags it as 14 KiB unminified because SSG preserves the
+    leading <style>-block indentation + a multi-line vendor comment."""
+    if not PUBLIC.is_dir():
+        return []
+    return list(PUBLIC.rglob("*.css"))
+
+
+def _bulk_minify_js() -> tuple[int, int, int]:
+    """Minify every JS asset under PUBLIC. Returns
+    ``(count, bytes_before, bytes_after)``."""
+    n = before = after = 0
+    for js in _gather_js_targets():
+        b, a = _minify_one(js)
+        if b:
+            before += b
+            after += a
+            n += 1
+    return n, before, after
+
+
+def _bulk_minify_css() -> tuple[int, int, int]:
+    """Minify every CSS asset under PUBLIC. Returns
+    ``(count, bytes_before, bytes_after)``."""
+    n = before = after = 0
+    for css in _gather_css_targets():
+        b, a = _minify_css(css)
+        if b:
+            before += b
+            after += a
+            n += 1
+    return n, before, after
+
+
+_JS_MINIFY_COUNT, _JS_MINIFY_BEFORE, _JS_MINIFY_AFTER = _bulk_minify_js()
+_CSS_MINIFY_COUNT, _CSS_MINIFY_BEFORE, _CSS_MINIFY_AFTER = _bulk_minify_css()
+
+
+# ---------------------------------------------------------------------------
+# 1. SRI fix — /_csp/* + top-level fingerprinted assets
+# ---------------------------------------------------------------------------
+#
+# asset_hashes is built *after* minification so the digest matches the
+# minified bytes. Two flavours of asset path are stamped into the HTML:
+#   - /_csp/<hash>.<ext>   — bundled CSS/JS emitted by SSG
+#   - /main.<hash>.js      — fingerprinted top-level alias
+# Both need to be covered or the browser will refuse to execute scripts
+# whose SRI digest doesn't match.
 
 _csp_dir = PUBLIC / "_csp"
 asset_hashes: dict[str, str] = {}
@@ -38,16 +144,38 @@ if _csp_dir.is_dir():
     for asset in _csp_dir.iterdir():
         if asset.is_file() and asset.suffix in (".js", ".css"):
             asset_hashes[asset.name] = b64_sha256(asset.read_bytes())
+# Top-level fingerprinted JS — main.<hash>.js, sw.<hash>.js, theme-init.<hash>.js.
+# Keyed by both the bare path (matches HTML reference) and the unprefixed name
+# so fix_sri can look it up against either form.
+_top_fp_re = re.compile(r"^[a-z\-_]+\.[a-f0-9]+\.js$", re.IGNORECASE)
+if PUBLIC.is_dir():
+    for asset in PUBLIC.iterdir():
+        if asset.is_file() and _top_fp_re.match(asset.name):
+            asset_hashes[asset.name] = b64_sha256(asset.read_bytes())
 
-bogus_re = re.compile(r' integrity="sha256-[a-f0-9]+"')
-asset_path_re = re.compile(r'(?:src|href)=["\']?/_csp/([^"\' ]+)')
+# Matches /_csp/<name> OR /<name> for top-level fingerprinted JS aliases.
+# Filenames start with a hex digit or letter (SSG emits 16-char hex hashes for
+# /_csp/* and 8-char hex hashes appended to the bare /main.<hash>.js alias).
+asset_path_re = re.compile(
+    r'(?:src|href)=["\']?/(?:_csp/)?([A-Za-z0-9][A-Za-z0-9\-_.]+\.(?:js|css))',
+    re.IGNORECASE,
+)
+
+
+_SRI_ANY_RE = re.compile(r"\s+integrity=(['\"])sha256-[^'\"]+\1")
+_TAG_CLOSE_RE = re.compile(r"(\s*/?>)\s*$")
+_CROSSORIGIN_RE = re.compile(r"\s+crossorigin=(['\"]?)(?:anonymous|use-credentials)\1", re.IGNORECASE)
 
 
 def fix_sri(html: str) -> str:
+    """Stamp the right ``integrity="sha256-..."`` (and one
+    ``crossorigin="anonymous"``) onto every ``<script>``/``<link>`` that
+    points at an asset whose digest we know. Idempotent: stale/bogus
+    integrity and any pre-existing crossorigin are stripped first so we
+    don't accumulate duplicates."""
     out: list[str] = []
     last = 0
-    # Walk every <script>/<link> opening tag, look at its asset path + integrity.
-    for m in re.finditer(r'<(?:script|link)[^>]+>', html):
+    for m in re.finditer(r'<(?:script|link)\b[^>]+>', html):
         chunk = m.group(0)
         ap = asset_path_re.search(chunk)
         if not ap:
@@ -55,17 +183,189 @@ def fix_sri(html: str) -> str:
         digest = asset_hashes.get(ap.group(1))
         if not digest:
             continue
-        # Strip any existing (bogus) integrity, then inject the real one.
-        stripped = bogus_re.sub('', chunk)
-        if 'integrity=' not in stripped:
-            replaced = stripped.rstrip(' />') + f' integrity="sha256-{digest}" crossorigin="anonymous"' + stripped[-2:]
-        else:
-            replaced = stripped
+        # Strip any existing integrity (we'll re-stamp) and any existing
+        # crossorigin (we'll re-add a single canonical one). Then split
+        # off the closing `>` / `/>` so we can inject before it cleanly.
+        stripped = _SRI_ANY_RE.sub("", chunk)
+        stripped = _CROSSORIGIN_RE.sub("", stripped)
+        close_m = _TAG_CLOSE_RE.search(stripped)
+        if not close_m:
+            # Tag doesn't end how we expect — skip rather than corrupt.
+            continue
+        body = stripped[: close_m.start()]
+        closer = close_m.group(1)
+        replaced = (
+            body
+            + f' integrity="sha256-{digest}" crossorigin="anonymous"'
+            + closer
+        )
         out.append(html[last:m.start()])
         out.append(replaced)
         last = m.end()
     out.append(html[last:])
     return "".join(out)
+
+
+# ---------------------------------------------------------------------------
+# LCP preload — auto-inject `<link rel="preload" as="image">` for the
+# first image on each page (the LCP candidate) when the page doesn't
+# already have one. The homepage uses an explicit ``{{image}}`` slot;
+# every other listing/article page would otherwise wait for HTML parse
+# + image discovery before fetching the LCP candidate, costing 0.5–1s
+# on simulated slow 4G. This closes that gap.
+# ---------------------------------------------------------------------------
+
+_FIRST_IMG_RE = re.compile(
+    r'<img\b(?![^>]*\b(?:loading=["\']?lazy)\b)[^>]*\bsrc=["\']([^"\']+)["\']',
+    re.IGNORECASE,
+)
+_HAS_LCP_PRELOAD_RE = re.compile(
+    r'<link\b[^>]*\brel=["\']?preload["\']?[^>]*\bas=["\']?image["\']?',
+    re.IGNORECASE,
+)
+_HEAD_CLOSE_RE = re.compile(r'</head>', re.IGNORECASE)
+
+
+def inject_lcp_preload(html: str) -> tuple[str, int]:
+    """If the page has at least one non-lazy <img> and no existing
+    ``rel="preload" as="image"`` link, inject one for the first such
+    image. Returns ``(new_html, 1)`` on inject, ``(html, 0)`` otherwise."""
+    if _HAS_LCP_PRELOAD_RE.search(html):
+        return html, 0
+    img_m = _FIRST_IMG_RE.search(html)
+    if not img_m:
+        return html, 0
+    src = img_m.group(1)
+    # Skip if the URL is scheme-relative junk or a data: URI (no win).
+    if src.startswith("data:") or not src:
+        return html, 0
+    preload = (
+        f'<link rel="preload" as="image" href="{src}" fetchpriority="high">'
+    )
+    new = _HEAD_CLOSE_RE.sub(preload + "</head>", html, count=1)
+    if new == html:
+        return html, 0
+    return new, 1
+
+
+# ---------------------------------------------------------------------------
+# CDN image transform — wrap every raster <img src="https://cloudcdn.pro/...">
+# in CloudCDN's /api/transform endpoint so Cloudflare Image Resizing serves
+# a width-appropriate WebP at q=80 (q=85 for LCP/hero). Slashes Lighthouse's
+# ``uses-responsive-images`` saving on the listing pages (~370 KiB on /
+# articles/) and drops the about-page portrait from 360 KiB → ~3 KiB.
+#
+# CDN contract (functions/api/transform.js in cloudcdn.pro):
+#   - GET only — HEAD returns 404.
+#   - `url` must be a relative path starting with `/`; absolute URLs and
+#     paths containing `..`, `//`, or NUL are rejected with 400.
+#   - `w` is 1–8192, `q` is 1–100; SVG sources pass through unchanged.
+#   - Response is cached `public, max-age=31536000, immutable` and varies on
+#     Accept + Save-Data + Sec-CH-Effective-Connection-Type, so we don't
+#     need to thread bandwidth hints in the URL — the CDN downgrades to
+#     q≤60 + WebP automatically for slow-2g/2g/3g clients.
+#   - Rate limit: 50,000 transforms / calendar month. Even with multiple
+#     widths per asset, real-world fresh-cache hits stay well under that.
+# ---------------------------------------------------------------------------
+
+_CDN_HOST = "https://cloudcdn.pro"
+_CDN_TRANSFORM_PREFIX = f"{_CDN_HOST}/api/transform?"
+_RASTER_EXT_RE = re.compile(r"\.(?:webp|png|jpg|jpeg)(?:[?#]|$)", re.IGNORECASE)
+_IMG_TAG_TRANSFORM_RE = re.compile(r"<img\b([^>]*)/?>", re.IGNORECASE)
+_IMG_SRC_ANY_RE = re.compile(
+    r"""\bsrc=(?:(["'])([^"']+)\1|([^\s>'"]+))""", re.IGNORECASE,
+)
+_IMG_WIDTH_ANY_RE = re.compile(
+    r"""\bwidth=(?:["'](\d+)["']|(\d+))""", re.IGNORECASE,
+)
+_IMG_FETCHPRI_RE = re.compile(
+    r"""\bfetchpriority=(?:["'](high|low|auto)["']|(high|low|auto))""",
+    re.IGNORECASE,
+)
+
+
+def _build_cdn_transform_url(path: str, width: int, quality: int) -> str:
+    """Build the canonical /api/transform URL for a CDN path."""
+    from urllib.parse import quote
+    # safe='/' so the leading slash + nested slashes stay intact; the CDN
+    # handler rejects %2F-escaped slashes by treating them as literal in
+    # the path.
+    encoded_path = quote(path, safe="/")
+    return f"{_CDN_TRANSFORM_PREFIX}url={encoded_path}&w={width}&format=webp&q={quality}"
+
+
+def _img_attr_src(attrs: str) -> str | None:
+    m = _IMG_SRC_ANY_RE.search(attrs)
+    if not m:
+        return None
+    return m.group(2) or m.group(3) or None
+
+
+def _img_attr_width(attrs: str) -> int | None:
+    m = _IMG_WIDTH_ANY_RE.search(attrs)
+    if not m:
+        return None
+    raw = m.group(1) or m.group(2)
+    try:
+        return int(raw)
+    except (TypeError, ValueError):
+        return None
+
+
+def _img_is_high_priority(attrs: str) -> bool:
+    m = _IMG_FETCHPRI_RE.search(attrs)
+    if not m:
+        return False
+    val = (m.group(1) or m.group(2) or "").lower()
+    return val == "high"
+
+
+def wrap_cdn_images_in_transform(html: str) -> tuple[str, int]:
+    """Rewrite every raster ``<img src="https://cloudcdn.pro/...">`` tag
+    to use the CDN's /api/transform endpoint with a width-matched WebP.
+
+    Returns ``(new_html, n_rewrites)``. SVG sources, already-wrapped
+    transform URLs, non-CDN URLs, data: URIs and images we can't size
+    pass through untouched.
+    """
+    n = 0
+
+    def patch(match: re.Match[str]) -> str:
+        nonlocal n
+        attrs = match.group(1)
+        src = _img_attr_src(attrs)
+        if not src:
+            return match.group(0)
+        if not src.startswith(_CDN_HOST + "/"):
+            return match.group(0)
+        # Strip the host + any query/fragment to isolate the on-CDN path.
+        path = src[len(_CDN_HOST):].split("?", 1)[0].split("#", 1)[0]
+        # Already wrapped — leave alone.
+        if path.startswith("/api/"):
+            return match.group(0)
+        # SVG passthrough — transform doesn't rasterise vector sources,
+        # so wrapping just adds bytes without shrinking.
+        if not _RASTER_EXT_RE.search(path):
+            return match.group(0)
+        # Choose a target width. We aim for 2× the rendered width so
+        # retina clients still get a crisp render; the CDN's network-aware
+        # downgrade trims quality on slow links. Floor 200, ceiling 1600.
+        base_w = _img_attr_width(attrs) or 600
+        target_w = max(200, min(base_w * 2, 1600))
+        quality = 85 if _img_is_high_priority(attrs) else 80
+        new_src = _build_cdn_transform_url(path, target_w, quality)
+        # Splice the new src into the attribute string, preserving quote
+        # style. Match both quoted and unquoted src= forms.
+        new_attrs, n_sub = _IMG_SRC_ANY_RE.subn(
+            f'src="{new_src}"', attrs, count=1,
+        )
+        if n_sub == 0:
+            return match.group(0)
+        n += 1
+        return f"<img{new_attrs}>"
+
+    out = _IMG_TAG_TRANSFORM_RE.sub(patch, html)
+    return out, n
 
 
 # ---------------------------------------------------------------------------
@@ -87,6 +387,43 @@ speculation_re = re.compile(
     r'<script[^>]*type=["\']?speculationrules["\']?[^>]*>([\s\S]*?)</script>',
     re.IGNORECASE,
 )
+# Bare inline <script> blocks (no src, no type) — used for the inlined
+# theme bootstrap. Each one needs its own sha256 in CSP script-src.
+_inline_script_re = re.compile(
+    r'<script(?![^>]*\bsrc=)(?![^>]*\btype=)[^>]*>([\s\S]*?)</script>',
+    re.IGNORECASE,
+)
+
+# ---------------------------------------------------------------------------
+# Inline theme-init.js. The original 589-byte file was render-blocking
+# (~300 ms wasted on slow 4G per Lighthouse). Inlining the minified
+# bootstrap removes the network round-trip entirely and lands the CSS
+# request earlier — but the script must still run before paint, so it
+# stays in <head> as an inline <script>. Its SHA-256 is collected by
+# inject_jsonld_hashes() and added to script-src.
+_theme_init_src_path = Path("_layouts/theme-init.js")
+THEME_INIT_MINIFIED = (
+    rjsmin.jsmin(_theme_init_src_path.read_text(encoding="utf-8"))
+    if _theme_init_src_path.is_file()
+    else ""
+)
+# Match the external theme-init reference in any layout-emitted form
+# (quoted, unquoted, with or without trailing slash on the close tag).
+_theme_init_tag_re = re.compile(
+    r'<script\b[^>]*\bsrc=["\']?/theme-init\.js["\']?[^>]*>\s*</script>',
+    re.IGNORECASE,
+)
+
+
+def inline_theme_init(html: str) -> tuple[str, int]:
+    """Replace the external ``<script src="/theme-init.js">`` tag with an
+    inline ``<script>`` carrying the minified theme bootstrap. Returns
+    ``(new_html, replacements)``."""
+    if not THEME_INIT_MINIFIED:
+        return html, 0
+    replacement = f"<script>{THEME_INIT_MINIFIED}</script>"
+    new, n = _theme_init_tag_re.subn(replacement, html)
+    return new, n
 # Match the CSP meta tag whether attributes are quoted or not, in either order
 # (Static Site Generator's minifier emits `<meta content="..." http-equiv=Content-Security-Policy>`).
 csp_tag_re = re.compile(
@@ -102,6 +439,9 @@ content_attr_re = re.compile(
 def inject_jsonld_hashes(html: str) -> str:
     bodies = [m.group(1) for m in jsonld_re.finditer(html)]
     bodies.extend(m.group(1) for m in speculation_re.finditer(html))
+    # Bare <script> blocks (no src, no type) — currently just the inlined
+    # theme-init bootstrap, but the rule is generic.
+    bodies.extend(m.group(1) for m in _inline_script_re.finditer(html))
     if not bodies:
         return html
     hashes = sorted({b64_sha256(b.encode("utf-8")) for b in bodies})
@@ -325,6 +665,8 @@ class _PostbuildCounters:
         "hreflang_patched",
         "img_dims_patched",
         "itemlist_patched",
+        "cdn_wrapped",
+        "lcp_preloaded",
         "link_hoisted",
         "localhost_patched",
         "mermaid_patched",
@@ -335,6 +677,7 @@ class _PostbuildCounters:
         "sources_patched",
         "sri_patched",
         "techarticle_patched",
+        "theme_inlined",
         "wc_patched",
     )
 
@@ -424,7 +767,7 @@ def scrub_localhost_urls(html: str) -> tuple[str, int]:
     leftover inside the page (typically <link rel="canonical"> or the
     Atom feed alternate) with the production origin.
 
-    Shokunin bakes these in based on the dev-server it was built against;
+    Static Site Generator bakes these in based on the dev-server it was built against;
     they survive its own HTML emission pass and only show up at runtime.
     """
     new = _LOCALHOST_HOST_RE.sub("https://sebastienrousseau.com", html)
@@ -441,6 +784,8 @@ def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
     """
     out, n_lh = scrub_localhost_urls(html)
     ctr.localhost_patched += n_lh
+    out, n_ti = inline_theme_init(out)
+    ctr.theme_inlined += n_ti
     out, n_fp = stamp_asset_fingerprints(out)
     ctr.asset_fp_patched += n_fp
     prev = out
@@ -461,6 +806,14 @@ def _apply_seo_passes(html: str, page: Path, ctr: _PostbuildCounters) -> str:
         ctr.og_patched += 1
     out, n_dim = stamp_image_dimensions(out)
     ctr.img_dims_patched += n_dim
+    # Wrap CDN images in /api/transform AFTER stamp_image_dimensions so
+    # the lookup against _IMG_DIMS sees the bare CDN URL (not the
+    # transform URL, which would miss the table). LCP preload then runs
+    # against the wrapped URL so preload + img src agree byte-for-byte.
+    out, n_cdn = wrap_cdn_images_in_transform(out)
+    ctr.cdn_wrapped += n_cdn
+    out, n_pl = inject_lcp_preload(out)
+    ctr.lcp_preloaded += n_pl
     prev = out
     out = inject_howto(page, out)
     if out != prev:
@@ -653,7 +1006,8 @@ def _finalize_build() -> tuple[int, bool, bool, bool, int, int, int]:
     """Run post-page-loop tasks: sitemap lastmod refresh, robots.txt
     rewrite, llms.txt + llms-full.txt rewrite, JSON Feed emission,
     XML feed URL fix + ampersand scrub. Returns the counters for the
-    summary line."""
+    summary line. JS minification runs at module init (before SRI
+    hashing) and is reported via the module-level _JS_MINIFY_* counters."""
     lastmod_index = build_lastmod_index()
     sitemap_patched = refresh_sitemap_lastmod(PUBLIC / "sitemap.xml", lastmod_index)
     robots_written = write_robots(PUBLIC)
@@ -685,9 +1039,16 @@ def main() -> None:
     ) = _finalize_build()
 
     c = ctx.counters
+    js_saved = _JS_MINIFY_BEFORE - _JS_MINIFY_AFTER
+    js_count = _JS_MINIFY_COUNT
+    css_saved = _CSS_MINIFY_BEFORE - _CSS_MINIFY_AFTER
+    css_count = _CSS_MINIFY_COUNT
     print(
         f"postbuild: {len(pages)} HTML pages, "
         f"{c.localhost_patched} got localhost→prod scrubbed, "
+        f"{c.theme_inlined} got theme-init inlined, "
+        f"{c.cdn_wrapped} img(s) wrapped in CDN transform, "
+        f"{c.lcp_preloaded} got LCP image preloaded, "
         f"{c.asset_fp_patched} got asset URLs fingerprinted, "
         f"{c.sri_patched} got real SRI, "
         f"{c.itemlist_patched} got ItemList JSON-LD, "
@@ -707,6 +1068,8 @@ def main() -> None:
         f"{c.nav_patched} got prev/next nav, "
         f"{c.hreflang_patched} got hreflang pairs, "
         f"{c.csp_patched} got CSP JSON-LD hashes, "
+        f"{js_count} JS file(s) minified saving {js_saved} bytes, "
+        f"{css_count} CSS file(s) minified saving {css_saved} bytes, "
         f"{sitemap_patched} sitemap entries refreshed, "
         f"{feed_urls_patched} feed(s) URL-repaired, "
         f"{xml_patched} XML feed(s) scrubbed, "
@@ -717,5 +1080,5 @@ def main() -> None:
     )
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover — exercised by build.sh
     main()

@@ -1,4 +1,4 @@
-.PHONY: build serve regenerate audit clean
+.PHONY: build serve regenerate audit clean test lint coverage
 
 # Default target.
 build:
@@ -52,6 +52,13 @@ test:
 # Static analysis (ruff, configured in pyproject.toml).
 lint:
 	@ruff check scripts/ tests/
+
+# Unified coverage report — runs every CLI in scripts/ under
+# coverage.py, then runs the pytest suite under the same data file,
+# combines, and prints per-file coverage. Requires a prior ./build.sh
+# pass so public/ + docs/ are populated.
+coverage:
+	@./scripts/coverage_build.sh --with-pytest
 
 # Wipe build output.
 clean:

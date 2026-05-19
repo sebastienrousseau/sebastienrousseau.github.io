@@ -236,7 +236,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-18-quantum-cryptography-standards-developments-2026/index.html" title="The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer">
-<img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Post-Quantum · Standards · Banking</span>
@@ -260,7 +260,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html" title="The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services">
-<img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/stocks/images/precious-madubuike-t65T28d7x_8-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Cloud · AI-Native · Post-Quantum</span>
@@ -309,12 +309,12 @@ site_software: "Static Site Generator, Rust"
 <p class="feat-sub center">From global Tier-1 banks to consumer technology. Payments and digital product leadership across HSBC, PayPal, Barclays, Shazam, AKQA and Virgin Group.</p>
 
 <div class="brands">
-<img alt="HSBC logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/hsbc.svg" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
-<img alt="PayPal logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/paypal.svg" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
-<img alt="Barclays logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/barclays.svg" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
-<img alt="Shazam logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/shazam.svg" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
-<img alt="AKQA logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/akqa.svg" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
-<img alt="Virgin logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/virgin.svg" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="HSBC logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/hsbc.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="PayPal logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/paypal.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="Barclays logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/barclays.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="Shazam logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/shazam.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="AKQA logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/akqa.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
+<img alt="Virgin logo" src="https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/virgin.webp" class="brand-logo" loading="lazy" decoding="async" width="120" height="32" />
 </div>
 </div>
 </section>

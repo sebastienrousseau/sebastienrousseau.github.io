@@ -5,7 +5,7 @@ description: "2026 年的量子密碼不再是關於量子電腦是否迫近的�
 date: "May 18, 2026"
 language: "zh-Hant"
 locale: "zh_TW"
-banner: "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
 banner_alt: "2026 年量子安全密碼遷移地圖，展示 NIST PQC 標準、混合協定工作、QKD 保證、密碼敏捷性與銀行資料風險層級"
 keywords: "量子密碼 2026, 後量子密碼, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, 混合金鑰交換, QKD, ETSI QKD, ISO IEC 23837, 密碼敏捷性, harvest now decrypt later, HNDL, 金融服務密碼, 銀行安全"
 ---

@@ -1,29 +1,29 @@
 ---
-title: "Shokunin:Rust ベースの最速静的サイトジェネレータ"
+title: "Static Site Generator:Rust ベースの最速静的サイトジェネレータ"
 subtitle: "パフォーマンスと開発者体験のために構築された静的サイトジェネレータ"
-description: "Shokunin は Rust で書かれた静的サイトジェネレータで、超高速ビルド、JSON-LD ネイティブサポート、優れたアクセシビリティを実現します。"
+description: "Static Site Generator は Rust で書かれた静的サイトジェネレータで、超高速ビルド、JSON-LD ネイティブサポート、優れたアクセシビリティを実現します。"
 date: "October 9, 2023"
 language: "ja-JP"
 locale: "ja_JP"
 banner: "https://cloudcdn.pro/stocks/images/shokunin-banner.webp"
-banner_alt: "Shokunin プロジェクトのバナー"
-keywords: "Shokunin, SSG, 静的サイトジェネレータ, Rust, パフォーマンス, SEO, JSON-LD, アクセシビリティ"
+banner_alt: "Static Site Generator プロジェクトのバナー"
+keywords: "Static Site Generator, SSG, 静的サイトジェネレータ, Rust, パフォーマンス, SEO, JSON-LD, アクセシビリティ"
 last_reviewed: "2026-05-11"
 ---
 
-![Shokunin プロジェクトのバナー](https://cloudcdn.pro/stocks/images/shokunin-banner.webp).class=\"img-fluid clearfix\"
+![Static Site Generator プロジェクトのバナー](https://cloudcdn.pro/stocks/images/shokunin-banner.webp).class=\"img-fluid clearfix\"
 
 ## インサイト
 
 ### Web の根本的なシンプリシティに戻る
 
-過去 10 年間、Web は複雑化しました —— 不必要な JavaScript、巨大なフレームワーク、遅いビルド。Shokunin は反対方向 —— Rust の速度、HTML/CSS の堅実さ、ユーザー体験のためのデフォルトのアクセシビリティ —— を目指しています。
+過去 10 年間、Web は複雑化しました —— 不必要な JavaScript、巨大なフレームワーク、遅いビルド。Static Site Generator は反対方向 —— Rust の速度、HTML/CSS の堅実さ、ユーザー体験のためのデフォルトのアクセシビリティ —— を目指しています。
 
 ## アイデア
 
 ### 速度と単純さのための Rust
 
-Shokunin は完全に Rust で書かれており、安全性、速度、信頼性の保証を活用します。`cargo install shokunin` で動作し、ビルド時間は中規模サイトで数百ミリ秒以下です。
+Static Site Generator は完全に Rust で書かれており、安全性、速度、信頼性の保証を活用します。`cargo install Static Site Generator` で動作し、ビルド時間は中規模サイトで数百ミリ秒以下です。
 
 ## イノベーション
 
@@ -35,13 +35,13 @@ Shokunin は完全に Rust で書かれており、安全性、速度、信頼�
 
 ### Markdown と YAML フロントマター
 
-コンテンツは Markdown で書かれ、ページ構成は YAML フロントマターで定義されます。Shokunin は HTML、サイトマップ、RSS フィード、JSON フィード、Atom フィードを生成します。
+コンテンツは Markdown で書かれ、ページ構成は YAML フロントマターで定義されます。Static Site Generator は HTML、サイトマップ、RSS フィード、JSON フィード、Atom フィードを生成します。
 
 ## ユースケース
 
 ### 個人サイトから組織のドキュメントまで
 
-Shokunin は個人ブログ、技術ドキュメント、企業のマーケティングサイトに適しています。Wasm モジュールとして組み込むこともでき、サーバーレス展開と CI/CD パイプラインに最適です。
+Static Site Generator は個人ブログ、技術ドキュメント、企業のマーケティングサイトに適しています。Wasm モジュールとして組み込むこともでき、サーバーレス展開と CI/CD パイプラインに最適です。
 
 ## 開発者体験
 
@@ -53,10 +53,10 @@ Shokunin は個人ブログ、技術ドキュメント、企業のマーケテ�
 
 ### ベンチマーク
 
-Hugo、Jekyll、Eleventy、Astro と並ぶベンチマークで、Shokunin は中規模サイト(500-1000 ページ)で **5-10 倍** 高速にビルドします。これは、効率性が最優先される CI/CD パイプラインで真の違いを生みます。
+Hugo、Jekyll、Eleventy、Astro と並ぶベンチマークで、Static Site Generator は中規模サイト(500-1000 ページ)で **5-10 倍** 高速にビルドします。これは、効率性が最優先される CI/CD パイプラインで真の違いを生みます。
 
 ## 結論
 
 ### 細部の職人技
 
-Shokunin (職人) は、細部、品質、長期的な信頼性を重視する日本の伝統に着想を得ています。それが Shokunin SSG が体現するアプローチです。最小限の依存関係、明示的な動作、堅牢な抽象化、すべて Rust の力で動作します。
+Static Site Generator (職人) は、細部、品質、長期的な信頼性を重視する日本の伝統に着想を得ています。それが Static Site Generator (SSG) が体現するアプローチです。最小限の依存関係、明示的な動作、堅牢な抽象化、すべて Rust の力で動作します。

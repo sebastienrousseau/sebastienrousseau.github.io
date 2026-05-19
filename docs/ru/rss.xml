@@ -6,7 +6,7 @@
     <description>Статьи на русском языке: прикладной ИИ, платежи ISO 20022, постквантовая криптография и трансформация оптовых платежей.</description>
     <atom:link href="https://sebastienrousseau.com/ru/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ru-RU</language>
-    <lastBuildDate>Mon, 18 May 2026 12:52:29 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 09:09:20 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Все права защищены.</copyright>
     <item>
       <title>Перезапуск квантовой криптографии в 2026 году: стандарты PQC, гарантии QKD и работа по миграции, которую банки не могут отложить</title>
@@ -15,7 +15,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-18-kvantovaya-kriptografiya-standarty-razvitiye-2026/</guid>
       <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" type="image/webp" length="0"/>
       <category>квантовая криптография 2026</category>
       <category>постквантовая криптография</category>
       <category>NIST FIPS 203</category>
@@ -734,14 +734,14 @@
       <category>BLAKE2</category>
     </item>
     <item>
-      <title>Shokunin: самый быстрый статический генератор сайтов на Rust</title>
+      <title>Static Site Generator: самый быстрый статический генератор сайтов на Rust</title>
       <link>https://sebastienrousseau.com/ru/2023-10-09-shokunin-samyi-bystryi-staticheskii-generator-na-rust/</link>
-      <description>Shokunin — это статический генератор сайтов на Rust, созданный для производительности, доступности и SEO. Молниеносные сборки с поддержкой JSON-LD из коробки.</description>
+      <description>Static Site Generator — это статический генератор сайтов на Rust, созданный для производительности, доступности и SEO. Молниеносные сборки с поддержкой JSON-LD из коробки.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ru/2023-10-09-shokunin-samyi-bystryi-staticheskii-generator-na-rust/</guid>
       <pubDate>Mon, 09 Oct 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/shokunin-banner.webp" type="image/webp" length="0"/>
-      <category>Shokunin</category>
+      <category>Static Site Generator</category>
       <category>статический генератор сайтов</category>
       <category>Rust</category>
       <category>SSG</category>

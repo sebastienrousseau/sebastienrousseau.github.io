@@ -6,7 +6,7 @@
     <description>Artikel auf Deutsch: angewandte KI, ISO-20022-Zahlungen, Post-Quanten-Kryptografie und Transformation des Wholesale-Zahlungsverkehrs.</description>
     <atom:link href="https://sebastienrousseau.com/de/rss.xml" rel="self" type="application/rss+xml"/>
     <language>de-DE</language>
-    <lastBuildDate>Mon, 18 May 2026 12:52:29 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 09:09:20 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle Rechte vorbehalten.</copyright>
     <item>
       <title>Der Quantenkryptografie-Reset 2026: PQC-Standards, QKD-Assurance und die Migrationsarbeit, die Banken nicht länger aufschieben können</title>
@@ -15,7 +15,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-18-quantenkryptografie-standards-entwicklungen-2026/</guid>
       <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" type="image/webp" length="0"/>
       <category>Quantenkryptografie 2026</category>
       <category>Post-Quanten-Kryptografie</category>
       <category>NIST FIPS 203</category>
@@ -85,7 +85,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/de/2026-05-16-beste-cloud-infrastruktur-architektur-fuer-banken-2026/</guid>
       <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/precious-madubuike-t65T28d7x_8-unsplash.webp" type="image/webp" length="0"/>
       <category>Cloud-Architektur 2026</category>
       <category>KI-native Infrastruktur</category>
       <category>Multi-Cloud</category>
@@ -848,14 +848,14 @@
       <category>NIST</category>
     </item>
     <item>
-      <title>Shokunin: der schnellste Rust-basierte Static Site Generator</title>
+      <title>Static Site Generator: der schnellste Rust-basierte Static Site Generator</title>
       <link>https://sebastienrousseau.com/de/2023-10-09-shokunin-der-schnellste-rust-basierte-static-site-generator/</link>
-      <description>Erstellen Sie wirkungsvolle statische Websites mit grenzenloser Skalierbarkeit und vollständiger Kontrolle, dank Shokunin – einem ultraschnellen, in Rust geschriebenen SSG.</description>
+      <description>Erstellen Sie wirkungsvolle statische Websites mit grenzenloser Skalierbarkeit und vollständiger Kontrolle, dank Static Site Generator – einem ultraschnellen, in Rust geschriebenen SSG.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/de/2023-10-09-shokunin-der-schnellste-rust-basierte-static-site-generator/</guid>
       <pubDate>Mon, 09 Oct 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" type="image/webp" length="0"/>
-      <category>Shokunin</category>
+      <category>Static Site Generator</category>
       <category>Static Site Generator</category>
       <category>SSG</category>
       <category>Rust</category>

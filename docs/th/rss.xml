@@ -6,7 +6,7 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Mon, 18 May 2026 12:52:29 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 09:09:20 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
     <item>
       <title>การรีเซ็ตการเข้ารหัสควอนตัมในปี 2026: มาตรฐาน PQC การประกัน QKD และงานอพยพที่ธนาคารไม่อาจเลื่อนได้</title>
@@ -15,7 +15,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-18-witsawakam-khrip-thografi-khwantam-mathana-2026/</guid>
       <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" type="image/webp" length="0"/>
       <category>การเข้ารหัสควอนตัม 2026</category>
       <category>การเข้ารหัสหลังควอนตัม</category>
       <category>NIST FIPS 203</category>
@@ -815,14 +815,14 @@
       <category>NIST</category>
     </item>
     <item>
-      <title>Shokunin: el generador de sitios estáticos más rápido basado en Rust</title>
+      <title>Static Site Generator: el generador de sitios estáticos más rápido basado en Rust</title>
       <link>https://sebastienrousseau.com/th/2023-10-09-shokunin-static-site-generator-thi-reo-thi-sut-bon-rust/</link>
-      <description>Cree sitios estáticos de alto impacto, escalables hasta el infinito y enteramente bajo su control, gracias a Shokunin: un SSG ultrarrápido escrito en Rust.</description>
+      <description>Cree sitios estáticos de alto impacto, escalables hasta el infinito y enteramente bajo su control, gracias a Static Site Generator: un SSG ultrarrápido escrito en Rust.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/th/2023-10-09-shokunin-static-site-generator-thi-reo-thi-sut-bon-rust/</guid>
       <pubDate>Mon, 09 Oct 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" type="image/webp" length="0"/>
-      <category>Shokunin</category>
+      <category>Static Site Generator</category>
       <category>generador de sitios estáticos</category>
       <category>SSG</category>
       <category>Rust</category>

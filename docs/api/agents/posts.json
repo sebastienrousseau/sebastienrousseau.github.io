@@ -30,7 +30,7 @@
         "financial services cryptography",
         "banking security"
       ],
-      "banner": "https://cloudcdn.pro/stock/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
+      "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
       "topics": [
         "post-quantum-cryptography"
       ],
@@ -384,7 +384,7 @@
       "url": "https://sebastienrousseau.com/2024-04-01-openvoice-leading-innovation-in-voice-cloning-technology/index.html",
       "date": "2024-04-01",
       "title": "OpenVoice: Leading Innovation in Voice Cloning Technology",
-      "description": "OpenVoice from MIT, Tsinghua and MyShell: production-grade voice cloning with tone, accent and emotion control — and the trade-offs worth knowing.",
+      "description": "OpenVoice from MIT, Tsinghua and MyShell delivers production-grade voice cloning with fine-grained tone, accent and emotion control — and the trade-offs worth knowing.",
       "keywords": [
         "OpenVoice",
         "Voice Cloning Technology",

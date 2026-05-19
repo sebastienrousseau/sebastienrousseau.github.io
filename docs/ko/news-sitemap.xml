@@ -453,8 +453,8 @@
       <news:language>ko-KR</news:language>
     </news:publication>
     <news:publication_date>2023-10-09T06:06:06+00:00</news:publication_date>
-    <news:title>Shokunin: Rust 기반 최고속 정적 사이트 생성기</news:title>
-    <news:keywords>Shokunin, SSG, 정적 사이트 생성기, Rust, 성능, SEO, JSON-LD, 접근성</news:keywords>
+    <news:title>Static Site Generator: Rust 기반 최고속 정적 사이트 생성기</news:title>
+    <news:keywords>Static Site Generator, SSG, 정적 사이트 생성기, Rust, 성능, SEO, JSON-LD, 접근성</news:keywords>
   </news:news>
 </url>
 <url>

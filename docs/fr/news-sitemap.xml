@@ -453,8 +453,8 @@
       <news:language>fr-FR</news:language>
     </news:publication>
     <news:publication_date>2023-10-09T06:06:06+00:00</news:publication_date>
-    <news:title>Shokunin : le générateur de sites statiques le plus rapide basé sur Rust</news:title>
-    <news:keywords>Shokunin, générateur de sites statiques, SSG, Rust, performance, SEO, accessibilité, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS</news:keywords>
+    <news:title>Static Site Generator : le générateur de sites statiques le plus rapide basé sur Rust</news:title>
+    <news:keywords>Static Site Generator, générateur de sites statiques, SSG, Rust, performance, SEO, accessibilité, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS</news:keywords>
   </news:news>
 </url>
 <url>

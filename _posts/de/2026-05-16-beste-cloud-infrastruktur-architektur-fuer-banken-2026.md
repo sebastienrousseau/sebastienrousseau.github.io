@@ -6,7 +6,7 @@ keywords: "Cloud-Architektur 2026, KI-native Infrastruktur, Multi-Cloud, Soverei
 date: "May 16, 2026"
 language: "de"
 locale: "de_DE"
-banner: "https://cloudcdn.pro/stock/images/precious-madubuike-t65T28d7x_8-unsplash.webp"
+banner: "https://cloudcdn.pro/stocks/images/precious-madubuike-t65T28d7x_8-unsplash.webp"
 banner_alt: "Sechs-Pfeiler-Cloud-Architekturdiagramm für 2026 – KI-nativ, Multi-Cloud, Serverless, Edge, DevSecOps und nachhaltiges Design, mit Overlay der CloudCDN-Edge-Forschung"
 ---
 

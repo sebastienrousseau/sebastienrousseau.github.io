@@ -16,7 +16,7 @@ date: "May 12, 2026"
 description: "From November 2026, SWIFT CBPR+ requires structured postal addresses in cross-border payment messages. Unstructured address lines (AdrLine alone) will no longer be accepted for key party fields in pacs.008. At minimum, TwnNm and Ctry are required, with StrtNm and BldgNb or PstBx recommended. With six months to go, 65% of payment messages still contain unstructured addresses and 44% of banks remain behind schedule."
 format-detection: "telephone=no"
 hreflang: "en"
-icon: "https://cloudcdn.pro/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
@@ -29,7 +29,7 @@ locale: "en_GB"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
-logo: "https://cloudcdn.pro/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 menu: ""
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
@@ -51,7 +51,7 @@ viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
 atom_link: "https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline/rss.xml"
 category: "Payments"
 docs: https://validator.w3.org/feed/docs/rss2.html
-generator: "Shokunin SSG (version 0.0.26)"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "From November 2026, SWIFT CBPR+ requires structured postal addresses in pacs.008 cross-border payment messages. With six months to go, the migration is still incomplete across most of the industry."
 item_guid: "https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline/rss.xml"
 item_link: "https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline/rss.xml"
@@ -82,7 +82,7 @@ msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "From November 2026, SWIFT CBPR+ requires structured postal addresses in pacs.008 cross-border payment messages. With six months to go, the migration is still incomplete across most of the industry."
-twitter_image: "https://cloudcdn.pro/sebastienrousseau/v1/logos/sebastienrousseau.png"
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View"
@@ -96,7 +96,7 @@ thanks: "Thanks for reading!"
 site_last_updated: "2026-05-12"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
-site_software: "Shokunin, Rust"
+site_software: "Static Site Generator, Rust"
 
 excerpt: "From mid-November 2026, SWIFT CBPR+ will reject unstructured postal addresses in pacs.008 and related cross-border payment messages. With approximately 65% of messages still non-compliant and 44%…"
 last_reviewed: "2026-05-13"
@@ -120,7 +120,7 @@ From mid-November 2026, SWIFT CBPR+ will reject unstructured postal addresses in
 
 The November 2026 structured-address requirement is not a sudden regulatory move. It has been on the SWIFT CBPR+ roadmap since the original [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) migration was announced, and it follows the end of MT/MX coexistence in November 2025. What has changed in 2026 is the proximity. With approximately six months remaining, the industry is now operating inside the window where unresolved data-quality issues become operational risk.
 
-The numbers tell the story plainly. SWIFT's own March 2026 community update notes that [approximately 65% of payment messages still contain unstructured addresses ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 milestone for November 2026: Unstructured addresses to be removed"), and that adoption remains uneven across geographies and institution types. A March 2026 [RedCompass Labs survey of 308 senior payments professionals ⧉](https://financialit.net/news/banking/nearly-half-banks-are-behind-iso-20022 "Nearly Half of Banks Are Behind on ISO 20022") found that 44% of banks are not currently on track to meet the structured-address deadline, despite spending an average of $20 million — and in the largest institutions over $30 million — on 2026 readiness, with an average of 13 additional staff assigned to ISO 20022 programmes. The same survey found that 32% of customer address records remain unstructured on average, and that 60% of banks report gaps in core banking systems when supporting structured address fields.
+The numbers tell the story plainly. SWIFT's own March 2026 community update notes that [approximately 65% of payment messages still contain unstructured addresses ⧉](https://www.swift.com/news-events/news/iso-20022-milestone-november-2026-unstructured-addresses-be-removed "ISO 20022 milestone for November 2026: Unstructured addresses to be removed"), and that adoption remains uneven across geographies and institution types. A March 2026 [RedCompass Labs survey of 308 senior payments professionals ⧉](https://financialit.net/news/banking/nearly-half-banks-are-behind-iso-20022 "Nearly Half of Banks Are Behind on ISO 20022") found that 44% of banks are not currently on track to meet the structured-address deadline, despite spending an average of $20 million — and in the largest institutions over $30 million — on 2026 readiness, with an average of 13 additional staff assigned to [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) programmes. The same survey found that 32% of customer address records remain unstructured on average, and that 60% of banks report gaps in core banking systems when supporting structured address fields.
 
 This is not, in other words, a problem that can be solved by another month of message-engine work. It is a data-quality problem that runs upstream from the message layer into onboarding systems, KYC processes, corporate channels, and decades of accumulated free-text customer master data.
 
@@ -130,7 +130,7 @@ Under the SWIFT CBPR+ Standards Release 2026 (SR2026), the key requirement is st
 
 Two address formats are permitted after the cutover:
 
-- **Fully structured** — every component of the postal address is mapped to its dedicated ISO 20022 element: StrtNm (Street Name), BldgNb (Building Number) or BldgNm (Building Name), PstCd (Post Code), TwnNm (Town Name), CtrySubDvsn (Country Subdivision), Ctry (Country, as an ISO 3166-1 alpha-2 code). This is the format SWIFT explicitly identifies as the more desirable option where possible.
+- **Fully structured** — every component of the postal address is mapped to its dedicated [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) element: StrtNm (Street Name), BldgNb (Building Number) or BldgNm (Building Name), PstCd (Post Code), TwnNm (Town Name), CtrySubDvsn (Country Subdivision), Ctry (Country, as an ISO 3166-1 alpha-2 code). This is the format SWIFT explicitly identifies as the more desirable option where possible.
 - **Hybrid** — Town Name and Country are populated in their structured fields, while the remainder of the address may use up to two unstructured AdrLine elements. Importantly, [structured elements must not be repeated inside the unstructured lines ⧉](https://www.statestreet.com/web/insights/articles/documents/state-street-client-guide-to-iso-20022-2025.pdf "State Street Client Guide to ISO 20022 2025"); the address is one or the other for any given component.
 
 Fully unstructured addresses — where the entire address sits inside AdrLine elements with no TwnNm or Ctry — will not be accepted for any of the affected party fields. The European Payments Council has aligned its SEPA rulebook to the same cutover, so from [15 November 2026 the unstructured format is also banned across SCT, SDD, and SCT Inst ⧉](https://clearingpost.com/insights/iso-20022-structured-address-deadline-november-2026/ "The November 2026 Structured Address Deadline: What Every PSP Needs to Do Now"). The alignment is deliberate: SWIFT and the EPC have engineered a single industry cut-over weekend.
@@ -180,7 +180,7 @@ The toolkit's structured-address capabilities are aligned to the SR2026 requirem
 - **Dual-format support** for both pre-deadline hybrid formats and post-deadline fully structured layouts, allowing institutions to migrate progressively without breaking interoperability with counterparties that have not yet completed their own transitions.
 - **CI-pipeline integration** so that address-quality checks become part of the build process, not an end-of-flow afterthought — the practical answer to the [CGI observation that data governance must be a foundational design principle ⧉](https://www.cgi.com/uk/en-gb/blog/banking-and-financial-markets/2026-defining-year-iso-20022-and-structured-data-enforcement "2026: A defining year for ISO 20022 and structured data enforcement") rather than a compliance overlay.
 
-Beyond addresses, the toolkit covers the broader validation surface that the SR2026 release tightens: JSON Schema validation against 20 message-specific schemas, IBAN format and checksum verification across 75 countries, XSD validation of generated XML against the official ISO 20022 schemas, and version-aware generation across all 13 supported pacs.008 revisions (pacs.008.001.01 through pacs.008.001.13). For operational and compliance teams, it also includes XXE prevention via defusedxml, strict path-traversal protection, and PII masking in structured JSON logs to support GDPR and PCI DSS requirements — the kind of controls that are non-negotiable in production payment flows but are often retrofitted late in vendor-led migrations.
+Beyond addresses, the toolkit covers the broader validation surface that the SR2026 release tightens: JSON Schema validation against 20 message-specific schemas, IBAN format and checksum verification across 75 countries, XSD validation of generated XML against the official [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) schemas, and version-aware generation across all 13 supported pacs.008 revisions (pacs.008.001.01 through pacs.008.001.13). For operational and compliance teams, it also includes XXE prevention via defusedxml, strict path-traversal protection, and PII masking in structured JSON logs to support GDPR and PCI DSS requirements — the kind of controls that are non-negotiable in production payment flows but are often retrofitted late in vendor-led migrations.
 
 The library is available [on PyPI ⧉](https://pypi.org/project/pacs008/ "pacs008 on PyPI") as a `pip install pacs008` package and on [GitHub ⧉](https://github.com/sebastienrousseau/pacs008 "pacs008 on GitHub") with full source transparency. For institutions evaluating their options, this matters: open-source tooling lets internal teams audit the validation logic, integrate it into existing Python or FastAPI estates without licence negotiations, and contribute fixes back as their own edge cases surface.
 
@@ -266,7 +266,7 @@ Messages with unstructured addresses in the affected party fields will be reject
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-15">2026-05-15</time>.</p>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-19">2026-05-19</time>.</p>
 <aside class="related-posts" aria-labelledby="related-heading">
 <h2 id="related-heading" class="related-heading">Related reading</h2>
 <div class="related-grid">
