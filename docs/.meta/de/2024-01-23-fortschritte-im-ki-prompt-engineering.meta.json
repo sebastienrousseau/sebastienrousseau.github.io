@@ -1,11 +1,11 @@
 {
-  "locale": "de_DE",
   "subtitle": "Die Mensch-Maschine-Interaktion durch Fortschritte bei benutzerdefinierten Instruktionen neu gestalten",
-  "banner_alt": "Ein Mann analysiert Daten auf Bildschirmen",
   "language": "de",
-  "keywords": "KI-Prompt-Engineering, benutzerdefinierte Instruktionen, Multi-Persona-KI, Chain of Thought, Quantencomputing, ethische KI, Adaptive Prompting, Zero Shot, Few Shot, KI-Technologietrends",
-  "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp",
-  "title": "KI-Prompt-Engineering 2024: Techniken, die funktionieren",
+  "description": "Entdecken Sie die Fortschritte 2024 im KI-Prompt-Engineering — innovative Trends und Techniken, die Technologie und Finanzwesen revolutionieren.",
   "date": "January 23, 2024",
-  "description": "Entdecken Sie die Fortschritte 2024 im KI-Prompt-Engineering — innovative Trends und Techniken, die Technologie und Finanzwesen revolutionieren."
+  "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp",
+  "keywords": "KI-Prompt-Engineering, benutzerdefinierte Instruktionen, Multi-Persona-KI, Chain of Thought, Quantencomputing, ethische KI, Adaptive Prompting, Zero Shot, Few Shot, KI-Technologietrends",
+  "locale": "de_DE",
+  "banner_alt": "Ein Mann analysiert Daten auf Bildschirmen",
+  "title": "KI-Prompt-Engineering 2024: Techniken, die funktionieren"
 }

@@ -6,33 +6,33 @@
     <description>Articoli in italiano: IA applicata, pagamenti ISO 20022, crittografia post-quantistica e trasformazione dei pagamenti wholesale.</description>
     <atom:link href="https://sebastienrousseau.com/it/rss.xml" rel="self" type="application/rss+xml"/>
     <language>it-IT</language>
-    <lastBuildDate>Tue, 19 May 2026 15:03:57 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 15:34:40 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Tutti i diritti riservati.</copyright>
     <item>
-      <title>Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</title>
+      <title>I pagamenti wholesale globali nel 2026: ISO 20022, rinnovo degli RTGS e l&apos;economia dell&apos;interoperabilità</title>
       <link>https://sebastienrousseau.com/it/2026-05-19-globali-wholesale-pagamenti-economia-2026/</link>
-      <description>Global wholesale payments in 2026 are being reshaped by ISO 20022 harmonisation, RTGS renewal, extended settlement windows, non-bank access, API governance, DLT pilots, and cross-border payment fragmentation. The economic issue is interoperability, not messaging alone.</description>
+      <description>I pagamenti wholesale globali nel 2026 sono ridisegnati dall&apos;armonizzazione ISO 20022, dal rinnovo degli RTGS, dall&apos;estensione delle finestre di regolamento, dall&apos;accesso dei non-banche, dalla governance delle API, dai pilota DLT e dalla frammentazione dei pagamenti transfrontalieri. La questione economica è l&apos;interoperabilità, non solo la messaggistica.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/it/2026-05-19-globali-wholesale-pagamenti-economia-2026/</guid>
       <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
-      <category>wholesale payments 2026</category>
-      <category>global payments economics</category>
+      <category>pagamenti wholesale 2026</category>
+      <category>economia dei pagamenti globali</category>
       <category>ISO 20022</category>
       <category>RTGS</category>
-      <category>cross-border payments</category>
+      <category>pagamenti transfrontalieri</category>
       <category>BIS CPMI</category>
       <category>FSB</category>
       <category>Swift CBPR+</category>
-      <category>G20 roadmap</category>
-      <category>real time gross settlement</category>
-      <category>Project Agora</category>
+      <category>roadmap G20</category>
+      <category>regolamento lordo in tempo reale</category>
+      <category>Project Agorá</category>
       <category>Project Mandala</category>
       <category>Project Nexus</category>
-      <category>payment interoperability</category>
-      <category>correspondent banking</category>
-      <category>payment fragmentation</category>
-      <category>wholesale CBDC</category>
+      <category>interoperabilità dei pagamenti</category>
+      <category>corrispondenza bancaria</category>
+      <category>frammentazione dei pagamenti</category>
+      <category>CBDC wholesale</category>
     </item>
     <item>
       <title>Il reset della crittografia quantistica nel 2026: standard PQC, garanzia QKD e il lavoro di migrazione che le banche non possono più rimandare</title>

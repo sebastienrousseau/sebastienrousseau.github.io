@@ -6,33 +6,33 @@
     <description>Bài viết tiếng Việt: AI ứng dụng, thanh toán ISO 20022, mật mã hậu lượng tử và chuyển đổi thanh toán bán buôn.</description>
     <atom:link href="https://sebastienrousseau.com/vi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>vi-VN</language>
-    <lastBuildDate>Tue, 19 May 2026 15:03:57 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 15:34:40 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Đã đăng ký bản quyền.</copyright>
     <item>
-      <title>Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</title>
+      <title>Thanh toán bán buôn toàn cầu năm 2026: ISO 20022, đổi mới RTGS và kinh tế học của khả năng tương tác</title>
       <link>https://sebastienrousseau.com/vi/2026-05-19-global-wholesale-payments-economics-2026/</link>
-      <description>Global wholesale payments in 2026 are being reshaped by ISO 20022 harmonisation, RTGS renewal, extended settlement windows, non-bank access, API governance, DLT pilots, and cross-border payment fragmentation. The economic issue is interoperability, not messaging alone.</description>
+      <description>Thanh toán bán buôn toàn cầu năm 2026 đang được định hình lại bởi quá trình hài hòa hóa ISO 20022, đổi mới RTGS, mở rộng cửa sổ thanh toán, quyền truy cập của tổ chức phi ngân hàng, quản trị API, các thử nghiệm DLT và sự phân mảnh thanh toán xuyên biên giới. Vấn đề kinh tế là khả năng tương tác, không chỉ là tin điện.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-19-global-wholesale-payments-economics-2026/</guid>
       <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
-      <category>wholesale payments 2026</category>
-      <category>global payments economics</category>
+      <category>thanh toán bán buôn 2026</category>
+      <category>kinh tế học thanh toán toàn cầu</category>
       <category>ISO 20022</category>
       <category>RTGS</category>
-      <category>cross-border payments</category>
+      <category>thanh toán xuyên biên giới</category>
       <category>BIS CPMI</category>
       <category>FSB</category>
       <category>Swift CBPR+</category>
-      <category>G20 roadmap</category>
-      <category>real time gross settlement</category>
-      <category>Project Agora</category>
+      <category>lộ trình G20</category>
+      <category>thanh toán tổng tức thời</category>
+      <category>Project Agorá</category>
       <category>Project Mandala</category>
       <category>Project Nexus</category>
-      <category>payment interoperability</category>
-      <category>correspondent banking</category>
-      <category>payment fragmentation</category>
-      <category>wholesale CBDC</category>
+      <category>khả năng tương tác thanh toán</category>
+      <category>ngân hàng đại lý</category>
+      <category>phân mảnh thanh toán</category>
+      <category>CBDC bán buôn</category>
     </item>
     <item>
       <title>Tái thiết mật mã lượng tử 2026: tiêu chuẩn PQC, bảo đảm QKD và công việc di trú mà ngân hàng không thể trì hoãn</title>

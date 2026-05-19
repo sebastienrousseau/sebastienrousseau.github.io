@@ -1,8 +1,8 @@
 {
-  "banner_alt": "แผนภาพสถาปัตยกรรมคลาวด์หกเสาหลักสำหรับปี 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps และการออกแบบที่ยั่งยืน พร้อมการซ้อนทับงานวิจัย CloudCDN edge",
+  "subtitle": "สถาปัตยกรรมคลาวด์ได้ตกผลึกอยู่ที่หกเสาหลัก พร้อมคำถามเชิงกลยุทธ์หนึ่งข้อสำหรับธนาคาร: จะบริโภคคลาวด์หรือออกแบบมัน — ภายใต้แรงกดดันที่บรรจบกันจาก agentic commerce, agentic unit economics, ความเสี่ยงควอนตัมแบบ harvest-now-decrypt-later, ความมั่นคง MCP และ algorithmic contagion, cryptographic agent identity และมรดกระบบเดิมที่ยังคงกินงบประมาณไอทีของบริการทางการเงิน 70–75%",
   "locale": "th_TH",
   "title": "สถาปัตยกรรมโครงสร้างพื้นฐานคลาวด์ที่ดีที่สุดในปี 2026: พิมพ์เขียวแบบ AI-Native, Multi-Cloud และพร้อมรับมือควอนตัมสำหรับบริการทางการเงิน",
-  "subtitle": "สถาปัตยกรรมคลาวด์ได้ตกผลึกอยู่ที่หกเสาหลัก พร้อมคำถามเชิงกลยุทธ์หนึ่งข้อสำหรับธนาคาร: จะบริโภคคลาวด์หรือออกแบบมัน — ภายใต้แรงกดดันที่บรรจบกันจาก agentic commerce, agentic unit economics, ความเสี่ยงควอนตัมแบบ harvest-now-decrypt-later, ความมั่นคง MCP และ algorithmic contagion, cryptographic agent identity และมรดกระบบเดิมที่ยังคงกินงบประมาณไอทีของบริการทางการเงิน 70–75%",
+  "banner_alt": "แผนภาพสถาปัตยกรรมคลาวด์หกเสาหลักสำหรับปี 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps และการออกแบบที่ยั่งยืน พร้อมการซ้อนทับงานวิจัย CloudCDN edge",
   "language": "th-TH",
   "description": "สถาปัตยกรรมคลาวด์ในปี 2026 ได้ตกผลึกอยู่ที่หกเสาหลัก: โครงสร้างพื้นฐาน AI-native, multi-cloud อัจฉริยะ, การออกแบบ serverless-first พร้อม WebAssembly ที่ edge, edge computing, ความมั่นคงอัตโนมัติพร้อม crypto-agility และการดำเนินงานความหนาแน่นสูงที่ยั่งยืน สำหรับธนาคาร คำถามคือควรบริโภคคลาวด์หรือออกแบบมัน",
   "date": "May 16, 2026",

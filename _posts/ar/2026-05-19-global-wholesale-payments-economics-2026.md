@@ -1,6 +1,9 @@
 ---
+title: "المدفوعات بالجملة العالمية في 2026: ISO 20022 وتجديد أنظمة RTGS واقتصاديات قابلية التشغيل البيني"
+subtitle: "أصبحت المدفوعات بالجملة رافعةً من روافع السياسة الاقتصادية: تتقارب ISO 20022 وساعات تشغيل RTGS (نظام التسوية الإجمالية الفورية) ووصول الجهات غير المصرفية والربط البيني وتجارب التسوية القائمة على DLT (تقنية السجل الموزع) وخارطة طريق مجموعة العشرين حول كلفة تنقّل السيولة عالمياً."
+description: "تُعاد صياغة المدفوعات بالجملة العالمية في 2026 من خلال مواءمة ISO 20022 وتجديد أنظمة RTGS وتمديد نوافذ التسوية ووصول الجهات غير المصرفية وحوكمة واجهات API وتجارب DLT وتشظّي المدفوعات العابرة للحدود. القضية الاقتصادية هي قابلية التشغيل البيني، وليست المراسلة وحدها."
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots"
+banner_alt: "خريطة معمارية للمدفوعات بالجملة العالمية لعام 2026 — ISO 20022 وتجديد RTGS والممرات العابرة للحدود ونوافذ السيولة وتجارب التسوية بتقنية DLT"
 banner_height: "571"
 banner_width: "1425"
 banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
@@ -9,21 +12,20 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "May 19, 2026"
-description: "Global wholesale payments in 2026 are being reshaped by ISO 20022 harmonisation, RTGS renewal, extended settlement windows, non-bank access, API governance, DLT pilots, and cross-border payment fragmentation. The economic issue is interoperability, not messaging alone."
 format-detection: "telephone=no"
 hreflang: "ar"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/ar/2026-05-19-global-wholesale-payments-economics-2026"
-image_alt: "Black and White Portrait of Sebastien Rousseau"
+image_alt: "صورة شخصية بالأبيض والأسود لسيباستيان روسو"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
-keywords: "wholesale payments 2026, global payments economics, ISO 20022, RTGS, cross-border payments, BIS CPMI, FSB, Swift CBPR+, G20 roadmap, real time gross settlement, Project Agora, Project Mandala, Project Nexus, payment interoperability, correspondent banking, payment fragmentation, wholesale CBDC"
+keywords: "المدفوعات بالجملة 2026, اقتصاديات المدفوعات العالمية, ISO 20022, RTGS, المدفوعات العابرة للحدود, BIS CPMI, FSB, Swift CBPR+, خارطة طريق مجموعة العشرين, التسوية الإجمالية الفورية, Project Agora, Project Mandala, Project Nexus, قابلية التشغيل البيني للمدفوعات, البنوك المراسلة, تشظّي المدفوعات, العملات الرقمية للبنوك المركزية بالجملة"
 language: "ar"
 last_reviewed: "2026-05-19"
 layout: "report"
 locale: "ar_AR"
-logo_alt: "Logo for Sebastien Rousseau"
+logo_alt: "شعار سيباستيان روسو"
 logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -35,23 +37,21 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "Global Wholesale Payments 2026: ISO 20022 and RTGS Economics"
+seo_title: "المدفوعات بالجملة العالمية 2026: ISO 20022 واقتصاديات RTGS"
 short_name: "sebastienrousseau"
-subtitle: "Wholesale payments have become an economic policy lever: ISO 20022, RTGS operating hours, non-bank access, interlinking, DLT settlement pilots, and the G20 roadmap are converging around the cost of global liquidity movement."
-tags: "wholesale payments, ISO 20022, RTGS, cross-border payments, BIS, CPMI, FSB, Swift, CBPR+, G20 roadmap, payment interoperability, correspondent banking, wholesale CBDC, DLT settlement"
+tags: "المدفوعات بالجملة, ISO 20022, RTGS, المدفوعات العابرة للحدود, BIS, CPMI, FSB, Swift, CBPR+, خارطة طريق مجموعة العشرين, قابلية التشغيل البيني للمدفوعات, البنوك المراسلة, العملات الرقمية للبنوك المركزية بالجملة, التسوية بتقنية DLT"
 theme-color: "0, 83, 191"
-title: "Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability"
 url: "https://sebastienrousseau.com/ar/2026-05-19-global-wholesale-payments-economics-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
-atom_link: "https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/rss.xml"
+atom_link: "https://sebastienrousseau.com/ar/2026-05-19-global-wholesale-payments-economics-2026/rss.xml"
 category: "Finance"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "The 2026 wholesale payments story — ISO 20022 harmonisation, RTGS renewal, operating-hours extension, interlinking, and the economics of cross-border liquidity."
-item_guid: "https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/rss.xml"
-item_link: "https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/rss.xml"
+item_description: "قصة المدفوعات بالجملة في 2026 — مواءمة ISO 20022 وتجديد أنظمة RTGS وتمديد ساعات التشغيل والربط البيني واقتصاديات السيولة العابرة للحدود."
+item_guid: "https://sebastienrousseau.com/ar/2026-05-19-global-wholesale-payments-economics-2026/rss.xml"
+item_link: "https://sebastienrousseau.com/ar/2026-05-19-global-wholesale-payments-economics-2026/rss.xml"
 item_pub_date: "Tue, 19 May 2026 06:06:06 +0000"
-item_title: "Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability"
+item_title: "المدفوعات بالجملة العالمية في 2026: ISO 20022 وتجديد أنظمة RTGS واقتصاديات قابلية التشغيل البيني"
 last_build_date: "Tue, 19 May 2026 06:06:06 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "Tue, 19 May 2026 06:06:06 +0000"
@@ -63,191 +63,155 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Wholesale Payments 2026"
+apple-mobile-web-app-title: "المدفوعات بالجملة 2026"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "The 2026 wholesale payments story — ISO 20022 harmonisation, RTGS renewal, operating-hours extension, interlinking, and the economics of cross-border liquidity."
+twitter_description: "قصة المدفوعات بالجملة في 2026 — مواءمة ISO 20022 وتجديد أنظمة RTGS وتمديد ساعات التشغيل والربط البيني واقتصاديات السيولة العابرة للحدود."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-twitter_image_alt: "Logo of Sebastien Rousseau"
+twitter_image_alt: "شعار سيباستيان روسو"
 twitter_site: "@wwdseb"
-twitter_title: "Global Wholesale Payments 2026: ISO 20022 and RTGS Economics"
-twitter_url: "https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026"
+twitter_title: "المدفوعات بالجملة العالمية 2026: ISO 20022 واقتصاديات RTGS"
+twitter_url: "https://sebastienrousseau.com/ar/2026-05-19-global-wholesale-payments-economics-2026"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
-thanks: "Thanks for reading!"
+thanks: "شكراً لقراءتكم!"
 site_last_updated: "2026-05-19"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-excerpt: "Wholesale payments in 2026 are no longer just bank plumbing. They are part of macroeconomic resilience, trade competitiveness, liquidity efficiency, sanctions compliance, and the strategic contest…"
+excerpt: "لم تعد المدفوعات بالجملة في 2026 مجرد سباكة مصرفية. فهي جزء من المرونة الاقتصادية الكلية والقدرة التنافسية التجارية وكفاءة السيولة والامتثال للعقوبات والتنافس الاستراتيجي…"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# المدفوعات بالجملة العالمية في 2026: ISO 20022 وتجديد أنظمة RTGS واقتصاديات قابلية التشغيل البيني
 
-> _Translation pending — read the [English original](/2026-05-19-global-wholesale-payments-economics-2026/) while we localise._
-
-# Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability
-
-
-<!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Global wholesale payments in 2026 are being reshaped by ISO 20022 harmonisation, RTGS renewal, extended settlement windows, non-bank access, API governance, DLT pilots, and cross-border payment fragmentation. The economic issue is interoperability, not messaging alone.</p>
-<p class="post-lead-heading"><strong>Key takeaways</strong></p>
-<ul class="post-lead-takeaways">
-  <li><strong>Why Wholesale Payments Are an Economic Story.</strong> Cross-border wholesale payments sit underneath trade finance, correspondent banking, securities settlement, corporate treasury, and central-bank operations.</li>
-  <li><strong>The 2026 Wholesale Payments Baseline.</strong> The first phase was getting payment systems onto ISO 20022.</li>
-  <li><strong>The Economic Frictions to Remove.</strong> Poorly structured data causes payment investigations, false sanctions hits, reconciliation delays, and manual enquiries.</li>
-  <li><strong>Architecture Table: Wholesale Payments Modernisation.</strong> The priority is to make ISO 20022 data a product capability rather than a compliance conversion.</li>
-</ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline">The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</a>, <a href="https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa">Quantum-Safe Payments: Why the Industry Must Act Now</a>, <a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: Fastest Rust-Based SSG</a>.</p>
-</aside>
-<!-- lead-end -->
-
-Wholesale payments in 2026 are no longer just bank plumbing. They are part of macroeconomic resilience, trade competitiveness, liquidity efficiency, sanctions compliance, and the strategic contest over payment-system fragmentation. The BIS CPMI argues that harmonised [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) implementation can reduce long-standing cross-border payment frictions through structured data, better straight-through processing, and stronger compliance screening ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "The future of financial messaging: navigating the ISO 20022 migration journey")).
+لم تعد المدفوعات بالجملة في 2026 مجرد سباكة مصرفية. فهي جزء من المرونة الاقتصادية الكلية والقدرة التنافسية التجارية وكفاءة السيولة والامتثال للعقوبات والتنافس الاستراتيجي حول تشظّي أنظمة المدفوعات. وترى لجنة المدفوعات والبنى التحتية للسوق التابعة لبنك التسويات الدولية BIS CPMI أن التطبيق المنسّق لـ[ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) قادر على تقليص الاحتكاكات المزمنة في المدفوعات العابرة للحدود من خلال البيانات المهيكلة وتحسين المعالجة المباشرة وتعزيز فحوصات الامتثال ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "مستقبل المراسلات المالية: التنقّل في رحلة الهجرة إلى ISO 20022")).
 
 ---
 
-> **Executive Summary / Key Takeaways**
+> **الملخص التنفيذي / النقاط الرئيسية**
 >
-> - **ISO 20022 is now the shared language of wholesale payment modernisation.** BIS CPMI says the standard addresses fragmented messaging, data truncation, weak straight-through processing, and compliance friction ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "The future of financial messaging: navigating the ISO 20022 migration journey")).
-> - **The G20 roadmap is still behind target.** The FSB’s March 2026 update says progress is real but the 2027 targets are not yet on track ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "Reforming cross-border payments")).
-> - **RTGS operating hours and access are economic levers.** The FSB notes that more than half of jurisdictions have extended RTGS hours or are planning extensions, while direct access for non-bank providers is rising across payment systems ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "Reforming cross-border payments")).
-> - **The Bank of England’s renewed RTGS service makes resilience and interoperability explicit.** The renewed service is designed to support monetary and financial stability through resilience, access, interoperability, and functionality ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "The renewed RTGS service — key benefits")).
-> - **Fragmentation is the macro risk.** The Atlantic Council warns that payment-system fragmentation can increase cost, slow settlement, reduce transparency, and weaken global financial integration ([Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "Global payment systems are fragmenting")).
-> - **DLT pilots are now infrastructure experiments, not crypto theatre.** BIS-linked work such as Project Agorá and European wholesale settlement pilots are testing whether tokenised commercial bank money and central bank money can improve high-value cross-border settlement ([Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "Global payment systems are fragmenting")).
-> - **The economics are operational.** A cross-border payment fails economically when rich data is lost, compliance checks become manual, liquidity is trapped by time zones, and investigations require human repair.
+> - **أصبحت ISO 20022 اللغة المشتركة لتحديث المدفوعات بالجملة.** تقول BIS CPMI إن المعيار يعالج تجزؤ المراسلات وبتر البيانات وضعف المعالجة المباشرة واحتكاكات الامتثال ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "مستقبل المراسلات المالية: التنقّل في رحلة الهجرة إلى ISO 20022")).
+> - **لا تزال خارطة طريق مجموعة العشرين متأخرة عن أهدافها.** يفيد تحديث مجلس الاستقرار المالي FSB (مجلس الاستقرار المالي) لمارس 2026 بأن التقدّم حقيقي لكن أهداف 2027 ليست على المسار الصحيح بعد ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "إصلاح المدفوعات العابرة للحدود")).
+> - **ساعات تشغيل RTGS وإتاحة الوصول رافعتان اقتصاديتان.** يلاحظ FSB أن أكثر من نصف الولايات القضائية مدّدت ساعات RTGS أو تخطّط لتمديدها، فيما يتزايد الوصول المباشر لمزوّدي الخدمات غير المصرفيين عبر أنظمة المدفوعات ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "إصلاح المدفوعات العابرة للحدود")).
+> - **تُبرز خدمة RTGS المجدَّدة لبنك إنجلترا المرونةَ وقابلية التشغيل البيني بوضوح.** صُمِّمت الخدمة المجدَّدة لدعم الاستقرار النقدي والمالي عبر المرونة وإتاحة الوصول وقابلية التشغيل البيني والوظائفية ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "خدمة RTGS المجدَّدة — المزايا الرئيسية")).
+> - **التشظّي هو المخاطرة الكلية.** يحذّر المجلس الأطلسي من أن تشظّي أنظمة المدفوعات قد يرفع الكلفة ويُبطئ التسوية ويُقلّل الشفافية ويُضعف التكامل المالي العالمي ([Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "أنظمة المدفوعات العالمية تتشظّى")).
+> - **أصبحت تجارب DLT تجاربَ بنية تحتية، لا مسرحاً للعملات المشفّرة.** تختبر الأعمال المرتبطة بـ BIS مثل Project Agorá والتجارب الأوروبية للتسوية بالجملة ما إذا كانت أموال البنوك التجارية المُرمَّزة وأموال البنوك المركزية قادرة على تحسين التسوية العابرة للحدود ذات القيمة العالية ([Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "أنظمة المدفوعات العالمية تتشظّى")).
+> - **الاقتصاد تشغيلي.** يفشل الدفع العابر للحدود اقتصادياً عندما تُفقد البيانات الغنية وتُصبح فحوصات الامتثال يدوية وتُحجز السيولة بفعل المناطق الزمنية وتتطلّب التحقيقات تدخّلاً بشرياً.
 >
 ---
 
-## Why Wholesale Payments Are an Economic Story
+## لماذا المدفوعات بالجملة قصة اقتصادية
 
-Cross-border wholesale payments sit underneath trade finance, correspondent banking, securities settlement, corporate treasury, and central-bank operations. When they are slow or opaque, working capital is trapped. When they are fragmented, liquidity buffers rise. When compliance data is weak, sanctions and AML checks become expensive manual work.
+تقع المدفوعات بالجملة العابرة للحدود في صميم تمويل التجارة والبنوك المراسلة وتسوية الأوراق المالية وخزانة الشركات وعمليات البنوك المركزية. فعندما تكون بطيئة أو غير شفافة يُحجز رأس المال العامل، وعندما تكون متشظّية ترتفع وسائد السيولة، وعندما تكون بيانات الامتثال ضعيفة تتحوّل فحوصات العقوبات ومكافحة غسل الأموال AML إلى عمل يدوي مكلف.
 
-BIS CPMI’s April 2026 brief describes ISO 20022 as a way to standardise data objects, rules, and processes across payments, securities, and treasury, enabling interoperability between financial institutions, market infrastructures, and end users ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "The future of financial messaging: navigating the ISO 20022 migration journey")). This is why the migration is economically material rather than simply technical.
+تصف موجزة BIS CPMI الصادرة في أبريل 2026 معيار ISO 20022 بأنه وسيلة لتوحيد كائنات البيانات والقواعد والعمليات عبر المدفوعات والأوراق المالية والخزانة، ما يُتيح قابلية التشغيل البيني بين المؤسسات المالية والبنى التحتية للسوق والمستخدمين النهائيين ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "مستقبل المراسلات المالية: التنقّل في رحلة الهجرة إلى ISO 20022")). ولهذا السبب فإن الهجرة جوهرية اقتصادياً لا تقنية فحسب.
 
-## The 2026 Wholesale Payments Baseline
+## خط الأساس للمدفوعات بالجملة في 2026
 
-### 1. ISO 20022 Moves from Migration to Harmonisation
+### 1. ISO 20022 ينتقل من الهجرة إلى المواءمة
 
-The first phase was getting payment systems onto ISO 20022. The second phase is making implementation consistent enough that the benefits survive across borders. BIS CPMI identifies structured data, reduced truncation, better screening, and improved reconciliation as core benefits of harmonised implementation ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "The future of financial messaging: navigating the ISO 20022 migration journey")).
+كانت المرحلة الأولى تتمثّل في نقل أنظمة المدفوعات إلى ISO 20022. أما المرحلة الثانية فهي جعل التطبيق متّسقاً بما يكفي لكي تصمد المنافع عبر الحدود. وتُحدّد BIS CPMI البيانات المهيكلة وتقليص البتر وتحسين الفحص وتعزيز التسوية باعتبارها المنافع الجوهرية للتطبيق المنسّق ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "مستقبل المراسلات المالية: التنقّل في رحلة الهجرة إلى ISO 20022")).
 
-The difficult part is that ISO 20022 can still fragment if jurisdictions adopt different field practices, validation rules, and optional-data conventions. The strategic work for banks is therefore not just format conversion; it is semantic alignment.
+تكمن الصعوبة في أن ISO 20022 قد يتشظّى مع ذلك إذا تبنّت الولايات القضائية ممارسات حقول وقواعد تحقّق واتفاقيات بيانات اختيارية مختلفة. ومن ثَمّ فإن العمل الاستراتيجي للبنوك ليس مجرد تحويل صيغة، بل مواءمة دلالية.
 
-### 2. RTGS Renewal Extends the Settlement Window
+### 2. تجديد RTGS يُوسّع نافذة التسوية
 
-The settlement window matters because global wholesale payments cross time zones. Fabio Panetta’s May 2026 BIS speech frames national payment infrastructure as a coordinate for reform, including wider settlement windows and full ISO 20022 adoption ([BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "Interconnect to stabilize: cross-border payments in a fragmenting world")).
+تكتسب نافذة التسوية أهميتها لأن المدفوعات بالجملة العالمية تعبر المناطق الزمنية. ويُؤطّر خطاب فابيو بانيتا في BIS في مايو 2026 البنية التحتية الوطنية للمدفوعات بوصفها إحداثيةً للإصلاح، بما في ذلك نوافذ تسوية أوسع والاعتماد الكامل لـ ISO 20022 ([BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "الربط البيني من أجل الاستقرار: المدفوعات العابرة للحدود في عالم متشظٍّ")).
 
-The Bank of England’s renewed RTGS service points in the same direction. It emphasises resilience, broader access, interoperability, and a synchronised settlement interface that can interoperate with other ledgers and reduce settlement risk and liquidity costs ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "The renewed RTGS service — key benefits")).
+تسير خدمة RTGS المجدَّدة لبنك إنجلترا في الاتجاه نفسه. فهي تُؤكّد على المرونة وتوسيع الوصول وقابلية التشغيل البيني وواجهة تسوية متزامنة قادرة على التشغيل البيني مع سجلات أخرى وعلى تقليص مخاطر التسوية وتكاليف السيولة ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "خدمة RTGS المجدَّدة — المزايا الرئيسية")).
 
-### 3. Non-Bank Access Changes Competitive Structure
+### 3. وصول الجهات غير المصرفية يُغيّر البنية التنافسية
 
-Payment systems are widening direct access to non-bank payment service providers. The BIS May 2026 speech reports that direct access for non-bank PSPs reached 45% in fast payment systems and 39% in RTGS systems in 2025 data ([BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "Interconnect to stabilize: cross-border payments in a fragmenting world")).
+تُوسّع أنظمة المدفوعات الوصول المباشر لمزوّدي خدمات الدفع غير المصرفيين. ويفيد خطاب BIS في مايو 2026 بأن الوصول المباشر لمزوّدي خدمات الدفع PSP غير المصرفيين بلغ 45% في أنظمة المدفوعات السريعة و39% في أنظمة RTGS وفق بيانات 2025 ([BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "الربط البيني من أجل الاستقرار: المدفوعات العابرة للحدود في عالم متشظٍّ")).
 
-This matters because non-bank access changes the economics of correspondent banking. It can reduce dependency on long correspondent chains, but it also requires consistent regulation, liquidity controls, settlement-risk governance, and operational-resilience standards.
+يهمّ هذا لأن وصول الجهات غير المصرفية يُغيّر اقتصاديات البنوك المراسلة. فقد يُقلّص الاعتماد على سلاسل المراسلة الطويلة، لكنه يستلزم في الوقت ذاته تنظيماً متّسقاً وضوابطَ سيولة وحوكمةً لمخاطر التسوية ومعاييرَ مرونة تشغيلية.
 
-### 4. Interlinking Becomes the Alternative to Parallel Rails
+### 4. الربط البيني بديلاً عن السكك المتوازية
 
-The FSB notes that Asia-Pacific initiatives have driven faster-payment interlinking and that interlinking arrangements cover around 17 bilateral corridors, with more planned ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "Reforming cross-border payments")). For wholesale payments, the equivalent question is how RTGS systems, central-bank money, tokenised ledgers, and correspondent-banking rails interoperate without creating new silos.
+يُلاحظ FSB أن مبادرات منطقة آسيا والمحيط الهادئ دفعت الربط البيني للمدفوعات السريعة، وأن ترتيبات الربط البيني تشمل نحو 17 ممراً ثنائياً مع المزيد قيد التخطيط ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "إصلاح المدفوعات العابرة للحدود")). وفي المدفوعات بالجملة، يكون السؤال المكافئ كيف تتشغّل بينياً أنظمة RTGS وأموال البنوك المركزية والسجلات المُرمَّزة وسكك البنوك المراسلة دون استحداث صوامع جديدة.
 
-Interlinking is attractive because it preserves domestic payment-system sovereignty while allowing cross-border reach. The risk is that every corridor becomes a bespoke engineering and legal project.
+يجذب الربط البيني الأنظار لأنه يصون سيادة أنظمة المدفوعات المحلية بينما يُتيح المدى العابر للحدود. والمخاطرة هي أن يتحوّل كل ممر إلى مشروع هندسي وقانوني مفصّل لذاته.
 
-## The Economic Frictions to Remove
+## الاحتكاكات الاقتصادية الواجب إزالتها
 
-### Data Repair
+### إصلاح البيانات
 
-Poorly structured data causes payment investigations, false sanctions hits, reconciliation delays, and manual enquiries. Panetta’s May 2026 speech says 1–3% of payments generate inquiries and that harmonised ISO 20022 can cut inquiry resolution times by up to 80% ([BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "Interconnect to stabilize: cross-border payments in a fragmenting world")).
+تُفضي البيانات سيئة الهيكلة إلى تحقيقات في المدفوعات وإصابات عقوبات زائفة وتأخّر في التسوية وطلبات استفسار يدوية. ويُشير خطاب بانيتا في مايو 2026 إلى أن 1–3% من المدفوعات تُولِّد استفسارات، وأن المواءمة على ISO 20022 قد تُقلّص آجال حسم الاستفسارات بنسبة تصل إلى 80% ([BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "الربط البيني من أجل الاستقرار: المدفوعات العابرة للحدود في عالم متشظٍّ")).
 
-That is not a back-office optimisation. It is a liquidity and customer-experience improvement at systemic scale.
+ليس هذا تحسيناً للمكتب الخلفي. بل هو تحسين للسيولة ولتجربة العميل على نطاق نظامي.
 
-### Liquidity Fragmentation
+### تشظّي السيولة
 
-Cross-border payments fragment liquidity when settlement windows do not overlap, when rails require prefunding in multiple jurisdictions, or when settlement assets differ. RTGS operating-hour extension reduces this problem by increasing the overlap in which central-bank money can settle transactions.
+تُفتّت المدفوعات العابرة للحدود السيولة عندما لا تتداخل نوافذ التسوية، أو عندما تستلزم السكك تمويلاً مسبقاً في ولايات قضائية متعدّدة، أو عندما تتباين أصول التسوية. ويُقلّل تمديد ساعات تشغيل RTGS هذه المشكلة بزيادة التداخل الذي تستطيع خلاله أموال البنك المركزي تسوية المعاملات.
 
-The strategic endpoint is not always-on RTGS everywhere tomorrow. The realistic endpoint is targeted extension of critical windows, better liquidity analytics, and settlement synchronisation where the economic benefit is highest.
+ليست الغاية الاستراتيجية هي تشغيل RTGS بلا توقّف في كل مكان غداً. بل الغاية الواقعية هي تمديد مستهدف للنوافذ الحرجة وتحسين تحليلات السيولة ومزامنة التسوية حيث تكون المنفعة الاقتصادية أعلى.
 
-### Regulatory Duplication
+### الازدواجية التنظيمية
 
-Cross-border payments pass through different AML, sanctions, privacy, and data-sharing regimes. The FSB highlights work on data frameworks, bank and non-bank regulation, FATF standards, and cross-border payments fraud as part of the reform agenda ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "Reforming cross-border payments")).
+تمرّ المدفوعات العابرة للحدود عبر أنظمة مختلفة لمكافحة غسل الأموال والعقوبات والخصوصية وتبادل البيانات. ويُسلّط FSB الضوء على العمل في أُطر البيانات وتنظيم البنوك وغير البنوك ومعايير FATF (مجموعة العمل المالي) والاحتيال في المدفوعات العابرة للحدود ضمن جدول أعمال الإصلاح ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "إصلاح المدفوعات العابرة للحدود")).
 
-Technology cannot remove these obligations. It can make compliance checks earlier, richer, and less manual.
+لا تستطيع التكنولوجيا إزالة هذه الالتزامات، لكنها تستطيع جعل فحوصات الامتثال أبكر وأغنى وأقلّ يدوية.
 
-## Architecture Table: Wholesale Payments Modernisation
+## جدول معماري: تحديث المدفوعات بالجملة
 
-| Layer | 2026 Direction | Economic Effect | Risk if Poorly Implemented |
+| الطبقة | اتجاه 2026 | الأثر الاقتصادي | المخاطرة عند سوء التطبيق |
 |---|---|---|---|
-| **Messaging** | ISO 20022 harmonisation | Better STP, screening, reconciliation | Fragmented field usage and data truncation |
-| **Settlement** | Renewed RTGS and wider hours | Lower liquidity buffers and faster finality | Operational strain and uneven time-zone coverage |
-| **Access** | More non-bank PSP access | Competition and shorter payment chains | Uneven supervision and settlement-risk leakage |
-| **Interlinking** | Bilateral and multilateral links | Reach without rebuilding domestic rails | Corridor-specific fragmentation |
-| **DLT / tokenisation** | Wholesale settlement pilots | Programmability and atomic settlement | Legal finality and interoperability gaps |
-| **Governance** | FSB, CPMI, FATF coordination | Consistent global operating model | Compliance duplication and geopolitical divergence |
+| **المراسلة** | مواءمة ISO 20022 | تحسّن STP والفحص والتسوية | استخدام مجزّأ للحقول وبتر للبيانات |
+| **التسوية** | RTGS مجدَّد وساعات أوسع | وسائد سيولة أدنى ونهائية أسرع | إجهاد تشغيلي وتغطية متفاوتة للمناطق الزمنية |
+| **الوصول** | مزيد من وصول PSP غير المصرفي | منافسة وسلاسل دفع أقصر | إشراف متفاوت وتسرّب مخاطر التسوية |
+| **الربط البيني** | روابط ثنائية ومتعدّدة الأطراف | مدى دون إعادة بناء السكك المحلية | تشظٍّ خاص بكل ممر |
+| **DLT / الترميز** | تجارب التسوية بالجملة | قابلية البرمجة والتسوية الذرّية | فجوات في النهائية القانونية وقابلية التشغيل البيني |
+| **الحوكمة** | تنسيق FSB وCPMI وFATF | نموذج تشغيلي عالمي متّسق | ازدواجية امتثال وتباعد جيوسياسي |
 
-## What This Means by Institution Type
+## ماذا يعني ذلك بحسب نوع المؤسسة
 
-### Global Transaction Banks
+### بنوك المعاملات العالمية
 
-The priority is to make ISO 20022 data a product capability rather than a compliance conversion. The strongest transaction banks will use structured data to improve reconciliation, cash forecasting, sanctions pre-validation, investigations, and client treasury dashboards.
+الأولوية هي تحويل بيانات ISO 20022 إلى قدرة منتَج بدلاً من اعتبارها تحويلاً لأغراض الامتثال. وستستخدم بنوك المعاملات الأقوى البيانات المهيكلة لتحسين التسوية والتنبؤ بالنقد والتحقّق المسبق من العقوبات والتحقيقات ولوحات معلومات خزانة العملاء.
 
-### Central Banks and Market Infrastructures
+### البنوك المركزية والبنى التحتية للسوق
 
-The priority is to extend operating windows where the liquidity benefit is clear, widen access safely, and align with global data requirements. RTGS renewal is now a strategic national infrastructure programme, not a back-office replacement.
+الأولوية هي تمديد ساعات التشغيل حيث تكون منفعة السيولة واضحة، وتوسيع الوصول بأمان، والمواءمة مع متطلبات البيانات العالمية. وقد بات تجديد RTGS اليوم برنامج بنية تحتية وطنية استراتيجياً، لا استبدالاً للمكتب الخلفي.
 
-### Corporates and Treasury Teams
+### الشركات وفِرَق الخزانة
 
-The priority is transparency. Treasurers should ask banks for structured payment-status reporting, better rejection analytics, richer remittance data, and APIs that turn ISO 20022 into working-capital intelligence.
+الأولوية هي الشفافية. وينبغي أن يطلب أمناء الخزانة من البنوك تقارير مهيكلة لحالة المدفوعات وتحليلات أفضل للرفض وبيانات تحويلات أغنى وواجهات API تُحوّل ISO 20022 إلى ذكاء لرأس المال العامل.
 
-### Fintechs and PSPs
+### شركات التقنية المالية ومزوّدو خدمات الدفع
 
-The priority is access plus compliance depth. Direct or indirect access to settlement systems is valuable only if the PSP can meet bank-grade resilience, AML, sanctions, liquidity, and incident-reporting expectations.
+الأولوية هي الوصول مقروناً بعمق الامتثال. فالوصول المباشر أو غير المباشر إلى أنظمة التسوية لا يكتسب قيمة إلا إذا استطاع PSP الإيفاء بتوقّعات بمستوى مصرفي في المرونة ومكافحة غسل الأموال والعقوبات والسيولة والإبلاغ عن الحوادث.
 
-## Conclusion
+## الخاتمة
 
-The global wholesale payments story in 2026 is an interoperability story. ISO 20022 provides the language, RTGS renewal provides the settlement foundation, interlinking provides reach, and DLT pilots test whether programmable settlement can improve the model. The economic prize is lower trapped liquidity, fewer manual repairs, faster settlement, better compliance, and more resilient global trade.
+قصة المدفوعات بالجملة العالمية في 2026 هي قصة قابلية تشغيل بيني. فمعيار ISO 20022 يُوفّر اللغة، وتجديد RTGS يُوفّر أساس التسوية، والربط البيني يُوفّر المدى، وتجارب DLT تختبر إمكان أن يُحسّن التسويةُ القابلةُ للبرمجة النموذجَ. والجائزة الاقتصادية هي سيولة محجوزة أقل وإصلاحات يدوية أقل وتسوية أسرع وامتثال أفضل وتجارة عالمية أكثر مرونة.
 
-The risk is that every jurisdiction modernises alone. If that happens, the world gets newer payment systems that remain fragmented. If harmonisation holds, wholesale payments become a genuine engine of global economic efficiency.
+تتمثّل المخاطرة في أن تتحدّث كل ولاية قضائية بمفردها. وإن حدث ذلك حصل العالم على أنظمة دفع أحدث لكنها تبقى متشظّية. أما إن صمدت المواءمة، فستُصبح المدفوعات بالجملة محرّكاً حقيقياً لكفاءة الاقتصاد العالمي.
 
-## Frequently Asked Questions
+## الأسئلة الشائعة
 
-**Why does ISO 20022 matter for wholesale payments?**
+**لماذا يهمّ ISO 20022 للمدفوعات بالجملة؟**
 
-It matters because structured data improves straight-through processing, compliance screening, reconciliation, and interoperability across payment systems and market infrastructures ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "The future of financial messaging: navigating the ISO 20022 migration journey")).
+يهمّ لأن البيانات المهيكلة تُحسّن المعالجة المباشرة وفحص الامتثال والتسوية وقابلية التشغيل البيني عبر أنظمة المدفوعات والبنى التحتية للسوق ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "مستقبل المراسلات المالية: التنقّل في رحلة الهجرة إلى ISO 20022")).
 
-**Is the G20 cross-border payments roadmap on track?**
+**هل خارطة طريق مجموعة العشرين للمدفوعات العابرة للحدود في موعدها؟**
 
-The FSB says progress has been made, but the 2027 targets are not yet on track and require further public-sector and private-sector action ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "Reforming cross-border payments")).
+يقول FSB إن تقدّماً قد أُحرز، لكن أهداف 2027 ليست على المسار الصحيح بعد وتستلزم إجراءات إضافية من القطاعين العام والخاص ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "إصلاح المدفوعات العابرة للحدود")).
 
-**What is the role of RTGS renewal?**
+**ما دور تجديد RTGS؟**
 
-RTGS renewal improves resilience, access, interoperability, and settlement functionality. The Bank of England also highlights synchronised settlement interfaces and ISO 20022 as mechanisms for reducing settlement risk and liquidity costs ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "The renewed RTGS service — key benefits")).
+يُحسّن تجديد RTGS المرونة والوصول وقابلية التشغيل البيني ووظائف التسوية. كما يُبرز بنك إنجلترا واجهات التسوية المتزامنة و ISO 20022 آليتين لتقليص مخاطر التسوية وتكاليف السيولة ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "خدمة RTGS المجدَّدة — المزايا الرئيسية")).
 
-**Are stablecoins replacing wholesale payments?**
+**هل تحلّ العملات المستقرة محلّ المدفوعات بالجملة؟**
 
-No. Stablecoins may influence cross-border payment design, but wholesale payments require settlement finality, central-bank money anchors, prudential controls, and legal certainty. The more credible institutional direction is interoperability between commercial bank money, central bank money, and tokenised settlement systems.
+لا. قد تُؤثّر العملات المستقرة في تصميم المدفوعات العابرة للحدود، غير أن المدفوعات بالجملة تستلزم نهائية التسوية ومراسي أموال البنك المركزي وضوابطَ احترازية ويقيناً قانونياً. والاتجاه المؤسسي الأكثر مصداقية هو قابلية التشغيل البيني بين أموال البنوك التجارية وأموال البنك المركزي وأنظمة التسوية المُرمَّزة.
 
-## References
+## المراجع
 
-- BIS CPMI, (2026). [The future of financial messaging: navigating the ISO 20022 migration journey ⧉](https://www.bis.org/cpmi/publ/brief11.htm "BIS CPMI Brief No 11").
-- FSB, (2026). [Reforming Cross-border payments ⧉](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "FSB Payments Summit keynote").
-- BIS, (2026). [Interconnect to stabilize: cross-border payments in a fragmenting world ⧉](https://www.bis.org/cpmi/speeches/sp260505.pdf "Fabio Panetta speech").
-- Bank of England, (2026). [The renewed RTGS service — key benefits ⧉](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Renewed RTGS service").
-- Atlantic Council, (2026). [Global payment systems are fragmenting ⧉](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "Payment-system fragmentation").
-<!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-19">2026-05-19</time>.</p>
-<!-- enrich-end -->
-
-<!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-19">2026-05-19</time>.</p>
-<aside class="related-posts" aria-labelledby="related-heading">
-<h2 id="related-heading" class="related-heading">Related reading</h2>
-<div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline" class="related-media" aria-label="The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View" tabindex="-1"><img alt="ISO 20022 pacs.008 structured address diagram — cross-border payment message fields with TwnNm and Ctry highlighted" src="https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline">The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</a></h3><p><time datetime="2026-05-12">2026-05-12</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa" class="related-media" aria-label="Quantum-Safe Payments: Why the Industry Must Act Now" tabindex="-1"><img alt="Quantum computing circuit board in blue light" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa">Quantum-Safe Payments: Why the Industry Must Act Now</a></h3><p><time datetime="2025-09-01">2025-09-01</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" class="related-media" aria-label="Static Site Generator: Fastest Rust-Based SSG" tabindex="-1"><img alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right" src="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: Fastest Rust-Based SSG</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
-</div>
-</aside>
-<!-- enrich-end -->
+- BIS CPMI, (2026). [مستقبل المراسلات المالية: التنقّل في رحلة الهجرة إلى ISO 20022 ⧉](https://www.bis.org/cpmi/publ/brief11.htm "BIS CPMI Brief No 11").
+- FSB, (2026). [إصلاح المدفوعات العابرة للحدود — كلمة رئيسية في قمة FSB للمدفوعات ⧉](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "FSB").
+- BIS, (2026). [الربط البيني من أجل الاستقرار: المدفوعات العابرة للحدود في عالم متشظٍّ ⧉](https://www.bis.org/cpmi/speeches/sp260505.pdf "خطاب فابيو بانيتا").
+- Bank of England, (2026). [خدمة RTGS المجدَّدة — المزايا الرئيسية ⧉](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Bank of England").
+- Atlantic Council, (2026). [أنظمة المدفوعات العالمية تتشظّى — وهذا ما يستطيع G20 فعله ⧉](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "Atlantic Council").

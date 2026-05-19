@@ -1,11 +1,11 @@
 {
-  "subtitle": "Przegląd roku w AI i kwantach dla usług finansowych",
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
   "date": "Dec 18, 2023",
-  "description": "Przegląd 2023: jak AI i obliczenia kwantowe wpłynęły na bankowość i jakie perspektywy dla 2024.",
-  "language": "pl-PL",
+  "locale": "pl_PL",
   "keywords": "AI, kwanty, bankowość, podsumowanie 2023, fintech, LLM, kryptografia postkwantowa",
   "banner_alt": "Hybrydowa wizualizacja AI i obliczeń kwantowych w bankowości",
+  "language": "pl-PL",
   "title": "Stan AI i obliczeń kwantowych w bankowości: podsumowanie 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
-  "locale": "pl_PL"
+  "description": "Przegląd 2023: jak AI i obliczenia kwantowe wpłynęły na bankowość i jakie perspektywy dla 2024.",
+  "subtitle": "Przegląd roku w AI i kwantach dla usług finansowych"
 }

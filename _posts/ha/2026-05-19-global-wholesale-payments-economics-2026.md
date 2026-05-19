@@ -1,6 +1,9 @@
 ---
+title: "Biyan Kuɗi na Manyan Ƙimomi a Duniya a 2026: ISO 20022, Sabunta RTGS, da Tattalin Arzikin Haɗakar Tsare-tsare"
+subtitle: "Biyan kuɗi na manyan ƙimomi ya zama kayan aiki na manufofin tattalin arziki: ISO 20022, lokutan aikin RTGS, samun damar wadanda ba bankuna ba, haɗin tsarurruka, gwajin sasantawa na DLT, da taswirar G20 suna haɗuwa kewaye da farashin motsin ruwa-ruwan kuɗi a duniya."
+description: "Biyan kuɗi na manyan ƙimomi a duniya a 2026 yana sake fasalce ta hanyar daidaita ISO 20022, sabunta RTGS, tsawaita lokutan sasantawa, samun damar wadanda ba bankuna ba, mulkin API, gwajin DLT, da rarrabuwar biyan kuɗi tsakanin ƙasashe. Matsalar tattalin arziki ita ce haɗakar tsare-tsare, ba saƙon kawai ba."
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
-banner_alt: "Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots"
+banner_alt: "Taswirar gine-ginen biyan kuɗi na manyan ƙimomi a duniya don 2026 da ke nuna ISO 20022, sabunta RTGS, hanyoyin biyan kuɗi tsakanin ƙasashe, lokutan ruwa-ruwan kuɗi, da gwajin sasantawa na DLT"
 banner_height: "571"
 banner_width: "1425"
 banner: "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp"
@@ -9,21 +12,20 @@ charset: "UTF-8"
 cname: "sebastienrousseau.com"
 copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "May 19, 2026"
-description: "Global wholesale payments in 2026 are being reshaped by ISO 20022 harmonisation, RTGS renewal, extended settlement windows, non-bank access, API governance, DLT pilots, and cross-border payment fragmentation. The economic issue is interoperability, not messaging alone."
 format-detection: "telephone=no"
 hreflang: "ha"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
 id: "https://sebastienrousseau.com/ha/2026-05-19-global-wholesale-payments-economics-2026"
-image_alt: "Black and White Portrait of Sebastien Rousseau"
+image_alt: "Hoton baƙi-da-fari na Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
-keywords: "wholesale payments 2026, global payments economics, ISO 20022, RTGS, cross-border payments, BIS CPMI, FSB, Swift CBPR+, G20 roadmap, real time gross settlement, Project Agora, Project Mandala, Project Nexus, payment interoperability, correspondent banking, payment fragmentation, wholesale CBDC"
+keywords: "biyan kuɗi na manyan ƙimomi 2026, tattalin arzikin biyan kuɗi a duniya, ISO 20022, RTGS, biyan kuɗi tsakanin ƙasashe, BIS CPMI, FSB, Swift CBPR+, taswirar G20, sasantawa ta gaba-ɗaya cikin lokaci, Project Agorá, Project Mandala, Project Nexus, haɗakar tsare-tsaren biyan kuɗi, bankunan haɗin gwiwa, rarrabuwar biyan kuɗi, CBDC na manyan ƙimomi"
 language: "ha"
 last_reviewed: "2026-05-19"
 layout: "report"
 locale: "ha_NG"
-logo_alt: "Logo for Sebastien Rousseau"
+logo_alt: "Tambarin Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
 logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
@@ -35,23 +37,21 @@ rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
 schema: "FAQPage, Article"
-seo_title: "Global Wholesale Payments 2026: ISO 20022 and RTGS Economics"
+seo_title: "Biyan Kuɗi na Manyan Ƙimomi a Duniya 2026: ISO 20022 da Tattalin Arzikin RTGS"
 short_name: "sebastienrousseau"
-subtitle: "Wholesale payments have become an economic policy lever: ISO 20022, RTGS operating hours, non-bank access, interlinking, DLT settlement pilots, and the G20 roadmap are converging around the cost of global liquidity movement."
-tags: "wholesale payments, ISO 20022, RTGS, cross-border payments, BIS, CPMI, FSB, Swift, CBPR+, G20 roadmap, payment interoperability, correspondent banking, wholesale CBDC, DLT settlement"
+tags: "biyan kuɗi na manyan ƙimomi, ISO 20022, RTGS, biyan kuɗi tsakanin ƙasashe, BIS, CPMI, FSB, Swift, CBPR+, taswirar G20, haɗakar tsare-tsaren biyan kuɗi, bankunan haɗin gwiwa, CBDC na manyan ƙimomi, sasantawa ta DLT"
 theme-color: "0, 83, 191"
-title: "Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability"
 url: "https://sebastienrousseau.com/ha/2026-05-19-global-wholesale-payments-economics-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
-atom_link: "https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/rss.xml"
+atom_link: "https://sebastienrousseau.com/ha/2026-05-19-global-wholesale-payments-economics-2026/rss.xml"
 category: "Finance"
 docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
-item_description: "The 2026 wholesale payments story — ISO 20022 harmonisation, RTGS renewal, operating-hours extension, interlinking, and the economics of cross-border liquidity."
-item_guid: "https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/rss.xml"
-item_link: "https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/rss.xml"
+item_description: "Labarin biyan kuɗi na manyan ƙimomi a 2026 — daidaita ISO 20022, sabunta RTGS, tsawaita lokutan aiki, haɗin tsarurruka, da tattalin arzikin ruwa-ruwan kuɗi tsakanin ƙasashe."
+item_guid: "https://sebastienrousseau.com/ha/2026-05-19-global-wholesale-payments-economics-2026/rss.xml"
+item_link: "https://sebastienrousseau.com/ha/2026-05-19-global-wholesale-payments-economics-2026/rss.xml"
 item_pub_date: "Tue, 19 May 2026 06:06:06 +0000"
-item_title: "Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability"
+item_title: "Biyan Kuɗi na Manyan Ƙimomi a Duniya a 2026: ISO 20022, Sabunta RTGS, da Tattalin Arzikin Haɗakar Tsare-tsare"
 last_build_date: "Tue, 19 May 2026 06:06:06 +0000"
 managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 pub_date: "Tue, 19 May 2026 06:06:06 +0000"
@@ -63,191 +63,155 @@ apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
 apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
-apple-mobile-web-app-title: "Wholesale Payments 2026"
+apple-mobile-web-app-title: "Biyan Kuɗi na Manyan Ƙimomi 2026"
 apple-touch-fullscreen: "yes"
 msapplication-navbutton-color: "0, 83, 191"
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
-twitter_description: "The 2026 wholesale payments story — ISO 20022 harmonisation, RTGS renewal, operating-hours extension, interlinking, and the economics of cross-border liquidity."
+twitter_description: "Labarin biyan kuɗi na manyan ƙimomi a 2026 — daidaita ISO 20022, sabunta RTGS, tsawaita lokutan aiki, haɗin tsarurruka, da tattalin arzikin ruwa-ruwan kuɗi tsakanin ƙasashe."
 twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-twitter_image_alt: "Logo of Sebastien Rousseau"
+twitter_image_alt: "Tambarin Sebastien Rousseau"
 twitter_site: "@wwdseb"
-twitter_title: "Global Wholesale Payments 2026: ISO 20022 and RTGS Economics"
-twitter_url: "https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026"
+twitter_title: "Biyan Kuɗi na Manyan Ƙimomi a Duniya 2026: ISO 20022 da Tattalin Arzikin RTGS"
+twitter_url: "https://sebastienrousseau.com/ha/2026-05-19-global-wholesale-payments-economics-2026"
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
-thanks: "Thanks for reading!"
+thanks: "Na gode da karatun!"
 site_last_updated: "2026-05-19"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-excerpt: "Wholesale payments in 2026 are no longer just bank plumbing. They are part of macroeconomic resilience, trade competitiveness, liquidity efficiency, sanctions compliance, and the strategic contest…"
+excerpt: "Biyan kuɗi na manyan ƙimomi a 2026 ba sauran bututun banki ne kawai. Suna cikin juriyar tattalin arziki na ƙasa, ƙwarewar ciniki, ingancin ruwa-ruwan kuɗi, biyayya da takunkumi, da gasar dabarun…"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# Biyan Kuɗi na Manyan Ƙimomi a Duniya a 2026: ISO 20022, Sabunta RTGS, da Tattalin Arzikin Haɗakar Tsare-tsare
 
-> _Translation pending — read the [English original](/2026-05-19-global-wholesale-payments-economics-2026/) while we localise._
-
-# Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability
-
-
-<!-- lead-start -->
-<aside class="post-lead" aria-label="Article summary">
-<p class="post-lead-tldr"><strong>TL;DR.</strong> Global wholesale payments in 2026 are being reshaped by ISO 20022 harmonisation, RTGS renewal, extended settlement windows, non-bank access, API governance, DLT pilots, and cross-border payment fragmentation. The economic issue is interoperability, not messaging alone.</p>
-<p class="post-lead-heading"><strong>Key takeaways</strong></p>
-<ul class="post-lead-takeaways">
-  <li><strong>Why Wholesale Payments Are an Economic Story.</strong> Cross-border wholesale payments sit underneath trade finance, correspondent banking, securities settlement, corporate treasury, and central-bank operations.</li>
-  <li><strong>The 2026 Wholesale Payments Baseline.</strong> The first phase was getting payment systems onto ISO 20022.</li>
-  <li><strong>The Economic Frictions to Remove.</strong> Poorly structured data causes payment investigations, false sanctions hits, reconciliation delays, and manual enquiries.</li>
-  <li><strong>Architecture Table: Wholesale Payments Modernisation.</strong> The priority is to make ISO 20022 data a product capability rather than a compliance conversion.</li>
-</ul>
-<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline">The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</a>, <a href="https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa">Quantum-Safe Payments: Why the Industry Must Act Now</a>, <a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: Fastest Rust-Based SSG</a>.</p>
-</aside>
-<!-- lead-end -->
-
-Wholesale payments in 2026 are no longer just bank plumbing. They are part of macroeconomic resilience, trade competitiveness, liquidity efficiency, sanctions compliance, and the strategic contest over payment-system fragmentation. The BIS CPMI argues that harmonised [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) implementation can reduce long-standing cross-border payment frictions through structured data, better straight-through processing, and stronger compliance screening ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "The future of financial messaging: navigating the ISO 20022 migration journey")).
+Biyan kuɗi na manyan ƙimomi a 2026 ba sauran bututun banki ne kawai. Suna cikin juriyar tattalin arziki na ƙasa, ƙwarewar ciniki, ingancin ruwa-ruwan kuɗi, biyayya da takunkumi, da gasar dabarun da ta shafi rarrabuwar tsarurrukan biyan kuɗi. BIS CPMI (Kwamitin Tsarurrukan Biyan Kuɗi da Kasuwa) yana cewa aiwatar da [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) wanda aka daidaita zai iya rage matsalolin biyan kuɗi tsakanin ƙasashe da suka daɗe ta hanyar bayanai masu tsari, ingantaccen *straight-through processing*, da kuma binciken biyayya mai ƙarfi ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "Makomar saƙon kuɗi: kewaya hanyar ƙaurar ISO 20022")).
 
 ---
 
-> **Executive Summary / Key Takeaways**
+> **Taƙaitaccen Bayanin Zartarwa / Maɓallin Maganganu**
 >
-> - **ISO 20022 is now the shared language of wholesale payment modernisation.** BIS CPMI says the standard addresses fragmented messaging, data truncation, weak straight-through processing, and compliance friction ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "The future of financial messaging: navigating the ISO 20022 migration journey")).
-> - **The G20 roadmap is still behind target.** The FSB’s March 2026 update says progress is real but the 2027 targets are not yet on track ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "Reforming cross-border payments")).
-> - **RTGS operating hours and access are economic levers.** The FSB notes that more than half of jurisdictions have extended RTGS hours or are planning extensions, while direct access for non-bank providers is rising across payment systems ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "Reforming cross-border payments")).
-> - **The Bank of England’s renewed RTGS service makes resilience and interoperability explicit.** The renewed service is designed to support monetary and financial stability through resilience, access, interoperability, and functionality ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "The renewed RTGS service — key benefits")).
-> - **Fragmentation is the macro risk.** The Atlantic Council warns that payment-system fragmentation can increase cost, slow settlement, reduce transparency, and weaken global financial integration ([Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "Global payment systems are fragmenting")).
-> - **DLT pilots are now infrastructure experiments, not crypto theatre.** BIS-linked work such as Project Agorá and European wholesale settlement pilots are testing whether tokenised commercial bank money and central bank money can improve high-value cross-border settlement ([Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "Global payment systems are fragmenting")).
-> - **The economics are operational.** A cross-border payment fails economically when rich data is lost, compliance checks become manual, liquidity is trapped by time zones, and investigations require human repair.
+> - **ISO 20022 yanzu shi ne harshen haɗin gwiwa na sabunta biyan kuɗi na manyan ƙimomi.** BIS CPMI ya ce ma'aunin ya magance saƙon da aka rarrabe, gajartar bayanai, raunin *straight-through processing*, da matsalar biyayya ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "Makomar saƙon kuɗi: kewaya hanyar ƙaurar ISO 20022")).
+> - **Taswirar G20 har yanzu tana baya bayan manufa.** Sabuntawar FSB ta watan Maris 2026 ta ce ci gaba na hakika ne amma manufofin 2027 ba su a kan turba tukuna ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "Sake fasalce biyan kuɗi tsakanin ƙasashe")).
+> - **Lokutan aikin RTGS da samun dama kayan aiki ne na tattalin arziki.** FSB ya lura cewa fiye da rabin hukunce-hukuncen sun tsawaita lokutan RTGS ko suna shirin tsawaitawa, yayin da samun damar kai tsaye ga masu samar da sabis na waje da bankuna ke ƙaruwa a cikin tsarurrukan biyan kuɗi ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "Sake fasalce biyan kuɗi tsakanin ƙasashe")).
+> - **Sabuwar sabis na RTGS ta Bankin Ingila ta bayyana juriya da haɗakar tsare-tsare a fili.** An tsara sabuwar sabis don tallafa wa kwanciyar hankali ta kuɗi da ta kuɗi ta hanyar juriya, samun dama, haɗakar tsare-tsare, da aiki ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Sabuwar sabis ta RTGS — manyan amfanoni")).
+> - **Rarrabuwa shi ne haɗarin macro.** Atlantic Council yana gargaɗi cewa rarrabuwar tsarurrukan biyan kuɗi na iya ƙara farashi, jinkirta sasantawa, rage gaskiya, da raunata haɗin kan kuɗi a duniya ([Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "Tsarurrukan biyan kuɗi na duniya suna rarrabuwa")).
+> - **Gwajin DLT yanzu gwaje-gwajen kayan more rayuwa ne, ba wasan crypto ba.** Aiki da ke da alaƙa da BIS kamar Project Agorá da kuma gwajin sasantawa na manyan ƙimomi a Turai suna gwada ko kuɗin bankin kasuwanci da kuɗin bankin tsakiya da aka *tokenise* zasu iya inganta sasantawa mai tsada tsakanin ƙasashe ([Atlantic Council](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "Tsarurrukan biyan kuɗi na duniya suna rarrabuwa")).
+> - **Tattalin arzikin aiki ne.** Biyan kuɗi tsakanin ƙasashe yana gazawa a fannin tattalin arziki lokacin da aka rasa bayanai masu wadata, idan binciken biyayya ya zama na hannu, idan aka tsare ruwa-ruwan kuɗi ta yankunan lokaci, da kuma idan bincike yana buƙatar gyarawa daga mutum.
 >
 ---
 
-## Why Wholesale Payments Are an Economic Story
+## Me Yasa Biyan Kuɗi na Manyan Ƙimomi Labari ne na Tattalin Arziki
 
-Cross-border wholesale payments sit underneath trade finance, correspondent banking, securities settlement, corporate treasury, and central-bank operations. When they are slow or opaque, working capital is trapped. When they are fragmented, liquidity buffers rise. When compliance data is weak, sanctions and AML checks become expensive manual work.
+Biyan kuɗi na manyan ƙimomi tsakanin ƙasashe yana zama tushen tallafin ciniki, bankunan haɗin gwiwa (*correspondent banking*), sasantawar tsaro, baitulmali na kamfanoni, da ayyukan bankin tsakiya. Lokacin da suke da jinkiri ko ɓoyayye, ana tsare jarin aiki. Lokacin da suka rarrabu, matashin ruwa-ruwan kuɗi yana ƙaruwa. Lokacin da bayanan biyayya suka yi rauni, binciken takunkumi da AML (yaƙi da satar kuɗi) sun zama aikin hannu mai tsada.
 
-BIS CPMI’s April 2026 brief describes ISO 20022 as a way to standardise data objects, rules, and processes across payments, securities, and treasury, enabling interoperability between financial institutions, market infrastructures, and end users ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "The future of financial messaging: navigating the ISO 20022 migration journey")). This is why the migration is economically material rather than simply technical.
+Bayanin BIS CPMI na Afrilu 2026 ya bayyana ISO 20022 a matsayin hanyar daidaita abubuwan bayanai, ƙa'idoji, da hanyoyi a fadin biyan kuɗi, tsaro, da baitulmali, yana ba da damar haɗakar tsare-tsare tsakanin cibiyoyin kuɗi, kayan aikin kasuwa, da masu amfani na ƙarshe ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "Makomar saƙon kuɗi: kewaya hanyar ƙaurar ISO 20022")). Wannan shi ya sa ƙauran ke da muhimmanci a fannin tattalin arziki, ba kawai a fannin fasaha ba.
 
-## The 2026 Wholesale Payments Baseline
+## Tushen Biyan Kuɗi na Manyan Ƙimomi a 2026
 
-### 1. ISO 20022 Moves from Migration to Harmonisation
+### 1. ISO 20022 Ya Wuce daga Ƙaurawa zuwa Daidaitawa
 
-The first phase was getting payment systems onto ISO 20022. The second phase is making implementation consistent enough that the benefits survive across borders. BIS CPMI identifies structured data, reduced truncation, better screening, and improved reconciliation as core benefits of harmonised implementation ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "The future of financial messaging: navigating the ISO 20022 migration journey")).
+Mataki na farko shi ne kawo tsarurrukan biyan kuɗi zuwa ISO 20022. Mataki na biyu shi ne sanya aiwatarwa ta yi daidai sosai don amfanoni su tsira a fadin iyakoki. BIS CPMI yana gano bayanai masu tsari, raguwar gajartawa, ingantaccen bincike, da ingantacciyar daidaita lissafi a matsayin manyan amfanoni na aiwatarwar da aka daidaita ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "Makomar saƙon kuɗi: kewaya hanyar ƙaurar ISO 20022")).
 
-The difficult part is that ISO 20022 can still fragment if jurisdictions adopt different field practices, validation rules, and optional-data conventions. The strategic work for banks is therefore not just format conversion; it is semantic alignment.
+Mawuyaci shi ne, ISO 20022 har yanzu yana iya rarrabuwa idan hukunce-hukunce sun ɗauki nau'ikan filaye daban-daban, dokokin ingantawa, da yarjeniyoyin bayanai na zaɓi. Aikin dabarun na bankuna ba kawai juyawar tsari ba ne; daidaitawar ma'ana ce.
 
-### 2. RTGS Renewal Extends the Settlement Window
+### 2. Sabunta RTGS Yana Tsawaita Lokacin Sasantawa
 
-The settlement window matters because global wholesale payments cross time zones. Fabio Panetta’s May 2026 BIS speech frames national payment infrastructure as a coordinate for reform, including wider settlement windows and full ISO 20022 adoption ([BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "Interconnect to stabilize: cross-border payments in a fragmenting world")).
+Lokacin sasantawa yana da mahimmanci saboda biyan kuɗi na manyan ƙimomi na duniya yana ratsa yankunan lokaci. Jawabin Fabio Panetta na BIS na watan Mayu 2026 ya bayyana kayan aikin biyan kuɗi na ƙasa a matsayin abin lura don gyarawa, gami da tsawaita lokutan sasantawa da cikakken karɓar ISO 20022 ([BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "Haɗawa don kwanciyar hankali: biyan kuɗi tsakanin ƙasashe a cikin duniyar da ke rarrabuwa")).
 
-The Bank of England’s renewed RTGS service points in the same direction. It emphasises resilience, broader access, interoperability, and a synchronised settlement interface that can interoperate with other ledgers and reduce settlement risk and liquidity costs ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "The renewed RTGS service — key benefits")).
+Sabuwar sabis ta RTGS ta Bankin Ingila tana nuna alkibla iri ɗaya. Yana jaddada juriya, samun dama mai fadi, haɗakar tsare-tsare, da kuma musayar sasantawa wadda aka daidaita wadda za ta iya haɗawa da wasu *ledgers* da rage haɗarin sasantawa da farashin ruwa-ruwan kuɗi ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Sabuwar sabis ta RTGS — manyan amfanoni")).
 
-### 3. Non-Bank Access Changes Competitive Structure
+### 3. Samun Damar Wadanda Ba Bankuna Ba Yana Canza Tsarin Gasa
 
-Payment systems are widening direct access to non-bank payment service providers. The BIS May 2026 speech reports that direct access for non-bank PSPs reached 45% in fast payment systems and 39% in RTGS systems in 2025 data ([BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "Interconnect to stabilize: cross-border payments in a fragmenting world")).
+Tsarurrukan biyan kuɗi suna fadada damar kai tsaye ga masu samar da sabis na biyan kuɗi (PSP) waɗanda ba bankuna ba. Jawabin BIS na Mayu 2026 ya bayar da rahoton cewa damar kai tsaye ga PSP da ba bankuna ba ta kai 45% a tsarurrukan biyan kuɗi cikin sauri da 39% a tsarurrukan RTGS bisa ga bayanan 2025 ([BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "Haɗawa don kwanciyar hankali: biyan kuɗi tsakanin ƙasashe a cikin duniyar da ke rarrabuwa")).
 
-This matters because non-bank access changes the economics of correspondent banking. It can reduce dependency on long correspondent chains, but it also requires consistent regulation, liquidity controls, settlement-risk governance, and operational-resilience standards.
+Wannan yana da mahimmanci saboda samun damar wadanda ba bankuna ba yana canza tattalin arzikin bankunan haɗin gwiwa. Yana iya rage dogaro kan dogon sarƙoƙin haɗin gwiwa, amma kuma yana buƙatar ƙa'idoji masu daidaito, sarrafawar ruwa-ruwan kuɗi, mulkin haɗarin sasantawa, da ma'auni na juriyar aiki.
 
-### 4. Interlinking Becomes the Alternative to Parallel Rails
+### 4. Haɗin Tsarurruka Ya Zama Madadin Layi Daidai
 
-The FSB notes that Asia-Pacific initiatives have driven faster-payment interlinking and that interlinking arrangements cover around 17 bilateral corridors, with more planned ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "Reforming cross-border payments")). For wholesale payments, the equivalent question is how RTGS systems, central-bank money, tokenised ledgers, and correspondent-banking rails interoperate without creating new silos.
+FSB ya lura cewa shirye-shiryen Asiya-Pasifik sun haɓaka haɗin tsarurrukan biyan kuɗi cikin sauri kuma cewa shirye-shiryen haɗin tsarurruka sun mamaye kusan hanyoyi 17 na biyayya, tare da ƙarin da aka tsara ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "Sake fasalce biyan kuɗi tsakanin ƙasashe")). Don biyan kuɗi na manyan ƙimomi, tambayar makamanci ita ce yadda tsarurrukan RTGS, kuɗin bankin tsakiya, *ledgers* da aka *tokenise*, da layin bankunan haɗin gwiwa za su haɗu ba tare da samar da sabbin silos ba.
 
-Interlinking is attractive because it preserves domestic payment-system sovereignty while allowing cross-border reach. The risk is that every corridor becomes a bespoke engineering and legal project.
+Haɗin tsarurruka yana jan hankali saboda yana adana ikon mallakar tsarurrukan biyan kuɗi na cikin gida yayin da yake ba da damar zuwa wajen ƙasa. Haɗarin shi ne kowace hanya ta zama aikin injiniya da na shari'a na musamman.
 
-## The Economic Frictions to Remove
+## Matsalolin Tattalin Arziki da Za a Cire
 
-### Data Repair
+### Gyaran Bayanai
 
-Poorly structured data causes payment investigations, false sanctions hits, reconciliation delays, and manual enquiries. Panetta’s May 2026 speech says 1–3% of payments generate inquiries and that harmonised ISO 20022 can cut inquiry resolution times by up to 80% ([BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "Interconnect to stabilize: cross-border payments in a fragmenting world")).
+Bayanan da ba a tsara sosai suna haifar da binciken biyan kuɗi, batun takunkumi na ƙarya, jinkirin daidaita lissafi, da tambayoyin hannu. Jawabin Panetta na Mayu 2026 ya ce kashi 1-3% na biyan kuɗi yana haifar da tambayoyi kuma ISO 20022 da aka daidaita zai iya rage lokacin warware tambaya har zuwa 80% ([BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "Haɗawa don kwanciyar hankali: biyan kuɗi tsakanin ƙasashe a cikin duniyar da ke rarrabuwa")).
 
-That is not a back-office optimisation. It is a liquidity and customer-experience improvement at systemic scale.
+Wannan ba inganta back-office ba ne. Wannan inganta ruwa-ruwan kuɗi da gogewar abokin ciniki ne a kan ma'aunin tsari.
 
-### Liquidity Fragmentation
+### Rarrabuwar Ruwa-ruwan Kuɗi
 
-Cross-border payments fragment liquidity when settlement windows do not overlap, when rails require prefunding in multiple jurisdictions, or when settlement assets differ. RTGS operating-hour extension reduces this problem by increasing the overlap in which central-bank money can settle transactions.
+Biyan kuɗi tsakanin ƙasashe yana rarrabe ruwa-ruwan kuɗi lokacin da lokutan sasantawa ba sa cuɗanya, lokacin da layuka ke buƙatar tara kuɗi tukuna a hukunce-hukunce da yawa, ko lokacin da kayan sasantawa suka bambanta. Tsawaita lokutan aikin RTGS yana rage wannan matsalar ta hanyar ƙara cuɗanyar lokacin da kuɗin bankin tsakiya zai iya sasanta ma'amaloli.
 
-The strategic endpoint is not always-on RTGS everywhere tomorrow. The realistic endpoint is targeted extension of critical windows, better liquidity analytics, and settlement synchronisation where the economic benefit is highest.
+Manufar dabarun ba RTGS na koyaushe a ko'ina gobe ba ne. Manufar gaskiya ita ce tsawaita lokutan masu mahimmanci da aka yi niyya, ingantacciyar nazarin ruwa-ruwan kuɗi, da daidaita sasantawa inda amfanin tattalin arziki ya fi girma.
 
-### Regulatory Duplication
+### Maimaita Ƙa'idoji
 
-Cross-border payments pass through different AML, sanctions, privacy, and data-sharing regimes. The FSB highlights work on data frameworks, bank and non-bank regulation, FATF standards, and cross-border payments fraud as part of the reform agenda ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "Reforming cross-border payments")).
+Biyan kuɗi tsakanin ƙasashe yana ratsa tsare-tsaren AML daban-daban, takunkumi, sirri, da raba bayanai. FSB yana mai da hankali kan aiki kan tsare-tsaren bayanai, ƙa'idar bankuna da masu ba bankuna ba, ma'aunin FATF, da yaudara a biyan kuɗi tsakanin ƙasashe a matsayin wani ɓangare na ajandar gyaran ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "Sake fasalce biyan kuɗi tsakanin ƙasashe")).
 
-Technology cannot remove these obligations. It can make compliance checks earlier, richer, and less manual.
+Fasaha ba za ta iya cire waɗannan wajiba ba. Tana iya sanya bincike na biyayya ya yi da wuri, ya yi wadata, kuma ya ragu na hannu.
 
-## Architecture Table: Wholesale Payments Modernisation
+## Tebur na Gine-gine: Sabunta Biyan Kuɗi na Manyan Ƙimomi
 
-| Layer | 2026 Direction | Economic Effect | Risk if Poorly Implemented |
+| Lakabin | Alkiblar 2026 | Sakamakon Tattalin Arziki | Haɗarin Idan An Aiwatar da Rashin Kyau |
 |---|---|---|---|
-| **Messaging** | ISO 20022 harmonisation | Better STP, screening, reconciliation | Fragmented field usage and data truncation |
-| **Settlement** | Renewed RTGS and wider hours | Lower liquidity buffers and faster finality | Operational strain and uneven time-zone coverage |
-| **Access** | More non-bank PSP access | Competition and shorter payment chains | Uneven supervision and settlement-risk leakage |
-| **Interlinking** | Bilateral and multilateral links | Reach without rebuilding domestic rails | Corridor-specific fragmentation |
-| **DLT / tokenisation** | Wholesale settlement pilots | Programmability and atomic settlement | Legal finality and interoperability gaps |
-| **Governance** | FSB, CPMI, FATF coordination | Consistent global operating model | Compliance duplication and geopolitical divergence |
+| **Saƙon kuɗi** | Daidaita ISO 20022 | Ingantaccen STP, bincike, daidaita lissafi | Amfani da filaye da aka rarrabu da gajartar bayanai |
+| **Sasantawa** | RTGS da aka sabunta da lokuta masu fadi | Ƙananan matashin ruwa-ruwan kuɗi da ƙaƙƙarfa cikin sauri | Damuwar aiki da rashin daidaiton ɗauke da yankin lokaci |
+| **Samun dama** | Ƙarin samun damar PSP da ba bankuna ba | Gasa da gajerun sarƙoƙin biyan kuɗi | Kulawa mara daidaito da fitar haɗarin sasantawa |
+| **Haɗin tsarurruka** | Hadi na biyayya da na ɓangarori da yawa | Zuwa wajen ba tare da sake gina layukan cikin gida ba | Rarrabuwa ta musamman ga hanya |
+| **DLT / tokenisation** | Gwajin sasantawa na manyan ƙimomi | Shirye-shirye da sasantawa na atomic | Rashin ƙaƙƙarfan shari'a da matsalolin haɗakar tsare-tsare |
+| **Mulki** | Hadin gwiwar FSB, CPMI, FATF | Tsarin aiki na duniya mai daidaito | Maimaita biyayya da bambancin geopolitical |
 
-## What This Means by Institution Type
+## Abin Da Wannan Ke Nufi a kowane Nau'in Cibiya
 
-### Global Transaction Banks
+### Bankunan Ma'amalar Duniya
 
-The priority is to make ISO 20022 data a product capability rather than a compliance conversion. The strongest transaction banks will use structured data to improve reconciliation, cash forecasting, sanctions pre-validation, investigations, and client treasury dashboards.
+Manufar farko ita ce a mai da bayanan ISO 20022 zama damar samar da kayayyaki maimakon juyawar biyayya. Bankunan ma'amala mafi ƙarfi za su yi amfani da bayanai masu tsari don inganta daidaita lissafi, hasashen kuɗi, gwaji-na-farko na takunkumi, bincike, da dashboards na baitulmali na abokin ciniki.
 
-### Central Banks and Market Infrastructures
+### Bankunan Tsakiya da Kayan Aikin Kasuwa
 
-The priority is to extend operating windows where the liquidity benefit is clear, widen access safely, and align with global data requirements. RTGS renewal is now a strategic national infrastructure programme, not a back-office replacement.
+Manufar ita ce tsawaita lokutan aiki inda amfanin ruwa-ruwan kuɗi ke a fili, fadada samun dama lafiya, da daidaitawa da bukatun bayanai na duniya. Sabunta RTGS yanzu shiri ne na dabarun kayan aikin ƙasa, ba musayar back-office ba.
 
-### Corporates and Treasury Teams
+### Kamfanoni da Ƙungiyoyin Baitulmali
 
-The priority is transparency. Treasurers should ask banks for structured payment-status reporting, better rejection analytics, richer remittance data, and APIs that turn ISO 20022 into working-capital intelligence.
+Manufar ita ce gaskiya. Masu kula da baitulmali ya kamata su nemi bankuna a kan rahoton matsayin biyan kuɗi mai tsari, ingantaccen nazarin ƙin yarda, bayanan biyan kuɗi masu wadata, da APIs da ke mai da ISO 20022 zama hankali na jarin aiki.
 
-### Fintechs and PSPs
+### Fintechs da PSP
 
-The priority is access plus compliance depth. Direct or indirect access to settlement systems is valuable only if the PSP can meet bank-grade resilience, AML, sanctions, liquidity, and incident-reporting expectations.
+Manufar ita ce samun dama tare da zurfin biyayya. Samun damar kai tsaye ko a kaikaice ga tsarurrukan sasantawa yana da darajar idan PSP zai iya cika abubuwan da ake tsammani na matakin banki na juriya, AML, takunkumi, ruwa-ruwan kuɗi, da rahoton lamari.
 
-## Conclusion
+## Kammalawa
 
-The global wholesale payments story in 2026 is an interoperability story. ISO 20022 provides the language, RTGS renewal provides the settlement foundation, interlinking provides reach, and DLT pilots test whether programmable settlement can improve the model. The economic prize is lower trapped liquidity, fewer manual repairs, faster settlement, better compliance, and more resilient global trade.
+Labarin biyan kuɗi na manyan ƙimomi a duniya a 2026 labari ne na haɗakar tsare-tsare. ISO 20022 yana ba da harshen, sabunta RTGS yana ba da tushen sasantawa, haɗin tsarurruka yana ba da zuwa wajen, kuma gwajin DLT yana gwadawa ko sasantawa mai shirye-shirye zai iya inganta tsarin. Lambar tattalin arziki ita ce ƙarancin ruwa-ruwan kuɗi da aka tsare, ƙarancin gyare-gyaren hannu, sasantawa mai sauri, biyayya mafi kyau, da kasuwanci na duniya mai juriya.
 
-The risk is that every jurisdiction modernises alone. If that happens, the world gets newer payment systems that remain fragmented. If harmonisation holds, wholesale payments become a genuine engine of global economic efficiency.
+Haɗarin shi ne kowace hukuma ta sabunta ita kaɗai. Idan haka ya faru, duniya tana samun tsarurrukan biyan kuɗi mafi sabuwa waɗanda suka kasance a rarrabu. Idan daidaitawa ta riƙe, biyan kuɗi na manyan ƙimomi zai zama injin gaskiya na ingancin tattalin arzikin duniya.
 
-## Frequently Asked Questions
+## Tambayoyin da Aka Saba Yi
 
-**Why does ISO 20022 matter for wholesale payments?**
+**Me Yasa ISO 20022 Yake da Mahimmanci ga Biyan Kuɗi na Manyan Ƙimomi?**
 
-It matters because structured data improves straight-through processing, compliance screening, reconciliation, and interoperability across payment systems and market infrastructures ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "The future of financial messaging: navigating the ISO 20022 migration journey")).
+Yana da mahimmanci saboda bayanai masu tsari suna inganta *straight-through processing*, binciken biyayya, daidaita lissafi, da haɗakar tsare-tsare a fadin tsarurrukan biyan kuɗi da kayan aikin kasuwa ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "Makomar saƙon kuɗi: kewaya hanyar ƙaurar ISO 20022")).
 
-**Is the G20 cross-border payments roadmap on track?**
+**Taswirar G20 ta biyan kuɗi tsakanin ƙasashe tana kan turba?**
 
-The FSB says progress has been made, but the 2027 targets are not yet on track and require further public-sector and private-sector action ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "Reforming cross-border payments")).
+FSB yana cewa an samu ci gaba, amma manufofin 2027 ba su a kan turba tukuna kuma suna buƙatar ƙarin aiki na ɓangaren gwamnati da na masu zaman kansu ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "Sake fasalce biyan kuɗi tsakanin ƙasashe")).
 
-**What is the role of RTGS renewal?**
+**Menene Aikin Sabunta RTGS?**
 
-RTGS renewal improves resilience, access, interoperability, and settlement functionality. The Bank of England also highlights synchronised settlement interfaces and ISO 20022 as mechanisms for reducing settlement risk and liquidity costs ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "The renewed RTGS service — key benefits")).
+Sabunta RTGS yana inganta juriya, samun dama, haɗakar tsare-tsare, da aikin sasantawa. Bankin Ingila kuma yana jaddada musayar sasantawa wadanda aka daidaita da ISO 20022 a matsayin hanyoyin rage haɗarin sasantawa da farashin ruwa-ruwan kuɗi ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Sabuwar sabis ta RTGS — manyan amfanoni")).
 
-**Are stablecoins replacing wholesale payments?**
+**Stablecoins Suna Maye Biyan Kuɗi na Manyan Ƙimomi?**
 
-No. Stablecoins may influence cross-border payment design, but wholesale payments require settlement finality, central-bank money anchors, prudential controls, and legal certainty. The more credible institutional direction is interoperability between commercial bank money, central bank money, and tokenised settlement systems.
+A'a. *Stablecoins* na iya yin tasiri kan tsara biyan kuɗi tsakanin ƙasashe, amma biyan kuɗi na manyan ƙimomi yana buƙatar ƙaƙƙarfan sasantawa, anka na kuɗin bankin tsakiya, sarrafawar prudential, da tabbacin shari'a. Alkiblar cibiyoyi mafi yardar ita ce haɗakar tsare-tsare tsakanin kuɗin bankin kasuwanci, kuɗin bankin tsakiya, da tsarurrukan sasantawa da aka *tokenise*.
 
-## References
+## Manazarta
 
-- BIS CPMI, (2026). [The future of financial messaging: navigating the ISO 20022 migration journey ⧉](https://www.bis.org/cpmi/publ/brief11.htm "BIS CPMI Brief No 11").
-- FSB, (2026). [Reforming Cross-border payments ⧉](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "FSB Payments Summit keynote").
-- BIS, (2026). [Interconnect to stabilize: cross-border payments in a fragmenting world ⧉](https://www.bis.org/cpmi/speeches/sp260505.pdf "Fabio Panetta speech").
-- Bank of England, (2026). [The renewed RTGS service — key benefits ⧉](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Renewed RTGS service").
-- Atlantic Council, (2026). [Global payment systems are fragmenting ⧉](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "Payment-system fragmentation").
-<!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-19">2026-05-19</time>.</p>
-<!-- enrich-end -->
-
-<!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-19">2026-05-19</time>.</p>
-<aside class="related-posts" aria-labelledby="related-heading">
-<h2 id="related-heading" class="related-heading">Related reading</h2>
-<div class="related-grid">
-<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline" class="related-media" aria-label="The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View" tabindex="-1"><img alt="ISO 20022 pacs.008 structured address diagram — cross-border payment message fields with TwnNm and Ctry highlighted" src="https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-12-iso-20022-pacs008-structured-address-deadline">The November 2026 pacs.008 Structured-Address Deadline: A Six-Month View</a></h3><p><time datetime="2026-05-12">2026-05-12</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa" class="related-media" aria-label="Quantum-Safe Payments: Why the Industry Must Act Now" tabindex="-1"><img alt="Quantum computing circuit board in blue light" src="https://cloudcdn.pro/stocks/images/digital-nodes.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2025-09-01-quantum-safe-payments-epaa">Quantum-Safe Payments: Why the Industry Must Act Now</a></h3><p><time datetime="2025-09-01">2025-09-01</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" class="related-media" aria-label="Static Site Generator: Fastest Rust-Based SSG" tabindex="-1"><img alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right" src="https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: Fastest Rust-Based SSG</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
-</div>
-</aside>
-<!-- enrich-end -->
+- BIS CPMI, (2026). [Makomar saƙon kuɗi: kewaya hanyar ƙaurar ISO 20022 ⧉](https://www.bis.org/cpmi/publ/brief11.htm "BIS CPMI Brief No 11").
+- FSB, (2026). [Sake fasalce biyan kuɗi tsakanin ƙasashe — jawabin maɓalli a FSB Payments Summit ⧉](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "FSB").
+- BIS, (2026). [Haɗawa don kwanciyar hankali: biyan kuɗi tsakanin ƙasashe a cikin duniyar da ke rarrabuwa ⧉](https://www.bis.org/cpmi/speeches/sp260505.pdf "Jawabin Fabio Panetta").
+- Bank of England, (2026). [Sabuwar sabis ta RTGS — manyan amfanoni ⧉](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "Bank of England").
+- Atlantic Council, (2026). [Tsarurrukan biyan kuɗi na duniya suna rarrabuwa — ga abin da G20 zai iya yi ⧉](https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/ "Atlantic Council").

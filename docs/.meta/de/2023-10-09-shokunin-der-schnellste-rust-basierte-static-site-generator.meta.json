@@ -1,11 +1,11 @@
 {
-  "language": "de",
-  "locale": "de_DE",
-  "date": "October 9, 2023",
-  "title": "Static Site Generator: der schnellste Rust-basierte Static Site Generator",
-  "keywords": "Static Site Generator, Static Site Generator, SSG, Rust, Performance, SEO, Barrierefreiheit, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS",
-  "subtitle": "Ein blitzschneller, barrierefreier und SEO-optimierter SSG, geschrieben in Rust",
-  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
   "banner_alt": "Ausgeschalteter Laptop auf einem weißen Tisch, links ein Wasserglas, rechts ein Stift, ein Notizblock und eine Pflanze",
-  "description": "Erstellen Sie wirkungsvolle statische Websites mit grenzenloser Skalierbarkeit und vollständiger Kontrolle, dank Static Site Generator – einem ultraschnellen, in Rust geschriebenen SSG."
+  "description": "Erstellen Sie wirkungsvolle statische Websites mit grenzenloser Skalierbarkeit und vollständiger Kontrolle, dank Static Site Generator – einem ultraschnellen, in Rust geschriebenen SSG.",
+  "language": "de",
+  "subtitle": "Ein blitzschneller, barrierefreier und SEO-optimierter SSG, geschrieben in Rust",
+  "date": "October 9, 2023",
+  "keywords": "Static Site Generator, Static Site Generator, SSG, Rust, Performance, SEO, Barrierefreiheit, WCAG, ADA, PWA, Markdown, GFM, Atom, RSS",
+  "title": "Static Site Generator: der schnellste Rust-basierte Static Site Generator",
+  "locale": "de_DE",
+  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
 }

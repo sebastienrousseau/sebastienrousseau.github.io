@@ -6,33 +6,33 @@
     <description>한국어 기사: 응용 AI, ISO 20022 결제, 포스트 양자 암호, 그리고 도매 결제 인프라의 구조적 변혁.</description>
     <atom:link href="https://sebastienrousseau.com/ko/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>Tue, 19 May 2026 15:03:57 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 15:34:40 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
     <item>
-      <title>Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</title>
+      <title>2026년 글로벌 거액결제: ISO 20022, RTGS 재구축, 그리고 상호운용성의 경제학</title>
       <link>https://sebastienrousseau.com/ko/2026-05-19-global-wholesale-payments-economics-2026/</link>
-      <description>Global wholesale payments in 2026 are being reshaped by ISO 20022 harmonisation, RTGS renewal, extended settlement windows, non-bank access, API governance, DLT pilots, and cross-border payment fragmentation. The economic issue is interoperability, not messaging alone.</description>
+      <description>2026년 글로벌 거액결제는 ISO 20022 표준화, RTGS 재구축, 결제 창구 확대, 비은행 접근, API 거버넌스, DLT 시범사업, 국경 간 결제 분절화에 의해 재편되고 있다. 경제적 핵심 과제는 단순한 메시지 표준이 아니라 상호운용성이다.</description>
       <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-19-global-wholesale-payments-economics-2026/</guid>
       <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
       <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
-      <category>wholesale payments 2026</category>
-      <category>global payments economics</category>
+      <category>거액결제 2026</category>
+      <category>글로벌 결제 경제학</category>
       <category>ISO 20022</category>
       <category>RTGS</category>
-      <category>cross-border payments</category>
+      <category>국경 간 결제</category>
       <category>BIS CPMI</category>
       <category>FSB</category>
       <category>Swift CBPR+</category>
-      <category>G20 roadmap</category>
-      <category>real time gross settlement</category>
-      <category>Project Agora</category>
+      <category>G20 로드맵</category>
+      <category>거액결제시스템</category>
+      <category>Project Agorá</category>
       <category>Project Mandala</category>
       <category>Project Nexus</category>
-      <category>payment interoperability</category>
-      <category>correspondent banking</category>
-      <category>payment fragmentation</category>
-      <category>wholesale CBDC</category>
+      <category>결제 상호운용성</category>
+      <category>코레스 은행</category>
+      <category>결제 분절화</category>
+      <category>거액 CBDC</category>
     </item>
     <item>
       <title>2026년 양자 암호 리셋: PQC 표준, QKD 보증, 그리고 은행이 미룰 수 없는 마이그레이션 작업</title>

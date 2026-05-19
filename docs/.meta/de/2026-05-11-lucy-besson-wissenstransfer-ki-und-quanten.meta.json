@@ -1,11 +1,11 @@
 {
-  "language": "de",
-  "locale": "de_DE",
-  "banner_alt": "Abstrakte Visualisierung neuronaler Netze und quantenbasierter Atomanordnungen. Ein schwarzer Computer formt sich aus sich neu anordnenden Teilchen.",
-  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp",
   "keywords": "Lucy, Luc Besson, Wissenstransfer, KI, LLM, Qubits aus neutralen Atomen, Hirnemulation, Neuralink, Eon Systems, Carboncopies, Fromm, Substratunabhängigkeit, Philosophie der KI",
+  "language": "de",
   "date": "May 11, 2026",
-  "subtitle": "Zwölf Jahre nach seiner Veröffentlichung liest sich Luc Bessons Lucy weniger als Pseudowissenschaft denn als Gedankenexperiment über die Wanderung menschlichen Wissens auf nichtbiologische Träger.",
+  "description": "Zwölf Jahre nach seiner Veröffentlichung liest sich Luc Bessons Lucy weniger als Pseudowissenschaft denn als Gedankenexperiment darüber, was geschieht, wenn menschliches Wissen von biologischen auf nichtbiologische Träger wandert. Im Zeitalter großer Sprachmodelle, Qubits aus neutralen Atomen und vollständiger Hirnemulation altert die zentrale Metapher des Films bemerkenswert gut.",
   "title": "Lucys USB-Stick, neu betrachtet: Was Besson über die Wanderung des Wissens in die Maschinen sah",
-  "description": "Zwölf Jahre nach seiner Veröffentlichung liest sich Luc Bessons Lucy weniger als Pseudowissenschaft denn als Gedankenexperiment darüber, was geschieht, wenn menschliches Wissen von biologischen auf nichtbiologische Träger wandert. Im Zeitalter großer Sprachmodelle, Qubits aus neutralen Atomen und vollständiger Hirnemulation altert die zentrale Metapher des Films bemerkenswert gut."
+  "banner_alt": "Abstrakte Visualisierung neuronaler Netze und quantenbasierter Atomanordnungen. Ein schwarzer Computer formt sich aus sich neu anordnenden Teilchen.",
+  "subtitle": "Zwölf Jahre nach seiner Veröffentlichung liest sich Luc Bessons Lucy weniger als Pseudowissenschaft denn als Gedankenexperiment über die Wanderung menschlichen Wissens auf nichtbiologische Träger.",
+  "locale": "de_DE",
+  "banner": "https://cloudcdn.pro/stocks/images/lucy-knowledge-transfer-banner.webp"
 }
