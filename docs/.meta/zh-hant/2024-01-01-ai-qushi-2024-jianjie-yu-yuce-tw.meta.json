@@ -1,11 +1,11 @@
 {
-  "date": "January 1, 2024",
-  "banner_alt": "倫敦無人機視角",
-  "subtitle": "2024 年的 AI 趨勢：金融領域的生成式 AI、多模態模型、裝置端 LLM 及將重塑銀行業和產品工程的變化",
-  "language": "zh-Hant",
-  "locale": "zh_TW",
   "title": "AI 趨勢 2024：洞察與對未來的預測",
-  "description": "AI 在 2024 年從概念走向現實，影響商業、社會、教育、金融、氣候、空間技術與零售各個層面。",
+  "date": "January 1, 2024",
   "keywords": "AI 趨勢 2024, 生成式 AI, 多模態模型, 客戶服務, 網路安全, 教育, 氣候變化, 金融, 零售, 倫理",
-  "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp"
+  "locale": "zh_TW",
+  "description": "AI 在 2024 年從概念走向現實，影響商業、社會、教育、金融、氣候、空間技術與零售各個層面。",
+  "banner_alt": "倫敦無人機視角",
+  "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp",
+  "language": "zh-Hant",
+  "subtitle": "2024 年的 AI 趨勢：金融領域的生成式 AI、多模態模型、裝置端 LLM 及將重塑銀行業和產品工程的變化"
 }

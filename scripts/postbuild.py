@@ -293,19 +293,54 @@ def _has_image_preload(html: str) -> bool:
     return False
 
 
+def _align_existing_preload(html: str, target_src: str) -> tuple[str, int]:
+    """Rewrite any existing ``<link rel=preload as=image>`` href to
+    ``target_src``. Avoids the 'preloaded but not used' warning that
+    fires when the layout-emitted preload uses a different transform
+    width than the actual LCP <img> ends up with."""
+    n = 0
+
+    def patch(match: re.Match[str]) -> str:
+        nonlocal n
+        attrs = match.group(1)
+        href = _link_attr_href(attrs)
+        if href == target_src:
+            return match.group(0)  # already aligned
+        new_attrs, n_sub = _LINK_HREF_ANY_RE.subn(
+            f'href="{target_src}"', attrs, count=1,
+        )
+        if n_sub == 0:
+            return match.group(0)
+        n += 1
+        return f"<link{new_attrs}>"
+
+    out = _LINK_PRELOAD_IMAGE_RE.sub(patch, html)
+    return out, n
+
+
 def inject_lcp_preload(html: str) -> tuple[str, int]:
-    """If the page has at least one non-lazy <img> and no existing
-    ``rel="preload" as="image"`` link, inject one for the first such
-    image. Returns ``(new_html, 1)`` on inject, ``(html, 0)`` otherwise."""
-    if _has_image_preload(html):
-        return html, 0
+    """Ensure the page has a ``<link rel="preload" as="image">``
+    matching the URL the browser actually fetches for the LCP hero —
+    i.e. the first non-lazy ``<img src>``.
+
+    Three cases:
+      1. No non-lazy <img> on the page → nothing to preload, no-op.
+      2. Preload already exists with the same href → no-op.
+      3. Preload exists with a different href (e.g. layout-emitted
+         w=1200 vs actual <img> w=200 after wrap_cdn_images_in_transform
+         picked a different width for each) → rewrite the existing
+         preload's href so it matches the fetched URL exactly.
+      4. No preload yet → inject one before ``</head>``.
+
+    Returns ``(new_html, 1)`` on inject/rewrite, ``(html, 0)`` otherwise."""
     img_m = _FIRST_IMG_RE.search(html)
     if not img_m:
         return html, 0
     src = img_m.group(1)
-    # Skip if the URL is scheme-relative junk or a data: URI (no win).
-    if src.startswith("data:") or not src:
+    if not src or src.startswith("data:"):
         return html, 0
+    if _has_image_preload(html):
+        return _align_existing_preload(html, src)
     preload = (
         f'<link rel="preload" as="image" href="{src}" fetchpriority="high">'
     )
