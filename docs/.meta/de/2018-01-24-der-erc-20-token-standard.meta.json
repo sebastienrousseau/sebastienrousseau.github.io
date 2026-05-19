@@ -1,11 +1,11 @@
 {
   "title": "Der ERC-20-Token-Standard",
-  "banner_alt": "Ausgeschalteter Laptop auf einem braunen Holztisch",
-  "locale": "de_DE",
-  "keywords": "ERC-20, Ethereum, Token, Smart Contract, DeFi, EIP, Blockchain, Interoperabilität, DApps, Standard",
-  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
-  "date": "January 24, 2018",
-  "language": "de",
   "subtitle": "Die einheitliche Schnittstelle, die das Ethereum-Ökosystem zum Blühen brachte",
-  "description": "ERC-20: der am weitesten verbreitete Token-Typ auf der Ethereum-Blockchain, häufig auch als intelligenter digitaler Vertrag (Smart Contract) beschrieben."
+  "description": "ERC-20: der am weitesten verbreitete Token-Typ auf der Ethereum-Blockchain, häufig auch als intelligenter digitaler Vertrag (Smart Contract) beschrieben.",
+  "language": "de",
+  "banner": "https://cloudcdn.pro/stocks/images/m-ZzOa5G8hSPI.webp",
+  "keywords": "ERC-20, Ethereum, Token, Smart Contract, DeFi, EIP, Blockchain, Interoperabilität, DApps, Standard",
+  "locale": "de_DE",
+  "banner_alt": "Ausgeschalteter Laptop auf einem braunen Holztisch",
+  "date": "January 24, 2018"
 }

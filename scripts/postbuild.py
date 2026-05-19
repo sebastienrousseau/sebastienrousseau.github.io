@@ -157,23 +157,44 @@ _CSS_MINIFY_COUNT, _CSS_MINIFY_BEFORE, _CSS_MINIFY_AFTER = _bulk_minify_css()
 # Both need to be covered or the browser will refuse to execute scripts
 # whose SRI digest doesn't match.
 
-# GitHub Pages (via Fastly) UNCONDITIONALLY appends a single ``\n`` to
-# every text-class response body — including ``.css``, ``.js``, ``.json``
-# and ``.html``. This is invisible to most consumers but it shifts the
-# on-the-wire SHA-256 by exactly one byte and breaks any SRI hash we
-# computed against the on-disk bytes. We don't control Pages' behaviour,
-# so we bake the trailing newline into the hash computation — the
-# integrity attribute then matches what the browser actually fetches.
+# GitHub Pages / Fastly munges text-class response bodies in flight, but
+# the behaviour isn't consistent across edge POPs: some prepend or
+# append a trailing ``\n``, others serve the file as-is. We've observed
+# both cases on the same deploy depending on which Cloudflare data
+# centre routes the request.
+#
+# SRI requires the integrity attribute to match the bytes the browser
+# actually fetches. To handle the variance we publish *both* candidate
+# digests in the attribute — the browser accepts any one that matches
+# (the SRI spec explicitly supports a whitespace-separated list of
+# digests for exactly this kind of edge-byte-flip scenario).
+#
+# Candidates per asset:
+#   - sha256(disk_bytes)              — POP serves file as-is
+#   - sha256(disk_bytes + b"\n")      — POP appends one trailing newline
+#
+# These are the only two states we've observed in the wild; if a third
+# variant turns up we add it here.
 _PAGES_TRAILING_NEWLINE = b"\n"
+
+
+def _candidate_digests(body: bytes) -> str:
+    """Return one or two space-separated ``sha256-<b64>`` tokens
+    covering every observed Pages edge-byte mutation. Whitespace
+    separation matches the SRI spec for multi-digest lists."""
+    primary = b64_sha256(body)
+    appended = b64_sha256(body + _PAGES_TRAILING_NEWLINE)
+    if appended == primary:
+        return f"sha256-{primary}"
+    return f"sha256-{primary} sha256-{appended}"
+
 
 _csp_dir = PUBLIC / "_csp"
 asset_hashes: dict[str, str] = {}
 if _csp_dir.is_dir():
     for asset in _csp_dir.iterdir():
         if asset.is_file() and asset.suffix in (".js", ".css"):
-            asset_hashes[asset.name] = b64_sha256(
-                asset.read_bytes() + _PAGES_TRAILING_NEWLINE,
-            )
+            asset_hashes[asset.name] = _candidate_digests(asset.read_bytes())
 # Top-level fingerprinted JS — main.<hash>.js, sw.<hash>.js, theme-init.<hash>.js.
 # Keyed by both the bare path (matches HTML reference) and the unprefixed name
 # so fix_sri can look it up against either form.
@@ -181,9 +202,7 @@ _top_fp_re = re.compile(r"^[a-z\-_]+\.[a-f0-9]+\.js$", re.IGNORECASE)
 if PUBLIC.is_dir():
     for asset in PUBLIC.iterdir():
         if asset.is_file() and _top_fp_re.match(asset.name):
-            asset_hashes[asset.name] = b64_sha256(
-                asset.read_bytes() + _PAGES_TRAILING_NEWLINE,
-            )
+            asset_hashes[asset.name] = _candidate_digests(asset.read_bytes())
 
 # Matches /_csp/<name> OR /<name> for top-level fingerprinted JS aliases.
 # Filenames start with a hex digit or letter (SSG emits 16-char hex hashes for
@@ -226,9 +245,13 @@ def fix_sri(html: str) -> str:
             continue
         body = stripped[: close_m.start()]
         closer = close_m.group(1)
+        # ``digest`` is the full integrity value — one or more
+        # whitespace-separated ``sha256-<b64>`` tokens (see
+        # ``_candidate_digests``). The SRI spec accepts a list and
+        # passes the resource if any token matches the computed hash.
         replaced = (
             body
-            + f' integrity="sha256-{digest}" crossorigin="anonymous"'
+            + f' integrity="{digest}" crossorigin="anonymous"'
             + closer
         )
         out.append(html[last:m.start()])

@@ -1,11 +1,11 @@
 {
-  "description": "dtt is een Rust-bibliotheek die datum- en tijdoperaties idiomatisch, snel en betrouwbaar maakt voor moderne toepassingen.",
+  "keywords": "dtt, Rust, datum, tijd, datetime, open source, bibliotheek",
+  "banner": "https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg",
+  "language": "nl-NL",
+  "date": "Dec 04, 2023",
   "banner_alt": "Banner van de dtt-bibliotheek: datum en tijd in Rust",
   "locale": "nl_NL",
-  "language": "nl-NL",
+  "description": "dtt is een Rust-bibliotheek die datum- en tijdoperaties idiomatisch, snel en betrouwbaar maakt voor moderne toepassingen.",
   "title": "Datum en tijd in Rust beheersen met de dtt-bibliotheek",
-  "banner": "https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg",
-  "date": "Dec 04, 2023",
-  "subtitle": "Een idiomatische, snelle en betrouwbare datum- en tijdbibliotheek voor Rust",
-  "keywords": "dtt, Rust, datum, tijd, datetime, open source, bibliotheek"
+  "subtitle": "Een idiomatische, snelle en betrouwbare datum- en tijdbibliotheek voor Rust"
 }

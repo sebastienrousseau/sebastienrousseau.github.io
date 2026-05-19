@@ -1,11 +1,11 @@
 {
-  "locale": "vi_VN",
-  "keywords": "Shor, qubit, lượng tử, mật mã, RSA, hậu lượng tử, ngưỡng, 10000 qubit, Fujitsu, Riken",
-  "language": "vi-VN",
-  "banner_alt": "Sơ đồ qubit và ngưỡng phá vỡ mật mã",
   "date": "April 11, 2026",
+  "keywords": "Shor, qubit, lượng tử, mật mã, RSA, hậu lượng tử, ngưỡng, 10000 qubit, Fujitsu, Riken",
+  "banner_alt": "Sơ đồ qubit và ngưỡng phá vỡ mật mã",
   "subtitle": "Shor có thể chạy trên 10.000 qubit — và điều đó thay đổi mọi thứ",
-  "banner": "https://cloudcdn.pro/stocks/images/quantum-thresholds-banner.webp",
+  "title": "Ngưỡng lượng tử lại dịch chuyển",
   "description": "Một bài báo mới cho rằng thuật toán Shor có thể chạy với chỉ 10.000 qubit. Ngưỡng cho tính toán lượng tử liên quan đến mật mã đang giảm nhanh.",
-  "title": "Ngưỡng lượng tử lại dịch chuyển"
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-thresholds-banner.webp",
+  "locale": "vi_VN",
+  "language": "vi-VN"
 }

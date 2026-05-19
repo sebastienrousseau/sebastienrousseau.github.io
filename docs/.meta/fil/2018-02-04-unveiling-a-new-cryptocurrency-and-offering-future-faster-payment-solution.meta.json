@@ -1,11 +1,11 @@
 {
-  "date": "February 4, 2018",
-  "language": "fil-PH",
-  "description": "فصل بالغ الأهمية في تطوّر المشهد المالي العالمي، يصوغه الابتكار التقني والتحوّلات الجيوسياسية والتمويل المستدام.",
   "locale": "fil_PH",
   "keywords": "EXTC Network, العملة المشفّرة, المدفوعات الأسرع, Ethereum, EIP20, smart contracts, blockchain, المدفوعات العابرة للحدود, الشمول المالي",
+  "language": "fil-PH",
   "subtitle": "شبكة EXTC: رؤية لمدفوعاتٍ فورية على البلوكشين",
   "banner_alt": "حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية",
-  "title": "كشف عملة مشفّرة جديدة وحلّ مدفوعات أسرع",
-  "banner": "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp"
+  "banner": "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp",
+  "description": "فصل بالغ الأهمية في تطوّر المشهد المالي العالمي، يصوغه الابتكار التقني والتحوّلات الجيوسياسية والتمويل المستدام.",
+  "date": "February 4, 2018",
+  "title": "كشف عملة مشفّرة جديدة وحلّ مدفوعات أسرع"
 }
