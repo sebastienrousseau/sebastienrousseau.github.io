@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp",
-  "banner_alt": "Schema di un messaggio di pagamento transfrontaliero con indirizzo strutturato, con TwnNm e Ctry evidenziati",
-  "description": "A metà novembre 2026 SWIFT CBPR+ rifiuterà gli indirizzi postali non strutturati nei messaggi pacs.008 e nei messaggi di pagamento transfrontaliero associati. Con circa il 65% dei messaggi ancora non conformi e il 44% delle banche in ritardo, la finestra di remediation si chiude più rapidamente di quanto la maggior parte dei programmi di preparazione sia progettata per gestire.",
-  "language": "it-IT",
-  "title": "La scadenza pacs.008 «indirizzo strutturato» di novembre 2026: vista a sei mesi",
-  "subtitle": "A metà novembre 2026 SWIFT CBPR+ rifiuterà gli indirizzi postali non strutturati nei messaggi pacs.008",
   "locale": "it_IT",
+  "description": "A metà novembre 2026 SWIFT CBPR+ rifiuterà gli indirizzi postali non strutturati nei messaggi pacs.008 e nei messaggi di pagamento transfrontaliero associati. Con circa il 65% dei messaggi ancora non conformi e il 44% delle banche in ritardo, la finestra di remediation si chiude più rapidamente di quanto la maggior parte dei programmi di preparazione sia progettata per gestire.",
   "keywords": "ISO 20022, pacs.008, pacs.009, pacs.004, pacs.003, pain.001, CBPR+, SWIFT, SR2026, indirizzo strutturato, SEPA, EPC, pagamenti transfrontalieri, screening sanzioni, pacs008",
-  "date": "May 12, 2026"
+  "subtitle": "A metà novembre 2026 SWIFT CBPR+ rifiuterà gli indirizzi postali non strutturati nei messaggi pacs.008",
+  "date": "May 12, 2026",
+  "language": "it-IT",
+  "banner_alt": "Schema di un messaggio di pagamento transfrontaliero con indirizzo strutturato, con TwnNm e Ctry evidenziati",
+  "title": "La scadenza pacs.008 «indirizzo strutturato» di novembre 2026: vista a sei mesi",
+  "banner": "https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp"
 }

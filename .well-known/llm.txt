@@ -1,0 +1,48 @@
+# Sebastien Rousseau
+
+AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank. Twenty years across Tier-1 banks (HSBC, PayPal, Barclays) and consumer technology (Shazam, AKQA, Virgin Group). Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography for financial services.
+
+## Canonical entry points
+
+- [Home](https://sebastienrousseau.com/) — landing page with the latest research and projects.
+- [About](https://sebastienrousseau.com/about/) — full biography, professional history, areas of expertise.
+- [Articles](https://sebastienrousseau.com/articles/) — research notes on quantum-safe cryptography, ISO 20022, applied AI, wholesale payments.
+- [Papers](https://sebastienrousseau.com/papers/) — industry white papers, peer-reviewed analysis, regulatory submissions.
+- [Projects](https://sebastienrousseau.com/projects/) — open-source Python and Rust libraries for payments, post-quantum crypto, AI tooling.
+- [Topics](https://sebastienrousseau.com/topics/) — topic hubs: post-quantum, ISO 20022, applied AI, Rust, blockchain.
+- [Playlists](https://sebastienrousseau.com/playlists/) — curated music libraries for deep work and engineering flow.
+- [Contact](https://sebastienrousseau.com/contact/) — professional contact form for consulting, speaking, advisory engagements.
+
+## Feeds
+
+- [RSS feed](https://sebastienrousseau.com/rss.xml)
+- [Atom feed](https://sebastienrousseau.com/atom.xml)
+- [JSON Feed 1.1](https://sebastienrousseau.com/feed.json)
+- [News sitemap](https://sebastienrousseau.com/news-sitemap.xml)
+- [Sitemap](https://sebastienrousseau.com/sitemap.xml)
+- [French RSS](https://sebastienrousseau.com/fr/rss.xml)
+- [French sitemap](https://sebastienrousseau.com/fr/news-sitemap.xml)
+
+## Areas of expertise
+
+- Applied artificial intelligence in banking
+- Generative AI for financial services
+- Wholesale payments
+- ISO 20022 migration
+- SWIFT gpi
+- SEPA Instant Payments
+- Cross-border payments
+- Post-quantum cryptography for financial services
+- CRYSTALS-Kyber, CRYSTALS-Dilithium
+- Quantum-safe payment authentication
+
+## Contact
+
+Sebastien Rousseau (London, UK)
+
+- LinkedIn: https://www.linkedin.com/in/sebastienrousseau/
+- Twitter / X: https://twitter.com/wwdseb
+- Medium: https://medium.com/@BankingOnQuantum
+- YouTube: https://www.youtube.com/@BankingOnQuantum
+- GitHub: https://github.com/sebastienrousseau
+- Newsletter: https://news.bankingonquantum.com

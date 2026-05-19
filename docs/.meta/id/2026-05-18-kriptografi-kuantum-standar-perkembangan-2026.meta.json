@@ -1,11 +1,11 @@
 {
   "description": "Kriptografi kuantum di 2026 bukan lagi perdebatan tentang apakah komputer kuantum sudah dekat. Ini adalah program migrasi yang melintasi kriptografi pasca-kuantum, ketangkasan kripto, jaminan distribusi kunci kuantum, standar protokol, kesiapan pemasok, dan data keuangan berumur panjang yang sudah terpapar risiko 'panen sekarang, dekripsi nanti'.",
-  "subtitle": "Kriptografi kuantum telah bergerak dari pemindaian cakrawala menjadi disiplin implementasi: standar NIST PQC sudah siap, panduan NCSC Inggris telah mempersempit pilihan algoritma, pekerjaan protokol IETF masih matang, dan jaminan QKD bergerak dari kepercayaan laboratorium ke bahasa sertifikasi.",
-  "keywords": "kriptografi kuantum 2026, kriptografi pasca-kuantum, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, pertukaran kunci hibrida, QKD, ETSI QKD, ISO IEC 23837, ketangkasan kripto, harvest now decrypt later, HNDL, kriptografi jasa keuangan, keamanan perbankan",
-  "banner_alt": "Peta migrasi kriptografi aman-kuantum untuk 2026 yang menunjukkan standar NIST PQC, pekerjaan protokol hibrida, jaminan QKD, ketangkasan kripto, dan tingkat risiko data bank",
+  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
   "language": "id-ID",
-  "locale": "id_ID",
+  "keywords": "kriptografi kuantum 2026, kriptografi pasca-kuantum, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, pertukaran kunci hibrida, QKD, ETSI QKD, ISO IEC 23837, ketangkasan kripto, harvest now decrypt later, HNDL, kriptografi jasa keuangan, keamanan perbankan",
+  "subtitle": "Kriptografi kuantum telah bergerak dari pemindaian cakrawala menjadi disiplin implementasi: standar NIST PQC sudah siap, panduan NCSC Inggris telah mempersempit pilihan algoritma, pekerjaan protokol IETF masih matang, dan jaminan QKD bergerak dari kepercayaan laboratorium ke bahasa sertifikasi.",
   "date": "May 18, 2026",
   "title": "Reset Kriptografi Kuantum 2026: Standar PQC, Jaminan QKD, dan Pekerjaan Migrasi yang Tidak Dapat Ditunda Bank",
-  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp"
+  "banner_alt": "Peta migrasi kriptografi aman-kuantum untuk 2026 yang menunjukkan standar NIST PQC, pekerjaan protokol hibrida, jaminan QKD, ketangkasan kripto, dan tingkat risiko data bank",
+  "locale": "id_ID"
 }

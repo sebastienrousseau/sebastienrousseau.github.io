@@ -64,11 +64,14 @@ export const CSP_DIRECTIVES = [
   "object-src 'none'",
   "frame-ancestors 'none'",
   "upgrade-insecure-requests",
-  // Header script-src uses 'unsafe-inline' because per-page sha256 hashes
-  // can only live in the meta-CSP. Browser intersection means the meta
-  // hash still gates the actual inline JSON-LD blob; this directive
-  // only constrains the external-script allowlist at the header layer.
-  "script-src 'self' 'unsafe-inline' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com",
+  // Header script-src deliberately omits 'unsafe-inline'. CSP intersection
+  // means the meta-CSP hash list still gates the actual inline JSON-LD
+  // blob on every postbuild-processed page, so this layer doesn't need
+  // to repeat the relaxation. Stripping it closes the response-header
+  // gap that security scanners flag and provides defence in depth on
+  // any page that might bypass postbuild (none today — verified all
+  // pages, including 404, ship with hashed meta-CSP).
+  "script-src 'self' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com",
   "frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com",
   "connect-src 'self' https://www.google.com https://open.spotify.com",
   "img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co",

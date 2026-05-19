@@ -1,11 +1,11 @@
 {
-  "subtitle": "Narzędzie szablonowe do szybkiego tworzenia wysokiej jakości bibliotek Rust",
-  "description": "Libmake to generator kodu Rust, który redukuje powtarzalne zadania i pozwala szybko tworzyć wysokiej jakości biblioteki.",
-  "title": "Libmake: generator kodu redukujący powtarzalne zadania w bibliotekach Rust",
-  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
-  "date": "Oct 26, 2023",
-  "language": "pl-PL",
   "locale": "pl_PL",
-  "keywords": "Libmake, Rust, generator kodu, biblioteka, szablon, scaffold, open source",
-  "banner_alt": "Schemat generatora kodu Libmake dla Rust"
+  "date": "Oct 26, 2023",
+  "banner_alt": "Schemat generatora kodu Libmake dla Rust",
+  "description": "Libmake to generator kodu Rust, który redukuje powtarzalne zadania i pozwala szybko tworzyć wysokiej jakości biblioteki.",
+  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
+  "subtitle": "Narzędzie szablonowe do szybkiego tworzenia wysokiej jakości bibliotek Rust",
+  "language": "pl-PL",
+  "title": "Libmake: generator kodu redukujący powtarzalne zadania w bibliotekach Rust",
+  "keywords": "Libmake, Rust, generator kodu, biblioteka, szablon, scaffold, open source"
 }

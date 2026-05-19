@@ -1,0 +1,4 @@
+config.json
+cosign.key
+cosign.key.*
+*.key

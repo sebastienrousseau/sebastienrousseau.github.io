@@ -1,0 +1,8 @@
+{
+  "_comment": "Copy to config.json (gitignored), fill in real values, then run `./build.sh` to start emitting signatures. See doc/SIGSTORE.md for the full activation runbook.",
+  "identity": "contact@sebastienrousseau.com",
+  "public_key_url": "https://sebastienrousseau.com/sigstore/cosign.pub",
+  "public_key_local": "./_data/sigstore/cosign.pub",
+  "key_env_var": "COSIGN_KEY_PATH",
+  "password_env_var": "COSIGN_PASSWORD"
+}

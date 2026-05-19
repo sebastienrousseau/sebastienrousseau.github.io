@@ -1,11 +1,11 @@
 {
+  "subtitle": "Bitcoin, cryptocurrency, and the technology reshaping financial markets.",
+  "description": "Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online.",
   "locale": "bn_BD",
+  "keywords": "bitcoin, cryptocurrency, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, programmable money, future of money, financial revolution",
   "language": "bn-BD",
   "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
-  "description": "Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online.",
-  "subtitle": "Bitcoin, cryptocurrency, and the technology reshaping financial markets.",
-  "keywords": "bitcoin, cryptocurrency, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, programmable money, future of money, financial revolution",
   "title": "Bitcoin: A Year In Review of the First Cryptocurrency",
-  "banner_alt": "A pile of gold and silver coins sitting on top of a table",
-  "date": "Jan 01, 2018"
+  "date": "Jan 01, 2018",
+  "banner_alt": "A pile of gold and silver coins sitting on top of a table"
 }

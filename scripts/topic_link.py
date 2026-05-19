@@ -123,9 +123,19 @@ def process_post(path: Path) -> int:  # noqa: C901 — Markdown-region walker; b
     if cursor < len(body):
         pieces.append((body[cursor:], False))
 
-    # Filter out entities whose canonical post IS this file (no self-link).
+    # Filter out entities whose canonical post IS this file (no self-link),
+    # and entities whose canonical URL is ALREADY linked in the body — the
+    # latter is the across-runs idempotency guard: a previous pass already
+    # placed exactly one link for this entity, and we must not place another.
     stem = path.stem
-    applicable = [(v, s) for v, s in ENTITY_MAP if s != stem]
+    applicable: list[tuple[list[str], str]] = []
+    for v, s in ENTITY_MAP:
+        if s == stem:
+            continue
+        canonical_href = f"/{s}/index.html"
+        if canonical_href in body:
+            continue
+        applicable.append((v, s))
     remaining_idx = list(range(len(applicable)))
 
     out_pieces: list[str] = []
