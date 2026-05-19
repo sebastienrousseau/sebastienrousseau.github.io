@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
-  "keywords": "blockchain, criptomoneda, Bitcoin, P2P, smart contract, libro mayor distribuido, finanzas, cadena de suministro, identidad digital, tokenización",
-  "language": "cs-CZ",
+  "description": "La narración del viaje extraordinario para asegurar las transacciones digitales mediante criptografía de clave privada y redes entre pares (P2P).",
+  "subtitle": "Criptografía de clave privada y redes entre pares al servicio de transacciones seguras",
   "locale": "cs_CZ",
   "title": "Blockchain: la tecnología que importa en 2018",
-  "description": "La narración del viaje extraordinario para asegurar las transacciones digitales mediante criptografía de clave privada y redes entre pares (P2P).",
   "banner_alt": "Ordenador portátil apagado sobre una mesa de madera marrón",
-  "subtitle": "Criptografía de clave privada y redes entre pares al servicio de transacciones seguras",
-  "date": "January 2, 2018"
+  "date": "January 2, 2018",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "language": "cs-CZ",
+  "keywords": "blockchain, criptomoneda, Bitcoin, P2P, smart contract, libro mayor distribuido, finanzas, cadena de suministro, identidad digital, tokenización"
 }

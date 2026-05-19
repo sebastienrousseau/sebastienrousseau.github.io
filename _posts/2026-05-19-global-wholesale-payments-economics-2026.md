@@ -107,6 +107,8 @@ excerpt: "Wholesale payments in 2026 are no longer just bank plumbing. They are 
 
 
 
+
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Global wholesale payments in 2026 are being reshaped by ISO 20022 harmonisation, RTGS renewal, extended settlement windows, non-bank access, API governance, DLT pilots, and cross-border payment fragmentation. The economic issue is interoperability, not messaging alone.</p>
@@ -149,11 +151,11 @@ BIS CPMI’s April 2026 brief describes [ISO 20022](/2023-09-29-automating-iso-2
 
 The first phase was getting payment systems onto [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html). The second phase is making implementation consistent enough that the benefits survive across borders. BIS CPMI identifies structured data, reduced truncation, better screening, and improved reconciliation as core benefits of harmonised implementation ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "The future of financial messaging: navigating the ISO 20022 migration journey")).
 
-The difficult part is that ISO 20022 can still fragment if jurisdictions adopt different field practices, validation rules, and optional-data conventions. The strategic work for banks is therefore not just format conversion; it is semantic alignment.
+The difficult part is that [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) can still fragment if jurisdictions adopt different field practices, validation rules, and optional-data conventions. The strategic work for banks is therefore not just format conversion; it is semantic alignment.
 
 ### 2. RTGS Renewal Extends the Settlement Window
 
-The settlement window matters because global wholesale payments cross time zones. Fabio Panetta’s May 2026 BIS speech frames national payment infrastructure as a coordinate for reform, including wider settlement windows and full ISO 20022 adoption ([BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "Interconnect to stabilize: cross-border payments in a fragmenting world")).
+The settlement window matters because global wholesale payments cross time zones. Fabio Panetta’s May 2026 BIS speech frames national payment infrastructure as a coordinate for reform, including wider settlement windows and full [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) adoption ([BIS](https://www.bis.org/cpmi/speeches/sp260505.pdf "Interconnect to stabilize: cross-border payments in a fragmenting world")).
 
 The Bank of England’s renewed RTGS service points in the same direction. It emphasises resilience, broader access, interoperability, and a synchronised settlement interface that can interoperate with other ledgers and reduce settlement risk and liquidity costs ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "The renewed RTGS service — key benefits")).
 

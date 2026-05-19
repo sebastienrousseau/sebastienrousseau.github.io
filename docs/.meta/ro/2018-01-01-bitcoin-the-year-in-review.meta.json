@@ -1,11 +1,11 @@
 {
-  "banner_alt": "A pile of gold and silver coins sitting on top of a table",
-  "locale": "ro_RO",
   "subtitle": "Bitcoin, cryptocurrency, and the technology reshaping financial markets.",
-  "date": "Jan 01, 2018",
-  "title": "Bitcoin: A Year In Review of the First Cryptocurrency",
-  "description": "Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online.",
+  "banner_alt": "A pile of gold and silver coins sitting on top of a table",
   "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
+  "date": "Jan 01, 2018",
+  "description": "Bitcoin: A Peer-to-Peer Electronic Cash System (P2P ECS) that has the potential to revolutionise the way people transact online.",
+  "title": "Bitcoin: A Year In Review of the First Cryptocurrency",
+  "keywords": "bitcoin, cryptocurrency, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, programmable money, future of money, financial revolution",
   "language": "ro-RO",
-  "keywords": "bitcoin, cryptocurrency, blockchain, decentralized finance, digital currency, peer-to-peer payments, digital gold, programmable money, future of money, financial revolution"
+  "locale": "ro_RO"
 }

@@ -1,11 +1,11 @@
 {
   "language": "hi-IN",
-  "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
-  "subtitle": "Apple Silicon पर तेज़, ऑफ़लाइन और बहुभाषी",
-  "keywords": "Whisper, OpenAI, macOS, Apple Silicon, वाणी पहचान, ASR, ऑफ़लाइन, बहुभाषी, AI, transcription",
   "banner_alt": "macOS पर वाणी-पहचान की प्रतीकात्मक छवि",
-  "description": "OpenAI Whisper को macOS पर लाना: वास्तविक-समय, ऑफ़लाइन और बहुभाषी वाणी-पहचान।",
-  "locale": "hi_IN",
+  "subtitle": "Apple Silicon पर तेज़, ऑफ़लाइन और बहुभाषी",
   "date": "March 12, 2024",
-  "title": "OpenAI Whisper से macOS पर वास्तविक-समय वाणी-पहचान में क्रांति"
+  "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
+  "description": "OpenAI Whisper को macOS पर लाना: वास्तविक-समय, ऑफ़लाइन और बहुभाषी वाणी-पहचान।",
+  "title": "OpenAI Whisper से macOS पर वास्तविक-समय वाणी-पहचान में क्रांति",
+  "locale": "hi_IN",
+  "keywords": "Whisper, OpenAI, macOS, Apple Silicon, वाणी पहचान, ASR, ऑफ़लाइन, बहुभाषी, AI, transcription"
 }

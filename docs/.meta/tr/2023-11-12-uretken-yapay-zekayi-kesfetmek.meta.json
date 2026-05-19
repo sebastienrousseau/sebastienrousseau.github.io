@@ -1,11 +1,11 @@
 {
-  "title": "Üretken yapay zekayı keşfetmek",
+  "banner_alt": "Üretken yapay zeka ile oluşturulmuş soyut görsel",
   "subtitle": "Üretken modellerin mimarisi, yetenekleri ve uygulamaları",
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
-  "locale": "tr_TR",
-  "date": "November 12, 2023",
   "keywords": "üretken yapay zeka, makine öğrenmesi, LLM, GAN, yayılma modelleri, üretken modeller",
-  "language": "tr-TR",
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
+  "date": "November 12, 2023",
   "description": "Üretken yapay zekaya genel bakış: yayılma modelleri, GAN'ler, dil modelleri ve gerçek dünya uygulamaları.",
-  "banner_alt": "Üretken yapay zeka ile oluşturulmuş soyut görsel"
+  "language": "tr-TR",
+  "locale": "tr_TR",
+  "title": "Üretken yapay zekayı keşfetmek"
 }
