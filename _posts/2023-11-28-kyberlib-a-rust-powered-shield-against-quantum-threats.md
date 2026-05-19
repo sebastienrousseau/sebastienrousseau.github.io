@@ -179,13 +179,13 @@ However, the chart does provide a useful reference point for understanding the s
 
 ## KyberLib: A Rust Library for Quantum-Resistant Cryptography
 
-KyberLib harnesses the power of CRYSTALS-Kyber to deliver enhanced memory safety and robust system-level security. It supports multiple CRYSTALS-Kyber specifications (Kyber512, Kyber768, Kyber1024), offering a range of security levels to suit your specific needs. Its `no_std` compliance makes it an ideal choice for embedded systems, while its WebAssembly (WASM) compatibility facilitates seamless integration into web applications.
+KyberLib harnesses the power of [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) to deliver enhanced memory safety and robust system-level security. It supports multiple [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) specifications (Kyber512, Kyber768, Kyber1024), offering a range of security levels to suit your specific needs. Its `no_std` compliance makes it an ideal choice for embedded systems, while its WebAssembly (WASM) compatibility facilitates seamless integration into web applications.
 
 ![divider][divider].class=\"m-10 w-100\"
 
 ## Protecting Web Applications With Quantum-Resistant Cryptography
 
-Designed for a minimal memory footprint, KyberLib is ideal for embedded and resource-limited systems without compromising security. Its Rust-based implementation capitalises on the language's safety features, fortifying the security offered by the CRYSTALS-Kyber algorithm.
+Designed for a minimal memory footprint, KyberLib is ideal for embedded and resource-limited systems without compromising security. Its Rust-based implementation capitalises on the language's safety features, fortifying the security offered by the [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) algorithm.
 
 Additionally, KyberLib's WebAssembly compatibility enhances its utility in web applications, guaranteeing that it remains a vital tool in the dynamic realm of cryptography.
 

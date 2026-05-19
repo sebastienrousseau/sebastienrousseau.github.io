@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/he/2026-05-19-global-wholesale-payments-economics-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>he-IL</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-19T06:06:06+00:00</news:publication_date>
+    <news:title>תשלומי הסיטונאות הגלובליים ב-2026: ISO 20022, חידוש ה-RTGS וכלכלת יכולת הפעולה ההדדית</news:title>
+    <news:keywords>תשלומי סיטונאות 2026, כלכלת תשלומים גלובלית, ISO 20022, RTGS, תשלומים חוצי-גבולות, BIS CPMI, FSB, Swift CBPR+, מפת הדרכים של G20, סילוק ברוטו בזמן אמת, Project Agorá, Project Mandala, Project Nexus, יכולת פעולה הדדית בתשלומים, בנקאות קורספונדנטית, פיצול בתשלומים, CBDC סיטונאי</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/he/2026-05-18-quantum-cryptography-standards-developments-2026/</loc>
   <news:news>
     <news:publication>

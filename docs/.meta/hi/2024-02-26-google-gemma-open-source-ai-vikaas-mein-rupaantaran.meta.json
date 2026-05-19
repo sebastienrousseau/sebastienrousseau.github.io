@@ -1,11 +1,11 @@
 {
-  "locale": "hi_IN",
-  "date": "February 26, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
-  "language": "hi-IN",
-  "title": "Google Gemma: ओपन-सोर्स AI-विकास का रूपांतरण",
   "keywords": "Gemma, Google, ओपन सोर्स, AI, LLM, फ़ाइन-ट्यूनिंग, स्थानीय, edge, Gemini, मॉडल",
+  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
+  "banner_alt": "Google Gemma का प्रतीक",
+  "date": "February 26, 2024",
+  "title": "Google Gemma: ओपन-सोर्स AI-विकास का रूपांतरण",
   "subtitle": "हल्के, स्थानीय-तैनात-योग्य मॉडल का परिवार",
+  "locale": "hi_IN",
   "description": "Google Gemma: एक ओपन-सोर्स मॉडल-परिवार जो स्थानीय-तैनात AI-विकास को बढ़ावा देता है।",
-  "banner_alt": "Google Gemma का प्रतीक"
+  "language": "hi-IN"
 }

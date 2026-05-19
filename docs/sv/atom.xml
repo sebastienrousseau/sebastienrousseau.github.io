@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/sv/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/sv/"/>
   <id>https://sebastienrousseau.com/sv/</id>
-  <updated>2026-05-19T14:02:38+00:00</updated>
+  <updated>2026-05-19T15:47:31+00:00</updated>
+  <entry>
+    <title>Globala stora betalningar 2026: ISO 20022, förnyelse av RTGS och interoperabilitetens ekonomi</title>
+    <link href="https://sebastienrousseau.com/sv/2026-05-19-global-wholesale-payments-economics-2026/"/>
+    <id>https://sebastienrousseau.com/sv/2026-05-19-global-wholesale-payments-economics-2026/</id>
+    <updated>2026-05-19T06:06:06+00:00</updated>
+    <published>2026-05-19T06:06:06+00:00</published>
+    <summary>Globala stora betalningar omformas 2026 av harmonisering av ISO 20022, förnyelse av RTGS, utvidgade avvecklingsfönster, tillträde för icke-banker, API-styrning, DLT-piloter och fragmentering av gränsöverskridande betalningar. Den ekonomiska frågan är interoperabilitet, inte enbart meddelandeformat.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Återställningen av kvantkryptografi 2026: PQC-standarder, QKD-säkerhet och migrationsarbetet bankerna inte kan skjuta upp</title>
     <link href="https://sebastienrousseau.com/sv/2026-05-18-kvantkryptografi-standarder-utveckling-2026/"/>

@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ja/2026-05-19-global-wholesale-payments-economics-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ja-JP</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-19T06:06:06+00:00</news:publication_date>
+    <news:title>2026年のグローバル・ホールセール決済：ISO 20022、RTGS刷新、そして相互運用性の経済学</news:title>
+    <news:keywords>ホールセール決済 2026, グローバル決済経済学, ISO 20022, RTGS, クロスボーダー決済, BIS CPMI, FSB, Swift CBPR+, G20ロードマップ, 即時グロス決済, Project Agorá, Project Mandala, Project Nexus, 決済の相互運用性, コルレス銀行業務, 決済の分断, ホールセールCBDC</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ja/2026-05-18-ryoshi-angou-hyojun-saishin-doukou-2026/</loc>
   <news:news>
     <news:publication>

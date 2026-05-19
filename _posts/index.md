@@ -235,6 +235,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-19-global-wholesale-payments-economics-2026/index.html" title="Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability">
+<img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Payments · ISO 20022 · Cross-Border</span>
+<h3><a href="/2026-05-19-global-wholesale-payments-economics-2026/index.html">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-19">May 19, 2026</time></p>
+<p class="newsroom-excerpt">Wholesale payments in 2026 are part of macroeconomic resilience: ISO 20022 harmonisation, RTGS renewal and extended operating hours, non-bank access, interlinking, and DLT settlement pilots are converging around the cost of moving global liquidity — and the G20 cross-border targets are still off-track for 2027.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-18-quantum-cryptography-standards-developments-2026/index.html" title="The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer">
 <img alt="Quantum-safe cryptography migration map for 2026 showing NIST PQC standards, hybrid protocol work, QKD assurance, crypto-agility, and bank data-risk tiers" src="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -282,17 +294,6 @@ site_software: "Static Site Generator, Rust"
 </div>
 </article>
 
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html" title="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance">
-<img alt="Open vault door framed by gold light — visual metaphor for cryptographic protection of financial records" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Post-Quantum · Treasury · Governance</span>
-<h3><a href="/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-14">May 14, 2026</time></p>
-<p class="newsroom-excerpt">Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026 and BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate.</p>
-</div>
-</article>
 
 </div>
 

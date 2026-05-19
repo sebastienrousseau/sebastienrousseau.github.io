@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/it/2026-05-19-globali-wholesale-pagamenti-economia-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>it-IT</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-19T06:06:06+00:00</news:publication_date>
+    <news:title>I pagamenti wholesale globali nel 2026: ISO 20022, rinnovo degli RTGS e l&apos;economia dell&apos;interoperabilità</news:title>
+    <news:keywords>pagamenti wholesale 2026, economia dei pagamenti globali, ISO 20022, RTGS, pagamenti transfrontalieri, BIS CPMI, FSB, Swift CBPR+, roadmap G20, regolamento lordo in tempo reale, Project Agorá, Project Mandala, Project Nexus, interoperabilità dei pagamenti, corrispondenza bancaria, frammentazione dei pagamenti, CBDC wholesale</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/it/2026-05-18-crittografia-quantistica-standard-sviluppi-2026/</loc>
   <news:news>
     <news:publication>

@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/pt-br/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/pt-br/"/>
   <id>https://sebastienrousseau.com/pt-br/</id>
-  <updated>2026-05-19T14:02:38+00:00</updated>
+  <updated>2026-05-19T15:47:31+00:00</updated>
+  <entry>
+    <title>Pagamentos de atacado globais em 2026: ISO 20022, renovação dos RTGS e a economia da interoperabilidade</title>
+    <link href="https://sebastienrousseau.com/pt-br/2026-05-19-globais-atacado-pagamentos-economia-2026/"/>
+    <id>https://sebastienrousseau.com/pt-br/2026-05-19-globais-atacado-pagamentos-economia-2026/</id>
+    <updated>2026-05-19T06:06:06+00:00</updated>
+    <published>2026-05-19T06:06:06+00:00</published>
+    <summary>Os pagamentos de atacado globais em 2026 estão sendo remodelados pela harmonização do ISO 20022, pela renovação dos RTGS, pela ampliação das janelas de liquidação, pelo acesso de não-bancos, pela governança de APIs, pelos pilotos de DLT e pela fragmentação dos pagamentos transfronteiriços. A questão econômica é a interoperabilidade, não apenas a mensageria.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>O reset da criptografia quântica em 2026: padrões PQC, garantia de QKD e o trabalho de migração que os bancos não podem adiar</title>
     <link href="https://sebastienrousseau.com/pt-br/2026-05-18-criptografia-quantica-padroes-desenvolvimentos-2026/"/>

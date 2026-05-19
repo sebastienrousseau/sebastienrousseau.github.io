@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fil-PH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Tue, 19 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Tue, 19 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Pandaigdigang Wholesale na Bayad sa 2026: ISO 20022, Pagpapanibago ng RTGS, at ang Ekonomiya ng Interoperability — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Ang pandaigdigang wholesale na bayad sa 2026 ay binabago ng harmonisasyon ng ISO 20022, pagpapanibago ng RTGS, pinalawak na mga settlement window, akses ng non-bank, pamamahala ng API, mga pilot ng DLT, at fragmentation ng cross-border na bayad. Ang isyu na pang-ekonomiko ay interoperability, hindi lamang messaging.">
+<meta name="keywords" content="wholesale na bayad 2026, ekonomiya ng pandaigdigang bayad, ISO 20022, RTGS, cross-border na bayad, BIS CPMI, FSB, Swift CBPR+, G20 roadmap, real time gross settlement, Project Agorá, Project Mandala, Project Nexus, interoperability ng bayad, correspondent banking, fragmentation ng bayad, wholesale CBDC">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Wholesale Payments 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-JJ/ijmuzdk0ufuN4hkeOoSt9zj1mTjeibX/X8iiQmMY=' 'sha256-RGXlit3N8CsCaCCYFj88xejOUWx3ViD0sUm0ZGQqv8Y=' 'sha256-TsdOpOiyE/dyr0yr3yy0+LFgLAHqfkqPazvKcQCA/EY=' 'sha256-waWNNfY6wun9Laa55eXckIhBMe96NWbmjCOoZBia8mI=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/fil/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Feed ng Atom" href="/fil/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Pandaigdigang Wholesale na Bayad sa 2026: ISO 20022, Pagpapanibago ng RTGS, at ang Ekonomiya ng Interoperability — Sebastien Rousseau">
+<meta property="og:description" content="Ang pandaigdigang wholesale na bayad sa 2026 ay binabago ng harmonisasyon ng ISO 20022, pagpapanibago ng RTGS, pinalawak na mga settlement window, akses ng non-bank, pamamahala ng API, mga pilot ng DLT, at fragmentation ng cross-border na bayad. Ang isyu na pang-ekonomiko ay interoperability, hindi lamang messaging.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/fil/2026-05-19-global-wholesale-payments-economics-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="fil_PH">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pandaigdigang Wholesale na Bayad sa 2026: ISO 20022, Pagpapanibago ng RTGS, at ang Ekonomiya ng Interoperability — Sebastien Rousseau">
+<meta name="twitter:description" content="Ang pandaigdigang wholesale na bayad sa 2026 ay binabago ng harmonisasyon ng ISO 20022, pagpapanibago ng RTGS, pinalawak na mga settlement window, akses ng non-bank, pamamahala ng API, mga pilot ng DLT, at fragmentation ng cross-border na bayad. Ang isyu na pang-ekonomiko ay interoperability, hindi lamang messaging.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/fil/2026-05-19-global-wholesale-payments-economics-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-19-mondiaux-de-gros-paiements-economie-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-19-globale-wholesale-zahlungsverkehr-okonomie-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-19-global-mayorista-pagos-economia-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-19-globali-wholesale-pagamenti-economia-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-19-globais-atacado-pagamentos-economia-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Lumaktaw sa pangunahing nilalaman</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="I-toggle ang nabigasyon" />
+      <div class="wrap">
+        <a class="ap-brand" href="/fil/index.html" aria-label="Home ni Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Pangunahing nabigasyon">
+          <ul class="ap-menu">
+            <li><a href="/fil/tungkol-sa-akin/index.html">Tungkol</a></li>
+            <li><a href="/fil/mga-artikulo/index.html" aria-current="page" class="active">Mga artikulo</a></li>
+            <li><a href="/fil/mga-publikasyon/index.html">Mga publikasyon</a></li>
+            <li><a href="/fil/mga-paksa/index.html">Mga paksa</a></li>
+            <li><a href="/fil/mga-proyekto/index.html">Mga proyekto</a></li>
+            <li><a href="/fil/mga-playlist/index.html">Mga playlist</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Lumipat sa dark mode" aria-pressed="false" title="Ibahin ang tema">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Maghanap (Cmd o Ctrl + K)" title="Maghanap (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Wika">
+            <button type="button" class="ap-lang-toggle" aria-label="FIL, Baguhin ang wika" aria-expanded="false" aria-haspopup="menu" title="Baguhin ang wika">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">FIL</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/fil/makipag-ugnayan/index.html" aria-label="Makipag-ugnayan">Makipag-ugnayan ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="I-toggle ang nabigasyon">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Pandaigdigang Wholesale na Bayad sa 2026: ISO 20022, Pagpapanibago ng RTGS, at ang Ekonomiya ng Interoperability</h1>
+      <p class="sub">Ang wholesale na bayad ay naging isang lever ng patakarang pang-ekonomiko: ang ISO 20022, oras ng operasyon ng RTGS, akses ng mga non-bank, interlinking, mga pilot ng DLT settlement, at ang G20 roadmap ay nagtatagpo sa paligid ng halaga ng pandaigdigang paggalaw ng liquidity.</p>
+    <nav class="article-tags" aria-label="Mga paksa"><a href="/tags/index.html#h3-wholesale-na-bayad-2026" class="article-tag" rel="tag">wholesale na bayad 2026</a><a href="/tags/index.html#h3-ekonomiya-ng-pandaigdigang-bayad" class="article-tag" rel="tag">ekonomiya ng pandaigdigang bayad</a><a href="/tags/index.html#h3-iso-20022" class="article-tag" rel="tag">ISO 20022</a><a href="/tags/index.html#h3-rtgs" class="article-tag" rel="tag">RTGS</a><a href="/tags/index.html#h3-cross-border-na-bayad" class="article-tag" rel="tag">cross-border na bayad</a><a href="/tags/index.html#h3-bis-cpmi" class="article-tag" rel="tag">BIS CPMI</a><a href="/tags/index.html#h3-fsb" class="article-tag" rel="tag">FSB</a><a href="/tags/index.html#h3-swift-cbpr" class="article-tag" rel="tag">Swift CBPR+</a><a href="/tags/index.html#h3-g20-roadmap" class="article-tag" rel="tag">G20 roadmap</a><a href="/tags/index.html#h3-real-time-gross-settlement" class="article-tag" rel="tag">real time gross settlement</a><a href="/tags/index.html#h3-project-agora" class="article-tag" rel="tag">Project Agorá</a><a href="/tags/index.html#h3-project-mandala" class="article-tag" rel="tag">Project Mandala</a><a href="/tags/index.html#h3-project-nexus" class="article-tag" rel="tag">Project Nexus</a><a href="/tags/index.html#h3-interoperability-ng-bayad" class="article-tag" rel="tag">interoperability ng bayad</a><a href="/tags/index.html#h3-correspondent-banking" class="article-tag" rel="tag">correspondent banking</a><a href="/tags/index.html#h3-fragmentation-ng-bayad" class="article-tag" rel="tag">fragmentation ng bayad</a><a href="/tags/index.html#h3-wholesale-cbdc" class="article-tag" rel="tag">wholesale CBDC</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-19T06:06:06+00:00" class="meta-pub">Inilathala noong 19 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Tinatayang oras ng pagbasa">9 min basahin</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Mga nilalaman</h2><ol><li><a href="#bakit-ang-wholesale-na-bayad-ay-isang-kuwentong-pang-ekonomiko">Bakit ang Wholesale na Bayad ay Isang Kuwentong Pang-ekonomiko</a></li><li><a href="#ang-baseline-ng-wholesale-na-bayad-sa-2026">Ang Baseline ng Wholesale na Bayad sa 2026</a></li><li><a href="#ang-mga-pang-ekonomikong-friction-na-kailangang-alisin">Ang Mga Pang-ekonomikong Friction na Kailangang Alisin</a></li><li><a href="#talahanayan-ng-arkitektura-modernisasyon-ng-wholesale-na-bayad">Talahanayan ng Arkitektura: Modernisasyon ng Wholesale na Bayad</a></li><li><a href="#ano-ang-ibig-sabihin-nito-sa-bawat-uri-ng-institusyon">Ano ang Ibig Sabihin Nito sa Bawat Uri ng Institusyon</a></li><li><a href="#konklusyon">Konklusyon</a></li><li><a href="#mga-madalas-itanong">Mga Madalas Itanong</a></li><li><a href="#mga-sanggunian">Mga Sanggunian</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Ang pandaigdigang wholesale na bayad sa 2026 ay binabago ng harmonisasyon ng ISO 20022, pagpapanibago ng RTGS, pinalawak na mga settlement window, akses ng non-bank, pamamahala ng API, mga pilot ng DLT, at fragmentation ng cross-border na bayad. Ang isyu na pang-ekonomiko ay interoperability, hindi lamang messaging.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Bakit ang Wholesale na Bayad ay Isang Kuwentong Pang-ekonomiko.</strong> Ang cross-border na wholesale na bayad ay nakapailalim sa trade finance, correspondent banking, settlement ng securities, treasury ng korporasyon, at mga operasyon ng sentral na bangko.</li>  <li><strong>Ang Baseline ng Wholesale na Bayad sa 2026.</strong> Ang unang yugto ay ang paglipat ng mga sistema ng bayad sa ISO 20022.</li>  <li><strong>Ang Mga Pang-ekonomikong Friction na Kailangang Alisin.</strong> Ang mahinang istrukturadong datos ay nagdudulot ng mga payment investigation, false sanctions hits, mga pagkaantala sa reconciliation, at manwal na pagtatanong.</li>  <li><strong>Talahanayan ng Arkitektura: Modernisasyon ng Wholesale na Bayad.</strong> Ang prayoridad ay gawing isang kakayahan ng produkto ang datos ng ISO 20022 sa halip na isang conversion para sa compliance.</li></ul></aside><h1>Pandaigdigang Wholesale na Bayad sa 2026: ISO 20022, Pagpapanibago ng RTGS, at ang Ekonomiya ng Interoperability</h1>
+<p>Ang wholesale na bayad sa 2026 ay hindi na lamang plumbing ng bangko. Bahagi sila ng macroeconomic resilience, kakayahang makipagkumpitensya sa kalakalan, kahusayan ng liquidity, pagsunod sa sanctions, at ang estratehikong tunggalian tungkol sa fragmentation ng sistema ng bayad. Iginigiit ng BIS CPMI (Committee on Payments and Market Infrastructures) na ang harmonisadong pagpapatupad ng <a href="/fil/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html">ISO 20022</a> ay maaaring mabawasan ang matagal nang frictions sa cross-border na bayad sa pamamagitan ng structured na datos, mas mahusay na straight-through processing, at mas malakas na compliance screening (<a href="https://www.bis.org/cpmi/publ/brief11.htm" title="Ang hinaharap ng financial messaging: pag-navigate sa migrasyong ISO 20022">BIS CPMI</a>).</p>
+<hr />
+<blockquote>
+<p><strong>Buod Pang-ehekutibo / Pangunahing Punto</strong></p>
+<ul>
+<li><strong>Ang ISO 20022 ay ngayon ang ibinahaging wika ng modernisasyon ng wholesale na bayad.</strong> Sinasabi ng BIS CPMI na tinutugunan ng pamantayan ang fragmented messaging, data truncation, mahinang straight-through processing, at friction sa compliance (<a href="https://www.bis.org/cpmi/publ/brief11.htm" title="Ang hinaharap ng financial messaging: pag-navigate sa migrasyong ISO 20022">BIS CPMI</a>).</li>
+<li><strong>Ang G20 roadmap ay nasa likod pa rin ng target.</strong> Ang Marso 2026 na update ng FSB ay nagsasaad na totoo ang pag-unlad ngunit ang mga target sa 2027 ay hindi pa nasa tamang landas (<a href="https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/" title="Pagrereporma sa cross-border na bayad">FSB</a>).</li>
+<li><strong>Ang oras ng operasyon at akses ng RTGS ay mga lever na pang-ekonomiko.</strong> Iniulat ng FSB na higit sa kalahati ng mga hurisdiksyon ay pinalawak ang kanilang oras ng RTGS o nagpaplano ng pagpapalawak, habang ang direktang akses para sa mga non-bank na provider ay tumataas sa mga sistema ng bayad (<a href="https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/" title="Pagrereporma sa cross-border na bayad">FSB</a>).</li>
+<li><strong>Ang pinanibagong serbisyong RTGS ng Bank of England ay ginagawang malinaw ang resilience at interoperability.</strong> Ang pinanibagong serbisyo ay dinisenyo upang suportahan ang katatagang pananalapi at pinansiyal sa pamamagitan ng resilience, akses, interoperability, at functionality (<a href="https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits" title="Ang pinanibagong serbisyong RTGS — mga pangunahing benepisyo">Bank of England</a>).</li>
+<li><strong>Ang fragmentation ay ang macro risk.</strong> Nagbababala ang Atlantic Council na ang fragmentation ng sistema ng bayad ay maaaring magpataas ng gastos, magpabagal ng settlement, magpababa ng transparency, at magpahina ng pandaigdigang integrasyon sa pananalapi (<a href="https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/" title="Nagsasakanya-kanya ang mga pandaigdigang sistema ng bayad">Atlantic Council</a>).</li>
+<li><strong>Ang mga pilot ng DLT ay ngayon ay mga eksperimento sa imprastraktura, hindi crypto theatre.</strong> Ang mga gawaing nauugnay sa BIS tulad ng Project Agorá at mga European wholesale settlement pilot ay sinusubukan kung ang tokenisadong commercial bank money at central bank money ay maaaring mapabuti ang mataas na halaga ng cross-border settlement (<a href="https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/" title="Nagsasakanya-kanya ang mga pandaigdigang sistema ng bayad">Atlantic Council</a>).</li>
+<li><strong>Ang ekonomiya ay operasyonal.</strong> Ang isang cross-border na bayad ay nabibigo sa ekonomikong paraan kapag ang mayamang datos ay nawawala, ang compliance checks ay nagiging manwal, ang liquidity ay nakukulong ng mga time zone, at ang mga investigation ay nangangailangan ng pagsasaayos ng tao.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="bakit-ang-wholesale-na-bayad-ay-isang-kuwentong-pang-ekonomiko">Bakit ang Wholesale na Bayad ay Isang Kuwentong Pang-ekonomiko <a class="heading-anchor" href="#bakit-ang-wholesale-na-bayad-ay-isang-kuwentong-pang-ekonomiko" aria-label="Link patungo sa Bakit ang Wholesale na Bayad ay Isang Kuwentong Pang-ekonomiko">#</a></h2>
+<p>Ang cross-border na wholesale na bayad ay nakapailalim sa trade finance, correspondent banking, settlement ng securities, treasury ng korporasyon, at mga operasyon ng sentral na bangko. Kapag mabagal o malabo sila, nakukulong ang working capital. Kapag fragmented sila, tumataas ang mga liquidity buffer. Kapag mahina ang datos ng compliance, ang mga sanctions at AML check ay nagiging mahal na manwal na gawain.</p>
+<p>Inilalarawan ng Abril 2026 na brief ng BIS CPMI ang ISO 20022 bilang paraan upang istandardisahin ang mga data object, panuntunan, at proseso sa kabuuan ng bayad, securities, at treasury, na nagbibigay-daan sa interoperability sa pagitan ng mga institusyong pinansyal, market infrastructure, at end user (<a href="https://www.bis.org/cpmi/publ/brief11.htm" title="Ang hinaharap ng financial messaging: pag-navigate sa migrasyong ISO 20022">BIS CPMI</a>). Ito ang dahilan kung bakit ang migrasyon ay materyal sa ekonomiya at hindi lamang teknikal.</p>
+<h2 id="ang-baseline-ng-wholesale-na-bayad-sa-2026">Ang Baseline ng Wholesale na Bayad sa 2026 <a class="heading-anchor" href="#ang-baseline-ng-wholesale-na-bayad-sa-2026" aria-label="Link patungo sa Ang Baseline ng Wholesale na Bayad sa 2026">#</a></h2>
+<h3 id="1-lumipat-ang-iso-20022-mula-sa-migrasyon-patungo-sa-harmonisasyon">1. Lumipat ang ISO 20022 mula sa Migrasyon Patungo sa Harmonisasyon <a class="heading-anchor" href="#1-lumipat-ang-iso-20022-mula-sa-migrasyon-patungo-sa-harmonisasyon" aria-label="Link patungo sa 1. Lumipat ang ISO 20022 mula sa Migrasyon Patungo sa Harmonisasyon">#</a></h3>
+<p>Ang unang yugto ay ang paglipat ng mga sistema ng bayad sa ISO 20022. Ang ikalawang yugto ay ang paggawa ng pagpapatupad na sapat na pare-pareho upang makaligtas ang mga benepisyo sa kabuuan ng mga hangganan. Tinutukoy ng BIS CPMI ang structured na datos, nabawasang truncation, mas mahusay na screening, at pinahusay na reconciliation bilang mga pangunahing benepisyo ng harmonisadong pagpapatupad (<a href="https://www.bis.org/cpmi/publ/brief11.htm" title="Ang hinaharap ng financial messaging: pag-navigate sa migrasyong ISO 20022">BIS CPMI</a>).</p>
+<p>Ang mahirap na bahagi ay maaari pa ring magfragment ang ISO 20022 kung ang mga hurisdiksyon ay nagpapatibay ng iba't ibang field practices, validation rules, at mga kombensiyon sa optional na datos. Ang estratehikong gawain para sa mga bangko ay hindi lamang ang conversion ng format; ito ay ang semantikong pagkakahanay.</p>
+<h3 id="2-pinapalawak-ng-pagpapanibago-ng-rtgs-ang-settlement-window">2. Pinapalawak ng Pagpapanibago ng RTGS ang Settlement Window <a class="heading-anchor" href="#2-pinapalawak-ng-pagpapanibago-ng-rtgs-ang-settlement-window" aria-label="Link patungo sa 2. Pinapalawak ng Pagpapanibago ng RTGS ang Settlement Window">#</a></h3>
+<p>Mahalaga ang settlement window dahil ang pandaigdigang wholesale na bayad ay tumatawid sa mga time zone. Inilalarawan ng Mayo 2026 na talumpati ni Fabio Panetta sa BIS ang pambansang imprastraktura ng bayad bilang isang koordinata para sa reporma, kabilang ang mas malawak na settlement window at buong pag-ampon ng ISO 20022 (<a href="https://www.bis.org/cpmi/speeches/sp260505.pdf" title="Mag-interconnect upang patatagin: cross-border na bayad sa isang nagkakahati-hating mundo">BIS</a>).</p>
+<p>Ang pinanibagong serbisyong RTGS ng Bank of England ay tumutukoy sa parehong direksyon. Binibigyang-diin nito ang resilience, mas malawak na akses, interoperability, at isang naka-synchronise na settlement interface na maaaring mag-interoperate sa iba pang ledger at bawasan ang settlement risk at gastos sa liquidity (<a href="https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits" title="Ang pinanibagong serbisyong RTGS — mga pangunahing benepisyo">Bank of England</a>).</p>
+<h3 id="3-binabago-ng-akses-ng-non-bank-ang-competitive-structure">3. Binabago ng Akses ng Non-Bank ang Competitive Structure <a class="heading-anchor" href="#3-binabago-ng-akses-ng-non-bank-ang-competitive-structure" aria-label="Link patungo sa 3. Binabago ng Akses ng Non-Bank ang Competitive Structure">#</a></h3>
+<p>Pinapalawak ng mga sistema ng bayad ang direktang akses sa mga non-bank na payment service provider. Iniulat ng Mayo 2026 na talumpati ng BIS na ang direktang akses para sa mga non-bank na PSP ay umabot sa 45% sa mga fast payment system at 39% sa mga RTGS system batay sa datos ng 2025 (<a href="https://www.bis.org/cpmi/speeches/sp260505.pdf" title="Mag-interconnect upang patatagin: cross-border na bayad sa isang nagkakahati-hating mundo">BIS</a>).</p>
+<p>Mahalaga ito dahil binabago ng akses ng non-bank ang ekonomiya ng correspondent banking. Maaari nitong bawasan ang pag-asa sa mahabang correspondent chains, ngunit nangangailangan din ito ng pare-parehong regulasyon, kontrol sa liquidity, pamamahala ng settlement risk, at mga pamantayan sa operational resilience.</p>
+<h3 id="4-nagiging-alternatibo-ang-interlinking-sa-mga-parallel-na-rail">4. Nagiging Alternatibo ang Interlinking sa Mga Parallel na Rail <a class="heading-anchor" href="#4-nagiging-alternatibo-ang-interlinking-sa-mga-parallel-na-rail" aria-label="Link patungo sa 4. Nagiging Alternatibo ang Interlinking sa Mga Parallel na Rail">#</a></h3>
+<p>Iniulat ng FSB na ang mga inisyatiba sa Asia-Pacific ay nagtulak sa interlinking ng faster payment at ang mga arrangement sa interlinking ay sumasaklaw sa humigit-kumulang 17 bilateral na corridor, na may higit pa ang pinaplano (<a href="https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/" title="Pagrereporma sa cross-border na bayad">FSB</a>). Para sa wholesale na bayad, ang katumbas na tanong ay kung paano nag-iinteroperate ang mga sistemang RTGS, central bank money, mga tokenised ledger, at mga rail ng correspondent banking nang hindi lumilikha ng mga bagong silo.</p>
+<p>Kaakit-akit ang interlinking dahil pinapanatili nito ang sovereignty ng domestic payment system habang pinapayagan ang cross-border reach. Ang panganib ay ang bawat corridor ay nagiging isang bespoke engineering at legal na proyekto.</p>
+<h2 id="ang-mga-pang-ekonomikong-friction-na-kailangang-alisin">Ang Mga Pang-ekonomikong Friction na Kailangang Alisin <a class="heading-anchor" href="#ang-mga-pang-ekonomikong-friction-na-kailangang-alisin" aria-label="Link patungo sa Ang Mga Pang-ekonomikong Friction na Kailangang Alisin">#</a></h2>
+<h3 id="pagsasaayos-ng-datos">Pagsasaayos ng Datos <a class="heading-anchor" href="#pagsasaayos-ng-datos" aria-label="Link patungo sa Pagsasaayos ng Datos">#</a></h3>
+<p>Ang mahinang istrukturadong datos ay nagdudulot ng mga payment investigation, false sanctions hits, mga pagkaantala sa reconciliation, at manwal na pagtatanong. Sinasabi ng Mayo 2026 na talumpati ni Panetta na 1–3% ng mga bayad ang gumagawa ng mga query at ang harmonisadong ISO 20022 ay maaaring magbawas ng oras ng resolusyon ng inquiry ng hanggang 80% (<a href="https://www.bis.org/cpmi/speeches/sp260505.pdf" title="Mag-interconnect upang patatagin: cross-border na bayad sa isang nagkakahati-hating mundo">BIS</a>).</p>
+<p>Iyon ay hindi isang back-office optimisation. Ito ay isang pagpapabuti sa liquidity at karanasan ng customer sa systemic na sukat.</p>
+<h3 id="fragmentation-ng-liquidity">Fragmentation ng Liquidity <a class="heading-anchor" href="#fragmentation-ng-liquidity" aria-label="Link patungo sa Fragmentation ng Liquidity">#</a></h3>
+<p>Nag-fragment ang liquidity sa cross-border na bayad kapag hindi nag-oobserlap ang mga settlement window, kapag nangangailangan ang mga rail ng prefunding sa maraming hurisdiksyon, o kapag naiiba ang mga settlement asset. Binabawasan ng pagpapalawak ng oras ng operasyon ng RTGS ang problemang ito sa pamamagitan ng pagdaragdag ng overlap kung saan maaaring mag-settle ng mga transaksyon ang central bank money.</p>
+<p>Ang estratehikong pagtatapos ay hindi always-on na RTGS sa lahat ng dako bukas. Ang makatotohanang pagtatapos ay ang naka-target na pagpapalawak ng mga kritikal na window, mas mahusay na liquidity analytics, at synchronisation ng settlement kung saan pinakamataas ang benepisyong pang-ekonomiko.</p>
+<h3 id="pagdoble-ng-regulasyon">Pagdoble ng Regulasyon <a class="heading-anchor" href="#pagdoble-ng-regulasyon" aria-label="Link patungo sa Pagdoble ng Regulasyon">#</a></h3>
+<p>Ang cross-border na bayad ay dumadaan sa iba't ibang regimen ng AML, sanctions, privacy, at pagbabahagi ng datos. Itinatampok ng FSB ang mga gawain sa data frameworks, regulasyon ng mga bangko at non-bank, mga pamantayan ng FATF, at pandaraya sa cross-border na bayad bilang bahagi ng agenda ng reporma (<a href="https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/" title="Pagrereporma sa cross-border na bayad">FSB</a>).</p>
+<p>Hindi maaaring alisin ng teknolohiya ang mga obligasyong ito. Magagawa nitong mas maaga, mas mayaman, at hindi gaanong manwal ang mga compliance check.</p>
+<h2 id="talahanayan-ng-arkitektura-modernisasyon-ng-wholesale-na-bayad">Talahanayan ng Arkitektura: Modernisasyon ng Wholesale na Bayad <a class="heading-anchor" href="#talahanayan-ng-arkitektura-modernisasyon-ng-wholesale-na-bayad" aria-label="Link patungo sa Talahanayan ng Arkitektura: Modernisasyon ng Wholesale na Bayad">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Direksyon sa 2026</th>
+<th>Epekto sa Ekonomiya</th>
+<th>Panganib Kung Mahinang Naipatupad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Messaging</strong></td>
+<td>Harmonisasyon ng ISO 20022</td>
+<td>Mas mahusay na STP, screening, reconciliation</td>
+<td>Fragmented na paggamit ng field at data truncation</td>
+</tr>
+<tr>
+<td><strong>Settlement</strong></td>
+<td>Pinanibagong RTGS at mas malawak na oras</td>
+<td>Mas mababang liquidity buffer at mas mabilis na finality</td>
+<td>Operasyonal na pananakit at hindi pantay na coverage sa time zone</td>
+</tr>
+<tr>
+<td><strong>Akses</strong></td>
+<td>Mas maraming akses para sa non-bank na PSP</td>
+<td>Kompetisyon at mas maiikling payment chains</td>
+<td>Hindi pantay na supervision at pagtagas ng settlement risk</td>
+</tr>
+<tr>
+<td><strong>Interlinking</strong></td>
+<td>Mga bilateral at multilateral na link</td>
+<td>Reach nang hindi muling itinatayo ang mga domestic rail</td>
+<td>Fragmentation na partikular sa corridor</td>
+</tr>
+<tr>
+<td><strong>DLT / tokenisation</strong></td>
+<td>Mga pilot sa wholesale settlement</td>
+<td>Programmability at atomic na settlement</td>
+<td>Mga puwang sa legal na finality at interoperability</td>
+</tr>
+<tr>
+<td><strong>Pamamahala</strong></td>
+<td>Koordinasyon ng FSB, CPMI, FATF</td>
+<td>Pare-parehong pandaigdigang operating model</td>
+<td>Pagdoble ng compliance at pagkakaiba sa geopolitika</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ano-ang-ibig-sabihin-nito-sa-bawat-uri-ng-institusyon">Ano ang Ibig Sabihin Nito sa Bawat Uri ng Institusyon <a class="heading-anchor" href="#ano-ang-ibig-sabihin-nito-sa-bawat-uri-ng-institusyon" aria-label="Link patungo sa Ano ang Ibig Sabihin Nito sa Bawat Uri ng Institusyon">#</a></h2>
+<h3 id="mga-global-transaction-bank">Mga Global Transaction Bank <a class="heading-anchor" href="#mga-global-transaction-bank" aria-label="Link patungo sa Mga Global Transaction Bank">#</a></h3>
+<p>Ang prayoridad ay gawing isang kakayahan ng produkto ang datos ng ISO 20022 sa halip na isang conversion para sa compliance. Ang pinakamalakas na mga transaction bank ay gagamit ng structured na datos upang mapabuti ang reconciliation, pagtataya ng cash, pre-validation ng sanctions, mga investigation, at mga client treasury dashboard.</p>
+<h3 id="mga-sentral-na-bangko-at-market-infrastructure">Mga Sentral na Bangko at Market Infrastructure <a class="heading-anchor" href="#mga-sentral-na-bangko-at-market-infrastructure" aria-label="Link patungo sa Mga Sentral na Bangko at Market Infrastructure">#</a></h3>
+<p>Ang prayoridad ay pahabain ang mga oras ng operasyon kung saan malinaw ang benepisyo sa liquidity, palawakin ang akses nang ligtas, at iayon sa pandaigdigang mga kinakailangan sa datos. Ang pagpapanibago ng RTGS ngayon ay isang estratehikong programa ng pambansang imprastraktura, hindi isang pagpapalit ng back-office.</p>
+<h3 id="mga-korporasyon-at-pangkat-ng-treasury">Mga Korporasyon at Pangkat ng Treasury <a class="heading-anchor" href="#mga-korporasyon-at-pangkat-ng-treasury" aria-label="Link patungo sa Mga Korporasyon at Pangkat ng Treasury">#</a></h3>
+<p>Ang prayoridad ay transparency. Dapat hilingin ng mga treasurer sa mga bangko ang structured na pag-uulat ng status ng bayad, mas mahusay na analytics sa pagtanggi, mas mayamang datos sa remittance, at mga API na nagbabago ng ISO 20022 sa intelihensya sa working capital.</p>
+<h3 id="mga-fintech-at-psp">Mga Fintech at PSP <a class="heading-anchor" href="#mga-fintech-at-psp" aria-label="Link patungo sa Mga Fintech at PSP">#</a></h3>
+<p>Ang prayoridad ay akses kasama ang lalim sa compliance. Ang direkta o di-direktang akses sa mga settlement system ay mahalaga lamang kung ang PSP ay maaaring matugunan ang mga inaasahan sa kalidad ng bangko sa resilience, AML, sanctions, liquidity, at pag-uulat ng insidente.</p>
+<h2 id="konklusyon">Konklusyon <a class="heading-anchor" href="#konklusyon" aria-label="Link patungo sa Konklusyon">#</a></h2>
+<p>Ang kuwento ng pandaigdigang wholesale na bayad sa 2026 ay isang kuwento ng interoperability. Ang ISO 20022 ay nagbibigay ng wika, ang pagpapanibago ng RTGS ay nagbibigay ng pundasyon ng settlement, ang interlinking ay nagbibigay ng reach, at ang mga pilot ng DLT ay sinusubukan kung ang programmable settlement ay maaaring mapabuti ang modelo. Ang ekonomikong gantimpala ay mas kaunting nakulong na liquidity, mas kaunting manwal na pagsasaayos, mas mabilis na settlement, mas mahusay na compliance, at mas matatag na pandaigdigang kalakalan.</p>
+<p>Ang panganib ay ang bawat hurisdiksyon ay nag-iisang nagmomoderniso. Kung mangyari iyon, ang mundo ay magkakaroon ng mas bagong mga sistema ng bayad na nananatiling fragmented. Kung mananatili ang harmonisasyon, ang wholesale na bayad ay magiging tunay na motor ng pandaigdigang kahusayan sa ekonomiya.</p>
+<h2 id="mga-madalas-itanong">Mga Madalas Itanong <a class="heading-anchor" href="#mga-madalas-itanong" aria-label="Link patungo sa Mga Madalas Itanong">#</a></h2>
+<p><strong>Bakit mahalaga ang ISO 20022 para sa wholesale na bayad?</strong></p>
+<p>Mahalaga ito dahil pinapabuti ng structured na datos ang straight-through processing, compliance screening, reconciliation, at interoperability sa mga sistema ng bayad at market infrastructure (<a href="https://www.bis.org/cpmi/publ/brief11.htm" title="Ang hinaharap ng financial messaging: pag-navigate sa migrasyong ISO 20022">BIS CPMI</a>).</p>
+<p><strong>Nasa tamang landas ba ang G20 cross-border payments roadmap?</strong></p>
+<p>Sinasabi ng FSB na nagkaroon ng pag-unlad, ngunit ang mga target sa 2027 ay hindi pa nasa tamang landas at nangangailangan ng karagdagang aksyon mula sa pampubliko at pribadong sektor (<a href="https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/" title="Pagrereporma sa cross-border na bayad">FSB</a>).</p>
+<p><strong>Ano ang papel ng pagpapanibago ng RTGS?</strong></p>
+<p>Pinapabuti ng pagpapanibago ng RTGS ang resilience, akses, interoperability, at functionality ng settlement. Itinatampok din ng Bank of England ang mga synchronised settlement interface at ISO 20022 bilang mga mekanismo para sa pagbabawas ng settlement risk at gastos sa liquidity (<a href="https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits" title="Ang pinanibagong serbisyong RTGS — mga pangunahing benepisyo">Bank of England</a>).</p>
+<p><strong>Pinapalitan ba ng stablecoin ang wholesale na bayad?</strong></p>
+<p>Hindi. Maaaring impluwensiyahan ng mga stablecoin ang disenyo ng cross-border na bayad, ngunit ang wholesale na bayad ay nangangailangan ng settlement finality, mga ancla sa central bank money, mga prudential na kontrol, at legal na katiyakan. Ang mas kapani-paniwalang institusyonal na direksyon ay ang interoperability sa pagitan ng commercial bank money, central bank money, at mga tokenisadong sistema ng settlement.</p>
+<h2 id="mga-sanggunian">Mga Sanggunian <a class="heading-anchor" href="#mga-sanggunian" aria-label="Link patungo sa Mga Sanggunian">#</a></h2>
+<ul>
+<li>BIS CPMI, (2026). <a href="https://www.bis.org/cpmi/publ/brief11.htm" title="BIS CPMI Brief No 11">Ang hinaharap ng financial messaging: pag-navigate sa migrasyong ISO 20022 ⧉</a>.</li>
+<li>FSB, (2026). <a href="https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/" title="FSB">Pagrereporma sa cross-border na bayad — talumpating panimula sa FSB Payments Summit ⧉</a>.</li>
+<li>BIS, (2026). <a href="https://www.bis.org/cpmi/speeches/sp260505.pdf" title="Talumpati ni Fabio Panetta">Mag-interconnect upang patatagin: cross-border na bayad sa isang nagkakahati-hating mundo ⧉</a>.</li>
+<li>Bank of England, (2026). <a href="https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits" title="Bank of England">Ang pinanibagong serbisyong RTGS — mga pangunahing benepisyo ⧉</a>.</li>
+<li>Atlantic Council, (2026). <a href="https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/" title="Atlantic Council">Nagsasakanya-kanya ang mga pandaigdigang sistema ng bayad — narito kung ano ang magagawa ng G20 ⧉</a>.</li>
+</ul>
+<aside class="author-card" aria-label="Tungkol sa may-akda"><img alt="Portrait ni Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/fil/tungkol-sa-akin/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist na sumusulat tungkol sa applied AI, ISO 20022 migration, post-quantum cryptography para sa financial services, at structural transformation ng wholesale payments.</span><span class="author-credentials">Higit sa 20 taon sa HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA at Virgin Group. <a href="/fil/tungkol-sa-akin/index.html">Buong profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Huling sinuri <time datetime="2026-05-19">2026-05-19</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Kaugnay na pagbasa</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2026-05-12-iso-20022-pacs008-structured-address-deadline" class="related-media" aria-label="موعد pacs.008 «العنوان المُهيكَل» في نوفمبر 2026: نظرةٌ على ستّة أشهر" tabindex="-1"><img alt="ISO 20022 pacs.008 structured address diagram — cross-border payment message fields with TwnNm and Ctry highlighted" src="https://cloudcdn.pro/api/transform?url=/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="pacs-008-2026"><a href="https://sebastienrousseau.com/fil/2026-05-12-iso-20022-pacs008-structured-address-deadline">موعد pacs.008 «العنوان المُهيكَل» في نوفمبر 2026: نظرةٌ على ستّة أشهر</a> <a class="heading-anchor" href="#pacs-008-2026" aria-label="Link patungo sa موعد pacs.008 «العنوان المُهيكَل» في نوفمبر 2026: نظرةٌ على ستّة أشهر">#</a></h3><p><time datetime="2026-05-12">2026-05-12</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2025-09-01-quantum-safe-payments-epaa" class="related-media" aria-label="المدفوعات المقاومة للحوسبة الكمية: لماذا يجب على الصناعة التحرّك الآن" tabindex="-1"><img alt="Quantum computing circuit board in blue light" src="https://cloudcdn.pro/api/transform?url=/stocks/images/digital-nodes.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="section-21"><a href="https://sebastienrousseau.com/fil/2025-09-01-quantum-safe-payments-epaa">المدفوعات المقاومة للحوسبة الكمية: لماذا يجب على الصناعة التحرّك الآن</a> <a class="heading-anchor" href="#section-21" aria-label="Link patungo sa المدفوعات المقاومة للحوسبة الكمية: لماذا يجب على الصناعة التحرّك الآن">#</a></h3><p><time datetime="2025-09-01">2025-09-01</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fil/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html" class="related-media" aria-label="Static Site Generator: أسرع مولّد للمواقع الساكنة قائمٌ على Rust" tabindex="-1"><img alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right" src="https://cloudcdn.pro/api/transform?url=/stocks/images/anna-nekrashevich-8534387.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="static-site-generator-rust"><a href="https://sebastienrousseau.com/fil/2023-10-09-shokunin-the-fastest-rust-based-static-site-generator/index.html">Static Site Generator: أسرع مولّد للمواقع الساكنة قائمٌ على Rust</a> <a class="heading-anchor" href="#static-site-generator-rust" aria-label="Link patungo sa Static Site Generator: أسرع مولّد للمواقع الساكنة قائمٌ على Rust">#</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Mga pinagmulan at sanggunian</h2><ol class="article-sources-list"><li><a href="https://www.bis.org/cpmi/publ/brief11.htm" rel="external noopener nofollow"><span class="source-host">www.bis.org</span><span class="source-path">/cpmi/publ/brief11.htm</span></a></li><li><a href="https://www.bis.org/cpmi/speeches/sp260505.pdf" rel="external noopener nofollow"><span class="source-host">www.bis.org</span><span class="source-path">/cpmi/speeches/sp260505.pdf</span></a></li></ol></aside><nav class="post-pagination" aria-label="Pagination ng artikulo"><a class="post-pagination-prev" href="/fil/2026-05-18-quantum-cryptography-standards-developments-2026/"><span class="post-pagination-label">Nakaraan</span><span class="post-pagination-title">The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/fil/tungkol-sa-akin/index.html">Tungkol</a></li>
+              <li><a href="/fil/makipag-ugnayan/index.html">Makipag-ugnayan</a></li>
+              <li><a href="/fil/ginawa-sa-static-site-generator/index.html">Ginawa sa Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Pagsusulat</h2>
+            <ul>
+              <li><a href="/fil/mga-artikulo/index.html">Mga artikulo</a></li>
+              <li><a href="/fil/mga-publikasyon/index.html">Mga publikasyon</a></li>
+              <li><a href="/fil/mga-tag/index.html">Mga tag</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Trabaho</h2>
+            <ul>
+              <li><a href="/fil/mga-proyekto/index.html">Mga proyekto</a></li>
+              <li><a href="/fil/mga-playlist/index.html">Mga playlist</a></li>
+              <li><a href="/fil/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Makipag-ugnayan</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Pag-sign up sa newsletter">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — mga research note tungkol sa payments, AI at post-quantum crypto. Walang spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="ikaw@bangko.ph" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Mag-subscribe</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Mga link sa social media">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau sa Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau sa LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau sa Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sa YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau sa YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/fil/pagiging-accessible/index.html">Pagiging accessible</a> ·
+            <a href="/fil/pagkapribado/index.html">Pagkapribado</a> ·
+            <a href="/fil/mga-tuntunin/index.html">Mga tuntunin</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"fil"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"fil"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2075,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"headline":"Pandaigdigang Wholesale na Bayad sa 2026: ISO 20022, Pagpapanibago ng RTGS, at ang Ekonomiya ng Interoperability","description":"Ang pandaigdigang wholesale na bayad sa 2026 ay binabago ng harmonisasyon ng ISO 20022, pagpapanibago ng RTGS, pinalawak na mga settlement window, akses ng non-bank, pamamahala ng API, mga pilot ng DLT, at fragmentation ng cross-border na bayad. Ang isyu na pang-ekonomiko ay interoperability, hindi lamang messaging.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp","width":"100vw","height":"100vh","caption":"Mapa ng arkitektura ng pandaigdigang wholesale na bayad para sa 2026 — ISO 20022, pagpapanibago ng RTGS, mga cross-border corridor, mga liquidity window, at mga pilot ng DLT settlement"},"url":"https://sebastienrousseau.com/fil/2026-05-19-global-wholesale-payments-economics-2026/","datePublished":"2026-05-19T06:06:06+00:00","dateModified":"2026-05-19","inLanguage":"fil","keywords":"wholesale na bayad 2026, ekonomiya ng pandaigdigang bayad, ISO 20022, RTGS, cross-border na bayad, BIS CPMI, FSB, Swift CBPR+, G20 roadmap, real time gross settlement, Project Agorá, Project Mandala, Project Nexus, interoperability ng bayad, correspondent banking, fragmentation ng bayad, wholesale CBDC","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/fil/2026-05-19-global-wholesale-payments-economics-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"fil"},"citation":[{"@type":"CreativeWork","url":"https://www.bis.org/cpmi/publ/brief11.htm"},{"@type":"CreativeWork","url":"https://www.bis.org/cpmi/speeches/sp260505.pdf"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/fil/"},{"@type":"ListItem","position":3,"name":"Pandaigdigang Wholesale na Bayad sa 2026: ISO 20022, Pagpapanibago ng RTGS, at ang Ekonomiya ng Interoperability","item":"https://sebastienrousseau.com/fil/2026-05-19-global-wholesale-payments-economics-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Maghanap">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Maghanap</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Maghanap">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Maghanap sa dokumentasyon..." autocomplete="off" aria-label="Maghanap"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> isara</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> mag-navigate</span><span><kbd>Enter</kbd> buksan</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Pandaigdigang Wholesale na Bayad sa 2026: ISO 20022, Pagpapanibago ng RTGS, at ang Ekonomiya ng Interoperability","url":"https://sebastienrousseau.com/fil/2026-05-19-global-wholesale-payments-economics-2026/","inLanguage":"fil-PH","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"wholesale na bayad 2026, ekonomiya ng pandaigdigang bayad, ISO 20022, RTGS, cross-border na bayad, BIS CPMI, FSB, Swift CBPR+, G20 roadmap, real time gross settlement, Project Agorá, Project Mandala, Project Nexus, interoperability ng bayad, correspondent banking, fragmentation ng bayad, wholesale CBDC","dependencies":["ISO 20022"]}</script></body>
+</html>

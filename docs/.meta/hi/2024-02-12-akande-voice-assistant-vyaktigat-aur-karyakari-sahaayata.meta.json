@@ -1,11 +1,11 @@
 {
-  "date": "February 12, 2024",
-  "title": "Akande वॉइस-सहायक: व्यक्तिगत और कार्यकारी-सहायता में क्रांति",
-  "banner_alt": "एक वॉइस-सहायक का प्रतीक",
-  "language": "hi-IN",
-  "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp",
-  "keywords": "Akande, वॉइस सहायक, Rust, AI, गोपनीयता, executive, सहायक, Whisper, TTS, LLM",
   "subtitle": "Rust में निर्मित एक प्राइवेसी-फ़र्स्ट वॉइस-सहायक",
+  "description": "Akande एक Rust-आधारित वॉइस-सहायक है जो व्यक्तिगत और कार्यकारी-सहायता हेतु डिज़ाइन किया गया है।",
+  "keywords": "Akande, वॉइस सहायक, Rust, AI, गोपनीयता, executive, सहायक, Whisper, TTS, LLM",
+  "date": "February 12, 2024",
+  "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp",
+  "title": "Akande वॉइस-सहायक: व्यक्तिगत और कार्यकारी-सहायता में क्रांति",
   "locale": "hi_IN",
-  "description": "Akande एक Rust-आधारित वॉइस-सहायक है जो व्यक्तिगत और कार्यकारी-सहायता हेतु डिज़ाइन किया गया है।"
+  "language": "hi-IN",
+  "banner_alt": "एक वॉइस-सहायक का प्रतीक"
 }

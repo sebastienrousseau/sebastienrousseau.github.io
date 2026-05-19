@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-19-global-wholesale-payments-economics-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-19T06:06:06+00:00</news:publication_date>
+    <news:title>2026年全球批发支付：ISO 20022、RTGS更新与互操作性的经济学</news:title>
+    <news:keywords>批发支付 2026, 全球支付经济学, ISO 20022, RTGS, 跨境支付, BIS CPMI, FSB, Swift CBPR+, G20路线图, 实时全额结算, Project Agorá, Project Mandala, Project Nexus, 支付互操作性, 代理银行, 支付碎片化, 批发CBDC</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/zh-hans/2026-05-18-liangzi-mima-biaozhun-jinzhan-2026/</loc>
   <news:news>
     <news:publication>

@@ -60,6 +60,7 @@ coverage
 .coverage.*
 .coveragerc
 .claude/
+!.claude/commands/
 debug
 Desktop.ini
 dist

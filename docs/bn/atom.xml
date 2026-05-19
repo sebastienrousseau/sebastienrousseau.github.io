@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/bn/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/bn/"/>
   <id>https://sebastienrousseau.com/bn/</id>
-  <updated>2026-05-19T14:02:38+00:00</updated>
+  <updated>2026-05-19T15:47:30+00:00</updated>
+  <entry>
+    <title>২০২৬-এ বৈশ্বিক পাইকারি পেমেন্ট: ISO 20022, RTGS পুনর্নবায়ন এবং আন্তঃকার্যকারিতার অর্থনীতি</title>
+    <link href="https://sebastienrousseau.com/bn/2026-05-19-global-wholesale-payments-economics-2026/"/>
+    <id>https://sebastienrousseau.com/bn/2026-05-19-global-wholesale-payments-economics-2026/</id>
+    <updated>2026-05-19T06:06:06+00:00</updated>
+    <published>2026-05-19T06:06:06+00:00</published>
+    <summary>২০২৬-এ বৈশ্বিক পাইকারি পেমেন্ট ISO 20022 সমন্বয়, RTGS পুনর্নবায়ন, সম্প্রসারিত সেটেলমেন্ট উইন্ডো, ব্যাংক-বহির্ভূত প্রবেশাধিকার, API গভর্নেন্স, DLT পাইলট এবং সীমান্ত-পার পেমেন্ট খণ্ডায়নের মাধ্যমে নতুন রূপ পাচ্ছে। অর্থনৈতিক প্রশ্নটি কেবল মেসেজিং নয়, আন্তঃকার্যকারিতা।</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>২০২৬-এ কোয়ান্টাম ক্রিপ্টোগ্রাফি রিসেট: PQC মান, QKD নিশ্চয়তা, এবং যে মাইগ্রেশন কাজ ব্যাঙ্কগুলি স্থগিত করতে পারে না</title>
     <link href="https://sebastienrousseau.com/bn/2026-05-18-quantum-cryptography-standards-developments-2026/"/>

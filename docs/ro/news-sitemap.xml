@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ro/2026-05-19-global-wholesale-payments-economics-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ro-RO</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-19T06:06:06+00:00</news:publication_date>
+    <news:title>Plățile cu ridicata la nivel mondial în 2026: ISO 20022, reînnoirea RTGS și economia interoperabilității</news:title>
+    <news:keywords>plăți cu ridicata 2026, economia plăților mondiale, ISO 20022, RTGS, plăți transfrontaliere, BIS CPMI, FSB, Swift CBPR+, foaia de parcurs G20, decontare brută în timp real, Project Agorá, Project Mandala, Project Nexus, interoperabilitatea plăților, bănci corespondente, fragmentarea plăților, CBDC cu ridicata</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ro/2026-05-18-quantum-cryptography-standards-developments-2026/</loc>
   <news:news>
     <news:publication>

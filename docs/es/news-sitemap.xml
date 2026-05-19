@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/es/2026-05-19-global-mayorista-pagos-economia-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>es-ES</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-19T06:06:06+00:00</news:publication_date>
+    <news:title>Los pagos mayoristas mundiales en 2026: ISO 20022, renovación de los RTGS y la economía de la interoperabilidad</news:title>
+    <news:keywords>pagos mayoristas 2026, economía de los pagos mundiales, ISO 20022, RTGS, pagos transfronterizos, BIS CPMI, FSB, Swift CBPR+, hoja de ruta G20, liquidación bruta en tiempo real, Project Agorá, Project Mandala, Project Nexus, interoperabilidad de pagos, banca corresponsal, fragmentación de pagos, CBDC mayorista</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/es/2026-05-18-criptografia-cuantica-estandares-desarrollos-2026/</loc>
   <news:news>
     <news:publication>

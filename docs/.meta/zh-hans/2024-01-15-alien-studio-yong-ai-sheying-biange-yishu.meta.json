@@ -1,11 +1,11 @@
 {
+  "subtitle": "和我一起踏上从 Rust、AI 与量子计算到借 Alien Studio 重新定义艺术与摄影的个人旅程",
+  "language": "zh-Hans",
+  "keywords": "Alien Studio, AI 摄影, MidJourney, Rust, 人工智能, 量子计算, 数字艺术, 摄影, 创意, 数字文艺复兴",
+  "title": "Alien Studio：用 AI 摄影变革艺术",
   "banner": "https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp",
-  "description": "从 Rust、AI 与量子计算的探索到 Alien Studio 这一融合技术与艺术的摄影项目。",
   "banner_alt": "日落的缪斯，静谧一瞥；美在静止",
   "date": "January 15, 2024",
   "locale": "zh_CN",
-  "keywords": "Alien Studio, AI 摄影, MidJourney, Rust, 人工智能, 量子计算, 数字艺术, 摄影, 创意, 数字文艺复兴",
-  "language": "zh-Hans",
-  "subtitle": "和我一起踏上从 Rust、AI 与量子计算到借 Alien Studio 重新定义艺术与摄影的个人旅程",
-  "title": "Alien Studio：用 AI 摄影变革艺术"
+  "description": "从 Rust、AI 与量子计算的探索到 Alien Studio 这一融合技术与艺术的摄影项目。"
 }

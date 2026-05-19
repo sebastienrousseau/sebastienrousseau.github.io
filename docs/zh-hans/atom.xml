@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/zh-hans/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/zh-hans/"/>
   <id>https://sebastienrousseau.com/zh-hans/</id>
-  <updated>2026-05-19T14:02:38+00:00</updated>
+  <updated>2026-05-19T15:47:31+00:00</updated>
+  <entry>
+    <title>2026年全球批发支付：ISO 20022、RTGS更新与互操作性的经济学</title>
+    <link href="https://sebastienrousseau.com/zh-hans/2026-05-19-global-wholesale-payments-economics-2026/"/>
+    <id>https://sebastienrousseau.com/zh-hans/2026-05-19-global-wholesale-payments-economics-2026/</id>
+    <updated>2026-05-19T06:06:06+00:00</updated>
+    <published>2026-05-19T06:06:06+00:00</published>
+    <summary>2026年的全球批发支付正在被ISO 20022协调、RTGS更新、结算窗口延长、非银行机构准入、API治理、DLT试点以及跨境支付碎片化所重塑。其经济议题是互操作性，而不仅仅是消息传递。</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>2026 年量子密码重置：PQC 标准、QKD 保证与银行不能再延期的迁移工作</title>
     <link href="https://sebastienrousseau.com/zh-hans/2026-05-18-liangzi-mima-biaozhun-jinzhan-2026/"/>

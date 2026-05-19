@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/tr/2026-05-19-global-wholesale-payments-economics-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>tr-TR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-19T06:06:06+00:00</news:publication_date>
+    <news:title>2026&apos;da Küresel Toptan Ödemeler: ISO 20022, RTGS Yenileme ve Birlikte Çalışabilirliğin Ekonomisi</news:title>
+    <news:keywords>toptan ödemeler 2026, küresel ödemeler ekonomisi, ISO 20022, RTGS, sınır ötesi ödemeler, BIS CPMI, FSB, Swift CBPR+, G20 yol haritası, gerçek zamanlı brüt mutabakat, Project Agorá, Project Mandala, Project Nexus, ödeme birlikte çalışabilirliği, muhabir bankacılık, ödeme parçalanması, toptan CBDC</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/tr/2026-05-18-kuantum-kriptografi-standartlari-gelismeler-2026/</loc>
   <news:news>
     <news:publication>

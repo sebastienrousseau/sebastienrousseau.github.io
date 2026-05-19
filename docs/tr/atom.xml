@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/tr/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/tr/"/>
   <id>https://sebastienrousseau.com/tr/</id>
-  <updated>2026-05-19T14:02:38+00:00</updated>
+  <updated>2026-05-19T15:47:31+00:00</updated>
+  <entry>
+    <title>2026&apos;da Küresel Toptan Ödemeler: ISO 20022, RTGS Yenileme ve Birlikte Çalışabilirliğin Ekonomisi</title>
+    <link href="https://sebastienrousseau.com/tr/2026-05-19-global-wholesale-payments-economics-2026/"/>
+    <id>https://sebastienrousseau.com/tr/2026-05-19-global-wholesale-payments-economics-2026/</id>
+    <updated>2026-05-19T06:06:06+00:00</updated>
+    <published>2026-05-19T06:06:06+00:00</published>
+    <summary>2026&apos;da küresel toptan ödemeler; ISO 20022 uyumlaştırması, RTGS yenilemesi, genişletilmiş mutabakat pencereleri, banka dışı erişim, API yönetişimi, DLT pilotları ve sınır ötesi ödeme parçalanması tarafından yeniden şekillendirilmektedir. Ekonomik mesele yalnızca mesajlaşma değil, birlikte çalışabilirliktir.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>2026&apos;da Kuantum Kriptografi Sıfırlaması: PQC Standartları, QKD Güvencesi ve Bankaların Erteleyemeyeceği Geçiş Çalışması</title>
     <link href="https://sebastienrousseau.com/tr/2026-05-18-kuantum-kriptografi-standartlari-gelismeler-2026/"/>

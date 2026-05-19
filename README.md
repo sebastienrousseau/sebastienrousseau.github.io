@@ -612,22 +612,52 @@ The pre-commit-equivalent one-liner is `make build && make audit && make validat
 ### `make` targets
 
 ```bash
-make build # full build pipeline
-make serve # build + serve locally
-make audit # internal-link audit (strict)
-make validate # JSON-LD + XML feed validity
+make build           # full build pipeline
+make serve           # build + serve locally
+make audit           # internal-link audit (strict)
+make validate        # JSON-LD + XML feed validity
 make test-search-index # EN + per-language search-index shape guard
-make lint # ruff
-make test # pytest + coverage
+make lint            # ruff
+make test            # pytest + coverage
+make coverage        # combined coverage from build.sh + pytest
+make publish-today   # publish today's _drafts/YYYY-MM-DD-*.md
 ```
 
 ### Worked example: add a new article
 
+Drop your draft into `_drafts/` with the publication date in the
+filename, then run the daily-publish slash command from Claude Code:
+
 ```bash
-$ vim _posts/YYYY-MM-DD-my-new-article.md # write English source
-$ ./build.sh # builds EN page; non-EN langs fall back to EN until translated
-$ # 27 parallel translation passes will need _posts/<lang>/YYYY-MM-DD-<translated-slug>.md
-$ # and corresponding slugs.json entries per lang
+mv my-piece.md _drafts/2026-05-20-my-piece.md   # YYYY-MM-DD- prefix is the publish date
+
+# In Claude Code on your laptop:
+/publish-today
+```
+
+The slash command walks you through promote → scaffold the 27 locale
+stubs + slug-maps → translate each in-conversation (no API key, uses
+your existing Claude subscription) → manual editorial bumps to the
+homepage newsroom-grid + `/articles/` featured slot → full build →
+signed commit → push.
+
+Full step-by-step (frontmatter contract, editorial choices, what's
+auto-refreshed, every failure mode) lives in
+[**`doc/PUBLISHING.md`**](doc/PUBLISHING.md). The shorter
+[`doc/daily-publishing.md`](doc/daily-publishing.md) is the elevator
+pitch.
+
+If you'd rather drive the flow by hand:
+
+```bash
+mv my-piece.md _drafts/$(date -u +%F)-my-piece.md
+./scripts/publish_daily.sh                 # promote + scaffold 27 stubs + build
+$EDITOR _posts/index.md                    # prepend new newsroom-grid card
+$EDITOR scripts/gen_articles.py            # prepend ARTICLES[0] tuple
+python3 scripts/gen_articles.py
+python3 scripts/translate_post.py <slug> --list-stubs  # in Claude, translate each
+./build.sh
+git add -A && git commit -S -m "content: …" && git push
 ```
 
 ### Worked example: add a new language
@@ -724,6 +754,9 @@ For a general-purpose Rust SSG with theming, see [Static Site Generator](https:/
 | Document | Covers |
 |---|---|
 | [`DEPLOY.md`](DEPLOY.md) | Cloudflare configuration: PQC TLS toggle, Transform Rules for HSTS / COOP / CORP / X-Frame-Options, HSTS preload submission, verification commands, Worker deployment. |
+| [`doc/PUBLISHING.md`](doc/PUBLISHING.md) | **Definitive publishing runbook** — daily flow, frontmatter contract, editorial decisions, translation rules, what's auto-refreshed vs hand-maintained, every CI failure mode + fix, adding a new permanent section, forking the pipeline. |
+| [`doc/daily-publishing.md`](doc/daily-publishing.md) | Short-form sibling of `PUBLISHING.md` — TL;DR + when-to-push timing table. |
+| [`.claude/commands/publish-today.md`](.claude/commands/publish-today.md) | The slash command that drives the daily flow from Claude Code, using your local Claude subscription for translation (no API key in repo). |
 | [`doc/ARCHITECTURE.md`](doc/ARCHITECTURE.md) | Full pipeline architecture: every script in `scripts/`, every module in `postbuild_lib/`, every CI gate. With Mermaid diagrams. |
 | [`doc/I18N.md`](doc/I18N.md) | The 28-language translation system: registry, JSON glossaries, chrome patches, RTL handling, adding a new language end-to-end. |
 | [`doc/SECURITY.md`](doc/SECURITY.md) | Threat model, CSP design, SRI policy, PQC TLS, SBOM provenance, OpenPGP WKD. |

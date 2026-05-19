@@ -107,6 +107,10 @@ excerpt: "Quantum cryptography in 2026 has split into two practical tracks. Post
 
 
 
+
+
+
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Quantum cryptography in 2026 is no longer a debate about whether quantum computers are imminent. It is a migration programme across post-quantum cryptography, crypto-agility, quantum key distribution assurance, protocol standards, supplier readiness, and long-lived financial data that is already exposed to harvest-now-decrypt-later risk.</p>
@@ -131,7 +135,7 @@ Quantum cryptography in 2026 has split into two practical tracks. Post-quantum c
 > - **The UK NCSC has narrowed the practical choices.** It recommends ML-KEM-768 and ML-DSA-65 for most use cases, while warning that systems should rely on robust implementations of final standards rather than draft-compatible experiments ([NCSC](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography "NCSC next steps in preparing for PQC")).
 > - **Protocol readiness is uneven.** The IETF is updating TLS and IPsec for PQC and hybrid key exchange, but the NCSC cautions that operational systems should prefer published RFCs over changing Internet Drafts ([NCSC](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography "NCSC next steps in preparing for PQC")).
 > - **Hybrid is a transition mechanism, not an end state.** Hybrid public-key plus post-quantum schemes help phase migration and hedge implementation risk, but they add complexity and may require a second migration to PQC-only later ([NCSC](https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography "NCSC next steps in preparing for PQC")).
-> - **[QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) is not a replacement for PQC.** QKD can serve specialised high-assurance links, but its banking relevance depends on certification, interoperability, operational cost, and integration with existing key-management systems rather than the physics alone ([ID Quantique / ETSI QKD 016](https://www.idquantique.com/etsi-releases-qkd-protection-profile/ "ETSI releases QKD Protection Profile")).
+> - **[QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) is not a replacement for PQC.** [QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) can serve specialised high-assurance links, but its banking relevance depends on certification, interoperability, operational cost, and integration with existing key-management systems rather than the physics alone ([ID Quantique / ETSI QKD 016](https://www.idquantique.com/etsi-releases-qkd-protection-profile/ "ETSI releases QKD Protection Profile")).
 > - **The bank-level question is inventory.** A financial institution that cannot locate RSA, ECDH, ECDSA, EdDSA, proprietary VPN crypto, HSM templates, certificate lifetimes, and vendor-managed cryptography cannot migrate, regardless of which standards are available.
 > - **The risk is already live.** Harvest-now-decrypt-later attacks make long-lived financial data vulnerable before cryptographically relevant quantum computers exist, because the adversary only needs to collect the ciphertext today.
 > - **Crypto-agility is the durable control.** The winning architecture is not a one-off swap from RSA to ML-KEM; it is a platform ability to rotate algorithms, parameters, libraries, certificates, hardware policies, and protocol modes without rebuilding the bank.
@@ -160,7 +164,7 @@ That creates a staged implementation problem. A bank can inventory cryptography 
 
 ### 3. QKD Becomes an Assurance Discipline
 
-Quantum key distribution remains relevant for highly specialised links, particularly where the institution controls endpoints and network routes. The important 2026 development is not a single new QKD box; it is the emergence of certification language, with ETSI GS QKD 016 described as a protection profile milestone for QKD product evaluation ([ID Quantique / ETSI QKD 016](https://www.idquantique.com/etsi-releases-qkd-protection-profile/ "ETSI releases QKD Protection Profile")).
+[Quantum key distribution](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) remains relevant for highly specialised links, particularly where the institution controls endpoints and network routes. The important 2026 development is not a single new [QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) box; it is the emergence of certification language, with ETSI GS [QKD](/2023-12-11-quantum-key-distribution-revolutionising-security-in-banking/index.html) 016 described as a protection profile milestone for QKD product evaluation ([ID Quantique / ETSI QKD 016](https://www.idquantique.com/etsi-releases-qkd-protection-profile/ "ETSI releases QKD Protection Profile")).
 
 For banks, this shifts the buying conversation. The right question is no longer whether QKD is quantum-secure in principle. The right question is whether the device, integration, key-management process, operational environment, and certification evidence meet the bank’s threat model.
 

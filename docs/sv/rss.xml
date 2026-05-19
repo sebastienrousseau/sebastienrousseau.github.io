@@ -6,8 +6,34 @@
     <description>Artiklar på svenska: tillämpad AI, ISO 20022-betalningar, postkvantkryptografi och transformationen av grossistbetalningar.</description>
     <atom:link href="https://sebastienrousseau.com/sv/rss.xml" rel="self" type="application/rss+xml"/>
     <language>sv-SE</language>
-    <lastBuildDate>Tue, 19 May 2026 14:02:38 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 15:47:31 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna.</copyright>
+    <item>
+      <title>Globala stora betalningar 2026: ISO 20022, förnyelse av RTGS och interoperabilitetens ekonomi</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-19-global-wholesale-payments-economics-2026/</link>
+      <description>Globala stora betalningar omformas 2026 av harmonisering av ISO 20022, förnyelse av RTGS, utvidgade avvecklingsfönster, tillträde för icke-banker, API-styrning, DLT-piloter och fragmentering av gränsöverskridande betalningar. Den ekonomiska frågan är interoperabilitet, inte enbart meddelandeformat.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-19-global-wholesale-payments-economics-2026/</guid>
+      <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
+      <category>stora betalningar 2026</category>
+      <category>global betalningsekonomi</category>
+      <category>ISO 20022</category>
+      <category>RTGS</category>
+      <category>gränsöverskridande betalningar</category>
+      <category>BIS CPMI</category>
+      <category>FSB</category>
+      <category>Swift CBPR+</category>
+      <category>G20-färdplan</category>
+      <category>avveckling i realtid på bruttobasis</category>
+      <category>Project Agorá</category>
+      <category>Project Mandala</category>
+      <category>Project Nexus</category>
+      <category>interoperabilitet för betalningar</category>
+      <category>korrespondentbank</category>
+      <category>fragmentering av betalningar</category>
+      <category>grossist-CBDC</category>
+    </item>
     <item>
       <title>Återställningen av kvantkryptografi 2026: PQC-standarder, QKD-säkerhet och migrationsarbetet bankerna inte kan skjuta upp</title>
       <link>https://sebastienrousseau.com/sv/2026-05-18-kvantkryptografi-standarder-utveckling-2026/</link>

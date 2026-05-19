@@ -6,8 +6,34 @@
     <description>Artigos em português: IA aplicada, pagamentos ISO 20022, criptografia pós-quântica e transformação dos pagamentos de atacado.</description>
     <atom:link href="https://sebastienrousseau.com/pt-br/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 19 May 2026 14:02:38 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 15:47:31 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Todos os direitos reservados.</copyright>
+    <item>
+      <title>Pagamentos de atacado globais em 2026: ISO 20022, renovação dos RTGS e a economia da interoperabilidade</title>
+      <link>https://sebastienrousseau.com/pt-br/2026-05-19-globais-atacado-pagamentos-economia-2026/</link>
+      <description>Os pagamentos de atacado globais em 2026 estão sendo remodelados pela harmonização do ISO 20022, pela renovação dos RTGS, pela ampliação das janelas de liquidação, pelo acesso de não-bancos, pela governança de APIs, pelos pilotos de DLT e pela fragmentação dos pagamentos transfronteiriços. A questão econômica é a interoperabilidade, não apenas a mensageria.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/pt-br/2026-05-19-globais-atacado-pagamentos-economia-2026/</guid>
+      <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
+      <category>pagamentos de atacado 2026</category>
+      <category>economia dos pagamentos globais</category>
+      <category>ISO 20022</category>
+      <category>RTGS</category>
+      <category>pagamentos transfronteiriços</category>
+      <category>BIS CPMI</category>
+      <category>FSB</category>
+      <category>Swift CBPR+</category>
+      <category>roteiro do G20</category>
+      <category>liquidação bruta em tempo real</category>
+      <category>Project Agorá</category>
+      <category>Project Mandala</category>
+      <category>Project Nexus</category>
+      <category>interoperabilidade de pagamentos</category>
+      <category>banco correspondente</category>
+      <category>fragmentação de pagamentos</category>
+      <category>CBDC de atacado</category>
+    </item>
     <item>
       <title>O reset da criptografia quântica em 2026: padrões PQC, garantia de QKD e o trabalho de migração que os bancos não podem adiar</title>
       <link>https://sebastienrousseau.com/pt-br/2026-05-18-criptografia-quantica-padroes-desenvolvimentos-2026/</link>

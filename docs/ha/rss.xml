@@ -6,8 +6,34 @@
     <description>Labaran Hausa: AI mai amfani, biyan kuɗi na ISO 20022, kiriftografi bayan kwantum da sauye-sauyen biyan kuɗi na manyan.</description>
     <atom:link href="https://sebastienrousseau.com/ha/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ha-NG</language>
-    <lastBuildDate>Tue, 19 May 2026 14:02:38 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 15:47:30 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. An kiyaye duk hakkokin.</copyright>
+    <item>
+      <title>Biyan Kuɗi na Manyan Ƙimomi a Duniya a 2026: ISO 20022, Sabunta RTGS, da Tattalin Arzikin Haɗakar Tsare-tsare</title>
+      <link>https://sebastienrousseau.com/ha/2026-05-19-global-wholesale-payments-economics-2026/</link>
+      <description>Biyan kuɗi na manyan ƙimomi a duniya a 2026 yana sake fasalce ta hanyar daidaita ISO 20022, sabunta RTGS, tsawaita lokutan sasantawa, samun damar wadanda ba bankuna ba, mulkin API, gwajin DLT, da rarrabuwar biyan kuɗi tsakanin ƙasashe. Matsalar tattalin arziki ita ce haɗakar tsare-tsare, ba saƙon kawai ba.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-19-global-wholesale-payments-economics-2026/</guid>
+      <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
+      <category>biyan kuɗi na manyan ƙimomi 2026</category>
+      <category>tattalin arzikin biyan kuɗi a duniya</category>
+      <category>ISO 20022</category>
+      <category>RTGS</category>
+      <category>biyan kuɗi tsakanin ƙasashe</category>
+      <category>BIS CPMI</category>
+      <category>FSB</category>
+      <category>Swift CBPR+</category>
+      <category>taswirar G20</category>
+      <category>sasantawa ta gaba-ɗaya cikin lokaci</category>
+      <category>Project Agorá</category>
+      <category>Project Mandala</category>
+      <category>Project Nexus</category>
+      <category>haɗakar tsare-tsaren biyan kuɗi</category>
+      <category>bankunan haɗin gwiwa</category>
+      <category>rarrabuwar biyan kuɗi</category>
+      <category>CBDC na manyan ƙimomi</category>
+    </item>
     <item>
       <title>Sake Saita Sirrin Quantum a 2026: Ƙa&apos;idodin PQC, Tabbatar QKD, da Aikin Ƙaura da Bankuna Ba Za Su Iya Jinkirtawa Ba</title>
       <link>https://sebastienrousseau.com/ha/2026-05-18-quantum-cryptography-standards-developments-2026/</link>

@@ -1,4 +1,4 @@
-.PHONY: build serve regenerate audit clean test lint coverage
+.PHONY: build serve regenerate audit clean test lint coverage publish-today
 
 # Default target.
 build:
@@ -59,6 +59,14 @@ lint:
 # pass so public/ + docs/ are populated.
 coverage:
 	@./scripts/coverage_build.sh --with-pytest
+
+# Pick up today's _drafts/YYYY-MM-DD-*.md, promote it, translate to
+# all 27 non-EN locales (Anthropic API), regenerate listings, build,
+# and stage. The cron + commit/push wrapper is in
+# .github/workflows/publish-daily.yml.
+publish-today:
+	@chmod +x scripts/publish_daily.sh
+	@./scripts/publish_daily.sh
 
 # Wipe build output.
 clean:

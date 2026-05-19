@@ -6,8 +6,34 @@
     <description>Статті українською: прикладний ШІ, платежі ISO 20022, постквантова криптографія та трансформація оптових платежів.</description>
     <atom:link href="https://sebastienrousseau.com/uk/rss.xml" rel="self" type="application/rss+xml"/>
     <language>uk-UA</language>
-    <lastBuildDate>Tue, 19 May 2026 14:02:38 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 15:47:31 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Усі права захищено.</copyright>
+    <item>
+      <title>Глобальні оптові платежі у 2026 році: ISO 20022, оновлення RTGS та економіка сумісності</title>
+      <link>https://sebastienrousseau.com/uk/2026-05-19-global-wholesale-payments-economics-2026/</link>
+      <description>Глобальні оптові платежі у 2026 році перебудовуються гармонізацією ISO 20022, оновленням RTGS, розширенням розрахункових вікон, доступом небанківських установ, регулюванням API, пілотами DLT та фрагментацією транскордонних платежів. Економічне питання — сумісність, а не лише обмін повідомленнями.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/uk/2026-05-19-global-wholesale-payments-economics-2026/</guid>
+      <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
+      <category>оптові платежі 2026</category>
+      <category>економіка глобальних платежів</category>
+      <category>ISO 20022</category>
+      <category>RTGS</category>
+      <category>транскордонні платежі</category>
+      <category>BIS CPMI</category>
+      <category>FSB</category>
+      <category>Swift CBPR+</category>
+      <category>дорожня карта G20</category>
+      <category>валові розрахунки у реальному часі</category>
+      <category>Project Agorá</category>
+      <category>Project Mandala</category>
+      <category>Project Nexus</category>
+      <category>сумісність платежів</category>
+      <category>кореспондентські відносини</category>
+      <category>фрагментація платежів</category>
+      <category>оптова CBDC</category>
+    </item>
     <item>
       <title>Перезапуск квантової криптографії у 2026 році: стандарти PQC, гарантії QKD та робота з міграції, яку банки не можуть відкладати</title>
       <link>https://sebastienrousseau.com/uk/2026-05-18-kvantova-kryptohrafiya-standarty-rozvytok-2026/</link>

@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/fr/2026-05-19-mondiaux-de-gros-paiements-economie-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fr-FR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-19T06:06:06+00:00</news:publication_date>
+    <news:title>Les paiements de gros mondiaux en 2026 : ISO 20022, renouvellement des RTGS et l&apos;économie de l&apos;interopérabilité</news:title>
+    <news:keywords>paiements de gros 2026, économie des paiements mondiaux, ISO 20022, RTGS, paiements transfrontaliers, BIS CPMI, FSB, Swift CBPR+, feuille de route G20, règlement brut en temps réel, Project Agorá, Project Mandala, Project Nexus, interopérabilité des paiements, banque correspondante, fragmentation des paiements, CBDC de gros</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fr/2026-05-18-cryptographie-quantique-normes-developpements-2026/</loc>
   <news:news>
     <news:publication>

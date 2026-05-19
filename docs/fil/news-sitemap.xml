@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/fil/2026-05-19-global-wholesale-payments-economics-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>fil-PH</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-19T06:06:06+00:00</news:publication_date>
+    <news:title>Pandaigdigang Wholesale na Bayad sa 2026: ISO 20022, Pagpapanibago ng RTGS, at ang Ekonomiya ng Interoperability</news:title>
+    <news:keywords>wholesale na bayad 2026, ekonomiya ng pandaigdigang bayad, ISO 20022, RTGS, cross-border na bayad, BIS CPMI, FSB, Swift CBPR+, G20 roadmap, real time gross settlement, Project Agorá, Project Mandala, Project Nexus, interoperability ng bayad, correspondent banking, fragmentation ng bayad, wholesale CBDC</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/fil/2026-05-18-quantum-cryptography-standards-developments-2026/</loc>
   <news:news>
     <news:publication>

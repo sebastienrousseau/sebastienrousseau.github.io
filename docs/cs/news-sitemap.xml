@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/cs/2026-05-19-global-wholesale-payments-economics-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>cs-CZ</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-19T06:06:06+00:00</news:publication_date>
+    <news:title>Velkoobjemové platby ve světě v roce 2026: ISO 20022, obnova RTGS a ekonomika interoperability</news:title>
+    <news:keywords>velkoobjemové platby 2026, ekonomika světových plateb, ISO 20022, RTGS, přeshraniční platby, BIS CPMI, FSB, Swift CBPR+, cestovní mapa G20, zúčtování v reálném čase, Project Agorá, Project Mandala, Project Nexus, interoperabilita plateb, korespondenční bankovnictví, fragmentace plateb, velkoobjemová CBDC</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/cs/2026-05-18-kvantova-kryptografie-standardy-vyvoj-2026/</loc>
   <news:news>
     <news:publication>

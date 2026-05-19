@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Tue, 19 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Tue, 19 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Les paiements de gros mondiaux en 2026 : ISO 20022, renouvellement des RTGS et l&#x27;économie de l&#x27;interopérabilité — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Les paiements de gros mondiaux en 2026 sont remodelés par l&#x27;harmonisation ISO 20022, le renouvellement des RTGS, l&#x27;extension des fenêtres de règlement, l&#x27;accès des non-banques, la gouvernance des API, les pilotes DLT et la fragmentation des paiements transfrontaliers. L&#x27;enjeu économique est l&#x27;interopérabilité, pas seulement la messagerie.">
+<meta name="keywords" content="paiements de gros 2026, économie des paiements mondiaux, ISO 20022, RTGS, paiements transfrontaliers, BIS CPMI, FSB, Swift CBPR+, feuille de route G20, règlement brut en temps réel, Project Agorá, Project Mandala, Project Nexus, interopérabilité des paiements, banque correspondante, fragmentation des paiements, CBDC de gros">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Wholesale Payments 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-bLV4gcJGkFSBk1tuGn1Y1BTRAgOn0zdLwxLFZjRRwa0=' 'sha256-fvR+2R7eBXKbqX0ciJ9KKVm/GXoSnEygg3e2DkhhPDc=' 'sha256-oZ+Xr5Xlmyo2H1FSU5A4+HNuZ6QyLTL9B1YljiDeWlQ=' 'sha256-tyErzTLyQa4T+OrnQURRE7d4nHbNZsUsHQOhzMdNWMs=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/fr/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Flux Atom" href="/fr/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Les paiements de gros mondiaux en 2026 : ISO 20022, renouvellement des RTGS et l&#x27;économie de l&#x27;interopérabilité — Sebastien Rousseau">
+<meta property="og:description" content="Les paiements de gros mondiaux en 2026 sont remodelés par l&#x27;harmonisation ISO 20022, le renouvellement des RTGS, l&#x27;extension des fenêtres de règlement, l&#x27;accès des non-banques, la gouvernance des API, les pilotes DLT et la fragmentation des paiements transfrontaliers. L&#x27;enjeu économique est l&#x27;interopérabilité, pas seulement la messagerie.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/fr/2026-05-19-mondiaux-de-gros-paiements-economie-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Les paiements de gros mondiaux en 2026 : ISO 20022, renouvellement des RTGS et l&#x27;économie de l&#x27;interopérabilité — Sebastien Rousseau">
+<meta name="twitter:description" content="Les paiements de gros mondiaux en 2026 sont remodelés par l&#x27;harmonisation ISO 20022, le renouvellement des RTGS, l&#x27;extension des fenêtres de règlement, l&#x27;accès des non-banques, la gouvernance des API, les pilotes DLT et la fragmentation des paiements transfrontaliers. L&#x27;enjeu économique est l&#x27;interopérabilité, pas seulement la messagerie.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/fr/2026-05-19-mondiaux-de-gros-paiements-economie-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-19-mondiaux-de-gros-paiements-economie-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-19-globale-wholesale-zahlungsverkehr-okonomie-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-19-global-mayorista-pagos-economia-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-19-globali-wholesale-pagamenti-economia-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-19-globais-atacado-pagamentos-economia-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-19-global-wholesale-payments-economics-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Aller au contenu principal</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Basculer la navigation" />
+      <div class="wrap">
+        <a class="ap-brand" href="/fr/index.html" aria-label="Accueil de Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Navigation principale">
+          <ul class="ap-menu">
+            <li><a href="/fr/a-propos/index.html">À propos</a></li>
+            <li><a href="/fr/articles/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/fr/publications/index.html">Publications</a></li>
+            <li><a href="/fr/sujets/index.html">Sujets</a></li>
+            <li><a href="/fr/projets/index.html">Projets</a></li>
+            <li><a href="/fr/playlists/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Activer le thème sombre" aria-pressed="false" title="Changer de thème">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Rechercher (Cmd ou Ctrl + K)" title="Rechercher (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Langue">
+            <button type="button" class="ap-lang-toggle" aria-label="FR, Changer de langue" aria-expanded="false" aria-haspopup="menu" title="Changer de langue">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">FR</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/fr/contact/index.html" aria-label="Me contacter">Me contacter ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Basculer la navigation">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Les paiements de gros mondiaux en 2026 : ISO 20022, renouvellement des RTGS et l&#x27;économie de l&#x27;interopérabilité</h1>
+      <p class="sub">Les paiements de gros sont devenus un levier de politique économique : ISO 20022, heures d&#x27;ouverture des RTGS, accès des non-banques, interconnexion, pilotes de règlement DLT et feuille de route du G20 convergent autour du coût de la circulation mondiale de la liquidité.</p>
+    <nav class="article-tags" aria-label="Sujets"><a href="/fr/etiquettes/index.html#h3-paiements-de-gros-2026" class="article-tag" rel="tag">paiements de gros 2026</a><a href="/fr/etiquettes/index.html#h3-economie-des-paiements-mondiaux" class="article-tag" rel="tag">économie des paiements mondiaux</a><a href="/fr/etiquettes/index.html#h3-iso-20022" class="article-tag" rel="tag">ISO 20022</a><a href="/fr/etiquettes/index.html#h3-rtgs" class="article-tag" rel="tag">RTGS</a><a href="/fr/etiquettes/index.html#h3-paiements-transfrontaliers" class="article-tag" rel="tag">paiements transfrontaliers</a><a href="/fr/etiquettes/index.html#h3-bis-cpmi" class="article-tag" rel="tag">BIS CPMI</a><a href="/fr/etiquettes/index.html#h3-fsb" class="article-tag" rel="tag">FSB</a><a href="/fr/etiquettes/index.html#h3-swift-cbpr" class="article-tag" rel="tag">Swift CBPR+</a><a href="/fr/etiquettes/index.html#h3-feuille-de-route-g20" class="article-tag" rel="tag">feuille de route G20</a><a href="/fr/etiquettes/index.html#h3-reglement-brut-en-temps-reel" class="article-tag" rel="tag">règlement brut en temps réel</a><a href="/fr/etiquettes/index.html#h3-project-agora" class="article-tag" rel="tag">Project Agorá</a><a href="/fr/etiquettes/index.html#h3-project-mandala" class="article-tag" rel="tag">Project Mandala</a><a href="/fr/etiquettes/index.html#h3-project-nexus" class="article-tag" rel="tag">Project Nexus</a><a href="/fr/etiquettes/index.html#h3-interoperabilite-des-paiements" class="article-tag" rel="tag">interopérabilité des paiements</a><a href="/fr/etiquettes/index.html#h3-banque-correspondante" class="article-tag" rel="tag">banque correspondante</a><a href="/fr/etiquettes/index.html#h3-fragmentation-des-paiements" class="article-tag" rel="tag">fragmentation des paiements</a><a href="/fr/etiquettes/index.html#h3-cbdc-de-gros" class="article-tag" rel="tag">CBDC de gros</a></nav><div class="article-meta"><a href="/fr/a-propos/index.html" class="article-author" rel="author"><img alt="Portrait de Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-19T06:06:06+00:00" class="meta-pub">Publié le 19 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Temps de lecture estimé">9 min de lecture</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Sommaire</h2><ol><li><a href="#pourquoi-les-paiements-de-gros-sont-une-histoire-economique">Pourquoi les paiements de gros sont une histoire économique</a></li><li><a href="#la-base-de-reference-des-paiements-de-gros-en-2026">La base de référence des paiements de gros en 2026</a></li><li><a href="#les-frictions-economiques-a-supprimer">Les frictions économiques à supprimer</a></li><li><a href="#tableau-d-architecture-modernisation-des-paiements-de-gros">Tableau d'architecture : modernisation des paiements de gros</a></li><li><a href="#ce-que-cela-signifie-par-type-d-institution">Ce que cela signifie par type d'institution</a></li><li><a href="#conclusion">Conclusion</a></li><li><a href="#foire-aux-questions">Foire aux questions</a></li><li><a href="#references">Références</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Les paiements de gros mondiaux en 2026 sont remodelés par l&#x27;harmonisation ISO 20022, le renouvellement des RTGS, l&#x27;extension des fenêtres de règlement, l&#x27;accès des non-banques, la gouvernance des API, les pilotes DLT et la fragmentation des paiements transfrontaliers. L&#x27;enjeu économique est l&#x27;interopérabilité, pas seulement la messagerie.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Pourquoi les paiements de gros sont une histoire économique.</strong> Les paiements de gros transfrontaliers sous-tendent le financement du commerce, la banque correspondante, le règlement des titres, la trésorerie des entreprises et les opérations des banques centrales.</li>  <li><strong>La base de référence des paiements de gros en 2026.</strong> La première phase consistait à faire migrer les systèmes de paiement vers ISO 20022.</li>  <li><strong>Les frictions économiques à supprimer.</strong> Des données mal structurées provoquent des investigations de paiement, de faux positifs de sanctions, des retards de réconciliation et des demandes manuelles.</li>  <li><strong>Tableau d&#x27;architecture : modernisation des paiements de gros.</strong> La priorité est de faire des données ISO 20022 une capacité produit plutôt qu&#x27;une conversion de conformité.</li></ul></aside><h1>Les paiements de gros mondiaux en 2026 : ISO 20022, renouvellement des RTGS et l'économie de l'interopérabilité</h1>
+<p>Les paiements de gros en 2026 ne sont plus une simple plomberie bancaire. Ils font partie de la résilience macroéconomique, de la compétitivité commerciale, de l'efficacité de la liquidité, de la conformité aux sanctions et de la contestation stratégique autour de la fragmentation des systèmes de paiement. Le BIS CPMI (Comité sur les paiements et les infrastructures de marché) soutient qu'une mise en œuvre harmonisée d'<a title="Automatiser la création de fichiers de paiement conformes ISO 20022 avec Pain001" href="/fr/2023-09-29-automatiser-fichiers-de-paiement-iso-20022-avec-pain001/index.html">ISO 20022</a> peut réduire les frictions persistantes des paiements transfrontaliers grâce à des données structurées, à un meilleur traitement direct et à un filtrage de conformité plus robuste (<a href="https://www.bis.org/cpmi/publ/brief11.htm" title="L'avenir de la messagerie financière : naviguer dans la migration ISO 20022">BIS CPMI</a>).</p>
+<hr />
+<blockquote>
+<p><strong>Résumé exécutif / Points clés</strong></p>
+<ul>
+<li><strong>ISO 20022 est désormais le langage commun de la modernisation des paiements de gros.</strong> Le BIS CPMI indique que la norme traite la messagerie fragmentée, la troncature des données, la faiblesse du traitement direct et les frictions de conformité (<a href="https://www.bis.org/cpmi/publ/brief11.htm" title="L'avenir de la messagerie financière : naviguer dans la migration ISO 20022">BIS CPMI</a>).</li>
+<li><strong>La feuille de route du G20 reste en retard sur ses objectifs.</strong> La mise à jour du FSB de mars 2026 indique que les progrès sont réels mais que les cibles 2027 ne sont pas encore en bonne voie (<a href="https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/" title="Réformer les paiements transfrontaliers">FSB</a>).</li>
+<li><strong>Les heures d'ouverture des RTGS et l'accès sont des leviers économiques.</strong> Le FSB note que plus de la moitié des juridictions ont étendu leurs heures RTGS ou prévoient des extensions, tandis que l'accès direct aux prestataires non bancaires progresse dans les systèmes de paiement (<a href="https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/" title="Réformer les paiements transfrontaliers">FSB</a>).</li>
+<li><strong>Le service RTGS renouvelé de la Banque d'Angleterre rend explicites la résilience et l'interopérabilité.</strong> Le service renouvelé est conçu pour soutenir la stabilité monétaire et financière par la résilience, l'accès, l'interopérabilité et la fonctionnalité (<a href="https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits" title="Le service RTGS renouvelé — avantages clés">Bank of England</a>).</li>
+<li><strong>La fragmentation est le risque macro.</strong> L'Atlantic Council avertit que la fragmentation des systèmes de paiement peut augmenter les coûts, ralentir le règlement, réduire la transparence et affaiblir l'intégration financière mondiale (<a href="https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/" title="Les systèmes de paiement mondiaux se fragmentent">Atlantic Council</a>).</li>
+<li><strong>Les pilotes DLT sont désormais des expérimentations d'infrastructure, pas du théâtre crypto.</strong> Les travaux liés au BIS comme Project Agorá et les pilotes européens de règlement de gros testent si la monnaie de banque commerciale tokenisée et la monnaie de banque centrale peuvent améliorer le règlement transfrontalier de gros (<a href="https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/" title="Les systèmes de paiement mondiaux se fragmentent">Atlantic Council</a>).</li>
+<li><strong>L'économie est opérationnelle.</strong> Un paiement transfrontalier échoue économiquement lorsque les données riches sont perdues, que les contrôles de conformité deviennent manuels, que la liquidité est piégée par les fuseaux horaires et que les investigations nécessitent une réparation humaine.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="pourquoi-les-paiements-de-gros-sont-une-histoire-economique">Pourquoi les paiements de gros sont une histoire économique <a class="heading-anchor" href="#pourquoi-les-paiements-de-gros-sont-une-histoire-economique" aria-label="Lien vers Pourquoi les paiements de gros sont une histoire économique">#</a></h2>
+<p>Les paiements de gros transfrontaliers sous-tendent le financement du commerce, la banque correspondante, le règlement des titres, la trésorerie des entreprises et les opérations des banques centrales. Lorsqu'ils sont lents ou opaques, le fonds de roulement est piégé. Lorsqu'ils sont fragmentés, les coussins de liquidité augmentent. Lorsque les données de conformité sont faibles, les contrôles de sanctions et de lutte contre le blanchiment de capitaux deviennent un travail manuel coûteux.</p>
+<p>La note d'avril 2026 du BIS CPMI décrit ISO 20022 comme un moyen de standardiser les objets de données, les règles et les processus à travers les paiements, les titres et la trésorerie, permettant l'interopérabilité entre les institutions financières, les infrastructures de marché et les utilisateurs finaux (<a href="https://www.bis.org/cpmi/publ/brief11.htm" title="L'avenir de la messagerie financière : naviguer dans la migration ISO 20022">BIS CPMI</a>). C'est pourquoi la migration est économiquement significative plutôt que simplement technique.</p>
+<h2 id="la-base-de-reference-des-paiements-de-gros-en-2026">La base de référence des paiements de gros en 2026 <a class="heading-anchor" href="#la-base-de-reference-des-paiements-de-gros-en-2026" aria-label="Lien vers La base de référence des paiements de gros en 2026">#</a></h2>
+<h3 id="1-iso-20022-passe-de-la-migration-a-l-harmonisation">1. ISO 20022 passe de la migration à l'harmonisation <a class="heading-anchor" href="#1-iso-20022-passe-de-la-migration-a-l-harmonisation" aria-label="Lien vers 1. ISO 20022 passe de la migration à l'harmonisation">#</a></h3>
+<p>La première phase consistait à faire migrer les systèmes de paiement vers ISO 20022. La seconde consiste à rendre la mise en œuvre suffisamment cohérente pour que les bénéfices survivent au passage des frontières. Le BIS CPMI identifie les données structurées, la réduction de la troncature, un meilleur filtrage et une meilleure réconciliation comme bénéfices essentiels d'une mise en œuvre harmonisée (<a href="https://www.bis.org/cpmi/publ/brief11.htm" title="L'avenir de la messagerie financière : naviguer dans la migration ISO 20022">BIS CPMI</a>).</p>
+<p>La difficulté est qu'ISO 20022 peut tout de même se fragmenter si les juridictions adoptent des pratiques de champs, des règles de validation et des conventions de données optionnelles différentes. Le travail stratégique des banques n'est donc pas seulement la conversion de format ; c'est l'alignement sémantique.</p>
+<h3 id="2-le-renouvellement-des-rtgs-etend-la-fenetre-de-reglement">2. Le renouvellement des RTGS étend la fenêtre de règlement <a class="heading-anchor" href="#2-le-renouvellement-des-rtgs-etend-la-fenetre-de-reglement" aria-label="Lien vers 2. Le renouvellement des RTGS étend la fenêtre de règlement">#</a></h3>
+<p>La fenêtre de règlement compte parce que les paiements de gros mondiaux traversent les fuseaux horaires. Le discours de Fabio Panetta au BIS en mai 2026 présente l'infrastructure nationale de paiement comme une coordonnée de réforme, incluant des fenêtres de règlement élargies et une adoption complète d'ISO 20022 (<a href="https://www.bis.org/cpmi/speeches/sp260505.pdf" title="Interconnecter pour stabiliser : les paiements transfrontaliers dans un monde qui se fragmente">BIS</a>).</p>
+<p>Le service RTGS renouvelé de la Banque d'Angleterre va dans la même direction. Il met l'accent sur la résilience, un accès élargi, l'interopérabilité et une interface de règlement synchronisée capable d'interopérer avec d'autres registres et de réduire le risque de règlement et les coûts de liquidité (<a href="https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits" title="Le service RTGS renouvelé — avantages clés">Bank of England</a>).</p>
+<h3 id="3-l-acces-des-non-banques-change-la-structure-concurrentielle">3. L'accès des non-banques change la structure concurrentielle <a class="heading-anchor" href="#3-l-acces-des-non-banques-change-la-structure-concurrentielle" aria-label="Lien vers 3. L'accès des non-banques change la structure concurrentielle">#</a></h3>
+<p>Les systèmes de paiement élargissent l'accès direct aux prestataires de services de paiement non bancaires. Le discours du BIS de mai 2026 rapporte que l'accès direct des PSP non bancaires a atteint 45 % dans les systèmes de paiement rapide et 39 % dans les systèmes RTGS sur les données de 2025 (<a href="https://www.bis.org/cpmi/speeches/sp260505.pdf" title="Interconnecter pour stabiliser : les paiements transfrontaliers dans un monde qui se fragmente">BIS</a>).</p>
+<p>Cela importe parce que l'accès des non-banques modifie l'économie de la banque correspondante. Il peut réduire la dépendance aux longues chaînes correspondantes, mais il exige aussi une réglementation cohérente, des contrôles de liquidité, une gouvernance du risque de règlement et des normes de résilience opérationnelle.</p>
+<h3 id="4-l-interconnexion-devient-l-alternative-aux-rails-paralleles">4. L'interconnexion devient l'alternative aux rails parallèles <a class="heading-anchor" href="#4-l-interconnexion-devient-l-alternative-aux-rails-paralleles" aria-label="Lien vers 4. L'interconnexion devient l'alternative aux rails parallèles">#</a></h3>
+<p>Le FSB note que les initiatives de la région Asie-Pacifique ont porté l'interconnexion des paiements rapides et que les arrangements d'interconnexion couvrent environ 17 corridors bilatéraux, avec d'autres prévus (<a href="https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/" title="Réformer les paiements transfrontaliers">FSB</a>). Pour les paiements de gros, la question équivalente est de savoir comment les systèmes RTGS, la monnaie de banque centrale, les registres tokenisés et les rails de banque correspondante interopèrent sans créer de nouveaux silos.</p>
+<p>L'interconnexion est attractive parce qu'elle préserve la souveraineté des systèmes de paiement domestiques tout en permettant une portée transfrontalière. Le risque est que chaque corridor devienne un projet d'ingénierie et juridique sur mesure.</p>
+<h2 id="les-frictions-economiques-a-supprimer">Les frictions économiques à supprimer <a class="heading-anchor" href="#les-frictions-economiques-a-supprimer" aria-label="Lien vers Les frictions économiques à supprimer">#</a></h2>
+<h3 id="reparation-de-donnees">Réparation de données <a class="heading-anchor" href="#reparation-de-donnees" aria-label="Lien vers Réparation de données">#</a></h3>
+<p>Des données mal structurées provoquent des investigations de paiement, de faux positifs de sanctions, des retards de réconciliation et des demandes manuelles. Le discours de Panetta en mai 2026 indique que 1 à 3 % des paiements génèrent des enquêtes et que l'harmonisation d'ISO 20022 peut réduire les délais de résolution des enquêtes jusqu'à 80 % (<a href="https://www.bis.org/cpmi/speeches/sp260505.pdf" title="Interconnecter pour stabiliser : les paiements transfrontaliers dans un monde qui se fragmente">BIS</a>).</p>
+<p>Ce n'est pas une optimisation de back-office. C'est une amélioration de la liquidité et de l'expérience client à l'échelle systémique.</p>
+<h3 id="fragmentation-de-la-liquidite">Fragmentation de la liquidité <a class="heading-anchor" href="#fragmentation-de-la-liquidite" aria-label="Lien vers Fragmentation de la liquidité">#</a></h3>
+<p>Les paiements transfrontaliers fragmentent la liquidité lorsque les fenêtres de règlement ne se chevauchent pas, lorsque les rails exigent un préfinancement dans plusieurs juridictions ou lorsque les actifs de règlement diffèrent. L'extension des heures d'ouverture des RTGS réduit ce problème en augmentant le chevauchement durant lequel la monnaie de banque centrale peut régler les transactions.</p>
+<p>Le point d'arrivée stratégique n'est pas un RTGS en permanence partout dès demain. Le point d'arrivée réaliste est l'extension ciblée de fenêtres critiques, une meilleure analyse de la liquidité et la synchronisation du règlement là où le bénéfice économique est le plus élevé.</p>
+<h3 id="duplication-reglementaire">Duplication réglementaire <a class="heading-anchor" href="#duplication-reglementaire" aria-label="Lien vers Duplication réglementaire">#</a></h3>
+<p>Les paiements transfrontaliers passent à travers différents régimes de lutte contre le blanchiment de capitaux, de sanctions, de confidentialité et de partage de données. Le FSB met en avant les travaux sur les cadres de données, la réglementation des banques et non-banques, les normes du GAFI et la fraude aux paiements transfrontaliers dans le cadre du programme de réforme (<a href="https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/" title="Réformer les paiements transfrontaliers">FSB</a>).</p>
+<p>La technologie ne peut pas supprimer ces obligations. Elle peut rendre les contrôles de conformité plus précoces, plus riches et moins manuels.</p>
+<h2 id="tableau-d-architecture-modernisation-des-paiements-de-gros">Tableau d'architecture : modernisation des paiements de gros <a class="heading-anchor" href="#tableau-d-architecture-modernisation-des-paiements-de-gros" aria-label="Lien vers Tableau d'architecture : modernisation des paiements de gros">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Couche</th>
+<th>Direction 2026</th>
+<th>Effet économique</th>
+<th>Risque en cas de mauvaise mise en œuvre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Messagerie</strong></td>
+<td>Harmonisation ISO 20022</td>
+<td>Meilleur STP, filtrage, réconciliation</td>
+<td>Usage fragmenté des champs et troncature des données</td>
+</tr>
+<tr>
+<td><strong>Règlement</strong></td>
+<td>RTGS renouvelé et heures élargies</td>
+<td>Coussins de liquidité réduits et finalité plus rapide</td>
+<td>Tension opérationnelle et couverture de fuseaux horaires inégale</td>
+</tr>
+<tr>
+<td><strong>Accès</strong></td>
+<td>Plus d'accès des PSP non bancaires</td>
+<td>Concurrence et chaînes de paiement plus courtes</td>
+<td>Supervision inégale et fuite du risque de règlement</td>
+</tr>
+<tr>
+<td><strong>Interconnexion</strong></td>
+<td>Liens bilatéraux et multilatéraux</td>
+<td>Portée sans reconstruire les rails domestiques</td>
+<td>Fragmentation propre à chaque corridor</td>
+</tr>
+<tr>
+<td><strong>DLT / tokenisation</strong></td>
+<td>Pilotes de règlement de gros</td>
+<td>Programmabilité et règlement atomique</td>
+<td>Lacunes de finalité juridique et d'interopérabilité</td>
+</tr>
+<tr>
+<td><strong>Gouvernance</strong></td>
+<td>Coordination FSB, CPMI, GAFI</td>
+<td>Modèle opérationnel mondial cohérent</td>
+<td>Duplication de conformité et divergence géopolitique</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ce-que-cela-signifie-par-type-d-institution">Ce que cela signifie par type d'institution <a class="heading-anchor" href="#ce-que-cela-signifie-par-type-d-institution" aria-label="Lien vers Ce que cela signifie par type d'institution">#</a></h2>
+<h3 id="banques-de-transaction-mondiales">Banques de transaction mondiales <a class="heading-anchor" href="#banques-de-transaction-mondiales" aria-label="Lien vers Banques de transaction mondiales">#</a></h3>
+<p>La priorité est de faire des données ISO 20022 une capacité produit plutôt qu'une conversion de conformité. Les banques de transaction les plus solides utiliseront les données structurées pour améliorer la réconciliation, la prévision de trésorerie, la pré-validation des sanctions, les investigations et les tableaux de bord de trésorerie clients.</p>
+<h3 id="banques-centrales-et-infrastructures-de-marche">Banques centrales et infrastructures de marché <a class="heading-anchor" href="#banques-centrales-et-infrastructures-de-marche" aria-label="Lien vers Banques centrales et infrastructures de marché">#</a></h3>
+<p>La priorité est d'étendre les fenêtres d'ouverture là où le bénéfice de liquidité est clair, d'élargir l'accès en toute sécurité et de s'aligner sur les exigences mondiales en matière de données. Le renouvellement des RTGS est désormais un programme stratégique d'infrastructure nationale, pas un remplacement de back-office.</p>
+<h3 id="entreprises-et-equipes-de-tresorerie">Entreprises et équipes de trésorerie <a class="heading-anchor" href="#entreprises-et-equipes-de-tresorerie" aria-label="Lien vers Entreprises et équipes de trésorerie">#</a></h3>
+<p>La priorité est la transparence. Les trésoriers devraient demander aux banques un reporting structuré du statut des paiements, une meilleure analyse des rejets, des données de remise plus riches et des API qui transforment ISO 20022 en intelligence du fonds de roulement.</p>
+<h3 id="fintechs-et-psp">Fintechs et PSP <a class="heading-anchor" href="#fintechs-et-psp" aria-label="Lien vers Fintechs et PSP">#</a></h3>
+<p>La priorité est l'accès plus la profondeur de conformité. Un accès direct ou indirect aux systèmes de règlement n'a de valeur que si le PSP peut satisfaire des attentes de qualité bancaire en matière de résilience, lutte contre le blanchiment de capitaux, sanctions, liquidité et notification des incidents.</p>
+<h2 id="conclusion">Conclusion <a class="heading-anchor" href="#conclusion" aria-label="Lien vers Conclusion">#</a></h2>
+<p>L'histoire des paiements de gros mondiaux en 2026 est une histoire d'interopérabilité. ISO 20022 fournit le langage, le renouvellement des RTGS fournit la fondation du règlement, l'interconnexion fournit la portée, et les pilotes DLT testent si le règlement programmable peut améliorer le modèle. Le prix économique est moins de liquidité piégée, moins de réparations manuelles, un règlement plus rapide, une meilleure conformité et un commerce mondial plus résilient.</p>
+<p>Le risque est que chaque juridiction se modernise seule. Si cela se produit, le monde obtient des systèmes de paiement plus récents qui restent fragmentés. Si l'harmonisation tient, les paiements de gros deviennent un véritable moteur d'efficacité économique mondiale.</p>
+<h2 id="foire-aux-questions" class="qa-headline">Questions ? <span class="qa-headline-soft">Réponses.</span></h2><section class="qa-list" aria-labelledby="foire-aux-questions"><details class="qa-item"><summary class="qa-q">Pourquoi ISO 20022 compte-t-il pour les paiements de gros ?</summary><section class="qa-a"><p>Cela compte parce que les données structurées améliorent le traitement direct, le filtrage de conformité, la réconciliation et l'interopérabilité entre les systèmes de paiement et les infrastructures de marché (<a href="https://www.bis.org/cpmi/publ/brief11.htm" title="L'avenir de la messagerie financière : naviguer dans la migration ISO 20022">BIS CPMI</a>).</p></section></details><details class="qa-item"><summary class="qa-q">La feuille de route du G20 sur les paiements transfrontaliers est-elle dans les temps ?</summary><section class="qa-a"><p>Le FSB indique que des progrès ont été réalisés, mais que les cibles 2027 ne sont pas encore en bonne voie et nécessitent une action supplémentaire des secteurs public et privé (<a href="https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/" title="Réformer les paiements transfrontaliers">FSB</a>).</p></section></details><details class="qa-item"><summary class="qa-q">Quel est le rôle du renouvellement des RTGS ?</summary><section class="qa-a"><p>Le renouvellement des RTGS améliore la résilience, l'accès, l'interopérabilité et la fonctionnalité du règlement. La Banque d'Angleterre met également en avant les interfaces de règlement synchronisées et ISO 20022 comme mécanismes pour réduire le risque de règlement et les coûts de liquidité (<a href="https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits" title="Le service RTGS renouvelé — avantages clés">Bank of England</a>).</p></section></details><details class="qa-item"><summary class="qa-q">Les stablecoins remplacent-ils les paiements de gros ?</summary><section class="qa-a"><p>Non. Les stablecoins peuvent influencer la conception des paiements transfrontaliers, mais les paiements de gros exigent la finalité du règlement, des ancrages en monnaie de banque centrale, des contrôles prudentiels et une certitude juridique. La direction institutionnelle la plus crédible est l'interopérabilité entre la monnaie de banque commerciale, la monnaie de banque centrale et les systèmes de règlement tokenisés.</p></section></details></section><h2 id="references">Références <a class="heading-anchor" href="#references" aria-label="Lien vers Références">#</a></h2>
+<ul>
+<li>BIS CPMI, (2026). <a href="https://www.bis.org/cpmi/publ/brief11.htm" title="BIS CPMI Brief No 11">L'avenir de la messagerie financière : naviguer dans la migration ISO 20022 ⧉</a>.</li>
+<li>FSB, (2026). <a href="https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/" title="FSB">Réformer les paiements transfrontaliers — discours liminaire au FSB Payments Summit ⧉</a>.</li>
+<li>BIS, (2026). <a href="https://www.bis.org/cpmi/speeches/sp260505.pdf" title="Discours de Fabio Panetta">Interconnecter pour stabiliser : les paiements transfrontaliers dans un monde qui se fragmente ⧉</a>.</li>
+<li>Bank of England, (2026). <a href="https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits" title="Bank of England">Le service RTGS renouvelé — avantages clés ⧉</a>.</li>
+<li>Atlantic Council, (2026). <a href="https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/global-payment-systems-are-fragmenting-heres-what-the-g20-can-do/" title="Atlantic Council">Les systèmes de paiement mondiaux se fragmentent — voici ce que le G20 peut faire ⧉</a>.</li>
+</ul>
+<aside class="author-card" aria-label="À propos de l'auteur"><img alt="Portrait de Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/fr/a-propos/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Technologue senior dans la banque, j'écris sur l'IA appliquée, la migration ISO 20022, la cryptographie post-quantique pour les services financiers, et la transformation structurelle des paiements wholesale.</span><span class="author-credentials">Plus de 20 ans d'expérience chez HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/fr/a-propos/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Dernière révision <time datetime="2026-05-19">2026-05-19</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Articles connexes</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/fr/2026-05-12-iso-20022-pacs008-adresse-structuree-echeance" class="related-media" aria-label="La deadline pacs.008 « adresse structurée » de novembre 2026 : vue à six mois" tabindex="-1"><img alt="ISO 20022 pacs.008 structured address diagram — cross-border payment message fields with TwnNm and Ctry highlighted" src="https://cloudcdn.pro/api/transform?url=/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="la-deadline-pacs-008-adresse-structuree-de-novembre-2026-vue-a-six-mois"><a href="https://sebastienrousseau.com/fr/2026-05-12-iso-20022-pacs008-adresse-structuree-echeance">La deadline pacs.008 « adresse structurée » de novembre 2026 : vue à six mois</a> <a class="heading-anchor" href="#la-deadline-pacs-008-adresse-structuree-de-novembre-2026-vue-a-six-mois" aria-label="Lien vers La deadline pacs.008 « adresse structurée » de novembre 2026 : vue à six mois">#</a></h3><p><time datetime="2026-05-12">2026-05-12</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/fr/2025-09-01-paiements-resistants-au-quantique-epaa" class="related-media" aria-label="Paiements quantique-résistants : pourquoi l'industrie doit agir maintenant" tabindex="-1"><img alt="Quantum computing circuit board in blue light" src="https://cloudcdn.pro/api/transform?url=/stocks/images/digital-nodes.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="paiements-quantique-resistants-pourquoi-l-industrie-doit-agir-maintenant"><a href="https://sebastienrousseau.com/fr/2025-09-01-paiements-resistants-au-quantique-epaa">Paiements quantique-résistants : pourquoi l'industrie doit agir maintenant</a> <a class="heading-anchor" href="#paiements-quantique-resistants-pourquoi-l-industrie-doit-agir-maintenant" aria-label="Lien vers Paiements quantique-résistants : pourquoi l'industrie doit agir maintenant">#</a></h3><p><time datetime="2025-09-01">2025-09-01</time></p></footer></article>
+<article class="related-card"><a  class="related-media" aria-label="Static Site Generator : le générateur de sites statiques le plus rapide basé sur Rust" tabindex="-1" title="Static Site Generator : le générateur de sites statiques le plus rapide basé sur Rust" href="/fr/2023-10-09-shokunin-generateur-de-sites-statiques-rust-le-plus-rapide/index.html"><img alt="Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right" src="https://cloudcdn.pro/api/transform?url=/stocks/images/anna-nekrashevich-8534387.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="static-site-generator-le-generateur-de-sites-statiques-le-plus-rapide-base-sur-r"><a title="Static Site Generator : le générateur de sites statiques le plus rapide basé sur Rust" href="/fr/2023-10-09-shokunin-generateur-de-sites-statiques-rust-le-plus-rapide/index.html">Static Site Generator : le générateur de sites statiques le plus rapide basé sur Rust</a> <a class="heading-anchor" href="#static-site-generator-le-generateur-de-sites-statiques-le-plus-rapide-base-sur-r" aria-label="Lien vers Static Site Generator : le générateur de sites statiques le plus rapide basé sur Rust">#</a></h3><p><time datetime="2023-10-09">2023-10-09</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Sources et références</h2><ol class="article-sources-list"><li><a href="https://www.bis.org/cpmi/publ/brief11.htm" rel="external noopener nofollow"><span class="source-host">www.bis.org</span><span class="source-path">/cpmi/publ/brief11.htm</span></a></li><li><a href="https://www.bis.org/cpmi/speeches/sp260505.pdf" rel="external noopener nofollow"><span class="source-host">www.bis.org</span><span class="source-path">/cpmi/speeches/sp260505.pdf</span></a></li></ol></aside><nav class="post-pagination" aria-label="Pagination des articles"><a class="post-pagination-prev" href="/fr/2026-05-18-cryptographie-quantique-normes-developpements-2026/"><span class="post-pagination-label">Précédent</span><span class="post-pagination-title">La réinitialisation de la cryptographie quantique en 2026 : normes PQC, assurance QKD et le chantier de migration que les banques ne peuvent plus différer</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/fr/a-propos/index.html">À propos</a></li>
+              <li><a href="/fr/contact/index.html">Contact</a></li>
+              <li><a href="/fr/concu-avec-static-site-generator/index.html">Conçu avec Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Écrits</h2>
+            <ul>
+              <li><a href="/fr/articles/index.html">Articles</a></li>
+              <li><a href="/fr/publications/index.html">Publications</a></li>
+              <li><a href="/fr/etiquettes/index.html">Étiquettes</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Activité</h2>
+            <ul>
+              <li><a href="/fr/projets/index.html">Projets</a></li>
+              <li><a href="/fr/playlists/index.html">Playlists</a></li>
+              <li><a href="/fr/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Réseaux</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Inscription à la newsletter">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — notes de recherche sur les paiements, l'IA et la cryptographie post-quantique. Pas de spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="vous@banque.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">S'inscrire</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Liens sociaux">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau sur Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau sur LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau sur Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau sur YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau sur YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/fr/accessibilite/index.html">Accessibilité</a> ·
+            <a href="/fr/confidentialite/index.html">Confidentialité</a> ·
+            <a href="/fr/conditions/index.html">Conditions</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"fr"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"fr"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":2046,"about":{"@type":"Thing","name":"ISO 20022","sameAs":["https://www.iso20022.org/","https://www.wikidata.org/wiki/Q15727611","https://sebastienrousseau.com/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html"]},"headline":"Les paiements de gros mondiaux en 2026 : ISO 20022, renouvellement des RTGS et l'économie de l'interopérabilité","description":"Les paiements de gros mondiaux en 2026 sont remodelés par l'harmonisation ISO 20022, le renouvellement des RTGS, l'extension des fenêtres de règlement, l'accès des non-banques, la gouvernance des API, les pilotes DLT et la fragmentation des paiements transfrontaliers. L'enjeu économique est l'interopérabilité, pas seulement la messagerie.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp","width":"100vw","height":"100vh","caption":"Carte d'architecture des paiements de gros mondiaux pour 2026 — ISO 20022, renouvellement des RTGS, corridors transfrontaliers, fenêtres de liquidité et pilotes de règlement DLT"},"url":"https://sebastienrousseau.com/fr/2026-05-19-mondiaux-de-gros-paiements-economie-2026/","datePublished":"2026-05-19T06:06:06+00:00","dateModified":"2026-05-19","inLanguage":"fr","keywords":"paiements de gros 2026, économie des paiements mondiaux, ISO 20022, RTGS, paiements transfrontaliers, BIS CPMI, FSB, Swift CBPR+, feuille de route G20, règlement brut en temps réel, Project Agorá, Project Mandala, Project Nexus, interopérabilité des paiements, banque correspondante, fragmentation des paiements, CBDC de gros","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/fr/2026-05-19-mondiaux-de-gros-paiements-economie-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"fr"},"citation":[{"@type":"CreativeWork","url":"https://www.bis.org/cpmi/publ/brief11.htm"},{"@type":"CreativeWork","url":"https://www.bis.org/cpmi/speeches/sp260505.pdf"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/fr/"},{"@type":"ListItem","position":3,"name":"Les paiements de gros mondiaux en 2026 : ISO 20022, renouvellement des RTGS et l'économie de l'interopérabilité","item":"https://sebastienrousseau.com/fr/2026-05-19-mondiaux-de-gros-paiements-economie-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Rechercher">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Rechercher</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Rechercher">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Rechercher dans la documentation..." autocomplete="off" aria-label="Rechercher"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> fermer</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> naviguer</span><span><kbd>Entrée</kbd> ouvrir</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Les paiements de gros mondiaux en 2026 : ISO 20022, renouvellement des RTGS et l'économie de l'interopérabilité","url":"https://sebastienrousseau.com/fr/2026-05-19-mondiaux-de-gros-paiements-economie-2026/","inLanguage":"fr-FR","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"paiements de gros 2026, économie des paiements mondiaux, ISO 20022, RTGS, paiements transfrontaliers, BIS CPMI, FSB, Swift CBPR+, feuille de route G20, règlement brut en temps réel, Project Agorá, Project Mandala, Project Nexus, interopérabilité des paiements, banque correspondante, fragmentation des paiements, CBDC de gros","dependencies":["ISO 20022"]}</script></body>
+</html>

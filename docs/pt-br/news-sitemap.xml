@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/pt-br/2026-05-19-globais-atacado-pagamentos-economia-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>pt-BR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-19T06:06:06+00:00</news:publication_date>
+    <news:title>Pagamentos de atacado globais em 2026: ISO 20022, renovação dos RTGS e a economia da interoperabilidade</news:title>
+    <news:keywords>pagamentos de atacado 2026, economia dos pagamentos globais, ISO 20022, RTGS, pagamentos transfronteiriços, BIS CPMI, FSB, Swift CBPR+, roteiro do G20, liquidação bruta em tempo real, Project Agorá, Project Mandala, Project Nexus, interoperabilidade de pagamentos, banco correspondente, fragmentação de pagamentos, CBDC de atacado</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/pt-br/2026-05-18-criptografia-quantica-padroes-desenvolvimentos-2026/</loc>
   <news:news>
     <news:publication>

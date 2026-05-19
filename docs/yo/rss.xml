@@ -6,8 +6,34 @@
     <description>Awọn akọle Yorùbá: AI tó wúlò, ìsanwó ISO 20022, kírípítógíráfì lẹ́yìn-kuántọ́mù, àti àtúnṣe ètò ìsanwó ńláńlá.</description>
     <atom:link href="https://sebastienrousseau.com/yo/rss.xml" rel="self" type="application/rss+xml"/>
     <language>yo-NG</language>
-    <lastBuildDate>Tue, 19 May 2026 14:02:38 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 15:47:31 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Gbogbo ẹtọ ti wa ni ipamọ.</copyright>
+    <item>
+      <title>Sísanwó Pàtàkì Kárí-ayé ní 2026: ISO 20022, Àtúnse RTGS, àti Ètò-ọrọ̀ Ìbárapọ̀-iṣẹ́</title>
+      <link>https://sebastienrousseau.com/yo/2026-05-19-global-wholesale-payments-economics-2026/</link>
+      <description>Sísanwó pàtàkì kárí-ayé ní 2026 ń yí padà nípasẹ̀ ìbámu ISO 20022, àtúnse RTGS, ìfẹ̀ àkókò ìsanwó, ìráyé fún àwọn tí kì í ṣe báńkì, ìṣàkóso API, àwọn àdánwò DLT, àti ìpínyà sísanwó tí ó dá orílẹ̀-èdè kọjá. Ọ̀rọ̀ ètò-ọrọ̀ náà ni ìbárapọ̀-iṣẹ́, kì í ṣe èdè ìfìránṣẹ́ nìkan.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-19-global-wholesale-payments-economics-2026/</guid>
+      <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
+      <category>sísanwó pàtàkì 2026</category>
+      <category>ètò-ọrọ̀ sísanwó kárí-ayé</category>
+      <category>ISO 20022</category>
+      <category>RTGS</category>
+      <category>sísanwó tí ó dá orílẹ̀-èdè kọjá</category>
+      <category>BIS CPMI</category>
+      <category>FSB</category>
+      <category>Swift CBPR+</category>
+      <category>ọ̀nà-àtọ́ka G20</category>
+      <category>ìsanwó pátápátá ní àkókò gidi</category>
+      <category>Project Agorá</category>
+      <category>Project Mandala</category>
+      <category>Project Nexus</category>
+      <category>ìbárapọ̀-iṣẹ́ sísanwó</category>
+      <category>báńkì alábàákẹ́gbẹ́</category>
+      <category>ìpínyà sísanwó</category>
+      <category>CBDC pàtàkì</category>
+    </item>
     <item>
       <title>Àtúnṣe Cryptography Quantum ní 2026: Àwọn Ìlànà PQC, Ìdánilójú QKD, àti Iṣẹ́ Ìṣípò tí Àwọn Báńkì Kò Lè Sún Síwájú</title>
       <link>https://sebastienrousseau.com/yo/2026-05-18-quantum-cryptography-standards-developments-2026/</link>

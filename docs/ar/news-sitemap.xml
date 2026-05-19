@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ar/2026-05-19-global-wholesale-payments-economics-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ar-SA</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-19T06:06:06+00:00</news:publication_date>
+    <news:title>المدفوعات بالجملة العالمية في 2026: ISO 20022 وتجديد أنظمة RTGS واقتصاديات قابلية التشغيل البيني</news:title>
+    <news:keywords>المدفوعات بالجملة 2026, اقتصاديات المدفوعات العالمية, ISO 20022, RTGS, المدفوعات العابرة للحدود, BIS CPMI, FSB, Swift CBPR+, خارطة طريق مجموعة العشرين, التسوية الإجمالية الفورية, Project Agora, Project Mandala, Project Nexus, قابلية التشغيل البيني للمدفوعات, البنوك المراسلة, تشظّي المدفوعات, العملات الرقمية للبنوك المركزية بالجملة</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ar/2026-05-18-quantum-cryptography-standards-developments-2026/</loc>
   <news:news>
     <news:publication>

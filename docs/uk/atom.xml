@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/uk/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/uk/"/>
   <id>https://sebastienrousseau.com/uk/</id>
-  <updated>2026-05-19T14:02:38+00:00</updated>
+  <updated>2026-05-19T15:47:31+00:00</updated>
+  <entry>
+    <title>Глобальні оптові платежі у 2026 році: ISO 20022, оновлення RTGS та економіка сумісності</title>
+    <link href="https://sebastienrousseau.com/uk/2026-05-19-global-wholesale-payments-economics-2026/"/>
+    <id>https://sebastienrousseau.com/uk/2026-05-19-global-wholesale-payments-economics-2026/</id>
+    <updated>2026-05-19T06:06:06+00:00</updated>
+    <published>2026-05-19T06:06:06+00:00</published>
+    <summary>Глобальні оптові платежі у 2026 році перебудовуються гармонізацією ISO 20022, оновленням RTGS, розширенням розрахункових вікон, доступом небанківських установ, регулюванням API, пілотами DLT та фрагментацією транскордонних платежів. Економічне питання — сумісність, а не лише обмін повідомленнями.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Перезапуск квантової криптографії у 2026 році: стандарти PQC, гарантії QKD та робота з міграції, яку банки не можуть відкладати</title>
     <link href="https://sebastienrousseau.com/uk/2026-05-18-kvantova-kryptohrafiya-standarty-rozvytok-2026/"/>

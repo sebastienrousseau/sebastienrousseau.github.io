@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/bn/2026-05-19-global-wholesale-payments-economics-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>bn-BD</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-19T06:06:06+00:00</news:publication_date>
+    <news:title>২০২৬-এ বৈশ্বিক পাইকারি পেমেন্ট: ISO 20022, RTGS পুনর্নবায়ন এবং আন্তঃকার্যকারিতার অর্থনীতি</news:title>
+    <news:keywords>পাইকারি পেমেন্ট ২০২৬, বৈশ্বিক পেমেন্ট অর্থনীতি, ISO 20022, RTGS, সীমান্ত-পার পেমেন্ট, BIS CPMI, FSB, Swift CBPR+, G20 রোডম্যাপ, রিয়েল টাইম গ্রস সেটেলমেন্ট, Project Agora, Project Mandala, Project Nexus, পেমেন্ট আন্তঃকার্যকারিতা, করেসপনডেন্ট ব্যাংকিং, পেমেন্ট খণ্ডায়ন, পাইকারি CBDC</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/bn/2026-05-18-quantum-cryptography-standards-developments-2026/</loc>
   <news:news>
     <news:publication>

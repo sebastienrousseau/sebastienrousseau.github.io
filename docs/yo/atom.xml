@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/yo/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/yo/"/>
   <id>https://sebastienrousseau.com/yo/</id>
-  <updated>2026-05-19T14:02:38+00:00</updated>
+  <updated>2026-05-19T15:47:31+00:00</updated>
+  <entry>
+    <title>Sísanwó Pàtàkì Kárí-ayé ní 2026: ISO 20022, Àtúnse RTGS, àti Ètò-ọrọ̀ Ìbárapọ̀-iṣẹ́</title>
+    <link href="https://sebastienrousseau.com/yo/2026-05-19-global-wholesale-payments-economics-2026/"/>
+    <id>https://sebastienrousseau.com/yo/2026-05-19-global-wholesale-payments-economics-2026/</id>
+    <updated>2026-05-19T06:06:06+00:00</updated>
+    <published>2026-05-19T06:06:06+00:00</published>
+    <summary>Sísanwó pàtàkì kárí-ayé ní 2026 ń yí padà nípasẹ̀ ìbámu ISO 20022, àtúnse RTGS, ìfẹ̀ àkókò ìsanwó, ìráyé fún àwọn tí kì í ṣe báńkì, ìṣàkóso API, àwọn àdánwò DLT, àti ìpínyà sísanwó tí ó dá orílẹ̀-èdè kọjá. Ọ̀rọ̀ ètò-ọrọ̀ náà ni ìbárapọ̀-iṣẹ́, kì í ṣe èdè ìfìránṣẹ́ nìkan.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Àtúnṣe Cryptography Quantum ní 2026: Àwọn Ìlànà PQC, Ìdánilójú QKD, àti Iṣẹ́ Ìṣípò tí Àwọn Báńkì Kò Lè Sún Síwájú</title>
     <link href="https://sebastienrousseau.com/yo/2026-05-18-quantum-cryptography-standards-developments-2026/"/>

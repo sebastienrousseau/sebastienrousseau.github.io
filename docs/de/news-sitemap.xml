@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/de/2026-05-19-globale-wholesale-zahlungsverkehr-okonomie-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>de-DE</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-19T06:06:06+00:00</news:publication_date>
+    <news:title>Globaler Wholesale-Zahlungsverkehr im Jahr 2026: ISO 20022, RTGS-Erneuerung und die Ökonomie der Interoperabilität</news:title>
+    <news:keywords>Wholesale-Zahlungsverkehr 2026, Ökonomie des globalen Zahlungsverkehrs, ISO 20022, RTGS, grenzüberschreitende Zahlungen, BIS CPMI, FSB, Swift CBPR+, G20-Fahrplan, Echtzeit-Bruttoabwicklung, Project Agorá, Project Mandala, Project Nexus, Zahlungsverkehrs-Interoperabilität, Korrespondenzbankgeschäft, Zahlungsverkehrs-Fragmentierung, Wholesale-CBDC</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/de/2026-05-18-quantenkryptografie-standards-entwicklungen-2026/</loc>
   <news:news>
     <news:publication>

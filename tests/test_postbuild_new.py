@@ -685,6 +685,75 @@ def test_wrap_cdn_preload_skips_already_wrapped_url():
     assert (out, n) == (html, 0)
 
 
+def test_wrap_cdn_preload_returns_unchanged_when_href_sub_fails(monkeypatch):
+    """Defensive: if the inner href-rewriter's ``subn`` reports zero
+    substitutions even though the outer match succeeded, the original
+    <link> tag is returned untouched (postbuild.py:505)."""
+    class _FakeRE:
+        def __init__(self, inner):
+            self._inner = inner
+
+        def search(self, s):
+            return self._inner.search(s)
+
+        def subn(self, repl, attrs, count=1):
+            return attrs, 0
+
+    monkeypatch.setattr(pb, "_LINK_HREF_ANY_RE", _FakeRE(pb._LINK_HREF_ANY_RE))
+    html = (
+        '<link rel="preload" as="image" '
+        'href="https://cloudcdn.pro/stocks/images/hero.webp" '
+        'fetchpriority="high">'
+    )
+    out, n = pb.wrap_cdn_images_in_transform(html)
+    assert n == 0
+    assert out == html
+
+
+def test_align_existing_preload_returns_unchanged_when_subn_fails(monkeypatch):
+    """Same defensive bail-out path in _align_existing_preload
+    (postbuild.py:313)."""
+    class _FakeRE:
+        def __init__(self, inner):
+            self._inner = inner
+
+        def search(self, s):
+            return self._inner.search(s)
+
+        def subn(self, repl, attrs, count=1):
+            return attrs, 0
+
+    monkeypatch.setattr(pb, "_LINK_HREF_ANY_RE", _FakeRE(pb._LINK_HREF_ANY_RE))
+    html = (
+        '<link rel="preload" as="image" '
+        'href="https://cdn.example/old.webp">'
+    )
+    out, n = pb._align_existing_preload(html, "https://cdn.example/new.webp")
+    assert n == 0
+    assert out == html
+
+
+def test_link_attr_href_returns_none_when_match_groups_empty(monkeypatch):
+    """``_link_attr_href`` bails to None when both capture groups are
+    empty — a regex theoretically can match the attr name but produce
+    no value."""
+    class _FakeMatch:
+        def group(self, n):
+            return None  # both capture groups None
+    class _FakeRE:
+        def search(self, s):
+            return _FakeMatch()
+
+    monkeypatch.setattr(pb, "_LINK_HREF_ANY_RE", _FakeRE())
+    assert pb._link_attr_href('href="x"') is None
+
+
+def test_link_attr_href_returns_none_when_search_returns_none():
+    """No href attribute present at all — search() returns None
+    (postbuild.py:438)."""
+    assert pb._link_attr_href('rel="preload" as="image"') is None
+
+
 def test_img_attr_helpers_parse_quoted_and_unquoted():
     assert pb._img_attr_src('src="foo.webp"') == "foo.webp"
     assert pb._img_attr_src("src='bar.webp'") == "bar.webp"
