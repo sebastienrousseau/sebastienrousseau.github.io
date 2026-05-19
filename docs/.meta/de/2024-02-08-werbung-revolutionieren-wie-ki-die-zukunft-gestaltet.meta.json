@@ -1,11 +1,11 @@
 {
-  "description": "Wie KI die Werbung transformiert — Einblicke in Amazons Rufus und die jüngsten Entwicklungen von Meta. Entdecken Sie die Auswirkungen auf das Konsumentenengagement.",
-  "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp",
-  "locale": "de_DE",
-  "date": "February 08, 2024",
   "keywords": "KI in der Werbung, Amazon Rufus, Meta-KI-Tools, Konsumenten-Targeting, Werbetechnologie, KI-Chatbots, Trends im digitalen Marketing, KI-Analytik, kreative KI, Kampagnenoptimierung",
-  "title": "Generative KI in der Werbung: Amazon Rufus & Meta",
-  "language": "de",
   "banner_alt": "Eine Roboterfrau mit Schmetterlingen und Blumen",
-  "subtitle": "Wie KI die Konsumenteninteraktion und die Werbedynamik transformiert"
+  "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp",
+  "subtitle": "Wie KI die Konsumenteninteraktion und die Werbedynamik transformiert",
+  "title": "Generative KI in der Werbung: Amazon Rufus & Meta",
+  "description": "Wie KI die Werbung transformiert — Einblicke in Amazons Rufus und die jüngsten Entwicklungen von Meta. Entdecken Sie die Auswirkungen auf das Konsumentenengagement.",
+  "locale": "de_DE",
+  "language": "de",
+  "date": "February 08, 2024"
 }

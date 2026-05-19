@@ -1,11 +1,11 @@
 {
   "banner": "https://cloudcdn.pro/stocks/images/andrea-de-santis-T3Qen8vVgRc.webp",
-  "language": "zh-Hans",
   "title": "用 pain001 自动化创建符合 ISO 20022 标准的支付文件",
-  "description": "pain001 是一个开源 Python 库，可从 CSV 或 SQLite 自动生成 ISO 20022 合规的支付文件。",
   "date": "September 29, 2023",
+  "locale": "zh_CN",
   "banner_alt": "棕色木桌上一台关机的笔记本电脑",
+  "description": "pain001 是一个开源 Python 库，可从 CSV 或 SQLite 自动生成 ISO 20022 合规的支付文件。",
   "subtitle": "从 CSV 或 SQLite 自动化生成 ISO 20022 pain.001 支付文件；pain001 是简化合规的开源 Python 库",
   "keywords": "ISO 20022, pain.001, pain001, 支付自动化, HVPS+, CBPR+, SEPA, 跨境支付, Python 库, 开源",
-  "locale": "zh_CN"
+  "language": "zh-Hans"
 }

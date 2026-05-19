@@ -1,11 +1,11 @@
 {
-  "title": "El rendimiento oculto: descifrando los registros BRSRV y BSTBL de BlackRock",
   "locale": "es_ES",
-  "description": "Bajo la GENIUS Act, las stablecoins no pueden pagar rendimiento. Los registros BRSRV y BSTBL de BlackRock ilustran el rodeo: un fondo monetario tokenizado en paralelo a una stablecoin regulada, para canalizar el rendimiento por un raíl conforme adyacente.",
+  "title": "El rendimiento oculto: descifrando los registros BRSRV y BSTBL de BlackRock",
   "keywords": "stablecoins, GENIUS Act, BlackRock, BRSRV, BSTBL, fondo monetario tokenizado, OCC, OnChain Shares, Securitize, BNY Mellon, pagos",
-  "banner_alt": "Monedas de dólar apiladas bajo una luz cálida, que representan el rendimiento de un fondo monetario tokenizado",
   "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
+  "banner_alt": "Monedas de dólar apiladas bajo una luz cálida, que representan el rendimiento de un fondo monetario tokenizado",
+  "language": "es-ES",
+  "description": "Bajo la GENIUS Act, las stablecoins no pueden pagar rendimiento. Los registros BRSRV y BSTBL de BlackRock ilustran el rodeo: un fondo monetario tokenizado en paralelo a una stablecoin regulada, para canalizar el rendimiento por un raíl conforme adyacente.",
   "date": "May 15, 2026",
-  "subtitle": "Bajo la GENIUS Act, las stablecoins ya no pueden distribuir rendimiento. BlackRock sortea la restricción con dos fondos monetarios tokenizados.",
-  "language": "es-ES"
+  "subtitle": "Bajo la GENIUS Act, las stablecoins ya no pueden distribuir rendimiento. BlackRock sortea la restricción con dos fondos monetarios tokenizados."
 }

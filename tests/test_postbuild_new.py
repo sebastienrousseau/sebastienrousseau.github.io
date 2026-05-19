@@ -151,6 +151,13 @@ def _stub_asset(name: str, body: bytes, monkeypatch) -> str:
     return digest
 
 
+def test_pages_trailing_newline_constant_is_single_lf():
+    """GitHub Pages appends exactly one ``\\n``, no more, no less.
+    Pin the constant so a regression to ``\\r\\n`` or empty doesn't
+    silently re-break SRI."""
+    assert pb._PAGES_TRAILING_NEWLINE == b"\n"
+
+
 def test_fix_sri_stamps_real_digest_on_csp_link(monkeypatch):
     digest = _stub_asset("abcd1234.css", b"body{}", monkeypatch)
     html = (

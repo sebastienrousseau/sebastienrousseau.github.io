@@ -1,11 +1,11 @@
 {
+  "banner_alt": "Visualisatie van een kwantumsleuteldistributie-protocol",
+  "description": "Kwantumsleuteldistributie (QKD) komt op als structureel antwoord voor beveiliging op financieel niveau in het kwantumtijdperk.",
+  "date": "Dec 11, 2023",
+  "locale": "nl_NL",
+  "subtitle": "Hoe QKD de cryptografische grondslagen van financiële beveiliging hervormt",
   "keywords": "QKD, kwantumsleuteldistributie, post-kwantum, banking, beveiliging, cryptografie",
   "title": "Kwantumsleuteldistributie: revolutie in bankbeveiliging",
-  "locale": "nl_NL",
-  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
   "language": "nl-NL",
-  "date": "Dec 11, 2023",
-  "description": "Kwantumsleuteldistributie (QKD) komt op als structureel antwoord voor beveiliging op financieel niveau in het kwantumtijdperk.",
-  "subtitle": "Hoe QKD de cryptografische grondslagen van financiële beveiliging hervormt",
-  "banner_alt": "Visualisatie van een kwantumsleuteldistributie-protocol"
+  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp"
 }

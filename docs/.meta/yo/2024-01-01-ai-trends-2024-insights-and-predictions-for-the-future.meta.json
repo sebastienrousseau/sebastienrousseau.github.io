@@ -1,11 +1,11 @@
 {
-  "language": "yo-NG",
+  "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp",
   "description": "AI trends for 2024: generative AI in finance, multimodal models, on-device LLMs and the shifts that will reshape banking and product engineering.",
   "banner_alt": "Drone View of London",
-  "banner": "https://cloudcdn.pro/stocks/images/drone-view-of-london.webp",
-  "locale": "yo_NG",
-  "date": "Jan 08, 2024",
   "subtitle": "A Pivotal Year for Tech, Society, and Ethical Evolution",
   "title": "AI Trends 2024: Insights and Predictions for the Future",
-  "keywords": "AI trends 2024, generative AI, AI in education, AI cybersecurity, AI finance, AI content creation, AI space exploration, ethical AI, AI in retail, AI analytics"
+  "date": "Jan 08, 2024",
+  "keywords": "AI trends 2024, generative AI, AI in education, AI cybersecurity, AI finance, AI content creation, AI space exploration, ethical AI, AI in retail, AI analytics",
+  "locale": "yo_NG",
+  "language": "yo-NG"
 }
