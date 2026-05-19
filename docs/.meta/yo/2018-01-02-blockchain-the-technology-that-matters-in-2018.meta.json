@@ -1,11 +1,11 @@
 {
   "description": "A story of the extraordinary journey of securing digital transactions through Private-key Cryptography and Peer-to-peer (P2P) networks.",
   "keywords": "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation",
-  "subtitle": "Blockchain, distributed ledgers, and the technology that matters in 2018.",
-  "title": "Blockchain explained, the technology that matters the most",
-  "banner_alt": "Turned off laptop computer on top of brown wooden table",
-  "locale": "yo_NG",
-  "date": "Jan 02, 2018",
   "language": "yo-NG",
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp"
+  "date": "Jan 02, 2018",
+  "subtitle": "Blockchain, distributed ledgers, and the technology that matters in 2018.",
+  "locale": "yo_NG",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "title": "Blockchain explained, the technology that matters the most",
+  "banner_alt": "Turned off laptop computer on top of brown wooden table"
 }

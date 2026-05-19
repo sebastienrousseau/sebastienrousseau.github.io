@@ -1,11 +1,11 @@
 {
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "banner_alt": "藍色光線下的量子計算電路板",
+  "date": "September 1, 2025",
+  "keywords": "EPAA, 抗量子支付, 後量子密碼學, ML-KEM, ML-DSA, SWIFT, SEPA, HNDL, NIST, FIPS 203",
   "language": "zh-Hant",
+  "title": "抗量子支付：行業必須立即行動（EPAA）",
   "description": "EPAA 量子安全支付白皮書闡述支付行業為何必須立即採取行動應對量子威脅。",
   "locale": "zh_TW",
-  "title": "抗量子支付：行業必須立即行動（EPAA）",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "subtitle": "為何支付行業必須現在採取行動應對量子威脅",
-  "date": "September 1, 2025",
-  "banner_alt": "藍色光線下的量子計算電路板",
-  "keywords": "EPAA, 抗量子支付, 後量子密碼學, ML-KEM, ML-DSA, SWIFT, SEPA, HNDL, NIST, FIPS 203"
+  "subtitle": "為何支付行業必須現在採取行動應對量子威脅"
 }

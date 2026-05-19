@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
-  "language": "pl-PL",
+  "date": "Mar 08, 2024",
+  "title": "RustLogs: zaawansowana biblioteka logów dla aplikacji Rust",
+  "description": "RustLogs to zaawansowana biblioteka logów dla aplikacji Rust, oferująca strukturalne logowanie i wysoką wydajność.",
   "keywords": "RustLogs, Rust, logowanie, log, biblioteka, open source, obserwowalność",
   "banner_alt": "Logo RustLogs z motywem strukturalnego logowania",
-  "title": "RustLogs: zaawansowana biblioteka logów dla aplikacji Rust",
-  "locale": "pl_PL",
-  "description": "RustLogs to zaawansowana biblioteka logów dla aplikacji Rust, oferująca strukturalne logowanie i wysoką wydajność.",
-  "date": "Mar 08, 2024",
-  "subtitle": "Wydajne i konfigurowalne logowanie dla Rust"
+  "subtitle": "Wydajne i konfigurowalne logowanie dla Rust",
+  "language": "pl-PL",
+  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
+  "locale": "pl_PL"
 }
