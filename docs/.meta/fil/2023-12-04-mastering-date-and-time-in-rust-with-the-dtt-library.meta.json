@@ -1,11 +1,11 @@
 {
-  "subtitle": "DTT، مكتبة Rust عالية الدقّة لعمليات التاريخ والوقت.",
-  "description": "DateTime (DTT) مكتبة Rust لتحليل وتحقّق ومعالجة وتنسيق التواريخ والأوقات — دقّة عالية ووظائف واسعة.",
-  "locale": "fil_PH",
-  "banner": "https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg",
+  "banner_alt": "DateTime (DTT)، عُدّتكم الأساسية لعمليات التاريخ والوقت.",
   "language": "fil-PH",
   "keywords": "DateTime، DTT، مكتبة Rust، التحليل، التحقّق، المعالجة، التنسيق، التواريخ، الأوقات",
   "title": "الإدارة الفعّالة للتاريخ والوقت مع DateTime (DTT)",
-  "banner_alt": "DateTime (DTT)، عُدّتكم الأساسية لعمليات التاريخ والوقت.",
-  "date": "Dec 04, 2023"
+  "date": "Dec 04, 2023",
+  "locale": "fil_PH",
+  "banner": "https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg",
+  "subtitle": "DTT، مكتبة Rust عالية الدقّة لعمليات التاريخ والوقت.",
+  "description": "DateTime (DTT) مكتبة Rust لتحليل وتحقّق ومعالجة وتنسيق التواريخ والأوقات — دقّة عالية ووظائف واسعة."
 }

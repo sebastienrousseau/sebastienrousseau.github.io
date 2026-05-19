@@ -104,6 +104,7 @@ excerpt: "Wholesale payments in 2026 are no longer just bank plumbing. They are 
 # Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability
 
 
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Global wholesale payments in 2026 are being reshaped by ISO 20022 harmonisation, RTGS renewal, extended settlement windows, non-bank access, API governance, DLT pilots, and cross-border payment fragmentation. The economic issue is interoperability, not messaging alone.</p>
@@ -124,7 +125,7 @@ Wholesale payments in 2026 are no longer just bank plumbing. They are part of ma
 
 > **Executive Summary / Key Takeaways**
 >
-> - **ISO 20022 is now the shared language of wholesale payment modernisation.** BIS CPMI says the standard addresses fragmented messaging, data truncation, weak straight-through processing, and compliance friction ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "The future of financial messaging: navigating the ISO 20022 migration journey")).
+> - **[ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) is now the shared language of wholesale payment modernisation.** BIS CPMI says the standard addresses fragmented messaging, data truncation, weak straight-through processing, and compliance friction ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "The future of financial messaging: navigating the ISO 20022 migration journey")).
 > - **The G20 roadmap is still behind target.** The FSB’s March 2026 update says progress is real but the 2027 targets are not yet on track ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "Reforming cross-border payments")).
 > - **RTGS operating hours and access are economic levers.** The FSB notes that more than half of jurisdictions have extended RTGS hours or are planning extensions, while direct access for non-bank providers is rising across payment systems ([FSB](https://www.fsb.org/2026/03/reforming-cross-border-payments-keynote-speech-at-the-fsb-payments-summit/ "Reforming cross-border payments")).
 > - **The Bank of England’s renewed RTGS service makes resilience and interoperability explicit.** The renewed service is designed to support monetary and financial stability through resilience, access, interoperability, and functionality ([Bank of England](https://www.bankofengland.co.uk/payment-and-settlement/rtgs-renewal-programme/the-renewed-rtgs-service-key-benefits "The renewed RTGS service — key benefits")).
