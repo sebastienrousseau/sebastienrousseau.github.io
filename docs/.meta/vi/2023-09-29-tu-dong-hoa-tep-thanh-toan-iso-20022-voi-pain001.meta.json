@@ -1,11 +1,11 @@
 {
-  "subtitle": "Một thư viện Python cho chuyển đổi thanh toán toàn cầu",
-  "banner_alt": "Sơ đồ luồng dữ liệu thanh toán từ CSV đến XML ISO 20022",
-  "language": "vi-VN",
+  "date": "September 29, 2023",
   "title": "Tự động hoá tạo tệp thanh toán tuân thủ ISO 20022 với pain001",
   "description": "pain001 — thư viện Python tự động hoá việc tạo tệp thanh toán ISO 20022 pain.001 từ CSV hoặc SQLite, hỗ trợ chuyển đổi MT/MX trên SWIFT, SEPA và các sơ đồ lớn.",
-  "date": "September 29, 2023",
+  "banner": "https://cloudcdn.pro/stocks/images/pain001-banner.webp",
+  "banner_alt": "Sơ đồ luồng dữ liệu thanh toán từ CSV đến XML ISO 20022",
   "keywords": "ISO 20022, pain.001, Python, thanh toán, SWIFT, SEPA, mã nguồn mở, tự động hoá, MT/MX",
   "locale": "vi_VN",
-  "banner": "https://cloudcdn.pro/stocks/images/pain001-banner.webp"
+  "subtitle": "Một thư viện Python cho chuyển đổi thanh toán toàn cầu",
+  "language": "vi-VN"
 }

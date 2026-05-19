@@ -1,11 +1,11 @@
 {
-  "language": "tr-TR",
-  "banner_alt": "Dijital reklamcılığın görselleştirmesi",
   "title": "Reklamcılıkta devrim: yapay zeka geleceği nasıl şekillendiriyor",
-  "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp",
+  "banner_alt": "Dijital reklamcılığın görselleştirmesi",
   "keywords": "yapay zeka, reklam, dijital pazarlama, kişiselleştirme, üretken yapay zeka, programatik",
-  "date": "February 08, 2024",
   "description": "Yapay zekanın reklamcılığı dönüştürdüğü yollar: hiper-kişiselleştirme, kreatif üretim ve programatik optimizasyon.",
-  "subtitle": "Reklam ve dijital pazarlamada yapay zekanın etkisi",
-  "locale": "tr_TR"
+  "date": "February 08, 2024",
+  "language": "tr-TR",
+  "locale": "tr_TR",
+  "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp",
+  "subtitle": "Reklam ve dijital pazarlamada yapay zekanın etkisi"
 }

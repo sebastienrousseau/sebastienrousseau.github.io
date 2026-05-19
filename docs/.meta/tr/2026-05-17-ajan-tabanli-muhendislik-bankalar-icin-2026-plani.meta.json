@@ -1,11 +1,11 @@
 {
-  "description": "2026'da bankalarda ajan tabanlı yapay zeka mühendisliğine giriş — mimari, yönetişim ve riskler.",
-  "date": "May 17, 2026",
-  "subtitle": "Bankacılıkta yapay zeka ajanları için mimari ve yönetişim planı",
-  "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
+  "title": "Ajan tabanlı mühendislik: bankalar için 2026 planı",
   "language": "tr-TR",
+  "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
   "locale": "tr_TR",
-  "keywords": "ajan tabanlı yapay zeka, ajanlar, bankacılık, 2026, mimari, yönetişim, LLM",
   "banner_alt": "Ajan tabanlı bir mimarinin görselleştirmesi",
-  "title": "Ajan tabanlı mühendislik: bankalar için 2026 planı"
+  "subtitle": "Bankacılıkta yapay zeka ajanları için mimari ve yönetişim planı",
+  "date": "May 17, 2026",
+  "description": "2026'da bankalarda ajan tabanlı yapay zeka mühendisliğine giriş — mimari, yönetişim ve riskler.",
+  "keywords": "ajan tabanlı yapay zeka, ajanlar, bankacılık, 2026, mimari, yönetişim, LLM"
 }

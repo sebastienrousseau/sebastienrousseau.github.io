@@ -1,12 +1,12 @@
 {
-  "language": "ja-JP",
-  "keywords": "暗号定数, 数学, Rust, ECC, RSA, NIST 曲線, PQC, セキュリティ, mathconst",
-  "last_reviewed": "2026-05-11",
-  "banner_alt": "デスクで作業中の数学方程式",
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-_zsL306fDck-unsplash.webp",
-  "date": "November 5, 2023",
-  "description": "Rust の数学的・暗号的定数ライブラリ。ECC、PQC、暗号スイートのための検証された定数を含みます。",
   "locale": "ja_JP",
+  "description": "Rust の数学的・暗号的定数ライブラリ。ECC、PQC、暗号スイートのための検証された定数を含みます。",
+  "keywords": "暗号定数, 数学, Rust, ECC, RSA, NIST 曲線, PQC, セキュリティ, mathconst",
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-_zsL306fDck-unsplash.webp",
+  "banner_alt": "デスクで作業中の数学方程式",
+  "date": "November 5, 2023",
   "title": "Rust セキュリティのための数学的・暗号的定数",
-  "subtitle": "Rust 暗号アプリケーション向けの慎重に検証された定数"
+  "last_reviewed": "2026-05-11",
+  "subtitle": "Rust 暗号アプリケーション向けの慎重に検証された定数",
+  "language": "ja-JP"
 }

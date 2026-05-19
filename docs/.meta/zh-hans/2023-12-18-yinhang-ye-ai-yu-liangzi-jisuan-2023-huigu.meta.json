@@ -1,11 +1,11 @@
 {
+  "language": "zh-Hans",
   "date": "December 18, 2023",
-  "description": "回顾 2023 年人工智能与量子计算如何变革银行业，开源 AI 模型崛起以及全球 AI 治理进展。",
-  "title": "银行业 AI 与量子计算：2023 年回顾",
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
   "locale": "zh_CN",
   "banner_alt": "银行业 AI 与量子计算 2023 年回顾",
-  "language": "zh-Hans",
+  "subtitle": "探索 2023 年的技术格局：AI 与量子计算重塑银行业、开源模型崛起、监管与治理演进",
   "keywords": "AI, 量子计算, 银行业, HSBC, QKD, LLaMA 2, Mixtral, GPT-NeoX, AI 治理, 布莱切利宣言",
-  "subtitle": "探索 2023 年的技术格局：AI 与量子计算重塑银行业、开源模型崛起、监管与治理演进"
+  "description": "回顾 2023 年人工智能与量子计算如何变革银行业，开源 AI 模型崛起以及全球 AI 治理进展。",
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
+  "title": "银行业 AI 与量子计算：2023 年回顾"
 }

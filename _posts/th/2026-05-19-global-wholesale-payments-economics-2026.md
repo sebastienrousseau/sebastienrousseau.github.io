@@ -85,7 +85,9 @@ site_software: "Static Site Generator, Rust"
 excerpt: "Wholesale payments in 2026 are no longer just bank plumbing. They are part of macroeconomic resilience, trade competitiveness, liquidity efficiency, sanctions compliance, and the strategic contest…"
 ---
 
-> _Translation pending — read the [English original](/2026-05-19-global-wholesale-payments-economics-2026/)._
+<!-- translation-stub: replace this body in Claude Code -->
+
+> _Translation pending — read the [English original](/2026-05-19-global-wholesale-payments-economics-2026/) while we localise._
 
 # Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability
 

@@ -1,11 +1,11 @@
 {
-  "description": "Construir uma criptomoeda em a blockchain Ethereum: uma guía completa de desenvolvimento blockchain, tokenización e implementación.",
-  "keywords": "blockchain, Ethereum, smart contract, criptomoeda, Solidity, Geth, dApps, ERC-20, tokenización, testnet",
-  "date": "January 9, 2018",
-  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
   "subtitle": "Construir uma criptomoeda sobre Ethereum, paso a paso",
-  "banner_alt": "Ordenador portátil apagado sobre uma mesa de madera marrón",
-  "locale": "pt_BR",
+  "keywords": "blockchain, Ethereum, smart contract, criptomoeda, Solidity, Geth, dApps, ERC-20, tokenización, testnet",
+  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
+  "description": "Construir uma criptomoeda em a blockchain Ethereum: uma guía completa de desenvolvimento blockchain, tokenización e implementación.",
   "language": "pt-BR",
-  "title": "Comprender a tecnologia atrás de blockchain"
+  "locale": "pt_BR",
+  "date": "January 9, 2018",
+  "title": "Comprender a tecnologia atrás de blockchain",
+  "banner_alt": "Ordenador portátil apagado sobre uma mesa de madera marrón"
 }
