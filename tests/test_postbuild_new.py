@@ -12,9 +12,8 @@ import base64
 import hashlib
 from pathlib import Path
 
-import pytest
-
 import postbuild as pb
+import pytest
 
 # ---------------------------------------------------------------------------
 # _minify_one — JS asset minification helper
@@ -294,7 +293,7 @@ def test_inject_lcp_preload_skips_data_uri():
         '<head><title>x</title></head>'
         '<body><img src="data:image/png;base64,AAAA"></body>'
     )
-    out, n = pb.inject_lcp_preload(html)
+    _, n = pb.inject_lcp_preload(html)
     assert n == 0
 
 
@@ -544,7 +543,7 @@ def test_wrap_cdn_images_handles_jpg_and_png_extensions():
         '<img src="https://cloudcdn.pro/stocks/images/b.png" width="300">'
         '<img src="https://cloudcdn.pro/stocks/images/c.jpeg" width="300">'
     )
-    out, n = pb.wrap_cdn_images_in_transform(html)
+    _, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 3
 
 
@@ -574,7 +573,6 @@ def test_img_attr_width_returns_none_on_unparseable(monkeypatch):
     """The regex only matches digits, so a TypeError/ValueError on
     int() conversion is defensive. Hit the except branch by feeding
     the helper a contrived regex match via a monkeypatch."""
-    import re
     class FakeMatch:
         def group(self, n):
             return "abc" if n == 1 else None  # not a digit
@@ -589,8 +587,6 @@ def test_wrap_cdn_images_returns_unchanged_when_src_sub_fails(monkeypatch):
     # Patch the SRC regex to never substitute even though attribute
     # matching succeeded. This simulates a corrupted attr string the
     # outer regex matched but the inner sub couldn't replace.
-    original_subn = pb._IMG_SRC_ANY_RE.subn
-
     class FakeRE:
         def __init__(self, inner):
             self._inner = inner

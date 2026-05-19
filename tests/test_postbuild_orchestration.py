@@ -16,10 +16,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-import pytest
-
 import postbuild as pb
-
+import pytest
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -136,7 +134,7 @@ def test_is_topic_page_for_fr_topic(fake_public: Path):
     (fake_public / "fr" / "sujets" / "ia").mkdir(parents=True)
     page = fake_public / "fr" / "sujets" / "ia" / "index.html"
     page.touch()
-    en, fr, lang = pb._is_topic_page(page)
+    en, fr, _ = pb._is_topic_page(page)
     assert en is False
     assert fr is True
 

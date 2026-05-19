@@ -31,7 +31,7 @@ import subprocess
 import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
-from urllib.parse import unquote, urlparse
+from urllib.parse import unquote
 
 import pytest
 
@@ -194,18 +194,17 @@ _HREF_SRC_RE = re.compile(
 
 
 def _extract_urls(html: str) -> list[str]:
-    urls: list[str] = []
-    for m in _HREF_SRC_RE.finditer(html):
-        urls.append(m.group(2) or m.group(3) or "")
+    urls = [
+        (m.group(2) or m.group(3) or "")
+        for m in _HREF_SRC_RE.finditer(html)
+    ]
     return [u for u in urls if u]
 
 
 def _looks_internal(url: str) -> bool:
     if url.startswith(("http://", "https://", "data:", "mailto:", "tel:", "#")):
         return False
-    if url.startswith("//"):
-        return False
-    return True
+    return not url.startswith("//")
 
 
 def _resolve_internal(page: Path, url: str) -> Path:
@@ -214,10 +213,11 @@ def _resolve_internal(page: Path, url: str) -> Path:
     # Strip fragment + query.
     url = url.split("#", 1)[0].split("?", 1)[0]
     url = unquote(url)
-    if url.startswith("/"):
-        target = PUBLIC / url.lstrip("/")
-    else:
-        target = (page.parent / url).resolve()
+    target = (
+        PUBLIC / url.lstrip("/")
+        if url.startswith("/")
+        else (page.parent / url).resolve()
+    )
     # /foo/  → /foo/index.html. Bare /file goes through as-is.
     if target.is_dir() or url.endswith("/"):
         target = target / "index.html"
@@ -250,9 +250,8 @@ def test_page_internal_links_resolve(page: Path):
             if rel in {
                 "feed.json", "rss.xml", "atom.xml", "sitemap.xml",
                 "robots.txt", "manifest.json", "llms.txt", "llms-full.txt",
-            }:
-                if (PUBLIC / rel).is_file():
-                    continue
+            } and (PUBLIC / rel).is_file():
+                continue
             misses.append(f"{raw} -> {rel}")
     assert not misses, (
         f"{_rel(page)}: {len(misses)} broken internal link(s):\n  "

@@ -13,6 +13,7 @@ behaviour (build_translations on 27 languages) are wrapped with
 """
 from __future__ import annotations
 
+import contextlib
 import importlib
 import os
 import sys
@@ -113,10 +114,8 @@ def test_read_only_cli_main_runs(modname: str):
     tree, exercise main() so its body is covered. SystemExit on
     informational drift is tolerated."""
     mod = _import_fresh(modname)
-    try:
+    with contextlib.suppress(SystemExit):
         mod.main()
-    except SystemExit:
-        pass
 
 
 # ---------------------------------------------------------------------------
@@ -164,10 +163,8 @@ def test_build_validator_passes(modname: str):
 )
 def test_fetch_github_stats_main_runs():
     mod = _import_fresh("fetch_github_stats")
-    try:
+    with contextlib.suppress(SystemExit):
         mod.main()
-    except SystemExit:
-        pass
 
 
 @pytest.mark.skipif(
@@ -176,10 +173,8 @@ def test_fetch_github_stats_main_runs():
 )
 def test_audit_links_main_runs():
     mod = _import_fresh("audit_links")
-    try:
+    with contextlib.suppress(SystemExit):
         mod.main()
-    except SystemExit:
-        pass
 
 
 # ---------------------------------------------------------------------------
