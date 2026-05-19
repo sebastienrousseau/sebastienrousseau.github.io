@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
-  "language": "he-IL",
   "locale": "he_IL",
-  "description": "Gemini 1.5 من Google يدفع نافذة السياق إلى ما يتجاوز المليون رمز. ما الذي يفتحه ذلك للتمويل المُعزَّز بالاسترجاع، والمقايضات التي يجدر الإلمام بها.",
-  "title": "فك شفرة Gemini 1.5: ثورة Google في الذكاء الاصطناعي مشروحةً",
-  "keywords": "Gemini 1.5, Google AI, architecture Mixture-of-Experts, الكفاءة الحسابية, توسيع نافذة السياق, ابتكار الذكاء الاصطناعي, تحويل تحليل البيانات, in-context learning, حالات استخدام الذكاء الاصطناعي, الثورة التكنولوجية",
+  "language": "he-IL",
   "banner_alt": "تصور تجريدي لشبكات الذكاء الاصطناعي يُمثِّل قدرات Gemini 1.5",
+  "subtitle": "غوص عميق في آخر اختراقات Google في الذكاء الاصطناعي",
+  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
+  "title": "فك شفرة Gemini 1.5: ثورة Google في الذكاء الاصطناعي مشروحةً",
   "date": "Feb 19, 2024",
-  "subtitle": "غوص عميق في آخر اختراقات Google في الذكاء الاصطناعي"
+  "description": "Gemini 1.5 من Google يدفع نافذة السياق إلى ما يتجاوز المليون رمز. ما الذي يفتحه ذلك للتمويل المُعزَّز بالاسترجاع، والمقايضات التي يجدر الإلمام بها.",
+  "keywords": "Gemini 1.5, Google AI, architecture Mixture-of-Experts, الكفاءة الحسابية, توسيع نافذة السياق, ابتكار الذكاء الاصطناعي, تحويل تحليل البيانات, in-context learning, حالات استخدام الذكاء الاصطناعي, الثورة التكنولوجية"
 }

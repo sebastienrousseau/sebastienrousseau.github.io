@@ -1,12 +1,12 @@
 {
-  "banner_alt": "テーブルに積まれた金貨と銀貨",
-  "date": "January 1, 2018",
-  "title": "ビットコイン:最初の暗号資産の年次レビュー",
-  "description": "ビットコイン:オンライン取引の在り方を革新する可能性を秘めたピア・ツー・ピア電子現金システム(P2P ECS)。",
-  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
-  "language": "ja-JP",
   "last_reviewed": "2026-05-11",
   "keywords": "ビットコイン, 暗号資産, ブロックチェーン, P2P, 二重支出, マイニング, プルーフ・オブ・ワーク, ETF, サトシ・ナカモト, 分散型金融",
+  "date": "January 1, 2018",
+  "title": "ビットコイン:最初の暗号資産の年次レビュー",
+  "language": "ja-JP",
+  "banner_alt": "テーブルに積まれた金貨と銀貨",
+  "subtitle": "通貨を再定義したピア・ツー・ピア電子現金システム",
   "locale": "ja_JP",
-  "subtitle": "通貨を再定義したピア・ツー・ピア電子現金システム"
+  "banner": "https://cloudcdn.pro/stocks/images/traxer-AIKjbZdNOlw.webp",
+  "description": "ビットコイン:オンライン取引の在り方を革新する可能性を秘めたピア・ツー・ピア電子現金システム(P2P ECS)。"
 }

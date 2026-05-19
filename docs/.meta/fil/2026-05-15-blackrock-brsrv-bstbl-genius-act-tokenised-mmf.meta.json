@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
-  "keywords": "stablecoins، GENIUS Act، BlackRock، BRSRV، BSTBL، صندوق السوق النقدية المُرمَّز، OCC، OnChain Shares، Securitize، BNY Mellon، المدفوعات",
-  "subtitle": "بموجب GENIUS Act، لا يمكن للـ stablecoins توزيع عوائد. تتجاوز BlackRock القيد بصندوقَي سوقٍ نقدية مُرمَّزَين.",
-  "language": "fil-PH",
+  "locale": "fil_PH",
   "date": "May 15, 2026",
   "description": "بموجب GENIUS Act، لا يمكن للـ stablecoins دفع العائد. تُجسّد إيداعات BRSRV و BSTBL من BlackRock التحايل: صندوق سوقٍ نقدية مُرمَّز بالتوازي مع stablecoin مُنظَّم، لتوجيه العائد عبر مسارٍ متوافق مجاور.",
-  "locale": "fil_PH",
   "banner_alt": "قطع دولارات مكدّسة تحت إضاءةٍ دافئة، تمثيل لعائد صندوق سوقٍ نقدية مُرمَّز",
-  "title": "العائد المخفي: تفكيك إيداعات BRSRV و BSTBL من BlackRock"
+  "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
+  "title": "العائد المخفي: تفكيك إيداعات BRSRV و BSTBL من BlackRock",
+  "keywords": "stablecoins، GENIUS Act، BlackRock، BRSRV، BSTBL، صندوق السوق النقدية المُرمَّز، OCC، OnChain Shares، Securitize، BNY Mellon، المدفوعات",
+  "subtitle": "بموجب GENIUS Act، لا يمكن للـ stablecoins توزيع عوائد. تتجاوز BlackRock القيد بصندوقَي سوقٍ نقدية مُرمَّزَين.",
+  "language": "fil-PH"
 }
