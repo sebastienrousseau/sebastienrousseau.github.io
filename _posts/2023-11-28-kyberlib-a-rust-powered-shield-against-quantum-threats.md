@@ -185,7 +185,7 @@ KyberLib harnesses the power of [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-
 
 ## Protecting Web Applications With Quantum-Resistant Cryptography
 
-Designed for a minimal memory footprint, KyberLib is ideal for embedded and resource-limited systems without compromising security. Its Rust-based implementation capitalises on the language's safety features, fortifying the security offered by the CRYSTALS-Kyber algorithm.
+Designed for a minimal memory footprint, KyberLib is ideal for embedded and resource-limited systems without compromising security. Its Rust-based implementation capitalises on the language's safety features, fortifying the security offered by the [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) algorithm.
 
 Additionally, KyberLib's WebAssembly compatibility enhances its utility in web applications, guaranteeing that it remains a vital tool in the dynamic realm of cryptography.
 

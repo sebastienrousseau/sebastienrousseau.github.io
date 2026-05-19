@@ -13,7 +13,6 @@ should not run alongside the daily-publishing pipeline.
 """
 from __future__ import annotations
 
-import shutil
 import sys
 from pathlib import Path
 
@@ -48,6 +47,7 @@ def test_build_translations_main_renders_all_active_locales(capsys):
     # so other gate tests in the same pytest session see a consistent
     # tree. Postbuild.main() is idempotent so this is safe to call.
     import importlib
+
     import postbuild
     importlib.reload(postbuild)
     postbuild.main()
@@ -57,8 +57,8 @@ def test_build_translations_main_renders_all_active_locales(capsys):
 def test_build_translations_main_no_op_when_no_active_languages(monkeypatch, capsys):
     """Pure-control-flow check — if no non-EN active locales are
     registered, main() reports and exits cleanly."""
-    import build_translations
     import _lang_registry as lr
+    import build_translations
 
     class _Stub:
         def __init__(self, code, active):

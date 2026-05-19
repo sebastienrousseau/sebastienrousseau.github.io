@@ -14,8 +14,7 @@ import pytest
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 
-import translate_post as tp  # noqa: E402
-
+import translate_post as tp
 
 # ---------------------------------------------------------------------------
 # Fixtures
@@ -95,7 +94,7 @@ def test_parse_frontmatter_no_delimiter_returns_empty():
 
 
 def test_parse_frontmatter_unclosed_delimiter_returns_empty():
-    fm, body = tp.parse_frontmatter("---\ntitle: 'x'\n\nbody")
+    fm, _body = tp.parse_frontmatter("---\ntitle: 'x'\n\nbody")
     assert fm == {}
 
 
@@ -220,7 +219,7 @@ def test_scaffold_one_uses_fallback_locale_when_unknown(fake_repo):
             "2026-05-19-sample", _EN_SAMPLE, "fr", dry_run=False,
         )
         assert "scaffolded" in status
-        out = list((fake_repo / "_posts" / "fr").glob("*.md"))[0]
+        out = next(iter((fake_repo / "_posts" / "fr").glob("*.md")))
         fm, _ = tp.parse_frontmatter(out.read_text(encoding="utf-8"))
         assert fm["locale"] == "fr_FR"  # fallback path
     finally:
@@ -245,7 +244,7 @@ def test_find_stub_locales_excludes_translated(fake_repo):
     for lang in ("fr", "de", "es"):
         tp.scaffold_one("2026-05-19-sample", _EN_SAMPLE, lang, dry_run=False)
     # Pretend FR got translated — strip the marker.
-    fr_file = list((fake_repo / "_posts" / "fr").glob("*.md"))[0]
+    fr_file = next(iter((fake_repo / "_posts" / "fr").glob("*.md")))
     fr_file.write_text(
         fr_file.read_text(encoding="utf-8").replace(tp.STUB_MARKER, ""),
         encoding="utf-8",

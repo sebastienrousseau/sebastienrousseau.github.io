@@ -105,6 +105,8 @@ excerpt: "Wholesale payments in 2026 are no longer just bank plumbing. They are 
 
 
 
+
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Global wholesale payments in 2026 are being reshaped by ISO 20022 harmonisation, RTGS renewal, extended settlement windows, non-bank access, API governance, DLT pilots, and cross-border payment fragmentation. The economic issue is interoperability, not messaging alone.</p>
@@ -139,13 +141,13 @@ Wholesale payments in 2026 are no longer just bank plumbing. They are part of ma
 
 Cross-border wholesale payments sit underneath trade finance, correspondent banking, securities settlement, corporate treasury, and central-bank operations. When they are slow or opaque, working capital is trapped. When they are fragmented, liquidity buffers rise. When compliance data is weak, sanctions and AML checks become expensive manual work.
 
-BIS CPMI’s April 2026 brief describes ISO 20022 as a way to standardise data objects, rules, and processes across payments, securities, and treasury, enabling interoperability between financial institutions, market infrastructures, and end users ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "The future of financial messaging: navigating the ISO 20022 migration journey")). This is why the migration is economically material rather than simply technical.
+BIS CPMI’s April 2026 brief describes [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) as a way to standardise data objects, rules, and processes across payments, securities, and treasury, enabling interoperability between financial institutions, market infrastructures, and end users ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "The future of financial messaging: navigating the ISO 20022 migration journey")). This is why the migration is economically material rather than simply technical.
 
 ## The 2026 Wholesale Payments Baseline
 
 ### 1. ISO 20022 Moves from Migration to Harmonisation
 
-The first phase was getting payment systems onto ISO 20022. The second phase is making implementation consistent enough that the benefits survive across borders. BIS CPMI identifies structured data, reduced truncation, better screening, and improved reconciliation as core benefits of harmonised implementation ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "The future of financial messaging: navigating the ISO 20022 migration journey")).
+The first phase was getting payment systems onto [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html). The second phase is making implementation consistent enough that the benefits survive across borders. BIS CPMI identifies structured data, reduced truncation, better screening, and improved reconciliation as core benefits of harmonised implementation ([BIS CPMI](https://www.bis.org/cpmi/publ/brief11.htm "The future of financial messaging: navigating the ISO 20022 migration journey")).
 
 The difficult part is that ISO 20022 can still fragment if jurisdictions adopt different field practices, validation rules, and optional-data conventions. The strategic work for banks is therefore not just format conversion; it is semantic alignment.
 
