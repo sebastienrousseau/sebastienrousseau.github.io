@@ -143,12 +143,16 @@ def test_gather_css_targets_finds_all_css(tmp_path: Path, monkeypatch):
 
 
 def _stub_asset(name: str, body: bytes, monkeypatch) -> str:
-    """Register an asset hash for ``name`` and return its base64 digest."""
-    digest = base64.b64encode(hashlib.sha256(body).digest()).decode("ascii")
+    """Register a full integrity attribute value (one or more
+    space-separated ``sha256-<b64>`` tokens) for ``name`` and return
+    the first token's base64 digest for legacy single-token assertions."""
+    integrity = pb._candidate_digests(body)
     new = dict(pb.asset_hashes)
-    new[name] = digest
+    new[name] = integrity
     monkeypatch.setattr(pb, "asset_hashes", new)
-    return digest
+    # Return just the first token's b64 (for assertions like
+    # ``f"sha256-{digest}" in out``).
+    return integrity.split()[0].removeprefix("sha256-")
 
 
 def test_pages_trailing_newline_constant_is_single_lf():
@@ -158,6 +162,26 @@ def test_pages_trailing_newline_constant_is_single_lf():
     assert pb._PAGES_TRAILING_NEWLINE == b"\n"
 
 
+def test_candidate_digests_emits_both_primary_and_appended_token():
+    """``_candidate_digests`` returns two space-separated SRI tokens
+    so the integrity attribute covers both Pages-edge variants
+    (file-as-is + file+trailing-newline)."""
+    out = pb._candidate_digests(b"body{}")
+    parts = out.split(" ")
+    assert len(parts) == 2
+    assert all(p.startswith("sha256-") for p in parts)
+    # Tokens must be distinct — adding a newline must change the hash.
+    assert parts[0] != parts[1]
+
+
+def test_candidate_digests_collapses_when_no_difference(monkeypatch):
+    """If newline-append produces the same hash (couldn't happen with
+    real SHA-256, but covers the defensive branch), emit a single token."""
+    monkeypatch.setattr(pb, "b64_sha256", lambda b: "FIXED")
+    out = pb._candidate_digests(b"body{}")
+    assert out == "sha256-FIXED"
+
+
 def test_fix_sri_stamps_real_digest_on_csp_link(monkeypatch):
     digest = _stub_asset("abcd1234.css", b"body{}", monkeypatch)
     html = (
@@ -165,7 +189,10 @@ def test_fix_sri_stamps_real_digest_on_csp_link(monkeypatch):
         'integrity="sha256-abcd1234" crossorigin="anonymous">'
     )
     out = pb.fix_sri(html)
-    assert f'integrity="sha256-{digest}"' in out
+    # Integrity now carries one or more space-separated sha256-<b64>
+    # tokens (per ``_candidate_digests``). Assert the primary token
+    # is present anywhere inside the integrity value.
+    assert f'sha256-{digest}' in out
     assert 'sha256-abcd1234"' not in out
 
 
