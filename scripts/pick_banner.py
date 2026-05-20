@@ -29,7 +29,10 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from _core import ROOT, load_banner_affinity
+
+# Default inventory path — Sebastien's Mac. Override via CDN_INVENTORY env var
+# when running elsewhere (cloud routine, CI, contributor machines).
 DEFAULT_INVENTORY = Path("/Users/seb/Code/Public/CDN/cloudcdn.pro/stocks/images")
 
 _BANNER_LINE_RE = re.compile(
@@ -37,22 +40,10 @@ _BANNER_LINE_RE = re.compile(
     re.IGNORECASE,
 )
 
-# Light keyword → image-token affinity so the picker can pre-bias toward
-# topic-relevant candidates. Each tuple is (keyword, list-of-substrings
-# preferred when present in the filename).
-_AFFINITY: dict[str, tuple[str, ...]] = {
-    "cloud":       ("cloud", "data-center", "server", "infrastructure"),
-    "kubernetes":  ("kubernetes", "k8s", "container"),
-    "quantum":     ("quantum", "cryptography", "lattice", "kyber"),
-    "payments":    ("payment", "money", "bank", "card", "coin", "fintech"),
-    "ai":          ("ai", "robot", "neural", "intelligence", "gpt", "llm", "gemini"),
-    "rust":        ("rust", "code", "logo"),
-    "blockchain":  ("blockchain", "crypto", "bitcoin", "token"),
-    "governance":  ("regulation", "law", "compliance", "court"),
-    "iso":         ("payment", "money", "swift", "rtgs"),
-    "agentic":     ("ai", "robot", "agent"),
-    "office":      ("office", "desk", "meeting"),
-}
+# Keyword → image-filename-substring affinity, loaded from
+# _data/banner_tags.json so editorial tagging can be updated without
+# touching script logic.
+_AFFINITY: dict[str, tuple[str, ...]] = load_banner_affinity()
 
 
 def collect_inventory(inv: Path) -> list[str]:

@@ -22,7 +22,10 @@ from __future__ import annotations
 
 import html
 import re
+import sys
 from pathlib import Path
+
+from _core import read_frontmatter as _core_read_frontmatter
 
 PUBLIC = Path("public")
 POSTS = Path("_posts")
@@ -153,32 +156,10 @@ TOPICS: dict[str, dict[str, object]] = {
 }
 
 
-_FM_KEY_RE = re.compile(r'^([a-z_]+):\s*"((?:[^"\\]|\\.)*)"\s*$')
-
-
 def read_frontmatter(slug: str) -> dict[str, str]:
-    """Parse a post's YAML frontmatter into a flat dict."""
-    md = POSTS / f"{slug}.md"
-    out: dict[str, str] = {}
-    if not md.is_file():
-        return out
-    lines = md.read_text(encoding="utf-8").splitlines()
-    inside = False
-    sep_count = 0
-    for line in lines:
-        s = line.strip()
-        if s == "---":
-            sep_count += 1
-            inside = sep_count == 1
-            if sep_count == 2:
-                break
-            continue
-        if not inside:
-            continue
-        m = _FM_KEY_RE.match(line.strip())
-        if m:
-            out[m.group(1)] = m.group(2)
-    return out
+    """Parse a post's YAML frontmatter into a flat dict. Returns {} if
+    the slug doesn't resolve to a file — callers warn/exit on that case."""
+    return _core_read_frontmatter(POSTS / f"{slug}.md")
 
 
 def _format_date(iso_like: str) -> str:
@@ -324,12 +305,26 @@ def render_topic(slug: str, spec: dict[str, object], shell: str) -> tuple[str, s
     slugs: list[str] = list(spec["slugs"])  # type: ignore[arg-type]
     cards: list[str] = []
     post_titles: list[str] = []
+    missing: list[str] = []
     for s in slugs:
         fm = read_frontmatter(s)
         if not fm:
+            missing.append(s)
             continue
         cards.append(render_card(s, fm))
         post_titles.append(fm.get("title") or s)
+    if missing:
+        # Hard fail — silently dropping cards from a topic page lets a
+        # typo in TOPICS[].slugs ship to production unnoticed. Surface
+        # the bad slugs so the editor fixes the typo before the build
+        # completes.
+        print(
+            f"build_topics: ERROR — topic '{slug}' references unknown slug(s):",
+            file=sys.stderr,
+        )
+        for s in missing:
+            print(f"  - {s}", file=sys.stderr)
+        raise SystemExit(1)
 
     body = _build_topic_body(title, lede, cards, slug)
     ldjson = _build_topic_jsonld(slug, title, lede, slugs, post_titles)

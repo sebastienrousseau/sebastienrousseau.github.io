@@ -41,7 +41,7 @@ import sys
 import urllib.request
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from _core import ROOT, parse_frontmatter  # shared with gen_articles, build_topics
 
 # ---------------------------------------------------------------------------
 # Banned phrases — hype filler that mark non-executive register
@@ -80,28 +80,7 @@ _REQUIRED_FM = (
     "twitter_title", "twitter_description",
 )
 
-# ---------------------------------------------------------------------------
-# Frontmatter parser (re-use translate_post.py's logic shape)
-# ---------------------------------------------------------------------------
-
-_FM_KEY_RE = re.compile(r'^([a-z_]+):\s*"((?:[^"\\]|\\.)*)"\s*$')
-
-
-def parse_frontmatter(text: str) -> tuple[dict[str, str], str]:
-    """Return (frontmatter-dict, body)."""
-    if not text.startswith("---"):
-        return {}, text
-    end = text.find("\n---", 3)
-    if end < 0:
-        return {}, text
-    head = text[3:end]
-    body = text[end + 4:].lstrip("\n")
-    fm: dict[str, str] = {}
-    for line in head.splitlines():
-        m = _FM_KEY_RE.match(line)
-        if m:
-            fm[m.group(1)] = m.group(2)
-    return fm, body
+# Frontmatter parser is imported from _core — single canonical impl.
 
 
 # ---------------------------------------------------------------------------
@@ -212,10 +191,53 @@ def check_date_consistency(path: Path, fm: dict[str, str]) -> list[str]:
 # ---------------------------------------------------------------------------
 
 
+def check_external_links(body: str, timeout: float = 10.0) -> list[str]:
+    """Probe every external citation URL with a ranged GET; defect for
+    each one returning a non-2xx code. Run concurrently with a small
+    thread pool so the link-rot pass stays in seconds, not minutes."""
+    from concurrent.futures import ThreadPoolExecutor
+
+    urls = sorted({
+        m.group(1)
+        for m in re.finditer(r'\]\((https?://[^)\s]+)', body)
+    })
+    if not urls:
+        return []
+
+    def probe(url: str) -> str | None:
+        try:
+            req = urllib.request.Request(
+                url,
+                headers={
+                    "Range": "bytes=0-0",
+                    "User-Agent": "sebastienrousseau.com-link-check/1.0",
+                },
+            )
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                if r.status not in (200, 206):
+                    return f"link-rot: {url} → HTTP {r.status}"
+        except Exception as exc:
+            return f"link-rot: {url} → {exc}"
+        return None
+
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        return [d for d in pool.map(probe, urls) if d]
+
+
 def check_article(path: Path, *, skip_date: bool = False,
-                  skip_network: bool = False) -> list[str]:
+                  skip_network: bool = False,
+                  check_links: bool = False) -> list[str]:
     """Run every gate against ``path``. Returns a flat list of defect
-    strings. Empty list = clean."""
+    strings. Empty list = clean.
+
+    Flags:
+      ``skip_date``     — disable filename/today/frontmatter date checks
+                          (useful for backfills + dry-run drafting)
+      ``skip_network``  — disable banner-reachability HEAD/Range GET
+                          (useful for offline drafting)
+      ``check_links``   — additionally probe every external citation URL
+                          with a Range GET, surface 404s as defects
+    """
     text = path.read_text(encoding="utf-8")
     fm, body = parse_frontmatter(text)
     defects: list[str] = []
@@ -227,6 +249,8 @@ def check_article(path: Path, *, skip_date: bool = False,
     defects.extend(check_markdown_discipline(body))
     if not skip_date:
         defects.extend(check_date_consistency(path, fm))
+    if check_links and not skip_network:
+        defects.extend(check_external_links(body))
     return defects
 
 
@@ -243,8 +267,12 @@ def main() -> int:
                    help="auto-pick _posts/<today>-*.md")
     p.add_argument("--no-date-check", action="store_true",
                    help="skip filename-date-vs-today gate (useful for backfills)")
-    p.add_argument("--no-network", action="store_true",
-                   help="skip banner-reachability HEAD request")
+    p.add_argument("--no-network", "--bypass-network", action="store_true",
+                   help="skip banner-reachability + external-link probes "
+                        "(useful for offline drafting)")
+    p.add_argument("--check-links", action="store_true",
+                   help="additionally probe every external citation URL "
+                        "for link rot; surfaces 404s as defects")
     args = p.parse_args()
 
     if args.today:
@@ -267,6 +295,7 @@ def main() -> int:
         path,
         skip_date=args.no_date_check,
         skip_network=args.no_network,
+        check_links=args.check_links,
     )
     if defects:
         print(f"check_voice: {len(defects)} defect(s) in {path}:", file=sys.stderr)

@@ -14,19 +14,13 @@ eyebrow from the first three comma-separated tags.
 from __future__ import annotations
 
 import re
-from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from _core import ROOT, display_date, parse_frontmatter
+
 SRC = ROOT / "_posts" / "articles.md"
 POSTS = ROOT / "_posts"
 
 _DATED_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-")
-_FM_KEY_RE = re.compile(r'^([a-z_]+):\s*"((?:[^"\\]|\\.)*)"\s*$')
-
-_MONTH_NAMES = (
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December",
-)
 
 # (date_iso, date_display, eyebrow, title, image_url, image_alt, excerpt, href)
 ARTICLES = [
@@ -322,32 +316,11 @@ def featured_block(art) -> str:
 </article>"""
 
 
-def _parse_frontmatter(text: str) -> dict[str, str]:
-    """Minimal YAML frontmatter parser — single-line "key: \"value\""."""
-    if not text.startswith("---"):
-        return {}
-    end = text.find("\n---", 3)
-    if end < 0:
-        return {}
-    fm: dict[str, str] = {}
-    for line in text[3:end].splitlines():
-        m = _FM_KEY_RE.match(line)
-        if m:
-            fm[m.group(1)] = m.group(2)
-    return fm
-
-
 def _eyebrow_from_tags(tags: str) -> str:
     """Take the first three comma-separated tags, Title-Case them, and
     join with ` · `. Mirrors the manual ARTICLES eyebrow convention."""
     parts = [t.strip() for t in tags.split(",") if t.strip()][:3]
     return " · ".join(p.title() for p in parts)
-
-
-def _display_date(iso: str) -> str:
-    """Convert ``YYYY-MM-DD`` to ``Month DD, YYYY``."""
-    y, m, d = iso.split("-")
-    return f"{_MONTH_NAMES[int(m) - 1]} {int(d)}, {y}"
 
 
 def _discover_latest_article() -> tuple | None:
@@ -367,7 +340,7 @@ def _discover_latest_article() -> tuple | None:
     head_date = ARTICLES[0][0] if ARTICLES else ""
     if latest_date <= head_date:
         return None
-    fm = _parse_frontmatter(latest_path.read_text(encoding="utf-8"))
+    fm, _body = parse_frontmatter(latest_path.read_text(encoding="utf-8"))
     if not fm.get("title"):
         return None
     slug = latest_path.stem
@@ -380,7 +353,7 @@ def _discover_latest_article() -> tuple | None:
     eyebrow = _eyebrow_from_tags(fm.get("tags", "")) or "Banking · Technology"
     return (
         latest_date,
-        _display_date(latest_date),
+        display_date(latest_date),
         eyebrow,
         title,
         banner,

@@ -32,17 +32,20 @@ prose
 
 
 def test_parse_frontmatter_returns_dict_for_well_formed_post():
-    fm = gen_articles._parse_frontmatter(_SAMPLE_FM)
+    fm, _body = gen_articles.parse_frontmatter(_SAMPLE_FM)
     assert fm["title"] == "Tomorrow's headline"
     assert fm["tags"].startswith("topic one")
 
 
 def test_parse_frontmatter_returns_empty_for_unframed_text():
-    assert gen_articles._parse_frontmatter("no frontmatter") == {}
+    fm, body = gen_articles.parse_frontmatter("no frontmatter")
+    assert fm == {}
+    assert body == "no frontmatter"
 
 
 def test_parse_frontmatter_returns_empty_when_closing_delim_missing():
-    assert gen_articles._parse_frontmatter("---\ntitle: 'x'\n\nbody") == {}
+    fm, _body = gen_articles.parse_frontmatter("---\ntitle: 'x'\n\nbody")
+    assert fm == {}
 
 
 def test_eyebrow_picks_first_three_tags_titlecased():
@@ -55,8 +58,9 @@ def test_eyebrow_handles_empty_tags():
 
 
 def test_display_date_converts_iso_to_month_day_year():
-    assert gen_articles._display_date("2026-05-20") == "May 20, 2026"
-    assert gen_articles._display_date("2026-01-01") == "January 1, 2026"
+    """display_date now lives in _core; gen_articles imports it."""
+    assert gen_articles.display_date("2026-05-20") == "May 20, 2026"
+    assert gen_articles.display_date("2026-01-01") == "January 1, 2026"
 
 
 def test_discover_returns_none_when_no_post_newer_than_articles_head(monkeypatch, tmp_path):

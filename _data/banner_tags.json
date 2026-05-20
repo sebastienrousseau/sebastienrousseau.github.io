@@ -1,0 +1,14 @@
+{
+  "_comment": "Topic-keyword → image-filename-substring affinity map. Loaded by scripts/pick_banner.py via scripts/_core.load_banner_affinity(). Lowercase keys; values are arrays of lowercase substrings that match a CDN image's basename. Add a key here to expose a new --hint to the picker — no code change required.",
+  "cloud":       ["cloud", "data-center", "server", "infrastructure"],
+  "kubernetes":  ["kubernetes", "k8s", "container"],
+  "quantum":     ["quantum", "cryptography", "lattice", "kyber"],
+  "payments":    ["payment", "money", "bank", "card", "coin", "fintech"],
+  "ai":          ["ai", "robot", "neural", "intelligence", "gpt", "llm", "gemini"],
+  "rust":        ["rust", "code", "logo"],
+  "blockchain":  ["blockchain", "crypto", "bitcoin", "token"],
+  "governance":  ["regulation", "law", "compliance", "court"],
+  "iso":         ["payment", "money", "swift", "rtgs"],
+  "agentic":     ["ai", "robot", "agent"],
+  "office":      ["office", "desk", "meeting"]
+}

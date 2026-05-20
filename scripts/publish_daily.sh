@@ -41,32 +41,37 @@ fi
 python3 scripts/translate_post.py "$SLUG"
 
 # 3. Refresh generators so listing pages pick up the new post.
+#    gen_articles auto-discovers the latest dated post in _posts/ — no
+#    manual ARTICLES[0] edit needed any more.
 python3 scripts/gen_layouts.py
 python3 scripts/gen_articles.py
 python3 scripts/gen_projects.py
 python3 scripts/gen_papers.py
 python3 scripts/topic_link.py
 python3 scripts/post_enrich.py
+python3 scripts/build_topics.py
+python3 scripts/build_lang_feeds.py
+python3 scripts/build_agent_api.py
 
 # 4. Full build with all i18n + CSP gates.
 ./build.sh
 
-# 5. Stage the changes — actual commit + push happens in Claude Code
-#    so it can be signed with your local SSH key.
-git add _posts/ _data/i18n/ _drafts/ scripts/gen_articles.py docs/ public/ 2>/dev/null || true
+# 5. Stage source changes — never docs/ or public/, CI rebuilds those.
+git add _posts/ _data/i18n/ _drafts/ scripts/gen_articles.py scripts/build_topics.py 2>/dev/null || true
 
 echo
 echo "publish_daily: ready ($SLUG)"
 echo
 echo "Next steps (in Claude Code):"
-echo "  1. Edit _posts/index.md → add new newsroom-card at the top"
-echo "     (mirror the existing card structure; drop the bottom one)"
-echo "  2. Edit scripts/gen_articles.py → prepend ARTICLES[0] tuple"
-echo "  3. Re-run: python3 scripts/gen_articles.py && ./build.sh"
-echo "  4. List stubs still needing translation:"
+echo "  1. List stubs still needing translation:"
 echo "        python3 scripts/translate_post.py $SLUG --list-stubs"
-echo "  5. For each stub Claude finds, rewrite the body in the target language"
+echo "  2. For each stub Claude finds, rewrite the body in the target language"
 echo "     (rules in .claude/commands/publish-today.md)"
-echo "  6. Signed commit + push:"
+echo "  3. Rotate the homepage card grid in _posts/index.md (drop oldest"
+echo "     of 6, prepend today's). build_translations propagates per-locale."
+echo "  4. If the article fits an existing TOPICS cluster, prepend its slug"
+echo "     to that cluster's slugs[] in scripts/build_topics.py"
+echo "  5. Re-run: ./build.sh"
+echo "  6. Signed commit + push (or open a PR for mobile review):"
 echo "        git commit -S -m 'content($TODAY): <title> + 27 translations'"
 echo "        git push"
