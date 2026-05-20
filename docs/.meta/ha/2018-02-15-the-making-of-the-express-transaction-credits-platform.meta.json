@@ -1,11 +1,11 @@
 {
-  "title": "The making of the Express Transaction Credits Platform",
-  "keywords": "mathematical constants, cryptographic constants, rust, cmn library, secure, reliable, accurate, portability, performance, documentation",
-  "language": "ha-NG",
-  "locale": "ha_NG",
-  "banner_alt": "Giant white pillars",
-  "subtitle": "Designing the Express Transaction Credits platform with ERC-223 smart contracts.",
-  "description": "Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard.",
   "date": "Feb 15, 2018",
-  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp"
+  "banner_alt": "Giant white pillars",
+  "title": "The making of the Express Transaction Credits Platform",
+  "locale": "ha_NG",
+  "language": "ha-NG",
+  "description": "Developing a comprehensive framework for the next generation of Ethereum Request for Comment compliant tokens using the ERC-223 standard.",
+  "subtitle": "Designing the Express Transaction Credits platform with ERC-223 smart contracts.",
+  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
+  "keywords": "mathematical constants, cryptographic constants, rust, cmn library, secure, reliable, accurate, portability, performance, documentation"
 }

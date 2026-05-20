@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Birbirine zincirleme blok bağlantıları",
-  "subtitle": "Yıkıcı bir potansiyele sahip dağıtık defter teknolojisi",
-  "title": "Blockchain: 2018'de önemli olan teknoloji",
   "date": "January 2, 2018",
   "description": "Blockchain, finansal hizmetlerden tedarik zincirine kadar birden çok sektörü dönüştürebilen dağıtık bir defter teknolojisidir.",
-  "language": "tr-TR",
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
   "locale": "tr_TR",
-  "keywords": "blockchain, dağıtık defter, fintech, finansal hizmetler, tedarik zinciri, akıllı sözleşmeler, 2018"
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "subtitle": "Yıkıcı bir potansiyele sahip dağıtık defter teknolojisi",
+  "language": "tr-TR",
+  "keywords": "blockchain, dağıtık defter, fintech, finansal hizmetler, tedarik zinciri, akıllı sözleşmeler, 2018",
+  "banner_alt": "Birbirine zincirleme blok bağlantıları",
+  "title": "Blockchain: 2018'de önemli olan teknoloji"
 }

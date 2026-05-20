@@ -1,11 +1,11 @@
 {
+  "locale": "zh_TW",
+  "banner_alt": "RustLogs（RLG）橫幅",
+  "title": "RustLogs：面向 Rust 應用的高階日誌庫",
+  "language": "zh-Hant",
+  "subtitle": "為 Rust 應用提供結構化、非同步、靈活的日誌解決方案",
   "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
   "date": "March 8, 2024",
-  "title": "RustLogs：面向 Rust 應用的高階日誌庫",
   "keywords": "RustLogs, RLG, Rust, 日誌, 結構化日誌, 非同步, JSON, CEF, Logstash, 效能",
-  "subtitle": "為 Rust 應用提供結構化、非同步、靈活的日誌解決方案",
-  "banner_alt": "RustLogs（RLG）橫幅",
-  "language": "zh-Hant",
-  "description": "RustLogs（RLG）是一個用於 Rust 應用的高階日誌庫，支援結構化、非同步、靈活的日誌記錄。",
-  "locale": "zh_TW"
+  "description": "RustLogs（RLG）是一個用於 Rust 應用的高階日誌庫，支援結構化、非同步、靈活的日誌記錄。"
 }

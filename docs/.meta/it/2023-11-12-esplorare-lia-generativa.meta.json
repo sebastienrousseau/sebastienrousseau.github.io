@@ -1,11 +1,11 @@
 {
+  "date": "November 12, 2023",
   "banner": "https://cloudcdn.pro/stocks/images/getty-images-aTWKwJllPOA.webp",
   "description": "Una panoramica dell'IA generativa: come funzionano i grandi modelli di linguaggio, dove eccellono, dove falliscono e cosa significano per il settore bancario.",
-  "title": "Esplorare l'IA generativa",
-  "date": "November 12, 2023",
-  "subtitle": "Capacità, applicazioni e limiti dei modelli generativi per il banking",
   "banner_alt": "Concetto di IA, intelligenza artificiale, rendering 3D, immagine concettuale",
-  "language": "it-IT",
+  "title": "Esplorare l'IA generativa",
+  "subtitle": "Capacità, applicazioni e limiti dei modelli generativi per il banking",
   "keywords": "IA generativa, LLM, GPT, banking, automazione, prompt engineering, applicazioni",
+  "language": "it-IT",
   "locale": "it_IT"
 }

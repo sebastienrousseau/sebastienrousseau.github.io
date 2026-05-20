@@ -1,11 +1,11 @@
 {
-  "title": "libmake: दोहराव कम करने और उच्च-गुणवत्ता वाली Rust-लाइब्रेरी बनाने वाला कोड-जनरेटर",
-  "language": "hi-IN",
-  "description": "libmake एक Rust कोड-जनरेटर है जो लाइब्रेरी-स्कैफ़ोल्डिंग — CI, परीक्षण, लाइसेंस — का स्वचालन करता है।",
-  "locale": "hi_IN",
-  "keywords": "libmake, Rust, कोड जनरेटर, लाइब्रेरी, scaffolding, CI, टेस्टिंग, ओपन सोर्स, Cargo, Crates",
-  "banner_alt": "लैपटॉप पर Rust का कोड और निर्माण-उपकरण",
-  "subtitle": "लाइब्रेरी-स्कैफ़ोल्डिंग का स्वचालन — टेस्ट, CI और लाइसेंसिंग",
   "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
+  "description": "libmake एक Rust कोड-जनरेटर है जो लाइब्रेरी-स्कैफ़ोल्डिंग — CI, परीक्षण, लाइसेंस — का स्वचालन करता है।",
+  "language": "hi-IN",
+  "keywords": "libmake, Rust, कोड जनरेटर, लाइब्रेरी, scaffolding, CI, टेस्टिंग, ओपन सोर्स, Cargo, Crates",
+  "title": "libmake: दोहराव कम करने और उच्च-गुणवत्ता वाली Rust-लाइब्रेरी बनाने वाला कोड-जनरेटर",
+  "subtitle": "लाइब्रेरी-स्कैफ़ोल्डिंग का स्वचालन — टेस्ट, CI और लाइसेंसिंग",
+  "banner_alt": "लैपटॉप पर Rust का कोड और निर्माण-उपकरण",
+  "locale": "hi_IN",
   "date": "October 26, 2023"
 }
