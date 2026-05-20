@@ -2713,6 +2713,17 @@ def test_augment_sitemap_normalises_so_already_listed_pages_skip(tmp_path):
     assert augment_sitemap_with_rendered_pages(tmp_path) == 0
 
 
+def test_augment_sitemap_normalises_when_existing_entry_uses_index_html(tmp_path):
+    """Existing sitemap entry in `/foo/index.html` form must match a
+    rendered `/foo/index.html` page (both normalise to `/foo`)."""
+    from postbuild_lib.output import augment_sitemap_with_rendered_pages
+    _seed_minimal_sitemap(tmp_path, ["/topics/foo/index.html"])
+    d = tmp_path / "topics" / "foo"
+    d.mkdir(parents=True)
+    (d / "index.html").write_text("x", encoding="utf-8")
+    assert augment_sitemap_with_rendered_pages(tmp_path) == 0
+
+
 def test_augment_sitemap_excludes_labs_prefix(tmp_path):
     from postbuild_lib.output import augment_sitemap_with_rendered_pages
     _seed_minimal_sitemap(tmp_path, ["/"])
