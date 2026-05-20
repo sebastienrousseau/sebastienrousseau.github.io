@@ -2671,6 +2671,93 @@ def test_dedupe_xml_feeds_atom_entry_without_href_passes_through(tmp_path):
 
 
 # ---------------------------------------------------------------------------
+# augment_sitemap_with_rendered_pages — append topic / post-hoc pages
+# that the SSG didn't know about when it generated the initial sitemap
+# ---------------------------------------------------------------------------
+
+
+def _seed_minimal_sitemap(tmp_path, listed_paths):
+    """Write a sitemap.xml with the given paths already listed."""
+    urls = "".join(
+        f'<url><lastmod>2026-05-20</lastmod><loc>https://sebastienrousseau.com{p}</loc></url>'
+        for p in listed_paths
+    )
+    (tmp_path / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f'{urls}\n</urlset>\n',
+        encoding="utf-8",
+    )
+
+
+def test_augment_sitemap_appends_missing_rendered_page(tmp_path):
+    from postbuild_lib.output import augment_sitemap_with_rendered_pages
+    _seed_minimal_sitemap(tmp_path, ["/"])
+    new = tmp_path / "topics" / "cloud-native-banking"
+    new.mkdir(parents=True)
+    (new / "index.html").write_text("<html></html>", encoding="utf-8")
+    n = augment_sitemap_with_rendered_pages(tmp_path)
+    assert n == 1
+    out = (tmp_path / "sitemap.xml").read_text(encoding="utf-8")
+    assert "/topics/cloud-native-banking/index.html" in out
+
+
+def test_augment_sitemap_normalises_so_already_listed_pages_skip(tmp_path):
+    """If `/topics/foo/` is already listed (trailing slash form), the
+    `/topics/foo/index.html` rendered page is NOT appended."""
+    from postbuild_lib.output import augment_sitemap_with_rendered_pages
+    _seed_minimal_sitemap(tmp_path, ["/topics/foo/"])
+    d = tmp_path / "topics" / "foo"
+    d.mkdir(parents=True)
+    (d / "index.html").write_text("x", encoding="utf-8")
+    assert augment_sitemap_with_rendered_pages(tmp_path) == 0
+
+
+def test_augment_sitemap_excludes_labs_prefix(tmp_path):
+    from postbuild_lib.output import augment_sitemap_with_rendered_pages
+    _seed_minimal_sitemap(tmp_path, ["/"])
+    labs = tmp_path / "labs" / "hsh-demo"
+    labs.mkdir(parents=True)
+    (labs / "index.html").write_text("x", encoding="utf-8")
+    assert augment_sitemap_with_rendered_pages(tmp_path) == 0
+
+
+def test_augment_sitemap_excludes_404_offline_thanks(tmp_path):
+    from postbuild_lib.output import augment_sitemap_with_rendered_pages
+    _seed_minimal_sitemap(tmp_path, ["/"])
+    for tail in ("404", "offline", "thanks", "fr/404", "fr/hors-ligne", "fr/merci"):
+        d = tmp_path / tail
+        d.mkdir(parents=True, exist_ok=True)
+        (d / "index.html").write_text("x", encoding="utf-8")
+    assert augment_sitemap_with_rendered_pages(tmp_path) == 0
+
+
+def test_augment_sitemap_no_op_when_sitemap_absent(tmp_path):
+    from postbuild_lib.output import augment_sitemap_with_rendered_pages
+    # No sitemap.xml at all → function silently returns 0
+    assert augment_sitemap_with_rendered_pages(tmp_path) == 0
+
+
+def test_augment_sitemap_handles_sitemap_without_lastmod(tmp_path):
+    """When the seed sitemap has no <lastmod>, the appended block uses
+    an empty string for lastmod rather than crashing."""
+    from postbuild_lib.output import augment_sitemap_with_rendered_pages
+    (tmp_path / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        '</urlset>\n',
+        encoding="utf-8",
+    )
+    new = tmp_path / "topics" / "foo"
+    new.mkdir(parents=True)
+    (new / "index.html").write_text("x", encoding="utf-8")
+    n = augment_sitemap_with_rendered_pages(tmp_path)
+    assert n == 1
+    out = (tmp_path / "sitemap.xml").read_text(encoding="utf-8")
+    assert "topics/foo/index.html" in out
+
+
+# ---------------------------------------------------------------------------
 # build_lastmod_index + refresh_sitemap_lastmod
 # ---------------------------------------------------------------------------
 

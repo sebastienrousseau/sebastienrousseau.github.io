@@ -662,6 +662,75 @@ def dedupe_xml_feeds(public: Path) -> int:
     return n
 
 
+_SITE = "https://sebastienrousseau.com"
+
+# Pages excluded from sitemap by convention. Keep in sync with
+# scripts/test_sitemap_completeness.py.
+_SITEMAP_EXCLUDE_TAILS = ("/404/", "/offline/", "/thanks/", "/fr/404/", "/fr/hors-ligne/", "/fr/merci/")
+_SITEMAP_EXCLUDE_PREFIXES = ("/labs/",)
+
+
+def _normalise_url(url: str) -> str:
+    url = url.rstrip()
+    if url.endswith("/index.html"):
+        url = url[: -len("/index.html")]
+    return url.rstrip("/")
+
+
+def augment_sitemap_with_rendered_pages(public: Path) -> int:
+    """Append any rendered ``public/**/index.html`` page that is not yet
+    listed in ``public/sitemap.xml`` (or any per-language sitemap index
+    it references).
+
+    Why this exists: the upstream SSG generates the initial sitemap.xml
+    before our Python post-pipeline runs. Topic-cluster pages and
+    per-locale topic forks are written *after* ssg, so they're absent
+    from the initial sitemap. Without this pass,
+    ``test_sitemap_completeness`` fails on every new cluster.
+
+    Returns the count of `<url>` entries appended."""
+    sitemap = public / "sitemap.xml"
+    if not sitemap.is_file():
+        return 0
+    text = sitemap.read_text(encoding="utf-8")
+    # Collect already-listed URLs (normalised).
+    existing = {
+        _normalise_url(m.group(1))
+        for m in re.finditer(r'<loc>([^<]+)</loc>', text)
+    }
+    # Walk public/ for index.html. Mirror the test's exclude policy.
+    additions: list[str] = []
+    today = ""
+    m = re.search(r'<lastmod>(\d{4}-\d{2}-\d{2})</lastmod>', text)
+    if m:
+        today = m.group(1)
+    for html in sorted(public.rglob("index.html")):
+        rel = html.relative_to(public).as_posix()
+        path = "/" + (rel[: -len("index.html")] if rel.endswith("index.html") else rel)
+        if any(path.startswith(p) for p in _SITEMAP_EXCLUDE_PREFIXES):
+            continue
+        if any(path.startswith(tail) or path == tail.rstrip("/") for tail in _SITEMAP_EXCLUDE_TAILS):
+            continue
+        url = f"{_SITE}{path}"
+        if _normalise_url(url) in existing:
+            continue
+        additions.append(url)
+        existing.add(_normalise_url(url))
+    if not additions:
+        return 0
+    # Insert before </urlset>; emit minimally-formatted <url> blocks.
+    # `additions` already ends with `/` (path form `https://…/topics/foo/`),
+    # so append index.html without a separator.
+    block = "".join(
+        f"\n<url>\n  <changefreq>weekly</changefreq>\n"
+        f"  <lastmod>{today}</lastmod>\n  <loc>{u}index.html</loc>\n</url>"
+        for u in additions
+    )
+    new_text = re.sub(r'</urlset>\s*$', block + "\n</urlset>\n", text, count=1)
+    sitemap.write_text(new_text, encoding="utf-8")
+    return len(additions)
+
+
 _NEWS_TITLE_RE = re.compile(r'(<news:title>)([\s\S]*?)(</news:title>)', re.IGNORECASE)
 _NEWS_KEYWORDS_RE = re.compile(r'(<news:keywords>)([\s\S]*?)(</news:keywords>)', re.IGNORECASE)
 

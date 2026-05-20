@@ -112,6 +112,8 @@ excerpt: "Wholesale payments in 2026 are no longer just bank plumbing. They are 
 
 
 
+
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Global wholesale payments in 2026 are being reshaped by ISO 20022 harmonisation, RTGS renewal, extended settlement windows, non-bank access, API governance, DLT pilots, and cross-border payment fragmentation. The economic issue is interoperability, not messaging alone.</p>

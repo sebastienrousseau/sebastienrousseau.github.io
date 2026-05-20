@@ -1,11 +1,11 @@
 {
-  "title": "Google Gemma: трансформация open-source разработки ИИ",
-  "language": "ru-RU",
-  "locale": "ru_RU",
-  "date": "February 26, 2024",
-  "description": "Gemma — это открытая модель Google, предлагающая разработчикам и исследователям мощный фундамент для построения ИИ-приложений.",
-  "keywords": "Google Gemma, open source, LLM, Gemini, локальное развёртывание, банковский ИИ, конфиденциальность, дистилляция знаний",
   "banner": "https://cloudcdn.pro/stocks/images/google-gemma.webp",
+  "description": "Gemma — это открытая модель Google, предлагающая разработчикам и исследователям мощный фундамент для построения ИИ-приложений.",
   "banner_alt": "Google Gemma — баннер открытой модели ИИ",
-  "subtitle": "Открытая модель от Google для развития сообщества"
+  "language": "ru-RU",
+  "subtitle": "Открытая модель от Google для развития сообщества",
+  "date": "February 26, 2024",
+  "keywords": "Google Gemma, open source, LLM, Gemini, локальное развёртывание, банковский ИИ, конфиденциальность, дистилляция знаний",
+  "title": "Google Gemma: трансформация open-source разработки ИИ",
+  "locale": "ru_RU"
 }

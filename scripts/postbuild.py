@@ -759,6 +759,7 @@ from postbuild_lib.github_stats import (
 # Output emitters — moved to postbuild_lib.output. Re-exported so
 # tests/test_postbuild.py + any external probe keeps working.
 from postbuild_lib.output import (  # noqa: F401 — re-exports
+    augment_sitemap_with_rendered_pages,
     build_lastmod_index,
     build_llms_full_txt,
     build_llms_txt,
@@ -1155,6 +1156,10 @@ def _finalize_build() -> tuple[int, bool, bool, bool, int, int, int, int]:
     module-level _JS_MINIFY_* counters."""
     lastmod_index = build_lastmod_index()
     sitemap_patched = refresh_sitemap_lastmod(PUBLIC / "sitemap.xml", lastmod_index)
+    # Append any rendered page (e.g. post-hoc topic clusters) missing
+    # from the SSG-generated sitemap. Counted into sitemap_patched so
+    # the existing report shape is unchanged.
+    sitemap_patched += augment_sitemap_with_rendered_pages(PUBLIC)
     robots_written = write_robots(PUBLIC)
     llms_written = write_llms_txt(PUBLIC)
     llms_full_written = write_llms_full_txt(PUBLIC)

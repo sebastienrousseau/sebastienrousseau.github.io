@@ -1,11 +1,11 @@
 {
-  "description": "Система транскрипции речи в текст в реальном времени, использующая OpenAI Whisper и ускорение GPU Metal Performance Shaders на macOS для достижения задержки менее секунды при 8–12× в реальном времени на M1 Max.",
   "keywords": "Whisper, OpenAI, MPS, Metal Performance Shaders, macOS, Apple Silicon, M1 Max, распознавание речи в реальном времени, ASR",
+  "description": "Система транскрипции речи в текст в реальном времени, использующая OpenAI Whisper и ускорение GPU Metal Performance Shaders на macOS для достижения задержки менее секунды при 8–12× в реальном времени на M1 Max.",
   "language": "ru-RU",
-  "subtitle": "Metal Performance Shaders и субсекундные задержки на M1 Max",
-  "locale": "ru_RU",
-  "banner_alt": "Распознавание речи на macOS с Whisper и Metal Performance Shaders",
-  "banner": "https://cloudcdn.pro/stocks/images/whisper-mps.webp",
   "title": "Революция распознавания речи в реальном времени на macOS с OpenAI Whisper",
-  "date": "March 12, 2024"
+  "date": "March 12, 2024",
+  "locale": "ru_RU",
+  "banner": "https://cloudcdn.pro/stocks/images/whisper-mps.webp",
+  "banner_alt": "Распознавание речи на macOS с Whisper и Metal Performance Shaders",
+  "subtitle": "Metal Performance Shaders и субсекундные задержки на M1 Max"
 }

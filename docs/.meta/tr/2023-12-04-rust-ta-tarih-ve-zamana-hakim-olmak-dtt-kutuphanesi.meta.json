@@ -1,11 +1,11 @@
 {
-  "keywords": "Rust, DTT, tarih, zaman, kütüphane, açık kaynak",
+  "banner": "https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg",
+  "locale": "tr_TR",
   "title": "DTT kütüphanesi ile Rust'ta tarih ve zamana hâkim olmak",
   "banner_alt": "Soyut bir saatin görselleştirmesi",
-  "locale": "tr_TR",
-  "banner": "https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg",
+  "date": "December 04, 2023",
   "subtitle": "Rust uygulamaları için sağlam bir tarih ve zaman kütüphanesi",
-  "description": "DTT, sağlamlık ve ergonomi düşünülerek Rust'ta tarih ve zamanı yönetmek için bir kütüphanedir.",
   "language": "tr-TR",
-  "date": "December 04, 2023"
+  "keywords": "Rust, DTT, tarih, zaman, kütüphane, açık kaynak",
+  "description": "DTT, sağlamlık ve ergonomi düşünülerek Rust'ta tarih ve zamanı yönetmek için bir kütüphanedir."
 }
