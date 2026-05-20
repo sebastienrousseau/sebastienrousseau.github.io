@@ -16,7 +16,7 @@ Invariants checked:
   * Every XML feed (sitemap, RSS, Atom) parses.
   * Every JSON Feed (``feed.json``) parses.
   * The CSP meta tag is strict (covered in detail by
-    ``scripts/test_csp_strict.py``, which is invoked here too).
+    ``scripts/tests/test_csp_strict.py``, which is invoked here too).
   * No ``http://127.0.0.1`` or ``localhost`` URL leaks into the
     rendered output.
   * No double-encoded ``&amp;amp;`` survives in any HTML/XML feed.
@@ -373,7 +373,7 @@ def test_integrity_attributes_are_base64_shape():
 @SKIP_IF_NO_BUILD
 def test_csp_strict_passes():
     result = subprocess.run(
-        [sys.executable, "scripts/test_csp_strict.py"],
+        [sys.executable, "scripts/tests/test_csp_strict.py"],
         capture_output=True, text=True, cwd=ROOT, check=False,
     )
     assert result.returncode == 0, (

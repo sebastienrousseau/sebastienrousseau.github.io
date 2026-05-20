@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Wizualizacja stałych matematycznych i kryptograficznych",
-  "description": "Biblioteka Rust dostarczająca stałe matematyczne i kryptograficzne wykorzystywane w bezpiecznych aplikacjach.",
-  "locale": "pl_PL",
   "date": "Nov 05, 2023",
+  "locale": "pl_PL",
+  "description": "Biblioteka Rust dostarczająca stałe matematyczne i kryptograficzne wykorzystywane w bezpiecznych aplikacjach.",
+  "banner_alt": "Wizualizacja stałych matematycznych i kryptograficznych",
   "language": "pl-PL",
   "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
+  "subtitle": "Biblioteka stałych do bezpiecznych implementacji w Rust",
   "keywords": "Rust, kryptografia, stałe, matematyka, bezpieczeństwo, NIST",
-  "title": "Stałe matematyczne i kryptograficzne dla bezpieczeństwa Rust",
-  "subtitle": "Biblioteka stałych do bezpiecznych implementacji w Rust"
+  "title": "Stałe matematyczne i kryptograficzne dla bezpieczeństwa Rust"
 }

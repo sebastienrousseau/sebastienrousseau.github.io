@@ -2,7 +2,7 @@ name: refresh-gh-stats
 
 # Nightly fetch of public GitHub repository stats (stars / forks /
 # last-push timestamp / language / license) for the projects listed
-# in scripts/fetch_github_stats.py. Updates public/_data/gh-stats.json
+# in scripts/postbuild/fetch_github_stats.py. Updates public/_data/gh-stats.json
 # and commits the change so the next deploy picks it up.
 
 on:
@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - scripts/fetch_github_stats.py
+      - scripts/postbuild/fetch_github_stats.py
       - .github/workflows/refresh-gh-stats.yml
 
 permissions:
@@ -40,7 +40,7 @@ jobs:
       - name: Fetch GitHub stats
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 scripts/fetch_github_stats.py
+        run: python3 scripts/postbuild/fetch_github_stats.py
 
       - name: Commit + push directly to main if changed
         env:

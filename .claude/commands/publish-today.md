@@ -47,7 +47,7 @@ git mv _drafts/<today>-*.md _posts/
 Run the editorial gate **before** scaffolding 27 stubs — a defect in EN cascades through every locale and a build failure later is much more expensive than a one-second check now.
 
 ```bash
-python3 scripts/check_voice.py --today
+python3 scripts/editorial/check_voice.py --today
 ```
 
 This script fails non-zero on any of: incomplete frontmatter (missing title/subtitle/description/banner/banner_alt/tags/twitter_*/excerpt/date/keywords); unreachable banner URL; banned filler ("delve into", "embark on", "in conclusion", "let's explore", "it is worth noting", "in today's fast-paced", "in this article", "transformative journey", "unprecedented", "game-changer", "paradigm shift", "synergy", "harness the power", "unlock the potential", …); missing lead aside or Executive Summary blockquote; fewer than three H2 sections; missing FAQ or References; H1 not exactly once; date mismatch between filename and frontmatter.
@@ -59,7 +59,7 @@ If it fails, **fix the EN draft and re-run** before proceeding. Stub generation 
 If the gate flagged the `banner:` URL as unreachable, pick a fresh one from the curated CDN library:
 
 ```bash
-python3 scripts/pick_banner.py --hint <topic-keywords>
+python3 scripts/editorial/pick_banner.py --hint <topic-keywords>
 ```
 
 Topic keywords are comma-separated. Recognised hints: `cloud`, `kubernetes`, `quantum`, `payments`, `ai`, `rust`, `blockchain`, `iso`, `agentic`, `governance`, `office`. The script:
@@ -73,7 +73,7 @@ Update the `banner:` line in `_posts/<slug>.md` with the returned URL. Re-run `c
 ### 5. Scaffold the 27 locale stubs
 
 ```bash
-python3 scripts/translate_post.py <slug>          # writes 27 _posts/<lang>/<slug>.md + slug-map entries
+python3 scripts/editorial/translate_post.py <slug>          # writes 27 _posts/<lang>/<slug>.md + slug-map entries
 ```
 
 `translate_post.py` is Python-only — identical in both modes. The stubs inherit the EN frontmatter (translation in step 6 also localises frontmatter title/subtitle/description/keywords for SEO).
@@ -107,7 +107,7 @@ Dispatch in priority order (highest-traffic markets first): **fr es de it pt-br 
 When the parallel batch completes, verify completeness:
 
 ```bash
-python3 scripts/translate_post.py <slug> --list-stubs       # should report 'all 27 locales translated'
+python3 scripts/editorial/translate_post.py <slug> --list-stubs       # should report 'all 27 locales translated'
 ```
 
 ### 7. Homepage card rotation
@@ -119,18 +119,18 @@ Edit `_posts/index.md`: in the `<div class="newsroom-grid feat-latest-grid">` bl
 These are Python-only and run identically in both modes. `gen_articles.py` now **auto-discovers** the latest dated post — you no longer need to hand-edit the `ARTICLES` list.
 
 ```bash
-python3 scripts/gen_layouts.py
-python3 scripts/gen_articles.py    # auto-prepends today's article via _discover_latest_article()
-python3 scripts/gen_projects.py
-python3 scripts/gen_papers.py
-python3 scripts/topic_link.py
-python3 scripts/post_enrich.py
-python3 scripts/build_topics.py    # if today's article fits an existing cluster OR you've added it to TOPICS, the slug shows up here
-python3 scripts/build_lang_feeds.py
-python3 scripts/build_agent_api.py
+python3 scripts/generators/gen_layouts.py
+python3 scripts/generators/gen_articles.py    # auto-prepends today's article via _discover_latest_article()
+python3 scripts/generators/gen_projects.py
+python3 scripts/generators/gen_papers.py
+python3 scripts/postbuild/topic_link.py
+python3 scripts/postbuild/post_enrich.py
+python3 scripts/generators/build_topics.py    # if today's article fits an existing cluster OR you've added it to TOPICS, the slug shows up here
+python3 scripts/generators/build_lang_feeds.py
+python3 scripts/generators/build_agent_api.py
 ```
 
-**Topic cluster note**: if today's article belongs to an existing cluster in `scripts/build_topics.py:TOPICS`, prepend its slug to that cluster's `slugs:` list. If it needs a brand-new cluster, add it (mirror the existing cluster shape — title, banner, lede, slugs). Per-locale topic clones are generated automatically by `build_translations.py`.
+**Topic cluster note**: if today's article belongs to an existing cluster in `scripts/generators/build_topics.py:TOPICS`, prepend its slug to that cluster's `slugs:` list. If it needs a brand-new cluster, add it (mirror the existing cluster shape — title, banner, lede, slugs). Per-locale topic clones are generated automatically by `build_translations.py`.
 
 ### 9. Validate
 
@@ -159,7 +159,7 @@ title=$(grep -oE '^title: *"[^"]+"' "_posts/${slug}.md" | head -1 | sed 's/title
 branch="content/${today}-$(echo "$slug" | cut -d'-' -f4-7 | head -c 30)"
 
 git checkout -b "$branch"
-git add _posts/ _data/ scripts/gen_articles.py scripts/build_topics.py _layouts/ .claude/ 2>/dev/null || true
+git add _posts/ _data/ scripts/generators/gen_articles.py scripts/generators/build_topics.py _layouts/ .claude/ 2>/dev/null || true
 git commit -S -m "content(${today}): ${title} + 27 translations"
 git push -u origin "$branch"
 gh pr create --title "content(${today}): ${title}" --body "$(cat <<EOF

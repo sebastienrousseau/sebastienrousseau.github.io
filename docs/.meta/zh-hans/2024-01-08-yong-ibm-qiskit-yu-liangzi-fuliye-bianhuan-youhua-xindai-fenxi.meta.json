@@ -1,11 +1,11 @@
 {
-  "locale": "zh_CN",
-  "keywords": "IBM Qiskit, 量子傅里叶变换, QFT, 信用比率分析, 量子计算, 金融, 风险管理, 银行业, qubit, 量子算法",
-  "title": "用 IBM Qiskit 与量子傅里叶变换优化信用比率分析",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
   "language": "zh-Hans",
   "date": "January 8, 2024",
   "banner_alt": "量子计算机房",
-  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
+  "description": "IBM Qiskit 与量子傅里叶变换（QFT）为信用比率分析带来突破，提升风险评估的精度与速度。",
+  "title": "用 IBM Qiskit 与量子傅里叶变换优化信用比率分析",
+  "keywords": "IBM Qiskit, 量子傅里叶变换, QFT, 信用比率分析, 量子计算, 金融, 风险管理, 银行业, qubit, 量子算法",
   "subtitle": "探索 IBM Qiskit 与量子傅里叶变换如何革新金融领域的信用比率分析，带来空前的准确性与速度",
-  "description": "IBM Qiskit 与量子傅里叶变换（QFT）为信用比率分析带来突破，提升风险评估的精度与速度。"
+  "locale": "zh_CN"
 }

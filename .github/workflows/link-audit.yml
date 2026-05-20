@@ -29,7 +29,7 @@ jobs:
         id: audit
         run: |
           set -o pipefail
-          python3 scripts/audit_links.py --base-dir docs --check-external \
+          python3 scripts/seo_and_audit/audit_links.py --base-dir docs --check-external \
             | tee audit-report.txt
           broken=$(grep -c '^  \[' audit-report.txt || true)
           echo "broken=${broken}" >> "$GITHUB_OUTPUT"
@@ -43,7 +43,7 @@ jobs:
           DATE=$(date -u +%Y-%m-%d)
           TITLE="External link audit — ${DATE} — ${{ steps.audit.outputs.broken }} broken"
           BODY=$(cat <<'EOF'
-          Automated monthly run of `scripts/audit_links.py --check-external`.
+          Automated monthly run of `scripts/seo_and_audit/audit_links.py --check-external`.
 
           Triage rules:
           - **404 / 526 / `URLError`** — almost always real link rot. Replace with a Wayback wildcard URL, an alternative source, or remove the link.

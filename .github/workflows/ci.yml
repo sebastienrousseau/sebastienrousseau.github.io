@@ -74,8 +74,8 @@ jobs:
         # anything.
         run: |
           pip install --quiet radon
-          radon cc scripts/postbuild.py scripts/postbuild_lib/ -a -s
-          c_or_worse=$(radon cc scripts/postbuild.py scripts/postbuild_lib/ -n C -s 2>&1)
+          radon cc scripts/postbuild/postbuild.py scripts/postbuild/postbuild_lib/ -a -s
+          c_or_worse=$(radon cc scripts/postbuild/postbuild.py scripts/postbuild/postbuild_lib/ -n C -s 2>&1)
           if [ -n "$c_or_worse" ]; then
             echo "::error::C-grade or worse complexity found:"
             echo "$c_or_worse"
@@ -97,21 +97,21 @@ jobs:
         run: pytest tests/ -ra
 
       - name: Coverage gate (postbuild_lib must stay at 100 %)
-        # Hard ceiling: every line in scripts/postbuild_lib/ has a unit
+        # Hard ceiling: every line in scripts/postbuild/postbuild_lib/ has a unit
         # test. The gate fails the build if anyone lands code under that
         # tree without matching coverage.
         run: |
           pip install --quiet pytest-cov
-          pytest tests/ --cov=scripts/postbuild_lib --cov-fail-under=100 -q
+          pytest tests/ --cov=scripts/postbuild/postbuild_lib --cov-fail-under=100 -q
 
       - name: Build site
         run: ./build.sh
 
       - name: Internal-link audit
-        run: python3 scripts/audit_links.py --base-dir public --strict-internal
+        run: python3 scripts/seo_and_audit/audit_links.py --base-dir public --strict-internal
 
       - name: JSON-LD + feed validation
-        run: python3 scripts/validate_jsonld.py --base-dir public
+        run: python3 scripts/seo_and_audit/validate_jsonld.py --base-dir public
 
       - name: Upload built artefact
         uses: actions/upload-artifact@v4

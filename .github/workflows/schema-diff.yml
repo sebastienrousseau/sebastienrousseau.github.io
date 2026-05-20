@@ -85,7 +85,7 @@ jobs:
 
       - name: Run JSON-LD diff
         run: |
-          python3 head/scripts/jsonld_diff.py base/docs head/docs > diff.md
+          python3 head/scripts/seo_and_audit/jsonld_diff.py base/docs head/docs > diff.md
           cat diff.md
 
       - name: Post diff comment
