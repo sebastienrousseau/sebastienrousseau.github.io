@@ -1,11 +1,11 @@
 {
-  "language": "zh-Hans",
-  "banner_alt": "Apple MM1 横幅",
-  "description": "Apple MM1 研究为多模态大型语言模型（MLLM）的预训练揭示关键架构与数据组成洞察。",
-  "keywords": "MM1, 多模态 AI, MLLM, 大型语言模型, Apple 研究, 视觉语言, 图像编码器, 少样本学习, MoE, 跨注意力",
-  "date": "March 18, 2024",
-  "title": "用多模态 LLM 推进 AI：MM1 的启示",
+  "locale": "zh_CN",
   "banner": "https://cloudcdn.pro/stocks/images/mm1-visual.webp",
   "subtitle": "Apple MM1 多模态大型语言模型的方法分析与洞察",
-  "locale": "zh_CN"
+  "title": "用多模态 LLM 推进 AI：MM1 的启示",
+  "description": "Apple MM1 研究为多模态大型语言模型（MLLM）的预训练揭示关键架构与数据组成洞察。",
+  "keywords": "MM1, 多模态 AI, MLLM, 大型语言模型, Apple 研究, 视觉语言, 图像编码器, 少样本学习, MoE, 跨注意力",
+  "language": "zh-Hans",
+  "banner_alt": "Apple MM1 横幅",
+  "date": "March 18, 2024"
 }

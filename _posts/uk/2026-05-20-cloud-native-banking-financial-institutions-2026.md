@@ -1,0 +1,219 @@
+---
+author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+banner_alt: "Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering"
+banner_height: "571"
+banner_width: "1425"
+banner: "https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp"
+cdn: "https://cloudcdn.pro"
+charset: "UTF-8"
+cname: "sebastienrousseau.com"
+copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
+date: "May 20, 2026"
+description: "Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption."
+format-detection: "telephone=no"
+hreflang: "uk"
+icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+id: "https://sebastienrousseau.com/uk/2026-05-20-cloud-native-banking-financial-institutions-2026"
+image_alt: "Black and White Portrait of Sebastien Rousseau"
+image_height: "162"
+image_width: "162"
+image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
+keywords: "cloud native banking 2026, Kubernetes banks, financial institutions cloud, DORA 2026, cloud resilience, Red Hat OpenShift, Portworx, VM container coexistence, bank cloud sovereignty, financial services cloud dependency, operational resilience, disaster recovery, cloud exit strategy, AI banking workloads"
+language: "uk"
+last_reviewed: "2026-05-20"
+layout: "report"
+locale: "uk_UA"
+logo_alt: "Logo for Sebastien Rousseau"
+logo_height: "44"
+logo_width: "44"
+logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+menu: ""
+measurementID: "G-169G4ET5HQ"
+name: "Sebastien Rousseau"
+permalink: "https://sebastienrousseau.com/uk/2026-05-20-cloud-native-banking-financial-institutions-2026"
+rating: "general"
+referrer: "no-referrer"
+robots: "index, follow"
+schema: "FAQPage, Article"
+seo_title: "Cloud Native Banking 2026: Kubernetes, DORA, and Sovereignty"
+short_name: "sebastienrousseau"
+subtitle: "Cloud native for banks has matured from container adoption to regulated platform engineering: Kubernetes, VM coexistence, data portability, DORA supervision, cloud dependency reviews, and operational resilience now define the architecture."
+tags: "cloud native banking, Kubernetes, DORA, financial institutions, OpenShift, Portworx, cloud sovereignty, operational resilience, disaster recovery, VM container coexistence, AI workloads, third-party risk, cloud dependency"
+theme-color: "0, 83, 191"
+title: "Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide"
+url: "https://sebastienrousseau.com/uk/2026-05-20-cloud-native-banking-financial-institutions-2026"
+viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+atom_link: "https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026/rss.xml"
+category: "Technology"
+docs: "https://validator.w3.org/feed/docs/rss2.html"
+generator: "Static Site Generator (SSG) (version 0.0.26)"
+item_description: "The 2026 cloud-native banking blueprint — Kubernetes, DORA supervision, VM/container convergence, sovereign cloud, operational resilience, and data portability."
+item_guid: "https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026/rss.xml"
+item_link: "https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026/rss.xml"
+item_pub_date: "Wed, 20 May 2026 06:06:06 +0000"
+item_title: "Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide"
+last_build_date: "Wed, 20 May 2026 06:06:06 +0000"
+managing_editor: "contact@sebastienrousseau.com (Sebastien Rousseau)"
+pub_date: "Wed, 20 May 2026 06:06:06 +0000"
+ttl: "60"
+type: "article"
+webmaster: "contact@sebastienrousseau.com"
+apple_mobile_web_app_orientations: "portrait"
+apple_touch_icon_sizes: "192x192"
+apple-mobile-web-app-capable: "yes"
+apple-mobile-web-app-status-bar-inset: "black"
+apple-mobile-web-app-status-bar-style: "black-translucent"
+apple-mobile-web-app-title: "Cloud Native Banking"
+apple-touch-fullscreen: "yes"
+msapplication-navbutton-color: "0, 83, 191"
+twitter_card: "summary_large_image"
+twitter_creator: "@wwdseb"
+twitter_description: "The 2026 cloud-native banking blueprint — Kubernetes, DORA supervision, VM/container convergence, sovereign cloud, operational resilience, and data portability."
+twitter_image: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
+twitter_image_alt: "Logo of Sebastien Rousseau"
+twitter_site: "@wwdseb"
+twitter_title: "Cloud Native Banking 2026: Kubernetes, DORA, and Sovereignty"
+twitter_url: "https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026"
+author_website: "https://sebastienrousseau.com"
+author_twitter: "@wwdseb"
+author_location: "London, UK"
+thanks: "Thanks for reading!"
+site_last_updated: "2026-05-20"
+site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
+site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
+site_software: "Static Site Generator, Rust"
+---
+
+# Хмарно-нативний банкінг у 2026 році: Kubernetes, DORA, суверенітет і кінець протистояння VM проти контейнерів
+
+Хмарно-нативний (cloud-native) банкінг у 2026 році вже не є дискусією про те, чи можуть банки користуватися хмарою. Це регульована дисципліна платформної інженерії: як експлуатувати критичні сервіси у контейнерах, віртуальних машинах, фабриках даних, AI/ML-навантаженнях та у різних хмарних провайдерів, водночас доводячи операційну стійкість відповідно до DORA (Digital Operational Resilience Act) та аналогічних режимів. IBM описує 2026 рік як перший справжній наглядовий тест DORA з оглядами хмарної залежності, інспекціями кібербезпеки, тестуванням на проникнення під керівництвом загроз (threat-led penetration testing) та прямим наглядом за критичними третіми сторонами ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Один рік від застосування DORA")).
+
+---
+
+> **Резюме для керівництва / Ключові висновки**
+>
+> - **DORA змінила розмову про хмару.** 2026 рік приносить пряме європейське регулювання критичних третіх сторін та цільові огляди залежностей банків від постачальників хмарних послуг ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Один рік від застосування DORA")).
+> - **Kubernetes — це шар платформи, а не вичерпна відповідь.** Банкам потрібен Kubernetes для еластичності, автоматизації та AI/ML-навантажень, але водночас необхідне співіснування з VM (віртуальними машинами), оскільки основний банкінг, платежі, трейдинг та системи управління ризиками й досі працюють на захищених віртуалізованих ландшафтах ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Подолання розриву між успадкованими VM та хмарно-нативним банкінгом")).
+> - **Протистояння VM проти контейнерів зникає.** Red Hat позиціонує OpenShift та Portworx як уніфіковану модель, де VM і контейнери поділяють політики, дані, резервне копіювання, відновлення після збою та механізми управління ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Подолання розриву між успадкованими VM та хмарно-нативним банкінгом")).
+> - **Хмарний суверенітет тепер є архітектурним обмеженням.** Банки використовують суверенітет для управління юрисдикційним контролем, операційною автономією, контролем ключів, локалізацією даних та ризиком концентрації хмари ([Red Hat](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Цифровий суверенітет для банків")).
+> - **AI зробив хмарну нативність терміновою.** Виявлення шахрайства, аналітика ліквідності, персоналізація в режимі реального часу та регуляторна звітність дедалі частіше потребують еластичних обчислень поблизу чутливих даних ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Подолання розриву між успадкованими VM та хмарно-нативним банкінгом")).
+> - **Стратегія виходу — це не PDF-файл.** За сучасних наглядових очікувань банкам потрібні протестована переносимість, карта залежностей, договірні докази, процедури відновлення та реалістичні маршрути міграції для критичних функцій.
+> - **Архітектурна ціль — контрольована хмарна нативність.** Виграшна банківська платформа надає розробникам самообслуговувану доставку, водночас автоматично забезпечуючи аудит, шифрування, резидентність даних, тестування стійкості, розподіл обов'язків та контроль ризиків третіх сторін.
+>
+---
+
+## Чому 2026 рік є роком хмарно-нативного нагляду
+
+DORA застосовується з січня 2025 року, але саме у 2026 році наглядова сила стає видимою. IBM зазначає, що перший перелік критичних третіх сторін (Critical Third-Party Providers) було визначено у листопаді 2025 року і що 2026 рік приносить пряму взаємодію з європейськими наглядовими агентствами, договірні огляди, виїзні інспекції та аналіз хмарної залежності ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Один рік від застосування DORA")).
+
+Це змінює тягар доказування. Банк більше не може стверджувати, що збій хмари — це лише проблема постачальника. Фінансова установа залишається відповідальною за стійкість критичних функцій, навіть коли ці функції залежать від гіперскейлерів, SaaS-провайдерів (Software as a Service), платформ даних та керованих сервісів безпеки.
+
+## Базис хмарно-нативного банкінгу на 2026 рік
+
+### 1. Kubernetes як операційний шар
+
+Kubernetes надає банкам автоматизацію розгортань, еластичність, забезпечення політик, оркестрацію контейнерів та спільну абстракцію між приватною хмарою, публічною хмарою та суверенними середовищами. Для нових робочих навантажень — особливо для AI-керованого виявлення шахрайства, персоналізації в режимі реального часу, аналітики ліквідності та регуляторної звітності — це стало природною площиною управління ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Подолання розриву між успадкованими VM та хмарно-нативним банкінгом")).
+
+Помилкою є вважати Kubernetes пунктом призначення. Для банків це субстрат під керованою платформою для розробників.
+
+### 2. Конвергенція VM та контейнерів
+
+Більшість банків не можуть швидко переписати основний ландшафт. Платіжні двигуни, торгові системи, скоринг кредитів, моделі ризиків та платформи основного банкінгу й досі залежать від захищених VM-ландшафтів. Red Hat стверджує, що банкам потрібна уніфікована платформа, де VM і контейнери можуть працювати разом, зменшуючи дублювання архітектури та узгоджуючи механізми політик, сховища, резервного копіювання та відновлення ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Подолання розриву між успадкованими VM та хмарно-нативним банкінгом")).
+
+Це прагматичний міст між успадкованою стійкістю та хмарно-нативною швидкістю. Він дозволяє банкам спочатку переміщувати суміжні сервіси, спільно розміщувати AI-навантаження, що залежать від даних, та уникати примусового крихкого переписування у критичних системах.
+
+### 3. Операційна стійкість, готова до DORA
+
+IBM зазначає, що наглядові пріоритети на 2026 рік охоплюють подальші заходи щодо недоліків безпеки ICT (інформаційно-комунікаційних технологій) та аутсорсингу, виїзні інспекції з кібербезпеки та ризиків третіх сторін, тестування на проникнення під керівництвом загроз, огляди управління змінами ICT та аналіз хмарної залежності ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Один рік від застосування DORA")).
+
+Це означає, що стійкість має бути тестованою. Архітектурних діаграм недостатньо. Банкам потрібні докази з відпрацювань аварійних перемикань, симуляцій інцидентів, відновлень із резервних копій, карт залежностей, тестування часу відновлення та робочих процесів управління.
+
+### 4. Суверенітет як можливість платформи
+
+Хмарний суверенітет — це не лише резидентність даних. Він охоплює правовий контроль, операційний контроль, контроль ключів шифрування, юрисдикцію персоналу підтримки, розміщення робочих навантажень та здатність продовжувати критичні сервіси, якщо глобальний постачальник або геополітичний процес створює перебій. Red Hat розглядає суверенітет як юрисдикційний контроль та операційну автономію для банків, що працюють у середовищі розбіжних регуляцій, таких як GDPR (General Data Protection Regulation), DORA та національні хмарні правила ([Red Hat](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Цифровий суверенітет для банків")).
+
+Хмарно-нативним наслідком є те, що маршрутизація робочих навантажень, управління секретами, контроль ключів, класифікація даних та забезпечення політик мають бути програмованими.
+
+## Стек банківської платформи
+
+### Шар досвіду розробника
+
+Хмарно-нативна платформа банківського рівня має пропонувати «прокладені шляхи»: золоті стежки (golden paths), шаблони, каталоги сервісів, автоматизовані конвеєри розгортань, типові налаштування спостережуваності, політики-як-код (policy-as-code), стандартну інтеграцію секретів та схвалені шляхи даних. Розробники не повинні узгоджувати кожен реліз з кожним власником контролю.
+
+Платформа має робити шлях, що відповідає вимогам, найшвидшим шляхом. Це єдина модель, що масштабується на тисячі сервісів.
+
+### Шар контролю
+
+Шар контролю включає ідентичність, управління доступом, розподіл обов'язків, шифрування, зберігання ключів, мережеву політику, підписання образів, software bill of materials (SBOM), гейти вразливостей, безпеку часу виконання, журналювання та генерацію доказів. Саме тут DORA, NIS2 (Network and Information Security Directive 2), GDPR, правила аутсорсингу та внутрішні політики ризику моделей перетворюються на виконавчі засоби контролю.
+
+Саме тут зазнають невдачі багато банків. Вони впроваджують контейнери, але залишають засоби контролю як ручні узгодження поза платформою.
+
+### Шар даних
+
+Робочі навантаження зі станом (stateful workloads) — найскладніша частина хмарно-нативного банкінгу. Аргумент Red Hat щодо конвергенції VM/контейнерів значною мірою спирається на уніфіковану фабрику даних та політико-кероване резервне копіювання, реплікацію, перемикання у разі збою та відновлення між VM і контейнерами ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Подолання розриву між успадкованими VM та хмарно-нативним банкінгом")).
+
+Для банків шар даних має відповідати на три запитання: де перебувають дані, хто контролює ключі та як сервіс відновлюється у разі збою інфраструктури?
+
+## Архітектурна таблиця: хмарна нативність для банків
+
+| Можливість | Хмарно-нативний шаблон | Банківська вимога контролю | Сценарій збою |
+|---|---|---|---|
+| **Доставка застосунків** | Kubernetes, GitOps, шаблони | Розподіл обов'язків, докази змін, відкат | Швидкі, але неаудитовані релізи |
+| **Співіснування зі спадщиною** | Уніфікована платформа VM/контейнерів | Узгодженість політик та контроль міграції | Подвійні ландшафти з продубльованим ризиком |
+| **Сервіси даних** | Stateful-оператори та фабрика даних | Резидентність, резервні копії, незмінність, протестоване відновлення | Платформа без стану з крихким станом |
+| **Стійкість** | Багатозональність, багаторегіональність, перемикання у разі збою | Докази DORA та картографування критичних функцій | Хмарний збій як виправдання постачальника |
+| **Суверенітет** | Політико-кероване розміщення робочих навантажень | Юрисдикційні докази та докази контролю ключів | Резидентність без операційної автономії |
+| **AI-навантаження** | Еластичні обчислення поблизу даних | Управління моделями, мінімізація даних, аудит | Чутливі дані переміщено до несхвалених AI-сервісів |
+
+## Що це означає для різних типів установ
+
+### Універсальні банки першого ешелону
+
+Банки першого ешелону мають будувати контрольовані внутрішні платформи у кількох хмарах, із суворою політикою-як-код, класифікацією даних та розміщенням робочих навантажень. Вони мають достатній масштаб, щоб виправдати платформну інженерію, і регулятори очікуватимуть від них глибших доказів.
+
+### Банки середнього ешелону
+
+Банки середнього ешелону мають стандартизувати, а не кастомізувати. Сильна керована платформа Kubernetes, дисциплінований вибір хмарного провайдера, чіткі стратегії виходу та автоматизоване формування доказів є ціннішими за розгалужені мультихмарні амбіції, які установа не здатна підтримувати.
+
+### Інфраструктури фінансових ринків
+
+FMI (Financial Market Infrastructures — інфраструктури фінансових ринків) потребують перш за все доказів стійкості. Вони мають розглядати хмарну нативність як спосіб покращити відновлення, спостережуваність та контрольовану зміну, а не як суто прискорювальну гру.
+
+### Фінтехи та PSP
+
+Фінтехи та PSP (Payment Service Providers — постачальники платіжних послуг) можуть рухатися швидко, але мають уникати переростання своєї моделі контролю. Коли вони стануть системно значущими, до них надійдуть ті самі очікування щодо стійкості, ризику третіх сторін, звітування про інциденти та суверенітету даних.
+
+## Висновок
+
+Хмарно-нативний банкінг у 2026 році — це архітектура управління. Kubernetes є необхідним, але недостатнім. Установи, що досягнуть успіху, конвергуватимуть VM та контейнери там, де це потрібно, використовуватимуть хмарно-нативні шаблони для нових робочих навантажень, доводитимуть стійкість відповідно до DORA, контролюватимуть суверенітет даних на шарі платформи та робитимуть відповідність вимогам достатньо автоматичною, щоб розробники могли рухатися швидко, не створюючи неконтрольованого ризику.
+
+Стара дискусія полягала в тому, чи можуть банки перейти до хмари. Нова дискусія полягає в тому, чи можуть банки зробити хмарну нативність достатньо безпечною, достатньо переносимою та достатньо доказово підтвердженою, щоб обслуговувати сервіси, які мають значення.
+
+## Поширені запитання
+
+**Чи забороняє DORA банкам користуватися хмарою?**
+
+Ні. DORA не забороняє використання хмари. Вона покладає на фінансові установи відповідальність за ризик ICT, залежність від третіх сторін, звітування про інциденти, тестування стійкості та управління критичними сервісами, які покладаються на хмару та інших постачальників ICT ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Один рік від застосування DORA")).
+
+**Чому банкам й досі потрібні VM, якщо Kubernetes — це майбутнє?**
+
+Банки продовжують експлуатувати критичні системи на VM-ландшафтах, зокрема платіжні двигуни, системи основного банкінгу, торгові застосунки та платформи ризиків. Уніфікована модель VM/контейнерів зменшує дублювання, дозволяючи поступову міграцію ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Подолання розриву між успадкованими VM та хмарно-нативним банкінгом")).
+
+**Що таке справжня стратегія виходу з хмари?**
+
+Справжня стратегія виходу охоплює інвентаризацію залежностей, процедури експорту даних, альтернативні варіанти середовища виконання, договірні права, тестування відновлення, плани контролю ключів та реалістичний графік переміщення чи відновлення критичних сервісів.
+
+**Яка найбільша хмарно-нативна помилка банків?**
+
+Найбільша помилка — впровадження контейнерів без засобів контролю платформи. Якщо Kubernetes збільшує швидкість розгортання, але не забезпечує контролю ідентичності, політики, аудиту, резидентності даних, відновлення та вразливостей, він прискорює ризик, а не зменшує його.
+
+## Джерела
+
+- IBM, (2026). [Один рік від застосування DORA: справжній тест DORA починається зараз ⧉](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Справжній тест DORA починається зараз").
+- Red Hat, (2026). [Подолання розриву між успадкованими VM та хмарно-нативним банкінгом ⧉](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Успадковані VM та хмарно-нативний банкінг").
+- Red Hat, (2026). [Цифровий суверенітет для банків ⧉](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Хмарний суверенітет для банків").
+- Thought Machine, (2026). [Хмарно-нативне програмне забезпечення основного банкінгу ⧉](https://www.thoughtmachine.net "Thought Machine Vault").
+<!-- enrich-start -->
+<aside class="author-card" aria-label="Про автора"><img alt="Портрет Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Старший банківський технолог, який пише про прикладний AI, міграцію на ISO 20022, постквантову криптографію для фінансових послуг та структурну трансформацію оптових платежів.</span><span class="author-credentials">Понад 20 років досвіду у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Востаннє переглянуто <time datetime="2026-05-20">2026-05-20</time>.</p>
+<!-- enrich-end -->

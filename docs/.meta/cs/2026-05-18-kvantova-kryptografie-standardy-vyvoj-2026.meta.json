@@ -1,11 +1,11 @@
 {
-  "subtitle": "Kvantová kryptografie přešla od skenování horizontu k implementační disciplíně: standardy NIST PQC jsou připraveny, britská NCSC zúžila volbu algoritmů, protokolová práce IETF stále zraje a ujištění o QKD se posouvá z laboratorní důvěry k certifikační dikci.",
   "banner_alt": "Mapa migrace na kvantově odolnou kryptografii pro rok 2026 zobrazující standardy NIST PQC, hybridní protokolovou práci, ujištění QKD, kryptografickou agilitu a úrovně rizika bankovních dat",
-  "keywords": "kvantová kryptografie 2026, postkvantová kryptografie, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybridní výměna klíčů, QKD, ETSI QKD, ISO IEC 23837, kryptografická agilita, harvest now decrypt later, HNDL, kryptografie finančních služeb, bankovní bezpečnost",
-  "locale": "cs_CZ",
-  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
   "date": "May 18, 2026",
-  "description": "Kvantová kryptografie v roce 2026 už není debatou o tom, zda jsou kvantové počítače na spadnutí. Je to migrační program napříč postkvantovou kryptografií, kryptografickou agilitou, ujištěním o kvantové distribuci klíčů, protokolovými standardy, připraveností dodavatelů a dlouhožijícími finančními daty, která jsou již vystavena riziku harvest-now-decrypt-later.",
+  "locale": "cs_CZ",
+  "language": "cs-CZ",
+  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
+  "subtitle": "Kvantová kryptografie přešla od skenování horizontu k implementační disciplíně: standardy NIST PQC jsou připraveny, britská NCSC zúžila volbu algoritmů, protokolová práce IETF stále zraje a ujištění o QKD se posouvá z laboratorní důvěry k certifikační dikci.",
+  "keywords": "kvantová kryptografie 2026, postkvantová kryptografie, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybridní výměna klíčů, QKD, ETSI QKD, ISO IEC 23837, kryptografická agilita, harvest now decrypt later, HNDL, kryptografie finančních služeb, bankovní bezpečnost",
   "title": "Reset kvantové kryptografie v roce 2026: standardy PQC, ujištění o QKD a migrační práce, kterou banky nemohou odložit",
-  "language": "cs-CZ"
+  "description": "Kvantová kryptografie v roce 2026 už není debatou o tom, zda jsou kvantové počítače na spadnutí. Je to migrační program napříč postkvantovou kryptografií, kryptografickou agilitou, ujištěním o kvantové distribuci klíčů, protokolovými standardy, připraveností dodavatelů a dlouhožijícími finančními daty, která jsou již vystavena riziku harvest-now-decrypt-later."
 }

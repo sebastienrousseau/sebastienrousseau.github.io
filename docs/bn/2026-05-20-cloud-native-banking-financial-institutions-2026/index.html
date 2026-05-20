@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="bn-BD">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Wed, 20 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Wed, 20 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.">
+<meta name="keywords" content="cloud native banking 2026, Kubernetes banks, financial institutions cloud, DORA 2026, cloud resilience, Red Hat OpenShift, Portworx, VM container coexistence, bank cloud sovereignty, financial services cloud dependency, operational resilience, disaster recovery, cloud exit strategy, AI banking workloads">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Cloud Native Banking">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-+L3xjIiPONs1J4FbBRuykdhK/aZz8iFhVxL6iw3u/74=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-d1HzCPRPSZMdSWX8y39pUZ7dNehPRqABMASedtw4Xno=' 'sha256-zxHQkKoRNslIjCJol5rxsl7qdCGI6obvfRhvsJtKBP0=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/bn/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom ফিড" href="/bn/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide — Sebastien Rousseau">
+<meta property="og:description" content="Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/bn/2026-05-20-cloud-native-banking-financial-institutions-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="bn_BD">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide — Sebastien Rousseau">
+<meta name="twitter:description" content="Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/bn/2026-05-20-cloud-native-banking-financial-institutions-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">মূল কনটেন্টে যান</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="নেভিগেশন টগল করুন" />
+      <div class="wrap">
+        <a class="ap-brand" href="/bn/index.html" aria-label="Sebastien Rousseau হোম">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="প্রধান নেভিগেশন">
+          <ul class="ap-menu">
+            <li><a href="/bn/amader-shomporke/index.html">About</a></li>
+            <li><a href="/bn/prabondho/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/bn/prokashana/index.html">Papers</a></li>
+            <li><a href="/bn/bishay/index.html">বিষয়</a></li>
+            <li><a href="/bn/prokolpo/index.html">Projects</a></li>
+            <li><a href="/bn/playlist/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="ডার্ক থিম চালু করুন" aria-pressed="false" title="থিম পরিবর্তন করুন">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="অনুসন্ধান (Cmd বা Ctrl + K)" title="অনুসন্ধান (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="ভাষা">
+            <button type="button" class="ap-lang-toggle" aria-label="BN, ভাষা পরিবর্তন" aria-expanded="false" aria-haspopup="menu" title="ভাষা পরিবর্তন">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">BN</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/bn/jogajog/index.html" aria-label="যোগাযোগ">যোগাযোগ ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="নেভিগেশন টগল করুন">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</h1>
+      <p class="sub">Cloud native for banks has matured from container adoption to regulated platform engineering: Kubernetes, VM coexistence, data portability, DORA supervision, cloud dependency reviews, and operational resilience now define the architecture.</p>
+    <nav class="article-tags" aria-label="বিষয়"><a href="/tags/index.html#h3-cloud-native-banking-2026" class="article-tag" rel="tag">cloud native banking 2026</a><a href="/tags/index.html#h3-kubernetes-banks" class="article-tag" rel="tag">Kubernetes banks</a><a href="/tags/index.html#h3-financial-institutions-cloud" class="article-tag" rel="tag">financial institutions cloud</a><a href="/tags/index.html#h3-dora-2026" class="article-tag" rel="tag">DORA 2026</a><a href="/tags/index.html#h3-cloud-resilience" class="article-tag" rel="tag">cloud resilience</a><a href="/tags/index.html#h3-red-hat-openshift" class="article-tag" rel="tag">Red Hat OpenShift</a><a href="/tags/index.html#h3-portworx" class="article-tag" rel="tag">Portworx</a><a href="/tags/index.html#h3-vm-container-coexistence" class="article-tag" rel="tag">VM container coexistence</a><a href="/tags/index.html#h3-bank-cloud-sovereignty" class="article-tag" rel="tag">bank cloud sovereignty</a><a href="/tags/index.html#h3-financial-services-cloud-dependency" class="article-tag" rel="tag">financial services cloud dependency</a><a href="/tags/index.html#h3-operational-resilience" class="article-tag" rel="tag">operational resilience</a><a href="/tags/index.html#h3-disaster-recovery" class="article-tag" rel="tag">disaster recovery</a><a href="/tags/index.html#h3-cloud-exit-strategy" class="article-tag" rel="tag">cloud exit strategy</a><a href="/tags/index.html#h3-ai-banking-workloads" class="article-tag" rel="tag">AI banking workloads</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-20T06:06:06+00:00" class="meta-pub">প্রকাশিত 20 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="আনুমানিক পঠন সময়">7 মিনিট পঠন</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>বিষয়বস্তু</h2><ol><li><a href="#section-1">কেন ২০২৬ ক্লাউড-নেটিভ তত্ত্বাবধানের বছর</a></li><li><a href="#section-2">২০২৬-এর ক্লাউড-নেটিভ ব্যাংকিং বেসলাইন</a></li><li><a href="#section-7">ব্যাংক প্ল্যাটফর্ম স্ট্যাক</a></li><li><a href="#section-11">আর্কিটেকচার সারণি: ব্যাংকের জন্য ক্লাউড-নেটিভ</a></li><li><a href="#section-12">প্রতিষ্ঠানের ধরন অনুসারে এর অর্থ</a></li><li><a href="#section-17">উপসংহার</a></li><li><a href="#section-18">প্রায়শই জিজ্ঞাসিত প্রশ্নাবলী</a></li><li><a href="#section-19">তথ্যসূত্র</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>কেন ২০২৬ ক্লাউড-নেটিভ তত্ত্বাবধানের বছর.</strong> DORA ২০২৫-এর জানুয়ারি থেকে কার্যকর, কিন্তু ২০২৬-এ তত্ত্বাবধানের প্রকৃত শক্তি দৃশ্যমান হচ্ছে। IBM উল্লেখ করে যে গুরুত্বপূর্ণ তৃতীয় পক্ষ প্রদানকারীদের প্রথম তালিকা ২০২৫-এর নভেম্বরে চিহ্নিত করা হয়েছিল এবং ২০২৬…</li>  <li><strong>২০২৬-এর ক্লাউড-নেটিভ ব্যাংকিং বেসলাইন.</strong> Kubernetes ব্যাংকগুলিকে ডিপ্লয়মেন্ট অটোমেশন, স্থিতিস্থাপকতা, নীতি প্রয়োগ, কন্টেইনার অর্কেস্ট্রেশন এবং প্রাইভেট ক্লাউড, পাবলিক ক্লাউড ও সার্বভৌম পরিবেশজুড়ে একটি অভিন্ন বিমূর্তায়ন প্রদান করে। নতুন ওয়ার্কলোডের…</li>  <li><strong>ব্যাংক প্ল্যাটফর্ম স্ট্যাক.</strong> একটি ব্যাংক-গ্রেড ক্লাউড-নেটিভ প্ল্যাটফর্মে প্রস্তুত পথ প্রকাশ থাকা উচিত: গোল্ডেন পাথ, টেমপ্লেট, পরিষেবা ক্যাটালগ, স্বয়ংক্রিয় ডিপ্লয়মেন্ট পাইপলাইন, পর্যবেক্ষণযোগ্যতার ডিফল্ট, নীতি-হিসেবে-কোড, মানক সিক্রেট…</li>  <li><strong>আর্কিটেকচার সারণি: ব্যাংকের জন্য ক্লাউড-নেটিভ.</strong> টিয়ার-ওয়ান ব্যাংকগুলিকে একাধিক ক্লাউডজুড়ে নিয়ন্ত্রিত অভ্যন্তরীণ প্ল্যাটফর্ম তৈরি করা উচিত, কঠোর নীতি-হিসেবে-কোড, ডেটা শ্রেণিবিন্যাস এবং ওয়ার্কলোড স্থাপনা সহ। প্ল্যাটফর্ম ইঞ্জিনিয়ারিংকে যৌক্তিক প্রমাণ করার জন্য…</li></ul></aside><h1>২০২৬-এ ক্লাউড-নেটিভ ব্যাংকিং: Kubernetes, DORA, সার্বভৌমত্ব এবং VM বনাম কন্টেইনার বিভাজনের অবসান</h1>
+<!-- lead-start -->
+<aside class="post-lead" aria-label="নিবন্ধ সারাংশ">
+<p class="post-lead-tldr"><strong>সারসংক্ষেপ।</strong> ২০২৬-এ ক্লাউড-নেটিভ ব্যাংকিং মানে Kubernetes-ভিত্তিক প্ল্যাটফর্ম ইঞ্জিনিয়ারিং, DORA (Digital Operational Resilience Act)-এর জন্য প্রস্তুত পরিচালনাগত স্থিতিস্থাপকতা, ভার্চুয়াল মেশিন (VM) ও কন্টেইনার অভিসরণ, ক্লাউড সার্বভৌমত্ব, AI/ML (Artificial Intelligence/Machine Learning) ওয়ার্কলোড স্থাপনা, ডেটা পোর্টেবিলিটি এবং প্রমাণ যে গুরুত্বপূর্ণ আর্থিক পরিষেবাগুলি সরবরাহকারীর বিঘ্নের পরেও টিকে থাকতে পারে।</p>
+<p class="post-lead-heading"><strong>মূল উপলব্ধি</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>কেন ২০২৬ ক্লাউড-নেটিভ তত্ত্বাবধানের বছর।</strong> DORA ২০২৫-এর জানুয়ারি থেকে কার্যকর, কিন্তু ২০২৬-এ তত্ত্বাবধানের প্রকৃত শক্তি দৃশ্যমান হচ্ছে।</li>
+  <li><strong>২০২৬-এর ক্লাউড-নেটিভ ব্যাংকিং বেসলাইন।</strong> Kubernetes ব্যাংকগুলিকে ডিপ্লয়মেন্ট অটোমেশন, স্থিতিস্থাপকতা, নীতি প্রয়োগ, কন্টেইনার অর্কেস্ট্রেশন এবং প্রাইভেট ক্লাউড, পাবলিক ক্লাউড ও সার্বভৌম পরিবেশজুড়ে একটি অভিন্ন বিমূর্তায়ন প্রদান করে।</li>
+  <li><strong>ব্যাংক প্ল্যাটফর্ম স্ট্যাক।</strong> একটি ব্যাংক-গ্রেড ক্লাউড-নেটিভ প্ল্যাটফর্মে থাকা উচিত প্রস্তুত পথ: গোল্ডেন পাথ, টেমপ্লেট, পরিষেবা ক্যাটালগ, স্বয়ংক্রিয় ডিপ্লয়মেন্ট পাইপলাইন, পর্যবেক্ষণযোগ্যতার ডিফল্ট, নীতি-হিসেবে-কোড, মানক সিক্রেট ইন্টিগ্রেশন এবং…</li>
+  <li><strong>আর্কিটেকচার সারণি: ব্যাংকের জন্য ক্লাউড-নেটিভ।</strong> টিয়ার-ওয়ান ব্যাংকগুলিকে একাধিক ক্লাউডজুড়ে নিয়ন্ত্রিত অভ্যন্তরীণ প্ল্যাটফর্ম তৈরি করা উচিত, কঠোর নীতি-হিসেবে-কোড, ডেটা শ্রেণিবিন্যাস এবং ওয়ার্কলোড স্থাপনা সহ।</li>
+</ul>
+<p class="post-lead-related"><strong>সংশ্লিষ্ট পাঠ:</strong> <a href="https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026">ব্যাংকের জন্য এজেন্টিক ইঞ্জিনিয়ারিং: C-স্যুট এবং যারা এটি তৈরি করবেন সেই ইঞ্জিনিয়ারদের জন্য ২০২৬-এর ব্লুপ্রিন্ট</a>।</p>
+</aside>
+<!-- lead-end -->
+<p>২০২৬-এ ক্লাউড-নেটিভ ব্যাংকিং আর কোনো বিতর্কের বিষয় নয় যে ব্যাংকগুলি ক্লাউড ব্যবহার করতে পারে কি না। এটি একটি নিয়ন্ত্রিত প্ল্যাটফর্ম-ইঞ্জিনিয়ারিং শৃঙ্খলা: কন্টেইনার, ভার্চুয়াল মেশিন, ডেটা ফ্যাব্রিক, AI ওয়ার্কলোড এবং ক্লাউড প্রদানকারীদের মাধ্যমে কীভাবে গুরুত্বপূর্ণ পরিষেবা পরিচালনা করতে হবে, একই সাথে DORA এবং অনুরূপ নিয়ন্ত্রক ব্যবস্থার অধীনে পরিচালনাগত স্থিতিস্থাপকতা প্রমাণ করতে হবে। IBM ২০২৬-কে DORA-র প্রথম প্রকৃত তত্ত্বাবধানমূলক পরীক্ষা হিসেবে বর্ণনা করে, যেখানে ক্লাউড নির্ভরতা পর্যালোচনা, সাইবারসিকিউরিটি পরিদর্শন, হুমকি-ভিত্তিক পেনিট্রেশন টেস্টিং এবং গুরুত্বপূর্ণ তৃতীয় পক্ষ প্রদানকারীদের প্রত্যক্ষ তদারকি অন্তর্ভুক্ত (<a href="https://www.ibm.com/think/perspectives/dora-application-one-year-in" title="DORA প্রয়োগের এক বছর">IBM</a>)।</p>
+<hr />
+<blockquote>
+<p><strong>নির্বাহী সারসংক্ষেপ / মূল উপলব্ধি</strong></p>
+<ul>
+<li><strong>DORA ক্লাউড আলোচনাকে বদলে দিয়েছে।</strong> ২০২৬ গুরুত্বপূর্ণ তৃতীয় পক্ষ প্রদানকারীদের প্রত্যক্ষ EU তত্ত্বাবধান এবং ব্যাংকগুলির ক্লাউড-পরিষেবা-প্রদানকারী নির্ভরতার লক্ষ্যভিত্তিক পর্যালোচনা নিয়ে আসছে (<a href="https://www.ibm.com/think/perspectives/dora-application-one-year-in" title="DORA প্রয়োগের এক বছর">IBM</a>)।</li>
+<li><strong>Kubernetes হলো প্ল্যাটফর্ম স্তর, সম্পূর্ণ উত্তর নয়।</strong> ব্যাংকগুলির স্থিতিস্থাপকতা, অটোমেশন এবং AI/ML ওয়ার্কলোডের জন্য Kubernetes প্রয়োজন, কিন্তু VM সহাবস্থানও প্রয়োজন কারণ কোর ব্যাংকিং, পেমেন্ট, ট্রেডিং এবং ঝুঁকি সিস্টেম এখনও কঠিনীকৃত ভার্চুয়ালাইজড পরিকাঠামোয় চলে (<a href="https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview" title="লিগ্যাসি VM এবং ক্লাউড-নেটিভ ব্যাংকিংয়ের মধ্যে সেতুবন্ধন">Red Hat</a>)।</li>
+<li><strong>VM বনাম কন্টেইনার বিভাজন বন্ধ হয়ে আসছে।</strong> Red Hat OpenShift এবং Portworx-কে একটি ঐক্যবদ্ধ মডেল হিসেবে অবস্থান করায়, যেখানে VM এবং কন্টেইনার নীতি, ডেটা, ব্যাকআপ, দুর্যোগ পুনরুদ্ধার এবং প্রশাসন নিয়ন্ত্রণ ভাগ করে নেয় (<a href="https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview" title="লিগ্যাসি VM এবং ক্লাউড-নেটিভ ব্যাংকিংয়ের মধ্যে সেতুবন্ধন">Red Hat</a>)।</li>
+<li><strong>ক্লাউড সার্বভৌমত্ব এখন একটি নকশার সীমাবদ্ধতা।</strong> ব্যাংকগুলি এখতিয়ার নিয়ন্ত্রণ, পরিচালনাগত স্বায়ত্তশাসন, কী নিয়ন্ত্রণ, ডেটার অবস্থান এবং ক্লাউড ঘনত্ব ঝুঁকি পরিচালনার জন্য সার্বভৌমত্ব ব্যবহার করছে (<a href="https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview" title="ব্যাংকের জন্য ডিজিটাল সার্বভৌমত্ব">Red Hat</a>)।</li>
+<li><strong>AI ক্লাউড-নেটিভকে জরুরি করে তুলেছে।</strong> জালিয়াতি সনাক্তকরণ, তারল্য বিশ্লেষণ, রিয়েল-টাইম ব্যক্তিগতকরণ এবং নিয়ন্ত্রক প্রতিবেদন ক্রমবর্ধমানভাবে সংবেদনশীল ডেটার কাছাকাছি স্থিতিস্থাপক কম্পিউট দাবি করছে (<a href="https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview" title="লিগ্যাসি VM এবং ক্লাউড-নেটিভ ব্যাংকিংয়ের মধ্যে সেতুবন্ধন">Red Hat</a>)।</li>
+<li><strong>এক্সিট স্ট্র্যাটেজি কোনো PDF নয়।</strong> আধুনিক তত্ত্বাবধানমূলক প্রত্যাশার অধীনে, ব্যাংকগুলির গুরুত্বপূর্ণ কার্যাবলির জন্য পরীক্ষিত পোর্টেবিলিটি, নির্ভরতা ম্যাপিং, চুক্তিভিত্তিক প্রমাণ, পুনরুদ্ধার পদ্ধতি এবং বাস্তবসম্মত মাইগ্রেশন পথ প্রয়োজন।</li>
+<li><strong>আর্কিটেকচারের লক্ষ্য হলো নিয়ন্ত্রিত ক্লাউড-নেটিভ।</strong> বিজয়ী ব্যাংক প্ল্যাটফর্ম ডেভেলপারদের স্ব-পরিষেবা ডেলিভারি প্রদান করে, একই সাথে স্বয়ংক্রিয়ভাবে অডিট, এনক্রিপশন, ডেটা রেসিডেন্সি, স্থিতিস্থাপকতা পরীক্ষা, কর্তব্যের পৃথকীকরণ এবং তৃতীয় পক্ষ ঝুঁকি নিয়ন্ত্রণ প্রয়োগ করে।</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="section-1">কেন ২০২৬ ক্লাউড-নেটিভ তত্ত্বাবধানের বছর <a class="heading-anchor" href="#section-1" aria-label="লিঙ্ক কেন ২০২৬ ক্লাউড-নেটিভ তত্ত্বাবধানের বছর">#</a></h2>
+<p>DORA ২০২৫-এর জানুয়ারি থেকে কার্যকর, কিন্তু ২০২৬-এ তত্ত্বাবধানের প্রকৃত শক্তি দৃশ্যমান হচ্ছে। IBM উল্লেখ করে যে গুরুত্বপূর্ণ তৃতীয় পক্ষ প্রদানকারীদের প্রথম তালিকা ২০২৫-এর নভেম্বরে চিহ্নিত করা হয়েছিল এবং ২০২৬ ইউরোপীয় তত্ত্বাবধান সংস্থাগুলির সাথে সরাসরি সংযোগ, চুক্তি পর্যালোচনা, অনসাইট পরিদর্শন এবং ক্লাউড নির্ভরতা বিশ্লেষণ নিয়ে আসছে (<a href="https://www.ibm.com/think/perspectives/dora-application-one-year-in" title="DORA প্রয়োগের এক বছর">IBM</a>)।</p>
+<p>এটি প্রমাণের দায়ভার পরিবর্তন করে। একটি ব্যাংক আর বলতে পারে না যে ক্লাউড বিভ্রাট কেবল বিক্রেতার সমস্যা। আর্থিক প্রতিষ্ঠান গুরুত্বপূর্ণ কার্যাবলির স্থিতিস্থাপকতার জন্য জবাবদিহি থাকে, এমনকি যখন সেই কার্যাবলি হাইপারস্কেলার, SaaS (Software as a Service) প্রদানকারী, ডেটা প্ল্যাটফর্ম এবং পরিচালিত নিরাপত্তা পরিষেবার উপর নির্ভর করে।</p>
+<h2 id="section-2">২০২৬-এর ক্লাউড-নেটিভ ব্যাংকিং বেসলাইন <a class="heading-anchor" href="#section-2" aria-label="লিঙ্ক ২০২৬-এর ক্লাউড-নেটিভ ব্যাংকিং বেসলাইন">#</a></h2>
+<h3 id="kubernetes">১. Kubernetes অপারেটিং স্তর হিসেবে <a class="heading-anchor" href="#kubernetes" aria-label="লিঙ্ক ১. Kubernetes অপারেটিং স্তর হিসেবে">#</a></h3>
+<p>Kubernetes ব্যাংকগুলিকে ডিপ্লয়মেন্ট অটোমেশন, স্থিতিস্থাপকতা, নীতি প্রয়োগ, কন্টেইনার অর্কেস্ট্রেশন এবং প্রাইভেট ক্লাউড, পাবলিক ক্লাউড ও সার্বভৌম পরিবেশজুড়ে একটি অভিন্ন বিমূর্তায়ন প্রদান করে। নতুন ওয়ার্কলোডের জন্য, বিশেষ করে AI-চালিত জালিয়াতি সনাক্তকরণ, রিয়েল-টাইম ব্যক্তিগতকরণ, তারল্য বিশ্লেষণ এবং নিয়ন্ত্রক প্রতিবেদনের জন্য, এটি স্বাভাবিক নিয়ন্ত্রণ স্তর হয়ে উঠেছে (<a href="https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview" title="লিগ্যাসি VM এবং ক্লাউড-নেটিভ ব্যাংকিংয়ের মধ্যে সেতুবন্ধন">Red Hat</a>)।</p>
+<p>ভুল হলো Kubernetes-কে গন্তব্য হিসেবে গণ্য করা। ব্যাংকের জন্য, এটি একটি প্রশাসিত ডেভেলপার প্ল্যাটফর্মের অন্তর্নিহিত ভিত্তি।</p>
+<h3 id="vm">২. VM এবং কন্টেইনার অভিসরণ <a class="heading-anchor" href="#vm" aria-label="লিঙ্ক ২. VM এবং কন্টেইনার অভিসরণ">#</a></h3>
+<p>বেশিরভাগ ব্যাংক কোর পরিকাঠামো দ্রুত পুনর্লিখন করতে পারে না। পেমেন্ট ইঞ্জিন, ট্রেডিং সিস্টেম, ক্রেডিট স্কোরিং, ঝুঁকি মডেল এবং কোর ব্যাংকিং প্ল্যাটফর্ম এখনও কঠিনীকৃত VM পরিকাঠামোর উপর নির্ভর করে। Red Hat যুক্তি দেয় যে ব্যাংকগুলির একটি ঐক্যবদ্ধ প্ল্যাটফর্ম প্রয়োজন যেখানে VM এবং কন্টেইনার একসাথে কাজ করতে পারে, পুনরাবৃত্ত আর্কিটেকচার হ্রাস করে এবং নীতি, স্টোরেজ, ব্যাকআপ এবং পুনরুদ্ধার নিয়ন্ত্রণ সারিবদ্ধ করে (<a href="https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview" title="লিগ্যাসি VM এবং ক্লাউড-নেটিভ ব্যাংকিংয়ের মধ্যে সেতুবন্ধন">Red Hat</a>)।</p>
+<p>এটি লিগ্যাসি স্থিতিস্থাপকতা এবং ক্লাউড-নেটিভ গতিবেগের মধ্যে বাস্তবসম্মত সেতু। এটি ব্যাংকগুলিকে প্রথমে সংলগ্ন পরিষেবাগুলি স্থানান্তর করতে, ডেটা-নির্ভর AI ওয়ার্কলোডকে সহ-অবস্থান করতে এবং গুরুত্বপূর্ণ সিস্টেমে ভঙ্গুর পুনর্লিখন চাপিয়ে দেওয়া এড়াতে দেয়।</p>
+<h3 id="dora">৩. DORA-প্রস্তুত পরিচালনাগত স্থিতিস্থাপকতা <a class="heading-anchor" href="#dora" aria-label="লিঙ্ক ৩. DORA-প্রস্তুত পরিচালনাগত স্থিতিস্থাপকতা">#</a></h3>
+<p>IBM বলছে ২০২৬-এর তত্ত্বাবধানমূলক অগ্রাধিকারগুলির মধ্যে রয়েছে ICT (Information and Communications Technology) সিকিউরিটি এবং আউটসোর্সিংয়ের ঘাটতির অনুসরণ, সাইবারসিকিউরিটি ও তৃতীয় পক্ষ ঝুঁকি অনসাইট পরিদর্শন, হুমকি-ভিত্তিক পেনিট্রেশন টেস্টিং, ICT পরিবর্তন-ব্যবস্থাপনা পর্যালোচনা এবং ক্লাউড নির্ভরতা বিশ্লেষণ (<a href="https://www.ibm.com/think/perspectives/dora-application-one-year-in" title="DORA প্রয়োগের এক বছর">IBM</a>)।</p>
+<p>এর অর্থ স্থিতিস্থাপকতা পরীক্ষাযোগ্য হতে হবে। আর্কিটেকচার ডায়াগ্রাম যথেষ্ট নয়। ব্যাংকগুলির ফেইলওভার অনুশীলন, ঘটনা সিমুলেশন, ব্যাকআপ পুনরুদ্ধার, নির্ভরতা মানচিত্র, পুনরুদ্ধার-সময় পরীক্ষা এবং প্রশাসন ওয়ার্কফ্লো থেকে প্রমাণ প্রয়োজন।</p>
+<h3 id="section-6">৪. প্ল্যাটফর্ম সক্ষমতা হিসেবে সার্বভৌমত্ব <a class="heading-anchor" href="#section-6" aria-label="লিঙ্ক ৪. প্ল্যাটফর্ম সক্ষমতা হিসেবে সার্বভৌমত্ব">#</a></h3>
+<p>ক্লাউড সার্বভৌমত্ব কেবল ডেটা রেসিডেন্সি নয়। এতে রয়েছে আইনি নিয়ন্ত্রণ, পরিচালনাগত নিয়ন্ত্রণ, এনক্রিপশন-কী নিয়ন্ত্রণ, সহায়তা-কর্মীদের এখতিয়ার, ওয়ার্কলোড স্থাপনা এবং একটি বৈশ্বিক প্রদানকারী বা ভূ-রাজনৈতিক প্রক্রিয়া বিঘ্ন সৃষ্টি করলেও গুরুত্বপূর্ণ পরিষেবা চালিয়ে যাওয়ার ক্ষমতা। Red Hat সার্বভৌমত্বকে এখতিয়ার নিয়ন্ত্রণ এবং পরিচালনাগত স্বায়ত্তশাসন হিসেবে চিত্রিত করে, যা GDPR (General Data Protection Regulation), DORA এবং জাতীয় ক্লাউড বিধির মতো ভিন্ন নিয়মাবলির সম্মুখীন ব্যাংকগুলির জন্য প্রযোজ্য (<a href="https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview" title="ব্যাংকের জন্য ডিজিটাল সার্বভৌমত্ব">Red Hat</a>)।</p>
+<p>ক্লাউড-নেটিভ প্রভাব হলো ওয়ার্কলোড রাউটিং, সিক্রেট ব্যবস্থাপনা, কী নিয়ন্ত্রণ, ডেটা শ্রেণিবিন্যাস এবং নীতি প্রয়োগকে প্রোগ্রামযোগ্য হতে হবে।</p>
+<h2 id="section-7">ব্যাংক প্ল্যাটফর্ম স্ট্যাক <a class="heading-anchor" href="#section-7" aria-label="লিঙ্ক ব্যাংক প্ল্যাটফর্ম স্ট্যাক">#</a></h2>
+<h3 id="section-8">ডেভেলপার অভিজ্ঞতা স্তর <a class="heading-anchor" href="#section-8" aria-label="লিঙ্ক ডেভেলপার অভিজ্ঞতা স্তর">#</a></h3>
+<p>একটি ব্যাংক-গ্রেড ক্লাউড-নেটিভ প্ল্যাটফর্মে প্রস্তুত পথ প্রকাশ থাকা উচিত: গোল্ডেন পাথ, টেমপ্লেট, পরিষেবা ক্যাটালগ, স্বয়ংক্রিয় ডিপ্লয়মেন্ট পাইপলাইন, পর্যবেক্ষণযোগ্যতার ডিফল্ট, নীতি-হিসেবে-কোড, মানক সিক্রেট ইন্টিগ্রেশন এবং অনুমোদিত ডেটা পথ। ডেভেলপারদের প্রতিটি রিলিজের জন্য প্রতিটি নিয়ন্ত্রণ মালিকের সাথে আলোচনা করতে হওয়া উচিত নয়।</p>
+<p>প্ল্যাটফর্মটির অনুসরণযোগ্য পথকেই দ্রুততম পথ করা উচিত। হাজার হাজার পরিষেবাজুড়ে স্কেল করার এটিই একমাত্র মডেল।</p>
+<h3 id="section-9">নিয়ন্ত্রণ স্তর <a class="heading-anchor" href="#section-9" aria-label="লিঙ্ক নিয়ন্ত্রণ স্তর">#</a></h3>
+<p>নিয়ন্ত্রণ স্তরে অন্তর্ভুক্ত থাকে পরিচয়, অ্যাক্সেস ব্যবস্থাপনা, কর্তব্যের পৃথকীকরণ, এনক্রিপশন, কী কাস্টডি, নেটওয়ার্ক নীতি, ইমেজ সাইনিং, সফটওয়্যার বিল অফ ম্যাটেরিয়ালস, দুর্বলতা গেট, রানটাইম সিকিউরিটি, লগিং এবং প্রমাণ তৈরি। এখানেই DORA, NIS2 (Network and Information Security Directive 2), GDPR, আউটসোর্সিং বিধি এবং অভ্যন্তরীণ মডেল ঝুঁকি নীতি কার্যকর নিয়ন্ত্রণে রূপান্তরিত হয়।</p>
+<p>এখানেই অনেক ব্যাংক ব্যর্থ হয়। তারা কন্টেইনার গ্রহণ করে কিন্তু নিয়ন্ত্রণগুলিকে প্ল্যাটফর্মের বাইরে ম্যানুয়াল অনুমোদন হিসেবে রেখে দেয়।</p>
+<h3 id="section-10">ডেটা স্তর <a class="heading-anchor" href="#section-10" aria-label="লিঙ্ক ডেটা স্তর">#</a></h3>
+<p>স্টেটফুল ওয়ার্কলোডই ক্লাউড-নেটিভ ব্যাংকিংয়ের সবচেয়ে কঠিন অংশ। Red Hat-এর VM/কন্টেইনার অভিসরণ যুক্তি একটি ঐক্যবদ্ধ ডেটা ফ্যাব্রিক এবং VM ও কন্টেইনারজুড়ে নীতি-চালিত ব্যাকআপ, প্রতিলিপি, ফেইলওভার এবং পুনরুদ্ধারের উপর গভীরভাবে নির্ভর করে (<a href="https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview" title="লিগ্যাসি VM এবং ক্লাউড-নেটিভ ব্যাংকিংয়ের মধ্যে সেতুবন্ধন">Red Hat</a>)।</p>
+<p>ব্যাংকের জন্য, ডেটা স্তরকে তিনটি প্রশ্নের উত্তর দিতে হবে: ডেটা কোথায়, কীগুলি কে নিয়ন্ত্রণ করে এবং অবকাঠামো ব্যর্থ হলে পরিষেবা কীভাবে পুনরুদ্ধার হয়?</p>
+<h2 id="section-11">আর্কিটেকচার সারণি: ব্যাংকের জন্য ক্লাউড-নেটিভ <a class="heading-anchor" href="#section-11" aria-label="লিঙ্ক আর্কিটেকচার সারণি: ব্যাংকের জন্য ক্লাউড-নেটিভ">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>সক্ষমতা</th>
+<th>ক্লাউড-নেটিভ প্যাটার্ন</th>
+<th>ব্যাংকিং নিয়ন্ত্রণ প্রয়োজনীয়তা</th>
+<th>ব্যর্থতার মোড</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>অ্যাপ্লিকেশন ডেলিভারি</strong></td>
+<td>Kubernetes, GitOps, টেমপ্লেট</td>
+<td>কর্তব্যের পৃথকীকরণ, পরিবর্তনের প্রমাণ, রোলব্যাক</td>
+<td>দ্রুত কিন্তু অডিট-অযোগ্য রিলিজ</td>
+</tr>
+<tr>
+<td><strong>লিগ্যাসি সহাবস্থান</strong></td>
+<td>VM/কন্টেইনার ঐক্যবদ্ধ প্ল্যাটফর্ম</td>
+<td>নীতির সামঞ্জস্য এবং মাইগ্রেশন নিয়ন্ত্রণ</td>
+<td>পুনরাবৃত্ত ঝুঁকি সহ দ্বৈত পরিকাঠামো</td>
+</tr>
+<tr>
+<td><strong>ডেটা পরিষেবা</strong></td>
+<td>স্টেটফুল অপারেটর এবং ডেটা ফ্যাব্রিক</td>
+<td>রেসিডেন্সি, ব্যাকআপ, অপরিবর্তনীয়তা, পরীক্ষিত পুনরুদ্ধার</td>
+<td>স্টেটফুল ভঙ্গুরতা সহ স্টেটলেস প্ল্যাটফর্ম</td>
+</tr>
+<tr>
+<td><strong>স্থিতিস্থাপকতা</strong></td>
+<td>মাল্টি-জোন, মাল্টি-রিজিয়ন, ফেইলওভার</td>
+<td>DORA প্রমাণ এবং গুরুত্বপূর্ণ-কার্যাবলি ম্যাপিং</td>
+<td>বিক্রেতার অজুহাত হিসেবে গণ্য ক্লাউড বিভ্রাট</td>
+</tr>
+<tr>
+<td><strong>সার্বভৌমত্ব</strong></td>
+<td>নীতি-ভিত্তিক ওয়ার্কলোড স্থাপনা</td>
+<td>এখতিয়ার এবং কী-নিয়ন্ত্রণ প্রমাণ</td>
+<td>পরিচালনাগত স্বায়ত্তশাসন ছাড়া রেসিডেন্সি</td>
+</tr>
+<tr>
+<td><strong>AI ওয়ার্কলোড</strong></td>
+<td>ডেটার কাছাকাছি স্থিতিস্থাপক কম্পিউট</td>
+<td>মডেল প্রশাসন, ডেটা ন্যূনতমকরণ, অডিট</td>
+<td>অননুমোদিত AI পরিষেবায় সংবেদনশীল ডেটা স্থানান্তর</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-12">প্রতিষ্ঠানের ধরন অনুসারে এর অর্থ <a class="heading-anchor" href="#section-12" aria-label="লিঙ্ক প্রতিষ্ঠানের ধরন অনুসারে এর অর্থ">#</a></h2>
+<h3 id="section-13">টিয়ার-ওয়ান ইউনিভার্সাল ব্যাংক <a class="heading-anchor" href="#section-13" aria-label="লিঙ্ক টিয়ার-ওয়ান ইউনিভার্সাল ব্যাংক">#</a></h3>
+<p>টিয়ার-ওয়ান ব্যাংকগুলিকে একাধিক ক্লাউডজুড়ে নিয়ন্ত্রিত অভ্যন্তরীণ প্ল্যাটফর্ম তৈরি করা উচিত, কঠোর নীতি-হিসেবে-কোড, ডেটা শ্রেণিবিন্যাস এবং ওয়ার্কলোড স্থাপনা সহ। প্ল্যাটফর্ম ইঞ্জিনিয়ারিংকে যৌক্তিক প্রমাণ করার জন্য তাদের যথেষ্ট স্কেল রয়েছে এবং নিয়ন্ত্রকরা তাদের কাছ থেকে গভীর প্রমাণ প্রত্যাশা করবেন।</p>
+<h3 id="section-14">মিড-টিয়ার ব্যাংক <a class="heading-anchor" href="#section-14" aria-label="লিঙ্ক মিড-টিয়ার ব্যাংক">#</a></h3>
+<p>মিড-টিয়ার ব্যাংকগুলিকে কাস্টমাইজ করার পরিবর্তে মানককরণ করা উচিত। একটি শক্তিশালী পরিচালিত Kubernetes প্ল্যাটফর্ম, শৃঙ্খলাবদ্ধ ক্লাউড-প্রদানকারী নির্বাচন, স্পষ্ট এক্সিট স্ট্র্যাটেজি এবং স্বয়ংক্রিয় প্রমাণ তৈরি প্রতিষ্ঠানটি পরিচালনা করতে অক্ষম এমন বিস্তৃত মাল্টি-ক্লাউড উচ্চাকাঙ্ক্ষার চেয়ে বেশি মূল্যবান।</p>
+<h3 id="section-15">ফাইন্যান্সিয়াল মার্কেট ইনফ্রাস্ট্রাকচার <a class="heading-anchor" href="#section-15" aria-label="লিঙ্ক ফাইন্যান্সিয়াল মার্কেট ইনফ্রাস্ট্রাকচার">#</a></h3>
+<p>FMI (Financial Market Infrastructure)-গুলির সর্বোপরি স্থিতিস্থাপকতা প্রমাণ প্রয়োজন। তাদের ক্লাউড-নেটিভকে কেবল গতি বাড়ানোর কৌশল হিসেবে নয়, বরং পুনরুদ্ধার, পর্যবেক্ষণযোগ্যতা এবং নিয়ন্ত্রিত পরিবর্তন উন্নত করার একটি উপায় হিসেবে গ্রহণ করা উচিত।</p>
+<h3 id="psp">ফিনটেক এবং PSP <a class="heading-anchor" href="#psp" aria-label="লিঙ্ক ফিনটেক এবং PSP">#</a></h3>
+<p>ফিনটেক এবং PSP (Payment Service Provider)-গুলি দ্রুত চলতে পারে, কিন্তু তাদের নিয়ন্ত্রণ মডেল অতিক্রম করা এড়াতে হবে। তারা ব্যবস্থাগতভাবে প্রাসঙ্গিক হয়ে উঠলে, একই স্থিতিস্থাপকতা, তৃতীয় পক্ষ ঝুঁকি, ঘটনা-প্রতিবেদন এবং ডেটা-সার্বভৌমত্ব প্রত্যাশা এসে পৌঁছাবে।</p>
+<h2 id="section-17">উপসংহার <a class="heading-anchor" href="#section-17" aria-label="লিঙ্ক উপসংহার">#</a></h2>
+<p>২০২৬-এ ক্লাউড-নেটিভ ব্যাংকিং একটি প্রশাসন আর্কিটেকচার। Kubernetes অপরিহার্য, কিন্তু যথেষ্ট নয়। সফল প্রতিষ্ঠানগুলি প্রয়োজনে VM এবং কন্টেইনারকে একীভূত করবে, নতুন ওয়ার্কলোডের জন্য ক্লাউড-নেটিভ প্যাটার্ন ব্যবহার করবে, DORA-র অধীনে স্থিতিস্থাপকতা প্রমাণ করবে, প্ল্যাটফর্ম স্তরে ডেটা সার্বভৌমত্ব নিয়ন্ত্রণ করবে এবং কমপ্লায়েন্সকে যথেষ্ট স্বয়ংক্রিয় করবে যাতে ডেভেলপাররা অনিয়ন্ত্রিত ঝুঁকি তৈরি না করেই দ্রুত চলতে পারে।</p>
+<p>পুরনো বিতর্ক ছিল ব্যাংকগুলি ক্লাউডে যেতে পারে কি না। নতুন বিতর্ক হলো গুরুত্বপূর্ণ পরিষেবাগুলি চালানোর জন্য ব্যাংকগুলি ক্লাউড-নেটিভকে যথেষ্ট নিরাপদ, যথেষ্ট পোর্টেবল এবং যথেষ্ট প্রমাণিত করতে পারে কি না।</p>
+<h2 id="section-18">প্রায়শই জিজ্ঞাসিত প্রশ্নাবলী <a class="heading-anchor" href="#section-18" aria-label="লিঙ্ক প্রায়শই জিজ্ঞাসিত প্রশ্নাবলী">#</a></h2>
+<p><strong>DORA কি ব্যাংকগুলিকে ক্লাউড ব্যবহার থেকে বিরত রাখে?</strong></p>
+<p>না। DORA ক্লাউড ব্যবহার নিষিদ্ধ করে না। এটি আর্থিক প্রতিষ্ঠানগুলিকে ICT ঝুঁকি, তৃতীয় পক্ষ নির্ভরতা, ঘটনা প্রতিবেদন, স্থিতিস্থাপকতা পরীক্ষা এবং ক্লাউড ও অন্যান্য ICT প্রদানকারীদের উপর নির্ভরশীল গুরুত্বপূর্ণ পরিষেবাগুলির প্রশাসনের জন্য জবাবদিহি করে (<a href="https://www.ibm.com/think/perspectives/dora-application-one-year-in" title="DORA প্রয়োগের এক বছর">IBM</a>)।</p>
+<p><strong>Kubernetes ভবিষ্যৎ হলে ব্যাংকগুলির এখনও VM প্রয়োজন কেন?</strong></p>
+<p>ব্যাংকগুলি এখনও VM-ভিত্তিক পরিকাঠামোয় গুরুত্বপূর্ণ সিস্টেম চালায়, যার মধ্যে রয়েছে পেমেন্ট ইঞ্জিন, কোর ব্যাংকিং সিস্টেম, ট্রেডিং অ্যাপ্লিকেশন এবং ঝুঁকি প্ল্যাটফর্ম। একটি ঐক্যবদ্ধ VM/কন্টেইনার মডেল ক্রমান্বয়ে মাইগ্রেশনের সুযোগ দেওয়ার সাথে সাথে পুনরাবৃত্তি হ্রাস করে (<a href="https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview" title="লিগ্যাসি VM এবং ক্লাউড-নেটিভ ব্যাংকিংয়ের মধ্যে সেতুবন্ধন">Red Hat</a>)।</p>
+<p><strong>প্রকৃত ক্লাউড এক্সিট স্ট্র্যাটেজি কী?</strong></p>
+<p>একটি প্রকৃত এক্সিট স্ট্র্যাটেজিতে রয়েছে নির্ভরতা ইনভেন্টরি, ডেটা রপ্তানি পদ্ধতি, বিকল্প রানটাইম বিকল্প, চুক্তিভিত্তিক অধিকার, পুনরুদ্ধার পরীক্ষা, কী-নিয়ন্ত্রণ পরিকল্পনা এবং গুরুত্বপূর্ণ পরিষেবা স্থানান্তর বা পুনরুদ্ধারের জন্য একটি বাস্তবসম্মত সময়সূচি।</p>
+<p><strong>ব্যাংকগুলির সবচেয়ে বড় ক্লাউড-নেটিভ ভুল কী?</strong></p>
+<p>সবচেয়ে বড় ভুল হলো প্ল্যাটফর্ম নিয়ন্ত্রণ ছাড়াই কন্টেইনার গ্রহণ করা। যদি Kubernetes ডিপ্লয়মেন্ট গতি বাড়ায় কিন্তু পরিচয়, নীতি, অডিট, ডেটা রেসিডেন্সি, পুনরুদ্ধার এবং দুর্বলতা নিয়ন্ত্রণ প্রয়োগ না করে, তবে এটি ঝুঁকি হ্রাস করার পরিবর্তে ত্বরান্বিত করে।</p>
+<h2 id="section-19">তথ্যসূত্র <a class="heading-anchor" href="#section-19" aria-label="লিঙ্ক তথ্যসূত্র">#</a></h2>
+<ul>
+<li>IBM, (২০২৬)। <a href="https://www.ibm.com/think/perspectives/dora-application-one-year-in" title="DORA-র প্রকৃত পরীক্ষা এখন শুরু হচ্ছে">DORA প্রয়োগের এক বছর: DORA-র প্রকৃত পরীক্ষা এখন শুরু হচ্ছে ⧉</a>।</li>
+<li>Red Hat, (২০২৬)। <a href="https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview" title="লিগ্যাসি VM এবং ক্লাউড-নেটিভ ব্যাংকিং">লিগ্যাসি VM এবং ক্লাউড-নেটিভ ব্যাংকিংয়ের মধ্যে সেতুবন্ধন ⧉</a>।</li>
+<li>Red Hat, (২০২৬)। <a href="https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview" title="ব্যাংকের জন্য ক্লাউড সার্বভৌমত্ব">ব্যাংকের জন্য ডিজিটাল সার্বভৌমত্ব ⧉</a>।</li>
+<li>Thought Machine, (২০২৬)। <a href="https://www.thoughtmachine.net" title="Thought Machine Vault">ক্লাউড-নেটিভ কোর ব্যাংকিং সফটওয়্যার ⧉</a>।</li>
+</ul>
+<!-- enrich-start -->
+<aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="Sebastien Rousseau-এর প্রতিকৃতি" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/bn/amader-shomporke/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">প্রয়োগিক AI, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লেখা সিনিয়র ব্যাংকিং প্রযুক্তিবিদ।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-জুড়ে ২০+ বছরের অভিজ্ঞতা। <a href="/bn/amader-shomporke/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-05-20">২০২৬-০৫-২০</time>।</p>
+<!-- enrich-end --><aside class="author-card" aria-label="লেখক সম্পর্কে"><img alt="Sebastien Rousseau-এর ছবি" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/bn/amader-shomporke/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">সিনিয়র ব্যাঙ্কিং প্রযুক্তিবিদ; আমি প্রায়োগিক এআই, ISO 20022 মাইগ্রেশন, আর্থিক পরিষেবার জন্য পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের কাঠামোগত রূপান্তর নিয়ে লিখি।</span><span class="author-credentials">HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group-এ ২০ বছরেরও বেশি অভিজ্ঞতা। <a href="/bn/amader-shomporke/index.html">সম্পূর্ণ প্রোফাইল</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">সর্বশেষ পর্যালোচনা <time datetime="2026-05-20">2026-05-20</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">সম্পর্কিত পঠন</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026" class="related-media" aria-label="Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It" tabindex="-1"><img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/api/transform?url=/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="agentic-engineering-for-banks-a-2026-blueprint-for-the-c-suite-and-the-engineers"><a href="https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a> <a class="heading-anchor" href="#agentic-engineering-for-banks-a-2026-blueprint-for-the-c-suite-and-the-engineers" aria-label="লিঙ্ক Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It">#</a></h3><p><time datetime="2026-05-17">2026-05-17</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="নিবন্ধ পেজিনেশন"><a class="post-pagination-prev" href="/bn/2026-05-19-global-wholesale-payments-economics-2026/"><span class="post-pagination-label">পূর্ববর্তী</span><span class="post-pagination-title">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/bn/amader-shomporke/index.html">About</a></li>
+              <li><a href="/bn/jogajog/index.html">Contact</a></li>
+              <li><a href="/bn/static-site-generator-die-toiri/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">লেখা</h2>
+            <ul>
+              <li><a href="/bn/prabondho/index.html">Articles</a></li>
+              <li><a href="/bn/prokashana/index.html">Papers</a></li>
+              <li><a href="/bn/tag/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">কাজ</h2>
+            <ul>
+              <li><a href="/bn/prokolpo/index.html">Projects</a></li>
+              <li><a href="/bn/playlist/index.html">Playlists</a></li>
+              <li><a href="/bn/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">যোগাযোগ</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="নিউজলেটার সাবস্ক্রিপশন">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — পেমেন্ট, এআই এবং পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি বিষয়ক গবেষণা নোট। কোনও স্প্যাম নয়।</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="apni@bank.bd" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">সাবস্ক্রাইব করুন</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="সামাজিক লিঙ্ক">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau-এ Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau-এ LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau-এ Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau-এ YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau-এ YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/bn/prabeshjogyota/index.html">Accessibility</a> ·
+            <a href="/bn/goponiyota/index.html">Privacy</a> ·
+            <a href="/bn/shorto/index.html">Terms</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"bn"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"bn"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1477,"headline":"Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide","description":"Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp","width":"100vw","height":"100vh","caption":"Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering"},"url":"https://sebastienrousseau.com/bn/2026-05-20-cloud-native-banking-financial-institutions-2026/","datePublished":"2026-05-20T06:06:06+00:00","dateModified":"2026-05-20","inLanguage":"bn","keywords":"cloud native banking 2026, Kubernetes banks, financial institutions cloud, DORA 2026, cloud resilience, Red Hat OpenShift, Portworx, VM container coexistence, bank cloud sovereignty, financial services cloud dependency, operational resilience, disaster recovery, cloud exit strategy, AI banking workloads","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/bn/2026-05-20-cloud-native-banking-financial-institutions-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"bn"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/bn/"},{"@type":"ListItem","position":3,"name":"Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide","item":"https://sebastienrousseau.com/bn/2026-05-20-cloud-native-banking-financial-institutions-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="অনুসন্ধান">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>অনুসন্ধান</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="অনুসন্ধান">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="ডকুমেন্টে অনুসন্ধান করুন..." autocomplete="off" aria-label="অনুসন্ধান"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> বন্ধ করুন</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> নেভিগেট করুন</span><span><kbd>Enter</kbd> খুলুন</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

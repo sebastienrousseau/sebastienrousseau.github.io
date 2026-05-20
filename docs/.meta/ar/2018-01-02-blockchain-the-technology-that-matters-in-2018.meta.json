@@ -1,11 +1,11 @@
 {
   "title": "البلوكشين: التقنية التي تهمّ في 2018",
-  "banner_alt": "حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية",
   "date": "January 2, 2018",
-  "locale": "ar_SA",
-  "subtitle": "تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ في خدمة معاملاتٍ آمنة",
   "language": "ar",
   "keywords": "blockchain, العملة المشفّرة, Bitcoin, P2P, smart contract, السجل الموزّع, التمويل, سلسلة التوريد, الهويّة الرقمية, الترميز",
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
-  "description": "حكاية الرحلة الاستثنائية لتأمين المعاملات الرقمية عبر تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ (P2P)."
+  "subtitle": "تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ في خدمة معاملاتٍ آمنة",
+  "description": "حكاية الرحلة الاستثنائية لتأمين المعاملات الرقمية عبر تعمية المفتاح الخاص وشبكات النِدّ-لنِدّ (P2P).",
+  "banner_alt": "حاسوب محمول مُطفأ فوق طاولة خشبية بُنّية",
+  "locale": "ar_SA",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp"
 }

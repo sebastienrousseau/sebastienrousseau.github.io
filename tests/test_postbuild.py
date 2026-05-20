@@ -2561,6 +2561,116 @@ def test_fix_xml_feeds_rewrites_bare_amp(tmp_path):
 
 
 # ---------------------------------------------------------------------------
+# dedupe_xml_feeds — strip duplicate <item>/<entry>/<url> blocks emitted
+# by the upstream SSG when multiple locale files share a publication date
+# ---------------------------------------------------------------------------
+
+
+def test_dedupe_xml_feeds_drops_duplicate_rss_items_by_link(tmp_path):
+    from postbuild_lib.output import dedupe_xml_feeds
+    rss = tmp_path / "rss.xml"
+    rss.write_text(
+        '<rss><channel>'
+        '<item><title>A</title><link>https://x/a</link></item>'
+        '<item><title>A2</title><link>https://x/a</link></item>'  # dup link
+        '<item><title>B</title><link>https://x/b</link></item>'
+        '</channel></rss>',
+        encoding="utf-8",
+    )
+    assert dedupe_xml_feeds(tmp_path) == 1
+    out = rss.read_text(encoding="utf-8")
+    # First occurrence wins
+    assert "<title>A</title>" in out
+    assert "<title>A2</title>" not in out
+    assert "<title>B</title>" in out
+
+
+def test_dedupe_xml_feeds_no_op_when_all_links_unique(tmp_path):
+    from postbuild_lib.output import dedupe_xml_feeds
+    rss = tmp_path / "rss.xml"
+    rss.write_text(
+        '<rss><channel>'
+        '<item><link>https://x/a</link></item>'
+        '<item><link>https://x/b</link></item>'
+        '</channel></rss>',
+        encoding="utf-8",
+    )
+    assert dedupe_xml_feeds(tmp_path) == 0
+
+
+def test_dedupe_xml_feeds_handles_atom_entry_dups_by_href(tmp_path):
+    from postbuild_lib.output import dedupe_xml_feeds
+    atom = tmp_path / "atom.xml"
+    atom.write_text(
+        '<feed>'
+        '<entry><link href="https://x/a"/></entry>'
+        '<entry><link href="https://x/a"/></entry>'
+        '<entry><link href="https://x/b"/></entry>'
+        '</feed>',
+        encoding="utf-8",
+    )
+    assert dedupe_xml_feeds(tmp_path) == 1
+    out = atom.read_text(encoding="utf-8")
+    assert out.count('href="https://x/a"') == 1
+    assert out.count('href="https://x/b"') == 1
+
+
+def test_dedupe_xml_feeds_handles_sitemap_url_dups_by_loc(tmp_path):
+    from postbuild_lib.output import dedupe_xml_feeds
+    sm = tmp_path / "news-sitemap.xml"
+    sm.write_text(
+        '<urlset>'
+        '<url><loc>https://x/a</loc></url>'
+        '<url><loc>https://x/a</loc></url>'
+        '<url><loc>https://x/b</loc></url>'
+        '</urlset>',
+        encoding="utf-8",
+    )
+    assert dedupe_xml_feeds(tmp_path) == 1
+    out = sm.read_text(encoding="utf-8")
+    assert out.count("<loc>https://x/a</loc>") == 1
+    assert out.count("<loc>https://x/b</loc>") == 1
+
+
+def test_dedupe_xml_feeds_returns_zero_when_no_files(tmp_path):
+    from postbuild_lib.output import dedupe_xml_feeds
+    # Empty directory — none of the target files exist
+    assert dedupe_xml_feeds(tmp_path) == 0
+
+
+def test_dedupe_xml_feeds_preserves_blocks_without_key(tmp_path):
+    """If a block has no recognisable URL, keep it (don't drop in error)."""
+    from postbuild_lib.output import dedupe_xml_feeds
+    rss = tmp_path / "rss.xml"
+    rss.write_text(
+        '<rss><channel>'
+        '<item><title>orphan</title></item>'   # no <link>
+        '<item><title>orphan</title></item>'   # also no <link> — kept
+        '<item><link>https://x/a</link></item>'
+        '</channel></rss>',
+        encoding="utf-8",
+    )
+    # 0 dedups expected: orphan items have no key so they're each kept
+    assert dedupe_xml_feeds(tmp_path) == 0
+    out = rss.read_text(encoding="utf-8")
+    assert out.count("<title>orphan</title>") == 2
+
+
+def test_dedupe_xml_feeds_atom_entry_without_href_passes_through(tmp_path):
+    """An <entry> with no `<link href=>` has no key — kept verbatim."""
+    from postbuild_lib.output import dedupe_xml_feeds
+    atom = tmp_path / "atom.xml"
+    atom.write_text(
+        '<feed>'
+        '<entry><id>tag:1</id></entry>'   # no link href
+        '<entry><id>tag:2</id></entry>'   # no link href
+        '</feed>',
+        encoding="utf-8",
+    )
+    assert dedupe_xml_feeds(tmp_path) == 0
+
+
+# ---------------------------------------------------------------------------
 # build_lastmod_index + refresh_sitemap_lastmod
 # ---------------------------------------------------------------------------
 

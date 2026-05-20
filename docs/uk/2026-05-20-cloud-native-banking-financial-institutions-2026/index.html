@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Wed, 20 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Wed, 20 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.">
+<meta name="keywords" content="cloud native banking 2026, Kubernetes banks, financial institutions cloud, DORA 2026, cloud resilience, Red Hat OpenShift, Portworx, VM container coexistence, bank cloud sovereignty, financial services cloud dependency, operational resilience, disaster recovery, cloud exit strategy, AI banking workloads">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Cloud Native Banking">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-5gfNDCyBZ+0bDrxGvJHNskoNFsbb3AD4jyuLa0NofMs=' 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-EzfaVjIffjbGGQ1tkBhyEMgSolFb1VE4rWYd2QV7DO8=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-plLltztkmXzUSYrwfK/e5hSdppnIaoc6pxli48Nuq1w=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/uk/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom-канал" href="/uk/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide — Sebastien Rousseau">
+<meta property="og:description" content="Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/uk/2026-05-20-cloud-native-banking-financial-institutions-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="uk_UA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide — Sebastien Rousseau">
+<meta name="twitter:description" content="Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/uk/2026-05-20-cloud-native-banking-financial-institutions-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Перейти до основного вмісту</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Перемкнути навігацію" />
+      <div class="wrap">
+        <a class="ap-brand" href="/uk/index.html" aria-label="Головна Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Основна навігація">
+          <ul class="ap-menu">
+            <li><a href="/uk/pro-mene/index.html">Про мене</a></li>
+            <li><a href="/uk/statti/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/uk/publikatsiyi/index.html">Публікації</a></li>
+            <li><a href="/uk/temy/index.html">Теми</a></li>
+            <li><a href="/uk/proekty/index.html">Проєкти</a></li>
+            <li><a href="/uk/pleylysty/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Увімкнути темну тему" aria-pressed="false" title="Змінити тему">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Пошук (Cmd або Ctrl + K)" title="Пошук (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Мова">
+            <button type="button" class="ap-lang-toggle" aria-label="UK, Змінити мову" aria-expanded="false" aria-haspopup="menu" title="Змінити мову">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">UK</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/uk/kontakt/index.html" aria-label="Зв’язатися зі мною">Зв’язатися ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Перемкнути навігацію">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</h1>
+      <p class="sub">Cloud native for banks has matured from container adoption to regulated platform engineering: Kubernetes, VM coexistence, data portability, DORA supervision, cloud dependency reviews, and operational resilience now define the architecture.</p>
+    <nav class="article-tags" aria-label="Теми"><a href="/tags/index.html#h3-cloud-native-banking-2026" class="article-tag" rel="tag">cloud native banking 2026</a><a href="/tags/index.html#h3-kubernetes-banks" class="article-tag" rel="tag">Kubernetes banks</a><a href="/tags/index.html#h3-financial-institutions-cloud" class="article-tag" rel="tag">financial institutions cloud</a><a href="/tags/index.html#h3-dora-2026" class="article-tag" rel="tag">DORA 2026</a><a href="/tags/index.html#h3-cloud-resilience" class="article-tag" rel="tag">cloud resilience</a><a href="/tags/index.html#h3-red-hat-openshift" class="article-tag" rel="tag">Red Hat OpenShift</a><a href="/tags/index.html#h3-portworx" class="article-tag" rel="tag">Portworx</a><a href="/tags/index.html#h3-vm-container-coexistence" class="article-tag" rel="tag">VM container coexistence</a><a href="/tags/index.html#h3-bank-cloud-sovereignty" class="article-tag" rel="tag">bank cloud sovereignty</a><a href="/tags/index.html#h3-financial-services-cloud-dependency" class="article-tag" rel="tag">financial services cloud dependency</a><a href="/tags/index.html#h3-operational-resilience" class="article-tag" rel="tag">operational resilience</a><a href="/tags/index.html#h3-disaster-recovery" class="article-tag" rel="tag">disaster recovery</a><a href="/tags/index.html#h3-cloud-exit-strategy" class="article-tag" rel="tag">cloud exit strategy</a><a href="/tags/index.html#h3-ai-banking-workloads" class="article-tag" rel="tag">AI banking workloads</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-20T06:06:06+00:00" class="meta-pub">Опубліковано 20 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Орієнтовний час читання">7 хв читання</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Зміст</h2><ol><li><a href="#2026">Чому 2026 рік є роком хмарно-нативного нагляду</a></li><li><a href="#2026-2">Базис хмарно-нативного банкінгу на 2026 рік</a></li><li><a href="#section-7">Стек банківської платформи</a></li><li><a href="#section-11">Архітектурна таблиця: хмарна нативність для банків</a></li><li><a href="#section-12">Що це означає для різних типів установ</a></li><li><a href="#section-17">Висновок</a></li><li><a href="#section-18">Поширені запитання</a></li><li><a href="#section-19">Джерела</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Чому 2026 рік є роком хмарно-нативного нагляду.</strong> DORA застосовується з січня 2025 року, але саме у 2026 році наглядова сила стає видимою.</li>  <li><strong>Базис хмарно-нативного банкінгу на 2026 рік.</strong> Kubernetes надає банкам автоматизацію розгортань, еластичність, забезпечення політик, оркестрацію контейнерів та спільну абстракцію між приватною хмарою, публічною хмарою та суверенними середовищами.</li>  <li><strong>Стек банківської платформи.</strong> Хмарно-нативна платформа банківського рівня має пропонувати «прокладені шляхи»: золоті стежки (golden paths), шаблони, каталоги сервісів, автоматизовані конвеєри розгортань, типові налаштування спостережуваності,…</li>  <li><strong>Архітектурна таблиця: хмарна нативність для банків.</strong> Банки першого ешелону мають будувати контрольовані внутрішні платформи у кількох хмарах, із суворою політикою-як-код, класифікацією даних та розміщенням робочих навантажень.</li></ul></aside><h1>Хмарно-нативний банкінг у 2026 році: Kubernetes, DORA, суверенітет і кінець протистояння VM проти контейнерів</h1>
+<p>Хмарно-нативний (cloud-native) банкінг у 2026 році вже не є дискусією про те, чи можуть банки користуватися хмарою. Це регульована дисципліна платформної інженерії: як експлуатувати критичні сервіси у контейнерах, віртуальних машинах, фабриках даних, AI/ML-навантаженнях та у різних хмарних провайдерів, водночас доводячи операційну стійкість відповідно до DORA (Digital Operational Resilience Act) та аналогічних режимів. IBM описує 2026 рік як перший справжній наглядовий тест DORA з оглядами хмарної залежності, інспекціями кібербезпеки, тестуванням на проникнення під керівництвом загроз (threat-led penetration testing) та прямим наглядом за критичними третіми сторонами (<a href="https://www.ibm.com/think/perspectives/dora-application-one-year-in" title="Один рік від застосування DORA">IBM</a>).</p>
+<hr />
+<blockquote>
+<p><strong>Резюме для керівництва / Ключові висновки</strong></p>
+<ul>
+<li><strong>DORA змінила розмову про хмару.</strong> 2026 рік приносить пряме європейське регулювання критичних третіх сторін та цільові огляди залежностей банків від постачальників хмарних послуг (<a href="https://www.ibm.com/think/perspectives/dora-application-one-year-in" title="Один рік від застосування DORA">IBM</a>).</li>
+<li><strong>Kubernetes — це шар платформи, а не вичерпна відповідь.</strong> Банкам потрібен Kubernetes для еластичності, автоматизації та AI/ML-навантажень, але водночас необхідне співіснування з VM (віртуальними машинами), оскільки основний банкінг, платежі, трейдинг та системи управління ризиками й досі працюють на захищених віртуалізованих ландшафтах (<a href="https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview" title="Подолання розриву між успадкованими VM та хмарно-нативним банкінгом">Red Hat</a>).</li>
+<li><strong>Протистояння VM проти контейнерів зникає.</strong> Red Hat позиціонує OpenShift та Portworx як уніфіковану модель, де VM і контейнери поділяють політики, дані, резервне копіювання, відновлення після збою та механізми управління (<a href="https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview" title="Подолання розриву між успадкованими VM та хмарно-нативним банкінгом">Red Hat</a>).</li>
+<li><strong>Хмарний суверенітет тепер є архітектурним обмеженням.</strong> Банки використовують суверенітет для управління юрисдикційним контролем, операційною автономією, контролем ключів, локалізацією даних та ризиком концентрації хмари (<a href="https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview" title="Цифровий суверенітет для банків">Red Hat</a>).</li>
+<li><strong>AI зробив хмарну нативність терміновою.</strong> Виявлення шахрайства, аналітика ліквідності, персоналізація в режимі реального часу та регуляторна звітність дедалі частіше потребують еластичних обчислень поблизу чутливих даних (<a href="https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview" title="Подолання розриву між успадкованими VM та хмарно-нативним банкінгом">Red Hat</a>).</li>
+<li><strong>Стратегія виходу — це не PDF-файл.</strong> За сучасних наглядових очікувань банкам потрібні протестована переносимість, карта залежностей, договірні докази, процедури відновлення та реалістичні маршрути міграції для критичних функцій.</li>
+<li><strong>Архітектурна ціль — контрольована хмарна нативність.</strong> Виграшна банківська платформа надає розробникам самообслуговувану доставку, водночас автоматично забезпечуючи аудит, шифрування, резидентність даних, тестування стійкості, розподіл обов'язків та контроль ризиків третіх сторін.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="2026">Чому 2026 рік є роком хмарно-нативного нагляду <a class="heading-anchor" href="#2026" aria-label="Посилання на Чому 2026 рік є роком хмарно-нативного нагляду">#</a></h2>
+<p>DORA застосовується з січня 2025 року, але саме у 2026 році наглядова сила стає видимою. IBM зазначає, що перший перелік критичних третіх сторін (Critical Third-Party Providers) було визначено у листопаді 2025 року і що 2026 рік приносить пряму взаємодію з європейськими наглядовими агентствами, договірні огляди, виїзні інспекції та аналіз хмарної залежності (<a href="https://www.ibm.com/think/perspectives/dora-application-one-year-in" title="Один рік від застосування DORA">IBM</a>).</p>
+<p>Це змінює тягар доказування. Банк більше не може стверджувати, що збій хмари — це лише проблема постачальника. Фінансова установа залишається відповідальною за стійкість критичних функцій, навіть коли ці функції залежать від гіперскейлерів, SaaS-провайдерів (Software as a Service), платформ даних та керованих сервісів безпеки.</p>
+<h2 id="2026-2">Базис хмарно-нативного банкінгу на 2026 рік <a class="heading-anchor" href="#2026-2" aria-label="Посилання на Базис хмарно-нативного банкінгу на 2026 рік">#</a></h2>
+<h3 id="1-kubernetes">1. Kubernetes як операційний шар <a class="heading-anchor" href="#1-kubernetes" aria-label="Посилання на 1. Kubernetes як операційний шар">#</a></h3>
+<p>Kubernetes надає банкам автоматизацію розгортань, еластичність, забезпечення політик, оркестрацію контейнерів та спільну абстракцію між приватною хмарою, публічною хмарою та суверенними середовищами. Для нових робочих навантажень — особливо для AI-керованого виявлення шахрайства, персоналізації в режимі реального часу, аналітики ліквідності та регуляторної звітності — це стало природною площиною управління (<a href="https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview" title="Подолання розриву між успадкованими VM та хмарно-нативним банкінгом">Red Hat</a>).</p>
+<p>Помилкою є вважати Kubernetes пунктом призначення. Для банків це субстрат під керованою платформою для розробників.</p>
+<h3 id="2-vm">2. Конвергенція VM та контейнерів <a class="heading-anchor" href="#2-vm" aria-label="Посилання на 2. Конвергенція VM та контейнерів">#</a></h3>
+<p>Більшість банків не можуть швидко переписати основний ландшафт. Платіжні двигуни, торгові системи, скоринг кредитів, моделі ризиків та платформи основного банкінгу й досі залежать від захищених VM-ландшафтів. Red Hat стверджує, що банкам потрібна уніфікована платформа, де VM і контейнери можуть працювати разом, зменшуючи дублювання архітектури та узгоджуючи механізми політик, сховища, резервного копіювання та відновлення (<a href="https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview" title="Подолання розриву між успадкованими VM та хмарно-нативним банкінгом">Red Hat</a>).</p>
+<p>Це прагматичний міст між успадкованою стійкістю та хмарно-нативною швидкістю. Він дозволяє банкам спочатку переміщувати суміжні сервіси, спільно розміщувати AI-навантаження, що залежать від даних, та уникати примусового крихкого переписування у критичних системах.</p>
+<h3 id="3-dora">3. Операційна стійкість, готова до DORA <a class="heading-anchor" href="#3-dora" aria-label="Посилання на 3. Операційна стійкість, готова до DORA">#</a></h3>
+<p>IBM зазначає, що наглядові пріоритети на 2026 рік охоплюють подальші заходи щодо недоліків безпеки ICT (інформаційно-комунікаційних технологій) та аутсорсингу, виїзні інспекції з кібербезпеки та ризиків третіх сторін, тестування на проникнення під керівництвом загроз, огляди управління змінами ICT та аналіз хмарної залежності (<a href="https://www.ibm.com/think/perspectives/dora-application-one-year-in" title="Один рік від застосування DORA">IBM</a>).</p>
+<p>Це означає, що стійкість має бути тестованою. Архітектурних діаграм недостатньо. Банкам потрібні докази з відпрацювань аварійних перемикань, симуляцій інцидентів, відновлень із резервних копій, карт залежностей, тестування часу відновлення та робочих процесів управління.</p>
+<h3 id="4">4. Суверенітет як можливість платформи <a class="heading-anchor" href="#4" aria-label="Посилання на 4. Суверенітет як можливість платформи">#</a></h3>
+<p>Хмарний суверенітет — це не лише резидентність даних. Він охоплює правовий контроль, операційний контроль, контроль ключів шифрування, юрисдикцію персоналу підтримки, розміщення робочих навантажень та здатність продовжувати критичні сервіси, якщо глобальний постачальник або геополітичний процес створює перебій. Red Hat розглядає суверенітет як юрисдикційний контроль та операційну автономію для банків, що працюють у середовищі розбіжних регуляцій, таких як GDPR (General Data Protection Regulation), DORA та національні хмарні правила (<a href="https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview" title="Цифровий суверенітет для банків">Red Hat</a>).</p>
+<p>Хмарно-нативним наслідком є те, що маршрутизація робочих навантажень, управління секретами, контроль ключів, класифікація даних та забезпечення політик мають бути програмованими.</p>
+<h2 id="section-7">Стек банківської платформи <a class="heading-anchor" href="#section-7" aria-label="Посилання на Стек банківської платформи">#</a></h2>
+<h3 id="section-8">Шар досвіду розробника <a class="heading-anchor" href="#section-8" aria-label="Посилання на Шар досвіду розробника">#</a></h3>
+<p>Хмарно-нативна платформа банківського рівня має пропонувати «прокладені шляхи»: золоті стежки (golden paths), шаблони, каталоги сервісів, автоматизовані конвеєри розгортань, типові налаштування спостережуваності, політики-як-код (policy-as-code), стандартну інтеграцію секретів та схвалені шляхи даних. Розробники не повинні узгоджувати кожен реліз з кожним власником контролю.</p>
+<p>Платформа має робити шлях, що відповідає вимогам, найшвидшим шляхом. Це єдина модель, що масштабується на тисячі сервісів.</p>
+<h3 id="section-9">Шар контролю <a class="heading-anchor" href="#section-9" aria-label="Посилання на Шар контролю">#</a></h3>
+<p>Шар контролю включає ідентичність, управління доступом, розподіл обов'язків, шифрування, зберігання ключів, мережеву політику, підписання образів, software bill of materials (SBOM), гейти вразливостей, безпеку часу виконання, журналювання та генерацію доказів. Саме тут DORA, NIS2 (Network and Information Security Directive 2), GDPR, правила аутсорсингу та внутрішні політики ризику моделей перетворюються на виконавчі засоби контролю.</p>
+<p>Саме тут зазнають невдачі багато банків. Вони впроваджують контейнери, але залишають засоби контролю як ручні узгодження поза платформою.</p>
+<h3 id="section-10">Шар даних <a class="heading-anchor" href="#section-10" aria-label="Посилання на Шар даних">#</a></h3>
+<p>Робочі навантаження зі станом (stateful workloads) — найскладніша частина хмарно-нативного банкінгу. Аргумент Red Hat щодо конвергенції VM/контейнерів значною мірою спирається на уніфіковану фабрику даних та політико-кероване резервне копіювання, реплікацію, перемикання у разі збою та відновлення між VM і контейнерами (<a href="https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview" title="Подолання розриву між успадкованими VM та хмарно-нативним банкінгом">Red Hat</a>).</p>
+<p>Для банків шар даних має відповідати на три запитання: де перебувають дані, хто контролює ключі та як сервіс відновлюється у разі збою інфраструктури?</p>
+<h2 id="section-11">Архітектурна таблиця: хмарна нативність для банків <a class="heading-anchor" href="#section-11" aria-label="Посилання на Архітектурна таблиця: хмарна нативність для банків">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Можливість</th>
+<th>Хмарно-нативний шаблон</th>
+<th>Банківська вимога контролю</th>
+<th>Сценарій збою</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Доставка застосунків</strong></td>
+<td>Kubernetes, GitOps, шаблони</td>
+<td>Розподіл обов'язків, докази змін, відкат</td>
+<td>Швидкі, але неаудитовані релізи</td>
+</tr>
+<tr>
+<td><strong>Співіснування зі спадщиною</strong></td>
+<td>Уніфікована платформа VM/контейнерів</td>
+<td>Узгодженість політик та контроль міграції</td>
+<td>Подвійні ландшафти з продубльованим ризиком</td>
+</tr>
+<tr>
+<td><strong>Сервіси даних</strong></td>
+<td>Stateful-оператори та фабрика даних</td>
+<td>Резидентність, резервні копії, незмінність, протестоване відновлення</td>
+<td>Платформа без стану з крихким станом</td>
+</tr>
+<tr>
+<td><strong>Стійкість</strong></td>
+<td>Багатозональність, багаторегіональність, перемикання у разі збою</td>
+<td>Докази DORA та картографування критичних функцій</td>
+<td>Хмарний збій як виправдання постачальника</td>
+</tr>
+<tr>
+<td><strong>Суверенітет</strong></td>
+<td>Політико-кероване розміщення робочих навантажень</td>
+<td>Юрисдикційні докази та докази контролю ключів</td>
+<td>Резидентність без операційної автономії</td>
+</tr>
+<tr>
+<td><strong>AI-навантаження</strong></td>
+<td>Еластичні обчислення поблизу даних</td>
+<td>Управління моделями, мінімізація даних, аудит</td>
+<td>Чутливі дані переміщено до несхвалених AI-сервісів</td>
+</tr>
+</tbody>
+</table>
+<h2 id="section-12">Що це означає для різних типів установ <a class="heading-anchor" href="#section-12" aria-label="Посилання на Що це означає для різних типів установ">#</a></h2>
+<h3 id="section-13">Універсальні банки першого ешелону <a class="heading-anchor" href="#section-13" aria-label="Посилання на Універсальні банки першого ешелону">#</a></h3>
+<p>Банки першого ешелону мають будувати контрольовані внутрішні платформи у кількох хмарах, із суворою політикою-як-код, класифікацією даних та розміщенням робочих навантажень. Вони мають достатній масштаб, щоб виправдати платформну інженерію, і регулятори очікуватимуть від них глибших доказів.</p>
+<h3 id="section-14">Банки середнього ешелону <a class="heading-anchor" href="#section-14" aria-label="Посилання на Банки середнього ешелону">#</a></h3>
+<p>Банки середнього ешелону мають стандартизувати, а не кастомізувати. Сильна керована платформа Kubernetes, дисциплінований вибір хмарного провайдера, чіткі стратегії виходу та автоматизоване формування доказів є ціннішими за розгалужені мультихмарні амбіції, які установа не здатна підтримувати.</p>
+<h3 id="section-15">Інфраструктури фінансових ринків <a class="heading-anchor" href="#section-15" aria-label="Посилання на Інфраструктури фінансових ринків">#</a></h3>
+<p>FMI (Financial Market Infrastructures — інфраструктури фінансових ринків) потребують перш за все доказів стійкості. Вони мають розглядати хмарну нативність як спосіб покращити відновлення, спостережуваність та контрольовану зміну, а не як суто прискорювальну гру.</p>
+<h3 id="psp">Фінтехи та PSP <a class="heading-anchor" href="#psp" aria-label="Посилання на Фінтехи та PSP">#</a></h3>
+<p>Фінтехи та PSP (Payment Service Providers — постачальники платіжних послуг) можуть рухатися швидко, але мають уникати переростання своєї моделі контролю. Коли вони стануть системно значущими, до них надійдуть ті самі очікування щодо стійкості, ризику третіх сторін, звітування про інциденти та суверенітету даних.</p>
+<h2 id="section-17">Висновок <a class="heading-anchor" href="#section-17" aria-label="Посилання на Висновок">#</a></h2>
+<p>Хмарно-нативний банкінг у 2026 році — це архітектура управління. Kubernetes є необхідним, але недостатнім. Установи, що досягнуть успіху, конвергуватимуть VM та контейнери там, де це потрібно, використовуватимуть хмарно-нативні шаблони для нових робочих навантажень, доводитимуть стійкість відповідно до DORA, контролюватимуть суверенітет даних на шарі платформи та робитимуть відповідність вимогам достатньо автоматичною, щоб розробники могли рухатися швидко, не створюючи неконтрольованого ризику.</p>
+<p>Стара дискусія полягала в тому, чи можуть банки перейти до хмари. Нова дискусія полягає в тому, чи можуть банки зробити хмарну нативність достатньо безпечною, достатньо переносимою та достатньо доказово підтвердженою, щоб обслуговувати сервіси, які мають значення.</p>
+<h2 id="section-18">Поширені запитання <a class="heading-anchor" href="#section-18" aria-label="Посилання на Поширені запитання">#</a></h2>
+<p><strong>Чи забороняє DORA банкам користуватися хмарою?</strong></p>
+<p>Ні. DORA не забороняє використання хмари. Вона покладає на фінансові установи відповідальність за ризик ICT, залежність від третіх сторін, звітування про інциденти, тестування стійкості та управління критичними сервісами, які покладаються на хмару та інших постачальників ICT (<a href="https://www.ibm.com/think/perspectives/dora-application-one-year-in" title="Один рік від застосування DORA">IBM</a>).</p>
+<p><strong>Чому банкам й досі потрібні VM, якщо Kubernetes — це майбутнє?</strong></p>
+<p>Банки продовжують експлуатувати критичні системи на VM-ландшафтах, зокрема платіжні двигуни, системи основного банкінгу, торгові застосунки та платформи ризиків. Уніфікована модель VM/контейнерів зменшує дублювання, дозволяючи поступову міграцію (<a href="https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview" title="Подолання розриву між успадкованими VM та хмарно-нативним банкінгом">Red Hat</a>).</p>
+<p><strong>Що таке справжня стратегія виходу з хмари?</strong></p>
+<p>Справжня стратегія виходу охоплює інвентаризацію залежностей, процедури експорту даних, альтернативні варіанти середовища виконання, договірні права, тестування відновлення, плани контролю ключів та реалістичний графік переміщення чи відновлення критичних сервісів.</p>
+<p><strong>Яка найбільша хмарно-нативна помилка банків?</strong></p>
+<p>Найбільша помилка — впровадження контейнерів без засобів контролю платформи. Якщо Kubernetes збільшує швидкість розгортання, але не забезпечує контролю ідентичності, політики, аудиту, резидентності даних, відновлення та вразливостей, він прискорює ризик, а не зменшує його.</p>
+<h2 id="section-19">Джерела <a class="heading-anchor" href="#section-19" aria-label="Посилання на Джерела">#</a></h2>
+<ul>
+<li>IBM, (2026). <a href="https://www.ibm.com/think/perspectives/dora-application-one-year-in" title="Справжній тест DORA починається зараз">Один рік від застосування DORA: справжній тест DORA починається зараз ⧉</a>.</li>
+<li>Red Hat, (2026). <a href="https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview" title="Успадковані VM та хмарно-нативний банкінг">Подолання розриву між успадкованими VM та хмарно-нативним банкінгом ⧉</a>.</li>
+<li>Red Hat, (2026). <a href="https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview" title="Хмарний суверенітет для банків">Цифровий суверенітет для банків ⧉</a>.</li>
+<li>Thought Machine, (2026). <a href="https://www.thoughtmachine.net" title="Thought Machine Vault">Хмарно-нативне програмне забезпечення основного банкінгу ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+<aside class="author-card" aria-label="Про автора"><img alt="Портрет Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/uk/pro-mene/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Старший банківський технолог, який пише про прикладний AI, міграцію на ISO 20022, постквантову криптографію для фінансових послуг та структурну трансформацію оптових платежів.</span><span class="author-credentials">Понад 20 років досвіду у HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/uk/pro-mene/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Востаннє переглянуто <time datetime="2026-05-20">2026-05-20</time>.</p>
+<!-- enrich-end --><aside class="author-card" aria-label="Про автора"><img alt="Портрет Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/uk/pro-mene/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Старший технологічний експерт у банківській справі. Пишу про прикладний штучний інтелект, міграцію на ISO 20022, постквантову криптографію для фінансових послуг та структурну трансформацію оптових платежів.</span><span class="author-credentials">Понад 20 років досвіду в HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/uk/pro-mene/index.html">Повний профіль</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Останній перегляд <time datetime="2026-05-20">2026-05-20</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Пов’язане читання</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/uk/2026-05-17-ahentyna-inzheneriya-banky-blueprint-2026" class="related-media" aria-label="[UK DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It" tabindex="-1"><img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/api/transform?url=/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="uk-draft-agentic-engineering-for-banks-a-2026-blueprint-for-the-c-suite-and-the-"><a href="https://sebastienrousseau.com/uk/2026-05-17-ahentyna-inzheneriya-banky-blueprint-2026">[UK DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a> <a class="heading-anchor" href="#uk-draft-agentic-engineering-for-banks-a-2026-blueprint-for-the-c-suite-and-the-" aria-label="Посилання на [UK DRAFT] Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It">#</a></h3><p><time datetime="2026-05-17">2026-05-17</time></p></footer></article>
+</div>
+</aside><nav class="post-pagination" aria-label="Навігація статтями"><a class="post-pagination-prev" href="/uk/2026-05-19-global-wholesale-payments-economics-2026/"><span class="post-pagination-label">Попередня</span><span class="post-pagination-title">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/uk/pro-mene/index.html">Про мене</a></li>
+              <li><a href="/uk/kontakt/index.html">Contact</a></li>
+              <li><a href="/uk/stvoreno-statychnym-generatorom/index.html">Conçu avec Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Публікації</h2>
+            <ul>
+              <li><a href="/uk/statti/index.html">Articles</a></li>
+              <li><a href="/uk/publikatsiyi/index.html">Публікації</a></li>
+              <li><a href="/uk/tegy/index.html">Теги</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Робота</h2>
+            <ul>
+              <li><a href="/uk/proekty/index.html">Проєкти</a></li>
+              <li><a href="/uk/pleylysty/index.html">Playlists</a></li>
+              <li><a href="/uk/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Контакти</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Підписка на розсилку">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — дослідницькі нотатки про платежі, ШІ та постквантову криптографію. Без спаму.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="vy@bank.ua" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Підписатися</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Соціальні мережі">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau у Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau у Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau у LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau у LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau у Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau у Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau у YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau у YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/uk/dostupnist/index.html">Доступність</a> ·
+            <a href="/uk/konfidentsiynist/index.html">Конфіденційність</a> ·
+            <a href="/uk/umovy/index.html">Умови</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"uk"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"uk"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1564,"headline":"Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide","description":"Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp","width":"100vw","height":"100vh","caption":"Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering"},"url":"https://sebastienrousseau.com/uk/2026-05-20-cloud-native-banking-financial-institutions-2026/","datePublished":"2026-05-20T06:06:06+00:00","dateModified":"2026-05-20","inLanguage":"uk","keywords":"cloud native banking 2026, Kubernetes banks, financial institutions cloud, DORA 2026, cloud resilience, Red Hat OpenShift, Portworx, VM container coexistence, bank cloud sovereignty, financial services cloud dependency, operational resilience, disaster recovery, cloud exit strategy, AI banking workloads","articleSection":"Technology","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/uk/2026-05-20-cloud-native-banking-financial-institutions-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"uk"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/uk/"},{"@type":"ListItem","position":3,"name":"Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide","item":"https://sebastienrousseau.com/uk/2026-05-20-cloud-native-banking-financial-institutions-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Пошук">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Пошук</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Пошук">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Шукати в документації..." autocomplete="off" aria-label="Пошук"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> закрити</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> навігація</span><span><kbd>Enter</kbd> відкрити</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

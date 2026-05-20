@@ -1,11 +1,11 @@
 {
-  "language": "tr-TR",
-  "title": "Kuantum eşikleri yeniden hareket ediyor",
-  "subtitle": "Yeni bir makale Shor'un 10.000 kübit kadar az kübitle çalışabileceğini öne sürüyor",
-  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
-  "keywords": "kuantum, Shor, kübit, kriptografi, post-kuantum, araştırma",
-  "banner_alt": "Kuantum hesaplamanın görselleştirmesi",
-  "locale": "tr_TR",
   "description": "Yeni bir makale, Shor algoritmasının 10.000 kübit kadar az kübitle çalışabileceğini öne sürüyor — kriptografik olarak ilgili kuantum bilişim eşiği düşüyor.",
+  "locale": "tr_TR",
+  "banner": "https://cloudcdn.pro/stocks/images/leo_visions-Q_y8ZzhQ2_s-unsplash.webp",
+  "title": "Kuantum eşikleri yeniden hareket ediyor",
+  "banner_alt": "Kuantum hesaplamanın görselleştirmesi",
+  "subtitle": "Yeni bir makale Shor'un 10.000 kübit kadar az kübitle çalışabileceğini öne sürüyor",
+  "language": "tr-TR",
+  "keywords": "kuantum, Shor, kübit, kriptografi, post-kuantum, araştırma",
   "date": "April 11, 2026"
 }

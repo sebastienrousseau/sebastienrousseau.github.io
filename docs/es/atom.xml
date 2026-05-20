@@ -4,7 +4,16 @@
   <link href="https://sebastienrousseau.com/es/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com/es/"/>
   <id>https://sebastienrousseau.com/es/</id>
-  <updated>2026-05-20T05:53:58+00:00</updated>
+  <updated>2026-05-20T08:46:40+00:00</updated>
+  <entry>
+    <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+    <link href="https://sebastienrousseau.com/es/2026-05-20-cloud-native-banking-financial-institutions-2026/"/>
+    <id>https://sebastienrousseau.com/es/2026-05-20-cloud-native-banking-financial-institutions-2026/</id>
+    <updated>2026-05-20T06:06:06+00:00</updated>
+    <published>2026-05-20T06:06:06+00:00</published>
+    <summary>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
   <entry>
     <title>Los pagos mayoristas mundiales en 2026: ISO 20022, renovación de los RTGS y la economía de la interoperabilidad</title>
     <link href="https://sebastienrousseau.com/es/2026-05-19-global-mayorista-pagos-economia-2026/"/>

@@ -6,7 +6,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stock/images/cloud-native-banking-2026-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -98,9 +98,26 @@ site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
 
+excerpt: "Cloud native banking in 2026 is no longer a debate about whether banks can use cloud. It is a regulated platform-engineering discipline: how to run critical services across containers, virtual…"
 ---
 
 # Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide
+
+
+
+<!-- lead-start -->
+<aside class="post-lead" aria-label="Article summary">
+<p class="post-lead-tldr"><strong>TL;DR.</strong> Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</p>
+<p class="post-lead-heading"><strong>Key takeaways</strong></p>
+<ul class="post-lead-takeaways">
+  <li><strong>Why 2026 Is the Cloud-Native Supervision Year.</strong> DORA applied from January 2025, but 2026 is where supervisory muscle becomes visible.</li>
+  <li><strong>The 2026 Cloud-Native Banking Baseline.</strong> Kubernetes gives banks deployment automation, elasticity, policy enforcement, container orchestration, and a common abstraction across private cloud, public cloud, and sovereign environments.</li>
+  <li><strong>The Bank Platform Stack.</strong> A bank-grade cloud-native platform should expose paved roads: golden paths, templates, service catalogues, automated deployment pipelines, observability defaults, policy-as-code, standard secrets integration, and…</li>
+  <li><strong>Architecture Table: Cloud Native for Banks.</strong> Tier-one banks should build controlled internal platforms across multiple clouds, with strict policy-as-code, data classification, and workload placement.</li>
+</ul>
+<p class="post-lead-related"><strong>Related reading:</strong> <a href="https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a>.</p>
+</aside>
+<!-- lead-end -->
 
 Cloud native banking in 2026 is no longer a debate about whether banks can use cloud. It is a regulated platform-engineering discipline: how to run critical services across containers, virtual machines, data fabrics, AI workloads, and cloud providers while proving operational resilience under DORA and similar regimes. IBM describes 2026 as the first true supervisory test of DORA, with cloud dependency reviews, cybersecurity inspections, threat-led penetration testing, and direct oversight of critical third-party providers ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "One year into DORA application")).
 
@@ -232,4 +249,15 @@ The biggest mistake is adopting containers without platform controls. If Kuberne
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-05-20">2026-05-20</time>.</p>
+<!-- enrich-end -->
+
+<!-- enrich-start -->
+<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Last reviewed <time datetime="2026-05-20">2026-05-20</time>.</p>
+<aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Related reading</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026" class="related-media" aria-label="Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It" tabindex="-1"><img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2026-05-17-agentic-engineering-banks-blueprint-2026">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a></h3><p><time datetime="2026-05-17">2026-05-17</time></p></footer></article>
+</div>
+</aside>
 <!-- enrich-end -->

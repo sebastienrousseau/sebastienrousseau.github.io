@@ -1,11 +1,11 @@
 {
-  "date": "March 08, 2024",
-  "title": "RustLogs: Rust uygulamaları için gelişmiş loglama kütüphanesi",
-  "banner_alt": "Bir kod terminalinin görselleştirmesi",
-  "description": "RustLogs, üretim Rust uygulamaları için yapılandırılmış, performanslı bir loglama kütüphanesidir.",
-  "keywords": "RustLogs, Rust, loglama, observability, açık kaynak, üretim",
   "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
-  "subtitle": "Üretim Rust uygulamaları için sağlam loglama",
+  "description": "RustLogs, üretim Rust uygulamaları için yapılandırılmış, performanslı bir loglama kütüphanesidir.",
   "locale": "tr_TR",
-  "language": "tr-TR"
+  "language": "tr-TR",
+  "title": "RustLogs: Rust uygulamaları için gelişmiş loglama kütüphanesi",
+  "keywords": "RustLogs, Rust, loglama, observability, açık kaynak, üretim",
+  "date": "March 08, 2024",
+  "subtitle": "Üretim Rust uygulamaları için sağlam loglama",
+  "banner_alt": "Bir kod terminalinin görselleştirmesi"
 }

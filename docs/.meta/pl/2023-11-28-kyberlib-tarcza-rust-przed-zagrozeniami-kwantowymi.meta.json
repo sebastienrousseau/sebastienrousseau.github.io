@@ -1,11 +1,11 @@
 {
-  "locale": "pl_PL",
-  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg",
-  "description": "KyberLib to biblioteka Rust implementująca CRYSTALS-Kyber, standard NIST FIPS 203 dla postkwantowej enkapsulacji kluczy.",
   "language": "pl-PL",
-  "date": "Nov 28, 2023",
-  "title": "KyberLib: tarcza Rust przed zagrożeniami kwantowymi",
-  "subtitle": "Solidna implementacja Rust CRYSTALS-Kyber",
   "banner_alt": "Logo KyberLib z motywem kryptografii postkwantowej",
+  "title": "KyberLib: tarcza Rust przed zagrożeniami kwantowymi",
+  "date": "Nov 28, 2023",
+  "subtitle": "Solidna implementacja Rust CRYSTALS-Kyber",
+  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg",
+  "locale": "pl_PL",
+  "description": "KyberLib to biblioteka Rust implementująca CRYSTALS-Kyber, standard NIST FIPS 203 dla postkwantowej enkapsulacji kluczy.",
   "keywords": "KyberLib, CRYSTALS-Kyber, Rust, PQC, kryptografia postkwantowa, NIST, FIPS 203"
 }

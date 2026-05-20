@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026/sitemap.xml

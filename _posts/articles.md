@@ -105,21 +105,33 @@ site_software: "Static Site Generator, Rust"
 <header class="newsroom-section-head"><p class="newsroom-kicker">FEATURED</p><h2>Latest story</h2></header>
 
 <article class="newsroom-featured">
-<a class="newsroom-featured-media" href="/2026-05-19-global-wholesale-payments-economics-2026/index.html" title="Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability">
-<img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
+<a class="newsroom-featured-media" href="/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html" title="Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide">
+<img alt="Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering" src="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" loading="eager" fetchpriority="high" decoding="async" width="800" height="800" />
 </a>
 <div class="newsroom-featured-body">
-<span class="newsroom-eyebrow">Payments · ISO 20022 · Cross-Border</span>
-<h3><a href="/2026-05-19-global-wholesale-payments-economics-2026/index.html" title="Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-19">May 19, 2026</time> · Sebastien Rousseau</p>
-<p>Wholesale payments in 2026 are part of macroeconomic resilience: ISO 20022 harmonisation, RTGS renewal and extended operating hours, non-bank access, interlinking, and DLT settlement pilots are converging around the cost of moving global liquidity — and the G20 cross-border targets are still off-track for 2027.</p>
-<p><a class="pill ghost" href="/2026-05-19-global-wholesale-payments-economics-2026/index.html" title="Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability">Read the full story</a></p>
+<span class="newsroom-eyebrow">Cloud Native · DORA · Banking</span>
+<h3><a href="/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html" title="Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide">Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-20">May 20, 2026</time> · Sebastien Rousseau</p>
+<p>Cloud native banking in 2026 is a regulated platform-engineering discipline: Kubernetes plus VM coexistence, DORA-tested resilience, sovereign cloud, data portability, and proof that critical services can survive provider disruption. Architecture is now a supervisory artefact.</p>
+<p><a class="pill ghost" href="/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html" title="Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide">Read the full story</a></p>
 </div>
 </article>
 
 <header class="newsroom-section-head"><p class="newsroom-kicker">ARCHIVE</p><h2>All news stories and articles</h2></header>
 
 <div class="newsroom-grid">
+
+<article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-19-global-wholesale-payments-economics-2026/index.html" title="Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability">
+<img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Payments · ISO 20022 · Cross-Border</span>
+<h3><a href="/2026-05-19-global-wholesale-payments-economics-2026/index.html" title="Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability">Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-19">May 19, 2026</time> · Sebastien Rousseau</p>
+<p class="newsroom-excerpt">Wholesale payments in 2026 are part of macroeconomic resilience: ISO 20022 harmonisation, RTGS renewal and extended operating hours, non-bank access, interlinking, and DLT settlement pilots are converging around the cost of moving global liquidity — and the G20 cross-border targets are still off-track for 2027.</p>
+</div>
+</article>
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html" title="Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded">

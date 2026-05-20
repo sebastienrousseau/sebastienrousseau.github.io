@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
-  "locale": "bn_BD",
-  "title": "Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded",
   "subtitle": "Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two products that are not, legally, stablecoins — and that can pay yield, in a wallet, on a public blockchain.",
   "language": "bn-BD",
-  "banner_alt": "BlackRock tokenised money market fund architecture diagram — BRSRV OnChain Shares and BSTBL ERC-20 share class with GENIUS Act reserve flows",
   "date": "May 15, 2026",
+  "locale": "bn_BD",
+  "keywords": "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, tokenised money market fund, OnChain Shares, Securitize",
   "description": "Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two SEC registrations for products that solve this constraint by being regulated as money market funds rather than stablecoins — while behaving, in the wallet, like yield-bearing dollars. A close reading of BRSRV, BSTBL, and the OCC rulemaking they respond to.",
-  "keywords": "BlackRock, BRSRV, BSTBL, BUIDL, GENIUS Act, OCC, stablecoin, tokenised money market fund, OnChain Shares, Securitize"
+  "banner": "https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp",
+  "title": "Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded",
+  "banner_alt": "BlackRock tokenised money market fund architecture diagram — BRSRV OnChain Shares and BSTBL ERC-20 share class with GENIUS Act reserve flows"
 }
