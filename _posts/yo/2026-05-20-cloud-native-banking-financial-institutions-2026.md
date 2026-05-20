@@ -84,140 +84,136 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# Cloud Native Banking ní 2026: Kubernetes, DORA, Ipa-ọba, àti Òpin Ìpínyà láàrín VM àti Container
 
-> _Translation pending — read the [English original](/2026-05-20-cloud-native-banking-financial-institutions-2026/) while we localise._
-
-# Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide
-
-Cloud native banking in 2026 is no longer a debate about whether banks can use cloud. It is a regulated platform-engineering discipline: how to run critical services across containers, virtual machines, data fabrics, AI workloads, and cloud providers while proving operational resilience under DORA and similar regimes. IBM describes 2026 as the first true supervisory test of DORA, with cloud dependency reviews, cybersecurity inspections, threat-led penetration testing, and direct oversight of critical third-party providers ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "One year into DORA application")).
+Cloud native banking ní 2026 kì í ṣe àríyànjiyàn mọ́ nípa bóyá àwọn báńkì lè lo cloud. Ó ti di ìmọ̀-ẹ̀rọ pẹpẹ tí ìṣàkóso ń ṣọ́: bí a ṣe lè ṣakoso àwọn iṣẹ́-pàtàkì káàkiri containers, ẹ̀rọ-kọ̀ǹpútà àfojúrí (VM), ìhun dátà, àwọn ẹrù-iṣẹ́ AI, àti àwọn olùpèsè cloud, nígbà tí a ń fi agbára-jíjà iṣẹ́-ṣíṣe hàn lábẹ́ DORA (Digital Operational Resilience Act) àti àwọn ìṣàkóso bí i rẹ̀. IBM ṣe àpèjúwe 2026 gẹ́gẹ́ bí àdánwò àkọ́kọ́ tòótọ́ ti DORA, pẹ̀lú àyẹ̀wò ìgbẹ́kẹ̀lé cloud, àyẹ̀wò aabo cyber, ìdánwò ìwọ̀-inú tí ìhalẹ̀mọ́ ń darí, àti àbójútó tààrà ti àwọn olùpèsè ẹgbẹ́ kẹta pàtàkì ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Ọdún kan sí ìwúlò DORA")).
 
 ---
 
-> **Executive Summary / Key Takeaways**
+> **Àkótán Aláṣẹ / Àwọn Kókó Pàtàkì**
 >
-> - **DORA has changed the cloud conversation.** 2026 brings direct EU supervision of critical third-party providers and targeted reviews of banks’ cloud-service-provider dependencies ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "One year into DORA application")).
-> - **Kubernetes is the platform layer, not the whole answer.** Banks need Kubernetes for elasticity, automation, and AI/ML workloads, but they also need VM coexistence because core banking, payments, trading, and risk systems still run on hardened virtualised estates ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
-> - **The VM vs container divide is closing.** Red Hat positions OpenShift and Portworx as a unified model where VMs and containers share policy, data, backup, disaster recovery, and governance controls ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
-> - **Cloud sovereignty is now a design constraint.** Banks are using sovereignty to manage jurisdictional control, operational autonomy, key control, data location, and cloud concentration risk ([Red Hat](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Digital sovereignty for banks")).
-> - **AI has made cloud native urgent.** Fraud detection, liquidity analytics, real-time personalisation, and regulatory reporting increasingly require elastic compute close to sensitive data ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
-> - **Exit strategy is not a PDF.** Under modern supervisory expectations, banks need tested portability, dependency mapping, contractual evidence, recovery procedures, and realistic migration paths for critical functions.
-> - **The architecture target is controlled cloud native.** The winning bank platform gives developers self-service delivery while enforcing audit, encryption, data residency, resilience testing, separation of duties, and third-party risk controls automatically.
+> - **DORA ti yí ìjíròrò cloud padà.** 2026 ń mú àbójútó EU tààrà wá fún àwọn olùpèsè ẹgbẹ́ kẹta pàtàkì àti àwọn àyẹ̀wò àfojúsùn lórí àwọn ìgbẹ́kẹ̀lé olùpèsè-iṣẹ́-cloud ti báńkì ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Ọdún kan sí ìwúlò DORA")).
+> - **Kubernetes ni ìpele pẹpẹ, kì í ṣe ìdáhùn pípé.** Àwọn báńkì nílò Kubernetes fún ìnà-ìnára, ìmúpadàbọ̀sípò, àti àwọn ẹrù-iṣẹ́ AI/ML, ṣùgbọ́n wọ́n tún nílò ìbágbé pẹ̀lú VM nítorí pé àwọn ètò báńkì-pàtàkì, ìsanwó, ìṣòwò, àti ewu ṣì ń ṣiṣẹ́ lórí àwọn ohun-ìní àfojúrí tí a ti mu lókun ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Sísopọ̀ àlàfo láàrín VM atijọ́ àti cloud-native banking")).
+> - **Ìpínyà láàrín VM àti container ń parí.** Red Hat gbé OpenShift àti Portworx kalẹ̀ gẹ́gẹ́ bí àpẹrẹ ìṣọ̀kan níbi tí VMs àti containers ń pín ìlànà, dátà, àfipamọ́, ìmúpadàbọ̀sípò àjálù, àti àwọn ìṣàkóso ìṣàkóso ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Sísopọ̀ àlàfo láàrín VM atijọ́ àti cloud-native banking")).
+> - **Ipa-ọba cloud ti di àdéédéé ìṣàpẹrẹ.** Àwọn báńkì ń lo ipa-ọba láti ṣàkóso ìjọba aṣẹ́sọnù, ìdáṣe iṣẹ́-ṣíṣe, ìṣàkóso kọ́kọ́rọ́, ipo dátà, àti ewu ìkójọpọ̀ cloud ([Red Hat](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Ipa-ọba dijítà fún àwọn báńkì")).
+> - **AI ti sọ cloud native di kókó pàtàkì.** Wíwá ẹ̀tàn, àlàyé owó-omi, ìfojúsùn àkókò-gidi, àti ìròyìn ìṣàkóso ń béèrè síwájú síi fún ìṣirò ìnà-ìnára tí ó súnmọ́ dátà ìfọ̀kàn ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Sísopọ̀ àlàfo láàrín VM atijọ́ àti cloud-native banking")).
+> - **Ètò-ìjáde kì í ṣe PDF.** Lábẹ́ ìfojúsùn àbójútó òde-òní, àwọn báńkì nílò gbígbé-jádè tí a ti dán wò, àwòrán ìgbẹ́kẹ̀lé, ẹ̀rí àdéhùn, àwọn ọ̀nà ìmúpadàbọ̀sípò, àti àwọn ipa-ọ̀nà ìṣíkiri gidi fún àwọn iṣẹ́-pàtàkì.
+> - **Ètò ìṣàpẹrẹ ni cloud native tí a ń ṣakoso.** Pẹpẹ báńkì tí ó ń ṣẹ́gun ń fún àwọn olùdásílẹ̀ ní ìpèsè ara-ẹni nígbà tí ó ń fi àbójútó, ìbáwí, ibùgbé dátà, ìdánwò agbára-jíjà, ìpín iṣẹ́, àti àwọn ìṣàkóso ewu ẹgbẹ́ kẹta lójú-fọ́ọ̀mù.
 >
 ---
 
-## Why 2026 Is the Cloud-Native Supervision Year
+## Kí Ni Ó Sọ 2026 di Ọdún Àbójútó Cloud-Native
 
-DORA applied from January 2025, but 2026 is where supervisory muscle becomes visible. IBM notes that the first list of Critical Third-Party Providers was designated in November 2025 and that 2026 brings direct engagement with European Supervisory Agencies, contract reviews, onsite inspections, and cloud dependency analysis ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "One year into DORA application")).
+DORA bẹ̀rẹ̀ sí ní ìwúlò láti January 2025, ṣùgbọ́n 2026 ni ibi tí agbára àbójútó ti hàn jáde. IBM tọ́ka pé a yàn àkọ́kọ́ àwọn Olùpèsè Ẹgbẹ́ Kẹta Pàtàkì ní November 2025, àti pé 2026 ń mú ìbáṣepọ̀ tààrà pẹ̀lú àwọn Ilé-Iṣẹ́ Àbójútó ti Yúróòpù, àyẹ̀wò àdéhùn, ìbẹ̀wò onípò, àti ìṣàyẹ̀wò ìgbẹ́kẹ̀lé cloud ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Ọdún kan sí ìwúlò DORA")).
 
-That changes the burden of proof. A bank can no longer say that a cloud outage is merely a vendor problem. The financial institution remains accountable for the resilience of critical functions, even when those functions depend on hyperscalers, SaaS providers, data platforms, and managed security services.
+Èyí yí ìdìpọ̀ ẹ̀rí padà. Báńkì kò lè sọ mọ́ pé ìdájú cloud jẹ́ ìṣòro ti olùtà nìkan. Ilé-iṣẹ́ ìnáwó ń jẹ́ àbójútó fún agbára-jíjà àwọn iṣẹ́ pàtàkì, kódà nígbà tí àwọn iṣẹ́ wọ̀nyẹn dá lórí àwọn hyperscalers, olùpèsè SaaS (Software-as-a-Service), pẹpẹ dátà, àti àwọn iṣẹ́ aabo tí a ń ṣakoso.
 
-## The 2026 Cloud-Native Banking Baseline
+## Ìpilẹ̀ṣẹ̀ Cloud-Native Banking ti 2026
 
-### 1. Kubernetes as the Operating Layer
+### 1. Kubernetes gẹ́gẹ́ bí Ìpele Iṣẹ́
 
-Kubernetes gives banks deployment automation, elasticity, policy enforcement, container orchestration, and a common abstraction across private cloud, public cloud, and sovereign environments. For new workloads, especially AI-driven fraud detection, real-time personalisation, liquidity analytics, and regulatory reporting, this has become the natural control plane ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
+Kubernetes ń fún àwọn báńkì ní ìmúpadàbọ̀sípò ìpèsè, ìnà-ìnára, ìfipá-mú ìlànà, ìṣètò container, àti àbámọ̀ tí ó wọ́pọ̀ káàkiri cloud aládàáni, cloud gbangba, àti àwọn àyíká ipa-ọba. Fún àwọn ẹrù-iṣẹ́ tuntun, pàápàá wíwá ẹ̀tàn tí AI ń darí, ìfojúsùn àkókò-gidi, àlàyé owó-omi, àti ìròyìn ìṣàkóso, èyí ti di ìpele ìṣàkóso ti ó bára mu ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Sísopọ̀ àlàfo láàrín VM atijọ́ àti cloud-native banking")).
 
-The mistake is to treat Kubernetes as the destination. For banks, it is the substrate beneath a governed developer platform.
+Àṣìṣe ni láti rò pé Kubernetes ni ìpinnu. Fún àwọn báńkì, ó jẹ́ ìpilẹ̀ tí ó wà lábẹ́ pẹpẹ olùdásílẹ̀ tí a ń ṣakoso.
 
-### 2. VM and Container Convergence
+### 2. Ìṣọ̀kan VM àti Container
 
-Most banks cannot rewrite the core estate quickly. Payment engines, trading systems, credit scoring, risk models, and core banking platforms still depend on hardened VM estates. Red Hat argues that banks need a unified platform where VMs and containers can operate together, reducing duplicated architecture and aligning policy, storage, backup, and recovery controls ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
+Ọ̀pọ̀ àwọn báńkì kò lè kọ́ àwọn ohun-ìní àárín wọn padà ní kíákíá. Àwọn ẹ̀rọ ìsanwó, àwọn ètò ìṣòwò, ìwọ̀n-ìgbẹ́kẹ̀lé, àwọn àpẹrẹ ewu, àti àwọn pẹpẹ báńkì-pàtàkì ṣì dá lórí àwọn ohun-ìní VM tí a ti mu lókun. Red Hat jiyàn pé àwọn báńkì nílò pẹpẹ tí a ṣọ̀kan níbi tí VMs àti containers lè ṣiṣẹ́ papọ̀, ní dídín ìlànà-ìṣàpẹrẹ tí a ti ṣe àtúnṣe kù, tí a sì ń mú ìlànà, ìpamọ́, àfipamọ́, àti àwọn ìṣàkóso ìmúpadàbọ̀sípò dọ́gba ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Sísopọ̀ àlàfo láàrín VM atijọ́ àti cloud-native banking")).
 
-This is the practical bridge between legacy resilience and cloud-native velocity. It lets banks move adjacent services first, co-locate data-dependent AI workloads, and avoid forcing brittle rewrites into critical systems.
+Èyí ni afárá gidi láàrín agbára-jíjà atijọ́ àti ìyára cloud-native. Ó ń fún àwọn báńkì láǹfààní láti gbé àwọn iṣẹ́-aládùúgbò àkọ́kọ́, fi àwọn ẹrù-iṣẹ́ AI tí ó gbara lórí dátà sí ibi kan, kí wọ́n sì yẹra fún fífipá-mú àwọn àtúnkọ́ tí ó lè fọ́ wọnú àwọn ètò pàtàkì.
 
-### 3. DORA-Ready Operational Resilience
+### 3. Agbára-jíjà Iṣẹ́-Ṣíṣe Tí Ó Múrasílẹ̀ fún DORA
 
-IBM says 2026 supervisory priorities include follow-up on ICT security and outsourcing shortcomings, cybersecurity and third-party risk onsite inspections, threat-led penetration testing, ICT change-management reviews, and cloud dependency analysis ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "One year into DORA application")).
+IBM sọ pé àwọn àfojúsùn àbójútó 2026 ní àtẹ̀lé lórí àìní àìní aabo ICT (Information and Communications Technology) àti outsourcing, àyẹ̀wò onípò aabo cyber àti ewu ẹgbẹ́ kẹta, ìdánwò ìwọ̀-inú tí ìhalẹ̀mọ́ ń darí, àyẹ̀wò ìṣàkóso ìyípadà ICT, àti ìṣàyẹ̀wò ìgbẹ́kẹ̀lé cloud ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Ọdún kan sí ìwúlò DORA")).
 
-That means resilience must be testable. Architecture diagrams are not enough. Banks need evidence from failover exercises, incident simulations, backup restores, dependency maps, recovery-time testing, and governance workflows.
+Ìyẹn túmọ̀ sí pé agbára-jíjà gbọ́dọ̀ jẹ́ ohun tí a lè dán wò. Àwòrán ìṣàpẹrẹ kò tó. Àwọn báńkì nílò ẹ̀rí láti ọ̀dọ̀ àwọn àdánwò failover, àwọn àfarawé ìṣẹ̀lẹ̀, àwọn ìmúpadàbọ̀sípò àfipamọ́, àwọn àwòrán ìgbẹ́kẹ̀lé, àdánwò àkókò-ìmúpadàbọ̀sípò, àti àwọn ìṣiṣẹ́-ọ̀nà ìṣàkóso.
 
-### 4. Sovereignty as Platform Capability
+### 4. Ipa-ọba gẹ́gẹ́ bí Agbára Pẹpẹ
 
-Cloud sovereignty is not just data residency. It includes legal control, operational control, encryption-key control, support-personnel jurisdiction, workload placement, and the ability to continue critical services if a global provider or geopolitical process creates disruption. Red Hat frames sovereignty as jurisdictional control and operational autonomy for banks facing divergent regulations such as GDPR, DORA, and national cloud rules ([Red Hat](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Digital sovereignty for banks")).
+Ipa-ọba cloud kì í ṣe ibùgbé dátà nìkan. Ó ní ìṣàkóso òfin, ìṣàkóso iṣẹ́-ṣíṣe, ìṣàkóso kọ́kọ́rọ́ encryption, ìjọba aṣẹ́sọnù àwọn òṣìṣẹ́-àtìlẹ́yìn, ipa àfojúsùn ẹrù-iṣẹ́, àti agbára láti tẹ̀síwájú àwọn iṣẹ́ pàtàkì tí olùpèsè kàrí-ayé tàbí ìṣẹ̀lẹ̀ òṣèlú-ilẹ̀ bá dá ìdájú sílẹ̀. Red Hat ṣe àpèjúwe ipa-ọba gẹ́gẹ́ bí ìjọba aṣẹ́sọnù àti ìdáṣe iṣẹ́-ṣíṣe fún àwọn báńkì tí ó dojúkọ àwọn ìṣàkóso onírúurú bí i GDPR, DORA, àti àwọn òfin cloud orílẹ̀-èdè ([Red Hat](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Ipa-ọba dijítà fún àwọn báńkì")).
 
-The cloud-native implication is that workload routing, secrets management, key control, data classification, and policy enforcement must be programmable.
+Ìtúmọ̀ cloud-native ni pé pínpín ẹrù-iṣẹ́, ìṣàkóso àṣírí, ìṣàkóso kọ́kọ́rọ́, ìpín dátà, àti ìfipá-mú ìlànà gbọ́dọ̀ jẹ́ ohun tí a lè ṣe lórí kọ̀ǹpútà.
 
-## The Bank Platform Stack
+## Ìṣẹ́pọ̀ Pẹpẹ Báńkì
 
-### Developer Experience Layer
+### Ìpele Ìrírí Olùdásílẹ̀
 
-A bank-grade cloud-native platform should expose paved roads: golden paths, templates, service catalogues, automated deployment pipelines, observability defaults, policy-as-code, standard secrets integration, and approved data paths. Developers should not need to negotiate with every control owner for every release.
+Pẹpẹ cloud-native ti ìtó-báńkì gbọ́dọ̀ ṣí àwọn ọ̀nà tí a ti ṣètò sílẹ̀: àwọn ipa-ọ̀nà alágbára, àwọn àwòṣe, àwọn àkójọ iṣẹ́, àwọn ipa-ọ̀nà ìpèsè aládàáṣe, àwọn àdéédéé akíyèsí, ìlànà-bí-koodu, ìṣọ̀kan àṣírí lójútó, àti àwọn ipa-ọ̀nà dátà tí a fọwọ́sí. Àwọn olùdásílẹ̀ kò gbọ́dọ̀ ní láti bá olúkúlùkù olùnífún-ìṣàkóso bá fún gbogbo ìtújáde.
 
-The platform should make the compliant path the fastest path. That is the only model that scales across thousands of services.
+Pẹpẹ gbọ́dọ̀ jẹ́ kí ipa-ọ̀nà ìbáwí jẹ́ ipa-ọ̀nà tí ó yára jùlọ. Èyí nìkan ni àpẹrẹ tí ó ń yẹ káàkiri ẹgbẹẹgbẹ̀rún àwọn iṣẹ́.
 
-### Control Layer
+### Ìpele Ìṣàkóso
 
-The control layer includes identity, access management, segregation of duties, encryption, key custody, network policy, image signing, software bill of materials, vulnerability gates, runtime security, logging, and evidence generation. It is where DORA, NIS2, GDPR, outsourcing rules, and internal model risk policies become executable controls.
+Ìpele ìṣàkóso ní idanimọ̀, ìṣàkóso ìráyé, ìpín iṣẹ́, encryption, ìtọ́jú kọ́kọ́rọ́, ìlànà nẹ́tíwọ́kì, fífọwọ́sí àwòrán, àkójọ-ohun-èlò sọfítí (software bill of materials), àwọn ẹnubodè ìfaragbára, aabo runtime, kíkó-ìròyìn, àti pípèsè ẹ̀rí. Ibẹ̀ ni DORA, NIS2 (Network and Information Security Directive 2), GDPR, àwọn òfin outsourcing, àti àwọn ìlànà ewu àpẹrẹ inú-ilé ti di àwọn ìṣàkóso tí a lè ṣiṣẹ́.
 
-This is where many banks fail. They adopt containers but leave controls as manual approvals outside the platform.
+Ibẹ̀ ni ọ̀pọ̀ àwọn báńkì ti ṣubú. Wọ́n gba container ṣùgbọ́n wọ́n fi àwọn ìṣàkóso sílẹ̀ gẹ́gẹ́ bí ìfọwọ́sí ọwọ́ ní òde pẹpẹ.
 
-### Data Layer
+### Ìpele Dátà
 
-Stateful workloads are the hardest part of cloud native banking. Red Hat’s VM/container convergence argument depends heavily on a unified data fabric and policy-driven backup, replication, failover, and recovery across VMs and containers ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
+Àwọn ẹrù-iṣẹ́ stateful jẹ́ apá tí ó le jùlọ ti cloud native banking. Àríyànjiyàn ìṣọ̀kan VM/container ti Red Hat dá lórí ìhun dátà tí a ṣọ̀kan àti àfipamọ́ tí ìlànà ń darí, àtúnṣe, failover, àti ìmúpadàbọ̀sípò káàkiri VMs àti containers ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Sísopọ̀ àlàfo láàrín VM atijọ́ àti cloud-native banking")).
 
-For banks, the data layer must answer three questions: where is the data, who controls the keys, and how does the service recover if the infrastructure fails?
+Fún àwọn báńkì, ìpele dátà gbọ́dọ̀ dá àwọn ìbéèrè mẹ́ta lóhùn: ibo ni dátà náà wà, ta ni ó ń ṣàkóso àwọn kọ́kọ́rọ́, àti báwo ni iṣẹ́ náà ṣe ń tún-padà tí ìpilẹ̀ṣẹ̀ bá kùnà?
 
-## Architecture Table: Cloud Native for Banks
+## Tábìlì Ìṣẹ́pọ̀: Cloud Native fún àwọn Báńkì
 
-| Capability | Cloud-Native Pattern | Banking Control Requirement | Failure Mode |
+| Agbára | Àpẹrẹ Cloud-Native | Àdéédéé Ìṣàkóso Báńkì | Ọ̀nà Ìkùnà |
 |---|---|---|---|
-| **Application delivery** | Kubernetes, GitOps, templates | Segregation of duties, change evidence, rollback | Fast but unauditable releases |
-| **Legacy coexistence** | VM/container unified platform | Policy consistency and migration control | Dual estates with duplicated risk |
-| **Data services** | Stateful operators and data fabric | Residency, backup, immutability, tested restore | Stateless platform with stateful fragility |
-| **Resilience** | Multi-zone, multi-region, failover | DORA evidence and critical-function mapping | Cloud outage treated as vendor excuse |
-| **Sovereignty** | Policy-based workload placement | Jurisdictional and key-control evidence | Residency without operational autonomy |
-| **AI workloads** | Elastic compute close to data | Model governance, data minimisation, audit | Sensitive data moved to unapproved AI services |
+| **Ìpèsè ohun-èlò** | Kubernetes, GitOps, àwọn àwòṣe | Ìpín iṣẹ́, ẹ̀rí ìyípadà, àtúnpadà | Àwọn ìtújáde yára ṣùgbọ́n tí a kò lè ṣàyẹ̀wò |
+| **Ìbágbé pẹ̀lú àtijọ́** | Pẹpẹ VM/container tí a ṣọ̀kan | Ìbámu ìlànà àti ìṣàkóso ìṣíkiri | Àwọn ohun-ìní méjì pẹ̀lú ewu tí a ṣe àtúnṣe |
+| **Àwọn iṣẹ́ dátà** | Àwọn olùṣiṣẹ́ stateful àti ìhun dátà | Ibùgbé, àfipamọ́, àìláyípadà, ìmúpadàbọ̀sípò tí a dán wò | Pẹpẹ stateless pẹ̀lú àìlerí stateful |
+| **Agbára-jíjà** | Multi-zone, multi-region, failover | Ẹ̀rí DORA àti àwòrán iṣẹ́-pàtàkì | A tọ́jú ìdájú cloud gẹ́gẹ́ bí àwáwí olùtà |
+| **Ipa-ọba** | Pínpín ẹrù-iṣẹ́ tí ìlànà ń darí | Ẹ̀rí ìjọba aṣẹ́sọnù àti ìṣàkóso kọ́kọ́rọ́ | Ibùgbé láì sí ìdáṣe iṣẹ́-ṣíṣe |
+| **Àwọn ẹrù-iṣẹ́ AI** | Ìṣirò ìnà-ìnára tí ó súnmọ́ dátà | Ìṣàkóso àpẹrẹ, ìdín dátà kù, àbójútó | Dátà tí ó ní ìfọ̀kàn tí a gbé lọ sí àwọn iṣẹ́ AI tí a kò fọwọ́sí |
 
-## What This Means by Institution Type
+## Kí Ni Èyí Túmọ̀ Sí gẹ́gẹ́ bí Irú Ilé-Iṣẹ́
 
-### Tier-One Universal Banks
+### Àwọn Báńkì Káríayé ti Ìpele-Kìíní
 
-Tier-one banks should build controlled internal platforms across multiple clouds, with strict policy-as-code, data classification, and workload placement. They have enough scale to justify platform engineering, and regulators will expect deeper evidence from them.
+Àwọn báńkì ti ìpele-kìíní gbọ́dọ̀ kọ́ pẹpẹ inú-ilé tí a ń ṣakoso káàkiri ọ̀pọ̀ clouds, pẹ̀lú ìlànà-bí-koodu tí ó le, ìpín dátà, àti pínpín ẹrù-iṣẹ́. Wọ́n ní ìwọ̀n tí ó tó láti dá ìmọ̀-ẹ̀rọ pẹpẹ láre, àti àwọn alábòójútó yóò retí ẹ̀rí jíjinlẹ̀ sí i lọ́dọ̀ wọn.
 
-### Mid-Tier Banks
+### Àwọn Báńkì Aláàrín
 
-Mid-tier banks should standardise rather than customise. A strong managed Kubernetes platform, disciplined cloud-provider selection, clear exit strategies, and automated evidence generation are more valuable than a sprawling multi-cloud ambition the institution cannot operate.
+Àwọn báńkì aláàrín gbọ́dọ̀ tọ́ka sí ọ̀nà-ìbámu dípò ti àkànṣe. Pẹpẹ Kubernetes tí a ń ṣakoso lágbára, ìyàn olùpèsè-cloud pẹ̀lú ìbáwí, àwọn ètò-ìjáde tí ó hàn, àti pípèsè ẹ̀rí aládàáṣe níye lórí ju ìmọ̀rírì multi-cloud tí ó tàn káàkiri ṣùgbọ́n tí ilé-iṣẹ́ kò lè ṣakoso.
 
-### Financial Market Infrastructures
+### Àwọn Ìpilẹ̀ṣẹ̀ Ọjà-Ìnáwó (FMI)
 
-FMIs need resilience proof above all else. They should treat cloud native as a way to improve recovery, observability, and controlled change rather than as a pure velocity play.
+Àwọn Financial Market Infrastructures (FMI) nílò ẹ̀rí agbára-jíjà ju gbogbo nǹkan míràn lọ. Wọ́n gbọ́dọ̀ tọ́jú cloud native gẹ́gẹ́ bí ọ̀nà láti mú ìmúpadàbọ̀sípò, akíyèsí, àti ìyípadà tí a ṣakoso dára síi, dípò gẹ́gẹ́ bí ìṣíṣẹ́ ìyára pípé.
 
-### Fintechs and PSPs
+### Àwọn Fintech àti PSP
 
-Fintechs and PSPs can move quickly, but they must avoid outgrowing their control model. As they become systemically relevant, the same resilience, third-party risk, incident-reporting, and data-sovereignty expectations will arrive.
+Àwọn Fintech àti PSP (Payment Service Provider) lè rìn yára, ṣùgbọ́n wọ́n gbọ́dọ̀ yẹra fún dídàgbà ju àpẹrẹ ìṣàkóso wọn lọ. Bí wọ́n ṣe ń di pàtàkì gẹ́gẹ́ bí ètò, àwọn ìfojúsùn agbára-jíjà, ewu ẹgbẹ́ kẹta, ìròyìn ìṣẹ̀lẹ̀, àti ipa-ọba dátà kan náà yóò dé.
 
-## Conclusion
+## Àkótán
 
-Cloud native banking in 2026 is a governance architecture. Kubernetes is essential, but it is not sufficient. The institutions that succeed will converge VMs and containers where necessary, use cloud-native patterns for new workloads, prove resilience under DORA, control data sovereignty at the platform layer, and make compliance automatic enough that developers can move quickly without creating ungoverned risk.
+Cloud native banking ní 2026 jẹ́ ìṣẹ́pọ̀ ìṣàkóso. Kubernetes jẹ́ pàtàkì, ṣùgbọ́n kò tó. Àwọn ilé-iṣẹ́ tí yóò ṣẹ́gun yóò ṣọ̀kan VMs àti containers níbi tí ó bá yẹ, yóò lo àwọn àpẹrẹ cloud-native fún àwọn ẹrù-iṣẹ́ tuntun, yóò fi agbára-jíjà hàn lábẹ́ DORA, yóò ṣàkóso ipa-ọba dátà ní ìpele pẹpẹ, yóò sì jẹ́ kí ìbáwí jẹ́ aládàáṣe tó láti jẹ́ kí àwọn olùdásílẹ̀ rìn yára láì dá ewu tí a kò lè ṣakoso sílẹ̀.
 
-The old debate was whether banks could move to cloud. The new debate is whether banks can make cloud native safe enough, portable enough, and evidenced enough to run the services that matter.
+Àríyànjiyàn àtijọ́ ni bóyá àwọn báńkì lè gbé lọ sí cloud. Àríyànjiyàn tuntun ni bóyá àwọn báńkì lè sọ cloud native di ohun tí ó ní aabo tó, tí ó lè gbé tó, tí ó sì ní ẹ̀rí tó láti ṣakoso àwọn iṣẹ́ tí ó ṣe pàtàkì.
 
-## Frequently Asked Questions
+## Àwọn Ìbéèrè tí a Sábà Ńbéèrè
 
-**Does DORA prevent banks from using cloud?**
+**Ṣé DORA ń dá àwọn báńkì dúró láti lo cloud?**
 
-No. DORA does not prohibit cloud use. It makes financial institutions accountable for ICT risk, third-party dependency, incident reporting, resilience testing, and governance of critical services that rely on cloud and other ICT providers ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "One year into DORA application")).
+Bẹ́ẹ̀ kọ́. DORA kò pa lílo cloud léèwọ̀. Ó ń mú àwọn ilé-iṣẹ́ ìnáwó ní ojúṣe fún ewu ICT, ìgbẹ́kẹ̀lé ẹgbẹ́ kẹta, ìròyìn ìṣẹ̀lẹ̀, ìdánwò agbára-jíjà, àti ìṣàkóso àwọn iṣẹ́ pàtàkì tí ó gbara lórí cloud àti àwọn olùpèsè ICT míràn ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Ọdún kan sí ìwúlò DORA")).
 
-**Why do banks still need VMs if Kubernetes is the future?**
+**Kí ló dé tí àwọn báńkì ṣì nílò VMs tí Kubernetes bá jẹ́ ọjọ́-iwájú?**
 
-Banks still run critical systems on VM-based estates, including payment engines, core banking systems, trading applications, and risk platforms. A unified VM/container model reduces duplication while allowing gradual migration ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
+Àwọn báńkì ṣì ń ṣàkóso àwọn ètò pàtàkì lórí àwọn ohun-ìní VM, pẹ̀lú àwọn ẹ̀rọ ìsanwó, àwọn ètò báńkì-pàtàkì, àwọn ohun-èlò ìṣòwò, àti àwọn pẹpẹ ewu. Àpẹrẹ VM/container tí a ṣọ̀kan ń dín àtúnṣe kù, ó sì ń jẹ́ kí ìṣíkiri lọ̀rọ̀-lọ̀rọ̀ ṣeéṣe ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Sísopọ̀ àlàfo láàrín VM atijọ́ àti cloud-native banking")).
 
-**What is a real cloud exit strategy?**
+**Kí ni ètò-ìjáde cloud tòótọ́?**
 
-A real exit strategy includes dependency inventory, data export procedures, alternative runtime options, contractual rights, recovery testing, key-control plans, and a realistic timetable for moving or restoring critical services.
+Ètò-ìjáde tòótọ́ ní àkójọ ìgbẹ́kẹ̀lé, ìlànà gbígbé-dátà-jáde, àwọn àyàn runtime míràn, ẹ̀tọ́ àdéhùn, ìdánwò ìmúpadàbọ̀sípò, àwọn ètò ìṣàkóso-kọ́kọ́rọ́, àti ìtò àkókò gidi fún gbígbé tàbí ìmúpadàbọ̀sípò àwọn iṣẹ́ pàtàkì.
 
-**What is the biggest cloud-native mistake banks make?**
+**Kí ni àṣìṣe cloud-native tí ó tóbi jùlọ tí àwọn báńkì ń ṣe?**
 
-The biggest mistake is adopting containers without platform controls. If Kubernetes increases deployment speed but does not enforce identity, policy, audit, data residency, recovery, and vulnerability controls, it accelerates risk rather than reducing it.
+Àṣìṣe tí ó tóbi jùlọ ni gbígba container láì ní àwọn ìṣàkóso pẹpẹ. Tí Kubernetes bá mú ìyára ìpèsè pọ̀ síi ṣùgbọ́n tí kò bá fipá-mú idanimọ̀, ìlànà, àbójútó, ibùgbé dátà, ìmúpadàbọ̀sípò, àti àwọn ìṣàkóso ìfaragbára, yóò mú ewu pọ̀ síi dípò dídín-kù.
 
-## References
+## Àwọn Ìtọ́kasí
 
-- IBM, (2026). [One year into DORA application: DORA's real test starts now ⧉](https://www.ibm.com/think/perspectives/dora-application-one-year-in "DORA’s real test starts now").
-- Red Hat, (2026). [Bridging the gap between legacy VMs and cloud-native banking ⧉](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Legacy VMs and cloud-native banking").
-- Red Hat, (2026). [Digital sovereignty for banks ⧉](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Cloud sovereignty for banks").
-- Thought Machine, (2026). [Cloud-native core banking software ⧉](https://www.thoughtmachine.net "Thought Machine Vault").
+- IBM, (2026). [Ọdún kan sí ìwúlò DORA: àdánwò gidi DORA ti bẹ̀rẹ̀ nísinsìnyí ⧉](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Àdánwò gidi DORA ti bẹ̀rẹ̀").
+- Red Hat, (2026). [Sísopọ̀ àlàfo láàrín VM atijọ́ àti cloud-native banking ⧉](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "VM atijọ́ àti cloud-native banking").
+- Red Hat, (2026). [Ipa-ọba dijítà fún àwọn báńkì ⧉](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Ipa-ọba cloud fún àwọn báńkì").
+- Thought Machine, (2026). [Sọfítí báńkì-pàtàkì cloud-native ⧉](https://www.thoughtmachine.net "Thought Machine Vault").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-20">2026-05-20</time>.</p>
+<aside class="author-card" aria-label="Nípa òǹkọ̀wé"><img alt="Àwòrán Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Ògbóǹtarìgì ìmọ̀-ẹ̀rọ báńkì tí ó ń kọ̀wé lórí AI tí a ń lò, ìṣíkiri ISO 20022, cryptography post-quantum fún àwọn iṣẹ́ ìnáwó, àti ìyípadà ìṣẹ́pọ̀ ti àwọn ìsanwó wholesale.</span><span class="author-credentials">Ó lé ní ọdún 20 káàkiri HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Àkọsílẹ̀ pípé</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">A ṣe àyẹ̀wò gbẹ̀yìn <time datetime="2026-05-20">2026-05-20</time>.</p>
 <!-- enrich-end -->

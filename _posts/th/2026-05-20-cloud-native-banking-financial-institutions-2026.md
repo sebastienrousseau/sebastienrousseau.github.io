@@ -84,140 +84,136 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# คลาวด์เนทีฟแบงก์กิ้งในปี 2026: Kubernetes, DORA, อธิปไตย และการสิ้นสุดของรอยแยกระหว่าง VM กับคอนเทนเนอร์
 
-> _Translation pending — read the [English original](/2026-05-20-cloud-native-banking-financial-institutions-2026/) while we localise._
-
-# Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide
-
-Cloud native banking in 2026 is no longer a debate about whether banks can use cloud. It is a regulated platform-engineering discipline: how to run critical services across containers, virtual machines, data fabrics, AI workloads, and cloud providers while proving operational resilience under DORA and similar regimes. IBM describes 2026 as the first true supervisory test of DORA, with cloud dependency reviews, cybersecurity inspections, threat-led penetration testing, and direct oversight of critical third-party providers ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "One year into DORA application")).
+คลาวด์เนทีฟแบงก์กิ้งในปี 2026 ไม่ใช่การถกเถียงอีกต่อไปว่าธนาคารจะสามารถใช้คลาวด์ได้หรือไม่ แต่กลายเป็นวินัยด้านวิศวกรรมแพลตฟอร์มที่อยู่ภายใต้การกำกับดูแล นั่นคือ จะดำเนินบริการสำคัญข้ามคอนเทนเนอร์ เครื่องเสมือน (VM) ผืนข้อมูล (data fabric) เวิร์กโหลด AI และผู้ให้บริการคลาวด์ได้อย่างไร พร้อมทั้งพิสูจน์ความยืดหยุ่นในการดำเนินงาน (operational resilience) ภายใต้ DORA และกฎเกณฑ์ที่คล้ายคลึงกัน IBM ระบุว่าปี 2026 คือบททดสอบการกำกับดูแล DORA อย่างแท้จริงเป็นครั้งแรก ด้วยการทบทวนการพึ่งพาคลาวด์ การตรวจสอบความมั่นคงปลอดภัยทางไซเบอร์ การทดสอบเจาะระบบที่ขับเคลื่อนด้วยภัยคุกคาม และการกำกับดูแลผู้ให้บริการบุคคลที่สามที่มีความสำคัญโดยตรง ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "หนึ่งปีหลังการบังคับใช้ DORA")).
 
 ---
 
-> **Executive Summary / Key Takeaways**
+> **บทสรุปผู้บริหาร / ประเด็นสำคัญ**
 >
-> - **DORA has changed the cloud conversation.** 2026 brings direct EU supervision of critical third-party providers and targeted reviews of banks’ cloud-service-provider dependencies ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "One year into DORA application")).
-> - **Kubernetes is the platform layer, not the whole answer.** Banks need Kubernetes for elasticity, automation, and AI/ML workloads, but they also need VM coexistence because core banking, payments, trading, and risk systems still run on hardened virtualised estates ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
-> - **The VM vs container divide is closing.** Red Hat positions OpenShift and Portworx as a unified model where VMs and containers share policy, data, backup, disaster recovery, and governance controls ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
-> - **Cloud sovereignty is now a design constraint.** Banks are using sovereignty to manage jurisdictional control, operational autonomy, key control, data location, and cloud concentration risk ([Red Hat](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Digital sovereignty for banks")).
-> - **AI has made cloud native urgent.** Fraud detection, liquidity analytics, real-time personalisation, and regulatory reporting increasingly require elastic compute close to sensitive data ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
-> - **Exit strategy is not a PDF.** Under modern supervisory expectations, banks need tested portability, dependency mapping, contractual evidence, recovery procedures, and realistic migration paths for critical functions.
-> - **The architecture target is controlled cloud native.** The winning bank platform gives developers self-service delivery while enforcing audit, encryption, data residency, resilience testing, separation of duties, and third-party risk controls automatically.
+> - **DORA ได้เปลี่ยนบทสนทนาเรื่องคลาวด์ไปแล้ว** ปี 2026 นำมาซึ่งการกำกับดูแลผู้ให้บริการบุคคลที่สามที่มีความสำคัญโดยสหภาพยุโรปโดยตรง และการทบทวนแบบมุ่งเป้าต่อการพึ่งพาผู้ให้บริการคลาวด์ของธนาคาร ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "หนึ่งปีหลังการบังคับใช้ DORA")).
+> - **Kubernetes คือชั้นแพลตฟอร์ม ไม่ใช่คำตอบทั้งหมด** ธนาคารต้องการ Kubernetes เพื่อความยืดหยุ่น การทำงานอัตโนมัติ และเวิร์กโหลด AI/ML แต่ยังต้องการการอยู่ร่วมกับ VM เนื่องจากระบบธนาคารหลัก การชำระเงิน การซื้อขาย และระบบบริหารความเสี่ยง ยังคงทำงานบนเขตเครื่องเสมือนที่ผ่านการเสริมความแข็งแกร่ง ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "เชื่อมช่องว่างระหว่าง VM ยุคเก่ากับคลาวด์เนทีฟแบงก์กิ้ง")).
+> - **รอยแยกระหว่าง VM กับคอนเทนเนอร์กำลังปิดลง** Red Hat วาง OpenShift และ Portworx ในฐานะโมเดลเอกภาพที่ VM และคอนเทนเนอร์ใช้นโยบาย ข้อมูล การสำรอง การกู้คืนจากภัยพิบัติ และการควบคุมธรรมาภิบาลร่วมกัน ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "เชื่อมช่องว่างระหว่าง VM ยุคเก่ากับคลาวด์เนทีฟแบงก์กิ้ง")).
+> - **อธิปไตยของคลาวด์กลายเป็นข้อจำกัดในการออกแบบ** ธนาคารใช้อธิปไตยเพื่อบริหารการควบคุมเชิงเขตอำนาจศาล ความเป็นอิสระในการดำเนินงาน การควบคุมกุญแจ ตำแหน่งที่ตั้งข้อมูล และความเสี่ยงจากการกระจุกตัวของคลาวด์ ([Red Hat](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "อธิปไตยทางดิจิทัลสำหรับธนาคาร")).
+> - **AI ทำให้คลาวด์เนทีฟกลายเป็นเรื่องเร่งด่วน** การตรวจจับการฉ้อโกง การวิเคราะห์สภาพคล่อง การปรับให้เป็นส่วนตัวแบบเรียลไทม์ และการรายงานเชิงกำกับดูแล ล้วนต้องการพลังประมวลผลที่ยืดหยุ่นใกล้ข้อมูลละเอียดอ่อนมากขึ้นเรื่อย ๆ ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "เชื่อมช่องว่างระหว่าง VM ยุคเก่ากับคลาวด์เนทีฟแบงก์กิ้ง")).
+> - **กลยุทธ์การออกไม่ใช่เอกสาร PDF** ภายใต้ความคาดหวังของผู้กำกับดูแลยุคใหม่ ธนาคารต้องมีความสามารถในการเคลื่อนย้ายที่ผ่านการทดสอบ การจัดทำแผนที่การพึ่งพา หลักฐานสัญญา ขั้นตอนการกู้คืน และเส้นทางการย้ายที่สมจริงสำหรับฟังก์ชันสำคัญ
+> - **เป้าหมายทางสถาปัตยกรรมคือคลาวด์เนทีฟที่ควบคุมได้** แพลตฟอร์มธนาคารที่ประสบความสำเร็จจะมอบการส่งมอบแบบบริการตนเองให้นักพัฒนา พร้อมบังคับใช้การตรวจสอบ การเข้ารหัส การพำนักข้อมูล การทดสอบความยืดหยุ่น การแบ่งแยกหน้าที่ และการควบคุมความเสี่ยงบุคคลที่สามโดยอัตโนมัติ
 >
 ---
 
-## Why 2026 Is the Cloud-Native Supervision Year
+## เหตุใดปี 2026 จึงเป็นปีแห่งการกำกับดูแลคลาวด์เนทีฟ
 
-DORA applied from January 2025, but 2026 is where supervisory muscle becomes visible. IBM notes that the first list of Critical Third-Party Providers was designated in November 2025 and that 2026 brings direct engagement with European Supervisory Agencies, contract reviews, onsite inspections, and cloud dependency analysis ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "One year into DORA application")).
+DORA มีผลบังคับใช้ตั้งแต่เดือนมกราคม 2025 แต่ปี 2026 คือช่วงที่กล้ามเนื้อของการกำกับดูแลเริ่มมองเห็นได้ชัด IBM ระบุว่ารายชื่อผู้ให้บริการบุคคลที่สามที่มีความสำคัญรายแรกได้รับการกำหนดในเดือนพฤศจิกายน 2025 และปี 2026 นำมาซึ่งการประสานงานโดยตรงกับหน่วยงานกำกับดูแลของยุโรป การทบทวนสัญญา การตรวจสอบ ณ สถานที่ และการวิเคราะห์การพึ่งพาคลาวด์ ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "หนึ่งปีหลังการบังคับใช้ DORA")).
 
-That changes the burden of proof. A bank can no longer say that a cloud outage is merely a vendor problem. The financial institution remains accountable for the resilience of critical functions, even when those functions depend on hyperscalers, SaaS providers, data platforms, and managed security services.
+สิ่งนี้เปลี่ยนภาระการพิสูจน์ไป ธนาคารไม่สามารถกล่าวอ้างได้อีกต่อไปว่าเหตุการณ์คลาวด์ขัดข้องเป็นเพียงปัญหาของผู้ให้บริการ สถาบันการเงินยังคงรับผิดชอบต่อความยืดหยุ่นของฟังก์ชันสำคัญ แม้ว่าฟังก์ชันเหล่านั้นจะพึ่งพาไฮเปอร์สเกลเลอร์ ผู้ให้บริการ SaaS แพลตฟอร์มข้อมูล และบริการความมั่นคงปลอดภัยที่บริหารจัดการก็ตาม
 
-## The 2026 Cloud-Native Banking Baseline
+## พื้นฐานคลาวด์เนทีฟแบงก์กิ้งปี 2026
 
-### 1. Kubernetes as the Operating Layer
+### 1. Kubernetes ในฐานะชั้นปฏิบัติการ
 
-Kubernetes gives banks deployment automation, elasticity, policy enforcement, container orchestration, and a common abstraction across private cloud, public cloud, and sovereign environments. For new workloads, especially AI-driven fraud detection, real-time personalisation, liquidity analytics, and regulatory reporting, this has become the natural control plane ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
+Kubernetes มอบการปรับใช้อัตโนมัติ ความยืดหยุ่น การบังคับใช้นโยบาย การจัดวงคอนเทนเนอร์ และการทำให้เป็นนามธรรมร่วมกันข้ามคลาวด์ส่วนตัว คลาวด์สาธารณะ และสภาพแวดล้อมที่มีอธิปไตย สำหรับเวิร์กโหลดใหม่ โดยเฉพาะการตรวจจับการฉ้อโกงที่ขับเคลื่อนด้วย AI การปรับให้เป็นส่วนตัวแบบเรียลไทม์ การวิเคราะห์สภาพคล่อง และการรายงานเชิงกำกับดูแล สิ่งนี้ได้กลายเป็นชั้นควบคุมโดยธรรมชาติ ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "เชื่อมช่องว่างระหว่าง VM ยุคเก่ากับคลาวด์เนทีฟแบงก์กิ้ง")).
 
-The mistake is to treat Kubernetes as the destination. For banks, it is the substrate beneath a governed developer platform.
+ความผิดพลาดคือการมอง Kubernetes เป็นจุดหมายปลายทาง สำหรับธนาคาร มันคือพื้นฐานที่อยู่ใต้แพลตฟอร์มนักพัฒนาที่อยู่ภายใต้ธรรมาภิบาล
 
-### 2. VM and Container Convergence
+### 2. การบรรจบกันของ VM และคอนเทนเนอร์
 
-Most banks cannot rewrite the core estate quickly. Payment engines, trading systems, credit scoring, risk models, and core banking platforms still depend on hardened VM estates. Red Hat argues that banks need a unified platform where VMs and containers can operate together, reducing duplicated architecture and aligning policy, storage, backup, and recovery controls ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
+ธนาคารส่วนใหญ่ไม่สามารถเขียนใหม่ระบบหลักได้อย่างรวดเร็ว เครื่องชำระเงิน ระบบซื้อขาย การให้คะแนนเครดิต โมเดลความเสี่ยง และแพลตฟอร์มธนาคารหลัก ยังคงพึ่งพาเขต VM ที่ผ่านการเสริมความแข็งแกร่ง Red Hat เสนอว่าธนาคารต้องการแพลตฟอร์มเอกภาพที่ VM และคอนเทนเนอร์สามารถทำงานร่วมกันได้ ลดการซ้ำซ้อนของสถาปัตยกรรม และจัดแนวให้นโยบาย พื้นที่จัดเก็บ การสำรอง และการควบคุมการกู้คืนสอดคล้องกัน ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "เชื่อมช่องว่างระหว่าง VM ยุคเก่ากับคลาวด์เนทีฟแบงก์กิ้ง")).
 
-This is the practical bridge between legacy resilience and cloud-native velocity. It lets banks move adjacent services first, co-locate data-dependent AI workloads, and avoid forcing brittle rewrites into critical systems.
+นี่คือสะพานเชิงปฏิบัติระหว่างความยืดหยุ่นของระบบดั้งเดิมและความเร็วของคลาวด์เนทีฟ ช่วยให้ธนาคารย้ายบริการที่อยู่ใกล้เคียงก่อน วางตำแหน่งเวิร์กโหลด AI ที่พึ่งพาข้อมูลในที่เดียวกัน และหลีกเลี่ยงการบังคับเขียนใหม่ที่เปราะบางในระบบสำคัญ
 
-### 3. DORA-Ready Operational Resilience
+### 3. ความยืดหยุ่นในการดำเนินงานที่พร้อมรับ DORA
 
-IBM says 2026 supervisory priorities include follow-up on ICT security and outsourcing shortcomings, cybersecurity and third-party risk onsite inspections, threat-led penetration testing, ICT change-management reviews, and cloud dependency analysis ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "One year into DORA application")).
+IBM ระบุว่าลำดับความสำคัญของการกำกับดูแลในปี 2026 รวมถึงการติดตามผลข้อบกพร่องด้านความมั่นคงปลอดภัย ICT (เทคโนโลยีสารสนเทศและการสื่อสาร) และการจ้างภายนอก (outsourcing) การตรวจสอบ ณ สถานที่ด้านความมั่นคงปลอดภัยทางไซเบอร์และความเสี่ยงบุคคลที่สาม การทดสอบเจาะระบบที่ขับเคลื่อนด้วยภัยคุกคาม การทบทวนการจัดการการเปลี่ยนแปลง ICT และการวิเคราะห์การพึ่งพาคลาวด์ ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "หนึ่งปีหลังการบังคับใช้ DORA")).
 
-That means resilience must be testable. Architecture diagrams are not enough. Banks need evidence from failover exercises, incident simulations, backup restores, dependency maps, recovery-time testing, and governance workflows.
+นั่นหมายความว่าความยืดหยุ่น (resilience) ต้องสามารถทดสอบได้ แผนผังสถาปัตยกรรมไม่เพียงพอ ธนาคารต้องมีหลักฐานจากการฝึกซ้อมการสลับระบบ การจำลองเหตุการณ์ การกู้คืนข้อมูลสำรอง แผนที่การพึ่งพา การทดสอบเวลาในการกู้คืน และเวิร์กโฟลว์ธรรมาภิบาล
 
-### 4. Sovereignty as Platform Capability
+### 4. อธิปไตยในฐานะความสามารถของแพลตฟอร์ม
 
-Cloud sovereignty is not just data residency. It includes legal control, operational control, encryption-key control, support-personnel jurisdiction, workload placement, and the ability to continue critical services if a global provider or geopolitical process creates disruption. Red Hat frames sovereignty as jurisdictional control and operational autonomy for banks facing divergent regulations such as GDPR, DORA, and national cloud rules ([Red Hat](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Digital sovereignty for banks")).
+อธิปไตยของคลาวด์ไม่ได้เป็นเพียงการพำนักข้อมูล แต่ยังรวมถึงการควบคุมทางกฎหมาย การควบคุมการดำเนินงาน การควบคุมกุญแจเข้ารหัส เขตอำนาจศาลของบุคลากรสนับสนุน การวางตำแหน่งเวิร์กโหลด และความสามารถในการดำเนินบริการสำคัญต่อไปได้ หากผู้ให้บริการระดับโลกหรือกระบวนการทางภูมิรัฐศาสตร์สร้างความปั่นป่วน Red Hat กำหนดอธิปไตยว่าเป็นการควบคุมเชิงเขตอำนาจศาลและความเป็นอิสระในการดำเนินงานสำหรับธนาคารที่ต้องเผชิญกฎระเบียบที่แตกต่างกัน เช่น GDPR (กฎระเบียบคุ้มครองข้อมูลส่วนบุคคล), DORA และกฎคลาวด์ระดับชาติ ([Red Hat](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "อธิปไตยทางดิจิทัลสำหรับธนาคาร")).
 
-The cloud-native implication is that workload routing, secrets management, key control, data classification, and policy enforcement must be programmable.
+นัยของคลาวด์เนทีฟคือ การกำหนดเส้นทางเวิร์กโหลด การจัดการความลับ การควบคุมกุญแจ การจำแนกประเภทข้อมูล และการบังคับใช้นโยบาย ต้องสามารถเขียนโปรแกรมได้
 
-## The Bank Platform Stack
+## สแตกแพลตฟอร์มของธนาคาร
 
-### Developer Experience Layer
+### ชั้นประสบการณ์นักพัฒนา
 
-A bank-grade cloud-native platform should expose paved roads: golden paths, templates, service catalogues, automated deployment pipelines, observability defaults, policy-as-code, standard secrets integration, and approved data paths. Developers should not need to negotiate with every control owner for every release.
+แพลตฟอร์มคลาวด์เนทีฟระดับธนาคารควรเปิดเผยถนนที่ปูแล้ว ได้แก่ เส้นทางทองคำ เทมเพลต แคตาล็อกบริการ ไปป์ไลน์การปรับใช้อัตโนมัติ ค่าเริ่มต้นของการสังเกตการณ์ นโยบายในรูปโค้ด (policy-as-code) การผสานความลับมาตรฐาน และเส้นทางข้อมูลที่ได้รับอนุมัติ นักพัฒนาไม่ควรต้องเจรจาต่อรองกับเจ้าของการควบคุมทุกครั้งที่มีการเผยแพร่
 
-The platform should make the compliant path the fastest path. That is the only model that scales across thousands of services.
+แพลตฟอร์มควรทำให้เส้นทางที่ปฏิบัติตามข้อกำหนดเป็นเส้นทางที่เร็วที่สุด นี่คือโมเดลเดียวที่สามารถขยายตัวข้ามบริการนับพันได้
 
-### Control Layer
+### ชั้นควบคุม
 
-The control layer includes identity, access management, segregation of duties, encryption, key custody, network policy, image signing, software bill of materials, vulnerability gates, runtime security, logging, and evidence generation. It is where DORA, NIS2, GDPR, outsourcing rules, and internal model risk policies become executable controls.
+ชั้นควบคุมประกอบด้วยอัตลักษณ์ การบริหารการเข้าถึง การแบ่งแยกหน้าที่ การเข้ารหัส การดูแลกุญแจ นโยบายเครือข่าย การลงนามอิมเมจ รายการส่วนประกอบของซอฟต์แวร์ ประตูตรวจช่องโหว่ ความมั่นคงปลอดภัยขณะรันไทม์ การบันทึก และการสร้างหลักฐาน นี่คือจุดที่ DORA, NIS2 (ระเบียบความมั่นคงปลอดภัยเครือข่ายและสารสนเทศฉบับที่ 2), GDPR กฎ outsourcing และนโยบายความเสี่ยงโมเดลภายใน กลายเป็นการควบคุมที่สามารถบังคับใช้ได้
 
-This is where many banks fail. They adopt containers but leave controls as manual approvals outside the platform.
+นี่คือจุดที่ธนาคารหลายแห่งล้มเหลว พวกเขานำคอนเทนเนอร์มาใช้ แต่ปล่อยให้การควบคุมเป็นการอนุมัติด้วยมือนอกแพลตฟอร์ม
 
-### Data Layer
+### ชั้นข้อมูล
 
-Stateful workloads are the hardest part of cloud native banking. Red Hat’s VM/container convergence argument depends heavily on a unified data fabric and policy-driven backup, replication, failover, and recovery across VMs and containers ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
+เวิร์กโหลดที่มีสถานะ (stateful) เป็นส่วนที่ยากที่สุดของคลาวด์เนทีฟแบงก์กิ้ง ข้อโต้แย้งเรื่องการบรรจบกันของ VM/คอนเทนเนอร์ของ Red Hat พึ่งพาผืนข้อมูลเอกภาพและการสำรอง การจำลอง การสลับระบบ และการกู้คืนที่ขับเคลื่อนด้วยนโยบายข้าม VM และคอนเทนเนอร์อย่างมาก ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "เชื่อมช่องว่างระหว่าง VM ยุคเก่ากับคลาวด์เนทีฟแบงก์กิ้ง")).
 
-For banks, the data layer must answer three questions: where is the data, who controls the keys, and how does the service recover if the infrastructure fails?
+สำหรับธนาคาร ชั้นข้อมูลต้องตอบสามคำถาม ได้แก่ ข้อมูลอยู่ที่ใด ใครเป็นผู้ควบคุมกุญแจ และบริการจะกู้คืนได้อย่างไรหากโครงสร้างพื้นฐานล้มเหลว
 
-## Architecture Table: Cloud Native for Banks
+## ตารางสถาปัตยกรรม: คลาวด์เนทีฟสำหรับธนาคาร
 
-| Capability | Cloud-Native Pattern | Banking Control Requirement | Failure Mode |
+| ความสามารถ | รูปแบบคลาวด์เนทีฟ | ข้อกำหนดการควบคุมของธนาคาร | โหมดความล้มเหลว |
 |---|---|---|---|
-| **Application delivery** | Kubernetes, GitOps, templates | Segregation of duties, change evidence, rollback | Fast but unauditable releases |
-| **Legacy coexistence** | VM/container unified platform | Policy consistency and migration control | Dual estates with duplicated risk |
-| **Data services** | Stateful operators and data fabric | Residency, backup, immutability, tested restore | Stateless platform with stateful fragility |
-| **Resilience** | Multi-zone, multi-region, failover | DORA evidence and critical-function mapping | Cloud outage treated as vendor excuse |
-| **Sovereignty** | Policy-based workload placement | Jurisdictional and key-control evidence | Residency without operational autonomy |
-| **AI workloads** | Elastic compute close to data | Model governance, data minimisation, audit | Sensitive data moved to unapproved AI services |
+| **การส่งมอบแอปพลิเคชัน** | Kubernetes, GitOps, เทมเพลต | การแบ่งแยกหน้าที่ หลักฐานการเปลี่ยนแปลง การย้อนกลับ | การเผยแพร่ที่รวดเร็วแต่ตรวจสอบไม่ได้ |
+| **การอยู่ร่วมกับระบบดั้งเดิม** | แพลตฟอร์ม VM/คอนเทนเนอร์เอกภาพ | ความสม่ำเสมอของนโยบายและการควบคุมการย้าย | เขตคู่ขนานที่มีความเสี่ยงซ้ำซ้อน |
+| **บริการข้อมูล** | ตัวดำเนินการ stateful และผืนข้อมูล | การพำนัก การสำรอง ความไม่เปลี่ยนรูป การกู้คืนที่ผ่านการทดสอบ | แพลตฟอร์ม stateless ที่มีความเปราะบางเชิงสถานะ |
+| **ความยืดหยุ่น** | หลายโซน หลายภูมิภาค การสลับระบบ | หลักฐาน DORA และการทำแผนที่ฟังก์ชันสำคัญ | เหตุคลาวด์ขัดข้องถูกใช้เป็นข้ออ้างของผู้ให้บริการ |
+| **อธิปไตย** | การวางเวิร์กโหลดตามนโยบาย | หลักฐานเชิงเขตอำนาจศาลและการควบคุมกุญแจ | การพำนักโดยปราศจากความเป็นอิสระในการดำเนินงาน |
+| **เวิร์กโหลด AI** | พลังประมวลผลยืดหยุ่นใกล้ข้อมูล | ธรรมาภิบาลโมเดล การลดข้อมูลให้น้อยที่สุด การตรวจสอบ | ข้อมูลละเอียดอ่อนถูกย้ายไปยังบริการ AI ที่ไม่ได้รับอนุมัติ |
 
-## What This Means by Institution Type
+## ความหมายตามประเภทของสถาบัน
 
-### Tier-One Universal Banks
+### ธนาคารสากลระดับหนึ่ง (Tier-One)
 
-Tier-one banks should build controlled internal platforms across multiple clouds, with strict policy-as-code, data classification, and workload placement. They have enough scale to justify platform engineering, and regulators will expect deeper evidence from them.
+ธนาคารระดับหนึ่งควรสร้างแพลตฟอร์มภายในที่ควบคุมได้ข้ามคลาวด์หลายราย ด้วยนโยบายในรูปโค้ดที่เข้มงวด การจำแนกประเภทข้อมูล และการวางเวิร์กโหลด พวกเขามีขนาดเพียงพอที่จะรองรับวิศวกรรมแพลตฟอร์ม และผู้กำกับดูแลจะคาดหวังหลักฐานเชิงลึกจากพวกเขา
 
-### Mid-Tier Banks
+### ธนาคารระดับกลาง
 
-Mid-tier banks should standardise rather than customise. A strong managed Kubernetes platform, disciplined cloud-provider selection, clear exit strategies, and automated evidence generation are more valuable than a sprawling multi-cloud ambition the institution cannot operate.
+ธนาคารระดับกลางควรกำหนดมาตรฐานมากกว่าการปรับแต่ง แพลตฟอร์ม Kubernetes ที่บริหารจัดการอย่างเข้มแข็ง การเลือกผู้ให้บริการคลาวด์อย่างมีวินัย กลยุทธ์การออกที่ชัดเจน และการสร้างหลักฐานอัตโนมัติ มีคุณค่ามากกว่าความทะเยอทะยานหลายคลาวด์ที่กระจัดกระจายซึ่งสถาบันไม่สามารถดำเนินการได้
 
-### Financial Market Infrastructures
+### โครงสร้างพื้นฐานตลาดการเงิน (FMI)
 
-FMIs need resilience proof above all else. They should treat cloud native as a way to improve recovery, observability, and controlled change rather than as a pure velocity play.
+FMI (Financial Market Infrastructures) ต้องการหลักฐานความยืดหยุ่นเหนือสิ่งอื่นใด พวกเขาควรมองคลาวด์เนทีฟเป็นวิธีการปรับปรุงการกู้คืน การสังเกตการณ์ และการเปลี่ยนแปลงที่ควบคุมได้ มากกว่าเป็นเพียงการขับเคลื่อนเรื่องความเร็ว
 
-### Fintechs and PSPs
+### ฟินเทคและ PSP
 
-Fintechs and PSPs can move quickly, but they must avoid outgrowing their control model. As they become systemically relevant, the same resilience, third-party risk, incident-reporting, and data-sovereignty expectations will arrive.
+ฟินเทคและ PSP (Payment Service Providers — ผู้ให้บริการชำระเงิน) สามารถเคลื่อนไหวได้อย่างรวดเร็ว แต่ต้องหลีกเลี่ยงการเติบโตเกินกรอบการควบคุมของตนเอง เมื่อพวกเขามีความสำคัญในเชิงระบบ ความคาดหวังเรื่องความยืดหยุ่น ความเสี่ยงบุคคลที่สาม การรายงานเหตุการณ์ และอธิปไตยข้อมูลในระดับเดียวกันก็จะตามมา
 
-## Conclusion
+## บทสรุป
 
-Cloud native banking in 2026 is a governance architecture. Kubernetes is essential, but it is not sufficient. The institutions that succeed will converge VMs and containers where necessary, use cloud-native patterns for new workloads, prove resilience under DORA, control data sovereignty at the platform layer, and make compliance automatic enough that developers can move quickly without creating ungoverned risk.
+คลาวด์เนทีฟแบงก์กิ้งในปี 2026 คือสถาปัตยกรรมธรรมาภิบาล Kubernetes เป็นสิ่งจำเป็น แต่ไม่เพียงพอ สถาบันที่ประสบความสำเร็จจะหลอมรวม VM และคอนเทนเนอร์ที่จำเป็นเข้าด้วยกัน ใช้รูปแบบคลาวด์เนทีฟสำหรับเวิร์กโหลดใหม่ พิสูจน์ความยืดหยุ่นภายใต้ DORA ควบคุมอธิปไตยข้อมูลที่ชั้นแพลตฟอร์ม และทำให้การปฏิบัติตามข้อกำหนดเป็นอัตโนมัติพอที่นักพัฒนาจะเคลื่อนไหวได้อย่างรวดเร็วโดยไม่ก่อให้เกิดความเสี่ยงที่ไร้การกำกับดูแล
 
-The old debate was whether banks could move to cloud. The new debate is whether banks can make cloud native safe enough, portable enough, and evidenced enough to run the services that matter.
+การถกเถียงเก่าคือธนาคารจะย้ายไปสู่คลาวด์ได้หรือไม่ การถกเถียงใหม่คือธนาคารจะสามารถทำให้คลาวด์เนทีฟปลอดภัยเพียงพอ พกพาได้เพียงพอ และมีหลักฐานเพียงพอที่จะดำเนินบริการที่สำคัญได้หรือไม่
 
-## Frequently Asked Questions
+## คำถามที่พบบ่อย
 
-**Does DORA prevent banks from using cloud?**
+**DORA ห้ามธนาคารใช้คลาวด์หรือไม่?**
 
-No. DORA does not prohibit cloud use. It makes financial institutions accountable for ICT risk, third-party dependency, incident reporting, resilience testing, and governance of critical services that rely on cloud and other ICT providers ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "One year into DORA application")).
+ไม่ DORA ไม่ห้ามการใช้คลาวด์ แต่ทำให้สถาบันการเงินต้องรับผิดชอบต่อความเสี่ยง ICT การพึ่งพาบุคคลที่สาม การรายงานเหตุการณ์ การทดสอบความยืดหยุ่น และธรรมาภิบาลของบริการสำคัญที่พึ่งพาคลาวด์และผู้ให้บริการ ICT รายอื่น ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "หนึ่งปีหลังการบังคับใช้ DORA")).
 
-**Why do banks still need VMs if Kubernetes is the future?**
+**เหตุใดธนาคารยังต้องการ VM หาก Kubernetes คืออนาคต?**
 
-Banks still run critical systems on VM-based estates, including payment engines, core banking systems, trading applications, and risk platforms. A unified VM/container model reduces duplication while allowing gradual migration ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
+ธนาคารยังคงดำเนินระบบสำคัญบนเขต VM รวมถึงเครื่องชำระเงิน ระบบธนาคารหลัก แอปพลิเคชันซื้อขาย และแพลตฟอร์มความเสี่ยง โมเดล VM/คอนเทนเนอร์เอกภาพช่วยลดความซ้ำซ้อนในขณะที่อนุญาตให้อพยพอย่างค่อยเป็นค่อยไป ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "เชื่อมช่องว่างระหว่าง VM ยุคเก่ากับคลาวด์เนทีฟแบงก์กิ้ง")).
 
-**What is a real cloud exit strategy?**
+**กลยุทธ์การออกจากคลาวด์ที่แท้จริงคืออะไร?**
 
-A real exit strategy includes dependency inventory, data export procedures, alternative runtime options, contractual rights, recovery testing, key-control plans, and a realistic timetable for moving or restoring critical services.
+กลยุทธ์การออกที่แท้จริงรวมถึงการทำบัญชีการพึ่งพา ขั้นตอนการส่งออกข้อมูล ทางเลือกของรันไทม์ สิทธิ์ตามสัญญา การทดสอบการกู้คืน แผนการควบคุมกุญแจ และตารางเวลาที่สมจริงสำหรับการย้ายหรือกู้คืนบริการสำคัญ
 
-**What is the biggest cloud-native mistake banks make?**
+**ความผิดพลาดที่ใหญ่ที่สุดด้านคลาวด์เนทีฟที่ธนาคารกระทำคืออะไร?**
 
-The biggest mistake is adopting containers without platform controls. If Kubernetes increases deployment speed but does not enforce identity, policy, audit, data residency, recovery, and vulnerability controls, it accelerates risk rather than reducing it.
+ความผิดพลาดที่ใหญ่ที่สุดคือการนำคอนเทนเนอร์มาใช้โดยปราศจากการควบคุมแพลตฟอร์ม หาก Kubernetes เพิ่มความเร็วในการปรับใช้แต่ไม่บังคับใช้อัตลักษณ์ นโยบาย การตรวจสอบ การพำนักข้อมูล การกู้คืน และการควบคุมช่องโหว่ ก็จะเร่งความเสี่ยงแทนที่จะลดลง
 
-## References
+## เอกสารอ้างอิง
 
-- IBM, (2026). [One year into DORA application: DORA's real test starts now ⧉](https://www.ibm.com/think/perspectives/dora-application-one-year-in "DORA’s real test starts now").
-- Red Hat, (2026). [Bridging the gap between legacy VMs and cloud-native banking ⧉](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Legacy VMs and cloud-native banking").
-- Red Hat, (2026). [Digital sovereignty for banks ⧉](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Cloud sovereignty for banks").
-- Thought Machine, (2026). [Cloud-native core banking software ⧉](https://www.thoughtmachine.net "Thought Machine Vault").
+- IBM, (2026). [หนึ่งปีหลังการบังคับใช้ DORA: บททดสอบที่แท้จริงของ DORA เริ่มขึ้นแล้ว ⧉](https://www.ibm.com/think/perspectives/dora-application-one-year-in "บททดสอบที่แท้จริงของ DORA เริ่มขึ้นแล้ว").
+- Red Hat, (2026). [เชื่อมช่องว่างระหว่าง VM ยุคเก่ากับคลาวด์เนทีฟแบงก์กิ้ง ⧉](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "VM ยุคเก่ากับคลาวด์เนทีฟแบงก์กิ้ง").
+- Red Hat, (2026). [อธิปไตยทางดิจิทัลสำหรับธนาคาร ⧉](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "อธิปไตยของคลาวด์สำหรับธนาคาร").
+- Thought Machine, (2026). [ซอฟต์แวร์ธนาคารหลักแบบคลาวด์เนทีฟ ⧉](https://www.thoughtmachine.net "Thought Machine Vault").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-20">2026-05-20</time>.</p>
+<aside class="author-card" aria-label="เกี่ยวกับผู้เขียน"><img alt="ภาพเหมือนของ Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">นักเทคโนโลยีธนาคารอาวุโสที่เขียนเกี่ยวกับ AI ประยุกต์ การอพยพ ISO 20022 การเข้ารหัสหลังควอนตัมสำหรับบริการทางการเงิน และการเปลี่ยนแปลงเชิงโครงสร้างของการชำระเงินขายส่ง</span><span class="author-credentials">มากกว่า 20 ปีที่ HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">โปรไฟล์เต็ม</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">ตรวจสอบครั้งสุดท้าย <time datetime="2026-05-20">2026-05-20</time>.</p>
 <!-- enrich-end -->

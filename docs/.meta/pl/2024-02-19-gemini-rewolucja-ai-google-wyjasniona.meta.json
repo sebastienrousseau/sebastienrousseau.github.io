@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
-  "title": "Gemini: rewolucja AI Google wyjaśniona",
   "banner_alt": "Logo Gemini Google z motywem multimodalnej AI",
   "language": "pl-PL",
-  "subtitle": "Multimodalna platforma AI od Google",
-  "date": "Feb 19, 2024",
-  "keywords": "Gemini, Google AI, multimodalna AI, LLM, Bard, machine learning",
+  "banner": "https://cloudcdn.pro/stocks/images/abstract-visualization-of-gemini.webp",
   "locale": "pl_PL",
-  "description": "Gemini Google: jak nowa multimodalna platforma AI redefiniuje granice w przetwarzaniu tekstu, obrazu i kodu."
+  "keywords": "Gemini, Google AI, multimodalna AI, LLM, Bard, machine learning",
+  "date": "Feb 19, 2024",
+  "title": "Gemini: rewolucja AI Google wyjaśniona",
+  "description": "Gemini Google: jak nowa multimodalna platforma AI redefiniuje granice w przetwarzaniu tekstu, obrazu i kodu.",
+  "subtitle": "Multimodalna platforma AI od Google"
 }

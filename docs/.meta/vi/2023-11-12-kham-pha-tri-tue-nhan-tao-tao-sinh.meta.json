@@ -1,11 +1,11 @@
 {
-  "locale": "vi_VN",
-  "date": "November 12, 2023",
-  "banner_alt": "Hình ảnh trừu tượng minh hoạ AI tạo sinh",
-  "banner": "https://cloudcdn.pro/stocks/images/genai-banner.webp",
-  "description": "AI tạo sinh giờ đây tạo ra văn bản, hình ảnh, mã và âm thanh ở cấp độ con người. Tổng quan các mô hình, kiến trúc và ứng dụng cho doanh nghiệp.",
   "subtitle": "Từ GPT đến diffusion: AI tạo sinh đang định hình lại ngành nào",
+  "banner_alt": "Hình ảnh trừu tượng minh hoạ AI tạo sinh",
+  "language": "vi-VN",
+  "description": "AI tạo sinh giờ đây tạo ra văn bản, hình ảnh, mã và âm thanh ở cấp độ con người. Tổng quan các mô hình, kiến trúc và ứng dụng cho doanh nghiệp.",
+  "locale": "vi_VN",
   "keywords": "AI tạo sinh, GPT, LLM, diffusion, Stable Diffusion, DALL-E, Midjourney, doanh nghiệp, tự động hoá",
   "title": "Khám phá trí tuệ nhân tạo tạo sinh",
-  "language": "vi-VN"
+  "banner": "https://cloudcdn.pro/stocks/images/genai-banner.webp",
+  "date": "November 12, 2023"
 }

@@ -1,11 +1,11 @@
 {
-  "title": "Bankacılık kuantum çağında tamamen homomorfik şifreleme",
-  "description": "Tamamen homomorfik şifreleme (FHE), bankacılıkta gizliliği koruyarak şifreli veriler üzerinde hesaplama yapmayı sağlar.",
-  "date": "March 25, 2024",
   "subtitle": "Veri her zaman şifreliyken hesaplama yapma",
-  "keywords": "FHE, homomorfik şifreleme, bankacılık, kuantum, gizlilik, kriptografi",
-  "locale": "tr_TR",
-  "language": "tr-TR",
+  "title": "Bankacılık kuantum çağında tamamen homomorfik şifreleme",
   "banner_alt": "Homomorfik şifrelemenin görselleştirmesi",
-  "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp"
+  "description": "Tamamen homomorfik şifreleme (FHE), bankacılıkta gizliliği koruyarak şifreli veriler üzerinde hesaplama yapmayı sağlar.",
+  "keywords": "FHE, homomorfik şifreleme, bankacılık, kuantum, gizlilik, kriptografi",
+  "date": "March 25, 2024",
+  "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
+  "locale": "tr_TR",
+  "language": "tr-TR"
 }

@@ -84,140 +84,136 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# Ngân hàng cloud native năm 2026: Kubernetes, DORA, chủ quyền và hồi kết của ranh giới giữa VM và container
 
-> _Translation pending — read the [English original](/2026-05-20-cloud-native-banking-financial-institutions-2026/) while we localise._
-
-# Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide
-
-Cloud native banking in 2026 is no longer a debate about whether banks can use cloud. It is a regulated platform-engineering discipline: how to run critical services across containers, virtual machines, data fabrics, AI workloads, and cloud providers while proving operational resilience under DORA and similar regimes. IBM describes 2026 as the first true supervisory test of DORA, with cloud dependency reviews, cybersecurity inspections, threat-led penetration testing, and direct oversight of critical third-party providers ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "One year into DORA application")).
+Ngân hàng cloud native (điện toán đám mây gốc) năm 2026 không còn là cuộc tranh luận về việc ngân hàng có thể sử dụng đám mây hay không. Đây là một bộ môn kỹ thuật nền tảng được quản lý chặt chẽ: vận hành các dịch vụ trọng yếu trên container, máy ảo (VM), data fabric, tải công việc AI và các nhà cung cấp đám mây, đồng thời chứng minh khả năng phục hồi vận hành theo DORA và các khuôn khổ tương đương. IBM mô tả năm 2026 là cuộc kiểm tra giám sát thực chất đầu tiên của DORA (Digital Operational Resilience Act — Đạo luật về Khả năng Phục hồi Vận hành Số), với việc rà soát phụ thuộc đám mây, thanh tra an ninh mạng, kiểm thử thâm nhập theo mối đe doạ và giám sát trực tiếp các nhà cung cấp bên thứ ba trọng yếu ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Một năm áp dụng DORA")).
 
 ---
 
-> **Executive Summary / Key Takeaways**
+> **Tóm tắt điều hành / Những điểm cốt lõi**
 >
-> - **DORA has changed the cloud conversation.** 2026 brings direct EU supervision of critical third-party providers and targeted reviews of banks’ cloud-service-provider dependencies ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "One year into DORA application")).
-> - **Kubernetes is the platform layer, not the whole answer.** Banks need Kubernetes for elasticity, automation, and AI/ML workloads, but they also need VM coexistence because core banking, payments, trading, and risk systems still run on hardened virtualised estates ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
-> - **The VM vs container divide is closing.** Red Hat positions OpenShift and Portworx as a unified model where VMs and containers share policy, data, backup, disaster recovery, and governance controls ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
-> - **Cloud sovereignty is now a design constraint.** Banks are using sovereignty to manage jurisdictional control, operational autonomy, key control, data location, and cloud concentration risk ([Red Hat](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Digital sovereignty for banks")).
-> - **AI has made cloud native urgent.** Fraud detection, liquidity analytics, real-time personalisation, and regulatory reporting increasingly require elastic compute close to sensitive data ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
-> - **Exit strategy is not a PDF.** Under modern supervisory expectations, banks need tested portability, dependency mapping, contractual evidence, recovery procedures, and realistic migration paths for critical functions.
-> - **The architecture target is controlled cloud native.** The winning bank platform gives developers self-service delivery while enforcing audit, encryption, data residency, resilience testing, separation of duties, and third-party risk controls automatically.
+> - **DORA đã thay đổi câu chuyện về đám mây.** Năm 2026 mang đến sự giám sát trực tiếp của Liên minh châu Âu đối với các nhà cung cấp bên thứ ba trọng yếu và các đợt rà soát có chủ đích về sự phụ thuộc của ngân hàng vào nhà cung cấp dịch vụ đám mây ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Một năm áp dụng DORA")).
+> - **Kubernetes là lớp nền tảng, chứ không phải toàn bộ lời giải.** Ngân hàng cần Kubernetes để có khả năng co giãn, tự động hoá và xử lý tải công việc AI/ML, nhưng đồng thời cũng cần duy trì máy ảo (VM) bởi các hệ thống core banking, thanh toán, giao dịch và quản trị rủi ro vẫn đang vận hành trên các hạ tầng ảo hoá được củng cố ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Thu hẹp khoảng cách giữa VM kế thừa và ngân hàng cloud native")).
+> - **Ranh giới giữa VM và container đang khép lại.** Red Hat định vị OpenShift và Portworx là một mô hình thống nhất, nơi VM và container chia sẻ chung chính sách, dữ liệu, sao lưu, khôi phục thảm hoạ và các kiểm soát quản trị ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Thu hẹp khoảng cách giữa VM kế thừa và ngân hàng cloud native")).
+> - **Chủ quyền đám mây nay đã trở thành ràng buộc thiết kế.** Các ngân hàng đang sử dụng chủ quyền để quản lý kiểm soát pháp lý, quyền tự chủ vận hành, kiểm soát khoá mã hoá, vị trí dữ liệu và rủi ro tập trung trên đám mây ([Red Hat](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Chủ quyền số cho ngân hàng")).
+> - **AI đã khiến cloud native trở nên cấp bách.** Phát hiện gian lận, phân tích thanh khoản, cá nhân hoá theo thời gian thực và báo cáo tuân thủ ngày càng đòi hỏi sức tính toán co giãn đặt gần dữ liệu nhạy cảm ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Thu hẹp khoảng cách giữa VM kế thừa và ngân hàng cloud native")).
+> - **Chiến lược rút lui không phải là một bản PDF.** Theo kỳ vọng giám sát hiện đại, ngân hàng cần tính khả chuyển đã qua kiểm thử, bản đồ phụ thuộc, bằng chứng hợp đồng, quy trình khôi phục và lộ trình di trú khả thi cho các chức năng trọng yếu.
+> - **Mục tiêu kiến trúc là cloud native có kiểm soát.** Nền tảng ngân hàng thành công sẽ trao cho lập trình viên khả năng triển khai tự phục vụ, đồng thời tự động thực thi kiểm toán, mã hoá, cư trú dữ liệu, kiểm thử khả năng phục hồi, phân tách nhiệm vụ và kiểm soát rủi ro bên thứ ba.
 >
 ---
 
-## Why 2026 Is the Cloud-Native Supervision Year
+## Vì sao năm 2026 là năm giám sát cloud native
 
-DORA applied from January 2025, but 2026 is where supervisory muscle becomes visible. IBM notes that the first list of Critical Third-Party Providers was designated in November 2025 and that 2026 brings direct engagement with European Supervisory Agencies, contract reviews, onsite inspections, and cloud dependency analysis ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "One year into DORA application")).
+DORA đã áp dụng từ tháng 1 năm 2025, nhưng năm 2026 mới là lúc sức nặng của giám sát hiển hiện. IBM lưu ý rằng danh sách Nhà cung cấp Bên thứ ba Trọng yếu (Critical Third-Party Providers) đầu tiên đã được chỉ định vào tháng 11 năm 2025 và năm 2026 sẽ mang đến sự can dự trực tiếp của các Cơ quan Giám sát Châu Âu, các đợt rà soát hợp đồng, thanh tra tại chỗ và phân tích phụ thuộc đám mây ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Một năm áp dụng DORA")).
 
-That changes the burden of proof. A bank can no longer say that a cloud outage is merely a vendor problem. The financial institution remains accountable for the resilience of critical functions, even when those functions depend on hyperscalers, SaaS providers, data platforms, and managed security services.
+Điều này dịch chuyển gánh nặng chứng minh. Ngân hàng không còn có thể nói rằng sự cố đám mây thuần tuý là vấn đề của nhà cung cấp. Định chế tài chính vẫn chịu trách nhiệm về khả năng phục hồi của các chức năng trọng yếu, ngay cả khi những chức năng đó phụ thuộc vào hyperscaler, nhà cung cấp SaaS (Software as a Service), nền tảng dữ liệu và các dịch vụ an ninh được quản lý.
 
-## The 2026 Cloud-Native Banking Baseline
+## Chuẩn mực ngân hàng cloud native năm 2026
 
-### 1. Kubernetes as the Operating Layer
+### 1. Kubernetes như lớp vận hành
 
-Kubernetes gives banks deployment automation, elasticity, policy enforcement, container orchestration, and a common abstraction across private cloud, public cloud, and sovereign environments. For new workloads, especially AI-driven fraud detection, real-time personalisation, liquidity analytics, and regulatory reporting, this has become the natural control plane ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
+Kubernetes mang lại cho ngân hàng khả năng tự động hoá triển khai, co giãn, thực thi chính sách, điều phối container và một lớp trừu tượng chung trên đám mây riêng, đám mây công cộng và các môi trường chủ quyền. Với các tải công việc mới, đặc biệt là phát hiện gian lận dựa trên AI, cá nhân hoá theo thời gian thực, phân tích thanh khoản và báo cáo tuân thủ, đây đã trở thành mặt phẳng kiểm soát tự nhiên ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Thu hẹp khoảng cách giữa VM kế thừa và ngân hàng cloud native")).
 
-The mistake is to treat Kubernetes as the destination. For banks, it is the substrate beneath a governed developer platform.
+Sai lầm là coi Kubernetes như đích đến. Đối với ngân hàng, đó là lớp nền nằm bên dưới một nền tảng phục vụ lập trình viên có quản trị.
 
-### 2. VM and Container Convergence
+### 2. Hội tụ giữa VM và container
 
-Most banks cannot rewrite the core estate quickly. Payment engines, trading systems, credit scoring, risk models, and core banking platforms still depend on hardened VM estates. Red Hat argues that banks need a unified platform where VMs and containers can operate together, reducing duplicated architecture and aligning policy, storage, backup, and recovery controls ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
+Phần lớn ngân hàng không thể viết lại nhanh chóng toàn bộ hạ tầng lõi. Các động cơ thanh toán, hệ thống giao dịch, chấm điểm tín dụng, mô hình rủi ro và nền tảng core banking vẫn phụ thuộc vào hạ tầng VM đã được củng cố. Red Hat lập luận rằng ngân hàng cần một nền tảng thống nhất nơi VM và container có thể vận hành song hành, qua đó giảm bớt kiến trúc trùng lặp và đồng bộ các kiểm soát về chính sách, lưu trữ, sao lưu và khôi phục ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Thu hẹp khoảng cách giữa VM kế thừa và ngân hàng cloud native")).
 
-This is the practical bridge between legacy resilience and cloud-native velocity. It lets banks move adjacent services first, co-locate data-dependent AI workloads, and avoid forcing brittle rewrites into critical systems.
+Đây là cầu nối thực tiễn giữa khả năng phục hồi của hệ thống kế thừa và tốc độ của cloud native. Nó cho phép ngân hàng dịch chuyển trước các dịch vụ liền kề, đặt cùng vị trí các tải công việc AI phụ thuộc dữ liệu, đồng thời tránh ép buộc viết lại một cách mong manh các hệ thống trọng yếu.
 
-### 3. DORA-Ready Operational Resilience
+### 3. Khả năng phục hồi vận hành sẵn sàng cho DORA
 
-IBM says 2026 supervisory priorities include follow-up on ICT security and outsourcing shortcomings, cybersecurity and third-party risk onsite inspections, threat-led penetration testing, ICT change-management reviews, and cloud dependency analysis ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "One year into DORA application")).
+IBM cho biết các ưu tiên giám sát năm 2026 bao gồm theo dõi các tồn tại về an ninh ICT (Information and Communications Technology — Công nghệ Thông tin và Truyền thông) và thuê ngoài (outsourcing), thanh tra tại chỗ về an ninh mạng và rủi ro bên thứ ba, kiểm thử thâm nhập theo mối đe doạ, rà soát quản trị thay đổi ICT và phân tích phụ thuộc đám mây ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Một năm áp dụng DORA")).
 
-That means resilience must be testable. Architecture diagrams are not enough. Banks need evidence from failover exercises, incident simulations, backup restores, dependency maps, recovery-time testing, and governance workflows.
+Điều đó có nghĩa khả năng phục hồi phải có thể kiểm thử được. Sơ đồ kiến trúc là chưa đủ. Ngân hàng cần bằng chứng từ các bài tập chuyển đổi dự phòng (failover), mô phỏng sự cố, khôi phục từ sao lưu, bản đồ phụ thuộc, kiểm thử thời gian khôi phục và các quy trình quản trị.
 
-### 4. Sovereignty as Platform Capability
+### 4. Chủ quyền như một năng lực nền tảng
 
-Cloud sovereignty is not just data residency. It includes legal control, operational control, encryption-key control, support-personnel jurisdiction, workload placement, and the ability to continue critical services if a global provider or geopolitical process creates disruption. Red Hat frames sovereignty as jurisdictional control and operational autonomy for banks facing divergent regulations such as GDPR, DORA, and national cloud rules ([Red Hat](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Digital sovereignty for banks")).
+Chủ quyền đám mây không chỉ là cư trú dữ liệu. Nó bao gồm kiểm soát pháp lý, kiểm soát vận hành, kiểm soát khoá mã hoá, thẩm quyền tài phán đối với nhân sự hỗ trợ, vị trí đặt tải công việc và năng lực duy trì các dịch vụ trọng yếu nếu một nhà cung cấp toàn cầu hoặc một biến cố địa chính trị gây gián đoạn. Red Hat đóng khung chủ quyền như kiểm soát pháp lý và quyền tự chủ vận hành cho các ngân hàng đối diện với những quy định phân kỳ như GDPR (General Data Protection Regulation — Quy định Bảo vệ Dữ liệu Chung), DORA và các quy tắc đám mây cấp quốc gia ([Red Hat](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Chủ quyền số cho ngân hàng")).
 
-The cloud-native implication is that workload routing, secrets management, key control, data classification, and policy enforcement must be programmable.
+Hệ quả đối với cloud native là việc định tuyến tải công việc, quản lý bí mật, kiểm soát khoá, phân loại dữ liệu và thực thi chính sách đều phải có thể lập trình được.
 
-## The Bank Platform Stack
+## Ngăn xếp nền tảng ngân hàng
 
-### Developer Experience Layer
+### Lớp trải nghiệm lập trình viên
 
-A bank-grade cloud-native platform should expose paved roads: golden paths, templates, service catalogues, automated deployment pipelines, observability defaults, policy-as-code, standard secrets integration, and approved data paths. Developers should not need to negotiate with every control owner for every release.
+Một nền tảng cloud native cấp ngân hàng cần phô bày những "con đường lát đá": golden paths, mẫu sẵn, danh mục dịch vụ, đường ống triển khai tự động, mặc định về khả năng quan sát, chính sách dạng mã (policy-as-code), tích hợp bí mật chuẩn hoá và các luồng dữ liệu đã được phê duyệt. Lập trình viên không nên phải thương lượng với từng chủ kiểm soát cho mỗi lần phát hành.
 
-The platform should make the compliant path the fastest path. That is the only model that scales across thousands of services.
+Nền tảng nên biến con đường tuân thủ trở thành con đường nhanh nhất. Đó là mô hình duy nhất có thể mở rộng cho hàng nghìn dịch vụ.
 
-### Control Layer
+### Lớp kiểm soát
 
-The control layer includes identity, access management, segregation of duties, encryption, key custody, network policy, image signing, software bill of materials, vulnerability gates, runtime security, logging, and evidence generation. It is where DORA, NIS2, GDPR, outsourcing rules, and internal model risk policies become executable controls.
+Lớp kiểm soát bao gồm danh tính, quản lý truy cập, phân tách nhiệm vụ, mã hoá, lưu ký khoá, chính sách mạng, ký số ảnh container, hoá đơn vật liệu phần mềm (SBOM), cổng kiểm tra lỗ hổng, an ninh thời gian chạy, ghi nhật ký và sinh bằng chứng. Đây là nơi DORA, NIS2 (Network and Information Security Directive 2 — Chỉ thị An ninh Mạng và Thông tin lần 2), GDPR, các quy tắc thuê ngoài (outsourcing) và chính sách rủi ro mô hình nội bộ trở thành những kiểm soát có thể thực thi.
 
-This is where many banks fail. They adopt containers but leave controls as manual approvals outside the platform.
+Đây cũng chính là điểm nhiều ngân hàng thất bại. Họ áp dụng container nhưng để các kiểm soát ở dạng phê duyệt thủ công nằm ngoài nền tảng.
 
-### Data Layer
+### Lớp dữ liệu
 
-Stateful workloads are the hardest part of cloud native banking. Red Hat’s VM/container convergence argument depends heavily on a unified data fabric and policy-driven backup, replication, failover, and recovery across VMs and containers ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
+Các tải công việc có trạng thái là phần khó nhằn nhất của ngân hàng cloud native. Lập luận hội tụ VM/container của Red Hat phụ thuộc rất nhiều vào một data fabric thống nhất và sao lưu, sao chép, chuyển đổi dự phòng và khôi phục theo chính sách, áp dụng đồng nhất cho cả VM và container ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Thu hẹp khoảng cách giữa VM kế thừa và ngân hàng cloud native")).
 
-For banks, the data layer must answer three questions: where is the data, who controls the keys, and how does the service recover if the infrastructure fails?
+Với ngân hàng, lớp dữ liệu phải trả lời ba câu hỏi: dữ liệu đang ở đâu, ai kiểm soát khoá và dịch vụ sẽ khôi phục như thế nào nếu hạ tầng đổ vỡ?
 
-## Architecture Table: Cloud Native for Banks
+## Bảng kiến trúc: Cloud Native cho ngân hàng
 
-| Capability | Cloud-Native Pattern | Banking Control Requirement | Failure Mode |
+| Năng lực | Mẫu hình Cloud Native | Yêu cầu kiểm soát ngân hàng | Chế độ thất bại |
 |---|---|---|---|
-| **Application delivery** | Kubernetes, GitOps, templates | Segregation of duties, change evidence, rollback | Fast but unauditable releases |
-| **Legacy coexistence** | VM/container unified platform | Policy consistency and migration control | Dual estates with duplicated risk |
-| **Data services** | Stateful operators and data fabric | Residency, backup, immutability, tested restore | Stateless platform with stateful fragility |
-| **Resilience** | Multi-zone, multi-region, failover | DORA evidence and critical-function mapping | Cloud outage treated as vendor excuse |
-| **Sovereignty** | Policy-based workload placement | Jurisdictional and key-control evidence | Residency without operational autonomy |
-| **AI workloads** | Elastic compute close to data | Model governance, data minimisation, audit | Sensitive data moved to unapproved AI services |
+| **Giao hàng ứng dụng** | Kubernetes, GitOps, mẫu sẵn | Phân tách nhiệm vụ, bằng chứng thay đổi, khôi phục lùi (rollback) | Phát hành nhanh nhưng không thể kiểm toán |
+| **Cùng tồn tại với hệ thống kế thừa** | Nền tảng hợp nhất VM/container | Đồng nhất chính sách và kiểm soát di trú | Hai hạ tầng song song nhân đôi rủi ro |
+| **Dịch vụ dữ liệu** | Operator có trạng thái và data fabric | Cư trú dữ liệu, sao lưu, tính bất biến, kiểm thử khôi phục | Nền tảng phi trạng thái với phần trạng thái mong manh |
+| **Khả năng phục hồi** | Đa vùng sẵn sàng, đa khu vực, chuyển đổi dự phòng | Bằng chứng DORA và bản đồ chức năng trọng yếu | Sự cố đám mây bị viện cớ là lỗi nhà cung cấp |
+| **Chủ quyền** | Đặt tải công việc theo chính sách | Bằng chứng pháp lý và kiểm soát khoá | Cư trú dữ liệu nhưng thiếu tự chủ vận hành |
+| **Tải công việc AI** | Tính toán co giãn đặt gần dữ liệu | Quản trị mô hình, tối thiểu hoá dữ liệu, kiểm toán | Dữ liệu nhạy cảm chuyển sang dịch vụ AI chưa được phê duyệt |
 
-## What This Means by Institution Type
+## Ý nghĩa theo loại định chế
 
-### Tier-One Universal Banks
+### Ngân hàng tổng hợp hạng nhất
 
-Tier-one banks should build controlled internal platforms across multiple clouds, with strict policy-as-code, data classification, and workload placement. They have enough scale to justify platform engineering, and regulators will expect deeper evidence from them.
+Các ngân hàng hạng nhất nên xây dựng những nền tảng nội bộ có kiểm soát trải dài trên nhiều đám mây, với chính sách dạng mã nghiêm ngặt, phân loại dữ liệu và đặt tải công việc có chủ đích. Họ có đủ quy mô để biện minh cho việc đầu tư vào kỹ thuật nền tảng, và cơ quan quản lý sẽ kỳ vọng những bằng chứng sâu hơn từ họ.
 
-### Mid-Tier Banks
+### Ngân hàng hạng trung
 
-Mid-tier banks should standardise rather than customise. A strong managed Kubernetes platform, disciplined cloud-provider selection, clear exit strategies, and automated evidence generation are more valuable than a sprawling multi-cloud ambition the institution cannot operate.
+Các ngân hàng hạng trung nên chuẩn hoá thay vì tuỳ biến. Một nền tảng Kubernetes được quản lý vững chắc, lựa chọn nhà cung cấp đám mây có kỷ luật, chiến lược rút lui rõ ràng và sinh bằng chứng tự động là những giá trị thiết thực hơn một tham vọng đa đám mây dàn trải mà định chế không thể vận hành.
 
-### Financial Market Infrastructures
+### Hạ tầng thị trường tài chính
 
-FMIs need resilience proof above all else. They should treat cloud native as a way to improve recovery, observability, and controlled change rather than as a pure velocity play.
+Các FMI (Financial Market Infrastructure — Hạ tầng Thị trường Tài chính) cần bằng chứng phục hồi trên hết. Họ nên xem cloud native như một phương thức để cải thiện khôi phục, khả năng quan sát và thay đổi có kiểm soát, chứ không thuần tuý là một cuộc chơi tốc độ.
 
-### Fintechs and PSPs
+### Fintech và PSP
 
-Fintechs and PSPs can move quickly, but they must avoid outgrowing their control model. As they become systemically relevant, the same resilience, third-party risk, incident-reporting, and data-sovereignty expectations will arrive.
+Các fintech và PSP (Payment Service Provider — Nhà cung cấp Dịch vụ Thanh toán) có thể di chuyển nhanh, nhưng phải tránh việc lớn nhanh hơn mô hình kiểm soát của chính mình. Khi họ trở nên có tầm quan trọng hệ thống, các kỳ vọng tương tự về khả năng phục hồi, rủi ro bên thứ ba, báo cáo sự cố và chủ quyền dữ liệu cũng sẽ ập đến.
 
-## Conclusion
+## Kết luận
 
-Cloud native banking in 2026 is a governance architecture. Kubernetes is essential, but it is not sufficient. The institutions that succeed will converge VMs and containers where necessary, use cloud-native patterns for new workloads, prove resilience under DORA, control data sovereignty at the platform layer, and make compliance automatic enough that developers can move quickly without creating ungoverned risk.
+Ngân hàng cloud native năm 2026 là một kiến trúc quản trị. Kubernetes là thiết yếu, nhưng không phải là đủ. Những định chế thành công sẽ hội tụ VM và container khi cần thiết, sử dụng các mẫu hình cloud native cho các tải công việc mới, chứng minh khả năng phục hồi theo DORA, kiểm soát chủ quyền dữ liệu ngay tại lớp nền tảng và tự động hoá tuân thủ đủ mức để lập trình viên có thể di chuyển nhanh mà không tạo ra rủi ro vô quản trị.
 
-The old debate was whether banks could move to cloud. The new debate is whether banks can make cloud native safe enough, portable enough, and evidenced enough to run the services that matter.
+Cuộc tranh luận cũ là liệu ngân hàng có thể chuyển lên đám mây hay không. Cuộc tranh luận mới là liệu ngân hàng có thể làm cho cloud native đủ an toàn, đủ khả chuyển và đủ bằng chứng để vận hành những dịch vụ thực sự quan trọng hay không.
 
-## Frequently Asked Questions
+## Câu hỏi thường gặp
 
-**Does DORA prevent banks from using cloud?**
+**DORA có ngăn cản ngân hàng sử dụng đám mây hay không?**
 
-No. DORA does not prohibit cloud use. It makes financial institutions accountable for ICT risk, third-party dependency, incident reporting, resilience testing, and governance of critical services that rely on cloud and other ICT providers ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "One year into DORA application")).
+Không. DORA không cấm sử dụng đám mây. Nó khiến các định chế tài chính chịu trách nhiệm về rủi ro ICT, sự phụ thuộc vào bên thứ ba, báo cáo sự cố, kiểm thử khả năng phục hồi và quản trị các dịch vụ trọng yếu dựa trên đám mây cũng như các nhà cung cấp ICT khác ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Một năm áp dụng DORA")).
 
-**Why do banks still need VMs if Kubernetes is the future?**
+**Vì sao ngân hàng vẫn cần VM nếu Kubernetes là tương lai?**
 
-Banks still run critical systems on VM-based estates, including payment engines, core banking systems, trading applications, and risk platforms. A unified VM/container model reduces duplication while allowing gradual migration ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
+Ngân hàng vẫn vận hành các hệ thống trọng yếu trên các hạ tầng dựa trên máy ảo (VM), bao gồm động cơ thanh toán, hệ thống core banking, ứng dụng giao dịch và nền tảng quản trị rủi ro. Một mô hình hợp nhất VM/container giúp giảm trùng lặp đồng thời cho phép di trú dần ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Thu hẹp khoảng cách giữa VM kế thừa và ngân hàng cloud native")).
 
-**What is a real cloud exit strategy?**
+**Một chiến lược rút lui khỏi đám mây thực sự là gì?**
 
-A real exit strategy includes dependency inventory, data export procedures, alternative runtime options, contractual rights, recovery testing, key-control plans, and a realistic timetable for moving or restoring critical services.
+Một chiến lược rút lui thực sự bao gồm kiểm kê phụ thuộc, quy trình xuất dữ liệu, các phương án thời gian chạy thay thế, quyền theo hợp đồng, kiểm thử khôi phục, kế hoạch kiểm soát khoá và một thời biểu khả thi để di chuyển hoặc khôi phục các dịch vụ trọng yếu.
 
-**What is the biggest cloud-native mistake banks make?**
+**Sai lầm lớn nhất của ngân hàng trong cloud native là gì?**
 
-The biggest mistake is adopting containers without platform controls. If Kubernetes increases deployment speed but does not enforce identity, policy, audit, data residency, recovery, and vulnerability controls, it accelerates risk rather than reducing it.
+Sai lầm lớn nhất là áp dụng container mà không có kiểm soát ở cấp nền tảng. Nếu Kubernetes làm tăng tốc độ triển khai nhưng không thực thi danh tính, chính sách, kiểm toán, cư trú dữ liệu, khôi phục và kiểm soát lỗ hổng, thì nó đang gia tốc rủi ro thay vì giảm thiểu.
 
-## References
+## Tài liệu tham khảo
 
-- IBM, (2026). [One year into DORA application: DORA's real test starts now ⧉](https://www.ibm.com/think/perspectives/dora-application-one-year-in "DORA’s real test starts now").
-- Red Hat, (2026). [Bridging the gap between legacy VMs and cloud-native banking ⧉](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Legacy VMs and cloud-native banking").
-- Red Hat, (2026). [Digital sovereignty for banks ⧉](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Cloud sovereignty for banks").
-- Thought Machine, (2026). [Cloud-native core banking software ⧉](https://www.thoughtmachine.net "Thought Machine Vault").
+- IBM, (2026). [Một năm áp dụng DORA: bài kiểm tra thực sự của DORA bắt đầu ngay lúc này ⧉](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Bài kiểm tra thực sự của DORA bắt đầu ngay lúc này").
+- Red Hat, (2026). [Thu hẹp khoảng cách giữa VM kế thừa và ngân hàng cloud native ⧉](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "VM kế thừa và ngân hàng cloud native").
+- Red Hat, (2026). [Chủ quyền số cho ngân hàng ⧉](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Chủ quyền đám mây cho ngân hàng").
+- Thought Machine, (2026). [Phần mềm core banking cloud native ⧉](https://www.thoughtmachine.net "Thought Machine Vault").
 <!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-20">2026-05-20</time>.</p>
+<aside class="author-card" aria-label="Về tác giả"><img alt="Chân dung Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Chuyên gia công nghệ ngân hàng cấp cao, viết về AI ứng dụng, di trú ISO 20022, mật mã hậu lượng tử cho dịch vụ tài chính và sự chuyển dịch cấu trúc của thanh toán bán buôn.</span><span class="author-credentials">Hơn 20 năm kinh nghiệm tại HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Hồ sơ đầy đủ</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">Rà soát lần cuối <time datetime="2026-05-20">2026-05-20</time>.</p>
 <!-- enrich-end -->

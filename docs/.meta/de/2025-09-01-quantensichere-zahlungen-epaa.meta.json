@@ -1,11 +1,11 @@
 {
-  "language": "de",
   "date": "September 01, 2025",
-  "keywords": "quantensichere Zahlungen, Post-Quanten-Kryptografie, SEPA, SWIFT gpi, ISO 20022, Sicherheit im Finanzdienstleistungssektor, EPAA, Harvest-Now Decrypt-Later, kryptografische Agilität, Sebastien Rousseau",
-  "locale": "de_DE",
+  "subtitle": "Post-Quanten-Kryptografie ist eine gegenwärtige Infrastrukturentscheidung, keine zukünftige. Das EPAA-Whitepaper legt das strukturelle Risiko und den dringenden Migrationsbedarf dar.",
   "title": "Quantensichere Zahlungen: Warum die Branche jetzt handeln muss",
-  "description": "Quantencomputing bedroht die Kryptografie der Zahlungssysteme. Das EPAA-Whitepaper beschreibt das strukturelle Risiko und begründet die dringende Notwendigkeit einer PQC-Migration.",
+  "locale": "de_DE",
   "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "banner_alt": "Quantencomputing-Leiterplatte in blauem Licht",
-  "subtitle": "Post-Quanten-Kryptografie ist eine gegenwärtige Infrastrukturentscheidung, keine zukünftige. Das EPAA-Whitepaper legt das strukturelle Risiko und den dringenden Migrationsbedarf dar."
+  "language": "de",
+  "keywords": "quantensichere Zahlungen, Post-Quanten-Kryptografie, SEPA, SWIFT gpi, ISO 20022, Sicherheit im Finanzdienstleistungssektor, EPAA, Harvest-Now Decrypt-Later, kryptografische Agilität, Sebastien Rousseau",
+  "description": "Quantencomputing bedroht die Kryptografie der Zahlungssysteme. Das EPAA-Whitepaper beschreibt das strukturelle Risiko und begründet die dringende Notwendigkeit einer PQC-Migration.",
+  "banner_alt": "Quantencomputing-Leiterplatte in blauem Licht"
 }

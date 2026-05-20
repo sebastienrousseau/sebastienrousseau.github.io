@@ -84,114 +84,139 @@ site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi T
 site_software: "Static Site Generator, Rust"
 ---
 
-<!-- translation-stub: replace this body in Claude Code -->
+# Cloud Native Banking a 2026: Kubernetes, DORA, Ikon Mallaka, da Ƙarshen Rabe-Raben VM da Container
 
-> _Translation pending — read the [English original](/2026-05-20-cloud-native-banking-financial-institutions-2026/) while we localise._
-
-# Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide
-
-Cloud native banking in 2026 is no longer a debate about whether banks can use cloud. It is a regulated platform-engineering discipline: how to run critical services across containers, virtual machines, data fabrics, AI workloads, and cloud providers while proving operational resilience under DORA and similar regimes. IBM describes 2026 as the first true supervisory test of DORA, with cloud dependency reviews, cybersecurity inspections, threat-led penetration testing, and direct oversight of critical third-party providers ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "One year into DORA application")).
+Cloud native banking (na asalin gajimare) a 2026 ba ya cikin muhawara game da ko bankuna na iya amfani da gajimare ba. Ya zama horon injiniyan dandali da ake tsare-tsare a kansa: yadda ake sarrafa muhimman ayyuka a kan akwati / container, na'urori kama-da-wane / VM, masaƙar bayanai, nauyin aiki / workload na AI, da masu kawo gajimare yayin tabbatar da juriya ta aiki a ƙarƙashin DORA da makamantansa. IBM ta bayyana 2026 a matsayin gwajin sa-ido na gaskiya na farko na DORA, tare da binciken dogaro a kan gajimare, bincike kan tsaron yanar gizo, gwajin shiga-cikin-tsari ƙarƙashin haɗari, da kuma kula kai tsaye da muhimman masu kawowa na ɓangare na uku ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Shekara guda cikin aikace-aikacen DORA")).
 
 ---
 
-> **Executive Summary / Key Takeaways**
+> **Taƙaitaccen Bayanin Zartarwa / Muhimman Darussa**
 >
-> - **DORA has changed the cloud conversation.** 2026 brings direct EU supervision of critical third-party providers and targeted reviews of banks’ cloud-service-provider dependencies ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "One year into DORA application")).
-> - **Kubernetes is the platform layer, not the whole answer.** Banks need Kubernetes for elasticity, automation, and AI/ML workloads, but they also need VM coexistence because core banking, payments, trading, and risk systems still run on hardened virtualised estates ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
-> - **The VM vs container divide is closing.** Red Hat positions OpenShift and Portworx as a unified model where VMs and containers share policy, data, backup, disaster recovery, and governance controls ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
-> - **Cloud sovereignty is now a design constraint.** Banks are using sovereignty to manage jurisdictional control, operational autonomy, key control, data location, and cloud concentration risk ([Red Hat](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Digital sovereignty for banks")).
-> - **AI has made cloud native urgent.** Fraud detection, liquidity analytics, real-time personalisation, and regulatory reporting increasingly require elastic compute close to sensitive data ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
-> - **Exit strategy is not a PDF.** Under modern supervisory expectations, banks need tested portability, dependency mapping, contractual evidence, recovery procedures, and realistic migration paths for critical functions.
-> - **The architecture target is controlled cloud native.** The winning bank platform gives developers self-service delivery while enforcing audit, encryption, data residency, resilience testing, separation of duties, and third-party risk controls automatically.
+> - **DORA ta canza tattaunawar gajimare.** 2026 ta kawo kulawar EU kai tsaye a kan muhimman masu kawowa na ɓangare na uku da kuma sake duba dogaron bankuna a kan masu kawo sabis na gajimare ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Shekara guda cikin aikace-aikacen DORA")).
+> - **Kubernetes shi ne zauren dandali, ba cikakkiyar amsa ba.** Bankuna na buƙatar Kubernetes don sassauci, sarrafa kai, da nauyin aiki na AI/ML, amma kuma suna buƙatar zama tare da VM saboda muhimman tsarin banki, biyan kuɗi, ciniki, da haɗari har yanzu suna kan keɓaɓɓun gidaje masu ƙarfafa ta hanyar kama-da-wane ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Cike gibin tsakanin tsohuwar VMs da cloud-native banking")).
+> - **Rabe-raben VM da container yana rufewa.** Red Hat tana ɗaukar OpenShift da Portworx a matsayin haɗin gwiwar samfuri inda VMs da containers suke raba manufofi, bayanai, ajiyar baya, dawowa daga bala'i, da kuma sarrafawa na shugabanci ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Cike gibin tsakanin tsohuwar VMs da cloud-native banking")).
+> - **Ikon mallaka na gajimare yanzu shi ne tsarin ƙira.** Bankuna na amfani da ikon mallaka don sarrafa ikon shari'a, 'yancin aiki, sarrafa maɓalli, wurin zama na bayanai, da kuma haɗarin tara gajimare ([Red Hat](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Ikon mallaka na dijital ga bankuna")).
+> - **AI ya sa cloud native ya zama gaggawa.** Gano zamba, nazarin ruwa-ruwa, keɓancewa a ainihin lokaci, da rahoton tsari-tsari sun ƙara buƙatar ƙididdiga mai sassauci kusa da bayanai masu mahimmanci ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Cike gibin tsakanin tsohuwar VMs da cloud-native banking")).
+> - **Dabarar fita ba PDF ba ce.** A ƙarƙashin tsammanin sa-ido na zamani, bankuna na buƙatar fasahar ɗaukar kaya da aka gwada, taswirar dogaro, shaida ta kwangila, hanyoyin dawowa, da kuma hanyoyin ƙaura na zahiri don muhimman ayyuka.
+> - **Maƙasudin gine-gine shi ne sarrafaffen cloud native.** Dandalin banki da ke cin nasara yana ba masu haɓakawa damar isar da kai yayin da yake aiwatar da binciken, ɓoyewa, wurin zama na bayanai, gwajin juriya, raba ayyuka, da kuma sarrafawa kan haɗarin ɓangare na uku ta atomatik.
 >
 ---
 
-## Why 2026 Is the Cloud-Native Supervision Year
+## Me ya sa 2026 ita ce Shekarar Sa-Ido na Cloud-Native
 
-DORA applied from January 2025, but 2026 is where supervisory muscle becomes visible. IBM notes that the first list of Critical Third-Party Providers was designated in November 2025 and that 2026 brings direct engagement with European Supervisory Agencies, contract reviews, onsite inspections, and cloud dependency analysis ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "One year into DORA application")).
+DORA ta fara aiki daga Janairu 2025, amma 2026 ce inda ƙarfin sa-ido ya bayyana a fili. IBM ta lura cewa an tsara jerin masu kawowa na ɓangare na uku masu mahimmanci a karon farko a Nuwamba 2025 kuma 2026 ta kawo haɗin gwiwa kai tsaye da Hukumomin Sa-Ido na Turai, sake duba kwangiloli, bincike a wuraren aiki, da kuma nazarin dogaro a kan gajimare ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Shekara guda cikin aikace-aikacen DORA")).
 
-That changes the burden of proof. A bank can no longer say that a cloud outage is merely a vendor problem. The financial institution remains accountable for the resilience of critical functions, even when those functions depend on hyperscalers, SaaS providers, data platforms, and managed security services.
+Wannan yana canza nauyin tabbatarwa. Banki ba zai ƙara iya cewa rashin aikin gajimare matsalar mai kawowa ce kawai ba. Cibiyar kuɗi ta ci gaba da yin lissafi don juriyar muhimman ayyukanta, ko da yake waɗannan ayyukan sun dogara da hyperscalers, masu kawowa na SaaS, dandalin bayanai, da kuma sabis na tsaro masu kulawa.
 
-## The 2026 Cloud-Native Banking Baseline
+## Tushen Cloud-Native Banking na 2026
 
-### 1. Kubernetes as the Operating Layer
+### 1. Kubernetes a Matsayin Zauren Aiki
 
-Kubernetes gives banks deployment automation, elasticity, policy enforcement, container orchestration, and a common abstraction across private cloud, public cloud, and sovereign environments. For new workloads, especially AI-driven fraud detection, real-time personalisation, liquidity analytics, and regulatory reporting, this has become the natural control plane ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
+Kubernetes yana ba bankuna damar sarrafa kai a turawa, sassauci, aiwatar da manufofi, gudanar da akwati / container, da kuma haɗin gwiwa gama-gari a kan gajimare na sirri, gajimare na jama'a, da kuma yanayi masu ikon mallaka. Don sabbin nauyin aiki, musamman gano zamba ta AI, keɓancewa a ainihin lokaci, nazarin ruwa-ruwa, da kuma rahoton tsari-tsari, wannan ya zama zauren sarrafawa na halitta ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Cike gibin tsakanin tsohuwar VMs da cloud-native banking")).
 
-The mistake is to treat Kubernetes as the destination. For banks, it is the substrate beneath a governed developer platform.
+Kuskuren shi ne ɗaukar Kubernetes a matsayin makomar tafiya. Ga bankuna, shi ne tushen da ke ƙarƙashin dandalin masu haɓakawa wanda ake sarrafawa.
 
-### 2. VM and Container Convergence
+### 2. Haɗuwar VM da Container
 
-Most banks cannot rewrite the core estate quickly. Payment engines, trading systems, credit scoring, risk models, and core banking platforms still depend on hardened VM estates. Red Hat argues that banks need a unified platform where VMs and containers can operate together, reducing duplicated architecture and aligning policy, storage, backup, and recovery controls ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
+Yawancin bankuna ba za su iya sake rubuta babban gidan da sauri ba. Injunan biyan kuɗi, tsarin ciniki, ƙididdigar kuɗi, samfuran haɗari, da dandalin muhimman ayyukan banki har yanzu suna dogara ne a kan keɓaɓɓun gidajen VM masu ƙarfafa. Red Hat tana jayayya cewa bankuna na buƙatar dandalin haɗin gwiwa inda VMs da containers za su iya aiki tare, suna rage gine-gine masu ninkawa kuma suna daidaita manufofi, ajiya, ajiyar baya, da kuma sarrafa dawowa ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Cike gibin tsakanin tsohuwar VMs da cloud-native banking")).
 
-This is the practical bridge between legacy resilience and cloud-native velocity. It lets banks move adjacent services first, co-locate data-dependent AI workloads, and avoid forcing brittle rewrites into critical systems.
+Wannan ita ce gada mai amfani tsakanin juriya na gargajiya da sauri na cloud-native. Tana ba bankuna damar matsar da ayyukan da ke kusa na farko, sanya nauyin aiki / workload na AI da ya dogara da bayanai a kusa, da kuma guje wa tilasta wa muhimman tsarin sake rubutawa mai rauni.
 
-### 3. DORA-Ready Operational Resilience
+### 3. Juriya ta Aiki Mai Shirye-Shiryen DORA
 
-IBM says 2026 supervisory priorities include follow-up on ICT security and outsourcing shortcomings, cybersecurity and third-party risk onsite inspections, threat-led penetration testing, ICT change-management reviews, and cloud dependency analysis ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "One year into DORA application")).
+IBM ta ce abubuwan da suka fi ba da fifiko a sa-ido na 2026 sun haɗa da bibiyar gazawar tsaron ICT (Fasahar Sadarwa da Bayanai) da outsourcing / ba da aiki ga waje, bincike na tsaron yanar gizo da haɗarin ɓangare na uku a wuraren aiki, gwajin shiga-cikin-tsari ƙarƙashin haɗari, sake duba sarrafa canjin ICT, da kuma nazarin dogaro a kan gajimare ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Shekara guda cikin aikace-aikacen DORA")).
 
-That means resilience must be testable. Architecture diagrams are not enough. Banks need evidence from failover exercises, incident simulations, backup restores, dependency maps, recovery-time testing, and governance workflows.
+Wannan yana nufin juriya dole ne ta kasance mai gwadawa. Hotunan gine-gine ba su isa ba. Bankuna na buƙatar shaida daga atisayen failover, kwaikwayon abubuwan da suka faru, dawowa daga ajiyar baya, taswirar dogaro, gwajin lokacin dawowa, da kuma jagororin aikin shugabanci.
 
-### 4. Sovereignty as Platform Capability
+### 4. Ikon Mallaka a Matsayin Iya Aikin Dandali
 
-Cloud sovereignty is not just data residency. It includes legal control, operational control, encryption-key control, support-personnel jurisdiction, workload placement, and the ability to continue critical services if a global provider or geopolitical process creates disruption. Red Hat frames sovereignty as jurisdictional control and operational autonomy for banks facing divergent regulations such as GDPR, DORA, and national cloud rules ([Red Hat](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Digital sovereignty for banks")).
+Ikon mallaka na gajimare ba kawai wurin zama na bayanai ba ne. Yana haɗawa da iko na shari'a, iko na aiki, iko a kan maɓallin ɓoyewa, ikon shari'a a kan ma'aikatan tallafi, sanya nauyin aiki / workload, da kuma ikon ci gaba da muhimman ayyuka idan mai kawowa na duniya ko tsarin geopolitical ya haifar da rikici. Red Hat tana bayyana ikon mallaka a matsayin iko na shari'a da 'yancin aiki ga bankuna da ke fuskantar ƙa'idodi masu bambanci kamar GDPR, DORA, da kuma dokokin gajimare na ƙasa ([Red Hat](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Ikon mallaka na dijital ga bankuna")).
 
-The cloud-native implication is that workload routing, secrets management, key control, data classification, and policy enforcement must be programmable.
+Sakamakon cloud-native shi ne cewa hanyoyin nauyin aiki, sarrafa sirri, sarrafa maɓalli, rarrabuwar bayanai, da kuma aiwatar da manufofi dole ne su zama masu shirye-shirye.
 
-## The Bank Platform Stack
+## Tarin Dandalin Banki
 
-### Developer Experience Layer
+### Zauren Gogewar Mai Haɓakawa
 
-A bank-grade cloud-native platform should expose paved roads: golden paths, templates, service catalogues, automated deployment pipelines, observability defaults, policy-as-code, standard secrets integration, and approved data paths. Developers should not need to negotiate with every control owner for every release.
+Dandalin cloud-native na matakin banki ya kamata ya bayyana hanyoyi masu shimfiɗa: hanyoyin zinariya, samfuri, kasidu na sabis, layukan turawa masu sarrafa kai, ainihin abubuwan dubawa, manufofi-a-matsayin-lambar-yi, haɗin sirri na yau da kullum, da kuma hanyoyin bayanai da aka amince. Masu haɓakawa bai kamata su yi shawarwari da kowane mai sarrafawa don kowane sako ba.
 
-The platform should make the compliant path the fastest path. That is the only model that scales across thousands of services.
+Dandalin ya kamata ya sa hanyar bin doka ta zama hanya mafi sauri. Wannan ita ce kawai samfurin da ke fadada a cikin dubban sabis.
 
-### Control Layer
+### Zauren Sarrafawa
 
-The control layer includes identity, access management, segregation of duties, encryption, key custody, network policy, image signing, software bill of materials, vulnerability gates, runtime security, logging, and evidence generation. It is where DORA, NIS2, GDPR, outsourcing rules, and internal model risk policies become executable controls.
+Zauren sarrafawa ya haɗa da shaidar mutum, sarrafa shiga, raba ayyuka, ɓoyewa, riƙon maɓalli, manufar hanyar sadarwa, sa hannu kan hoton, lissafin software (Software Bill of Materials), ƙofofin rauni, tsaron lokacin aiki, rikodin, da kuma samar da shaida. A nan ne DORA, NIS2, GDPR, ƙa'idodin outsourcing / ba da aiki ga waje, da kuma manufofin haɗarin samfuran ciki ke zama ayyukan da za a iya aiwatarwa.
 
-This is where many banks fail. They adopt containers but leave controls as manual approvals outside the platform.
+A nan ne bankuna da yawa suka kasa. Sun karɓi container amma sun bar sarrafawa a matsayin amincewa ta hannu a wajen dandalin.
 
-### Data Layer
+### Zauren Bayanai
 
-Stateful workloads are the hardest part of cloud native banking. Red Hat’s VM/container convergence argument depends heavily on a unified data fabric and policy-driven backup, replication, failover, and recovery across VMs and containers ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Bridging the gap between legacy VMs and cloud-native banking")).
+Nauyin aiki / workload masu jiha shine mafi wuya a cikin cloud native banking. Jayayya ta Red Hat game da haɗuwar VM/container ta dogara sosai a kan masaƙar bayanai mai haɗin gwiwa da kuma ajiyar baya da ke jagorancin manufofi, kwafi, failover, da kuma dawowa a cikin VMs da containers ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Cike gibin tsakanin tsohuwar VMs da cloud-native banking")).
 
-For banks, the data layer must answer three questions: where is the data, who controls the keys, and how does the service recover if the infrastructure fails?
+Ga bankuna, zauren bayanai dole ne ya amsa tambayoyi uku: ina bayanan suke, wa ya mallaki maɓallai, da kuma yadda sabis ɗin ya dawo idan kayan more rayuwa suka kasa?
 
-## Architecture Table: Cloud Native for Banks
+## Tebur na Gine-Gine: Cloud Native ga Bankuna
 
-| Capability | Cloud-Native Pattern | Banking Control Requirement | Failure Mode |
+| Iya Aiki | Tsarin Cloud-Native | Buƙatar Sarrafawa na Banki | Yanayin Kasawa |
 |---|---|---|---|
-| **Application delivery** | Kubernetes, GitOps, templates | Segregation of duties, change evidence, rollback | Fast but unauditable releases |
-| **Legacy coexistence** | VM/container unified platform | Policy consistency and migration control | Dual estates with duplicated risk |
-| **Data services** | Stateful operators and data fabric | Residency, backup, immutability, tested restore | Stateless platform with stateful fragility |
-| **Resilience** | Multi-zone, multi-region, failover | DORA evidence and critical-function mapping | Cloud outage treated as vendor excuse |
-| **Sovereignty** | Policy-based workload placement | Jurisdictional and key-control evidence | Residency without operational autonomy |
-| **AI workloads** | Elastic compute close to data | Model governance, data minimisation, audit | Sensitive data moved to unapproved AI services |
+| **Isar da aikace-aikace** | Kubernetes, GitOps, samfuri | Raba ayyuka, shaidar canji, juyawa | Saukar da sauri amma ba a iya bincika ba |
+| **Zaman tare na tsohuwar** | Dandali mai haɗin VM/container | Daidaiton manufa da sarrafa ƙaura | Keɓaɓɓun gidaje guda biyu masu haɗarin ninkawa |
+| **Sabis na bayanai** | Masu aiki masu jiha da masaƙar bayanai | Wurin zama, ajiyar baya, rashin canzawa, dawowa da aka gwada | Dandalin marar jiha tare da rauni mai jiha |
+| **Juriya** | Yankuna da yawa, yankuna da yawa, failover | Shaidar DORA da taswirar muhimman ayyuka | Rashin aikin gajimare a matsayin uzuri na mai kawowa |
+| **Ikon mallaka** | Sanya nauyin aiki bisa manufofi | Shaidar ikon shari'a da sarrafa maɓalli | Wurin zama ba tare da 'yancin aiki ba |
+| **Nauyin aiki / workload na AI** | Ƙididdiga mai sassauci kusa da bayanai | Shugabancin samfuri, rage bayanai, bincike | An motsa bayanai masu mahimmanci zuwa sabis na AI da ba a amince da su ba |
 
-## What This Means by Institution Type
+## Abin da Wannan Ke Nufi Bisa Nau'in Cibiya
 
-### Tier-One Universal Banks
+### Bankuna na Matsayi-Na-Farko na Duniya
 
-Tier-one banks should build controlled internal platforms across multiple clouds, with strict policy-as-code, data classification, and workload placement. They have enough scale to justify platform engineering, and regulators will expect deeper evidence from them.
+Bankuna na matsayi-na-farko ya kamata su gina dandalin ciki masu sarrafawa a kan gajimare da yawa, tare da tsantsar manufofi-a-matsayin-lambar-yi, rarrabuwar bayanai, da kuma sanya nauyin aiki / workload. Suna da girma da ya isa don tabbatar da injiniyan dandali, kuma masu tsarawa za su yi tsammanin shaida mai zurfi daga gare su.
 
-### Mid-Tier Banks
+### Bankuna na Matsakaicin Matsayi
 
-Mid-tier banks should standardise rather than customise. A strong managed Kubernetes platform, disciplined cloud-provider selection, clear exit strategies, and automated evidence generation are more valuable than a sprawling multi-cloud ambition the institution cannot operate.
+Bankuna na matsakaicin matsayi ya kamata su daidaita maimakon su yi gyara na musamman. Dandalin Kubernetes mai kulawa mai ƙarfi, zaɓi mai tsattsauran ra'ayi na mai kawowa na gajimare, dabarun fita masu fasaha, da kuma samar da shaida ta atomatik sun fi daraja fiye da burin gajimare-da-yawa wanda cibiyar ba za ta iya sarrafawa ba.
 
-### Financial Market Infrastructures
+### Kayan More Rayuwa na Kasuwannin Kuɗi
 
-FMIs need resilience proof above all else. They should treat cloud native as a way to improve recovery, observability, and controlled change rather than as a pure velocity play.
+FMIs (Kayan More Rayuwa na Kasuwannin Kuɗi) suna buƙatar shaidar juriya sama da komai. Ya kamata su ɗauki cloud native a matsayin hanyar inganta dawowa, dubawa, da kuma canji mai sarrafawa maimakon wasan sauri kawai.
 
-### Fintechs and PSPs
+### Fintechs da PSPs
 
-Fintechs and PSPs can move quickly, but they must avoid outgrowing their control model. As they become systemically relevant, the same resilience, third-party risk, incident-reporting, and data-sovereignty expectations will arrive.
+Fintechs da PSPs (Masu Bayar da Sabis na Biyan Kuɗi) na iya motsawa da sauri, amma dole ne su guji girma fiye da samfurin sarrafawarsu. Yayin da suka zama masu mahimmanci ga tsarin, tsammanin juriya, haɗarin ɓangare na uku, rahoton abubuwan da suka faru, da kuma ikon mallaka na bayanai zai zo.
 
-## Conclusion
+## Kammalawa
 
-Cloud native banking in 2026 is a governance architecture. Kubernetes is essential, but it is not sufficient. The institutions that succeed will converge VMs and containers where necessary, use cloud-native patterns for new workloads, prove resilience under DORA, control data sovereignty at the platform layer, and make compliance automatic enough that developers can move quickly without creating ungoverned risk.
+Cloud native banking a 2026 gine-gine ne na shugabanci. Kubernetes yana da mahimmanci, amma bai isa ba. Cibiyoyin da suka yi nasara za su haɗa VMs da containers a inda ya dace, su yi amfani da tsarin cloud-native don sabbin nauyin aiki / workload, su tabbatar da juriya ƙarƙashin DORA, su sarrafa ikon mallaka na bayanai a zauren dandali, kuma su sa bin doka ya zama na atomatik isa har masu haɓakawa za su iya motsi da sauri ba tare da haifar da haɗari mara sarrafawa ba.
 
-The old debate was whether banks could move to cloud. The new debate is whether banks can make cloud native safe enough, portable enough, and evidenced enough to run the services that matter.
+Tsohuwar muhawara ita ce ko bankuna za su iya komawa gajimare. Sabuwar muhawara ita ce ko bankuna za su iya sa cloud native ta zama mai aminci sosai, mai ɗaukar kaya sosai, kuma tare da shaida sosai don gudanar da ayyukan da ke da mahimmanci.
+
+## Tambayoyi da Ake Yawan Yi
+
+**Shin DORA tana hana bankuna amfani da gajimare?**
+
+A'a. DORA ba ta hana amfani da gajimare ba. Tana sa cibiyoyin kuɗi su yi lissafin haɗarin ICT, dogaro a kan ɓangare na uku, rahoton abubuwan da suka faru, gwajin juriya, da kuma shugabancin muhimman ayyuka da suka dogara da gajimare da sauran masu kawowa na ICT ([IBM](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Shekara guda cikin aikace-aikacen DORA")).
+
+**Me yasa bankuna har yanzu suke buƙatar VMs idan Kubernetes ita ce makomar?**
+
+Bankuna har yanzu suna sarrafa muhimman tsarin akan keɓaɓɓun gidajen VM, ciki har da injunan biyan kuɗi, tsarin muhimman ayyukan banki, aikace-aikacen ciniki, da dandalin haɗari. Samfurin haɗin VM/container yana rage ninkawa yayin da ke ba da damar ƙaura mai sannu-sannu ([Red Hat](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Cike gibin tsakanin tsohuwar VMs da cloud-native banking")).
+
+**Mene ne dabarar fita ta gajimare ta gaske?**
+
+Dabarar fita ta gaske ta haɗa da jerin dogaro, hanyoyin fitar da bayanai, zaɓuɓɓuka madadin lokacin aiki, haƙƙin kwangila, gwajin dawowa, tsare-tsaren sarrafa maɓalli, da kuma jadawalin lokaci na zahiri don motsi ko dawo da muhimman ayyuka.
+
+**Mene ne mafi girman kuskuren cloud-native da bankuna ke yi?**
+
+Mafi girman kuskure shi ne karɓar container ba tare da sarrafa dandali ba. Idan Kubernetes ya ƙara saurin turawa amma bai aiwatar da shaidar mutum, manufa, bincike, wurin zama na bayanai, dawowa, da sarrafa rauni ba, yana hanzarta haɗari maimakon rage shi.
+
+## Magana
+
+- IBM, (2026). [Shekara guda cikin aikace-aikacen DORA: Gwajin DORA na gaskiya ya fara yanzu ⧉](https://www.ibm.com/think/perspectives/dora-application-one-year-in "Gwajin DORA na gaskiya ya fara yanzu").
+- Red Hat, (2026). [Cike gibin tsakanin tsohuwar VMs da cloud-native banking ⧉](https://www.redhat.com/en/resources/bridge-legacy-vms-banking-overview "Tsohuwar VMs da cloud-native banking").
+- Red Hat, (2026). [Ikon mallaka na dijital ga bankuna ⧉](https://www.redhat.com/en/resources/cloud-sovereignty-for-banks-overview "Ikon mallaka na gajimare ga bankuna").
+- Thought Machine, (2026). [Software na muhimman ayyukan banki na cloud-native ⧉](https://www.thoughtmachine.net "Thought Machine Vault").
+<!-- enrich-start -->
+<aside class="author-card" aria-label="Game da marubucin"><img alt="Hoton Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Babban masanin fasahar banki yana rubutu kan amfani da AI, ƙaura na ISO 20022, sirrin bayan ƙididdiga don sabis na kuɗi, da kuma canjin tsarin biyan kuɗi na manyan-manya.</span><span class="author-credentials">Shekaru 20+ a HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Cikakken bayani</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
+<p class="post-reviewed">An sake duba ta ƙarshe <time datetime="2026-05-20">2026-05-20</time>.</p>
+<!-- enrich-end -->
 
 ## Frequently Asked Questions
 
