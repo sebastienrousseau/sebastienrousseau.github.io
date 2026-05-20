@@ -1,11 +1,11 @@
 {
+  "language": "ar",
+  "locale": "ar_SA",
+  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
   "description": "احموا تكامل الشفرة بثوابت رياضية وتشفيرية مُدقَّقة بعناية، تُعزّز سلامة الذاكرة والتزامن من أجل أمن شفرة أعلى.",
   "title": "ثوابت رياضية وتشفيرية لأمن Rust",
-  "banner": "https://cloudcdn.pro/stocks/images/antoine-dautry-05A-kdOH6Hw.webp",
-  "locale": "ar_SA",
+  "subtitle": "ثوابت رياضية وتشفيرية مُتحقَّق منها لأمن Rust ذي السلامة الذاكرية",
   "banner_alt": "حسابات رياضية",
-  "date": "Nov 05, 2023",
   "keywords": "الثوابت الرياضية، الثوابت التشفيرية، أمن Rust، الاتصالات الآمنة، التشفير، RSA، تشفير المنحنى الإهليلجي، مكتبة Common (CMN)، تطبيقات Rust، الحسابات الرياضية",
-  "language": "ar",
-  "subtitle": "ثوابت رياضية وتشفيرية مُتحقَّق منها لأمن Rust ذي السلامة الذاكرية"
+  "date": "Nov 05, 2023"
 }

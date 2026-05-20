@@ -24,7 +24,9 @@
         "AI banking workloads"
       ],
       "banner": "https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp",
-      "topics": [],
+      "topics": [
+        "cloud-native-banking"
+      ],
       "language": "en-GB"
     },
     {
@@ -53,7 +55,9 @@
         "wholesale CBDC"
       ],
       "banner": "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp",
-      "topics": [],
+      "topics": [
+        "iso-20022-payments"
+      ],
       "language": "en-GB"
     },
     {
@@ -237,7 +241,9 @@
         "Sebastien Rousseau"
       ],
       "banner": "https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp",
-      "topics": [],
+      "topics": [
+        "cloud-native-banking"
+      ],
       "language": "en-GB"
     },
     {

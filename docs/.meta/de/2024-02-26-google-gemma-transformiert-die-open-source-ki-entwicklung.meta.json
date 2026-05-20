@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
-  "language": "de",
-  "locale": "de_DE",
   "title": "Google Gemma: die Open-Source-KI-Entwicklung transformieren",
-  "subtitle": "Ein Blick hinter die Kulissen: Fähigkeiten, Open-Source-Beiträge und was bevorsteht",
-  "keywords": "Google Gemma, Open-Source-KI-Modell, technische Architektur Gemma, Gemma 2B 7B, ethische KI, KI-Integration macOS, KI-Lösungen für Unternehmen, konversationelle KI, KI-Datenanalyse, KI für Edge-Geräte",
   "date": "February 26, 2024",
+  "language": "de",
+  "banner": "https://cloudcdn.pro/stocks/images/ai-ship.webp",
+  "banner_alt": "Futuristisches blaues Raumschiff mit Neonlichtern",
   "description": "Entdecken Sie Googles Gemma-Modell: ein Open-Source-Projekt, das ethische KI-Lösungen für den persönlichen wie auch unternehmerischen Einsatz bietet.",
-  "banner_alt": "Futuristisches blaues Raumschiff mit Neonlichtern"
+  "locale": "de_DE",
+  "subtitle": "Ein Blick hinter die Kulissen: Fähigkeiten, Open-Source-Beiträge und was bevorsteht",
+  "keywords": "Google Gemma, Open-Source-KI-Modell, technische Architektur Gemma, Gemma 2B 7B, ethische KI, KI-Integration macOS, KI-Lösungen für Unternehmen, konversationelle KI, KI-Datenanalyse, KI für Edge-Geräte"
 }

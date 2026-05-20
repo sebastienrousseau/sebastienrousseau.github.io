@@ -65,12 +65,27 @@ TOPICS: dict[str, dict[str, object]] = {
             "it all. Tools, playbooks, and the regulatory clock."
         ),
         "slugs": [
+            "2026-05-19-global-wholesale-payments-economics-2026",
             "2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf",
             "2026-05-12-iso-20022-pacs008-structured-address-deadline",
             "2025-09-01-quantum-safe-payments-epaa",
             "2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001",
             "2018-02-15-the-making-of-the-express-transaction-credits-platform",
             "2018-02-04-unveiling-a-new-cryptocurrency-and-offering-future-faster-payment-solution",
+        ],
+    },
+    "cloud-native-banking": {
+        "title": "Cloud Native Banking",
+        "banner": "https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp",
+        "lede": (
+            "Kubernetes-based platform engineering for regulated institutions: "
+            "DORA-tested operational resilience, VM and container convergence, "
+            "sovereign cloud, exit strategy, and the architecture that lets banks "
+            "ship critical services under supervision."
+        ),
+        "slugs": [
+            "2026-05-20-cloud-native-banking-financial-institutions-2026",
+            "2026-05-16-best-cloud-infrastructure-architecture-2026",
         ],
     },
     "applied-ai-banking": {
