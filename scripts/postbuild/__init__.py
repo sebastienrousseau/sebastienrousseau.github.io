@@ -1,7 +1,20 @@
-"""scripts/postbuild package — re-exports the public surface of
-postbuild.py so legacy ``import postbuild`` and ``postbuild.main()``
-calls keep working after the scripts/ reorg.
+"""scripts/postbuild package — replaces itself in sys.modules with the
+postbuild.py module so legacy ``import postbuild`` returns the real
+module (with all public + underscore-prefixed names + editable
+globals), not this thin package shim.
+
+Tests written before the reorg both
+  - poke at private names (``postbuild._FOO``), and
+  - monkeypatch module-level state (``postbuild.PUBLIC = tmp_path``).
+Both behaviours require ``postbuild`` in sys.modules to BE the
+postbuild.py module. ``from .postbuild import *`` would only re-
+export public names and would create a separate package object
+whose attributes drift from the underlying module's.
 """
 from __future__ import annotations
 
-from .postbuild import *  # noqa: F403
+import sys as _sys
+
+from . import postbuild as _impl
+
+_sys.modules[__name__] = _impl
