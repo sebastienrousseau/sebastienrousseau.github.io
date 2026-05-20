@@ -848,7 +848,7 @@ def test_strip_handles_multiple_attrs_around_title():
 
 def test_strip_skips_empty_title():
     html = '<a href="/x" title="">empty</a>'
-    out, n = pb.strip_redundant_link_titles(html)
+    _out, n = pb.strip_redundant_link_titles(html)
     assert n == 0
 
 
@@ -856,5 +856,5 @@ def test_strip_skips_anchor_with_no_inner_text_match_form():
     """Anchors with nested HTML (e.g. <a><img></a>) are skipped — the
     visible-text comparison would lie."""
     html = '<a href="/x" title="alt"><img alt="alt"></a>'
-    out, n = pb.strip_redundant_link_titles(html)
+    _out, n = pb.strip_redundant_link_titles(html)
     assert n == 0
