@@ -3,13 +3,30 @@
 
 Featured (most recent) story sits in a 1:1 split-card; the rest fill a 3-col grid.
 Image, title, eyebrow tag, date and excerpt come from the existing markdown.
+
+Auto-discovery: any dated `_posts/YYYY-MM-DD-*.md` newer than ARTICLES[0]'s
+date is automatically prepended at run-time. The static ARTICLES list below
+is the long-tail; only the *latest* article needs to be auto-injected so
+the daily routine doesn't need to edit this file. Auto-injection reads
+frontmatter (title, banner, banner_alt, excerpt, tags) and derives the
+eyebrow from the first three comma-separated tags.
 """
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "_posts" / "articles.md"
+POSTS = ROOT / "_posts"
+
+_DATED_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-")
+_FM_KEY_RE = re.compile(r'^([a-z_]+):\s*"((?:[^"\\]|\\.)*)"\s*$')
+
+_MONTH_NAMES = (
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December",
+)
 
 # (date_iso, date_display, eyebrow, title, image_url, image_alt, excerpt, href)
 ARTICLES = [
@@ -305,7 +322,81 @@ def featured_block(art) -> str:
 </article>"""
 
 
+def _parse_frontmatter(text: str) -> dict[str, str]:
+    """Minimal YAML frontmatter parser — single-line "key: \"value\""."""
+    if not text.startswith("---"):
+        return {}
+    end = text.find("\n---", 3)
+    if end < 0:
+        return {}
+    fm: dict[str, str] = {}
+    for line in text[3:end].splitlines():
+        m = _FM_KEY_RE.match(line)
+        if m:
+            fm[m.group(1)] = m.group(2)
+    return fm
+
+
+def _eyebrow_from_tags(tags: str) -> str:
+    """Take the first three comma-separated tags, Title-Case them, and
+    join with ` · `. Mirrors the manual ARTICLES eyebrow convention."""
+    parts = [t.strip() for t in tags.split(",") if t.strip()][:3]
+    return " · ".join(p.title() for p in parts)
+
+
+def _display_date(iso: str) -> str:
+    """Convert ``YYYY-MM-DD`` to ``Month DD, YYYY``."""
+    y, m, d = iso.split("-")
+    return f"{_MONTH_NAMES[int(m) - 1]} {int(d)}, {y}"
+
+
+def _discover_latest_article() -> tuple | None:
+    """Scan _posts/YYYY-MM-DD-*.md for any article newer than ARTICLES[0].
+    Return an ARTICLES-shaped tuple, or None if none found."""
+    if not POSTS.is_dir():
+        return None
+    dated = []
+    for md in POSTS.glob("*.md"):
+        m = _DATED_RE.match(md.name)
+        if m:
+            dated.append((m.group(1), md))
+    if not dated:
+        return None
+    dated.sort(reverse=True)
+    latest_date, latest_path = dated[0]
+    head_date = ARTICLES[0][0] if ARTICLES else ""
+    if latest_date <= head_date:
+        return None
+    fm = _parse_frontmatter(latest_path.read_text(encoding="utf-8"))
+    if not fm.get("title"):
+        return None
+    slug = latest_path.stem
+    title = fm["title"]
+    banner = fm.get("banner", "")
+    banner_alt = fm.get("banner_alt", title)
+    excerpt = (
+        fm.get("excerpt") or fm.get("subtitle") or fm.get("description") or title
+    )[:320]
+    eyebrow = _eyebrow_from_tags(fm.get("tags", "")) or "Banking · Technology"
+    return (
+        latest_date,
+        _display_date(latest_date),
+        eyebrow,
+        title,
+        banner,
+        banner_alt,
+        excerpt,
+        f"/{slug}/index.html",
+    )
+
+
 def main() -> None:
+    articles = list(ARTICLES)
+    auto = _discover_latest_article()
+    if auto is not None:
+        articles.insert(0, auto)
+        print(f"gen_articles: auto-prepended {auto[0]} (slug={auto[7]})")
+
     text = SRC.read_text()
     # Preserve YAML frontmatter (lines bounded by `---`), drop the body.
     lines = text.splitlines(keepends=True)
@@ -314,9 +405,9 @@ def main() -> None:
         raise SystemExit("could not locate frontmatter delimiters in articles.md")
     head = "".join(lines[: delim_idx[1] + 1]) + "\n"
 
-    featured = featured_block(ARTICLES[0])
+    featured = featured_block(articles[0])
     cards = "\n\n".join(card_block(a[2], a[3], a[4], a[5], a[0], a[1], a[6], a[7])
-                        for a in ARTICLES[1:])
+                        for a in articles[1:])
 
     body = f"""<section class="newsroom">
 
@@ -336,7 +427,7 @@ def main() -> None:
 """
 
     SRC.write_text(head + body)
-    print(f"wrote {SRC}. Featured: 1, grid cards: {len(ARTICLES) - 1}")
+    print(f"wrote {SRC}. Featured: 1, grid cards: {len(articles) - 1}")
 
 
 if __name__ == "__main__":

@@ -1,12 +1,12 @@
 ---
-description: Promote today's _drafts/ article, translate the 27 locale stubs into native-language full translations, open a PR for review. Works in both local Claude Code (Mac) and Anthropic cloud /schedule routines.
+description: Promote today's _drafts/ article, validate voice/style, pick a banner if needed, translate 27 locale stubs with native SEO + tone, open a PR. Works in both local Claude Code (Mac) and Anthropic cloud /schedule routines.
 ---
 
 You are publishing today's article on `sebastienrousseau.com`. Your job is to ship today's source content end-to-end as a reviewable PR — Sebastien merges it from GitHub mobile.
 
-## Where you're running — read this first
+**Schedule reminder**: this command fires at **04:00 UTC daily** via Sebastien's cloud `/schedule` routine. Translations + PR should be ready in his inbox by ~04:10 UTC so he can review + merge before the European workday starts.
 
-There are two execution environments. Detect which one and branch accordingly. **Do not try to bridge between them.**
+## Where you're running — read this first
 
 | Marker | Local (Sebastien's Mac) | Cloud routine (Anthropic) |
 |---|---|---|
@@ -16,17 +16,17 @@ There are two execution environments. Detect which one and branch accordingly. *
 | `gh pr create` works | yes | maybe — try, fall back to GitHub MCP |
 | GitHub MCP tools available | usually no | **yes** |
 
-**Run `command -v ssg` once at the start.** If empty → you are in cloud mode. The two flows diverge at the build step and at the push step.
+**Run `command -v ssg` once at the start.** If empty → cloud mode. The two flows diverge at the build step (step 9) and the push step (step 10).
 
 ## Constraints (apply in BOTH modes)
 
 - **NEVER** put `ANTHROPIC_API_KEY` in repo secrets, env files, or CI workflows. All translation work happens here in conversation, using Sebastien's Claude subscription.
-- **NEVER** force-push, **NEVER** push to `main` directly. Always open a PR — Sebastien merges from mobile.
-- **NEVER** commit the rebuilt `docs/` from inside the routine. Pages-deploy CI rebuilds `docs/` from `public/` on PR merge. Committing `docs/` here just bloats the diff with output that will be regenerated. Only commit **source** files: `_posts/`, `_data/`, `scripts/gen_articles.py`, `_layouts/` if edited, `.claude/`.
+- **NEVER** force-push, **NEVER** push to `main`. Always open a PR — Sebastien merges from mobile.
+- **NEVER** commit the rebuilt `docs/` from inside the routine. Pages-deploy CI rebuilds `docs/` from `public/` on PR merge. Only commit **source** files: `_posts/`, `_data/`, `_layouts/` if edited, `.claude/`.
 - **NEVER** invent statistics, sources, or claims the EN source doesn't make.
-- **NEVER** skip the i18n gates — fix the root cause if they fail.
+- **NEVER** skip a build gate — fix the root cause.
 
-## Steps — execute in this order
+## Steps — execute in order
 
 ### 1. Locate today's source
 
@@ -34,101 +34,121 @@ There are two execution environments. Detect which one and branch accordingly. *
 date -u +%F
 ```
 
-Find `_drafts/<today>-*.md`. If none exists, stop with: *"no draft for `<today>` — drop one into `_drafts/` first."* If a `_posts/<today>-*.md` already exists (a partial earlier run), skip step 2 and resume from step 3.
+Find `_drafts/<today>-*.md`. If none exists, stop with: *"no draft for `<today>` — drop one into `_drafts/` first."* If `_posts/<today>-*.md` already exists (a partial earlier run), skip step 2 and resume from step 3.
 
-### 2. Promote + scaffold the 27 stubs
+### 2. Promote the draft
 
 ```bash
 git mv _drafts/<today>-*.md _posts/
-python3 scripts/translate_post.py <slug>          # writes 27 _posts/<lang>/<slug>.md stubs + slug-map entries
 ```
 
-`translate_post.py` is Python-only — runs identically in both modes.
+### 3. Voice / style / structure gate
 
-### 3. Verify banner image is reachable
-
-The draft's `banner:` URL must return 200 from CloudCDN. Quick check:
+Run the editorial gate **before** scaffolding 27 stubs — a defect in EN cascades through every locale and a build failure later is much more expensive than a one-second check now.
 
 ```bash
-banner=$(grep -oE '^banner: *"[^"]+"' _posts/<slug>.md | sed 's/banner: *"//;s/"$//')
-curl -sIo /dev/null -w "%{http_code}\n" "$banner"
+python3 scripts/check_voice.py --today
 ```
 
-If 404, ask Sebastien for the correct CDN URL **before continuing** (a broken banner cascades through 28 locales). Update the URL in `_posts/<slug>.md` and in all 27 `_posts/<lang>/<slug>.md` stubs using `sed -i`.
+This script fails non-zero on any of: incomplete frontmatter (missing title/subtitle/description/banner/banner_alt/tags/twitter_*/excerpt/date/keywords); unreachable banner URL; banned filler ("delve into", "embark on", "in conclusion", "let's explore", "it is worth noting", "in today's fast-paced", "in this article", "transformative journey", "unprecedented", "game-changer", "paradigm shift", "synergy", "harness the power", "unlock the potential", …); missing lead aside or Executive Summary blockquote; fewer than three H2 sections; missing FAQ or References; H1 not exactly once; date mismatch between filename and frontmatter.
 
-### 4. Translate all 27 stubs
+If it fails, **fix the EN draft and re-run** before proceeding. Stub generation against a broken draft wastes 27 translation slots.
 
-For maximum throughput, **launch parallel translation agents in batches**. Each agent edits one locale's stub file using a single `Edit` tool call.
+### 4. Banner image (only if check_voice flagged banner)
 
-```text
-List pending:  python3 scripts/translate_post.py <slug> --list-stubs
-```
-
-For each locale path, dispatch a sub-agent with this template (replace `<LOC>` and `<LOCALE_NAME>`):
-
-> Translate the body of `_posts/<LOC>/<slug>.md` into native `<LOCALE_NAME>`. Read lines 104–223 of `_posts/<slug>.md` as the EN source. Drop the `<!-- translation-stub -->` comment + the "Translation pending" blockquote and replace through end of file with the translation. Preserve every markdown construct at the same nesting (H1/H2/H3, blockquote bullets, table rows, citation links). Citation URLs are immutable — translate only visible text + `title=""`. Numbers/dates are facts — never paraphrase them. Acronyms (DORA, ICT, GDPR, NIS2, AI/ML, VM, Kubernetes, GitOps, SaaS, PSP, FMI, etc.) stay canonical English with native expansion on first mention. Enrich block at bottom → locale-localised pattern (model on `_posts/<LOC>/2026-05-18-*.md` for the canonical author-card structure). Executive register only. No invented stats.
-
-Order locales by priority (highest-traffic first): **fr es de it pt-br nl ja zh-hans zh-hant ko ar ru pl cs uk ro tr he hi bn id vi th fil ha yo sv** (27 total).
-
-When the parallel batch completes, re-run `--list-stubs` — should print `all 27 locales translated for <slug>.`
-
-### 5. Update the homepage + featured article
-
-Two curated files need a touch:
-
-**`_posts/index.md`** — In the `<div class="newsroom-grid feat-latest-grid">` block, **prepend** a new `<article class="newsroom-card">` for the new post (mirror the existing card structure exactly) and **delete the bottom-most card** so there are still **6 visible**. The 6-card balance fills the 3-column grid cleanly across all 28 locales (`build_translations.py` rewrites per-locale at build time).
-
-**`scripts/gen_articles.py`** — Prepend a new `ARTICLES[0]` tuple of shape:
-
-```python
-("YYYY-MM-DD", "Month DD, YYYY", "Eyebrow · Eyebrow · Eyebrow",
- "Full title",
- "https://cloudcdn.pro/stocks/images/<image>.webp",
- "Image alt text",
- "Short excerpt (1–2 sentences).",
- "/<slug>/index.html"),
-```
-
-Then regenerate `/articles/`:
+If the gate flagged the `banner:` URL as unreachable, pick a fresh one from the curated CDN library:
 
 ```bash
-python3 scripts/gen_articles.py
+python3 scripts/pick_banner.py --hint <topic-keywords>
 ```
 
-### 6. Refresh listings + topic graph
+Topic keywords are comma-separated. Recognised hints: `cloud`, `kubernetes`, `quantum`, `payments`, `ai`, `rust`, `blockchain`, `iso`, `agentic`, `governance`, `office`. The script:
+- reads the CDN inventory at `/Users/seb/Code/Public/CDN/cloudcdn.pro/stocks/images/` (local) — set `CDN_INVENTORY` to override in cloud
+- excludes anything already used as a `banner:` in any `_posts/*.md`
+- biases toward filenames that match your hint keywords
+- emits the canonical transform URL: `https://cloudcdn.pro/api/transform?url=/stocks/images/<name>.webp&w=1200&format=webp&q=80`
 
-These are all Python-only and run identically in both modes:
+Update the `banner:` line in `_posts/<slug>.md` with the returned URL. Re-run `check_voice` to confirm it's now reachable.
+
+### 5. Scaffold the 27 locale stubs
+
+```bash
+python3 scripts/translate_post.py <slug>          # writes 27 _posts/<lang>/<slug>.md + slug-map entries
+```
+
+`translate_post.py` is Python-only — identical in both modes. The stubs inherit the EN frontmatter (translation in step 6 also localises frontmatter title/subtitle/description/keywords for SEO).
+
+### 6. Translate all 27 stubs — with native SEO + native tone
+
+Dispatch one sub-agent per locale **in parallel batches** (7-at-a-time keeps tool budget reasonable). Each agent edits its locale's stub file via a single `Edit` tool call. Use this template — replace `<LOC>` (locale code), `<LOCALE_NAME>` (human-readable, e.g. "French — France register"), and adjust the per-locale glossary line:
+
+> Translate the body of `_posts/<LOC>/<slug>.md` into native `<LOCALE_NAME>`. Read the EN body from `_posts/<slug>.md` (lines from the H1 onwards, including the `<!-- enrich-start --> ... <!-- enrich-end -->` block at the end).
+>
+> **Drop** the `<!-- translation-stub -->` comment and the "Translation pending" blockquote, replace everything from there through end of file with the translation.
+>
+> **Native tone-of-voice (non-negotiable):** match the executive register a senior banking technologist would use writing for a board / lead-architect audience in `<LOCALE_NAME>`. No hype filler. No "plongeons dans" / "sumérgete" / "tauchen wir ein" / "vamos mergulhar" / equivalent. Cite the same kind of authoritative sources the EN piece does.
+>
+> **Native SEO (also non-negotiable):** translate `title`, `subtitle`, `description`, `keywords`, `twitter_title`, `twitter_description`, and `excerpt` in the frontmatter too. Match the EN SEO intent — keep the primary keyword phrases that natively rank in the target market, expand acronyms once on first mention (DORA, ICT, GDPR, NIS2, FMI, PSP) and then keep the canonical English form. `title` ≤ 70 chars after translation; `description` 140–160 chars; `keywords` should remain a comma-separated list translated to native terms while preserving key English search terms (e.g. "Kubernetes", "DORA", "ISO 20022", "ML-KEM", "RTGS").
+>
+> **Markdown structure is load-bearing.** Every heading (H1/H2/H3), blockquote, bullet, table row, citation link, and the `<!-- enrich-start --> ... <!-- enrich-end -->` aside must appear at exactly the same nesting in the same order. Only the prose between markup changes.
+>
+> **Citation links: `[Visible text](url "title")`.** Translate visible text + `title` attribute. **NEVER** change the URL.
+>
+> **Numbers, percentages, dates, statistics are facts.** Translate the surrounding sentence; never paraphrase the number itself.
+>
+> **Acronyms** stay canonical English with a parenthetical native expansion on first mention if a standard one exists. Native-language glossary for `<LOCALE_NAME>`: <ONE LINE OF KEY TERM MAPPINGS — e.g. for FR: "cloud-native → cloud natif; container → conteneur; resilience → résilience; sovereignty → souveraineté; outsourcing → externalisation; workload → charge de travail; data residency → résidence des données">.
+>
+> **Enrich block at the bottom** (`<!-- enrich-start --> ... <!-- enrich-end -->`): localise to the per-locale canonical pattern. Model on the most recent `_posts/<LOC>/2026-*.md` for the canonical "About the author" structure (aria-label + bio + credentials + "Last reviewed" line).
+>
+> Do **not** invent statistics, sources, or claims the EN source doesn't make.
+
+Dispatch in priority order (highest-traffic markets first): **fr es de it pt-br nl ja zh-hans zh-hant ko ar ru pl cs uk ro tr he hi bn id vi th fil ha yo sv** (27 total).
+
+When the parallel batch completes, verify completeness:
+
+```bash
+python3 scripts/translate_post.py <slug> --list-stubs       # should report 'all 27 locales translated'
+```
+
+### 7. Homepage card rotation
+
+Edit `_posts/index.md`: in the `<div class="newsroom-grid feat-latest-grid">` block, **prepend** a new `<article class="newsroom-card">` for today (mirror the structure of the cards already there) and **drop the bottom card** so there are still **6 visible**. The 6-card balance fills the 3-column grid cleanly across all 28 locales (`build_translations.py` rewrites per-locale at build time).
+
+### 8. Listings refresh
+
+These are Python-only and run identically in both modes. `gen_articles.py` now **auto-discovers** the latest dated post — you no longer need to hand-edit the `ARTICLES` list.
 
 ```bash
 python3 scripts/gen_layouts.py
+python3 scripts/gen_articles.py    # auto-prepends today's article via _discover_latest_article()
 python3 scripts/gen_projects.py
 python3 scripts/gen_papers.py
 python3 scripts/topic_link.py
 python3 scripts/post_enrich.py
-python3 scripts/build_topics.py
+python3 scripts/build_topics.py    # if today's article fits an existing cluster OR you've added it to TOPICS, the slug shows up here
 python3 scripts/build_lang_feeds.py
 python3 scripts/build_agent_api.py
 ```
 
-### 7. Validate
+**Topic cluster note**: if today's article belongs to an existing cluster in `scripts/build_topics.py:TOPICS`, prepend its slug to that cluster's `slugs:` list. If it needs a brand-new cluster, add it (mirror the existing cluster shape — title, banner, lede, slugs). Per-locale topic clones are generated automatically by `build_translations.py`.
 
-**Local mode (ssg present):** run the full gate stack —
+### 9. Validate
+
+**Local mode (ssg present):**
 
 ```bash
 ./build.sh
 ```
 
-Must exit 0. Surfaces any i18n leakage, hreflang regression, CSP issue, RTL bug, sitemap completeness gap. If it fails, fix the root cause and re-run.
+Must exit 0. Surfaces i18n leakage, hreflang regression, CSP issue, RTL bug, sitemap completeness gap, news-sitemap duplicate, JSON-LD validation.
 
-**Cloud mode (no ssg):** skip `./build.sh`. Pages-deploy CI runs it on PR merge against the freshly-cloned source. Instead, run the Python-only checks that don't need a build output:
+**Cloud mode (no ssg):** skip `./build.sh`. Pages-deploy CI runs it on PR merge. Best-effort Python checks:
 
 ```bash
-python3 -m pytest tests/test_build_translations_smoke.py::test_parse_frontmatter_basic tests/test_translate_post.py -q  || true
+python3 -m pytest tests/test_build_translations_smoke.py::test_parse_frontmatter_basic tests/test_translate_post.py tests/test_gen_articles_autodiscover.py -q  || true
 ```
 
-These are best-effort — the real gates run in CI.
-
-### 8. Commit + open PR
+### 10. Commit + open PR
 
 **Local mode:**
 
@@ -139,55 +159,59 @@ title=$(grep -oE '^title: *"[^"]+"' "_posts/${slug}.md" | head -1 | sed 's/title
 branch="content/${today}-$(echo "$slug" | cut -d'-' -f4-7 | head -c 30)"
 
 git checkout -b "$branch"
-# Stage SOURCE only — never commit docs/ from the routine
-git add _posts/ _data/ scripts/gen_articles.py _layouts/ .claude/ 2>/dev/null || true
+git add _posts/ _data/ scripts/gen_articles.py scripts/build_topics.py _layouts/ .claude/ 2>/dev/null || true
 git commit -S -m "content(${today}): ${title} + 27 translations"
 git push -u origin "$branch"
 gh pr create --title "content(${today}): ${title}" --body "$(cat <<EOF
 ## Summary
 - EN article: **${title}**
-- 27 non-EN locales translated (fr/es/de/it/pt-br/nl/ja/zh-hans/zh-hant/ko/ar/ru/pl/cs/uk/ro/tr/he/hi/bn/id/vi/th/fil/ha/yo/sv)
-- Homepage card rotated; gen_articles.py ARTICLES[0] swapped
+- 27 non-EN locales translated with native SEO + tone (fr/es/de/it/pt-br/nl/ja/zh-hans/zh-hant/ko/ar/ru/pl/cs/uk/ro/tr/he/hi/bn/id/vi/th/fil/ha/yo/sv)
+- Homepage card rotated to keep 6 visible
+- gen_articles.py auto-discovered the new post; /articles/ featured story refreshed
+- check_voice gate passed: frontmatter complete, banner reachable, no hype filler, structural shape OK
 
 ## Test plan
-- [x] \\\`./build.sh\\\` green locally (or pending CI for cloud mode)
-- [x] 6 cards balanced on homepage
+- [x] check_voice green
+- [x] all 27 locales translated (no stubs remaining)
+- [x] \\\`./build.sh\\\` green (local) OR pending CI (cloud)
 - [ ] CI build + diff + accessibility + lighthouse pass
 EOF
 )"
 ```
 
-**Cloud mode** (`git push` returns 403, no SSH key for signing):
-
-Use the GitHub MCP server. Approximate sequence:
+**Cloud mode** (`git push` returns 403, no SSH key for signing): use the GitHub MCP server.
 
 1. `mcp__github__create_branch` — base `main`, head `content/<today>-<slug-frag>`
-2. For each changed file (collect via `git status --porcelain | grep -v '^?? docs/'`), call `mcp__github__create_or_update_file` with the file path + base64 content + the branch.
-3. `mcp__github__create_pull_request` — title `content(YYYY-MM-DD): <title>`, body as above, base `main`, head `<branch>`.
-
-If the MCP tools aren't available, fall back to authenticated REST: `POST /repos/sebastienrousseau/sebastienrousseau.github.io/git/refs` for the branch, `PUT /repos/.../contents/<path>` per file (use the `Authorization: Bearer $GH_TOKEN` from the routine's env if present), then `POST /repos/.../pulls` to open the PR.
+2. For each changed file (collect via `git status --porcelain | grep -v '^?? docs/' | grep -v '^?? public/'`), call `mcp__github__create_or_update_file` with the path + base64 content + branch.
+3. `mcp__github__create_pull_request` — same title/body as above.
 
 Do **not** attempt `git push` in cloud mode — it will 403.
 
-### 9. Report back
+### 11. Report back
 
 Tell Sebastien:
-- The slug
-- Locale count (should be 28/28: 1 EN + 27 translations)
 - The PR URL
-- Anything that needed a fix not in this checklist (broken banner, missing locale chrome key, etc.)
+- Slug + title
+- 28/28 locale count
+- Any voice-gate defects you fixed before scaffolding
+- The banner image used (URL or filename + hint that drove the pick)
+- Anything that needed a fix not in this checklist
 - Reminder: merge from GitHub mobile when CI is green
 
-## What goes in this directory's git history
+## Surfaces this routine automatically updates
 
-After a clean run, your commit touches roughly:
+After a clean run, every reference to today's article is in place across:
 
-- 28 × `_posts/[<lang>/]<slug>.md` (EN + 27 locales)
-- 27 × `_data/i18n/<lang>/slugs.json` (slug-map entries)
-- `_posts/index.md` (homepage card rotation)
-- `_posts/articles.md` (regenerated)
-- `scripts/gen_articles.py` (ARTICLES[0] swap)
-- A handful of `_data/i18n/<lang>/home_patches.json` if listing markup changed
-- **Nothing under `docs/` or `public/`** — CI rebuilds those on merge.
+- `_posts/<slug>.md` (EN source)
+- `_posts/<lang>/<slug>.md` × 27 (locale translations)
+- `_data/i18n/<lang>/slugs.json` × 27 (slug map entries)
+- `_posts/index.md` (homepage 6-card grid)
+- `_posts/articles.md` (regenerated by `gen_articles.py` auto-discover)
+- All 28 RSS/Atom/JSON Feed/news-sitemap files (regenerated by `build_lang_feeds.py`)
+- `sitemap.xml` (ssg generates → postbuild augments with rendered topic pages)
+- All 28 `search-index.json` files (regenerated by ssg + build_translations)
+- `/api/agents/posts.json` (regenerated by `build_agent_api.py`)
+- `/llms-full.txt` (regenerated by `postbuild.py`)
+- `/topics/<cluster>/index.html` × 6 EN topic pages + 6 × 27 per-locale forks (if cluster updated)
 
-If your diff includes hundreds of `docs/.meta/*.meta.json` files, you ran `./build.sh` and committed its output — back those out before pushing.
+If your final commit diff includes hundreds of `docs/` or `public/` files, you ran `./build.sh` and committed its output — back those out (`git reset HEAD~1; git checkout -- docs/ public/`) before pushing.
