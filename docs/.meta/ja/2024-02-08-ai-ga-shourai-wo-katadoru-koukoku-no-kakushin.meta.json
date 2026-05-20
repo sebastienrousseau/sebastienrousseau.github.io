@@ -1,12 +1,12 @@
 {
-  "locale": "ja_JP",
-  "description": "AI が広告の未来を形作る方法と、業界が直面する機会と倫理的考察。",
-  "date": "February 8, 2024",
-  "title": "AI が未来を形作る:広告の革新",
-  "subtitle": "AI 駆動型広告の状況と倫理",
-  "banner": "https://cloudcdn.pro/stocks/images/joshua-earle-yEfPDcKR1uM-unsplash.webp",
-  "last_reviewed": "2026-05-11",
   "banner_alt": "AI と広告のビジュアル",
+  "language": "ja-JP",
+  "title": "AI が未来を形作る:広告の革新",
   "keywords": "AI, 広告, パーソナライゼーション, 生成 AI, 倫理, プライバシー, ディープフェイク",
-  "language": "ja-JP"
+  "subtitle": "AI 駆動型広告の状況と倫理",
+  "date": "February 8, 2024",
+  "locale": "ja_JP",
+  "last_reviewed": "2026-05-11",
+  "description": "AI が広告の未来を形作る方法と、業界が直面する機会と倫理的考察。",
+  "banner": "https://cloudcdn.pro/stocks/images/joshua-earle-yEfPDcKR1uM-unsplash.webp"
 }

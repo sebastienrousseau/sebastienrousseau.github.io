@@ -517,6 +517,52 @@ def wrap_cdn_images_in_transform(html: str) -> tuple[str, int]:
 
 
 # ---------------------------------------------------------------------------
+# 1c. Redundant link title strip — WAVE alert remediation.
+#
+# Markdown citations frequently come in as ``[Article Title](url "Article Title")``,
+# which markdown-it renders as ``<a href="url" title="Article Title">Article
+# Title</a>``. Both WAVE and pa11y note this as a redundant alternative-text
+# alert: a title attribute that duplicates the visible text adds noise for
+# screen readers without giving sighted users any extra information.
+#
+# Strip ``title=`` when (and only when) it matches the inner text verbatim
+# after whitespace + trailing-period normalisation. Non-matching titles
+# (e.g. "Article Title · sebastienrousseau.com" or "Read on at IBM")
+# stay — they're carrying signal.
+# ---------------------------------------------------------------------------
+
+_REDUNDANT_LINK_TITLE_RE = re.compile(
+    r'<a\b([^>]*)>([^<]+)</a>', re.IGNORECASE,
+)
+_TITLE_ATTR_RE = re.compile(r'\s+title="([^"]+)"', re.IGNORECASE)
+
+
+def _title_matches_text(title: str, text: str) -> bool:
+    """Whitespace + trailing-punctuation insensitive equality."""
+    norm_t = re.sub(r"\s+", " ", title).strip().rstrip(".,:;")
+    norm_x = re.sub(r"\s+", " ", text).strip().rstrip(".,:;")
+    return bool(norm_t) and norm_t == norm_x
+
+
+def strip_redundant_link_titles(html: str) -> tuple[str, int]:
+    """Remove the ``title="…"`` attribute on every ``<a>`` whose title
+    matches the visible inner text. Returns ``(new_html, n_removed)``."""
+    n = 0
+
+    def patch(m: re.Match[str]) -> str:
+        nonlocal n
+        attrs, text = m.group(1), m.group(2)
+        title_m = _TITLE_ATTR_RE.search(attrs)
+        if not title_m or not _title_matches_text(title_m.group(1), text):
+            return m.group(0)
+        new_attrs = attrs[: title_m.start()] + attrs[title_m.end():]
+        n += 1
+        return f"<a{new_attrs}>{text}</a>"
+
+    return _REDUNDANT_LINK_TITLE_RE.sub(patch, html), n
+
+
+# ---------------------------------------------------------------------------
 # 2. CSP hash for inline JSON-LD
 # ---------------------------------------------------------------------------
 
@@ -820,6 +866,7 @@ class _PostbuildCounters:
         "link_hoisted",
         "localhost_patched",
         "mermaid_patched",
+        "redundant_titles_stripped",
         "nav_patched",
         "og_patched",
         "social_patched",
@@ -1154,6 +1201,12 @@ def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     # "starts with /api/" guard in _wrap_cdn_path).
     patched_hl, n_cdn_late = wrap_cdn_images_in_transform(patched_hl)
     ctx.counters.cdn_wrapped += n_cdn_late
+    # Strip redundant title="..." on links where it duplicates the inner
+    # text. WAVE flags these as a "redundant alternative text" alert.
+    # Run AFTER every furniture / inject pass so author-card + citation
+    # links added late also get cleaned.
+    patched_hl, n_rt = strip_redundant_link_titles(patched_hl)
+    ctx.counters.redundant_titles_stripped += n_rt
     patched2 = inject_jsonld_hashes(patched_hl)
     if patched2 != prev_hl:
         ctx.counters.csp_patched += 1
@@ -1213,6 +1266,7 @@ def main() -> None:
         f"{c.localhost_patched} got localhost→prod scrubbed, "
         f"{c.theme_inlined} got theme-init inlined, "
         f"{c.cdn_wrapped} img(s) wrapped in CDN transform, "
+        f"{c.redundant_titles_stripped} redundant link title(s) stripped, "
         f"{c.lcp_preloaded} got LCP image preloaded, "
         f"{c.asset_fp_patched} got asset URLs fingerprinted, "
         f"{c.sri_patched} got real SRI, "

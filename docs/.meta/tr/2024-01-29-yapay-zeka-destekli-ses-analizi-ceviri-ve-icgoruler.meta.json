@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
-  "language": "tr-TR",
-  "date": "January 29, 2024",
   "keywords": "yapay zeka, ses, konuşma tanıma, çeviri, içgörüler, analiz",
   "description": "Ses verilerini metne dönüştürmek, çevirmek ve eyleme dönüştürülebilir içgörüler çıkarmak için yapay zeka çözümleri.",
+  "language": "tr-TR",
+  "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
+  "date": "January 29, 2024",
   "title": "Yapay zeka ile ses analizi, çeviriler ve içgörüler",
-  "subtitle": "Konuşma, ses analizi ve çeviri için yapay zeka uygulamaları",
+  "locale": "tr_TR",
   "banner_alt": "Bir ses dalgasının görselleştirmesi",
-  "locale": "tr_TR"
+  "subtitle": "Konuşma, ses analizi ve çeviri için yapay zeka uygulamaları"
 }

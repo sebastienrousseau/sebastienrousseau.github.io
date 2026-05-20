@@ -801,3 +801,60 @@ def test_wrap_cdn_images_returns_unchanged_when_src_sub_fails(monkeypatch):
     out, n = pb.wrap_cdn_images_in_transform(html)
     assert n == 0
     assert out == html
+
+
+# ---------------------------------------------------------------------------
+# strip_redundant_link_titles — WAVE alert remediation
+# ---------------------------------------------------------------------------
+
+
+def test_strip_redundant_title_when_title_matches_text():
+    html = '<a href="/x" title="Hello">Hello</a>'
+    out, n = pb.strip_redundant_link_titles(html)
+    assert n == 1
+    assert out == '<a href="/x">Hello</a>'
+
+
+def test_keep_title_when_it_carries_extra_signal():
+    html = '<a href="/x" title="Hello world">Hello</a>'
+    out, n = pb.strip_redundant_link_titles(html)
+    assert n == 0
+    assert 'title="Hello world"' in out
+
+
+def test_strip_normalises_whitespace_and_trailing_punct():
+    html = '<a href="/x" title="Hello.">Hello</a>  <a href="/y" title="Foo  bar">Foo bar</a>'
+    out, n = pb.strip_redundant_link_titles(html)
+    assert n == 2
+    assert 'title="Hello."' not in out
+    assert 'title="Foo  bar"' not in out
+
+
+def test_strip_leaves_links_without_title_alone():
+    html = '<a href="/x">just text</a>'
+    out, n = pb.strip_redundant_link_titles(html)
+    assert n == 0
+    assert out == html
+
+
+def test_strip_handles_multiple_attrs_around_title():
+    html = '<a href="/x" class="card" title="Same" rel="external">Same</a>'
+    out, n = pb.strip_redundant_link_titles(html)
+    assert n == 1
+    assert 'title="Same"' not in out
+    assert 'class="card"' in out
+    assert 'rel="external"' in out
+
+
+def test_strip_skips_empty_title():
+    html = '<a href="/x" title="">empty</a>'
+    out, n = pb.strip_redundant_link_titles(html)
+    assert n == 0
+
+
+def test_strip_skips_anchor_with_no_inner_text_match_form():
+    """Anchors with nested HTML (e.g. <a><img></a>) are skipped — the
+    visible-text comparison would lie."""
+    html = '<a href="/x" title="alt"><img alt="alt"></a>'
+    out, n = pb.strip_redundant_link_titles(html)
+    assert n == 0

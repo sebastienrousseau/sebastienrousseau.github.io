@@ -1,11 +1,11 @@
 {
-  "keywords": "KyberLib, CRYSTALS-Kyber, NIST, FIPS 203, Rust, KEM, post-quantistica, autenticazione",
-  "date": "November 28, 2023",
-  "language": "it-IT",
-  "description": "KyberLib è un'implementazione Rust robusta di CRYSTALS-Kyber, lo standard NIST FIPS 203 per l'incapsulamento delle chiavi post-quantistico di uso generale.",
   "title": "KyberLib: uno scudo Rust contro le minacce quantistiche",
   "subtitle": "Un'implementazione Rust robusta di CRYSTALS-Kyber per i servizi finanziari",
-  "locale": "it_IT",
+  "keywords": "KyberLib, CRYSTALS-Kyber, NIST, FIPS 203, Rust, KEM, post-quantistica, autenticazione",
+  "banner_alt": "Comunicazioni sicure nell'era quantistica con KyberLib",
+  "language": "it-IT",
+  "date": "November 28, 2023",
+  "description": "KyberLib è un'implementazione Rust robusta di CRYSTALS-Kyber, lo standard NIST FIPS 203 per l'incapsulamento delle chiavi post-quantistico di uso generale.",
   "banner": "https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg",
-  "banner_alt": "Comunicazioni sicure nell'era quantistica con KyberLib"
+  "locale": "it_IT"
 }

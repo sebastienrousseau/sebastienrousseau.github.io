@@ -781,6 +781,13 @@
         background:#fff;border:1px solid var(--border);border-radius:12px;
         padding:12px 14px;width:100%;transition:border-color .15s,box-shadow .15s;
       }
+      /* WCAG2AAA contrast: <option> children of <select> can fall back
+         to a browser-default ~light-grey on light-grey when the parent
+         color: var(--ink) doesn't resolve in the OS dropdown chrome.
+         Pin both color + background so pa11y/WAVE see >= 7:1 contrast. */
+      .ap-form select option,.ap-form select optgroup{
+        color:#0a0a0a;background:#ffffff;
+      }
       .ap-form textarea{min-height:140px;resize:vertical}
       .ap-form input:focus,.ap-form select:focus,.ap-form textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px rgba(var(--accent-rgb),.15)}
       .ap-form-actions{align-items:flex-start;margin-top:8px}

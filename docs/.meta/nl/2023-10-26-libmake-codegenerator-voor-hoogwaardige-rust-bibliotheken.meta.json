@@ -1,11 +1,11 @@
 {
   "keywords": "libmake, codegenerator, Rust, bibliotheek, automatisering, open source",
   "date": "October 26, 2023",
-  "locale": "nl_NL",
-  "subtitle": "Repetitieve taken verminderen en de kwaliteit van Rust-bibliotheken verhogen",
-  "language": "nl-NL",
   "title": "libmake: codegenerator voor hoogwaardige Rust-bibliotheken",
+  "subtitle": "Repetitieve taken verminderen en de kwaliteit van Rust-bibliotheken verhogen",
+  "locale": "nl_NL",
+  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
+  "language": "nl-NL",
   "description": "libmake is een codegenerator die helpt om repetitieve taken te verminderen en hoogwaardige Rust-bibliotheken te bouwen.",
-  "banner_alt": "Banner van de libmake-codegenerator",
-  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp"
+  "banner_alt": "Banner van de libmake-codegenerator"
 }

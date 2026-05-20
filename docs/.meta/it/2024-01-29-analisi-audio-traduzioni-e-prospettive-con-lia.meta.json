@@ -1,11 +1,11 @@
 {
-  "keywords": "IA, audio, trascrizione, Whisper, traduzione, sentiment, insight",
   "description": "Una panoramica sulle applicazioni dell'IA all'audio: trascrizione in tempo reale, traduzione, analisi sentiment e insight aziendali.",
-  "language": "it-IT",
-  "locale": "it_IT",
-  "date": "January 29, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
   "subtitle": "Come la trascrizione e l'analisi audio guidate dall'IA estraggono valore dai dati vocali",
-  "banner_alt": "Analisi audio con IA",
-  "title": "Analisi audio, traduzioni e prospettive con l'IA"
+  "keywords": "IA, audio, trascrizione, Whisper, traduzione, sentiment, insight",
+  "date": "January 29, 2024",
+  "locale": "it_IT",
+  "language": "it-IT",
+  "title": "Analisi audio, traduzioni e prospettive con l'IA",
+  "banner": "https://cloudcdn.pro/stocks/images/modern-corporate-office-with-technological-displays.webp",
+  "banner_alt": "Analisi audio con IA"
 }

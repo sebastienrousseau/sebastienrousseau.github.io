@@ -1,12 +1,12 @@
 {
+  "title": "Google Gemma: 오픈소스 AI 개발의 변혁",
   "last_reviewed": "2026-05-16",
   "subtitle": "Google의 Gemini 기반 오픈소스 언어 모델",
-  "keywords": "Gemma, Google, 오픈소스 AI, LLM, Llama, 파인튜닝, 온디바이스 AI",
-  "date": "February 26, 2024",
-  "description": "Google Gemma, 오픈소스 AI 개발을 변혁하는 Gemini 기반의 경량 언어 모델.",
-  "locale": "ko_KR",
-  "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp",
-  "banner_alt": "오픈소스 코드",
   "language": "ko-KR",
-  "title": "Google Gemma: 오픈소스 AI 개발의 변혁"
+  "locale": "ko_KR",
+  "keywords": "Gemma, Google, 오픈소스 AI, LLM, Llama, 파인튜닝, 온디바이스 AI",
+  "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-466ENaLuhLY-unsplash.webp",
+  "description": "Google Gemma, 오픈소스 AI 개발을 변혁하는 Gemini 기반의 경량 언어 모델.",
+  "date": "February 26, 2024",
+  "banner_alt": "오픈소스 코드"
 }
