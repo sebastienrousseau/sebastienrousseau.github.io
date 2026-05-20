@@ -1,12 +1,12 @@
 {
-  "locale": "ja_JP",
+  "keywords": "QKD, 量子鍵配送, 量子暗号, BB84, BBM92, 量子ネットワーク, 銀行セキュリティ, 量子インターネット",
   "title": "量子鍵配送:銀行セキュリティの革新",
-  "subtitle": "QKD が金融グレードセキュリティの構造的な答えとして登場",
-  "last_reviewed": "2026-05-11",
   "banner_alt": "ドックから見た HSBC タワー",
+  "subtitle": "QKD が金融グレードセキュリティの構造的な答えとして登場",
+  "locale": "ja_JP",
   "language": "ja-JP",
-  "date": "December 11, 2023",
+  "last_reviewed": "2026-05-11",
   "description": "量子コンピュータが従来の暗号を脅かす中、量子鍵配送(QKD)が金融グレードセキュリティの構造的な答えとして登場しています。",
-  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp",
-  "keywords": "QKD, 量子鍵配送, 量子暗号, BB84, BBM92, 量子ネットワーク, 銀行セキュリティ, 量子インターネット"
+  "date": "December 11, 2023",
+  "banner": "https://cloudcdn.pro/stocks/images/hsbc-from-the-docks.webp"
 }

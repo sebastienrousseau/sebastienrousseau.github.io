@@ -762,6 +762,7 @@ from postbuild_lib.output import (  # noqa: F401 — re-exports
     build_lastmod_index,
     build_llms_full_txt,
     build_llms_txt,
+    dedupe_xml_feeds,
     escape_xml_ampersands,
     fix_xml_feed_urls,
     fix_xml_feeds,
@@ -1145,12 +1146,13 @@ def _process_page(page: Path, ctx: _PostbuildContext) -> None:
         page.write_text(patched2, encoding="utf-8")
 
 
-def _finalize_build() -> tuple[int, bool, bool, bool, int, int, int]:
+def _finalize_build() -> tuple[int, bool, bool, bool, int, int, int, int]:
     """Run post-page-loop tasks: sitemap lastmod refresh, robots.txt
     rewrite, llms.txt + llms-full.txt rewrite, JSON Feed emission,
-    XML feed URL fix + ampersand scrub. Returns the counters for the
-    summary line. JS minification runs at module init (before SRI
-    hashing) and is reported via the module-level _JS_MINIFY_* counters."""
+    XML feed URL fix + ampersand scrub + duplicate-block dedup.
+    Returns the counters for the summary line. JS minification runs
+    at module init (before SRI hashing) and is reported via the
+    module-level _JS_MINIFY_* counters."""
     lastmod_index = build_lastmod_index()
     sitemap_patched = refresh_sitemap_lastmod(PUBLIC / "sitemap.xml", lastmod_index)
     robots_written = write_robots(PUBLIC)
@@ -1159,10 +1161,11 @@ def _finalize_build() -> tuple[int, bool, bool, bool, int, int, int]:
     write_json_feed(PUBLIC)
     feed_urls_patched = fix_xml_feed_urls(PUBLIC)
     xml_patched = fix_xml_feeds(PUBLIC)
+    feeds_deduped = dedupe_xml_feeds(PUBLIC)
     news_shrunk = shrink_news_sitemap(PUBLIC)
     return (
         sitemap_patched, robots_written, llms_written, llms_full_written,
-        feed_urls_patched, xml_patched, news_shrunk,
+        feed_urls_patched, xml_patched, feeds_deduped, news_shrunk,
     )
 
 
@@ -1178,7 +1181,7 @@ def main() -> None:
 
     (
         sitemap_patched, robots_written, llms_written, llms_full_written,
-        feed_urls_patched, xml_patched, news_shrunk,
+        feed_urls_patched, xml_patched, feeds_deduped, news_shrunk,
     ) = _finalize_build()
 
     c = ctx.counters
@@ -1216,6 +1219,7 @@ def main() -> None:
         f"{sitemap_patched} sitemap entries refreshed, "
         f"{feed_urls_patched} feed(s) URL-repaired, "
         f"{xml_patched} XML feed(s) scrubbed, "
+        f"{feeds_deduped} XML feed(s) deduped, "
         f"{news_shrunk} news-sitemap shrunk, "
         f"robots.txt {'updated' if robots_written else 'unchanged'}, "
         f"llms.txt {'updated' if llms_written else 'unchanged'}, "

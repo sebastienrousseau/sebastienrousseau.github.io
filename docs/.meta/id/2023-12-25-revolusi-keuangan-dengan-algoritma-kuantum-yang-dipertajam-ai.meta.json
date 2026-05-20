@@ -1,11 +1,11 @@
 {
-  "date": "Dec 25, 2023",
-  "language": "id-ID",
-  "locale": "id_ID",
+  "keywords": "Quantum Computing, AI Algorithms, Financial Mathematics, Banking Technology, Risk Management, Algorithm Design, Data Analysis, Investment Strategies, Quantum Finance, Machine Learning",
   "subtitle": "Unleashing the Power of Quantum for Financial Innovation: AI at the Heart of Next-Gen Algorithms",
   "banner": "https://cloudcdn.pro/stocks/images/circuit_board_cityscape.webp",
+  "banner_alt": "Revolutionising Finance with AI-Enhanced Quantum Algorithms",
   "title": "[ID DRAFT] Revolutionising Finance with AI-Enhanced Quantum Algorithms",
+  "language": "id-ID",
+  "date": "Dec 25, 2023",
   "description": "Explore the transformative role of AI in quantum algorithms for finance, with a focus on their mathematical intricacies and banking applications.",
-  "keywords": "Quantum Computing, AI Algorithms, Financial Mathematics, Banking Technology, Risk Management, Algorithm Design, Data Analysis, Investment Strategies, Quantum Finance, Machine Learning",
-  "banner_alt": "Revolutionising Finance with AI-Enhanced Quantum Algorithms"
+  "locale": "id_ID"
 }

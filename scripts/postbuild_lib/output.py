@@ -586,6 +586,82 @@ def fix_xml_feeds(public: Path) -> int:
     return n
 
 
+# Detect and strip duplicate <item>/<entry>/<url> blocks emitted by the upstream
+# SSG when many translation files share the same publication date — the
+# generator can collapse multiple locale files onto the same per-item URL
+# instead of emitting distinct per-locale URLs, producing identical-by-link
+# duplicates that fail xmlls/lib2-news validation downstream.
+_RSS_ITEM_RE = re.compile(r'<item>[\s\S]*?</item>', re.IGNORECASE)
+_ATOM_ENTRY_RE = re.compile(r'<entry>[\s\S]*?</entry>', re.IGNORECASE)
+_SITEMAP_URL_RE = re.compile(r'<url>[\s\S]*?</url>', re.IGNORECASE)
+_LINK_RE = re.compile(r'<link[^>]*>([\s\S]*?)</link>', re.IGNORECASE)
+_ATOM_LINK_HREF_RE = re.compile(r'<link[^>]*\bhref="([^"]+)"', re.IGNORECASE)
+_LOC_RE = re.compile(r'<loc>([\s\S]*?)</loc>', re.IGNORECASE)
+
+
+def _dedupe_blocks(text: str, block_re: re.Pattern[str], key_fn) -> tuple[str, int]:
+    """Walk ``block_re`` matches in order, keep the first occurrence of each
+    ``key_fn(block)`` value, drop subsequent duplicates. Returns (new_text,
+    dropped_count). Non-block content is preserved verbatim."""
+    seen: set[str] = set()
+    out: list[str] = []
+    cursor = 0
+    dropped = 0
+    for m in block_re.finditer(text):
+        out.append(text[cursor:m.start()])
+        block = m.group(0)
+        key = key_fn(block)
+        if key and key in seen:
+            dropped += 1
+        else:
+            if key:
+                seen.add(key)
+            out.append(block)
+        cursor = m.end()
+    out.append(text[cursor:])
+    return "".join(out), dropped
+
+
+def _rss_key(block: str) -> str:
+    m = _LINK_RE.search(block)
+    return m.group(1).strip() if m else ""
+
+
+def _atom_key(block: str) -> str:
+    # Prefer the self/alternate <link href="…"> form used in Atom entries.
+    for m in _ATOM_LINK_HREF_RE.finditer(block):
+        href = m.group(1).strip()
+        if href:
+            return href
+    return ""
+
+
+def _sitemap_key(block: str) -> str:
+    m = _LOC_RE.search(block)
+    return m.group(1).strip() if m else ""
+
+
+def dedupe_xml_feeds(public: Path) -> int:
+    """Drop duplicate <item>/<entry>/<url> blocks from RSS / Atom /
+    news-sitemap. Dedup key is the canonical URL (link/href/loc). Returns
+    the count of files actually rewritten."""
+    n = 0
+    targets = [
+        (public / "rss.xml",          _RSS_ITEM_RE,    _rss_key),
+        (public / "atom.xml",         _ATOM_ENTRY_RE,  _atom_key),
+        (public / "news-sitemap.xml", _SITEMAP_URL_RE, _sitemap_key),
+    ]
+    for xml, block_re, key_fn in targets:
+        if not xml.is_file():
+            continue
+        text = xml.read_text(encoding="utf-8")
+        new, dropped = _dedupe_blocks(text, block_re, key_fn)
+        if dropped:
+            xml.write_text(new, encoding="utf-8")
+            n += 1
+    return n
+
+
 _NEWS_TITLE_RE = re.compile(r'(<news:title>)([\s\S]*?)(</news:title>)', re.IGNORECASE)
 _NEWS_KEYWORDS_RE = re.compile(r'(<news:keywords>)([\s\S]*?)(</news:keywords>)', re.IGNORECASE)
 

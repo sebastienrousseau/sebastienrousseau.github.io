@@ -1,11 +1,11 @@
 {
-  "language": "pl-PL",
   "date": "May 18, 2026",
-  "subtitle": "Kryptografia kwantowa przeszła od skanowania horyzontu do dyscypliny wdrożeniowej: standardy NIST PQC są gotowe, brytyjska NCSC zawęziła wybór algorytmów, prace protokołowe IETF wciąż dojrzewają, a gwarancje QKD przechodzą od pewności laboratoryjnej do języka certyfikacji.",
   "locale": "pl_PL",
-  "banner_alt": "Mapa migracji do kryptografii kwantowo-bezpiecznej na 2026 rok pokazująca standardy NIST PQC, prace nad protokołami hybrydowymi, gwarancje QKD, agilność kryptograficzną i poziomy ryzyka danych bankowych",
   "keywords": "kryptografia kwantowa 2026, kryptografia postkwantowa, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybrydowa wymiana kluczy, QKD, ETSI QKD, ISO IEC 23837, agilność kryptograficzna, harvest now decrypt later, HNDL, kryptografia usług finansowych, bezpieczeństwo bankowe",
+  "title": "Reset kryptografii kwantowej w 2026: standardy PQC, gwarancje QKD i prace migracyjne, których banki nie mogą odłożyć",
+  "language": "pl-PL",
+  "subtitle": "Kryptografia kwantowa przeszła od skanowania horyzontu do dyscypliny wdrożeniowej: standardy NIST PQC są gotowe, brytyjska NCSC zawęziła wybór algorytmów, prace protokołowe IETF wciąż dojrzewają, a gwarancje QKD przechodzą od pewności laboratoryjnej do języka certyfikacji.",
+  "banner_alt": "Mapa migracji do kryptografii kwantowo-bezpiecznej na 2026 rok pokazująca standardy NIST PQC, prace nad protokołami hybrydowymi, gwarancje QKD, agilność kryptograficzną i poziomy ryzyka danych bankowych",
   "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
-  "description": "Kryptografia kwantowa w 2026 roku to już nie debata o tym, czy komputery kwantowe są blisko. To program migracyjny obejmujący kryptografię postkwantową, agilność kryptograficzną, gwarancje kwantowej dystrybucji kluczy, standardy protokołów, gotowość dostawców i długożyjące dane finansowe, które są już narażone na ryzyko harvest-now-decrypt-later.",
-  "title": "Reset kryptografii kwantowej w 2026: standardy PQC, gwarancje QKD i prace migracyjne, których banki nie mogą odłożyć"
+  "description": "Kryptografia kwantowa w 2026 roku to już nie debata o tym, czy komputery kwantowe są blisko. To program migracyjny obejmujący kryptografię postkwantową, agilność kryptograficzną, gwarancje kwantowej dystrybucji kluczy, standardy protokołów, gotowość dostawców i długożyjące dane finansowe, które są już narażone na ryzyko harvest-now-decrypt-later."
 }
