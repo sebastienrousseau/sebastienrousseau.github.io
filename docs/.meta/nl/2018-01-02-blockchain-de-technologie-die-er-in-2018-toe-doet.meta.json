@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
-  "language": "nl-NL",
   "keywords": "Blockchain, gedistribueerd grootboek, smart contracts, tokenisatie, Ethereum, Bitcoin, fintech, regulering",
-  "subtitle": "Een gedistribueerd grootboek dat vertrouwen, eigendom en uitwisseling herdefinieert",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
   "banner_alt": "Conceptuele weergave van een blockchain-netwerk",
-  "title": "Blockchain: de technologie die er in 2018 toe doet",
-  "description": "Blockchain als gedistribueerd grootboek herdefinieert vertrouwen, eigendom en de uitwisseling van waarde over financiële systemen heen.",
+  "language": "nl-NL",
   "locale": "nl_NL",
-  "date": "January 2, 2018"
+  "date": "January 2, 2018",
+  "description": "Blockchain als gedistribueerd grootboek herdefinieert vertrouwen, eigendom en de uitwisseling van waarde over financiële systemen heen.",
+  "title": "Blockchain: de technologie die er in 2018 toe doet",
+  "subtitle": "Een gedistribueerd grootboek dat vertrouwen, eigendom en uitwisseling herdefinieert"
 }
