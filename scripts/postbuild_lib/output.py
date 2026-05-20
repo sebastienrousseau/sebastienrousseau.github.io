@@ -677,50 +677,61 @@ def _normalise_url(url: str) -> str:
     return url.rstrip("/")
 
 
-def augment_sitemap_with_rendered_pages(public: Path) -> int:
-    """Append any rendered ``public/**/index.html`` page that is not yet
-    listed in ``public/sitemap.xml`` (or any per-language sitemap index
-    it references).
+def _path_excluded_from_sitemap(path: str) -> bool:
+    """Mirror the exclude policy used by test_sitemap_completeness."""
+    if any(path.startswith(p) for p in _SITEMAP_EXCLUDE_PREFIXES):
+        return True
+    return any(
+        path.startswith(tail) or path == tail.rstrip("/")
+        for tail in _SITEMAP_EXCLUDE_TAILS
+    )
 
-    Why this exists: the upstream SSG generates the initial sitemap.xml
-    before our Python post-pipeline runs. Topic-cluster pages and
-    per-locale topic forks are written *after* ssg, so they're absent
-    from the initial sitemap. Without this pass,
-    ``test_sitemap_completeness`` fails on every new cluster.
 
-    Returns the count of `<url>` entries appended."""
-    sitemap = public / "sitemap.xml"
-    if not sitemap.is_file():
-        return 0
-    text = sitemap.read_text(encoding="utf-8")
-    # Collect already-listed URLs (normalised).
-    existing = {
+def _collect_sitemap_urls(text: str) -> set[str]:
+    return {
         _normalise_url(m.group(1))
         for m in re.finditer(r'<loc>([^<]+)</loc>', text)
     }
-    # Walk public/ for index.html. Mirror the test's exclude policy.
+
+
+def _missing_rendered_urls(public: Path, existing: set[str]) -> list[str]:
+    """Walk ``public/`` for index.html files; return canonical URLs not
+    yet in the sitemap and not in the exclude policy."""
     additions: list[str] = []
-    today = ""
-    m = re.search(r'<lastmod>(\d{4}-\d{2}-\d{2})</lastmod>', text)
-    if m:
-        today = m.group(1)
     for html in sorted(public.rglob("index.html")):
         rel = html.relative_to(public).as_posix()
-        path = "/" + (rel[: -len("index.html")] if rel.endswith("index.html") else rel)
-        if any(path.startswith(p) for p in _SITEMAP_EXCLUDE_PREFIXES):
-            continue
-        if any(path.startswith(tail) or path == tail.rstrip("/") for tail in _SITEMAP_EXCLUDE_TAILS):
+        path = "/" + rel[: -len("index.html")]  # always ends with '/'
+        if _path_excluded_from_sitemap(path):
             continue
         url = f"{_SITE}{path}"
         if _normalise_url(url) in existing:
             continue
         additions.append(url)
         existing.add(_normalise_url(url))
+    return additions
+
+
+def augment_sitemap_with_rendered_pages(public: Path) -> int:
+    """Append any rendered ``public/**/index.html`` page that is not yet
+    listed in ``public/sitemap.xml``.
+
+    Why this exists: the upstream SSG generates sitemap.xml before our
+    Python post-pipeline runs. Topic-cluster pages and per-locale topic
+    forks are written *after* ssg, so they're absent from the initial
+    sitemap. Without this pass, ``test_sitemap_completeness`` fails on
+    every new cluster.
+
+    Returns the count of `<url>` entries appended."""
+    sitemap = public / "sitemap.xml"
+    if not sitemap.is_file():
+        return 0
+    text = sitemap.read_text(encoding="utf-8")
+    additions = _missing_rendered_urls(public, _collect_sitemap_urls(text))
     if not additions:
         return 0
-    # Insert before </urlset>; emit minimally-formatted <url> blocks.
-    # `additions` already ends with `/` (path form `https://…/topics/foo/`),
-    # so append index.html without a separator.
+    m = re.search(r'<lastmod>(\d{4}-\d{2}-\d{2})</lastmod>', text)
+    today = m.group(1) if m else ""
+    # `additions` already ends with `/`, so append index.html with no sep.
     block = "".join(
         f"\n<url>\n  <changefreq>weekly</changefreq>\n"
         f"  <lastmod>{today}</lastmod>\n  <loc>{u}index.html</loc>\n</url>"
