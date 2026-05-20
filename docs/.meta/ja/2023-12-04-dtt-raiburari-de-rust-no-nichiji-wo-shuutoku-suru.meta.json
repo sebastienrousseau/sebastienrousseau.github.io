@@ -1,12 +1,12 @@
 {
-  "banner_alt": "ガラスの建物の上の時計",
   "locale": "ja_JP",
   "last_reviewed": "2026-05-11",
-  "title": "dtt ライブラリで Rust の日時を習得する",
-  "keywords": "dtt, 日付, 時刻, Rust, タイムゾーン, RFC 3339, ISO 8601, ライブラリ, 解析, フォーマット",
-  "date": "December 4, 2023",
-  "banner": "https://cloudcdn.pro/stocks/images/luca-bravo-VowIH4-VlIw-unsplash.webp",
-  "language": "ja-JP",
   "description": "dtt は、解析、フォーマット、タイムゾーン操作のための包括的な日付・時刻 Rust ライブラリです。",
-  "subtitle": "Rust 製の包括的な日付・時刻ライブラリ"
+  "title": "dtt ライブラリで Rust の日時を習得する",
+  "language": "ja-JP",
+  "subtitle": "Rust 製の包括的な日付・時刻ライブラリ",
+  "banner": "https://cloudcdn.pro/stocks/images/luca-bravo-VowIH4-VlIw-unsplash.webp",
+  "keywords": "dtt, 日付, 時刻, Rust, タイムゾーン, RFC 3339, ISO 8601, ライブラリ, 解析, フォーマット",
+  "banner_alt": "ガラスの建物の上の時計",
+  "date": "December 4, 2023"
 }

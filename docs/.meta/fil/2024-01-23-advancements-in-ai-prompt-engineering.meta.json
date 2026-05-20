@@ -1,11 +1,11 @@
 {
-  "banner_alt": "رجل يحلّل بيانات على الشاشات",
-  "description": "استكشف تقدّمات 2024 في هندسة الموجِّهات (AI Prompt Engineering) — اتّجاهات وتقنيات مبتكرة تُحدث ثورة في قطاعَي التكنولوجيا والتمويل.",
   "date": "Jan 23, 2024",
-  "title": "هندسة الموجِّهات في الذكاء الاصطناعي 2024: تقنيات فعّالة",
-  "language": "fil-PH",
   "banner": "https://cloudcdn.pro/stocks/images/ai-prompt-engineering-modern-office.webp",
+  "banner_alt": "رجل يحلّل بيانات على الشاشات",
   "subtitle": "إعادة تشكيل التفاعل بين الإنسان والحاسوب عبر تقدّمات في التعليمات المخصّصة",
-  "locale": "fil_PH",
-  "keywords": "AI Prompt Engineering، التعليمات المخصّصة، الذكاء الاصطناعي متعدّد الشخصيات، chain of thought، الحوسبة الكمومية، الذكاء الاصطناعي الأخلاقي، adaptive prompting، zero shot، few shot، اتّجاهات تكنولوجيا الذكاء الاصطناعي"
+  "language": "fil-PH",
+  "description": "استكشف تقدّمات 2024 في هندسة الموجِّهات (AI Prompt Engineering) — اتّجاهات وتقنيات مبتكرة تُحدث ثورة في قطاعَي التكنولوجيا والتمويل.",
+  "title": "هندسة الموجِّهات في الذكاء الاصطناعي 2024: تقنيات فعّالة",
+  "keywords": "AI Prompt Engineering، التعليمات المخصّصة، الذكاء الاصطناعي متعدّد الشخصيات، chain of thought، الحوسبة الكمومية، الذكاء الاصطناعي الأخلاقي، adaptive prompting، zero shot، few shot، اتّجاهات تكنولوجيا الذكاء الاصطناعي",
+  "locale": "fil_PH"
 }

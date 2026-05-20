@@ -1,11 +1,11 @@
 {
+  "date": "May 17, 2026",
+  "description": "Agentic AI has crossed from pilot into production across global banking. 70% of institutions are using it to some degree; only one in five has a mature governance model. Meanwhile, autonomous adversaries are operating at machine speed, the legacy COBOL estate the new systems must interoperate with was written for the batch-processing assumptions of the 1960s, and the EU AI Act's August 2026 high-risk deadline is twelve weeks away. This is the engineering and governance position a bank needs to hold.",
   "locale": "ha_NG",
   "subtitle": "Agentic AI has crossed from pilot into production. 70% of banks are using it; only one in five has a mature governance model. Adversaries are operating at machine speed, the legacy estate was written for the batch-processing assumptions of the 1960s, and the EU AI Act's high-risk deadline is twelve weeks away.",
-  "keywords": "agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, COBOL modernisation, mainframe, vibe coding, vibe hacking, autonomous agents, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, third-party risk management, TPRM, vendor risk, post-quantum cryptography, agent control plane, FCA, SM&CR, 12-week action plan, Sebastien Rousseau",
-  "description": "Agentic AI has crossed from pilot into production across global banking. 70% of institutions are using it to some degree; only one in five has a mature governance model. Meanwhile, autonomous adversaries are operating at machine speed, the legacy COBOL estate the new systems must interoperate with was written for the batch-processing assumptions of the 1960s, and the EU AI Act's August 2026 high-risk deadline is twelve weeks away. This is the engineering and governance position a bank needs to hold.",
-  "banner_alt": "Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows",
   "banner": "https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp",
   "title": "Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It",
-  "date": "May 17, 2026",
-  "language": "ha-NG"
+  "language": "ha-NG",
+  "keywords": "agentic engineering, spec-driven development, banks, financial services, AI governance, EU AI Act, DORA, SR 11-7, NIST AI RMF, ISO 42001, COBOL modernisation, mainframe, vibe coding, vibe hacking, autonomous agents, Claude Code, GitHub Spec Kit, AI Bill of Materials, AIBOM, human in the loop, HITL, human on the loop, HOTL, third-party risk management, TPRM, vendor risk, post-quantum cryptography, agent control plane, FCA, SM&CR, 12-week action plan, Sebastien Rousseau",
+  "banner_alt": "Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows"
 }

@@ -1145,6 +1145,15 @@ def _process_page(page: Path, ctx: _PostbuildContext) -> None:
     # into <head> so pa11y AAA stops flagging "link in body".
     patched_hl, n_hoisted = hoist_body_link_stylesheets(patched_hl)
     ctx.counters.link_hoisted += n_hoisted
+    # Late-binding CDN-transform pass: inject_article_furniture +
+    # inject_github_stats can ADD new <img src="https://cloudcdn.pro/...">
+    # tags AFTER the first wrap pass ran in _apply_seo_passes. Without a
+    # second pass those late-added imgs ship as raw CDN URLs, which
+    # bypasses WebP conversion + width-matching and dings PSI/Lighthouse
+    # LCP scores. Already-wrapped URLs are no-op (skipped by the
+    # "starts with /api/" guard in _wrap_cdn_path).
+    patched_hl, n_cdn_late = wrap_cdn_images_in_transform(patched_hl)
+    ctx.counters.cdn_wrapped += n_cdn_late
     patched2 = inject_jsonld_hashes(patched_hl)
     if patched2 != prev_hl:
         ctx.counters.csp_patched += 1

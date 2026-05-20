@@ -61,8 +61,24 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add _data/gh-stats.json
           git commit -m "chore(stats): refresh gh-stats.json [skip ci]"
-          # Push uses the workflow's `contents: write` permission. The
-          # `[skip ci]` token in the commit message keeps the build /
-          # pages-deploy / schema-diff workflows from re-running on this
-          # data-only change.
-          git push origin HEAD:main
+          # Branch protection on main can block direct pushes even with
+          # the workflow's `contents: write` token if the bot isn't on
+          # the bypass allowlist. The data is auto-generated and a
+          # missed nightly refresh is non-fatal — log the rejection,
+          # don't fail the workflow.
+          # When the push DOES land, the `[skip ci]` token in the commit
+          # message keeps build / pages-deploy / schema-diff from re-
+          # running on this data-only change.
+          if git push origin HEAD:main 2>&1 | tee /tmp/push.log; then
+            echo "✓ gh-stats refreshed on main"
+          elif grep -qE "protected branch|Protected branch update failed|GH006" /tmp/push.log; then
+            echo "⚠ branch protection blocked the push — exiting clean."
+            echo "  To unblock, add github-actions[bot] to the branch"
+            echo "  protection allowlist OR re-add the PR + admin-merge"
+            echo "  dance with a PAT that has 'Bypass branch protections'."
+            exit 0
+          else
+            echo "✗ push failed for an unexpected reason — failing the"
+            echo "  workflow so the cause can be investigated."
+            exit 1
+          fi

@@ -1,16 +1,16 @@
 {
-  "locale": "es_ES",
-  "language": "es-ES",
-  "tags": "criptografía cuántica, criptografía postcuántica, PQC, NIST, FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC, IETF, TLS, IPsec, QKD, ETSI, cripto-agilidad, HNDL, seguridad bancaria",
-  "keywords": "criptografía cuántica 2026, criptografía postcuántica, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, intercambio de claves híbrido, QKD, ETSI QKD, ISO IEC 23837, cripto-agilidad, harvest now decrypt later, HNDL, criptografía para servicios financieros, seguridad bancaria",
-  "item_title": "El reinicio de la criptografía cuántica en 2026: estándares PQC, garantía de QKD y el trabajo de migración que los bancos no pueden aplazar",
-  "twitter_description": "El reinicio de la criptografía cuántica 2026: estándares NIST PQC, recomendaciones de migración del NCSC, preparación protocolar del IETF, garantía de QKD, cripto-agilidad y lo que los bancos deberían priorizar esta semana.",
-  "title": "El reinicio de la criptografía cuántica en 2026: estándares PQC, garantía de QKD y el trabajo de migración que los bancos no pueden aplazar",
-  "date": "May 18, 2026",
-  "subtitle": "La criptografía cuántica ha pasado de la prospectiva a la disciplina de implementación: los estándares NIST PQC están listos, la guía del NCSC británico ha estrechado las opciones de algoritmos, el trabajo protocolar del IETF todavía madura, y la garantía de QKD pasa de la confianza de laboratorio al lenguaje de certificación.",
   "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
-  "description": "La criptografía cuántica en 2026 ya no es un debate sobre la inminencia de los ordenadores cuánticos. Es un programa de migración que atraviesa la criptografía postcuántica, la cripto-agilidad, la garantía de la distribución cuántica de claves, los estándares de protocolo, la preparación de proveedores y los datos financieros de larga duración ya expuestos al riesgo «harvest-now-decrypt-later».",
+  "title": "El reinicio de la criptografía cuántica en 2026: estándares PQC, garantía de QKD y el trabajo de migración que los bancos no pueden aplazar",
+  "language": "es-ES",
+  "twitter_title": "Criptografía cuántica 2026: estándares PQC y migración bancaria",
   "banner_alt": "Mapa de migración hacia una criptografía resistente a lo cuántico para 2026 — estándares NIST PQC, trabajo sobre protocolos híbridos, garantía de QKD, cripto-agilidad y niveles de riesgo de datos bancarios",
+  "keywords": "criptografía cuántica 2026, criptografía postcuántica, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, intercambio de claves híbrido, QKD, ETSI QKD, ISO IEC 23837, cripto-agilidad, harvest now decrypt later, HNDL, criptografía para servicios financieros, seguridad bancaria",
+  "twitter_description": "El reinicio de la criptografía cuántica 2026: estándares NIST PQC, recomendaciones de migración del NCSC, preparación protocolar del IETF, garantía de QKD, cripto-agilidad y lo que los bancos deberían priorizar esta semana.",
+  "tags": "criptografía cuántica, criptografía postcuántica, PQC, NIST, FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC, IETF, TLS, IPsec, QKD, ETSI, cripto-agilidad, HNDL, seguridad bancaria",
+  "locale": "es_ES",
+  "subtitle": "La criptografía cuántica ha pasado de la prospectiva a la disciplina de implementación: los estándares NIST PQC están listos, la guía del NCSC británico ha estrechado las opciones de algoritmos, el trabajo protocolar del IETF todavía madura, y la garantía de QKD pasa de la confianza de laboratorio al lenguaje de certificación.",
+  "description": "La criptografía cuántica en 2026 ya no es un debate sobre la inminencia de los ordenadores cuánticos. Es un programa de migración que atraviesa la criptografía postcuántica, la cripto-agilidad, la garantía de la distribución cuántica de claves, los estándares de protocolo, la preparación de proveedores y los datos financieros de larga duración ya expuestos al riesgo «harvest-now-decrypt-later».",
   "item_description": "El reinicio de la criptografía cuántica 2026: estándares NIST PQC, recomendaciones de migración del NCSC, preparación protocolar del IETF, garantía de QKD, cripto-agilidad y lo que los bancos deberían priorizar esta semana.",
-  "twitter_title": "Criptografía cuántica 2026: estándares PQC y migración bancaria"
+  "date": "May 18, 2026",
+  "item_title": "El reinicio de la criptografía cuántica en 2026: estándares PQC, garantía de QKD y el trabajo de migración que los bancos no pueden aplazar"
 }
