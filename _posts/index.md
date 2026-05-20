@@ -235,6 +235,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html" title="Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide">
+<img alt="Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering" src="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Cloud Native · DORA · Banking</span>
+<h3><a href="/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html">Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-20">May 20, 2026</time></p>
+<p class="newsroom-excerpt">Cloud native banking in 2026 is a regulated platform-engineering discipline: Kubernetes plus VM coexistence, DORA-tested resilience, sovereign cloud, data portability, and proof that critical services can survive provider disruption. Architecture is now a supervisory artefact.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-19-global-wholesale-payments-economics-2026/index.html" title="Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability">
 <img alt="Global wholesale payments architecture map for 2026 showing ISO 20022, RTGS renewal, cross-border corridors, liquidity windows, and DLT settlement pilots" src="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -293,19 +305,6 @@ site_software: "Static Site Generator, Rust"
 <p class="newsroom-excerpt">Stablecoins cannot pay yield under the GENIUS Act. BlackRock's BRSRV and BSTBL filings show the workaround — a tokenised money-market fund running alongside a regulated stablecoin to deliver yield through an adjacent, compliant rail.</p>
 </div>
 </article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html" title="Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance">
-<img alt="Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA" src="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Post-Quantum · Corporate Banking · Board</span>
-<h3><a href="/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html">Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-14">May 14, 2026</time></p>
-<p class="newsroom-excerpt">Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap, the EU, UK and Australian timelines clarified, and BIS Project Leap proving feasibility, the board question is no longer whether to migrate — but whether it can finish before today's data outlives its cryptographic shelf-life.</p>
-</div>
-</article>
-
 
 </div>
 

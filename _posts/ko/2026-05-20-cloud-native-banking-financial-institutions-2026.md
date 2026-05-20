@@ -1,12 +1,9 @@
 ---
-
-# Front Matter (YAML)
-
 author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering"
 banner_height: "571"
 banner_width: "1425"
-banner: "https://cloudcdn.pro/stock/images/cloud-native-banking-2026-banner.webp"
+banner: "https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp"
 cdn: "https://cloudcdn.pro"
 charset: "UTF-8"
 cname: "sebastienrousseau.com"
@@ -14,18 +11,18 @@ copyright: "© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved."
 date: "May 20, 2026"
 description: "Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption."
 format-detection: "telephone=no"
-hreflang: "en"
+hreflang: "ko"
 icon: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau.svg"
-id: "https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026"
+id: "https://sebastienrousseau.com/ko/2026-05-20-cloud-native-banking-financial-institutions-2026"
 image_alt: "Black and White Portrait of Sebastien Rousseau"
 image_height: "162"
 image_width: "162"
 image: "https://cloudcdn.pro/stocks/images/sebastien-rousseau.png"
 keywords: "cloud native banking 2026, Kubernetes banks, financial institutions cloud, DORA 2026, cloud resilience, Red Hat OpenShift, Portworx, VM container coexistence, bank cloud sovereignty, financial services cloud dependency, operational resilience, disaster recovery, cloud exit strategy, AI banking workloads"
-language: "en-GB"
+language: "ko"
 last_reviewed: "2026-05-20"
 layout: "report"
-locale: "en_GB"
+locale: "ko_KR"
 logo_alt: "Logo for Sebastien Rousseau"
 logo_height: "44"
 logo_width: "44"
@@ -33,7 +30,7 @@ logo: "https://cloudcdn.pro/clients/sebastienrousseau/v1/logos/sebastienrousseau
 menu: ""
 measurementID: "G-169G4ET5HQ"
 name: "Sebastien Rousseau"
-permalink: "https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026"
+permalink: "https://sebastienrousseau.com/ko/2026-05-20-cloud-native-banking-financial-institutions-2026"
 rating: "general"
 referrer: "no-referrer"
 robots: "index, follow"
@@ -44,13 +41,11 @@ subtitle: "Cloud native for banks has matured from container adoption to regulat
 tags: "cloud native banking, Kubernetes, DORA, financial institutions, OpenShift, Portworx, cloud sovereignty, operational resilience, disaster recovery, VM container coexistence, AI workloads, third-party risk, cloud dependency"
 theme-color: "0, 83, 191"
 title: "Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide"
-url: "https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026"
+url: "https://sebastienrousseau.com/ko/2026-05-20-cloud-native-banking-financial-institutions-2026"
 viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
-
-# RSS - The RSS feed front matter (YAML).
 atom_link: "https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026/rss.xml"
 category: "Technology"
-docs: https://validator.w3.org/feed/docs/rss2.html
+docs: "https://validator.w3.org/feed/docs/rss2.html"
 generator: "Static Site Generator (SSG) (version 0.0.26)"
 item_description: "The 2026 cloud-native banking blueprint — Kubernetes, DORA supervision, VM/container convergence, sovereign cloud, operational resilience, and data portability."
 item_guid: "https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026/rss.xml"
@@ -63,8 +58,6 @@ pub_date: "Wed, 20 May 2026 06:06:06 +0000"
 ttl: "60"
 type: "article"
 webmaster: "contact@sebastienrousseau.com"
-
-# Apple - The Apple front matter (YAML).
 apple_mobile_web_app_orientations: "portrait"
 apple_touch_icon_sizes: "192x192"
 apple-mobile-web-app-capable: "yes"
@@ -72,13 +65,7 @@ apple-mobile-web-app-status-bar-inset: "black"
 apple-mobile-web-app-status-bar-style: "black-translucent"
 apple-mobile-web-app-title: "Cloud Native Banking"
 apple-touch-fullscreen: "yes"
-
-# MS Application - The MS Application front matter (YAML).
-
 msapplication-navbutton-color: "0, 83, 191"
-
-# Twitter Card - The Twitter Card front matter (YAML).
-
 twitter_card: "summary_large_image"
 twitter_creator: "@wwdseb"
 twitter_description: "The 2026 cloud-native banking blueprint — Kubernetes, DORA supervision, VM/container convergence, sovereign cloud, operational resilience, and data portability."
@@ -87,8 +74,6 @@ twitter_image_alt: "Logo of Sebastien Rousseau"
 twitter_site: "@wwdseb"
 twitter_title: "Cloud Native Banking 2026: Kubernetes, DORA, and Sovereignty"
 twitter_url: "https://sebastienrousseau.com/2026-05-20-cloud-native-banking-financial-institutions-2026"
-
-# Humans.txt - The Humans.txt front matter (YAML).
 author_website: "https://sebastienrousseau.com"
 author_twitter: "@wwdseb"
 author_location: "London, UK"
@@ -97,8 +82,11 @@ site_last_updated: "2026-05-20"
 site_standards: "HTML5, CSS3, RSS, Atom, JSON, XML, YAML, Markdown, TOML"
 site_components: "Kaishi, Kaishi Builder, Kaishi CLI, Kaishi Templates, Kaishi Themes"
 site_software: "Static Site Generator, Rust"
-
 ---
+
+<!-- translation-stub: replace this body in Claude Code -->
+
+> _Translation pending — read the [English original](/2026-05-20-cloud-native-banking-financial-institutions-2026/) while we localise._
 
 # Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide
 

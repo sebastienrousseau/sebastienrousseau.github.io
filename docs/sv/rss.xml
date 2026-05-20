@@ -6,8 +6,31 @@
     <description>Artiklar på svenska: tillämpad AI, ISO 20022-betalningar, postkvantkryptografi och transformationen av grossistbetalningar.</description>
     <atom:link href="https://sebastienrousseau.com/sv/rss.xml" rel="self" type="application/rss+xml"/>
     <language>sv-SE</language>
-    <lastBuildDate>Wed, 20 May 2026 05:53:58 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 07:59:56 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna.</copyright>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/sv/2026-05-20-cloud-native-banking-financial-institutions-2026/</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-20-cloud-native-banking-financial-institutions-2026/</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>cloud native banking 2026</category>
+      <category>Kubernetes banks</category>
+      <category>financial institutions cloud</category>
+      <category>DORA 2026</category>
+      <category>cloud resilience</category>
+      <category>Red Hat OpenShift</category>
+      <category>Portworx</category>
+      <category>VM container coexistence</category>
+      <category>bank cloud sovereignty</category>
+      <category>financial services cloud dependency</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>cloud exit strategy</category>
+      <category>AI banking workloads</category>
+    </item>
     <item>
       <title>Globala stora betalningar 2026: ISO 20022, förnyelse av RTGS och interoperabilitetens ekonomi</title>
       <link>https://sebastienrousseau.com/sv/2026-05-19-global-wholesale-payments-economics-2026/</link>

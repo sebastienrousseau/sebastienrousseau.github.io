@@ -13,6 +13,12 @@ SRC = ROOT / "_posts" / "articles.md"
 
 # (date_iso, date_display, eyebrow, title, image_url, image_alt, excerpt, href)
 ARTICLES = [
+    ("2026-05-20", "May 20, 2026", "Cloud Native · DORA · Banking",
+     "Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide",
+     "https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp",
+     "Cloud-native banking architecture for 2026 showing Kubernetes, VM coexistence, DORA resilience, sovereign cloud, observability, and bank platform engineering",
+     "Cloud native banking in 2026 is a regulated platform-engineering discipline: Kubernetes plus VM coexistence, DORA-tested resilience, sovereign cloud, data portability, and proof that critical services can survive provider disruption. Architecture is now a supervisory artefact.",
+     "/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html"),
     ("2026-05-19", "May 19, 2026", "Payments · ISO 20022 · Cross-Border",
      "Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability",
      "https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp",

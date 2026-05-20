@@ -1,11 +1,11 @@
 {
-  "date": "Feb 12, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp",
-  "keywords": "Àkàndé, Voice Assistant, Natural Language Understanding, PDF Summaries, Efficient Caching, OpenAI GPT, Executive Assistance, Personal Assistance, Digital Assistants, Technology Innovation",
   "language": "yo-NG",
-  "locale": "yo_NG",
   "title": "Àkàndé: GPT-Powered Voice Assistant for Executives",
   "banner_alt": "A white, spherical modern device",
+  "subtitle": "Empowering Seamless Interactions with Cutting-Edge AI Technology",
+  "keywords": "Àkàndé, Voice Assistant, Natural Language Understanding, PDF Summaries, Efficient Caching, OpenAI GPT, Executive Assistance, Personal Assistance, Digital Assistants, Technology Innovation",
+  "banner": "https://cloudcdn.pro/stocks/images/akande-voice-assistant.webp",
   "description": "Discover how Àkàndé leverages OpenAI GPT's natural language understanding, PDF summaries, and efficient caching to redefine personal and executive assistance.",
-  "subtitle": "Empowering Seamless Interactions with Cutting-Edge AI Technology"
+  "date": "Feb 12, 2024",
+  "locale": "yo_NG"
 }

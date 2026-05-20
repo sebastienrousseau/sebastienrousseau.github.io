@@ -1,11 +1,11 @@
 {
-  "date": "May 14, 2026",
-  "locale": "yo_NG",
-  "subtitle": "Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026 and the BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate — it is whether the migration can be completed before the shelf-life of today's data expires.",
-  "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
   "title": "Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance",
+  "subtitle": "Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026 and the BIS Project Leap proving feasibility in live payment systems, the board-level question is no longer whether to migrate — it is whether the migration can be completed before the shelf-life of today's data expires.",
   "language": "yo-NG",
-  "banner_alt": "Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA",
   "keywords": "post-quantum cryptography, PQC migration, corporate banking, financial services, G7 CEG roadmap, BIS Project Leap, ML-KEM, ML-DSA, FIPS 203, FIPS 204",
-  "description": "Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today's data expires."
+  "date": "May 14, 2026",
+  "banner_alt": "Post-quantum cryptography migration roadmap diagram — corporate banking infrastructure transitioning from RSA to ML-KEM and ML-DSA",
+  "banner": "https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp",
+  "description": "Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today's data expires.",
+  "locale": "yo_NG"
 }

@@ -6,8 +6,652 @@
     <description>AI, banking and payments expert. Senior payments leader. Applied AI, ISO 20022 migration, wholesale payments and post-quantum cryptography.</description>
     <atom:link href="https://sebastienrousseau.com/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Tue, 19 May 2026 06:06:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 06:06:06 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. All rights reserved.</copyright>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
+    <item>
+      <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
+      <link>https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</link>
+      <description>Cloud native banking in 2026 is about Kubernetes-based platform engineering, DORA-ready operational resilience, VM and container convergence, cloud sovereignty, AI workload placement, data portability, and proof that critical financial services can survive provider disruption.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html</guid>
+      <pubDate>Wed, 20 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/stocks/images/freeman-zhou-oV9hp8wXkPE.webp" type="image/webp" length="0"/>
+      <category>Technology</category>
+      <category>cloud native banking</category>
+      <category>Kubernetes</category>
+      <category>DORA</category>
+      <category>financial institutions</category>
+      <category>OpenShift</category>
+      <category>Portworx</category>
+      <category>cloud sovereignty</category>
+      <category>operational resilience</category>
+      <category>disaster recovery</category>
+      <category>VM container coexistence</category>
+      <category>AI workloads</category>
+      <category>third-party risk</category>
+      <category>cloud dependency</category>
+    </item>
     <item>
       <title>Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</title>
       <link>https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026</link>
@@ -535,1103 +1179,6 @@
       <category>コルレス銀行業務</category>
       <category>ホールセールCBDC</category>
       <category>DLT決済</category>
-    </item>
-    <item>
-      <title>תשלומי הסיטונאות הגלובליים ב-2026: ISO 20022, חידוש ה-RTGS וכלכלת יכולת הפעולה ההדדית</title>
-      <link>https://sebastienrousseau.com/he/2026-05-19-global-wholesale-payments-economics-2026/index.html</link>
-      <description>תשלומי הסיטונאות הגלובליים ב-2026 מעוצבים מחדש על ידי הרמוניזציה של ISO 20022, חידוש ה-RTGS, הרחבת חלונות הסילוק, גישת גופים חוץ-בנקאיים, ממשל ממשקי API, פיילוטים של DLT ופיצול בתשלומים חוצי-גבולות. הסוגיה הכלכלית היא יכולת פעולה הדדית, ולא רק תקשורת מסרים.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-19-global-wholesale-payments-economics-2026/index.html</guid>
-      <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>תשלומי סיטונאות</category>
-      <category>ISO 20022</category>
-      <category>RTGS</category>
-      <category>תשלומים חוצי-גבולות</category>
-      <category>BIS</category>
-      <category>CPMI</category>
-      <category>FSB</category>
-      <category>Swift</category>
-      <category>CBPR+</category>
-      <category>מפת הדרכים של G20</category>
-      <category>יכולת פעולה הדדית בתשלומים</category>
-      <category>בנקאות קורספונדנטית</category>
-      <category>CBDC סיטונאי</category>
-      <category>סילוק ב-DLT</category>
-    </item>
-    <item>
-      <title>Globala stora betalningar 2026: ISO 20022, förnyelse av RTGS och interoperabilitetens ekonomi</title>
-      <link>https://sebastienrousseau.com/sv/2026-05-19-global-wholesale-payments-economics-2026/index.html</link>
-      <description>Globala stora betalningar omformas 2026 av harmonisering av ISO 20022, förnyelse av RTGS, utvidgade avvecklingsfönster, tillträde för icke-banker, API-styrning, DLT-piloter och fragmentering av gränsöverskridande betalningar. Den ekonomiska frågan är interoperabilitet, inte enbart meddelandeformat.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-19-global-wholesale-payments-economics-2026/index.html</guid>
-      <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>stora betalningar</category>
-      <category>ISO 20022</category>
-      <category>RTGS</category>
-      <category>gränsöverskridande betalningar</category>
-      <category>BIS</category>
-      <category>CPMI</category>
-      <category>FSB</category>
-      <category>Swift</category>
-      <category>CBPR+</category>
-      <category>G20-färdplan</category>
-      <category>interoperabilitet för betalningar</category>
-      <category>korrespondentbank</category>
-      <category>grossist-CBDC</category>
-      <category>DLT-avveckling</category>
-    </item>
-    <item>
-      <title>Thanh toán bán buôn toàn cầu năm 2026: ISO 20022, đổi mới RTGS và kinh tế học của khả năng tương tác</title>
-      <link>https://sebastienrousseau.com/vi/2026-05-19-global-wholesale-payments-economics-2026/index.html</link>
-      <description>Thanh toán bán buôn toàn cầu năm 2026 đang được định hình lại bởi quá trình hài hòa hóa ISO 20022, đổi mới RTGS, mở rộng cửa sổ thanh toán, quyền truy cập của tổ chức phi ngân hàng, quản trị API, các thử nghiệm DLT và sự phân mảnh thanh toán xuyên biên giới. Vấn đề kinh tế là khả năng tương tác, không chỉ là tin điện.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/vi/2026-05-19-global-wholesale-payments-economics-2026/index.html</guid>
-      <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>thanh toán bán buôn</category>
-      <category>ISO 20022</category>
-      <category>RTGS</category>
-      <category>thanh toán xuyên biên giới</category>
-      <category>BIS</category>
-      <category>CPMI</category>
-      <category>FSB</category>
-      <category>Swift</category>
-      <category>CBPR+</category>
-      <category>lộ trình G20</category>
-      <category>khả năng tương tác thanh toán</category>
-      <category>ngân hàng đại lý</category>
-      <category>CBDC bán buôn</category>
-      <category>thanh toán DLT</category>
-    </item>
-    <item>
-      <title>Globalne płatności hurtowe w 2026 roku: ISO 20022, odnowienie RTGS i ekonomia interoperacyjności</title>
-      <link>https://sebastienrousseau.com/pl/2026-05-19-global-wholesale-payments-economics-2026/index.html</link>
-      <description>Globalne płatności hurtowe w 2026 roku są przekształcane przez harmonizację ISO 20022, odnowienie systemów RTGS, wydłużenie okien rozrachunkowych, dostęp podmiotów niebankowych, zarządzanie API, pilotaże DLT oraz fragmentację płatności transgranicznych. Stawką ekonomiczną jest interoperacyjność, a nie sama komunikatyka.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-19-global-wholesale-payments-economics-2026/index.html</guid>
-      <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>płatności hurtowe</category>
-      <category>ISO 20022</category>
-      <category>RTGS</category>
-      <category>płatności transgraniczne</category>
-      <category>BIS</category>
-      <category>CPMI</category>
-      <category>FSB</category>
-      <category>Swift</category>
-      <category>CBPR+</category>
-      <category>mapa drogowa G20</category>
-      <category>interoperacyjność płatności</category>
-      <category>bankowość korespondencka</category>
-      <category>hurtowy CBDC</category>
-      <category>rozrachunek DLT</category>
-    </item>
-    <item>
-      <title>2026 年全球大額支付：ISO 20022、RTGS 翻新與互通性的經濟學</title>
-      <link>https://sebastienrousseau.com/zh-hant/2026-05-19-global-wholesale-payments-economics-2026/index.html</link>
-      <description>2026 年全球大額支付正受到 ISO 20022 協調、RTGS 翻新、結算窗口延長、非銀行准入、API 治理、DLT 試點以及跨境支付分裂的重塑。經濟議題在於互通性，而不僅是訊息傳遞。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-05-19-global-wholesale-payments-economics-2026/index.html</guid>
-      <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>大額支付、ISO 20022、RTGS、跨境支付、BIS、CPMI、FSB、Swift、CBPR+、G20 路線圖、支付互通性、代理銀行、批發型 CBDC、DLT 結算</category>
-    </item>
-    <item>
-      <title>2026年全球批发支付：ISO 20022、RTGS更新与互操作性的经济学</title>
-      <link>https://sebastienrousseau.com/zh-hans/2026-05-19-global-wholesale-payments-economics-2026/index.html</link>
-      <description>2026年的全球批发支付正在被ISO 20022协调、RTGS更新、结算窗口延长、非银行机构准入、API治理、DLT试点以及跨境支付碎片化所重塑。其经济议题是互操作性，而不仅仅是消息传递。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-19-global-wholesale-payments-economics-2026/index.html</guid>
-      <pubDate>Tue, 19 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/meiying-ng-OrwkD-iWgqg.webp" type="image/webp" length="0"/>
-      <category>Finance</category>
-      <category>批发支付</category>
-      <category>ISO 20022</category>
-      <category>RTGS</category>
-      <category>跨境支付</category>
-      <category>BIS</category>
-      <category>CPMI</category>
-      <category>FSB</category>
-      <category>Swift</category>
-      <category>CBPR+</category>
-      <category>G20路线图</category>
-      <category>支付互操作性</category>
-      <category>代理银行</category>
-      <category>批发CBDC</category>
-      <category>DLT结算</category>
-    </item>
-    <item>
-      <title>The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer</title>
-      <link>https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026</link>
-      <description>Quantum cryptography in 2026 is no longer a debate about whether quantum computers are imminent. It is a migration programme across post-quantum cryptography, crypto-agility, quantum key distribution assurance, protocol standards, supplier readiness, and long-lived financial data that is already exposed to harvest-now-decrypt-later risk.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026</guid>
-      <pubDate>Mon, 18 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>quantum cryptography</category>
-      <category>post-quantum cryptography</category>
-      <category>PQC</category>
-      <category>NIST</category>
-      <category>FIPS 203</category>
-      <category>FIPS 204</category>
-      <category>FIPS 205</category>
-      <category>ML-KEM</category>
-      <category>ML-DSA</category>
-      <category>SLH-DSA</category>
-      <category>NCSC</category>
-      <category>IETF</category>
-      <category>TLS</category>
-      <category>IPsec</category>
-      <category>QKD</category>
-      <category>ETSI</category>
-      <category>crypto-agility</category>
-      <category>HNDL</category>
-      <category>banking security</category>
-    </item>
-    <item>
-      <title>Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</title>
-      <link>https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</link>
-      <description>Agentic AI has crossed from pilot into production across global banking. 70% of institutions are using it to some degree; only one in five has a mature governance model. Meanwhile, autonomous adversaries are operating at machine speed, the legacy COBOL estate the new systems must interoperate with was written for the batch-processing assumptions of the 1960s, and the EU AI Act&apos;s August 2026 high-risk deadline is twelve weeks away. This is the engineering and governance position a bank needs to hold.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html</guid>
-      <pubDate>Sun, 17 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>agentic engineering</category>
-      <category>spec-driven development</category>
-      <category>banks</category>
-      <category>AI governance</category>
-      <category>EU AI Act</category>
-      <category>DORA</category>
-      <category>COBOL modernisation</category>
-      <category>autonomous agents</category>
-      <category>HITL</category>
-      <category>HOTL</category>
-      <category>TPRM</category>
-      <category>AIBOM</category>
-      <category>Claude Code</category>
-      <category>post-quantum cryptography</category>
-    </item>
-    <item>
-      <title>The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</title>
-      <link>https://sebastienrousseau.com/ha/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</link>
-      <description>Cloud architecture in 2026 has crystallised around six pillars: AI-native infrastructure, intelligent multi-cloud, serverless-first design with WebAssembly at the edge, edge computing, automated security with crypto-agility, and sustainable high-density operations. For banks, the question is whether to consume cloud or design it — under converging pressure from agentic commerce, agentic unit economics, harvest-now-decrypt-later quantum risk, MCP security and algorithmic contagion, cryptographic agent identity, continuous-treasury demands, and the EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</guid>
-      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>cloud architecture</category>
-      <category>AI-native infrastructure</category>
-      <category>multi-cloud</category>
-      <category>sovereign cloud</category>
-      <category>CLOUD Act</category>
-      <category>sovereign AI</category>
-      <category>open-weight models</category>
-      <category>Llama 4</category>
-      <category>serverless</category>
-      <category>WebAssembly</category>
-      <category>eBPF</category>
-      <category>Cilium</category>
-      <category>edge computing</category>
-      <category>LEO satellite</category>
-      <category>DevSecOps</category>
-      <category>liquid cooling</category>
-      <category>grid-aware computing</category>
-      <category>SMR</category>
-      <category>nuclear power</category>
-      <category>silicon photonics</category>
-      <category>agentic commerce</category>
-      <category>agentic unit economics</category>
-      <category>cryptographic agent identity</category>
-      <category>algorithmic contagion</category>
-      <category>RAG poisoning</category>
-      <category>vector database security</category>
-      <category>synthetic data</category>
-      <category>data gravity</category>
-      <category>continuous treasury</category>
-      <category>CBDC</category>
-      <category>graph neural networks</category>
-      <category>HNDL</category>
-      <category>post-quantum cryptography</category>
-      <category>crypto-agility</category>
-      <category>QKD</category>
-      <category>Basel IV</category>
-      <category>cloud concentration risk</category>
-      <category>MCP security</category>
-      <category>CloudCDN</category>
-      <category>Cloudflare</category>
-    </item>
-    <item>
-      <title>2026'da En İyi Bulut Altyapı Mimarisi: Finansal Hizmetler için AI-Yerel, Çoklu Bulut, Kuantum-Farkındalıklı Bir Şablon</title>
-      <link>https://sebastienrousseau.com/tr/2026-05-16-bankalar-icin-en-iyi-bulut-mimarisi-2026/index.html</link>
-      <description>2026&apos;da bulut mimarisi altı sütun etrafında kristalleşti: AI-yerel altyapı, akıllı çoklu bulut, uçta WebAssembly ile sunucusuz-öncelikli tasarım, uç bilişim, kripto-çeviklik ile otomatik güvenlik ve sürdürülebilir yüksek yoğunluklu operasyonlar. Bankalar için soru, bulutu tüketmek mi yoksa tasarlamak mı olduğudur — ajansal ticaret, ajansal birim ekonomisi, şimdi-topla-sonra-deşifre-et kuantum riski, MCP güvenliği ve algoritmik bulaşma, kriptografik ajan kimliği, sürekli hazine talepleri ve AB AI Yasası&apos;nın yakınsayan baskısı altında.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/tr/2026-05-16-bankalar-icin-en-iyi-bulut-mimarisi-2026/index.html</guid>
-      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
-      <category>Teknoloji</category>
-      <category>bulut mimarisi</category>
-      <category>AI-yerel altyapı</category>
-      <category>çoklu bulut</category>
-      <category>egemen bulut</category>
-      <category>CLOUD Act</category>
-      <category>egemen AI</category>
-      <category>açık-ağırlıklı modeller</category>
-      <category>Llama 4</category>
-      <category>sunucusuz</category>
-      <category>WebAssembly</category>
-      <category>eBPF</category>
-      <category>Cilium</category>
-      <category>uç bilişim</category>
-      <category>LEO uydu</category>
-      <category>DevSecOps</category>
-      <category>sıvı soğutma</category>
-      <category>şebeke-farkındalıklı bilişim</category>
-      <category>SMR</category>
-      <category>nükleer enerji</category>
-      <category>silikon fotonik</category>
-      <category>ajansal ticaret</category>
-      <category>ajansal birim ekonomisi</category>
-      <category>kriptografik ajan kimliği</category>
-      <category>algoritmik bulaşma</category>
-      <category>RAG zehirlenmesi</category>
-      <category>vektör veritabanı güvenliği</category>
-      <category>sentetik veri</category>
-      <category>veri kütleçekimi</category>
-      <category>sürekli hazine</category>
-      <category>CBDC</category>
-      <category>graf sinir ağları</category>
-      <category>HNDL</category>
-      <category>post-kuantum kriptografi</category>
-      <category>kripto-çeviklik</category>
-      <category>QKD</category>
-      <category>Basel IV</category>
-      <category>bulut yoğunlaşma riski</category>
-      <category>MCP güvenliği</category>
-      <category>CloudCDN</category>
-      <category>Cloudflare</category>
-    </item>
-    <item>
-      <title>Arsitektur Infrastruktur Cloud Terbaik pada 2026: Cetak Biru AI-Native, Multi-Cloud, dan Sadar-Kuantum untuk Jasa Keuangan</title>
-      <link>https://sebastienrousseau.com/id/2026-05-16-arsitektur-infrastruktur-cloud-terbaik-untuk-bank-2026/index.html</link>
-      <description>Arsitektur cloud pada 2026 telah mengkristal pada enam pilar: infrastruktur AI-native, multi-cloud cerdas, desain serverless-first dengan WebAssembly di edge, edge computing, keamanan otomatis dengan crypto-agility, serta operasi berkepadatan tinggi yang berkelanjutan. Bagi bank, pertanyaannya adalah apakah harus mengonsumsi cloud atau merancangnya — di tengah tekanan konvergen dari agentic commerce, ekonomi unit agentic, risiko kuantum harvest-now-decrypt-later, keamanan MCP dan algorithmic contagion, identitas agen kriptografis, tuntutan continuous treasury, serta EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/id/2026-05-16-arsitektur-infrastruktur-cloud-terbaik-untuk-bank-2026/index.html</guid>
-      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
-      <category>Teknologi</category>
-      <category>arsitektur cloud</category>
-      <category>infrastruktur AI-native</category>
-      <category>multi-cloud</category>
-      <category>sovereign cloud</category>
-      <category>CLOUD Act</category>
-      <category>sovereign AI</category>
-      <category>model bobot terbuka</category>
-      <category>Llama 4</category>
-      <category>serverless</category>
-      <category>WebAssembly</category>
-      <category>eBPF</category>
-      <category>Cilium</category>
-      <category>edge computing</category>
-      <category>satelit LEO</category>
-      <category>DevSecOps</category>
-      <category>liquid cooling</category>
-      <category>komputasi sadar-grid</category>
-      <category>SMR</category>
-      <category>energi nuklir</category>
-      <category>silicon photonics</category>
-      <category>agentic commerce</category>
-      <category>ekonomi unit agentic</category>
-      <category>identitas agen kriptografis</category>
-      <category>algorithmic contagion</category>
-      <category>RAG poisoning</category>
-      <category>keamanan basis data vektor</category>
-      <category>data sintetis</category>
-      <category>data gravity</category>
-      <category>continuous treasury</category>
-      <category>CBDC</category>
-      <category>graph neural networks</category>
-      <category>HNDL</category>
-      <category>kriptografi pasca-kuantum</category>
-      <category>crypto-agility</category>
-      <category>QKD</category>
-      <category>Basel IV</category>
-      <category>risiko konsentrasi cloud</category>
-      <category>keamanan MCP</category>
-      <category>CloudCDN</category>
-      <category>Cloudflare</category>
-    </item>
-    <item>
-      <title>2026년 최선의 클라우드 인프라 아키텍처: 금융 서비스를 위한 AI 네이티브, 멀티클라우드, 양자 인식 청사진</title>
-      <link>https://sebastienrousseau.com/ko/2026-05-16-2026-choeseon-keulaeudeu-infra-akitekcheo/index.html</link>
-      <description>2026년 클라우드 아키텍처는 여섯 가지 기둥을 중심으로 결정화되었습니다: AI 네이티브 인프라, 지능형 멀티클라우드, 엣지에서의 WebAssembly를 활용한 서버리스 우선 설계, 엣지 컴퓨팅, 암호 민첩성을 갖춘 자동화된 보안, 그리고 지속 가능한 고밀도 운영. 은행에게 질문은 클라우드를 소비할 것인가 설계할 것인가입니다 — 에이전트 상거래, 에이전트 단위 경제학, 지금-수확-나중-해독 양자 위험, MCP 보안과 알고리즘 전염, 암호학적 에이전트 신원, 연속 트레저리 요구사항, 그리고 EU AI Act의 수렴하는 압력 아래에서 말입니다.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ko/2026-05-16-2026-choeseon-keulaeudeu-infra-akitekcheo/index.html</guid>
-      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>클라우드 아키텍처</category>
-      <category>AI 네이티브 인프라</category>
-      <category>멀티클라우드</category>
-      <category>소버린 클라우드</category>
-      <category>CLOUD Act</category>
-      <category>소버린 AI</category>
-      <category>오픈 가중치 모델</category>
-      <category>Llama 4</category>
-      <category>서버리스</category>
-      <category>WebAssembly</category>
-      <category>eBPF</category>
-      <category>Cilium</category>
-      <category>엣지 컴퓨팅</category>
-      <category>LEO 위성</category>
-      <category>DevSecOps</category>
-      <category>액체 냉각</category>
-      <category>그리드 인식 컴퓨팅</category>
-      <category>SMR</category>
-      <category>원자력</category>
-      <category>실리콘 포토닉스</category>
-      <category>에이전트 상거래</category>
-      <category>에이전트 단위 경제학</category>
-      <category>암호학적 에이전트 신원</category>
-      <category>알고리즘 전염</category>
-      <category>RAG 포이즈닝</category>
-      <category>벡터 데이터베이스 보안</category>
-      <category>합성 데이터</category>
-      <category>데이터 중력</category>
-      <category>연속 트레저리</category>
-      <category>CBDC</category>
-      <category>그래프 신경망</category>
-      <category>HNDL</category>
-      <category>포스트양자 암호</category>
-      <category>암호 민첩성</category>
-      <category>QKD</category>
-      <category>Basel IV</category>
-      <category>클라우드 집중 위험</category>
-      <category>MCP 보안</category>
-      <category>CloudCDN</category>
-      <category>Cloudflare</category>
-    </item>
-    <item>
-      <title>Ang Pinakamahusay na Arkitektura ng Cloud Infrastructure sa 2026: Isang AI-Native, Multi-Cloud, Quantum-Aware na Blueprint para sa Financial Services</title>
-      <link>https://sebastienrousseau.com/fil/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</link>
-      <description>Ang arkitektura ng cloud sa 2026 ay nag-crystallise sa anim na haligi: AI-native infrastructure, intelligent multi-cloud, serverless-first design na may WebAssembly sa edge, edge computing, automated security na may crypto-agility, at sustainable high-density operations. Para sa mga bangko, ang tanong ay kung kokonsumuhin ang cloud o idi-disenyo ito — sa ilalim ng nagsasanib na pressure mula sa agentic commerce, agentic unit economics, harvest-now-decrypt-later quantum risk, MCP security at algorithmic contagion, cryptographic agent identity, continuous-treasury demands, at ang EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/fil/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</guid>
-      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>arkitektura ng cloud</category>
-      <category>AI-native infrastructure</category>
-      <category>multi-cloud</category>
-      <category>sovereign cloud</category>
-      <category>CLOUD Act</category>
-      <category>sovereign AI</category>
-      <category>open-weight models</category>
-      <category>Llama 4</category>
-      <category>serverless</category>
-      <category>WebAssembly</category>
-      <category>eBPF</category>
-      <category>Cilium</category>
-      <category>edge computing</category>
-      <category>LEO satellite</category>
-      <category>DevSecOps</category>
-      <category>liquid cooling</category>
-      <category>grid-aware computing</category>
-      <category>SMR</category>
-      <category>nuclear power</category>
-      <category>silicon photonics</category>
-      <category>agentic commerce</category>
-      <category>agentic unit economics</category>
-      <category>cryptographic agent identity</category>
-      <category>algorithmic contagion</category>
-      <category>RAG poisoning</category>
-      <category>vector database security</category>
-      <category>synthetic data</category>
-      <category>data gravity</category>
-      <category>continuous treasury</category>
-      <category>CBDC</category>
-      <category>graph neural networks</category>
-      <category>HNDL</category>
-      <category>post-quantum cryptography</category>
-      <category>crypto-agility</category>
-      <category>QKD</category>
-      <category>Basel IV</category>
-      <category>cloud concentration risk</category>
-      <category>MCP security</category>
-      <category>CloudCDN</category>
-      <category>Cloudflare</category>
-    </item>
-    <item>
-      <title>২০২৬ সালে সেরা ক্লাউড অবকাঠামো আর্কিটেকচার: আর্থিক পরিষেবাগুলির জন্য একটি AI-নেটিভ, মাল্টি-ক্লাউড, কোয়ান্টাম-সচেতন ব্লুপ্রিন্ট</title>
-      <link>https://sebastienrousseau.com/bn/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</link>
-      <description>২০২৬ সালে ক্লাউড আর্কিটেকচার ছয়টি স্তম্ভের চারপাশে স্ফটিকীভূত হয়েছে: AI-নেটিভ অবকাঠামো, বুদ্ধিমান মাল্টি-ক্লাউড, এজে WebAssembly সহ সার্ভারলেস-ফার্স্ট ডিজাইন, এজ কম্পিউটিং, ক্রিপ্টো-চটপটতাসহ স্বয়ংক্রিয় নিরাপত্তা, এবং টেকসই উচ্চ-ঘনত্ব অপারেশন। ব্যাংকগুলির জন্য, প্রশ্নটি হল ক্লাউড গ্রহণ করা বা এটি ডিজাইন করা — এজেন্টিক বাণিজ্য, এজেন্টিক ইউনিট অর্থনীতি, harvest-now-decrypt-later কোয়ান্টাম ঝুঁকি, MCP নিরাপত্তা এবং অ্যালগরিদমিক সংক্রমণ, ক্রিপ্টোগ্রাফিক এজেন্ট পরিচয়, ক্রমাগত-ট্রেজারি চাহিদা, এবং EU AI Act-এর কনভার্জিং চাপের অধীনে।</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</guid>
-      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>ক্লাউড আর্কিটেকচার</category>
-      <category>AI-নেটিভ অবকাঠামো</category>
-      <category>মাল্টি-ক্লাউড</category>
-      <category>সার্বভৌম ক্লাউড</category>
-      <category>CLOUD Act</category>
-      <category>সার্বভৌম AI</category>
-      <category>ওপেন-ওয়েট মডেল</category>
-      <category>Llama 4</category>
-      <category>সার্ভারলেস</category>
-      <category>WebAssembly</category>
-      <category>eBPF</category>
-      <category>Cilium</category>
-      <category>এজ কম্পিউটিং</category>
-      <category>LEO স্যাটেলাইট</category>
-      <category>DevSecOps</category>
-      <category>লিকুইড কুলিং</category>
-      <category>গ্রিড-সচেতন কম্পিউটিং</category>
-      <category>SMR</category>
-      <category>পারমাণবিক শক্তি</category>
-      <category>সিলিকন ফোটোনিক্স</category>
-      <category>এজেন্টিক বাণিজ্য</category>
-      <category>এজেন্টিক ইউনিট অর্থনীতি</category>
-      <category>ক্রিপ্টোগ্রাফিক এজেন্ট পরিচয়</category>
-      <category>অ্যালগরিদমিক সংক্রমণ</category>
-      <category>RAG পয়জনিং</category>
-      <category>ভেক্টর ডেটাবেস নিরাপত্তা</category>
-      <category>সিন্থেটিক ডেটা</category>
-      <category>ডেটা গ্র্যাভিটি</category>
-      <category>ক্রমাগত ট্রেজারি</category>
-      <category>CBDC</category>
-      <category>গ্রাফ নিউরাল নেটওয়ার্ক</category>
-      <category>HNDL</category>
-      <category>পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি</category>
-      <category>ক্রিপ্টো-চটপটতা</category>
-      <category>QKD</category>
-      <category>Basel IV</category>
-      <category>ক্লাউড কেন্দ্রীকরণ ঝুঁকি</category>
-      <category>MCP নিরাপত্তা</category>
-      <category>CloudCDN</category>
-      <category>Cloudflare</category>
-    </item>
-    <item>
-      <title>De beste cloudinfrastructuur-architectuur in 2026: een AI-native, multi-cloud, kwantumbewuste blauwdruk voor financiële dienstverlening</title>
-      <link>https://sebastienrousseau.com/nl/2026-05-16-beste-cloud-infrastructuur-architectuur-voor-banken-2026/index.html</link>
-      <description>Cloudarchitectuur is in 2026 uitgekristalliseerd rond zes pijlers: AI-native infrastructuur, intelligente multi-cloud, serverless-first ontwerp met WebAssembly aan de edge, edge computing, geautomatiseerde beveiliging met crypto-agility en duurzame, hoogdichte operaties. Voor banken is de vraag niet langer welke pijler ze moeten overnemen, maar of ze de cloud willen consumeren of ontwerpen — onder de samenkomende druk van agentic commerce, agentic unit economics, harvest-now-decrypt-later kwantumrisico, MCP-beveiliging en algoritmische besmetting, cryptografische agentidentiteit, continue-treasury eisen en de EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/nl/2026-05-16-beste-cloud-infrastructuur-architectuur-voor-banken-2026/index.html</guid>
-      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
-      <category>Technologie</category>
-      <category>cloudarchitectuur</category>
-      <category>AI-native infrastructuur</category>
-      <category>multi-cloud</category>
-      <category>soevereine cloud</category>
-      <category>CLOUD Act</category>
-      <category>soevereine AI</category>
-      <category>open-weight modellen</category>
-      <category>Llama 4</category>
-      <category>serverless</category>
-      <category>WebAssembly</category>
-      <category>eBPF</category>
-      <category>Cilium</category>
-      <category>edge computing</category>
-      <category>LEO-satelliet</category>
-      <category>DevSecOps</category>
-      <category>vloeistofkoeling</category>
-      <category>grid-aware computing</category>
-      <category>SMR</category>
-      <category>kernenergie</category>
-      <category>siliciumfotonica</category>
-      <category>agentic commerce</category>
-      <category>agentic unit economics</category>
-      <category>cryptografische agentidentiteit</category>
-      <category>algoritmische besmetting</category>
-      <category>RAG poisoning</category>
-      <category>vectordatabase-beveiliging</category>
-      <category>synthetische data</category>
-      <category>data gravity</category>
-      <category>continue treasury</category>
-      <category>CBDC</category>
-      <category>graph neural networks</category>
-      <category>HNDL</category>
-      <category>post-kwantumcryptografie</category>
-      <category>crypto-agility</category>
-      <category>QKD</category>
-      <category>Basel IV</category>
-      <category>cloud-concentratierisico</category>
-      <category>MCP-beveiliging</category>
-      <category>CloudCDN</category>
-      <category>Cloudflare</category>
-    </item>
-    <item>
-      <title>أفضل بنية تحتية سحابية في 2026: مخطط أصيل للذكاء الاصطناعي، متعدد السحب، وواعٍ كمياً للخدمات المالية</title>
-      <link>https://sebastienrousseau.com/ar/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</link>
-      <description>تبلورت بنية السحابة في عام 2026 حول ست ركائز: بنية تحتية أصيلة للذكاء الاصطناعي، وسحابة متعددة ذكية، وتصميم يعتمد على بنية بدون خوادم أولاً مع WebAssembly عند الحافة، والحوسبة الطرفية، والأمان الآلي مع المرونة التشفيرية، والعمليات المستدامة عالية الكثافة. بالنسبة للبنوك، السؤال هو ما إذا كانت ستستهلك السحابة أم تصممها — في ظل ضغوط متقاربة من التجارة الوكيلة، واقتصاديات الوحدة الوكيلة، ومخاطر الكم الناجمة عن استراتيجية الحصاد الآن والفك لاحقاً، وأمان MCP، والعدوى الخوارزمية، وهوية الوكلاء التشفيرية، ومتطلبات الخزانة المستمرة، وقانون الذكاء الاصطناعي للاتحاد الأوروبي.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ar/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</guid>
-      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>بنية السحابة</category>
-      <category>البنية التحتية الأصيلة للذكاء الاصطناعي</category>
-      <category>السحابة المتعددة</category>
-      <category>السحابة السيادية</category>
-      <category>قانون CLOUD</category>
-      <category>الذكاء الاصطناعي السيادي</category>
-      <category>النماذج مفتوحة الأوزان</category>
-      <category>Llama 4</category>
-      <category>بدون خوادم</category>
-      <category>WebAssembly</category>
-      <category>eBPF</category>
-      <category>Cilium</category>
-      <category>الحوسبة الطرفية</category>
-      <category>القمر LEO</category>
-      <category>DevSecOps</category>
-      <category>التبريد السائل</category>
-      <category>الحوسبة الواعية للشبكة</category>
-      <category>SMR</category>
-      <category>الطاقة النووية</category>
-      <category>الفوتونيات السيليكونية</category>
-      <category>التجارة الوكيلة</category>
-      <category>اقتصاديات الوحدة الوكيلة</category>
-      <category>هوية الوكيل التشفيرية</category>
-      <category>العدوى الخوارزمية</category>
-      <category>تسميم RAG</category>
-      <category>أمان قواعد بيانات المتجهات</category>
-      <category>البيانات الاصطناعية</category>
-      <category>جاذبية البيانات</category>
-      <category>الخزانة المستمرة</category>
-      <category>CBDC</category>
-      <category>الشبكات العصبية الرسومية</category>
-      <category>HNDL</category>
-      <category>التشفير ما بعد الكمي</category>
-      <category>المرونة التشفيرية</category>
-      <category>QKD</category>
-      <category>Basel IV</category>
-      <category>مخاطر تركيز السحابة</category>
-      <category>أمان MCP</category>
-      <category>CloudCDN</category>
-      <category>Cloudflare</category>
-    </item>
-    <item>
-      <title>Ìkọ́lé Ìpìlẹ̀ Ìkùukùu Tó Dára Jùlọ ní 2026: Ìlànà AI-Native, Multi-Cloud, Olùmọ̀-Quantum fún Àwọn Iṣẹ́-Ìnáwó</title>
-      <link>https://sebastienrousseau.com/yo/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</link>
-      <description>Ìkọ́lé ìkùukùu (cloud) ní 2026 ti dí kírísítà yí àwọn ọwọ́n mẹ́fà ká: ìpìlẹ̀ AI-native, multi-cloud onílàákàyè, ìpilẹ̀ṣẹ̀ serverless-first pẹ̀lú WebAssembly ní etí, ìṣirò etí (edge computing), ààbò aládàáṣe pẹ̀lú crypto-agility, àti àwọn iṣẹ́ alágbéró tó ní ìpọnjú gíga. Fún àwọn báńkì, ìbéèrè náà ni bóyá láti jẹ ìkùukùu tàbí láti ṣe ìkọ́lé rẹ̀ — lábẹ́ ìtẹ̀mọ́lẹ̀ tó ń dìmúpọ̀ láti agentic commerce, agentic unit economics, ewu quantum harvest-now-decrypt-later, ààbò MCP àti àjàkálẹ̀-ọ̀rọ̀ algorithmic, ìdánimọ̀ olùṣe-iṣẹ́ cryptographic, ìbéèrè continuous-treasury, àti EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/yo/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</guid>
-      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>cloud architecture</category>
-      <category>AI-native infrastructure</category>
-      <category>multi-cloud</category>
-      <category>sovereign cloud</category>
-      <category>CLOUD Act</category>
-      <category>sovereign AI</category>
-      <category>open-weight models</category>
-      <category>Llama 4</category>
-      <category>serverless</category>
-      <category>WebAssembly</category>
-      <category>eBPF</category>
-      <category>Cilium</category>
-      <category>edge computing</category>
-      <category>LEO satellite</category>
-      <category>DevSecOps</category>
-      <category>liquid cooling</category>
-      <category>grid-aware computing</category>
-      <category>SMR</category>
-      <category>nuclear power</category>
-      <category>silicon photonics</category>
-      <category>agentic commerce</category>
-      <category>agentic unit economics</category>
-      <category>cryptographic agent identity</category>
-      <category>algorithmic contagion</category>
-      <category>RAG poisoning</category>
-      <category>vector database security</category>
-      <category>synthetic data</category>
-      <category>data gravity</category>
-      <category>continuous treasury</category>
-      <category>CBDC</category>
-      <category>graph neural networks</category>
-      <category>HNDL</category>
-      <category>post-quantum cryptography</category>
-      <category>crypto-agility</category>
-      <category>QKD</category>
-      <category>Basel IV</category>
-      <category>cloud concentration risk</category>
-      <category>MCP security</category>
-      <category>CloudCDN</category>
-      <category>Cloudflare</category>
-    </item>
-    <item>
-      <title>Cea mai bună arhitectură de infrastructură cloud în 2026: un plan AI-nativ, multi-cloud și conștient cuantic pentru serviciile financiare</title>
-      <link>https://sebastienrousseau.com/ro/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</link>
-      <description>Arhitectura cloud în 2026 s-a cristalizat în jurul a șase piloni: infrastructură AI-nativă, multi-cloud inteligent, design serverless-first cu WebAssembly la edge, edge computing, securitate automatizată cu agilitate criptografică și operațiuni sustenabile de înaltă densitate. Pentru bănci, întrebarea este dacă să consume cloud sau să îl proiecteze — sub presiunea convergentă a comerțului agentic, a economiei unitare agentice, a riscului cuantic harvest-now-decrypt-later, a securității MCP și a contagiunii algoritmice, a identității criptografice a agenților, a cerințelor de trezorerie continuă și a Legii UE privind IA.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ro/2026-05-16-best-cloud-infrastructure-architecture-2026/index.html</guid>
-      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
-      <category>Tehnologie</category>
-      <category>arhitectură cloud</category>
-      <category>infrastructură AI-nativă</category>
-      <category>multi-cloud</category>
-      <category>cloud suveran</category>
-      <category>CLOUD Act</category>
-      <category>IA suverană</category>
-      <category>modele cu greutăți deschise</category>
-      <category>Llama 4</category>
-      <category>serverless</category>
-      <category>WebAssembly</category>
-      <category>eBPF</category>
-      <category>Cilium</category>
-      <category>edge computing</category>
-      <category>satelit LEO</category>
-      <category>DevSecOps</category>
-      <category>răcire lichidă</category>
-      <category>calcul conștient de rețea</category>
-      <category>SMR</category>
-      <category>energie nucleară</category>
-      <category>fotonică pe siliciu</category>
-      <category>comerț agentic</category>
-      <category>economia unitară agentică</category>
-      <category>identitate criptografică a agenților</category>
-      <category>contagiune algoritmică</category>
-      <category>otrăvirea RAG</category>
-      <category>securitatea bazelor de date vectoriale</category>
-      <category>date sintetice</category>
-      <category>gravitația datelor</category>
-      <category>trezorerie continuă</category>
-      <category>CBDC</category>
-      <category>rețele neuronale grafice</category>
-      <category>HNDL</category>
-      <category>criptografie post-cuantică</category>
-      <category>agilitate criptografică</category>
-      <category>QKD</category>
-      <category>Basel IV</category>
-      <category>risc de concentrare cloud</category>
-      <category>securitate MCP</category>
-      <category>CloudCDN</category>
-      <category>Cloudflare</category>
-    </item>
-    <item>
-      <title>Лучшая облачная инфраструктурная архитектура в 2026 году: AI-native, multi-cloud, квантово-осведомлённый чертёж для финансовых услуг</title>
-      <link>https://sebastienrousseau.com/ru/2026-05-16-luchshaya-cloud-arkhitektura-dlya-bankov-2026/index.html</link>
-      <description>Облачная архитектура в 2026 году кристаллизовалась вокруг шести столпов: AI-native инфраструктура, интеллектуальная multi-cloud облачная архитектура, serverless-first дизайн с WebAssembly на edge, edge computing, автоматизированная безопасность с crypto-agility и устойчивые операции высокой плотности. Для банков вопрос состоит в том, потреблять облако или проектировать его — под сходящимся давлением agentic commerce, agentic unit economics, квантового риска harvest-now-decrypt-later, MCP security и algorithmic contagion, криптографической идентичности агентов, требований continuous treasury и EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-16-luchshaya-cloud-arkhitektura-dlya-bankov-2026/index.html</guid>
-      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
-      <category>Технологии</category>
-      <category>облачная архитектура</category>
-      <category>AI-native инфраструктура</category>
-      <category>multi-cloud</category>
-      <category>суверенное облако</category>
-      <category>CLOUD Act</category>
-      <category>суверенный AI</category>
-      <category>open-weight модели</category>
-      <category>Llama 4</category>
-      <category>serverless</category>
-      <category>WebAssembly</category>
-      <category>eBPF</category>
-      <category>Cilium</category>
-      <category>edge computing</category>
-      <category>LEO satellite</category>
-      <category>DevSecOps</category>
-      <category>жидкостное охлаждение</category>
-      <category>grid-aware computing</category>
-      <category>SMR</category>
-      <category>ядерная энергия</category>
-      <category>кремниевая фотоника</category>
-      <category>agentic commerce</category>
-      <category>agentic unit economics</category>
-      <category>криптографическая идентичность агентов</category>
-      <category>algorithmic contagion</category>
-      <category>RAG poisoning</category>
-      <category>безопасность векторных баз данных</category>
-      <category>синтетические данные</category>
-      <category>гравитация данных</category>
-      <category>continuous treasury</category>
-      <category>CBDC</category>
-      <category>графовые нейронные сети</category>
-      <category>HNDL</category>
-      <category>постквантовая криптография</category>
-      <category>crypto-agility</category>
-      <category>QKD</category>
-      <category>Basel IV</category>
-      <category>риск концентрации облака</category>
-      <category>MCP security</category>
-      <category>CloudCDN</category>
-      <category>Cloudflare</category>
-    </item>
-    <item>
-      <title>Nejlepší cloudová infrastrukturní architektura v roce 2026: AI-nativní, multi-cloudový a kvantově odolný plán pro finanční služby</title>
-      <link>https://sebastienrousseau.com/cs/2026-05-16-nejlepsi-cloudova-architektura-pro-banky-2026/index.html</link>
-      <description>Cloudová architektura v roce 2026 krystalizovala okolo šesti pilířů: AI-nativní infrastruktura, inteligentní multi-cloud, serverless-first design s WebAssembly na edge, edge computing, automatizovaná bezpečnost s krypto-agilitou a udržitelný provoz s vysokou hustotou. Pro banky je otázkou, zda cloud spotřebovávat, nebo jej navrhovat — pod sbíhajícím se tlakem agentního obchodu, agentní ekonomiky jednotky, kvantového rizika harvest-now-decrypt-later, MCP bezpečnosti a algoritmické nákazy, kryptografické identity agenta, požadavků kontinuální treasury a EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-16-nejlepsi-cloudova-architektura-pro-banky-2026/index.html</guid>
-      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
-      <category>Technologie</category>
-      <category>cloudová architektura</category>
-      <category>AI-nativní infrastruktura</category>
-      <category>multi-cloud</category>
-      <category>suverénní cloud</category>
-      <category>CLOUD Act</category>
-      <category>suverénní AI</category>
-      <category>modely s otevřenými váhami</category>
-      <category>Llama 4</category>
-      <category>serverless</category>
-      <category>WebAssembly</category>
-      <category>eBPF</category>
-      <category>Cilium</category>
-      <category>edge computing</category>
-      <category>LEO satelit</category>
-      <category>DevSecOps</category>
-      <category>kapalinové chlazení</category>
-      <category>grid-aware computing</category>
-      <category>SMR</category>
-      <category>jaderná energie</category>
-      <category>silicon photonics</category>
-      <category>agentní obchod</category>
-      <category>agentní ekonomika jednotky</category>
-      <category>kryptografická identita agenta</category>
-      <category>algoritmická nákaza</category>
-      <category>RAG poisoning</category>
-      <category>bezpečnost vektorových databází</category>
-      <category>syntetická data</category>
-      <category>datová gravitace</category>
-      <category>kontinuální treasury</category>
-      <category>CBDC</category>
-      <category>grafové neuronové sítě</category>
-      <category>HNDL</category>
-      <category>postkvantová kryptografie</category>
-      <category>krypto-agilita</category>
-      <category>QKD</category>
-      <category>Basel IV</category>
-      <category>riziko cloudové koncentrace</category>
-      <category>MCP bezpečnost</category>
-      <category>CloudCDN</category>
-      <category>Cloudflare</category>
-    </item>
-    <item>
-      <title>2026年の最良のクラウドインフラストラクチャアーキテクチャ:金融サービスのためのAIネイティブ・マルチクラウド・量子対応設計図</title>
-      <link>https://sebastienrousseau.com/ja/2026-05-16-2026-saiyou-no-kuraudo-infura-aakitekucha/index.html</link>
-      <description>2026年のクラウドアーキテクチャは6本柱に結晶化しました。AIネイティブインフラ、インテリジェントマルチクラウド、エッジでのWebAssemblyを伴うサーバーレスファースト設計、エッジコンピューティング、クリプトアジリティを備えた自動化セキュリティ、そして高密度のサステナブル運用です。銀行にとっての問いは、クラウドを消費するのか、それを設計するのかです — エージェント型コマース、エージェント型ユニットエコノミクス、ハーベスト・ナウ・ディクリプト・レイターの量子リスク、MCPセキュリティとアルゴリズム的伝染、暗号学的エージェントアイデンティティ、継続的トレジャリーの要請、EU AI法という収束する圧力のもとで。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/ja/2026-05-16-2026-saiyou-no-kuraudo-infura-aakitekucha/index.html</guid>
-      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>クラウドアーキテクチャ</category>
-      <category>AIネイティブインフラ</category>
-      <category>マルチクラウド</category>
-      <category>ソブリンクラウド</category>
-      <category>CLOUD Act</category>
-      <category>ソブリンAI</category>
-      <category>オープンウェイトモデル</category>
-      <category>Llama 4</category>
-      <category>サーバーレス</category>
-      <category>WebAssembly</category>
-      <category>eBPF</category>
-      <category>Cilium</category>
-      <category>エッジコンピューティング</category>
-      <category>LEO衛星</category>
-      <category>DevSecOps</category>
-      <category>液冷</category>
-      <category>グリッドアウェアコンピューティング</category>
-      <category>SMR</category>
-      <category>原子力</category>
-      <category>シリコンフォトニクス</category>
-      <category>エージェント型コマース</category>
-      <category>エージェント型ユニットエコノミクス</category>
-      <category>暗号学的エージェントアイデンティティ</category>
-      <category>アルゴリズム的伝染</category>
-      <category>RAGポイズニング</category>
-      <category>ベクトルデータベースセキュリティ</category>
-      <category>合成データ</category>
-      <category>データグラビティ</category>
-      <category>継続的トレジャリー</category>
-      <category>CBDC</category>
-      <category>グラフニューラルネットワーク</category>
-      <category>HNDL</category>
-      <category>耐量子暗号</category>
-      <category>クリプトアジリティ</category>
-      <category>QKD</category>
-      <category>Basel IV</category>
-      <category>クラウド集中リスク</category>
-      <category>MCPセキュリティ</category>
-      <category>CloudCDN</category>
-      <category>Cloudflare</category>
-    </item>
-    <item>
-      <title>Den bästa molninfrastrukturarkitekturen 2026: En AI-nativ, multi-cloud, kvantmedveten ritning för finansiella tjänster</title>
-      <link>https://sebastienrousseau.com/sv/2026-05-16-basta-molnarkitektur-for-banker-2026/index.html</link>
-      <description>Molnarkitektur 2026 har kristalliserats kring sex pelare: AI-nativ infrastruktur, intelligent multi-cloud, serverlös-först-design med WebAssembly vid edge, edge computing, automatiserad säkerhet med kryptoagilitet och hållbar drift med hög densitet. För banker är frågan om man ska konsumera molnet eller designa det — under konvergerande tryck från agentisk handel, agentisk enhetsekonomi, harvest-now-decrypt-later-kvantrisk, MCP-säkerhet och algoritmisk kontaminering, kryptografisk agentidentitet, krav på kontinuerlig treasury och EU:s AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/sv/2026-05-16-basta-molnarkitektur-for-banker-2026/index.html</guid>
-      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>molnarkitektur</category>
-      <category>AI-nativ infrastruktur</category>
-      <category>multi-cloud</category>
-      <category>suverän cloud</category>
-      <category>CLOUD Act</category>
-      <category>suverän AI</category>
-      <category>öppna viktmodeller</category>
-      <category>Llama 4</category>
-      <category>serverlös</category>
-      <category>WebAssembly</category>
-      <category>eBPF</category>
-      <category>Cilium</category>
-      <category>edge computing</category>
-      <category>LEO-satellit</category>
-      <category>DevSecOps</category>
-      <category>vätskekylning</category>
-      <category>nätmedveten databehandling</category>
-      <category>SMR</category>
-      <category>kärnkraft</category>
-      <category>kiselfotonik</category>
-      <category>agentisk handel</category>
-      <category>agentisk enhetsekonomi</category>
-      <category>kryptografisk agentidentitet</category>
-      <category>algoritmisk kontaminering</category>
-      <category>RAG-förgiftning</category>
-      <category>vektordatabasens säkerhet</category>
-      <category>syntetisk data</category>
-      <category>datagravitation</category>
-      <category>kontinuerlig treasury</category>
-      <category>CBDC</category>
-      <category>grafiska neurala nätverk</category>
-      <category>HNDL</category>
-      <category>post-kvantum-kryptografi</category>
-      <category>kryptoagilitet</category>
-      <category>QKD</category>
-      <category>Basel IV</category>
-      <category>molnkoncentrationsrisk</category>
-      <category>MCP-säkerhet</category>
-      <category>CloudCDN</category>
-      <category>Cloudflare</category>
-    </item>
-    <item>
-      <title>Najlepsza architektura infrastruktury chmurowej w 2026 roku: natywny AI, multi-cloud, świadomy kwantowo plan dla usług finansowych</title>
-      <link>https://sebastienrousseau.com/pl/2026-05-16-najlepsza-architektura-infrastruktury-chmurowej-2026/index.html</link>
-      <description>Architektura chmurowa w 2026 roku skrystalizowała się wokół sześciu filarów: natywnej dla AI infrastruktury, inteligentnej strategii multi-cloud, projektowania serverless-first z WebAssembly na brzegu sieci, przetwarzania na brzegu, zautomatyzowanego bezpieczeństwa z elastycznością kryptograficzną oraz zrównoważonych operacji o wysokiej gęstości. Dla banków pytanie brzmi, czy konsumować chmurę, czy ją projektować — pod zbieżną presją handlu agentowego, ekonomii jednostkowej agentów, ryzyka kwantowego harvest-now-decrypt-later, bezpieczeństwa MCP i zarażenia algorytmicznego, kryptograficznej tożsamości agentów, wymagań ciągłej skarbowości oraz EU AI Act.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/pl/2026-05-16-najlepsza-architektura-infrastruktury-chmurowej-2026/index.html</guid>
-      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>architektura chmurowa</category>
-      <category>infrastruktura natywna AI</category>
-      <category>multi-cloud</category>
-      <category>suwerenna chmura</category>
-      <category>CLOUD Act</category>
-      <category>suwerenna AI</category>
-      <category>modele open-weight</category>
-      <category>Llama 4</category>
-      <category>serverless</category>
-      <category>WebAssembly</category>
-      <category>eBPF</category>
-      <category>Cilium</category>
-      <category>przetwarzanie brzegowe</category>
-      <category>satelita LEO</category>
-      <category>DevSecOps</category>
-      <category>chłodzenie cieczą</category>
-      <category>obliczenia świadome sieci</category>
-      <category>SMR</category>
-      <category>energia jądrowa</category>
-      <category>fotonika krzemowa</category>
-      <category>handel agentowy</category>
-      <category>ekonomia jednostkowa agentów</category>
-      <category>kryptograficzna tożsamość agenta</category>
-      <category>zarażenie algorytmiczne</category>
-      <category>zatruwanie RAG</category>
-      <category>bezpieczeństwo baz wektorowych</category>
-      <category>dane syntetyczne</category>
-      <category>grawitacja danych</category>
-      <category>ciągła skarbowość</category>
-      <category>CBDC</category>
-      <category>grafowe sieci neuronowe</category>
-      <category>HNDL</category>
-      <category>kryptografia postkwantowa</category>
-      <category>elastyczność kryptograficzna</category>
-      <category>QKD</category>
-      <category>Basel IV</category>
-      <category>ryzyko koncentracji chmurowej</category>
-      <category>bezpieczeństwo MCP</category>
-      <category>CloudCDN</category>
-      <category>Cloudflare</category>
-    </item>
-    <item>
-      <title>2026 年最佳雲端基礎設施架構:面向金融服務的 AI 原生、多雲、量子感知藍圖</title>
-      <link>https://sebastienrousseau.com/zh-hant/2026-05-16-2026-zuijia-yun-jichu-jiagou-tw/index.html</link>
-      <description>2026 年的雲端架構已圍繞六大支柱固化成形:AI 原生基礎設施、智慧型多雲、以 WebAssembly 為邊緣前提的無伺服器優先設計、邊緣運算、具備密碼敏捷性的自動化資安,以及永續高密度運作。對銀行而言,問題在於要消費雲端,還是設計雲端 — 在代理式商務、代理式單位經濟、現在收割稍後解密的量子風險、MCP 資安與演算法傳染、密碼學代理身分、持續性財務管理需求以及《歐盟人工智慧法》的多重壓力下匯流而至。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hant/2026-05-16-2026-zuijia-yun-jichu-jiagou-tw/index.html</guid>
-      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
-      <category>Technology</category>
-      <category>雲端架構</category>
-      <category>AI 原生基礎設施</category>
-      <category>多雲</category>
-      <category>主權雲</category>
-      <category>CLOUD Act</category>
-      <category>主權 AI</category>
-      <category>開放權重模型</category>
-      <category>Llama 4</category>
-      <category>無伺服器</category>
-      <category>WebAssembly</category>
-      <category>eBPF</category>
-      <category>Cilium</category>
-      <category>邊緣運算</category>
-      <category>LEO 衛星</category>
-      <category>DevSecOps</category>
-      <category>液冷</category>
-      <category>電網感知運算</category>
-      <category>SMR</category>
-      <category>核能</category>
-      <category>矽光子學</category>
-      <category>代理式商務</category>
-      <category>代理式單位經濟</category>
-      <category>密碼學代理身分</category>
-      <category>演算法傳染</category>
-      <category>RAG 中毒</category>
-      <category>向量資料庫資安</category>
-      <category>合成資料</category>
-      <category>資料重力</category>
-      <category>持續性財務管理</category>
-      <category>CBDC</category>
-      <category>圖神經網路</category>
-      <category>HNDL</category>
-      <category>後量子密碼學</category>
-      <category>密碼敏捷性</category>
-      <category>QKD</category>
-      <category>Basel IV</category>
-      <category>雲端集中風險</category>
-      <category>MCP 資安</category>
-      <category>CloudCDN</category>
-      <category>Cloudflare</category>
-    </item>
-    <item>
-      <title>2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图</title>
-      <link>https://sebastienrousseau.com/zh-hans/2026-05-16-2026-zuijia-yun-jichu-jiagou/index.html</link>
-      <description>2026 年云架构已围绕六大支柱结晶：AI 原生基础设施、智能多云、带边缘 WebAssembly 的无服务器优先设计、边缘计算、带密码敏捷性的自动化安全，以及可持续高密度运营。对银行而言，问题在于消费云还是设计它——在代理式商业、代理式单位经济学、现在收集-未来解密量子风险、MCP 安全与算法传染、密码代理身份、持续财库需求,以及欧盟 AI 法案的汇聚压力下。</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/zh-hans/2026-05-16-2026-zuijia-yun-jichu-jiagou/index.html</guid>
-      <pubDate>Sat, 16 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stock/images/cloud-architecture-2026-banner.webp" type="image/webp" length="0"/>
-      <category>技术</category>
-      <category>云架构</category>
-      <category>AI 原生基础设施</category>
-      <category>多云</category>
-      <category>主权云</category>
-      <category>CLOUD 法案</category>
-      <category>主权 AI</category>
-      <category>开权重模型</category>
-      <category>Llama 4</category>
-      <category>无服务器</category>
-      <category>WebAssembly</category>
-      <category>eBPF</category>
-      <category>Cilium</category>
-      <category>边缘计算</category>
-      <category>LEO 卫星</category>
-      <category>DevSecOps</category>
-      <category>液体冷却</category>
-      <category>电网感知计算</category>
-      <category>SMR</category>
-      <category>核能</category>
-      <category>硅光子学</category>
-      <category>代理式商业</category>
-      <category>代理式单位经济学</category>
-      <category>密码代理身份</category>
-      <category>算法传染</category>
-      <category>RAG 中毒</category>
-      <category>向量数据库安全</category>
-      <category>合成数据</category>
-      <category>数据引力</category>
-      <category>持续财库</category>
-      <category>CBDC</category>
-      <category>图神经网络</category>
-      <category>HNDL</category>
-      <category>后量子密码学</category>
-      <category>密码敏捷性</category>
-      <category>QKD</category>
-      <category>Basel IV</category>
-      <category>云集中风险</category>
-      <category>MCP 安全</category>
-      <category>CloudCDN</category>
-      <category>Cloudflare</category>
-    </item>
-    <item>
-      <title>ISO 20022 pacs.008 Structured-Address Migration Checklist — Free PDF</title>
-      <link>https://sebastienrousseau.com/resources-pacs008-checklist</link>
-      <description>Free PDF: 23-point structured-address migration checklist for the November 2026 pacs.008 deadline. Built from EPAA, SWIFT and CBPR+ guidance. Drop your email; I&apos;ll send the link.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/resources-pacs008-checklist</guid>
-      <pubDate>Fri, 15 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/markus-winkler-IrRbSND5EUc-unsplash.webp" type="image/webp" length="0"/>
-      <category>Resources</category>
-      <category>ISO 20022</category>
-      <category>pacs.008</category>
-      <category>structured address</category>
-      <category>CBPR+</category>
-      <category>deadline checklist</category>
-    </item>
-    <item>
-      <title>Stablecoin Yield by Another Name: BlackRock's BRSRV and BSTBL Filings Decoded</title>
-      <link>https://sebastienrousseau.com/bn/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html</link>
-      <description>Stablecoins cannot pay yield under the GENIUS Act. On 8 May 2026, BlackRock filed two SEC registrations for products that solve this constraint by being regulated as money market funds rather than stablecoins — while behaving, in the wallet, like yield-bearing dollars. A close reading of BRSRV, BSTBL, and the OCC rulemaking they respond to.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-15-blackrock-brsrv-bstbl-genius-act-tokenised-mmf/index.html</guid>
-      <pubDate>Fri, 15 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/alev-takil-7ojyp-IXW7w-unsplash.webp" type="image/webp" length="0"/>
-      <category>Payments</category>
-      <category>BlackRock</category>
-      <category>BRSRV</category>
-      <category>BSTBL</category>
-      <category>BUIDL</category>
-      <category>GENIUS Act</category>
-      <category>OCC</category>
-      <category>stablecoin</category>
-      <category>tokenised money market fund</category>
-      <category>Securitize</category>
-      <category>BNY Mellon</category>
-      <category>ERC-20</category>
-      <category>Ethereum</category>
-      <category>payments</category>
-      <category>regulation</category>
-    </item>
-    <item>
-      <title>Securing the Ledger: A Board-Level Guide to Post-Quantum Migration for Corporate Finance</title>
-      <link>https://sebastienrousseau.com/bn/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html</link>
-      <description>Quantum risk has moved from research curiosity to active regulatory mandate. With the G7 roadmap published in January 2026, the EU, UK, and ASD timelines clarified, and the BIS Project Leap proving feasibility at the central-bank level, the question for boards is no longer whether to migrate — it is whether the migration can be completed before the cryptographic shelf-life of today&apos;s data expires.</description>
-      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-14-securing-the-ledger-post-quantum-migration-corporate-finance/index.html</guid>
-      <pubDate>Thu, 14 May 2026 06:06:06 +0000</pubDate>
-      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/stocks/images/getty-images-LaU3HadwEeE-unsplash.webp" type="image/webp" length="0"/>
-      <category>Quantum</category>
-      <category>post-quantum cryptography</category>
-      <category>PQC</category>
-      <category>corporate banking</category>
-      <category>G7 CEG</category>
-      <category>BIS Project Leap</category>
-      <category>ML-KEM</category>
-      <category>ML-DSA</category>
-      <category>NCSC</category>
-      <category>ASD</category>
-      <category>CNSA 2.0</category>
-      <category>harvest now decrypt later</category>
-      <category>Mosca equation</category>
-      <category>crypto-agility</category>
-      <category>hybrid cryptography</category>
     </item>
   </channel>
 </rss>
