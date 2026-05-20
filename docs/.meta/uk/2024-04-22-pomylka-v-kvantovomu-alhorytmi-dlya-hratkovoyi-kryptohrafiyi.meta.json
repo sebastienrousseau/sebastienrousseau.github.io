@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Image generated using MidJourney - A Network of digital nodes in red and blue hues.",
-  "date": "Apr 22, 2024",
-  "subtitle": "Peer Review Reveals Flaw in Chen's Groundbreaking Work",
-  "title": "[UK DRAFT] Quantum Lattice Crypto: Bug in Chen's LWE Attack",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "description": "A bug in Yilei Chen's quantum LWE algorithm temporarily reprieves lattice-based cryptography. What it means for CRYSTALS-Kyber, Dilithium and the PQC roadmap.",
-  "keywords": "post-quantum cryptography, NIST, PQC standardisation, Yilei Chen, quantum algorithm, lattice-based cryptography, LWE problem, CRYSTALS-KYBER, CRYSTALS-Dilithium, quantum-resistant cryptography",
   "language": "uk-UA",
-  "locale": "uk_UA"
+  "title": "[UK DRAFT] Quantum Lattice Crypto: Bug in Chen's LWE Attack",
+  "locale": "uk_UA",
+  "subtitle": "Peer Review Reveals Flaw in Chen's Groundbreaking Work",
+  "date": "Apr 22, 2024",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "keywords": "post-quantum cryptography, NIST, PQC standardisation, Yilei Chen, quantum algorithm, lattice-based cryptography, LWE problem, CRYSTALS-KYBER, CRYSTALS-Dilithium, quantum-resistant cryptography",
+  "banner_alt": "Image generated using MidJourney - A Network of digital nodes in red and blue hues.",
+  "description": "A bug in Yilei Chen's quantum LWE algorithm temporarily reprieves lattice-based cryptography. What it means for CRYSTALS-Kyber, Dilithium and the PQC roadmap."
 }

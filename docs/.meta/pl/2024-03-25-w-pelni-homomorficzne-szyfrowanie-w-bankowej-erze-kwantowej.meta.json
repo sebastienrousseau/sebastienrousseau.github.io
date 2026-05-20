@@ -1,11 +1,11 @@
 {
-  "locale": "pl_PL",
+  "banner_alt": "Wizualizacja w pełni homomorficznego szyfrowania",
   "keywords": "FHE, homomorficzne szyfrowanie, kwanty, bankowość, prywatność, kryptografia",
-  "subtitle": "FHE jako fundament prywatności danych w bankowości",
-  "date": "Mar 25, 2024",
   "language": "pl-PL",
+  "subtitle": "FHE jako fundament prywatności danych w bankowości",
   "banner": "https://cloudcdn.pro/stocks/images/fully-homomorphic-encryption.webp",
+  "date": "Mar 25, 2024",
   "title": "W pełni homomorficzne szyfrowanie w bankowej erze kwantowej",
   "description": "Jak w pełni homomorficzne szyfrowanie rewolucjonizuje bezpieczeństwo danych w bankowości i usługach finansowych, chroniąc prywatność przed zagrożeniami ery kwantowej.",
-  "banner_alt": "Wizualizacja w pełni homomorficznego szyfrowania"
+  "locale": "pl_PL"
 }

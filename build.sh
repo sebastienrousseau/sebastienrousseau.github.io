@@ -72,8 +72,19 @@ python3 scripts/build_lang_feeds.py
 python3 scripts/build_agent_api.py
 python3 scripts/build_lead_magnets.py
 python3 scripts/postbuild.py
-# Sigstore signing pass — no-op unless _data/sigstore/config.json exists.
-python3 scripts/sigstore_sign.py
+# Sigstore signing pass — no-op unless _data/sigstore/config.json exists
+# (the cosign private key is machine-local, never in CI). Always mirror
+# the *previously committed* bundles from docs/sigstore/ into
+# public/sigstore/ first, so CI deploys ship the signatures even though
+# CI has no key. Local builds with the key set will then overwrite each
+# bundle with a fresh signature for any article whose HTML changed.
+if [[ -d docs/sigstore ]]; then
+  mkdir -p public/sigstore
+  cp -a docs/sigstore/. public/sigstore/
+fi
+# Allow the signing pass to fail (e.g. wrong COSIGN_PASSWORD on this
+# machine) without breaking the build — the committed bundles still ship.
+python3 scripts/sigstore_sign.py || true
 python3 scripts/test_search_indexes.py
 python3 scripts/test_i18n_parity.py
 python3 scripts/test_i18n_strings.py

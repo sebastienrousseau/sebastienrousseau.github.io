@@ -14,6 +14,7 @@ _May 19, 2026_  ·  [https://sebastienrousseau.com/2026-05-19-global-wholesale-p
 
 
 
+
 <!-- lead-start -->
 
 <!-- lead-end -->
@@ -154,6 +155,7 @@ No. Stablecoins may influence cross-border payment design, but wholesale payment
 _May 18, 2026_  ·  [https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/](https://sebastienrousseau.com/2026-05-18-quantum-cryptography-standards-developments-2026/)
 
 # The Quantum Cryptography Reset in 2026: PQC Standards, QKD Assurance, and the Migration Work Banks Cannot Defer
+
 
 
 
@@ -581,6 +583,7 @@ Three things, sequenced. First, produce the AI Bill of Materials — the complet
 _May 16, 2026_  ·  [https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/](https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026/)
 
 # The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services
+
 
 
 

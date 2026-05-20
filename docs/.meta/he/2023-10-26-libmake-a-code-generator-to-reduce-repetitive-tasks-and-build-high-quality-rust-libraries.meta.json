@@ -1,11 +1,11 @@
 {
-  "locale": "he_IL",
-  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
   "banner_alt": "أعمدة بيضاء ضخمة",
   "title": "تبسيط تطوير مكتبات Rust عبر توليد الشفرة",
-  "keywords": "Rust، المكتبة، التطوير، الشفرة، المولِّد، البويلربليت، أفضل الممارسات، الجودة، الموثوقية",
-  "date": "Oct 26, 2023",
+  "locale": "he_IL",
   "description": "عزِّزوا تطوير مكتبات Rust مع LibMake: أداة لتوليد الشفرة تفرض أفضل الممارسات وتُنتج الشفرة الأولية، فتُوفّر للمطوّرين الوقت والجهد.",
+  "banner": "https://cloudcdn.pro/stocks/images/tarik-haiga-3637943.webp",
+  "keywords": "Rust، المكتبة، التطوير، الشفرة، المولِّد، البويلربليت، أفضل الممارسات، الجودة، الموثوقية",
   "subtitle": "LibMake: مولِّد شفرة Rust يفرض أفضل الممارسات منذ اليوم الأول.",
-  "language": "he-IL"
+  "language": "he-IL",
+  "date": "Oct 26, 2023"
 }

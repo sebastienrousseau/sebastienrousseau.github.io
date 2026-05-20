@@ -1,11 +1,11 @@
 {
-  "title": "Ang Quantum Cryptography Reset sa 2026: Mga PQC Standard, QKD Assurance, at ang Migration Work na Hindi Maaaring Ipagpaliban ng mga Bangko",
-  "banner_alt": "Mapa ng migration ng quantum-safe cryptography para sa 2026 na nagpapakita ng mga NIST PQC standard, hybrid protocol work, QKD assurance, crypto-agility, at mga tier ng panganib sa data ng bangko",
-  "keywords": "quantum cryptography 2026, post-quantum cryptography, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybrid key exchange, QKD, ETSI QKD, ISO IEC 23837, crypto-agility, harvest now decrypt later, HNDL, cryptography ng financial services, seguridad ng pagbabangko",
-  "description": "Ang quantum cryptography sa 2026 ay hindi na isang debate kung malapit na ang mga quantum computer. Ito ay isang programa ng migration sa post-quantum cryptography, crypto-agility, quantum key distribution assurance, mga protocol standard, kahandaan ng supplier, at matagal-tagal na financial data na nakalantad na sa harvest-now-decrypt-later na panganib.",
   "date": "May 18, 2026",
-  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
   "language": "fil-PH",
+  "banner": "https://cloudcdn.pro/stocks/images/alex-shuper-YYZnrK8NrSw-unsplash.webp",
+  "description": "Ang quantum cryptography sa 2026 ay hindi na isang debate kung malapit na ang mga quantum computer. Ito ay isang programa ng migration sa post-quantum cryptography, crypto-agility, quantum key distribution assurance, mga protocol standard, kahandaan ng supplier, at matagal-tagal na financial data na nakalantad na sa harvest-now-decrypt-later na panganib.",
   "locale": "fil_PH",
+  "title": "Ang Quantum Cryptography Reset sa 2026: Mga PQC Standard, QKD Assurance, at ang Migration Work na Hindi Maaaring Ipagpaliban ng mga Bangko",
+  "keywords": "quantum cryptography 2026, post-quantum cryptography, NIST FIPS 203, FIPS 204, FIPS 205, ML-KEM, ML-DSA, SLH-DSA, NCSC PQC, IETF TLS, IPsec, RFC 9794, hybrid key exchange, QKD, ETSI QKD, ISO IEC 23837, crypto-agility, harvest now decrypt later, HNDL, cryptography ng financial services, seguridad ng pagbabangko",
+  "banner_alt": "Mapa ng migration ng quantum-safe cryptography para sa 2026 na nagpapakita ng mga NIST PQC standard, hybrid protocol work, QKD assurance, crypto-agility, at mga tier ng panganib sa data ng bangko",
   "subtitle": "Ang quantum cryptography ay lumipat mula sa horizon-scanning patungo sa disiplina ng implementasyon: handa na ang mga NIST PQC standard, pinaikli na ng UK NCSC guidance ang mga pagpipilian sa algorithm, ang IETF protocol work ay patuloy na nagtatamo, at ang QKD assurance ay lumilipat mula sa kumpiyansa sa laboratoryo patungo sa wika ng sertipikasyon."
 }

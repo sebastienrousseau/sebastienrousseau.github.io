@@ -1,11 +1,11 @@
 {
   "language": "de",
-  "banner_alt": "Ausgeschalteter Laptop auf einem braunen Holztisch",
-  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
-  "title": "Blockchain: die Technologie, die 2018 zählt",
-  "date": "January 2, 2018",
-  "subtitle": "Private-Key-Kryptografie und Peer-to-Peer-Netzwerke im Dienst sicherer Transaktionen",
   "keywords": "Blockchain, Kryptowährung, Bitcoin, P2P, Smart Contract, verteiltes Register, Finanzen, Supply Chain, digitale Identität, Tokenisierung",
+  "banner": "https://cloudcdn.pro/stocks/images/bogdan-karlenko-cNcX6PPjEm8.webp",
+  "subtitle": "Private-Key-Kryptografie und Peer-to-Peer-Netzwerke im Dienst sicherer Transaktionen",
   "description": "Die Geschichte der außergewöhnlichen Reise zur Absicherung digitaler Transaktionen durch Private-Key-Kryptografie und Peer-to-Peer-Netzwerke (P2P).",
-  "locale": "de_DE"
+  "date": "January 2, 2018",
+  "locale": "de_DE",
+  "banner_alt": "Ausgeschalteter Laptop auf einem braunen Holztisch",
+  "title": "Blockchain: die Technologie, die 2018 zählt"
 }

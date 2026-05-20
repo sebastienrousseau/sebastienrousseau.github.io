@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Выключенный ноутбук на коричневом деревянном столе",
-  "locale": "ru_RU",
-  "keywords": "EXTC Network, криптовалюта, быстрые платежи, Ethereum, EIP20, смарт-контракты, блокчейн, трансграничные платежи, финансовая инклюзия",
-  "language": "ru-RU",
-  "date": "February 4, 2018",
-  "title": "Представление новой криптовалюты и более быстрого платёжного решения",
-  "subtitle": "EXTC Network: видение мгновенных платежей на блокчейне",
   "description": "Значимая глава в эволюции глобального финансового ландшафта — технологические инновации, геополитические сдвиги и устойчивые финансы.",
-  "banner": "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp"
+  "banner_alt": "Выключенный ноутбук на коричневом деревянном столе",
+  "keywords": "EXTC Network, криптовалюта, быстрые платежи, Ethereum, EIP20, смарт-контракты, блокчейн, трансграничные платежи, финансовая инклюзия",
+  "subtitle": "EXTC Network: видение мгновенных платежей на блокчейне",
+  "date": "February 4, 2018",
+  "banner": "https://cloudcdn.pro/stocks/images/laureen-missaire-DBbuhMbAIsQ.webp",
+  "title": "Представление новой криптовалюты и более быстрого платёжного решения",
+  "language": "ru-RU",
+  "locale": "ru_RU"
 }

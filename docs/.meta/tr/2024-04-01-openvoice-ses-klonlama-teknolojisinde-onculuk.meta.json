@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp",
+  "locale": "tr_TR",
+  "title": "OpenVoice: ses klonlama teknolojisinde öncülük",
+  "description": "OpenVoice, ses tonunu küçük örneklerden çoğaltabilen sesli klonlama için açık bir modeldir.",
   "date": "April 01, 2024",
   "keywords": "OpenVoice, ses klonlama, yapay zeka, ses, TTS, açık kaynak",
-  "description": "OpenVoice, ses tonunu küçük örneklerden çoğaltabilen sesli klonlama için açık bir modeldir.",
-  "title": "OpenVoice: ses klonlama teknolojisinde öncülük",
-  "locale": "tr_TR",
   "language": "tr-TR",
   "banner_alt": "Bir ses dalgasının görselleştirmesi",
-  "subtitle": "Yüksek hassasiyetli ses klonlama için açık model"
+  "subtitle": "Yüksek hassasiyetli ses klonlama için açık model",
+  "banner": "https://cloudcdn.pro/stocks/images/open-voice.webp"
 }
