@@ -82,21 +82,42 @@ def main() -> int:
         print("build_lead_magnets: _data/lead-magnets/ missing — nothing to do")
         return 0
     OUT.mkdir(parents=True, exist_ok=True)
-    built: list[str] = []
-    for md in sorted(SRC.glob("*.md")):
+    sources = sorted(SRC.glob("*.md"))
+    if not sources:
+        print("build_lead_magnets: no markdown sources found in _data/lead-magnets/")
+        return 0
+
+    # pandoc spawns a separate OS process — safe to fan out across a
+    # thread pool because the GIL is irrelevant once subprocess.run()
+    # has handed off to the child. On 5+ lead magnets this cuts wall
+    # time to ~one-pandoc-invocation.
+    from concurrent.futures import ThreadPoolExecutor
+
+    def _render_one(md: Path) -> tuple[Path, Path, Exception | None]:
         pdf = OUT / f"{md.stem}.pdf"
         try:
             render(md, pdf)
         except subprocess.CalledProcessError as exc:
-            print(f"build_lead_magnets: pandoc failed on {md.name} (exit {exc.returncode})", file=sys.stderr)
+            return md, pdf, exc
+        return md, pdf, None
+
+    built: list[str] = []
+    with ThreadPoolExecutor(max_workers=min(4, len(sources))) as pool:
+        results = list(pool.map(_render_one, sources))
+
+    for md, pdf, exc in results:
+        if exc is not None:
+            print(
+                f"build_lead_magnets: pandoc failed on {md.name} "
+                f"(exit {exc.returncode})",
+                file=sys.stderr,
+            )
             return 1
         built.append(f"{md.name} → {pdf}")
-    if built:
-        print(f"build_lead_magnets: wrote {len(built)} PDF(s)")
-        for line in built:
-            print(f"  {line}")
-    else:
-        print("build_lead_magnets: no markdown sources found in _data/lead-magnets/")
+
+    print(f"build_lead_magnets: wrote {len(built)} PDF(s)")
+    for line in built:
+        print(f"  {line}")
     return 0
 
 

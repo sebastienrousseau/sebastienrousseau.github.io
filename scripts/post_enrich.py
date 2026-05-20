@@ -285,19 +285,65 @@ def _update_frontmatter(post: dict[str, object]) -> tuple[list[str], str]:
     return fm, reviewed
 
 
-def _related_posts(post: dict[str, object], all_posts: list[dict[str, object]]) -> list[dict[str, object]]:
-    """Stage 2: topic-cluster related posts via tag-overlap score."""
+def _build_tag_index(
+    all_posts: list[dict[str, object]],
+) -> dict[str, list[dict[str, object]]]:
+    """Build a tag → list-of-posts inverted index. Built once per
+    post_enrich.main() run and passed into every _related_posts call,
+    collapsing the related-post lookup from O(N²) to O(N · tags_per_post).
+    On a 50-post archive this is mildly faster; at the 2000-post horizon
+    it's the difference between sub-second and many seconds."""
+    idx: dict[str, list[dict[str, object]]] = {}
+    for post in all_posts:
+        for tag in post["tags"]:
+            idx.setdefault(tag.lower(), []).append(post)
+    return idx
+
+
+def _related_posts(
+    post: dict[str, object],
+    all_posts: list[dict[str, object]],
+    tag_index: dict[str, list[dict[str, object]]] | None = None,
+) -> list[dict[str, object]]:
+    """Stage 2: topic-cluster related posts via tag-overlap score.
+
+    With ``tag_index`` provided (the inverted index built once in
+    ``main()``), the lookup walks only posts that share at least one
+    tag with ``post`` — no longer the full N. Without it, falls back
+    to the O(N) scan so single-post callers (e.g. test fixtures) still
+    work without setup.
+    """
     own_tags = {t.lower() for t in post["tags"]}
-    scored: list[tuple[int, str, dict[str, object]]] = []
-    for other in all_posts:
-        if other["path"] == post["path"]:
-            continue
-        other_tags = {t.lower() for t in other["tags"]}
-        score = len(own_tags & other_tags)
-        if score:
-            scored.append((score, other["date_iso"], other))
-    scored.sort(key=lambda x: (-x[0], -int(x[1].replace("-", ""))))
-    return [o for _, _, o in scored[:3]]
+    own_path = post["path"]
+    candidates: list[tuple[int, str, dict[str, object]]] = []
+    if tag_index is not None:
+        # O(tags × posts-per-tag) walk via the inverted index. Score per
+        # other-post = count of tags it shares with `post`.
+        overlap: dict[int, tuple[int, dict[str, object]]] = {}
+        for tag in own_tags:
+            for other in tag_index.get(tag, ()):
+                if other["path"] == own_path:
+                    continue
+                oid = id(other)
+                if oid in overlap:
+                    overlap[oid] = (overlap[oid][0] + 1, other)
+                else:
+                    overlap[oid] = (1, other)
+        candidates = [
+            (score, other["date_iso"], other)
+            for score, other in overlap.values()
+        ]
+    else:
+        # Fallback: O(N) scan for single-post callers (test fixtures).
+        for other in all_posts:
+            if other["path"] == own_path:
+                continue
+            other_tags = {t.lower() for t in other["tags"]}
+            score = len(own_tags & other_tags)
+            if score:
+                candidates.append((score, other["date_iso"], other))
+    candidates.sort(key=lambda x: (-x[0], -int(x[1].replace("-", ""))))
+    return [o for _, _, o in candidates[:3]]
 
 
 def _insert_lead(body_text: str, tldr: str, related: list[dict[str, object]]) -> tuple[str, bool]:
@@ -388,13 +434,17 @@ def _append_enrich_block(body_text: str, reviewed: str, related: list[dict[str, 
     return body_text + "\n" + "\n".join(block) + "\n"
 
 
-def _enrich_one(post: dict[str, object], all_posts: list[dict[str, object]]) -> tuple[bool, bool]:
+def _enrich_one(
+    post: dict[str, object],
+    all_posts: list[dict[str, object]],
+    tag_index: dict[str, list[dict[str, object]]] | None = None,
+) -> tuple[bool, bool]:
     """Run all four stages on one post. Returns (was_modified, lead_inserted)."""
     fm, reviewed = _update_frontmatter(post)
     description = fm_get(fm, "description") or ""
     excerpt = fm_get(fm, "excerpt") or ""
     tldr = description if len(description) >= 80 else (excerpt or description)
-    related = _related_posts(post, all_posts)
+    related = _related_posts(post, all_posts, tag_index=tag_index)
     body_text, led = _insert_lead(post["body"], tldr, related)
     new_body = _append_enrich_block(body_text, reviewed, related, post)
     out_text = "".join(fm) + new_body
@@ -416,10 +466,15 @@ def main() -> None:
         if post is not None:
             posts.append(post)
 
+    # Build the inverted tag → posts index ONCE for the whole loop, then
+    # share it across every per-post enrich call. Collapses the related-
+    # post lookup from O(N²) to O(N · tags_per_post).
+    tag_index = _build_tag_index(posts)
+
     enriched = 0
     led = 0
     for post in posts:
-        was_modified, was_led = _enrich_one(post, posts)
+        was_modified, was_led = _enrich_one(post, posts, tag_index=tag_index)
         if was_modified:
             enriched += 1
         if was_led:

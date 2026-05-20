@@ -122,8 +122,16 @@ def main() -> int:
     fresh: dict[str, dict] = {}
     failed: list[str] = []
 
-    for slug in REPOS:
-        info = fetch_repo(slug, token)
+    # Network-bound — fan out across a thread pool. GH API tolerates 10
+    # concurrent requests from a single client comfortably; this brings
+    # the total runtime down from N × (slowest-round-trip) to roughly
+    # one slowest-round-trip.
+    from concurrent.futures import ThreadPoolExecutor
+
+    with ThreadPoolExecutor(max_workers=10) as pool:
+        results = list(pool.map(lambda s: (s, fetch_repo(s, token)), REPOS))
+
+    for slug, info in results:
         if info:
             fresh[slug] = info
         elif slug in existing:
