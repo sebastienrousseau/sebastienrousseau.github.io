@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 21 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 21 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.">
+<meta name="keywords" content="tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercial bank money, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, digital wallets, tokenised gilts">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Tokenised Deposits">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-BX6YxFLfResDMVauwd1Yf6LvP1N+qslWsRboXIY35NQ=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-Je1PWqjetE5c4rDdO97+RF2cQGUmI8TJVBsnKmtcpiQ=' 'sha256-ZpHLzp4e5fBDI3XEid0iRNTN/7vtos7fzHZB9LEOo8c=' 'sha256-zGHZX9OcAqU4BnwBclFcCrv6AiirD1v1aasA5o1wj8I=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/de/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom-Feed" href="/de/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money — Sebastien Rousseau">
+<meta property="og:description" content="Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/de/2026-05-21-tokenised-deposits-banking-services-status-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money — Sebastien Rousseau">
+<meta name="twitter:description" content="Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/de/2026-05-21-tokenised-deposits-banking-services-status-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-21-tokenise-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Zum Hauptinhalt springen</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Navigation umschalten" />
+      <div class="wrap">
+        <a class="ap-brand" href="/de/index.html" aria-label="Startseite von Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Hauptnavigation">
+          <ul class="ap-menu">
+            <li><a href="/de/uber-mich/index.html">Über mich</a></li>
+            <li><a href="/de/artikel/index.html" aria-current="page" class="active">Artikel</a></li>
+            <li><a href="/de/publikationen/index.html">Publikationen</a></li>
+            <li><a href="/de/themen/index.html">Themen</a></li>
+            <li><a href="/de/projekte/index.html">Projekte</a></li>
+            <li><a href="/de/playlists/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Dunkles Design aktivieren" aria-pressed="false" title="Design wechseln">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Suchen (Cmd oder Strg + K)" title="Suchen (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Sprache">
+            <button type="button" class="ap-lang-toggle" aria-label="DE, Sprache wechseln" aria-expanded="false" aria-haspopup="menu" title="Sprache wechseln">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">DE</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/de/kontakt/index.html" aria-label="Kontakt aufnehmen">Kontakt ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Navigation umschalten">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</h1>
+      <p class="sub">Tokenised deposits are becoming the banking sector’s answer to stablecoins: programmable commercial bank money on controlled platforms, with pilots moving through UK marketplace payments, remortgaging, digital asset settlement, and corporate wallets.</p>
+    <nav class="article-tags" aria-label="Themen"><a href="/tags/index.html#h3-tokenised-deposits-2026" class="article-tag" rel="tag">tokenised deposits 2026</a><a href="/tags/index.html#h3-tokenized-deposits-banking" class="article-tag" rel="tag">tokenized deposits banking</a><a href="/tags/index.html#h3-deposit-tokens" class="article-tag" rel="tag">deposit tokens</a><a href="/tags/index.html#h3-great-british-tokenised-deposits" class="article-tag" rel="tag">Great British Tokenised Deposits</a><a href="/tags/index.html#h3-lloyds-digital-assets" class="article-tag" rel="tag">Lloyds digital assets</a><a href="/tags/index.html#h3-stablecoins" class="article-tag" rel="tag">stablecoins</a><a href="/tags/index.html#h3-commercial-bank-money" class="article-tag" rel="tag">commercial bank money</a><a href="/tags/index.html#h3-bis-stablecoins" class="article-tag" rel="tag">BIS stablecoins</a><a href="/tags/index.html#h3-project-agora" class="article-tag" rel="tag">Project Agora</a><a href="/tags/index.html#h3-unified-ledger" class="article-tag" rel="tag">unified ledger</a><a href="/tags/index.html#h3-deutsche-bank-digital-money" class="article-tag" rel="tag">Deutsche Bank digital money</a><a href="/tags/index.html#h3-cbdc" class="article-tag" rel="tag">CBDC</a><a href="/tags/index.html#h3-tokenised-money" class="article-tag" rel="tag">tokenised money</a><a href="/tags/index.html#h3-digital-wallets" class="article-tag" rel="tag">digital wallets</a><a href="/tags/index.html#h3-tokenised-gilts" class="article-tag" rel="tag">tokenised gilts</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-21T06:06:06+00:00" class="meta-pub">Veröffentlicht am 21 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Geschätzte Lesezeit">20 Min. Lesezeit</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Inhalt</h2><ol><li><a href="#warum-tokenisierte-einlagen-jetzt-relevant-sind">Warum tokenisierte Einlagen jetzt relevant sind</a></li><li><a href="#der-status-2026-vom-piloten-zum-produkt-noch-nicht-im-netzwerkmastab">Der Status 2026: Vom Piloten zum Produkt, noch nicht im Netzwerkmaßstab</a></li><li><a href="#die-am-weitesten-entwickelten-bankprogramme-2026">Die am weitesten entwickelten Bankprogramme 2026</a></li><li><a href="#tokenisierte-einlagen-vs-stablecoins-vs-cbdc">Tokenisierte Einlagen vs. Stablecoins vs. CBDC</a></li><li><a href="#was-banken-aufbauen-mussen">Was Banken aufbauen müssen</a></li><li><a href="#ausfallmodi-wo-der-stack-bricht">Ausfallmodi: Wo der Stack bricht</a></li><li><a href="#was-das-fur-die-einzelnen-banktypen-bedeutet">Was das für die einzelnen Banktypen bedeutet</a></li><li><a href="#fazit">Fazit</a></li><li><a href="#haufig-gestellte-fragen">Häufig gestellte Fragen</a></li><li><a href="#referenzen">Referenzen</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Warum tokenisierte Einlagen jetzt relevant sind.</strong> Stablecoins haben die Nachfrage nach programmierbarem, permanent verfügbarem digitalem Geld offengelegt.</li>  <li><strong>Der Status 2026: Vom Piloten zum Produkt, noch nicht im Netzwerkmaßstab.</strong> Lloyds identifiziert die Great British Tokenised Deposits als Brancheninitiative und nennt drei konkrete Anwendungsfälle: Marktplatzzahlungen zwischen Privatpersonen, Hypothekenwechsel und Abwicklung digitaler…</li>  <li><strong>Die am weitesten entwickelten Bankprogramme 2026.</strong> Drei Programme verdienen ein eigenes Profil: JPMorgan, das die Wholesale-Deposit-Token-Kategorie eröffnet hat und in Produktionsskala betreibt; HSBC, das den vollständigsten Multi-Track-Stack über Deposit Tokens,…</li>  <li><strong>Tokenisierte Einlagen vs. Stablecoins vs. CBDC.</strong> Drei Instrumente konkurrieren um dieselbe Rolle — programmierbares, settlement-fähiges digitales Geld —, aber sie sitzen auf fundamental unterschiedlichen Anspruchsstrukturen.</li></ul></aside><h1>Tokenisierte Einlagen 2026: Bankdienstleistungen, Stablecoin-Wettbewerb und der Status programmierbaren Geschäftsbankgelds</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>Tokenisierte Einlagen werden zur wichtigsten Antwort des Bankensektors auf Stablecoins im Bereich digitales Geld. Sie bewahren die Einlagenbeziehung der Geschäftsbank und ermöglichen zugleich Programmierbarkeit, digitale Wallets, atomare Abwicklung und Workflows für tokenisierte Vermögenswerte. Die Lloyds Banking Group erklärt, dass sich digitale Vermögenswerte in Großbritannien 2026 in den Mainstream bewegen, und hebt tokenisierte Einlagen, digitale Gilts und die Great British Tokenised Deposits als aktive Brancheninitiativen hervor (<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>).</p>
+<p>Dieser Beitrag konzentriert sich auf die Wholesale-, institutionelle und Corporate-Treasury-Schicht — den Teil der Deposit-Token-Geschichte, in dem Piloten live sind und Bankprodukte Gestalt annehmen. Retail-tokenisierte Einlagen existieren als Forschungspfad und innerhalb der Retail-Hülle des HSBC Gold Token, aber der Wendepunkt 2026 vollzieht sich im Transaktionsbanking, nicht im alltäglichen Konsumentenzahlungsverkehr.</p>
+<hr />
+<blockquote>
+<p><strong>Executive Summary / Wichtigste Erkenntnisse</strong></p>
+<ul>
+<li><strong>Marktstatus.</strong> Tokenisierte Einlagen sind 2026 vorskalierbar, aber nicht mehr theoretisch: Piloten sind live, Bankenangebote formen sich, und das britische Multibanken-Programm läuft mit HSBC, NatWest, Lloyds, Barclays, Nationwide und Santander bis Mitte 2026 und testet Marktplatzzahlungen, Hypothekenwechsel und die Abwicklung digitaler Vermögenswerte (<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>).</li>
+<li><strong>Wettbewerbsdruck.</strong> Stablecoins sind groß und wachsen (die BIS schätzt die Marktkapitalisierung auf ~315 Milliarden US-Dollar, ~98 % in US-Dollar Anfang April 2026) und erzwingen den Zeitplan für Deposit Tokens. Sie gewinnen bei Reichweite im offenen Ökosystem, krypto-nativer Liquidität und globalem Retail; tokenisierte Einlagen gewinnen bei regulatorischem Komfort, Einlagensicherung und Treasury-Workflow (<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>).</li>
+<li><strong>Regulatorische Grenzen.</strong> Der FDIC-Vorschlag 2026 stuft tokenisierte Einlagen als auf DLT verbuchte Einlagenverbindlichkeiten ein und grenzt sie ausdrücklich von Zahlungs-Stablecoins ab, was das US-Perimeter härtet (<a href="https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted" title="FDIC proposed rule">FDIC</a>).</li>
+<li><strong>Führende Bankprogramme.</strong> JPMorgans JPM Coin auf Kinexys wickelt täglich rund 2 Milliarden US-Dollar im Wholesale-Settlement ab und hat den längsten Live-Track-Record für Deposit Tokens. HSBC hat den umfassendsten Multi-Track-Stack: TDS in HK, SG, UK, LU, US in USD/GBP/EUR/HKD/SGD; HSBC Orion trägt den britischen Pilot des Digital Gilt Instrument (DIGIT); der HSBC Gold Token tokenisiert allokierte Goldbarren; netzwerkübergreifende atomare Abwicklung wurde auf Canton + Project Ensemble erprobt; PQC wird mit Quantinuum implementiert (<a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" title="HSBC Tokenised Deposit Service">HSBC</a>).</li>
+<li><strong>Designentscheidungen, die alles bestimmen.</strong> Drei Ledger-Recht-Muster dominieren: der Token <em>ist</em> die Einlage (sauberste atomare Abwicklung, höchste Uptime-Anforderung), der Token <em>repräsentiert</em> eine konventionelle Einlage (juristisch einfacher, Reconciliation-Overhead, das entspricht JPM Coin und HSBC TDS), oder der Token ist eine <em>Anweisungsebene</em> über konventionellen Schienen (schwächster Anspruch auf Programmierbarkeit).</li>
+<li><strong>Renditeökonomie zählt so viel wie Regulierung.</strong> Ob tokenisierte Einlagen die gleichen Zinsen wie die zugrunde liegende Einlage tragen, ist eine Treasury-relevante Frage. Designs, die die Einlagenökonomie bewahren, skalieren im Cash-Management; reine Zahlungstoken ohne Verzinsung verlieren Firmenguthaben an den Wettbewerber, der zahlt.</li>
+<li><strong>Die bindenden Restriktionen sind Interoperabilität und rechtliche Endgültigkeit.</strong> Konflikte zwischen Jurisdiktionen, das Auseinanderfallen von DLT-Immutabilität und juristischer Reversibilität sowie fragmentierte Plattformen (Corda, Canton, Besu, Orion, ERC-20 vs. Canton-native Tokenformate) sind heute die bindenden Restriktionen — nicht die Technologie selbst.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="warum-tokenisierte-einlagen-jetzt-relevant-sind">Warum tokenisierte Einlagen jetzt relevant sind <a class="heading-anchor" href="#warum-tokenisierte-einlagen-jetzt-relevant-sind" aria-label="Link zu Warum tokenisierte Einlagen jetzt relevant sind">#</a></h2>
+<p>Stablecoins haben die Nachfrage nach programmierbarem, permanent verfügbarem digitalem Geld offengelegt. Die Antwort des Bankensektors besteht nicht darin, Stablecoins einfach zu kopieren, sondern Geschäftsbankgeld in tokenisierte Umgebungen anzupassen, während Bankregulierung, Einlagenbeziehungen und Aufsichtskontrollen erhalten bleiben. Die Deutsche Bank beschreibt tokenisierte Einlagen als Erweiterung des bestehenden Bankmodells in programmierbare Umgebungen unter Wahrung der Rolle des Geschäftsbankgelds (<a href="https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs" title="Digital Money">Deutsche Bank flow</a>).</p>
+<p>Die Unterscheidung ist wichtig. Ein Stablecoin ist typischerweise ein Anspruch gegen einen Emittenten oder eine Reservestruktur. Eine tokenisierte Einlage soll eine Bankeinlage oder die Darstellung einer Bankeinlage bleiben, mit dem rechtlichen, aufsichtsrechtlichen und operativen Rahmen der Bank.</p>
+<h2 id="der-status-2026-vom-piloten-zum-produkt-noch-nicht-im-netzwerkmastab">Der Status 2026: Vom Piloten zum Produkt, noch nicht im Netzwerkmaßstab <a class="heading-anchor" href="#der-status-2026-vom-piloten-zum-produkt-noch-nicht-im-netzwerkmastab" aria-label="Link zu Der Status 2026: Vom Piloten zum Produkt, noch nicht im Netzwerkmaßstab">#</a></h2>
+<h3 id="1-uk-bankpiloten-definieren-praktische-anwendungsfalle">1. UK-Bankpiloten definieren praktische Anwendungsfälle <a class="heading-anchor" href="#1-uk-bankpiloten-definieren-praktische-anwendungsfalle" aria-label="Link zu 1. UK-Bankpiloten definieren praktische Anwendungsfälle">#</a></h3>
+<p>Lloyds identifiziert die Great British Tokenised Deposits als Brancheninitiative und nennt drei konkrete Anwendungsfälle: Marktplatzzahlungen zwischen Privatpersonen, Hypothekenwechsel und Abwicklung digitaler Vermögenswerte (<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>). Dies sind sinnvolle frühe Tests, weil sie Geldfluss mit Vertrauen, Timing und bedingter Abwicklung kombinieren.</p>
+<p>Der britische Multibanken-Pilot ist tatsächlich multibankisch. Die Teilnehmerliste — HSBC, NatWest, Lloyds, Barclays, Nationwide und Santander — deckt den Großteil der britischen Retail- und Firmeneinlagenbestände ab, und das Programm läuft bis Mitte 2026. Das ist wichtig, weil tokenisierte Einlagen ohne interbankliche Interoperabilität nur Produktmerkmale einer einzelnen Bank sind; der britische Pilot ist eines der wenigen weltweit aktiven Experimente, das den banküberschreitenden Fall tatsächlich testet.</p>
+<p>Marktplatzzahlungen testen Betrugsreduktion und Verkäufervertrauen. Hypothekenwechsel testen die Automatisierung mehrparteienbasierter Prozesse. Die Abwicklung digitaler Vermögenswerte testet Lieferung gegen Zahlung zwischen tokenisiertem Geld und tokenisierten Instrumenten.</p>
+<h3 id="2-firmenwallets-werden-zur-schnittstelle">2. Firmenwallets werden zur Schnittstelle <a class="heading-anchor" href="#2-firmenwallets-werden-zur-schnittstelle" aria-label="Link zu 2. Firmenwallets werden zur Schnittstelle">#</a></h3>
+<p>Lloyds erklärt, Wallets für Firmen- und institutionelle Kunden zu entwickeln, die neben den traditionellen Transaktionsbanking-Oberflächen stehen und tokenisierte Einlagen, digitale Vermögenswerte und Smart Contracts halten können (<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>). Das ist eine entscheidende Designentscheidung. Tokenisierte Einlagen werden nicht skalieren, wenn sie Treasurer dazu zwingen, bestehende Bank-Workflows aufzugeben.</p>
+<p>Die gewinnende Schnittstelle wird wahrscheinlich ein duales Modell aus Bankkonto und Wallet sein. Der Kunde sieht eine Treasury-Plattform; die Bank kümmert sich im Hintergrund um Konvertierung, Auswahl des Abwicklungswegs und Compliance-Kontrollen.</p>
+<h3 id="3-stablecoins-erzwingen-dringlichkeit-klaren-aber-auch-das-risiko">3. Stablecoins erzwingen Dringlichkeit, klären aber auch das Risiko <a class="heading-anchor" href="#3-stablecoins-erzwingen-dringlichkeit-klaren-aber-auch-das-risiko" aria-label="Link zu 3. Stablecoins erzwingen Dringlichkeit, klären aber auch das Risiko">#</a></h3>
+<p>Die BIS-Rede vom April 2026 erkennt Stablecoins technologische Merkmale wie Smart-Contract-Programmierbarkeit und atomare Abwicklung an, betont jedoch zugleich Risiken rund um die Einheitlichkeit des Geldes, Run-Anfälligkeit, finanzielle Integrität, monetäre Souveränität und Abwicklung außerhalb des Zentralbankgelds (<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>).</p>
+<p>Genau aus dieser Kritik ergibt sich, warum tokenisierte Einlagen relevant sind. Sie versuchen, die nützliche Programmierbarkeit tokenisierten Geldes in einen regulierten Rahmen für Geschäftsbankgeld zu übertragen.</p>
+<h3 id="4-project-agora-und-das-einheitliche-ledger-pragen-die-wholesale-frage">4. Project Agorá und das einheitliche Ledger prägen die Wholesale-Frage <a class="heading-anchor" href="#4-project-agora-und-das-einheitliche-ledger-pragen-die-wholesale-frage" aria-label="Link zu 4. Project Agorá und das einheitliche Ledger prägen die Wholesale-Frage">#</a></h3>
+<p>Die BIS rahmt das Project Agorá als Arbeit mit Zentralbanken und dem Privatsektor zur Erforschung der Tokenisierung im grenzüberschreitenden Zahlungsverkehr und verbindet die übergeordnete Richtung mit der Vision des einheitlichen Ledgers (<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>). Die Deutsche Bank verweist ebenfalls auf Project Agorá und Partior als Teil der Next-Generation-Abwicklung und grenzüberschreitenden Infrastruktur (<a href="https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs" title="Digital Money">Deutsche Bank flow</a>).</p>
+<p>Hier werden tokenisierte Einlagen zur Wholesale-Infrastruktur. Die Kernfrage lautet, wie Geschäftsbankgeld, Zentralbankgeld und tokenisierte Vermögenswerte gemeinsam abrechnen, ohne rechtliche Endgültigkeit, Liquiditätskontrollen oder die Einheitlichkeit des Geldes zu brechen.</p>
+<h2 id="die-am-weitesten-entwickelten-bankprogramme-2026">Die am weitesten entwickelten Bankprogramme 2026 <a class="heading-anchor" href="#die-am-weitesten-entwickelten-bankprogramme-2026" aria-label="Link zu Die am weitesten entwickelten Bankprogramme 2026">#</a></h2>
+<p>Drei Programme verdienen ein eigenes Profil: JPMorgan, das die Wholesale-Deposit-Token-Kategorie eröffnet hat und in Produktionsskala betreibt; HSBC, das den vollständigsten Multi-Track-Stack über Deposit Tokens, Wertpapiere, Real-World-Assets und Kryptographie hinweg vorhält; und eine Reihe europäischer und asiatischer Programme, die in der Öffentlichkeit leiser, aber materiell aktiv sind. Tokenisierte Einlagen als einheitliche Branchenbewegung zu behandeln, würde die Tatsache verfehlen, dass diese Stacks unterschiedliche Wetten darauf eingehen, wie das digitale Geldangebot einer Bank aussehen soll.</p>
+<h3 id="jpmorgan-jpm-coin-onyx-und-die-kinexys-plattform">JPMorgan: JPM Coin, Onyx und die Kinexys-Plattform <a class="heading-anchor" href="#jpmorgan-jpm-coin-onyx-und-die-kinexys-plattform" aria-label="Link zu JPMorgan: JPM Coin, Onyx und die Kinexys-Plattform">#</a></h3>
+<p>JPMorgan brachte JPM Coin 2019 auf den Markt, vier Jahre bevor der Großteil der Branche den Begriff „tokenisierte Einlage&quot; öffentlich verwendete. Die Lösung läuft auf <strong>Kinexys by J.P. Morgan (formerly Onyx)</strong>, JPMorgans permissionierter Blockchain-Plattform, und wickelt Wholesale-Geschäftsflüsse von Firmenkunden ab — vor allem institutionelle Treasury-Sweeps, intraday Liquiditätsbewegungen und zunehmend tokenisierte Repos. Bis 2026 verarbeitet Kinexys in der Größenordnung von 2 Milliarden US-Dollar pro Tag in Wholesale-Transaktionen, was JPMorgan zum größten Live-Betreiber von Deposit-Token-Abwicklung weltweit macht.</p>
+<p>Diese Historie ist aus zwei Gründen relevant. Erstens verfügt JPMorgan über den längsten Produktions-Track-Record zu den operativen Fragen — Reconciliation, Streitbeilegung, intraday Liquiditätsverhalten und Ausfallmodi —, mit denen andere Banken noch ringen. Zweitens ist die Plattform multi-asset: Kinexys hat sich über den Deposit Token hinaus auf tokenisierte Repos, FX-Settlement und Kollateralmobilität ausgeweitet, was JPMorgan in die Lage versetzt, Lieferung gegen Zahlung über ein einziges Ledger statt über Punkt-zu-Punkt-Integrationen zu liefern.</p>
+<p>Die Kehrseite ist, dass JPM Coin per Design eine Closed-Network-Lösung ist. Sie wickelt auf JPMorgan-Schienen ab, zwischen JPMorgan-Kunden, auf einer JPMorgan-betriebenen Chain. Es ist das stärkste Branchenbeispiel dafür, wie eine tokenisierte Einlage einer einzelnen Bank skalieren kann — und zugleich die deutlichste Illustration der BIS-Kritik, dass Deposit Tokens ohne Interoperabilität zu Walled Gardens statt zu Wholesale-Infrastruktur werden.</p>
+<h3 id="hsbc-multi-track-stack-vom-deposit-token-bis-zum-tokenisierten-gold">HSBC: Multi-Track-Stack vom Deposit Token bis zum tokenisierten Gold <a class="heading-anchor" href="#hsbc-multi-track-stack-vom-deposit-token-bis-zum-tokenisierten-gold" aria-label="Link zu HSBC: Multi-Track-Stack vom Deposit Token bis zum tokenisierten Gold">#</a></h3>
+<p>HSBCs Wette ist breiter. Wo JPMorgan in einem Wholesale-Use-Case in die Tiefe ging, hat HSBC parallel über Deposit Tokens, institutionelle Wertpapiere, Real-World-Assets und Kryptographie hinweg gebaut. HSBC positioniert die tokenisierte Einlage ausdrücklich als bevorzugtes Instrument, um traditionelles Banking mit dezentraler Infrastruktur zu verbinden, noch vor ungedeckten Stablecoins oder Digitalwährungen Dritter (<a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" title="HSBC Tokenised Deposit Service">HSBC</a>).</p>
+<h4>Tokenised Deposit Service (TDS)</h4>
+<p>Der HSBC Tokenised Deposit Service wandelt Fiat-Guthaben von Firmenkunden im Verhältnis 1:1 in digitale Token um und hält die Mittel vollständig reguliert und in der Bilanz der Bank (<a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" title="HSBC Tokenised Deposit Service">HSBC</a>). TDS ist in fünf Jurisdiktionen operativ — Hongkong, Singapur, dem Vereinigten Königreich, Luxemburg und den Vereinigten Staaten — und unterstützt Sofortzahlungen in fünf Währungen: USD, GBP, EUR, HKD und SGD. Die Kernfunktion ist Treasury-tauglich: große Firmen- und institutionelle Kunden clearen und settlen grenzüberschreitend in Sekunden und überwinden via 24/7-Smart-Contract-Programmierbarkeit SWIFT-Cut-off-Zeiten, Batch-Fenster und Zeitzonenbarrieren.</p>
+<p>Dieses Produktportfolio ist das stärkste Gegenbeispiel zur Einordnung, „tokenisierte Einlagen seien noch theoretisch&quot;. Im Netzwerkmaßstab sind sie es; innerhalb von HSBC sind sie es nicht.</p>
+<h4>HSBC Orion und digitale Kapitalmärkte</h4>
+<p>HSBC Orion ist die hauseigene institutionelle DLT-Plattform der Bank für die Emission, Abwicklung und Verwahrung tokenisierter Wertpapiere. HM Treasury hat HSBC Orion dazu bestimmt, die zugrunde liegende Plattforminfrastruktur für den richtungsweisenden britischen Digital Gilt Instrument (DIGIT)-Piloten bereitzustellen — den souveränen Referenzfall für tokenisierte Staatsschulden im Vereinigten Königreich. HSBC Orion hat außerdem skalierte Digitalanleiheemissionen für die Regierung von Hongkong und die Europäische Investitionsbank getragen, darunter grüne und souveräne Tranchen.</p>
+<p>Für tokenisierte Einlagen ist das relevant, weil die Abwicklungsparität zwischen Deposit Tokens und tokenisierten Wertpapieren Voraussetzung für Lieferung gegen Zahlung auf einem gemeinsamen Ledger ist. Ein Deposit Token ohne institutionelle Wertpapieremissionsplattform hat nichts, wogegen er abgerechnet werden könnte.</p>
+<h4>Tokenisierung realer Vermögenswerte: der HSBC Gold Token</h4>
+<p>HSBC hat dasselbe Anker-Modell im Retail-Segment auf physische Vermögenswerte ausgedehnt. Der HSBC Gold Token erlaubt es Nutzern der HSBC-HK-Mobile-App, fraktionales Eigentum an physischem Gold zu erwerben, mit institutionellem Zugang im Vereinigten Königreich. Jeder Token ist zu 100 % durch allokierte physische Goldbarren in den institutionellen Tresoren von HSBC gedeckt — dasselbe regulatorische und operative Anker-Muster, das die Bank auf ihre Deposit Tokens anwendet.</p>
+<h4>Netzwerk-Interoperabilität und quantensichere Tokenisierung</h4>
+<p>HSBC hat die atomare Abwicklung seiner tokenisierten Einlagen über externe Netzwerke unter Nutzung des Canton Network und Project Ensemble der Hong Kong Monetary Authority erprobt. Das ist genau das Interoperabilitätselement, das eine BIS-artige Kritik an Einzelbank-Tokens einfordert: tokenisierte Einlagen werden erst dann zur Wholesale-Infrastruktur, wenn sie über Netzwerke hinweg abrechnen können, nicht nur innerhalb einer einzelnen Bank.</p>
+<p>Parallel dazu hat HSBC mit Quantinuum kooperiert, um post-quanten-kryptografische Sicherheit direkt auf seinem tokenisierten Goldledger zu implementieren — eine defensive Antwort auf „Store Now, Decrypt Later&quot;-Angriffe (SNDL), bei denen Angreifer heute verschlüsselte Ledger-Daten sammeln in der Wette, dass künftige Quantenmaschinen sie entschlüsseln werden. Post-Quanten-Kryptographie auf einem produktiven Token-Ledger ist noch nicht Industriestandard; HSBC zählt zu den wenigen Banken, die sie als Pflichteinsatz für jede tokenisierte Plattform behandeln, die PQC-Migrationsfristen überdauern soll.</p>
+<h4>Regulierte Stablecoins neben Deposit Tokens</h4>
+<p>HSBC hat den Stablecoin-Pfad nicht vollständig ignoriert. Die Bank hat von der HKMA eine Lizenz erhalten, um regulierte Stablecoins für die Abwicklung von Peer-to-Peer- und Investmenttransaktionen zu pilotieren — aber als Ergänzung zum Kern tokenisierter Einlagen, nicht als Ersatz. Die strategische Botschaft ist im gesamten HSBC-Stack konsistent: tokenisierte Einlagen verankern das Angebot der Bank für digitales Geld; regulierte Stablecoins erweitern die Reichweite in Anwendungsfälle, in denen ein Deposit-Token-Anspruch strukturell unpassend ist.</p>
+<h3 id="weitere-aktive-programme">Weitere aktive Programme <a class="heading-anchor" href="#weitere-aktive-programme" aria-label="Link zu Weitere aktive Programme">#</a></h3>
+<p>Über JPMorgan und HSBC hinaus sind mehrere Programme für das Netzwerkbild material, auch wenn ihre öffentliche Kommunikation dünner ist.</p>
+<p><strong>Société Générale (SG-FORGE).</strong> SG-FORGE hat euro-denominierte digitale Anleihen und EURCV, den regulierten Euro-Stablecoin, parallel zur Deposit-Token-Arbeit emittiert, und EURCV ist der erste Euro-Stablecoin, der von einer global systemrelevanten Bank emittiert wird und auf mehreren öffentlichen Chains operiert. Das bringt Société Générale in die ungewöhnliche Lage, sowohl den Deposit-Token- als auch den regulierten Stablecoin-Pfad unter europäischer Bankenregulierung zu fahren, wobei EURCV als Reichweitenschicht für offene Ökosysteme positioniert ist und die Deposit-Token-Seite den regulierten Corporate-Perimeter abdeckt.</p>
+<p><strong>Standard Chartered.</strong> Standard Chartered ist bei tokenisierten Einlagen und bei tokenisierten Real-World-Assets über Zodia Custody (sein institutionelles Digital-Asset-Custody-Joint-Venture) und eigene singapur-basierte Piloten aktiv, einschließlich der Teilnahme an MAS Project Guardian für die Abwicklung tokenisierter Vermögenswerte. Der strategische Schwerpunkt liegt auf Emerging-Markets-Korridoren — Asien-Afrika-Naher Osten —, wo tokenisierte Einlagen positioniert sind, um Korrespondenzbankreibung zu verdrängen, statt nur die heimischen britischen oder US-Schienen aufzuwerten.</p>
+<p><strong>Goldman Sachs (GS DAP).</strong> Die GS-DAP-Plattform für digitale Vermögenswerte hat institutionelle digitale Anleihen emittiert (einschließlich der zweijährigen digitalen Anleihe der European Investment Bank über 100 Mio. €) und unterstützt die Mobilität tokenisierter Sicherheiten für Repos und Wertpapierfinanzierung. GS DAP ist weniger ein Corporate-Treasury-Angebot als eine Abwicklungsplattform für tokenisierte Wertpapiere — nützlich als Kontrapunkt zu HSBC Orions ähnlicher Rolle und als Beleg dafür, dass sich die Seite der digitalen Kapitalmärkte des Stacks schneller konsolidiert als die Deposit-Token-Seite.</p>
+<p>Die übergeordnete Implikation ist einfach: Deposit-Token-Fähigkeit ist mittlerweile Pflicht für jede globale Wholesale-Bank, die im Transaction Banking wettbewerbsfähig bleiben will, und die interessantere Frage ist, wer mit wem interoperiert, statt wer zuerst baut.</p>
+<h2 id="tokenisierte-einlagen-vs-stablecoins-vs-cbdc">Tokenisierte Einlagen vs. Stablecoins vs. CBDC <a class="heading-anchor" href="#tokenisierte-einlagen-vs-stablecoins-vs-cbdc" aria-label="Link zu Tokenisierte Einlagen vs. Stablecoins vs. CBDC">#</a></h2>
+<p>Drei Instrumente konkurrieren um dieselbe Rolle — programmierbares, settlement-fähiges digitales Geld —, aber sie sitzen auf fundamental unterschiedlichen Anspruchsstrukturen. Die Wahl des Anspruchs bestimmt alles Weitere: rechtlichen Schutz, aufsichtsrechtliche Behandlung, wo der Vermögenswert abrechnet und welchem Netzwerk der Inhaber implizit vertraut. Die Tabelle unten reduziert die vier Kandidaten auf fünf Achsen, anschließend erklärt der Text darunter, wo jeder einzelne tatsächlich gewinnt.</p>
+<table>
+<thead>
+<tr>
+<th>Instrument</th>
+<th>Anspruchstyp</th>
+<th>Bester Einsatz</th>
+<th>Status 2026</th>
+<th>Schlüsselrisiko</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tokenisierte Einlagen</strong></td>
+<td>Geschäftsbankeinlage oder Darstellung</td>
+<td>Bankgeführte programmierbare Zahlungen, Treasury, Abwicklung tokenisierter Vermögenswerte</td>
+<td>Piloten und frühes institutionelles Produktdesign (<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>)</td>
+<td>Interoperabilität und rechtliche Konsistenz</td>
+</tr>
+<tr>
+<td><strong>Stablecoins</strong></td>
+<td>Anspruch gegen Emittenten/Reservestruktur</td>
+<td>Krypto-Liquidität, grenzüberschreitende Experimente, Dollarliquidität</td>
+<td>Groß und wachsend; die BIS schätzt die Marktkapitalisierung Anfang April 2026 auf rund 315 Mrd. USD (<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>)</td>
+<td>Runs, finanzielle Integrität, monetäre Souveränität</td>
+</tr>
+<tr>
+<td><strong>Wholesale-CBDC</strong></td>
+<td>Zentralbankgeld</td>
+<td>Interbankenabwicklung und Infrastruktur tokenisierter Märkte</td>
+<td>Aktive Erforschung durch Zentralbankprojekte</td>
+<td>Design, Privatsphäre, Skalierbarkeit, politisches Mandat</td>
+</tr>
+<tr>
+<td><strong>Retail-CBDC</strong></td>
+<td>Zentralbankgeld für die Öffentlichkeit</td>
+<td>Öffentliche digitale Bargeldalternative</td>
+<td>Gemischter globaler Fortschritt</td>
+<td>Akzeptanz, Privatsphäre, Bankendisintermediation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="wo-tokenisierte-einlagen-gewinnen">Wo tokenisierte Einlagen gewinnen <a class="heading-anchor" href="#wo-tokenisierte-einlagen-gewinnen" aria-label="Link zu Wo tokenisierte Einlagen gewinnen">#</a></h3>
+<p>On-Balance-Sheet-Geschäftsbankgeld bringt den regulatorischen Komfort mit, den Stablecoins sich erst noch verdienen müssen. Tokenisierte Einlagen erben Einlagensicherung, aufsichtsrechtliche Kapitalbehandlung und bestehende AML/Sanktionskontrollen. Für einen Corporate-Treasurer bedeutet das kein neues Gegenparteirisiko und kein neues Reserve-Audit, das hinterfragt werden müsste. Außerdem koppeln sie an das Bankkonto an, das der Konzern ohnehin hat — kein Exchange, kein Reserve-Emittent, keine Custody-Neuheit. BIS und FDIC lehnen sich an diesen Punkt an: Die Einheitlichkeit des Geldes hält, wenn der Anspruch dort sitzt, wo der bestehende rechtliche Rahmen ihn bereits versteht (<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>; <a href="https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted" title="FDIC proposed rule">FDIC</a>).</p>
+<h3 id="wo-stablecoins-weiterhin-gewinnen">Wo Stablecoins weiterhin gewinnen <a class="heading-anchor" href="#wo-stablecoins-weiterhin-gewinnen" aria-label="Link zu Wo Stablecoins weiterhin gewinnen">#</a></h3>
+<p>In drei Bereichen. Erstens, Reichweite im offenen Ökosystem: Stablecoins komponieren mit DeFi, mit krypto-nativen Treasuries und mit dem langen Schwanz von Wallets, die niemals eine Bank-API integrieren werden. Zweitens, globale Retail-Verteilung: Dollar-denominierte Stablecoins sind in Märkten mit fragiler Lokalwährungsbanking bereits ein de-facto Sparinstrument. Drittens, 24/7-Märkte und Krypto-Settlement: Selbst mit TDS-artigen Always-on-Bankschienen sind Stablecoins die native Recheneinheit der Krypto-Liquidität und werden es auf absehbare Zeit bleiben. Die beiden Instrumente sind keine strikten Substitute; die Wettbewerbsgrenze entscheidet sich vor allem daran, ob der Use Case innerhalb oder außerhalb des regulierten Bankperimeters liegt.</p>
+<h2 id="was-banken-aufbauen-mussen">Was Banken aufbauen müssen <a class="heading-anchor" href="#was-banken-aufbauen-mussen" aria-label="Link zu Was Banken aufbauen müssen">#</a></h2>
+<h3 id="ledger-und-rechtsarchitektur">Ledger- und Rechtsarchitektur <a class="heading-anchor" href="#ledger-und-rechtsarchitektur" aria-label="Link zu Ledger- und Rechtsarchitektur">#</a></h3>
+<p>Drei Designmuster dominieren die laufenden Deployments. Das erste ist „der Token IST die Einlage&quot; — das DLT-Ledger selbst ist System of Record, und der On-Chain-Saldo trägt den juristischen Anspruch. Das ist das sauberste Modell für atomare Abwicklung und das, was Project Agorá und Unified-Ledger-Vorschläge anvisieren, aber es zwingt die Bank, Ledger-Uptime als Kernbank-Uptime zu behandeln. Das zweite ist „der Token repräsentiert die Einlage&quot; — ein konventionelles Kernbankenkonto bleibt der juristische Datensatz, und der Token ist ein Spiegel, der ihm folgt. JPM Coin und HSBC TDS liegen näher an diesem Ende. Es ist juristisch und operativ einfacher, erfordert aber konstante Reconciliation, und atomares DvP wird schwieriger, weil die juristisch bindende Seite off-ledger lebt. Das dritte ist „Token als Anweisungsebene&quot; — der Token repräsentiert die Einlage überhaupt nicht; er triggert eine konventionelle Zahlung über bestehende Schienen (CHAPS, Fedwire, TARGET2). Das ist am leichtesten zu deployen, aber der schwächste Anspruch auf tatsächlich programmierbares Geld; das ist, was einige Banken ausliefern und als tokenisierte Einlage bezeichnen, obwohl sie eigentlich nur ein Smart-Contract-Front-End über einer SWIFT-Pipe haben.</p>
+<p>Die vorgeschlagene Regel der FDIC aus dem Jahr 2026 erkennt die ersten beiden ausdrücklich als mit Distributed-Ledger-Technologie erfasste Einlagenverbindlichkeiten an und grenzt sie von Zahlungs-Stablecoins ab (<a href="https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted" title="FDIC proposed rule">FDIC</a>). Das dritte erhält eine härtere regulatorische Behandlung, weil Einlagenbeziehung und Token nie konvergieren.</p>
+<h4>Warum rechtliche Endgültigkeit das harte Problem ist</h4>
+<p>„Rechtliche Endgültigkeit&quot; ist die Formulierung, die in Deposit-Token-Roadmaps am häufigsten auftaucht und am wenigsten entpackt wird. Drei Dinge stecken tatsächlich darunter. Erstens, Konflikt der Rechtsordnungen: Wenn eine von einer britischen Bank emittierte tokenisierte Einlage atomar gegen ein in Luxemburg registriertes tokenisiertes Wertpapier über einen in Singapur betriebenen Knoten abrechnet, welches Settlement-Finalitäts-Regime welcher Jurisdiktion regelt den Trade? Zweitens, das Auseinanderfallen von DLT-Immutabilität und rechtlichem Rückgängigmachen: Bankzahlungen können auf Gerichtsbeschluss, Sanktionsausweisung oder Betriebsfehler hin rückabgewickelt werden; ein immutables Ledger nicht, was eine „Reversal-Schicht&quot; erzwingt, die juristisch belastbar sein muss, ohne das Immutabilitätsnarrativ zu brechen. Drittens, die Frage der On-Chain-Endgültigkeit selbst: Zählt ein bestätigter Block als rechtliche Abwicklung, oder nur der entsprechende Off-Chain-Buchungseintrag? Solange diese drei Punkte nicht auf regulatorischer Ebene geklärt sind — und nicht nur bilateral zwischen teilnehmenden Banken — ist netzwerkübergreifende atomare Abwicklung ein Pilot, keine Infrastruktur.</p>
+<h3 id="wallet-und-identitatskontrollen">Wallet- und Identitätskontrollen <a class="heading-anchor" href="#wallet-und-identitatskontrollen" aria-label="Link zu Wallet- und Identitätskontrollen">#</a></h3>
+<p>Firmenwallets benötigen starke Identität, Aufgabentrennung, Transaktionsrichtlinien, Sanktionsscreening, Audit-Trails und Recovery-Kontrollen. Eine Wallet für tokenisierte Einlagen ist keine Verbraucher-Krypto-Wallet mit Banklogo. Sie ist ein Treasury-Kontrollpunkt.</p>
+<p>Das wichtigste operative Merkmal könnte die Richtlinie sein. Ein Treasurer sollte definieren können, wer unter bestimmten Schwellenwerten und Kontrahentenregeln Bewegungen tokenisierter Einlagen initiieren, freigeben, abwickeln, stornieren oder anfechten darf.</p>
+<h3 id="rendite-und-treasury-okonomie">Rendite- und Treasury-Ökonomie <a class="heading-anchor" href="#rendite-und-treasury-okonomie" aria-label="Link zu Rendite- und Treasury-Ökonomie">#</a></h3>
+<p>Rendite ist die Frage, die senior Treasurer als Erstes stellen und die in den meisten Deposit-Token-Pressemitteilungen vermieden wird. Wenn ein Konzern für 48 Stunden 50 Millionen US-Dollar in einer Wallet mit tokenisierten Einlagen parkt, während er auf eine Settlement-Leg wartet, verdient dieser Saldo dann denselben Zins, den die Bank auf eine konventionelle Overnight-Einlage zahlt, oder ist er steril? Zwei Muster zeichnen sich ab. Einige Banken behandeln die tokenisierte Einlage ökonomisch identisch mit der zugrunde liegenden Einlage — der Konzern behält seinen Zins, die Bank behält den Saldo in ihrer Bilanz, und der Token ist eine Programmierbarkeitsschicht. Andere behandeln sie als Transaktions-Float, der keinen Zins zahlt, weil das Geld als in Bewegung gilt. Das erste Muster bewahrt die bestehende Einlagenökonomie und ist das einzige Design, das im Cash-Management skaliert. Das zweite ist im Wesentlichen ein geschlossenes Zahlungsinstrument und wird Firmenguthaben an denjenigen Wettbewerber verlieren, der das erste Muster anbietet. Das ist auch der Grund, warum „tokenisierte Einlagen gegen Stablecoins&quot; teilweise eine Frage der Renditeökonomie ist, nicht nur der Regulierung: In einem Hochzinsumfeld hat ein zinsloser Zahlungstoken einen strukturellen Nachteil gegenüber einer zinszahlenden tokenisierten Einlage oder einem renditetokenisierten Geldmarktfonds neben einem Stablecoin.</p>
+<h3 id="interoperabilitatsschicht">Interoperabilitätsschicht <a class="heading-anchor" href="#interoperabilitatsschicht" aria-label="Link zu Interoperabilitätsschicht">#</a></h3>
+<p>Eine tokenisierte Einlage einer einzelnen Bank ist nützlich, aber begrenzt. Multi-Bank-Interoperabilität ist der Punkt, an dem Netzwerkeffekte beginnen. Dies erfordert Standards für Token-Format, Messaging, Identität, Abwicklungsendgültigkeit, Streitfallbehandlung, AML-Daten, Wallet-Portabilität und Konvertierung zwischen tokenisierten Einlagen, konventionellen Einlagen, Stablecoins, CBDC und tokenisierten Vermögenswerten.</p>
+<p>Die technische Oberfläche ist fragmentiert. Zu den permissionierten DLT-Akteuren gehören R3 Corda (von Standard Chartered und anderen für tokenisierte Einlagen genutzt), Canton Network (von HSBC für netzwerkübergreifende Settlement-Tests und von Goldman Sachs' GS DAP eingesetzt), Hyperledger Besu (die JPMorgan-abgeleitete Ethereum-Variante unter Kinexys) sowie proprietäre Stacks wie HSBC Orion. Die Wahl des Tokenformats ist ebenfalls offen: Manche Netzwerke nutzen ERC-20-abgeleitete Verträge, um mit dem breiteren Ethereum-Tooling zu komponieren; andere setzen auf IBC-artige oder Canton-native Token-Primitiven. Die pragmatische Antwort 2026 ist, dass kein einzelner Stack gewonnen hat, und die Banken, die tokenisierte Einlagen skalieren werden, sind diejenigen, die Interoperabilitätsbrücken bauen (atomare Settlement-Protokolle zwischen Canton und Besu, ISO-20022-Mapping zu On-Chain-Nachrichtenformaten), statt auf eine einzige Plattform zu setzen.</p>
+<p>Das Risiko besteht in einer Sammlung bankspezifischer Walled Gardens. Die Chance ist eine programmierbare Schicht aus Geschäftsbankgeld, die Bankvertrauen bewahrt und zugleich die digitale Abwicklung verbessert.</p>
+<h2 id="ausfallmodi-wo-der-stack-bricht">Ausfallmodi: Wo der Stack bricht <a class="heading-anchor" href="#ausfallmodi-wo-der-stack-bricht" aria-label="Link zu Ausfallmodi: Wo der Stack bricht">#</a></h2>
+<p>Tokenisierte Einlagen werden überwiegend in optimistischem Register beschrieben. Die Ausfallmodi verdienen Ernsthaftigkeit, weil sie den endgültigen regulatorischen Perimeter formen werden.</p>
+<p><strong>Smart-Contract-Bug bei einem Deposit Token.</strong> Ein Bug in einem Deposit-Token-Smart-Contract ist kein normaler Softwarezwischenfall; es ist potenziell ein Wrong-Balance-Ereignis auf Geschäftsbankgeld. Banken brauchen ein formal verifiziertes Contract Audit, einen Upgrade-Pfad, der keine Migration von Kundenguthaben erfordert, und einen Schutzschalter, der programmierbare Abwicklung pausiert, ohne die Konvertierbarkeit zurück in konventionelle Einlagen zu brechen.</p>
+<p><strong>Banken-Insolvenz über Jurisdiktionen hinweg.</strong> Wenn eine Bank mit tokenisierten Einlagen in fünf Jurisdiktionen ausfällt, gelten Einlagensicherungsregime national, das Ledger ist aber global. Abwicklungsbehörden haben nicht stresstestiert, wie das mit Einlegerpräferenz, Ring-Fencing-Regeln oder der Frage interagiert, wem der Token im Moment der Bankschließung eigentlich gehört. Single-Jurisdiktions-Deposit-Tokens umgehen das Problem; Multi-Jurisdiktions-Tokens sind ihm ausgesetzt.</p>
+<p><strong>Liquiditätskrise mit bifurkierten Einlagen.</strong> Konventionelle und tokenisierte Einlagen könnten sich in einem Stressereignis sehr unterschiedlich verhalten. Wenn eine tokenisierte Einlage 24/7 über einen Smart Contract in eine Nicht-Bank-Wallet bewegt werden kann, während konventionelle Einlagen einem täglichen Cut-off unterliegen, läuft die tokenisierte Seite schneller. Das ist im Normalbetrieb ein Feature und in einem Bank-Run ein Destabilisator. Liquidity-Coverage-Ratios und operative Resilienzrahmen sind nicht für diese Asymmetrie geschrieben worden.</p>
+<p><strong>Operative Abhängigkeit von einem einzigen DLT-Anbieter.</strong> Viele Bank-Deposit-Token-Plattformen laufen auf einem einzigen permissionierten DLT-Stack. Die DORA-artige Kritik, die bereits auf Cloud angewandt wurde, gilt hier: Eine Stack-Outage beim Anbieter ist nun eine Kritische-Dienst-Outage. Die Mitigation ist Multi-Stack-Fähigkeit, nicht nur Multi-Region-Deployment eines einzigen Stacks.</p>
+<p>Keiner dieser Punkte ist ein Grund, tokenisierte Einlagen nicht zu bauen. Sie sind Gründe, die Plattform vom ersten Tag an als kritische Finanzdienstleistungsinfrastruktur zu behandeln, statt Kontrollen nach Erreichen der Skala nachzurüsten.</p>
+<h2 id="was-das-fur-die-einzelnen-banktypen-bedeutet">Was das für die einzelnen Banktypen bedeutet <a class="heading-anchor" href="#was-das-fur-die-einzelnen-banktypen-bedeutet" aria-label="Link zu Was das für die einzelnen Banktypen bedeutet">#</a></h2>
+<h3 id="globale-banken">Globale Banken <a class="heading-anchor" href="#globale-banken" aria-label="Link zu Globale Banken">#</a></h3>
+<p>Globale Banken sollten tokenisierte Einlagen als Transaktionsbanking-Infrastruktur behandeln. Der Fokus sollte auf Firmenwallets, grenzüberschreitendem Treasury, Abwicklung digitaler Vermögenswerte, Sicherheitenmobilität und programmierbaren Kontrollen für Großkunden liegen. Die Benchmark-Stacks sind nun sichtbar: Kinexys-artige Produktionsskala (JPMorgan), HSBC-artige Multi-Track-Breite, GS-DAP-artige Wertpapierabwicklungsintegration und SG-FORGE-artige Doppelabdeckung von Deposit Token und reguliertem Stablecoin. Der Entscheidungspunkt dieses Jahres ist, ob mehrere interne DLT-Experimente auf eine einzige Plattform für tokenisierte Einlagen für Treasury-Kunden konvergieren sollen, bevor Wettbewerber die UX der Corporate Wallet definieren. <strong>Action item:</strong> einen einzigen Programmverantwortlichen mit Autorität über Transaction Banking, Capital Markets und Digital-Assets-Bereiche hinweg benennen — fragmentierte interne Trägerschaft ist der häufigste Grund, weshalb diese Stacks als Pilot statt als Produkt ausgeliefert werden.</p>
+<h3 id="uk-banken">UK-Banken <a class="heading-anchor" href="#uk-banken" aria-label="Link zu UK-Banken">#</a></h3>
+<p>UK-Banken haben über die Great British Tokenised Deposits eine glaubwürdige frühe Koordinierungschance, und der Multi-Bank-Pilot wird weltweit als Vorlage für interbankliche Deposit-Token-Interoperabilität beobachtet. Die Herausforderung besteht darin, Piloten in interoperable Standards zu überführen, bevor Stablecoin-Netzwerke zur internationalen Standardschnittstelle werden. <strong>Action item:</strong> die Workflows für Marktplatzzahlungen und Hypothekenwechsel 2026 auf operative Einsatzreife härten (klare SLAs, Streitbeilegung, Sanktionsintegration), statt unbegrenzte Proof-of-Concept-Demos zu führen; die Glaubwürdigkeit des Piloten hängt davon ab, mindestens einen produktionsreifen Anwendungsfall vor Ablauf des Fensters Mitte 2026 auszuliefern.</p>
+<h3 id="zentralbanken-und-aufsichtsbehorden">Zentralbanken und Aufsichtsbehörden <a class="heading-anchor" href="#zentralbanken-und-aufsichtsbehorden" aria-label="Link zu Zentralbanken und Aufsichtsbehörden">#</a></h3>
+<p>Aufsichtsbehörden müssen rechtliche Einordnung, Einlagensicherungsbehandlung, aufsichtsrechtliches Kapital, Abwicklungsendgültigkeit, Wallet-Verwahrung, operative Resilienz und das Zusammenspiel tokenisierter Einlagen mit Stablecoins und CBDC klären. <strong>Action item:</strong> konkrete Leitlinien zum Hybridfall veröffentlichen — einlagengedeckte Stablecoins und bankemittierte tokenisierte Einlagen, die auf demselben Ledger operieren —, denn das ist die Struktur, zu der die meisten Banken konvergieren, und der derzeitige Regulierungstext liest sich, als würden die beiden Kategorien einander nie begegnen.</p>
+<h3 id="unternehmen">Unternehmen <a class="heading-anchor" href="#unternehmen" aria-label="Link zu Unternehmen">#</a></h3>
+<p>Unternehmen sollten nicht auf ein universelles Netzwerk warten. Sie sollten beginnen, Anwendungsfälle zu identifizieren, in denen programmierbares Bankgeld Betrug, Abwicklungsverzögerungen, Abstimmungsaufwand oder gebundene Liquidität reduzieren könnte. <strong>Action item:</strong> einen konkreten Flow mit messbaren KPIs pilotieren — grenzüberschreitende Liquiditäts-Sweeps, intraday Sicherheitenmobilität oder DvP für tokenisierte Gilts sind die drei signalstärksten Kandidaten — und ihn unter Berücksichtigung der Failure-Mode-Fragen instrumentieren (was passiert, wenn der Smart Contract pausiert; wie verhält sich der tokenisierte Schenkel in einem Stressszenario gegenüber dem konventionellen Schenkel).</p>
+<h2 id="fazit">Fazit <a class="heading-anchor" href="#fazit" aria-label="Link zu Fazit">#</a></h2>
+<p>Tokenisierte Einlagen 2026 stehen dort, wo Echtzeitzahlungen vor einem Jahrzehnt standen: offensichtlich im Wert, uneinheitlich in der Umsetzung und durch Netzwerkkoordination begrenzt. Die Piloten laufen, die führenden Bank-Stacks (JPMorgans Kinexys, HSBCs TDS + Orion, das britische Multibanken-Programm) sind innerhalb ihrer eigenen Perimeter produktionsreif, regulatorische Kategorien verfestigen sich (FDIC, BIS, HKMA), und der Technologiestack hat aufgehört, die bindende Restriktion zu sein. Was bleibt, sind Interoperabilität, rechtliche Endgültigkeit und Renditeökonomie — drei Probleme, die die Branche lösen kann, aber nur, wenn die Banken 2026-2027 als Standardsetzungsfenster behandeln. Das Risiko ist nicht, dass tokenisierte Einlagen scheitern; es ist, dass sie als zwölf inkompatible Walled Gardens ausgeliefert werden.</p>
+<h2 id="haufig-gestellte-fragen">Häufig gestellte Fragen <a class="heading-anchor" href="#haufig-gestellte-fragen" aria-label="Link zu Häufig gestellte Fragen">#</a></h2>
+<p><strong>Sind tokenisierte Einlagen dasselbe wie Stablecoins?</strong></p>
+<p>Nein. Beide bieten programmierbares, 24/7 verfügbares digitales Geld, nutzen jedoch völlig unterschiedliche rechtliche und Anspruchsstrukturen. Ein Stablecoin ist ein Anspruch auf das Reservevermögen oder die Unternehmensstruktur eines privaten Emittenten und operiert außerhalb der Zentralbankbilanz (<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>). Eine tokenisierte Einlage ist eine direkte Geschäftsbankverbindlichkeit, die die bestehende Bankenregulierung, AML/Sanktionskontrollen und das Einlagensicherungsperimeter erbt (<a href="https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted" title="FDIC proposed rule">FDIC</a>).</p>
+<p><strong>Welches sind die führenden britischen Anwendungsfälle?</strong></p>
+<p>Der britische Multi-Bank-Pilot Mitte 2026 (HSBC, Lloyds, NatWest, Barclays, Nationwide und Santander) konzentriert sich auf drei praktische Bereiche: Peer-to-Peer-Marktplatzzahlungen zur Betrugsreduktion, automatisierte mehrparteienbasierte Workflows für Hypothekenwechsel und Delivery-versus-Payment-Abwicklung (DvP) digitaler Vermögenswerte — Abgleich tokenisierten Bargelds mit tokenisierten Staatsanleihen im UK Digital Gilt Instrument (DIGIT)-Piloten (<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>).</p>
+<p><strong>Werden tokenisierte Einlagen Stablecoins ersetzen?</strong></p>
+<p>Unwahrscheinlich; sie sind komplementäre Instrumente, die unterschiedliche Perimeter bedienen. Stablecoins werden weiterhin offene DeFi-Ökosysteme, krypto-native Liquiditätspools und grenzüberschreitendes Retail-Sparen in volatilen Fiat-Märkten dominieren. Tokenisierte Einlagen gewinnen das regulierte Perimeter — Corporate-Treasury-Cash-Management, institutionelle Handelsabwicklung und großvolumiges Transaction Banking —, in dem Einlagensicherung, aufsichtsrechtliche Kapitalbehandlung und bestehende AML-Kontrollen zählen.</p>
+<p><strong>Was blockiert die Netzwerkskalierung?</strong></p>
+<p>Die Technologie selbst ist bereit. Die Skalierung wird durch drei nicht-technische Reibungspunkte blockiert: <strong>Interoperabilität</strong> (fragmentierte DLT-Stacks — Corda, Canton, Hyperledger Besu, HSBC Orion — agieren derzeit als Walled Gardens); <strong>rechtliche Endgültigkeit</strong> (keine globale regulatorische Ausrichtung zum Kollisionsrecht oder zur Versöhnung von DLT-Immutabilität mit der Pflicht der Bank, Transaktionen auf Gerichtsbeschluss, Sanktionen oder Betriebsfehler hin rückabzuwickeln); und <strong>Renditeökonomie</strong> (die Branche hat nicht standardisiert, ob tokenisierte Corporate Wallets wettbewerbsfähige Overnight-Zinsen zahlen oder sich wie sterile Transaktions-Floats verhalten).</p>
+<p><strong>Welche Bank hat den am weitesten entwickelten Stack für tokenisierte Einlagen?</strong></p>
+<p>Eine geteilte Krone. JPMorgan ist der unangefochtene Marktführer im Produktionsvolumen, mit Kinexys by J.P. Morgan (formerly Onyx), das in der Größenordnung von 2 Milliarden US-Dollar pro Tag in Wholesale-Firmenkundentransaktionen verarbeitet (<a href="https://www.jpmorgan.com/kinexys" title="Kinexys by JPMorgan">JPMorgan</a>). HSBC verfügt über den strukturell vielfältigsten Multi-Track-Stack: den HSBC Tokenised Deposit Service in Hongkong, Singapur, dem Vereinigten Königreich, Luxemburg und den USA in USD/GBP/EUR/HKD/SGD; HSBC Orion als designierte Infrastruktur für den UK Digital Gilt Instrument (DIGIT)-Piloten; den HSBC Gold Token, der allokierte physische Goldbarren tokenisiert; sowie netzwerkübergreifende atomare Abwicklung, die auf Canton und Project Ensemble erprobt wurde, und post-quanten-kryptografische Sicherheit, die mit Quantinuum implementiert wurde (<a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" title="HSBC Tokenised Deposit Service">HSBC</a>). Der britische Multi-Bank-Pilot ist der glaubwürdigste Live-Test interbanklicher Interoperabilität.</p>
+<h2 id="referenzen">Referenzen <a class="heading-anchor" href="#referenzen" aria-label="Link zu Referenzen">#</a></h2>
+<ul>
+<li>Lloyds Banking Group, (2026). <a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Digital assets in 2026: building the future of finance in the UK ⧉</a>.</li>
+<li>HSBC, (2026). <a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" title="HSBC Tokenised Deposit Service">HSBC Tokenised Deposit Service ⧉</a>.</li>
+<li>JPMorgan, (2026). <a href="https://www.jpmorgan.com/kinexys" title="Kinexys by JPMorgan">Kinexys (vormals Onyx) Plattform für digitale Vermögenswerte ⧉</a>.</li>
+<li>BIS, (2026). <a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">Stablecoins: framing the debate ⧉</a>.</li>
+<li>Deutsche Bank flow, (2026). <a href="https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs" title="Digital Money">Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉</a>.</li>
+<li>FDIC, (2026). <a href="https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted" title="FDIC proposed rule">GENIUS Act requirements and standards proposed rule ⧉</a>.</li>
+<li>Cambridge Centre for Alternative Finance, (2026). <a href="https://www.jbs.cam.ac.uk/wp-content/uploads/2026/02/2026-ccaf-tokenised-money-use-cases-interoperability-and-regulation.pdf" title="Tokenised money report">Tokenised money: Use cases, interoperability and regulation ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Zuletzt überprüft <time datetime="2026-05-21">2026-05-21</time>.</p>
+
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Über den Autor"><img alt="Porträt von Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/de/uber-mich/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior-Technologe im Banking, schreibe über angewandte KI, ISO-20022-Migration, Post-Quanten-Kryptografie für Finanzdienstleistungen und die strukturelle Transformation des Wholesale-Zahlungsverkehrs.</span><span class="author-credentials">20+ Jahre Erfahrung bei HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/de/uber-mich/index.html">Vollständiges Profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Zuletzt überprüft <time datetime="2026-05-21">2026-05-21</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Verwandte Artikel</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/de/2026-05-16-beste-cloud-infrastruktur-architektur-fuer-banken-2026" class="related-media" aria-label="Die beste Cloud-Infrastruktur-Architektur 2026: ein KI-nativer, Multi-Cloud- und quantenbewusster Blueprint für Finanzdienstleister" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="die-beste-cloud-infrastruktur-architektur-2026-ein-ki-nativer-multi-cloud-und-qu"><a href="https://sebastienrousseau.com/de/2026-05-16-beste-cloud-infrastruktur-architektur-fuer-banken-2026">Die beste Cloud-Infrastruktur-Architektur 2026: ein KI-nativer, Multi-Cloud- und quantenbewusster Blueprint für Finanzdienstleister</a> <a class="heading-anchor" href="#die-beste-cloud-infrastruktur-architektur-2026-ein-ki-nativer-multi-cloud-und-qu" aria-label="Link zu Die beste Cloud-Infrastruktur-Architektur 2026: ein KI-nativer, Multi-Cloud- und quantenbewusster Blueprint für Finanzdienstleister">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Quellen und Referenzen</h2><ol class="article-sources-list"><li><a href="https://www.bis.org/speeches/sp260420.pdf" rel="external noopener nofollow"><span class="source-host">www.bis.org</span><span class="source-path">/speeches/sp260420.pdf</span></a></li><li><a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" rel="external noopener nofollow"><span class="source-host">www.business.hsbc.com</span><span class="source-path">/en-gb/products/tokenised-deposit-service</span></a></li><li><a href="https://www.jpmorgan.com/kinexys" rel="external noopener nofollow"><span class="source-host">www.jpmorgan.com</span><span class="source-path">/kinexys</span></a></li></ol></aside><nav class="post-pagination" aria-label="Artikel-Navigation"><a class="post-pagination-prev" href="/de/2026-05-20-cloud-native-banking-financial-institutions-2026/"><span class="post-pagination-label">Zurück</span><span class="post-pagination-title">Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/de/uber-mich/index.html">Über mich</a></li>
+              <li><a href="/de/kontakt/index.html">Kontakt</a></li>
+              <li><a href="/de/erstellt-mit-static-site-generator/index.html">Erstellt mit Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Schreiben</h2>
+            <ul>
+              <li><a href="/de/artikel/index.html">Artikel</a></li>
+              <li><a href="/de/publikationen/index.html">Publikationen</a></li>
+              <li><a href="/de/etiketten/index.html">Etiketten</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Arbeit</h2>
+            <ul>
+              <li><a href="/de/projekte/index.html">Projekte</a></li>
+              <li><a href="/de/playlists/index.html">Playlists</a></li>
+              <li><a href="/de/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Reichweite</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Newsletter-Anmeldung">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — Forschungsnotizen zu Zahlungsverkehr, KI und Post-Quanten-Kryptografie. Kein Spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="sie@bank.de" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Abonnieren</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Soziale Netzwerke">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau auf Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau auf Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau auf LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau auf LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau auf Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau auf Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau auf YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau auf YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/de/barrierefreiheit/index.html">Barrierefreiheit</a> ·
+            <a href="/de/datenschutz/index.html">Datenschutz</a> ·
+            <a href="/de/nutzungsbedingungen/index.html">Nutzungsbedingungen</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"de"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"de"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":4416,"headline":"Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money","description":"Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp","width":"100vw","height":"100vh","caption":"Tokenised deposit banking architecture for 2026 showing commercial bank money, digital wallets, stablecoins, CBDCs, tokenised gilts, and Project Agorá settlement paths"},"url":"https://sebastienrousseau.com/de/2026-05-21-tokenised-deposits-banking-services-status-2026/","datePublished":"2026-05-21T06:06:06+00:00","dateModified":"2026-05-21","inLanguage":"de","keywords":"tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercial bank money, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, digital wallets, tokenised gilts","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/de/2026-05-21-tokenised-deposits-banking-services-status-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"de"},"citation":[{"@type":"CreativeWork","url":"https://www.bis.org/speeches/sp260420.pdf"},{"@type":"CreativeWork","url":"https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service"},{"@type":"CreativeWork","url":"https://www.jpmorgan.com/kinexys"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/de/"},{"@type":"ListItem","position":3,"name":"Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money","item":"https://sebastienrousseau.com/de/2026-05-21-tokenised-deposits-banking-services-status-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Suchen">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Suchen</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Suchen">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="In der Dokumentation suchen..." autocomplete="off" aria-label="Suchen"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> schließen</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigieren</span><span><kbd>Enter</kbd> öffnen</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money","url":"https://sebastienrousseau.com/de/2026-05-21-tokenised-deposits-banking-services-status-2026/","inLanguage":"de-DE","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercial bank money, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, digital wallets, tokenised gilts","dependencies":["Stablecoin"]}</script></body>
+</html>

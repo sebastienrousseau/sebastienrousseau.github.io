@@ -1,11 +1,11 @@
 {
   "language": "fil-PH",
   "banner_alt": "تعزيز الاتصالات الآمنة في العصر الكمي مع KyberLib",
-  "locale": "fil_PH",
-  "title": "KyberLib: CRYSTALS-Kyber بلغة Rust لما بعد الكم",
-  "subtitle": "KyberLib، تطبيق Rust متين لـ CRYSTALS-Kyber للعصر الكمي.",
-  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg",
   "description": "تطبيق تشفيري متين وآمن كمياً لخوارزمية CRYSTALS-Kyber، لحماية بياناتكم من التهديدات الكمية وهجمات تحليل الشفرات.",
+  "banner": "https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg",
   "date": "Nov 28, 2023",
-  "keywords": "KyberLib، Rust CRYSTALS-Kyber، التشفير ما بعد الكمي، التشفير القائم على الشبكيات، تبادل المفاتيح المقاوم للكم، NIST FIPS 203، Sebastien Rousseau، KEM، مصادقة المدفوعات، مكتبة PQC"
+  "keywords": "KyberLib، Rust CRYSTALS-Kyber، التشفير ما بعد الكمي، التشفير القائم على الشبكيات، تبادل المفاتيح المقاوم للكم، NIST FIPS 203، Sebastien Rousseau، KEM، مصادقة المدفوعات، مكتبة PQC",
+  "locale": "fil_PH",
+  "subtitle": "KyberLib، تطبيق Rust متين لـ CRYSTALS-Kyber للعصر الكمي.",
+  "title": "KyberLib: CRYSTALS-Kyber بلغة Rust لما بعد الكم"
 }

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ar-SA" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 21 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 21 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.">
+<meta name="keywords" content="tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercial bank money, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, digital wallets, tokenised gilts">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Tokenised Deposits">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-Pm0CtJ15+m3ZY2uj/0tkiVFsD4XHHwKzETuLUt/S7nw=' 'sha256-QclfxgnbDr1VymtaO7sxcAinYNsfoIGR97QFXq2CF0c=' 'sha256-dw3yAsV1ogGNWJE7hPY7gIfzk7otzaOerVrbnOitTl0=' 'sha256-f6W9URXII/To3bs/dX3wtjoeXOQK3AzceaErSC6aa/E=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ar/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="تغذية Atom" href="/ar/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money — Sebastien Rousseau">
+<meta property="og:description" content="Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/ar/2026-05-21-tokenised-deposits-banking-services-status-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ar_SA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money — Sebastien Rousseau">
+<meta name="twitter:description" content="Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/ar/2026-05-21-tokenised-deposits-banking-services-status-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-21-tokenise-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">تخطّى إلى المحتوى الرئيسي</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="تبديل التنقل" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ar/index.html" aria-label="الصفحة الرئيسية لسيباستيان روسو">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="التنقل الرئيسي">
+          <ul class="ap-menu">
+            <li><a href="/ar/hawla/index.html">حول</a></li>
+            <li><a href="/ar/maqalat/index.html" aria-current="page" class="active">المقالات</a></li>
+            <li><a href="/ar/buhuth/index.html">الأبحاث</a></li>
+            <li><a href="/ar/mawadi/index.html">المواضيع</a></li>
+            <li><a href="/ar/mashari/index.html">المشاريع</a></li>
+            <li><a href="/ar/qawaim/index.html">قوائم التشغيل</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="تفعيل الوضع الداكن" aria-pressed="false" title="تبديل المظهر">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="بحث (Cmd أو Ctrl + K)" title="بحث (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="اللغة">
+            <button type="button" class="ap-lang-toggle" aria-label="AR، تغيير اللغة" aria-expanded="false" aria-haspopup="menu" title="تغيير اللغة">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">AR</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ar/ittisal/index.html" aria-label="تواصل معي">تواصل معي ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="تبديل التنقل">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</h1>
+      <p class="sub">Tokenised deposits are becoming the banking sector’s answer to stablecoins: programmable commercial bank money on controlled platforms, with pilots moving through UK marketplace payments, remortgaging, digital asset settlement, and corporate wallets.</p>
+    <nav class="article-tags" aria-label="المواضيع"><a href="/tags/index.html#h3-tokenised-deposits-2026" class="article-tag" rel="tag">tokenised deposits 2026</a><a href="/tags/index.html#h3-tokenized-deposits-banking" class="article-tag" rel="tag">tokenized deposits banking</a><a href="/tags/index.html#h3-deposit-tokens" class="article-tag" rel="tag">deposit tokens</a><a href="/tags/index.html#h3-great-british-tokenised-deposits" class="article-tag" rel="tag">Great British Tokenised Deposits</a><a href="/tags/index.html#h3-lloyds-digital-assets" class="article-tag" rel="tag">Lloyds digital assets</a><a href="/tags/index.html#h3-stablecoins" class="article-tag" rel="tag">stablecoins</a><a href="/tags/index.html#h3-commercial-bank-money" class="article-tag" rel="tag">commercial bank money</a><a href="/tags/index.html#h3-bis-stablecoins" class="article-tag" rel="tag">BIS stablecoins</a><a href="/tags/index.html#h3-project-agora" class="article-tag" rel="tag">Project Agora</a><a href="/tags/index.html#h3-unified-ledger" class="article-tag" rel="tag">unified ledger</a><a href="/tags/index.html#h3-deutsche-bank-digital-money" class="article-tag" rel="tag">Deutsche Bank digital money</a><a href="/tags/index.html#h3-cbdc" class="article-tag" rel="tag">CBDC</a><a href="/tags/index.html#h3-tokenised-money" class="article-tag" rel="tag">tokenised money</a><a href="/tags/index.html#h3-digital-wallets" class="article-tag" rel="tag">digital wallets</a><a href="/tags/index.html#h3-tokenised-gilts" class="article-tag" rel="tag">tokenised gilts</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-21T06:06:06+00:00" class="meta-pub">نُشر في 21 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="وقت القراءة المقدّر">21 دقيقة قراءة</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>المحتويات</h2><ol><li><a href="#section-1">لماذا تكتسب الودائع المرمَّزة أهمية الآن</a></li><li><a href="#2026">حالة 2026: من التجربة إلى المنتج، وليس بعد على نطاق الشبكة</a></li><li><a href="#2026-2">أكثر برامج البنوك تطوراً في 2026</a></li><li><a href="#cbdc">الودائع المرمَّزة مقابل العملات المستقرة مقابل CBDC</a></li><li><a href="#section-14">ما الذي يحتاج البنوك إلى بنائه</a></li><li><a href="#section-19">أنماط الفشل: أين تنكسر المنظومة</a></li><li><a href="#section-20">ماذا يعني هذا بحسب نوع البنك</a></li><li><a href="#section-25">الخاتمة</a></li><li><a href="#section-26">الأسئلة الشائعة</a></li><li><a href="#section-27">المراجع</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>لماذا تكتسب الودائع المرمَّزة أهمية الآن.</strong> كشفت العملات المستقرة عن طلب على نقود رقمية قابلة للبرمجة ومتاحة على الدوام.</li>  <li><strong>حالة 2026: من التجربة إلى المنتج، وليس بعد على نطاق الشبكة.</strong> تُعرّف Lloyds مبادرة Great British Tokenised Deposits بوصفها مبادرة قطاعية، وتُحدّد ثلاث حالات استخدام عملية: مدفوعات الأسواق بين الأفراد، وإعادة تمويل الرهن العقاري، وتسوية الأصول الرقمية (Lloyds Banking Group).</li>  <li><strong>أكثر برامج البنوك تطوراً في 2026.</strong> ثلاثة برامج تستحق التحليل بحدّ ذاتها: JPMorgan الذي ابتكر فئة رموز الإيداع للجملة ويُشغّلها على نطاق إنتاجي؛ وHSBC الذي يمتلك المنظومة الأكثر اكتمالاً متعددة المسارات عبر رموز الإيداع والأوراق المالية والأصول…</li>  <li><strong>الودائع المرمَّزة مقابل العملات المستقرة مقابل CBDC.</strong> ثلاث أدوات تتنافس على الدور ذاته — نقود رقمية قابلة للبرمجة بمستوى التسوية — لكنها تستند إلى هياكل مطالبة مختلفة جذرياً.</li></ul></aside><h1>الودائع المرمَّزة في 2026: الخدمات المصرفية، والمنافسة مع العملات المستقرة، وحالة نقود البنوك التجارية القابلة للبرمجة</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>أصبحت الودائع المرمَّزة الإجابة الأهم للقطاع المصرفي على العملات المستقرة في مجال النقود الرقمية. فهي تحافظ على علاقة الإيداع لدى البنك التجاري مع تمكين القابلية للبرمجة، والمحافظ الرقمية، والتسوية الذرية، وتدفقات أعمال الأصول المرمَّزة. وتقول Lloyds Banking Group إن الأصول الرقمية في المملكة المتحدة تنتقل إلى التيار الرئيسي في 2026، وتُسلّط الضوء على الودائع المرمَّزة، والسندات الحكومية الرقمية، ومبادرة Great British Tokenised Deposits بوصفها مبادرات قطاعية فاعلة (<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>).</p>
+<p>ينحصر نطاق هذا المقال في طبقة الجملة، والمؤسسات، وخزينة الشركات — وهي الجزء من قصة رمز الإيداع حيث التجارب فاعلة والمنتجات المصرفية في طور التشكّل. وتوجد الودائع المرمَّزة للتجزئة بوصفها مساراً بحثياً وضمن غلاف HSBC Gold Token للتجزئة، غير أن نقطة تحوّل 2026 تحدث في الخدمات المصرفية للمعاملات، لا في مدفوعات المستهلكين اليومية.</p>
+<hr />
+<blockquote>
+<p><strong>الملخص التنفيذي / أبرز النقاط</strong></p>
+<ul>
+<li><strong>حالة السوق.</strong> الودائع المرمَّزة في 2026 قبل التوسع لكنها لم تعد نظرية: التجارب فاعلة، والعروض المصرفية في طور التشكّل، ويعمل البرنامج البريطاني متعدد البنوك حتى منتصف 2026 بمشاركة HSBC وNatWest وLloyds وBarclays وNationwide وSantander لاختبار مدفوعات الأسواق، وإعادة تمويل الرهن العقاري، وتسوية الأصول الرقمية (<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>).</li>
+<li><strong>الضغط التنافسي.</strong> العملات المستقرة كبيرة ومتنامية (يُقدّر BIS قيمتها السوقية بنحو 315 مليار دولار، ونحو 98% منها مقوَّم بالدولار الأمريكي في مطلع أبريل 2026) وهي تفرض جدولاً زمنياً لإصدار رموز الإيداع. تتفوّق العملات المستقرة في الوصول إلى النظام البيئي المفتوح، والسيولة الأصلية للعملات المشفّرة، والتجزئة العالمية؛ بينما تتفوّق الودائع المرمَّزة في الراحة التنظيمية، والتأمين على الودائع، وتدفقات أعمال الخزينة (<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>).</li>
+<li><strong>الحدود التنظيمية.</strong> يُصنّف مقترح FDIC لعام 2026 الودائع المرمَّزة بوصفها التزامات إيداع مُسجَّلة على DLT ويُميّزها صراحةً عن العملات المستقرة للدفع، مُحكِماً المحيط الأمريكي (<a href="https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted" title="FDIC proposed rule">FDIC</a>).</li>
+<li><strong>برامج البنوك الرائدة.</strong> يُعالج JPM Coin من JPMorgan على Kinexys نحو 2 مليار دولار من التسويات اليومية للجملة، وهو أطول سجل أداء حي لرموز الإيداع. ويمتلك HSBC أكثر منظومة متعددة المسارات اكتمالاً: TDS عبر HK وSG وUK وLU وUS بعملات USD/GBP/EUR/HKD/SGD؛ وتُشكّل HSBC Orion البنية التحتية لتجربة Digital Gilt Instrument (DIGIT) في المملكة المتحدة؛ ويُرمّز HSBC Gold Token سبائك ذهبية مخصَّصة؛ وقد جرى اختبار التسوية الذرية عبر الشبكات على Canton وProject Ensemble؛ وطُبِّقت PQC مع Quantinuum (<a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" title="HSBC Tokenised Deposit Service">HSBC</a>).</li>
+<li><strong>خيارات التصميم التي تحسم كل شيء.</strong> ثلاثة أنماط للسجل والقانون تهيمن: الرمز <em>هو</em> الوديعة (أنقى للتسوية الذرية، أصعب من حيث وقت التشغيل)، أو الرمز <em>يُمثّل</em> وديعة تقليدية (أبسط قانونياً، مع عبء مطابقة، وهو ما يُشبهه JPM Coin وHSBC TDS)، أو الرمز طبقة <em>تعليمات</em> فوق السكك التقليدية (أضعف ادعاء بالقابلية للبرمجة).</li>
+<li><strong>اقتصاديات العائد لا تقل أهمية عن التنظيم.</strong> ما إذا كانت الودائع المرمَّزة تكسب نفس الفائدة على الوديعة الأساسية سؤال بمستوى الخزينة. التصاميم التي تحافظ على اقتصاديات الإيداع تتوسّع لإدارة النقد؛ بينما رموز الدفع التي لا تحمل عائداً ستخسر أرصدة الشركات لصالح أي منافس يدفع.</li>
+<li><strong>القيود الملزِمة هي القابلية للتشغيل البيني والنهائية القانونية.</strong> تنازع القوانين عبر الولايات القضائية، والتعارض بين عدم قابلية تعديل DLT وقابلية العكس القانونية، وتجزئة المنصات (Corda وCanton وBesu وOrion، وERC-20 مقابل تنسيقات الرموز الأصلية لـ Canton) هي القيود الملزِمة الآن — لا التكنولوجيا ذاتها.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="section-1">لماذا تكتسب الودائع المرمَّزة أهمية الآن <a class="heading-anchor" href="#section-1" aria-label="رابط إلى لماذا تكتسب الودائع المرمَّزة أهمية الآن">#</a></h2>
+<p>كشفت العملات المستقرة عن طلب على نقود رقمية قابلة للبرمجة ومتاحة على الدوام. ولا تتمثّل استجابة القطاع المصرفي في مجرد محاكاة العملات المستقرة، بل في تكييف نقود البنوك التجارية لتلائم البيئات المرمَّزة مع الإبقاء على التنظيم المصرفي، وعلاقات الإيداع، والضوابط الاحترازية. ويصف Deutsche Bank الودائع المرمَّزة بأنها امتداد للنموذج المصرفي القائم إلى البيئات القابلة للبرمجة مع الحفاظ على دور نقود البنوك التجارية (<a href="https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs" title="Digital Money">Deutsche Bank flow</a>).</p>
+<p>ويُعدّ هذا التمييز جوهرياً. فالعملة المستقرة عادةً ما تكون مطالبة على الجهة المُصدِرة أو على هيكل الاحتياطي. أما الوديعة المرمَّزة فيُقصد بها أن تظل وديعة مصرفية أو تمثيلاً لوديعة مصرفية، مرفقاً بها الإطار القانوني والاحترازي والتشغيلي للبنك.</p>
+<h2 id="2026">حالة 2026: من التجربة إلى المنتج، وليس بعد على نطاق الشبكة <a class="heading-anchor" href="#2026" aria-label="رابط إلى حالة 2026: من التجربة إلى المنتج، وليس بعد على نطاق الشبكة">#</a></h2>
+<h3 id="1">1. التجارب المصرفية البريطانية تُحدّد حالات الاستخدام العملية <a class="heading-anchor" href="#1" aria-label="رابط إلى 1. التجارب المصرفية البريطانية تُحدّد حالات الاستخدام العملية">#</a></h3>
+<p>تُعرّف Lloyds مبادرة Great British Tokenised Deposits بوصفها مبادرة قطاعية، وتُحدّد ثلاث حالات استخدام عملية: مدفوعات الأسواق بين الأفراد، وإعادة تمويل الرهن العقاري، وتسوية الأصول الرقمية (<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>). وهي اختبارات أولية حصيفة لأنها تجمع بين حركة النقود والثقة والتوقيت والتسوية الشرطية.</p>
+<p>التجربة البريطانية متعددة البنوك هي بالفعل متعددة البنوك. قائمة المشاركين — HSBC وNatWest وLloyds وBarclays وNationwide وSantander — تُغطّي غالبية أرصدة الودائع لدى التجزئة والشركات في المملكة المتحدة، ويعمل البرنامج حتى منتصف 2026. وأهمية ذلك تكمن في أن الودائع المرمَّزة دون قابلية تشغيل بيني بين البنوك تظل مجرّد ميزات منتج أحادية البنك؛ وتُعدّ التجربة البريطانية إحدى التجارب الحية القليلة في العالم التي تختبر فعلياً الحالة بين عدة بنوك.</p>
+<p>تختبر مدفوعات الأسواق تقليل الاحتيال وثقة البائعين. وتختبر إعادة تمويل الرهن العقاري أتمتة العمليات متعددة الأطراف. وتختبر تسوية الأصول الرقمية مبدأ التسليم مقابل الدفع بين النقود المرمَّزة والأدوات المرمَّزة.</p>
+<h3 id="2">2. محافظ الشركات تتحوّل إلى الواجهة الرئيسية <a class="heading-anchor" href="#2" aria-label="رابط إلى 2. محافظ الشركات تتحوّل إلى الواجهة الرئيسية">#</a></h3>
+<p>تقول Lloyds إنها تُطوّر محافظ للعملاء من الشركات والمؤسسات تعمل جنباً إلى جنب مع شاشات الخدمات المصرفية للمعاملات التقليدية، وقادرة على الاحتفاظ بالودائع المرمَّزة والأصول الرقمية والعقود الذكية (<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>). ويُعدّ هذا خياراً تصميمياً جوهرياً. إذ لن تتوسّع الودائع المرمَّزة إذا تطلّبت من أمناء الخزينة التخلي عن تدفقات أعمالهم المصرفية القائمة.</p>
+<p>ومن المرجّح أن تكون الواجهة الفائزة نموذجاً مزدوجاً يجمع بين الحساب المصرفي والمحفظة. فيرى العميل منصة خزينة، فيما يتولى البنك التحويل، واختيار مسار التسوية، وضوابط الامتثال خلف الكواليس.</p>
+<h3 id="3">3. العملات المستقرة تفرض الاستعجال لكنها توضّح المخاطر <a class="heading-anchor" href="#3" aria-label="رابط إلى 3. العملات المستقرة تفرض الاستعجال لكنها توضّح المخاطر">#</a></h3>
+<p>يُقرّ خطاب BIS الصادر في أبريل 2026 للعملات المستقرة بميزات تقنية مثل القابلية للبرمجة عبر العقود الذكية والتسوية الذرية، لكنه يُشدّد أيضاً على المخاطر المتعلقة بأحادية النقود، وقابلية التعرّض للهروب الجماعي، والنزاهة المالية، والسيادة النقدية، والتسوية خارج نقود البنك المركزي (<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>).</p>
+<p>وهذا النقد بالضبط هو ما يُبرز أهمية الودائع المرمَّزة. فهي تسعى إلى استيراد القابلية للبرمجة المفيدة للنقود المرمَّزة إلى إطار منظَّم لنقود البنوك التجارية.</p>
+<h3 id="4-project-agora">4. مشروع Project Agorá والسجل الموحَّد يُشكّلان سؤال الجملة <a class="heading-anchor" href="#4-project-agora" aria-label="رابط إلى 4. مشروع Project Agorá والسجل الموحَّد يُشكّلان سؤال الجملة">#</a></h3>
+<p>يُؤطّر BIS مشروع Project Agorá بوصفه عملاً مع البنوك المركزية والقطاع الخاص لاستكشاف الترميز للمدفوعات عبر الحدود، ويربط الاتجاه الأشمل برؤية السجل الموحَّد (<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>). كذلك يُشير Deutsche Bank إلى Project Agorá وPartior بوصفهما جزءاً من بنية التسوية والبنية التحتية للمدفوعات عبر الحدود من الجيل القادم (<a href="https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs" title="Digital Money">Deutsche Bank flow</a>).</p>
+<p>هنا تتحوّل الودائع المرمَّزة إلى بنية تحتية للجملة. والسؤال الجوهري هو: كيف تتسوّى نقود البنوك التجارية، ونقود البنك المركزي، والأصول المرمَّزة معاً دون الإخلال بالنهائية القانونية، أو ضوابط السيولة، أو أحادية النقود.</p>
+<h2 id="2026-2">أكثر برامج البنوك تطوراً في 2026 <a class="heading-anchor" href="#2026-2" aria-label="رابط إلى أكثر برامج البنوك تطوراً في 2026">#</a></h2>
+<p>ثلاثة برامج تستحق التحليل بحدّ ذاتها: JPMorgan الذي ابتكر فئة رموز الإيداع للجملة ويُشغّلها على نطاق إنتاجي؛ وHSBC الذي يمتلك المنظومة الأكثر اكتمالاً متعددة المسارات عبر رموز الإيداع والأوراق المالية والأصول الواقعية والتشفير؛ ومجموعة من البرامج الأوروبية والآسيوية الأكثر هدوءاً في العلن لكنها فاعلة جوهرياً. التعامل مع الودائع المرمَّزة بوصفها تحرّكاً قطاعياً واحداً يُغفل أن هذه المنظومات تراهن بشكل مختلف على ما ينبغي أن يكون عليه عرض النقود الرقمية للبنك.</p>
+<h3 id="jpmorgan-jpm-coin-onyx-kinexys">JPMorgan: JPM Coin وOnyx ومنصة Kinexys <a class="heading-anchor" href="#jpmorgan-jpm-coin-onyx-kinexys" aria-label="رابط إلى JPMorgan: JPM Coin وOnyx ومنصة Kinexys">#</a></h3>
+<p>أطلق JPMorgan عملة JPM Coin في 2019، أي قبل أربع سنوات من شيوع تعبير «الوديعة المرمَّزة» في القطاع علناً. وتعمل العملة على <strong>Kinexys by J.P. Morgan (formerly Onyx)</strong>، منصة البلوكشين الخاصة المرخّصة لـ JPMorgan، وتُسوّي تدفقات عملاء الشركات للجملة — أساساً عمليات كنس الخزينة المؤسسية، وحركات السيولة خلال اليوم، وعمليات الريبو المرمَّزة بشكل متزايد. وبحلول 2026، تُعالج Kinexys ما يقارب 2 مليار دولار يومياً من معاملات الجملة، مما يجعل JPMorgan أكبر مشغّل حي لتسوية رموز الإيداع في العالم.</p>
+<p>ولهذا التاريخ أهميتان. أولاً، يمتلك JPMorgan أطول سجل إنتاجي للأسئلة التشغيلية — المطابقة، ومعالجة النزاعات، وسلوك السيولة خلال اليوم، وأنماط الانقطاع — التي لا تزال البنوك الأخرى تُصمّم لها. ثانياً، المنصة متعددة الأصول: توسّعت Kinexys إلى ما هو أبعد من رمز الإيداع لتشمل الريبو المرمَّز، وتسوية الصرف الأجنبي، وقابلية نقل الضمانات، مما يضع JPMorgan في موقع يُؤهّله لتقديم التسليم مقابل الدفع على سجل واحد بدلاً من تكاملات نقطة إلى نقطة.</p>
+<p>والوجه الآخر هو أن JPM Coin، بحكم التصميم، عرض شبكة مغلقة. إذ يُسوّى على سكك JPMorgan، بين عملاء JPMorgan، على سلسلة يُشغّلها JPMorgan. وهو أقوى مثال في الصناعة على كيفية توسّع وديعة مرمَّزة أحادية البنك — وكذلك أقوى توضيح لنقد BIS بأن رموز الإيداع دون قابلية تشغيل بيني تصبح حدائق مسوّرة بدلاً من بنية تحتية للجملة.</p>
+<h3 id="hsbc">HSBC: منظومة متعددة المسارات من رمز الإيداع إلى الذهب المرمَّز <a class="heading-anchor" href="#hsbc" aria-label="رابط إلى HSBC: منظومة متعددة المسارات من رمز الإيداع إلى الذهب المرمَّز">#</a></h3>
+<p>رهان HSBC أوسع. فحيث ذهب JPMorgan عميقاً في حالة استخدام واحدة للجملة، بنى HSBC عبر رموز الإيداع والأوراق المالية المؤسسية والأصول الواقعية والتشفير بالتوازي. ويُحدّد HSBC صراحةً موقع الوديعة المرمَّزة بوصفها أداته المختارة لربط الخدمات المصرفية التقليدية بالبنية التحتية اللامركزية، متقدّمةً على العملات المستقرة غير المدعومة أو العملات الرقمية الصادرة عن أطراف ثالثة (<a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" title="HSBC Tokenised Deposit Service">HSBC</a>).</p>
+<h4>Tokenised Deposit Service (TDS)</h4>
+<p>تُحوّل خدمة HSBC Tokenised Deposit Service الأرصدة النقدية للشركات إلى رموز رقمية بنسبة 1:1، مع إبقاء الأموال خاضعة للتنظيم بالكامل وعلى ميزانية البنك (<a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" title="HSBC Tokenised Deposit Service">HSBC</a>). وتعمل TDS في خمس ولايات قضائية — هونغ كونغ، وسنغافورة، والمملكة المتحدة، ولوكسمبورغ، والولايات المتحدة — وتدعم معاملات فورية بخمس عملات: USD وGBP وEUR وHKD وSGD. والوظيفة الأساسية بمستوى الخزينة: إذ يُجري كبار العملاء من الشركات والمؤسسات المقاصة والتسوية عبر الحدود في ثوانٍ معدودة، متجاوزين أوقات قطع SWIFT، ونوافذ الدفعات، وحواجز المناطق الزمنية، عبر قابلية برمجة العقود الذكية على مدار 24/7.</p>
+<p>وتُمثّل هذه المنتجات أقوى مثال مضاد لإطار «الودائع المرمَّزة لا تزال نظرية». فهي لا تزال نظرية على نطاق الشبكة؛ لكنها ليست نظرية داخل HSBC.</p>
+<h4>HSBC Orion وأسواق رأس المال الرقمية</h4>
+<p>HSBC Orion هي منصة DLT المؤسسية الخاصة بالبنك لإصدار الأوراق المالية المرمَّزة وتسويتها وحفظها. وقد عيّنت HM Treasury منصة HSBC Orion لتوفير البنية التحتية الأساسية لتجربة Digital Gilt Instrument (DIGIT) المعلَم في المملكة المتحدة — المرجع السيادي للديون العامة المرمَّزة في المملكة المتحدة. كذلك دعمت HSBC Orion إصدارات السندات الرقمية على نطاق واسع لحكومة هونغ كونغ وبنك الاستثمار الأوروبي، بما في ذلك الإصدارات الخضراء والسيادية.</p>
+<p>وتظهر أهمية ذلك للودائع المرمَّزة في أن المساواة في التسوية بين رموز الإيداع والأوراق المالية المرمَّزة شرط مسبق للتسليم مقابل الدفع على سجل مشترك. فرمز الإيداع دون منصة مؤسسية لإصدار الأوراق المالية لا يجد ما يُسوَّى مقابله.</p>
+<h4>ترميز الأصول الواقعية: HSBC Gold Token</h4>
+<p>وسّع HSBC نموذج الارتكاز ذاته ليشمل الأصول المادية على مستوى التجزئة. يُتيح HSBC Gold Token لمستخدمي تطبيق HSBC HK للهاتف المحمول شراء ملكية جزئية من الذهب المادي، مع منح وصول مؤسسي في المملكة المتحدة. وكل رمز مدعوم بنسبة 100% بسبائك مادية مخصَّصة تُحفظ داخل خزائن HSBC المؤسسية — وهو نمط الارتكاز التنظيمي والتشغيلي نفسه الذي يطبّقه البنك على رموز الإيداع.</p>
+<h4>القابلية للتشغيل البيني بين الشبكات والترميز الآمن من الكم</h4>
+<p>جرّب HSBC تسوية ذرية لودائعه المرمَّزة عبر شبكات خارجية باستخدام Canton Network وProject Ensemble التابع لـ HKMA. وهذا هو جزء القابلية للتشغيل البيني الذي يستدعيه نقد على غرار BIS للرموز أحادية البنك: لا تتحوّل الودائع المرمَّزة إلى بنية تحتية للجملة إلا حين تتمكّن من التسوية عبر الشبكات، وليس داخل بنك واحد فحسب.</p>
+<p>وبالتوازي، عقد HSBC شراكة مع Quantinuum لتطبيق أمان تشفيري ما بعد الكم مباشرةً على سجل الذهب المرمَّز — وهو ردّ دفاعي على هجمات «Store Now, Decrypt Later» (SNDL) حيث يجمع الخصوم بيانات السجل المُشفَّرة اليوم رهاناً على أن آلات الكم المستقبلية ستفكّ تشفيرها. وليس تشفير ما بعد الكم على سجل رموز إنتاجي معياراً قطاعياً بعد؛ ويُعدّ HSBC من البنوك القليلة التي تتعامل معه بوصفه شرطاً أساسياً لأي منصة مرمَّزة يُتوقَّع لها أن تتجاوز مواعيد ترحيل PQC.</p>
+<h4>العملات المستقرة المنظَّمة إلى جانب رموز الإيداع</h4>
+<p>لم يتجاهل HSBC مسار العملات المستقرة بالكامل. فقد حصل البنك على ترخيص من HKMA لتجربة عملات مستقرة منظَّمة لتسوية المعاملات بين الأقران والمعاملات الاستثمارية — ولكن بوصفها مكمّلاً لجوهر الودائع المرمَّزة، لا بديلاً عنه. والرسالة الاستراتيجية متّسقة عبر منظومة HSBC: الودائع المرمَّزة هي مرتكز عرض البنك في النقود الرقمية؛ والعملات المستقرة المنظَّمة توسّع نطاق الوصول إلى حالات الاستخدام التي تكون فيها مطالبة رمز الإيداع غير ملائمة هيكلياً.</p>
+<h3 id="section-10">برامج فاعلة أخرى <a class="heading-anchor" href="#section-10" aria-label="رابط إلى برامج فاعلة أخرى">#</a></h3>
+<p>إلى جانب JPMorgan وHSBC، ثمة عدة برامج جوهرية لصورة الشبكة حتى لو كانت إفصاحاتها العلنية أقل.</p>
+<p><strong>Société Générale (SG-FORGE).</strong> أصدرت SG-FORGE سندات رقمية مقوَّمة باليورو والعملة المستقرة المنظَّمة باليورو EURCV إلى جانب عملها على رموز الإيداع، وتُعدّ EURCV أول عملة مستقرة باليورو يُصدرها بنك ذو أهمية نظامية عالمية وتعمل عبر عدة سلاسل عامة. ويضع ذلك Société Générale في موقع غير مألوف بتشغيلها لكلٍّ من مسار الودائع المرمَّزة ومسار العملات المستقرة المنظَّمة تحت التنظيم المصرفي الأوروبي، حيث تُموضع EURCV بوصفها طبقة الوصول إلى النظام البيئي المفتوح، فيما يتولّى جانب رموز الإيداع المحيط المنظَّم للشركات.</p>
+<p><strong>Standard Chartered.</strong> يُعدّ Standard Chartered فاعلاً في الودائع المرمَّزة وفي الأصول الواقعية المرمَّزة عبر Zodia Custody (مشروعه المؤسسي لحفظ الأصول الرقمية) وعبر تجاربه الخاصة في سنغافورة، بما في ذلك المشاركة في MAS Project Guardian لتسوية الأصول المرمَّزة. ويتركّز التأكيد الاستراتيجي على ممرات الأسواق الناشئة — آسيا وأفريقيا والشرق الأوسط — حيث تُموضع الودائع المرمَّزة لإزاحة احتكاكات الخدمات المصرفية المراسلة بدلاً من مجرّد تحديث السكك المحلية في المملكة المتحدة أو الولايات المتحدة.</p>
+<p><strong>Goldman Sachs (GS DAP).</strong> أصدرت منصة GS DAP للأصول الرقمية سندات رقمية مؤسسية (بما في ذلك سند European Investment Bank الرقمي بقيمة 100 مليون يورو لأجل سنتين) وتدعم قابلية نقل الضمانات المرمَّزة لعمليات الريبو وتمويل الأوراق المالية. وتُعدّ GS DAP أقل توجّهاً نحو خزينة الشركات وأكثر كونها منصة تسوية للأوراق المالية المرمَّزة — مفيدة كنقطة مقارنة مع دور HSBC Orion المماثل، ودليل على أن جانب أسواق رأس المال الرقمية في المنظومة يتوحّد أسرع من جانب رموز الإيداع.</p>
+<p>التداعي الأشمل واضح: قدرة رموز الإيداع باتت متطلباً أساسياً لأي بنك جملة عالمي يتوقّع البقاء تنافسياً في الخدمات المصرفية للمعاملات، والسؤال الأكثر إثارة للاهتمام هو من يتشغّل بينياً مع من، وليس من يبني أولاً.</p>
+<h2 id="cbdc">الودائع المرمَّزة مقابل العملات المستقرة مقابل CBDC <a class="heading-anchor" href="#cbdc" aria-label="رابط إلى الودائع المرمَّزة مقابل العملات المستقرة مقابل CBDC">#</a></h2>
+<p>ثلاث أدوات تتنافس على الدور ذاته — نقود رقمية قابلة للبرمجة بمستوى التسوية — لكنها تستند إلى هياكل مطالبة مختلفة جذرياً. واختيار المطالبة يُحدّد كل ما يليه: الحماية القانونية، والمعاملة الاحترازية، ومكان تسوية الأصل، والشبكة التي يثق فيها الحامل ضمنياً. يُلخّص الجدول أدناه المرشحين الأربعة على خمسة محاور، ثم يُفصّل النص التالي مواطن الفوز الفعلي لكل منهم.</p>
+<table>
+<thead>
+<tr>
+<th>الأداة</th>
+<th>نوع المطالبة</th>
+<th>أفضل استخدام</th>
+<th>حالة 2026</th>
+<th>الخطر الرئيسي</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>الودائع المرمَّزة</strong></td>
+<td>وديعة بنك تجاري أو تمثيل لها</td>
+<td>مدفوعات قابلة للبرمجة بقيادة البنك، والخزينة، وتسوية الأصول المرمَّزة</td>
+<td>تجارب وتصميم منتجات مؤسسية مبكرة (<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>)</td>
+<td>القابلية للتشغيل البيني والاتساق القانوني</td>
+</tr>
+<tr>
+<td><strong>العملات المستقرة</strong></td>
+<td>مطالبة على الجهة المُصدِرة/هيكل الاحتياطي</td>
+<td>سيولة العملات المشفّرة، والتجريب عبر الحدود، وسيولة الدولار</td>
+<td>كبيرة ومتنامية، إذ يُقدّر BIS القيمة السوقية بنحو 315 مليار دولار في مطلع أبريل 2026 (<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>)</td>
+<td>الهروب الجماعي، والنزاهة المالية، والسيادة النقدية</td>
+</tr>
+<tr>
+<td><strong>CBDC للجملة</strong></td>
+<td>نقود البنك المركزي</td>
+<td>التسوية بين البنوك والبنية التحتية للأسواق المرمَّزة</td>
+<td>استكشاف نشط من خلال مشاريع البنوك المركزية</td>
+<td>التصميم، والخصوصية، وقابلية التوسع، والولاية السياسية</td>
+</tr>
+<tr>
+<td><strong>CBDC للتجزئة</strong></td>
+<td>نقود البنك المركزي للاستخدام العام</td>
+<td>بديل رقمي للنقد العام</td>
+<td>تقدّم عالمي متفاوت</td>
+<td>التبني، والخصوصية، ووساطة البنوك</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-12">مواطن فوز الودائع المرمَّزة <a class="heading-anchor" href="#section-12" aria-label="رابط إلى مواطن فوز الودائع المرمَّزة">#</a></h3>
+<p>نقود البنوك التجارية المسجَّلة في الميزانية العمومية تحمل الراحة التنظيمية التي لا تزال العملات المستقرة تسعى لاكتسابها. ترث الودائع المرمَّزة التأمين على الودائع، والمعاملة الاحترازية لرأس المال، وضوابط مكافحة غسل الأموال والعقوبات القائمة. وبالنسبة لأمين خزينة شركة، هذا يعني عدم وجود مخاطر طرف مقابل جديدة ولا تدقيق احتياطي جديد للتحقّق منه. كما أنها تنطلق من الحساب المصرفي الذي تمتلكه الشركة بالفعل — لا بورصة، ولا مُصدِر احتياطي، ولا تجربة حفظ جديدة. ويتفق BIS وFDIC على هذه النقطة: أحادية النقود تصمد عندما تكون المطالبة في الموقع الذي يفهمه الإطار القانوني القائم بالفعل (<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>؛ <a href="https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted" title="FDIC proposed rule">FDIC</a>).</p>
+<h3 id="section-13">مواطن لا تزال العملات المستقرة تفوز فيها <a class="heading-anchor" href="#section-13" aria-label="رابط إلى مواطن لا تزال العملات المستقرة تفوز فيها">#</a></h3>
+<p>ثلاثة مواطن. أولاً، الوصول إلى النظام البيئي المفتوح: تتركّب العملات المستقرة مع DeFi، ومع الخزائن الأصلية للعملات المشفّرة، ومع الذيل الطويل من المحافظ التي لن تتكامل أبداً مع واجهة برمجة بنكية. ثانياً، التوزيع العالمي للتجزئة: العملات المستقرة المقوَّمة بالدولار باتت أداة ادخار بحكم الأمر الواقع في الأسواق التي تكون فيها البنوك بالعملة المحلية هشّة. ثالثاً، الأسواق على مدار 24/7 وتسوية العملات المشفّرة: حتى مع السكك المصرفية الدائمة على غرار TDS، تظل العملات المستقرة الوحدة الأصلية لحساب سيولة العملات المشفّرة وستظل كذلك في المستقبل المنظور. الأداتان ليستا بدائل صارمة؛ الحدود التنافسية تتعلّق في معظمها بما إذا كانت حالة الاستخدام داخل المحيط المصرفي المنظَّم أم خارجه.</p>
+<h2 id="section-14">ما الذي يحتاج البنوك إلى بنائه <a class="heading-anchor" href="#section-14" aria-label="رابط إلى ما الذي يحتاج البنوك إلى بنائه">#</a></h2>
+<h3 id="section-15">بنية السجل والبنية القانونية <a class="heading-anchor" href="#section-15" aria-label="رابط إلى بنية السجل والبنية القانونية">#</a></h3>
+<p>ثلاثة أنماط تصميم تهيمن على الانتشارات الحية. الأول «الرمز هو الوديعة» — يكون سجل DLT ذاته نظام السجلات، ويحمل الرصيد على السلسلة المطالبة القانونية. هذا أنقى نموذج للتسوية الذرية والأقرب إلى ما تتصوّره مقترحات Project Agorá والسجل الموحَّد، لكنه يُلزم البنك بمعاملة وقت تشغيل السجل بوصفه وقت تشغيل البنوك الأساسي. الثاني «الرمز يُمثّل الوديعة» — يبقى حساب الخدمات المصرفية الأساسي التقليدي هو السجل القانوني، ويكون الرمز انعكاساً يتبعه. ويقع JPM Coin وHSBC TDS قريباً من هذا الطرف. وهو أبسط قانونياً وتشغيلياً لكنه يتطلّب مطابقة مستمرة، ويصبح التسليم الذري مقابل الدفع أصعب لأن الجانب الملزم قانونياً يقع خارج السجل. الثالث «الرمز طبقة تعليمات» — لا يُمثّل الرمز الوديعة على الإطلاق؛ بل يُشغّل مدفوعات تقليدية عبر السكك القائمة (CHAPS، Fedwire، TARGET2). هذا الأسهل في النشر لكنه الأضعف ادعاءً بالنقود القابلة للبرمجة الفعلية؛ وهو ما تشحنه بعض البنوك وتُسمّيه وديعة مرمَّزة بينما تمتلك في الحقيقة واجهة عقد ذكي على أنبوب SWIFT.</p>
+<p>يعترف مقترح FDIC لعام 2026 صراحةً بالنمطين الأوّلين بوصفهما التزامات إيداع مُسجَّلة باستخدام تقنية السجلات الموزّعة، ويُميّزهما عن العملات المستقرة للدفع (<a href="https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted" title="FDIC proposed rule">FDIC</a>). أما الثالث فيتلقّى معاملة تنظيمية أكثر صرامة لأن علاقة الإيداع والرمز لا يلتقيان أبداً.</p>
+<h4>لماذا تُعدّ النهائية القانونية المشكلة الصعبة</h4>
+<p>«النهائية القانونية» هي العبارة الواحدة التي تظهر أكثر من غيرها في خرائط طريق الودائع المرمَّزة وتُحلَّل أقل ما يكون. ثلاثة أمور تقع تحتها فعلياً. أولاً، تنازع القوانين: عندما تُسوّى وديعة مرمَّزة صادرة عن بنك بريطاني ذرياً مقابل ورقة مالية مرمَّزة مسجَّلة في لوكسمبورغ عبر عقدة تعمل في سنغافورة، فأي نظام نهائية تسوية في أي ولاية قضائية يحكم الصفقة؟ ثانياً، التعارض بين عدم قابلية تعديل DLT والحق القانوني في العكس: يمكن إلغاء مدفوعات البنوك بأمر محكمة، أو بتعيين عقوبات، أو بسبب خطأ تشغيلي؛ أما السجل غير القابل للتعديل فلا يمكن، مما يفرض «طبقة عكس» يجب أن تكون قوية قانونياً دون أن تكسر سردية عدم قابلية التعديل. ثالثاً، سؤال النهائية على السلسلة نفسه: هل تُعدّ كتلة مؤكَّدة تسوية قانونية، أم فقط القيد المحاسبي المقابل خارج السلسلة؟ إلى أن تُحسم هذه الثلاثة على مستوى التنظيم — لا فقط ثنائياً بين البنوك المشاركة — تبقى التسوية الذرية عبر الشبكات تجربةً لا بنيةً تحتية.</p>
+<h3 id="section-16">ضوابط المحفظة والهوية <a class="heading-anchor" href="#section-16" aria-label="رابط إلى ضوابط المحفظة والهوية">#</a></h3>
+<p>تحتاج محافظ الشركات إلى هوية قوية، وفصل للواجبات، وسياسة معاملات، وفحص للعقوبات، ومسارات تدقيق، وضوابط استعادة. فمحفظة الودائع المرمَّزة ليست محفظة عملات مشفّرة استهلاكية بشعار بنك، بل هي نقطة تحكّم للخزينة.</p>
+<p>ولعل أهم ميزة تشغيلية هي السياسة. إذ ينبغي أن يكون أمين الخزينة قادراً على تحديد من يمكنه بدء حركة الودائع المرمَّزة أو اعتمادها أو تسويتها أو عكسها أو الاعتراض عليها وفق حدود معينة وقواعد للأطراف المقابلة.</p>
+<h3 id="section-17">اقتصاديات العائد والخزينة <a class="heading-anchor" href="#section-17" aria-label="رابط إلى اقتصاديات العائد والخزينة">#</a></h3>
+<p>العائد هو السؤال الأول الذي يطرحه كبار أمناء الخزينة، وهو ما تتجنّبه معظم البيانات الصحفية عن الودائع المرمَّزة. إذا أودعت شركة 50 مليون دولار في محفظة وديعة مرمَّزة لمدة 48 ساعة بانتظار جانب التسوية، فهل يكسب هذا الرصيد الفائدة ذاتها التي يدفعها البنك على وديعة ليلة واحدة تقليدية، أم أنه عقيم؟ نمطان يبرزان. تتعامل بعض البنوك مع الوديعة المرمَّزة بوصفها مكافئة اقتصادياً للوديعة الأساسية — تحتفظ الشركة بسعرها، ويحتفظ البنك بالرصيد في دفاتره، ويكون الرمز طبقة قابلية للبرمجة. ويتعامل آخرون معها بوصفها سيولة عابرة لا تدفع فائدة لأن المال يُفترض أنه في حركة. النمط الأول يحافظ على علاقة اقتصاديات الإيداع القائمة وهو التصميم الوحيد الذي يتوسّع لإدارة النقد. الثاني هو في الجوهر أداة دفع مغلقة وسيخسر أرصدة الشركات لصالح أي منافس يقدّم النمط الأول. ولهذا السبب أيضاً تكون «الودائع المرمَّزة مقابل العملات المستقرة» جزئياً سؤالاً عن اقتصاديات العائد، لا مجرّد سؤال تنظيمي: في بيئة أسعار مرتفعة، يحمل رمز الدفع غير الحامل للعائد عيباً هيكلياً أمام إما وديعة مرمَّزة تدفع فائدة أو صندوق سوق نقد مُرمَّز العائد يعمل بجانب عملة مستقرة.</p>
+<h3 id="section-18">طبقة القابلية للتشغيل البيني <a class="heading-anchor" href="#section-18" aria-label="رابط إلى طبقة القابلية للتشغيل البيني">#</a></h3>
+<p>تُعدّ الوديعة المرمَّزة لبنك واحد مفيدة لكنها محدودة. والقابلية للتشغيل البيني بين عدة بنوك هي حيث تبدأ تأثيرات الشبكة. ويتطلّب ذلك معايير لشكل الرمز، والمراسلة، والهوية، والنهائية في التسوية، ومعالجة النزاعات، وبيانات مكافحة غسل الأموال، وقابلية نقل المحفظة، والتحويل بين الودائع المرمَّزة، والودائع التقليدية، والعملات المستقرة، وCBDC، والأصول المرمَّزة.</p>
+<p>السطح التقني مُجزّأ. تشمل الأطراف الرائدة في DLT المرخّصة R3 Corda (تستخدمه Standard Chartered وآخرون للودائع المرمَّزة)، وCanton Network (تستخدمه HSBC لتجارب التسوية عبر الشبكات وتستخدمه GS DAP التابعة لـ Goldman Sachs)، وHyperledger Besu (متغيّر إيثريوم المشتق من JPMorgan تحت Kinexys)، ومنظومات خاصة مثل HSBC Orion. كما لم يُحسم اختيار شكل الرمز: تستخدم بعض الشبكات عقوداً مشتقة من ERC-20 لتتمكن من التركيب مع أدوات Ethereum الأوسع؛ بينما تستخدم أخرى أوّليات رموز على غرار IBC أو أصلية لـ Canton. والإجابة العملية في 2026 هي أنه لا توجد منظومة فائزة واحدة، والبنوك التي ستُوسّع الودائع المرمَّزة هي تلك التي تبني جسور قابلية للتشغيل البيني (بروتوكولات تسوية ذرية بين Canton وBesu، وتعيين ISO 20022 إلى تنسيقات الرسائل على السلسلة) بدلاً من المراهنة على منصة واحدة.</p>
+<p>والخطر هو تشكُّل مجموعة من الحدائق المسوّرة الخاصة بكل بنك. أما الفرصة فهي إيجاد طبقة قابلة للبرمجة لنقود البنوك التجارية تحافظ على الثقة المصرفية مع تحسين التسوية الرقمية.</p>
+<h2 id="section-19">أنماط الفشل: أين تنكسر المنظومة <a class="heading-anchor" href="#section-19" aria-label="رابط إلى أنماط الفشل: أين تنكسر المنظومة">#</a></h2>
+<p>تتم الكتابة عن الودائع المرمَّزة في الغالب بنبرات متفائلة. تستحق أنماط الفشل المعاملة الجادة لأنها تُشكّل المحيط التنظيمي النهائي.</p>
+<p><strong>خطأ في عقد ذكي لرمز إيداع.</strong> ليس الخطأ في عقد ذكي لرمز إيداع حادثة برمجية عادية؛ بل قد يكون حدث رصيد خاطئ على نقود البنوك التجارية. تحتاج البنوك إلى تدقيق عقد مُتحقَّق منه رسمياً، ومسار ترقية لا يتطلّب ترحيل أرصدة العملاء، وقاطع دائرة يُوقف التسوية القابلة للبرمجة دون كسر قابلية التحويل إلى الودائع التقليدية.</p>
+<p><strong>فشل بنك متعدد الولايات القضائية.</strong> إذا فشل بنك يمتلك ودائع مرمَّزة صادرة عبر خمس ولايات قضائية، فإن أنظمة التأمين على الودائع تنطبق وطنياً بينما السجل عالمي. لم تختبر سلطات التسوية كيف يتفاعل ذلك مع تفضيل المودعين، أو قواعد التطويق، أو سؤال من يملك الرمز فعلاً لحظة إغلاق البنك. الرموز ذات الولاية الواحدة تتفادى المشكلة؛ أما الرموز متعددة الولايات فمعرّضة.</p>
+<p><strong>أزمة سيولة مع ودائع منقسمة.</strong> قد تتصرّف الودائع التقليدية والودائع المرمَّزة بشكل مختلف جداً في حدث ضغط. إذا أمكن نقل وديعة مرمَّزة على مدار 24/7 إلى محفظة غير بنكية عبر عقد ذكي بينما تواجه الودائع التقليدية قطعاً يومياً، فإن الجانب المرمَّز يهرب أسرع. هذه ميزة في الظروف العادية ومُزعزِعة للاستقرار في حالة هروب جماعي بنكي. لم تُكتب نسب تغطية السيولة وأطر المرونة التشغيلية لهذا التفاوت.</p>
+<p><strong>اعتماد تشغيلي على مزوّد DLT واحد.</strong> تعمل العديد من منصات رموز الإيداع البنكية على منظومة DLT مرخّصة واحدة. النقد على غرار DORA الذي طُبّق بالفعل على السحابة ينطبق هنا: انقطاع المنظومة لدى المزوّد بات الآن انقطاع خدمات حرجة. التخفيف هو قدرة متعددة المنظومات، لا فقط نشر متعدد المناطق لمنظومة واحدة.</p>
+<p>لا شيء من هذا سبب لعدم بناء الودائع المرمَّزة. بل أسباب لمعاملة المنصة بوصفها بنية تحتية حرجة للخدمات المالية من اليوم الأول بدلاً من إضافة الضوابط بعد التوسع.</p>
+<h2 id="section-20">ماذا يعني هذا بحسب نوع البنك <a class="heading-anchor" href="#section-20" aria-label="رابط إلى ماذا يعني هذا بحسب نوع البنك">#</a></h2>
+<h3 id="section-21">البنوك العالمية <a class="heading-anchor" href="#section-21" aria-label="رابط إلى البنوك العالمية">#</a></h3>
+<p>ينبغي للبنوك العالمية أن تتعامل مع الودائع المرمَّزة بوصفها بنية تحتية للخدمات المصرفية للمعاملات. وينبغي أن ينصبّ التركيز على محافظ الشركات، والخزينة عبر الحدود، وتسوية الأصول الرقمية، وقابلية نقل الضمانات، والضوابط القابلة للبرمجة للعملاء الكبار. باتت المنظومات المرجعية مرئية الآن: نطاق إنتاج على غرار Kinexys (JPMorgan)، واتساع متعدد المسارات على غرار HSBC، وتكامل تسوية الأوراق المالية على غرار GS DAP، وتغطية مزدوجة لرموز الإيداع والعملات المستقرة المنظَّمة على غرار SG-FORGE. ونقطة القرار هذا العام هي ما إذا كان ينبغي توحيد عدة تجارب DLT داخلية على منصة واحدة لرموز الإيداع لعملاء الخزينة قبل أن يُحدّد المنافسون تجربة استخدام محفظة الشركات. <strong>بند العمل:</strong> تعيين مالك برنامج واحد بصلاحية تمتد عبر الخدمات المصرفية للمعاملات وأسواق رأس المال وأقسام الأصول الرقمية — فالتجزؤ في الرعاية الداخلية هو السبب الأكثر شيوعاً في شحن هذه المنظومات بوصفها تجارب لا منتجات.</p>
+<h3 id="section-22">البنوك البريطانية <a class="heading-anchor" href="#section-22" aria-label="رابط إلى البنوك البريطانية">#</a></h3>
+<p>تتوافر للبنوك البريطانية فرصة مبكرة موثوقة للتنسيق من خلال Great British Tokenised Deposits، وتجربة البنوك المتعددة تُراقَب عالمياً بوصفها نموذجاً لقابلية التشغيل البيني لرموز الإيداع بين البنوك. والتحدي هو تحويل التجارب إلى معايير قابلة للتشغيل البيني قبل أن تصبح شبكات العملات المستقرة الواجهة الدولية الافتراضية. <strong>بند العمل:</strong> تعزيز تدفقات أعمال مدفوعات الأسواق وإعادة تمويل الرهن العقاري لبلوغ الجاهزية التشغيلية في 2026 (اتفاقيات مستوى خدمة واضحة، ومعالجة النزاعات، وتكامل العقوبات) بدلاً من تشغيل عروض إثبات مفهوم مفتوحة؛ إذ تتوقّف مصداقية التجربة على شحن حالة استخدام واحدة على الأقل بمستوى الإنتاج قبل إغلاق نافذة منتصف 2026.</p>
+<h3 id="section-23">البنوك المركزية والجهات التنظيمية <a class="heading-anchor" href="#section-23" aria-label="رابط إلى البنوك المركزية والجهات التنظيمية">#</a></h3>
+<p>تحتاج الجهات التنظيمية إلى توضيح الطابع القانوني، ومعاملة التأمين على الودائع، ورأس المال الاحترازي، والنهائية في التسوية، وحفظ المحافظ، والمرونة التشغيلية، وكيفية تفاعل الودائع المرمَّزة مع العملات المستقرة وCBDC. <strong>بند العمل:</strong> نشر إرشادات ملموسة للحالة الهجينة — العملات المستقرة المدعومة بالودائع ورموز الإيداع الصادرة عن البنوك العاملة على السجل ذاته — لأن هذا هو الهيكل الذي تتقارب نحوه معظم البنوك، والنص التنظيمي الحالي يبدو وكأن الفئتين لا تلتقيان أبداً.</p>
+<h3 id="section-24">الشركات <a class="heading-anchor" href="#section-24" aria-label="رابط إلى الشركات">#</a></h3>
+<p>لا ينبغي للشركات أن تنتظر شبكة عالمية موحَّدة. بل عليها البدء في رسم خرائط حالات الاستخدام التي يمكن فيها لنقود البنوك القابلة للبرمجة أن تُقلّل من الاحتيال، أو تأخر التسوية، أو أعمال المطابقة، أو السيولة المحبوسة. <strong>بند العمل:</strong> تجربة تدفق واحد ملموس بمؤشرات أداء قابلة للقياس — كنس السيولة عبر الحدود، وقابلية نقل الضمانات خلال اليوم، أو التسليم مقابل الدفع للسندات الحكومية المرمَّزة هي المرشحات الثلاث الأقوى إشارةً — وتجهيزه مع وضع أسئلة أنماط الفشل في الحسبان (ما الذي يحدث عند توقّف العقد الذكي؛ وكيف يتصرّف الجانب المرمَّز في سيناريو ضغط مقارنةً بالجانب التقليدي).</p>
+<h2 id="section-25">الخاتمة <a class="heading-anchor" href="#section-25" aria-label="رابط إلى الخاتمة">#</a></h2>
+<p>تقف الودائع المرمَّزة في عام 2026 حيث كانت المدفوعات الفورية قبل عقد من الزمن: واضحة القيمة، متفاوتة التطبيق، ومُقيَّدة بالتنسيق الشبكي. التجارب فاعلة، والمنظومات المصرفية الرائدة (Kinexys من JPMorgan، وTDS + Orion من HSBC، والبرنامج البريطاني متعدد البنوك) بمستوى الإنتاج ضمن محيطاتها، وفئات التنظيم تتصلّب (FDIC، BIS، HKMA)، وتوقّفت منظومة التكنولوجيا عن كونها القيد الملزِم. ما تبقى هو القابلية للتشغيل البيني، والنهائية القانونية، واقتصاديات العائد — ثلاث مشاكل يمكن للقطاع حلّها، لكن فقط إذا تعاملت البنوك مع 2026–2027 بوصفها نافذة وضع المعايير. الخطر ليس أن تفشل الودائع المرمَّزة في الإصدار؛ بل أن تُصدَر بوصفها اثنتي عشرة حديقة مسوّرة غير متوافقة.</p>
+<h2 id="section-26">الأسئلة الشائعة <a class="heading-anchor" href="#section-26" aria-label="رابط إلى الأسئلة الشائعة">#</a></h2>
+<p><strong>هل الودائع المرمَّزة هي ذاتها العملات المستقرة؟</strong></p>
+<p>لا. تُقدّم كلتاهما نقوداً رقمية قابلة للبرمجة على مدار 24/7، غير أنهما تستخدمان هياكل قانونية ومطالبات مختلفة تماماً. فالعملة المستقرة مطالبة على أصل احتياطي خاص بمُصدِر أو على هيكل شركة، وتعمل خارج الميزانية العمومية للبنك المركزي (<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>). أما الوديعة المرمَّزة فهي التزام مباشر على بنك تجاري يرث التنظيم المصرفي القائم، وضوابط مكافحة غسل الأموال والعقوبات، ومحيط التأمين على الودائع (<a href="https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted" title="FDIC proposed rule">FDIC</a>).</p>
+<p><strong>ما حالات الاستخدام البريطانية الرائدة؟</strong></p>
+<p>تركّز التجربة البريطانية متعددة البنوك في منتصف 2026 (HSBC وLloyds وNatWest وBarclays وNationwide وSantander) على ثلاثة مجالات عملية: مدفوعات الأسواق بين الأفراد للحدّ من الاحتيال، وتدفقات أعمال آلية متعددة الأطراف لإعادة تمويل الرهن العقاري، وتسوية الأصول الرقمية بمنطق التسليم مقابل الدفع (DvP) — بمطابقة النقود المرمَّزة مقابل السندات الحكومية السيادية المرمَّزة في تجربة UK Digital Gilt Instrument (DIGIT) (<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>).</p>
+<p><strong>هل ستحلّ الودائع المرمَّزة محل العملات المستقرة؟</strong></p>
+<p>على الأرجح لا؛ فهما أداتان متكاملتان تخدمان محيطين مختلفين. ستظل العملات المستقرة مهيمنة في النظم البيئية المفتوحة لـ DeFi، ومجمّعات السيولة الأصلية للعملات المشفّرة، والادخار الاحتفاظي للتجزئة عبر الحدود في الأسواق التي تتقلّب فيها العملات الورقية. أما الودائع المرمَّزة فستفوز بالمحيط المنظَّم — إدارة النقد لخزينة الشركات، والتسوية المؤسسية للتجارة، والخدمات المصرفية للمعاملات على نطاق واسع — حيث يكون التأمين على الودائع، والمعاملة الاحترازية لرأس المال، وضوابط مكافحة غسل الأموال القائمة ذا أهمية.</p>
+<p><strong>ما الذي يُعيق التبني على نطاق الشبكة؟</strong></p>
+<p>التكنولوجيا ذاتها جاهزة. والتوسع تعيقه ثلاث نقاط احتكاك غير تقنية: <strong>القابلية للتشغيل البيني</strong> (منظومات DLT المُجزّأة — Corda وCanton وHyperledger Besu وHSBC Orion — تعمل حالياً بوصفها حدائق مسوّرة)؛ و<strong>النهائية القانونية</strong> (لا توجد مواءمة تنظيمية عالمية بشأن تنازع القوانين أو كيفية التوفيق بين عدم قابلية تعديل DLT والتزام البنك بعكس المعاملات بأمر محكمة أو عقوبات أو خطأ تشغيلي)؛ و<strong>اقتصاديات العائد</strong> (لم يُوحّد القطاع ما إذا كانت محافظ الشركات المرمَّزة تدفع فائدة ليلية تنافسية أم تتصرّف بوصفها سيولة عابرة عقيمة).</p>
+<p><strong>أي بنك يمتلك أكثر منظومات الودائع المرمَّزة تطوراً؟</strong></p>
+<p>تاج منقسم. JPMorgan هو الرائد بلا منازع في حجم الإنتاج، إذ تُعالج Kinexys by J.P. Morgan (formerly Onyx) ما يقارب 2 مليار دولار يومياً من معاملات الجملة للشركات (<a href="https://www.jpmorgan.com/kinexys" title="Kinexys by JPMorgan">JPMorgan</a>). وHSBC يمتلك المنظومة الأكثر تنوّعاً هيكلياً ومتعددة المسارات: خدمة HSBC Tokenised Deposit Service عبر هونغ كونغ وسنغافورة والمملكة المتحدة ولوكسمبورغ والولايات المتحدة بعملات USD/GBP/EUR/HKD/SGD؛ وHSBC Orion بوصفها البنية التحتية المعتمدة لتجربة UK Digital Gilt Instrument (DIGIT)؛ وHSBC Gold Token الذي يُرمّز سبائك مادية مخصَّصة؛ إضافةً إلى تسوية ذرية عبر الشبكات جُرّبت على Canton وProject Ensemble، وأمان تشفيري ما بعد الكم نُفِّذ مع Quantinuum (<a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" title="HSBC Tokenised Deposit Service">HSBC</a>). والتجربة البريطانية متعددة البنوك هي الاختبار الحي الأكثر مصداقية للقابلية للتشغيل البيني بين البنوك.</p>
+<h2 id="section-27">المراجع <a class="heading-anchor" href="#section-27" aria-label="رابط إلى المراجع">#</a></h2>
+<ul>
+<li>Lloyds Banking Group، (2026). <a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">الأصول الرقمية في 2026: بناء مستقبل التمويل في المملكة المتحدة ⧉</a>.</li>
+<li>HSBC، (2026). <a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" title="HSBC Tokenised Deposit Service">HSBC Tokenised Deposit Service ⧉</a>.</li>
+<li>JPMorgan، (2026). <a href="https://www.jpmorgan.com/kinexys" title="Kinexys by JPMorgan">Kinexys (سابقاً Onyx) منصة الأصول الرقمية ⧉</a>.</li>
+<li>BIS، (2026). <a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">العملات المستقرة: تأطير النقاش ⧉</a>.</li>
+<li>Deutsche Bank flow، (2026). <a href="https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs" title="Digital Money">النقود الرقمية — منظور حول العملات المستقرة والودائع المرمَّزة وCBDC ⧉</a>.</li>
+<li>FDIC، (2026). <a href="https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted" title="FDIC proposed rule">مقترح القواعد لمتطلبات ومعايير قانون GENIUS ⧉</a>.</li>
+<li>Cambridge Centre for Alternative Finance، (2026). <a href="https://www.jbs.cam.ac.uk/wp-content/uploads/2026/02/2026-ccaf-tokenised-money-use-cases-interoperability-and-regulation.pdf" title="Tokenised money report">النقود المرمَّزة: حالات الاستخدام، والقابلية للتشغيل البيني، والتنظيم ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">آخر مراجعة <time datetime="2026-05-21">2026-05-21</time>.</p>
+
+<!-- enrich-end -->
+<aside class="author-card" aria-label="نبذة عن الكاتب"><img alt="صورة سيباستيان روسو" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ar/hawla/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">تقني مصرفي كبير يكتب عن الذكاء الاصطناعي التطبيقي، وهجرة ISO 20022، والتشفير ما بعد الكمي للخدمات المالية، والتحوّل الهيكلي للمدفوعات بالجملة.</span><span class="author-credentials">أكثر من 20 عامًا في HSBC Commercial &amp; Investment Bank وPayPal وBarclays وShazam وAKQA وVirgin Group. <a href="/ar/hawla/index.html">الملف الكامل</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">آخر مراجعة <time datetime="2026-05-21">2026-05-21</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">قراءات ذات صلة</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/ar/2026-05-16-best-cloud-infrastructure-architecture-2026" class="related-media" aria-label="أفضل بنية تحتية سحابية في 2026: مخطط أصيل للذكاء الاصطناعي، متعدد السحب، وواعٍ كمياً للخدمات المالية" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-3"><a href="https://sebastienrousseau.com/ar/2026-05-16-best-cloud-infrastructure-architecture-2026">أفضل بنية تحتية سحابية في 2026: مخطط أصيل للذكاء الاصطناعي، متعدد السحب، وواعٍ كمياً للخدمات المالية</a> <a class="heading-anchor" href="#2026-3" aria-label="رابط إلى أفضل بنية تحتية سحابية في 2026: مخطط أصيل للذكاء الاصطناعي، متعدد السحب، وواعٍ كمياً للخدمات المالية">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">المصادر والمراجع</h2><ol class="article-sources-list"><li><a href="https://www.bis.org/speeches/sp260420.pdf" rel="external noopener nofollow"><span class="source-host">www.bis.org</span><span class="source-path">/speeches/sp260420.pdf</span></a></li><li><a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" rel="external noopener nofollow"><span class="source-host">www.business.hsbc.com</span><span class="source-path">/en-gb/products/tokenised-deposit-service</span></a></li><li><a href="https://www.jpmorgan.com/kinexys" rel="external noopener nofollow"><span class="source-host">www.jpmorgan.com</span><span class="source-path">/kinexys</span></a></li></ol></aside><nav class="post-pagination" aria-label="ترقيم المقال"><a class="post-pagination-prev" href="/ar/2026-05-20-cloud-native-banking-financial-institutions-2026/"><span class="post-pagination-label">السابق</span><span class="post-pagination-title">Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ar/hawla/index.html">حول</a></li>
+              <li><a href="/ar/ittisal/index.html">اتصل</a></li>
+              <li><a href="/ar/masnu-bi-static-site-generator/index.html">مصنوع بواسطة Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">الكتابة</h2>
+            <ul>
+              <li><a href="/ar/maqalat/index.html">المقالات</a></li>
+              <li><a href="/ar/buhuth/index.html">الأبحاث</a></li>
+              <li><a href="/ar/wusum/index.html">الوسوم</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">الأعمال</h2>
+            <ul>
+              <li><a href="/ar/mashari/index.html">المشاريع</a></li>
+              <li><a href="/ar/qawaim/index.html">قوائم التشغيل</a></li>
+              <li><a href="/ar/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">تواصل</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="التسجيل في النشرة">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — ملاحظات بحثية حول المدفوعات والذكاء الاصطناعي والتشفير ما بعد الكمي. بدون رسائل مزعجة.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="antum@bank.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">اشترك</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="روابط التواصل الاجتماعي">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="سيباستيان روسو على Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="سيباستيان روسو على Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="سيباستيان روسو على LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="سيباستيان روسو على LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="سيباستيان روسو على Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="سيباستيان روسو على Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="سيباستيان روسو على YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="سيباستيان روسو على YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ar/wusul/index.html">إمكانية الوصول</a> ·
+            <a href="/ar/khusoosiya/index.html">الخصوصية</a> ·
+            <a href="/ar/shurut/index.html">الشروط</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ar"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ar"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":4661,"headline":"Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money","description":"Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp","width":"100vw","height":"100vh","caption":"Tokenised deposit banking architecture for 2026 showing commercial bank money, digital wallets, stablecoins, CBDCs, tokenised gilts, and Project Agorá settlement paths"},"url":"https://sebastienrousseau.com/ar/2026-05-21-tokenised-deposits-banking-services-status-2026/","datePublished":"2026-05-21T06:06:06+00:00","dateModified":"2026-05-21","inLanguage":"ar","keywords":"tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercial bank money, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, digital wallets, tokenised gilts","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ar/2026-05-21-tokenised-deposits-banking-services-status-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ar"},"citation":[{"@type":"CreativeWork","url":"https://www.bis.org/speeches/sp260420.pdf"},{"@type":"CreativeWork","url":"https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service"},{"@type":"CreativeWork","url":"https://www.jpmorgan.com/kinexys"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ar/"},{"@type":"ListItem","position":3,"name":"Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money","item":"https://sebastienrousseau.com/ar/2026-05-21-tokenised-deposits-banking-services-status-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="بحث">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>بحث</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="بحث">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="البحث في المحتوى..." autocomplete="off" aria-label="بحث"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> إغلاق</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> تنقل</span><span><kbd>Enter</kbd> فتح</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money","url":"https://sebastienrousseau.com/ar/2026-05-21-tokenised-deposits-banking-services-status-2026/","inLanguage":"ar-SA","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercial bank money, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, digital wallets, tokenised gilts","dependencies":["Stablecoin"]}</script></body>
+</html>

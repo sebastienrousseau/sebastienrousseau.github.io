@@ -1,11 +1,11 @@
 {
-  "title": "التشفير الكمومي القائم على الشبكات: خلل في هجوم Chen على LWE",
-  "locale": "fil_PH",
-  "description": "خلل في الخوارزمية الكمومية لـLWE من Yilei Chen يمنح التشفير القائم على الشبكات مهلةً مؤقّتة. ما يعنيه ذلك لـCRYSTALS-Kyber وDilithium وخارطة طريق PQC.",
-  "banner_alt": "صورة مُولَّدة باستخدام MidJourney — شبكة من العُقَد الرقمية بألوان حمراء وزرقاء.",
-  "date": "Apr 22, 2024",
   "keywords": "التشفير ما بعد الكمومي, NIST, توحيد PQC القياسي, Yilei Chen, الخوارزمية الكمومية, التشفير القائم على الشبكات, مسألة LWE, CRYSTALS-KYBER, CRYSTALS-Dilithium, التشفير المقاوم للكمومية",
   "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
+  "date": "Apr 22, 2024",
+  "locale": "fil_PH",
+  "language": "fil-PH",
+  "banner_alt": "صورة مُولَّدة باستخدام MidJourney — شبكة من العُقَد الرقمية بألوان حمراء وزرقاء.",
+  "title": "التشفير الكمومي القائم على الشبكات: خلل في هجوم Chen على LWE",
   "subtitle": "مراجعة الأقران تكشف عن خلل في عمل Chen الرائد",
-  "language": "fil-PH"
+  "description": "خلل في الخوارزمية الكمومية لـLWE من Yilei Chen يمنح التشفير القائم على الشبكات مهلةً مؤقّتة. ما يعنيه ذلك لـCRYSTALS-Kyber وDilithium وخارطة طريق PQC."
 }

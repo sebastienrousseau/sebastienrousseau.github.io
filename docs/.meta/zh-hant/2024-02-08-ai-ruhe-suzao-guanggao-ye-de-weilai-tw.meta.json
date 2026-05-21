@@ -1,11 +1,11 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp",
   "language": "zh-Hant",
-  "subtitle": "探索 AI 如何變革廣告：聚焦亞馬遜 Rufus 與 Meta 的最新進展，揭示對消費者參與的影響",
-  "date": "February 8, 2024",
   "description": "AI 透過亞馬遜 Rufus 與 Meta 的生成式工具重塑廣告業，提升消費者參與度與廣告投資回報率。",
+  "banner": "https://cloudcdn.pro/stocks/images/advertising-ai.webp",
   "keywords": "AI 廣告, 亞馬遜 Rufus, Meta, 生成式 AI, 個性化, 對話商業, 創意工具, 投資回報率, 廣告策略, 消費者參與",
-  "locale": "zh_TW",
   "banner_alt": "一位戴著蝴蝶和花朵的機器人女性",
-  "title": "革新廣告業：AI 如何塑造未來"
+  "locale": "zh_TW",
+  "date": "February 8, 2024",
+  "title": "革新廣告業：AI 如何塑造未來",
+  "subtitle": "探索 AI 如何變革廣告：聚焦亞馬遜 Rufus 與 Meta 的最新進展，揭示對消費者參與的影響"
 }

@@ -1,11 +1,11 @@
 {
-  "description": "Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.",
   "subtitle": "Static Site Generator, the fastest Rust-based static site generator for high-impact websites.",
-  "locale": "ha_NG",
-  "language": "ha-NG",
   "keywords": "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation",
-  "banner_alt": "Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right",
+  "date": "Oct 09, 2023",
   "title": "Static Site Generator: Fastest Rust-Based SSG",
-  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp",
-  "date": "Oct 09, 2023"
+  "description": "Empowering you to create high-impact static websites with infinite possibilities, limitless scalability, and a truly unique web presence that you control.",
+  "language": "ha-NG",
+  "locale": "ha_NG",
+  "banner_alt": "Turned off laptop computer on top of a white table with a glass of water on the left and a pen, notepad and plant on the right",
+  "banner": "https://cloudcdn.pro/stocks/images/anna-nekrashevich-8534387.webp"
 }

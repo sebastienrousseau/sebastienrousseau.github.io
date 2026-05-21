@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/sitemap.xml

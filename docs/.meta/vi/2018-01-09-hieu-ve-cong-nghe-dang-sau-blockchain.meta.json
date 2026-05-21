@@ -1,11 +1,11 @@
 {
+  "date": "January 9, 2018",
+  "banner_alt": "Sơ đồ kỹ thuật của một sổ cái phân tán với các khối được liên kết",
+  "description": "Cách blockchain hoạt động: băm mật mã, cây Merkle, cơ chế đồng thuận và mô hình kinh tế đảm bảo tính bất biến.",
+  "keywords": "blockchain, băm mật mã, cây Merkle, đồng thuận, proof-of-work, sổ cái phân tán, mật mã, tài chính",
   "banner": "https://cloudcdn.pro/stocks/images/blockchain-tech.webp",
   "locale": "vi_VN",
-  "title": "Hiểu về công nghệ đằng sau blockchain",
-  "banner_alt": "Sơ đồ kỹ thuật của một sổ cái phân tán với các khối được liên kết",
-  "keywords": "blockchain, băm mật mã, cây Merkle, đồng thuận, proof-of-work, sổ cái phân tán, mật mã, tài chính",
   "subtitle": "Mật mã, đồng thuận và sổ cái phân tán — các khối xây dựng của tin cậy số",
-  "date": "January 9, 2018",
-  "description": "Cách blockchain hoạt động: băm mật mã, cây Merkle, cơ chế đồng thuận và mô hình kinh tế đảm bảo tính bất biến.",
-  "language": "vi-VN"
+  "language": "vi-VN",
+  "title": "Hiểu về công nghệ đằng sau blockchain"
 }

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 21 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 21 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.">
+<meta name="keywords" content="tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercial bank money, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, digital wallets, tokenised gilts">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Tokenised Deposits">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-Bo4lQGjtmm//uDeZTgWl/5mJ953Mbwww/X+sP+BiR00=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-mc5M+ufgMwK86EfVWMeFXxY11BUueziRCvf/L26DqME=' 'sha256-qnnDEBBWEiO60OOejgPDmUhM0isnbVKFLYkD5w0Ptd4=' 'sha256-s3FElW5pn3pPXM90714hxcuAM6TDkS5H+P2dBn7+1IY=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/zh-hans/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom 订阅源" href="/zh-hans/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money — Sebastien Rousseau">
+<meta property="og:description" content="Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/zh-hans/2026-05-21-tokenised-deposits-banking-services-status-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money — Sebastien Rousseau">
+<meta name="twitter:description" content="Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/zh-hans/2026-05-21-tokenised-deposits-banking-services-status-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-21-tokenise-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">跳至主要内容</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="切换导航" />
+      <div class="wrap">
+        <a class="ap-brand" href="/zh-hans/index.html" aria-label="Sebastien Rousseau 首页">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="主导航">
+          <ul class="ap-menu">
+            <li><a href="/zh-hans/guanyu/index.html">关于</a></li>
+            <li><a href="/zh-hans/wenzhang/index.html" aria-current="page" class="active">文章</a></li>
+            <li><a href="/zh-hans/lunwen/index.html">论文与白皮书</a></li>
+            <li><a href="/zh-hans/zhuti/index.html">主题</a></li>
+            <li><a href="/zh-hans/xiangmu/index.html">项目</a></li>
+            <li><a href="/zh-hans/boqing/index.html">播放列表</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="切换到深色主题" aria-pressed="false" title="切换主题">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="搜索（Cmd 或 Ctrl + K）" title="搜索（⌘K）">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="语言">
+            <button type="button" class="ap-lang-toggle" aria-label="ZH，切换语言" aria-expanded="false" aria-haspopup="menu" title="切换语言">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">ZH</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/zh-hans/lianxi/index.html" aria-label="联系我">联系我 ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="切换导航">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</h1>
+      <p class="sub">Tokenised deposits are becoming the banking sector’s answer to stablecoins: programmable commercial bank money on controlled platforms, with pilots moving through UK marketplace payments, remortgaging, digital asset settlement, and corporate wallets.</p>
+    <nav class="article-tags" aria-label="Topics"><a href="/tags/index.html#h3-tokenised-deposits-2026" class="article-tag" rel="tag">tokenised deposits 2026</a><a href="/tags/index.html#h3-tokenized-deposits-banking" class="article-tag" rel="tag">tokenized deposits banking</a><a href="/tags/index.html#h3-deposit-tokens" class="article-tag" rel="tag">deposit tokens</a><a href="/tags/index.html#h3-great-british-tokenised-deposits" class="article-tag" rel="tag">Great British Tokenised Deposits</a><a href="/tags/index.html#h3-lloyds-digital-assets" class="article-tag" rel="tag">Lloyds digital assets</a><a href="/tags/index.html#h3-stablecoins" class="article-tag" rel="tag">stablecoins</a><a href="/tags/index.html#h3-commercial-bank-money" class="article-tag" rel="tag">commercial bank money</a><a href="/tags/index.html#h3-bis-stablecoins" class="article-tag" rel="tag">BIS stablecoins</a><a href="/tags/index.html#h3-project-agora" class="article-tag" rel="tag">Project Agora</a><a href="/tags/index.html#h3-unified-ledger" class="article-tag" rel="tag">unified ledger</a><a href="/tags/index.html#h3-deutsche-bank-digital-money" class="article-tag" rel="tag">Deutsche Bank digital money</a><a href="/tags/index.html#h3-cbdc" class="article-tag" rel="tag">CBDC</a><a href="/tags/index.html#h3-tokenised-money" class="article-tag" rel="tag">tokenised money</a><a href="/tags/index.html#h3-digital-wallets" class="article-tag" rel="tag">digital wallets</a><a href="/tags/index.html#h3-tokenised-gilts" class="article-tag" rel="tag">tokenised gilts</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-21T06:06:06+00:00" class="meta-pub">Published 21 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Estimated read time">2 min read</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Contents</h2><ol><li><a href="#section-1">为何代币化存款此刻至关重要</a></li><li><a href="#2026">2026年的现状：从试点走向产品，但尚未达到网络规模</a></li><li><a href="#2026-2">2026年最为成熟的银行项目</a></li><li><a href="#cbdc">代币化存款、稳定币与CBDC的比较</a></li><li><a href="#section-14">银行需要构建什么</a></li><li><a href="#section-19">故障模式：堆栈在何处崩裂</a></li><li><a href="#section-20">按银行类型的意义</a></li><li><a href="#section-25">结论</a></li><li><a href="#section-26">常见问题</a></li><li><a href="#section-27">参考文献</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>为何代币化存款此刻至关重要.</strong> 稳定币暴露了对可编程、全天候数字货币的需求。银行业的回应并非简单地复制稳定币，而是在保留银行监管、存款关系和审慎管控的同时，将商业银行货币调整到代币化环境中。Deutsche Bank将代币化存款描述为在保留商业银行货币作用的同时，将现有银行模式延伸到可编程环境（Deutsche Bank flow）。.</li>  <li><strong>2026年的现状：从试点走向产品，但尚未达到网络规模.</strong> Lloyds将Great British Tokenised Deposits定位为一项行业倡议，并给出三个具体的应用场景：个人间市场支付、再抵押贷款和数字资产结算（Lloyds Banking Group）。这些场景作为早期试验是合理的，因为它们将资金流动与信任、时机和条件性结算相结合。.</li>  <li><strong>2026年最为成熟的银行项目.</strong> 有三个项目值得单独剖析：JPMorgan，开创了批发存款代币这一类别并将其运行至生产规模；HSBC，在存款代币、证券、实物资产和加密学等方面拥有最完整的多轨堆栈；以及一批公开披露较少但实质活跃的欧洲与亚洲项目。将代币化存款视为单一的行业动向会忽略这些堆栈在&quot;银行数字货币产品应当是什么样子&quot;这一问题上作出的不同押注。.</li>  <li><strong>代币化存款、稳定币与CBDC的比较.</strong> 三种工具在争夺同一角色——可编程的、结算级数字货币——但它们立足于根本不同的债权结构。债权的选择决定了其他一切：法律保护、审慎处理、资产结算的位置，以及持有人隐含信任的网络。下表将四个候选工具归纳为五个维度，下文的散文则展开每种工具实际胜出的场景。.</li></ul></aside><h1>2026年的代币化存款：银行服务、稳定币竞争与可编程商业银行货币的现状</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>代币化存款正在成为银行业对稳定币最重要的数字货币回应。它们在保留商业银行存款关系的同时，实现了可编程性、数字钱包、原子结算和代币化资产工作流。Lloyds Banking Group表示，英国数字资产正在2026年进入主流，并将代币化存款、数字金边债券和Great British Tokenised Deposits列为活跃的行业倡议（<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>）。</p>
+<p>本文聚焦于批发、机构与企业司库这一层级——也就是存款代币叙事中试点已上线、银行产品正在成形的部分。零售型代币化存款仍作为研究方向存在，并通过HSBC Gold Token的零售封装在运行，但2026年的拐点发生在交易银行领域，而非日常的消费支付。</p>
+<hr />
+<blockquote>
+<p><strong>执行摘要／主要要点</strong></p>
+<ul>
+<li><strong>市场状况。</strong> 2026年的代币化存款仍处于规模化之前，但已不再停留在理论：试点已上线，银行方案正在成形，英国的多银行计划运行至2026年中期，HSBC、NatWest、Lloyds、Barclays、Nationwide和Santander正在测试市场支付、再抵押贷款和数字资产结算（<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>）。</li>
+<li><strong>竞争压力。</strong> 稳定币规模庞大且不断增长（BIS估计2026年4月初市值约3,150亿美元，约98%以USD计价），加快了存款代币的时间表。稳定币在开放生态触达、加密原生流动性和全球零售层面占优；代币化存款则在监管确定性、存款保险和司库工作流方面占优（<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>）。</li>
+<li><strong>监管边界。</strong> FDIC在2026年的提案将代币化存款界定为以DLT记录的存款负债，并明确将其与支付型稳定币区分开来，从而加强了美国的监管边界（<a href="https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted" title="FDIC proposed rule">FDIC</a>）。</li>
+<li><strong>领先的银行项目。</strong> JPMorgan的JPM Coin在Kinexys上每日处理约20亿美元的批发结算，拥有最长的存款代币生产记录。HSBC拥有最完整的多轨堆栈：TDS覆盖HK、SG、UK、LU、US，支持USD/GBP/EUR/HKD/SGD；HSBC Orion支撑英国Digital Gilt Instrument（DIGIT）试点；HSBC Gold Token将已分配实物金条代币化；在Canton + Project Ensemble上试行跨网络原子结算；与Quantinuum合作实施PQC（<a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" title="HSBC Tokenised Deposit Service">HSBC</a>）。</li>
+<li><strong>决定一切的设计选择。</strong> 三种账本-法律模式占主导地位：代币<em>即</em>存款（最干净的原子结算，最难的正常运行时间）、代币<em>表征</em>传统存款（法律上更简单、对账负担、JPM Coin和HSBC TDS接近此类）、或代币作为传统轨道之上的<em>指令层</em>（可编程性主张最弱）。</li>
+<li><strong>收益率经济性与监管同样重要。</strong> 代币化存款能否获得与基础存款相同的利息是一个司库级问题。保留存款经济性的设计可在现金管理中规模化；不付息的纯支付代币将把企业余额输给任何付息的竞争者。</li>
+<li><strong>制约因素是互操作性与法律最终性。</strong> 跨司法管辖区的法律冲突、DLT不可篡改性与法律可撤销性之间的不匹配，以及碎片化的平台（Corda、Canton、Besu、Orion、ERC-20与Canton-native代币格式）如今已成为制约因素——而非技术本身。</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="section-1">为何代币化存款此刻至关重要 <a class="heading-anchor" href="#section-1" aria-label="Link to 为何代币化存款此刻至关重要">#</a></h2>
+<p>稳定币暴露了对可编程、全天候数字货币的需求。银行业的回应并非简单地复制稳定币，而是在保留银行监管、存款关系和审慎管控的同时，将商业银行货币调整到代币化环境中。Deutsche Bank将代币化存款描述为在保留商业银行货币作用的同时，将现有银行模式延伸到可编程环境（<a href="https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs" title="Digital Money">Deutsche Bank flow</a>）。</p>
+<p>这种区别至关重要。稳定币通常是对发行方或储备结构的债权。代币化存款的设计意图是保持为银行存款或银行存款的表征，并附带银行的法律、审慎和运营框架。</p>
+<h2 id="2026">2026年的现状：从试点走向产品，但尚未达到网络规模 <a class="heading-anchor" href="#2026" aria-label="Link to 2026年的现状：从试点走向产品，但尚未达到网络规模">#</a></h2>
+<h3 id="1">1. 英国银行试点正在界定实际应用场景 <a class="heading-anchor" href="#1" aria-label="Link to 1. 英国银行试点正在界定实际应用场景">#</a></h3>
+<p>Lloyds将Great British Tokenised Deposits定位为一项行业倡议，并给出三个具体的应用场景：个人间市场支付、再抵押贷款和数字资产结算（<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>）。这些场景作为早期试验是合理的，因为它们将资金流动与信任、时机和条件性结算相结合。</p>
+<p>英国多银行试点确实是多银行参与的。参与方名单——HSBC、NatWest、Lloyds、Barclays、Nationwide和Santander——涵盖了英国零售与商业存款余额的大部分，项目运行至2026年中期。这一点之所以重要，是因为没有银行间互操作性的代币化存款只是单一银行的产品功能；英国试点是全球少数几个真正测试跨银行场景的实活实验之一。</p>
+<p>市场支付检验欺诈减少和卖家信心。再抵押贷款检验多方流程自动化。数字资产结算检验代币化货币与代币化金融工具之间的&quot;券款对付&quot;。</p>
+<h3 id="2">2. 企业钱包成为接口 <a class="heading-anchor" href="#2" aria-label="Link to 2. 企业钱包成为接口">#</a></h3>
+<p>Lloyds表示正在为企业及机构客户开发与传统交易银行界面并存的钱包，可持有代币化存款、数字资产和智能合约（<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>）。这是一项关键的设计选择。如果代币化存款要求资金管理人放弃现有银行工作流程，便难以规模化。</p>
+<p>胜出的接口很可能是银行账户与钱包的双重模式。客户看到的是资金管理平台，而银行在后端处理转换、结算路径选择和合规管控。</p>
+<h3 id="3">3. 稳定币既制造紧迫感，也使风险更加清晰 <a class="heading-anchor" href="#3" aria-label="Link to 3. 稳定币既制造紧迫感，也使风险更加清晰">#</a></h3>
+<p>BIS在2026年4月的演讲中肯定了稳定币在智能合约可编程性和原子结算等技术特性方面的价值，但也强调了围绕货币单一性、挤兑脆弱性、金融完整性、货币主权以及在中央银行货币之外完成结算的风险（<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>）。</p>
+<p>这一批评恰恰是代币化存款的重要性所在。代币化存款试图将代币化货币有用的可编程性引入受监管的商业银行货币框架。</p>
+<h3 id="4-project-agora">4. Project Agorá与统一账本塑造批发问题 <a class="heading-anchor" href="#4-project-agora" aria-label="Link to 4. Project Agorá与统一账本塑造批发问题">#</a></h3>
+<p>BIS将Project Agorá定位为与中央银行和私营部门合作探索跨境支付代币化的工作，并将更广泛的方向与统一账本愿景联系起来（<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>）。Deutsche Bank也将Project Agorá和Partior视为下一代结算与跨境基础设施的组成部分（<a href="https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs" title="Digital Money">Deutsche Bank flow</a>）。</p>
+<p>这正是代币化存款成为批发基础设施的地方。核心问题是商业银行货币、中央银行货币和代币化资产如何在不破坏法律最终性、流动性管控或货币单一性的前提下共同完成结算。</p>
+<h2 id="2026-2">2026年最为成熟的银行项目 <a class="heading-anchor" href="#2026-2" aria-label="Link to 2026年最为成熟的银行项目">#</a></h2>
+<p>有三个项目值得单独剖析：JPMorgan，开创了批发存款代币这一类别并将其运行至生产规模；HSBC，在存款代币、证券、实物资产和加密学等方面拥有最完整的多轨堆栈；以及一批公开披露较少但实质活跃的欧洲与亚洲项目。将代币化存款视为单一的行业动向会忽略这些堆栈在&quot;银行数字货币产品应当是什么样子&quot;这一问题上作出的不同押注。</p>
+<h3 id="jpmorgan-jpm-coinonyxkinexys">JPMorgan：JPM Coin、Onyx与Kinexys平台 <a class="heading-anchor" href="#jpmorgan-jpm-coinonyxkinexys" aria-label="Link to JPMorgan：JPM Coin、Onyx与Kinexys平台">#</a></h3>
+<p>JPMorgan于2019年推出JPM Coin，比业内大多数机构公开使用&quot;代币化存款&quot;一词早四年。它运行于<strong>Kinexys by J.P. Morgan (formerly Onyx)</strong>——JPMorgan的许可制区块链平台——之上，结算批发企业客户流量，主要包括机构司库划转、日内流动性调度，以及越来越多的代币化回购。到2026年，Kinexys每日处理约20亿美元规模的批发交易，这使JPMorgan成为全球单一最大的存款代币结算运营方。</p>
+<p>这段历史在两方面具有意义。其一，JPMorgan在对账、争议处理、日内流动性行为和故障模式等运营议题上拥有业内最长的生产记录——而其他银行仍处于设计阶段。其二，平台是多资产的：Kinexys已从存款代币扩展至代币化回购、外汇结算和抵押品流转，使JPMorgan能够在同一账本上提供券款对付，而非通过点对点集成。</p>
+<p>其反面是，JPM Coin从设计上就是封闭网络方案。它在JPMorgan的轨道上、在JPMorgan客户之间、在JPMorgan运营的链上完成结算。它既是业内单一银行代币化存款规模化的最强例证，也是BIS批评意见的最有力体现——没有互操作性，存款代币将沦为封闭花园而非批发基础设施。</p>
+<h3 id="hsbc">HSBC：从存款代币到代币化黄金的多轨堆栈 <a class="heading-anchor" href="#hsbc" aria-label="Link to HSBC：从存款代币到代币化黄金的多轨堆栈">#</a></h3>
+<p>HSBC的押注更为广泛。JPMorgan在一项批发用例上深挖，而HSBC则在存款代币、机构证券、实物资产与加密学等方面并行构建。HSBC明确将代币化存款定位为衔接传统银行业务与去中心化基础设施的首选工具，置于无担保稳定币或第三方数字货币之前（<a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" title="HSBC Tokenised Deposit Service">HSBC</a>）。</p>
+<h4>Tokenised Deposit Service（TDS）</h4>
+<p>HSBC Tokenised Deposit Service按1:1比例将企业法币余额转换为数字代币，资金始终处于完全受监管状态并保留在银行资产负债表上（<a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" title="HSBC Tokenised Deposit Service">HSBC</a>）。TDS已在香港、新加坡、英国、卢森堡和美国五个司法管辖区投入运行，并支持USD、GBP、EUR、HKD和SGD五种货币的即时交易。其核心功能为司库级：大型企业及机构客户通过24/7智能合约可编程性，可在数秒内完成跨境清算与结算，消除SWIFT截止时间、批量窗口与时区障碍。</p>
+<p>这一产品组合是对&quot;代币化存款仍属理论&quot;这一论断最有力的反例。它们在网络规模上仍属理论；在HSBC内部，它们已不再是理论。</p>
+<h4>HSBC Orion与数字资本市场</h4>
+<p>HSBC Orion是该行专有的机构级DLT平台，用于发行、结算和托管代币化证券。HM Treasury已指定HSBC Orion作为英国具有里程碑意义的Digital Gilt Instrument（DIGIT）试点的基础平台基础设施——这是英国代币化公共债务的主权级标杆案例。HSBC Orion还支持了香港特区政府和欧洲投资银行的大规模数字债券发行，包括绿色债券和主权债券分级。</p>
+<p>对代币化存款而言，这一点之所以重要，是因为在共享账本上实现券款对付（DVP）的前提条件是存款代币与代币化证券之间的结算对等。若没有机构级证券发行平台，存款代币便无对应可结算的对象。</p>
+<h4>实物资产代币化：HSBC Gold Token</h4>
+<p>HSBC将同一锚定模型扩展至零售层级的实物资产。HSBC Gold Token允许HSBC HK移动应用用户购买实物黄金的部分所有权，并向英国机构客户提供准入。每枚代币均由存放于HSBC机构金库内的已分配实物金条100%支持——这与该行对存款代币所采用的监管与运营锚定模式完全一致。</p>
+<h4>网络互操作性与量子安全代币化</h4>
+<p>HSBC已使用Canton Network和香港金融管理局（HKMA）的Project Ensemble，跨外部网络试行其代币化存款的原子结算。这正是BIS式批评针对单一银行代币所要求的互操作性环节：代币化存款只有在能够跨网络而非仅在单一银行内部结算时，才能成为批发基础设施。</p>
+<p>与此同时，HSBC与Quantinuum合作，在其代币化黄金账本上直接部署后量子加密安全——这是对&quot;Store Now, Decrypt Later&quot;（SNDL）攻击的防御性回应，此类攻击中，对手在当下收集加密账本数据，押注未来量子计算机将能解密。生产代币账本上的后量子加密尚未成为行业标准；HSBC是少数将其视为任何预期跨越PQC迁移期限的代币化平台基本要求的银行之一。</p>
+<h4>受监管稳定币与存款代币并行</h4>
+<p>HSBC并未完全忽视稳定币这一方向。该行已获得HKMA许可，试点用于点对点和投资交易结算的受监管稳定币——但这是对代币化存款核心的补充，而非替代。HSBC整个堆栈传递的战略信息是一致的：代币化存款是该行数字货币产品的锚点；受监管稳定币则将覆盖范围延伸至存款代币债权在结构上不便适用的场景。</p>
+<h3 id="section-10">其他活跃项目 <a class="heading-anchor" href="#section-10" aria-label="Link to 其他活跃项目">#</a></h3>
+<p>除JPMorgan与HSBC之外，仍有若干项目对整体网络图景具有实质意义，尽管其公开披露相对有限。</p>
+<p><strong>Société Générale (SG-FORGE).</strong> SG-FORGE在存款代币业务之外，发行了以欧元计价的数字债券和受监管的欧元稳定币EURCV，而EURCV是首个由全球系统重要性银行（G-SIB）发行、并在多条公链上运行的欧元稳定币。这一组合使Société Générale处于在欧洲银行监管之下同时运营代币化存款轨道与受监管稳定币轨道的不寻常位置，EURCV承担开放生态触达层的角色，而存款代币侧则覆盖受监管企业客户的边界。</p>
+<p><strong>Standard Chartered.</strong> Standard Chartered通过Zodia Custody（其机构数字资产托管合资企业）以及自有的新加坡试点（包括参与MAS Project Guardian的代币化资产结算）在代币化存款与代币化实物资产领域保持活跃。其战略重心放在新兴市场走廊——亚洲—非洲—中东——并将代币化存款定位为替代代理行业务摩擦，而非单纯升级英国或美国国内的支付轨道。</p>
+<p><strong>Goldman Sachs (GS DAP).</strong> GS DAP数字资产平台已发行机构数字债券（包括European Investment Bank的1亿欧元两年期数字债券）并支持回购与证券融资中的代币化抵押品流动性。GS DAP更接近一个代币化证券结算平台，而非企业司库提案；它既可与HSBC Orion在相似角色上形成对照，也表明数字资本市场端的堆栈正在比存款代币端更快地整合。</p>
+<p>更广的含义十分直接：存款代币能力如今已是任何希望在交易银行领域保持竞争力的全球批发银行的基本配置；更值得关注的问题是谁与谁互操作，而非谁先建成。</p>
+<h2 id="cbdc">代币化存款、稳定币与CBDC的比较 <a class="heading-anchor" href="#cbdc" aria-label="Link to 代币化存款、稳定币与CBDC的比较">#</a></h2>
+<p>三种工具在争夺同一角色——可编程的、结算级数字货币——但它们立足于根本不同的债权结构。债权的选择决定了其他一切：法律保护、审慎处理、资产结算的位置，以及持有人隐含信任的网络。下表将四个候选工具归纳为五个维度，下文的散文则展开每种工具实际胜出的场景。</p>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>债权类型</th>
+<th>最佳用途</th>
+<th>2026年现状</th>
+<th>主要风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>代币化存款</strong></td>
+<td>商业银行存款或其表征</td>
+<td>银行主导的可编程支付、资金管理、代币化资产结算</td>
+<td>试点及早期机构产品设计（<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>）</td>
+<td>互操作性与法律一致性</td>
+</tr>
+<tr>
+<td><strong>稳定币</strong></td>
+<td>对发行方／储备结构的债权</td>
+<td>加密流动性、跨境实验、美元流动性</td>
+<td>规模庞大且不断增长，BIS估计2026年4月初市值约为3,150亿美元（<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>）</td>
+<td>挤兑、金融完整性、货币主权</td>
+</tr>
+<tr>
+<td><strong>批发型CBDC</strong></td>
+<td>中央银行货币</td>
+<td>银行间结算与代币化市场基础设施</td>
+<td>通过中央银行项目积极探索</td>
+<td>设计、隐私、可扩展性、政治授权</td>
+</tr>
+<tr>
+<td><strong>零售型CBDC</strong></td>
+<td>供公众使用的中央银行货币</td>
+<td>公共数字现金替代品</td>
+<td>全球进展不一</td>
+<td>采纳率、隐私、银行脱媒</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-12">代币化存款胜出之处 <a class="heading-anchor" href="#section-12" aria-label="Link to 代币化存款胜出之处">#</a></h3>
+<p>资产负债表内的商业银行货币享有稳定币尚需赢得的监管确定性。代币化存款承袭存款保险、审慎资本处理以及现行的AML/制裁管控。对企业司库而言，这意味着无需面对新的交易对手风险，也无需评估新的储备审计。它们还从企业既有的银行账户上链——无需交易所、无需储备发行方、无需新的托管方。BIS和FDIC都强调了这一点：当债权位于现行法律框架已经理解的位置时，货币单一性得以维系（<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>；<a href="https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted" title="FDIC proposed rule">FDIC</a>）。</p>
+<h3 id="section-13">稳定币仍然胜出之处 <a class="heading-anchor" href="#section-13" aria-label="Link to 稳定币仍然胜出之处">#</a></h3>
+<p>主要有三处。第一，开放生态触达：稳定币与DeFi、加密原生司库以及那些永远不会集成银行API的长尾钱包相组合。第二，全球零售分发：以美元计价的稳定币在本币银行体系脆弱的市场中，已是事实上的储蓄工具。第三，24/7市场与加密结算：即便有TDS式的全天候银行轨道，稳定币仍是加密流动性的本币单位，并将在可见的未来继续如此。两种工具并非严格的替代品；竞争边界主要取决于用例位于受监管银行边界之内还是之外。</p>
+<h2 id="section-14">银行需要构建什么 <a class="heading-anchor" href="#section-14" aria-label="Link to 银行需要构建什么">#</a></h2>
+<h3 id="section-15">账本与法律架构 <a class="heading-anchor" href="#section-15" aria-label="Link to 账本与法律架构">#</a></h3>
+<p>在实际部署中，有三种设计模式占主导地位。第一种是&quot;代币<em>即</em>存款&quot;——DLT账本本身就是记录系统，链上余额承载法律债权。这是原子结算最干净的模式，也最接近Project Agorá和统一账本提案所设想的形态，但它迫使银行将账本正常运行时间视为核心银行系统正常运行时间。第二种是&quot;代币<em>表征</em>存款&quot;——传统的核心银行账户仍为法律记录，代币是与之同步的镜像。JPM Coin和HSBC TDS更接近此种模式。它在法律上和运营上更简单，但需要持续对账，且由于具有法律约束力的一端位于账本之外，原子DvP变得更难实现。第三种是&quot;代币作为指令层&quot;——代币根本不代表存款，而是触发既有轨道（CHAPS、Fedwire、TARGET2）上的传统支付。这是最容易部署的，但对&quot;实际可编程货币&quot;的主张最弱；某些银行将其作为&quot;代币化存款&quot;发布时，实际上只是在SWIFT管道之上加了一个智能合约前端。</p>
+<p>FDIC在2026年的拟议规则中明确将前两种认定为以分布式账本技术记录的存款负债，并将其与支付型稳定币区分开来（<a href="https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted" title="FDIC proposed rule">FDIC</a>）。第三种的监管处理更为严格，因为存款关系与代币始终不会汇合。</p>
+<h4>为何法律最终性是难题</h4>
+<p>&quot;法律最终性&quot;是代币化存款路线图中出现最频繁但被解析最少的措辞。其下实际上有三件事。第一，法律冲突：当一家英国银行发行的代币化存款，通过位于新加坡运营的节点，与一份在卢森堡登记的代币化证券进行原子结算时，哪一司法管辖区的结算最终性制度管辖该笔交易？第二，DLT不可篡改性与法律可撤销权之间的不匹配：银行支付可因法院命令、制裁指定或操作失误而被撤销，但不可篡改账本则不能；这迫使必须设计一个&quot;撤销层&quot;，既须在法律上稳健，又不能破坏不可篡改性的叙事。第三，链上最终性本身的问题：一个被确认的区块是否构成法律意义上的结算，还是只有相应的链下会计分录才算？在这三点未在监管层面——而非仅在参与银行间双边——被解决之前，跨网络原子结算仍是试点而非基础设施。</p>
+<h3 id="section-16">钱包与身份管控 <a class="heading-anchor" href="#section-16" aria-label="Link to 钱包与身份管控">#</a></h3>
+<p>企业钱包需要强身份认证、职责分离、交易策略、制裁筛查、审计跟踪和恢复管控。代币化存款钱包不是贴着银行标识的消费者加密钱包。它是资金管理的控制节点。</p>
+<p>最重要的运营特性可能是策略。资金管理人应能够定义在特定阈值和交易对手规则下，谁可以发起、批准、结算、撤销或对代币化存款的转移提出异议。</p>
+<h3 id="section-17">收益率与司库经济性 <a class="heading-anchor" href="#section-17" aria-label="Link to 收益率与司库经济性">#</a></h3>
+<p>收益率是高级司库最先提出的问题，也是大多数代币化存款新闻稿回避的问题。如果一家企业为等待结算环节，将5,000万美元在代币化存款钱包中停放48小时，那笔余额能否获得银行通常为隔夜存款支付的利率，还是无息？正在出现两种模式。一些银行将代币化存款在经济意义上视同基础存款——企业保留利率，银行将余额保留在账上，代币只是可编程性层。其他银行则将其视为不付息的交易浮动资金，因为假定资金正处于流动状态。第一种模式保留了既有的存款经济关系，是唯一能在现金管理层面规模化的设计。第二种本质上是一种闭环支付工具，余额将被任何采用第一种模式的竞争者拉走。这也正是&quot;代币化存款对稳定币&quot;不仅是监管问题、也是收益率经济问题的原因：在高利率环境下，不付息的支付代币相对于一笔付息的代币化存款，或一只与稳定币并行的收益型代币化货币市场基金，存在结构性劣势。</p>
+<h3 id="section-18">互操作性层 <a class="heading-anchor" href="#section-18" aria-label="Link to 互操作性层">#</a></h3>
+<p>单一银行的代币化存款有用但有限。多银行间的互操作性才是网络效应的起点。这需要在代币格式、消息传递、身份、结算最终性、争议处理、AML数据、钱包可移植性以及代币化存款、传统存款、稳定币、CBDC与代币化资产之间转换的标准。</p>
+<p>技术层面是碎片化的。许可制DLT的主流玩家包括R3 Corda（Standard Chartered等用于代币化存款）、Canton Network（HSBC用于跨网络结算试验，Goldman Sachs的GS DAP亦在使用）、Hyperledger Besu（Kinexys之下源自JPMorgan的Ethereum变体），以及HSBC Orion等专有堆栈。代币格式的选择同样未定：有些网络采用源自ERC-20的合约，以便与更广泛的Ethereum工具组合；另一些则采用IBC风格或Canton-native的代币原语。2026年的务实结论是：没有任何单一堆栈胜出，能够将代币化存款规模化的银行，将是构建互操作桥梁（Canton与Besu之间的原子结算协议，ISO 20022到链上消息格式的映射）的银行，而不是押注单一平台的银行。</p>
+<p>风险在于形成一系列银行专属的封闭花园。机遇则在于构建一个在保持银行信任的同时改进数字结算的可编程商业银行货币层。</p>
+<h2 id="section-19">故障模式：堆栈在何处崩裂 <a class="heading-anchor" href="#section-19" aria-label="Link to 故障模式：堆栈在何处崩裂">#</a></h2>
+<p>代币化存款大多以乐观笔调被书写。故障模式值得严肃对待，因为它们将塑造最终的监管边界。</p>
+<p><strong>存款代币上的智能合约漏洞。</strong> 存款代币智能合约的漏洞不是普通的软件事件；它可能成为商业银行货币之上的余额错误事件。银行需要经过形式验证的合约审计、不必迁移客户余额的升级路径，以及能够在不破坏与传统存款可兑换性的前提下暂停可编程结算的熔断开关。</p>
+<p><strong>跨司法管辖区的银行倒闭。</strong> 如果一家在五个司法管辖区发行代币化存款的银行倒闭，存款保险制度按国别适用，而账本是全球性的。处置当局尚未对此与存款人优先权、围栏规则，以及银行关闭瞬间谁实际拥有该代币等问题的相互作用进行过压力测试。单一司法管辖区的存款代币可规避该问题；多司法管辖区代币则暴露其中。</p>
+<p><strong>存款分化下的流动性危机。</strong> 传统存款和代币化存款在压力事件中可能表现迥异。如果代币化存款可以通过智能合约在24/7条件下迁出至非银行钱包，而传统存款须面对每日截止时间，则代币化一侧的流动会更快。这在正常情况下是特性，在挤兑中则是不稳定因素。流动性覆盖率与运营弹性框架并未针对这种不对称性进行设计。</p>
+<p><strong>对单一DLT供应商的运营依赖。</strong> 许多银行的存款代币平台运行在单一许可制DLT堆栈之上。已经适用于云的DORA式批评同样适用于此：在供应商一侧发生的堆栈故障，如今属于关键服务故障。缓解之策是多堆栈能力，而不仅仅是同一堆栈的多区域部署。</p>
+<p>以上没有一条是不去构建代币化存款的理由。它们是从第一天起就将该平台视为关键金融服务基础设施、而不是事后再补加管控的理由。</p>
+<h2 id="section-20">按银行类型的意义 <a class="heading-anchor" href="#section-20" aria-label="Link to 按银行类型的意义">#</a></h2>
+<h3 id="section-21">全球性银行 <a class="heading-anchor" href="#section-21" aria-label="Link to 全球性银行">#</a></h3>
+<p>全球性银行应将代币化存款视为交易银行基础设施。重点应放在企业钱包、跨境资金管理、数字资产结算、抵押品流动性以及为大客户提供的可编程管控。基准堆栈现已清晰可见：Kinexys式的生产规模（JPMorgan）、HSBC式的多轨广度、GS DAP式的证券结算整合，以及SG-FORGE式的存款代币+受监管稳定币双覆盖。今年的决策点在于：是否在竞争对手定义企业钱包用户体验之前，将多个内部DLT试验收敛到一个面向司库客户的统一代币化存款平台。<strong>行动项：</strong> 指定一位横跨交易银行、资本市场与数字资产部门并拥有权限的项目负责人——内部赞助的碎片化是这些堆栈最终只以试点形式出货而非作为产品交付的最常见原因。</p>
+<h3 id="section-22">英国银行 <a class="heading-anchor" href="#section-22" aria-label="Link to 英国银行">#</a></h3>
+<p>英国银行通过Great British Tokenised Deposits拥有可信的早期协同机会，并且这一多银行试点正被全球视作银行间代币化存款互操作性的模板加以关注。挑战在于：在稳定币网络成为默认国际接口之前，将试点转化为可互操作的标准。<strong>行动项：</strong> 在2026年将市场支付与再抵押贷款工作流强化至运营就绪状态（清晰的SLA、争议处理、制裁筛查整合），而不是无限期进行概念验证演示；试点的可信度取决于能否在2026年中期窗口关闭之前至少交付一个生产级用例。</p>
+<h3 id="section-23">中央银行与监管机构 <a class="heading-anchor" href="#section-23" aria-label="Link to 中央银行与监管机构">#</a></h3>
+<p>监管机构需要明确法律性质、存款保险处理、审慎资本、结算最终性、钱包托管、运营弹性，以及代币化存款如何与稳定币和CBDC交互。<strong>行动项：</strong> 就混合情形——以存款为支持的稳定币与银行发行的代币化存款在同一账本上运行——发布具体指引；因为这正是大多数银行正在收敛的结构，而现行监管文本读起来仿佛这两类资产从不会相遇。</p>
+<h3 id="section-24">企业 <a class="heading-anchor" href="#section-24" aria-label="Link to 企业">#</a></h3>
+<p>企业不应等待通用网络。它们应开始梳理可编程银行货币能够减少欺诈、结算延迟、对账工作或被冻结流动性的应用场景。<strong>行动项：</strong> 选择一条具体的资金流并以可衡量的KPI开展试点——跨境流动性调拨、日内抵押品流动性、代币化金边债券的DVP是三个最具信号价值的候选——并以失败模式问题为视角进行充分埋点（智能合约暂停时会发生什么；在压力情景下代币化一端相对传统一端如何表现）。</p>
+<h2 id="section-25">结论 <a class="heading-anchor" href="#section-25" aria-label="Link to 结论">#</a></h2>
+<p>2026年的代币化存款所处的阶段，与十年前的实时支付如出一辙：价值显而易见、实施参差不齐，并受制于网络协同。试点已上线，领先的银行堆栈（JPMorgan的Kinexys、HSBC的TDS + Orion、英国多银行计划）在各自的边界内已具生产级水准，监管类别正在固化（FDIC、BIS、HKMA），技术堆栈已不再是制约。剩下的是互操作性、法律最终性和收益率经济性——这三个问题业界可以解决，但前提是银行将2026–2027年视为标准设定的窗口期。风险不是代币化存款无法面市，而是它们以十二个互不兼容的封闭花园的形式面市。</p>
+<h2 id="section-26">常见问题 <a class="heading-anchor" href="#section-26" aria-label="Link to 常见问题">#</a></h2>
+<p><strong>代币化存款与稳定币相同吗？</strong></p>
+<p>不同。两者都提供可编程、24/7数字货币，但其法律与债权结构完全不同。稳定币是对私人发行方储备资产或法人结构的债权，运行在央行资产负债表之外（<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>）。代币化存款是商业银行的直接负债，承袭既有银行监管、AML/制裁管控以及存款保险边界（<a href="https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted" title="FDIC proposed rule">FDIC</a>）。</p>
+<p><strong>英国的主要应用场景是什么？</strong></p>
+<p>2026年中期的英国多银行试点（HSBC、Lloyds、NatWest、Barclays、Nationwide、Santander）聚焦三个实际场景：用于降低欺诈的个人间市场支付、用于再抵押贷款的多方工作流自动化，以及DVP（券款对付）数字资产结算——在UK Digital Gilt Instrument（DIGIT）试点中将代币化现金与代币化主权金边债券进行对应匹配（<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>）。</p>
+<p><strong>代币化存款会取代稳定币吗？</strong></p>
+<p>不太可能；二者是服务于不同边界的互补工具。稳定币将继续在开放DeFi生态、加密原生流动性池以及法币波动剧烈市场下的零售跨境储蓄中占据主导。代币化存款将在受监管边界——企业司库现金管理、机构交易结算、大规模交易银行——胜出，因为这些场景中存款保险、审慎资本处理与既有AML管控至关重要。</p>
+<p><strong>网络规模采纳的障碍是什么？</strong></p>
+<p>技术本身已具备。规模化受阻于三个非技术性摩擦点：<strong>互操作性</strong>（碎片化的DLT堆栈——Corda、Canton、Hyperledger Besu、HSBC Orion——目前各自为封闭花园）；<strong>法律最终性</strong>（关于法律冲突，以及如何调和DLT不可篡改性与银行在法院命令、制裁或操作失误下进行交易撤销之间的义务，缺乏全球性的监管协同）；以及<strong>收益率经济性</strong>（业界尚未就代币化企业钱包是否支付有竞争力的隔夜利率、还是表现为无息交易浮动资金达成共识）。</p>
+<p><strong>哪家银行拥有最为成熟的代币化存款堆栈？</strong></p>
+<p>王冠一分为二。JPMorgan在生产量上是无可争议的领先者，Kinexys by J.P. Morgan (formerly Onyx)每日处理约20亿美元的批发企业交易（<a href="https://www.jpmorgan.com/kinexys" title="Kinexys by JPMorgan">JPMorgan</a>）。HSBC则拥有结构上最为多样化的多轨堆栈：HSBC Tokenised Deposit Service已在香港、新加坡、英国、卢森堡和美国以USD/GBP/EUR/HKD/SGD运行；HSBC Orion被指定为UK Digital Gilt Instrument（DIGIT）试点的基础设施；HSBC Gold Token将已分配的实物金条代币化；并在Canton与Project Ensemble上试行跨网络原子结算，与Quantinuum合作部署了后量子加密安全（<a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" title="HSBC Tokenised Deposit Service">HSBC</a>）。英国多银行试点则是银行间互操作性最具可信度的实活测试。</p>
+<h2 id="section-27">参考文献 <a class="heading-anchor" href="#section-27" aria-label="Link to 参考文献">#</a></h2>
+<ul>
+<li>Lloyds Banking Group, (2026). <a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Digital assets in 2026: building the future of finance in the UK ⧉</a>.</li>
+<li>HSBC, (2026). <a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" title="HSBC Tokenised Deposit Service">HSBC Tokenised Deposit Service ⧉</a>.</li>
+<li>JPMorgan, (2026). <a href="https://www.jpmorgan.com/kinexys" title="Kinexys by JPMorgan">Kinexys (formerly Onyx) digital assets platform ⧉</a>.</li>
+<li>BIS, (2026). <a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">Stablecoins: framing the debate ⧉</a>.</li>
+<li>Deutsche Bank flow, (2026). <a href="https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs" title="Digital Money">Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉</a>.</li>
+<li>FDIC, (2026). <a href="https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted" title="FDIC proposed rule">GENIUS Act requirements and standards proposed rule ⧉</a>.</li>
+<li>Cambridge Centre for Alternative Finance, (2026). <a href="https://www.jbs.cam.ac.uk/wp-content/uploads/2026/02/2026-ccaf-tokenised-money-use-cases-interoperability-and-regulation.pdf" title="Tokenised money report">Tokenised money: Use cases, interoperability and regulation ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">最近审阅 <time datetime="2026-05-21">2026-05-21</time>.</p>
+
+<!-- enrich-end -->
+<aside class="author-card" aria-label="关于作者"><img alt="Sebastien Rousseau 肖像" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/zh-hans/guanyu/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">资深银行技术专家，撰写关于应用人工智能、ISO 20022 迁移、面向金融服务的后量子密码学，以及批发支付结构性转型的内容。</span><span class="author-credentials">20 多年经验，曾任职于汇丰商业及投资银行、PayPal、巴克莱、Shazam、AKQA、维珍集团。 <a href="/zh-hans/guanyu/index.html">完整简介</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">最近审阅 <time datetime="2026-05-21">2026-05-21</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">相关阅读</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/zh-hans/2026-05-16-2026-zuijia-yun-jichu-jiagou" class="related-media" aria-label="2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="2026-ai"><a href="https://sebastienrousseau.com/zh-hans/2026-05-16-2026-zuijia-yun-jichu-jiagou">2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图</a> <a class="heading-anchor" href="#2026-ai" aria-label="Link to 2026 年最佳云基础设施架构：金融服务的 AI 原生、多云、量子感知蓝图">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Sources & references</h2><ol class="article-sources-list"><li><a href="https://www.bis.org/speeches/sp260420.pdf" rel="external noopener nofollow"><span class="source-host">www.bis.org</span><span class="source-path">/speeches/sp260420.pdf</span></a></li><li><a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" rel="external noopener nofollow"><span class="source-host">www.business.hsbc.com</span><span class="source-path">/en-gb/products/tokenised-deposit-service</span></a></li><li><a href="https://www.jpmorgan.com/kinexys" rel="external noopener nofollow"><span class="source-host">www.jpmorgan.com</span><span class="source-path">/kinexys</span></a></li></ol></aside><nav class="post-pagination" aria-label="Article pagination"><a class="post-pagination-prev" href="/zh-hans/2026-05-20-cloud-native-banking-financial-institutions-2026/"><span class="post-pagination-label">Previous</span><span class="post-pagination-title">Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/zh-hans/guanyu/index.html">关于</a></li>
+              <li><a href="/zh-hans/lianxi/index.html">联系</a></li>
+              <li><a href="/zh-hans/yong-static-site-generator-zhizuo/index.html">使用 Static Site Generator 构建</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">文章</h2>
+            <ul>
+              <li><a href="/zh-hans/wenzhang/index.html">文章</a></li>
+              <li><a href="/zh-hans/lunwen/index.html">论文与白皮书</a></li>
+              <li><a href="/zh-hans/biaoqian/index.html">标签</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">工作</h2>
+            <ul>
+              <li><a href="/zh-hans/xiangmu/index.html">项目</a></li>
+              <li><a href="/zh-hans/boqing/index.html">播放列表</a></li>
+              <li><a href="/zh-hans/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">联系</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="通讯订阅">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — 关于支付、人工智能与后量子密码学的研究笔记。无垃圾邮件。</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="nin@yinhang.com" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">订阅</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="社交链接">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau 于 Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau 于 LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau 于 Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau 于 YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau 于 YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/zh-hans/wuzhang-ai/index.html">无障碍访问</a> ·
+            <a href="/zh-hans/yinsi/index.html">隐私</a> ·
+            <a href="/zh-hans/tiaokuan/index.html">条款</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"zh-hans"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"zh-hans"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":439,"headline":"Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money","description":"Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp","width":"100vw","height":"100vh","caption":"Tokenised deposit banking architecture for 2026 showing commercial bank money, digital wallets, stablecoins, CBDCs, tokenised gilts, and Project Agorá settlement paths"},"url":"https://sebastienrousseau.com/zh-hans/2026-05-21-tokenised-deposits-banking-services-status-2026/","datePublished":"2026-05-21T06:06:06+00:00","dateModified":"2026-05-21","inLanguage":"zh-hans","keywords":"tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercial bank money, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, digital wallets, tokenised gilts","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/zh-hans/2026-05-21-tokenised-deposits-banking-services-status-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"zh-hans"},"citation":[{"@type":"CreativeWork","url":"https://www.bis.org/speeches/sp260420.pdf"},{"@type":"CreativeWork","url":"https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service"},{"@type":"CreativeWork","url":"https://www.jpmorgan.com/kinexys"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/zh-hans/"},{"@type":"ListItem","position":3,"name":"Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money","item":"https://sebastienrousseau.com/zh-hans/2026-05-21-tokenised-deposits-banking-services-status-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="搜索">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>搜索</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="搜索">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="搜索文档…" autocomplete="off" aria-label="搜索"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> 关闭</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> 导航</span><span><kbd>Enter</kbd> 打开</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money","url":"https://sebastienrousseau.com/zh-hans/2026-05-21-tokenised-deposits-banking-services-status-2026/","inLanguage":"zh-Hans","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercial bank money, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, digital wallets, tokenised gilts","dependencies":["Stablecoin"]}</script></body>
+</html>

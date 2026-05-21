@@ -1,12 +1,12 @@
 {
-  "banner": "https://cloudcdn.pro/stocks/images/lucy-besson.webp",
+  "banner_alt": "Lucy Besson の肖像",
   "locale": "ja_JP",
-  "language": "ja-JP",
   "date": "May 11, 2026",
-  "description": "Lucy Besson と、AI と量子計算における知識移転、メンタリング、新世代の銀行テクノロジストの構築の重要性について。",
-  "keywords": "Lucy Besson, 知識移転, AI, 量子計算, メンタリング, 銀行テクノロジー, 多様性",
-  "title": "Lucy Besson:AI と量子の知識移転",
   "subtitle": "知識移転、メンタリング、若い世代のテクノロジスト",
+  "keywords": "Lucy Besson, 知識移転, AI, 量子計算, メンタリング, 銀行テクノロジー, 多様性",
+  "description": "Lucy Besson と、AI と量子計算における知識移転、メンタリング、新世代の銀行テクノロジストの構築の重要性について。",
+  "language": "ja-JP",
+  "title": "Lucy Besson:AI と量子の知識移転",
   "last_reviewed": "2026-05-11",
-  "banner_alt": "Lucy Besson の肖像"
+  "banner": "https://cloudcdn.pro/stocks/images/lucy-besson.webp"
 }

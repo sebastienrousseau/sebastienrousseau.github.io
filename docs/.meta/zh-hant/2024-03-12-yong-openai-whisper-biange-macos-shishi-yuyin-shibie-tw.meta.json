@@ -1,11 +1,11 @@
 {
   "date": "March 12, 2024",
-  "description": "OpenAI Whisper 與 Metal Performance Shaders（MPS）的整合帶來 macOS 上低延遲、高精度的實時語音識別。",
   "locale": "zh_TW",
-  "title": "用 OpenAI Whisper 變革 macOS 實時語音識別",
-  "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
   "keywords": "OpenAI Whisper, ASR, 語音識別, Metal Performance Shaders, MPS, macOS, GPU, 實時, 隱私, 裝置端",
+  "title": "用 OpenAI Whisper 變革 macOS 實時語音識別",
   "subtitle": "macOS 上的 OpenAI Whisper 與 Metal Performance Shaders 整合——快速實時語音識別新方法",
   "banner_alt": "實時自動語音識別（ASR）橫幅",
-  "language": "zh-Hant"
+  "banner": "https://cloudcdn.pro/stocks/images/research-paper.webp",
+  "language": "zh-Hant",
+  "description": "OpenAI Whisper 與 Metal Performance Shaders（MPS）的整合帶來 macOS 上低延遲、高精度的實時語音識別。"
 }
