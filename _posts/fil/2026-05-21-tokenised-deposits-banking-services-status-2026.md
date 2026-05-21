@@ -93,10 +93,13 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Ang tokenized deposit services sa 2026 ay lumilipat mula sa research patungo sa bank pilots at early client propositions. Ang status ay pre-scale pa rin, ngunit malinaw ang direksyon: ang pera ng komersyal na bangko ay ina-adapt para sa programmable settlement, digital wallets, stablecoin interoperability, at tokenized capital markets.</p>
 <p class="post-lead-heading"><strong>Mga pangunahing punto</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>Bakit Mahalaga Ngayon ang Tokenized Deposits.</strong> Inilantad ng stablecoins ang demand para sa programmable, always-on digital money.</li>
-  <li><strong>Ang 2026 Status: Pilot-to-Product, Hindi Pa Network Scale.</strong> Tinukoy ng Lloyds ang Great British Tokenised Deposits bilang isang industry initiative at nagbigay ng tatlong konkretong use cases: person-to-person marketplace payments, remortgaging, at digital asset settlement (Lloyds Banking Group).</li>
-  <li><strong>Tokenized Deposits vs Stablecoins vs CBDCs.</strong> Dapat malinaw ang legal claim.</li>
-  <li><strong>Ano ang Kailangang Itayo ng mga Bangko.</strong> Dapat malinaw ang legal claim.</li>
+  <li><strong>Market status.</strong> Pre-scale pa rin ang tokenized deposits sa 2026 ngunit hindi na ito teoretikal: live na ang pilots, nabubuo na ang bank propositions, at tatakbo ang UK multi-bank programme hanggang gitna ng 2026 kasama ang HSBC, NatWest, Lloyds, Barclays, Nationwide, at Santander na sumusubok ng marketplace payments, remortgaging, at digital-asset settlement (Lloyds Banking Group).</li>
+  <li><strong>Competitive pressure.</strong> Malaki at lumalago ang stablecoins (tinatantya ng BIS ang market cap sa humigit-kumulang $315 billion noong unang bahagi ng Abril 2026, mga 98% sa USD) at pinabibilis nito ang deposit-token timetable. Nanalo sila sa open-ecosystem reach, crypto-native liquidity, at global retail; nananalo ang tokenized deposits sa regulatory comfort, deposit insurance, at treasury workflow (BIS).</li>
+  <li><strong>Regulatory boundaries.</strong> Ang 2026 proposal ng FDIC ay nag-uuri sa tokenized deposits bilang deposit liabilities na naitatala sa DLT at malinaw na pinaghihiwalay sila mula sa payment stablecoins, na nagpapatibay sa US perimeter (FDIC).</li>
+  <li><strong>Leading bank programmes.</strong> Pinangangasiwaan ng JPM Coin ng JPMorgan sa Kinexys ang humigit-kumulang $2 billion sa pang-araw-araw na wholesale settlement at siyang pinakamahabang live deposit-token track record. May pinakakumpletong multi-track stack ang HSBC: TDS sa HK, SG, UK, LU, US sa USD/GBP/EUR/HKD/SGD; sinusuportahan ng HSBC Orion ang UK Digital Gilt Instrument (DIGIT) pilot; ti-tokenize ng HSBC Gold Token ang inilaang bullion; sinubukan ang cross-network atomic settlement sa Canton + Project Ensemble; ipinatupad ang PQC kasama ang Quantinuum (HSBC).</li>
+  <li><strong>Mga design choice na nagdedesisyon ng lahat.</strong> Tatlong ledger-and-legal patterns ang nangingibabaw: ang token *ay* ang deposit (pinakamalinis na atomic settlement, pinakamahirap na uptime), ang token *ay kumakatawan* sa isang conventional deposit (mas simple sa legal, may reconciliation overhead, ang JPM Coin at HSBC TDS ay katulad nito), o ang token ay isang *instruction layer* sa ibabaw ng conventional rails (pinakamahinang programmability claim).</li>
+  <li><strong>Mahalaga ang yield economics tulad din ng regulasyon.</strong> Kung kumikita ba ang tokenized deposits ng parehong interest gaya ng underlying deposit ay treasury-grade na tanong. Mag-iiscale ang mga design na pinapanatili ang deposit economics para sa cash management; mawawala sa mga corporate balances ang non-yield-bearing payment-only tokens sa anumang competitor na nagbabayad.</li>
+  <li><strong>Ang binding constraints ay interoperability at legal finality.</strong> Conflict-of-laws sa mga hurisdiksyon, ang mismatch sa pagitan ng DLT immutability at legal reversibility, at fragmented platforms (Corda, Canton, Besu, Orion, ERC-20 vs Canton-native token formats) ang siyang binding constraints ngayon — hindi ang teknolohiya mismo.</li>
 </ul>
 <p class="post-lead-related"><strong>Kaugnay na babasahin:</strong> <a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026">Ang Pinakamagaling na Cloud Infrastructure Architecture sa 2026: Isang AI-Native, Multi-Cloud, Quantum-Aware Blueprint para sa Financial Services</a>.</p>
 </aside>
@@ -108,14 +111,13 @@ Ang tokenized deposits ay nagiging pinakamahalagang sagot ng banking sector sa s
 
 > **Executive Summary / Mga Pangunahing Punto**
 >
-> - **Pre-scale pa rin ang tokenized deposits, ngunit hindi na ito teoretikal.** Inilalarawan ng Lloyds ang mga pilot project na gumagamit ng tokenized deposits para mag-settle ng trades sa tokenized gilts at ang industry work sa Great British Tokenised Deposits ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
-> - **Konkreto ang UK use cases.** Kasama sa Great British Tokenised Deposits use cases ang marketplace payments, remortgaging, at digital asset settlement ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
-> - **Itinutulak pabalik ng BIS ang debate patungo sa two-tier monetary system.** Iginigiit ng BIS na ang central bank money ang anchor ng trust at ang stablecoins ay hindi nagse-settle sa central bank balance sheet sa paraang ginagawa ng bank payments ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
-> - **Nananatiling competitive pressure ang stablecoins.** Tinatantya ng BIS ang global stablecoin market capitalisation sa humigit-kumulang $315 billion noong unang bahagi ng Abril 2026, na may mga 98% denominated sa US dollars ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
-> - **Iniposisyon ng Deutsche Bank ang tokenized deposits bilang programmable na pera ng komersyal na bangko.** Iniposisyon ng kanilang 2026 digital money paper ang tokenized deposits bilang extension ng existing banking model patungo sa programmable environments ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
-> - **Gumagawa ng category boundaries ang regulasyon.** Tinatalakay ng 2026 proposal ng FDIC ang tokenized deposits at deposit tokens bilang deposit liabilities na naitatala gamit ang distributed ledger technology at nililinaw na ang tokenized deposits ay hindi payment stablecoins ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
-> - **May pinaka-developed na bank programme ang HSBC sa 2026.** Operational ang HSBC Tokenised Deposit Service sa Hong Kong, Singapore, United Kingdom, Luxembourg, at United States sa USD, GBP, EUR, HKD, at SGD; itinalaga ang HSBC Orion bilang infrastructure para sa pilot ng UK Digital Gilt Instrument (DIGIT); ti-tokenize ng HSBC Gold Token ang inilaang pisikal na ginto; at sinubukan ng HSBC ang cross-network atomic settlement sa Canton at Project Ensemble, gayundin ang quantum-safe security kasama ang Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
-> - **Ang praktikal na status ay pilot-to-product.** Nagtatayo ang mga bangko ng wallets, settlement workflows, at institutional use cases, ngunit nananatiling bukas ang interoperability, legal finality, liquidity treatment, at network standards.
+> - **Market status.** Pre-scale pa rin ang tokenized deposits sa 2026 ngunit hindi na ito teoretikal: live na ang pilots, nabubuo na ang bank propositions, at tatakbo ang UK multi-bank programme hanggang gitna ng 2026 kasama ang HSBC, NatWest, Lloyds, Barclays, Nationwide, at Santander na sumusubok ng marketplace payments, remortgaging, at digital-asset settlement ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
+> - **Competitive pressure.** Malaki at lumalago ang stablecoins (tinatantya ng BIS ang market cap sa humigit-kumulang $315 billion noong unang bahagi ng Abril 2026, mga 98% sa USD) at pinabibilis nito ang deposit-token timetable. Nanalo ang stablecoins sa open-ecosystem reach, crypto-native liquidity, at global retail; nananalo ang tokenized deposits sa regulatory comfort, deposit insurance, at treasury workflow ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+> - **Regulatory boundaries.** Ang 2026 proposal ng FDIC ay nag-uuri sa tokenized deposits bilang deposit liabilities na naitatala sa DLT at malinaw na pinaghihiwalay sila mula sa payment stablecoins, na nagpapatibay sa US perimeter ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+> - **Leading bank programmes.** Pinangangasiwaan ng JPM Coin ng JPMorgan sa Kinexys ang humigit-kumulang $2 billion sa pang-araw-araw na wholesale settlement at siyang pinakamahabang live deposit-token track record. May pinakakumpletong multi-track stack ang HSBC: TDS sa HK, SG, UK, LU, US sa USD/GBP/EUR/HKD/SGD; sinusuportahan ng HSBC Orion ang UK Digital Gilt Instrument (DIGIT) pilot; ti-tokenize ng HSBC Gold Token ang inilaang bullion; sinubukan ang cross-network atomic settlement sa Canton + Project Ensemble; ipinatupad ang PQC kasama ang Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+> - **Mga design choice na nagdedesisyon ng lahat.** Tatlong ledger-and-legal patterns ang nangingibabaw: ang token *ay* ang deposit (pinakamalinis na atomic settlement, pinakamahirap na uptime), ang token *ay kumakatawan* sa isang conventional deposit (mas simple sa legal, may reconciliation overhead, ang JPM Coin at HSBC TDS ay katulad nito), o ang token ay isang *instruction layer* sa ibabaw ng conventional rails (pinakamahinang programmability claim).
+> - **Mahalaga ang yield economics tulad din ng regulasyon.** Kung kumikita ba ang tokenized deposits ng parehong interest gaya ng underlying deposit ay treasury-grade na tanong. Mag-iiscale ang mga design na pinapanatili ang deposit economics para sa cash management; mawawala sa mga corporate balances ang non-yield-bearing payment-only tokens sa anumang competitor na nagbabayad.
+> - **Ang binding constraints ay interoperability at legal finality.** Conflict-of-laws sa mga hurisdiksyon, ang mismatch sa pagitan ng DLT immutability at legal reversibility, at fragmented platforms (Corda, Canton, Besu, Orion, ERC-20 vs Canton-native token formats) ang siyang binding constraints ngayon — hindi ang teknolohiya mismo.
 >
 ---
 
@@ -130,6 +132,8 @@ Mahalaga ang distinction na ito. Ang stablecoin ay karaniwang claim sa isang iss
 ### 1. Tinutukoy ng UK Bank Pilots ang Praktikal na Use Cases
 
 Tinukoy ng Lloyds ang Great British Tokenised Deposits bilang isang industry initiative at nagbibigay ng tatlong konkretong use cases: person-to-person marketplace payments, remortgaging, at digital asset settlement ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")). Makabuluhan ang mga ito bilang early tests dahil pinagsasama nila ang money movement sa trust, timing, at conditional settlement.
+
+Ang UK multi-bank pilot ay tunay na multi-bank. Ang listahan ng mga kalahok — HSBC, NatWest, Lloyds, Barclays, Nationwide, at Santander — ay sumasaklaw sa karamihan ng UK retail at commercial deposit balances, at tatakbo ang programme hanggang gitna ng 2026. Mahalaga ito dahil ang tokenized deposits na walang inter-bank interoperability ay mga feature lamang ng produkto ng isang bangko; ang UK pilot ay isa sa iilang live experiments sa buong mundo na talagang sumusubok sa cross-bank case.
 
 Sinusubok ng marketplace payments ang fraud reduction at seller confidence. Sinusubok ng remortgaging ang multi-party process automation. Sinusubok ng digital asset settlement ang delivery-versus-payment sa pagitan ng tokenized money at tokenized instruments.
 
@@ -151,37 +155,55 @@ Iniposisyon ng BIS ang Project Agorá bilang work kasama ang central banks at pr
 
 Dito nagiging wholesale infrastructure ang tokenized deposits. Ang pangunahing tanong ay paano magse-settle nang magkasama ang pera ng komersyal na bangko, central bank money, at tokenized assets nang hindi naaapektuhan ang legal finality, liquidity controls, o monetary singleness.
 
-## Ang Tokenisation Stack ng HSBC: Ang Pinaka-Developed na Bank Programme sa 2026
+## Ang Pinaka-Developed na Bank Programmes sa 2026
 
-Sa mga global Tier-1 banks, binuo ng HSBC ang pinakakumpletong tokenized-deposit at digital-asset stack na nasa production ngayon. Tahasang inilalagay ng HSBC ang tokenized deposit bilang piling instrumento nito para mag-bridge sa pagitan ng tradisyonal na banking at decentralized infrastructure, na nauuna sa mga unbacked stablecoin o third-party digital currencies ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+May tatlong programme na karapat-dapat na i-profile nang hiwalay: JPMorgan, na nagsimula ng wholesale deposit-token category at nagpapatakbo nito sa production scale; HSBC, na may pinakakumpletong multi-track stack sa deposit tokens, securities, real-world assets, at cryptography; at isang grupo ng European at Asian programmes na hindi gaanong pampubliko ngunit aktwal na aktibo. Ang pagtrato sa tokenized deposits bilang isang industry move ay hindi makikita ang katunayan na ang mga stack na ito ay gumagawa ng iba't ibang pusta tungkol sa kung ano ang dapat na hitsura ng digital-money offering ng isang bangko.
 
-### Tokenised Deposit Service (TDS)
+### JPMorgan: JPM Coin, Onyx, at ang Kinexys Platform
+
+Inilunsad ng JPMorgan ang JPM Coin noong 2019, apat na taon bago gumamit ang karamihan ng industriya ng pariralang "tokenized deposit" sa publiko. Tumatakbo ito sa Onyx (ngayon ay rebranded bilang Kinexys), permissioned blockchain platform ng JPMorgan, at nag-se-settle ito ng wholesale corporate-client flows — pangunahin ang institutional treasury sweeps, intra-day liquidity moves, at lalong maraming tokenized repo. Pagsapit ng 2026, pinangangasiwaan ng Kinexys ang humigit-kumulang $2 billion bawat araw sa wholesale transactions, na ginagawa ang JPMorgan na pinakamalaking single live operator ng deposit-token settlement sa mundo.
+
+Mahalaga ang kasaysayang iyon sa dalawang dahilan. Una, ang JPMorgan ay may pinakamahabang production track record sa mga operational questions — reconciliation, dispute handling, intra-day liquidity behaviour, at outage modes — na sinasaliksik pa ng iba pang bangko. Pangalawa, multi-asset ang platform: lumawak ang Kinexys lampas sa deposit token patungong tokenized repo, FX settlement, at collateral mobility, na nagbibigay-posisyon sa JPMorgan na maghatid ng delivery-versus-payment sa isang single ledger sa halip na sa pamamagitan ng point-to-point integrations.
+
+Ang kabilang panig ay ang JPM Coin, sa pamamagitan ng disenyo, ay isang closed-network proposition. Nagse-settle ito sa JPMorgan rails, sa pagitan ng JPMorgan clients, sa isang JPMorgan-operated chain. Ito ang pinakamakapangyarihang halimbawa sa industriya kung paano makakapag-scale ang single-bank tokenized deposit — at ang pinakamakapangyarihang ilustrasyon ng BIS critique na kung walang interoperability, ang deposit tokens ay magiging walled gardens sa halip na wholesale infrastructure.
+
+### HSBC: Multi-Track Stack mula Deposit Token hanggang Tokenized Gold
+
+Mas malawak ang pusta ng HSBC. Habang nag-deep dive ang JPMorgan sa isang wholesale use case, nagtayo ang HSBC sa deposit tokens, institutional securities, real-world assets, at cryptography nang parallel. Tahasang inilalagay ng HSBC ang tokenized deposit bilang piling instrumento nito para mag-bridge sa pagitan ng tradisyonal na banking at decentralized infrastructure, na nauuna sa mga unbacked stablecoin o third-party digital currencies ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+
+#### Tokenised Deposit Service (TDS)
 
 Kino-convert ng HSBC Tokenised Deposit Service ang mga corporate fiat balance bilang digital tokens sa 1:1 na ratio, na pinapanatili ang pondo nang lubos na regulado at nasa balance sheet ng bangko ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). Operational ang TDS sa limang hurisdiksyon — Hong Kong, Singapore, United Kingdom, Luxembourg, at United States — at sumusuporta sa instant transactions sa limang pera: USD, GBP, EUR, HKD, at SGD. Ang core function ay treasury-grade: nakakakwarta at nakakapag-settle nang cross-border ang malalaking corporate at institutional clients sa loob ng ilang segundo, na inaalis ang SWIFT cut-off times, batch windows, at time-zone barriers sa pamamagitan ng 24/7 smart-contract programmability.
 
 Ang product set na iyon ang pinakamalakas na counter-example sa pananaw na "teoretikal pa ang tokenized deposits". Teoretikal pa rin sila sa network scale; hindi sila teoretikal sa loob ng HSBC.
 
-### HSBC Orion at Digital Capital Markets
+#### HSBC Orion at Digital Capital Markets
 
 Ang HSBC Orion ay proprietary institutional DLT platform ng bangko para sa pag-issue, settlement, at custody ng tokenized securities. Itinalaga ng HM Treasury ang HSBC Orion upang magbigay ng underlying platform infrastructure para sa landmark Digital Gilt Instrument (DIGIT) pilot ng UK — ang sovereign-grade reference case para sa tokenized public debt sa UK. Sinuportahan din ng HSBC Orion ang at-scale digital-bond issuances para sa Pamahalaan ng Hong Kong at European Investment Bank, kabilang ang green at sovereign tranches.
 
 Para sa tokenized deposits, mahalaga ito dahil ang settlement parity sa pagitan ng deposit tokens at tokenized securities ay precondition para sa delivery-versus-payment sa isang shared ledger. Ang deposit token na walang institutional securities issuance platform ay walang ma-settle laban dito.
 
-### Real-World Asset Tokenisation: ang HSBC Gold Token
+#### Real-World Asset Tokenisation: ang HSBC Gold Token
 
 Pinalawak ng HSBC ang parehong anchor model sa mga pisikal na asset sa retail tier. Pinapayagan ng HSBC Gold Token ang mga gumagamit ng HSBC HK mobile app na bumili ng fractional ownership ng pisikal na ginto, na may institutional access sa UK. Bawat token ay 100% na sinusuportahan ng inilaang pisikal na bullion na nakatago sa loob ng institutional vaults ng HSBC — ang parehong regulatory at operational anchor pattern na ginagamit ng bangko sa kanilang deposit tokens.
 
-### Network Interoperability at Quantum-Safe Tokenisation
+#### Network Interoperability at Quantum-Safe Tokenisation
 
 Sinubukan ng HSBC ang atomic settlement ng kanilang tokenized deposits sa mga external network gamit ang Canton Network at ang Project Ensemble ng Hong Kong Monetary Authority. Ito ang interoperability piece na hinihingi ng BIS-style critique sa mga single-bank token: nagiging wholesale infrastructure ang tokenized deposits kapag makakapag-settle sila sa mga network, hindi lang sa loob ng isang bangko.
 
 Kasabay nito, nakipagtulungan ang HSBC sa Quantinuum upang ipatupad ang post-quantum cryptographic security nang direkta sa kanilang tokenized-gold ledger — isang defensive na tugon sa "Store Now, Decrypt Later" (SNDL) attacks kung saan ina-aani ng mga adversary ang naka-encrypt na ledger data ngayon sa pag-asang madi-decrypt ito ng future quantum machines. Hindi pa industry-standard ang post-quantum cryptography sa isang production token ledger; isa ang HSBC sa iilang bangko na itinuturing itong table stakes para sa anumang tokenized platform na inaasahang lalampas sa mga PQC migration deadline.
 
-### Regulated Stablecoins Kasama ng Deposit Tokens
+#### Regulated Stablecoins Kasama ng Deposit Tokens
 
 Hindi tuluyang binalewala ng HSBC ang stablecoin track. Nakakuha ang bangko ng HKMA licence upang mag-pilot ng regulated stablecoins para sa peer-to-peer at investment-transaction settlement — ngunit bilang suplemento sa tokenized-deposit core, hindi bilang kapalit. Pare-pareho ang strategic message sa buong stack ng HSBC: ang tokenized deposits ang nagsisilbing anchor ng digital money offering ng bangko; pinapalawak ng regulated stablecoins ang abot sa mga use case kung saan struktural na awkward ang deposit-token claim.
 
+### Iba Pang Active Programmes
+
+Bukod sa JPMorgan at HSBC, may ilang programme na materyal sa network picture kahit na manipis ang kanilang public disclosures. Ang SG-FORGE ng Société Générale ay nag-isyu ng euro-denominated digital bonds at isang regulated euro stablecoin kasabay ng kanilang deposit-token work, na naglalagay sa Société Générale sa unusual na posisyon na nagpapatakbo ng dalawang track sa ilalim ng European regulation. Aktibong nag-uunlad ang Standard Chartered sa tokenized deposits at sa tokenized real-world assets sa pamamagitan ng Zodia Custody at sa sarili nitong Singapore-based pilots. Ang GS DAP platform ng Goldman Sachs ay nag-isyu ng digital bonds at sumusuporta sa tokenized collateral. Ang mas malawak na implikasyon ay tahasan: ang deposit-token capability ay ngayon ay basic requirement para sa anumang global wholesale bank na umaasang manatiling competitive sa transaction banking, at ang mas kawili-wiling tanong ay sino ang nag-interoperate sa sino sa halip na sino ang naunang nagtayo.
+
 ## Tokenized Deposits vs Stablecoins vs CBDCs
+
+Tatlong instrumento ang nakikipagkumpetensya para sa parehong tungkulin — programmable, settlement-grade digital money — ngunit sila ay nakaupo sa fundamentally na magkakaibang claim structures. Ang pagpili ng claim ay nagdedesisyon sa lahat ng iba pa: legal protection, prudential treatment, kung saan nagse-settle ang asset, at kung aling network ang implicitly na pinagtitiwalaan ng holder. Pinagsasama ng table sa ibaba ang apat na kandidato sa limang axes, at saka ipinapaliwanag ng prose sa ilalim kung saan talaga nananalo ang bawat isa.
 
 | Instrumento | Uri ng Claim | Pinakamainam na Gamit | 2026 Status | Pangunahing Risk |
 |---|---|---|---|---|
@@ -190,13 +212,25 @@ Hindi tuluyang binalewala ng HSBC ang stablecoin track. Nakakuha ang bangko ng H
 | **Wholesale CBDC** | Central bank money | Interbank settlement at tokenized market infrastructure | Aktibong exploration sa pamamagitan ng central bank projects | Design, privacy, scalability, political mandate |
 | **Retail CBDC** | Central bank money para sa public use | Public digital cash alternative | Magkakahalo ang global progress | Adoption, privacy, banking disintermediation |
 
+### Saan Nananalo ang Tokenized Deposits
+
+Ang on-balance-sheet commercial bank money ay may dalang regulatory comfort na kailangan pang mapagtagumpayan ng stablecoins. Minamana ng tokenized deposits ang deposit insurance, prudential capital treatment, at existing AML/sanctions controls. Para sa isang corporate treasurer, ibig sabihin nito ay walang bagong counterparty risk at walang bagong reserve audit na sususuriin. On-ramp din sila mula sa bank account na mayroon na ang corporate — walang exchange, walang reserve issuer, walang custody novelty. Pareho itong binibigyang-diin ng BIS at FDIC: pinapanatili ang singleness of money kapag ang claim ay nakaupo kung saan naiintindihan na ng existing legal framework ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate"); [FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+
+### Saan Patuloy na Nananalo ang Stablecoins
+
+Tatlong lugar. Una, open ecosystem reach: nakikipag-ugnayan ang stablecoins sa DeFi, sa crypto-native treasuries, at sa long tail ng wallets na hindi mag-iintegrate ng bank API. Pangalawa, global retail distribution: ang dollar-denominated stablecoins ay de facto savings instrument na sa mga market kung saan mahina ang local-currency banking. Pangatlo, 24/7 markets at crypto settlement: kahit may TDS-style na always-on bank rails, ang stablecoins pa rin ang native unit of account para sa crypto liquidity at mananatiling gayon sa nakikinikinitang hinaharap. Ang dalawang instrumento ay hindi mga substitute na strict; ang competitive boundary ay nakapokus sa kung ang use case ay nasa loob o labas ng regulated banking perimeter.
+
 ## Ano ang Kailangang Itayo ng mga Bangko
 
 ### Ledger at Legal Architecture
 
-Dapat malinaw ang legal claim. Ang token ba ay deposit mismo, representation ng deposit, o instruction layer sa ibabaw ng off-chain deposit account? Tinatalakay nang tahasan ng 2026 proposed rule ng FDIC ang tokenized deposits bilang deposit liabilities na naitatala gamit ang distributed ledger technology at ipinapakita ang pagkakaiba nito sa payment stablecoins ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+Tatlong design patterns ang nangingibabaw sa live deployments. Ang una ay "ang token AY ang deposit" — ang DLT ledger mismo ang system of record, at ang on-chain balance ay nagdadala ng legal claim. Ito ang pinakamalinis na model para sa atomic settlement at pinakamalapit sa kung ano ang inaakala ng Project Agorá at unified-ledger proposals, ngunit pinipilit nito ang bangko na tratuhin ang ledger uptime bilang core banking uptime. Ang pangalawa ay "kumakatawan ang token sa deposit" — nananatiling legal record ang conventional core-banking account, at ang token ay isang salamin na sumusunod dito. Mas malapit dito ang JPM Coin at HSBC TDS. Mas simple legally at operationally ngunit nangangailangan ng patuloy na reconciliation, at nagiging mas mahirap ang atomic DvP dahil ang legally binding leg ay nasa labas ng ledger. Ang pangatlo ay "ang token bilang instruction layer" — hindi kailanman kumakatawan ang token sa deposit; tini-trigger lamang nito ang isang conventional payment sa ibabaw ng existing rails (CHAPS, Fedwire, TARGET2). Ito ang pinakamadaling i-deploy ngunit pinakamahinang claim sa aktwal na programmable money; ito ang ipinapadala ng ilang bangko at tinatawag na tokenized deposit kapag sila ay may smart-contract front end sa isang SWIFT pipe.
 
-Kailangan ng mga bangko ang kalinawan na iyon bago makapag-move ang customer money sa scale.
+Kinikilala nang tahasan ng 2026 proposed rule ng FDIC ang unang dalawa bilang deposit liabilities na naitatala gamit ang distributed ledger technology at pinaghihiwalay sila mula sa payment stablecoins ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")). Ang pangatlo ay nakakakuha ng mas mahigpit na regulatory treatment dahil hindi nagtatagpo ang deposit relationship at ang token.
+
+#### Bakit Mahirap ang Problema ng Legal Finality
+
+Ang "legal finality" ang pinakamadalas na lumalabas na pariralang nasa tokenized-deposit roadmaps at pinakahindi nasusuri. Tatlong bagay talaga ang nakaupo sa ilalim nito. Una, conflict of laws: kapag ang tokenized deposit na inilabas ng isang UK bank ay nagse-settle nang atomically laban sa isang tokenized security na nakarehistro sa Luxembourg sa pamamagitan ng node na nasa Singapore, alin ang settlement-finality regime ng hurisdiksyon ang namamahala sa trade? Pangalawa, ang mismatch sa pagitan ng DLT immutability at legal na karapatang i-reverse: maaaring i-unwind ang bank payments sa ilalim ng court order, sanctions designation, o operational error; ang isang immutable ledger ay hindi maaari, na pumipilit sa isang "reversal layer" na kailangang robust legally nang hindi binabasag ang immutability narrative. Pangatlo, ang on-chain finality question mismo: ang isang nakumpirmang block ba ay binibilang bilang legal settlement, o tanging ang katumbas na off-chain accounting entry? Hanggang ang tatlong iyon ay hindi nareresolba sa regulatory level — hindi lang bilaterally sa pagitan ng mga participating banks — ang cross-network atomic settlement ay isang pilot, hindi infrastructure.
 
 ### Wallet at Identity Controls
 
@@ -204,11 +238,31 @@ Kailangan ng corporate wallets ang strong identity, segregation of duties, trans
 
 Ang pinakamahalagang operational feature ay maaaring policy. Dapat maaaring tukuyin ng treasurer kung sino ang makakapag-initiate, mag-aapprove, mag-se-settle, mag-re-reverse, o makakadispute sa pagkilos ng tokenized deposit sa ilalim ng partikular na thresholds at counterparty rules.
 
+### Yield at Treasury Economics
+
+Ang yield ang tanong na unang itinatanong ng senior treasurers at iniiwasan ng karamihan ng tokenized-deposit press releases. Kung ang isang corporate ay nag-park ng $50 million sa isang tokenized deposit wallet sa loob ng 48 oras na naghihintay ng settlement leg, kumikita ba ang balance na iyon ng parehong interest na ibinabayad ng bangko sa isang conventional overnight deposit, o sterile? May dalawang pattern na lumilitaw. Itinuturing ng ilang bangko ang tokenized deposit bilang economically identical sa underlying deposit — pinapanatili ng corporate ang rate niya, pinapanatili ng bangko ang balance sa kanyang libro, at ang token ay isang programmability layer. Tinatratuhang ng iba bilang transactional float na walang ibinabayad na interest dahil ipinapalagay na nasa galaw ang pera. Pinapanatili ng unang pattern ang existing deposit-economics relationship at siya lamang ang design na nag-iscale para sa cash management. Ang pangalawa ay esensyal na closed-loop payment instrument at mawawala ang corporate balances sa anumang competitor na nag-aalok ng unang pattern. Ito rin ang dahilan kung bakit "ang tokenized deposits laban sa stablecoins" ay bahagyang yield-economics na tanong, hindi lamang regulatory: sa isang mas mataas na rate environment, ang isang non-yield-bearing payment token ay may structural disadvantage laban sa alinman sa isang interest-paying tokenized deposit o isang yield-tokenized money-market fund na tumatakbo katabi ng isang stablecoin.
+
 ### Interoperability Layer
 
 Kapaki-pakinabang ngunit limitado ang single-bank tokenized deposit. Dito nagsisimula ang network effects sa multi-bank interoperability. Nangangailangan ito ng standards para sa token format, messaging, identity, settlement finality, dispute handling, AML data, wallet portability, at conversion sa pagitan ng tokenized deposits, conventional deposits, stablecoins, CBDCs, at tokenized assets.
 
+Fragmented ang technical surface. Kasama sa permissioned-DLT incumbents ang R3 Corda (ginagamit ng Standard Chartered at iba pa para sa tokenized deposits), Canton Network (ginagamit ng HSBC para sa cross-network settlement trials at ng GS DAP ng Goldman Sachs), Hyperledger Besu (ang JPMorgan-derived Ethereum variant sa ilalim ng Kinexys), at proprietary stacks tulad ng HSBC Orion. Hindi pa rin tiyak ang token-format choice: gumagamit ang ilang network ng ERC-20-derived contracts upang sila ay makapag-compose sa mas malawak na Ethereum tooling; gumagamit ang iba ng IBC-style o Canton-native token primitives. Ang pragmatic na sagot sa 2026 ay walang single stack na nanalo, at ang mga bangko na mag-iiscale ng tokenized deposits ay yaong nagtatayo ng interoperability bridges (atomic settlement protocols sa pagitan ng Canton at Besu, ISO 20022 mapping sa on-chain message formats) sa halip na pumusta sa isang single platform.
+
 Ang risk ay isang kalipunan ng bank-specific walled gardens. Ang oportunidad ay isang programmable commercial-bank-money layer na nagpapanatili ng bank trust habang pinapabuti ang digital settlement.
+
+## Failure Modes: Saan Nababasag ang Stack
+
+Karamihan sa tokenized deposits ay isinusulat sa optimistic na rehistro. Ang failure modes ay nararapat tratuhin nang seryoso dahil hinuhubog nila ang eventual regulatory perimeter.
+
+**Smart contract bug sa isang deposit token.** Ang bug sa isang deposit-token smart contract ay hindi isang normal na software incident; ito ay potensyal na wrong-balance event sa commercial bank money. Kailangan ng mga bangko ng isang formally verified contract audit, isang upgrade path na hindi nangangailangan ng paglipat ng customer balances, at isang circuit-breaker na nag-pause sa programmable settlement nang hindi binabasag ang convertibility pabalik sa conventional deposits.
+
+**Cross-jurisdiction bank failure.** Kung mabigo ang isang bangko na may tokenized deposits na inilabas sa limang hurisdiksyon, ang mga deposit-insurance regime ay nag-aaplay nationally ngunit ang ledger ay global. Hindi pa stress-test ng mga resolution authorities kung paano nakikipag-ugnayan iyon sa depositor preference, ring-fencing rules, o ang tanong kung sino aktwal na nagmamay-ari ng token sa sandali ng bank closure. Iniiwasan ng single-jurisdiction deposit tokens ang problema; nakalantad ang multi-jurisdiction tokens.
+
+**Liquidity crisis na may bifurcated deposits.** Maaaring kumilos ang conventional deposits at tokenized deposits nang lubhang magkaiba sa isang stress event. Kung ang isang tokenized deposit ay maaaring i-move 24/7 sa isang non-bank wallet sa pamamagitan ng smart contract habang ang conventional deposits ay nahaharap sa isang daily cut-off, ang tokenized side ay tumatakbo nang mas mabilis. Iyan ay isang feature sa normal conditions at isang destabiliser sa isang bank run. Hindi isinulat ang liquidity-coverage ratios at operational-resilience frameworks para sa asymmetry na ito.
+
+**Operational dependency sa isang single DLT vendor.** Maraming bank deposit-token platforms ang tumatakbo sa isang single permissioned-DLT stack. Ang DORA-style critique na nag-aapply na sa cloud ay nag-aapply dito: ang stack outage sa vendor ay ngayon ay isang critical-services outage. Ang mitigation ay multi-stack capability, hindi lamang multi-region deployment ng isang stack.
+
+Wala sa mga ito ang dahilan upang hindi magtayo ng tokenized deposits. Ito ay mga dahilan upang tratuhin ang platform bilang critical financial-services infrastructure mula sa araw isa sa halip na mag-retrofit ng controls pagkatapos ng scale.
 
 ## Ano ang Ibig Sabihin Nito ayon sa Uri ng Bangko
 
@@ -230,9 +284,7 @@ Hindi dapat maghintay ang corporates ng universal network. Dapat na nilang simul
 
 ## Konklusyon
 
-Ang tokenized deposits sa 2026 ay nasa parehong yugto kung saan dating naroon ang real-time payments: malinaw sa halaga, hindi pantay sa implementation, at umaasa sa network coordination. May credible answer ang banking sector sa stablecoins kung mapapanatili nito ang mga lakas ng pera ng komersyal na bangko habang tinutumbasan ang programmability, speed, at interoperability na inaasahan ngayon ng mga users.
-
-Malinaw ang status: live ang pilots, nabubuo ang bank propositions, tumitigas ang regulatory categories, at gumagalaw ang wholesale experiments. Ang nakabukas na tanong ay hindi kung iiral ba ang tokenized deposits. Ito ay kung mag-iinteroperate ba sila nang mabilis para magkaroon ng kabuluhan.
+Ang tokenized deposits sa 2026 ay nasa parehong puwesto kung saan naroon ang real-time payments isang dekada na ang nakakaraan: halatang may halaga, hindi pantay sa implementation, at gated ng network coordination. Live ang pilots, ang mga leading bank stacks (Kinexys ng JPMorgan, TDS + Orion ng HSBC, ang UK multi-bank programme) ay production-grade sa kani-kanilang perimeters, tumitigas ang regulatory categories (FDIC, BIS, HKMA), at huminto na ang technology stack bilang binding constraint. Ang natitira ay interoperability, legal finality, at yield economics — tatlong problema na masosolusyunan ng industriya, ngunit kung tatratuhin lamang ng mga bangko ang 2026–2027 bilang standards-setting window. Ang risk ay hindi yung mabigo ang tokenized deposits na mailabas; ito ay yung mailabas sila bilang labindalawang incompatible walled gardens.
 
 ## Mga Madalas Itanong
 
@@ -260,15 +312,11 @@ HSBC. Live ang HSBC Tokenised Deposit Service sa Hong Kong, Singapore, United Ki
 
 - Lloyds Banking Group, (2026). [Digital assets in 2026: building the future of finance in the UK ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
 - HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").
+- JPMorgan, (2026). [Kinexys (formerly Onyx) digital assets platform ⧉](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan").
 - BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate").
 - Deutsche Bank flow, (2026). [Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money").
 - FDIC, (2026). [GENIUS Act requirements and standards proposed rule ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").
 - Cambridge Centre for Alternative Finance, (2026). [Tokenised money: Use cases, interoperability and regulation ⧉](https://www.jbs.cam.ac.uk/wp-content/uploads/2026/02/2026-ccaf-tokenised-money-use-cases-interoperability-and-regulation.pdf "Tokenised money report").
-<!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-21">2026-05-21</time>.</p>
-<!-- enrich-end -->
-
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-05-21">2026-05-21</time>.</p>

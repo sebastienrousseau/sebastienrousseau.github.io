@@ -93,10 +93,13 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 <p class="post-lead-tldr"><strong>摘要。</strong>2026年的代幣化存款服務正從研究階段邁向銀行試點與早期客戶方案。現況仍處於規模化之前，但方向已經明確：商業銀行貨幣正被調整以適應可程式化結算、數位錢包、穩定幣互通性以及代幣化資本市場。</p>
 <p class="post-lead-heading"><strong>主要重點</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>為何代幣化存款此刻至關重要。</strong>穩定幣暴露了對可程式化、全天候數位貨幣的需求。</li>
-  <li><strong>2026年的現況：從試點走向產品，但尚未達到網路規模。</strong>Lloyds將Great British Tokenised Deposits定位為一項產業倡議，並給出三個具體的應用場景：個人間市場支付、再抵押貸款與數位資產結算（Lloyds Banking Group）。</li>
-  <li><strong>代幣化存款與穩定幣與CBDC的比較。</strong>法律債權關係必須清晰。</li>
-  <li><strong>銀行需要建構什麼。</strong>法律債權關係必須清晰。</li>
+  <li><strong>市場現況。</strong>2026年的代幣化存款仍處於規模化之前但已非理論：試點已上線，銀行方案正在成形，英國的多銀行計畫運行至2026年中期，HSBC、NatWest、Lloyds、Barclays、Nationwide與Santander正在測試市場支付、再抵押貸款與數位資產結算（Lloyds Banking Group）。</li>
+  <li><strong>競爭壓力。</strong>穩定幣規模龐大且持續成長（BIS估計2026年4月初市值約3,150億美元，約98%以USD計價），加快了存款代幣的時程。它們在開放生態觸達、加密原生流動性與全球零售層面占優；代幣化存款則在監管確定性、存款保險與司庫工作流方面占優（BIS）。</li>
+  <li><strong>監管邊界。</strong>FDIC在2026年的提案將代幣化存款界定為以DLT記錄的存款負債，並明確與支付型穩定幣加以區分，藉此強化美國的監管邊界（FDIC）。</li>
+  <li><strong>領先的銀行專案。</strong>JPMorgan的JPM Coin在Kinexys上每日處理約20億美元的批發結算，是最長的存款代幣生產紀錄。HSBC擁有最完整的多軌堆疊：TDS覆蓋HK、SG、UK、LU、US，支援USD/GBP/EUR/HKD/SGD；HSBC Orion支撐英國Digital Gilt Instrument（DIGIT）試點；HSBC Gold Token將已分配實物金條代幣化；在Canton + Project Ensemble上試行跨網路原子結算；與Quantinuum合作實施PQC（HSBC）。</li>
+  <li><strong>決定一切的設計選擇。</strong>三種帳本-法律模式占主導地位：代幣*即*存款（最乾淨的原子結算，最難的正常運行時間）、代幣*表徵*傳統存款（法律上更簡單、對帳負擔、JPM Coin與HSBC TDS接近此類），或代幣作為傳統軌道之上的*指令層*（可程式化主張最弱）。</li>
+  <li><strong>收益率經濟學與監管同樣重要。</strong>代幣化存款能否獲得與基礎存款相同的利息是一個司庫級問題。保留存款經濟性的設計可在現金管理中規模化；不付息的純支付代幣將把企業餘額輸給任何付息的競爭者。</li>
+  <li><strong>制約因素是互通性與法律最終性。</strong>跨司法管轄區的法律衝突、DLT不可竄改性與法律可撤銷性之間的不匹配，以及碎片化的平台（Corda、Canton、Besu、Orion、ERC-20與Canton-native代幣格式）如今已成為制約因素——而非技術本身。</li>
 </ul>
 <p class="post-lead-related"><strong>相關閱讀：</strong><a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026">2026年最佳雲端基礎設施架構：面向金融服務的AI原生、多雲、量子感知藍圖</a>。</p>
 </aside>
@@ -108,14 +111,13 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 
 > **執行摘要／主要重點**
 >
-> - **代幣化存款仍處於規模化之前，但已非停留在理論。** Lloyds描述了使用代幣化存款結算代幣化金邊債券交易的試點專案，以及圍繞Great British Tokenised Deposits的產業工作（[Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")）。
-> - **英國的應用場景已經具體。** Great British Tokenised Deposits的應用場景包括市場支付、再抵押貸款與數位資產結算（[Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")）。
-> - **BIS正將討論拉回雙層貨幣體系。** BIS認為，中央銀行貨幣是信任的錨，而穩定幣並不會像銀行支付那樣在央行資產負債表上完成結算（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")）。
-> - **穩定幣仍構成競爭壓力。** BIS估計，2026年4月初全球穩定幣市值約為3,150億美元，其中約98%以美元計價（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")）。
-> - **Deutsche Bank將代幣化存款定義為可程式化的商業銀行貨幣。** 其2026年數位貨幣論文將代幣化存款定位為現有銀行模式向可程式化環境的延伸（[Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")）。
-> - **監管正在劃定類別邊界。** FDIC在2026年的提案中將代幣化存款及存款代幣討論為透過分散式帳本技術記錄的存款負債，並明確代幣化存款不屬於支付型穩定幣（[FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")）。
-> - **HSBC在2026年擁有最為成熟的銀行專案。** HSBC Tokenised Deposit Service已在香港、新加坡、英國、盧森堡與美國以USD、GBP、EUR、HKD與SGD投入運行；HSBC Orion被指定為英國Digital Gilt Instrument（DIGIT）試點的基礎設施；HSBC Gold Token將已分配的實物金條代幣化；HSBC亦在Canton與Project Ensemble上試行了跨網路原子結算，並與Quantinuum合作進行後量子安全測試（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。
-> - **實際狀態是從試點走向產品。** 銀行正在建構錢包、結算流程與機構應用場景，但互通性、法律最終性、流動性處理與網路標準仍未解決。
+> - **市場現況。** 2026年的代幣化存款仍處於規模化之前，但已非停留在理論：試點已上線，銀行方案正在成形，英國的多銀行計畫運行至2026年中期，HSBC、NatWest、Lloyds、Barclays、Nationwide與Santander正在測試市場支付、再抵押貸款與數位資產結算（[Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")）。
+> - **競爭壓力。** 穩定幣規模龐大且持續成長（BIS估計2026年4月初市值約3,150億美元，約98%以USD計價），加快了存款代幣的時程。穩定幣在開放生態觸達、加密原生流動性與全球零售層面占優；代幣化存款則在監管確定性、存款保險與司庫工作流方面占優（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")）。
+> - **監管邊界。** FDIC在2026年的提案將代幣化存款界定為以DLT記錄的存款負債，並明確將其與支付型穩定幣加以區分，藉此強化美國的監管邊界（[FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")）。
+> - **領先的銀行專案。** JPMorgan的JPM Coin在Kinexys上每日處理約20億美元的批發結算，擁有最長的存款代幣生產紀錄。HSBC擁有最完整的多軌堆疊：TDS覆蓋HK、SG、UK、LU、US，支援USD/GBP/EUR/HKD/SGD；HSBC Orion支撐英國Digital Gilt Instrument（DIGIT）試點；HSBC Gold Token將已分配實物金條代幣化；在Canton + Project Ensemble上試行跨網路原子結算；與Quantinuum合作實施PQC（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。
+> - **決定一切的設計選擇。** 三種帳本-法律模式占主導地位：代幣*即*存款（最乾淨的原子結算，最難的正常運行時間）、代幣*表徵*傳統存款（法律上更簡單、對帳負擔、JPM Coin與HSBC TDS接近此類），或代幣作為傳統軌道之上的*指令層*（可程式化主張最弱）。
+> - **收益率經濟學與監管同樣重要。** 代幣化存款能否獲得與基礎存款相同的利息是一個司庫級問題。保留存款經濟性的設計可在現金管理中規模化；不付息的純支付代幣將把企業餘額輸給任何付息的競爭者。
+> - **制約因素是互通性與法律最終性。** 跨司法管轄區的法律衝突、DLT不可竄改性與法律可撤銷性之間的不匹配，以及碎片化的平台（Corda、Canton、Besu、Orion、ERC-20與Canton-native代幣格式）如今已成為制約因素——而非技術本身。
 >
 ---
 
@@ -130,6 +132,8 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 ### 1. 英國銀行試點正在界定實際應用場景
 
 Lloyds將Great British Tokenised Deposits定位為一項產業倡議，並給出三個具體的應用場景：個人間市場支付、再抵押貸款與數位資產結算（[Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")）。這些場景作為早期試驗合情合理，因為它們將資金流動與信任、時機與條件性結算結合在一起。
+
+英國多銀行試點確實是多銀行參與的。參與方名單——HSBC、NatWest、Lloyds、Barclays、Nationwide與Santander——涵蓋了英國零售與商業存款餘額的大部分，計畫運行至2026年中期。這一點之所以重要，是因為沒有銀行間互通性的代幣化存款只是單一銀行的產品功能；英國試點是全球少數幾個真正測試跨銀行情境的實活實驗之一。
 
 市場支付檢驗詐欺減少與賣家信心。再抵押貸款檢驗多方流程自動化。數位資產結算檢驗代幣化貨幣與代幣化金融工具之間的「款券對付」。
 
@@ -151,37 +155,55 @@ BIS將Project Agorá定位為與中央銀行和私營部門合作探索跨境支
 
 這正是代幣化存款成為批發基礎設施之處。核心問題在於商業銀行貨幣、中央銀行貨幣與代幣化資產如何在不破壞法律最終性、流動性管控或貨幣單一性的前提下共同完成結算。
 
-## HSBC的代幣化堆疊：2026年最為成熟的銀行專案
+## 2026年最為成熟的銀行專案
 
-在全球Tier-1銀行中，HSBC在當前生產環境中建構了最為完整的代幣化存款與數位資產堆疊。HSBC明確將代幣化存款定位為銜接傳統銀行業務與去中心化基礎設施的首選工具，置於無擔保穩定幣或第三方數位貨幣之前（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。
+有三個專案值得單獨剖析：JPMorgan，開創了批發存款代幣這一類別並將其運行至生產規模；HSBC，在存款代幣、證券、實物資產與密碼學等方面擁有最完整的多軌堆疊；以及一批公開揭露較少但實質活躍的歐洲與亞洲專案。將代幣化存款視為單一的產業動向會忽略這些堆疊在「銀行數位貨幣產品應當是什麼樣子」此一問題上所作出的不同押注。
 
-### Tokenised Deposit Service（TDS）
+### JPMorgan：JPM Coin、Onyx與Kinexys平台
+
+JPMorgan於2019年推出JPM Coin，比業內大多數機構公開使用「代幣化存款」一詞早四年。它運行於Onyx（現已更名為Kinexys）——JPMorgan的許可制區塊鏈平台——之上，結算批發企業客戶流量，主要包括機構司庫劃轉、日內流動性調度，以及越來越多的代幣化回購。到2026年，Kinexys每日處理約20億美元規模的批發交易，這使JPMorgan成為全球單一最大的存款代幣結算營運方。
+
+這段歷史在兩方面具有意義。其一，JPMorgan在對帳、爭議處理、日內流動性行為與故障模式等營運議題上擁有業內最長的生產紀錄——而其他銀行仍處於設計階段。其二，平台是多資產的：Kinexys已從存款代幣擴展至代幣化回購、外匯結算與抵押品流轉，使JPMorgan能夠在同一帳本上提供款券對付，而非透過點對點整合。
+
+其反面是，JPM Coin從設計上就是封閉網路方案。它在JPMorgan的軌道上、在JPMorgan客戶之間、在JPMorgan運營的鏈上完成結算。它既是業內單一銀行代幣化存款規模化的最強例證，也是BIS批評意見的最有力體現——沒有互通性，存款代幣將淪為封閉花園而非批發基礎設施。
+
+### HSBC：從存款代幣到代幣化黃金的多軌堆疊
+
+HSBC的押注更為廣泛。JPMorgan在一項批發用例上深挖，而HSBC則在存款代幣、機構證券、實物資產與密碼學等方面並行建構。HSBC明確將代幣化存款定位為銜接傳統銀行業務與去中心化基礎設施的首選工具，置於無擔保穩定幣或第三方數位貨幣之前（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。
+
+#### Tokenised Deposit Service（TDS）
 
 HSBC Tokenised Deposit Service依1:1比例將企業法幣餘額轉換為數位代幣，資金始終處於完全受監管狀態並保留在銀行資產負債表上（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。TDS已在香港、新加坡、英國、盧森堡與美國五個司法管轄區投入運行，並支援USD、GBP、EUR、HKD與SGD五種貨幣的即時交易。其核心功能屬於財務司庫等級：大型企業及機構客戶透過24/7智能合約可程式化，可在數秒內完成跨境清算與結算，消除SWIFT截止時間、批次視窗與時區障礙。
 
 這一產品組合是對「代幣化存款仍屬理論」此一論斷最有力的反例。它們在網路規模上仍屬理論；在HSBC內部，它們已不再是理論。
 
-### HSBC Orion與數位資本市場
+#### HSBC Orion與數位資本市場
 
 HSBC Orion是該行專有的機構級DLT平台，用於發行、結算與託管代幣化證券。HM Treasury已指定HSBC Orion作為英國具有里程碑意義的Digital Gilt Instrument（DIGIT）試點的基礎平台基礎設施——這是英國代幣化公共債務的主權級標竿案例。HSBC Orion亦支援香港特區政府與歐洲投資銀行的大規模數位債券發行，包括綠色債券與主權債券分券。
 
 對代幣化存款而言，這一點之所以重要，是因為在共享帳本上實現款券對付（DVP）的先決條件是存款代幣與代幣化證券之間的結算對等。若無機構級證券發行平台，存款代幣便無對應可結算的對象。
 
-### 實物資產代幣化：HSBC Gold Token
+#### 實物資產代幣化：HSBC Gold Token
 
 HSBC將同一錨定模型擴展至零售層級的實物資產。HSBC Gold Token允許HSBC HK行動應用程式使用者購買實物黃金的部分所有權，並向英國機構客戶提供準入。每枚代幣均由存放於HSBC機構金庫內的已分配實物金條100%支持——這與該行對存款代幣所採用的監管與營運錨定模式完全一致。
 
-### 網路互通性與量子安全代幣化
+#### 網路互通性與量子安全代幣化
 
 HSBC已使用Canton Network與香港金融管理局（HKMA）的Project Ensemble，跨外部網路試行其代幣化存款的原子結算。這正是BIS式批評針對單一銀行代幣所要求的互通性環節：代幣化存款唯有在能夠跨網路而非僅於單一銀行內部結算時，才能成為批發基礎設施。
 
 與此同時，HSBC與Quantinuum合作，在其代幣化黃金帳本上直接部署後量子加密安全——這是對「Store Now, Decrypt Later」（SNDL）攻擊的防禦性回應，此類攻擊中，對手在當下蒐集加密帳本資料，押注未來量子電腦將能解密。生產代幣帳本上的後量子加密尚未成為產業標準；HSBC是少數將其視為任何預期跨越PQC遷移期限的代幣化平台基本要求的銀行之一。
 
-### 受監管穩定幣與存款代幣並行
+#### 受監管穩定幣與存款代幣並行
 
 HSBC並未完全忽視穩定幣這一方向。該行已取得HKMA許可，試點用於點對點與投資交易結算的受監管穩定幣——但這是對代幣化存款核心的補充，而非取代。HSBC整個堆疊傳遞的策略訊息是一致的：代幣化存款是該行數位貨幣產品的錨點；受監管穩定幣則將覆蓋範圍延伸至存款代幣債權在結構上不便適用的場景。
 
+### 其他活躍專案
+
+除JPMorgan與HSBC之外，仍有若干專案雖公開揭露較少，卻對整體網路圖景具實質意義。Société Générale的SG-FORGE在存款代幣業務之外，發行以歐元計價的數位債券與一種受監管的歐元穩定幣，使Société Générale在歐洲監管之下同時運營兩條軌道這一不尋常位置。Standard Chartered透過Zodia Custody及其自有的新加坡試點，在代幣化存款與代幣化實物資產領域保持活躍。Goldman Sachs的GS DAP平台已發行數位債券並支援代幣化抵押品。更廣義的含義很直接：存款代幣能力如今已是任何希望在交易銀行領域保持競爭力的全球批發銀行的基本配備；更值得關注的問題是誰與誰互通，而非誰先建成。
+
 ## 代幣化存款、穩定幣與CBDC的比較
+
+三種工具在爭奪同一角色——可程式化的、結算級數位貨幣——但它們立足於根本不同的債權結構。債權的選擇決定了其他一切：法律保護、審慎處理、資產結算的位置，以及持有人隱含信任的網路。下表將四個候選工具歸納為五個維度，下文的散文則展開每種工具實際勝出的場景。
 
 | 工具 | 債權類型 | 最佳用途 | 2026年現況 | 主要風險 |
 |---|---|---|---|---|
@@ -190,13 +212,25 @@ HSBC並未完全忽視穩定幣這一方向。該行已取得HKMA許可，試點
 | **批發型CBDC** | 中央銀行貨幣 | 銀行間結算與代幣化市場基礎設施 | 透過中央銀行專案積極探索 | 設計、隱私、可擴展性、政治授權 |
 | **零售型CBDC** | 供公眾使用的中央銀行貨幣 | 公共數位現金替代品 | 全球進展不一 | 採納率、隱私、銀行脫媒 |
 
+### 代幣化存款勝出之處
+
+資產負債表內的商業銀行貨幣享有穩定幣尚需贏得的監管確定性。代幣化存款承襲存款保險、審慎資本處理以及現行的AML/制裁管控。對企業司庫而言，這意味著無需面對新的交易對手風險，也無需評估新的準備金審計。它們還從企業既有的銀行帳戶上鏈——無需交易所、無需準備金發行方、無需新的託管方。BIS與FDIC都強調了這一點：當債權位於現行法律架構已經理解的位置時，貨幣單一性得以維繫（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")；[FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")）。
+
+### 穩定幣仍然勝出之處
+
+主要有三處。第一，開放生態觸達：穩定幣與DeFi、加密原生司庫以及那些永遠不會整合銀行API的長尾錢包相組合。第二，全球零售分發：以美元計價的穩定幣在本幣銀行體系脆弱的市場中，已是事實上的儲蓄工具。第三，24/7市場與加密結算：即便有TDS式的全天候銀行軌道，穩定幣仍是加密流動性的本幣單位，並將在可見的未來繼續如此。兩種工具並非嚴格的替代品；競爭邊界主要取決於用例位於受監管銀行邊界之內還是之外。
+
 ## 銀行需要建構什麼
 
 ### 帳本與法律架構
 
-法律債權關係必須清晰。代幣究竟是存款本身、存款的表徵，還是鏈下存款帳戶的指令層？FDIC在2026年的擬議規則中明確將代幣化存款討論為透過分散式帳本技術記錄的存款負債，並將其與支付型穩定幣加以區分（[FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")）。
+在實際部署中，有三種設計模式占主導地位。第一種是「代幣*即*存款」——DLT帳本本身就是記錄系統，鏈上餘額承載法律債權。這是原子結算最乾淨的模式，也最接近Project Agorá與統一帳本提案所構想的形態，但它迫使銀行將帳本正常運行時間視為核心銀行系統正常運行時間。第二種是「代幣*表徵*存款」——傳統的核心銀行帳戶仍為法律記錄，代幣是與之同步的鏡像。JPM Coin與HSBC TDS更接近此種模式。它在法律與營運上更簡單，但需要持續對帳，且由於具有法律約束力的一端位於帳本之外，原子DvP變得更難實現。第三種是「代幣作為指令層」——代幣根本不代表存款，而是觸發既有軌道（CHAPS、Fedwire、TARGET2）上的傳統支付。這是最容易部署的，但對「實際可程式化貨幣」的主張最弱；某些銀行將其作為「代幣化存款」發布時，實際上只是在SWIFT管道之上加了一個智能合約前端。
 
-在客戶資金能夠大規模流動之前，銀行需要這種明確性。
+FDIC在2026年的擬議規則中明確將前兩種認定為以分散式帳本技術記錄的存款負債，並將其與支付型穩定幣加以區分（[FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")）。第三種的監管處理更為嚴格，因為存款關係與代幣始終不會匯合。
+
+#### 為何法律最終性是難題
+
+「法律最終性」是代幣化存款路線圖中出現最頻繁但被解析最少的措辭。其下實際上有三件事。第一，法律衝突：當一家英國銀行發行的代幣化存款，透過位於新加坡運營的節點，與一份在盧森堡登記的代幣化證券進行原子結算時，哪一司法管轄區的結算最終性制度管轄該筆交易？第二，DLT不可竄改性與法律可撤銷權之間的不匹配：銀行支付可因法院命令、制裁指定或操作失誤而被撤銷，但不可竄改帳本則不能；這迫使必須設計一個「撤銷層」，既須在法律上穩健，又不能破壞不可竄改性的敘事。第三，鏈上最終性本身的問題：一個被確認的區塊是否構成法律意義上的結算，還是只有相應的鏈下會計分錄才算？在這三點未在監管層面——而非僅在參與銀行間雙邊——被解決之前，跨網路原子結算仍是試點而非基礎設施。
 
 ### 錢包與身分管控
 
@@ -204,11 +238,31 @@ HSBC並未完全忽視穩定幣這一方向。該行已取得HKMA許可，試點
 
 最重要的營運特性可能是政策。資金管理人應能夠定義在特定門檻與交易對手規則下，誰可以發起、核准、結算、撤銷或對代幣化存款的轉移提出異議。
 
+### 收益率與司庫經濟性
+
+收益率是高級司庫最先提出的問題，也是大多數代幣化存款新聞稿迴避的問題。如果一家企業為等待結算環節，將5,000萬美元在代幣化存款錢包中停放48小時，那筆餘額能否獲得銀行通常為隔夜存款支付的利率，還是無息？正在出現兩種模式。一些銀行將代幣化存款在經濟意義上視同基礎存款——企業保留利率，銀行將餘額保留在帳上，代幣只是可程式化層。其他銀行則將其視為不付息的交易浮動資金，因為假定資金正處於流動狀態。第一種模式保留了既有的存款經濟關係，是唯一能在現金管理層面規模化的設計。第二種本質上是一種閉環支付工具，餘額將被任何採用第一種模式的競爭者拉走。這也正是「代幣化存款對穩定幣」不僅是監管問題、也是收益率經濟問題的原因：在高利率環境下，不付息的支付代幣相對於一筆付息的代幣化存款，或一檔與穩定幣並行的收益型代幣化貨幣市場基金，存在結構性劣勢。
+
 ### 互通性層
 
 單一銀行的代幣化存款有用但有限。多銀行間的互通性才是網路效應的起點。這需要在代幣格式、訊息傳遞、身分、結算最終性、爭議處理、AML資料、錢包可攜性，以及代幣化存款、傳統存款、穩定幣、CBDC與代幣化資產之間轉換的標準。
 
+技術層面是碎片化的。許可制DLT的主流玩家包括R3 Corda（Standard Chartered等用於代幣化存款）、Canton Network（HSBC用於跨網路結算試驗，Goldman Sachs的GS DAP亦在使用）、Hyperledger Besu（Kinexys之下源自JPMorgan的Ethereum變體），以及HSBC Orion等專有堆疊。代幣格式的選擇同樣未定：有些網路採用源自ERC-20的合約，以便與更廣泛的Ethereum工具組合；另一些則採用IBC風格或Canton-native的代幣原語。2026年的務實結論是：沒有任何單一堆疊勝出，能夠將代幣化存款規模化的銀行，將是建構互通橋樑（Canton與Besu之間的原子結算協議，ISO 20022到鏈上訊息格式的對映）的銀行，而不是押注單一平台的銀行。
+
 風險在於形成一系列銀行專屬的封閉花園。機會則在於建構一個在維持銀行信任的同時改善數位結算的可程式化商業銀行貨幣層。
+
+## 故障模式：堆疊在何處崩裂
+
+代幣化存款大多以樂觀筆調被書寫。故障模式值得嚴肅對待，因為它們將塑造最終的監管邊界。
+
+**存款代幣上的智能合約漏洞。** 存款代幣智能合約的漏洞不是普通的軟體事件；它可能成為商業銀行貨幣之上的餘額錯誤事件。銀行需要經過形式驗證的合約稽核、不必遷移客戶餘額的升級路徑，以及能夠在不破壞與傳統存款可兌換性的前提下暫停可程式化結算的熔斷開關。
+
+**跨司法管轄區的銀行倒閉。** 如果一家在五個司法管轄區發行代幣化存款的銀行倒閉，存款保險制度按國別適用，而帳本是全球性的。處置當局尚未對此與存款人優先權、圍欄規則，以及銀行關閉瞬間誰實際擁有該代幣等問題的相互作用進行過壓力測試。單一司法管轄區的存款代幣可規避該問題；多司法管轄區代幣則暴露其中。
+
+**存款分化下的流動性危機。** 傳統存款與代幣化存款在壓力事件中可能表現迥異。如果代幣化存款可以透過智能合約在24/7條件下遷出至非銀行錢包，而傳統存款須面對每日截止時間，則代幣化一側的流動會更快。這在正常情況下是特性，在擠兌中則是不穩定因素。流動性覆蓋率與營運韌性架構並未針對這種不對稱性進行設計。
+
+**對單一DLT供應商的營運依賴。** 許多銀行的存款代幣平台運行在單一許可制DLT堆疊之上。已經適用於雲端的DORA式批評同樣適用於此：在供應商一側發生的堆疊故障，如今屬於關鍵服務故障。緩解之策是多堆疊能力，而不僅僅是同一堆疊的多區域部署。
+
+以上沒有一條是不去建構代幣化存款的理由。它們是從第一天起就將該平台視為關鍵金融服務基礎設施、而不是事後再補加管控的理由。
 
 ## 按銀行類型的意義
 
@@ -230,9 +284,7 @@ HSBC並未完全忽視穩定幣這一方向。該行已取得HKMA許可，試點
 
 ## 結論
 
-2026年的代幣化存款所處的階段，與當年的即時支付如出一轍：價值顯而易見、實作參差不齊，並依賴網路協同。若銀行業能夠在保留商業銀行貨幣優勢的同時，匹配使用者當下期望的可程式化、速度與互通性，便將擁有對穩定幣的有力回應。
-
-現況很明確：試點正在運行，銀行的方案正在成形，監管類別正在固化，批發實驗也在推進。懸而未決的問題不是代幣化存款是否會存在，而是它們能否夠快地實現互通以發揮作用。
+2026年的代幣化存款所處的階段，與十年前的即時支付如出一轍：價值顯而易見、實作參差不齊，並受制於網路協同。試點已上線，領先的銀行堆疊（JPMorgan的Kinexys、HSBC的TDS + Orion、英國多銀行計畫）在各自的邊界內已具生產級水準，監管類別正在固化（FDIC、BIS、HKMA），技術堆疊已不再是制約。剩下的是互通性、法律最終性與收益率經濟性——這三個問題業界可以解決，但前提是銀行將2026–2027年視為標準設定的窗口期。風險不是代幣化存款無法面市，而是它們以十二個互不相容的封閉花園的形式面市。
 
 ## 常見問題
 
@@ -260,15 +312,11 @@ HSBC。HSBC Tokenised Deposit Service已在香港、新加坡、英國、盧森�
 
 - Lloyds Banking Group, (2026). [Digital assets in 2026: building the future of finance in the UK ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
 - HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").
+- JPMorgan, (2026). [Kinexys (formerly Onyx) digital assets platform ⧉](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan").
 - BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate").
 - Deutsche Bank flow, (2026). [Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money").
 - FDIC, (2026). [GENIUS Act requirements and standards proposed rule ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").
 - Cambridge Centre for Alternative Finance, (2026). [Tokenised money: Use cases, interoperability and regulation ⧉](https://www.jbs.cam.ac.uk/wp-content/uploads/2026/02/2026-ccaf-tokenised-money-use-cases-interoperability-and-regulation.pdf "Tokenised money report").
-<!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-21">2026-05-21</time>.</p>
-<!-- enrich-end -->
-
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-05-21">2026-05-21</time>.</p>

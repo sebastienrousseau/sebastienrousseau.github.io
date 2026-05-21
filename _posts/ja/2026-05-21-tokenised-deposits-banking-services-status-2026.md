@@ -93,10 +93,13 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 <p class="post-lead-tldr"><strong>要点。</strong>2026年のトークン化預金サービスは、研究段階から銀行のパイロットおよび初期の顧客向け提案へと移行しつつあります。現状はまだ大規模展開前ですが、方向性は明確です。商業銀行マネーは、プログラム可能な決済、デジタルウォレット、ステーブルコインとの相互運用性、そしてトークン化された資本市場に対応できるよう適合されつつあります。</p>
 <p class="post-lead-heading"><strong>主なポイント</strong></p>
 <ul class="post-lead-takeaways">
-  <li><strong>なぜ今トークン化預金が重要なのか。</strong>ステーブルコインは、プログラム可能で常時稼働するデジタルマネーへの需要を顕在化させました。</li>
-  <li><strong>2026年の現状：パイロットから製品へ、ただしネットワーク規模はまだ。</strong>Lloydsは、Great British Tokenised Depositsを業界横断のイニシアチブと位置づけ、個人間マーケットプレイス決済、住宅ローンの借換え、デジタル資産決済という3つの具体的なユースケースを示しています（Lloyds Banking Group）。</li>
-  <li><strong>トークン化預金、ステーブルコイン、CBDCの違い。</strong>法的な債権関係を明確にしなければなりません。</li>
-  <li><strong>銀行が構築すべきもの。</strong>法的な債権関係を明確にしなければなりません。</li>
+  <li><strong>市場の現状。</strong>2026年のトークン化預金は大規模展開前ですが、もはや理論ではありません。パイロットが稼働中であり、銀行の提案が形成され、英国のマルチバンク・プログラムはHSBC、NatWest、Lloyds、Barclays、Nationwide、Santanderの参加により2026年半ばまで実施されます（Lloyds Banking Group）。</li>
+  <li><strong>競争上の圧力。</strong>ステーブルコインは大規模かつ拡大中であり（BISは2026年4月初旬の時価総額を約3,150億ドルと推定、約98％がUSD建て）、預金トークンのスケジュールを加速させています。オープン・エコシステムの到達範囲、暗号資産ネイティブの流動性、グローバル・リテールではステーブルコインが優位、規制上の安心、預金保険、トレジャリー・ワークフローではトークン化預金が優位です（BIS）。</li>
+  <li><strong>規制上の境界線。</strong>FDICの2026年の提案は、トークン化預金をDLT上に記録された預金負債として分類し、支払い用ステーブルコインから明確に区別することで、米国の規制境界を強化しています（FDIC）。</li>
+  <li><strong>主導的な銀行プログラム。</strong>JPMorganのJPM CoinはKinexys上で日々約20億ドルのホールセール決済を処理しており、預金トークンの最も長い実績を有しています。HSBCは最も完成度の高いマルチトラック・スタックを構築：TDSはHK、SG、UK、LU、USでUSD/GBP/EUR/HKD/SGDをサポート、HSBC Orionは英国Digital Gilt Instrument（DIGIT）パイロットの基盤、HSBC Gold Tokenは割当済み地金をトークン化、CantonおよびProject Ensemble上でクロスネットワーク・アトミック決済を試行、QuantinuumとのPQC実装（HSBC）。</li>
+  <li><strong>すべてを決定する設計上の選択。</strong>3つの台帳・法的パターンが支配的です。トークンが預金そのものである（最もクリーンなアトミック決済、最も困難な稼働時間）、トークンが従来型預金を表象する（法的にはより簡素、消し込みの負荷、JPM CoinとHSBC TDSが該当）、またはトークンが従来型レールへの指図レイヤーである（プログラム可能性の主張が最も弱い）。</li>
+  <li><strong>金利の経済性は規制と同じくらい重要です。</strong>トークン化預金が原資産の預金と同等の金利を稼ぐかどうかは、トレジャリー・グレードの問いです。預金経済を維持する設計は現金管理にスケールしますが、金利を生まない決済専用トークンは、金利を支払う競合に法人残高を奪われるでしょう。</li>
+  <li><strong>制約条件は相互運用性と法的ファイナリティ。</strong>法域間の法の抵触、DLTの不変性と法的取消可能性の不整合、断片化されたプラットフォーム（Corda、Canton、Besu、Orion、ERC-20対Canton-nativeトークン形式）が今や制約条件であり、技術そのものではありません。</li>
 </ul>
 <p class="post-lead-related"><strong>関連記事：</strong><a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026">2026年における最良のクラウドインフラ・アーキテクチャ：金融サービス向けAIネイティブ、マルチクラウド、量子対応の設計図</a>。</p>
 </aside>
@@ -108,14 +111,13 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 
 > **エグゼクティブサマリー／主なポイント**
 >
-> - **トークン化預金はまだ大規模展開前ですが、もはや理論上の存在ではありません。** Lloydsは、トークン化ギルトの取引決済にトークン化預金を用いたパイロットや、Great British Tokenised Depositsに関する業界の取り組みを説明しています（[Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")）。
-> - **英国のユースケースは具体的です。** Great British Tokenised Depositsのユースケースには、マーケットプレイス決済、住宅ローン借換え、デジタル資産決済が含まれます（[Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")）。
-> - **BISは議論を二層構造の通貨システムへと戻そうとしています。** BISは、中央銀行マネーが信頼の基盤であり、ステーブルコインは銀行決済のように中央銀行のバランスシート上で決済されるわけではないと指摘しています（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")）。
-> - **ステーブルコインは依然として競争上の圧力となっています。** BISは、2026年4月初旬の世界のステーブルコイン時価総額を約3,150億ドルと推定し、そのおよそ98％が米ドル建てであるとしています（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")）。
-> - **Deutsche Bankは、トークン化預金をプログラム可能な商業銀行マネーとして位置づけています。** 2026年のデジタルマネーに関する論文では、トークン化預金を既存の銀行モデルをプログラム可能な環境に拡張するものと位置づけています（[Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")）。
-> - **規制はカテゴリーの境界線を引きつつあります。** FDICの2026年の提案では、トークン化預金およびデポジット・トークンを分散型台帳技術によって記録された預金負債として論じ、トークン化預金は支払い用ステーブルコインではないと明示しています（[FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")）。
-> - **HSBCは2026年において最も発達した銀行プログラムを有しています。** HSBC Tokenised Deposit Serviceは、香港、シンガポール、英国、ルクセンブルク、米国にわたりUSD、GBP、EUR、HKD、SGDで稼働中です。HSBC Orionは英国Digital Gilt Instrument（DIGIT）パイロットの指定インフラであり、HSBC Gold Tokenは割当済みの現物地金をトークン化し、HSBCはCantonおよびProject Ensemble上でのクロスネットワークのアトミック決済と、Quantinuumと連携した耐量子セキュリティを試行しています（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。
-> - **実務上の現状はパイロットから製品への移行段階です。** 銀行はウォレット、決済ワークフロー、機関投資家向けのユースケースを構築していますが、相互運用性、法的ファイナリティ、流動性の取扱い、ネットワーク標準は依然として未解決です。
+> - **市場の現状。** 2026年のトークン化預金は大規模展開前ですが、もはや理論ではありません。パイロットは稼働中、銀行の提案が形成されつつあり、英国のマルチバンク・プログラムは2026年半ばまで実施され、HSBC、NatWest、Lloyds、Barclays、Nationwide、Santanderがマーケットプレイス決済、住宅ローン借換え、デジタル資産決済を検証しています（[Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")）。
+> - **競争上の圧力。** ステーブルコインは大規模かつ拡大中であり（BISは2026年4月初旬の時価総額を約3,150億ドルと推定、約98％がUSD建て）、預金トークンのスケジュールを加速させています。ステーブルコインはオープン・エコシステムの到達範囲、暗号資産ネイティブの流動性、グローバル・リテールで優位、一方でトークン化預金は規制上の安心、預金保険、トレジャリー・ワークフローで優位です（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")）。
+> - **規制上の境界線。** FDICの2026年の提案は、トークン化預金をDLT上に記録された預金負債として分類し、支払い用ステーブルコインから明示的に区別することで、米国の規制境界を強化しています（[FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")）。
+> - **主導的な銀行プログラム。** JPMorganのJPM CoinはKinexys上で日々約20億ドルのホールセール決済を処理しており、預金トークンとして最長の本番実績を有しています。HSBCは最も完成度の高いマルチトラック・スタックを構築：TDSはHK、SG、UK、LU、USでUSD/GBP/EUR/HKD/SGDをサポート、HSBC Orionは英国Digital Gilt Instrument（DIGIT）パイロットの基盤、HSBC Gold Tokenは割当済み地金をトークン化、CantonおよびProject Ensemble上でクロスネットワーク・アトミック決済を試行、QuantinuumとのPQCを実装しています（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。
+> - **すべてを決定する設計上の選択。** 3つの台帳・法的パターンが支配的です。トークン*が*預金そのもの（最もクリーンなアトミック決済、最も困難な稼働時間）、トークンが従来型預金を*表象する*（法的にはより簡素、消し込みの負荷、JPM CoinとHSBC TDSが該当）、またはトークンが従来型レールに対する*指図レイヤー*である（プログラム可能性の主張が最も弱い）。
+> - **金利の経済性は規制と同じくらい重要です。** トークン化預金が原資産の預金と同等の金利を稼ぐかどうかは、トレジャリー・グレードの問いです。預金経済を維持する設計は現金管理にスケールしますが、金利を生まない決済専用トークンは、金利を支払う競合に法人残高を奪われるでしょう。
+> - **制約条件は相互運用性と法的ファイナリティ。** 法域間の法の抵触、DLTの不変性と法的取消可能性の不整合、断片化されたプラットフォーム（Corda、Canton、Besu、Orion、ERC-20対Canton-nativeトークン形式）が今や制約条件であり、技術そのものではありません。
 >
 ---
 
@@ -130,6 +132,8 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 ### 1. 英国銀行のパイロットが実用的なユースケースを定義しつつある
 
 Lloydsは、Great British Tokenised Depositsを業界横断のイニシアチブと位置づけ、個人間マーケットプレイス決済、住宅ローン借換え、デジタル資産決済の3つの具体的なユースケースを示しています（[Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")）。これらは、資金移動と信頼、タイミング、条件付き決済を組み合わせるため、初期の試行として理にかなったものです。
+
+英国のマルチバンク・パイロットは真にマルチバンクです。参加銀行のリスト――HSBC、NatWest、Lloyds、Barclays、Nationwide、Santander――は、英国のリテールおよびコマーシャル預金残高の大半をカバーしており、プログラムは2026年半ばまで実施されます。これが重要なのは、銀行間相互運用性のないトークン化預金は単一銀行の製品機能にすぎないからです。英国のパイロットは、実際にクロスバンクのケースを検証している、世界で数少ない実証実験の一つです。
 
 マーケットプレイス決済は不正削減と販売者の信頼を検証します。住宅ローン借換えは複数当事者によるプロセス自動化を検証します。デジタル資産決済は、トークン化マネーとトークン化金融商品の間でのDVP（資金と証券の同時決済）を検証します。
 
@@ -151,37 +155,55 @@ BISは、Project Agoráを中央銀行および民間部門と協働してクロ
 
 ここでトークン化預金はホールセール・インフラとなります。中核的な問いは、商業銀行マネー、中央銀行マネー、トークン化資産が、法的ファイナリティ、流動性管理、貨幣の単一性を損なうことなく、いかに一体的に決済されるかです。
 
-## HSBCのトークン化スタック：2026年における最も発達した銀行プログラム
+## 2026年における最も発達した銀行プログラム
 
-グローバルなTier-1銀行の中で、HSBCは今日の本番環境において最も完成度の高いトークン化預金およびデジタル資産スタックを構築しています。HSBCは、無担保のステーブルコインや第三者発行のデジタル通貨に先んじて、トークン化預金を従来型バンキングと分散型インフラとを橋渡しするための主要な手段として明確に位置づけています（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。
+独立に取り上げる価値のあるプログラムは3つあります。ホールセール預金トークンというカテゴリーを切り拓き、本番規模で運営しているJPMorgan。預金トークン、証券、現物資産、暗号にまたがる最も完成度の高いマルチトラック・スタックを有するHSBC。そして公的な露出は少ないものの実質的に活発な、欧州およびアジアのプログラム群です。トークン化預金を単一の業界の動きとして扱うと、これらのスタックが銀行のデジタル・マネー提供のあるべき姿について異なる賭けをしているという事実を見落とすことになります。
 
-### Tokenised Deposit Service（TDS）
+### JPMorgan：JPM Coin、Onyx、そしてKinexysプラットフォーム
+
+JPMorganは、業界の多くが「トークン化預金」という用語を公に使う4年前の2019年にJPM Coinを開始しました。Onyx（現在はKinexysに改称）――JPMorganのパーミッションド・ブロックチェーン・プラットフォーム――上で稼働し、ホールセールの法人クライアント・フロー、すなわち機関投資家のトレジャリー・スイープ、日中流動性の移動、そして増加するトークン化レポを決済しています。2026年までにKinexysは、ホールセール取引において日々約20億ドル規模を処理しており、これによりJPMorganは世界で稼働中の預金トークン決済の単独最大の運営者となっています。
+
+この歴史は2つの理由で重要です。第一に、JPMorganは他の銀行がまだ設計段階にある運用上の論点――消し込み、紛争処理、日中流動性の挙動、障害モード――において最長の本番実績を持っています。第二に、プラットフォームはマルチアセットです。Kinexysは預金トークンを超え、トークン化レポ、FX決済、担保のモビリティへと拡張しており、これによりJPMorganは点対点の統合ではなく、単一の台帳上でのDVP（受渡し対価決済）を提供する位置にあります。
+
+その裏面として、JPM Coinは設計上、クローズド・ネットワークの提案です。JPMorganのレール上、JPMorganの顧客間、JPMorganが運営するチェーン上で決済されます。これは単一銀行のトークン化預金がいかにスケールできるかを示す業界で最も強力な例であると同時に、相互運用性なくしては預金トークンがホールセール・インフラではなく囲い込み（ウォールド・ガーデン）になってしまうというBISの批判を最も強く裏付ける例でもあります。
+
+### HSBC：預金トークンからトークン化ゴールドまでのマルチトラック・スタック
+
+HSBCの賭けはより広範です。JPMorganが1つのホールセール・ユースケースを深掘りしたのに対し、HSBCは預金トークン、機関証券、現物資産、暗号にわたって並行して構築してきました。HSBCは、無担保のステーブルコインや第三者発行のデジタル通貨に先んじて、トークン化預金を従来型バンキングと分散型インフラとを橋渡しするための主要な手段として明確に位置づけています（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。
+
+#### Tokenised Deposit Service（TDS）
 
 HSBC Tokenised Deposit Serviceは、法人の法定通貨残高を1対1の比率でデジタルトークンに変換し、資金を完全に規制下に置いたまま銀行のバランスシート上に保持します（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。TDSは、香港、シンガポール、英国、ルクセンブルク、米国の5法域で稼働しており、USD、GBP、EUR、HKD、SGDの5通貨で即時取引をサポートします。中核機能はトレジャリー・グレードです。大手法人および機関投資家の顧客は、24時間365日のスマートコントラクトによるプログラム可能性を通じて、SWIFTのカットオフタイム、バッチウィンドウ、時差の障壁を解消し、数秒単位でクロスボーダーの清算と決済を行えます。
 
 この製品群は、「トークン化預金は依然として理論上の存在にすぎない」という見方に対する最も強力な反証です。ネットワーク規模ではなお理論上の存在ですが、HSBCの内部ではもはや理論上の存在ではありません。
 
-### HSBC Orionとデジタル資本市場
+#### HSBC Orionとデジタル資本市場
 
 HSBC Orionは、トークン化された証券の発行、決済、カストディを行うための同行独自の機関投資家向けDLTプラットフォームです。HM Treasuryは、英国の画期的なDigital Gilt Instrument（DIGIT）パイロット、すなわち英国におけるトークン化された公的債務の主権グレードのリファレンス・ケースの基盤プラットフォーム・インフラとして、HSBC Orionを指定しています。HSBC Orionはまた、グリーン債やソブリン債のトランシェを含む、香港政府および欧州投資銀行による大規模なデジタル債券発行も支援してきました。
 
 トークン化預金にとってこれが重要なのは、共有台帳上でのDVP（資金と証券の同時決済）の前提条件が、デポジット・トークンとトークン化された証券との決済パリティだからです。機関投資家向け証券発行プラットフォームを持たないデポジット・トークンには、決済すべき相手が存在しません。
 
-### 実物資産のトークン化：HSBC Gold Token
+#### 実物資産のトークン化：HSBC Gold Token
 
 HSBCは同じアンカー・モデルを、リテール領域における実物資産にも拡張しています。HSBC Gold Tokenは、HSBC HKのモバイルアプリ利用者に対し現物金の少額持分を提供するもので、英国においては機関投資家アクセスが提供されています。各トークンは、HSBCの機関向け金庫に保管された割当済みの現物地金により100％裏付けられており、これは同行がデポジット・トークンに適用するのと同じ規制および運用面のアンカー・パターンです。
 
-### ネットワーク間相互運用性と耐量子トークン化
+#### ネットワーク間相互運用性と耐量子トークン化
 
 HSBCは、Canton Networkおよび香港金融管理局（HKMA）のProject Ensembleを用いて、外部ネットワーク上でのトークン化預金のアトミック決済を試行してきました。これは、単一銀行トークンに対するBIS的批判が要求する相互運用性の要素です。トークン化預金は、単一銀行内のみならずネットワークを越えて決済できるようになって初めて、ホールセール・インフラとなります。
 
 並行して、HSBCはQuantinuumと提携し、トークン化された金台帳に耐量子暗号セキュリティを直接実装しました。これは、敵対者が暗号化された台帳データを今日収集し、将来の量子コンピュータでの復号を見込んで備える「Store Now, Decrypt Later」（SNDL）攻撃への防御的対応です。本番環境のトークン台帳における耐量子暗号はまだ業界標準ではありません。HSBCは、PQC移行期限を越えて存続することが想定されるトークン化プラットフォームにとって、これを必須要件として扱う数少ない銀行のひとつです。
 
-### 規制対象ステーブルコインとデポジット・トークンの併存
+#### 規制対象ステーブルコインとデポジット・トークンの併存
 
 HSBCはステーブルコイン領域を完全に無視しているわけではありません。同行はピアツーピア決済および投資取引決済向けに規制対象ステーブルコインを試行するため、HKMAのライセンスを取得しています。ただし、それはトークン化預金という中核を置き換えるものではなく、補完するものです。HSBCのスタック全体を通じて一貫したメッセージは明確です。トークン化預金が同行のデジタルマネー提供の基軸であり、規制対象ステーブルコインは、デポジット・トークンによる債権関係が構造的に不都合となるユースケースへの拡張手段である、ということです。
 
+### その他の活発なプログラム
+
+JPMorganとHSBC以外にも、公的な開示は限定的であってもネットワークの全体像にとって重要なプログラムがいくつかあります。Société GénéraleのSG-FORGEは、ユーロ建てデジタル債券および規制対象ユーロ・ステーブルコインを預金トークン業務と並行して発行しており、Société Généraleを欧州の規制下で両トラックを運営する稀な立場に置いています。Standard Charteredは、Zodia Custodyおよび自社のシンガポール拠点のパイロットを通じて、トークン化預金とトークン化現物資産で活動的です。Goldman SachsのGS DAPプラットフォームは、デジタル債券を発行し、トークン化担保をサポートしています。より広い含意は明確です。預金トークンの能力は今や、トランザクション・バンキングで競争力を維持しようとするあらゆるグローバル・ホールセール銀行にとってのテーブル・ステークスであり、より興味深い問いは、誰が最初に構築するかではなく、誰が誰と相互運用するかにあります。
+
 ## トークン化預金、ステーブルコイン、CBDCの比較
+
+3つの手段が同じ役割――プログラム可能で決済グレードのデジタル・マネー――を巡って競合していますが、それらは根本的に異なる債権構造の上に立っています。債権の選択がそれ以外のすべてを決定します。法的保護、健全性上の扱い、資産の決済場所、そして保有者が暗黙のうちに信頼しているネットワーク。下記の表は4つの候補を5つの軸に整理し、その下のプロセが実際にそれぞれがどこで勝るかを解きほぐします。
 
 | 手段 | 債権の種類 | 最適な用途 | 2026年の現状 | 主要リスク |
 |---|---|---|---|---|
@@ -190,13 +212,25 @@ HSBCはステーブルコイン領域を完全に無視しているわけでは�
 | **ホールセールCBDC** | 中央銀行マネー | 銀行間決済およびトークン化市場インフラ | 中央銀行プロジェクトを通じた積極的な探求 | 設計、プライバシー、スケーラビリティ、政治的マンデート |
 | **リテールCBDC** | 一般利用向けの中央銀行マネー | 公共のデジタル現金代替 | 世界各地で進捗にばらつき | 普及、プライバシー、銀行の中抜き |
 
+### トークン化預金が勝る領域
+
+オンバランスシートの商業銀行マネーは、ステーブルコインがまだ獲得しなければならない規制上の安心を備えています。トークン化預金は、預金保険、健全性資本の扱い、既存のAML／制裁規制を承継します。法人トレジャラーにとっては、新たなカウンターパーティ・リスクも、検証すべき新たな準備金監査もないことを意味します。また、既に法人が保有している銀行口座からオンランプします――交換所、準備金発行者、新規のカストディは不要です。BISとFDICはいずれもこの点を強調しています。債権が既存の法的枠組みで既に理解されている場所に位置する場合、貨幣の単一性は維持されます（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")；[FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")）。
+
+### ステーブルコインが依然として勝る領域
+
+3つの領域です。第一に、オープン・エコシステムの到達範囲。ステーブルコインはDeFi、暗号ネイティブのトレジャリー、そして銀行APIを統合することのないロングテールのウォレットと結合します。第二に、グローバルなリテール流通。ドル建てステーブルコインは、現地通貨銀行制度が脆弱な市場において既に事実上の貯蓄手段となっています。第三に、24時間365日市場と暗号決済。TDSスタイルの常時稼働銀行レールがあっても、ステーブルコインは暗号流動性のネイティブな単位であり、当面はそうあり続けます。両者は厳密な代替物ではなく、競争上の境界は主にユースケースが規制された銀行の境界の内側にあるか外側にあるかという点にあります。
+
 ## 銀行が構築すべきもの
 
 ### 台帳と法的アーキテクチャ
 
-法的な債権関係は明確でなければなりません。トークンは預金そのものなのか、預金の表象なのか、それともオフチェーンの預金口座に対する指図レイヤーなのか。FDICの2026年の規則案では、トークン化預金を分散型台帳技術によって記録された預金負債として明示的に論じ、支払い用ステーブルコインと区別しています（[FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")）。
+本番展開を支配する設計パターンは3つあります。第一は「トークン*が*預金そのもの」――DLT台帳自体が記録のシステムであり、オンチェーンの残高が法的債権を保有します。これはアトミック決済にとって最もクリーンなモデルであり、Project Agoráや統合台帳の構想に最も近いものですが、銀行に台帳の稼働時間をコア・バンキングの稼働時間として扱うことを強います。第二は「トークンが預金を表象する」――従来型のコア・バンキング口座が法的記録として残り、トークンはそれを追従する鏡像となります。JPM CoinとHSBC TDSはこちら寄りに位置します。法的・運用的には簡素ですが、絶えざる消し込みを必要とし、法的拘束力のあるレッグがオフ台帳に存在するため、アトミックDvPはより困難になります。第三は「指図レイヤーとしてのトークン」――トークンは預金を表象することは一切なく、既存レール（CHAPS、Fedwire、TARGET2）上で従来型の決済をトリガーします。これは展開が最も容易ですが、実際のプログラム可能なマネーとしての主張は最も弱く、一部の銀行がトークン化預金と称して出荷しているものは実際にはSWIFTパイプ上のスマートコントラクト・フロントエンドにすぎません。
 
-顧客資金が大規模に移動する前に、銀行はこの明確化を必要とします。
+FDICの2026年の規則案では、前者2つを分散型台帳技術によって記録された預金負債として明示的に認め、支払い用ステーブルコインと区別しています（[FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")）。第三のものは、預金関係とトークンが収束しないため、より厳しい規制上の扱いを受けます。
+
+#### 法的ファイナリティが難問である理由
+
+「法的ファイナリティ」は、トークン化預金のロードマップで最も頻繁に登場するが、最も解きほぐされていない単一のフレーズです。その下には3つのものが実際に潜んでいます。第一に、法の抵触。英国の銀行が発行したトークン化預金が、シンガポールで運営されるノードを通じてルクセンブルクで登録されたトークン化された証券に対しアトミックに決済される場合、どの法域の決済ファイナリティ制度がその取引を支配するのか。第二に、DLTの不変性と取消しの法的権利との不整合。銀行決済は、裁判所命令、制裁指定、または運用ミスにより取消されることがありますが、不変の台帳はそうではありません。これにより、不変性の物語を破ることなく法的に堅牢でなければならない「取消しレイヤー」が必要となります。第三に、オンチェーン・ファイナリティそのものの問題。確認されたブロックは法的決済として扱われるのか、それとも対応するオフチェーンの会計処理だけがそうなのか。これら3つが規制レベルで――参加銀行間の二者間ではなく――解決されるまで、クロスネットワークのアトミック決済はパイロットであり、インフラではありません。
 
 ### ウォレットおよび本人確認の管理
 
@@ -204,11 +238,31 @@ HSBCはステーブルコイン領域を完全に無視しているわけでは�
 
 最も重要な運用上の機能はポリシーかもしれません。トレジャラーは、特定の閾値や取引相手規則の下で、トークン化預金の動きを誰が開始、承認、決済、取消し、または異議申立てできるかを定義できるべきです。
 
+### 金利およびトレジャリーの経済性
+
+金利は、シニア・トレジャラーが最初に問う質問であり、ほとんどのトークン化預金のプレスリリースが回避するものです。法人が5,000万ドルを48時間トークン化預金ウォレットに留め置き、決済レッグを待っている場合、その残高は銀行が従来型のオーバーナイト預金に支払うのと同じ金利を稼ぐのか、それとも不毛なのか。2つのパターンが現れつつあります。一部の銀行は、トークン化預金を原資産の預金と経済的に同一として扱います。法人は金利を維持し、銀行は残高を簿価に保ち、トークンはプログラム可能性のレイヤーとなります。他は、資金が移動中であると推定されるため、金利を支払わない取引浮動として扱います。最初のパターンは、既存の預金経済の関係を維持し、現金管理にスケールする唯一の設計です。第二のパターンは本質的にクローズドループの決済手段であり、最初のパターンを提供する競合に法人残高を奪われるでしょう。これがまた、「トークン化預金対ステーブルコイン」が単に規制問題ではなく、部分的に金利経済性の問題でもある理由です。高金利環境では、金利を生まない決済トークンは、金利を支払うトークン化預金や、ステーブルコインと並走する利回りトークン化MMFのいずれに対しても構造的不利を抱えます。
+
 ### 相互運用性レイヤー
 
 単一銀行のトークン化預金は有用ですが限界があります。複数銀行間の相互運用性こそがネットワーク効果の起点です。これには、トークン形式、メッセージング、本人確認、決済ファイナリティ、紛争処理、AMLデータ、ウォレットの可搬性、そしてトークン化預金、従来型預金、ステーブルコイン、CBDC、トークン化資産間の変換に関する標準が必要です。
 
+技術面は断片化しています。パーミッションド型DLTの既存勢力には、R3 Corda（Standard Charteredなどがトークン化預金で使用）、Canton Network（HSBCがクロスネットワーク決済の試行で、Goldman SachsのGS DAPが使用）、Hyperledger Besu（Kinexys下でのJPMorgan由来のEthereumバリアント）、そしてHSBC Orionのような独自スタックが含まれます。トークン形式の選択も未確定です。一部のネットワークはより広いEthereumツールと結合できるようERC-20由来のコントラクトを使用し、他はIBCスタイルまたはCanton-nativeのトークン・プリミティブを使用します。2026年における現実的な答えは、単一のスタックが勝者となったわけではなく、トークン化預金をスケールさせる銀行は、単一プラットフォームに賭けるのではなく、相互運用性のブリッジ（CantonとBesu間のアトミック決済プロトコル、ISO 20022のオンチェーン・メッセージ形式へのマッピング）を構築している銀行であるということです。
+
 リスクは、銀行ごとの閉鎖的な囲い込みが乱立することです。機会は、銀行への信頼を維持しつつデジタル決済を改善する、プログラム可能な商業銀行マネー・レイヤーです。
+
+## 障害モード：スタックが破綻する箇所
+
+トークン化預金は概ね楽観的なトーンで語られています。障害モードは、最終的な規制境界を形作るため、真剣に扱う価値があります。
+
+**預金トークンにおけるスマートコントラクトのバグ。** 預金トークンのスマートコントラクトのバグは通常のソフトウェア障害ではなく、商業銀行マネーにおける残高誤りの事態となり得ます。銀行は形式検証されたコントラクト監査、顧客残高の移行を必要としないアップグレード経路、そして従来型預金への変換性を破ることなくプログラム可能な決済を停止できるサーキット・ブレーカーが必要です。
+
+**法域横断的な銀行破綻。** 5つの法域でトークン化預金を発行している銀行が破綻した場合、預金保険制度は各国レベルで適用されますが、台帳はグローバルです。破綻処理当局は、これが預金者優先、リング・フェンス規則、または銀行閉鎖時点で誰が実際にトークンを所有するかという問題とどう相互作用するかをストレステストしていません。単一法域の預金トークンはこの問題を回避しますが、多法域トークンは曝露されています。
+
+**二極化した預金における流動性危機。** 従来型預金とトークン化預金は、ストレス事象において非常に異なる挙動をする可能性があります。トークン化預金がスマートコントラクトを通じて24時間365日非銀行ウォレットに移動できる一方で、従来型預金が日次のカットオフに直面する場合、トークン化側のほうが速く動きます。これは通常時には機能ですが、銀行取付け騒ぎでは不安定化要因となります。流動性カバレッジ比率および業務継続性の枠組みは、この非対称性を念頭に書かれてはいません。
+
+**単一DLTベンダーへの運用依存。** 多くの銀行の預金トークン・プラットフォームは、単一のパーミッションド型DLTスタック上で稼働しています。クラウドに既に適用されているDORAスタイルの批判はここにも適用されます。ベンダーでのスタック障害は、今や重要サービスの障害です。緩和策は、単一スタックのマルチリージョン展開ではなく、マルチスタックの能力です。
+
+これらはトークン化預金を構築しない理由ではありません。スケール後にコントロールを後付けするのではなく、初日からプラットフォームを重要な金融サービス・インフラとして扱う理由です。
 
 ## 銀行類型別の意味合い
 
@@ -230,9 +284,7 @@ HSBCはステーブルコイン領域を完全に無視しているわけでは�
 
 ## 結論
 
-2026年のトークン化預金は、かつてのリアルタイム決済と同じ段階にあります。価値は明白ですが、実装にはばらつきがあり、ネットワーク調整に依存しています。商業銀行マネーの強みを維持しつつ、ユーザーが今や期待するプログラム可能性、速度、相互運用性に応えることができれば、銀行業界はステーブルコインに対する説得力のある答えを持つことになります。
-
-現状は明確です。パイロットは稼働中で、銀行の提案は形をなしつつあり、規制カテゴリーは固まりつつあり、ホールセール領域の実験は進展しています。残された問いは、トークン化預金が存在するかどうかではなく、意味を持つほど迅速に相互運用できるかどうかです。
+2026年のトークン化預金は、10年前のリアルタイム決済と同じ位置にあります。価値は明白ですが、実装にはばらつきがあり、ネットワーク調整によりゲートされています。パイロットは稼働中で、主導的な銀行スタック（JPMorganのKinexys、HSBCのTDS＋Orion、英国マルチバンク・プログラム）は各々の境界内で本番グレードであり、規制カテゴリー（FDIC、BIS、HKMA）は固まりつつあり、技術スタックはもはや制約条件ではありません。残るのは、相互運用性、法的ファイナリティ、金利の経済性――業界が解決できる3つの問題ですが、それは銀行が2026–2027年を標準策定の機会として扱う場合に限られます。リスクはトークン化預金の出荷に失敗することではなく、12個の互換性のない囲い込みとして出荷されることです。
 
 ## よくある質問
 
@@ -260,15 +312,11 @@ HSBCです。HSBC Tokenised Deposit Serviceは、香港、シンガポール、�
 
 - Lloyds Banking Group, (2026). [Digital assets in 2026: building the future of finance in the UK ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
 - HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").
+- JPMorgan, (2026). [Kinexys (formerly Onyx) digital assets platform ⧉](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan").
 - BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate").
 - Deutsche Bank flow, (2026). [Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money").
 - FDIC, (2026). [GENIUS Act requirements and standards proposed rule ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").
 - Cambridge Centre for Alternative Finance, (2026). [Tokenised money: Use cases, interoperability and regulation ⧉](https://www.jbs.cam.ac.uk/wp-content/uploads/2026/02/2026-ccaf-tokenised-money-use-cases-interoperability-and-regulation.pdf "Tokenised money report").
-<!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-21">2026-05-21</time>.</p>
-<!-- enrich-end -->
-
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
 <p class="post-reviewed">Last reviewed <time datetime="2026-05-21">2026-05-21</time>.</p>

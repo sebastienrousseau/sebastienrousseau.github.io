@@ -95,8 +95,8 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 <ul class="post-lead-takeaways">
   <li><strong>De ce contează depozitele tokenizate acum.</strong> Stablecoinurile au scos la iveală o cerere pentru bani digitali programabili, disponibili permanent.</li>
   <li><strong>Statutul în 2026: de la pilot la produs, încă nu la scară de rețea.</strong> Lloyds identifică Great British Tokenised Deposits drept o inițiativă a industriei și oferă trei cazuri concrete de utilizare: plăți pe marketplace între persoane, refinanțarea ipotecilor și decontarea activelor digitale (Lloyds Banking Group).</li>
-  <li><strong>Depozite tokenizate vs. stablecoinuri vs. CBDC.</strong> Pretenția juridică trebuie să fie clară.</li>
-  <li><strong>Ce trebuie să construiască băncile.</strong> Pretenția juridică trebuie să fie clară.</li>
+  <li><strong>Cele mai dezvoltate programe bancare în 2026.</strong> Trei programe merită profilate în mod individual: JPMorgan, care a deschis categoria de deposit-token wholesale și o operează la scară de producție; HSBC, care are cel mai complet stack multi-track…</li>
+  <li><strong>Depozite tokenizate vs. stablecoinuri vs. CBDC.</strong> Trei instrumente concurează pentru același rol — bani digitali programabili la nivel de decontare — dar stau pe structuri de revendicare fundamental diferite.</li>
 </ul>
 <p class="post-lead-related"><strong>Lecturi conexe:</strong> <a href="https://sebastienrousseau.com/2026-05-16-best-cloud-infrastructure-architecture-2026">The Best Cloud Infrastructure Architecture in 2026: An AI-Native, Multi-Cloud, Quantum-Aware Blueprint for Financial Services</a>.</p>
 </aside>
@@ -108,14 +108,13 @@ Depozitele tokenizate devin cel mai important răspuns al sectorului bancar la s
 
 > **Rezumat executiv / Concluzii esențiale**
 >
-> - **Depozitele tokenizate sunt încă pre-scalare, dar nu mai sunt teoretice.** Lloyds descrie proiecte-pilot care utilizează depozite tokenizate pentru decontarea tranzacțiilor cu digital gilts tokenizate și lucrările sectoriale pentru Great British Tokenised Deposits ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
-> - **Cazurile de utilizare britanice sunt concrete.** Cazurile de utilizare pentru Great British Tokenised Deposits includ plăți pe marketplace, refinanțarea ipotecilor și decontarea activelor digitale ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
-> - **BIS împinge dezbaterea înapoi spre sistemul monetar pe două niveluri.** BIS susține că banii băncii centrale sunt ancora încrederii și că stablecoinurile nu se decontează în bilanțul băncii centrale așa cum o fac plățile bancare ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
-> - **Stablecoinurile rămân presiunea competitivă.** BIS estimează capitalizarea globală a stablecoinurilor la aproximativ 315 miliarde USD la începutul lunii aprilie 2026, cu aproximativ 98% denominate în dolari americani ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
-> - **Deutsche Bank prezintă depozitele tokenizate ca bani programabili de bancă comercială.** Lucrarea sa din 2026 despre banii digitali plasează depozitele tokenizate drept o extindere a modelului bancar existent în medii programabile ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
-> - **Reglementarea trasează limitele categoriilor.** Propunerea FDIC din 2026 discută tokenized deposits și deposit tokens ca obligații de depozit înregistrate prin DLT și clarifică faptul că depozitele tokenizate nu sunt payment stablecoins ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
-> - **HSBC deține cel mai dezvoltat program bancar în 2026.** HSBC Tokenised Deposit Service este operațional în Hong Kong, Singapore, Regatul Unit, Luxemburg și Statele Unite, în USD, GBP, EUR, HKD și SGD; HSBC Orion este infrastructura desemnată pentru pilotul britanic Digital Gilt Instrument (DIGIT); HSBC Gold Token tokenizează lingouri fizice alocate; HSBC a testat decontarea atomică inter-rețele pe Canton Network și în cadrul Project Ensemble, precum și securitatea post-cuantică în parteneriat cu Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
-> - **Statutul practic este „de la pilot la produs”.** Băncile construiesc portofele, fluxuri de decontare și cazuri instituționale de utilizare, dar interoperabilitatea, finalitatea juridică, tratamentul lichidității și standardele de rețea rămân deschise.
+> - **Statutul pieței.** Depozitele tokenizate în 2026 sunt pre-scalare, dar nu mai sunt teoretice: piloții sunt în viu, propunerile bancare se formează, iar programul multi-bancar din Regatul Unit se derulează până la mijlocul anului 2026, HSBC, NatWest, Lloyds, Barclays, Nationwide și Santander testând plăți pe marketplace, refinanțări de ipoteci și decontări de active digitale ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
+> - **Presiunea competitivă.** Stablecoinurile sunt mari și în creștere (BIS estimează o capitalizare de aproximativ 315 miliarde USD, ~98% denominate în USD la începutul lunii aprilie 2026) și impun calendarul deposit-tokenelor. Câștigă prin acoperirea ecosistemului deschis, lichiditatea crypto-native și retailul global; depozitele tokenizate câștigă prin confortul reglementar, asigurarea depozitelor și fluxul de trezorerie ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+> - **Limitele regulamentare.** Propunerea FDIC din 2026 clasifică depozitele tokenizate drept obligații de depozit înregistrate pe DLT și le distinge explicit de payment stablecoins, întărind perimetrul american ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+> - **Programele bancare de top.** JPM Coin de la JPMorgan pe Kinexys gestionează ~2 miliarde USD în decontări wholesale zilnice și are cel mai îndelungat istoric live de deposit-token. HSBC are cel mai complet stack multi-track: TDS în HK, SG, UK, LU, US în USD/GBP/EUR/HKD/SGD; HSBC Orion stă la baza pilotului britanic Digital Gilt Instrument (DIGIT); HSBC Gold Token tokenizează aur alocat; decontarea atomică inter-rețele a fost testată pe Canton + Project Ensemble; PQC implementată cu Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+> - **Alegerile de design care decid totul.** Domină trei tipare ledger-and-legal: tokenul *este* depozitul (cea mai curată decontare atomică, cel mai greu uptime), tokenul *reprezintă* un depozit convențional (mai simplu juridic, supracost de reconciliere, cu care seamănă JPM Coin și HSBC TDS) sau tokenul este un *strat de instrucțiuni* peste rails convenționale (cea mai slabă pretenție de programabilitate).
+> - **Economia randamentului contează la fel de mult ca reglementarea.** Dacă depozitele tokenizate generează aceeași dobândă ca depozitul subiacent este o întrebare de nivel trezorier. Designurile care păstrează economia depozitului scalează pentru cash management; tokenele de plată care nu plătesc randament vor pierde solduri corporative către orice concurent care plătește.
+> - **Constrângerile de bază sunt interoperabilitatea și finalitatea juridică.** Conflictul de legi între jurisdicții, neconcordanța dintre imutabilitatea DLT și reversibilitatea legală, precum și platformele fragmentate (Corda, Canton, Besu, Orion, ERC-20 vs. formate token native Canton) sunt acum constrângerile critice — nu tehnologia în sine.
 >
 ---
 
@@ -130,6 +129,8 @@ Distincția contează. Un stablecoin este de regulă o pretenție asupra unui em
 ### 1. Piloții băncilor britanice definesc cazuri practice de utilizare
 
 Lloyds identifică Great British Tokenised Deposits drept o inițiativă a industriei și oferă trei cazuri concrete de utilizare: plăți pe marketplace între persoane, refinanțarea ipotecilor și decontarea activelor digitale ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")). Acestea sunt teste timpurii rezonabile, deoarece combină mișcarea banilor cu încrederea, sincronizarea și decontarea condiționată.
+
+Pilotul britanic multi-bancar este cu adevărat multi-bancar. Lista participanților — HSBC, NatWest, Lloyds, Barclays, Nationwide și Santander — acoperă majoritatea soldurilor de depozit retail și comerciale din Regatul Unit, iar programul se derulează până la mijlocul anului 2026. Acest lucru contează pentru că depozitele tokenizate fără interoperabilitate inter-bancară sunt doar caracteristici de produs ale unei singure bănci; pilotul britanic este unul dintre puținele experimente live din lume care testează efectiv cazul cross-bank.
 
 Plățile pe marketplace testează reducerea fraudei și încrederea vânzătorului. Refinanțarea ipotecilor testează automatizarea proceselor cu mai multe părți. Decontarea activelor digitale testează livrarea contra plății (delivery-versus-payment) între banii tokenizați și instrumentele tokenizate.
 
@@ -151,37 +152,55 @@ BIS prezintă Project Agorá drept o colaborare cu băncile centrale și sectoru
 
 Aici depozitele tokenizate devin infrastructură wholesale. Întrebarea esențială este cum se decontează împreună banii de bancă comercială, banii băncii centrale și activele tokenizate fără a compromite finalitatea juridică, controalele de lichiditate sau unicitatea monetară.
 
-## Stack-ul de tokenizare al HSBC: cel mai dezvoltat program bancar în 2026
+## Cele mai dezvoltate programe bancare în 2026
 
-Dintre băncile globale de Tier 1, HSBC a asamblat cel mai complet stack de depozite tokenizate și active digitale aflat astăzi în producție. HSBC poziționează explicit depozitul tokenizat drept instrumentul său de elecție pentru a face puntea între bancarul tradițional și infrastructura descentralizată, înaintea stablecoinurilor neacoperite sau a monedelor digitale ale terților ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+Trei programe merită profilate în mod individual: JPMorgan, care a deschis categoria de deposit-token wholesale și o operează la scară de producție; HSBC, care are cel mai complet stack multi-track de la deposit tokens la titluri, active reale și criptografie; și o serie de programe europene și asiatice mai discrete public, dar material active. Tratarea depozitelor tokenizate ca o mișcare unică a industriei ar rata faptul că aceste stack-uri pariază diferit asupra a ceea ce ar trebui să fie oferta de bani digitali a unei bănci.
 
-### Tokenised Deposit Service (TDS)
+### JPMorgan: JPM Coin, Onyx și platforma Kinexys
+
+JPMorgan a lansat JPM Coin în 2019, cu patru ani înainte ca majoritatea industriei să folosească public sintagma „deposit tokenizat”. Funcționează pe Onyx (acum rebranduit Kinexys), platforma blockchain permissioned a JPMorgan, și decontează fluxuri wholesale ale clienților corporativi — în principal sweeps de trezorerie instituțională, mișcări intraday de lichiditate și, din ce în ce mai mult, repo tokenizat. Până în 2026, Kinexys procesează aproximativ 2 miliarde USD pe zi în tranzacții wholesale, ceea ce face din JPMorgan cel mai mare operator viu de decontare deposit-token din lume.
+
+Această istorie contează din două motive. În primul rând, JPMorgan are cel mai îndelungat istoric de producție privind aspectele operaționale — reconciliere, gestionarea disputelor, comportamentul lichidității intraday și modurile de outage — pentru care alte bănci încă proiectează. În al doilea rând, platforma este multi-activă: Kinexys s-a extins dincolo de deposit token în repo tokenizat, decontare FX și mobilitate de colateral, ceea ce poziționează JPMorgan să livreze delivery-versus-payment pe un singur ledger, nu prin integrări point-to-point.
+
+Reversul medaliei este că JPM Coin este, prin design, o propunere de rețea închisă. Decontează pe rails-urile JPMorgan, între clienții JPMorgan, pe un chain operat de JPMorgan. Este cel mai puternic exemplu din industrie despre cum un deposit tokenizat la o singură bancă poate scala — și totodată cea mai puternică ilustrare a criticii BIS conform căreia, fără interoperabilitate, deposit tokens devin grădini închise în loc de infrastructură wholesale.
+
+### HSBC: stack multi-track de la deposit token la aur tokenizat
+
+Pariul HSBC este mai larg. Acolo unde JPMorgan a mers în profunzime pe un singur caz de utilizare wholesale, HSBC a construit în paralel pe deposit tokens, titluri instituționale, active reale și criptografie. HSBC poziționează explicit depozitul tokenizat drept instrumentul său de elecție pentru a face puntea între bancarul tradițional și infrastructura descentralizată, înaintea stablecoinurilor neacoperite sau a monedelor digitale ale terților ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+
+#### Tokenised Deposit Service (TDS)
 
 HSBC Tokenised Deposit Service convertește soldurile fiat ale clienților corporativi în jetoane digitale într-un raport 1:1, păstrând fondurile pe deplin reglementate și în bilanțul băncii ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). TDS este operațional în cinci jurisdicții — Hong Kong, Singapore, Regatul Unit, Luxemburg și Statele Unite — și sprijină tranzacții instantanee în cinci monede: USD, GBP, EUR, HKD și SGD. Funcția centrală este la nivel de trezorerie: clienții corporativi și instituționali mari realizează clearing și decontare transfrontalieră în câteva secunde, eliminând cut-off times SWIFT, ferestrele de batch și barierele de fus orar prin programabilitate non-stop prin smart contracts.
 
 Acest portofoliu de produse este cel mai puternic contraexemplu la teza potrivit căreia „depozitele tokenizate rămân teoretice”. Rămân teoretice la scară de rețea; nu sunt teoretice în interiorul HSBC.
 
-### HSBC Orion și piețele de capital digitale
+#### HSBC Orion și piețele de capital digitale
 
 HSBC Orion este platforma DLT instituțională proprietară a băncii pentru emiterea, decontarea și custodia titlurilor de valoare tokenizate. HM Treasury a desemnat HSBC Orion să furnizeze infrastructura platformei pentru pilotul britanic emblematic Digital Gilt Instrument (DIGIT) — cazul de referință suveran pentru datoria publică tokenizată în Regatul Unit. HSBC Orion a susținut, de asemenea, emisiuni de obligațiuni digitale la scară pentru Guvernul din Hong Kong și pentru Banca Europeană de Investiții, inclusiv tranșe verzi și suverane.
 
 Pentru depozitele tokenizate acest lucru este important deoarece paritatea de decontare între jetoanele de depozit și titlurile tokenizate este o condiție prealabilă pentru delivery-versus-payment pe un registru comun. Un jeton de depozit fără o platformă instituțională de emisiuni de titluri nu are împotriva cui să se deconteze.
 
-### Tokenizarea activelor reale: HSBC Gold Token
+#### Tokenizarea activelor reale: HSBC Gold Token
 
 HSBC a extins același model de „ancoră” asupra activelor fizice la nivelul retail. HSBC Gold Token permite utilizatorilor aplicației mobile HSBC HK să cumpere proprietate fracțională asupra aurului fizic, cu acces instituțional în Regatul Unit. Fiecare jeton este garantat 100% cu lingouri fizice alocate, păstrate în tezaurele instituționale ale HSBC — același tipar de ancorare reglementară și operațională pe care banca îl aplică jetoanelor sale de depozit.
 
-### Interoperabilitatea de rețea și tokenizarea rezistentă cuantic
+#### Interoperabilitatea de rețea și tokenizarea rezistentă cuantic
 
 HSBC a testat decontarea atomică a depozitelor sale tokenizate între rețele externe utilizând Canton Network și Project Ensemble al autorității monetare din Hong Kong (HKMA). Aceasta este exact componenta de interoperabilitate pe care o critică de tip BIS la adresa jetoanelor mono-bancă o solicită: depozitele tokenizate devin infrastructură wholesale doar atunci când pot fi decontate între rețele, nu doar în interiorul unei singure bănci.
 
 În paralel, HSBC a colaborat cu Quantinuum pentru a implementa securitate criptografică post-cuantică direct pe registrul său de aur tokenizat — un răspuns defensiv la atacurile de tip „Store Now, Decrypt Later” (SNDL), în care adversarii colectează astăzi date criptate de pe registru mizând că viitoarele mașini cuantice le vor decripta. Criptografia post-cuantică pe un registru de jetoane în producție nu este încă standard în industrie; HSBC este una dintre puținele bănci care o tratează drept condiție minimă pentru orice platformă tokenizată ce trebuie să supraviețuiască termenelor-limită de migrare la PQC.
 
-### Stablecoinuri reglementate alături de jetoanele de depozit
+#### Stablecoinuri reglementate alături de jetoanele de depozit
 
 HSBC nu a ignorat în totalitate direcția stablecoinurilor. Banca a obținut o licență HKMA pentru a pilota stablecoinuri reglementate pentru decontări peer-to-peer și pentru tranzacții de investiții — însă ca supliment la nucleul de depozite tokenizate, nu ca înlocuitor. Mesajul strategic este consecvent în întreg stack-ul HSBC: depozitele tokenizate ancorează oferta de bani digitali a băncii; stablecoinurile reglementate extind acoperirea către cazuri de utilizare în care o pretenție de jeton de depozit este structural incomodă.
 
+### Alte programe active
+
+Dincolo de JPMorgan și HSBC, mai multe programe sunt materiale pentru imaginea de rețea, chiar dacă divulgările lor publice sunt mai subțiri. SG-FORGE de la Société Générale a emis obligațiuni digitale denominate în euro și un stablecoin în euro reglementat pe lângă activitatea sa de deposit-token, plasând Société Générale în poziția neobișnuită de a opera ambele linii sub reglementare europeană. Standard Chartered este activ în deposit tokens și în active reale tokenizate prin Zodia Custody și piloți proprii în Singapore. Platforma GS DAP a Goldman Sachs a emis obligațiuni digitale și susține colateral tokenizat. Implicația mai largă este simplă: capacitatea de deposit token este acum o cerință de bază pentru orice bancă globală wholesale care intenționează să rămână competitivă în transaction banking, iar întrebarea mai interesantă este cine interoperează cu cine, mai degrabă decât cine construiește primul.
+
 ## Depozite tokenizate vs. stablecoinuri vs. CBDC
+
+Trei instrumente concurează pentru același rol — bani digitali programabili la nivel de decontare — dar stau pe structuri de revendicare fundamental diferite. Alegerea revendicării determină totul: protecția juridică, tratamentul prudențial, locul unde se decontează activul și cărei rețele îi acordă deținătorul implicit încredere. Tabelul de mai jos comprimă cei patru candidați pe cinci axe, iar proza care urmează descrie unde câștigă fiecare cu adevărat.
 
 | Instrument | Tipul pretenției | Cea mai bună utilizare | Statutul în 2026 | Riscul principal |
 |---|---|---|---|---|
@@ -190,13 +209,25 @@ HSBC nu a ignorat în totalitate direcția stablecoinurilor. Banca a obținut o 
 | **CBDC wholesale** | Banii băncii centrale | Decontare interbancară și infrastructura piețelor tokenizate | Explorare activă prin proiecte ale băncilor centrale | Design, confidențialitate, scalabilitate, mandat politic |
 | **CBDC de retail** | Banii băncii centrale pentru uz public | Alternativă digitală publică la numerar | Progres global mixt | Adopție, confidențialitate, dezintermediere bancară |
 
+### Unde câștigă depozitele tokenizate
+
+Banii de bancă comercială pe bilanțul propriu poartă confortul reglementar pe care stablecoinurile încă trebuie să îl câștige. Depozitele tokenizate moștenesc asigurarea depozitelor, tratamentul prudențial al capitalului și controalele AML/sancțiuni existente. Pentru un trezorier corporativ, înseamnă niciun nou risc de contraparte și niciun nou audit al rezervei de verificat. De asemenea, fac on-ramp din contul bancar pe care corporația îl are deja — fără schimb, fără emitent de rezervă, fără noutăți de custodie. BIS și FDIC sprijină acest punct: unicitatea banilor se menține atunci când pretenția stă acolo unde cadrul juridic existent o înțelege deja ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate"); [FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+
+### Unde câștigă în continuare stablecoinurile
+
+Trei locuri. Primul, acoperirea ecosistemului deschis: stablecoinurile se compun cu DeFi, cu trezoreriile crypto-native și cu lunga coadă a portofelelor care nu vor integra niciodată un API bancar. Al doilea, distribuția globală retail: stablecoinurile denominate în dolari sunt deja un instrument de economisire de facto pe piețe unde bancarul în monedă locală este fragil. Al treilea, piețele 24/7 și decontarea crypto: chiar și cu rails bancare always-on de tip TDS, stablecoinurile sunt unitatea nativă de cont pentru lichiditatea crypto și vor rămâne așa în viitorul previzibil. Cele două instrumente nu sunt substitute stricte; granița competitivă se referă în principal la dacă cazul de utilizare se află în interiorul sau în afara perimetrului bancar reglementat.
+
 ## Ce trebuie să construiască băncile
 
 ### Arhitectura registrului și cadrul juridic
 
-Pretenția juridică trebuie să fie clară. Este tokenul depozitul însuși, o reprezentare a depozitului sau un strat de instrucțiuni peste un cont de depozit off-chain? Propunerea de regulă a FDIC din 2026 discută în mod explicit tokenized deposits drept obligații de depozit înregistrate prin DLT și le diferențiază de payment stablecoins ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+În implementările live domină trei tipare de design. Primul este „tokenul ESTE depozitul” — ledger-ul DLT însuși este sistemul de înregistrare, iar soldul on-chain poartă revendicarea juridică. Acesta este cel mai curat model pentru decontare atomică și cel mai apropiat de ceea ce propun Project Agorá și unified-ledger, dar forțează banca să trateze uptime-ul ledger-ului ca uptime al core banking. Al doilea este „tokenul reprezintă depozitul” — un cont core-banking convențional rămâne înregistrarea juridică, iar tokenul este o oglindă care îl urmează. JPM Coin și HSBC TDS sunt mai aproape de această extremă. Este mai simplu juridic și operațional, dar necesită reconciliere constantă, iar DvP atomic devine mai dificil deoarece piciorul juridic obligatoriu trăiește off-ledger. Al treilea este „tokenul ca strat de instrucțiuni” — tokenul nu reprezintă deloc depozitul; declanșează o plată convențională pe rails-uri existente (CHAPS, Fedwire, TARGET2). Este cel mai ușor de implementat, dar are cea mai slabă pretenție de bani programabili reali; este ceea ce unele bănci livrează și numesc deposit tokenizat când au de fapt un front-end smart-contract pe un cablu SWIFT.
 
-Băncile au nevoie de această claritate înainte ca banii clienților să poată circula la scară.
+Regula propusă FDIC din 2026 recunoaște explicit primele două drept obligații de depozit înregistrate prin tehnologia distributed-ledger și le distinge de payment stablecoins ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")). Al treilea primește un tratament reglementar mai dificil pentru că relația de depozit și tokenul nu converg niciodată.
+
+#### De ce finalitatea juridică este problema cea mai grea
+
+„Finalitatea juridică” este sintagma care apare cel mai des în roadmaps-urile pentru depozite tokenizate și care se desface cel mai puțin. De fapt, sub ea stau trei lucruri. Primul, conflictul de legi: când un depozit tokenizat emis de o bancă britanică se decontează atomic împotriva unui titlu tokenizat înregistrat în Luxemburg printr-un nod operat în Singapore, regimul de finalitate al decontării din ce jurisdicție guvernează tranzacția? Al doilea, neconcordanța dintre imutabilitatea DLT și dreptul juridic de a reversa: plățile bancare pot fi anulate prin hotărâre judecătorească, desemnare de sancțiuni sau eroare operațională; un ledger imuabil nu poate, ceea ce forțează un „strat de reversare” care trebuie să fie robust juridic fără a încălca narativul imutabilității. Al treilea, întrebarea finalității on-chain în sine: un bloc confirmat contează ca decontare juridică, sau doar înregistrarea contabilă off-chain corespunzătoare? Până când aceste trei probleme nu sunt rezolvate la nivel reglementar — nu doar bilateral între băncile participante — decontarea atomică inter-rețele este un pilot, nu o infrastructură.
 
 ### Portofele și controale de identitate
 
@@ -204,11 +235,31 @@ Portofelele corporative au nevoie de identitate puternică, segregarea sarcinilo
 
 Cea mai importantă caracteristică operațională poate fi politica. Un trezorier trebuie să poată defini cine inițiază, aprobă, decontează, anulează sau contestă mișcarea unui depozit tokenizat în funcție de praguri specifice și reguli aplicabile contrapărților.
 
+### Economia randamentului și a trezoreriei
+
+Randamentul este întrebarea pe care trezorierii seniori o pun prima și pe care majoritatea comunicatelor de presă despre depozitele tokenizate o ocolesc. Dacă o corporație parchează 50 de milioane USD într-un portofel de depozit tokenizat timp de 48 de ore în așteptarea unei legături de decontare, generează acel sold aceeași dobândă pe care banca o plătește pe un depozit overnight convențional, sau este steril? Apar două tipare. Unele bănci tratează depozitul tokenizat ca economic identic cu depozitul subiacent — corporația își păstrează rata, banca își păstrează soldul în bilanț, iar tokenul este un strat de programabilitate. Altele îl tratează ca un float tranzacțional care nu plătește dobândă pentru că banii sunt presupuși a fi în mișcare. Primul tipar păstrează relația existentă de economie a depozitelor și este singurul design care scalează pentru cash management. Al doilea este în esență un instrument de plată în buclă închisă și va pierde solduri corporative către orice concurent care oferă primul tipar. De aceea „depozite tokenizate vs. stablecoinuri” este parțial o întrebare de economie a randamentului, nu doar reglementară: într-un mediu cu rate mai mari, un token de plată care nu plătește randament are un dezavantaj structural față de un depozit tokenizat purtător de dobândă sau un fond monetar tokenizat ca randament care rulează lângă un stablecoin.
+
 ### Stratul de interoperabilitate
 
 Un depozit tokenizat emis de o singură bancă este util, dar limitat. Interoperabilitatea inter-bancară este punctul de pornire al efectelor de rețea. Aceasta necesită standarde pentru formatul tokenului, mesaje, identitate, finalitatea decontării, gestionarea disputelor, date AML, portabilitatea portofelului și conversia între depozite tokenizate, depozite convenționale, stablecoinuri, CBDC și active tokenizate.
 
+Suprafața tehnică este fragmentată. Printre liderii permissioned-DLT se numără R3 Corda (folosit de Standard Chartered și alții pentru depozite tokenizate), Canton Network (folosit de HSBC pentru teste de decontare inter-rețele și de Goldman Sachs pentru GS DAP), Hyperledger Besu (varianta Ethereum derivată din JPMorgan în cadrul Kinexys) și stack-uri proprietare precum HSBC Orion. Alegerea formatului token este și ea nedecisă: unele rețele folosesc contracte derivate din ERC-20 pentru a se compune cu instrumentarul Ethereum mai larg; altele folosesc primitive token în stil IBC sau native Canton. Răspunsul pragmatic în 2026 este că niciun stack unic nu a câștigat, iar băncile care vor scala depozitele tokenizate sunt cele care construiesc punți de interoperabilitate (protocoale de decontare atomică între Canton și Besu, maparea ISO 20022 la formatele de mesaje on-chain), nu cele care pariază pe o singură platformă.
+
 Riscul este o colecție de grădini închise specifice fiecărei bănci. Oportunitatea este un strat programabil de bani de bancă comercială care păstrează încrederea bancară și îmbunătățește decontarea digitală.
+
+## Moduri de eșec: unde se rupe stack-ul
+
+Depozitele tokenizate sunt în mare măsură scrise în registre optimiste. Modurile de eșec merită tratate în serios pentru că modelează perimetrul de reglementare eventual.
+
+**Bug de smart contract pe un deposit token.** Un bug într-un smart contract de deposit token nu este un incident software obișnuit; este potențial un eveniment de sold-greșit pe banii de bancă comercială. Băncile au nevoie de un audit al contractului verificat formal, de o cale de upgrade care nu necesită migrarea soldurilor clienților și de un circuit-breaker care să suspende decontarea programabilă fără a întrerupe convertibilitatea înapoi la depozite convenționale.
+
+**Eșecul unei bănci cross-jurisdicție.** Dacă o bancă cu depozite tokenizate emise în cinci jurisdicții eșuează, regimurile de asigurare a depozitelor se aplică la nivel național, dar ledger-ul este global. Autoritățile de rezoluție nu au testat la stres modul în care acest lucru interacționează cu preferința deponentului, regulile de ring-fencing sau întrebarea cine deține efectiv tokenul în momentul închiderii băncii. Deposit tokens dintr-o singură jurisdicție evită problema; tokenele multi-jurisdicție sunt expuse.
+
+**Criza de lichiditate cu depozite bifurcate.** Depozitele convenționale și depozitele tokenizate s-ar putea comporta foarte diferit într-un eveniment de stres. Dacă un depozit tokenizat poate fi mutat 24/7 într-un portofel non-bancar printr-un smart contract, în timp ce depozitele convenționale se confruntă cu un cut-off zilnic, partea tokenizată rulează mai repede. Aceasta este o caracteristică în condiții normale și un destabilizator într-un bank run. Liquidity-coverage ratios și cadrele de reziliență operațională nu au fost scrise pentru această asimetrie.
+
+**Dependența operațională de un singur furnizor DLT.** Multe platforme bancare de deposit token rulează pe un singur stack permissioned-DLT. Critica în stil DORA aplicată deja cloud-ului se aplică și aici: un outage al stack-ului la furnizor este acum un outage de servicii critice. Mitigarea este capacitatea multi-stack, nu doar implementarea multi-region a unui singur stack.
+
+Niciuna dintre acestea nu este un motiv pentru a nu construi depozite tokenizate. Sunt motive pentru a trata platforma drept infrastructură critică de servicii financiare de la prima zi, nu pentru a aplica retroactiv controale după ce s-a atins scara.
 
 ## Ce înseamnă acest lucru în funcție de tipul de bancă
 
@@ -230,9 +281,7 @@ Companiile nu ar trebui să aștepte o rețea universală. Ar trebui să înceap
 
 ## Concluzie
 
-Depozitele tokenizate în 2026 se află în aceeași etapă în care s-au aflat cândva plățile în timp real: valoare evidentă, implementare neuniformă și dependență de coordonarea rețelei. Sectorul bancar are un răspuns credibil la stablecoinuri dacă poate păstra punctele forte ale banilor de bancă comercială, oferind în același timp programabilitatea, viteza și interoperabilitatea pe care utilizatorii le așteaptă acum.
-
-Statutul este clar: piloții sunt live, propunerile bancare se formează, categoriile de reglementare se cristalizează, iar experimentele wholesale înaintează. Întrebarea deschisă nu este dacă depozitele tokenizate vor exista. Este dacă vor interopera suficient de rapid pentru a conta.
+Depozitele tokenizate în 2026 sunt acolo unde plățile în timp real erau acum un deceniu: evidente ca valoare, neuniforme în implementare și blocate de coordonarea rețelei. Piloții sunt în viu, stack-urile bancare de top (Kinexys de la JPMorgan, TDS + Orion al HSBC, programul britanic multi-bancar) sunt de nivel producție în perimetrele lor proprii, categoriile reglementare se întăresc (FDIC, BIS, HKMA), iar stack-ul tehnologic a încetat să mai fie constrângerea critică. Ce rămâne sunt interoperabilitatea, finalitatea juridică și economia randamentului — trei probleme pe care industria le poate rezolva, dar numai dacă băncile tratează 2026–2027 drept fereastra de stabilire a standardelor. Riscul nu este ca depozitele tokenizate să nu fie livrate; este să fie livrate ca douăsprezece grădini închise incompatibile.
 
 ## Întrebări frecvente
 
@@ -260,14 +309,11 @@ HSBC. HSBC Tokenised Deposit Service este live în Hong Kong, Singapore, Regatul
 
 - Lloyds Banking Group, (2026). [Digital assets in 2026: building the future of finance in the UK ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
 - HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").
+- JPMorgan, (2026). [Kinexys (formerly Onyx) digital assets platform ⧉](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan").
 - BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate").
 - Deutsche Bank flow, (2026). [Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money").
 - FDIC, (2026). [GENIUS Act requirements and standards proposed rule ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").
 - Cambridge Centre for Alternative Finance, (2026). [Tokenised money: Use cases, interoperability and regulation ⧉](https://www.jbs.cam.ac.uk/wp-content/uploads/2026/02/2026-ccaf-tokenised-money-use-cases-interoperability-and-regulation.pdf "Tokenised money report").
-<!-- enrich-start -->
-<aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
-<p class="post-reviewed">Last reviewed <time datetime="2026-05-21">2026-05-21</time>.</p>
-<!-- enrich-end -->
 
 <!-- enrich-start -->
 <aside class="author-card" aria-label="About the author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/stocks/images/sebastien-rousseau.png" width="64" height="64" loading="lazy" decoding="async" /><span class="author-card-body"><strong class="author-card-name"><a href="/about/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior banking technologist writing on applied AI, ISO 20022 migration, post-quantum cryptography for financial services, and the structural transformation of wholesale payments.</span><span class="author-credentials">20+ years across HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/about/index.html">Full profile</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside>
