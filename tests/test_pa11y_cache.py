@@ -8,7 +8,7 @@ from pathlib import Path
 import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts" / "seo_and_audit"))
-import pa11y_cache as pc  # noqa: E402
+import pa11y_cache as pc
 
 
 @pytest.fixture

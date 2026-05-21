@@ -52,7 +52,7 @@ import json
 import re
 import subprocess
 import sys
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
@@ -325,7 +325,7 @@ def cmd_post(args: argparse.Namespace) -> int:
         cache["fingerprint"] = current_fp
         cache["pages"] = {}
 
-    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    now = datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
     pages = cache["pages"]
 
     # Cache-hit set: re-affirm with current timestamp. Their hash didn't
