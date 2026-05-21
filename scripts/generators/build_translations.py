@@ -544,6 +544,13 @@ def _build_fr_lead(description: str, takeaways: list[tuple[str, str]]) -> str:
     return "".join(parts)
 
 
+_BODY_FURNITURE_RE = re.compile(
+    r'<aside\s+class="(?:author-card|related-posts|post-lead)\b[^"]*"[\s\S]*?</aside>'
+    r'|<p\s+class="post-reviewed"\b[^>]*>[\s\S]*?</p>',
+    re.IGNORECASE,
+)
+
+
 def _french_body(
     body_html: str,
     description: str,
@@ -566,6 +573,12 @@ def _french_body(
         f'<p class="post-reviewed">{review_label}'
         f'<time datetime="{today}">{today}</time>.</p>'
     )
+    # The translated source markdown may already contain post_enrich-injected
+    # author-card / post-reviewed / lead-aside / related-posts blocks copied
+    # from the EN scaffold; strip them so the localised versions emitted by
+    # this function are the only ones on the page (otherwise WCAG2AAA fails
+    # on duplicate `id="related-heading"`).
+    body_html = _BODY_FURNITURE_RE.sub('', body_html)
     return lead + body_html + _french_author_card() + review + related_aside
 
 
