@@ -1,11 +1,11 @@
 {
-  "title": "RustLogs (RLG): Structured Logging Library for Rust",
-  "language": "bn-BD",
-  "banner_alt": "Banner for RustLogs (RLG)",
-  "description": "Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. ",
   "subtitle": "Streamline Your Rust Logging Workflow",
+  "title": "RustLogs (RLG): Structured Logging Library for Rust",
+  "description": "Discover RustLogs (RLG), the flexible logging library for Rust with structured log formats, asynchronous logging, and extensive customisation options. ",
   "date": "Mar 08, 2024",
-  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
+  "banner_alt": "Banner for RustLogs (RLG)",
   "keywords": "Rust logging library, asynchronous Rust logging, structured log formats, Rust application debugging, customisable logging Rust, Rust development tools, RustLogs RLG features, efficient Rust logging, RustLogs integration, RustLogs documentation",
-  "locale": "bn_BD"
+  "language": "bn-BD",
+  "locale": "bn_BD",
+  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp"
 }

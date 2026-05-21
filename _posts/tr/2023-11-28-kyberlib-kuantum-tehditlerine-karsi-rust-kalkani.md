@@ -5,7 +5,7 @@ description: "KyberLib, kuantum sonrası anahtar kapsülleme için CRYSTALS-Kybe
 date: "November 28, 2023"
 language: "tr-TR"
 locale: "tr_TR"
-banner: "https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg"
+banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
 banner_alt: "Bir kalkanın soyut görselleştirmesi"
 keywords: "KyberLib, CRYSTALS-Kyber, post-kuantum, Rust, kriptografi, KEM, FIPS 203, açık kaynak"
 ---
@@ -24,7 +24,7 @@ keywords: "KyberLib, CRYSTALS-Kyber, post-kuantum, Rust, kriptografi, KEM, FIPS 
 
 ---
 
-[![Reforzar la comunicación segura in la era quantistica con KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg).class=\"img-fluid clearfix\"][07]
+[![Reforzar la comunicación segura in la era quantistica con KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]
 
 `KyberLib` è una libreria Rust che protege i suoi dati rispetto alla amenaza potencial ın calcolo quantistico. Construida su il **algoritmo [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)**, `KyberLib` offre una sicurezza, una eficiencia e una versatilidad excepcionales, integrándose fácilmente in diversas piattaforme, incluidos i entornos `non-std`.
 

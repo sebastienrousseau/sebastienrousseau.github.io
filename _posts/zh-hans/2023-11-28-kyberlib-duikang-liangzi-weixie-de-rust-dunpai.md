@@ -5,12 +5,12 @@ description: "KyberLib 是基于 CRYSTALS-Kyber 的 Rust 抗量子密码库，�
 date: "November 28, 2023"
 language: "zh-Hans"
 locale: "zh_CN"
-banner: "https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg"
+banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
 banner_alt: "KyberLib：在量子时代赋能安全通信"
 keywords: "KyberLib, Rust, CRYSTALS-Kyber, 后量子密码学, 量子安全, 格密码学, no-std, WebAssembly, NIST, 嵌入式系统"
 ---
 
-[![KyberLib：在量子时代赋能安全通信](https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg).class=\"img-fluid clearfix\"][07]
+[![KyberLib：在量子时代赋能安全通信](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]
 
 `KyberLib` 是一个基于 Rust 的库，保护你的数据免受量子计算潜在威胁。`KyberLib` 构建在 **[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) 算法** 之上，提供卓越的安全性、效率与多功能性，可轻松集成到包括 `no-std` 环境在内的多种平台。
 

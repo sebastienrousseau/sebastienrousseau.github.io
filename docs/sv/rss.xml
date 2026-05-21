@@ -6,7 +6,7 @@
     <description>Artiklar på svenska: tillämpad AI, ISO 20022-betalningar, postkvantkryptografi och transformationen av grossistbetalningar.</description>
     <atom:link href="https://sebastienrousseau.com/sv/rss.xml" rel="self" type="application/rss+xml"/>
     <language>sv-SE</language>
-    <lastBuildDate>Thu, 21 May 2026 13:34:32 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 18:28:45 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alla rättigheter förbehållna.</copyright>
     <item>
       <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
@@ -792,7 +792,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2023-12-04-bemastra-datum-och-tid-i-rust-med-dtt/</guid>
       <pubDate>Mon, 04 Dec 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg" type="image/webp" length="0"/>
       <category>DateTime</category>
       <category>DTT</category>
       <category>biblioteca Rust</category>
@@ -810,7 +810,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/sv/2023-11-28-kyberlib-rust-skold-mot-kvanthot/</guid>
       <pubDate>Tue, 28 Nov 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" type="image/webp" length="0"/>
       <category>KyberLib</category>
       <category>Rust CRYSTALS-Kyber</category>
       <category>criptografía postcuántica</category>

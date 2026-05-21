@@ -5,12 +5,12 @@ description: "Implementación criptográfica robusta y resistente a lo cuántico
 date: "November 28, 2023"
 language: "es-ES"
 locale: "es_ES"
-banner: "https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg"
+banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
 banner_alt: "Reforzar la comunicación segura en la era cuántica con KyberLib"
 keywords: "KyberLib, Rust CRYSTALS-Kyber, criptografía postcuántica, criptografía sobre retículos, intercambio de claves resistente a lo cuántico, NIST FIPS 203, Sebastien Rousseau, KEM, autenticación de pagos, biblioteca PQC"
 ---
 
-[![Reforzar la comunicación segura en la era cuántica con KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg).class=\"img-fluid clearfix\"][07]
+[![Reforzar la comunicación segura en la era cuántica con KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]
 
 `KyberLib` es una biblioteca Rust que protege sus datos frente a la amenaza potencial de la computación cuántica. Construida sobre el **algoritmo [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)**, `KyberLib` ofrece una seguridad, una eficiencia y una versatilidad excepcionales, integrándose fácilmente en diversas plataformas, incluidos los entornos `no-std`.
 

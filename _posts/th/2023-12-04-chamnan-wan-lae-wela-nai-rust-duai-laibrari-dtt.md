@@ -5,7 +5,7 @@ description: "DateTime (DTT) es una biblioteca Rust para parsear, validar, manip
 date: "December 04, 2023"
 language: "th-TH"
 locale: "th_TH"
-banner: "https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg"
+banner: "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg"
 banner_alt: "DateTime (DTT), su caja de herramientas esencial para las operaciones de fecha y hora."
 keywords: "DateTime, DTT, biblioteca Rust, parseo, validación, manipulación, formateo, fechas, horas"
 ---
@@ -15,7 +15,7 @@ keywords: "DateTime, DTT, biblioteca Rust, parseo, validación, manipulación, f
 
 **ประเด็นสำคัญ**
 
-[![DateTime (DTT), Your Essential Toolkit for Date and Time Operations](https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg).class=\"img-fluid clearfix\"][01]
+[![DateTime (DTT), Your Essential Toolkit for Date and Time Operations](https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg).class=\"img-fluid clearfix\"][01]
 
 ## Gestión eficiente de fechas y horas con DateTime (DTT)
 

@@ -6,7 +6,7 @@
     <description>Artikel auf Deutsch: angewandte KI, ISO-20022-Zahlungen, Post-Quanten-Kryptografie und Transformation des Wholesale-Zahlungsverkehrs.</description>
     <atom:link href="https://sebastienrousseau.com/de/rss.xml" rel="self" type="application/rss+xml"/>
     <language>de-DE</language>
-    <lastBuildDate>Thu, 21 May 2026 13:34:32 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 18:28:45 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Alle Rechte vorbehalten.</copyright>
     <item>
       <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
@@ -793,7 +793,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/de/2023-12-04-datum-und-zeit-in-rust-meistern-mit-der-dtt-bibliothek/</guid>
       <pubDate>Mon, 04 Dec 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg" type="image/webp" length="0"/>
       <category>DateTime</category>
       <category>DTT</category>
       <category>Rust-Bibliothek</category>
@@ -811,7 +811,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/de/2023-11-28-kyberlib-rust-schild-gegen-quantenbedrohungen/</guid>
       <pubDate>Tue, 28 Nov 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" type="image/webp" length="0"/>
       <category>KyberLib</category>
       <category>Rust CRYSTALS-Kyber</category>
       <category>Post-Quanten-Kryptografie</category>

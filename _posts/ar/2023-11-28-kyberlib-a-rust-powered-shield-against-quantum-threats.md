@@ -5,14 +5,14 @@ description: "تطبيق تشفيري متين وآمن كمياً لخوارز�
 date: "Nov 28, 2023"
 language: "ar"
 locale: "ar_SA"
-banner: "https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg"
+banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
 banner_alt: "تعزيز الاتصالات الآمنة في العصر الكمي مع KyberLib"
 keywords: "KyberLib، Rust CRYSTALS-Kyber، التشفير ما بعد الكمي، التشفير القائم على الشبكيات، تبادل المفاتيح المقاوم للكم، NIST FIPS 203، Sebastien Rousseau، KEM، مصادقة المدفوعات، مكتبة PQC"
 ---
 
 ## KyberLib: CRYSTALS-Kyber بلغة Rust لما بعد الكم
 
-[![تعزيز الاتصالات الآمنة في العصر الكمي مع KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg).class=\"img-fluid clearfix\"][07]
+[![تعزيز الاتصالات الآمنة في العصر الكمي مع KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]
 
 `KyberLib` مكتبة بلغة Rust تَحمي بياناتكم من التهديد المحتمل للحوسبة الكمية. مَبنيّة على **خوارزمية [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)**، تُقدّم `KyberLib` أمناً وكفاءة وتنوُّعاً استثنائياً، وتتكامل بسهولة مع منصّات متعدّدة، بما فيها بيئات `no-std`.
 

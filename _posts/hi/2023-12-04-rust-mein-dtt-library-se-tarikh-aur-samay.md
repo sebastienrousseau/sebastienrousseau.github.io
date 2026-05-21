@@ -5,12 +5,12 @@ description: "Rust हेतु dtt लाइब्रेरी: तारीख
 date: "December 04, 2023"
 language: "hi-IN"
 locale: "hi_IN"
-banner: "https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg"
+banner: "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg"
 banner_alt: "एक डिजिटल घड़ी और कैलेंडर की कलात्मक छवि"
 keywords: "Rust, dtt, तारीख़, समय, समय-क्षेत्र, RFC 3339, ISO 8601, स्वरूपण, क्रोनो, क्रेट"
 ---
 
-[![एक डिजिटल घड़ी और कैलेंडर की कलात्मक छवि](https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg).class=\"img-fluid clearfix\"][01]
+[![एक डिजिटल घड़ी और कैलेंडर की कलात्मक छवि](https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg).class=\"img-fluid clearfix\"][01]
 
 ## Gestión दक्ष का fechas और horas के साथ DateTime (DTT)
 

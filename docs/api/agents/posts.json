@@ -938,7 +938,7 @@
         "dates",
         "times"
       ],
-      "banner": "https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg",
+      "banner": "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg",
       "topics": [
         "rust-open-source"
       ],
@@ -962,7 +962,7 @@
         "payment authentication",
         "PQC library"
       ],
-      "banner": "https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg",
+      "banner": "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg",
       "topics": [
         "post-quantum-cryptography",
         "rust-open-source"

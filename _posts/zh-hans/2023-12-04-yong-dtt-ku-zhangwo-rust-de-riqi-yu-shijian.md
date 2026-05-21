@@ -5,12 +5,12 @@ description: "DateTime（DTT）是一个高精度的 Rust 日期与时间库，�
 date: "December 4, 2023"
 language: "zh-Hans"
 locale: "zh_CN"
-banner: "https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg"
+banner: "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg"
 banner_alt: "DateTime（DTT），日期与时间操作的必备工具集"
 keywords: "DTT, DateTime, Rust, 日期时间, 时区, 解析, 验证, 格式化, Cargo, 开源"
 ---
 
-[![DateTime（DTT），日期与时间操作的必备工具集](https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg).class=\"img-fluid clearfix\"][01]
+[![DateTime（DTT），日期与时间操作的必备工具集](https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg).class=\"img-fluid clearfix\"][01]
 
 ## 用 DateTime（DTT）高效管理日期与时间
 

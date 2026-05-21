@@ -6,7 +6,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "Empowering Secure Communications in the Quantum Era with KyberLib"
 banner_height: "100vh"
 banner_width: "100vw"
-banner: "https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg"
+banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
 cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
 charset: "UTF-8"
@@ -116,7 +116,7 @@ last_reviewed: "2026-05-11"
 </aside>
 <!-- lead-end -->
 
-[![Empowering Secure Communications in the Quantum Era with KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg).class=\"img-fluid clearfix\"][07]
+[![Empowering Secure Communications in the Quantum Era with KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]
 
 `KyberLib` is a Rust-based library that protects your data from the potential threat of quantum computing. Built upon the **[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) algorithm**, `KyberLib` delivers exceptional security, efficiency, and versatility, easily integrating into various platforms, including `no-std` environments.
 
