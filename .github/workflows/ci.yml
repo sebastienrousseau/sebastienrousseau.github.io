@@ -131,72 +131,61 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
 
       - name: Install pa11y-ci
         run: npm install -g pa11y-ci@^3
+
+      - name: Restore pa11y hash cache
+        id: pa11y-cache
+        uses: actions/cache@v4
+        with:
+          # Keyed only by the cache schema major. Within a key the
+          # cache layer carries its own fingerprint (pa11y/Chromium
+          # versions + config hash) so a mismatch already forces a
+          # full re-sweep without needing a separate cache bucket.
+          path: _data/pa11y-cache.json
+          key: pa11y-cache-v1-${{ runner.os }}
+          # Restore-keys lets a fresh runner pick up the most recent
+          # cache even if the exact key isn't a hit (e.g. after a
+          # cache-eviction window).
+          restore-keys: |
+            pa11y-cache-v1-
 
       - name: Serve public/
         run: |
           npx http-server public -p 8000 --silent &
           sleep 2
 
-      - name: Run pa11y-ci against the live URL set
+      - name: Pre — partition pages against cache
         run: |
-          # Collect every built page into pa11y's config, dropping any
-          # page that embeds a Spotify iframe — those tabs fire a
-          # navigation event during Puppeteer's evaluation that
-          # intermittently raises "Execution context was destroyed,
-          # most likely because of a navigation" and fails the run.
-          # The hideElements mitigation runs *after* page load; by then
-          # the iframe has already raced. Skipping the playlist tab
-          # entirely is the only reliable fix — its accessibility is
-          # the embedded player's, which we don't control.
-          python3 - <<'PY'
-          import json, pathlib
-          PUBLIC = pathlib.Path("public")
-          all_pages = sorted(PUBLIC.rglob("index.html"))
-          urls = []
-          skipped = []
-          for p in all_pages:
-              try:
-                  html = p.read_text(encoding="utf-8", errors="ignore")
-              except OSError:
-                  continue
-              has_iframe = "<iframe" in html
-              embeds_spotify = (
-                  "open.spotify.com" in html
-                  or "scdn.co" in html
-              )
-              if has_iframe and embeds_spotify:
-                  skipped.append(p.relative_to(PUBLIC).as_posix())
-                  continue
-              urls.append("http://127.0.0.1:8000/" + p.relative_to(PUBLIC).as_posix().replace("\\", "/"))
-          print(f"pa11y sweep: {len(urls)} URLs, {len(skipped)} skipped (Spotify-iframe pages)")
-          for s in skipped[:10]:
-              print(f"  skipped: {s}")
-          # GitHub-hosted Ubuntu runners ship Chromium without a usable SUID
-          # sandbox, so the zygote process aborts at launch ("No usable
-          # sandbox!"). --no-sandbox is the accepted workaround inside CI
-          # containers where we're loading our own built artefact only.
-          json.dump({
-              "defaults": {
-                  "standard": "WCAG2AAA",
-                  "timeout": 20000,
-                  "chromeLaunchConfig": {
-                      "args": ["--no-sandbox", "--disable-setuid-sandbox"]
-                  },
-                  # Hide widgets we don't control on the surviving pages:
-                  #   - SSG search widget injects a <link> stylesheet into
-                  #     the body, which fails "link elements must be in <head>".
-                  #   - Google reCAPTCHA on /contact/ injects a hidden iframe
-                  #     with no title attribute, which fails "iframe needs
-                  #     a non-empty title".
-                  "hideElements": "#ssg-search-widget, #ssg-search-btn, iframe[src*='recaptcha'], iframe[src*='google.com/recaptcha'], form iframe"
-              },
-              "urls": urls,
-          }, open(".pa11yci","w"), indent=2)
-          PY
+          python3 scripts/seo_and_audit/pa11y_cache.py pre \
+            --public-dir public \
+            --cache _data/pa11y-cache.json \
+            --pa11yci-out .pa11yci \
+            --manifest-out .pa11y-cache-manifest.json \
+            --base-url http://127.0.0.1:8000
+
+      - name: Run pa11y-ci on the delta only
+        run: |
+          # If .pa11yci has an empty URL list (full cache hit), skip
+          # pa11y entirely — it errors on an empty config.
+          n=$(python3 -c "import json; print(len(json.load(open('.pa11yci'))['urls']))")
+          if [ "$n" -eq 0 ]; then
+            echo "pa11y-cache: full cache hit, skipping pa11y-ci run"
+            exit 0
+          fi
           pa11y-ci -c .pa11yci || (echo "pa11y violations above"; exit 1)
+
+      - name: Post — update cache for next run
+        if: success()
+        run: |
+          python3 scripts/seo_and_audit/pa11y_cache.py post \
+            --public-dir public \
+            --cache _data/pa11y-cache.json \
+            --manifest .pa11y-cache-manifest.json
 
   lighthouse:
     needs: build
