@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Thu, 21 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Thu, 21 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.">
+<meta name="keywords" content="tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercial bank money, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, digital wallets, tokenised gilts">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Tokenised Deposits">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-BouqoawEPEVvQ32wsKiLKmvaerWCz73TLGFpotnBRmQ=' 'sha256-FnhyvOVQ+FD7RzUVT9J8CqC7lctgrjTaWaMP+j6o+Bc=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-QTW0yc36cWtZ+w7AZAOCQGl2JvDDbl6sBjXHqxPCnZo=' 'sha256-rZy7Zb9jGTaLTVek/hDS80Ahu32QSfO0IdyoFRF/3EU=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/cs/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="/cs/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money — Sebastien Rousseau">
+<meta property="og:description" content="Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/cs/2026-05-21-tokenised-deposits-banking-services-status-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="cs_CZ">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money — Sebastien Rousseau">
+<meta name="twitter:description" content="Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.">
+<meta name="twitter:image" content="https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp">
+<link rel="canonical" href="https://sebastienrousseau.com/cs/2026-05-21-tokenised-deposits-banking-services-status-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-21-tokenise-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-21-tokenised-deposits-banking-services-status-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Přeskočit na hlavní obsah</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Přepnout navigaci" />
+      <div class="wrap">
+        <a class="ap-brand" href="/cs/index.html" aria-label="Domovská stránka Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Hlavní navigace">
+          <ul class="ap-menu">
+            <li><a href="/cs/o-mne/index.html">O mně</a></li>
+            <li><a href="/cs/clanky/index.html" aria-current="page" class="active">Články</a></li>
+            <li><a href="/cs/publikace/index.html">Publikace</a></li>
+            <li><a href="/cs/temata/index.html">Témata</a></li>
+            <li><a href="/cs/projekty/index.html">Projekty</a></li>
+            <li><a href="/cs/playlisty/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Přepnout na tmavý motiv" aria-pressed="false" title="Přepnout motiv">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Hledat (Cmd nebo Ctrl + K)" title="Hledat (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Jazyk">
+            <button type="button" class="ap-lang-toggle" aria-label="CS, změnit jazyk" aria-expanded="false" aria-haspopup="menu" title="Změnit jazyk">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">CS</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/cs/kontakt/index.html" aria-label="Kontaktovat">Kontaktovat ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Přepnout navigaci">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</h1>
+      <p class="sub">Tokenised deposits are becoming the banking sector’s answer to stablecoins: programmable commercial bank money on controlled platforms, with pilots moving through UK marketplace payments, remortgaging, digital asset settlement, and corporate wallets.</p>
+    <nav class="article-tags" aria-label="Témata"><a href="/tags/index.html#h3-tokenised-deposits-2026" class="article-tag" rel="tag">tokenised deposits 2026</a><a href="/tags/index.html#h3-tokenized-deposits-banking" class="article-tag" rel="tag">tokenized deposits banking</a><a href="/tags/index.html#h3-deposit-tokens" class="article-tag" rel="tag">deposit tokens</a><a href="/tags/index.html#h3-great-british-tokenised-deposits" class="article-tag" rel="tag">Great British Tokenised Deposits</a><a href="/tags/index.html#h3-lloyds-digital-assets" class="article-tag" rel="tag">Lloyds digital assets</a><a href="/tags/index.html#h3-stablecoins" class="article-tag" rel="tag">stablecoins</a><a href="/tags/index.html#h3-commercial-bank-money" class="article-tag" rel="tag">commercial bank money</a><a href="/tags/index.html#h3-bis-stablecoins" class="article-tag" rel="tag">BIS stablecoins</a><a href="/tags/index.html#h3-project-agora" class="article-tag" rel="tag">Project Agora</a><a href="/tags/index.html#h3-unified-ledger" class="article-tag" rel="tag">unified ledger</a><a href="/tags/index.html#h3-deutsche-bank-digital-money" class="article-tag" rel="tag">Deutsche Bank digital money</a><a href="/tags/index.html#h3-cbdc" class="article-tag" rel="tag">CBDC</a><a href="/tags/index.html#h3-tokenised-money" class="article-tag" rel="tag">tokenised money</a><a href="/tags/index.html#h3-digital-wallets" class="article-tag" rel="tag">digital wallets</a><a href="/tags/index.html#h3-tokenised-gilts" class="article-tag" rel="tag">tokenised gilts</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-21T06:06:06+00:00" class="meta-pub">Publikováno 21 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Odhadovaná doba čtení">21 min čtení</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Obsah</h2><ol><li><a href="#proc-na-tokenizovanych-vkladech-zalezi-prave-ted">Proč na tokenizovaných vkladech záleží právě teď</a></li><li><a href="#stav-v-roce-2026-od-pilotu-k-produktu-jeste-ne-v-sitovem-meritku">Stav v roce 2026: od pilotu k produktu, ještě ne v síťovém měřítku</a></li><li><a href="#nejrozvinutejsi-bankovni-programy-v-roce-2026">Nejrozvinutější bankovní programy v roce 2026</a></li><li><a href="#tokenizovane-vklady-vs-stablecoiny-vs-cbdc">Tokenizované vklady vs. stablecoiny vs. CBDC</a></li><li><a href="#co-musi-banky-vybudovat">Co musí banky vybudovat</a></li><li><a href="#selhani-kde-se-stack-lame">Selhání: kde se stack láme</a></li><li><a href="#co-to-znamena-podle-typu-banky">Co to znamená podle typu banky</a></li><li><a href="#zaver">Závěr</a></li><li><a href="#casto-kladene-dotazy">Často kladené dotazy</a></li><li><a href="#odkazy">Odkazy</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>Proč na tokenizovaných vkladech záleží právě teď.</strong> Stablecoiny odhalily poptávku po programovatelných digitálních penězích dostupných nepřetržitě.</li>  <li><strong>Stav v roce 2026: od pilotu k produktu, ještě ne v síťovém měřítku.</strong> Lloyds označuje Great British Tokenised Deposits za odvětvovou iniciativu a uvádí tři konkrétní případy užití: tržiště pro platby mezi fyzickými osobami, refinancování hypoték a vypořádání digitálních aktiv (Lloyds…</li>  <li><strong>Nejrozvinutější bankovní programy v roce 2026.</strong> Tři programy si zaslouží samostatný profil: JPMorgan, který otevřel kategorii velkoobchodních vkladových tokenů a provozuje ji v produkčním měřítku; HSBC, který má nejúplnější vícestopý stack napříč vkladovými…</li>  <li><strong>Tokenizované vklady vs. stablecoiny vs. CBDC.</strong> Tři nástroje soupeří o stejnou roli — programovatelné digitální peníze úrovně vypořádání — ale stojí na zásadně odlišných strukturách nároků.</li></ul></aside><h1>Tokenizované vklady v roce 2026: bankovní služby, konkurence stablecoinů a stav programovatelných peněz komerčních bank</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>Tokenizované vklady se stávají nejvýznamnější odpovědí bankovního sektoru na stablecoiny v oblasti digitálních peněz. Zachovávají vztah komerčního bankovního vkladu a zároveň umožňují programovatelnost, digitální peněženky, atomické vypořádání a pracovní postupy s tokenizovanými aktivy. Lloyds Banking Group uvádí, že britská digitální aktiva v roce 2026 přecházejí do hlavního proudu, a zdůrazňuje tokenizované vklady, digitální gilty a Great British Tokenised Deposits jako aktivní odvětvové iniciativy (<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>).</p>
+<p>Tento text je zaměřen na velkoobchodní, institucionální a treasury vrstvu firem — část příběhu vkladových tokenů, kde běží piloty a vznikají bankovní produkty. Retailové tokenizované vklady existují jako výzkumný směr a uvnitř retailové obálky HSBC Gold Token, ale inflexní bod roku 2026 nastává v transakčním bankovnictví, nikoli v každodenních spotřebitelských platbách.</p>
+<hr />
+<blockquote>
+<p><strong>Manažerské shrnutí / Klíčové poznatky</strong></p>
+<ul>
+<li><strong>Stav trhu.</strong> Tokenizované vklady v roce 2026 jsou před fází plošného nasazení, ale již nejsou teoretické: piloty běží, bankovní nabídky se formují a britský multibankovní program běží do poloviny roku 2026, přičemž HSBC, NatWest, Lloyds, Barclays, Nationwide a Santander testují platby na tržištích, refinancování hypoték a vypořádání digitálních aktiv (<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>).</li>
+<li><strong>Konkurenční tlak.</strong> Stablecoiny jsou velké a rostou (BIS odhaduje tržní kapitalizaci přibližně 315 miliard USD, z toho zhruba 98 % denominovaných v USD na začátku dubna 2026) a tlačí na harmonogram vkladových tokenů. Vítězí v dosahu otevřeného ekosystému, krypto-nativní likviditě a globálním retailu; tokenizované vklady vítězí v regulatorním komfortu, pojištění vkladů a treasury postupech (<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>).</li>
+<li><strong>Regulatorní hranice.</strong> Návrh FDIC z roku 2026 klasifikuje tokenizované vklady jako vkladové závazky evidované na DLT a výslovně je odlišuje od platebních stablecoinů, čímž zpevňuje americký perimetr (<a href="https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted" title="FDIC proposed rule">FDIC</a>).</li>
+<li><strong>Vedoucí bankovní programy.</strong> JPM Coin od JPMorgan na platformě Kinexys zpracovává přibližně 2 miliardy USD denně ve velkoobchodním vypořádání a má nejdelší živý záznam o vkladových tokenech. HSBC má nejúplnější vícestopý stack: TDS v HK, SG, UK, LU a US v USD/GBP/EUR/HKD/SGD; HSBC Orion je základem britského pilotu Digital Gilt Instrument (DIGIT); HSBC Gold Token tokenizuje alokované zlato; atomické vypořádání mezi sítěmi bylo testováno na Canton + Project Ensemble; PQC implementována s Quantinuum (<a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" title="HSBC Tokenised Deposit Service">HSBC</a>).</li>
+<li><strong>Designová rozhodnutí, která rozhodují o všem.</strong> Dominují tři vzory ledger-and-legal: token <em>je</em> vkladem (nejčistší atomické vypořádání, nejtěžší uptime), token <em>reprezentuje</em> konvenční vklad (jednodušší právně, režie rekonciliace, čemuž se podobají JPM Coin a HSBC TDS), nebo je token <em>instrukční vrstvou</em> nad konvenčními rails (nejslabší nárok na programovatelnost).</li>
+<li><strong>Ekonomika výnosů je stejně důležitá jako regulace.</strong> Zda tokenizované vklady přinášejí stejný úrok jako podkladový vklad, je otázka úrovně treasury. Návrhy, které zachovávají vkladovou ekonomiku, se škálují pro cash management; nevýnosné platební tokeny ztratí firemní zůstatky ve prospěch jakéhokoli konkurenta, který platí.</li>
+<li><strong>Závaznými omezeními jsou interoperabilita a právní finalita.</strong> Konflikt zákonů mezi jurisdikcemi, nesoulad mezi neměnností DLT a právní reverzibilitou a fragmentované platformy (Corda, Canton, Besu, Orion, ERC-20 vs. Canton-native formáty tokenů) jsou nyní závaznými omezeními — nikoli samotná technologie.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="proc-na-tokenizovanych-vkladech-zalezi-prave-ted">Proč na tokenizovaných vkladech záleží právě teď <a class="heading-anchor" href="#proc-na-tokenizovanych-vkladech-zalezi-prave-ted" aria-label="Odkaz na Proč na tokenizovaných vkladech záleží právě teď">#</a></h2>
+<p>Stablecoiny odhalily poptávku po programovatelných digitálních penězích dostupných nepřetržitě. Odpověď bankovního sektoru nespočívá pouze v kopírování stablecoinů; spočívá v přizpůsobení peněz komerčních bank do tokenizovaných prostředí při zachování bankovní regulace, vkladových vztahů a obezřetnostních kontrol. Deutsche Bank popisuje tokenizované vklady jako rozšíření stávajícího bankovního modelu do programovatelných prostředí při zachování role peněz komerčních bank (<a href="https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs" title="Digital Money">Deutsche Bank flow</a>).</p>
+<p>Tento rozdíl je podstatný. Stablecoin je typicky nárokem na emitenta nebo rezervní strukturu. Tokenizovaný vklad má zůstat bankovním vkladem nebo reprezentací bankovního vkladu, s navázaným právním, obezřetnostním a operačním rámcem banky.</p>
+<h2 id="stav-v-roce-2026-od-pilotu-k-produktu-jeste-ne-v-sitovem-meritku">Stav v roce 2026: od pilotu k produktu, ještě ne v síťovém měřítku <a class="heading-anchor" href="#stav-v-roce-2026-od-pilotu-k-produktu-jeste-ne-v-sitovem-meritku" aria-label="Odkaz na Stav v roce 2026: od pilotu k produktu, ještě ne v síťovém měřítku">#</a></h2>
+<h3 id="1-britske-bankovni-piloty-definuji-prakticke-pripady-uziti">1. Britské bankovní piloty definují praktické případy užití <a class="heading-anchor" href="#1-britske-bankovni-piloty-definuji-prakticke-pripady-uziti" aria-label="Odkaz na 1. Britské bankovní piloty definují praktické případy užití">#</a></h3>
+<p>Lloyds označuje Great British Tokenised Deposits za odvětvovou iniciativu a uvádí tři konkrétní případy užití: tržiště pro platby mezi fyzickými osobami, refinancování hypoték a vypořádání digitálních aktiv (<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>). Jde o smysluplné rané zkoušky, protože kombinují pohyb peněz s důvěrou, načasováním a podmíněným vypořádáním.</p>
+<p>Britský multibankovní pilot je skutečně multibankovní. Seznam účastníků — HSBC, NatWest, Lloyds, Barclays, Nationwide a Santander — pokrývá většinu britských retailových a komerčních vkladových zůstatků a program běží do poloviny roku 2026. Na tom záleží, protože tokenizované vklady bez mezibankovní interoperability jsou jen produktové funkce jediné banky; britský pilot je jedním z mála živých experimentů na světě, který skutečně testuje mezibankovní případ.</p>
+<p>Platby na tržištích testují snížení podvodů a důvěru prodávajícího. Refinancování hypoték testuje automatizaci vícestranných procesů. Vypořádání digitálních aktiv testuje dodání proti platbě (delivery-versus-payment) mezi tokenizovanými penězi a tokenizovanými nástroji.</p>
+<h3 id="2-firemni-penezenky-se-stavaji-rozhranim">2. Firemní peněženky se stávají rozhraním <a class="heading-anchor" href="#2-firemni-penezenky-se-stavaji-rozhranim" aria-label="Odkaz na 2. Firemní peněženky se stávají rozhraním">#</a></h3>
+<p>Lloyds uvádí, že vyvíjí peněženky pro firemní a institucionální klienty, které stojí vedle tradičních obrazovek transakčního bankovnictví a mohou držet tokenizované vklady, digitální aktiva a chytré kontrakty (<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>). Jde o klíčové návrhové rozhodnutí. Tokenizované vklady se nedostanou do plošného nasazení, pokud budou vyžadovat, aby treasury týmy opustily stávající bankovní postupy.</p>
+<p>Vítězné rozhraní bude pravděpodobně duální model bankovního účtu a peněženky. Klient vidí treasury platformu; banka zajišťuje konverzi, výběr cesty vypořádání a kontroly compliance v pozadí.</p>
+<h3 id="3-stablecoiny-vytvareji-nalehavost-ale-take-vyjasnuji-rizika">3. Stablecoiny vytvářejí naléhavost, ale také vyjasňují rizika <a class="heading-anchor" href="#3-stablecoiny-vytvareji-nalehavost-ale-take-vyjasnuji-rizika" aria-label="Odkaz na 3. Stablecoiny vytvářejí naléhavost, ale také vyjasňují rizika">#</a></h3>
+<p>Projev BIS z dubna 2026 přiznává stablecoinům zásluhy za technologické vlastnosti jako programovatelnost prostřednictvím chytrých kontraktů a atomické vypořádání, ale zároveň zdůrazňuje rizika kolem jednoty peněz, zranitelnosti vůči runům, integrity finančního systému, měnové suverenity a vypořádání mimo peníze centrální banky (<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>).</p>
+<p>Právě tato kritika je důvodem, proč na tokenizovaných vkladech záleží. Snaží se importovat užitečnou programovatelnost tokenizovaných peněz do regulovaného rámce peněz komerčních bank.</p>
+<h3 id="4-project-agora-a-unified-ledger-utvareji-otazku-velkoobchodni-infrastruktury">4. Project Agorá a unified ledger utvářejí otázku velkoobchodní infrastruktury <a class="heading-anchor" href="#4-project-agora-a-unified-ledger-utvareji-otazku-velkoobchodni-infrastruktury" aria-label="Odkaz na 4. Project Agorá a unified ledger utvářejí otázku velkoobchodní infrastruktury">#</a></h3>
+<p>BIS pojímá Project Agorá jako práci s centrálními bankami a soukromým sektorem na zkoumání tokenizace pro přeshraniční platby a širší směr propojuje s vizí unified ledger (<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>). Deutsche Bank rovněž poukazuje na Project Agorá a Partior jako součást příští generace infrastruktury vypořádání a přeshraničních plateb (<a href="https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs" title="Digital Money">Deutsche Bank flow</a>).</p>
+<p>Zde se tokenizované vklady stávají velkoobchodní infrastrukturou. Klíčovou otázkou je, jak se peníze komerčních bank, peníze centrální banky a tokenizovaná aktiva mohou společně vypořádávat, aniž by byla narušena právní finalita, kontroly likvidity nebo měnová jednota.</p>
+<h2 id="nejrozvinutejsi-bankovni-programy-v-roce-2026">Nejrozvinutější bankovní programy v roce 2026 <a class="heading-anchor" href="#nejrozvinutejsi-bankovni-programy-v-roce-2026" aria-label="Odkaz na Nejrozvinutější bankovní programy v roce 2026">#</a></h2>
+<p>Tři programy si zaslouží samostatný profil: JPMorgan, který otevřel kategorii velkoobchodních vkladových tokenů a provozuje ji v produkčním měřítku; HSBC, který má nejúplnější vícestopý stack napříč vkladovými tokeny, cennými papíry, reálnými aktivy a kryptografií; a evropská a asijská pole programů, která jsou veřejně tišší, ale materiálně aktivní. Považovat tokenizované vklady za jediný odvětvový krok by znamenalo přehlédnout, že tyto stacky uzavírají různé sázky o tom, jak má bankovní nabídka digitálních peněz vypadat.</p>
+<h3 id="jpmorgan-jpm-coin-onyx-a-platforma-kinexys">JPMorgan: JPM Coin, Onyx a platforma Kinexys <a class="heading-anchor" href="#jpmorgan-jpm-coin-onyx-a-platforma-kinexys" aria-label="Odkaz na JPMorgan: JPM Coin, Onyx a platforma Kinexys">#</a></h3>
+<p>JPMorgan spustil JPM Coin v roce 2019, čtyři roky předtím, než většina odvětví začala veřejně používat slovní spojení „tokenizovaný vklad“. Běží na <strong>Kinexys by J.P. Morgan (formerly Onyx)</strong>, permissioned blockchainové platformě banky, a vypořádává velkoobchodní toky firemních klientů — primárně institucionální treasury sweeps, vnitrodenní pohyby likvidity a stále více tokenizovaná repa. Do roku 2026 Kinexys zpracovává řádově 2 miliardy USD denně ve velkoobchodních transakcích, což činí z JPMorgan jediného největšího živého provozovatele vypořádání vkladových tokenů na světě.</p>
+<p>Tato historie je důležitá ze dvou důvodů. Za prvé, JPMorgan má nejdelší produkční záznam v provozních otázkách — rekonciliace, řešení sporů, vnitrodenní chování likvidity a režimy výpadků — které ostatní banky teprve navrhují. Za druhé, platforma je multi-aktivní: Kinexys se rozšířil za vkladový token do tokenizovaného repa, FX vypořádání a mobility kolaterálu, což staví JPMorgan do pozice dodávat delivery-versus-payment napříč jedním registrem, nikoli přes integrace point-to-point.</p>
+<p>Druhou stranou mince je, že JPM Coin je z principu uzavřenou síťovou nabídkou. Vypořádává se na rails JPMorgan, mezi klienty JPMorgan, na chainu provozovaném JPMorgan. Je to nejsilnější příklad v odvětví toho, jak může jednobankovní tokenizovaný vklad škálovat — a zároveň nejsilnější ilustrace kritiky BIS, že bez interoperability se z vkladových tokenů stávají uzavřené zahrady, nikoli velkoobchodní infrastruktura.</p>
+<h3 id="hsbc-vicestopy-stack-od-vkladoveho-tokenu-po-tokenizovane-zlato">HSBC: vícestopý stack od vkladového tokenu po tokenizované zlato <a class="heading-anchor" href="#hsbc-vicestopy-stack-od-vkladoveho-tokenu-po-tokenizovane-zlato" aria-label="Odkaz na HSBC: vícestopý stack od vkladového tokenu po tokenizované zlato">#</a></h3>
+<p>Sázka HSBC je širší. Tam, kde JPMorgan šel do hloubky na jednom velkoobchodním případu užití, HSBC vybudoval paralelně napříč vkladovými tokeny, institucionálními cennými papíry, reálnými aktivy a kryptografií. HSBC výslovně staví tokenizovaný vklad jako svůj preferovaný nástroj pro propojení tradičního bankovnictví s decentralizovanou infrastrukturou, před nekrytými stablecoiny nebo digitálními měnami třetích stran (<a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" title="HSBC Tokenised Deposit Service">HSBC</a>).</p>
+<h4>Tokenised Deposit Service (TDS)</h4>
+<p>HSBC Tokenised Deposit Service převádí fiat zůstatky korporátních klientů na digitální tokeny v poměru 1:1, přičemž prostředky zůstávají plně regulované a v rozvaze banky (<a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" title="HSBC Tokenised Deposit Service">HSBC</a>). TDS je v provozu v pěti jurisdikcích — v Hongkongu, Singapuru, Spojeném království, Lucembursku a Spojených státech — a podporuje okamžité transakce v pěti měnách: USD, GBP, EUR, HKD a SGD. Klíčová funkce je na úrovni treasury: velcí korporátní a institucionální klienti provádějí clearing a vypořádání přeshraničně během několika sekund, čímž eliminují cut-off časy SWIFT, dávková okna a bariéry časových pásem prostřednictvím nepřetržité programovatelnosti chytrých kontraktů.</p>
+<p>Tento produktový soubor je nejsilnějším protipříkladem teze, že „tokenizované vklady jsou stále teoretické“. Zůstávají teoretické v síťovém měřítku; uvnitř HSBC teoretické nejsou.</p>
+<h4>HSBC Orion a digitální kapitálové trhy</h4>
+<p>HSBC Orion je proprietární institucionální DLT platforma banky pro vydávání, vypořádání a custody tokenizovaných cenných papírů. HM Treasury určilo HSBC Orion, aby poskytlo základní platformovou infrastrukturu pro klíčový britský pilot Digital Gilt Instrument (DIGIT) — referenční případ pro tokenizovaný státní dluh ve Spojeném království na úrovni suveréna. HSBC Orion rovněž podpořilo emise digitálních dluhopisů ve významném rozsahu pro hongkongskou vládu a Evropskou investiční banku, včetně zelených a státních tranší.</p>
+<p>Pro tokenizované vklady je to podstatné, protože parita vypořádání mezi vkladovými tokeny a tokenizovanými cennými papíry je předpokladem pro dodání proti platbě na sdíleném registru. Vkladový token bez institucionální platformy pro emise cenných papírů nemá s čím vypořádávat.</p>
+<h4>Tokenizace reálných aktiv: HSBC Gold Token</h4>
+<p>HSBC rozšířila stejný „anchor“ model na fyzická aktiva v retailové vrstvě. HSBC Gold Token umožňuje uživatelům mobilní aplikace HSBC HK nakupovat zlomkové vlastnictví fyzického zlata s institucionálním přístupem ve Spojeném království. Každý token je 100% krytý alokovaným fyzickým zlatem uloženým v institucionálních trezorech HSBC — jde o stejný regulatorní a provozní „anchor“ vzor, jaký banka uplatňuje u svých vkladových tokenů.</p>
+<h4>Síťová interoperabilita a kvantově odolná tokenizace</h4>
+<p>HSBC ověřila atomické vypořádání svých tokenizovaných vkladů napříč externími sítěmi prostřednictvím Canton Network a Project Ensemble Hongkongského měnového úřadu (HKMA). Právě toto je část interoperability, kterou kritika single-bank tokenů ze strany BIS vyžaduje: tokenizované vklady se stávají velkoobchodní infrastrukturou pouze tehdy, pokud se mohou vypořádávat napříč sítěmi, nikoli jen uvnitř jedné banky.</p>
+<p>Souběžně HSBC ve spolupráci s Quantinuum implementovala post-kvantovou kryptografickou ochranu přímo na svém registru tokenizovaného zlata — jde o obrannou reakci na útoky typu „Store Now, Decrypt Later“ (SNDL), kdy útočníci dnes shromažďují šifrovaná data registru v sázce, že je budoucí kvantové stroje dešifrují. Post-kvantová kryptografie na produkčním tokenovém registru zatím není odvětvovým standardem; HSBC patří mezi několik mála bank, které ji považují za nezbytný základ jakékoli tokenizované platformy, která má přežít termíny pro migraci na PQC.</p>
+<h4>Regulované stablecoiny vedle vkladových tokenů</h4>
+<p>HSBC zcela neignoruje ani směr stablecoinů. Banka získala licenci HKMA k pilotování regulovaných stablecoinů pro vypořádání peer-to-peer plateb a investičních transakcí — avšak jako doplněk k jádru tokenizovaných vkladů, nikoli jako jeho náhradu. Strategické sdělení napříč stackem HSBC je konzistentní: tokenizované vklady ukotvují nabídku banky v oblasti digitálních peněz; regulované stablecoiny rozšiřují dosah do případů užití, kde je nárok vkladového tokenu strukturálně nevhodný.</p>
+<h3 id="dalsi-aktivni-programy">Další aktivní programy <a class="heading-anchor" href="#dalsi-aktivni-programy" aria-label="Odkaz na Další aktivní programy">#</a></h3>
+<p>Kromě JPMorgan a HSBC je pro síťový obraz materiálních několik programů, i když jejich veřejné výstupy jsou tenčí.</p>
+<p><strong>Société Générale (SG-FORGE).</strong> SG-FORGE vydal eurodenominované digitální dluhopisy a regulovaný eurový stablecoin EURCV vedle své práce na vkladových tokenech, přičemž EURCV je prvním eurovým stablecoinem vydaným globálně systémově významnou bankou, který funguje napříč více veřejnými chainy. To staví Société Générale do neobvyklé pozice provozovat jak stopu tokenizovaných vkladů, tak regulovaného stablecoinu pod evropskou bankovní regulací, kdy EURCV je nasazen jako vrstva dosahu do otevřeného ekosystému a strana vkladového tokenu zajišťuje regulovaný korporátní perimetr.</p>
+<p><strong>Standard Chartered.</strong> Standard Chartered je aktivní v oblasti tokenizovaných vkladů a tokenizovaných reálných aktiv prostřednictvím Zodia Custody (svého institucionálního custody startupu pro digitální aktiva) a vlastních singapurských pilotů, včetně účasti v MAS Project Guardian pro vypořádání tokenizovaných aktiv. Strategický důraz je kladen na koridory rozvíjejících se trhů — Asie–Afrika–Střední východ — kde jsou tokenizované vklady polohovány tak, aby vytlačily tření korespondenčního bankovnictví, nikoli aby pouze modernizovaly domácí britské nebo americké rails.</p>
+<p><strong>Goldman Sachs (GS DAP).</strong> Platforma GS DAP pro digitální aktiva vydala institucionální digitální dluhopisy (včetně dvouletého digitálního dluhopisu Evropské investiční banky ve výši 100 mil. EUR) a podporuje mobilitu tokenizovaného kolaterálu pro repo a financování cenných papírů. GS DAP je méně korporátně-treasury nabídkou a více platformou pro vypořádání tokenizovaných cenných papírů — užitečným protějškem k podobné roli HSBC Orion a důkazem, že strana digitálních kapitálových trhů ve stacku se konsoliduje rychleji než strana vkladových tokenů.</p>
+<p>Širší implikace je jednoznačná: schopnost vkladového tokenu je nyní nutností pro každou globální velkoobchodní banku, která chce zůstat konkurenceschopná v transakčním bankovnictví, a zajímavější otázkou je, kdo s kým interoperuje, nikoli kdo postaví první.</p>
+<h2 id="tokenizovane-vklady-vs-stablecoiny-vs-cbdc">Tokenizované vklady vs. stablecoiny vs. CBDC <a class="heading-anchor" href="#tokenizovane-vklady-vs-stablecoiny-vs-cbdc" aria-label="Odkaz na Tokenizované vklady vs. stablecoiny vs. CBDC">#</a></h2>
+<p>Tři nástroje soupeří o stejnou roli — programovatelné digitální peníze úrovně vypořádání — ale stojí na zásadně odlišných strukturách nároků. Volba nároku určuje vše ostatní: právní ochranu, obezřetnostní zacházení, kde se aktivum vypořádává a které síti držitel implicitně důvěřuje. Tabulka níže sbalí čtyři kandidáty na pět os, a próza pod ní rozebírá, kde každý z nich skutečně vítězí.</p>
+<table>
+<thead>
+<tr>
+<th>Nástroj</th>
+<th>Typ nároku</th>
+<th>Nejlepší užití</th>
+<th>Stav 2026</th>
+<th>Klíčové riziko</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tokenizované vklady</strong></td>
+<td>Komerční bankovní vklad nebo jeho reprezentace</td>
+<td>Programovatelné platby vedené bankou, treasury, vypořádání tokenizovaných aktiv</td>
+<td>Piloty a rané institucionální produktové návrhy (<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>)</td>
+<td>Interoperabilita a právní konzistence</td>
+</tr>
+<tr>
+<td><strong>Stablecoiny</strong></td>
+<td>Nárok na emitenta/rezervní strukturu</td>
+<td>Krypto likvidita, přeshraniční experimenty, dolarová likvidita</td>
+<td>Velký a rostoucí trh, BIS odhaduje tržní kapitalizaci přibližně 315 miliard USD na začátku dubna 2026 (<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>)</td>
+<td>Runy, integrita finančního systému, měnová suverenita</td>
+</tr>
+<tr>
+<td><strong>Velkoobchodní CBDC</strong></td>
+<td>Peníze centrální banky</td>
+<td>Mezibankovní vypořádání a infrastruktura tokenizovaných trhů</td>
+<td>Aktivní zkoumání prostřednictvím projektů centrálních bank</td>
+<td>Návrh, ochrana soukromí, škálovatelnost, politický mandát</td>
+</tr>
+<tr>
+<td><strong>Maloobchodní CBDC</strong></td>
+<td>Peníze centrální banky pro veřejné užití</td>
+<td>Veřejná digitální alternativa hotovosti</td>
+<td>Smíšený globální pokrok</td>
+<td>Adopce, ochrana soukromí, bankovní dezintermediace</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kde-tokenizovane-vklady-vitezi">Kde tokenizované vklady vítězí <a class="heading-anchor" href="#kde-tokenizovane-vklady-vitezi" aria-label="Odkaz na Kde tokenizované vklady vítězí">#</a></h3>
+<p>Peníze komerčních bank ve vlastní rozvaze nesou regulatorní komfort, který si stablecoiny teprve musí vydobýt. Tokenizované vklady dědí pojištění vkladů, obezřetnostní kapitálové zacházení a stávající AML/sankční kontroly. Pro firemního treasurera to znamená žádné nové riziko protistrany a žádný nový rezervní audit ke kontrole. Také on-rampují z bankovního účtu, který korporát již má — žádná burza, žádný emitent rezerv, žádná novinka custody. BIS i FDIC se k tomuto bodu kloní: jednota peněz drží, když nárok sedí tam, kde mu stávající právní rámec již rozumí (<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>; <a href="https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted" title="FDIC proposed rule">FDIC</a>).</p>
+<h3 id="kde-stablecoiny-stale-vitezi">Kde stablecoiny stále vítězí <a class="heading-anchor" href="#kde-stablecoiny-stale-vitezi" aria-label="Odkaz na Kde stablecoiny stále vítězí">#</a></h3>
+<p>Tři místa. Zaprvé dosah otevřeného ekosystému: stablecoiny komponují s DeFi, s krypto-nativními treasury a s dlouhým ocasem peněženek, které nikdy nebudou integrovat bankovní API. Zadruhé globální retailová distribuce: stablecoiny denominované v dolarech jsou již de facto úsporným nástrojem na trzích, kde je bankovnictví v lokální měně křehké. Zatřetí trhy 24/7 a krypto vypořádání: i s vždy zapnutými bankovními rails ve stylu TDS jsou stablecoiny nativní zúčtovací jednotkou pro krypto likviditu a budou jí v dohledné budoucnosti. Tyto dva nástroje nejsou striktními substituty; konkurenční hranice se týká převážně toho, zda případ užití sedí uvnitř, nebo vně regulovaného bankovního perimetru.</p>
+<h2 id="co-musi-banky-vybudovat">Co musí banky vybudovat <a class="heading-anchor" href="#co-musi-banky-vybudovat" aria-label="Odkaz na Co musí banky vybudovat">#</a></h2>
+<h3 id="architektura-registru-a-pravni-ramec">Architektura registru a právní rámec <a class="heading-anchor" href="#architektura-registru-a-pravni-ramec" aria-label="Odkaz na Architektura registru a právní rámec">#</a></h3>
+<p>V živých nasazeních dominují tři vzory designu. Prvním je „token JE vklad“ — DLT registr sám je systémem záznamů a on-chain zůstatek nese právní nárok. Jde o nejčistší model pro atomické vypořádání a nejblíže tomu, co Project Agorá a návrhy unified ledger předpokládají, ale nutí banku považovat uptime registru za uptime jádra banky. Druhým je „token reprezentuje vklad“ — konvenční účet jádra banky zůstává právním záznamem a token je zrcadlem, které jej následuje. JPM Coin a HSBC TDS jsou blíže k tomuto konci. Je to právně i provozně jednodušší, ale vyžaduje neustálou rekonciliaci a atomické DvP se stává obtížnějším, protože právně závazná noha žije off-ledger. Třetím je „token jako instrukční vrstva“ — token vůbec nereprezentuje vklad; spouští konvenční platbu přes stávající rails (CHAPS, Fedwire, TARGET2). Je nejsnazší nasadit, ale má nejslabší nárok na skutečné programovatelné peníze; je to to, co některé banky dodávají a nazývají tokenizovaným vkladem, když ve skutečnosti mají chytrokontraktový front-end na SWIFT trubce.</p>
+<p>Návrh pravidla FDIC z roku 2026 výslovně uznává první dva jako vkladové závazky evidované prostřednictvím distribuovaných ledger technologií a odlišuje je od platebních stablecoinů (<a href="https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted" title="FDIC proposed rule">FDIC</a>). Třetí dostává obtížnější regulatorní zacházení, protože vkladový vztah a token nikdy nesplynou.</p>
+<h4>Proč je právní finalita tím těžkým problémem</h4>
+<p>„Právní finalita“ je jediná fráze, která se nejčastěji objevuje v roadmapách tokenizovaných vkladů a nejméně rozebírá. Pod ní ve skutečnosti leží tři věci. Zaprvé konflikt zákonů: když se tokenizovaný vklad vydaný britskou bankou atomicky vypořádá proti tokenizovanému cennému papíru registrovanému v Lucembursku přes uzel provozovaný v Singapuru, jurisdikce kterého režimu finality vypořádání obchod řídí? Zadruhé nesoulad mezi neměnností DLT a právním právem na zvrácení: bankovní platby lze zrušit soudním příkazem, sankčním označením nebo provozní chybou; neměnný registr nemůže, což si vynucuje „vrstvu zvratu“, která musí být právně robustní, aniž by narušila narativ neměnnosti. Zatřetí otázka samotné on-chain finality: počítá se potvrzený blok jako právní vypořádání, nebo pouze odpovídající off-chain účetní zápis? Dokud tyto tři otázky nebudou vyřešeny na regulatorní úrovni — nejen bilaterálně mezi účastnícími se bankami — je atomické vypořádání napříč sítěmi pilotem, nikoli infrastrukturou.</p>
+<h3 id="penezenky-a-kontrola-identity">Peněženky a kontrola identity <a class="heading-anchor" href="#penezenky-a-kontrola-identity" aria-label="Odkaz na Peněženky a kontrola identity">#</a></h3>
+<p>Firemní peněženky vyžadují silnou identitu, oddělení povinností, transakční politiku, sankční screening, auditní stopy a kontroly obnovy. Peněženka pro tokenizované vklady není spotřebitelská krypto peněženka s bankovním logem. Je to treasury kontrolní bod.</p>
+<p>Nejdůležitější provozní vlastností může být politika. Treasurer by měl být schopen definovat, kdo může iniciovat, schválit, vypořádat, stornovat nebo rozporovat pohyb tokenizovaného vkladu při konkrétních prahových hodnotách a pravidlech protistran.</p>
+<h3 id="ekonomika-vynosu-a-treasury">Ekonomika výnosů a treasury <a class="heading-anchor" href="#ekonomika-vynosu-a-treasury" aria-label="Odkaz na Ekonomika výnosů a treasury">#</a></h3>
+<p>Výnos je otázka, kterou senior treasureři pokládají jako první a které se většina tiskových zpráv o tokenizovaných vkladech vyhýbá. Pokud korporát zaparkuje 50 milionů USD v peněžence tokenizovaných vkladů na 48 hodin, dokud čeká na nohu vypořádání, vydělává tento zůstatek stejný úrok, jaký banka platí na konvenčním overnight vkladu, nebo je sterilní? Vznikají dva vzory. Některé banky považují tokenizovaný vklad za ekonomicky identický s podkladovým vkladem — korporát si zachovává svou sazbu, banka si zachovává zůstatek v knize a token je programovatelnou vrstvou. Jiné jej považují za transakční float, který neplatí žádný úrok, protože se předpokládá, že peníze jsou v pohybu. První vzor zachovává stávající vztah vkladové ekonomiky a je jediným designem, který se škáluje pro cash management. Druhý je v podstatě uzavřený platební nástroj a ztratí firemní zůstatky ve prospěch jakéhokoli konkurenta, který nabídne první vzor. To je také důvod, proč „tokenizované vklady versus stablecoiny“ je zčásti otázkou ekonomiky výnosu, nejen regulatorní: v prostředí vyšších sazeb má nevýnosný platební token strukturální nevýhodu oproti úročenému tokenizovanému vkladu nebo výnos-tokenizovanému money market fondu běžícímu vedle stablecoinu.</p>
+<h3 id="vrstva-interoperability">Vrstva interoperability <a class="heading-anchor" href="#vrstva-interoperability" aria-label="Odkaz na Vrstva interoperability">#</a></h3>
+<p>Tokenizovaný vklad jediné banky je užitečný, ale omezený. Vícebankovní interoperabilita je místo, kde začínají síťové efekty. To vyžaduje standardy pro formát tokenu, messaging, identitu, finalitu vypořádání, řešení sporů, AML data, přenositelnost peněženky a konverzi mezi tokenizovanými vklady, konvenčními vklady, stablecoiny, CBDC a tokenizovanými aktivy.</p>
+<p>Technický povrch je fragmentovaný. Mezi etablovaná permissioned-DLT řešení patří R3 Corda (používaná Standard Chartered a dalšími pro tokenizované vklady), Canton Network (používaná HSBC pro testy vypořádání napříč sítěmi a Goldman Sachs pro GS DAP), Hyperledger Besu (varianta Etherea odvozená od JPMorgan v rámci Kinexys) a proprietární stacky jako HSBC Orion. Volba formátu tokenu rovněž není ustálená: některé sítě používají kontrakty odvozené od ERC-20, aby mohly komponovat se širším nástrojovým vybavením Etherea; jiné používají primitiva tokenů ve stylu IBC nebo Canton-native. Pragmatická odpověď v roce 2026 zní, že žádný jednotlivý stack nevyhrál, a banky, které tokenizované vklady škálují, jsou ty, které budují mosty interoperability (protokoly atomického vypořádání mezi Canton a Besu, mapování ISO 20022 na on-chain formáty zpráv), nikoli ty, které sázejí na jedinou platformu.</p>
+<p>Rizikem je soubor uzavřených zahrad jednotlivých bank. Příležitostí je programovatelná vrstva peněz komerčních bank, která zachovává bankovní důvěru a zároveň zlepšuje digitální vypořádání.</p>
+<h2 id="selhani-kde-se-stack-lame">Selhání: kde se stack láme <a class="heading-anchor" href="#selhani-kde-se-stack-lame" aria-label="Odkaz na Selhání: kde se stack láme">#</a></h2>
+<p>O tokenizovaných vkladech se většinou píše v optimistickém registru. Modely selhání stojí za to brát vážně, protože formují eventuální regulatorní perimetr.</p>
+<p><strong>Chyba ve smart contractu na vkladovém tokenu.</strong> Chyba v smart contractu vkladového tokenu není běžným softwarovým incidentem; je potenciálně událostí nesprávného zůstatku na penězích komerční banky. Banky potřebují formálně ověřený audit kontraktu, cestu k upgradu, která nevyžaduje migraci zůstatků klientů, a circuit-breaker, který pozastaví programovatelné vypořádání, aniž by narušil konvertibilitu zpět na konvenční vklady.</p>
+<p><strong>Selhání banky napříč jurisdikcemi.</strong> Pokud selže banka s tokenizovanými vklady vydanými napříč pěti jurisdikcemi, režimy pojištění vkladů platí národně, ale registr je globální. Resolution autority nestresovaly, jak to interaguje s preferencí vkladatelů, pravidly ring-fencingu nebo otázkou, kdo skutečně vlastní token v okamžiku uzavření banky. Jednojurisdikční vkladové tokeny se problému vyhýbají; vícejurisdikční tokeny jsou exponovány.</p>
+<p><strong>Krize likvidity s bifurkovanými vklady.</strong> Konvenční a tokenizované vklady by se ve stresové události mohly chovat velmi odlišně. Pokud lze tokenizovaný vklad přesouvat 24/7 do nebankovní peněženky přes smart contract, zatímco konvenční vklady čelí dennímu cut-off, tokenizovaná strana běží rychleji. To je v normálních podmínkách feature a v bankovním runu destabilizátor. Liquidity-coverage ratios a rámce provozní odolnosti nebyly psány pro tuto asymetrii.</p>
+<p><strong>Provozní závislost na jediném DLT vendorovi.</strong> Mnoho bankovních platforem vkladových tokenů běží na jediném permissioned-DLT stacku. Kritika ve stylu DORA, která už platí pro cloud, platí i zde: výpadek stacku u vendora je nyní výpadkem kritických služeb. Mitigací je multi-stack schopnost, nejen multi-region nasazení jednoho stacku.</p>
+<p>Žádný z těchto bodů není důvodem nestavět tokenizované vklady. Jsou důvodem, proč k platformě přistupovat jako ke kritické infrastruktuře finančních služeb od prvního dne, místo dovybavovat kontroly po dosažení škály.</p>
+<h2 id="co-to-znamena-podle-typu-banky">Co to znamená podle typu banky <a class="heading-anchor" href="#co-to-znamena-podle-typu-banky" aria-label="Odkaz na Co to znamená podle typu banky">#</a></h2>
+<h3 id="globalni-banky">Globální banky <a class="heading-anchor" href="#globalni-banky" aria-label="Odkaz na Globální banky">#</a></h3>
+<p>Globální banky by měly tokenizované vklady chápat jako infrastrukturu transakčního bankovnictví. Pozornost by se měla soustředit na firemní peněženky, přeshraniční treasury, vypořádání digitálních aktiv, mobilitu kolaterálu a programovatelné kontroly pro velké klienty. Referenční stacky jsou nyní viditelné: produkční měřítko ve stylu Kinexys (JPMorgan), vícestopá šíře ve stylu HSBC, integrace vypořádání cenných papírů ve stylu GS DAP a duální pokrytí vkladového tokenu plus regulovaného stablecoinu ve stylu SG-FORGE. Rozhodujícím bodem letošního roku je, zda sjednotit více interních DLT experimentů na jedinou platformu tokenizovaných vkladů pro klienty treasury dříve, než konkurence definuje uživatelské prostředí firemní peněženky. <strong>Action item:</strong> určit jednoho vlastníka programu s pravomocí napříč transakčním bankovnictvím, kapitálovými trhy a divizemi pro digitální aktiva — fragmentovaná interní podpora je nejčastějším důvodem, proč tyto stacky končí jako piloty, nikoli jako produkty.</p>
+<h3 id="britske-banky">Britské banky <a class="heading-anchor" href="#britske-banky" aria-label="Odkaz na Britské banky">#</a></h3>
+<p>Britské banky mají věrohodnou ranou koordinační příležitost prostřednictvím Great British Tokenised Deposits a multibankovní pilot je globálně sledován jako šablona pro mezibankovní interoperabilitu tokenizovaných vkladů. Výzvou je proměnit piloty v interoperabilní standardy dříve, než se sítě stablecoinů stanou standardním mezinárodním rozhraním. <strong>Action item:</strong> zpevnit pracovní postupy pro platby na tržištích a refinancování hypoték do provozní zralosti v roce 2026 (jasné SLA, řešení sporů, integrace sankcí) namísto provozování nekonečných proof-of-concept demonstrací; důvěryhodnost pilotu závisí na nasazení alespoň jednoho produkčně použitelného případu užití před uzavřením okna v polovině roku 2026.</p>
+<h3 id="centralni-banky-a-regulatori">Centrální banky a regulátoři <a class="heading-anchor" href="#centralni-banky-a-regulatori" aria-label="Odkaz na Centrální banky a regulátoři">#</a></h3>
+<p>Regulátoři musí vyjasnit právní charakter, zacházení s pojištěním vkladů, obezřetnostní kapitál, finalitu vypořádání, custody peněženek, provozní odolnost a způsob, jakým tokenizované vklady interagují se stablecoiny a CBDC. <strong>Action item:</strong> vydat konkrétní pokyny k hybridnímu případu — vkladově krytým stablecoinům a bankami vydaným tokenizovaným vkladům fungujícím na stejném registru — protože právě k této struktuře většina bank směřuje a současný regulatorní text čte, jako by se tyto dvě kategorie nikdy nepotkaly.</p>
+<h3 id="korporace">Korporace <a class="heading-anchor" href="#korporace" aria-label="Odkaz na Korporace">#</a></h3>
+<p>Korporace by neměly čekat na univerzální síť. Měly by začít mapovat případy užití, kde by programovatelné bankovní peníze mohly snížit podvody, zpoždění vypořádání, rekonciliace nebo vázanou likviditu. <strong>Action item:</strong> odpilotovat jeden konkrétní tok s měřitelnými KPI — přeshraniční sweep likvidity, vnitrodenní mobilita kolaterálu nebo DvP pro tokenizované gilty jsou třemi kandidáty s nejsilnějším signálem — a instrumentovat jej s ohledem na otázky režimů selhání (co se stane, když se smart kontrakt pozastaví; jak se chová tokenizovaná noha ve stresovém scénáři ve srovnání s konvenční nohou).</p>
+<h2 id="zaver">Závěr <a class="heading-anchor" href="#zaver" aria-label="Odkaz na Závěr">#</a></h2>
+<p>Tokenizované vklady jsou v roce 2026 tam, kde byly real-time payments před deseti lety: hodnotou zřejmé, implementací nerovnoměrné a vázané na síťovou koordinaci. Piloty běží, vedoucí bankovní stacky (JPMorgan Kinexys, HSBC TDS + Orion, britský multibankovní program) jsou produkční ve svých vlastních perimetrech, regulatorní kategorie tvrdnou (FDIC, BIS, HKMA) a technologický stack přestal být závazným omezením. Zbývají interoperabilita, právní finalita a ekonomika výnosů — tři problémy, které odvětví dokáže vyřešit, ale jen tehdy, pokud banky budou považovat roky 2026–2027 za okno pro nastavení standardů. Riziko není v tom, že tokenizované vklady selžou v dodávce; je v tom, že se dodají jako dvanáct nekompatibilních uzavřených zahrad.</p>
+<h2 id="casto-kladene-dotazy">Často kladené dotazy <a class="heading-anchor" href="#casto-kladene-dotazy" aria-label="Odkaz na Často kladené dotazy">#</a></h2>
+<p><strong>Jsou tokenizované vklady totéž co stablecoiny?</strong></p>
+<p>Ne. Oba nabízejí programovatelné digitální peníze v režimu 24/7, ale používají zcela odlišné právní struktury a struktury nároků. Stablecoin je nárokem na rezervní aktivum nebo korporátní strukturu soukromého emitenta, fungující mimo rozvahu centrální banky (<a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">BIS</a>). Tokenizovaný vklad je přímým závazkem komerční banky, který dědí stávající bankovní regulaci, kontroly AML/sankcí a perimetr pojištění vkladů (<a href="https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted" title="FDIC proposed rule">FDIC</a>).</p>
+<p><strong>Jaké jsou hlavní britské případy užití?</strong></p>
+<p>Britský multibankovní pilot poloviny roku 2026 (HSBC, Lloyds, NatWest, Barclays, Nationwide a Santander) se zaměřuje na tři praktické oblasti: platby mezi osobami na tržištích pro snížení podvodů, automatizované vícestranné pracovní postupy pro refinancování hypoték a dodání proti platbě (DvP) pro vypořádání digitálních aktiv — párování tokenizované hotovosti s tokenizovanými státními dluhopisy v rámci britského pilotu Digital Gilt Instrument (DIGIT) (<a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Lloyds Banking Group</a>).</p>
+<p><strong>Nahradí tokenizované vklady stablecoiny?</strong></p>
+<p>Nepravděpodobně; jsou to doplňkové nástroje sloužící různým perimetrům. Stablecoiny budou nadále dominovat v otevřených DeFi ekosystémech, krypto-nativních likviditních poolech a v retailových přeshraničních úsporách na volatilních fiat trzích. Tokenizované vklady vyhrají regulovaný perimetr — cash management firemního treasury, institucionální obchodní vypořádání a velkokapacitní transakční bankovnictví — kde záleží na pojištění vkladů, obezřetnostním kapitálovém zacházení a stávajících AML kontrolách.</p>
+<p><strong>Co brání plošnému nasazení?</strong></p>
+<p>Samotná technologie je připravena. Plošné nasazení je blokováno třemi netechnickými třecími body: <strong>interoperabilita</strong> (fragmentované DLT stacky — Corda, Canton, Hyperledger Besu, HSBC Orion — v současnosti fungují jako uzavřené zahrady); <strong>právní finalita</strong> (žádné globální regulatorní sladění v otázce konfliktu zákonů ani způsobu, jak sladit neměnnost DLT s povinností banky stornovat transakce na základě soudního příkazu, sankcí nebo provozní chyby); a <strong>ekonomika výnosů</strong> (odvětví neujednalo, zda tokenizované firemní peněženky vyplácejí konkurenční overnight úrok nebo se chovají jako sterilní transakční float).</p>
+<p><strong>Která banka má nejrozvinutější stack tokenizovaných vkladů?</strong></p>
+<p>Rozdělená koruna. JPMorgan je nesporným lídrem v produkčním objemu, kdy Kinexys by J.P. Morgan (formerly Onyx) zpracovává řádově 2 miliardy USD denně ve velkoobchodních firemních transakcích (<a href="https://www.jpmorgan.com/kinexys" title="Kinexys by JPMorgan">JPMorgan</a>). HSBC má strukturálně nejrozmanitější vícestopý stack: HSBC Tokenised Deposit Service v Hongkongu, Singapuru, Spojeném království, Lucembursku a Spojených státech v USD/GBP/EUR/HKD/SGD; HSBC Orion jako určená infrastruktura pro britský pilot Digital Gilt Instrument (DIGIT); HSBC Gold Token tokenizující alokované fyzické zlato; plus atomické vypořádání mezi sítěmi testované na Canton a Project Ensemble a post-kvantová kryptografická bezpečnost implementovaná s Quantinuum (<a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" title="HSBC Tokenised Deposit Service">HSBC</a>). Britský multibankovní pilot je nejdůvěryhodnějším živým testem mezibankovní interoperability.</p>
+<h2 id="odkazy">Odkazy <a class="heading-anchor" href="#odkazy" aria-label="Odkaz na Odkazy">#</a></h2>
+<ul>
+<li>Lloyds Banking Group, (2026). <a href="https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html" title="Digital assets in 2026">Digital assets in 2026: building the future of finance in the UK ⧉</a>.</li>
+<li>HSBC, (2026). <a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" title="HSBC Tokenised Deposit Service">HSBC Tokenised Deposit Service ⧉</a>.</li>
+<li>JPMorgan, (2026). <a href="https://www.jpmorgan.com/kinexys" title="Kinexys by JPMorgan">Kinexys (formerly Onyx) digital assets platform ⧉</a>.</li>
+<li>BIS, (2026). <a href="https://www.bis.org/speeches/sp260420.pdf" title="Stablecoins: framing the debate">Stablecoins: framing the debate ⧉</a>.</li>
+<li>Deutsche Bank flow, (2026). <a href="https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs" title="Digital Money">Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉</a>.</li>
+<li>FDIC, (2026). <a href="https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted" title="FDIC proposed rule">GENIUS Act requirements and standards proposed rule ⧉</a>.</li>
+<li>Cambridge Centre for Alternative Finance, (2026). <a href="https://www.jbs.cam.ac.uk/wp-content/uploads/2026/02/2026-ccaf-tokenised-money-use-cases-interoperability-and-regulation.pdf" title="Tokenised money report">Tokenised money: Use cases, interoperability and regulation ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Naposledy revidováno <time datetime="2026-05-21">2026-05-21</time>.</p>
+
+<!-- enrich-end -->
+<aside class="author-card" aria-label="O autorovi"><img alt="Portrét Sebastiena Rousseaua" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/cs/o-mne/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Senior bankovní technolog, píši o aplikované AI, migraci na ISO 20022, postkvantové kryptografii pro finanční služby a strukturální transformaci velkoobchodních plateb.</span><span class="author-credentials">Více než 20 let zkušeností v HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/cs/o-mne/index.html">Celý profil</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Naposledy revidováno <time datetime="2026-05-21">2026-05-21</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Související četba</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/cs/2026-05-16-nejlepsi-cloudova-architektura-pro-banky-2026" class="related-media" aria-label="Nejlepší cloudová infrastrukturní architektura v roce 2026: AI-nativní, multi-cloudový a kvantově odolný plán pro finanční služby" tabindex="-1"><img alt="Six-pillar cloud architecture diagram for 2026 — AI-native, multi-cloud, serverless, edge, DevSecOps, and sustainable design, with CloudCDN edge research overlay" src="https://cloudcdn.pro/api/transform?url=/stock/images/cloud-architecture-2026-banner.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="nejlepsi-cloudova-infrastrukturni-architektura-v-roce-2026-ai-nativni-multi-clou"><a href="https://sebastienrousseau.com/cs/2026-05-16-nejlepsi-cloudova-architektura-pro-banky-2026">Nejlepší cloudová infrastrukturní architektura v roce 2026: AI-nativní, multi-cloudový a kvantově odolný plán pro finanční služby</a> <a class="heading-anchor" href="#nejlepsi-cloudova-infrastrukturni-architektura-v-roce-2026-ai-nativni-multi-clou" aria-label="Odkaz na Nejlepší cloudová infrastrukturní architektura v roce 2026: AI-nativní, multi-cloudový a kvantově odolný plán pro finanční služby">#</a></h3><p><time datetime="2026-05-16">2026-05-16</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Zdroje a odkazy</h2><ol class="article-sources-list"><li><a href="https://www.bis.org/speeches/sp260420.pdf" rel="external noopener nofollow"><span class="source-host">www.bis.org</span><span class="source-path">/speeches/sp260420.pdf</span></a></li><li><a href="https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service" rel="external noopener nofollow"><span class="source-host">www.business.hsbc.com</span><span class="source-path">/en-gb/products/tokenised-deposit-service</span></a></li><li><a href="https://www.jpmorgan.com/kinexys" rel="external noopener nofollow"><span class="source-host">www.jpmorgan.com</span><span class="source-path">/kinexys</span></a></li></ol></aside><nav class="post-pagination" aria-label="Stránkování článků"><a class="post-pagination-prev" href="/cs/2026-05-20-cloud-native-banking-financial-institutions-2026/"><span class="post-pagination-label">Předchozí</span><span class="post-pagination-title">Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/cs/o-mne/index.html">O mně</a></li>
+              <li><a href="/cs/kontakt/index.html">Kontakt</a></li>
+              <li><a href="/cs/vytvoreno-statickym-generatorem/index.html">Vytvořeno se Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publikace</h2>
+            <ul>
+              <li><a href="/cs/clanky/index.html">Články</a></li>
+              <li><a href="/cs/publikace/index.html">Publikace</a></li>
+              <li><a href="/cs/stitky/index.html">Štítky</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Práce</h2>
+            <ul>
+              <li><a href="/cs/projekty/index.html">Projekty</a></li>
+              <li><a href="/cs/playlisty/index.html">Playlists</a></li>
+              <li><a href="/cs/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Kontakt</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Přihlášení k odběru newsletteru">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — výzkumné poznámky o platbách, AI a postkvantové kryptografii. Žádný spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="vy@banka.cz" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Přihlásit se k odběru</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Sociální odkazy">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau na Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau na LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau na Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau na YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau na YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/cs/pristupnost/index.html">Přístupnost</a> ·
+            <a href="/cs/soukromi/index.html">Soukromí</a> ·
+            <a href="/cs/podminky/index.html">Podmínky</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"cs"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"cs"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":4530,"headline":"Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money","description":"Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/stocks/images/bit-cloud-GlqbGLCPnQ4.webp","width":"100vw","height":"100vh","caption":"Tokenised deposit banking architecture for 2026 showing commercial bank money, digital wallets, stablecoins, CBDCs, tokenised gilts, and Project Agorá settlement paths"},"url":"https://sebastienrousseau.com/cs/2026-05-21-tokenised-deposits-banking-services-status-2026/","datePublished":"2026-05-21T06:06:06+00:00","dateModified":"2026-05-21","inLanguage":"cs","keywords":"tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercial bank money, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, digital wallets, tokenised gilts","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/cs/2026-05-21-tokenised-deposits-banking-services-status-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"cs"},"citation":[{"@type":"CreativeWork","url":"https://www.bis.org/speeches/sp260420.pdf"},{"@type":"CreativeWork","url":"https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service"},{"@type":"CreativeWork","url":"https://www.jpmorgan.com/kinexys"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/cs/"},{"@type":"ListItem","position":3,"name":"Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money","item":"https://sebastienrousseau.com/cs/2026-05-21-tokenised-deposits-banking-services-status-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Hledat">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Hledat</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Hledat">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Hledat v dokumentaci..." autocomplete="off" aria-label="Hledat"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> zavřít</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigovat</span><span><kbd>Enter</kbd> otevřít</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money","url":"https://sebastienrousseau.com/cs/2026-05-21-tokenised-deposits-banking-services-status-2026/","inLanguage":"cs-CZ","isAccessibleForFree":true,"proficiencyLevel":"Expert","keywords":"tokenised deposits 2026, tokenized deposits banking, deposit tokens, Great British Tokenised Deposits, Lloyds digital assets, stablecoins, commercial bank money, BIS stablecoins, Project Agora, unified ledger, Deutsche Bank digital money, CBDC, tokenised money, digital wallets, tokenised gilts","dependencies":["Stablecoin"]}</script></body>
+</html>

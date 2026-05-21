@@ -4,7 +4,43 @@
   <link href="https://sebastienrousseau.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://sebastienrousseau.com"/>
   <id>https://sebastienrousseau.com</id>
-  <updated>2026-05-20T06:06:06+00:00</updated>
+  <updated>2026-05-21T06:06:06+00:00</updated>
+  <entry>
+    <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
+    <link href="https://sebastienrousseau.com/tr/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html"/>
+    <id>https://sebastienrousseau.com/tr/2026-05-21-tokenised-deposits-banking-services-status-2026/index.html</id>
+    <updated>2026-05-21T06:06:06+00:00</updated>
+    <published>2026-05-21T06:06:06+00:00</published>
+    <summary>Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</summary>
+    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
+  </entry>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <entry>
     <title>Cloud Native Banking in 2026: Kubernetes, DORA, Sovereignty, and the End of the VM vs Container Divide</title>
     <link href="https://sebastienrousseau.com/tr/2026-05-20-cloud-native-banking-financial-institutions-2026/index.html"/>
@@ -35,208 +71,4 @@
   
   
   
-  
-  
-  
-  
-  
-  
-  <entry>
-    <title>Global Wholesale Payments in 2026: ISO 20022, RTGS Renewal, and the Economics of Interoperability</title>
-    <link href="https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026"/>
-    <id>https://sebastienrousseau.com/2026-05-19-global-wholesale-payments-economics-2026</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>Global wholesale payments in 2026 are being reshaped by ISO 20022 harmonisation, RTGS renewal, extended settlement windows, non-bank access, API governance, DLT pilots, and cross-border payment fragmentation. The economic issue is interoperability, not messaging alone.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>2026&apos;da Küresel Toptan Ödemeler: ISO 20022, RTGS Yenileme ve Birlikte Çalışabilirliğin Ekonomisi</title>
-    <link href="https://sebastienrousseau.com/tr/2026-05-19-global-wholesale-payments-economics-2026/index.html"/>
-    <id>https://sebastienrousseau.com/tr/2026-05-19-global-wholesale-payments-economics-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>2026&apos;da küresel toptan ödemeler; ISO 20022 uyumlaştırması, RTGS yenilemesi, genişletilmiş mutabakat pencereleri, banka dışı erişim, API yönetişimi, DLT pilotları ve sınır ötesi ödeme parçalanması tarafından yeniden şekillendirilmektedir. Ekonomik mesele yalnızca mesajlaşma değil, birlikte çalışabilirliktir.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>การชำระเงินขายส่งระดับโลกในปี 2026: ISO 20022 การปรับปรุง RTGS และเศรษฐศาสตร์ของการทำงานร่วมกันได้</title>
-    <link href="https://sebastienrousseau.com/th/2026-05-19-global-wholesale-payments-economics-2026/index.html"/>
-    <id>https://sebastienrousseau.com/th/2026-05-19-global-wholesale-payments-economics-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>การชำระเงินขายส่งระดับโลกในปี 2026 กำลังถูกปรับโฉมโดยการประสาน ISO 20022 การปรับปรุง RTGS การขยายหน้าต่างการชำระดุล การเข้าถึงโดยผู้ที่มิใช่ธนาคาร ธรรมาภิบาล API การทดลอง DLT และการกระจัดกระจายของการชำระเงินข้ามพรมแดน ประเด็นทางเศรษฐกิจคือการทำงานร่วมกันได้ มิใช่เพียงการรับส่งข้อความ</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Los pagos mayoristas mundiales en 2026: ISO 20022, renovación de los RTGS y la economía de la interoperabilidad</title>
-    <link href="https://sebastienrousseau.com/es/2026-05-19-global-mayorista-pagos-economia-2026/index.html"/>
-    <id>https://sebastienrousseau.com/es/2026-05-19-global-mayorista-pagos-economia-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>Los pagos mayoristas mundiales en 2026 están siendo reconfigurados por la armonización de ISO 20022, la renovación de los RTGS, la ampliación de las ventanas de liquidación, el acceso de no bancos, la gobernanza de las API, los pilotos DLT y la fragmentación de los pagos transfronterizos. La cuestión económica es la interoperabilidad, no solo la mensajería.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Les paiements de gros mondiaux en 2026 : ISO 20022, renouvellement des RTGS et l&apos;économie de l&apos;interopérabilité</title>
-    <link href="https://sebastienrousseau.com/fr/2026-05-19-mondiaux-de-gros-paiements-economie-2026/index.html"/>
-    <id>https://sebastienrousseau.com/fr/2026-05-19-mondiaux-de-gros-paiements-economie-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>Les paiements de gros mondiaux en 2026 sont remodelés par l&apos;harmonisation ISO 20022, le renouvellement des RTGS, l&apos;extension des fenêtres de règlement, l&apos;accès des non-banques, la gouvernance des API, les pilotes DLT et la fragmentation des paiements transfrontaliers. L&apos;enjeu économique est l&apos;interopérabilité, pas seulement la messagerie.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Pembayaran Wholesale Global pada 2026: ISO 20022, Pembaruan RTGS, dan Ekonomi Interoperabilitas</title>
-    <link href="https://sebastienrousseau.com/id/2026-05-19-global-wholesale-payments-economics-2026/index.html"/>
-    <id>https://sebastienrousseau.com/id/2026-05-19-global-wholesale-payments-economics-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>Pembayaran wholesale global pada 2026 dibentuk ulang oleh harmonisasi ISO 20022, pembaruan RTGS, perluasan jendela penyelesaian, akses non-bank, tata kelola API, uji coba DLT, dan fragmentasi pembayaran lintas batas. Isu ekonominya adalah interoperabilitas, bukan sekadar pesan.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>2026년 글로벌 거액결제: ISO 20022, RTGS 재구축, 그리고 상호운용성의 경제학</title>
-    <link href="https://sebastienrousseau.com/ko/2026-05-19-global-wholesale-payments-economics-2026/index.html"/>
-    <id>https://sebastienrousseau.com/ko/2026-05-19-global-wholesale-payments-economics-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>2026년 글로벌 거액결제는 ISO 20022 표준화, RTGS 재구축, 결제 창구 확대, 비은행 접근, API 거버넌스, DLT 시범사업, 국경 간 결제 분절화에 의해 재편되고 있다. 경제적 핵심 과제는 단순한 메시지 표준이 아니라 상호운용성이다.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Globaler Wholesale-Zahlungsverkehr im Jahr 2026: ISO 20022, RTGS-Erneuerung und die Ökonomie der Interoperabilität</title>
-    <link href="https://sebastienrousseau.com/de/2026-05-19-globale-wholesale-zahlungsverkehr-okonomie-2026/index.html"/>
-    <id>https://sebastienrousseau.com/de/2026-05-19-globale-wholesale-zahlungsverkehr-okonomie-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>Der globale Wholesale-Zahlungsverkehr wird 2026 neu gestaltet durch die ISO-20022-Harmonisierung, die RTGS-Erneuerung, erweiterte Abwicklungsfenster, Nichtbankenzugang, API-Governance, DLT-Piloten und die Fragmentierung grenzüberschreitender Zahlungen. Die ökonomische Frage lautet Interoperabilität, nicht allein Nachrichtenformat.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>2026 में वैश्विक थोक भुगतान: ISO 20022, RTGS नवीनीकरण और अंतर-संचालनीयता का अर्थशास्त्र</title>
-    <link href="https://sebastienrousseau.com/hi/2026-05-19-global-wholesale-payments-economics-2026/index.html"/>
-    <id>https://sebastienrousseau.com/hi/2026-05-19-global-wholesale-payments-economics-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>2026 में वैश्विक थोक भुगतान ISO 20022 सामंजस्य, RTGS नवीनीकरण, विस्तारित निपटान विंडो, गैर-बैंक पहुँच, API शासन, DLT पायलट और सीमा-पार भुगतान विखंडन से पुनर्आकारित हो रहे हैं। आर्थिक मुद्दा अंतर-संचालनीयता है, केवल संदेश-व्यवस्था नहीं।</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Pandaigdigang Wholesale na Bayad sa 2026: ISO 20022, Pagpapanibago ng RTGS, at ang Ekonomiya ng Interoperability</title>
-    <link href="https://sebastienrousseau.com/fil/2026-05-19-global-wholesale-payments-economics-2026/index.html"/>
-    <id>https://sebastienrousseau.com/fil/2026-05-19-global-wholesale-payments-economics-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>Ang pandaigdigang wholesale na bayad sa 2026 ay binabago ng harmonisasyon ng ISO 20022, pagpapanibago ng RTGS, pinalawak na mga settlement window, akses ng non-bank, pamamahala ng API, mga pilot ng DLT, at fragmentation ng cross-border na bayad. Ang isyu na pang-ekonomiko ay interoperability, hindi lamang messaging.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>২০২৬-এ বৈশ্বিক পাইকারি পেমেন্ট: ISO 20022, RTGS পুনর্নবায়ন এবং আন্তঃকার্যকারিতার অর্থনীতি</title>
-    <link href="https://sebastienrousseau.com/bn/2026-05-19-global-wholesale-payments-economics-2026/index.html"/>
-    <id>https://sebastienrousseau.com/bn/2026-05-19-global-wholesale-payments-economics-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>২০২৬-এ বৈশ্বিক পাইকারি পেমেন্ট ISO 20022 সমন্বয়, RTGS পুনর্নবায়ন, সম্প্রসারিত সেটেলমেন্ট উইন্ডো, ব্যাংক-বহির্ভূত প্রবেশাধিকার, API গভর্নেন্স, DLT পাইলট এবং সীমান্ত-পার পেমেন্ট খণ্ডায়নের মাধ্যমে নতুন রূপ পাচ্ছে। অর্থনৈতিক প্রশ্নটি কেবল মেসেজিং নয়, আন্তঃকার্যকারিতা।</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Mondiaal wholesalebetalingsverkeer in 2026: ISO 20022, vernieuwing van RTGS en de economie van interoperabiliteit</title>
-    <link href="https://sebastienrousseau.com/nl/2026-05-19-global-wholesale-payments-economics-2026/index.html"/>
-    <id>https://sebastienrousseau.com/nl/2026-05-19-global-wholesale-payments-economics-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>Het mondiale wholesalebetalingsverkeer wordt in 2026 hervormd door ISO 20022-harmonisatie, vernieuwing van RTGS, verruimde afwikkelingsvensters, toegang voor niet-banken, API-governance, DLT-pilots en de fragmentatie van grensoverschrijdende betalingen. De economische kernvraag is interoperabiliteit, niet enkel berichtgeving.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Pagamentos de atacado globais em 2026: ISO 20022, renovação dos RTGS e a economia da interoperabilidade</title>
-    <link href="https://sebastienrousseau.com/pt-br/2026-05-19-globais-atacado-pagamentos-economia-2026/index.html"/>
-    <id>https://sebastienrousseau.com/pt-br/2026-05-19-globais-atacado-pagamentos-economia-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>Os pagamentos de atacado globais em 2026 estão sendo remodelados pela harmonização do ISO 20022, pela renovação dos RTGS, pela ampliação das janelas de liquidação, pelo acesso de não-bancos, pela governança de APIs, pelos pilotos de DLT e pela fragmentação dos pagamentos transfronteiriços. A questão econômica é a interoperabilidade, não apenas a mensageria.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>المدفوعات بالجملة العالمية في 2026: ISO 20022 وتجديد أنظمة RTGS واقتصاديات قابلية التشغيل البيني</title>
-    <link href="https://sebastienrousseau.com/ar/2026-05-19-global-wholesale-payments-economics-2026/index.html"/>
-    <id>https://sebastienrousseau.com/ar/2026-05-19-global-wholesale-payments-economics-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>تُعاد صياغة المدفوعات بالجملة العالمية في 2026 من خلال مواءمة ISO 20022 وتجديد أنظمة RTGS وتمديد نوافذ التسوية ووصول الجهات غير المصرفية وحوكمة واجهات API وتجارب DLT وتشظّي المدفوعات العابرة للحدود. القضية الاقتصادية هي قابلية التشغيل البيني، وليست المراسلة وحدها.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Biyan Kuɗi na Manyan Ƙimomi a Duniya a 2026: ISO 20022, Sabunta RTGS, da Tattalin Arzikin Haɗakar Tsare-tsare</title>
-    <link href="https://sebastienrousseau.com/ha/2026-05-19-global-wholesale-payments-economics-2026/index.html"/>
-    <id>https://sebastienrousseau.com/ha/2026-05-19-global-wholesale-payments-economics-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>Biyan kuɗi na manyan ƙimomi a duniya a 2026 yana sake fasalce ta hanyar daidaita ISO 20022, sabunta RTGS, tsawaita lokutan sasantawa, samun damar wadanda ba bankuna ba, mulkin API, gwajin DLT, da rarrabuwar biyan kuɗi tsakanin ƙasashe. Matsalar tattalin arziki ita ce haɗakar tsare-tsare, ba saƙon kawai ba.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Глобальні оптові платежі у 2026 році: ISO 20022, оновлення RTGS та економіка сумісності</title>
-    <link href="https://sebastienrousseau.com/uk/2026-05-19-global-wholesale-payments-economics-2026/index.html"/>
-    <id>https://sebastienrousseau.com/uk/2026-05-19-global-wholesale-payments-economics-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>Глобальні оптові платежі у 2026 році перебудовуються гармонізацією ISO 20022, оновленням RTGS, розширенням розрахункових вікон, доступом небанківських установ, регулюванням API, пілотами DLT та фрагментацією транскордонних платежів. Економічне питання — сумісність, а не лише обмін повідомленнями.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Sísanwó Pàtàkì Kárí-ayé ní 2026: ISO 20022, Àtúnse RTGS, àti Ètò-ọrọ̀ Ìbárapọ̀-iṣẹ́</title>
-    <link href="https://sebastienrousseau.com/yo/2026-05-19-global-wholesale-payments-economics-2026/index.html"/>
-    <id>https://sebastienrousseau.com/yo/2026-05-19-global-wholesale-payments-economics-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>Sísanwó pàtàkì kárí-ayé ní 2026 ń yí padà nípasẹ̀ ìbámu ISO 20022, àtúnse RTGS, ìfẹ̀ àkókò ìsanwó, ìráyé fún àwọn tí kì í ṣe báńkì, ìṣàkóso API, àwọn àdánwò DLT, àti ìpínyà sísanwó tí ó dá orílẹ̀-èdè kọjá. Ọ̀rọ̀ ètò-ọrọ̀ náà ni ìbárapọ̀-iṣẹ́, kì í ṣe èdè ìfìránṣẹ́ nìkan.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Plățile cu ridicata la nivel mondial în 2026: ISO 20022, reînnoirea RTGS și economia interoperabilității</title>
-    <link href="https://sebastienrousseau.com/ro/2026-05-19-global-wholesale-payments-economics-2026/index.html"/>
-    <id>https://sebastienrousseau.com/ro/2026-05-19-global-wholesale-payments-economics-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>Plățile cu ridicata la nivel mondial în 2026 sunt remodelate de armonizarea ISO 20022, reînnoirea RTGS, extinderea ferestrelor de decontare, accesul entităților nebancare, guvernanța API, piloții DLT și fragmentarea plăților transfrontaliere. Miza economică este interoperabilitatea, nu doar mesageria.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Оптовые платежи в мире в 2026 году: ISO 20022, обновление RTGS и экономика интероперабельности</title>
-    <link href="https://sebastienrousseau.com/ru/2026-05-19-global-wholesale-payments-economics-2026/index.html"/>
-    <id>https://sebastienrousseau.com/ru/2026-05-19-global-wholesale-payments-economics-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>Оптовые платежи в мире в 2026 году преобразуются за счёт гармонизации ISO 20022, обновления RTGS, расширения окон расчётов, доступа небанковских организаций, управления API, пилотов DLT и фрагментации трансграничных платежей. Экономический вопрос — это интероперабельность, а не только сообщения.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>Velkoobjemové platby ve světě v roce 2026: ISO 20022, obnova RTGS a ekonomika interoperability</title>
-    <link href="https://sebastienrousseau.com/cs/2026-05-19-global-wholesale-payments-economics-2026/index.html"/>
-    <id>https://sebastienrousseau.com/cs/2026-05-19-global-wholesale-payments-economics-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>Velkoobjemové platby ve světě v roce 2026 jsou přetvářeny harmonizací ISO 20022, obnovou RTGS, rozšířenými okny zúčtování, přístupem nebankovních subjektů, správou API, pilotními projekty DLT a fragmentací přeshraničních plateb. Ekonomickou otázkou je interoperabilita, nikoli samotná zprávová vrstva.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>I pagamenti wholesale globali nel 2026: ISO 20022, rinnovo degli RTGS e l&apos;economia dell&apos;interoperabilità</title>
-    <link href="https://sebastienrousseau.com/it/2026-05-19-globali-wholesale-pagamenti-economia-2026/index.html"/>
-    <id>https://sebastienrousseau.com/it/2026-05-19-globali-wholesale-pagamenti-economia-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>I pagamenti wholesale globali nel 2026 sono ridisegnati dall&apos;armonizzazione ISO 20022, dal rinnovo degli RTGS, dall&apos;estensione delle finestre di regolamento, dall&apos;accesso dei non-banche, dalla governance delle API, dai pilota DLT e dalla frammentazione dei pagamenti transfrontalieri. La questione economica è l&apos;interoperabilità, non solo la messaggistica.</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
-  <entry>
-    <title>2026年のグローバル・ホールセール決済：ISO 20022、RTGS刷新、そして相互運用性の経済学</title>
-    <link href="https://sebastienrousseau.com/ja/2026-05-19-global-wholesale-payments-economics-2026/index.html"/>
-    <id>https://sebastienrousseau.com/ja/2026-05-19-global-wholesale-payments-economics-2026/index.html</id>
-    <updated>2026-05-19T06:06:06+00:00</updated>
-    <published>2026-05-19T06:06:06+00:00</published>
-    <summary>2026年のグローバル・ホールセール決済は、ISO 20022の標準化、RTGSの刷新、決済時間枠の拡大、ノンバンクのアクセス、APIガバナンス、DLTパイロット、クロスボーダー決済の分断によって再構築されつつある。経済的論点はメッセージングのみではなく、相互運用性である。</summary>
-    <author><name>contact@sebastienrousseau.com (Sebastien Rousseau)</name></author>
-  </entry>
 </feed>
