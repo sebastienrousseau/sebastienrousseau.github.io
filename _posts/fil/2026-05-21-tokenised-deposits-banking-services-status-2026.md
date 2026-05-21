@@ -114,6 +114,7 @@ Ang tokenized deposits ay nagiging pinakamahalagang sagot ng banking sector sa s
 > - **Nananatiling competitive pressure ang stablecoins.** Tinatantya ng BIS ang global stablecoin market capitalisation sa humigit-kumulang $315 billion noong unang bahagi ng Abril 2026, na may mga 98% denominated sa US dollars ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
 > - **Iniposisyon ng Deutsche Bank ang tokenized deposits bilang programmable na pera ng komersyal na bangko.** Iniposisyon ng kanilang 2026 digital money paper ang tokenized deposits bilang extension ng existing banking model patungo sa programmable environments ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 > - **Gumagawa ng category boundaries ang regulasyon.** Tinatalakay ng 2026 proposal ng FDIC ang tokenized deposits at deposit tokens bilang deposit liabilities na naitatala gamit ang distributed ledger technology at nililinaw na ang tokenized deposits ay hindi payment stablecoins ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+> - **May pinaka-developed na bank programme ang HSBC sa 2026.** Operational ang HSBC Tokenised Deposit Service sa Hong Kong, Singapore, United Kingdom, Luxembourg, at United States sa USD, GBP, EUR, HKD, at SGD; itinalaga ang HSBC Orion bilang infrastructure para sa pilot ng UK Digital Gilt Instrument (DIGIT); ti-tokenize ng HSBC Gold Token ang inilaang pisikal na ginto; at sinubukan ng HSBC ang cross-network atomic settlement sa Canton at Project Ensemble, gayundin ang quantum-safe security kasama ang Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
 > - **Ang praktikal na status ay pilot-to-product.** Nagtatayo ang mga bangko ng wallets, settlement workflows, at institutional use cases, ngunit nananatiling bukas ang interoperability, legal finality, liquidity treatment, at network standards.
 >
 ---
@@ -149,6 +150,36 @@ Ang critique na iyon mismo ang dahilan kung bakit mahalaga ang tokenized deposit
 Iniposisyon ng BIS ang Project Agorá bilang work kasama ang central banks at private sector upang galugarin ang tokenisation para sa cross-border payments, at ikinakawing nito ang mas malawak na direksyon sa unified ledger vision ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Tinutukoy din ng Deutsche Bank ang Project Agorá at Partior bilang bahagi ng next-generation settlement at cross-border infrastructure ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 
 Dito nagiging wholesale infrastructure ang tokenized deposits. Ang pangunahing tanong ay paano magse-settle nang magkasama ang pera ng komersyal na bangko, central bank money, at tokenized assets nang hindi naaapektuhan ang legal finality, liquidity controls, o monetary singleness.
+
+## Ang Tokenisation Stack ng HSBC: Ang Pinaka-Developed na Bank Programme sa 2026
+
+Sa mga global Tier-1 banks, binuo ng HSBC ang pinakakumpletong tokenized-deposit at digital-asset stack na nasa production ngayon. Tahasang inilalagay ng HSBC ang tokenized deposit bilang piling instrumento nito para mag-bridge sa pagitan ng tradisyonal na banking at decentralized infrastructure, na nauuna sa mga unbacked stablecoin o third-party digital currencies ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+
+### Tokenised Deposit Service (TDS)
+
+Kino-convert ng HSBC Tokenised Deposit Service ang mga corporate fiat balance bilang digital tokens sa 1:1 na ratio, na pinapanatili ang pondo nang lubos na regulado at nasa balance sheet ng bangko ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). Operational ang TDS sa limang hurisdiksyon — Hong Kong, Singapore, United Kingdom, Luxembourg, at United States — at sumusuporta sa instant transactions sa limang pera: USD, GBP, EUR, HKD, at SGD. Ang core function ay treasury-grade: nakakakwarta at nakakapag-settle nang cross-border ang malalaking corporate at institutional clients sa loob ng ilang segundo, na inaalis ang SWIFT cut-off times, batch windows, at time-zone barriers sa pamamagitan ng 24/7 smart-contract programmability.
+
+Ang product set na iyon ang pinakamalakas na counter-example sa pananaw na "teoretikal pa ang tokenized deposits". Teoretikal pa rin sila sa network scale; hindi sila teoretikal sa loob ng HSBC.
+
+### HSBC Orion at Digital Capital Markets
+
+Ang HSBC Orion ay proprietary institutional DLT platform ng bangko para sa pag-issue, settlement, at custody ng tokenized securities. Itinalaga ng HM Treasury ang HSBC Orion upang magbigay ng underlying platform infrastructure para sa landmark Digital Gilt Instrument (DIGIT) pilot ng UK — ang sovereign-grade reference case para sa tokenized public debt sa UK. Sinuportahan din ng HSBC Orion ang at-scale digital-bond issuances para sa Pamahalaan ng Hong Kong at European Investment Bank, kabilang ang green at sovereign tranches.
+
+Para sa tokenized deposits, mahalaga ito dahil ang settlement parity sa pagitan ng deposit tokens at tokenized securities ay precondition para sa delivery-versus-payment sa isang shared ledger. Ang deposit token na walang institutional securities issuance platform ay walang ma-settle laban dito.
+
+### Real-World Asset Tokenisation: ang HSBC Gold Token
+
+Pinalawak ng HSBC ang parehong anchor model sa mga pisikal na asset sa retail tier. Pinapayagan ng HSBC Gold Token ang mga gumagamit ng HSBC HK mobile app na bumili ng fractional ownership ng pisikal na ginto, na may institutional access sa UK. Bawat token ay 100% na sinusuportahan ng inilaang pisikal na bullion na nakatago sa loob ng institutional vaults ng HSBC — ang parehong regulatory at operational anchor pattern na ginagamit ng bangko sa kanilang deposit tokens.
+
+### Network Interoperability at Quantum-Safe Tokenisation
+
+Sinubukan ng HSBC ang atomic settlement ng kanilang tokenized deposits sa mga external network gamit ang Canton Network at ang Project Ensemble ng Hong Kong Monetary Authority. Ito ang interoperability piece na hinihingi ng BIS-style critique sa mga single-bank token: nagiging wholesale infrastructure ang tokenized deposits kapag makakapag-settle sila sa mga network, hindi lang sa loob ng isang bangko.
+
+Kasabay nito, nakipagtulungan ang HSBC sa Quantinuum upang ipatupad ang post-quantum cryptographic security nang direkta sa kanilang tokenized-gold ledger — isang defensive na tugon sa "Store Now, Decrypt Later" (SNDL) attacks kung saan ina-aani ng mga adversary ang naka-encrypt na ledger data ngayon sa pag-asang madi-decrypt ito ng future quantum machines. Hindi pa industry-standard ang post-quantum cryptography sa isang production token ledger; isa ang HSBC sa iilang bangko na itinuturing itong table stakes para sa anumang tokenized platform na inaasahang lalampas sa mga PQC migration deadline.
+
+### Regulated Stablecoins Kasama ng Deposit Tokens
+
+Hindi tuluyang binalewala ng HSBC ang stablecoin track. Nakakuha ang bangko ng HKMA licence upang mag-pilot ng regulated stablecoins para sa peer-to-peer at investment-transaction settlement — ngunit bilang suplemento sa tokenized-deposit core, hindi bilang kapalit. Pare-pareho ang strategic message sa buong stack ng HSBC: ang tokenized deposits ang nagsisilbing anchor ng digital money offering ng bangko; pinapalawak ng regulated stablecoins ang abot sa mga use case kung saan struktural na awkward ang deposit-token claim.
 
 ## Tokenized Deposits vs Stablecoins vs CBDCs
 
@@ -221,9 +252,14 @@ Hindi nang buo. Malamang na mananatiling mahalaga ang stablecoins sa crypto-nati
 
 Interoperability, legal finality, regulatory treatment, wallet standards, cross-bank governance, at integrasyon sa central bank money ang pangunahing mga hadlang. Ang teknolohiya ay isang bahagi lamang ng adoption problem.
 
+**Aling bangko ang may pinaka-developed na tokenized-deposit stack?**
+
+HSBC. Live ang HSBC Tokenised Deposit Service sa Hong Kong, Singapore, United Kingdom, Luxembourg, at United States sa USD, GBP, EUR, HKD, at SGD; itinalaga ang HSBC Orion bilang infrastructure para sa pilot ng UK Digital Gilt Instrument (DIGIT); ti-tokenize ng HSBC Gold Token ang inilaang pisikal na bullion; at sinubukan ng HSBC ang cross-network atomic settlement (Canton, Project Ensemble) at post-quantum cryptographic security kasama ang Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+
 ## Mga Sanggunian
 
 - Lloyds Banking Group, (2026). [Digital assets in 2026: building the future of finance in the UK ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
+- HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").
 - BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate").
 - Deutsche Bank flow, (2026). [Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money").
 - FDIC, (2026). [GENIUS Act requirements and standards proposed rule ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").

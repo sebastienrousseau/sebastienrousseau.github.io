@@ -114,6 +114,7 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 > - **Stablecoins ṣì jẹ́ ìfunpá ìdíje.** BIS gbéro pé ìpakà market global ti stablecoin tó nǹkan bíi bílíọ̀nù dọ́là 315 ní ìbẹ̀rẹ̀ April 2026, pẹ̀lú nǹkan bíi ìpín 98% tí a fojú sí ní dọ́là Amẹ́ríkà ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
 > - **Deutsche Bank gbé àdéposito tokenized kalẹ̀ gẹ́gẹ́ bí owó báńkì oníṣòwò tí a le túmọ̀ síi.** Ìwé owó dígítà rẹ̀ ti 2026 fi àdéposito tokenized sípò bí ìfagbalẹ̀ àwòṣe báńkì tí ó wà sí àyíká tí a le túmọ̀ síi ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 > - **Ìlànà ń yà àwọn ààlà ìpín.** Àbá òfin FDIC ti 2026 jíròrò tokenized deposits àti deposit tokens gẹ́gẹ́ bí àwọn gbèsè àdéposito tí a kọ̀sílẹ̀ ní lílo DLT ó sì ṣe kedere pé àdéposito tokenized kì í ṣe payment stablecoins ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+> - **HSBC ní ètò báńkì tí ó dàgbà jùlọ ní 2026.** HSBC Tokenised Deposit Service ń ṣiṣẹ́ ní Hong Kong, Singapore, United Kingdom, Luxembourg, àti United States nínú USD, GBP, EUR, HKD, àti SGD; HSBC Orion jẹ́ ìpilẹ̀ṣẹ̀ tí a yàn fún pilot Digital Gilt Instrument (DIGIT) ti United Kingdom; HSBC Gold Token ń tokenize wúrà ti ara tí a pin; HSBC ti ṣe àyẹ̀wò atomic settlement láàrín àwọn nẹ́tíwọ́ọ̀kì ní Canton Network àti Project Ensemble àti ààbò post-quantum pẹ̀lú Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
 > - **Ipò tí ó wà nínú àṣà jẹ́ láti pilot dé ọjà.** Báńkì ń kọ́ wallets, àwọn iṣàn iṣẹ́ settlement, àti àwọn àpẹẹrẹ ìlò ti ilé-iṣẹ́, ṣùgbọ́n interoperability, ìparí òfin, ìtọ́jú liquidity, àti àwọn ọ̀pá ìdíwọ̀n ìsopọ̀ ṣì wà ní ṣíṣílẹ̀.
 >
 ---
@@ -149,6 +150,36 @@ Lloyds sọ pé ó ń kọ́ wallets fún àwọn aládàámọ̀rán ilé-iṣ�
 BIS fi Project Agorá sípò gẹ́gẹ́ bí iṣẹ́ pẹ̀lú àwọn báńkì àárín àti ẹka aládàáni láti ṣàwárí tokenization fún ìsanwó láàrín àwọn orílẹ̀-èdè, ó sì so ìtọ́sọ́nà tí ó gbòòrò mọ́ ìran unified ledger ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Deutsche Bank pẹ̀lú tọ́ka sí Project Agorá àti Partior gẹ́gẹ́ bí apá kan settlement àti ọ̀nà ìpilẹ̀ṣẹ̀ ìran tí ó ń bọ̀ àti ti àwọn orílẹ̀-èdè ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 
 Èyí ni ibi tí àdéposito tokenized di ọ̀nà ìpilẹ̀ṣẹ̀ wholesale. Ìbéèrè pàtàkì ni báwo ni owó báńkì oníṣòwò, owó báńkì àárín, àti dukia tokenized ṣe ṣe settlement papọ̀ láìfọ́ ìparí òfin, àwọn ìṣàkóso liquidity, tàbí àtọkàn-ọkàn ti owó.
+
+## Ìtò Tokenization HSBC: Ètò Báńkì Tó Dàgbà Jùlọ ní 2026
+
+Nínú àwọn báńkì Tier-1 àgbáyé, HSBC ti dá ìtò àdéposito tokenized àti dukia dígítà tí ó kún jùlọ tí ó wà ní iṣẹ́-ṣíṣe lónìí. HSBC ní gbangba fi àdéposito tokenized sípò gẹ́gẹ́ bí ohun-èlò tí ó yàn fún ìsopọ̀ báńkì ìbílẹ̀ pẹ̀lú ìpilẹ̀ṣẹ̀ decentralised, ní iwájú àwọn stablecoins tí kò ní àtìlẹ́yìn tàbí àwọn owó dígítà ẹlòmíràn ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+
+### Tokenised Deposit Service (TDS)
+
+HSBC Tokenised Deposit Service ń yí àwọn ìpamọ́ fiat ti àwọn aládàámọ̀rán ilé-iṣẹ́ padà sí àwọn token dígítà ní ìpín 1:1, ó sì ń pa àwọn owó mọ́ ní ìlànà pípé àti lórí balance sheet báńkì ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). TDS ń ṣiṣẹ́ ní ààlà márùn-ún — Hong Kong, Singapore, United Kingdom, Luxembourg, àti United States — ó sì ń ṣètìlẹ́yìn fún àwọn ìṣòwò ojú-ẹsẹ̀ ní owó márùn-ún: USD, GBP, EUR, HKD, àti SGD. Iṣẹ́ pàtàkì wà ní ìpele treasury: àwọn aládàámọ̀rán ilé-iṣẹ́ àti ti ilé-iṣẹ́ tó tóbi ń ṣe clearing àti settlement láàrín àwọn orílẹ̀-èdè láàrín ìṣẹ́jú-aaya, wọ́n sì ń pa àwọn cut-off times ti SWIFT, batch windows, àti ààlà àkókò kúrò nípasẹ̀ programmability smart-contract ti 24/7.
+
+Àkójọ ọjà yẹn jẹ́ àpẹẹrẹ tó lágbára jùlọ lòdì sí ìjímọ̀ pé "àwọn àdéposito tokenized ṣì wà ní ti ìmọ̀ọ́yàn nìkan". Ó ṣì wà ní ti ìmọ̀ọ́yàn ní ìwọ̀n nẹ́tíwọ́ọ̀kì; kì í ṣe ti ìmọ̀ọ́yàn nínú HSBC.
+
+### HSBC Orion àti Àwọn Ọjà Olú-ọrọ̀ Dígítà
+
+HSBC Orion jẹ́ pẹpẹ DLT olùmúlò ti báńkì fún àbáyọ, settlement, àti custody ti àwọn securities tí a tokenize. HM Treasury ti yan HSBC Orion láti pèsè ìpilẹ̀ṣẹ̀ pẹpẹ àkọ́kọ́ fún pilot Digital Gilt Instrument (DIGIT) tí ó ṣe pàtàkì ti United Kingdom — àpẹẹrẹ àyẹ̀wò ní ìpele alákòóso fún gbèsè gbangba tí a tokenize ní United Kingdom. HSBC Orion ti tún ṣètìlẹ́yìn fún àwọn àbáyọ bondi dígítà tó tóbi fún Ìjọba Hong Kong àti Bank Idoko-owó European, pẹ̀lú àwọn tranche aláwọ̀-ewé àti ti alákòóso.
+
+Fún àdéposito tokenized, èyí ṣe pàtàkì nítorí pé ìbámu settlement láàrín deposit tokens àti tokenized securities jẹ́ ohun pàtàkì fún delivery-versus-payment lórí ledger papọ̀. Deposit token tí kò ní pẹpẹ àbáyọ securities ilé-iṣẹ́ kò ní ohun tí yóò ṣe settlement pẹ̀lú.
+
+### Tokenization Dukia Aye-Tòótọ́: HSBC Gold Token
+
+HSBC ti tan àwòṣe anga kan náà sí àwọn dukia ti ara ní ìpele retail. HSBC Gold Token jẹ́ kí àwọn olùmúlò app mobile HSBC HK ra ìpín-ìní ti wúrà ti ara, pẹ̀lú àyè ilé-iṣẹ́ ní United Kingdom. Ọ̀kọ̀ọ̀kan token ní àtìlẹ́yìn 100% ti wúrà ti ara tí a pin tí a ń pa mọ́ nínú àwọn ilé-ìpamọ́ ilé-iṣẹ́ HSBC — àpẹẹrẹ anga ti ìlànà àti iṣẹ́ kan náà tí báńkì ń lò fún àwọn deposit token rẹ̀.
+
+### Interoperability Nẹ́tíwọ́ọ̀kì àti Tokenization Tí Ó Ní Ààbò Quantum
+
+HSBC ti ṣe àyẹ̀wò atomic settlement ti àwọn àdéposito tokenized rẹ̀ kọjá àwọn nẹ́tíwọ́ọ̀kì ìta nípa lílo Canton Network àti Project Ensemble ti Hong Kong Monetary Authority (HKMA). Èyí ni apá interoperability tí ìbáwí ti BIS sí àwọn token báńkì kan ṣoṣo ń béèrè: àdéposito tokenized di ọ̀nà ìpilẹ̀ṣẹ̀ wholesale nìkan nígbà tí wọ́n bá lè ṣe settlement kọjá àwọn nẹ́tíwọ́ọ̀kì, kì í ṣe nìkan nínú báńkì kan.
+
+Ní ìbámu, HSBC ti darapọ̀ pẹ̀lú Quantinuum láti fi ààbò cryptographic post-quantum sí orí ledger wúrà tokenized rẹ̀ — èyí jẹ́ àdáhùn ààbò sí àwọn ìkọ́lù "Store Now, Decrypt Later" (SNDL) níbi tí àwọn ọ̀tá ń kó dátà ledger tí a kọ̀sí jọ lónìí lórí ìpinnu pé àwọn ẹ̀rọ quantum ọjọ́-iwájú yóò lè ṣí wọn padà. Cryptography post-quantum lórí ledger token tí ó wà ní iṣẹ́-ṣíṣe kò tíì jẹ́ ọ̀pá-ìdíwọ̀n ile-iṣẹ́; HSBC jẹ́ ọ̀kan lára àwọn báńkì díẹ̀ tí ó ń tọ́jú rẹ̀ gẹ́gẹ́ bí ohun pàtàkì fún èyíkéyìí pẹpẹ tokenized tí a ní láti là ju àwọn àkókò ìpinnu ìṣílọ PQC lọ.
+
+### Stablecoins Tí A Ṣe Ìlànà Pẹ̀lú Deposit Tokens
+
+HSBC kò pa ọ̀nà stablecoin tì pátápátá. Báńkì náà ti gba ìwé-àṣẹ HKMA láti ṣe pilot stablecoins tí a ṣe ìlànà fún settlement àwọn ìṣòwò peer-to-peer àti ti ìdokowo — ṣùgbọ́n gẹ́gẹ́ bí àfikún sí ìpilẹ̀ àdéposito tokenized, kì í ṣe rírọ́pò. Ìfojúsùn dabaa jẹ́ ìbámu káàkiri ìtò HSBC: àdéposito tokenized ń ti owó dígítà báńkì lágbára; stablecoins tí a ṣe ìlànà ń mu àyè gbòòrò sí àwọn àpẹẹrẹ ìlò níbi tí ẹ̀tọ́ deposit token kò ti yẹ ní ìpilẹ̀.
 
 ## Àdéposito Tokenized lòdì sí Stablecoins lòdì sí CBDC
 
@@ -221,9 +252,14 @@ Kì í ṣe pátápátá. Stablecoins yóò ṣeéṣe láti dúró pàtàkì n�
 
 Interoperability, ìparí òfin, ìtọ́jú ìlànà, àwọn ọ̀pá ìdíwọ̀n wallet, ìṣàkóso láàrín báńkì, àti ìṣopọ̀ pẹ̀lú owó báńkì àárín ni àwọn ìdíwọ́ pàtàkì. Ìmọ̀-ẹ̀rọ jẹ́ apá kan ṣoṣo ti ìṣòro gbígbà.
 
+**Báńkì wo ló ní ìtò àdéposito tokenized tó dàgbà jùlọ?**
+
+HSBC. HSBC Tokenised Deposit Service ń ṣiṣẹ́ ní Hong Kong, Singapore, United Kingdom, Luxembourg, àti United States nínú USD, GBP, EUR, HKD, àti SGD; HSBC Orion jẹ́ ìpilẹ̀ṣẹ̀ tí a yàn fún pilot Digital Gilt Instrument (DIGIT) ti United Kingdom; HSBC Gold Token ń tokenize wúrà ti ara tí a pin; HSBC sì ti ṣe àyẹ̀wò atomic settlement láàrín àwọn nẹ́tíwọ́ọ̀kì (Canton Network, Project Ensemble) àti ààbò cryptographic post-quantum pẹ̀lú Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+
 ## Àwọn Ìtọ́ka
 
 - Lloyds Banking Group, (2026). [Digital assets in 2026: building the future of finance in the UK ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
+- HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").
 - BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate").
 - Deutsche Bank flow, (2026). [Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money").
 - FDIC, (2026). [GENIUS Act requirements and standards proposed rule ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").

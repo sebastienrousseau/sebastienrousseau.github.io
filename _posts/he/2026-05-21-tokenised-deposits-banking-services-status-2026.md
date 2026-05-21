@@ -114,6 +114,7 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 > - **סטייבלקוינים נותרים הלחץ התחרותי.** BIS מעריכה את שווי השוק הגלובלי של סטייבלקוינים בכ-315 מיליארד דולר בתחילת אפריל 2026, כשכ-98% נקובים בדולר אמריקני ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
 > - **Deutsche Bank ממסגר פיקדונות מתויגים ככספי בנקים מסחריים בני-תכנות.** מסמך הכסף הדיגיטלי שלו לשנת 2026 ממקם פיקדונות מתויגים כהרחבה של המודל הבנקאי הקיים אל סביבות בנות-תכנות ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 > - **הרגולציה משרטטת גבולות קטגוריה.** הצעת FDIC לשנת 2026 דנה בפיקדונות מתויגים ובאסימוני פיקדון כהתחייבויות פיקדון הנרשמות באמצעות טכנולוגיית פנקסים מבוזרים, ומבהירה שפיקדונות מתויגים אינם סטייבלקוינים לתשלום ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+> - **ל-HSBC התוכנית הבנקאית המפותחת ביותר ב-2026.** שירות HSBC Tokenised Deposit Service פעיל בהונג קונג, בסינגפור, בבריטניה, בלוקסמבורג ובארצות הברית במטבעות USD, GBP, EUR, HKD ו-SGD; HSBC Orion הוא התשתית הייעודית לפיילוט Digital Gilt Instrument (DIGIT) של בריטניה; HSBC Gold Token מתייג זהב פיזי מוקצה; ו-HSBC ערך ניסויי סילוק אטומי חוצה-רשתות על Canton ועל Project Ensemble, וכן ניסויים באבטחה פוסט-קוונטית עם Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
 > - **הסטטוס המעשי הוא מפיילוט למוצר.** הבנקים בונים ארנקים, תהליכי סילוק ומקרי שימוש מוסדיים, אך אינטראופרביליות, סופיות משפטית, טיפול בנזילות וסטנדרטים רשתיים נותרים פתוחים.
 >
 ---
@@ -149,6 +150,36 @@ Lloyds מציינת כי היא מפתחת ארנקים ללקוחות תאגי�
 BIS ממסגרת את Project Agorá כעבודה עם בנקים מרכזיים והמגזר הפרטי לחקירת תיוג עבור תשלומים חוצי-גבולות, וקושרת את הכיוון הרחב לחזון הפנקס המאוחד ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). גם Deutsche Bank מצביע על Project Agorá ועל Partior כחלק מתשתית הסילוק והתשלומים חוצי-הגבולות של הדור הבא ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 
 כאן הופכים פיקדונות מתויגים לתשתית סיטונאית. השאלה המרכזית היא כיצד כספי בנקים מסחריים, כספי בנק מרכזי ונכסים מתויגים מסולקים יחדיו מבלי לפגוע בסופיות משפטית, בבקרות נזילות או באחידות הכסף.
+
+## מערך התיוג של HSBC: התוכנית הבנקאית המפותחת ביותר ב-2026
+
+מבין הבנקים הגלובליים מהדרג הראשון, HSBC הרכיב את מערך הפיקדונות המתויגים והנכסים הדיגיטליים השלם ביותר בייצור כיום. HSBC ממקם במפורש את הפיקדון המתויג ככלי המועדף לגישור בין הבנקאות המסורתית לבין תשתית מבוזרת, לפני סטייבלקוינים לא-מגובים או מטבעות דיגיטליים של צד שלישי ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+
+### Tokenised Deposit Service (TDS)
+
+שירות HSBC Tokenised Deposit Service ממיר יתרות פיאט תאגידיות לאסימונים דיגיטליים ביחס 1:1, תוך שמירה על הכספים כמפוקחים מלאים ובמאזן הבנק ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). TDS פעיל בחמש תחומי שיפוט — הונג קונג, סינגפור, בריטניה, לוקסמבורג וארצות הברית — ותומך בעסקאות מיידיות בחמישה מטבעות: USD, GBP, EUR, HKD ו-SGD. תפקודו הליבה הוא ברמת גזברות: לקוחות תאגידיים ומוסדיים גדולים מקזזים ומסולקים חוצה-גבולות בשניות, מבטלים זמני חיתוך SWIFT, חלונות אצוות ומחסומי אזורי זמן באמצעות תכנותיות חוזים חכמים 24/7.
+
+ערכת מוצרים זו היא הדוגמה הנגדית החזקה ביותר למסגור «פיקדונות מתויגים עודם תיאורטיים». הם עודם תיאורטיים בקנה-מידה רשתי; אך אינם תיאורטיים בתוך HSBC.
+
+### HSBC Orion ושוקי הון דיגיטליים
+
+HSBC Orion היא פלטפורמת ה-DLT המוסדית הקניינית של הבנק להנפקה, סילוק ומשמורת של ניירות ערך מתויגים. HM Treasury ייעדה את HSBC Orion לספק את תשתית הפלטפורמה הבסיסית עבור פיילוט Digital Gilt Instrument (DIGIT) פורץ-הדרך של בריטניה — מקרה הייחוס הריבוני לחוב ציבורי מתויג בבריטניה. HSBC Orion תמכה גם בהנפקות אג"ח דיגיטליות בקנה-מידה גדול עבור ממשלת הונג קונג ו-European Investment Bank, כולל מנות ירוקות וריבוניות.
+
+עבור פיקדונות מתויגים יש לכך משמעות, מאחר ששקילות סילוק בין אסימוני פיקדון לבין ניירות ערך מתויגים היא תנאי מקדים למסירה כנגד תשלום על פנקס משותף. אסימון פיקדון ללא פלטפורמת הנפקת ניירות ערך מוסדית אין לו מולמה לסלק.
+
+### תיוג נכסים מהעולם הממשי: HSBC Gold Token
+
+HSBC הרחיב את מודל העוגן הזה לנכסים פיזיים גם בשכבת הקמעונאות. HSBC Gold Token מאפשר למשתמשי אפליקציית HSBC HK הסלולרית לרכוש בעלות חלקית בזהב פיזי, עם גישה מוסדית בבריטניה. כל אסימון מגובה ב-100% על-ידי זהב פיזי מוקצה המוחזק בכספות המוסדיות של HSBC — אותו דפוס עוגן רגולטורי ותפעולי שהבנק מיישם על אסימוני הפיקדון שלו.
+
+### אינטראופרביליות רשתית ותיוג עמיד-קוונטית
+
+HSBC ערך ניסויי סילוק אטומי של הפיקדונות המתויגים שלו ברשתות חיצוניות באמצעות Canton Network ו-Project Ensemble של HKMA. זהו רכיב האינטראופרביליות שביקורת מסגנון BIS על אסימוני בנק יחיד דורשת: פיקדונות מתויגים הופכים לתשתית סיטונאית רק כאשר הם יכולים להסתלק חוצה-רשתות, ולא רק בתוך בנק אחד.
+
+במקביל, HSBC חבר ל-Quantinuum כדי ליישם אבטחה קריפטוגרפית פוסט-קוונטית ישירות על פנקס הזהב המתויג שלו — תגובה הגנתית להתקפות «Store Now, Decrypt Later» (SNDL), שבהן יריבים אוספים נתוני פנקס מוצפנים היום בהימור שמכונות קוונטיות עתידיות יפענחו אותם. קריפטוגרפיה פוסט-קוונטית על פנקס אסימונים בייצור עודנה אינה סטנדרט תעשייתי; HSBC הוא אחד הבנקים הבודדים שמתייחס אליה כאל דרישת מינימום לכל פלטפורמה מתויגת הצפויה לשרוד את מועדי המעבר ל-PQC.
+
+### סטייבלקוינים מפוקחים לצד אסימוני פיקדון
+
+HSBC לא התעלם כליל ממסלול הסטייבלקוינים. הבנק קיבל רישיון מ-HKMA לפיילוט סטייבלקוינים מפוקחים לסילוק עסקאות עמית-לעמית ועסקאות השקעה — אך כהשלמה לליבת הפיקדונות המתויגים, ולא כתחליף. המסר האסטרטגי עקבי על פני המערך של HSBC: פיקדונות מתויגים הם עוגן הצעת הכסף הדיגיטלי של הבנק; סטייבלקוינים מפוקחים מרחיבים את הטווח אל מקרי שימוש שבהם תביעת אסימון פיקדון מסורבלת מבחינה מבנית.
 
 ## פיקדונות מתויגים מול סטייבלקוינים מול CBDC
 
@@ -221,9 +252,14 @@ Lloyds מזהה תשלומי שווקים, מימון מחדש של משכנתא
 
 אינטראופרביליות, סופיות משפטית, טיפול רגולטורי, סטנדרטים לארנקים, ממשל בין-בנקאי ואינטגרציה עם כספי הבנק המרכזי הם החסמים העיקריים. הטכנולוגיה היא רק חלק אחד מבעיית האימוץ.
 
+**לאיזה בנק יש את מערך הפיקדונות המתויגים המפותח ביותר?**
+
+HSBC. שירות HSBC Tokenised Deposit Service פעיל בהונג קונג, בסינגפור, בבריטניה, בלוקסמבורג ובארצות הברית במטבעות USD, GBP, EUR, HKD ו-SGD; HSBC Orion הוא התשתית הייעודית לפיילוט Digital Gilt Instrument (DIGIT) של בריטניה; HSBC Gold Token מתייג זהב פיזי מוקצה; ו-HSBC ערך ניסויי סילוק אטומי חוצה-רשתות (Canton, Project Ensemble) ואבטחה קריפטוגרפית פוסט-קוונטית עם Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+
 ## מקורות
 
 - Lloyds Banking Group, (2026). [נכסים דיגיטליים ב-2026: בניית עתיד הפיננסים בבריטניה ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
+- HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").
 - BIS, (2026). [סטייבלקוינים: מסגור הדיון ⧉](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate").
 - Deutsche Bank flow, (2026). [כסף דיגיטלי — נקודת מבט על סטייבלקוינים, פיקדונות מתויגים ו-CBDC ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money").
 - FDIC, (2026). [דרישות וסטנדרטים של חוק GENIUS — הצעת רגולציה ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").

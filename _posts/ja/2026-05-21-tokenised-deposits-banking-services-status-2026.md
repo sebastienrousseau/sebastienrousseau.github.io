@@ -114,6 +114,7 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 > - **ステーブルコインは依然として競争上の圧力となっています。** BISは、2026年4月初旬の世界のステーブルコイン時価総額を約3,150億ドルと推定し、そのおよそ98％が米ドル建てであるとしています（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")）。
 > - **Deutsche Bankは、トークン化預金をプログラム可能な商業銀行マネーとして位置づけています。** 2026年のデジタルマネーに関する論文では、トークン化預金を既存の銀行モデルをプログラム可能な環境に拡張するものと位置づけています（[Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")）。
 > - **規制はカテゴリーの境界線を引きつつあります。** FDICの2026年の提案では、トークン化預金およびデポジット・トークンを分散型台帳技術によって記録された預金負債として論じ、トークン化預金は支払い用ステーブルコインではないと明示しています（[FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")）。
+> - **HSBCは2026年において最も発達した銀行プログラムを有しています。** HSBC Tokenised Deposit Serviceは、香港、シンガポール、英国、ルクセンブルク、米国にわたりUSD、GBP、EUR、HKD、SGDで稼働中です。HSBC Orionは英国Digital Gilt Instrument（DIGIT）パイロットの指定インフラであり、HSBC Gold Tokenは割当済みの現物地金をトークン化し、HSBCはCantonおよびProject Ensemble上でのクロスネットワークのアトミック決済と、Quantinuumと連携した耐量子セキュリティを試行しています（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。
 > - **実務上の現状はパイロットから製品への移行段階です。** 銀行はウォレット、決済ワークフロー、機関投資家向けのユースケースを構築していますが、相互運用性、法的ファイナリティ、流動性の取扱い、ネットワーク標準は依然として未解決です。
 >
 ---
@@ -149,6 +150,36 @@ BISの2026年4月のスピーチでは、ステーブルコインのスマート
 BISは、Project Agoráを中央銀行および民間部門と協働してクロスボーダー決済におけるトークン化を探求する取り組みとして位置づけ、より広い方向性を統合台帳の構想と結びつけています（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")）。Deutsche Bankもまた、Project AgoráとPartiorを次世代の決済およびクロスボーダーインフラの一部として挙げています（[Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")）。
 
 ここでトークン化預金はホールセール・インフラとなります。中核的な問いは、商業銀行マネー、中央銀行マネー、トークン化資産が、法的ファイナリティ、流動性管理、貨幣の単一性を損なうことなく、いかに一体的に決済されるかです。
+
+## HSBCのトークン化スタック：2026年における最も発達した銀行プログラム
+
+グローバルなTier-1銀行の中で、HSBCは今日の本番環境において最も完成度の高いトークン化預金およびデジタル資産スタックを構築しています。HSBCは、無担保のステーブルコインや第三者発行のデジタル通貨に先んじて、トークン化預金を従来型バンキングと分散型インフラとを橋渡しするための主要な手段として明確に位置づけています（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。
+
+### Tokenised Deposit Service（TDS）
+
+HSBC Tokenised Deposit Serviceは、法人の法定通貨残高を1対1の比率でデジタルトークンに変換し、資金を完全に規制下に置いたまま銀行のバランスシート上に保持します（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。TDSは、香港、シンガポール、英国、ルクセンブルク、米国の5法域で稼働しており、USD、GBP、EUR、HKD、SGDの5通貨で即時取引をサポートします。中核機能はトレジャリー・グレードです。大手法人および機関投資家の顧客は、24時間365日のスマートコントラクトによるプログラム可能性を通じて、SWIFTのカットオフタイム、バッチウィンドウ、時差の障壁を解消し、数秒単位でクロスボーダーの清算と決済を行えます。
+
+この製品群は、「トークン化預金は依然として理論上の存在にすぎない」という見方に対する最も強力な反証です。ネットワーク規模ではなお理論上の存在ですが、HSBCの内部ではもはや理論上の存在ではありません。
+
+### HSBC Orionとデジタル資本市場
+
+HSBC Orionは、トークン化された証券の発行、決済、カストディを行うための同行独自の機関投資家向けDLTプラットフォームです。HM Treasuryは、英国の画期的なDigital Gilt Instrument（DIGIT）パイロット、すなわち英国におけるトークン化された公的債務の主権グレードのリファレンス・ケースの基盤プラットフォーム・インフラとして、HSBC Orionを指定しています。HSBC Orionはまた、グリーン債やソブリン債のトランシェを含む、香港政府および欧州投資銀行による大規模なデジタル債券発行も支援してきました。
+
+トークン化預金にとってこれが重要なのは、共有台帳上でのDVP（資金と証券の同時決済）の前提条件が、デポジット・トークンとトークン化された証券との決済パリティだからです。機関投資家向け証券発行プラットフォームを持たないデポジット・トークンには、決済すべき相手が存在しません。
+
+### 実物資産のトークン化：HSBC Gold Token
+
+HSBCは同じアンカー・モデルを、リテール領域における実物資産にも拡張しています。HSBC Gold Tokenは、HSBC HKのモバイルアプリ利用者に対し現物金の少額持分を提供するもので、英国においては機関投資家アクセスが提供されています。各トークンは、HSBCの機関向け金庫に保管された割当済みの現物地金により100％裏付けられており、これは同行がデポジット・トークンに適用するのと同じ規制および運用面のアンカー・パターンです。
+
+### ネットワーク間相互運用性と耐量子トークン化
+
+HSBCは、Canton Networkおよび香港金融管理局（HKMA）のProject Ensembleを用いて、外部ネットワーク上でのトークン化預金のアトミック決済を試行してきました。これは、単一銀行トークンに対するBIS的批判が要求する相互運用性の要素です。トークン化預金は、単一銀行内のみならずネットワークを越えて決済できるようになって初めて、ホールセール・インフラとなります。
+
+並行して、HSBCはQuantinuumと提携し、トークン化された金台帳に耐量子暗号セキュリティを直接実装しました。これは、敵対者が暗号化された台帳データを今日収集し、将来の量子コンピュータでの復号を見込んで備える「Store Now, Decrypt Later」（SNDL）攻撃への防御的対応です。本番環境のトークン台帳における耐量子暗号はまだ業界標準ではありません。HSBCは、PQC移行期限を越えて存続することが想定されるトークン化プラットフォームにとって、これを必須要件として扱う数少ない銀行のひとつです。
+
+### 規制対象ステーブルコインとデポジット・トークンの併存
+
+HSBCはステーブルコイン領域を完全に無視しているわけではありません。同行はピアツーピア決済および投資取引決済向けに規制対象ステーブルコインを試行するため、HKMAのライセンスを取得しています。ただし、それはトークン化預金という中核を置き換えるものではなく、補完するものです。HSBCのスタック全体を通じて一貫したメッセージは明確です。トークン化預金が同行のデジタルマネー提供の基軸であり、規制対象ステーブルコインは、デポジット・トークンによる債権関係が構造的に不都合となるユースケースへの拡張手段である、ということです。
 
 ## トークン化預金、ステーブルコイン、CBDCの比較
 
@@ -221,9 +252,14 @@ Lloydsは、Great British Tokenised Depositsのユースケースとして、マ
 
 相互運用性、法的ファイナリティ、規制上の取扱い、ウォレット標準、銀行間ガバナンス、そして中央銀行マネーとの統合が主な阻害要因です。技術は普及問題の一部に過ぎません。
 
+**最も発達したトークン化預金スタックを有する銀行はどこですか。**
+
+HSBCです。HSBC Tokenised Deposit Serviceは、香港、シンガポール、英国、ルクセンブルク、米国にわたりUSD、GBP、EUR、HKD、SGDで稼働中です。HSBC Orionは英国Digital Gilt Instrument（DIGIT）パイロットの指定インフラであり、HSBC Gold Tokenは割当済みの現物地金をトークン化し、HSBCはクロスネットワークのアトミック決済（Canton、Project Ensemble）と、Quantinuumと連携した耐量子暗号セキュリティを試行しています（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。
+
 ## 参考文献
 
 - Lloyds Banking Group, (2026). [Digital assets in 2026: building the future of finance in the UK ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
+- HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").
 - BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate").
 - Deutsche Bank flow, (2026). [Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money").
 - FDIC, (2026). [GENIUS Act requirements and standards proposed rule ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").

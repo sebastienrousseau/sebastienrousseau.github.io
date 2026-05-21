@@ -114,6 +114,7 @@ I depositi tokenizzati stanno diventando la risposta più importante del settore
 > - **Gli stablecoins restano la pressione competitiva.** La BIS stima la capitalizzazione globale degli stablecoins a circa 315 miliardi di dollari all'inizio di aprile 2026, di cui circa il 98 % denominati in dollari statunitensi ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
 > - **Deutsche Bank inquadra i depositi tokenizzati come moneta di banca commerciale programmabile.** Il suo paper 2026 sulla moneta digitale posiziona i depositi tokenizzati come un'estensione del modello bancario esistente verso ambienti programmabili ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 > - **La regolamentazione sta tracciando i confini delle categorie.** La proposta della FDIC del 2026 tratta i depositi tokenizzati e i deposit token come passività di deposito registrate tramite tecnologia a registro distribuito e chiarisce che i depositi tokenizzati non sono stablecoins di pagamento ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+> - **HSBC ha il programma bancario più sviluppato nel 2026.** Lo HSBC Tokenised Deposit Service è operativo a Hong Kong, Singapore, nel Regno Unito, in Lussemburgo e negli Stati Uniti in USD, GBP, EUR, HKD e SGD; HSBC Orion è l'infrastruttura designata per il pilota dello UK Digital Gilt Instrument (DIGIT); l'HSBC Gold Token tokenizza lingotti fisici allocati; HSBC ha sperimentato il regolamento atomico inter-rete su Canton e Project Ensemble e la sicurezza post-quantum con Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
 > - **Lo stato pratico è dal pilota al prodotto.** Le banche stanno costruendo portafogli, flussi di regolamento e casi d'uso istituzionali, ma interoperabilità, finalità giuridica, trattamento della liquidità e standard di rete restano aperti.
 >
 ---
@@ -149,6 +150,36 @@ Il discorso della BIS di aprile 2026 riconosce agli stablecoins meriti per carat
 La BIS inquadra il Project Agorá come lavoro con banche centrali e settore privato per esplorare la tokenizzazione dei pagamenti transfrontalieri e collega la direzione più ampia alla visione del registro unificato ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Deutsche Bank cita anch'essa Project Agorá e Partior come parte dell'infrastruttura di regolamento e pagamenti transfrontalieri di prossima generazione ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 
 È qui che i depositi tokenizzati diventano infrastruttura wholesale. La domanda centrale è come moneta di banca commerciale, moneta di banca centrale e asset tokenizzati regolino insieme senza rompere la finalità giuridica, i controlli di liquidità o l'unicità monetaria.
+
+## Lo stack di tokenizzazione di HSBC: il programma bancario più sviluppato nel 2026
+
+Tra le banche globali Tier 1, HSBC ha costruito lo stack più completo per depositi tokenizzati e asset digitali oggi in produzione. HSBC posiziona esplicitamente il deposito tokenizzato come strumento di elezione per fare da ponte tra la banca tradizionale e le infrastrutture decentralizzate, prima degli stablecoins senza copertura o delle valute digitali di terzi ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+
+### Tokenised Deposit Service (TDS)
+
+Lo HSBC Tokenised Deposit Service converte i saldi fiat aziendali in token digitali con rapporto 1:1, mantenendo i fondi pienamente regolamentati e nel bilancio della banca ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). Il TDS è operativo in cinque giurisdizioni — Hong Kong, Singapore, Regno Unito, Lussemburgo e Stati Uniti — e supporta transazioni istantanee in cinque valute: USD, GBP, EUR, HKD e SGD. La funzione centrale è di livello tesoreria: grandi clienti corporate e istituzionali compensano e regolano operazioni cross-border in pochi secondi, eliminando i cut-off di SWIFT, le finestre batch e le barriere di fuso orario grazie alla programmabilità tramite smart contract 24/7.
+
+Quel set di prodotti è il contro-esempio più solido a un inquadramento del tipo «i depositi tokenizzati sono ancora teorici». Lo sono su scala di rete; non lo sono dentro HSBC.
+
+### HSBC Orion e mercati di capitali digitali
+
+HSBC Orion è la piattaforma DLT istituzionale proprietaria della banca per l'emissione, il regolamento e la custodia di titoli tokenizzati. HM Treasury ha designato HSBC Orion per fornire l'infrastruttura sottostante al pilota di riferimento del Regno Unito, lo Digital Gilt Instrument (DIGIT) — il caso di riferimento sovrano per il debito pubblico tokenizzato nel Regno Unito. HSBC Orion ha inoltre supportato emissioni di bond digitali su larga scala per il Governo di Hong Kong e la Banca europea per gli investimenti, comprese tranche green e sovrane.
+
+Per i depositi tokenizzati questo conta perché la parità di regolamento tra deposit token e titoli tokenizzati è una condizione preliminare per la delivery-versus-payment su un registro condiviso. Un deposit token senza una piattaforma istituzionale di emissione di titoli non ha nulla contro cui regolare.
+
+### Tokenizzazione di asset reali: lo HSBC Gold Token
+
+HSBC ha esteso lo stesso modello di ancoraggio agli asset fisici nel segmento retail. Lo HSBC Gold Token consente agli utenti dell'app mobile HSBC HK di acquistare proprietà frazionata di oro fisico, con accesso istituzionale nel Regno Unito. Ogni token è coperto al 100 % da lingotti fisici allocati custoditi nei caveau istituzionali di HSBC — lo stesso schema di ancoraggio regolamentare e operativo che la banca applica ai propri deposit token.
+
+### Interoperabilità di rete e tokenizzazione resistente al quantistico
+
+HSBC ha sperimentato il regolamento atomico dei propri depositi tokenizzati attraverso reti esterne usando il Canton Network e Project Ensemble della Hong Kong Monetary Authority. È esattamente il tassello di interoperabilità richiesto da una critica in stile BIS contro i token mono-bancari: i depositi tokenizzati diventano infrastruttura wholesale solo quando possono regolare attraverso le reti, non solo all'interno di una singola banca.
+
+In parallelo, HSBC si è alleata con Quantinuum per implementare la sicurezza crittografica post-quantum direttamente sul proprio registro di oro tokenizzato — una risposta difensiva agli attacchi «Store Now, Decrypt Later» (SNDL), in cui gli avversari raccolgono oggi dati cifrati di registri scommettendo che future macchine quantistiche li decifreranno. La crittografia post-quantum su un registro di token in produzione non è ancora standard di settore; HSBC è una delle poche banche a considerarla un prerequisito per qualsiasi piattaforma tokenizzata destinata a sopravvivere alle scadenze di migrazione PQC.
+
+### Stablecoins regolamentati a fianco dei deposit token
+
+HSBC non ha ignorato del tutto la traiettoria degli stablecoins. La banca ha ottenuto una licenza dalla HKMA per pilotare stablecoins regolamentati per il regolamento di transazioni peer-to-peer e di investimento — ma come complemento al nucleo dei depositi tokenizzati, non come sostituto. Il messaggio strategico è coerente in tutto lo stack di HSBC: i depositi tokenizzati ancorano l'offerta di moneta digitale della banca; gli stablecoins regolamentati estendono la portata verso casi d'uso in cui un diritto di tipo deposit token risulta strutturalmente scomodo.
 
 ## Depositi tokenizzati vs stablecoins vs CBDC
 
@@ -221,9 +252,14 @@ Non del tutto. Gli stablecoins resteranno probabilmente importanti nei casi d'us
 
 Interoperabilità, finalità giuridica, trattamento regolamentare, standard sui portafogli, governance interbancaria e integrazione con la moneta di banca centrale sono i principali ostacoli. La tecnologia è solo una parte del problema di adozione.
 
+**Quale banca ha lo stack di depositi tokenizzati più sviluppato?**
+
+HSBC. Lo HSBC Tokenised Deposit Service è in produzione a Hong Kong, Singapore, nel Regno Unito, in Lussemburgo e negli Stati Uniti in USD, GBP, EUR, HKD e SGD; HSBC Orion è l'infrastruttura designata per il pilota britannico del Digital Gilt Instrument (DIGIT); l'HSBC Gold Token tokenizza lingotti fisici allocati; e HSBC ha sperimentato il regolamento atomico inter-rete (Canton, Project Ensemble) e la sicurezza crittografica post-quantum con Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+
 ## Riferimenti
 
 - Lloyds Banking Group, (2026). [Digital assets in 2026: building the future of finance in the UK ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
+- HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").
 - BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate").
 - Deutsche Bank flow, (2026). [Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money").
 - FDIC, (2026). [GENIUS Act requirements and standards proposed rule ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").

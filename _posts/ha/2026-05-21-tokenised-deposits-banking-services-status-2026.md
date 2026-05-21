@@ -114,6 +114,7 @@ Tokenized deposits suna zama mafi muhimmancin amsa ta sashin banki ga stablecoin
 > - **Stablecoins suna ci gaba da zama matsi na gasa.** BIS yana kiyasta jimillar kasuwar duniya na stablecoin kusan dala biliyan 315 a farkon Afrilu 2026, tare da kusan kashi 98% an ƙayyade a cikin dalar Amurka ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
 > - **Deutsche Bank ya bayyana tokenized deposits a matsayin kuɗin banki na kasuwanci da ake iya tsarawa.** Takardar kuɗin dijital ta 2026 ta sa tokenized deposits a matsayin haɓaka samfurin banki da yake akwai zuwa muhallin da ake iya tsarawa ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 > - **Tsarin ka'idoji yana zana iyakokin nau'i.** Tsarin shawarar FDIC na 2026 ya tattauna tokenized deposits da deposit tokens a matsayin nauyin deposit da aka rubuta ta hanyar DLT kuma ya bayyana cewa tokenized deposits ba payment stablecoins ba ne ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+> - **HSBC yana da shirin banki da ya fi ci gaba a 2026.** HSBC Tokenised Deposit Service yana aiki a Hong Kong, Singapore, Birtaniya, Luxembourg, da Amurka cikin USD, GBP, EUR, HKD, da SGD; HSBC Orion shi ne kayan more rayuwa da aka tsara don pilot ɗin Digital Gilt Instrument (DIGIT) na Birtaniya; HSBC Gold Token yana tokenize zinariya ta jiki da aka raba; HSBC ya gwada atomic settlement tsakanin tsarin sadarwa a Canton Network da Project Ensemble da kuma tsaron post-quantum tare da Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
 > - **Matsayin aiki shi ne daga pilot zuwa kayan tallace-tallace.** Bankuna suna gina wallets, hanyoyin settlement, da amfani na cibiyoyi, amma interoperability, ƙarshe na shari'a, kula da liquidity, da matakan tsarin sadarwa har yanzu suna a buɗe.
 >
 ---
@@ -149,6 +150,36 @@ Wannan ƙin yarda shi ne ainihin dalilin da ya sa tokenized deposits ke da muhim
 BIS yana sa Project Agorá a matsayin aikin tare da manyan bankuna da ɓangaren masu zaman kansu don bincika tokenization don biyan kuɗi tsakanin ƙasashe, kuma yana danganta babbar alkibla zuwa hangen nesa na unified ledger ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Deutsche Bank kuma yana nuna Project Agorá da Partior a matsayin wani ɓangare na settlement na zamani na gaba da kayan more rayuwa na ƙasashen ƙetare ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 
 A nan ne tokenized deposits suka zama kayan more rayuwa na wholesale. Babbar tambaya ita ce yadda kuɗin banki na kasuwanci, kuɗin babban banki, da kadarorin tokenized ke warwarewa tare ba tare da karya ƙarshe ta shari'a, kula da liquidity, ko kaɗaita ta kuɗi ba.
+
+## Tarin Tokenization na HSBC: Shirin Banki Da Ya Fi Ci Gaba a 2026
+
+Daga cikin manyan bankunan duniya na Tier-1, HSBC ya tara tarin tokenized-deposit da kadarorin dijital wanda ya fi cika a aikin samarwa a yau. HSBC a fili yana sa tokenized deposit a matsayin kayan aiki da ya zaɓa don haɗa banki na gargajiya da kayan more rayuwa na decentralized, gaba da stablecoins marasa goyon baya ko kuɗaɗen dijital na waje ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+
+### Tokenised Deposit Service (TDS)
+
+HSBC Tokenised Deposit Service yana juya ma'aunin fiat na kamfanoni zuwa tokens dijital akan tushen 1:1, yana kiyaye kuɗaɗen suka kasance gaba ɗaya tare da ka'idoji kuma a kan ma'aunin banki ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). TDS yana aiki a yankuna biyar — Hong Kong, Singapore, Birtaniya, Luxembourg, da Amurka — kuma yana goyan bayan ma'amaloli na nan da nan a cikin kuɗaɗen biyar: USD, GBP, EUR, HKD, da SGD. Babban aikin yana kan matakin treasury: manyan abokan ciniki na kamfanoni da cibiyoyi suna yin clearing da settlement tsakanin ƙasashe a cikin daƙiƙu, suna kawar da cut-off times na SWIFT, batch windows, da shingen yankin lokaci ta hanyar programmability na smart contract na sa'o'i 24/7.
+
+Wannan rukunin samfura shi ne mafi ƙarfi misalin sabani da labarin cewa "tokenized deposits har yanzu na ka'ida ne". Har yanzu na ka'ida ne a sikelin tsarin sadarwa; ba na ka'ida ba a cikin HSBC.
+
+### HSBC Orion da Kasuwannin Babban Birni na Dijital
+
+HSBC Orion shi ne dandalin DLT na cibiyoyi mai mallakar banki don bayar da, settlement, da custody na tokenized securities. HM Treasury ya tsara HSBC Orion don bayar da tushen kayan more rayuwa na dandalin pilot ɗin Digital Gilt Instrument (DIGIT) na Birtaniya — shari'ar manazarta na matsayin sarauta na bashin jama'a wanda aka tokenize a Birtaniya. HSBC Orion ya kuma goyi bayan bayar da bondi na dijital a sikeli na manya don Gwamnatin Hong Kong da Bankin Zuba Jari na Turai, ciki har da tranches kore da na sarauta.
+
+Ga tokenized deposits wannan yana da muhimmanci saboda daidaiton settlement tsakanin deposit tokens da tokenized securities sharaɗi ne na farko don delivery-versus-payment a kan ledger ɗaya. Deposit token ba tare da dandalin bayar da securities na cibiyoyi ba ba shi da abin da zai warware da shi.
+
+### Tokenization na Kadarori na Duniya: HSBC Gold Token
+
+HSBC ya faɗaɗa samfurin anga ɗaya zuwa kadarori na jiki a matakin retail. HSBC Gold Token yana barin masu amfani da app na wayar HSBC HK su sayi mallaka mai rabo na zinariya ta jiki, tare da damar shiga na cibiyoyi a Birtaniya. Kowace token ana goyan bayanta da kashi 100% na zinariya ta jiki da aka raba a cikin gidan ajiya na cibiyoyin HSBC — irin tsarin anga na ka'idoji da na aiki da banki yake amfani da shi ga deposit tokens ɗinsa.
+
+### Interoperability na Tsarin Sadarwa da Tokenization Mai Aminci ga Quantum
+
+HSBC ya gwada atomic settlement na tokenized deposits ɗinsa tsakanin tsarin sadarwa na waje ta amfani da Canton Network da Project Ensemble na Hong Kong Monetary Authority (HKMA). Wannan shi ne ɓangaren interoperability da BIS yake buƙata a cikin sukarsa kan tokens na banki ɗaya kawai: tokenized deposits suna zama kayan more rayuwa na wholesale ne kawai idan suna iya warware tsakanin tsarin sadarwa, ba kawai a cikin banki ɗaya ba.
+
+A lokaci guda, HSBC ya yi haɗin gwiwa da Quantinuum don aiwatar da tsaron cryptographic na post-quantum kai tsaye akan ledger ɗinsa na zinariya da aka tokenize — amsa ta kariya ga harin "Store Now, Decrypt Later" (SNDL) inda abokan hamayya ke tara bayanan ledger da aka ɓoye yau a kan caca cewa injunan quantum na nan gaba za su iya cire ɓoye su. Post-quantum cryptography akan ledger ɗin token na samarwa har yanzu ba matakin masana'antu ba ne; HSBC yana ɗaya daga cikin ƴan bankuna kaɗan da ke ɗauke shi a matsayin buƙata ta yau da kullum ga kowane dandalin tokenized da ake tsammanin zai wuce iyakar ƙayyadaddun kwanan watan ƙaurar PQC.
+
+### Stablecoins masu Tsara Doka tare da Deposit Tokens
+
+HSBC bai watsar da hanyar stablecoin gaba ɗaya ba. Bankin ya samu lasisin HKMA don gwada stablecoins masu tsara doka don settlement na ma'amaloli na peer-to-peer da na zuba jari — amma a matsayin ƙari ga tushen tokenized-deposit, ba a matsayin maye ba. Saƙon dabaru ya ci gaba a fadin tarin HSBC: tokenized deposits suna tsayar da tayin kuɗin dijital na banki; stablecoins masu tsara doka suna faɗaɗa isar zuwa amfani inda da'awar deposit token ke da matsala ta tsari.
 
 ## Tokenized Deposits da Stablecoins da CBDC
 
@@ -221,9 +252,14 @@ Ba gaba ɗaya ba. Stablecoins mai yiwuwa za su ci gaba da zama masu muhimmanci a
 
 Interoperability, ƙarshe na shari'a, kula da ka'idoji, matakan wallet, mulki tsakanin bankuna, da haɗin kai da kuɗin babban banki sune manyan abubuwan da ke hana. Fasaha bangare ɗaya ne kawai na matsalar karɓuwa.
 
+**Wane banki ne ke da tarin tokenized-deposit da ya fi ci gaba?**
+
+HSBC. HSBC Tokenised Deposit Service yana kunne a Hong Kong, Singapore, Birtaniya, Luxembourg, da Amurka cikin USD, GBP, EUR, HKD, da SGD; HSBC Orion shi ne kayan more rayuwa da aka tsara don pilot ɗin Digital Gilt Instrument (DIGIT) na Birtaniya; HSBC Gold Token yana tokenize zinariya ta jiki da aka raba; kuma HSBC ya gwada atomic settlement tsakanin tsarin sadarwa (Canton Network, Project Ensemble) da tsaron cryptographic na post-quantum tare da Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+
 ## Manazarta
 
 - Lloyds Banking Group, (2026). [Digital assets in 2026: building the future of finance in the UK ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
+- HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").
 - BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate").
 - Deutsche Bank flow, (2026). [Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money").
 - FDIC, (2026). [GENIUS Act requirements and standards proposed rule ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").

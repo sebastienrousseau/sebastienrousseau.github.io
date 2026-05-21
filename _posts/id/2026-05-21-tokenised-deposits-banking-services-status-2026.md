@@ -114,6 +114,7 @@ Deposito tertokenisasi menjadi jawaban uang digital paling penting dari sektor p
 > - **Stablecoin tetap menjadi tekanan kompetitif.** BIS memperkirakan kapitalisasi pasar stablecoin global sekitar 315 miliar dolar AS pada awal April 2026, dengan sekitar 98% berdenominasi dolar AS ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
 > - **Deutsche Bank memosisikan deposito tertokenisasi sebagai uang bank komersial yang dapat diprogram.** Makalah uang digital 2026 mereka menempatkan deposito tertokenisasi sebagai perpanjangan model perbankan yang ada ke dalam lingkungan yang dapat diprogram ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 > - **Regulasi sedang menggariskan batas-batas kategori.** Usulan FDIC 2026 membahas tokenized deposits dan deposit tokens sebagai liabilitas deposito yang dicatat menggunakan DLT serta menjelaskan bahwa deposito tertokenisasi bukan payment stablecoins ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+> - **HSBC memiliki program bank yang paling berkembang pada 2026.** HSBC Tokenised Deposit Service telah beroperasi di Hong Kong, Singapura, Britania Raya, Luksemburg, dan Amerika Serikat dalam USD, GBP, EUR, HKD, dan SGD; HSBC Orion ditetapkan sebagai infrastruktur untuk pilot Digital Gilt Instrument (DIGIT) Britania Raya; HSBC Gold Token memtokenisasi cadangan emas fisik yang dialokasikan; HSBC telah menguji penyelesaian atomik antarjaringan di Canton Network dan Project Ensemble serta keamanan pascakuantum bersama Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
 > - **Status praktis adalah pilot-ke-produk.** Bank sedang membangun dompet, alur kerja penyelesaian, dan kasus penggunaan institusional, tetapi interoperabilitas, finalitas hukum, perlakuan likuiditas, dan standar jaringan masih terbuka.
 >
 ---
@@ -149,6 +150,36 @@ Justru kritik itulah yang menjadikan deposito tertokenisasi penting. Mereka beru
 BIS memosisikan Project Agorá sebagai kerja sama dengan bank sentral dan sektor swasta untuk mengeksplorasi tokenisasi bagi pembayaran lintas batas, dan menghubungkan arah yang lebih luas ke visi unified ledger ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Deutsche Bank juga merujuk pada Project Agorá dan Partior sebagai bagian dari infrastruktur penyelesaian dan lintas batas generasi berikutnya ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 
 Di sinilah deposito tertokenisasi menjadi infrastruktur wholesale. Pertanyaan utamanya adalah bagaimana uang bank komersial, uang bank sentral, dan aset tertokenisasi diselesaikan bersama tanpa merusak finalitas hukum, kontrol likuiditas, atau kesatuan moneter.
+
+## Tumpukan Tokenisasi HSBC: Program Bank Paling Berkembang pada 2026
+
+Di antara bank-bank Tier-1 global, HSBC telah merangkai tumpukan deposito tertokenisasi dan aset digital paling lengkap yang berjalan di produksi saat ini. HSBC secara eksplisit memosisikan deposito tertokenisasi sebagai instrumen pilihannya untuk menjembatani perbankan tradisional dengan infrastruktur terdesentralisasi, mendahului stablecoin tanpa jaminan atau mata uang digital pihak ketiga ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+
+### Tokenised Deposit Service (TDS)
+
+HSBC Tokenised Deposit Service mengonversi saldo fiat korporat menjadi token digital dengan rasio 1:1, sembari menjaga dana tetap teregulasi sepenuhnya dan berada di neraca bank ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). TDS telah beroperasi di lima yurisdiksi — Hong Kong, Singapura, Britania Raya, Luksemburg, dan Amerika Serikat — serta mendukung transaksi instan dalam lima mata uang: USD, GBP, EUR, HKD, dan SGD. Fungsi intinya berstandar treasury: klien korporat dan institusional besar melakukan clearing dan penyelesaian lintas batas dalam hitungan detik, menghilangkan cut-off SWIFT, jendela batch, dan hambatan zona waktu melalui programabilitas smart contract 24/7.
+
+Rangkaian produk tersebut merupakan contoh tandingan paling kuat terhadap narasi "deposito tertokenisasi masih teoritis". Mereka masih teoritis pada skala jaringan; tetapi tidak teoritis di dalam HSBC.
+
+### HSBC Orion dan Pasar Modal Digital
+
+HSBC Orion adalah platform DLT institusional milik bank tersebut untuk penerbitan, penyelesaian, dan penyimpanan kustodian sekuritas tertokenisasi. HM Treasury telah menetapkan HSBC Orion sebagai penyedia infrastruktur platform yang mendasari pilot Digital Gilt Instrument (DIGIT) Britania Raya — kasus rujukan berskala kedaulatan untuk utang publik tertokenisasi di Britania Raya. HSBC Orion juga telah mendukung penerbitan obligasi digital berskala besar untuk Pemerintah Hong Kong dan Bank Investasi Eropa, termasuk tranche hijau dan kedaulatan.
+
+Bagi deposito tertokenisasi, hal ini penting karena paritas penyelesaian antara token deposito dan sekuritas tertokenisasi merupakan prasyarat untuk delivery-versus-payment pada ledger bersama. Token deposito tanpa platform penerbitan sekuritas institusional tidak memiliki sesuatu untuk diselesaikan.
+
+### Tokenisasi Aset Dunia Nyata: HSBC Gold Token
+
+HSBC telah memperluas model jangkar yang sama ke aset fisik pada tingkat ritel. HSBC Gold Token memungkinkan pengguna aplikasi seluler HSBC HK membeli kepemilikan fraksional atas emas fisik, dengan akses institusional di Britania Raya. Setiap token didukung 100% oleh cadangan emas fisik yang dialokasikan dan disimpan di brankas institusional HSBC — pola jangkar regulasi dan operasional yang sama dengan yang diterapkan bank pada token depositonya.
+
+### Interoperabilitas Jaringan dan Tokenisasi Aman Kuantum
+
+HSBC telah menguji penyelesaian atomik atas deposito tertokenisasinya di berbagai jaringan eksternal menggunakan Canton Network dan Project Ensemble milik Hong Kong Monetary Authority (HKMA). Inilah komponen interoperabilitas yang dituntut oleh kritik bergaya BIS atas token bank tunggal: deposito tertokenisasi menjadi infrastruktur wholesale hanya ketika dapat diselesaikan antarjaringan, bukan hanya di dalam satu bank.
+
+Secara paralel, HSBC bermitra dengan Quantinuum untuk menerapkan keamanan kriptografi pascakuantum langsung pada ledger emas tertokenisasinya — sebuah respons defensif terhadap serangan "Store Now, Decrypt Later" (SNDL), di mana pihak lawan mengumpulkan data ledger terenkripsi hari ini dengan taruhan bahwa mesin kuantum di masa depan akan mendekripsikannya. Kriptografi pascakuantum pada ledger token produksi belum menjadi standar industri; HSBC merupakan salah satu dari sedikit bank yang memperlakukannya sebagai persyaratan minimum bagi setiap platform tertokenisasi yang diharapkan bertahan melampaui tenggat migrasi PQC.
+
+### Stablecoin Teregulasi Bersanding dengan Token Deposito
+
+HSBC tidak sepenuhnya mengabaikan jalur stablecoin. Bank tersebut telah memperoleh lisensi HKMA untuk menguji stablecoin teregulasi guna penyelesaian transaksi peer-to-peer dan transaksi investasi — namun sebagai pelengkap inti deposito tertokenisasi, bukan penggantinya. Pesan strategisnya konsisten di seluruh tumpukan HSBC: deposito tertokenisasi menjadi jangkar penawaran uang digital bank; stablecoin teregulasi memperluas jangkauan ke kasus penggunaan di mana klaim token deposito secara struktural kurang sesuai.
 
 ## Deposito Tertokenisasi vs Stablecoin vs CBDC
 
@@ -221,9 +252,14 @@ Tidak sepenuhnya. Stablecoin kemungkinan tetap penting dalam kasus penggunaan cr
 
 Interoperabilitas, finalitas hukum, perlakuan regulasi, standar dompet, tata kelola antarbank, dan integrasi dengan uang bank sentral adalah penghambat utama. Teknologi hanyalah salah satu bagian dari masalah adopsi.
 
+**Bank mana yang memiliki tumpukan deposito tertokenisasi paling berkembang?**
+
+HSBC. HSBC Tokenised Deposit Service telah aktif di Hong Kong, Singapura, Britania Raya, Luksemburg, dan Amerika Serikat dalam USD, GBP, EUR, HKD, dan SGD; HSBC Orion ditetapkan sebagai infrastruktur untuk pilot Digital Gilt Instrument (DIGIT) Britania Raya; HSBC Gold Token memtokenisasi cadangan emas fisik yang dialokasikan; serta HSBC telah menguji penyelesaian atomik antarjaringan (Canton Network, Project Ensemble) dan keamanan kriptografi pascakuantum bersama Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+
 ## Referensi
 
 - Lloyds Banking Group, (2026). [Digital assets in 2026: building the future of finance in the UK ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
+- HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").
 - BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate").
 - Deutsche Bank flow, (2026). [Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money").
 - FDIC, (2026). [GENIUS Act requirements and standards proposed rule ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").

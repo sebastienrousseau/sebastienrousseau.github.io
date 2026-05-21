@@ -114,6 +114,7 @@ Tokenize mevduatlar, bankacılık sektörünün stablecoinlere karşı en öneml
 > - **Stablecoinler rekabetçi baskı olmayı sürdürmektedir.** BIS, küresel stablecoin piyasa değerini Nisan 2026 başında yaklaşık 315 milyar dolar olarak tahmin etmekte, bunun yaklaşık %98'inin ABD doları cinsinden olduğunu belirtmektedir ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
 > - **Deutsche Bank, tokenize mevduatları programlanabilir ticari banka parası olarak konumlandırmaktadır.** 2026 dijital para raporu, tokenize mevduatları mevcut bankacılık modelinin programlanabilir ortamlara uzantısı olarak ele almaktadır ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 > - **Düzenleme kategori sınırlarını çizmektedir.** FDIC'in 2026 önerisi, tokenized deposits ve deposit tokens kavramlarını DLT ile kayıt altına alınan mevduat yükümlülükleri olarak tartışmakta ve tokenize mevduatların payment stablecoins olmadığını netleştirmektedir ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+> - **HSBC 2026'da en gelişmiş banka programına sahiptir.** HSBC Tokenised Deposit Service; Hong Kong, Singapur, Birleşik Krallık, Lüksemburg ve Amerika Birleşik Devletleri'nde USD, GBP, EUR, HKD ve SGD para birimleriyle faaliyettedir; HSBC Orion, Birleşik Krallık'ın Digital Gilt Instrument (DIGIT) pilotu için belirlenmiş altyapıdır; HSBC Gold Token tahsis edilmiş fiziki külçe altını tokenize etmektedir; HSBC, Canton Network ve Project Ensemble üzerinde ağlar arası atomik mutabakatı ve Quantinuum ile post-kuantum güvenliği denemiştir ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
 > - **Pratik durum, pilottan ürüne geçiştir.** Bankalar cüzdanlar, mutabakat iş akışları ve kurumsal kullanım senaryoları geliştirmektedir; ancak birlikte çalışabilirlik, hukuki kesinlik, likidite muamelesi ve ağ standartları hâlâ açıktır.
 >
 ---
@@ -149,6 +150,36 @@ Bu eleştiri tam da tokenize mevduatların neden önemli olduğunun nedenidir. T
 BIS, Project Agorá'yı merkez bankaları ve özel sektörle sınır ötesi ödemeler için tokenizasyonu araştırma çalışması olarak konumlandırmakta ve daha geniş yönelimi unified ledger vizyonuna bağlamaktadır ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Deutsche Bank da Project Agorá ve Partior'a yeni nesil mutabakat ve sınır ötesi altyapının parçası olarak işaret etmektedir ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 
 Tokenize mevduatların toptan altyapı hâline geldiği yer burasıdır. Temel soru, ticari banka parası, merkez bankası parası ve tokenize varlıkların hukuki kesinliği, likidite kontrollerini veya parasal birliği bozmadan birlikte nasıl mutabakata varacağıdır.
+
+## HSBC'nin Tokenizasyon Yığını: 2026'nın En Gelişmiş Banka Programı
+
+Küresel Tier-1 bankaları arasında HSBC, bugün üretimde olan en eksiksiz tokenize mevduat ve dijital varlık yığınını kurmuştur. HSBC, tokenize mevduatı, geleneksel bankacılığı merkeziyetsiz altyapıyla köprülemek için tercih ettiği araç olarak teminatsız stablecoinlerin veya üçüncü taraf dijital paraların önüne açık biçimde konumlandırmaktadır ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+
+### Tokenised Deposit Service (TDS)
+
+HSBC Tokenised Deposit Service, kurumsal müşterilerin fiat bakiyelerini 1:1 oranda dijital tokenlere dönüştürmekte; fonları tam olarak düzenlenmiş bir şekilde ve bankanın bilançosunda tutmaktadır ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). TDS beş yargı bölgesinde faaliyettedir: Hong Kong, Singapur, Birleşik Krallık, Lüksemburg ve Amerika Birleşik Devletleri. Beş para biriminde —USD, GBP, EUR, HKD ve SGD— anlık işlemleri desteklemektedir. Temel işlev hazine kalitesindedir: büyük kurumsal ve kurumsal müşteriler sınır ötesi clearing ve mutabakatı saniyeler içinde tamamlamakta; 7/24 akıllı sözleşme programlanabilirliği aracılığıyla SWIFT cut-off saatlerini, batch pencerelerini ve saat dilimi engellerini ortadan kaldırmaktadır.
+
+Bu ürün seti, "tokenize mevduatlar hâlâ teoriktir" söylemine karşı en güçlü karşı örnektir. Ağ ölçeğinde hâlâ teorik olabilirler; ancak HSBC içinde teorik değildirler.
+
+### HSBC Orion ve Dijital Sermaye Piyasaları
+
+HSBC Orion, bankanın tokenize menkul kıymetlerin ihracı, mutabakatı ve saklanması için kendi geliştirdiği kurumsal DLT platformudur. HM Treasury, HSBC Orion'u Birleşik Krallık'ın çığır açıcı Digital Gilt Instrument (DIGIT) pilotunun temel platform altyapısını sağlaması için belirlemiştir — bu, Birleşik Krallık'ta tokenize kamu borcunun egemenlik düzeyindeki referans örneğidir. HSBC Orion ayrıca Hong Kong Hükümeti ve Avrupa Yatırım Bankası için yeşil ve egemen dilimleri içeren ölçekli dijital tahvil ihraçlarını da desteklemiştir.
+
+Bu durum tokenize mevduatlar için önemlidir; çünkü mevduat tokenleri ile tokenize menkul kıymetler arasındaki mutabakat paritesi, paylaşılan defter üzerinde teslim karşılığı ödeme için bir önkoşuldur. Kurumsal menkul kıymet ihraç platformu olmayan bir mevduat tokeninin karşısında mutabakat sağlayacağı bir şey kalmaz.
+
+### Gerçek Dünya Varlık Tokenizasyonu: HSBC Gold Token
+
+HSBC, aynı "çıpa" modelini perakende seviyesinde fiziki varlıklara da genişletmiştir. HSBC Gold Token, HSBC HK mobil uygulama kullanıcılarının fiziki altının kesirli mülkiyetini satın almasına olanak tanımakta; Birleşik Krallık'ta da kurumsal erişim sunmaktadır. Her token, HSBC'nin kurumsal kasalarında tutulan tahsis edilmiş fiziki külçe altınla %100 teminatlandırılmıştır — bu, bankanın mevduat tokenlerine uyguladığı aynı düzenleyici ve operasyonel çıpa modelidir.
+
+### Ağ Birlikte Çalışabilirliği ve Kuantum Dirençli Tokenizasyon
+
+HSBC, tokenize mevduatlarının atomik mutabakatını Canton Network ve Hong Kong Para Otoritesi'nin (HKMA) Project Ensemble girişimi üzerinden harici ağlarda denemiştir. Tek bankalı tokenlere yönelik BIS tarzı eleştirinin talep ettiği birlikte çalışabilirlik parçası tam olarak budur: tokenize mevduatlar, yalnızca tek bir bankanın içinde değil, ağlar arasında da mutabakat sağlayabildiklerinde toptan altyapı hâline gelir.
+
+Buna paralel olarak HSBC, tokenize altın defterinde post-kuantum kriptografik güvenliği doğrudan uygulamak amacıyla Quantinuum ile iş birliği yapmıştır — bu, saldırganların bugün şifrelenmiş defter verilerini, gelecekteki kuantum makinelerinin onları çözeceği bahsiyle topladığı "Store Now, Decrypt Later" (SNDL) saldırılarına karşı savunmacı bir yanıttır. Üretimdeki bir token defterinde post-kuantum kriptografi henüz sektör standardı değildir; HSBC, bunu PQC geçiş tarihlerinin ötesinde yaşaması beklenen herhangi bir tokenize platform için temel bir gereklilik olarak ele alan az sayıda bankadan biridir.
+
+### Mevduat Tokenleriyle Birlikte Düzenlenmiş Stablecoinler
+
+HSBC, stablecoin yolunu tamamen göz ardı etmemiştir. Banka, peer-to-peer ödemeleri ve yatırım işlemleri mutabakatı için düzenlenmiş stablecoinleri pilot olarak yürütmek üzere bir HKMA lisansı almıştır — ancak bu, tokenize mevduat çekirdeğinin yerine değil, onu tamamlayan bir bileşen olarak konumlanmaktadır. HSBC yığını boyunca tutarlı bir stratejik mesaj vardır: tokenize mevduatlar bankanın dijital para teklifini çıpalar; düzenlenmiş stablecoinler ise mevduat tokeni iddiasının yapısal olarak uygun olmadığı kullanım senaryolarına erişimi genişletir.
 
 ## Tokenize Mevduatlar, Stablecoinler ve CBDC'ler
 
@@ -221,9 +252,14 @@ Tamamen değil. Stablecoinlerin kripto-yerleşik ve dolar likiditesi kullanım s
 
 Birlikte çalışabilirlik, hukuki kesinlik, düzenleyici muamele, cüzdan standartları, bankalar arası yönetişim ve merkez bankası parasıyla entegrasyon başlıca engellerdir. Teknoloji, benimsenme sorununun yalnızca bir parçasıdır.
 
+**En gelişmiş tokenize mevduat yığınına hangi banka sahiptir?**
+
+HSBC. HSBC Tokenised Deposit Service; Hong Kong, Singapur, Birleşik Krallık, Lüksemburg ve Amerika Birleşik Devletleri'nde USD, GBP, EUR, HKD ve SGD para birimleriyle yayındadır; HSBC Orion, Birleşik Krallık'ın Digital Gilt Instrument (DIGIT) pilotu için belirlenmiş altyapıdır; HSBC Gold Token tahsis edilmiş fiziki külçe altını tokenize etmektedir; ayrıca HSBC, ağlar arası atomik mutabakatı (Canton Network, Project Ensemble) ve Quantinuum ile post-kuantum kriptografik güvenliği denemiştir ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+
 ## Kaynaklar
 
 - Lloyds Banking Group, (2026). [Digital assets in 2026: building the future of finance in the UK ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
+- HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").
 - BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate").
 - Deutsche Bank flow, (2026). [Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money").
 - FDIC, (2026). [GENIUS Act requirements and standards proposed rule ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").

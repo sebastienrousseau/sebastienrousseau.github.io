@@ -114,6 +114,7 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 > - **穩定幣仍構成競爭壓力。** BIS估計，2026年4月初全球穩定幣市值約為3,150億美元，其中約98%以美元計價（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")）。
 > - **Deutsche Bank將代幣化存款定義為可程式化的商業銀行貨幣。** 其2026年數位貨幣論文將代幣化存款定位為現有銀行模式向可程式化環境的延伸（[Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")）。
 > - **監管正在劃定類別邊界。** FDIC在2026年的提案中將代幣化存款及存款代幣討論為透過分散式帳本技術記錄的存款負債，並明確代幣化存款不屬於支付型穩定幣（[FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")）。
+> - **HSBC在2026年擁有最為成熟的銀行專案。** HSBC Tokenised Deposit Service已在香港、新加坡、英國、盧森堡與美國以USD、GBP、EUR、HKD與SGD投入運行；HSBC Orion被指定為英國Digital Gilt Instrument（DIGIT）試點的基礎設施；HSBC Gold Token將已分配的實物金條代幣化；HSBC亦在Canton與Project Ensemble上試行了跨網路原子結算，並與Quantinuum合作進行後量子安全測試（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。
 > - **實際狀態是從試點走向產品。** 銀行正在建構錢包、結算流程與機構應用場景，但互通性、法律最終性、流動性處理與網路標準仍未解決。
 >
 ---
@@ -149,6 +150,36 @@ BIS在2026年4月的演講中肯定了穩定幣在智能合約可程式化與原
 BIS將Project Agorá定位為與中央銀行和私營部門合作探索跨境支付代幣化的工作，並將更廣泛的方向與統一帳本願景連結起來（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")）。Deutsche Bank亦將Project Agorá與Partior視為下一代結算與跨境基礎設施的組成部分（[Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")）。
 
 這正是代幣化存款成為批發基礎設施之處。核心問題在於商業銀行貨幣、中央銀行貨幣與代幣化資產如何在不破壞法律最終性、流動性管控或貨幣單一性的前提下共同完成結算。
+
+## HSBC的代幣化堆疊：2026年最為成熟的銀行專案
+
+在全球Tier-1銀行中，HSBC在當前生產環境中建構了最為完整的代幣化存款與數位資產堆疊。HSBC明確將代幣化存款定位為銜接傳統銀行業務與去中心化基礎設施的首選工具，置於無擔保穩定幣或第三方數位貨幣之前（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。
+
+### Tokenised Deposit Service（TDS）
+
+HSBC Tokenised Deposit Service依1:1比例將企業法幣餘額轉換為數位代幣，資金始終處於完全受監管狀態並保留在銀行資產負債表上（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。TDS已在香港、新加坡、英國、盧森堡與美國五個司法管轄區投入運行，並支援USD、GBP、EUR、HKD與SGD五種貨幣的即時交易。其核心功能屬於財務司庫等級：大型企業及機構客戶透過24/7智能合約可程式化，可在數秒內完成跨境清算與結算，消除SWIFT截止時間、批次視窗與時區障礙。
+
+這一產品組合是對「代幣化存款仍屬理論」此一論斷最有力的反例。它們在網路規模上仍屬理論；在HSBC內部，它們已不再是理論。
+
+### HSBC Orion與數位資本市場
+
+HSBC Orion是該行專有的機構級DLT平台，用於發行、結算與託管代幣化證券。HM Treasury已指定HSBC Orion作為英國具有里程碑意義的Digital Gilt Instrument（DIGIT）試點的基礎平台基礎設施——這是英國代幣化公共債務的主權級標竿案例。HSBC Orion亦支援香港特區政府與歐洲投資銀行的大規模數位債券發行，包括綠色債券與主權債券分券。
+
+對代幣化存款而言，這一點之所以重要，是因為在共享帳本上實現款券對付（DVP）的先決條件是存款代幣與代幣化證券之間的結算對等。若無機構級證券發行平台，存款代幣便無對應可結算的對象。
+
+### 實物資產代幣化：HSBC Gold Token
+
+HSBC將同一錨定模型擴展至零售層級的實物資產。HSBC Gold Token允許HSBC HK行動應用程式使用者購買實物黃金的部分所有權，並向英國機構客戶提供準入。每枚代幣均由存放於HSBC機構金庫內的已分配實物金條100%支持——這與該行對存款代幣所採用的監管與營運錨定模式完全一致。
+
+### 網路互通性與量子安全代幣化
+
+HSBC已使用Canton Network與香港金融管理局（HKMA）的Project Ensemble，跨外部網路試行其代幣化存款的原子結算。這正是BIS式批評針對單一銀行代幣所要求的互通性環節：代幣化存款唯有在能夠跨網路而非僅於單一銀行內部結算時，才能成為批發基礎設施。
+
+與此同時，HSBC與Quantinuum合作，在其代幣化黃金帳本上直接部署後量子加密安全——這是對「Store Now, Decrypt Later」（SNDL）攻擊的防禦性回應，此類攻擊中，對手在當下蒐集加密帳本資料，押注未來量子電腦將能解密。生產代幣帳本上的後量子加密尚未成為產業標準；HSBC是少數將其視為任何預期跨越PQC遷移期限的代幣化平台基本要求的銀行之一。
+
+### 受監管穩定幣與存款代幣並行
+
+HSBC並未完全忽視穩定幣這一方向。該行已取得HKMA許可，試點用於點對點與投資交易結算的受監管穩定幣——但這是對代幣化存款核心的補充，而非取代。HSBC整個堆疊傳遞的策略訊息是一致的：代幣化存款是該行數位貨幣產品的錨點；受監管穩定幣則將覆蓋範圍延伸至存款代幣債權在結構上不便適用的場景。
 
 ## 代幣化存款、穩定幣與CBDC的比較
 
@@ -221,9 +252,14 @@ Lloyds將市場支付、再抵押貸款與數位資產結算列為Great British 
 
 互通性、法律最終性、監管處理、錢包標準、跨行治理以及與中央銀行貨幣的整合是主要障礙。技術只是採納問題的一部分。
 
+**哪家銀行擁有最為成熟的代幣化存款堆疊？**
+
+HSBC。HSBC Tokenised Deposit Service已在香港、新加坡、英國、盧森堡與美國以USD、GBP、EUR、HKD與SGD投入運行；HSBC Orion被指定為英國Digital Gilt Instrument（DIGIT）試點的基礎設施；HSBC Gold Token將已分配的實物金條代幣化；HSBC亦在跨網路原子結算（Canton、Project Ensemble）方面進行了試點，並與Quantinuum合作部署了後量子加密安全（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。
+
 ## 參考文獻
 
 - Lloyds Banking Group, (2026). [Digital assets in 2026: building the future of finance in the UK ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
+- HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").
 - BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate").
 - Deutsche Bank flow, (2026). [Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money").
 - FDIC, (2026). [GENIUS Act requirements and standards proposed rule ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").

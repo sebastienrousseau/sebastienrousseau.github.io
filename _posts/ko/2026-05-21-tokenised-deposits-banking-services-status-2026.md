@@ -114,6 +114,7 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 > - **스테이블코인은 여전히 경쟁 압력으로 남아 있습니다.** BIS는 2026년 4월 초 글로벌 스테이블코인 시가총액을 약 3,150억 달러로 추정하며, 약 98%가 미국 달러로 표시된다고 밝힙니다([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
 > - **Deutsche Bank는 토큰화 예금을 프로그래밍 가능한 상업은행 화폐로 규정합니다.** 2026년 디지털 화폐 보고서는 토큰화 예금을 기존 은행 모델의 프로그래밍 가능한 환경으로의 확장으로 위치시킵니다([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 > - **규제는 범주의 경계를 그리고 있습니다.** FDIC의 2026년 제안은 토큰화 예금과 예금 토큰을 분산원장기술로 기록된 예금 부채로 논의하며, 토큰화 예금이 결제용 스테이블코인이 아님을 명확히 합니다([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+> - **HSBC는 2026년 가장 발전된 은행 프로그램을 보유하고 있습니다.** HSBC Tokenised Deposit Service는 홍콩, 싱가포르, 영국, 룩셈부르크, 미국에서 USD, GBP, EUR, HKD, SGD로 운영되고 있습니다. HSBC Orion은 영국 Digital Gilt Instrument(DIGIT) 시범의 지정 인프라이며, HSBC Gold Token은 할당된 실물 금괴를 토큰화하고, HSBC는 Canton과 Project Ensemble에서 네트워크 간 원자적 결제와 Quantinuum과의 양자 내성 보안을 시범 운영해 왔습니다([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
 > - **실무적인 현황은 시범에서 제품으로의 이행 단계입니다.** 은행들은 지갑, 결제 워크플로, 기관 유스케이스를 구축하고 있지만, 상호운용성, 법적 종결성, 유동성 처리, 네트워크 표준은 여전히 미해결로 남아 있습니다.
 >
 ---
@@ -149,6 +150,36 @@ BIS의 2026년 4월 연설은 스마트 컨트랙트 프로그래밍 가능성�
 BIS는 Project Agorá를 국경 간 결제에 대한 토큰화를 탐구하기 위해 중앙은행과 민간 부문이 협력하는 작업으로 규정하며, 더 넓은 방향성을 통합원장 비전과 연결합니다([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Deutsche Bank 또한 Project Agorá와 Partior를 차세대 결제 및 국경 간 인프라의 일부로 지적합니다([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 
 여기서 토큰화 예금은 도매 인프라가 됩니다. 핵심 질문은 상업은행 화폐, 중앙은행 화폐, 토큰화된 자산이 법적 종결성, 유동성 통제, 화폐의 단일성을 깨뜨리지 않으면서 어떻게 함께 결제되는가입니다.
+
+## HSBC의 토큰화 스택: 2026년 가장 발전된 은행 프로그램
+
+글로벌 Tier-1 은행들 가운데, HSBC는 현재 운영 중인 가장 완성도 높은 토큰화 예금 및 디지털 자산 스택을 구축하였습니다. HSBC는 무담보 스테이블코인이나 제3자 발행 디지털 화폐에 앞서, 토큰화 예금을 전통적 은행 업무와 분산형 인프라를 연결하는 핵심 수단으로 명확히 자리매김하고 있습니다([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+
+### Tokenised Deposit Service(TDS)
+
+HSBC Tokenised Deposit Service는 법인 고객의 법정화폐 잔액을 1:1 비율로 디지털 토큰으로 전환하며, 자금을 완전히 규제 하에 두고 은행의 대차대조표 위에 유지합니다([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). TDS는 홍콩, 싱가포르, 영국, 룩셈부르크, 미국의 5개 관할에서 운영되며 USD, GBP, EUR, HKD, SGD의 5개 통화로 즉시 거래를 지원합니다. 핵심 기능은 트레저리 등급입니다. 대형 법인 및 기관 고객은 24시간 365일 스마트 컨트랙트 프로그래밍 가능성을 통해 SWIFT 마감 시간, 배치 윈도우, 시차 장벽을 제거하고 수 초 단위로 국경 간 청산 및 결제를 수행할 수 있습니다.
+
+이 제품군은 "토큰화 예금이 여전히 이론적"이라는 시각에 대한 가장 강력한 반례입니다. 네트워크 규모에서는 여전히 이론적이지만, HSBC 내부에서는 더 이상 이론적이지 않습니다.
+
+### HSBC Orion과 디지털 자본시장
+
+HSBC Orion은 토큰화된 증권의 발행, 결제, 수탁을 위한 자체 기관 투자자용 DLT 플랫폼입니다. HM Treasury는 영국의 획기적인 Digital Gilt Instrument(DIGIT) 시범, 즉 영국 토큰화 공공 부채의 주권급 기준 사례를 위한 기반 플랫폼 인프라로 HSBC Orion을 지정했습니다. HSBC Orion은 또한 녹색 채권 및 국채 트랜치를 포함하여 홍콩 정부와 유럽투자은행의 대규모 디지털 채권 발행을 지원해 왔습니다.
+
+토큰화 예금에 있어 이것이 중요한 이유는, 공유 원장 위에서의 DVP(인도와 결제의 동시 처리)의 전제조건이 예금 토큰과 토큰화된 증권 간의 결제 동등성이기 때문입니다. 기관 증권 발행 플랫폼이 없는 예금 토큰은 결제할 상대가 없습니다.
+
+### 실물 자산의 토큰화: HSBC Gold Token
+
+HSBC는 동일한 앵커 모델을 리테일 계층의 실물 자산으로 확장하였습니다. HSBC Gold Token은 HSBC HK 모바일 앱 사용자에게 실물 금의 부분 소유권을 제공하며, 영국에서는 기관 투자자 접근이 제공됩니다. 각 토큰은 HSBC의 기관용 금고에 보관된 할당된 실물 금괴로 100% 뒷받침되며, 이는 동행이 예금 토큰에 적용하는 것과 동일한 규제적, 운영적 앵커 패턴입니다.
+
+### 네트워크 상호운용성과 양자 내성 토큰화
+
+HSBC는 Canton Network와 홍콩 금융관리국(HKMA)의 Project Ensemble를 사용하여 외부 네트워크 간 토큰화 예금의 원자적 결제를 시범 운영해 왔습니다. 이는 단일 은행 토큰에 대한 BIS식 비판이 요구하는 상호운용성 요소입니다. 토큰화 예금은 단일 은행 내부뿐 아니라 네트워크를 가로질러 결제할 수 있을 때 비로소 도매 인프라가 됩니다.
+
+이와 병행하여 HSBC는 Quantinuum과 협력하여 토큰화된 금 원장에 양자 내성 암호 보안을 직접 구현하였습니다. 이는 적대자가 오늘날 암호화된 원장 데이터를 수집하여 미래의 양자 컴퓨터로 복호화하기를 기대하는 "Store Now, Decrypt Later"(SNDL) 공격에 대한 방어적 대응입니다. 운영 중인 토큰 원장에서의 양자 내성 암호는 아직 업계 표준이 아닙니다. HSBC는 PQC 이행 기한 이후까지 존속할 것으로 예상되는 토큰화 플랫폼에서 이를 필수 요소로 다루는 소수의 은행 중 하나입니다.
+
+### 예금 토큰과 함께하는 규제 스테이블코인
+
+HSBC는 스테이블코인 영역을 완전히 무시하지 않았습니다. 동행은 P2P 결제 및 투자 거래 결제를 위해 규제 스테이블코인을 시범 운영하기 위해 HKMA 라이선스를 취득하였습니다. 다만 이는 토큰화 예금이라는 핵심을 대체하는 것이 아니라 보완하는 것입니다. HSBC 스택 전반에 걸친 일관된 전략적 메시지는 다음과 같습니다. 토큰화 예금이 동행의 디지털 화폐 제공의 닻이며, 규제 스테이블코인은 예금 토큰 청구권이 구조적으로 어색한 사용 사례로의 확장 수단입니다.
 
 ## 토큰화 예금 대 스테이블코인 대 CBDC
 
@@ -221,9 +252,14 @@ Lloyds는 Great British Tokenised Deposits의 유스케이스로 마켓플레이
 
 상호운용성, 법적 종결성, 규제상의 처리, 지갑 표준, 은행 간 거버넌스, 중앙은행 화폐와의 통합이 주요 장애 요인입니다. 기술은 채택 문제의 한 부분에 불과합니다.
 
+**가장 발전된 토큰화 예금 스택을 보유한 은행은 어디입니까?**
+
+HSBC입니다. HSBC Tokenised Deposit Service는 홍콩, 싱가포르, 영국, 룩셈부르크, 미국에서 USD, GBP, EUR, HKD, SGD로 운영되고 있습니다. HSBC Orion은 영국 Digital Gilt Instrument(DIGIT) 시범의 지정 인프라이며, HSBC Gold Token은 할당된 실물 금괴를 토큰화하고, HSBC는 네트워크 간 원자적 결제(Canton, Project Ensemble)와 Quantinuum과의 양자 내성 암호 보안을 시범 운영해 왔습니다([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+
 ## 참고문헌
 
 - Lloyds Banking Group, (2026). [Digital assets in 2026: building the future of finance in the UK ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
+- HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").
 - BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate").
 - Deutsche Bank flow, (2026). [Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money").
 - FDIC, (2026). [GENIUS Act requirements and standards proposed rule ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").

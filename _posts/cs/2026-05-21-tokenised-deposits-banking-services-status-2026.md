@@ -114,6 +114,7 @@ Tokenizované vklady se stávají nejvýznamnější odpovědí bankovního sekt
 > - **Stablecoiny zůstávají konkurenčním tlakem.** BIS odhaduje celosvětovou tržní kapitalizaci stablecoinů na přibližně 315 miliard USD na začátku dubna 2026, přičemž zhruba 98 % je denominováno v amerických dolarech ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
 > - **Deutsche Bank pojímá tokenizované vklady jako programovatelné peníze komerčních bank.** Jeho dokument o digitálních penězích pro rok 2026 staví tokenizované vklady jako rozšíření stávajícího bankovního modelu do programovatelného prostředí ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 > - **Regulace kreslí hranice mezi kategoriemi.** Návrh FDIC z roku 2026 pojednává o tokenized deposits a deposit tokens jako o vkladových závazcích evidovaných prostřednictvím DLT a vyjasňuje, že tokenizované vklady nejsou platebními stablecoiny ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
+> - **HSBC má v roce 2026 nejrozvinutější bankovní program.** Služba HSBC Tokenised Deposit Service je v provozu v Hongkongu, Singapuru, Spojeném království, Lucembursku a Spojených státech v měnách USD, GBP, EUR, HKD a SGD; HSBC Orion je určenou infrastrukturou pro pilot britského Digital Gilt Instrument (DIGIT); HSBC Gold Token tokenizuje alokované fyzické zlato; HSBC ověřila atomické vypořádání mezi sítěmi na Canton Network a v rámci Project Ensemble a post-kvantovou bezpečnost ve spolupráci s Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
 > - **Praktický stav je „od pilotu k produktu“.** Banky budují peněženky, procesy vypořádání a institucionální případy užití, ale interoperabilita, právní finalita, zacházení s likviditou a síťové standardy zůstávají otevřené.
 >
 ---
@@ -149,6 +150,36 @@ Právě tato kritika je důvodem, proč na tokenizovaných vkladech záleží. S
 BIS pojímá Project Agorá jako práci s centrálními bankami a soukromým sektorem na zkoumání tokenizace pro přeshraniční platby a širší směr propojuje s vizí unified ledger ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Deutsche Bank rovněž poukazuje na Project Agorá a Partior jako součást příští generace infrastruktury vypořádání a přeshraničních plateb ([Deutsche Bank flow](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money")).
 
 Zde se tokenizované vklady stávají velkoobchodní infrastrukturou. Klíčovou otázkou je, jak se peníze komerčních bank, peníze centrální banky a tokenizovaná aktiva mohou společně vypořádávat, aniž by byla narušena právní finalita, kontroly likvidity nebo měnová jednota.
+
+## Tokenizační stack HSBC: nejrozvinutější bankovní program roku 2026
+
+Z globálních bank Tier-1 sestavila HSBC dosud nejúplnější stack tokenizovaných vkladů a digitálních aktiv v produkčním provozu. HSBC výslovně staví tokenizovaný vklad jako svůj preferovaný nástroj pro propojení tradičního bankovnictví s decentralizovanou infrastrukturou, před nekrytými stablecoiny nebo digitálními měnami třetích stran ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+
+### Tokenised Deposit Service (TDS)
+
+HSBC Tokenised Deposit Service převádí fiat zůstatky korporátních klientů na digitální tokeny v poměru 1:1, přičemž prostředky zůstávají plně regulované a v rozvaze banky ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). TDS je v provozu v pěti jurisdikcích — v Hongkongu, Singapuru, Spojeném království, Lucembursku a Spojených státech — a podporuje okamžité transakce v pěti měnách: USD, GBP, EUR, HKD a SGD. Klíčová funkce je na úrovni treasury: velcí korporátní a institucionální klienti provádějí clearing a vypořádání přeshraničně během několika sekund, čímž eliminují cut-off časy SWIFT, dávková okna a bariéry časových pásem prostřednictvím nepřetržité programovatelnosti chytrých kontraktů.
+
+Tento produktový soubor je nejsilnějším protipříkladem teze, že „tokenizované vklady jsou stále teoretické“. Zůstávají teoretické v síťovém měřítku; uvnitř HSBC teoretické nejsou.
+
+### HSBC Orion a digitální kapitálové trhy
+
+HSBC Orion je proprietární institucionální DLT platforma banky pro vydávání, vypořádání a custody tokenizovaných cenných papírů. HM Treasury určilo HSBC Orion, aby poskytlo základní platformovou infrastrukturu pro klíčový britský pilot Digital Gilt Instrument (DIGIT) — referenční případ pro tokenizovaný státní dluh ve Spojeném království na úrovni suveréna. HSBC Orion rovněž podpořilo emise digitálních dluhopisů ve významném rozsahu pro hongkongskou vládu a Evropskou investiční banku, včetně zelených a státních tranší.
+
+Pro tokenizované vklady je to podstatné, protože parita vypořádání mezi vkladovými tokeny a tokenizovanými cennými papíry je předpokladem pro dodání proti platbě na sdíleném registru. Vkladový token bez institucionální platformy pro emise cenných papírů nemá s čím vypořádávat.
+
+### Tokenizace reálných aktiv: HSBC Gold Token
+
+HSBC rozšířila stejný „anchor“ model na fyzická aktiva v retailové vrstvě. HSBC Gold Token umožňuje uživatelům mobilní aplikace HSBC HK nakupovat zlomkové vlastnictví fyzického zlata s institucionálním přístupem ve Spojeném království. Každý token je 100% krytý alokovaným fyzickým zlatem uloženým v institucionálních trezorech HSBC — jde o stejný regulatorní a provozní „anchor“ vzor, jaký banka uplatňuje u svých vkladových tokenů.
+
+### Síťová interoperabilita a kvantově odolná tokenizace
+
+HSBC ověřila atomické vypořádání svých tokenizovaných vkladů napříč externími sítěmi prostřednictvím Canton Network a Project Ensemble Hongkongského měnového úřadu (HKMA). Právě toto je část interoperability, kterou kritika single-bank tokenů ze strany BIS vyžaduje: tokenizované vklady se stávají velkoobchodní infrastrukturou pouze tehdy, pokud se mohou vypořádávat napříč sítěmi, nikoli jen uvnitř jedné banky.
+
+Souběžně HSBC ve spolupráci s Quantinuum implementovala post-kvantovou kryptografickou ochranu přímo na svém registru tokenizovaného zlata — jde o obrannou reakci na útoky typu „Store Now, Decrypt Later“ (SNDL), kdy útočníci dnes shromažďují šifrovaná data registru v sázce, že je budoucí kvantové stroje dešifrují. Post-kvantová kryptografie na produkčním tokenovém registru zatím není odvětvovým standardem; HSBC patří mezi několik mála bank, které ji považují za nezbytný základ jakékoli tokenizované platformy, která má přežít termíny pro migraci na PQC.
+
+### Regulované stablecoiny vedle vkladových tokenů
+
+HSBC zcela neignoruje ani směr stablecoinů. Banka získala licenci HKMA k pilotování regulovaných stablecoinů pro vypořádání peer-to-peer plateb a investičních transakcí — avšak jako doplněk k jádru tokenizovaných vkladů, nikoli jako jeho náhradu. Strategické sdělení napříč stackem HSBC je konzistentní: tokenizované vklady ukotvují nabídku banky v oblasti digitálních peněz; regulované stablecoiny rozšiřují dosah do případů užití, kde je nárok vkladového tokenu strukturálně nevhodný.
 
 ## Tokenizované vklady vs. stablecoiny vs. CBDC
 
@@ -221,9 +252,14 @@ Ne zcela. Stablecoiny pravděpodobně zůstanou důležité v krypto-nativních 
 
 Hlavními překážkami jsou interoperabilita, právní finalita, regulatorní zacházení, standardy peněženek, mezibankovní governance a integrace s penězi centrální banky. Technologie je jen jednou součástí problému adopce.
 
+**Která banka má nejrozvinutější stack tokenizovaných vkladů?**
+
+HSBC. Služba HSBC Tokenised Deposit Service je v provozu v Hongkongu, Singapuru, Spojeném království, Lucembursku a Spojených státech v měnách USD, GBP, EUR, HKD a SGD; HSBC Orion je určenou infrastrukturou pro britský pilot Digital Gilt Instrument (DIGIT); HSBC Gold Token tokenizuje alokované fyzické zlato; a HSBC ověřila atomické vypořádání mezi sítěmi (Canton Network, Project Ensemble) a post-kvantovou kryptografickou bezpečnost ve spolupráci s Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+
 ## Odkazy
 
 - Lloyds Banking Group, (2026). [Digital assets in 2026: building the future of finance in the UK ⧉](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026").
+- HSBC, (2026). [HSBC Tokenised Deposit Service ⧉](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service").
 - BIS, (2026). [Stablecoins: framing the debate ⧉](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate").
 - Deutsche Bank flow, (2026). [Digital Money — a perspective on stablecoins, tokenised deposits and CBDCs ⧉](https://flow.db.com/publications/flow-white-papers-and-guides/digital-money-a-perspective-on-stablecoins-tokenised-deposits-and-cbdcs "Digital Money").
 - FDIC, (2026). [GENIUS Act requirements and standards proposed rule ⧉](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule").
