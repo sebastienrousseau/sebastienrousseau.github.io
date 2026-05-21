@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Kuantum devresinin görselleştirmesi",
-  "date": "January 08, 2024",
-  "keywords": "Qiskit, kuantum, Fourier, kredi, finansal risk, IBM, optimizasyon",
-  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
-  "subtitle": "Finansal risk analizinde uygulanan kuantum algoritmaları",
   "language": "tr-TR",
-  "description": "Kuantum Fourier dönüşümü ve IBM Qiskit, kredi oranı analizini eşi görülmemiş bir doğruluk ve hızla optimize eder.",
+  "banner_alt": "Kuantum devresinin görselleştirmesi",
+  "locale": "tr_TR",
   "title": "IBM Qiskit ve kuantum Fourier dönüşümü ile kredi oranı analizini optimize etmek",
-  "locale": "tr_TR"
+  "subtitle": "Finansal risk analizinde uygulanan kuantum algoritmaları",
+  "description": "Kuantum Fourier dönüşümü ve IBM Qiskit, kredi oranı analizini eşi görülmemiş bir doğruluk ve hızla optimize eder.",
+  "banner": "https://cloudcdn.pro/stocks/images/quantum-computer-room.webp",
+  "keywords": "Qiskit, kuantum, Fourier, kredi, finansal risk, IBM, optimizasyon",
+  "date": "January 08, 2024"
 }

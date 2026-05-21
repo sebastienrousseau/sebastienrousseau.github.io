@@ -128,7 +128,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="proj-card">
 <a class="proj-card-media" href="https://pacs008.com/" aria-label="pacs008. Learn more">
-<img alt="pacs008 logo. Open-source ISO 20022 pacs.008 toolkit by Sebastien Rousseau" src="https://pacs008.com/logo.webp" loading="lazy" decoding="async" width="400" height="240" />
+<img alt="pacs008 logo. Open-source ISO 20022 pacs.008 toolkit by Sebastien Rousseau" src="https://cloudcdn.pro/clients/pacs008/v1/logos/pacs008.svg" loading="lazy" decoding="async" width="400" height="240" />
 </a>
 <div class="proj-card-body">
 <span class="proj-card-tag">Python · Cross-border</span>

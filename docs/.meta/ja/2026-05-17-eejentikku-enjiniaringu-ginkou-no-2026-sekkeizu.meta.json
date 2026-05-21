@@ -1,12 +1,12 @@
 {
-  "date": "May 17, 2026",
-  "subtitle": "監督付きオーケストレーションが直接プロンプトを置き換える",
+  "locale": "ja_JP",
   "keywords": "エージェンティック AI, エージェント, AI オーケストレーション, MCP, AIBOM, EU AI 法, 銀行ソフトウェア, Bedrock Agents, Vertex AI Agent Builder, Azure AI Foundry",
   "last_reviewed": "2026-05-17",
-  "title": "エージェンティック・エンジニアリング:銀行の 2026 年設計図",
-  "language": "ja-JP",
   "banner": "https://cloudcdn.pro/stocks/images/possessed-photography-jIBMSMs4_kA-unsplash.webp",
-  "banner_alt": "AI エージェントオーケストレーションの抽象的なビジュアル",
+  "subtitle": "監督付きオーケストレーションが直接プロンプトを置き換える",
   "description": "エージェンティック・エンジニアリングの実用的な設計図 ——直接プロンプトを置き換える監督付きオーケストレーション ——銀行のソフトウェア・エンジニアリングのために。",
-  "locale": "ja_JP"
+  "banner_alt": "AI エージェントオーケストレーションの抽象的なビジュアル",
+  "title": "エージェンティック・エンジニアリング:銀行の 2026 年設計図",
+  "date": "May 17, 2026",
+  "language": "ja-JP"
 }

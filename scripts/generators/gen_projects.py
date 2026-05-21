@@ -34,7 +34,7 @@ CATEGORIES = [
               "https://pain001.com"),
             P("Python · ISO 20022",
               "pacs008",
-              "https://pacs008.com/logo.webp",
+              "https://cloudcdn.pro/clients/pacs008/v1/logos/pacs008.svg",
               "Banner for the pacs008 ISO 20022 toolkit",
               "Generate, validate, and deliver ISO 20022 pacs.008 payment messages for FI-to-FI customer credit transfers. JSON Schema + XSD validation, IBAN across 75 countries, GDPR/PCI-DSS-compliant PII masking.",
               "https://pacs008.com/"),

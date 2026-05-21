@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Banner van RustLogs",
-  "title": "RustLogs: geavanceerde logging-bibliotheek voor Rust-toepassingen",
-  "date": "March 08, 2024",
+  "keywords": "RustLogs, Rust, logging, observability, open source",
+  "language": "nl-NL",
   "description": "RustLogs is een geavanceerde logging-bibliotheek voor Rust-toepassingen: snel, betrouwbaar en idiomatisch voor productie-grade systemen.",
+  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
   "locale": "nl_NL",
   "subtitle": "Snel, betrouwbaar en idiomatisch loggen voor productie-grade Rust",
-  "banner": "https://cloudcdn.pro/stocks/images/rustlogs.webp",
-  "language": "nl-NL",
-  "keywords": "RustLogs, Rust, logging, observability, open source"
+  "date": "March 08, 2024",
+  "banner_alt": "Banner van RustLogs",
+  "title": "RustLogs: geavanceerde logging-bibliotheek voor Rust-toepassingen"
 }
