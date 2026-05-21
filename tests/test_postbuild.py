@@ -640,7 +640,7 @@ def test_convert_faq_to_qa_rewrites_strong_q_a_pattern():
         '</div></main>'
     )
     out = _convert_faq_to_qa(html)
-    assert '<details class="qa-item">' in out
+    assert '<details class="qa-item" open>' in out
     assert '<summary class="qa-q">Q1: Is this hot?</summary>' in out
     assert '<summary class="qa-q">Q2: Anything else?</summary>' in out
     assert '<section class="qa-a"><p>Yes, very.</p></section>' in out

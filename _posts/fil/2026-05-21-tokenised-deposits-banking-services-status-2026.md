@@ -107,6 +107,8 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 
 Ang tokenized deposits ay nagiging pinakamahalagang sagot ng banking sector sa stablecoins pagdating sa digital money. Pinapanatili nito ang relasyon sa commercial bank deposit habang ino-enable ang programmability, digital wallets, atomic settlement, at tokenized asset workflows. Sinasabi ng Lloyds Banking Group na ang UK digital assets ay pumapasok na sa mainstream sa 2026 at binibigyang-diin ang tokenized deposits, digital gilts, at Great British Tokenised Deposits bilang aktibong industry initiatives ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
+Ang artikulong ito ay nakatuon sa wholesale, institutional, at corporate-treasury na layer — ang bahagi ng kuwento ng deposit-token kung saan ang mga pilots ay live na at ang mga bank product ay nabubuo na. Umiiral ang retail tokenized deposits bilang research track at sa loob ng retail wrapper ng HSBC Gold Token, ngunit ang 2026 inflection ay nangyayari sa transaction banking, hindi sa pang-araw-araw na consumer payments.
+
 ---
 
 > **Executive Summary / Mga Pangunahing Punto**
@@ -161,7 +163,7 @@ May tatlong programme na karapat-dapat na i-profile nang hiwalay: JPMorgan, na n
 
 ### JPMorgan: JPM Coin, Onyx, at ang Kinexys Platform
 
-Inilunsad ng JPMorgan ang JPM Coin noong 2019, apat na taon bago gumamit ang karamihan ng industriya ng pariralang "tokenized deposit" sa publiko. Tumatakbo ito sa Onyx (ngayon ay rebranded bilang Kinexys), permissioned blockchain platform ng JPMorgan, at nag-se-settle ito ng wholesale corporate-client flows — pangunahin ang institutional treasury sweeps, intra-day liquidity moves, at lalong maraming tokenized repo. Pagsapit ng 2026, pinangangasiwaan ng Kinexys ang humigit-kumulang $2 billion bawat araw sa wholesale transactions, na ginagawa ang JPMorgan na pinakamalaking single live operator ng deposit-token settlement sa mundo.
+Inilunsad ng JPMorgan ang JPM Coin noong 2019, apat na taon bago gumamit ang karamihan ng industriya ng pariralang "tokenized deposit" sa publiko. Tumatakbo ito sa **Kinexys by J.P. Morgan (formerly Onyx)**, permissioned blockchain platform ng JPMorgan, at nag-se-settle ito ng wholesale corporate-client flows — pangunahin ang institutional treasury sweeps, intra-day liquidity moves, at lalong maraming tokenized repo. Pagsapit ng 2026, pinangangasiwaan ng Kinexys ang humigit-kumulang $2 billion bawat araw sa wholesale transactions, na ginagawa ang JPMorgan na pinakamalaking single live operator ng deposit-token settlement sa mundo.
 
 Mahalaga ang kasaysayang iyon sa dalawang dahilan. Una, ang JPMorgan ay may pinakamahabang production track record sa mga operational questions — reconciliation, dispute handling, intra-day liquidity behaviour, at outage modes — na sinasaliksik pa ng iba pang bangko. Pangalawa, multi-asset ang platform: lumawak ang Kinexys lampas sa deposit token patungong tokenized repo, FX settlement, at collateral mobility, na nagbibigay-posisyon sa JPMorgan na maghatid ng delivery-versus-payment sa isang single ledger sa halip na sa pamamagitan ng point-to-point integrations.
 
@@ -199,7 +201,15 @@ Hindi tuluyang binalewala ng HSBC ang stablecoin track. Nakakuha ang bangko ng H
 
 ### Iba Pang Active Programmes
 
-Bukod sa JPMorgan at HSBC, may ilang programme na materyal sa network picture kahit na manipis ang kanilang public disclosures. Ang SG-FORGE ng Société Générale ay nag-isyu ng euro-denominated digital bonds at isang regulated euro stablecoin kasabay ng kanilang deposit-token work, na naglalagay sa Société Générale sa unusual na posisyon na nagpapatakbo ng dalawang track sa ilalim ng European regulation. Aktibong nag-uunlad ang Standard Chartered sa tokenized deposits at sa tokenized real-world assets sa pamamagitan ng Zodia Custody at sa sarili nitong Singapore-based pilots. Ang GS DAP platform ng Goldman Sachs ay nag-isyu ng digital bonds at sumusuporta sa tokenized collateral. Ang mas malawak na implikasyon ay tahasan: ang deposit-token capability ay ngayon ay basic requirement para sa anumang global wholesale bank na umaasang manatiling competitive sa transaction banking, at ang mas kawili-wiling tanong ay sino ang nag-interoperate sa sino sa halip na sino ang naunang nagtayo.
+Bukod sa JPMorgan at HSBC, may ilang programme na materyal sa network picture kahit na manipis ang kanilang mga public disclosure.
+
+**Société Générale (SG-FORGE).** Ang SG-FORGE ay nag-isyu ng euro-denominated digital bonds at ng regulated euro stablecoin na EURCV kasabay ng kanilang deposit-token work, at ang EURCV ay ang unang euro stablecoin na inisyu ng isang globally systemically important bank (G-SIB) na tumatakbo sa maraming public chain. Naglalagay ito sa Société Générale sa hindi pangkaraniwang posisyon ng pagpapatakbo ng dalawang track — tokenized-deposit at regulated-stablecoin — sa ilalim ng European banking regulation, kung saan ang EURCV ang nagsisilbing open-ecosystem reach layer at ang deposit-token side ang humahawak sa regulated-corporate perimeter.
+
+**Standard Chartered.** Ang Standard Chartered ay aktibong nag-uunlad sa tokenized deposits at sa tokenized real-world assets sa pamamagitan ng Zodia Custody (ang kanilang institutional digital-asset custody venture) at ng sariling Singapore-based pilots, kasama ang partisipasyon sa MAS Project Guardian para sa tokenized asset settlement. Ang strategic emphasis ay nasa emerging-markets corridors — Asia-Africa-Middle East — kung saan ang tokenized deposits ay napopositioned upang palitan ang correspondent-banking friction sa halip na basta i-upgrade lamang ang domestic UK o US rails.
+
+**Goldman Sachs (GS DAP).** Ang GS DAP digital-asset platform ay nag-isyu ng institutional digital bonds (kabilang ang €100m two-year digital bond ng European Investment Bank) at sumusuporta sa tokenized collateral mobility para sa repo at securities financing. Ang GS DAP ay hindi gaanong corporate-treasury proposition kundi mas isang tokenized-securities settlement platform — kapaki-pakinabang bilang counterpoint sa katulad na papel ng HSBC Orion at bilang ebidensya na ang digital-capital-markets side ng stack ay mas mabilis na nagko-consolidate kaysa sa deposit-token side.
+
+Ang mas malawak na implikasyon ay tahasan: ang deposit-token capability ay ngayon ay basic requirement para sa anumang global wholesale bank na umaasang manatiling competitive sa transaction banking, at ang mas kawili-wiling tanong ay sino ang nag-interoperate sa sino sa halip na sino ang naunang nagtayo.
 
 ## Tokenized Deposits vs Stablecoins vs CBDCs
 
@@ -268,19 +278,19 @@ Wala sa mga ito ang dahilan upang hindi magtayo ng tokenized deposits. Ito ay mg
 
 ### Global Banks
 
-Dapat tratuhin ng global banks ang tokenized deposits bilang transaction-banking infrastructure. Dapat na ang focus ay corporate wallets, cross-border treasury, digital asset settlement, collateral mobility, at programmable controls para sa malalaking kliyente.
+Dapat tratuhin ng global banks ang tokenized deposits bilang transaction-banking infrastructure. Dapat na ang focus ay corporate wallets, cross-border treasury, digital asset settlement, collateral mobility, at programmable controls para sa malalaking kliyente. Ang benchmark stacks ay nakikita na: production scale na kagaya ng Kinexys (JPMorgan), HSBC-style na multi-track breadth, GS DAP-style securities-settlement integration, at SG-FORGE-style na dual deposit-token-plus-regulated-stablecoin coverage. Ang decision point ngayong taon ay kung pagsasama-samahin ang maraming internal DLT experiment patungo sa isang tokenized-deposit platform para sa treasury clients bago tukuyin ng mga kakompetensya ang corporate wallet UX. **Action item:** maglagay ng isang programme owner na may authority sa buong transaction banking, capital markets, at digital-assets divisions — ang fragmented na internal sponsorship ang pinakakaraniwang dahilan kung bakit naiha-ship ang mga stack na ito bilang pilots sa halip na bilang mga produkto.
 
 ### UK Banks
 
-May credible early coordination opportunity ang UK banks sa pamamagitan ng Great British Tokenised Deposits. Ang hamon ay i-convert ang pilots sa interoperable standards bago maging default international interface ang stablecoin networks.
+May credible early coordination opportunity ang UK banks sa pamamagitan ng Great British Tokenised Deposits, at ang multi-bank pilot ay binabantayan globally bilang isang template para sa inter-bank tokenized-deposit interoperability. Ang hamon ay i-convert ang pilots sa interoperable standards bago maging default international interface ang stablecoin networks. **Action item:** patatagin ang marketplace-payments at remortgaging workflows sa operational-readiness sa 2026 (malinaw na SLAs, dispute handling, sanctions integration) sa halip na magpatakbo ng walang-katapusang proof-of-concept demos; ang credibility ng pilot ay nakadepende sa pag-ship ng kahit isang production-grade use case bago magsara ang mid-2026 window.
 
 ### Central Banks at Regulators
 
-Kailangang linawin ng regulators ang legal character, deposit insurance treatment, prudential capital, settlement finality, wallet custody, operational resilience, at kung paano nakikipag-ugnayan ang tokenized deposits sa stablecoins at CBDCs.
+Kailangang linawin ng regulators ang legal character, deposit insurance treatment, prudential capital, settlement finality, wallet custody, operational resilience, at kung paano nakikipag-ugnayan ang tokenized deposits sa stablecoins at CBDCs. **Action item:** maglathala ng konkretong gabay sa hybrid case — deposit-backed stablecoins at bank-issued tokenized deposits na tumatakbo sa parehong ledger — dahil iyan ang estrukturang sinusundan ng karamihan sa mga bangko, at ang kasalukuyang regulatory text ay nababasa na para bang ang dalawang kategoryang ito ay hindi nagkikita.
 
 ### Corporates
 
-Hindi dapat maghintay ang corporates ng universal network. Dapat na nilang simulan ang pag-mapa ng use cases kung saan ang programmable bank money ay maaaring magpababa ng fraud, settlement delay, reconciliation work, o trapped liquidity.
+Hindi dapat maghintay ang corporates ng universal network. Dapat na nilang simulan ang pag-mapa ng use cases kung saan ang programmable bank money ay maaaring magpababa ng fraud, settlement delay, reconciliation work, o trapped liquidity. **Action item:** mag-pilot ng isang konkretong flow na may mga measurable na KPIs — cross-border liquidity sweeps, intra-day collateral mobility, o DvP para sa tokenized gilts ang tatlong pinakamatalas na kandidato — at i-instrument ito habang isinasaisip ang failure-mode questions (ano ang mangyayari kapag nag-pause ang smart contract; paano kikilos ang tokenized leg sa stress scenario kumpara sa conventional leg).
 
 ## Konklusyon
 
@@ -290,23 +300,23 @@ Ang tokenized deposits sa 2026 ay nasa parehong puwesto kung saan naroon ang rea
 
 **Pareho ba ang tokenized deposits at stablecoins?**
 
-Hindi. Ang tokenized deposits ay dapat kumatawan sa commercial bank deposit money, samantalang ang stablecoins ay karaniwang inilalabas laban sa reserve structure at hindi nagse-settle sa central bank balance sheet sa parehong paraan na ginagawa ng bank payments ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+Hindi. Pareho silang nag-aalok ng programmable, 24/7 digital money, ngunit gumagamit sila ng ganap na magkaibang legal at claim structures. Ang stablecoin ay isang claim sa reserve asset o corporate structure ng isang private issuer, na tumatakbo sa labas ng balance sheet ng central bank ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Ang tokenized deposit ay isang direktang commercial bank liability na nagmamana ng umiiral na banking regulation, AML/sanctions controls, at deposit-insurance perimeter ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 
 **Ano ang mga nangungunang use cases sa UK?**
 
-Tinukoy ng Lloyds ang marketplace payments, remortgaging, at digital asset settlement bilang use cases para sa Great British Tokenised Deposits ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
+Ang mid-2026 UK multi-bank pilot (HSBC, Lloyds, NatWest, Barclays, Nationwide, at Santander) ay nakatuon sa tatlong praktikal na lugar: person-to-person marketplace payments upang bawasan ang fraud, automated multi-party workflows para sa remortgaging, at delivery-versus-payment (DvP) na digital-asset settlement — pag-match ng tokenized cash laban sa tokenized sovereign gilts sa UK Digital Gilt Instrument (DIGIT) pilot ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
 **Papalitan ba ng tokenized deposits ang stablecoins?**
 
-Hindi nang buo. Malamang na mananatiling mahalaga ang stablecoins sa crypto-native at dollar-liquidity use cases. Mas malamang na mangingibabaw ang tokenized deposits sa mga regulated bank-client workflows kung saan mahalaga ang commercial bank relationships, treasury controls, at prudential safeguards.
+Hindi malamang; mga complementary instruments sila na naglilingkod sa magkakaibang perimeters. Patuloy na mangingibabaw ang stablecoins sa open DeFi ecosystems, crypto-native liquidity pools, at retail cross-border savings sa mga volatile na fiat market. Mananalo ang tokenized deposits sa regulated perimeter — corporate treasury cash management, institutional trade settlement, at large-scale transaction banking — kung saan mahalaga ang deposit insurance, prudential capital treatment, at umiiral na AML controls.
 
-**Ano ang humahadlang sa scale?**
+**Ano ang humahadlang sa network-scale adoption?**
 
-Interoperability, legal finality, regulatory treatment, wallet standards, cross-bank governance, at integrasyon sa central bank money ang pangunahing mga hadlang. Ang teknolohiya ay isang bahagi lamang ng adoption problem.
+Handa na ang teknolohiya mismo. Hinahadlangan ang scale ng tatlong non-technical friction points: **interoperability** (mga fragmented DLT stack — Corda, Canton, Hyperledger Besu, HSBC Orion — na kasalukuyang umaakto bilang walled gardens); **legal finality** (walang pandaigdigang regulatory alignment sa conflict-of-laws o sa pag-aayos sa pagitan ng DLT immutability at obligasyon ng bangko na i-reverse ang mga transaksyon sa ilalim ng court order, sanctions, o operational error); at **yield economics** (hindi pa pinagkasunduan ng industriya kung magbabayad ang tokenized corporate wallets ng competitive overnight interest o kikilos bilang sterile transactional float).
 
 **Aling bangko ang may pinaka-developed na tokenized-deposit stack?**
 
-HSBC. Live ang HSBC Tokenised Deposit Service sa Hong Kong, Singapore, United Kingdom, Luxembourg, at United States sa USD, GBP, EUR, HKD, at SGD; itinalaga ang HSBC Orion bilang infrastructure para sa pilot ng UK Digital Gilt Instrument (DIGIT); ti-tokenize ng HSBC Gold Token ang inilaang pisikal na bullion; at sinubukan ng HSBC ang cross-network atomic settlement (Canton, Project Ensemble) at post-quantum cryptographic security kasama ang Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+Naghahati ang korona. Ang JPMorgan ang walang-pagsalang nangunguna sa production volume, na ang Kinexys by J.P. Morgan (formerly Onyx) ay nagpoproseso sa antas na humigit-kumulang $2 billion bawat araw sa wholesale corporate transactions ([JPMorgan](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan")). May pinaka-structurally diverse na multi-track stack ang HSBC: ang HSBC Tokenised Deposit Service sa Hong Kong, Singapore, UK, Luxembourg, at US sa USD/GBP/EUR/HKD/SGD; ang HSBC Orion bilang itinalagang imprastraktura para sa UK Digital Gilt Instrument (DIGIT) pilot; ang HSBC Gold Token na nagto-tokenize ng inilaang physical bullion; kasama ang cross-network atomic settlement na sinubukan sa Canton at Project Ensemble at post-quantum cryptographic security na ipinatupad kasama ang Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). Ang UK multi-bank pilot ay ang pinaka-credible na live test ng inter-bank interoperability.
 
 ## Mga Sanggunian
 

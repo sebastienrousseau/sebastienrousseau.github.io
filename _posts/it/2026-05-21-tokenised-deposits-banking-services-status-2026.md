@@ -104,6 +104,8 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 
 I depositi tokenizzati stanno diventando la risposta più importante del settore bancario, in materia di moneta digitale, agli stablecoins. Preservano la relazione di deposito presso la banca commerciale, abilitando al contempo programmabilità, portafogli digitali, regolamento atomico e flussi di lavoro su asset tokenizzati. Lloyds Banking Group afferma che gli asset digitali nel Regno Unito stanno entrando nel mainstream nel 2026 ed evidenzia i depositi tokenizzati, i gilt digitali e i Great British Tokenised Deposits come iniziative di settore attive ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
+Questo pezzo è circoscritto al livello wholesale, istituzionale e di tesoreria corporate — la parte della storia del deposit token in cui i pilota sono live e i prodotti bancari stanno prendendo forma. I depositi tokenizzati retail esistono come filone di ricerca e all'interno dell'involucro retail HSBC Gold Token, ma l'inflessione del 2026 sta avvenendo nel transaction banking, non nei pagamenti consumer quotidiani.
+
 ---
 
 > **Sintesi esecutiva / Punti chiave**
@@ -158,7 +160,7 @@ Tre programmi meritano un profilo a sé: JPMorgan, che ha inaugurato la categori
 
 ### JPMorgan: JPM Coin, Onyx e la piattaforma Kinexys
 
-JPMorgan ha lanciato JPM Coin nel 2019, quattro anni prima che la maggior parte del settore usasse pubblicamente l'espressione «deposito tokenizzato». Gira su Onyx (oggi ribattezzata Kinexys), la piattaforma blockchain permissionata di JPMorgan, e regola i flussi wholesale dei clienti corporate — soprattutto sweep di tesoreria istituzionale, movimenti intraday di liquidità e, sempre più, repo tokenizzato. Nel 2026 Kinexys gestisce dell'ordine di 2 miliardi di dollari al giorno in transazioni wholesale, il che rende JPMorgan il maggiore operatore live di regolamento di deposit token al mondo.
+JPMorgan ha lanciato JPM Coin nel 2019, quattro anni prima che la maggior parte del settore usasse pubblicamente l'espressione «deposito tokenizzato». Gira su **Kinexys by J.P. Morgan (formerly Onyx)**, la piattaforma blockchain permissionata di JPMorgan, e regola i flussi wholesale dei clienti corporate — soprattutto sweep di tesoreria istituzionale, movimenti intraday di liquidità e, sempre più, repo tokenizzato. Nel 2026 Kinexys gestisce dell'ordine di 2 miliardi di dollari al giorno in transazioni wholesale, il che rende JPMorgan il maggiore operatore live di regolamento di deposit token al mondo.
 
 Questa storia conta per due motivi. Primo, JPMorgan vanta il più lungo track record produttivo sulle questioni operative — riconciliazione, gestione delle dispute, comportamento di liquidità intraday e modalità di guasto — che le altre banche stanno ancora progettando. Secondo, la piattaforma è multi-asset: Kinexys si è estesa oltre il deposit token verso repo tokenizzato, regolamento FX e mobilità del collaterale, posizionando JPMorgan per fornire delivery-versus-payment su un singolo registro anziché tramite integrazioni punto-a-punto.
 
@@ -196,7 +198,15 @@ HSBC non ha ignorato del tutto la traiettoria degli stablecoins. La banca ha ott
 
 ### Altri programmi attivi
 
-Oltre a JPMorgan e HSBC, diversi programmi sono materiali per la fotografia di rete anche se la comunicazione pubblica è più sottile. SG-FORGE di Société Générale ha emesso bond digitali denominati in euro e uno stablecoin euro regolamentato in parallelo al lavoro sui deposit token, ponendo Société Générale nell'inusuale posizione di gestire entrambi i binari sotto regolamentazione europea. Standard Chartered è attivo sia sui depositi tokenizzati sia sugli asset reali tokenizzati tramite Zodia Custody e i propri pilota basati a Singapore. La piattaforma GS DAP di Goldman Sachs ha emesso bond digitali e supporta collaterale tokenizzato. L'implicazione più ampia è semplice: la capacità di deposit token è ormai un requisito di base per qualsiasi banca wholesale globale che intenda restare competitiva nel transaction banking, e la domanda più interessante è chi interopera con chi piuttosto che chi costruisce per primo.
+Oltre a JPMorgan e HSBC, diversi programmi sono materiali per la fotografia di rete anche se la comunicazione pubblica è più sottile.
+
+**Société Générale (SG-FORGE).** SG-FORGE ha emesso bond digitali denominati in euro ed EURCV, lo stablecoin euro regolamentato, in parallelo al lavoro sui deposit token, ed EURCV è il primo stablecoin euro emesso da una banca a rilevanza sistemica globale a operare su più catene pubbliche. Ciò pone Société Générale nell'insolita posizione di gestire sia il binario del deposit token sia quello dello stablecoin regolamentato sotto regolamentazione bancaria europea, con EURCV posizionato come livello di portata in ecosistema aperto e il lato deposit token che presidia il perimetro corporate regolamentato.
+
+**Standard Chartered.** Standard Chartered è attivo sui depositi tokenizzati e sugli asset reali tokenizzati tramite Zodia Custody (la sua iniziativa di custodia istituzionale di asset digitali) e i propri pilota basati a Singapore, inclusa la partecipazione a MAS Project Guardian per il regolamento di asset tokenizzati. L'enfasi strategica è sui corridoi dei mercati emergenti — Asia-Africa-Medio Oriente — dove i depositi tokenizzati sono posizionati per scalzare la frizione della corrispondenza bancaria, anziché limitarsi a migliorare i binari domestici britannici o statunitensi.
+
+**Goldman Sachs (GS DAP).** La piattaforma di asset digitali GS DAP ha emesso bond digitali istituzionali (incluso il bond digitale biennale da 100 milioni di euro della European Investment Bank) e supporta la mobilità di collaterale tokenizzato per repo e finanziamento titoli. GS DAP è meno una proposta di tesoreria corporate quanto una piattaforma di regolamento di titoli tokenizzati — utile come contraltare al ruolo analogo di HSBC Orion e come prova che il lato mercati di capitali digitali dello stack si sta consolidando più velocemente del lato deposit token.
+
+L'implicazione più ampia è semplice: la capacità di deposit token è ormai un requisito di base per qualsiasi banca wholesale globale che intenda restare competitiva nel transaction banking, e la domanda più interessante è chi interopera con chi piuttosto che chi costruisce per primo.
 
 ## Depositi tokenizzati vs stablecoins vs CBDC
 
@@ -265,19 +275,19 @@ Nessuno di questi punti è una ragione per non costruire depositi tokenizzati. S
 
 ### Banche globali
 
-Le banche globali dovrebbero trattare i depositi tokenizzati come infrastruttura di transaction banking. L'attenzione dovrebbe essere su portafogli aziendali, tesoreria transfrontaliera, regolamento di asset digitali, mobilità del collaterale e controlli programmabili per grandi clienti.
+Le banche globali dovrebbero trattare i depositi tokenizzati come infrastruttura di transaction banking. L'attenzione dovrebbe essere su portafogli aziendali, tesoreria transfrontaliera, regolamento di asset digitali, mobilità del collaterale e controlli programmabili per grandi clienti. Gli stack di riferimento sono ora visibili: scala di produzione tipo Kinexys (JPMorgan), ampiezza multipista tipo HSBC, integrazione regolamento titoli tipo GS DAP e copertura duale deposit-token-più-stablecoin-regolato tipo SG-FORGE. Il punto decisionale di quest'anno è se far convergere più sperimentazioni DLT interne su un'unica piattaforma di depositi tokenizzati per i clienti di tesoreria prima che i concorrenti definiscano l'UX del wallet corporate. **Action item:** designare un singolo program owner con autorità trasversale a transaction banking, capital markets e divisioni digital assets — la sponsorship interna frammentata è il motivo più comune per cui questi stack escono come pilota anziché come prodotto.
 
 ### Banche del Regno Unito
 
-Le banche del Regno Unito hanno una credibile opportunità di coordinamento anticipato tramite i Great British Tokenised Deposits. La sfida è trasformare i progetti pilota in standard interoperabili prima che le reti di stablecoins diventino l'interfaccia internazionale di default.
+Le banche del Regno Unito hanno una credibile opportunità di coordinamento anticipato tramite i Great British Tokenised Deposits, e il pilota multibancario è osservato a livello globale come modello di interoperabilità interbancaria dei depositi tokenizzati. La sfida è trasformare i progetti pilota in standard interoperabili prima che le reti di stablecoins diventino l'interfaccia internazionale di default. **Action item:** irrobustire i flussi di pagamenti su marketplace e rifinanziamento mutui fino al livello di prontezza operativa nel 2026 (SLA chiari, gestione delle dispute, integrazione delle sanzioni) anziché protrarre indefinitamente demo proof-of-concept; la credibilità del pilota dipende dal rilascio di almeno un caso d'uso di grado produttivo prima della chiusura della finestra di metà 2026.
 
 ### Banche centrali e regolatori
 
-I regolatori devono chiarire il carattere giuridico, il trattamento dell'assicurazione sui depositi, il capitale prudenziale, la finalità del regolamento, la custodia dei portafogli, la resilienza operativa e il modo in cui i depositi tokenizzati interagiscono con stablecoins e CBDC.
+I regolatori devono chiarire il carattere giuridico, il trattamento dell'assicurazione sui depositi, il capitale prudenziale, la finalità del regolamento, la custodia dei portafogli, la resilienza operativa e il modo in cui i depositi tokenizzati interagiscono con stablecoins e CBDC. **Action item:** pubblicare linee guida concrete sul caso ibrido — stablecoins coperti da depositi e depositi tokenizzati emessi da banche operanti sullo stesso registro — perché è la struttura verso cui sta convergendo la maggioranza delle banche, mentre il testo regolatorio attuale si legge come se quelle due categorie non si incontrassero mai.
 
 ### Aziende
 
-Le aziende non dovrebbero aspettare una rete universale. Dovrebbero iniziare a mappare i casi d'uso in cui la moneta bancaria programmabile potrebbe ridurre frodi, ritardi nei regolamenti, lavoro di riconciliazione o liquidità bloccata.
+Le aziende non dovrebbero aspettare una rete universale. Dovrebbero iniziare a mappare i casi d'uso in cui la moneta bancaria programmabile potrebbe ridurre frodi, ritardi nei regolamenti, lavoro di riconciliazione o liquidità bloccata. **Action item:** pilotare un singolo flusso concreto con KPI misurabili — sweep di liquidità transfrontalieri, mobilità intraday del collaterale o DvP per gilt tokenizzati sono i tre candidati a maggior segnale — e strumentarlo tenendo presente le domande sui modi di guasto (cosa succede quando lo smart contract si mette in pausa; come si comporta la gamba tokenizzata in uno scenario di stress rispetto alla gamba convenzionale).
 
 ## Conclusioni
 
@@ -287,23 +297,23 @@ I depositi tokenizzati nel 2026 sono dove erano i pagamenti in tempo reale dieci
 
 **I depositi tokenizzati sono uguali agli stablecoins?**
 
-No. I depositi tokenizzati sono destinati a rappresentare moneta di deposito presso banca commerciale, mentre gli stablecoins sono solitamente emessi contro una struttura di riserva e non regolano su un bilancio di banca centrale nello stesso modo in cui lo fanno i pagamenti bancari ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+No. Entrambi offrono moneta digitale programmabile, disponibile 24/7, ma poggiano su strutture giuridiche e di pretesa completamente diverse. Uno stablecoin è una pretesa sull'attività di riserva o sulla struttura societaria di un emittente privato, operante al di fuori del bilancio della banca centrale ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Un deposito tokenizzato è una passività diretta di banca commerciale che eredita la regolamentazione bancaria esistente, i controlli AML/sanzioni e il perimetro dell'assicurazione sui depositi ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 
 **Quali sono i principali casi d'uso nel Regno Unito?**
 
-Lloyds individua i pagamenti su marketplace, il rifinanziamento dei mutui e il regolamento di asset digitali come casi d'uso per i Great British Tokenised Deposits ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
+Il pilota multibancario britannico di metà 2026 (HSBC, Lloyds, NatWest, Barclays, Nationwide e Santander) si concentra su tre aree pratiche: pagamenti peer-to-peer su marketplace per ridurre le frodi, flussi multiparte automatizzati per il rifinanziamento dei mutui e regolamento DvP (delivery-versus-payment) di asset digitali — abbinando cash tokenizzato a gilt sovrani tokenizzati nel pilota UK Digital Gilt Instrument (DIGIT) ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
 **I depositi tokenizzati sostituiranno gli stablecoins?**
 
-Non del tutto. Gli stablecoins resteranno probabilmente importanti nei casi d'uso cripto-nativi e di liquidità in dollari. I depositi tokenizzati hanno maggiori probabilità di dominare i flussi regolamentati banca-cliente in cui contano le relazioni di banca commerciale, i controlli di tesoreria e le tutele prudenziali.
+Improbabile; sono strumenti complementari che servono perimetri diversi. Gli stablecoins continueranno a dominare gli ecosistemi DeFi aperti, le pool di liquidità cripto-native e il risparmio retail cross-border in mercati fiat volatili. I depositi tokenizzati vinceranno il perimetro regolato — cash management di tesoreria corporate, regolamento di operazioni istituzionali e transaction banking su larga scala — dove contano l'assicurazione sui depositi, il trattamento prudenziale del capitale e i controlli AML esistenti.
 
-**Cosa blocca la scala?**
+**Cosa blocca l'adozione su scala di rete?**
 
-Interoperabilità, finalità giuridica, trattamento regolamentare, standard sui portafogli, governance interbancaria e integrazione con la moneta di banca centrale sono i principali ostacoli. La tecnologia è solo una parte del problema di adozione.
+La tecnologia in sé è pronta. La scala è bloccata da tre frizioni non tecniche: **interoperabilità** (stack DLT frammentati — Corda, Canton, Hyperledger Besu, HSBC Orion — che oggi si comportano da walled garden); **finalità giuridica** (assenza di allineamento regolatorio globale sul conflitto di leggi o su come conciliare l'immutabilità DLT con l'obbligo della banca di invertire le transazioni per ordine del tribunale, sanzioni o errore operativo); ed **economia del rendimento** (l'industria non ha standardizzato se i wallet corporate tokenizzati paghino interessi overnight competitivi o si comportino come float transazionale sterile).
 
 **Quale banca ha lo stack di depositi tokenizzati più sviluppato?**
 
-HSBC. Lo HSBC Tokenised Deposit Service è in produzione a Hong Kong, Singapore, nel Regno Unito, in Lussemburgo e negli Stati Uniti in USD, GBP, EUR, HKD e SGD; HSBC Orion è l'infrastruttura designata per il pilota britannico del Digital Gilt Instrument (DIGIT); l'HSBC Gold Token tokenizza lingotti fisici allocati; e HSBC ha sperimentato il regolamento atomico inter-rete (Canton, Project Ensemble) e la sicurezza crittografica post-quantum con Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+Una corona divisa. JPMorgan è il leader indiscusso per volume di produzione, con Kinexys by J.P. Morgan (formerly Onyx) che elabora dell'ordine di 2 miliardi di dollari al giorno in transazioni corporate wholesale ([JPMorgan](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan")). HSBC ha lo stack multipista strutturalmente più diversificato: lo HSBC Tokenised Deposit Service a Hong Kong, Singapore, nel Regno Unito, in Lussemburgo e negli Stati Uniti in USD/GBP/EUR/HKD/SGD; HSBC Orion come infrastruttura designata per il pilota UK Digital Gilt Instrument (DIGIT); l'HSBC Gold Token che tokenizza lingotti fisici allocati; oltre al regolamento atomico inter-rete sperimentato su Canton e Project Ensemble e alla sicurezza crittografica post-quantum implementata con Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). Il pilota multibancario britannico è il test live più credibile di interoperabilità interbancaria.
 
 ## Riferimenti
 

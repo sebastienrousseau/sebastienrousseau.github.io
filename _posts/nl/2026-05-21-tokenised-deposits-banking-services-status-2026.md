@@ -104,6 +104,8 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 
 Getokeniseerde deposito's worden het belangrijkste antwoord van de banksector op stablecoins in het domein van digitaal geld. Ze behouden de depositorelatie met de commerciële bank en maken tegelijkertijd programmeerbaarheid, digitale wallets, atomaire afwikkeling en workflows voor getokeniseerde activa mogelijk. Lloyds Banking Group stelt dat digitale activa in het Verenigd Koninkrijk in 2026 mainstream worden en wijst getokeniseerde deposito's, digitale gilts en de Great British Tokenised Deposits aan als actieve sectorinitiatieven ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
+Dit stuk is afgebakend tot de wholesale-, institutionele en corporate-treasury-laag — het deel van het deposit-token-verhaal waar pilots live zijn en bancaire producten zich vormen. Retail getokeniseerde deposito's bestaan als onderzoekslijn en binnen de retailomhulling van de HSBC Gold Token, maar de inflectie van 2026 vindt plaats in transaction banking, niet in de dagelijkse betalingen aan consumenten.
+
 ---
 
 > **Executive summary / Belangrijkste inzichten**
@@ -158,7 +160,7 @@ Drie programma's verdienen een eigen profiel: JPMorgan, dat de wholesale-deposit
 
 ### JPMorgan: JPM Coin, Onyx en het Kinexys-platform
 
-JPMorgan lanceerde JPM Coin in 2019, vier jaar voordat de meeste sectorpartijen de uitdrukking «getokeniseerd deposito» publiekelijk gebruikten. Het draait op Onyx (nu omgedoopt tot Kinexys), het permissioned blockchain-platform van JPMorgan, en wikkelt wholesale corporate-cliëntstromen af — vooral institutionele treasury-sweeps, intradayse liquiditeitsbewegingen en in toenemende mate getokeniseerde repo. In 2026 verwerkt Kinexys orde van 2 miljard dollar per dag in wholesale-transacties, wat JPMorgan tot 's werelds grootste live-operator van deposit-token-afwikkeling maakt.
+JPMorgan lanceerde JPM Coin in 2019, vier jaar voordat de meeste sectorpartijen de uitdrukking «getokeniseerd deposito» publiekelijk gebruikten. Het draait op **Kinexys by J.P. Morgan (formerly Onyx)**, het permissioned blockchain-platform van JPMorgan, en wikkelt wholesale corporate-cliëntstromen af — vooral institutionele treasury-sweeps, intradayse liquiditeitsbewegingen en in toenemende mate getokeniseerde repo. In 2026 verwerkt Kinexys orde van 2 miljard dollar per dag in wholesale-transacties, wat JPMorgan tot 's werelds grootste live-operator van deposit-token-afwikkeling maakt.
 
 Die geschiedenis is om twee redenen belangrijk. Eerst beschikt JPMorgan over de langste productiehistorie inzake operationele vraagstukken — reconciliatie, geschillenafhandeling, intradayse liquiditeitsgedrag en uitvalmodi — waar andere banken nog aan ontwerpen. Ten tweede is het platform multi-asset: Kinexys heeft zich verbreed van de deposit token naar getokeniseerde repo, FX-settlement en collateralmobiliteit, waardoor JPMorgan delivery-versus-payment op één ledger kan leveren in plaats van via punt-tot-punt-integraties.
 
@@ -196,7 +198,15 @@ HSBC heeft het stablecoin-spoor niet volledig genegeerd. De bank heeft een HKMA-
 
 ### Andere actieve programma's
 
-Naast JPMorgan en HSBC zijn meerdere programma's materieel voor het netwerkplaatje, ook al is hun publieke communicatie dunner. Société Générale's SG-FORGE heeft euro-genoteerde digitale obligaties en een gereguleerde euro-stablecoin uitgegeven naast het deposit-token-werk, wat Société Générale in de ongebruikelijke positie plaatst beide trajecten onder Europese regulering te draaien. Standard Chartered is zowel actief op getokeniseerde deposito's als op getokeniseerde real-world assets via Zodia Custody en eigen Singapore-gebaseerde pilots. Het GS DAP-platform van Goldman Sachs heeft digitale obligaties uitgegeven en ondersteunt getokeniseerd onderpand. De bredere implicatie is rechttoe rechtaan: deposit-token-capaciteit is inmiddels een basisvereiste voor elke wereldwijde wholesale-bank die competitief wil blijven in transaction banking, en de interessantere vraag is wie met wie interopereert in plaats van wie er als eerste bouwt.
+Naast JPMorgan en HSBC zijn meerdere programma's materieel voor het netwerkplaatje, ook al is hun publieke communicatie dunner.
+
+**Société Générale (SG-FORGE).** SG-FORGE heeft euro-genoteerde digitale obligaties en EURCV, de gereguleerde euro-stablecoin, uitgegeven naast het deposit-token-werk, en EURCV is de eerste euro-stablecoin uitgegeven door een mondiaal systeemrelevante bank die op meerdere publieke chains opereert. Dat plaatst Société Générale in de ongebruikelijke positie zowel het deposit-token- als het gereguleerde-stablecoin-spoor onder Europese bankregulering te draaien, waarbij EURCV is gepositioneerd als bereikslag voor open ecosystemen en het deposit-token-spoor het gereguleerde corporate-perimeter bedient.
+
+**Standard Chartered.** Standard Chartered is actief op getokeniseerde deposito's en op getokeniseerde real-world assets via Zodia Custody (zijn institutionele joint venture voor bewaarneming van digitale activa) en eigen Singapore-gebaseerde pilots, waaronder deelname aan MAS Project Guardian voor afwikkeling van getokeniseerde activa. De strategische nadruk ligt op de corridors van opkomende markten — Azië-Afrika-Midden-Oosten — waar getokeniseerde deposito's gepositioneerd zijn om de wrijving van correspondentbankieren te verdringen, in plaats van enkel de binnenlandse Britse of Amerikaanse rails op te waarderen.
+
+**Goldman Sachs (GS DAP).** Het GS DAP-platform voor digitale activa heeft institutionele digitale obligaties uitgegeven (waaronder de tweejarige digitale obligatie van €100 miljoen van de European Investment Bank) en ondersteunt getokeniseerde onderpandmobiliteit voor repo en effectenfinanciering. GS DAP is minder een corporate-treasury-propositie dan een afwikkelingsplatform voor getokeniseerde effecten — nuttig als tegenwicht voor de vergelijkbare rol van HSBC Orion en als bewijs dat de digitale-kapitaalmarkten-zijde van de stack sneller consolideert dan de deposit-token-zijde.
+
+De bredere implicatie is rechttoe rechtaan: deposit-token-capaciteit is inmiddels een basisvereiste voor elke wereldwijde wholesale-bank die competitief wil blijven in transaction banking, en de interessantere vraag is wie met wie interopereert in plaats van wie er als eerste bouwt.
 
 ## Getokeniseerde deposito's vs stablecoins vs CBDC
 
@@ -265,19 +275,19 @@ Geen van deze punten is een reden om geen getokeniseerde deposito's te bouwen. H
 
 ### Mondiale banken
 
-Mondiale banken moeten getokeniseerde deposito's behandelen als infrastructuur voor transaction banking. De focus moet liggen op bedrijfswallets, grensoverschrijdende treasury, afwikkeling van digitale activa, mobiliteit van onderpand en programmeerbare controles voor grote klanten.
+Mondiale banken moeten getokeniseerde deposito's behandelen als infrastructuur voor transaction banking. De focus moet liggen op bedrijfswallets, grensoverschrijdende treasury, afwikkeling van digitale activa, mobiliteit van onderpand en programmeerbare controles voor grote klanten. De benchmarkstacks zijn nu zichtbaar: Kinexys-achtige productieschaal (JPMorgan), HSBC-achtige multi-track-breedte, GS-DAP-achtige integratie van effectenafwikkeling en SG-FORGE-achtige dubbele dekking van deposit-token-plus-gereguleerde-stablecoin. Het beslispunt van dit jaar is of meerdere interne DLT-experimenten gebundeld moeten worden op één platform voor getokeniseerde deposito's voor treasury-klanten voordat concurrenten de UX van de corporate wallet definiëren. **Action item:** wijs één programma-eigenaar aan met autoriteit over transaction banking, capital markets en digital-assets-divisies heen — versnipperde interne sponsoring is de meest voorkomende reden waarom deze stacks als pilot in plaats van als product worden geleverd.
 
 ### Britse banken
 
-Britse banken hebben via de Great British Tokenised Deposits een geloofwaardige kans op vroege coördinatie. De uitdaging is pilots om te zetten in interoperabele standaarden voordat stablecoin-netwerken de standaard internationale interface worden.
+Britse banken hebben via de Great British Tokenised Deposits een geloofwaardige kans op vroege coördinatie, en de multi-bank-pilot wordt wereldwijd gevolgd als sjabloon voor interbancaire interoperabiliteit van getokeniseerde deposito's. De uitdaging is pilots om te zetten in interoperabele standaarden voordat stablecoin-netwerken de standaard internationale interface worden. **Action item:** maak de workflows voor marktplaatsbetalingen en hypotheekherfinanciering in 2026 operationeel gereed (duidelijke SLA's, geschillenafhandeling, sanctie-integratie) in plaats van onbepaald proof-of-concept-demonstraties te draaien; de geloofwaardigheid van de pilot hangt af van het leveren van ten minste één productieklare use case voordat het venster van medio 2026 sluit.
 
 ### Centrale banken en toezichthouders
 
-Toezichthouders moeten het juridische karakter, de behandeling van depositoverzekering, prudentieel kapitaal, afwikkelingsfinaliteit, walletbewaarneming, operationele weerbaarheid en de interactie van getokeniseerde deposito's met stablecoins en CBDC verduidelijken.
+Toezichthouders moeten het juridische karakter, de behandeling van depositoverzekering, prudentieel kapitaal, afwikkelingsfinaliteit, walletbewaarneming, operationele weerbaarheid en de interactie van getokeniseerde deposito's met stablecoins en CBDC verduidelijken. **Action item:** publiceer concrete richtsnoeren voor het hybride geval — depositogedekte stablecoins en door banken uitgegeven getokeniseerde deposito's die op hetzelfde grootboek opereren — omdat dit de structuur is waarnaar de meeste banken convergeren, terwijl de huidige regulatoire tekst leest alsof die twee categorieën elkaar nooit ontmoeten.
 
 ### Bedrijven
 
-Bedrijven moeten niet wachten op een universeel netwerk. Ze zouden moeten beginnen met het in kaart brengen van use cases waarin programmeerbaar bankgeld fraude, afwikkelingsvertraging, reconciliatiewerk of vastzittende liquiditeit kan verminderen.
+Bedrijven moeten niet wachten op een universeel netwerk. Ze zouden moeten beginnen met het in kaart brengen van use cases waarin programmeerbaar bankgeld fraude, afwikkelingsvertraging, reconciliatiewerk of vastzittende liquiditeit kan verminderen. **Action item:** pilot één concrete flow met meetbare KPI's — grensoverschrijdende liquiditeits-sweeps, intradaagse onderpandmobiliteit of DvP voor getokeniseerde gilts zijn de drie kandidaten met het hoogste signaal — en instrumenteer deze met de vragen rond faalmodi in gedachten (wat gebeurt er als het smart contract pauzeert; hoe gedraagt de getokeniseerde leg zich in een stress-scenario ten opzichte van de conventionele leg).
 
 ## Conclusie
 
@@ -287,23 +297,23 @@ Getokeniseerde deposito's staan in 2026 waar realtime betalingen een decennium g
 
 **Zijn getokeniseerde deposito's hetzelfde als stablecoins?**
 
-Nee. Getokeniseerde deposito's zijn bedoeld om geld in deposito bij een commerciële bank te representeren, terwijl stablecoins doorgaans worden uitgegeven tegen een reservestructuur en niet op dezelfde wijze op de balans van een centrale bank afwikkelen als bancaire betalingen ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+Nee. Beide bieden programmeerbaar, 24/7 beschikbaar digitaal geld, maar gebruiken volledig verschillende juridische en aanspraakstructuren. Een stablecoin is een aanspraak op het reserveactief of de bedrijfsstructuur van een private uitgever, die buiten de balans van de centrale bank opereert ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Een getokeniseerd deposito is een directe verplichting van de commerciële bank die de bestaande bankregelgeving, AML/sanctiecontroles en het perimeter van depositoverzekering erft ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 
 **Wat zijn de belangrijkste Britse use cases?**
 
-Lloyds identificeert marktplaatsbetalingen, hypotheekherfinanciering en afwikkeling van digitale activa als use cases voor de Great British Tokenised Deposits ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
+De Britse multi-bank-pilot van medio 2026 (HSBC, Lloyds, NatWest, Barclays, Nationwide en Santander) richt zich op drie praktische gebieden: peer-to-peer marktplaatsbetalingen om fraude te reduceren, geautomatiseerde meerpartijenworkflows voor hypotheekherfinanciering en delivery-versus-payment (DvP) afwikkeling van digitale activa — het matchen van getokeniseerd geld tegen getokeniseerde soevereine gilts in de UK Digital Gilt Instrument (DIGIT)-pilot ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
 **Zullen getokeniseerde deposito's stablecoins vervangen?**
 
-Niet volledig. Stablecoins zullen waarschijnlijk belangrijk blijven in crypto-native en dollarliquiditeitsgebruik. Getokeniseerde deposito's domineren naar verwachting eerder de gereguleerde bank-klantworkflows waarin de relatie met de commerciële bank, treasurycontroles en prudentiële waarborgen ertoe doen.
+Onwaarschijnlijk; het zijn complementaire instrumenten die verschillende perimeters bedienen. Stablecoins zullen open DeFi-ecosystemen, crypto-native liquiditeitspools en grensoverschrijdend retail-sparen in volatiele fiat-markten blijven domineren. Getokeniseerde deposito's zullen het gereguleerde perimeter winnen — corporate-treasury cash management, institutionele transactieafwikkeling en grootschalig transaction banking — waar depositoverzekering, prudentiële kapitaalbehandeling en bestaande AML-controles ertoe doen.
 
-**Wat blokkeert opschaling?**
+**Wat blokkeert adoptie op netwerkschaal?**
 
-Interoperabiliteit, juridische finaliteit, regelgevende behandeling, walletstandaarden, governance tussen banken en integratie met centralebankgeld zijn de belangrijkste blokkades. Technologie is slechts één deel van het adoptievraagstuk.
+De technologie zelf is klaar. Schaal wordt geblokkeerd door drie niet-technische frictiepunten: **interoperabiliteit** (gefragmenteerde DLT-stacks — Corda, Canton, Hyperledger Besu, HSBC Orion — die momenteel als walled gardens fungeren); **juridische finaliteit** (geen wereldwijde regulatoire afstemming over conflict van wetten of over hoe DLT-immutabiliteit te verzoenen met de plicht van de bank om transacties terug te draaien op gerechtelijk bevel, sancties of operationele fout); en **yield-economie** (de industrie heeft niet gestandaardiseerd of getokeniseerde corporate wallets concurrerende overnight-rente betalen of zich gedragen als steriele transactionele float).
 
 **Welke bank heeft de meest ontwikkelde stack voor getokeniseerde deposito's?**
 
-HSBC. De HSBC Tokenised Deposit Service is in productie in Hongkong, Singapore, het Verenigd Koninkrijk, Luxemburg en de Verenigde Staten in USD, GBP, EUR, HKD en SGD; HSBC Orion is de aangewezen infrastructuur voor de Britse Digital Gilt Instrument (DIGIT)-pilot; de HSBC Gold Token tokeniseert toegewezen fysieke goudstaven; en HSBC heeft cross-netwerk atomaire afwikkeling (Canton, Project Ensemble) en post-quantum cryptografische beveiliging met Quantinuum beproefd ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+Een gedeelde kroon. JPMorgan is de onbetwiste leider in productievolume, met Kinexys by J.P. Morgan (formerly Onyx) dat de orde van 2 miljard dollar per dag aan wholesale corporate-transacties verwerkt ([JPMorgan](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan")). HSBC heeft de structureel meest diverse multi-track-stack: de HSBC Tokenised Deposit Service in Hongkong, Singapore, het Verenigd Koninkrijk, Luxemburg en de Verenigde Staten in USD/GBP/EUR/HKD/SGD; HSBC Orion als aangewezen infrastructuur voor de UK Digital Gilt Instrument (DIGIT)-pilot; de HSBC Gold Token die toegewezen fysieke goudstaven tokeniseert; aangevuld met cross-netwerk atomaire afwikkeling getest op Canton en Project Ensemble en post-quantum cryptografische beveiliging geïmplementeerd met Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). De Britse multi-bank-pilot is de meest geloofwaardige live test van interbancaire interoperabiliteit.
 
 ## Bronnen
 

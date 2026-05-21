@@ -104,6 +104,8 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 
 Tokenized deposits suna zama mafi muhimmancin amsa ta sashin banki ga stablecoins ta fuskar kuɗin dijital. Suna kiyaye dangantakar deposit na banki na kasuwanci tare da bayar da damar tsarawa (programmability), digital wallets, atomic settlement, da hanyoyin aiki na kadarori da aka tokenize. Lloyds Banking Group ya ce kadarorin dijital na Birtaniya suna shiga babbar hanya a 2026 kuma yana jaddada tokenized deposits, digital gilts, da Great British Tokenised Deposits a matsayin ayyukan masana'antu masu aiki ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
+Wannan rubutu ya maida hankali ne akan wholesale, institutional, da corporate-treasury layer — sashin labarin deposit-token inda pilots ke gudana kuma kayan banki ke fitowa. Tokenized deposits na retail suna nan a matsayin hanyar bincike kuma a cikin HSBC Gold Token retail wrapper, amma juyin 2026 yana faruwa a cikin transaction banking, ba a biyan kuɗi na yau da kullum na masu amfani ba.
+
 ---
 
 > **Taƙaitawar Manyan Jami'ai / Manyan Abubuwa**
@@ -158,7 +160,7 @@ Akwai shirye-shirye uku da suka cancanci a duba su daban: JPMorgan, wanda ya bud
 
 ### JPMorgan: JPM Coin, Onyx, da Dandalin Kinexys
 
-JPMorgan ya kaddamar da JPM Coin a 2019, shekara hudu kafin yawancin masana'antu su yi amfani da kalmar "tokenized deposit" a fili. Yana gudana a kan Onyx (yanzu da aka sake yi masa suna Kinexys), dandalin blockchain mai izini na JPMorgan, kuma yana warware kwararar wholesale corporate-client — musamman treasury sweeps na cibiyoyi, motsi na intra-day liquidity, kuma sannu a hankali tokenized repo. A shekarar 2026, Kinexys yana sarrafa kusan dala biliyan 2 a kowace rana a kasuwancin wholesale, wanda ke sa JPMorgan ya zama mafi girma live operator na settlement na deposit-token a duniya.
+JPMorgan ya kaddamar da JPM Coin a 2019, shekara hudu kafin yawancin masana'antu su yi amfani da kalmar "tokenized deposit" a fili. Yana gudana a kan **Kinexys by J.P. Morgan (formerly Onyx)**, dandalin blockchain mai izini na bankin, kuma yana warware kwararar wholesale corporate-client — musamman treasury sweeps na cibiyoyi, motsi na intra-day liquidity, kuma sannu a hankali tokenized repo. A shekarar 2026, Kinexys yana sarrafa kusan dala biliyan 2 a kowace rana a kasuwancin wholesale, wanda ke sa JPMorgan ya zama mafi girma live operator na settlement na deposit-token a duniya.
 
 Wannan tarihi yana da muhimmanci saboda dalilai biyu. Na farko, JPMorgan yana da mafi tsayi rikodin samarwa a kan tambayoyin aiki — reconciliation, sarrafa rikici, halayyar intra-day liquidity, da hanyoyin outage — wadanda sauran bankuna har yanzu suna ƙira don su. Na biyu, dandalin shi ne multi-asset: Kinexys ya faɗaɗa fiye da deposit token zuwa tokenized repo, FX settlement, da motsin collateral, wanda ya sa JPMorgan ya iya bayar da delivery-versus-payment a kan ledger ɗaya maimakon ta hanyar haɗawa-point-to-point.
 
@@ -196,7 +198,15 @@ HSBC bai watsar da hanyar stablecoin gaba ɗaya ba. Bankin ya samu lasisin HKMA 
 
 ### Sauran Shirye-shiryen Masu Aiki
 
-Bayan JPMorgan da HSBC, akwai shirye-shirye da yawa da suka ke da muhimmanci ga hoton tsarin sadarwa ko da yake bayyanawar jama'a ɗinsu ba ta da yawa. SG-FORGE na Société Générale ya fitar da bonds na dijital da aka denominate da euro da regulated euro stablecoin tare da aikin sa na deposit-token, wanda ya sa Société Générale ya zama a wani matsayi mara saba na gudanar da hanyoyi biyu a ƙarƙashin tsarin Turai. Standard Chartered yana aiki a kan tokenized deposits da real-world assets da aka tokenize ta hanyar Zodia Custody da pilots nasa na Singapore. Dandalin GS DAP na Goldman Sachs ya fitar da bonds na dijital kuma yana goyan bayan tokenized collateral. Babban abin da yake nufi a fili shi ne: ikon deposit-token yanzu shi ne mafi karancin sharadi ga kowane wholesale bank na duniya da ke tsammanin zai ci gaba da kasancewa mai gasa a transaction banking, kuma tambayar da ta fi muhimmanci ita ce wa zai yi interoperate da wa, ba wa zai gina farko ba.
+Bayan JPMorgan da HSBC, akwai shirye-shirye da yawa da suka ke da muhimmanci ga hoton tsarin sadarwa ko da yake bayyanawar jama'a ɗinsu ba ta da yawa.
+
+**Société Générale (SG-FORGE).** SG-FORGE ya fitar da bonds na dijital da aka denominate da euro da regulated euro stablecoin EURCV tare da aikinsa na deposit-token, kuma EURCV shi ne stablecoin na euro na farko da aka fitar daga bankin da ke da muhimmanci ga tsarin duniya wanda ke gudana akan zaure na jama'a da yawa. Hakan ya sa Société Générale ya zama a wani matsayi mara saba na gudanar da hanyoyin tokenized-deposit da regulated-stablecoin a ƙarƙashin tsarin banki na Turai, tare da EURCV a matsayin layer na isar zuwa buɗaɗɗen ecosystem da deposit-token side ke kula da regulated-corporate perimeter.
+
+**Standard Chartered.** Standard Chartered yana aiki a kan tokenized deposits da real-world assets da aka tokenize ta hanyar Zodia Custody (kamfaninsa na institutional digital-asset custody) da pilots nasa na Singapore, ciki har da shiga MAS Project Guardian don settlement na kadarori da aka tokenize. Babban abin da ke kan gaba shi ne hanyoyin kasuwannin masu tasowa — Asia–Africa–Middle East — inda aka sanya tokenized deposits don kawar da matsalolin correspondent banking, ba kawai don inganta rails na cikin gida na Birtaniya ko Amurka ba.
+
+**Goldman Sachs (GS DAP).** Dandalin GS DAP na digital-asset ya fitar da bonds na dijital na cibiyoyi (ciki har da bond na dijital na shekaru biyu na €100m na European Investment Bank) kuma yana goyan bayan tokenized collateral mobility don repo da securities financing. GS DAP ba shawarar corporate-treasury ba ce sosai sai dandalin settlement na tokenized-securities — yana da amfani a matsayin mai daidaita rawar HSBC Orion irin tasa kuma a matsayin shaida cewa ɓangaren digital-capital-markets na stack yana ƙarfafa cikin sauri fiye da ɓangaren deposit-token.
+
+Babban abin da yake nufi a fili shi ne: ikon deposit-token yanzu shi ne mafi karancin sharadi ga kowane wholesale bank na duniya da ke tsammanin zai ci gaba da kasancewa mai gasa a transaction banking, kuma tambayar da ta fi muhimmanci ita ce wa zai yi interoperate da wa, ba wa zai gina farko ba.
 
 ## Tokenized Deposits da Stablecoins da CBDC
 
@@ -265,19 +275,19 @@ Babu daya daga cikin wadannan da ya ke dalilin rashin gina tokenized deposits. D
 
 ### Bankunan Duniya
 
-Bankunan duniya ya kamata su ɗauki tokenized deposits a matsayin kayan more rayuwa na transaction-banking. Maida hankali ya kamata ya zama wallets na kamfanoni, treasury tsakanin ƙasashe, settlement na kadarorin dijital, motsi na collateral, da kula da ake iya tsarawa ga manyan abokan ciniki.
+Bankunan duniya ya kamata su ɗauki tokenized deposits a matsayin kayan more rayuwa na transaction-banking. Maida hankali ya kamata ya zama wallets na kamfanoni, treasury tsakanin ƙasashe, settlement na kadarorin dijital, motsi na collateral, da kula da ake iya tsarawa ga manyan abokan ciniki. Yanzu ana iya gani benchmark stacks: ma'aunin samarwa irin na Kinexys (JPMorgan), faɗin multi-track irin na HSBC, haɗin settlement na securities irin na GS DAP, da rufe-rufen deposit-token-plus-regulated-stablecoin irin na SG-FORGE. Wurin yanke shawara a wannan shekara shi ne ko za a haɗa gwaje-gwajen DLT na ciki da yawa cikin dandalin tokenized-deposit guda don abokan ciniki na treasury kafin masu gasa su ayyana UX na corporate wallet. **Action item:** sanya wani mai ɗauke da shirin tare da iko a ɓangarorin transaction banking, capital markets, da digital-assets — fragmented internal sponsorship shi ne dalili na kowa da yake sa wadannan stacks su zama pilots, ba kayan tallace-tallace ba.
 
 ### Bankunan Birtaniya
 
-Bankunan Birtaniya suna da damar haɗin kai ta farko ta amintacciya ta Great British Tokenised Deposits. Ƙalubalen shi ne juya pilots zuwa matakai masu interoperable kafin tsarin sadarwa na stablecoin ya zama tsarin hulda na ƙasa da ƙasa.
+Bankunan Birtaniya suna da damar haɗin kai ta farko ta amintacciya ta Great British Tokenised Deposits, kuma multi-bank pilot ana kallon shi a duniya a matsayin template don interoperability tsakanin bankuna na tokenized-deposit. Ƙalubalen shi ne juya pilots zuwa matakai masu interoperable kafin tsarin sadarwa na stablecoin ya zama tsarin hulda na ƙasa da ƙasa. **Action item:** karfafa marketplace-payments da remortgaging workflows zuwa operational-readiness a 2026 (SLAs masu fitarwa, sarrafa rikici, hadewar takunkumi) maimakon gudanar da proof-of-concept demos marasa karshe; amincin pilot ya dogara da fitar da akalla amfani guda mai matakin samarwa kafin a rufe taga na tsakiyar 2026.
 
 ### Manyan Bankuna da Masu Tsara Doka
 
-Masu tsara doka suna buƙatar bayyana halayyar shari'a, kula da inshora na deposit, jari na ka'idoji, ƙarshe na settlement, custody na wallet, ƙarfin aiki, da yadda tokenized deposits ke hulda da stablecoins da CBDC.
+Masu tsara doka suna buƙatar bayyana halayyar shari'a, kula da inshora na deposit, jari na ka'idoji, ƙarshe na settlement, custody na wallet, ƙarfin aiki, da yadda tokenized deposits ke hulda da stablecoins da CBDC. **Action item:** buga jagora mai inganci kan al'amari na hybrid — deposit-backed stablecoins da bank-issued tokenized deposits suna aiki akan ledger guda — saboda wannan shi ne tsarin da yawancin bankuna suka ke kusantarwa, kuma rubutun ka'idoji na yanzu yana karantawa kamar nau'i biyu ba sa hadu kuwa.
 
 ### Kamfanoni
 
-Kamfanoni ba sa buƙatar jiran tsarin sadarwa na duniya. Ya kamata su fara taswirar amfani inda kuɗin banki da ake iya tsarawa zai iya rage zamba, jinkirin settlement, aikin daidaitawa, ko liquidity da aka makale.
+Kamfanoni ba sa buƙatar jiran tsarin sadarwa na duniya. Ya kamata su fara taswirar amfani inda kuɗin banki da ake iya tsarawa zai iya rage zamba, jinkirin settlement, aikin daidaitawa, ko liquidity da aka makale. **Action item:** gwada wani amfani guda mai ma'auni masu KPIs — cross-border liquidity sweeps, intra-day collateral mobility, ko DvP don tokenized gilts su ne uku mafi karfin alama — kuma a yi amfani da shi tare da tambayoyin yanayin gaza a hankali (me ke faruwa lokacin da smart contract ya tsayar; yaya tokenized leg ke aiki a yanayin damuwa idan aka kwatanta da na al'ada).
 
 ## Kammalawa
 
@@ -287,23 +297,23 @@ Tokenized deposits a 2026 suna inda real-time payments suka kasance shekaru goma
 
 **Shin tokenized deposits iri ɗaya ne da stablecoins?**
 
-A'a. An yi nufin tokenized deposits su wakilci kuɗin deposit na banki na kasuwanci, yayin da yawanci ana fitar da stablecoins akan tsarin ajiya kuma ba sa warwarewa a ma'aunin babban banki kamar yadda biyan banki ke yi ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+A'a. Duka biyu suna ba da programmable, 24/7 digital money, amma suna amfani da tsarin shari'a da na da'awa daban-daban kwata-kwata. Stablecoin shi ne da'awa kan reserve asset ko corporate structure na mai bayarwa mai zaman kansa, mai aiki a wajen balance sheet na babban banki ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Tokenized deposit shi ne nauyin kai tsaye na bankin kasuwanci da ke gada regulation na banki, kula da AML/sanctions, da iyakar inshora na deposit ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 
 **Menene manyan amfani na Birtaniya?**
 
-Lloyds ya gano biyan kuɗi a kasuwa, sake daukar jinginar gida, da settlement na kadarorin dijital a matsayin amfani na Great British Tokenised Deposits ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
+Multi-bank pilot na tsakiyar 2026 na Birtaniya (HSBC, Lloyds, NatWest, Barclays, Nationwide, da Santander) yana mai da hankali kan wurare uku masu amfani: marketplace payments tsakanin mutane don rage zamba, multi-party workflows masu sarrafa kai don sake daukar jinginar gida, da delivery-versus-payment (DvP) digital-asset settlement — tare da daidaita kudin da aka tokenize akan gilts na alkawura da aka tokenize a cikin UK Digital Gilt Instrument (DIGIT) pilot ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
 **Shin tokenized deposits za su maye gurbin stablecoins?**
 
-Ba gaba ɗaya ba. Stablecoins mai yiwuwa za su ci gaba da zama masu muhimmanci a cikin amfani na crypto-native da liquidity na dala. Mai yiwuwa tokenized deposits su mamaye hanyoyin aiki na banki-abokin ciniki da aka tsara doka inda dangantakar banki na kasuwanci, kula da treasury, da kariyar ka'idoji ke da muhimmanci.
+Da kyar; sune kayan aiki masu cikawa juna da ke yi wa iyakoki daban-daban hidima. Stablecoins za su ci gaba da mamaye open DeFi ecosystems, crypto-native liquidity pools, da retail cross-border savings a kasuwannin fiat masu rashin daidaito. Tokenized deposits za su ci gaba a regulated perimeter — corporate treasury cash management, institutional trade settlement, da large-scale transaction banking — inda inshora na deposit, kula da prudential capital, da AML controls ke da muhimmanci.
 
-**Me yake hana sikeli?**
+**Me yake hana zama mai gama-gari a tsarin sadarwa?**
 
-Interoperability, ƙarshe na shari'a, kula da ka'idoji, matakan wallet, mulki tsakanin bankuna, da haɗin kai da kuɗin babban banki sune manyan abubuwan da ke hana. Fasaha bangare ɗaya ne kawai na matsalar karɓuwa.
+Fasahar kanta ta isa. Sikeli na samun matsala daga uku da ba na fasaha ba: **interoperability** (fragmented DLT stacks — Corda, Canton, Hyperledger Besu, HSBC Orion — yanzu suna aiki a matsayin gonaki masu katanga); **legal finality** (babu daidaiton ka'idoji na duniya kan conflict-of-laws ko yadda za a daidaita DLT immutability da nauyin banki na sake juya ma'amaloli ƙarƙashin umarnin kotu, sanctions, ko kuskure na aiki); da **yield economics** (masana'antu ba ta tantance ko tokenized corporate wallets na biya overnight interest mai gasa ko suna nuna kamar sterile transactional float).
 
 **Wane banki ne ke da tarin tokenized-deposit da ya fi ci gaba?**
 
-HSBC. HSBC Tokenised Deposit Service yana kunne a Hong Kong, Singapore, Birtaniya, Luxembourg, da Amurka cikin USD, GBP, EUR, HKD, da SGD; HSBC Orion shi ne kayan more rayuwa da aka tsara don pilot ɗin Digital Gilt Instrument (DIGIT) na Birtaniya; HSBC Gold Token yana tokenize zinariya ta jiki da aka raba; kuma HSBC ya gwada atomic settlement tsakanin tsarin sadarwa (Canton Network, Project Ensemble) da tsaron cryptographic na post-quantum tare da Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+Rabaccen kambi. JPMorgan shi ne shugaba a fili a yawan samarwa, tare da Kinexys by J.P. Morgan (formerly Onyx) yana sarrafa kusan dala biliyan 2 a kowace rana a manyan kasuwancin wholesale corporate ([JPMorgan](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan")). HSBC yana da mafi cikar multi-track stack ta tsari: HSBC Tokenised Deposit Service a Hong Kong, Singapore, Birtaniya, Luxembourg, da Amurka cikin USD/GBP/EUR/HKD/SGD; HSBC Orion a matsayin kayan more rayuwa da aka tsara don pilot ɗin UK Digital Gilt Instrument (DIGIT); HSBC Gold Token yana tokenize zinariya ta jiki da aka raba; har ma da atomic settlement tsakanin tsarin sadarwa da aka gwada akan Canton da Project Ensemble da kuma tsaron cryptographic na post-quantum da aka aiwatar tare da Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). UK multi-bank pilot shi ne gwajin live mafi amintacciya na inter-bank interoperability.
 
 ## Manazarta
 

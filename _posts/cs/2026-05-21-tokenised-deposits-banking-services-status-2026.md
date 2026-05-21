@@ -104,6 +104,8 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 
 Tokenizované vklady se stávají nejvýznamnější odpovědí bankovního sektoru na stablecoiny v oblasti digitálních peněz. Zachovávají vztah komerčního bankovního vkladu a zároveň umožňují programovatelnost, digitální peněženky, atomické vypořádání a pracovní postupy s tokenizovanými aktivy. Lloyds Banking Group uvádí, že britská digitální aktiva v roce 2026 přecházejí do hlavního proudu, a zdůrazňuje tokenizované vklady, digitální gilty a Great British Tokenised Deposits jako aktivní odvětvové iniciativy ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
+Tento text je zaměřen na velkoobchodní, institucionální a treasury vrstvu firem — část příběhu vkladových tokenů, kde běží piloty a vznikají bankovní produkty. Retailové tokenizované vklady existují jako výzkumný směr a uvnitř retailové obálky HSBC Gold Token, ale inflexní bod roku 2026 nastává v transakčním bankovnictví, nikoli v každodenních spotřebitelských platbách.
+
 ---
 
 > **Manažerské shrnutí / Klíčové poznatky**
@@ -158,7 +160,7 @@ Tři programy si zaslouží samostatný profil: JPMorgan, který otevřel katego
 
 ### JPMorgan: JPM Coin, Onyx a platforma Kinexys
 
-JPMorgan spustil JPM Coin v roce 2019, čtyři roky předtím, než většina odvětví začala veřejně používat slovní spojení „tokenizovaný vklad“. Běží na Onyx (nyní rebrandovaný jako Kinexys), permissioned blockchainové platformě JPMorgan, a vypořádává velkoobchodní toky firemních klientů — primárně institucionální treasury sweeps, vnitrodenní pohyby likvidity a stále více tokenizovaná repa. Do roku 2026 Kinexys zpracovává řádově 2 miliardy USD denně ve velkoobchodních transakcích, což činí z JPMorgan jediného největšího živého provozovatele vypořádání vkladových tokenů na světě.
+JPMorgan spustil JPM Coin v roce 2019, čtyři roky předtím, než většina odvětví začala veřejně používat slovní spojení „tokenizovaný vklad“. Běží na **Kinexys by J.P. Morgan (formerly Onyx)**, permissioned blockchainové platformě banky, a vypořádává velkoobchodní toky firemních klientů — primárně institucionální treasury sweeps, vnitrodenní pohyby likvidity a stále více tokenizovaná repa. Do roku 2026 Kinexys zpracovává řádově 2 miliardy USD denně ve velkoobchodních transakcích, což činí z JPMorgan jediného největšího živého provozovatele vypořádání vkladových tokenů na světě.
 
 Tato historie je důležitá ze dvou důvodů. Za prvé, JPMorgan má nejdelší produkční záznam v provozních otázkách — rekonciliace, řešení sporů, vnitrodenní chování likvidity a režimy výpadků — které ostatní banky teprve navrhují. Za druhé, platforma je multi-aktivní: Kinexys se rozšířil za vkladový token do tokenizovaného repa, FX vypořádání a mobility kolaterálu, což staví JPMorgan do pozice dodávat delivery-versus-payment napříč jedním registrem, nikoli přes integrace point-to-point.
 
@@ -196,7 +198,15 @@ HSBC zcela neignoruje ani směr stablecoinů. Banka získala licenci HKMA k pilo
 
 ### Další aktivní programy
 
-Kromě JPMorgan a HSBC je pro síťový obraz materiálních několik programů, i když jejich veřejné výstupy jsou tenčí. Société Générale SG-FORGE vydal eurodenominované digitální dluhopisy a regulovaný eurový stablecoin vedle své práce na vkladových tokenech, čímž staví Société Générale do neobvyklé pozice provozovat obě stopy pod evropskou regulací. Standard Chartered je aktivní v oblasti tokenizovaných vkladů a tokenizovaných reálných aktiv prostřednictvím Zodia Custody a vlastních singapurských pilotů. Platforma GS DAP společnosti Goldman Sachs vydala digitální dluhopisy a podporuje tokenizovaný kolaterál. Širší implikace je jednoznačná: schopnost vkladových tokenů je nyní nutností pro každou globální velkoobchodní banku, která chce zůstat konkurenceschopná v transakčním bankovnictví, a zajímavější otázkou je, kdo s kým interoperuje, nikoli kdo postaví první.
+Kromě JPMorgan a HSBC je pro síťový obraz materiálních několik programů, i když jejich veřejné výstupy jsou tenčí.
+
+**Société Générale (SG-FORGE).** SG-FORGE vydal eurodenominované digitální dluhopisy a regulovaný eurový stablecoin EURCV vedle své práce na vkladových tokenech, přičemž EURCV je prvním eurovým stablecoinem vydaným globálně systémově významnou bankou, který funguje napříč více veřejnými chainy. To staví Société Générale do neobvyklé pozice provozovat jak stopu tokenizovaných vkladů, tak regulovaného stablecoinu pod evropskou bankovní regulací, kdy EURCV je nasazen jako vrstva dosahu do otevřeného ekosystému a strana vkladového tokenu zajišťuje regulovaný korporátní perimetr.
+
+**Standard Chartered.** Standard Chartered je aktivní v oblasti tokenizovaných vkladů a tokenizovaných reálných aktiv prostřednictvím Zodia Custody (svého institucionálního custody startupu pro digitální aktiva) a vlastních singapurských pilotů, včetně účasti v MAS Project Guardian pro vypořádání tokenizovaných aktiv. Strategický důraz je kladen na koridory rozvíjejících se trhů — Asie–Afrika–Střední východ — kde jsou tokenizované vklady polohovány tak, aby vytlačily tření korespondenčního bankovnictví, nikoli aby pouze modernizovaly domácí britské nebo americké rails.
+
+**Goldman Sachs (GS DAP).** Platforma GS DAP pro digitální aktiva vydala institucionální digitální dluhopisy (včetně dvouletého digitálního dluhopisu Evropské investiční banky ve výši 100 mil. EUR) a podporuje mobilitu tokenizovaného kolaterálu pro repo a financování cenných papírů. GS DAP je méně korporátně-treasury nabídkou a více platformou pro vypořádání tokenizovaných cenných papírů — užitečným protějškem k podobné roli HSBC Orion a důkazem, že strana digitálních kapitálových trhů ve stacku se konsoliduje rychleji než strana vkladových tokenů.
+
+Širší implikace je jednoznačná: schopnost vkladového tokenu je nyní nutností pro každou globální velkoobchodní banku, která chce zůstat konkurenceschopná v transakčním bankovnictví, a zajímavější otázkou je, kdo s kým interoperuje, nikoli kdo postaví první.
 
 ## Tokenizované vklady vs. stablecoiny vs. CBDC
 
@@ -265,19 +275,19 @@ O tokenizovaných vkladech se většinou píše v optimistickém registru. Model
 
 ### Globální banky
 
-Globální banky by měly tokenizované vklady chápat jako infrastrukturu transakčního bankovnictví. Pozornost by se měla soustředit na firemní peněženky, přeshraniční treasury, vypořádání digitálních aktiv, mobilitu kolaterálu a programovatelné kontroly pro velké klienty.
+Globální banky by měly tokenizované vklady chápat jako infrastrukturu transakčního bankovnictví. Pozornost by se měla soustředit na firemní peněženky, přeshraniční treasury, vypořádání digitálních aktiv, mobilitu kolaterálu a programovatelné kontroly pro velké klienty. Referenční stacky jsou nyní viditelné: produkční měřítko ve stylu Kinexys (JPMorgan), vícestopá šíře ve stylu HSBC, integrace vypořádání cenných papírů ve stylu GS DAP a duální pokrytí vkladového tokenu plus regulovaného stablecoinu ve stylu SG-FORGE. Rozhodujícím bodem letošního roku je, zda sjednotit více interních DLT experimentů na jedinou platformu tokenizovaných vkladů pro klienty treasury dříve, než konkurence definuje uživatelské prostředí firemní peněženky. **Action item:** určit jednoho vlastníka programu s pravomocí napříč transakčním bankovnictvím, kapitálovými trhy a divizemi pro digitální aktiva — fragmentovaná interní podpora je nejčastějším důvodem, proč tyto stacky končí jako piloty, nikoli jako produkty.
 
 ### Britské banky
 
-Britské banky mají věrohodnou ranou koordinační příležitost prostřednictvím Great British Tokenised Deposits. Výzvou je proměnit piloty v interoperabilní standardy dříve, než se sítě stablecoinů stanou standardním mezinárodním rozhraním.
+Britské banky mají věrohodnou ranou koordinační příležitost prostřednictvím Great British Tokenised Deposits a multibankovní pilot je globálně sledován jako šablona pro mezibankovní interoperabilitu tokenizovaných vkladů. Výzvou je proměnit piloty v interoperabilní standardy dříve, než se sítě stablecoinů stanou standardním mezinárodním rozhraním. **Action item:** zpevnit pracovní postupy pro platby na tržištích a refinancování hypoték do provozní zralosti v roce 2026 (jasné SLA, řešení sporů, integrace sankcí) namísto provozování nekonečných proof-of-concept demonstrací; důvěryhodnost pilotu závisí na nasazení alespoň jednoho produkčně použitelného případu užití před uzavřením okna v polovině roku 2026.
 
 ### Centrální banky a regulátoři
 
-Regulátoři musí vyjasnit právní charakter, zacházení s pojištěním vkladů, obezřetnostní kapitál, finalitu vypořádání, custody peněženek, provozní odolnost a způsob, jakým tokenizované vklady interagují se stablecoiny a CBDC.
+Regulátoři musí vyjasnit právní charakter, zacházení s pojištěním vkladů, obezřetnostní kapitál, finalitu vypořádání, custody peněženek, provozní odolnost a způsob, jakým tokenizované vklady interagují se stablecoiny a CBDC. **Action item:** vydat konkrétní pokyny k hybridnímu případu — vkladově krytým stablecoinům a bankami vydaným tokenizovaným vkladům fungujícím na stejném registru — protože právě k této struktuře většina bank směřuje a současný regulatorní text čte, jako by se tyto dvě kategorie nikdy nepotkaly.
 
 ### Korporace
 
-Korporace by neměly čekat na univerzální síť. Měly by začít mapovat případy užití, kde by programovatelné bankovní peníze mohly snížit podvody, zpoždění vypořádání, rekonciliace nebo vázanou likviditu.
+Korporace by neměly čekat na univerzální síť. Měly by začít mapovat případy užití, kde by programovatelné bankovní peníze mohly snížit podvody, zpoždění vypořádání, rekonciliace nebo vázanou likviditu. **Action item:** odpilotovat jeden konkrétní tok s měřitelnými KPI — přeshraniční sweep likvidity, vnitrodenní mobilita kolaterálu nebo DvP pro tokenizované gilty jsou třemi kandidáty s nejsilnějším signálem — a instrumentovat jej s ohledem na otázky režimů selhání (co se stane, když se smart kontrakt pozastaví; jak se chová tokenizovaná noha ve stresovém scénáři ve srovnání s konvenční nohou).
 
 ## Závěr
 
@@ -287,23 +297,23 @@ Tokenizované vklady jsou v roce 2026 tam, kde byly real-time payments před des
 
 **Jsou tokenizované vklady totéž co stablecoiny?**
 
-Ne. Tokenizované vklady mají reprezentovat peníze komerčních bankovních vkladů, zatímco stablecoiny jsou typicky vydávány proti rezervní struktuře a nevypořádávají se v bilanci centrální banky tak jako bankovní platby ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+Ne. Oba nabízejí programovatelné digitální peníze v režimu 24/7, ale používají zcela odlišné právní struktury a struktury nároků. Stablecoin je nárokem na rezervní aktivum nebo korporátní strukturu soukromého emitenta, fungující mimo rozvahu centrální banky ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Tokenizovaný vklad je přímým závazkem komerční banky, který dědí stávající bankovní regulaci, kontroly AML/sankcí a perimetr pojištění vkladů ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 
 **Jaké jsou hlavní britské případy užití?**
 
-Lloyds označuje za případy užití Great British Tokenised Deposits platby na tržištích, refinancování hypoték a vypořádání digitálních aktiv ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
+Britský multibankovní pilot poloviny roku 2026 (HSBC, Lloyds, NatWest, Barclays, Nationwide a Santander) se zaměřuje na tři praktické oblasti: platby mezi osobami na tržištích pro snížení podvodů, automatizované vícestranné pracovní postupy pro refinancování hypoték a dodání proti platbě (DvP) pro vypořádání digitálních aktiv — párování tokenizované hotovosti s tokenizovanými státními dluhopisy v rámci britského pilotu Digital Gilt Instrument (DIGIT) ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
 **Nahradí tokenizované vklady stablecoiny?**
 
-Ne zcela. Stablecoiny pravděpodobně zůstanou důležité v krypto-nativních případech užití a v oblasti dolarové likvidity. Tokenizované vklady budou pravděpodobně dominovat v regulovaných pracovních postupech mezi bankou a klientem, kde záleží na komerčních bankovních vztazích, treasury kontrolách a obezřetnostních zárukách.
+Nepravděpodobně; jsou to doplňkové nástroje sloužící různým perimetrům. Stablecoiny budou nadále dominovat v otevřených DeFi ekosystémech, krypto-nativních likviditních poolech a v retailových přeshraničních úsporách na volatilních fiat trzích. Tokenizované vklady vyhrají regulovaný perimetr — cash management firemního treasury, institucionální obchodní vypořádání a velkokapacitní transakční bankovnictví — kde záleží na pojištění vkladů, obezřetnostním kapitálovém zacházení a stávajících AML kontrolách.
 
 **Co brání plošnému nasazení?**
 
-Hlavními překážkami jsou interoperabilita, právní finalita, regulatorní zacházení, standardy peněženek, mezibankovní governance a integrace s penězi centrální banky. Technologie je jen jednou součástí problému adopce.
+Samotná technologie je připravena. Plošné nasazení je blokováno třemi netechnickými třecími body: **interoperabilita** (fragmentované DLT stacky — Corda, Canton, Hyperledger Besu, HSBC Orion — v současnosti fungují jako uzavřené zahrady); **právní finalita** (žádné globální regulatorní sladění v otázce konfliktu zákonů ani způsobu, jak sladit neměnnost DLT s povinností banky stornovat transakce na základě soudního příkazu, sankcí nebo provozní chyby); a **ekonomika výnosů** (odvětví neujednalo, zda tokenizované firemní peněženky vyplácejí konkurenční overnight úrok nebo se chovají jako sterilní transakční float).
 
 **Která banka má nejrozvinutější stack tokenizovaných vkladů?**
 
-HSBC. Služba HSBC Tokenised Deposit Service je v provozu v Hongkongu, Singapuru, Spojeném království, Lucembursku a Spojených státech v měnách USD, GBP, EUR, HKD a SGD; HSBC Orion je určenou infrastrukturou pro britský pilot Digital Gilt Instrument (DIGIT); HSBC Gold Token tokenizuje alokované fyzické zlato; a HSBC ověřila atomické vypořádání mezi sítěmi (Canton Network, Project Ensemble) a post-kvantovou kryptografickou bezpečnost ve spolupráci s Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+Rozdělená koruna. JPMorgan je nesporným lídrem v produkčním objemu, kdy Kinexys by J.P. Morgan (formerly Onyx) zpracovává řádově 2 miliardy USD denně ve velkoobchodních firemních transakcích ([JPMorgan](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan")). HSBC má strukturálně nejrozmanitější vícestopý stack: HSBC Tokenised Deposit Service v Hongkongu, Singapuru, Spojeném království, Lucembursku a Spojených státech v USD/GBP/EUR/HKD/SGD; HSBC Orion jako určená infrastruktura pro britský pilot Digital Gilt Instrument (DIGIT); HSBC Gold Token tokenizující alokované fyzické zlato; plus atomické vypořádání mezi sítěmi testované na Canton a Project Ensemble a post-kvantová kryptografická bezpečnost implementovaná s Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). Britský multibankovní pilot je nejdůvěryhodnějším živým testem mezibankovní interoperability.
 
 ## Odkazy
 

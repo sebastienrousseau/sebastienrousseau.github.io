@@ -104,6 +104,8 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 
 Tokeniserade depositioner håller på att bli banksektorns viktigaste svar i form av digitala pengar på stablecoins. De bevarar inlåningsrelationen med affärsbanken och möjliggör samtidigt programmerbarhet, digitala plånböcker, atomär avveckling och arbetsflöden för tokeniserade tillgångar. Lloyds Banking Group säger att digitala tillgångar i Storbritannien blir mainstream 2026 och lyfter fram tokeniserade depositioner, digitala gilts och Great British Tokenised Deposits som aktiva branschinitiativ ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
+Den här texten avgränsas till wholesale-, institutionella- och företagstreasurylagret — den del av deposit-token-berättelsen där pilotprojekt är live och bankprodukter tar form. Tokeniserade depositioner för retail finns som forskningsspår och inom HSBC Gold Tokens retailhölje, men inflexionen 2026 sker inom transaction banking, inte inom vardagliga konsumentbetalningar.
+
 ---
 
 > **Sammanfattning för ledningen / Viktigaste slutsatserna**
@@ -158,7 +160,7 @@ Tre program förtjänar en egen profil: JPMorgan, som öppnade kategorin för wh
 
 ### JPMorgan: JPM Coin, Onyx och Kinexys-plattformen
 
-JPMorgan lanserade JPM Coin 2019, fyra år innan merparten av branschen offentligt använde uttrycket «tokeniserad deposition». Det körs på Onyx (numera omdöpt till Kinexys), JPMorgans permissionerade blockkedjeplattform, och avvecklar wholesale-flöden för företagskunder — främst institutionella treasury-sweeps, intradag likviditetsrörelser och alltmer tokeniserade repor. År 2026 hanterar Kinexys i storleksordningen 2 miljarder dollar per dag i wholesale-transaktioner, vilket gör JPMorgan till världens största live-operatör för avveckling av deposit tokens.
+JPMorgan lanserade JPM Coin 2019, fyra år innan merparten av branschen offentligt använde uttrycket «tokeniserad deposition». Det körs på **Kinexys by J.P. Morgan (formerly Onyx)**, JPMorgans permissionerade blockkedjeplattform, och avvecklar wholesale-flöden för företagskunder — främst institutionella treasury-sweeps, intradag likviditetsrörelser och alltmer tokeniserade repor. År 2026 hanterar Kinexys i storleksordningen 2 miljarder dollar per dag i wholesale-transaktioner, vilket gör JPMorgan till världens största live-operatör för avveckling av deposit tokens.
 
 Den historien spelar roll av två skäl. För det första har JPMorgan den längsta produktionstrack-recorden i de operativa frågorna — avstämning, tvistehantering, intradag likviditetsbeteende och haveriaspekter — som andra banker fortfarande designar för. För det andra är plattformen multi-asset: Kinexys har expanderat bortom deposit token till tokeniserade repor, FX-avveckling och säkerhetsmobilitet, vilket positionerar JPMorgan att leverera delivery-versus-payment över en enda reskontra snarare än via punkt-till-punkt-integrationer.
 
@@ -196,7 +198,15 @@ HSBC har inte helt ignorerat stablecoin-spåret. Banken har säkrat en HKMA-lice
 
 ### Andra aktiva program
 
-Utöver JPMorgan och HSBC är flera program materiella för nätverksbilden även om deras offentliga kommunikation är tunnare. Société Générales SG-FORGE har emitterat eurodenominerade digitala obligationer och en reglerad euro-stablecoin parallellt med sitt arbete med deposit tokens, vilket placerar Société Générale i den ovanliga positionen att driva båda spåren under europeisk reglering. Standard Chartered är aktivt både inom tokeniserade depositioner och inom tokeniserade real-world-tillgångar via Zodia Custody och egna Singapore-baserade pilotprojekt. Goldman Sachs GS DAP-plattform har emitterat digitala obligationer och stöder tokeniserat säkerhetsmaterial. Den bredare implikationen är rakt på sak: deposit-token-kapacitet är numera ett grundkrav för varje global wholesale-bank som vill förbli konkurrenskraftig inom transaction banking, och den mer intressanta frågan är vem som interoperar med vem snarare än vem som bygger först.
+Utöver JPMorgan och HSBC är flera program materiella för nätverksbilden även om deras offentliga kommunikation är tunnare.
+
+**Société Générale (SG-FORGE).** SG-FORGE har emitterat eurodenominerade digitala obligationer och EURCV, den reglerade euro-stablecoin, parallellt med sitt arbete med deposit tokens, och EURCV är den första euro-stablecoin emitterad av en globalt systemviktig bank som verkar över flera publika kedjor. Det placerar Société Générale i den ovanliga positionen att driva både deposit-token-spåret och det reglerade stablecoin-spåret under europeisk bankreglering, med EURCV positionerad som räckviddslager för öppna ekosystem och deposit-token-sidan som hanterar det reglerade företagsperimetern.
+
+**Standard Chartered.** Standard Chartered är aktivt inom tokeniserade depositioner och inom tokeniserade real-world-tillgångar via Zodia Custody (sitt institutionella samriskbolag för förvar av digitala tillgångar) och egna Singapore-baserade pilotprojekt, inklusive deltagande i MAS Project Guardian för avveckling av tokeniserade tillgångar. Den strategiska tonvikten ligger på korridorer på framväxande marknader — Asien-Afrika-Mellanöstern — där tokeniserade depositioner är positionerade för att tränga ut friktionen i korrespondentbankverksamhet snarare än att enbart uppgradera inhemska brittiska eller amerikanska spår.
+
+**Goldman Sachs (GS DAP).** Plattformen GS DAP för digitala tillgångar har emitterat institutionella digitala obligationer (inklusive European Investment Banks tvååriga digitala obligation på 100 miljoner euro) och stöder tokeniserad säkerhetsmobilitet för repor och värdepappersfinansiering. GS DAP är mindre ett företagstreasury-erbjudande än en avvecklingsplattform för tokeniserade värdepapper — användbar som motvikt till HSBC Orions liknande roll och som bevis på att den digitala kapitalmarknadsidan av stacken konsolideras snabbare än deposit-token-sidan.
+
+Den bredare implikationen är rakt på sak: deposit-token-kapacitet är numera ett grundkrav för varje global wholesale-bank som vill förbli konkurrenskraftig inom transaction banking, och den mer intressanta frågan är vem som interoperar med vem snarare än vem som bygger först.
 
 ## Tokeniserade depositioner vs stablecoins vs CBDC
 
@@ -265,19 +275,19 @@ Inget av detta är skäl att inte bygga tokeniserade depositioner. Det är skäl
 
 ### Globala banker
 
-Globala banker bör behandla tokeniserade depositioner som transaction banking-infrastruktur. Fokus bör ligga på företagsplånböcker, gränsöverskridande treasury, avveckling av digitala tillgångar, säkerhetsmobilitet och programmerbara kontroller för stora kunder.
+Globala banker bör behandla tokeniserade depositioner som transaction banking-infrastruktur. Fokus bör ligga på företagsplånböcker, gränsöverskridande treasury, avveckling av digitala tillgångar, säkerhetsmobilitet och programmerbara kontroller för stora kunder. Referensstackarna är nu synliga: Kinexys-liknande produktionsskala (JPMorgan), HSBC-liknande multipistbredd, GS DAP-liknande integration av värdepappersavveckling och SG-FORGE-liknande dubbel täckning av deposit-token-plus-reglerad-stablecoin. Beslutspunkten i år är om man ska konvergera flera interna DLT-experiment till en enda plattform för tokeniserade depositioner för treasury-kunder innan konkurrenterna definierar UX för företagsplånboken. **Action item:** utse en enda programansvarig med befogenhet över transaction banking, kapitalmarknader och divisioner för digitala tillgångar — fragmenterad internt sponsorskap är den vanligaste anledningen till att dessa stackar levereras som pilotprojekt snarare än produkter.
 
 ### Brittiska banker
 
-Brittiska banker har en trovärdig tidig möjlighet till samordning genom Great British Tokenised Deposits. Utmaningen är att förvandla piloterna till interoperabla standarder innan stablecoin-nätverk blir det internationella gränssnittet som standard.
+Brittiska banker har en trovärdig tidig möjlighet till samordning genom Great British Tokenised Deposits, och multibankpiloten följs globalt som mall för interbank-interoperabilitet för tokeniserade depositioner. Utmaningen är att förvandla piloterna till interoperabla standarder innan stablecoin-nätverk blir det internationella gränssnittet som standard. **Action item:** härda arbetsflödena för marknadsplatsbetalningar och omläggning av bolån till operativ driftberedskap 2026 (tydliga SLA:er, tvistehantering, sanktionsintegration) snarare än att driva proof-of-concept-demos i all oändlighet; pilotens trovärdighet hänger på att leverera minst ett användningsfall i produktionsklass innan fönstret i mitten av 2026 stänger.
 
 ### Centralbanker och tillsynsmyndigheter
 
-Tillsynsmyndigheter behöver klargöra juridisk karaktär, behandling av inlåningsförsäkring, tillsynskapital, avvecklingsslutgiltighet, plånboksförvar, operativ motståndskraft och hur tokeniserade depositioner samverkar med stablecoins och CBDC.
+Tillsynsmyndigheter behöver klargöra juridisk karaktär, behandling av inlåningsförsäkring, tillsynskapital, avvecklingsslutgiltighet, plånboksförvar, operativ motståndskraft och hur tokeniserade depositioner samverkar med stablecoins och CBDC. **Action item:** publicera konkret vägledning om det hybrida fallet — inlåningsuppbackade stablecoins och bankemitterade tokeniserade depositioner som verkar på samma reskontra — eftersom det är den struktur som de flesta banker konvergerar mot, och den nuvarande regulatoriska texten läses som om de två kategorierna aldrig möts.
 
 ### Företag
 
-Företag bör inte vänta på ett universellt nätverk. De bör börja kartlägga användningsfall där programmerbara bankpengar kan minska bedrägerier, avvecklingsförseningar, avstämningsarbete eller inlåst likviditet.
+Företag bör inte vänta på ett universellt nätverk. De bör börja kartlägga användningsfall där programmerbara bankpengar kan minska bedrägerier, avvecklingsförseningar, avstämningsarbete eller inlåst likviditet. **Action item:** pilotera ett konkret flöde med mätbara KPI:er — gränsöverskridande likviditetssweeps, intradag säkerhetsmobilitet eller DvP för tokeniserade gilts är de tre kandidater som ger högst signal — och instrumentera det med haveriaspektfrågorna i åtanke (vad händer när det smarta kontraktet pausar; hur beter sig det tokeniserade benet i ett stress-scenario relativt det konventionella benet).
 
 ## Slutsats
 
@@ -287,23 +297,23 @@ Tokeniserade depositioner befinner sig 2026 där realtidsbetalningar var för et
 
 **Är tokeniserade depositioner samma sak som stablecoins?**
 
-Nej. Tokeniserade depositioner är avsedda att representera inlåningspengar hos affärsbanker, medan stablecoins vanligtvis emitteras mot en reservstruktur och inte avvecklar på en centralbanks balansräkning på samma sätt som bankbetalningar ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+Nej. Båda erbjuder programmerbara, 24/7 tillgängliga digitala pengar, men de använder helt olika juridiska och anspråksstrukturer. En stablecoin är ett anspråk på en privat emittents reservtillgång eller företagsstruktur och verkar utanför centralbankens balansräkning ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). En tokeniserad deposition är en direkt skuld för affärsbanken som ärver den befintliga bankregleringen, AML/sanktionskontroller och perimetern för inlåningsförsäkring ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 
 **Vilka är de ledande brittiska användningsfallen?**
 
-Lloyds pekar ut marknadsplatsbetalningar, omläggning av bolån och avveckling av digitala tillgångar som användningsfall för Great British Tokenised Deposits ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
+Den brittiska multibankpiloten i mitten av 2026 (HSBC, Lloyds, NatWest, Barclays, Nationwide och Santander) fokuserar på tre praktiska områden: peer-to-peer-marknadsplatsbetalningar för att minska bedrägerier, automatiserade flerpartsflöden för omläggning av bolån och delivery-versus-payment (DvP) avveckling av digitala tillgångar — matchning av tokeniserade kontanter mot tokeniserade statliga gilts i UK Digital Gilt Instrument (DIGIT)-piloten ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
 **Kommer tokeniserade depositioner att ersätta stablecoins?**
 
-Inte helt. Stablecoins kommer sannolikt att förbli viktiga i krypto-nativa fall och fall med dollarlikviditet. Tokeniserade depositioner kommer sannolikt att dominera reglerade bank-kund-arbetsflöden där affärsbanksrelationer, treasury-kontroller och tillsynsskyddsåtgärder spelar roll.
+Osannolikt; de är komplementära instrument som betjänar olika perimeter. Stablecoins kommer fortsätta dominera öppna DeFi-ekosystem, krypto-nativa likviditetspooler och gränsöverskridande retailbesparingar på volatila fiatmarknader. Tokeniserade depositioner kommer att vinna det reglerade perimetern — cash management för företagstreasury, institutionell handelsavveckling och transaction banking i stor skala — där inlåningsförsäkring, tillsynsmässig kapitalbehandling och befintliga AML-kontroller spelar roll.
 
-**Vad blockerar skalan?**
+**Vad blockerar antagandet i nätverksskala?**
 
-Interoperabilitet, juridisk slutgiltighet, regulatorisk behandling, plånboksstandarder, styrning över banker och integration med centralbankspengar är de viktigaste blockerarna. Tekniken är bara en del av antagandeproblemet.
+Tekniken i sig är redo. Skalan blockeras av tre icke-tekniska friktionspunkter: **interoperabilitet** (fragmenterade DLT-stackar — Corda, Canton, Hyperledger Besu, HSBC Orion — som för närvarande agerar som muromgärdade trädgårdar); **juridisk slutgiltighet** (ingen global regulatorisk samordning kring lagkonflikt eller hur DLT-immutabilitet ska förenas med bankens skyldighet att återföra transaktioner efter domstolsbeslut, sanktion eller operativt fel); och **avkastnings-ekonomi** (branschen har inte standardiserat huruvida tokeniserade företagsplånböcker betalar konkurrenskraftig overnight-ränta eller beter sig som steril transaktionsfloat).
 
 **Vilken bank har den mest utvecklade stacken för tokeniserade depositioner?**
 
-HSBC. HSBC Tokenised Deposit Service är i produktion i Hongkong, Singapore, Storbritannien, Luxemburg och USA i USD, GBP, EUR, HKD och SGD; HSBC Orion är den utsedda infrastrukturen för Storbritanniens Digital Gilt Instrument (DIGIT)-pilot; HSBC Gold Token tokeniserar allokerade fysiska guldtackor; och HSBC har testat atomär avveckling över olika nätverk (Canton, Project Ensemble) och postkvant-kryptografisk säkerhet med Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+En delad krona. JPMorgan är den obestridda ledaren i produktionsvolym, med Kinexys by J.P. Morgan (formerly Onyx) som bearbetar i storleksordningen 2 miljarder dollar per dag i wholesale-företagstransaktioner ([JPMorgan](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan")). HSBC har den strukturellt mest mångsidiga multipiststacken: HSBC Tokenised Deposit Service i Hongkong, Singapore, Storbritannien, Luxemburg och USA i USD/GBP/EUR/HKD/SGD; HSBC Orion som utsedd infrastruktur för UK Digital Gilt Instrument (DIGIT)-piloten; HSBC Gold Token som tokeniserar allokerade fysiska guldtackor; tillsammans med atomär avveckling över nätverk som testats på Canton och Project Ensemble och postkvant-kryptografisk säkerhet implementerad med Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). Den brittiska multibankpiloten är det mest trovärdiga live-testet för interbank-interoperabilitet.
 
 ## Referenser
 

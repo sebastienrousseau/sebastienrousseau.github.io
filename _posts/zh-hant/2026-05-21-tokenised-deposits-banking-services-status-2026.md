@@ -107,6 +107,8 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 
 代幣化存款正在成為銀行業對穩定幣最重要的數位貨幣回應。它們在保留商業銀行存款關係的同時，實現了可程式化、數位錢包、原子結算與代幣化資產工作流。Lloyds Banking Group表示，英國數位資產正在2026年進入主流，並將代幣化存款、數位金邊債券與Great British Tokenised Deposits列為活躍的產業倡議（[Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")）。
 
+本文聚焦於批發、機構與企業司庫層級——亦即存款代幣敘事中試點已上線、銀行產品正在成形的部分。零售型代幣化存款仍以研究方向的形式存在，並透過HSBC Gold Token的零售封裝運行，但2026年的拐點發生在交易銀行領域，而非日常的消費支付。
+
 ---
 
 > **執行摘要／主要重點**
@@ -161,7 +163,7 @@ BIS將Project Agorá定位為與中央銀行和私營部門合作探索跨境支
 
 ### JPMorgan：JPM Coin、Onyx與Kinexys平台
 
-JPMorgan於2019年推出JPM Coin，比業內大多數機構公開使用「代幣化存款」一詞早四年。它運行於Onyx（現已更名為Kinexys）——JPMorgan的許可制區塊鏈平台——之上，結算批發企業客戶流量，主要包括機構司庫劃轉、日內流動性調度，以及越來越多的代幣化回購。到2026年，Kinexys每日處理約20億美元規模的批發交易，這使JPMorgan成為全球單一最大的存款代幣結算營運方。
+JPMorgan於2019年推出JPM Coin，比業內大多數機構公開使用「代幣化存款」一詞早四年。它運行於**Kinexys by J.P. Morgan (formerly Onyx)**——JPMorgan的許可制區塊鏈平台——之上，結算批發企業客戶流量，主要包括機構司庫劃轉、日內流動性調度，以及越來越多的代幣化回購。到2026年，Kinexys每日處理約20億美元規模的批發交易，這使JPMorgan成為全球單一最大的存款代幣結算營運方。
 
 這段歷史在兩方面具有意義。其一，JPMorgan在對帳、爭議處理、日內流動性行為與故障模式等營運議題上擁有業內最長的生產紀錄——而其他銀行仍處於設計階段。其二，平台是多資產的：Kinexys已從存款代幣擴展至代幣化回購、外匯結算與抵押品流轉，使JPMorgan能夠在同一帳本上提供款券對付，而非透過點對點整合。
 
@@ -199,7 +201,15 @@ HSBC並未完全忽視穩定幣這一方向。該行已取得HKMA許可，試點
 
 ### 其他活躍專案
 
-除JPMorgan與HSBC之外，仍有若干專案雖公開揭露較少，卻對整體網路圖景具實質意義。Société Générale的SG-FORGE在存款代幣業務之外，發行以歐元計價的數位債券與一種受監管的歐元穩定幣，使Société Générale在歐洲監管之下同時運營兩條軌道這一不尋常位置。Standard Chartered透過Zodia Custody及其自有的新加坡試點，在代幣化存款與代幣化實物資產領域保持活躍。Goldman Sachs的GS DAP平台已發行數位債券並支援代幣化抵押品。更廣義的含義很直接：存款代幣能力如今已是任何希望在交易銀行領域保持競爭力的全球批發銀行的基本配備；更值得關注的問題是誰與誰互通，而非誰先建成。
+除JPMorgan與HSBC之外，仍有若干專案對整體網路圖景具實質意義，儘管其公開揭露相對有限。
+
+**Société Générale (SG-FORGE).** SG-FORGE在存款代幣業務之外，發行以歐元計價的數位債券與受監管的歐元穩定幣EURCV，而EURCV是首個由全球系統重要性銀行（G-SIB）發行、並在多條公鏈上運行的歐元穩定幣。這使Société Générale處於在歐洲銀行監管之下同時運營代幣化存款與受監管穩定幣兩條軌道的不尋常位置，EURCV扮演開放生態觸達層的角色，而存款代幣側則覆蓋受監管企業邊界。
+
+**Standard Chartered.** Standard Chartered透過Zodia Custody（其機構數位資產託管合資企業）及自有的新加坡試點（包括參與MAS Project Guardian的代幣化資產結算）在代幣化存款與代幣化實物資產領域保持活躍。其策略重心放在新興市場走廊——亞洲—非洲—中東——並將代幣化存款定位為取代代理行業務摩擦，而非單純升級英國或美國國內的支付軌道。
+
+**Goldman Sachs (GS DAP).** GS DAP數位資產平台已發行機構數位債券（包括European Investment Bank的1億歐元兩年期數位債券）並支援回購與證券融資中的代幣化抵押品流動性。GS DAP更像是代幣化證券結算平台而非企業司庫提案；它既可作為HSBC Orion相似角色的對照，也證明數位資本市場端的堆疊正比存款代幣端更快地整合。
+
+更廣的含義十分直接：存款代幣能力如今已是任何希望在交易銀行領域保持競爭力的全球批發銀行的基本配備；更值得關注的問題是誰與誰互通，而非誰先建成。
 
 ## 代幣化存款、穩定幣與CBDC的比較
 
@@ -268,19 +278,19 @@ FDIC在2026年的擬議規則中明確將前兩種認定為以分散式帳本技
 
 ### 全球性銀行
 
-全球性銀行應將代幣化存款視為交易銀行基礎設施。重點應放在企業錢包、跨境資金管理、數位資產結算、抵押品流動性以及為大型客戶提供的可程式化管控。
+全球性銀行應將代幣化存款視為交易銀行基礎設施。重點應放在企業錢包、跨境資金管理、數位資產結算、抵押品流動性以及為大型客戶提供的可程式化管控。基準堆疊現已清晰可見：Kinexys式的生產規模（JPMorgan）、HSBC式的多軌廣度、GS DAP式的證券結算整合，以及SG-FORGE式的存款代幣＋受監管穩定幣雙覆蓋。今年的決策點在於：是否在競爭對手定義企業錢包使用者體驗之前，將多項內部DLT實驗收斂至一個面向司庫客戶的統一代幣化存款平台。**行動項：** 指定一位橫跨交易銀行、資本市場與數位資產部門並擁有相應權限的專案負責人——內部贊助的碎片化，是這些堆疊最終僅以試點形式交付而非作為產品上線的最常見原因。
 
 ### 英國銀行
 
-英國銀行透過Great British Tokenised Deposits擁有可信的早期協同機會。挑戰在於在穩定幣網路成為預設國際介面之前，將試點轉化為可互通的標準。
+英國銀行透過Great British Tokenised Deposits擁有可信的早期協同機會，這項多銀行試點正被全球視為銀行間代幣化存款互通性的範本而受到關注。挑戰在於：在穩定幣網路成為預設國際介面之前，將試點轉化為可互通的標準。**行動項：** 在2026年將市場支付與再抵押貸款工作流強化至營運就緒狀態（明確的SLA、爭議處理、制裁篩查整合），而非無限期地進行概念驗證演示；試點的可信度取決於能否在2026年中期窗口關閉前至少交付一個生產級用例。
 
 ### 中央銀行與監管機構
 
-監管機構需要釐清法律性質、存款保險處理、審慎資本、結算最終性、錢包託管、營運韌性，以及代幣化存款如何與穩定幣與CBDC互動。
+監管機構需要釐清法律性質、存款保險處理、審慎資本、結算最終性、錢包託管、營運韌性，以及代幣化存款如何與穩定幣與CBDC互動。**行動項：** 就混合情境——以存款為支持的穩定幣與銀行發行的代幣化存款在同一帳本上運行——發布具體指引；因為這正是大多數銀行正在收斂的結構，而現行監管文本讀來彷彿這兩類資產從未相遇。
 
 ### 企業
 
-企業不應等待通用網路。它們應開始梳理可程式化銀行貨幣能夠降低詐欺、結算延遲、對帳工作或閒置流動性的應用場景。
+企業不應等待通用網路。它們應開始梳理可程式化銀行貨幣能夠降低詐欺、結算延遲、對帳工作或閒置流動性的應用場景。**行動項：** 選取一條具體的資金流並以可衡量的KPI開展試點——跨境流動性調撥、日內抵押品流動性、代幣化金邊債券的DVP是三個最具訊號價值的候選——並以失敗模式問題為視角進行充分埋點（智能合約暫停時會發生什麼；在壓力情境下代幣化端相對傳統端如何表現）。
 
 ## 結論
 
@@ -290,23 +300,23 @@ FDIC在2026年的擬議規則中明確將前兩種認定為以分散式帳本技
 
 **代幣化存款與穩定幣相同嗎？**
 
-不同。代幣化存款旨在表徵商業銀行存款貨幣，而穩定幣通常基於準備金結構發行，並不會以銀行支付那樣的方式在央行資產負債表上完成結算（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")）。
+不同。兩者皆提供可程式化、24/7數位貨幣，但其法律與債權結構完全不同。穩定幣是對私人發行方準備金資產或法人結構的債權，運行於央行資產負債表之外（[BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")）。代幣化存款則是商業銀行的直接負債，承襲既有銀行監管、AML/制裁管控與存款保險邊界（[FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")）。
 
 **英國的主要應用場景是什麼？**
 
-Lloyds將市場支付、再抵押貸款與數位資產結算列為Great British Tokenised Deposits的應用場景（[Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")）。
+2026年中期的英國多銀行試點（HSBC、Lloyds、NatWest、Barclays、Nationwide、Santander）聚焦三個實際領域：用於降低詐欺的個人間市場支付、用於再抵押貸款的多方工作流自動化，以及DVP（券款對付）數位資產結算——在UK Digital Gilt Instrument（DIGIT）試點中將代幣化現金與代幣化主權金邊債券對應匹配（[Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")）。
 
 **代幣化存款會取代穩定幣嗎？**
 
-不會完全取代。穩定幣在加密原生與美元流動性場景中很可能仍然重要。代幣化存款則更可能在商業銀行關係、資金管理控制與審慎保障至關重要的受監管銀行客戶工作流中佔據主導地位。
+不太可能；兩者是服務於不同邊界的互補工具。穩定幣將繼續在開放DeFi生態、加密原生流動性池以及法幣波動劇烈市場下的零售跨境儲蓄中占據主導。代幣化存款則會在受監管邊界——企業司庫現金管理、機構交易結算、大規模交易銀行——勝出，因為這些場景中存款保險、審慎資本處理與既有AML管控至關重要。
 
-**規模化的障礙是什麼？**
+**網路規模採納的障礙是什麼？**
 
-互通性、法律最終性、監管處理、錢包標準、跨行治理以及與中央銀行貨幣的整合是主要障礙。技術只是採納問題的一部分。
+技術本身已具備。規模化受阻於三個非技術性摩擦點：**互通性**（碎片化的DLT堆疊——Corda、Canton、Hyperledger Besu、HSBC Orion——目前各自為封閉花園）；**法律最終性**（關於法律衝突，以及如何調和DLT不可竄改性與銀行在法院命令、制裁或操作失誤下進行交易撤銷之義務，缺乏全球性的監管協同）；以及**收益率經濟學**（業界尚未就代幣化企業錢包是否支付有競爭力的隔夜利率、抑或表現為無息交易浮動資金達成共識）。
 
 **哪家銀行擁有最為成熟的代幣化存款堆疊？**
 
-HSBC。HSBC Tokenised Deposit Service已在香港、新加坡、英國、盧森堡與美國以USD、GBP、EUR、HKD與SGD投入運行；HSBC Orion被指定為英國Digital Gilt Instrument（DIGIT）試點的基礎設施；HSBC Gold Token將已分配的實物金條代幣化；HSBC亦在跨網路原子結算（Canton、Project Ensemble）方面進行了試點，並與Quantinuum合作部署了後量子加密安全（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。
+王冠一分為二。JPMorgan在生產量上是無可爭議的領先者，Kinexys by J.P. Morgan (formerly Onyx)每日處理約20億美元的批發企業交易（[JPMorgan](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan")）。HSBC則擁有結構上最為多樣化的多軌堆疊：HSBC Tokenised Deposit Service已在香港、新加坡、英國、盧森堡與美國以USD/GBP/EUR/HKD/SGD運行；HSBC Orion被指定為UK Digital Gilt Instrument（DIGIT）試點的基礎設施；HSBC Gold Token將已分配的實物金條代幣化；並在Canton與Project Ensemble上試行跨網路原子結算，與Quantinuum合作部署了後量子加密安全（[HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")）。英國多銀行試點則是銀行間互通性最具可信度的實活測試。
 
 ## 參考文獻
 

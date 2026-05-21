@@ -106,6 +106,8 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 
 
 
+
+
 <!-- lead-start -->
 <aside class="post-lead" aria-label="Article summary">
 <p class="post-lead-tldr"><strong>TL;DR.</strong> Tokenised deposit services in 2026 are moving from research into bank pilots and early client propositions. The status is still pre-scale, but the direction is clear: commercial bank money is being adapted for programmable settlement, digital wallets, stablecoin interoperability, and tokenised capital markets.</p>
@@ -121,6 +123,8 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 <!-- lead-end -->
 
 Tokenised deposits are becoming the banking sector’s most important digital-money answer to stablecoins. They preserve the commercial bank deposit relationship while enabling programmability, digital wallets, atomic settlement, and tokenised asset workflows. Lloyds Banking Group says UK digital assets are moving into the mainstream in 2026 and highlights tokenised deposits, digital gilts, and Great British Tokenised Deposits as active industry initiatives ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
+
+This piece is scoped to the wholesale, institutional, and corporate-treasury layer — the part of the deposit-token story where pilots are live and bank products are forming. Retail tokenised deposits exist as a research track and inside the HSBC Gold Token retail wrapper, but the 2026 inflection is happening in transaction banking, not in everyday consumer payments.
 
 ---
 
@@ -176,7 +180,7 @@ Three programmes are worth profiling in their own right: JPMorgan, which pioneer
 
 ### JPMorgan: JPM Coin, Onyx, and the Kinexys Platform
 
-JPMorgan launched JPM Coin in 2019, four years before most of the industry was using the phrase "tokenised deposit" in public. It runs on Onyx (now rebranded Kinexys), JPMorgan's permissioned blockchain platform, and it settles wholesale corporate-client flows — primarily institutional treasury sweeps, intra-day liquidity moves, and increasingly tokenised repo. By 2026, Kinexys is processing the order of $2 billion per day in wholesale transactions, which makes JPMorgan the single largest live operator of deposit-token settlement in the world.
+JPMorgan launched JPM Coin in 2019, four years before most of the industry was using the phrase "tokenised deposit" in public. It runs on **Kinexys by J.P. Morgan (formerly Onyx)**, the bank's permissioned blockchain platform, and it settles wholesale corporate-client flows — primarily institutional treasury sweeps, intra-day liquidity moves, and increasingly tokenised repo. By 2026, Kinexys is processing the order of $2 billion per day in wholesale transactions, which makes JPMorgan the single largest live operator of deposit-token settlement in the world.
 
 That history matters for two reasons. First, JPMorgan has the longest production track record on the operational questions — reconciliation, dispute handling, intra-day liquidity behaviour, and outage modes — that other banks are still designing for. Second, the platform is multi-asset: Kinexys has expanded beyond the deposit token into tokenised repo, FX settlement, and collateral mobility, which positions JPMorgan to deliver delivery-versus-payment across a single ledger rather than via point-to-point integrations.
 
@@ -214,7 +218,15 @@ HSBC has not ignored the stablecoin track entirely. The bank has secured an HKMA
 
 ### Other Active Programmes
 
-Beyond JPMorgan and HSBC, several programmes are material to the network picture even if their public disclosures are thinner. Société Générale's SG-FORGE has issued euro-denominated digital bonds and a regulated euro stablecoin alongside its deposit-token work, putting Société Générale in the unusual position of running both tracks under European regulation. Standard Chartered is active on tokenised deposits and on tokenised real-world assets through Zodia Custody and its own Singapore-based pilots. Goldman Sachs's GS DAP platform has issued digital bonds and supports tokenised collateral. The wider implication is straightforward: deposit-token capability is now table stakes for any global wholesale bank that expects to remain competitive in transaction banking, and the more interesting question is who interoperates with whom rather than who builds first.
+Beyond JPMorgan and HSBC, several programmes are material to the network picture even if their public disclosures are thinner.
+
+**Société Générale (SG-FORGE).** SG-FORGE has issued euro-denominated digital bonds and the EURCV regulated euro stablecoin alongside its deposit-token work, and EURCV is the first euro stablecoin issued by a globally systemically important bank to operate across multiple public chains. That puts Société Générale in the unusual position of running both the tokenised-deposit and regulated-stablecoin tracks under European banking regulation, with EURCV positioned as the open-ecosystem reach layer and the deposit-token side handling the regulated-corporate perimeter.
+
+**Standard Chartered.** Standard Chartered is active on tokenised deposits and on tokenised real-world assets through Zodia Custody (its institutional digital-asset custody venture) and its own Singapore-based pilots, including participation in MAS Project Guardian for tokenised asset settlement. The strategic emphasis is on emerging-markets corridors — Asia-Africa-Middle East — where tokenised deposits are positioned to displace correspondent-banking friction rather than just upgrade domestic UK or US rails.
+
+**Goldman Sachs (GS DAP).** The GS DAP digital-asset platform has issued institutional digital bonds (including the European Investment Bank's €100m two-year digital bond) and supports tokenised collateral mobility for repo and securities financing. GS DAP is less of a corporate-treasury proposition than a tokenised-securities settlement platform — useful as a counterpoint to HSBC Orion's similar role and as evidence that the digital-capital-markets side of the stack is consolidating faster than the deposit-token side.
+
+The wider implication is straightforward: deposit-token capability is now table stakes for any global wholesale bank that expects to remain competitive in transaction banking, and the more interesting question is who interoperates with whom rather than who builds first.
 
 ## Tokenised Deposits vs Stablecoins vs CBDCs
 
@@ -261,7 +273,7 @@ Yield is the question senior treasurers ask first and that most tokenised-deposi
 
 A single-bank tokenised deposit is useful but limited. Multi-bank interoperability is where network effects begin. This requires standards for token format, messaging, identity, settlement finality, dispute handling, AML data, wallet portability, and conversion between tokenised deposits, conventional deposits, stablecoins, CBDCs, and tokenised assets.
 
-The technical surface is fragmented. Permissioned-DLT incumbents include R3 Corda (used by Standard Chartered and others for tokenised deposits), Canton Network (used by HSBC for cross-network settlement trials and by Goldman Sachs's GS DAP), Hyperledger Besu (the JPMorgan-derived Ethereum variant under Kinexys), and proprietary stacks like HSBC Orion. The token-format choice is also unsettled: some networks use ERC-20-derived contracts so they can compose with the wider Ethereum tooling; others use IBC-style or Canton-native token primitives. The pragmatic answer in 2026 is that no single stack has won, and the banks that will scale tokenised deposits are the ones building interoperability bridges (atomic settlement protocols between Canton and Besu, ISO 20022 mapping to on-chain message formats) rather than betting on a single platform.
+The technical surface is fragmented. Permissioned-DLT incumbents include R3 Corda (used by Standard Chartered and others for tokenised deposits), Canton Network (used by HSBC for cross-network settlement trials and by Goldman Sachs's GS DAP), Hyperledger Besu (the JPMorgan-derived Ethereum variant under Kinexys), and proprietary stacks like HSBC Orion. The token-format choice is also unsettled: some networks use ERC-20-derived contracts so they can compose with the wider Ethereum tooling; others use IBC-style or Canton-native token primitives. The pragmatic answer in 2026 is that no single stack has won, and the banks that will scale tokenised deposits are the ones building interoperability bridges (atomic settlement protocols between Canton and Besu, [ISO 20022](/2023-09-29-automating-iso-20022-compliant-payment-file-creation-with-pain001/index.html) mapping to on-chain message formats) rather than betting on a single platform.
 
 The risk is a collection of bank-specific walled gardens. The opportunity is a programmable commercial-bank-money layer that preserves bank trust while improving digital settlement.
 
@@ -283,19 +295,19 @@ None of these are reasons not to build tokenised deposits. They are reasons to t
 
 ### Global Banks
 
-Global banks should treat tokenised deposits as transaction-banking infrastructure. The focus should be corporate wallets, cross-border treasury, digital asset settlement, collateral mobility, and programmable controls for large clients.
+Global banks should treat tokenised deposits as transaction-banking infrastructure. The focus should be corporate wallets, cross-border treasury, digital asset settlement, collateral mobility, and programmable controls for large clients. The benchmark stacks are now visible: Kinexys-style production scale (JPMorgan), HSBC-style multi-track breadth, GS DAP-style securities-settlement integration, and SG-FORGE-style dual deposit-token-plus-regulated-stablecoin coverage. The decision point this year is whether to converge multiple internal DLT experiments onto a single tokenised-deposit platform for treasury clients before competitors define the corporate wallet UX. **Action item:** designate one programme owner with authority across transaction banking, capital markets, and digital-assets divisions — fragmented internal sponsorship is the most common reason these stacks ship as pilots rather than products.
 
 ### UK Banks
 
-UK banks have a credible early coordination opportunity through Great British Tokenised Deposits. The challenge is to turn pilots into interoperable standards before stablecoin networks become the default international interface.
+UK banks have a credible early coordination opportunity through Great British Tokenised Deposits, and the multi-bank pilot is being watched globally as a template for inter-bank tokenised-deposit interoperability. The challenge is to turn pilots into interoperable standards before stablecoin networks become the default international interface. **Action item:** harden the marketplace-payments and remortgaging workflows to operational-readiness in 2026 (clear SLAs, dispute handling, sanctions integration) rather than running indefinite proof-of-concept demos; the pilot's credibility depends on shipping at least one production-grade use case before the mid-2026 window closes.
 
 ### Central Banks and Regulators
 
-Regulators need to clarify legal character, deposit insurance treatment, prudential capital, settlement finality, wallet custody, operational resilience, and how tokenised deposits interact with stablecoins and CBDCs.
+Regulators need to clarify legal character, deposit insurance treatment, prudential capital, settlement finality, wallet custody, operational resilience, and how tokenised deposits interact with stablecoins and CBDCs. **Action item:** publish concrete guidance on the hybrid case — deposit-backed stablecoins and bank-issued tokenised deposits operating on the same ledger — because that is the structure most banks are converging on, and current regulatory text reads as if the two categories never meet.
 
 ### Corporates
 
-Corporates should not wait for a universal network. They should begin mapping use cases where programmable bank money could reduce fraud, settlement delay, reconciliation work, or trapped liquidity.
+Corporates should not wait for a universal network. They should begin mapping use cases where programmable bank money could reduce fraud, settlement delay, reconciliation work, or trapped liquidity. **Action item:** pilot one concrete flow with measurable KPIs — cross-border liquidity sweeps, intra-day collateral mobility, or DvP for tokenised gilts are the three highest-signal candidates — and instrument it with the failure-mode questions in mind (what happens when the smart contract pauses; how does the tokenised leg behave in a stress scenario relative to the conventional leg).
 
 ## Conclusion
 
@@ -305,23 +317,23 @@ Tokenised deposits in 2026 are where real-time payments were a decade ago: obvio
 
 **Are tokenised deposits the same as stablecoins?**
 
-No. Tokenised deposits are intended to represent commercial bank deposit money, while stablecoins are typically issued against a reserve structure and do not settle on a central bank balance sheet in the same way bank payments do ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+No. Both offer programmable, 24/7 digital money, but they use completely different legal and claim structures. A stablecoin is a claim on a private issuer's reserve asset or corporate structure, operating outside the central bank balance sheet ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). A tokenised deposit is a direct commercial bank liability that inherits existing banking regulation, AML/sanctions controls, and the deposit-insurance perimeter ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 
 **What are the leading UK use cases?**
 
-Lloyds identifies marketplace payments, remortgaging, and digital asset settlement as use cases for Great British Tokenised Deposits ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
+The mid-2026 UK multi-bank pilot (HSBC, Lloyds, NatWest, Barclays, Nationwide, and Santander) is focusing on three practical areas: person-to-person marketplace payments to reduce fraud, automated multi-party workflows for remortgaging, and delivery-versus-payment (DvP) digital-asset settlement — matching tokenised cash against tokenised sovereign gilts in the UK Digital Gilt Instrument (DIGIT) pilot ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
 **Will tokenised deposits replace stablecoins?**
 
-Not entirely. Stablecoins will likely remain important in crypto-native and dollar-liquidity use cases. Tokenised deposits are more likely to dominate regulated bank-client workflows where commercial bank relationships, treasury controls, and prudential safeguards matter.
+Unlikely; they are complementary instruments serving different perimeters. Stablecoins will continue to dominate open DeFi ecosystems, crypto-native liquidity pools, and retail cross-border savings in volatile fiat markets. Tokenised deposits will win the regulated perimeter — corporate treasury cash management, institutional trade settlement, and large-scale transaction banking — where deposit insurance, prudential capital treatment, and existing AML controls matter.
 
-**What blocks scale?**
+**What blocks network-scale adoption?**
 
-Interoperability, legal finality, regulatory treatment, wallet standards, cross-bank governance, and integration with central bank money are the main blockers. The technology is only one part of the adoption problem.
+The technology itself is ready. Scale is blocked by three non-technical friction points: **interoperability** (fragmented DLT stacks — Corda, Canton, Hyperledger Besu, HSBC Orion — currently acting as walled gardens); **legal finality** (no global regulatory alignment on conflict-of-laws or how to reconcile DLT immutability with the bank's obligation to reverse transactions under court order, sanctions, or operational error); and **yield economics** (the industry has not standardised whether tokenised corporate wallets pay competitive overnight interest or behave as sterile transactional float).
 
 **Which bank has the most developed tokenised-deposit stack?**
 
-HSBC. The HSBC Tokenised Deposit Service is live across Hong Kong, Singapore, the UK, Luxembourg, and the US in USD, GBP, EUR, HKD, and SGD; HSBC Orion is the designated infrastructure for the UK's Digital Gilt Instrument (DIGIT) pilot; the HSBC Gold Token tokenises allocated physical bullion; and HSBC has trialled cross-network atomic settlement (Canton, Project Ensemble) and post-quantum cryptographic security with Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+A split crown. JPMorgan is the undisputed leader in production volume, with Kinexys by J.P. Morgan (formerly Onyx) processing on the order of $2 billion per day in wholesale corporate transactions ([JPMorgan](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan")). HSBC has the most structurally diverse multi-track stack: the HSBC Tokenised Deposit Service across Hong Kong, Singapore, the UK, Luxembourg, and the US in USD/GBP/EUR/HKD/SGD; HSBC Orion as the designated infrastructure for the UK Digital Gilt Instrument (DIGIT) pilot; the HSBC Gold Token tokenising allocated physical bullion; plus cross-network atomic settlement trialled on Canton and Project Ensemble and post-quantum cryptographic security implemented with Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). The UK multi-bank pilot is the most credible live test of inter-bank interoperability.
 
 ## References
 

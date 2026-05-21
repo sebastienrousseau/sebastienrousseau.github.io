@@ -525,7 +525,7 @@ def _convert_faq_to_qa(html: str) -> str:
         out_parts: list[str] = [new_h2, f'<section class="qa-list" aria-labelledby="{faq_id}">']
         for q, a in qa_pairs:
             out_parts.append(
-                f'<details class="qa-item"><summary class="qa-q">{q}</summary>'
+                f'<details class="qa-item" open><summary class="qa-q">{q}</summary>'
                 f'<section class="qa-a"><p>{a}</p></section></details>'
             )
         out_parts.append('</section>')
@@ -665,7 +665,20 @@ def inject_prev_next_nav(
 
     inner = render(prev_e, "prev", labels["Previous"]) + render(next_e, "next", labels["Next"])
     nav = f'<nav class="post-pagination" aria-label="{labels["Article pagination"]}">{inner}</nav>'
-    return re.sub(r'(</div>\s*</main>)', nav + r'\1', html, count=1)
+    # The anchor used to be `</div>\s*</main>` (the wrap-div directly closing
+    # the main element). But the sigstore-attestation pass runs earlier and
+    # may have inserted `<aside class="article-sigstore">...</aside>` between
+    # `</div>` and `</main>`. Allow an optional aside (or chain of asides) in
+    # between, so pagination still anchors against the wrap-div even after
+    # sigstore has run. Without this, translated pages with sigstore bundles
+    # silently lost prev/next nav.
+    patched = re.sub(
+        r'(</div>)(\s*(?:<aside\b[^>]*>[\s\S]*?</aside>\s*)*</main>)',
+        nav + r'\1\2',
+        html,
+        count=1,
+    )
+    return patched
 
 
 def inject_citations(html: str) -> str:

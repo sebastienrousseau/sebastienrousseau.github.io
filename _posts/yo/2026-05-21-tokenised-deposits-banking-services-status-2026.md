@@ -104,6 +104,8 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 
 Àdéposito tokenized ń di àkọ́kọ́ àdáhùn owó dígítà ti ẹka báńkì sí stablecoins. Wọ́n ń pa ìbátan àdéposito báńkì oníṣòwò mọ́ nígbà tí wọ́n bá ń jẹ́ kí programmability, digital wallets, atomic settlement, àti àwọn iṣàn iṣẹ́ dukia tokenized ṣeéṣe. Lloyds Banking Group sọ pé àwọn dukia dígítà ti United Kingdom ń lọ sí inú ojú ọ̀nà gbangba ní 2026 ó sì tẹ́nu mọ́ àdéposito tokenized, digital gilts, àti Great British Tokenised Deposits gẹ́gẹ́ bí àwọn ìpilẹṣẹ̀ ile-iṣẹ́ tí ó ń ṣiṣẹ́ ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
+Àtẹ̀jáde yìí dúró lórí ìpele wholesale, institutional, àti corporate-treasury — apá ìtàn deposit-token tí àwọn pilots ti ń ṣiṣẹ́ live tí àwọn ọjà báńkì sì ń yọ jáde. Àwọn àdéposito tokenized ti retail wà gẹ́gẹ́ bí ọ̀nà ìwádìí àti nínú HSBC Gold Token retail wrapper, ṣùgbọ́n ìyípadà 2026 ń ṣẹlẹ̀ ní transaction banking, kì í ṣe nínú àwọn ìsanwó aládàámọ̀rán ojoojúmọ́.
+
 ---
 
 > **Ìsọnísókí Àwọn Olùdarí / Àwọn Kókó Pàtàkì**
@@ -158,7 +160,7 @@ BIS fi Project Agorá sípò gẹ́gẹ́ bí iṣẹ́ pẹ̀lú àwọn báńk
 
 ### JPMorgan: JPM Coin, Onyx, àti Pẹpẹ Kinexys
 
-JPMorgan ṣe ìfilọ̀lẹ̀ JPM Coin ní 2019, ọdún mẹ́rin kí ọ̀pọ̀lọpọ̀ ile-iṣẹ́ tó ń lo gbólóhùn "àdéposito tokenized" ní gbangba. Ó ń ṣiṣẹ́ lórí Onyx (ó tún jẹ́ rebrand sí Kinexys nísinsin yìí), pẹpẹ blockchain permissioned ti JPMorgan, ó sì ń ṣe settlement àwọn ìṣàn wholesale corporate-client — pàtàkì àwọn treasury sweeps ti cibiyoyi, àwọn ìṣíkiri intra-day liquidity, àti pọ̀ síi tokenized repo. Ní 2026, Kinexys ń ṣàkóso nǹkan bíi $2 bílíọ̀nù ní ọjọ́ kọ̀ọ̀kan ní àwọn ìṣòwò wholesale, èyí tí ó sọ JPMorgan di olùṣiṣẹ́ live settlement deposit-token kanṣoṣo tí ó tóbi jùlọ ní àgbáyé.
+JPMorgan ṣe ìfilọ̀lẹ̀ JPM Coin ní 2019, ọdún mẹ́rin kí ọ̀pọ̀lọpọ̀ ile-iṣẹ́ tó ń lo gbólóhùn "àdéposito tokenized" ní gbangba. Ó ń ṣiṣẹ́ lórí **Kinexys by J.P. Morgan (formerly Onyx)**, pẹpẹ blockchain permissioned ti báńkì náà, ó sì ń ṣe settlement àwọn ìṣàn wholesale corporate-client — pàtàkì àwọn treasury sweeps ti cibiyoyi, àwọn ìṣíkiri intra-day liquidity, àti pọ̀ síi tokenized repo. Ní 2026, Kinexys ń ṣàkóso nǹkan bíi $2 bílíọ̀nù ní ọjọ́ kọ̀ọ̀kan ní àwọn ìṣòwò wholesale, èyí tí ó sọ JPMorgan di olùṣiṣẹ́ live settlement deposit-token kanṣoṣo tí ó tóbi jùlọ ní àgbáyé.
 
 Ìtàn yẹn ṣe pàtàkì fún ìdí méjì. Lákọ̀ọ́kọ́, JPMorgan ní àkọsílẹ̀ samarwa tí ó pẹ́ jùlọ lórí àwọn ìbéèrè iṣẹ́ — reconciliation, ìṣàkóso ìjà, ìwà intra-day liquidity, àti àwọn ọ̀nà outage — tí àwọn báńkì míràn ṣì ń ṣe ìṣapẹẹrẹ fún. Ní ẹlẹ́ẹ̀kejì, pẹpẹ náà jẹ́ multi-asset: Kinexys ti gbòòrò kọjá deposit token sí tokenized repo, FX settlement, àti gbígbé collateral, èyí tí ó fi JPMorgan sí ipò láti ṣe delivery-versus-payment kọjá ledger kanṣoṣo dípò ọ̀nà ìjọpọ̀ point-to-point.
 
@@ -196,7 +198,15 @@ HSBC kò pa ọ̀nà stablecoin tì pátápátá. Báńkì náà ti gba ìwé-à
 
 ### Àwọn Ètò Míràn tí Ó Ń Ṣiṣẹ́
 
-Yàtọ̀ sí JPMorgan àti HSBC, ọ̀pọ̀lọpọ̀ ètò ṣe pàtàkì fún àwòrán nẹ́tíwọ́ọ̀kì bí ó tilẹ̀ jẹ́ pé àwọn ìfihàn gbangba wọn rẹ́gí. SG-FORGE ti Société Générale ti tu àwọn bondi dígítà denominated ní euro àti stablecoin euro tí a ṣe ìlànà nígbà tí ó wà ní àfikún sí iṣẹ́ deposit-token rẹ̀, ó fi Société Générale sí ipò àìbáraẹnipín ti ṣiṣẹ́ àwọn ọ̀nà méjì labẹ́ ìlànà Europe. Standard Chartered ń ṣiṣẹ́ lórí àdéposito tokenized àti dukia aye-tòótọ́ tokenized nípasẹ̀ Zodia Custody àti pilots tirẹ̀ ní Singapore. Pẹpẹ GS DAP ti Goldman Sachs ti tu bondi dígítà ó sì ń ṣètìlẹ́yìn fún collateral tokenized. Àbájáde tó gbòòrò jẹ́ tààrà: agbára deposit-token nísinsin jẹ́ ohun pàtàkì fún èyíkéyìí báńkì wholesale àgbáyé tí ó ń tẹ̀síwájú láti dúró ní ìdíje ní transaction banking, ìbéèrè tí ó nífẹ̀ẹ́ jùlọ sì jẹ́ ẹni tí ó ń ṣe interoperate pẹ̀lú ẹni tí, dípò ẹni tí ó kọ́kọ́ kọ́ọ̀.
+Yàtọ̀ sí JPMorgan àti HSBC, ọ̀pọ̀lọpọ̀ ètò ṣe pàtàkì fún àwòrán nẹ́tíwọ́ọ̀kì bí ó tilẹ̀ jẹ́ pé àwọn ìfihàn gbangba wọn rẹ́gí.
+
+**Société Générale (SG-FORGE).** SG-FORGE ti tu àwọn bondi dígítà denominated ní euro àti stablecoin euro tí a ṣe ìlànà EURCV nígbà tí ó wà ní àfikún sí iṣẹ́ deposit-token rẹ̀, EURCV sì jẹ́ stablecoin euro àkọ́kọ́ tí báńkì àgbáyé tí ó ṣe pàtàkì ní ètò ó ti tu jáde tí ó ń ṣiṣẹ́ kọjá àwọn chains gbangba púpọ̀. Èyí fi Société Générale sí ipò àìbáraẹnipín ti ṣiṣẹ́ ọ̀nà tokenized-deposit àti stablecoin tí a ṣe ìlànà labẹ́ ìlànà báńkì Europe, pẹ̀lú EURCV gẹ́gẹ́ bí ìpele ìsọrọ̀ ecosystem ṣíṣí, àti ẹ̀gbẹ́ deposit-token ń ṣakojọ regulated-corporate perimeter.
+
+**Standard Chartered.** Standard Chartered ń ṣiṣẹ́ lórí àdéposito tokenized àti dukia aye-tòótọ́ tokenized nípasẹ̀ Zodia Custody (ẹgbẹ́ rẹ̀ ti institutional digital-asset custody) àti pilots tirẹ̀ ní Singapore, pẹ̀lú ìkópa ní MAS Project Guardian fún settlement dukia tokenized. Ìfojúsùn dabaa wà lórí àwọn ọ̀nà ọjà ìdàgbàsókè — Asia–Africa–Middle East — níbi tí a fi àwọn tokenized deposits sí ipò láti yọ̀ ìjà correspondent banking dípò pé wọ́n máa kàn yí àwọn rails ti UK tàbí US ti ilé padà.
+
+**Goldman Sachs (GS DAP).** Pẹpẹ digital-asset ti GS DAP ti tu àwọn bondi dígítà ti àjọ jáde (pẹ̀lú bondi dígítà ọdún méjì €100m ti European Investment Bank) ó sì ń ṣètìlẹ́yìn fún àgbéká collateral tokenized fún repo àti securities financing. GS DAP kì í ṣe àbá corporate-treasury jùlọ ṣùgbọ́n pẹpẹ settlement tokenized-securities — ó wúlò gẹ́gẹ́ bí ìbáhuwa sí rísì kannáà ti HSBC Orion àti gẹ́gẹ́ bí ẹ̀rí pé ẹ̀gbẹ́ digital-capital-markets ti stack ń ṣèmúlẹ̀ ní iyára síi ju ẹ̀gbẹ́ deposit-token.
+
+Àbájáde tó gbòòrò jẹ́ tààrà: agbára deposit-token nísinsin jẹ́ ohun pàtàkì fún èyíkéyìí báńkì wholesale àgbáyé tí ó ń tẹ̀síwájú láti dúró ní ìdíje ní transaction banking, ìbéèrè tí ó nífẹ̀ẹ́ jùlọ sì jẹ́ ẹni tí ó ń ṣe interoperate pẹ̀lú ẹni tí, dípò ẹni tí ó kọ́kọ́ kọ́ọ̀.
 
 ## Àdéposito Tokenized lòdì sí Stablecoins lòdì sí CBDC
 
@@ -265,19 +275,19 @@ Kò sí ọ̀kan lára àwọn wọ̀nyí tí ó jẹ́ ìdí láti má ṣe k�
 
 ### Báńkì Àgbáyé
 
-Báńkì àgbáyé yẹ kí wọ́n tọ́jú àdéposito tokenized gẹ́gẹ́ bí ọ̀nà ìpilẹ̀ṣẹ̀ ti transaction-banking. Àfojúsùn yẹ kí ó jẹ́ wallets ilé-iṣẹ́, treasury láàrín àwọn orílẹ̀-èdè, settlement dukia dígítà, gbígbé collateral, àti àwọn ìṣàkóso tí a le túmọ̀ síi fún àwọn aládàámọ̀rán tó tóbi.
+Báńkì àgbáyé yẹ kí wọ́n tọ́jú àdéposito tokenized gẹ́gẹ́ bí ọ̀nà ìpilẹ̀ṣẹ̀ ti transaction-banking. Àfojúsùn yẹ kí ó jẹ́ wallets ilé-iṣẹ́, treasury láàrín àwọn orílẹ̀-èdè, settlement dukia dígítà, gbígbé collateral, àti àwọn ìṣàkóso tí a le túmọ̀ síi fún àwọn aládàámọ̀rán tó tóbi. Àwọn ìtò àyẹ̀wò ti ṣe kedere báyìí: ìwọ̀n samarwa irú Kinexys (JPMorgan), ààyè multi-track irú HSBC, ìṣopọ̀ settlement securities irú GS DAP, àti àbo méjì deposit-token plus regulated-stablecoin irú SG-FORGE. Ojú ìpinnu fún ọdún yìí ni bóyá láti so àwọn ìdánwò DLT inú ọ̀pọ̀lọpọ̀ pọ̀ mọ́ ọ̀dá pẹpẹ àdéposito tokenized kanṣoṣo fún àwọn aládàámọ̀rán treasury kí àwọn ọkùnrin gàséré tó túmọ̀ UX wallet ilé-iṣẹ́. **Action item:** ṣe àyàn olùmúlò ètò kanṣoṣo pẹ̀lú àṣẹ kọjá transaction banking, capital markets, àti àwọn ẹ̀ka digital-assets — ìṣàlàyé inú tí a yà jẹ́ ìdí tó wọ́pọ̀ jùlọ tí àwọn ìtò wọ̀nyí fi ń jẹ́ àlájẹ gẹ́gẹ́ bí pilots dípò ọjà.
 
 ### Báńkì UK
 
-Báńkì UK ní àǹfààní ìṣètò àkọ́kọ́ tí ó gbára lé nípasẹ̀ Great British Tokenised Deposits. Ìpèníjà ni láti yí pilots padà sí àwọn ọ̀pá ìdíwọ̀n interoperable kí àwọn nẹ́tíwọ́ọ̀kì stablecoin tó di ìbáṣepọ̀ àgbáyé.
+Báńkì UK ní àǹfààní ìṣètò àkọ́kọ́ tí ó gbára lé nípasẹ̀ Great British Tokenised Deposits, multi-bank pilot sì ni a ń wo ní àgbáyé gẹ́gẹ́ bí àwòṣe fún interoperability àárín-báńkì ti tokenized-deposit. Ìpèníjà ni láti yí pilots padà sí àwọn ọ̀pá ìdíwọ̀n interoperable kí àwọn nẹ́tíwọ́ọ̀kì stablecoin tó di ìbáṣepọ̀ àgbáyé. **Action item:** mu àwọn iṣàn iṣẹ́ ti marketplace-payments àti sísanpadà owó ilé lágbára sí àyè operational-readiness ní 2026 (SLAs tí ó kedere, ìtọ́jú ìjà, ìṣopọ̀ sanctions) dípò ṣíṣe àwọn àfihàn proof-of-concept láìní ìparí; ìgbẹ́kẹ̀lé pilot dá lórí àlájẹ àpẹẹrẹ ìlò ipele samarwa kan kò kéré sí kí fèrèsé àárín 2026 tó tì.
 
 ### Báńkì Àárín àti Àwọn Olùṣàkóso
 
-Àwọn olùṣàkóso nílò láti ṣe kedere ìwà òfin, ìtọ́jú ìṣèdarí àdéposito, olú ìṣọ́ra, ìparí settlement, ìtọ́jú wallet, ìfaradà iṣẹ́, àti báwo ni àdéposito tokenized ṣe ń ṣiṣẹ́ pẹ̀lú stablecoins àti CBDC.
+Àwọn olùṣàkóso nílò láti ṣe kedere ìwà òfin, ìtọ́jú ìṣèdarí àdéposito, olú ìṣọ́ra, ìparí settlement, ìtọ́jú wallet, ìfaradà iṣẹ́, àti báwo ni àdéposito tokenized ṣe ń ṣiṣẹ́ pẹ̀lú stablecoins àti CBDC. **Action item:** tu àkójọpọ̀ ìtọ́ni tó nípọn lórí ọ̀ràn hybrid — stablecoins tí àdéposito tì lẹ́yìn àti àdéposito tokenized tí báńkì tu jáde ń ṣiṣẹ́ lórí ledger kannáà — nítorí pé ìyẹn ni ìṣètò tí ọ̀pọ̀lọpọ̀ báńkì ń sún mọ́, ọ̀rọ̀ ìlànà nísinsin yìí sì ń kàá bí ẹni pé àwọn ẹ̀ka méjì kò pàdé láé.
 
 ### Àwọn Ilé-iṣẹ́
 
-Àwọn ilé-iṣẹ́ kò gbọ́dọ̀ dúró fún nẹ́tíwọ́ọ̀kì àgbáyé. Wọ́n yẹ kí wọ́n bẹ̀rẹ̀ sí ṣe àwòrán àwọn àpẹẹrẹ ìlò tí owó báńkì tí a le túmọ̀ síi le dín jìbìtì, ìdádúró settlement, iṣẹ́ àdápapọ̀, tàbí liquidity tí a dí mọ́lẹ̀ kù.
+Àwọn ilé-iṣẹ́ kò gbọ́dọ̀ dúró fún nẹ́tíwọ́ọ̀kì àgbáyé. Wọ́n yẹ kí wọ́n bẹ̀rẹ̀ sí ṣe àwòrán àwọn àpẹẹrẹ ìlò tí owó báńkì tí a le túmọ̀ síi le dín jìbìtì, ìdádúró settlement, iṣẹ́ àdápapọ̀, tàbí liquidity tí a dí mọ́lẹ̀ kù. **Action item:** ṣe pilot iṣàn kan tó kedere pẹ̀lú KPIs tí a le wọ̀n — cross-border liquidity sweeps, intra-day collateral mobility, tàbí DvP fún tokenized gilts ni mẹ́ta tí ó ní àmì jùlọ — ó sì gbà rẹ̀ pẹ̀lú àwọn ìbéèrè ọ̀nà ìṣubú ní ọkàn (kí ni yóò ṣẹlẹ̀ tí smart contract bá dúró; báwo ni ẹsẹ̀ tokenized ṣe ń ṣiṣẹ́ ní ìṣẹ̀lẹ̀ ìpọ́njú lóòótọ́ pẹ̀lú ẹsẹ̀ ìbílẹ̀).
 
 ## Ìparí
 
@@ -287,23 +297,23 @@ Báńkì UK ní àǹfààní ìṣètò àkọ́kọ́ tí ó gbára lé nípas�
 
 **Ǹjẹ́ àdéposito tokenized jẹ́ kan náà bíi stablecoins?**
 
-Bẹ́ẹ̀kọ́. A pinnu àdéposito tokenized láti ṣe àṣojú owó àdéposito báńkì oníṣòwò, nígbà tí a sábà gbé stablecoins jáde lòdì sí ètò ìpamọ́ tí wọn kò sì ń ṣe settlement lórí balance sheet báńkì àárín lọ́nà kan náà bíi tí àwọn ìsanwó báńkì ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+Bẹ́ẹ̀kọ́. Méjèèjì ń pèsè owó dígítà tí a le túmọ̀ síi, 24/7, ṣùgbọ́n wọ́n ń lo àwọn ìṣètò òfin àti ti ẹ̀tọ́ tí ó yàtọ̀ pátápátá. Stablecoin jẹ́ ẹ̀tọ́ lórí dukia ìpamọ́ tàbí ìṣètò ile-iṣẹ́ ti olùpèsè aládàáni, tí ó ń ṣiṣẹ́ níta balance sheet ti báńkì àárín ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Àdéposito tokenized jẹ́ gbèsè tààrà ti báńkì oníṣòwò tí ó jogún ìlànà báńkì tí ó wà, ìṣàkóso AML/sanctions, àti ààlà inṣòra àdéposito ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 
 **Kí ni àwọn àpẹẹrẹ ìlò pàtàkì UK?**
 
-Lloyds dáwọn ìsanwó marketplace, sísanpadà ti owó ilé, àti settlement dukia dígítà mọ̀ gẹ́gẹ́ bí àwọn àpẹẹrẹ ìlò fún Great British Tokenised Deposits ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
+Multi-bank pilot ti àárín 2026 ti UK (HSBC, Lloyds, NatWest, Barclays, Nationwide, àti Santander) ń dúró lórí àwọn ààyè tó wúlò mẹ́ta: ìsanwó marketplace láàrín ènìyàn-sí-ènìyàn láti dín jìbìtì kù, àwọn iṣàn iṣẹ́ ọ̀pọ̀-ẹgbẹ́ tí a ṣe ìṣe-ara-ẹni fún sísanpadà owó ilé, àti delivery-versus-payment (DvP) settlement dukia dígítà — ìjọmọ owó tokenized àti gilts olówò tokenized nínú pilot UK Digital Gilt Instrument (DIGIT) ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
 **Ǹjẹ́ àdéposito tokenized yóò rọ́pò stablecoins?**
 
-Kì í ṣe pátápátá. Stablecoins yóò ṣeéṣe láti dúró pàtàkì nínú àwọn àpẹẹrẹ ìlò crypto-native àti liquidity dọ́là. Àdéposito tokenized yóò ṣeéṣe láti jọba lórí àwọn iṣàn iṣẹ́ báńkì-aládàámọ̀rán tí a ṣe ìlànà níbi tí àwọn ìbátan báńkì oníṣòwò, ìṣàkóso treasury, àti àwọn ààbò ìṣọ́ra ṣe pàtàkì.
+Kò ṣeéṣe; wọ́n jẹ́ àwọn ohun-èlò tó ń kún ara wọn ní àwọn ààyè ọ̀tọ̀ọ̀tọ̀. Stablecoins yóò tẹ̀síwájú láti jọba lórí àwọn DeFi ecosystems ṣíṣí, àwọn liquidity pools crypto-native, àti ìpamọ́ retail kọjá àwọn orílẹ̀-èdè ní àwọn ọjà fiat tó ní àìbámu. Àdéposito tokenized yóò borí ààyè tí a ṣe ìlànà — cash management ti corporate treasury, settlement ìṣòwò àjọ, àti transaction banking ti ìwọ̀n ńlá — níbi tí inṣòra àdéposito, ìtọ́jú olú prudential, àti àwọn ìṣàkóso AML tí ó wà ṣe pàtàkì.
 
-**Kí ni ó ń dí gbígbòòrò lọ́nà?**
+**Kí ni ó ń dí gbígbòòrò ní ìwọ̀n nẹ́tíwọ́ọ̀kì?**
 
-Interoperability, ìparí òfin, ìtọ́jú ìlànà, àwọn ọ̀pá ìdíwọ̀n wallet, ìṣàkóso láàrín báńkì, àti ìṣopọ̀ pẹ̀lú owó báńkì àárín ni àwọn ìdíwọ́ pàtàkì. Ìmọ̀-ẹ̀rọ jẹ́ apá kan ṣoṣo ti ìṣòro gbígbà.
+Ìmọ̀-ẹ̀rọ funrarẹ̀ ti múra. Gbígbòòrò ni a ń dí láti ọ̀dọ̀ ìjà mẹ́ta tó kì í ṣe ti ìmọ̀-ẹ̀rọ: **interoperability** (àwọn DLT stacks tó yà — Corda, Canton, Hyperledger Besu, HSBC Orion — tí ó ń ṣiṣẹ́ nísinsin gẹ́gẹ́ bí àwọn ọgbà tí a fi odi yí); **ìparí òfin** (kò sí ìbámu ìlànà àgbáyé lórí ìjà àwọn òfin tàbí báwo ni a ṣe le bámu pẹ̀lú immutability ti DLT pẹ̀lú ojúṣe báńkì láti yí àwọn ìṣòwò padà lábẹ́ àṣẹ ilé-ẹjọ́, sanctions, tàbí àṣìṣe iṣẹ́); àti **tálẹntì ìmúrè** (ile-iṣẹ́ kò ṣe ọ̀pá ìdíwọ̀n bóyá àwọn wallets ilé-iṣẹ́ tokenized máa san ìmúrè overnight tó ní ìdíje tàbí kí wọ́n máa wà bíi float ìṣòwò aláìní eso).
 
 **Báńkì wo ló ní ìtò àdéposito tokenized tó dàgbà jùlọ?**
 
-HSBC. HSBC Tokenised Deposit Service ń ṣiṣẹ́ ní Hong Kong, Singapore, United Kingdom, Luxembourg, àti United States nínú USD, GBP, EUR, HKD, àti SGD; HSBC Orion jẹ́ ìpilẹ̀ṣẹ̀ tí a yàn fún pilot Digital Gilt Instrument (DIGIT) ti United Kingdom; HSBC Gold Token ń tokenize wúrà ti ara tí a pin; HSBC sì ti ṣe àyẹ̀wò atomic settlement láàrín àwọn nẹ́tíwọ́ọ̀kì (Canton Network, Project Ensemble) àti ààbò cryptographic post-quantum pẹ̀lú Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+Adé tí a pín. JPMorgan ni olórí lórí ìwọ̀n samarwa, pẹ̀lú Kinexys by J.P. Morgan (formerly Onyx) ń ṣàkóso nǹkan bíi $2 bílíọ̀nù ní ọjọ́ kọ̀ọ̀kan ní àwọn ìṣòwò ilé-iṣẹ́ wholesale ([JPMorgan](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan")). HSBC ní ìtò multi-track tí ó yàtọ̀ jùlọ ní ìṣètò: HSBC Tokenised Deposit Service ní Hong Kong, Singapore, United Kingdom, Luxembourg, àti US ní USD/GBP/EUR/HKD/SGD; HSBC Orion gẹ́gẹ́ bí ìpilẹ̀ṣẹ̀ tí a yàn fún pilot UK Digital Gilt Instrument (DIGIT); HSBC Gold Token tí ń tokenize wúrà ti ara tí a pin; pẹ̀lú atomic settlement láàrín nẹ́tíwọ́ọ̀kì tí a ṣàyẹ̀wò lórí Canton àti Project Ensemble àti ààbò cryptographic post-quantum tí a ṣe pẹ̀lú Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). Multi-bank pilot UK ni àyẹ̀wò live tó dára jùlọ ti interoperability àárín-báńkì.
 
 ## Àwọn Ìtọ́ka
 

@@ -107,6 +107,8 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 
 Tiền gửi mã hóa đang trở thành câu trả lời tiền số quan trọng nhất của ngành ngân hàng đối với stablecoin. Chúng vẫn duy trì quan hệ tiền gửi của ngân hàng thương mại, đồng thời cho phép tính lập trình, ví số, thanh toán nguyên tử và các quy trình tài sản được mã hóa. Lloyds Banking Group cho biết tài sản số tại Vương quốc Anh đang đi vào dòng chính năm 2026 và nhấn mạnh tiền gửi mã hóa, trái phiếu chính phủ Anh dạng số (digital gilts) cùng Great British Tokenised Deposits là những sáng kiến ngành đang được triển khai ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
+Bài viết này được giới hạn ở tầng bán buôn, tổ chức và quản lý dòng tiền doanh nghiệp — phần trong câu chuyện token tiền gửi mà các thí điểm đang chạy và các sản phẩm ngân hàng đang dần hình thành. Tiền gửi mã hóa bán lẻ tồn tại dưới dạng một nhánh nghiên cứu và bên trong lớp vỏ bán lẻ của HSBC Gold Token, nhưng bước ngoặt của năm 2026 đang diễn ra trong ngân hàng giao dịch, chứ không phải trong các khoản thanh toán tiêu dùng hằng ngày.
+
 ---
 
 > **Tóm tắt cho lãnh đạo / Những điểm chính**
@@ -161,7 +163,7 @@ Có ba chương trình đáng được mô tả riêng: JPMorgan, đơn vị đ�
 
 ### JPMorgan: JPM Coin, Onyx và nền tảng Kinexys
 
-JPMorgan đã ra mắt JPM Coin vào năm 2019, sớm hơn bốn năm so với khi hầu hết ngành công khai sử dụng cụm từ "tiền gửi mã hóa". Nó chạy trên Onyx (nay được đổi tên thành Kinexys), nền tảng blockchain có cấp phép của JPMorgan, và thanh toán các luồng khách hàng doanh nghiệp bán buôn — chủ yếu là các giao dịch chuyển vốn quản lý dòng tiền của tổ chức, các giao dịch chuyển thanh khoản trong ngày và ngày càng nhiều giao dịch repo được mã hóa. Đến năm 2026, Kinexys đang xử lý quy mô khoảng 2 tỷ USD mỗi ngày trong các giao dịch bán buôn, biến JPMorgan thành nhà vận hành thanh toán token tiền gửi lớn nhất duy nhất trên thế giới.
+JPMorgan đã ra mắt JPM Coin vào năm 2019, sớm hơn bốn năm so với khi hầu hết ngành công khai sử dụng cụm từ "tiền gửi mã hóa". Nó chạy trên **Kinexys by J.P. Morgan (formerly Onyx)**, nền tảng blockchain có cấp phép của JPMorgan, và thanh toán các luồng khách hàng doanh nghiệp bán buôn — chủ yếu là các giao dịch chuyển vốn quản lý dòng tiền của tổ chức, các giao dịch chuyển thanh khoản trong ngày và ngày càng nhiều giao dịch repo được mã hóa. Đến năm 2026, Kinexys đang xử lý quy mô khoảng 2 tỷ USD mỗi ngày trong các giao dịch bán buôn, biến JPMorgan thành nhà vận hành thanh toán token tiền gửi lớn nhất duy nhất trên thế giới.
 
 Lịch sử đó quan trọng vì hai lý do. Thứ nhất, JPMorgan có track record sản xuất dài nhất về các câu hỏi vận hành — đối soát, xử lý tranh chấp, hành vi thanh khoản trong ngày và các chế độ sự cố — mà các ngân hàng khác vẫn đang thiết kế. Thứ hai, nền tảng là đa tài sản: Kinexys đã mở rộng vượt ra ngoài token tiền gửi sang repo được mã hóa, thanh toán FX và tính linh động của tài sản đảm bảo, đặt JPMorgan vào vị thế cung cấp delivery-versus-payment trên một sổ cái duy nhất thay vì qua các tích hợp điểm-điểm.
 
@@ -199,7 +201,15 @@ HSBC không hoàn toàn bỏ qua hướng đi stablecoin. Ngân hàng đã có �
 
 ### Các chương trình hoạt động khác
 
-Ngoài JPMorgan và HSBC, có một số chương trình mang ý nghĩa thực sự đối với bức tranh mạng lưới ngay cả khi các công bố công khai mỏng hơn. SG-FORGE của Société Générale đã phát hành trái phiếu số bằng euro và một stablecoin euro được quản lý song song với công việc token tiền gửi, đặt Société Générale vào vị thế hiếm có khi vận hành cả hai hướng dưới quy định châu Âu. Standard Chartered hoạt động trong lĩnh vực tiền gửi mã hóa và tài sản thực được mã hóa thông qua Zodia Custody và các thí điểm tại Singapore. Nền tảng GS DAP của Goldman Sachs đã phát hành trái phiếu số và hỗ trợ tài sản đảm bảo được mã hóa. Hàm ý rộng hơn rất rõ ràng: năng lực token tiền gửi nay là điều kiện cơ bản đối với bất kỳ ngân hàng bán buôn toàn cầu nào muốn duy trì tính cạnh tranh trong ngân hàng giao dịch, và câu hỏi thú vị hơn là ai tương tác với ai chứ không phải ai xây dựng trước.
+Ngoài JPMorgan và HSBC, còn có một số chương trình có ý nghĩa thực sự đối với bức tranh mạng lưới, ngay cả khi các công bố công khai mỏng hơn.
+
+**Société Générale (SG-FORGE).** SG-FORGE đã phát hành trái phiếu số bằng euro và stablecoin euro được quản lý EURCV song song với công việc token tiền gửi, và EURCV là stablecoin euro đầu tiên được phát hành bởi một ngân hàng có tầm quan trọng hệ thống toàn cầu (G-SIB) và vận hành trên nhiều chuỗi công khai. Điều này đặt Société Générale vào vị thế hiếm có khi vận hành đồng thời cả hai hướng — token tiền gửi và stablecoin được quản lý — dưới khung quy định ngân hàng châu Âu, với EURCV đóng vai trò là lớp tiếp cận hệ sinh thái mở, còn phía token tiền gửi đảm nhiệm vành đai doanh nghiệp được quản lý.
+
+**Standard Chartered.** Standard Chartered hoạt động trong lĩnh vực tiền gửi mã hóa và tài sản thực được mã hóa thông qua Zodia Custody (liên doanh lưu ký tài sản số cấp tổ chức của mình) cùng các thí điểm có trụ sở tại Singapore, bao gồm cả việc tham gia vào MAS Project Guardian cho thanh toán tài sản được mã hóa. Trọng tâm chiến lược đặt vào các hành lang thị trường mới nổi — Á–Phi–Trung Đông — nơi tiền gửi mã hóa được định vị để thay thế ma sát của ngân hàng đại lý thay vì chỉ nâng cấp các đường thanh toán nội địa của Anh hay Mỹ.
+
+**Goldman Sachs (GS DAP).** Nền tảng tài sản số GS DAP đã phát hành các trái phiếu số cấp tổ chức (bao gồm trái phiếu số kỳ hạn 2 năm trị giá 100 triệu EUR của European Investment Bank) và hỗ trợ tính linh động của tài sản đảm bảo được mã hóa cho repo và tài trợ chứng khoán. GS DAP thiên về nền tảng thanh toán chứng khoán được mã hóa hơn là một đề xuất quản lý dòng tiền doanh nghiệp — hữu ích như một điểm tham chiếu đối với vai trò tương tự của HSBC Orion, và là bằng chứng cho thấy phía thị trường vốn số đang hợp nhất nhanh hơn phía token tiền gửi.
+
+Hàm ý rộng hơn rất rõ ràng: năng lực token tiền gửi nay là điều kiện cơ bản đối với bất kỳ ngân hàng bán buôn toàn cầu nào muốn duy trì tính cạnh tranh trong ngân hàng giao dịch, và câu hỏi thú vị hơn là ai tương tác với ai chứ không phải ai xây dựng trước.
 
 ## Tiền gửi mã hóa so với stablecoin và CBDC
 
@@ -268,19 +278,19 @@ Không có điều nào trong số này là lý do để không xây dựng ti�
 
 ### Ngân hàng toàn cầu
 
-Các ngân hàng toàn cầu nên coi tiền gửi mã hóa là hạ tầng ngân hàng giao dịch. Trọng tâm nên là ví doanh nghiệp, quản lý dòng tiền xuyên biên giới, thanh toán tài sản số, tính linh động của tài sản đảm bảo và các kiểm soát có khả năng lập trình cho khách hàng lớn.
+Các ngân hàng toàn cầu nên coi tiền gửi mã hóa là hạ tầng ngân hàng giao dịch. Trọng tâm nên là ví doanh nghiệp, quản lý dòng tiền xuyên biên giới, thanh toán tài sản số, tính linh động của tài sản đảm bảo và các kiểm soát có khả năng lập trình cho khách hàng lớn. Các bộ giải pháp tham chiếu hiện đã rõ ràng: quy mô sản xuất kiểu Kinexys (JPMorgan), độ rộng đa hướng kiểu HSBC, tích hợp thanh toán chứng khoán kiểu GS DAP, và phủ kép token tiền gửi cộng với stablecoin được quản lý kiểu SG-FORGE. Điểm quyết định trong năm nay là liệu có hợp nhất nhiều thí nghiệm DLT nội bộ vào một nền tảng tiền gửi mã hóa duy nhất phục vụ khách hàng quản lý dòng tiền trước khi các đối thủ định nghĩa trải nghiệm người dùng cho ví doanh nghiệp hay không. **Hành động:** chỉ định một chủ chương trình duy nhất có thẩm quyền xuyên suốt ngân hàng giao dịch, thị trường vốn và bộ phận tài sản số — sự phân mảnh trong tài trợ nội bộ là lý do phổ biến nhất khiến các bộ giải pháp này chỉ được triển khai dưới dạng thí điểm thay vì sản phẩm.
 
 ### Ngân hàng Anh
 
-Các ngân hàng Anh có cơ hội phối hợp sớm đáng tin cậy thông qua Great British Tokenised Deposits. Thách thức là chuyển các thí điểm thành các chuẩn có khả năng tương tác trước khi các mạng stablecoin trở thành giao diện quốc tế mặc định.
+Các ngân hàng Anh có cơ hội phối hợp sớm đáng tin cậy thông qua Great British Tokenised Deposits, và chương trình thí điểm đa ngân hàng đang được toàn cầu theo dõi như một khuôn mẫu cho khả năng tương tác tiền gửi mã hóa liên ngân hàng. Thách thức là chuyển các thí điểm thành các chuẩn có khả năng tương tác trước khi các mạng stablecoin trở thành giao diện quốc tế mặc định. **Hành động:** đưa các luồng thanh toán trên marketplace và tái thế chấp đạt mức sẵn sàng vận hành trong năm 2026 (SLA rõ ràng, xử lý tranh chấp, tích hợp sàng lọc cấm vận) thay vì tiếp tục các trình diễn proof-of-concept vô thời hạn; uy tín của thí điểm phụ thuộc vào việc triển khai ít nhất một ca sử dụng cấp sản xuất trước khi cửa sổ giữa năm 2026 đóng lại.
 
 ### Ngân hàng trung ương và cơ quan quản lý
 
-Các cơ quan quản lý cần làm rõ tính chất pháp lý, cách xử lý bảo hiểm tiền gửi, vốn an toàn, tính chung kết của thanh toán, lưu ký ví, khả năng phục hồi vận hành và cách tiền gửi mã hóa tương tác với stablecoin và CBDC.
+Các cơ quan quản lý cần làm rõ tính chất pháp lý, cách xử lý bảo hiểm tiền gửi, vốn an toàn, tính chung kết của thanh toán, lưu ký ví, khả năng phục hồi vận hành và cách tiền gửi mã hóa tương tác với stablecoin và CBDC. **Hành động:** công bố hướng dẫn cụ thể cho trường hợp lai — stablecoin được bảo chứng bằng tiền gửi và tiền gửi mã hóa do ngân hàng phát hành cùng vận hành trên một sổ cái — bởi đây là cấu trúc mà phần lớn các ngân hàng đang hội tụ, trong khi văn bản quy định hiện hành đọc như thể hai hạng mục này không bao giờ giao nhau.
 
 ### Doanh nghiệp
 
-Doanh nghiệp không nên chờ một mạng phổ quát. Họ nên bắt đầu lập bản đồ các ca sử dụng mà tiền ngân hàng có khả năng lập trình có thể giảm gian lận, độ trễ thanh toán, công việc đối soát hoặc thanh khoản bị mắc kẹt.
+Doanh nghiệp không nên chờ một mạng phổ quát. Họ nên bắt đầu lập bản đồ các ca sử dụng mà tiền ngân hàng có khả năng lập trình có thể giảm gian lận, độ trễ thanh toán, công việc đối soát hoặc thanh khoản bị mắc kẹt. **Hành động:** thí điểm một luồng cụ thể với các KPI có thể đo lường được — các đợt quét thanh khoản xuyên biên giới, tính linh động của tài sản đảm bảo trong ngày, hoặc DvP cho gilts được mã hóa là ba ứng viên có tín hiệu mạnh nhất — và thiết kế hệ thống đo lường với tâm thế cảnh giác về các chế độ sự cố (chuyện gì xảy ra khi hợp đồng thông minh tạm dừng; phía mã hóa sẽ hành xử ra sao so với phía thông thường trong kịch bản căng thẳng).
 
 ## Kết luận
 
@@ -290,23 +300,23 @@ Tiền gửi mã hóa năm 2026 đang ở vị trí mà thanh toán thời gian 
 
 **Tiền gửi mã hóa có giống stablecoin không?**
 
-Không. Tiền gửi mã hóa được thiết kế để đại diện cho tiền gửi của ngân hàng thương mại, trong khi stablecoin thường được phát hành dựa trên một cơ cấu dự trữ và không thanh toán trên bảng cân đối kế toán của ngân hàng trung ương theo cách giống như các khoản thanh toán ngân hàng ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+Không. Cả hai đều cung cấp tiền số có khả năng lập trình, hoạt động 24/7, nhưng chúng sử dụng cấu trúc pháp lý và cấu trúc quyền đòi nợ hoàn toàn khác nhau. Stablecoin là quyền đòi nợ đối với một tổ chức phát hành tư nhân hoặc một cấu trúc pháp nhân, vận hành bên ngoài bảng cân đối kế toán của ngân hàng trung ương ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Tiền gửi mã hóa là một khoản nợ trực tiếp của ngân hàng thương mại, kế thừa khung quy định ngân hàng hiện hành, các kiểm soát AML/cấm vận và vành đai bảo hiểm tiền gửi ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 
 **Các ca sử dụng hàng đầu tại Vương quốc Anh là gì?**
 
-Lloyds xác định thanh toán trên marketplace, tái thế chấp và thanh toán tài sản số là các ca sử dụng cho Great British Tokenised Deposits ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
+Thí điểm đa ngân hàng giữa năm 2026 tại Vương quốc Anh (HSBC, Lloyds, NatWest, Barclays, Nationwide và Santander) đang tập trung vào ba lĩnh vực thực tế: thanh toán trên marketplace giữa cá nhân nhằm giảm gian lận, tự động hóa quy trình đa bên cho tái thế chấp, và thanh toán tài sản số theo cơ chế delivery-versus-payment (DvP) — đối ứng tiền mặt được mã hóa với trái phiếu chính phủ Anh được mã hóa trong thí điểm UK Digital Gilt Instrument (DIGIT) ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
 **Tiền gửi mã hóa có thay thế stablecoin không?**
 
-Không hoàn toàn. Stablecoin nhiều khả năng vẫn quan trọng trong các ca sử dụng gốc tiền mã hóa và thanh khoản đô la. Tiền gửi mã hóa nhiều khả năng sẽ thống lĩnh các quy trình ngân hàng-khách hàng được quản lý, nơi mối quan hệ với ngân hàng thương mại, các kiểm soát quản lý dòng tiền và các biện pháp an toàn là quan trọng.
+Khó có khả năng; chúng là các công cụ bổ sung cho nhau, phục vụ những vành đai khác nhau. Stablecoin sẽ tiếp tục thống lĩnh các hệ sinh thái DeFi mở, các bể thanh khoản gốc tiền mã hóa và việc tiết kiệm xuyên biên giới ở bán lẻ tại các thị trường fiat biến động mạnh. Tiền gửi mã hóa sẽ giành phần thắng trong vành đai được quản lý — quản lý tiền mặt của bộ phận quản lý dòng tiền doanh nghiệp, thanh toán giao dịch tổ chức và ngân hàng giao dịch quy mô lớn — nơi bảo hiểm tiền gửi, xử lý vốn an toàn và các kiểm soát AML hiện hành đóng vai trò quan trọng.
 
 **Điều gì cản trở việc mở rộng quy mô?**
 
-Khả năng tương tác, tính chung kết pháp lý, cách xử lý quy định, các chuẩn ví, quản trị giữa các ngân hàng và sự tích hợp với tiền của ngân hàng trung ương là các rào cản chính. Công nghệ chỉ là một phần của vấn đề chấp nhận.
+Bản thân công nghệ đã sẵn sàng. Quy mô bị chặn bởi ba điểm ma sát phi kỹ thuật: **khả năng tương tác** (các bộ giải pháp DLT bị phân mảnh — Corda, Canton, Hyperledger Besu, HSBC Orion — hiện đang vận hành như các vườn rào kín); **tính chung kết pháp lý** (không có sự hài hòa quy định toàn cầu về xung đột pháp luật, cũng như cách hài hòa giữa tính bất biến của DLT với nghĩa vụ của ngân hàng phải đảo ngược giao dịch theo lệnh tòa, lệnh cấm vận hoặc lỗi vận hành); và **kinh tế lãi suất** (ngành chưa chuẩn hóa việc ví doanh nghiệp được mã hóa có trả lãi suất qua đêm cạnh tranh hay hành xử như một số tiền giao dịch luân chuyển không sinh lãi).
 
 **Ngân hàng nào có bộ giải pháp tiền gửi mã hóa phát triển nhất?**
 
-HSBC. HSBC Tokenised Deposit Service đang vận hành tại Hồng Kông, Singapore, Vương quốc Anh, Luxembourg và Hoa Kỳ với USD, GBP, EUR, HKD và SGD; HSBC Orion là hạ tầng được chỉ định cho thí điểm Digital Gilt Instrument (DIGIT) của Vương quốc Anh; HSBC Gold Token mã hóa vàng vật chất đã được phân bổ; và HSBC đã thử nghiệm thanh toán nguyên tử liên mạng (Canton, Project Ensemble) và bảo mật mật mã hậu lượng tử với Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+Vương miện chia đôi. JPMorgan là nhà dẫn đầu không thể tranh cãi về sản lượng sản xuất, với Kinexys by J.P. Morgan (formerly Onyx) xử lý quy mô khoảng 2 tỷ USD mỗi ngày trong các giao dịch doanh nghiệp bán buôn ([JPMorgan](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan")). HSBC sở hữu bộ giải pháp đa hướng đa dạng nhất về mặt cấu trúc: HSBC Tokenised Deposit Service trải dài Hồng Kông, Singapore, Vương quốc Anh, Luxembourg và Hoa Kỳ bằng USD/GBP/EUR/HKD/SGD; HSBC Orion là hạ tầng được chỉ định cho thí điểm UK Digital Gilt Instrument (DIGIT); HSBC Gold Token mã hóa vàng vật chất đã được phân bổ; cùng với thanh toán nguyên tử liên mạng được thử nghiệm trên Canton và Project Ensemble và bảo mật mật mã hậu lượng tử được triển khai với Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). Thí điểm đa ngân hàng tại Anh là thử nghiệm khả tín nhất về khả năng tương tác liên ngân hàng đang diễn ra trên thực tế.
 
 ## Tài liệu tham khảo
 

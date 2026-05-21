@@ -104,6 +104,8 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 
 Deposito tertokenisasi menjadi jawaban uang digital paling penting dari sektor perbankan terhadap stablecoin. Mereka mempertahankan hubungan deposito bank komersial sambil memungkinkan kemampuan untuk diprogram, dompet digital, penyelesaian atomik, dan alur kerja aset tertokenisasi. Lloyds Banking Group menyatakan bahwa aset digital Inggris bergerak menuju arus utama pada 2026 dan menyoroti deposito tertokenisasi, digital gilts, dan Great British Tokenised Deposits sebagai inisiatif industri yang aktif ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
+Tulisan ini berfokus pada lapisan wholesale, institusional, dan treasury korporat — bagian dari cerita deposit-token di mana pilot sudah berjalan dan produk bank sedang terbentuk. Deposito tertokenisasi ritel ada sebagai jalur riset dan di dalam selubung ritel HSBC Gold Token, tetapi titik infleksi 2026 terjadi di transaction banking, bukan di pembayaran konsumen sehari-hari.
+
 ---
 
 > **Ringkasan Eksekutif / Poin-poin Utama**
@@ -158,7 +160,7 @@ Tiga program layak diprofilkan sendiri: JPMorgan, yang merintis kategori deposit
 
 ### JPMorgan: JPM Coin, Onyx, dan Platform Kinexys
 
-JPMorgan meluncurkan JPM Coin pada 2019, empat tahun sebelum sebagian besar industri menggunakan frasa "deposito tertokenisasi" di publik. Ia berjalan di Onyx (sekarang diganti merek menjadi Kinexys), platform blockchain permissioned JPMorgan, dan menyelesaikan aliran klien korporat wholesale — terutama treasury sweeps institusional, perpindahan likuiditas intraday, dan semakin banyak repo tertokenisasi. Pada 2026, Kinexys memproses sekitar $2 miliar per hari dalam transaksi wholesale, yang menjadikan JPMorgan operator live tunggal terbesar untuk penyelesaian deposit-token di dunia.
+JPMorgan meluncurkan JPM Coin pada 2019, empat tahun sebelum sebagian besar industri menggunakan frasa "deposito tertokenisasi" di publik. Ia berjalan di **Kinexys by J.P. Morgan (formerly Onyx)**, platform blockchain permissioned bank tersebut, dan menyelesaikan aliran klien korporat wholesale — terutama treasury sweeps institusional, perpindahan likuiditas intraday, dan semakin banyak repo tertokenisasi. Pada 2026, Kinexys memproses sekitar $2 miliar per hari dalam transaksi wholesale, yang menjadikan JPMorgan operator live tunggal terbesar untuk penyelesaian deposit-token di dunia.
 
 Sejarah itu penting karena dua alasan. Pertama, JPMorgan memiliki rekam jejak produksi terlama mengenai pertanyaan operasional — rekonsiliasi, penanganan sengketa, perilaku likuiditas intraday, dan mode outage — yang masih dirancang bank lain. Kedua, platform ini multi-aset: Kinexys telah berekspansi dari deposit token ke repo tertokenisasi, penyelesaian FX, dan mobilitas agunan, yang menempatkan JPMorgan untuk memberikan delivery-versus-payment di seluruh ledger tunggal alih-alih melalui integrasi point-to-point.
 
@@ -196,7 +198,15 @@ HSBC tidak sepenuhnya mengabaikan jalur stablecoin. Bank tersebut telah memperol
 
 ### Program Aktif Lainnya
 
-Di luar JPMorgan dan HSBC, beberapa program penting bagi gambaran jaringan walaupun pengungkapan publik mereka lebih tipis. SG-FORGE milik Société Générale telah menerbitkan obligasi digital berdenominasi euro dan stablecoin euro teregulasi di samping pekerjaan deposit-token-nya, menempatkan Société Générale dalam posisi tidak biasa menjalankan kedua jalur di bawah regulasi Eropa. Standard Chartered aktif dalam deposito tertokenisasi dan aset dunia nyata tertokenisasi melalui Zodia Custody serta pilotnya sendiri di Singapura. Platform GS DAP Goldman Sachs telah menerbitkan obligasi digital dan mendukung agunan tertokenisasi. Implikasi yang lebih luas sederhana: kapabilitas deposit-token kini menjadi taruhan minimum bagi setiap bank wholesale global yang berharap tetap kompetitif dalam transaction banking, dan pertanyaan yang lebih menarik adalah siapa yang berinteroperasi dengan siapa, bukan siapa yang membangun lebih dulu.
+Di luar JPMorgan dan HSBC, beberapa program penting bagi gambaran jaringan walaupun pengungkapan publik mereka lebih tipis.
+
+**Société Générale (SG-FORGE).** SG-FORGE telah menerbitkan obligasi digital berdenominasi euro dan stablecoin euro teregulasi EURCV di samping pekerjaan deposit-token-nya, dan EURCV merupakan stablecoin euro pertama yang diterbitkan oleh sebuah bank yang penting secara sistemik global yang beroperasi di banyak rantai publik. Hal itu menempatkan Société Générale dalam posisi tidak biasa untuk menjalankan baik jalur tokenisasi-deposito maupun jalur stablecoin teregulasi di bawah regulasi perbankan Eropa, dengan EURCV diposisikan sebagai lapisan jangkauan ekosistem terbuka dan sisi deposit-token menangani perimeter korporat teregulasi.
+
+**Standard Chartered.** Standard Chartered aktif pada deposito tertokenisasi dan aset dunia-nyata tertokenisasi melalui Zodia Custody (usaha custody aset-digital institusionalnya) serta pilotnya sendiri di Singapura, termasuk partisipasi dalam MAS Project Guardian untuk penyelesaian aset tertokenisasi. Penekanan strategisnya adalah pada koridor pasar berkembang — Asia–Afrika–Timur Tengah — di mana deposito tertokenisasi diposisikan untuk menggeser friksi correspondent banking, bukan sekadar meng-upgrade rail domestik Britania Raya atau AS.
+
+**Goldman Sachs (GS DAP).** Platform aset digital GS DAP telah menerbitkan obligasi digital institusional (termasuk obligasi digital dua tahun senilai €100m dari European Investment Bank) dan mendukung mobilitas agunan tertokenisasi untuk repo dan pembiayaan sekuritas. GS DAP lebih merupakan platform penyelesaian sekuritas tertokenisasi ketimbang proposisi treasury korporat — berguna sebagai pembanding terhadap peran HSBC Orion yang serupa dan sebagai bukti bahwa sisi pasar modal digital dari tumpukan ini berkonsolidasi lebih cepat daripada sisi deposit-token.
+
+Implikasi yang lebih luas sederhana: kapabilitas deposit-token kini menjadi taruhan minimum bagi setiap bank wholesale global yang berharap tetap kompetitif dalam transaction banking, dan pertanyaan yang lebih menarik adalah siapa yang berinteroperasi dengan siapa, bukan siapa yang membangun lebih dulu.
 
 ## Deposito Tertokenisasi vs Stablecoin vs CBDC
 
@@ -265,19 +275,19 @@ Tidak satu pun dari ini menjadi alasan untuk tidak membangun deposito tertokenis
 
 ### Bank Global
 
-Bank global harus memperlakukan deposito tertokenisasi sebagai infrastruktur transaction banking. Fokusnya adalah dompet korporat, treasury lintas batas, penyelesaian aset digital, mobilitas agunan, dan kontrol terprogram untuk klien besar.
+Bank global harus memperlakukan deposito tertokenisasi sebagai infrastruktur transaction banking. Fokusnya adalah dompet korporat, treasury lintas batas, penyelesaian aset digital, mobilitas agunan, dan kontrol terprogram untuk klien besar. Tumpukan acuan kini terlihat: skala produksi ala Kinexys (JPMorgan), keluasan multi-track ala HSBC, integrasi penyelesaian sekuritas ala GS DAP, dan cakupan ganda deposit-token-plus-stablecoin-teregulasi ala SG-FORGE. Titik keputusan tahun ini adalah apakah akan menyatukan beberapa eksperimen DLT internal pada satu platform deposito tertokenisasi untuk klien treasury sebelum pesaing mendefinisikan UX dompet korporat. **Action item:** tunjuk satu pemilik program dengan otoritas lintas divisi transaction banking, capital markets, dan digital-assets — sponsor internal yang terfragmentasi adalah alasan paling umum mengapa tumpukan ini dikirimkan sebagai pilot, bukan produk.
 
 ### Bank-bank Inggris
 
-Bank-bank Inggris memiliki peluang koordinasi awal yang kredibel melalui Great British Tokenised Deposits. Tantangannya adalah mengubah pilot menjadi standar yang interoperabel sebelum jaringan stablecoin menjadi antarmuka internasional default.
+Bank-bank Inggris memiliki peluang koordinasi awal yang kredibel melalui Great British Tokenised Deposits, dan pilot multi-bank itu diawasi secara global sebagai template untuk interoperabilitas deposito tertokenisasi antarbank. Tantangannya adalah mengubah pilot menjadi standar yang interoperabel sebelum jaringan stablecoin menjadi antarmuka internasional default. **Action item:** keraskan alur kerja pembayaran marketplace dan pembiayaan ulang KPR ke kesiapan operasional pada 2026 (SLA yang jelas, penanganan sengketa, integrasi sanksi) alih-alih menjalankan demo proof-of-concept tanpa batas; kredibilitas pilot bergantung pada pengiriman setidaknya satu kasus penggunaan kelas produksi sebelum jendela pertengahan 2026 ditutup.
 
 ### Bank Sentral dan Regulator
 
-Regulator perlu memperjelas karakter hukum, perlakuan asuransi deposito, modal prudensial, finalitas penyelesaian, custody dompet, ketahanan operasional, dan bagaimana deposito tertokenisasi berinteraksi dengan stablecoin dan CBDC.
+Regulator perlu memperjelas karakter hukum, perlakuan asuransi deposito, modal prudensial, finalitas penyelesaian, custody dompet, ketahanan operasional, dan bagaimana deposito tertokenisasi berinteraksi dengan stablecoin dan CBDC. **Action item:** terbitkan panduan konkret untuk kasus hibrida — stablecoin yang didukung deposito dan deposito tertokenisasi yang diterbitkan bank yang beroperasi pada ledger yang sama — karena itulah struktur yang dituju kebanyakan bank, dan teks regulasi saat ini terbaca seolah-olah kedua kategori tersebut tidak pernah bertemu.
 
 ### Korporat
 
-Korporat tidak perlu menunggu jaringan universal. Mereka harus mulai memetakan kasus penggunaan di mana uang bank yang dapat diprogram dapat mengurangi penipuan, keterlambatan penyelesaian, pekerjaan rekonsiliasi, atau likuiditas yang terjebak.
+Korporat tidak perlu menunggu jaringan universal. Mereka harus mulai memetakan kasus penggunaan di mana uang bank yang dapat diprogram dapat mengurangi penipuan, keterlambatan penyelesaian, pekerjaan rekonsiliasi, atau likuiditas yang terjebak. **Action item:** pilotkan satu alur konkret dengan KPI yang terukur — sweep likuiditas lintas batas, mobilitas agunan intraday, atau DvP untuk gilt tertokenisasi adalah tiga kandidat dengan sinyal tertinggi — dan lengkapi dengan instrumen yang mempertimbangkan pertanyaan mode kegagalan (apa yang terjadi ketika smart contract dijeda; bagaimana kaki tertokenisasi berperilaku dalam skenario tekanan relatif terhadap kaki konvensional).
 
 ## Kesimpulan
 
@@ -287,23 +297,23 @@ Deposito tertokenisasi pada 2026 berada di tempat pembayaran waktu-nyata satu de
 
 **Apakah deposito tertokenisasi sama dengan stablecoin?**
 
-Tidak. Deposito tertokenisasi dimaksudkan untuk merepresentasikan uang deposito bank komersial, sedangkan stablecoin biasanya diterbitkan atas struktur cadangan dan tidak diselesaikan pada neraca bank sentral sebagaimana pembayaran bank ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+Tidak. Keduanya menawarkan uang digital yang dapat diprogram dan tersedia 24/7, tetapi menggunakan struktur hukum dan klaim yang sepenuhnya berbeda. Stablecoin adalah klaim atas aset cadangan atau struktur korporat dari penerbit swasta, yang beroperasi di luar neraca bank sentral ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Deposito tertokenisasi adalah liabilitas langsung sebuah bank komersial yang mewarisi regulasi perbankan yang ada, kontrol AML/sanksi, dan perimeter asuransi deposito ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 
 **Apa kasus penggunaan utama di Inggris?**
 
-Lloyds mengidentifikasi pembayaran marketplace, pembiayaan ulang KPR, dan penyelesaian aset digital sebagai kasus penggunaan untuk Great British Tokenised Deposits ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
+Pilot multi-bank Inggris pertengahan 2026 (HSBC, Lloyds, NatWest, Barclays, Nationwide, dan Santander) berfokus pada tiga area praktis: pembayaran marketplace antarindividu untuk mengurangi penipuan, alur kerja multipihak otomatis untuk pembiayaan ulang KPR, dan penyelesaian aset digital delivery-versus-payment (DvP) — mencocokkan kas tertokenisasi dengan gilt kedaulatan tertokenisasi dalam pilot Digital Gilt Instrument (DIGIT) Inggris ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
 **Akankah deposito tertokenisasi menggantikan stablecoin?**
 
-Tidak sepenuhnya. Stablecoin kemungkinan tetap penting dalam kasus penggunaan crypto-native dan likuiditas dolar. Deposito tertokenisasi cenderung mendominasi alur kerja bank-klien yang teregulasi di mana hubungan bank komersial, kontrol treasury, dan perlindungan prudensial menjadi penting.
+Tidak mungkin; keduanya merupakan instrumen pelengkap yang melayani perimeter yang berbeda. Stablecoin akan terus mendominasi ekosistem DeFi terbuka, kolam likuiditas crypto-native, dan tabungan lintas batas ritel di pasar fiat yang bergejolak. Deposito tertokenisasi akan memenangkan perimeter teregulasi — manajemen kas treasury korporat, penyelesaian transaksi institusional, dan transaction banking skala besar — di mana asuransi deposito, perlakuan modal prudensial, dan kontrol AML yang ada menjadi penting.
 
-**Apa yang menghambat skala?**
+**Apa yang menghambat adopsi skala-jaringan?**
 
-Interoperabilitas, finalitas hukum, perlakuan regulasi, standar dompet, tata kelola antarbank, dan integrasi dengan uang bank sentral adalah penghambat utama. Teknologi hanyalah salah satu bagian dari masalah adopsi.
+Teknologinya sendiri sudah siap. Skala dihambat oleh tiga titik gesekan non-teknis: **interoperabilitas** (tumpukan DLT yang terfragmentasi — Corda, Canton, Hyperledger Besu, HSBC Orion — saat ini bertindak sebagai kebun berdinding); **finalitas hukum** (tidak adanya keselarasan regulasi global mengenai konflik hukum atau cara merekonsiliasi imutabilitas DLT dengan kewajiban bank untuk membalikkan transaksi berdasarkan perintah pengadilan, sanksi, atau kesalahan operasional); dan **ekonomi imbal hasil** (industri belum menstandarkan apakah dompet korporat tertokenisasi membayar bunga overnight yang kompetitif atau berperilaku sebagai float transaksional yang steril).
 
 **Bank mana yang memiliki tumpukan deposito tertokenisasi paling berkembang?**
 
-HSBC. HSBC Tokenised Deposit Service telah aktif di Hong Kong, Singapura, Britania Raya, Luksemburg, dan Amerika Serikat dalam USD, GBP, EUR, HKD, dan SGD; HSBC Orion ditetapkan sebagai infrastruktur untuk pilot Digital Gilt Instrument (DIGIT) Britania Raya; HSBC Gold Token memtokenisasi cadangan emas fisik yang dialokasikan; serta HSBC telah menguji penyelesaian atomik antarjaringan (Canton Network, Project Ensemble) dan keamanan kriptografi pascakuantum bersama Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+Sebuah mahkota yang terbagi. JPMorgan adalah pemimpin yang tak terbantahkan dalam volume produksi, dengan Kinexys by J.P. Morgan (formerly Onyx) memproses sekitar 2 miliar dolar AS per hari dalam transaksi korporat wholesale ([JPMorgan](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan")). HSBC memiliki tumpukan multi-track yang secara struktural paling beragam: HSBC Tokenised Deposit Service di Hong Kong, Singapura, Britania Raya, Luksemburg, dan AS dalam USD/GBP/EUR/HKD/SGD; HSBC Orion sebagai infrastruktur yang ditetapkan untuk pilot Digital Gilt Instrument (DIGIT) Britania Raya; HSBC Gold Token yang mentokenisasi cadangan emas fisik yang dialokasikan; ditambah penyelesaian atomik antarjaringan yang diuji pada Canton dan Project Ensemble serta keamanan kriptografi pascakuantum yang diimplementasikan dengan Quantinuum ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). Pilot multi-bank Inggris adalah uji langsung interoperabilitas antarbank yang paling kredibel.
 
 ## Referensi
 

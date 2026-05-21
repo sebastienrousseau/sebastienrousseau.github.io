@@ -104,6 +104,8 @@ excerpt: "Tokenised deposit services in 2026 are moving from research into bank 
 
 Tokenize mevduatlar, bankacılık sektörünün stablecoinlere karşı en önemli dijital para yanıtı hâline gelmektedir. Programlanabilirlik, dijital cüzdanlar, atomik mutabakat ve tokenize varlık iş akışlarını mümkün kılarken ticari banka mevduat ilişkisini korumaktadırlar. Lloyds Banking Group, Birleşik Krallık'taki dijital varlıkların 2026'da ana akıma geçtiğini ve tokenize mevduatların, dijital gilt'lerin ve Great British Tokenised Deposits girişiminin aktif sektörel girişimler olduğunu vurgulamaktadır ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
+Bu yazı, deposit-token hikâyesinin pilotların canlı olduğu ve banka ürünlerinin oluşmakta olduğu wholesale, kurumsal ve kurumsal hazine katmanına odaklanmaktadır. Perakende tokenize mevduatlar bir araştırma ekseninde ve HSBC Gold Token'in perakende sarmalı içinde mevcut olsa da 2026'nın dönüm noktası, günlük tüketici ödemelerinde değil transaction banking'de gerçekleşmektedir.
+
 ---
 
 > **Yönetici Özeti / Temel Çıkarımlar**
@@ -158,7 +160,7 @@ Kendi başına profillenmeye değer üç program vardır: wholesale deposit-toke
 
 ### JPMorgan: JPM Coin, Onyx ve Kinexys Platformu
 
-JPMorgan, JPM Coin'i sektörün çoğunluğunun "tokenize mevduat" ifadesini kamuoyunda kullanmasından dört yıl önce, 2019'da başlattı. JPMorgan'ın permissioned blockchain platformu Onyx (şimdi Kinexys olarak yeniden markalanmıştır) üzerinde çalışmakta ve wholesale kurumsal müşteri akışlarını —birincil olarak kurumsal treasury sweeps, gün içi likidite hareketleri ve giderek daha çok tokenize repo— mutabakata bağlamaktadır. 2026 itibarıyla Kinexys, wholesale işlemlerde günde yaklaşık 2 milyar dolar düzeyinde işlem yapmakta; bu da JPMorgan'ı dünyadaki en büyük canlı deposit-token mutabakat operatörü hâline getirmektedir.
+JPMorgan, JPM Coin'i sektörün çoğunluğunun "tokenize mevduat" ifadesini kamuoyunda kullanmasından dört yıl önce, 2019'da başlattı. Bankanın izinli blockchain platformu **Kinexys by J.P. Morgan (formerly Onyx)** üzerinde çalışmakta ve wholesale kurumsal müşteri akışlarını —birincil olarak kurumsal treasury sweeps, gün içi likidite hareketleri ve giderek daha çok tokenize repo— mutabakata bağlamaktadır. 2026 itibarıyla Kinexys, wholesale işlemlerde günde yaklaşık 2 milyar dolar düzeyinde işlem yapmakta; bu da JPMorgan'ı dünyadaki en büyük canlı deposit-token mutabakat operatörü hâline getirmektedir.
 
 Bu geçmiş iki nedenle önemlidir. Birincisi, JPMorgan diğer bankaların hâlâ tasarım yaptığı operasyonel soruların —reconciliation, anlaşmazlık yönetimi, gün içi likidite davranışı ve outage modları— en uzun üretim sicilini taşır. İkincisi, platform multi-varlık niteliklidir: Kinexys, deposit tokenin ötesine tokenize repo, FX mutabakat ve teminat hareketliliğine genişlemiştir; bu da JPMorgan'ı, noktadan noktaya entegrasyonlar yerine tek bir ledger üzerinde delivery-versus-payment sunma konumuna yerleştirmektedir.
 
@@ -196,7 +198,15 @@ HSBC, stablecoin yolunu tamamen göz ardı etmemiştir. Banka, peer-to-peer öde
 
 ### Diğer Aktif Programlar
 
-JPMorgan ve HSBC'nin ötesinde, kamuya açık ifşaları daha sınırlı olsa da ağ resmine maddi katkı sağlayan birkaç program vardır. Société Générale'in SG-FORGE'u, deposit-token çalışmasının yanı sıra euro denominasyonlu dijital tahviller ve düzenlenmiş bir euro stablecoin ihraç ederek Société Générale'i her iki ray üzerinde Avrupa düzenlemesi altında çalışan alışılmadık bir konuma yerleştirmiştir. Standard Chartered, tokenize mevduatlarda ve Zodia Custody ile kendi Singapur merkezli pilotlar aracılığıyla tokenize gerçek-dünya varlıklarında aktiftir. Goldman Sachs'ın GS DAP platformu dijital tahviller ihraç etmiş ve tokenize teminatı desteklemektedir. Genel sonuç açıktır: deposit-token kapasitesi, transaction banking'de rekabetçi kalmayı bekleyen her global wholesale banka için artık temel bir gerekliliktir ve daha ilginç soru kimin önce inşa ettiği değil, kimin kiminle birlikte çalıştığıdır.
+JPMorgan ve HSBC'nin ötesinde, kamuya açık ifşaları daha sınırlı olsa da ağ resmine maddi katkı sağlayan birkaç program vardır.
+
+**Société Générale (SG-FORGE).** SG-FORGE, deposit-token çalışmasının yanı sıra euro denominasyonlu dijital tahviller ve düzenlenmiş euro stablecoin EURCV ihraç etmiştir; EURCV, küresel sistemik öneme sahip bir banka tarafından ihraç edilen ve birden fazla açık zincirde çalışan ilk euro stablecoin'idir. Bu durum Société Générale'i, EURCV açık ekosistem erişim katmanı olarak konumlandırılmış ve deposit-token tarafı düzenlenmiş kurumsal çevreyi ele alacak şekilde, hem tokenize-mevduat hem de düzenlenmiş-stablecoin raylarını Avrupa bankacılık düzenlemesi altında yürüten alışılmadık bir konuma yerleştirmektedir.
+
+**Standard Chartered.** Standard Chartered, tokenize mevduatlarda ve tokenize gerçek-dünya varlıklarında Zodia Custody (kurumsal dijital-varlık custody girişimi) ile kendi Singapur merkezli pilotları aracılığıyla aktiftir; ayrıca tokenize varlık mutabakatı için MAS Project Guardian'a da katılmaktadır. Stratejik vurgu, deposit tokens'ın yalnızca yerli Birleşik Krallık veya ABD raylarını yükseltmek yerine muhabir bankacılık sürtüşmesini yerinden etmek üzere konumlandırıldığı yükselen-piyasa koridorları — Asya–Afrika–Orta Doğu — üzerindedir.
+
+**Goldman Sachs (GS DAP).** GS DAP dijital varlık platformu, kurumsal dijital tahviller (Avrupa Yatırım Bankası'nın 100 milyon euroluk iki yıllık dijital tahvili dâhil) ihraç etmiş ve repo ile menkul kıymet finansmanı için tokenize teminat hareketliliğini desteklemektedir. GS DAP, kurumsal hazine teklifinden çok bir tokenize-menkul kıymet mutabakat platformudur — HSBC Orion'un benzer rolüne karşı bir denge noktası olarak ve dijital sermaye piyasaları tarafının deposit-token tarafından daha hızlı konsolide olduğuna dair kanıt olarak yararlıdır.
+
+Genel sonuç açıktır: deposit-token kapasitesi, transaction banking'de rekabetçi kalmayı bekleyen her küresel wholesale banka için artık temel bir gerekliliktir ve daha ilginç soru, kimin önce inşa ettiği değil, kimin kiminle birlikte çalıştığıdır.
 
 ## Tokenize Mevduatlar, Stablecoinler ve CBDC'ler
 
@@ -265,19 +275,19 @@ Bunların hiçbiri tokenize mevduat inşa etmemek için neden değildir. Bunlar,
 
 ### Küresel Bankalar
 
-Küresel bankalar tokenize mevduatları transaction banking altyapısı olarak ele almalıdır. Odak; kurumsal cüzdanlar, sınır ötesi hazine, dijital varlık mutabakatı, teminat hareketliliği ve büyük müşteriler için programlanabilir kontroller olmalıdır.
+Küresel bankalar tokenize mevduatları transaction banking altyapısı olarak ele almalıdır. Odak; kurumsal cüzdanlar, sınır ötesi hazine, dijital varlık mutabakatı, teminat hareketliliği ve büyük müşteriler için programlanabilir kontroller olmalıdır. Referans yığınlar artık görünür durumdadır: Kinexys tarzı üretim ölçeği (JPMorgan), HSBC tarzı çok kademeli genişlik, GS DAP tarzı menkul-kıymet-mutabakat entegrasyonu ve SG-FORGE tarzı ikili deposit-token-artı-düzenlenmiş-stablecoin kapsaması. Bu yılki karar noktası, rakipler kurumsal cüzdan kullanıcı deneyimini tanımlamadan önce birden fazla iç DLT deneyini hazine müşterileri için tek bir tokenize-mevduat platformunda birleştirip birleştirmeyeceğinizdir. **Action item:** transaction banking, sermaye piyasaları ve dijital-varlık bölümleri arasında yetkiye sahip tek bir program sahibi belirleyin — bu yığınların ürün yerine pilot olarak sevkiyat edilmesinin en yaygın nedeni parçalı iç sponsorluktur.
 
 ### Birleşik Krallık Bankaları
 
-Birleşik Krallık bankalarının Great British Tokenised Deposits aracılığıyla güvenilir bir erken koordinasyon fırsatı vardır. Zorluk, stablecoin ağları varsayılan uluslararası arayüz hâline gelmeden önce pilotları birlikte çalışabilir standartlara dönüştürmektir.
+Birleşik Krallık bankalarının Great British Tokenised Deposits aracılığıyla güvenilir bir erken koordinasyon fırsatı vardır ve çok bankalı pilot, bankalar arası tokenize-mevduat birlikte çalışabilirliği için küresel olarak bir şablon olarak izlenmektedir. Zorluk, stablecoin ağları varsayılan uluslararası arayüz hâline gelmeden önce pilotları birlikte çalışabilir standartlara dönüştürmektir. **Action item:** süresiz proof-of-concept demoları yürütmek yerine, 2026'da pazaryeri-ödemeleri ve ipotek-yeniden-finansmanı iş akışlarını operasyonel olgunluğa (net SLA'lar, anlaşmazlık yönetimi, yaptırım entegrasyonu) ulaştırın; pilotun güvenilirliği, 2026 ortası penceresi kapanmadan önce en az bir üretim sınıfı kullanım senaryosunun sevk edilmesine bağlıdır.
 
 ### Merkez Bankaları ve Düzenleyiciler
 
-Düzenleyicilerin hukuki niteliği, mevduat sigortası muamelesini, ihtiyati sermayeyi, mutabakat kesinliğini, cüzdan custody'sini, operasyonel dayanıklılığı ve tokenize mevduatların stablecoinler ve CBDC'lerle nasıl etkileşime girdiğini netleştirmesi gerekmektedir.
+Düzenleyicilerin hukuki niteliği, mevduat sigortası muamelesini, ihtiyati sermayeyi, mutabakat kesinliğini, cüzdan custody'sini, operasyonel dayanıklılığı ve tokenize mevduatların stablecoinler ve CBDC'lerle nasıl etkileşime girdiğini netleştirmesi gerekmektedir. **Action item:** hibrit senaryo hakkında somut rehberlik yayımlayın — aynı defterde çalışan mevduat destekli stablecoinler ve banka tarafından ihraç edilen tokenize mevduatlar — çünkü bu, çoğu bankanın yakınsadığı yapıdır ve mevcut düzenleyici metin sanki iki kategori hiç buluşmuyormuş gibi okunmaktadır.
 
 ### Kurumlar
 
-Kurumlar evrensel bir ağ beklememelidir. Programlanabilir banka parasının dolandırıcılığı, mutabakat gecikmesini, mutabakat çalışmasını veya kapana kısılmış likiditeyi azaltabileceği kullanım senaryolarını haritalandırmaya başlamalıdırlar.
+Kurumlar evrensel bir ağ beklememelidir. Programlanabilir banka parasının dolandırıcılığı, mutabakat gecikmesini, mutabakat çalışmasını veya kapana kısılmış likiditeyi azaltabileceği kullanım senaryolarını haritalandırmaya başlamalıdırlar. **Action item:** ölçülebilir KPI'ları olan tek bir somut akışı pilot olarak çalıştırın — sınır ötesi likidite süpürmeleri, gün-içi teminat hareketliliği veya tokenize gilt'ler için DvP en güçlü sinyale sahip üç adaydır — ve onu başarısızlık modu sorularını göz önünde bulundurarak donatın (smart contract duraklatıldığında ne olur; stres senaryosunda tokenize bacak, geleneksel bacağa göre nasıl davranır).
 
 ## Sonuç
 
@@ -287,23 +297,23 @@ Kurumlar evrensel bir ağ beklememelidir. Programlanabilir banka parasının dol
 
 **Tokenize mevduatlar stablecoinlerle aynı mıdır?**
 
-Hayır. Tokenize mevduatların ticari banka mevduat parasını temsil etmesi amaçlanırken stablecoinler tipik olarak bir rezerv yapısına karşı ihraç edilir ve banka ödemeleri gibi merkez bankası bilançosunda mutabakata varmazlar ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")).
+Hayır. Her ikisi de programlanabilir, 7/24 dijital para sunar ancak tamamen farklı hukuki ve talep yapıları kullanır. Bir stablecoin, merkez bankası bilançosunun dışında çalışan bir özel ihraççının rezerv varlığına veya kurumsal yapısına yönelik bir taleptir ([BIS](https://www.bis.org/speeches/sp260420.pdf "Stablecoins: framing the debate")). Tokenize mevduat ise mevcut bankacılık düzenlemesini, AML/yaptırım kontrollerini ve mevduat-sigortası çevresini miras alan doğrudan bir ticari banka yükümlülüğüdür ([FDIC](https://www.fdic.gov/board/federal-register-notice-genius-act-requirements-and-standards-fdic-supervised-permitted "FDIC proposed rule")).
 
 **Birleşik Krallık'taki başlıca kullanım senaryoları nelerdir?**
 
-Lloyds, Great British Tokenised Deposits için pazaryeri ödemelerini, ipotek yeniden finansmanını ve dijital varlık mutabakatını kullanım senaryoları olarak belirlemektedir ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
+2026 ortasındaki Birleşik Krallık çok bankalı pilotu (HSBC, Lloyds, NatWest, Barclays, Nationwide ve Santander), üç pratik alana odaklanmaktadır: dolandırıcılığı azaltmak için kişiden kişiye pazaryeri ödemeleri, ipotek yeniden finansmanı için otomatikleştirilmiş çok taraflı iş akışları ve teslim karşılığı ödeme (DvP) dijital-varlık mutabakatı — Birleşik Krallık Digital Gilt Instrument (DIGIT) pilotunda tokenize nakdi tokenize egemen gilt'lerle eşleştirme ([Lloyds Banking Group](https://www.lloydsbankinggroup.com/insights/digital-assets-2026.html "Digital assets in 2026")).
 
 **Tokenize mevduatlar stablecoinlerin yerini alacak mı?**
 
-Tamamen değil. Stablecoinlerin kripto-yerleşik ve dolar likiditesi kullanım senaryolarında önemli olmaya devam etmesi muhtemeldir. Tokenize mevduatların ise ticari banka ilişkilerinin, hazine kontrollerinin ve ihtiyati güvencelerin önemli olduğu düzenlenmiş banka-müşteri iş akışlarına hâkim olması daha olasıdır.
+Muhtemelen hayır; bunlar farklı çevreleri kapsayan tamamlayıcı araçlardır. Stablecoinler açık DeFi ekosistemlerine, kripto-yerleşik likidite havuzlarına ve oynak fiat piyasalarında perakende sınır ötesi tasarrufa hâkim olmaya devam edecektir. Tokenize mevduatlar ise mevduat sigortası, ihtiyati sermaye muamelesi ve mevcut AML kontrollerinin önemli olduğu düzenlenmiş çevreyi — kurumsal hazinenin nakit yönetimi, kurumsal işlem mutabakatı ve büyük ölçekli transaction banking — kazanacaktır.
 
-**Ölçeklenmeyi ne engelliyor?**
+**Ağ ölçeğinde benimsenmeyi ne engelliyor?**
 
-Birlikte çalışabilirlik, hukuki kesinlik, düzenleyici muamele, cüzdan standartları, bankalar arası yönetişim ve merkez bankası parasıyla entegrasyon başlıca engellerdir. Teknoloji, benimsenme sorununun yalnızca bir parçasıdır.
+Teknolojinin kendisi hazır. Ölçek, üç teknik olmayan sürtüşme noktası tarafından engelleniyor: **birlikte çalışabilirlik** (parçalı DLT yığınları — Corda, Canton, Hyperledger Besu, HSBC Orion — şu anda duvarlı bahçeler gibi davranmakta); **hukuki kesinlik** (kanunlar çatışması veya DLT değişmezliğinin bankanın mahkeme kararı, yaptırımlar veya operasyonel hata altında işlemleri geri çevirme yükümlülüğü ile nasıl uzlaştırılacağı konusunda hiçbir küresel düzenleyici uyum bulunmamakta); ve **verim ekonomisi** (sektör, tokenize kurumsal cüzdanların rekabetçi gecelik faiz ödeyip ödemediğini ya da kısır işlem float'ı gibi davranıp davranmadığını standartlaştırmamıştır).
 
 **En gelişmiş tokenize mevduat yığınına hangi banka sahiptir?**
 
-HSBC. HSBC Tokenised Deposit Service; Hong Kong, Singapur, Birleşik Krallık, Lüksemburg ve Amerika Birleşik Devletleri'nde USD, GBP, EUR, HKD ve SGD para birimleriyle yayındadır; HSBC Orion, Birleşik Krallık'ın Digital Gilt Instrument (DIGIT) pilotu için belirlenmiş altyapıdır; HSBC Gold Token tahsis edilmiş fiziki külçe altını tokenize etmektedir; ayrıca HSBC, ağlar arası atomik mutabakatı (Canton Network, Project Ensemble) ve Quantinuum ile post-kuantum kriptografik güvenliği denemiştir ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")).
+Bölünmüş bir taç. JPMorgan, Kinexys by J.P. Morgan (formerly Onyx) ile günde yaklaşık 2 milyar dolar wholesale kurumsal işlem işleyerek üretim hacminde tartışmasız liderdir ([JPMorgan](https://www.jpmorgan.com/kinexys "Kinexys by JPMorgan")). HSBC, yapısal olarak en çeşitli çok kademeli yığına sahiptir: HSBC Tokenised Deposit Service, Hong Kong, Singapur, Birleşik Krallık, Lüksemburg ve ABD'de USD/GBP/EUR/HKD/SGD ile faaliyettedir; HSBC Orion, Birleşik Krallık Digital Gilt Instrument (DIGIT) pilotu için belirlenmiş altyapıdır; HSBC Gold Token, tahsis edilmiş fiziki külçeyi tokenize etmektedir; ayrıca Canton ve Project Ensemble üzerinde test edilen ağlar arası atomik mutabakat ve Quantinuum ile uygulanan post-kuantum kriptografik güvenlik vardır ([HSBC](https://www.business.hsbc.com/en-gb/products/tokenised-deposit-service "HSBC Tokenised Deposit Service")). Birleşik Krallık çok bankalı pilotu, bankalar arası birlikte çalışabilirliğin en güvenilir canlı testidir.
 
 ## Kaynaklar
 
