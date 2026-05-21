@@ -5,11 +5,11 @@ description: "KyberLib is een Rust-implementatie van CRYSTALS-Kyber, het NIST FI
 date: "November 28, 2023"
 language: "nl-NL"
 locale: "nl_NL"
-banner: "https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg"
+banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
 banner_alt: "Banner van KyberLib: Rust-implementatie van CRYSTALS-Kyber"
 keywords: "KyberLib, CRYSTALS-Kyber, Rust, post-kwantum, FIPS 203, KEM, beveiliging"
 ---
-[![Sichere Kommunikation in kwantumtijdperk met KyberLib stärken](https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg).class=\"img-fluid clearfix\"][07]
+[![Sichere Kommunikation in kwantumtijdperk met KyberLib stärken](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]
 
 `KyberLib` is een Rust-basierte bibliotheek, de uw Daten vóór de potenziellen dreiging door kwantumcomputing schützt. Auf de **[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)-Algorithmus** aufbouwend, levert `KyberLib` herausragende beveiliging, efficiëntie en Vielseitigkeit en lässt sich naadloos in verschillende platformen integrieren – ook in `no-std`-Umgebungen.
 

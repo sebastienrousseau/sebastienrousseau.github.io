@@ -5,12 +5,12 @@ description: "A Robust and Quantum-Safe Cryptography Implementation of the CRYST
 date: "Nov 28, 2023"
 language: "ro-RO"
 locale: "ro_RO"
-banner: "https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg"
+banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
 banner_alt: "Empowering Secure Communications in the Quantum Era with KyberLib"
 keywords: "KyberLib, Rust CRYSTALS-Kyber, post-quantum cryptography, lattice-based cryptography, quantum-resistant key exchange, NIST FIPS 203, Sebastien Rousseau, KEM, payment authentication, PQC library"
 ---
 
-![Empowering Secure Communications in the Quantum Era with KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg).class="img-fluid clearfix"
+![Empowering Secure Communications in the Quantum Era with KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class="img-fluid clearfix"
 
 ---
 
@@ -39,7 +39,7 @@ keywords: "KyberLib, Rust CRYSTALS-Kyber, post-quantum cryptography, lattice-bas
 </aside>
 <!-- lead-end -->
 
-[![Empowering Secure Communications in the Quantum Era with KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg).class=\"img-fluid clearfix\"][07]
+[![Empowering Secure Communications in the Quantum Era with KyberLib](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]
 
 `KyberLib` is a Rust-based library that protects your data from the potential threat of quantum computing. Built upon the **[CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html) algorithm**, `KyberLib` delivers exceptional security, efficiency, and versatility, easily integrating into various platforms, including `no-std` environments.
 

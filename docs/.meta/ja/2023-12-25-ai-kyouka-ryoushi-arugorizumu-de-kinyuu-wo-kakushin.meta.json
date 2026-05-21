@@ -1,12 +1,12 @@
 {
-  "title": "AI 強化量子アルゴリズムで金融を革新する",
-  "date": "December 25, 2023",
-  "subtitle": "量子アルゴリズム内における AI の変革的役割",
-  "description": "金融向け量子アルゴリズム内における AI の変革的役割、数学構造と銀行応用に焦点を当てて。",
-  "last_reviewed": "2026-05-11",
-  "keywords": "量子アルゴリズム, AI, 機械学習, 金融, ポートフォリオ最適化, リスクモデリング, QAOA, VQE",
   "locale": "ja_JP",
   "banner_alt": "量子計算を表す抽象的なビジュアル",
   "banner": "https://cloudcdn.pro/stocks/images/markus-spiske-FXFz-sW0uwo-unsplash.webp",
-  "language": "ja-JP"
+  "date": "December 25, 2023",
+  "keywords": "量子アルゴリズム, AI, 機械学習, 金融, ポートフォリオ最適化, リスクモデリング, QAOA, VQE",
+  "description": "金融向け量子アルゴリズム内における AI の変革的役割、数学構造と銀行応用に焦点を当てて。",
+  "language": "ja-JP",
+  "title": "AI 強化量子アルゴリズムで金融を革新する",
+  "last_reviewed": "2026-05-11",
+  "subtitle": "量子アルゴリズム内における AI の変革的役割"
 }

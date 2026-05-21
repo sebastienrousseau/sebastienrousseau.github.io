@@ -5,7 +5,7 @@ description: "DTT è una libreria Rust per la gestione di data e ora con support
 date: "December 04, 2023"
 language: "it-IT"
 locale: "it_IT"
-banner: "https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg"
+banner: "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg"
 banner_alt: "DateTime (DTT), il toolkit essenziale per le operazioni di data e ora"
 keywords: "DTT, DateTime, Rust, data, ora, fuso orario, parsing, libreria"
 ---
@@ -23,7 +23,7 @@ keywords: "DTT, DateTime, Rust, data, ora, fuso orario, parsing, libreria"
 
 ---
 
-[![DateTime (DTT), Your Essential Toolkit for Date and Time Operations](https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg).class=\"img-fluid clearfix\"][01]
+[![DateTime (DTT), Your Essential Toolkit for Date and Time Operations](https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg).class=\"img-fluid clearfix\"][01]
 
 ## Gestión eficiente di fechas e horas con DateTime (DTT)
 

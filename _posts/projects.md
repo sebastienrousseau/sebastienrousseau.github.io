@@ -133,7 +133,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://pain001.com" title="pain001">
-<img alt="Banner for the pain001 open-source payments library" src="https://cloudcdn.pro/clients/pain001/v1/github/github-pain001.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the pain001 open-source payments library" src="https://cloudcdn.pro/clients/pain001/v1/logos/pain001.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Featured · Python · ISO 20022</span>
@@ -155,7 +155,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://bankstatementparser.com/" title="Bank Statement Parser">
-<img alt="Banner for Bank Statement Parser" src="https://cloudcdn.pro/clients/bankstatementparser/v1/github/github-bankstatementparser.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for Bank Statement Parser" src="https://cloudcdn.pro/clients/bankstatementparser/v1/logos/bankstatementparser.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Python · Finance</span>
@@ -194,7 +194,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://kyberlib.com/" title="KyberLib">
-<img alt="Banner for KyberLib" src="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for KyberLib" src="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Rust · Quantum</span>
@@ -205,7 +205,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/hsh" title="Hash (HSH)">
-<img alt="Banner for the Hash (HSH) Rust library" src="https://cloudcdn.pro/clients/hsh/v1/github/github-hsh.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the Hash (HSH) Rust library" src="https://cloudcdn.pro/clients/hsh/v1/logos/hsh.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Rust · Security</span>
@@ -216,7 +216,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://password-generator.pro" title="Password Generator Pro">
-<img alt="Banner for Password Generator Pro" src="https://cloudcdn.pro/clients/password-generator-pro/v1/github/github-password-generator-pro.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for Password Generator Pro" src="https://cloudcdn.pro/clients/password-generator-pro/v1/logos/password-generator-pro.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Rust · Security</span>
@@ -233,7 +233,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://akande.co/" title="Àkàndé">
-<img alt="Banner for Àkàndé, an advanced AI voice assistant" src="https://cloudcdn.pro/clients/akande/v1/github/github-akande.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for Àkàndé, an advanced AI voice assistant" src="https://cloudcdn.pro/clients/akande/v1/logos/akande.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI · Voice</span>
@@ -244,7 +244,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://audioanalyser.co/" title="Audio Analyser">
-<img alt="Banner for Audio Analyser" src="https://cloudcdn.pro/clients/audioanalyser/v1/github/github-audioanalyser.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for Audio Analyser" src="https://cloudcdn.pro/clients/audioanalyser/v1/logos/audioanalyser.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">AI · Speech</span>
@@ -255,7 +255,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="https://github.com/sebastienrousseau/crypto-service" title="Crypto Service Suite">
-<img alt="Banner for the Crypto Service Suite" src="https://cloudcdn.pro/stocks/images/steven-wei-Z7NMhw8hcfg.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the Crypto Service Suite" src="https://cloudcdn.pro/clients/audioanalyser/v1/logos/audioanalyser.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">JavaScript · Security</span>
@@ -272,7 +272,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/static-site-generator" title="Static Site Generator">
-<img alt="Banner for the Static Site Generator" src="https://cloudcdn.pro/clients/shokunin/v1/github/github-shokunin.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the Static Site Generator" src="https://cloudcdn.pro/clients/shokunin/v1/logos/shokunin.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Rust · SSG</span>
@@ -283,7 +283,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/noyalib" title="noyalib">
-<img alt="Banner for the noyalib Rust YAML 1.2 ecosystem" src="https://cloudcdn.pro/clients/noyalib/v1/github/github-noyalib.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the noyalib Rust YAML 1.2 ecosystem" src="https://cloudcdn.pro/clients/noyalib/v1/logos/noyalib.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Rust · YAML</span>
@@ -294,7 +294,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://serdeyml.com/" title="Serde YML">
-<img alt="Banner for Serde YML" src="https://cloudcdn.pro/clients/serde_yml/v1/github/github-serde_yml.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for Serde YML" src="https://cloudcdn.pro/clients/serde_yml/v1/logos/serde_yml.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Rust · Serialisation</span>
@@ -305,7 +305,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://rustlogs.com/" title="RustLogs (RLG)">
-<img alt="Banner for the RustLogs (RLG) library" src="https://cloudcdn.pro/clients/rlg/v1/github/github-rlg.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the RustLogs (RLG) library" src="https://cloudcdn.pro/clients/rlg/v1/logos/rlg.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Rust · Logging</span>
@@ -316,7 +316,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/libmake" title="LibMake">
-<img alt="Banner for LibMake" src="https://cloudcdn.pro/clients/libmake/v1/github/github-libmake.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for LibMake" src="https://cloudcdn.pro/clients/libmake/v1/logos/libmake.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Rust · Tooling</span>
@@ -327,7 +327,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/dtt" title="DateTime (DTT)">
-<img alt="Banner for the DateTime (DTT) Rust library" src="https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the DateTime (DTT) Rust library" src="https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Rust · Time</span>
@@ -338,7 +338,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://vrdlib.com/" title="Random (VRD)">
-<img alt="Banner for the Random (VRD) Rust library" src="https://cloudcdn.pro/clients/vrd/v1/github/github-vrd.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the Random (VRD) Rust library" src="https://cloudcdn.pro/clients/vrd/v1/logos/vrd.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Rust · Math</span>
@@ -349,7 +349,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/cmn" title="Common (CMN)">
-<img alt="Banner for the Common (CMN) Rust library" src="https://cloudcdn.pro/clients/cmn/v1/github/github-cmn.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the Common (CMN) Rust library" src="https://cloudcdn.pro/clients/cmn/v1/logos/cmn.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Rust · Math</span>
@@ -360,7 +360,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="http://minifunctions.com/" title="Mini Functions">
-<img alt="Banner for the Mini Functions Rust library" src="https://cloudcdn.pro/clients/mini-functions/v1/github/github-mini-functions.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the Mini Functions Rust library" src="https://cloudcdn.pro/clients/mini-functions/v1/logos/mini-functions.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Rust · Utility</span>
@@ -377,7 +377,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/kaishi.github.io" title="Kaishi">
-<img alt="Banner for Kaishi, a starter template" src="https://cloudcdn.pro/clients/kaishi/v1/titles/title-kaishi.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for Kaishi, a starter template" src="https://cloudcdn.pro/clients/kaishi/v1/logos/kaishi.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Web · Template</span>
@@ -388,7 +388,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://github.com/sebastienrousseau/skeletonic-stylus" title="Skeletonic Stylus">
-<img alt="Banner for the Skeletonic Stylus Library" src="https://cloudcdn.pro/clients/skeletonic/v1/logos/logo-skeletonic-stylus.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the Skeletonic Stylus Library" src="https://cloudcdn.pro/clients/skeletonic/v1/logos/skeletonic.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">CSS · Stylus</span>
@@ -399,7 +399,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://bankingonai.co/" title="Banking On AI">
-<img alt="Banner for the Banking On AI publication" src="https://cloudcdn.pro/clients/bankingonai/v1/github/github-bankingonai.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the Banking On AI publication" src="https://cloudcdn.pro/clients/bankingonai/v1/logos/bankingonai.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Web · Publication</span>
@@ -410,7 +410,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://bankingonquantum.com/" title="Banking On Quantum">
-<img alt="Banner for the Banking On Quantum publication" src="https://cloudcdn.pro/clients/bankingonquantum/v1/github/github-bankingonquantum.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the Banking On Quantum publication" src="https://cloudcdn.pro/clients/bankingonquantum/v1/logos/bankingonquantum.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Web · Publication</span>
@@ -421,7 +421,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media logo" href="https://l90s.com/" title="L90S">
-<img alt="Banner for the L90S website" src="https://cloudcdn.pro/clients/l90s/v1/github/github-l90s.svg" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the L90S website" src="https://cloudcdn.pro/clients/l90s/v1/logos/l90s.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Web · Finance</span>
@@ -432,7 +432,7 @@ site_software: "Static Site Generator, Rust"
 
 <article class="newsroom-card">
 <a class="newsroom-card-media" href="https://dotfiles.io/" title="Dotfiles">
-<img alt="Banner for the Dotfiles project" src="https://cloudcdn.pro/clients/dotfiles/v2/images/banners/dotfiles.webp" loading="lazy" decoding="async" width="600" height="600" />
+<img alt="Banner for the Dotfiles project" src="https://cloudcdn.pro/clients/dotfiles/v1/images/logos/dotfiles.svg" loading="lazy" decoding="async" width="600" height="600" />
 </a>
 <div class="newsroom-card-body">
 <span class="newsroom-eyebrow">Config · Cross-platform</span>

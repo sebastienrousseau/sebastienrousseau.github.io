@@ -5,7 +5,7 @@ description: "DTT, sağlamlık ve ergonomi düşünülerek Rust'ta tarih ve zama
 date: "December 04, 2023"
 language: "tr-TR"
 locale: "tr_TR"
-banner: "https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg"
+banner: "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg"
 banner_alt: "Soyut bir saatin görselleştirmesi"
 keywords: "Rust, DTT, tarih, zaman, kütüphane, açık kaynak"
 ---
@@ -24,7 +24,7 @@ keywords: "Rust, DTT, tarih, zaman, kütüphane, açık kaynak"
 
 ---
 
-[![DateTime (DTT), Your Essential Toolkit for Date and Time Operations](https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg).class=\"img-fluid clearfix\"][01]
+[![DateTime (DTT), Your Essential Toolkit for Date and Time Operations](https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg).class=\"img-fluid clearfix\"][01]
 
 ## Gestión eficiente di fechas e horas con DateTime (DTT)
 

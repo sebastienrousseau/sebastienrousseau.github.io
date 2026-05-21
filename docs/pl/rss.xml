@@ -6,7 +6,7 @@
     <description>Artykuły po polsku: stosowana sztuczna inteligencja, płatności ISO 20022, kryptografia postkwantowa oraz transformacja płatności hurtowych.</description>
     <atom:link href="https://sebastienrousseau.com/pl/rss.xml" rel="self" type="application/rss+xml"/>
     <language>pl-PL</language>
-    <lastBuildDate>Thu, 21 May 2026 13:34:32 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 16:31:19 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Wszelkie prawa zastrzeżone.</copyright>
     <item>
       <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
@@ -666,7 +666,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/pl/2023-12-04-data-i-czas-w-rust-z-biblioteka-dtt/</guid>
       <pubDate>Mon, 04 Dec 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg" type="image/webp" length="0"/>
       <category>DTT</category>
       <category>Rust</category>
       <category>data</category>
@@ -682,7 +682,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/pl/2023-11-28-kyberlib-tarcza-rust-przed-zagrozeniami-kwantowymi/</guid>
       <pubDate>Tue, 28 Nov 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" type="image/webp" length="0"/>
       <category>KyberLib</category>
       <category>CRYSTALS-Kyber</category>
       <category>Rust</category>

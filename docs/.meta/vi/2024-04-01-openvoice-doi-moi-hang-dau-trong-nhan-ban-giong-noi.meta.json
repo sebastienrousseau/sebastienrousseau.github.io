@@ -1,11 +1,11 @@
 {
-  "banner_alt": "Sóng giọng nói và biểu tượng AI",
-  "language": "vi-VN",
-  "date": "April 1, 2024",
-  "title": "OpenVoice: đổi mới hàng đầu trong công nghệ nhân bản giọng nói",
+  "banner": "https://cloudcdn.pro/stocks/images/openvoice-banner.webp",
   "keywords": "OpenVoice, nhân bản giọng nói, TTS, MyShell, AI, deepfake, đạo đức, hỗ trợ tiếp cận",
   "description": "OpenVoice của MyShell mở khoá việc nhân bản giọng nói chất lượng cao từ một mẫu ngắn. Cách nó hoạt động, các trường hợp sử dụng và các vấn đề đạo đức.",
+  "title": "OpenVoice: đổi mới hàng đầu trong công nghệ nhân bản giọng nói",
+  "date": "April 1, 2024",
   "locale": "vi_VN",
-  "banner": "https://cloudcdn.pro/stocks/images/openvoice-banner.webp",
+  "banner_alt": "Sóng giọng nói và biểu tượng AI",
+  "language": "vi-VN",
   "subtitle": "Tổng hợp giọng nói tức thì từ một mẫu vài giây"
 }

@@ -6,7 +6,7 @@ author: "contact@sebastienrousseau.com (Sebastien Rousseau)"
 banner_alt: "DateTime (DTT), Your Essential Toolkit for Date and Time Operations."
 banner_height: "100vh"
 banner_width: "100vw"
-banner: "https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg"
+banner: "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg"
 cdn: "https://cloudcdn.pro/clients"
 changefreq: "weekly"
 charset: "UTF-8"
@@ -116,7 +116,7 @@ last_reviewed: "2026-05-11"
 </aside>
 <!-- lead-end -->
 
-[![DateTime (DTT), Your Essential Toolkit for Date and Time Operations](https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg).class=\"img-fluid clearfix\"][01]
+[![DateTime (DTT), Your Essential Toolkit for Date and Time Operations](https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg).class=\"img-fluid clearfix\"][01]
 
 ## Efficient Date and Time Management with DateTime (DTT)
 
@@ -223,7 +223,7 @@ Employing DateTime (DTT) for managing dates and times in your Rust projects offe
 <div class="related-grid">
 <article class="related-card"><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html" class="related-media" aria-label="RustLogs (RLG): Structured Logging Library for Rust" tabindex="-1"><img alt="Banner for RustLogs (RLG)" src="https://cloudcdn.pro/stocks/images/rustlogs.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-03-08-rustlogs-advanced-logging-library-for-rust-applications/index.html">RustLogs (RLG): Structured Logging Library for Rust</a></h3><p><time datetime="2024-03-08">2024-03-08</time></p></footer></article>
 <article class="related-card"><a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html" class="related-media" aria-label="Alien Studio: My Tech-to Art Journey in Photography" tabindex="-1"><img alt="Sunset's muse, a serene glance; beauty in stillness" src="https://cloudcdn.pro/clients/alienstudio/v1/collections/radiance/radiance-08.webp" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2024-01-15-alien-studio-revolutionising-art-with-ai-photography/index.html">Alien Studio: My Tech-to Art Journey in Photography</a></h3><p><time datetime="2024-01-15">2024-01-15</time></p></footer></article>
-<article class="related-card"><a href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html" class="related-media" aria-label="KyberLib: Rust CRYSTALS-Kyber for Post-Quantum" tabindex="-1"><img alt="Empowering Secure Communications in the Quantum Era with KyberLib" src="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html">KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</a></h3><p><time datetime="2023-11-28">2023-11-28</time></p></footer></article>
+<article class="related-card"><a href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html" class="related-media" aria-label="KyberLib: Rust CRYSTALS-Kyber for Post-Quantum" tabindex="-1"><img alt="Empowering Secure Communications in the Quantum Era with KyberLib" src="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3><a href="https://sebastienrousseau.com/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/index.html">KyberLib: Rust CRYSTALS-Kyber for Post-Quantum</a></h3><p><time datetime="2023-11-28">2023-11-28</time></p></footer></article>
 </div>
 </aside>
 <!-- enrich-end -->

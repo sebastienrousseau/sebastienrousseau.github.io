@@ -5,12 +5,12 @@ description: "KyberLib: CRYSTALS-Kyber पोस्ट-क्वांटम क
 date: "November 28, 2023"
 language: "hi-IN"
 locale: "hi_IN"
-banner: "https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg"
+banner: "https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg"
 banner_alt: "क्वांटम-ख़तरों के विरुद्ध एक डिजिटल कवच"
 keywords: "KyberLib, Rust, CRYSTALS-Kyber, post-quantum, KEM, एम्बेडेड, क्रिप्टोग्राफी, सुरक्षा, NIST, FIPS"
 ---
 
-[![क्वांटम-ख़तरों के विरुद्ध एक डिजिटल कवच](https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg).class=\"img-fluid clearfix\"][07]
+[![क्वांटम-ख़तरों के विरुद्ध एक डिजिटल कवच](https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg).class=\"img-fluid clearfix\"][07]
 
 `KyberLib` है एक biblioteca Rust जो protege उसके डेटा frente को वह amenaza potencial का वह क्वांटम कंप्यूटिंग. Construida sobre वह **algoritmo [CRYSTALS-Kyber](/2023-11-19-crystals-kyber-the-safeguarding-algorithm-in-a-quantum-age/index.html)**, `KyberLib` प्रदान करता है एक सुरक्षा, एक दक्षता और एक versatilidad excepcionales, integrándose fácilmente में diversas प्लेटफ़ॉर्म, incluidos वे entornos `नहीं-std`.
 

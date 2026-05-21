@@ -5,11 +5,11 @@ description: "dtt is een Rust-bibliotheek die datum- en tijdoperaties idiomatisc
 date: "Dec 04, 2023"
 language: "nl-NL"
 locale: "nl_NL"
-banner: "https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg"
+banner: "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg"
 banner_alt: "Banner van de dtt-bibliotheek: datum en tijd in Rust"
 keywords: "dtt, Rust, datum, tijd, datetime, open source, bibliotheek"
 ---
-[![DateTime (DTT), Your Essential Toolkit for Date and Time Operations](https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg).class=\"img-fluid clearfix\"][01]
+[![DateTime (DTT), Your Essential Toolkit for Date and Time Operations](https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg).class=\"img-fluid clearfix\"][01]
 
 ## Effizientes Datums- en Zeitmanagement met DateTime (DTT)
 

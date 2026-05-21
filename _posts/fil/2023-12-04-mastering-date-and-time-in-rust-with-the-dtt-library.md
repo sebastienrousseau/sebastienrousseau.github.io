@@ -5,12 +5,12 @@ description: "DateTime (DTT) مكتبة Rust لتحليل وتحقّق ومعا�
 date: "Dec 04, 2023"
 language: "fil-PH"
 locale: "fil_PH"
-banner: "https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg"
+banner: "https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg"
 banner_alt: "DateTime (DTT)، عُدّتكم الأساسية لعمليات التاريخ والوقت."
 keywords: "DateTime، DTT، مكتبة Rust، التحليل، التحقّق، المعالجة، التنسيق، التواريخ، الأوقات"
 ---
 
-[![DateTime (DTT)، عُدّتكم الأساسية لعمليات التاريخ والوقت](https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg).class=\"img-fluid clearfix\"][01]
+[![DateTime (DTT)، عُدّتكم الأساسية لعمليات التاريخ والوقت](https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg).class=\"img-fluid clearfix\"][01]
 
 ## الإدارة الفعّالة للتاريخ والوقت مع DateTime (DTT)
 

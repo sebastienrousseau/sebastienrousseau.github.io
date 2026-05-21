@@ -6,7 +6,7 @@
     <description>Mga artikulo sa Filipino: applied AI, ISO 20022 payments, post-quantum cryptography at wholesale-payments transformation.</description>
     <atom:link href="https://sebastienrousseau.com/fil/rss.xml" rel="self" type="application/rss+xml"/>
     <language>fil-PH</language>
-    <lastBuildDate>Thu, 21 May 2026 13:34:32 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 16:31:18 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Lahat ng karapatan ay nakalaan.</copyright>
     <item>
       <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
@@ -625,7 +625,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/fil/2023-12-04-mastering-date-and-time-in-rust-with-the-dtt-library/</guid>
       <pubDate>Mon, 04 Dec 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg" type="image/webp" length="0"/>
       <category>DateTime، DTT، مكتبة Rust، التحليل، التحقّق، المعالجة، التنسيق، التواريخ، الأوقات</category>
     </item>
     <item>
@@ -635,7 +635,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/fil/2023-11-28-kyberlib-a-rust-powered-shield-against-quantum-threats/</guid>
       <pubDate>Tue, 28 Nov 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" type="image/webp" length="0"/>
       <category>KyberLib، Rust CRYSTALS-Kyber، التشفير ما بعد الكمي، التشفير القائم على الشبكيات، تبادل المفاتيح المقاوم للكم، NIST FIPS 203، Sebastien Rousseau، KEM، مصادقة المدفوعات، مكتبة PQC</category>
     </item>
     <item>

@@ -6,7 +6,7 @@
     <description>हिन्दी लेख: व्यावहारिक AI, ISO 20022 भुगतान, पोस्ट-क्वांटम क्रिप्टोग्राफी और थोक भुगतान का रूपांतरण।</description>
     <atom:link href="https://sebastienrousseau.com/hi/rss.xml" rel="self" type="application/rss+xml"/>
     <language>hi-IN</language>
-    <lastBuildDate>Thu, 21 May 2026 13:34:32 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 16:31:19 +0000</lastBuildDate>
     <copyright>© कॉपीराइट 2007 - 2026 - Sebastien Rousseau. सर्वाधिकार सुरक्षित।</copyright>
     <item>
       <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
@@ -669,7 +669,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/hi/2023-12-04-rust-mein-dtt-library-se-tarikh-aur-samay/</guid>
       <pubDate>Mon, 04 Dec 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg" type="image/webp" length="0"/>
       <category>Rust</category>
       <category>dtt</category>
       <category>तारीख़</category>
@@ -688,7 +688,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/hi/2023-11-28-kyberlib-quantum-khatron-se-rust-rakshak/</guid>
       <pubDate>Tue, 28 Nov 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" type="image/webp" length="0"/>
       <category>KyberLib</category>
       <category>Rust</category>
       <category>CRYSTALS-Kyber</category>

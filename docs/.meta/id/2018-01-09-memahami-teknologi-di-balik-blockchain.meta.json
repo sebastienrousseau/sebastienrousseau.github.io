@@ -1,11 +1,11 @@
 {
+  "subtitle": "A practical walk-through of the cryptography and consensus behind blockchain.",
+  "language": "id-ID",
+  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
+  "locale": "id_ID",
   "date": "Jan 09, 2018",
   "keywords": "pain001, iso 20022, payment automation, cost reduction, payment processing, payment files, payment initiation, pain message, pain message standards, pain message validation",
-  "language": "id-ID",
-  "subtitle": "A practical walk-through of the cryptography and consensus behind blockchain.",
-  "locale": "id_ID",
-  "banner": "https://cloudcdn.pro/stocks/images/adam-smigielski-K5mPtONmpHM.webp",
-  "title": "[ID DRAFT] Understanding the Technology behind Blockchain",
   "banner_alt": "Turned off laptop computer on top of brown wooden table",
-  "description": "Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation"
+  "description": "Building a Cryptocurrency on the Ethereum Blockchain: A Comprehensive Guide to Blockchain Development, Tokenization and Cryptocurrency Implementation",
+  "title": "[ID DRAFT] Understanding the Technology behind Blockchain"
 }

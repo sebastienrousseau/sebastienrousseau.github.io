@@ -6,7 +6,7 @@
     <description>Статті українською: прикладний ШІ, платежі ISO 20022, постквантова криптографія та трансформація оптових платежів.</description>
     <atom:link href="https://sebastienrousseau.com/uk/rss.xml" rel="self" type="application/rss+xml"/>
     <language>uk-UA</language>
-    <lastBuildDate>Thu, 21 May 2026 13:34:32 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 16:31:19 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Усі права захищено.</copyright>
     <item>
       <title>Tokenised Deposits in 2026: Banking Services, Stablecoin Competition, and the Status of Programmable Commercial Bank Money</title>
@@ -727,7 +727,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/uk/2023-12-04-data-i-chas-u-rust-z-bibliotekoyu-dtt/</guid>
       <pubDate>Mon, 04 Dec 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/clients/dtt/v1/github/github-dtt.svg" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/clients/dtt/v1/logos/dtt.svg" type="image/webp" length="0"/>
       <category>DateTime</category>
       <category>DTT</category>
       <category>Rust library</category>
@@ -745,7 +745,7 @@
       <guid isPermaLink="true">https://sebastienrousseau.com/uk/2023-11-28-kyberlib-rust-shchyt-proty-kvantovykh-zahroz/</guid>
       <pubDate>Tue, 28 Nov 2023 06:06:06 +0000</pubDate>
       <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
-      <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/github/github-kyberlib.svg" type="image/webp" length="0"/>
+      <enclosure url="https://cloudcdn.pro/clients/kyberlib/v1/logos/kyberlib.svg" type="image/webp" length="0"/>
       <category>KyberLib</category>
       <category>Rust CRYSTALS-Kyber</category>
       <category>post-quantum cryptography</category>
