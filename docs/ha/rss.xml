@@ -6,8 +6,35 @@
     <description>Labaran Hausa: AI mai amfani, biyan kuɗi na ISO 20022, kiriftografi bayan kwantum da sauye-sauyen biyan kuɗi na manyan.</description>
     <atom:link href="https://sebastienrousseau.com/ha/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ha-NG</language>
-    <lastBuildDate>Fri, 22 May 2026 11:30:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 18:38:31 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. An kiyaye duk hakkokin.</copyright>
+    <item>
+      <title>Biyan Kuɗi ta Wakili a Banki: Yarda, Alhaki, da Sabon UX na Biyan Kuɗi 2026</title>
+      <link>https://sebastienrousseau.com/ha/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>
+      <description>A 2026, biyan kuɗi ta wakili ya wuce daga ra&apos;ayi zuwa hada-hada kai tsaye. Tambayar bankuna ba ko AI agent na iya fara biyan kuɗi ba ce, sai dai yadda yarda, alhaki, sa hannu, da tabbacin bin doka za su yi aiki.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ha/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</guid>
+      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>biyan kuɗi ta wakili 2026</category>
+      <category>biyan AI agent</category>
+      <category>Mastercard Agent Pay</category>
+      <category>biyan AI na Rabobank</category>
+      <category>AP2</category>
+      <category>A2A</category>
+      <category>x402</category>
+      <category>MCP</category>
+      <category>machine payments protocol</category>
+      <category>yardar biyan kuɗi</category>
+      <category>Regulation E</category>
+      <category>EFTA</category>
+      <category>alhakin biyan kuɗi</category>
+      <category>niyya mai tabbas</category>
+      <category>tokenisation</category>
+      <category>passkeys</category>
+      <category>UX na banki</category>
+      <category>kasuwancin AI</category>
+    </item>
     <item>
       <title>Sabuntawar Acid Jazz a UK: Mawaka, Wasanni, Albam na 2026</title>
       <link>https://sebastienrousseau.com/ha/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/</link>

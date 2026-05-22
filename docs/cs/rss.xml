@@ -6,8 +6,35 @@
     <description>Články v češtině: aplikovaná AI, platby ISO 20022, postkvantová kryptografie a transformace velkoobchodních plateb.</description>
     <atom:link href="https://sebastienrousseau.com/cs/rss.xml" rel="self" type="application/rss+xml"/>
     <language>cs-CZ</language>
-    <lastBuildDate>Fri, 22 May 2026 11:30:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 18:38:30 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Všechna práva vyhrazena.</copyright>
+    <item>
+      <title>Agentní platby v bankovnictví: souhlas, odpovědnost a nové UX 2026</title>
+      <link>https://sebastienrousseau.com/cs/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>
+      <description>Agentní platby v roce 2026 přešly z konceptu do živé transakce. Otázkou pro banky již není, zda AI agenti dokážou iniciovat platby, ale jak nastavit souhlas, odpovědnost, identitu, auditovatelnost, kontroly podvodů a interoperabilitu protokolů.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/cs/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</guid>
+      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>agentní platby 2026</category>
+      <category>platby AI agentů</category>
+      <category>Mastercard Agent Pay</category>
+      <category>AI platba Rabobank</category>
+      <category>AP2</category>
+      <category>A2A</category>
+      <category>x402</category>
+      <category>MCP</category>
+      <category>protokol strojových plateb</category>
+      <category>souhlas s platbou</category>
+      <category>Regulation E</category>
+      <category>EFTA</category>
+      <category>odpovědnost za platby</category>
+      <category>ověřitelný úmysl</category>
+      <category>tokenizace</category>
+      <category>přístupové klíče</category>
+      <category>bankovní UX</category>
+      <category>AI commerce</category>
+    </item>
     <item>
       <title>Obnova acid jazzu ve Spojeném království: umělci, koncerty a alba 2026</title>
       <link>https://sebastienrousseau.com/cs/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/</link>

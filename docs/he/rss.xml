@@ -6,8 +6,35 @@
     <description>מאמרים בעברית: AI יישומי, תשלומי ISO 20022, קריפטוגרפיה פוסט-קוונטית, וטרנספורמציה של תשלומי סיטונאות.</description>
     <atom:link href="https://sebastienrousseau.com/he/rss.xml" rel="self" type="application/rss+xml"/>
     <language>he-IL</language>
-    <lastBuildDate>Fri, 22 May 2026 11:30:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 18:38:31 +0000</lastBuildDate>
     <copyright>© זכויות יוצרים 2007 - 2026 - Sebastien Rousseau. כל הזכויות שמורות.</copyright>
+    <item>
+      <title>תשלומים אגנטיים בבנקאות: הסכמה, אחריות ו-UX התשלום החדש ב-2026</title>
+      <link>https://sebastienrousseau.com/he/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>
+      <description>תשלומים אגנטיים ב-2026 חצו את הסף מקונספט לעסקה חיה. האתגר הבנקאי אינו האם סוכני AI יכולים ליזום תשלומים, אלא כיצד הסכמה, אחריות, זהות, יכולת ביקורת ובקרות הונאה אמורים לפעול.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/he/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</guid>
+      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>תשלומים אגנטיים 2026</category>
+      <category>תשלומי סוכני AI</category>
+      <category>Mastercard Agent Pay</category>
+      <category>תשלום Rabobank AI</category>
+      <category>AP2</category>
+      <category>A2A</category>
+      <category>x402</category>
+      <category>MCP</category>
+      <category>פרוטוקול תשלומי מכונה</category>
+      <category>הסכמת תשלום</category>
+      <category>Regulation E</category>
+      <category>EFTA</category>
+      <category>אחריות תשלום</category>
+      <category>כוונה בת-אימות</category>
+      <category>המרה לטוקנים</category>
+      <category>מפתחות גישה</category>
+      <category>UX בנקאי</category>
+      <category>מסחר AI</category>
+    </item>
     <item>
       <title>התחדשות האסיד ג&apos;אז בבריטניה: אמנים, קונצרטים ואלבומים של 2026</title>
       <link>https://sebastienrousseau.com/he/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/</link>

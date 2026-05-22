@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/th/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>th-TH</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-23T06:06:06+00:00</news:publication_date>
+    <news:title>การชำระเงินแบบเอเจนต์ในธนาคาร: ความยินยอม ความรับผิด และ UX การชำระเงินใหม่ปี 2026</news:title>
+    <news:keywords>การชำระเงินแบบเอเจนต์ 2026, AI agent payments, Mastercard Agent Pay, Rabobank, AP2, A2A, x402, MCP, MPP, machine payments protocol, คำสั่งความยินยอม, Regulation E, EFTA, ความรับผิด, เจตนาที่ตรวจสอบได้, tokenisation, passkeys, UX การชำระเงิน, AI commerce</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/th/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/</loc>
   <news:news>
     <news:publication>

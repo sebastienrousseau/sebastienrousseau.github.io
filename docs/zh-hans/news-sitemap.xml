@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/zh-hans/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>zh-Hans</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-23T06:06:06+00:00</news:publication_date>
+    <news:title>2026 银行业智能体支付：授权、责任与全新支付体验</news:title>
+    <news:keywords>2026 智能体支付, AI agent 支付, Mastercard Agent Pay, Rabobank AI 支付, AP2, A2A, x402, MCP, 机器支付协议, 支付授权, Regulation E, EFTA, 支付责任, 可验证意图, 令牌化, 通行密钥, 银行支付体验, AI 商务</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/zh-hans/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/</loc>
   <news:news>
     <news:publication>

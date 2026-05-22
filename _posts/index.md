@@ -235,6 +235,18 @@ site_software: "Static Site Generator, Rust"
 <div class="newsroom-grid feat-latest-grid">
 
 <article class="newsroom-card">
+<a class="newsroom-card-media" href="/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html" title="Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026">
+<img alt="Agentic payments architecture diagram showing AI agents, consent mandates, tokenised credentials, card networks, banks, merchants, and audit trails" src="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
+</a>
+<div class="newsroom-card-body">
+<span class="newsroom-eyebrow">Agentic Payments · AI · Banking</span>
+<h3><a href="/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/index.html">Agentic Payments in Banking: Consent, Liability, and the New Payment UX in 2026</a></h3>
+<p class="newsroom-meta"><time datetime="2026-05-23">May 23, 2026</time></p>
+<p class="newsroom-excerpt">Agentic payments crossed from concept to live transaction in 2026 — Mastercard and Rabobank executed a Netherlands AI-agent payment via Agent Pay, AP2-style cryptographic mandates are emerging, and HM Treasury says payment-services regulation must adapt. The banking architecture question is consent, identity, liability, and pre-settlement evidence.</p>
+</div>
+</article>
+
+<article class="newsroom-card">
 <a class="newsroom-card-media" href="/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/index.html" title="The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture">
 <img alt="UK acid jazz renewal collage for 2026 with Hammond organ, vinyl, Ronnie Scott's, Acid Jazz Records, jazz-funk festival stages, and London groove culture" src="https://cloudcdn.pro/api/transform?url=/stocks/images/aperture-vintage-SshYpuf607g.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="600" />
 </a>
@@ -293,19 +305,6 @@ site_software: "Static Site Generator, Rust"
 <p class="newsroom-excerpt">Quantum cryptography has moved from horizon-scanning to implementation discipline: NIST PQC standards are ready, UK NCSC guidance has narrowed the algorithm choices, IETF protocol work is still maturing, and QKD assurance is moving from laboratory confidence to certification language.</p>
 </div>
 </article>
-
-<article class="newsroom-card">
-<a class="newsroom-card-media" href="/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html" title="Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It">
-<img alt="Agentic engineering architecture diagram for banks — spec-driven AI agents, governance control plane, quantum-safe substrate, and legacy mainframe modernisation flows" src="https://cloudcdn.pro/stocks/images/hector-j-rivas-1FxMET2U5dU-unsplash.webp" loading="lazy" decoding="async" width="600" height="600" />
-</a>
-<div class="newsroom-card-body">
-<span class="newsroom-eyebrow">Applied AI · Governance · Engineering</span>
-<h3><a href="/2026-05-17-agentic-engineering-banks-blueprint-2026/index.html">Agentic Engineering for Banks: A 2026 Blueprint for the C-Suite and the Engineers Who Will Build It</a></h3>
-<p class="newsroom-meta"><time datetime="2026-05-17">May 17, 2026</time></p>
-<p class="newsroom-excerpt">70% of banks now use agentic AI in some form; only one in five has a mature governance model. With the EU AI Act high-risk deadline twelve weeks away and autonomous adversaries operating at machine speed, this is the engineering and governance position a bank needs to hold.</p>
-</div>
-</article>
-
 
 </div>
 

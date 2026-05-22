@@ -6,8 +6,36 @@
     <description>บทความภาษาไทย: AI ประยุกต์, การชำระเงิน ISO 20022, การเข้ารหัสหลังควอนตัม และการปฏิรูปการชำระเงินขายส่ง</description>
     <atom:link href="https://sebastienrousseau.com/th/rss.xml" rel="self" type="application/rss+xml"/>
     <language>th-TH</language>
-    <lastBuildDate>Fri, 22 May 2026 11:30:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 18:38:31 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. สงวนลิขสิทธิ์</copyright>
+    <item>
+      <title>การชำระเงินแบบเอเจนต์ในธนาคาร: ความยินยอม ความรับผิด และ UX การชำระเงินใหม่ปี 2026</title>
+      <link>https://sebastienrousseau.com/th/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>
+      <description>การชำระเงินแบบเอเจนต์ในปี 2026 ก้าวจากแนวคิดสู่ธุรกรรมจริง โจทย์ของธนาคารไม่ใช่ AI agent ชำระเงินได้หรือไม่ แต่อยู่ที่ความยินยอม ความรับผิด อัตลักษณ์ การตรวจสอบ การควบคุมทุจริต และโพรโทคอลที่ทำงานร่วมกันได้</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/th/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</guid>
+      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>การชำระเงินแบบเอเจนต์ 2026</category>
+      <category>AI agent payments</category>
+      <category>Mastercard Agent Pay</category>
+      <category>Rabobank</category>
+      <category>AP2</category>
+      <category>A2A</category>
+      <category>x402</category>
+      <category>MCP</category>
+      <category>MPP</category>
+      <category>machine payments protocol</category>
+      <category>คำสั่งความยินยอม</category>
+      <category>Regulation E</category>
+      <category>EFTA</category>
+      <category>ความรับผิด</category>
+      <category>เจตนาที่ตรวจสอบได้</category>
+      <category>tokenisation</category>
+      <category>passkeys</category>
+      <category>UX การชำระเงิน</category>
+      <category>AI commerce</category>
+    </item>
     <item>
       <title>การฟื้นคืน Acid Jazz ในอังกฤษปี 2026: ศิลปิน คอนเสิร์ต อัลบั้ม</title>
       <link>https://sebastienrousseau.com/th/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/</link>

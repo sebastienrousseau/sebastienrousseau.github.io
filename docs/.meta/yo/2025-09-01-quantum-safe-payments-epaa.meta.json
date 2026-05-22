@@ -1,11 +1,11 @@
 {
-  "subtitle": "Quantum-safe readiness is a current infrastructure decision. Not a future one.",
-  "locale": "yo_NG",
-  "language": "yo-NG",
   "title": "Quantum-Safe Payments: Why the Industry Must Act Now",
-  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp",
-  "date": "Sep 01, 2025",
-  "banner_alt": "Quantum computing circuit board in blue light",
+  "language": "yo-NG",
+  "locale": "yo_NG",
   "keywords": "quantum-safe payments, post-quantum cryptography, SEPA, SWIFT gpi, ISO 20022, financial services security, EPAA, harvest-now decrypt-later, cryptographic agility, Sebastien Rousseau",
-  "description": "Quantum computing threatens payment system cryptography. The EPAA white paper outlines the structural risk and the urgent case for PQC migration."
+  "description": "Quantum computing threatens payment system cryptography. The EPAA white paper outlines the structural risk and the urgent case for PQC migration.",
+  "banner_alt": "Quantum computing circuit board in blue light",
+  "subtitle": "Quantum-safe readiness is a current infrastructure decision. Not a future one.",
+  "date": "Sep 01, 2025",
+  "banner": "https://cloudcdn.pro/stocks/images/digital-nodes.webp"
 }

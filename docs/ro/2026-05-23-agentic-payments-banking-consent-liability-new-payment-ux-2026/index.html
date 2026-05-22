@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta itemprop="datePublished" content="Sat, 23 May 2026 06:06:06 +0000" id="date" />
+    <meta itemprop="dateModified" content="Sat, 23 May 2026 06:06:06 +0000" id="last-modified" />
+    <title>Plăți agentice în bănci: consimțământ, răspundere și noul UX de plată în 2026 — Sebastien Rousseau</title>
+
+    <meta name="author" content="contact@sebastienrousseau.com (Sebastien Rousseau)">
+<meta name="description" content="Plățile agentice au trecut în 2026 de la concept la tranzacție reală. Întrebarea bancară nu mai este dacă agenții AI pot iniția plăți, ci cum trebuie regândite consimțământul, răspunderea, identitatea, auditabilitatea și interoperabilitatea protocoalelor.">
+<meta name="keywords" content="plăți agentice 2026, plăți agenți AI, Mastercard Agent Pay, plată AI Rabobank, AP2, A2A, x402, MCP, protocol plăți mașini, consimțământ plăți, Regulation E, EFTA, răspundere plăți, intenție verificabilă, tokenizare, chei de acces, UX bancar, comerț AI">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="accessibility" content="ARIA, fullKeyboardControl, noFlashingHazard" />
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Agentic Payments 2026">
+
+    <!-- Strict security headers. The headers below that can be set via
+         <meta http-equiv> are emitted here; HSTS / COOP / COEP / CORP /
+         X-Frame-Options must come from the CDN (Cloudflare Transform
+         Rules — see DEPLOY.md for the canonical configuration). -->
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), ambient-light-sensor=(), attribution-reporting=(), autoplay=(self), battery=(), browsing-topics=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), hid=(), identity-credentials-get=(), idle-detection=(), interest-cohort=(), join-ad-interest-group=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), publickey-credentials-create=(), publickey-credentials-get=(), run-ad-auction=(), screen-wake-lock=(), serial=(), speaker-selection=(), sync-xhr=(), unload=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Strict CSP. Inline <script type="application/ld+json"> JSON-LD blocks
+         are allowed *by hash only* — scripts/postbuild.py computes the SHA-256
+         of each block at build time and injects the 'sha256-<base64>' tokens
+         into script-src below before the file is served. Browsers will then
+         allow that exact byte-for-byte content and nothing else.
+         'inline-speculation-rules' (hyphens! W3C spec) permits the
+         Speculation Rules API hover prerender script. frame-ancestors
+         is set via Cloudflare Transform Rules — meta CSP doesn't honour
+         it (see DEPLOY.md). -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        object-src 'none';
+        upgrade-insecure-requests;
+        script-src 'sha256-6iM+Hq5NiMvFOQZRMfKvcGituXBdudt7clqzmIRAGM0=' 'sha256-AAqu7Vo5o9MvXfyB6qenAhBQ2xobPumZCx6DUKqGoJU=' 'sha256-IRKBQZnpK41KZQfPtkzStkjxL2Iv0DvhBRnIr3pgs/E=' 'sha256-nVNCXADQGekQ4z4BBTiL2SlfT1qThkhN2te7YlKswZA=' 'sha256-uJ+iwZ/NWTZuRf0eI75jqg+uJvcBxptmUmLpv3s21Qc=' 'self' 'inline-speculation-rules' https://www.google.com https://www.gstatic.com https://open.spotify.com https://static.cloudflareinsights.com https://challenges.cloudflare.com https://ajax.cloudflare.com;
+        frame-src 'self' https://www.google.com https://open.spotify.com https://www.youtube.com https://www.youtube-nocookie.com;
+        connect-src 'self' https://www.google.com https://open.spotify.com;
+        img-src 'self' data: blob: https://cloudcdn.pro https://pacs008.com https://i.scdn.co;
+        style-src 'self' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        media-src 'self' https://p.scdn.co https://*.scdn.co;" />
+
+    
+    
+
+    
+    <!-- Banner image stays in frontmatter for og:image / Twitter Card use,
+         but no longer preloaded — report / page / link layouts never render
+         it above the fold so the preload triggered a console warning on
+         every dated article. -->
+        <link rel="icon" type="image/x-icon" href="https://cloudcdn.pro/sebastienrousseau/favicon.ico" sizes="16x16 32x32" />
+    <link rel="apple-touch-icon" href="https://cloudcdn.pro/sebastienrousseau/v1/icons/192x192.png" sizes="192x192" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="alternate" type="application/rss+xml" href="/ro/rss.xml" />
+    <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+    <link rel="preconnect" href="https://cloudcdn.pro" crossorigin />
+    <!-- Preload the LCP hero portrait so it doesn't compete with the
+         render-blocking JS bundle on throttled mobile connections.
+         Lighthouse-simulated Slow-4G has been pinning LCP at ~5.6s; the
+         observed (real-network) LCP is 165 ms. This hint pulls the
+         synthetic LCP in line with the observed value. -->
+    <link rel="preload" as="image" href="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=1200&format=webp&q=85" fetchpriority="high">
+    <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <script>(function(){try{var saved=localStorage.getItem("theme");var prefersDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;var theme=saved||(prefersDark?"dark":"light");document.documentElement.setAttribute("data-theme",theme);}catch(e){}})();</script>
+
+    <link rel="stylesheet" href="/_csp/493b9900892b340d.css" integrity="sha256-OhfPiaSml7/vXd8JdMYp3RH7EPb/w/8weVm5WYUa8ec= sha256-5/5Lg9CU1dmoacFrFtpQFTTicu/xVERXg50F3c/SAj8=" crossorigin="anonymous">
+    <link rel="alternate" type="application/atom+xml" title="Flux Atom" href="/ro/atom.xml"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:title" content="Plăți agentice în bănci: consimțământ, răspundere și noul UX de plată în 2026 — Sebastien Rousseau">
+<meta property="og:description" content="Plățile agentice au trecut în 2026 de la concept la tranzacție reală. Întrebarea bancară nu mai este dacă agenții AI pot iniția plăți, ci cum trebuie regândite consimțământul, răspunderea, identitatea, auditabilitatea și interoperabilitatea protocoalelor.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sebastienrousseau.com/ro/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/">
+<meta property="og:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80">
+<meta property="og:image:width" content="100vw">
+<meta property="og:image:height" content="100vh">
+<meta property="og:locale" content="ro_RO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Plăți agentice în bănci: consimțământ, răspundere și noul UX de plată în 2026 — Sebastien Rousseau">
+<meta name="twitter:description" content="Plățile agentice au trecut în 2026 de la concept la tranzacție reală. Întrebarea bancară nu mai este dacă agenții AI pot iniția plăți, ci cum trebuie regândite consimțământul, răspunderea, identitatea, auditabilitatea și interoperabilitatea protocoalelor.">
+<meta name="twitter:image" content="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80">
+<link rel="canonical" href="https://sebastienrousseau.com/ro/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/">
+<link rel="sbom" type="application/vnd.cyclonedx+json" href="/sbom.cdx.json">
+<meta property="og:site_name" content="Sebastien Rousseau">
+<link rel="alternate" hreflang="en" href="https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="fr" href="https://sebastienrousseau.com/fr/2026-05-23-agentique-paiements-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="ar" href="https://sebastienrousseau.com/ar/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="bn" href="https://sebastienrousseau.com/bn/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="cs" href="https://sebastienrousseau.com/cs/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="de" href="https://sebastienrousseau.com/de/2026-05-23-agentic-zahlungsverkehr-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="es" href="https://sebastienrousseau.com/es/2026-05-23-agentic-pagos-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="fil" href="https://sebastienrousseau.com/fil/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="ha" href="https://sebastienrousseau.com/ha/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="he" href="https://sebastienrousseau.com/he/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="hi" href="https://sebastienrousseau.com/hi/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="id" href="https://sebastienrousseau.com/id/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="it" href="https://sebastienrousseau.com/it/2026-05-23-agentic-pagamenti-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="ja" href="https://sebastienrousseau.com/ja/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="ko" href="https://sebastienrousseau.com/ko/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="nl" href="https://sebastienrousseau.com/nl/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="pl" href="https://sebastienrousseau.com/pl/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="pt-br" href="https://sebastienrousseau.com/pt-br/2026-05-23-agentic-pagamentos-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="ro" href="https://sebastienrousseau.com/ro/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="ru" href="https://sebastienrousseau.com/ru/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="sv" href="https://sebastienrousseau.com/sv/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="th" href="https://sebastienrousseau.com/th/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="tr" href="https://sebastienrousseau.com/tr/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="uk" href="https://sebastienrousseau.com/uk/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="vi" href="https://sebastienrousseau.com/vi/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="yo" href="https://sebastienrousseau.com/yo/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="zh-hans" href="https://sebastienrousseau.com/zh-hans/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="zh-hant" href="https://sebastienrousseau.com/zh-hant/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><link rel="alternate" hreflang="x-default" href="https://sebastienrousseau.com/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/" /><script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/_csp/*"}},{"not":{"href_matches":"/*.xml"}},{"not":{"href_matches":"/*.json"}},{"not":{"href_matches":"/*.txt"}},{"not":{"href_matches":"/*.pdf"}},{"not":{"href_matches":"/manifest.json"}},{"not":{"href_matches":"/sw.js"}},{"not":{"href_matches":"/contact/*"}},{"not":{"href_matches":"/fr/contact/*"}}]},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/_csp/3ae64e6558e84d20.css" integrity="sha256-tV/7vAgYDUuBQbSGEPjXL/JC0sD7QpSxXCGKT4ALhh8= sha256-dvm1KF9mEWIapL8BE0nyFlHaKSf6TsjZZoQcJeRPraI=" crossorigin="anonymous"></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <a class="skip" href="#main">Salt la conținutul principal</a>
+    <div class="ap-progress" aria-hidden="true"></div>
+
+    <header class="ap-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <input class="ap-toggle" id="ap-menu-toggle" type="checkbox" aria-label="Comută navigarea" />
+      <div class="wrap">
+        <a class="ap-brand" href="/ro/index.html" aria-label="Pagina principală Sebastien Rousseau">
+          <span class="ap-brand-name" itemprop="name">Sebastien Rousseau</span>
+        </a>
+        <nav aria-label="Navigare principală">
+          <ul class="ap-menu">
+            <li><a href="/ro/despre/index.html">About</a></li>
+            <li><a href="/ro/articole/index.html" aria-current="page" class="active">Articles</a></li>
+            <li><a href="/ro/publicatii/index.html">Papers</a></li>
+            <li><a href="/ro/subiecte/index.html">Subiecte</a></li>
+            <li><a href="/ro/proiecte/index.html">Projects</a></li>
+            <li><a href="/ro/liste-de-redare/index.html">Playlists</a></li>
+          </ul>
+        </nav>
+        <div class="ap-nav-right">
+          <button type="button" class="theme-toggle" aria-label="Activează tema întunecată" aria-pressed="false" title="Schimbă tema">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <button type="button" class="ap-search" aria-label="Caută (Cmd sau Ctrl + K)" title="Caută (⌘K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <kbd class="ap-search-kbd" aria-hidden="true">⌘K</kbd>
+          </button>
+          <div class="ap-lang" aria-label="Limbă">
+            <button type="button" class="ap-lang-toggle" aria-label="RO, Schimbă limba" aria-expanded="false" aria-haspopup="menu" title="Schimbă limba">
+              <span class="ap-lang-globe" aria-hidden="true">🌐</span>
+              <span class="ap-lang-current">RO</span>
+            </button>
+            <div class="ap-lang-menu" role="menu" hidden>
+              <div class="ap-lang-menu-grid">
+                <a class="ap-lang-item" href="/" data-lang="en" role="menuitem">🇬🇧 English</a>
+                <a class="ap-lang-item" href="/fr/" data-lang="fr" role="menuitem">🇫🇷 Français</a>
+                <a class="ap-lang-item" href="/ar/" data-lang="ar" role="menuitem">🇸🇦 العربية</a>
+                <a class="ap-lang-item" href="/bn/" data-lang="bn" role="menuitem">🇧🇩 বাংলা</a>
+                <a class="ap-lang-item" href="/cs/" data-lang="cs" role="menuitem">🇨🇿 Čeština</a>
+                <a class="ap-lang-item" href="/de/" data-lang="de" role="menuitem">🇩🇪 Deutsch</a>
+                <a class="ap-lang-item" href="/es/" data-lang="es" role="menuitem">🇪🇸 Español</a>
+                <a class="ap-lang-item" href="/fil/" data-lang="fil" role="menuitem">🇵🇭 Filipino</a>
+                <a class="ap-lang-item" href="/ha/" data-lang="ha" role="menuitem">🇳🇬 Hausa</a>
+                <a class="ap-lang-item" href="/he/" data-lang="he" role="menuitem">🇮🇱 עברית</a>
+                <a class="ap-lang-item" href="/hi/" data-lang="hi" role="menuitem">🇮🇳 हिन्दी</a>
+                <a class="ap-lang-item" href="/id/" data-lang="id" role="menuitem">🇮🇩 Indonesia</a>
+                <a class="ap-lang-item" href="/it/" data-lang="it" role="menuitem">🇮🇹 Italiano</a>
+                <a class="ap-lang-item" href="/ja/" data-lang="ja" role="menuitem">🇯🇵 日本語</a>
+                <a class="ap-lang-item" href="/ko/" data-lang="ko" role="menuitem">🇰🇷 한국어</a>
+                <a class="ap-lang-item" href="/nl/" data-lang="nl" role="menuitem">🇳🇱 Nederlands</a>
+                <a class="ap-lang-item" href="/pl/" data-lang="pl" role="menuitem">🇵🇱 Polski</a>
+                <a class="ap-lang-item" href="/pt-br/" data-lang="pt-br" role="menuitem">🇧🇷 Português</a>
+                <a class="ap-lang-item" href="/ro/" data-lang="ro" role="menuitem">🇷🇴 Română</a>
+                <a class="ap-lang-item" href="/ru/" data-lang="ru" role="menuitem">🇷🇺 Русский</a>
+                <a class="ap-lang-item" href="/sv/" data-lang="sv" role="menuitem">🇸🇪 Svenska</a>
+                <a class="ap-lang-item" href="/th/" data-lang="th" role="menuitem">🇹🇭 ไทย</a>
+                <a class="ap-lang-item" href="/tr/" data-lang="tr" role="menuitem">🇹🇷 Türkçe</a>
+                <a class="ap-lang-item" href="/uk/" data-lang="uk" role="menuitem">🇺🇦 Українська</a>
+                <a class="ap-lang-item" href="/vi/" data-lang="vi" role="menuitem">🇻🇳 Tiếng Việt</a>
+                <a class="ap-lang-item" href="/yo/" data-lang="yo" role="menuitem">🇳🇬 Yorùbá</a>
+                <a class="ap-lang-item" href="/zh-hans/" data-lang="zh-hans" role="menuitem">🇨🇳 简体中文</a>
+                <a class="ap-lang-item" href="/zh-hant/" data-lang="zh-hant" role="menuitem">🇹🇼 繁體中文</a>
+              </div>
+            </div>
+          </div>
+          <a class="ap-cta-mini" href="/ro/contact/index.html" aria-label="Contact">Contact ›</a>
+          <label class="ap-burger" for="ap-menu-toggle" aria-hidden="true" title="Comută navigarea">☰</label>
+        </div>
+      </div>
+    </header>
+
+        <section class="ap-hero">
+      <h1>Plăți agentice în bănci: consimțământ, răspundere și noul UX de plată în 2026</h1>
+      <p class="sub">Plățile agentice transformă UX-ul de plată din tranzacții cu clic uman în execuție AI delegată, delimitată și auditabilă — obligând băncile să-și reproiecteze consimțământul, autentificarea, gestionarea disputelor și răspunderea.</p>
+    <nav class="article-tags" aria-label="Subiecte"><a href="/tags/index.html#h3-plati-agentice-2026" class="article-tag" rel="tag">plăți agentice 2026</a><a href="/tags/index.html#h3-plati-agenti-ai" class="article-tag" rel="tag">plăți agenți AI</a><a href="/tags/index.html#h3-mastercard-agent-pay" class="article-tag" rel="tag">Mastercard Agent Pay</a><a href="/tags/index.html#h3-plata-ai-rabobank" class="article-tag" rel="tag">plată AI Rabobank</a><a href="/tags/index.html#h3-ap2" class="article-tag" rel="tag">AP2</a><a href="/tags/index.html#h3-a2a" class="article-tag" rel="tag">A2A</a><a href="/tags/index.html#h3-x402" class="article-tag" rel="tag">x402</a><a href="/tags/index.html#h3-mcp" class="article-tag" rel="tag">MCP</a><a href="/tags/index.html#h3-protocol-plati-masini" class="article-tag" rel="tag">protocol plăți mașini</a><a href="/tags/index.html#h3-consimtamant-plati" class="article-tag" rel="tag">consimțământ plăți</a><a href="/tags/index.html#h3-regulation-e" class="article-tag" rel="tag">Regulation E</a><a href="/tags/index.html#h3-efta" class="article-tag" rel="tag">EFTA</a><a href="/tags/index.html#h3-raspundere-plati" class="article-tag" rel="tag">răspundere plăți</a><a href="/tags/index.html#h3-intentie-verificabila" class="article-tag" rel="tag">intenție verificabilă</a><a href="/tags/index.html#h3-tokenizare" class="article-tag" rel="tag">tokenizare</a><a href="/tags/index.html#h3-chei-de-acces" class="article-tag" rel="tag">chei de acces</a><a href="/tags/index.html#h3-ux-bancar" class="article-tag" rel="tag">UX bancar</a><a href="/tags/index.html#h3-comert-ai" class="article-tag" rel="tag">comerț AI</a></nav><div class="article-meta"><a href="/about/index.html" class="article-author" rel="author"><img alt="Portrait of Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=80" width="36" height="36" loading="lazy" decoding="async" /><span>Sebastien Rousseau</span></a> <span aria-hidden="true">·</span> <time datetime="2026-05-23T06:06:06+00:00" class="meta-pub">Publicat 23 May 2026</time> <span aria-hidden="true">·</span> <span class="meta-read" aria-label="Timp estimat de citire">6 min de citit</span></div></section>
+
+    <main id="main" class="content ap-section" aria-label="main">
+      <div class="wrap report-wrap"><aside class="article-toc" aria-label="Table of contents"><h2>Cuprins</h2><ol><li><a href="#de-ce-2026-a-devenit-anul-strategic">De ce 2026 a devenit anul strategic</a></li><li><a href="#reperul-arhitectural-pentru-2026">Reperul arhitectural pentru 2026</a></li><li><a href="#tabel-arhitectural-strategic">Tabel arhitectural strategic</a></li><li><a href="#ce-inseamna-acest-lucru-pe-tip-de-banca">Ce înseamnă acest lucru pe tip de bancă</a></li><li><a href="#concluzie">Concluzie</a></li><li><a href="#intrebari-frecvente">Întrebări frecvente</a></li><li><a href="#referinte">Referințe</a></li></ol></aside><aside class="post-lead" aria-label="Résumé de l'article"><p class="post-lead-tldr"><strong>TL;DR.</strong> Plățile agentice au trecut în 2026 de la concept la tranzacție reală. Întrebarea bancară nu mai este dacă agenții AI pot iniția plăți, ci cum trebuie regândite consimțământul, răspunderea, identitatea, auditabilitatea și interoperabilitatea protocoalelor.</p><p class="post-lead-heading"><strong>Points clés</strong></p><ul class="post-lead-takeaways">  <li><strong>De ce 2026 a devenit anul strategic.</strong> Sectorul bancar automatizează plățile de decenii, însă plățile agentice sunt calitativ diferite.</li>  <li><strong>Reperul arhitectural pentru 2026.</strong> Mutarea decisivă este de la posesia credențialului la dovada intenției.</li>  <li><strong>Tabel arhitectural strategic.</strong> Băncile retail trebuie să pornească de la trasee de plată agentică cu risc redus, limite ferme de cheltuieli, chei de acces (passkeys), credențiale tokenizate și reguli clare de dispută.</li>  <li><strong>Ce înseamnă acest lucru pe tip de bancă.</strong> Băncile retail trebuie să pornească de la trasee de plată agentică cu risc redus, limite ferme de cheltuieli, chei de acces (passkeys), credențiale tokenizate și reguli clare de dispută.</li></ul></aside><h1>Plăți agentice în bănci: consimțământ, răspundere și noul UX de plată în 2026</h1>
+<!-- lead-start -->
+
+<!-- lead-end -->
+<p>Plățile agentice au trecut de la slide-ul de prezentare la dovada de piață reală. Mastercard și Rabobank au finalizat în Țările de Jos o plată inițiată de un agent AI, prin care agentul a rezervat o degustare de cafea pe Priceless.com fără să acceseze direct detaliile cardului, iar consimțământul explicit al consumatorului a fost înregistrat înaintea execuției (<a href="https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026" title="Update on the Payments landscape – May 2026">Association of Corporate Treasurers</a>). Pentru bănci, miza strategică este acum arhitectura consimțământului: cum demonstrează o instituție financiară că o plată efectuată de o mașină a fost autorizată autentic de principalul uman sau corporativ din spate.</p>
+<hr />
+<blockquote>
+<p><strong>Rezumat executiv / Concluzii-cheie</strong></p>
+<ul>
+<li><strong>Primele semnale de piață sunt active.</strong> Mastercard și Rabobank au realizat în Țările de Jos o tranzacție cu agent AI prin Mastercard Agent Pay, iar agentul a fost împiedicat să acceseze direct datele cardului (<a href="https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026" title="Update on the Payments landscape – May 2026">Association of Corporate Treasurers</a>).</li>
+<li><strong>Protocoalele de plată agentică apar înaintea cadrului legal.</strong> Fenwick identifică AP2, A2A, x402, MCP și MPP drept eforturi de protocol pentru interoperabilitatea și autorizarea agenților (<a href="https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments" title="Is 2026 the Year of Agentic Payments?">Fenwick</a>).</li>
+<li><strong>Consimțământul este problema bancară centrală.</strong> Mandatele criptografice de tip AP2 captează instrucțiunile utilizatorului și aprobarea finală ca dovadă auditabilă a intenției (<a href="https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments" title="Is 2026 the Year of Agentic Payments?">Fenwick</a>).</li>
+<li><strong>Răspunderea rămâne nerezolvată.</strong> Legislația plăților a fost concepută pentru tranzacții decise de oameni, nu pentru sisteme AI autonome care acționează cu autoritate delegată (<a href="https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments" title="Is 2026 the Year of Agentic Payments?">Fenwick</a>).</li>
+<li><strong>Marea Britanie își adaptează deja politica.</strong> HM Treasury anunță că va explora cum trebuie adaptată reglementarea serviciilor de plată la plățile efectuate de agenți AI (<a href="https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology" title="UK fintech backed to embrace future payments technology">GOV.UK</a>).</li>
+<li><strong>Noul UX nu este checkout-ul.</strong> Este negocierea agent-comerciant, autoritatea delimitată, credențialele tokenizate, cheile de acces, limitele de cheltuieli și dovezile de dispută generate înainte ca banii să circule.</li>
+<li><strong>Băncile au nevoie de un plan de control al agenților.</strong> Banca incapabilă să verifice identitatea agentului, aria mandatului, anomaliile comportamentale și proveniența tranzacției nu trebuie să permită decontarea plății.</li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="de-ce-2026-a-devenit-anul-strategic">De ce 2026 a devenit anul strategic <a class="heading-anchor" href="#de-ce-2026-a-devenit-anul-strategic" aria-label="Link către De ce 2026 a devenit anul strategic">#</a></h2>
+<p>Sectorul bancar automatizează plățile de decenii, însă plățile agentice sunt calitativ diferite. Plata recurentă (autopay) execută o instrucțiune permanentă; un sistem de plată agentică poate alege comerciantul, momentul, prețul, calea de plată și sursa de finanțare în limitele unui obiectiv stabilit de utilizator. Fenwick definește categoria drept tranzacții de plată inițiate, gestionate și executate de sisteme AI adaptive care operează autonom cu autoritate delegată (<a href="https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments" title="Is 2026 the Year of Agentic Payments?">Fenwick</a>).</p>
+<p>Semnalul de politică publică al Marii Britanii contează pentru că plasează plățile agentice în reglementarea principală a plăților, nu le tratează drept o curiozitate AI. GOV.UK anunță că guvernul va consulta piața privind adoptarea în siguranță a agenților AI care efectuează plăți în numele consumatorilor și firmelor (<a href="https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology" title="UK fintech backed to embrace future payments technology">GOV.UK</a>).</p>
+<h2 id="reperul-arhitectural-pentru-2026">Reperul arhitectural pentru 2026 <a class="heading-anchor" href="#reperul-arhitectural-pentru-2026" aria-label="Link către Reperul arhitectural pentru 2026">#</a></h2>
+<h3 id="1-intentia-verificabila-devine-primitiva-platii">1. Intenția verificabilă devine primitiva plății <a class="heading-anchor" href="#1-intentia-verificabila-devine-primitiva-platii" aria-label="Link către 1. Intenția verificabilă devine primitiva plății">#</a></h3>
+<p>Mutarea decisivă este de la posesia credențialului la dovada intenției. Un număr de card, un token, un credențial API sau o permisiune de acces la cont nu dovedesc că tranzacția respectivă a fost dorită de client. Fenwick arată că AP2 folosește mandate semnate criptografic pentru a înregistra instrucțiunile delimitate inițiale și aprobarea finală, generând o pistă de audit a intenției utilizatorului (<a href="https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments" title="Is 2026 the Year of Agentic Payments?">Fenwick</a>).</p>
+<h3 id="2-identitatea-agentului-trebuie-sa-fie-la-standard-bancar">2. Identitatea agentului trebuie să fie la standard bancar <a class="heading-anchor" href="#2-identitatea-agentului-trebuie-sa-fie-la-standard-bancar" aria-label="Link către 2. Identitatea agentului trebuie să fie la standard bancar">#</a></h3>
+<p>O plată inițiată de un agent AI cere un model de identitate mai puternic decât o sesiune de browser. Banca trebuie să știe dacă cererea provine de la instanța de agent autorizată, dacă agentul a operat în aria de competență aprobată și dacă lanțul de acțiuni a fost alterat.</p>
+<h3 id="3-raspunderea-cere-dovezi-anterioare-tranzactiei">3. Răspunderea cere dovezi anterioare tranzacției <a class="heading-anchor" href="#3-raspunderea-cere-dovezi-anterioare-tranzactiei" aria-label="Link către 3. Răspunderea cere dovezi anterioare tranzacției">#</a></h3>
+<p>Fenwick semnalează incertitudinea din jurul EFTA și Regulation E, inclusiv întrebarea dacă acordarea accesului unui agent AI la cont reprezintă autoritate efectivă și ce se întâmplă când agentul încalcă instrucțiunile utilizatorului (<a href="https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments" title="Is 2026 the Year of Agentic Payments?">Fenwick</a>). Răspunsul pentru bănci nu este să aștepte instanțele de judecată. Este să colecteze dovezi înainte de decontare.</p>
+<h3 id="4-controlul-fraudei-se-muta-de-la-autentificarea-utilizatorului-la-comportamentu">4. Controlul fraudei se mută de la autentificarea utilizatorului la comportamentul agentului <a class="heading-anchor" href="#4-controlul-fraudei-se-muta-de-la-autentificarea-utilizatorului-la-comportamentu" aria-label="Link către 4. Controlul fraudei se mută de la autentificarea utilizatorului la comportamentul agentului">#</a></h3>
+<p>Un fraudator nu mai are nevoie să fure cardul clientului dacă poate manipula agentul clientului. Băncile au nevoie deci de controale pentru prompt injection, falsificarea identității comerciantului, escaladarea permisiunilor pentru instrumente, coluziune agent-agent, tipare de cheltuire anomale și recomandări răuvoitoare.</p>
+<h3 id="5-ux-ul-platii-devine-negociat-si-delegat">5. UX-ul plății devine negociat și delegat <a class="heading-anchor" href="#5-ux-ul-platii-devine-negociat-si-delegat" aria-label="Link către 5. UX-ul plății devine negociat și delegat">#</a></h3>
+<p>J.P. Morgan estimează că plățile agentice vor începe cu categorii repetitive și de risc redus, înainte de a trece la achiziții de valoare mai mare, precum bilete sau autovehicule (<a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" title="Payments Outlook: Five Trends Powering Payments in 2026">J.P. Morgan</a>). Această secvențiere contează: băncile trebuie să pornească de la experiențe delimitate, reversibile și cu valoare mică, lărgind autoritatea agenților doar atunci când modelul de dovezi funcționează.</p>
+<h2 id="tabel-arhitectural-strategic">Tabel arhitectural strategic <a class="heading-anchor" href="#tabel-arhitectural-strategic" aria-label="Link către Tabel arhitectural strategic">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Strat</th>
+<th>Direcție 2026</th>
+<th>Oportunitate bancară</th>
+<th>Risc în caz de gestionare defectuoasă</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mandat de consimțământ</strong></td>
+<td>Instrucțiune și aprobare finală semnate criptografic</td>
+<td>Ambiguitate redusă în dispute</td>
+<td>Mandate netestate de autorități sau de instanțe</td>
+</tr>
+<tr>
+<td><strong>Identitatea agentului</strong></td>
+<td>Instanță de agent semnată și instrumente delimitate</td>
+<td>Previne utilizarea abuzivă a credențialelor</td>
+<td>Agenți falsificați sau deturnați inițiază plăți aparent valide</td>
+</tr>
+<tr>
+<td><strong>Tokenizare</strong></td>
+<td>Agentul nu vede credențialele brute de card/cont</td>
+<td>Limitează expunerea credențialelor</td>
+<td>Fals sentiment de siguranță dacă aria mandatului este slabă</td>
+</tr>
+<tr>
+<td><strong>Dovezi de răspundere</strong></td>
+<td>Pistă de audit pre-decontare</td>
+<td>Îmbunătățește gestionarea disputelor</td>
+<td>Lipsă de dovezi când clientul contestă plata</td>
+</tr>
+<tr>
+<td><strong>Integrare cu comerciantul</strong></td>
+<td>API-uri pentru catalog, preț și politici, lizibile de agent</td>
+<td>Comerț fără fricțiuni</td>
+<td>Prompt-uri manipulative ale comerciantului sau dark patterns</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ce-inseamna-acest-lucru-pe-tip-de-banca">Ce înseamnă acest lucru pe tip de bancă <a class="heading-anchor" href="#ce-inseamna-acest-lucru-pe-tip-de-banca" aria-label="Link către Ce înseamnă acest lucru pe tip de bancă">#</a></h2>
+<h3 id="bancile-retail">Băncile retail <a class="heading-anchor" href="#bancile-retail" aria-label="Link către Băncile retail">#</a></h3>
+<p>Băncile retail trebuie să pornească de la trasee de plată agentică cu risc redus, limite ferme de cheltuieli, chei de acces (passkeys), credențiale tokenizate și reguli clare de dispută. Obiectivul nu este autonomia maximă; este autonomia delimitată în care clienții pot avea încredere.</p>
+<h3 id="bancile-corporate">Băncile corporate <a class="heading-anchor" href="#bancile-corporate" aria-label="Link către Băncile corporate">#</a></h3>
+<p>Banca corporate are nevoie de un model mai puternic, deoarece agenții delegați pot iniția plăți către furnizori, conversii FX, rezervări de călătorie sau comenzi de achiziții. Lanțurile de aprobare, politica de trezorerie și expirarea mandatului trebuie încorporate în tranzacție.</p>
+<h3 id="retelele-de-plata">Rețelele de plată <a class="heading-anchor" href="#retelele-de-plata" aria-label="Link către Rețelele de plată">#</a></h3>
+<p>Rețelele pot deveni stratul de încredere al comerțului agentic dacă furnizează tokenizare, verificare a mandatelor, atestări ale comercianților și reguli de răspundere pe care băncile să le poată adopta consecvent.</p>
+<h3 id="autoritatile-de-reglementare">Autoritățile de reglementare <a class="heading-anchor" href="#autoritatile-de-reglementare" aria-label="Link către Autoritățile de reglementare">#</a></h3>
+<p>Autoritățile trebuie să clarifice cum se aplică regulile existente privind consimțământul, autentificarea, plățile neautorizate și transmiterea de bani atunci când o mașină alege detaliile tranzacției.</p>
+<h2 id="concluzie">Concluzie <a class="heading-anchor" href="#concluzie" aria-label="Link către Concluzie">#</a></h2>
+<p>Plățile agentice sunt pasul natural după plățile încorporate (embedded payments), însă cer un model de control nou. Banca trebuie să verifice nu doar cine este clientul, ci ce autoritate a delegat, dacă agentul s-a încadrat în această autoritate și dacă dovezile tranzacției pot rezista într-o dispută. Arhitectura câștigătoare nu este un chatbot AI cu un buton de plată. Este un sistem de consimțământ, identitate, tokenizare și răspundere construit în jurul execuției autonome.</p>
+<h2 id="intrebari-frecvente">Întrebări frecvente <a class="heading-anchor" href="#intrebari-frecvente" aria-label="Link către Întrebări frecvente">#</a></h2>
+<p><strong>Ce este o plată agentică?</strong></p>
+<p>O plată agentică este o plată inițiată, gestionată sau executată de un sistem AI care acționează cu autoritate delegată de utilizator, în loc ca utilizatorul să parcurgă manual fiecare pas al tranzacției.</p>
+<p><strong>De ce este dificil consimțământul?</strong></p>
+<p>Consimțământul este dificil pentru că multe legi ale plăților presupun o tranzacție specifică, autorizată de o persoană. Un agent AI poate decide ulterior detaliile tranzacției, în limitele unei instrucțiuni mai largi, ceea ce creează ambiguitate.</p>
+<p><strong>Poate tokenizarea rezolva riscul plății agentice?</strong></p>
+<p>Tokenizarea ajută pentru că agentul nu are nevoie de credențialele brute, dar nu dovedește că agentul a fost autorizat să efectueze tranzacția respectivă.</p>
+<p><strong>De unde trebuie să pornească băncile?</strong></p>
+<p>Băncile trebuie să pornească de la cazuri de utilizare delimitate, cu risc redus și valoare mică, în care mandatele, limitele de cheltuieli, dovezile de dispută și controalele clientului pot fi testate în siguranță.</p>
+<h2 id="referinte">Referințe <a class="heading-anchor" href="#referinte" aria-label="Link către Referințe">#</a></h2>
+<ul>
+<li>Fenwick, (2026). <a href="https://www.fenwick.com/insights/publications/is-2026-the-year-of-agentic-payments" title="Is 2026 the Year of Agentic Payments?">Is 2026 the Year of Agentic Payments? ⧉</a>.</li>
+<li>Association of Corporate Treasurers, (2026). <a href="https://www.treasurers.org/hub/blog/Update-Payments-Landscape-May-2026" title="Payments landscape update">Update on the Payments landscape – May 2026 ⧉</a>.</li>
+<li>GOV.UK, (2026). <a href="https://www.gov.uk/government/news/uk-fintech-backed-to-embrace-future-payments-technology" title="UK fintech backed">UK fintech backed to embrace future payments technology ⧉</a>.</li>
+<li>J.P. Morgan, (2026). <a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" title="Payments Outlook">Payments Outlook: Five Trends Powering Payments in 2026 ⧉</a>.</li>
+</ul>
+<!-- enrich-start -->
+
+<p class="post-reviewed">Ultima revizuire <time datetime="2026-05-23">2026-05-23</time>.</p>
+<!-- enrich-end -->
+<aside class="author-card" aria-label="Despre autor"><img alt="Portretul lui Sebastien Rousseau" src="https://cloudcdn.pro/api/transform?url=/stocks/images/sebastien-rousseau.png&w=200&format=webp&q=85" width="64" height="64" loading="lazy" decoding="async"  fetchpriority="high"><span class="author-card-body"><strong class="author-card-name"><a href="/ro/despre/index.html">Sebastien Rousseau</a></strong><span class="author-card-bio">Tehnolog bancar senior; scriu despre IA aplicată, migrarea la ISO 20022, criptografie post-cuantică pentru serviciile financiare și transformarea structurală a plăților wholesale.</span><span class="author-credentials">Peste 20 de ani de experiență în HSBC Commercial &amp; Investment Bank, PayPal, Barclays, Shazam, AKQA, Virgin Group. <a href="/ro/despre/index.html">Profil complet</a> &middot; <a href="https://www.linkedin.com/in/sebastienrousseau/" rel="external noopener">LinkedIn</a> &middot; <a href="https://github.com/sebastienrousseau" rel="external noopener">GitHub</a></span></span></aside><p class="post-reviewed">Ultima revizuire <time datetime="2026-05-22">2026-05-22</time>.</p><aside class="related-posts" aria-labelledby="related-heading">
+<h2 id="related-heading" class="related-heading">Lecturi conexe</h2>
+<div class="related-grid">
+<article class="related-card"><a href="https://sebastienrousseau.com/ro/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html" class="related-media" aria-label="State of AI and Quantum Computing in Banking: A 2023 Review" tabindex="-1"><img alt="State of AI and Quantum Computing in Banking: A 2023 Review" src="https://cloudcdn.pro/api/transform?url=/stocks/images/getty-images-aTWKwJllPOA.webp&w=1200&format=webp&q=80" loading="lazy" decoding="async" width="600" height="400" /></a><footer class="related-body"><h3 id="state-of-ai-and-quantum-computing-in-banking-a-2023-review"><a href="https://sebastienrousseau.com/ro/2023-12-18-state-of-ai-and-quantum-computing-in-banking-a-2023-review/index.html">State of AI and Quantum Computing in Banking: A 2023 Review</a> <a class="heading-anchor" href="#state-of-ai-and-quantum-computing-in-banking-a-2023-review" aria-label="Link către State of AI and Quantum Computing in Banking: A 2023 Review">#</a></h3><p><time datetime="2023-12-18">2023-12-18</time></p></footer></article>
+</div>
+</aside><aside class="article-sources" aria-labelledby="sources-heading"><h2 id="sources-heading" class="article-sources-heading">Surse și referințe</h2><ol class="article-sources-list"><li><a href="https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026" rel="external noopener nofollow"><span class="source-host">www.jpmorgan.com</span><span class="source-path">/insights/payments/trends-innovation/payments-outlook-trends-2026</span></a></li></ol></aside><nav class="post-pagination" aria-label="Paginare articol"><a class="post-pagination-prev" href="/ro/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/"><span class="post-pagination-label">Anterior</span><span class="post-pagination-title">The Renewal of Acid Jazz in the UK: 2026 Artists, Concerts, Albums, and the Return of Groove-Led Live Culture</span></a><span class="post-pagination-stub" aria-hidden="true"></span></nav></div>
+    </main>
+
+<!-- gen-layouts:footer-start -->
+    <footer class="ap-foot" aria-label="footer">
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <h2 class="ap-foot-title">Sebastien Rousseau</h2>
+            <ul>
+              <li><a href="/ro/despre/index.html">About</a></li>
+              <li><a href="/ro/contact/index.html">Contact</a></li>
+              <li><a href="/ro/facut-cu-static-site-generator/index.html">Made with Static Site Generator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Publicații</h2>
+            <ul>
+              <li><a href="/ro/articole/index.html">Articles</a></li>
+              <li><a href="/ro/publicatii/index.html">Papers</a></li>
+              <li><a href="/ro/etichete/index.html">Tags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Activitate</h2>
+            <ul>
+              <li><a href="/ro/proiecte/index.html">Projects</a></li>
+              <li><a href="/ro/liste-de-redare/index.html">Playlists</a></li>
+              <li><a href="/ro/rss.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="ap-foot-title">Contact</h2>
+            <ul>
+              <li><a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+              <li><a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">Medium</a></li>
+              <li><a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="ap-newsletter" action="/contact/" method="get" aria-label="Abonare la newsletter">
+          <label for="ap-newsletter-email" class="ap-newsletter-label">Banking On Quantum — note de cercetare despre plăți, IA și criptografia post-cuantică. Fără spam.</label>
+          <div class="ap-newsletter-row">
+            <input id="ap-newsletter-email" type="email" name="email" required autocomplete="email" placeholder="tu@banca.ro" />
+            <input type="hidden" name="subject" value="newsletter" />
+            <input type="hidden" name="message" value="Please subscribe me to the Banking On Quantum newsletter." />
+            <button type="submit">Abonează-te</button>
+          </div>
+        </form>
+        <div class="legal">
+          <span>© Copyright 2025 - 2026 - Sebastien Rousseau. All rights reserved.</span>
+          <div class="social" aria-label="Linkuri sociale">
+            <a href="https://twitter.com/wwdseb" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau pe Twitter / X"><img src="https://cloudcdn.pro/common/images/buttons/x-black.svg" alt="Sebastien Rousseau pe Twitter X" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/sebastienrousseau/" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau pe LinkedIn"><img src="https://cloudcdn.pro/common/images/buttons/linkedin-black.svg" alt="Sebastien Rousseau pe LinkedIn" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://medium.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau pe Medium"><img src="https://cloudcdn.pro/common/images/buttons/medium-black.svg" alt="Sebastien Rousseau pe Medium" width="18" height="18"  decoding="async" loading="lazy"></a>
+            <a href="https://www.youtube.com/@BankingOnQuantum" target="_blank" rel="noopener noreferrer" aria-label="Sebastien Rousseau pe YouTube"><img src="https://cloudcdn.pro/common/images/buttons/youtube-black.svg" alt="Sebastien Rousseau pe YouTube" width="18" height="18"  decoding="async" loading="lazy"></a>
+          </div>
+          <p>
+            <a href="/ro/accesibilitate/index.html">Accessibility</a> ·
+            <a href="/ro/confidentialitate/index.html">Privacy</a> ·
+            <a href="/ro/termeni/index.html">Terms</a> ·
+            <a href="https://www.thegreenwebfoundation.org/green-web-check/?url=sebastienrousseau.com" target="_blank" rel="noopener noreferrer" title="Hosted on 100% renewable energy (Cloudflare) — estimate via Sustainable Web Design v4 model">Carbon: ~0.04 g/visit · green-hosted</a> ·
+            <a href="https://github.com/sebastienrousseau/sebastienrousseau.github.io/blob/main/doc/SIGSTORE.md" target="_blank" rel="noopener noreferrer" title="Every dated article is signed with Sigstore — verify the bytes match what was published">Verify signatures</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sebastienrousseau.com/#person","name":"Sebastien Rousseau","givenName":"Sebastien","familyName":"Rousseau","url":"https://sebastienrousseau.com/","image":"https://cloudcdn.pro/stocks/images/sebastien-rousseau.png","jobTitle":"Senior Product Manager","description":"AI, banking and financial services expert. Senior payments leader with 20+ years across Tier-1 banks. Applied AI, wholesale payments, ISO 20022 migration, and post-quantum cryptography for financial services.","worksFor":{"@type":"Organization","name":"HSBC Commercial & Investment Bank","url":"https://www.hsbc.com/"},"alumniOf":[{"@type":"Organization","name":"PayPal"},{"@type":"Organization","name":"Barclays"},{"@type":"Organization","name":"Shazam Entertainment"},{"@type":"Organization","name":"AKQA"},{"@type":"Organization","name":"Virgin Group"}],"memberOf":{"@type":"ProgramMembership","programName":"Quantum-Safe Cryptography Working Group","hostingOrganization":{"@type":"Organization","name":"Emerging Payments Association Asia","url":"https://emergingpaymentsasia.org/"}},"knowsAbout":["Applied artificial intelligence in banking","Generative AI for financial services","Wholesale payments","ISO 20022 migration","SWIFT gpi","SEPA Instant Payments","Cross-border payments","Post-quantum cryptography","CRYSTALS-Kyber","CRYSTALS-Dilithium","Quantum-safe payment authentication"],"address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"United Kingdom"},"sameAs":["https://twitter.com/wwdseb","https://www.linkedin.com/in/sebastienrousseau/","https://medium.com/@BankingOnQuantum","https://www.youtube.com/@BankingOnQuantum","https://github.com/sebastienrousseau"]},{"@type":"WebSite","@id":"https://sebastienrousseau.com/#website","url":"https://sebastienrousseau.com/","name":"Sebastien Rousseau","description":"AI, banking and financial services expert. Senior payments leader at HSBC Commercial & Investment Bank.","publisher":{"@id":"https://sebastienrousseau.com/#person"},"inLanguage":"ro"},{"@type":"ProfilePage","@id":"https://sebastienrousseau.com/#profile","mainEntity":{"@id":"https://sebastienrousseau.com/#person"},"name":"Sebastien Rousseau: AI, Banking & Financial Services Expert","url":"https://sebastienrousseau.com/","inLanguage":"ro"}]}</script>
+
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","wordCount":1295,"headline":"Plăți agentice în bănci: consimțământ, răspundere și noul UX de plată în 2026","description":"Plățile agentice au trecut în 2026 de la concept la tranzacție reală. Întrebarea bancară nu mai este dacă agenții AI pot iniția plăți, ci cum trebuie regândite consimțământul, răspunderea, identitatea, auditabilitatea și interoperabilitatea protocoalelor.","image":{"@type":"ImageObject","url":"https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80","width":"100vw","height":"100vh","caption":"Diagramă a arhitecturii plăților agentice cu agenți AI, mandate de consimțământ, credențiale tokenizate, rețele de carduri, bănci, comercianți și piste de audit"},"url":"https://sebastienrousseau.com/ro/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/","datePublished":"2026-05-23T06:06:06+00:00","dateModified":"2026-05-23","inLanguage":"ro","keywords":"plăți agentice 2026, plăți agenți AI, Mastercard Agent Pay, plată AI Rabobank, AP2, A2A, x402, MCP, protocol plăți mașini, consimțământ plăți, Regulation E, EFTA, răspundere plăți, intenție verificabilă, tokenizare, chei de acces, UX bancar, comerț AI","articleSection":"Finance","author":{"@id":"https://sebastienrousseau.com/#person"},"publisher":{"@id":"https://sebastienrousseau.com/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sebastienrousseau.com/ro/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/"},"isPartOf":{"@type":"Blog","@id":"https://sebastienrousseau.com/fr/#blog","name":"Sebastien Rousseau — Articles (français)","url":"https://sebastienrousseau.com/fr/","inLanguage":"ro"},"citation":[{"@type":"CreativeWork","url":"https://www.jpmorgan.com/insights/payments/trends-innovation/payments-outlook-trends-2026"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".post-lead",".post-lead-tldr",".post-lead-takeaways",".article-toc",".author-card"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://sebastienrousseau.com/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://sebastienrousseau.com/ro/"},{"@type":"ListItem","position":3,"name":"Plăți agentice în bănci: consimțământ, răspundere și noul UX de plată în 2026","item":"https://sebastienrousseau.com/ro/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/"}]}]}</script>
+<script src="/main.e1c270a6.js" defer integrity="sha256-p2FFu6C9UjC1BhWEVTdryx1iPa0FNVgaz5dz365Gd9I= sha256-UVRmWZ21ffSNgLDN1dLfr48S6iL6D3AxL4O5xYOK7U4=" crossorigin="anonymous"></script>
+  
+<!-- SSG Search Widget -->
+<div id="ssg-search-widget">
+
+<!-- Search trigger button -->
+<button id="ssg-search-btn" type="button" aria-label="Caută">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<span>Caută</span>
+<kbd>K</kbd>
+</button>
+<!-- Search modal -->
+<div id="ssg-search-overlay" role="dialog" aria-label="Caută">
+<div id="ssg-search-box">
+<div id="ssg-search-header">
+<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input id="ssg-search-input" type="search" placeholder="Caută în documentație..." autocomplete="off" aria-label="Caută"/>
+</div>
+<div id="ssg-search-results" aria-live="polite"></div>
+<div id="ssg-sr-status" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="ssg-search-footer"><span><kbd>Esc</kbd> închide</span><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navighează</span><span><kbd>Enter</kbd> deschide</span></div>
+</div>
+</div>
+<script src="/_csp/61bc2fae7f71ccad.js" integrity="sha256-Y0txeCfdk+GUctTYMAxMbFCB2qs1cPm8JSIX3WRS9cs= sha256-5Ca5zk/7tsavsCDhg6M1m4feBn+L4YnJ7iavKawynII=" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

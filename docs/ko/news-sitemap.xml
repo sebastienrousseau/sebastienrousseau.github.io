@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+  <loc>https://sebastienrousseau.com/ko/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</loc>
+  <news:news>
+    <news:publication>
+      <news:name>contact@sebastienrousseau.com (Sebastien Rousseau)</news:name>
+      <news:language>ko-KR</news:language>
+    </news:publication>
+    <news:publication_date>2026-05-23T06:06:06+00:00</news:publication_date>
+    <news:title>뱅킹 에이전트 결제: 2026년 동의·책임·새로운 결제 UX</news:title>
+    <news:keywords>에이전트 결제 2026, AI 에이전트 결제, Mastercard Agent Pay, Rabobank AI 결제, AP2, A2A, x402, MCP, 머신 결제 프로토콜, 결제 동의, Regulation E, EFTA, 결제 책임, 검증 가능한 의도, 토큰화, 패스키, 뱅킹 UX, AI 커머스</news:keywords>
+  </news:news>
+</url>
+<url>
   <loc>https://sebastienrousseau.com/ko/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/</loc>
   <news:news>
     <news:publication>

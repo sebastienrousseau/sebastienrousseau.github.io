@@ -6,8 +6,35 @@
     <description>Статьи на русском языке: прикладной ИИ, платежи ISO 20022, постквантовая криптография и трансформация оптовых платежей.</description>
     <atom:link href="https://sebastienrousseau.com/ru/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ru-RU</language>
-    <lastBuildDate>Fri, 22 May 2026 11:30:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 18:38:31 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. Все права защищены.</copyright>
+    <item>
+      <title>Агентские платежи в банкинге: согласие, ответственность, новый UX 2026</title>
+      <link>https://sebastienrousseau.com/ru/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>
+      <description>Агентские платежи в 2026 году перешли от концепции к реальной транзакции. Вопрос для банков — не способны ли AI-агенты инициировать платежи, а как выстроить согласие, ответственность, идентификацию, аудит и совместимость протоколов.</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/ru/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</guid>
+      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>агентские платежи 2026</category>
+      <category>платежи AI-агентов</category>
+      <category>Mastercard Agent Pay</category>
+      <category>платёж Rabobank AI</category>
+      <category>AP2</category>
+      <category>A2A</category>
+      <category>x402</category>
+      <category>MCP</category>
+      <category>протокол машинных платежей</category>
+      <category>согласие на платёж</category>
+      <category>Regulation E</category>
+      <category>EFTA</category>
+      <category>ответственность за платёж</category>
+      <category>проверяемое намерение</category>
+      <category>токенизация</category>
+      <category>ключи доступа</category>
+      <category>банковский UX</category>
+      <category>AI-коммерция</category>
+    </item>
     <item>
       <title>Эйсид-джаз в Великобритании: артисты, концерты и альбомы 2026</title>
       <link>https://sebastienrousseau.com/ru/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/</link>

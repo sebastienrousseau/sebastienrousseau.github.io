@@ -6,8 +6,35 @@
     <description>বাংলা প্রবন্ধ: প্রায়োগিক এআই, ISO 20022 পেমেন্ট, পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি এবং পাইকারি পেমেন্টের রূপান্তর।</description>
     <atom:link href="https://sebastienrousseau.com/bn/rss.xml" rel="self" type="application/rss+xml"/>
     <language>bn-BD</language>
-    <lastBuildDate>Fri, 22 May 2026 11:30:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2026 18:38:30 +0000</lastBuildDate>
     <copyright>© Copyright 2007 - 2026 - Sebastien Rousseau. সর্বস্বত্ব সংরক্ষিত।</copyright>
+    <item>
+      <title>ব্যাংকিংয়ে এজেন্টিক পেমেন্ট: সম্মতি, দায় ও ২০২৬-এর নতুন পেমেন্ট UX</title>
+      <link>https://sebastienrousseau.com/bn/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</link>
+      <description>২০২৬ সালে এজেন্টিক পেমেন্ট ধারণা থেকে লাইভ লেনদেনে পৌঁছেছে। ব্যাংকিং প্রশ্ন আর AI agent পেমেন্ট শুরু করতে পারে কিনা তা নয় — সম্মতি, দায়, পরিচয়, অডিটযোগ্যতা, জালিয়াতি নিয়ন্ত্রণ ও প্রোটোকল কীভাবে কাজ করবে।</description>
+      <guid isPermaLink="true">https://sebastienrousseau.com/bn/2026-05-23-agentic-payments-banking-consent-liability-new-payment-ux-2026/</guid>
+      <pubDate>Sat, 23 May 2026 06:06:06 +0000</pubDate>
+      <author>contact@sebastienrousseau.com (Sebastien Rousseau)</author>
+      <enclosure url="https://cloudcdn.pro/api/transform?url=/stocks/images/ai-robot.webp&w=1200&format=webp&q=80" type="image/webp" length="0"/>
+      <category>এজেন্টিক পেমেন্ট ২০২৬</category>
+      <category>AI agent পেমেন্ট</category>
+      <category>Mastercard Agent Pay</category>
+      <category>Rabobank AI পেমেন্ট</category>
+      <category>AP2</category>
+      <category>A2A</category>
+      <category>x402</category>
+      <category>MCP</category>
+      <category>machine payments protocol</category>
+      <category>পেমেন্ট সম্মতি</category>
+      <category>Regulation E</category>
+      <category>EFTA</category>
+      <category>পেমেন্ট দায়</category>
+      <category>যাচাইযোগ্য অভিপ্রায়</category>
+      <category>টোকেনাইজেশন</category>
+      <category>পাসকি</category>
+      <category>ব্যাংকিং UX</category>
+      <category>AI বাণিজ্য</category>
+    </item>
     <item>
       <title>UK-এ অ্যাসিড জ্যাজের পুনরুজ্জীবন: ২০২৬-এর শিল্পী, কনসার্ট ও অ্যালবাম</title>
       <link>https://sebastienrousseau.com/bn/2026-05-22-uk-acid-jazz-renewal-artists-concerts-albums-2026/</link>
