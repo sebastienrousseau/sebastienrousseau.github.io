@@ -84,17 +84,59 @@ echo "  PATH=$PATH"
 echo "  claude=$(command -v claude)"
 echo "  starting at $(ts)"
 
-if claude -p "/publish-today" \
+# A full 28-locale publish dispatches 4 parallel translation sub-agents
+# plus the main routine; observed cost is $5-10 per article. Set the
+# ceiling at $15 to leave headroom; raise via `MAX_BUDGET_USD=20 …` if
+# a future article needs more.
+MAX_BUDGET_USD="${MAX_BUDGET_USD:-15}"
+
+# Capture stdout so we can sentinel-check it for the budget-exceeded
+# marker. tee both to the log file and to a scratch buffer we'll scan
+# after the run.
+CLAUDE_OUT="$(mktemp -t publish-daily-claude.XXXXXX)"
+trap '/bin/rm -f "$CLAUDE_OUT"' EXIT
+
+set +e
+claude -p "/publish-today" \
     --dangerously-skip-permissions \
-    --max-budget-usd 5 \
+    --max-budget-usd "$MAX_BUDGET_USD" \
     --model opus \
-    --output-format text; then
-  echo "publish-daily: claude exited 0 at $(ts)"
+    --output-format text 2>&1 | /usr/bin/tee "$CLAUDE_OUT"
+rc=${PIPESTATUS[0]}
+set -e
+
+echo "publish-daily: claude exited $rc at $(ts)"
+
+# Detect failure modes claude doesn't surface via exit code:
+#   * "Exceeded USD budget" — claude prints this and exits 0, which
+#     looked like success but left the routine half-finished.
+#   * No "/pull/" URL in the output — the routine should always emit a
+#     PR URL on the happy path; absence is a strong signal we never
+#     made it that far (translation died, build failed, etc.).
+budget_hit=0
+if /usr/bin/grep -q "Exceeded USD budget" "$CLAUDE_OUT"; then
+  budget_hit=1
+fi
+
+pr_opened=0
+if /usr/bin/grep -qE "github\\.com/[^[:space:]]+/pull/[0-9]+" "$CLAUDE_OUT"; then
+  pr_opened=1
+fi
+
+if [[ $rc -eq 0 && $budget_hit -eq 0 && $pr_opened -eq 1 ]]; then
+  echo "publish-daily: SUCCESS — PR opened"
   /usr/bin/osascript -e "display notification \"PR opened for ${TODAY}\" with title \"publish-daily\" subtitle \"see ${LOG}\"" || true
   exit 0
 fi
 
-rc=$?
-echo "publish-daily: claude exited $rc at $(ts)"
-/usr/bin/osascript -e "display notification \"FAILED (exit $rc) — see ${LOG}\" with title \"publish-daily\" sound name \"Basso\"" || true
-exit "$rc"
+# Failure path: figure out which one and report.
+reason="exit $rc"
+if [[ $budget_hit -eq 1 ]]; then
+  reason="budget cap hit (\$$MAX_BUDGET_USD) — raise MAX_BUDGET_USD"
+elif [[ $rc -eq 0 && $pr_opened -eq 0 ]]; then
+  reason="claude exited 0 but no PR URL in output"
+fi
+
+echo "publish-daily: FAILED — $reason"
+/usr/bin/osascript -e "display notification \"FAILED — $reason — see ${LOG}\" with title \"publish-daily\" sound name \"Basso\"" || true
+exit 1
